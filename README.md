@@ -16,13 +16,18 @@ Vulnerabilities undergo automated bisection and repository analysis as part of
 automatically imported in this repository.
 
 Any user changes to vulnerability files in this repository will trigger a
-[re-analysis by OSV](https://github.com/google/osv/blob/master/docker/importer/importer.py).
+[re-analysis by OSV](https://github.com/google/osv/blob/master/docker/importer/importer.py)
+within a few minutes.
+
+OSV will also regularly recompute affected versions and detect cherry picks
+across different branches for each vulnerability
+([example](https://github.com/google/oss-fuzz-vulns/commit/76395230e992d4de9bae19b39d27dbad16ec389d)).
 
 [OSV]: https://github.com/google/osv
 
 ## Missing entries
 
-Entries may be missing for a few reasons:
+Entries may be missing for a few reasons.
 
 ### The automated bisection failed
 
@@ -37,8 +42,10 @@ TODO: how to add results back manually.
 We only include bugs that are marked as security by OSS-Fuzz. If you are a
 project maintainer, you may edit the security flag on the corresponding testcase
 details page. Marking a bug as security will automatically cause it to be fed into OSV.
-Likewise, marking a bug as non-security will cause the entry to be marked as invalid in
-OSV.
 
+## Removing an entry
+
+If a vulnerability in this repository is not considered a security vulnerability,
+it may be removed by submitting a PR.
 
 
