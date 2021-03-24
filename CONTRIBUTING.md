@@ -26,9 +26,3 @@ information on using pull requests.
 
 This project follows
 [Google's Open Source Community Guidelines](https://opensource.google.com/conduct/).
-
-## Contributing code
-
-Please follow the instructions in
-[Contributing code](https://google.github.io/clusterfuzz/contributing-code/)
-section in the ClusterFuzz documentation.
