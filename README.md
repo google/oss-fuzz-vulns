@@ -4,6 +4,9 @@ This is a repo for recording [OSS-Fuzz](https://github.com/google/oss-fuzz)
 vulnerabilities, and acts as the source of truth for OSS-Fuzz vulnerabilities in
 [OSV].
 
+Each OSS-Fuzz vulnerability has precise impacted version and commit version
+information added.
+
 Users may submit PRs to update any information here.
 
 ## Automation
