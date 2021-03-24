@@ -1,0 +1,26 @@
+id: OSV-2020-508
+package:
+  name: yara
+  ecosystem: OSS-Fuzz
+summary: Use-of-uninitialized-value in pe_rva_to_offset
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=19003
+
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  pe_rva_to_offset
+  dotnet_parse_tilde_2
+  dotnet_parse_tilde
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/VirusTotal/yara.git
+    introduced: 4df40fca364a8fdf29b2f84b2abac26cd16ca75f:4bdad16c167de43c407c330b2714cc5d98e04491
+    fixed: 1e403e9259a1abedf108ab86f711ba52c907226d:f79be4f2330f4b89ea2f42e1c44ca998c59a0c0f
+  versions:
+  - v3.11.0
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=19003
+modified: '2021-03-09T04:49:05.926127Z'
+created: '2020-07-01T00:00:13.673641Z'

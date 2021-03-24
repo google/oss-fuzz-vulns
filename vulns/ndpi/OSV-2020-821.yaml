@@ -1,0 +1,25 @@
+id: OSV-2020-821
+package:
+  name: ndpi
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in ndpi_workflow_process_packet
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22755
+
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  ndpi_workflow_process_packet
+  fuzz_ndpi_reader.c
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/ntop/nDPI.git
+    introduced: 10738a0ca334104377e19a1e683bd13f2451a9e2
+    fixed: d90b333363b157d8eab9205430c83dab986ff965
+  versions:
+  - '3.2'
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22755
+modified: '2021-03-09T04:49:06.095334Z'
+created: '2020-07-14T05:37:48.834416Z'

@@ -1,0 +1,29 @@
+id: OSV-2020-789
+package:
+  name: keystone
+  ecosystem: OSS-Fuzz
+summary: Heap-use-after-free in llvm_ks::X86Operand::getToken
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22850
+
+  Crash type: Heap-use-after-free READ 4
+  Crash state:
+  llvm_ks::X86Operand::getToken
+  X86AsmParser::MatchAndEmitATTInstruction
+  X86AsmParser::MatchAndEmitInstruction
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/keystone-engine/keystone.git
+    introduced: 105761ffe7176a60b4ff1b1c165ad937110ae63e
+    fixed: e1547852d9accb9460573eb156fc81645b8e1871
+  versions:
+  - 0.9.2
+  - 0.9.2-rc1
+  - 0.9.2-rc1.post1
+  - 0.9.2-rc1.post2
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22850
+modified: '2021-03-09T04:49:06.076201Z'
+created: '2020-07-14T05:37:34.150718Z'

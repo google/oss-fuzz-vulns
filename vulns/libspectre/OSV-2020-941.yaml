@@ -1,0 +1,24 @@
+id: OSV-2020-941
+package:
+  name: libspectre
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in gc_mark_string
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=19780
+
+  Crash type: Heap-buffer-overflow READ 4
+  Crash state:
+  gc_mark_string
+  gc_trace
+  gs_gc_reclaim
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://gitlab.freedesktop.org/libspectre/libspectre.git
+    introduced: unknown:ceeeec8ee480c9cce066c0921665ef647bd5c135
+    fixed: 920c30cf1d4353b28266fc91f88b2ae72e0f5e4f
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=19780
+modified: '2021-03-09T04:49:06.164259Z'
+created: '2020-07-22T00:00:20.220294Z'

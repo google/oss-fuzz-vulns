@@ -1,0 +1,27 @@
+id: OSV-2018-300
+package:
+  name: mupdf
+  ecosystem: OSS-Fuzz
+summary: Use-of-uninitialized-value in fz_unpack_tile
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=8326
+
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  fz_unpack_tile
+  fz_decomp_image_from_stream
+  compressed_image_get_pixmap
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: git://git.ghostscript.com/mupdf.git
+    introduced: 9086386263154498dcb18c96f1e1630903b21a3c:d9bc8c6f7fb2e3ec7035bebaaee0edcf59287705
+    fixed: 43a0278d42ac1b350ce6b582f9d0e3d7785a17b6
+  versions:
+  - 1.13.0
+  - 1.13.0-rc1
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=8326
+modified: '2021-03-09T04:49:04.923927Z'
+created: '2021-01-15T00:00:27.081384Z'

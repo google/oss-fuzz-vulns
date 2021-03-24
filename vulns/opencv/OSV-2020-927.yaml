@@ -1,0 +1,27 @@
+id: OSV-2020-927
+package:
+  name: opencv
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in LogLuv24toXYZ
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14011
+
+  Crash type: Heap-buffer-overflow WRITE 4
+  Crash state:
+  LogLuv24toXYZ
+  Luv24toXYZ
+  LogLuvDecode24
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/opencv/opencv.git
+    introduced: unknown:6bcf0b5519c190826cf0f21efd87cbe256eabc48
+    fixed: 473941c3418e2c8d0d91b8d48ae824cec87232f4
+  versions:
+  - 4.0.1
+  - 4.1.0-openvino
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14011
+modified: '2021-03-09T04:49:06.156588Z'
+created: '2020-07-22T00:00:11.527956Z'

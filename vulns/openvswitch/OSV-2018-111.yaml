@@ -1,0 +1,24 @@
+id: OSV-2018-111
+package:
+  name: openvswitch
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in format_generic_odp_key
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=10850
+
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  format_generic_odp_key
+  check_attr_len
+  format_odp_key_attr
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/openvswitch/ovs.git
+    introduced: ea43b024a8a03f6648d0e06589137a4fbfea9f5a
+    fixed: a1da3f297717c2de70dab88f7783117b78f85e89
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=10850
+modified: '2021-03-09T04:49:04.822378Z'
+created: '2021-01-13T00:00:49.915963Z'

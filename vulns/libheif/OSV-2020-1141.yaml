@@ -1,0 +1,27 @@
+id: OSV-2020-1141
+package:
+  name: libheif
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in ff_hevc_put_hevc_epel_pixels_8_sse
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13568
+
+  Crash type: Heap-buffer-overflow READ 16
+  Crash state:
+  ff_hevc_put_hevc_epel_pixels_8_sse
+  acceleration_functions::put_hevc_epel
+  void mc_chroma<unsigned short>
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/strukturag/libheif.git
+    introduced: unknown:0acdca433f338f1f378f6f104e72f5f95c4f8568
+    fixed: 12b68bbeadb3ea56415b2f656b471f122d72dc80
+  versions:
+  - v1.5.0
+  - v1.5.1
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13568
+modified: '2021-03-09T04:49:05.111508Z'
+created: '2020-07-22T21:49:50.461909Z'

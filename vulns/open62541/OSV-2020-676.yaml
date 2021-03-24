@@ -1,0 +1,24 @@
+id: OSV-2020-676
+package:
+  name: open62541
+  ecosystem: OSS-Fuzz
+summary: Heap-use-after-free in String_clear
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14567
+
+  Crash type: Heap-use-after-free READ 8
+  Crash state:
+  String_clear
+  clearStructure
+  UA_Array_delete
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/open62541/open62541.git
+    introduced: b9225f9f936a48af66c4aeb7e3fd1684e4d3b88b
+    fixed: 58a2fdb5b1ad1efafef455d66a9cbfb93c3fae9d
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14567
+modified: '2021-03-09T04:49:06.017215Z'
+created: '2020-07-01T00:00:24.168174Z'

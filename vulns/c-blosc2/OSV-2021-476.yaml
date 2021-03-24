@@ -1,0 +1,23 @@
+id: OSV-2021-476
+package:
+  name: c-blosc2
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in blosc_d
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31556
+
+  Crash type: Heap-buffer-overflow READ 4
+  Crash state:
+  blosc_d
+  do_job
+  blosc_run_decompression_with_context
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/Blosc/c-blosc2.git
+    introduced: 861ba79f31393dec0a0782ca11cf32cebb6f6610
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31556
+modified: '2021-03-09T05:46:38.374747Z'
+created: '2021-03-02T00:01:22.540205Z'

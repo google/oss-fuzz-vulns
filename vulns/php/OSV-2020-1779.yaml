@@ -1,0 +1,52 @@
+id: OSV-2020-1779
+package:
+  name: php
+  ecosystem: OSS-Fuzz
+summary: Heap-use-after-free in zend_gc_addref
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25697
+
+  Crash type: Heap-use-after-free READ 4
+  Crash state:
+  zend_gc_addref
+  zend_generator_update_current
+  zend_generator_dtor_storage
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/php/php-src.git
+    introduced: f51bbcc2b2fd54ce75bf7d554a010c5bb5ea991d
+    fixed: dd4a080133b7b0570b629cdfb7c9e2651bdf88f7
+  - type: GIT
+    repo: https://github.com/php/php-src.git
+    introduced: 4e198c00646604b5fe6726cdc9eba4c2b7861ce2
+  versions:
+  - php-7.3.23
+  - php-7.3.23RC1
+  - php-7.3.24
+  - php-7.3.24RC1
+  - php-7.3.25
+  - php-7.3.25RC1
+  - php-7.3.26
+  - php-7.3.26RC1
+  - php-7.3.27
+  - php-7.4.11
+  - php-7.4.11RC1
+  - php-7.4.12
+  - php-7.4.12RC1
+  - php-7.4.13
+  - php-7.4.13RC1
+  - php-7.4.14
+  - php-7.4.14RC1
+  - php-7.4.15
+  - php-7.4.15RC1
+  - php-7.4.15RC2
+  - php-7.4.16RC1
+  - php-8.0.0RC2
+  - php-8.0.0beta4
+  - php-8.0.0rc1
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25697
+modified: '2021-03-09T04:49:05.436663Z'
+created: '2020-09-17T00:00:13.246764Z'

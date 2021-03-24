@@ -1,0 +1,24 @@
+id: OSV-2020-1623
+package:
+  name: libxml2
+  ecosystem: OSS-Fuzz
+summary: Heap-use-after-free in xmlXIncludeIncludeNode
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24925
+
+  Crash type: Heap-use-after-free READ 4
+  Crash state:
+  xmlXIncludeIncludeNode
+  xmlXIncludeDoProcess
+  xmlXIncludeLoadFallback
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://gitlab.gnome.org/GNOME/libxml2.git
+    introduced: 6c128fd58a0e4641c23a345d413672494622db1b
+    fixed: dba82a8c0453b7d4d138167a771c1c2988b889be
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24925
+modified: '2021-03-09T04:49:05.360626Z'
+created: '2020-08-16T00:01:16.093615Z'

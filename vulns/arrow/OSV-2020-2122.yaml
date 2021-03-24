@@ -1,0 +1,26 @@
+id: OSV-2020-2122
+package:
+  name: arrow
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in void parquet::internal::DefRepLevelsToListInfo<int>
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26829
+
+  Crash type: Heap-buffer-overflow WRITE 1
+  Crash state:
+  void parquet::internal::DefRepLevelsToListInfo<int>
+  parquet::internal::DefRepLevelsToBitmap
+  parquet::arrow::StructReader::BuildArray
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/apache/arrow.git
+    introduced: 44f3de2c2854a473d4ce184e02c4db83dffb805d
+    fixed: 64396aa487fc24cd26b62a9b92e13a952c6ecf74
+  versions:
+  - apache-arrow-2.0.0
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26829
+modified: '2021-03-09T04:49:05.623104Z'
+created: '2020-11-02T00:00:35.960641Z'

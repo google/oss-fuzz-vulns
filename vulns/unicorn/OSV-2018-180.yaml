@@ -1,0 +1,26 @@
+id: OSV-2018-180
+package:
+  name: unicorn
+  ecosystem: OSS-Fuzz
+summary: UNKNOWN READ in [stack]
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=10445
+
+  Crash type: UNKNOWN READ
+  Crash state:
+  [stack]
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/unicorn-engine/unicorn.git
+    introduced: 910999d3969b682d8376db1266f9885866cd785c
+    fixed: cc5bfbc8440b176e7254181d2967771e736fd830:414c230b59643cf15914b7374a3b72ef00a07038
+  versions:
+  - 1.0.2-rc1
+  - 1.0.2-rc2
+  - 1.0.2-rc3
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=10445
+modified: '2021-03-09T04:49:04.859198Z'
+created: '2021-01-13T00:01:14.415295Z'

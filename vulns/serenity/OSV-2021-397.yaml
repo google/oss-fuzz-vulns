@@ -1,0 +1,24 @@
+id: OSV-2021-397
+package:
+  name: serenity
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in Crypto::UnsignedBigInteger::UnsignedBigInteger
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30920
+
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  Crypto::UnsignedBigInteger::UnsignedBigInteger
+  Crypto::UnsignedBigInteger::import_data
+  Crypto::der_decode_integer
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/SerenityOS/serenity
+    introduced: 5b891b0c36b9cf6efe1c8873e34f2fc114a686d3
+    fixed: 3fe7ac0924ada70faaf27636b6e0f40bcde24f77
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30920
+modified: '2021-02-28T00:06:23.094777Z'
+created: '2021-02-15T00:00:26.730634Z'

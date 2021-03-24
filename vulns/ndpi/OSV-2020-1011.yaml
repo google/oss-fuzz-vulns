@@ -1,0 +1,24 @@
+id: OSV-2020-1011
+package:
+  name: ndpi
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in ndpi_search_mail_smtp_tcp
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18731
+
+  Crash type: Heap-buffer-overflow READ 4
+  Crash state:
+  ndpi_search_mail_smtp_tcp
+  check_ndpi_tcp_flow_func
+  ndpi_detection_process_packet
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/ntop/nDPI.git
+    introduced: unknown:e695dd6eade754b2d50bdf297ca8bdc4105f93ff
+    fixed: fc82cdfa4ac11e34725319620cdc549cb1b700d0
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18731
+modified: '2021-03-09T04:49:05.042232Z'
+created: '2020-07-22T21:49:39.932116Z'

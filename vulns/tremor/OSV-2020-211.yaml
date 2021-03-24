@@ -1,0 +1,24 @@
+id: OSV-2020-211
+package:
+  name: tremor
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in res2_inverse
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22298
+
+  Crash type: Heap-buffer-overflow READ 4
+  Crash state:
+  res2_inverse
+  mapping0_inverse
+  _vorbis_synthesis1
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://gitlab.xiph.org/xiph/tremor.git
+    introduced: 7c30a66346199f3f09017a09567c6c8a3a0eedc8:b56ffce0c0773ec5ca04c466bc00b1bbcaf65aef
+    fixed: 562307a4a7082e24553f3d2c55dab397a17c4b4f
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22298
+modified: '2021-03-09T04:49:05.615500Z'
+created: '2020-06-24T01:51:19.127694Z'

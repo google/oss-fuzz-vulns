@@ -1,0 +1,22 @@
+id: OSV-2021-446
+package:
+  name: serenity
+  ecosystem: OSS-Fuzz
+summary: Global-buffer-overflow in AK::StringView::operator==
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31351
+
+  Crash type: Global-buffer-overflow READ 1
+  Crash state:
+  AK::StringView::operator==
+  Markdown::CodeBlock::parse
+  bool Markdown::helper<Markdown::CodeBlock>
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/SerenityOS/serenity
+    introduced: 31ac93d051be5be78419ed16da9fcae9783eb4e6
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31351
+modified: '2021-03-09T05:46:41.428435Z'
+created: '2021-02-25T00:00:53.328343Z'

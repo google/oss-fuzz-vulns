@@ -1,0 +1,24 @@
+id: OSV-2017-5
+package:
+  name: openjpeg
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in opj_dwt_interleave_partial_v
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=3115
+
+  Crash type: Heap-buffer-overflow READ 4
+  Crash state:
+  opj_dwt_interleave_partial_v
+  opj_dwt_decode_partial_tile
+  opj_tcd_dwt_decode
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/uclouvain/openjpeg
+    introduced: 5d403250561398f7ba3041d9eb8c893bd680dd72
+    fixed: a55c024fc6b917a409b85aeafd7326421c4aea34
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=3115
+modified: '2021-03-09T04:49:04.788284Z'
+created: '2021-01-13T00:00:03.425630Z'

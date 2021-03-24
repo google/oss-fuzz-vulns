@@ -1,0 +1,24 @@
+id: OSV-2020-1257
+package:
+  name: readstat
+  ecosystem: OSS-Fuzz
+summary: Stack-buffer-overflow in readstat_convert
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=12579
+
+  Crash type: Stack-buffer-overflow WRITE 1
+  Crash state:
+  readstat_convert
+  dta_handle_row
+  dta_handle_rows
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/WizardMac/ReadStat
+    introduced: unknown:d1bfd735515803800cb9708e3fca9e5c1e8e7a48
+    fixed: 641f47f9d8775c7fd17a094b832c61a56fb2ee5c
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=12579
+modified: '2021-03-09T04:49:05.173369Z'
+created: '2020-07-22T21:50:00.845495Z'

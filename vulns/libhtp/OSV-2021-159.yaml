@@ -1,0 +1,24 @@
+id: OSV-2021-159
+package:
+  name: libhtp
+  ecosystem: OSS-Fuzz
+summary: UNKNOWN READ in htp_connp_RES_FINALIZE
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29551
+
+  Crash type: UNKNOWN READ
+  Crash state:
+  htp_connp_RES_FINALIZE
+  htp_connp_res_data
+  fuzz_htp.c
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/OISF/libhtp.git
+    introduced: dcf5d9428d585bdfdf5b2eb4e9024da6222e0fd0
+    fixed: 8b5c94af604d5a873f8ae10d252940b9dd1f6339
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29551
+modified: '2021-03-09T04:49:06.224430Z'
+created: '2021-01-13T21:57:34.116557Z'

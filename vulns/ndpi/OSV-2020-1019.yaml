@@ -1,0 +1,24 @@
+id: OSV-2020-1019
+package:
+  name: ndpi
+  ecosystem: OSS-Fuzz
+summary: Stack-buffer-overflow in getTLScertificate
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=19544
+
+  Crash type: Stack-buffer-overflow WRITE 6
+  Crash state:
+  getTLScertificate
+  tlsDetectProtocolFromCertificate
+  ndpi_search_tls_tcp_udp
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/ntop/nDPI.git
+    introduced: unknown:e695dd6eade754b2d50bdf297ca8bdc4105f93ff
+    fixed: 634457615c91ef27436db92210f32522277f1818
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=19544
+modified: '2021-03-09T04:49:05.046040Z'
+created: '2020-07-22T21:49:40.303036Z'

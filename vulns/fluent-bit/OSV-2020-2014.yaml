@@ -1,0 +1,36 @@
+id: OSV-2020-2014
+package:
+  name: fluent-bit
+  ecosystem: OSS-Fuzz
+summary: Stack-buffer-overflow in flb_sds_cat
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26237
+
+  Crash type: Stack-buffer-overflow READ {*}
+  Crash state:
+  flb_sds_cat
+  flb_msgpack_gelf_value
+  flb_msgpack_to_gelf
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/fluent/fluent-bit/
+    introduced: d62166140fab2faa5307d871957dbac16bc08dc2
+    fixed: 8315c5029f1b8bc855a2263b1986f22d24cd1a3b
+  - type: GIT
+    repo: https://github.com/fluent/fluent-bit/
+    introduced: d62166140fab2faa5307d871957dbac16bc08dc2
+    fixed: 4e7894d3fd7c03071a8079ee33595921d0133893
+  versions:
+  - v1.6.0
+  - v1.6.1
+  - v1.6.2
+  - v1.6.3
+  - v1.6.4
+  - v1.6.5
+  - v1.6.6
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26237
+modified: '2021-03-09T04:49:05.569872Z'
+created: '2020-10-11T00:00:12.565611Z'

@@ -1,0 +1,27 @@
+id: OSV-2020-1695
+package:
+  name: uwebsockets
+  ecosystem: OSS-Fuzz
+summary: Stack-buffer-overflow in uWS::TopicTree::trimTree
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25381
+
+  Crash type: Stack-buffer-overflow WRITE 8
+  Crash state:
+  uWS::TopicTree::trimTree
+  uWS::TopicTree::unsubscribeAll
+  TopicTree.cpp
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/uNetworking/uWebSockets.git
+    introduced: c2dbcf0c046d50a8b53a6c2d9b522c201f17a338
+    fixed: 03fca626a95130ab80f86adada54b29d27242759
+  versions:
+  - v18.11.0
+  - v18.12.0
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25381
+modified: '2021-03-09T04:49:05.393095Z'
+created: '2020-09-04T00:00:08.299412Z'

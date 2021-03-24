@@ -1,0 +1,24 @@
+id: OSV-2020-596
+package:
+  name: openthread
+  ecosystem: OSS-Fuzz
+summary: UNKNOWN READ in ot::PriorityQueue::GetHead
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13388
+
+  Crash type: UNKNOWN READ
+  Crash state:
+  ot::PriorityQueue::GetHead
+  ot::Ip6::Ip6::HandleSendQueue
+  ot::TaskletScheduler::ProcessQueuedTasklets
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/openthread/openthread
+    introduced: 3eb5a106ffa6678e23c6bc244e843e264cae9b31
+    fixed: a3548df579617e737b075be4a88591e68195e115
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13388
+modified: '2021-03-09T04:49:05.972015Z'
+created: '2020-07-01T00:00:19.212170Z'

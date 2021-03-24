@@ -1,0 +1,23 @@
+id: OSV-2020-1851
+package:
+  name: libfmt
+  ecosystem: OSS-Fuzz
+summary: Stack-buffer-underflow in fmt::v6::basic_format_args<fmt::v6::basic_format_context<std::__1::back_insert_i
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21794
+
+  Crash type: Stack-buffer-underflow READ 16
+  Crash state:
+  fmt::v6::basic_format_args<fmt::v6::basic_format_context<std::__1::back_insert_i
+  fmt::v6::basic_format_args<fmt::v6::basic_format_context<std::__1::back_insert_i
+  fmt::v6::basic_format_context<std::__1::back_insert_iterator<fmt::v6::internal::
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/fmtlib/fmt.git
+    introduced: 8a4630686e2dd24900897298c4ae1362de749ed8
+    fixed: 3f79357ef0291f2c053d5a69842a72a4ec47124e
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21794
+modified: '2021-03-09T04:49:05.474067Z'
+created: '2020-09-26T00:00:34.368870Z'

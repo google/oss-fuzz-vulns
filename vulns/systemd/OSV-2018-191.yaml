@@ -1,0 +1,24 @@
+id: OSV-2018-191
+package:
+  name: systemd
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in network_free
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11302
+
+  Crash type: Heap-buffer-overflow READ 8
+  Crash state:
+  network_free
+  manager_free
+  fuzz-network-parser.c
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/systemd/systemd
+    introduced: 212bd73c788c464c2e19596a102feed848cb78fa
+    fixed: 212bd73c788c464c2e19596a102feed848cb78fa
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11302
+modified: '2021-03-09T04:49:04.865295Z'
+created: '2021-01-13T00:01:20.005684Z'

@@ -1,0 +1,24 @@
+id: OSV-2020-427
+package:
+  name: matio
+  ecosystem: OSS-Fuzz
+summary: Stack-buffer-overflow in Mat_uint32Swap
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=17113
+
+  Crash type: Stack-buffer-overflow READ 4
+  Crash state:
+  Mat_uint32Swap
+  Mat_VarReadNextInfo5
+  Mat_GetDir
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: git://git.code.sf.net/p/matio/matio
+    introduced: 7a9958485036ef37b4e88df5cbe32bd7ec4c0d25:6540087e697ca2b8950bada3d4ca653951b467dc
+    fixed: 8b3ee30a8d9cfdc3799252a4a42572fc6f8e205e
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=17113
+modified: '2021-03-09T04:49:05.881804Z'
+created: '2020-07-01T00:00:08.917488Z'

@@ -1,0 +1,24 @@
+id: OSV-2021-362
+package:
+  name: openh264
+  ecosystem: OSS-Fuzz
+summary: Heap-use-after-free in DestroyPicBuff
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30770
+
+  Crash type: Heap-use-after-free WRITE 4
+  Crash state:
+  DestroyPicBuff
+  WelsRequestMem
+  SyncPictureResolutionExt
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/cisco/openh264.git
+    introduced: 66ef706acd55b0b8daec32ca299d2586a1f473c9
+    fixed: b52786888ddce9d6bc06b7825ba9bffc65924e0c
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30770
+modified: '2021-02-25T00:08:45.258324Z'
+created: '2021-02-11T00:00:20.830392Z'

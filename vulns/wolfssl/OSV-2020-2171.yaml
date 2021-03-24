@@ -1,0 +1,26 @@
+id: OSV-2020-2171
+package:
+  name: wolfssl
+  ecosystem: OSS-Fuzz
+summary: Stack-buffer-overflow in fp_read_unsigned_bin
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=27666
+
+  Crash type: Stack-buffer-overflow READ 8
+  Crash state:
+  fp_read_unsigned_bin
+  mp_read_unsigned_bin
+  wc_RsaPublicKeyDecodeRaw
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/wolfssl/wolfssl
+    introduced: 91d23d3f5aad1a0c7ee4622f0a57d0bbf0900227
+    fixed: 382deb1f8620bcd08e6605d7efe4f53fd672a8b6:22ce25afbacfb60d426ac849fb365621967df0f6
+  versions:
+  - v4.6.0-stable
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=27666
+modified: '2021-03-09T04:49:05.699200Z'
+created: '2020-11-21T00:00:42.417255Z'

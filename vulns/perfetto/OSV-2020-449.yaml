@@ -1,0 +1,100 @@
+id: OSV-2020-449
+package:
+  name: perfetto
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in perfetto::trace_processor::FuchsiaTraceParser::ParseTracePacket
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14752
+
+  Crash type: Heap-buffer-overflow READ 8
+  Crash state:
+  perfetto::trace_processor::FuchsiaTraceParser::ParseTracePacket
+  perfetto::trace_processor::TraceSorter::SortAndExtractEventsBeyondWindow
+  perfetto::trace_processor::TraceProcessorImpl::NotifyEndOfFile
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://android.googlesource.com/platform/external/perfetto/
+    introduced: 2ffc4a93685c45efec70e07c8acddf60eb1ae60a
+    fixed: 4973513f89e0b42ee40bea3f1420a4738a15b719
+  versions:
+  - android-10.0.0_r1
+  - android-10.0.0_r10
+  - android-10.0.0_r11
+  - android-10.0.0_r12
+  - android-10.0.0_r13
+  - android-10.0.0_r14
+  - android-10.0.0_r15
+  - android-10.0.0_r16
+  - android-10.0.0_r17
+  - android-10.0.0_r18
+  - android-10.0.0_r19
+  - android-10.0.0_r2
+  - android-10.0.0_r20
+  - android-10.0.0_r21
+  - android-10.0.0_r22
+  - android-10.0.0_r23
+  - android-10.0.0_r24
+  - android-10.0.0_r25
+  - android-10.0.0_r26
+  - android-10.0.0_r27
+  - android-10.0.0_r28
+  - android-10.0.0_r29
+  - android-10.0.0_r3
+  - android-10.0.0_r30
+  - android-10.0.0_r31
+  - android-10.0.0_r32
+  - android-10.0.0_r33
+  - android-10.0.0_r34
+  - android-10.0.0_r35
+  - android-10.0.0_r36
+  - android-10.0.0_r37
+  - android-10.0.0_r38
+  - android-10.0.0_r39
+  - android-10.0.0_r4
+  - android-10.0.0_r40
+  - android-10.0.0_r41
+  - android-10.0.0_r42
+  - android-10.0.0_r43
+  - android-10.0.0_r44
+  - android-10.0.0_r45
+  - android-10.0.0_r46
+  - android-10.0.0_r47
+  - android-10.0.0_r5
+  - android-10.0.0_r6
+  - android-10.0.0_r7
+  - android-10.0.0_r8
+  - android-10.0.0_r9
+  - android-cts-10.0_r1
+  - android-cts-10.0_r2
+  - android-cts-10.0_r3
+  - android-cts-10.0_r4
+  - android-cts-10.0_r5
+  - android-cts-10.0_r6
+  - android-cts-10.0_r7
+  - android-mainline-10.0.0_r1
+  - android-mainline-10.0.0_r10
+  - android-mainline-10.0.0_r2
+  - android-mainline-10.0.0_r3
+  - android-mainline-10.0.0_r4
+  - android-mainline-10.0.0_r5
+  - android-mainline-10.0.0_r7
+  - android-mainline-10.0.0_r9
+  - android-security-10.0.0_r48
+  - android-security-10.0.0_r49
+  - android-security-10.0.0_r50
+  - android-security-10.0.0_r51
+  - android-vts-10.0_r1
+  - android-vts-10.0_r2
+  - android-vts-10.0_r3
+  - android-vts-10.0_r4
+  - android-vts-10.0_r5
+  - android-vts-10.0_r6
+  - android-vts-10.0_r7
+  - platform-tools-29.0.1
+  - platform-tools-29.0.2
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14752
+modified: '2021-03-09T04:49:05.893673Z'
+created: '2020-07-01T00:00:10.213693Z'

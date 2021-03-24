@@ -1,0 +1,24 @@
+id: OSV-2020-721
+package:
+  name: openthread
+  ecosystem: OSS-Fuzz
+summary: Stack-buffer-overflow in ot::NetworkData::NetworkData::GetNextOnMeshPrefix
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13334
+
+  Crash type: Stack-buffer-overflow WRITE {*}
+  Crash state:
+  ot::NetworkData::NetworkData::GetNextOnMeshPrefix
+  ot::Dhcp6::Dhcp6Client::UpdateAddresses
+  ot::Mle::Mle::HandleStateChanged
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/openthread/openthread
+    introduced: 3eb5a106ffa6678e23c6bc244e843e264cae9b31
+    fixed: a3548df579617e737b075be4a88591e68195e115
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13334
+modified: '2021-03-09T04:49:06.041221Z'
+created: '2020-07-01T00:00:26.625850Z'

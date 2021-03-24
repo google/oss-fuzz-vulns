@@ -1,0 +1,32 @@
+id: OSV-2020-433
+package:
+  name: icu
+  ecosystem: OSS-Fuzz
+summary: UNKNOWN READ in icu_64::UCharsTrie::branchNext
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15580
+
+  Crash type: UNKNOWN READ
+  Crash state:
+  icu_64::UCharsTrie::branchNext
+  icu_64::CollationIterator::nextCE32FromContraction
+  icu_64::CollationIterator::appendCEsFromCE32
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/unicode-org/icu.git
+    introduced: 6e5755a2a833bc64852eae12967d0a54d7adf629
+    fixed: 943b09016055fc869364ea8df7c93f272ac4679e
+  versions:
+  - release-65-1
+  - release-65-rc
+  - release-66-1
+  - release-66-preview
+  - release-66-rc
+  - release-67-1
+  - release-67-rc
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15580
+modified: '2021-03-09T04:49:05.885050Z'
+created: '2020-07-01T00:00:09.276939Z'

@@ -1,0 +1,30 @@
+id: OSV-2018-42
+package:
+  name: gstreamer
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in tap_type_find
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=8159
+
+  Crash type: Heap-buffer-overflow READ 12
+  Crash state:
+  tap_type_find
+  gst_type_find_factory_call_function
+  gst_type_find_helper_for_data
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://gitlab.freedesktop.org/gstreamer/gstreamer.git
+    introduced: 554f604d37970c26fc61726eec2f81a384a691fc:4fb02fc85b70be631f5331b2547e5dc61ef7a43a
+    fixed: 4fb02fc85b70be631f5331b2547e5dc61ef7a43a:80dfb7bb3f415dac465f89f8945a1546c4fcc280
+  versions:
+  - 1.14.1
+  - 1.14.2
+  - 1.14.3
+  - 1.14.4
+  - 1.14.5
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=8159
+modified: '2021-03-09T04:49:04.985970Z'
+created: '2021-01-13T00:00:23.803331Z'

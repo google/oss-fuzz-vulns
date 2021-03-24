@@ -1,0 +1,26 @@
+id: OSV-2020-154
+package:
+  name: ndpi
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in search_valid_dns
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21263
+
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  search_valid_dns
+  ndpi_search_dns
+  check_ndpi_udp_flow_func
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/ntop/nDPI.git
+    introduced: 2efc09a20e6503d99fe3d76fcc16b1892fb7c7ff:5c52c00ea4ad8afaebd5259bc53215a1ab41569f
+    fixed: c6acf97bfbe5ad26db3c2f5dd4d379ac674d6fb3
+  versions:
+  - '3.2'
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21263
+modified: '2021-03-09T04:49:05.318843Z'
+created: '2020-06-24T01:51:16.532133Z'

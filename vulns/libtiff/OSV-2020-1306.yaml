@@ -1,0 +1,26 @@
+id: OSV-2020-1306
+package:
+  name: libtiff
+  ecosystem: OSS-Fuzz
+summary: Use-of-uninitialized-value in TIFFYCbCrtoRGB
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=16602
+
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  TIFFYCbCrtoRGB
+  putcontig8bitYCbCr42tile
+  gtTileContig
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://gitlab.com/libtiff/libtiff
+    introduced: unknown:33f1b16788b86d4501f82678090d209364b3ca49
+    fixed: 1a4efdd151ed5eea231004aa6daaaf3493954876
+  versions:
+  - v4.0.10
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=16602
+modified: '2021-03-09T04:49:05.200725Z'
+created: '2020-07-22T21:50:04.734490Z'

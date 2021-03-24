@@ -1,0 +1,24 @@
+id: OSV-2020-1129
+package:
+  name: readstat
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in rt_read_handler
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=12572
+
+  Crash type: Heap-buffer-overflow WRITE {*}
+  Crash state:
+  rt_read_handler
+  sav_read_variable_missing_values
+  sav_read_variable_record
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/WizardMac/ReadStat
+    introduced: unknown:d1bfd735515803800cb9708e3fca9e5c1e8e7a48
+    fixed: 14265e717e48fc877697a27f1bee232116ce21e5
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=12572
+modified: '2021-03-09T04:49:05.104880Z'
+created: '2020-07-22T21:49:49.305204Z'

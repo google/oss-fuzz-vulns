@@ -1,0 +1,24 @@
+id: OSV-2020-2205
+package:
+  name: grok
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in ojph::local::ojph_decode_codeblock
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=27924
+
+  Crash type: Heap-buffer-overflow WRITE 4
+  Crash state:
+  ojph::local::ojph_decode_codeblock
+  grk::t1_ht::T1HT::decompress
+  grk::DecompressBlockExec::open
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/GrokImageCompression/grok.git
+    introduced: 94aa2587a3d9d2de8b1cf42734f96cbee559df6a
+    fixed: d16525621f47141af0ed655932c89125c4780e93
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=27924
+modified: '2021-03-09T04:49:05.717618Z'
+created: '2020-11-28T00:01:12.405006Z'

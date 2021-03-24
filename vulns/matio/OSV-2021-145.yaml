@@ -1,0 +1,24 @@
+id: OSV-2021-145
+package:
+  name: matio
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in H5O_dtype_decode_helper
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29536
+
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  H5O_dtype_decode_helper
+  H5O_dtype_decode
+  H5O_dtype_shared_decode
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: git://git.code.sf.net/p/matio/matio
+    introduced: 1ce8f2d1845ecdde19a35605cabdbb884776d52d
+    fixed: 8195e5d3e3c65ff6bcc0aae31a4a53eb609c4d7e
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29536
+modified: '2021-02-25T12:00:54.849482Z'
+created: '2021-01-13T21:56:26.909542Z'

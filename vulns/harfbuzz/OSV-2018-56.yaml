@@ -1,0 +1,24 @@
+id: OSV-2018-56
+package:
+  name: harfbuzz
+  ecosystem: OSS-Fuzz
+summary: UNKNOWN READ in OT::propagate_attachment_offsets
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11013
+
+  Crash type: UNKNOWN READ
+  Crash state:
+  OT::propagate_attachment_offsets
+  OT::propagate_attachment_offsets
+  OT::GPOS::position_finish_offsets
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/harfbuzz/harfbuzz.git
+    introduced: b6bc0d4ff62e4509643db3b304306a72bbcb2c38
+    fixed: 3341c7fbfb9bc8e137afd9f16da8cf18eb67b25b
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11013
+modified: '2021-03-09T04:49:05.011777Z'
+created: '2021-01-13T00:00:29.354624Z'

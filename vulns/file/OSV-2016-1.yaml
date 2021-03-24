@@ -1,0 +1,24 @@
+id: OSV-2016-1
+package:
+  name: file
+  ecosystem: OSS-Fuzz
+summary: UNKNOWN READ in mprint
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=282
+
+  Crash type: UNKNOWN READ
+  Crash state:
+  mprint
+  match
+  file_softmagic
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/file/file.git
+    introduced: c8ef8f414952634d217b2b5e19d38b92d0341bc2
+    fixed: a317154a5acbdcc82db79063742481ce83abafe7
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=282
+modified: '2021-03-09T04:49:04.727558Z'
+created: '2021-01-13T21:56:22.388453Z'

@@ -1,0 +1,24 @@
+id: OSV-2018-408
+package:
+  name: mupdf
+  ecosystem: OSS-Fuzz
+summary: Use-of-uninitialized-value in fz_is_empty_irect
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=5865
+
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  fz_is_empty_irect
+  fz_intersect_irect
+  fz_draw_clip_path
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: git://git.ghostscript.com/mupdf.git
+    introduced: 9086386263154498dcb18c96f1e1630903b21a3c:d9bc8c6f7fb2e3ec7035bebaaee0edcf59287705
+    fixed: 461b81547c1328b819ee626a3f9b55c044b45dcd:7e8807ead274119194ce9a911cbf9c0e61a110bb
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=5865
+modified: '2021-03-09T04:49:04.979112Z'
+created: '2021-01-15T00:01:14.057811Z'

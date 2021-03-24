@@ -1,0 +1,25 @@
+id: OSV-2020-66
+package:
+  name: gdal
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in CPLErr GDALResampleChunk32R_AverageT<unsigned char,
+  int>
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21558
+
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  CPLErr GDALResampleChunk32R_AverageT<unsigned char, int>
+  GDALResampleChunk32R_Average
+  GDALRasterBand::RasterIOResampled
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/OSGeo/gdal
+    introduced: cd0029b22d465cc7277ce8f3e4c57ebd57bc5aed
+    fixed: 9cdb32691ee7eac5cc9e07062e1f2f7f867f77fc
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21558
+modified: '2021-03-09T04:49:06.007743Z'
+created: '2020-06-24T01:51:12.546926Z'

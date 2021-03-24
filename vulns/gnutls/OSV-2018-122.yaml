@@ -1,0 +1,41 @@
+id: OSV-2018-122
+package:
+  name: gnutls
+  ecosystem: OSS-Fuzz
+summary: Use-of-uninitialized-value in gnutls_pkcs12_get_bag
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=10136
+
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  gnutls_pkcs12_get_bag
+  gnutls_pkcs12_simple_parse
+  gnutls_pkcs12_key_parser_fuzzer.c
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://gitlab.com/gnutls/gnutls.git
+    introduced: 5333d20ce6f14229f6579086b57de0eeacedd4fa:90a71b2e53e9696bd4c07ff98a12d06ecd2e424d
+    fixed: d165c2a37f7d072cc88db88ec97f057a9ac6e4aa:f6b4695ccafd6945cc7affda4ab9f7b9f9ed8616
+  versions:
+  - 3.6.12
+  - 3.6.13
+  - 3.6.14
+  - 3.6.14-windows
+  - 3.6.15
+  - 3.7.0
+  - gnutls_3_6_10
+  - gnutls_3_6_11
+  - gnutls_3_6_11_1
+  - gnutls_3_6_12
+  - gnutls_3_6_4
+  - gnutls_3_6_5
+  - gnutls_3_6_6
+  - gnutls_3_6_7
+  - gnutls_3_6_8
+  - gnutls_3_6_9
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=10136
+modified: '2021-03-09T04:49:04.828346Z'
+created: '2021-01-13T00:00:55.785646Z'

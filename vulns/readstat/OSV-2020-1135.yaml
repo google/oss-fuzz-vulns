@@ -1,0 +1,24 @@
+id: OSV-2020-1135
+package:
+  name: readstat
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in sas_read4
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=12584
+
+  Crash type: Heap-buffer-overflow READ 4
+  Crash state:
+  sas_read4
+  sas7bcat_parse_block
+  readstat_parse_sas7bcat
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/WizardMac/ReadStat
+    introduced: unknown:d1bfd735515803800cb9708e3fca9e5c1e8e7a48
+    fixed: 40ae910e87e913031d0c6a3eb14654357e9e0992
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=12584
+modified: '2021-03-09T04:49:05.108134Z'
+created: '2020-07-22T21:49:49.811983Z'

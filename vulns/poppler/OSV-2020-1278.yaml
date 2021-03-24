@@ -1,0 +1,35 @@
+id: OSV-2020-1278
+package:
+  name: poppler
+  ecosystem: OSS-Fuzz
+summary: Use-of-uninitialized-value in SampledFunction::SampledFunction
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=12608
+
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  SampledFunction::SampledFunction
+  Function::parse
+  Function::parse
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://anongit.freedesktop.org/git/poppler/poppler.git
+    introduced: unknown:c9e2dc7ea7e098875e6b93566bdb1d14451c3673
+    fixed: f2493d53a70e10ea69bd147c48be7c8544979436
+  versions:
+  - poppler-0.65.0
+  - poppler-0.66.0
+  - poppler-0.67.0
+  - poppler-0.68.0
+  - poppler-0.69.0
+  - poppler-0.70.0
+  - poppler-0.70.1
+  - poppler-0.71.0
+  - poppler-0.72.0
+  - poppler-0.73.0
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=12608
+modified: '2021-03-09T04:49:05.184524Z'
+created: '2020-07-22T21:50:02.576507Z'

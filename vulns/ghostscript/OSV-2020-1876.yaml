@@ -1,0 +1,41 @@
+id: OSV-2020-1876
+package:
+  name: ghostscript
+  ecosystem: OSS-Fuzz
+summary: UNKNOWN READ in mem_mapped4_fill_rectangle
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22007
+
+  Crash type: UNKNOWN READ
+  Crash state:
+  mem_mapped4_fill_rectangle
+  gx_dc_pure_fill_rectangle
+  gx_default_fillpage
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: git://git.ghostscript.com/ghostpdl.git
+    introduced: d1eac80695b2c6f2a85942a82518715549541969
+    fixed: 748edd2fd75c684d63486eded71ad20254de6f4c
+  versions:
+  - ghostpdl-9.51
+  - ghostpdl-9.51rc1
+  - ghostpdl-9.51rc2
+  - ghostpdl-9.51rc2_test
+  - ghostpdl-9.51rc2_test2
+  - ghostpdl-9.51rc3
+  - ghostpdl-9.52
+  - ghostpdl-9.52-test-base-1
+  - ghostpdl-9.52-test-base-2
+  - ghostpdl-9.52-test-base-3
+  - ghostpdl-9.52-test-base-4
+  - ghostpdl-9.52-test-base-5
+  - ghostpdl-9.52-test-base-6
+  - ghostpdl-9.52.1
+  - ghostscript-9.51
+  - ghostscript-9.52
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22007
+modified: '2021-03-09T04:49:05.487387Z'
+created: '2020-09-29T00:00:30.602171Z'

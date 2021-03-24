@@ -1,0 +1,23 @@
+id: OSV-2018-255
+package:
+  name: mupdf
+  ecosystem: OSS-Fuzz
+summary: Heap-use-after-free in add_range
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=5492
+
+  Crash type: Heap-use-after-free READ 4
+  Crash state:
+  add_range
+  pdf_map_range_to_range
+  pdf_parse_bf_range
+affects:
+  ranges:
+  - type: GIT
+    repo: git://git.ghostscript.com/mupdf.git
+    introduced: 80b59185030368fecf38d9abe13ffb0302a60c2a
+    fixed: 71ceebcf56e682504da22c4035b39a2d451e8ffd
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=5492
+modified: '2021-03-09T04:49:04.900535Z'
+created: '2021-01-15T00:00:09.207387Z'

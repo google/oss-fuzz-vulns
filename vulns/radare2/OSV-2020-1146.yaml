@@ -1,0 +1,37 @@
+id: OSV-2020-1146
+package:
+  name: radare2
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in dex_parse_debug_item
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14021
+
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  dex_parse_debug_item
+  parse_dex_class_method
+  parse_class
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/radare/radare2
+    introduced: unknown:efe53437ff4f34bbb7785a229c8428b449c6069f
+    fixed: 37fd41dc09b298cd22b35500f5465ce1a3dd461f
+  versions:
+  - 2.8.0
+  - 2.9.0
+  - 3.0.0
+  - 3.0.1
+  - 3.1.0
+  - 3.1.1
+  - 3.1.2
+  - 3.1.3
+  - 3.2.0
+  - 3.2.1
+  - 3.3.0
+  - 3.4.0
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14021
+modified: '2021-03-09T04:49:05.113967Z'
+created: '2020-07-22T21:49:50.759227Z'

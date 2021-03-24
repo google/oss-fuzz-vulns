@@ -1,0 +1,23 @@
+id: OSV-2020-2151
+package:
+  name: miniz
+  ecosystem: OSS-Fuzz
+summary: Use-of-uninitialized-value in tinfl_decompress
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=27413
+
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  tinfl_decompress
+  mz_inflate
+  mz_uncompress2
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/richgel999/miniz.git
+    introduced: 1e7621d96cb9d0821c61db6f4e3ef36ddc19b0cd
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=27413
+modified: '2021-03-09T05:46:23.081891Z'
+created: '2020-11-13T00:00:56.838971Z'

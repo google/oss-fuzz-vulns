@@ -1,0 +1,24 @@
+id: OSV-2020-141
+package:
+  name: leptonica
+  ecosystem: OSS-Fuzz
+summary: Heap-use-after-free in pixcmapDestroy
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22110
+
+  Crash type: Heap-use-after-free READ 8
+  Crash state:
+  pixcmapDestroy
+  colorquant_fuzzer.cc
+  pixcmapDestroy
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/DanBloomberg/leptonica.git
+    introduced: 836740fd7829e6e3a92a766b7e559f4136378eb7
+    fixed: 8e079d159f2e00bbfa3e8a70069a2aa9924abdbc
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22110
+modified: '2021-03-09T04:49:05.251916Z'
+created: '2020-06-24T01:51:15.964708Z'

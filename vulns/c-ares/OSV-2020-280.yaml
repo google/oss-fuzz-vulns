@@ -1,0 +1,21 @@
+id: OSV-2020-280
+package:
+  name: c-ares
+  ecosystem: OSS-Fuzz
+summary: Null-dereference READ
+details: |-
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15458
+
+  Crash type: Null-dereference READ
+  Crash state:
+  NULL
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/c-ares/c-ares.git
+    introduced: 7d3591ee8a1a63e7748e68e6d880bd1763a32885
+    fixed: b949cc3ddfbeb1b3fba571fb53b186b645e66e9c
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15458
+modified: '2021-03-09T04:49:05.802822Z'
+created: '2020-06-30T00:00:45.791652Z'

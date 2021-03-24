@@ -1,0 +1,33 @@
+id: OSV-2020-863
+package:
+  name: qpdf
+  ecosystem: OSS-Fuzz
+summary: Use-of-uninitialized-value in QPDFTokenizer::isSpace
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20391
+
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  QPDFTokenizer::isSpace
+  QPDFTokenizer::presentCharacter
+  QPDFTokenizer::readToken
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/qpdf/qpdf.git
+    introduced: 793d987b5fdd55330f2c0df532114c0ce13a25af
+    fixed: 232f5fc9f3bed8e1b02bca5d10b2eca444e30f95
+  versions:
+  - release-qpdf-10.0.0
+  - release-qpdf-10.0.1
+  - release-qpdf-9.0.0
+  - release-qpdf-9.0.1
+  - release-qpdf-9.0.2
+  - release-qpdf-9.1.0
+  - release-qpdf-9.1.1
+  - release-qpdf-9.1.rc1
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20391
+modified: '2021-03-09T04:49:06.119077Z'
+created: '2020-07-14T22:13:49.052148Z'

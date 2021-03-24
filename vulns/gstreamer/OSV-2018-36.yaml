@@ -1,0 +1,48 @@
+id: OSV-2018-36
+package:
+  name: gstreamer
+  ecosystem: OSS-Fuzz
+summary: UNKNOWN READ in ebml_parse_chunk
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=7887
+
+  Crash type: UNKNOWN READ
+  Crash state:
+  ebml_parse_chunk
+  matroska_type_find
+  gst_type_find_factory_call_function
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://gitlab.freedesktop.org/gstreamer/gstreamer.git
+    introduced: fb56ad6bee2366813f6be4f697579c06774b062d:4c795924dba5595fb1472864f7d27262bce247a8
+    fixed: 9722e896446ed052623d795d8511140fbca7f023:b71841c2d2f3759abc5ebe2703cc96c18da77dc9
+  versions:
+  - 1.13.1
+  - 1.13.90
+  - 1.13.91
+  - 1.14.0
+  - 1.14.1
+  - 1.14.2
+  - 1.14.3
+  - 1.14.4
+  - 1.14.5
+  - 1.15.1
+  - 1.15.2
+  - 1.15.90
+  - 1.16.0
+  - 1.16.1
+  - 1.16.2
+  - 1.16.3
+  - 1.17.1
+  - 1.17.2
+  - 1.17.90
+  - 1.18.0
+  - 1.18.1
+  - 1.18.2
+  - 1.18.3
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=7887
+modified: '2021-03-09T04:49:04.953861Z'
+created: '2021-01-13T00:00:18.931589Z'

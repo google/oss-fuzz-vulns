@@ -1,0 +1,26 @@
+id: OSV-2020-1046
+package:
+  name: opensc
+  ecosystem: OSS-Fuzz
+summary: Stack-buffer-overflow in sc_pkcs15emu_object_add
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=19251
+
+  Crash type: Stack-buffer-overflow READ {*}
+  Crash state:
+  sc_pkcs15emu_object_add
+  sc_pkcs15emu_coolkey_init
+  sc_pkcs15emu_coolkey_init_ex
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/OpenSC/OpenSC
+    introduced: unknown:c4dcac5de77825e79763c9cd5f58aa8bde22f0b2
+    fixed: ee78b0b80514460936c585c3ff5fc477338ae371
+  versions:
+  - 0.20.0-rc4
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=19251
+modified: '2021-03-09T04:49:05.060143Z'
+created: '2020-07-22T21:49:42.803976Z'

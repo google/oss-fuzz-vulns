@@ -1,0 +1,24 @@
+id: OSV-2017-8
+package:
+  name: curl
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in setcharset
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=4161
+
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  setcharset
+  loop
+  loop
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/curl/curl.git
+    introduced: 1cb4f5d6e8e470638759a48ba99fda230089712f:e240a546a7ac2fa7956adb664b8c40c4dee4f82b
+    fixed: 0b664ba968437715819bfe4c7ada5679d16ebbc3
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=4161
+modified: '2021-03-09T04:49:04.805046Z'
+created: '2021-01-13T00:00:08.384698Z'

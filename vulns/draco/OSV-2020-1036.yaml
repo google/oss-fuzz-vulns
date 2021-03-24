@@ -1,0 +1,25 @@
+id: OSV-2020-1036
+package:
+  name: draco
+  ecosystem: OSS-Fuzz
+summary: Heap-use-after-free in void draco::Metadata::AddEntry<std::__1::vector<unsigned
+  char, std::__1::allocat
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23344
+
+  Crash type: Heap-use-after-free READ 8
+  Crash state:
+  void draco::Metadata::AddEntry<std::__1::vector<unsigned char, std::__1::allocat
+  draco::MetadataDecoder::DecodeEntry
+  draco::MetadataDecoder::DecodeMetadata
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/google/draco
+    introduced: unknown:dec23f5ac6c71c2352dd6812afa799c03553fc58
+    fixed: 25484b31235d1a35fa72be6ce8d1f7f286b5c0bf
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23344
+modified: '2021-03-09T04:49:05.054900Z'
+created: '2020-07-22T21:49:41.469982Z'

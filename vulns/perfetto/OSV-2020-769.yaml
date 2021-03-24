@@ -1,0 +1,72 @@
+id: OSV-2020-769
+package:
+  name: perfetto
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in perfetto::trace_processor::ClockTracker::ConvertSlowpath
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23149
+
+  Crash type: Heap-buffer-overflow READ 8
+  Crash state:
+  perfetto::trace_processor::ClockTracker::ConvertSlowpath
+  perfetto::trace_processor::ClockTracker::Convert
+  perfetto::trace_processor::ClockTracker::ToTraceTime
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://android.googlesource.com/platform/external/perfetto/
+    introduced: 8b479acd06465a569dd00fee7b279199d35f516f
+    fixed: 509812647060893522be508e0ab5b6c62dec03bd
+  versions:
+  - android-11.0.0_r1
+  - android-11.0.0_r10
+  - android-11.0.0_r11
+  - android-11.0.0_r12
+  - android-11.0.0_r13
+  - android-11.0.0_r14
+  - android-11.0.0_r15
+  - android-11.0.0_r16
+  - android-11.0.0_r17
+  - android-11.0.0_r18
+  - android-11.0.0_r19
+  - android-11.0.0_r2
+  - android-11.0.0_r20
+  - android-11.0.0_r21
+  - android-11.0.0_r22
+  - android-11.0.0_r23
+  - android-11.0.0_r24
+  - android-11.0.0_r25
+  - android-11.0.0_r26
+  - android-11.0.0_r27
+  - android-11.0.0_r28
+  - android-11.0.0_r29
+  - android-11.0.0_r3
+  - android-11.0.0_r30
+  - android-11.0.0_r31
+  - android-11.0.0_r4
+  - android-11.0.0_r5
+  - android-11.0.0_r7
+  - android-11.0.0_r8
+  - android-11.0.0_r9
+  - android-cts-11.0_r1
+  - android-cts-11.0_r2
+  - android-cts-11.0_r3
+  - android-mainline-11.0.0_r1
+  - android-mainline-11.0.0_r2
+  - android-mainline-11.0.0_r3
+  - android-mainline-11.0.0_r4
+  - android-platform-11.0.0_r1
+  - android-platform-11.0.0_r2
+  - android-platform-11.0.0_r3
+  - android-platform-11.0.0_r4
+  - android-security-11.0.0_r1
+  - android-vts-11.0_r1
+  - android-vts-11.0_r2
+  - android-vts-11.0_r3
+  - v5.0
+  - v5.1
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23149
+modified: '2021-03-09T04:49:06.065972Z'
+created: '2020-07-10T00:00:21.254899Z'

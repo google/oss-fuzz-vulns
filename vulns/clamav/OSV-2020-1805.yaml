@@ -1,0 +1,24 @@
+id: OSV-2020-1805
+package:
+  name: clamav
+  ecosystem: OSS-Fuzz
+summary: Stack-buffer-overflow in rijndaelSetupEncrypt
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21329
+
+  Crash type: Stack-buffer-overflow READ 1
+  Crash state:
+  rijndaelSetupEncrypt
+  rijndaelSetupDecrypt
+  aes_decrypt
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/Cisco-Talos/clamav-fuzz-corpus.git
+    introduced: 8f89e7e0481f2e9f8f4eaa74364b06e3fb78bd0b
+    fixed: 399ce5bb2d5c839786e79c641c00b8205e47dd4a
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21329
+modified: '2021-03-09T04:49:05.450155Z'
+created: '2020-09-18T00:00:33.966162Z'

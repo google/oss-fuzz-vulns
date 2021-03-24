@@ -1,0 +1,27 @@
+id: OSV-2020-2138
+package:
+  name: matio
+  ecosystem: OSS-Fuzz
+summary: Use-of-uninitialized-value in Mat_VarReadNextInfo5
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=27258
+
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  Mat_VarReadNextInfo5
+  Mat_VarReadNextInfo
+  Mat_GetDir
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: git://git.code.sf.net/p/matio/matio
+    introduced: 7a1831b94a73f2cd665bd48f65c8516509d0740e
+    fixed: 054b285ddb4a8542e6862ca7d39633e96c67e61d
+  versions:
+  - v1.5.18
+  - v1.5.19
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=27258
+modified: '2021-03-09T04:49:05.681257Z'
+created: '2020-11-08T00:00:50.229041Z'

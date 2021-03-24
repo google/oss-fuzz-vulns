@@ -1,0 +1,24 @@
+id: OSV-2020-1013
+package:
+  name: ndpi
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in ndpi_search_amazon_video
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=19100
+
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  ndpi_search_amazon_video
+  check_ndpi_tcp_flow_func
+  ndpi_detection_process_packet
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/ntop/nDPI.git
+    introduced: unknown:e695dd6eade754b2d50bdf297ca8bdc4105f93ff
+    fixed: c7efd0892f1f9299360956b740044a798123a773
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=19100
+modified: '2021-03-09T04:49:05.043166Z'
+created: '2020-07-22T21:49:40.101125Z'

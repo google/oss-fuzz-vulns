@@ -1,0 +1,24 @@
+id: OSV-2020-1643
+package:
+  name: open62541
+  ecosystem: OSS-Fuzz
+summary: Heap-use-after-free in UA_NodeMap_delete
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25068
+
+  Crash type: Heap-use-after-free READ 4
+  Crash state:
+  UA_NodeMap_delete
+  UA_Server_new
+  fuzz_binary_message.cc
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/open62541/open62541.git
+    introduced: 5478e563159ecc3269ccce3d3088135776ca933a:ee275e79310280a71fad3b21f6d430c0c046091b
+    fixed: ee275e79310280a71fad3b21f6d430c0c046091b:46a618acfbb3a71f3ccabcbc26cd620636300868
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25068
+modified: '2021-03-09T04:49:05.369363Z'
+created: '2020-08-22T00:00:17.203907Z'

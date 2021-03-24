@@ -1,0 +1,24 @@
+id: OSV-2020-1587
+package:
+  name: pcapplusplus
+  ecosystem: OSS-Fuzz
+summary: UNKNOWN WRITE in count_blocks
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24704
+
+  Crash type: UNKNOWN WRITE
+  Crash state:
+  count_blocks
+  opt_init
+  bpf_optimize
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/seladb/PcapPlusPlus
+    introduced: 6a78b5da5b5dbc31c4ccc0ff74513580a149c71e
+    fixed: 6a78b5da5b5dbc31c4ccc0ff74513580a149c71e:1bd1927ea9c7cf96eb0b0079426ac3e9bb48b155
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24704
+modified: '2021-03-09T04:49:05.342883Z'
+created: '2020-08-07T00:01:06.228767Z'

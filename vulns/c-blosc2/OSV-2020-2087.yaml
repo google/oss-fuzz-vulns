@@ -1,0 +1,24 @@
+id: OSV-2020-2087
+package:
+  name: c-blosc2
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in blosc_c
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26442
+
+  Crash type: Heap-buffer-overflow WRITE 1
+  Crash state:
+  blosc_c
+  do_job
+  blosc_compress_context
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/Blosc/c-blosc2.git
+    introduced: 2fe60549952b476d1229c7fe6d86e6c6e95de8d6
+    fixed: c4c6470e88210afc95262c8b9fcc27e30ca043ee
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26442
+modified: '2021-03-09T04:49:05.602771Z'
+created: '2020-10-19T00:00:42.021414Z'

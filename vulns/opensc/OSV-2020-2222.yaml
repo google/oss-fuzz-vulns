@@ -1,0 +1,28 @@
+id: OSV-2020-2222
+package:
+  name: opensc
+  ecosystem: OSS-Fuzz
+summary: Heap-double-free in sc_pkcs15_free_tokeninfo
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=28185
+
+  Crash type: Heap-double-free
+  Crash state:
+  sc_pkcs15_free_tokeninfo
+  sc_pkcs15_card_free
+  fuzz_pkcs15_reader.c
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/OpenSC/OpenSC
+    introduced: b02da8348be97d4b24081783f6af46757373bc3e
+    fixed: f015746d22d249642c19674298a18ad824db0ed7
+  versions:
+  - 0.21.0
+  - 0.21.0-rc1
+  - 0.21.0-rc2
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=28185
+modified: '2021-03-09T04:49:05.726831Z'
+created: '2020-12-04T00:00:16.472882Z'

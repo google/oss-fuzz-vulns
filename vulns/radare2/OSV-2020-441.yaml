@@ -1,0 +1,27 @@
+id: OSV-2020-441
+package:
+  name: radare2
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in r_buf_cpy
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14125
+
+  Crash type: Heap-buffer-overflow WRITE {*}
+  Crash state:
+  r_buf_cpy
+  get_relocs_64
+  relocs
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/radare/radare2
+    introduced: 8dbc4f4ebe4dba9d5369d0d36d821f72b8b2d825
+    fixed: 67d531dce9df1630387a870833cfdb6cd707ee9c
+  versions:
+  - 3.4.0
+  - 3.4.1
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14125
+modified: '2021-03-09T04:49:05.889593Z'
+created: '2020-07-01T00:00:09.757737Z'

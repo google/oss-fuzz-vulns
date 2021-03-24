@@ -1,0 +1,24 @@
+id: OSV-2020-227
+package:
+  name: libspng
+  ecosystem: OSS-Fuzz
+summary: Heap-double-free in spng__free
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22720
+
+  Crash type: Heap-double-free
+  Crash state:
+  spng__free
+  spng__inflate_stream
+  read_non_idat_chunks
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/randy408/libspng.git
+    introduced: 56ea34629ac4e56f2264f7a8212b228873e9f174
+    fixed: f47ed26affe9655c70340b8df9fd9e6f1f2ec85e
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22720
+modified: '2021-03-09T04:49:05.754125Z'
+created: '2020-06-24T01:51:19.852052Z'

@@ -1,0 +1,26 @@
+id: OSV-2020-1113
+package:
+  name: oniguruma
+  ecosystem: OSS-Fuzz
+summary: Heap-use-after-free in node_min_byte_len
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21998
+
+  Crash type: Heap-use-after-free READ 4
+  Crash state:
+  node_min_byte_len
+  tune_quant
+  tune_tree
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/kkos/oniguruma.git
+    introduced: unknown:efa4e3afb3926b2899e09a0d7c73bc7914e30c3a
+    fixed: 5066ddb254b830bb583e62521ea7ac838f6df121
+  versions:
+  - v6.9.5_rev1
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21998
+modified: '2021-03-09T04:49:05.096830Z'
+created: '2020-07-22T21:49:48.153542Z'

@@ -1,0 +1,28 @@
+id: OSV-2020-688
+package:
+  name: libical
+  ecosystem: OSS-Fuzz
+summary: Heap-use-after-free in icalparameter_new_from_value_string
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14737
+
+  Crash type: Heap-use-after-free READ 2
+  Crash state:
+  icalparameter_new_from_value_string
+  icalparser_add_line
+  icalparser_parse
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/libical/libical.git
+    introduced: 771f633543950540e518ff8c1f55253722221695
+    fixed: 645068e8371c7e0b5f0f75c48cbf3e04ccca49ba
+  - type: GIT
+    repo: https://github.com/libical/libical.git
+    introduced: 234bf4b24168052b97200b1893da9e727fe44b9f
+    fixed: 584a7b4832551d75e4dcacc7cfece7ddd0fdc74c
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14737
+modified: '2021-03-09T04:49:06.023221Z'
+created: '2020-07-01T00:00:24.868591Z'

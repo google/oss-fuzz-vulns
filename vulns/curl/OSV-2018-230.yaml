@@ -1,0 +1,24 @@
+id: OSV-2018-230
+package:
+  name: curl
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in rtsp_rtp_readwrite
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=7105
+
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  rtsp_rtp_readwrite
+  readwrite_data
+  Curl_readwrite
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/curl/curl.git
+    introduced: a857057536df6e55cb8eec0f894c192fe594272d:7750b14be12a60ec3a8ed0c471f210703d94128f
+    fixed: 8c7b3737d29ed5c0575bf592063de8a51450812d
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=7105
+modified: '2021-03-09T04:49:04.888123Z'
+created: '2021-01-13T00:01:35.017548Z'

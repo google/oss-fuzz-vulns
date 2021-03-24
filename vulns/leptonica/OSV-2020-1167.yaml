@@ -1,0 +1,26 @@
+id: OSV-2020-1167
+package:
+  name: leptonica
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in tiffReadCallback
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14773
+
+  Crash type: Heap-buffer-overflow READ {*}
+  Crash state:
+  tiffReadCallback
+  OJPEGReadHeaderInfoSecTablesQTable
+  OJPEGReadHeaderInfoSec
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/DanBloomberg/leptonica.git
+    introduced: unknown:7dac4b18eab74e44dd4b03f0539352acbc986f1a
+    fixed: 41a641203d9eba9469416f9e87ff241ed4f743a7
+  versions:
+  - 1.78.0
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14773
+modified: '2021-03-09T04:49:05.125385Z'
+created: '2020-07-22T21:49:52.626033Z'

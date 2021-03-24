@@ -1,0 +1,26 @@
+id: OSV-2020-1029
+package:
+  name: unicorn
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in iotlb_to_region_mips
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=17193
+
+  Crash type: Heap-buffer-overflow READ 8
+  Crash state:
+  iotlb_to_region_mips
+  get_page_addr_code_mips
+  tb_find_slow_mips
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/unicorn-engine/unicorn.git
+    introduced: unknown:12bcf3bea093ed733904d3993bbdba0c2572a497
+    fixed: 901efc4bd45bffa7fae58a06a90949b070ed7303
+  versions:
+  - 1.0.2-rc1
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=17193
+modified: '2021-03-09T04:49:05.051157Z'
+created: '2020-07-22T21:49:40.785373Z'

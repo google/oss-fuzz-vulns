@@ -1,0 +1,24 @@
+id: OSV-2020-974
+package:
+  name: arrow
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in arrow::Status arrow::VisitArrayInline<arrow::internal::ValidateArrayDataVisitor>
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20113
+
+  Crash type: Heap-buffer-overflow READ 4
+  Crash state:
+  arrow::Status arrow::VisitArrayInline<arrow::internal::ValidateArrayDataVisitor>
+  arrow::internal::ValidateArrayData
+  arrow::RecordBatch::ValidateFull
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/apache/arrow.git
+    introduced: unknown:ccdc4b076cbd5fb03e1cbc42292def871d2b6035
+    fixed: 724da320eaac94003a8f1229d6a820fe8c8c1816
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20113
+modified: '2021-03-09T04:49:06.181230Z'
+created: '2020-07-22T21:49:37.181080Z'

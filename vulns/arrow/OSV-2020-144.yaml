@@ -1,0 +1,24 @@
+id: OSV-2020-144
+package:
+  name: arrow
+  ecosystem: OSS-Fuzz
+summary: Heap-use-after-free in int arrow::BitUtil::BitReader::GetBatch<short>
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20685
+
+  Crash type: Heap-use-after-free WRITE 2
+  Crash state:
+  int arrow::BitUtil::BitReader::GetBatch<short>
+  parquet::LevelDecoder::Decode
+  parquet::internal::TypedRecordReader<parquet::PhysicalType<
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/apache/arrow.git
+    introduced: 431fdbfbc0fb4bb16c4a89298404ad16784db2a0
+    fixed: d2ab289294f5eaa175e6bc4ab5fb74b5ea013f6e
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20685
+modified: '2021-03-09T04:49:05.266764Z'
+created: '2020-06-24T01:51:16.108113Z'

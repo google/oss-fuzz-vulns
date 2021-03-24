@@ -1,0 +1,24 @@
+id: OSV-2020-1869
+package:
+  name: ghostscript
+  ecosystem: OSS-Fuzz
+summary: Use-of-uninitialized-value in gs_scan_token
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21625
+
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  gs_scan_token
+  tokenexec_continue
+  interp
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: git://git.ghostscript.com/ghostpdl.git
+    introduced: unknown:668917a10e7eada030f7d2dddec9f579fddeed3d
+    fixed: ebabebad34a3811230b7bfe351eface7f5efc8a9:87688cd48fb52c305e159b785bd184232426a766
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21625
+modified: '2021-03-09T04:49:05.482936Z'
+created: '2020-09-29T00:00:10.617022Z'

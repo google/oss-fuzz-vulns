@@ -1,0 +1,33 @@
+id: OSV-2020-847
+package:
+  name: qpdf
+  ecosystem: OSS-Fuzz
+summary: Use-of-uninitialized-value in ycck_cmyk_convert
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18732
+
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  ycck_cmyk_convert
+  sep_upsample
+  process_data_simple_main
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/qpdf/qpdf.git
+    introduced: 0ae344d002755d1f218fe4fbd818a814bc3ebdbc
+    fixed: 232f5fc9f3bed8e1b02bca5d10b2eca444e30f95
+  versions:
+  - release-qpdf-10.0.0
+  - release-qpdf-10.0.1
+  - release-qpdf-9.0.0
+  - release-qpdf-9.0.1
+  - release-qpdf-9.0.2
+  - release-qpdf-9.1.0
+  - release-qpdf-9.1.1
+  - release-qpdf-9.1.rc1
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18732
+modified: '2021-03-09T04:49:06.109584Z'
+created: '2020-07-14T22:13:44.357655Z'

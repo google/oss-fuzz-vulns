@@ -1,0 +1,37 @@
+id: OSV-2020-420
+package:
+  name: gdal
+  ecosystem: OSS-Fuzz
+summary: UNKNOWN WRITE in uffd_cleanup
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15156
+
+  Crash type: UNKNOWN WRITE
+  Crash state:
+  uffd_cleanup
+  netCDFDataset::~netCDFDataset
+  netCDFDataset::~netCDFDataset
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/OSGeo/gdal
+    introduced: 289b796e365ac26020548410d6ae16022bc80718:f956a3c6ff43a877a63ee1199c5e0092c11a8c31
+    fixed: 767e3a56144f676ca738ef8f700e0e56035bd05a
+  versions:
+  - v2.4.2
+  - v2.4.3
+  - v2.4.3RC1
+  - v2.4.4
+  - v2.4.4RC1
+  - v3.0.1
+  - v3.0.2
+  - v3.0.2RC1
+  - v3.0.3
+  - v3.0.3RC1
+  - v3.0.4
+  - v3.0.4RC1
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15156
+modified: '2021-03-09T04:49:05.878206Z'
+created: '2020-07-01T00:00:08.489132Z'

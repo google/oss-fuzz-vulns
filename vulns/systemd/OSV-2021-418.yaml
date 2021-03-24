@@ -1,0 +1,24 @@
+id: OSV-2021-418
+package:
+  name: systemd
+  ecosystem: OSS-Fuzz
+summary: Heap-double-free in mfree
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31055
+
+  Crash type: Heap-double-free
+  Crash state:
+  mfree
+  parse_path_argument
+  systemctl_parse_argv
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/systemd/systemd
+    introduced: 425ac7a253321b8e8d1b0a0f7a173892a3abc385
+    fixed: 5800f0fc682baccb24ae076b3ffea0a548812486
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31055
+modified: '2021-03-05T00:13:54.695302Z'
+created: '2021-02-19T00:02:40.501688Z'

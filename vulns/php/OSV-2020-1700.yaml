@@ -1,0 +1,26 @@
+id: OSV-2020-1700
+package:
+  name: php
+  ecosystem: OSS-Fuzz
+summary: UNKNOWN READ in zend_gc_delref
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25384
+
+  Crash type: UNKNOWN READ
+  Crash state:
+  zend_gc_delref
+  i_zval_ptr_dtor
+  zend_unclean_zval_ptr_dtor
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/php/php-src.git
+    introduced: 1d0f55315e08d0fd7a9f9f4e7c4595e3f9d7a7f4
+    fixed: daf222c9f88e2aac41437ca97cfe2c60300eed23
+  versions:
+  - php-8.0.0beta3
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25384
+modified: '2021-03-09T04:49:05.396359Z'
+created: '2020-09-04T00:00:30.328352Z'

@@ -1,0 +1,26 @@
+id: OSV-2020-2081
+package:
+  name: mruby
+  ecosystem: OSS-Fuzz
+summary: UNKNOWN READ in presym_sym2name
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26400
+
+  Crash type: UNKNOWN READ
+  Crash state:
+  presym_sym2name
+  sym2name_len
+  mrb_sym_name_len
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/mruby/mruby
+    introduced: 500f721f7080e79c2e41e306cc1d94471c10f173
+    fixed: 3d8a8fb6613f177416cc09e81e2a0082db006926
+  versions:
+  - 3.0.0-preview
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26400
+modified: '2021-03-09T04:49:05.599546Z'
+created: '2020-10-18T00:00:15.125270Z'

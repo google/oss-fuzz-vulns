@@ -1,0 +1,24 @@
+id: OSV-2021-152
+package:
+  name: openthread
+  ecosystem: OSS-Fuzz
+summary: Stack-buffer-overflow in ot::NetworkData::ServerTlv::GetServer16
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=5878
+
+  Crash type: Stack-buffer-overflow READ 2
+  Crash state:
+  ot::NetworkData::ServerTlv::GetServer16
+  ot::NetworkData::Leader::RlocLookup
+  ot::NetworkData::Leader::RegisterNetworkData
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/openthread/openthread
+    introduced: 050cf9074f3de30ca5d2cfda26c5b37f24a4b9a1:68a605f22e579ae45ab1d8221faa2d45e8668e05
+    fixed: 9ec07205cc17c2de80b06a8b1e181abde4fdbb1e
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=5878
+modified: '2021-03-09T04:49:06.221279Z'
+created: '2021-01-13T21:56:33.613485Z'

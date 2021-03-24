@@ -1,0 +1,24 @@
+id: OSV-2020-599
+package:
+  name: cryptofuzz
+  ecosystem: OSS-Fuzz
+summary: Index-out-of-bounds in prepare_macpads
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14768
+
+  Crash type: Index-out-of-bounds
+  Crash state:
+  prepare_macpads
+  _gcry_md_setkey
+  gcry_mac_setkey
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/guidovranken/cryptofuzz
+    introduced: 121a73867d9139fb2f9f123f8b170ea9b8f30877:a3438fff66f02dae0c19e4169500d5a347321681
+    fixed: 93f5eac259411cad96678e2c947d9fa02447c6f3
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14768
+modified: '2021-03-09T04:49:05.973427Z'
+created: '2020-07-01T00:00:19.430674Z'

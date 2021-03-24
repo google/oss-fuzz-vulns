@@ -1,0 +1,24 @@
+id: OSV-2020-440
+package:
+  name: radare2
+  ecosystem: OSS-Fuzz
+summary: UNKNOWN READ in r_uleb128
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13915
+
+  Crash type: UNKNOWN READ
+  Crash state:
+  r_uleb128
+  parse_class
+  dex_loadcode
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/radare/radare2
+    introduced: 3f4580b0319ec4a4bcaa2fc8fbd608be948ec054
+    fixed: 118bf6a693ef0a349959919fd6217e70a26ddf62
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13915
+modified: '2021-03-09T04:49:05.889114Z'
+created: '2020-07-01T00:00:09.710794Z'

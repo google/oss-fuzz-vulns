@@ -1,0 +1,24 @@
+id: OSV-2020-1850
+package:
+  name: libfmt
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in fmt::v6::basic_string_view<char>::basic_string_view
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21763
+
+  Crash type: Heap-buffer-overflow READ 2
+  Crash state:
+  fmt::v6::basic_string_view<char>::basic_string_view
+  fmt::v6::basic_format_arg<fmt::v6::basic_format_context<std::__1::back_insert_it
+  fmt::v6::basic_format_context<std::__1::back_insert_iterator<fmt::v6::internal::
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/fmtlib/fmt.git
+    introduced: 8a4630686e2dd24900897298c4ae1362de749ed8
+    fixed: c9a57b9a81868188470c611e09accc189383e4ad
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21763
+modified: '2021-03-09T04:49:05.473596Z'
+created: '2020-09-26T00:00:33.702898Z'

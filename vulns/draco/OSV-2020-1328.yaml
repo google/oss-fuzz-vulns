@@ -1,0 +1,25 @@
+id: OSV-2020-1328
+package:
+  name: draco
+  ecosystem: OSS-Fuzz
+summary: UNKNOWN READ in std::__1::__tree<std::__1::__value_type<std::__1::basic_string<char,
+  std::__1::c
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23566
+
+  Crash type: UNKNOWN READ
+  Crash state:
+  std::__1::__tree<std::__1::__value_type<std::__1::basic_string<char, std::__1::c
+  std::__1::pair<std::__1::__tree_iterator<std::__1::__value_type<std::__1::basic_
+  std::__1::map<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/google/draco
+    introduced: unknown:dec23f5ac6c71c2352dd6812afa799c03553fc58
+    fixed: 25484b31235d1a35fa72be6ce8d1f7f286b5c0bf
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23566
+modified: '2021-03-09T04:49:05.211947Z'
+created: '2020-07-22T21:50:06.975630Z'

@@ -1,0 +1,23 @@
+id: OSV-2020-504
+package:
+  name: lwan
+  ecosystem: OSS-Fuzz
+summary: Global-buffer-overflow in lwan_parse_rfc_time
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14297
+
+  Crash type: Global-buffer-overflow READ 4
+  Crash state:
+  lwan_parse_rfc_time
+  parse_if_modified_since
+  fuzz_parse_http_request
+affects:
+  ranges:
+  - type: GIT
+    repo: git://github.com/lpereira/lwan
+    introduced: 5a47a0c2d988d3b3b1c8d3938b7a994f464469b5
+    fixed: 4d04b78ace04a72632a8ccc74b00d8205c75d89a
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14297
+modified: '2021-03-09T04:49:05.924200Z'
+created: '2020-07-01T00:00:13.515175Z'

@@ -1,0 +1,24 @@
+id: OSV-2020-42
+package:
+  name: arrow
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in bool arrow::util::RleDecoder::NextCounts<int>
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20695
+
+  Crash type: Heap-buffer-overflow WRITE {*}
+  Crash state:
+  bool arrow::util::RleDecoder::NextCounts<int>
+  int arrow::util::RleDecoder::GetBatchWithDictSpaced<int>
+  virtual thunk to parquet::DictDecoderImpl<parquet::PhysicalType<
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/apache/arrow.git
+    introduced: 431fdbfbc0fb4bb16c4a89298404ad16784db2a0
+    fixed: d2ab289294f5eaa175e6bc4ab5fb74b5ea013f6e
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20695
+modified: '2021-03-09T04:49:05.877678Z'
+created: '2020-06-24T01:51:11.505209Z'

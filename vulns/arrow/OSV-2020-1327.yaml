@@ -1,0 +1,24 @@
+id: OSV-2020-1327
+package:
+  name: arrow
+  ecosystem: OSS-Fuzz
+summary: UNKNOWN READ in arrow::Status arrow::VisitArrayInline<arrow::internal::ValidateArrayDataVisitor>
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20135
+
+  Crash type: UNKNOWN READ
+  Crash state:
+  arrow::Status arrow::VisitArrayInline<arrow::internal::ValidateArrayDataVisitor>
+  arrow::Status arrow::internal::ValidateArrayDataVisitor::ValidateListArray<arrow
+  arrow::Status arrow::VisitArrayInline<arrow::internal::ValidateArrayDataVisitor>
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/apache/arrow.git
+    introduced: unknown:ccdc4b076cbd5fb03e1cbc42292def871d2b6035
+    fixed: 724da320eaac94003a8f1229d6a820fe8c8c1816
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20135
+modified: '2021-03-09T04:49:05.211483Z'
+created: '2020-07-22T21:50:06.904891Z'

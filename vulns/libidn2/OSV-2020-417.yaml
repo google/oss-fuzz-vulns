@@ -1,0 +1,23 @@
+id: OSV-2020-417
+package:
+  name: libidn2
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in idn2_to_ascii_4i
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=12420
+
+  Crash type: Heap-buffer-overflow WRITE {*}
+  Crash state:
+  idn2_to_ascii_4i
+  libidn2_to_ascii_8z_fuzzer.c
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://gitlab.com/libidn/libidn2.git
+    introduced: 0965b23044e5b55a3beb01d6a6c62eb2b9a7b0c9
+    fixed: e4d1558aa2c1c04a05066ee8600f37603890ba8c
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=12420
+modified: '2021-03-09T04:49:05.876253Z'
+created: '2020-07-01T00:00:08.331193Z'

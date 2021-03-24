@@ -1,0 +1,24 @@
+id: OSV-2020-670
+package:
+  name: openthread
+  ecosystem: OSS-Fuzz
+summary: Memcpy-param-overlap in ot::Cli::CoapSecure::Process
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=12679
+
+  Crash type: Memcpy-param-overlap
+  Crash state:
+  ot::Cli::CoapSecure::Process
+  ot::Cli::Interpreter::ProcessCoapSecure
+  ot::Cli::Interpreter::ProcessLine
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/openthread/openthread
+    introduced: f9eb4cb51722ef979afc6f9e3df5f7e6c9e7a75b
+    fixed: cb5e076a3e0a8daa7ee3576e1962c5388f2002ca
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=12679
+modified: '2021-03-09T04:49:06.014150Z'
+created: '2020-07-01T00:00:23.712711Z'

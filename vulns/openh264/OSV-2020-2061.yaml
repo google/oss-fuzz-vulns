@@ -1,0 +1,24 @@
+id: OSV-2020-2061
+package:
+  name: openh264
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in WelsDec::WelsCheckAndRecoverForFutureDecoding
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26301
+
+  Crash type: Heap-buffer-overflow WRITE {*}
+  Crash state:
+  WelsDec::WelsCheckAndRecoverForFutureDecoding
+  WelsDec::WelsInitRefList
+  WelsDec::InitRefPicList
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/cisco/openh264.git
+    introduced: f1bb6d3acb057785b4d89e8228e23cc4fc9caa12
+    fixed: b52786888ddce9d6bc06b7825ba9bffc65924e0c
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26301
+modified: '2021-02-25T00:08:25.996623Z'
+created: '2020-10-14T00:00:12.592572Z'

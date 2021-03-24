@@ -1,0 +1,24 @@
+id: OSV-2018-57
+package:
+  name: libaom
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in read_uncompressed_header
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11523
+
+  Crash type: Heap-buffer-overflow READ {*}
+  Crash state:
+  read_uncompressed_header
+  av1_decode_frame_headers_and_setup
+  aom_decode_frame_from_obus
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://aomedia.googlesource.com/aom
+    introduced: d3e632565ea573f55dfc4c07b557a87ba91b11cb
+    fixed: 0ad5c625be27d7a3622dae95e9afe5e66b112d46
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11523
+modified: '2021-03-09T04:49:05.012253Z'
+created: '2021-01-13T00:00:29.647549Z'

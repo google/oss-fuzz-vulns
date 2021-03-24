@@ -1,0 +1,26 @@
+id: OSV-2020-972
+package:
+  name: ndpi
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in ndpi_search_irc_tcp
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21346
+
+  Crash type: Heap-buffer-overflow READ 7
+  Crash state:
+  ndpi_search_irc_tcp
+  check_ndpi_tcp_flow_func
+  ndpi_detection_process_packet
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/ntop/nDPI.git
+    introduced: unknown:e695dd6eade754b2d50bdf297ca8bdc4105f93ff
+    fixed: 98f2d3a73c0d4b09b1204e4cfc868ec258a3e478
+  versions:
+  - '3.2'
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21346
+modified: '2021-03-09T04:49:06.180291Z'
+created: '2020-07-22T21:49:36.913972Z'

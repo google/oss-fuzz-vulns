@@ -1,0 +1,28 @@
+id: OSV-2020-612
+package:
+  name: libsass
+  ecosystem: OSS-Fuzz
+summary: 'Use-of-uninitialized-value in std::__1::vector<std::__1::vector<Sass::SharedImpl<Sass::ComplexSelector>,
+  std::'
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18066
+
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  std::__1::vector<std::__1::vector<Sass::SharedImpl<Sass::ComplexSelector>, std::
+  Sass::ComplexSelector::resolve_parent_refs
+  Sass::Eval::operator
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/sass/libsass.git
+    introduced: f964dcddd76f4c1f00da06bfd905be790618c33b
+    fixed: 4c83fdb0fe90432cc9b778d816ffd6859e34ef2d
+  versions:
+  - 3.6.2
+  - 3.6.3
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18066
+modified: '2021-03-09T04:49:05.980932Z'
+created: '2020-07-01T00:00:20.375619Z'

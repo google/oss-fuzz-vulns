@@ -1,0 +1,24 @@
+id: OSV-2020-101
+package:
+  name: arrow
+  ecosystem: OSS-Fuzz
+summary: UNKNOWN READ in apache::thrift::transport::TMemoryBuffer::readSlow
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20681
+
+  Crash type: UNKNOWN READ
+  Crash state:
+  apache::thrift::transport::TMemoryBuffer::readSlow
+  apache::thrift::transport::TBufferBase::read
+  unsigned int apache::thrift::transport::readAll<apache::thrift::transport::TBuff
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/apache/arrow.git
+    introduced: 431fdbfbc0fb4bb16c4a89298404ad16784db2a0
+    fixed: d2ab289294f5eaa175e6bc4ab5fb74b5ea013f6e
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20681
+modified: '2021-03-09T04:49:05.041303Z'
+created: '2020-06-24T01:51:14.107760Z'

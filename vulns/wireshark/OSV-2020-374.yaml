@@ -1,0 +1,24 @@
+id: OSV-2020-374
+package:
+  name: wireshark
+  ecosystem: OSS-Fuzz
+summary: Heap-use-after-free in wmem_strbuf_get_str
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=17305
+
+  Crash type: Heap-use-after-free READ 8
+  Crash state:
+  wmem_strbuf_get_str
+  dissect_rrc_PLMN_IdentityWithOptionalMCC_r6
+  dissect_per_constrained_sequence_of
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://gitlab.com/wireshark/wireshark.git
+    introduced: 6d150bdf6272f5d0df5de86d71e0c7fabf479e7c
+    fixed: 7d874e2d3caff57d571cfca28b7919bda9f30c97
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=17305
+modified: '2021-03-09T04:49:05.852132Z'
+created: '2020-07-01T00:00:05.857808Z'

@@ -1,0 +1,23 @@
+id: OSV-2020-1540
+package:
+  name: augeas
+  ecosystem: OSS-Fuzz
+summary: UNKNOWN READ in eval_expr
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23781
+
+  Crash type: UNKNOWN READ
+  Crash state:
+  eval_expr
+  eval_binary
+  eval_expr
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/hercules-team/augeas
+    introduced: 9c52a0b258f77394c9ade6c032e00b49bd01f949
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23781
+modified: '2021-03-09T04:49:05.319397Z'
+created: '2020-07-29T00:00:39.727472Z'

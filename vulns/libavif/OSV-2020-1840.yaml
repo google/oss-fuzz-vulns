@@ -1,0 +1,24 @@
+id: OSV-2020-1840
+package:
+  name: libavif
+  ecosystem: OSS-Fuzz
+summary: Heap-use-after-free in avifFileTypeIsCompatible
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25910
+
+  Crash type: Heap-use-after-free READ 4
+  Crash state:
+  avifFileTypeIsCompatible
+  avifDecoderParse
+  avif_decode_fuzzer.cc
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/AOMediaCodec/libavif.git
+    introduced: 16104711fe1a92cadb454e6330cc343c7cdfd00e
+    fixed: 468ded88b6ee5ccc4ce1ed029a7d310e5764947c
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25910
+modified: '2021-03-09T04:49:05.468218Z'
+created: '2020-09-25T00:00:39.613381Z'

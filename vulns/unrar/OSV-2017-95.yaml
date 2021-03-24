@@ -1,0 +1,35 @@
+id: OSV-2017-95
+package:
+  name: unrar
+  ecosystem: OSS-Fuzz
+summary: Use-of-uninitialized-value in Archive::GetComment
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=4410
+
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  Archive::GetComment
+  Archive::ViewComment
+  CmdExtract::ExtractArchive
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/aawc/unrar.git
+    introduced: 1d8ea7923dae7c8f136912b6bdca95dcb52e80bc:637fc8446edb8444c7a66918f109f2fa552ff987
+    fixed: 48592b298a81601380032fef55470c1a8eb0eeea
+  versions:
+  - 5.6.1.3
+  - 5.6.1.4
+  - 5.6.1.5
+  - 5.6.1.7
+  - 5.6.1.8
+  - 5.6.1.8.1
+  - 5.6.8
+  - v5.7.1
+  - v5.7.3
+  - v6.0.3
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=4410
+modified: '2021-03-09T04:49:04.813154Z'
+created: '2021-01-13T21:57:40.487266Z'

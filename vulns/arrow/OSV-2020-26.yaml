@@ -1,0 +1,24 @@
+id: OSV-2020-26
+package:
+  name: arrow
+  ecosystem: OSS-Fuzz
+summary: UNKNOWN READ in parquet::DictDecoderImpl<parquet::PhysicalType<
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21567
+
+  Crash type: UNKNOWN READ
+  Crash state:
+  parquet::DictDecoderImpl<parquet::PhysicalType<
+  parquet::ColumnReaderImplBase<parquet::PhysicalType<
+  parquet::ColumnReaderImplBase<parquet::PhysicalType<
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/apache/arrow.git
+    introduced: 431fdbfbc0fb4bb16c4a89298404ad16784db2a0
+    fixed: 2898577b22a1047516af9ad2bc53490c458cf3b8
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21567
+modified: '2021-03-09T04:49:05.791924Z'
+created: '2020-06-24T01:51:10.780616Z'

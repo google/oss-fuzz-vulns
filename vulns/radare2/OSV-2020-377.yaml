@@ -1,0 +1,24 @@
+id: OSV-2020-377
+package:
+  name: radare2
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in symbols
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15004
+
+  Crash type: Heap-buffer-overflow READ 4
+  Crash state:
+  symbols
+  r_bin_object_set_items
+  r_bin_object_new
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/radare/radare2
+    introduced: a875795bb5d8c216fa17d685b49784c4d5c93f87
+    fixed: 9392fc7117dd5240c76d8ab81d84b482bc968339
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15004
+modified: '2021-03-09T04:49:05.854783Z'
+created: '2020-07-01T00:00:06.002017Z'

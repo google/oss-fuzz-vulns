@@ -1,0 +1,24 @@
+id: OSV-2020-891
+package:
+  name: cras
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in ccr_handle_message_from_client
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23965
+
+  Crash type: Heap-buffer-overflow READ 4
+  Crash state:
+  ccr_handle_message_from_client
+  cras_rclient_buffer_from_client
+  rclient_message.cc
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://chromium.googlesource.com/chromiumos/third_party/adhd
+    introduced: 144bf3828e41b26c7746be463d17d6ea55dd7163
+    fixed: 1cfc1dc496821d3c5d8d160cc10941b25b9f95a0
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23965
+modified: '2021-03-09T04:49:06.136898Z'
+created: '2020-07-21T00:00:05.825108Z'

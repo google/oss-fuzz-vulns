@@ -1,0 +1,24 @@
+id: OSV-2020-819
+package:
+  name: flac
+  ecosystem: OSS-Fuzz
+summary: Use-of-uninitialized-value in fuzzing::memory::memory_test_msan
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22224
+
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  fuzzing::memory::memory_test_msan
+  fuzzing::memory::memory_test
+  FLAC::Decoder::FuzzerStream::write_callback
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/xiph/flac.git
+    introduced: ce6dd6b5732e319ef60716d9cc9af6a836a4011a
+    fixed: bfd4f13f3eb1f4d4f9f723e343f63eceedb267ba
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22224
+modified: '2021-03-09T04:49:06.093943Z'
+created: '2020-07-14T05:37:48.643285Z'

@@ -1,0 +1,27 @@
+id: OSV-2020-533
+package:
+  name: radare2
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in r_utf8_strlen
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13726
+
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  r_utf8_strlen
+  getstr
+  parse_class
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/radare/radare2
+    introduced: 449e081db89748cdd434268cd654038c49ae84d6
+    fixed: c10df533f658e068cfcadbf400c65b9dd579040a
+  versions:
+  - 3.4.0
+  - 3.4.1
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13726
+modified: '2021-03-09T04:49:05.939438Z'
+created: '2020-07-01T00:00:15.106987Z'

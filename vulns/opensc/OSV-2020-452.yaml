@@ -1,0 +1,22 @@
+id: OSV-2020-452
+package:
+  name: opensc
+  ecosystem: OSS-Fuzz
+summary: UNKNOWN READ in _fini
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18611
+
+  Crash type: UNKNOWN READ
+  Crash state:
+  _fini
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/OpenSC/OpenSC
+    introduced: 61cd7fcdb2fdc9214b431abb631b202314dcc32f
+    fixed: 7a1e42e1352201127d1a97b6cb5f41e48cace0f5
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18611
+modified: '2021-03-09T04:49:05.896235Z'
+created: '2020-07-01T00:00:10.397492Z'

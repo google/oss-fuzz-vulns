@@ -1,0 +1,26 @@
+id: OSV-2020-1735
+package:
+  name: php
+  ecosystem: OSS-Fuzz
+summary: Heap-use-after-free in zend_gc_delref
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25526
+
+  Crash type: Heap-use-after-free READ 4
+  Crash state:
+  zend_gc_delref
+  i_zval_ptr_dtor
+  zval_ptr_dtor
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/php/php-src.git
+    introduced: 927771333ba28570d1a5dc4bdc5b1a2a13ff3774
+    fixed: 3c53732332c4b9d3904eec0d1c42f0d4d4bf65c6
+  versions:
+  - php-8.0.0beta3
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25526
+modified: '2021-03-09T04:49:05.413486Z'
+created: '2020-09-12T00:01:46.026747Z'

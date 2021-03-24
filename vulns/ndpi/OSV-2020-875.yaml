@@ -1,0 +1,26 @@
+id: OSV-2020-875
+package:
+  name: ndpi
+  ecosystem: OSS-Fuzz
+summary: Use-of-uninitialized-value in ndpi_strdup
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22475
+
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  ndpi_strdup
+  processClientServerHello
+  processTLSBlock
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/ntop/nDPI.git
+    introduced: 4ec3e6c064b56f1434bd4c887bd96d0916d07f2e
+    fixed: 50f4049b58b9d04a403ba7570935f887aef937db:6c366d73e27ab2097a197cd6d9870c1ca2457cc8
+  versions:
+  - '3.4'
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22475
+modified: '2021-03-09T04:49:06.127186Z'
+created: '2020-07-14T22:13:54.264021Z'

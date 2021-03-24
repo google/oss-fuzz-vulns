@@ -1,0 +1,24 @@
+id: OSV-2020-651
+package:
+  name: wireshark
+  ecosystem: OSS-Fuzz
+summary: Stack-buffer-overflow in tvb_memcpy
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15936
+
+  Crash type: Stack-buffer-overflow WRITE {*}
+  Crash state:
+  tvb_memcpy
+  quic_extract_header
+  dissect_quic
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://gitlab.com/wireshark/wireshark.git
+    introduced: 3967f60e45e5d17bc8232fed9be7d5fadf5e82a7
+    fixed: ba54b896969930491645aa3ec4125b76480add9c
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15936
+modified: '2021-03-09T04:49:06.001540Z'
+created: '2020-07-01T00:00:22.588939Z'

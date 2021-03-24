@@ -1,0 +1,23 @@
+id: OSV-2020-124
+package:
+  name: suricata
+  ecosystem: OSS-Fuzz
+summary: Dynamic-stack-buffer-overflow in RetrieveFPForSig
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21758
+
+  Crash type: Dynamic-stack-buffer-overflow WRITE 4
+  Crash state:
+  RetrieveFPForSig
+  DetectSetFastPatternAndItsId
+  SigGroupBuild
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/OISF/suricata.git
+    introduced: 5e1381638029f98c5c2f2babf6370e21c2786252:dfdf2eb050781a6d337581543a08a65a7f7ab678
+    fixed: 6f36403219687b1bbcb667078a57c1c9d4aed185
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21758
+modified: '2021-03-09T04:49:05.163845Z'
+created: '2020-06-24T01:51:15.208520Z'

@@ -1,0 +1,28 @@
+id: OSV-2021-474
+package:
+  name: opensc
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in sc_pkcs15emu_oberthur_add_cert
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31540
+
+  Crash type: Heap-buffer-overflow READ {*}
+  Crash state:
+  sc_pkcs15emu_oberthur_add_cert
+  sc_oberthur_parse_publicinfo
+  sc_pkcs15emu_oberthur_init
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/OpenSC/OpenSC
+    introduced: 6903aebfddc466d966c7b865fae34572bf3ed23e
+    fixed: 40c50a3a4219308aae90f6efd7b10213794a8d86
+  versions:
+  - 0.21.0
+  - 0.21.0-rc1
+  - 0.21.0-rc2
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31540
+modified: '2021-03-09T05:46:58.758052Z'
+created: '2021-03-02T00:01:16.102524Z'

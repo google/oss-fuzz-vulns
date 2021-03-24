@@ -1,0 +1,24 @@
+id: OSV-2020-1331
+package:
+  name: pcapplusplus
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in pcpp::GtpV1Layer::GtpExtension::getNextExtensionHeaderType
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23183
+
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  pcpp::GtpV1Layer::GtpExtension::getNextExtensionHeaderType
+  pcpp::GtpV1Layer::GtpExtension::getNextExtension
+  pcpp::GtpV1Layer::getHeaderLen
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/seladb/PcapPlusPlus
+    introduced: unknown:4366d2f86bf105025765a0ce3db6e647ba0f3508
+    fixed: 80adbb255c24e278425cb66878e7209258abb2b0
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23183
+modified: '2021-03-09T04:49:05.213841Z'
+created: '2020-07-22T21:50:07.132825Z'

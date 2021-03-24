@@ -1,0 +1,24 @@
+id: OSV-2020-555
+package:
+  name: openh264
+  ecosystem: OSS-Fuzz
+summary: Heap-use-after-free in WelsDec::CWelsDecoder::SetOption
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18747
+
+  Crash type: Heap-use-after-free WRITE 1
+  Crash state:
+  WelsDec::CWelsDecoder::SetOption
+  decoder_fuzzer.cpp
+  WelsCommon::WelsFree
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/cisco/openh264.git
+    introduced: 2091de60c6a235a3236475d2208139f6a8862f48
+    fixed: e3b90efed243779b5c4961c2f9d6f1cedfeb1f46
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18747
+modified: '2021-03-09T04:49:05.950833Z'
+created: '2020-07-01T00:00:16.726929Z'

@@ -1,0 +1,24 @@
+id: OSV-2020-131
+package:
+  name: leptonica
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in pixGetRGBComponentCmap
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22295
+
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  pixGetRGBComponentCmap
+  pixGetRGBComponent
+  pixUnsharpMasking
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/DanBloomberg/leptonica.git
+    introduced: 90d80ee8a72d74652cb54426bcf65ef4ae054fb7
+    fixed: 33e0c892ff0036da5d23dce834f384df786c91bb
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22295
+modified: '2021-03-09T04:49:05.202574Z'
+created: '2020-06-24T01:51:15.520013Z'

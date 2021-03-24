@@ -1,0 +1,23 @@
+id: OSV-2021-498
+package:
+  name: c-blosc2
+  ecosystem: OSS-Fuzz
+summary: Invalid-free in frame_get_lazychunk
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31705
+
+  Crash type: Invalid-free
+  Crash state:
+  frame_get_lazychunk
+  frame_decompress_chunk
+  blosc2_schunk_decompress_chunk
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/Blosc/c-blosc2.git
+    introduced: 79e921d904d46fc9edc292e02a48f1aa54567a7d
+    fixed: 1a79d783cc791faf12fa9f6f6f92c26fb8be4967
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31705
+modified: '2021-03-09T05:46:40.153839Z'
+created: '2021-03-06T00:01:00.285060Z'

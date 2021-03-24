@@ -1,0 +1,24 @@
+id: OSV-2021-212
+package:
+  name: mupdf
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in pdf_get_xref_entry
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29728
+
+  Crash type: Heap-buffer-overflow READ 4
+  Crash state:
+  pdf_get_xref_entry
+  pdf_cache_object
+  pdf_resolve_indirect
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: git://git.ghostscript.com/mupdf.git
+    introduced: c1195537cb6586c9851248034e9a4229fe854985
+    fixed: e27ceb2b0e64b9a56ba79d844ea96553d87dc113
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29728
+modified: '2021-02-27T12:00:50.369410Z'
+created: '2021-01-20T00:00:22.336840Z'

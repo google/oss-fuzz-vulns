@@ -1,0 +1,29 @@
+id: OSV-2020-1894
+package:
+  name: arrow
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in parquet::arrow::ApplyOriginalStorageMetadata
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26064
+
+  Crash type: Heap-buffer-overflow READ 4
+  Crash state:
+  parquet::arrow::ApplyOriginalStorageMetadata
+  parquet::arrow::SchemaManifest::Make
+  parquet::arrow::FileReader::Make
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/apache/arrow.git
+    introduced: 431fdbfbc0fb4bb16c4a89298404ad16784db2a0
+    fixed: fa441346b69ed1064aac39409731740c228319c0
+  versions:
+  - apache-arrow-0.17.0
+  - apache-arrow-0.17.1
+  - apache-arrow-1.0.0
+  - apache-arrow-1.0.1
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26064
+modified: '2021-03-09T04:49:05.497037Z'
+created: '2020-10-02T00:00:08.666922Z'

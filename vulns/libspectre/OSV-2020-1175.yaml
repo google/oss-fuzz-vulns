@@ -1,0 +1,24 @@
+id: OSV-2020-1175
+package:
+  name: libspectre
+  ecosystem: OSS-Fuzz
+summary: Use-of-uninitialized-value in readline
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21638
+
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  readline
+  psscan
+  document_load
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://gitlab.freedesktop.org/libspectre/libspectre.git
+    introduced: unknown:945d39259c0ca1dfd6c594a9d3ed971152313190
+    fixed: 465a5c66e5e1ea04a8f70105b1db4ef8051c0428
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21638
+modified: '2021-03-09T04:49:05.129674Z'
+created: '2020-07-22T21:49:53.794926Z'

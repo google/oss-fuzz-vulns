@@ -1,0 +1,24 @@
+id: OSV-2018-109
+package:
+  name: openssl
+  ecosystem: OSS-Fuzz
+summary: Heap-use-after-free in ssl_get_prev_session
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=8241
+
+  Crash type: Heap-use-after-free READ 4
+  Crash state:
+  ssl_get_prev_session
+  tls_early_post_process_client_hello
+  tls_post_process_client_hello
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/openssl/openssl.git
+    introduced: 61fb59238dad6452a37ec14513fae617a4faef29
+    fixed: 5f96a95e2562f026557f625e50c052e77c7bc2e8
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=8241
+modified: '2021-03-09T04:49:04.820930Z'
+created: '2021-01-13T00:00:48.206043Z'

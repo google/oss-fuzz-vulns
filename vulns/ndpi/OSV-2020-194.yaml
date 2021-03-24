@@ -1,0 +1,26 @@
+id: OSV-2020-194
+package:
+  name: ndpi
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in check_ymsg
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20856
+
+  Crash type: Heap-buffer-overflow READ 4
+  Crash state:
+  check_ymsg
+  ndpi_search_yahoo_tcp
+  ndpi_search_yahoo
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/ntop/nDPI.git
+    introduced: 2efc09a20e6503d99fe3d76fcc16b1892fb7c7ff:5c52c00ea4ad8afaebd5259bc53215a1ab41569f
+    fixed: c6acf97bfbe5ad26db3c2f5dd4d379ac674d6fb3
+  versions:
+  - '3.2'
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20856
+modified: '2021-03-09T04:49:05.531321Z'
+created: '2020-06-24T01:51:18.363782Z'

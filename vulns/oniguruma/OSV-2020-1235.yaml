@@ -1,0 +1,26 @@
+id: OSV-2020-1235
+package:
+  name: oniguruma
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in mbc_case_fold
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21977
+
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  mbc_case_fold
+  string_cmp_ic
+  match_at
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/kkos/oniguruma.git
+    introduced: unknown:efa4e3afb3926b2899e09a0d7c73bc7914e30c3a
+    fixed: 8b8b37ef8864a976641d4382293de7fe3d5edd62
+  versions:
+  - v6.9.5_rev1
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21977
+modified: '2021-03-09T04:49:05.161423Z'
+created: '2020-07-22T21:49:59.040421Z'

@@ -1,0 +1,24 @@
+id: OSV-2018-222
+package:
+  name: resiprocate
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in resip::ParseBuffer::qVal
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=6713
+
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  resip::ParseBuffer::qVal
+  resip::QValueParameter::QValueParameter
+  resip::QValueParameter::decode
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/resiprocate/resiprocate.git
+    introduced: 40edcde0a63c56310c4fac73893fd0fa83dfbd4c
+    fixed: ea2304e2982b00f884b119db982eee0d77a7a3db
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=6713
+modified: '2021-03-09T04:49:04.883782Z'
+created: '2021-01-13T00:01:29.932709Z'

@@ -1,0 +1,23 @@
+id: OSV-2020-1555
+package:
+  name: harfbuzz
+  ecosystem: OSS-Fuzz
+summary: Global-buffer-overflow in OT::VarData::get_scalars
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24504
+
+  Crash type: Global-buffer-overflow WRITE 4
+  Crash state:
+  OT::VarData::get_scalars
+  OT::VariationStore::get_scalars
+  CFF::cff2_cs_interp_env_t::process_blend
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/harfbuzz/harfbuzz.git
+    introduced: c33e8006fdaec3b4acf8927c75e04129e0410a59
+    fixed: efd716de3f4c7616aedd5c449bf8d27d565d4ab6
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24504
+modified: '2021-03-09T04:49:05.326777Z'
+created: '2020-07-31T00:01:23.638346Z'

@@ -1,0 +1,24 @@
+id: OSV-2017-91
+package:
+  name: wpantund
+  ecosystem: OSS-Fuzz
+summary: UNKNOWN READ in spinel_datatype_vunpack_
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=4790
+
+  Crash type: UNKNOWN READ
+  Crash state:
+  spinel_datatype_vunpack_
+  spinel_datatype_unpack
+  nl::wpantund::SpinelNCPInstance::handle_ncp_spinel_value_inserted
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/openthread/wpantund
+    introduced: 7f7fe1c5423350b3422db4bfb8e2ae1b2be68eec:120ef3e004f2a6df1a960191440436d9ba78fa81
+    fixed: 7838e0c00a8599cc964cdd19c972ebaeb17bfcbe
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=4790
+modified: '2021-03-09T04:49:04.811104Z'
+created: '2021-01-13T21:57:39.977856Z'

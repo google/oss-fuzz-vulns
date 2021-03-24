@@ -1,0 +1,24 @@
+id: OSV-2020-183
+package:
+  name: harfbuzz
+  ecosystem: OSS-Fuzz
+summary: Global-buffer-overflow in hb_array_t<OT::IntType<unsigned char, 1u> const>
+  hb_array_t<OT::IntType<unsigned
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20321
+
+  Crash type: Global-buffer-overflow READ 1
+  Crash state:
+  hb_array_t<OT::IntType<unsigned char, 1u> const> hb_array_t<OT::IntType<unsigned
+  OT::UnsizedArrayOf<OT::IntType<unsigned char, 1u> >::copy
+  OT::SBIXGlyph::copy
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/harfbuzz/harfbuzz.git
+    introduced: 7dc341fe745bc1784b08efd4c658de292b958b0d
+    fixed: 0e4b2676bdffeef3cb79b235bc9624f2a49dccad
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20321
+modified: '2021-03-09T04:49:05.462693Z'
+created: '2020-06-24T01:51:17.808376Z'

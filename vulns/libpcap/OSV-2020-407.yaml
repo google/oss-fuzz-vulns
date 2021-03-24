@@ -1,0 +1,28 @@
+id: OSV-2020-407
+package:
+  name: libpcap
+  ecosystem: OSS-Fuzz
+summary: Heap-double-free in opt_cleanup
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15178
+
+  Crash type: Heap-double-free
+  Crash state:
+  opt_cleanup
+  bpf_optimize
+  pcap_compile
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/the-tcpdump-group/libpcap.git
+    introduced: 1c26c7de8a932fc5c1802246fa048bc00bca691e
+    fixed: 3a48c915ea98a60fbac94522202279f56c740487
+  - type: GIT
+    repo: https://github.com/the-tcpdump-group/libpcap.git
+    introduced: 35d20e93ccb845cd83ec89f0a8d19b9d4320abcd
+    fixed: de978afd02065649222988833063998b5e0dfc84
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15178
+modified: '2021-03-09T04:49:05.871064Z'
+created: '2020-07-01T00:00:07.757751Z'

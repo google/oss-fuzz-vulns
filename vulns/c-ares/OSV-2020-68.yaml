@@ -1,0 +1,24 @@
+id: OSV-2020-68
+package:
+  name: c-ares
+  ecosystem: OSS-Fuzz
+summary: Heap-double-free in ares_parse_soa_reply
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21176
+
+  Crash type: Heap-double-free
+  Crash state:
+  ares_parse_soa_reply
+  ares-test-fuzz.c
+  ares_parse_soa_reply
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/c-ares/c-ares.git
+    introduced: e0517f97d98845e2f56a43ba6ae2bbf339b5a3b0
+    fixed: 910df394fc40d90dda233b27bf122e50357943e6
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21176
+modified: '2021-03-09T04:49:06.019070Z'
+created: '2020-06-24T01:51:12.645377Z'

@@ -1,0 +1,23 @@
+id: OSV-2020-1489
+package:
+  name: matio
+  ecosystem: OSS-Fuzz
+summary: Segv on unknown address in H5O_chunk_deserialize
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21315
+
+  Crash type: Segv on unknown address
+  Crash state:
+  H5O_chunk_deserialize
+  H5O_cache_chk_load
+  H5C_protect
+affects:
+  ranges:
+  - type: GIT
+    repo: git://git.code.sf.net/p/matio/matio
+    introduced: a47b7cd3aca70e9a0bddf8146eb4ab0cbd19c2c3
+    fixed: 44c3f765e5a42790ae2e7577ff0a96fab809fc4a
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21315
+modified: '2021-03-09T04:49:05.291595Z'
+created: '2020-07-28T00:00:30.132221Z'

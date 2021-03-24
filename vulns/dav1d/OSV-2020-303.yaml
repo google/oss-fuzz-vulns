@@ -1,0 +1,24 @@
+id: OSV-2020-303
+package:
+  name: dav1d
+  ecosystem: OSS-Fuzz
+summary: UNKNOWN READ in dav1d_put_bilin_avx2
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=16954
+
+  Crash type: UNKNOWN READ
+  Crash state:
+  dav1d_put_bilin_avx2
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://code.videolan.org/videolan/dav1d.git
+    introduced: 6ef9a030145eef79fdeab6d4d38e00423ae7a83d
+    fixed: 69dae683fdce08dabf406787cdd8d1f76a9f0437
+  versions:
+  - 0.4.0
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=16954
+modified: '2021-03-09T04:49:05.814906Z'
+created: '2020-06-30T00:00:48.527659Z'

@@ -1,0 +1,28 @@
+id: OSV-2020-1730
+package:
+  name: rdkit
+  ecosystem: OSS-Fuzz
+summary: Bad-cast to RDKit::Atom
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25547
+
+  Crash type: Bad-cast
+  Crash state:
+  Bad-cast to RDKit::Atom
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/rdkit/rdkit.git
+    introduced: a9010da8a4af17479c706f2cf4e8c6acdc1585ce
+    fixed: b1fd950eb240baf1b6337dc25bc99f80359fe4d7:759b7a4b603c8a3c4bbb8bc31594bbab501094e3
+  versions:
+  - Release_2020_09_1
+  - Release_2020_09_1b1
+  - Release_2020_09_2
+  - Release_2020_09_3
+  - Release_2020_09_4
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25547
+modified: '2021-03-09T04:49:05.411137Z'
+created: '2020-09-11T00:00:51.334144Z'

@@ -1,0 +1,44 @@
+id: OSV-2020-2129
+package:
+  name: wireshark
+  ecosystem: OSS-Fuzz
+summary: Heap-double-free in wmem_simple_free_all
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26952
+
+  Crash type: Heap-double-free
+  Crash state:
+  wmem_simple_free_all
+  wmem_leave_packet_scope
+  fuzzshark.c
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://gitlab.com/wireshark/wireshark.git
+    introduced: c8e24f5c55cb37b9a311e5226923d291892de892
+    fixed: 5fcedcf8f45f22d9e0cdf433cd1a6351ff5aaddf
+  versions:
+  - v3.3.0
+  - v3.3.1
+  - v3.3.1rc0
+  - v3.3.2rc0
+  - v3.4.0
+  - v3.4.0rc0
+  - v3.4.0rc1
+  - v3.4.1
+  - v3.4.1rc0
+  - v3.4.2
+  - v3.4.2rc0
+  - v3.4.3
+  - v3.4.3rc0
+  - v3.4.4rc0
+  - v3.5.0rc0
+  - wireshark-3.4.0
+  - wireshark-3.4.1
+  - wireshark-3.4.2
+  - wireshark-3.4.3
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26952
+modified: '2021-03-09T04:49:05.626482Z'
+created: '2020-11-05T00:00:51.605889Z'

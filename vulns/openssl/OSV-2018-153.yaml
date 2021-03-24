@@ -1,0 +1,32 @@
+id: OSV-2018-153
+package:
+  name: openssl
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in asn1_ex_i2c
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=7696
+
+  Crash type: Heap-buffer-overflow READ 4
+  Crash state:
+  asn1_ex_i2c
+  asn1_i2d_ex_primitive
+  ASN1_item_ex_i2d
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/openssl/openssl.git
+    introduced: 902f7d5c87d66a78d3eb10709c6cb3486a216b48
+    fixed: a21180b70f6372fee836557df187d72f7a91b686:0df65d82dbc41e8da00adb243de5918db532c8a6
+  versions:
+  - OpenSSL_1_1_1-pre1
+  - OpenSSL_1_1_1-pre2
+  - OpenSSL_1_1_1-pre3
+  - OpenSSL_1_1_1-pre4
+  - OpenSSL_1_1_1-pre5
+  - OpenSSL_1_1_1-pre6
+  - OpenSSL_1_1_1-pre7
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=7696
+modified: '2021-03-09T04:49:04.844960Z'
+created: '2021-01-13T00:01:05.757240Z'

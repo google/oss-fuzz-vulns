@@ -1,0 +1,24 @@
+id: OSV-2020-29
+package:
+  name: openssl
+  ecosystem: OSS-Fuzz
+summary: Heap-use-after-free in CRYPTO_DOWN_REF
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20816
+
+  Crash type: Heap-use-after-free WRITE 4
+  Crash state:
+  CRYPTO_DOWN_REF
+  DH_free
+  evp_pkey_free_it
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/openssl/openssl.git
+    introduced: ada66e78ef535fe80e422bbbadffe8e7863d457c
+    fixed: fe56d5951f0b42fd3ff1cf42a96d07f06f9692bc
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20816
+modified: '2021-03-09T04:49:05.807418Z'
+created: '2020-06-24T01:51:10.908381Z'

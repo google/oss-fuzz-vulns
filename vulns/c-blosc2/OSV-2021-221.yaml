@@ -1,0 +1,24 @@
+id: OSV-2021-221
+package:
+  name: c-blosc2
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in blosc_d
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29816
+
+  Crash type: Heap-buffer-overflow READ 4
+  Crash state:
+  blosc_d
+  _blosc_getitem
+  blosc_getitem
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/Blosc/c-blosc2.git
+    introduced: c473b21cff5e1a459b4467f18bf7414114f848fd
+    fixed: 98bb9e682481b934f65db1bbd73bc2c3a41f2931
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29816
+modified: '2021-02-25T12:00:54.850684Z'
+created: '2021-01-23T00:00:07.877858Z'

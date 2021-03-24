@@ -1,0 +1,35 @@
+id: OSV-2020-315
+package:
+  name: radare2
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in r_str_utf8_codepoint
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18122
+
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  r_str_utf8_codepoint
+  r_str_char_fullwidth
+  r_str_len_utf8
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/radare/radare2
+    introduced: 43f1dcef90a1fda8e026251c2b1dad64cf354e37
+    fixed: 6124df443f347d1744a102a58dc3335e85063ea5
+  versions:
+  - 4.0.0
+  - 4.1.0
+  - 4.1.1
+  - 4.2.0
+  - 4.2.1
+  - 4.3.0
+  - 4.3.1
+  - 4.4.0
+  - Continuous-Windows
+  - continuous
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18122
+modified: '2021-03-09T04:49:05.821055Z'
+created: '2020-07-01T00:00:01.824434Z'

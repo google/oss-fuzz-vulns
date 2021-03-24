@@ -1,0 +1,24 @@
+id: OSV-2020-2080
+package:
+  name: libcoap
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in coap_opt_length
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26371
+
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  coap_opt_length
+  coap_pdu_parse_opt
+  coap_pdu_parse
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/obgm/libcoap.git
+    introduced: 4d039eb01d7efd752c18b491f52c039a1da51bce
+    fixed: 238fded2d8d6288429810573c2b27dc73898134f
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26371
+modified: '2021-03-09T04:49:05.599069Z'
+created: '2020-10-17T00:00:43.023138Z'

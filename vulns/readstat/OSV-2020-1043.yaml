@@ -1,0 +1,24 @@
+id: OSV-2020-1043
+package:
+  name: readstat
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in xport_construct_format
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=12569
+
+  Crash type: Heap-buffer-overflow WRITE {*}
+  Crash state:
+  xport_construct_format
+  xport_read_labels_v9
+  xport_read_variables
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/WizardMac/ReadStat
+    introduced: unknown:d1bfd735515803800cb9708e3fca9e5c1e8e7a48
+    fixed: 7cfc52111e68e682db4cb59ac16b724780e0596a
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=12569
+modified: '2021-03-09T04:49:05.058774Z'
+created: '2020-07-22T21:49:42.550450Z'

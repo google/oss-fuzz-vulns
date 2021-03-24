@@ -1,0 +1,24 @@
+id: OSV-2020-1092
+package:
+  name: mruby
+  ecosystem: OSS-Fuzz
+summary: Use-of-uninitialized-value in time_update_datetime
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14744
+
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  time_update_datetime
+  current_mrb_time
+  mrb_time_now
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/mruby/mruby
+    introduced: unknown:b145ed9de55019201bd3553660241ce3cc3c36de
+    fixed: 896f3fe7038b264f58ceac1f0ffc5ae9fdbc308c:ad4bdda074bb7aa452b17515ea7ad936674c9df1
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14744
+modified: '2021-03-09T04:49:05.084581Z'
+created: '2020-07-22T21:49:46.534434Z'

@@ -1,0 +1,24 @@
+id: OSV-2020-148
+package:
+  name: cryptofuzz
+  ecosystem: OSS-Fuzz
+summary: Use-of-uninitialized-value in AES_encrypt
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23015
+
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  AES_encrypt
+  AES_wrap_key
+  aes_wrap_cipher
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/guidovranken/cryptofuzz
+    introduced: 65d7aca879ee557b80ebc9b06cea0a3197b91e64
+    fixed: 27a32a5381e525de5646bb23898a1748cd09172a
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23015
+modified: '2021-03-09T04:49:05.286969Z'
+created: '2020-06-24T01:51:16.262503Z'

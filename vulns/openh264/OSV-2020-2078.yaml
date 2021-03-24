@@ -1,0 +1,24 @@
+id: OSV-2020-2078
+package:
+  name: openh264
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in WelsDec::UpdateP16x16RefIdx
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26389
+
+  Crash type: Heap-buffer-overflow WRITE 2
+  Crash state:
+  WelsDec::UpdateP16x16RefIdx
+  WelsDec::PredBDirectTemporal
+  WelsDec::ParseInterBInfo
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/cisco/openh264.git
+    introduced: 66ef706acd55b0b8daec32ca299d2586a1f473c9
+    fixed: b52786888ddce9d6bc06b7825ba9bffc65924e0c
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26389
+modified: '2021-02-25T00:07:55.612859Z'
+created: '2020-10-17T00:00:18.959125Z'

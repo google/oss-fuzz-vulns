@@ -1,0 +1,24 @@
+id: OSV-2020-160
+package:
+  name: radare2
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in populate_relocs_record
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21842
+
+  Crash type: Heap-buffer-overflow WRITE 4
+  Crash state:
+  populate_relocs_record
+  rel_cache_new
+  get_import_addr
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/radare/radare2
+    introduced: 6124df443f347d1744a102a58dc3335e85063ea5
+    fixed: 78de31fe69a600c035dbce373b9f2f62ea2af6de
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21842
+modified: '2021-03-09T04:49:05.349900Z'
+created: '2020-06-24T01:51:16.763715Z'

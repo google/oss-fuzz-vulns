@@ -1,0 +1,23 @@
+id: OSV-2021-449
+package:
+  name: tensorflow-py
+  ecosystem: pypi
+summary: UNKNOWN READ in std::pair<absl::lts_NUMBER_02_25::container_internal::raw_hash_set<absl::lts_NUM
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31393
+
+  Crash type: UNKNOWN READ
+  Crash state:
+  std::pair<absl::lts_NUMBER_02_25::container_internal::raw_hash_set<absl::lts_NUM
+  tensorflow::SparseCount<long, long>::Compute
+  tensorflow::KernelAndDeviceOp::Run
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/tensorflow/tensorflow
+    introduced: 0834086910de00f55876040943975e388b645e7a
+    fixed: 62dfa9e1bf26c58cae6aaa0663d69a872f543dc1:7677422a56f18c10e3827e29dc8da8a7b23fbede
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31393
+modified: '2021-03-09T02:16:04.468960Z'
+created: '2021-02-27T00:00:29.109256Z'

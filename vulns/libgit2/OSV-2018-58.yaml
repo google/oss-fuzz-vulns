@@ -1,0 +1,24 @@
+id: OSV-2018-58
+package:
+  name: libgit2
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in tag_parse
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=10999
+
+  Crash type: Heap-buffer-overflow READ 2
+  Crash state:
+  tag_parse
+  git_tag__parse_raw
+  git_object__from_raw
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/libgit2/libgit2
+    introduced: a1d5fd0630c6f7e3ac23bc9e13ba33901dfddba4
+    fixed: ee11d47e3d907b66eeff99e0ba1e1c71e05164b7
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=10999
+modified: '2021-03-09T04:49:05.012720Z'
+created: '2021-01-13T00:00:29.755710Z'

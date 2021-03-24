@@ -1,0 +1,83 @@
+id: OSV-2020-792
+package:
+  name: libhevc
+  ecosystem: OSS-Fuzz
+summary: Use-of-uninitialized-value in ihevc_inter_pred_chroma_copy_ssse3
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23197
+
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  ihevc_inter_pred_chroma_copy_ssse3
+  ihevcd_inter_pred_ctb
+  ihevcd_process
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://android.googlesource.com/platform/external/libhevc
+    introduced: 4d36db275bb4d0abc410415f6d8f5af4bc179102
+    fixed: 9623000c124facfcee78ffbc341740fa68f3d914:e979e4f69a45519b574186b56c883f5f1a413ba8
+  versions:
+  - android-11.0.0_r1
+  - android-11.0.0_r10
+  - android-11.0.0_r11
+  - android-11.0.0_r12
+  - android-11.0.0_r13
+  - android-11.0.0_r14
+  - android-11.0.0_r15
+  - android-11.0.0_r16
+  - android-11.0.0_r17
+  - android-11.0.0_r18
+  - android-11.0.0_r19
+  - android-11.0.0_r2
+  - android-11.0.0_r20
+  - android-11.0.0_r21
+  - android-11.0.0_r22
+  - android-11.0.0_r23
+  - android-11.0.0_r24
+  - android-11.0.0_r25
+  - android-11.0.0_r26
+  - android-11.0.0_r27
+  - android-11.0.0_r28
+  - android-11.0.0_r29
+  - android-11.0.0_r3
+  - android-11.0.0_r30
+  - android-11.0.0_r31
+  - android-11.0.0_r4
+  - android-11.0.0_r5
+  - android-11.0.0_r7
+  - android-11.0.0_r8
+  - android-11.0.0_r9
+  - android-cts-11.0_r1
+  - android-cts-11.0_r2
+  - android-cts-11.0_r3
+  - android-mainline-11.0.0_r1
+  - android-mainline-11.0.0_r2
+  - android-mainline-11.0.0_r3
+  - android-mainline-11.0.0_r4
+  - android-platform-11.0.0_r1
+  - android-platform-11.0.0_r2
+  - android-platform-11.0.0_r3
+  - android-platform-11.0.0_r4
+  - android-r-beta-2
+  - android-r-beta-3
+  - android-r-preview-1
+  - android-r-preview-2
+  - android-r-preview-3
+  - android-r-preview-4
+  - android-security-11.0.0_r1
+  - android-vts-11.0_r1
+  - android-vts-11.0_r2
+  - android-vts-11.0_r3
+  - platform-tools-29.0.6
+  - platform-tools-30.0.0
+  - platform-tools-30.0.1
+  - platform-tools-30.0.2
+  - platform-tools-30.0.3
+  - platform-tools-30.0.4
+  - platform-tools-30.0.5
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23197
+modified: '2021-03-09T04:49:06.078406Z'
+created: '2020-07-14T05:37:35.331259Z'

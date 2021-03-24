@@ -1,0 +1,26 @@
+id: OSV-2017-54
+package:
+  name: yara
+  ecosystem: OSS-Fuzz
+summary: Use-of-uninitialized-value in macho_parse_file_32_be
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=4375
+
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  macho_parse_file_32_be
+  macho__load
+  yr_modules_load
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/VirusTotal/yara.git
+    introduced: a43780c9071e21cfe7bab7223605db29114f20f8:ef44bab295be6f205b1f4c7aa44cb00abc66f024
+    fixed: 300374fe169ee100320aee70ed9c846650be4b3b
+  versions:
+  - v3.7.1
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=4375
+modified: '2021-03-09T04:49:04.790621Z'
+created: '2021-01-13T21:56:24.033170Z'

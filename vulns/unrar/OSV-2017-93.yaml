@@ -1,0 +1,27 @@
+id: OSV-2017-93
+package:
+  name: unrar
+  ecosystem: OSS-Fuzz
+summary: Use-of-uninitialized-value in CharToWideMap
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=4285
+
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  CharToWideMap
+  CharToWide
+  Archive::GetComment
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/aawc/unrar.git
+    introduced: 2a079823c708a637bc36e888180ebb96fdfba526:1d8ea7923dae7c8f136912b6bdca95dcb52e80bc
+    fixed: 1d8ea7923dae7c8f136912b6bdca95dcb52e80bc:637fc8446edb8444c7a66918f109f2fa552ff987
+  versions:
+  - 5.6.1.2
+  - 5.6.1.3
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=4285
+modified: '2021-03-09T04:49:04.812130Z'
+created: '2021-01-13T21:57:40.114700Z'

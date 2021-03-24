@@ -1,0 +1,39 @@
+id: OSV-2020-256
+package:
+  name: wireshark
+  ecosystem: OSS-Fuzz
+summary: Global-buffer-overflow in dissect_wassp_sub_tlv
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20004
+
+  Crash type: Global-buffer-overflow READ 8
+  Crash state:
+  dissect_wassp_sub_tlv
+  dissect_wassp_sub_tlv
+  dissect_wassp_tlv
+affects:
+  ranges:
+  - type: GIT
+    repo: https://gitlab.com/wireshark/wireshark.git
+    introduced: c7854720c805ad3b96c1ceecff3be547f5748830
+    fixed: 71b59b18e4bb61d0e6da8bb2b26c87750570ae40
+  - type: GIT
+    repo: https://gitlab.com/wireshark/wireshark.git
+    introduced: c7854720c805ad3b96c1ceecff3be547f5748830
+    fixed: f90a3720b73ca140403315126e2a478c4f70ca03
+  versions:
+  - v3.1.0
+  - v3.1.1
+  - v3.1.1rc0
+  - v3.1.2rc0
+  - v3.2.0
+  - v3.2.0rc0
+  - v3.2.0rc1
+  - v3.2.0rc2
+  - v3.2.1rc0
+  - v3.3.0rc0
+  - wireshark-3.2.0
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20004
+modified: '2021-03-09T04:49:05.788884Z'
+created: '2020-06-27T00:00:07.839773Z'

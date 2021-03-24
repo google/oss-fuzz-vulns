@@ -1,0 +1,24 @@
+id: OSV-2020-1274
+package:
+  name: libexif
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in exif_entry_get_value
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14543
+
+  Crash type: Heap-buffer-overflow READ 7
+  Crash state:
+  exif_entry_get_value
+  content_func
+  exif_content_foreach_entry
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/libexif/libexif
+    introduced: unknown:3f35f94a93081ced2bc3c9112f820f5fdb200af0
+    fixed: f9bb9f263fb00f0603ecbefa8957cad24168cbff
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14543
+modified: '2021-03-09T04:49:05.182617Z'
+created: '2020-07-22T21:50:02.388928Z'

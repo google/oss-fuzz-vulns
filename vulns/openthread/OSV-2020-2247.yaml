@@ -1,0 +1,24 @@
+id: OSV-2020-2247
+package:
+  name: openthread
+  ecosystem: OSS-Fuzz
+summary: Stack-buffer-overflow in ot::MeshCoP::ChannelMaskEntryBase::GetEntrySize
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=28315
+
+  Crash type: Stack-buffer-overflow READ 1
+  Crash state:
+  ot::MeshCoP::ChannelMaskEntryBase::GetEntrySize
+  ot::MeshCoP::ChannelMaskEntryBase::GetNext
+  ot::MeshCoP::ChannelMaskBaseTlv::IsValid
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/openthread/openthread
+    introduced: 761f8304c18492a66308d1529f45e410c7673f9e
+    fixed: 02f7dbb42be7f75355436ec43bc82d0b2b4caad6
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=28315
+modified: '2021-03-09T04:49:05.741910Z'
+created: '2020-12-06T00:00:26.193153Z'

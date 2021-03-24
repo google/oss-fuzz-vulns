@@ -1,0 +1,24 @@
+id: OSV-2021-312
+package:
+  name: ghostscript
+  ecosystem: OSS-Fuzz
+summary: Heap-use-after-free in sampled_data_continue
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30487
+
+  Crash type: Heap-use-after-free WRITE 4
+  Crash state:
+  sampled_data_continue
+  gs_interpret
+  gs_main_run_string_with_length
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: git://git.ghostscript.com/ghostpdl.git
+    introduced: 0bd6877f480a84657696a80adc13f9c5485dd996
+    fixed: 7e8b585e7577044dc1d6a9a36d715be12fc2524c:141e5067e40d25ed3aa191589d4a325941efa57a
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30487
+modified: '2021-03-11T12:00:48.853877Z'
+created: '2021-02-08T00:00:34.249318Z'

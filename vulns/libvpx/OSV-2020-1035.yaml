@@ -1,0 +1,24 @@
+id: OSV-2020-1035
+package:
+  name: libvpx
+  ecosystem: OSS-Fuzz
+summary: UNKNOWN READ in subpixel_ssse3.asm:1165
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14478
+
+  Crash type: UNKNOWN READ
+  Crash state:
+  subpixel_ssse3.asm:1165
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://chromium.googlesource.com/webm/libvpx
+    introduced: unknown:ea57f9acdad73e9ba4c329d27993c74392f7a205
+    fixed: 8a800b52eaee33e71aba7fb59118dcf14ac1dd1c
+  versions:
+  - v1.8.0
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14478
+modified: '2021-03-09T04:49:05.054427Z'
+created: '2020-07-22T21:49:41.421436Z'

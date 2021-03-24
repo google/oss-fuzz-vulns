@@ -1,0 +1,24 @@
+id: OSV-2020-1273
+package:
+  name: libspectre
+  ecosystem: OSS-Fuzz
+summary: Use-of-uninitialized-value in psscan
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21302
+
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  psscan
+  document_load
+  spectre_read_fuzzer.c
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://gitlab.freedesktop.org/libspectre/libspectre.git
+    introduced: unknown:945d39259c0ca1dfd6c594a9d3ed971152313190
+    fixed: dd7168828cf07971adc8c24bab0f3b6e3d28e0c9:af1cb4cb719dcb94314bbefc78b59ac426b8fed2
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21302
+modified: '2021-03-09T04:49:05.182053Z'
+created: '2020-07-22T21:50:02.326023Z'

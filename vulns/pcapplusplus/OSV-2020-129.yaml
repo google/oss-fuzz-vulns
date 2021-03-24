@@ -1,0 +1,24 @@
+id: OSV-2020-129
+package:
+  name: pcapplusplus
+  ecosystem: OSS-Fuzz
+summary: UNKNOWN READ in pcpp::Packet::setRawPacket
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23011
+
+  Crash type: UNKNOWN READ
+  Crash state:
+  pcpp::Packet::setRawPacket
+  pcpp::Packet::Packet
+  FuzzTarget.cpp
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/seladb/PcapPlusPlus
+    introduced: 46840c644dfe9160c4111b06bbbf7731c9d1370c:0a62fd3e959813ca41d71d42c86aa7cf1f55ced0
+    fixed: cbe1ffdfe2deaf2fbdbae9c1c7927e083156c165:0376f65957378c9235f9f094cec7c655ab836f15
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23011
+modified: '2021-03-09T04:49:05.190692Z'
+created: '2020-06-24T01:51:15.420626Z'

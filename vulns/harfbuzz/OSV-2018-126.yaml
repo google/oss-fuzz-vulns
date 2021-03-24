@@ -1,0 +1,24 @@
+id: OSV-2018-126
+package:
+  name: harfbuzz
+  ecosystem: OSS-Fuzz
+summary: UNKNOWN READ in BEInt<int, 4>::operator int
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=10900
+
+  Crash type: UNKNOWN READ
+  Crash state:
+  BEInt<int, 4>::operator int
+  AAT::KerxSubTableFormat6::get_kerning
+  hb_kern_machine_t<AAT::KerxSubTableFormat6::accelerator_t>::kern
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/harfbuzz/harfbuzz.git
+    introduced: ab1f30bd059f1d2270793e9726b60666b328d2b8
+    fixed: ca54eba4846d0afda4601929556617a7ebe51714
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=10900
+modified: '2021-03-09T04:49:04.830479Z'
+created: '2021-01-13T00:00:56.326632Z'

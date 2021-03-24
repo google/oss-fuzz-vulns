@@ -1,0 +1,26 @@
+id: OSV-2020-18
+package:
+  name: ndpi
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in ndpi_search_openvpn
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22244
+
+  Crash type: Heap-buffer-overflow READ 8
+  Crash state:
+  ndpi_search_openvpn
+  check_ndpi_udp_flow_func
+  ndpi_detection_process_packet
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/ntop/nDPI.git
+    introduced: 10738a0ca334104377e19a1e683bd13f2451a9e2
+    fixed: 8e7b1ea7a136cc4e4aa9880072ec2d69900a825e
+  versions:
+  - '3.2'
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22244
+modified: '2021-03-09T04:49:05.446813Z'
+created: '2020-06-24T01:51:10.400007Z'

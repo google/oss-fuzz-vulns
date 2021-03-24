@@ -1,0 +1,24 @@
+id: OSV-2020-2018
+package:
+  name: leptonica
+  ecosystem: OSS-Fuzz
+summary: Heap-use-after-free in fpixChangeRefcount
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26260
+
+  Crash type: Heap-use-after-free READ 4
+  Crash state:
+  fpixChangeRefcount
+  fpixDestroy
+  fpix2_fuzzer.cc
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/DanBloomberg/leptonica.git
+    introduced: ef35b298c87cee04bf35dac4bc7c8c489d26fbc4
+    fixed: 7d0c940768fa3f7d07396dbae1d668cfded6bf05
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26260
+modified: '2021-03-09T04:49:05.572063Z'
+created: '2020-10-12T00:00:40.582555Z'

@@ -1,0 +1,24 @@
+id: OSV-2021-273
+package:
+  name: usrsctp
+  ecosystem: OSS-Fuzz
+summary: Heap-use-after-free in sctp_sorecvmsg
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30215
+
+  Crash type: Heap-use-after-free WRITE 4
+  Crash state:
+  sctp_sorecvmsg
+  usrsctp_recvv
+  handle_upcall
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/sctplab/usrsctp
+    introduced: a6647318b57c0a05d590c8c21fc22aba87f08749
+    fixed: a6647318b57c0a05d590c8c21fc22aba87f08749
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30215
+modified: '2021-03-09T12:01:01.511940Z'
+created: '2021-02-04T00:01:00.672451Z'

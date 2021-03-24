@@ -1,0 +1,29 @@
+id: OSV-2020-255
+package:
+  name: unbound
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in dname_pkt_copy
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20093
+
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  dname_pkt_copy
+  pkt_strict_sub
+  scrub_normalize
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/NLnetLabs/unbound
+    introduced: e149bc70460268f7f559ce10ab7e3678a5baac0f:1e0c957dcd7b0b1e03ff2d8bf58fdbb147ce4978
+    fixed: 4ccac696caf8826995c9db78af6074a5a1381f00:f37242566b3187c1d715af6d0e4e0c5b75ccafeb
+  versions:
+  - release-1.10.0
+  - release-1.10.0rc1
+  - release-1.10.0rc2
+  - release-1.10.1
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20093
+modified: '2021-03-09T04:49:05.788315Z'
+created: '2020-06-26T00:00:11.725033Z'

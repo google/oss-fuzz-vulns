@@ -1,0 +1,24 @@
+id: OSV-2020-1025
+package:
+  name: immer
+  ecosystem: OSS-Fuzz
+summary: UNKNOWN READ in auto LLVMFuzzerTestOneInput::$_1::operator
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24195
+
+  Crash type: UNKNOWN READ
+  Crash state:
+  auto LLVMFuzzerTestOneInput::$_1::operator
+  int fuzzer_input::run<LLVMFuzzerTestOneInput::$_1>
+  set-gc.cpp
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/arximboldi/immer.git
+    introduced: unknown:ad3e3556d38bb75966dd24c61a774970a7c7957e
+    fixed: e04435d170769830f526d1b17b8b3e573f1e1ef2
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24195
+modified: '2021-03-09T04:49:05.049322Z'
+created: '2020-07-22T21:49:40.649517Z'

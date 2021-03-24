@@ -1,0 +1,26 @@
+id: OSV-2018-61
+package:
+  name: harfbuzz
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in BEInt<unsigned short, 2>::operator unsigned short
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=12312
+
+  Crash type: Heap-buffer-overflow READ 2
+  Crash state:
+  BEInt<unsigned short, 2>::operator unsigned short
+  OT::IntType<unsigned short, 2u>::operator unsigned int
+  OT::OffsetTo<OT::UnsizedOffsetListOf<AAT::Lookup<OT::IntType<unsigned short, 2u>
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/harfbuzz/harfbuzz.git
+    introduced: 11d2f49af8f53340134c844173f4d8655b00dea3
+    fixed: 7a6686a589ed6bf17a5af0b8012501e4d4ee2ded
+  versions:
+  - 2.3.0
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=12312
+modified: '2021-03-09T04:49:05.014755Z'
+created: '2021-01-13T00:00:30.115037Z'

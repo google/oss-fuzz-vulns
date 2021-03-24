@@ -1,0 +1,34 @@
+id: OSV-2017-16
+package:
+  name: file
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in file_strncmp
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=750
+
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  file_strncmp
+  magiccheck
+  match
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/file/file.git
+    introduced: 17f892b32cc92f7505f02d198142c1a57204582f
+  versions:
+  - FILE5_30
+  - FILE5_31
+  - FILE5_32
+  - FILE5_33
+  - FILE5_34
+  - FILE5_35
+  - FILE5_36
+  - FILE5_37
+  - FILE5_38
+  - FILE5_39
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=750
+modified: '2021-03-09T05:46:50.837945Z'
+created: '2021-01-13T00:00:27.841127Z'

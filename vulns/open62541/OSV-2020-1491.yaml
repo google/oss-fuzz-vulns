@@ -1,0 +1,201 @@
+id: OSV-2020-1491
+package:
+  name: open62541
+  ecosystem: OSS-Fuzz
+summary: Use-of-uninitialized-value in UA_Array_copy
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22250
+
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  UA_Array_copy
+  String_copy
+  LocalizedText_copy
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/open62541/open62541.git
+    introduced: 2919785d72474ed553317c4f3bafadf3e8c027f2
+  - type: GIT
+    repo: https://github.com/open62541/open62541.git
+    introduced: 798210374ad7a5fd43b31fc3c178a34a3ac21a0c
+  - type: GIT
+    repo: https://github.com/open62541/open62541.git
+    introduced: 798210374ad7a5fd43b31fc3c178a34a3ac21a0c
+  - type: GIT
+    repo: https://github.com/open62541/open62541.git
+    introduced: 798210374ad7a5fd43b31fc3c178a34a3ac21a0c
+  - type: GIT
+    repo: https://github.com/open62541/open62541.git
+    introduced: 798210374ad7a5fd43b31fc3c178a34a3ac21a0c
+  - type: GIT
+    repo: https://github.com/open62541/open62541.git
+    introduced: 798210374ad7a5fd43b31fc3c178a34a3ac21a0c
+  - type: GIT
+    repo: https://github.com/open62541/open62541.git
+    introduced: 798210374ad7a5fd43b31fc3c178a34a3ac21a0c
+  - type: GIT
+    repo: https://github.com/open62541/open62541.git
+    introduced: 798210374ad7a5fd43b31fc3c178a34a3ac21a0c
+  - type: GIT
+    repo: https://github.com/open62541/open62541.git
+    introduced: 798210374ad7a5fd43b31fc3c178a34a3ac21a0c
+  - type: GIT
+    repo: https://github.com/open62541/open62541.git
+    introduced: 798210374ad7a5fd43b31fc3c178a34a3ac21a0c
+  - type: GIT
+    repo: https://github.com/open62541/open62541.git
+    introduced: 798210374ad7a5fd43b31fc3c178a34a3ac21a0c
+  - type: GIT
+    repo: https://github.com/open62541/open62541.git
+    introduced: 798210374ad7a5fd43b31fc3c178a34a3ac21a0c
+  - type: GIT
+    repo: https://github.com/open62541/open62541.git
+    introduced: 798210374ad7a5fd43b31fc3c178a34a3ac21a0c
+  - type: GIT
+    repo: https://github.com/open62541/open62541.git
+    introduced: 798210374ad7a5fd43b31fc3c178a34a3ac21a0c
+  - type: GIT
+    repo: https://github.com/open62541/open62541.git
+    introduced: 798210374ad7a5fd43b31fc3c178a34a3ac21a0c
+  - type: GIT
+    repo: https://github.com/open62541/open62541.git
+    introduced: 798210374ad7a5fd43b31fc3c178a34a3ac21a0c
+  - type: GIT
+    repo: https://github.com/open62541/open62541.git
+    introduced: 798210374ad7a5fd43b31fc3c178a34a3ac21a0c
+  - type: GIT
+    repo: https://github.com/open62541/open62541.git
+    introduced: 798210374ad7a5fd43b31fc3c178a34a3ac21a0c
+  - type: GIT
+    repo: https://github.com/open62541/open62541.git
+    introduced: 798210374ad7a5fd43b31fc3c178a34a3ac21a0c
+  - type: GIT
+    repo: https://github.com/open62541/open62541.git
+    introduced: 798210374ad7a5fd43b31fc3c178a34a3ac21a0c
+  - type: GIT
+    repo: https://github.com/open62541/open62541.git
+    introduced: 798210374ad7a5fd43b31fc3c178a34a3ac21a0c
+  - type: GIT
+    repo: https://github.com/open62541/open62541.git
+    introduced: 798210374ad7a5fd43b31fc3c178a34a3ac21a0c
+  - type: GIT
+    repo: https://github.com/open62541/open62541.git
+    introduced: 798210374ad7a5fd43b31fc3c178a34a3ac21a0c
+  - type: GIT
+    repo: https://github.com/open62541/open62541.git
+    introduced: 798210374ad7a5fd43b31fc3c178a34a3ac21a0c
+  - type: GIT
+    repo: https://github.com/open62541/open62541.git
+    introduced: 798210374ad7a5fd43b31fc3c178a34a3ac21a0c
+  - type: GIT
+    repo: https://github.com/open62541/open62541.git
+    introduced: 798210374ad7a5fd43b31fc3c178a34a3ac21a0c
+  - type: GIT
+    repo: https://github.com/open62541/open62541.git
+    introduced: 798210374ad7a5fd43b31fc3c178a34a3ac21a0c
+  - type: GIT
+    repo: https://github.com/open62541/open62541.git
+    introduced: 798210374ad7a5fd43b31fc3c178a34a3ac21a0c
+  - type: GIT
+    repo: https://github.com/open62541/open62541.git
+    introduced: 798210374ad7a5fd43b31fc3c178a34a3ac21a0c
+  - type: GIT
+    repo: https://github.com/open62541/open62541.git
+    introduced: 798210374ad7a5fd43b31fc3c178a34a3ac21a0c
+  - type: GIT
+    repo: https://github.com/open62541/open62541.git
+    introduced: 798210374ad7a5fd43b31fc3c178a34a3ac21a0c
+  - type: GIT
+    repo: https://github.com/open62541/open62541.git
+    introduced: 798210374ad7a5fd43b31fc3c178a34a3ac21a0c
+  - type: GIT
+    repo: https://github.com/open62541/open62541.git
+    introduced: 798210374ad7a5fd43b31fc3c178a34a3ac21a0c
+  - type: GIT
+    repo: https://github.com/open62541/open62541.git
+    introduced: 798210374ad7a5fd43b31fc3c178a34a3ac21a0c
+  - type: GIT
+    repo: https://github.com/open62541/open62541.git
+    introduced: 798210374ad7a5fd43b31fc3c178a34a3ac21a0c
+  - type: GIT
+    repo: https://github.com/open62541/open62541.git
+    introduced: 798210374ad7a5fd43b31fc3c178a34a3ac21a0c
+  - type: GIT
+    repo: https://github.com/open62541/open62541.git
+    introduced: 798210374ad7a5fd43b31fc3c178a34a3ac21a0c
+  - type: GIT
+    repo: https://github.com/open62541/open62541.git
+    introduced: 798210374ad7a5fd43b31fc3c178a34a3ac21a0c
+  - type: GIT
+    repo: https://github.com/open62541/open62541.git
+    introduced: 798210374ad7a5fd43b31fc3c178a34a3ac21a0c
+  - type: GIT
+    repo: https://github.com/open62541/open62541.git
+    introduced: 798210374ad7a5fd43b31fc3c178a34a3ac21a0c
+  - type: GIT
+    repo: https://github.com/open62541/open62541.git
+    introduced: 798210374ad7a5fd43b31fc3c178a34a3ac21a0c
+  - type: GIT
+    repo: https://github.com/open62541/open62541.git
+    introduced: 798210374ad7a5fd43b31fc3c178a34a3ac21a0c
+  - type: GIT
+    repo: https://github.com/open62541/open62541.git
+    introduced: 798210374ad7a5fd43b31fc3c178a34a3ac21a0c
+  - type: GIT
+    repo: https://github.com/open62541/open62541.git
+    introduced: 798210374ad7a5fd43b31fc3c178a34a3ac21a0c
+  - type: GIT
+    repo: https://github.com/open62541/open62541.git
+    introduced: 798210374ad7a5fd43b31fc3c178a34a3ac21a0c
+  - type: GIT
+    repo: https://github.com/open62541/open62541.git
+    introduced: 798210374ad7a5fd43b31fc3c178a34a3ac21a0c
+  - type: GIT
+    repo: https://github.com/open62541/open62541.git
+    introduced: 798210374ad7a5fd43b31fc3c178a34a3ac21a0c
+  - type: GIT
+    repo: https://github.com/open62541/open62541.git
+    introduced: 798210374ad7a5fd43b31fc3c178a34a3ac21a0c
+  - type: GIT
+    repo: https://github.com/open62541/open62541.git
+    introduced: 798210374ad7a5fd43b31fc3c178a34a3ac21a0c
+  - type: GIT
+    repo: https://github.com/open62541/open62541.git
+    introduced: 798210374ad7a5fd43b31fc3c178a34a3ac21a0c
+  - type: GIT
+    repo: https://github.com/open62541/open62541.git
+    introduced: 798210374ad7a5fd43b31fc3c178a34a3ac21a0c
+  - type: GIT
+    repo: https://github.com/open62541/open62541.git
+    introduced: 798210374ad7a5fd43b31fc3c178a34a3ac21a0c
+  - type: GIT
+    repo: https://github.com/open62541/open62541.git
+    introduced: 798210374ad7a5fd43b31fc3c178a34a3ac21a0c
+  - type: GIT
+    repo: https://github.com/open62541/open62541.git
+    introduced: 798210374ad7a5fd43b31fc3c178a34a3ac21a0c
+  - type: GIT
+    repo: https://github.com/open62541/open62541.git
+    introduced: 798210374ad7a5fd43b31fc3c178a34a3ac21a0c
+  - type: GIT
+    repo: https://github.com/open62541/open62541.git
+    introduced: 798210374ad7a5fd43b31fc3c178a34a3ac21a0c
+  - type: GIT
+    repo: https://github.com/open62541/open62541.git
+    introduced: 798210374ad7a5fd43b31fc3c178a34a3ac21a0c
+  - type: GIT
+    repo: https://github.com/open62541/open62541.git
+    introduced: 798210374ad7a5fd43b31fc3c178a34a3ac21a0c
+  - type: GIT
+    repo: https://github.com/open62541/open62541.git
+    introduced: 798210374ad7a5fd43b31fc3c178a34a3ac21a0c
+  versions:
+  - v1.1
+  - v1.1.1
+  - v1.1.2
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22250
+modified: '2021-03-16T05:38:06.492445Z'
+created: '2020-07-28T00:00:30.302361Z'

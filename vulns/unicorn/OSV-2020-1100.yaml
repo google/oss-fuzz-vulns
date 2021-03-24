@@ -1,0 +1,26 @@
+id: OSV-2020-1100
+package:
+  name: unicorn
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in tlb_set_page_mips
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15030
+
+  Crash type: Heap-buffer-overflow READ 8
+  Crash state:
+  tlb_set_page_mips
+  mips_cpu_handle_mmu_fault_mips
+  tlb_fill_mips
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/unicorn-engine/unicorn.git
+    introduced: unknown:46999575fb9e82ccd925e835d0d7db47200e010d
+    fixed: 8b99637f774436e222e6d4393135aab0964967a0
+  versions:
+  - 1.0.2-rc1
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15030
+modified: '2021-03-09T04:49:05.089384Z'
+created: '2020-07-22T21:49:47.293682Z'

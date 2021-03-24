@@ -1,0 +1,30 @@
+id: OSV-2020-1792
+package:
+  name: clamav
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in text_normalize_buffer
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20464
+
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  text_normalize_buffer
+  arj_read_file_header
+  cli_scanarj
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/Cisco-Talos/clamav-devel.git
+    introduced: 5d411c68fb8a079748ddb6d3b115133ea0fdf242
+    fixed: e8381da15c45ab72579218faa883d2dedcc502f8
+  - type: GIT
+    repo: https://github.com/Cisco-Talos/clamav-devel.git
+    introduced: 75a4267eff9a9e7a969735a0c83cd2d0f0082730
+    fixed: 6c4569edea524a65c409d256b60ee607162ce468
+  versions:
+  - clamav-0.102.2
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20464
+modified: '2021-03-09T04:49:05.443027Z'
+created: '2020-09-18T00:00:21.241767Z'

@@ -1,0 +1,30 @@
+id: OSV-2020-391
+package:
+  name: file
+  ecosystem: OSS-Fuzz
+summary: Use-of-uninitialized-value in mprint
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13453
+
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  mprint
+  match
+  file_softmagic
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/file/file.git
+    introduced: 1562e15149268477b395ec71309d13f8be99a83b
+    fixed: dcda2612a5f38a3d9e15c0ac9a7d156d74b3a395
+  versions:
+  - FILE5_32
+  - FILE5_33
+  - FILE5_34
+  - FILE5_35
+  - FILE5_36
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13453
+modified: '2021-03-09T04:49:05.862390Z'
+created: '2020-07-01T00:00:06.825617Z'

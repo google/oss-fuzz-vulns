@@ -1,0 +1,25 @@
+id: OSV-2020-1629
+package:
+  name: wabt
+  ecosystem: OSS-Fuzz
+summary: Segv on unknown address in wabt::BinaryReader::PrintError
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24992
+
+  Crash type: Segv on unknown address
+  Crash state:
+  wabt::BinaryReader::PrintError
+  wabt::BinaryReader::ReadRelocSection
+  wabt::BinaryReader::ReadCustomSection
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/WebAssembly/wabt
+    introduced: 4b9852ad23541c851031398b835d6387b1b51393
+    fixed: 09ac53e41d959ce8e14e703e627327971e67f6d3
+  versions:
+  - 1.0.20
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24992
+modified: '2021-03-09T04:49:05.362924Z'
+created: '2020-08-19T00:00:06.787048Z'

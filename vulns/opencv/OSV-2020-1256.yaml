@@ -1,0 +1,28 @@
+id: OSV-2020-1256
+package:
+  name: opencv
+  ecosystem: OSS-Fuzz
+summary: UNKNOWN WRITE in TIFFReadRGBATileExt
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14185
+
+  Crash type: UNKNOWN WRITE
+  Crash state:
+  TIFFReadRGBATileExt
+  cv::TiffDecoder::readData
+  cv::imread
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/opencv/opencv.git
+    introduced: unknown:6bcf0b5519c190826cf0f21efd87cbe256eabc48
+    fixed: 25247b9f6e5e550868262b7611a9e575c1f7212a
+  versions:
+  - 4.0.1
+  - 4.1.0
+  - 4.1.0-openvino
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14185
+modified: '2021-03-09T04:49:05.172872Z'
+created: '2020-07-22T21:50:00.758042Z'

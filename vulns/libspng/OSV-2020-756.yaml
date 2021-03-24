@@ -1,0 +1,23 @@
+id: OSV-2020-756
+package:
+  name: libspng
+  ecosystem: OSS-Fuzz
+summary: Use-of-uninitialized-value in spng_read_fuzzer.c
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23936
+
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  spng_read_fuzzer.c
+  spng_read_fuzzer.c
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/randy408/libspng.git
+    introduced: 6a1c8f0e7c2242b22dfc562950a568c1d715954f
+    fixed: 932e9c836ea388dbd0d7a214af78a70373079c9d
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23936
+modified: '2021-03-09T04:49:06.059194Z'
+created: '2020-07-09T00:00:05.644183Z'

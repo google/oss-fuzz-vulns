@@ -1,0 +1,26 @@
+id: OSV-2020-196
+package:
+  name: radare2
+  ecosystem: OSS-Fuzz
+summary: Heap-use-after-free in Pe64_r_bin_pe_free
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21630
+
+  Crash type: Heap-use-after-free READ 8
+  Crash state:
+  Pe64_r_bin_pe_free
+  r_bin_file_free
+  r_list_delete
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/radare/radare2
+    introduced: 775f2b3d8d6d44f3312f9911dcf70b203268f387
+    fixed: 498292a70d65073a7bf1a36e3997debe8f1f0792
+  versions:
+  - 4.4.0
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21630
+modified: '2021-03-09T04:49:05.541423Z'
+created: '2020-06-24T01:51:18.455623Z'

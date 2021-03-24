@@ -1,0 +1,28 @@
+id: OSV-2020-1558
+package:
+  name: rnp
+  ecosystem: OSS-Fuzz
+summary: Stack-buffer-overflow in dst_print_s2k
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24538
+
+  Crash type: Stack-buffer-overflow READ 1
+  Crash state:
+  dst_print_s2k
+  stream_dump_packets_raw
+  stream_dump_packets
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/rnpgp/rnp.git
+    introduced: 5caadd90614c75928d536f10a8d22c7cf051a3ab
+    fixed: 8507acfd5612dd8026a092e6630c179fb60a6b0c
+  - type: GIT
+    repo: https://github.com/rnpgp/rnp.git
+    introduced: c81154e503614f45b101683945bf27ce10a32b4f
+    fixed: 943cfd6d474f11910d2f137ed8cf0fc39297423f
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24538
+modified: '2021-03-09T04:49:05.328236Z'
+created: '2020-08-01T00:00:10.494492Z'

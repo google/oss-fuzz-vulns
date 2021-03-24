@@ -1,0 +1,24 @@
+id: OSV-2020-1641
+package:
+  name: uwebsockets
+  ecosystem: OSS-Fuzz
+summary: Use-of-uninitialized-value in us_internal_dispatch_ready_poll
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25057
+
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  us_internal_dispatch_ready_poll
+  us_loop_run
+  uWS::TemplatedApp<false>::run
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/uNetworking/uWebSockets.git
+    introduced: 2544593c13295ddb38b20c8365b1e5558f0749e0
+    fixed: 8bdae7645f375f0fcf52acefce8f004f166b82c2
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25057
+modified: '2021-03-09T04:49:05.368441Z'
+created: '2020-08-21T00:01:21.212570Z'

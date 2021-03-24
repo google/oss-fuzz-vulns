@@ -1,0 +1,25 @@
+id: OSV-2020-1820
+package:
+  name: hermes
+  ecosystem: OSS-Fuzz
+summary: Stack-buffer-overflow in hermes::regex::Parser<hermes::regex::Regex<hermes::regex::UTF16RegexTraits>,
+  cha
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25815
+
+  Crash type: Stack-buffer-overflow READ 2
+  Crash state:
+  hermes::regex::Parser<hermes::regex::Regex<hermes::regex::UTF16RegexTraits>, cha
+  hermes::regex::Parser<hermes::regex::Regex<hermes::regex::UTF16RegexTraits>, cha
+  hermes::regex::Parser<hermes::regex::Regex<hermes::regex::UTF16RegexTraits>, cha
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/facebook/hermes.git
+    introduced: 58f7c31e9da3ac8cdf894307080929fa93648870
+    fixed: c593863a881796f8bf4f4faea1fa179edf5d532f
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25815
+modified: '2021-03-09T04:49:05.458034Z'
+created: '2020-09-21T00:00:18.040780Z'

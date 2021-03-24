@@ -1,0 +1,26 @@
+id: OSV-2020-258
+package:
+  name: openthread
+  ecosystem: OSS-Fuzz
+summary: Stack-buffer-overflow in ot::Message::Write
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=19338
+
+  Crash type: Stack-buffer-overflow READ 11
+  Crash state:
+  ot::Message::Write
+  ot::Message::Append
+  ot::Mle::Mle::AppendResponse
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/openthread/openthread
+    introduced: ec303c16a4dda1824b6ef7954890574e7ada1f9b
+    fixed: f49d8b7b1d33ddc0ef03d0dea822dec83fbb8722
+  versions:
+  - thread-reference-20191113
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=19338
+modified: '2021-03-09T04:49:05.790066Z'
+created: '2020-06-30T00:00:42.072474Z'

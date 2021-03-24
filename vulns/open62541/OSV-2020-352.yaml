@@ -1,0 +1,34 @@
+id: OSV-2020-352
+package:
+  name: open62541
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in searchObjectForKeyRec
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14619
+
+  Crash type: Heap-buffer-overflow READ 4
+  Crash state:
+  searchObjectForKeyRec
+  searchObjectForKeyRec
+  searchObjectForKeyRec
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/open62541/open62541.git
+    introduced: 58a2fdb5b1ad1efafef455d66a9cbfb93c3fae9d
+    fixed: e1cdb1dd75ea92adcc949c5d3dc4fc4ebdf74b92
+  - type: GIT
+    repo: https://github.com/open62541/open62541.git
+    introduced: 58a2fdb5b1ad1efafef455d66a9cbfb93c3fae9d
+    fixed: d09ab036733583a0d2ddd3d556a93ba47a73b0b3
+  versions:
+  - v1.0-rc1
+  - v1.0-rc2
+  - v1.0-rc3
+  - v1.0-rc4
+  - v1.0-rc5
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14619
+modified: '2021-03-09T04:49:05.840742Z'
+created: '2020-07-01T00:00:04.730408Z'

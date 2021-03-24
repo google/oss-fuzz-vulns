@@ -1,0 +1,26 @@
+id: OSV-2020-1252
+package:
+  name: opencv
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in jpc_dec_process_sot
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13310
+
+  Crash type: Heap-buffer-overflow READ 4
+  Crash state:
+  jpc_dec_process_sot
+  jpc_decode
+  jp2_decode
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/opencv/opencv.git
+    introduced: unknown:6bcf0b5519c190826cf0f21efd87cbe256eabc48
+    fixed: 17ad33c9196aa75df24d4f1c1763547079f5b650:26087e28adbd2a9acee05019aac2aea35ef5195d
+  versions:
+  - 4.0.1
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13310
+modified: '2021-03-09T04:49:05.170876Z'
+created: '2020-07-22T21:50:00.494951Z'

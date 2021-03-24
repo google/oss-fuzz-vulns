@@ -1,0 +1,24 @@
+id: OSV-2020-1570
+package:
+  name: libheif
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in x265::PicYuv::copyFromPicture
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24590
+
+  Crash type: Heap-buffer-overflow READ {*}
+  Crash state:
+  x265::PicYuv::copyFromPicture
+  x265::Encoder::encode
+  x265_encoder_encode
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/strukturag/libheif.git
+    introduced: 514556f5ab18a6d5ff4fc4e0f1af7fca58947e7b
+    fixed: 95deb055d9200fdd3b154b51d99a05282d81075c
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24590
+modified: '2021-03-09T04:49:05.334730Z'
+created: '2020-08-03T00:00:09.880989Z'

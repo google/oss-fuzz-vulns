@@ -1,0 +1,27 @@
+id: OSV-2020-1976
+package:
+  name: flac
+  ecosystem: OSS-Fuzz
+summary: Use-of-uninitialized-value in FLAC::Decoder::FuzzerStream::write_callback
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=16503
+
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  FLAC::Decoder::FuzzerStream::write_callback
+  write_audio_frame_to_client_
+  read_frame_
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/xiph/flac.git
+    introduced: 88ddb5b59e092f12ca18b73857a15235caf07fa1
+    fixed: ce6dd6b5732e319ef60716d9cc9af6a836a4011a
+  - type: GIT
+    repo: https://github.com/xiph/flac.git
+    introduced: 7e79d0aa9c4274776259a52a15081dc5f62c5063
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=16503
+modified: '2021-03-09T04:49:05.549833Z'
+created: '2020-10-03T00:00:34.944603Z'

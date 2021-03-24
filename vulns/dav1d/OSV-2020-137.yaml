@@ -1,0 +1,22 @@
+id: OSV-2020-137
+package:
+  name: dav1d
+  ecosystem: OSS-Fuzz
+summary: UNKNOWN READ in dav1d_resize_ssse3
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21547
+
+  Crash type: UNKNOWN READ
+  Crash state:
+  dav1d_resize_ssse3
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://code.videolan.org/videolan/dav1d.git
+    introduced: 9e36b9b00122364cf9391380c336595d7dc6e957
+    fixed: 41cd4199f149760a4d16326342d646b2eb66e8b0
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21547
+modified: '2021-03-09T04:49:05.231308Z'
+created: '2020-06-24T01:51:15.781691Z'

@@ -1,0 +1,27 @@
+id: OSV-2017-17
+package:
+  name: unrar
+  ecosystem: OSS-Fuzz
+summary: Use-of-uninitialized-value in QuickOpen::Seek
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=4522
+
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  QuickOpen::Seek
+  Archive::Seek
+  QuickOpen::Load
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/aawc/unrar.git
+    introduced: 2a079823c708a637bc36e888180ebb96fdfba526:1d8ea7923dae7c8f136912b6bdca95dcb52e80bc
+    fixed: 0ff832d31470471803b175cfff4e40c1b08ee779
+  versions:
+  - 5.6.1.2
+  - 5.6.1.3
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=4522
+modified: '2021-03-09T04:49:04.770864Z'
+created: '2021-01-13T00:00:28.517212Z'

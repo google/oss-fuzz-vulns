@@ -1,0 +1,24 @@
+id: OSV-2020-138
+package:
+  name: arrow
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in org::apache::arrow::flatbuf::Message::Verify
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21681
+
+  Crash type: Heap-buffer-overflow READ 4
+  Crash state:
+  org::apache::arrow::flatbuf::Message::Verify
+  arrow::ipc::CheckMetadataAndGetBodyLength
+  arrow::ipc::MessageDecoder::MessageDecoderImpl::ConsumeMetadata
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/apache/arrow.git
+    introduced: 866e6a82e2794b151235c19b8c5cbf1fcaf780ef
+    fixed: c47d0d3df865d34d877c84042c11a7cb259f7cdd
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21681
+modified: '2021-03-09T04:49:05.236279Z'
+created: '2020-06-24T01:51:15.842848Z'

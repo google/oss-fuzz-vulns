@@ -1,0 +1,28 @@
+id: OSV-2020-1222
+package:
+  name: htslib
+  ecosystem: OSS-Fuzz
+summary: UNKNOWN READ in hpeek
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20473
+
+  Crash type: UNKNOWN READ
+  Crash state:
+  hpeek
+  sam_hdr_create
+  view_sam
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/samtools/htslib.git
+    introduced: unknown:dd6f0b72c92591252bb77818663629cc1a129949
+    fixed: 39acb9583128ede53d0562a8055786cec0e5ab40
+  versions:
+  - '1.10'
+  - 1.10.1
+  - 1.10.2
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20473
+modified: '2021-03-09T04:49:05.154714Z'
+created: '2020-07-22T21:49:57.988557Z'

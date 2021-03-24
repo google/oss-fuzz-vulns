@@ -1,0 +1,24 @@
+id: OSV-2021-395
+package:
+  name: serenity
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in Crypto::der_decode_integer
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30907
+
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  Crypto::der_decode_integer
+  Crypto::der_decode_sequence
+  Crypto::der_decode_sequence_many<4ul>::operator bool
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/SerenityOS/serenity
+    introduced: 5b891b0c36b9cf6efe1c8873e34f2fc114a686d3
+    fixed: 3fe7ac0924ada70faaf27636b6e0f40bcde24f77
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30907
+modified: '2021-02-27T00:06:57.492400Z'
+created: '2021-02-14T00:01:07.503942Z'

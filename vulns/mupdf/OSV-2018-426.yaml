@@ -1,0 +1,27 @@
+id: OSV-2018-426
+package:
+  name: mupdf
+  ecosystem: OSS-Fuzz
+summary: UNKNOWN READ in jpx_read_image
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=8866
+
+  Crash type: UNKNOWN READ
+  Crash state:
+  jpx_read_image
+  fz_load_jpx
+  pdf_load_jpx
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: git://git.ghostscript.com/mupdf.git
+    introduced: 9086386263154498dcb18c96f1e1630903b21a3c:d9bc8c6f7fb2e3ec7035bebaaee0edcf59287705
+    fixed: c7f89b2484ef1448670dd862e417d395131da7f8:57160d72260914d90171027dfd9402997d221a6d
+  versions:
+  - 1.13.0
+  - 1.13.0-rc1
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=8866
+modified: '2021-03-09T04:49:04.989262Z'
+created: '2021-01-15T00:01:17.401537Z'

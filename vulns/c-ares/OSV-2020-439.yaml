@@ -1,0 +1,22 @@
+id: OSV-2020-439
+package:
+  name: c-ares
+  ecosystem: OSS-Fuzz
+summary: UNKNOWN WRITE in ares-test-fuzz.c
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15375
+
+  Crash type: UNKNOWN WRITE
+  Crash state:
+  ares-test-fuzz.c
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/c-ares/c-ares.git
+    introduced: 7d3591ee8a1a63e7748e68e6d880bd1763a32885
+    fixed: b949cc3ddfbeb1b3fba571fb53b186b645e66e9c
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15375
+modified: '2021-03-09T04:49:05.888100Z'
+created: '2020-07-01T00:00:09.657657Z'

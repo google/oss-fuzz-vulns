@@ -1,0 +1,30 @@
+id: OSV-2020-146
+package:
+  name: jsoncpp
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in Json::OurReader::parse
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21916
+
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  Json::OurReader::parse
+  Json::OurCharReader::parse
+  fuzz.cpp
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/open-source-parsers/jsoncpp
+    introduced: 83946a28db3d13ffe8184bdae23287a81c09fd7f
+    fixed: 6aba23f4a8628d599a9ef7fa4811c4ff6e4070e2
+  - type: GIT
+    repo: https://github.com/open-source-parsers/jsoncpp
+    introduced: 83946a28db3d13ffe8184bdae23287a81c09fd7f
+    fixed: 3228be44b0b33a1f14fb343bb5b653a8a33d611a
+  versions:
+  - 00.11.0
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21916
+modified: '2021-03-09T04:49:05.275853Z'
+created: '2020-06-24T01:51:16.175015Z'

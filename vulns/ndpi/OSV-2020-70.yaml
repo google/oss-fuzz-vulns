@@ -1,0 +1,24 @@
+id: OSV-2020-70
+package:
+  name: ndpi
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in ndpi_handle_ipv6_extension_headers
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21719
+
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  ndpi_handle_ipv6_extension_headers
+  ndpi_workflow_process_packet
+  fuzz_ndpi_reader.c
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/ntop/nDPI.git
+    introduced: cf47ba234a59db325a382db4bbdf10187f93eb9a
+    fixed: 25cd2a23a6b7057af0e898c613e5f4acf168a11c
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21719
+modified: '2021-03-09T04:49:06.029905Z'
+created: '2020-06-24T01:51:12.729868Z'

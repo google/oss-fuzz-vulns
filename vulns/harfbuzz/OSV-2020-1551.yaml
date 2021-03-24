@@ -1,0 +1,24 @@
+id: OSV-2020-1551
+package:
+  name: harfbuzz
+  ecosystem: OSS-Fuzz
+summary: UNKNOWN WRITE in CFF::parsed_cs_op_t::set_skip
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24507
+
+  Crash type: UNKNOWN WRITE
+  Crash state:
+  CFF::parsed_cs_op_t::set_skip
+  CFF::parsed_cs_str_t::add_call_op
+  cff1_cs_opset_subr_subset_t::process_call_subr
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/harfbuzz/harfbuzz.git
+    introduced: 48ad745996159337fb4733561e834a0ffbe3a1ae
+    fixed: 32f052b033f12fbeb8741c9616860743b1f567c4
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24507
+modified: '2021-03-09T04:49:05.324892Z'
+created: '2020-07-31T00:00:53.218119Z'

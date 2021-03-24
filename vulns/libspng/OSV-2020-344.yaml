@@ -1,0 +1,23 @@
+id: OSV-2020-344
+package:
+  name: libspng
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in spng_decode_image
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=16091
+
+  Crash type: Heap-buffer-overflow READ {*}
+  Crash state:
+  spng_decode_image
+  spng_read_fuzzer.cc
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/randy408/libspng.git
+    introduced: c06fc855a3933b18dff6526633abeee4f697fc9d
+    fixed: bace14e344502fce5984ab4fd9177d8db60351f8
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=16091
+modified: '2021-03-09T04:49:05.836564Z'
+created: '2020-07-01T00:00:04.309532Z'

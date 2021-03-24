@@ -1,0 +1,24 @@
+id: OSV-2020-468
+package:
+  name: openthread
+  ecosystem: OSS-Fuzz
+summary: Stack-buffer-overflow in ot::Ip6::Address::FromString
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14821
+
+  Crash type: Stack-buffer-overflow WRITE 1
+  Crash state:
+  ot::Ip6::Address::FromString
+  ot::Cli::Coap::ProcessRequest
+  ot::Cli::Interpreter::ProcessCoap
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/openthread/openthread
+    introduced: 1a4b249a9527c88ea2f573fea9fda39bb025b5b1
+    fixed: 8bb50d4ccde667295f892f976ee5ff90ba4a4a2f
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14821
+modified: '2021-03-09T04:49:05.904908Z'
+created: '2020-07-01T00:00:11.286088Z'

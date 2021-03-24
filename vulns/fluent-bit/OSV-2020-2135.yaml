@@ -1,0 +1,24 @@
+id: OSV-2020-2135
+package:
+  name: fluent-bit
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in _flb_strptime
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=27241
+
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  _flb_strptime
+  flb_strptime
+  strp_fuzzer.c
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/fluent/fluent-bit/
+    introduced: b5c326cc19d77cafeb439474771482699115add3
+    fixed: 163af0b9c0513f31cc4cbfe8aeee26d22513163c
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=27241
+modified: '2021-03-09T04:49:05.679749Z'
+created: '2020-11-08T00:00:24.458250Z'

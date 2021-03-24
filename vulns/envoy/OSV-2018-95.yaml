@@ -1,0 +1,24 @@
+id: OSV-2018-95
+package:
+  name: envoy
+  ecosystem: OSS-Fuzz
+summary: Heap-use-after-free in Envoy::FakeConnectionBase::close
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=8783
+
+  Crash type: Heap-use-after-free READ 1
+  Crash state:
+  Envoy::FakeConnectionBase::close
+  Envoy::Event::DispatcherImpl::runPostCallbacks
+  event_process_active_single_queue
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/envoyproxy/envoy.git
+    introduced: f9b2041af0ca5dda5daed5ef80816e907fb0c6fd
+    fixed: 09c5d356684194f8b06df1a6b62f27a1a9cb1d69:a89eb3c59204caa3e0cd1bcd845bcb1a0be95267
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=8783
+modified: '2021-03-09T04:49:05.032633Z'
+created: '2021-01-13T00:00:42.203275Z'

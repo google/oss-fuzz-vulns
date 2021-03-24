@@ -1,0 +1,46 @@
+id: OSV-2020-2117
+package:
+  name: fluent-bit
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in flb_msgpack_gelf_value_ext
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26851
+
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  flb_msgpack_gelf_value_ext
+  flb_msgpack_to_gelf
+  flb_msgpack_raw_to_gelf
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/fluent/fluent-bit/
+    introduced: 9643eebeba6bddd31978783cbbfb1686c93d8e24:1b262cebff01a2d54c7dab8ff5d3d8e340faed30
+    fixed: 9a3bd47ec6121492e2c5e37ca14f5827bb7d6db2
+  versions:
+  - v1.6.1
+  - v1.6.10
+  - v1.6.2
+  - v1.6.3
+  - v1.6.4
+  - v1.6.5
+  - v1.6.6
+  - v1.6.7
+  - v1.6.8
+  - v1.6.9
+  - v1.7.0
+  - v1.7.0-rc1
+  - v1.7.0-rc2
+  - v1.7.0-rc3
+  - v1.7.0-rc4
+  - v1.7.0-rc5
+  - v1.7.0-rc6
+  - v1.7.0-rc7
+  - v1.7.0-rc8
+  - v1.7.0-rc9
+  - v1.7.1
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26851
+modified: '2021-03-09T04:49:05.620078Z'
+created: '2020-11-02T00:00:07.716307Z'

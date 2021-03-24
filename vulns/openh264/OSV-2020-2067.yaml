@@ -1,0 +1,24 @@
+id: OSV-2020-2067
+package:
+  name: openh264
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in WelsDec::DecodeCurrentAccessUnit
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26302
+
+  Crash type: Heap-buffer-overflow WRITE {*}
+  Crash state:
+  WelsDec::DecodeCurrentAccessUnit
+  WelsDec::ConstructAccessUnit
+  WelsDecodeBs
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/cisco/openh264.git
+    introduced: f1bb6d3acb057785b4d89e8228e23cc4fc9caa12
+    fixed: b52786888ddce9d6bc06b7825ba9bffc65924e0c
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26302
+modified: '2021-02-25T00:07:56.887332Z'
+created: '2020-10-14T00:00:41.933918Z'

@@ -1,0 +1,23 @@
+id: OSV-2020-1159
+package:
+  name: arrow
+  ecosystem: OSS-Fuzz
+summary: Segv on unknown address in arrow::ipc::ReadMessage
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20124
+
+  Crash type: Segv on unknown address
+  Crash state:
+  arrow::ipc::ReadMessage
+  arrow::ipc::RecordBatchFileReader::RecordBatchFileReaderImpl::ReadMessageFromBlo
+  arrow::ipc::RecordBatchFileReader::RecordBatchFileReaderImpl::ReadDictionaries
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/apache/arrow.git
+    introduced: unknown:ccdc4b076cbd5fb03e1cbc42292def871d2b6035
+    fixed: 724da320eaac94003a8f1229d6a820fe8c8c1816
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20124
+modified: '2021-03-09T04:49:05.121037Z'
+created: '2020-07-22T21:49:52.147608Z'

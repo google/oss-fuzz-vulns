@@ -1,0 +1,24 @@
+id: OSV-2018-64
+package:
+  name: harfbuzz
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in BEInt<unsigned int, 4>::operator unsigned int
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11522
+
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  BEInt<unsigned int, 4>::operator unsigned int
+  void hb_sanitize_context_t::set_object<OT::KernSubTable<OT::KernAATSubTableHeade
+  AAT::KerxTable<OT::KernAAT>::sanitize
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/harfbuzz/harfbuzz.git
+    introduced: 758c9d68e2143493978d8ac8391f4af2a2abc26a
+    fixed: 8dcc1913a1670ede7b124f7b5b775d7ab8791386
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11522
+modified: '2021-03-09T04:49:05.016311Z'
+created: '2021-01-13T00:00:31.625117Z'

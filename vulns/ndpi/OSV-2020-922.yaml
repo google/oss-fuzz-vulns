@@ -1,0 +1,26 @@
+id: OSV-2020-922
+package:
+  name: ndpi
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in ndpi_search_h323
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22342
+
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  ndpi_search_h323
+  check_ndpi_udp_flow_func
+  ndpi_detection_process_packet
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/ntop/nDPI.git
+    introduced: unknown:e695dd6eade754b2d50bdf297ca8bdc4105f93ff
+    fixed: b7e666e465f138ae48ab81976726e67deed12701
+  versions:
+  - '3.2'
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22342
+modified: '2021-03-09T04:49:06.154275Z'
+created: '2020-07-22T00:00:09.776559Z'

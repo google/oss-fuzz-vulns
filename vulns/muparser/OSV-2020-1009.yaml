@@ -1,0 +1,24 @@
+id: OSV-2020-1009
+package:
+  name: muparser
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in mu::ParserBase::ParseCmdCodeBulk
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23123
+
+  Crash type: Heap-buffer-overflow READ 8
+  Crash state:
+  mu::ParserBase::ParseCmdCodeBulk
+  mu::ParserBase::ParseString
+  set_eval_fuzzer.cc
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/beltoforion/muparser.git
+    introduced: unknown:e6c369c90c36e9c3443f465ad1d9cec9e42d38b6
+    fixed: 1f97b7eeab0d1dc2f68ff396a4bf741d0c602b50
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23123
+modified: '2021-03-09T04:49:05.040837Z'
+created: '2020-07-22T21:49:39.777520Z'

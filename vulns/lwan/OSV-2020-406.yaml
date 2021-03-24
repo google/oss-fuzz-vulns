@@ -1,0 +1,23 @@
+id: OSV-2020-406
+package:
+  name: lwan
+  ecosystem: OSS-Fuzz
+summary: Global-buffer-overflow in lwan_strbuf_append_str
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18448
+
+  Crash type: Global-buffer-overflow READ {*}
+  Crash state:
+  lwan_strbuf_append_str
+  parse_section
+  parse_section_shorthand
+affects:
+  ranges:
+  - type: GIT
+    repo: git://github.com/lpereira/lwan
+    introduced: c9ac13203b6685d3bf89ab6d257b37dd6b0d5833
+    fixed: 742ecf1c535b0b3b1350253faef6289fdc8f8e12
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18448
+modified: '2021-03-09T04:49:05.870598Z'
+created: '2020-07-01T00:00:07.709109Z'

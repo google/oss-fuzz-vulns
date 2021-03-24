@@ -1,0 +1,24 @@
+id: OSV-2020-2139
+package:
+  name: fluent-bit
+  ecosystem: OSS-Fuzz
+summary: Heap-double-free in flb_free
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=27025
+
+  Crash type: Heap-double-free
+  Crash state:
+  flb_free
+  flb_sds_destroy
+  flb_kv_item_destroy
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/fluent/fluent-bit/
+    introduced: e5289e606c4b55b0fac29046c8343958248189e7
+    fixed: d67f28b5b28253ff1d0732c79762bda2a12e207b
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=27025
+modified: '2021-03-09T04:49:05.681742Z'
+created: '2020-11-08T00:00:50.376469Z'

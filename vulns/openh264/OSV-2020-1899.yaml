@@ -1,0 +1,24 @@
+id: OSV-2020-1899
+package:
+  name: openh264
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in DeblockChromaLt42_c
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26068
+
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  DeblockChromaLt42_c
+  DeblockChromaLt4H2_c
+  WelsDec::FilteringEdgeChromaHV
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/cisco/openh264.git
+    introduced: 66ef706acd55b0b8daec32ca299d2586a1f473c9
+    fixed: f1bb6d3acb057785b4d89e8228e23cc4fc9caa12
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26068
+modified: '2021-03-09T04:49:05.499474Z'
+created: '2020-10-02T00:00:16.147200Z'

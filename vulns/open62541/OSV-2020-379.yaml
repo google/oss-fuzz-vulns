@@ -1,0 +1,30 @@
+id: OSV-2020-379
+package:
+  name: open62541
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in UA_unbase64
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14621
+
+  Crash type: Heap-buffer-overflow WRITE 1
+  Crash state:
+  UA_unbase64
+  ByteString_decodeJson
+  decodeFields
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/open62541/open62541.git
+    introduced: 58a2fdb5b1ad1efafef455d66a9cbfb93c3fae9d
+    fixed: fb4a98f6550529162d4daf7b528c7a74cdb7008a
+  versions:
+  - v1.0-rc1
+  - v1.0-rc2
+  - v1.0-rc3
+  - v1.0-rc4
+  - v1.0-rc5
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14621
+modified: '2021-03-09T04:49:05.855728Z'
+created: '2020-07-01T00:00:06.148009Z'

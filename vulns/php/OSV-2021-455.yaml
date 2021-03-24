@@ -1,0 +1,39 @@
+id: OSV-2021-455
+package:
+  name: php
+  ecosystem: OSS-Fuzz
+summary: Heap-use-after-free in zend_hash_iterator_pos_ex
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31423
+
+  Crash type: Heap-use-after-free READ 1
+  Crash state:
+  zend_hash_iterator_pos_ex
+  ZEND_FE_FETCH_RW_SPEC_VAR_HANDLER
+  fuzzer_execute_ex
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/php/php-src.git
+    introduced: 1902f730ee2bda60552f34c0643e2d7b47e4fb64
+    fixed: 5875bf754ed4fc64a6f0b7d62734d2a816c51017
+  versions:
+  - php-8.0.0
+  - php-8.0.0RC2
+  - php-8.0.0RC3
+  - php-8.0.0RC4
+  - php-8.0.0RC5
+  - php-8.0.0beta3
+  - php-8.0.0beta4
+  - php-8.0.0rc1
+  - php-8.0.1
+  - php-8.0.1RC1
+  - php-8.0.2
+  - php-8.0.2RC1
+  - php-8.0.3
+  - php-8.0.3RC1
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31423
+modified: '2021-03-08T03:58:51.377993Z'
+created: '2021-02-28T00:01:13.121524Z'

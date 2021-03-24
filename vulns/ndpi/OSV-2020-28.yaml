@@ -1,0 +1,24 @@
+id: OSV-2020-28
+package:
+  name: ndpi
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in get16
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20712
+
+  Crash type: Heap-buffer-overflow READ 2
+  Crash state:
+  get16
+  search_valid_dns
+  ndpi_search_dns
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/ntop/nDPI.git
+    introduced: 5c52c00ea4ad8afaebd5259bc53215a1ab41569f
+    fixed: 90e08b3568d8963a459cf06c4e67ff6fc99298e3
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20712
+modified: '2021-03-09T04:49:05.802361Z'
+created: '2020-06-24T01:51:10.866720Z'

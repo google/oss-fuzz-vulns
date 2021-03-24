@@ -1,0 +1,24 @@
+id: OSV-2020-1600
+package:
+  name: cryptofuzz
+  ecosystem: OSS-Fuzz
+summary: Use-of-uninitialized-value in fuzzing::memory::memory_test_msan
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24786
+
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  fuzzing::memory::memory_test_msan
+  cryptofuzz::ExecutorBase<cryptofuzz::component::Ciphertext, cryptofuzz::operatio
+  cryptofuzz::ExecutorBase<cryptofuzz::component::Ciphertext, cryptofuzz::operatio
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/guidovranken/cryptofuzz
+    introduced: 1fc0a6fdc6e3d2f684b297a29eb5992398573437
+    fixed: 1fc0a6fdc6e3d2f684b297a29eb5992398573437:88b300a164e5eb9fc26941a938411ad99a66b789
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24786
+modified: '2021-03-09T04:49:05.350373Z'
+created: '2020-08-12T00:00:30.834222Z'

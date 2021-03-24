@@ -1,0 +1,24 @@
+id: OSV-2020-2251
+package:
+  name: c-blosc2
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in blosc_run_decompression_with_context
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=28392
+
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  blosc_run_decompression_with_context
+  blosc2_decompress_ctx
+  frame_decompress_chunk
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/Blosc/c-blosc2.git
+    introduced: 933c0c455c91da06604163f533e9a2084cd2f6ca
+    fixed: aefd3829af33a7814f76137838d741fd7b1058d4
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=28392
+modified: '2021-03-09T04:49:05.744629Z'
+created: '2020-12-09T00:00:09.835730Z'

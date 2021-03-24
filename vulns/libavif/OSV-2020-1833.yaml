@@ -1,0 +1,24 @@
+id: OSV-2020-1833
+package:
+  name: libavif
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in avifROStreamRead
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25903
+
+  Crash type: Heap-buffer-overflow READ 4
+  Crash state:
+  avifROStreamRead
+  avifROStreamReadU32
+  avifROStreamReadBoxHeader
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/AOMediaCodec/libavif.git
+    introduced: 16104711fe1a92cadb454e6330cc343c7cdfd00e
+    fixed: b86bc3c8296f7d37cacf674ee031851cd513b8e4
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25903
+modified: '2021-03-09T04:49:05.464524Z'
+created: '2020-09-25T00:00:04.438974Z'

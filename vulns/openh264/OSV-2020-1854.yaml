@@ -1,0 +1,24 @@
+id: OSV-2020-1854
+package:
+  name: openh264
+  ecosystem: OSS-Fuzz
+summary: Use-of-uninitialized-value in UpdateDecStatNoFreezingInfo
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25970
+
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  UpdateDecStatNoFreezingInfo
+  UpdateDecStat
+  WelsDec::DecodeFrameConstruction
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/cisco/openh264.git
+    introduced: 66ef706acd55b0b8daec32ca299d2586a1f473c9
+    fixed: f1bb6d3acb057785b4d89e8228e23cc4fc9caa12
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25970
+modified: '2021-03-09T04:49:05.475512Z'
+created: '2020-09-27T00:00:12.495058Z'

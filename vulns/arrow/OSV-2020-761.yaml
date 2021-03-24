@@ -1,0 +1,24 @@
+id: OSV-2020-761
+package:
+  name: arrow
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in arrow::ConcatenateBuffers
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23848
+
+  Crash type: Heap-buffer-overflow READ {*}
+  Crash state:
+  arrow::ConcatenateBuffers
+  arrow::ConcatenateImpl::Visit
+  arrow::Status arrow::VisitTypeInline<arrow::ConcatenateImpl>
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/apache/arrow.git
+    introduced: 39d9345ec465c735ff071c20737007209afe7405
+    fixed: cb2cf2f2a4714d161535837d90b025feef5bca5c
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23848
+modified: '2021-03-09T04:49:06.062061Z'
+created: '2020-07-09T00:00:21.470735Z'

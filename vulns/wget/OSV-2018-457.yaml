@@ -1,0 +1,24 @@
+id: OSV-2018-457
+package:
+  name: wget
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in xstrndup
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=8033
+
+  Crash type: Heap-buffer-overflow READ 11
+  Crash state:
+  xstrndup
+  get_urls_css
+  wget_css_fuzzer.c
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://git.savannah.gnu.org/git/wget.git
+    introduced: f56f970bc2b0df1d26ebd6a0a86083b37017cd70
+    fixed: 78838d761f9699a6f17107a522c13cb200ae50c5
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=8033
+modified: '2021-03-09T04:49:05.004827Z'
+created: '2021-01-15T00:01:25.715652Z'

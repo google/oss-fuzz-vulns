@@ -1,0 +1,24 @@
+id: OSV-2020-313
+package:
+  name: libgit2
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in git_buf_decode_base85
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18882
+
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  git_buf_decode_base85
+  parse_patch_binary_side
+  parse_patch_binary
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/libgit2/libgit2
+    introduced: 92e011a715e8935f2c64c410625dc6911b6e616c
+    fixed: 7f6fdb8293a94267fead2424c90450de228db157
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18882
+modified: '2021-03-09T04:49:05.820015Z'
+created: '2020-07-01T00:00:01.257082Z'

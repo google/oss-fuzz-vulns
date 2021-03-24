@@ -1,0 +1,57 @@
+id: OSV-2020-794
+package:
+  name: poppler
+  ecosystem: OSS-Fuzz
+summary: Use-of-uninitialized-value in Splash::pipeRunSimpleXBGR8
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23086
+
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  Splash::pipeRunSimpleXBGR8
+  Splash::blitImage
+  Splash::drawImage
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://gitlab.freedesktop.org/poppler/poppler.git
+    introduced: 5b9f42db983e1d5e915373cf554a50ce4e9b7ef0:f162ecdea0dda5dbbdb45503c1d55d9afaa41d44
+    fixed: d776dafbd40e75f35d6a6fc6cb012f158ee1409d
+  versions:
+  - poppler-0.70.0
+  - poppler-0.70.1
+  - poppler-0.71.0
+  - poppler-0.72.0
+  - poppler-0.73.0
+  - poppler-0.74.0
+  - poppler-0.75.0
+  - poppler-0.76.0
+  - poppler-0.76.1
+  - poppler-0.77.0
+  - poppler-0.78.0
+  - poppler-0.79.0
+  - poppler-0.80.0
+  - poppler-0.81.0
+  - poppler-0.82.0
+  - poppler-0.83.0
+  - poppler-0.84.0
+  - poppler-0.85.0
+  - poppler-0.86.0
+  - poppler-0.86.1
+  - poppler-0.87.0
+  - poppler-0.88.0
+  - poppler-0.89.0
+  - poppler-0.90.0
+  - poppler-0.90.1
+  - poppler-20.08.0
+  - poppler-20.09.0
+  - poppler-20.10.0
+  - poppler-20.11.0
+  - poppler-20.12.0
+  - poppler-20.12.1
+  - poppler-21.01.0
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23086
+modified: '2021-03-09T04:49:06.080049Z'
+created: '2020-07-14T05:37:37.128981Z'

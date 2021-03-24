@@ -1,0 +1,27 @@
+id: OSV-2020-2299
+package:
+  name: wolfssl
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in ato16
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29103
+
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  ato16
+  TLSX_CSR_Parse
+  TLSX_Parse
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/wolfssl/wolfssl
+    introduced: c482d160290c5cf314a3b10eba621dd37b6795a1
+    fixed: 54f072fd8d591eebd9c800315a036e35f116f991:209ad82df24e3c4b1c7a6e68206ba77e9fb1ce63
+  - type: GIT
+    repo: https://github.com/wolfssl/wolfssl
+    introduced: c482d160290c5cf314a3b10eba621dd37b6795a1
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29103
+modified: '2021-03-15T05:06:54.485974Z'
+created: '2020-12-31T00:01:21.746087Z'

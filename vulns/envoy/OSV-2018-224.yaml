@@ -1,0 +1,22 @@
+id: OSV-2018-224
+package:
+  name: envoy
+  ecosystem: OSS-Fuzz
+summary: UNKNOWN READ
+details: |-
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=8353
+
+  Crash type: UNKNOWN READ
+  Crash state:
+  NULL
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/envoyproxy/envoy.git
+    introduced: f9b2041af0ca5dda5daed5ef80816e907fb0c6fd
+    fixed: 40b1ac06e065d633c6a28d89823a491a47f2d44a
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=8353
+modified: '2021-03-09T04:49:04.884712Z'
+created: '2021-01-13T00:01:32.384790Z'

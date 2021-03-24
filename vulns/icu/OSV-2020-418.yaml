@@ -1,0 +1,27 @@
+id: OSV-2020-418
+package:
+  name: icu
+  ecosystem: OSS-Fuzz
+summary: Use-of-uninitialized-value in isMatchAtCPBoundary
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15505
+
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  isMatchAtCPBoundary
+  u_strFindFirst_64
+  icu_64::UnicodeString::indexOf
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/unicode-org/icu.git
+    introduced: 6e5755a2a833bc64852eae12967d0a54d7adf629
+    fixed: a7e378d58788962bd520052cf92ae5cc63be5d8f
+  versions:
+  - release-65-1
+  - release-65-rc
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15505
+modified: '2021-03-09T04:49:05.876744Z'
+created: '2020-07-01T00:00:08.369511Z'

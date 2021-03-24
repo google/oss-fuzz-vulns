@@ -1,0 +1,26 @@
+id: OSV-2018-227
+package:
+  name: librawspeed
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in rawspeed::TableLookUp::setTable
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=5256
+
+  Crash type: Heap-buffer-overflow WRITE 2
+  Crash state:
+  rawspeed::TableLookUp::setTable
+  rawspeed::RawImageData::setTable
+  rawspeed::DngDecoder::handleMetadata
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/darktable-org/rawspeed.git
+    introduced: f0e9f60474d98883ab9343f584b73ca046263679:52da2b8fda29aa257088d91fb11877f909d578a2
+    fixed: 212b7a8ea10acaaf722509e291ed1f59df8010df:dbe7591e54bad5e6430d38be6bed051582da76b9
+  versions:
+  - v3.1
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=5256
+modified: '2021-03-09T04:49:04.886185Z'
+created: '2021-01-13T00:01:34.025512Z'

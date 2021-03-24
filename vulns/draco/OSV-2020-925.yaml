@@ -1,0 +1,23 @@
+id: OSV-2020-925
+package:
+  name: draco
+  ecosystem: OSS-Fuzz
+summary: Global-buffer-overflow in draco::MeshEdgebreakerDecoderImpl<draco::MeshEdgebreakerTraversalValenceDecoder>
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23419
+
+  Crash type: Global-buffer-overflow READ 4
+  Crash state:
+  draco::MeshEdgebreakerDecoderImpl<draco::MeshEdgebreakerTraversalValenceDecoder>
+  draco::MeshEdgebreakerDecoderImpl<draco::MeshEdgebreakerTraversalValenceDecoder>
+  draco::MeshDecoder::DecodeGeometryData
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/google/draco
+    introduced: unknown:dec23f5ac6c71c2352dd6812afa799c03553fc58
+    fixed: 25484b31235d1a35fa72be6ce8d1f7f286b5c0bf
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23419
+modified: '2021-03-09T04:49:06.155648Z'
+created: '2020-07-22T00:00:10.590751Z'

@@ -1,0 +1,67 @@
+id: OSV-2020-629
+package:
+  name: wireshark
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in bytestring_to_str
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=19070
+
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  bytestring_to_str
+  dissect_NUMBER_acf_lin
+  call_dissector_work
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://gitlab.com/wireshark/wireshark.git
+    introduced: 22fd28940a87dc55294614cb15faed3cb82b4986
+    fixed: f17f1277607e5d745d889489f8da43b2a4e996a6
+  versions:
+  - v3.1.1
+  - v3.1.2rc0
+  - v3.2.0
+  - v3.2.0rc0
+  - v3.2.0rc1
+  - v3.2.0rc2
+  - v3.2.1
+  - v3.2.10
+  - v3.2.10rc0
+  - v3.2.11
+  - v3.2.11rc0
+  - v3.2.12rc0
+  - v3.2.1rc0
+  - v3.2.2
+  - v3.2.2rc0
+  - v3.2.3
+  - v3.2.3rc0
+  - v3.2.4
+  - v3.2.4rc0
+  - v3.2.5
+  - v3.2.5rc0
+  - v3.2.6
+  - v3.2.6rc0
+  - v3.2.7
+  - v3.2.7rc0
+  - v3.2.8
+  - v3.2.8rc0
+  - v3.2.9
+  - v3.2.9rc0
+  - v3.3.0rc0
+  - wireshark-3.2.0
+  - wireshark-3.2.1
+  - wireshark-3.2.10
+  - wireshark-3.2.11
+  - wireshark-3.2.2
+  - wireshark-3.2.3
+  - wireshark-3.2.4
+  - wireshark-3.2.5
+  - wireshark-3.2.6
+  - wireshark-3.2.7
+  - wireshark-3.2.8
+  - wireshark-3.2.9
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=19070
+modified: '2021-03-09T04:49:05.989453Z'
+created: '2020-07-01T00:00:21.373324Z'

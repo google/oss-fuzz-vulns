@@ -1,0 +1,27 @@
+id: OSV-2020-484
+package:
+  name: harfbuzz
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in AAT::KerxSubTableFormat4<AAT::KerxSubTableHeader>::driver_context_t::transition
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=12532
+
+  Crash type: Heap-buffer-overflow READ 4
+  Crash state:
+  AAT::KerxSubTableFormat4<AAT::KerxSubTableHeader>::driver_context_t::transition
+  void AAT::StateTableDriver<AAT::ExtendedTypes, AAT::KerxSubTableFormat4<AAT::Ker
+  AAT::KerxSubTableFormat4<AAT::KerxSubTableHeader>::apply
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/harfbuzz/harfbuzz.git
+    introduced: 4009a05ca7de21fff2176621597cd0cd01e9d80e
+    fixed: cc8e9a436fa408a1c63f4b9afb7643cea76a079c
+  versions:
+  - 2.2.0
+  - 2.3.0
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=12532
+modified: '2021-03-09T04:49:05.913312Z'
+created: '2020-07-01T00:00:12.297418Z'

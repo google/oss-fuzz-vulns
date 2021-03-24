@@ -1,0 +1,24 @@
+id: OSV-2021-414
+package:
+  name: uwebsockets
+  ecosystem: OSS-Fuzz
+summary: Heap-use-after-free in us_socket_close
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31047
+
+  Crash type: Heap-use-after-free READ 8
+  Crash state:
+  us_socket_close
+  __wrap_epoll_wait
+  us_loop_run
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/uNetworking/uWebSockets.git
+    introduced: 1ef15da77b591594b19a5a81f5c80fb3b34d089f
+    fixed: 5a3c7c03c59405d56ad4aeb6c12267039f5d17a1
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31047
+modified: '2021-03-04T00:08:40.443857Z'
+created: '2021-02-18T00:02:35.938517Z'

@@ -1,0 +1,23 @@
+id: OSV-2020-1204
+package:
+  name: pcapplusplus
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in pcpp::IPv4Layer::getSrcIpAddress
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22427
+
+  Crash type: Heap-buffer-overflow READ 4
+  Crash state:
+  pcpp::IPv4Layer::getSrcIpAddress
+  FuzzTarget.cpp
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/seladb/PcapPlusPlus
+    introduced: unknown:4366d2f86bf105025765a0ce3db6e647ba0f3508
+    fixed: d2dadc4e18dfd924490c529a058eb5276a2ab6c5
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22427
+modified: '2021-03-09T04:49:05.145296Z'
+created: '2020-07-22T21:49:56.253812Z'

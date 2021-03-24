@@ -1,0 +1,26 @@
+id: OSV-2020-1300
+package:
+  name: libhevc
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in ihevcd_parse_slice_data
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=17036
+
+  Crash type: Heap-buffer-overflow WRITE 1
+  Crash state:
+  ihevcd_parse_slice_data
+  ihevcd_decode
+  ihevcd_cxa_api_function
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://android.googlesource.com/platform/external/libhevc
+    introduced: unknown:5e7dc4732015717682ac0da1431fe3e656aea617
+    fixed: 60f9768c9e8488be9f5b5ba88ffe0a4528504a68
+  versions:
+  - platform-tools-29.0.5
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=17036
+modified: '2021-03-09T04:49:05.196993Z'
+created: '2020-07-22T21:50:04.218936Z'

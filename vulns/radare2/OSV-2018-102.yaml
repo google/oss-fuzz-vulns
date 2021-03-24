@@ -1,0 +1,24 @@
+id: OSV-2018-102
+package:
+  name: radare2
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in r_read_le32
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11303
+
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  r_read_le32
+  r_bin_file_get_strings
+  r_bin_object_set_items
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/radare/radare2
+    introduced: d8269a9e2bacbcfbd76fac63b461cea523460d7c
+    fixed: e3de9f0d4f9d6ed86cead11cdd0d6c339e0305e3
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11303
+modified: '2021-03-09T04:49:04.817625Z'
+created: '2021-01-13T00:00:44.549063Z'

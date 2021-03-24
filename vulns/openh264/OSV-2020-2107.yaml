@@ -1,0 +1,24 @@
+id: OSV-2020-2107
+package:
+  name: openh264
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in WelsDec::ParseIntra4x4Mode
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26723
+
+  Crash type: Heap-buffer-overflow WRITE 1
+  Crash state:
+  WelsDec::ParseIntra4x4Mode
+  WelsDec::WelsActualDecodeMbCavlcISlice
+  WelsDec::WelsDecodeMbCavlcISlice
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/cisco/openh264.git
+    introduced: 66ef706acd55b0b8daec32ca299d2586a1f473c9
+    fixed: b52786888ddce9d6bc06b7825ba9bffc65924e0c
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26723
+modified: '2021-02-25T00:08:08.112840Z'
+created: '2020-10-30T00:00:46.801962Z'

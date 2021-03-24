@@ -1,0 +1,24 @@
+id: OSV-2018-170
+package:
+  name: yara
+  ecosystem: OSS-Fuzz
+summary: Heap-use-after-free in yr_re_ast_split_at_chaining_point
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11752
+
+  Crash type: Heap-use-after-free READ 4
+  Crash state:
+  yr_re_ast_split_at_chaining_point
+  yr_parser_reduce_string_declaration
+  yara_yyparse
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/VirusTotal/yara.git
+    introduced: a2f8515212c35348bcd8d58eaf9853c139533f7c:459d5a2bae0f4c9a2921be0d21fe920258cb5d6d
+    fixed: 459d5a2bae0f4c9a2921be0d21fe920258cb5d6d:7a517b22dc2341f0aa9bca3ea834f239e8e56c64
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11752
+modified: '2021-03-09T04:49:04.853967Z'
+created: '2021-01-13T00:01:10.703574Z'

@@ -1,0 +1,27 @@
+id: OSV-2020-713
+package:
+  name: poppler
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in XRef::getEntry
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=12797
+
+  Crash type: Heap-buffer-overflow READ 4
+  Crash state:
+  XRef::getEntry
+  Parser::makeStream
+  Parser::getObj
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://anongit.freedesktop.org/git/poppler/poppler.git
+    introduced: 89fccf45fc5bfca3756102e6bec1950ec1d436a9
+    fixed: b54e1fc3e0d2600621a28d50f9f085b9e38619c2
+  versions:
+  - poppler-0.72.0
+  - poppler-0.73.0
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=12797
+modified: '2021-03-09T04:49:06.036949Z'
+created: '2020-07-01T00:00:26.302679Z'

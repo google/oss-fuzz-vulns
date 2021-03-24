@@ -1,0 +1,24 @@
+id: OSV-2020-10
+package:
+  name: ndpi
+  ecosystem: OSS-Fuzz
+summary: Heap-use-after-free in ndpi_workflow_process_packet
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20164
+
+  Crash type: Heap-use-after-free READ 2
+  Crash state:
+  ndpi_workflow_process_packet
+  fuzz_ndpi_reader.c
+  node_release
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/ntop/nDPI.git
+    introduced: 10738a0ca334104377e19a1e683bd13f2451a9e2
+    fixed: 83bbb4cb694d1f305258d4c4a5dc4174ef6526d1
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20164
+modified: '2021-03-09T04:49:05.035391Z'
+created: '2020-06-24T01:51:09.990023Z'

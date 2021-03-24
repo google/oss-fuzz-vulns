@@ -1,0 +1,26 @@
+id: OSV-2020-1171
+package:
+  name: quickjs
+  ecosystem: OSS-Fuzz
+summary: Heap-use-after-free in JS_ReadObjectRec
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21532
+
+  Crash type: Heap-use-after-free READ 4
+  Crash state:
+  JS_ReadObjectRec
+  JS_ReadObject
+  fuzz_compile.c
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/horhof/quickjs
+    introduced: unknown:5ae7ebbeecc4210e763ad76555571e3b31db6e24
+    fixed: 1bf1aba3af61529a282528c8c382b5f078cce63f
+  versions:
+  - '20200316'
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21532
+modified: '2021-03-09T04:49:05.127803Z'
+created: '2020-07-22T21:49:53.004112Z'

@@ -1,0 +1,46 @@
+id: OSV-2020-2242
+package:
+  name: fluent-bit
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in tinfl_decompress
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=28285
+
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  tinfl_decompress
+  mz_inflate
+  flb_gzip_uncompress
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/fluent/fluent-bit/
+    introduced: 7a588237fdb744e5825fb119753dcad2e8878866
+    fixed: 598745d7f7330c45df80a0bad7a8bae8d9e5cc32
+  - type: GIT
+    repo: https://github.com/fluent/fluent-bit/
+    introduced: 03ff96d82f5f51a8bea6981fc9d7e8c3429c50b1
+  versions:
+  - v1.6.10
+  - v1.6.4
+  - v1.6.5
+  - v1.6.6
+  - v1.6.7
+  - v1.6.8
+  - v1.6.9
+  - v1.7.0
+  - v1.7.0-rc1
+  - v1.7.0-rc2
+  - v1.7.0-rc3
+  - v1.7.0-rc4
+  - v1.7.0-rc5
+  - v1.7.0-rc6
+  - v1.7.0-rc7
+  - v1.7.0-rc8
+  - v1.7.0-rc9
+  - v1.7.1
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=28285
+modified: '2021-03-05T12:00:57.870212Z'
+created: '2020-12-05T00:00:50.659183Z'

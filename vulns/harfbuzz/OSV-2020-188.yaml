@@ -1,0 +1,24 @@
+id: OSV-2020-188
+package:
+  name: harfbuzz
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in BEInt<short, 2>::operator short
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20924
+
+  Crash type: Heap-buffer-overflow READ 2
+  Crash state:
+  BEInt<short, 2>::operator short
+  OT::IntType<short, 2u>::operator int
+  OT::TupleVarHeader::calculate_scalar
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/harfbuzz/harfbuzz.git
+    introduced: 5ad761b943721c3541d0ca0472f34f7d54b89b5b
+    fixed: 61208401f41f5d41f32d436cee500c630706f6be
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20924
+modified: '2021-03-09T04:49:05.489508Z'
+created: '2020-06-24T01:51:18.079088Z'

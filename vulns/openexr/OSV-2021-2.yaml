@@ -1,0 +1,24 @@
+id: OSV-2021-2
+package:
+  name: openexr
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in Imf_2_5::FastHufDecoder::decode
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29106
+
+  Crash type: Heap-buffer-overflow READ 2
+  Crash state:
+  Imf_2_5::FastHufDecoder::decode
+  Imf_2_5::hufUncompress
+  Imf_2_5::PizCompressor::uncompress
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/AcademySoftwareFoundation/openexr
+    introduced: 351705d0e4c7129eb8a8486bd7d89c2cd3000409
+    fixed: 1c0d8f7703da1555378bcf7357b9d2d898246d59
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29106
+modified: '2021-03-09T04:49:06.248442Z'
+created: '2021-01-01T00:00:05.623596Z'

@@ -1,0 +1,26 @@
+id: OSV-2018-19
+package:
+  name: librawspeed
+  ecosystem: OSS-Fuzz
+summary: Use-of-uninitialized-value in rawspeed::RawImageData::checkMemIsInitialized
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=6796
+
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  rawspeed::RawImageData::checkMemIsInitialized
+  rawspeed::RawDecoder::decodeRaw
+  rawspeed::alignedMalloc
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/darktable-org/rawspeed.git
+    introduced: a4bee717f1ce54a16526454f92c22f2b79c7a04f:90dbb09c639869fbb65ad9d7f073b3c22c541732
+    fixed: 688fa9d819177e917b0102e9ce4d5680952ebe55:98d3ec824f0b4e498b175fb937b4217319d01450
+  versions:
+  - v3.1
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=6796
+modified: '2021-03-09T04:49:04.864343Z'
+created: '2021-01-13T00:00:08.496128Z'

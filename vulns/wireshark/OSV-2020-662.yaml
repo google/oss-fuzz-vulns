@@ -1,0 +1,67 @@
+id: OSV-2020-662
+package:
+  name: wireshark
+  ecosystem: OSS-Fuzz
+summary: UNKNOWN READ in wmem_strdup_printf
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13725
+
+  Crash type: UNKNOWN READ
+  Crash state:
+  wmem_strdup_printf
+  dissect_parameter_sequence
+  dissect_rtps_submessage_v2
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://gitlab.com/wireshark/wireshark.git
+    introduced: bf2c6ad14765a7128aee040a48be8620a2aec166:7c943d35a29a2ef827dbbbef215d4a089601c0e8
+    fixed: a152753aa929deda21b797f93848c369a68b9465
+  versions:
+  - v3.0.1
+  - v3.0.10
+  - v3.0.10rc0
+  - v3.0.11
+  - v3.0.11rc0
+  - v3.0.12
+  - v3.0.12rc0
+  - v3.0.13
+  - v3.0.13rc0
+  - v3.0.14
+  - v3.0.14rc0
+  - v3.0.15rc0
+  - v3.0.2
+  - v3.0.2rc0
+  - v3.0.3
+  - v3.0.3rc0
+  - v3.0.4
+  - v3.0.4rc0
+  - v3.0.5
+  - v3.0.5rc0
+  - v3.0.6
+  - v3.0.6rc0
+  - v3.0.7
+  - v3.0.7rc0
+  - v3.0.8
+  - v3.0.8rc0
+  - v3.0.9
+  - v3.0.9rc0
+  - wireshark-3.0.1
+  - wireshark-3.0.10
+  - wireshark-3.0.11
+  - wireshark-3.0.12
+  - wireshark-3.0.13
+  - wireshark-3.0.14
+  - wireshark-3.0.2
+  - wireshark-3.0.3
+  - wireshark-3.0.4
+  - wireshark-3.0.5
+  - wireshark-3.0.6
+  - wireshark-3.0.7
+  - wireshark-3.0.8
+  - wireshark-3.0.9
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13725
+modified: '2021-03-09T04:49:06.009326Z'
+created: '2020-07-01T00:00:23.358358Z'

@@ -1,0 +1,23 @@
+id: OSV-2020-343
+package:
+  name: openthread
+  ecosystem: OSS-Fuzz
+summary: Stack-use-after-return in ot::MeshCoP::ChannelMaskEntryBase::GetChannelPage
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13741
+
+  Crash type: Stack-use-after-return READ 1
+  Crash state:
+  ot::MeshCoP::ChannelMaskEntryBase::GetChannelPage
+  ot::MeshCoP::ChannelMaskTlv::GetChannelMask
+  ot::MeshCoP::ChannelMaskTlv::GetChannelMask
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/openthread/openthread
+    introduced: 96725a985ed57a64721c61c4721e5792b44264c5
+    fixed: fab45352f5d6b2f516fed8a86c0d197bb7c27958
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13741
+modified: '2021-03-09T04:49:05.836080Z'
+created: '2020-07-01T00:00:04.277007Z'

@@ -1,0 +1,24 @@
+id: OSV-2020-354
+package:
+  name: openthread
+  ecosystem: OSS-Fuzz
+summary: UNKNOWN READ in ot::Ip6::NetifUnicastAddress::GetNext
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13409
+
+  Crash type: UNKNOWN READ
+  Crash state:
+  ot::Ip6::NetifUnicastAddress::GetNext
+  ot::Ip6::Netif::RemoveUnicastAddress
+  ot::Mle::Mle::SetStateDetached
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/openthread/openthread
+    introduced: 3eb5a106ffa6678e23c6bc244e843e264cae9b31
+    fixed: a3548df579617e737b075be4a88591e68195e115
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13409
+modified: '2021-03-09T04:49:05.841817Z'
+created: '2020-07-01T00:00:04.807199Z'

@@ -1,0 +1,26 @@
+id: OSV-2018-417
+package:
+  name: boost
+  ecosystem: OSS-Fuzz
+summary: UNKNOWN READ in boost::sub_match<std::__1::__wrap_iter<char const*> >::sub_match
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=9539
+
+  Crash type: UNKNOWN READ
+  Crash state:
+  boost::sub_match<std::__1::__wrap_iter<char const*> >::sub_match
+  _ZNSt3__16vectorIN5boost9sub_matchINS_11__wrap_iterIPKcEEEENS_9allocatorIS7_EEE1
+  boost::match_results<std::__1::__wrap_iter<char const*>, std::__1::allocator<boo
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/boostorg/boost.git
+    introduced: 0d460ebdda1122d8710fbb6477a02fb3723bd9e6:e6eb8ff4a420a6a9e72f3ad1da6c036fa480c48d
+    fixed: 812a820e234fd3cb1f857d16b6b5c51ed0b1201d
+  versions:
+  - boost-1.68.0
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=9539
+modified: '2021-03-09T04:49:04.984568Z'
+created: '2021-01-15T00:01:14.949558Z'

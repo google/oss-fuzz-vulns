@@ -1,0 +1,29 @@
+id: OSV-2020-1873
+package:
+  name: ghostscript
+  ecosystem: OSS-Fuzz
+summary: Use-of-uninitialized-value in zcheck_r6_password
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23440
+
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  zcheck_r6_password
+  interp
+  gs_call_interp
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: git://git.ghostscript.com/ghostpdl.git
+    introduced: unknown:668917a10e7eada030f7d2dddec9f579fddeed3d
+    fixed: 0339cbecea80d8a835b316b56d1c75a6fb850e52
+  versions:
+  - ghostpdl-9.52-test-base-3
+  - ghostpdl-9.52-test-base-4
+  - ghostpdl-9.52-test-base-5
+  - ghostpdl-9.52-test-base-6
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23440
+modified: '2021-03-09T04:49:05.485694Z'
+created: '2020-09-29T00:00:20.291651Z'

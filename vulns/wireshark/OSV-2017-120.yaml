@@ -1,0 +1,23 @@
+id: OSV-2017-120
+package:
+  name: wireshark
+  ecosystem: OSS-Fuzz
+summary: Global-buffer-overflow in csnStreamDissector
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=1571
+
+  Crash type: Global-buffer-overflow READ 2
+  Crash state:
+  csnStreamDissector
+  csnStreamDissector
+  csnStreamDissector
+affects:
+  ranges:
+  - type: GIT
+    repo: https://gitlab.com/wireshark/wireshark.git
+    introduced: ab504191fccdb7db1d9559ac0592f22872586133:954548fdb951cbffbfa3c7cadb2c202919c0204c
+    fixed: 544ebca89d6509b05ae689c53271a410b721af16:aa3bbe5aebdc180172e7956719b26199e4784fcc
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=1571
+modified: '2021-03-09T04:49:04.744570Z'
+created: '2021-01-15T00:00:02.160914Z'

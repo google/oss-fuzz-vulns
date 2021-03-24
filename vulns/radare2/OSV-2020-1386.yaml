@@ -1,0 +1,30 @@
+id: OSV-2020-1386
+package:
+  name: radare2
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in parse_relocation_info
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24400
+
+  Crash type: Heap-buffer-overflow READ 4
+  Crash state:
+  parse_relocation_info
+  get_relocs_64
+  relocs
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/radare/radare2
+    introduced: ee9025c9170c15dea5e68d4d5179d41e78868493
+  versions:
+  - 4.5.0
+  - 4.5.1
+  - 5.0.0
+  - 5.1.0
+  - 5.1.1
+  - release-5.0.0
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24400
+modified: '2021-03-09T05:00:13.749707Z'
+created: '2020-07-28T00:00:08.332887Z'

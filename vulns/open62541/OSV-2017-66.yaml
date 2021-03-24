@@ -1,0 +1,24 @@
+id: OSV-2017-66
+package:
+  name: open62541
+  ecosystem: OSS-Fuzz
+summary: UNKNOWN READ in cfree
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=4561
+
+  Crash type: UNKNOWN READ
+  Crash state:
+  cfree
+  copyAttributeIntoNode
+  UA_Server_editNode
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/open62541/open62541.git
+    introduced: c26c2e4a77f3b619eb80f264e61decab7746719f
+    fixed: 334e25a86d977e389fabe3006be3ff1a40c16ddb
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=4561
+modified: '2021-03-09T04:49:04.797187Z'
+created: '2021-01-13T21:56:32.213437Z'

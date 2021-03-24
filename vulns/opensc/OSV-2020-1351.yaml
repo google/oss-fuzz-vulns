@@ -1,0 +1,26 @@
+id: OSV-2020-1351
+package:
+  name: opensc
+  ecosystem: OSS-Fuzz
+summary: Heap-use-after-free in sc_pkcs15_free_object
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=17170
+
+  Crash type: Heap-use-after-free READ 4
+  Crash state:
+  sc_pkcs15_free_object
+  fuzz_pkcs15_decode.c
+  fuzz_pkcs15_decode.c
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/OpenSC/OpenSC
+    introduced: unknown:b0241eefa1b47f1420456f5dbc43564d59961a54
+    fixed: d965156fe61df9f892b1c0555198b7b37daff437
+  versions:
+  - 0.20.0-rc1
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=17170
+modified: '2021-03-09T04:49:05.224211Z'
+created: '2020-07-22T21:50:08.637276Z'

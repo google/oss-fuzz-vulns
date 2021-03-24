@@ -1,0 +1,24 @@
+id: OSV-2020-795
+package:
+  name: ndpi
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in ndpi_search_setup_iax
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23831
+
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  ndpi_search_setup_iax
+  ndpi_search_iax
+  check_ndpi_udp_flow_func
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/ntop/nDPI.git
+    introduced: 9dfd0d0071845779487b4e2e14c3599e18a74a8c
+    fixed: 05dfae6430d34d66ea8e43084f5c12a9f3a6dc5d
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23831
+modified: '2021-03-09T04:49:06.080921Z'
+created: '2020-07-14T05:37:37.217885Z'

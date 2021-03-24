@@ -1,0 +1,24 @@
+id: OSV-2021-229
+package:
+  name: htslib
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in cram_xpack_decode_init
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29827
+
+  Crash type: Heap-buffer-overflow WRITE 4
+  Crash state:
+  cram_xpack_decode_init
+  cram_decoder_init
+  cram_decode_compression_header
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/samtools/htslib.git
+    introduced: 96c64aa1f56fdb724565d7a56798515d27cbb1f9
+    fixed: 40afaaa5bf7e3f9cd6d6d9d9d8ae26496df82aea
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29827
+modified: '2021-02-27T12:00:50.372429Z'
+created: '2021-01-24T00:00:18.032169Z'

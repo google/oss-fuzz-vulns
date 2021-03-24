@@ -1,0 +1,23 @@
+id: OSV-2020-1591
+package:
+  name: freetype2
+  ecosystem: OSS-Fuzz
+summary: UNKNOWN READ in ft_smooth_overlap_spans
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24729
+
+  Crash type: UNKNOWN READ
+  Crash state:
+  ft_smooth_overlap_spans
+  gray_sweep
+  gray_convert_glyph
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/freetype/freetype2-testing.git
+    fixed: 1a5069b66d4065abaffee80106aa2af555cbed8b
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24729
+modified: '2021-03-09T04:49:05.345166Z'
+created: '2020-08-08T00:00:13.898741Z'

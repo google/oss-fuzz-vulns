@@ -1,0 +1,30 @@
+id: OSV-2018-79
+package:
+  name: glib
+  ecosystem: OSS-Fuzz
+summary: Use-of-uninitialized-value in g_dbus_message_new_from_blob
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=9825
+
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  g_dbus_message_new_from_blob
+  fuzz_dbus_message.c
+  g_dbus_message_new_from_blob
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://gitlab.gnome.org/GNOME/glib
+    introduced: 8defa46e6ec16aa3722aa0ac0bc3db0fecd86c45:0d271223d894e9c69b7fa6b7983511f8ad770682
+    fixed: d192a078c876107652e535e3e74b90e387d51a0f
+  versions:
+  - 2.57.3
+  - 2.58.0
+  - 2.58.1
+  - 2.58.2
+  - 2.58.3
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=9825
+modified: '2021-03-09T04:49:05.024046Z'
+created: '2021-01-13T00:00:38.105623Z'

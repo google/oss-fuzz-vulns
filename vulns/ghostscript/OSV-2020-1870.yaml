@@ -1,0 +1,29 @@
+id: OSV-2020-1870
+package:
+  name: ghostscript
+  ecosystem: OSS-Fuzz
+summary: Use-of-uninitialized-value in get_fapi_glyph_data
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22752
+
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  get_fapi_glyph_data
+  load_truetype_glyph
+  TT_Load_Glyph
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: git://git.ghostscript.com/ghostpdl.git
+    introduced: unknown:668917a10e7eada030f7d2dddec9f579fddeed3d
+    fixed: 0ae681ab1fd3475995418d00da1ccfe374f069cc
+  versions:
+  - ghostpdl-9.52-test-base-3
+  - ghostpdl-9.52-test-base-4
+  - ghostpdl-9.52-test-base-5
+  - ghostpdl-9.52-test-base-6
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22752
+modified: '2021-03-09T04:49:05.483893Z'
+created: '2020-09-29T00:00:14.014972Z'

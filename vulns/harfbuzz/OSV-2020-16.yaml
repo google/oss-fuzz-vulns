@@ -1,0 +1,24 @@
+id: OSV-2020-16
+package:
+  name: harfbuzz
+  ecosystem: OSS-Fuzz
+summary: Heap-use-after-free in BEInt<unsigned short, 2>::operator unsigned short
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20906
+
+  Crash type: Heap-use-after-free READ 2
+  Crash state:
+  BEInt<unsigned short, 2>::operator unsigned short
+  OT::IntType<unsigned short, 2u>::operator unsigned int
+  OT::GlyphVarData::has_data
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/harfbuzz/harfbuzz.git
+    introduced: 5ad761b943721c3541d0ca0472f34f7d54b89b5b
+    fixed: 8eba66c1c6d19bcc779a3b4e7b68251511986ee8
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20906
+modified: '2021-03-09T04:49:05.349433Z'
+created: '2020-06-24T01:51:10.290066Z'

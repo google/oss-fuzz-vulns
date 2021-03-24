@@ -1,0 +1,24 @@
+id: OSV-2020-722
+package:
+  name: radare2
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in r_buf_read
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15218
+
+  Crash type: Heap-buffer-overflow WRITE {*}
+  Crash state:
+  r_buf_read
+  parse_function_starts
+  init_items
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/radare/radare2
+    introduced: 66f7403245c923c192019ef0219f67b9928b39da
+    fixed: 2ec8d3c9f2103c7da8bcb7d864db000b9e93a05a
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15218
+modified: '2021-03-09T04:49:06.041686Z'
+created: '2020-07-01T00:00:26.690009Z'

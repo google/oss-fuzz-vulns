@@ -1,0 +1,23 @@
+id: OSV-2020-1136
+package:
+  name: libressl
+  ecosystem: OSS-Fuzz
+summary: Global-buffer-overflow in ssl_sigalg
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13797
+
+  Crash type: Global-buffer-overflow READ 2
+  Crash state:
+  ssl_sigalg
+  tls1_process_sigalgs
+  tlsext_sigalgs_server_parse
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/libressl-portable/portable.git
+    introduced: unknown:4ea2a01a0d2cc889e95316f51c7a36f8f158df44
+    fixed: 4ea2a01a0d2cc889e95316f51c7a36f8f158df44:4b6c7bfd02dec26021882f1599dbcbccdd4d2889
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13797
+modified: '2021-03-09T04:49:05.108689Z'
+created: '2020-07-22T21:49:49.841110Z'

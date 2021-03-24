@@ -1,0 +1,23 @@
+id: OSV-2020-2253
+package:
+  name: glib
+  ecosystem: OSS-Fuzz
+summary: Global-buffer-overflow in g_date_time_get_ymd
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=28477
+
+  Crash type: Global-buffer-overflow READ 2
+  Crash state:
+  g_date_time_get_ymd
+  g_date_time_get_year
+  g_date_time_format_utf8
+affects:
+  ranges:
+  - type: GIT
+    repo: https://gitlab.gnome.org/GNOME/glib
+    introduced: ec330e50cf0ea3a003290d874f803892cfd64290
+    fixed: c3805d74ba4c46aacf9470646fdecdcba68e11d0
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=28477
+modified: '2021-03-09T04:49:05.745643Z'
+created: '2020-12-10T00:00:08.953434Z'

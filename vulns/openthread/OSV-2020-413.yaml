@@ -1,0 +1,24 @@
+id: OSV-2020-413
+package:
+  name: openthread
+  ecosystem: OSS-Fuzz
+summary: Stack-buffer-overflow in ot::NetworkData::NetworkDataTlv::GetNext
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14401
+
+  Crash type: Stack-buffer-overflow READ 1
+  Crash state:
+  ot::NetworkData::NetworkDataTlv::GetNext
+  ot::NetworkData::Leader::IsStableUpdated
+  ot::NetworkData::Leader::RegisterNetworkData
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/openthread/openthread
+    introduced: ecad71733d0a87c702e75fa8cdbae781ca70b37d
+    fixed: c972c5cb936ef1f640ab90fbe03e7f2631dbcb18
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14401
+modified: '2021-03-09T04:49:05.874362Z'
+created: '2020-07-01T00:00:08.114688Z'

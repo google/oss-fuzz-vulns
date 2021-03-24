@@ -1,0 +1,32 @@
+id: OSV-2018-204
+package:
+  name: unrar
+  ecosystem: OSS-Fuzz
+summary: UNKNOWN WRITE in __msan_memcpy.part.51
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=9845
+
+  Crash type: UNKNOWN WRITE
+  Crash state:
+  __msan_memcpy.part.51
+  QuickOpen::ReadRaw
+  QuickOpen::ReadNext
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/aawc/unrar.git
+    introduced: 9866c9649507f177233ca96feefac8b12e36a91f:b676eae90fc9c620a214889ed040d356638a18f6
+  versions:
+  - 5.6.1.7
+  - 5.6.1.8
+  - 5.6.1.8.1
+  - 5.6.8
+  - v5.7.1
+  - v5.7.3
+  - v5.7.4
+  - v6.0.3
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=9845
+modified: '2021-03-09T04:51:17.075144Z'
+created: '2021-01-13T00:01:23.035709Z'

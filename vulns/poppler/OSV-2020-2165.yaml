@@ -1,0 +1,49 @@
+id: OSV-2020-2165
+package:
+  name: poppler
+  ecosystem: OSS-Fuzz
+summary: Use-of-uninitialized-value in isSameGfxColor
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=27523
+
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  isSameGfxColor
+  Gfx::doAxialShFill
+  Gfx::opShFill
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://anongit.freedesktop.org/git/poppler/poppler.git
+    introduced: f2493d53a70e10ea69bd147c48be7c8544979436
+    fixed: 72e7e1e826f64d72a2a47e1abd8bccceff5e0a67
+  versions:
+  - poppler-0.74.0
+  - poppler-0.75.0
+  - poppler-0.76.0
+  - poppler-0.76.1
+  - poppler-0.77.0
+  - poppler-0.78.0
+  - poppler-0.79.0
+  - poppler-0.80.0
+  - poppler-0.81.0
+  - poppler-0.82.0
+  - poppler-0.83.0
+  - poppler-0.84.0
+  - poppler-0.85.0
+  - poppler-0.86.0
+  - poppler-0.86.1
+  - poppler-0.87.0
+  - poppler-0.88.0
+  - poppler-0.89.0
+  - poppler-0.90.0
+  - poppler-0.90.1
+  - poppler-20.08.0
+  - poppler-20.09.0
+  - poppler-20.10.0
+  - poppler-20.11.0
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=27523
+modified: '2021-03-09T04:49:05.695381Z'
+created: '2020-11-17T00:00:57.103948Z'

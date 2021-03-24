@@ -1,0 +1,24 @@
+id: OSV-2020-2068
+package:
+  name: openh264
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in WelsDec::Update8x8RefIdx
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26328
+
+  Crash type: Heap-buffer-overflow WRITE 1
+  Crash state:
+  WelsDec::Update8x8RefIdx
+  WelsDec::ParseInterBMotionInfoCabac
+  WelsDec::WelsDecodeMbCabacBSliceBaseMode0
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/cisco/openh264.git
+    introduced: 66ef706acd55b0b8daec32ca299d2586a1f473c9
+    fixed: b52786888ddce9d6bc06b7825ba9bffc65924e0c
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26328
+modified: '2021-02-25T00:08:08.364696Z'
+created: '2020-10-15T00:00:09.751849Z'

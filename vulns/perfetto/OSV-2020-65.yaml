@@ -1,0 +1,27 @@
+id: OSV-2020-65
+package:
+  name: perfetto
+  ecosystem: OSS-Fuzz
+summary: Heap-use-after-free in std::__1::vector<unsigned long, std::__1::allocator<unsigned
+  long> >::begin
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21908
+
+  Crash type: Heap-use-after-free READ 8
+  Crash state:
+  std::__1::vector<unsigned long, std::__1::allocator<unsigned long> >::begin
+  perfetto::trace_processor::TrackTracker::ResolveDescriptorTrack
+  perfetto::trace_processor::TrackTracker::GetDescriptorTrackImpl
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://android.googlesource.com/platform/external/perfetto/
+    introduced: e5a041472ebe8e99532d0dfdcc8970bf4714ee19
+    fixed: 0df72fe5d206a73023cc970840869021e249f647
+  versions:
+  - platform-tools-30.0.1
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21908
+modified: '2021-03-09T04:49:06.000614Z'
+created: '2020-06-24T01:51:12.508705Z'

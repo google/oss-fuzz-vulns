@@ -1,0 +1,24 @@
+id: OSV-2018-55
+package:
+  name: openthread
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in ot::MeshForwarder::GetFramePriority
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11376
+
+  Crash type: Heap-buffer-overflow READ 8
+  Crash state:
+  ot::MeshForwarder::GetFramePriority
+  ot::MeshForwarder::HandleFragment
+  ot::MeshForwarder::HandleReceivedFrame
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/openthread/openthread
+    introduced: 4693638f77f3e249b518580845bcd7503a2d702f
+    fixed: bf72fd8f8d4a898c019f279c8605e66fc0b42878
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11376
+modified: '2021-03-09T04:49:05.011314Z'
+created: '2021-01-13T00:00:29.118912Z'

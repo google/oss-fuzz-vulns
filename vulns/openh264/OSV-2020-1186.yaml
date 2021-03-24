@@ -1,0 +1,24 @@
+id: OSV-2020-1186
+package:
+  name: openh264
+  ecosystem: OSS-Fuzz
+summary: Index-out-of-bounds in WelsDec::DecodeCurrentAccessUnit
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=12668
+
+  Crash type: Index-out-of-bounds
+  Crash state:
+  WelsDec::DecodeCurrentAccessUnit
+  WelsDec::ConstructAccessUnit
+  WelsDecodeBs
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/cisco/openh264.git
+    introduced: unknown:70eeb783515dbfee3e0c781d6667838caba5113b
+    fixed: c330a667169069c56928bfe4f8b87fe5779976c4:d8cb746954c9052a428ba30207e2f2d1a08c238d
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=12668
+modified: '2021-03-09T04:49:05.135394Z'
+created: '2020-07-22T21:49:54.494323Z'

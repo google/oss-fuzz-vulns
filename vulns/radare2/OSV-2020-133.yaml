@@ -1,0 +1,26 @@
+id: OSV-2020-133
+package:
+  name: radare2
+  ecosystem: OSS-Fuzz
+summary: Heap-use-after-free in r_bin_object_rebuild_classes_ht
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21602
+
+  Crash type: Heap-use-after-free READ 8
+  Crash state:
+  r_bin_object_rebuild_classes_ht
+  r_bin_object_set_items
+  r_bin_object_new
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/radare/radare2
+    introduced: 961d5007a99fdf025e8ec819ec050f843230f54c
+    fixed: 498292a70d65073a7bf1a36e3997debe8f1f0792
+  versions:
+  - 4.4.0
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21602
+modified: '2021-03-09T04:49:05.212887Z'
+created: '2020-06-24T01:51:15.618979Z'

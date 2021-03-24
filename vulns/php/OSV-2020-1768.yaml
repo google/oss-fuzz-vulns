@@ -1,0 +1,24 @@
+id: OSV-2020-1768
+package:
+  name: php
+  ecosystem: OSS-Fuzz
+summary: Memcpy-param-overlap in zend_lex_tstring
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23547
+
+  Crash type: Memcpy-param-overlap
+  Crash state:
+  zend_lex_tstring
+  zendparse
+  zend_compile
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/php/php-src.git
+    introduced: b03cafd19c01db57b89727ce77cc89a7d816077c
+    fixed: aa2e68cf6e4adcaaf884ea6b17f182e3be552fa7
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23547
+modified: '2021-03-09T04:49:05.430995Z'
+created: '2020-09-16T00:00:23.588932Z'

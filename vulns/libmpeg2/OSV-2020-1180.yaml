@@ -1,0 +1,37 @@
+id: OSV-2020-1180
+package:
+  name: libmpeg2
+  ecosystem: OSS-Fuzz
+summary: UNKNOWN WRITE in ideint_process
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18993
+
+  Crash type: UNKNOWN WRITE
+  Crash state:
+  ideint_process
+  impeg2d_deinterlace
+  impeg2d_dec_pic_data_thread
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://android.googlesource.com/platform/external/libmpeg2
+    introduced: unknown:2caf20ff25c090341965cc88b7f31f129e806a3a
+    fixed: 6f28264c1170fae4f6c847625f4a6d4467a3262b
+  versions:
+  - android-mainline-10.0.0_r6
+  - android-mainline-10.0.0_r8
+  - android-r-preview-1
+  - android-r-preview-2
+  - android-r-preview-3
+  - android-r-preview-4
+  - platform-tools-29.0.5
+  - platform-tools-29.0.6
+  - platform-tools-30.0.0
+  - platform-tools-30.0.1
+  - platform-tools-30.0.2
+  - platform-tools-30.0.3
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18993
+modified: '2021-03-09T04:49:05.132539Z'
+created: '2020-07-22T21:49:54.155583Z'

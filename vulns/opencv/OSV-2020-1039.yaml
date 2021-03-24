@@ -1,0 +1,27 @@
+id: OSV-2020-1039
+package:
+  name: opencv
+  ecosystem: OSS-Fuzz
+summary: UNKNOWN WRITE in putgreytile
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13283
+
+  Crash type: UNKNOWN WRITE
+  Crash state:
+  putgreytile
+  gtStripContig
+  TIFFReadRGBAStripExt
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/opencv/opencv.git
+    introduced: unknown:6bcf0b5519c190826cf0f21efd87cbe256eabc48
+    fixed: c9fc27b33731a6dcebf531ff15a0658e4c679482
+  versions:
+  - 4.0.1
+  - 4.1.0-openvino
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13283
+modified: '2021-03-09T04:49:05.056383Z'
+created: '2020-07-22T21:49:41.614766Z'

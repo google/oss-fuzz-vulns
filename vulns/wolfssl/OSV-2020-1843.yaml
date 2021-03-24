@@ -1,0 +1,24 @@
+id: OSV-2020-1843
+package:
+  name: wolfssl
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in SendUserAuthPkOk
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25926
+
+  Crash type: Heap-buffer-overflow READ {*}
+  Crash state:
+  SendUserAuthPkOk
+  DoUserAuthRequestPublicKey
+  DoUserAuthRequest
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/wolfssl/wolfssl
+    introduced: deaf3b4b40d26663191d085557fbeb8cafa420ae:881657782478cef4a1527847bb2c4cd427bd6c99
+    fixed: 84ee1509b736cac51bd1b2f13fb7e86505b0735a:4f6c1db9a2ae47cfe488e7443ce54b7e2a815261
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25926
+modified: '2021-03-09T04:49:05.469704Z'
+created: '2020-09-26T00:00:06.428089Z'

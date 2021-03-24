@@ -1,0 +1,24 @@
+id: OSV-2020-319
+package:
+  name: libaom
+  ecosystem: OSS-Fuzz
+summary: Use-of-uninitialized-value in inv_txfm2d_add_facade
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=12552
+
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  inv_txfm2d_add_facade
+  av1_inv_txfm2d_add_64x64_c
+  av1_inverse_transform_block
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://aomedia.googlesource.com/aom
+    introduced: 2fd0077fe14aa1b6dbcd30f3acc95c5eba5c76bb
+    fixed: b46542180d551d5e4eb666cf35dd62395ba43f3e
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=12552
+modified: '2021-03-09T04:49:05.823044Z'
+created: '2020-07-01T00:00:02.248791Z'

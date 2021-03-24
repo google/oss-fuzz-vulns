@@ -1,0 +1,24 @@
+id: OSV-2017-41
+package:
+  name: libpng
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in OSS_FUZZ_png_combine_row
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=3606
+
+  Crash type: Heap-buffer-overflow WRITE 4
+  Crash state:
+  OSS_FUZZ_png_combine_row
+  OSS_FUZZ_png_read_row
+  _start
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/glennrp/libpng.git
+    introduced: ab791fc9d69580c1982af726c9f61b533357234f
+    fixed: a3d1057a735d923626f1f6bdc0f662a13d0cba6f
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=3606
+modified: '2021-03-09T04:49:04.783918Z'
+created: '2021-01-13T21:56:05.092063Z'

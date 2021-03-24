@@ -1,0 +1,27 @@
+id: OSV-2020-1069
+package:
+  name: opencv
+  ecosystem: OSS-Fuzz
+summary: Use-of-uninitialized-value in inflate
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13289
+
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  inflate
+  ZIPDecode
+  _TIFFReadEncodedTileAndAllocBuffer
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/opencv/opencv.git
+    introduced: unknown:6bcf0b5519c190826cf0f21efd87cbe256eabc48
+    fixed: 7442100caaa9e6dafce320aeb0afcf86e8aea11c:360758e8ae5ebaf94c62f739d37892eae4222df4
+  versions:
+  - 4.0.1
+  - 4.1.0-openvino
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13289
+modified: '2021-03-09T04:49:05.072194Z'
+created: '2020-07-22T21:49:44.756180Z'

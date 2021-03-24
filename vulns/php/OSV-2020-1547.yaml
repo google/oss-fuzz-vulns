@@ -1,0 +1,24 @@
+id: OSV-2020-1547
+package:
+  name: php
+  ecosystem: OSS-Fuzz
+summary: Heap-use-after-free in destroy_op_array
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24436
+
+  Crash type: Heap-use-after-free READ 4
+  Crash state:
+  destroy_op_array
+  fuzzer_do_request
+  fuzzer_do_request_from_buffer
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/php/php-src.git
+    introduced: 9bf119832dbf625174794834c71b1e793450d87f
+    fixed: 44ad2db15fe786b07ce793624885e0c43e0af897
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24436
+modified: '2021-03-09T04:49:05.322586Z'
+created: '2020-07-30T00:00:22.757167Z'

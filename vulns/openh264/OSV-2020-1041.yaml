@@ -1,0 +1,24 @@
+id: OSV-2020-1041
+package:
+  name: openh264
+  ecosystem: OSS-Fuzz
+summary: Use-of-uninitialized-value in McCopyWidthEq16_c
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13005
+
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  McCopyWidthEq16_c
+  WelsDec::BaseMC
+  WelsDec::GetInterPred
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/cisco/openh264.git
+    introduced: unknown:70eeb783515dbfee3e0c781d6667838caba5113b
+    fixed: c81d7f67583ce92664147110e8d7cd36b17a272c:be82ccf42fc044ae1ea0792837a9415eaf535002
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13005
+modified: '2021-03-09T04:49:05.057834Z'
+created: '2020-07-22T21:49:41.832579Z'

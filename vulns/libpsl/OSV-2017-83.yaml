@@ -1,0 +1,24 @@
+id: OSV-2017-83
+package:
+  name: libpsl
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in idn2_lookup_u8
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=2262
+
+  Crash type: Heap-buffer-overflow READ 4
+  Crash state:
+  idn2_lookup_u8
+  _psl_idna_toASCII
+  _add_punycode_if_needed
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/rockdaboot/libpsl.git
+    introduced: 666c07b36418334435077f04583c37a45a8f6722
+    fixed: fa69455d0748ae3c3318a5e2b9860ac9bb80485d:0cbb7089f60931870d19c9fc323fa0cccafd8907
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=2262
+modified: '2021-03-09T04:49:04.806863Z'
+created: '2021-01-13T21:57:36.312189Z'

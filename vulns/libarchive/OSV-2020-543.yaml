@@ -1,0 +1,24 @@
+id: OSV-2020-543
+package:
+  name: libarchive
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in circular_memcpy
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14574
+
+  Crash type: Heap-buffer-overflow READ 8
+  Crash state:
+  circular_memcpy
+  run_arm_filter
+  run_filter
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/libarchive/libarchive.git
+    introduced: b52dd6c9e4ef7cf95c2a6ae5ab7ccac7f6d462a1
+    fixed: 9950d89616d31fe2d83f5134d357560c423794ee
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14574
+modified: '2021-03-09T04:49:05.944658Z'
+created: '2020-07-01T00:00:15.879739Z'

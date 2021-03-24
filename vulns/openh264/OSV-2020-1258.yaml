@@ -1,0 +1,24 @@
+id: OSV-2020-1258
+package:
+  name: openh264
+  ecosystem: OSS-Fuzz
+summary: Heap-use-after-free in WelsDec::MapColToList0
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13457
+
+  Crash type: Heap-use-after-free READ 4
+  Crash state:
+  WelsDec::MapColToList0
+  WelsDec::PredBDirectTemporal
+  WelsDec::ParseInterBMotionInfoCabac
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/cisco/openh264.git
+    introduced: unknown:70eeb783515dbfee3e0c781d6667838caba5113b
+    fixed: f8687facbba0b1cf6aa786c5cf7e7685e07bf624
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13457
+modified: '2021-03-09T04:49:05.173845Z'
+created: '2020-07-22T21:50:00.916036Z'

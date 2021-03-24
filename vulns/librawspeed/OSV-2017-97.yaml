@@ -1,0 +1,24 @@
+id: OSV-2017-97
+package:
+  name: librawspeed
+  ecosystem: OSS-Fuzz
+summary: Use-after-poison in rawspeed::unroll_loop_t<void rawspeed::LJpegDecompressor::decodeN<4>
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=4451
+
+  Crash type: Use-after-poison WRITE 2
+  Crash state:
+  rawspeed::unroll_loop_t<void rawspeed::LJpegDecompressor::decodeN<4>
+  void rawspeed::LJpegDecompressor::decodeN<4>
+  rawspeed::AbstractLJpegDecompressor::decode
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/darktable-org/rawspeed.git
+    introduced: 45e6fd6c608326ae7df6419c62cc8db6a2f15281
+    fixed: 297ccdd0e7dfd378aeb2a3896987baa5d96ed344:580add2219c696e425087bc61b952f4ccb295f09
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=4451
+modified: '2021-03-09T04:49:04.814174Z'
+created: '2021-01-13T21:57:40.779998Z'

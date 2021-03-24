@@ -1,0 +1,23 @@
+id: OSV-2021-315
+package:
+  name: serenity
+  ecosystem: OSS-Fuzz
+summary: Global-buffer-overflow in Gfx::decode_frame
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30507
+
+  Crash type: Global-buffer-overflow READ 4
+  Crash state:
+  Gfx::decode_frame
+  Gfx::GIFImageDecoderPlugin::frame
+  Gfx::GIFImageDecoderPlugin::bitmap
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/SerenityOS/serenity
+    introduced: 57e10eadac01273cc4c0bcb681aa9381cacef0b3
+    fixed: ce5fe2a6e807b819866b4f429ca6f7a2d74445b7
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30507
+modified: '2021-02-28T00:06:18.636502Z'
+created: '2021-02-08T00:00:57.447823Z'

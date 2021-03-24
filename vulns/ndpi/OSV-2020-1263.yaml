@@ -1,0 +1,24 @@
+id: OSV-2020-1263
+package:
+  name: ndpi
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in getSSCertificateFingerprint
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18733
+
+  Crash type: Heap-buffer-overflow READ 2
+  Crash state:
+  getSSCertificateFingerprint
+  tlsDetectProtocolFromCertificate
+  ndpi_search_tls_tcp_udp
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/ntop/nDPI.git
+    introduced: unknown:e695dd6eade754b2d50bdf297ca8bdc4105f93ff
+    fixed: 226a9abf2235fd9e87353ffe727babad71fb7274
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18733
+modified: '2021-03-09T04:49:05.176647Z'
+created: '2020-07-22T21:50:01.471193Z'

@@ -1,0 +1,24 @@
+id: OSV-2020-607
+package:
+  name: openh264
+  ecosystem: OSS-Fuzz
+summary: UNKNOWN READ in WelsDec::CWelsDecoder::DecodeFrame2WithCtx
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18864
+
+  Crash type: UNKNOWN READ
+  Crash state:
+  WelsDec::CWelsDecoder::DecodeFrame2WithCtx
+  WelsDec::CWelsDecoder::DecodeFrame2
+  WelsDec::CWelsDecoder::DecodeFrameNoDelay
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/cisco/openh264.git
+    introduced: 2091de60c6a235a3236475d2208139f6a8862f48
+    fixed: e3b90efed243779b5c4961c2f9d6f1cedfeb1f46
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18864
+modified: '2021-03-09T04:49:05.978066Z'
+created: '2020-07-01T00:00:20.087273Z'

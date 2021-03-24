@@ -1,0 +1,24 @@
+id: OSV-2020-122
+package:
+  name: ndpi
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in ndpi_strnstr
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22022
+
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  ndpi_strnstr
+  ndpi_search_nats_tcp
+  check_ndpi_tcp_flow_func
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/ntop/nDPI.git
+    introduced: 4148c5e065d32128eea17c0e228e372ad72eef82
+    fixed: db16a987c57c2fa097b5efabb66cef16caeddb03
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22022
+modified: '2021-03-09T04:49:05.153216Z'
+created: '2020-06-24T01:51:15.062488Z'

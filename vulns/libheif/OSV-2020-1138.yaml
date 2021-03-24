@@ -1,0 +1,27 @@
+id: OSV-2020-1138
+package:
+  name: libheif
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in void apply_sao_internal<unsigned short>
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14184
+
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  void apply_sao_internal<unsigned short>
+  void apply_sao<unsigned char>
+  thread_task_sao::work
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/strukturag/libheif.git
+    introduced: unknown:0acdca433f338f1f378f6f104e72f5f95c4f8568
+    fixed: 12b68bbeadb3ea56415b2f656b471f122d72dc80
+  versions:
+  - v1.5.0
+  - v1.5.1
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14184
+modified: '2021-03-09T04:49:05.109643Z'
+created: '2020-07-22T21:49:50.071384Z'

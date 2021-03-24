@@ -1,0 +1,26 @@
+id: OSV-2020-1117
+package:
+  name: arrow
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in arrow::internal::CountSetBits
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20575
+
+  Crash type: Heap-buffer-overflow READ 8
+  Crash state:
+  arrow::internal::CountSetBits
+  arrow::Array::null_count
+  arrow::internal::ValidateArray
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/apache/arrow.git
+    introduced: unknown:ccdc4b076cbd5fb03e1cbc42292def871d2b6035
+    fixed: 3bc01ec94eb2e310b28402a35196e1e8c5c9aec8
+  versions:
+  - apache-arrow-0.16.0
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20575
+modified: '2021-03-09T04:49:05.098698Z'
+created: '2020-07-22T21:49:48.392014Z'

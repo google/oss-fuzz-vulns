@@ -1,0 +1,24 @@
+id: OSV-2020-1152
+package:
+  name: pcapplusplus
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in pcpp::tbp_my_own_strnlen
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22483
+
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  pcpp::tbp_my_own_strnlen
+  pcpp::HeaderField::HeaderField
+  pcpp::TextBasedProtocolMessage::parseFields
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/seladb/PcapPlusPlus
+    introduced: unknown:4366d2f86bf105025765a0ce3db6e647ba0f3508
+    fixed: af9c97f1356654fc896a30194330f38e6b613d08
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22483
+modified: '2021-03-09T04:49:05.117321Z'
+created: '2020-07-22T21:49:51.614814Z'

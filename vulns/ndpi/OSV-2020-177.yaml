@@ -1,0 +1,24 @@
+id: OSV-2020-177
+package:
+  name: ndpi
+  ecosystem: OSS-Fuzz
+summary: UNKNOWN in get_ndpi_flow_info6
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20747
+
+  Crash type: UNKNOWN
+  Crash state:
+  get_ndpi_flow_info6
+  packet_processing
+  ndpi_workflow_process_packet
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/ntop/nDPI.git
+    introduced: 812505b56bb4508bc42e1615d6425ad26444d3f8
+    fixed: 90e08b3568d8963a459cf06c4e67ff6fc99298e3
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20747
+modified: '2021-03-09T04:49:05.431915Z'
+created: '2020-06-24T01:51:17.542041Z'

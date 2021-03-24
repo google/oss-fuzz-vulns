@@ -1,0 +1,32 @@
+id: OSV-2020-846
+package:
+  name: wabt
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in std::__1::char_traits<char>::compare
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22358
+
+  Crash type: Heap-buffer-overflow READ 6
+  Crash state:
+  std::__1::char_traits<char>::compare
+  wabt::string_view::compare
+  wabt::operator==
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/WebAssembly/wabt
+    introduced: a5a9b341b7fb7aa66427d4701871d2b3c73bcc87:d087e702d520207871ae82c58461fb08d58af187
+    fixed: 09ac53e41d959ce8e14e703e627327971e67f6d3
+  versions:
+  - 1.0.16
+  - 1.0.17
+  - 1.0.18
+  - 1.0.19
+  - 1.0.20
+  - gh-actions-test
+  - gh-actions-test2
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22358
+modified: '2021-03-09T04:49:06.108990Z'
+created: '2020-07-14T22:13:43.983088Z'

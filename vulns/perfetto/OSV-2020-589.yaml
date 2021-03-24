@@ -1,0 +1,24 @@
+id: OSV-2020-589
+package:
+  name: perfetto
+  ecosystem: OSS-Fuzz
+summary: UNKNOWN WRITE in perfetto::trace_processor::ProtoTraceParser::ParsePowerRails
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14018
+
+  Crash type: UNKNOWN WRITE
+  Crash state:
+  perfetto::trace_processor::ProtoTraceParser::ParsePowerRails
+  perfetto::trace_processor::ProtoTraceParser::ParseTracePacket
+  perfetto::trace_processor::TraceSorter::SortAndExtractEventsBeyondWindow
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://android.googlesource.com/platform/external/perfetto/
+    introduced: 24701bca34a94149c4e36e3a8975d2baffd64b6d
+    fixed: fbd7bc474766673cde8b4a87bf76e82049e23f05
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14018
+modified: '2021-03-09T04:49:05.968283Z'
+created: '2020-07-01T00:00:18.769178Z'

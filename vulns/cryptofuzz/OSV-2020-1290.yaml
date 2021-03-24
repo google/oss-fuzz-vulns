@@ -1,0 +1,23 @@
+id: OSV-2020-1290
+package:
+  name: cryptofuzz
+  ecosystem: OSS-Fuzz
+summary: Bad-free in aes_gcm_cleanup
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14333
+
+  Crash type: Bad-free
+  Crash state:
+  aes_gcm_cleanup
+  EVP_CIPHER_CTX_free
+  cryptofuzz::module::CTX_Copier<evp_cipher_ctx_st>::copy
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/guidovranken/cryptofuzz
+    introduced: unknown:bbbcd93d96d7131cee3bee2028e01de44f6f9034
+    fixed: c039117fcd5fd56824d2ae329368bd8744ad8743
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14333
+modified: '2021-03-09T04:49:05.191157Z'
+created: '2020-07-22T21:50:03.494497Z'

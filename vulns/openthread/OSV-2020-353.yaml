@@ -1,0 +1,26 @@
+id: OSV-2020-353
+package:
+  name: openthread
+  ecosystem: OSS-Fuzz
+summary: Stack-buffer-overflow in ot::MeshCoP::Commissioner::GeneratePskc
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=19386
+
+  Crash type: Stack-buffer-overflow WRITE {*}
+  Crash state:
+  ot::MeshCoP::Commissioner::GeneratePskc
+  ot::Ncp::NcpBase::HandlePropertySet_SPINEL_PROP_MESHCOP_COMMISSIONER_GENERATE_PS
+  ot::Ncp::NcpBase::HandlePropertySetForSpecialProperties
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/openthread/openthread
+    introduced: 19695b0f8ea9fec430ab87f88e3ecd516b720c3f
+    fixed: b8c3161281f8e15873f8decabd8eac461717aefe
+  versions:
+  - thread-reference-20191113
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=19386
+modified: '2021-03-09T04:49:05.841338Z'
+created: '2020-07-01T00:00:04.770226Z'

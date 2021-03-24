@@ -1,0 +1,24 @@
+id: OSV-2020-1332
+package:
+  name: libxslt
+  ecosystem: OSS-Fuzz
+summary: Index-out-of-bounds in xsltSetAttrVTsegment
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14273
+
+  Crash type: Index-out-of-bounds
+  Crash state:
+  xsltSetAttrVTsegment
+  xsltCompileAttr
+  xsltParseTemplateContent
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://gitlab.gnome.org/GNOME/libxslt.git
+    introduced: unknown:7f56378a73af8a61da78b8091f0e317316cee300
+    fixed: 7f56378a73af8a61da78b8091f0e317316cee300:01f8317dd8ffe2141fae0348edd9fd51037ee41b
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14273
+modified: '2021-03-09T04:49:05.214312Z'
+created: '2020-07-22T21:50:07.164634Z'

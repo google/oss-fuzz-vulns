@@ -1,0 +1,24 @@
+id: OSV-2020-113
+package:
+  name: tremor
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in vorbis_book_decodev_add
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22207
+
+  Crash type: Heap-buffer-overflow READ 4
+  Crash state:
+  vorbis_book_decodev_add
+  _01inverse
+  res1_inverse
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://gitlab.xiph.org/xiph/tremor.git
+    introduced: 7c30a66346199f3f09017a09567c6c8a3a0eedc8:b56ffce0c0773ec5ca04c466bc00b1bbcaf65aef
+    fixed: 562307a4a7082e24553f3d2c55dab397a17c4b4f
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22207
+modified: '2021-03-09T04:49:05.105345Z'
+created: '2020-06-24T01:51:14.665804Z'

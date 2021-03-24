@@ -1,0 +1,30 @@
+id: OSV-2020-263
+package:
+  name: yara
+  ecosystem: OSS-Fuzz
+summary: Heap-use-after-free in dotnet_parse_tilde_2
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=19179
+
+  Crash type: Heap-use-after-free READ 2
+  Crash state:
+  dotnet_parse_tilde_2
+  dotnet_parse_tilde
+  dotnet_parse_com
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/VirusTotal/yara.git
+    introduced: aa182b4f928e54189fe51606d4dc419e7b27022f
+    fixed: b534f03eecd8a109db2b085ab24d419b6486de97
+  versions:
+  - v.3.9.0
+  - v3.10.0
+  - v3.10.0-rc1
+  - v3.11.0
+  - v3.9.0
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=19179
+modified: '2021-03-09T04:49:05.793806Z'
+created: '2020-06-30T00:00:43.227504Z'

@@ -1,0 +1,23 @@
+id: OSV-2020-685
+package:
+  name: lwan
+  ecosystem: OSS-Fuzz
+summary: Global-buffer-overflow in backup
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18464
+
+  Crash type: Global-buffer-overflow READ 1
+  Crash state:
+  backup
+  peek
+  lex_config
+affects:
+  ranges:
+  - type: GIT
+    repo: git://github.com/lpereira/lwan
+    introduced: c9ac13203b6685d3bf89ab6d257b37dd6b0d5833
+    fixed: ab882fe013ec880425bd918e0bcbf9e798361585
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18464
+modified: '2021-03-09T04:49:06.021857Z'
+created: '2020-07-01T00:00:24.689135Z'

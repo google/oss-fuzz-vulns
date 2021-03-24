@@ -1,0 +1,24 @@
+id: OSV-2020-1000
+package:
+  name: libxls
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in xls_isCellTooSmall
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=12619
+
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  xls_isCellTooSmall
+  xls_preparseWorkSheet
+  xls_parseWorkSheet
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/libxls/libxls
+    introduced: unknown:59d46ecc398f26a2dd5b94e599168df3d54ab478
+    fixed: 5d88fc8514937e87555981a219ab8d2556e0ec75
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=12619
+modified: '2021-03-09T04:49:05.036412Z'
+created: '2020-07-22T21:49:39.123105Z'

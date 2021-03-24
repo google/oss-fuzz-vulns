@@ -1,0 +1,24 @@
+id: OSV-2020-102
+package:
+  name: libvips
+  ecosystem: OSS-Fuzz
+summary: Heap-use-after-free in vips_buf_vappendf
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20843
+
+  Crash type: Heap-use-after-free READ 2
+  Crash state:
+  vips_buf_vappendf
+  vips_verror
+  vips_error
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/libvips/libvips
+    introduced: ce240b1ca224705343798c42a907e17b1ef6df6f
+    fixed: 175408733fcffed7aa0618c6d5ad5390ed5c4f88
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20843
+modified: '2021-03-09T04:49:05.046505Z'
+created: '2020-06-24T01:51:14.150858Z'

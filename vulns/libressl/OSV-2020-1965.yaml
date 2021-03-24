@@ -1,0 +1,38 @@
+id: OSV-2020-1965
+package:
+  name: libressl
+  ecosystem: OSS-Fuzz
+summary: UNKNOWN READ in asn1_item_print_ctx
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13920
+
+  Crash type: UNKNOWN READ
+  Crash state:
+  asn1_item_print_ctx
+  asn1_template_print_ctx
+  asn1_item_print_ctx
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/libressl-portable/portable.git
+    introduced: 4ea2a01a0d2cc889e95316f51c7a36f8f158df44:4b6c7bfd02dec26021882f1599dbcbccdd4d2889
+    fixed: 4b6c7bfd02dec26021882f1599dbcbccdd4d2889:17c88164016df821df2dff4b2b1291291ec4f28a
+  versions:
+  - v2.9.1
+  - v2.9.2
+  - v3.0.0
+  - v3.0.1
+  - v3.0.2
+  - v3.1.0
+  - v3.1.1
+  - v3.1.2
+  - v3.1.3
+  - v3.1.4
+  - v3.1.5
+  - v3.2.0
+  - v3.2.1
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13920
+modified: '2021-03-09T04:49:05.544193Z'
+created: '2020-10-03T00:00:22.855250Z'

@@ -1,0 +1,39 @@
+id: OSV-2020-2134
+package:
+  name: hostap
+  ecosystem: OSS-Fuzz
+summary: UNKNOWN READ in wpabuf_free
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=27269
+
+  Crash type: UNKNOWN READ
+  Crash state:
+  wpabuf_free
+  p2p_device_free
+  p2p_flush
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: git://w1.fi/srv/git/hostap.git
+    introduced: e57ae6e19edfaf1cbecbdfabbfe9fbc729e2d064
+    fixed: 947272febe24a8f0ea828b5b2f35f13c3821901e
+  versions:
+  - aosp-jb-from-upstream
+  - aosp-jb-start
+  - aosp-kk-from-upstream
+  - hostap-1-bp
+  - hostap_2_0
+  - hostap_2_1
+  - hostap_2_2
+  - hostap_2_3
+  - hostap_2_4
+  - hostap_2_5
+  - hostap_2_6
+  - hostap_2_7
+  - hostap_2_8
+  - hostap_2_9
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=27269
+modified: '2021-03-09T04:49:05.679121Z'
+created: '2020-11-08T00:00:23.538Z'

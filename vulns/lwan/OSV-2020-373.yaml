@@ -1,0 +1,24 @@
+id: OSV-2020-373
+package:
+  name: lwan
+  ecosystem: OSS-Fuzz
+summary: UNKNOWN READ in url_decode
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14501
+
+  Crash type: UNKNOWN READ
+  Crash state:
+  url_decode
+  parse_key_values
+  fuzz_parse_http_request
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: git://github.com/lpereira/lwan
+    introduced: 3402997c93f794903a27d35c4624ca489f52f8ac
+    fixed: 341dca6b2594eea98df73dcdb96bb80b6ccc9fb9
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14501
+modified: '2021-03-09T04:49:05.851668Z'
+created: '2020-07-01T00:00:05.814415Z'

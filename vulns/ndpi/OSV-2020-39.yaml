@@ -1,0 +1,24 @@
+id: OSV-2020-39
+package:
+  name: ndpi
+  ecosystem: OSS-Fuzz
+summary: Heap-use-after-free in ndpi_http_check_content
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22899
+
+  Crash type: Heap-use-after-free READ 1
+  Crash state:
+  ndpi_http_check_content
+  ndpi_int_http_add_connection
+  ndpi_check_http_tcp
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/ntop/nDPI.git
+    introduced: 374a24a1fb373617be23d7cbb397b47d23a5ffda
+    fixed: 29d9c2d2c80289f31278f8717959a5718a2e6ce1
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22899
+modified: '2021-03-09T04:49:05.861419Z'
+created: '2020-06-24T01:51:11.374665Z'

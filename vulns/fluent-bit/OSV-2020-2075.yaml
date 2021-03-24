@@ -1,0 +1,38 @@
+id: OSV-2020-2075
+package:
+  name: fluent-bit
+  ecosystem: OSS-Fuzz
+summary: Heap-use-after-free in flb_parser_decoder_list_destroy
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26345
+
+  Crash type: Heap-use-after-free READ 8
+  Crash state:
+  flb_parser_decoder_list_destroy
+  parser_fuzzer.c
+  flb_free
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/fluent/fluent-bit/
+    introduced: d95ea655478ab9b0e97312ad80ac1da591ce7aaa
+    fixed: 61164218298f9dbee5bac6648b5b4f5e97759bba
+  - type: GIT
+    repo: https://github.com/fluent/fluent-bit/
+    introduced: aea2b787028482a159de615fe9a891deb19cb8dc
+  versions:
+  - v1.6.1
+  - v1.6.10
+  - v1.6.2
+  - v1.6.3
+  - v1.6.4
+  - v1.6.5
+  - v1.6.6
+  - v1.6.7
+  - v1.6.8
+  - v1.6.9
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26345
+modified: '2021-03-09T04:49:05.596009Z'
+created: '2020-10-16T00:00:35.685490Z'

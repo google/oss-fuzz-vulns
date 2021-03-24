@@ -1,0 +1,27 @@
+id: OSV-2020-1200
+package:
+  name: opencv
+  ecosystem: OSS-Fuzz
+summary: UNKNOWN WRITE in DumpModeDecode
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14071
+
+  Crash type: UNKNOWN WRITE
+  Crash state:
+  DumpModeDecode
+  TIFFReadEncodedStrip
+  cv::TiffDecoder::readData_32FC3
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/opencv/opencv.git
+    introduced: unknown:6bcf0b5519c190826cf0f21efd87cbe256eabc48
+    fixed: 4001346a30ad31cd96544937c01a88f37ff02670:473941c3418e2c8d0d91b8d48ae824cec87232f4
+  versions:
+  - 4.0.1
+  - 4.1.0-openvino
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14071
+modified: '2021-03-09T04:49:05.143282Z'
+created: '2020-07-22T21:49:55.773582Z'

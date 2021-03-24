@@ -1,0 +1,32 @@
+id: OSV-2020-669
+package:
+  name: glib
+  ecosystem: OSS-Fuzz
+summary: Use-of-uninitialized-value in g_date_time_get_week_number
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=17648
+
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  g_date_time_get_week_number
+  g_date_time_new_week
+  parse_isoNUMBER_date
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://gitlab.gnome.org/GNOME/glib
+    introduced: a3f22f0c2c4265d77b1f8d8dd9006c82b3143367
+    fixed: f4dd85628af916b58aaead3e8dd25d14d1a7cb95
+  - type: GIT
+    repo: https://gitlab.gnome.org/GNOME/glib
+    introduced: a3f22f0c2c4265d77b1f8d8dd9006c82b3143367
+    fixed: 7b393fce314c4b303c89dd1ea9c0dbaec7cf43b4
+  versions:
+  - 2.61.2
+  - 2.61.3
+  - 2.62.0
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=17648
+modified: '2021-03-09T04:49:06.013105Z'
+created: '2020-07-01T00:00:23.657942Z'

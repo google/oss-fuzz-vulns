@@ -1,0 +1,23 @@
+id: OSV-2020-7
+package:
+  name: radare2
+  ecosystem: OSS-Fuzz
+summary: Segv on unknown address in pvector_free_elem
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22734
+
+  Crash type: Segv on unknown address
+  Crash state:
+  pvector_free_elem
+  vector_free_elems
+  r_vector_clear
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/radare/radare2
+    introduced: 0b91114d7d528f88e3b85f40c6bd1eabb0ee6319
+    fixed: ee9025c9170c15dea5e68d4d5179d41e78868493
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22734
+modified: '2021-03-09T04:49:06.029438Z'
+created: '2020-06-24T01:51:09.499211Z'

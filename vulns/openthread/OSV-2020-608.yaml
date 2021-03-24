@@ -1,0 +1,24 @@
+id: OSV-2020-608
+package:
+  name: openthread
+  ecosystem: OSS-Fuzz
+summary: UNKNOWN READ in ot::Ip6::Address::PrefixMatch
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13349
+
+  Crash type: UNKNOWN READ
+  Crash state:
+  ot::Ip6::Address::PrefixMatch
+  ot::Dhcp6::Dhcp6Server::RemovePrefixAgent
+  ot::Dhcp6::Dhcp6Server::UpdateService
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/openthread/openthread
+    introduced: 3eb5a106ffa6678e23c6bc244e843e264cae9b31
+    fixed: 0938be7f8405bf61d5e9698bb8996da8b7471d84
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13349
+modified: '2021-03-09T04:49:05.978597Z'
+created: '2020-07-01T00:00:20.187182Z'

@@ -1,0 +1,22 @@
+id: OSV-2020-541
+package:
+  name: c-ares
+  ecosystem: OSS-Fuzz
+summary: UNKNOWN READ in _fini
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15391
+
+  Crash type: UNKNOWN READ
+  Crash state:
+  _fini
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/c-ares/c-ares.git
+    introduced: 7d3591ee8a1a63e7748e68e6d880bd1763a32885
+    fixed: b949cc3ddfbeb1b3fba571fb53b186b645e66e9c
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15391
+modified: '2021-03-09T04:49:05.943712Z'
+created: '2020-07-01T00:00:15.713830Z'

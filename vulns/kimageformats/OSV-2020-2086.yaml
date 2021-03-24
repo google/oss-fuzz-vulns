@@ -1,0 +1,48 @@
+id: OSV-2020-2086
+package:
+  name: kimageformats
+  ecosystem: OSS-Fuzz
+summary: Bad-cast to QPaintDevice from invalid vptr
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26457
+
+  Crash type: Bad-cast
+  Crash state:
+  Bad-cast to QPaintDevice from invalid vptr
+  QImage::operator=
+  XCFImageFormat::readXCF
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://invent.kde.org/frameworks/kimageformats.git
+    introduced: f089e860e05f5e4e2df0580e9895fff32edfef4c:497b6b81bdf59afe1551b2ea38fcc45fe100057d
+  versions:
+  - v5.70.0
+  - v5.70.0-rc1
+  - v5.71.0
+  - v5.71.0-rc1
+  - v5.71.0-rc2
+  - v5.72.0
+  - v5.72.0-rc1
+  - v5.73.0
+  - v5.73.0-rc1
+  - v5.74.0
+  - v5.74.0-rc1
+  - v5.75.0
+  - v5.75.0-rc1
+  - v5.76.0
+  - v5.76.0-rc1
+  - v5.77.0
+  - v5.77.0-rc1
+  - v5.78.0
+  - v5.78.0-rc1
+  - v5.79.0
+  - v5.79.0-rc1
+  - v5.79.0-rc2
+  - v5.80.0
+  - v5.80.0-rc1
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26457
+modified: '2021-03-15T04:53:48.986228Z'
+created: '2020-10-19T00:00:08.431906Z'

@@ -1,0 +1,26 @@
+id: OSV-2020-772
+package:
+  name: pcapplusplus
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in __libcpp_strstr
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23601
+
+  Crash type: Heap-buffer-overflow READ 4
+  Crash state:
+  __libcpp_strstr
+  strstr
+  pcpp::SipRequestFirstLine::parseVersion
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/seladb/PcapPlusPlus
+    introduced: 016e90f193d4383b94143d0b2be26408cc32c703:5ef0c6da8c34b5d4155f865e94bdf83cb18fcbad
+    fixed: fbc52d37c6a7e8cc75e4950d2621cbd907c6cf8a
+  versions:
+  - v20.08
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23601
+modified: '2021-03-09T04:49:06.067370Z'
+created: '2020-07-14T05:37:27.956803Z'

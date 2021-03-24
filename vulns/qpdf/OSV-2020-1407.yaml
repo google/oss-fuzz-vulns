@@ -1,0 +1,30 @@
+id: OSV-2020-1407
+package:
+  name: qpdf
+  ecosystem: OSS-Fuzz
+summary: Use-of-uninitialized-value in QPDFWriter::unparseObject
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18633
+
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  QPDFWriter::unparseObject
+  QPDFWriter::writeObject
+  QPDFWriter::writeStandard
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/qpdf/qpdf.git
+    introduced: 9b76ec154dfe001f599c4ae495de7a419d639562
+    fixed: 956c8f643219778c445d7062d1d0e7e3b96c7676:8a11feacc32aa5dcf0130d7499535624805fc87e
+  versions:
+  - release-qpdf-10.0.0
+  - release-qpdf-10.0.1
+  - release-qpdf-9.1.0
+  - release-qpdf-9.1.1
+  - release-qpdf-9.1.rc1
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18633
+modified: '2021-03-09T04:49:05.250359Z'
+created: '2020-07-28T00:00:11.620686Z'

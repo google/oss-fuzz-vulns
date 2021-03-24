@@ -1,0 +1,33 @@
+id: OSV-2020-783
+package:
+  name: wabt
+  ecosystem: OSS-Fuzz
+summary: UNKNOWN READ in wabt::BinaryReaderIR::OnFunctionSymbol
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20364
+
+  Crash type: UNKNOWN READ
+  Crash state:
+  wabt::BinaryReaderIR::OnFunctionSymbol
+  wabt::BinaryReader::ReadLinkingSection
+  wabt::BinaryReader::ReadCustomSection
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/WebAssembly/wabt
+    introduced: 2132abdd621a354a25af6bc67d1bb603c6b3c4dc:c74e612ff9d95d6afd1bbfb6d9656655aa6d70ed
+    fixed: ef0d3789f229e1176910e45fc47600336ae3aed9
+  versions:
+  - 1.0.14
+  - 1.0.15
+  - 1.0.16
+  - 1.0.17
+  - 1.0.18
+  - 1.0.19
+  - gh-actions-test
+  - gh-actions-test2
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20364
+modified: '2021-03-09T04:49:06.073222Z'
+created: '2020-07-14T05:37:33.041385Z'

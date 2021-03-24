@@ -1,0 +1,24 @@
+id: OSV-2020-994
+package:
+  name: ndpi
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in getTLScertificate
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=19466
+
+  Crash type: Heap-buffer-overflow READ 6
+  Crash state:
+  getTLScertificate
+  tlsDetectProtocolFromCertificate
+  ndpi_search_tls_tcp_udp
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/ntop/nDPI.git
+    introduced: unknown:e695dd6eade754b2d50bdf297ca8bdc4105f93ff
+    fixed: ea001b439a134f4e0e4245d29988547103c047b4
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=19466
+modified: '2021-03-09T04:49:06.191467Z'
+created: '2020-07-22T21:49:38.781030Z'

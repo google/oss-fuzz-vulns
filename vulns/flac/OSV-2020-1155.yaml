@@ -1,0 +1,24 @@
+id: OSV-2020-1155
+package:
+  name: flac
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in FLAC__bitreader_read_rice_signed_block
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=17069
+
+  Crash type: Heap-buffer-overflow READ 4
+  Crash state:
+  FLAC__bitreader_read_rice_signed_block
+  read_residual_partitioned_rice_
+  read_subframe_lpc_
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/xiph/flac.git
+    introduced: unknown:4ca0d85c5d0ea3e9d9afc4ac53b5187c9ab98689
+    fixed: 2e7931c27eb15e387da440a37f12437e35b22dd4
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=17069
+modified: '2021-03-09T04:49:05.118823Z'
+created: '2020-07-22T21:49:51.797478Z'

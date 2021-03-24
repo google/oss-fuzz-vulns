@@ -1,0 +1,24 @@
+id: OSV-2020-1018
+package:
+  name: draco
+  ecosystem: OSS-Fuzz
+summary: Heap-use-after-free in draco::Metadata::AddSubMetadata
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23342
+
+  Crash type: Heap-use-after-free READ 8
+  Crash state:
+  draco::Metadata::AddSubMetadata
+  draco::MetadataDecoder::DecodeMetadata
+  draco::MetadataDecoder::DecodeGeometryMetadata
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/google/draco
+    introduced: unknown:dec23f5ac6c71c2352dd6812afa799c03553fc58
+    fixed: 25484b31235d1a35fa72be6ce8d1f7f286b5c0bf
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23342
+modified: '2021-03-09T04:49:05.045573Z'
+created: '2020-07-22T21:49:40.252141Z'

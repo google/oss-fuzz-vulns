@@ -1,0 +1,24 @@
+id: OSV-2021-247
+package:
+  name: c-blosc2
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in blosc_getitem
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29976
+
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  blosc_getitem
+  get_coffset
+  frame_get_lazychunk
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/Blosc/c-blosc2.git
+    introduced: c473b21cff5e1a459b4467f18bf7414114f848fd
+    fixed: 7f86c209450b39ab7fc898707984e746c7ef2ebb
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29976
+modified: '2021-03-03T12:00:57.100776Z'
+created: '2021-01-29T00:00:56.462283Z'

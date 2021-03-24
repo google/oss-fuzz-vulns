@@ -1,0 +1,24 @@
+id: OSV-2020-341
+package:
+  name: lwan
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in post_process_template
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18952
+
+  Crash type: Heap-buffer-overflow READ 4
+  Crash state:
+  post_process_template
+  parser_shutdown
+  parse_string
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: git://github.com/lpereira/lwan
+    introduced: 0fc10a8c657339b2a26b8bf1b64d4431a293a24f
+    fixed: f7b91535da39550693214dbe7ae2c16d83d70a4f
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18952
+modified: '2021-03-09T04:49:05.835070Z'
+created: '2020-07-01T00:00:04.091956Z'

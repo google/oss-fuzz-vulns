@@ -1,0 +1,27 @@
+id: OSV-2020-1597
+package:
+  name: libavif
+  ecosystem: OSS-Fuzz
+summary: UNKNOWN WRITE in avifDecoderDataFillImageGrid
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24811
+
+  Crash type: UNKNOWN WRITE
+  Crash state:
+  avifDecoderDataFillImageGrid
+  avifDecoderNextImage
+  avif_decode_fuzzer.cc
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/AOMediaCodec/libavif.git
+    introduced: 9c5f5653d1b08b1fd75b4af3fe8ed9c4a2ce0563
+    fixed: 0a8e7244d494ae98e9756355dfbfb6697ded2ff9
+  versions:
+  - v0.8.0
+  - v0.8.1
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24811
+modified: '2021-03-09T04:49:05.347985Z'
+created: '2020-08-12T00:00:12.469996Z'

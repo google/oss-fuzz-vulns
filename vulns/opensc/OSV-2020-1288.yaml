@@ -1,0 +1,24 @@
+id: OSV-2020-1288
+package:
+  name: opensc
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in asn1_decode_entry
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=16620
+
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  asn1_decode_entry
+  asn1_decode
+  asn1_decode_entry
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/OpenSC/OpenSC
+    introduced: unknown:b0241eefa1b47f1420456f5dbc43564d59961a54
+    fixed: 9b4b080be788a602fa8f01ac8d7e29cdaad07902
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=16620
+modified: '2021-03-09T04:49:05.189681Z'
+created: '2020-07-22T21:50:03.236534Z'

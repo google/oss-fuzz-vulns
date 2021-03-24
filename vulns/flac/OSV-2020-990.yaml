@@ -1,0 +1,24 @@
+id: OSV-2020-990
+package:
+  name: flac
+  ecosystem: OSS-Fuzz
+summary: UNKNOWN READ in FLAC__crc16_update_words32
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=16457
+
+  Crash type: UNKNOWN READ
+  Crash state:
+  FLAC__crc16_update_words32
+  crc16_update_block_
+  bitreader_read_from_client_
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/xiph/flac.git
+    introduced: unknown:4ca0d85c5d0ea3e9d9afc4ac53b5187c9ab98689
+    fixed: c34c3459b514df02d922a882d406986e7f47afa4
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=16457
+modified: '2021-03-09T04:49:06.189642Z'
+created: '2020-07-22T21:49:38.553384Z'

@@ -1,0 +1,23 @@
+id: OSV-2018-115
+package:
+  name: harfbuzz
+  ecosystem: OSS-Fuzz
+summary: Global-buffer-overflow in CFF::BlendArg::set_blends
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11691
+
+  Crash type: Global-buffer-overflow READ 8
+  Crash state:
+  CFF::BlendArg::set_blends
+  CFF::CFF2CSOpSet<CFF2CSOpSet_Extents, ExtentsParam, CFF2PathProcs_Extents>::proc
+  CFF::CSInterpreter<CFF::CFF2CSInterpEnv, CFF2CSOpSet_Extents, ExtentsParam>::int
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/harfbuzz/harfbuzz.git
+    introduced: 7b21319edfd6531a444846f71e87303bc09f4621
+    fixed: 72d8f76368b264a42fe58438fe15811d458a7935
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11691
+modified: '2021-03-09T04:49:04.824267Z'
+created: '2021-01-13T00:00:53.045964Z'

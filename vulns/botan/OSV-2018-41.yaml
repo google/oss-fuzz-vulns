@@ -1,0 +1,24 @@
+id: OSV-2018-41
+package:
+  name: botan
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in Botan::bigint_monty_redc
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=6581
+
+  Crash type: Heap-buffer-overflow READ 8
+  Crash state:
+  Botan::bigint_monty_redc
+  Botan::CurveGFp_Montgomery::curve_mul
+  Botan::CurveGFp_Montgomery::to_curve_rep
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/randombit/botan.git
+    introduced: 50c69e760b0f47e84f5a3c8d2bea6f072f3fd587
+    fixed: 74ca458b14d265b68ad25cf918aa216b3fa51103
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=6581
+modified: '2021-03-09T04:49:04.980034Z'
+created: '2021-01-13T00:00:22.644618Z'

@@ -1,0 +1,24 @@
+id: OSV-2020-1114
+package:
+  name: ndpi
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in ndpi_int_check_stun
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=19332
+
+  Crash type: Heap-buffer-overflow READ 2
+  Crash state:
+  ndpi_int_check_stun
+  ndpi_search_stun
+  check_ndpi_udp_flow_func
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/ntop/nDPI.git
+    introduced: unknown:e695dd6eade754b2d50bdf297ca8bdc4105f93ff
+    fixed: 27ea04c08ef72e78604308624bf31735aa2e8e98
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=19332
+modified: '2021-03-09T04:49:05.097299Z'
+created: '2020-07-22T21:49:48.206675Z'

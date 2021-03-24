@@ -1,0 +1,25 @@
+id: OSV-2020-1325
+package:
+  name: harfbuzz
+  ecosystem: OSS-Fuzz
+summary: Global-buffer-overflow in BEInt<unsigned short, 2>::operator unsigned short
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21769
+
+  Crash type: Global-buffer-overflow READ 2
+  Crash state:
+  BEInt<unsigned short, 2>::operator unsigned short
+  OT::IntType<unsigned short, 2u>::operator unsigned int
+  CFF::Charset0::get_glyph
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/harfbuzz/harfbuzz.git
+    introduced: unknown:8ffc9add2237899afc57184ad3297404659bc1cd
+    fixed: 22f7c61acf8073cb8db8db47e92aef18864a85c6
+  versions:
+  - 2.6.5
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21769
+modified: '2021-03-09T04:49:05.210535Z'
+created: '2020-07-22T21:50:06.762604Z'

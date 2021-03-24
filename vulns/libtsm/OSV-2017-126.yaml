@@ -1,0 +1,22 @@
+id: OSV-2017-126
+package:
+  name: libtsm
+  ecosystem: OSS-Fuzz
+summary: Bad-cast to const std::__1::__less<unsigned long, unsigned long> *_start
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=606
+
+  Crash type: Bad-cast
+  Crash state:
+  Bad-cast to const std::__1::__less<unsigned long, unsigned long> *_start
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: git://people.freedesktop.org/~dvdhrm/libtsm
+    introduced: b73acb4c71698a764763ae8dad94c1e8a2b8d7a3
+    fixed: b73acb4c71698a764763ae8dad94c1e8a2b8d7a3
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=606
+modified: '2021-03-09T04:49:04.747418Z'
+created: '2021-01-15T00:00:07.054153Z'

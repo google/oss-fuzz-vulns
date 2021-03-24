@@ -1,0 +1,24 @@
+id: OSV-2020-1130
+package:
+  name: libxslt
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in xsltFormatNumberConversion
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=17171
+
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  xsltFormatNumberConversion
+  xsltFormatNumberFunction
+  xmlXPathCompOpEval
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://gitlab.gnome.org/GNOME/libxslt.git
+    introduced: unknown:7f56378a73af8a61da78b8091f0e317316cee300
+    fixed: e1f8d2e6eb1167fd51eb5b8c99d2d40c37299897
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=17171
+modified: '2021-03-09T04:49:05.105809Z'
+created: '2020-07-22T21:49:49.395683Z'

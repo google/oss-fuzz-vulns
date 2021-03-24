@@ -1,0 +1,24 @@
+id: OSV-2020-21
+package:
+  name: arrow
+  ecosystem: OSS-Fuzz
+summary: UNKNOWN WRITE in arrow::internal::unpack32
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20711
+
+  Crash type: UNKNOWN WRITE
+  Crash state:
+  arrow::internal::unpack32
+  int arrow::BitUtil::BitReader::GetBatch<int>
+  parquet::DictByteArrayDecoderImpl::DecodeArrowDense
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/apache/arrow.git
+    introduced: 431fdbfbc0fb4bb16c4a89298404ad16784db2a0
+    fixed: d2ab289294f5eaa175e6bc4ab5fb74b5ea013f6e
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20711
+modified: '2021-03-09T04:49:05.609713Z'
+created: '2020-06-24T01:51:10.547779Z'

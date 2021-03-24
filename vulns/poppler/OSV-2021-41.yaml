@@ -1,0 +1,24 @@
+id: OSV-2021-41
+package:
+  name: poppler
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in BaseMemStream<char const>::getChar
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29460
+
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  BaseMemStream<char const>::getChar
+  Object::streamGetChar
+  Lexer::getChar
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://gitlab.freedesktop.org/poppler/poppler.git
+    introduced: a8fdb464e8c1ccc920c064324d7289fa05c1cf1d:e68410e359da932c7f30d8f0a41a5496268b339c
+    fixed: 3252bc323c814eb010df011024f06597755b4b7d
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29460
+modified: '2021-03-09T04:49:06.359351Z'
+created: '2021-01-12T00:00:15.199726Z'

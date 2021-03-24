@@ -1,0 +1,37 @@
+id: OSV-2020-1299
+package:
+  name: libmpeg2
+  ecosystem: OSS-Fuzz
+summary: UNKNOWN WRITE in ideint_weave_blk
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=17084
+
+  Crash type: UNKNOWN WRITE
+  Crash state:
+  ideint_weave_blk
+  ideint_process
+  impeg2d_deinterlace
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://android.googlesource.com/platform/external/libmpeg2
+    introduced: unknown:313d5efa2d866f01aaf25b015f31480ce095e7f5
+    fixed: 6f28264c1170fae4f6c847625f4a6d4467a3262b
+  versions:
+  - android-mainline-10.0.0_r6
+  - android-mainline-10.0.0_r8
+  - android-r-preview-1
+  - android-r-preview-2
+  - android-r-preview-3
+  - android-r-preview-4
+  - platform-tools-29.0.5
+  - platform-tools-29.0.6
+  - platform-tools-30.0.0
+  - platform-tools-30.0.1
+  - platform-tools-30.0.2
+  - platform-tools-30.0.3
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=17084
+modified: '2021-03-09T04:49:05.195460Z'
+created: '2020-07-22T21:50:04.188246Z'

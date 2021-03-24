@@ -1,0 +1,24 @@
+id: OSV-2018-26
+package:
+  name: harfbuzz
+  ecosystem: OSS-Fuzz
+summary: UNKNOWN READ in BEInt<unsigned char, 1>::operator unsigned char
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11351
+
+  Crash type: UNKNOWN READ
+  Crash state:
+  BEInt<unsigned char, 1>::operator unsigned char
+  OT::DeviceRecord::serialize
+  OT::hdmx::serialize
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/harfbuzz/harfbuzz.git
+    introduced: a953b647507fe2ae8f5187fbfb04e69d2a2952e4
+    fixed: 9e9f16c92debecb4caf533fa112898dfec116d98
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11351
+modified: '2021-03-09T04:49:04.902860Z'
+created: '2021-01-13T00:00:09.922802Z'

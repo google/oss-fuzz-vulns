@@ -1,0 +1,24 @@
+id: OSV-2020-399
+package:
+  name: radare2
+  ecosystem: OSS-Fuzz
+summary: Heap-use-after-free in sdb_free
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13704
+
+  Crash type: Heap-use-after-free READ 8
+  Crash state:
+  sdb_free
+  ns_free
+  sdb_ns_free
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/radare/radare2
+    introduced: 917fcda0ad78ff0f444e9807838b1e4b86349cd0
+    fixed: 5d65cbe1f7d677a22c0fca593dcae1aebf8cf35b
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13704
+modified: '2021-03-09T04:49:05.866345Z'
+created: '2020-07-01T00:00:07.312045Z'

@@ -1,0 +1,24 @@
+id: OSV-2020-510
+package:
+  name: openthread
+  ecosystem: OSS-Fuzz
+summary: UNKNOWN READ in ot::Timer::GetFireTime
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13390
+
+  Crash type: UNKNOWN READ
+  Crash state:
+  ot::Timer::GetFireTime
+  ot::Timer::DoesFireBefore
+  ot::TimerScheduler::Add
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/openthread/openthread
+    introduced: 3eb5a106ffa6678e23c6bc244e843e264cae9b31
+    fixed: a3548df579617e737b075be4a88591e68195e115
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13390
+modified: '2021-03-09T04:49:05.927524Z'
+created: '2020-07-01T00:00:13.757263Z'

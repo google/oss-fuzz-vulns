@@ -1,0 +1,24 @@
+id: OSV-2020-745
+package:
+  name: haproxy
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in memvprintf
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23715
+
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  memvprintf
+  print_message
+  ha_alert
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/haproxy/haproxy
+    introduced: f3d2c6d706492018d83d151aa18e1f4f0d415ed7
+    fixed: 07d47060e0d99d0884440c3fa55ef2a338987769
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23715
+modified: '2021-03-09T04:49:06.053680Z'
+created: '2020-07-04T00:00:02.054678Z'

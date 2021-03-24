@@ -1,0 +1,38 @@
+id: OSV-2020-325
+package:
+  name: gdal
+  ecosystem: OSS-Fuzz
+summary: Stack-buffer-overflow in std::__1::basic_string<char, std::__1::char_traits<char>,
+  std::__1::allocator<ch
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15159
+
+  Crash type: Stack-buffer-overflow READ {*}
+  Crash state:
+  std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<ch
+  nccfdriver::attrf
+  nccfdriver::getCFVersion
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/OSGeo/gdal
+    introduced: 289b796e365ac26020548410d6ae16022bc80718:f956a3c6ff43a877a63ee1199c5e0092c11a8c31
+    fixed: 767e3a56144f676ca738ef8f700e0e56035bd05a
+  versions:
+  - v2.4.2
+  - v2.4.3
+  - v2.4.3RC1
+  - v2.4.4
+  - v2.4.4RC1
+  - v3.0.1
+  - v3.0.2
+  - v3.0.2RC1
+  - v3.0.3
+  - v3.0.3RC1
+  - v3.0.4
+  - v3.0.4RC1
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15159
+modified: '2021-03-09T04:49:05.826375Z'
+created: '2020-07-01T00:00:02.845124Z'

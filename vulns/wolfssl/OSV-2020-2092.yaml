@@ -1,0 +1,24 @@
+id: OSV-2020-2092
+package:
+  name: wolfssl
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in RsaPad_PSS
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26567
+
+  Crash type: Heap-buffer-overflow WRITE {*}
+  Crash state:
+  RsaPad_PSS
+  wc_RsaPad_ex
+  RsaPublicEncryptEx
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/wolfssl/wolfssl
+    introduced: deaf3b4b40d26663191d085557fbeb8cafa420ae:881657782478cef4a1527847bb2c4cd427bd6c99
+    fixed: 63bf5dc56ccbfc12a73b06327361687091a4c6f7
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26567
+modified: '2021-03-09T04:49:05.605756Z'
+created: '2020-10-23T00:00:33.187354Z'

@@ -1,0 +1,24 @@
+id: OSV-2020-384
+package:
+  name: net-snmp
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in agentx_parse_string
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14481
+
+  Crash type: Heap-buffer-overflow READ {*}
+  Crash state:
+  agentx_parse_string
+  agentx_parse
+  agentx_parse_fuzzer.c
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: git://git.code.sf.net/p/net-snmp/code
+    introduced: 46a42549dbae76e1c2fc284b81c6e6f83ce46831
+    fixed: 7de049193ab78d9fcdc3baa2c0673bd1e300ed5b
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14481
+modified: '2021-03-09T04:49:05.858571Z'
+created: '2020-07-01T00:00:06.466746Z'

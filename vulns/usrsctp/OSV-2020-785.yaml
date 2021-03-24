@@ -1,0 +1,24 @@
+id: OSV-2020-785
+package:
+  name: usrsctp
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in sctp_handle_packet_dropped
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23656
+
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  sctp_handle_packet_dropped
+  sctp_process_control
+  sctp_common_input_processing
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/weinrank/usrsctp
+    introduced: 8d7662e81b7192566eaa23a651210b7d07e009c1
+    fixed: 25f4212f48563db7e37c606f04826ffd32b8b198
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23656
+modified: '2021-03-09T04:49:06.074239Z'
+created: '2020-07-14T05:37:33.243806Z'

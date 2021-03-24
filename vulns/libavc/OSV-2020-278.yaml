@@ -1,0 +1,38 @@
+id: OSV-2020-278
+package:
+  name: libavc
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in ih264d_decode_slice_thread
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=19027
+
+  Crash type: Heap-buffer-overflow READ 4
+  Crash state:
+  ih264d_decode_slice_thread
+  ih264d_decode_picture_thread
+  clone
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://android.googlesource.com/platform/external/libavc
+    introduced: 82b7f933f46c179fb062f538271b966d938a3e38
+    fixed: c0215b1b3de1f40da5e5f5138422da012bcc89ae
+  - type: GIT
+    repo: https://android.googlesource.com/platform/external/libavc
+    introduced: 82b7f933f46c179fb062f538271b966d938a3e38
+    fixed: 6dd54b9e180c838c82767878d10c9615af2c5866
+  versions:
+  - android-r-preview-1
+  - android-r-preview-2
+  - android-r-preview-3
+  - android-r-preview-4
+  - platform-tools-29.0.6
+  - platform-tools-30.0.0
+  - platform-tools-30.0.1
+  - platform-tools-30.0.2
+  - platform-tools-30.0.3
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=19027
+modified: '2021-03-09T04:49:05.801267Z'
+created: '2020-06-30T00:00:45.549045Z'

@@ -1,0 +1,26 @@
+id: OSV-2020-580
+package:
+  name: ots
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in ots::OpenTypeSTAT::Serialize
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=12840
+
+  Crash type: Heap-buffer-overflow READ 2
+  Crash state:
+  ots::OpenTypeSTAT::Serialize
+  ProcessGeneric
+  ProcessTTF
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/khaledhosny/ots.git
+    introduced: cad0b4f9405d03ddf801f977f2f65892192ad047:560a0fb259120f3fb6c2aec532ccea3fcd4d873a
+    fixed: 9673d4257672d472d0aaa1590fd821b4108873a5
+  versions:
+  - v7.1.8
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=12840
+modified: '2021-03-09T04:49:05.964113Z'
+created: '2020-07-01T00:00:18.191041Z'

@@ -1,0 +1,24 @@
+id: OSV-2018-130
+package:
+  name: libarchive
+  ecosystem: OSS-Fuzz
+summary: Stack-buffer-overflow in parse_tables
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=12466
+
+  Crash type: Stack-buffer-overflow WRITE 7
+  Crash state:
+  parse_tables
+  process_block
+  do_uncompress_file
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/libarchive/libarchive.git
+    introduced: 58167a9af435618c44e2faef5af5a86af51c003a
+    fixed: 4bd12b6f40cb4413c8970c52f15f3b6885b5e32f
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=12466
+modified: '2021-03-09T04:49:04.832882Z'
+created: '2021-01-13T00:00:58.133861Z'

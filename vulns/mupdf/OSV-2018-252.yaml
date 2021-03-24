@@ -1,0 +1,23 @@
+id: OSV-2018-252
+package:
+  name: mupdf
+  ecosystem: OSS-Fuzz
+summary: Heap-use-after-free in fz_fin_cached_color_converter
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=5604
+
+  Crash type: Heap-use-after-free READ 8
+  Crash state:
+  fz_fin_cached_color_converter
+  fz_paint_shade
+  fz_draw_fill_shade
+affects:
+  ranges:
+  - type: GIT
+    repo: git://git.ghostscript.com/mupdf.git
+    introduced: 9086386263154498dcb18c96f1e1630903b21a3c:d9bc8c6f7fb2e3ec7035bebaaee0edcf59287705
+    fixed: 71ceebcf56e682504da22c4035b39a2d451e8ffd
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=5604
+modified: '2021-03-09T04:49:04.899140Z'
+created: '2021-01-15T00:00:07.554706Z'

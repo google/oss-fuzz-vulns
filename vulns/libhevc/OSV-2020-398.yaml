@@ -1,0 +1,26 @@
+id: OSV-2020-398
+package:
+  name: libhevc
+  ecosystem: OSS-Fuzz
+summary: Stack-buffer-overflow in ihevcd_ref_list
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=17029
+
+  Crash type: Stack-buffer-overflow WRITE 4
+  Crash state:
+  ihevcd_ref_list
+  ihevcd_parse_slice_header
+  ihevcd_nal_unit
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://android.googlesource.com/platform/external/libhevc
+    introduced: 67e394c9f3743b8ce41f11736136319efcef6d3d
+    fixed: 60f9768c9e8488be9f5b5ba88ffe0a4528504a68
+  versions:
+  - platform-tools-29.0.5
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=17029
+modified: '2021-03-09T04:49:05.865870Z'
+created: '2020-07-01T00:00:07.241400Z'

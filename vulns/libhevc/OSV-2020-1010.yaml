@@ -1,0 +1,22 @@
+id: OSV-2020-1010
+package:
+  name: libhevc
+  ecosystem: OSS-Fuzz
+summary: Stack-use-after-return in ihevcd_process_thread
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=16912
+
+  Crash type: Stack-use-after-return READ 8
+  Crash state:
+  ihevcd_process_thread
+  start_thread
+affects:
+  ranges:
+  - type: GIT
+    repo: https://android.googlesource.com/platform/external/libhevc
+    introduced: unknown:5e7dc4732015717682ac0da1431fe3e656aea617
+    fixed: 67e394c9f3743b8ce41f11736136319efcef6d3d
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=16912
+modified: '2021-03-09T04:49:05.041764Z'
+created: '2020-07-22T21:49:39.845614Z'

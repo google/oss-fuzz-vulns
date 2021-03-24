@@ -1,0 +1,32 @@
+id: OSV-2020-2230
+package:
+  name: php
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in _zend_is_inconsistent
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=28129
+
+  Crash type: Heap-buffer-overflow READ 4
+  Crash state:
+  _zend_is_inconsistent
+  zend_hash_find
+  zend_hash_find_ptr
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/php/php-src.git
+    introduced: 8b37c1e993f17345312a76a239b77ae137d3f8e8
+    fixed: f06afc434aec631f18f8da8ffca9a6f0559e1acf
+  versions:
+  - php-8.0.0
+  - php-8.0.0RC2
+  - php-8.0.0RC3
+  - php-8.0.0RC4
+  - php-8.0.0RC5
+  - php-8.0.0beta4
+  - php-8.0.0rc1
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=28129
+modified: '2021-03-09T04:49:05.731540Z'
+created: '2020-12-04T00:01:16.269909Z'

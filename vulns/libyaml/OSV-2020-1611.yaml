@@ -1,0 +1,23 @@
+id: OSV-2020-1611
+package:
+  name: libyaml
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in yaml_emitter_emit_flow_mapping_key
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24869
+
+  Crash type: Heap-buffer-overflow READ 4
+  Crash state:
+  yaml_emitter_emit_flow_mapping_key
+  yaml_emitter_state_machine
+  yaml_emitter_emit
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/yaml/libyaml
+    introduced: acd6f6f014c25e46363e718381e0b35205df2d83
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24869
+modified: '2021-03-09T04:49:05.355195Z'
+created: '2020-08-14T00:01:51.615528Z'

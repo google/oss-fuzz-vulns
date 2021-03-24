@@ -1,0 +1,33 @@
+id: OSV-2020-861
+package:
+  name: wabt
+  ecosystem: OSS-Fuzz
+summary: Segv on unknown address in std::__1::basic_string<char, std::__1::char_traits<char>,
+  std::__1::allocator<ch
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22273
+
+  Crash type: Segv on unknown address
+  Crash state:
+  std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<ch
+  std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<ch
+  std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<ch
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/WebAssembly/wabt
+    introduced: ac29d4f571f54ce3c99243048ebdac6cfe6cc671
+    fixed: ef0d3789f229e1176910e45fc47600336ae3aed9
+  versions:
+  - 1.0.14
+  - 1.0.15
+  - 1.0.16
+  - 1.0.17
+  - 1.0.18
+  - 1.0.19
+  - gh-actions-test
+  - gh-actions-test2
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22273
+modified: '2021-03-09T04:49:06.117956Z'
+created: '2020-07-14T22:13:48.598875Z'

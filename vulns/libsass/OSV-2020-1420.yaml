@@ -1,0 +1,29 @@
+id: OSV-2020-1420
+package:
+  name: libsass
+  ecosystem: OSS-Fuzz
+summary: Bad-cast to Sass::PreValue from Sass::Unary_Expression
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15896
+
+  Crash type: Bad-cast
+  Crash state:
+  Bad-cast to Sass::PreValue from Sass::Unary_Expression
+  Sass::SharedImpl<Sass::PreValue>::SharedImpl<Sass::Expression>
+  Sass::Parser::parse_ie_keyword_arg
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/sass/libsass.git
+    introduced: c51f442c8c33d4d171adf6c5875cbfc7a9e1d1eb
+  versions:
+  - 3.6.0
+  - 3.6.1
+  - 3.6.2
+  - 3.6.3
+  - 3.6.4
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15896
+modified: '2021-03-09T04:49:05.257253Z'
+created: '2020-07-28T00:00:14.887375Z'

@@ -1,0 +1,24 @@
+id: OSV-2020-58
+package:
+  name: hostap
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in asn1_get_next
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20373
+
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  asn1_get_next
+  x509_parse_ext_certificate_policies
+  x509_parse_extension_data
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: git://w1.fi/srv/git/hostap.git
+    introduced: d165b32f388735ad921bd662eee2cafb56d4ee24
+    fixed: 76162b18280b174cd5e7101c9678f69785409fa3
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20373
+modified: '2021-03-09T04:49:05.963639Z'
+created: '2020-06-24T01:51:12.185211Z'

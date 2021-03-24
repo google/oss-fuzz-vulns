@@ -1,0 +1,24 @@
+id: OSV-2020-1702
+package:
+  name: rnp
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in mem_src_read
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25388
+
+  Crash type: Heap-buffer-overflow READ {*}
+  Crash state:
+  mem_src_read
+  src_peek
+  src_eof
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/rnpgp/rnp.git
+    introduced: 29ab1870c84737b836fd6ea7ee1d7cd9d1ecfafb
+    fixed: 1c43db6db6ec3c8f84d6d751f904ab8558561430
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25388
+modified: '2021-03-09T04:49:05.396832Z'
+created: '2020-09-04T00:00:43.281890Z'

@@ -1,0 +1,23 @@
+id: OSV-2020-125
+package:
+  name: arrow
+  ecosystem: OSS-Fuzz
+summary: Negative-size-param in parquet::PlainByteArrayDecoder::DecodeArrowDense
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20669
+
+  Crash type: Negative-size-param
+  Crash state:
+  parquet::PlainByteArrayDecoder::DecodeArrowDense
+  parquet::PlainByteArrayDecoder::DecodeArrow
+  parquet::internal::ByteArrayChunkedRecordReader::ReadValuesSpaced
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/apache/arrow.git
+    introduced: 431fdbfbc0fb4bb16c4a89298404ad16784db2a0
+    fixed: d2ab289294f5eaa175e6bc4ab5fb74b5ea013f6e
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20669
+modified: '2021-03-09T04:49:05.168933Z'
+created: '2020-06-24T01:51:15.244409Z'

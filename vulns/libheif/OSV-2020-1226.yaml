@@ -1,0 +1,27 @@
+id: OSV-2020-1226
+package:
+  name: libheif
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in void mc_chroma<unsigned short>
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13583
+
+  Crash type: Heap-buffer-overflow READ 2
+  Crash state:
+  void mc_chroma<unsigned short>
+  generate_inter_prediction_samples
+  decode_prediction_unit
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/strukturag/libheif.git
+    introduced: unknown:0acdca433f338f1f378f6f104e72f5f95c4f8568
+    fixed: 12b68bbeadb3ea56415b2f656b471f122d72dc80
+  versions:
+  - v1.5.0
+  - v1.5.1
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13583
+modified: '2021-03-09T04:49:05.156572Z'
+created: '2020-07-22T21:49:58.234804Z'

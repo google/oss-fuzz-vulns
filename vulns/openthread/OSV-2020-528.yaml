@@ -1,0 +1,24 @@
+id: OSV-2020-528
+package:
+  name: openthread
+  ecosystem: OSS-Fuzz
+summary: Stack-buffer-overflow in ot::Message::Read
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=17330
+
+  Crash type: Stack-buffer-overflow WRITE {*}
+  Crash state:
+  ot::Message::Read
+  ot::NetworkData::Leader::HandleCommissioningGet
+  ot::Coap::CoapBase::ProcessReceivedRequest
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/openthread/openthread
+    introduced: 68426e236fe8a15884c3893a2083663687b2610f
+    fixed: 8be8bf1fdff6181453a2c5e946618186b8b64c54
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=17330
+modified: '2021-03-09T04:49:05.936653Z'
+created: '2020-07-01T00:00:14.832074Z'

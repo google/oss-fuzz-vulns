@@ -1,0 +1,29 @@
+id: OSV-2020-831
+package:
+  name: glib
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in g_string_insert_len
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23816
+
+  Crash type: Heap-buffer-overflow READ 5
+  Crash state:
+  g_string_insert_len
+  g_string_append_len
+  _uri_encoder
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://gitlab.gnome.org/GNOME/glib
+    introduced: 0bf12c8bfa201c01c40e03cb35195b7809284578
+    fixed: b43fb9cbfb033132e970f8b587d709c582dee1a0
+  versions:
+  - 2.65.1
+  - 2.65.2
+  - 2.65.3
+  - 2.66.0
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23816
+modified: '2021-03-09T04:49:06.101Z'
+created: '2020-07-14T22:13:38.399117Z'

@@ -1,0 +1,51 @@
+id: OSV-2017-79
+package:
+  name: curl
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in fuzz_read_callback
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=4785
+
+  Crash type: Heap-buffer-overflow WRITE {*}
+  Crash state:
+  fuzz_read_callback
+  Curl_fillreadbuffer
+  readwrite_upload
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/curl/curl.git
+    introduced: 1cb4f5d6e8e470638759a48ba99fda230089712f:e240a546a7ac2fa7956adb664b8c40c4dee4f82b
+    fixed: b399b04902c43f479b51b142505700edcfc34271:ab6eb2ec0744074004980d0f98677e52b215941f
+  versions:
+  - curl-7_57_0
+  - curl-7_58_0
+  - curl-7_59_0
+  - curl-7_60_0
+  - curl-7_61_0
+  - curl-7_61_1
+  - curl-7_62_0
+  - curl-7_63_0
+  - curl-7_64_0
+  - curl-7_64_1
+  - curl-7_65_0
+  - curl-7_65_1
+  - curl-7_65_2
+  - curl-7_65_3
+  - curl-7_66_0
+  - curl-7_67_0
+  - curl-7_68_0
+  - curl-7_69_0
+  - curl-7_69_1
+  - curl-7_70_0
+  - curl-7_71_0
+  - curl-7_71_1
+  - curl-7_72_0
+  - curl-7_73_0
+  - curl-7_74_0
+  - tiny-curl-7_72_0
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=4785
+modified: '2021-03-09T04:49:04.804315Z'
+created: '2021-01-13T21:57:35.291125Z'

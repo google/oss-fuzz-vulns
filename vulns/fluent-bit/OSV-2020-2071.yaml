@@ -1,0 +1,24 @@
+id: OSV-2020-2071
+package:
+  name: fluent-bit
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in flb_log_print
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26325
+
+  Crash type: Heap-buffer-overflow READ {*}
+  Crash state:
+  flb_log_print
+  flb_parser_typecast
+  logfmt_parser
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/fluent/fluent-bit/
+    introduced: dc234b10f5e7a0a6f7fcc35609f12e9f48420bd4
+    fixed: 7f0c3bb1bd8645ca556125b5afae8db77f973085
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26325
+modified: '2021-03-09T04:49:05.594110Z'
+created: '2020-10-15T00:00:37.893897Z'

@@ -1,0 +1,26 @@
+id: OSV-2018-17
+package:
+  name: poppler
+  ecosystem: OSS-Fuzz
+summary: Use-of-uninitialized-value in FT_Set_Transform
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=8811
+
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  FT_Set_Transform
+  SplashFTFont::makeGlyph
+  SplashFont::getGlyph
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://gitlab.freedesktop.org/poppler/poppler.git
+    introduced: a76c8fbd50a3a5cbe0487158e9d2b325e596d2c6:1750c0155762e75d0a80ab55b50d1bfd172c2430
+    fixed: af4d5f31705dcfd65319da430f87744b5c1f3616
+  versions:
+  - poppler-0.66.0
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=8811
+modified: '2021-03-09T04:49:04.853490Z'
+created: '2021-01-13T00:00:06.651120Z'

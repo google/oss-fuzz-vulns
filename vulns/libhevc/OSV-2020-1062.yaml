@@ -1,0 +1,29 @@
+id: OSV-2020-1062
+package:
+  name: libhevc
+  ecosystem: OSS-Fuzz
+summary: Use-of-uninitialized-value in ihevc_recon_4x4_ttype1
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18991
+
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  ihevc_recon_4x4_ttype1
+  ihevcd_iquant_itrans_recon_ctb
+  ihevcd_process
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://android.googlesource.com/platform/external/libhevc
+    introduced: unknown:d28f2210ee8e65afdfb07a1fd6582285d3d178e0
+    fixed: 445e0d8d5ec10fcb8e43117c01ec6a671246ce69
+  versions:
+  - android-mainline-10.0.0_r11
+  - android-mainline-10.0.0_r6
+  - android-mainline-10.0.0_r8
+  - platform-tools-29.0.5
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18991
+modified: '2021-03-09T04:49:05.068673Z'
+created: '2020-07-22T21:49:44.388184Z'

@@ -1,0 +1,24 @@
+id: OSV-2018-31
+package:
+  name: dav1d
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in emu_edge_c
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11389
+
+  Crash type: Heap-buffer-overflow READ 2
+  Crash state:
+  emu_edge_c
+  warp_affine
+  dav1d_recon_b_inter_8bpc
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://code.videolan.org/videolan/dav1d.git
+    introduced: 4a646a0ca25a22a809bfcb743332f6b6646d86a3:ec53ec6d5b4ebbb06d5c7209fd4f25634a6ad606
+    fixed: cf9ec49ac7d0c766ea88ea801c0831bca3e663a9
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11389
+modified: '2021-03-09T04:49:04.928598Z'
+created: '2021-01-13T00:00:13.344740Z'

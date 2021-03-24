@@ -1,0 +1,26 @@
+id: OSV-2020-658
+package:
+  name: perfetto
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in inflate
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15495
+
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  inflate
+  perfetto::trace_processor::GzipTraceParser::Parse
+  perfetto::trace_processor::TraceProcessorImpl::Parse
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://android.googlesource.com/platform/external/perfetto/
+    introduced: c263bd28975bb3a7ec68f324cbee87cc20559b48
+    fixed: 4973513f89e0b42ee40bea3f1420a4738a15b719
+  versions:
+  - platform-tools-29.0.2
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15495
+modified: '2021-03-09T04:49:06.006803Z'
+created: '2020-07-01T00:00:22.988954Z'

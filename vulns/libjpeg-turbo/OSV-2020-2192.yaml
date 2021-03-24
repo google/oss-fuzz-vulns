@@ -1,0 +1,26 @@
+id: OSV-2020-2192
+package:
+  name: libjpeg-turbo
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in decompress_smooth_data
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=27852
+
+  Crash type: Heap-buffer-overflow READ 2
+  Crash state:
+  decompress_smooth_data
+  process_data_context_main
+  jpeg_read_scanlines
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/libjpeg-turbo/libjpeg-turbo
+    introduced: 6d91e950c871103a11bac2f10c63bf998796c719
+    fixed: ccaba5d7894ecfb5a8f11e48d3f86e1f14d5a469
+  versions:
+  - 2.0.90
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=27852
+modified: '2021-03-09T04:49:05.710055Z'
+created: '2020-11-26T00:00:47.446491Z'

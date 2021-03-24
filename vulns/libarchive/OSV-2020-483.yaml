@@ -1,0 +1,26 @@
+id: OSV-2020-483
+package:
+  name: libarchive
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in run_arm_filter
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15431
+
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  run_arm_filter
+  run_filter
+  apply_filters
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/libarchive/libarchive.git
+    introduced: 4bd12b6f40cb4413c8970c52f15f3b6885b5e32f
+    fixed: 6af08cff8e07824530b4ebef2689fc6cc60c4d03
+  versions:
+  - v3.4.0
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15431
+modified: '2021-03-09T04:49:05.912814Z'
+created: '2020-07-01T00:00:12.210263Z'

@@ -1,0 +1,24 @@
+id: OSV-2018-173
+package:
+  name: openvswitch
+  ecosystem: OSS-Fuzz
+summary: Stack-buffer-overflow in nullable_memcpy
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=10865
+
+  Crash type: Stack-buffer-overflow READ {*}
+  Crash state:
+  nullable_memcpy
+  nsh_key_to_attr
+  parse_odp_push_nsh_action
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/openvswitch/ovs.git
+    introduced: ea43b024a8a03f6648d0e06589137a4fbfea9f5a
+    fixed: 33a3ee6b39acd9799301ec6cc0069bc9e4b4428b
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=10865
+modified: '2021-03-09T04:49:04.855353Z'
+created: '2021-01-13T00:01:11.531593Z'

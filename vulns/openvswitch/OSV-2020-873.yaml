@@ -1,0 +1,30 @@
+id: OSV-2020-873
+package:
+  name: openvswitch
+  ecosystem: OSS-Fuzz
+summary: Use-of-uninitialized-value in format_u8x
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21426
+
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  format_u8x
+  format_odp_tun_gtpu_opt
+  format_odp_tun_attr
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/openvswitch/ovs.git
+    introduced: 3c6d05a02e0fd2cde2f988a0e41a19f47c3d6947
+    fixed: 1e1a15669e324e0971c46a31f3de233e3a0ba5b2
+  - type: GIT
+    repo: https://github.com/openvswitch/ovs.git
+    introduced: 3c6d05a02e0fd2cde2f988a0e41a19f47c3d6947
+    fixed: 5aa1bdc8e40d2df512de6197a8ab58c2e9aa1fc4
+  versions:
+  - v2.14.0
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21426
+modified: '2021-03-09T04:49:06.126171Z'
+created: '2020-07-14T22:13:52.385826Z'

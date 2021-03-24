@@ -1,0 +1,29 @@
+id: OSV-2020-1872
+package:
+  name: ghostscript
+  ecosystem: OSS-Fuzz
+summary: Use-of-uninitialized-value in s_exD_process
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21643
+
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  s_exD_process
+  sreadbuf
+  sgets
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: git://git.ghostscript.com/ghostpdl.git
+    introduced: unknown:668917a10e7eada030f7d2dddec9f579fddeed3d
+    fixed: 9e85e7a9518aa19964f1f8d30d3175ef8c3b950f
+  versions:
+  - ghostpdl-9.52-test-base-3
+  - ghostpdl-9.52-test-base-4
+  - ghostpdl-9.52-test-base-5
+  - ghostpdl-9.52-test-base-6
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21643
+modified: '2021-03-09T04:49:05.485152Z'
+created: '2020-09-29T00:00:20.147910Z'

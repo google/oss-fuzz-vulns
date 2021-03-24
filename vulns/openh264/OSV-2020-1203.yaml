@@ -1,0 +1,28 @@
+id: OSV-2020-1203
+package:
+  name: openh264
+  ecosystem: OSS-Fuzz
+summary: Heap-use-after-free in WelsDec::WelsReorderRefList
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20491
+
+  Crash type: Heap-use-after-free READ 4
+  Crash state:
+  WelsDec::WelsReorderRefList
+  WelsDec::InitRefPicList
+  WelsDec::DecodeCurrentAccessUnit
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/cisco/openh264.git
+    introduced: unknown:70eeb783515dbfee3e0c781d6667838caba5113b
+    fixed: 68b51e8aed5ea83bcbb9da90af03023ce54a5427
+  versions:
+  - v2.0.0
+  - v2.1.0
+  - v2.1.1
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20491
+modified: '2021-03-09T04:49:05.144786Z'
+created: '2020-07-22T21:49:56.222517Z'

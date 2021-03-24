@@ -1,0 +1,24 @@
+id: OSV-2020-72
+package:
+  name: gnutls
+  ecosystem: OSS-Fuzz
+summary: Use-of-uninitialized-value in print_crl
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21153
+
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  print_crl
+  gnutls_x509_crl_print
+  gnutls_x509_crl_parser_fuzzer.c
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://gitlab.com/gnutls/gnutls.git
+    introduced: 0761a7d8e3eea114e8ce063b4d72f42b0e36a291:145ac5ff22db107b484454367f6dc037db2b9ac5
+    fixed: 6df0dab742b4ee5bd3fa55680657326305bde8cc:82bd85449f867a838dfe47475f9f5c0364ec1dd9
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21153
+modified: '2021-03-09T04:49:06.040302Z'
+created: '2020-06-24T01:51:12.820554Z'

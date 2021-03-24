@@ -1,0 +1,24 @@
+id: OSV-2018-156
+package:
+  name: yara
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in dotnet_parse_us
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11945
+
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  dotnet_parse_us
+  dotnet_parse_com
+  dotnet__load
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/VirusTotal/yara.git
+    introduced: aa182b4f928e54189fe51606d4dc419e7b27022f
+    fixed: 7493247020e24407f120b6b29f6dd43c883e2f21
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11945
+modified: '2021-03-09T04:49:04.846434Z'
+created: '2021-01-13T00:01:07.126725Z'

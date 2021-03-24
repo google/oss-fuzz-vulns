@@ -1,0 +1,37 @@
+id: OSV-2020-1577
+package:
+  name: qt
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in QPointF::x
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24615
+
+  Crash type: Heap-buffer-overflow READ 8
+  Crash state:
+  QPointF::x
+  QBezier::fromPoints
+  QOutlineMapper::curveTo
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: git://code.qt.io/qt/qt5.git
+    introduced: ac489d92a3ae32540c4794d85be6fb103c701ee8:1095b1abc6d233bc27321f46f71bbd85fe8556de
+    fixed: b19292f1bd145dbe691aafb8b345f02812ad682f
+  versions:
+  - v5.15.1
+  - v6.0.0
+  - v6.0.0-alpha1
+  - v6.0.0-beta1
+  - v6.0.0-beta2
+  - v6.0.0-beta3
+  - v6.0.0-beta4
+  - v6.0.0-beta5
+  - v6.0.0-rc1
+  - v6.0.0-rc2
+  - v6.0.1
+  - v6.1.0-alpha1
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24615
+modified: '2021-03-09T04:49:05.337775Z'
+created: '2020-08-04T00:00:33.938651Z'

@@ -1,0 +1,41 @@
+id: OSV-2018-389
+package:
+  name: boost
+  ecosystem: OSS-Fuzz
+summary: UNKNOWN READ in boost::re_detail_NUMBER::basic_regex_creator<char, boost::regex_traits<char,
+  boo
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=6708
+
+  Crash type: UNKNOWN READ
+  Crash state:
+  boost::re_detail_NUMBER::basic_regex_creator<char, boost::regex_traits<char, boo
+  boost::re_detail_NUMBER::basic_regex_creator<char, boost::regex_traits<char, boo
+  boost::re_detail_NUMBER::basic_regex_parser<char, boost::regex_traits<char, boos
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/boostorg/boost.git
+    introduced: 34ecafd457688d6124ec20489e4e5f4482374a29:a5836469835ec3ac377df07cfbb5bc2dca88396c
+    fixed: b078cd00e84a8ff8a901ebf6d78b65aaada8149d:1b085e6b351350816a6ad6e2f1a88e519b093382
+  versions:
+  - boost-1.66.0
+  - boost-1.66.0-beta1
+  - boost-1.67.0
+  - boost-1.67.0-beta1
+  - boost-1.68.0
+  - boost-1.69.0
+  - boost-1.69.0-beta1
+  - boost-1.70.0
+  - boost-1.70.0.beta1
+  - boost-1.71.0
+  - boost-1.71.0.beta1
+  - boost-1.72.0
+  - boost-1.72.0.beta1
+  - boost-1.73.0
+  - boost-1.73.0.beta1
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=6708
+modified: '2021-03-09T04:49:04.968913Z'
+created: '2021-01-15T00:01:08.730847Z'

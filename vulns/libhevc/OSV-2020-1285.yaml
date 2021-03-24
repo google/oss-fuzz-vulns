@@ -1,0 +1,29 @@
+id: OSV-2020-1285
+package:
+  name: libhevc
+  ecosystem: OSS-Fuzz
+summary: Use-of-uninitialized-value in ihevc_deblk_luma_vert_ssse3
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=17009
+
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  ihevc_deblk_luma_vert_ssse3
+  ihevcd_deblk_ctb
+  ihevcd_process
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://android.googlesource.com/platform/external/libhevc
+    introduced: unknown:d28f2210ee8e65afdfb07a1fd6582285d3d178e0
+    fixed: 4d36db275bb4d0abc410415f6d8f5af4bc179102
+  versions:
+  - android-mainline-10.0.0_r11
+  - android-mainline-10.0.0_r6
+  - android-mainline-10.0.0_r8
+  - platform-tools-29.0.5
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=17009
+modified: '2021-03-09T04:49:05.188281Z'
+created: '2020-07-22T21:50:02.950786Z'

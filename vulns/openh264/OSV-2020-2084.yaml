@@ -1,0 +1,24 @@
+id: OSV-2020-2084
+package:
+  name: openh264
+  ecosystem: OSS-Fuzz
+summary: UNKNOWN READ in WelsCommon::WelsMalloc
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26420
+
+  Crash type: UNKNOWN READ
+  Crash state:
+  WelsCommon::WelsMalloc
+  WelsCommon::CMemoryAlign::WelsMalloc
+  WelsCommon::CMemoryAlign::WelsMallocz
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/cisco/openh264.git
+    introduced: 83a0eae9bbbda5bfe802438109a025a3d7caee10:992c1c147175126c3fe7ab78216aa0395f9e6c71
+    fixed: 992c1c147175126c3fe7ab78216aa0395f9e6c71
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26420
+modified: '2021-03-09T04:49:05.601025Z'
+created: '2020-10-18T00:00:42.312751Z'

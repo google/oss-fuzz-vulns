@@ -1,0 +1,38 @@
+id: OSV-2020-1871
+package:
+  name: ghostscript
+  ecosystem: OSS-Fuzz
+summary: Segv on unknown address in s_DCTD_process
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21416
+
+  Crash type: Segv on unknown address
+  Crash state:
+  s_DCTD_process
+  sreadbuf
+  s_process_read_buf
+affects:
+  ranges:
+  - type: GIT
+    repo: git://git.ghostscript.com/ghostpdl.git
+    introduced: bd73d0c1d0c42fd1671b56f1277b5e9f25391907
+    fixed: bad9f11895cbb4c0f53b7b0ef8f3502789d81315:d703f355af5292e61dcd641332e249873ab5fb8a
+  versions:
+  - ghostpdl-9.51
+  - ghostpdl-9.51rc1
+  - ghostpdl-9.51rc2
+  - ghostpdl-9.51rc2_test
+  - ghostpdl-9.51rc2_test2
+  - ghostpdl-9.51rc3
+  - ghostpdl-9.52
+  - ghostpdl-9.52-test-base-1
+  - ghostpdl-9.52-test-base-2
+  - ghostpdl-9.52-test-base-3
+  - ghostpdl-9.52-test-base-4
+  - ghostpdl-9.52.1
+  - ghostscript-9.51
+  - ghostscript-9.52
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21416
+modified: '2021-03-09T04:49:05.484514Z'
+created: '2020-09-29T00:00:17.109944Z'

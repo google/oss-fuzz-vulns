@@ -1,0 +1,24 @@
+id: OSV-2020-1242
+package:
+  name: libavc
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in ih264d_cavlc_parse4x4coeff_n8
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=16587
+
+  Crash type: Heap-buffer-overflow READ 4
+  Crash state:
+  ih264d_cavlc_parse4x4coeff_n8
+  ih264d_cavlc_parse_8x8block_both_available
+  ih264d_parse_residual4x4_cavlc
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://android.googlesource.com/platform/external/libavc
+    introduced: unknown:9046ac21822cbb46358b5731294e6e47db571e34
+    fixed: 6b7b0ac4eefa224de0d33a5036b55f416ee4e224
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=16587
+modified: '2021-03-09T04:49:05.165275Z'
+created: '2020-07-22T21:49:59.528779Z'

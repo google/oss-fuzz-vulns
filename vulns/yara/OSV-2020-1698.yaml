@@ -1,0 +1,28 @@
+id: OSV-2020-1698
+package:
+  name: yara
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in macho_handle_segment
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25385
+
+  Crash type: Heap-buffer-overflow READ {*}
+  Crash state:
+  macho_handle_segment
+  macho_parse_file
+  macho__load
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/VirusTotal/yara.git
+    introduced: 39076d2eb2d529dd4a47a61d79454554e22551b9
+    fixed: c6b3c4d1e0daa478e0592446cfd349a14acf9c81:94299eee3819d7cef18faaae52251596888e22cd
+  - type: GIT
+    repo: https://github.com/VirusTotal/yara.git
+    introduced: 39076d2eb2d529dd4a47a61d79454554e22551b9
+    fixed: 94299eee3819d7cef18faaae52251596888e22cd
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25385
+modified: '2021-03-15T04:54:58.147807Z'
+created: '2020-09-04T00:00:09.191362Z'

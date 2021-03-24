@@ -1,0 +1,24 @@
+id: OSV-2021-222
+package:
+  name: htslib
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in arith_uncompress_to
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29792
+
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  arith_uncompress_to
+  cram_uncompress_block
+  cram_read_SAM_hdr
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/samtools/htslib.git
+    introduced: 0d1971cbebb269d90a563464e4f56987290e20ab
+    fixed: a01a139ac1fa365a688ec8734d62ef859a8bc416
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29792
+modified: '2021-02-27T12:00:50.370955Z'
+created: '2021-01-23T00:01:01.932285Z'

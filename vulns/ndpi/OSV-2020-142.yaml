@@ -1,0 +1,24 @@
+id: OSV-2020-142
+package:
+  name: ndpi
+  ecosystem: OSS-Fuzz
+summary: Heap-use-after-free in ndpi_strncasestr
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22816
+
+  Crash type: Heap-use-after-free READ 1
+  Crash state:
+  ndpi_strncasestr
+  ndpi_http_check_content
+  ndpi_int_http_add_connection
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/ntop/nDPI.git
+    introduced: 1edf5c49d662f7944ee976a63d54980a270a2419
+    fixed: 374a24a1fb373617be23d7cbb397b47d23a5ffda
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22816
+modified: '2021-03-09T04:49:05.256764Z'
+created: '2020-06-24T01:51:16.020859Z'

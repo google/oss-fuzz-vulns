@@ -1,0 +1,24 @@
+id: OSV-2020-190
+package:
+  name: file
+  ecosystem: OSS-Fuzz
+summary: Use-of-uninitialized-value in file_vprintf
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20729
+
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  file_vprintf
+  file_printf
+  file_buffer
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/file/file.git
+    introduced: 0717383f58e5737cc4aa28446f5a8839d484caf4
+    fixed: 4f1887eb56f4abdf448274afc5abdc8f9d078929
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20729
+modified: '2021-03-09T04:49:05.500452Z'
+created: '2020-06-24T01:51:18.178456Z'

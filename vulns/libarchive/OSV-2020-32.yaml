@@ -1,0 +1,26 @@
+id: OSV-2020-32
+package:
+  name: libarchive
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in read_bits_16
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20459
+
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  read_bits_16
+  decode_number
+  do_uncompress_block
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/libarchive/libarchive.git
+    introduced: c9267d665c30fa78023bd70b8e9c6f02450777e2
+    fixed: 94821008d6eea81e315c5881cdf739202961040a
+  versions:
+  - v3.4.1
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20459
+modified: '2021-03-09T04:49:05.823525Z'
+created: '2020-06-24T01:51:11.044419Z'

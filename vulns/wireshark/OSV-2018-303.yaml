@@ -1,0 +1,28 @@
+id: OSV-2018-303
+package:
+  name: wireshark
+  ecosystem: OSS-Fuzz
+summary: UNKNOWN READ in _gcry_aes_cbc_enc
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=6336
+
+  Crash type: UNKNOWN READ
+  Crash state:
+  _gcry_aes_cbc_enc
+  cmac_write
+  _gcry_cipher_cmac_authenticate
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://gitlab.com/wireshark/wireshark.git
+    introduced: 8fbad3dd56b45874463f9d811b80006314413c0e:95c50e3dd766e919953def30f65ba5496226a660
+    fixed: bc43d687f0751cb95ecd9446589e7b37506ff1c6
+  versions:
+  - v2.5.0
+  - v2.5.1rc0
+  - wireshark-2.5.0
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=6336
+modified: '2021-03-09T04:49:04.925411Z'
+created: '2021-01-15T00:00:29.537688Z'

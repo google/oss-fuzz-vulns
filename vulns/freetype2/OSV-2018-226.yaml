@@ -1,0 +1,24 @@
+id: OSV-2018-226
+package:
+  name: freetype2
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in pcf_get_encodings
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=9561
+
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  pcf_get_encodings
+  pcf_load_font
+  PCF_Face_Init
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/freetype/freetype2-testing.git
+    introduced: 20cbff1970d10e1f7086a5ef89ada4229481bb1e:f646e9f4598f261ebcef6f989c883428987f4975
+    fixed: 2e9a544016422f96f9bbedc40e269adc289c78ef:1f744836ee1bb7b9c0c22b32f55eec9f96160563
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=9561
+modified: '2021-03-09T04:49:04.885628Z'
+created: '2021-01-13T00:01:33.631607Z'

@@ -1,0 +1,24 @@
+id: OSV-2021-240
+package:
+  name: htslib
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in safe_itf8_get
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29908
+
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  safe_itf8_get
+  cram_decode_compression_header
+  cram_first_slice
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/samtools/htslib.git
+    introduced: 0d1971cbebb269d90a563464e4f56987290e20ab
+    fixed: 90fef7300c75ca6b8834da0dcb710e27d599324e
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29908
+modified: '2021-02-27T12:00:50.374644Z'
+created: '2021-01-26T00:01:01.964692Z'

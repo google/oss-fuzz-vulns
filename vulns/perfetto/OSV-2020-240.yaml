@@ -1,0 +1,24 @@
+id: OSV-2020-240
+package:
+  name: perfetto
+  ecosystem: OSS-Fuzz
+summary: UNKNOWN READ in perfetto::trace_processor::TraceStorage::GetIdForVariadicType
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=19999
+
+  Crash type: UNKNOWN READ
+  Crash state:
+  perfetto::trace_processor::TraceStorage::GetIdForVariadicType
+  perfetto::trace_processor::GlobalArgsTracker::AddArgSet
+  perfetto::trace_processor::ArgsTracker::Flush
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://android.googlesource.com/platform/external/perfetto/
+    introduced: caa32a5536829412b148a3a573530b40ce347b75
+    fixed: 0c7921b510e02ac4b935953225e4586b3f5d923c
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=19999
+modified: '2021-03-09T04:49:05.780524Z'
+created: '2020-06-26T00:00:09.058036Z'

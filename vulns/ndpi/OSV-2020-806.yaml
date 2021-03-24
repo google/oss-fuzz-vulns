@@ -1,0 +1,23 @@
+id: OSV-2020-806
+package:
+  name: ndpi
+  ecosystem: OSS-Fuzz
+summary: Segv on unknown address in process_ndpi_collected_info
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22122
+
+  Crash type: Segv on unknown address
+  Crash state:
+  process_ndpi_collected_info
+  packet_processing
+  ndpi_workflow_process_packet
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/ntop/nDPI.git
+    introduced: 4a09b4efa053a26e187119a540da4b41dd8a24d8
+    fixed: d90b333363b157d8eab9205430c83dab986ff965
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22122
+modified: '2021-03-09T04:49:06.087401Z'
+created: '2020-07-14T05:37:42.995133Z'

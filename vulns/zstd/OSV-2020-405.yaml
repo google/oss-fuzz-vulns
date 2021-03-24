@@ -1,0 +1,27 @@
+id: OSV-2020-405
+package:
+  name: zstd
+  ecosystem: OSS-Fuzz
+summary: Stack-buffer-overflow in ZSTD_decodeLiteralsBlock
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=16445
+
+  Crash type: Stack-buffer-overflow WRITE {*}
+  Crash state:
+  ZSTD_decodeLiteralsBlock
+  ZSTD_decompressBlock
+  ZSTD_decompressDCtx
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/facebook/zstd
+    introduced: 610a81ecf9593893ed2f69718d3ecbd234297804
+    fixed: a42bbb4e058063be8b61b3e00306eb6fb886a836
+  versions:
+  - v1.4.1
+  - v1.4.2
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=16445
+modified: '2021-03-09T04:49:05.870103Z'
+created: '2020-07-01T00:00:07.677115Z'

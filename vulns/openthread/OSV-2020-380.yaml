@@ -1,0 +1,24 @@
+id: OSV-2020-380
+package:
+  name: openthread
+  ecosystem: OSS-Fuzz
+summary: Stack-buffer-overflow in ot::MeshCoP::ChannelMaskEntry::GetMask
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13619
+
+  Crash type: Stack-buffer-overflow READ 4
+  Crash state:
+  ot::MeshCoP::ChannelMaskEntry::GetMask
+  ot::MeshCoP::ChannelMaskTlv::GetChannelMask
+  ot::MeshCoP::ChannelMaskTlv::GetChannelMask
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/openthread/openthread
+    introduced: 96725a985ed57a64721c61c4721e5792b44264c5
+    fixed: e82531507b7bd1efe6c70ebf4741d5c05c05c6ab
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13619
+modified: '2021-03-09T04:49:05.856727Z'
+created: '2020-07-01T00:00:06.263172Z'

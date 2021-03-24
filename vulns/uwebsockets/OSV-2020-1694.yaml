@@ -1,0 +1,28 @@
+id: OSV-2020-1694
+package:
+  name: uwebsockets
+  ecosystem: OSS-Fuzz
+summary: Segv on unknown address in std::__1::__tree<std::__1::__value_type<unsigned
+  int, std::__1::pair<std::__1::b
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25376
+
+  Crash type: Segv on unknown address
+  Crash state:
+  std::__1::__tree<std::__1::__value_type<unsigned int, std::__1::pair<std::__1::b
+  uWS::TopicTree::drain
+  std::__1::__function::__func<LLVMFuzzerTestOneInput::$_1, std::__1::allocator<LL
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/uNetworking/uWebSockets.git
+    introduced: c2dbcf0c046d50a8b53a6c2d9b522c201f17a338
+    fixed: 03fca626a95130ab80f86adada54b29d27242759
+  versions:
+  - v18.11.0
+  - v18.12.0
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25376
+modified: '2021-03-09T04:49:05.392590Z'
+created: '2020-09-04T00:00:07.333173Z'

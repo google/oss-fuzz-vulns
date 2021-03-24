@@ -1,0 +1,25 @@
+id: OSV-2020-1417
+package:
+  name: libraw
+  ecosystem: OSS-Fuzz
+summary: Index-out-of-bounds in DHT::get_hv_rbg
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23870
+
+  Crash type: Index-out-of-bounds
+  Crash state:
+  DHT::get_hv_rbg
+  DHT::make_hv_dline
+  DHT::make_hv_dirs
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/libraw/libraw
+    introduced: 5eeffd556eec1e2baea7826a4be20664f9d70662
+  versions:
+  - 0.20.0
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23870
+modified: '2021-03-16T05:31:24.551933Z'
+created: '2020-07-28T00:00:14.188786Z'

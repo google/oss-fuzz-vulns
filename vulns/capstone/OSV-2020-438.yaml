@@ -1,0 +1,26 @@
+id: OSV-2020-438
+package:
+  name: capstone
+  ecosystem: OSS-Fuzz
+summary: Use-of-uninitialized-value in ARM_post_printer
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13768
+
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  ARM_post_printer
+  fill_insn
+  cs_disasm
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/aquynh/capstone.git
+    introduced: 4156eefd32479dbea8011612ff14a4946dbcc4a2
+    fixed: fb11ad1a4abe90b0ca34f1fa4cdbb7687f6e0aad:fb6179eca88e6d0af801cf046446161459ad6a55
+  versions:
+  - 4.0.2
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13768
+modified: '2021-03-09T04:49:05.887618Z'
+created: '2020-07-01T00:00:09.576759Z'

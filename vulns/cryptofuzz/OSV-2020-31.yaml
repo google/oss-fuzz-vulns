@@ -1,0 +1,24 @@
+id: OSV-2020-31
+package:
+  name: cryptofuzz
+  ecosystem: OSS-Fuzz
+summary: Heap-use-after-free in AES_wrap_key
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23014
+
+  Crash type: Heap-use-after-free READ 8
+  Crash state:
+  AES_wrap_key
+  aes_wrap_cipher
+  EVP_EncryptUpdate
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/guidovranken/cryptofuzz
+    introduced: 65d7aca879ee557b80ebc9b06cea0a3197b91e64
+    fixed: 27a32a5381e525de5646bb23898a1748cd09172a
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23014
+modified: '2021-03-09T04:49:05.818198Z'
+created: '2020-06-24T01:51:10.989967Z'

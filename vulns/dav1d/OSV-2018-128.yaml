@@ -1,0 +1,24 @@
+id: OSV-2018-128
+package:
+  name: dav1d
+  ecosystem: OSS-Fuzz
+summary: Use-of-uninitialized-value in iclip
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11392
+
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  iclip
+  avg_c
+  dav1d_recon_b_inter_16bpc
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://code.videolan.org/videolan/dav1d.git
+    introduced: 4a646a0ca25a22a809bfcb743332f6b6646d86a3:ec53ec6d5b4ebbb06d5c7209fd4f25634a6ad606
+    fixed: ec53ec6d5b4ebbb06d5c7209fd4f25634a6ad606:a6b94ca9e5cded0070419a02d9cadaa5f45b2d0d
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11392
+modified: '2021-03-09T04:49:04.831421Z'
+created: '2021-01-13T00:00:57.531193Z'

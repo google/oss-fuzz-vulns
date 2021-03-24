@@ -1,0 +1,24 @@
+id: OSV-2020-79
+package:
+  name: libspng
+  ecosystem: OSS-Fuzz
+summary: Use-of-uninitialized-value in check_exif
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22714
+
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  check_exif
+  read_non_idat_chunks
+  read_chunks
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/randy408/libspng.git
+    introduced: 56ea34629ac4e56f2264f7a8212b228873e9f174
+    fixed: 04b668f9824d0c52cdc0a0b7e58bf767d2a385fc
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22714
+modified: '2021-03-09T04:49:06.076712Z'
+created: '2020-06-24T01:51:13.128983Z'

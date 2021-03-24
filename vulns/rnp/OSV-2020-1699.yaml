@@ -1,0 +1,24 @@
+id: OSV-2020-1699
+package:
+  name: rnp
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in rnp_key_store_kbx_from_src
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25386
+
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  rnp_key_store_kbx_from_src
+  rnp_load_keys
+  keyring_kbx.c
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/rnpgp/rnp.git
+    introduced: 29ab1870c84737b836fd6ea7ee1d7cd9d1ecfafb
+    fixed: a78cdb748a715796613c59f07575737b767fcab9
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25386
+modified: '2021-03-09T04:49:05.394948Z'
+created: '2020-09-04T00:00:16.840683Z'

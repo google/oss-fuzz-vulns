@@ -1,0 +1,22 @@
+id: OSV-2020-2085
+package:
+  name: openh264
+  ecosystem: OSS-Fuzz
+summary: UNKNOWN READ in decoder_fuzzer
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26428
+
+  Crash type: UNKNOWN READ
+  Crash state:
+  decoder_fuzzer
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/cisco/openh264.git
+    introduced: 84590b641f4bd07ae448bdb05cb5700d991efa53:effb3931c7c67f34b167fe6e0a93253bf075f78c
+    fixed: b52786888ddce9d6bc06b7825ba9bffc65924e0c
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26428
+modified: '2021-02-25T00:08:07.109519Z'
+created: '2020-10-18T00:00:44.007704Z'

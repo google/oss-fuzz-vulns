@@ -1,0 +1,36 @@
+id: OSV-2020-2245
+package:
+  name: qpdf
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in Pl_ASCII85Decoder::write
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=28262
+
+  Crash type: Heap-buffer-overflow WRITE 1
+  Crash state:
+  Pl_ASCII85Decoder::write
+  Pl_AES_PDF::flush
+  Pl_AES_PDF::finish
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/qpdf/qpdf.git
+    introduced: f561a5df325945c896bdec266d2e457a002fef0e
+    fixed: dc92574c10f3e2516ec6445b88c5d584f40df4e5
+  versions:
+  - release-qpdf-10.0.0
+  - release-qpdf-10.0.1
+  - release-qpdf-10.0.2
+  - release-qpdf-10.0.3
+  - release-qpdf-10.0.4
+  - release-qpdf-9.0.0
+  - release-qpdf-9.0.1
+  - release-qpdf-9.0.2
+  - release-qpdf-9.1.0
+  - release-qpdf-9.1.1
+  - release-qpdf-9.1.rc1
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=28262
+modified: '2021-03-09T04:49:05.740792Z'
+created: '2020-12-06T00:00:11.834199Z'

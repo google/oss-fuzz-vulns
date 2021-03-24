@@ -1,0 +1,26 @@
+id: OSV-2020-1053
+package:
+  name: quickjs
+  ecosystem: OSS-Fuzz
+summary: UNKNOWN READ in js_parse_source_element
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21404
+
+  Crash type: UNKNOWN READ
+  Crash state:
+  js_parse_source_element
+  __JS_EvalInternal
+  JS_Eval
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/horhof/quickjs
+    introduced: unknown:5ae7ebbeecc4210e763ad76555571e3b31db6e24
+    fixed: 1bf1aba3af61529a282528c8c382b5f078cce63f
+  versions:
+  - '20200316'
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21404
+modified: '2021-03-09T04:49:05.063979Z'
+created: '2020-07-22T21:49:43.353213Z'

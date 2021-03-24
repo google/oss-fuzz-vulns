@@ -1,0 +1,24 @@
+id: OSV-2021-31
+package:
+  name: serenity
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in TTF::be_u16
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29338
+
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  TTF::be_u16
+  TTF::Font::load_from_offset
+  TTF::Font::load_from_memory
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/SerenityOS/serenity
+    introduced: 5dfcecd2443ff2a9d491fe55033520613b8aea93
+    fixed: feb66564d2bc0f78916c214f01aaa02e63e44afb
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29338
+modified: '2021-03-09T04:49:06.306234Z'
+created: '2021-01-08T00:01:11.611174Z'

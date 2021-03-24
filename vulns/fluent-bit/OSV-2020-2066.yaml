@@ -1,0 +1,38 @@
+id: OSV-2020-2066
+package:
+  name: fluent-bit
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in encoded_to_buf
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26304
+
+  Crash type: Heap-buffer-overflow WRITE 1
+  Crash state:
+  encoded_to_buf
+  flb_utils_write_str
+  msgpack2json
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/fluent/fluent-bit/
+    introduced: 15254d5bb2101995b32c7e34e86d01a1a878590b
+    fixed: 979a9bb728b490659e7e6076c17f3e4cb2c5bd59
+  - type: GIT
+    repo: https://github.com/fluent/fluent-bit/
+    introduced: 15254d5bb2101995b32c7e34e86d01a1a878590b
+    fixed: 73410b3cd81ac8972160902db7d6f666cad3a7fa
+  - type: GIT
+    repo: https://github.com/fluent/fluent-bit/
+    introduced: 7f2b5f71377be5042de99b16caef0dc6fd021285
+  versions:
+  - v1.5.7
+  - v1.5.7-winfix
+  - v1.6.0
+  - v1.6.1
+  - v1.6.2
+  - v1.6.3
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26304
+modified: '2021-03-09T04:49:05.590887Z'
+created: '2020-10-14T00:00:30.510704Z'

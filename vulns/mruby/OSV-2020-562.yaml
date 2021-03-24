@@ -1,0 +1,27 @@
+id: OSV-2020-562
+package:
+  name: mruby
+  ecosystem: OSS-Fuzz
+summary: UNKNOWN READ in local_add_lv
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18030
+
+  Crash type: UNKNOWN READ
+  Crash state:
+  local_add_lv
+  yyparse
+  mrb_parser_parse
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/mruby/mruby
+    introduced: 264239f78fb9ec8047cf04b82f547fc41d65ab28
+    fixed: 7750c61e29675e778f7d12119555fafbf85043c9
+  versions:
+  - 2.1.0
+  - 2.1.0-rc
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18030
+modified: '2021-03-09T04:49:05.954734Z'
+created: '2020-07-01T00:00:17.111214Z'

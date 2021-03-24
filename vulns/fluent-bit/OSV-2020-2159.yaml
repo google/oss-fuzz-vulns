@@ -1,0 +1,26 @@
+id: OSV-2020-2159
+package:
+  name: fluent-bit
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in flb_parser_json_do
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=27499
+
+  Crash type: Heap-buffer-overflow READ {*}
+  Crash state:
+  flb_parser_json_do
+  flb_parser_do
+  parser_fuzzer.c
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/fluent/fluent-bit/
+    introduced: dc234b10f5e7a0a6f7fcc35609f12e9f48420bd4
+    fixed: 68746b76af8b143daf477033a6799902be2f3cad
+  versions:
+  - v1.7.0-rc1
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=27499
+modified: '2021-03-09T04:49:05.691957Z'
+created: '2020-11-15T22:34:00.821965Z'

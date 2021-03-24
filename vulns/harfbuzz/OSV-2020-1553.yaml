@@ -1,0 +1,24 @@
+id: OSV-2020-1553
+package:
+  name: harfbuzz
+  ecosystem: OSS-Fuzz
+summary: UNKNOWN READ in hb_realloc_impl
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24497
+
+  Crash type: UNKNOWN READ
+  Crash state:
+  hb_realloc_impl
+  hb_vector_t<CFF::dict_val_t>::alloc
+  hb_vector_t<CFF::dict_val_t>::resize
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/harfbuzz/harfbuzz.git
+    introduced: 48ad745996159337fb4733561e834a0ffbe3a1ae
+    fixed: d307c24abf37b2702706cf9df0fab571a99e2a70
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24497
+modified: '2021-03-09T04:49:05.325812Z'
+created: '2020-07-31T00:00:55.823679Z'

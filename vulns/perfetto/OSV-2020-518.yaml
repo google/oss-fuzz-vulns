@@ -1,0 +1,23 @@
+id: OSV-2020-518
+package:
+  name: perfetto
+  ecosystem: OSS-Fuzz
+summary: Global-buffer-overflow in perfetto::trace_processor::ParseSystraceTracePoint
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13481
+
+  Crash type: Global-buffer-overflow READ 1
+  Crash state:
+  perfetto::trace_processor::ParseSystraceTracePoint
+  perfetto::trace_processor::ProtoTraceParser::ParsePrint
+  perfetto::trace_processor::ProtoTraceParser::ParseFtracePacket
+affects:
+  ranges:
+  - type: GIT
+    repo: https://android.googlesource.com/platform/external/perfetto/
+    introduced: fb72c36506e2f181e833637cb397befb2d598f6f
+    fixed: 139c7cac4999b6c0ba4e0f6e818acc6c52fc7cf0
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13481
+modified: '2021-03-09T04:49:05.931338Z'
+created: '2020-07-01T00:00:14.117573Z'

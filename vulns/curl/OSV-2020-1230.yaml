@@ -1,0 +1,24 @@
+id: OSV-2020-1230
+package:
+  name: curl
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in to_u32
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=16734
+
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  to_u32
+  fuzz_get_tlv_comn
+  fuzz_add_mime_part
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/curl/curl.git
+    introduced: unknown:0a5d28fa2ec872de55c8d3f3b62675f17ca9cd45
+    fixed: 0a5d28fa2ec872de55c8d3f3b62675f17ca9cd45:25f962193574e35fe638764c3afb9d25d8a9768b
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=16734
+modified: '2021-03-09T04:49:05.158969Z'
+created: '2020-07-22T21:49:58.592376Z'

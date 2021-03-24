@@ -1,0 +1,24 @@
+id: OSV-2020-55
+package:
+  name: opensc
+  ecosystem: OSS-Fuzz
+summary: Stack-buffer-overflow in tcos_decipher
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22967
+
+  Crash type: Stack-buffer-overflow WRITE {*}
+  Crash state:
+  tcos_decipher
+  sc_decipher
+  use_key
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/OpenSC/OpenSC
+    introduced: 508f8a9fced369f60e6f0c0f62176ea9427fbf42
+    fixed: 9d294de90d1cc66956389856e60b6944b27b4817
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22967
+modified: '2021-03-09T04:49:05.948070Z'
+created: '2020-06-24T01:51:12.036793Z'

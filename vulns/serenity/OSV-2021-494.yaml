@@ -1,0 +1,23 @@
+id: OSV-2021-494
+package:
+  name: serenity
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in AK::ByteBuffer::overwrite
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31698
+
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  AK::ByteBuffer::overwrite
+  Crypto::PK::RSA::parse_rsa_key
+  FuzzRSAKeyParsing.cpp
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/SerenityOS/serenity
+    introduced: ed9ab38b3b074f188ac739c132335dac2f0f6cb8
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31698
+modified: '2021-03-09T04:51:33.689588Z'
+created: '2021-03-06T00:00:07.530011Z'

@@ -1,0 +1,24 @@
+id: OSV-2020-1819
+package:
+  name: opencv
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in void cv::copyToMat<int>
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25779
+
+  Crash type: Heap-buffer-overflow READ 4
+  Crash state:
+  void cv::copyToMat<int>
+  cv::decodeSRGBData
+  cv::Jpeg2KOpjDecoder::readData
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/opencv/opencv.git
+    introduced: bfd056ceb1ad6529e1a2103f60e6f089c6b70109
+    fixed: f7b8f522ff4084d584628811a02a621736c3a731
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25779
+modified: '2021-03-09T04:49:05.457102Z'
+created: '2020-09-21T00:00:12.969129Z'

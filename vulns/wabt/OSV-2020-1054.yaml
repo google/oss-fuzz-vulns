@@ -1,0 +1,28 @@
+id: OSV-2020-1054
+package:
+  name: wabt
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in wabt::string_view::compare
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18962
+
+  Crash type: Heap-buffer-overflow READ 6
+  Crash state:
+  wabt::string_view::compare
+  wabt::operator==
+  wabt::BinaryReader::ReadCustomSection
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/WebAssembly/wabt
+    introduced: unknown:ddcec7c6122bbf0ee82a197fbb739ffcc52b63d9
+    fixed: a5a9b341b7fb7aa66427d4701871d2b3c73bcc87:d087e702d520207871ae82c58461fb08d58af187
+  versions:
+  - 1.0.13
+  - 1.0.14
+  - 1.0.15
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18962
+modified: '2021-03-09T04:49:05.064482Z'
+created: '2020-07-22T21:49:43.465976Z'

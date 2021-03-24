@@ -1,0 +1,24 @@
+id: OSV-2020-1297
+package:
+  name: pcapplusplus
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in pcpp::DnsResource::getDataLength
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22102
+
+  Crash type: Heap-buffer-overflow READ 2
+  Crash state:
+  pcpp::DnsResource::getDataLength
+  pcpp::DnsResource::getSize
+  pcpp::DnsLayer::parseResources
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/seladb/PcapPlusPlus
+    introduced: unknown:4366d2f86bf105025765a0ce3db6e647ba0f3508
+    fixed: 612455a2c65d08c0425dbad97ff67129091eb0e6
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22102
+modified: '2021-03-09T04:49:05.194394Z'
+created: '2020-07-22T21:50:04.093662Z'

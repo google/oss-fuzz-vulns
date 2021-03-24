@@ -1,0 +1,24 @@
+id: OSV-2020-1292
+package:
+  name: openthread
+  ecosystem: OSS-Fuzz
+summary: Stack-buffer-overflow in ot::ExtendedTlv::GetLength
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20775
+
+  Crash type: Stack-buffer-overflow READ 2
+  Crash state:
+  ot::ExtendedTlv::GetLength
+  ot::Tlv::GetSize
+  ot::Tlv::GetNext
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/openthread/openthread
+    introduced: unknown:05ba4c29f4badfe99fe6b478900e7af072059ebe
+    fixed: 167d616bc2eefe9e4712da5a65681502de5851c0
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20775
+modified: '2021-03-09T04:49:05.192086Z'
+created: '2020-07-22T21:50:03.818147Z'

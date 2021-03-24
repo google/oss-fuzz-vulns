@@ -1,0 +1,24 @@
+id: OSV-2020-111
+package:
+  name: poppler
+  ecosystem: OSS-Fuzz
+summary: Heap-use-after-free in int std::__1::__cxx_atomic_fetch_sub<int>
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21604
+
+  Crash type: Heap-use-after-free WRITE 4
+  Crash state:
+  int std::__1::__cxx_atomic_fetch_sub<int>
+  std::__1::__atomic_base<int, true>::operator--
+  Object::free
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://anongit.freedesktop.org/git/poppler/poppler.git
+    introduced: e4badf4d745b8e8f9a0a25b6c3cc97fbadbbb499
+    fixed: 155f73bdd261622323491df4aebb840cde8bfee1
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21604
+modified: '2021-03-09T04:49:05.094973Z'
+created: '2020-06-24T01:51:14.570467Z'

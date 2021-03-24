@@ -1,0 +1,26 @@
+id: OSV-2020-59
+package:
+  name: ndpi
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in ndpi_add_connection_as_bittorrent
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20777
+
+  Crash type: Heap-buffer-overflow READ {*}
+  Crash state:
+  ndpi_add_connection_as_bittorrent
+  ndpi_int_search_bittorrent_tcp_zero
+  check_ndpi_tcp_flow_func
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/ntop/nDPI.git
+    introduced: 5c52c00ea4ad8afaebd5259bc53215a1ab41569f
+    fixed: 34ad06fef53626bc718b3e349a365f8fd0ef3646
+  versions:
+  - '3.2'
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20777
+modified: '2021-03-09T04:49:05.968762Z'
+created: '2020-06-24T01:51:12.217599Z'

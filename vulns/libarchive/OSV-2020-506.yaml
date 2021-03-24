@@ -1,0 +1,24 @@
+id: OSV-2020-506
+package:
+  name: libarchive
+  ecosystem: OSS-Fuzz
+summary: Stack-buffer-overflow in parse_file_extra_owner
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14331
+
+  Crash type: Stack-buffer-overflow WRITE 1
+  Crash state:
+  parse_file_extra_owner
+  process_head_file_extra
+  process_head_file
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/libarchive/libarchive.git
+    introduced: 64e68f2034e6c5c6fd20d6b274b67fbdb88c3804
+    fixed: 2fce6f81cc59144bf4f2f66f7620233d609b41ef
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14331
+modified: '2021-03-09T04:49:05.925119Z'
+created: '2020-07-01T00:00:13.588403Z'

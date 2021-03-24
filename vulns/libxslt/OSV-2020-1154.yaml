@@ -1,0 +1,24 @@
+id: OSV-2020-1154
+package:
+  name: libxslt
+  ecosystem: OSS-Fuzz
+summary: Use-of-uninitialized-value in xmlStrlen
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15746
+
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  xmlStrlen
+  xmlStrncat
+  xmlNodeAddContentLen
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://gitlab.gnome.org/GNOME/libxslt.git
+    introduced: unknown:7f56378a73af8a61da78b8091f0e317316cee300
+    fixed: 2232473733b7313d67de8836ea3b29eec6e8e285
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15746
+modified: '2021-03-09T04:49:05.118349Z'
+created: '2020-07-22T21:49:51.684969Z'

@@ -1,0 +1,24 @@
+id: OSV-2021-246
+package:
+  name: c-blosc2
+  ecosystem: OSS-Fuzz
+summary: Memcpy-param-overlap in frame_get_usermeta
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29973
+
+  Crash type: Memcpy-param-overlap
+  Crash state:
+  frame_get_usermeta
+  blosc2_frame_to_schunk
+  blosc2_schunk_open_sframe
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/Blosc/c-blosc2.git
+    introduced: c473b21cff5e1a459b4467f18bf7414114f848fd
+    fixed: 1a42fcd4473577cb8558b5609672a02388dabd39
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29973
+modified: '2021-03-03T12:00:57.099922Z'
+created: '2021-01-29T00:00:06.969079Z'

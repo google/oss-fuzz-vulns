@@ -1,0 +1,24 @@
+id: OSV-2020-732
+package:
+  name: openthread
+  ecosystem: OSS-Fuzz
+summary: Stack-buffer-overflow in ot::MeshCoP::Leader::HandlePetition
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13537
+
+  Crash type: Stack-buffer-overflow READ 1
+  Crash state:
+  ot::MeshCoP::Leader::HandlePetition
+  ot::Coap::CoapBase::ProcessReceivedRequest
+  ot::Ip6::Udp::HandleMessage
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/openthread/openthread
+    introduced: 3eb5a106ffa6678e23c6bc244e843e264cae9b31
+    fixed: 2805ca463b9679b475fa917409cbb1d2738606c4
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13537
+modified: '2021-03-09T04:49:06.046957Z'
+created: '2020-07-01T00:00:27.229373Z'

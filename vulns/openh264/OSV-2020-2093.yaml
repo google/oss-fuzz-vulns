@@ -1,0 +1,24 @@
+id: OSV-2020-2093
+package:
+  name: openh264
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in ExpandPictureChroma_c
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26570
+
+  Crash type: Heap-buffer-overflow WRITE 8
+  Crash state:
+  ExpandPictureChroma_c
+  ExpandReferencingPicture
+  WelsDec::WelsCheckAndRecoverForFutureDecoding
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/cisco/openh264.git
+    introduced: f1bb6d3acb057785b4d89e8228e23cc4fc9caa12
+    fixed: b52786888ddce9d6bc06b7825ba9bffc65924e0c
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26570
+modified: '2021-02-25T00:08:04.291552Z'
+created: '2020-10-23T00:00:43.617858Z'

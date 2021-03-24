@@ -1,0 +1,24 @@
+id: OSV-2020-1882
+package:
+  name: ghostscript
+  ecosystem: OSS-Fuzz
+summary: Use-of-uninitialized-value in gx_dc_ht_colored_read
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21617
+
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  gx_dc_ht_colored_read
+  clist_playback_band
+  clist_playback_file_bands
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: git://git.ghostscript.com/ghostpdl.git
+    introduced: unknown:668917a10e7eada030f7d2dddec9f579fddeed3d
+    fixed: b503c46c124cf5aaa82a71e28f624f2ef2b71e71
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21617
+modified: '2021-03-09T04:49:05.490891Z'
+created: '2020-09-29T00:00:38.635677Z'

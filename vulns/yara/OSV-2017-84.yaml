@@ -1,0 +1,26 @@
+id: OSV-2017-84
+package:
+  name: yara
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in macho_handle_segment_64_be
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=4382
+
+  Crash type: Heap-buffer-overflow READ 8
+  Crash state:
+  macho_handle_segment_64_be
+  macho_parse_file_64_be
+  macho__load
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/VirusTotal/yara.git
+    introduced: a43780c9071e21cfe7bab7223605db29114f20f8:ef44bab295be6f205b1f4c7aa44cb00abc66f024
+    fixed: 300374fe169ee100320aee70ed9c846650be4b3b
+  versions:
+  - v3.7.1
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=4382
+modified: '2021-03-09T04:49:04.807340Z'
+created: '2021-01-13T21:57:36.399042Z'

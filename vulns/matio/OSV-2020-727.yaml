@@ -1,0 +1,27 @@
+id: OSV-2020-727
+package:
+  name: matio
+  ecosystem: OSS-Fuzz
+summary: Use-of-uninitialized-value in psnip_safe_size_mul
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=17120
+
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  psnip_safe_size_mul
+  SafeMul
+  Mat_VarGetSize
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: git://git.code.sf.net/p/matio/matio
+    introduced: a1d908f1e367a4943c547a0ee0cb3af17d1886fc
+    fixed: 8bde21c2f062b4f9a865263eb3256949ec3d75a3
+  versions:
+  - v1.5.16
+  - v1.5.17
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=17120
+modified: '2021-03-09T04:49:06.044121Z'
+created: '2020-07-01T00:00:26.967984Z'

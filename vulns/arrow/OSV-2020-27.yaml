@@ -1,0 +1,24 @@
+id: OSV-2020-27
+package:
+  name: arrow
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in parquet::LevelDecoder::SetData
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20940
+
+  Crash type: Heap-buffer-overflow READ 4
+  Crash state:
+  parquet::LevelDecoder::SetData
+  parquet::ColumnReaderImplBase<parquet::PhysicalType<
+  parquet::internal::TypedRecordReader<parquet::PhysicalType<
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/apache/arrow.git
+    introduced: 431fdbfbc0fb4bb16c4a89298404ad16784db2a0
+    fixed: 5ba0b643f2b7f5a183d67b40a63f7e67e42ec8bd
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20940
+modified: '2021-03-09T04:49:05.797042Z'
+created: '2020-06-24T01:51:10.819423Z'

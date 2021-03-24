@@ -1,0 +1,24 @@
+id: OSV-2020-962
+package:
+  name: ndpi
+  ecosystem: OSS-Fuzz
+summary: Use-of-uninitialized-value in processCertificateElements
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22864
+
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  processCertificateElements
+  processCertificate
+  processTLSBlock
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/ntop/nDPI.git
+    introduced: unknown:b2cbe76e716e628438a94d2e112acddb67ec89f2
+    fixed: b6eef17e54999586b6aef8f545c87de4d3ec0ab3:669b7579ff93eb22ccf9324fd19444754b5612b8
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22864
+modified: '2021-03-09T04:49:06.175101Z'
+created: '2020-07-22T00:00:27.303894Z'

@@ -1,0 +1,23 @@
+id: OSV-2020-642
+package:
+  name: radare2
+  ecosystem: OSS-Fuzz
+summary: Stack-use-after-return in sdb_itoa
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=12751
+
+  Crash type: Stack-use-after-return WRITE 1
+  Crash state:
+  sdb_itoa
+  _parse_resource_directory
+  _parse_resource_directory
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/radare/radare2
+    introduced: b022c9533482a8f1c9ae825ced5c1a3e251837d9
+    fixed: 56f5eaf18ed51fbf279a1911224be9863e8e4285
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=12751
+modified: '2021-03-09T04:49:05.996962Z'
+created: '2020-07-01T00:00:22.087933Z'

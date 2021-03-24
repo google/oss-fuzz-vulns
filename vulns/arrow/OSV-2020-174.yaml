@@ -1,0 +1,24 @@
+id: OSV-2020-174
+package:
+  name: arrow
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in int arrow::BitUtil::BitReader::GetBatch<short>
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21166
+
+  Crash type: Heap-buffer-overflow WRITE 8
+  Crash state:
+  int arrow::BitUtil::BitReader::GetBatch<short>
+  int arrow::util::RleDecoder::GetBatch<short>
+  parquet::internal::TypedRecordReader<parquet::PhysicalType<
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/apache/arrow.git
+    introduced: 431fdbfbc0fb4bb16c4a89298404ad16784db2a0
+    fixed: 6b87c6c9fb00ade7eff909afa4a6a61464cd516c
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21166
+modified: '2021-03-09T04:49:05.415763Z'
+created: '2020-06-24T01:51:17.409834Z'

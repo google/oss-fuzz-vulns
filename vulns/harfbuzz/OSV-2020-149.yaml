@@ -1,0 +1,24 @@
+id: OSV-2020-149
+package:
+  name: harfbuzz
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in BEInt<unsigned short, 2>::operator=
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21580
+
+  Crash type: Heap-buffer-overflow WRITE 1
+  Crash state:
+  BEInt<unsigned short, 2>::operator=
+  OT::IntType<unsigned short, 2u>::operator=
+  bool OT::ClassDefFormat1::serialize<hb_zip_iter_t<hb_sorted_array_t<OT::HBGlyphI
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/harfbuzz/harfbuzz.git
+    introduced: c8cc1e378df500122d8082a2038d68179eec63d0
+    fixed: 57b7de032f60d0499ae2debb293d0f8456acfdfb
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21580
+modified: '2021-03-09T04:49:05.292063Z'
+created: '2020-06-24T01:51:16.320307Z'

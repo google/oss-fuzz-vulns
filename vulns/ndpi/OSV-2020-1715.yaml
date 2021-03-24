@@ -1,0 +1,26 @@
+id: OSV-2020-1715
+package:
+  name: ndpi
+  ecosystem: OSS-Fuzz
+summary: Stack-buffer-overflow in ndpi_search_kerberos
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25446
+
+  Crash type: Stack-buffer-overflow READ 1
+  Crash state:
+  ndpi_search_kerberos
+  check_ndpi_udp_flow_func
+  ndpi_check_flow_func
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/ntop/nDPI.git
+    introduced: 239842b821763a2afc62d859a186f673ba09b171
+    fixed: 37abe0daea8c964dbd2e09058074bfc7ae053199
+  versions:
+  - '3.2'
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25446
+modified: '2021-03-09T04:49:05.402837Z'
+created: '2020-09-07T00:00:49.972310Z'

@@ -1,0 +1,23 @@
+id: OSV-2021-162
+package:
+  name: matio
+  ecosystem: OSS-Fuzz
+summary: Segv on unknown address in Mat_H5ReadNextReferenceData
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29540
+
+  Crash type: Segv on unknown address
+  Crash state:
+  Mat_H5ReadNextReferenceData
+  Mat_VarRead73
+  ReadData
+affects:
+  ranges:
+  - type: GIT
+    repo: git://git.code.sf.net/p/matio/matio
+    introduced: 92e9a90b02cb3af869d86de1a1428b4bd9e6e7a5
+    fixed: 59c370cd1ce6f92e7cfa606e50ec12e21e2ca4c6
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29540
+modified: '2021-03-09T04:49:06.226253Z'
+created: '2021-01-13T21:57:38.109120Z'

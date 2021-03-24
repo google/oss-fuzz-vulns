@@ -1,0 +1,27 @@
+id: OSV-2020-836
+package:
+  name: matio
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in H5HG_read
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18827
+
+  Crash type: Heap-buffer-overflow READ {*}
+  Crash state:
+  H5HG_read
+  H5T_vlen_disk_read
+  H5T__conv_vlen
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: git://git.code.sf.net/p/matio/matio
+    introduced: 7a9958485036ef37b4e88df5cbe32bd7ec4c0d25:6540087e697ca2b8950bada3d4ca653951b467dc
+    fixed: 1ce8f2d1845ecdde19a35605cabdbb884776d52d
+  versions:
+  - v1.5.18
+  - v1.5.19
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18827
+modified: '2021-03-09T04:49:06.103395Z'
+created: '2020-07-14T22:13:39.678790Z'

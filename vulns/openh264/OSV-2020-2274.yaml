@@ -1,0 +1,24 @@
+id: OSV-2020-2274
+package:
+  name: openh264
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in McCopyWidthEq4_c
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=28769
+
+  Crash type: Heap-buffer-overflow READ 4
+  Crash state:
+  McCopyWidthEq4_c
+  McCopy_sse2
+  McChroma_ssse3
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/cisco/openh264.git
+    introduced: 66ef706acd55b0b8daec32ca299d2586a1f473c9
+    fixed: 992c1c147175126c3fe7ab78216aa0395f9e6c71
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=28769
+modified: '2021-03-09T12:01:01.506846Z'
+created: '2020-12-19T00:00:41.113564Z'

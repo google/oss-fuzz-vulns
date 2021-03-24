@@ -1,0 +1,24 @@
+id: OSV-2020-1016
+package:
+  name: c-blosc2
+  ecosystem: OSS-Fuzz
+summary: UNKNOWN READ in blosc_run_decompression_with_context
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23717
+
+  Crash type: UNKNOWN READ
+  Crash state:
+  blosc_run_decompression_with_context
+  blosc_decompress
+  fuzz_decompress.c
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/Blosc/c-blosc2.git
+    introduced: unknown:47574561c110f8065d64affc43df744ec236b04b
+    fixed: 47574561c110f8065d64affc43df744ec236b04b:af587e54bc8fd6019585d9a6d001b62a2fc240a1
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23717
+modified: '2021-03-09T04:49:05.044557Z'
+created: '2020-07-22T21:49:40.191894Z'

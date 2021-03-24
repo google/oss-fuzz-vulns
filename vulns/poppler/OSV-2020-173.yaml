@@ -1,0 +1,46 @@
+id: OSV-2020-173
+package:
+  name: poppler
+  ecosystem: OSS-Fuzz
+summary: Use-of-uninitialized-value in BaseCryptStream::BaseCryptStream
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20200
+
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  BaseCryptStream::BaseCryptStream
+  DecryptStream::DecryptStream
+  Parser::getObj
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://anongit.freedesktop.org/git/poppler/poppler.git
+    introduced: bf03344ad26b1227b5052420feabe062441c02ed
+    fixed: e249d8965c0f39bd4dcb882048535a5272f66566
+  versions:
+  - poppler-0.66.0
+  - poppler-0.67.0
+  - poppler-0.68.0
+  - poppler-0.69.0
+  - poppler-0.70.0
+  - poppler-0.70.1
+  - poppler-0.71.0
+  - poppler-0.72.0
+  - poppler-0.73.0
+  - poppler-0.74.0
+  - poppler-0.75.0
+  - poppler-0.76.0
+  - poppler-0.76.1
+  - poppler-0.77.0
+  - poppler-0.78.0
+  - poppler-0.79.0
+  - poppler-0.80.0
+  - poppler-0.81.0
+  - poppler-0.82.0
+  - poppler-0.83.0
+  - poppler-0.84.0
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20200
+modified: '2021-03-09T04:49:05.410431Z'
+created: '2020-06-24T01:51:17.351460Z'

@@ -1,0 +1,32 @@
+id: OSV-2020-1409
+package:
+  name: unicorn
+  ecosystem: OSS-Fuzz
+summary: UNKNOWN READ in cpu_arm_exec_armeb
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23109
+
+  Crash type: UNKNOWN READ
+  Crash state:
+  cpu_arm_exec_armeb
+  tcg_cpu_exec_armeb
+  tcg_exec_all_armeb
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/unicorn-engine/unicorn.git
+    introduced: 07f94ad1fc62293cac330df9714d739be6354926
+    fixed: 7ca7e8a79d85ca57bb523be49009b0326b7a5210
+  versions:
+  - 1.0.2
+  - 1.0.2-rc1
+  - 1.0.2-rc2
+  - 1.0.2-rc3
+  - 1.0.2-rc4
+  - 1.0.2-rc5
+  - 1.0.2-rc6
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23109
+modified: '2021-03-09T04:49:05.251381Z'
+created: '2020-07-28T00:00:12.058612Z'

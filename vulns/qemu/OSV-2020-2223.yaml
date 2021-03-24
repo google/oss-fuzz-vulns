@@ -1,0 +1,29 @@
+id: OSV-2020-2223
+package:
+  name: qemu
+  ecosystem: OSS-Fuzz
+summary: Heap-use-after-free in e1000e_write_packet_to_guest
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=28194
+
+  Crash type: Heap-use-after-free READ 8
+  Crash state:
+  e1000e_write_packet_to_guest
+  e1000e_receive_iov
+  e1000e_nc_receive_iov
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://git.qemu.org/git/qemu.git
+    introduced: 7564bf7701f00214cdc8a678a9f7df765244def1
+    fixed: b98b9fdef00e2383f63f939e079fe2c9eba87ca1
+  versions:
+  - v5.2.0
+  - v5.2.0-rc2
+  - v5.2.0-rc3
+  - v5.2.0-rc4
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=28194
+modified: '2021-03-09T04:49:05.727354Z'
+created: '2020-12-04T00:00:19.497055Z'

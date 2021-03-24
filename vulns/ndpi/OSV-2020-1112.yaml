@@ -1,0 +1,24 @@
+id: OSV-2020-1112
+package:
+  name: ndpi
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in getNameLength
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18757
+
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  getNameLength
+  getNameLength
+  ndpi_search_dns
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/ntop/nDPI.git
+    introduced: unknown:e695dd6eade754b2d50bdf297ca8bdc4105f93ff
+    fixed: c223bb1f10068c00aaf9e9c96709dc3984a969cb
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18757
+modified: '2021-03-09T04:49:05.096350Z'
+created: '2020-07-22T21:49:48.124030Z'

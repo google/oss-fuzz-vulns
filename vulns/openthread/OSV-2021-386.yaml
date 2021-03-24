@@ -1,0 +1,24 @@
+id: OSV-2021-386
+package:
+  name: openthread
+  ecosystem: OSS-Fuzz
+summary: Stack-buffer-overflow in ot::Coap::Message::AppendUintOption
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30831
+
+  Crash type: Stack-buffer-overflow READ 1
+  Crash state:
+  ot::Coap::Message::AppendUintOption
+  ot::Coap::Message::AppendBlockOption
+  otCoapMessageAppendBlock2Option
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/openthread/openthread
+    introduced: 2cd36266abaaf8b79ebb0441e6ed2ec3847cf3ca
+    fixed: 159efe77c07abbd38f3afc754d6a644f1a14d64e
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30831
+modified: '2021-02-26T00:04:14.580384Z'
+created: '2021-02-13T00:00:59.547439Z'

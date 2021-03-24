@@ -1,0 +1,24 @@
+id: OSV-2021-213
+package:
+  name: c-blosc2
+  ecosystem: OSS-Fuzz
+summary: Heap-use-after-free in ZSTD_freeDDict
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29705
+
+  Crash type: Heap-use-after-free READ {*}
+  Crash state:
+  ZSTD_freeDDict
+  blosc2_free_ctx
+  blosc2_schunk_free
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/Blosc/c-blosc2.git
+    introduced: 250ca709b73000fe9c96fcc26109f233103b1636
+    fixed: c473b21cff5e1a459b4467f18bf7414114f848fd
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29705
+modified: '2021-03-09T04:49:06.256042Z'
+created: '2021-01-20T00:01:17.956363Z'

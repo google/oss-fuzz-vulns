@@ -1,0 +1,41 @@
+id: OSV-2020-841
+package:
+  name: yara
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in yr_object_set_string
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=6402
+
+  Crash type: Heap-buffer-overflow READ 13
+  Crash state:
+  yr_object_set_string
+  dex_parse
+  dex__load
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/VirusTotal/yara.git
+    introduced: 7c1c663523296727146b3fb49ce2643524b33ba3
+    fixed: a07ec0812de0aa2402f4bf74aea3a49248a7aa48
+  versions:
+  - v.3.9.0
+  - v3.10.0
+  - v3.10.0-rc1
+  - v3.11.0
+  - v3.8.0
+  - v3.8.1
+  - v3.9.0
+  - v4.0.0
+  - v4.0.0-rc1
+  - v4.0.0-rc2
+  - v4.0.0-rc3
+  - v4.0.1
+  - v4.0.2
+  - v4.0.3
+  - v4.0.4
+  - v4.0.5
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=6402
+modified: '2021-03-09T04:49:06.106349Z'
+created: '2020-07-14T22:13:41.650460Z'

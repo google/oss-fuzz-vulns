@@ -1,0 +1,23 @@
+id: OSV-2021-276
+package:
+  name: qemu
+  ecosystem: OSS-Fuzz
+summary: Global-buffer-overflow in mode_sense_page
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30219
+
+  Crash type: Global-buffer-overflow READ 4
+  Crash state:
+  mode_sense_page
+  scsi_disk_check_mode_select
+  mode_select_pages
+affects:
+  ranges:
+  - type: GIT
+    repo: https://git.qemu.org/git/qemu.git
+    introduced: b677001d70529df271a5d9314440bb201da40acf
+    fixed: 2c6df987965729df702fa12f79564b5f76e3fa4e:d0dddab40e472ba62b5f43f11cc7dba085dabe71
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30219
+modified: '2021-03-09T12:01:01.512692Z'
+created: '2021-02-05T00:00:20.001417Z'

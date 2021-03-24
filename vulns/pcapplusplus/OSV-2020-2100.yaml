@@ -1,0 +1,24 @@
+id: OSV-2020-2100
+package:
+  name: pcapplusplus
+  ecosystem: OSS-Fuzz
+summary: Bad-cast to pcpp::IDnsResource from invalid vptr
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26669
+
+  Crash type: Bad-cast
+  Crash state:
+  Bad-cast to pcpp::IDnsResource from invalid vptr
+  pcpp::DnsLayer::parseResources
+  pcpp::DnsLayer::DnsLayer
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/seladb/PcapPlusPlus
+    introduced: ea14ecba2f430cfd09b1da48611a78841c276d69
+    fixed: 7d4ccebe8b8eb05357083363110be33df32f1d43
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26669
+modified: '2021-03-09T04:49:05.610715Z'
+created: '2020-10-28T00:00:12.022327Z'

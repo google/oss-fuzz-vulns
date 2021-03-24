@@ -1,0 +1,39 @@
+id: OSV-2020-248
+package:
+  name: open62541
+  ecosystem: OSS-Fuzz
+summary: Heap-use-after-free in LocalizedText_clear
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20061
+
+  Crash type: Heap-use-after-free READ 8
+  Crash state:
+  LocalizedText_clear
+  Variant_clear
+  UA_clear
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/open62541/open62541.git
+    introduced: 58a2fdb5b1ad1efafef455d66a9cbfb93c3fae9d
+    fixed: 36c440147e0adbd1c7254d98851c8a856e77cbfe
+  versions:
+  - v1.0
+  - v1.0-dev
+  - v1.0-rc1
+  - v1.0-rc2
+  - v1.0-rc3
+  - v1.0-rc4
+  - v1.0-rc5
+  - v1.0.1
+  - v1.0.2
+  - v1.0.3
+  - v1.0.5
+  - v1.0.6
+  - v1.1-dev
+  - v1.1-rc1
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20061
+modified: '2021-03-09T04:49:05.784385Z'
+created: '2020-06-26T00:00:10.285084Z'

@@ -1,0 +1,26 @@
+id: OSV-2018-216
+package:
+  name: glib
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in token_stream_prepare
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=9806
+
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  token_stream_prepare
+  token_stream_peek_string
+  token_stream_consume
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://gitlab.gnome.org/GNOME/glib
+    introduced: 8defa46e6ec16aa3722aa0ac0bc3db0fecd86c45:0d271223d894e9c69b7fa6b7983511f8ad770682
+    fixed: 297941e049f819771f0ce0ba5623a6e60da9c208
+  versions:
+  - 2.57.3
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=9806
+modified: '2021-03-09T04:49:04.880487Z'
+created: '2021-01-13T00:01:27.343126Z'

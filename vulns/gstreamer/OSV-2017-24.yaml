@@ -1,0 +1,24 @@
+id: OSV-2017-24
+package:
+  name: gstreamer
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in pnm_type_find
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=4039
+
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  pnm_type_find
+  gst_type_find_factory_call_function
+  gst_type_find_helper_for_data
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://gitlab.freedesktop.org/gstreamer/gstreamer.git
+    introduced: fb56ad6bee2366813f6be4f697579c06774b062d:4c795924dba5595fb1472864f7d27262bce247a8
+    fixed: 4c795924dba5595fb1472864f7d27262bce247a8:d106390adce5cee837d2d0aab377d758a45a4b2d
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=4039
+modified: '2021-03-09T04:49:04.774594Z'
+created: '2021-01-13T00:01:28.099192Z'

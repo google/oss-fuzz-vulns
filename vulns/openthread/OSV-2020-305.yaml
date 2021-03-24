@@ -1,0 +1,24 @@
+id: OSV-2020-305
+package:
+  name: openthread
+  ecosystem: OSS-Fuzz
+summary: Stack-buffer-overflow in ot::NetworkData::Leader::SendCommissioningGetResponse
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=17297
+
+  Crash type: Stack-buffer-overflow READ 1
+  Crash state:
+  ot::NetworkData::Leader::SendCommissioningGetResponse
+  ot::NetworkData::Leader::HandleCommissioningGet
+  ot::Coap::CoapBase::ProcessReceivedRequest
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/openthread/openthread
+    introduced: 68426e236fe8a15884c3893a2083663687b2610f
+    fixed: 8be8bf1fdff6181453a2c5e946618186b8b64c54
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=17297
+modified: '2021-03-09T04:49:05.815827Z'
+created: '2020-06-30T00:00:48.691484Z'

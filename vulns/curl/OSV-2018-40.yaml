@@ -1,0 +1,24 @@
+id: OSV-2018-40
+package:
+  name: curl
+  ecosystem: OSS-Fuzz
+summary: UNKNOWN READ in ftp_disconnect
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=12173
+
+  Crash type: UNKNOWN READ
+  Crash state:
+  ftp_disconnect
+  Curl_disconnect
+  ConnectionExists
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/curl/curl.git
+    introduced: 207e7cfa98c35c9d40193ef83bba1d7a830bf141:c98ee5f67f497195c9127cc70fa53a487f994cd5
+    fixed: f3ce38739fa49008e36959aa8189c01ab1bad5b5
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=12173
+modified: '2021-03-09T04:49:04.975028Z'
+created: '2021-01-13T00:00:22.110168Z'

@@ -1,0 +1,23 @@
+id: OSV-2018-347
+package:
+  name: mupdf
+  ecosystem: OSS-Fuzz
+summary: Heap-use-after-free in fz_drop_key_storable
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=5521
+
+  Crash type: Heap-use-after-free READ 4
+  Crash state:
+  fz_drop_key_storable
+  fz_drop_default_colorspaces
+  fz_draw_drop_device
+affects:
+  ranges:
+  - type: GIT
+    repo: git://git.ghostscript.com/mupdf.git
+    introduced: 80b59185030368fecf38d9abe13ffb0302a60c2a
+    fixed: 148329c60f8ad07886b624b5e9e3d8dfdbbdb98f:43e6a76ff86747501b77f2e485bdfcd8c067fb8f
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=5521
+modified: '2021-03-09T04:49:04.947428Z'
+created: '2021-01-15T00:00:48.480542Z'

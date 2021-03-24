@@ -1,0 +1,24 @@
+id: OSV-2020-1525
+package:
+  name: php
+  ecosystem: OSS-Fuzz
+summary: UNKNOWN in zend_ast_export_ex
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24405
+
+  Crash type: UNKNOWN
+  Crash state:
+  zend_ast_export_ex
+  zend_ast_export_ex
+  zend_ast_export_ex
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/php/php-src.git
+    introduced: 9bf119832dbf625174794834c71b1e793450d87f
+    fixed: 041cbec0230bbe4d509c63ac856d1bd270977944
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24405
+modified: '2021-03-09T04:49:05.312381Z'
+created: '2020-07-28T00:00:36.992692Z'

@@ -1,0 +1,24 @@
+id: OSV-2020-45
+package:
+  name: pcapplusplus
+  ecosystem: OSS-Fuzz
+summary: Use-of-uninitialized-value in pcpp::tbp_my_own_strnlen
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22829
+
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  pcpp::tbp_my_own_strnlen
+  pcpp::HeaderField::HeaderField
+  pcpp::TextBasedProtocolMessage::parseFields
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/seladb/PcapPlusPlus
+    introduced: 016e90f193d4383b94143d0b2be26408cc32c703:5ef0c6da8c34b5d4155f865e94bdf83cb18fcbad
+    fixed: a52882e7163fd8886345e4f459d51642cc57c277
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22829
+modified: '2021-03-09T04:49:05.894869Z'
+created: '2020-06-24T01:51:11.617477Z'

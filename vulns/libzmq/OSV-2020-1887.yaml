@@ -1,0 +1,26 @@
+id: OSV-2020-1887
+package:
+  name: libzmq
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in zmq::tcp_read
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26042
+
+  Crash type: Heap-buffer-overflow WRITE {*}
+  Crash state:
+  zmq::tcp_read
+  zmq::stream_engine_base_t::read
+  zmq::stream_engine_base_t::in_event_internal
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/zeromq/libzmq.git
+    introduced: b56195e995e0875afabf405826d97b1dd9817bb0
+    fixed: 397ac80850bf8d010fae23dd215db0ee2c677306
+  versions:
+  - v4.3.3
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26042
+modified: '2021-03-09T04:49:05.493336Z'
+created: '2020-09-30T00:00:04.296094Z'

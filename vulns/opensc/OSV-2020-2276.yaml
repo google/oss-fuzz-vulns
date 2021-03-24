@@ -1,0 +1,27 @@
+id: OSV-2020-2276
+package:
+  name: opensc
+  ecosystem: OSS-Fuzz
+summary: Negative-size-param in tcos_decipher
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=28768
+
+  Crash type: Negative-size-param
+  Crash state:
+  tcos_decipher
+  sc_decipher
+  use_key
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/OpenSC/OpenSC
+    introduced: 2b78374e37b44e06a9f9ca45fc9ccf72081a27f6:978c912c7089fa4573add7140170feb9fcbe7f87
+    fixed: 3044557299a1524251bed74b8ab6a8bcdd98b2c2:fe6864c5f3ba9085acdac569b7567b911e01f445
+  versions:
+  - 0.21.0
+  - 0.21.0-rc1
+  - 0.21.0-rc2
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=28768
+modified: '2021-02-27T00:07:12.249408Z'
+created: '2020-12-19T00:01:12.908184Z'

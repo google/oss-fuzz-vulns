@@ -1,0 +1,26 @@
+id: OSV-2020-2273
+package:
+  name: perfetto
+  ecosystem: OSS-Fuzz
+summary: Stack-buffer-overflow in perfetto::trace_processor::MemoryTrackerSnapshotParser::EmitRows
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=28766
+
+  Crash type: Stack-buffer-overflow READ 4
+  Crash state:
+  perfetto::trace_processor::MemoryTrackerSnapshotParser::EmitRows
+  perfetto::trace_processor::MemoryTrackerSnapshotParser::GenerateGraphFromRawNode
+  perfetto::trace_processor::MemoryTrackerSnapshotParser::NotifyEndOfFile
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://android.googlesource.com/platform/external/perfetto/
+    introduced: f37338cdaa2126eef2a11e1a6f0cb075888c20e6
+    fixed: 23280234a3ee0ef4b96c11b31d57a9575142f1e4
+  versions:
+  - v10.0
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=28766
+modified: '2021-03-09T04:49:05.755936Z'
+created: '2020-12-19T00:00:21.828942Z'

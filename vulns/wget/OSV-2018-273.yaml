@@ -1,0 +1,23 @@
+id: OSV-2018-273
+package:
+  name: wget
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in ftp_parse_winnt_ls
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=7930
+
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  ftp_parse_winnt_ls
+  wget_ftpls_fuzzer.c
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://git.savannah.gnu.org/git/wget.git
+    introduced: f56f970bc2b0df1d26ebd6a0a86083b37017cd70
+    fixed: 96c64a859dcd95e63a9fe15824620ae15c72c6fa
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=7930
+modified: '2021-03-09T04:49:04.909670Z'
+created: '2021-01-15T00:00:18.012849Z'

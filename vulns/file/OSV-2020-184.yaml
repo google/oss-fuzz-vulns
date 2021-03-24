@@ -1,0 +1,24 @@
+id: OSV-2020-184
+package:
+  name: file
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in file_strncmp
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23044
+
+  Crash type: Heap-buffer-overflow READ 13
+  Crash state:
+  file_strncmp
+  magiccheck
+  match
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/file/file.git
+    introduced: 020876142969029eefc7a52d5545d0475203c472
+    fixed: 3c6b51d4a1f5682f8144fef1553b0357d3d83aaf
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23044
+modified: '2021-03-09T04:49:05.467742Z'
+created: '2020-06-24T01:51:17.908691Z'

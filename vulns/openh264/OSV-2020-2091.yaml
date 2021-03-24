@@ -1,0 +1,28 @@
+id: OSV-2020-2091
+package:
+  name: openh264
+  ecosystem: OSS-Fuzz
+summary: UNKNOWN READ in WelsDec::WelsMarkAsRef
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26533
+
+  Crash type: UNKNOWN READ
+  Crash state:
+  WelsDec::WelsMarkAsRef
+  WelsDec::MarkECFrameAsRef
+  WelsDec::CheckAndFinishLastPic
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/cisco/openh264.git
+    introduced: 519b0ff554e9713198bc3b3185da809be42be20c
+    fixed: b52786888ddce9d6bc06b7825ba9bffc65924e0c
+  versions:
+  - v2.0.0
+  - v2.1.0
+  - v2.1.1
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26533
+modified: '2021-02-25T00:08:04.912139Z'
+created: '2020-10-22T00:00:21.083633Z'
