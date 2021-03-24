@@ -1,0 +1,23 @@
+id: OSV-2021-532
+package:
+  name: qemu
+  ecosystem: OSS-Fuzz
+summary: UNKNOWN READ in address_space_lookup_region
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=32125
+
+  Crash type: UNKNOWN READ
+  Crash state:
+  address_space_lookup_region
+  address_space_translate_internal
+  flatview_do_translate
+affects:
+  ranges:
+  - type: GIT
+    repo: https://git.qemu.org/git/qemu.git
+    introduced: 49ac51ae8048661c8fa9ad45b008e15bce1decaf
+    fixed: fc253f4a4b59e19c25df21232651d9c92220011f
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=32125
+modified: '2021-03-18T00:00:51.365001Z'
+created: '2021-03-18T00:00:51.364610Z'

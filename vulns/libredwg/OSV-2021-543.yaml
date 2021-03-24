@@ -1,0 +1,27 @@
+id: OSV-2021-543
+package:
+  name: libredwg
+  ecosystem: OSS-Fuzz
+summary: Heap-use-after-free in dxf_objects_read
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=32275
+
+  Crash type: Heap-use-after-free READ 2
+  Crash state:
+  dxf_objects_read
+  dwg_read_dxf
+  llvmfuzz.c
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/LibreDWG/libredwg
+    introduced: 3b47eb0fe81ab7ded5342208feac016076e0e668
+    fixed: 5b27162afa44042bd43dec3fed8a1177c2c43ebb
+  versions:
+  - 0.12.3.4261
+  - 0.12.3.4264
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=32275
+modified: '2021-03-21T00:01:06.641230Z'
+created: '2021-03-21T00:01:06.640931Z'

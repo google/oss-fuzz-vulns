@@ -1,0 +1,28 @@
+id: OSV-2021-538
+package:
+  name: opensc
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in sc_pkcs15emu_oberthur_add_pubkey
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=32202
+
+  Crash type: Heap-buffer-overflow READ {*}
+  Crash state:
+  sc_pkcs15emu_oberthur_add_pubkey
+  sc_oberthur_parse_publicinfo
+  sc_pkcs15emu_oberthur_init
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/OpenSC/OpenSC
+    introduced: 6903aebfddc466d966c7b865fae34572bf3ed23e
+    fixed: 5d4daf6c92e4668f5458f380f3cacea3e879d91a
+  versions:
+  - 0.21.0
+  - 0.21.0-rc1
+  - 0.21.0-rc2
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=32202
+modified: '2021-03-20T00:01:07.087195Z'
+created: '2021-03-20T00:01:07.086960Z'
