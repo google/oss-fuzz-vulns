@@ -18,8 +18,9 @@ affects:
     repo: https://github.com/VirusTotal/yara.git
     introduced: aa182b4f928e54189fe51606d4dc419e7b27022f
     fixed: 72c109ea85f1434237a292de3478f53554989453
-  versions: []
+  versions:
+  - v3.9.0
 references:
 - https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11300
-modified: '2021-03-09T04:49:04.819040Z'
+modified: '2021-03-25T05:55:42.721463Z'
 created: '2021-01-13T00:00:46.327625Z'
