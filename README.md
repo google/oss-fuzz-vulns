@@ -1,13 +1,17 @@
 # OSS-Fuzz vulnerabilities
 
-This is a repo for recording [OSS-Fuzz](https://github.com/google/oss-fuzz)
+This is a repo for recording disclosed [OSS-Fuzz](https://github.com/google/oss-fuzz)
 vulnerabilities, and acts as the source of truth for OSS-Fuzz vulnerabilities in
 [OSV].
 
 Each OSS-Fuzz vulnerability has precise impacted version and commit version
-information added.
+information added by OSV.
 
 Users may submit PRs to update any information here.
+
+## Format spec
+
+The format is described [here](https://osv.dev/docs/index.html#tag/vulnerability_schema).
 
 ## Automation
 
