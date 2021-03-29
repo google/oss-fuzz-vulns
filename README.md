@@ -15,7 +15,7 @@ The format is described [here](https://osv.dev/docs/index.html#tag/vulnerability
 
 ## Automation
 
-Vulnerabilities undergo automated bisection and repository analysis as part of 
+Vulnerabilities undergo **automated bisection** and **repository analysis** as part of 
 [OSV] to determine the affected commit ranges and versions. They are then
 automatically imported in this repository.
 
@@ -27,11 +27,13 @@ OSV will also regularly recompute affected versions and detect cherry picks
 across different branches for each vulnerability
 ([example](https://github.com/google/oss-fuzz-vulns/commit/76395230e992d4de9bae19b39d27dbad16ec389d)).
 
+OSV also provides an [API](https://osv.dev/docs/) to let users easily query this information.
+
 [OSV]: https://github.com/google/osv
 
 ## Missing entries
 
-Entries may be missing for a few reasons.
+An OSS-Fuzz vulnerability may be missing here for a few reasons.
 
 ### The automated bisection failed
 
@@ -39,7 +41,12 @@ Sometimes the bisection is unable to resolve the introduced and fixed
 ranges to an acceptably small range. In these cases, we opt to keep the database
 higher quality and avoid showing such results by default. 
 
-TODO: how to add results back manually.
+Failure cases are recorded at the public GCS bucket `gs://oss-fuzz-osv-vulns`.
+Partially filled JSONs may be found at either
+`gs://oss-fuzz-osv-vulns/testcase/<ClusterFuzz Testcase ID>.json` or
+`gs://oss-fuzz-osv-vulns/testcase/<issue ID>.json`.
+
+The missing details may be filled in manually and submitted as part of a PR to this repo.
 
 ### The bug was not marked as security by OSS-Fuzz
 
@@ -50,6 +57,5 @@ details page. Marking a bug as security will automatically cause it to be fed in
 ## Removing an entry
 
 If a vulnerability in this repository is not considered a security vulnerability,
-it may be removed by submitting a PR.
-
+it may be removed by submitting a PR to delete the corresponding files.
 
