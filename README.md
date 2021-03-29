@@ -52,7 +52,8 @@ The missing details may be filled in manually and submitted as part of a PR to t
 
 We only include bugs that are marked as security by OSS-Fuzz. If you are a
 project maintainer, you may edit the security flag on the corresponding testcase
-details page. Marking a bug as security will automatically cause it to be fed into OSV.
+details page. Marking a bug as security will automatically cause it to be fed into OSV,
+if the bug is reliabily reproducible.
 
 ## Removing an entry
 
