@@ -1,0 +1,23 @@
+id: OSV-TEST-2018-206
+package:
+  name: boringssl
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in parse_sigalgs_list
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=9808
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  parse_sigalgs_list
+  SSL_CTX_set1_sigalgs_list
+  std::__1::function<void
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://boringssl.googlesource.com/boringssl
+    introduced: 826ce15092f45ce0ff957b1d2849d74fc7a1cb83
+    fixed: ddedf6d455e33d6a0b3bc40581700f3d252029d7
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=9808
+modified: '2021-03-09T04:49:04.874314Z'
+created: '2021-01-13T00:01:24.412685Z'
