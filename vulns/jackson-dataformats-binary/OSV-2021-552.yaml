@@ -1,0 +1,24 @@
+id: OSV-2021-552
+package:
+  name: jackson-dataformats-binary
+  ecosystem: OSS-Fuzz
+summary: Uncaught exception in java.base/java.lang.ClassLoader.defineClass0
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=32407
+
+  Crash type: Uncaught exception
+  Crash state:
+  java.base/java.lang.ClassLoader.defineClass0
+  java.base/java.lang.System$2.defineClass
+  java.base/java.lang.invoke.MethodHandles$Lookup$ClassDefiner.defineClass
+severity: LOW
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/FasterXML/jackson-dataformats-binary
+    introduced: 5b10d2317b7dbb41b6642523f5720052848027f7
+    fixed: 437353d8f6c3cd8ea50bb66ddfe9787a7960c874:5fefc76b5a446d9afc62975e64ad46b707804639
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=32407
+modified: '2021-03-25T00:00:02.194449Z'
+created: '2021-03-25T00:00:02.194060Z'

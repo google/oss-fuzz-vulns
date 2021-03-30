@@ -1,0 +1,24 @@
+id: OSV-2021-562
+package:
+  name: w3m
+  ecosystem: OSS-Fuzz
+summary: Segv on unknown address in GC_generic_malloc_many
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=32453
+
+  Crash type: Segv on unknown address
+  Crash state:
+  GC_generic_malloc_many
+  GC_malloc_atomic
+  Strnew_size
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/tats/w3m
+    introduced: d9d9d7b278c9efbcf138bc45dccf06a216a1b69a
+    fixed: 5a1059b6f3ab031afa48c5ddcd81392444de53a9
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=32453
+modified: '2021-03-26T00:00:11.572278Z'
+created: '2021-03-26T00:00:11.571998Z'

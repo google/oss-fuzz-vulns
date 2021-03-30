@@ -1,0 +1,24 @@
+id: OSV-2021-561
+package:
+  name: wuffs
+  ecosystem: OSS-Fuzz
+summary: UNKNOWN WRITE in wuffs_base__pixel_swizzler__bgr__bgra_premul__src
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=32451
+
+  Crash type: UNKNOWN WRITE
+  Crash state:
+  wuffs_base__pixel_swizzler__bgr__bgra_premul__src
+  wuffs_base__pixel_swizzler__swizzle_interleaved_from_slice
+  fuzz
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/google/wuffs.git
+    introduced: 41bfcabd3a7e9735299ff011654f45f2100bc244
+    fixed: b645180357d2ba2a5dcd610fff4ffe2872540dad
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=32451
+modified: '2021-03-26T00:00:06.909059Z'
+created: '2021-03-26T00:00:06.908702Z'

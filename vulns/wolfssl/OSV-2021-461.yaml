@@ -1,0 +1,27 @@
+id: OSV-2021-461
+package:
+  name: wolfssl
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in ProcessReply
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31527
+
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  ProcessReply
+  wolfSSL_connect
+  client.c
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/wolfssl/wolfssl
+    introduced: deaf3b4b40d26663191d085557fbeb8cafa420ae:881657782478cef4a1527847bb2c4cd427bd6c99
+    fixed: 8bee2af550750d93dbfc7f790be33a6d6f077d49
+  versions:
+  - v4.6.0-stable
+  - v4.7.0-stable
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31527
+modified: '2021-03-09T05:01:39.904987Z'
+created: '2021-03-01T00:00:11.827075Z'

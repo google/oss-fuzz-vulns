@@ -1,0 +1,24 @@
+id: OSV-2021-559
+package:
+  name: jackson-core
+  ecosystem: OSS-Fuzz
+summary: Uncaught exception in java.base/java.nio.CharBuffer.wrap
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=32405
+
+  Crash type: Uncaught exception
+  Crash state:
+  java.base/java.nio.CharBuffer.wrap
+  java.base/sun.nio.cs.StreamDecoder.implRead
+  java.base/sun.nio.cs.StreamDecoder.read
+severity: LOW
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/FasterXML/jackson-core
+    introduced: b051c9036ee505a7e85c81a704e2e43c5397200f:8a2036e948ee849b922121c061c002cb0e131bfa
+    fixed: 8a2036e948ee849b922121c061c002cb0e131bfa:0deae137735e1c81159e83bd1b4613e6d6b36501
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=32405
+modified: '2021-03-25T00:01:07.914466Z'
+created: '2021-03-25T00:01:07.913753Z'

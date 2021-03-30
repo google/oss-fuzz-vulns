@@ -1,0 +1,24 @@
+id: OSV-2021-558
+package:
+  name: jackson-core
+  ecosystem: OSS-Fuzz
+summary: Uncaught exception in java.base/java.nio.Buffer.<init>
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=32399
+
+  Crash type: Uncaught exception
+  Crash state:
+  java.base/java.nio.Buffer.<init>
+  java.base/java.nio.CharBuffer.<init>
+  java.base/java.nio.HeapCharBuffer.<init>
+severity: LOW
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/FasterXML/jackson-core
+    introduced: b051c9036ee505a7e85c81a704e2e43c5397200f:8a2036e948ee849b922121c061c002cb0e131bfa
+    fixed: 0deae137735e1c81159e83bd1b4613e6d6b36501:66b44ad1c0e1715454725b6d6ddade3102311584
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=32399
+modified: '2021-03-25T00:01:05.933714Z'
+created: '2021-03-25T00:01:05.933424Z'
