@@ -17,7 +17,29 @@ affects:
   - type: GIT
     repo: https://github.com/envoyproxy/envoy.git
     fixed: b3f42a4ebbd51e816cfde63ee672ce31e420602a
+  - type: GIT
+    repo: https://github.com/envoyproxy/envoy.git
+    fixed: 22c9fbd5673c8de33cc89d733f41ce338db3c8ad
+  versions:
+  - v1.0.0
+  - v1.1.0
+  - v1.10.0
+  - v1.11.0
+  - v1.11.1
+  - v1.11.2
+  - v1.12.0
+  - v1.12.1
+  - v1.2.0
+  - v1.3.0
+  - v1.4.0
+  - v1.5.0
+  - v1.6.0
+  - v1.7.0
+  - v1.7.1
+  - v1.8.0
+  - v1.9.0
+  - v1.9.1
 references:
 - https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18431
-modified: '2021-03-29T05:14:39.113932Z'
+modified: '2021-03-31T03:33:39.405699Z'
 created: '2021-03-29T05:14:39.113684Z'
