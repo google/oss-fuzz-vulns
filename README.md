@@ -44,11 +44,15 @@ ranges to an acceptably small range. In these cases, we opt to keep the database
 higher quality and avoid showing such results by default. 
 
 Failure cases are recorded at the public GCS bucket `gs://oss-fuzz-osv-vulns`.
-Partially filled JSONs may be found at either
-`gs://oss-fuzz-osv-vulns/testcase/<ClusterFuzz Testcase ID>.json` or
-`gs://oss-fuzz-osv-vulns/testcase/<issue ID>.json`.
+You may use the script `scripts/import.py` to import any existing details about
+these failed vulnerabilities.
 
-The missing details may be filled in manually and submitted as part of a PR to this repo.
+```bash
+$ python scripts/import.py <oss-fuzz issue ID>
+```
+
+Any missing details may be filled in manually and submitted as part of a PR to this repo.
+See [this example](https://github.com/google/oss-fuzz-vulns/commit/8546454f8ad92bee001ca3be5b4c236bcc2df3d5).
 
 ### The bug was not marked as security by OSS-Fuzz
 
