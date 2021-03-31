@@ -1,0 +1,23 @@
+id: OSV-2019-1
+package:
+  name: envoy
+  ecosystem: OSS-Fuzz
+summary: 'ASSERT: bufferRemainingSize() >= length.'
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18431
+
+  Crash type: ASSERT
+  Crash state:
+  bufferRemainingSize() >= length.
+  Envoy::Http::Http1::ConnectionImpl::copyToBuffer
+  Envoy::Http::Http1::RequestStreamEncoderImpl::encodeHeaders
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/envoyproxy/envoy.git
+    fixed: b3f42a4ebbd51e816cfde63ee672ce31e420602a
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18431
+modified: '2021-03-29T05:14:39.113932Z'
+created: '2021-03-29T05:14:39.113684Z'
