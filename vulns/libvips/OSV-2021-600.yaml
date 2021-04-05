@@ -1,0 +1,27 @@
+id: OSV-2021-600
+package:
+  name: libvips
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in gif_internal_decode_frame
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=32855
+
+  Crash type: Heap-buffer-overflow WRITE {*}
+  Crash state:
+  gif_internal_decode_frame
+  gif_decode_frame
+  vips_foreign_load_nsgif_generate
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/libvips/libvips
+    introduced: 9e10f4bf0fccfdfc0e3a7a2acbb40abdb1611d9f
+    fixed: f726edb7f71f05f2af6f08a7442354c1b70e9383
+  - type: GIT
+    repo: https://github.com/libvips/libvips
+    introduced: 9bdf5e8cda3e0c63584984282b1e36d97c50bb1a
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=32855
+modified: '2021-04-04T00:00:13.290170Z'
+created: '2021-04-04T00:00:13.289894Z'
