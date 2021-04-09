@@ -7,7 +7,7 @@ details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24266
 
   Crash type: Index-out-of-bounds
-  Crash state:
+  Crash state: 
   QUnicodeTables::qGetProp
   QString QUnicodeTables::convertCase<QString>
   QString::toLower_helper
