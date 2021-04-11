@@ -1,0 +1,21 @@
+id: OSV-2021-623
+package:
+  name: cryptofuzz
+  ecosystem: OSS-Fuzz
+summary: Null-dereference READ
+details: |-
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=33052
+
+  Crash type: Null-dereference READ
+  Crash state:
+  NULL
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/guidovranken/cryptofuzz
+    introduced: 7befe29cf175dda18b60b9016ba5775ff0936f7b:a198cc04c3ffaf83007db19935d22d3e5de94e2d
+    fixed: a198cc04c3ffaf83007db19935d22d3e5de94e2d:0806bc7eaa7a0749585e368876ac723f69fa5e10
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=33052
+modified: '2021-04-10T00:01:03.266094Z'
+created: '2021-04-10T00:01:03.265801Z'
