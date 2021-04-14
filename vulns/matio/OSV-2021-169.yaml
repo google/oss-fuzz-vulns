@@ -1,0 +1,26 @@
+id: OSV-2021-169
+package:
+  name: matio
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in H5O__cont_decode
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29549
+
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  H5O__cont_decode
+  H5O__chunk_deserialize
+  H5O__cache_deserialize
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: git://git.code.sf.net/p/matio/matio
+    introduced: 1ce8f2d1845ecdde19a35605cabdbb884776d52d
+  versions:
+  - v1.5.20
+  - v1.5.21
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29549
+modified: '2021-03-09T05:46:36.169835Z'
+created: '2021-01-13T21:57:45.199364Z'
