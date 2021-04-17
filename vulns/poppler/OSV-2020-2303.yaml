@@ -1,0 +1,30 @@
+id: OSV-2020-2303
+package:
+  name: poppler
+  ecosystem: OSS-Fuzz
+summary: Use-of-uninitialized-value in Splash::pipeRunSimpleXBGR8
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29651
+
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  Splash::pipeRunSimpleXBGR8
+  Splash::drawSpan
+  Splash::fillWithPattern
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://gitlab.freedesktop.org/poppler/poppler.git
+    introduced: 2386bf37f9022cb5a9d434e30e8d8d55f4916e55
+  versions:
+  - poppler-20.12.0
+  - poppler-20.12.1
+  - poppler-21.01.0
+  - poppler-21.02.0
+  - poppler-21.03.0
+  - poppler-21.04.0
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29651
+modified: '2021-03-09T05:47:28.453405Z'
+created: '2021-01-18T00:00:08.864783Z'
