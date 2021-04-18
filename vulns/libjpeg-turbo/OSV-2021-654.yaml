@@ -1,0 +1,24 @@
+id: OSV-2021-654
+package:
+  name: libjpeg-turbo
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in decode_mcu_fast
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=33340
+
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  decode_mcu_fast
+  decode_mcu
+  consume_data
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/libjpeg-turbo/libjpeg-turbo
+    introduced: 3ab3234875bd58320b1646c086f95511ab67c972:d147be83e9a9f904918ba7f834b0fb28e09de9b5
+    fixed: d147be83e9a9f904918ba7f834b0fb28e09de9b5:4de8f6922a9be7d0a51a429e367283fd40031b26
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=33340
+modified: '2021-04-18T00:01:02.874106Z'
+created: '2021-04-18T00:01:02.873828Z'
