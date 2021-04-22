@@ -1,0 +1,24 @@
+id: OSV-2021-667
+package:
+  name: php
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in _estrdup
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=33445
+
+  Crash type: Heap-buffer-overflow READ 12
+  Crash state:
+  _estrdup
+  exif_process_user_comment
+  exif_process_IFD_TAG_impl
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/php/php-src.git
+    introduced: 2bebe104c127582e9b9ab5d165717ebee44e8afc
+    fixed: 8bb81226c167e0c90a1f87357e9abd32c05076c8
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=33445
+modified: '2021-04-21T00:01:18.024990Z'
+created: '2021-04-21T00:01:18.024661Z'

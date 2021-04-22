@@ -1,0 +1,53 @@
+id: OSV-2021-421
+package:
+  name: selinux
+  ecosystem: OSS-Fuzz
+summary: Heap-use-after-free in __cil_verify_classperms
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31124
+
+  Crash type: Heap-use-after-free READ 8
+  Crash state:
+  __cil_verify_classperms
+  __verify_map_perm_classperms
+  hashtab_map
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/SELinuxProject/selinux
+    introduced: 0451adebdf153eee1f69914141311114a0130982
+    fixed: 2d35fcc7e9e976a2346b1de20e54f8663e8a6cba
+  versions:
+  - '3.2'
+  - 3.2-rc3
+  - checkpolicy-3.2
+  - checkpolicy-3.2-rc3
+  - libselinux-3.2
+  - libselinux-3.2-rc3
+  - libsemanage-3.2
+  - libsemanage-3.2-rc3
+  - libsepol-3.2
+  - libsepol-3.2-rc3
+  - mcstrans-3.2
+  - mcstrans-3.2-rc3
+  - policycoreutils-3.2
+  - policycoreutils-3.2-rc3
+  - restorecond-3.2
+  - restorecond-3.2-rc3
+  - secilc-3.2
+  - secilc-3.2-rc3
+  - selinux-dbus-3.2
+  - selinux-dbus-3.2-rc3
+  - selinux-gui-3.2
+  - selinux-gui-3.2-rc3
+  - selinux-python-3.2
+  - selinux-python-3.2-rc3
+  - selinux-sandbox-3.2
+  - selinux-sandbox-3.2-rc3
+  - semodule-utils-3.2
+  - semodule-utils-3.2-rc3
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31124
+modified: '2021-03-09T05:46:59.555984Z'
+created: '2021-02-20T00:00:20.081676Z'

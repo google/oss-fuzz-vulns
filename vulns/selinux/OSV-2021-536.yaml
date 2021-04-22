@@ -1,0 +1,53 @@
+id: OSV-2021-536
+package:
+  name: selinux
+  ecosystem: OSS-Fuzz
+summary: Heap-use-after-free in cil_reset_classpermission
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=32177
+
+  Crash type: Heap-use-after-free READ 8
+  Crash state:
+  cil_reset_classpermission
+  cil_reset_classperms_set
+  cil_reset_classperms_list
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/SELinuxProject/selinux
+    introduced: 0451adebdf153eee1f69914141311114a0130982
+    fixed: c49a8ea09501ad66e799ea41b8154b6770fec2c8
+  versions:
+  - '3.2'
+  - 3.2-rc3
+  - checkpolicy-3.2
+  - checkpolicy-3.2-rc3
+  - libselinux-3.2
+  - libselinux-3.2-rc3
+  - libsemanage-3.2
+  - libsemanage-3.2-rc3
+  - libsepol-3.2
+  - libsepol-3.2-rc3
+  - mcstrans-3.2
+  - mcstrans-3.2-rc3
+  - policycoreutils-3.2
+  - policycoreutils-3.2-rc3
+  - restorecond-3.2
+  - restorecond-3.2-rc3
+  - secilc-3.2
+  - secilc-3.2-rc3
+  - selinux-dbus-3.2
+  - selinux-dbus-3.2-rc3
+  - selinux-gui-3.2
+  - selinux-gui-3.2-rc3
+  - selinux-python-3.2
+  - selinux-python-3.2-rc3
+  - selinux-sandbox-3.2
+  - selinux-sandbox-3.2-rc3
+  - semodule-utils-3.2
+  - semodule-utils-3.2-rc3
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=32177
+modified: '2021-03-19T00:01:12.720051Z'
+created: '2021-03-19T00:01:12.719776Z'
