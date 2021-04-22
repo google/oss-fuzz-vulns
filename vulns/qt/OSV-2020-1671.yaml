@@ -18,11 +18,6 @@ affects:
   - type: GIT
     repo: git://code.qt.io/qt/qtbase.git
     fixed: f575ed4b15c97726c64dbceff23237c84ac26480
-  # 5.15
-  - type: GIT
-    repo: git://code.qt.io/qt/qt5.git
-    introduced: cd021169a138147b4dec978d6c9163d00e6ecd08
-    fixed: b3326dc04e20bd1e7a455dd4fe00fba4bf0b7445
   - type: GIT
     repo: git://code.qt.io/qt/qtbase.git
     fixed: 80e3ded22d873e4d5d4251f29943f6f670cb69f0
