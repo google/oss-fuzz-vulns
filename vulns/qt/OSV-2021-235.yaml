@@ -13,10 +13,22 @@ details: |
   QSvgTinyDocument::draw
 affects:
   ranges:
+  # 6.0
+  - type: GIT
+    repo: git://code.qt.io/qt/qtsvg.git
+    fixed: 117f4f34c6162eb8ac749569a5fff604713a3eba
+  # 6.1
+  - type: GIT
+    repo: git://code.qt.io/qt/qtsvg.git
+    fixed: fc1a706440a33c792da08aa0f4b3ed2e0057e349
+  # dev
   - type: GIT
     repo: git://code.qt.io/qt/qt5.git
     introduced: ac489d92a3ae32540c4794d85be6fb103c701ee8:1095b1abc6d233bc27321f46f71bbd85fe8556de
-    fixed: 7b3e2f369d9ba2ee5e636e1ec9b7a3890363e187:63714587d1ea7bc0ff0c31f68ac879e777b9a3cd
+    fixed: 9278f5b56b2ba71abe9c7b827c83a05b6b756a89
+  - type: GIT
+    repo: git://code.qt.io/qt/qtsvg.git
+    fixed: afde7ca3a40f524e40052df696f74190452b22cb
   versions:
   - v5.15.1
   - v5.15.2
@@ -33,5 +45,6 @@ affects:
   - v6.1.0-alpha1
 references:
 - https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29873
-modified: '2021-03-09T04:49:06.266386Z'
+- https://codereview.qt-project.org/c/qt/qtsvg/+/335065
+modified: '2021-04-21T12:19:54.000000Z'
 created: '2021-01-25T00:00:16.933600Z'

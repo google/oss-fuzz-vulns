@@ -14,24 +14,22 @@ details: |
 severity: MEDIUM
 affects:
   ranges:
+  # 5.12
   - type: GIT
-    repo: git://code.qt.io/qt/qt5.git
-    introduced: cd021169a138147b4dec978d6c9163d00e6ecd08
-    fixed: b3326dc04e20bd1e7a455dd4fe00fba4bf0b7445
+    repo: git://code.qt.io/qt/qtbase.git
+    fixed: f575ed4b15c97726c64dbceff23237c84ac26480
+  - type: GIT
+    repo: git://code.qt.io/qt/qtbase.git
+    fixed: 80e3ded22d873e4d5d4251f29943f6f670cb69f0
+  # dev
+  - type: GIT
+    repo: git://code.qt.io/qt/qtbase.git
+    fixed: 1d778a59f781ecf822c9e3f7777b680fea2c4e62
   versions:
   - v5.15.1
-  - v6.0.0
   - v6.0.0-alpha1
-  - v6.0.0-beta1
-  - v6.0.0-beta2
-  - v6.0.0-beta3
-  - v6.0.0-beta4
-  - v6.0.0-beta5
-  - v6.0.0-rc1
-  - v6.0.0-rc2
-  - v6.0.1
-  - v6.1.0-alpha1
 references:
 - https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25243
-modified: '2021-03-09T04:49:05.384021Z'
+- https://codereview.qt-project.org/c/qt/qtbase/+/316936
+modified: '2021-04-21T12:18:05.000000Z'
 created: '2020-08-29T00:00:13.673013Z'
