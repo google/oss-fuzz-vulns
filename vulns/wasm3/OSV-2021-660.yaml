@@ -1,0 +1,24 @@
+id: OSV-2021-660
+package:
+  name: wasm3
+  ecosystem: OSS-Fuzz
+summary: UNKNOWN READ in op_BranchIfPrologue_s
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=33397
+
+  Crash type: UNKNOWN READ
+  Crash state:
+  op_BranchIfPrologue_s
+  m3_CallVL
+  m3_CallV
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/wasm3/wasm3
+    introduced: 4c19660109617c34a4b755ab2ab7f3002ea498b2
+    fixed: 12a5277ec0977af493530b704a5a16e28f734788
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=33397
+modified: '2021-04-20T00:00:13.765379Z'
+created: '2021-04-20T00:00:13.765122Z'
