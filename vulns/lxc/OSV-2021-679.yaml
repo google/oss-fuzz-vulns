@@ -1,0 +1,28 @@
+id: OSV-2021-679
+package:
+  name: lxc
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in strlcpy
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=33556
+
+  Crash type: Heap-buffer-overflow WRITE {*}
+  Crash state:
+  strlcpy
+  parse_lxc_mntopts
+  set_config_rootfs_options
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/lxc/lxc
+    introduced: 16fcdacc241a9c03bc4c83fdf16d6832e1afc1ba
+    fixed: 2e5c468aa59b6458d2894e7b5c730ca251e84b57
+  - type: GIT
+    repo: https://github.com/lxc/lxc
+    introduced: 4c51f61472a0e89a8f3352a736328727b2133c0f
+    fixed: c1831266cb936945509db98c2640390c52a78c83
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=33556
+modified: '2021-04-23T00:01:10.860415Z'
+created: '2021-04-23T00:01:10.860169Z'
