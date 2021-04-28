@@ -1,0 +1,24 @@
+id: OSV-2021-699
+package:
+  name: wasm3
+  ecosystem: OSS-Fuzz
+summary: UNKNOWN WRITE in m3_FreeModule
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=33726
+
+  Crash type: UNKNOWN WRITE
+  Crash state:
+  m3_FreeModule
+  _FreeModule
+  Compile_ExtendedOpcode
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/wasm3/wasm3
+    introduced: 0d76b81c4b109272b2d98c91cb3776c8aa36befd
+    fixed: 8cb2fd424309fa6ff70cf00bfcedc4e66d3355c0
+references:
+- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=33726
+modified: '2021-04-28T00:01:11.170219Z'
+created: '2021-04-28T00:01:11.169950Z'
