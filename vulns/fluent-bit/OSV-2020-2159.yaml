@@ -21,6 +21,7 @@ affects:
   versions:
   - v1.7.0-rc1
 references:
-- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=27499
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=27499
 modified: '2021-03-09T04:49:05.691957Z'
 published: '2020-11-15T22:34:00.821965Z'

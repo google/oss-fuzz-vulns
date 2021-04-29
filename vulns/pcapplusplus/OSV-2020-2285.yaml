@@ -18,6 +18,7 @@ affects:
     repo: https://github.com/seladb/PcapPlusPlus
     introduced: 633fdfb78b85d795f4b437cdb5fbdc041ae2b622:54fcc6190efeeb54dc6d66c809ec7b7e7308eab8
 references:
-- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=28945
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=28945
 modified: '2021-03-09T05:46:43.813735Z'
 published: '2020-12-25T00:01:03.941509Z'

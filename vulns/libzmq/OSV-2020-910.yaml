@@ -19,6 +19,7 @@ affects:
     introduced: 2352e0a8968b102cd03f1d4089b46fe454cda05e:fc99911d907bfb33081909a565ca6bbb5437b00c
     fixed: 87ee10643854b1d27afd65fb1ec930dcedf35676:d280c44fe00092d240f4da19b1247124069371c7
 references:
-- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24200
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24200
 modified: '2021-03-09T04:49:06.148139Z'
 published: '2020-07-21T00:00:27.471141Z'

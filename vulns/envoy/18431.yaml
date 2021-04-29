@@ -40,6 +40,7 @@ affects:
   - v1.9.0
   - v1.9.1
 references:
-- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18431
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18431
 modified: '2021-03-31T03:33:39.405699Z'
 published: '2021-03-29T05:14:39.113684Z'

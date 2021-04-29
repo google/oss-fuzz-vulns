@@ -163,7 +163,9 @@ affects:
   - v5.9.8
   - v5.9.9
 references:
-- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25243
-- https://codereview.qt-project.org/c/qt/qtbase/+/316936
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25243
+- type: WEB
+  url: https://codereview.qt-project.org/c/qt/qtbase/+/316936
 modified: '2021-04-22T04:48:40.263080Z'
 published: '2020-08-29T00:00:13.673013Z'

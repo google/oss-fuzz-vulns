@@ -21,6 +21,7 @@ affects:
   versions:
   - FILE5_29
 references:
-- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=153
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=153
 modified: '2021-03-09T04:49:04.731067Z'
 published: '2021-01-15T05:22:13.068Z'

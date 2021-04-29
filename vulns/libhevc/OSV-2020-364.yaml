@@ -22,6 +22,7 @@ affects:
   - android-mainline-10.0.0_r8
   - platform-tools-29.0.5
 references:
-- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=17601
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=17601
 modified: '2021-03-09T04:49:05.846944Z'
 published: '2020-07-01T00:00:05.352256Z'

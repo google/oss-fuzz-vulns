@@ -21,6 +21,7 @@ affects:
   versions:
   - '3.2'
 references:
-- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23691
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23691
 modified: '2021-03-09T04:49:06.054608Z'
 published: '2020-07-04T00:00:04.496137Z'

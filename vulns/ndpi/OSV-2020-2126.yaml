@@ -20,6 +20,7 @@ affects:
   - '3.2'
   - '3.4'
 references:
-- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26880
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26880
 modified: '2021-03-09T05:46:58.984741Z'
 published: '2020-11-03T00:00:46.816747Z'

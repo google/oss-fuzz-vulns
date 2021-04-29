@@ -21,6 +21,7 @@ affects:
   versions:
   - v4.0.10
 references:
-- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=16602
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=16602
 modified: '2021-03-09T04:49:05.200725Z'
 published: '2020-07-22T21:50:04.734490Z'

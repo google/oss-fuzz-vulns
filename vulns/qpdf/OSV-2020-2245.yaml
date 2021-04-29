@@ -31,6 +31,7 @@ affects:
   - release-qpdf-9.1.1
   - release-qpdf-9.1.rc1
 references:
-- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=28262
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=28262
 modified: '2021-03-09T04:49:05.740792Z'
 published: '2020-12-06T00:00:11.834199Z'

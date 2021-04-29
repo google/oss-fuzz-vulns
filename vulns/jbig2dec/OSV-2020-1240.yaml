@@ -21,6 +21,7 @@ affects:
   versions:
   - '0.18'
 references:
-- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=17855
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=17855
 modified: '2021-03-09T04:49:05.164339Z'
 published: '2020-07-22T21:49:59.411582Z'

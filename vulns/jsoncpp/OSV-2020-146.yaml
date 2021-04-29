@@ -25,6 +25,7 @@ affects:
   versions:
   - 00.11.0
 references:
-- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21916
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21916
 modified: '2021-03-09T04:49:05.275853Z'
 published: '2020-06-24T01:51:16.175015Z'

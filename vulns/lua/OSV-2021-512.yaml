@@ -21,6 +21,7 @@ affects:
   versions:
   - v5.4.2
 references:
-- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31892
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31892
 modified: '2021-03-11T00:01:02.762866Z'
 published: '2021-03-11T00:01:02.762585Z'

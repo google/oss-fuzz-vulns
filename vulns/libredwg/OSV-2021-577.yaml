@@ -46,6 +46,7 @@ affects:
   - 0.12.3.4270
   - 0.12.3.4273
 references:
-- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=32604
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=32604
 modified: '2021-03-29T00:00:22.956466Z'
 published: '2021-03-29T00:00:22.956129Z'

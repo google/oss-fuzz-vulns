@@ -3,18 +3,12 @@ package:
   name: qt
   ecosystem: OSS-Fuzz
 summary: Index-out-of-bounds in QUnicodeTables::qGetProp
-details: |
-  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24266
-
-  Crash type: Index-out-of-bounds
-  Crash state: 
-  QUnicodeTables::qGetProp
-  QString QUnicodeTables::convertCase<QString>
-  QString::toLower_helper
+details: "OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24266\n\
+  \nCrash type: Index-out-of-bounds\nCrash state: \nQUnicodeTables::qGetProp\nQString\
+  \ QUnicodeTables::convertCase<QString>\nQString::toLower_helper\n"
 severity: MEDIUM
 affects:
   ranges:
-  # 6.0
   - type: GIT
     repo: git://code.qt.io/qt/qt5.git
     introduced: 8a5938bd2288c13dfe41c289c8ed0647cfa412e9:176d9ce09c8abcc232a4bd5ebc2ac6d6413113af
@@ -27,6 +21,7 @@ affects:
   - v5.15.1
   - v5.15.2
 references:
-- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24266
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24266
 modified: '2021-04-21T12:19:03.000000Z'
 published: '2020-07-21T00:00:16.344765Z'

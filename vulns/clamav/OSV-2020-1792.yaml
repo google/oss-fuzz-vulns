@@ -25,6 +25,7 @@ affects:
   versions:
   - clamav-0.102.2
 references:
-- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20464
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20464
 modified: '2021-03-09T04:49:05.443027Z'
 published: '2020-09-18T00:00:21.241767Z'

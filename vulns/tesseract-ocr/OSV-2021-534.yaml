@@ -21,6 +21,7 @@ affects:
   versions:
   - 5.0.0-alpha-20210401
 references:
-- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=32142
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=32142
 modified: '2021-03-19T00:00:04.482235Z'
 published: '2021-03-19T00:00:04.481954Z'

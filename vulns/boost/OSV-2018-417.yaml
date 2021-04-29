@@ -21,6 +21,7 @@ affects:
   versions:
   - boost-1.68.0
 references:
-- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=9539
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=9539
 modified: '2021-03-09T04:49:04.984568Z'
 published: '2021-01-15T00:01:14.949558Z'

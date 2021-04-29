@@ -21,6 +21,7 @@ affects:
   versions:
   - 3.0.0-rc
 references:
-- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30886
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30886
 modified: '2021-02-27T00:07:08.802931Z'
 published: '2021-02-14T00:00:02.251664Z'

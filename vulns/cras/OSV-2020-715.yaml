@@ -22,6 +22,7 @@ affects:
     repo: https://chromium.googlesource.com/chromiumos/third_party/adhd
     introduced: d2f8aea7c38919fbee0feb9a474f4c9524e6231f
 references:
-- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15058
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15058
 modified: '2021-03-09T04:49:06.037896Z'
 published: '2020-07-01T00:00:26.392362Z'

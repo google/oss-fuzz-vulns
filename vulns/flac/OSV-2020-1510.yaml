@@ -22,6 +22,7 @@ affects:
     repo: https://github.com/xiph/flac.git
     introduced: 7e79d0aa9c4274776259a52a15081dc5f62c5063
 references:
-- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=19816
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=19816
 modified: '2021-03-15T04:55:03.491227Z'
 published: '2020-07-28T00:00:35.146104Z'

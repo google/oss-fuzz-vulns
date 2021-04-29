@@ -52,6 +52,7 @@ affects:
   - gs9.28-temp-for-testing-tag
   - rjj_9.53.2_test
 references:
-- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29903
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29903
 modified: '2021-03-09T12:01:01.510644Z'
 published: '2021-01-26T00:00:02.244670Z'

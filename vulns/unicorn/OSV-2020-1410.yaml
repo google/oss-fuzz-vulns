@@ -26,6 +26,7 @@ affects:
   - 1.0.2-rc5
   - 1.0.2-rc6
 references:
-- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=17032
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=17032
 modified: '2021-03-15T04:55:27.753054Z'
 published: '2020-07-28T00:00:12.342145Z'

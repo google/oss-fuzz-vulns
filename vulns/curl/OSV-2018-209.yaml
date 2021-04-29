@@ -21,6 +21,7 @@ affects:
   versions:
   - curl-7_57_0
 references:
-- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=5251
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=5251
 modified: '2021-03-09T04:49:04.875757Z'
 published: '2021-01-13T00:01:25.235178Z'

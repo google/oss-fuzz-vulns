@@ -48,6 +48,7 @@ affects:
   - semodule-utils-3.2
   - semodule-utils-3.2-rc3
 references:
-- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=32675
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=32675
 modified: '2021-03-31T00:00:26.274201Z'
 published: '2021-03-31T00:00:26.273923Z'

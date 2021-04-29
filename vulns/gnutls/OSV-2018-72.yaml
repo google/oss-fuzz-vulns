@@ -36,6 +36,7 @@ affects:
   - gnutls_3_6_8
   - gnutls_3_6_9
 references:
-- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=10143
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=10143
 modified: '2021-03-09T04:49:05.020624Z'
 published: '2021-01-13T00:00:34.744580Z'

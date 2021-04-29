@@ -22,6 +22,7 @@ affects:
     repo: https://github.com/wolfssl/wolfssl
     introduced: c482d160290c5cf314a3b10eba621dd37b6795a1
 references:
-- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29103
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29103
 modified: '2021-03-15T05:06:54.485974Z'
 published: '2020-12-31T00:01:21.746087Z'

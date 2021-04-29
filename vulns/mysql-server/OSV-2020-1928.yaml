@@ -706,6 +706,7 @@ affects:
   - mysql-cluster-8.0.17
   - mysql-cluster-8.0.18
 references:
-- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=19830
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=19830
 modified: '2021-03-09T04:49:05.518045Z'
 published: '2020-10-02T00:00:30.533072Z'

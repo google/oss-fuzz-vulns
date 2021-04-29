@@ -22,6 +22,7 @@ affects:
   - 0.9.2-rc1.post1
   - 0.9.2-rc1.post2
 references:
-- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22371
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22371
 modified: '2021-03-09T04:49:05.301577Z'
 published: '2020-07-28T00:00:34.572692Z'

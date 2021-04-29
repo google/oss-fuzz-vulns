@@ -27,6 +27,7 @@ affects:
   - OpenSSL_1_1_1-pre6
   - OpenSSL_1_1_1-pre7
 references:
-- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=7696
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=7696
 modified: '2021-03-09T04:49:04.844960Z'
 published: '2021-01-13T00:01:05.757240Z'

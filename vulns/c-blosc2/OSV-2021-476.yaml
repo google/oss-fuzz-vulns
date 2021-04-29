@@ -18,6 +18,7 @@ affects:
     repo: https://github.com/Blosc/c-blosc2.git
     introduced: 861ba79f31393dec0a0782ca11cf32cebb6f6610
 references:
-- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31556
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31556
 modified: '2021-03-09T05:46:38.374747Z'
 published: '2021-03-02T00:01:22.540205Z'

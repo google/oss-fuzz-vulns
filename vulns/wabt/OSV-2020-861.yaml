@@ -28,6 +28,7 @@ affects:
   - gh-actions-test
   - gh-actions-test2
 references:
-- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22273
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22273
 modified: '2021-03-09T04:49:06.117956Z'
 published: '2020-07-14T22:13:48.598875Z'

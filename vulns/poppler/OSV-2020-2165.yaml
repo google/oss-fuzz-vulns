@@ -44,6 +44,7 @@ affects:
   - poppler-20.10.0
   - poppler-20.11.0
 references:
-- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=27523
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=27523
 modified: '2021-03-09T04:49:05.695381Z'
 published: '2020-11-17T00:00:57.103948Z'

@@ -22,6 +22,7 @@ affects:
   - FILE5_29
   - FILE5_30
 references:
-- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=1064
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=1064
 modified: '2021-03-09T04:49:04.751784Z'
 published: '2021-01-15T00:00:24.559102Z'

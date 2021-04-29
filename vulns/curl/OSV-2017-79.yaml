@@ -46,6 +46,7 @@ affects:
   - curl-7_74_0
   - tiny-curl-7_72_0
 references:
-- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=4785
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=4785
 modified: '2021-03-09T04:49:04.804315Z'
 published: '2021-01-13T21:57:35.291125Z'

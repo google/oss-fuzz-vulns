@@ -22,6 +22,7 @@ affects:
     repo: https://github.com/libvips/libvips
     introduced: 9bdf5e8cda3e0c63584984282b1e36d97c50bb1a
 references:
-- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=32855
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=32855
 modified: '2021-04-04T00:00:13.290170Z'
 published: '2021-04-04T00:00:13.289894Z'

@@ -21,6 +21,7 @@ affects:
   versions:
   - php-8.0.0beta3
 references:
-- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25526
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25526
 modified: '2021-03-09T04:49:05.413486Z'
 published: '2020-09-12T00:01:46.026747Z'

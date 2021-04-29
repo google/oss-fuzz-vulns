@@ -18,6 +18,7 @@ affects:
     repo: https://github.com/guidovranken/cryptofuzz
     introduced: 69c82214652a0a5d2aab9e4ab077a87ffa8057fb
 references:
-- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25181
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25181
 modified: '2021-03-09T04:51:23.211824Z'
 published: '2020-08-25T00:00:58.570983Z'

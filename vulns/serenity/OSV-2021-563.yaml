@@ -18,6 +18,7 @@ affects:
     repo: https://github.com/SerenityOS/serenity
     introduced: 51b880b0383089822f513330cd64f93b54b9f21c
 references:
-- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=32459
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=32459
 modified: '2021-03-26T00:01:07.954353Z'
 published: '2021-03-26T00:01:07.954062Z'

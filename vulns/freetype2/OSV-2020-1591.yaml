@@ -18,6 +18,7 @@ affects:
     repo: https://github.com/freetype/freetype2-testing.git
     fixed: 1a5069b66d4065abaffee80106aa2af555cbed8b
 references:
-- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24729
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24729
 modified: '2021-03-09T04:49:05.345166Z'
 published: '2020-08-08T00:00:13.898741Z'

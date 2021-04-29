@@ -22,6 +22,7 @@ affects:
   versions:
   - platform-tools-30.0.1
 references:
-- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21908
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21908
 modified: '2021-03-09T04:49:06.000614Z'
 published: '2020-06-24T01:51:12.508705Z'

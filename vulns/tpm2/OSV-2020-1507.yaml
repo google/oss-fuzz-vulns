@@ -26,6 +26,7 @@ affects:
   - cr50_v4.5
   - v1.9308_26_0.0.22
 references:
-- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23127
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23127
 modified: '2021-03-25T00:10:43.455722Z'
 published: '2020-07-28T00:00:34.623899Z'

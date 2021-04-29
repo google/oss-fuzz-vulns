@@ -46,6 +46,7 @@ affects:
   - v5.81.0-rc2
   - v5.81.0
 references:
-- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21783
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21783
 modified: '2021-04-12T00:05:26.010464Z'
 published: '2020-07-14T22:13:55.541274Z'

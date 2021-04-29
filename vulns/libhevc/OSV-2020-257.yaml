@@ -21,6 +21,7 @@ affects:
   versions:
   - platform-tools-29.0.5
 references:
-- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=17553
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=17553
 modified: '2021-03-09T04:49:05.789565Z'
 published: '2020-06-30T00:00:41.839764Z'

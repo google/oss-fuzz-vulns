@@ -18,6 +18,7 @@ affects:
     repo: https://github.com/dovecot/core
     introduced: f5befde9939b105b490cd475df380c3220275bb6
 references:
-- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23513
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23513
 modified: '2021-03-09T04:49:06.107486Z'
 published: '2020-07-14T22:13:42.180708Z'

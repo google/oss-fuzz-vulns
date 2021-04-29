@@ -21,6 +21,7 @@ affects:
   versions:
   - apache-arrow-0.16.0
 references:
-- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21039
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21039
 modified: '2021-03-09T04:49:06.151450Z'
 published: '2020-07-22T00:00:06.823071Z'

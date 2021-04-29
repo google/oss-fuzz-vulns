@@ -36,6 +36,7 @@ affects:
   - php-8.0.5RC1
   - php-8.0.5
 references:
-- https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25601
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25601
 modified: '2021-04-28T02:46:35.509565Z'
 published: '2020-09-13T00:00:46.091782Z'
