@@ -1,0 +1,25 @@
+id: OSV-2021-696
+package:
+  name: curl
+  ecosystem: OSS-Fuzz
+summary: UNKNOWN READ in ntlm_decode_type2_target
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=33720
+
+  Crash type: UNKNOWN READ
+  Crash state:
+  ntlm_decode_type2_target
+  Curl_auth_decode_ntlm_type2_message
+  Curl_sasl_continue
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/curl/curl.git
+    introduced: 19ea52da4df3c3ebc399ae25e705c7a8b5d45d95
+    fixed: 3e820fbf25f38743fd30e0ce96ba9ae34791aa7c
+modified: '2021-04-28T00:00:54.883668Z'
+published: '2021-04-28T00:00:54.883431Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=33720
