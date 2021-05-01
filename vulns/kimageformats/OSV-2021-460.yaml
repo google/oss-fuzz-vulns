@@ -1,0 +1,31 @@
+id: OSV-2021-460
+package:
+  name: kimageformats
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in Op_to_sdr_planes::convert_colorspace
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31495
+
+  Crash type: Heap-buffer-overflow READ 2
+  Crash state:
+  Op_to_sdr_planes::convert_colorspace
+  heif::ColorConversionPipeline::convert_image
+  heif::convert_colorspace
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://invent.kde.org/frameworks/kimageformats.git
+    introduced: ca52d4ddf540cc731d0f31dbccc1897f7e6d9db4
+    fixed: 2429c9533621d32f4ab5350856945cc0ad659ae5
+  versions:
+  - v5.80.0
+  - v5.80.0-rc1
+  - v5.81.0
+  - v5.81.0-rc1
+  - v5.81.0-rc2
+modified: '2021-03-09T05:46:25.263880Z'
+published: '2021-03-01T00:00:11.393443Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31495
