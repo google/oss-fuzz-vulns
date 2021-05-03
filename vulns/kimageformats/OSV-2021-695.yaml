@@ -1,0 +1,54 @@
+id: OSV-2021-695
+package:
+  name: kimageformats
+  ecosystem: OSS-Fuzz
+summary: Stack-buffer-overflow in XCFImageFormat::loadTileRLE
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=33742
+
+  Crash type: Stack-buffer-overflow WRITE 1
+  Crash state:
+  XCFImageFormat::loadTileRLE
+  XCFImageFormat::loadLevel
+  XCFImageFormat::loadHierarchy
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://invent.kde.org/frameworks/kimageformats.git
+    introduced: f089e860e05f5e4e2df0580e9895fff32edfef4c:497b6b81bdf59afe1551b2ea38fcc45fe100057d
+    fixed: 297ed9a2fe339bfe36916b9fce628c3242e5be0f
+  versions:
+  - v5.70.0
+  - v5.70.0-rc1
+  - v5.71.0
+  - v5.71.0-rc1
+  - v5.71.0-rc2
+  - v5.72.0
+  - v5.72.0-rc1
+  - v5.73.0
+  - v5.73.0-rc1
+  - v5.74.0
+  - v5.74.0-rc1
+  - v5.75.0
+  - v5.75.0-rc1
+  - v5.76.0
+  - v5.76.0-rc1
+  - v5.77.0
+  - v5.77.0-rc1
+  - v5.78.0
+  - v5.78.0-rc1
+  - v5.79.0
+  - v5.79.0-rc1
+  - v5.79.0-rc2
+  - v5.80.0
+  - v5.80.0-rc1
+  - v5.81.0
+  - v5.81.0-rc1
+  - v5.81.0-rc2
+  - v5.82.0-rc1
+modified: '2021-04-28T00:00:28.555534Z'
+published: '2021-04-28T00:00:28.555303Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=33742
