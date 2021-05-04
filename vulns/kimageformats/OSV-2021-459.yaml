@@ -1,0 +1,32 @@
+id: OSV-2021-459
+package:
+  name: kimageformats
+  ecosystem: OSS-Fuzz
+summary: Segv on unknown address in slice_segment_header::operator=
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31492
+
+  Crash type: Segv on unknown address
+  Crash state:
+  slice_segment_header::operator=
+  slice_segment_header::read
+  decoder_context::read_slice_NAL
+affects:
+  ranges:
+  - type: GIT
+    repo: https://invent.kde.org/frameworks/kimageformats.git
+    introduced: ca52d4ddf540cc731d0f31dbccc1897f7e6d9db4
+    fixed: 780f3428253bff4b029736fa9f195ca5938203bc
+  versions:
+  - v5.80.0
+  - v5.80.0-rc1
+  - v5.81.0
+  - v5.81.0-rc1
+  - v5.81.0-rc2
+  - v5.82.0-rc1
+  - v5.82.0-rc2
+modified: '2021-03-09T05:46:26.062868Z'
+published: '2021-03-01T00:00:01.773251Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31492
