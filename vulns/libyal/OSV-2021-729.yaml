@@ -1,0 +1,24 @@
+id: OSV-2021-729
+package:
+  name: libyal
+  ecosystem: OSS-Fuzz
+summary: Global-buffer-overflow in libfsext_inode_read_data
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=33940
+
+  Crash type: Global-buffer-overflow READ {*}
+  Crash state:
+  libfsext_inode_read_data
+  libfsext_inode_read_element_data
+  libfdata_vector_get_element_value_by_index
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/libyal/libfplist.git
+    introduced: e29196674e2152935af6d454e09021855c159435
+    fixed: e29196674e2152935af6d454e09021855c159435
+modified: '2021-05-05T00:00:31.360552Z'
+published: '2021-05-05T00:00:31.360258Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=33940
