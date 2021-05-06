@@ -1,0 +1,25 @@
+id: OSV-2021-731
+package:
+  name: php
+  ecosystem: OSS-Fuzz
+summary: Heap-use-after-free in cleanup_live_vars
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=33947
+
+  Crash type: Heap-use-after-free READ 4
+  Crash state:
+  cleanup_live_vars
+  zend_cleanup_unfinished_execution
+  zend_generator_cleanup_unfinished_execution
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/php/php-src.git
+    introduced: 47a2e5c785cdba71e003d9ad77cb799d4be88806
+    fixed: 44110262179724739330c9f712ad92f2ef58992a
+modified: '2021-05-05T00:01:09.411548Z'
+published: '2021-05-05T00:01:09.411211Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=33947

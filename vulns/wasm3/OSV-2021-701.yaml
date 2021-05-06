@@ -1,0 +1,25 @@
+id: OSV-2021-701
+package:
+  name: wasm3
+  ecosystem: OSS-Fuzz
+summary: Heap-use-after-free in m3_FreeRuntime
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=33765
+
+  Crash type: Heap-use-after-free READ 8
+  Crash state:
+  m3_FreeRuntime
+  fuzzer.c
+  Runtime_Release
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/wasm3/wasm3
+    introduced: 8cb2fd424309fa6ff70cf00bfcedc4e66d3355c0
+    fixed: 6bb612ccbfd5f8993a07a99092fab534722df1c3
+modified: '2021-04-29T00:00:23.083611Z'
+published: '2021-04-29T00:00:23.083315Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=33765

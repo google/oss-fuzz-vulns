@@ -1,0 +1,25 @@
+id: OSV-2021-700
+package:
+  name: wasm3
+  ecosystem: OSS-Fuzz
+summary: UNKNOWN READ in ReadLEB_u32
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=33749
+
+  Crash type: UNKNOWN READ
+  Crash state:
+  ReadLEB_u32
+  InitElements
+  Compile_ExtendedOpcode
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/wasm3/wasm3
+    introduced: 8cb2fd424309fa6ff70cf00bfcedc4e66d3355c0
+    fixed: 6bb612ccbfd5f8993a07a99092fab534722df1c3
+modified: '2021-04-29T00:00:12.163248Z'
+published: '2021-04-29T00:00:12.162949Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=33749

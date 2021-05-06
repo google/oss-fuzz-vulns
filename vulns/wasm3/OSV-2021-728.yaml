@@ -1,0 +1,23 @@
+id: OSV-2021-728
+package:
+  name: wasm3
+  ecosystem: OSS-Fuzz
+summary: UNKNOWN WRITE in _fini
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=33944
+
+  Crash type: UNKNOWN WRITE
+  Crash state:
+  _fini
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/wasm3/wasm3
+    introduced: 8cb2fd424309fa6ff70cf00bfcedc4e66d3355c0
+    fixed: 6bb612ccbfd5f8993a07a99092fab534722df1c3
+modified: '2021-05-05T00:00:31.085655Z'
+published: '2021-05-05T00:00:31.085366Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=33944
