@@ -1,0 +1,24 @@
+id: OSV-2021-282
+package:
+  name: libraw
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in LibRaw_buffer_datastream::read
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30324
+
+  Crash type: Heap-buffer-overflow WRITE {*}
+  Crash state:
+  LibRaw_buffer_datastream::read
+  LibRaw::uncompressed_fp_dng_load_raw
+  LibRaw::unpack
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/libraw/libraw
+    introduced: 4c954948ba2de262b9cb23a1843fb8651aa3dcc1
+modified: '2021-03-09T05:47:54.933787Z'
+published: '2021-02-06T00:00:24.519678Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30324
