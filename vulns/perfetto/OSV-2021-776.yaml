@@ -1,0 +1,28 @@
+id: OSV-2021-776
+package:
+  name: perfetto
+  ecosystem: OSS-Fuzz
+summary: UNKNOWN READ in std::__1::__tree<std::__1::__value_type<Json::Value::CZString,
+  Json::Value>, std
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34443
+
+  Crash type: UNKNOWN READ
+  Crash state:
+  std::__1::__tree<std::__1::__value_type<Json::Value::CZString, Json::Value>, std
+  std::__1::map<Json::Value::CZString, Json::Value, std::__1::less<Json::Value::CZ
+  Json::Value::begin
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://android.googlesource.com/platform/external/perfetto/
+    introduced: 1cbe5e703e4de134fd35b97b445c4008f6316fea
+    fixed: 5bd3b05ac4744f9f12ee1bbec43b9d2a127ed6de
+  versions:
+  - android-s-beta-1
+modified: '2021-05-20T00:00:22.507492Z'
+published: '2021-05-20T00:00:22.503762Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34443
