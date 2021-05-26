@@ -1,0 +1,84 @@
+id: OSV-2021-717
+package:
+  name: ghostscript
+  ecosystem: OSS-Fuzz
+summary: Heap-use-after-free in real_param
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=33862
+
+  Crash type: Heap-use-after-free READ 1
+  Crash state:
+  real_param
+  zpdfinkpath
+  interp
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: git://git.ghostscript.com/ghostpdl.git
+    introduced: e63504054baea4275af88e95418b5282c4394685
+    fixed: fe8965b8a179c083060b66a7db13cad171ff470b
+  - type: GIT
+    repo: git://git.ghostscript.com/ghostpdl.git
+    introduced: bbdfaa56b00f2ba556476f0265e65e4ad370f641
+  versions:
+  - ghostpdl-9.28rc2
+  - ghostpdl-9.28rc3
+  - ghostpdl-9.28rc4
+  - ghostpdl-9.50
+  - ghostpdl-9.51
+  - ghostpdl-9.51rc1
+  - ghostpdl-9.51rc2
+  - ghostpdl-9.51rc2_test
+  - ghostpdl-9.51rc2_test2
+  - ghostpdl-9.51rc3
+  - ghostpdl-9.52
+  - ghostpdl-9.52-test-base-1
+  - ghostpdl-9.52-test-base-2
+  - ghostpdl-9.52-test-base-3
+  - ghostpdl-9.52-test-base-4
+  - ghostpdl-9.52-test-base-5
+  - ghostpdl-9.52-test-base-6
+  - ghostpdl-9.52.1
+  - ghostpdl-9.53.0
+  - ghostpdl-9.53.0-test-base-0
+  - ghostpdl-9.53.0rc1
+  - ghostpdl-9.53.0rc2
+  - ghostpdl-9.53.1
+  - ghostpdl-9.53.2
+  - ghostpdl-9.53.3
+  - ghostpdl-9.54.0
+  - ghostpdl-9.54.0-test-base-0
+  - ghostpdl-9.54.0rc1
+  - ghostpdl-9.54.0rc1_test
+  - ghostpdl-9.54.0rc1_test_002
+  - ghostscript-9.50
+  - ghostscript-9.51
+  - ghostscript-9.52
+  - gpdf_alpha1
+  - gpdf_gs_text_filter_000
+  - gpdf_gs_text_filter_001
+  - gpdf_gs_text_filter_002
+  - gpdf_gs_text_filter_003
+  - gpdf_gs_text_filter_004
+  - gpdf_gs_text_filter_005
+  - gpdf_gs_text_filter_006
+  - gpdf_gs_text_filter_007
+  - gpdf_gs_text_filter_008
+  - gpdf_gs_text_filter_009
+  - gpdf_gs_text_filter_010
+  - gpdf_gs_text_filter_011
+  - gpdf_gs_text_filter_012
+  - gpdf_gs_text_filter_013
+  - gpdf_gs_text_filter_014
+  - gpdf_gs_text_filter_015
+  - gpdf_gs_text_filter_016
+  - gpdf_gs_text_filter_017
+  - rjj_9.53.2_test
+  - robin_test_ref
+  - robin_test_rev
+modified: '2021-05-02T00:00:44.749540Z'
+published: '2021-05-02T00:00:44.749274Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=33862

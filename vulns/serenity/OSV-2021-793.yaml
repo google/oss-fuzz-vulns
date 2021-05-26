@@ -1,0 +1,25 @@
+id: OSV-2021-793
+package:
+  name: serenity
+  ecosystem: OSS-Fuzz
+summary: Heap-use-after-free in AK::RefPtr<AK::StringImpl, AK::RefPtrTraits<AK::StringImpl>
+  >::RefPtr
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34584
+
+  Crash type: Heap-use-after-free WRITE 8
+  Crash state:
+  AK::RefPtr<AK::StringImpl, AK::RefPtrTraits<AK::StringImpl> >::RefPtr
+  AK::String::String
+  JS::abstract_relation
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/SerenityOS/serenity
+    introduced: 4d34802f74c859135397f6f4fa2bbf9cf1829118
+modified: '2021-05-24T00:01:24.097985Z'
+published: '2021-05-24T00:01:24.097636Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34584

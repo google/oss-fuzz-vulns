@@ -1,0 +1,29 @@
+id: OSV-2021-367
+package:
+  name: matio
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in H5MM_memcpy
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30749
+
+  Crash type: Heap-buffer-overflow READ {*}
+  Crash state:
+  H5MM_memcpy
+  H5VM_memcpyvv
+  H5D__compact_readvv
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: git://git.code.sf.net/p/matio/matio
+    introduced: 7a9958485036ef37b4e88df5cbe32bd7ec4c0d25:6540087e697ca2b8950bada3d4ca653951b467dc
+  versions:
+  - v1.5.18
+  - v1.5.19
+  - v1.5.20
+  - v1.5.21
+modified: '2021-03-09T05:46:38.196655Z'
+published: '2021-02-11T00:00:57.089990Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30749

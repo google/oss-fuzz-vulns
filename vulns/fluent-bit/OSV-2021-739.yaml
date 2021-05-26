@@ -1,0 +1,43 @@
+id: OSV-2021-739
+package:
+  name: fluent-bit
+  ecosystem: OSS-Fuzz
+summary: Stack-buffer-overflow in flb_sds_cat
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34025
+
+  Crash type: Stack-buffer-overflow READ {*}
+  Crash state:
+  flb_sds_cat
+  flb_ra_translate
+  record_ac_fuzzer.c
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/fluent/fluent-bit/
+    introduced: 68746b76af8b143daf477033a6799902be2f3cad
+    fixed: 0ec1a7b309ec29904d9f855c495dcd550da74d57
+  - type: GIT
+    repo: https://github.com/fluent/fluent-bit/
+    introduced: 68746b76af8b143daf477033a6799902be2f3cad
+    fixed: 95a4dda519446aecde55cb58989882718301bc7c
+  versions:
+  - v1.7.0
+  - v1.7.0-rc2
+  - v1.7.0-rc3
+  - v1.7.0-rc4
+  - v1.7.0-rc5
+  - v1.7.0-rc6
+  - v1.7.0-rc7
+  - v1.7.0-rc8
+  - v1.7.0-rc9
+  - v1.7.1
+  - v1.7.2
+  - v1.7.3
+  - v1.7.4
+modified: '2021-05-08T00:01:15.452934Z'
+published: '2021-05-08T00:01:15.452663Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34025

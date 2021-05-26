@@ -1,0 +1,25 @@
+id: OSV-2021-745
+package:
+  name: cpython3
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in skip_to_next_entry
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34110
+
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  skip_to_next_entry
+  get_exception_handler
+  _PyEval_EvalFrameDefault
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/python/cpython.git
+    introduced: a0bd9e9c11f5f52c7ddd19144c8230da016b53c6
+    fixed: 45862f9f5ef5d3c9da37f35e4fe4b18618530cfa
+modified: '2021-05-11T00:00:17.714594Z'
+published: '2021-05-11T00:00:17.714291Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34110

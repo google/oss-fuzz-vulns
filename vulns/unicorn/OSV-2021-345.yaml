@@ -1,0 +1,29 @@
+id: OSV-2021-345
+package:
+  name: unicorn
+  ecosystem: OSS-Fuzz
+summary: UNKNOWN READ in cpu_arm_exec_arm
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30636
+
+  Crash type: UNKNOWN READ
+  Crash state:
+  cpu_arm_exec_arm
+  tcg_cpu_exec_arm
+  tcg_exec_all_arm
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/unicorn-engine/unicorn.git
+    introduced: 881e08da017e2679ccc98bfcbf1fc5b74ee822d4
+  versions:
+  - 1.0.2
+  - 1.0.2-rc4
+  - 1.0.2-rc5
+  - 1.0.2-rc6
+modified: '2021-03-09T05:46:35.188641Z'
+published: '2021-02-10T00:00:20.946004Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30636
