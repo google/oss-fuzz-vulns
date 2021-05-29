@@ -1,0 +1,24 @@
+id: OSV-2021-811
+package:
+  name: wolfssl
+  ecosystem: OSS-Fuzz
+summary: Segv on unknown address in GetASNHeader_ex
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34719
+
+  Crash type: Segv on unknown address
+  Crash state:
+  GetASNHeader_ex
+  GetASNHeader
+  GetASNInt
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/wolfssl/wolfssl
+    introduced: 956a0f2b5f000de6955a51379917bf7b3ff29a41:41af3da0e3106c85b32429b13790fb34b2e77823
+    fixed: 1fe445368c6d5972b6760be86f2d2fd6e24427bf
+modified: '2021-05-29T00:00:34.322205Z'
+published: '2021-05-29T00:00:34.321934Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34719
