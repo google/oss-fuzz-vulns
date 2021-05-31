@@ -1,0 +1,25 @@
+id: OSV-2021-813
+package:
+  name: poppler
+  ecosystem: OSS-Fuzz
+summary: Use-of-uninitialized-value in StandardSecurityHandler::StandardSecurityHandler
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34778
+
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  StandardSecurityHandler::StandardSecurityHandler
+  SecurityHandler::make
+  PDFDoc::checkEncryption
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://gitlab.freedesktop.org/poppler/poppler.git
+    introduced: dc587846bff99b07dc351d2d21e5b6908c99afdb
+    fixed: b4146c1bb021b48dba20ee343d8c3058ba4d756c
+modified: '2021-05-30T00:00:05.738169Z'
+published: '2021-05-30T00:00:05.737839Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34778
