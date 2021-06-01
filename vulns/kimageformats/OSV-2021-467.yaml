@@ -1,0 +1,33 @@
+id: OSV-2021-467
+package:
+  name: kimageformats
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in void mc_chroma<unsigned short>
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31518
+
+  Crash type: Heap-buffer-overflow READ 2
+  Crash state:
+  void mc_chroma<unsigned short>
+  generate_inter_prediction_samples
+  decode_prediction_unit
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://invent.kde.org/frameworks/kimageformats.git
+    introduced: ca52d4ddf540cc731d0f31dbccc1897f7e6d9db4
+  versions:
+  - v5.80.0
+  - v5.80.0-rc1
+  - v5.81.0
+  - v5.81.0-rc1
+  - v5.81.0-rc2
+  - v5.82.0
+  - v5.82.0-rc1
+  - v5.82.0-rc2
+modified: '2021-03-09T05:46:25.318264Z'
+published: '2021-03-01T00:01:28.337558Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31518
