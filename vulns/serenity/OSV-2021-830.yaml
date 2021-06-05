@@ -1,0 +1,24 @@
+id: OSV-2021-830
+package:
+  name: serenity
+  ecosystem: OSS-Fuzz
+summary: Heap-use-after-free in AK::Utf8CodePointIterator::operator*
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34911
+
+  Crash type: Heap-use-after-free READ 1
+  Crash state:
+  AK::Utf8CodePointIterator::operator*
+  AK::URLParser::parse
+  AK::URL::URL
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/SerenityOS/serenity
+    introduced: c0d1a7588153d35f06a9ff5d009261099e6fc647
+modified: '2021-06-05T00:00:36.391567Z'
+published: '2021-06-05T00:00:36.391254Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34911
