@@ -1,0 +1,26 @@
+id: OSV-2021-840
+package:
+  name: serenity
+  ecosystem: OSS-Fuzz
+summary: Use-after-poison in AK::RefPtr<AK::StringImpl, AK::RefPtrTraits<AK::StringImpl>
+  >::RefPtr
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34971
+
+  Crash type: Use-after-poison WRITE 8
+  Crash state:
+  AK::RefPtr<AK::StringImpl, AK::RefPtrTraits<AK::StringImpl> >::RefPtr
+  AK::String::String
+  JS::abstract_relation
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/SerenityOS/serenity
+    introduced: 09233b9e4139baedb516659fa30876edcb7bf436
+    fixed: 442ef6300826816c115462f19df4c168a04415d5
+modified: '2021-06-07T00:00:35.429219Z'
+published: '2021-06-07T00:00:35.428789Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34971
