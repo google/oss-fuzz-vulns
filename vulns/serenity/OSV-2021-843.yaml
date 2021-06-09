@@ -1,0 +1,24 @@
+id: OSV-2021-843
+package:
+  name: serenity
+  ecosystem: OSS-Fuzz
+summary: Use-after-poison in AK::NonnullOwnPtr<JS::IndexedPropertyStorage>::operator->
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=35038
+
+  Crash type: Use-after-poison READ 8
+  Crash state:
+  AK::NonnullOwnPtr<JS::IndexedPropertyStorage>::operator->
+  JS::IndexedProperties::array_like_size
+  JS::IndexedProperties::append
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/SerenityOS/serenity
+    introduced: 6aba64b60ff7fa3bc062ebcd2597e13d30747936
+modified: '2021-06-09T00:00:19.914625Z'
+published: '2021-06-09T00:00:19.914318Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=35038
