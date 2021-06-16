@@ -1,0 +1,25 @@
+id: OSV-2021-859
+package:
+  name: zstd
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in FSE_writeNCount_generic
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=35209
+
+  Crash type: Heap-buffer-overflow WRITE 1
+  Crash state:
+  FSE_writeNCount_generic
+  FSE_writeNCount
+  HUF_compressWeights
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/facebook/zstd
+    introduced: 939276cd0c8f6f5b6eede93bb4db3779742ca778
+    fixed: 05b6773fbcce1075edbe498a821f9a41249cf384
+modified: '2021-06-15T00:00:25.249365Z'
+published: '2021-06-15T00:00:25.249054Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=35209

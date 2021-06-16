@@ -1,0 +1,25 @@
+id: OSV-2021-853
+package:
+  name: libjxl
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in jxl::ThreadPool::RunCallState<jxl::ConvertToExternal
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=35172
+
+  Crash type: Heap-buffer-overflow WRITE 4
+  Crash state:
+  jxl::ThreadPool::RunCallState<jxl::ConvertToExternal
+  jpegxl::ThreadParallelRunner::ThreadFunc
+  void* std::__1::__thread_proxy<std::__1::tuple<std::__1::unique_ptr<std::__1::__
+severity: HIGH
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/libjxl/libjxl.git
+    introduced: 7b974a32bc5620ff0c02b1c0b101d421b3edc44a
+    fixed: 85aa1491b967709701d2d2293627c5cd1c7cb96d
+modified: '2021-06-13T00:00:30.090207Z'
+published: '2021-06-13T00:00:30.089891Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=35172

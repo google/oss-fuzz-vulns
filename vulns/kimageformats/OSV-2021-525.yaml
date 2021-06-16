@@ -1,0 +1,36 @@
+id: OSV-2021-525
+package:
+  name: kimageformats
+  ecosystem: OSS-Fuzz
+summary: Use-of-uninitialized-value in void edge_filtering_chroma_internal<unsigned
+  char>
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=32059
+
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  void edge_filtering_chroma_internal<unsigned char>
+  edge_filtering_chroma
+  thread_task_deblock_CTBRow::work
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://invent.kde.org/frameworks/kimageformats.git
+    introduced: ca52d4ddf540cc731d0f31dbccc1897f7e6d9db4
+  versions:
+  - v5.80.0
+  - v5.80.0-rc1
+  - v5.81.0
+  - v5.81.0-rc1
+  - v5.81.0-rc2
+  - v5.82.0
+  - v5.82.0-rc1
+  - v5.82.0-rc2
+  - v5.83.0
+  - v5.83.0-rc1
+modified: '2021-03-16T00:00:19.177131Z'
+published: '2021-03-16T00:00:19.176877Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=32059
