@@ -1,0 +1,32 @@
+id: OSV-2021-578
+package:
+  name: qemu
+  ecosystem: OSS-Fuzz
+summary: Stack-use-after-return in v9fs_string_free
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=32624
+
+  Crash type: Stack-use-after-return READ 8
+  Crash state:
+  v9fs_string_free
+  v9fs_xattrwalk
+  coroutine_trampoline
+affects:
+  ranges:
+  - type: GIT
+    repo: https://git.qemu.org/git/qemu.git
+    introduced: ee2fc6c6da8b2d6f961c8559d62e990c65f67736
+    fixed: 52848929b70dcf92a68aedcfd90207be81ba3274:1ea06abceec61b6f3ab33dadb0510b6e09fb61e2
+  versions:
+  - v6.0.0
+  - v6.0.0-rc0
+  - v6.0.0-rc1
+  - v6.0.0-rc2
+  - v6.0.0-rc3
+  - v6.0.0-rc4
+  - v6.0.0-rc5
+modified: '2021-03-30T00:00:08.991982Z'
+published: '2021-03-30T00:00:08.991714Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=32624
