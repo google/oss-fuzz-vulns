@@ -1,0 +1,25 @@
+id: OSV-2021-872
+package:
+  name: ndpi
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in ndpi_set_detected_protocol
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=35300
+
+  Crash type: Heap-buffer-overflow READ 4
+  Crash state:
+  ndpi_set_detected_protocol
+  ndpi_int_http_add_connection
+  check_content_type_and_change_protocol
+severity: MEDIUM
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/ntop/nDPI.git
+    introduced: be808c30f3f4582009df4c5efccd4f3bb0c6ef1d
+    fixed: b0b3e1bc6c8db7cf8a2a26dbb29ffdb057d86121
+modified: '2021-06-18T00:01:21.964663Z'
+published: '2021-06-18T00:01:21.964353Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=35300
