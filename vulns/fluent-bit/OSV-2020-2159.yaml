@@ -11,7 +11,6 @@ details: |
   flb_parser_json_do
   flb_parser_do
   parser_fuzzer.c
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -20,8 +19,10 @@ affects:
     fixed: 68746b76af8b143daf477033a6799902be2f3cad
   versions:
   - v1.7.0-rc1
+modified: '2021-06-21T06:56:24.299767Z'
+published: '2020-11-15T22:34:00.821965Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=27499
-modified: '2021-03-09T04:49:05.691957Z'
-published: '2020-11-15T22:34:00.821965Z'

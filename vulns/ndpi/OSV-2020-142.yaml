@@ -11,15 +11,16 @@ details: |
   ndpi_strncasestr
   ndpi_http_check_content
   ndpi_int_http_add_connection
-severity: HIGH
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/ntop/nDPI.git
     introduced: 1edf5c49d662f7944ee976a63d54980a270a2419
     fixed: 374a24a1fb373617be23d7cbb397b47d23a5ffda
+modified: '2021-06-21T06:56:22.701948Z'
+published: '2020-06-24T01:51:16.020859Z'
+ecosystem_specific:
+  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22816
-modified: '2021-03-09T04:49:05.256764Z'
-published: '2020-06-24T01:51:16.020859Z'

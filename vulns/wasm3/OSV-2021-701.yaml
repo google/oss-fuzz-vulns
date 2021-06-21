@@ -11,15 +11,16 @@ details: |
   m3_FreeRuntime
   fuzzer.c
   Runtime_Release
-severity: HIGH
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/wasm3/wasm3
     introduced: 8cb2fd424309fa6ff70cf00bfcedc4e66d3355c0
     fixed: 6bb612ccbfd5f8993a07a99092fab534722df1c3
-modified: '2021-04-29T00:00:23.083611Z'
+modified: '2021-06-21T06:56:18.556811Z'
 published: '2021-04-29T00:00:23.083315Z'
+ecosystem_specific:
+  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=33765

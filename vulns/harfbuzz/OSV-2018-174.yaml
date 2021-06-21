@@ -11,15 +11,16 @@ details: |
   BEInt<unsigned char, 1>::operator unsigned char
   OT::KernSubTableFormat3::get_kerning
   hb_kern_machine_t<OT::KernSubTableFormat3>::kern
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/harfbuzz/harfbuzz.git
     introduced: 095f5add0b1ca39dd09842594b80fae92f0796e4
     fixed: 8d98c51d133b058a845ed7a84bfe8a43083bbb03
+modified: '2021-06-21T06:56:20.653569Z'
+published: '2021-01-13T00:01:11.845509Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11245
-modified: '2021-03-09T04:49:04.855819Z'
-published: '2021-01-13T00:01:11.845509Z'

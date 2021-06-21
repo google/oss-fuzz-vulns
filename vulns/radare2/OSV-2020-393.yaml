@@ -11,15 +11,16 @@ details: |
   Elf32_r_bin_elf_compiler
   info
   r_bin_object_set_items
-severity: HIGH
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/radare/radare2
     introduced: addb2c6507ad2ee3d27e29fe3143cc9c12ef615a
     fixed: 9f840c6306b853e98eab75ed2fa9522f7e2dae98
+modified: '2021-06-21T06:56:23.141764Z'
+published: '2020-07-01T00:00:06.928110Z'
+ecosystem_specific:
+  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13858
-modified: '2021-03-09T04:49:05.863555Z'
-published: '2020-07-01T00:00:06.928110Z'

@@ -11,15 +11,16 @@ details: |
   pixcmapDestroy
   colorquant_fuzzer.cc
   pixcmapDestroy
-severity: HIGH
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/DanBloomberg/leptonica.git
     introduced: 836740fd7829e6e3a92a766b7e559f4136378eb7
     fixed: 8e079d159f2e00bbfa3e8a70069a2aa9924abdbc
+modified: '2021-06-21T06:56:20.237514Z'
+published: '2020-06-24T01:51:15.964708Z'
+ecosystem_specific:
+  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22110
-modified: '2021-03-09T04:49:05.251916Z'
-published: '2020-06-24T01:51:15.964708Z'

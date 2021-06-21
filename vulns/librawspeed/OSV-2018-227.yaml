@@ -11,7 +11,6 @@ details: |
   rawspeed::TableLookUp::setTable
   rawspeed::RawImageData::setTable
   rawspeed::DngDecoder::handleMetadata
-severity: HIGH
 affects:
   ranges:
   - type: GIT
@@ -20,8 +19,10 @@ affects:
     fixed: 212b7a8ea10acaaf722509e291ed1f59df8010df:dbe7591e54bad5e6430d38be6bed051582da76b9
   versions:
   - v3.1
+modified: '2021-06-21T06:56:22.995309Z'
+published: '2021-01-13T00:01:34.025512Z'
+ecosystem_specific:
+  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=5256
-modified: '2021-03-09T04:49:04.886185Z'
-published: '2021-01-13T00:01:34.025512Z'

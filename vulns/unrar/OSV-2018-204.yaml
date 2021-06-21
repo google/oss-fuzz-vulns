@@ -11,7 +11,6 @@ details: |
   __msan_memcpy.part.51
   QuickOpen::ReadRaw
   QuickOpen::ReadNext
-severity: HIGH
 affects:
   ranges:
   - type: GIT
@@ -26,8 +25,10 @@ affects:
   - v5.7.3
   - v5.7.4
   - v6.0.3
+modified: '2021-06-21T06:56:22.050817Z'
+published: '2021-01-13T00:01:23.035709Z'
+ecosystem_specific:
+  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=9845
-modified: '2021-03-09T04:51:17.075144Z'
-published: '2021-01-13T00:01:23.035709Z'

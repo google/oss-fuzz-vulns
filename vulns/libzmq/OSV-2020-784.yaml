@@ -11,15 +11,16 @@ details: |
   Bad-cast to zmq::session_base_t from invalid vptr
   zmq::stream_engine_base_t::in_event_internal
   zmq::stream_engine_base_t::in_event
-severity: HIGH
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/zeromq/libzmq.git
     introduced: eb9118f0c9b9a70c0d2356838190350e9f88ed6f
     fixed: c733067d6d52acc8031792316c0ee58990cdd0e8
+modified: '2021-06-21T06:56:20.355091Z'
+published: '2020-07-14T05:37:33.175193Z'
+ecosystem_specific:
+  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24018
-modified: '2021-03-09T04:49:06.073768Z'
-published: '2020-07-14T05:37:33.175193Z'

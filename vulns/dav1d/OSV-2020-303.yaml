@@ -9,7 +9,6 @@ details: |
   Crash type: UNKNOWN READ
   Crash state:
   dav1d_put_bilin_avx2
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -18,8 +17,10 @@ affects:
     fixed: 69dae683fdce08dabf406787cdd8d1f76a9f0437
   versions:
   - 0.4.0
+modified: '2021-06-21T06:56:25.657462Z'
+published: '2020-06-30T00:00:48.527659Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=16954
-modified: '2021-03-09T04:49:05.814906Z'
-published: '2020-06-30T00:00:48.527659Z'

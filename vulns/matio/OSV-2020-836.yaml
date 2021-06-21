@@ -11,7 +11,6 @@ details: |
   H5HG_read
   H5T_vlen_disk_read
   H5T__conv_vlen
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -21,8 +20,10 @@ affects:
   versions:
   - v1.5.18
   - v1.5.19
+modified: '2021-06-21T06:56:28.157493Z'
+published: '2020-07-14T22:13:39.678790Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18827
-modified: '2021-03-09T04:49:06.103395Z'
-published: '2020-07-14T22:13:39.678790Z'

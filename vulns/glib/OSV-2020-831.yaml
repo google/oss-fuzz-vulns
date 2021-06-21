@@ -11,7 +11,6 @@ details: |
   g_string_insert_len
   g_string_append_len
   _uri_encoder
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -23,8 +22,10 @@ affects:
   - 2.65.2
   - 2.65.3
   - 2.66.0
+modified: '2021-06-21T06:56:20.106925Z'
+published: '2020-07-14T22:13:38.399117Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23816
-modified: '2021-03-09T04:49:06.101Z'
-published: '2020-07-14T22:13:38.399117Z'

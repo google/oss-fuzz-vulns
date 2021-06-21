@@ -11,15 +11,16 @@ details: |
   decode_mcu_fast
   decode_mcu
   consume_data
-severity: HIGH
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/libjpeg-turbo/libjpeg-turbo
     introduced: 3ab3234875bd58320b1646c086f95511ab67c972:d147be83e9a9f904918ba7f834b0fb28e09de9b5
     fixed: d147be83e9a9f904918ba7f834b0fb28e09de9b5:4de8f6922a9be7d0a51a429e367283fd40031b26
+modified: '2021-06-21T06:56:23.989695Z'
+published: '2021-04-18T00:01:02.873828Z'
+ecosystem_specific:
+  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=33340
-modified: '2021-04-18T00:01:02.874106Z'
-published: '2021-04-18T00:01:02.873828Z'

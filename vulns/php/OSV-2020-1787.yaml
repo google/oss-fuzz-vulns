@@ -11,7 +11,6 @@ details: |
   zend_generator_search_multi_children_node
   zend_generator_add_child
   zend_generator_yield_from
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -20,8 +19,10 @@ affects:
     fixed: 6d538e83aa1e98694402eea5433e38d387f8729a
   versions:
   - php-8.0.0beta3
+modified: '2021-06-21T06:56:21.039043Z'
+published: '2020-09-18T00:00:10.979894Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25678
-modified: '2021-03-09T04:49:05.440694Z'
-published: '2020-09-18T00:00:10.979894Z'

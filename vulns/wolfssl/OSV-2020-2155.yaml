@@ -11,7 +11,6 @@ details: |
   wolfSSH_CleanPath
   ParseScpCommand
   DoScpRequest
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -20,8 +19,10 @@ affects:
     fixed: 6e0e507dad67f62f148e8124903172de817802f9:a1e083b5b13a681003e564351a55634d2f56d03a
   versions:
   - v4.6.0-stable
+modified: '2021-06-21T06:56:22.411635Z'
+published: '2020-11-15T22:33:36.192808Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=27436
-modified: '2021-03-09T04:49:05.689951Z'
-published: '2020-11-15T22:33:36.192808Z'

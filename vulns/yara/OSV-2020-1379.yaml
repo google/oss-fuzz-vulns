@@ -11,7 +11,6 @@ details: |
   dotnet_parse_com
   dotnet__load
   yr_modules_load
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -33,8 +32,10 @@ affects:
   - v4.0.5
   - v4.1.0-rc1
   - v4.1.0-rc2
+modified: '2021-06-21T06:56:27.591374Z'
+published: '2020-07-28T00:00:05.738705Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=8901
-modified: '2021-03-09T04:51:34.284201Z'
-published: '2020-07-28T00:00:05.738705Z'

@@ -11,7 +11,6 @@ details: |
   XRef::getEntry
   Parser::makeStream
   Parser::getObj
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -21,8 +20,10 @@ affects:
   versions:
   - poppler-0.72.0
   - poppler-0.73.0
+modified: '2021-06-21T06:56:23.490218Z'
+published: '2020-07-01T00:00:26.302679Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=12797
-modified: '2021-03-09T04:49:06.036949Z'
-published: '2020-07-01T00:00:26.302679Z'

@@ -11,7 +11,6 @@ details: |
   insert_key
   detect_netkey
   sc_pkcs15emu_tcos_init_ex
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -22,8 +21,10 @@ affects:
   - 0.21.0
   - 0.21.0-rc1
   - 0.21.0-rc2
+modified: '2021-06-21T06:56:27.165336Z'
+published: '2020-11-23T00:00:03.001326Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=27719
-modified: '2021-03-09T04:49:05.702381Z'
-published: '2020-11-23T00:00:03.001326Z'

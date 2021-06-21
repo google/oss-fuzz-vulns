@@ -11,7 +11,6 @@ details: |
   asn1_ex_i2c
   asn1_i2d_ex_primitive
   ASN1_item_ex_i2d
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -26,8 +25,10 @@ affects:
   - OpenSSL_1_1_1-pre5
   - OpenSSL_1_1_1-pre6
   - OpenSSL_1_1_1-pre7
+modified: '2021-06-21T06:56:24.820736Z'
+published: '2021-01-13T00:01:05.757240Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=7696
-modified: '2021-03-09T04:49:04.844960Z'
-published: '2021-01-13T00:01:05.757240Z'

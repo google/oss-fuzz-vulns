@@ -11,7 +11,6 @@ details: |
   Pl_ASCII85Decoder::write
   Pl_AES_PDF::flush
   Pl_AES_PDF::finish
-severity: HIGH
 affects:
   ranges:
   - type: GIT
@@ -30,8 +29,10 @@ affects:
   - release-qpdf-9.1.0
   - release-qpdf-9.1.1
   - release-qpdf-9.1.rc1
+modified: '2021-06-21T06:56:19.324264Z'
+published: '2020-12-06T00:00:11.834199Z'
+ecosystem_specific:
+  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=28262
-modified: '2021-03-09T04:49:05.740792Z'
-published: '2020-12-06T00:00:11.834199Z'

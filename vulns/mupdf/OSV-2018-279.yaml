@@ -11,15 +11,16 @@ details: |
   fz_drop_hash_table
   fz_fin_cached_color_converter
   fz_paint_shade
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: git://git.ghostscript.com/mupdf.git
     introduced: 9086386263154498dcb18c96f1e1630903b21a3c:d9bc8c6f7fb2e3ec7035bebaaee0edcf59287705
     fixed: 71ceebcf56e682504da22c4035b39a2d451e8ffd
+modified: '2021-06-21T06:56:19.152489Z'
+published: '2021-01-15T00:00:20.648060Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=5609
-modified: '2021-03-09T04:49:04.912479Z'
-published: '2021-01-15T00:00:20.648060Z'

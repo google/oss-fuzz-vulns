@@ -11,7 +11,6 @@ details: |
   sav_parse_long_string_missing_values_record
   sav_parse_records_pass2
   readstat_parse_sav
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -28,8 +27,10 @@ affects:
   - v1.0.0-rc5
   - v1.0.0-rc6
   - v1.0.0-rc7
+modified: '2021-06-21T06:56:26.224917Z'
+published: '2020-07-01T00:00:08.721678Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13076
-modified: '2021-03-09T04:49:05.880303Z'
-published: '2020-07-01T00:00:08.721678Z'

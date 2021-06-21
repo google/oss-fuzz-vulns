@@ -11,15 +11,16 @@ details: |
   us_internal_dispatch_ready_poll
   us_loop_run
   uWS::TemplatedApp<false>::run
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/uNetworking/uWebSockets.git
     introduced: 2544593c13295ddb38b20c8365b1e5558f0749e0
     fixed: 8bdae7645f375f0fcf52acefce8f004f166b82c2
+modified: '2021-06-21T06:56:26.573356Z'
+published: '2020-08-21T00:01:21.212570Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25057
-modified: '2021-03-09T04:49:05.368441Z'
-published: '2020-08-21T00:01:21.212570Z'

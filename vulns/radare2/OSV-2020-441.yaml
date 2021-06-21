@@ -11,7 +11,6 @@ details: |
   r_buf_cpy
   get_relocs_64
   relocs
-severity: HIGH
 affects:
   ranges:
   - type: GIT
@@ -21,8 +20,10 @@ affects:
   versions:
   - 3.4.0
   - 3.4.1
+modified: '2021-06-21T06:56:23.039756Z'
+published: '2020-07-01T00:00:09.757737Z'
+ecosystem_specific:
+  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14125
-modified: '2021-03-09T04:49:05.889593Z'
-published: '2020-07-01T00:00:09.757737Z'

@@ -11,7 +11,6 @@ details: |
   __gxx_personality_v0
   _Unwind_RaiseException
   ErrorHandler::Throw
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -30,8 +29,10 @@ affects:
   - v5.7.1
   - v5.7.3
   - v6.0.3
+modified: '2021-06-21T06:56:22.134799Z'
+published: '2021-01-13T21:57:49.330781Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=4310
-modified: '2021-03-09T04:49:04.741097Z'
-published: '2021-01-13T21:57:49.330781Z'

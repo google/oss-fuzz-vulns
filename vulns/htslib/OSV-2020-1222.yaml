@@ -11,7 +11,6 @@ details: |
   hpeek
   sam_hdr_create
   view_sam
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -22,8 +21,10 @@ affects:
   - '1.10'
   - 1.10.1
   - 1.10.2
+modified: '2021-06-21T06:56:19.909492Z'
+published: '2020-07-22T21:49:57.988557Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20473
-modified: '2021-03-09T04:49:05.154714Z'
-published: '2020-07-22T21:49:57.988557Z'

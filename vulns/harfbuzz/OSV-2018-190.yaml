@@ -11,15 +11,16 @@ details: |
   OT::Coverage::intersects
   OT::ContextFormat2::closure
   _hb_void_t const* OT::hb_closure_context_t::dispatch<OT::ContextFormat2>
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/harfbuzz/harfbuzz.git
     introduced: acce1fa3ea9707d0883cd66397fd187d3268905c
     fixed: 2dde6c803a9e50c5bff74095187b0cb2e12eebdd
+modified: '2021-06-21T06:56:20.647326Z'
+published: '2021-01-13T00:01:19.816069Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=10084
-modified: '2021-03-09T04:49:04.864830Z'
-published: '2021-01-13T00:01:19.816069Z'

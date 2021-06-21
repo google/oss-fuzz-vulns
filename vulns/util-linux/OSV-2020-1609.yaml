@@ -11,15 +11,16 @@ details: |
   fdisk_partname
   write_file_sfdisk
   fdisk_script_write_file
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/karelzak/util-linux
     introduced: b62ec52e8f21cac2ad784e87571ce1d7f86431f5
     fixed: 678d03cc8a9c665ba989b098a9be903ede72f554
+modified: '2021-06-21T06:56:21.428108Z'
+published: '2020-08-14T00:01:33.935815Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24859
-modified: '2021-03-09T04:49:05.353595Z'
-published: '2020-08-14T00:01:33.935815Z'

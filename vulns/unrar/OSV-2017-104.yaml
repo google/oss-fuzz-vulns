@@ -11,7 +11,6 @@ details: |
   Unpack::CopyString
   Unpack::Unpack5
   CmdExtract::ExtractCurrentFile
-severity: HIGH
 affects:
   ranges:
   - type: GIT
@@ -21,8 +20,10 @@ affects:
   versions:
   - 5.6.1.2
   - 5.6.1.3
+modified: '2021-06-21T06:56:22.064176Z'
+published: '2021-01-13T21:57:43.088460Z'
+ecosystem_specific:
+  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=4373
-modified: '2021-03-09T04:49:04.734697Z'
-published: '2021-01-13T21:57:43.088460Z'

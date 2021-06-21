@@ -11,15 +11,16 @@ details: |
   WelsDec::CWelsDecoder::ReleaseBufferedReadyPicture
   WelsDec::CWelsDecoder::ReorderPicturesInDisplay
   WelsDec::CWelsDecoder::DecodeFrame2WithCtx
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/cisco/openh264.git
     introduced: 2091de60c6a235a3236475d2208139f6a8862f48
     fixed: 8dca82ab0d4548ab4d064229e293f2edb8f257ba
+modified: '2021-06-21T06:56:23.909062Z'
+published: '2020-06-30T00:00:43.014785Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18744
-modified: '2021-03-09T04:49:05.792856Z'
-published: '2020-06-30T00:00:43.014785Z'

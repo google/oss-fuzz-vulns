@@ -11,7 +11,6 @@ details: |
   yr_object_set_string
   dotnet_parse_us
   dotnet_parse_com
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -23,8 +22,10 @@ affects:
   - v3.10.0
   - v3.10.0-rc1
   - v3.9.0
+modified: '2021-06-21T06:56:27.610985Z'
+published: '2021-01-13T00:00:14.651679Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14560
-modified: '2021-03-09T04:49:04.938674Z'
-published: '2021-01-13T00:00:14.651679Z'

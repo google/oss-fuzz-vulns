@@ -11,7 +11,6 @@ details: |
   flatbuffers::EscapeString
   flexbuffers::Reference::ToString
   void flexbuffers::AppendToString<flexbuffers::Vector>
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -19,8 +18,10 @@ affects:
     introduced: 8573108bbef495f3dd13db8353f43b2e86d25950
   versions:
   - v2.0.0
-modified: '2021-03-14T00:00:58.325443Z'
+modified: '2021-06-21T06:56:27.443086Z'
 published: '2021-03-14T00:00:58.325013Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=32008

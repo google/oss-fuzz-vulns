@@ -11,15 +11,16 @@ details: |
   mprint
   match
   file_softmagic
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/file/file.git
     introduced: 8a667072e65294efa6a7b7d9a3bc417e145e0aea
     fixed: 8a667072e65294efa6a7b7d9a3bc417e145e0aea
+modified: '2021-06-21T06:56:18.670052Z'
+published: '2021-01-15T05:22:02.070395Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=144
-modified: '2021-03-09T04:49:04.730544Z'
-published: '2021-01-15T05:22:02.070395Z'

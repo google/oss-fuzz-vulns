@@ -11,15 +11,16 @@ details: |
   blosc_getitem
   get_coffset
   frame_get_lazychunk
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/Blosc/c-blosc2.git
     introduced: c473b21cff5e1a459b4467f18bf7414114f848fd
     fixed: 7f86c209450b39ab7fc898707984e746c7ef2ebb
+modified: '2021-06-21T06:56:26.061757Z'
+published: '2021-01-29T00:00:56.462283Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29976
-modified: '2021-03-03T12:00:57.100776Z'
-published: '2021-01-29T00:00:56.462283Z'

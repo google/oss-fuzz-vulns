@@ -11,15 +11,16 @@ details: |
   BEInt<unsigned short, 2>::operator unsigned short
   OT::IntType<unsigned short, 2u>::operator unsigned int
   OT::gvar::get_offset
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/harfbuzz/harfbuzz.git
     introduced: 5ad761b943721c3541d0ca0472f34f7d54b89b5b
     fixed: 758fda728ba5c9d4542ea2385482f7d090ffda0d
+modified: '2021-06-21T06:56:20.405586Z'
+published: '2020-06-24T01:51:14.378012Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20944
-modified: '2021-03-09T04:49:05.072688Z'
-published: '2020-06-24T01:51:14.378012Z'

@@ -11,15 +11,16 @@ details: |
   ot::NetworkData::NetworkData::FindService
   ot::NetworkData::Leader::Validate
   ot::NetworkData::Leader::RegisterNetworkData
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/openthread/openthread
     introduced: 4c7ec29e6ddbfab5a062ea555952538df53767fc
     fixed: af4837d122c9da0eb6dcb9f2a1b19b1e37b738cc
+modified: '2021-06-21T06:56:24.896747Z'
+published: '2020-06-24T01:51:16.938442Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21762
-modified: '2021-03-09T04:49:05.367515Z'
-published: '2020-06-24T01:51:16.938442Z'

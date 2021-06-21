@@ -11,7 +11,6 @@ details: |
   g_dbus_message_new_from_blob
   fuzz_dbus_message.c
   g_dbus_message_new_from_blob
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -24,8 +23,10 @@ affects:
   - 2.58.1
   - 2.58.2
   - 2.58.3
+modified: '2021-06-21T06:56:20.094092Z'
+published: '2021-01-13T00:00:38.105623Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=9825
-modified: '2021-03-09T04:49:05.024046Z'
-published: '2021-01-13T00:00:38.105623Z'

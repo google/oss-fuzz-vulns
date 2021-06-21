@@ -12,7 +12,6 @@ details: |
   boost::re_detail_NUMBER::basic_regex_creator<char, boost::regex_traits<char, boo
   boost::re_detail_NUMBER::basic_regex_creator<char, boost::regex_traits<char, boo
   boost::re_detail_NUMBER::basic_regex_parser<char, boost::regex_traits<char, boos
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -35,8 +34,10 @@ affects:
   - boost-1.72.0.beta1
   - boost-1.73.0
   - boost-1.73.0.beta1
+modified: '2021-06-21T06:56:26.482792Z'
+published: '2021-01-15T00:01:08.730847Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=6708
-modified: '2021-03-09T04:49:04.968913Z'
-published: '2021-01-15T00:01:08.730847Z'

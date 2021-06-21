@@ -11,7 +11,6 @@ details: |
   Sass::Inspect::operator
   Sass::Output::operator
   Sass::Output::operator
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -21,8 +20,10 @@ affects:
   versions:
   - 3.6.2
   - 3.6.3
+modified: '2021-06-21T06:56:24.516108Z'
+published: '2020-06-26T00:00:10.424929Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=19988
-modified: '2021-03-09T04:49:05.785924Z'
-published: '2020-06-26T00:00:10.424929Z'

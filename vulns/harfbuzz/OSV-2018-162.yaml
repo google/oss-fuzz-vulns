@@ -11,15 +11,16 @@ details: |
   BEInt<unsigned int, 4>::operator unsigned int
   OT::OffsetTo<OT::UnsizedArrayOf<OT::IntType<short, 2u> >, OT::IntType<unsigned i
   AAT::KerxSubTableFormat1::driver_context_t::driver_context_t
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/harfbuzz/harfbuzz.git
     introduced: 84967537966a76297c89460d95e7336f1bfc332d
     fixed: 40f2b9355cf827c7b82ea5e55b112ce0032a9abf
+modified: '2021-06-21T06:56:20.633173Z'
+published: '2021-01-13T00:01:07.922707Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=10948
-modified: '2021-03-09T04:49:04.849830Z'
-published: '2021-01-13T00:01:07.922707Z'

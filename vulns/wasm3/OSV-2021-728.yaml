@@ -9,15 +9,16 @@ details: |
   Crash type: UNKNOWN WRITE
   Crash state:
   _fini
-severity: HIGH
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/wasm3/wasm3
     introduced: 8cb2fd424309fa6ff70cf00bfcedc4e66d3355c0
     fixed: 6bb612ccbfd5f8993a07a99092fab534722df1c3
-modified: '2021-05-05T00:00:31.085655Z'
+modified: '2021-06-21T06:56:18.576404Z'
 published: '2021-05-05T00:00:31.085366Z'
+ecosystem_specific:
+  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=33944

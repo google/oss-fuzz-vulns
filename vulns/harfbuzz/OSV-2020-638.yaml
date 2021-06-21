@@ -12,15 +12,16 @@ details: |
   OT::UnsizedArrayOf<OT::IntType<unsigned char, 1u> >::copy
   bool OT::OffsetTo<OT::UnsizedArrayOf<OT::IntType<unsigned char, 1u> >, OT::IntTy
   OT::NameRecord::copy
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/harfbuzz/harfbuzz.git
     introduced: 59ee61fddc76cd18f19f351bca7dd293eb610333
     fixed: 503748d8a80dd5db450c8c4dc109f2b97049d989
+modified: '2021-06-21T06:56:20.691280Z'
+published: '2020-07-01T00:00:21.866519Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14637
-modified: '2021-03-09T04:49:05.994546Z'
-published: '2020-07-01T00:00:21.866519Z'

@@ -11,7 +11,6 @@ details: |
   get_32aligned_be64
   nl_attr_get_be64
   format_odp_tun_attr
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -24,8 +23,10 @@ affects:
     fixed: d40db569e2a83d925c67b3affa1a31de6d9ef07c
   versions:
   - v2.14.0
+modified: '2021-06-21T06:56:26.309458Z'
+published: '2020-11-17T00:00:58.901949Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=27524
-modified: '2021-03-09T04:49:05.696092Z'
-published: '2020-11-17T00:00:58.901949Z'

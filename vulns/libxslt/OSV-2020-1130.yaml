@@ -11,15 +11,16 @@ details: |
   xsltFormatNumberConversion
   xsltFormatNumberFunction
   xmlXPathCompOpEval
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://gitlab.gnome.org/GNOME/libxslt.git
     introduced: unknown:7f56378a73af8a61da78b8091f0e317316cee300
     fixed: e1f8d2e6eb1167fd51eb5b8c99d2d40c37299897
+modified: '2021-06-21T06:56:21.165675Z'
+published: '2020-07-22T21:49:49.395683Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=17171
-modified: '2021-03-09T04:49:05.105809Z'
-published: '2020-07-22T21:49:49.395683Z'

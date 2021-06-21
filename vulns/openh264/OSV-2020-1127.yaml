@@ -11,15 +11,16 @@ details: |
   WelsDec::CWelsDecoder::ReorderPicturesInDisplay
   WelsDec::CWelsDecoder::DecodeFrame2
   WelsDec::CWelsDecoder::DecodeFrameNoDelay
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/cisco/openh264.git
     introduced: unknown:70eeb783515dbfee3e0c781d6667838caba5113b
     fixed: 70eeb783515dbfee3e0c781d6667838caba5113b:1e2e87f07903b3dcf142b153bd92329eeb650984
+modified: '2021-06-21T06:56:23.761248Z'
+published: '2020-07-22T21:49:49.163030Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=12647
-modified: '2021-03-09T04:49:05.103953Z'
-published: '2020-07-22T21:49:49.163030Z'

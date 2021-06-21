@@ -11,7 +11,6 @@ details: |
   fp_read_unsigned_bin
   mp_read_unsigned_bin
   wc_RsaPublicKeyDecodeRaw
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -20,8 +19,10 @@ affects:
     fixed: 382deb1f8620bcd08e6605d7efe4f53fd672a8b6:22ce25afbacfb60d426ac849fb365621967df0f6
   versions:
   - v4.6.0-stable
+modified: '2021-06-21T06:56:22.378374Z'
+published: '2020-11-21T00:00:42.417255Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=27666
-modified: '2021-03-09T04:49:05.699200Z'
-published: '2020-11-21T00:00:42.417255Z'

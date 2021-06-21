@@ -11,7 +11,6 @@ details: |
   copy_string
   do_uncompress_block
   process_block
-severity: HIGH
 affects:
   ranges:
   - type: GIT
@@ -20,8 +19,10 @@ affects:
     fixed: 94821008d6eea81e315c5881cdf739202961040a
   versions:
   - v3.4.1
+modified: '2021-06-21T06:56:26.662548Z'
+published: '2020-06-26T00:00:08.394661Z'
+ecosystem_specific:
+  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=19990
-modified: '2021-03-09T04:49:05.779087Z'
-published: '2020-06-26T00:00:08.394661Z'

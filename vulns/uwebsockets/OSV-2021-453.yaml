@@ -11,14 +11,15 @@ details: |
   std::__1::pair<unsigned int, void*> uWS::HttpParser::fenceAndConsumePostPadded<0
   uWS::HttpParser::consumePostPadded
   std::__1::__function::__func<LLVMFuzzerTestOneInput::$_0, std::__1::allocator<LL
-severity: HIGH
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/uNetworking/uWebSockets.git
     introduced: 1507f3f98abf6bb56cd5bb26de0776a9e2c2cf36
+modified: '2021-06-21T06:56:26.579468Z'
+published: '2021-02-28T00:00:19.863324Z'
+ecosystem_specific:
+  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31457
-modified: '2021-03-02T00:05:54.610136Z'
-published: '2021-02-28T00:00:19.863324Z'

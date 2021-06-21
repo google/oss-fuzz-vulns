@@ -11,15 +11,16 @@ details: |
   opj_dwt_interleave_partial_v
   opj_dwt_decode_partial_tile
   opj_tcd_dwt_decode
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/uclouvain/openjpeg
     introduced: 5d403250561398f7ba3041d9eb8c893bd680dd72
     fixed: a55c024fc6b917a409b85aeafd7326421c4aea34
+modified: '2021-06-21T06:56:25.527988Z'
+published: '2021-01-13T00:00:03.425630Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=3115
-modified: '2021-03-09T04:49:04.788284Z'
-published: '2021-01-13T00:00:03.425630Z'

@@ -11,15 +11,16 @@ details: |
   fdilate_1_56
   fmorphopgen_low_1
   pixFMorphopGen_1
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/DanBloomberg/leptonica.git
     introduced: 5d8ca8563bac810f6273ccef4dfe21e943b8b294
     fixed: a0b59604bcf24b13af168fa45d54bbedab1d3d5d
+modified: '2021-06-21T06:56:20.243501Z'
+published: '2021-01-23T00:01:02.010626Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29819
-modified: '2021-03-03T12:00:57.097455Z'
-published: '2021-01-23T00:01:02.010626Z'

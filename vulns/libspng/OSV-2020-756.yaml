@@ -10,15 +10,16 @@ details: |
   Crash state:
   spng_read_fuzzer.c
   spng_read_fuzzer.c
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/randy408/libspng.git
     introduced: 6a1c8f0e7c2242b22dfc562950a568c1d715954f
     fixed: 932e9c836ea388dbd0d7a214af78a70373079c9d
+modified: '2021-06-21T06:56:21.075225Z'
+published: '2020-07-09T00:00:05.644183Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23936
-modified: '2021-03-09T04:49:06.059194Z'
-published: '2020-07-09T00:00:05.644183Z'

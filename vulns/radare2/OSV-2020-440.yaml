@@ -11,15 +11,16 @@ details: |
   r_uleb128
   parse_class
   dex_loadcode
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/radare/radare2
     introduced: 3f4580b0319ec4a4bcaa2fc8fbd608be948ec054
     fixed: 118bf6a693ef0a349959919fd6217e70a26ddf62
+modified: '2021-06-21T06:56:23.197500Z'
+published: '2020-07-01T00:00:09.710794Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13915
-modified: '2021-03-09T04:49:05.889114Z'
-published: '2020-07-01T00:00:09.710794Z'

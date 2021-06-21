@@ -12,7 +12,6 @@ details: |
   std::__1::__tree<std::__1::__value_type<Json::Value::CZString, Json::Value>, std
   std::__1::map<Json::Value::CZString, Json::Value, std::__1::less<Json::Value::CZ
   Json::Value::begin
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -21,8 +20,10 @@ affects:
     fixed: 5bd3b05ac4744f9f12ee1bbec43b9d2a127ed6de
   versions:
   - android-s-beta-1
-modified: '2021-05-20T00:00:22.507492Z'
+modified: '2021-06-21T06:56:27.313602Z'
 published: '2021-05-20T00:00:22.503762Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34443

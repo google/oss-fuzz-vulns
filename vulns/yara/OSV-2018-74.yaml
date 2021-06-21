@@ -11,15 +11,16 @@ details: |
   yr_re_ast_extract_literal
   _yr_parser_write_string
   yr_parser_reduce_string_declaration
-severity: HIGH
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/VirusTotal/yara.git
     introduced: a2f8515212c35348bcd8d58eaf9853c139533f7c:459d5a2bae0f4c9a2921be0d21fe920258cb5d6d
     fixed: 459d5a2bae0f4c9a2921be0d21fe920258cb5d6d:7a517b22dc2341f0aa9bca3ea834f239e8e56c64
+modified: '2021-06-21T06:56:27.604494Z'
+published: '2021-01-13T00:00:35.634158Z'
+ecosystem_specific:
+  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11753
-modified: '2021-03-09T04:49:05.021715Z'
-published: '2021-01-13T00:00:35.634158Z'

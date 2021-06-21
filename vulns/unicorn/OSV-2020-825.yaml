@@ -11,7 +11,6 @@ details: |
   tcg_liveness_analysis_arm
   tcg_gen_code_arm
   cpu_arm_gen_code_arm
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -24,8 +23,10 @@ affects:
   - 1.0.2-rc4
   - 1.0.2-rc5
   - 1.0.2-rc6
+modified: '2021-06-21T06:56:25.273874Z'
+published: '2020-07-14T05:37:49.161459Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23971
-modified: '2021-03-09T04:51:31.414829Z'
-published: '2020-07-14T05:37:49.161459Z'

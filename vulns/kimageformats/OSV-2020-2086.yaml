@@ -11,7 +11,6 @@ details: |
   Bad-cast to QPaintDevice from invalid vptr
   QImage::operator=
   XCFImageFormat::readXCF
-severity: HIGH
 affects:
   ranges:
   - type: GIT
@@ -48,8 +47,10 @@ affects:
   - v5.81.0
   - v5.82.0-rc1
   - v5.82.0-rc2
-modified: '2021-05-03T00:06:55.068631Z'
+modified: '2021-06-21T06:56:27.812165Z'
 published: '2020-10-19T00:00:08.431906Z'
+ecosystem_specific:
+  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26457

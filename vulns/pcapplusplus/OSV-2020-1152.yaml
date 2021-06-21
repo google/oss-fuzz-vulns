@@ -11,15 +11,16 @@ details: |
   pcpp::tbp_my_own_strnlen
   pcpp::HeaderField::HeaderField
   pcpp::TextBasedProtocolMessage::parseFields
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/seladb/PcapPlusPlus
     introduced: unknown:4366d2f86bf105025765a0ce3db6e647ba0f3508
     fixed: af9c97f1356654fc896a30194330f38e6b613d08
+modified: '2021-06-21T06:56:24.675745Z'
+published: '2020-07-22T21:49:51.614814Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22483
-modified: '2021-03-09T04:49:05.117321Z'
-published: '2020-07-22T21:49:51.614814Z'

@@ -11,15 +11,16 @@ details: |
   r_bin_filter_sections
   r_bin_object_set_items
   r_bin_object_new
-severity: HIGH
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/radare/radare2
     introduced: 4e8eed0158eef42888b2d9afb3d33fe4fb02409b
     fixed: a6a04332f86ff190058b358b4f89b9fa482567f8
+modified: '2021-06-21T06:56:23.169797Z'
+published: '2021-01-13T00:01:04.024149Z'
+ecosystem_specific:
+  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11272
-modified: '2021-03-09T04:49:04.842067Z'
-published: '2021-01-13T00:01:04.024149Z'

@@ -11,7 +11,6 @@ details: |
   std::__1::__packaged_task_func<std::__1::__bind<grk::mct::decompress_irrev
   std::__1::packaged_task<int
   ThreadPool::ThreadPool
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -24,8 +23,10 @@ affects:
   - v9.0.0
   - v9.1.0
   - v9.2.0
-modified: '2021-05-23T00:04:23.842472Z'
+modified: '2021-06-21T06:56:25.483026Z'
 published: '2021-02-22T00:00:08.360778Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31180

@@ -11,7 +11,6 @@ details: |
   fast_validate
   g_utf8_validate
   g_variant_serialiser_is_string
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -24,8 +23,10 @@ affects:
   - 2.58.1
   - 2.58.2
   - 2.58.3
+modified: '2021-06-21T06:56:20.120270Z'
+published: '2021-01-13T00:00:59.593904Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=10319
-modified: '2021-03-09T04:49:04.835736Z'
-published: '2021-01-13T00:00:59.593904Z'

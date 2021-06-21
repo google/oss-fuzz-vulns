@@ -11,7 +11,6 @@ details: |
   _gcry_aes_cbc_enc
   cmac_write
   _gcry_cipher_cmac_authenticate
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -22,8 +21,10 @@ affects:
   - v2.5.0
   - v2.5.1rc0
   - wireshark-2.5.0
+modified: '2021-06-21T06:56:24.029102Z'
+published: '2021-01-15T00:00:29.537688Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=6336
-modified: '2021-03-09T04:49:04.925411Z'
-published: '2021-01-15T00:00:29.537688Z'

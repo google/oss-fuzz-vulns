@@ -11,15 +11,16 @@ details: |
   decode_bit_string
   decode_bit_field
   asn1_decode_entry
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/OpenSC/OpenSC
     introduced: unknown:b0241eefa1b47f1420456f5dbc43564d59961a54
     fixed: 9b4b080be788a602fa8f01ac8d7e29cdaad07902
+modified: '2021-06-21T06:56:27.171588Z'
+published: '2020-07-22T21:49:41.688762Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=16615
-modified: '2021-03-09T04:49:05.057355Z'
-published: '2020-07-22T21:49:41.688762Z'

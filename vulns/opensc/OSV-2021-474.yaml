@@ -11,7 +11,6 @@ details: |
   sc_pkcs15emu_oberthur_add_cert
   sc_oberthur_parse_publicinfo
   sc_pkcs15emu_oberthur_init
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -22,8 +21,10 @@ affects:
   - 0.21.0
   - 0.21.0-rc1
   - 0.21.0-rc2
+modified: '2021-06-21T06:56:27.026920Z'
+published: '2021-03-02T00:01:16.102524Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31540
-modified: '2021-03-09T05:46:58.758052Z'
-published: '2021-03-02T00:01:16.102524Z'

@@ -11,15 +11,16 @@ details: |
   hb_vector_t<CFF::op_str_t>::resize
   hb_vector_t<CFF::op_str_t>::push
   CFF::parsed_values_t<CFF::op_str_t>::add_op
-severity: HIGH
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/harfbuzz/harfbuzz.git
     introduced: c33e8006fdaec3b4acf8927c75e04129e0410a59
     fixed: d307c24abf37b2702706cf9df0fab571a99e2a70
+modified: '2021-06-21T06:56:20.437833Z'
+published: '2020-07-31T00:00:39.916125Z'
+ecosystem_specific:
+  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24500
-modified: '2021-03-09T04:49:05.323499Z'
-published: '2020-07-31T00:00:39.916125Z'

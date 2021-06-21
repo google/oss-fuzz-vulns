@@ -12,15 +12,16 @@ details: |
   AAT::LookupFormat8<OT::IntType<unsigned short, 2u> >::get_value
   AAT::Lookup<OT::IntType<unsigned short, 2u> >::get_value
   AAT::StateTable<AAT::InsertionSubtable::EntryData>::get_class
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/harfbuzz/harfbuzz.git
     introduced: 14ff3cbe0f30dea24e1bb175b1e8e41039f6afdc
     fixed: 1c76c8f6ff7877e486f6e94d04b2dc65348b26d5
+modified: '2021-06-21T06:56:20.792077Z'
+published: '2021-01-13T00:01:07.342181Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=10953
-modified: '2021-03-09T04:49:04.847836Z'
-published: '2021-01-13T00:01:07.342181Z'

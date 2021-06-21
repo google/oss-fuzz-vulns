@@ -11,15 +11,16 @@ details: |
   printUInt32
   printU1ImmOperand
   printInstruction
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/aquynh/capstone.git
     introduced: dbefe3a6d5d9d08ffefca45c3ad7e59601f99cfa
     fixed: e9c0772028e689a169047932efc9e08bc96e323a
+modified: '2021-06-21T06:56:25.693540Z'
+published: '2020-07-01T00:00:24.413748Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14642
-modified: '2021-03-09T04:49:06.018602Z'
-published: '2020-07-01T00:00:24.413748Z'

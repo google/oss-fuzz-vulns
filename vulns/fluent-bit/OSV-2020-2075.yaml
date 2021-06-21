@@ -11,7 +11,6 @@ details: |
   flb_parser_decoder_list_destroy
   parser_fuzzer.c
   flb_free
-severity: HIGH
 affects:
   ranges:
   - type: GIT
@@ -32,8 +31,10 @@ affects:
   - v1.6.7
   - v1.6.8
   - v1.6.9
+modified: '2021-06-21T06:56:24.396204Z'
+published: '2020-10-16T00:00:35.685490Z'
+ecosystem_specific:
+  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26345
-modified: '2021-03-09T04:49:05.596009Z'
-published: '2020-10-16T00:00:35.685490Z'

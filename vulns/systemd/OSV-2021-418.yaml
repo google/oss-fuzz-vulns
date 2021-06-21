@@ -11,15 +11,16 @@ details: |
   mfree
   parse_path_argument
   systemctl_parse_argv
-severity: HIGH
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/systemd/systemd
     introduced: 425ac7a253321b8e8d1b0a0f7a173892a3abc385
     fixed: 5800f0fc682baccb24ae076b3ffea0a548812486
+modified: '2021-06-21T06:56:25.832185Z'
+published: '2021-02-19T00:02:40.501688Z'
+ecosystem_specific:
+  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31055
-modified: '2021-03-05T00:13:54.695302Z'
-published: '2021-02-19T00:02:40.501688Z'

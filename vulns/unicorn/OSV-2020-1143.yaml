@@ -11,7 +11,6 @@ details: |
   mips_release_mips
   uc_close
   fuzz_emu_mips_32be.c
-severity: HIGH
 affects:
   ranges:
   - type: GIT
@@ -20,8 +19,10 @@ affects:
     fixed: 8b99637f774436e222e6d4393135aab0964967a0
   versions:
   - 1.0.2-rc1
+modified: '2021-06-21T06:56:25.248853Z'
+published: '2020-07-22T21:49:50.620818Z'
+ecosystem_specific:
+  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13852
-modified: '2021-03-09T04:49:05.112495Z'
-published: '2020-07-22T21:49:50.620818Z'

@@ -11,7 +11,6 @@ details: |
   mprint
   match
   file_softmagic
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -24,8 +23,10 @@ affects:
   - FILE5_34
   - FILE5_35
   - FILE5_36
+modified: '2021-06-21T06:56:18.663718Z'
+published: '2020-07-01T00:00:06.825617Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13453
-modified: '2021-03-09T04:49:05.862390Z'
-published: '2020-07-01T00:00:06.825617Z'

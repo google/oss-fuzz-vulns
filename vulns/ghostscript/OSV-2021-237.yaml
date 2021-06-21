@@ -11,7 +11,6 @@ details: |
   sampled_data_sample
   sampled_data_continue
   interp
-severity: HIGH
 affects:
   ranges:
   - type: GIT
@@ -51,8 +50,10 @@ affects:
   - ghostscript-9.52
   - gs9.28-temp-for-testing-tag
   - rjj_9.53.2_test
+modified: '2021-06-21T06:56:21.548237Z'
+published: '2021-01-26T00:00:02.244670Z'
+ecosystem_specific:
+  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29903
-modified: '2021-03-09T12:01:01.510644Z'
-published: '2021-01-26T00:00:02.244670Z'

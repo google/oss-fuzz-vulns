@@ -11,7 +11,6 @@ details: |
   searchObjectForKeyRec
   searchObjectForKeyRec
   searchObjectForKeyRec
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -28,8 +27,10 @@ affects:
   - v1.0-rc3
   - v1.0-rc4
   - v1.0-rc5
+modified: '2021-06-21T06:56:26.892188Z'
+published: '2020-07-01T00:00:04.730408Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14619
-modified: '2021-03-09T04:49:05.840742Z'
-published: '2020-07-01T00:00:04.730408Z'

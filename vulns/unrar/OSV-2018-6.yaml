@@ -11,7 +11,6 @@ details: |
   DosSlashToUnix
   ExtractUnixLink50
   ExtractSymlink
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -30,8 +29,10 @@ affects:
   - v5.7.3
   - v5.7.4
   - v6.0.3
+modified: '2021-06-21T06:56:22.119460Z'
+published: '2021-01-13T00:00:02.571744Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=9307
-modified: '2021-03-09T04:51:17.295701Z'
-published: '2021-01-13T00:00:02.571744Z'

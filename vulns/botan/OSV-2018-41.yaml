@@ -11,15 +11,16 @@ details: |
   Botan::bigint_monty_redc
   Botan::CurveGFp_Montgomery::curve_mul
   Botan::CurveGFp_Montgomery::to_curve_rep
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/randombit/botan.git
     introduced: 50c69e760b0f47e84f5a3c8d2bea6f072f3fd587
     fixed: 74ca458b14d265b68ad25cf918aa216b3fa51103
+modified: '2021-06-21T06:56:21.308278Z'
+published: '2021-01-13T00:00:22.644618Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=6581
-modified: '2021-03-09T04:49:04.980034Z'
-published: '2021-01-13T00:00:22.644618Z'

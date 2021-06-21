@@ -11,15 +11,16 @@ details: |
   pcpp::SSLCertificateRequestMessage::SSLCertificateRequestMessage
   pcpp::SSLHandshakeMessage::createHandhakeMessage
   pcpp::SSLHandshakeLayer::SSLHandshakeLayer
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/seladb/PcapPlusPlus
     introduced: unknown:4366d2f86bf105025765a0ce3db6e647ba0f3508
     fixed: 50aab202d24331ef35b9eff68d96ef9f97baf6a1
+modified: '2021-06-21T06:56:24.751200Z'
+published: '2020-07-22T21:50:05.088004Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22513
-modified: '2021-03-09T04:49:05.203037Z'
-published: '2020-07-22T21:50:05.088004Z'

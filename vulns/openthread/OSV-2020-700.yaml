@@ -11,15 +11,16 @@ details: |
   ot::Message::Write
   ot::Message::Append
   ot::Mle::Mle::AppendResponse
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/openthread/openthread
     introduced: b694b00951eeeb4986387de1179d55dd38643a87
     fixed: 8224b3c49f8bd285ad5658c1b3cd9683d6627bdb
+modified: '2021-06-21T06:56:24.953949Z'
+published: '2020-07-01T00:00:25.618153Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15380
-modified: '2021-03-09T04:49:06.030366Z'
-published: '2020-07-01T00:00:25.618153Z'

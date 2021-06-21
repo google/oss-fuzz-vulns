@@ -11,7 +11,6 @@ details: |
   ARM_post_printer
   fill_insn
   cs_disasm
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -20,8 +19,10 @@ affects:
     fixed: fb11ad1a4abe90b0ca34f1fa4cdbb7687f6e0aad:fb6179eca88e6d0af801cf046446161459ad6a55
   versions:
   - 4.0.2
+modified: '2021-06-21T06:56:25.699738Z'
+published: '2020-07-01T00:00:09.576759Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13768
-modified: '2021-03-09T04:49:05.887618Z'
-published: '2020-07-01T00:00:09.576759Z'

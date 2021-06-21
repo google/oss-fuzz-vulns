@@ -9,7 +9,6 @@ details: |
   Crash type: Heap-buffer-overflow READ 4
   Crash state:
   helper_ret_stb_mmu_mips
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -18,8 +17,10 @@ affects:
     fixed: 8b99637f774436e222e6d4393135aab0964967a0
   versions:
   - 1.0.2-rc1
+modified: '2021-06-21T06:56:25.260964Z'
+published: '2020-07-22T21:49:57.228163Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13489
-modified: '2021-03-09T04:49:05.149549Z'
-published: '2020-07-22T21:49:57.228163Z'

@@ -11,7 +11,6 @@ details: |
   tdefl_compress_lz_codes
   tdefl_compress_block
   tdefl_flush_block
-severity: HIGH
 affects:
   ranges:
   - type: GIT
@@ -40,8 +39,10 @@ affects:
   - v1.7.0-rc8
   - v1.7.0-rc9
   - v1.7.1
+modified: '2021-06-21T06:56:24.454756Z'
+published: '2020-11-08T00:00:05.283717Z'
+ecosystem_specific:
+  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=27263
-modified: '2021-03-09T04:49:05.678102Z'
-published: '2020-11-08T00:00:05.283717Z'

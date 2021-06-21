@@ -11,15 +11,16 @@ details: |
   fuzz_send_next_response
   fuzz_handle_transfer
   _start
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/curl/curl.git
     introduced: 1cb4f5d6e8e470638759a48ba99fda230089712f:e240a546a7ac2fa7956adb664b8c40c4dee4f82b
     fixed: fa394c8c2e39ea327d668f14353b32580e821b1c:544bfdebea2a9e8be1c01fc7954cd49638fe2803
+modified: '2021-06-21T06:56:28.088842Z'
+published: '2021-01-13T00:00:01.695158Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=3956
-modified: '2021-03-09T04:49:04.731568Z'
-published: '2021-01-13T00:00:01.695158Z'

@@ -11,15 +11,16 @@ details: |
   _hb_ot_shape_fallback_kern
   hb_ot_position
   hb_ot_shape_internal
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/harfbuzz/harfbuzz.git
     introduced: 9b0b40b3c1ac8155c80ed5dc976228f4d3ec7e1f
     fixed: 5c65ed800de4caef5ee9ad2111225fa5d8235737
+modified: '2021-06-21T06:56:20.685116Z'
+published: '2021-01-13T00:01:11.447378Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=10762
-modified: '2021-03-09T04:49:04.854884Z'
-published: '2021-01-13T00:01:11.447378Z'

@@ -11,7 +11,6 @@ details: |
   SampledFunction::SampledFunction
   Function::parse
   Function::parse
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -29,8 +28,10 @@ affects:
   - poppler-0.71.0
   - poppler-0.72.0
   - poppler-0.73.0
+modified: '2021-06-21T06:56:23.578960Z'
+published: '2020-07-22T21:50:02.576507Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=12608
-modified: '2021-03-09T04:49:05.184524Z'
-published: '2020-07-22T21:50:02.576507Z'

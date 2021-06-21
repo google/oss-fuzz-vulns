@@ -11,7 +11,6 @@ details: |
   Envoy::Server::InitManagerImpl::initializeTarget
   Envoy::Server::InitManagerImpl::initialize
   Envoy::Server::ValidationInstance::initialize
-severity: HIGH
 affects:
   ranges:
   - type: GIT
@@ -21,8 +20,10 @@ affects:
   versions:
   - v1.9.0
   - v1.9.1
+modified: '2021-06-21T06:56:19.380830Z'
+published: '2020-07-01T00:00:11.677829Z'
+ecosystem_specific:
+  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13221
-modified: '2021-03-09T04:49:05.907703Z'
-published: '2020-07-01T00:00:11.677829Z'

@@ -11,15 +11,16 @@ details: |
   gx_color_frac_map
   pdf14_cmap_rgb_direct
   gx_remap_concrete_DRGB
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: git://git.ghostscript.com/ghostpdl.git
     introduced: 6153b859d1fd3780cb95d20f678843ab1ba470a1
     fixed: 6290ce42ac84767a84ddc949c9348a194477ab9b:6dbcee4e0b4868843938233eb2c37c927f674d69
+modified: '2021-06-21T06:56:21.467794Z'
+published: '2020-09-07T00:00:05.414284Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25463
-modified: '2021-03-09T04:49:05.401453Z'
-published: '2020-09-07T00:00:05.414284Z'

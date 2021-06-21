@@ -11,15 +11,16 @@ details: |
   proc_plaintext
   do_proc_packets
   proc_signature_packets
-severity: HIGH
 affects:
   ranges:
   - type: GIT
     repo: git://git.gnupg.org/gnupg.git
     introduced: 01c87d4ce23bc9fc44ec5301c2c6bf2ce615c375
     fixed: 3e1f3df6183b2ed2cadf2af2383063891e2c53bd
+modified: '2021-06-21T06:56:20.074383Z'
+published: '2020-07-01T00:00:17.473815Z'
+ecosystem_specific:
+  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13730
-modified: '2021-03-09T04:49:05.957551Z'
-published: '2020-07-01T00:00:17.473815Z'

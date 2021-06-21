@@ -11,7 +11,6 @@ details: |
   perfetto::trace_processor::MemoryTrackerSnapshotParser::EmitRows
   perfetto::trace_processor::MemoryTrackerSnapshotParser::GenerateGraphFromRawNode
   perfetto::trace_processor::MemoryTrackerSnapshotParser::NotifyEndOfFile
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -20,8 +19,10 @@ affects:
     fixed: 23280234a3ee0ef4b96c11b31d57a9575142f1e4
   versions:
   - v10.0
+modified: '2021-06-21T06:56:27.377150Z'
+published: '2020-12-19T00:00:21.828942Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=28766
-modified: '2021-03-09T04:49:05.755936Z'
-published: '2020-12-19T00:00:21.828942Z'

@@ -11,15 +11,16 @@ details: |
   r_read_le32
   is_kernelcache
   check_bytes
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/radare/radare2
     introduced: 118bf6a693ef0a349959919fd6217e70a26ddf62
     fixed: d271da09ab6cf4817cfabede153e6bd547118cdd
+modified: '2021-06-21T06:56:23.203395Z'
+published: '2020-07-01T00:00:25.229524Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13942
-modified: '2021-03-09T04:49:06.026670Z'
-published: '2020-07-01T00:00:25.229524Z'

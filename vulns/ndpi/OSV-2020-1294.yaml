@@ -11,15 +11,16 @@ details: |
   SHA1Update
   getSSCertificateFingerprint
   tlsDetectProtocolFromCertificate
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/ntop/nDPI.git
     introduced: unknown:e695dd6eade754b2d50bdf297ca8bdc4105f93ff
     fixed: ab9ccf9eb9a6571d84bd0b2c8e185565d0d700f6
+modified: '2021-06-21T06:56:22.806077Z'
+published: '2020-07-22T21:50:03.900037Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18740
-modified: '2021-03-09T04:49:05.193008Z'
-published: '2020-07-22T21:50:03.900037Z'

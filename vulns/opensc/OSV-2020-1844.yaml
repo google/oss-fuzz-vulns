@@ -11,15 +11,16 @@ details: |
   hextoint
   get_name_from_EF_DatiPersonali
   itacns_add_data_files
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/OpenSC/OpenSC
     introduced: 508f8a9fced369f60e6f0c0f62176ea9427fbf42
     fixed: 3ebfb01a3c54650391ce9eeb0dbe5b88e41f1f5b
+modified: '2021-06-21T06:56:27.020533Z'
+published: '2020-09-26T00:00:09.496267Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25935
-modified: '2021-03-09T04:49:05.470166Z'
-published: '2020-09-26T00:00:09.496267Z'

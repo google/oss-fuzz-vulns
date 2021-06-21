@@ -11,7 +11,6 @@ details: |
   perfetto::base::Hash::Update
   perfetto::base::StringView::Hash
   perfetto::trace_processor::StringPool::InternString
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -96,8 +95,10 @@ affects:
   - platform-tools-29.0.2
   - platform-tools-29.0.3
   - platform-tools-29.0.4
+modified: '2021-06-21T06:56:27.302018Z'
+published: '2020-07-01T00:00:22.674176Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14753
-modified: '2021-03-09T04:49:06.002866Z'
-published: '2020-07-01T00:00:22.674176Z'

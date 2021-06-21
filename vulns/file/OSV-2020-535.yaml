@@ -11,7 +11,6 @@ details: |
   looks_ucs32
   file_encoding
   file_buffer
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -20,8 +19,10 @@ affects:
     fixed: ecca6e54f49f251bb4c16fe145d04c2b45923dc3
   versions:
   - FILE5_36
+modified: '2021-06-21T06:56:18.747216Z'
+published: '2020-07-01T00:00:15.186923Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13222
-modified: '2021-03-09T04:49:05.940393Z'
-published: '2020-07-01T00:00:15.186923Z'

@@ -11,15 +11,16 @@ details: |
   ofats::any_detail::handler_traits<void>::handler_base<ofats::any_detail::handler
   uWS::Loop::wakeupCb
   us_internal_dispatch_ready_poll
-severity: HIGH
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/uNetworking/uWebSockets.git
     introduced: 52927697c19547fde9609ec388b129c0b9e85fc3
     fixed: 09aef610e0dbc1de7297fda3a873a6d84498d4f7
+modified: '2021-06-21T06:56:26.561177Z'
+published: '2021-02-23T00:00:23.638786Z'
+ecosystem_specific:
+  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31209
-modified: '2021-03-08T00:06:27.838436Z'
-published: '2021-02-23T00:00:23.638786Z'

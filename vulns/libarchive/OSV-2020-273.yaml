@@ -11,15 +11,16 @@ details: |
   copy_string
   do_uncompress_block
   process_block
-severity: HIGH
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/libarchive/libarchive.git
     introduced: 47bb8187d3ef2d49ee8c7841cb2872b3cfa1f6f7
     fixed: c9267d665c30fa78023bd70b8e9c6f02450777e2
+modified: '2021-06-21T06:56:26.711450Z'
+published: '2020-06-30T00:00:44.820643Z'
+ecosystem_specific:
+  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=19509
-modified: '2021-03-09T04:49:05.798852Z'
-published: '2020-06-30T00:00:44.820643Z'

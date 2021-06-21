@@ -11,7 +11,6 @@ details: |
   llvm_ks::X86Operand::getToken
   X86AsmParser::MatchAndEmitATTInstruction
   X86AsmParser::MatchAndEmitInstruction
-severity: HIGH
 affects:
   ranges:
   - type: GIT
@@ -23,8 +22,10 @@ affects:
   - 0.9.2-rc1
   - 0.9.2-rc1.post1
   - 0.9.2-rc1.post2
+modified: '2021-06-21T06:56:24.148360Z'
+published: '2020-07-14T05:37:34.150718Z'
+ecosystem_specific:
+  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22850
-modified: '2021-03-09T04:49:06.076201Z'
-published: '2020-07-14T05:37:34.150718Z'

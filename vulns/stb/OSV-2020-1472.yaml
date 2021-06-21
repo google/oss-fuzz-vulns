@@ -11,15 +11,16 @@ details: |
   stbi__YCbCr_to_RGB_simd
   load_jpeg_image
   stbi__jpeg_load
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/nothings/stb.git
     introduced: f54acd4e13430c5122cab4ca657705c84aa61b08
     fixed: b42009b3b9d4ca35bc703f5310eedc74f584be58
+modified: '2021-06-21T06:56:26.442939Z'
+published: '2020-07-28T00:00:27.093869Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22605
-modified: '2021-03-09T04:49:05.282858Z'
-published: '2020-07-28T00:00:27.093869Z'

@@ -11,15 +11,16 @@ details: |
   OT::post::accelerator_t::cmp_gids
   sort_r_cmpswap
   sort_r_simple
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/harfbuzz/harfbuzz.git
     introduced: bce437cf0b71e9b60bbf058eaf61593fed30ae33
     fixed: 6482fda519ca7d173e3bcb3717aa30e237f04b25
+modified: '2021-06-21T06:56:20.722786Z'
+published: '2021-01-13T00:00:24.227595Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11263
-modified: '2021-03-09T04:49:04.991118Z'
-published: '2021-01-13T00:00:24.227595Z'

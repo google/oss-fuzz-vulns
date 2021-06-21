@@ -11,7 +11,6 @@ details: |
   gvs_read_unaligned_le
   gvs_tuple_is_normal
   g_variant_serialised_is_normal
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -24,8 +23,10 @@ affects:
   - 2.58.1
   - 2.58.2
   - 2.58.3
+modified: '2021-06-21T06:56:20.140641Z'
+published: '2021-01-13T00:00:09.013990Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=9807
-modified: '2021-03-09T04:49:04.882378Z'
-published: '2021-01-13T00:00:09.013990Z'

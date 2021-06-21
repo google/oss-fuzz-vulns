@@ -11,15 +11,16 @@ details: |
   input_osc_parse_colour
   input_osc_11
   input_exit_osc
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/tmux/tmux.git
     introduced: ce5de765929ea38b68e3fd6c26e554ab0c1e09b1
     fixed: 11e404ca3c80893f59b1001f000c9390216c7e7a
+modified: '2021-06-21T06:56:21.339607Z'
+published: '2021-02-19T00:02:48.073974Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31106
-modified: '2021-03-05T00:06:41.940393Z'
-published: '2021-02-19T00:02:48.073974Z'

@@ -11,15 +11,16 @@ details: |
   encode_LEARN
   ofpacts_put_openflow_actions
   ofputil_encode_flow_mod
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/openvswitch/ovs.git
     introduced: aa1a0f1aaf6a772327b712d0507735af5b8c791d
     fixed: 8ed9df00b6e4b8b3aadba4b552c27c0382d3508b
+modified: '2021-06-21T06:56:26.362517Z'
+published: '2021-01-13T00:00:39.130781Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=12328
-modified: '2021-03-09T04:49:05.026379Z'
-published: '2021-01-13T00:00:39.130781Z'

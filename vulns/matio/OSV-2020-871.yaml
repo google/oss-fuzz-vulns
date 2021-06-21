@@ -11,7 +11,6 @@ details: |
   H5FD_sec2_read
   H5FD_read
   H5F_sblock_load
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -21,8 +20,10 @@ affects:
   versions:
   - v1.5.18
   - v1.5.19
+modified: '2021-06-21T06:56:28.273673Z'
+published: '2020-07-14T22:13:51.775704Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=19241
-modified: '2021-03-09T04:49:06.125118Z'
-published: '2020-07-14T22:13:51.775704Z'

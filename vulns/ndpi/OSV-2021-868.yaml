@@ -11,15 +11,16 @@ details: |
   ndpi_set_detected_protocol
   ndpi_match_hostname_protocol
   processClientServerHello
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/ntop/nDPI.git
     introduced: be808c30f3f4582009df4c5efccd4f3bb0c6ef1d
     fixed: b0b3e1bc6c8db7cf8a2a26dbb29ffdb057d86121
-modified: '2021-06-18T00:00:07.405907Z'
+modified: '2021-06-21T06:56:22.669940Z'
 published: '2021-06-18T00:00:07.405397Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=35288

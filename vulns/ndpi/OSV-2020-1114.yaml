@@ -11,15 +11,16 @@ details: |
   ndpi_int_check_stun
   ndpi_search_stun
   check_ndpi_udp_flow_func
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/ntop/nDPI.git
     introduced: unknown:e695dd6eade754b2d50bdf297ca8bdc4105f93ff
     fixed: 27ea04c08ef72e78604308624bf31735aa2e8e98
+modified: '2021-06-21T06:56:22.677512Z'
+published: '2020-07-22T21:49:48.206675Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=19332
-modified: '2021-03-09T04:49:05.097299Z'
-published: '2020-07-22T21:49:48.206675Z'

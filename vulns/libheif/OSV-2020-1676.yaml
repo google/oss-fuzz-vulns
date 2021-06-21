@@ -11,7 +11,6 @@ details: |
   Op_YCbCr_to_RGB<unsigned char>::convert_colorspace
   heif::ColorConversionPipeline::convert_image
   heif::convert_colorspace
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -24,8 +23,10 @@ affects:
   - v1.9.0
   - v1.9.1
   - v1.12.0
-modified: '2021-05-06T00:06:27.963768Z'
+modified: '2021-06-21T06:56:20.067990Z'
 published: '2020-08-30T00:00:07.006768Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25267

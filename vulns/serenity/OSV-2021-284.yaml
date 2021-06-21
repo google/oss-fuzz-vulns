@@ -9,15 +9,16 @@ details: |
   Crash type: UNKNOWN READ
   Crash state:
   _fini
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/SerenityOS/serenity
     introduced: 51b880b0383089822f513330cd64f93b54b9f21c
     fixed: 81c6d8e98ee240874ea36a85be6e7f4c05e15ff4
+modified: '2021-06-21T06:56:19.853629Z'
+published: '2021-02-06T00:00:56.704817Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30296
-modified: '2021-03-09T04:49:06.292627Z'
-published: '2021-02-06T00:00:56.704817Z'

@@ -11,15 +11,16 @@ details: |
   Interpreter::evaluate
   jsonnet_vm_execute
   jsonnet_evaluate_snippet_aux
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/google/jsonnet.git
     introduced: 0ebb1b31e2a9f83d90eca5356fa3d820177ae8ab:8d4bf07af93f77fcc0a36d4c8871c4ff90405774
     fixed: 206ed1cb2068e47df8b6e3ab03f062b339e0e5f3
+modified: '2021-06-21T06:56:24.125029Z'
+published: '2020-07-01T00:00:18.669002Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15844
-modified: '2021-03-09T04:49:05.967369Z'
-published: '2020-07-01T00:00:18.669002Z'

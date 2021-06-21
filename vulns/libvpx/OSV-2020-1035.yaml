@@ -9,7 +9,6 @@ details: |
   Crash type: UNKNOWN READ
   Crash state:
   subpixel_ssse3.asm:1165
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -18,8 +17,10 @@ affects:
     fixed: 8a800b52eaee33e71aba7fb59118dcf14ac1dd1c
   versions:
   - v1.8.0
+modified: '2021-06-21T06:56:25.886037Z'
+published: '2020-07-22T21:49:41.421436Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14478
-modified: '2021-03-09T04:49:05.054427Z'
-published: '2020-07-22T21:49:41.421436Z'

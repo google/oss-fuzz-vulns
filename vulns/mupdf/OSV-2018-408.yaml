@@ -11,15 +11,16 @@ details: |
   fz_is_empty_irect
   fz_intersect_irect
   fz_draw_clip_path
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: git://git.ghostscript.com/mupdf.git
     introduced: 9086386263154498dcb18c96f1e1630903b21a3c:d9bc8c6f7fb2e3ec7035bebaaee0edcf59287705
     fixed: 461b81547c1328b819ee626a3f9b55c044b45dcd:7e8807ead274119194ce9a911cbf9c0e61a110bb
+modified: '2021-06-21T06:56:19.098768Z'
+published: '2021-01-15T00:01:14.057811Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=5865
-modified: '2021-03-09T04:49:04.979112Z'
-published: '2021-01-15T00:01:14.057811Z'

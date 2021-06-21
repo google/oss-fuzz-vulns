@@ -11,15 +11,16 @@ details: |
   blosc_d
   _blosc_getitem
   blosc2_getitem_ctx
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/Blosc/c-blosc2.git
     introduced: d1ea514286c47433dabcf47b11cf81d2248ca5bf
     fixed: 4a727370b1c2e9746434c00bf2236db86c31ea5c
+modified: '2021-06-21T06:56:25.910143Z'
+published: '2021-04-16T00:00:26.662778Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=33264
-modified: '2021-04-16T00:00:26.663091Z'
-published: '2021-04-16T00:00:26.662778Z'

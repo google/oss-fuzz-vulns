@@ -11,7 +11,6 @@ details: |
   UA_Array_copy
   String_copy
   LocalizedText_copy
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -35,8 +34,10 @@ affects:
   - v1.2.1
   - v.1.2.2
   - v1.2.2
-modified: '2021-05-13T00:06:04.448403Z'
+modified: '2021-06-21T06:56:26.907373Z'
 published: '2020-07-28T00:00:30.302361Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22250

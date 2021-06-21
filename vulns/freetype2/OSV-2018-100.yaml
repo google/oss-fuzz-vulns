@@ -11,15 +11,16 @@ details: |
   cff_parser_run
   cff_subfont_load
   cff_font_load
-severity: HIGH
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/freetype/freetype2-testing.git
     introduced: 0c256f6e16eb73be1aef98197755e0e6bb4c56a9
     fixed: 08b711d0182229d7e0a1e52cecf73660cb95addb:7e045f03edb2a34b731c999c586a03a914502d88
+modified: '2021-06-21T06:56:21.631934Z'
+published: '2021-01-13T00:00:43.817225Z'
+ecosystem_specific:
+  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=10869
-modified: '2021-03-09T04:49:04.816580Z'
-published: '2021-01-13T00:00:43.817225Z'

@@ -11,14 +11,15 @@ details: |
   AK::NonnullOwnPtr<JS::IndexedPropertyStorage>::operator->
   JS::IndexedProperties::array_like_size
   JS::IndexedProperties::append
-severity: HIGH
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/SerenityOS/serenity
     introduced: 51b880b0383089822f513330cd64f93b54b9f21c
+modified: '2021-06-21T06:56:19.791578Z'
+published: '2021-03-26T00:01:07.954062Z'
+ecosystem_specific:
+  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=32459
-modified: '2021-03-26T00:01:07.954353Z'
-published: '2021-03-26T00:01:07.954062Z'

@@ -11,7 +11,6 @@ details: |
   r_core_lines_initcache
   cb_linesto
   r_config_set_i
-severity: HIGH
 affects:
   ranges:
   - type: GIT
@@ -21,8 +20,10 @@ affects:
   versions:
   - 3.5.0
   - 3.5.1
+modified: '2021-06-21T06:56:23.157625Z'
+published: '2020-07-01T00:00:10.523473Z'
+ecosystem_specific:
+  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14690
-modified: '2021-03-09T04:49:05.897614Z'
-published: '2020-07-01T00:00:10.523473Z'

@@ -12,15 +12,16 @@ details: |
   std::__1::__tree<std::__1::__value_type<Json::Value::CZString, Json::Value>, std
   std::__1::map<Json::Value::CZString, Json::Value, std::__1::less<Json::Value::CZ
   Json::Value::begin
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://android.googlesource.com/platform/external/perfetto/
     introduced: 45123b7d05fe7aee73321f5d3f731b32465acb25
     fixed: 8564f6f6d81270ec2306a2c5ee3697ef0366d3ae
-modified: '2021-05-27T00:00:11.109047Z'
+modified: '2021-06-21T06:56:27.403687Z'
 published: '2021-05-27T00:00:11.108714Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34665

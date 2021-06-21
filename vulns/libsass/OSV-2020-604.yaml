@@ -11,7 +11,6 @@ details: |
   Sass::Parser::parseCompoundSelector
   Sass::Parser::parseComplexSelector
   Sass::Parser::parseSelectorList
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -20,8 +19,10 @@ affects:
     fixed: 994695c669085058c4a500f295a0531893eff77a
   versions:
   - 3.6.2
+modified: '2021-06-21T06:56:24.542598Z'
+published: '2020-07-01T00:00:19.975718Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15904
-modified: '2021-03-09T04:49:05.976681Z'
-published: '2020-07-01T00:00:19.975718Z'

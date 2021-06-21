@@ -11,15 +11,16 @@ details: |
   file_regexec
   magiccheck
   match
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/file/file.git
     introduced: c8ef8f414952634d217b2b5e19d38b92d0341bc2
     fixed: 8c16c9e3c9a82f859c3ed47c34c14eea6a3d7b18
+modified: '2021-06-21T06:56:18.741120Z'
+published: '2021-01-13T21:57:40.577225Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=283
-modified: '2021-03-09T04:49:04.728496Z'
-published: '2021-01-13T21:57:40.577225Z'

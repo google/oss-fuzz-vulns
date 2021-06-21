@@ -11,7 +11,6 @@ details: |
   dst_print_s2k
   stream_dump_packets_raw
   stream_dump_packets
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -22,8 +21,10 @@ affects:
     repo: https://github.com/rnpgp/rnp.git
     introduced: c81154e503614f45b101683945bf27ce10a32b4f
     fixed: 943cfd6d474f11910d2f137ed8cf0fc39297423f
+modified: '2021-06-21T06:56:21.901032Z'
+published: '2020-08-01T00:00:10.494492Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24538
-modified: '2021-03-09T04:49:05.328236Z'
-published: '2020-08-01T00:00:10.494492Z'

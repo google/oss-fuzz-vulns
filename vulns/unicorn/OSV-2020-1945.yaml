@@ -9,7 +9,6 @@ details: |
   Crash type: UNKNOWN READ
   Crash state:
   helper_uc_tracecode
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -20,8 +19,10 @@ affects:
   - 1.0.2-rc1
   - 1.0.2-rc2
   - 1.0.2-rc3
+modified: '2021-06-21T06:56:25.234324Z'
+published: '2020-10-02T00:00:37.220816Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20038
-modified: '2021-03-09T04:49:05.534086Z'
-published: '2020-10-02T00:00:37.220816Z'

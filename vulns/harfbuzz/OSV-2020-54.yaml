@@ -11,15 +11,16 @@ details: |
   OT::HintingDevice* hb_serialize_context_t::embed<OT::HintingDevice>
   OT::HintingDevice::copy
   OT::Device::copy
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/harfbuzz/harfbuzz.git
     introduced: c828d7bf76dd039be1775edff1d798dbcc10708b
     fixed: 06a1fcb3b47050257f7819eb3d6043cf78ebbac2
+modified: '2021-06-21T06:56:20.464601Z'
+published: '2020-06-24T01:51:11.997638Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20211
-modified: '2021-03-09T04:49:05.942663Z'
-published: '2020-06-24T01:51:11.997638Z'

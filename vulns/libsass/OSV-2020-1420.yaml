@@ -11,7 +11,6 @@ details: |
   Bad-cast to Sass::PreValue from Sass::Unary_Expression
   Sass::SharedImpl<Sass::PreValue>::SharedImpl<Sass::Expression>
   Sass::Parser::parse_ie_keyword_arg
-severity: HIGH
 affects:
   ranges:
   - type: GIT
@@ -24,8 +23,10 @@ affects:
   - 3.6.3
   - 3.6.4
   - 3.6.5
-modified: '2021-05-22T00:05:30.782218Z'
+modified: '2021-06-21T06:56:24.522781Z'
 published: '2020-07-28T00:00:14.887375Z'
+ecosystem_specific:
+  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15896

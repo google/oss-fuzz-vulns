@@ -11,15 +11,16 @@ details: |
   gc_mark_string
   gc_trace
   gs_gc_reclaim
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://gitlab.freedesktop.org/libspectre/libspectre.git
     introduced: unknown:ceeeec8ee480c9cce066c0921665ef647bd5c135
     fixed: 920c30cf1d4353b28266fc91f88b2ae72e0f5e4f
+modified: '2021-06-21T06:56:21.755011Z'
+published: '2020-07-22T00:00:20.220294Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=19780
-modified: '2021-03-09T04:49:06.164259Z'
-published: '2020-07-22T00:00:20.220294Z'

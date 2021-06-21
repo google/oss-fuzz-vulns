@@ -11,7 +11,6 @@ details: |
   ih264_inter_pred_luma_horz_hpel_vert_qpel_ssse3
   ih264d_motion_compensate_mp
   ih264d_decode_recon_tfr_nmb
-severity: HIGH
 affects:
   ranges:
   - type: GIT
@@ -22,8 +21,10 @@ affects:
   - android-r-preview-1
   - platform-tools-29.0.5
   - platform-tools-29.0.6
+modified: '2021-06-21T06:56:22.142045Z'
+published: '2020-07-01T00:00:05.612589Z'
+ecosystem_specific:
+  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18595
-modified: '2021-03-09T04:49:05.850256Z'
-published: '2020-07-01T00:00:05.612589Z'

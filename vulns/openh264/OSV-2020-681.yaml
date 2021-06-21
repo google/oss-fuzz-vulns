@@ -11,15 +11,16 @@ details: |
   WelsDec::SetUnRef
   WelsDec::WelsDelLongFromListSetUnref
   WelsDec::MMCOProcess
-severity: HIGH
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/cisco/openh264.git
     introduced: c185ac351eff0ae277bfe14a3b2ad52e9ed8ab81
     fixed: aef502aca2b912fe24764b02161a61eacdf249ba
+modified: '2021-06-21T06:56:23.793330Z'
+published: '2020-07-01T00:00:24.507688Z'
+ecosystem_specific:
+  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18459
-modified: '2021-03-09T04:49:06.019997Z'
-published: '2020-07-01T00:00:24.507688Z'

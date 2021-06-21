@@ -11,15 +11,16 @@ details: |
   WelsDec::MapColToList0
   WelsDec::PredBDirectTemporal
   WelsDec::WelsDecodeMbCavlcBSlice
-severity: HIGH
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/cisco/openh264.git
     introduced: unknown:70eeb783515dbfee3e0c781d6667838caba5113b
     fixed: 7058df945d4756169b67a1052f25fdc7f0df92ab
+modified: '2021-06-21T06:56:23.969720Z'
+published: '2020-07-22T21:49:42.458446Z'
+ecosystem_specific:
+  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14267
-modified: '2021-03-09T04:49:05.058302Z'
-published: '2020-07-22T21:49:42.458446Z'

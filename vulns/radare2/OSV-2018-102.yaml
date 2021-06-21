@@ -11,15 +11,16 @@ details: |
   r_read_le32
   r_bin_file_get_strings
   r_bin_object_set_items
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/radare/radare2
     introduced: d8269a9e2bacbcfbd76fac63b461cea523460d7c
     fixed: e3de9f0d4f9d6ed86cead11cdd0d6c339e0305e3
+modified: '2021-06-21T06:56:23.103717Z'
+published: '2021-01-13T00:00:44.549063Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11303
-modified: '2021-03-09T04:49:04.817625Z'
-published: '2021-01-13T00:00:44.549063Z'

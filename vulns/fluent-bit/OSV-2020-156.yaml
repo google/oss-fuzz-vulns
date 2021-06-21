@@ -11,7 +11,6 @@ details: |
   flb_unescape_string_utf8
   logfmt_parser
   flb_parser_logfmt_do
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -24,8 +23,10 @@ affects:
     fixed: 0c222db475e5f97c2590b0d3bb7dceee7ecd7f76
   versions:
   - v1.4.3
+modified: '2021-06-21T06:56:24.446104Z'
+published: '2020-06-24T01:51:16.609624Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22132
-modified: '2021-03-09T04:49:05.329250Z'
-published: '2020-06-24T01:51:16.609624Z'

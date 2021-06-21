@@ -11,7 +11,6 @@ details: |
   decode_NXAST_RAW_ENCAP
   ofpact_decode
   ofpacts_decode
-severity: HIGH
 affects:
   ranges:
   - type: GIT
@@ -58,8 +57,10 @@ affects:
   - v2.14.1
   - v2.14.2
   - v2.15.0
+modified: '2021-06-21T06:56:26.352640Z'
+published: '2020-11-27T00:01:16.495329Z'
+ecosystem_specific:
+  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=27851
-modified: '2021-02-24T12:00:59.977945Z'
-published: '2020-11-27T00:01:16.495329Z'

@@ -11,15 +11,16 @@ details: |
   String_clear
   clearStructure
   UA_Array_delete
-severity: HIGH
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/open62541/open62541.git
     introduced: b9225f9f936a48af66c4aeb7e3fd1684e4d3b88b
     fixed: 58a2fdb5b1ad1efafef455d66a9cbfb93c3fae9d
+modified: '2021-06-21T06:56:26.815680Z'
+published: '2020-07-01T00:00:24.168174Z'
+ecosystem_specific:
+  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14567
-modified: '2021-03-09T04:49:06.017215Z'
-published: '2020-07-01T00:00:24.168174Z'

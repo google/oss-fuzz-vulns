@@ -11,15 +11,16 @@ details: |
   gc_mark_grey
   gc_mark_roots
   zend_gc_collect_cycles
-severity: HIGH
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/php/php-src.git
     introduced: 48a34bc1202e9664121c9e9aa004c79ac71af3f5
     fixed: cb0fa99174fa2af6f626509b85845ff599557615
+modified: '2021-06-21T06:56:21.012471Z'
+published: '2020-09-16T00:00:06.911473Z'
+ecosystem_specific:
+  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23350
-modified: '2021-03-09T04:49:05.428266Z'
-published: '2020-09-16T00:00:06.911473Z'

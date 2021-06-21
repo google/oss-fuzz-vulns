@@ -11,15 +11,16 @@ details: |
   mbedtls_nist_kw_wrap
   mbedtls_cipher_auth_encrypt
   cryptofuzz::module::mbedTLS_detail::encrypt_AEAD
-severity: HIGH
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/guidovranken/cryptofuzz
     introduced: b5921574d7ed12ff9ac3015aa919f7a992c14346
     fixed: 8f70e5ffe1c682138e47db23fab22b71b1f35cbb:f3a101679dc4bc73c2a70d37b04b4b3dc048ad00
+modified: '2021-06-21T06:56:21.804805Z'
+published: '2020-09-11T00:00:13.212710Z'
+ecosystem_specific:
+  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25529
-modified: '2021-03-09T04:49:05.408932Z'
-published: '2020-09-11T00:00:13.212710Z'

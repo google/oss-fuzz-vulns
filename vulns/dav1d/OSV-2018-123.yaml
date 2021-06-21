@@ -11,15 +11,16 @@ details: |
   iclip
   wiener_c
   lr_stripe
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://code.videolan.org/videolan/dav1d.git
     introduced: c1b0808c4035bd0d62d7bfd66d0befe220ec1e52
     fixed: be15be35336927caf3da6c10349b89ccf035552f:6d87752bbaa75c80a98db558386e46c59c7bbf6f
+modified: '2021-06-21T06:56:25.651328Z'
+published: '2021-01-13T00:00:55.919718Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11532
-modified: '2021-03-09T04:49:04.828979Z'
-published: '2021-01-13T00:00:55.919718Z'

@@ -11,15 +11,16 @@ details: |
   sctp_fill_hmac_digest_m
   sctp_lowlevel_chunk_output
   sctp_med_chunk_output
-severity: HIGH
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/weinrank/usrsctp
     introduced: 05bea46702687f26a81c41c3fb1fd1dd3d9c0aa1
     fixed: b7e98787c4698521b7adc771ee919a74e83f28ed
+modified: '2021-06-21T06:56:27.952265Z'
+published: '2020-07-01T00:00:22.458848Z'
+ecosystem_specific:
+  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18080
-modified: '2021-03-09T04:49:06.000128Z'
-published: '2020-07-01T00:00:22.458848Z'

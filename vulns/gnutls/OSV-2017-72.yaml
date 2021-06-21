@@ -11,15 +11,16 @@ details: |
   _gnutls_mpi_dprint_size
   _wrap_nettle_pk_encrypt
   _gnutls_gen_rsa_client_kx
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://gitlab.com/gnutls/gnutls.git
     introduced: d246f61b04836c6040fff7936de551ef92529971
     fixed: 73cbbfc551e814f7598e02924f0728e3abff1818:0081a51a3df7ec30da22402fe878be61790ab721
+modified: '2021-06-21T06:56:22.225779Z'
+published: '2021-01-13T21:57:00.941902Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=1494
-modified: '2021-03-09T04:49:04.800655Z'
-published: '2021-01-13T21:57:00.941902Z'

@@ -11,15 +11,16 @@ details: |
   cli_codepage_to_utf8
   cli_vba_readdir_new
   cli_vba_scandir_new
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/Cisco-Talos/clamav-devel.git
     introduced: b7f8440965fef5e03fcedf12c5ed902235ba8124
     fixed: 20490786224f4a8256fb395deb9c05084db91708
+modified: '2021-06-21T06:56:25.379960Z'
+published: '2020-09-18T00:00:05.693053Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23499
-modified: '2021-03-09T04:49:05.438868Z'
-published: '2020-09-18T00:00:05.693053Z'

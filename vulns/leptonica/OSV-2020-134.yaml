@@ -10,15 +10,16 @@ details: |
   Crash state:
   pixFewColorsOctcubeQuantMixed
   colorquant_fuzzer.cc
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/DanBloomberg/leptonica.git
     introduced: 836740fd7829e6e3a92a766b7e559f4136378eb7
     fixed: 5ee24b398bb67666f6d173763eaaedd9c36fb1e5
+modified: '2021-06-21T06:56:20.261645Z'
+published: '2020-06-24T01:51:15.653519Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22140
-modified: '2021-03-09T04:49:05.218022Z'
-published: '2020-06-24T01:51:15.653519Z'

@@ -11,15 +11,16 @@ details: |
   CRYPTO_strdup
   X509V3_add_value
   i2v_GENERAL_NAME
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/openssl/openssl.git
     introduced: 5053a3766a13f40afb3c89f54d1f9a5eae38a3eb
     fixed: aec9667bd19a8ca9bdd519db3a231a95b9e92674
+modified: '2021-06-21T06:56:24.827297Z'
+published: '2020-07-01T00:00:09.812508Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=17715
-modified: '2021-03-09T04:49:05.890080Z'
-published: '2020-07-01T00:00:09.812508Z'

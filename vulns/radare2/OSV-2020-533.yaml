@@ -11,7 +11,6 @@ details: |
   r_utf8_strlen
   getstr
   parse_class
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -21,8 +20,10 @@ affects:
   versions:
   - 3.4.0
   - 3.4.1
+modified: '2021-06-21T06:56:23.115857Z'
+published: '2020-07-01T00:00:15.106987Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13726
-modified: '2021-03-09T04:49:05.939438Z'
-published: '2020-07-01T00:00:15.106987Z'

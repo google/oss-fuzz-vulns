@@ -11,7 +11,6 @@ details: |
   DHT::hide_hots
   LibRaw::dht_interpolate
   LibRaw::dcraw_process
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -22,8 +21,10 @@ affects:
   - 0.20-RC2
   - 0.20.1
   - 0.20.2
+modified: '2021-06-21T06:56:25.778253Z'
+published: '2020-07-28T00:00:36.268160Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23837
-modified: '2021-03-25T00:08:20.961116Z'
-published: '2020-07-28T00:00:36.268160Z'

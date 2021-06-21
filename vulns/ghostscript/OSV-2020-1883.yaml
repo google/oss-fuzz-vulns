@@ -11,7 +11,6 @@ details: |
   s_exD_process
   sreadbuf
   s_process_read_buf
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -23,8 +22,10 @@ affects:
   - ghostpdl-9.52-test-base-4
   - ghostpdl-9.52-test-base-5
   - ghostpdl-9.52-test-base-6
+modified: '2021-06-21T06:56:21.486425Z'
+published: '2020-09-29T00:00:42.068335Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22225
-modified: '2021-03-09T04:49:05.491386Z'
-published: '2020-09-29T00:00:42.068335Z'

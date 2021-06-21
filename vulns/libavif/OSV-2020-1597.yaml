@@ -11,7 +11,6 @@ details: |
   avifDecoderDataFillImageGrid
   avifDecoderNextImage
   avif_decode_fuzzer.cc
-severity: HIGH
 affects:
   ranges:
   - type: GIT
@@ -21,8 +20,10 @@ affects:
   versions:
   - v0.8.0
   - v0.8.1
+modified: '2021-06-21T06:56:27.269621Z'
+published: '2020-08-12T00:00:12.469996Z'
+ecosystem_specific:
+  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24811
-modified: '2021-03-09T04:49:05.347985Z'
-published: '2020-08-12T00:00:12.469996Z'

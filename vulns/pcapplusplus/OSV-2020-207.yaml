@@ -11,15 +11,16 @@ details: |
   pcpp::IPv6Layer::parseExtensions
   pcpp::IPv6Layer::IPv6Layer
   pcpp::Packet::createFirstLayer
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/seladb/PcapPlusPlus
     introduced: 016e90f193d4383b94143d0b2be26408cc32c703:5ef0c6da8c34b5d4155f865e94bdf83cb18fcbad
     fixed: d2dadc4e18dfd924490c529a058eb5276a2ab6c5
+modified: '2021-06-21T06:56:24.579925Z'
+published: '2020-06-24T01:51:18.953301Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22232
-modified: '2021-03-09T04:49:05.593181Z'
-published: '2020-06-24T01:51:18.953301Z'

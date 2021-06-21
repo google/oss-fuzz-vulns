@@ -11,14 +11,15 @@ details: |
   fuzzing::memory::memory_test_msan
   cryptofuzz::ExecutorBase<cryptofuzz::Buffer, cryptofuzz::operation::CMAC>::postp
   cryptofuzz::ExecutorBase<cryptofuzz::Buffer, cryptofuzz::operation::CMAC>::Run
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/guidovranken/cryptofuzz
     introduced: 69c82214652a0a5d2aab9e4ab077a87ffa8057fb
+modified: '2021-06-21T06:56:21.792103Z'
+published: '2020-08-25T00:00:58.570983Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25181
-modified: '2021-03-09T04:51:23.211824Z'
-published: '2020-08-25T00:00:58.570983Z'

@@ -11,15 +11,16 @@ details: |
   rt_read_handler
   sav_read_variable_missing_values
   sav_read_variable_record
-severity: HIGH
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/WizardMac/ReadStat
     introduced: unknown:d1bfd735515803800cb9708e3fca9e5c1e8e7a48
     fixed: 14265e717e48fc877697a27f1bee232116ce21e5
+modified: '2021-06-21T06:56:26.270696Z'
+published: '2020-07-22T21:49:49.305204Z'
+ecosystem_specific:
+  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=12572
-modified: '2021-03-09T04:49:05.104880Z'
-published: '2020-07-22T21:49:49.305204Z'

@@ -11,14 +11,15 @@ details: |
   blosc_d
   do_job
   blosc_run_decompression_with_context
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/Blosc/c-blosc2.git
     introduced: 861ba79f31393dec0a0782ca11cf32cebb6f6610
+modified: '2021-06-21T06:56:25.918871Z'
+published: '2021-03-02T00:01:22.540205Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31556
-modified: '2021-03-09T05:46:38.374747Z'
-published: '2021-03-02T00:01:22.540205Z'

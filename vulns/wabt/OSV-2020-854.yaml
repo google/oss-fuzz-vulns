@@ -8,7 +8,6 @@ details: "OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id
   std::__1::__hash_table<std::__1::__hash_value_type<std::__1::basic_string<char,\
   \ \nstd::__1::__hash_table<std::__1::__hash_value_type<std::__1::basic_string<char,\
   \ \n"
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -24,8 +23,10 @@ affects:
   - 1.0.19
   - gh-actions-test
   - gh-actions-test2
+modified: '2021-06-21T06:56:24.188107Z'
+published: '2020-07-14T22:13:46.858160Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20959
-modified: '2021-03-09T04:49:06.113859Z'
-published: '2020-07-14T22:13:46.858160Z'

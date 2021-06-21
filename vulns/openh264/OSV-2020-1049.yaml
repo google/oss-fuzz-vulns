@@ -11,15 +11,16 @@ details: |
   WelsDec::WelsReorderRefList
   WelsDec::InitRefPicList
   WelsDec::DecodeCurrentAccessUnit
-severity: HIGH
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/cisco/openh264.git
     introduced: unknown:70eeb783515dbfee3e0c781d6667838caba5113b
     fixed: 519b0ff554e9713198bc3b3185da809be42be20c
+modified: '2021-06-21T06:56:23.812093Z'
+published: '2020-07-22T21:49:43.177956Z'
+ecosystem_specific:
+  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14027
-modified: '2021-03-09T04:49:05.061552Z'
-published: '2020-07-22T21:49:43.177956Z'

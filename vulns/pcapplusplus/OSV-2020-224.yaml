@@ -12,15 +12,16 @@ details: |
   std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<ch
   std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<ch
   pcpp::IDnsResource::IDnsResource
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/seladb/PcapPlusPlus
     introduced: 016e90f193d4383b94143d0b2be26408cc32c703:5ef0c6da8c34b5d4155f865e94bdf83cb18fcbad
     fixed: fa76422d457cf58e3f79119772c7f5676da72afa:14a418ed4f9b72a832877dc8330e01259f617bf3
+modified: '2021-06-21T06:56:24.763873Z'
+published: '2020-06-24T01:51:19.717840Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23038
-modified: '2021-03-09T04:49:05.737012Z'
-published: '2020-06-24T01:51:19.717840Z'

@@ -11,7 +11,6 @@ details: |
   MipsAsmParser::isPicAndNotNxxAbi
   MipsAsmParser::processInstruction
   MipsAsmParser::MatchAndEmitInstruction
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -23,8 +22,10 @@ affects:
   - 0.9.2-rc1
   - 0.9.2-rc1.post1
   - 0.9.2-rc1.post2
+modified: '2021-06-21T06:56:24.133299Z'
+published: '2020-07-14T05:37:37.559643Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22778
-modified: '2021-03-09T04:49:06.081929Z'
-published: '2020-07-14T05:37:37.559643Z'

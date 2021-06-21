@@ -11,15 +11,16 @@ details: |
   ASN1_get_object
   asn1_check_tlen
   asn1_item_ex_d2i
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/libressl-portable/portable.git
     introduced: unknown:4ea2a01a0d2cc889e95316f51c7a36f8f158df44
     fixed: 2f7827344a0234320c7ad8d2fc2418e9d8a586c9
+modified: '2021-06-21T06:56:24.869669Z'
+published: '2020-07-22T21:50:02.220943Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13803
-modified: '2021-03-09T04:49:05.181583Z'
-published: '2020-07-22T21:50:02.220943Z'

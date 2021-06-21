@@ -11,15 +11,16 @@ details: |
   ndpi_check_dga_name
   ndpi_search_dns
   check_ndpi_udp_flow_func
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/ntop/nDPI.git
     introduced: 55364ef0b4ef629630a663dc7b05d83c1b662067
     fixed: 46d96e7f32a799ae57400d82e4c485e4ef9771ab
+modified: '2021-06-21T06:56:22.855507Z'
+published: '2020-06-24T01:51:09.009491Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23524
-modified: '2021-03-09T04:49:05.866813Z'
-published: '2020-06-24T01:51:09.009491Z'

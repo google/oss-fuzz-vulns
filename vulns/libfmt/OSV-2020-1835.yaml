@@ -11,15 +11,16 @@ details: |
   fmt::v7::detail::buffer<char>::push_back
   std::__1::back_insert_iterator<fmt::v7::detail::buffer<char> >::operator=
   fmt::v7::detail::buffer_appender<char> std::__1::__copy_constexpr<char const*, f
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/fmtlib/fmt.git
     introduced: 16410056bf0e6e8800c9ac4c231be3f1a688f8b3
     fixed: c156093ffd99b0689af3826f3aa04e7db97cc543
+modified: '2021-06-21T06:56:26.962655Z'
+published: '2020-09-25T00:00:10.846065Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25884
-modified: '2021-03-09T04:49:05.465459Z'
-published: '2020-09-25T00:00:10.846065Z'

@@ -11,15 +11,16 @@ details: |
   OPENSSL_strlcpy
   OPENSSL_strlcat
   ERR_add_error_vdata
-severity: HIGH
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/openssl/openssl.git
     introduced: 10f8b36874fca928c3f41834babac8ee94dd3f09
     fixed: 036913b1076da41f257c640a5e6230476c647eff
+modified: '2021-06-21T06:56:24.808074Z'
+published: '2020-07-01T00:00:06.528477Z'
+ecosystem_specific:
+  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=16107
-modified: '2021-03-09T04:49:05.859492Z'
-published: '2020-07-01T00:00:06.528477Z'

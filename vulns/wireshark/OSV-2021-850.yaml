@@ -11,15 +11,16 @@ details: |
   proto_item_append_text
   dissect_pfcp_3gpp_enterprise_ies
   call_dissector_work
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://gitlab.com/wireshark/wireshark.git
     introduced: 9e8e4f3ed3fcfbbdaaa63df067e324a2c264aa52
     fixed: b86ec10ca4e85d40e8103a0f7779b27ab65e4ccf
-modified: '2021-06-11T00:01:24.262261Z'
+modified: '2021-06-21T06:56:24.048924Z'
 published: '2021-06-11T00:01:24.261978Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=35102

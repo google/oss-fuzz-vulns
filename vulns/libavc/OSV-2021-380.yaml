@@ -11,7 +11,6 @@ details: |
   ih264d_fill_bs1_16x16mb_pslice
   ih264d_compute_bs_non_mbaff_thread
   ih264d_recon_deblk_slice
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -24,8 +23,10 @@ affects:
   - platform-tools-31.0.1
   - platform-tools-31.0.2
   - android-s-beta-2
-modified: '2021-06-10T00:02:58.345237Z'
+modified: '2021-06-21T06:56:22.165324Z'
 published: '2021-02-12T00:02:40.784817Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30801

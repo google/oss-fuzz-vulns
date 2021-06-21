@@ -11,15 +11,16 @@ details: |
   arrow::internal::ValidateUTF8
   arrow::internal::ValidateArrayFullImpl::ValidateWithType
   arrow::internal::ValidateArrayFullImpl::Visit
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/apache/arrow.git
     introduced: 7be266be98d08214ef4b3f067059b6e6a8a6e5c0
     fixed: be13bf50fe00f0f4c2d065a61db189d6c59b1f7b
+modified: '2021-06-21T06:56:19.731852Z'
+published: '2020-11-23T00:00:07.508800Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=27731
-modified: '2021-03-09T04:49:05.702880Z'
-published: '2020-11-23T00:00:07.508800Z'

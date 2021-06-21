@@ -11,7 +11,6 @@ details: |
   SetExtraInfo20
   CmdExtract::ExtractCurrentFile
   CmdExtract::ExtractArchive
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -24,8 +23,10 @@ affects:
   - 5.6.1.4
   - 5.6.1.5
   - 5.6.1.7
+modified: '2021-06-21T06:56:22.071070Z'
+published: '2021-01-13T21:56:31.829117Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=4408
-modified: '2021-03-09T04:49:04.796125Z'
-published: '2021-01-13T21:56:31.829117Z'

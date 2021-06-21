@@ -11,7 +11,6 @@ details: |
   mk_string_copy_substr
   mk_rconf_meta_add
   mk_rconf_read
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -36,8 +35,10 @@ affects:
   - v1.7.6
   - v1.7.7
   - v1.7.8
-modified: '2021-06-03T01:59:46.095894Z'
+modified: '2021-06-21T06:56:24.472454Z'
 published: '2020-12-05T00:00:48.941441Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=28277

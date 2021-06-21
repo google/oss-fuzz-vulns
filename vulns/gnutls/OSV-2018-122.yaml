@@ -11,7 +11,6 @@ details: |
   gnutls_pkcs12_get_bag
   gnutls_pkcs12_simple_parse
   gnutls_pkcs12_key_parser_fuzzer.c
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -35,8 +34,10 @@ affects:
   - gnutls_3_6_7
   - gnutls_3_6_8
   - gnutls_3_6_9
+modified: '2021-06-21T06:56:22.285933Z'
+published: '2021-01-13T00:00:55.785646Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=10136
-modified: '2021-03-09T04:49:04.828346Z'
-published: '2021-01-13T00:00:55.785646Z'

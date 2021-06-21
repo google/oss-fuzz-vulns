@@ -11,7 +11,6 @@ details: |
   logfmt_parser
   flb_parser_logfmt_do
   parse_logfmt_fuzzer.c
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -24,8 +23,10 @@ affects:
     fixed: b5571d0953cfd323880e7f4fe3c8563fa59ce85e
   versions:
   - v1.4.3
+modified: '2021-06-21T06:56:24.254835Z'
+published: '2020-06-24T01:51:13.861732Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21953
-modified: '2021-03-09T04:49:06.173621Z'
-published: '2020-06-24T01:51:13.861732Z'

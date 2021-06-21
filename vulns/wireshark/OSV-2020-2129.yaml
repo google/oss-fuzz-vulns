@@ -11,7 +11,6 @@ details: |
   wmem_simple_free_all
   wmem_leave_packet_scope
   fuzzshark.c
-severity: HIGH
 affects:
   ranges:
   - type: GIT
@@ -38,8 +37,10 @@ affects:
   - wireshark-3.4.1
   - wireshark-3.4.2
   - wireshark-3.4.3
+modified: '2021-06-21T06:56:24.015549Z'
+published: '2020-11-05T00:00:51.605889Z'
+ecosystem_specific:
+  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26952
-modified: '2021-03-09T04:49:05.626482Z'
-published: '2020-11-05T00:00:51.605889Z'

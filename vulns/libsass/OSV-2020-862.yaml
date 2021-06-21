@@ -12,7 +12,6 @@ details: |
   std::__1::vector<std::__1::vector<Sass::Extension, std::__1::allocator<Sass::Ext
   Sass::Extender::extendCompound
   Sass::Extender::extendComplex
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -23,8 +22,10 @@ affects:
   - 3.6.3
   - 3.6.4
   - 3.6.5
-modified: '2021-05-22T00:05:36.346499Z'
+modified: '2021-06-21T06:56:24.501091Z'
 published: '2020-07-14T22:13:48.731457Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21223

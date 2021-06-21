@@ -9,15 +9,16 @@ details: "OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id
   \ OT::IntType<unsigned short, 2u>, true>* hb_serialize_co\nOT::OffsetTo<OT::Anchor,\
   \ OT::IntType<unsigned short, 2u>, true>* hb_serialize_co\nbool OT::AnchorMatrix::serialize<hb_filter_iter_t<hb_range_iter_t<unsigned\
   \ int, \n"
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/harfbuzz/harfbuzz.git
     introduced: c7d232ce4e8eccdeaf8fc4bb4b73818b581d3fb9
     fixed: 5ca353a2d026f655af61ae159adcaeace1fdb09c
+modified: '2021-06-21T06:56:20.531476Z'
+published: '2021-02-14T00:01:08.088962Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30908
-modified: '2021-02-27T00:08:06.585243Z'
-published: '2021-02-14T00:01:08.088962Z'

@@ -11,7 +11,6 @@ details: |
   perfetto::trace_processor::ClockTracker::ConvertSlowpath
   perfetto::trace_processor::ClockTracker::Convert
   perfetto::trace_processor::ClockTracker::ToTraceTime
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -66,8 +65,10 @@ affects:
   - android-vts-11.0_r3
   - v5.0
   - v5.1
+modified: '2021-06-21T06:56:27.394177Z'
+published: '2020-07-10T00:00:21.254899Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23149
-modified: '2021-03-09T04:49:06.065972Z'
-published: '2020-07-10T00:00:21.254899Z'

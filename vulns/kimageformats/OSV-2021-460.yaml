@@ -11,7 +11,6 @@ details: |
   Op_to_sdr_planes::convert_colorspace
   heif::ColorConversionPipeline::convert_image
   heif::convert_colorspace
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -24,8 +23,10 @@ affects:
   - v5.81.0
   - v5.81.0-rc1
   - v5.81.0-rc2
-modified: '2021-03-09T05:46:25.263880Z'
+modified: '2021-06-21T06:56:27.820629Z'
 published: '2021-03-01T00:00:11.393443Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31495

@@ -11,7 +11,6 @@ details: |
   H5T__bit_find
   H5T__conv_i_i
   H5T_convert
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -21,8 +20,10 @@ affects:
   - v1.5.18
   - v1.5.19
   - v1.5.20
+modified: '2021-06-21T06:56:28.190501Z'
+published: '2020-07-14T05:37:33.311187Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23887
-modified: '2021-03-09T04:51:31.615411Z'
-published: '2020-07-14T05:37:33.311187Z'

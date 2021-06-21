@@ -11,15 +11,16 @@ details: |
   ldl_he_p
   ldn_he_p
   flatview_write_continue
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://git.qemu.org/git/qemu.git
     introduced: 83734919c408ba02adb6ea616d68cd1a72837fbe
     fixed: 2c6df987965729df702fa12f79564b5f76e3fa4e:d0dddab40e472ba62b5f43f11cc7dba085dabe71
+modified: '2021-06-21T06:56:20.831458Z'
+published: '2021-01-04T00:00:09.741346Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29181
-modified: '2021-03-09T12:01:01.514152Z'
-published: '2021-01-04T00:00:09.741346Z'

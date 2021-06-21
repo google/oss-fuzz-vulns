@@ -11,7 +11,6 @@ details: |
   H5MM_memcpy
   H5VM_memcpyvv
   H5D__compact_readvv
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -21,8 +20,10 @@ affects:
   versions:
   - v1.5.18
   - v1.5.19
+modified: '2021-06-21T06:56:28.107648Z'
+published: '2021-02-05T00:01:09.038933Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30250
-modified: '2021-03-10T12:00:46.311644Z'
-published: '2021-02-05T00:01:09.038933Z'

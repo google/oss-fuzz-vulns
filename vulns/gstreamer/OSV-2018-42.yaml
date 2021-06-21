@@ -11,7 +11,6 @@ details: |
   tap_type_find
   gst_type_find_factory_call_function
   gst_type_find_helper_for_data
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -24,8 +23,10 @@ affects:
   - 1.14.3
   - 1.14.4
   - 1.14.5
+modified: '2021-06-21T06:56:21.194944Z'
+published: '2021-01-13T00:00:23.803331Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=8159
-modified: '2021-03-09T04:49:04.985970Z'
-published: '2021-01-13T00:00:23.803331Z'

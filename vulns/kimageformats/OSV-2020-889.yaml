@@ -11,7 +11,6 @@ details: |
   RGBTOHLS
   XCFImageFormat::mergeRGBToRGB
   XCFImageFormat::mergeLayerIntoImage
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -48,8 +47,10 @@ affects:
   - v5.81.0
   - v5.82.0-rc1
   - v5.82.0-rc2
-modified: '2021-05-03T00:06:07.375253Z'
+modified: '2021-06-21T06:56:27.794800Z'
 published: '2020-07-16T00:00:23.898514Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22740

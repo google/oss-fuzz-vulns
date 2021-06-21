@@ -11,15 +11,16 @@ details: |
   frame_get_vlmetalayers
   frame_to_schunk
   blosc2_schunk_from_buffer
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/Blosc/c-blosc2.git
     introduced: 861ba79f31393dec0a0782ca11cf32cebb6f6610
     fixed: ce9aa2247006ed182dabb922bd3536b13375c4cf
+modified: '2021-06-21T06:56:25.898181Z'
+published: '2021-04-10T00:00:30.009687Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=33071
-modified: '2021-04-10T00:00:30.009960Z'
-published: '2021-04-10T00:00:30.009687Z'

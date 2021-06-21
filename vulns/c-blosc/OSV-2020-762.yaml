@@ -11,15 +11,16 @@ details: |
   blosclz_compress
   blosc_c
   do_job
-severity: HIGH
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/Blosc/c-blosc.git
     introduced: 01df770ec847013b52d70b3a41490a5b8b2cddbd
     fixed: e3fdd3e506a23ec66d9f3fe2fe346e4a03b1787a
+modified: '2021-06-21T06:56:22.417850Z'
+published: '2020-07-09T00:00:22.344814Z'
+ecosystem_specific:
+  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23794
-modified: '2021-03-09T04:49:06.062530Z'
-published: '2020-07-09T00:00:22.344814Z'

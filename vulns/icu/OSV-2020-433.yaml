@@ -11,7 +11,6 @@ details: |
   icu_64::UCharsTrie::branchNext
   icu_64::CollationIterator::nextCE32FromContraction
   icu_64::CollationIterator::appendCEsFromCE32
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -26,8 +25,10 @@ affects:
   - release-66-rc
   - release-67-1
   - release-67-rc
+modified: '2021-06-21T06:56:21.385294Z'
+published: '2020-07-01T00:00:09.276939Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15580
-modified: '2021-03-09T04:49:05.885050Z'
-published: '2020-07-01T00:00:09.276939Z'

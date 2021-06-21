@@ -11,7 +11,6 @@ details: |
   TIFFReadRGBATileExt
   cv::TiffDecoder::readData
   cv::imread
-severity: HIGH
 affects:
   ranges:
   - type: GIT
@@ -22,8 +21,10 @@ affects:
   - 4.0.1
   - 4.1.0
   - 4.1.0-openvino
+modified: '2021-06-21T06:56:19.289016Z'
+published: '2020-07-22T21:50:00.758042Z'
+ecosystem_specific:
+  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14185
-modified: '2021-03-09T04:49:05.172872Z'
-published: '2020-07-22T21:50:00.758042Z'

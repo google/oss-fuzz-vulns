@@ -11,14 +11,15 @@ details: |
   AK::ByteBuffer::overwrite
   Crypto::PK::RSA::parse_rsa_key
   FuzzRSAKeyParsing.cpp
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/SerenityOS/serenity
     introduced: ed9ab38b3b074f188ac739c132335dac2f0f6cb8
+modified: '2021-06-21T06:56:19.797473Z'
+published: '2021-03-06T00:00:07.530011Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31698
-modified: '2021-03-09T04:51:33.689588Z'
-published: '2021-03-06T00:00:07.530011Z'

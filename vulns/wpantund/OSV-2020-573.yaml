@@ -11,15 +11,16 @@ details: |
   (__has_construct<std::__1::allocator<unsigned
   std::__1::enable_if<__is_forward_iterator<unsigned char const*>::value, void>::t
   std::__1::vector<unsigned char, std::__1::allocator<unsigned char> >::vector<uns
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/openthread/wpantund
     introduced: f09304d02abf3e2c8147b44bbdda7592d1d119c9
     fixed: f19f0b8169c3daa60e37b0293a2d4be8b768e5cc
+modified: '2021-06-21T06:56:21.320758Z'
+published: '2020-07-01T00:00:17.789046Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14479
-modified: '2021-03-09T04:49:05.960347Z'
-published: '2020-07-01T00:00:17.789046Z'

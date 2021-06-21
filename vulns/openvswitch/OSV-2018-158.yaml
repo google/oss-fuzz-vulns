@@ -11,15 +11,16 @@ details: |
   ofpbuf_insert
   nx_put_raw
   nx_put_match
-severity: HIGH
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/openvswitch/ovs.git
     introduced: aa1a0f1aaf6a772327b712d0507735af5b8c791d
     fixed: 39976b99178eaa4862c43eaf00959f2653a01a6f
+modified: '2021-06-21T06:56:26.296591Z'
+published: '2021-01-13T00:01:07.295311Z'
+ecosystem_specific:
+  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11253
-modified: '2021-03-09T04:49:04.847363Z'
-published: '2021-01-13T00:01:07.295311Z'

@@ -11,7 +11,6 @@ details: |
   Dasher::Dasher
   bool drawLineAA<&
   QCosmeticStroker::drawPath
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -162,10 +161,12 @@ affects:
   - v5.9.7
   - v5.9.8
   - v5.9.9
+modified: '2021-06-21T06:56:23.289926Z'
+published: '2020-08-29T00:00:13.673013Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25243
 - type: WEB
   url: https://codereview.qt-project.org/c/qt/qtbase/+/316936
-modified: '2021-04-22T04:48:40.263080Z'
-published: '2020-08-29T00:00:13.673013Z'

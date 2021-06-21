@@ -11,7 +11,6 @@ details: |
   _zend_is_inconsistent
   zend_hash_find
   zend_hash_find_ptr
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -26,8 +25,10 @@ affects:
   - php-8.0.0RC5
   - php-8.0.0beta4
   - php-8.0.0rc1
+modified: '2021-06-21T06:56:20.907531Z'
+published: '2020-12-04T00:01:16.269909Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=28129
-modified: '2021-03-09T04:49:05.731540Z'
-published: '2020-12-04T00:01:16.269909Z'

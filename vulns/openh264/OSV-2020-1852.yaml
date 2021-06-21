@@ -11,15 +11,16 @@ details: |
   WelsCommon::WelsFree
   WelsCommon::CMemoryAlign::WelsFree
   WelsDec::FreePicture
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/cisco/openh264.git
     introduced: 66ef706acd55b0b8daec32ca299d2586a1f473c9
     fixed: f1bb6d3acb057785b4d89e8228e23cc4fc9caa12
+modified: '2021-06-21T06:56:23.872446Z'
+published: '2020-09-26T00:00:38.959174Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25939
-modified: '2021-03-09T04:49:05.474530Z'
-published: '2020-09-26T00:00:38.959174Z'

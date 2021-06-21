@@ -11,7 +11,6 @@ details: |
   vcf_parse_format
   vcf_parse
   vcf_read
-severity: HIGH
 affects:
   ranges:
   - type: GIT
@@ -22,8 +21,10 @@ affects:
   - '1.10'
   - 1.10.1
   - 1.10.2
+modified: '2021-06-21T06:56:19.927999Z'
+published: '2020-07-22T00:00:25.417163Z'
+ecosystem_specific:
+  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24097
-modified: '2021-03-09T04:49:06.171252Z'
-published: '2020-07-22T00:00:25.417163Z'

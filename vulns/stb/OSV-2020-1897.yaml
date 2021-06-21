@@ -11,15 +11,16 @@ details: |
   stbi__tga_load
   stbi__load_main
   stbi__load_and_postprocess_8bit
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/nothings/stb.git
     introduced: f54acd4e13430c5122cab4ca657705c84aa61b08
     fixed: 9cd6cdc0e55ec3d4c002313fd5f0e6b255e8e06c
+modified: '2021-06-21T06:56:26.413662Z'
+published: '2020-10-02T00:00:10.675680Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22651
-modified: '2021-03-09T04:49:05.498538Z'
-published: '2020-10-02T00:00:10.675680Z'

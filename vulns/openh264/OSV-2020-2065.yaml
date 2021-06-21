@@ -11,14 +11,15 @@ details: |
   WelsDec::NeedErrorCon
   WelsDec::CheckAndFinishLastPic
   WelsDecodeBs
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/cisco/openh264.git
     introduced: 66ef706acd55b0b8daec32ca299d2586a1f473c9
+modified: '2021-06-21T06:56:23.836325Z'
+published: '2020-10-14T00:00:29.948003Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26291
-modified: '2021-03-09T05:47:02.020789Z'
-published: '2020-10-14T00:00:29.948003Z'

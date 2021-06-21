@@ -11,15 +11,16 @@ details: |
   fuzzshark_ip_proto-udp
   g_hash_table_lookup
   dissect_tls
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://gitlab.com/wireshark/wireshark.git
     introduced: ede7be3440689cee51489361934704467f2b2ffb
     fixed: 83220acb484e1ae615602c57c4f4eafaecbf4a5d
+modified: '2021-06-21T06:56:24.095672Z'
+published: '2020-07-01T00:00:05.383535Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=16442
-modified: '2021-03-09T04:49:05.847451Z'
-published: '2020-07-01T00:00:05.383535Z'

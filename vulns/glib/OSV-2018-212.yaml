@@ -11,7 +11,6 @@ details: |
   token_stream_prepare
   parse
   typedecl_parse
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -20,8 +19,10 @@ affects:
     fixed: 297941e049f819771f0ce0ba5623a6e60da9c208
   versions:
   - 2.57.3
+modified: '2021-06-21T06:56:20.126941Z'
+published: '2021-01-13T00:01:26.134181Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=9805
-modified: '2021-03-09T04:49:04.878541Z'
-published: '2021-01-13T00:01:26.134181Z'

@@ -11,15 +11,16 @@ details: |
   asn1_parse_oid
   asn1_get_oid
   x509_parse_ext_certificate_policies
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: git://w1.fi/srv/git/hostap.git
     introduced: d165b32f388735ad921bd662eee2cafb56d4ee24
     fixed: 76162b18280b174cd5e7101c9678f69785409fa3
+modified: '2021-06-21T06:56:21.704729Z'
+published: '2020-06-24T01:51:15.551172Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20363
-modified: '2021-03-09T04:49:05.207716Z'
-published: '2020-06-24T01:51:15.551172Z'

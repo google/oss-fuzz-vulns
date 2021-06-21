@@ -12,7 +12,6 @@ details: |
   void edge_filtering_chroma_internal<unsigned char>
   edge_filtering_chroma
   thread_task_deblock_CTBRow::work
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -29,8 +28,10 @@ affects:
   - v5.82.0-rc2
   - v5.83.0
   - v5.83.0-rc1
-modified: '2021-03-16T00:00:19.177131Z'
+modified: '2021-06-21T06:56:27.840351Z'
 published: '2021-03-16T00:00:19.176877Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=32059

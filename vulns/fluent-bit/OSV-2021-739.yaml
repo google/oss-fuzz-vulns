@@ -11,7 +11,6 @@ details: |
   flb_sds_cat
   flb_ra_translate
   record_ac_fuzzer.c
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -36,8 +35,10 @@ affects:
   - v1.7.2
   - v1.7.3
   - v1.7.4
-modified: '2021-05-08T00:01:15.452934Z'
+modified: '2021-06-21T06:56:24.307643Z'
 published: '2021-05-08T00:01:15.452663Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34025

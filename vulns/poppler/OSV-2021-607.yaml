@@ -11,7 +11,6 @@ details: |
   TextPool::getPool
   TextPage::coalesce
   TextOutputDev::endPage
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -48,8 +47,10 @@ affects:
   - poppler-21.02.0
   - poppler-21.03.0
   - poppler-21.04.0
+modified: '2021-06-21T06:56:23.517930Z'
+published: '2021-04-07T00:01:06.549627Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=32952
-modified: '2021-04-07T00:01:06.549910Z'
-published: '2021-04-07T00:01:06.549627Z'

@@ -11,7 +11,6 @@ details: |
   perfetto::trace_processor::FuchsiaTraceParser::ParseTracePacket
   perfetto::trace_processor::TraceSorter::SortAndExtractEventsBeyondWindow
   perfetto::trace_processor::TraceProcessorImpl::NotifyEndOfFile
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -94,8 +93,10 @@ affects:
   - android-vts-10.0_r7
   - platform-tools-29.0.1
   - platform-tools-29.0.2
+modified: '2021-06-21T06:56:27.359168Z'
+published: '2020-07-01T00:00:10.213693Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14752
-modified: '2021-03-09T04:49:05.893673Z'
-published: '2020-07-01T00:00:10.213693Z'

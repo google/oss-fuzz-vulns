@@ -11,7 +11,6 @@ details: |
   bn_sub_words
   bn_reduce_once
   bn_from_montgomery_in_place
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -22,8 +21,10 @@ affects:
   - fips-20180730
   - fips-20190808
   - fips-android-20191020
+modified: '2021-06-21T06:56:20.176069Z'
+published: '2021-01-13T00:00:05.629092Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=8654
-modified: '2021-03-09T04:49:04.832377Z'
-published: '2021-01-13T00:00:05.629092Z'

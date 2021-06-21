@@ -11,15 +11,16 @@ details: |
   CRYPTO_DOWN_REF
   DH_free
   evp_pkey_free_it
-severity: HIGH
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/openssl/openssl.git
     introduced: ada66e78ef535fe80e422bbbadffe8e7863d457c
     fixed: fe56d5951f0b42fd3ff1cf42a96d07f06f9692bc
+modified: '2021-06-21T06:56:24.840750Z'
+published: '2020-06-24T01:51:10.908381Z'
+ecosystem_specific:
+  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20816
-modified: '2021-03-09T04:49:05.807418Z'
-published: '2020-06-24T01:51:10.908381Z'

@@ -11,15 +11,16 @@ details: |
   WelsDec::SetUnRef
   WelsDec::SlidingWindow
   WelsDec::WelsMarkAsRef
-severity: HIGH
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/cisco/openh264.git
     introduced: c185ac351eff0ae277bfe14a3b2ad52e9ed8ab81
     fixed: 2c13955d0649b2afc575bc5416dcedeffc8c01ec
+modified: '2021-06-21T06:56:23.842205Z'
+published: '2020-07-01T00:00:23.823813Z'
+ecosystem_specific:
+  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18743
-modified: '2021-03-09T04:49:06.014618Z'
-published: '2020-07-01T00:00:23.823813Z'

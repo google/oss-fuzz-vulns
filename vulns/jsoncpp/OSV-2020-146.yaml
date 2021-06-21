@@ -11,7 +11,6 @@ details: |
   Json::OurReader::parse
   Json::OurCharReader::parse
   fuzz.cpp
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -24,8 +23,10 @@ affects:
     fixed: 3228be44b0b33a1f14fb343bb5b653a8a33d611a
   versions:
   - 00.11.0
+modified: '2021-06-21T06:56:23.251430Z'
+published: '2020-06-24T01:51:16.175015Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21916
-modified: '2021-03-09T04:49:05.275853Z'
-published: '2020-06-24T01:51:16.175015Z'

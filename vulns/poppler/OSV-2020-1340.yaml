@@ -11,7 +11,6 @@ details: |
   Gfx::fillPatch
   Gfx::doPatchMeshShFill
   Gfx::doShadingPatternFill
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -34,8 +33,10 @@ affects:
   - poppler-0.76.0
   - poppler-0.76.1
   - poppler-0.77.0
+modified: '2021-06-21T06:56:23.508508Z'
+published: '2020-07-22T21:50:07.878108Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15395
-modified: '2021-03-09T04:49:05.218560Z'
-published: '2020-07-22T21:50:07.878108Z'

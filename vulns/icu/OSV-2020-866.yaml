@@ -11,7 +11,6 @@ details: |
   icu_64::UCharsTrie::branchNext
   icu_64::UCharsTrie::nextImpl
   icu_64::UCharsTrie::next
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -37,8 +36,10 @@ affects:
   - release-69-rc
   - release-69-1
   - cldr/2021-06-15
-modified: '2021-06-16T00:31:06.200996Z'
+modified: '2021-06-21T06:56:21.420991Z'
 published: '2020-07-14T22:13:50.019093Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15671

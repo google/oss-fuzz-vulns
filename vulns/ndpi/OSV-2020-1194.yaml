@@ -11,15 +11,16 @@ details: |
   ndpi_search_mail_smtp_tcp
   check_ndpi_tcp_flow_func
   ndpi_detection_process_packet
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/ntop/nDPI.git
     introduced: unknown:e695dd6eade754b2d50bdf297ca8bdc4105f93ff
     fixed: d4ae8a5f164167ef4fcf5b76b743e92b9e76d9dd
+modified: '2021-06-21T06:56:22.582387Z'
+published: '2020-07-22T21:49:55.131761Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20563
-modified: '2021-03-09T04:49:05.139631Z'
-published: '2020-07-22T21:49:55.131761Z'

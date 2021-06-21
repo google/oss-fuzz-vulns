@@ -11,15 +11,16 @@ details: |
   decode_bit_string
   sc_asn1_print_bit_string
   print_tags_recursive
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/OpenSC/OpenSC
     introduced: unknown:b0241eefa1b47f1420456f5dbc43564d59961a54
     fixed: 9b4b080be788a602fa8f01ac8d7e29cdaad07902
+modified: '2021-06-21T06:56:27.151617Z'
+published: '2020-07-22T21:49:40.221914Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=16614
-modified: '2021-03-09T04:49:05.045098Z'
-published: '2020-07-22T21:49:40.221914Z'

@@ -11,15 +11,16 @@ details: |
   allocate_field
   decode_pointer_field
   decode_field
-severity: HIGH
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/nanopb/nanopb
     introduced: a5988446e6a257a1c968f8a7a6366f5101d85413
     fixed: cf507d1b1e71b45136ca2bd7d37b7b4958443cd1
+modified: '2021-06-21T06:56:20.194837Z'
+published: '2020-08-02T00:01:18.300186Z'
+ecosystem_specific:
+  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24580
-modified: '2021-03-09T04:49:05.332609Z'
-published: '2020-08-02T00:01:18.300186Z'

@@ -11,15 +11,16 @@ details: |
   simdjson::internal::decimal_right_shift
   simdjson::internal::adjusted_mantissa simdjson::internal::compute_float<simdjson
   simdjson::internal::adjusted_mantissa simdjson::internal::parse_long_mantissa<si
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/simdjson/simdjson.git
     introduced: 562d4f4f5855c1b7c8040df24c45ea98c26cab78
     fixed: a8bf10ea5a0ea2553f07ac46744666c94d0085fc
+modified: '2021-06-21T06:56:19.197032Z'
+published: '2020-10-31T00:00:09.494294Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26773
-modified: '2021-03-09T04:49:05.614579Z'
-published: '2020-10-31T00:00:09.494294Z'

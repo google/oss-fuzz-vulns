@@ -11,15 +11,16 @@ details: |
   DeblockChromaLt42_c
   DeblockChromaLt4V2_c
   WelsDec::FilteringEdgeChromaH
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/cisco/openh264.git
     introduced: f1bb6d3acb057785b4d89e8228e23cc4fc9caa12
     fixed: b52786888ddce9d6bc06b7825ba9bffc65924e0c
+modified: '2021-06-21T06:56:23.786710Z'
+published: '2020-11-01T00:00:43.079464Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26758
-modified: '2021-02-26T00:06:25.076509Z'
-published: '2020-11-01T00:00:43.079464Z'

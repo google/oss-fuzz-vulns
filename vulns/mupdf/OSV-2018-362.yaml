@@ -11,7 +11,6 @@ details: |
   fz_unpack_tile
   fz_decomp_image_from_stream
   compressed_image_get_pixmap
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -21,8 +20,10 @@ affects:
   versions:
   - 1.14.0
   - 1.14.0-rc1
+modified: '2021-06-21T06:56:19.127149Z'
+published: '2021-01-15T00:00:57.147547Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11022
-modified: '2021-03-09T04:49:04.955462Z'
-published: '2021-01-15T00:00:57.147547Z'

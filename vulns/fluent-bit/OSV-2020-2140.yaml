@@ -11,7 +11,6 @@ details: |
   flb_free
   flb_http_client_destroy
   flb_http_client
-severity: HIGH
 affects:
   ranges:
   - type: GIT
@@ -22,8 +21,10 @@ affects:
     repo: https://github.com/fluent/fluent-bit/
     introduced: 13793381ff2b17544626372252900f85d45c02f3
     fixed: 89a2486c83daaf0c63c53549ae6311057128da6a
+modified: '2021-06-21T06:56:24.321504Z'
+published: '2020-11-08T00:00:51.289278Z'
+ecosystem_specific:
+  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=27279
-modified: '2021-03-09T04:49:05.682884Z'
-published: '2020-11-08T00:00:51.289278Z'

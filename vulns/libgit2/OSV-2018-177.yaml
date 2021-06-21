@@ -11,15 +11,16 @@ details: |
   prefixcmp
   git__prefixcmp
   git_commit__parse_raw
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/libgit2/libgit2
     introduced: a1d5fd0630c6f7e3ac23bc9e13ba33901dfddba4
     fixed: cb23c3efd22d34db279ceb39cc312473761db5ed
+modified: '2021-06-21T06:56:21.937446Z'
+published: '2021-01-13T00:01:13.296112Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11007
-modified: '2021-03-09T04:49:04.857220Z'
-published: '2021-01-13T00:01:13.296112Z'

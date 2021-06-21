@@ -11,15 +11,16 @@ details: |
   stdalloc__strdup
   parse_hunk_body
   parse_patch_hunks
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/libgit2/libgit2
     introduced: b246bed5ab83035d8aef95f1b7ff10dd746db7cb
     fixed: 6c6c15e935091a33f83d8de4ee5b0640339b2b89
+modified: '2021-06-21T06:56:21.931488Z'
+published: '2020-07-01T00:00:08.690856Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18356
-modified: '2021-03-09T04:49:05.879775Z'
-published: '2020-07-01T00:00:08.690856Z'

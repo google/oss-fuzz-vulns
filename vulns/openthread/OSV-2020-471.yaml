@@ -11,15 +11,16 @@ details: |
   ot::Cli::Interpreter::ProcessService
   ot::Cli::Interpreter::ProcessLine
   ot::Cli::Uart::ProcessCommand
-severity: HIGH
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/openthread/openthread
     introduced: f9eb4cb51722ef979afc6f9e3df5f7e6c9e7a75b
     fixed: 249bc598748ad08a98b08995698669613594e54b
+modified: '2021-06-21T06:56:25.134145Z'
+published: '2020-07-01T00:00:11.530819Z'
+ecosystem_specific:
+  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=12642
-modified: '2021-03-09T04:49:05.906712Z'
-published: '2020-07-01T00:00:11.530819Z'

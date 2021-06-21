@@ -11,15 +11,16 @@ details: |
   acommon::DecodeDirect<unsigned short>::decode
   acommon::Convert::convert
   aspell_speller_suggest
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/gnuaspell/aspell.git
     introduced: e0646f9b063b23754951f1254f1ecb7af8ca36f3
     fixed: de29341638833ba7717bd6b5e6850998454b044b
+modified: '2021-06-21T06:56:20.825329Z'
+published: '2020-07-01T00:00:16.159762Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=16531
-modified: '2021-03-09T04:49:05.947151Z'
-published: '2020-07-01T00:00:16.159762Z'

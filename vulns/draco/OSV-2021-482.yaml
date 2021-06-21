@@ -12,7 +12,6 @@ details: |
   draco::MeshPredictionSchemeTexCoordsDecoder<int, draco::PredictionSchemeWrapDeco
   draco::MeshPredictionSchemeTexCoordsDecoder<int, draco::PredictionSchemeWrapDeco
   draco::SequentialIntegerAttributeDecoder::DecodeIntegerValues
-severity: HIGH
 affects:
   ranges:
   - type: GIT
@@ -21,8 +20,10 @@ affects:
   versions:
   - 1.4.0
   - 1.4.1
-modified: '2021-03-09T05:46:49.017068Z'
+modified: '2021-06-21T06:56:28.011293Z'
 published: '2021-03-03T00:00:23.252114Z'
+ecosystem_specific:
+  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31587

@@ -11,15 +11,16 @@ details: |
   xmlStaticCopyNode
   xmlCopyNode
   xmlXIncludeLoadTxt
-severity: HIGH
 affects:
   ranges:
   - type: GIT
     repo: https://gitlab.gnome.org/GNOME/libxml2.git
     introduced: f0fd1b67fc883a24cdd039abb3d4fe4696104d72
     fixed: 847a3a1181d59dc49c1b446d646d344d0543af3e
+modified: '2021-06-21T06:56:25.741975Z'
+published: '2020-09-29T00:00:43.015893Z'
+ecosystem_specific:
+  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26022
-modified: '2021-03-09T04:49:05.492390Z'
-published: '2020-09-29T00:00:43.015893Z'

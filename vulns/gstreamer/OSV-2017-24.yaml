@@ -11,15 +11,16 @@ details: |
   pnm_type_find
   gst_type_find_factory_call_function
   gst_type_find_helper_for_data
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://gitlab.freedesktop.org/gstreamer/gstreamer.git
     introduced: fb56ad6bee2366813f6be4f697579c06774b062d:4c795924dba5595fb1472864f7d27262bce247a8
     fixed: 4c795924dba5595fb1472864f7d27262bce247a8:d106390adce5cee837d2d0aab377d758a45a4b2d
+modified: '2021-06-21T06:56:21.188194Z'
+published: '2021-01-13T00:01:28.099192Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=4039
-modified: '2021-03-09T04:49:04.774594Z'
-published: '2021-01-13T00:01:28.099192Z'

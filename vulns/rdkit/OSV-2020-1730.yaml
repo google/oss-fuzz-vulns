@@ -9,7 +9,6 @@ details: |
   Crash type: Bad-cast
   Crash state:
   Bad-cast to RDKit::Atom
-severity: HIGH
 affects:
   ranges:
   - type: GIT
@@ -22,8 +21,10 @@ affects:
   - Release_2020_09_2
   - Release_2020_09_3
   - Release_2020_09_4
+modified: '2021-06-21T06:56:27.000141Z'
+published: '2020-09-11T00:00:51.334144Z'
+ecosystem_specific:
+  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25547
-modified: '2021-03-09T04:49:05.411137Z'
-published: '2020-09-11T00:00:51.334144Z'

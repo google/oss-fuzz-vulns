@@ -11,15 +11,16 @@ details: |
   c_pdf14trans_clist_read_update
   apply_create_compositor
   execute_compositor_queue
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: git://git.ghostscript.com/ghostpdl.git
     introduced: unknown:668917a10e7eada030f7d2dddec9f579fddeed3d
     fixed: d12d2085b5bd08ca1e813d97f3f7f7e630e791a0
+modified: '2021-06-21T06:56:21.532566Z'
+published: '2020-09-29T00:00:35.972666Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21640
-modified: '2021-03-09T04:49:05.489970Z'
-published: '2020-09-29T00:00:35.972666Z'

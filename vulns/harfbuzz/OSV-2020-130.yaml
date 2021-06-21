@@ -11,15 +11,16 @@ details: |
   OT::TupleVarHeader::calculate_scalar
   OT::gvar::accelerator_t::apply_deltas_to_points
   bool OT::glyf::Glyph::get_points<bool OT::glyf::accelerator_t::get_points<OT::gl
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/harfbuzz/harfbuzz.git
     introduced: 5ad761b943721c3541d0ca0472f34f7d54b89b5b
     fixed: 61208401f41f5d41f32d436cee500c630706f6be
+modified: '2021-06-21T06:56:20.678921Z'
+published: '2020-06-24T01:51:15.452987Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20919
-modified: '2021-03-09T04:49:05.196511Z'
-published: '2020-06-24T01:51:15.452987Z'

@@ -11,15 +11,16 @@ details: |
   jbig2_immediate_generic_region
   jbig2_parse_segment
   jbig2_data_in
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: git://git.ghostscript.com/mupdf.git
     introduced: 43a0278d42ac1b350ce6b582f9d0e3d7785a17b6
     fixed: ce3e98c07e29dab2743e792e478395ed30d27dc1
+modified: '2021-06-21T06:56:19.085038Z'
+published: '2021-01-15T00:01:14.704723Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=9680
-modified: '2021-03-09T04:49:04.983184Z'
-published: '2021-01-15T00:01:14.704723Z'

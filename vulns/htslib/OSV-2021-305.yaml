@@ -11,15 +11,16 @@ details: |
   rle_decode
   rans_uncompress_to_4x16
   rans_uncompress_4x16
-severity: HIGH
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/samtools/htslib.git
     introduced: 0d1971cbebb269d90a563464e4f56987290e20ab
     fixed: 56ac133b2fd4b41b2f05f8a3f30134fd79f7b31f
+modified: '2021-06-21T06:56:19.958274Z'
+published: '2021-02-08T00:00:06.404697Z'
+ecosystem_specific:
+  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30395
-modified: '2021-03-09T04:49:06.303641Z'
-published: '2021-02-08T00:00:06.404697Z'

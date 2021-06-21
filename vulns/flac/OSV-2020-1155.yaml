@@ -11,15 +11,16 @@ details: |
   FLAC__bitreader_read_rice_signed_block
   read_residual_partitioned_rice_
   read_subframe_lpc_
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/xiph/flac.git
     introduced: unknown:4ca0d85c5d0ea3e9d9afc4ac53b5187c9ab98689
     fixed: 2e7931c27eb15e387da440a37f12437e35b22dd4
+modified: '2021-06-21T06:56:26.143875Z'
+published: '2020-07-22T21:49:51.797478Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=17069
-modified: '2021-03-09T04:49:05.118823Z'
-published: '2020-07-22T21:49:51.797478Z'

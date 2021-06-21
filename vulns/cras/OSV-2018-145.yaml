@@ -11,15 +11,16 @@ details: |
   cras_rclient_message_from_client
   cras_rclient_buffer_from_client
   rclient_message.cc
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://chromium.googlesource.com/chromiumos/third_party/adhd
     introduced: e93453f0593494a74a2c54dcdebdf540edf97480
     fixed: 93da42478916101d701158c355f06912ae526f15
+modified: '2021-06-21T06:56:27.883869Z'
+published: '2021-01-13T00:01:03.526117Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=9242
-modified: '2021-03-09T04:49:04.840686Z'
-published: '2021-01-13T00:01:03.526117Z'

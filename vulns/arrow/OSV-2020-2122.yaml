@@ -11,7 +11,6 @@ details: |
   void parquet::internal::DefRepLevelsToListInfo<int>
   parquet::internal::DefRepLevelsToBitmap
   parquet::arrow::StructReader::BuildArray
-severity: HIGH
 affects:
   ranges:
   - type: GIT
@@ -20,8 +19,10 @@ affects:
     fixed: 64396aa487fc24cd26b62a9b92e13a952c6ecf74
   versions:
   - apache-arrow-2.0.0
+modified: '2021-06-21T06:56:19.665728Z'
+published: '2020-11-02T00:00:35.960641Z'
+ecosystem_specific:
+  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26829
-modified: '2021-03-09T04:49:05.623104Z'
-published: '2020-11-02T00:00:35.960641Z'

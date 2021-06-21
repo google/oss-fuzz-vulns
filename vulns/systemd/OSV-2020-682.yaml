@@ -11,15 +11,16 @@ details: |
   condition_free_list_type
   link_config_free
   link_load_one
-severity: HIGH
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/systemd/systemd
     introduced: 16b4623620acdccb232392901074a61e360aa2a4
     fixed: 7bb55ed099f611ec7077db69684a6cb93d42dc70
+modified: '2021-06-21T06:56:25.873943Z'
+published: '2020-07-01T00:00:24.557576Z'
+ecosystem_specific:
+  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13878
-modified: '2021-03-09T04:49:06.020490Z'
-published: '2020-07-01T00:00:24.557576Z'

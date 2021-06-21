@@ -11,15 +11,16 @@ details: |
   java.base/java.util.concurrent.ConcurrentHashMap.putVal
   java.base/java.util.concurrent.ConcurrentHashMap.put
   com.fasterxml.jackson.core.util.InternCache.intern
-severity: LOW
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/FasterXML/jackson-core
     introduced: b051c9036ee505a7e85c81a704e2e43c5397200f:8a2036e948ee849b922121c061c002cb0e131bfa
     fixed: 0deae137735e1c81159e83bd1b4613e6d6b36501
+modified: '2021-06-21T06:56:19.498971Z'
+published: '2021-03-25T00:00:09.158172Z'
+ecosystem_specific:
+  severity: LOW
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=32395
-modified: '2021-03-25T00:00:09.158456Z'
-published: '2021-03-25T00:00:09.158172Z'

@@ -11,7 +11,6 @@ details: |
   RDKit::SubstanceGroup::getBondType
   RDKit::SubstanceGroup::addCState
   RDKit::SGroupParsing::ParseSGroupV2000SBVLine
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -25,8 +24,10 @@ affects:
   - Release_2020_09_4
   - Release_2020_09_5
   - Release_2021_03_1b1
+modified: '2021-06-21T06:56:26.980312Z'
+published: '2020-09-26T00:00:14.118761Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25906
-modified: '2021-03-09T05:48:08.450280Z'
-published: '2020-09-26T00:00:14.118761Z'

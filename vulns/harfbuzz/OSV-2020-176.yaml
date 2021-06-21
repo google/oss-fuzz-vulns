@@ -11,15 +11,16 @@ details: |
   OT::SBIXGlyph::copy
   OT::SBIXStrike::subset
   OT::sbix::add_strike
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/harfbuzz/harfbuzz.git
     introduced: 93376a64362a0d062aa3f9f39bfe0d7b4328a92e
     fixed: 8614a30bc9763ba7f8b452df5527d806bacf4fd9
+modified: '2021-06-21T06:56:20.626966Z'
+published: '2020-06-24T01:51:17.508470Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20223
-modified: '2021-03-09T04:49:05.426886Z'
-published: '2020-06-24T01:51:17.508470Z'

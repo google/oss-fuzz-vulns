@@ -11,7 +11,6 @@ details: |
   BEInt<unsigned char, 1>::set
   CFF::CFFIndex<OT::IntType<unsigned int, 4u> >::set_offset_at
   bool CFF::FDArray<OT::IntType<unsigned int, 4u> >::serialize<CFF::cff2_font_dict
-severity: HIGH
 affects:
   ranges:
   - type: GIT
@@ -22,8 +21,10 @@ affects:
     repo: https://github.com/harfbuzz/harfbuzz.git
     introduced: 5bbe78a0f353bb806a686fd97ad411fa8a9ebf5b
     fixed: bcb4e505d6ffe33e3268a06698e75d6be0e64957
+modified: '2021-06-21T06:56:20.503659Z'
+published: '2020-07-01T00:00:25.806258Z'
+ecosystem_specific:
+  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13736
-modified: '2021-03-09T04:49:06.032211Z'
-published: '2020-07-01T00:00:25.806258Z'

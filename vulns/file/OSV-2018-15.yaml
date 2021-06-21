@@ -11,15 +11,16 @@ details: |
   json_parse_string
   json_parse
   json_parse_array
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/file/file.git
     introduced: 3077baa14978e8c7cd9b41991bbcda9190527ee6
     fixed: 87f27958cfbb05d262504976f66db70c24d5061f
+modified: '2021-06-21T06:56:18.689837Z'
+published: '2021-01-13T00:00:06.229450Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=9922
-modified: '2021-03-09T04:49:04.843039Z'
-published: '2021-01-13T00:00:06.229450Z'

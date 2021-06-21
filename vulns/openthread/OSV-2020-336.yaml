@@ -11,15 +11,16 @@ details: |
   ot::NetworkData::PrefixTlv::Init
   ot::NetworkData::Local::AddOnMeshPrefix
   otError ot::Ncp::NcpBase::HandlePropertyInsert<
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/openthread/openthread
     introduced: 64e62a53145a752e913d6ef4a67f7f1923a868d5
     fixed: a00c53883001654444f45db8c15aff38e15b4a04
+modified: '2021-06-21T06:56:25.010921Z'
+published: '2020-07-01T00:00:03.773709Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=12589
-modified: '2021-03-09T04:49:05.832310Z'
-published: '2020-07-01T00:00:03.773709Z'

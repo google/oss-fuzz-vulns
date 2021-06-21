@@ -11,7 +11,6 @@ details: |
   void mc_chroma<unsigned short>
   generate_inter_prediction_samples
   decode_prediction_unit
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -28,8 +27,10 @@ affects:
   - v5.82.0-rc2
   - v5.83.0-rc1
   - v5.83.0
-modified: '2021-06-14T00:04:51.799961Z'
+modified: '2021-06-21T06:56:27.847699Z'
 published: '2021-03-01T00:01:28.337558Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31518

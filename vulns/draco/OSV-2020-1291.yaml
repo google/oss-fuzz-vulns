@@ -12,15 +12,16 @@ details: |
   std::__1::_MetaBase<__can_be_converted_to_string_view<char, std::__1::char_trait
   bool std::__1::operator<<char, std::__1::char_traits<char>, std::__1::allocator<
   std::__1::__tree_iterator<std::__1::__value_type<std::__1::basic_string<char, st
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/google/draco
     introduced: unknown:dec23f5ac6c71c2352dd6812afa799c03553fc58
     fixed: 25484b31235d1a35fa72be6ce8d1f7f286b5c0bf
+modified: '2021-06-21T06:56:27.996782Z'
+published: '2020-07-22T21:50:03.564988Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23429
-modified: '2021-03-09T04:49:05.191624Z'
-published: '2020-07-22T21:50:03.564988Z'

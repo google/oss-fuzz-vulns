@@ -11,15 +11,16 @@ details: |
   StandardSecurityHandler::StandardSecurityHandler
   SecurityHandler::make
   PDFDoc::checkEncryption
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://gitlab.freedesktop.org/poppler/poppler.git
     introduced: dc587846bff99b07dc351d2d21e5b6908c99afdb
     fixed: b4146c1bb021b48dba20ee343d8c3058ba4d756c
-modified: '2021-05-30T00:00:05.738169Z'
+modified: '2021-06-21T06:56:23.462291Z'
 published: '2021-05-30T00:00:05.737839Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34778

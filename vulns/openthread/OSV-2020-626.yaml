@@ -11,15 +11,16 @@ details: |
   ot::Buffer::GetNextBuffer
   ot::MessagePool::FreeBuffers
   ot::Coap::ResponsesQueue::DequeueAllResponses
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/openthread/openthread
     introduced: 3eb5a106ffa6678e23c6bc244e843e264cae9b31
     fixed: a3548df579617e737b075be4a88591e68195e115
+modified: '2021-06-21T06:56:25.140271Z'
+published: '2020-07-01T00:00:21.221442Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13412
-modified: '2021-03-09T04:49:05.987850Z'
-published: '2020-07-01T00:00:21.221442Z'

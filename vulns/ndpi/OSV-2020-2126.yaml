@@ -10,7 +10,6 @@ details: |
   Crash state:
   ndpi_workflow_process_packet
   fuzz_ndpi_reader.c
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -19,8 +18,10 @@ affects:
   versions:
   - '3.2'
   - '3.4'
+modified: '2021-06-21T06:56:22.775126Z'
+published: '2020-11-03T00:00:46.816747Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26880
-modified: '2021-03-09T05:46:58.984741Z'
-published: '2020-11-03T00:00:46.816747Z'

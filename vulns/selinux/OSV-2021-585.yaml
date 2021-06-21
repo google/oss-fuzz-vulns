@@ -11,7 +11,6 @@ details: |
   ebitmap_match_any
   avtab_map
   cil_check_neverallow
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -47,8 +46,10 @@ affects:
   - selinux-sandbox-3.2-rc3
   - semodule-utils-3.2
   - semodule-utils-3.2-rc3
+modified: '2021-06-21T06:56:27.685344Z'
+published: '2021-03-31T00:00:26.273923Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=32675
-modified: '2021-03-31T00:00:26.274201Z'
-published: '2021-03-31T00:00:26.273923Z'

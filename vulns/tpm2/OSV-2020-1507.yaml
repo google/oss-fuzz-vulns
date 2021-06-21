@@ -11,7 +11,6 @@ details: |
   MemoryRemoveTrailingZeros
   CheckPWAuthSession
   CheckAuthSession
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -25,8 +24,10 @@ affects:
   - cr50_v4.4
   - cr50_v4.5
   - v1.9308_26_0.0.22
+modified: '2021-06-21T06:56:22.905881Z'
+published: '2020-07-28T00:00:34.623899Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23127
-modified: '2021-03-25T00:10:43.455722Z'
-published: '2020-07-28T00:00:34.623899Z'

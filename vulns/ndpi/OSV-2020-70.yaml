@@ -11,15 +11,16 @@ details: |
   ndpi_handle_ipv6_extension_headers
   ndpi_workflow_process_packet
   fuzz_ndpi_reader.c
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/ntop/nDPI.git
     introduced: cf47ba234a59db325a382db4bbdf10187f93eb9a
     fixed: 25cd2a23a6b7057af0e898c613e5f4acf168a11c
+modified: '2021-06-21T06:56:22.563991Z'
+published: '2020-06-24T01:51:12.729868Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21719
-modified: '2021-03-09T04:49:06.029905Z'
-published: '2020-06-24T01:51:12.729868Z'

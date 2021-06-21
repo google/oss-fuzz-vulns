@@ -11,7 +11,6 @@ details: |
   Variant_encodeJson
   Variant_encodeJson
   Variant_encodeJson
-severity: HIGH
 affects:
   ranges:
   - type: GIT
@@ -26,8 +25,10 @@ affects:
   - v1.0.5
   - v1.0.6
   - v1.1-rc1
+modified: '2021-06-21T06:56:26.779286Z'
+published: '2020-06-24T01:51:16.477749Z'
+ecosystem_specific:
+  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20578
-modified: '2021-03-09T04:49:05.314691Z'
-published: '2020-06-24T01:51:16.477749Z'

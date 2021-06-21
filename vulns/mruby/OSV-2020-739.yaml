@@ -11,7 +11,6 @@ details: |
   str_decref
   obj_free
   mrb_gc_destroy
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -21,8 +20,10 @@ affects:
   versions:
   - 2.1.0
   - 2.1.0-rc
+modified: '2021-06-21T06:56:25.564195Z'
+published: '2020-07-01T00:00:27.971876Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18756
-modified: '2021-03-09T04:49:06.050253Z'
-published: '2020-07-01T00:00:27.971876Z'

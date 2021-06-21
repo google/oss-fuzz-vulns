@@ -11,15 +11,16 @@ details: |
   git_buf_decode_base85
   parse_patch_binary_side
   parse_patch_binary
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/libgit2/libgit2
     introduced: 92e011a715e8935f2c64c410625dc6911b6e616c
     fixed: 7f6fdb8293a94267fead2424c90450de228db157
+modified: '2021-06-21T06:56:21.913614Z'
+published: '2020-07-01T00:00:01.257082Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18882
-modified: '2021-03-09T04:49:05.820015Z'
-published: '2020-07-01T00:00:01.257082Z'

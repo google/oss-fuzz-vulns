@@ -11,7 +11,6 @@ details: |
   zend_assign_to_variable
   zend_std_write_property
   ZEND_ASSIGN_OBJ_SPEC_CV_CONST_OP_DATA_VAR_HANDLER
-severity: HIGH
 affects:
   ranges:
   - type: GIT
@@ -40,8 +39,10 @@ affects:
   - php-8.0.7
   - php-8.1.0alpha1
   - php-8.0.8RC1
-modified: '2021-06-16T03:09:08.573329Z'
+modified: '2021-06-21T06:56:20.875289Z'
 published: '2020-09-13T00:00:46.091782Z'
+ecosystem_specific:
+  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25601

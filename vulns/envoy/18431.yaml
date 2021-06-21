@@ -11,7 +11,6 @@ details: |
   bufferRemainingSize() >= length.
   Envoy::Http::Http1::ConnectionImpl::copyToBuffer
   Envoy::Http::Http1::RequestStreamEncoderImpl::encodeHeaders
-severity: HIGH
 affects:
   ranges:
   - type: GIT
@@ -39,8 +38,10 @@ affects:
   - v1.8.0
   - v1.9.0
   - v1.9.1
+modified: '2021-06-21T06:56:19.354866Z'
+published: '2021-03-29T05:14:39.113684Z'
+ecosystem_specific:
+  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18431
-modified: '2021-03-31T03:33:39.405699Z'
-published: '2021-03-29T05:14:39.113684Z'

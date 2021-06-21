@@ -11,7 +11,6 @@ details: |
   FT_Set_Transform
   SplashFTFont::makeGlyph
   SplashFont::getGlyph
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -20,8 +19,10 @@ affects:
     fixed: af4d5f31705dcfd65319da430f87744b5c1f3616
   versions:
   - poppler-0.66.0
+modified: '2021-06-21T06:56:23.563915Z'
+published: '2021-01-13T00:00:06.651120Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=8811
-modified: '2021-03-09T04:49:04.853490Z'
-published: '2021-01-13T00:00:06.651120Z'

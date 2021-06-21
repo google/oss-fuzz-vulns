@@ -11,15 +11,16 @@ details: |
   ftp_disconnect
   Curl_disconnect
   ConnectionExists
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/curl/curl.git
     introduced: 207e7cfa98c35c9d40193ef83bba1d7a830bf141:c98ee5f67f497195c9127cc70fa53a487f994cd5
     fixed: f3ce38739fa49008e36959aa8189c01ab1bad5b5
+modified: '2021-06-21T06:56:28.094893Z'
+published: '2021-01-13T00:00:22.110168Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=12173
-modified: '2021-03-09T04:49:04.975028Z'
-published: '2021-01-13T00:00:22.110168Z'

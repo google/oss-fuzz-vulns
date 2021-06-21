@@ -10,15 +10,16 @@ details: |
   Crash state:
   ftp_parse_winnt_ls
   wget_ftpls_fuzzer.c
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://git.savannah.gnu.org/git/wget.git
     introduced: f56f970bc2b0df1d26ebd6a0a86083b37017cd70
     fixed: 96c64a859dcd95e63a9fe15824620ae15c72c6fa
+modified: '2021-06-21T06:56:27.776438Z'
+published: '2021-01-15T00:00:18.012849Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=7930
-modified: '2021-03-09T04:49:04.909670Z'
-published: '2021-01-15T00:00:18.012849Z'

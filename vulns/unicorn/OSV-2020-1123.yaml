@@ -11,7 +11,6 @@ details: |
   store_reg_arm
   gen_load_exclusive_arm
   disas_arm_insn_arm
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -20,8 +19,10 @@ affects:
     fixed: ec2e4544819b2ef0ecd297ba331d4f2172b77245
   versions:
   - 1.0.2-rc1
+modified: '2021-06-21T06:56:25.267279Z'
+published: '2020-07-22T21:49:48.909471Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20026
-modified: '2021-03-09T04:49:05.102115Z'
-published: '2020-07-22T21:49:48.909471Z'

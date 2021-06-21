@@ -11,15 +11,16 @@ details: |
   ZSTD_freeDDict
   blosc2_free_ctx
   blosc2_schunk_free
-severity: HIGH
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/Blosc/c-blosc2.git
     introduced: 861ba79f31393dec0a0782ca11cf32cebb6f6610
     fixed: 48123a7d2e7409ecd0e74f64a326fa7f2af0627d
+modified: '2021-06-21T06:56:25.904190Z'
+published: '2021-03-16T00:01:01.703386Z'
+ecosystem_specific:
+  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=32076
-modified: '2021-03-16T00:01:01.703699Z'
-published: '2021-03-16T00:01:01.703386Z'

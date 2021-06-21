@@ -11,15 +11,16 @@ details: |
   ndpi_search_oscar
   check_ndpi_tcp_flow_func
   ndpi_detection_process_packet
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/ntop/nDPI.git
     introduced: unknown:e695dd6eade754b2d50bdf297ca8bdc4105f93ff
     fixed: 90e08b3568d8963a459cf06c4e67ff6fc99298e3
+modified: '2021-06-21T06:56:22.843168Z'
+published: '2020-07-22T21:49:38.649374Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20540
-modified: '2021-03-09T04:49:06.190549Z'
-published: '2020-07-22T21:49:38.649374Z'

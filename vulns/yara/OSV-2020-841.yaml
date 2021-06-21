@@ -11,7 +11,6 @@ details: |
   yr_object_set_string
   dex_parse
   dex__load
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -35,8 +34,10 @@ affects:
   - v4.0.3
   - v4.0.4
   - v4.0.5
+modified: '2021-06-21T06:56:27.659603Z'
+published: '2020-07-14T22:13:41.650460Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=6402
-modified: '2021-03-09T04:49:06.106349Z'
-published: '2020-07-14T22:13:41.650460Z'

@@ -11,7 +11,6 @@ details: |
   cil_reset_classpermission
   cil_reset_classperms_set
   cil_reset_classperms_list
-severity: HIGH
 affects:
   ranges:
   - type: GIT
@@ -47,8 +46,10 @@ affects:
   - selinux-sandbox-3.2-rc3
   - semodule-utils-3.2
   - semodule-utils-3.2-rc3
+modified: '2021-06-21T06:56:27.701577Z'
+published: '2021-03-19T00:01:12.719776Z'
+ecosystem_specific:
+  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=32177
-modified: '2021-03-19T00:01:12.720051Z'
-published: '2021-03-19T00:01:12.719776Z'

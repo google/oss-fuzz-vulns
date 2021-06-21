@@ -11,7 +11,6 @@ details: |
   ih264d_fill_bs1_16x16mb_pslice
   ih264d_compute_bs_non_mbaff_thread
   ih264d_recon_deblk_slice
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -22,8 +21,10 @@ affects:
     repo: https://android.googlesource.com/platform/external/libavc
     introduced: 6efeedf0633e1965a4d4e17d64f14215e9b6d48f
     fixed: 0b601e1a4fb246ce7c60aa101af5af4edd0a842d
+modified: '2021-06-21T06:56:22.149196Z'
+published: '2020-11-30T00:00:44.518285Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=28039
-modified: '2021-02-27T12:00:50.368501Z'
-published: '2020-11-30T00:00:44.518285Z'

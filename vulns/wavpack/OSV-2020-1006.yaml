@@ -11,15 +11,16 @@ details: |
   decimate_dsd_run
   WavpackUnpackSamples
   WavpackSeekSample64
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/dbry/WavPack.git
     introduced: unknown:348ff60b489e731ffd046f837500313499623e3e
     fixed: 348ff60b489e731ffd046f837500313499623e3e:db878b73e76c14842e99ad05aed9338d495703c0
+modified: '2021-06-21T06:56:27.737589Z'
+published: '2020-07-22T21:49:39.626805Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=19928
-modified: '2021-03-09T04:49:05.039282Z'
-published: '2020-07-22T21:49:39.626805Z'

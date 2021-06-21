@@ -11,7 +11,6 @@ details: |
   JBIG2HuffmanDecoder::buildTable
   JBIG2Stream::readTextRegionSeg
   JBIG2Stream::readSegments
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -39,8 +38,10 @@ affects:
   - poppler-0.80.0
   - poppler-0.81.0
   - poppler-0.82.0
+modified: '2021-06-21T06:56:23.587476Z'
+published: '2020-07-22T21:49:52.056163Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18802
-modified: '2021-03-09T04:49:05.120370Z'
-published: '2020-07-22T21:49:52.056163Z'

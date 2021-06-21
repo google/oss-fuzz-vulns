@@ -11,7 +11,6 @@ details: |
   macho_handle_segment
   macho_parse_file
   macho__load
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -22,8 +21,10 @@ affects:
     repo: https://github.com/VirusTotal/yara.git
     introduced: 39076d2eb2d529dd4a47a61d79454554e22551b9
     fixed: 94299eee3819d7cef18faaae52251596888e22cd
+modified: '2021-06-21T06:56:27.542324Z'
+published: '2020-09-04T00:00:09.191362Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25385
-modified: '2021-03-15T04:54:58.147807Z'
-published: '2020-09-04T00:00:09.191362Z'

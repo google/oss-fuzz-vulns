@@ -11,15 +11,16 @@ details: |
   WelsDec::ResetRefPicReferences
   WelsDec::DecreasePicBuff
   WelsRequestMem
-severity: HIGH
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/cisco/openh264.git
     introduced: f7ab8db0492ce692286de4a67fa335a5c9473e24
     fixed: f8687facbba0b1cf6aa786c5cf7e7685e07bf624
+modified: '2021-06-21T06:56:23.699024Z'
+published: '2020-07-01T00:00:18.077733Z'
+ecosystem_specific:
+  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13450
-modified: '2021-03-09T04:49:05.962722Z'
-published: '2020-07-01T00:00:18.077733Z'

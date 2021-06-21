@@ -11,15 +11,16 @@ details: |
   tvb_get_ipv4_addr_with_prefix_len
   decode_path_prefix4
   decode_prefix_MP
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://gitlab.com/wireshark/wireshark.git
     introduced: d3c4dfa9eed79d100f039f7042577cadb8fcad06
     fixed: 6d25a1062d092fdae62defeb7ed83a0807fe238a
+modified: '2021-06-21T06:56:24.022691Z'
+published: '2020-06-24T01:51:12.327011Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21715
-modified: '2021-03-09T04:49:05.984598Z'
-published: '2020-06-24T01:51:12.327011Z'

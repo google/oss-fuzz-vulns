@@ -11,15 +11,16 @@ details: |
   pixGetRGBComponentCmap
   pixGetRGBComponent
   pixUnsharpMasking
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/DanBloomberg/leptonica.git
     introduced: 90d80ee8a72d74652cb54426bcf65ef4ae054fb7
     fixed: 33e0c892ff0036da5d23dce834f384df786c91bb
+modified: '2021-06-21T06:56:20.249509Z'
+published: '2020-06-24T01:51:15.520013Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22295
-modified: '2021-03-09T04:49:05.202574Z'
-published: '2020-06-24T01:51:15.520013Z'

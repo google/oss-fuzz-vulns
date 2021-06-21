@@ -11,7 +11,6 @@ details: |
   jbig2_decode_mmr_line
   jbig2_decode_halftone_mmr
   jbig2_decode_gray_scale_image
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -20,8 +19,10 @@ affects:
     fixed: dc14b5a69be02341d84e2956131f93f962408af2
   versions:
   - '0.18'
+modified: '2021-06-21T06:56:26.175364Z'
+published: '2020-07-22T21:49:59.411582Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=17855
-modified: '2021-03-09T04:49:05.164339Z'
-published: '2020-07-22T21:49:59.411582Z'

@@ -11,15 +11,16 @@ details: |
   WelsDec::UpdateP16x16MotionInfo
   WelsDec::ParseInterPMotionInfoCabac
   WelsDec::WelsDecodeMbCabacPSliceBaseMode0
-severity: HIGH
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/cisco/openh264.git
     introduced: 66ef706acd55b0b8daec32ca299d2586a1f473c9
     fixed: f1bb6d3acb057785b4d89e8228e23cc4fc9caa12
+modified: '2021-06-21T06:56:23.957563Z'
+published: '2020-09-27T00:00:13.048083Z'
+ecosystem_specific:
+  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25961
-modified: '2021-03-09T04:49:05.475979Z'
-published: '2020-09-27T00:00:13.048083Z'

@@ -11,7 +11,6 @@ details: |
   ihevc_inter_pred_chroma_copy_ssse3
   ihevcd_inter_pred_ctb
   ihevcd_process
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -77,8 +76,10 @@ affects:
   - platform-tools-30.0.3
   - platform-tools-30.0.4
   - platform-tools-30.0.5
+modified: '2021-06-21T06:56:18.944732Z'
+published: '2020-07-14T05:37:35.331259Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23197
-modified: '2021-03-09T04:49:06.078406Z'
-published: '2020-07-14T05:37:35.331259Z'

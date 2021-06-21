@@ -11,15 +11,16 @@ details: |
   void apply_sao_internal<unsigned short>
   void apply_sao<unsigned char>
   thread_task_sao::work
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/strukturag/libheif.git
     introduced: unknown:0acdca433f338f1f378f6f104e72f5f95c4f8568
     fixed: a78ec32c9fda3b46d63c08b37f0cf5ffab9a98f9
+modified: '2021-06-21T06:56:20.061452Z'
+published: '2020-07-22T21:50:00.006966Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13643
-modified: '2021-03-09T04:49:05.167118Z'
-published: '2020-07-22T21:50:00.006966Z'

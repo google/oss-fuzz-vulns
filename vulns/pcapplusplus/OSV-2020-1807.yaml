@@ -11,7 +11,6 @@ details: |
   __libcpp_memchr
   memchr
   pcpp::cross_platform_memmem
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -19,8 +18,10 @@ affects:
     introduced: fbc52d37c6a7e8cc75e4950d2621cbd907c6cf8a
   versions:
   - v21.05
-modified: '2021-05-20T00:07:01.332155Z'
+modified: '2021-06-21T06:56:24.561592Z'
 published: '2020-09-18T00:00:38.027965Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25711

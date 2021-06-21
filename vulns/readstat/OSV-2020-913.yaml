@@ -11,15 +11,16 @@ details: |
   sas_read4
   sas7bdat_parse_page_pass1
   sas7bdat_parse_meta_pages_pass1
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/WizardMac/ReadStat
     introduced: unknown:d1bfd735515803800cb9708e3fca9e5c1e8e7a48
     fixed: c46bf0909bc0995e23ec94e8e234175c9b3bdab6
+modified: '2021-06-21T06:56:26.264671Z'
+published: '2020-07-22T00:00:05.456455Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=12576
-modified: '2021-03-09T04:49:06.149541Z'
-published: '2020-07-22T00:00:05.456455Z'

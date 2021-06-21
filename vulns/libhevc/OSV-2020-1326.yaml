@@ -11,15 +11,16 @@ details: |
   ihevcd_parse_slice_data
   ihevcd_decode
   ihevcd_cxa_api_function
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://android.googlesource.com/platform/external/libhevc
     introduced: unknown:5e7dc4732015717682ac0da1431fe3e656aea617
     fixed: 67e394c9f3743b8ce41f11736136319efcef6d3d
+modified: '2021-06-21T06:56:18.870218Z'
+published: '2020-07-22T21:50:06.811741Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=16804
-modified: '2021-03-09T04:49:05.211007Z'
-published: '2020-07-22T21:50:06.811741Z'

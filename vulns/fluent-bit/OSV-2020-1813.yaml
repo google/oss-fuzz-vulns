@@ -11,15 +11,16 @@ details: |
   flb_msgpack_to_gelf
   flb_msgpack_raw_to_gelf
   msgpack_to_gelf_fuzzer.c
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/fluent/fluent-bit/
     introduced: d62166140fab2faa5307d871957dbac16bc08dc2
     fixed: 0f2b1c83ecb069ab63a78e470da648147a525154
+modified: '2021-06-21T06:56:24.270661Z'
+published: '2020-09-20T00:00:05.229654Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25780
-modified: '2021-03-09T04:49:05.454362Z'
-published: '2020-09-20T00:00:05.229654Z'

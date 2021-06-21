@@ -11,7 +11,6 @@ details: |
   ideint_process
   impeg2d_deinterlace
   impeg2d_dec_pic_data_thread
-severity: HIGH
 affects:
   ranges:
   - type: GIT
@@ -31,8 +30,10 @@ affects:
   - platform-tools-30.0.1
   - platform-tools-30.0.2
   - platform-tools-30.0.3
+modified: '2021-06-21T06:56:21.225313Z'
+published: '2020-07-22T21:49:54.155583Z'
+ecosystem_specific:
+  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18993
-modified: '2021-03-09T04:49:05.132539Z'
-published: '2020-07-22T21:49:54.155583Z'

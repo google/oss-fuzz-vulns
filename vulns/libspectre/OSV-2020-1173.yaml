@@ -11,15 +11,16 @@ details: |
   psscan
   document_load
   spectre_read_fuzzer.c
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://gitlab.freedesktop.org/libspectre/libspectre.git
     introduced: unknown:945d39259c0ca1dfd6c594a9d3ed971152313190
     fixed: 3639f1fe932d8374dd482de4e01457afe3e43a34
+modified: '2021-06-21T06:56:21.736818Z'
+published: '2020-07-22T21:49:53.355449Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21670
-modified: '2021-03-09T04:49:05.128764Z'
-published: '2020-07-22T21:49:53.355449Z'

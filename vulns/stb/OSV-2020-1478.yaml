@@ -11,14 +11,15 @@ details: |
   load_jpeg_image
   stbi__jpeg_load
   stbi__load_main
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/nothings/stb.git
     introduced: f54acd4e13430c5122cab4ca657705c84aa61b08
+modified: '2021-06-21T06:56:26.425090Z'
+published: '2020-07-28T00:00:27.954104Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23153
-modified: '2021-03-09T04:51:19.743659Z'
-published: '2020-07-28T00:00:27.954104Z'

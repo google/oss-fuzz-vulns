@@ -11,15 +11,16 @@ details: |
   ndpi_fill_protocol_category
   ndpi_detection_process_packet
   fuzz_process_packet.c
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/ntop/nDPI.git
     introduced: unknown:b2cbe76e716e628438a94d2e112acddb67ec89f2
     fixed: d665df64e297051cd5b48605974846fa7076d883:287015ffdc33ff2c212563ffb866b38dee64e12b
+modified: '2021-06-21T06:56:22.873944Z'
+published: '2020-07-22T00:00:05.267265Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21356
-modified: '2021-03-09T04:49:06.149078Z'
-published: '2020-07-22T00:00:05.267265Z'

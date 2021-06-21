@@ -11,7 +11,6 @@ details: |
   multiline_parser_conf_file
   flb_parser_conf_file
   config_fuzzer.c
-severity: HIGH
 affects:
   ranges:
   - type: GIT
@@ -22,8 +21,10 @@ affects:
     repo: https://github.com/fluent/fluent-bit/
     introduced: 03f3339594bdb472315823db78ca209b7ba319fb
     fixed: ed82460da17f5a029df74503d3a5f8f69d29d3ea
-modified: '2021-06-07T00:00:33.275368Z'
+modified: '2021-06-21T06:56:24.351855Z'
 published: '2021-06-07T00:00:33.275043Z'
+ecosystem_specific:
+  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34960

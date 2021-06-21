@@ -11,7 +11,6 @@ details: |
   double_from_wkb_state
   ptarray_from_wkb_state
   lwline_from_wkb_state
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -21,8 +20,10 @@ affects:
   versions:
   - 3.0.0beta1
   - 3.0.0rc1
+modified: '2021-06-21T06:56:25.412635Z'
+published: '2020-07-01T00:00:26.532203Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18153
-modified: '2021-03-09T04:49:06.039351Z'
-published: '2020-07-01T00:00:26.532203Z'

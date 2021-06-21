@@ -11,7 +11,6 @@ details: |
   tinfl_decompress
   mz_inflate
   flb_gzip_uncompress
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -40,8 +39,10 @@ affects:
   - v1.7.0-rc8
   - v1.7.0-rc9
   - v1.7.1
+modified: '2021-06-21T06:56:24.278620Z'
+published: '2020-12-05T00:00:50.659183Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=28285
-modified: '2021-03-05T12:00:57.870212Z'
-published: '2020-12-05T00:00:50.659183Z'

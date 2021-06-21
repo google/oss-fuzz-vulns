@@ -11,15 +11,16 @@ details: |
   UA_Session_deleteMembersCleanup
   removeSessionCallback
   UA_Server_run_shutdown
-severity: HIGH
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/open62541/open62541.git
     introduced: 5c27c73a4b4812b6d97443c0ce024a08e2e7e4de
     fixed: a6d732b4050e902d9bba3acfa7bf72e30fa4dcc6
+modified: '2021-06-21T06:56:26.836160Z'
+published: '2021-01-13T00:00:26.992658Z'
+ecosystem_specific:
+  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=5577
-modified: '2021-03-09T04:49:05.009034Z'
-published: '2021-01-13T00:00:26.992658Z'

@@ -11,15 +11,16 @@ details: |
   parse_odp_action
   odp_actions_from_string
   parse_actions
-severity: HIGH
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/openvswitch/ovs.git
     introduced: ea43b024a8a03f6648d0e06589137a4fbfea9f5a
     fixed: 2c022949efff7f135686bd9007fffaaa6147f935
+modified: '2021-06-21T06:56:26.316151Z'
+published: '2021-01-13T00:00:34.603056Z'
+ecosystem_specific:
+  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=10796
-modified: '2021-03-09T04:49:05.020056Z'
-published: '2021-01-13T00:00:34.603056Z'

@@ -11,7 +11,6 @@ details: |
   encode_3dsolid
   dwg_encode_BODY_private
   dwg_encode_BODY
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -41,8 +40,10 @@ affects:
   - 0.12.3.4248
   - 0.12.3.4250
   - 0.12.3.4253
+modified: '2021-06-21T06:56:26.608293Z'
+published: '2021-03-19T00:00:24.962467Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=32165
-modified: '2021-03-19T00:00:24.962725Z'
-published: '2021-03-19T00:00:24.962467Z'

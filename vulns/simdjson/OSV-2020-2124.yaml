@@ -9,15 +9,16 @@ details: |
   Crash type: UNKNOWN READ
   Crash state:
   jsoncharutils.h
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/simdjson/simdjson.git
     introduced: b7fe764e6c55d112f4f52f72b58ea3e0893a9120
     fixed: 0b82f071157db9848f45dd8cf07ced05c8eb8022
+modified: '2021-06-21T06:56:19.190884Z'
+published: '2020-11-02T00:00:43.118421Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26859
-modified: '2021-03-09T04:49:05.624037Z'
-published: '2020-11-02T00:00:43.118421Z'

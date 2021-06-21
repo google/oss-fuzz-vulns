@@ -10,15 +10,16 @@ details: |
   Crash state:
   ares_parse_aaaa_reply
   ares-test-fuzz.c
-severity: HIGH
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/c-ares/c-ares.git
     introduced: 7d3591ee8a1a63e7748e68e6d880bd1763a32885
     fixed: b949cc3ddfbeb1b3fba571fb53b186b645e66e9c
+modified: '2021-06-21T06:56:22.926055Z'
+published: '2020-07-01T00:00:14.958697Z'
+ecosystem_specific:
+  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15459
-modified: '2021-03-09T04:49:05.938043Z'
-published: '2020-07-01T00:00:14.958697Z'

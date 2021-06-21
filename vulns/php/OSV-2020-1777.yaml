@@ -11,15 +11,16 @@ details: |
   exif_process_IFD_in_MAKERNOTE
   exif_process_IFD_TAG
   exif_process_IFD_in_TIFF
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/php/php-src.git
     introduced: unknown:ecb1e312a0b4e90fa4d2e7bd89dbddd031f82de6
     fixed: 655691675927fa94b634daa59fa07562f921621c
+modified: '2021-06-21T06:56:20.914092Z'
+published: '2020-09-16T00:00:31.920721Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=19044
-modified: '2021-03-09T04:49:05.435613Z'
-published: '2020-09-16T00:00:31.920721Z'

@@ -11,15 +11,16 @@ details: |
   flb_sds_cat
   flb_msgpack_gelf_key
   flb_msgpack_gelf_flatten
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/fluent/fluent-bit/
     introduced: d62166140fab2faa5307d871957dbac16bc08dc2
     fixed: 0f2b1c83ecb069ab63a78e470da648147a525154
+modified: '2021-06-21T06:56:24.375309Z'
+published: '2020-09-25T00:00:21.320950Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25904
-modified: '2021-03-09T04:49:05.467279Z'
-published: '2020-09-25T00:00:21.320950Z'

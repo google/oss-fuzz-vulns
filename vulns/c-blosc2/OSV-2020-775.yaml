@@ -11,15 +11,16 @@ details: |
   blosc_run_decompression_with_context
   blosc_decompress
   fuzz_decompress.c
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/Blosc/c-blosc2.git
     introduced: 64fd6b78baf939ef32c3bfe118f718242d0e3f4c
     fixed: d80b5acaf23ec4c2453a348b35096b99601fcde5
+modified: '2021-06-21T06:56:26.094705Z'
+published: '2020-07-14T05:37:28.809837Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23826
-modified: '2021-03-09T04:49:06.068823Z'
-published: '2020-07-14T05:37:28.809837Z'

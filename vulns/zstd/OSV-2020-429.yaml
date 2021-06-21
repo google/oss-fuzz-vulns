@@ -11,15 +11,16 @@ details: |
   MEM_read32
   ZSTDv05_decodeSequence
   ZSTDv05_decompressSequences
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/facebook/zstd
     introduced: 610a81ecf9593893ed2f69718d3ecbd234297804
     fixed: 0fd322f812211e653a83492c0c114b933f8b6bc5
+modified: '2021-06-21T06:56:19.407398Z'
+published: '2020-07-01T00:00:08.999234Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14368
-modified: '2021-03-09T04:49:05.882716Z'
-published: '2020-07-01T00:00:08.999234Z'

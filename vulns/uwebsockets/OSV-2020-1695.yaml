@@ -11,7 +11,6 @@ details: |
   uWS::TopicTree::trimTree
   uWS::TopicTree::unsubscribeAll
   TopicTree.cpp
-severity: HIGH
 affects:
   ranges:
   - type: GIT
@@ -21,8 +20,10 @@ affects:
   versions:
   - v18.11.0
   - v18.12.0
+modified: '2021-06-21T06:56:26.554807Z'
+published: '2020-09-04T00:00:08.299412Z'
+ecosystem_specific:
+  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25381
-modified: '2021-03-09T04:49:05.393095Z'
-published: '2020-09-04T00:00:08.299412Z'

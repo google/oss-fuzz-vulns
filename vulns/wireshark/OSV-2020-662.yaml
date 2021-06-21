@@ -11,7 +11,6 @@ details: |
   wmem_strdup_printf
   dissect_parameter_sequence
   dissect_rtps_submessage_v2
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -61,8 +60,10 @@ affects:
   - wireshark-3.0.7
   - wireshark-3.0.8
   - wireshark-3.0.9
+modified: '2021-06-21T06:56:24.116457Z'
+published: '2020-07-01T00:00:23.358358Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13725
-modified: '2021-03-09T04:49:06.009326Z'
-published: '2020-07-01T00:00:23.358358Z'

@@ -11,7 +11,6 @@ details: |
   grk_object_unref
   grk::GrkObjectImpl<grk::GrkImage>::release
   grk::GrkObject::unref
-severity: HIGH
 affects:
   ranges:
   - type: GIT
@@ -25,8 +24,10 @@ affects:
   - v9.0.0
   - v9.1.0
   - v9.2.0
-modified: '2021-05-23T00:06:17.604816Z'
+modified: '2021-06-21T06:56:25.489886Z'
 published: '2021-03-11T00:00:21.858475Z'
+ecosystem_specific:
+  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31874

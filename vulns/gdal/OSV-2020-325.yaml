@@ -12,7 +12,6 @@ details: |
   std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<ch
   nccfdriver::attrf
   nccfdriver::getCFVersion
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -32,8 +31,10 @@ affects:
   - v3.0.3RC1
   - v3.0.4
   - v3.0.4RC1
+modified: '2021-06-21T06:56:27.515224Z'
+published: '2020-07-01T00:00:02.845124Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15159
-modified: '2021-03-09T04:49:05.826375Z'
-published: '2020-07-01T00:00:02.845124Z'

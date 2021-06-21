@@ -11,15 +11,16 @@ details: |
   json_string_unescape
   ofputil_table_from_string
   parse_ofp_str__
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/openvswitch/ovs.git
     introduced: 581d3bec7b8c714a98744b0b5f48dd7c7c4db037
     fixed: a32bab26e5d83e97624f265dad7ef3d07c8e0741:40fc4d8c8e24b8f15464607941d0c1835eed93a6
+modified: '2021-06-21T06:56:26.334148Z'
+published: '2021-01-13T00:00:58.327572Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11473
-modified: '2021-03-09T04:49:04.833361Z'
-published: '2021-01-13T00:00:58.327572Z'

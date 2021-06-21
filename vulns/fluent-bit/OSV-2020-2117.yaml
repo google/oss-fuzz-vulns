@@ -11,7 +11,6 @@ details: |
   flb_msgpack_gelf_value_ext
   flb_msgpack_to_gelf
   flb_msgpack_raw_to_gelf
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -40,8 +39,10 @@ affects:
   - v1.7.0-rc8
   - v1.7.0-rc9
   - v1.7.1
+modified: '2021-06-21T06:56:24.463935Z'
+published: '2020-11-02T00:00:07.716307Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26851
-modified: '2021-03-09T04:49:05.620078Z'
-published: '2020-11-02T00:00:07.716307Z'

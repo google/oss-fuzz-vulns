@@ -11,15 +11,16 @@ details: |
   read_chunks_before_idat
   get_ancillary
   spng_decoded_image_size
-severity: HIGH
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/randy408/libspng.git
     introduced: cba3f1c1a704609f47090b46858b08732ad5ab6d
     fixed: d876b1d23f0642304c758194045889a19ea823a0
+modified: '2021-06-21T06:56:21.051294Z'
+published: '2020-07-01T00:00:25.669660Z'
+ecosystem_specific:
+  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=16266
-modified: '2021-03-09T04:49:06.030830Z'
-published: '2020-07-01T00:00:25.669660Z'

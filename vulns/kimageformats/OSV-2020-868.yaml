@@ -11,7 +11,6 @@ details: |
   fetchARGB32ToRGBA64PM_avx2
   blend_untransformed_generic_rgb64
   fillRect_normalized
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -50,8 +49,10 @@ affects:
   - v5.82.0
   - v5.83.0-rc1
   - v5.83.0
-modified: '2021-06-14T00:03:34.866818Z'
+modified: '2021-06-21T06:56:27.784802Z'
 published: '2020-07-14T22:13:50.828646Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21808

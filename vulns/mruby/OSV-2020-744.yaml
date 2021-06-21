@@ -11,7 +11,6 @@ details: |
   mrb_default_allocf
   mrb_free
   obj_free
-severity: HIGH
 affects:
   ranges:
   - type: GIT
@@ -22,8 +21,10 @@ affects:
   - 2.1.2
   - 2.1.2-rc
   - 2.1.2-rc2
+modified: '2021-06-21T06:56:25.626805Z'
+published: '2020-07-04T00:00:01.948828Z'
+ecosystem_specific:
+  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23801
-modified: '2021-03-09T04:49:06.053188Z'
-published: '2020-07-04T00:00:01.948828Z'

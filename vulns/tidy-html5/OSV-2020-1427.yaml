@@ -11,7 +11,6 @@ details: |
   TextEndsWithNewline
   PPrintText
   PPrintScriptStyle
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -19,8 +18,10 @@ affects:
     introduced: 68a29fb3e46d6fc22f7a8ff119c0956ddc8ebe8b
   versions:
   - 5.7.28
+modified: '2021-06-21T06:56:20.163559Z'
+published: '2020-07-28T00:00:17.183105Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13191
-modified: '2021-03-09T04:49:05.260754Z'
-published: '2020-07-28T00:00:17.183105Z'

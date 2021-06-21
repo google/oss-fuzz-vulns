@@ -11,15 +11,16 @@ details: |
   getTLScertificate
   tlsDetectProtocolFromCertificate
   ndpi_search_tls_tcp_udp
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/ntop/nDPI.git
     introduced: unknown:e695dd6eade754b2d50bdf297ca8bdc4105f93ff
     fixed: ea001b439a134f4e0e4245d29988547103c047b4
+modified: '2021-06-21T06:56:22.632601Z'
+published: '2020-07-22T21:49:38.781030Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=19466
-modified: '2021-03-09T04:49:06.191467Z'
-published: '2020-07-22T21:49:38.781030Z'

@@ -11,7 +11,6 @@ details: |
   ff_hevc_put_hevc_epel_pixels_8_sse
   acceleration_functions::put_hevc_epel
   void mc_chroma<unsigned short>
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -21,8 +20,10 @@ affects:
   versions:
   - v1.5.0
   - v1.5.1
+modified: '2021-06-21T06:56:20.020890Z'
+published: '2020-07-22T21:49:50.461909Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13568
-modified: '2021-03-09T04:49:05.111508Z'
-published: '2020-07-22T21:49:50.461909Z'

@@ -11,15 +11,16 @@ details: |
   mem_src_read
   src_peek
   src_eof
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/rnpgp/rnp.git
     introduced: 29ab1870c84737b836fd6ea7ee1d7cd9d1ecfafb
     fixed: 1c43db6db6ec3c8f84d6d751f904ab8558561430
+modified: '2021-06-21T06:56:21.894402Z'
+published: '2020-09-04T00:00:43.281890Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25388
-modified: '2021-03-09T04:49:05.396832Z'
-published: '2020-09-04T00:00:43.281890Z'

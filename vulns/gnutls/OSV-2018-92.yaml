@@ -11,7 +11,6 @@ details: |
   _gnutls_x509_get_time
   gnutls_x509_crt_get_expiration_time
   _gnutls_check_cert_sanity
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -35,8 +34,10 @@ affects:
   - gnutls_3_6_7
   - gnutls_3_6_8
   - gnutls_3_6_9
+modified: '2021-06-21T06:56:22.309128Z'
+published: '2021-01-13T00:00:41.525029Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=10125
-modified: '2021-03-09T04:49:05.031112Z'
-published: '2021-01-13T00:00:41.525029Z'

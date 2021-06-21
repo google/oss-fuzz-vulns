@@ -11,7 +11,6 @@ details: |
   BEInt<unsigned short, 2>::set
   OT::Script::subset
   void OT::OffsetTo<OT::Script, OT::IntType<unsigned short, 2u>, true>::serialize_
-severity: HIGH
 affects:
   ranges:
   - type: GIT
@@ -23,8 +22,10 @@ affects:
   - 2.0.0
   - 2.0.1
   - 2.0.2
+modified: '2021-06-21T06:56:20.510896Z'
+published: '2021-01-13T00:01:07.793293Z'
+ecosystem_specific:
+  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11081
-modified: '2021-03-09T04:49:04.849330Z'
-published: '2021-01-13T00:01:07.793293Z'

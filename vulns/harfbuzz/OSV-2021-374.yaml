@@ -11,15 +11,16 @@ details: |
   BEInt<unsigned short, 2>::operator unsigned short
   OT::IntType<unsigned short, 2u>::operator unsigned int
   OT::AnchorMatrix::subset
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/harfbuzz/harfbuzz.git
     introduced: c7d232ce4e8eccdeaf8fc4bb4b73818b581d3fb9
     fixed: 5ca353a2d026f655af61ae159adcaeace1fdb09c
+modified: '2021-06-21T06:56:20.659854Z'
+published: '2021-02-12T00:00:14.696122Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30817
-modified: '2021-02-25T00:09:30.323935Z'
-published: '2021-02-12T00:00:14.696122Z'

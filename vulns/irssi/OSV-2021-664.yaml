@@ -11,15 +11,16 @@ details: |
   module_check_cast
   server_connect_unref
   server_unref
-severity: HIGH
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/irssi/irssi
     introduced: 2a0f1d7636a9fd941fbb04f52fe9c23b3263406a
     fixed: 3dbfac5699c6887b7149a0b1c805c4730f63d0f4
+modified: '2021-06-21T06:56:21.347108Z'
+published: '2021-04-21T00:00:14.547847Z'
+ecosystem_specific:
+  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=33444
-modified: '2021-04-21T00:00:14.548124Z'
-published: '2021-04-21T00:00:14.547847Z'

@@ -11,14 +11,15 @@ details: |
   smtp_command_parse_line
   smtp_command_parse
   smtp_command_parse_next
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/dovecot/core
     introduced: f5befde9939b105b490cd475df380c3220275bb6
+modified: '2021-06-21T06:56:21.290375Z'
+published: '2020-07-14T22:13:57.514686Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23514
-modified: '2021-03-09T04:49:06.130687Z'
-published: '2020-07-14T22:13:57.514686Z'

@@ -12,15 +12,16 @@ details: |
   std::__1::vector<std::__1::vector<Sass::SharedImpl<Sass::ComplexSelector>, std::
   Sass::ComplexSelector::resolve_parent_refs
   Sass::SelectorList::resolve_parent_refs
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/sass/libsass.git
     introduced: f964dcddd76f4c1f00da06bfd905be790618c33b
     fixed: 04a234a7bd5e74b0eb5be489f831a9c0d08c8606
+modified: '2021-06-21T06:56:24.536165Z'
+published: '2020-07-01T00:00:04.559189Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15893
-modified: '2021-03-09T04:49:05.838401Z'
-published: '2020-07-01T00:00:04.559189Z'

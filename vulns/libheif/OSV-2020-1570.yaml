@@ -11,15 +11,16 @@ details: |
   x265::PicYuv::copyFromPicture
   x265::Encoder::encode
   x265_encoder_encode
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/strukturag/libheif.git
     introduced: 514556f5ab18a6d5ff4fc4e0f1af7fca58947e7b
     fixed: 95deb055d9200fdd3b154b51d99a05282d81075c
+modified: '2021-06-21T06:56:20.014511Z'
+published: '2020-08-03T00:00:09.880989Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24590
-modified: '2021-03-09T04:49:05.334730Z'
-published: '2020-08-03T00:00:09.880989Z'

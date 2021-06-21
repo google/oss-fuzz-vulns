@@ -11,15 +11,16 @@ details: |
   DestroyPicBuff
   WelsRequestMem
   SyncPictureResolutionExt
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/cisco/openh264.git
     introduced: 66ef706acd55b0b8daec32ca299d2586a1f473c9
     fixed: b52786888ddce9d6bc06b7825ba9bffc65924e0c
+modified: '2021-06-21T06:56:23.915204Z'
+published: '2021-02-11T00:00:20.830392Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30770
-modified: '2021-02-25T00:08:45.258324Z'
-published: '2021-02-11T00:00:20.830392Z'

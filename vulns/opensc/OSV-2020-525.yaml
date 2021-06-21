@@ -11,15 +11,16 @@ details: |
   parse_sec_attr_44
   setcos_select_file
   sc_select_file
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/OpenSC/OpenSC
     introduced: 6810eb6cf13f97ff20c5c68f49bef70ae977ddea
     fixed: 7a1e42e1352201127d1a97b6cb5f41e48cace0f5
+modified: '2021-06-21T06:56:27.113213Z'
+published: '2020-07-01T00:00:14.612318Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18693
-modified: '2021-03-09T04:49:05.935194Z'
-published: '2020-07-01T00:00:14.612318Z'

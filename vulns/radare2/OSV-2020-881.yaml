@@ -11,7 +11,6 @@ details: |
   read_uleb128
   walk_exports
   get_symbols
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -34,8 +33,10 @@ affects:
   - Continuous-Windows
   - continuous
   - release-5.0.0
+modified: '2021-06-21T06:56:23.184106Z'
+published: '2020-07-14T22:13:57.548799Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18549
-modified: '2021-03-09T04:59:28.413059Z'
-published: '2020-07-14T22:13:57.548799Z'

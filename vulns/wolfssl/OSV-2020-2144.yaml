@@ -10,7 +10,6 @@ details: |
   Crash state:
   wolfSSH_accept
   server.c
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -19,8 +18,10 @@ affects:
     fixed: 6e0e507dad67f62f148e8124903172de817802f9:a1e083b5b13a681003e564351a55634d2f56d03a
   versions:
   - v4.6.0-stable
+modified: '2021-06-21T06:56:22.316526Z'
+published: '2020-11-10T00:00:23.166211Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=27298
-modified: '2021-03-09T04:49:05.684924Z'
-published: '2020-11-10T00:00:23.166211Z'

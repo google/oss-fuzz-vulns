@@ -11,14 +11,15 @@ details: |
   LibRaw::kodak_c330_load_raw
   LibRaw::unpack
   libraw_fuzzer.cc
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/libraw/libraw
     introduced: 4c954948ba2de262b9cb23a1843fb8651aa3dcc1
-modified: '2021-03-09T05:48:00.845940Z'
+modified: '2021-06-21T06:56:25.790716Z'
 published: '2021-02-22T00:00:09.445952Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31181

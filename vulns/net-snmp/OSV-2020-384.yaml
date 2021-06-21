@@ -11,15 +11,16 @@ details: |
   agentx_parse_string
   agentx_parse
   agentx_parse_fuzzer.c
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: git://git.code.sf.net/p/net-snmp/code
     introduced: 46a42549dbae76e1c2fc284b81c6e6f83ce46831
     fixed: 7de049193ab78d9fcdc3baa2c0673bd1e300ed5b
+modified: '2021-06-21T06:56:22.431464Z'
+published: '2020-07-01T00:00:06.466746Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14481
-modified: '2021-03-09T04:49:05.858571Z'
-published: '2020-07-01T00:00:06.466746Z'

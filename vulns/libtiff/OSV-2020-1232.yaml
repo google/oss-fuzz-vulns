@@ -11,7 +11,6 @@ details: |
   TIFFYCbCrtoRGB
   putcontig8bitYCbCr22tile
   gtTileContig
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -20,8 +19,10 @@ affects:
     fixed: 7475a285087c8a10da36c948fe40002c29d2e004
   versions:
   - v4.0.10
+modified: '2021-06-21T06:56:18.955022Z'
+published: '2020-07-22T21:49:58.709915Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=16844
-modified: '2021-03-09T04:49:05.159920Z'
-published: '2020-07-22T21:49:58.709915Z'

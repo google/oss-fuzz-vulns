@@ -11,7 +11,6 @@ details: |
   psnip_safe_size_mul
   SafeMul
   Mat_VarGetSize
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -21,8 +20,10 @@ affects:
   versions:
   - v1.5.16
   - v1.5.17
+modified: '2021-06-21T06:56:28.312978Z'
+published: '2020-07-01T00:00:26.967984Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=17120
-modified: '2021-03-09T04:49:06.044121Z'
-published: '2020-07-01T00:00:26.967984Z'

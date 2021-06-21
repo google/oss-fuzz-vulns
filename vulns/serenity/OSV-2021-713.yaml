@@ -11,14 +11,15 @@ details: |
   AK::StringView::StringView
   void AK::__format_value<AK::String>
   AK::vformat_impl
-severity: HIGH
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/SerenityOS/serenity
     introduced: 3048274f5efdb5a02407d021338faa6770ac5280
-modified: '2021-05-02T00:00:26.435901Z'
+modified: '2021-06-21T06:56:19.895832Z'
 published: '2021-05-02T00:00:26.435557Z'
+ecosystem_specific:
+  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=33852

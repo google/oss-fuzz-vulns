@@ -11,7 +11,6 @@ details: |
   WelsDec::WelsReorderRefList
   WelsDec::InitRefPicList
   WelsDec::DecodeCurrentAccessUnit
-severity: HIGH
 affects:
   ranges:
   - type: GIT
@@ -22,8 +21,10 @@ affects:
   - v2.0.0
   - v2.1.0
   - v2.1.1
+modified: '2021-06-21T06:56:23.668124Z'
+published: '2020-07-22T21:49:56.222517Z'
+ecosystem_specific:
+  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20491
-modified: '2021-03-09T04:49:05.144786Z'
-published: '2020-07-22T21:49:56.222517Z'

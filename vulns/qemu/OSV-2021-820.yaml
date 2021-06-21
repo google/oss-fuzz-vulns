@@ -11,14 +11,15 @@ details: |
   virtio_gpu_disable_scanout
   virtio_gpu_set_scanout
   virtio_gpu_simple_process_cmd
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://git.qemu.org/git/qemu.git
     introduced: e64d4b6a9bc3ba216a988276bcdc27d06fd48e59
-modified: '2021-06-02T00:00:31.620057Z'
+modified: '2021-06-21T06:56:20.846766Z'
 published: '2021-06-02T00:00:31.619765Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34831

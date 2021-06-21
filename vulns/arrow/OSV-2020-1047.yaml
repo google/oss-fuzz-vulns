@@ -11,15 +11,16 @@ details: |
   arrow::ipc::internal::FieldFromFlatbuffer
   arrow::ipc::internal::FieldFromFlatbuffer
   arrow::ipc::internal::GetSchema
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/apache/arrow.git
     introduced: unknown:ccdc4b076cbd5fb03e1cbc42292def871d2b6035
     fixed: 3dc281397f42dd26bf77e45c7ba4ebeb1eb9aba8
+modified: '2021-06-21T06:56:19.711910Z'
+published: '2020-07-22T21:49:42.853693Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20123
-modified: '2021-03-09T04:49:05.060640Z'
-published: '2020-07-22T21:49:42.853693Z'

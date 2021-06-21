@@ -11,7 +11,6 @@ details: |
   fuzz_read_callback
   Curl_fillreadbuffer
   readwrite_upload
-severity: HIGH
 affects:
   ranges:
   - type: GIT
@@ -45,8 +44,10 @@ affects:
   - curl-7_73_0
   - curl-7_74_0
   - tiny-curl-7_72_0
+modified: '2021-06-21T06:56:28.049518Z'
+published: '2021-01-13T21:57:35.291125Z'
+ecosystem_specific:
+  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=4785
-modified: '2021-03-09T04:49:04.804315Z'
-published: '2021-01-13T21:57:35.291125Z'

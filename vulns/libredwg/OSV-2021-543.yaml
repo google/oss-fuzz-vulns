@@ -11,7 +11,6 @@ details: |
   dxf_objects_read
   dwg_read_dxf
   llvmfuzz.c
-severity: HIGH
 affects:
   ranges:
   - type: GIT
@@ -21,8 +20,10 @@ affects:
   versions:
   - 0.12.3.4261
   - 0.12.3.4264
+modified: '2021-06-21T06:56:26.615930Z'
+published: '2021-03-21T00:01:06.640931Z'
+ecosystem_specific:
+  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=32275
-modified: '2021-03-21T00:01:06.641230Z'
-published: '2021-03-21T00:01:06.640931Z'

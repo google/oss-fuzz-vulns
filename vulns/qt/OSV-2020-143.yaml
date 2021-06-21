@@ -12,16 +12,16 @@ details: |
   QSpecialInteger<QBigEndianStorageType<unsigned int> >::operator unsigned int
   QIcc::fromIccProfile
   QColorSpace::fromIccProfile
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: git://code.qt.io/qt/qtbase.git
     introduced: cc106ce56550ebfc7e1808e1b9015f5618d9f5e5:e10e5318bc02a48a866b76b6f0b7f268d16af642
     fixed: 538223d10d133d23133db1ec7a50cb2775aca657:76fe36645eb41fa35e526a97874f1e15a39c3823
-  versions: null
+modified: '2021-06-21T06:56:23.304734Z'
+published: '2020-06-24T01:51:16.055970Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21909
-modified: '2021-04-21T12:15:12.000000Z'
-published: '2020-06-24T01:51:16.055970Z'

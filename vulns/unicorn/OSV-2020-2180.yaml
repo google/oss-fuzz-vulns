@@ -10,7 +10,6 @@ details: |
   Crash state:
   helper_be_stl_mmu_armeb
   [stack]
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -25,8 +24,10 @@ affects:
   - 1.0.2-rc4
   - 1.0.2-rc5
   - 1.0.2-rc6
+modified: '2021-06-21T06:56:25.322300Z'
+published: '2020-11-23T00:00:58.574949Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=27736
-modified: '2021-03-09T04:49:05.703856Z'
-published: '2020-11-23T00:00:58.574949Z'

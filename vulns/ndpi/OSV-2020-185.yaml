@@ -11,7 +11,6 @@ details: |
   ndpi_search_kerberos
   check_ndpi_udp_flow_func
   ndpi_check_flow_func
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -20,8 +19,10 @@ affects:
     fixed: b0bf66c436b829155662c27f59ab09dc6e9e7f3d
   versions:
   - '3.2'
+modified: '2021-06-21T06:56:22.462182Z'
+published: '2020-06-24T01:51:17.946420Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22419
-modified: '2021-03-09T04:49:05.473114Z'
-published: '2020-06-24T01:51:17.946420Z'

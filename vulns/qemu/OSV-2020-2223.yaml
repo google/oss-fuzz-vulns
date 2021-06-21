@@ -11,7 +11,6 @@ details: |
   e1000e_write_packet_to_guest
   e1000e_receive_iov
   e1000e_nc_receive_iov
-severity: HIGH
 affects:
   ranges:
   - type: GIT
@@ -23,8 +22,10 @@ affects:
   - v5.2.0-rc2
   - v5.2.0-rc3
   - v5.2.0-rc4
+modified: '2021-06-21T06:56:20.861342Z'
+published: '2020-12-04T00:00:19.497055Z'
+ecosystem_specific:
+  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=28194
-modified: '2021-03-09T04:49:05.727354Z'
-published: '2020-12-04T00:00:19.497055Z'

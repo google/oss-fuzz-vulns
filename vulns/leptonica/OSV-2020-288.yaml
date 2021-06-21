@@ -11,15 +11,16 @@ details: |
   pixReadMemBmp
   pixReadMem
   pix_rotate_shear_fuzzer.cc
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/DanBloomberg/leptonica.git
     introduced: 95405007f7ebf7df69f13475b3259179cdc4ec12
     fixed: 7a74abcd7b574109d8ad29b0dd5583f3963a6939
+modified: '2021-06-21T06:56:20.231519Z'
+published: '2020-06-30T00:00:46.704258Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=19723
-modified: '2021-03-09T04:49:05.806478Z'
-published: '2020-06-30T00:00:46.704258Z'

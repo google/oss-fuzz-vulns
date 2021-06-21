@@ -11,7 +11,6 @@ details: |
   slide_hash
   fill_window
   deflate_fast
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -20,8 +19,10 @@ affects:
     fixed: 8b82998e5da42c6b08f59a6f3bccf4a81bcf55ea
   versions:
   - v18.11.0
+modified: '2021-06-21T06:56:26.548404Z'
+published: '2020-08-12T00:00:13.402621Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24820
-modified: '2021-03-09T04:49:05.348959Z'
-published: '2020-08-12T00:00:13.402621Z'

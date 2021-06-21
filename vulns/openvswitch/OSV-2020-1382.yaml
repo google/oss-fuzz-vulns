@@ -11,7 +11,6 @@ details: |
   nl_attr_is_valid
   format_odp_tun_attr
   format_odp_key_attr__
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -28,8 +27,10 @@ affects:
   - v2.13.2
   - v2.13.3
   - v2.14.0
+modified: '2021-06-21T06:56:26.377586Z'
+published: '2020-07-28T00:00:06.837707Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=19890
-modified: '2021-03-09T04:49:05.237698Z'
-published: '2020-07-28T00:00:06.837707Z'

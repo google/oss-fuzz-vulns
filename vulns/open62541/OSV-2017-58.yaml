@@ -11,7 +11,6 @@ details: |
   UA_Array_copy
   copy_noInit
   NodeId_copy
-severity: HIGH
 affects:
   ranges:
   - type: GIT
@@ -25,8 +24,10 @@ affects:
   - 0.2.1
   - v0.2.1
   - v0.2.2
+modified: '2021-06-21T06:56:26.764180Z'
+published: '2021-01-13T21:56:29.199662Z'
+ecosystem_specific:
+  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=4300
-modified: '2021-03-09T04:49:04.792669Z'
-published: '2021-01-13T21:56:29.199662Z'

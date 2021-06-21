@@ -11,7 +11,6 @@ details: |
   H5O_fill_new_shared_decode
   H5O_msg_read_oh
   H5O_msg_read
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -21,8 +20,10 @@ affects:
   versions:
   - v1.5.18
   - v1.5.19
+modified: '2021-06-21T06:56:28.293703Z'
+published: '2020-07-14T22:13:47.514744Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18810
-modified: '2021-03-09T04:49:06.115985Z'
-published: '2020-07-14T22:13:47.514744Z'

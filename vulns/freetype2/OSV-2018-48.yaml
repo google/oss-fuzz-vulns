@@ -11,15 +11,16 @@ details: |
   PCF_Glyph_Load
   FT_Load_Glyph
   ftfuzzer.cc
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/freetype/freetype2-testing.git
     introduced: 20cbff1970d10e1f7086a5ef89ada4229481bb1e:f646e9f4598f261ebcef6f989c883428987f4975
     fixed: f646e9f4598f261ebcef6f989c883428987f4975:8f0427985b16b0cea6779391fa7b89cecd156b2f
+modified: '2021-06-21T06:56:21.686375Z'
+published: '2021-01-13T00:00:26.415724Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=9524
-modified: '2021-03-09T04:49:05.007595Z'
-published: '2021-01-13T00:00:26.415724Z'

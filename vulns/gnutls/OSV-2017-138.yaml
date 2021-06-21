@@ -11,15 +11,16 @@ details: |
   gnutls_x509_crl_deinit
   gnutls_pkcs12_simple_parse
   _start
-severity: HIGH
 affects:
   ranges:
   - type: GIT
     repo: https://gitlab.com/gnutls/gnutls.git
     introduced: 307c2ba1ed45895c98d683bfb23ad9fa79776574:553906ba264c591ca947983fc2f3c083fb818eb4
     fixed: 553906ba264c591ca947983fc2f3c083fb818eb4:7265612d87f51c2f52a2e4cf5bdf14f31bd291a2
+modified: '2021-06-21T06:56:22.240460Z'
+published: '2021-01-15T00:00:32.872161Z'
+ecosystem_specific:
+  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=1304
-modified: '2021-03-09T04:49:04.753679Z'
-published: '2021-01-15T00:00:32.872161Z'

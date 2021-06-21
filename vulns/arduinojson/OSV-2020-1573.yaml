@@ -11,7 +11,6 @@ details: |
   void ArduinoJsonNUMBER_71::Utf8::encodeCodepoint<ArduinoJsonNUMBER_71::StringCop
   ArduinoJsonNUMBER_71::JsonDeserializer<ArduinoJsonNUMBER_71::BoundedReader<unsig
   ArduinoJsonNUMBER_71::JsonDeserializer<ArduinoJsonNUMBER_71::BoundedReader<unsig
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -20,8 +19,10 @@ affects:
     fixed: 96b65713528476eed35dbab690be837967cedb93
   versions:
   - v6.16.0
+modified: '2021-06-21T06:56:25.351737Z'
+published: '2020-08-04T00:00:11.334079Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24633
-modified: '2021-03-09T04:49:05.336246Z'
-published: '2020-08-04T00:00:11.334079Z'

@@ -11,14 +11,15 @@ details: |
   sctp_sorecvmsg
   usrsctp_recvv
   handle_upcall
-severity: HIGH
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/sctplab/usrsctp
     introduced: 37a9dc3e18bfdcc972946dff0206155cee6b5dd0
-modified: '2021-03-09T05:46:46.780999Z'
+modified: '2021-06-21T06:56:27.946440Z'
 published: '2021-02-10T00:00:18.193322Z'
+ecosystem_specific:
+  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30571

@@ -11,7 +11,6 @@ details: |
   grk::FileFormatDecompress::apply_palette_clr
   grk::FileFormatDecompress::applyColour
   grk_decompress_fuzzer.cpp
-severity: HIGH
 affects:
   ranges:
   - type: GIT
@@ -28,8 +27,10 @@ affects:
   - v9.0.0
   - v9.1.0
   - v9.2.0
-modified: '2021-05-23T00:07:41.523833Z'
+modified: '2021-06-21T06:56:25.462913Z'
 published: '2021-04-23T00:00:13.554175Z'
+ecosystem_specific:
+  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=33544

@@ -11,15 +11,16 @@ details: |
   check_exif
   read_non_idat_chunks
   read_chunks
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/randy408/libspng.git
     introduced: 56ea34629ac4e56f2264f7a8212b228873e9f174
     fixed: 04b668f9824d0c52cdc0a0b7e58bf767d2a385fc
+modified: '2021-06-21T06:56:21.093041Z'
+published: '2020-06-24T01:51:13.128983Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22714
-modified: '2021-03-09T04:49:06.076712Z'
-published: '2020-06-24T01:51:13.128983Z'

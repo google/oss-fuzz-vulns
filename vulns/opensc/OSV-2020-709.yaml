@@ -11,15 +11,16 @@ details: |
   sc_pkcs15_free_object_content
   sc_pkcs15_free_object
   fuzz_pkcs15_decode.c
-severity: HIGH
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/OpenSC/OpenSC
     introduced: b79db82ae7b65b0847ea8fb286d203fae0a0ceb5
     fixed: 5557f34f5ef86cbf2d2de0ff39b591d4c836defb
+modified: '2021-06-21T06:56:27.189601Z'
+published: '2020-07-01T00:00:26.090578Z'
+ecosystem_specific:
+  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18890
-modified: '2021-03-09T04:49:06.034560Z'
-published: '2020-07-01T00:00:26.090578Z'

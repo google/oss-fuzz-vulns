@@ -11,15 +11,16 @@ details: |
   hts_md5_update
   cram_decode_slice
   cram_next_slice
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/samtools/htslib.git
     introduced: unknown:d8075641275729878bf2455ac9e999fed4263d9e
     fixed: d6f15361ee63ff13dfb57f3eac119e3d50e65c56
+modified: '2021-06-21T06:56:19.946252Z'
+published: '2020-07-22T21:49:39.016161Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20694
-modified: '2021-03-09T04:49:06.193378Z'
-published: '2020-07-22T21:49:39.016161Z'

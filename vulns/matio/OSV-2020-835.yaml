@@ -11,7 +11,6 @@ details: |
   H5G_node_cmp3
   H5B_find
   H5G__stab_lookup
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -21,8 +20,10 @@ affects:
   versions:
   - v1.5.18
   - v1.5.19
+modified: '2021-06-21T06:56:28.306564Z'
+published: '2020-07-14T22:13:39.549065Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=17337
-modified: '2021-03-09T04:49:06.102891Z'
-published: '2020-07-14T22:13:39.549065Z'

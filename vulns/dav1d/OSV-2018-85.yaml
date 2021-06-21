@@ -11,15 +11,16 @@ details: |
   put_8tap_scaled_c
   put_8tap_sharp_scaled_c
   mc
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://code.videolan.org/videolan/dav1d.git
     introduced: 4a646a0ca25a22a809bfcb743332f6b6646d86a3:ec53ec6d5b4ebbb06d5c7209fd4f25634a6ad606
     fixed: 66adb457af2bedc1280af147047c64683834d939
+modified: '2021-06-21T06:56:25.645309Z'
+published: '2021-01-13T00:00:39.442989Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11378
-modified: '2021-03-09T04:49:05.027357Z'
-published: '2021-01-13T00:00:39.442989Z'

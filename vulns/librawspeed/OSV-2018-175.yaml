@@ -11,15 +11,16 @@ details: |
   rawspeed::VC5Decompressor::Wavelet::HighPassBand::decode
   rawspeed::VC5Decompressor::decode
   VC5Decompressor.cpp
-severity: HIGH
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/darktable-org/rawspeed.git
     introduced: 0a4f7451c2313f2d2daf3b98a4ba4669045874f4
     fixed: 0bcf3488a4989c2724f0c4383401b0d0dcfc3dcc
+modified: '2021-06-21T06:56:22.957009Z'
+published: '2021-01-13T00:01:11.945159Z'
+ecosystem_specific:
+  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11429
-modified: '2021-03-09T04:49:04.856287Z'
-published: '2021-01-13T00:01:11.945159Z'

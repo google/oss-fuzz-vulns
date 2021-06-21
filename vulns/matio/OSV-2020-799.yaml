@@ -11,7 +11,6 @@ details: |
   ReadInt32DataDouble
   ReadInt32Data
   Mat_VarRead4
-severity: HIGH
 affects:
   ranges:
   - type: GIT
@@ -21,8 +20,10 @@ affects:
   - v1.5.18
   - v1.5.19
   - v1.5.20
+modified: '2021-06-21T06:56:28.170136Z'
+published: '2020-07-14T05:37:38.154412Z'
+ecosystem_specific:
+  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21421
-modified: '2021-03-09T04:51:32.932401Z'
-published: '2020-07-14T05:37:38.154412Z'

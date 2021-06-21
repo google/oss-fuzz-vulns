@@ -11,15 +11,16 @@ details: |
   virtual thunk to parquet::ByteStreamSplitDecoder<parquet::PhysicalType<
   parquet::TypedDecoder<parquet::PhysicalType<
   parquet::internal::TypedRecordReader<parquet::PhysicalType<
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/apache/arrow.git
     introduced: 431fdbfbc0fb4bb16c4a89298404ad16784db2a0
     fixed: faf9bc011cb452e9def7dcd63dd3a0f6ec823534
+modified: '2021-06-21T06:56:19.565077Z'
+published: '2020-06-24T01:51:09.174614Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21453
-modified: '2021-03-09T04:49:05.921430Z'
-published: '2020-06-24T01:51:09.174614Z'

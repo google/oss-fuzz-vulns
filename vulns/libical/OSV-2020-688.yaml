@@ -11,7 +11,6 @@ details: |
   icalparameter_new_from_value_string
   icalparser_add_line
   icalparser_parse
-severity: HIGH
 affects:
   ranges:
   - type: GIT
@@ -22,8 +21,10 @@ affects:
     repo: https://github.com/libical/libical.git
     introduced: 234bf4b24168052b97200b1893da9e727fe44b9f
     fixed: 584a7b4832551d75e4dcacc7cfece7ddd0fdc74c
+modified: '2021-06-21T06:56:21.447746Z'
+published: '2020-07-01T00:00:24.868591Z'
+ecosystem_specific:
+  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14737
-modified: '2021-03-09T04:49:06.023221Z'
-published: '2020-07-01T00:00:24.868591Z'

@@ -11,7 +11,6 @@ details: |
   jpx_read_image
   fz_load_jpx
   pdf_load_jpx
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -21,8 +20,10 @@ affects:
   versions:
   - 1.13.0
   - 1.13.0-rc1
+modified: '2021-06-21T06:56:19.133762Z'
+published: '2021-01-15T00:01:17.401537Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=8866
-modified: '2021-03-09T04:49:04.989262Z'
-published: '2021-01-15T00:01:17.401537Z'

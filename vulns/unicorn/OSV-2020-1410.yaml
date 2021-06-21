@@ -11,7 +11,6 @@ details: |
   float64_squash_input_denormal_aarch64eb
   float64_to_float32_aarch64eb
   helper_vfp_fcvtsd_aarch64eb
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -25,8 +24,10 @@ affects:
   - 1.0.2-rc4
   - 1.0.2-rc5
   - 1.0.2-rc6
+modified: '2021-06-21T06:56:25.293940Z'
+published: '2020-07-28T00:00:12.342145Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=17032
-modified: '2021-03-15T04:55:27.753054Z'
-published: '2020-07-28T00:00:12.342145Z'

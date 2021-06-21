@@ -11,15 +11,16 @@ details: |
   mrb_str_len_to_dbl
   mrb_str_len_to_inum
   mrb_str_to_i
-severity: HIGH
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/mruby/mruby
     introduced: 59756aef149dd70d74146526c70679c47cab0811
     fixed: 2124b9b4c95e66e63b1eb26a8dab49753b82fd6c
+modified: '2021-06-21T06:56:25.557999Z'
+published: '2020-06-26T00:00:11.566328Z'
+ecosystem_specific:
+  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=19902
-modified: '2021-03-09T04:49:05.787322Z'
-published: '2020-06-26T00:00:11.566328Z'

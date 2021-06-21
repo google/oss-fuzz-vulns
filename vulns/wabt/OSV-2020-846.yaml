@@ -11,7 +11,6 @@ details: |
   std::__1::char_traits<char>::compare
   wabt::string_view::compare
   wabt::operator==
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -26,8 +25,10 @@ affects:
   - 1.0.20
   - gh-actions-test
   - gh-actions-test2
+modified: '2021-06-21T06:56:24.195681Z'
+published: '2020-07-14T22:13:43.983088Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22358
-modified: '2021-03-09T04:49:06.108990Z'
-published: '2020-07-14T22:13:43.983088Z'

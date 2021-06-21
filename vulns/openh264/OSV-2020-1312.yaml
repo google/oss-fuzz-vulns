@@ -11,15 +11,16 @@ details: |
   FilterInput8bitWithStride_c
   McHorVer20_c
   McHorVer30_c
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/cisco/openh264.git
     introduced: unknown:70eeb783515dbfee3e0c781d6667838caba5113b
     fixed: c81d7f67583ce92664147110e8d7cd36b17a272c:be82ccf42fc044ae1ea0792837a9415eaf535002
+modified: '2021-06-21T06:56:23.749023Z'
+published: '2020-07-22T21:50:05.402144Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13004
-modified: '2021-03-09T04:49:05.204032Z'
-published: '2020-07-22T21:50:05.402144Z'

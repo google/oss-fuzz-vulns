@@ -11,7 +11,6 @@ details: |
   r_str_utf8_codepoint
   r_str_char_fullwidth
   r_str_len_utf8
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -29,8 +28,10 @@ affects:
   - 4.4.0
   - Continuous-Windows
   - continuous
+modified: '2021-06-21T06:56:23.085207Z'
+published: '2020-07-01T00:00:01.824434Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18122
-modified: '2021-03-09T04:49:05.821055Z'
-published: '2020-07-01T00:00:01.824434Z'

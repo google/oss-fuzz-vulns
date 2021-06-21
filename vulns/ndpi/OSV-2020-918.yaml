@@ -11,7 +11,6 @@ details: |
   ndpi_search_oracle
   check_ndpi_tcp_flow_func
   ndpi_detection_process_packet
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -20,8 +19,10 @@ affects:
     fixed: 17235d234eb6a55fd0753ab4f3b6fc8f66eb7659
   versions:
   - '3.2'
+modified: '2021-06-21T06:56:22.626401Z'
+published: '2020-07-22T00:00:06.875320Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21780
-modified: '2021-03-09T04:49:06.151934Z'
-published: '2020-07-22T00:00:06.875320Z'

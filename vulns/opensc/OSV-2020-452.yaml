@@ -9,15 +9,16 @@ details: |
   Crash type: UNKNOWN READ
   Crash state:
   _fini
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/OpenSC/OpenSC
     introduced: 61cd7fcdb2fdc9214b431abb631b202314dcc32f
     fixed: 7a1e42e1352201127d1a97b6cb5f41e48cace0f5
+modified: '2021-06-21T06:56:27.087182Z'
+published: '2020-07-01T00:00:10.397492Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18611
-modified: '2021-03-09T04:49:05.896235Z'
-published: '2020-07-01T00:00:10.397492Z'

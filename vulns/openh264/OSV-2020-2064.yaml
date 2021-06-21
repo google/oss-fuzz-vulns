@@ -11,15 +11,16 @@ details: |
   WelsDec::DoErrorConSliceCopy
   WelsDec::ImplementErrorCon
   WelsDec::CheckAndFinishLastPic
-severity: HIGH
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/cisco/openh264.git
     introduced: 66ef706acd55b0b8daec32ca299d2586a1f473c9
     fixed: b52786888ddce9d6bc06b7825ba9bffc65924e0c
+modified: '2021-06-21T06:56:23.878467Z'
+published: '2020-10-14T00:00:25.487643Z'
+ecosystem_specific:
+  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26285
-modified: '2021-02-25T00:08:27.638536Z'
-published: '2020-10-14T00:00:25.487643Z'

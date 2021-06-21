@@ -11,7 +11,6 @@ details: |
   pcap_filter_with_aux_data
   pcap_filter
   pcap_offline_filter
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -20,8 +19,10 @@ affects:
   versions:
   - libpcap-1.10-bp
   - libpcap-1.10.0
+modified: '2021-06-21T06:56:24.796009Z'
+published: '2020-07-14T05:37:43.627443Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22220
-modified: '2021-03-09T05:46:55.101176Z'
-published: '2020-07-14T05:37:43.627443Z'

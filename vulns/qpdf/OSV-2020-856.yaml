@@ -11,7 +11,6 @@ details: |
   deflate_slow
   deflate
   Pl_Flate::handleData
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -27,8 +26,10 @@ affects:
   - release-qpdf-9.1.0
   - release-qpdf-9.1.1
   - release-qpdf-9.1.rc1
+modified: '2021-06-21T06:56:19.316621Z'
+published: '2020-07-14T22:13:46.996334Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18745
-modified: '2021-03-09T04:49:06.114913Z'
-published: '2020-07-14T22:13:46.996334Z'

@@ -11,7 +11,6 @@ details: |
   void hb_ot_map_t::apply<GPOSProxy>
   hb_ot_map_t::position
   hb_ot_shape_plan_t::position
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -21,8 +20,10 @@ affects:
   versions:
   - 2.7.1
   - 2.7.2
+modified: '2021-06-21T06:56:20.484002Z'
+published: '2020-07-31T00:01:20.122854Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24508
-modified: '2021-03-09T04:49:05.326295Z'
-published: '2020-07-31T00:01:20.122854Z'

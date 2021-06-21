@@ -11,7 +11,6 @@ details: |
   dict_find_string
   gs_main_tempnames
   gs_main_finit
-severity: HIGH
 affects:
   ranges:
   - type: GIT
@@ -24,8 +23,10 @@ affects:
     fixed: bbecd13cc34f3dcdcedd726e7de12c988da9794a
   versions:
   - ghostpdl-9.51rc1
+modified: '2021-06-21T06:56:21.525798Z'
+published: '2020-09-29T00:00:26.901998Z'
+ecosystem_specific:
+  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20652
-modified: '2021-03-09T04:49:05.486756Z'
-published: '2020-09-29T00:00:26.901998Z'

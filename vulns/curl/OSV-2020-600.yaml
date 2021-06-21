@@ -11,15 +11,16 @@ details: |
   dprintf_formatf
   curl_mvsnprintf
   curl_msnprintf
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/curl/curl.git
     introduced: 0a5d28fa2ec872de55c8d3f3b62675f17ca9cd45
     fixed: 84ced9389e1a7f576812e0675b37056331c4dbcd
+modified: '2021-06-21T06:56:28.063401Z'
+published: '2020-07-01T00:00:19.594728Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=16699
-modified: '2021-03-09T04:49:05.974815Z'
-published: '2020-07-01T00:00:19.594728Z'

@@ -11,7 +11,6 @@ details: |
   msix_vector_masked
   msix_is_masked
   msix_table_mmio_write
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -24,8 +23,10 @@ affects:
   - v5.2.0-rc2
   - v5.2.0-rc3
   - v5.2.0-rc4
+modified: '2021-06-21T06:56:20.853091Z'
+published: '2020-11-15T22:34:13.437070Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=27418
-modified: '2021-03-09T04:49:05.693372Z'
-published: '2020-11-15T22:34:13.437070Z'

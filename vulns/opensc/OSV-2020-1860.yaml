@@ -11,15 +11,16 @@ details: |
   sc_get_response
   sc_transmit
   sc_transmit_apdu
-severity: HIGH
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/OpenSC/OpenSC
     introduced: b02da8348be97d4b24081783f6af46757373bc3e
     fixed: 732ed77ad67e5303c46c0fa767929afd87076c87
+modified: '2021-06-21T06:56:27.145673Z'
+published: '2020-09-28T00:00:07.869363Z'
+ecosystem_specific:
+  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25998
-modified: '2021-03-09T04:49:05.478732Z'
-published: '2020-09-28T00:00:07.869363Z'

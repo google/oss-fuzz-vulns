@@ -12,15 +12,16 @@ details: |
   hermes::regex::Parser<hermes::regex::Regex<hermes::regex::UTF16RegexTraits>, cha
   hermes::regex::Parser<hermes::regex::Regex<hermes::regex::UTF16RegexTraits>, cha
   hermes::regex::Parser<hermes::regex::Regex<hermes::regex::UTF16RegexTraits>, cha
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/facebook/hermes.git
     introduced: 58f7c31e9da3ac8cdf894307080929fa93648870
     fixed: c593863a881796f8bf4f4faea1fa179edf5d532f
+modified: '2021-06-21T06:56:18.974144Z'
+published: '2020-09-21T00:00:18.040780Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25815
-modified: '2021-03-09T04:49:05.458034Z'
-published: '2020-09-21T00:00:18.040780Z'

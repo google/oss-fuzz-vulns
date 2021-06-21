@@ -11,15 +11,16 @@ details: |
   __RefHead_ZIP_INSERT
   __RefHead_ZIP_INSERT
   RefTree_add
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/open62541/open62541.git
     introduced: 9789cdcdb64377bc449e78f6bdc6568d2c53edc7
     fixed: 054f460d6e9e98deba186eee6bd956756dfc89e0
+modified: '2021-06-21T06:56:26.821664Z'
+published: '2020-07-01T00:00:20.478171Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15133
-modified: '2021-03-09T04:49:05.981866Z'
-published: '2020-07-01T00:00:20.478171Z'

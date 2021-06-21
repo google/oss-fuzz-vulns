@@ -11,15 +11,16 @@ details: |
   ideint_process
   impeg2d_deinterlace
   impeg2d_dec_pic_data_thread
-severity: HIGH
 affects:
   ranges:
   - type: GIT
     repo: https://android.googlesource.com/platform/external/libmpeg2
     introduced: unknown:313d5efa2d866f01aaf25b015f31480ce095e7f5
     fixed: 2841477682f8a718bcfba2a8da2e3cce15135b37
+modified: '2021-06-21T06:56:21.218139Z'
+published: '2020-07-22T00:00:14.651452Z'
+ecosystem_specific:
+  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=16813
-modified: '2021-03-09T04:49:06.160574Z'
-published: '2020-07-22T00:00:14.651452Z'

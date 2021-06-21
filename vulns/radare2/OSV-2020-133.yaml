@@ -11,7 +11,6 @@ details: |
   r_bin_object_rebuild_classes_ht
   r_bin_object_set_items
   r_bin_object_new
-severity: HIGH
 affects:
   ranges:
   - type: GIT
@@ -20,8 +19,10 @@ affects:
     fixed: 498292a70d65073a7bf1a36e3997debe8f1f0792
   versions:
   - 4.4.0
+modified: '2021-06-21T06:56:23.230009Z'
+published: '2020-06-24T01:51:15.618979Z'
+ecosystem_specific:
+  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21602
-modified: '2021-03-09T04:49:05.212887Z'
-published: '2020-06-24T01:51:15.618979Z'

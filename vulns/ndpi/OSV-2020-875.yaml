@@ -11,7 +11,6 @@ details: |
   ndpi_strdup
   processClientServerHello
   processTLSBlock
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -20,8 +19,10 @@ affects:
     fixed: 50f4049b58b9d04a403ba7570935f887aef937db:6c366d73e27ab2097a197cd6d9870c1ca2457cc8
   versions:
   - '3.4'
+modified: '2021-06-21T06:56:22.818264Z'
+published: '2020-07-14T22:13:54.264021Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22475
-modified: '2021-03-09T04:49:06.127186Z'
-published: '2020-07-14T22:13:54.264021Z'

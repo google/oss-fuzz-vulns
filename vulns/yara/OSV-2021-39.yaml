@@ -11,7 +11,6 @@ details: |
   dotnet_parse_tilde_2
   dotnet_parse_tilde
   dotnet_parse_com
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -32,8 +31,10 @@ affects:
   - v4.0.3
   - v4.0.4
   - v4.0.5
+modified: '2021-06-21T06:56:27.644866Z'
+published: '2021-01-10T00:01:34.995212Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29419
-modified: '2021-03-24T06:54:40.445698Z'
-published: '2021-01-10T00:01:34.995212Z'

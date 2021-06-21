@@ -11,7 +11,6 @@ details: |
   BEInt<unsigned int, 4>::operator unsigned int
   AAT::KerxSubTableFormat2::sanitize
   hb_sanitize_context_t::return_t AAT::KerxTable::dispatch<hb_sanitize_context_t>
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -21,8 +20,10 @@ affects:
   versions:
   - 2.0.0
   - 2.0.1
+modified: '2021-06-21T06:56:20.431394Z'
+published: '2021-01-13T00:01:04.493783Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11033
-modified: '2021-03-09T04:49:04.842552Z'
-published: '2021-01-13T00:01:04.493783Z'

@@ -11,7 +11,6 @@ details: |
   text_normalize_buffer
   arj_read_main_header
   cli_unarj_open
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -25,8 +24,10 @@ affects:
   versions:
   - clamav-0.102.2
   - clamav-0.102.3
+modified: '2021-06-21T06:56:25.386965Z'
+published: '2020-09-18T00:00:32.617703Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22211
-modified: '2021-03-09T04:49:05.449598Z'
-published: '2020-09-18T00:00:32.617703Z'

@@ -11,15 +11,16 @@ details: |
   crc32
   htp_gzip_decompressor_decompress
   htp_tx_res_process_body_data_ex
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/OISF/libhtp.git
     introduced: 3c6555078ec30e0baa4855ec69d55a22fc8d3589
     fixed: fe16fa764f7cea57be5a288ee85b27dffc460f6f
+modified: '2021-06-21T06:56:26.118701Z'
+published: '2020-07-01T00:00:06.294878Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=17262
-modified: '2021-03-09T04:49:05.857195Z'
-published: '2020-07-01T00:00:06.294878Z'

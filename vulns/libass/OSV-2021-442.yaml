@@ -11,15 +11,16 @@ details: |
   fnv_32a_buf
   font_hash
   ass_cache_get
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/libass/libass.git
     introduced: 82b225b3d6653091d028b39d561d185ed76a7be5
     fixed: 8f987713dd0fa791c5c511c13bb27021fa653fb0
+modified: '2021-06-21T06:56:18.538543Z'
+published: '2021-02-24T00:00:23.135123Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31301
-modified: '2021-03-09T05:46:29.167751Z'
-published: '2021-02-24T00:00:23.135123Z'

@@ -11,15 +11,16 @@ details: |
   WelsDec::SetUnRef
   WelsDec::WelsResetRefPic
   WelsFreeDynamicMemory
-severity: HIGH
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/cisco/openh264.git
     introduced: c185ac351eff0ae277bfe14a3b2ad52e9ed8ab81
     fixed: aef502aca2b912fe24764b02161a61eacdf249ba
+modified: '2021-06-21T06:56:23.730880Z'
+published: '2020-07-01T00:00:13.407780Z'
+ecosystem_specific:
+  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18438
-modified: '2021-03-09T04:49:05.923725Z'
-published: '2020-07-01T00:00:13.407780Z'

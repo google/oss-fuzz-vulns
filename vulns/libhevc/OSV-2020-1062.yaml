@@ -11,7 +11,6 @@ details: |
   ihevc_recon_4x4_ttype1
   ihevcd_iquant_itrans_recon_ctb
   ihevcd_process
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -23,8 +22,10 @@ affects:
   - android-mainline-10.0.0_r6
   - android-mainline-10.0.0_r8
   - platform-tools-29.0.5
+modified: '2021-06-21T06:56:18.876826Z'
+published: '2020-07-22T21:49:44.388184Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18991
-modified: '2021-03-09T04:49:05.068673Z'
-published: '2020-07-22T21:49:44.388184Z'

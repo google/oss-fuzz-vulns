@@ -11,15 +11,16 @@ details: |
   destroy_op_array
   fuzzer_do_request
   fuzzer_do_request_from_buffer
-severity: HIGH
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/php/php-src.git
     introduced: 9bf119832dbf625174794834c71b1e793450d87f
     fixed: 44ad2db15fe786b07ce793624885e0c43e0af897
+modified: '2021-06-21T06:56:21.024698Z'
+published: '2020-07-30T00:00:22.757167Z'
+ecosystem_specific:
+  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24436
-modified: '2021-03-09T04:49:05.322586Z'
-published: '2020-07-30T00:00:22.757167Z'

@@ -11,7 +11,6 @@ details: |
   luaG_getfuncline
   luaG_runerror
   luaD_growstack
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -20,8 +19,10 @@ affects:
     fixed: e7803f7dbcdc966ab1f9db143424ee811ab1a398
   versions:
   - v5.4.2
+modified: '2021-06-21T06:56:18.601051Z'
+published: '2021-03-11T00:01:02.762585Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31892
-modified: '2021-03-11T00:01:02.762866Z'
-published: '2021-03-11T00:01:02.762585Z'

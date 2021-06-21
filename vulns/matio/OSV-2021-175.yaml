@@ -11,15 +11,16 @@ details: |
   H5MM_memcpy
   H5D__scatter_mem
   H5D__scatgath_read
-severity: HIGH
 affects:
   ranges:
   - type: GIT
     repo: git://git.code.sf.net/p/matio/matio
     introduced: 92e9a90b02cb3af869d86de1a1428b4bd9e6e7a5
     fixed: b8156d287254b2fca00f266d4b5b12d982329625
+modified: '2021-06-21T06:56:28.229675Z'
+published: '2021-01-13T21:57:50.415929Z'
+ecosystem_specific:
+  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29545
-modified: '2021-03-04T12:01:00.684989Z'
-published: '2021-01-13T21:57:50.415929Z'

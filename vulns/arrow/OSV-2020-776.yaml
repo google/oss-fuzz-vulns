@@ -11,15 +11,16 @@ details: |
   arrow::ConcatenateBuffers
   arrow::ConcatenateImpl::Visit
   arrow::Status arrow::VisitTypeInline<arrow::ConcatenateImpl>
-severity: HIGH
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/apache/arrow.git
     introduced: 39d9345ec465c735ff071c20737007209afe7405
     fixed: 389b1535bbb40da80f441c02ff93335eb5407316
+modified: '2021-06-21T06:56:19.659331Z'
+published: '2020-07-14T05:37:29.441412Z'
+ecosystem_specific:
+  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24101
-modified: '2021-03-09T04:49:06.069285Z'
-published: '2020-07-14T05:37:29.441412Z'

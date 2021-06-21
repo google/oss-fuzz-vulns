@@ -11,7 +11,6 @@ details: |
   cpu_arm_exec_armeb
   resume_all_vcpus_armeb
   vm_start_armeb
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -26,8 +25,10 @@ affects:
   - 1.0.2-rc4
   - 1.0.2-rc5
   - 1.0.2-rc6
+modified: '2021-06-21T06:56:25.308434Z'
+published: '2021-02-08T00:00:08.491999Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30444
-modified: '2021-03-11T12:00:48.852263Z'
-published: '2021-02-08T00:00:08.491999Z'

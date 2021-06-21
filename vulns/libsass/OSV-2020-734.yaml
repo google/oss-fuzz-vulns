@@ -11,7 +11,6 @@ details: |
   Sass::Prelexer::quoted_string
   char const* Sass::Parser::lex<&
   Sass::Parser::parse_value_schema
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -23,8 +22,10 @@ affects:
   - 3.6.1
   - 3.6.2
   - 3.6.3
+modified: '2021-06-21T06:56:24.529659Z'
+published: '2020-07-01T00:00:27.416077Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15890
-modified: '2021-03-09T04:49:06.047896Z'
-published: '2020-07-01T00:00:27.416077Z'

@@ -11,7 +11,6 @@ details: |
   derive_collocated_motion_vectors
   derive_temporal_luma_vector_prediction
   fill_luma_motion_vector_predictors
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -24,8 +23,10 @@ affects:
   - v1.8.0
   - v1.9.0
   - v1.9.1
-modified: '2021-03-09T05:46:30.281672Z'
+modified: '2021-06-21T06:56:20.048428Z'
 published: '2021-02-10T00:00:17.357392Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30568

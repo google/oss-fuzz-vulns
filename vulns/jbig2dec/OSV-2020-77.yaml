@@ -11,15 +11,16 @@ details: |
   jbig2_text_region
   jbig2_parse_segment
   jbig2_complete_page
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: git://git.ghostscript.com/jbig2dec.git
     introduced: 0665a13dcda6ab99dd93c1002d52e0206c7ecb0b
     fixed: 778862c21165b485302010beb5fb0765f8338b96
+modified: '2021-06-21T06:56:26.199825Z'
+published: '2020-06-24T01:51:13.041556Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21571
-modified: '2021-03-09T04:49:06.066893Z'
-published: '2020-06-24T01:51:13.041556Z'

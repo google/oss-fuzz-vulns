@@ -11,15 +11,16 @@ details: |
   MEM_read32
   ZSTD_compressBlock_greedy_extDict_row
   ZSTD_ldm_blockCompress
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/facebook/zstd
     introduced: 0b370e9da8072c7fc967985e27a794b48555a6c7
     fixed: d40f55cd950919d7eac951b122668e55e33e5202
-modified: '2021-05-05T00:00:30.976012Z'
+modified: '2021-06-21T06:56:19.427442Z'
 published: '2021-05-05T00:00:30.975717Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=33956

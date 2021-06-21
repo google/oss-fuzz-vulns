@@ -11,15 +11,16 @@ details: |
   s_A85D_process
   gs_scan_token
   interp
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: git://git.ghostscript.com/ghostpdl.git
     introduced: unknown:668917a10e7eada030f7d2dddec9f579fddeed3d
     fixed: ebabebad34a3811230b7bfe351eface7f5efc8a9
+modified: '2021-06-21T06:56:21.568612Z'
+published: '2020-09-29T00:00:31.252499Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21616
-modified: '2021-03-09T04:49:05.488492Z'
-published: '2020-09-29T00:00:31.252499Z'

@@ -11,15 +11,16 @@ details: |
   parse_mode
   git_tree__parse_raw
   git_object__from_raw
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/libgit2/libgit2
     introduced: a1d5fd0630c6f7e3ac23bc9e13ba33901dfddba4
     fixed: f647bbc88d243a81d8771ba2fd1c346c34a3d9d7
+modified: '2021-06-21T06:56:21.943367Z'
+published: '2021-01-13T00:01:22.703610Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11167
-modified: '2021-03-09T04:49:04.872362Z'
-published: '2021-01-13T00:01:22.703610Z'

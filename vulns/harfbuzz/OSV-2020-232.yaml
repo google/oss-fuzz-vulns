@@ -7,15 +7,16 @@ details: "OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id
   \nCrash type: Heap-buffer-overflow READ 2\nCrash state:\nBEInt<unsigned short, 2>::operator\
   \ unsigned short\nOT::IntType<unsigned short, 2u>::operator unsigned int\nOT::ArrayOf<OT::FeatureTableSubstitutionRecord,\
   \ OT::IntType<unsigned short, 2u> \n"
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/harfbuzz/harfbuzz.git
     introduced: 0b39c48064864850193bc80e2566839546be3551
     fixed: a32ecc15aec6518f5a126fb8f3643e563327f74d
+modified: '2021-06-21T06:56:20.538209Z'
+published: '2020-06-26T00:00:06.617669Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20021
-modified: '2021-03-09T04:49:05.776328Z'
-published: '2020-06-26T00:00:06.617669Z'

@@ -11,7 +11,6 @@ details: |
   LibRaw::init_fuji_block
   LibRaw::fuji_decode_strip
   LibRaw::fuji_decode_loop
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -22,8 +21,10 @@ affects:
   - 0.20-RC2
   - 0.20.1
   - 0.20.2
+modified: '2021-06-21T06:56:25.784693Z'
+published: '2020-07-28T00:00:01.793422Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24016
-modified: '2021-03-24T04:54:29.304749Z'
-published: '2020-07-28T00:00:01.793422Z'

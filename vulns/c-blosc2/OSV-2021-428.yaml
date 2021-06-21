@@ -11,15 +11,16 @@ details: |
   frame_get_lazychunk
   frame_decompress_chunk
   blosc2_schunk_decompress_chunk
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/Blosc/c-blosc2.git
     introduced: 861ba79f31393dec0a0782ca11cf32cebb6f6610
     fixed: cb44cf0fc82cf19efb002bba0eb5cc42e9527c3f
+modified: '2021-06-21T06:56:26.012015Z'
+published: '2021-02-22T00:00:19.627461Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31189
-modified: '2021-03-07T00:06:17.948Z'
-published: '2021-02-22T00:00:19.627461Z'

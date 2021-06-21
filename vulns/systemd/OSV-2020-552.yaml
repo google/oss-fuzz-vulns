@@ -11,15 +11,16 @@ details: |
   varlink_enqueue_json
   varlink_error
   varlink_errorb
-severity: HIGH
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/systemd/systemd
     introduced: d76846756364c9f67be960f7fb8459c10761f033
     fixed: be44e091621a71525b850c84fc149c644a63f779
+modified: '2021-06-21T06:56:25.856009Z'
+published: '2020-07-01T00:00:16.498284Z'
+ecosystem_specific:
+  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14708
-modified: '2021-03-09T04:49:05.949458Z'
-published: '2020-07-01T00:00:16.498284Z'

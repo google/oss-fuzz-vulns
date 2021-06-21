@@ -11,15 +11,16 @@ details: |
   ih264d_cavlc_4x4res_block_totalcoeff_11to16
   ih264d_cavlc_parse4x4coeff_n0to7
   ih264d_cavlc_parse_8x8block_both_available
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://android.googlesource.com/platform/external/libavc
     introduced: unknown:9046ac21822cbb46358b5731294e6e47db571e34
     fixed: 6b7b0ac4eefa224de0d33a5036b55f416ee4e224
+modified: '2021-06-21T06:56:22.207223Z'
+published: '2020-07-22T21:49:51.644958Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=16514
-modified: '2021-03-09T04:49:05.117868Z'
-published: '2020-07-22T21:49:51.644958Z'

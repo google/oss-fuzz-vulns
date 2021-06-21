@@ -11,15 +11,16 @@ details: |
   tvb_memcpy
   quic_extract_header
   dissect_quic
-severity: HIGH
 affects:
   ranges:
   - type: GIT
     repo: https://gitlab.com/wireshark/wireshark.git
     introduced: 3967f60e45e5d17bc8232fed9be7d5fadf5e82a7
     fixed: ba54b896969930491645aa3ec4125b76480add9c
+modified: '2021-06-21T06:56:24.089718Z'
+published: '2020-07-01T00:00:22.588939Z'
+ecosystem_specific:
+  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15936
-modified: '2021-03-09T04:49:06.001540Z'
-published: '2020-07-01T00:00:22.588939Z'

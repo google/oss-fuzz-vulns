@@ -11,15 +11,16 @@ details: |
   vips_foreign_load_gif_render
   vips_foreign_load_gif_next_page
   vips_foreign_load_gif_generate
-severity: HIGH
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/libvips/libvips
     introduced: f88dab9ccdecd1948239fffbd86629db247e5c05
     fixed: 3ad3c30ab4f3791e438558e4a9cf5481da2f1156
+modified: '2021-06-21T06:56:24.220388Z'
+published: '2020-06-24T01:51:12.855986Z'
+ecosystem_specific:
+  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20613
-modified: '2021-03-09T04:49:06.045548Z'
-published: '2020-06-24T01:51:12.855986Z'

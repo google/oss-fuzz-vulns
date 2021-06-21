@@ -11,15 +11,16 @@ details: |
   g_array_append_vals
   g_byte_array_append
   fu_efi_firmware_volume_write
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/fwupd/fwupd.git
     introduced: 278c3998a5559a5fe31c2d42e85b796765495e56
     fixed: be83a8eeeac807538cbfffc51ed683bf4e7be6d0
+modified: '2021-06-21T06:56:25.521910Z'
+published: '2021-03-21T00:00:08.667933Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=32249
-modified: '2021-03-21T00:00:08.668210Z'
-published: '2021-03-21T00:00:08.667933Z'

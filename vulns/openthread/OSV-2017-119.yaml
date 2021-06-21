@@ -11,15 +11,16 @@ details: |
   ot::MeshCoP::CommissionerSessionIdTlv::GetCommissionerSessionId
   ot::NetworkData::Leader::HandleCommissioningSet
   ot::Coap::Coap::ProcessReceivedRequest
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/openthread/openthread
     introduced: 71d40a5c838d345248fbc130c74182dda99d85f1
     fixed: ba148cf5bf7fa7cc445fb53c4aa88886d01e76d0
+modified: '2021-06-21T06:56:25.078490Z'
+published: '2021-01-13T21:57:51.011913Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=3376
-modified: '2021-03-09T04:49:04.743631Z'
-published: '2021-01-13T21:57:51.011913Z'

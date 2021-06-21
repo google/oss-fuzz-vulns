@@ -11,15 +11,16 @@ details: |
   read_reloc
   populate_relocs_record_from_dynamic
   populate_relocs_record
-severity: HIGH
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/radare/radare2
     introduced: 6124df443f347d1744a102a58dc3335e85063ea5
     fixed: 97f2d9cf5cdaee655e5a5527c78f42715b61ad51
+modified: '2021-06-21T06:56:23.033548Z'
+published: '2020-06-24T01:51:12.430335Z'
+ecosystem_specific:
+  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21835
-modified: '2021-03-09T04:49:05.995483Z'
-published: '2020-06-24T01:51:12.430335Z'

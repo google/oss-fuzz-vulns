@@ -11,7 +11,6 @@ details: |
   Splash::pipeRunSimpleXBGR8
   Splash::blitImage
   Splash::drawImage
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
@@ -51,8 +50,10 @@ affects:
   - poppler-20.12.0
   - poppler-20.12.1
   - poppler-21.01.0
+modified: '2021-06-21T06:56:23.499136Z'
+published: '2020-07-14T05:37:37.128981Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23086
-modified: '2021-03-09T04:49:06.080049Z'
-published: '2020-07-14T05:37:37.128981Z'

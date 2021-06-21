@@ -11,15 +11,16 @@ details: |
   cil_destroy_block
   cil_destroy_data
   cil_tree_node_destroy
-severity: HIGH
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/SELinuxProject/selinux
     introduced: 1048f8d329a0e34a2529b3376fb085c5e6b3db0d
     fixed: eba0ffee01ee11bb4fc3f6505d9cf69693088621
+modified: '2021-06-21T06:56:27.693185Z'
+published: '2021-02-04T00:00:11.709031Z'
+ecosystem_specific:
+  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30234
-modified: '2021-03-08T12:00:50.491909Z'
-published: '2021-02-04T00:00:11.709031Z'

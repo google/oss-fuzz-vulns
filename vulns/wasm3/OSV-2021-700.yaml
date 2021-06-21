@@ -11,15 +11,16 @@ details: |
   ReadLEB_u32
   InitElements
   Compile_ExtendedOpcode
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/wasm3/wasm3
     introduced: 8cb2fd424309fa6ff70cf00bfcedc4e66d3355c0
     fixed: 6bb612ccbfd5f8993a07a99092fab534722df1c3
-modified: '2021-04-29T00:00:12.163248Z'
+modified: '2021-06-21T06:56:18.562860Z'
 published: '2021-04-29T00:00:12.162949Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=33749

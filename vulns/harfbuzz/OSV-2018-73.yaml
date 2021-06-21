@@ -11,15 +11,16 @@ details: |
   hb_array_t<char const>::cmp
   OT::post::accelerator_t::cmp_key
   hb_bsearch_r
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/harfbuzz/harfbuzz.git
     introduced: dcfa4a8d711716de88b94a370663e9564e3e7ccc
     fixed: 8d2d41025619e24160ed80edd1c413168a2dda36
+modified: '2021-06-21T06:56:20.523539Z'
+published: '2021-01-13T00:00:35.135604Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11908
-modified: '2021-03-09T04:49:05.021245Z'
-published: '2021-01-13T00:00:35.135604Z'

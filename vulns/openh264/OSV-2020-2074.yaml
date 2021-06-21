@@ -11,15 +11,16 @@ details: |
   WelsDec::WelsMarkAsRef
   WelsDec::MarkECFrameAsRef
   WelsDec::CheckAndFinishLastPic
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/cisco/openh264.git
     introduced: 84590b641f4bd07ae448bdb05cb5700d991efa53:effb3931c7c67f34b167fe6e0a93253bf075f78c
     fixed: 992c1c147175126c3fe7ab78216aa0395f9e6c71
+modified: '2021-06-21T06:56:23.724818Z'
+published: '2020-10-16T00:00:35.289044Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26356
-modified: '2021-03-09T04:49:05.595486Z'
-published: '2020-10-16T00:00:35.289044Z'

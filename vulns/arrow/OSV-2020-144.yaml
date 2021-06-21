@@ -11,15 +11,16 @@ details: |
   int arrow::BitUtil::BitReader::GetBatch<short>
   parquet::LevelDecoder::Decode
   parquet::internal::TypedRecordReader<parquet::PhysicalType<
-severity: HIGH
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/apache/arrow.git
     introduced: 431fdbfbc0fb4bb16c4a89298404ad16784db2a0
     fixed: d2ab289294f5eaa175e6bc4ab5fb74b5ea013f6e
+modified: '2021-06-21T06:56:19.571401Z'
+published: '2020-06-24T01:51:16.108113Z'
+ecosystem_specific:
+  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20685
-modified: '2021-03-09T04:49:05.266764Z'
-published: '2020-06-24T01:51:16.108113Z'

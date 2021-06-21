@@ -11,15 +11,16 @@ details: |
   readstat_convert
   sas7bcat_parse_value_labels
   sas7bcat_parse_block
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/WizardMac/ReadStat
     introduced: unknown:d1bfd735515803800cb9708e3fca9e5c1e8e7a48
     fixed: dffa53abee99d49470d93531a95b9595d90ac5c7
+modified: '2021-06-21T06:56:26.218085Z'
+published: '2020-07-22T21:49:52.343920Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=12566
-modified: '2021-03-09T04:49:05.123523Z'
-published: '2020-07-22T21:49:52.343920Z'

@@ -11,15 +11,16 @@ details: |
   void cv::copyToMat<int>
   cv::decodeSRGBData
   cv::Jpeg2KOpjDecoder::readData
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/opencv/opencv.git
     introduced: bfd056ceb1ad6529e1a2103f60e6f089c6b70109
     fixed: f7b8f522ff4084d584628811a02a621736c3a731
+modified: '2021-06-21T06:56:19.262997Z'
+published: '2020-09-21T00:00:12.969129Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25779
-modified: '2021-03-09T04:49:05.457102Z'
-published: '2020-09-21T00:00:12.969129Z'

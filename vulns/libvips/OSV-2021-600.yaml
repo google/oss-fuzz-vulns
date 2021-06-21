@@ -11,7 +11,6 @@ details: |
   gif_internal_decode_frame
   gif_decode_frame
   vips_foreign_load_nsgif_generate
-severity: HIGH
 affects:
   ranges:
   - type: GIT
@@ -21,8 +20,10 @@ affects:
   - type: GIT
     repo: https://github.com/libvips/libvips
     introduced: 9bdf5e8cda3e0c63584984282b1e36d97c50bb1a
+modified: '2021-06-21T06:56:24.239542Z'
+published: '2021-04-04T00:00:13.289894Z'
+ecosystem_specific:
+  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=32855
-modified: '2021-04-04T00:00:13.290170Z'
-published: '2021-04-04T00:00:13.289894Z'

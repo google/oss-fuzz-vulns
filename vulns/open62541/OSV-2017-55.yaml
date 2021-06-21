@@ -11,7 +11,6 @@ details: |
   ExtensionObject_deleteMembers
   UA_Array_delete
   Array_decodeBinary
-severity: HIGH
 affects:
   ranges:
   - type: GIT
@@ -25,8 +24,10 @@ affects:
   - 0.2.1
   - v0.2.1
   - v0.2.2
+modified: '2021-06-21T06:56:26.744592Z'
+published: '2021-01-13T21:56:28.199946Z'
+ecosystem_specific:
+  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=4296
-modified: '2021-03-09T04:49:04.791127Z'
-published: '2021-01-13T21:56:28.199946Z'

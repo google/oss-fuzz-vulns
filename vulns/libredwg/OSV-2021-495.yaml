@@ -11,7 +11,6 @@ details: |
   bit_chain_free
   dwg_encode_MTEXT
   dwg_encode_add_object
-severity: HIGH
 affects:
   ranges:
   - type: GIT
@@ -29,8 +28,10 @@ affects:
   - 0.12.3.4185
   - 0.12.3.4189
   - 0.12.3.4191
+modified: '2021-06-21T06:56:26.599766Z'
+published: '2021-03-06T00:00:08.738235Z'
+ecosystem_specific:
+  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31724
-modified: '2021-03-09T05:00:58.677840Z'
-published: '2021-03-06T00:00:08.738235Z'

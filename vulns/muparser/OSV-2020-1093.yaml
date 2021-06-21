@@ -11,15 +11,16 @@ details: |
   mu::ParserBase::ParseCmdCodeBulk
   mu::ParserBase::ParseString
   mu::ParserBase::Eval
-severity: MEDIUM
 affects:
   ranges:
   - type: GIT
     repo: https://github.com/beltoforion/muparser.git
     introduced: unknown:e6c369c90c36e9c3443f465ad1d9cec9e42d38b6
     fixed: 86de758d6ebe9b84ae2f65bea640211dd8900ec4
+modified: '2021-06-21T06:56:18.644801Z'
+published: '2020-07-22T21:49:46.567121Z'
+ecosystem_specific:
+  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23330
-modified: '2021-03-09T04:49:05.085048Z'
-published: '2020-07-22T21:49:46.567121Z'
