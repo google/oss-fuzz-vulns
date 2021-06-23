@@ -17,6 +17,10 @@ affects:
     repo: https://android.googlesource.com/platform/external/libhevc
     introduced: d28f2210ee8e65afdfb07a1fd6582285d3d178e0
     fixed: 229e7ee2142c0f78c7736518a5c8cc1d131f4a30
+  - type: GIT
+    repo: https://android.googlesource.com/platform/external/libhevc
+    introduced: d28f2210ee8e65afdfb07a1fd6582285d3d178e0
+    fixed: 35d222d35253c15e130762fcf54a43d4543a2785
   versions:
   - android-mainline-10.0.0_r11
   - android-mainline-10.0.0_r6
@@ -27,7 +31,8 @@ affects:
   - android-r-preview-4
   - platform-tools-29.0.5
   - platform-tools-29.0.6
-modified: '2021-06-23T06:24:50.465628Z'
+  - android-mainline-10.0.0_r12
+modified: '2021-06-23T07:01:28.510385Z'
 published: '2020-07-22T21:49:39.707812Z'
 ecosystem_specific:
   severity: MEDIUM
