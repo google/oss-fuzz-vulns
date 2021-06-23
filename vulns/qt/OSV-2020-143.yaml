@@ -17,12 +17,8 @@ affects:
   - type: GIT
     repo: git://code.qt.io/qt/qtbase.git
     introduced: 13873c6bc6e9514e4b6d4e11f7100863a439e33c
-    fixed: 76fe36645eb41fa35e526a97874f1e15a39c3823
-  versions:
-  - v5.15.0
-  - v5.15.0-rc1
-  - v5.15.0-rc2
-modified: '2021-06-23T07:26:01.136059Z'
+    fixed: 6ebef2eb9a6a3630f9142fb040c3f87ba8eeac8e
+modified: '2021-06-23T13:30:00.000000Z'
 published: '2020-06-24T01:51:16.055970Z'
 ecosystem_specific:
   severity: MEDIUM
