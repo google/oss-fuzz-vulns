@@ -17,6 +17,10 @@ affects:
     repo: git://git.ghostscript.com/ghostpdl.git
     introduced: bd73d0c1d0c42fd1671b56f1277b5e9f25391907
     fixed: d703f355af5292e61dcd641332e249873ab5fb8a
+  - type: GIT
+    repo: git://git.ghostscript.com/ghostpdl.git
+    introduced: bd73d0c1d0c42fd1671b56f1277b5e9f25391907
+    fixed: 7876dd15467571e7c96241d763aa270e32f4b4d1
   versions:
   - ghostpdl-9.51
   - ghostpdl-9.51rc1
@@ -32,7 +36,7 @@ affects:
   - ghostpdl-9.52.1
   - ghostscript-9.51
   - ghostscript-9.52
-modified: '2021-06-23T06:25:40.389933Z'
+modified: '2021-06-23T07:14:28.914447Z'
 published: '2020-09-29T00:00:17.109944Z'
 database_specific:
   fixed_range: bad9f11895cbb4c0f53b7b0ef8f3502789d81315:d703f355af5292e61dcd641332e249873ab5fb8a
