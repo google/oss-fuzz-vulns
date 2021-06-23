@@ -17,6 +17,9 @@ affects:
     repo: https://github.com/OSGeo/gdal
     introduced: 38c1e385e81223476828d57aa83af5716a9256b7
     fixed: 767e3a56144f676ca738ef8f700e0e56035bd05a
+  - type: GIT
+    repo: https://github.com/OSGeo/gdal
+    introduced: 27b9bf644bcf1208f7d6594bdd104cc8a8bb0646
   versions:
   - v2.4.2
   - v2.4.3
@@ -30,7 +33,7 @@ affects:
   - v3.0.3RC1
   - v3.0.4
   - v3.0.4RC1
-modified: '2021-06-23T06:30:46.720884Z'
+modified: '2021-06-23T07:06:14.719393Z'
 published: '2020-07-01T00:00:06.889412Z'
 ecosystem_specific:
   severity: HIGH
