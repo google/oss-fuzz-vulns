@@ -17,11 +17,15 @@ affects:
     repo: https://github.com/opencv/opencv.git
     introduced: 6bcf0b5519c190826cf0f21efd87cbe256eabc48
     fixed: 25247b9f6e5e550868262b7611a9e575c1f7212a
+  - type: GIT
+    repo: https://github.com/opencv/opencv.git
+    introduced: 6bcf0b5519c190826cf0f21efd87cbe256eabc48
+    fixed: f7856a0f35ec9ff33077fc49804864707fb782d4
   versions:
   - 4.0.1
   - 4.1.0
   - 4.1.0-openvino
-modified: '2021-06-23T06:25:08.753255Z'
+modified: '2021-06-23T06:55:15.575485Z'
 published: '2020-07-22T21:50:00.758042Z'
 ecosystem_specific:
   severity: HIGH
