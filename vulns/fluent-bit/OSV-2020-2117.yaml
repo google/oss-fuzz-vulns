@@ -17,6 +17,9 @@ affects:
     repo: https://github.com/fluent/fluent-bit/
     introduced: d95ea655478ab9b0e97312ad80ac1da591ce7aaa
     fixed: 9a3bd47ec6121492e2c5e37ca14f5827bb7d6db2
+  - type: GIT
+    repo: https://github.com/fluent/fluent-bit/
+    introduced: aea2b787028482a159de615fe9a891deb19cb8dc
   versions:
   - v1.6.1
   - v1.6.10
@@ -39,7 +42,15 @@ affects:
   - v1.7.0-rc8
   - v1.7.0-rc9
   - v1.7.1
-modified: '2021-06-23T06:28:12.846600Z'
+  - v1.7.2
+  - v1.7.3
+  - v1.7.4
+  - v1.7.5
+  - v1.7.6
+  - v1.7.7
+  - v1.7.8
+  - v1.7.9
+modified: '2021-06-23T06:51:41.639272Z'
 published: '2020-11-02T00:00:07.716307Z'
 ecosystem_specific:
   severity: MEDIUM
