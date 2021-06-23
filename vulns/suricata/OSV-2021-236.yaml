@@ -17,7 +17,11 @@ affects:
     repo: https://github.com/OISF/suricata.git
     introduced: 8d659c6500b79b881e16133cbb5719426ceacec7
     fixed: e586d8526b3aea6562f7e04d3cde88bded9bd420
-modified: '2021-06-23T06:25:27.883363Z'
+  - type: GIT
+    repo: https://github.com/OISF/suricata.git
+    introduced: 2a1e587185f66d4917a9682c5d5d1e19af43a42f
+    fixed: a6b961d10a44f7e504fa52e87525414885344e5b
+modified: '2021-06-23T06:52:03.349387Z'
 published: '2021-01-25T00:00:22.782153Z'
 ecosystem_specific:
   severity: HIGH
