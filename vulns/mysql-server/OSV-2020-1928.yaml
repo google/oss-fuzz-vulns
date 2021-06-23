@@ -17,6 +17,22 @@ affects:
     repo: https://github.com/mysql/mysql-server
     introduced: 91a17cedb1ee880fe7915fb14cfd74c04e8d6588
     fixed: ea7d2e2d16ac03afdd9cb72a972a95981107bf51
+  - type: GIT
+    repo: https://github.com/mysql/mysql-server
+    introduced: 2b1fe48504cb91eb6d18ec2188a5cc1737f3003e
+  - type: GIT
+    repo: https://github.com/mysql/mysql-server
+    introduced: 35c7279f4c77d2eaa0fa31e53f0c7d176645aead
+  - type: GIT
+    repo: https://github.com/mysql/mysql-server
+    introduced: c689b34665077badcf3e5e03085bd9aa12062759
+  - type: GIT
+    repo: https://github.com/mysql/mysql-server
+    introduced: 3140b9e3df719926885834f7489cc5fbfcc14f22
+    fixed: cc119c3da8c56eb91df9a6d1371752620c15f374
+  - type: GIT
+    repo: https://github.com/mysql/mysql-server
+    introduced: 2b34b27ce9ec3713a0eecc61114dc0bf42cbf82a
   versions:
   - mysql-3.23.24-beta
   - mysql-3.23.27-beta
@@ -704,7 +720,11 @@ affects:
   - mysql-cluster-8.0.16
   - mysql-cluster-8.0.17
   - mysql-cluster-8.0.18
-modified: '2021-06-23T06:26:11.621430Z'
+  - mysql-5.7.34
+  - mysql-cluster-7.3.33
+  - mysql-cluster-7.4.32
+  - mysql-cluster-7.5.22
+modified: '2021-06-23T08:32:06.076313Z'
 published: '2020-10-02T00:00:30.533072Z'
 ecosystem_specific:
   severity: MEDIUM
