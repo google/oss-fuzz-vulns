@@ -18,13 +18,17 @@ affects:
     repo: git://code.qt.io/qt/qtbase.git
     introduced: 13873c6bc6e9514e4b6d4e11f7100863a439e33c
     fixed: 76fe36645eb41fa35e526a97874f1e15a39c3823
-modified: '2021-06-23T06:26:10.616819Z'
+  versions:
+  - v5.15.0
+  - v5.15.0-rc1
+  - v5.15.0-rc2
+modified: '2021-06-23T07:26:01.136059Z'
 published: '2020-06-24T01:51:16.055970Z'
 ecosystem_specific:
   severity: MEDIUM
 database_specific:
-  introduced_range: cc106ce56550ebfc7e1808e1b9015f5618d9f5e5:e10e5318bc02a48a866b76b6f0b7f268d16af642
   fixed_range: 538223d10d133d23133db1ec7a50cb2775aca657:76fe36645eb41fa35e526a97874f1e15a39c3823
+  introduced_range: cc106ce56550ebfc7e1808e1b9015f5618d9f5e5:e10e5318bc02a48a866b76b6f0b7f268d16af642
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21909
