@@ -15,8 +15,8 @@ affects:
   ranges:
   - type: GIT
     repo: https://github.com/libressl-portable/portable.git
-    introduced: 4ea2a01a0d2cc889e95316f51c7a36f8f158df44:4b6c7bfd02dec26021882f1599dbcbccdd4d2889
-    fixed: 4b6c7bfd02dec26021882f1599dbcbccdd4d2889:17c88164016df821df2dff4b2b1291291ec4f28a
+    introduced: 23fa9a51d8f50a563566455dd9428c3525c9216d
+    fixed: 17c88164016df821df2dff4b2b1291291ec4f28a
   versions:
   - v2.9.1
   - v2.9.2
@@ -31,10 +31,13 @@ affects:
   - v3.1.5
   - v3.2.0
   - v3.2.1
-modified: '2021-06-21T06:56:24.883526Z'
+modified: '2021-06-23T06:28:25.166862Z'
 published: '2020-10-02T00:00:28.271775Z'
 ecosystem_specific:
   severity: MEDIUM
+database_specific:
+  introduced_range: 4ea2a01a0d2cc889e95316f51c7a36f8f158df44:4b6c7bfd02dec26021882f1599dbcbccdd4d2889
+  fixed_range: 4b6c7bfd02dec26021882f1599dbcbccdd4d2889:17c88164016df821df2dff4b2b1291291ec4f28a
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13914

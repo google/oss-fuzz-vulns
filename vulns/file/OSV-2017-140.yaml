@@ -16,7 +16,7 @@ affects:
   - type: GIT
     repo: https://github.com/file/file.git
     introduced: a317154a5acbdcc82db79063742481ce83abafe7
-    fixed: 100ff6d0edb3441962e518690b327186dbc0e652:6fc66d12c0ca172f4681adb63c6f662ac33cbc7c
+    fixed: 6fc66d12c0ca172f4681adb63c6f662ac33cbc7c
   versions:
   - FILE5_30
   - FILE5_31
@@ -28,10 +28,12 @@ affects:
   - FILE5_37
   - FILE5_38
   - FILE5_39
-modified: '2021-06-21T06:56:18.683169Z'
+modified: '2021-06-23T06:24:47.026398Z'
 published: '2021-01-15T00:01:14.133316Z'
 ecosystem_specific:
   severity: MEDIUM
+database_specific:
+  fixed_range: 100ff6d0edb3441962e518690b327186dbc0e652:6fc66d12c0ca172f4681adb63c6f662ac33cbc7c
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=1523

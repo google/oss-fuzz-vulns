@@ -15,12 +15,14 @@ affects:
   ranges:
   - type: GIT
     repo: https://github.com/apache/arrow.git
-    introduced: unknown:ccdc4b076cbd5fb03e1cbc42292def871d2b6035
+    introduced: ccdc4b076cbd5fb03e1cbc42292def871d2b6035
     fixed: a6307cc8a0127a4852b7d3d2c20940a094eed0d6
-modified: '2021-06-21T06:56:19.646629Z'
+modified: '2021-06-23T06:25:11.682026Z'
 published: '2020-07-22T21:50:08.733370Z'
 ecosystem_specific:
   severity: MEDIUM
+database_specific:
+  introduced_range: unknown:ccdc4b076cbd5fb03e1cbc42292def871d2b6035
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20186

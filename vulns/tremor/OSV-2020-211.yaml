@@ -15,12 +15,14 @@ affects:
   ranges:
   - type: GIT
     repo: https://gitlab.xiph.org/xiph/tremor.git
-    introduced: 7c30a66346199f3f09017a09567c6c8a3a0eedc8:b56ffce0c0773ec5ca04c466bc00b1bbcaf65aef
+    introduced: 7c30a66346199f3f09017a09567c6c8a3a0eedc8
     fixed: 562307a4a7082e24553f3d2c55dab397a17c4b4f
-modified: '2021-06-21T06:56:24.007972Z'
+modified: '2021-06-23T06:26:29.059426Z'
 published: '2020-06-24T01:51:19.127694Z'
 ecosystem_specific:
   severity: MEDIUM
+database_specific:
+  introduced_range: 7c30a66346199f3f09017a09567c6c8a3a0eedc8:b56ffce0c0773ec5ca04c466bc00b1bbcaf65aef
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22298

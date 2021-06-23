@@ -15,12 +15,15 @@ affects:
   ranges:
   - type: GIT
     repo: https://gitlab.com/gnutls/gnutls.git
-    introduced: 307c2ba1ed45895c98d683bfb23ad9fa79776574:553906ba264c591ca947983fc2f3c083fb818eb4
-    fixed: 553906ba264c591ca947983fc2f3c083fb818eb4:7265612d87f51c2f52a2e4cf5bdf14f31bd291a2
-modified: '2021-06-21T06:56:22.240460Z'
+    introduced: 80140f20a814bfe8114ead3915a19ceca7144201
+    fixed: 7265612d87f51c2f52a2e4cf5bdf14f31bd291a2
+modified: '2021-06-23T06:25:54.300104Z'
 published: '2021-01-15T00:00:32.872161Z'
 ecosystem_specific:
   severity: HIGH
+database_specific:
+  fixed_range: 553906ba264c591ca947983fc2f3c083fb818eb4:7265612d87f51c2f52a2e4cf5bdf14f31bd291a2
+  introduced_range: 307c2ba1ed45895c98d683bfb23ad9fa79776574:553906ba264c591ca947983fc2f3c083fb818eb4
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=1304

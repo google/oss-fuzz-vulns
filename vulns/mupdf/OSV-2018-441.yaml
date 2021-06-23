@@ -16,9 +16,11 @@ affects:
   - type: GIT
     repo: git://git.ghostscript.com/mupdf.git
     introduced: fe8b5f202600e5a328e58222a451ec61dad38875
-    fixed: 5606857245ed81253a4e06bed73eaa813e684070:04c37454b9ef5a0576c3dd34adc7426450bf18e7
+    fixed: 04c37454b9ef5a0576c3dd34adc7426450bf18e7
+modified: '2021-06-23T06:24:54.528953Z'
+published: '2021-01-15T00:01:20.656220Z'
+database_specific:
+  fixed_range: 5606857245ed81253a4e06bed73eaa813e684070:04c37454b9ef5a0576c3dd34adc7426450bf18e7
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=9970
-modified: '2021-03-09T04:49:04.997036Z'
-published: '2021-01-15T00:01:20.656220Z'

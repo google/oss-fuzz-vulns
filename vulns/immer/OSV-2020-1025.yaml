@@ -15,12 +15,14 @@ affects:
   ranges:
   - type: GIT
     repo: https://github.com/arximboldi/immer.git
-    introduced: unknown:ad3e3556d38bb75966dd24c61a774970a7c7957e
+    introduced: ad3e3556d38bb75966dd24c61a774970a7c7957e
     fixed: e04435d170769830f526d1b17b8b3e573f1e1ef2
-modified: '2021-06-21T06:56:21.888342Z'
+modified: '2021-06-23T06:25:46.218983Z'
 published: '2020-07-22T21:49:40.649517Z'
 ecosystem_specific:
   severity: MEDIUM
+database_specific:
+  introduced_range: unknown:ad3e3556d38bb75966dd24c61a774970a7c7957e
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24195

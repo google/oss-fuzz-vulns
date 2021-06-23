@@ -15,12 +15,14 @@ affects:
   ranges:
   - type: GIT
     repo: https://github.com/cisco/openh264.git
-    introduced: 84590b641f4bd07ae448bdb05cb5700d991efa53:effb3931c7c67f34b167fe6e0a93253bf075f78c
+    introduced: e7cc7ab7e9091f09449cc66a5c5add600a842c82
     fixed: b52786888ddce9d6bc06b7825ba9bffc65924e0c
-modified: '2021-06-21T06:56:23.824252Z'
+modified: '2021-06-23T06:26:23.994745Z'
 published: '2020-12-30T00:00:21.907495Z'
 ecosystem_specific:
   severity: HIGH
+database_specific:
+  introduced_range: 84590b641f4bd07ae448bdb05cb5700d991efa53:effb3931c7c67f34b167fe6e0a93253bf075f78c
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29073

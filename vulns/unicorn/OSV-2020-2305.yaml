@@ -15,8 +15,8 @@ affects:
   ranges:
   - type: GIT
     repo: https://github.com/unicorn-engine/unicorn.git
-    introduced: 57e3509812f0842b0752bff1e1b3a44ad438271e:355eaecc12b8022ccefac432dfa003fdb642c0f5
-    fixed: 7ca7e8a79d85ca57bb523be49009b0326b7a5210:bf1713d9e011b55ca1f502a6779fc4722b4bb077
+    introduced: 8b659c61b2dad88e55a0f1af6f725be6bce782bd
+    fixed: bf1713d9e011b55ca1f502a6779fc4722b4bb077
   versions:
   - 1.0.2
   - 1.0.2-rc1
@@ -25,10 +25,13 @@ affects:
   - 1.0.2-rc4
   - 1.0.2-rc5
   - 1.0.2-rc6
-modified: '2021-06-21T06:56:25.301210Z'
+modified: '2021-06-23T06:28:43.421626Z'
 published: '2021-02-08T00:00:04.373811Z'
 ecosystem_specific:
   severity: HIGH
+database_specific:
+  fixed_range: 7ca7e8a79d85ca57bb523be49009b0326b7a5210:bf1713d9e011b55ca1f502a6779fc4722b4bb077
+  introduced_range: 57e3509812f0842b0752bff1e1b3a44ad438271e:355eaecc12b8022ccefac432dfa003fdb642c0f5
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30391

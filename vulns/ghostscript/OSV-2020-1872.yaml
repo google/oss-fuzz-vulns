@@ -15,17 +15,19 @@ affects:
   ranges:
   - type: GIT
     repo: git://git.ghostscript.com/ghostpdl.git
-    introduced: unknown:668917a10e7eada030f7d2dddec9f579fddeed3d
+    introduced: 668917a10e7eada030f7d2dddec9f579fddeed3d
     fixed: 9e85e7a9518aa19964f1f8d30d3175ef8c3b950f
   versions:
   - ghostpdl-9.52-test-base-3
   - ghostpdl-9.52-test-base-4
   - ghostpdl-9.52-test-base-5
   - ghostpdl-9.52-test-base-6
-modified: '2021-06-21T06:56:21.539067Z'
+modified: '2021-06-23T06:25:38.922716Z'
 published: '2020-09-29T00:00:20.147910Z'
 ecosystem_specific:
   severity: MEDIUM
+database_specific:
+  introduced_range: unknown:668917a10e7eada030f7d2dddec9f579fddeed3d
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21643

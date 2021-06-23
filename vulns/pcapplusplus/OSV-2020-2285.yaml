@@ -15,13 +15,15 @@ affects:
   ranges:
   - type: GIT
     repo: https://github.com/seladb/PcapPlusPlus
-    introduced: 633fdfb78b85d795f4b437cdb5fbdc041ae2b622:54fcc6190efeeb54dc6d66c809ec7b7e7308eab8
+    introduced: d50eb9c0d7506cc3c9ff78efa1a792c04e8f6767
   versions:
   - v21.05
-modified: '2021-06-21T06:56:24.776329Z'
+modified: '2021-06-23T06:28:23.498028Z'
 published: '2020-12-25T00:01:03.941509Z'
 ecosystem_specific:
   severity: HIGH
+database_specific:
+  introduced_range: 633fdfb78b85d795f4b437cdb5fbdc041ae2b622:54fcc6190efeeb54dc6d66c809ec7b7e7308eab8
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=28945

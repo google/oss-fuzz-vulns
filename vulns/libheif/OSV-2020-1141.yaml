@@ -15,15 +15,17 @@ affects:
   ranges:
   - type: GIT
     repo: https://github.com/strukturag/libheif.git
-    introduced: unknown:0acdca433f338f1f378f6f104e72f5f95c4f8568
+    introduced: 0acdca433f338f1f378f6f104e72f5f95c4f8568
     fixed: 12b68bbeadb3ea56415b2f656b471f122d72dc80
   versions:
   - v1.5.0
   - v1.5.1
-modified: '2021-06-21T06:56:20.020890Z'
+modified: '2021-06-23T06:25:11.850938Z'
 published: '2020-07-22T21:49:50.461909Z'
 ecosystem_specific:
   severity: MEDIUM
+database_specific:
+  introduced_range: unknown:0acdca433f338f1f378f6f104e72f5f95c4f8568
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13568

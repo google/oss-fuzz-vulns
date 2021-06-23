@@ -24,7 +24,7 @@ affects:
     fixed: afde7ca3a40f524e40052df696f74190452b22cb
   - type: GIT
     repo: git://code.qt.io/qt/qt5.git
-    introduced: ac489d92a3ae32540c4794d85be6fb103c701ee8:1095b1abc6d233bc27321f46f71bbd85fe8556de
+    introduced: de3cffca0491d972b49fac96a9cbe2b427aeee16
     fixed: 9278f5b56b2ba71abe9c7b827c83a05b6b756a89
   versions:
   - v5.15.1
@@ -177,10 +177,12 @@ affects:
   - v5.9.7
   - v5.9.8
   - v5.9.9
+modified: '2021-06-23T06:26:09.468054Z'
+published: '2021-01-25T00:00:16.933600Z'
+database_specific:
+  introduced_range: ac489d92a3ae32540c4794d85be6fb103c701ee8:1095b1abc6d233bc27321f46f71bbd85fe8556de
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29873
 - type: WEB
   url: https://codereview.qt-project.org/c/qt/qtsvg/+/335065
-modified: '2021-04-22T04:03:58.344914Z'
-published: '2021-01-25T00:00:16.933600Z'

@@ -15,12 +15,15 @@ affects:
   ranges:
   - type: GIT
     repo: https://github.com/libarchive/libarchive.git
-    introduced: 660802fa971274258a91be9a239b7528983e2f81:64e68f2034e6c5c6fd20d6b274b67fbdb88c3804
-    fixed: 7b3068c4bf7a217a1838db280072653197d30012:ba641f73f3d758d9032b3f0e5597a9c6e593a505
-modified: '2021-06-21T06:56:26.687022Z'
+    introduced: e5ade325a7d97772e91444332b4f7d3cfaab24d7
+    fixed: ba641f73f3d758d9032b3f0e5597a9c6e593a505
+modified: '2021-06-23T06:29:53.702541Z'
 published: '2020-07-01T00:00:10.823501Z'
 ecosystem_specific:
   severity: MEDIUM
+database_specific:
+  introduced_range: 660802fa971274258a91be9a239b7528983e2f81:64e68f2034e6c5c6fd20d6b274b67fbdb88c3804
+  fixed_range: 7b3068c4bf7a217a1838db280072653197d30012:ba641f73f3d758d9032b3f0e5597a9c6e593a505
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14393

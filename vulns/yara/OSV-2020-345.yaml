@@ -15,12 +15,15 @@ affects:
   ranges:
   - type: GIT
     repo: https://github.com/VirusTotal/yara.git
-    introduced: b71aa2c10dff1f2ec00fb692bdda5990bdd834a7:0e52686008d19929488fb838fb0c32e769ba8431
-    fixed: 7a684d6de0d350ff39c4d6dc1ef8a63d787abae2:b28de684d9263ce61dcb2516e9ddbd9c7a59c39c
-modified: '2021-06-21T06:56:27.666560Z'
+    introduced: faf8dafbc988dd1bed93da53df59acc5626ea545
+    fixed: b28de684d9263ce61dcb2516e9ddbd9c7a59c39c
+modified: '2021-06-23T06:30:57.299623Z'
 published: '2020-07-01T00:00:04.345697Z'
 ecosystem_specific:
   severity: MEDIUM
+database_specific:
+  fixed_range: 7a684d6de0d350ff39c4d6dc1ef8a63d787abae2:b28de684d9263ce61dcb2516e9ddbd9c7a59c39c
+  introduced_range: b71aa2c10dff1f2ec00fb692bdda5990bdd834a7:0e52686008d19929488fb838fb0c32e769ba8431
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18942

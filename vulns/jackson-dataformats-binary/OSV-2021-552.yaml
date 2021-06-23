@@ -16,11 +16,13 @@ affects:
   - type: GIT
     repo: https://github.com/FasterXML/jackson-dataformats-binary
     introduced: 5b10d2317b7dbb41b6642523f5720052848027f7
-    fixed: 437353d8f6c3cd8ea50bb66ddfe9787a7960c874:5fefc76b5a446d9afc62975e64ad46b707804639
-modified: '2021-06-21T06:56:26.490361Z'
+    fixed: 5fefc76b5a446d9afc62975e64ad46b707804639
+modified: '2021-06-23T06:29:42.109225Z'
 published: '2021-03-25T00:00:02.194060Z'
 ecosystem_specific:
   severity: LOW
+database_specific:
+  fixed_range: 437353d8f6c3cd8ea50bb66ddfe9787a7960c874:5fefc76b5a446d9afc62975e64ad46b707804639
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=32407

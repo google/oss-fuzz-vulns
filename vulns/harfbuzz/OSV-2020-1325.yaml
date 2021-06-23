@@ -15,12 +15,14 @@ affects:
   ranges:
   - type: GIT
     repo: https://github.com/harfbuzz/harfbuzz.git
-    introduced: unknown:8ffc9add2237899afc57184ad3297404659bc1cd
+    introduced: 8ffc9add2237899afc57184ad3297404659bc1cd
     fixed: 22f7c61acf8073cb8db8db47e92aef18864a85c6
   versions:
   - 2.6.5
+modified: '2021-06-23T06:25:30.729470Z'
+published: '2020-07-22T21:50:06.762604Z'
+database_specific:
+  introduced_range: unknown:8ffc9add2237899afc57184ad3297404659bc1cd
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21769
-modified: '2021-03-09T04:49:05.210535Z'
-published: '2020-07-22T21:50:06.762604Z'

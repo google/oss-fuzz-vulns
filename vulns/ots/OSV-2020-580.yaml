@@ -15,14 +15,16 @@ affects:
   ranges:
   - type: GIT
     repo: https://github.com/khaledhosny/ots.git
-    introduced: cad0b4f9405d03ddf801f977f2f65892192ad047:560a0fb259120f3fb6c2aec532ccea3fcd4d873a
+    introduced: c8a2b444da9be95a92f69da4232e59276436b9c5
     fixed: 9673d4257672d472d0aaa1590fd821b4108873a5
   versions:
   - v7.1.8
-modified: '2021-06-21T06:56:20.342459Z'
+modified: '2021-06-23T06:25:29.624324Z'
 published: '2020-07-01T00:00:18.191041Z'
 ecosystem_specific:
   severity: MEDIUM
+database_specific:
+  introduced_range: cad0b4f9405d03ddf801f977f2f65892192ad047:560a0fb259120f3fb6c2aec532ccea3fcd4d873a
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=12840

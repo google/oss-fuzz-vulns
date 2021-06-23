@@ -16,11 +16,13 @@ affects:
   - type: GIT
     repo: https://github.com/OISF/suricata.git
     introduced: 8d659c6500b79b881e16133cbb5719426ceacec7
-    fixed: b869ac01eef6d488b91dcc653c911c3af4966d75:e586d8526b3aea6562f7e04d3cde88bded9bd420
-modified: '2021-06-21T06:56:20.304500Z'
+    fixed: e586d8526b3aea6562f7e04d3cde88bded9bd420
+modified: '2021-06-23T06:25:27.883363Z'
 published: '2021-01-25T00:00:22.782153Z'
 ecosystem_specific:
   severity: HIGH
+database_specific:
+  fixed_range: b869ac01eef6d488b91dcc653c911c3af4966d75:e586d8526b3aea6562f7e04d3cde88bded9bd420
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29886

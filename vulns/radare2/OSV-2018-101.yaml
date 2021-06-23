@@ -16,7 +16,7 @@ affects:
   - type: GIT
     repo: https://github.com/radare/radare2
     introduced: 65ebf72e66d493f2d1b3508f8665fd1e9fb5ba9d
-    fixed: 187f5ede22ebd4e5ce3a643e7b29e2c3f0813e9e:dc185e242a2dcac8eeb0f32a9450ddbaa4d6da7a
+    fixed: dc185e242a2dcac8eeb0f32a9450ddbaa4d6da7a
   versions:
   - 2.9.0
   - 3.0.0
@@ -25,10 +25,12 @@ affects:
   - 3.1.1
   - 3.1.2
   - 3.1.3
-modified: '2021-06-21T06:56:23.176490Z'
+modified: '2021-06-23T06:26:08.477837Z'
 published: '2021-01-13T00:00:44.502980Z'
 ecosystem_specific:
   severity: MEDIUM
+database_specific:
+  fixed_range: 187f5ede22ebd4e5ce3a643e7b29e2c3f0813e9e:dc185e242a2dcac8eeb0f32a9450ddbaa4d6da7a
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11361

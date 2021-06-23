@@ -13,10 +13,13 @@ affects:
   ranges:
   - type: GIT
     repo: https://github.com/envoyproxy/envoy.git
-    introduced: 613cc3cfa10d9dd6fe18213c41d221549b10e10d:483391017765c52cea9ebd1bae65dbe615e9ef4d
-    fixed: bc322c8ffd9971e1aa38f4870b7629890d4c5958:8ecacd083362412f0695ccb86585cda153268dc4
+    introduced: ddb3d63a8c10af4fe49716dc973400bc8c38c90d
+    fixed: 8ecacd083362412f0695ccb86585cda153268dc4
+modified: '2021-06-23T06:25:09.848504Z'
+published: '2021-01-15T00:00:43.734642Z'
+database_specific:
+  fixed_range: bc322c8ffd9971e1aa38f4870b7629890d4c5958:8ecacd083362412f0695ccb86585cda153268dc4
+  introduced_range: 613cc3cfa10d9dd6fe18213c41d221549b10e10d:483391017765c52cea9ebd1bae65dbe615e9ef4d
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=10888
-modified: '2021-03-09T04:49:04.941519Z'
-published: '2021-01-15T00:00:43.734642Z'

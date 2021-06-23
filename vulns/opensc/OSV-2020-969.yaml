@@ -15,14 +15,16 @@ affects:
   ranges:
   - type: GIT
     repo: https://github.com/OpenSC/OpenSC
-    introduced: unknown:c4dcac5de77825e79763c9cd5f58aa8bde22f0b2
+    introduced: c4dcac5de77825e79763c9cd5f58aa8bde22f0b2
     fixed: 333c41c5d51450177553b8fd8cb2d710a7f7dec5
   versions:
   - 0.20.0-rc4
-modified: '2021-06-21T06:56:27.068684Z'
+modified: '2021-06-23T06:30:09.471057Z'
 published: '2020-07-22T00:00:28.643216Z'
 ecosystem_specific:
   severity: HIGH
+database_specific:
+  introduced_range: unknown:c4dcac5de77825e79763c9cd5f58aa8bde22f0b2
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=19548

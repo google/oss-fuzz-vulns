@@ -15,12 +15,15 @@ affects:
   ranges:
   - type: GIT
     repo: https://github.com/libvips/libvips
-    introduced: unknown:0f1e278dd97163de5890117abdc9707fecc27e9f
-    fixed: 0f1e278dd97163de5890117abdc9707fecc27e9f:cfe0857ae102818d4ce5e9f4564af9d6bfb090da
-modified: '2021-06-21T06:56:24.226812Z'
+    introduced: 0f1e278dd97163de5890117abdc9707fecc27e9f
+    fixed: cfe0857ae102818d4ce5e9f4564af9d6bfb090da
+modified: '2021-06-23T06:28:00.210126Z'
 published: '2020-07-22T21:49:38.743050Z'
 ecosystem_specific:
   severity: HIGH
+database_specific:
+  introduced_range: unknown:0f1e278dd97163de5890117abdc9707fecc27e9f
+  fixed_range: 0f1e278dd97163de5890117abdc9707fecc27e9f:cfe0857ae102818d4ce5e9f4564af9d6bfb090da
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=16154

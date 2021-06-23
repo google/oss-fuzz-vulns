@@ -16,13 +16,15 @@ affects:
   - type: GIT
     repo: https://github.com/aquynh/capstone.git
     introduced: 4156eefd32479dbea8011612ff14a4946dbcc4a2
-    fixed: fb11ad1a4abe90b0ca34f1fa4cdbb7687f6e0aad:fb6179eca88e6d0af801cf046446161459ad6a55
+    fixed: fb6179eca88e6d0af801cf046446161459ad6a55
   versions:
   - 4.0.2
-modified: '2021-06-21T06:56:25.699738Z'
+modified: '2021-06-23T06:28:53.629920Z'
 published: '2020-07-01T00:00:09.576759Z'
 ecosystem_specific:
   severity: MEDIUM
+database_specific:
+  fixed_range: fb11ad1a4abe90b0ca34f1fa4cdbb7687f6e0aad:fb6179eca88e6d0af801cf046446161459ad6a55
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13768

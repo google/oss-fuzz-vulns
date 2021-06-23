@@ -15,12 +15,15 @@ affects:
   ranges:
   - type: GIT
     repo: https://github.com/ntop/nDPI.git
-    introduced: unknown:b2cbe76e716e628438a94d2e112acddb67ec89f2
-    fixed: b6eef17e54999586b6aef8f545c87de4d3ec0ab3:669b7579ff93eb22ccf9324fd19444754b5612b8
-modified: '2021-06-21T06:56:22.557901Z'
+    introduced: b2cbe76e716e628438a94d2e112acddb67ec89f2
+    fixed: 669b7579ff93eb22ccf9324fd19444754b5612b8
+modified: '2021-06-23T06:26:03.535502Z'
 published: '2020-07-22T00:00:27.303894Z'
 ecosystem_specific:
   severity: MEDIUM
+database_specific:
+  fixed_range: b6eef17e54999586b6aef8f545c87de4d3ec0ab3:669b7579ff93eb22ccf9324fd19444754b5612b8
+  introduced_range: unknown:b2cbe76e716e628438a94d2e112acddb67ec89f2
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22864

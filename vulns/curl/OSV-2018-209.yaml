@@ -15,14 +15,16 @@ affects:
   ranges:
   - type: GIT
     repo: https://github.com/curl/curl.git
-    introduced: 1cb4f5d6e8e470638759a48ba99fda230089712f:e240a546a7ac2fa7956adb664b8c40c4dee4f82b
+    introduced: 7ee59512f875604eb468fb6f3d26e39290f781c9
     fixed: cb5accab9ee3abdee777b59b463b5e0ca05a490a
   versions:
   - curl-7_57_0
-modified: '2021-06-21T06:56:28.057317Z'
+modified: '2021-06-23T06:31:20.229091Z'
 published: '2021-01-13T00:01:25.235178Z'
 ecosystem_specific:
   severity: MEDIUM
+database_specific:
+  introduced_range: 1cb4f5d6e8e470638759a48ba99fda230089712f:e240a546a7ac2fa7956adb664b8c40c4dee4f82b
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=5251

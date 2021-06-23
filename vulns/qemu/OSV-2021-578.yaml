@@ -16,7 +16,7 @@ affects:
   - type: GIT
     repo: https://git.qemu.org/git/qemu.git
     introduced: ee2fc6c6da8b2d6f961c8559d62e990c65f67736
-    fixed: 52848929b70dcf92a68aedcfd90207be81ba3274:1ea06abceec61b6f3ab33dadb0510b6e09fb61e2
+    fixed: 1ea06abceec61b6f3ab33dadb0510b6e09fb61e2
   versions:
   - v6.0.0
   - v6.0.0-rc0
@@ -25,8 +25,10 @@ affects:
   - v6.0.0-rc3
   - v6.0.0-rc4
   - v6.0.0-rc5
-modified: '2021-03-30T00:00:08.991982Z'
+modified: '2021-06-23T06:25:30.812564Z'
 published: '2021-03-30T00:00:08.991714Z'
+database_specific:
+  fixed_range: 52848929b70dcf92a68aedcfd90207be81ba3274:1ea06abceec61b6f3ab33dadb0510b6e09fb61e2
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=32624

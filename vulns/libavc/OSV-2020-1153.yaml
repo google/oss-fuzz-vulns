@@ -15,12 +15,14 @@ affects:
   ranges:
   - type: GIT
     repo: https://android.googlesource.com/platform/external/libavc
-    introduced: unknown:9046ac21822cbb46358b5731294e6e47db571e34
+    introduced: 9046ac21822cbb46358b5731294e6e47db571e34
     fixed: 6b7b0ac4eefa224de0d33a5036b55f416ee4e224
-modified: '2021-06-21T06:56:22.207223Z'
+modified: '2021-06-23T06:25:53.180041Z'
 published: '2020-07-22T21:49:51.644958Z'
 ecosystem_specific:
   severity: MEDIUM
+database_specific:
+  introduced_range: unknown:9046ac21822cbb46358b5731294e6e47db571e34
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=16514

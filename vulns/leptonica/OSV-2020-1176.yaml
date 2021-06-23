@@ -15,15 +15,18 @@ affects:
   ranges:
   - type: GIT
     repo: https://github.com/DanBloomberg/leptonica.git
-    introduced: unknown:7dac4b18eab74e44dd4b03f0539352acbc986f1a
-    fixed: 7274a4a0cd69d20f4e8eec524ef3482852cb340d:ad50d81027f7e7716f2b9ab28b7aa476eae2d741
+    introduced: 7dac4b18eab74e44dd4b03f0539352acbc986f1a
+    fixed: ad50d81027f7e7716f2b9ab28b7aa476eae2d741
   versions:
   - 1.78.0
   - 1.79.0
-modified: '2021-06-21T06:56:20.207139Z'
+modified: '2021-06-23T06:25:27.843631Z'
 published: '2020-07-22T21:49:53.886180Z'
 ecosystem_specific:
   severity: MEDIUM
+database_specific:
+  fixed_range: 7274a4a0cd69d20f4e8eec524ef3482852cb340d:ad50d81027f7e7716f2b9ab28b7aa476eae2d741
+  introduced_range: unknown:7dac4b18eab74e44dd4b03f0539352acbc986f1a
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21434

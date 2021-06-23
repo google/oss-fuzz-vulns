@@ -15,18 +15,21 @@ affects:
   ranges:
   - type: GIT
     repo: https://gitlab.freedesktop.org/gstreamer/gstreamer.git
-    introduced: 554f604d37970c26fc61726eec2f81a384a691fc:4fb02fc85b70be631f5331b2547e5dc61ef7a43a
-    fixed: 4fb02fc85b70be631f5331b2547e5dc61ef7a43a:80dfb7bb3f415dac465f89f8945a1546c4fcc280
+    introduced: 583a4677af9521d785fbe2586cedfb8f00ddf9c5
+    fixed: 80dfb7bb3f415dac465f89f8945a1546c4fcc280
   versions:
   - 1.14.1
   - 1.14.2
   - 1.14.3
   - 1.14.4
   - 1.14.5
-modified: '2021-06-21T06:56:21.194944Z'
+modified: '2021-06-23T06:25:37.743489Z'
 published: '2021-01-13T00:00:23.803331Z'
 ecosystem_specific:
   severity: MEDIUM
+database_specific:
+  introduced_range: 554f604d37970c26fc61726eec2f81a384a691fc:4fb02fc85b70be631f5331b2547e5dc61ef7a43a
+  fixed_range: 4fb02fc85b70be631f5331b2547e5dc61ef7a43a:80dfb7bb3f415dac465f89f8945a1546c4fcc280
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=8159

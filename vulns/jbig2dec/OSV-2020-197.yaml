@@ -15,12 +15,14 @@ affects:
   ranges:
   - type: GIT
     repo: git://git.ghostscript.com/jbig2dec.git
-    introduced: 190fc319c5a87c1a971ba0efa8238d9e1c88ea1f:0726320a4b55078e9d8deb590e477d598b3da66e
+    introduced: 8a5ad7cc54f23fb99e231be3a123d6488829dc9e
     fixed: ce3e3aa738f1f5102fea63dfb9de15fea555c559
-modified: '2021-06-21T06:56:26.205979Z'
+modified: '2021-06-23T06:29:25.626808Z'
 published: '2020-06-24T01:51:18.519912Z'
 ecosystem_specific:
   severity: MEDIUM
+database_specific:
+  introduced_range: 190fc319c5a87c1a971ba0efa8238d9e1c88ea1f:0726320a4b55078e9d8deb590e477d598b3da66e
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20358

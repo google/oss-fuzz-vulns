@@ -16,11 +16,13 @@ affects:
   - type: GIT
     repo: https://github.com/ANSSI-FR/libecc.git
     introduced: f3abf297e84874278129fb91bc1b89356dd66627
-    fixed: f3abf297e84874278129fb91bc1b89356dd66627:d6cbbbb0c4afb6097dfea9eadf1516759dd337eb
-modified: '2021-06-21T06:56:19.184880Z'
+    fixed: d6cbbbb0c4afb6097dfea9eadf1516759dd337eb
+modified: '2021-06-23T06:25:06.625504Z'
 published: '2021-05-12T00:01:05.638739Z'
 ecosystem_specific:
   severity: MEDIUM
+database_specific:
+  fixed_range: f3abf297e84874278129fb91bc1b89356dd66627:d6cbbbb0c4afb6097dfea9eadf1516759dd337eb
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34156

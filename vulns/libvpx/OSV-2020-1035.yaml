@@ -13,14 +13,16 @@ affects:
   ranges:
   - type: GIT
     repo: https://chromium.googlesource.com/webm/libvpx
-    introduced: unknown:ea57f9acdad73e9ba4c329d27993c74392f7a205
+    introduced: ea57f9acdad73e9ba4c329d27993c74392f7a205
     fixed: 8a800b52eaee33e71aba7fb59118dcf14ac1dd1c
   versions:
   - v1.8.0
-modified: '2021-06-21T06:56:25.886037Z'
+modified: '2021-06-23T06:29:21.156384Z'
 published: '2020-07-22T21:49:41.421436Z'
 ecosystem_specific:
   severity: MEDIUM
+database_specific:
+  introduced_range: unknown:ea57f9acdad73e9ba4c329d27993c74392f7a205
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14478

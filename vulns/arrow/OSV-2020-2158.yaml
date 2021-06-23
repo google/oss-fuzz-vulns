@@ -16,9 +16,11 @@ affects:
   - type: GIT
     repo: https://github.com/apache/arrow.git
     introduced: 7be266be98d08214ef4b3f067059b6e6a8a6e5c0
-    fixed: 8b9f6b9d28b4524724e60fac589fb1a3552a32b4:be13bf50fe00f0f4c2d065a61db189d6c59b1f7b
+    fixed: be13bf50fe00f0f4c2d065a61db189d6c59b1f7b
+modified: '2021-06-23T06:25:11.741212Z'
+published: '2020-11-15T22:33:44.639326Z'
+database_specific:
+  fixed_range: 8b9f6b9d28b4524724e60fac589fb1a3552a32b4:be13bf50fe00f0f4c2d065a61db189d6c59b1f7b
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=27475
-modified: '2021-03-09T04:49:05.691476Z'
-published: '2020-11-15T22:33:44.639326Z'

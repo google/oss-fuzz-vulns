@@ -15,12 +15,14 @@ affects:
   ranges:
   - type: GIT
     repo: https://github.com/samtools/htslib.git
-    introduced: unknown:dd6f0b72c92591252bb77818663629cc1a129949
+    introduced: dd6f0b72c92591252bb77818663629cc1a129949
     fixed: d59c3645f798169f7fde53dbf5c6d3e095465e8c
-modified: '2021-06-21T06:56:19.921685Z'
+modified: '2021-06-23T06:25:11.797736Z'
 published: '2020-07-22T00:00:25.993200Z'
 ecosystem_specific:
   severity: MEDIUM
+database_specific:
+  introduced_range: unknown:dd6f0b72c92591252bb77818663629cc1a129949
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18152

@@ -15,16 +15,18 @@ affects:
   ranges:
   - type: GIT
     repo: https://gitlab.com/wireshark/wireshark.git
-    introduced: 8fbad3dd56b45874463f9d811b80006314413c0e:95c50e3dd766e919953def30f65ba5496226a660
+    introduced: 6ef693dec1fd189d0995d8ad6a06c29c05823ce8
     fixed: bc43d687f0751cb95ecd9446589e7b37506ff1c6
   versions:
   - v2.5.0
   - v2.5.1rc0
   - wireshark-2.5.0
-modified: '2021-06-21T06:56:24.029102Z'
+modified: '2021-06-23T06:27:51.532475Z'
 published: '2021-01-15T00:00:29.537688Z'
 ecosystem_specific:
   severity: MEDIUM
+database_specific:
+  introduced_range: 8fbad3dd56b45874463f9d811b80006314413c0e:95c50e3dd766e919953def30f65ba5496226a660
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=6336

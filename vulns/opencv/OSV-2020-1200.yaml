@@ -15,15 +15,18 @@ affects:
   ranges:
   - type: GIT
     repo: https://github.com/opencv/opencv.git
-    introduced: unknown:6bcf0b5519c190826cf0f21efd87cbe256eabc48
-    fixed: 4001346a30ad31cd96544937c01a88f37ff02670:473941c3418e2c8d0d91b8d48ae824cec87232f4
+    introduced: 6bcf0b5519c190826cf0f21efd87cbe256eabc48
+    fixed: 473941c3418e2c8d0d91b8d48ae824cec87232f4
   versions:
   - 4.0.1
   - 4.1.0-openvino
-modified: '2021-06-21T06:56:19.275786Z'
+modified: '2021-06-23T06:25:08.742296Z'
 published: '2020-07-22T21:49:55.773582Z'
 ecosystem_specific:
   severity: HIGH
+database_specific:
+  introduced_range: unknown:6bcf0b5519c190826cf0f21efd87cbe256eabc48
+  fixed_range: 4001346a30ad31cd96544937c01a88f37ff02670:473941c3418e2c8d0d91b8d48ae824cec87232f4
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14071

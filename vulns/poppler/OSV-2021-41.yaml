@@ -15,12 +15,14 @@ affects:
   ranges:
   - type: GIT
     repo: https://gitlab.freedesktop.org/poppler/poppler.git
-    introduced: a8fdb464e8c1ccc920c064324d7289fa05c1cf1d:e68410e359da932c7f30d8f0a41a5496268b339c
+    introduced: 60fb23c1d9530bb37558af38d4f616d984a42586
     fixed: 3252bc323c814eb010df011024f06597755b4b7d
-modified: '2021-06-21T06:56:23.533077Z'
+modified: '2021-06-23T06:26:15.702723Z'
 published: '2021-01-12T00:00:15.199726Z'
 ecosystem_specific:
   severity: MEDIUM
+database_specific:
+  introduced_range: a8fdb464e8c1ccc920c064324d7289fa05c1cf1d:e68410e359da932c7f30d8f0a41a5496268b339c
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29460

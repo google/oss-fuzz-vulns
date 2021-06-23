@@ -15,12 +15,14 @@ affects:
   ranges:
   - type: GIT
     repo: https://github.com/libexif/libexif
-    introduced: unknown:3f35f94a93081ced2bc3c9112f820f5fdb200af0
+    introduced: 3f35f94a93081ced2bc3c9112f820f5fdb200af0
     fixed: f9bb9f263fb00f0603ecbefa8957cad24168cbff
-modified: '2021-06-21T06:56:26.454967Z'
+modified: '2021-06-23T06:29:25.770607Z'
 published: '2020-07-22T21:50:02.388928Z'
 ecosystem_specific:
   severity: MEDIUM
+database_specific:
+  introduced_range: unknown:3f35f94a93081ced2bc3c9112f820f5fdb200af0
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14543

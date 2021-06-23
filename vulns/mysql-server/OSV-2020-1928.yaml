@@ -16,7 +16,7 @@ affects:
   - type: GIT
     repo: https://github.com/mysql/mysql-server
     introduced: 91a17cedb1ee880fe7915fb14cfd74c04e8d6588
-    fixed: 91a17cedb1ee880fe7915fb14cfd74c04e8d6588:ea7d2e2d16ac03afdd9cb72a972a95981107bf51
+    fixed: ea7d2e2d16ac03afdd9cb72a972a95981107bf51
   versions:
   - mysql-3.23.24-beta
   - mysql-3.23.27-beta
@@ -704,10 +704,12 @@ affects:
   - mysql-cluster-8.0.16
   - mysql-cluster-8.0.17
   - mysql-cluster-8.0.18
-modified: '2021-06-21T06:56:23.398912Z'
+modified: '2021-06-23T06:26:11.621430Z'
 published: '2020-10-02T00:00:30.533072Z'
 ecosystem_specific:
   severity: MEDIUM
+database_specific:
+  fixed_range: 91a17cedb1ee880fe7915fb14cfd74c04e8d6588:ea7d2e2d16ac03afdd9cb72a972a95981107bf51
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=19830

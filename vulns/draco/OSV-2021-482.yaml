@@ -16,14 +16,16 @@ affects:
   ranges:
   - type: GIT
     repo: https://github.com/google/draco
-    introduced: aef4bfbd61798ecc21d94c873b679fbdeaf92462:79601d2d060be52e673a82ed1c46f4666eb28255
+    introduced: 25484b31235d1a35fa72be6ce8d1f7f286b5c0bf
   versions:
   - 1.4.0
   - 1.4.1
-modified: '2021-06-21T06:56:28.011293Z'
+modified: '2021-06-23T06:31:10.580334Z'
 published: '2021-03-03T00:00:23.252114Z'
 ecosystem_specific:
   severity: HIGH
+database_specific:
+  introduced_range: aef4bfbd61798ecc21d94c873b679fbdeaf92462:79601d2d060be52e673a82ed1c46f4666eb28255
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31587

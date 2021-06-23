@@ -15,14 +15,17 @@ affects:
   ranges:
   - type: GIT
     repo: https://github.com/wolfssl/wolfssl
-    introduced: deaf3b4b40d26663191d085557fbeb8cafa420ae:881657782478cef4a1527847bb2c4cd427bd6c99
-    fixed: f5f19fda42f7622f405daf69bafdeeec78f4c8b5:5577a2215fcc189c25794ac57775fce3008b476d
+    introduced: 83cdd1c314af5d6326470254b3cdbb9d85182348
+    fixed: 5577a2215fcc189c25794ac57775fce3008b476d
   versions:
   - v4.6.0-stable
-modified: '2021-06-21T06:56:22.405166Z'
+modified: '2021-06-23T06:26:02.367719Z'
 published: '2021-01-21T00:00:02.599814Z'
 ecosystem_specific:
   severity: MEDIUM
+database_specific:
+  fixed_range: f5f19fda42f7622f405daf69bafdeeec78f4c8b5:5577a2215fcc189c25794ac57775fce3008b476d
+  introduced_range: deaf3b4b40d26663191d085557fbeb8cafa420ae:881657782478cef4a1527847bb2c4cd427bd6c99
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29731

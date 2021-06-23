@@ -15,12 +15,15 @@ affects:
   ranges:
   - type: GIT
     repo: https://gitlab.gnome.org/GNOME/libxslt.git
-    introduced: unknown:7f56378a73af8a61da78b8091f0e317316cee300
-    fixed: 6d4a773a4bd06cbfe3c0ca68728d0099777e8df6:9d4bfeecbdf28f3980b23fa8f2504bdf54f04486
-modified: '2021-06-21T06:56:21.123217Z'
+    introduced: 7f56378a73af8a61da78b8091f0e317316cee300
+    fixed: 9d4bfeecbdf28f3980b23fa8f2504bdf54f04486
+modified: '2021-06-23T06:25:30.979144Z'
 published: '2020-07-22T21:49:56.883463Z'
 ecosystem_specific:
   severity: MEDIUM
+database_specific:
+  fixed_range: 6d4a773a4bd06cbfe3c0ca68728d0099777e8df6:9d4bfeecbdf28f3980b23fa8f2504bdf54f04486
+  introduced_range: unknown:7f56378a73af8a61da78b8091f0e317316cee300
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=16288

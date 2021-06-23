@@ -15,12 +15,14 @@ affects:
   ranges:
   - type: GIT
     repo: https://gitlab.freedesktop.org/libspectre/libspectre.git
-    introduced: unknown:ceeeec8ee480c9cce066c0921665ef647bd5c135
+    introduced: ceeeec8ee480c9cce066c0921665ef647bd5c135
     fixed: 920c30cf1d4353b28266fc91f88b2ae72e0f5e4f
-modified: '2021-06-21T06:56:21.755011Z'
+modified: '2021-06-23T06:25:42.852959Z'
 published: '2020-07-22T00:00:20.220294Z'
 ecosystem_specific:
   severity: MEDIUM
+database_specific:
+  introduced_range: unknown:ceeeec8ee480c9cce066c0921665ef647bd5c135
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=19780

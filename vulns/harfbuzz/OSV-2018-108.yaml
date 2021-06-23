@@ -16,11 +16,13 @@ affects:
   - type: GIT
     repo: https://github.com/harfbuzz/harfbuzz.git
     introduced: ab1f30bd059f1d2270793e9726b60666b328d2b8
-    fixed: ab1f30bd059f1d2270793e9726b60666b328d2b8:0f85edb7781f4d5ec2de676979be75a0f6559d80
-modified: '2021-06-21T06:56:20.812371Z'
+    fixed: 0f85edb7781f4d5ec2de676979be75a0f6559d80
+modified: '2021-06-23T06:25:30.794910Z'
 published: '2021-01-13T00:00:47.924143Z'
 ecosystem_specific:
   severity: MEDIUM
+database_specific:
+  fixed_range: ab1f30bd059f1d2270793e9726b60666b328d2b8:0f85edb7781f4d5ec2de676979be75a0f6559d80
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=10898

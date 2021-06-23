@@ -16,8 +16,8 @@ affects:
   ranges:
   - type: GIT
     repo: https://github.com/boostorg/boost.git
-    introduced: 34ecafd457688d6124ec20489e4e5f4482374a29:a5836469835ec3ac377df07cfbb5bc2dca88396c
-    fixed: b078cd00e84a8ff8a901ebf6d78b65aaada8149d:1b085e6b351350816a6ad6e2f1a88e519b093382
+    introduced: c47cf1cf5ae18d4bd98f6376ab2949785a5d0cc2
+    fixed: 1b085e6b351350816a6ad6e2f1a88e519b093382
   versions:
   - boost-1.66.0
   - boost-1.66.0-beta1
@@ -34,10 +34,13 @@ affects:
   - boost-1.72.0.beta1
   - boost-1.73.0
   - boost-1.73.0.beta1
-modified: '2021-06-21T06:56:26.482792Z'
+modified: '2021-06-23T06:29:42.102365Z'
 published: '2021-01-15T00:01:08.730847Z'
 ecosystem_specific:
   severity: MEDIUM
+database_specific:
+  introduced_range: 34ecafd457688d6124ec20489e4e5f4482374a29:a5836469835ec3ac377df07cfbb5bc2dca88396c
+  fixed_range: b078cd00e84a8ff8a901ebf6d78b65aaada8149d:1b085e6b351350816a6ad6e2f1a88e519b093382
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=6708

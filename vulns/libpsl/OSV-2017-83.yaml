@@ -16,11 +16,13 @@ affects:
   - type: GIT
     repo: https://github.com/rockdaboot/libpsl.git
     introduced: 666c07b36418334435077f04583c37a45a8f6722
-    fixed: fa69455d0748ae3c3318a5e2b9860ac9bb80485d:0cbb7089f60931870d19c9fc323fa0cccafd8907
-modified: '2021-06-21T06:56:25.766197Z'
+    fixed: 0cbb7089f60931870d19c9fc323fa0cccafd8907
+modified: '2021-06-23T06:29:21.101826Z'
 published: '2021-01-13T21:57:36.312189Z'
 ecosystem_specific:
   severity: MEDIUM
+database_specific:
+  fixed_range: fa69455d0748ae3c3318a5e2b9860ac9bb80485d:0cbb7089f60931870d19c9fc323fa0cccafd8907
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=2262

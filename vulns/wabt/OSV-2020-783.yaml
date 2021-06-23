@@ -15,7 +15,7 @@ affects:
   ranges:
   - type: GIT
     repo: https://github.com/WebAssembly/wabt
-    introduced: 2132abdd621a354a25af6bc67d1bb603c6b3c4dc:c74e612ff9d95d6afd1bbfb6d9656655aa6d70ed
+    introduced: ac29d4f571f54ce3c99243048ebdac6cfe6cc671
     fixed: ef0d3789f229e1176910e45fc47600336ae3aed9
   versions:
   - 1.0.14
@@ -26,10 +26,12 @@ affects:
   - 1.0.19
   - gh-actions-test
   - gh-actions-test2
-modified: '2021-06-21T06:56:24.203090Z'
+modified: '2021-06-23T06:28:00.194151Z'
 published: '2020-07-14T05:37:33.041385Z'
 ecosystem_specific:
   severity: MEDIUM
+database_specific:
+  introduced_range: 2132abdd621a354a25af6bc67d1bb603c6b3c4dc:c74e612ff9d95d6afd1bbfb6d9656655aa6d70ed
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20364

@@ -15,12 +15,14 @@ affects:
   ranges:
   - type: GIT
     repo: https://github.com/openthread/openthread
-    introduced: unknown:05ba4c29f4badfe99fe6b478900e7af072059ebe
+    introduced: 05ba4c29f4badfe99fe6b478900e7af072059ebe
     fixed: 167d616bc2eefe9e4712da5a65681502de5851c0
-modified: '2021-06-21T06:56:24.915202Z'
+modified: '2021-06-23T06:28:31.031432Z'
 published: '2020-07-22T21:50:03.818147Z'
 ecosystem_specific:
   severity: MEDIUM
+database_specific:
+  introduced_range: unknown:05ba4c29f4badfe99fe6b478900e7af072059ebe
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20775

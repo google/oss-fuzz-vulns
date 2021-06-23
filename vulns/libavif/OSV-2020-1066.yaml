@@ -15,7 +15,7 @@ affects:
   ranges:
   - type: GIT
     repo: https://github.com/AOMediaCodec/libavif.git
-    introduced: unknown:4be7ce1dd3f0a45cd2555c94bd76a8f40baabcc4
+    introduced: 4be7ce1dd3f0a45cd2555c94bd76a8f40baabcc4
     fixed: 34c0d3147f3d30e1218bceda410c978481a5e1be
   versions:
   - v0.5.5
@@ -29,10 +29,12 @@ affects:
   - v0.7.0
   - v0.7.1
   - v0.7.2
-modified: '2021-06-21T06:56:27.256689Z'
+modified: '2021-06-23T06:30:09.555925Z'
 published: '2020-07-22T21:49:44.588962Z'
 ecosystem_specific:
   severity: MEDIUM
+database_specific:
+  introduced_range: unknown:4be7ce1dd3f0a45cd2555c94bd76a8f40baabcc4
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21947

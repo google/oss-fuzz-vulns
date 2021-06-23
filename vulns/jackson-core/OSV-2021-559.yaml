@@ -15,12 +15,15 @@ affects:
   ranges:
   - type: GIT
     repo: https://github.com/FasterXML/jackson-core
-    introduced: b051c9036ee505a7e85c81a704e2e43c5397200f:8a2036e948ee849b922121c061c002cb0e131bfa
-    fixed: 8a2036e948ee849b922121c061c002cb0e131bfa:0deae137735e1c81159e83bd1b4613e6d6b36501
-modified: '2021-06-21T06:56:19.473177Z'
+    introduced: 2bd85ebcdd94233d9e59a0833f29e06ce4281f3b
+    fixed: 0deae137735e1c81159e83bd1b4613e6d6b36501
+modified: '2021-06-23T06:25:10.270553Z'
 published: '2021-03-25T00:01:07.913753Z'
 ecosystem_specific:
   severity: LOW
+database_specific:
+  introduced_range: b051c9036ee505a7e85c81a704e2e43c5397200f:8a2036e948ee849b922121c061c002cb0e131bfa
+  fixed_range: 8a2036e948ee849b922121c061c002cb0e131bfa:0deae137735e1c81159e83bd1b4613e6d6b36501
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=32405

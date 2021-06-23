@@ -15,7 +15,7 @@ affects:
   ranges:
   - type: GIT
     repo: https://android.googlesource.com/platform/external/libmpeg2
-    introduced: unknown:2caf20ff25c090341965cc88b7f31f129e806a3a
+    introduced: 2caf20ff25c090341965cc88b7f31f129e806a3a
     fixed: 6f28264c1170fae4f6c847625f4a6d4467a3262b
   versions:
   - android-mainline-10.0.0_r6
@@ -30,10 +30,12 @@ affects:
   - platform-tools-30.0.1
   - platform-tools-30.0.2
   - platform-tools-30.0.3
-modified: '2021-06-21T06:56:21.225313Z'
+modified: '2021-06-23T06:25:37.773032Z'
 published: '2020-07-22T21:49:54.155583Z'
 ecosystem_specific:
   severity: HIGH
+database_specific:
+  introduced_range: unknown:2caf20ff25c090341965cc88b7f31f129e806a3a
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18993

@@ -16,7 +16,7 @@ affects:
   - type: GIT
     repo: https://android.googlesource.com/platform/external/libhevc
     introduced: 4d36db275bb4d0abc410415f6d8f5af4bc179102
-    fixed: 9623000c124facfcee78ffbc341740fa68f3d914:e979e4f69a45519b574186b56c883f5f1a413ba8
+    fixed: e979e4f69a45519b574186b56c883f5f1a413ba8
   versions:
   - android-11.0.0_r1
   - android-11.0.0_r10
@@ -76,10 +76,12 @@ affects:
   - platform-tools-30.0.3
   - platform-tools-30.0.4
   - platform-tools-30.0.5
-modified: '2021-06-21T06:56:18.944732Z'
+modified: '2021-06-23T06:24:50.479478Z'
 published: '2020-07-14T05:37:35.331259Z'
 ecosystem_specific:
   severity: MEDIUM
+database_specific:
+  fixed_range: 9623000c124facfcee78ffbc341740fa68f3d914:e979e4f69a45519b574186b56c883f5f1a413ba8
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23197

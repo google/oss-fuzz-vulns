@@ -17,12 +17,14 @@ affects:
   - type: GIT
     repo: https://github.com/WebAssembly/wabt
     introduced: ac29d4f571f54ce3c99243048ebdac6cfe6cc671
-    fixed: a5a9b341b7fb7aa66427d4701871d2b3c73bcc87:d087e702d520207871ae82c58461fb08d58af187
+    fixed: d087e702d520207871ae82c58461fb08d58af187
   versions:
   - 1.0.14
   - 1.0.15
+modified: '2021-06-23T06:27:56.995997Z'
+published: '2020-06-24T01:51:16.354141Z'
+database_specific:
+  fixed_range: a5a9b341b7fb7aa66427d4701871d2b3c73bcc87:d087e702d520207871ae82c58461fb08d58af187
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20457
-modified: '2021-03-09T04:49:05.297781Z'
-published: '2020-06-24T01:51:16.354141Z'

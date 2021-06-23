@@ -15,15 +15,17 @@ affects:
   ranges:
   - type: GIT
     repo: https://github.com/aawc/unrar.git
-    introduced: 2a079823c708a637bc36e888180ebb96fdfba526:1d8ea7923dae7c8f136912b6bdca95dcb52e80bc
+    introduced: d2e5341ebf6f34c9bd5939c3ac812cb2cd983081
     fixed: 0ff832d31470471803b175cfff4e40c1b08ee779
   versions:
   - 5.6.1.2
   - 5.6.1.3
-modified: '2021-06-21T06:56:22.064176Z'
+modified: '2021-06-23T06:25:50.375896Z'
 published: '2021-01-13T21:57:43.088460Z'
 ecosystem_specific:
   severity: HIGH
+database_specific:
+  introduced_range: 2a079823c708a637bc36e888180ebb96fdfba526:1d8ea7923dae7c8f136912b6bdca95dcb52e80bc
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=4373

@@ -16,11 +16,13 @@ affects:
   - type: GIT
     repo: https://github.com/Blosc/c-blosc2.git
     introduced: 933c0c455c91da06604163f533e9a2084cd2f6ca
-    fixed: 0e8bdfce66ba4b2fef79a2525fd83ecfc22b0983:aebf2b9858368681e497f136501ab33cc1014aed
-modified: '2021-06-21T06:56:26.030114Z'
+    fixed: aebf2b9858368681e497f136501ab33cc1014aed
+modified: '2021-06-23T06:29:21.212060Z'
 published: '2021-01-17T00:00:12.646500Z'
 ecosystem_specific:
   severity: MEDIUM
+database_specific:
+  fixed_range: 0e8bdfce66ba4b2fef79a2525fd83ecfc22b0983:aebf2b9858368681e497f136501ab33cc1014aed
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29613

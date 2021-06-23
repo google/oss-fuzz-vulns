@@ -15,7 +15,7 @@ affects:
   ranges:
   - type: GIT
     repo: https://gitlab.gnome.org/GNOME/glib
-    introduced: 8defa46e6ec16aa3722aa0ac0bc3db0fecd86c45:0d271223d894e9c69b7fa6b7983511f8ad770682
+    introduced: 10ee7301e8edb13e59143ee5653cd2b46e26c044
     fixed: 372e81b56ca4cdbccc3a036b41442bdc58e2164e
   versions:
   - 2.57.3
@@ -23,10 +23,12 @@ affects:
   - 2.58.1
   - 2.58.2
   - 2.58.3
-modified: '2021-06-21T06:56:20.140641Z'
+modified: '2021-06-23T06:25:26.058322Z'
 published: '2021-01-13T00:00:09.013990Z'
 ecosystem_specific:
   severity: MEDIUM
+database_specific:
+  introduced_range: 8defa46e6ec16aa3722aa0ac0bc3db0fecd86c45:0d271223d894e9c69b7fa6b7983511f8ad770682
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=9807

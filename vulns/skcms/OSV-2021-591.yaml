@@ -13,10 +13,12 @@ affects:
   ranges:
   - type: GIT
     repo: https://skia.googlesource.com/skcms.git
-    introduced: b9593d4e39ea3dbf1ba5e894f0cefc1cb1568437:c8a56c57ab7c5547ad29e2112ccf02e8dd91ce91
+    introduced: 4e8691e281941320a5644d50c566c2d4394cf1c8
     fixed: 411e27776f5c0ec8359508f0e2cabb1538375e53
+modified: '2021-06-23T06:25:07.920201Z'
+published: '2021-04-02T00:01:01.958406Z'
+database_specific:
+  introduced_range: b9593d4e39ea3dbf1ba5e894f0cefc1cb1568437:c8a56c57ab7c5547ad29e2112ccf02e8dd91ce91
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=32767
-modified: '2021-04-02T00:01:01.958673Z'
-published: '2021-04-02T00:01:01.958406Z'

@@ -15,12 +15,14 @@ affects:
   ranges:
   - type: GIT
     repo: https://code.videolan.org/videolan/dav1d.git
-    introduced: 4a646a0ca25a22a809bfcb743332f6b6646d86a3:ec53ec6d5b4ebbb06d5c7209fd4f25634a6ad606
+    introduced: 7ef74ca1005785f0791874d52217aecc76f190cd
     fixed: 66adb457af2bedc1280af147047c64683834d939
-modified: '2021-06-21T06:56:25.645309Z'
+modified: '2021-06-23T06:28:52.114646Z'
 published: '2021-01-13T00:00:39.442989Z'
 ecosystem_specific:
   severity: MEDIUM
+database_specific:
+  introduced_range: 4a646a0ca25a22a809bfcb743332f6b6646d86a3:ec53ec6d5b4ebbb06d5c7209fd4f25634a6ad606
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11378

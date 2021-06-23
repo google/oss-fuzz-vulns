@@ -16,11 +16,13 @@ affects:
   - type: GIT
     repo: https://github.com/OSGeo/gdal
     introduced: 4ba6e3ce6655a651097c5ff19f707808e6b82189
-    fixed: 7e3771089616198d9329cfc9ed8f0620f4e5ea66:bb8555c956c75e4f6ae50db6d28e40b660d9a777
-modified: '2021-06-21T06:56:27.522200Z'
+    fixed: bb8555c956c75e4f6ae50db6d28e40b660d9a777
+modified: '2021-06-23T06:30:50.088380Z'
 published: '2020-06-24T01:51:11.337556Z'
 ecosystem_specific:
   severity: HIGH
+database_specific:
+  fixed_range: 7e3771089616198d9329cfc9ed8f0620f4e5ea66:bb8555c956c75e4f6ae50db6d28e40b660d9a777
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23417

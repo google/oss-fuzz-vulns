@@ -15,12 +15,14 @@ affects:
   ranges:
   - type: GIT
     repo: https://github.com/beltoforion/muparser.git
-    introduced: unknown:e6c369c90c36e9c3443f465ad1d9cec9e42d38b6
+    introduced: e6c369c90c36e9c3443f465ad1d9cec9e42d38b6
     fixed: 1f97b7eeab0d1dc2f68ff396a4bf741d0c602b50
-modified: '2021-06-21T06:56:18.638615Z'
+modified: '2021-06-23T06:24:47.006350Z'
 published: '2020-07-22T21:49:39.777520Z'
 ecosystem_specific:
   severity: MEDIUM
+database_specific:
+  introduced_range: unknown:e6c369c90c36e9c3443f465ad1d9cec9e42d38b6
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23123

@@ -16,7 +16,7 @@ affects:
   - type: GIT
     repo: https://invent.kde.org/frameworks/kimageformats.git
     introduced: c60e77c048d32ccf743cec695743b77b2b25dc87
-    fixed: 2429c9533621d32f4ab5350856945cc0ad659ae5:780f3428253bff4b029736fa9f195ca5938203bc
+    fixed: 780f3428253bff4b029736fa9f195ca5938203bc
   versions:
   - v5.70.0
   - v5.70.0-rc1
@@ -47,10 +47,12 @@ affects:
   - v5.81.0
   - v5.82.0-rc1
   - v5.82.0-rc2
-modified: '2021-06-21T06:56:27.794800Z'
+modified: '2021-06-23T06:30:57.368062Z'
 published: '2020-07-16T00:00:23.898514Z'
 ecosystem_specific:
   severity: MEDIUM
+database_specific:
+  fixed_range: 2429c9533621d32f4ab5350856945cc0ad659ae5:780f3428253bff4b029736fa9f195ca5938203bc
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22740

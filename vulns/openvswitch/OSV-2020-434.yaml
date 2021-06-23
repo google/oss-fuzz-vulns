@@ -16,7 +16,7 @@ affects:
   - type: GIT
     repo: https://github.com/openvswitch/ovs.git
     introduced: ea43b024a8a03f6648d0e06589137a4fbfea9f5a
-    fixed: 187bb41fbf447acf9fb6ac117dc923bbe649e78c:e2ed6fbeb18cba1235c6a260b754f11ecc9d4cb0
+    fixed: e2ed6fbeb18cba1235c6a260b754f11ecc9d4cb0
   versions:
   - v2.11.0
   - v2.11.1
@@ -29,10 +29,12 @@ affects:
   - v2.12.1
   - v2.12.2
   - v2.12.3
-modified: '2021-06-21T06:56:26.406908Z'
+modified: '2021-06-23T06:29:25.752461Z'
 published: '2020-07-01T00:00:09.309832Z'
 ecosystem_specific:
   severity: MEDIUM
+database_specific:
+  fixed_range: 187bb41fbf447acf9fb6ac117dc923bbe649e78c:e2ed6fbeb18cba1235c6a260b754f11ecc9d4cb0
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14429

@@ -15,14 +15,16 @@ affects:
   ranges:
   - type: GIT
     repo: https://gitlab.com/libtiff/libtiff
-    introduced: unknown:33f1b16788b86d4501f82678090d209364b3ca49
+    introduced: 33f1b16788b86d4501f82678090d209364b3ca49
     fixed: 7475a285087c8a10da36c948fe40002c29d2e004
   versions:
   - v4.0.10
-modified: '2021-06-21T06:56:18.955022Z'
+modified: '2021-06-23T06:24:50.488747Z'
 published: '2020-07-22T21:49:58.709915Z'
 ecosystem_specific:
   severity: MEDIUM
+database_specific:
+  introduced_range: unknown:33f1b16788b86d4501f82678090d209364b3ca49
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=16844

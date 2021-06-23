@@ -16,15 +16,17 @@ affects:
   - type: GIT
     repo: https://boringssl.googlesource.com/boringssl
     introduced: 81a6f6d8de908e27901f5c968c576fbb9c3f35d0
-    fixed: 81a6f6d8de908e27901f5c968c576fbb9c3f35d0:f8f35c95550e6796ab8b2c0f8e37e7ce4bc67302
+    fixed: f8f35c95550e6796ab8b2c0f8e37e7ce4bc67302
   versions:
   - fips-20180730
   - fips-20190808
   - fips-android-20191020
-modified: '2021-06-21T06:56:20.176069Z'
+modified: '2021-06-23T06:25:27.830624Z'
 published: '2021-01-13T00:00:05.629092Z'
 ecosystem_specific:
   severity: MEDIUM
+database_specific:
+  fixed_range: 81a6f6d8de908e27901f5c968c576fbb9c3f35d0:f8f35c95550e6796ab8b2c0f8e37e7ce4bc67302
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=8654

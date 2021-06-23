@@ -15,12 +15,15 @@ affects:
   ranges:
   - type: GIT
     repo: https://github.com/darktable-org/rawspeed.git
-    introduced: f0e9f60474d98883ab9343f584b73ca046263679:52da2b8fda29aa257088d91fb11877f909d578a2
-    fixed: 1cda622444fb13abe35ff42d1b3a7d940f728100:f1806ea3d0abd164e38da2fafe3d3479feb1d3e8
-modified: '2021-06-21T06:56:23.007973Z'
+    introduced: 23d5018f6b231d62daa6543094a85747beb9654a
+    fixed: f1806ea3d0abd164e38da2fafe3d3479feb1d3e8
+modified: '2021-06-23T06:26:08.402315Z'
 published: '2021-01-13T21:57:05.509209Z'
 ecosystem_specific:
   severity: MEDIUM
+database_specific:
+  fixed_range: 1cda622444fb13abe35ff42d1b3a7d940f728100:f1806ea3d0abd164e38da2fafe3d3479feb1d3e8
+  introduced_range: f0e9f60474d98883ab9343f584b73ca046263679:52da2b8fda29aa257088d91fb11877f909d578a2
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=2479

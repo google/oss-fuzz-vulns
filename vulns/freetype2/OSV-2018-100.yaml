@@ -16,11 +16,13 @@ affects:
   - type: GIT
     repo: https://github.com/freetype/freetype2-testing.git
     introduced: 0c256f6e16eb73be1aef98197755e0e6bb4c56a9
-    fixed: 08b711d0182229d7e0a1e52cecf73660cb95addb:7e045f03edb2a34b731c999c586a03a914502d88
-modified: '2021-06-21T06:56:21.631934Z'
+    fixed: 7e045f03edb2a34b731c999c586a03a914502d88
+modified: '2021-06-23T06:25:40.693493Z'
 published: '2021-01-13T00:00:43.817225Z'
 ecosystem_specific:
   severity: HIGH
+database_specific:
+  fixed_range: 08b711d0182229d7e0a1e52cecf73660cb95addb:7e045f03edb2a34b731c999c586a03a914502d88
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=10869

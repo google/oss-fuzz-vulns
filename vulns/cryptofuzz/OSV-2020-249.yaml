@@ -15,12 +15,15 @@ affects:
   ranges:
   - type: GIT
     repo: https://github.com/guidovranken/cryptofuzz
-    introduced: 5b42807c259ed836004066faafd8b18a9e978d96:8aa5576b934f3430149d337254b2bcc1889418d9
-    fixed: 9cb7175bf5069b238c2ce88ae26243204081a919:5820007745aceb9708055791a16e69edc02da146
-modified: '2021-06-21T06:56:21.882077Z'
+    introduced: 16fa554301044751f7a339f973536aa797265ba5
+    fixed: 5820007745aceb9708055791a16e69edc02da146
+modified: '2021-06-23T06:25:46.210313Z'
 published: '2020-06-26T00:00:10.386061Z'
 ecosystem_specific:
   severity: MEDIUM
+database_specific:
+  introduced_range: 5b42807c259ed836004066faafd8b18a9e978d96:8aa5576b934f3430149d337254b2bcc1889418d9
+  fixed_range: 9cb7175bf5069b238c2ce88ae26243204081a919:5820007745aceb9708055791a16e69edc02da146
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=19926
