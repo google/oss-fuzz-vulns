@@ -17,6 +17,9 @@ affects:
     repo: https://gitlab.com/wireshark/wireshark.git
     introduced: 5a8e9e35b36d235930cc70b42f356418c9ea0da1
     fixed: a152753aa929deda21b797f93848c369a68b9465
+  - type: GIT
+    repo: https://gitlab.com/wireshark/wireshark.git
+    introduced: f80b7d1b279fb6c13f640019a1bbc42b18bf7469
   versions:
   - v3.0.1
   - v3.0.10
@@ -60,7 +63,7 @@ affects:
   - wireshark-3.0.7
   - wireshark-3.0.8
   - wireshark-3.0.9
-modified: '2021-06-23T06:27:52.905161Z'
+modified: '2021-06-23T07:58:09.527923Z'
 published: '2020-07-01T00:00:23.358358Z'
 ecosystem_specific:
   severity: MEDIUM
