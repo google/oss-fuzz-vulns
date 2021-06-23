@@ -34,13 +34,14 @@ affects:
   - gnutls_3_6_7
   - gnutls_3_6_8
   - gnutls_3_6_9
-modified: '2021-06-23T06:25:57.007134Z'
+  - 3.6.16
+modified: '2021-06-23T07:00:14.673326Z'
 published: '2021-01-13T00:01:19.024161Z'
 ecosystem_specific:
   severity: MEDIUM
 database_specific:
-  fixed_range: d165c2a37f7d072cc88db88ec97f057a9ac6e4aa:f6b4695ccafd6945cc7affda4ab9f7b9f9ed8616
   introduced_range: 5333d20ce6f14229f6579086b57de0eeacedd4fa:90a71b2e53e9696bd4c07ff98a12d06ecd2e424d
+  fixed_range: d165c2a37f7d072cc88db88ec97f057a9ac6e4aa:f6b4695ccafd6945cc7affda4ab9f7b9f9ed8616
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=10138
