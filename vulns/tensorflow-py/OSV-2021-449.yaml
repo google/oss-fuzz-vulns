@@ -1,7 +1,7 @@
 id: OSV-2021-449
 package:
   name: tensorflow-py
-  ecosystem: pypi
+  ecosystem: PyPI
 summary: UNKNOWN READ in std::pair<absl::lts_NUMBER_02_25::container_internal::raw_hash_set<absl::lts_NUM
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31393
