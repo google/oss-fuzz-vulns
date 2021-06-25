@@ -1,0 +1,26 @@
+id: OSV-2021-871
+package:
+  name: libjxl
+  ecosystem: OSS-Fuzz
+summary: Heap-use-after-free in jxl::ImageBlender::PrepareBlending
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=35293
+
+  Crash type: Heap-use-after-free READ 8
+  Crash state:
+  jxl::ImageBlender::PrepareBlending
+  jxl::FinalizeFrameDecoding
+  jxl::FrameDecoder::Flush
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/libjxl/libjxl.git
+    introduced: dbf8653bf9c654c42406dab4b55c024f0d879cd8
+    fixed: 95eea7e89d0bf4303f6e30e8148b0fc309517d6b
+modified: '2021-06-18T00:01:06.680134Z'
+published: '2021-06-18T00:01:06.679821Z'
+ecosystem_specific:
+  severity: HIGH
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=35293
