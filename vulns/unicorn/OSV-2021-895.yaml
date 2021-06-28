@@ -1,0 +1,24 @@
+id: OSV-2021-895
+package:
+  name: unicorn
+  ecosystem: OSS-Fuzz
+summary: Segv on unknown address in helper_uc_tracecode
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=35514
+
+  Crash type: Segv on unknown address
+  Crash state:
+  helper_uc_tracecode
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/unicorn-engine/unicorn.git
+    introduced: 34ddafcbcf6d16508a63623a68715394ea4e12d8
+    fixed: 52f90cda023abaca510d59f021c88629270ad6c0
+modified: '2021-06-25T00:01:11.105510Z'
+published: '2021-06-25T00:01:11.105162Z'
+ecosystem_specific:
+  severity: null
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=35514
