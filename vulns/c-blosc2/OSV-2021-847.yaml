@@ -1,0 +1,28 @@
+id: OSV-2021-847
+package:
+  name: c-blosc2
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in frame_get_vlmetalayers
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=35086
+
+  Crash type: Heap-buffer-overflow READ {*}
+  Crash state:
+  frame_get_vlmetalayers
+  frame_to_schunk
+  blosc2_schunk_from_buffer
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/Blosc/c-blosc2.git
+    introduced: 4d2510757d797781aed92193012294e7732afe9a
+    fixed: 1600817ed4961b13bbe6eed5f308c9abc78eee1e
+  versions:
+  - v2.0.0-rc2
+modified: '2021-06-10T00:01:13.857554Z'
+published: '2021-06-10T00:01:13.857277Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=35086

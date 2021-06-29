@@ -1,0 +1,27 @@
+id: OSV-2021-882
+package:
+  name: apache-commons
+  ecosystem: OSS-Fuzz
+summary: Uncaught exception
+details: |-
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=35392
+
+  Crash type: Uncaught exception
+  Crash state:
+  NULL
+affects:
+  ranges:
+  - type: GIT
+    repo: https://gitbox.apache.org/repos/asf/commons-compress.git
+    introduced: 26924e96c7730db014c310757e11c9359db07f3e
+    fixed: 488425c1b9fb8c8d0f1ef1ce7d665058880870e2
+modified: '2021-06-21T00:01:24.711042Z'
+published: '2021-06-21T00:01:24.710703Z'
+ecosystem_specific:
+  severity: LOW
+database_specific:
+  fixed_range: 7c79a748a5626149606608742a0c4e958c01cb96:488425c1b9fb8c8d0f1ef1ce7d665058880870e2
+  introduced_range: 56720646af04a7b2102c14a07708bd4ac72a9dc8:882c6dd12473d7b615d503e08fd6b866d0f866d5
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=35392
