@@ -1,0 +1,26 @@
+id: OSV-2021-913
+package:
+  name: mruby
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in dispatch
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=35727
+
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  dispatch
+  dispatch_linked
+  codegen
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/mruby/mruby
+    introduced: 99dbcec89c892bc90f36fbf38e46a9ec971e3a77
+    fixed: a6657afab9ffb258b01b3d6e485a86328bf4d40e
+modified: '2021-07-03T00:00:29.297922Z'
+published: '2021-07-03T00:00:29.297612Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=35727
