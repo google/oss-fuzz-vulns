@@ -1,0 +1,32 @@
+id: OSV-2021-617
+package:
+  name: qemu
+  ecosystem: OSS-Fuzz
+summary: Stack-use-after-return in v9fs_setattr
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=32995
+
+  Crash type: Stack-use-after-return READ 4
+  Crash state:
+  v9fs_setattr
+  coroutine_trampoline
+affects:
+  ranges:
+  - type: GIT
+    repo: https://git.qemu.org/git/qemu.git
+    introduced: f4ceebdec531243dd72e38f85f085287e6e63258
+  versions:
+  - v6.0.0
+  - v6.0.0-rc0
+  - v6.0.0-rc1
+  - v6.0.0-rc2
+  - v6.0.0-rc3
+  - v6.0.0-rc4
+  - v6.0.0-rc5
+modified: '2021-04-09T00:00:27.093308Z'
+published: '2021-04-09T00:00:27.093027Z'
+ecosystem_specific:
+  severity: null
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=32995
