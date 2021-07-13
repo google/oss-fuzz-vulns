@@ -16,7 +16,13 @@ affects:
   - type: GIT
     repo: https://github.com/Blosc/c-blosc2.git
     introduced: 861ba79f31393dec0a0782ca11cf32cebb6f6610
-modified: '2021-06-21T06:56:25.918871Z'
+  versions:
+  - v2.0.0
+  - v2.0.0-rc2
+  - v2.0.0.rc1
+  - v2.0.1
+  - v2.0.2
+modified: '2021-07-13T00:04:13.005154Z'
 published: '2021-03-02T00:01:22.540205Z'
 ecosystem_specific:
   severity: MEDIUM
