@@ -1,0 +1,38 @@
+id: OSV-2021-975
+package:
+  name: libtpms
+  ecosystem: OSS-Fuzz
+summary: Dynamic-stack-buffer-overflow in CryptDigestUpdateInt
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=36074
+
+  Crash type: Dynamic-stack-buffer-overflow WRITE 8
+  Crash state:
+  CryptDigestUpdateInt
+  ComputeCpHash
+  CheckCommandAudit
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/stefanberger/libtpms
+    introduced: 98b34147ad3ea412ba938de24491d96fa265447f
+    fixed: 98b34147ad3ea412ba938de24491d96fa265447f
+  - type: GIT
+    repo: https://github.com/stefanberger/libtpms
+    introduced: 22c9bf90f47f5d986f5f1aabb5d842bca20b1fc7
+    fixed: 22c9bf90f47f5d986f5f1aabb5d842bca20b1fc7
+  - type: GIT
+    repo: https://github.com/stefanberger/libtpms
+    introduced: ad7c381c79769104653fa8ed9677a73ce71f9c5e
+    fixed: ad7c381c79769104653fa8ed9677a73ce71f9c5e
+  - type: GIT
+    repo: https://github.com/stefanberger/libtpms
+    introduced: f640123f1ffbe70fdce87ee1b9f75684553af99c
+    fixed: f640123f1ffbe70fdce87ee1b9f75684553af99c
+modified: '2021-07-13T00:01:14.992723Z'
+published: '2021-07-13T00:01:14.992472Z'
+ecosystem_specific:
+  severity: null
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=36074

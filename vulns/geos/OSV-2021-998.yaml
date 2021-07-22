@@ -1,0 +1,29 @@
+id: OSV-2021-998
+package:
+  name: geos
+  ecosystem: OSS-Fuzz
+summary: Dynamic-stack-buffer-overflow in std::__1::__wrap_iter<char const*>::__wrap_iter
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=36137
+
+  Crash type: Dynamic-stack-buffer-overflow WRITE 8
+  Crash state:
+  std::__1::__wrap_iter<char const*>::__wrap_iter
+  std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<ch
+  geos::io::StringTokenizer::StringTokenizer
+affects:
+  ranges:
+  - type: GIT
+    repo: https://git.osgeo.org/gitea/geos/geos.git
+    introduced: 5a0c4cdb39241c8b520c0045b4ea7da808a0cf77
+    fixed: 1bfc5b27493c552fd9a28823358a4c1f4c3b65f7
+modified: '2021-07-14T00:01:21.423559Z'
+published: '2021-07-14T00:01:21.423336Z'
+ecosystem_specific:
+  severity: null
+database_specific:
+  introduced_range: 413bdbc2014de87b3f1fda0895f5afc770226f53:2df86bc1191f578047fb30331cae254486ace191
+  fixed_range: 2df86bc1191f578047fb30331cae254486ace191:1bfc5b27493c552fd9a28823358a4c1f4c3b65f7
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=36137

@@ -1,0 +1,58 @@
+id: OSV-2021-631
+package:
+  name: libavc
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in ih264d_decode_slice_thread
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=33167
+
+  Crash type: Heap-buffer-overflow READ 4
+  Crash state:
+  ih264d_decode_slice_thread
+  ih264d_decode_picture_thread
+  clone
+affects:
+  ranges:
+  - type: GIT
+    repo: https://android.googlesource.com/platform/external/libavc
+    introduced: 6efeedf0633e1965a4d4e17d64f14215e9b6d48f
+  versions:
+  - android-11.0.0_r18
+  - android-11.0.0_r19
+  - android-11.0.0_r20
+  - android-11.0.0_r21
+  - android-11.0.0_r22
+  - android-11.0.0_r23
+  - android-11.0.0_r24
+  - android-11.0.0_r26
+  - android-11.0.0_r27
+  - android-11.0.0_r28
+  - android-11.0.0_r29
+  - android-11.0.0_r38
+  - android-11.0.0_r39
+  - android-s-beta-1
+  - android-s-beta-2
+  - android-s-beta-3
+  - android-s-preview-1
+  - platform-tools-29.0.1
+  - platform-tools-29.0.2
+  - platform-tools-29.0.3
+  - platform-tools-29.0.4
+  - platform-tools-29.0.5
+  - platform-tools-29.0.6
+  - platform-tools-30.0.0
+  - platform-tools-30.0.1
+  - platform-tools-30.0.2
+  - platform-tools-30.0.3
+  - platform-tools-30.0.4
+  - platform-tools-30.0.5
+  - platform-tools-31.0.0
+  - platform-tools-31.0.1
+  - platform-tools-31.0.2
+modified: '2021-04-13T00:00:57.946273Z'
+published: '2021-04-13T00:00:57.946Z'
+ecosystem_specific:
+  severity: HIGH
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=33167

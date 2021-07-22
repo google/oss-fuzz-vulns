@@ -1,0 +1,33 @@
+id: OSV-2021-991
+package:
+  name: fmt
+  ecosystem: OSS-Fuzz
+summary: Dynamic-stack-buffer-overflow in fmt::v8::detail::dragonbox::umul192_upper64
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=36110
+
+  Crash type: Dynamic-stack-buffer-overflow WRITE 8
+  Crash state:
+  fmt::v8::detail::dragonbox::umul192_upper64
+  fmt::v8::detail::dragonbox::cache_accessor<double>::compute_mul
+  fmt::v8::detail::dragonbox::decimal_fp<double> fmt::v8::detail::dragonbox::to_de
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/fmtlib/fmt.git
+    introduced: bd3c792507e1a1003f7532088e976665dcbe4628
+    fixed: 2038bf61831eb8faede0883965364a974d1350fe
+  versions:
+  - 7.1.0
+  - 7.1.1
+  - 7.1.2
+  - 7.1.3
+  - 8.0.0
+  - 8.0.1
+modified: '2021-07-14T00:00:34.913448Z'
+published: '2021-07-14T00:00:34.913206Z'
+ecosystem_specific:
+  severity: null
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=36110
