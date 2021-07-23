@@ -1,0 +1,31 @@
+id: OSV-2021-646
+package:
+  name: draco
+  ecosystem: OSS-Fuzz
+summary: Heap-use-after-free in std::__1::__tree_iterator<std::__1::__value_type<std::__1::basic_string<char,
+  st
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=33315
+
+  Crash type: Heap-use-after-free READ 8
+  Crash state:
+  std::__1::__tree_iterator<std::__1::__value_type<std::__1::basic_string<char, st
+  draco::Metadata::AddSubMetadata
+  draco::MetadataDecoder::DecodeMetadata
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/google/draco
+    introduced: 25484b31235d1a35fa72be6ce8d1f7f286b5c0bf
+  versions:
+  - 1.4.0
+  - 1.4.1
+modified: '2021-04-17T00:00:31.032042Z'
+published: '2021-04-17T00:00:31.031765Z'
+ecosystem_specific:
+  severity: HIGH
+database_specific:
+  introduced_range: aef4bfbd61798ecc21d94c873b679fbdeaf92462:79601d2d060be52e673a82ed1c46f4666eb28255
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=33315

@@ -1,0 +1,27 @@
+id: OSV-2021-676
+package:
+  name: wasm3
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in op_Const64
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=33554
+
+  Crash type: Heap-buffer-overflow WRITE 8
+  Crash state:
+  op_Const64
+  EvaluateExpression
+  m3_LoadModule
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/wasm3/wasm3
+    introduced: 555f3ee408e736dd331534d01c37b526a6085d36
+  versions:
+  - v0.5.0
+modified: '2021-04-23T00:00:13.384704Z'
+published: '2021-04-23T00:00:13.384468Z'
+ecosystem_specific:
+  severity: HIGH
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=33554
