@@ -1,0 +1,26 @@
+id: OSV-2021-1054
+package:
+  name: libjxl
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in jxl::N_SCALAR::SingleFromSingle
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=36490
+
+  Crash type: Heap-buffer-overflow WRITE 4
+  Crash state:
+  jxl::N_SCALAR::SingleFromSingle
+  jxl::ThreadPool::SequentialRunnerStatic
+  jxl::ModularFrameDecoder::ModularImageToDecodedRect
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/libjxl/libjxl.git
+    introduced: 12293674f410c0cb604919cdb37073b8680049d5
+    fixed: 48e2a0ba25a7bac9ec510c48e322e5199de0583e
+modified: '2021-07-25T00:00:29.072152Z'
+published: '2021-07-25T00:00:29.071944Z'
+ecosystem_specific:
+  severity: HIGH
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=36490

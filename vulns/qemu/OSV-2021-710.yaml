@@ -1,0 +1,35 @@
+id: OSV-2021-710
+package:
+  name: qemu
+  ecosystem: OSS-Fuzz
+summary: Heap-use-after-free in iov_from_buf_full
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=33785
+
+  Crash type: Heap-use-after-free WRITE 2
+  Crash state:
+  iov_from_buf_full
+  iov_from_buf
+  virtio_net_receive_rcu
+affects:
+  ranges:
+  - type: GIT
+    repo: https://git.qemu.org/git/qemu.git
+    introduced: b12498fc575f2ad30f09fe78badc7fef526e2d76
+  versions:
+  - v6.0.0
+  - v6.0.0-rc0
+  - v6.0.0-rc1
+  - v6.0.0-rc2
+  - v6.0.0-rc3
+  - v6.0.0-rc4
+  - v6.0.0-rc5
+  - v6.1.0-rc0
+  - v6.1.0-rc1
+modified: '2021-05-01T00:00:22.994508Z'
+published: '2021-05-01T00:00:22.994253Z'
+ecosystem_specific:
+  severity: HIGH
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=33785

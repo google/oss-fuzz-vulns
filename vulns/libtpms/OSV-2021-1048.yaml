@@ -1,0 +1,30 @@
+id: OSV-2021-1048
+package:
+  name: libtpms
+  ecosystem: OSS-Fuzz
+summary: Stack-buffer-overflow in INDEX_ORDERLY_RAM_Marshal
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=36476
+
+  Crash type: Stack-buffer-overflow READ 4
+  Crash state:
+  INDEX_ORDERLY_RAM_Marshal
+  PERSISTENT_ALL_Marshal
+  TPM2_PersistentAllStore
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/stefanberger/libtpms
+    introduced: 70ebecdf6ad9b55fc9dc46c7ebbce285a5a51a9d
+    fixed: 034a5c02488cf7f0048e130177fc71c9e626e135
+  - type: GIT
+    repo: https://github.com/stefanberger/libtpms
+    introduced: 70ebecdf6ad9b55fc9dc46c7ebbce285a5a51a9d
+    fixed: e739c034e97258a9799060a9d0d68fd1f6f7b003
+modified: '2021-07-24T00:01:22.493159Z'
+published: '2021-07-24T00:01:22.492962Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=36476

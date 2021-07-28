@@ -1,0 +1,26 @@
+id: OSV-2021-1052
+package:
+  name: libjxl
+  ecosystem: OSS-Fuzz
+summary: Use-of-uninitialized-value in jxl::N_AVX2::UpsampleRect
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=36497
+
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  jxl::N_AVX2::UpsampleRect
+  jxl::Upsampler::UpsampleRect
+  jxl::FinalizeImageRect
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/libjxl/libjxl.git
+    introduced: 12293674f410c0cb604919cdb37073b8680049d5
+    fixed: b4c01782212931014c603d337d762174a742c5b6
+modified: '2021-07-25T00:00:12.369767Z'
+published: '2021-07-25T00:00:12.369578Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=36497

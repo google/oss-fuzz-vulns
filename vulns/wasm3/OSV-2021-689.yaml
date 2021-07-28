@@ -1,0 +1,27 @@
+id: OSV-2021-689
+package:
+  name: wasm3
+  ecosystem: OSS-Fuzz
+summary: UNKNOWN WRITE in Runtime_Release
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=33689
+
+  Crash type: UNKNOWN WRITE
+  Crash state:
+  Runtime_Release
+  EvaluateExpression
+  InitDataSegments
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/wasm3/wasm3
+    introduced: 64a22dcdc3e4239cb91b153d25c8b5bb2fac430e
+  versions:
+  - v0.5.0
+modified: '2021-04-27T00:01:03.314516Z'
+published: '2021-04-27T00:01:03.314259Z'
+ecosystem_specific:
+  severity: HIGH
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=33689
