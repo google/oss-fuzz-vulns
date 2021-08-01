@@ -1,0 +1,26 @@
+id: OSV-2021-1078
+package:
+  name: tidy-html5
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in prvTidygrowStack
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=36694
+
+  Crash type: Heap-buffer-overflow WRITE {*}
+  Crash state:
+  prvTidygrowStack
+  prvTidypush
+  CleanSpaces
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/htacg/tidy-html5.git
+    introduced: e56716f154f13b14fc5585146a85000fdd26d319
+    fixed: 5f98ccd606310bf6b96e5acd8c5048e359f44908
+modified: '2021-07-31T00:00:35.042348Z'
+published: '2021-07-31T00:00:35.042139Z'
+ecosystem_specific:
+  severity: HIGH
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=36694
