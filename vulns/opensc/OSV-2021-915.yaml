@@ -1,0 +1,29 @@
+id: OSV-2021-915
+package:
+  name: opensc
+  ecosystem: OSS-Fuzz
+summary: Stack-buffer-overflow in sc_asn1_read_tag
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=35766
+
+  Crash type: Stack-buffer-overflow READ 1
+  Crash state:
+  sc_asn1_read_tag
+  sc_asn1_find_tag
+  piv_compute_signature
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/OpenSC/OpenSC
+    introduced: 4119b2c3e7eadf0bccb1a3592ded897ce6619121
+    fixed: 456ac566938a1da774db06126a2fa6c0cba514b3
+  versions:
+  - 0.22.0-rc1
+  - 0.22.0-rc2
+modified: '2021-07-04T00:00:09.087812Z'
+published: '2021-07-04T00:00:09.087329Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=35766

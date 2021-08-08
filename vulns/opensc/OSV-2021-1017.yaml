@@ -1,0 +1,29 @@
+id: OSV-2021-1017
+package:
+  name: opensc
+  ecosystem: OSS-Fuzz
+summary: Stack-buffer-overflow in piv_compute_signature
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=36200
+
+  Crash type: Stack-buffer-overflow WRITE {*}
+  Crash state:
+  piv_compute_signature
+  sc_compute_signature
+  use_key
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/OpenSC/OpenSC
+    introduced: 4119b2c3e7eadf0bccb1a3592ded897ce6619121
+    fixed: 456ac566938a1da774db06126a2fa6c0cba514b3
+  versions:
+  - 0.22.0-rc1
+  - 0.22.0-rc2
+modified: '2021-07-16T00:00:22.598811Z'
+published: '2021-07-16T00:00:22.598607Z'
+ecosystem_specific:
+  severity: HIGH
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=36200

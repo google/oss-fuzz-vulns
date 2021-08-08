@@ -1,0 +1,26 @@
+id: OSV-2021-1109
+package:
+  name: mruby
+  ecosystem: OSS-Fuzz
+summary: UNKNOWN READ in mrb_check_frozen
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=36930
+
+  Crash type: UNKNOWN READ
+  Crash state:
+  mrb_check_frozen
+  mrb_str_modify_keep_ascii
+  mrb_str_modify
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/mruby/mruby
+    introduced: 1315e8751e70937e4cf43ba9225ea0cfaa67689d
+    fixed: 06f49b3f84e799f08a80b16054eda916f2d32819
+modified: '2021-08-08T00:01:08.046173Z'
+published: '2021-08-08T00:01:08.045960Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=36930
