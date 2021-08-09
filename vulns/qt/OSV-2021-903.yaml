@@ -14,10 +14,15 @@ details: |
 affects:
   ranges:
   - type: GIT
-    repo: git://code.qt.io/qt/qt5.git
-    introduced: a341894f29be54642de9dd1c8d03604415c9577d
-    fixed: 16ab287262e246b27c83f18ccdbd47d68485bbf6
-modified: '2021-06-27T00:01:31.379470Z'
+    repo: git://code.qt.io/qt/qtbase.git
+    fixed: 6b400e3147dcfd8cc3a393ace1bd118c93762e0c
+  - type: GIT
+    repo: git://code.qt.io/qt/qtbase.git
+    fixed: 202143ba41f6ac574f1858214ed8bf4a38b73ccd
+  - type: GIT
+    repo: git://code.qt.io/qt/qtbase.git
+    fixed: 1ca02cf2879a5e1511a2f2109f0925cf4c892862
+modified: '2021-08-09T20:38:00.000000Z'
 published: '2021-06-27T00:01:31.379142Z'
 ecosystem_specific:
   severity: HIGH
