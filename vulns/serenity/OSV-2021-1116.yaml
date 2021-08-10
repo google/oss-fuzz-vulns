@@ -1,0 +1,25 @@
+id: OSV-2021-1116
+package:
+  name: serenity
+  ecosystem: OSS-Fuzz
+summary: Use-after-poison in JS::PrimitiveString::string
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=36985
+
+  Crash type: Use-after-poison READ 1
+  Crash state:
+  JS::PrimitiveString::string
+  JS::abstract_relation
+  JS::less_than
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/SerenityOS/serenity
+    introduced: 6852ba4d34306109d746cfb57651d76f3b88a2c6
+modified: '2021-08-10T00:02:29.787790Z'
+published: '2021-08-10T00:02:29.787563Z'
+ecosystem_specific:
+  severity: HIGH
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=36985
