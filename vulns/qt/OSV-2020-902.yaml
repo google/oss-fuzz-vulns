@@ -9,17 +9,9 @@ details: "OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id
 affects:
   ranges:
   - type: GIT
-    repo: git://code.qt.io/qt/qt5.git
-    introduced: 08b99e8def4db7e768cb9dcc456e25852081cf5d
-    fixed: 61d6a120dccb48e6bff78c4b5bf8913916416689
-  versions:
-  - v5.15.0
-  - v5.15.0-beta4
-  - v5.15.0-rc1
-  - v5.15.0-rc2
-  - v5.15.1
-  - v5.15.2
-modified: '2021-06-23T06:26:11.571833Z'
+    repo: git://code.qt.io/qt/qtbase.git
+    fixed: 78cf89c07d7fa834a455afa5862823e50171415c
+modified: '2021-08-11T17:28:00.000000Z'
 published: '2020-07-21T00:00:16.344765Z'
 ecosystem_specific:
   severity: MEDIUM
@@ -29,3 +21,5 @@ database_specific:
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24266
+- type: FIX
+  url: https://codereview.qt-project.org/c/qt/qtbase/+/309137
