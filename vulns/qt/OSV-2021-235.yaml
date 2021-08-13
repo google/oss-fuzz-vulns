@@ -22,10 +22,6 @@ affects:
   - type: GIT
     repo: git://code.qt.io/qt/qtsvg.git
     fixed: afde7ca3a40f524e40052df696f74190452b22cb
-  - type: GIT
-    repo: git://code.qt.io/qt/qt5.git
-    introduced: de3cffca0491d972b49fac96a9cbe2b427aeee16
-    fixed: 9278f5b56b2ba71abe9c7b827c83a05b6b756a89
   versions:
   - v5.15.1
   - v5.15.2
