@@ -1,0 +1,30 @@
+id: OSV-2021-1139
+package:
+  name: libvips
+  ecosystem: OSS-Fuzz
+summary: UNKNOWN READ in exif_mnote_data_apple_load
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=37234
+
+  Crash type: UNKNOWN READ
+  Crash state:
+  exif_mnote_data_apple_load
+  exif_mnote_data_load
+  interpret_maker_note
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/libvips/libvips
+    introduced: 57d8dd3ecee292f8e2928ae4a9a0282a9b300655
+    fixed: 9d186c9cd4566b1dd34739bfeb6f4f57d6c73ff8
+  versions:
+  - v8.11.3
+modified: '2021-08-17T00:00:46.312101Z'
+published: '2021-08-17T00:00:46.311888Z'
+ecosystem_specific:
+  severity: MEDIUM
+database_specific:
+  introduced_range: 1ce301812d1c44ca6421ed93d6ba1ec4b1d14433:9d186c9cd4566b1dd34739bfeb6f4f57d6c73ff8
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=37234

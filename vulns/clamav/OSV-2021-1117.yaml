@@ -1,0 +1,30 @@
+id: OSV-2021-1117
+package:
+  name: clamav
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in json_object_new_string
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=37017
+
+  Crash type: Heap-buffer-overflow READ {*}
+  Crash state:
+  json_object_new_string
+  cli_jsonstr
+  cli_hwp5header
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/Cisco-Talos/clamav-devel.git
+    introduced: 5553a5e206ceae5d920368baee7d403f823bcb6f
+    fixed: 22c724cf781654d27cc0ae4ecbcda6946cd08a06
+  - type: GIT
+    repo: https://github.com/Cisco-Talos/clamav-devel.git
+    introduced: 5553a5e206ceae5d920368baee7d403f823bcb6f
+    fixed: e6eff8908828eed0b99d5340f9c2cccfafc208ae
+modified: '2021-08-11T00:00:07.476792Z'
+published: '2021-08-11T00:00:07.476563Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=37017

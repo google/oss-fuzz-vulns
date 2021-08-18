@@ -1,0 +1,25 @@
+id: OSV-2021-775
+package:
+  name: assimp
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in _m3d_safestr
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34416
+
+  Crash type: Heap-buffer-overflow WRITE 1
+  Crash state:
+  _m3d_safestr
+  m3d_load
+  Assimp::M3DWrapper::M3DWrapper
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/assimp/assimp.git
+    introduced: af0aca796ebab7663bba2778f7f30dd424f324ca
+modified: '2021-05-19T00:00:10.101737Z'
+published: '2021-05-19T00:00:10.101287Z'
+ecosystem_specific:
+  severity: HIGH
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34416
