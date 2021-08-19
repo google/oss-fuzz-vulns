@@ -1,0 +1,25 @@
+id: OSV-2021-782
+package:
+  name: espeak-ng
+  ecosystem: OSS-Fuzz
+summary: Global-buffer-overflow in IsLetterGroup
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34494
+
+  Crash type: Global-buffer-overflow READ 1
+  Crash state:
+  IsLetterGroup
+  MatchRule
+  TranslateRules
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/espeak-ng/espeak-ng
+    introduced: 0a713d52bbf3e061823d1a7f35e5303e7320f27a
+modified: '2021-05-21T00:00:07.676068Z'
+published: '2021-05-21T00:00:07.675695Z'
+ecosystem_specific:
+  severity: null
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34494
