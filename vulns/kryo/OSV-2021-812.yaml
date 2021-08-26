@@ -1,0 +1,29 @@
+id: OSV-2021-812
+package:
+  name: kryo
+  ecosystem: OSS-Fuzz
+summary: Uncaught exception in com.esotericsoftware.kryo.serializers.FieldSerializer.read
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34733
+
+  Crash type: Uncaught exception
+  Crash state:
+  com.esotericsoftware.kryo.serializers.FieldSerializer.read
+  com.esotericsoftware.kryo.Kryo.readObject
+  DeserializeStringFuzzer.fuzzerTestOneInput
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/EsotericSoftware/kryo
+    introduced: adbac896f1d88a91f645c60133d66b1e83eadf3a
+  versions:
+  - kryo-parent-5.2.0
+modified: '2021-05-29T00:01:09.011918Z'
+published: '2021-05-29T00:01:09.011604Z'
+ecosystem_specific:
+  severity: LOW
+database_specific:
+  introduced_range: 8ba63454705509b99049ee0292348c52e3f34fa1:1d72a60844fdd75250f09f74fd493485092026fe
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34733

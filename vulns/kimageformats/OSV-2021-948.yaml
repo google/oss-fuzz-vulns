@@ -1,0 +1,37 @@
+id: OSV-2021-948
+package:
+  name: kimageformats
+  ecosystem: OSS-Fuzz
+summary: Use-of-uninitialized-value in residual_coding
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=35950
+
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  residual_coding
+  read_transform_unit
+  read_transform_tree
+affects:
+  ranges:
+  - type: GIT
+    repo: https://invent.kde.org/frameworks/kimageformats.git
+    introduced: ca52d4ddf540cc731d0f31dbccc1897f7e6d9db4
+  versions:
+  - v5.80.0
+  - v5.80.0-rc1
+  - v5.81.0
+  - v5.81.0-rc1
+  - v5.81.0-rc2
+  - v5.82.0-rc1
+  - v5.83.0
+  - v5.83.0-rc1
+  - v5.84.0-rc1
+  - v5.85.0
+  - v5.85.0-rc1
+modified: '2021-07-10T00:01:12.890218Z'
+published: '2021-07-10T00:01:12.890029Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=35950

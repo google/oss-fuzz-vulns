@@ -1,0 +1,26 @@
+id: OSV-2021-1168
+package:
+  name: libexif
+  ecosystem: OSS-Fuzz
+summary: Heap-buffer-overflow in exif_get_slong
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=37570
+
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  exif_get_slong
+  exif_get_long
+  exif_get_rational
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/libexif/libexif
+    introduced: ce946b93dfd34b2187d9f9fb01603943fbb32137
+    fixed: a4647a5463102c4b0c5a02461edd4cc085dfc1b6
+modified: '2021-08-25T00:01:25.326067Z'
+published: '2021-08-25T00:01:25.325827Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=37570

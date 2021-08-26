@@ -1,0 +1,25 @@
+id: OSV-2021-808
+package:
+  name: espeak-ng
+  ecosystem: OSS-Fuzz
+summary: Global-buffer-overflow in DoEmbedded2
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34718
+
+  Crash type: Global-buffer-overflow READ 4
+  Crash state:
+  DoEmbedded2
+  CalcLengths
+  SpeakNextClause
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/espeak-ng/espeak-ng
+    introduced: 0a713d52bbf3e061823d1a7f35e5303e7320f27a
+modified: '2021-05-28T00:00:30.256377Z'
+published: '2021-05-28T00:00:30.256086Z'
+ecosystem_specific:
+  severity: null
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34718

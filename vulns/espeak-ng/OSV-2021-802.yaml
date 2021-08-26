@@ -1,0 +1,25 @@
+id: OSV-2021-802
+package:
+  name: espeak-ng
+  ecosystem: OSS-Fuzz
+summary: Stack-buffer-overflow in InterpretCondition
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34692
+
+  Crash type: Stack-buffer-overflow READ 1
+  Crash state:
+  InterpretCondition
+  InterpretPhoneme
+  MakePhonemeList
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/espeak-ng/espeak-ng
+    introduced: 0a713d52bbf3e061823d1a7f35e5303e7320f27a
+modified: '2021-05-27T00:00:31.797995Z'
+published: '2021-05-27T00:00:31.797718Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34692

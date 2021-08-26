@@ -1,0 +1,26 @@
+id: OSV-2021-1161
+package:
+  name: astc-encoder
+  ecosystem: OSS-Fuzz
+summary: UNKNOWN READ in decode_ise
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=37413
+
+  Crash type: UNKNOWN READ
+  Crash state:
+  decode_ise
+  physical_to_symbolic
+  fuzz_astc_physical_to_symbolic.cpp
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/ARM-software/astc-encoder
+    introduced: a463566e906016c195a5a1d8e1b9c14be3491f79
+    fixed: 5c5dee52401189c27e481e8a7ec30f54fcdcdb5f
+modified: '2021-08-22T00:01:29.796850Z'
+published: '2021-08-22T00:01:29.796636Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=37413
