@@ -1,0 +1,34 @@
+id: OSV-2021-814
+package:
+  name: libredwg
+  ecosystem: OSS-Fuzz
+summary: UNKNOWN WRITE in dwg_free_BLOCK_private
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34766
+
+  Crash type: UNKNOWN WRITE
+  Crash state:
+  dwg_free_BLOCK_private
+  dwg_free_BLOCK
+  dwg_free_object
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/LibreDWG/libredwg
+    introduced: b37f533870d4921888cbbd633a738d3e6e95109e
+  versions:
+  - 0.12.4.4313
+  - 0.12.4.4317
+  - 0.12.4.4321
+  - 0.12.4.4324
+  - 0.12.4.4331
+  - 0.12.4.4338
+  - 0.12.4.4343
+  - 0.12.4.4348
+modified: '2021-05-30T00:00:24.550721Z'
+published: '2021-05-30T00:00:24.550464Z'
+ecosystem_specific:
+  severity: null
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34766
