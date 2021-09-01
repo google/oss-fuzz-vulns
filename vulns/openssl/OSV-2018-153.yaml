@@ -1,7 +1,4 @@
 id: OSV-2018-153
-package:
-  name: openssl
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in asn1_ex_i2c
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=7696
@@ -11,12 +8,21 @@ details: |
   asn1_ex_i2c
   asn1_i2d_ex_primitive
   ASN1_item_ex_i2d
-affects:
+modified: '2021-06-23T06:28:23.524218Z'
+published: '2021-01-13T00:01:05.757240Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=7696
+affected:
+- package:
+    name: openssl
+    ecosystem: OSS-Fuzz
   ranges:
   - type: GIT
     repo: https://github.com/openssl/openssl.git
-    introduced: 902f7d5c87d66a78d3eb10709c6cb3486a216b48
-    fixed: 0df65d82dbc41e8da00adb243de5918db532c8a6
+    events:
+    - introduced: 902f7d5c87d66a78d3eb10709c6cb3486a216b48
+    - fixed: 0df65d82dbc41e8da00adb243de5918db532c8a6
   versions:
   - OpenSSL_1_1_1-pre1
   - OpenSSL_1_1_1-pre2
@@ -25,12 +31,6 @@ affects:
   - OpenSSL_1_1_1-pre5
   - OpenSSL_1_1_1-pre6
   - OpenSSL_1_1_1-pre7
-modified: '2021-06-23T06:28:23.524218Z'
-published: '2021-01-13T00:01:05.757240Z'
-ecosystem_specific:
-  severity: MEDIUM
-database_specific:
-  fixed_range: a21180b70f6372fee836557df187d72f7a91b686:0df65d82dbc41e8da00adb243de5918db532c8a6
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=7696
+  ecosystem_specific:
+    severity: MEDIUM
+    fixed_range: a21180b70f6372fee836557df187d72f7a91b686:0df65d82dbc41e8da00adb243de5918db532c8a6

@@ -1,7 +1,4 @@
 id: OSV-2021-1104
-package:
-  name: apache-httpd
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in ap_escape_path_segment_buffer
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=36882
@@ -10,16 +7,20 @@ details: |
   Crash state:
   ap_escape_path_segment_buffer
   fuzz_utils.c
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/AFLplusplus/AFLplusplus.git
-    introduced: 4fe572b80f76ff0b0e916b639d1e04d5af48b157
-    fixed: 4fe572b80f76ff0b0e916b639d1e04d5af48b157
 modified: '2021-08-07T00:00:39.490209Z'
 published: '2021-08-07T00:00:39.489954Z'
-ecosystem_specific:
-  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=36882
+affected:
+- package:
+    name: apache-httpd
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/AFLplusplus/AFLplusplus.git
+    events:
+    - introduced: 4fe572b80f76ff0b0e916b639d1e04d5af48b157
+    - fixed: 4fe572b80f76ff0b0e916b639d1e04d5af48b157
+  ecosystem_specific:
+    severity: HIGH

@@ -1,7 +1,4 @@
 id: OSV-2020-1876
-package:
-  name: ghostscript
-  ecosystem: OSS-Fuzz
 summary: UNKNOWN READ in mem_mapped4_fill_rectangle
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22007
@@ -11,12 +8,21 @@ details: |
   mem_mapped4_fill_rectangle
   gx_dc_pure_fill_rectangle
   gx_default_fillpage
-affects:
+modified: '2021-06-21T06:56:21.609472Z'
+published: '2020-09-29T00:00:30.602171Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22007
+affected:
+- package:
+    name: ghostscript
+    ecosystem: OSS-Fuzz
   ranges:
   - type: GIT
     repo: git://git.ghostscript.com/ghostpdl.git
-    introduced: d1eac80695b2c6f2a85942a82518715549541969
-    fixed: 748edd2fd75c684d63486eded71ad20254de6f4c
+    events:
+    - introduced: d1eac80695b2c6f2a85942a82518715549541969
+    - fixed: 748edd2fd75c684d63486eded71ad20254de6f4c
   versions:
   - ghostpdl-9.51
   - ghostpdl-9.51rc1
@@ -34,10 +40,5 @@ affects:
   - ghostpdl-9.52.1
   - ghostscript-9.51
   - ghostscript-9.52
-modified: '2021-06-21T06:56:21.609472Z'
-published: '2020-09-29T00:00:30.602171Z'
-ecosystem_specific:
-  severity: MEDIUM
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22007
+  ecosystem_specific:
+    severity: MEDIUM

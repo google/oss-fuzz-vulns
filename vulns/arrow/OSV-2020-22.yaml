@@ -1,7 +1,4 @@
 id: OSV-2020-22
-package:
-  name: arrow
-  ecosystem: OSS-Fuzz
 summary: Container-overflow in parquet::schema::Unflatten
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20897
@@ -11,16 +8,20 @@ details: |
   parquet::schema::Unflatten
   parquet::FileMetaData::FileMetaDataImpl::FileMetaDataImpl
   parquet::FileMetaData::FileMetaData
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/apache/arrow.git
-    introduced: 431fdbfbc0fb4bb16c4a89298404ad16784db2a0
-    fixed: 6b87c6c9fb00ade7eff909afa4a6a61464cd516c
 modified: '2021-06-21T06:56:19.525631Z'
 published: '2020-06-24T01:51:10.604817Z'
-ecosystem_specific:
-  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20897
+affected:
+- package:
+    name: arrow
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/apache/arrow.git
+    events:
+    - introduced: 431fdbfbc0fb4bb16c4a89298404ad16784db2a0
+    - fixed: 6b87c6c9fb00ade7eff909afa4a6a61464cd516c
+  ecosystem_specific:
+    severity: MEDIUM

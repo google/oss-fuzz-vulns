@@ -1,7 +1,4 @@
 id: OSV-2020-1060
-package:
-  name: c-blosc2
-  ecosystem: OSS-Fuzz
 summary: Use-of-uninitialized-value in ZSTD_createDDict_advanced
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23732
@@ -11,19 +8,22 @@ details: |
   ZSTD_createDDict_advanced
   ZSTD_createDDict
   blosc_run_decompression_with_context
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/Blosc/c-blosc2.git
-    introduced: 47574561c110f8065d64affc43df744ec236b04b
-    fixed: a83f4780ccd23eee46541d5789b9be1c1f6f696c
 modified: '2021-06-23T06:29:21.199623Z'
 published: '2020-07-22T21:49:44.144864Z'
-ecosystem_specific:
-  severity: MEDIUM
-database_specific:
-  fixed_range: af587e54bc8fd6019585d9a6d001b62a2fc240a1:a83f4780ccd23eee46541d5789b9be1c1f6f696c
-  introduced_range: unknown:47574561c110f8065d64affc43df744ec236b04b
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23732
+affected:
+- package:
+    name: c-blosc2
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/Blosc/c-blosc2.git
+    events:
+    - introduced: 47574561c110f8065d64affc43df744ec236b04b
+    - fixed: a83f4780ccd23eee46541d5789b9be1c1f6f696c
+  ecosystem_specific:
+    severity: MEDIUM
+    introduced_range: unknown:47574561c110f8065d64affc43df744ec236b04b
+    fixed_range: af587e54bc8fd6019585d9a6d001b62a2fc240a1:a83f4780ccd23eee46541d5789b9be1c1f6f696c

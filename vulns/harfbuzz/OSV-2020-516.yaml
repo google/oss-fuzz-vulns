@@ -1,7 +1,4 @@
 id: OSV-2020-516
-package:
-  name: harfbuzz
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in hb_array_t<OT::IntType<unsigned short, 2u> const>
   hb_array_t<OT::IntType<unsigne
 details: |
@@ -12,16 +9,20 @@ details: |
   hb_array_t<OT::IntType<unsigned short, 2u> const> hb_array_t<OT::IntType<unsigne
   OT::UnsizedArrayOf<OT::IntType<unsigned short, 2u> >::copy
   _ZN22hb_serialize_context_t5_copyIN2OT14UnsizedArrayOfINS1_7IntTypeItLj2EEEEEJRj
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/harfbuzz/harfbuzz.git
-    introduced: 1f0a9d9be979de01527c05f4dbe6fbc62799597c
-    fixed: defe9b6da018bc85750c999454c51fde0cadb9b2
 modified: '2021-06-21T06:56:20.778770Z'
 published: '2020-07-01T00:00:14.009148Z'
-ecosystem_specific:
-  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18513
+affected:
+- package:
+    name: harfbuzz
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/harfbuzz/harfbuzz.git
+    events:
+    - introduced: 1f0a9d9be979de01527c05f4dbe6fbc62799597c
+    - fixed: defe9b6da018bc85750c999454c51fde0cadb9b2
+  ecosystem_specific:
+    severity: MEDIUM

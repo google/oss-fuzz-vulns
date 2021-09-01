@@ -1,7 +1,4 @@
 id: OSV-2020-2063
-package:
-  name: openh264
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in WelsDec::WelsDecodeMbCavlcBSlice
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26296
@@ -11,16 +8,20 @@ details: |
   WelsDec::WelsDecodeMbCavlcBSlice
   WelsDec::WelsDecodeSlice
   WelsDec::DecodeCurrentAccessUnit
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/cisco/openh264.git
-    introduced: f1bb6d3acb057785b4d89e8228e23cc4fc9caa12
-    fixed: b52786888ddce9d6bc06b7825ba9bffc65924e0c
 modified: '2021-06-21T06:56:23.705076Z'
 published: '2020-10-14T00:00:24.741197Z'
-ecosystem_specific:
-  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26296
+affected:
+- package:
+    name: openh264
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/cisco/openh264.git
+    events:
+    - introduced: f1bb6d3acb057785b4d89e8228e23cc4fc9caa12
+    - fixed: b52786888ddce9d6bc06b7825ba9bffc65924e0c
+  ecosystem_specific:
+    severity: HIGH

@@ -1,7 +1,4 @@
 id: OSV-2020-587
-package:
-  name: jsonnet
-  ecosystem: OSS-Fuzz
 summary: UNKNOWN READ in Interpreter::evaluate
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15844
@@ -11,18 +8,21 @@ details: |
   Interpreter::evaluate
   jsonnet_vm_execute
   jsonnet_evaluate_snippet_aux
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/google/jsonnet.git
-    introduced: 8ac54da59568a3beef718f4d1374a546dd2500ff
-    fixed: 206ed1cb2068e47df8b6e3ab03f062b339e0e5f3
 modified: '2021-06-23T06:27:56.962686Z'
 published: '2020-07-01T00:00:18.669002Z'
-ecosystem_specific:
-  severity: MEDIUM
-database_specific:
-  introduced_range: 0ebb1b31e2a9f83d90eca5356fa3d820177ae8ab:8d4bf07af93f77fcc0a36d4c8871c4ff90405774
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15844
+affected:
+- package:
+    name: jsonnet
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/google/jsonnet.git
+    events:
+    - introduced: 8ac54da59568a3beef718f4d1374a546dd2500ff
+    - fixed: 206ed1cb2068e47df8b6e3ab03f062b339e0e5f3
+  ecosystem_specific:
+    severity: MEDIUM
+    introduced_range: 0ebb1b31e2a9f83d90eca5356fa3d820177ae8ab:8d4bf07af93f77fcc0a36d4c8871c4ff90405774

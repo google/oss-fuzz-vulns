@@ -1,7 +1,4 @@
 id: OSV-2021-413
-package:
-  name: sudoers
-  ecosystem: OSS-Fuzz
 summary: UNKNOWN WRITE in sudo_user_free
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31042
@@ -11,16 +8,20 @@ details: |
   sudo_user_free
   sudoers_policy_close
   fuzz_policy.c
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/sudo-project/sudo
-    introduced: d2350833420195c1d10d957699524f5b229da454
-    fixed: ae3a098d2f0988b63a780523a006a3db8e8b3872
 modified: '2021-06-21T06:56:25.334733Z'
 published: '2021-02-18T00:02:34.207161Z'
-ecosystem_specific:
-  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31042
+affected:
+- package:
+    name: sudoers
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/sudo-project/sudo
+    events:
+    - introduced: d2350833420195c1d10d957699524f5b229da454
+    - fixed: ae3a098d2f0988b63a780523a006a3db8e8b3872
+  ecosystem_specific:
+    severity: HIGH

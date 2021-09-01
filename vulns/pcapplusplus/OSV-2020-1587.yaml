@@ -1,7 +1,4 @@
 id: OSV-2020-1587
-package:
-  name: pcapplusplus
-  ecosystem: OSS-Fuzz
 summary: UNKNOWN WRITE in count_blocks
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24704
@@ -11,18 +8,21 @@ details: |
   count_blocks
   opt_init
   bpf_optimize
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/seladb/PcapPlusPlus
-    introduced: 6a78b5da5b5dbc31c4ccc0ff74513580a149c71e
-    fixed: 1bd1927ea9c7cf96eb0b0079426ac3e9bb48b155
 modified: '2021-06-23T06:28:23.110446Z'
 published: '2020-08-07T00:01:06.228767Z'
-ecosystem_specific:
-  severity: HIGH
-database_specific:
-  fixed_range: 6a78b5da5b5dbc31c4ccc0ff74513580a149c71e:1bd1927ea9c7cf96eb0b0079426ac3e9bb48b155
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24704
+affected:
+- package:
+    name: pcapplusplus
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/seladb/PcapPlusPlus
+    events:
+    - introduced: 6a78b5da5b5dbc31c4ccc0ff74513580a149c71e
+    - fixed: 1bd1927ea9c7cf96eb0b0079426ac3e9bb48b155
+  ecosystem_specific:
+    severity: HIGH
+    fixed_range: 6a78b5da5b5dbc31c4ccc0ff74513580a149c71e:1bd1927ea9c7cf96eb0b0079426ac3e9bb48b155

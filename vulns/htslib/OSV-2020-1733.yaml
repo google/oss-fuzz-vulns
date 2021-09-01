@@ -1,7 +1,4 @@
 id: OSV-2020-1733
-package:
-  name: htslib
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in le_to_u32
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25533
@@ -11,16 +8,20 @@ details: |
   le_to_u32
   le_to_i32
   bcf_dec_typed_int1_safe
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/samtools/htslib.git
-    introduced: 3ac8a04f8f6071be0901a9ddcda296f58b2bcf0c
-    fixed: 8bab82bdb8c2613e1ca7bd5573d7c12117a2dc02
 modified: '2021-06-21T06:56:20.006879Z'
 published: '2020-09-11T00:01:15.355070Z'
-ecosystem_specific:
-  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25533
+affected:
+- package:
+    name: htslib
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/samtools/htslib.git
+    events:
+    - introduced: 3ac8a04f8f6071be0901a9ddcda296f58b2bcf0c
+    - fixed: 8bab82bdb8c2613e1ca7bd5573d7c12117a2dc02
+  ecosystem_specific:
+    severity: MEDIUM

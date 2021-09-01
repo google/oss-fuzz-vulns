@@ -1,7 +1,4 @@
 id: OSV-2017-59
-package:
-  name: json
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in nlohmann::basic_json<std::__1::map, std::__1::vector,
   std::__1::basic_string<cha
 details: |
@@ -12,16 +9,20 @@ details: |
   nlohmann::basic_json<std::__1::map, std::__1::vector, std::__1::basic_string<cha
   nlohmann::basic_json<std::__1::map, std::__1::vector, std::__1::basic_string<cha
   nlohmann::basic_json<std::__1::map, std::__1::vector, std::__1::basic_string<cha
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/nlohmann/json.git
-    introduced: f8d640b185c4b34bfb651250eb3b7113caf0317b
-    fixed: 476507031890fd6effb7b447a156168803b0bd37
 modified: '2021-06-21T06:56:21.378248Z'
 published: '2021-01-13T21:56:29.409531Z'
-ecosystem_specific:
-  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=381
+affected:
+- package:
+    name: json
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/nlohmann/json.git
+    events:
+    - introduced: f8d640b185c4b34bfb651250eb3b7113caf0317b
+    - fixed: 476507031890fd6effb7b447a156168803b0bd37
+  ecosystem_specific:
+    severity: MEDIUM

@@ -1,7 +1,4 @@
 id: OSV-2020-885
-package:
-  name: opensc
-  ecosystem: OSS-Fuzz
 summary: Stack-use-after-scope in coolkey_apdu_io
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23979
@@ -11,14 +8,18 @@ details: |
   coolkey_apdu_io
   coolkey_rsa_op
   coolkey_compute_crypt
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/OpenSC/OpenSC
-    introduced: 43379b3b22f65f97a83de422f6a3b37fdfb2b138
-    fixed: cdbcb5b7db8766d6ea9da6912755ed335780f2f9
+modified: '2021-03-09T04:49:06.133311Z'
+published: '2020-07-14T22:13:58.474226Z'
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23979
-modified: '2021-03-09T04:49:06.133311Z'
-published: '2020-07-14T22:13:58.474226Z'
+affected:
+- package:
+    name: opensc
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/OpenSC/OpenSC
+    events:
+    - introduced: 43379b3b22f65f97a83de422f6a3b37fdfb2b138
+    - fixed: cdbcb5b7db8766d6ea9da6912755ed335780f2f9

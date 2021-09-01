@@ -1,7 +1,4 @@
 id: OSV-2020-674
-package:
-  name: libhevc
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in ihevcd_mv_merge
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=17196
@@ -11,21 +8,25 @@ details: |
   ihevcd_mv_merge
   ihevcd_get_mv_ctb
   ihevcd_parse_slice_data
-affects:
+modified: '2021-06-21T06:56:18.844659Z'
+published: '2020-07-01T00:00:23.966789Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=17196
+affected:
+- package:
+    name: libhevc
+    ecosystem: OSS-Fuzz
   ranges:
   - type: GIT
     repo: https://android.googlesource.com/platform/external/libhevc
-    introduced: 67e394c9f3743b8ce41f11736136319efcef6d3d
-    fixed: 4d36db275bb4d0abc410415f6d8f5af4bc179102
+    events:
+    - introduced: 67e394c9f3743b8ce41f11736136319efcef6d3d
+    - fixed: 4d36db275bb4d0abc410415f6d8f5af4bc179102
   versions:
   - android-mainline-10.0.0_r11
   - android-mainline-10.0.0_r6
   - android-mainline-10.0.0_r8
   - platform-tools-29.0.5
-modified: '2021-06-21T06:56:18.844659Z'
-published: '2020-07-01T00:00:23.966789Z'
-ecosystem_specific:
-  severity: MEDIUM
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=17196
+  ecosystem_specific:
+    severity: MEDIUM

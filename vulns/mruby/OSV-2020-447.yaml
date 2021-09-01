@@ -1,7 +1,4 @@
 id: OSV-2020-447
-package:
-  name: mruby
-  ecosystem: OSS-Fuzz
 summary: UNKNOWN READ in yyparse
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=17968
@@ -11,16 +8,20 @@ details: |
   yyparse
   mrb_parser_parse
   mrb_parse_nstring
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/mruby/mruby
-    introduced: ec6c8b2a3c5c499d8832ef82a2ad941cbac4a80a
-    fixed: 264239f78fb9ec8047cf04b82f547fc41d65ab28
 modified: '2021-06-21T06:56:25.576232Z'
 published: '2020-07-01T00:00:10.057682Z'
-ecosystem_specific:
-  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=17968
+affected:
+- package:
+    name: mruby
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/mruby/mruby
+    events:
+    - introduced: ec6c8b2a3c5c499d8832ef82a2ad941cbac4a80a
+    - fixed: 264239f78fb9ec8047cf04b82f547fc41d65ab28
+  ecosystem_specific:
+    severity: MEDIUM

@@ -1,7 +1,4 @@
 id: OSV-2021-1102
-package:
-  name: spice-usbredir
-  ecosystem: OSS-Fuzz
 summary: Heap-use-after-free in usbredirparser_serialize
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=36861
@@ -11,16 +8,20 @@ details: |
   usbredirparser_serialize
   try_serialize
   usbredirparserfuzz.cc
-affects:
-  ranges:
-  - type: GIT
-    repo: https://gitlab.freedesktop.org/spice/usbredir.git
-    introduced: 58f198e8d4ae36cc29b76c7a9f731021aa92f146
-    fixed: 03c519ff5831ba75120e00ebebbf1d5a1f7220ab
 modified: '2021-08-06T00:02:18.278305Z'
 published: '2021-08-06T00:02:18.278086Z'
-ecosystem_specific:
-  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=36861
+affected:
+- package:
+    name: spice-usbredir
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://gitlab.freedesktop.org/spice/usbredir.git
+    events:
+    - introduced: 58f198e8d4ae36cc29b76c7a9f731021aa92f146
+    - fixed: 03c519ff5831ba75120e00ebebbf1d5a1f7220ab
+  ecosystem_specific:
+    severity: HIGH

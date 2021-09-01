@@ -1,7 +1,4 @@
 id: OSV-2021-380
-package:
-  name: libavc
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in ih264d_fill_bs1_16x16mb_pslice
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30801
@@ -11,11 +8,20 @@ details: |
   ih264d_fill_bs1_16x16mb_pslice
   ih264d_compute_bs_non_mbaff_thread
   ih264d_recon_deblk_slice
-affects:
+modified: '2021-08-12T00:04:08.573563Z'
+published: '2021-02-12T00:02:40.784817Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30801
+affected:
+- package:
+    name: libavc
+    ecosystem: OSS-Fuzz
   ranges:
   - type: GIT
     repo: https://android.googlesource.com/platform/external/libavc
-    introduced: 6efeedf0633e1965a4d4e17d64f14215e9b6d48f
+    events:
+    - introduced: 6efeedf0633e1965a4d4e17d64f14215e9b6d48f
   versions:
   - android-s-beta-1
   - android-s-preview-1
@@ -51,10 +57,5 @@ affects:
   - android-s-beta-3
   - android-11.0.0_r40
   - android-s-beta-4
-modified: '2021-08-12T00:04:08.573563Z'
-published: '2021-02-12T00:02:40.784817Z'
-ecosystem_specific:
-  severity: MEDIUM
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30801
+  ecosystem_specific:
+    severity: MEDIUM

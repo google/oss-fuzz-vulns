@@ -1,7 +1,4 @@
 id: OSV-2020-1362
-package:
-  name: libraw
-  ecosystem: OSS-Fuzz
 summary: Use-of-uninitialized-value in LibRaw::init_fuji_block
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24016
@@ -11,20 +8,24 @@ details: |
   LibRaw::init_fuji_block
   LibRaw::fuji_decode_strip
   LibRaw::fuji_decode_loop
-affects:
+modified: '2021-06-21T06:56:25.784693Z'
+published: '2020-07-28T00:00:01.793422Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24016
+affected:
+- package:
+    name: libraw
+    ecosystem: OSS-Fuzz
   ranges:
   - type: GIT
     repo: https://github.com/libraw/libraw
-    introduced: 5eeffd556eec1e2baea7826a4be20664f9d70662
+    events:
+    - introduced: 5eeffd556eec1e2baea7826a4be20664f9d70662
   versions:
   - 0.20.0
   - 0.20-RC2
   - 0.20.1
   - 0.20.2
-modified: '2021-06-21T06:56:25.784693Z'
-published: '2020-07-28T00:00:01.793422Z'
-ecosystem_specific:
-  severity: MEDIUM
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24016
+  ecosystem_specific:
+    severity: MEDIUM

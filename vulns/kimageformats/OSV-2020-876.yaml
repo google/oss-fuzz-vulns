@@ -1,7 +1,4 @@
 id: OSV-2020-876
-package:
-  name: kimageformats
-  ecosystem: OSS-Fuzz
 summary: Use-of-uninitialized-value in XCFImageFormat::mergeRGBToRGB
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21783
@@ -11,11 +8,20 @@ details: |
   XCFImageFormat::mergeRGBToRGB
   XCFImageFormat::mergeLayerIntoImage
   XCFImageFormat::loadLayer
-affects:
+modified: '2021-08-15T00:04:01.088568Z'
+published: '2020-07-14T22:13:55.541274Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21783
+affected:
+- package:
+    name: kimageformats
+    ecosystem: OSS-Fuzz
   ranges:
   - type: GIT
     repo: https://invent.kde.org/frameworks/kimageformats.git
-    introduced: c60e77c048d32ccf743cec695743b77b2b25dc87
+    events:
+    - introduced: c60e77c048d32ccf743cec695743b77b2b25dc87
   versions:
   - v5.70.0
   - v5.70.0-rc1
@@ -52,10 +58,5 @@ affects:
   - v5.84.0-rc1
   - v5.85.0-rc1
   - v5.85.0
-modified: '2021-08-15T00:04:01.088568Z'
-published: '2020-07-14T22:13:55.541274Z'
-ecosystem_specific:
-  severity: MEDIUM
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21783
+  ecosystem_specific:
+    severity: MEDIUM

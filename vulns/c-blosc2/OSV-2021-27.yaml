@@ -1,7 +1,4 @@
 id: OSV-2021-27
-package:
-  name: c-blosc2
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in ZSTD_createDDict_advanced
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29369
@@ -11,16 +8,20 @@ details: |
   ZSTD_createDDict_advanced
   ZSTD_createDDict
   blosc_run_decompression_with_context
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/Blosc/c-blosc2.git
-    introduced: 67f327a7af1e182d3001ae78d8e39178eb80ea56
-    fixed: c473b21cff5e1a459b4467f18bf7414114f848fd
 modified: '2021-06-21T06:56:25.968589Z'
 published: '2021-01-08T00:00:22.452598Z'
-ecosystem_specific:
-  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29369
+affected:
+- package:
+    name: c-blosc2
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/Blosc/c-blosc2.git
+    events:
+    - introduced: 67f327a7af1e182d3001ae78d8e39178eb80ea56
+    - fixed: c473b21cff5e1a459b4467f18bf7414114f848fd
+  ecosystem_specific:
+    severity: MEDIUM

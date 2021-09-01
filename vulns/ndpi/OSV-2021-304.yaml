@@ -1,7 +1,4 @@
 id: OSV-2021-304
-package:
-  name: ndpi
-  ecosystem: OSS-Fuzz
 summary: Stack-buffer-overflow in processClientServerHello
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30393
@@ -11,18 +8,22 @@ details: |
   processClientServerHello
   processTLSBlock
   ndpi_search_tls_tcp
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/ntop/nDPI.git
-    introduced: 32bd3d7a599a6dfcfadf6ed4ad684f904e50719c
-    fixed: 1ec621c85b9411cc611652fd57a892cfef478af3
-  versions:
-  - '3.4'
 modified: '2021-06-21T06:56:22.861691Z'
 published: '2021-02-08T00:00:05.010743Z'
-ecosystem_specific:
-  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30393
+affected:
+- package:
+    name: ndpi
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/ntop/nDPI.git
+    events:
+    - introduced: 32bd3d7a599a6dfcfadf6ed4ad684f904e50719c
+    - fixed: 1ec621c85b9411cc611652fd57a892cfef478af3
+  versions:
+  - '3.4'
+  ecosystem_specific:
+    severity: HIGH

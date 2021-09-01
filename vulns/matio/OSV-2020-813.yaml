@@ -1,7 +1,4 @@
 id: OSV-2020-813
-package:
-  name: matio
-  ecosystem: OSS-Fuzz
 summary: Use-of-uninitialized-value in inflate
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=17121
@@ -11,18 +8,21 @@ details: |
   inflate
   InflateRankDims
   ReadNextStructField
-affects:
-  ranges:
-  - type: GIT
-    repo: git://git.code.sf.net/p/matio/matio
-    introduced: f94c087aa9be54ec86a01e267b80fd61108069be
-    fixed: 7a1831b94a73f2cd665bd48f65c8516509d0740e
 modified: '2021-06-23T06:31:46.102573Z'
 published: '2020-07-14T05:37:44.963693Z'
-ecosystem_specific:
-  severity: MEDIUM
-database_specific:
-  introduced_range: 7a9958485036ef37b4e88df5cbe32bd7ec4c0d25:6540087e697ca2b8950bada3d4ca653951b467dc
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=17121
+affected:
+- package:
+    name: matio
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: git://git.code.sf.net/p/matio/matio
+    events:
+    - introduced: f94c087aa9be54ec86a01e267b80fd61108069be
+    - fixed: 7a1831b94a73f2cd665bd48f65c8516509d0740e
+  ecosystem_specific:
+    severity: MEDIUM
+    introduced_range: 7a9958485036ef37b4e88df5cbe32bd7ec4c0d25:6540087e697ca2b8950bada3d4ca653951b467dc

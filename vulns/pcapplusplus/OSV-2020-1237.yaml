@@ -1,7 +1,4 @@
 id: OSV-2020-1237
-package:
-  name: pcapplusplus
-  ecosystem: OSS-Fuzz
 summary: Use-of-uninitialized-value in pcpp::NullLoopbackLayer::getFamily
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22084
@@ -11,18 +8,21 @@ details: |
   pcpp::NullLoopbackLayer::getFamily
   pcpp::NullLoopbackLayer::parseNextLayer
   pcpp::Packet::setRawPacket
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/seladb/PcapPlusPlus
-    introduced: 4366d2f86bf105025765a0ce3db6e647ba0f3508
-    fixed: 46840c644dfe9160c4111b06bbbf7731c9d1370c
 modified: '2021-06-23T06:28:20.842462Z'
 published: '2020-07-22T21:49:59.199632Z'
-ecosystem_specific:
-  severity: MEDIUM
-database_specific:
-  introduced_range: unknown:4366d2f86bf105025765a0ce3db6e647ba0f3508
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22084
+affected:
+- package:
+    name: pcapplusplus
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/seladb/PcapPlusPlus
+    events:
+    - introduced: 4366d2f86bf105025765a0ce3db6e647ba0f3508
+    - fixed: 46840c644dfe9160c4111b06bbbf7731c9d1370c
+  ecosystem_specific:
+    severity: MEDIUM
+    introduced_range: unknown:4366d2f86bf105025765a0ce3db6e647ba0f3508

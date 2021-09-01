@@ -1,7 +1,4 @@
 id: OSV-2020-1123
-package:
-  name: unicorn
-  ecosystem: OSS-Fuzz
 summary: Index-out-of-bounds in store_reg_arm
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20026
@@ -11,20 +8,23 @@ details: |
   store_reg_arm
   gen_load_exclusive_arm
   disas_arm_insn_arm
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/unicorn-engine/unicorn.git
-    introduced: 46999575fb9e82ccd925e835d0d7db47200e010d
-    fixed: ec2e4544819b2ef0ecd297ba331d4f2172b77245
-  versions:
-  - 1.0.2-rc1
 modified: '2021-06-23T06:28:31.880621Z'
 published: '2020-07-22T21:49:48.909471Z'
-ecosystem_specific:
-  severity: MEDIUM
-database_specific:
-  introduced_range: unknown:46999575fb9e82ccd925e835d0d7db47200e010d
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20026
+affected:
+- package:
+    name: unicorn
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/unicorn-engine/unicorn.git
+    events:
+    - introduced: 46999575fb9e82ccd925e835d0d7db47200e010d
+    - fixed: ec2e4544819b2ef0ecd297ba331d4f2172b77245
+  versions:
+  - 1.0.2-rc1
+  ecosystem_specific:
+    introduced_range: unknown:46999575fb9e82ccd925e835d0d7db47200e010d
+    severity: MEDIUM

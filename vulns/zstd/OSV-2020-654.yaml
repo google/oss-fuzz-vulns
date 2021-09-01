@@ -1,7 +1,4 @@
 id: OSV-2020-654
-package:
-  name: zstd
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in ZSTD_copy16
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=17451
@@ -11,16 +8,20 @@ details: |
   ZSTD_copy16
   ZSTD_decompressSequences_bmi2
   ZSTD_decompressBlock_internal
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/facebook/zstd
-    introduced: bfff5b30a4a73a6ce0e6e81e9291418fd3f9761a
-    fixed: efd37a64eaff5a0a26ae2566fdb45dc4a0c91673
 modified: '2021-06-21T06:56:19.401298Z'
 published: '2020-07-01T00:00:22.703216Z'
-ecosystem_specific:
-  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=17451
+affected:
+- package:
+    name: zstd
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/facebook/zstd
+    events:
+    - introduced: bfff5b30a4a73a6ce0e6e81e9291418fd3f9761a
+    - fixed: efd37a64eaff5a0a26ae2566fdb45dc4a0c91673
+  ecosystem_specific:
+    severity: MEDIUM

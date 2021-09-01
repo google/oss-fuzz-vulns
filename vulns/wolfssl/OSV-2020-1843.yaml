@@ -1,7 +1,4 @@
 id: OSV-2020-1843
-package:
-  name: wolfssl
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in SendUserAuthPkOk
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25926
@@ -11,19 +8,22 @@ details: |
   SendUserAuthPkOk
   DoUserAuthRequestPublicKey
   DoUserAuthRequest
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/wolfssl/wolfssl
-    introduced: 83cdd1c314af5d6326470254b3cdbb9d85182348
-    fixed: 4f6c1db9a2ae47cfe488e7443ce54b7e2a815261
 modified: '2021-06-23T06:26:00.066379Z'
 published: '2020-09-26T00:00:06.428089Z'
-ecosystem_specific:
-  severity: MEDIUM
-database_specific:
-  fixed_range: 84ee1509b736cac51bd1b2f13fb7e86505b0735a:4f6c1db9a2ae47cfe488e7443ce54b7e2a815261
-  introduced_range: deaf3b4b40d26663191d085557fbeb8cafa420ae:881657782478cef4a1527847bb2c4cd427bd6c99
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25926
+affected:
+- package:
+    name: wolfssl
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/wolfssl/wolfssl
+    events:
+    - introduced: 83cdd1c314af5d6326470254b3cdbb9d85182348
+    - fixed: 4f6c1db9a2ae47cfe488e7443ce54b7e2a815261
+  ecosystem_specific:
+    introduced_range: deaf3b4b40d26663191d085557fbeb8cafa420ae:881657782478cef4a1527847bb2c4cd427bd6c99
+    fixed_range: 84ee1509b736cac51bd1b2f13fb7e86505b0735a:4f6c1db9a2ae47cfe488e7443ce54b7e2a815261
+    severity: MEDIUM

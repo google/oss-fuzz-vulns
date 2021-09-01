@@ -1,7 +1,4 @@
 id: OSV-2020-1478
-package:
-  name: stb
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in load_jpeg_image
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23153
@@ -11,15 +8,19 @@ details: |
   load_jpeg_image
   stbi__jpeg_load
   stbi__load_main
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/nothings/stb.git
-    introduced: f54acd4e13430c5122cab4ca657705c84aa61b08
 modified: '2021-06-21T06:56:26.425090Z'
 published: '2020-07-28T00:00:27.954104Z'
-ecosystem_specific:
-  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23153
+affected:
+- package:
+    name: stb
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/nothings/stb.git
+    events:
+    - introduced: f54acd4e13430c5122cab4ca657705c84aa61b08
+  ecosystem_specific:
+    severity: MEDIUM

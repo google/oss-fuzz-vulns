@@ -1,7 +1,4 @@
 id: OSV-2021-383
-package:
-  name: cryptofuzz
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in des_ede3_wrap
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30847
@@ -11,17 +8,20 @@ details: |
   des_ede3_wrap
   tdes_wrap_cipher_internal
   tdes_wrap_cipher
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/guidovranken/cryptofuzz
-    introduced: 7ed9e6cdb3db61a7483afd1f31473aae901fd0df
 modified: '2021-06-23T06:25:45.365678Z'
 published: '2021-02-13T00:00:16.616574Z'
-ecosystem_specific:
-  severity: HIGH
-database_specific:
-  introduced_range: 5fdf7b2e3fe603a879d3f3a06083aeccb59f7b46:04fefea284821610af211cabc4a805bc52e2b770
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30847
+affected:
+- package:
+    name: cryptofuzz
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/guidovranken/cryptofuzz
+    events:
+    - introduced: 7ed9e6cdb3db61a7483afd1f31473aae901fd0df
+  ecosystem_specific:
+    introduced_range: 5fdf7b2e3fe603a879d3f3a06083aeccb59f7b46:04fefea284821610af211cabc4a805bc52e2b770
+    severity: HIGH

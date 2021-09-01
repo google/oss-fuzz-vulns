@@ -1,7 +1,4 @@
 id: OSV-2020-1222
-package:
-  name: htslib
-  ecosystem: OSS-Fuzz
 summary: UNKNOWN READ in hpeek
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20473
@@ -11,22 +8,25 @@ details: |
   hpeek
   sam_hdr_create
   view_sam
-affects:
+modified: '2021-06-23T06:25:11.790876Z'
+published: '2020-07-22T21:49:57.988557Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20473
+affected:
+- package:
+    name: htslib
+    ecosystem: OSS-Fuzz
   ranges:
   - type: GIT
     repo: https://github.com/samtools/htslib.git
-    introduced: dd6f0b72c92591252bb77818663629cc1a129949
-    fixed: 39acb9583128ede53d0562a8055786cec0e5ab40
+    events:
+    - introduced: dd6f0b72c92591252bb77818663629cc1a129949
+    - fixed: 39acb9583128ede53d0562a8055786cec0e5ab40
   versions:
   - '1.10'
   - 1.10.1
   - 1.10.2
-modified: '2021-06-23T06:25:11.790876Z'
-published: '2020-07-22T21:49:57.988557Z'
-ecosystem_specific:
-  severity: MEDIUM
-database_specific:
-  introduced_range: unknown:dd6f0b72c92591252bb77818663629cc1a129949
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20473
+  ecosystem_specific:
+    severity: MEDIUM
+    introduced_range: unknown:dd6f0b72c92591252bb77818663629cc1a129949

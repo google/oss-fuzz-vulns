@@ -1,7 +1,4 @@
 id: OSV-2020-243
-package:
-  name: harfbuzz
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in OT::VarRegionList::serialize
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=19956
@@ -11,16 +8,20 @@ details: |
   OT::VarRegionList::serialize
   OT::VariationStore::serialize
   bool OT::HVARVVAR::_subset<OT::HVAR>
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/harfbuzz/harfbuzz.git
-    introduced: 8f8e8a84795db45098c95e19a7ff83d898d3bc7d
-    fixed: 257a197ae723b55d26c3254dbe1edd8b0509af1b
 modified: '2021-06-21T06:56:20.496764Z'
 published: '2020-06-26T00:00:09.657756Z'
-ecosystem_specific:
-  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=19956
+affected:
+- package:
+    name: harfbuzz
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/harfbuzz/harfbuzz.git
+    events:
+    - introduced: 8f8e8a84795db45098c95e19a7ff83d898d3bc7d
+    - fixed: 257a197ae723b55d26c3254dbe1edd8b0509af1b
+  ecosystem_specific:
+    severity: MEDIUM

@@ -1,7 +1,4 @@
 id: OSV-2020-1676
-package:
-  name: libheif
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in Op_YCbCr_to_RGB<unsigned char>::convert_colorspace
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25267
@@ -11,11 +8,20 @@ details: |
   Op_YCbCr_to_RGB<unsigned char>::convert_colorspace
   heif::ColorConversionPipeline::convert_image
   heif::convert_colorspace
-affects:
+modified: '2021-06-21T06:56:20.067990Z'
+published: '2020-08-30T00:00:07.006768Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25267
+affected:
+- package:
+    name: libheif
+    ecosystem: OSS-Fuzz
   ranges:
   - type: GIT
     repo: https://github.com/strukturag/libheif.git
-    introduced: a8e5e37f46e2ec1f14a52477e1b439fe47cd430d
+    events:
+    - introduced: a8e5e37f46e2ec1f14a52477e1b439fe47cd430d
   versions:
   - v1.10.0
   - v1.11.0
@@ -23,10 +29,5 @@ affects:
   - v1.9.0
   - v1.9.1
   - v1.12.0
-modified: '2021-06-21T06:56:20.067990Z'
-published: '2020-08-30T00:00:07.006768Z'
-ecosystem_specific:
-  severity: MEDIUM
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25267
+  ecosystem_specific:
+    severity: MEDIUM

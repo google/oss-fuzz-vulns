@@ -1,7 +1,4 @@
 id: OSV-2018-109
-package:
-  name: openssl
-  ecosystem: OSS-Fuzz
 summary: Heap-use-after-free in ssl_get_prev_session
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=8241
@@ -11,16 +8,20 @@ details: |
   ssl_get_prev_session
   tls_early_post_process_client_hello
   tls_post_process_client_hello
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/openssl/openssl.git
-    introduced: 61fb59238dad6452a37ec14513fae617a4faef29
-    fixed: 5f96a95e2562f026557f625e50c052e77c7bc2e8
 modified: '2021-06-21T06:56:24.834757Z'
 published: '2021-01-13T00:00:48.206043Z'
-ecosystem_specific:
-  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=8241
+affected:
+- package:
+    name: openssl
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/openssl/openssl.git
+    events:
+    - introduced: 61fb59238dad6452a37ec14513fae617a4faef29
+    - fixed: 5f96a95e2562f026557f625e50c052e77c7bc2e8
+  ecosystem_specific:
+    severity: HIGH

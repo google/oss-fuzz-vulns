@@ -1,7 +1,4 @@
 id: OSV-2018-117
-package:
-  name: envoy
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in Envoy::StringUtil::itoa
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=10038
@@ -11,18 +8,21 @@ details: |
   Envoy::StringUtil::itoa
   Envoy::Http::HeaderString::setInteger
   Envoy::TestOneProtoInput
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/envoyproxy/envoy.git
-    introduced: 78ad2ef735657ba79393ce8f3a41259c136e41ed
-    fixed: f7d3cb638662f0787699b763134e1e64118d573f
 modified: '2021-06-23T06:25:09.221951Z'
 published: '2021-01-13T00:00:54.062431Z'
-ecosystem_specific:
-  severity: HIGH
-database_specific:
-  introduced_range: f1aee97b079ad4a0130583ef7cd656351dd70bd7:f4ac32bfc884e418bd8c5bc7777e45f9d9f22b34
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=10038
+affected:
+- package:
+    name: envoy
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/envoyproxy/envoy.git
+    events:
+    - introduced: 78ad2ef735657ba79393ce8f3a41259c136e41ed
+    - fixed: f7d3cb638662f0787699b763134e1e64118d573f
+  ecosystem_specific:
+    severity: HIGH
+    introduced_range: f1aee97b079ad4a0130583ef7cd656351dd70bd7:f4ac32bfc884e418bd8c5bc7777e45f9d9f22b34

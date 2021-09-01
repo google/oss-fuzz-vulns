@@ -1,7 +1,4 @@
 id: OSV-2020-741
-package:
-  name: glib
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in uri_decoder
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23815
@@ -11,16 +8,20 @@ details: |
   uri_decoder
   uri_decode
   g_uri_parse_params
-affects:
-  ranges:
-  - type: GIT
-    repo: https://gitlab.gnome.org/GNOME/glib
-    introduced: 44524b9daa622058e3e55617b9b0d4c986e3b8b3
-    fixed: f9d165add1342ecae6cdde1b95e9ce63320768dd
 modified: '2021-06-21T06:56:20.080395Z'
 published: '2020-07-04T00:00:01.437763Z'
-ecosystem_specific:
-  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23815
+affected:
+- package:
+    name: glib
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://gitlab.gnome.org/GNOME/glib
+    events:
+    - introduced: 44524b9daa622058e3e55617b9b0d4c986e3b8b3
+    - fixed: f9d165add1342ecae6cdde1b95e9ce63320768dd
+  ecosystem_specific:
+    severity: MEDIUM

@@ -1,7 +1,4 @@
 id: OSV-2018-157
-package:
-  name: openvswitch
-  ecosystem: OSS-Fuzz
 summary: Heap-double-free in minimatch_destroy
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11408
@@ -11,16 +8,20 @@ details: |
   minimatch_destroy
   ofctl_parse_flow
   ofctl_parse_target.c
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/openvswitch/ovs.git
-    introduced: 581d3bec7b8c714a98744b0b5f48dd7c7c4db037
-    fixed: 4d1ca7035df8d1688b7d85e6495722f57870726f
 modified: '2021-06-21T06:56:26.399976Z'
 published: '2021-01-13T00:01:07.205739Z'
-ecosystem_specific:
-  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11408
+affected:
+- package:
+    name: openvswitch
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/openvswitch/ovs.git
+    events:
+    - introduced: 581d3bec7b8c714a98744b0b5f48dd7c7c4db037
+    - fixed: 4d1ca7035df8d1688b7d85e6495722f57870726f
+  ecosystem_specific:
+    severity: HIGH

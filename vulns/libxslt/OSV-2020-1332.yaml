@@ -1,7 +1,4 @@
 id: OSV-2020-1332
-package:
-  name: libxslt
-  ecosystem: OSS-Fuzz
 summary: Index-out-of-bounds in xsltSetAttrVTsegment
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14273
@@ -11,19 +8,22 @@ details: |
   xsltSetAttrVTsegment
   xsltCompileAttr
   xsltParseTemplateContent
-affects:
-  ranges:
-  - type: GIT
-    repo: https://gitlab.gnome.org/GNOME/libxslt.git
-    introduced: 7f56378a73af8a61da78b8091f0e317316cee300
-    fixed: 01f8317dd8ffe2141fae0348edd9fd51037ee41b
 modified: '2021-06-23T06:25:30.996117Z'
 published: '2020-07-22T21:50:07.164634Z'
-ecosystem_specific:
-  severity: MEDIUM
-database_specific:
-  fixed_range: 7f56378a73af8a61da78b8091f0e317316cee300:01f8317dd8ffe2141fae0348edd9fd51037ee41b
-  introduced_range: unknown:7f56378a73af8a61da78b8091f0e317316cee300
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14273
+affected:
+- package:
+    name: libxslt
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://gitlab.gnome.org/GNOME/libxslt.git
+    events:
+    - introduced: 7f56378a73af8a61da78b8091f0e317316cee300
+    - fixed: 01f8317dd8ffe2141fae0348edd9fd51037ee41b
+  ecosystem_specific:
+    severity: MEDIUM
+    fixed_range: 7f56378a73af8a61da78b8091f0e317316cee300:01f8317dd8ffe2141fae0348edd9fd51037ee41b
+    introduced_range: unknown:7f56378a73af8a61da78b8091f0e317316cee300

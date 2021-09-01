@@ -1,7 +1,4 @@
 id: OSV-2018-222
-package:
-  name: resiprocate
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in resip::ParseBuffer::qVal
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=6713
@@ -11,16 +8,20 @@ details: |
   resip::ParseBuffer::qVal
   resip::QValueParameter::QValueParameter
   resip::QValueParameter::decode
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/resiprocate/resiprocate.git
-    introduced: 40edcde0a63c56310c4fac73893fd0fa83dfbd4c
-    fixed: ea2304e2982b00f884b119db982eee0d77a7a3db
 modified: '2021-06-21T06:56:21.111053Z'
 published: '2021-01-13T00:01:29.932709Z'
-ecosystem_specific:
-  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=6713
+affected:
+- package:
+    name: resiprocate
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/resiprocate/resiprocate.git
+    events:
+    - introduced: 40edcde0a63c56310c4fac73893fd0fa83dfbd4c
+    - fixed: ea2304e2982b00f884b119db982eee0d77a7a3db
+  ecosystem_specific:
+    severity: MEDIUM

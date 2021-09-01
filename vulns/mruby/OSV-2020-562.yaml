@@ -1,7 +1,4 @@
 id: OSV-2020-562
-package:
-  name: mruby
-  ecosystem: OSS-Fuzz
 summary: UNKNOWN READ in local_add_lv
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18030
@@ -11,19 +8,23 @@ details: |
   local_add_lv
   yyparse
   mrb_parser_parse
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/mruby/mruby
-    introduced: 264239f78fb9ec8047cf04b82f547fc41d65ab28
-    fixed: 7750c61e29675e778f7d12119555fafbf85043c9
-  versions:
-  - 2.1.0
-  - 2.1.0-rc
 modified: '2021-06-21T06:56:25.620338Z'
 published: '2020-07-01T00:00:17.111214Z'
-ecosystem_specific:
-  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18030
+affected:
+- package:
+    name: mruby
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/mruby/mruby
+    events:
+    - introduced: 264239f78fb9ec8047cf04b82f547fc41d65ab28
+    - fixed: 7750c61e29675e778f7d12119555fafbf85043c9
+  versions:
+  - 2.1.0
+  - 2.1.0-rc
+  ecosystem_specific:
+    severity: MEDIUM

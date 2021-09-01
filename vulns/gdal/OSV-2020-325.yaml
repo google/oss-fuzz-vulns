@@ -1,7 +1,4 @@
 id: OSV-2020-325
-package:
-  name: gdal
-  ecosystem: OSS-Fuzz
 summary: Stack-buffer-overflow in std::__1::basic_string<char, std::__1::char_traits<char>,
   std::__1::allocator<ch
 details: |
@@ -12,15 +9,22 @@ details: |
   std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<ch
   nccfdriver::attrf
   nccfdriver::getCFVersion
-affects:
+modified: '2021-06-23T07:04:18.378007Z'
+published: '2020-07-01T00:00:02.845124Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15159
+affected:
+- package:
+    name: gdal
+    ecosystem: OSS-Fuzz
   ranges:
   - type: GIT
     repo: https://github.com/OSGeo/gdal
-    introduced: 38c1e385e81223476828d57aa83af5716a9256b7
-    fixed: 767e3a56144f676ca738ef8f700e0e56035bd05a
-  - type: GIT
-    repo: https://github.com/OSGeo/gdal
-    introduced: 27b9bf644bcf1208f7d6594bdd104cc8a8bb0646
+    events:
+    - introduced: 38c1e385e81223476828d57aa83af5716a9256b7
+    - fixed: 767e3a56144f676ca738ef8f700e0e56035bd05a
+    - introduced: 27b9bf644bcf1208f7d6594bdd104cc8a8bb0646
   versions:
   - v2.4.2
   - v2.4.3
@@ -34,12 +38,6 @@ affects:
   - v3.0.3RC1
   - v3.0.4
   - v3.0.4RC1
-modified: '2021-06-23T07:04:18.378007Z'
-published: '2020-07-01T00:00:02.845124Z'
-ecosystem_specific:
-  severity: MEDIUM
-database_specific:
-  introduced_range: 289b796e365ac26020548410d6ae16022bc80718:f956a3c6ff43a877a63ee1199c5e0092c11a8c31
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15159
+  ecosystem_specific:
+    introduced_range: 289b796e365ac26020548410d6ae16022bc80718:f956a3c6ff43a877a63ee1199c5e0092c11a8c31
+    severity: MEDIUM

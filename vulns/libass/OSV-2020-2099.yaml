@@ -1,7 +1,4 @@
 id: OSV-2020-2099
-package:
-  name: libass
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in decode_chars
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26674
@@ -11,18 +8,22 @@ details: |
   decode_chars
   decode_font
   process_text
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/libass/libass.git
-    introduced: 910211f1c0078e37546f73e95306724358b89be2
-    fixed: 017137471d0043e0321e377ed8da48e45a3ec632
-  versions:
-  - 0.15.0
 modified: '2021-06-21T06:56:18.532096Z'
 published: '2020-10-28T00:00:05.887987Z'
-ecosystem_specific:
-  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26674
+affected:
+- package:
+    name: libass
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/libass/libass.git
+    events:
+    - introduced: 910211f1c0078e37546f73e95306724358b89be2
+    - fixed: 017137471d0043e0321e377ed8da48e45a3ec632
+  versions:
+  - 0.15.0
+  ecosystem_specific:
+    severity: HIGH

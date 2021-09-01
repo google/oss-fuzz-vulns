@@ -1,7 +1,4 @@
 id: OSV-2021-504
-package:
-  name: libavc
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in ih264d_mark_err_slice_skip
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31757
@@ -11,11 +8,20 @@ details: |
   ih264d_mark_err_slice_skip
   ih264d_video_decode
   ih264d_api_function
-affects:
+modified: '2021-08-12T00:03:48.750303Z'
+published: '2021-03-07T00:00:59.495834Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31757
+affected:
+- package:
+    name: libavc
+    ecosystem: OSS-Fuzz
   ranges:
   - type: GIT
     repo: https://android.googlesource.com/platform/external/libavc
-    introduced: 6efeedf0633e1965a4d4e17d64f14215e9b6d48f
+    events:
+    - introduced: 6efeedf0633e1965a4d4e17d64f14215e9b6d48f
   versions:
   - android-s-beta-1
   - android-s-preview-1
@@ -51,10 +57,5 @@ affects:
   - android-s-beta-3
   - android-11.0.0_r40
   - android-s-beta-4
-modified: '2021-08-12T00:03:48.750303Z'
-published: '2021-03-07T00:00:59.495834Z'
-ecosystem_specific:
-  severity: HIGH
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31757
+  ecosystem_specific:
+    severity: HIGH

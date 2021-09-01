@@ -1,7 +1,4 @@
 id: OSV-2018-226
-package:
-  name: freetype2
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in pcf_get_encodings
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=9561
@@ -11,19 +8,22 @@ details: |
   pcf_get_encodings
   pcf_load_font
   PCF_Face_Init
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/freetype/freetype2-testing.git
-    introduced: 53e3af654d5491e6481747a28d425cda3f73cb12
-    fixed: 1f744836ee1bb7b9c0c22b32f55eec9f96160563
 modified: '2021-06-23T06:25:40.685576Z'
 published: '2021-01-13T00:01:33.631607Z'
-ecosystem_specific:
-  severity: MEDIUM
-database_specific:
-  introduced_range: 20cbff1970d10e1f7086a5ef89ada4229481bb1e:f646e9f4598f261ebcef6f989c883428987f4975
-  fixed_range: 2e9a544016422f96f9bbedc40e269adc289c78ef:1f744836ee1bb7b9c0c22b32f55eec9f96160563
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=9561
+affected:
+- package:
+    name: freetype2
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/freetype/freetype2-testing.git
+    events:
+    - introduced: 53e3af654d5491e6481747a28d425cda3f73cb12
+    - fixed: 1f744836ee1bb7b9c0c22b32f55eec9f96160563
+  ecosystem_specific:
+    fixed_range: 2e9a544016422f96f9bbedc40e269adc289c78ef:1f744836ee1bb7b9c0c22b32f55eec9f96160563
+    severity: MEDIUM
+    introduced_range: 20cbff1970d10e1f7086a5ef89ada4229481bb1e:f646e9f4598f261ebcef6f989c883428987f4975

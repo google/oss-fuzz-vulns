@@ -1,7 +1,4 @@
 id: OSV-2020-156
-package:
-  name: fluent-bit
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in flb_unescape_string_utf8
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22132
@@ -11,22 +8,24 @@ details: |
   flb_unescape_string_utf8
   logfmt_parser
   flb_parser_logfmt_do
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/fluent/fluent-bit/
-    introduced: 754c40a5aa372b08b7773fa3c39b2c6aabf667b6
-    fixed: c81069636b90c4f24ed54a30bb8a15fba17a1094
-  - type: GIT
-    repo: https://github.com/fluent/fluent-bit/
-    introduced: 0a05f222752f0325ff55417745d47d4672c2387e
-    fixed: 0c222db475e5f97c2590b0d3bb7dceee7ecd7f76
-  versions:
-  - v1.4.3
 modified: '2021-06-21T06:56:24.446104Z'
 published: '2020-06-24T01:51:16.609624Z'
-ecosystem_specific:
-  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22132
+affected:
+- package:
+    name: fluent-bit
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/fluent/fluent-bit/
+    events:
+    - introduced: 754c40a5aa372b08b7773fa3c39b2c6aabf667b6
+    - fixed: c81069636b90c4f24ed54a30bb8a15fba17a1094
+    - introduced: 0a05f222752f0325ff55417745d47d4672c2387e
+    - fixed: 0c222db475e5f97c2590b0d3bb7dceee7ecd7f76
+  versions:
+  - v1.4.3
+  ecosystem_specific:
+    severity: MEDIUM

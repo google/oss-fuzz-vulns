@@ -1,7 +1,4 @@
 id: OSV-2021-312
-package:
-  name: ghostscript
-  ecosystem: OSS-Fuzz
 summary: Heap-use-after-free in sampled_data_continue
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30487
@@ -11,18 +8,21 @@ details: |
   sampled_data_continue
   gs_interpret
   gs_main_run_string_with_length
-affects:
-  ranges:
-  - type: GIT
-    repo: git://git.ghostscript.com/ghostpdl.git
-    introduced: 0bd6877f480a84657696a80adc13f9c5485dd996
-    fixed: 141e5067e40d25ed3aa191589d4a325941efa57a
 modified: '2021-06-23T06:25:39.630813Z'
 published: '2021-02-08T00:00:34.249318Z'
-ecosystem_specific:
-  severity: HIGH
-database_specific:
-  fixed_range: 7e8b585e7577044dc1d6a9a36d715be12fc2524c:141e5067e40d25ed3aa191589d4a325941efa57a
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30487
+affected:
+- package:
+    name: ghostscript
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: git://git.ghostscript.com/ghostpdl.git
+    events:
+    - introduced: 0bd6877f480a84657696a80adc13f9c5485dd996
+    - fixed: 141e5067e40d25ed3aa191589d4a325941efa57a
+  ecosystem_specific:
+    fixed_range: 7e8b585e7577044dc1d6a9a36d715be12fc2524c:141e5067e40d25ed3aa191589d4a325941efa57a
+    severity: HIGH

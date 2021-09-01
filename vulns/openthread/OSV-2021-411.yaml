@@ -1,7 +1,4 @@
 id: OSV-2021-411
-package:
-  name: openthread
-  ecosystem: OSS-Fuzz
 summary: UNKNOWN READ in ot::Cli::Interpreter::OutputFormatV
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31002
@@ -11,16 +8,20 @@ details: |
   ot::Cli::Interpreter::OutputFormatV
   ot::Cli::Interpreter::OutputLine
   ot::Cli::SrpServer::ProcessDomain
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/openthread/openthread
-    introduced: 2cd36266abaaf8b79ebb0441e6ed2ec3847cf3ca
-    fixed: ab7a25faebb9704877dae70befd7233773997328
 modified: '2021-06-21T06:56:24.947319Z'
 published: '2021-02-17T00:01:22.756139Z'
-ecosystem_specific:
-  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31002
+affected:
+- package:
+    name: openthread
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/openthread/openthread
+    events:
+    - introduced: 2cd36266abaaf8b79ebb0441e6ed2ec3847cf3ca
+    - fixed: ab7a25faebb9704877dae70befd7233773997328
+  ecosystem_specific:
+    severity: MEDIUM

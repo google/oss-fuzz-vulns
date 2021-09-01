@@ -1,7 +1,4 @@
 id: OSV-2020-14
-package:
-  name: mruby
-  ecosystem: OSS-Fuzz
 summary: Stack-buffer-overflow in fmt_setup
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22507
@@ -11,16 +8,20 @@ details: |
   fmt_setup
   mrb_str_format
   mrb_f_sprintf
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/mruby/mruby
-    introduced: 191ccbf660b80016c554d9b2d71ba9f0bc6429d8
-    fixed: 15c63688e3f1a3c6067e6af70e3e9bf999d91389
 modified: '2021-06-21T06:56:25.595832Z'
 published: '2020-06-24T01:51:10.171293Z'
-ecosystem_specific:
-  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22507
+affected:
+- package:
+    name: mruby
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/mruby/mruby
+    events:
+    - introduced: 191ccbf660b80016c554d9b2d71ba9f0bc6429d8
+    - fixed: 15c63688e3f1a3c6067e6af70e3e9bf999d91389
+  ecosystem_specific:
+    severity: HIGH

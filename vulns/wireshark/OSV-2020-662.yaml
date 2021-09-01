@@ -1,7 +1,4 @@
 id: OSV-2020-662
-package:
-  name: wireshark
-  ecosystem: OSS-Fuzz
 summary: UNKNOWN READ in wmem_strdup_printf
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13725
@@ -11,15 +8,22 @@ details: |
   wmem_strdup_printf
   dissect_parameter_sequence
   dissect_rtps_submessage_v2
-affects:
+modified: '2021-06-23T07:58:09.527923Z'
+published: '2020-07-01T00:00:23.358358Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13725
+affected:
+- package:
+    name: wireshark
+    ecosystem: OSS-Fuzz
   ranges:
   - type: GIT
     repo: https://gitlab.com/wireshark/wireshark.git
-    introduced: 5a8e9e35b36d235930cc70b42f356418c9ea0da1
-    fixed: a152753aa929deda21b797f93848c369a68b9465
-  - type: GIT
-    repo: https://gitlab.com/wireshark/wireshark.git
-    introduced: f80b7d1b279fb6c13f640019a1bbc42b18bf7469
+    events:
+    - introduced: 5a8e9e35b36d235930cc70b42f356418c9ea0da1
+    - fixed: a152753aa929deda21b797f93848c369a68b9465
+    - introduced: f80b7d1b279fb6c13f640019a1bbc42b18bf7469
   versions:
   - v3.0.1
   - v3.0.10
@@ -63,12 +67,6 @@ affects:
   - wireshark-3.0.7
   - wireshark-3.0.8
   - wireshark-3.0.9
-modified: '2021-06-23T07:58:09.527923Z'
-published: '2020-07-01T00:00:23.358358Z'
-ecosystem_specific:
-  severity: MEDIUM
-database_specific:
-  introduced_range: bf2c6ad14765a7128aee040a48be8620a2aec166:7c943d35a29a2ef827dbbbef215d4a089601c0e8
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13725
+  ecosystem_specific:
+    severity: MEDIUM
+    introduced_range: bf2c6ad14765a7128aee040a48be8620a2aec166:7c943d35a29a2ef827dbbbef215d4a089601c0e8

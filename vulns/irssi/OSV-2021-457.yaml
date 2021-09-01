@@ -1,7 +1,4 @@
 id: OSV-2021-457
-package:
-  name: irssi
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in unescape_tag
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31491
@@ -11,16 +8,20 @@ details: |
   unescape_tag
   irc_parse_message_tags
   irc_server_event_tags
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/irssi/irssi
-    introduced: d535a79730ea291a1dfe9f5be190009eecc1e275
-    fixed: 4c069f5c8f3b63d8ba8556ba8292e1f5972508d6
 modified: '2021-06-21T06:56:21.354474Z'
 published: '2021-03-01T00:00:00.960970Z'
-ecosystem_specific:
-  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31491
+affected:
+- package:
+    name: irssi
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/irssi/irssi
+    events:
+    - introduced: d535a79730ea291a1dfe9f5be190009eecc1e275
+    - fixed: 4c069f5c8f3b63d8ba8556ba8292e1f5972508d6
+  ecosystem_specific:
+    severity: MEDIUM

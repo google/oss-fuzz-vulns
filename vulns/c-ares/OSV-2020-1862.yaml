@@ -1,7 +1,4 @@
 id: OSV-2020-1862
-package:
-  name: c-ares
-  ecosystem: OSS-Fuzz
 summary: Use-of-uninitialized-value in ares_parse_caa_reply
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26012
@@ -10,18 +7,21 @@ details: |
   Crash state:
   ares_parse_caa_reply
   ares-test-fuzz.c
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/c-ares/c-ares.git
-    introduced: f5b4c0851027286ef56b84a13c85424fe25c3703
-    fixed: 4d6975b3ec24aba44331d235bbcabf899be56cf2
 modified: '2021-06-23T06:26:05.624133Z'
 published: '2020-09-28T00:00:13.102068Z'
-ecosystem_specific:
-  severity: MEDIUM
-database_specific:
-  introduced_range: 05eb0c1dca9175358c725e4833e923e73a1a769b:89e9eeb4efbd4ad487ef9c9debbe9920e7b3b236
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26012
+affected:
+- package:
+    name: c-ares
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/c-ares/c-ares.git
+    events:
+    - introduced: f5b4c0851027286ef56b84a13c85424fe25c3703
+    - fixed: 4d6975b3ec24aba44331d235bbcabf899be56cf2
+  ecosystem_specific:
+    introduced_range: 05eb0c1dca9175358c725e4833e923e73a1a769b:89e9eeb4efbd4ad487ef9c9debbe9920e7b3b236
+    severity: MEDIUM

@@ -1,7 +1,4 @@
 id: OSV-2018-210
-package:
-  name: open62541
-  ecosystem: OSS-Fuzz
 summary: Heap-use-after-free in UA_SecureChannel_deleteMembersCleanup
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=5499
@@ -11,16 +8,20 @@ details: |
   UA_SecureChannel_deleteMembersCleanup
   removeSecureChannelCallback
   UA_Server_run_shutdown
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/open62541/open62541.git
-    introduced: 5c27c73a4b4812b6d97443c0ce024a08e2e7e4de
-    fixed: a6d732b4050e902d9bba3acfa7bf72e30fa4dcc6
 modified: '2021-06-21T06:56:26.757326Z'
 published: '2021-01-13T00:01:25.341940Z'
-ecosystem_specific:
-  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=5499
+affected:
+- package:
+    name: open62541
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/open62541/open62541.git
+    events:
+    - introduced: 5c27c73a4b4812b6d97443c0ce024a08e2e7e4de
+    - fixed: a6d732b4050e902d9bba3acfa7bf72e30fa4dcc6
+  ecosystem_specific:
+    severity: HIGH

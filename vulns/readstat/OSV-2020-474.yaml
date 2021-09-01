@@ -1,7 +1,4 @@
 id: OSV-2020-474
-package:
-  name: readstat
-  ecosystem: OSS-Fuzz
 summary: Bad-free in spss_varinfo_free
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=12595
@@ -11,14 +8,18 @@ details: |
   spss_varinfo_free
   sav_read_variable_record
   sav_parse_records_pass2
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/WizardMac/ReadStat
-    introduced: d2b73886878945df2b95d3c76d13df508f41f0b4
-    fixed: 14265e717e48fc877697a27f1bee232116ce21e5
+modified: '2021-03-09T04:49:05.908206Z'
+published: '2020-07-01T00:00:11.710738Z'
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=12595
-modified: '2021-03-09T04:49:05.908206Z'
-published: '2020-07-01T00:00:11.710738Z'
+affected:
+- package:
+    name: readstat
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/WizardMac/ReadStat
+    events:
+    - introduced: d2b73886878945df2b95d3c76d13df508f41f0b4
+    - fixed: 14265e717e48fc877697a27f1bee232116ce21e5

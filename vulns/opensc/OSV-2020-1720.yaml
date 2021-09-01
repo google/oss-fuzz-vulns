@@ -1,7 +1,4 @@
 id: OSV-2020-1720
-package:
-  name: opensc
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in hextoint
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25473
@@ -11,16 +8,20 @@ details: |
   hextoint
   get_name_from_EF_DatiPersonali
   itacns_add_data_files
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/OpenSC/OpenSC
-    introduced: b02da8348be97d4b24081783f6af46757373bc3e
-    fixed: 8dd136ac240580b63ce509a1379a109026b93b5e
 modified: '2021-06-21T06:56:27.107273Z'
 published: '2020-09-08T00:01:07.773084Z'
-ecosystem_specific:
-  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25473
+affected:
+- package:
+    name: opensc
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/OpenSC/OpenSC
+    events:
+    - introduced: b02da8348be97d4b24081783f6af46757373bc3e
+    - fixed: 8dd136ac240580b63ce509a1379a109026b93b5e
+  ecosystem_specific:
+    severity: MEDIUM

@@ -1,7 +1,4 @@
 id: OSV-2020-1129
-package:
-  name: readstat
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in rt_read_handler
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=12572
@@ -11,18 +8,21 @@ details: |
   rt_read_handler
   sav_read_variable_missing_values
   sav_read_variable_record
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/WizardMac/ReadStat
-    introduced: d1bfd735515803800cb9708e3fca9e5c1e8e7a48
-    fixed: 14265e717e48fc877697a27f1bee232116ce21e5
 modified: '2021-06-23T06:29:25.701630Z'
 published: '2020-07-22T21:49:49.305204Z'
-ecosystem_specific:
-  severity: HIGH
-database_specific:
-  introduced_range: unknown:d1bfd735515803800cb9708e3fca9e5c1e8e7a48
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=12572
+affected:
+- package:
+    name: readstat
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/WizardMac/ReadStat
+    events:
+    - introduced: d1bfd735515803800cb9708e3fca9e5c1e8e7a48
+    - fixed: 14265e717e48fc877697a27f1bee232116ce21e5
+  ecosystem_specific:
+    severity: HIGH
+    introduced_range: unknown:d1bfd735515803800cb9708e3fca9e5c1e8e7a48

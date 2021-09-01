@@ -1,7 +1,4 @@
 id: OSV-2021-735
-package:
-  name: kimageformats
-  ecosystem: OSS-Fuzz
 summary: Use-of-uninitialized-value in decode_CABAC_FL_bypass
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34047
@@ -11,11 +8,20 @@ details: |
   decode_CABAC_FL_bypass
   decode_coeff_abs_level_remaining
   residual_coding
-affects:
+modified: '2021-08-15T00:04:02.932130Z'
+published: '2021-05-08T00:00:14.355747Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34047
+affected:
+- package:
+    name: kimageformats
+    ecosystem: OSS-Fuzz
   ranges:
   - type: GIT
     repo: https://invent.kde.org/frameworks/kimageformats.git
-    introduced: ca52d4ddf540cc731d0f31dbccc1897f7e6d9db4
+    events:
+    - introduced: ca52d4ddf540cc731d0f31dbccc1897f7e6d9db4
   versions:
   - v5.80.0
   - v5.80.0-rc1
@@ -28,10 +34,5 @@ affects:
   - v5.84.0-rc1
   - v5.85.0-rc1
   - v5.85.0
-modified: '2021-08-15T00:04:02.932130Z'
-published: '2021-05-08T00:00:14.355747Z'
-ecosystem_specific:
-  severity: MEDIUM
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34047
+  ecosystem_specific:
+    severity: MEDIUM

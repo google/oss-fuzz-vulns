@@ -1,7 +1,4 @@
 id: OSV-2017-134
-package:
-  name: file
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in cdf_file_property_info
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=1064
@@ -11,19 +8,23 @@ details: |
   cdf_file_property_info
   cdf_file_summary_info
   cdf_check_summary_info
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/file/file.git
-    introduced: 17ee4cf670c363de8d2ea4a4897d7a699837873f
-    fixed: 19ccebafb7663c422c714e0c67fa4775abf91c43
-  versions:
-  - FILE5_29
-  - FILE5_30
 modified: '2021-06-21T06:56:18.708130Z'
 published: '2021-01-15T00:00:24.559102Z'
-ecosystem_specific:
-  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=1064
+affected:
+- package:
+    name: file
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/file/file.git
+    events:
+    - introduced: 17ee4cf670c363de8d2ea4a4897d7a699837873f
+    - fixed: 19ccebafb7663c422c714e0c67fa4775abf91c43
+  versions:
+  - FILE5_29
+  - FILE5_30
+  ecosystem_specific:
+    severity: MEDIUM

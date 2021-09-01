@@ -1,7 +1,4 @@
 id: OSV-2021-40
-package:
-  name: clamav
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in rijndaelDecrypt
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29454
@@ -11,25 +8,26 @@ details: |
   rijndaelDecrypt
   aes_256cbc_decrypt
   check_user_password
-affects:
+modified: '2021-06-21T06:56:25.373043Z'
+published: '2021-01-11T00:00:20.242219Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29454
+affected:
+- package:
+    name: clamav
+    ecosystem: OSS-Fuzz
   ranges:
   - type: GIT
     repo: https://github.com/Cisco-Talos/clamav-devel.git
-    introduced: 9b9999d7785ece58c9f4703542e6d877d21910c4
-    fixed: 7a70a03ba01d657296be61f0ec98ca6990f51578
-  - type: GIT
-    repo: https://github.com/Cisco-Talos/clamav-devel.git
-    introduced: 9b9999d7785ece58c9f4703542e6d877d21910c4
-    fixed: b2337b87634f0cc41f4b789150ba1c6d2f22a51c
+    events:
+    - introduced: 9b9999d7785ece58c9f4703542e6d877d21910c4
+    - fixed: 7a70a03ba01d657296be61f0ec98ca6990f51578
+    - fixed: b2337b87634f0cc41f4b789150ba1c6d2f22a51c
   versions:
   - clamav-0.103.0
   - clamav-0.103.0-rc
   - clamav-0.103.0-rc2
   - clamav-0.103.1
-modified: '2021-06-21T06:56:25.373043Z'
-published: '2021-01-11T00:00:20.242219Z'
-ecosystem_specific:
-  severity: MEDIUM
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29454
+  ecosystem_specific:
+    severity: MEDIUM

@@ -1,7 +1,4 @@
 id: OSV-2020-604
-package:
-  name: libsass
-  ecosystem: OSS-Fuzz
 summary: UNKNOWN READ in Sass::Parser::parseCompoundSelector
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15904
@@ -11,18 +8,22 @@ details: |
   Sass::Parser::parseCompoundSelector
   Sass::Parser::parseComplexSelector
   Sass::Parser::parseSelectorList
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/sass/libsass.git
-    introduced: f964dcddd76f4c1f00da06bfd905be790618c33b
-    fixed: 994695c669085058c4a500f295a0531893eff77a
-  versions:
-  - 3.6.2
 modified: '2021-06-21T06:56:24.542598Z'
 published: '2020-07-01T00:00:19.975718Z'
-ecosystem_specific:
-  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15904
+affected:
+- package:
+    name: libsass
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/sass/libsass.git
+    events:
+    - introduced: f964dcddd76f4c1f00da06bfd905be790618c33b
+    - fixed: 994695c669085058c4a500f295a0531893eff77a
+  versions:
+  - 3.6.2
+  ecosystem_specific:
+    severity: MEDIUM

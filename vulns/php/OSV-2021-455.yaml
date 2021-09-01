@@ -1,7 +1,4 @@
 id: OSV-2021-455
-package:
-  name: php
-  ecosystem: OSS-Fuzz
 summary: Heap-use-after-free in zend_hash_iterator_pos_ex
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31423
@@ -11,12 +8,21 @@ details: |
   zend_hash_iterator_pos_ex
   ZEND_FE_FETCH_RW_SPEC_VAR_HANDLER
   fuzzer_execute_ex
-affects:
+modified: '2021-06-21T06:56:21.031896Z'
+published: '2021-02-28T00:01:13.121524Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31423
+affected:
+- package:
+    name: php
+    ecosystem: OSS-Fuzz
   ranges:
   - type: GIT
     repo: https://github.com/php/php-src.git
-    introduced: 1902f730ee2bda60552f34c0643e2d7b47e4fb64
-    fixed: 5875bf754ed4fc64a6f0b7d62734d2a816c51017
+    events:
+    - introduced: 1902f730ee2bda60552f34c0643e2d7b47e4fb64
+    - fixed: 5875bf754ed4fc64a6f0b7d62734d2a816c51017
   versions:
   - php-8.0.0
   - php-8.0.0RC2
@@ -32,10 +38,5 @@ affects:
   - php-8.0.2RC1
   - php-8.0.3
   - php-8.0.3RC1
-modified: '2021-06-21T06:56:21.031896Z'
-published: '2021-02-28T00:01:13.121524Z'
-ecosystem_specific:
-  severity: HIGH
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31423
+  ecosystem_specific:
+    severity: HIGH

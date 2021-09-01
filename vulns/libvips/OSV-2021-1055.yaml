@@ -1,7 +1,4 @@
 id: OSV-2021-1055
-package:
-  name: libvips
-  ecosystem: OSS-Fuzz
 summary: UNKNOWN WRITE in jxl::ModularFrameDecoder::DecodeGroup
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=36456
@@ -11,22 +8,26 @@ details: |
   jxl::ModularFrameDecoder::DecodeGroup
   jxl::FrameDecoder::ProcessACGroup
   jxl::ThreadPool::RunCallState<jxl::FrameDecoder::ProcessSections
-affects:
+modified: '2021-07-25T00:00:32.621901Z'
+published: '2021-07-25T00:00:32.621715Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=36456
+affected:
+- package:
+    name: libvips
+    ecosystem: OSS-Fuzz
   ranges:
   - type: GIT
     repo: https://github.com/libvips/libvips
-    introduced: 813a5f84cf94c9e7c0fe9b043c545500aef11411
-    fixed: 86466a9b9ab37c0f469d84797d477260aa669cfa
+    events:
+    - introduced: 813a5f84cf94c9e7c0fe9b043c545500aef11411
+    - fixed: 86466a9b9ab37c0f469d84797d477260aa669cfa
   versions:
   - v8.11
   - v8.11.0
   - v8.11.0-rc1
   - v8.11.1
   - v8.11.2
-modified: '2021-07-25T00:00:32.621901Z'
-published: '2021-07-25T00:00:32.621715Z'
-ecosystem_specific:
-  severity: HIGH
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=36456
+  ecosystem_specific:
+    severity: HIGH

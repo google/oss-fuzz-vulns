@@ -1,7 +1,4 @@
 id: OSV-2018-459
-package:
-  name: mupdf
-  ecosystem: OSS-Fuzz
 summary: Use-of-uninitialized-value in lex_white
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=5632
@@ -11,19 +8,22 @@ details: |
   lex_white
   pdf_lex
   pdf_process_stream
-affects:
-  ranges:
-  - type: GIT
-    repo: git://git.ghostscript.com/mupdf.git
-    introduced: 11ee2bcf4d23bcb443d6b39caa2ac62fdd9920b2
-    fixed: a6cbde55a4bc8095556d5b0e134e51d7ac946805
 modified: '2021-06-23T06:24:59.223248Z'
 published: '2021-01-15T00:01:26.113650Z'
-ecosystem_specific:
-  severity: MEDIUM
-database_specific:
-  fixed_range: 4dcc6affe04368461310a21238f7e1871a752a05:a6cbde55a4bc8095556d5b0e134e51d7ac946805
-  introduced_range: 9086386263154498dcb18c96f1e1630903b21a3c:d9bc8c6f7fb2e3ec7035bebaaee0edcf59287705
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=5632
+affected:
+- package:
+    name: mupdf
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: git://git.ghostscript.com/mupdf.git
+    events:
+    - introduced: 11ee2bcf4d23bcb443d6b39caa2ac62fdd9920b2
+    - fixed: a6cbde55a4bc8095556d5b0e134e51d7ac946805
+  ecosystem_specific:
+    introduced_range: 9086386263154498dcb18c96f1e1630903b21a3c:d9bc8c6f7fb2e3ec7035bebaaee0edcf59287705
+    fixed_range: 4dcc6affe04368461310a21238f7e1871a752a05:a6cbde55a4bc8095556d5b0e134e51d7ac946805
+    severity: MEDIUM

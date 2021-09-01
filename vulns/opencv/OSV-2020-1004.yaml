@@ -1,7 +1,4 @@
 id: OSV-2020-1004
-package:
-  name: opencv
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in gtTileSeparate
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13280
@@ -11,21 +8,24 @@ details: |
   gtTileSeparate
   TIFFReadRGBATileExt
   cv::TiffDecoder::readData
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/opencv/opencv.git
-    introduced: 6bcf0b5519c190826cf0f21efd87cbe256eabc48
-    fixed: c9fc27b33731a6dcebf531ff15a0658e4c679482
-  versions:
-  - 4.0.1
-  - 4.1.0-openvino
 modified: '2021-06-23T06:25:08.758637Z'
 published: '2020-07-22T21:49:39.484722Z'
-ecosystem_specific:
-  severity: MEDIUM
-database_specific:
-  introduced_range: unknown:6bcf0b5519c190826cf0f21efd87cbe256eabc48
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13280
+affected:
+- package:
+    name: opencv
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/opencv/opencv.git
+    events:
+    - introduced: 6bcf0b5519c190826cf0f21efd87cbe256eabc48
+    - fixed: c9fc27b33731a6dcebf531ff15a0658e4c679482
+  versions:
+  - 4.0.1
+  - 4.1.0-openvino
+  ecosystem_specific:
+    introduced_range: unknown:6bcf0b5519c190826cf0f21efd87cbe256eabc48
+    severity: MEDIUM

@@ -1,7 +1,4 @@
 id: OSV-2020-87
-package:
-  name: gdal
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in Fax3Decode2D
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21044
@@ -11,18 +8,21 @@ details: |
   Fax3Decode2D
   TIFFReadEncodedStrip
   GTiffDataset::ReadStrile
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/OSGeo/gdal
-    introduced: d528bab40586f4b6ed7e03f3ada2ab6861edfaca
-    fixed: 0bfd1bcb38b3fe321fd15f3c485cfb91537faf0e
 modified: '2021-06-23T06:30:44.884433Z'
 published: '2020-06-24T01:51:13.476121Z'
-ecosystem_specific:
-  severity: HIGH
-database_specific:
-  fixed_range: 04a8d012807a2d2dd66085e68b167e3ade164348:0bfd1bcb38b3fe321fd15f3c485cfb91537faf0e
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21044
+affected:
+- package:
+    name: gdal
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/OSGeo/gdal
+    events:
+    - introduced: d528bab40586f4b6ed7e03f3ada2ab6861edfaca
+    - fixed: 0bfd1bcb38b3fe321fd15f3c485cfb91537faf0e
+  ecosystem_specific:
+    severity: HIGH
+    fixed_range: 04a8d012807a2d2dd66085e68b167e3ade164348:0bfd1bcb38b3fe321fd15f3c485cfb91537faf0e

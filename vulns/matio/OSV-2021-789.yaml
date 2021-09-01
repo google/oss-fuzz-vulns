@@ -1,7 +1,4 @@
 id: OSV-2021-789
-package:
-  name: matio
-  ecosystem: OSS-Fuzz
 summary: UNKNOWN READ in [heap]
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34575
@@ -9,21 +6,24 @@ details: |
   Crash type: UNKNOWN READ
   Crash state:
   [heap]
-affects:
-  ranges:
-  - type: GIT
-    repo: git://git.code.sf.net/p/matio/matio
-    introduced: 3ebab87573973ac1f9148c83162a6da14dc3e130
-    fixed: b89ed176f27c71657587d231794bee09d0461d08
-  versions:
-  - v1.5.20
-  - v1.5.21
 modified: '2021-05-24T00:00:10.431348Z'
 published: '2021-05-24T00:00:10.431079Z'
-ecosystem_specific:
-  severity: MEDIUM
-database_specific:
-  introduced_range: 0ce6d1e329a8949383ea5f28b32f096acc2f60d9:8195e5d3e3c65ff6bcc0aae31a4a53eb609c4d7e
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34575
+affected:
+- package:
+    name: matio
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: git://git.code.sf.net/p/matio/matio
+    events:
+    - introduced: 3ebab87573973ac1f9148c83162a6da14dc3e130
+    - fixed: b89ed176f27c71657587d231794bee09d0461d08
+  versions:
+  - v1.5.20
+  - v1.5.21
+  ecosystem_specific:
+    severity: MEDIUM
+    introduced_range: 0ce6d1e329a8949383ea5f28b32f096acc2f60d9:8195e5d3e3c65ff6bcc0aae31a4a53eb609c4d7e

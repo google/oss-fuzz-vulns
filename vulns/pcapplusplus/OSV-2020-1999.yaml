@@ -1,7 +1,4 @@
 id: OSV-2020-1999
-package:
-  name: pcapplusplus
-  ecosystem: OSS-Fuzz
 summary: Bad-cast to pcpp::IDnsResource from invalid vptr
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26196
@@ -11,18 +8,21 @@ details: |
   Bad-cast to pcpp::IDnsResource from invalid vptr
   pcpp::DnsLayer::parseResources
   pcpp::DnsLayer::DnsLayer
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/seladb/PcapPlusPlus
-    introduced: ea14ecba2f430cfd09b1da48611a78841c276d69
-    fixed: f30de1387acc1f823e0d4779e5565f4cc32dd4a6
 modified: '2021-06-23T06:28:21.842261Z'
 published: '2020-10-09T00:00:05.287047Z'
-ecosystem_specific:
-  severity: HIGH
-database_specific:
-  fixed_range: d79b289adaa126000bc32d355d3d27d77f4e5516:f30de1387acc1f823e0d4779e5565f4cc32dd4a6
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26196
+affected:
+- package:
+    name: pcapplusplus
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/seladb/PcapPlusPlus
+    events:
+    - introduced: ea14ecba2f430cfd09b1da48611a78841c276d69
+    - fixed: f30de1387acc1f823e0d4779e5565f4cc32dd4a6
+  ecosystem_specific:
+    fixed_range: d79b289adaa126000bc32d355d3d27d77f4e5516:f30de1387acc1f823e0d4779e5565f4cc32dd4a6
+    severity: HIGH

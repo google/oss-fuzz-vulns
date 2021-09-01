@@ -1,7 +1,4 @@
 id: OSV-2020-2056
-package:
-  name: php
-  ecosystem: OSS-Fuzz
 summary: Heap-use-after-free in destroy_op_array
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24567
@@ -11,18 +8,21 @@ details: |
   destroy_op_array
   fuzzer_do_request
   fuzzer_do_request_from_buffer
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/php/php-src.git
-    introduced: 9bf119832dbf625174794834c71b1e793450d87f
-    fixed: ec22e5aa3841770259161ff260da19b781af536e
 modified: '2021-06-23T06:25:30.834744Z'
 published: '2020-10-13T00:00:44.006560Z'
-ecosystem_specific:
-  severity: HIGH
-database_specific:
-  fixed_range: 2dbb4ecfa1d7e32ccce6591158391a62cf4cbe2f:ec22e5aa3841770259161ff260da19b781af536e
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24567
+affected:
+- package:
+    name: php
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/php/php-src.git
+    events:
+    - introduced: 9bf119832dbf625174794834c71b1e793450d87f
+    - fixed: ec22e5aa3841770259161ff260da19b781af536e
+  ecosystem_specific:
+    fixed_range: 2dbb4ecfa1d7e32ccce6591158391a62cf4cbe2f:ec22e5aa3841770259161ff260da19b781af536e
+    severity: HIGH

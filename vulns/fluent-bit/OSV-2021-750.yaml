@@ -1,7 +1,4 @@
 id: OSV-2021-750
-package:
-  name: fluent-bit
-  ecosystem: OSS-Fuzz
 summary: Heap-double-free in flb_free
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34116
@@ -11,20 +8,22 @@ details: |
   flb_free
   flb_parser_json_do
   flb_parser_do
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/fluent/fluent-bit/
-    introduced: 22346a74c07ceb90296be872be2d53eb92252a54
-    fixed: 0111149ce44b28cb6b5af710009bd3a2c14d8eb9
-  - type: GIT
-    repo: https://github.com/fluent/fluent-bit/
-    introduced: 9b4d9ee0f9d42383bad593b05b95f25e8b294c71
-    fixed: fd6cf54de43003220ab8990f0fedc966c100cb66
 modified: '2021-06-21T06:56:24.409848Z'
 published: '2021-05-11T00:01:09.150660Z'
-ecosystem_specific:
-  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34116
+affected:
+- package:
+    name: fluent-bit
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/fluent/fluent-bit/
+    events:
+    - introduced: 22346a74c07ceb90296be872be2d53eb92252a54
+    - fixed: 0111149ce44b28cb6b5af710009bd3a2c14d8eb9
+    - introduced: 9b4d9ee0f9d42383bad593b05b95f25e8b294c71
+    - fixed: fd6cf54de43003220ab8990f0fedc966c100cb66
+  ecosystem_specific:
+    severity: HIGH

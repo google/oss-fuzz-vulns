@@ -1,7 +1,4 @@
 id: OSV-2020-1245
-package:
-  name: libressl
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in c2i_ASN1_INTEGER
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14142
@@ -11,18 +8,21 @@ details: |
   c2i_ASN1_INTEGER
   asn1_ex_c2i
   asn1_d2i_ex_primitive
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/libressl-portable/portable.git
-    introduced: 4ea2a01a0d2cc889e95316f51c7a36f8f158df44
-    fixed: 2f7827344a0234320c7ad8d2fc2418e9d8a586c9
 modified: '2021-06-23T06:28:23.542142Z'
 published: '2020-07-22T21:49:59.889244Z'
-ecosystem_specific:
-  severity: MEDIUM
-database_specific:
-  introduced_range: unknown:4ea2a01a0d2cc889e95316f51c7a36f8f158df44
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14142
+affected:
+- package:
+    name: libressl
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/libressl-portable/portable.git
+    events:
+    - introduced: 4ea2a01a0d2cc889e95316f51c7a36f8f158df44
+    - fixed: 2f7827344a0234320c7ad8d2fc2418e9d8a586c9
+  ecosystem_specific:
+    severity: MEDIUM
+    introduced_range: unknown:4ea2a01a0d2cc889e95316f51c7a36f8f158df44

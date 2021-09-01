@@ -1,7 +1,4 @@
 id: OSV-2020-1873
-package:
-  name: ghostscript
-  ecosystem: OSS-Fuzz
 summary: Use-of-uninitialized-value in zcheck_r6_password
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23440
@@ -11,23 +8,26 @@ details: |
   zcheck_r6_password
   interp
   gs_call_interp
-affects:
+modified: '2021-06-23T06:25:40.370148Z'
+published: '2020-09-29T00:00:20.291651Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23440
+affected:
+- package:
+    name: ghostscript
+    ecosystem: OSS-Fuzz
   ranges:
   - type: GIT
     repo: git://git.ghostscript.com/ghostpdl.git
-    introduced: 668917a10e7eada030f7d2dddec9f579fddeed3d
-    fixed: 0339cbecea80d8a835b316b56d1c75a6fb850e52
+    events:
+    - introduced: 668917a10e7eada030f7d2dddec9f579fddeed3d
+    - fixed: 0339cbecea80d8a835b316b56d1c75a6fb850e52
   versions:
   - ghostpdl-9.52-test-base-3
   - ghostpdl-9.52-test-base-4
   - ghostpdl-9.52-test-base-5
   - ghostpdl-9.52-test-base-6
-modified: '2021-06-23T06:25:40.370148Z'
-published: '2020-09-29T00:00:20.291651Z'
-ecosystem_specific:
-  severity: MEDIUM
-database_specific:
-  introduced_range: unknown:668917a10e7eada030f7d2dddec9f579fddeed3d
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23440
+  ecosystem_specific:
+    introduced_range: unknown:668917a10e7eada030f7d2dddec9f579fddeed3d
+    severity: MEDIUM

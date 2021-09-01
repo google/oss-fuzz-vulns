@@ -1,7 +1,4 @@
 id: OSV-2021-22
-package:
-  name: c-blosc2
-  ecosystem: OSS-Fuzz
 summary: UNKNOWN READ in frame_get_metalayers
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29280
@@ -11,16 +8,20 @@ details: |
   frame_get_metalayers
   blosc2_frame_to_schunk
   blosc2_schunk_open_sframe
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/Blosc/c-blosc2.git
-    introduced: 4d78953db484839708091c610951678ab4b2b555
-    fixed: c473b21cff5e1a459b4467f18bf7414114f848fd
 modified: '2021-06-21T06:56:26.024072Z'
 published: '2021-01-07T00:00:43.126785Z'
-ecosystem_specific:
-  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29280
+affected:
+- package:
+    name: c-blosc2
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/Blosc/c-blosc2.git
+    events:
+    - introduced: 4d78953db484839708091c610951678ab4b2b555
+    - fixed: c473b21cff5e1a459b4467f18bf7414114f848fd
+  ecosystem_specific:
+    severity: MEDIUM

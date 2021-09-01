@@ -1,7 +1,4 @@
 id: OSV-2021-1011
-package:
-  name: libjxl
-  ecosystem: OSS-Fuzz
 summary: Use-of-uninitialized-value in jxl::N_AVX2::AddNoise
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=36158
@@ -11,16 +8,20 @@ details: |
   jxl::N_AVX2::AddNoise
   jxl::FinalizeImageRect
   jxl::ThreadPool::RunCallState<jxl::FinalizeFrameDecoding
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/libjxl/libjxl.git
-    introduced: 89889a1fb5970434a51f41bfaa06fe2553617ca9
-    fixed: 98231abe99b322fe286ea80ab2c066528540a4c5
 modified: '2021-07-15T00:01:15.197329Z'
 published: '2021-07-15T00:01:15.197122Z'
-ecosystem_specific:
-  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=36158
+affected:
+- package:
+    name: libjxl
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/libjxl/libjxl.git
+    events:
+    - introduced: 89889a1fb5970434a51f41bfaa06fe2553617ca9
+    - fixed: 98231abe99b322fe286ea80ab2c066528540a4c5
+  ecosystem_specific:
+    severity: MEDIUM

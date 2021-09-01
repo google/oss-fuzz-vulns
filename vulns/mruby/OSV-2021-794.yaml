@@ -1,7 +1,4 @@
 id: OSV-2021-794
-package:
-  name: mruby
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in mrb_format_float
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34652
@@ -11,16 +8,20 @@ details: |
   mrb_format_float
   fmt_float
   mrb_str_format
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/mruby/mruby
-    introduced: 5c7fe225a6d675f3e213f8792f116035a35c63a4
-    fixed: 063b49ab8e6a10212c7f88e5b114b90fe59296f7
 modified: '2021-06-21T06:56:25.570319Z'
 published: '2021-05-25T23:49:50.285850Z'
-ecosystem_specific:
-  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34652
+affected:
+- package:
+    name: mruby
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/mruby/mruby
+    events:
+    - introduced: 5c7fe225a6d675f3e213f8792f116035a35c63a4
+    - fixed: 063b49ab8e6a10212c7f88e5b114b90fe59296f7
+  ecosystem_specific:
+    severity: HIGH

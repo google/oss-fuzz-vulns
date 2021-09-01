@@ -1,7 +1,4 @@
 id: OSV-2021-602
-package:
-  name: freetype2
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in read_paint
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=32913
@@ -11,16 +8,20 @@ details: |
   read_paint
   tt_face_get_paint
   FT_Get_Paint
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/freetype/freetype2-testing.git
-    introduced: 9927e6ec5a322fcaac8e3a649b152fca2c88cf93
-    fixed: 9927e6ec5a322fcaac8e3a649b152fca2c88cf93
 modified: '2021-06-21T06:56:21.680287Z'
 published: '2021-04-06T00:00:07.623862Z'
-ecosystem_specific:
-  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=32913
+affected:
+- package:
+    name: freetype2
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/freetype/freetype2-testing.git
+    events:
+    - introduced: 9927e6ec5a322fcaac8e3a649b152fca2c88cf93
+    - fixed: 9927e6ec5a322fcaac8e3a649b152fca2c88cf93
+  ecosystem_specific:
+    severity: MEDIUM

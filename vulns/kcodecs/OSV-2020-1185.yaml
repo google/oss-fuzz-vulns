@@ -1,7 +1,4 @@
 id: OSV-2020-1185
-package:
-  name: kcodecs
-  ecosystem: OSS-Fuzz
 summary: Global-buffer-overflow in kencodingprober::nsCodingStateMachine::NextState
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=12919
@@ -11,16 +8,20 @@ details: |
   kencodingprober::nsCodingStateMachine::NextState
   kencodingprober::nsEscCharSetProber::HandleData
   kencodingprober::nsUniversalDetector::HandleData
-affects:
-  ranges:
-  - type: GIT
-    repo: https://invent.kde.org/frameworks/kcodecs.git
-    introduced: c7b472a2ec96f0c94a64aaa3356d46e8938c1529
-    fixed: 9d3fdbed7bf161d19a9440f2d33ada1e93082332
 modified: '2021-06-23T06:28:44.059045Z'
 published: '2020-07-22T21:49:54.464513Z'
-database_specific:
-  introduced_range: unknown:c7b472a2ec96f0c94a64aaa3356d46e8938c1529
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=12919
+affected:
+- package:
+    name: kcodecs
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://invent.kde.org/frameworks/kcodecs.git
+    events:
+    - introduced: c7b472a2ec96f0c94a64aaa3356d46e8938c1529
+    - fixed: 9d3fdbed7bf161d19a9440f2d33ada1e93082332
+  ecosystem_specific:
+    introduced_range: unknown:c7b472a2ec96f0c94a64aaa3356d46e8938c1529

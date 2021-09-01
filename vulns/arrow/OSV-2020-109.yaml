@@ -1,7 +1,4 @@
 id: OSV-2020-109
-package:
-  name: arrow
-  ecosystem: OSS-Fuzz
 summary: UNKNOWN READ in arrow::BufferBuilder::Append
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20721
@@ -11,16 +8,20 @@ details: |
   arrow::BufferBuilder::Append
   arrow::BaseBinaryBuilder<arrow::BinaryType>::Append
   parquet::ArrowBinaryHelper::Append
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/apache/arrow.git
-    introduced: 431fdbfbc0fb4bb16c4a89298404ad16784db2a0
-    fixed: d2ab289294f5eaa175e6bc4ab5fb74b5ea013f6e
 modified: '2021-06-21T06:56:19.583848Z'
 published: '2020-06-24T01:51:14.472718Z'
-ecosystem_specific:
-  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20721
+affected:
+- package:
+    name: arrow
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/apache/arrow.git
+    events:
+    - introduced: 431fdbfbc0fb4bb16c4a89298404ad16784db2a0
+    - fixed: d2ab289294f5eaa175e6bc4ab5fb74b5ea013f6e
+  ecosystem_specific:
+    severity: MEDIUM

@@ -1,7 +1,4 @@
 id: OSV-2020-366
-package:
-  name: opensc
-  ecosystem: OSS-Fuzz
 summary: UNKNOWN READ in bebytes2ushort
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=19039
@@ -11,16 +8,20 @@ details: |
   bebytes2ushort
   coolkey_v0_get_attribute_len
   coolkey_v0_get_attribute_record_len
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/OpenSC/OpenSC
-    introduced: 7a1e42e1352201127d1a97b6cb5f41e48cace0f5
-    fixed: 249e9281761fc861bab93f76baf6cdcefb1774ee
 modified: '2021-06-21T06:56:27.041532Z'
 published: '2020-07-01T00:00:05.421205Z'
-ecosystem_specific:
-  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=19039
+affected:
+- package:
+    name: opensc
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/OpenSC/OpenSC
+    events:
+    - introduced: 7a1e42e1352201127d1a97b6cb5f41e48cace0f5
+    - fixed: 249e9281761fc861bab93f76baf6cdcefb1774ee
+  ecosystem_specific:
+    severity: MEDIUM

@@ -1,7 +1,4 @@
 id: OSV-2018-125
-package:
-  name: libarchive
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in read_bits_16
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11196
@@ -11,16 +8,20 @@ details: |
   read_bits_16
   decode_number
   do_uncompress_block
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/libarchive/libarchive.git
-    introduced: 58167a9af435618c44e2faef5af5a86af51c003a
-    fixed: 4bc5892128a042780f167ac35aa72f63c426f3b7
 modified: '2021-06-21T06:56:26.680937Z'
 published: '2021-01-13T00:00:56.185471Z'
-ecosystem_specific:
-  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11196
+affected:
+- package:
+    name: libarchive
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/libarchive/libarchive.git
+    events:
+    - introduced: 58167a9af435618c44e2faef5af5a86af51c003a
+    - fixed: 4bc5892128a042780f167ac35aa72f63c426f3b7
+  ecosystem_specific:
+    severity: MEDIUM

@@ -1,7 +1,4 @@
 id: OSV-2020-1021
-package:
-  name: libexif
-  ecosystem: OSS-Fuzz
 summary: UNKNOWN READ in exif_mnote_data_olympus_load
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15312
@@ -11,19 +8,22 @@ details: |
   exif_mnote_data_olympus_load
   exif_data_load_data
   exif_loader_get_data
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/libexif/libexif
-    introduced: 3f35f94a93081ced2bc3c9112f820f5fdb200af0
-    fixed: 8197bf4a655197c49c0f57ace91d87c4be810e6a
 modified: '2021-06-23T06:29:25.775510Z'
 published: '2020-07-22T21:49:40.403928Z'
-ecosystem_specific:
-  severity: MEDIUM
-database_specific:
-  fixed_range: a0c04d9cb6ab0c41a6458def9f892754e84160a0:8197bf4a655197c49c0f57ace91d87c4be810e6a
-  introduced_range: unknown:3f35f94a93081ced2bc3c9112f820f5fdb200af0
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15312
+affected:
+- package:
+    name: libexif
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/libexif/libexif
+    events:
+    - introduced: 3f35f94a93081ced2bc3c9112f820f5fdb200af0
+    - fixed: 8197bf4a655197c49c0f57ace91d87c4be810e6a
+  ecosystem_specific:
+    fixed_range: a0c04d9cb6ab0c41a6458def9f892754e84160a0:8197bf4a655197c49c0f57ace91d87c4be810e6a
+    introduced_range: unknown:3f35f94a93081ced2bc3c9112f820f5fdb200af0
+    severity: MEDIUM

@@ -1,7 +1,4 @@
 id: OSV-2020-669
-package:
-  name: glib
-  ecosystem: OSS-Fuzz
 summary: Use-of-uninitialized-value in g_date_time_get_week_number
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=17648
@@ -11,24 +8,25 @@ details: |
   g_date_time_get_week_number
   g_date_time_new_week
   parse_isoNUMBER_date
-affects:
+modified: '2021-06-21T06:56:20.155180Z'
+published: '2020-07-01T00:00:23.657942Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=17648
+affected:
+- package:
+    name: glib
+    ecosystem: OSS-Fuzz
   ranges:
   - type: GIT
     repo: https://gitlab.gnome.org/GNOME/glib
-    introduced: a3f22f0c2c4265d77b1f8d8dd9006c82b3143367
-    fixed: f4dd85628af916b58aaead3e8dd25d14d1a7cb95
-  - type: GIT
-    repo: https://gitlab.gnome.org/GNOME/glib
-    introduced: a3f22f0c2c4265d77b1f8d8dd9006c82b3143367
-    fixed: 7b393fce314c4b303c89dd1ea9c0dbaec7cf43b4
+    events:
+    - introduced: a3f22f0c2c4265d77b1f8d8dd9006c82b3143367
+    - fixed: f4dd85628af916b58aaead3e8dd25d14d1a7cb95
+    - fixed: 7b393fce314c4b303c89dd1ea9c0dbaec7cf43b4
   versions:
   - 2.61.2
   - 2.61.3
   - 2.62.0
-modified: '2021-06-21T06:56:20.155180Z'
-published: '2020-07-01T00:00:23.657942Z'
-ecosystem_specific:
-  severity: MEDIUM
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=17648
+  ecosystem_specific:
+    severity: MEDIUM

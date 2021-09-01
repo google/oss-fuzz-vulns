@@ -1,7 +1,4 @@
 id: OSV-2020-364
-package:
-  name: libhevc
-  ecosystem: OSS-Fuzz
 summary: Stack-use-after-return in ihevcd_process_thread
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=17601
@@ -10,19 +7,23 @@ details: |
   Crash state:
   ihevcd_process_thread
   clone
-affects:
+modified: '2021-03-09T04:49:05.846944Z'
+published: '2020-07-01T00:00:05.352256Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=17601
+affected:
+- package:
+    name: libhevc
+    ecosystem: OSS-Fuzz
   ranges:
   - type: GIT
     repo: https://android.googlesource.com/platform/external/libhevc
-    introduced: 67e394c9f3743b8ce41f11736136319efcef6d3d
-    fixed: 4d36db275bb4d0abc410415f6d8f5af4bc179102
+    events:
+    - introduced: 67e394c9f3743b8ce41f11736136319efcef6d3d
+    - fixed: 4d36db275bb4d0abc410415f6d8f5af4bc179102
   versions:
   - android-mainline-10.0.0_r11
   - android-mainline-10.0.0_r6
   - android-mainline-10.0.0_r8
   - platform-tools-29.0.5
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=17601
-modified: '2021-03-09T04:49:05.846944Z'
-published: '2020-07-01T00:00:05.352256Z'

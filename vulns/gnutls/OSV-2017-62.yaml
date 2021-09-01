@@ -1,7 +1,4 @@
 id: OSV-2017-62
-package:
-  name: gnutls
-  ecosystem: OSS-Fuzz
 summary: Use-of-uninitialized-value in gnutls_memset
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=1493
@@ -11,18 +8,21 @@ details: |
   gnutls_memset
   deinit_keys
   _gnutls_handshake_internal_state_clear
-affects:
-  ranges:
-  - type: GIT
-    repo: https://gitlab.com/gnutls/gnutls.git
-    introduced: d246f61b04836c6040fff7936de551ef92529971
-    fixed: 0081a51a3df7ec30da22402fe878be61790ab721
 modified: '2021-06-23T06:25:56.543877Z'
 published: '2021-01-13T21:56:30.798250Z'
-ecosystem_specific:
-  severity: MEDIUM
-database_specific:
-  fixed_range: 73cbbfc551e814f7598e02924f0728e3abff1818:0081a51a3df7ec30da22402fe878be61790ab721
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=1493
+affected:
+- package:
+    name: gnutls
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://gitlab.com/gnutls/gnutls.git
+    events:
+    - introduced: d246f61b04836c6040fff7936de551ef92529971
+    - fixed: 0081a51a3df7ec30da22402fe878be61790ab721
+  ecosystem_specific:
+    fixed_range: 73cbbfc551e814f7598e02924f0728e3abff1818:0081a51a3df7ec30da22402fe878be61790ab721
+    severity: MEDIUM

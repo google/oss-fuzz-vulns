@@ -1,7 +1,4 @@
 id: OSV-2020-762
-package:
-  name: c-blosc
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in blosclz_compress
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23794
@@ -11,16 +8,20 @@ details: |
   blosclz_compress
   blosc_c
   do_job
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/Blosc/c-blosc.git
-    introduced: 01df770ec847013b52d70b3a41490a5b8b2cddbd
-    fixed: e3fdd3e506a23ec66d9f3fe2fe346e4a03b1787a
 modified: '2021-06-21T06:56:22.417850Z'
 published: '2020-07-09T00:00:22.344814Z'
-ecosystem_specific:
-  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23794
+affected:
+- package:
+    name: c-blosc
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/Blosc/c-blosc.git
+    events:
+    - introduced: 01df770ec847013b52d70b3a41490a5b8b2cddbd
+    - fixed: e3fdd3e506a23ec66d9f3fe2fe346e4a03b1787a
+  ecosystem_specific:
+    severity: HIGH

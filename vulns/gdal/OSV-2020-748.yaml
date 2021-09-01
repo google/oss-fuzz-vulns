@@ -1,7 +1,4 @@
 id: OSV-2020-748
-package:
-  name: gdal
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in OGR_RawField_IsUnset
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23705
@@ -11,16 +8,20 @@ details: |
   OGR_RawField_IsUnset
   OGRFeature::IsFieldSetAndNotNull
   OGRFeature::~OGRFeature
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/OSGeo/gdal
-    introduced: 39111a0fe9b174302f67102bdd849e8290472d70
-    fixed: 6e896f4a3affa9578993487753b751af944bfda4
 modified: '2021-06-21T06:56:27.528245Z'
 published: '2020-07-04T00:00:05.381228Z'
-ecosystem_specific:
-  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23705
+affected:
+- package:
+    name: gdal
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/OSGeo/gdal
+    events:
+    - introduced: 39111a0fe9b174302f67102bdd849e8290472d70
+    - fixed: 6e896f4a3affa9578993487753b751af944bfda4
+  ecosystem_specific:
+    severity: MEDIUM

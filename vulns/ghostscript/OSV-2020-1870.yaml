@@ -1,7 +1,4 @@
 id: OSV-2020-1870
-package:
-  name: ghostscript
-  ecosystem: OSS-Fuzz
 summary: Use-of-uninitialized-value in get_fapi_glyph_data
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22752
@@ -11,23 +8,26 @@ details: |
   get_fapi_glyph_data
   load_truetype_glyph
   TT_Load_Glyph
-affects:
+modified: '2021-06-23T06:25:40.375801Z'
+published: '2020-09-29T00:00:14.014972Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22752
+affected:
+- package:
+    name: ghostscript
+    ecosystem: OSS-Fuzz
   ranges:
   - type: GIT
     repo: git://git.ghostscript.com/ghostpdl.git
-    introduced: 668917a10e7eada030f7d2dddec9f579fddeed3d
-    fixed: 0ae681ab1fd3475995418d00da1ccfe374f069cc
+    events:
+    - introduced: 668917a10e7eada030f7d2dddec9f579fddeed3d
+    - fixed: 0ae681ab1fd3475995418d00da1ccfe374f069cc
   versions:
   - ghostpdl-9.52-test-base-3
   - ghostpdl-9.52-test-base-4
   - ghostpdl-9.52-test-base-5
   - ghostpdl-9.52-test-base-6
-modified: '2021-06-23T06:25:40.375801Z'
-published: '2020-09-29T00:00:14.014972Z'
-ecosystem_specific:
-  severity: MEDIUM
-database_specific:
-  introduced_range: unknown:668917a10e7eada030f7d2dddec9f579fddeed3d
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22752
+  ecosystem_specific:
+    introduced_range: unknown:668917a10e7eada030f7d2dddec9f579fddeed3d
+    severity: MEDIUM

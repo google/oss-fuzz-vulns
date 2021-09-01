@@ -1,7 +1,4 @@
 id: OSV-2020-57
-package:
-  name: openthread
-  ecosystem: OSS-Fuzz
 summary: Stack-buffer-overflow in ot::NetworkData::PrefixTlv::GetPrefixLength
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23267
@@ -11,16 +8,20 @@ details: |
   ot::NetworkData::PrefixTlv::GetPrefixLength
   ot::NetworkData::NetworkData::FindPrefix
   ot::NetworkData::Leader::Validate
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/openthread/openthread
-    introduced: 4c7ec29e6ddbfab5a062ea555952538df53767fc
-    fixed: 2c258a3f3e0a09315fe41ea2c32e8b0ecab8176b
 modified: '2021-06-21T06:56:25.004741Z'
 published: '2020-06-24T01:51:12.118424Z'
-ecosystem_specific:
-  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23267
+affected:
+- package:
+    name: openthread
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/openthread/openthread
+    events:
+    - introduced: 4c7ec29e6ddbfab5a062ea555952538df53767fc
+    - fixed: 2c258a3f3e0a09315fe41ea2c32e8b0ecab8176b
+  ecosystem_specific:
+    severity: MEDIUM

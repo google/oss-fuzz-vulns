@@ -1,7 +1,4 @@
 id: OSV-2021-536
-package:
-  name: selinux
-  ecosystem: OSS-Fuzz
 summary: Heap-use-after-free in cil_reset_classpermission
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=32177
@@ -11,12 +8,21 @@ details: |
   cil_reset_classpermission
   cil_reset_classperms_set
   cil_reset_classperms_list
-affects:
+modified: '2021-06-21T06:56:27.701577Z'
+published: '2021-03-19T00:01:12.719776Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=32177
+affected:
+- package:
+    name: selinux
+    ecosystem: OSS-Fuzz
   ranges:
   - type: GIT
     repo: https://github.com/SELinuxProject/selinux
-    introduced: 0451adebdf153eee1f69914141311114a0130982
-    fixed: c49a8ea09501ad66e799ea41b8154b6770fec2c8
+    events:
+    - introduced: 0451adebdf153eee1f69914141311114a0130982
+    - fixed: c49a8ea09501ad66e799ea41b8154b6770fec2c8
   versions:
   - '3.2'
   - 3.2-rc3
@@ -46,10 +52,5 @@ affects:
   - selinux-sandbox-3.2-rc3
   - semodule-utils-3.2
   - semodule-utils-3.2-rc3
-modified: '2021-06-21T06:56:27.701577Z'
-published: '2021-03-19T00:01:12.719776Z'
-ecosystem_specific:
-  severity: HIGH
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=32177
+  ecosystem_specific:
+    severity: HIGH

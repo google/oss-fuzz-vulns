@@ -1,7 +1,4 @@
 id: OSV-2021-52
-package:
-  name: openthread
-  ecosystem: OSS-Fuzz
 summary: Stack-buffer-overflow in ot::KeyManager::SetMasterKey
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=7766
@@ -11,18 +8,21 @@ details: |
   ot::KeyManager::SetMasterKey
   ot::MeshCoP::Dataset::ApplyConfiguration
   ot::MeshCoP::DatasetManager::Set
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/openthread/openthread
-    introduced: ed05498cdc9b0f57635669bb15ef73be81333e2d
-    fixed: 3af0bda8b79ed775d3b243bfb794ebdeb51378e2
 modified: '2021-06-23T06:28:31.012882Z'
 published: '2021-01-13T00:00:04.419420Z'
-ecosystem_specific:
-  severity: MEDIUM
-database_specific:
-  introduced_range: 68a605f22e579ae45ab1d8221faa2d45e8668e05:bf52ed706facbbbd12b2d86c902c0f71b2b72bb0
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=7766
+affected:
+- package:
+    name: openthread
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/openthread/openthread
+    events:
+    - introduced: ed05498cdc9b0f57635669bb15ef73be81333e2d
+    - fixed: 3af0bda8b79ed775d3b243bfb794ebdeb51378e2
+  ecosystem_specific:
+    introduced_range: 68a605f22e579ae45ab1d8221faa2d45e8668e05:bf52ed706facbbbd12b2d86c902c0f71b2b72bb0
+    severity: MEDIUM

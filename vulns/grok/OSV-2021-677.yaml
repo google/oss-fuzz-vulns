@@ -1,7 +1,4 @@
 id: OSV-2021-677
-package:
-  name: grok
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in grk::FileFormatDecompress::apply_palette_clr
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=33544
@@ -11,11 +8,20 @@ details: |
   grk::FileFormatDecompress::apply_palette_clr
   grk::FileFormatDecompress::applyColour
   grk_decompress_fuzzer.cpp
-affects:
+modified: '2021-08-20T00:04:17.953908Z'
+published: '2021-04-23T00:00:13.554175Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=33544
+affected:
+- package:
+    name: grok
+    ecosystem: OSS-Fuzz
   ranges:
   - type: GIT
     repo: https://github.com/GrokImageCompression/grok.git
-    introduced: 7e45c17f3700085a60db0467954230e9f6dd4b2d
+    events:
+    - introduced: 7e45c17f3700085a60db0467954230e9f6dd4b2d
   versions:
   - v7.6.6
   - v7.6.6-3
@@ -29,10 +35,5 @@ affects:
   - v9.2.0
   - v9.3.0
   - v9.4.0
-modified: '2021-08-20T00:04:17.953908Z'
-published: '2021-04-23T00:00:13.554175Z'
-ecosystem_specific:
-  severity: HIGH
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=33544
+  ecosystem_specific:
+    severity: HIGH

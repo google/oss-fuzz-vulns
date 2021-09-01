@@ -1,7 +1,4 @@
 id: OSV-2020-1519
-package:
-  name: libraw
-  ecosystem: OSS-Fuzz
 summary: Index-out-of-bounds in DHT::hide_hots
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23837
@@ -11,20 +8,24 @@ details: |
   DHT::hide_hots
   LibRaw::dht_interpolate
   LibRaw::dcraw_process
-affects:
+modified: '2021-06-21T06:56:25.778253Z'
+published: '2020-07-28T00:00:36.268160Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23837
+affected:
+- package:
+    name: libraw
+    ecosystem: OSS-Fuzz
   ranges:
   - type: GIT
     repo: https://github.com/libraw/libraw
-    introduced: 5eeffd556eec1e2baea7826a4be20664f9d70662
+    events:
+    - introduced: 5eeffd556eec1e2baea7826a4be20664f9d70662
   versions:
   - 0.20.0
   - 0.20-RC2
   - 0.20.1
   - 0.20.2
-modified: '2021-06-21T06:56:25.778253Z'
-published: '2020-07-28T00:00:36.268160Z'
-ecosystem_specific:
-  severity: MEDIUM
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23837
+  ecosystem_specific:
+    severity: MEDIUM

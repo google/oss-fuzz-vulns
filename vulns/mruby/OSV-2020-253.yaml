@@ -1,7 +1,4 @@
 id: OSV-2020-253
-package:
-  name: mruby
-  ecosystem: OSS-Fuzz
 summary: Stack-buffer-overflow in mrb_str_len_to_dbl
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=19902
@@ -11,16 +8,20 @@ details: |
   mrb_str_len_to_dbl
   mrb_str_len_to_inum
   mrb_str_to_i
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/mruby/mruby
-    introduced: 59756aef149dd70d74146526c70679c47cab0811
-    fixed: 2124b9b4c95e66e63b1eb26a8dab49753b82fd6c
 modified: '2021-06-21T06:56:25.557999Z'
 published: '2020-06-26T00:00:11.566328Z'
-ecosystem_specific:
-  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=19902
+affected:
+- package:
+    name: mruby
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/mruby/mruby
+    events:
+    - introduced: 59756aef149dd70d74146526c70679c47cab0811
+    - fixed: 2124b9b4c95e66e63b1eb26a8dab49753b82fd6c
+  ecosystem_specific:
+    severity: HIGH

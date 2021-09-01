@@ -1,7 +1,4 @@
 id: OSV-2020-624
-package:
-  name: lz4
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in LZ4_write32
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15941
@@ -11,16 +8,20 @@ details: |
   LZ4_write32
   LZ4_compress_fast_extState
   LZ4_compress_fast
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/lz4/lz4.git
-    introduced: 3c40db8d258716b9efcfb46fa6dc29de6e43e616
-    fixed: 13a2d9e34ffc4170720ce417c73e396d0ac1471a
 modified: '2021-06-21T06:56:27.237123Z'
 published: '2020-07-01T00:00:21.077578Z'
-ecosystem_specific:
-  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15941
+affected:
+- package:
+    name: lz4
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/lz4/lz4.git
+    events:
+    - introduced: 3c40db8d258716b9efcfb46fa6dc29de6e43e616
+    - fixed: 13a2d9e34ffc4170720ce417c73e396d0ac1471a
+  ecosystem_specific:
+    severity: HIGH

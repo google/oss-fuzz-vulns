@@ -1,7 +1,4 @@
 id: OSV-2021-141
-package:
-  name: matio
-  ecosystem: OSS-Fuzz
 summary: Use-of-uninitialized-value in H5G__traverse_real
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29546
@@ -11,18 +8,22 @@ details: |
   H5G__traverse_real
   H5G_traverse
   H5G_loc_info
-affects:
-  ranges:
-  - type: GIT
-    repo: git://git.code.sf.net/p/matio/matio
-    introduced: 1ce8f2d1845ecdde19a35605cabdbb884776d52d
-  versions:
-  - v1.5.20
-  - v1.5.21
 modified: '2021-06-21T06:56:28.204657Z'
 published: '2021-01-13T21:56:17.197324Z'
-ecosystem_specific:
-  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29546
+affected:
+- package:
+    name: matio
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: git://git.code.sf.net/p/matio/matio
+    events:
+    - introduced: 1ce8f2d1845ecdde19a35605cabdbb884776d52d
+  versions:
+  - v1.5.20
+  - v1.5.21
+  ecosystem_specific:
+    severity: MEDIUM

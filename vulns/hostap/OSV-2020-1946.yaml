@@ -1,7 +1,4 @@
 id: OSV-2020-1946
-package:
-  name: hostap
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in x509_parse_ext_basic_constraints
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15451
@@ -11,16 +8,20 @@ details: |
   x509_parse_ext_basic_constraints
   x509_parse_extension
   x509_parse_extensions
-affects:
-  ranges:
-  - type: GIT
-    repo: git://w1.fi/srv/git/hostap.git
-    introduced: df5dc8787347859827f615d5cb20a888ba6c074c
-    fixed: ce11c281ad1de25a815d49a29043d127cbc6354d
 modified: '2021-06-21T06:56:21.730756Z'
 published: '2020-10-02T00:00:37.298250Z'
-ecosystem_specific:
-  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15451
+affected:
+- package:
+    name: hostap
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: git://w1.fi/srv/git/hostap.git
+    events:
+    - introduced: df5dc8787347859827f615d5cb20a888ba6c074c
+    - fixed: ce11c281ad1de25a815d49a29043d127cbc6354d
+  ecosystem_specific:
+    severity: MEDIUM

@@ -1,7 +1,4 @@
 id: OSV-2020-1321
-package:
-  name: suricata
-  ecosystem: OSS-Fuzz
 summary: UNKNOWN READ in FlowGetHash
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21479
@@ -11,18 +8,21 @@ details: |
   FlowGetHash
   FlowSetupPacket
   DecodeICMPV4
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/OISF/suricata.git
-    introduced: 19fe8d9894207f18dbd305a5834820f3a698dc32
-    fixed: 8cbae1371f18d1427244f18fe2110256496a9f9f
 modified: '2021-06-23T06:25:28.996694Z'
 published: '2020-07-22T21:50:06.291563Z'
-ecosystem_specific:
-  severity: MEDIUM
-database_specific:
-  introduced_range: unknown:19fe8d9894207f18dbd305a5834820f3a698dc32
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21479
+affected:
+- package:
+    name: suricata
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/OISF/suricata.git
+    events:
+    - introduced: 19fe8d9894207f18dbd305a5834820f3a698dc32
+    - fixed: 8cbae1371f18d1427244f18fe2110256496a9f9f
+  ecosystem_specific:
+    severity: MEDIUM
+    introduced_range: unknown:19fe8d9894207f18dbd305a5834820f3a698dc32

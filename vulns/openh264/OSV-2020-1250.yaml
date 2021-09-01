@@ -1,7 +1,4 @@
 id: OSV-2020-1250
-package:
-  name: openh264
-  ecosystem: OSS-Fuzz
 summary: Heap-use-after-free in WelsDec::MapColToList0
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13185
@@ -11,18 +8,21 @@ details: |
   WelsDec::MapColToList0
   WelsDec::ParseInterBMotionInfoCabac
   WelsDec::WelsDecodeMbCabacBSliceBaseMode0
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/cisco/openh264.git
-    introduced: 70eeb783515dbfee3e0c781d6667838caba5113b
-    fixed: 717fe1463d4f2025d8bbfd432a4cf9cdbfc9d35c
 modified: '2021-06-23T06:26:25.687868Z'
 published: '2020-07-22T21:50:00.192005Z'
-ecosystem_specific:
-  severity: HIGH
-database_specific:
-  introduced_range: unknown:70eeb783515dbfee3e0c781d6667838caba5113b
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13185
+affected:
+- package:
+    name: openh264
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/cisco/openh264.git
+    events:
+    - introduced: 70eeb783515dbfee3e0c781d6667838caba5113b
+    - fixed: 717fe1463d4f2025d8bbfd432a4cf9cdbfc9d35c
+  ecosystem_specific:
+    introduced_range: unknown:70eeb783515dbfee3e0c781d6667838caba5113b
+    severity: HIGH

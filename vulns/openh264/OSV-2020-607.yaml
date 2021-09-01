@@ -1,7 +1,4 @@
 id: OSV-2020-607
-package:
-  name: openh264
-  ecosystem: OSS-Fuzz
 summary: UNKNOWN READ in WelsDec::CWelsDecoder::DecodeFrame2WithCtx
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18864
@@ -11,16 +8,20 @@ details: |
   WelsDec::CWelsDecoder::DecodeFrame2WithCtx
   WelsDec::CWelsDecoder::DecodeFrame2
   WelsDec::CWelsDecoder::DecodeFrameNoDelay
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/cisco/openh264.git
-    introduced: 2091de60c6a235a3236475d2208139f6a8862f48
-    fixed: e3b90efed243779b5c4961c2f9d6f1cedfeb1f46
 modified: '2021-06-21T06:56:23.902883Z'
 published: '2020-07-01T00:00:20.087273Z'
-ecosystem_specific:
-  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18864
+affected:
+- package:
+    name: openh264
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/cisco/openh264.git
+    events:
+    - introduced: 2091de60c6a235a3236475d2208139f6a8862f48
+    - fixed: e3b90efed243779b5c4961c2f9d6f1cedfeb1f46
+  ecosystem_specific:
+    severity: HIGH

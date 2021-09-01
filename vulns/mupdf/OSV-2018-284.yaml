@@ -1,7 +1,4 @@
 id: OSV-2018-284
-package:
-  name: mupdf
-  ecosystem: OSS-Fuzz
 summary: Stack-buffer-overflow in pdf_lookup_cmap_full
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=5494
@@ -11,14 +8,18 @@ details: |
   pdf_lookup_cmap_full
   pdf_remap_cmap_range
   pdf_remap_cmap
-affects:
-  ranges:
-  - type: GIT
-    repo: git://git.ghostscript.com/mupdf.git
-    introduced: 80b59185030368fecf38d9abe13ffb0302a60c2a
-    fixed: 71ceebcf56e682504da22c4035b39a2d451e8ffd
+modified: '2021-03-09T04:49:04.915198Z'
+published: '2021-01-15T00:00:22.790093Z'
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=5494
-modified: '2021-03-09T04:49:04.915198Z'
-published: '2021-01-15T00:00:22.790093Z'
+affected:
+- package:
+    name: mupdf
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: git://git.ghostscript.com/mupdf.git
+    events:
+    - introduced: 80b59185030368fecf38d9abe13ffb0302a60c2a
+    - fixed: 71ceebcf56e682504da22c4035b39a2d451e8ffd

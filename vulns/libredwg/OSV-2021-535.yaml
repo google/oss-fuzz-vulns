@@ -1,7 +1,4 @@
 id: OSV-2021-535
-package:
-  name: libredwg
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in encode_3dsolid
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=32165
@@ -11,12 +8,21 @@ details: |
   encode_3dsolid
   dwg_encode_BODY_private
   dwg_encode_BODY
-affects:
+modified: '2021-06-21T06:56:26.608293Z'
+published: '2021-03-19T00:00:24.962467Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=32165
+affected:
+- package:
+    name: libredwg
+    ecosystem: OSS-Fuzz
   ranges:
   - type: GIT
     repo: https://github.com/LibreDWG/libredwg
-    introduced: e5de783437e60d90530bdbb1da04aa1c11b8d6f6
-    fixed: 084083ce54e59b5a43e6eb936868ef4bd037c7e2
+    events:
+    - introduced: e5de783437e60d90530bdbb1da04aa1c11b8d6f6
+    - fixed: 084083ce54e59b5a43e6eb936868ef4bd037c7e2
   versions:
   - 0.12.3.4163
   - 0.12.3.4165
@@ -40,10 +46,5 @@ affects:
   - 0.12.3.4248
   - 0.12.3.4250
   - 0.12.3.4253
-modified: '2021-06-21T06:56:26.608293Z'
-published: '2021-03-19T00:00:24.962467Z'
-ecosystem_specific:
-  severity: MEDIUM
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=32165
+  ecosystem_specific:
+    severity: MEDIUM

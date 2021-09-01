@@ -1,7 +1,4 @@
 id: OSV-2021-231
-package:
-  name: htslib
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in int32_get_blk
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29855
@@ -11,16 +8,20 @@ details: |
   int32_get_blk
   cram_read_SAM_hdr
   cram_dopen
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/samtools/htslib.git
-    introduced: 0d1971cbebb269d90a563464e4f56987290e20ab
-    fixed: 90fef7300c75ca6b8834da0dcb710e27d599324e
 modified: '2021-06-21T06:56:19.940260Z'
 published: '2021-01-24T00:00:23.631012Z'
-ecosystem_specific:
-  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29855
+affected:
+- package:
+    name: htslib
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/samtools/htslib.git
+    events:
+    - introduced: 0d1971cbebb269d90a563464e4f56987290e20ab
+    - fixed: 90fef7300c75ca6b8834da0dcb710e27d599324e
+  ecosystem_specific:
+    severity: MEDIUM

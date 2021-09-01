@@ -1,7 +1,4 @@
 id: OSV-2020-2240
-package:
-  name: fluent-bit
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in process_chunked_data
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=28265
@@ -11,12 +8,21 @@ details: |
   process_chunked_data
   process_data
   fuzz_process_data
-affects:
+modified: '2021-06-21T06:56:24.359349Z'
+published: '2020-12-05T00:00:47.996292Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=28265
+affected:
+- package:
+    name: fluent-bit
+    ecosystem: OSS-Fuzz
   ranges:
   - type: GIT
     repo: https://github.com/fluent/fluent-bit/
-    introduced: 10ceb5b2ab6635a000f3eceaa267e1e34496de6b
-    fixed: cfee54301badc5fd61422eb85ff4c1028ad6cbc7
+    events:
+    - introduced: 10ceb5b2ab6635a000f3eceaa267e1e34496de6b
+    - fixed: cfee54301badc5fd61422eb85ff4c1028ad6cbc7
   versions:
   - v1.7.0
   - v1.7.0-rc1
@@ -29,10 +35,5 @@ affects:
   - v1.7.0-rc8
   - v1.7.0-rc9
   - v1.7.1
-modified: '2021-06-21T06:56:24.359349Z'
-published: '2020-12-05T00:00:47.996292Z'
-ecosystem_specific:
-  severity: MEDIUM
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=28265
+  ecosystem_specific:
+    severity: MEDIUM

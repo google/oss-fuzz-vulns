@@ -1,7 +1,4 @@
 id: OSV-2020-2098
-package:
-  name: uwebsockets
-  ecosystem: OSS-Fuzz
 summary: Use-of-uninitialized-value in std::__1::__function::__func<LLVMFuzzerTestOneInput::$_0,
   std::__1::allocator<LL
 details: |
@@ -12,16 +9,20 @@ details: |
   std::__1::__function::__func<LLVMFuzzerTestOneInput::$_0, std::__1::allocator<LL
   functional
   std::__1::__function::__func<LLVMFuzzerTestOneInput::$_0, std::__1::allocator<LL
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/uNetworking/uWebSockets.git
-    introduced: 4fef0d73e4b1190a16b7d4d2f4705b546178e44a
-    fixed: 72e26ea4839206a379f46e49e84e5203294b9fbb
 modified: '2021-06-21T06:56:26.528006Z'
 published: '2020-10-25T00:00:31.690756Z'
-ecosystem_specific:
-  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26617
+affected:
+- package:
+    name: uwebsockets
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/uNetworking/uWebSockets.git
+    events:
+    - introduced: 4fef0d73e4b1190a16b7d4d2f4705b546178e44a
+    - fixed: 72e26ea4839206a379f46e49e84e5203294b9fbb
+  ecosystem_specific:
+    severity: MEDIUM

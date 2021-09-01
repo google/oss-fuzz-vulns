@@ -1,7 +1,4 @@
 id: OSV-2021-426
-package:
-  name: grok
-  ecosystem: OSS-Fuzz
 summary: Use-of-uninitialized-value in std::__1::__packaged_task_func<std::__1::__bind<grk::mct::decompress_irrev
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31180
@@ -11,11 +8,20 @@ details: |
   std::__1::__packaged_task_func<std::__1::__bind<grk::mct::decompress_irrev
   std::__1::packaged_task<int
   ThreadPool::ThreadPool
-affects:
+modified: '2021-08-20T00:04:15.573969Z'
+published: '2021-02-22T00:00:08.360778Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31180
+affected:
+- package:
+    name: grok
+    ecosystem: OSS-Fuzz
   ranges:
   - type: GIT
     repo: https://github.com/GrokImageCompression/grok.git
-    introduced: e790e1c8292a4661066ad3f8680d71c60eb8bcbc
+    events:
+    - introduced: e790e1c8292a4661066ad3f8680d71c60eb8bcbc
   versions:
   - v8.0.1
   - v8.0.2
@@ -25,10 +31,5 @@ affects:
   - v9.2.0
   - v9.3.0
   - v9.4.0
-modified: '2021-08-20T00:04:15.573969Z'
-published: '2021-02-22T00:00:08.360778Z'
-ecosystem_specific:
-  severity: MEDIUM
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31180
+  ecosystem_specific:
+    severity: MEDIUM

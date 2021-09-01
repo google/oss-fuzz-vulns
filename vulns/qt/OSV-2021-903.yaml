@@ -1,7 +1,4 @@
 id: OSV-2021-903
-package:
-  name: qt
-  ecosystem: OSS-Fuzz
 summary: UNKNOWN WRITE in QOutlineMapper::convertPath
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=35566
@@ -11,17 +8,25 @@ details: |
   QOutlineMapper::convertPath
   QRasterPaintEngine::fill
   QPaintEngineEx::stroke
-affects:
+modified: '2021-08-16T04:53:26.981462Z'
+published: '2021-06-27T00:01:31.379142Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=35566
+- type: FIX
+  url: https://codereview.qt-project.org/c/qt/qtbase/+/361724
+affected:
+- package:
+    name: qt
+    ecosystem: OSS-Fuzz
   ranges:
   - type: GIT
     repo: git://code.qt.io/qt/qtbase.git
-    fixed: 6b400e3147dcfd8cc3a393ace1bd118c93762e0c
-  - type: GIT
-    repo: git://code.qt.io/qt/qtbase.git
-    fixed: 202143ba41f6ac574f1858214ed8bf4a38b73ccd
-  - type: GIT
-    repo: git://code.qt.io/qt/qtbase.git
-    fixed: 1ca02cf2879a5e1511a2f2109f0925cf4c892862
+    events:
+    - introduced: '0'
+    - fixed: 6b400e3147dcfd8cc3a393ace1bd118c93762e0c
+    - fixed: 202143ba41f6ac574f1858214ed8bf4a38b73ccd
+    - fixed: 1ca02cf2879a5e1511a2f2109f0925cf4c892862
   versions:
   - qt-v5.0.0-alpha1
   - v5.0.0
@@ -188,15 +193,7 @@ affects:
   - v6.2.0-alpha1
   - v6.2.0-beta1
   - v6.2.0-beta2
-modified: '2021-08-16T04:53:26.981462Z'
-published: '2021-06-27T00:01:31.379142Z'
-ecosystem_specific:
-  severity: HIGH
-database_specific:
-  introduced_range: 1c17b656e0c7b3f5fae598a0915fdebfeb822dae:f1b826440d0c9407b08329bb563b95781d6aeb6b
-  fixed_range: dd24bc25c9d897b944768db3ebe52f8d68c8f6da:16ab287262e246b27c83f18ccdbd47d68485bbf6
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=35566
-- type: FIX
-  url: https://codereview.qt-project.org/c/qt/qtbase/+/361724
+  ecosystem_specific:
+    introduced_range: 1c17b656e0c7b3f5fae598a0915fdebfeb822dae:f1b826440d0c9407b08329bb563b95781d6aeb6b
+    severity: HIGH
+    fixed_range: dd24bc25c9d897b944768db3ebe52f8d68c8f6da:16ab287262e246b27c83f18ccdbd47d68485bbf6

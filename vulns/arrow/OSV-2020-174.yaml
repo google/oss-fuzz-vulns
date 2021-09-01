@@ -1,7 +1,4 @@
 id: OSV-2020-174
-package:
-  name: arrow
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in int arrow::BitUtil::BitReader::GetBatch<short>
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21166
@@ -11,16 +8,20 @@ details: |
   int arrow::BitUtil::BitReader::GetBatch<short>
   int arrow::util::RleDecoder::GetBatch<short>
   parquet::internal::TypedRecordReader<parquet::PhysicalType<
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/apache/arrow.git
-    introduced: 431fdbfbc0fb4bb16c4a89298404ad16784db2a0
-    fixed: 6b87c6c9fb00ade7eff909afa4a6a61464cd516c
 modified: '2021-06-21T06:56:19.634134Z'
 published: '2020-06-24T01:51:17.409834Z'
-ecosystem_specific:
-  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21166
+affected:
+- package:
+    name: arrow
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/apache/arrow.git
+    events:
+    - introduced: 431fdbfbc0fb4bb16c4a89298404ad16784db2a0
+    - fixed: 6b87c6c9fb00ade7eff909afa4a6a61464cd516c
+  ecosystem_specific:
+    severity: HIGH

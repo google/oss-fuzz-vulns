@@ -1,7 +1,4 @@
 id: OSV-2021-841
-package:
-  name: serenity
-  ecosystem: OSS-Fuzz
 summary: Heap-use-after-free in AK::StringImpl::create
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34973
@@ -11,15 +8,19 @@ details: |
   AK::StringImpl::create
   AK::String::String
   AK::URLParser::parse_data_url
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/SerenityOS/serenity
-    introduced: e01f1c949fbbc7eb310e35b50f41890310af665d
 modified: '2021-06-21T06:56:19.830224Z'
 published: '2021-06-07T00:01:31.914915Z'
-ecosystem_specific:
-  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34973
+affected:
+- package:
+    name: serenity
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/SerenityOS/serenity
+    events:
+    - introduced: e01f1c949fbbc7eb310e35b50f41890310af665d
+  ecosystem_specific:
+    severity: HIGH

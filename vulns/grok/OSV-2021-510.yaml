@@ -1,7 +1,4 @@
 id: OSV-2021-510
-package:
-  name: grok
-  ecosystem: OSS-Fuzz
 summary: Heap-use-after-free in grk_object_unref
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31874
@@ -11,11 +8,20 @@ details: |
   grk_object_unref
   grk::GrkObjectImpl<grk::GrkImage>::release
   grk::GrkObject::unref
-affects:
+modified: '2021-08-20T00:02:24.401772Z'
+published: '2021-03-11T00:00:21.858475Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31874
+affected:
+- package:
+    name: grok
+    ecosystem: OSS-Fuzz
   ranges:
   - type: GIT
     repo: https://github.com/GrokImageCompression/grok.git
-    introduced: 2cd6d952e040bb439ec53c53c0933d66908b6a91
+    events:
+    - introduced: 2cd6d952e040bb439ec53c53c0933d66908b6a91
   versions:
   - v8.0.0
   - v8.0.1
@@ -26,10 +32,5 @@ affects:
   - v9.2.0
   - v9.3.0
   - v9.4.0
-modified: '2021-08-20T00:02:24.401772Z'
-published: '2021-03-11T00:00:21.858475Z'
-ecosystem_specific:
-  severity: HIGH
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31874
+  ecosystem_specific:
+    severity: HIGH

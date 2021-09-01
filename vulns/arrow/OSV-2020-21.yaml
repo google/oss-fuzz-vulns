@@ -1,7 +1,4 @@
 id: OSV-2020-21
-package:
-  name: arrow
-  ecosystem: OSS-Fuzz
 summary: UNKNOWN WRITE in arrow::internal::unpack32
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20711
@@ -11,16 +8,20 @@ details: |
   arrow::internal::unpack32
   int arrow::BitUtil::BitReader::GetBatch<int>
   parquet::DictByteArrayDecoderImpl::DecodeArrowDense
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/apache/arrow.git
-    introduced: 431fdbfbc0fb4bb16c4a89298404ad16784db2a0
-    fixed: d2ab289294f5eaa175e6bc4ab5fb74b5ea013f6e
 modified: '2021-06-21T06:56:19.672093Z'
 published: '2020-06-24T01:51:10.547779Z'
-ecosystem_specific:
-  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20711
+affected:
+- package:
+    name: arrow
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/apache/arrow.git
+    events:
+    - introduced: 431fdbfbc0fb4bb16c4a89298404ad16784db2a0
+    - fixed: d2ab289294f5eaa175e6bc4ab5fb74b5ea013f6e
+  ecosystem_specific:
+    severity: HIGH

@@ -1,7 +1,4 @@
 id: OSV-2020-288
-package:
-  name: leptonica
-  ecosystem: OSS-Fuzz
 summary: Heap-use-after-free in pixReadMemBmp
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=19723
@@ -11,16 +8,20 @@ details: |
   pixReadMemBmp
   pixReadMem
   pix_rotate_shear_fuzzer.cc
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/DanBloomberg/leptonica.git
-    introduced: 95405007f7ebf7df69f13475b3259179cdc4ec12
-    fixed: 7a74abcd7b574109d8ad29b0dd5583f3963a6939
 modified: '2021-06-21T06:56:20.231519Z'
 published: '2020-06-30T00:00:46.704258Z'
-ecosystem_specific:
-  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=19723
+affected:
+- package:
+    name: leptonica
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/DanBloomberg/leptonica.git
+    events:
+    - introduced: 95405007f7ebf7df69f13475b3259179cdc4ec12
+    - fixed: 7a74abcd7b574109d8ad29b0dd5583f3963a6939
+  ecosystem_specific:
+    severity: MEDIUM

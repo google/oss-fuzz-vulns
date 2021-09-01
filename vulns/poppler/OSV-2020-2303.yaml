@@ -1,7 +1,4 @@
 id: OSV-2020-2303
-package:
-  name: poppler
-  ecosystem: OSS-Fuzz
 summary: Use-of-uninitialized-value in Splash::pipeRunSimpleXBGR8
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29651
@@ -11,11 +8,20 @@ details: |
   Splash::pipeRunSimpleXBGR8
   Splash::drawSpan
   Splash::fillWithPattern
-affects:
+modified: '2021-08-04T00:05:54.980896Z'
+published: '2021-01-18T00:00:08.864783Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29651
+affected:
+- package:
+    name: poppler
+    ecosystem: OSS-Fuzz
   ranges:
   - type: GIT
     repo: https://gitlab.freedesktop.org/poppler/poppler.git
-    introduced: 2386bf37f9022cb5a9d434e30e8d8d55f4916e55
+    events:
+    - introduced: 2386bf37f9022cb5a9d434e30e8d8d55f4916e55
   versions:
   - poppler-20.12.0
   - poppler-20.12.1
@@ -28,10 +34,5 @@ affects:
   - poppler-21.06.1
   - poppler-21.07.0
   - poppler-21.08.0
-modified: '2021-08-04T00:05:54.980896Z'
-published: '2021-01-18T00:00:08.864783Z'
-ecosystem_specific:
-  severity: MEDIUM
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29651
+  ecosystem_specific:
+    severity: MEDIUM

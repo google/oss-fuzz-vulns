@@ -1,7 +1,4 @@
 id: OSV-2018-280
-package:
-  name: wget
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in xstrdup
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=7931
@@ -11,16 +8,20 @@ details: |
   xstrdup
   ftp_parse_winnt_ls
   wget_ftpls_fuzzer.c
-affects:
-  ranges:
-  - type: GIT
-    repo: https://git.savannah.gnu.org/git/wget.git
-    introduced: f56f970bc2b0df1d26ebd6a0a86083b37017cd70
-    fixed: b0f802c46c286f4e07c499042ba3e3ea15c2d585
 modified: '2021-06-21T06:56:27.770527Z'
 published: '2021-01-15T00:00:20.694236Z'
-ecosystem_specific:
-  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=7931
+affected:
+- package:
+    name: wget
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://git.savannah.gnu.org/git/wget.git
+    events:
+    - introduced: f56f970bc2b0df1d26ebd6a0a86083b37017cd70
+    - fixed: b0f802c46c286f4e07c499042ba3e3ea15c2d585
+  ecosystem_specific:
+    severity: MEDIUM

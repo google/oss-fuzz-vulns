@@ -1,7 +1,4 @@
 id: OSV-2021-345
-package:
-  name: unicorn
-  ecosystem: OSS-Fuzz
 summary: UNKNOWN READ in cpu_arm_exec_arm
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30636
@@ -11,21 +8,25 @@ details: |
   cpu_arm_exec_arm
   tcg_cpu_exec_arm
   tcg_exec_all_arm
-affects:
+modified: '2021-06-21T06:56:25.214388Z'
+published: '2021-02-10T00:00:20.946004Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30636
+affected:
+- package:
+    name: unicorn
+    ecosystem: OSS-Fuzz
   ranges:
   - type: GIT
     repo: https://github.com/unicorn-engine/unicorn.git
-    introduced: 881e08da017e2679ccc98bfcbf1fc5b74ee822d4
+    events:
+    - introduced: 881e08da017e2679ccc98bfcbf1fc5b74ee822d4
   versions:
   - 1.0.2
   - 1.0.2-rc4
   - 1.0.2-rc5
   - 1.0.2-rc6
   - 1.0.3
-modified: '2021-06-21T06:56:25.214388Z'
-published: '2021-02-10T00:00:20.946004Z'
-ecosystem_specific:
-  severity: MEDIUM
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30636
+  ecosystem_specific:
+    severity: MEDIUM

@@ -1,7 +1,4 @@
 id: OSV-2018-152
-package:
-  name: systemd
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in dhcp6_option_parse_status
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=10746
@@ -11,16 +8,20 @@ details: |
   dhcp6_option_parse_status
   dhcp6_option_parse_pdprefix
   dhcp6_option_parse_ia
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/systemd/systemd
-    introduced: 45a7becfeaba0ab50b1aae9cddbb5c32789d56b2
-    fixed: 84452783b8bcc44e0dbb7fa6ddc6dad8c064bdfe
 modified: '2021-06-21T06:56:25.838161Z'
 published: '2021-01-13T00:01:04.855220Z'
-ecosystem_specific:
-  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=10746
+affected:
+- package:
+    name: systemd
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/systemd/systemd
+    events:
+    - introduced: 45a7becfeaba0ab50b1aae9cddbb5c32789d56b2
+    - fixed: 84452783b8bcc44e0dbb7fa6ddc6dad8c064bdfe
+  ecosystem_specific:
+    severity: MEDIUM

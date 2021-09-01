@@ -1,7 +1,4 @@
 id: OSV-2018-195
-package:
-  name: strongswan
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in gmp_emsa_pkcs1_signature_data
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=10671
@@ -11,18 +8,22 @@ details: |
   gmp_emsa_pkcs1_signature_data
   verify_emsa_pkcs1_signature
   verify
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/strongswan/strongswan.git
-    introduced: 5955db5b124a1ee5f44c0845b6e00c86fddae67c
-    fixed: 129ab919a8c3abfc17bea776f0774e0ccf33ca09
-  versions:
-  - 5.7.0
 modified: '2021-07-09T13:04:40.343979Z'
 published: '2021-01-13T00:01:21.218732Z'
-ecosystem_specific:
-  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=10671
+affected:
+- package:
+    name: strongswan
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/strongswan/strongswan.git
+    events:
+    - introduced: 5955db5b124a1ee5f44c0845b6e00c86fddae67c
+    - fixed: 129ab919a8c3abfc17bea776f0774e0ccf33ca09
+  versions:
+  - 5.7.0
+  ecosystem_specific:
+    severity: HIGH

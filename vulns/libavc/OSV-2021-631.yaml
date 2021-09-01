@@ -1,7 +1,4 @@
 id: OSV-2021-631
-package:
-  name: libavc
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in ih264d_decode_slice_thread
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=33167
@@ -11,11 +8,20 @@ details: |
   ih264d_decode_slice_thread
   ih264d_decode_picture_thread
   clone
-affects:
+modified: '2021-08-12T00:04:07.219763Z'
+published: '2021-04-13T00:00:57.946Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=33167
+affected:
+- package:
+    name: libavc
+    ecosystem: OSS-Fuzz
   ranges:
   - type: GIT
     repo: https://android.googlesource.com/platform/external/libavc
-    introduced: 6efeedf0633e1965a4d4e17d64f14215e9b6d48f
+    events:
+    - introduced: 6efeedf0633e1965a4d4e17d64f14215e9b6d48f
   versions:
   - android-11.0.0_r18
   - android-11.0.0_r19
@@ -51,10 +57,5 @@ affects:
   - platform-tools-31.0.2
   - android-11.0.0_r40
   - android-s-beta-4
-modified: '2021-08-12T00:04:07.219763Z'
-published: '2021-04-13T00:00:57.946Z'
-ecosystem_specific:
-  severity: HIGH
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=33167
+  ecosystem_specific:
+    severity: HIGH

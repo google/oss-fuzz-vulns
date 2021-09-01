@@ -1,7 +1,4 @@
 id: OSV-2020-867
-package:
-  name: icu
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in icu_64::CollationIterator::appendCEsFromCE32
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15613
@@ -11,11 +8,20 @@ details: |
   icu_64::CollationIterator::appendCEsFromCE32
   icu_64::DataBuilderCollationIterator::fetchCEs
   icu_64::CollationDataBuilder::getCEs
-affects:
+modified: '2021-08-26T00:14:52.156961Z'
+published: '2020-07-14T22:13:50.339661Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15613
+affected:
+- package:
+    name: icu
+    ecosystem: OSS-Fuzz
   ranges:
   - type: GIT
     repo: https://github.com/unicode-org/icu.git
-    introduced: 6e5755a2a833bc64852eae12967d0a54d7adf629
+    events:
+    - introduced: 6e5755a2a833bc64852eae12967d0a54d7adf629
   versions:
   - cldr/2020-09-22
   - cldr/2020-10-21
@@ -38,10 +44,5 @@ affects:
   - release-69-rc
   - cldr/2021-08-11
   - cldr/2021-08-25
-modified: '2021-08-26T00:14:52.156961Z'
-published: '2020-07-14T22:13:50.339661Z'
-ecosystem_specific:
-  severity: MEDIUM
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15613
+  ecosystem_specific:
+    severity: MEDIUM

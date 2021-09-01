@@ -1,7 +1,4 @@
 id: OSV-2020-1273
-package:
-  name: libspectre
-  ecosystem: OSS-Fuzz
 summary: Use-of-uninitialized-value in psscan
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21302
@@ -11,19 +8,22 @@ details: |
   psscan
   document_load
   spectre_read_fuzzer.c
-affects:
-  ranges:
-  - type: GIT
-    repo: https://gitlab.freedesktop.org/libspectre/libspectre.git
-    introduced: 945d39259c0ca1dfd6c594a9d3ed971152313190
-    fixed: af1cb4cb719dcb94314bbefc78b59ac426b8fed2
 modified: '2021-06-23T06:25:42.842735Z'
 published: '2020-07-22T21:50:02.326023Z'
-ecosystem_specific:
-  severity: MEDIUM
-database_specific:
-  fixed_range: dd7168828cf07971adc8c24bab0f3b6e3d28e0c9:af1cb4cb719dcb94314bbefc78b59ac426b8fed2
-  introduced_range: unknown:945d39259c0ca1dfd6c594a9d3ed971152313190
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21302
+affected:
+- package:
+    name: libspectre
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://gitlab.freedesktop.org/libspectre/libspectre.git
+    events:
+    - introduced: 945d39259c0ca1dfd6c594a9d3ed971152313190
+    - fixed: af1cb4cb719dcb94314bbefc78b59ac426b8fed2
+  ecosystem_specific:
+    severity: MEDIUM
+    fixed_range: dd7168828cf07971adc8c24bab0f3b6e3d28e0c9:af1cb4cb719dcb94314bbefc78b59ac426b8fed2
+    introduced_range: unknown:945d39259c0ca1dfd6c594a9d3ed971152313190

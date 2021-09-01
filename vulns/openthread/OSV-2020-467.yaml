@@ -1,7 +1,4 @@
 id: OSV-2020-467
-package:
-  name: openthread
-  ecosystem: OSS-Fuzz
 summary: UNKNOWN READ in ot::MessageQueue::GetTail
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13345
@@ -11,16 +8,20 @@ details: |
   ot::MessageQueue::GetTail
   ot::Message::GetNext
   ot::MeshForwarder::GetDirectTransmission
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/openthread/openthread
-    introduced: 3eb5a106ffa6678e23c6bc244e843e264cae9b31
-    fixed: e7acaa887997f529182c6cbcd29f144af8b453ba
 modified: '2021-06-21T06:56:24.909140Z'
 published: '2020-07-01T00:00:11.176081Z'
-ecosystem_specific:
-  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13345
+affected:
+- package:
+    name: openthread
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/openthread/openthread
+    events:
+    - introduced: 3eb5a106ffa6678e23c6bc244e843e264cae9b31
+    - fixed: e7acaa887997f529182c6cbcd29f144af8b453ba
+  ecosystem_specific:
+    severity: MEDIUM

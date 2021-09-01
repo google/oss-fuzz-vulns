@@ -1,7 +1,4 @@
 id: OSV-2021-207
-package:
-  name: c-blosc2
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in blosc_getitem
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29613
@@ -11,18 +8,21 @@ details: |
   blosc_getitem
   get_coffset
   frame_get_lazychunk
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/Blosc/c-blosc2.git
-    introduced: 933c0c455c91da06604163f533e9a2084cd2f6ca
-    fixed: aebf2b9858368681e497f136501ab33cc1014aed
 modified: '2021-06-23T06:29:21.212060Z'
 published: '2021-01-17T00:00:12.646500Z'
-ecosystem_specific:
-  severity: MEDIUM
-database_specific:
-  fixed_range: 0e8bdfce66ba4b2fef79a2525fd83ecfc22b0983:aebf2b9858368681e497f136501ab33cc1014aed
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29613
+affected:
+- package:
+    name: c-blosc2
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/Blosc/c-blosc2.git
+    events:
+    - introduced: 933c0c455c91da06604163f533e9a2084cd2f6ca
+    - fixed: aebf2b9858368681e497f136501ab33cc1014aed
+  ecosystem_specific:
+    severity: MEDIUM
+    fixed_range: 0e8bdfce66ba4b2fef79a2525fd83ecfc22b0983:aebf2b9858368681e497f136501ab33cc1014aed

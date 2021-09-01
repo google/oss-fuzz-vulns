@@ -1,7 +1,4 @@
 id: OSV-2020-200
-package:
-  name: libspng
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in spng_decode_scanline
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22595
@@ -11,16 +8,20 @@ details: |
   spng_decode_scanline
   spng_decode_row
   spng_decode_image
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/randy408/libspng.git
-    introduced: 56ea34629ac4e56f2264f7a8212b228873e9f174
-    fixed: 954b5570a02822a1fdd3c7508ac86ce5984aedee
 modified: '2021-06-21T06:56:21.104958Z'
 published: '2020-06-24T01:51:18.641839Z'
-ecosystem_specific:
-  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22595
+affected:
+- package:
+    name: libspng
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/randy408/libspng.git
+    events:
+    - introduced: 56ea34629ac4e56f2264f7a8212b228873e9f174
+    - fixed: 954b5570a02822a1fdd3c7508ac86ce5984aedee
+  ecosystem_specific:
+    severity: HIGH

@@ -1,7 +1,4 @@
 id: OSV-2020-63
-package:
-  name: arrow
-  ecosystem: OSS-Fuzz
 summary: UNKNOWN READ in arrow::BaseBinaryBuilder<arrow::BinaryType>::UnsafeAppend
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20697
@@ -11,16 +8,20 @@ details: |
   arrow::BaseBinaryBuilder<arrow::BinaryType>::UnsafeAppend
   parquet::PlainByteArrayDecoder::DecodeArrowDense
   parquet::PlainByteArrayDecoder::DecodeArrow
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/apache/arrow.git
-    introduced: 431fdbfbc0fb4bb16c4a89298404ad16784db2a0
-    fixed: d2ab289294f5eaa175e6bc4ab5fb74b5ea013f6e
 modified: '2021-06-21T06:56:19.577669Z'
 published: '2020-06-24T01:51:12.364400Z'
-ecosystem_specific:
-  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20697
+affected:
+- package:
+    name: arrow
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/apache/arrow.git
+    events:
+    - introduced: 431fdbfbc0fb4bb16c4a89298404ad16784db2a0
+    - fixed: d2ab289294f5eaa175e6bc4ab5fb74b5ea013f6e
+  ecosystem_specific:
+    severity: MEDIUM

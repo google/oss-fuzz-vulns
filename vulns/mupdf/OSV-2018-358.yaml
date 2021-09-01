@@ -1,7 +1,4 @@
 id: OSV-2018-358
-package:
-  name: mupdf
-  ecosystem: OSS-Fuzz
 summary: Use-of-uninitialized-value in jbig2_arith_bytein
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=9677
@@ -11,16 +8,20 @@ details: |
   jbig2_arith_bytein
   jbig2_arith_new
   jbig2_decode_pattern_dict
-affects:
-  ranges:
-  - type: GIT
-    repo: git://git.ghostscript.com/mupdf.git
-    introduced: 43a0278d42ac1b350ce6b582f9d0e3d7785a17b6
-    fixed: ce3e98c07e29dab2743e792e478395ed30d27dc1
 modified: '2021-06-21T06:56:19.060670Z'
 published: '2021-01-15T00:00:54.170412Z'
-ecosystem_specific:
-  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=9677
+affected:
+- package:
+    name: mupdf
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: git://git.ghostscript.com/mupdf.git
+    events:
+    - introduced: 43a0278d42ac1b350ce6b582f9d0e3d7785a17b6
+    - fixed: ce3e98c07e29dab2743e792e478395ed30d27dc1
+  ecosystem_specific:
+    severity: MEDIUM

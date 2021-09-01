@@ -1,7 +1,4 @@
 id: OSV-2020-2308
-package:
-  name: libheif
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in derive_collocated_motion_vectors
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30568
@@ -11,11 +8,20 @@ details: |
   derive_collocated_motion_vectors
   derive_temporal_luma_vector_prediction
   fill_luma_motion_vector_predictors
-affects:
+modified: '2021-06-21T06:56:20.048428Z'
+published: '2021-02-10T00:00:17.357392Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30568
+affected:
+- package:
+    name: libheif
+    ecosystem: OSS-Fuzz
   ranges:
   - type: GIT
     repo: https://github.com/strukturag/libheif.git
-    introduced: 2490273566a1690d7ca28f7bd30fd3ac0977796f
+    events:
+    - introduced: 2490273566a1690d7ca28f7bd30fd3ac0977796f
   versions:
   - v1.10.0
   - v1.11.0
@@ -23,10 +29,5 @@ affects:
   - v1.8.0
   - v1.9.0
   - v1.9.1
-modified: '2021-06-21T06:56:20.048428Z'
-published: '2021-02-10T00:00:17.357392Z'
-ecosystem_specific:
-  severity: MEDIUM
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30568
+  ecosystem_specific:
+    severity: MEDIUM

@@ -1,7 +1,4 @@
 id: OSV-2021-540
-package:
-  name: fwupd
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in g_array_append_vals
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=32249
@@ -11,16 +8,20 @@ details: |
   g_array_append_vals
   g_byte_array_append
   fu_efi_firmware_volume_write
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/fwupd/fwupd.git
-    introduced: 278c3998a5559a5fe31c2d42e85b796765495e56
-    fixed: be83a8eeeac807538cbfffc51ed683bf4e7be6d0
 modified: '2021-06-21T06:56:25.521910Z'
 published: '2021-03-21T00:00:08.667933Z'
-ecosystem_specific:
-  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=32249
+affected:
+- package:
+    name: fwupd
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/fwupd/fwupd.git
+    events:
+    - introduced: 278c3998a5559a5fe31c2d42e85b796765495e56
+    - fixed: be83a8eeeac807538cbfffc51ed683bf4e7be6d0
+  ecosystem_specific:
+    severity: MEDIUM

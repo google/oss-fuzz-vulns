@@ -1,7 +1,4 @@
 id: OSV-2021-520
-package:
-  name: flatbuffers
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in flatbuffers::EscapeString
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=32008
@@ -11,17 +8,21 @@ details: |
   flatbuffers::EscapeString
   flexbuffers::Reference::ToString
   void flexbuffers::AppendToString<flexbuffers::Vector>
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/google/flatbuffers
-    introduced: 8573108bbef495f3dd13db8353f43b2e86d25950
-  versions:
-  - v2.0.0
 modified: '2021-06-21T06:56:27.443086Z'
 published: '2021-03-14T00:00:58.325013Z'
-ecosystem_specific:
-  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=32008
+affected:
+- package:
+    name: flatbuffers
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/google/flatbuffers
+    events:
+    - introduced: 8573108bbef495f3dd13db8353f43b2e86d25950
+  versions:
+  - v2.0.0
+  ecosystem_specific:
+    severity: MEDIUM

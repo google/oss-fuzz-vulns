@@ -1,7 +1,4 @@
 id: OSV-2021-556
-package:
-  name: jackson-core
-  ecosystem: OSS-Fuzz
 summary: Uncaught exception in java.base/java.util.Arrays.copyOf
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=32423
@@ -11,19 +8,22 @@ details: |
   java.base/java.util.Arrays.copyOf
   com.fasterxml.jackson.core.util.TextBuffer.expandCurrentSegment
   com.fasterxml.jackson.core.json.UTF8StreamJsonParser.addName
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/FasterXML/jackson-core
-    introduced: 2bd85ebcdd94233d9e59a0833f29e06ce4281f3b
-    fixed: 0deae137735e1c81159e83bd1b4613e6d6b36501
 modified: '2021-06-23T06:25:11.269079Z'
 published: '2021-03-25T00:01:02.373925Z'
-ecosystem_specific:
-  severity: LOW
-database_specific:
-  introduced_range: b051c9036ee505a7e85c81a704e2e43c5397200f:8a2036e948ee849b922121c061c002cb0e131bfa
-  fixed_range: 8a2036e948ee849b922121c061c002cb0e131bfa:0deae137735e1c81159e83bd1b4613e6d6b36501
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=32423
+affected:
+- package:
+    name: jackson-core
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/FasterXML/jackson-core
+    events:
+    - introduced: 2bd85ebcdd94233d9e59a0833f29e06ce4281f3b
+    - fixed: 0deae137735e1c81159e83bd1b4613e6d6b36501
+  ecosystem_specific:
+    fixed_range: 8a2036e948ee849b922121c061c002cb0e131bfa:0deae137735e1c81159e83bd1b4613e6d6b36501
+    introduced_range: b051c9036ee505a7e85c81a704e2e43c5397200f:8a2036e948ee849b922121c061c002cb0e131bfa
+    severity: LOW

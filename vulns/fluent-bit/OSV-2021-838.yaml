@@ -1,7 +1,4 @@
 id: OSV-2021-838
-package:
-  name: fluent-bit
-  ecosystem: OSS-Fuzz
 summary: Heap-use-after-free in multiline_parser_conf_file
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34960
@@ -11,20 +8,21 @@ details: |
   multiline_parser_conf_file
   flb_parser_conf_file
   config_fuzzer.c
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/fluent/fluent-bit/
-    introduced: 03f3339594bdb472315823db78ca209b7ba319fb
-    fixed: 8f653c34c0dd46c39e2a5ebf9ff3fe9ec932fc4f
-  - type: GIT
-    repo: https://github.com/fluent/fluent-bit/
-    introduced: 03f3339594bdb472315823db78ca209b7ba319fb
-    fixed: ed82460da17f5a029df74503d3a5f8f69d29d3ea
 modified: '2021-06-21T06:56:24.351855Z'
 published: '2021-06-07T00:00:33.275043Z'
-ecosystem_specific:
-  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34960
+affected:
+- package:
+    name: fluent-bit
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/fluent/fluent-bit/
+    events:
+    - introduced: 03f3339594bdb472315823db78ca209b7ba319fb
+    - fixed: 8f653c34c0dd46c39e2a5ebf9ff3fe9ec932fc4f
+    - fixed: ed82460da17f5a029df74503d3a5f8f69d29d3ea
+  ecosystem_specific:
+    severity: HIGH

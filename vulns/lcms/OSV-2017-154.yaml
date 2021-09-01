@@ -1,7 +1,4 @@
 id: OSV-2017-154
-package:
-  name: lcms
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in TetrahedralInterpFloat
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=852
@@ -11,16 +8,20 @@ details: |
   TetrahedralInterpFloat
   _LUTeval16
   CachedXFORM
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/mm2/Little-CMS.git
-    introduced: 46a9220375da02b179bb6c0314b5cef40a433792
-    fixed: 76d1dccf3e5ce0c67125964d0908b322e7d1afb9
 modified: '2021-06-21T06:56:21.296269Z'
 published: '2021-01-15T00:01:25.369737Z'
-ecosystem_specific:
-  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=852
+affected:
+- package:
+    name: lcms
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/mm2/Little-CMS.git
+    events:
+    - introduced: 46a9220375da02b179bb6c0314b5cef40a433792
+    - fixed: 76d1dccf3e5ce0c67125964d0908b322e7d1afb9
+  ecosystem_specific:
+    severity: MEDIUM

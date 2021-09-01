@@ -1,7 +1,4 @@
 id: OSV-2020-53
-package:
-  name: oniguruma
-  ecosystem: OSS-Fuzz
 summary: Index-out-of-bounds in parse_exp
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22925
@@ -11,18 +8,21 @@ details: |
   parse_exp
   parse_branch
   parse_alts
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/kkos/oniguruma.git
-    introduced: 8b8b37ef8864a976641d4382293de7fe3d5edd62
-    fixed: 86f9fc7c620fa0e41f63b09bfd95e758d1e1f405
 modified: '2021-06-23T06:29:46.655159Z'
 published: '2020-06-24T01:51:11.960925Z'
-ecosystem_specific:
-  severity: MEDIUM
-database_specific:
-  introduced_range: efa4e3afb3926b2899e09a0d7c73bc7914e30c3a:bcccd7929f794d3ab5cb59c9fb1146322cd5510b
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22925
+affected:
+- package:
+    name: oniguruma
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/kkos/oniguruma.git
+    events:
+    - introduced: 8b8b37ef8864a976641d4382293de7fe3d5edd62
+    - fixed: 86f9fc7c620fa0e41f63b09bfd95e758d1e1f405
+  ecosystem_specific:
+    introduced_range: efa4e3afb3926b2899e09a0d7c73bc7914e30c3a:bcccd7929f794d3ab5cb59c9fb1146322cd5510b
+    severity: MEDIUM

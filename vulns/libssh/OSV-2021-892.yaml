@@ -1,7 +1,4 @@
 id: OSV-2021-892
-package:
-  name: libssh
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in explicit_bzero
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=35485
@@ -11,16 +8,20 @@ details: |
   explicit_bzero
   crypto_free
   ssh_disconnect
-affects:
-  ranges:
-  - type: GIT
-    repo: https://git.libssh.org/projects/libssh.git
-    introduced: ae184db913aef07d2cbfa9605f2af66f4d2365e5
-    fixed: f5211239f918acf405d104b200891ca58130e23e
 modified: '2021-06-24T00:01:20.018695Z'
 published: '2021-06-24T00:01:20.018361Z'
-ecosystem_specific:
-  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=35485
+affected:
+- package:
+    name: libssh
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://git.libssh.org/projects/libssh.git
+    events:
+    - introduced: ae184db913aef07d2cbfa9605f2af66f4d2365e5
+    - fixed: f5211239f918acf405d104b200891ca58130e23e
+  ecosystem_specific:
+    severity: HIGH

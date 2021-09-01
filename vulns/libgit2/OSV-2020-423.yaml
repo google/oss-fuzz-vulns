@@ -1,7 +1,4 @@
 id: OSV-2020-423
-package:
-  name: libgit2
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in stdalloc__strdup
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18356
@@ -11,16 +8,20 @@ details: |
   stdalloc__strdup
   parse_hunk_body
   parse_patch_hunks
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/libgit2/libgit2
-    introduced: b246bed5ab83035d8aef95f1b7ff10dd746db7cb
-    fixed: 6c6c15e935091a33f83d8de4ee5b0640339b2b89
 modified: '2021-06-21T06:56:21.931488Z'
 published: '2020-07-01T00:00:08.690856Z'
-ecosystem_specific:
-  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18356
+affected:
+- package:
+    name: libgit2
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/libgit2/libgit2
+    events:
+    - introduced: b246bed5ab83035d8aef95f1b7ff10dd746db7cb
+    - fixed: 6c6c15e935091a33f83d8de4ee5b0640339b2b89
+  ecosystem_specific:
+    severity: MEDIUM

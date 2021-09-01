@@ -1,7 +1,4 @@
 id: OSV-2020-389
-package:
-  name: curl
-  ecosystem: OSS-Fuzz
 summary: Use-of-uninitialized-value in smtp_state_ehlo_resp
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=16918
@@ -11,16 +8,20 @@ details: |
   smtp_state_ehlo_resp
   smtp_statemach_act
   Curl_pp_statemach
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/curl/curl.git
-    introduced: 84ced9389e1a7f576812e0675b37056331c4dbcd
-    fixed: 4d0306c6982ad80be532438265c52c39a55889a0
 modified: '2021-06-21T06:56:28.033920Z'
 published: '2020-07-01T00:00:06.761801Z'
-ecosystem_specific:
-  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=16918
+affected:
+- package:
+    name: curl
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/curl/curl.git
+    events:
+    - introduced: 84ced9389e1a7f576812e0675b37056331c4dbcd
+    - fixed: 4d0306c6982ad80be532438265c52c39a55889a0
+  ecosystem_specific:
+    severity: MEDIUM

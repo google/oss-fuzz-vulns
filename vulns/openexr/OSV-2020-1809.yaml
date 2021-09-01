@@ -1,7 +1,4 @@
 id: OSV-2020-1809
-package:
-  name: openexr
-  ecosystem: OSS-Fuzz
 summary: UNKNOWN WRITE in Imf_2_5::copyIntoFrameBuffer
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25770
@@ -11,16 +8,20 @@ details: |
   Imf_2_5::copyIntoFrameBuffer
   Imf_2_5::LineBufferTask::execute
   IlmThread_2_5::NullThreadPoolProvider::addTask
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/AcademySoftwareFoundation/openexr
-    introduced: ed560b8a932c78d5e8e5990ce36fe7808b35d9f0
-    fixed: 25e9515b06a6bc293d871622b8cafaee7af84e0f
 modified: '2021-06-21T06:56:23.446580Z'
 published: '2020-09-19T00:00:09.405373Z'
-ecosystem_specific:
-  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25770
+affected:
+- package:
+    name: openexr
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/AcademySoftwareFoundation/openexr
+    events:
+    - introduced: ed560b8a932c78d5e8e5990ce36fe7808b35d9f0
+    - fixed: 25e9515b06a6bc293d871622b8cafaee7af84e0f
+  ecosystem_specific:
+    severity: HIGH

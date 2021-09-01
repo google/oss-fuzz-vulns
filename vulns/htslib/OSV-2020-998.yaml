@@ -1,7 +1,4 @@
 id: OSV-2020-998
-package:
-  name: htslib
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in hts_md5_update
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20694
@@ -11,18 +8,21 @@ details: |
   hts_md5_update
   cram_decode_slice
   cram_next_slice
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/samtools/htslib.git
-    introduced: d8075641275729878bf2455ac9e999fed4263d9e
-    fixed: d6f15361ee63ff13dfb57f3eac119e3d50e65c56
 modified: '2021-06-23T06:25:11.811415Z'
 published: '2020-07-22T21:49:39.016161Z'
-ecosystem_specific:
-  severity: MEDIUM
-database_specific:
-  introduced_range: unknown:d8075641275729878bf2455ac9e999fed4263d9e
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20694
+affected:
+- package:
+    name: htslib
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/samtools/htslib.git
+    events:
+    - introduced: d8075641275729878bf2455ac9e999fed4263d9e
+    - fixed: d6f15361ee63ff13dfb57f3eac119e3d50e65c56
+  ecosystem_specific:
+    severity: MEDIUM
+    introduced_range: unknown:d8075641275729878bf2455ac9e999fed4263d9e

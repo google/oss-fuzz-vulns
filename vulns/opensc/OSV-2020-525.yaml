@@ -1,7 +1,4 @@
 id: OSV-2020-525
-package:
-  name: opensc
-  ecosystem: OSS-Fuzz
 summary: UNKNOWN READ in parse_sec_attr_44
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18693
@@ -11,16 +8,20 @@ details: |
   parse_sec_attr_44
   setcos_select_file
   sc_select_file
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/OpenSC/OpenSC
-    introduced: 6810eb6cf13f97ff20c5c68f49bef70ae977ddea
-    fixed: 7a1e42e1352201127d1a97b6cb5f41e48cace0f5
 modified: '2021-06-21T06:56:27.113213Z'
 published: '2020-07-01T00:00:14.612318Z'
-ecosystem_specific:
-  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18693
+affected:
+- package:
+    name: opensc
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/OpenSC/OpenSC
+    events:
+    - introduced: 6810eb6cf13f97ff20c5c68f49bef70ae977ddea
+    - fixed: 7a1e42e1352201127d1a97b6cb5f41e48cace0f5
+  ecosystem_specific:
+    severity: MEDIUM

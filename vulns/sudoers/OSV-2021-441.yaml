@@ -1,7 +1,4 @@
 id: OSV-2021-441
-package:
-  name: sudoers
-  ecosystem: OSS-Fuzz
 summary: UNKNOWN WRITE in sudoers_lookup_check
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31250
@@ -11,16 +8,20 @@ details: |
   sudoers_lookup_check
   sudoers_lookup
   fuzz_sudoers.c
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/sudo-project/sudo
-    introduced: df42c0c1d252db7528ab0dbf6c7b1aeaf0e2a4c7
-    fixed: 322e0b3693fa43d281ffe082a1e08e523e8dd17f
 modified: '2021-06-21T06:56:25.328820Z'
 published: '2021-02-24T00:00:14.005613Z'
-ecosystem_specific:
-  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31250
+affected:
+- package:
+    name: sudoers
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/sudo-project/sudo
+    events:
+    - introduced: df42c0c1d252db7528ab0dbf6c7b1aeaf0e2a4c7
+    - fixed: 322e0b3693fa43d281ffe082a1e08e523e8dd17f
+  ecosystem_specific:
+    severity: HIGH

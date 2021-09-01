@@ -1,7 +1,4 @@
 id: OSV-2021-614
-package:
-  name: cryptofuzz
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in ossl_aria_set_encrypt_key
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=33022
@@ -11,19 +8,22 @@ details: |
   ossl_aria_set_encrypt_key
   cipher_hw_aria_initkey
   cipher_generic_init_internal
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/guidovranken/cryptofuzz
-    introduced: 4487ff8fcb8639253b0139f83b2fca4a44f4c851
-    fixed: 0806bc7eaa7a0749585e368876ac723f69fa5e10
 modified: '2021-06-23T06:25:45.927947Z'
 published: '2021-04-09T00:00:06.878364Z'
-ecosystem_specific:
-  severity: MEDIUM
-database_specific:
-  fixed_range: a198cc04c3ffaf83007db19935d22d3e5de94e2d:0806bc7eaa7a0749585e368876ac723f69fa5e10
-  introduced_range: 7befe29cf175dda18b60b9016ba5775ff0936f7b:a198cc04c3ffaf83007db19935d22d3e5de94e2d
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=33022
+affected:
+- package:
+    name: cryptofuzz
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/guidovranken/cryptofuzz
+    events:
+    - introduced: 4487ff8fcb8639253b0139f83b2fca4a44f4c851
+    - fixed: 0806bc7eaa7a0749585e368876ac723f69fa5e10
+  ecosystem_specific:
+    fixed_range: a198cc04c3ffaf83007db19935d22d3e5de94e2d:0806bc7eaa7a0749585e368876ac723f69fa5e10
+    severity: MEDIUM
+    introduced_range: 7befe29cf175dda18b60b9016ba5775ff0936f7b:a198cc04c3ffaf83007db19935d22d3e5de94e2d

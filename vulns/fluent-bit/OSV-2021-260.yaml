@@ -1,7 +1,4 @@
 id: OSV-2021-260
-package:
-  name: fluent-bit
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in flb_parser_json_do
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30090
@@ -11,12 +8,21 @@ details: |
   flb_parser_json_do
   flb_parser_do
   parser_fuzzer.c
-affects:
+modified: '2021-06-21T06:56:24.486370Z'
+published: '2021-02-01T00:01:01.495854Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30090
+affected:
+- package:
+    name: fluent-bit
+    ecosystem: OSS-Fuzz
   ranges:
   - type: GIT
     repo: https://github.com/fluent/fluent-bit/
-    introduced: 68746b76af8b143daf477033a6799902be2f3cad
-    fixed: 6e6cb845e96de2474456aceb8d6ffdf42b19942c
+    events:
+    - introduced: 68746b76af8b143daf477033a6799902be2f3cad
+    - fixed: 6e6cb845e96de2474456aceb8d6ffdf42b19942c
   versions:
   - v1.7.0
   - v1.7.0-rc2
@@ -31,10 +37,5 @@ affects:
   - v1.7.2
   - v1.7.3
   - v1.7.4
-modified: '2021-06-21T06:56:24.486370Z'
-published: '2021-02-01T00:01:01.495854Z'
-ecosystem_specific:
-  severity: MEDIUM
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30090
+  ecosystem_specific:
+    severity: MEDIUM

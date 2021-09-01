@@ -1,7 +1,4 @@
 id: OSV-2021-495
-package:
-  name: libredwg
-  ecosystem: OSS-Fuzz
 summary: Heap-double-free in bit_chain_free
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31724
@@ -11,12 +8,21 @@ details: |
   bit_chain_free
   dwg_encode_MTEXT
   dwg_encode_add_object
-affects:
+modified: '2021-06-21T06:56:26.599766Z'
+published: '2021-03-06T00:00:08.738235Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31724
+affected:
+- package:
+    name: libredwg
+    ecosystem: OSS-Fuzz
   ranges:
   - type: GIT
     repo: https://github.com/LibreDWG/libredwg
-    introduced: 749923e4dfaf9b32e13282325decd78595a60c95
-    fixed: 9b6e0ff9ef02818df034fc42c3bd149a5ff89342
+    events:
+    - introduced: 749923e4dfaf9b32e13282325decd78595a60c95
+    - fixed: 9b6e0ff9ef02818df034fc42c3bd149a5ff89342
   versions:
   - 0.12.3.4163
   - 0.12.3.4165
@@ -28,10 +34,5 @@ affects:
   - 0.12.3.4185
   - 0.12.3.4189
   - 0.12.3.4191
-modified: '2021-06-21T06:56:26.599766Z'
-published: '2021-03-06T00:00:08.738235Z'
-ecosystem_specific:
-  severity: HIGH
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31724
+  ecosystem_specific:
+    severity: HIGH

@@ -1,7 +1,4 @@
 id: OSV-2020-1779
-package:
-  name: php
-  ecosystem: OSS-Fuzz
 summary: Heap-use-after-free in zend_gc_addref
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25697
@@ -11,15 +8,22 @@ details: |
   zend_gc_addref
   zend_generator_update_current
   zend_generator_dtor_storage
-affects:
+modified: '2021-06-21T06:56:20.998322Z'
+published: '2020-09-17T00:00:13.246764Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25697
+affected:
+- package:
+    name: php
+    ecosystem: OSS-Fuzz
   ranges:
   - type: GIT
     repo: https://github.com/php/php-src.git
-    introduced: f51bbcc2b2fd54ce75bf7d554a010c5bb5ea991d
-    fixed: dd4a080133b7b0570b629cdfb7c9e2651bdf88f7
-  - type: GIT
-    repo: https://github.com/php/php-src.git
-    introduced: 4e198c00646604b5fe6726cdc9eba4c2b7861ce2
+    events:
+    - introduced: f51bbcc2b2fd54ce75bf7d554a010c5bb5ea991d
+    - fixed: dd4a080133b7b0570b629cdfb7c9e2651bdf88f7
+    - introduced: 4e198c00646604b5fe6726cdc9eba4c2b7861ce2
   versions:
   - php-7.3.23
   - php-7.3.23RC1
@@ -45,10 +49,5 @@ affects:
   - php-8.0.0RC2
   - php-8.0.0beta4
   - php-8.0.0rc1
-modified: '2021-06-21T06:56:20.998322Z'
-published: '2020-09-17T00:00:13.246764Z'
-ecosystem_specific:
-  severity: HIGH
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25697
+  ecosystem_specific:
+    severity: HIGH

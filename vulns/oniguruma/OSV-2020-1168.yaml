@@ -1,7 +1,4 @@
 id: OSV-2020-1168
-package:
-  name: oniguruma
-  ecosystem: OSS-Fuzz
 summary: Use-of-uninitialized-value in gbNUMBER_mbc_enc_len
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21944
@@ -11,20 +8,23 @@ details: |
   gbNUMBER_mbc_enc_len
   onigenc_mb4_code_to_mbc
   parse_exp
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/kkos/oniguruma.git
-    introduced: efa4e3afb3926b2899e09a0d7c73bc7914e30c3a
-    fixed: 8b8b37ef8864a976641d4382293de7fe3d5edd62
-  versions:
-  - v6.9.5_rev1
 modified: '2021-06-23T06:29:42.114479Z'
 published: '2020-07-22T21:49:52.801225Z'
-ecosystem_specific:
-  severity: MEDIUM
-database_specific:
-  introduced_range: unknown:efa4e3afb3926b2899e09a0d7c73bc7914e30c3a
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21944
+affected:
+- package:
+    name: oniguruma
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/kkos/oniguruma.git
+    events:
+    - introduced: efa4e3afb3926b2899e09a0d7c73bc7914e30c3a
+    - fixed: 8b8b37ef8864a976641d4382293de7fe3d5edd62
+  versions:
+  - v6.9.5_rev1
+  ecosystem_specific:
+    introduced_range: unknown:efa4e3afb3926b2899e09a0d7c73bc7914e30c3a
+    severity: MEDIUM

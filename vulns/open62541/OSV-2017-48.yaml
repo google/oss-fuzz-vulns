@@ -1,7 +1,4 @@
 id: OSV-2017-48
-package:
-  name: open62541
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in Operation_addNode_finish
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=4183
@@ -11,16 +8,20 @@ details: |
   Operation_addNode_finish
   Service_AddNode
   UA_Server_processServiceOperations
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/open62541/open62541.git
-    introduced: 6610fcecc0a920346d391b41e8973e403ae3f731
-    fixed: 4ff3993542d66e3050beeb7351f339433239944e
 modified: '2021-06-21T06:56:26.803708Z'
 published: '2021-01-13T21:56:09.508442Z'
-ecosystem_specific:
-  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=4183
+affected:
+- package:
+    name: open62541
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/open62541/open62541.git
+    events:
+    - introduced: 6610fcecc0a920346d391b41e8973e403ae3f731
+    - fixed: 4ff3993542d66e3050beeb7351f339433239944e
+  ecosystem_specific:
+    severity: MEDIUM

@@ -1,7 +1,4 @@
 id: OSV-2020-1297
-package:
-  name: pcapplusplus
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in pcpp::DnsResource::getDataLength
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22102
@@ -11,18 +8,21 @@ details: |
   pcpp::DnsResource::getDataLength
   pcpp::DnsResource::getSize
   pcpp::DnsLayer::parseResources
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/seladb/PcapPlusPlus
-    introduced: 4366d2f86bf105025765a0ce3db6e647ba0f3508
-    fixed: 612455a2c65d08c0425dbad97ff67129091eb0e6
 modified: '2021-06-23T06:28:20.246181Z'
 published: '2020-07-22T21:50:04.093662Z'
-ecosystem_specific:
-  severity: MEDIUM
-database_specific:
-  introduced_range: unknown:4366d2f86bf105025765a0ce3db6e647ba0f3508
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22102
+affected:
+- package:
+    name: pcapplusplus
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/seladb/PcapPlusPlus
+    events:
+    - introduced: 4366d2f86bf105025765a0ce3db6e647ba0f3508
+    - fixed: 612455a2c65d08c0425dbad97ff67129091eb0e6
+  ecosystem_specific:
+    introduced_range: unknown:4366d2f86bf105025765a0ce3db6e647ba0f3508
+    severity: MEDIUM

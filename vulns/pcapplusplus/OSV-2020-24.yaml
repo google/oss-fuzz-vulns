@@ -1,7 +1,4 @@
 id: OSV-2020-24
-package:
-  name: pcapplusplus
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in pcpp::SSLCertificateRequestMessage::SSLCertificateRequestMessage
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23026
@@ -11,16 +8,20 @@ details: |
   pcpp::SSLCertificateRequestMessage::SSLCertificateRequestMessage
   pcpp::SSLHandshakeMessage::createHandhakeMessage
   pcpp::SSLHandshakeLayer::SSLHandshakeLayer
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/seladb/PcapPlusPlus
-    introduced: 50aab202d24331ef35b9eff68d96ef9f97baf6a1
-    fixed: 80adbb255c24e278425cb66878e7209258abb2b0
 modified: '2021-06-21T06:56:24.592807Z'
 published: '2020-06-24T01:51:10.683077Z'
-ecosystem_specific:
-  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23026
+affected:
+- package:
+    name: pcapplusplus
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/seladb/PcapPlusPlus
+    events:
+    - introduced: 50aab202d24331ef35b9eff68d96ef9f97baf6a1
+    - fixed: 80adbb255c24e278425cb66878e7209258abb2b0
+  ecosystem_specific:
+    severity: MEDIUM

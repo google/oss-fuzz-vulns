@@ -1,7 +1,4 @@
 id: OSV-2020-990
-package:
-  name: flac
-  ecosystem: OSS-Fuzz
 summary: UNKNOWN READ in FLAC__crc16_update_words32
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=16457
@@ -11,21 +8,22 @@ details: |
   FLAC__crc16_update_words32
   crc16_update_block_
   bitreader_read_from_client_
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/xiph/flac.git
-    introduced: 4ca0d85c5d0ea3e9d9afc4ac53b5187c9ab98689
-    fixed: c34c3459b514df02d922a882d406986e7f47afa4
-  - type: GIT
-    repo: https://github.com/xiph/flac.git
-    introduced: a718a5ac2d16ac2b0f4122f93daa0b48626d905d
 modified: '2021-06-23T06:50:51.555288Z'
 published: '2020-07-22T21:49:38.553384Z'
-ecosystem_specific:
-  severity: MEDIUM
-database_specific:
-  introduced_range: unknown:4ca0d85c5d0ea3e9d9afc4ac53b5187c9ab98689
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=16457
+affected:
+- package:
+    name: flac
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/xiph/flac.git
+    events:
+    - introduced: 4ca0d85c5d0ea3e9d9afc4ac53b5187c9ab98689
+    - fixed: c34c3459b514df02d922a882d406986e7f47afa4
+    - introduced: a718a5ac2d16ac2b0f4122f93daa0b48626d905d
+  ecosystem_specific:
+    severity: MEDIUM
+    introduced_range: unknown:4ca0d85c5d0ea3e9d9afc4ac53b5187c9ab98689

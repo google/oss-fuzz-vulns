@@ -1,7 +1,4 @@
 id: OSV-2020-1131
-package:
-  name: ndpi
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in ndpi_search_oscar_tcp_connect
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21000
@@ -11,20 +8,23 @@ details: |
   ndpi_search_oscar_tcp_connect
   check_ndpi_tcp_flow_func
   ndpi_detection_process_packet
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/ntop/nDPI.git
-    introduced: e695dd6eade754b2d50bdf297ca8bdc4105f93ff
-    fixed: 4976d93d4e7ce5e63cb562fb7f0f916c3103e2de
-  versions:
-  - '3.2'
 modified: '2021-06-23T06:26:03.529036Z'
 published: '2020-07-22T21:49:49.427461Z'
-ecosystem_specific:
-  severity: MEDIUM
-database_specific:
-  introduced_range: unknown:e695dd6eade754b2d50bdf297ca8bdc4105f93ff
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21000
+affected:
+- package:
+    name: ndpi
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/ntop/nDPI.git
+    events:
+    - introduced: e695dd6eade754b2d50bdf297ca8bdc4105f93ff
+    - fixed: 4976d93d4e7ce5e63cb562fb7f0f916c3103e2de
+  versions:
+  - '3.2'
+  ecosystem_specific:
+    severity: MEDIUM
+    introduced_range: unknown:e695dd6eade754b2d50bdf297ca8bdc4105f93ff

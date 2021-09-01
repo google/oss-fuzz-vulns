@@ -1,7 +1,4 @@
 id: OSV-2021-257
-package:
-  name: cryptofuzz
-  ecosystem: OSS-Fuzz
 summary: Stack-buffer-overflow in kdf_sshkdf_set_ctx_params
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30037
@@ -11,16 +8,20 @@ details: |
   kdf_sshkdf_set_ctx_params
   EVP_KDF_CTX_set_params
   cryptofuzz::module::OpenSSL::OpKDF_SSH
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/guidovranken/cryptofuzz
-    introduced: 354a934228d9892291a08c72115d9758e3079ee8
-    fixed: 515dd7aaf8ac0cbe6c0a5adc7aede32092cebf0a
 modified: '2021-06-21T06:56:21.869529Z'
 published: '2021-01-30T00:01:07.919205Z'
-ecosystem_specific:
-  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30037
+affected:
+- package:
+    name: cryptofuzz
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/guidovranken/cryptofuzz
+    events:
+    - introduced: 354a934228d9892291a08c72115d9758e3079ee8
+    - fixed: 515dd7aaf8ac0cbe6c0a5adc7aede32092cebf0a
+  ecosystem_specific:
+    severity: MEDIUM

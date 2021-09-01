@@ -1,7 +1,4 @@
 id: OSV-2020-257
-package:
-  name: libhevc
-  ecosystem: OSS-Fuzz
 summary: Heap-use-after-free in ihevcd_jobq_lock
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=17553
@@ -11,18 +8,22 @@ details: |
   ihevcd_jobq_lock
   ihevcd_jobq_yield
   ihevcd_jobq_dequeue
-affects:
-  ranges:
-  - type: GIT
-    repo: https://android.googlesource.com/platform/external/libhevc
-    introduced: fa260baf7bd50677334c8703f4be81151d8d92fe
-    fixed: 60f9768c9e8488be9f5b5ba88ffe0a4528504a68
-  versions:
-  - platform-tools-29.0.5
 modified: '2021-06-21T06:56:18.837915Z'
 published: '2020-06-30T00:00:41.839764Z'
-ecosystem_specific:
-  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=17553
+affected:
+- package:
+    name: libhevc
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://android.googlesource.com/platform/external/libhevc
+    events:
+    - introduced: fa260baf7bd50677334c8703f4be81151d8d92fe
+    - fixed: 60f9768c9e8488be9f5b5ba88ffe0a4528504a68
+  versions:
+  - platform-tools-29.0.5
+  ecosystem_specific:
+    severity: HIGH

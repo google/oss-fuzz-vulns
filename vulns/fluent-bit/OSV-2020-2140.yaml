@@ -1,7 +1,4 @@
 id: OSV-2020-2140
-package:
-  name: fluent-bit
-  ecosystem: OSS-Fuzz
 summary: Heap-double-free in flb_free
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=27279
@@ -11,20 +8,22 @@ details: |
   flb_free
   flb_http_client_destroy
   flb_http_client
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/fluent/fluent-bit/
-    introduced: 9e39d39a4e36e0e5909a04cef845556c2f38faa5
-    fixed: d75062d7cd6935cab4aab8e971ec6a91a50688d5
-  - type: GIT
-    repo: https://github.com/fluent/fluent-bit/
-    introduced: 13793381ff2b17544626372252900f85d45c02f3
-    fixed: 89a2486c83daaf0c63c53549ae6311057128da6a
 modified: '2021-06-21T06:56:24.321504Z'
 published: '2020-11-08T00:00:51.289278Z'
-ecosystem_specific:
-  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=27279
+affected:
+- package:
+    name: fluent-bit
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/fluent/fluent-bit/
+    events:
+    - introduced: 9e39d39a4e36e0e5909a04cef845556c2f38faa5
+    - fixed: d75062d7cd6935cab4aab8e971ec6a91a50688d5
+    - introduced: 13793381ff2b17544626372252900f85d45c02f3
+    - fixed: 89a2486c83daaf0c63c53549ae6311057128da6a
+  ecosystem_specific:
+    severity: HIGH

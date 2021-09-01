@@ -1,7 +1,4 @@
 id: OSV-2020-1883
-package:
-  name: ghostscript
-  ecosystem: OSS-Fuzz
 summary: Use-of-uninitialized-value in s_exD_process
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22225
@@ -11,24 +8,27 @@ details: |
   s_exD_process
   sreadbuf
   s_process_read_buf
-affects:
+modified: '2021-06-23T06:25:38.185483Z'
+published: '2020-09-29T00:00:42.068335Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22225
+affected:
+- package:
+    name: ghostscript
+    ecosystem: OSS-Fuzz
   ranges:
   - type: GIT
     repo: git://git.ghostscript.com/ghostpdl.git
-    introduced: 668917a10e7eada030f7d2dddec9f579fddeed3d
-    fixed: 825d6807a72b68a2faf11fc37f89b1b75967d727
+    events:
+    - introduced: 668917a10e7eada030f7d2dddec9f579fddeed3d
+    - fixed: 825d6807a72b68a2faf11fc37f89b1b75967d727
   versions:
   - ghostpdl-9.52-test-base-3
   - ghostpdl-9.52-test-base-4
   - ghostpdl-9.52-test-base-5
   - ghostpdl-9.52-test-base-6
-modified: '2021-06-23T06:25:38.185483Z'
-published: '2020-09-29T00:00:42.068335Z'
-ecosystem_specific:
-  severity: MEDIUM
-database_specific:
-  introduced_range: unknown:668917a10e7eada030f7d2dddec9f579fddeed3d
-  fixed_range: d68f56e25110ba3baf03553c2d1839febc02dbdb:825d6807a72b68a2faf11fc37f89b1b75967d727
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22225
+  ecosystem_specific:
+    fixed_range: d68f56e25110ba3baf03553c2d1839febc02dbdb:825d6807a72b68a2faf11fc37f89b1b75967d727
+    severity: MEDIUM
+    introduced_range: unknown:668917a10e7eada030f7d2dddec9f579fddeed3d

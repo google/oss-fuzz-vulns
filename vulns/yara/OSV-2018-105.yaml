@@ -1,7 +1,4 @@
 id: OSV-2018-105
-package:
-  name: yara
-  ecosystem: OSS-Fuzz
 summary: UNKNOWN READ in dotnet_parse_tilde_2
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11300
@@ -11,18 +8,22 @@ details: |
   dotnet_parse_tilde_2
   dotnet_parse_tilde
   dotnet_parse_com
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/VirusTotal/yara.git
-    introduced: aa182b4f928e54189fe51606d4dc419e7b27022f
-    fixed: 72c109ea85f1434237a292de3478f53554989453
-  versions:
-  - v3.9.0
 modified: '2021-06-21T06:56:27.598277Z'
 published: '2021-01-13T00:00:46.327625Z'
-ecosystem_specific:
-  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11300
+affected:
+- package:
+    name: yara
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/VirusTotal/yara.git
+    events:
+    - introduced: aa182b4f928e54189fe51606d4dc419e7b27022f
+    - fixed: 72c109ea85f1434237a292de3478f53554989453
+  versions:
+  - v3.9.0
+  ecosystem_specific:
+    severity: MEDIUM

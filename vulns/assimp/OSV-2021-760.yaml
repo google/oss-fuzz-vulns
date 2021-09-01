@@ -1,7 +1,4 @@
 id: OSV-2021-760
-package:
-  name: assimp
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in std::__1::char_traits<char>::length
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34230
@@ -11,15 +8,19 @@ details: |
   std::__1::char_traits<char>::length
   std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<ch
   ODDLParser::logInvalidTokenError
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/assimp/assimp.git
-    introduced: cb7d3ac598dcabbbd8b061ba79fd8a4c70468704
 modified: '2021-05-14T00:00:07.433923Z'
 published: '2021-05-14T00:00:07.433655Z'
-ecosystem_specific:
-  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34230
+affected:
+- package:
+    name: assimp
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/assimp/assimp.git
+    events:
+    - introduced: cb7d3ac598dcabbbd8b061ba79fd8a4c70468704
+  ecosystem_specific:
+    severity: MEDIUM

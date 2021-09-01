@@ -1,7 +1,4 @@
 id: OSV-2020-1981
-package:
-  name: opensc
-  ecosystem: OSS-Fuzz
 summary: Stack-buffer-overflow in fuzz_reader_transmit
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26103
@@ -11,16 +8,20 @@ details: |
   fuzz_reader_transmit
   sc_single_transmit
   sc_transmit
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/OpenSC/OpenSC
-    introduced: 732ed77ad67e5303c46c0fa767929afd87076c87
-    fixed: 0b40d3b999d1e9feddbd9ebd144cf7b11ab81020
 modified: '2021-06-21T06:56:27.133758Z'
 published: '2020-10-04T00:00:10.213058Z'
-ecosystem_specific:
-  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26103
+affected:
+- package:
+    name: opensc
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/OpenSC/OpenSC
+    events:
+    - introduced: 732ed77ad67e5303c46c0fa767929afd87076c87
+    - fixed: 0b40d3b999d1e9feddbd9ebd144cf7b11ab81020
+  ecosystem_specific:
+    severity: HIGH

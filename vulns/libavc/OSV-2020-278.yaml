@@ -1,7 +1,4 @@
 id: OSV-2020-278
-package:
-  name: libavc
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in ih264d_decode_slice_thread
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=19027
@@ -11,16 +8,22 @@ details: |
   ih264d_decode_slice_thread
   ih264d_decode_picture_thread
   clone
-affects:
+modified: '2021-06-21T06:56:22.193712Z'
+published: '2020-06-30T00:00:45.549045Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=19027
+affected:
+- package:
+    name: libavc
+    ecosystem: OSS-Fuzz
   ranges:
   - type: GIT
     repo: https://android.googlesource.com/platform/external/libavc
-    introduced: 82b7f933f46c179fb062f538271b966d938a3e38
-    fixed: c0215b1b3de1f40da5e5f5138422da012bcc89ae
-  - type: GIT
-    repo: https://android.googlesource.com/platform/external/libavc
-    introduced: 82b7f933f46c179fb062f538271b966d938a3e38
-    fixed: 6dd54b9e180c838c82767878d10c9615af2c5866
+    events:
+    - introduced: 82b7f933f46c179fb062f538271b966d938a3e38
+    - fixed: c0215b1b3de1f40da5e5f5138422da012bcc89ae
+    - fixed: 6dd54b9e180c838c82767878d10c9615af2c5866
   versions:
   - android-r-preview-1
   - android-r-preview-2
@@ -31,10 +34,5 @@ affects:
   - platform-tools-30.0.1
   - platform-tools-30.0.2
   - platform-tools-30.0.3
-modified: '2021-06-21T06:56:22.193712Z'
-published: '2020-06-30T00:00:45.549045Z'
-ecosystem_specific:
-  severity: MEDIUM
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=19027
+  ecosystem_specific:
+    severity: MEDIUM

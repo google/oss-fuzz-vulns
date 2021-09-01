@@ -1,7 +1,4 @@
 id: OSV-2020-480
-package:
-  name: libidn2
-  ecosystem: OSS-Fuzz
 summary: Use-of-uninitialized-value in _idn2_punycode_decode
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13359
@@ -11,16 +8,20 @@ details: |
   _idn2_punycode_decode
   _tr46
   idn2_lookup_u8
-affects:
-  ranges:
-  - type: GIT
-    repo: https://gitlab.com/libidn/libidn2.git
-    introduced: ce0d453222ca51c056f4f442988710eb0b696365
-    fixed: 734ef70e7e719e7aa777dbafbc727225bf71980a
 modified: '2021-06-21T06:56:26.950542Z'
 published: '2020-07-01T00:00:12.075127Z'
-ecosystem_specific:
-  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13359
+affected:
+- package:
+    name: libidn2
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://gitlab.com/libidn/libidn2.git
+    events:
+    - introduced: ce0d453222ca51c056f4f442988710eb0b696365
+    - fixed: 734ef70e7e719e7aa777dbafbc727225bf71980a
+  ecosystem_specific:
+    severity: MEDIUM

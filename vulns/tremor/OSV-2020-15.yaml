@@ -1,7 +1,4 @@
 id: OSV-2020-15
-package:
-  name: tremor
-  ecosystem: OSS-Fuzz
 summary: UNKNOWN READ in _01inverse
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22245
@@ -11,19 +8,22 @@ details: |
   _01inverse
   res1_inverse
   mapping0_inverse
-affects:
-  ranges:
-  - type: GIT
-    repo: https://gitlab.xiph.org/xiph/tremor.git
-    introduced: 7c30a66346199f3f09017a09567c6c8a3a0eedc8
-    fixed: 7c30a66346199f3f09017a09567c6c8a3a0eedc8
 modified: '2021-06-23T06:26:27.565670Z'
 published: '2020-06-24T01:51:10.221987Z'
-ecosystem_specific:
-  severity: MEDIUM
-database_specific:
-  fixed_range: b56ffce0c0773ec5ca04c466bc00b1bbcaf65aef:7c30a66346199f3f09017a09567c6c8a3a0eedc8
-  introduced_range: 7c30a66346199f3f09017a09567c6c8a3a0eedc8:b56ffce0c0773ec5ca04c466bc00b1bbcaf65aef
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22245
+affected:
+- package:
+    name: tremor
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://gitlab.xiph.org/xiph/tremor.git
+    events:
+    - introduced: 7c30a66346199f3f09017a09567c6c8a3a0eedc8
+    - fixed: 7c30a66346199f3f09017a09567c6c8a3a0eedc8
+  ecosystem_specific:
+    introduced_range: 7c30a66346199f3f09017a09567c6c8a3a0eedc8:b56ffce0c0773ec5ca04c466bc00b1bbcaf65aef
+    fixed_range: b56ffce0c0773ec5ca04c466bc00b1bbcaf65aef:7c30a66346199f3f09017a09567c6c8a3a0eedc8
+    severity: MEDIUM

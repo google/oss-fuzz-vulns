@@ -1,7 +1,4 @@
 id: OSV-2020-1351
-package:
-  name: opensc
-  ecosystem: OSS-Fuzz
 summary: Heap-use-after-free in sc_pkcs15_free_object
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=17170
@@ -11,20 +8,23 @@ details: |
   sc_pkcs15_free_object
   fuzz_pkcs15_decode.c
   fuzz_pkcs15_decode.c
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/OpenSC/OpenSC
-    introduced: b0241eefa1b47f1420456f5dbc43564d59961a54
-    fixed: d965156fe61df9f892b1c0555198b7b37daff437
-  versions:
-  - 0.20.0-rc1
 modified: '2021-06-23T06:30:02.375631Z'
 published: '2020-07-22T21:50:08.637276Z'
-ecosystem_specific:
-  severity: HIGH
-database_specific:
-  introduced_range: unknown:b0241eefa1b47f1420456f5dbc43564d59961a54
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=17170
+affected:
+- package:
+    name: opensc
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/OpenSC/OpenSC
+    events:
+    - introduced: b0241eefa1b47f1420456f5dbc43564d59961a54
+    - fixed: d965156fe61df9f892b1c0555198b7b37daff437
+  versions:
+  - 0.20.0-rc1
+  ecosystem_specific:
+    introduced_range: unknown:b0241eefa1b47f1420456f5dbc43564d59961a54
+    severity: HIGH

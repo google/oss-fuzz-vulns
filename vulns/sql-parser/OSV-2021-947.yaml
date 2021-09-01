@@ -1,7 +1,4 @@
 id: OSV-2021-947
-package:
-  name: sql-parser
-  ecosystem: OSS-Fuzz
 summary: Dynamic-stack-buffer-overflow in hsql::SQLParserResult::addStatement
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=35946
@@ -11,22 +8,22 @@ details: |
   hsql::SQLParserResult::addStatement
   hsql_parse
   hsql::SQLParser::parse
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/hyrise/sql-parser
-    introduced: 4248c7620c90c34e632cbee8c0264b858dff4818
-    fixed: 6c9bb2e4d6d312553185feea2173acc7fe0dabdb
-  - type: GIT
-    repo: https://github.com/hyrise/sql-parser
-    introduced: 4248c7620c90c34e632cbee8c0264b858dff4818
-    fixed: 91f768c1cb3bf9105d5296366876b13ac4118516
 modified: '2021-07-12T00:04:49.358234Z'
 published: '2021-07-10T00:01:12.069383Z'
-ecosystem_specific:
-  severity: null
-database_specific:
-  introduced_range: 55f9dd2a6d23ddb26d8371961b9a51beb79fc5fb:6c9bb2e4d6d312553185feea2173acc7fe0dabdb
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=35946
+affected:
+- package:
+    name: sql-parser
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/hyrise/sql-parser
+    events:
+    - introduced: 4248c7620c90c34e632cbee8c0264b858dff4818
+    - fixed: 6c9bb2e4d6d312553185feea2173acc7fe0dabdb
+    - fixed: 91f768c1cb3bf9105d5296366876b13ac4118516
+  ecosystem_specific:
+    introduced_range: 55f9dd2a6d23ddb26d8371961b9a51beb79fc5fb:6c9bb2e4d6d312553185feea2173acc7fe0dabdb
+    severity: null

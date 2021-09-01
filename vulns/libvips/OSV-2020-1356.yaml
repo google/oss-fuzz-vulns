@@ -1,7 +1,4 @@
 id: OSV-2020-1356
-package:
-  name: libvips
-  ecosystem: OSS-Fuzz
 summary: Segv on unknown address in vips_XYZ2Lab_line
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24290
@@ -11,14 +8,18 @@ details: |
   vips_XYZ2Lab_line
   vips_colour_gen
   vips_region_generate
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/libvips/libvips
-    introduced: 54791b221cf4cad622f988f03d54502f70c91ad9
-    fixed: 3460814b9862795015e2295272157a72555ff4fd
+modified: '2021-03-09T04:49:05.226051Z'
+published: '2020-07-24T00:00:05.678188Z'
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24290
-modified: '2021-03-09T04:49:05.226051Z'
-published: '2020-07-24T00:00:05.678188Z'
+affected:
+- package:
+    name: libvips
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/libvips/libvips
+    events:
+    - introduced: 54791b221cf4cad622f988f03d54502f70c91ad9
+    - fixed: 3460814b9862795015e2295272157a72555ff4fd

@@ -1,7 +1,4 @@
 id: OSV-2018-142
-package:
-  name: freetype2
-  ecosystem: OSS-Fuzz
 summary: UNKNOWN READ in cff_decoder_parse_charstrings
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11157
@@ -11,19 +8,22 @@ details: |
   cff_decoder_parse_charstrings
   cff_slot_load
   FT_Load_Glyph
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/freetype/freetype2-testing.git
-    introduced: 731c059129aeb228ea62d8cad40c71dcaa9530b2
-    fixed: f3e8aba79174d95cfb222a0af5ce377cc22ecc1a
 modified: '2021-06-23T06:25:40.983570Z'
 published: '2021-01-13T00:01:01.333392Z'
-ecosystem_specific:
-  severity: MEDIUM
-database_specific:
-  introduced_range: f926f1a2f4dbbc61fcae96da71ba65de5280b94d:4fa3193a6e42c6e65bea0698c85d5a4792e2351c
-  fixed_range: e9d2381ddc89ee53cfeb051429628f59416ba7e7:f3e8aba79174d95cfb222a0af5ce377cc22ecc1a
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11157
+affected:
+- package:
+    name: freetype2
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/freetype/freetype2-testing.git
+    events:
+    - introduced: 731c059129aeb228ea62d8cad40c71dcaa9530b2
+    - fixed: f3e8aba79174d95cfb222a0af5ce377cc22ecc1a
+  ecosystem_specific:
+    introduced_range: f926f1a2f4dbbc61fcae96da71ba65de5280b94d:4fa3193a6e42c6e65bea0698c85d5a4792e2351c
+    fixed_range: e9d2381ddc89ee53cfeb051429628f59416ba7e7:f3e8aba79174d95cfb222a0af5ce377cc22ecc1a
+    severity: MEDIUM

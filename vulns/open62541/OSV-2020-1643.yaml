@@ -1,7 +1,4 @@
 id: OSV-2020-1643
-package:
-  name: open62541
-  ecosystem: OSS-Fuzz
 summary: Heap-use-after-free in UA_NodeMap_delete
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25068
@@ -11,19 +8,22 @@ details: |
   UA_NodeMap_delete
   UA_Server_new
   fuzz_binary_message.cc
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/open62541/open62541.git
-    introduced: 1654d021012b93ff669c022499fd80c47a73e72e
-    fixed: 46a618acfbb3a71f3ccabcbc26cd620636300868
 modified: '2021-06-23T06:30:02.290679Z'
 published: '2020-08-22T00:00:17.203907Z'
-ecosystem_specific:
-  severity: HIGH
-database_specific:
-  fixed_range: ee275e79310280a71fad3b21f6d430c0c046091b:46a618acfbb3a71f3ccabcbc26cd620636300868
-  introduced_range: 5478e563159ecc3269ccce3d3088135776ca933a:ee275e79310280a71fad3b21f6d430c0c046091b
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25068
+affected:
+- package:
+    name: open62541
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/open62541/open62541.git
+    events:
+    - introduced: 1654d021012b93ff669c022499fd80c47a73e72e
+    - fixed: 46a618acfbb3a71f3ccabcbc26cd620636300868
+  ecosystem_specific:
+    introduced_range: 5478e563159ecc3269ccce3d3088135776ca933a:ee275e79310280a71fad3b21f6d430c0c046091b
+    fixed_range: ee275e79310280a71fad3b21f6d430c0c046091b:46a618acfbb3a71f3ccabcbc26cd620636300868
+    severity: HIGH
