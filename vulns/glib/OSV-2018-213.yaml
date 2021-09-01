@@ -1,4 +1,7 @@
 id: OSV-2018-213
+package:
+  name: glib
+  ecosystem: OSS-Fuzz
 summary: Use-of-uninitialized-value in gvs_tuple_is_normal
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=9840
@@ -8,28 +11,25 @@ details: |
   gvs_tuple_is_normal
   g_variant_serialised_is_normal
   gvs_variant_is_normal
-modified: '2021-06-23T06:25:13.637336Z'
-published: '2021-01-13T00:01:26.534121Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=9840
-affected:
-- package:
-    name: glib
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://gitlab.gnome.org/GNOME/glib
-    events:
-    - introduced: 10ee7301e8edb13e59143ee5653cd2b46e26c044
-    - fixed: 035975da099dc5f4e06d02af4d593c8cf22a2234
+    introduced: 10ee7301e8edb13e59143ee5653cd2b46e26c044
+    fixed: 035975da099dc5f4e06d02af4d593c8cf22a2234
   versions:
   - 2.57.3
   - 2.58.0
   - 2.58.1
   - 2.58.2
   - 2.58.3
-  ecosystem_specific:
-    fixed_range: fb65dda651e7a46e4dee71ec6b810edeb17a9c33:035975da099dc5f4e06d02af4d593c8cf22a2234
-    severity: MEDIUM
-    introduced_range: 8defa46e6ec16aa3722aa0ac0bc3db0fecd86c45:0d271223d894e9c69b7fa6b7983511f8ad770682
+modified: '2021-06-23T06:25:13.637336Z'
+published: '2021-01-13T00:01:26.534121Z'
+ecosystem_specific:
+  severity: MEDIUM
+database_specific:
+  fixed_range: fb65dda651e7a46e4dee71ec6b810edeb17a9c33:035975da099dc5f4e06d02af4d593c8cf22a2234
+  introduced_range: 8defa46e6ec16aa3722aa0ac0bc3db0fecd86c45:0d271223d894e9c69b7fa6b7983511f8ad770682
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=9840

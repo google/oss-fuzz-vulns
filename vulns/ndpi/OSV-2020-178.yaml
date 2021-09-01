@@ -1,4 +1,7 @@
 id: OSV-2020-178
+package:
+  name: ndpi
+  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in concat_hash_string
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21257
@@ -8,22 +11,18 @@ details: |
   concat_hash_string
   ndpi_search_ssh_tcp
   search_ssh_again
-modified: '2021-06-21T06:56:22.793900Z'
-published: '2020-06-24T01:51:17.576965Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21257
-affected:
-- package:
-    name: ndpi
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/ntop/nDPI.git
-    events:
-    - introduced: 812505b56bb4508bc42e1615d6425ad26444d3f8
-    - fixed: c6acf97bfbe5ad26db3c2f5dd4d379ac674d6fb3
+    introduced: 812505b56bb4508bc42e1615d6425ad26444d3f8
+    fixed: c6acf97bfbe5ad26db3c2f5dd4d379ac674d6fb3
   versions:
   - '3.2'
-  ecosystem_specific:
-    severity: MEDIUM
+modified: '2021-06-21T06:56:22.793900Z'
+published: '2020-06-24T01:51:17.576965Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21257

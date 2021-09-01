@@ -1,4 +1,7 @@
 id: OSV-2017-97
+package:
+  name: librawspeed
+  ecosystem: OSS-Fuzz
 summary: Use-after-poison in rawspeed::unroll_loop_t<void rawspeed::LJpegDecompressor::decodeN<4>
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=4451
@@ -8,21 +11,18 @@ details: |
   rawspeed::unroll_loop_t<void rawspeed::LJpegDecompressor::decodeN<4>
   void rawspeed::LJpegDecompressor::decodeN<4>
   rawspeed::AbstractLJpegDecompressor::decode
-modified: '2021-06-23T06:26:06.526729Z'
-published: '2021-01-13T21:57:40.779998Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=4451
-affected:
-- package:
-    name: librawspeed
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/darktable-org/rawspeed.git
-    events:
-    - introduced: 45e6fd6c608326ae7df6419c62cc8db6a2f15281
-    - fixed: 580add2219c696e425087bc61b952f4ccb295f09
-  ecosystem_specific:
-    severity: HIGH
-    fixed_range: 297ccdd0e7dfd378aeb2a3896987baa5d96ed344:580add2219c696e425087bc61b952f4ccb295f09
+    introduced: 45e6fd6c608326ae7df6419c62cc8db6a2f15281
+    fixed: 580add2219c696e425087bc61b952f4ccb295f09
+modified: '2021-06-23T06:26:06.526729Z'
+published: '2021-01-13T21:57:40.779998Z'
+ecosystem_specific:
+  severity: HIGH
+database_specific:
+  fixed_range: 297ccdd0e7dfd378aeb2a3896987baa5d96ed344:580add2219c696e425087bc61b952f4ccb295f09
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=4451

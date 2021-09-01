@@ -1,4 +1,7 @@
 id: OSV-2020-322
+package:
+  name: lwan
+  ecosystem: OSS-Fuzz
 summary: Negative-size-param in parse_proxy_protocol_v2
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14455
@@ -8,18 +11,14 @@ details: |
   parse_proxy_protocol_v2
   parse_http_request
   fuzz_parse_http_request
-modified: '2021-03-09T04:49:05.824910Z'
-published: '2020-07-01T00:00:02.608126Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14455
-affected:
-- package:
-    name: lwan
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: git://github.com/lpereira/lwan
-    events:
-    - introduced: abf6eda654c8336e2ffe4e5c1a5179576da185c5
-    - fixed: b506275b36827f194bc15d77bd6d2f8f7b3b935f
+    introduced: abf6eda654c8336e2ffe4e5c1a5179576da185c5
+    fixed: b506275b36827f194bc15d77bd6d2f8f7b3b935f
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14455
+modified: '2021-03-09T04:49:05.824910Z'
+published: '2020-07-01T00:00:02.608126Z'

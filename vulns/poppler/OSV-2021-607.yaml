@@ -1,4 +1,7 @@
 id: OSV-2021-607
+package:
+  name: poppler
+  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in TextPool::getPool
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=32952
@@ -8,21 +11,12 @@ details: |
   TextPool::getPool
   TextPage::coalesce
   TextOutputDev::endPage
-modified: '2021-06-21T06:56:23.517930Z'
-published: '2021-04-07T00:01:06.549627Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=32952
-affected:
-- package:
-    name: poppler
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://gitlab.freedesktop.org/poppler/poppler.git
-    events:
-    - introduced: 69d86f90e30785a0db76d3898914de4c0782b947
-    - fixed: 2ed4cd66401bc1d9683c94238e9024218d7be3ba
+    introduced: 69d86f90e30785a0db76d3898914de4c0782b947
+    fixed: 2ed4cd66401bc1d9683c94238e9024218d7be3ba
   versions:
   - poppler-0.75.0
   - poppler-0.76.0
@@ -53,5 +47,10 @@ affected:
   - poppler-21.02.0
   - poppler-21.03.0
   - poppler-21.04.0
-  ecosystem_specific:
-    severity: MEDIUM
+modified: '2021-06-21T06:56:23.517930Z'
+published: '2021-04-07T00:01:06.549627Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=32952

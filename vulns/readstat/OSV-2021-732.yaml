@@ -1,4 +1,7 @@
 id: OSV-2021-732
+package:
+  name: readstat
+  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in readstat_convert
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=33991
@@ -8,20 +11,11 @@ details: |
   readstat_convert
   sav_process_row
   sav_read_uncompressed_data
-modified: '2021-08-19T00:05:38.712867Z'
-published: '2021-05-06T00:00:30.987446Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=33991
-affected:
-- package:
-    name: readstat
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/WizardMac/ReadStat
-    events:
-    - introduced: 8bfe4983798947b648204b408916360cefe73d93
+    introduced: 8bfe4983798947b648204b408916360cefe73d93
   versions:
   - v1.1.6
   - v1.1.6-rc0
@@ -29,5 +23,10 @@ affected:
   - v1.1.7-rc0
   - v1.1.7-rc1
   - v1.1.7
-  ecosystem_specific:
-    severity: MEDIUM
+modified: '2021-08-19T00:05:38.712867Z'
+published: '2021-05-06T00:00:30.987446Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=33991

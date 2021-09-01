@@ -1,4 +1,7 @@
 id: OSV-2020-2060
+package:
+  name: wolfssl
+  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in fp_to_unsigned_bin_at_pos
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26295
@@ -8,21 +11,18 @@ details: |
   fp_to_unsigned_bin_at_pos
   fp_to_unsigned_bin
   mp_to_unsigned_bin
-modified: '2021-06-23T06:26:01.354050Z'
-published: '2020-10-14T00:00:10.194970Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26295
-affected:
-- package:
-    name: wolfssl
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/wolfssl/wolfssl
-    events:
-    - introduced: 83cdd1c314af5d6326470254b3cdbb9d85182348
-    - fixed: ebde736ee742e2152268289b2d286077ff951ea7
-  ecosystem_specific:
-    severity: HIGH
-    introduced_range: deaf3b4b40d26663191d085557fbeb8cafa420ae:881657782478cef4a1527847bb2c4cd427bd6c99
+    introduced: 83cdd1c314af5d6326470254b3cdbb9d85182348
+    fixed: ebde736ee742e2152268289b2d286077ff951ea7
+modified: '2021-06-23T06:26:01.354050Z'
+published: '2020-10-14T00:00:10.194970Z'
+ecosystem_specific:
+  severity: HIGH
+database_specific:
+  introduced_range: deaf3b4b40d26663191d085557fbeb8cafa420ae:881657782478cef4a1527847bb2c4cd427bd6c99
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26295

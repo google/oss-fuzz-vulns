@@ -1,4 +1,7 @@
 id: OSV-2018-216
+package:
+  name: glib
+  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in token_stream_prepare
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=9806
@@ -8,23 +11,20 @@ details: |
   token_stream_prepare
   token_stream_peek_string
   token_stream_consume
-modified: '2021-06-23T06:25:17.781472Z'
-published: '2021-01-13T00:01:27.343126Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=9806
-affected:
-- package:
-    name: glib
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://gitlab.gnome.org/GNOME/glib
-    events:
-    - introduced: 10ee7301e8edb13e59143ee5653cd2b46e26c044
-    - fixed: 297941e049f819771f0ce0ba5623a6e60da9c208
+    introduced: 10ee7301e8edb13e59143ee5653cd2b46e26c044
+    fixed: 297941e049f819771f0ce0ba5623a6e60da9c208
   versions:
   - 2.57.3
-  ecosystem_specific:
-    severity: MEDIUM
-    introduced_range: 8defa46e6ec16aa3722aa0ac0bc3db0fecd86c45:0d271223d894e9c69b7fa6b7983511f8ad770682
+modified: '2021-06-23T06:25:17.781472Z'
+published: '2021-01-13T00:01:27.343126Z'
+ecosystem_specific:
+  severity: MEDIUM
+database_specific:
+  introduced_range: 8defa46e6ec16aa3722aa0ac0bc3db0fecd86c45:0d271223d894e9c69b7fa6b7983511f8ad770682
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=9806

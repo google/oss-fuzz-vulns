@@ -1,4 +1,7 @@
 id: OSV-2021-822
+package:
+  name: serenity
+  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in AK::Formatter<char const*, void>::format
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34863
@@ -8,19 +11,15 @@ details: |
   AK::Formatter<char const*, void>::format
   void AK::__format_value<char const*>
   AK::vformat_impl
-modified: '2021-06-21T06:56:19.842039Z'
-published: '2021-06-03T00:00:53.648543Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34863
-affected:
-- package:
-    name: serenity
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/SerenityOS/serenity
-    events:
-    - introduced: 81f03e7a5d2b78f750d525c27b964ffe9bad6179
-  ecosystem_specific:
-    severity: MEDIUM
+    introduced: 81f03e7a5d2b78f750d525c27b964ffe9bad6179
+modified: '2021-06-21T06:56:19.842039Z'
+published: '2021-06-03T00:00:53.648543Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34863

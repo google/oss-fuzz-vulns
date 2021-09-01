@@ -1,4 +1,7 @@
 id: OSV-2017-29
+package:
+  name: open62541
+  ecosystem: OSS-Fuzz
 summary: Heap-use-after-free in UInt32_encodeBinary
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=4764
@@ -8,20 +11,16 @@ details: |
   UInt32_encodeBinary
   UA_encodeBinaryInternal
   UA_encodeBinary
-modified: '2021-06-21T06:56:26.809726Z'
-published: '2021-01-13T00:01:34.623502Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=4764
-affected:
-- package:
-    name: open62541
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/open62541/open62541.git
-    events:
-    - introduced: 92b1758a64c8adf945dd8a2306cf2d139963fb95
-    - fixed: 6f689994e1e530142d01988659ac1b1d7dbd7237
-  ecosystem_specific:
-    severity: HIGH
+    introduced: 92b1758a64c8adf945dd8a2306cf2d139963fb95
+    fixed: 6f689994e1e530142d01988659ac1b1d7dbd7237
+modified: '2021-06-21T06:56:26.809726Z'
+published: '2021-01-13T00:01:34.623502Z'
+ecosystem_specific:
+  severity: HIGH
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=4764

@@ -1,4 +1,7 @@
 id: OSV-2020-1550
+package:
+  name: harfbuzz
+  ecosystem: OSS-Fuzz
 summary: UNKNOWN WRITE in hb_vector_t<CFF::dict_val_t>::resize
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24489
@@ -8,20 +11,16 @@ details: |
   hb_vector_t<CFF::dict_val_t>::resize
   hb_vector_t<CFF::dict_val_t>::push
   CFF::dict_val_t* hb_vector_t<CFF::dict_val_t>::push<CFF::dict_val_t const&>
-modified: '2021-06-21T06:56:20.605051Z'
-published: '2020-07-31T00:00:44.183338Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24489
-affected:
-- package:
-    name: harfbuzz
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/harfbuzz/harfbuzz.git
-    events:
-    - introduced: c33e8006fdaec3b4acf8927c75e04129e0410a59
-    - fixed: d307c24abf37b2702706cf9df0fab571a99e2a70
-  ecosystem_specific:
-    severity: HIGH
+    introduced: c33e8006fdaec3b4acf8927c75e04129e0410a59
+    fixed: d307c24abf37b2702706cf9df0fab571a99e2a70
+modified: '2021-06-21T06:56:20.605051Z'
+published: '2020-07-31T00:00:44.183338Z'
+ecosystem_specific:
+  severity: HIGH
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24489

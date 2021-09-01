@@ -1,4 +1,7 @@
 id: OSV-2021-764
+package:
+  name: espeak-ng
+  ecosystem: OSS-Fuzz
 summary: Stack-buffer-overflow in TranslateNumber_1
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34285
@@ -8,19 +11,15 @@ details: |
   TranslateNumber_1
   TranslateNumber
   TranslateWord3
-modified: '2021-05-15T00:00:11.842140Z'
-published: '2021-05-15T00:00:11.841899Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34285
-affected:
-- package:
-    name: espeak-ng
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/espeak-ng/espeak-ng
-    events:
-    - introduced: 0a713d52bbf3e061823d1a7f35e5303e7320f27a
-  ecosystem_specific:
-    severity: MEDIUM
+    introduced: 0a713d52bbf3e061823d1a7f35e5303e7320f27a
+modified: '2021-05-15T00:00:11.842140Z'
+published: '2021-05-15T00:00:11.841899Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34285

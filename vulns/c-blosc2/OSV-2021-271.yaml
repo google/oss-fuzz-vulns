@@ -1,4 +1,7 @@
 id: OSV-2021-271
+package:
+  name: c-blosc2
+  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in blosc_run_decompression_with_context
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30193
@@ -8,20 +11,16 @@ details: |
   blosc_run_decompression_with_context
   blosc2_decompress
   fuzz_decompress_chunk.c
-modified: '2021-06-21T06:56:26.055737Z'
-published: '2021-02-04T00:00:11.762563Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30193
-affected:
-- package:
-    name: c-blosc2
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/Blosc/c-blosc2.git
-    events:
-    - introduced: c473b21cff5e1a459b4467f18bf7414114f848fd
-    - fixed: 57fca38a4f51687d71e451ae29df6b353764fb72
-  ecosystem_specific:
-    severity: MEDIUM
+    introduced: c473b21cff5e1a459b4467f18bf7414114f848fd
+    fixed: 57fca38a4f51687d71e451ae29df6b353764fb72
+modified: '2021-06-21T06:56:26.055737Z'
+published: '2021-02-04T00:00:11.762563Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30193

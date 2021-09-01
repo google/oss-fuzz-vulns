@@ -1,4 +1,7 @@
 id: OSV-2021-771
+package:
+  name: libredwg
+  ecosystem: OSS-Fuzz
 summary: Heap-use-after-free in dwg_free_TABLEGEOMETRY_private
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34377
@@ -8,20 +11,11 @@ details: |
   dwg_free_TABLEGEOMETRY_private
   dwg_free_TABLEGEOMETRY
   dwg_free_variable_no_class
-modified: '2021-05-18T00:00:05.876243Z'
-published: '2021-05-18T00:00:05.875957Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34377
-affected:
-- package:
-    name: libredwg
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/LibreDWG/libredwg
-    events:
-    - introduced: cb74d5cf5bffc2a9dee8da43105d892f9a728777
+    introduced: cb74d5cf5bffc2a9dee8da43105d892f9a728777
   versions:
   - 0.12.3.4163
   - 0.12.3.4165
@@ -66,5 +60,10 @@ affected:
   - 0.12.4.4338
   - 0.12.4.4343
   - 0.12.4.4348
-  ecosystem_specific:
-    severity: null
+modified: '2021-05-18T00:00:05.876243Z'
+published: '2021-05-18T00:00:05.875957Z'
+ecosystem_specific:
+  severity: null
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34377

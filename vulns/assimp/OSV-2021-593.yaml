@@ -1,4 +1,7 @@
 id: OSV-2021-593
+package:
+  name: assimp
+  ecosystem: OSS-Fuzz
 summary: Heap-use-after-free in std::__1::vector<char, std::__1::allocator<char> >::size
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=32822
@@ -8,20 +11,16 @@ details: |
   std::__1::vector<char, std::__1::allocator<char> >::size
   std::__1::vector<char, std::__1::allocator<char> >::resize
   Assimp::TXmlParser<pugi::xml_node>::clear
-modified: '2021-06-21T06:56:27.964360Z'
-published: '2021-04-03T00:00:08.237159Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=32822
-affected:
-- package:
-    name: assimp
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/assimp/assimp.git
-    events:
-    - introduced: 18af013c9efa4e11d17988c697e197aabd6ffceb
-    - fixed: 75af93aaa41c8633c0c0ffb75fd464cfe8a8133d
-  ecosystem_specific:
-    severity: HIGH
+    introduced: 18af013c9efa4e11d17988c697e197aabd6ffceb
+    fixed: 75af93aaa41c8633c0c0ffb75fd464cfe8a8133d
+modified: '2021-06-21T06:56:27.964360Z'
+published: '2021-04-03T00:00:08.237159Z'
+ecosystem_specific:
+  severity: HIGH
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=32822

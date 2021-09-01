@@ -1,4 +1,7 @@
 id: OSV-2020-769
+package:
+  name: perfetto
+  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in perfetto::trace_processor::ClockTracker::ConvertSlowpath
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23149
@@ -8,21 +11,12 @@ details: |
   perfetto::trace_processor::ClockTracker::ConvertSlowpath
   perfetto::trace_processor::ClockTracker::Convert
   perfetto::trace_processor::ClockTracker::ToTraceTime
-modified: '2021-06-21T06:56:27.394177Z'
-published: '2020-07-10T00:00:21.254899Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23149
-affected:
-- package:
-    name: perfetto
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://android.googlesource.com/platform/external/perfetto/
-    events:
-    - introduced: 8b479acd06465a569dd00fee7b279199d35f516f
-    - fixed: 509812647060893522be508e0ab5b6c62dec03bd
+    introduced: 8b479acd06465a569dd00fee7b279199d35f516f
+    fixed: 509812647060893522be508e0ab5b6c62dec03bd
   versions:
   - android-11.0.0_r1
   - android-11.0.0_r10
@@ -71,5 +65,10 @@ affected:
   - android-vts-11.0_r3
   - v5.0
   - v5.1
-  ecosystem_specific:
-    severity: MEDIUM
+modified: '2021-06-21T06:56:27.394177Z'
+published: '2020-07-10T00:00:21.254899Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23149

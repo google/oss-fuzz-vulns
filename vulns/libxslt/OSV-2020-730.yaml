@@ -1,4 +1,7 @@
 id: OSV-2020-730
+package:
+  name: libxslt
+  ecosystem: OSS-Fuzz
 summary: Use-of-uninitialized-value in xmlOutputBufferWriteEscape
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15914
@@ -8,20 +11,16 @@ details: |
   xmlOutputBufferWriteEscape
   xmlNodeDumpOutput
   xsltSaveResultTo
-modified: '2021-06-21T06:56:21.129311Z'
-published: '2020-07-01T00:00:27.090633Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15914
-affected:
-- package:
-    name: libxslt
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://gitlab.gnome.org/GNOME/libxslt.git
-    events:
-    - introduced: 311da8c8864e4f4f838434d769e0644cc02c9da9
-    - fixed: 2232473733b7313d67de8836ea3b29eec6e8e285
-  ecosystem_specific:
-    severity: MEDIUM
+    introduced: 311da8c8864e4f4f838434d769e0644cc02c9da9
+    fixed: 2232473733b7313d67de8836ea3b29eec6e8e285
+modified: '2021-06-21T06:56:21.129311Z'
+published: '2020-07-01T00:00:27.090633Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15914

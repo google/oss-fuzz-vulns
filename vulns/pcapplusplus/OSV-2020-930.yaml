@@ -1,4 +1,7 @@
 id: OSV-2020-930
+package:
+  name: pcapplusplus
+  ecosystem: OSS-Fuzz
 summary: Use-of-uninitialized-value in std::__1::basic_string<char, std::__1::char_traits<char>,
   std::__1::allocator<ch
 details: |
@@ -9,22 +12,19 @@ details: |
   std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<ch
   pcpp::IDnsResource::IDnsResource
   pcpp::DnsQuery::DnsQuery
-modified: '2021-06-23T06:28:20.837011Z'
-published: '2020-07-22T00:00:13.459266Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22087
-affected:
-- package:
-    name: pcapplusplus
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/seladb/PcapPlusPlus
-    events:
-    - introduced: 4366d2f86bf105025765a0ce3db6e647ba0f3508
-    - fixed: 5ef0c6da8c34b5d4155f865e94bdf83cb18fcbad
-  ecosystem_specific:
-    severity: MEDIUM
-    fixed_range: 016e90f193d4383b94143d0b2be26408cc32c703:5ef0c6da8c34b5d4155f865e94bdf83cb18fcbad
-    introduced_range: unknown:4366d2f86bf105025765a0ce3db6e647ba0f3508
+    introduced: 4366d2f86bf105025765a0ce3db6e647ba0f3508
+    fixed: 5ef0c6da8c34b5d4155f865e94bdf83cb18fcbad
+modified: '2021-06-23T06:28:20.837011Z'
+published: '2020-07-22T00:00:13.459266Z'
+ecosystem_specific:
+  severity: MEDIUM
+database_specific:
+  introduced_range: unknown:4366d2f86bf105025765a0ce3db6e647ba0f3508
+  fixed_range: 016e90f193d4383b94143d0b2be26408cc32c703:5ef0c6da8c34b5d4155f865e94bdf83cb18fcbad
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22087

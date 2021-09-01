@@ -1,4 +1,7 @@
 id: OSV-2020-214
+package:
+  name: open62541
+  ecosystem: OSS-Fuzz
 summary: Heap-use-after-free in String_clear
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20437
@@ -8,21 +11,12 @@ details: |
   String_clear
   clearStructure
   Variant_clear
-modified: '2021-06-21T06:56:26.771896Z'
-published: '2020-06-24T01:51:19.252592Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20437
-affected:
-- package:
-    name: open62541
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/open62541/open62541.git
-    events:
-    - introduced: 58a2fdb5b1ad1efafef455d66a9cbfb93c3fae9d
-    - fixed: 36c440147e0adbd1c7254d98851c8a856e77cbfe
+    introduced: 58a2fdb5b1ad1efafef455d66a9cbfb93c3fae9d
+    fixed: 36c440147e0adbd1c7254d98851c8a856e77cbfe
   versions:
   - v1.0
   - v1.0-dev
@@ -38,5 +32,10 @@ affected:
   - v1.0.6
   - v1.1-dev
   - v1.1-rc1
-  ecosystem_specific:
-    severity: HIGH
+modified: '2021-06-21T06:56:26.771896Z'
+published: '2020-06-24T01:51:19.252592Z'
+ecosystem_specific:
+  severity: HIGH
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20437

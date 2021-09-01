@@ -1,4 +1,7 @@
 id: OSV-2020-1849
+package:
+  name: rdkit
+  ecosystem: OSS-Fuzz
 summary: Use-of-uninitialized-value in RDKit::SubstanceGroup::getBondType
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25906
@@ -8,20 +11,11 @@ details: |
   RDKit::SubstanceGroup::getBondType
   RDKit::SubstanceGroup::addCState
   RDKit::SGroupParsing::ParseSGroupV2000SBVLine
-modified: '2021-06-21T06:56:26.980312Z'
-published: '2020-09-26T00:00:14.118761Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25906
-affected:
-- package:
-    name: rdkit
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/rdkit/rdkit.git
-    events:
-    - introduced: a9010da8a4af17479c706f2cf4e8c6acdc1585ce
+    introduced: a9010da8a4af17479c706f2cf4e8c6acdc1585ce
   versions:
   - Release_2020_09_1
   - Release_2020_09_1b1
@@ -30,5 +24,10 @@ affected:
   - Release_2020_09_4
   - Release_2020_09_5
   - Release_2021_03_1b1
-  ecosystem_specific:
-    severity: MEDIUM
+modified: '2021-06-21T06:56:26.980312Z'
+published: '2020-09-26T00:00:14.118761Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25906

@@ -1,4 +1,7 @@
 id: OSV-2020-287
+package:
+  name: systemd
+  ecosystem: OSS-Fuzz
 summary: Heap-use-after-free in condition_free_list_type
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13882
@@ -8,20 +11,16 @@ details: |
   condition_free_list_type
   config_parse_net_condition
   next_assignment
-modified: '2021-06-21T06:56:25.861996Z'
-published: '2020-06-30T00:00:46.614113Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13882
-affected:
-- package:
-    name: systemd
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/systemd/systemd
-    events:
-    - introduced: ae408d77a9fbd671b9c41c3ac5434f7da0f9ab18
-    - fixed: 7bb55ed099f611ec7077db69684a6cb93d42dc70
-  ecosystem_specific:
-    severity: HIGH
+    introduced: ae408d77a9fbd671b9c41c3ac5434f7da0f9ab18
+    fixed: 7bb55ed099f611ec7077db69684a6cb93d42dc70
+modified: '2021-06-21T06:56:25.861996Z'
+published: '2020-06-30T00:00:46.614113Z'
+ecosystem_specific:
+  severity: HIGH
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13882

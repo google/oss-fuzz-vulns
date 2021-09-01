@@ -1,4 +1,7 @@
 id: OSV-2018-192
+package:
+  name: libaom
+  ecosystem: OSS-Fuzz
 summary: Stack-buffer-overflow in highbd_dr_prediction_z1_64xN_avx2
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11517
@@ -8,20 +11,16 @@ details: |
   highbd_dr_prediction_z1_64xN_avx2
   av1_highbd_dr_prediction_z1_avx2
   av1_predict_intra_block
-modified: '2021-06-21T06:56:25.444029Z'
-published: '2021-01-13T00:01:20.204625Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11517
-affected:
-- package:
-    name: libaom
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://aomedia.googlesource.com/aom
-    events:
-    - introduced: 1468e60d7367aed304e4f2f3d9193d0e47179631
-    - fixed: fe996504f76f4204074c1f8f681925852c61b777
-  ecosystem_specific:
-    severity: MEDIUM
+    introduced: 1468e60d7367aed304e4f2f3d9193d0e47179631
+    fixed: fe996504f76f4204074c1f8f681925852c61b777
+modified: '2021-06-21T06:56:25.444029Z'
+published: '2021-01-13T00:01:20.204625Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11517

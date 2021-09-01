@@ -1,4 +1,7 @@
 id: OSV-2020-317
+package:
+  name: radare2
+  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in r_core_lines_initcache
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15035
@@ -8,24 +11,20 @@ details: |
   r_core_lines_initcache
   cb_linesto
   r_config_set_i
-modified: '2021-06-21T06:56:23.236501Z'
-published: '2020-07-01T00:00:02.076399Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15035
-affected:
-- package:
-    name: radare2
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/radare/radare2
-    events:
-    - introduced: 1b0a7bc988c4d327d7090af9757c775f88947e42
-    - fixed: 7d30ff52fc1be6f9698b166107b8981eab6ec7ba
+    introduced: 1b0a7bc988c4d327d7090af9757c775f88947e42
+    fixed: 7d30ff52fc1be6f9698b166107b8981eab6ec7ba
   versions:
   - 3.5.0
   - 3.5.1
   - 3.6.0
-  ecosystem_specific:
-    severity: HIGH
+modified: '2021-06-21T06:56:23.236501Z'
+published: '2020-07-01T00:00:02.076399Z'
+ecosystem_specific:
+  severity: HIGH
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15035

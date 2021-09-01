@@ -1,4 +1,7 @@
 id: OSV-2021-373
+package:
+  name: wabt
+  ecosystem: OSS-Fuzz
 summary: Global-buffer-overflow in wabt::GetRelocTypeName
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30792
@@ -8,22 +11,18 @@ details: |
   wabt::GetRelocTypeName
   wabt::BinaryReader::ReadRelocSection
   wabt::BinaryReader::ReadCustomSection
-modified: '2021-03-09T05:46:50.667944Z'
-published: '2021-02-12T00:00:06.148219Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30792
-affected:
-- package:
-    name: wabt
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/WebAssembly/wabt
-    events:
-    - introduced: 713becedfe45e7b7a993d7efb6fd2994f064b234
+    introduced: 713becedfe45e7b7a993d7efb6fd2994f064b234
   versions:
   - 1.0.20
   - 1.0.21
   - 1.0.22
   - 1.0.23
+modified: '2021-03-09T05:46:50.667944Z'
+published: '2021-02-12T00:00:06.148219Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30792

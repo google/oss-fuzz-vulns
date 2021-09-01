@@ -1,4 +1,7 @@
 id: OSV-2021-767
+package:
+  name: espeak-ng
+  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in string_decoder_getc_utf_8
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34299
@@ -8,20 +11,16 @@ details: |
   string_decoder_getc_utf_8
   text_decoder_getc
   GetC
-modified: '2021-06-21T06:56:21.461687Z'
-published: '2021-05-15T00:00:57.570193Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34299
-affected:
-- package:
-    name: espeak-ng
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/espeak-ng/espeak-ng
-    events:
-    - introduced: 0a713d52bbf3e061823d1a7f35e5303e7320f27a
-    - fixed: 8810fa330ead0d891a76123f5c43827dfc4aeedc
-  ecosystem_specific:
-    severity: MEDIUM
+    introduced: 0a713d52bbf3e061823d1a7f35e5303e7320f27a
+    fixed: 8810fa330ead0d891a76123f5c43827dfc4aeedc
+modified: '2021-06-21T06:56:21.461687Z'
+published: '2021-05-15T00:00:57.570193Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34299

@@ -1,4 +1,7 @@
 id: OSV-2018-231
+package:
+  name: librawspeed
+  ecosystem: OSS-Fuzz
 summary: Use-of-uninitialized-value in rawspeed::RawImageData::checkMemIsInitialized
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=5843
@@ -8,21 +11,18 @@ details: |
   rawspeed::RawImageData::checkMemIsInitialized
   rawspeed::RawDecoder::decodeRaw
   rawspeed::alignedMalloc
-modified: '2021-06-23T06:26:07.121538Z'
-published: '2021-01-13T21:55:59.805110Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=5843
-affected:
-- package:
-    name: librawspeed
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/darktable-org/rawspeed.git
-    events:
-    - introduced: ecd98ef474b42eab98a7787b2a107fc6a73816c1
-    - fixed: e542162d9a96ad3bc7c05abace119cbbf2b184bc
-  ecosystem_specific:
-    introduced_range: 06512249177a727fd46333d999f14aa4accb6c49:4fbfc4d7e43988c85a23219f5b78270b7062e8e4
-    severity: MEDIUM
+    introduced: ecd98ef474b42eab98a7787b2a107fc6a73816c1
+    fixed: e542162d9a96ad3bc7c05abace119cbbf2b184bc
+modified: '2021-06-23T06:26:07.121538Z'
+published: '2021-01-13T21:55:59.805110Z'
+ecosystem_specific:
+  severity: MEDIUM
+database_specific:
+  introduced_range: 06512249177a727fd46333d999f14aa4accb6c49:4fbfc4d7e43988c85a23219f5b78270b7062e8e4
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=5843

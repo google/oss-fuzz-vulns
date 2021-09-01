@@ -1,4 +1,7 @@
 id: OSV-2020-1366
+package:
+  name: rdkit
+  ecosystem: OSS-Fuzz
 summary: Heap-use-after-free in RDKit::SubstanceGroup::addParentAtomWithBookmark
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24406
@@ -8,20 +11,11 @@ details: |
   RDKit::SubstanceGroup::addParentAtomWithBookmark
   RDKit::SGroupParsing::ParseSGroupV2000VectorDataLine
   RDKit::ParseMolBlockProperties
-modified: '2021-06-21T06:56:27.014Z'
-published: '2020-07-28T00:00:03.076252Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24406
-affected:
-- package:
-    name: rdkit
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/rdkit/rdkit.git
-    events:
-    - introduced: a9010da8a4af17479c706f2cf4e8c6acdc1585ce
+    introduced: a9010da8a4af17479c706f2cf4e8c6acdc1585ce
   versions:
   - Release_2020_09_1
   - Release_2020_09_1b1
@@ -30,5 +24,10 @@ affected:
   - Release_2020_09_4
   - Release_2020_09_5
   - Release_2021_03_1b1
-  ecosystem_specific:
-    severity: HIGH
+modified: '2021-06-21T06:56:27.014Z'
+published: '2020-07-28T00:00:03.076252Z'
+ecosystem_specific:
+  severity: HIGH
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24406

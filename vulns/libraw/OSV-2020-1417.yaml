@@ -1,4 +1,7 @@
 id: OSV-2020-1417
+package:
+  name: libraw
+  ecosystem: OSS-Fuzz
 summary: Index-out-of-bounds in DHT::get_hv_rbg
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23870
@@ -8,24 +11,20 @@ details: |
   DHT::get_hv_rbg
   DHT::make_hv_dline
   DHT::make_hv_dirs
-modified: '2021-06-21T06:56:25.796824Z'
-published: '2020-07-28T00:00:14.188786Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23870
-affected:
-- package:
-    name: libraw
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/libraw/libraw
-    events:
-    - introduced: 5eeffd556eec1e2baea7826a4be20664f9d70662
+    introduced: 5eeffd556eec1e2baea7826a4be20664f9d70662
   versions:
   - 0.20.0
   - 0.20-RC2
   - 0.20.1
   - 0.20.2
-  ecosystem_specific:
-    severity: MEDIUM
+modified: '2021-06-21T06:56:25.796824Z'
+published: '2020-07-28T00:00:14.188786Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23870

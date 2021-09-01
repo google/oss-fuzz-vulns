@@ -1,4 +1,7 @@
 id: OSV-2020-1165
+package:
+  name: lwan
+  ecosystem: OSS-Fuzz
 summary: Global-buffer-overflow in parse_headers
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14154
@@ -8,20 +11,16 @@ details: |
   parse_headers
   parse_http_request
   fuzz_parse_http_request
-modified: '2021-06-23T06:25:09.895071Z'
-published: '2020-07-22T21:49:52.512552Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14154
-affected:
-- package:
-    name: lwan
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: git://github.com/lpereira/lwan
-    events:
-    - introduced: 18784b31abbec3c1832067397c09b27acf0a854f
-    - fixed: 5a47a0c2d988d3b3b1c8d3938b7a994f464469b5
-  ecosystem_specific:
-    introduced_range: unknown:18784b31abbec3c1832067397c09b27acf0a854f
+    introduced: 18784b31abbec3c1832067397c09b27acf0a854f
+    fixed: 5a47a0c2d988d3b3b1c8d3938b7a994f464469b5
+modified: '2021-06-23T06:25:09.895071Z'
+published: '2020-07-22T21:49:52.512552Z'
+database_specific:
+  introduced_range: unknown:18784b31abbec3c1832067397c09b27acf0a854f
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14154

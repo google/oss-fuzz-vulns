@@ -1,4 +1,7 @@
 id: OSV-2020-1
+package:
+  name: leptonica
+  ecosystem: OSS-Fuzz
 summary: Use-of-uninitialized-value in numaCrossingsByThreshold
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22764
@@ -8,20 +11,16 @@ details: |
   numaCrossingsByThreshold
   numaSelectCrossingThreshold
   pixExtractBarcodeCrossings
-modified: '2021-06-21T06:56:20.255554Z'
-published: '2020-06-24T01:51:08.502422Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22764
-affected:
-- package:
-    name: leptonica
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/DanBloomberg/leptonica.git
-    events:
-    - introduced: f053b173bc94ef35a99ddf8eb608f63ae794b5fa
-    - fixed: 7b5ba2afc759b7a44f6776a53030b494c6d985c3
-  ecosystem_specific:
-    severity: MEDIUM
+    introduced: f053b173bc94ef35a99ddf8eb608f63ae794b5fa
+    fixed: 7b5ba2afc759b7a44f6776a53030b494c6d985c3
+modified: '2021-06-21T06:56:20.255554Z'
+published: '2020-06-24T01:51:08.502422Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22764

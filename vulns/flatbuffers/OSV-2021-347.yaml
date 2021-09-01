@@ -1,4 +1,7 @@
 id: OSV-2021-347
+package:
+  name: flatbuffers
+  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in flatbuffers::Table* flatbuffers::GetMutableRoot<flatbuffers::Table>
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30682
@@ -8,20 +11,16 @@ details: |
   flatbuffers::Table* flatbuffers::GetMutableRoot<flatbuffers::Table>
   flatbuffers::Table const* flatbuffers::GetRoot<flatbuffers::Table>
   flatbuffers::JsonPrinter::GenFieldOffset
-modified: '2021-06-21T06:56:27.424540Z'
-published: '2021-02-10T00:00:35.965631Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30682
-affected:
-- package:
-    name: flatbuffers
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/google/flatbuffers
-    events:
-    - introduced: 6f3e45eca1fde7a68cb72fd4499a3647f719c9db
-    - fixed: 0e453ac3524100e7d78481d75e44ad3515dde0c1
-  ecosystem_specific:
-    severity: MEDIUM
+    introduced: 6f3e45eca1fde7a68cb72fd4499a3647f719c9db
+    fixed: 0e453ac3524100e7d78481d75e44ad3515dde0c1
+modified: '2021-06-21T06:56:27.424540Z'
+published: '2021-02-10T00:00:35.965631Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30682

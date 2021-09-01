@@ -1,4 +1,7 @@
 id: OSV-2018-70
+package:
+  name: openvswitch
+  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in learn_check
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11862
@@ -8,20 +11,16 @@ details: |
   learn_check
   ofpacts_check
   parse_ofp_str__
-modified: '2021-06-21T06:56:26.322120Z'
-published: '2021-01-13T00:00:33.905138Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11862
-affected:
-- package:
-    name: openvswitch
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/openvswitch/ovs.git
-    events:
-    - introduced: aa1a0f1aaf6a772327b712d0507735af5b8c791d
-    - fixed: 8ed9df00b6e4b8b3aadba4b552c27c0382d3508b
-  ecosystem_specific:
-    severity: MEDIUM
+    introduced: aa1a0f1aaf6a772327b712d0507735af5b8c791d
+    fixed: 8ed9df00b6e4b8b3aadba4b552c27c0382d3508b
+modified: '2021-06-21T06:56:26.322120Z'
+published: '2021-01-13T00:00:33.905138Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11862

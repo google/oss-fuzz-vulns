@@ -1,4 +1,7 @@
 id: OSV-2020-1171
+package:
+  name: quickjs
+  ecosystem: OSS-Fuzz
 summary: Heap-use-after-free in JS_ReadObjectRec
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21532
@@ -8,23 +11,20 @@ details: |
   JS_ReadObjectRec
   JS_ReadObject
   fuzz_compile.c
-modified: '2021-06-23T06:29:53.732647Z'
-published: '2020-07-22T21:49:53.004112Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21532
-affected:
-- package:
-    name: quickjs
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/horhof/quickjs
-    events:
-    - introduced: 5ae7ebbeecc4210e763ad76555571e3b31db6e24
-    - fixed: 1bf1aba3af61529a282528c8c382b5f078cce63f
+    introduced: 5ae7ebbeecc4210e763ad76555571e3b31db6e24
+    fixed: 1bf1aba3af61529a282528c8c382b5f078cce63f
   versions:
   - '20200316'
-  ecosystem_specific:
-    introduced_range: unknown:5ae7ebbeecc4210e763ad76555571e3b31db6e24
-    severity: HIGH
+modified: '2021-06-23T06:29:53.732647Z'
+published: '2020-07-22T21:49:53.004112Z'
+ecosystem_specific:
+  severity: HIGH
+database_specific:
+  introduced_range: unknown:5ae7ebbeecc4210e763ad76555571e3b31db6e24
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21532

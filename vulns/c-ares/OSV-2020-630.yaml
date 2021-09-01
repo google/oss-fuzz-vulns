@@ -1,4 +1,7 @@
 id: OSV-2020-630
+package:
+  name: c-ares
+  ecosystem: OSS-Fuzz
 summary: Use-of-uninitialized-value in ares__parse_into_addrinfo2
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15379
@@ -8,20 +11,16 @@ details: |
   ares__parse_into_addrinfo2
   ares_parse_aaaa_reply
   ares-test-fuzz.c
-modified: '2021-06-21T06:56:22.920063Z'
-published: '2020-07-01T00:00:21.402997Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15379
-affected:
-- package:
-    name: c-ares
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/c-ares/c-ares.git
-    events:
-    - introduced: 7d3591ee8a1a63e7748e68e6d880bd1763a32885
-    - fixed: b949cc3ddfbeb1b3fba571fb53b186b645e66e9c
-  ecosystem_specific:
-    severity: MEDIUM
+    introduced: 7d3591ee8a1a63e7748e68e6d880bd1763a32885
+    fixed: b949cc3ddfbeb1b3fba571fb53b186b645e66e9c
+modified: '2021-06-21T06:56:22.920063Z'
+published: '2020-07-01T00:00:21.402997Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15379

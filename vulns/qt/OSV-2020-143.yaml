@@ -1,4 +1,7 @@
 id: OSV-2020-143
+package:
+  name: qt
+  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in QSpecialInteger<QBigEndianStorageType<unsigned int>
   >::operator unsigned int
 details: |
@@ -9,22 +12,19 @@ details: |
   QSpecialInteger<QBigEndianStorageType<unsigned int> >::operator unsigned int
   QIcc::fromIccProfile
   QColorSpace::fromIccProfile
-modified: '2021-06-23T13:30:00Z'
-published: '2020-06-24T01:51:16.055970Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21909
-affected:
-- package:
-    name: qt
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: git://code.qt.io/qt/qtbase.git
-    events:
-    - introduced: 13873c6bc6e9514e4b6d4e11f7100863a439e33c
-    - fixed: 6ebef2eb9a6a3630f9142fb040c3f87ba8eeac8e
-  ecosystem_specific:
-    introduced_range: cc106ce56550ebfc7e1808e1b9015f5618d9f5e5:e10e5318bc02a48a866b76b6f0b7f268d16af642
-    fixed_range: 538223d10d133d23133db1ec7a50cb2775aca657:76fe36645eb41fa35e526a97874f1e15a39c3823
-    severity: MEDIUM
+    introduced: 13873c6bc6e9514e4b6d4e11f7100863a439e33c
+    fixed: 6ebef2eb9a6a3630f9142fb040c3f87ba8eeac8e
+modified: '2021-06-23T13:30:00.000000Z'
+published: '2020-06-24T01:51:16.055970Z'
+ecosystem_specific:
+  severity: MEDIUM
+database_specific:
+  fixed_range: 538223d10d133d23133db1ec7a50cb2775aca657:76fe36645eb41fa35e526a97874f1e15a39c3823
+  introduced_range: cc106ce56550ebfc7e1808e1b9015f5618d9f5e5:e10e5318bc02a48a866b76b6f0b7f268d16af642
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21909

@@ -1,4 +1,7 @@
 id: OSV-2020-1472
+package:
+  name: stb
+  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in stbi__YCbCr_to_RGB_simd
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22605
@@ -8,20 +11,16 @@ details: |
   stbi__YCbCr_to_RGB_simd
   load_jpeg_image
   stbi__jpeg_load
-modified: '2021-06-21T06:56:26.442939Z'
-published: '2020-07-28T00:00:27.093869Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22605
-affected:
-- package:
-    name: stb
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/nothings/stb.git
-    events:
-    - introduced: f54acd4e13430c5122cab4ca657705c84aa61b08
-    - fixed: b42009b3b9d4ca35bc703f5310eedc74f584be58
-  ecosystem_specific:
-    severity: MEDIUM
+    introduced: f54acd4e13430c5122cab4ca657705c84aa61b08
+    fixed: b42009b3b9d4ca35bc703f5310eedc74f584be58
+modified: '2021-06-21T06:56:26.442939Z'
+published: '2020-07-28T00:00:27.093869Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22605

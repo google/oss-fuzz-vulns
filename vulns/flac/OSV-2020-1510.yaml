@@ -1,4 +1,7 @@
 id: OSV-2020-1510
+package:
+  name: flac
+  ecosystem: OSS-Fuzz
 summary: UNKNOWN WRITE in FLAC__bitwriter_write_raw_uint32_nocheck
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=19816
@@ -8,26 +11,19 @@ details: |
   FLAC__bitwriter_write_raw_uint32_nocheck
   FLAC__bitwriter_write_raw_uint32
   FLAC__frame_add_header
-modified: '2021-06-21T06:56:26.137404Z'
-published: '2020-07-28T00:00:35.146104Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=19816
-affected:
-- package:
-    name: flac
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/xiph/flac.git
-    events:
-    - introduced: 88ddb5b59e092f12ca18b73857a15235caf07fa1
-    - fixed: bfd4f13f3eb1f4d4f9f723e343f63eceedb267ba
+    introduced: 88ddb5b59e092f12ca18b73857a15235caf07fa1
+    fixed: bfd4f13f3eb1f4d4f9f723e343f63eceedb267ba
   - type: GIT
     repo: https://github.com/xiph/flac.git
-    events:
-    - introduced: 88ddb5b59e092f12ca18b73857a15235caf07fa1
-    - fixed: bfd4f13f3eb1f4d4f9f723e343f63eceedb267ba
-    - introduced: 7e79d0aa9c4274776259a52a15081dc5f62c5063
-  ecosystem_specific:
-    severity: HIGH
+    introduced: 7e79d0aa9c4274776259a52a15081dc5f62c5063
+modified: '2021-06-21T06:56:26.137404Z'
+published: '2020-07-28T00:00:35.146104Z'
+ecosystem_specific:
+  severity: HIGH
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=19816

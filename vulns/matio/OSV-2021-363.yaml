@@ -1,4 +1,7 @@
 id: OSV-2021-363
+package:
+  name: matio
+  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in H5HG_read
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30743
@@ -8,22 +11,18 @@ details: |
   H5HG_read
   H5VL__native_blob_get
   H5VL__blob_get
-modified: '2021-06-21T06:56:28.113911Z'
-published: '2021-02-11T00:00:41.682350Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30743
-affected:
-- package:
-    name: matio
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: git://git.code.sf.net/p/matio/matio
-    events:
-    - introduced: 1ce8f2d1845ecdde19a35605cabdbb884776d52d
+    introduced: 1ce8f2d1845ecdde19a35605cabdbb884776d52d
   versions:
   - v1.5.20
   - v1.5.21
-  ecosystem_specific:
-    severity: MEDIUM
+modified: '2021-06-21T06:56:28.113911Z'
+published: '2021-02-11T00:00:41.682350Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30743

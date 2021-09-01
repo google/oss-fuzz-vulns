@@ -1,4 +1,7 @@
 id: OSV-2020-8
+package:
+  name: leptonica
+  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in findNextBorderPixel
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23433
@@ -8,20 +11,16 @@ details: |
   findNextBorderPixel
   pixGetHoleBorder
   pixGetCCBorders
-modified: '2021-06-21T06:56:20.219463Z'
-published: '2020-06-24T01:51:09.673990Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23433
-affected:
-- package:
-    name: leptonica
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/DanBloomberg/leptonica.git
-    events:
-    - introduced: a53cfc7bd554dc4c2644b8f27ac5296fd926725f
-    - fixed: 8d6e1755518cfb98536d6c3daf0601f226d16842
-  ecosystem_specific:
-    severity: MEDIUM
+    introduced: a53cfc7bd554dc4c2644b8f27ac5296fd926725f
+    fixed: 8d6e1755518cfb98536d6c3daf0601f226d16842
+modified: '2021-06-21T06:56:20.219463Z'
+published: '2020-06-24T01:51:09.673990Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23433

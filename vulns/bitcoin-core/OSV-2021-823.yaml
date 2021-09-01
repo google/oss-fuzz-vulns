@@ -1,4 +1,7 @@
 id: OSV-2021-823
+package:
+  name: bitcoin-core
+  ecosystem: OSS-Fuzz
 summary: UNKNOWN READ in FuzzedFileProvider::seek
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34845
@@ -8,25 +11,22 @@ details: |
   FuzzedFileProvider::seek
   _IO_do_write
   _IO_file_close_it
-modified: '2021-08-27T00:07:11.295708Z'
-published: '2021-06-03T00:01:12.500483Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34845
-affected:
-- package:
-    name: bitcoin-core
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/bitcoin/bitcoin.git
-    events:
-    - introduced: fa5cb6b268554fe0f272833794a98106872ac6a5
+    introduced: fa5cb6b268554fe0f272833794a98106872ac6a5
   versions:
   - v21.99-guixtest1
   - v22.0rc1
   - v22.0rc2
   - v22.0rc3
-  ecosystem_specific:
-    severity: MEDIUM
-    introduced_range: eb9a1fe03779bf05062b70f14190cb23ff42b46f:9313c4e6aa4b707c06a86b33d5d2753cd8383340
+modified: '2021-08-27T00:07:11.295708Z'
+published: '2021-06-03T00:01:12.500483Z'
+ecosystem_specific:
+  severity: MEDIUM
+database_specific:
+  introduced_range: eb9a1fe03779bf05062b70f14190cb23ff42b46f:9313c4e6aa4b707c06a86b33d5d2753cd8383340
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34845

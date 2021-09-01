@@ -1,4 +1,7 @@
 id: OSV-2020-2072
+package:
+  name: fluent-bit
+  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in _conv_num
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26327
@@ -8,20 +11,16 @@ details: |
   _conv_num
   _flb_strptime
   flb_strptime
-modified: '2021-06-21T06:56:24.381261Z'
-published: '2020-10-15T00:00:40.514544Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26327
-affected:
-- package:
-    name: fluent-bit
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/fluent/fluent-bit/
-    events:
-    - introduced: dc234b10f5e7a0a6f7fcc35609f12e9f48420bd4
-    - fixed: f6a8de0a8ca7caf4d857d20e35420e4f0ade96f9
-  ecosystem_specific:
-    severity: MEDIUM
+    introduced: dc234b10f5e7a0a6f7fcc35609f12e9f48420bd4
+    fixed: f6a8de0a8ca7caf4d857d20e35420e4f0ade96f9
+modified: '2021-06-21T06:56:24.381261Z'
+published: '2020-10-15T00:00:40.514544Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26327

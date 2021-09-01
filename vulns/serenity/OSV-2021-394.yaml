@@ -1,4 +1,7 @@
 id: OSV-2021-394
+package:
+  name: serenity
+  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in Crypto::der_decode_sequence
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30906
@@ -8,20 +11,16 @@ details: |
   Crypto::der_decode_sequence
   Crypto::PK::RSA::parse_rsa_key
   FuzzRSAKeyParsing.cpp
-modified: '2021-06-21T06:56:19.810798Z'
-published: '2021-02-14T00:01:02.208971Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30906
-affected:
-- package:
-    name: serenity
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/SerenityOS/serenity
-    events:
-    - introduced: 5b891b0c36b9cf6efe1c8873e34f2fc114a686d3
-    - fixed: 3fe7ac0924ada70faaf27636b6e0f40bcde24f77
-  ecosystem_specific:
-    severity: MEDIUM
+    introduced: 5b891b0c36b9cf6efe1c8873e34f2fc114a686d3
+    fixed: 3fe7ac0924ada70faaf27636b6e0f40bcde24f77
+modified: '2021-06-21T06:56:19.810798Z'
+published: '2021-02-14T00:01:02.208971Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30906

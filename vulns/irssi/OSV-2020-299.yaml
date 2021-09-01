@@ -1,4 +1,7 @@
 id: OSV-2020-299
+package:
+  name: irssi
+  ecosystem: OSS-Fuzz
 summary: Bad-free in sig_destroyed
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=17160
@@ -8,18 +11,14 @@ details: |
   sig_destroyed
   signal_emit_real
   signal_emit
-modified: '2021-03-09T04:49:05.812112Z'
-published: '2020-06-30T00:00:47.672996Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=17160
-affected:
-- package:
-    name: irssi
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/irssi/irssi
-    events:
-    - introduced: e36d6b9b8c1266f9786bbb3c197f32f208f8aaeb
-    - fixed: ed65499d76daac352d76ae0f30e36f3feb623174
+    introduced: e36d6b9b8c1266f9786bbb3c197f32f208f8aaeb
+    fixed: ed65499d76daac352d76ae0f30e36f3feb623174
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=17160
+modified: '2021-03-09T04:49:05.812112Z'
+published: '2020-06-30T00:00:47.672996Z'

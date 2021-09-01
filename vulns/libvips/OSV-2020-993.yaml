@@ -1,4 +1,7 @@
 id: OSV-2020-993
+package:
+  name: libvips
+  ecosystem: OSS-Fuzz
 summary: Stack-buffer-overflow in write_png_comment
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=16154
@@ -8,22 +11,19 @@ details: |
   write_png_comment
   vips_slist_map2
   vips_image_map
-modified: '2021-06-23T06:28:00.210126Z'
-published: '2020-07-22T21:49:38.743050Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=16154
-affected:
-- package:
-    name: libvips
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/libvips/libvips
-    events:
-    - introduced: 0f1e278dd97163de5890117abdc9707fecc27e9f
-    - fixed: cfe0857ae102818d4ce5e9f4564af9d6bfb090da
-  ecosystem_specific:
-    fixed_range: 0f1e278dd97163de5890117abdc9707fecc27e9f:cfe0857ae102818d4ce5e9f4564af9d6bfb090da
-    severity: HIGH
-    introduced_range: unknown:0f1e278dd97163de5890117abdc9707fecc27e9f
+    introduced: 0f1e278dd97163de5890117abdc9707fecc27e9f
+    fixed: cfe0857ae102818d4ce5e9f4564af9d6bfb090da
+modified: '2021-06-23T06:28:00.210126Z'
+published: '2020-07-22T21:49:38.743050Z'
+ecosystem_specific:
+  severity: HIGH
+database_specific:
+  introduced_range: unknown:0f1e278dd97163de5890117abdc9707fecc27e9f
+  fixed_range: 0f1e278dd97163de5890117abdc9707fecc27e9f:cfe0857ae102818d4ce5e9f4564af9d6bfb090da
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=16154

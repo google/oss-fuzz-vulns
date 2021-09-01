@@ -1,4 +1,7 @@
 id: OSV-2018-31
+package:
+  name: dav1d
+  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in emu_edge_c
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11389
@@ -8,21 +11,18 @@ details: |
   emu_edge_c
   warp_affine
   dav1d_recon_b_inter_8bpc
-modified: '2021-06-23T06:28:53.597167Z'
-published: '2021-01-13T00:00:13.344740Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11389
-affected:
-- package:
-    name: dav1d
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://code.videolan.org/videolan/dav1d.git
-    events:
-    - introduced: 7ef74ca1005785f0791874d52217aecc76f190cd
-    - fixed: cf9ec49ac7d0c766ea88ea801c0831bca3e663a9
-  ecosystem_specific:
-    severity: MEDIUM
-    introduced_range: 4a646a0ca25a22a809bfcb743332f6b6646d86a3:ec53ec6d5b4ebbb06d5c7209fd4f25634a6ad606
+    introduced: 7ef74ca1005785f0791874d52217aecc76f190cd
+    fixed: cf9ec49ac7d0c766ea88ea801c0831bca3e663a9
+modified: '2021-06-23T06:28:53.597167Z'
+published: '2021-01-13T00:00:13.344740Z'
+ecosystem_specific:
+  severity: MEDIUM
+database_specific:
+  introduced_range: 4a646a0ca25a22a809bfcb743332f6b6646d86a3:ec53ec6d5b4ebbb06d5c7209fd4f25634a6ad606
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11389

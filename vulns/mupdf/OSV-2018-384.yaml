@@ -1,4 +1,7 @@
 id: OSV-2018-384
+package:
+  name: mupdf
+  ecosystem: OSS-Fuzz
 summary: Use-of-uninitialized-value in template_affine_N_lerp
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=5616
@@ -8,22 +11,19 @@ details: |
   template_affine_N_lerp
   paint_affine_lerp_da_sa_0
   fz_paint_image_imp
-modified: '2021-06-23T06:24:52.516270Z'
-published: '2021-01-15T00:01:07.085645Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=5616
-affected:
-- package:
-    name: mupdf
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: git://git.ghostscript.com/mupdf.git
-    events:
-    - introduced: 11ee2bcf4d23bcb443d6b39caa2ac62fdd9920b2
-    - fixed: a6cbde55a4bc8095556d5b0e134e51d7ac946805
-  ecosystem_specific:
-    severity: MEDIUM
-    fixed_range: 4dcc6affe04368461310a21238f7e1871a752a05:a6cbde55a4bc8095556d5b0e134e51d7ac946805
-    introduced_range: 9086386263154498dcb18c96f1e1630903b21a3c:d9bc8c6f7fb2e3ec7035bebaaee0edcf59287705
+    introduced: 11ee2bcf4d23bcb443d6b39caa2ac62fdd9920b2
+    fixed: a6cbde55a4bc8095556d5b0e134e51d7ac946805
+modified: '2021-06-23T06:24:52.516270Z'
+published: '2021-01-15T00:01:07.085645Z'
+ecosystem_specific:
+  severity: MEDIUM
+database_specific:
+  fixed_range: 4dcc6affe04368461310a21238f7e1871a752a05:a6cbde55a4bc8095556d5b0e134e51d7ac946805
+  introduced_range: 9086386263154498dcb18c96f1e1630903b21a3c:d9bc8c6f7fb2e3ec7035bebaaee0edcf59287705
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=5616

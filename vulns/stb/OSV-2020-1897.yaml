@@ -1,4 +1,7 @@
 id: OSV-2020-1897
+package:
+  name: stb
+  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in stbi__tga_load
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22651
@@ -8,20 +11,16 @@ details: |
   stbi__tga_load
   stbi__load_main
   stbi__load_and_postprocess_8bit
-modified: '2021-06-21T06:56:26.413662Z'
-published: '2020-10-02T00:00:10.675680Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22651
-affected:
-- package:
-    name: stb
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/nothings/stb.git
-    events:
-    - introduced: f54acd4e13430c5122cab4ca657705c84aa61b08
-    - fixed: 9cd6cdc0e55ec3d4c002313fd5f0e6b255e8e06c
-  ecosystem_specific:
-    severity: MEDIUM
+    introduced: f54acd4e13430c5122cab4ca657705c84aa61b08
+    fixed: 9cd6cdc0e55ec3d4c002313fd5f0e6b255e8e06c
+modified: '2021-06-21T06:56:26.413662Z'
+published: '2020-10-02T00:00:10.675680Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22651

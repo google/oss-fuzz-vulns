@@ -1,4 +1,7 @@
 id: OSV-2021-258
+package:
+  name: htslib
+  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in unstripe
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30087
@@ -8,20 +11,16 @@ details: |
   unstripe
   arith_uncompress_to
   arith_decode
-modified: '2021-06-21T06:56:19.915721Z'
-published: '2021-02-01T00:00:12.032478Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30087
-affected:
-- package:
-    name: htslib
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/samtools/htslib.git
-    events:
-    - introduced: 0d1971cbebb269d90a563464e4f56987290e20ab
-    - fixed: 6568f13bf7b36f280a8f0e4777fe05c85a9dcf06
-  ecosystem_specific:
-    severity: MEDIUM
+    introduced: 0d1971cbebb269d90a563464e4f56987290e20ab
+    fixed: 6568f13bf7b36f280a8f0e4777fe05c85a9dcf06
+modified: '2021-06-21T06:56:19.915721Z'
+published: '2021-02-01T00:00:12.032478Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30087

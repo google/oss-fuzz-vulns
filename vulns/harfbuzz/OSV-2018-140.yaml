@@ -1,4 +1,7 @@
 id: OSV-2018-140
+package:
+  name: harfbuzz
+  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in BEInt<unsigned short, 2>::operator unsigned short
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11074
@@ -8,22 +11,18 @@ details: |
   BEInt<unsigned short, 2>::operator unsigned short
   AAT::LookupFormat10<OT::IntType<unsigned short, 2u> >::sanitize
   AAT::Lookup<OT::IntType<unsigned short, 2u> >::sanitize
-modified: '2021-06-21T06:56:20.672429Z'
-published: '2021-01-13T00:01:00.287078Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11074
-affected:
-- package:
-    name: harfbuzz
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/harfbuzz/harfbuzz.git
-    events:
-    - introduced: f7c0b4319c6f82f1e0020a0029469d8953a7a161
-    - fixed: 00fdbca4f6a5c4623b9c4838da502cccce8aaa74
+    introduced: f7c0b4319c6f82f1e0020a0029469d8953a7a161
+    fixed: 00fdbca4f6a5c4623b9c4838da502cccce8aaa74
   versions:
   - 2.0.1
-  ecosystem_specific:
-    severity: MEDIUM
+modified: '2021-06-21T06:56:20.672429Z'
+published: '2021-01-13T00:01:00.287078Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11074

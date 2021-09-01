@@ -1,4 +1,7 @@
 id: OSV-2020-3
+package:
+  name: pcapplusplus
+  ecosystem: OSS-Fuzz
 summary: UNKNOWN WRITE in std::__1::basic_string<char, std::__1::char_traits<char>,
   std::__1::allocator<ch
 details: |
@@ -9,22 +12,19 @@ details: |
   std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<ch
   std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<ch
   pcpp::IDnsResource::IDnsResource
-modified: '2021-06-23T06:28:20.821649Z'
-published: '2020-06-24T01:51:08.837392Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22962
-affected:
-- package:
-    name: pcapplusplus
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/seladb/PcapPlusPlus
-    events:
-    - introduced: 994419f1bcb9151553ad8044e1757a6d406deea3
-    - fixed: cbe1ffdfe2deaf2fbdbae9c1c7927e083156c165
-  ecosystem_specific:
-    fixed_range: 50aab202d24331ef35b9eff68d96ef9f97baf6a1:cbe1ffdfe2deaf2fbdbae9c1c7927e083156c165
-    introduced_range: 46840c644dfe9160c4111b06bbbf7731c9d1370c:0a62fd3e959813ca41d71d42c86aa7cf1f55ced0
-    severity: HIGH
+    introduced: 994419f1bcb9151553ad8044e1757a6d406deea3
+    fixed: cbe1ffdfe2deaf2fbdbae9c1c7927e083156c165
+modified: '2021-06-23T06:28:20.821649Z'
+published: '2020-06-24T01:51:08.837392Z'
+ecosystem_specific:
+  severity: HIGH
+database_specific:
+  fixed_range: 50aab202d24331ef35b9eff68d96ef9f97baf6a1:cbe1ffdfe2deaf2fbdbae9c1c7927e083156c165
+  introduced_range: 46840c644dfe9160c4111b06bbbf7731c9d1370c:0a62fd3e959813ca41d71d42c86aa7cf1f55ced0
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22962

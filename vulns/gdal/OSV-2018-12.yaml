@@ -1,4 +1,7 @@
 id: OSV-2018-12
+package:
+  name: gdal
+  ecosystem: OSS-Fuzz
 summary: Heap-double-free in RMFRasterBand::IReadBlock
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=9138
@@ -8,20 +11,16 @@ details: |
   RMFRasterBand::IReadBlock
   GDALRasterBand::GetLockedBlockRef
   GDALRasterBand::IRasterIO
-modified: '2021-06-21T06:56:27.489670Z'
-published: '2021-01-13T00:00:05.543072Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=9138
-affected:
-- package:
-    name: gdal
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/OSGeo/gdal
-    events:
-    - introduced: 235baa4015390e5746cf0c6686dd89c1dcf55e1c
-    - fixed: 65f13fc5fb879cd00f08904f14a9339c11be59c3
-  ecosystem_specific:
-    severity: HIGH
+    introduced: 235baa4015390e5746cf0c6686dd89c1dcf55e1c
+    fixed: 65f13fc5fb879cd00f08904f14a9339c11be59c3
+modified: '2021-06-21T06:56:27.489670Z'
+published: '2021-01-13T00:00:05.543072Z'
+ecosystem_specific:
+  severity: HIGH
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=9138

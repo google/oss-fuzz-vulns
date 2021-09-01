@@ -1,4 +1,7 @@
 id: OSV-2020-19
+package:
+  name: suricata
+  ecosystem: OSS-Fuzz
 summary: Heap-use-after-free in htp_connp_is_line_terminator
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21712
@@ -8,22 +11,19 @@ details: |
   htp_connp_is_line_terminator
   htp_connp_REQ_HEADERS
   htp_connp_req_data
-modified: '2021-06-23T06:25:28.981147Z'
-published: '2020-06-24T01:51:10.440277Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21712
-affected:
-- package:
-    name: suricata
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/OISF/suricata.git
-    events:
-    - introduced: c76f98073e388cef74b1659bcdb217b55b3a782a
-    - fixed: 967340e9011ba991bd56530f14b6a1cc6a265069
-  ecosystem_specific:
-    fixed_range: dfdf2eb050781a6d337581543a08a65a7f7ab678:967340e9011ba991bd56530f14b6a1cc6a265069
-    severity: HIGH
-    introduced_range: 5e1381638029f98c5c2f2babf6370e21c2786252:dfdf2eb050781a6d337581543a08a65a7f7ab678
+    introduced: c76f98073e388cef74b1659bcdb217b55b3a782a
+    fixed: 967340e9011ba991bd56530f14b6a1cc6a265069
+modified: '2021-06-23T06:25:28.981147Z'
+published: '2020-06-24T01:51:10.440277Z'
+ecosystem_specific:
+  severity: HIGH
+database_specific:
+  introduced_range: 5e1381638029f98c5c2f2babf6370e21c2786252:dfdf2eb050781a6d337581543a08a65a7f7ab678
+  fixed_range: dfdf2eb050781a6d337581543a08a65a7f7ab678:967340e9011ba991bd56530f14b6a1cc6a265069
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21712

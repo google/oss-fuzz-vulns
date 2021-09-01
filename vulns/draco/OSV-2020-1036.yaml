@@ -1,4 +1,7 @@
 id: OSV-2020-1036
+package:
+  name: draco
+  ecosystem: OSS-Fuzz
 summary: Heap-use-after-free in void draco::Metadata::AddEntry<std::__1::vector<unsigned
   char, std::__1::allocat
 details: |
@@ -9,21 +12,18 @@ details: |
   void draco::Metadata::AddEntry<std::__1::vector<unsigned char, std::__1::allocat
   draco::MetadataDecoder::DecodeEntry
   draco::MetadataDecoder::DecodeMetadata
-modified: '2021-06-23T06:31:10.278954Z'
-published: '2020-07-22T21:49:41.469982Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23344
-affected:
-- package:
-    name: draco
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/google/draco
-    events:
-    - introduced: dec23f5ac6c71c2352dd6812afa799c03553fc58
-    - fixed: 25484b31235d1a35fa72be6ce8d1f7f286b5c0bf
-  ecosystem_specific:
-    severity: HIGH
-    introduced_range: unknown:dec23f5ac6c71c2352dd6812afa799c03553fc58
+    introduced: dec23f5ac6c71c2352dd6812afa799c03553fc58
+    fixed: 25484b31235d1a35fa72be6ce8d1f7f286b5c0bf
+modified: '2021-06-23T06:31:10.278954Z'
+published: '2020-07-22T21:49:41.469982Z'
+ecosystem_specific:
+  severity: HIGH
+database_specific:
+  introduced_range: unknown:dec23f5ac6c71c2352dd6812afa799c03553fc58
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23344

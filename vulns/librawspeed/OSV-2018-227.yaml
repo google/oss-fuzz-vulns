@@ -1,4 +1,7 @@
 id: OSV-2018-227
+package:
+  name: librawspeed
+  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in rawspeed::TableLookUp::setTable
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=5256
@@ -8,24 +11,21 @@ details: |
   rawspeed::TableLookUp::setTable
   rawspeed::RawImageData::setTable
   rawspeed::DngDecoder::handleMetadata
-modified: '2021-06-23T06:26:06.826752Z'
-published: '2021-01-13T00:01:34.025512Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=5256
-affected:
-- package:
-    name: librawspeed
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/darktable-org/rawspeed.git
-    events:
-    - introduced: 23d5018f6b231d62daa6543094a85747beb9654a
-    - fixed: dbe7591e54bad5e6430d38be6bed051582da76b9
+    introduced: 23d5018f6b231d62daa6543094a85747beb9654a
+    fixed: dbe7591e54bad5e6430d38be6bed051582da76b9
   versions:
   - v3.1
-  ecosystem_specific:
-    fixed_range: 212b7a8ea10acaaf722509e291ed1f59df8010df:dbe7591e54bad5e6430d38be6bed051582da76b9
-    introduced_range: f0e9f60474d98883ab9343f584b73ca046263679:52da2b8fda29aa257088d91fb11877f909d578a2
-    severity: HIGH
+modified: '2021-06-23T06:26:06.826752Z'
+published: '2021-01-13T00:01:34.025512Z'
+ecosystem_specific:
+  severity: HIGH
+database_specific:
+  introduced_range: f0e9f60474d98883ab9343f584b73ca046263679:52da2b8fda29aa257088d91fb11877f909d578a2
+  fixed_range: 212b7a8ea10acaaf722509e291ed1f59df8010df:dbe7591e54bad5e6430d38be6bed051582da76b9
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=5256

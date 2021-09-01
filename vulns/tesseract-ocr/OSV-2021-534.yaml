@@ -1,4 +1,7 @@
 id: OSV-2021-534
+package:
+  name: tesseract-ocr
+  ecosystem: OSS-Fuzz
 summary: Container-overflow in tesseract::ExtractResults16
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=32142
@@ -8,22 +11,18 @@ details: |
   tesseract::ExtractResults16
   tesseract::PartialMatrixDotVector16
   tesseract::matrixDotVector
-modified: '2021-06-21T06:56:19.237336Z'
-published: '2021-03-19T00:00:04.481954Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=32142
-affected:
-- package:
-    name: tesseract-ocr
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/tesseract-ocr/tesseract
-    events:
-    - introduced: 2a3682a35e643cefb86eefa4c9a3deddc75295bd
-    - fixed: 91b2b4f4a08d4693b02838636c53a2af93397138
+    introduced: 2a3682a35e643cefb86eefa4c9a3deddc75295bd
+    fixed: 91b2b4f4a08d4693b02838636c53a2af93397138
   versions:
   - 5.0.0-alpha-20210401
-  ecosystem_specific:
-    severity: HIGH
+modified: '2021-06-21T06:56:19.237336Z'
+published: '2021-03-19T00:00:04.481954Z'
+ecosystem_specific:
+  severity: HIGH
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=32142

@@ -1,4 +1,7 @@
 id: OSV-2020-1150
+package:
+  name: libressl
+  ecosystem: OSS-Fuzz
 summary: Global-buffer-overflow in ssl_sigalg
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13800
@@ -8,21 +11,17 @@ details: |
   ssl_sigalg
   ssl3_get_server_key_exchange
   ssl3_connect
-modified: '2021-06-23T06:28:24.574223Z'
-published: '2020-07-22T21:49:51.343194Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13800
-affected:
-- package:
-    name: libressl
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/libressl-portable/portable.git
-    events:
-    - introduced: 4ea2a01a0d2cc889e95316f51c7a36f8f158df44
-    - fixed: 4b6c7bfd02dec26021882f1599dbcbccdd4d2889
-  ecosystem_specific:
-    fixed_range: 4ea2a01a0d2cc889e95316f51c7a36f8f158df44:4b6c7bfd02dec26021882f1599dbcbccdd4d2889
-    introduced_range: unknown:4ea2a01a0d2cc889e95316f51c7a36f8f158df44
+    introduced: 4ea2a01a0d2cc889e95316f51c7a36f8f158df44
+    fixed: 4b6c7bfd02dec26021882f1599dbcbccdd4d2889
+modified: '2021-06-23T06:28:24.574223Z'
+published: '2020-07-22T21:49:51.343194Z'
+database_specific:
+  introduced_range: unknown:4ea2a01a0d2cc889e95316f51c7a36f8f158df44
+  fixed_range: 4ea2a01a0d2cc889e95316f51c7a36f8f158df44:4b6c7bfd02dec26021882f1599dbcbccdd4d2889
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13800

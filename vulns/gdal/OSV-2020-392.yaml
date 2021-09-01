@@ -1,4 +1,7 @@
 id: OSV-2020-392
+package:
+  name: gdal
+  ecosystem: OSS-Fuzz
 summary: Stack-buffer-overflow in nc4_get_att
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15143
@@ -8,27 +11,15 @@ details: |
   nc4_get_att
   nc4_get_att_tc
   nc_get_att_text
-modified: '2021-06-23T07:06:14.719393Z'
-published: '2020-07-01T00:00:06.889412Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15143
-affected:
-- package:
-    name: gdal
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/OSGeo/gdal
-    events:
-    - introduced: 38c1e385e81223476828d57aa83af5716a9256b7
-    - fixed: 767e3a56144f676ca738ef8f700e0e56035bd05a
+    introduced: 38c1e385e81223476828d57aa83af5716a9256b7
+    fixed: 767e3a56144f676ca738ef8f700e0e56035bd05a
   - type: GIT
     repo: https://github.com/OSGeo/gdal
-    events:
-    - introduced: 38c1e385e81223476828d57aa83af5716a9256b7
-    - fixed: 767e3a56144f676ca738ef8f700e0e56035bd05a
-    - introduced: 27b9bf644bcf1208f7d6594bdd104cc8a8bb0646
+    introduced: 27b9bf644bcf1208f7d6594bdd104cc8a8bb0646
   versions:
   - v2.4.2
   - v2.4.3
@@ -42,6 +33,12 @@ affected:
   - v3.0.3RC1
   - v3.0.4
   - v3.0.4RC1
-  ecosystem_specific:
-    severity: HIGH
-    introduced_range: 289b796e365ac26020548410d6ae16022bc80718:f956a3c6ff43a877a63ee1199c5e0092c11a8c31
+modified: '2021-06-23T07:06:14.719393Z'
+published: '2020-07-01T00:00:06.889412Z'
+ecosystem_specific:
+  severity: HIGH
+database_specific:
+  introduced_range: 289b796e365ac26020548410d6ae16022bc80718:f956a3c6ff43a877a63ee1199c5e0092c11a8c31
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15143

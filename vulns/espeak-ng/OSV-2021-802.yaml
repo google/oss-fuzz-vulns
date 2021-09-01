@@ -1,4 +1,7 @@
 id: OSV-2021-802
+package:
+  name: espeak-ng
+  ecosystem: OSS-Fuzz
 summary: Stack-buffer-overflow in InterpretCondition
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34692
@@ -8,19 +11,15 @@ details: |
   InterpretCondition
   InterpretPhoneme
   MakePhonemeList
-modified: '2021-05-27T00:00:31.797995Z'
-published: '2021-05-27T00:00:31.797718Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34692
-affected:
-- package:
-    name: espeak-ng
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/espeak-ng/espeak-ng
-    events:
-    - introduced: 0a713d52bbf3e061823d1a7f35e5303e7320f27a
-  ecosystem_specific:
-    severity: MEDIUM
+    introduced: 0a713d52bbf3e061823d1a7f35e5303e7320f27a
+modified: '2021-05-27T00:00:31.797995Z'
+published: '2021-05-27T00:00:31.797718Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34692

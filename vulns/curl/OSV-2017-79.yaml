@@ -1,4 +1,7 @@
 id: OSV-2017-79
+package:
+  name: curl
+  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in fuzz_read_callback
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=4785
@@ -8,21 +11,12 @@ details: |
   fuzz_read_callback
   Curl_fillreadbuffer
   readwrite_upload
-modified: '2021-06-23T06:31:19.886801Z'
-published: '2021-01-13T21:57:35.291125Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=4785
-affected:
-- package:
-    name: curl
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/curl/curl.git
-    events:
-    - introduced: 7ee59512f875604eb468fb6f3d26e39290f781c9
-    - fixed: ab6eb2ec0744074004980d0f98677e52b215941f
+    introduced: 7ee59512f875604eb468fb6f3d26e39290f781c9
+    fixed: ab6eb2ec0744074004980d0f98677e52b215941f
   versions:
   - curl-7_57_0
   - curl-7_58_0
@@ -50,7 +44,13 @@ affected:
   - curl-7_73_0
   - curl-7_74_0
   - tiny-curl-7_72_0
-  ecosystem_specific:
-    severity: HIGH
-    introduced_range: 1cb4f5d6e8e470638759a48ba99fda230089712f:e240a546a7ac2fa7956adb664b8c40c4dee4f82b
-    fixed_range: b399b04902c43f479b51b142505700edcfc34271:ab6eb2ec0744074004980d0f98677e52b215941f
+modified: '2021-06-23T06:31:19.886801Z'
+published: '2021-01-13T21:57:35.291125Z'
+ecosystem_specific:
+  severity: HIGH
+database_specific:
+  introduced_range: 1cb4f5d6e8e470638759a48ba99fda230089712f:e240a546a7ac2fa7956adb664b8c40c4dee4f82b
+  fixed_range: b399b04902c43f479b51b142505700edcfc34271:ab6eb2ec0744074004980d0f98677e52b215941f
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=4785

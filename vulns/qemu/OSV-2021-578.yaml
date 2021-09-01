@@ -1,4 +1,7 @@
 id: OSV-2021-578
+package:
+  name: qemu
+  ecosystem: OSS-Fuzz
 summary: Stack-use-after-return in v9fs_string_free
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=32624
@@ -8,21 +11,12 @@ details: |
   v9fs_string_free
   v9fs_xattrwalk
   coroutine_trampoline
-modified: '2021-06-23T06:25:30.812564Z'
-published: '2021-03-30T00:00:08.991714Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=32624
-affected:
-- package:
-    name: qemu
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://git.qemu.org/git/qemu.git
-    events:
-    - introduced: ee2fc6c6da8b2d6f961c8559d62e990c65f67736
-    - fixed: 1ea06abceec61b6f3ab33dadb0510b6e09fb61e2
+    introduced: ee2fc6c6da8b2d6f961c8559d62e990c65f67736
+    fixed: 1ea06abceec61b6f3ab33dadb0510b6e09fb61e2
   versions:
   - v6.0.0
   - v6.0.0-rc0
@@ -31,5 +25,10 @@ affected:
   - v6.0.0-rc3
   - v6.0.0-rc4
   - v6.0.0-rc5
-  ecosystem_specific:
-    fixed_range: 52848929b70dcf92a68aedcfd90207be81ba3274:1ea06abceec61b6f3ab33dadb0510b6e09fb61e2
+modified: '2021-06-23T06:25:30.812564Z'
+published: '2021-03-30T00:00:08.991714Z'
+database_specific:
+  fixed_range: 52848929b70dcf92a68aedcfd90207be81ba3274:1ea06abceec61b6f3ab33dadb0510b6e09fb61e2
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=32624

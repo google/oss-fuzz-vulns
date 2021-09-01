@@ -1,4 +1,7 @@
 id: OSV-2020-1655
+package:
+  name: libzmq
+  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in zmq_z85_decode
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25167
@@ -8,21 +11,18 @@ details: |
   zmq_z85_decode
   zmq::options_t::set_curve_key
   zmq::options_t::setsockopt
-modified: '2021-06-23T06:25:30.321867Z'
-published: '2020-08-24T00:01:20.386536Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25167
-affected:
-- package:
-    name: libzmq
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/zeromq/libzmq.git
-    events:
-    - introduced: 5b0956c38198652c3ab41d325e93cd89a076635f
-    - fixed: 9fe56b175dff42baaa55963117dac70e5a270272
-  ecosystem_specific:
-    fixed_range: 8cc56d9f0f2f36fad30d7b48775fffc1715ad02a:9fe56b175dff42baaa55963117dac70e5a270272
-    severity: MEDIUM
+    introduced: 5b0956c38198652c3ab41d325e93cd89a076635f
+    fixed: 9fe56b175dff42baaa55963117dac70e5a270272
+modified: '2021-06-23T06:25:30.321867Z'
+published: '2020-08-24T00:01:20.386536Z'
+ecosystem_specific:
+  severity: MEDIUM
+database_specific:
+  fixed_range: 8cc56d9f0f2f36fad30d7b48775fffc1715ad02a:9fe56b175dff42baaa55963117dac70e5a270272
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25167

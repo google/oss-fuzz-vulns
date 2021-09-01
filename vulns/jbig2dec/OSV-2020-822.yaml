@@ -1,4 +1,7 @@
 id: OSV-2020-822
+package:
+  name: jbig2dec
+  ecosystem: OSS-Fuzz
 summary: Use-of-uninitialized-value in jbig2_arith_decode
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23762
@@ -8,22 +11,18 @@ details: |
   jbig2_arith_decode
   jbig2_decode_refinement_TPGRON
   jbig2_decode_refinement_region
-modified: '2021-06-21T06:56:26.181645Z'
-published: '2020-07-14T05:37:48.869064Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23762
-affected:
-- package:
-    name: jbig2dec
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: git://git.ghostscript.com/jbig2dec.git
-    events:
-    - introduced: c3134491a3010fcce440a45968407c6511766671
+    introduced: c3134491a3010fcce440a45968407c6511766671
   versions:
   - '0.18'
   - '0.19'
-  ecosystem_specific:
-    severity: MEDIUM
+modified: '2021-06-21T06:56:26.181645Z'
+published: '2020-07-14T05:37:48.869064Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23762

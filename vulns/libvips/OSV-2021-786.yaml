@@ -1,4 +1,7 @@
 id: OSV-2021-786
+package:
+  name: libvips
+  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in jxl::PerformAlphaWeightedAdd
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34518
@@ -8,21 +11,18 @@ details: |
   jxl::PerformAlphaWeightedAdd
   jxl::PerformBlending
   jxl::ImageBlender::RectBlender::DoBlending
-modified: '2021-06-23T06:28:06.109840Z'
-published: '2021-05-23T00:00:28.775952Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34518
-affected:
-- package:
-    name: libvips
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/libvips/libvips
-    events:
-    - introduced: b78812f20018eadea7fb3e2774ef267b894b14bb
-    - fixed: fc8dbfdb441f618441eb7ccb3ea97e92ab445e60
-  ecosystem_specific:
-    introduced_range: d577b18e6968785e9a0d6d41e56f6c1a79965266:9f01132466b330de1a485c9f01f226b2b4c57c28
-    severity: HIGH
+    introduced: b78812f20018eadea7fb3e2774ef267b894b14bb
+    fixed: fc8dbfdb441f618441eb7ccb3ea97e92ab445e60
+modified: '2021-06-23T06:28:06.109840Z'
+published: '2021-05-23T00:00:28.775952Z'
+ecosystem_specific:
+  severity: HIGH
+database_specific:
+  introduced_range: d577b18e6968785e9a0d6d41e56f6c1a79965266:9f01132466b330de1a485c9f01f226b2b4c57c28
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34518

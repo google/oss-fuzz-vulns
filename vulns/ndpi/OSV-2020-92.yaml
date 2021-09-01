@@ -1,4 +1,7 @@
 id: OSV-2020-92
+package:
+  name: ndpi
+  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in ndpi_parse_packet_line_info
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22169
@@ -8,20 +11,16 @@ details: |
   ndpi_parse_packet_line_info
   ndpi_search_mail_smtp_tcp
   check_ndpi_tcp_flow_func
-modified: '2021-06-21T06:56:22.492676Z'
-published: '2020-06-24T01:51:13.707971Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22169
-affected:
-- package:
-    name: ndpi
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/ntop/nDPI.git
-    events:
-    - introduced: cd765c08d6f1038ea5efd7a7cc556ca89bdec9e4
-    - fixed: bbbc5fdbae79c72dbe157e02dfee4ef9f18014b5
-  ecosystem_specific:
-    severity: MEDIUM
+    introduced: cd765c08d6f1038ea5efd7a7cc556ca89bdec9e4
+    fixed: bbbc5fdbae79c72dbe157e02dfee4ef9f18014b5
+modified: '2021-06-21T06:56:22.492676Z'
+published: '2020-06-24T01:51:13.707971Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22169

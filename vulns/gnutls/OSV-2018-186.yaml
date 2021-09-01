@@ -1,4 +1,7 @@
 id: OSV-2018-186
+package:
+  name: gnutls
+  ecosystem: OSS-Fuzz
 summary: Use-of-uninitialized-value in decode_complex_string
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=10137
@@ -8,21 +11,12 @@ details: |
   decode_complex_string
   _gnutls_x509_dn_to_string
   append_elements
-modified: '2021-06-23T07:01:51.307206Z'
-published: '2021-01-13T00:01:17.204065Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=10137
-affected:
-- package:
-    name: gnutls
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://gitlab.com/gnutls/gnutls.git
-    events:
-    - introduced: 344b2cc8f68cdde1744198034276d0e6720b1d19
-    - fixed: f6b4695ccafd6945cc7affda4ab9f7b9f9ed8616
+    introduced: 344b2cc8f68cdde1744198034276d0e6720b1d19
+    fixed: f6b4695ccafd6945cc7affda4ab9f7b9f9ed8616
   versions:
   - 3.6.12
   - 3.6.13
@@ -41,7 +35,13 @@ affected:
   - gnutls_3_6_8
   - gnutls_3_6_9
   - 3.6.16
-  ecosystem_specific:
-    severity: MEDIUM
-    introduced_range: 5333d20ce6f14229f6579086b57de0eeacedd4fa:90a71b2e53e9696bd4c07ff98a12d06ecd2e424d
-    fixed_range: d165c2a37f7d072cc88db88ec97f057a9ac6e4aa:f6b4695ccafd6945cc7affda4ab9f7b9f9ed8616
+modified: '2021-06-23T07:01:51.307206Z'
+published: '2021-01-13T00:01:17.204065Z'
+ecosystem_specific:
+  severity: MEDIUM
+database_specific:
+  fixed_range: d165c2a37f7d072cc88db88ec97f057a9ac6e4aa:f6b4695ccafd6945cc7affda4ab9f7b9f9ed8616
+  introduced_range: 5333d20ce6f14229f6579086b57de0eeacedd4fa:90a71b2e53e9696bd4c07ff98a12d06ecd2e424d
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=10137

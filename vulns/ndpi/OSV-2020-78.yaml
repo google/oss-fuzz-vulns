@@ -1,4 +1,7 @@
 id: OSV-2020-78
+package:
+  name: ndpi
+  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in ndpi_check_spotify
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22912
@@ -8,20 +11,16 @@ details: |
   ndpi_check_spotify
   ndpi_search_spotify
   check_ndpi_udp_flow_func
-modified: '2021-06-21T06:56:22.713895Z'
-published: '2020-06-24T01:51:13.073636Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22912
-affected:
-- package:
-    name: ndpi
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/ntop/nDPI.git
-    events:
-    - introduced: 9dfd0d0071845779487b4e2e14c3599e18a74a8c
-    - fixed: 241af016e9e2a43d24cbdc2378d813ba523f5126
-  ecosystem_specific:
-    severity: MEDIUM
+    introduced: 9dfd0d0071845779487b4e2e14c3599e18a74a8c
+    fixed: 241af016e9e2a43d24cbdc2378d813ba523f5126
+modified: '2021-06-21T06:56:22.713895Z'
+published: '2020-06-24T01:51:13.073636Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22912

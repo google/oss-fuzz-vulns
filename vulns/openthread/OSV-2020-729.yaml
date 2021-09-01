@@ -1,4 +1,7 @@
 id: OSV-2020-729
+package:
+  name: openthread
+  ecosystem: OSS-Fuzz
 summary: Stack-buffer-overflow in ot::MeshCoP::Leader::HandlePetition
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13335
@@ -8,20 +11,16 @@ details: |
   ot::MeshCoP::Leader::HandlePetition
   ot::Coap::CoapBase::ProcessReceivedRequest
   ot::Ip6::Udp::HandleMessage
-modified: '2021-06-21T06:56:24.933573Z'
-published: '2020-07-01T00:00:27.029282Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13335
-affected:
-- package:
-    name: openthread
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/openthread/openthread
-    events:
-    - introduced: 3eb5a106ffa6678e23c6bc244e843e264cae9b31
-    - fixed: 13bd1db1f732aa5ae2052a6d3c2c79b519886974
-  ecosystem_specific:
-    severity: MEDIUM
+    introduced: 3eb5a106ffa6678e23c6bc244e843e264cae9b31
+    fixed: 13bd1db1f732aa5ae2052a6d3c2c79b519886974
+modified: '2021-06-21T06:56:24.933573Z'
+published: '2020-07-01T00:00:27.029282Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13335

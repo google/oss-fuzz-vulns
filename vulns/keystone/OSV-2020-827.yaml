@@ -1,4 +1,7 @@
 id: OSV-2020-827
+package:
+  name: keystone
+  ecosystem: OSS-Fuzz
 summary: Use-of-uninitialized-value in llvm_ks::isIntN
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22920
@@ -8,24 +11,20 @@ details: |
   llvm_ks::isIntN
   X86AsmBackend::applyFixup
   llvm_ks::MCAssembler::layout
-modified: '2021-06-21T06:56:24.141645Z'
-published: '2020-07-14T05:37:49.656443Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22920
-affected:
-- package:
-    name: keystone
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/keystone-engine/keystone.git
-    events:
-    - introduced: 105761ffe7176a60b4ff1b1c165ad937110ae63e
+    introduced: 105761ffe7176a60b4ff1b1c165ad937110ae63e
   versions:
   - 0.9.2
   - 0.9.2-rc1
   - 0.9.2-rc1.post1
   - 0.9.2-rc1.post2
-  ecosystem_specific:
-    severity: MEDIUM
+modified: '2021-06-21T06:56:24.141645Z'
+published: '2020-07-14T05:37:49.656443Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22920

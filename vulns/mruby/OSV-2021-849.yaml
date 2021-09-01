@@ -1,4 +1,7 @@
 id: OSV-2021-849
+package:
+  name: mruby
+  ecosystem: OSS-Fuzz
 summary: Negative-size-param in mrb_str_format
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=35109
@@ -8,18 +11,14 @@ details: |
   mrb_str_format
   mrb_f_sprintf
   mrb_vm_exec
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/mruby/mruby
+    introduced: 972cc8b5a8c0378c391f981153ccdccf24c89d21
+    fixed: 62f4cc8cd1d5839153eb364c1c095df64d7cdc22
 modified: '2021-06-11T00:01:20.115521Z'
 published: '2021-06-11T00:01:20.115204Z'
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=35109
-affected:
-- package:
-    name: mruby
-    ecosystem: OSS-Fuzz
-  ranges:
-  - type: GIT
-    repo: https://github.com/mruby/mruby
-    events:
-    - introduced: 972cc8b5a8c0378c391f981153ccdccf24c89d21
-    - fixed: 62f4cc8cd1d5839153eb364c1c095df64d7cdc22

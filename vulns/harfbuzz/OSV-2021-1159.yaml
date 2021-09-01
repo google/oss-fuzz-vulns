@@ -1,4 +1,7 @@
 id: OSV-2021-1159
+package:
+  name: harfbuzz
+  ecosystem: OSS-Fuzz
 summary: UNKNOWN WRITE in hb_bit_set_invertible_t::set
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=37425
@@ -8,22 +11,18 @@ details: |
   hb_bit_set_invertible_t::set
   hb_sparseset_t<hb_bit_set_invertible_t>::set
   hb_set_copy
-modified: '2021-08-22T00:00:24.932034Z'
-published: '2021-08-22T00:00:24.931714Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=37425
-affected:
-- package:
-    name: harfbuzz
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/harfbuzz/harfbuzz.git
-    events:
-    - introduced: 48ad9eef1eb5e5226fcfdb86f3cf5be925456a57
-    - fixed: d3e09bf4654fe5478b6dbf2b26ebab6271317d81
+    introduced: 48ad9eef1eb5e5226fcfdb86f3cf5be925456a57
+    fixed: d3e09bf4654fe5478b6dbf2b26ebab6271317d81
   versions:
   - 2.9.0
-  ecosystem_specific:
-    severity: HIGH
+modified: '2021-08-22T00:00:24.932034Z'
+published: '2021-08-22T00:00:24.931714Z'
+ecosystem_specific:
+  severity: HIGH
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=37425

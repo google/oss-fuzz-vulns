@@ -1,4 +1,7 @@
 id: OSV-2020-1158
+package:
+  name: poppler
+  ecosystem: OSS-Fuzz
 summary: Use-of-uninitialized-value in JBIG2HuffmanDecoder::buildTable
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18802
@@ -8,21 +11,12 @@ details: |
   JBIG2HuffmanDecoder::buildTable
   JBIG2Stream::readTextRegionSeg
   JBIG2Stream::readSegments
-modified: '2021-06-23T06:26:17.401566Z'
-published: '2020-07-22T21:49:52.056163Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18802
-affected:
-- package:
-    name: poppler
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://anongit.freedesktop.org/git/poppler/poppler.git
-    events:
-    - introduced: c9e2dc7ea7e098875e6b93566bdb1d14451c3673
-    - fixed: 8b4a2891d9e4ca8ac835527cc7d114ab08e89ea7
+    introduced: c9e2dc7ea7e098875e6b93566bdb1d14451c3673
+    fixed: 8b4a2891d9e4ca8ac835527cc7d114ab08e89ea7
   versions:
   - poppler-0.65.0
   - poppler-0.66.0
@@ -44,7 +38,13 @@ affected:
   - poppler-0.80.0
   - poppler-0.81.0
   - poppler-0.82.0
-  ecosystem_specific:
-    fixed_range: 280c096521d92f6c165f53021110828ad0174c12:8b4a2891d9e4ca8ac835527cc7d114ab08e89ea7
-    introduced_range: unknown:c9e2dc7ea7e098875e6b93566bdb1d14451c3673
-    severity: MEDIUM
+modified: '2021-06-23T06:26:17.401566Z'
+published: '2020-07-22T21:49:52.056163Z'
+ecosystem_specific:
+  severity: MEDIUM
+database_specific:
+  fixed_range: 280c096521d92f6c165f53021110828ad0174c12:8b4a2891d9e4ca8ac835527cc7d114ab08e89ea7
+  introduced_range: unknown:c9e2dc7ea7e098875e6b93566bdb1d14451c3673
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18802

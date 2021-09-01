@@ -1,4 +1,7 @@
 id: OSV-2020-2253
+package:
+  name: glib
+  ecosystem: OSS-Fuzz
 summary: Global-buffer-overflow in g_date_time_get_ymd
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=28477
@@ -8,18 +11,14 @@ details: |
   g_date_time_get_ymd
   g_date_time_get_year
   g_date_time_format_utf8
-modified: '2021-03-09T04:49:05.745643Z'
-published: '2020-12-10T00:00:08.953434Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=28477
-affected:
-- package:
-    name: glib
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://gitlab.gnome.org/GNOME/glib
-    events:
-    - introduced: ec330e50cf0ea3a003290d874f803892cfd64290
-    - fixed: c3805d74ba4c46aacf9470646fdecdcba68e11d0
+    introduced: ec330e50cf0ea3a003290d874f803892cfd64290
+    fixed: c3805d74ba4c46aacf9470646fdecdcba68e11d0
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=28477
+modified: '2021-03-09T04:49:05.745643Z'
+published: '2020-12-10T00:00:08.953434Z'

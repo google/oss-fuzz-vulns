@@ -1,4 +1,7 @@
 id: OSV-2021-678
+package:
+  name: wasm3
+  ecosystem: OSS-Fuzz
 summary: UNKNOWN WRITE in CompileBlock
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=33555
@@ -8,21 +11,17 @@ details: |
   CompileBlock
   Compile_LoopOrBlock
   CompileBlockStatements
-modified: '2021-04-23T00:00:13.901043Z'
-published: '2021-04-23T00:00:13.900793Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=33555
-affected:
-- package:
-    name: wasm3
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/wasm3/wasm3
-    events:
-    - introduced: ef7c7f3a7578b9ed362cfbd0d1c6f065678df531
+    introduced: ef7c7f3a7578b9ed362cfbd0d1c6f065678df531
   versions:
   - v0.5.0
-  ecosystem_specific:
-    severity: HIGH
+modified: '2021-04-23T00:00:13.901043Z'
+published: '2021-04-23T00:00:13.900793Z'
+ecosystem_specific:
+  severity: HIGH
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=33555

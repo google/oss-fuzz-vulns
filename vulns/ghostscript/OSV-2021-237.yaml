@@ -1,4 +1,7 @@
 id: OSV-2021-237
+package:
+  name: ghostscript
+  ecosystem: OSS-Fuzz
 summary: Heap-use-after-free in sampled_data_sample
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29903
@@ -8,21 +11,12 @@ details: |
   sampled_data_sample
   sampled_data_continue
   interp
-modified: '2021-06-23T06:25:39.623346Z'
-published: '2021-01-26T00:00:02.244670Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29903
-affected:
-- package:
-    name: ghostscript
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: git://git.ghostscript.com/ghostpdl.git
-    events:
-    - introduced: 45e765e59a45b46dcb05e8c729689a7c0574a48c
-    - fixed: 0bd6877f480a84657696a80adc13f9c5485dd996
+    introduced: 45e765e59a45b46dcb05e8c729689a7c0574a48c
+    fixed: 0bd6877f480a84657696a80adc13f9c5485dd996
   versions:
   - ghostpdl-9.28rc1
   - ghostpdl-9.28rc2
@@ -56,6 +50,12 @@ affected:
   - ghostscript-9.52
   - gs9.28-temp-for-testing-tag
   - rjj_9.53.2_test
-  ecosystem_specific:
-    introduced_range: f209fb3a0f50cd0a9974d8627a4ac7f358f60c8a:470897e484fb0bfaa8553e0ccd5b9db91eda008b
-    severity: HIGH
+modified: '2021-06-23T06:25:39.623346Z'
+published: '2021-01-26T00:00:02.244670Z'
+ecosystem_specific:
+  severity: HIGH
+database_specific:
+  introduced_range: f209fb3a0f50cd0a9974d8627a4ac7f358f60c8a:470897e484fb0bfaa8553e0ccd5b9db91eda008b
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29903

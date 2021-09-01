@@ -1,4 +1,7 @@
 id: OSV-2020-408
+package:
+  name: wget2
+  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in _iri_unescape_inline
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14428
@@ -8,20 +11,16 @@ details: |
   _iri_unescape_inline
   wget_iri_parse
   test
-modified: '2021-06-21T06:56:27.231125Z'
-published: '2020-07-01T00:00:07.867096Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14428
-affected:
-- package:
-    name: wget2
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://gitlab.com/gnuwget/wget2.git
-    events:
-    - introduced: 8df8100af928f0377ee79a3886f4929fca9fb206
-    - fixed: 6e5c820cf7a1d54b7732af3c6a3c9727d4bd78bf
-  ecosystem_specific:
-    severity: MEDIUM
+    introduced: 8df8100af928f0377ee79a3886f4929fca9fb206
+    fixed: 6e5c820cf7a1d54b7732af3c6a3c9727d4bd78bf
+modified: '2021-06-21T06:56:27.231125Z'
+published: '2020-07-01T00:00:07.867096Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14428

@@ -1,4 +1,7 @@
 id: OSV-2020-521
+package:
+  name: aspell
+  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in acommon::ObjStack::dup_top
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18462
@@ -8,24 +11,20 @@ details: |
   acommon::ObjStack::dup_top
   acommon::StringMap::add
   acommon::Config::lookup_list
-modified: '2021-06-21T06:56:20.818929Z'
-published: '2020-07-01T00:00:14.312168Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18462
-affected:
-- package:
-    name: aspell
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/gnuaspell/aspell.git
-    events:
-    - introduced: e0646f9b063b23754951f1254f1ecb7af8ca36f3
-    - fixed: 0718b375425aad8e54e1150313b862e4c6fd324a
+    introduced: e0646f9b063b23754951f1254f1ecb7af8ca36f3
+    fixed: 0718b375425aad8e54e1150313b862e4c6fd324a
   versions:
   - rel-0.60.8
   - rel-0.60.8-20190817
   - rel-0.60.8-20190921
-  ecosystem_specific:
-    severity: HIGH
+modified: '2021-06-21T06:56:20.818929Z'
+published: '2020-07-01T00:00:14.312168Z'
+ecosystem_specific:
+  severity: HIGH
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18462

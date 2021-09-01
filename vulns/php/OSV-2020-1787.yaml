@@ -1,4 +1,7 @@
 id: OSV-2020-1787
+package:
+  name: php
+  ecosystem: OSS-Fuzz
 summary: Use-of-uninitialized-value in zend_generator_search_multi_children_node
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25678
@@ -8,22 +11,18 @@ details: |
   zend_generator_search_multi_children_node
   zend_generator_add_child
   zend_generator_yield_from
-modified: '2021-06-21T06:56:21.039043Z'
-published: '2020-09-18T00:00:10.979894Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25678
-affected:
-- package:
-    name: php
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/php/php-src.git
-    events:
-    - introduced: 1902f730ee2bda60552f34c0643e2d7b47e4fb64
-    - fixed: 6d538e83aa1e98694402eea5433e38d387f8729a
+    introduced: 1902f730ee2bda60552f34c0643e2d7b47e4fb64
+    fixed: 6d538e83aa1e98694402eea5433e38d387f8729a
   versions:
   - php-8.0.0beta3
-  ecosystem_specific:
-    severity: MEDIUM
+modified: '2021-06-21T06:56:21.039043Z'
+published: '2020-09-18T00:00:10.979894Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25678

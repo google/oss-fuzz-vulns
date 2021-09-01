@@ -1,4 +1,7 @@
 id: OSV-2020-2018
+package:
+  name: leptonica
+  ecosystem: OSS-Fuzz
 summary: Heap-use-after-free in fpixChangeRefcount
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26260
@@ -8,20 +11,16 @@ details: |
   fpixChangeRefcount
   fpixDestroy
   fpix2_fuzzer.cc
-modified: '2021-06-21T06:56:20.292380Z'
-published: '2020-10-12T00:00:40.582555Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26260
-affected:
-- package:
-    name: leptonica
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/DanBloomberg/leptonica.git
-    events:
-    - introduced: ef35b298c87cee04bf35dac4bc7c8c489d26fbc4
-    - fixed: 7d0c940768fa3f7d07396dbae1d668cfded6bf05
-  ecosystem_specific:
-    severity: HIGH
+    introduced: ef35b298c87cee04bf35dac4bc7c8c489d26fbc4
+    fixed: 7d0c940768fa3f7d07396dbae1d668cfded6bf05
+modified: '2021-06-21T06:56:20.292380Z'
+published: '2020-10-12T00:00:40.582555Z'
+ecosystem_specific:
+  severity: HIGH
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26260

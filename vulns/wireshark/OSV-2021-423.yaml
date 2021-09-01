@@ -1,4 +1,7 @@
 id: OSV-2021-423
+package:
+  name: wireshark
+  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in dissect_vjc_uncomp
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31121
@@ -8,20 +11,16 @@ details: |
   dissect_vjc_uncomp
   call_dissector_work
   dissector_try_uint
-modified: '2021-06-21T06:56:24.072093Z'
-published: '2021-02-20T00:01:09.114506Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31121
-affected:
-- package:
-    name: wireshark
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://gitlab.com/wireshark/wireshark.git
-    events:
-    - introduced: 23a5f6a17767c39a7ed04df438ae3b4bf1fe90d8
-    - fixed: 72c9b4b1e8e9bb5ae0ffc4493f3fd86b06c014d8
-  ecosystem_specific:
-    severity: MEDIUM
+    introduced: 23a5f6a17767c39a7ed04df438ae3b4bf1fe90d8
+    fixed: 72c9b4b1e8e9bb5ae0ffc4493f3fd86b06c014d8
+modified: '2021-06-21T06:56:24.072093Z'
+published: '2021-02-20T00:01:09.114506Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31121

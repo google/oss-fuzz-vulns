@@ -1,4 +1,7 @@
 id: OSV-2020-1349
+package:
+  name: muparser
+  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in mu::ParserBase::ParseCmdCodeBulk
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23410
@@ -8,21 +11,18 @@ details: |
   mu::ParserBase::ParseCmdCodeBulk
   mu::ParserBase::ParseString
   set_eval_fuzzer.cc
-modified: '2021-06-23T06:24:46.990891Z'
-published: '2020-07-22T21:50:08.481816Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23410
-affected:
-- package:
-    name: muparser
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/beltoforion/muparser.git
-    events:
-    - introduced: e6c369c90c36e9c3443f465ad1d9cec9e42d38b6
-    - fixed: 90f85fe7088955532f84fa7e2c54f07824ed6eb3
-  ecosystem_specific:
-    introduced_range: unknown:e6c369c90c36e9c3443f465ad1d9cec9e42d38b6
-    severity: MEDIUM
+    introduced: e6c369c90c36e9c3443f465ad1d9cec9e42d38b6
+    fixed: 90f85fe7088955532f84fa7e2c54f07824ed6eb3
+modified: '2021-06-23T06:24:46.990891Z'
+published: '2020-07-22T21:50:08.481816Z'
+ecosystem_specific:
+  severity: MEDIUM
+database_specific:
+  introduced_range: unknown:e6c369c90c36e9c3443f465ad1d9cec9e42d38b6
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23410

@@ -1,4 +1,7 @@
 id: OSV-2020-68
+package:
+  name: c-ares
+  ecosystem: OSS-Fuzz
 summary: Heap-double-free in ares_parse_soa_reply
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21176
@@ -8,20 +11,16 @@ details: |
   ares_parse_soa_reply
   ares-test-fuzz.c
   ares_parse_soa_reply
-modified: '2021-06-21T06:56:22.932Z'
-published: '2020-06-24T01:51:12.645377Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21176
-affected:
-- package:
-    name: c-ares
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/c-ares/c-ares.git
-    events:
-    - introduced: e0517f97d98845e2f56a43ba6ae2bbf339b5a3b0
-    - fixed: 910df394fc40d90dda233b27bf122e50357943e6
-  ecosystem_specific:
-    severity: HIGH
+    introduced: e0517f97d98845e2f56a43ba6ae2bbf339b5a3b0
+    fixed: 910df394fc40d90dda233b27bf122e50357943e6
+modified: '2021-06-21T06:56:22.932Z'
+published: '2020-06-24T01:51:12.645377Z'
+ecosystem_specific:
+  severity: HIGH
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21176

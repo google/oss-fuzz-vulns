@@ -1,4 +1,7 @@
 id: OSV-2020-471
+package:
+  name: openthread
+  ecosystem: OSS-Fuzz
 summary: Stack-buffer-overflow in ot::Cli::Interpreter::ProcessService
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=12642
@@ -8,20 +11,16 @@ details: |
   ot::Cli::Interpreter::ProcessService
   ot::Cli::Interpreter::ProcessLine
   ot::Cli::Uart::ProcessCommand
-modified: '2021-06-21T06:56:25.134145Z'
-published: '2020-07-01T00:00:11.530819Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=12642
-affected:
-- package:
-    name: openthread
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/openthread/openthread
-    events:
-    - introduced: f9eb4cb51722ef979afc6f9e3df5f7e6c9e7a75b
-    - fixed: 249bc598748ad08a98b08995698669613594e54b
-  ecosystem_specific:
-    severity: HIGH
+    introduced: f9eb4cb51722ef979afc6f9e3df5f7e6c9e7a75b
+    fixed: 249bc598748ad08a98b08995698669613594e54b
+modified: '2021-06-21T06:56:25.134145Z'
+published: '2020-07-01T00:00:11.530819Z'
+ecosystem_specific:
+  severity: HIGH
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=12642

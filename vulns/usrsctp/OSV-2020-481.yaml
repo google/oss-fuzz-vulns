@@ -1,4 +1,7 @@
 id: OSV-2020-481
+package:
+  name: usrsctp
+  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in sctp_handle_asconf
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18070
@@ -8,20 +11,16 @@ details: |
   sctp_handle_asconf
   sctp_process_control
   sctp_common_input_processing
-modified: '2021-06-21T06:56:27.940653Z'
-published: '2020-07-01T00:00:12.106212Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18070
-affected:
-- package:
-    name: usrsctp
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/weinrank/usrsctp
-    events:
-    - introduced: 05bea46702687f26a81c41c3fb1fd1dd3d9c0aa1
-    - fixed: c8e200e3308e41a9f0f34387b47a183ec0120baa
-  ecosystem_specific:
-    severity: MEDIUM
+    introduced: 05bea46702687f26a81c41c3fb1fd1dd3d9c0aa1
+    fixed: c8e200e3308e41a9f0f34387b47a183ec0120baa
+modified: '2021-06-21T06:56:27.940653Z'
+published: '2020-07-01T00:00:12.106212Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18070

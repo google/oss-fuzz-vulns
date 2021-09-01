@@ -1,4 +1,7 @@
 id: OSV-2020-29
+package:
+  name: openssl
+  ecosystem: OSS-Fuzz
 summary: Heap-use-after-free in CRYPTO_DOWN_REF
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20816
@@ -8,20 +11,16 @@ details: |
   CRYPTO_DOWN_REF
   DH_free
   evp_pkey_free_it
-modified: '2021-06-21T06:56:24.840750Z'
-published: '2020-06-24T01:51:10.908381Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20816
-affected:
-- package:
-    name: openssl
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/openssl/openssl.git
-    events:
-    - introduced: ada66e78ef535fe80e422bbbadffe8e7863d457c
-    - fixed: fe56d5951f0b42fd3ff1cf42a96d07f06f9692bc
-  ecosystem_specific:
-    severity: HIGH
+    introduced: ada66e78ef535fe80e422bbbadffe8e7863d457c
+    fixed: fe56d5951f0b42fd3ff1cf42a96d07f06f9692bc
+modified: '2021-06-21T06:56:24.840750Z'
+published: '2020-06-24T01:51:10.908381Z'
+ecosystem_specific:
+  severity: HIGH
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20816

@@ -1,4 +1,7 @@
 id: OSV-2021-365
+package:
+  name: keystone
+  ecosystem: OSS-Fuzz
 summary: Global-buffer-overflow in llvm_ks::StringRef::find_last_not_of
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30790
@@ -8,22 +11,18 @@ details: |
   llvm_ks::StringRef::find_last_not_of
   llvm_ks::StringRef::rtrim
   llvm_ks::StringRef::trim
-modified: '2021-03-09T05:46:28.897362Z'
-published: '2021-02-11T00:00:55.402078Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30790
-affected:
-- package:
-    name: keystone
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/keystone-engine/keystone.git
-    events:
-    - introduced: 105761ffe7176a60b4ff1b1c165ad937110ae63e
+    introduced: 105761ffe7176a60b4ff1b1c165ad937110ae63e
   versions:
   - 0.9.2
   - 0.9.2-rc1
   - 0.9.2-rc1.post1
   - 0.9.2-rc1.post2
+modified: '2021-03-09T05:46:28.897362Z'
+published: '2021-02-11T00:00:55.402078Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30790

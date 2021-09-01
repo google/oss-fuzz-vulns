@@ -1,4 +1,7 @@
 id: OSV-2021-1121
+package:
+  name: qt
+  ecosystem: OSS-Fuzz
 summary: UNKNOWN WRITE in QtPrivate::QCommonArrayOps<QPainterPath::Element>::growAppend
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=37025
@@ -8,20 +11,17 @@ details: |
   QtPrivate::QCommonArrayOps<QPainterPath::Element>::growAppend
   QPainterPath::addPath
   QPathClipper::intersect
-modified: '2021-08-12T00:00:36.570381Z'
-published: '2021-08-12T00:00:36.570149Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=37025
-affected:
-- package:
-    name: qt
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: git://code.qt.io/qt/qt5.git
-    events:
-    - introduced: a341894f29be54642de9dd1c8d03604415c9577d
-  ecosystem_specific:
-    severity: HIGH
-    introduced_range: 1c17b656e0c7b3f5fae598a0915fdebfeb822dae:f1b826440d0c9407b08329bb563b95781d6aeb6b
+    introduced: a341894f29be54642de9dd1c8d03604415c9577d
+modified: '2021-08-12T00:00:36.570381Z'
+published: '2021-08-12T00:00:36.570149Z'
+ecosystem_specific:
+  severity: HIGH
+database_specific:
+  introduced_range: 1c17b656e0c7b3f5fae598a0915fdebfeb822dae:f1b826440d0c9407b08329bb563b95781d6aeb6b
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=37025

@@ -1,4 +1,7 @@
 id: OSV-2020-377
+package:
+  name: radare2
+  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in symbols
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15004
@@ -8,20 +11,16 @@ details: |
   symbols
   r_bin_object_set_items
   r_bin_object_new
-modified: '2021-06-21T06:56:23.223817Z'
-published: '2020-07-01T00:00:06.002017Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15004
-affected:
-- package:
-    name: radare2
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/radare/radare2
-    events:
-    - introduced: a875795bb5d8c216fa17d685b49784c4d5c93f87
-    - fixed: 9392fc7117dd5240c76d8ab81d84b482bc968339
-  ecosystem_specific:
-    severity: MEDIUM
+    introduced: a875795bb5d8c216fa17d685b49784c4d5c93f87
+    fixed: 9392fc7117dd5240c76d8ab81d84b482bc968339
+modified: '2021-06-21T06:56:23.223817Z'
+published: '2020-07-01T00:00:06.002017Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15004

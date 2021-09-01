@@ -1,4 +1,7 @@
 id: OSV-2020-774
+package:
+  name: ndpi
+  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in ndpi_search_kerberos
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23021
@@ -8,22 +11,18 @@ details: |
   ndpi_search_kerberos
   check_ndpi_udp_flow_func
   ndpi_check_flow_func
-modified: '2021-06-21T06:56:22.504834Z'
-published: '2020-07-14T05:37:28.736261Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23021
-affected:
-- package:
-    name: ndpi
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/ntop/nDPI.git
-    events:
-    - introduced: 9fb3a57a7182432f89248fc65e3fe59c2cbf1963
-    - fixed: 7051acc0b5b8046b6415a454a2eff4fffa18396b
+    introduced: 9fb3a57a7182432f89248fc65e3fe59c2cbf1963
+    fixed: 7051acc0b5b8046b6415a454a2eff4fffa18396b
   versions:
   - '3.2'
-  ecosystem_specific:
-    severity: MEDIUM
+modified: '2021-06-21T06:56:22.504834Z'
+published: '2020-07-14T05:37:28.736261Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23021

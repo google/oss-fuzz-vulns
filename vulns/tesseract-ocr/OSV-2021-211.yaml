@@ -1,4 +1,7 @@
 id: OSV-2021-211
+package:
+  name: tesseract-ocr
+  ecosystem: OSS-Fuzz
 summary: Heap-use-after-free in __libcpp_strpbrk
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29698
@@ -8,22 +11,18 @@ details: |
   __libcpp_strpbrk
   strpbrk
   tesseract::Tesseract::one_ell_conflict
-modified: '2021-06-21T06:56:19.230851Z'
-published: '2021-01-19T00:00:01.795893Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29698
-affected:
-- package:
-    name: tesseract-ocr
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/tesseract-ocr/tesseract
-    events:
-    - introduced: 4043204c2b418994475f6f09332363427b2702e7
-    - fixed: e6f15621c2ab2ecbfabf656942d8ef66f03b2d55
+    introduced: 4043204c2b418994475f6f09332363427b2702e7
+    fixed: e6f15621c2ab2ecbfabf656942d8ef66f03b2d55
   versions:
   - 5.0.0-alpha-20201231
-  ecosystem_specific:
-    severity: HIGH
+modified: '2021-06-21T06:56:19.230851Z'
+published: '2021-01-19T00:00:01.795893Z'
+ecosystem_specific:
+  severity: HIGH
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29698

@@ -1,4 +1,7 @@
 id: OSV-2020-2000
+package:
+  name: usrsctp
+  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in sctp_process_init
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26197
@@ -8,20 +11,16 @@ details: |
   sctp_process_init
   sctp_process_cookie_existing
   sctp_handle_cookie_echo
-modified: '2021-06-21T06:56:27.928620Z'
-published: '2020-10-09T00:00:08.332453Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26197
-affected:
-- package:
-    name: usrsctp
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/sctplab/usrsctp
-    events:
-    - introduced: cfa8402646237a1fb78f0b8bd65be4a1afd4bee6
-    - fixed: f4925bd5ebb2db38263eef0ec816bf393293cf9c
-  ecosystem_specific:
-    severity: HIGH
+    introduced: cfa8402646237a1fb78f0b8bd65be4a1afd4bee6
+    fixed: f4925bd5ebb2db38263eef0ec816bf393293cf9c
+modified: '2021-06-21T06:56:27.928620Z'
+published: '2020-10-09T00:00:08.332453Z'
+ecosystem_specific:
+  severity: HIGH
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26197

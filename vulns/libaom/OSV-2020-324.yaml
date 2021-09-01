@@ -1,4 +1,7 @@
 id: OSV-2020-324
+package:
+  name: libaom
+  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in av1_convolve_2d_copy_sr_sse2
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=12549
@@ -8,20 +11,16 @@ details: |
   av1_convolve_2d_copy_sr_sse2
   av1_convolve_2d_facade
   av1_make_inter_predictor
-modified: '2021-06-21T06:56:25.437949Z'
-published: '2020-07-01T00:00:02.786882Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=12549
-affected:
-- package:
-    name: libaom
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://aomedia.googlesource.com/aom
-    events:
-    - introduced: 2fd0077fe14aa1b6dbcd30f3acc95c5eba5c76bb
-    - fixed: b46542180d551d5e4eb666cf35dd62395ba43f3e
-  ecosystem_specific:
-    severity: MEDIUM
+    introduced: 2fd0077fe14aa1b6dbcd30f3acc95c5eba5c76bb
+    fixed: b46542180d551d5e4eb666cf35dd62395ba43f3e
+modified: '2021-06-21T06:56:25.437949Z'
+published: '2020-07-01T00:00:02.786882Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=12549

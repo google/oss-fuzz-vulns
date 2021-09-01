@@ -1,4 +1,7 @@
 id: OSV-2021-1099
+package:
+  name: openthread
+  ecosystem: OSS-Fuzz
 summary: Stack-buffer-overflow in ot::StringFind
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=36830
@@ -8,20 +11,16 @@ details: |
   ot::StringFind
   ot::Coap::Message::AppendUriPathOptions
   otCoapMessageAppendUriPathOptions
-modified: '2021-08-05T00:00:36.874925Z'
-published: '2021-08-05T00:00:36.874659Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=36830
-affected:
-- package:
-    name: openthread
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/openthread/openthread
-    events:
-    - introduced: 354387c931811582476385afd52e20c6b77f0dcf
-    - fixed: d4005f9d14f8e156bbde563186f73f60e91c5872
-  ecosystem_specific:
-    severity: MEDIUM
+    introduced: 354387c931811582476385afd52e20c6b77f0dcf
+    fixed: d4005f9d14f8e156bbde563186f73f60e91c5872
+modified: '2021-08-05T00:00:36.874925Z'
+published: '2021-08-05T00:00:36.874659Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=36830

@@ -1,4 +1,7 @@
 id: OSV-2021-152
+package:
+  name: openthread
+  ecosystem: OSS-Fuzz
 summary: Stack-buffer-overflow in ot::NetworkData::ServerTlv::GetServer16
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=5878
@@ -8,21 +11,18 @@ details: |
   ot::NetworkData::ServerTlv::GetServer16
   ot::NetworkData::Leader::RlocLookup
   ot::NetworkData::Leader::RegisterNetworkData
-modified: '2021-06-23T06:28:31.799171Z'
-published: '2021-01-13T21:56:33.613485Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=5878
-affected:
-- package:
-    name: openthread
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/openthread/openthread
-    events:
-    - introduced: 9190aa21c4b3983c05aad6be8fd5d62942b8cbd8
-    - fixed: 9ec07205cc17c2de80b06a8b1e181abde4fdbb1e
-  ecosystem_specific:
-    introduced_range: 050cf9074f3de30ca5d2cfda26c5b37f24a4b9a1:68a605f22e579ae45ab1d8221faa2d45e8668e05
-    severity: MEDIUM
+    introduced: 9190aa21c4b3983c05aad6be8fd5d62942b8cbd8
+    fixed: 9ec07205cc17c2de80b06a8b1e181abde4fdbb1e
+modified: '2021-06-23T06:28:31.799171Z'
+published: '2021-01-13T21:56:33.613485Z'
+ecosystem_specific:
+  severity: MEDIUM
+database_specific:
+  introduced_range: 050cf9074f3de30ca5d2cfda26c5b37f24a4b9a1:68a605f22e579ae45ab1d8221faa2d45e8668e05
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=5878

@@ -1,4 +1,7 @@
 id: OSV-2021-39
+package:
+  name: yara
+  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in dotnet_parse_tilde_2
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29419
@@ -8,21 +11,12 @@ details: |
   dotnet_parse_tilde_2
   dotnet_parse_tilde
   dotnet_parse_com
-modified: '2021-06-21T06:56:27.644866Z'
-published: '2021-01-10T00:01:34.995212Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29419
-affected:
-- package:
-    name: yara
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/VirusTotal/yara.git
-    events:
-    - introduced: aa182b4f928e54189fe51606d4dc419e7b27022f
-    - fixed: 4782d10257693a30bf84b4b33159d02594ece005
+    introduced: aa182b4f928e54189fe51606d4dc419e7b27022f
+    fixed: 4782d10257693a30bf84b4b33159d02594ece005
   versions:
   - v3.10.0
   - v3.10.0-rc1
@@ -37,5 +31,10 @@ affected:
   - v4.0.3
   - v4.0.4
   - v4.0.5
-  ecosystem_specific:
-    severity: MEDIUM
+modified: '2021-06-21T06:56:27.644866Z'
+published: '2021-01-10T00:01:34.995212Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29419

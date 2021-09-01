@@ -1,4 +1,7 @@
 id: OSV-2020-1683
+package:
+  name: php
+  ecosystem: OSS-Fuzz
 summary: UNKNOWN READ in zend_gc_delref
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25321
@@ -8,22 +11,18 @@ details: |
   zend_gc_delref
   zval_delref_p
   zval_ptr_dtor_nogc
-modified: '2021-06-21T06:56:20.882674Z'
-published: '2020-09-01T00:00:58.177927Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25321
-affected:
-- package:
-    name: php
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/php/php-src.git
-    events:
-    - introduced: 1902f730ee2bda60552f34c0643e2d7b47e4fb64
-    - fixed: ddc2a2d381843e086fc36388981d0b8ba1ea789d
+    introduced: 1902f730ee2bda60552f34c0643e2d7b47e4fb64
+    fixed: ddc2a2d381843e086fc36388981d0b8ba1ea789d
   versions:
   - php-8.0.0beta3
-  ecosystem_specific:
-    severity: MEDIUM
+modified: '2021-06-21T06:56:20.882674Z'
+published: '2020-09-01T00:00:58.177927Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25321

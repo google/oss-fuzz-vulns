@@ -1,4 +1,7 @@
 id: OSV-2021-799
+package:
+  name: mruby
+  ecosystem: OSS-Fuzz
 summary: UNKNOWN READ in mrb_ary_shift_m
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34691
@@ -8,20 +11,16 @@ details: |
   mrb_ary_shift_m
   mrb_vm_exec
   mrb_vm_run
-modified: '2021-06-21T06:56:25.582170Z'
-published: '2021-05-27T00:00:07.387216Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34691
-affected:
-- package:
-    name: mruby
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/mruby/mruby
-    events:
-    - introduced: 9f77232b71597dbef3907ae4aaae1a5530889e56
-    - fixed: 9a72869043e0377ec549a325a074e592f82ef5ed
-  ecosystem_specific:
-    severity: HIGH
+    introduced: 9f77232b71597dbef3907ae4aaae1a5530889e56
+    fixed: 9a72869043e0377ec549a325a074e592f82ef5ed
+modified: '2021-06-21T06:56:25.582170Z'
+published: '2021-05-27T00:00:07.387216Z'
+ecosystem_specific:
+  severity: HIGH
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34691

@@ -1,4 +1,7 @@
 id: OSV-2021-821
+package:
+  name: jsoncons
+  ecosystem: OSS-Fuzz
 summary: Stack-buffer-overflow in jsoncons::bson::decimal128_to_chars
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34816
@@ -8,20 +11,16 @@ details: |
   jsoncons::bson::decimal128_to_chars
   jsoncons::bson::basic_bson_parser<jsoncons::binary_stream_source, std::__1::allo
   jsoncons::bson::basic_bson_parser<jsoncons::binary_stream_source, std::__1::allo
-modified: '2021-06-21T06:56:25.509696Z'
-published: '2021-06-02T00:00:55.316399Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34816
-affected:
-- package:
-    name: jsoncons
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/danielaparker/jsoncons
-    events:
-    - introduced: 81b6db5c5a176a1fedacaf18b78c6d9f5db5b202
-    - fixed: cebedbefd441489cdf6a33d238ed3e3ed7be9958
-  ecosystem_specific:
-    severity: HIGH
+    introduced: 81b6db5c5a176a1fedacaf18b78c6d9f5db5b202
+    fixed: cebedbefd441489cdf6a33d238ed3e3ed7be9958
+modified: '2021-06-21T06:56:25.509696Z'
+published: '2021-06-02T00:00:55.316399Z'
+ecosystem_specific:
+  severity: HIGH
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34816

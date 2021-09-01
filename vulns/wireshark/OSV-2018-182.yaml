@@ -1,4 +1,7 @@
 id: OSV-2018-182
+package:
+  name: wireshark
+  ecosystem: OSS-Fuzz
 summary: Stack-buffer-overflow in cdma2k_message_HANDOFF_DIR
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11633
@@ -8,20 +11,16 @@ details: |
   cdma2k_message_HANDOFF_DIR
   cdma2k_message_decode
   dissect_cdma2k
-modified: '2021-06-21T06:56:24.041471Z'
-published: '2021-01-13T00:01:14.685018Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11633
-affected:
-- package:
-    name: wireshark
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://gitlab.com/wireshark/wireshark.git
-    events:
-    - introduced: b53680145c7de36173e94d8673624f06b13ad3e2
-    - fixed: 1bd99df3535ac053f182a7e4e2246dae3e4c53ed
-  ecosystem_specific:
-    severity: MEDIUM
+    introduced: b53680145c7de36173e94d8673624f06b13ad3e2
+    fixed: 1bd99df3535ac053f182a7e4e2246dae3e4c53ed
+modified: '2021-06-21T06:56:24.041471Z'
+published: '2021-01-13T00:01:14.685018Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11633

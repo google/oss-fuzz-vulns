@@ -1,4 +1,7 @@
 id: OSV-2020-799
+package:
+  name: matio
+  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in ReadInt32DataDouble
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21421
@@ -8,24 +11,20 @@ details: |
   ReadInt32DataDouble
   ReadInt32Data
   Mat_VarRead4
-modified: '2021-07-13T00:04:05.612970Z'
-published: '2020-07-14T05:37:38.154412Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21421
-affected:
-- package:
-    name: matio
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: git://git.code.sf.net/p/matio/matio
-    events:
-    - introduced: 651a8e28099edb5fbb9e4e1d4d3238848f446c9a
+    introduced: 651a8e28099edb5fbb9e4e1d4d3238848f446c9a
   versions:
   - v1.5.18
   - v1.5.19
   - v1.5.20
   - v1.5.21
-  ecosystem_specific:
-    severity: HIGH
+modified: '2021-07-13T00:04:05.612970Z'
+published: '2020-07-14T05:37:38.154412Z'
+ecosystem_specific:
+  severity: HIGH
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21421

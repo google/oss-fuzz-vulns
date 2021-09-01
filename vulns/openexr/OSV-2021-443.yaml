@@ -1,4 +1,7 @@
 id: OSV-2021-443
+package:
+  name: openexr
+  ecosystem: OSS-Fuzz
 summary: Segv on unknown address in Imf_2_5::copyIntoFrameBuffer
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31293
@@ -8,18 +11,14 @@ details: |
   Imf_2_5::copyIntoFrameBuffer
   Imf_2_5::LineBufferTask::execute
   IlmThread_::NullThreadPoolProvider::addTask
-modified: '2021-03-09T05:46:44.059268Z'
-published: '2021-02-24T00:01:03.341594Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31293
-affected:
-- package:
-    name: openexr
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/AcademySoftwareFoundation/openexr
-    events:
-    - introduced: 2f01a253db2bc82724405a16c76783c38c67ba05
-    - fixed: d51c77e490f4db09089ed14fc6484a5771a782ec
+    introduced: 2f01a253db2bc82724405a16c76783c38c67ba05
+    fixed: d51c77e490f4db09089ed14fc6484a5771a782ec
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31293
+modified: '2021-03-09T05:46:44.059268Z'
+published: '2021-02-24T00:01:03.341594Z'

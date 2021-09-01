@@ -1,4 +1,7 @@
 id: OSV-2020-2131
+package:
+  name: solidity
+  ecosystem: OSS-Fuzz
 summary: Stack-use-after-return in solidity::smtutil::CHCSmtLib2Interface::querySolver
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26997
@@ -8,20 +11,16 @@ details: |
   solidity::smtutil::CHCSmtLib2Interface::querySolver
   solidity::smtutil::CHCSmtLib2Interface::query
   solidity::frontend::CHC::query
-modified: '2021-03-09T04:49:05.628104Z'
-published: '2020-11-07T00:00:44.497592Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26997
-affected:
-- package:
-    name: solidity
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/ethereum/solidity.git
-    events:
-    - introduced: 5b4125447bcdccfa427c5e75cc1048ef4b0eef95
-    - fixed: c39a5e2b7a3fabbf687f53a2823fc087be6c1a7e
+    introduced: 5b4125447bcdccfa427c5e75cc1048ef4b0eef95
+    fixed: c39a5e2b7a3fabbf687f53a2823fc087be6c1a7e
   versions:
   - v0.7.5
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26997
+modified: '2021-03-09T04:49:05.628104Z'
+published: '2020-11-07T00:00:44.497592Z'

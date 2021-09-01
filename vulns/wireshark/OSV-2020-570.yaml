@@ -1,4 +1,7 @@
 id: OSV-2020-570
+package:
+  name: wireshark
+  ecosystem: OSS-Fuzz
 summary: Global-buffer-overflow in decode_tlv
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13542
@@ -8,18 +11,14 @@ details: |
   decode_tlv
   dissect_noe
   call_dissector_work
-modified: '2021-03-09T04:49:05.958962Z'
-published: '2020-07-01T00:00:17.578359Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13542
-affected:
-- package:
-    name: wireshark
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://gitlab.com/wireshark/wireshark.git
-    events:
-    - introduced: 00318b3267c22528134ffefa026f9a46abc3f5f9
-    - fixed: b8b582af3d54b924c6ae89cfaaa47ce1cbd3c958
+    introduced: 00318b3267c22528134ffefa026f9a46abc3f5f9
+    fixed: b8b582af3d54b924c6ae89cfaaa47ce1cbd3c958
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13542
+modified: '2021-03-09T04:49:05.958962Z'
+published: '2020-07-01T00:00:17.578359Z'

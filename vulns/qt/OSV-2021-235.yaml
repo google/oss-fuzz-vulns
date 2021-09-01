@@ -1,4 +1,7 @@
 id: OSV-2021-235
+package:
+  name: qt
+  ecosystem: OSS-Fuzz
 summary: Global-buffer-overflow in QSvgSwitch::draw
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29873
@@ -8,36 +11,17 @@ details: |
   QSvgSwitch::draw
   QSvgTinyDocument::draw
   QSvgTinyDocument::draw
-modified: '2021-08-16T04:02:19.004581Z'
-published: '2021-01-25T00:00:16.933600Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29873
-- type: FIX
-  url: https://codereview.qt-project.org/c/qt/qtsvg/+/335065
-affected:
-- package:
-    name: qt
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: git://code.qt.io/qt/qtsvg.git
-    events:
-    - introduced: '0'
-    - fixed: 117f4f34c6162eb8ac749569a5fff604713a3eba
+    fixed: 117f4f34c6162eb8ac749569a5fff604713a3eba
   - type: GIT
     repo: git://code.qt.io/qt/qtsvg.git
-    events:
-    - introduced: '0'
-    - fixed: 117f4f34c6162eb8ac749569a5fff604713a3eba
-    - fixed: fc1a706440a33c792da08aa0f4b3ed2e0057e349
+    fixed: fc1a706440a33c792da08aa0f4b3ed2e0057e349
   - type: GIT
     repo: git://code.qt.io/qt/qtsvg.git
-    events:
-    - introduced: '0'
-    - fixed: 117f4f34c6162eb8ac749569a5fff604713a3eba
-    - fixed: fc1a706440a33c792da08aa0f4b3ed2e0057e349
-    - fixed: afde7ca3a40f524e40052df696f74190452b22cb
+    fixed: afde7ca3a40f524e40052df696f74190452b22cb
   versions:
   - qt-v5.0.0-alpha1
   - v5.0.0
@@ -190,5 +174,12 @@ affected:
   - v6.0.0-rc2
   - v6.0.1
   - v6.1.0-alpha1
-  ecosystem_specific:
-    introduced_range: ac489d92a3ae32540c4794d85be6fb103c701ee8:1095b1abc6d233bc27321f46f71bbd85fe8556de
+modified: '2021-08-16T04:02:19.004581Z'
+published: '2021-01-25T00:00:16.933600Z'
+database_specific:
+  introduced_range: ac489d92a3ae32540c4794d85be6fb103c701ee8:1095b1abc6d233bc27321f46f71bbd85fe8556de
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29873
+- type: FIX
+  url: https://codereview.qt-project.org/c/qt/qtsvg/+/335065

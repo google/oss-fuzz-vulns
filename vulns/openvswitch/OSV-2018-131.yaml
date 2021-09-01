@@ -1,4 +1,7 @@
 id: OSV-2018-131
+package:
+  name: openvswitch
+  ecosystem: OSS-Fuzz
 summary: Use-of-uninitialized-value in json_string_unescape
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11473
@@ -8,21 +11,18 @@ details: |
   json_string_unescape
   ofputil_table_from_string
   parse_ofp_str__
-modified: '2021-06-23T06:29:25.727165Z'
-published: '2021-01-13T00:00:58.327572Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11473
-affected:
-- package:
-    name: openvswitch
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/openvswitch/ovs.git
-    events:
-    - introduced: 581d3bec7b8c714a98744b0b5f48dd7c7c4db037
-    - fixed: 40fc4d8c8e24b8f15464607941d0c1835eed93a6
-  ecosystem_specific:
-    severity: MEDIUM
-    fixed_range: a32bab26e5d83e97624f265dad7ef3d07c8e0741:40fc4d8c8e24b8f15464607941d0c1835eed93a6
+    introduced: 581d3bec7b8c714a98744b0b5f48dd7c7c4db037
+    fixed: 40fc4d8c8e24b8f15464607941d0c1835eed93a6
+modified: '2021-06-23T06:29:25.727165Z'
+published: '2021-01-13T00:00:58.327572Z'
+ecosystem_specific:
+  severity: MEDIUM
+database_specific:
+  fixed_range: a32bab26e5d83e97624f265dad7ef3d07c8e0741:40fc4d8c8e24b8f15464607941d0c1835eed93a6
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11473

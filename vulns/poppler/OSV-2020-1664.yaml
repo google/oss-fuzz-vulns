@@ -1,4 +1,7 @@
 id: OSV-2020-1664
+package:
+  name: poppler
+  ecosystem: OSS-Fuzz
 summary: Negative-size-param in BaseMemStream<char const>::getChars
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25221
@@ -8,23 +11,19 @@ details: |
   BaseMemStream<char const>::getChars
   Stream::doGetChars
   Stream::fillString
-modified: '2021-03-09T04:49:05.380178Z'
-published: '2020-08-27T00:00:08.371618Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25221
-affected:
-- package:
-    name: poppler
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://anongit.freedesktop.org/git/poppler/poppler.git
-    events:
-    - introduced: 12dea6841940ce31630d60fa7c892da4597393aa
-    - fixed: 55eb5c73e5fb609ba56dee28f74e53b2be28fbb7
+    introduced: 12dea6841940ce31630d60fa7c892da4597393aa
+    fixed: 55eb5c73e5fb609ba56dee28f74e53b2be28fbb7
   versions:
   - poppler-0.89.0
   - poppler-0.90.0
   - poppler-0.90.1
   - poppler-20.08.0
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25221
+modified: '2021-03-09T04:49:05.380178Z'
+published: '2020-08-27T00:00:08.371618Z'

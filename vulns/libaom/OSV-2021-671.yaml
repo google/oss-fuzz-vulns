@@ -1,4 +1,7 @@
 id: OSV-2021-671
+package:
+  name: libaom
+  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in av1_cdef_init_fb_row_mt
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=33511
@@ -8,20 +11,16 @@ details: |
   av1_cdef_init_fb_row_mt
   av1_cdef_fb_row
   cdef_sb_row_worker_hook
-modified: '2021-06-21T06:56:25.430959Z'
-published: '2021-04-22T00:00:26.653138Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=33511
-affected:
-- package:
-    name: libaom
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://aomedia.googlesource.com/aom
-    events:
-    - introduced: f194981140e5a19a209bcb16333f1db1ecde5599
-    - fixed: 80bd452152ec39b7d88bded3d9090fb20b1ba12f
-  ecosystem_specific:
-    severity: MEDIUM
+    introduced: f194981140e5a19a209bcb16333f1db1ecde5599
+    fixed: 80bd452152ec39b7d88bded3d9090fb20b1ba12f
+modified: '2021-06-21T06:56:25.430959Z'
+published: '2021-04-22T00:00:26.653138Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=33511

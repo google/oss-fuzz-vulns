@@ -1,4 +1,7 @@
 id: OSV-2021-330
+package:
+  name: relic
+  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in bn_sqr_karat_imp
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30537
@@ -8,20 +11,16 @@ details: |
   bn_sqr_karat_imp
   bn_sqr_karat
   cryptofuzz::module::relic_bignum::Sqr::Run
-modified: '2021-06-21T06:56:21.278785Z'
-published: '2021-02-09T00:02:19.523920Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30537
-affected:
-- package:
-    name: relic
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/relic-toolkit/relic.git
-    events:
-    - introduced: 1cca0a522ca280c7c8ba5e1288a54d9ecde627b4
-    - fixed: 707708d83188b04ea0b7b0ae2487aa8ac7e62f41
-  ecosystem_specific:
-    severity: HIGH
+    introduced: 1cca0a522ca280c7c8ba5e1288a54d9ecde627b4
+    fixed: 707708d83188b04ea0b7b0ae2487aa8ac7e62f41
+modified: '2021-06-21T06:56:21.278785Z'
+published: '2021-02-09T00:02:19.523920Z'
+ecosystem_specific:
+  severity: HIGH
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30537

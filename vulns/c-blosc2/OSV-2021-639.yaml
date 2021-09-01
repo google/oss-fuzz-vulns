@@ -1,4 +1,7 @@
 id: OSV-2021-639
+package:
+  name: c-blosc2
+  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in blosc_d
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=33264
@@ -8,20 +11,16 @@ details: |
   blosc_d
   _blosc_getitem
   blosc2_getitem_ctx
-modified: '2021-06-21T06:56:25.910143Z'
-published: '2021-04-16T00:00:26.662778Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=33264
-affected:
-- package:
-    name: c-blosc2
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/Blosc/c-blosc2.git
-    events:
-    - introduced: d1ea514286c47433dabcf47b11cf81d2248ca5bf
-    - fixed: 4a727370b1c2e9746434c00bf2236db86c31ea5c
-  ecosystem_specific:
-    severity: MEDIUM
+    introduced: d1ea514286c47433dabcf47b11cf81d2248ca5bf
+    fixed: 4a727370b1c2e9746434c00bf2236db86c31ea5c
+modified: '2021-06-21T06:56:25.910143Z'
+published: '2021-04-16T00:00:26.662778Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=33264

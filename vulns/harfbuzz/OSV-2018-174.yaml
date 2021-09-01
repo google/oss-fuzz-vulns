@@ -1,4 +1,7 @@
 id: OSV-2018-174
+package:
+  name: harfbuzz
+  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in BEInt<unsigned char, 1>::operator unsigned char
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11245
@@ -8,20 +11,16 @@ details: |
   BEInt<unsigned char, 1>::operator unsigned char
   OT::KernSubTableFormat3::get_kerning
   hb_kern_machine_t<OT::KernSubTableFormat3>::kern
-modified: '2021-06-21T06:56:20.653569Z'
-published: '2021-01-13T00:01:11.845509Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11245
-affected:
-- package:
-    name: harfbuzz
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/harfbuzz/harfbuzz.git
-    events:
-    - introduced: 095f5add0b1ca39dd09842594b80fae92f0796e4
-    - fixed: 8d98c51d133b058a845ed7a84bfe8a43083bbb03
-  ecosystem_specific:
-    severity: MEDIUM
+    introduced: 095f5add0b1ca39dd09842594b80fae92f0796e4
+    fixed: 8d98c51d133b058a845ed7a84bfe8a43083bbb03
+modified: '2021-06-21T06:56:20.653569Z'
+published: '2021-01-13T00:01:11.845509Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11245

@@ -1,4 +1,7 @@
 id: OSV-2020-1420
+package:
+  name: libsass
+  ecosystem: OSS-Fuzz
 summary: Bad-cast to Sass::PreValue from Sass::Unary_Expression
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15896
@@ -8,20 +11,11 @@ details: |
   Bad-cast to Sass::PreValue from Sass::Unary_Expression
   Sass::SharedImpl<Sass::PreValue>::SharedImpl<Sass::Expression>
   Sass::Parser::parse_ie_keyword_arg
-modified: '2021-06-21T06:56:24.522781Z'
-published: '2020-07-28T00:00:14.887375Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15896
-affected:
-- package:
-    name: libsass
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/sass/libsass.git
-    events:
-    - introduced: c51f442c8c33d4d171adf6c5875cbfc7a9e1d1eb
+    introduced: c51f442c8c33d4d171adf6c5875cbfc7a9e1d1eb
   versions:
   - 3.6.0
   - 3.6.1
@@ -29,5 +23,10 @@ affected:
   - 3.6.3
   - 3.6.4
   - 3.6.5
-  ecosystem_specific:
-    severity: HIGH
+modified: '2021-06-21T06:56:24.522781Z'
+published: '2020-07-28T00:00:14.887375Z'
+ecosystem_specific:
+  severity: HIGH
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15896

@@ -1,4 +1,7 @@
 id: OSV-2020-715
+package:
+  name: cras
+  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in cras_rclient_message_from_client
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15058
@@ -8,26 +11,19 @@ details: |
   cras_rclient_message_from_client
   cras_rclient_buffer_from_client
   rclient_message.cc
-modified: '2021-06-21T06:56:27.922080Z'
-published: '2020-07-01T00:00:26.392362Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15058
-affected:
-- package:
-    name: cras
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://chromium.googlesource.com/chromiumos/third_party/adhd
-    events:
-    - introduced: 756637164293b7d3108768d2679ab02b0cc31bd0
-    - fixed: f27080e90427c1714eb894f2f749e10a618a50a6
+    introduced: 756637164293b7d3108768d2679ab02b0cc31bd0
+    fixed: f27080e90427c1714eb894f2f749e10a618a50a6
   - type: GIT
     repo: https://chromium.googlesource.com/chromiumos/third_party/adhd
-    events:
-    - introduced: 756637164293b7d3108768d2679ab02b0cc31bd0
-    - fixed: f27080e90427c1714eb894f2f749e10a618a50a6
-    - introduced: d2f8aea7c38919fbee0feb9a474f4c9524e6231f
-  ecosystem_specific:
-    severity: MEDIUM
+    introduced: d2f8aea7c38919fbee0feb9a474f4c9524e6231f
+modified: '2021-06-21T06:56:27.922080Z'
+published: '2020-07-01T00:00:26.392362Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15058

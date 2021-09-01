@@ -1,4 +1,7 @@
 id: OSV-2020-1069
+package:
+  name: opencv
+  ecosystem: OSS-Fuzz
 summary: Use-of-uninitialized-value in inflate
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13289
@@ -8,31 +11,26 @@ details: |
   inflate
   ZIPDecode
   _TIFFReadEncodedTileAndAllocBuffer
-modified: '2021-06-23T06:57:41.194266Z'
-published: '2020-07-22T21:49:44.756180Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13289
-affected:
-- package:
-    name: opencv
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/opencv/opencv.git
-    events:
-    - introduced: 6bcf0b5519c190826cf0f21efd87cbe256eabc48
-    - fixed: 360758e8ae5ebaf94c62f739d37892eae4222df4
+    introduced: 6bcf0b5519c190826cf0f21efd87cbe256eabc48
+    fixed: 360758e8ae5ebaf94c62f739d37892eae4222df4
   - type: GIT
     repo: https://github.com/opencv/opencv.git
-    events:
-    - introduced: 6bcf0b5519c190826cf0f21efd87cbe256eabc48
-    - fixed: 360758e8ae5ebaf94c62f739d37892eae4222df4
-    - fixed: 10ce9358230670c91caeab39c7ae7bb099229046
+    introduced: 6bcf0b5519c190826cf0f21efd87cbe256eabc48
+    fixed: 10ce9358230670c91caeab39c7ae7bb099229046
   versions:
   - 4.0.1
   - 4.1.0-openvino
-  ecosystem_specific:
-    fixed_range: 7442100caaa9e6dafce320aeb0afcf86e8aea11c:360758e8ae5ebaf94c62f739d37892eae4222df4
-    severity: MEDIUM
-    introduced_range: unknown:6bcf0b5519c190826cf0f21efd87cbe256eabc48
+modified: '2021-06-23T06:57:41.194266Z'
+published: '2020-07-22T21:49:44.756180Z'
+ecosystem_specific:
+  severity: MEDIUM
+database_specific:
+  fixed_range: 7442100caaa9e6dafce320aeb0afcf86e8aea11c:360758e8ae5ebaf94c62f739d37892eae4222df4
+  introduced_range: unknown:6bcf0b5519c190826cf0f21efd87cbe256eabc48
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13289

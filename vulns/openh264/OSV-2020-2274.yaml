@@ -1,4 +1,7 @@
 id: OSV-2020-2274
+package:
+  name: openh264
+  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in McCopyWidthEq4_c
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=28769
@@ -8,20 +11,16 @@ details: |
   McCopyWidthEq4_c
   McCopy_sse2
   McChroma_ssse3
-modified: '2021-06-21T06:56:23.927341Z'
-published: '2020-12-19T00:00:41.113564Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=28769
-affected:
-- package:
-    name: openh264
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/cisco/openh264.git
-    events:
-    - introduced: 66ef706acd55b0b8daec32ca299d2586a1f473c9
-    - fixed: 992c1c147175126c3fe7ab78216aa0395f9e6c71
-  ecosystem_specific:
-    severity: MEDIUM
+    introduced: 66ef706acd55b0b8daec32ca299d2586a1f473c9
+    fixed: 992c1c147175126c3fe7ab78216aa0395f9e6c71
+modified: '2021-06-21T06:56:23.927341Z'
+published: '2020-12-19T00:00:41.113564Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=28769

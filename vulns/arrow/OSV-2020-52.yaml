@@ -1,4 +1,7 @@
 id: OSV-2020-52
+package:
+  name: arrow
+  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in int arrow::util::RleDecoder::GetBatchWithDictSpaced<double>
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20665
@@ -8,20 +11,16 @@ details: |
   int arrow::util::RleDecoder::GetBatchWithDictSpaced<double>
   virtual thunk to parquet::DictDecoderImpl<parquet::PhysicalType<
   parquet::internal::TypedRecordReader<parquet::PhysicalType<
-modified: '2021-06-21T06:56:19.698671Z'
-published: '2020-06-24T01:51:11.907364Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20665
-affected:
-- package:
-    name: arrow
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/apache/arrow.git
-    events:
-    - introduced: 431fdbfbc0fb4bb16c4a89298404ad16784db2a0
-    - fixed: d2ab289294f5eaa175e6bc4ab5fb74b5ea013f6e
-  ecosystem_specific:
-    severity: MEDIUM
+    introduced: 431fdbfbc0fb4bb16c4a89298404ad16784db2a0
+    fixed: d2ab289294f5eaa175e6bc4ab5fb74b5ea013f6e
+modified: '2021-06-21T06:56:19.698671Z'
+published: '2020-06-24T01:51:11.907364Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20665

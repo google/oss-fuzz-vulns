@@ -1,4 +1,7 @@
 id: OSV-2020-2223
+package:
+  name: qemu
+  ecosystem: OSS-Fuzz
 summary: Heap-use-after-free in e1000e_write_packet_to_guest
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=28194
@@ -8,25 +11,21 @@ details: |
   e1000e_write_packet_to_guest
   e1000e_receive_iov
   e1000e_nc_receive_iov
-modified: '2021-06-21T06:56:20.861342Z'
-published: '2020-12-04T00:00:19.497055Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=28194
-affected:
-- package:
-    name: qemu
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://git.qemu.org/git/qemu.git
-    events:
-    - introduced: 7564bf7701f00214cdc8a678a9f7df765244def1
-    - fixed: b98b9fdef00e2383f63f939e079fe2c9eba87ca1
+    introduced: 7564bf7701f00214cdc8a678a9f7df765244def1
+    fixed: b98b9fdef00e2383f63f939e079fe2c9eba87ca1
   versions:
   - v5.2.0
   - v5.2.0-rc2
   - v5.2.0-rc3
   - v5.2.0-rc4
-  ecosystem_specific:
-    severity: HIGH
+modified: '2021-06-21T06:56:20.861342Z'
+published: '2020-12-04T00:00:19.497055Z'
+ecosystem_specific:
+  severity: HIGH
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=28194

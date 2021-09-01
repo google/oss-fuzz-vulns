@@ -1,4 +1,7 @@
 id: OSV-2020-1835
+package:
+  name: libfmt
+  ecosystem: OSS-Fuzz
 summary: Stack-buffer-overflow in fmt::v7::detail::buffer<char>::push_back
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25884
@@ -8,20 +11,16 @@ details: |
   fmt::v7::detail::buffer<char>::push_back
   std::__1::back_insert_iterator<fmt::v7::detail::buffer<char> >::operator=
   fmt::v7::detail::buffer_appender<char> std::__1::__copy_constexpr<char const*, f
-modified: '2021-06-21T06:56:26.962655Z'
-published: '2020-09-25T00:00:10.846065Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25884
-affected:
-- package:
-    name: libfmt
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/fmtlib/fmt.git
-    events:
-    - introduced: 16410056bf0e6e8800c9ac4c231be3f1a688f8b3
-    - fixed: c156093ffd99b0689af3826f3aa04e7db97cc543
-  ecosystem_specific:
-    severity: MEDIUM
+    introduced: 16410056bf0e6e8800c9ac4c231be3f1a688f8b3
+    fixed: c156093ffd99b0689af3826f3aa04e7db97cc543
+modified: '2021-06-21T06:56:26.962655Z'
+published: '2020-09-25T00:00:10.846065Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25884

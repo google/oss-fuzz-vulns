@@ -1,4 +1,7 @@
 id: OSV-2020-231
+package:
+  name: unicorn
+  ecosystem: OSS-Fuzz
 summary: UNKNOWN WRITE in gen_mftr
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20081
@@ -6,20 +9,16 @@ details: |
   Crash type: UNKNOWN WRITE
   Crash state:
   gen_mftr
-modified: '2021-06-21T06:56:25.254892Z'
-published: '2020-06-26T00:00:06.484913Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20081
-affected:
-- package:
-    name: unicorn
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/unicorn-engine/unicorn.git
-    events:
-    - introduced: 7e4ac9e86ef286c1418ea32aaf5b48646a952ac4
-    - fixed: ec2e4544819b2ef0ecd297ba331d4f2172b77245
-  ecosystem_specific:
-    severity: HIGH
+    introduced: 7e4ac9e86ef286c1418ea32aaf5b48646a952ac4
+    fixed: ec2e4544819b2ef0ecd297ba331d4f2172b77245
+modified: '2021-06-21T06:56:25.254892Z'
+published: '2020-06-26T00:00:06.484913Z'
+ecosystem_specific:
+  severity: HIGH
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20081

@@ -1,4 +1,7 @@
 id: OSV-2021-1003
+package:
+  name: mdbtools
+  ecosystem: OSS-Fuzz
 summary: Dynamic-stack-buffer-overflow in mdb_numeric_to_string
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=36187
@@ -8,21 +11,12 @@ details: |
   mdb_numeric_to_string
   mdb_xfer_bound_data
   _mdb_attempt_bind
-modified: '2021-07-15T00:00:10.906417Z'
-published: '2021-07-15T00:00:10.906210Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=36187
-affected:
-- package:
-    name: mdbtools
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/mdbtools/mdbtools
-    events:
-    - introduced: 9b5e5919052c5dff80a3f7301ae520b71571814a
-    - fixed: 373b7ff4c4daf887269c078407cb1338942c4ea6
+    introduced: 9b5e5919052c5dff80a3f7301ae520b71571814a
+    fixed: 373b7ff4c4daf887269c078407cb1338942c4ea6
   versions:
   - v0.9.2
   - v0.9.2-beta1
@@ -35,5 +29,10 @@ affected:
   - v0.9.3-beta2
   - v0.9.3-beta3
   - v0.9.3-beta4
-  ecosystem_specific:
-    severity: null
+modified: '2021-07-15T00:00:10.906417Z'
+published: '2021-07-15T00:00:10.906210Z'
+ecosystem_specific:
+  severity: null
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=36187

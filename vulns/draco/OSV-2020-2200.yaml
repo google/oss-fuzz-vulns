@@ -1,4 +1,7 @@
 id: OSV-2020-2200
+package:
+  name: draco
+  ecosystem: OSS-Fuzz
 summary: Global-buffer-overflow in draco::MeshEdgebreakerDecoderImpl<draco::MeshEdgebreakerTraversalValenceDecoder>
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=27950
@@ -8,22 +11,18 @@ details: |
   draco::MeshEdgebreakerDecoderImpl<draco::MeshEdgebreakerTraversalValenceDecoder>
   draco::MeshEdgebreakerDecoderImpl<draco::MeshEdgebreakerTraversalValenceDecoder>
   draco::MeshDecoder::DecodeGeometryData
-modified: '2021-06-23T06:31:10.894015Z'
-published: '2020-11-28T00:00:21.818545Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=27950
-affected:
-- package:
-    name: draco
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/google/draco
-    events:
-    - introduced: 25484b31235d1a35fa72be6ce8d1f7f286b5c0bf
+    introduced: 25484b31235d1a35fa72be6ce8d1f7f286b5c0bf
   versions:
   - 1.4.0
   - 1.4.1
-  ecosystem_specific:
-    introduced_range: aef4bfbd61798ecc21d94c873b679fbdeaf92462:79601d2d060be52e673a82ed1c46f4666eb28255
+modified: '2021-06-23T06:31:10.894015Z'
+published: '2020-11-28T00:00:21.818545Z'
+database_specific:
+  introduced_range: aef4bfbd61798ecc21d94c873b679fbdeaf92462:79601d2d060be52e673a82ed1c46f4666eb28255
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=27950

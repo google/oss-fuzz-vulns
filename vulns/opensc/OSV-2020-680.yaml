@@ -1,4 +1,7 @@
 id: OSV-2020-680
+package:
+  name: opensc
+  ecosystem: OSS-Fuzz
 summary: Bad-free in sc_pkcs15_decode_prkdf_entry
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18482
@@ -7,18 +10,14 @@ details: |
   Crash state:
   sc_pkcs15_decode_prkdf_entry
   fuzz_pkcs15_decode.c
-modified: '2021-03-09T04:49:06.019530Z'
-published: '2020-07-01T00:00:24.475752Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18482
-affected:
-- package:
-    name: opensc
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/OpenSC/OpenSC
-    events:
-    - introduced: 630d6adf32cecaab0ee184618f56497bd50400fb
-    - fixed: 6ce6152284c47ba9b1d4fe8ff9d2e6a3f5ee02c7
+    introduced: 630d6adf32cecaab0ee184618f56497bd50400fb
+    fixed: 6ce6152284c47ba9b1d4fe8ff9d2e6a3f5ee02c7
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18482
+modified: '2021-03-09T04:49:06.019530Z'
+published: '2020-07-01T00:00:24.475752Z'

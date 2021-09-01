@@ -1,4 +1,7 @@
 id: OSV-2021-23
+package:
+  name: c-blosc2
+  ecosystem: OSS-Fuzz
 summary: UNKNOWN READ in blosc_getitem
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29287
@@ -8,20 +11,16 @@ details: |
   blosc_getitem
   get_coffset
   frame_get_lazychunk
-modified: '2021-06-21T06:56:25.986573Z'
-published: '2021-01-07T00:01:14.405652Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29287
-affected:
-- package:
-    name: c-blosc2
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/Blosc/c-blosc2.git
-    events:
-    - introduced: 933c0c455c91da06604163f533e9a2084cd2f6ca
-    - fixed: 28c392c59448389adfb1f8fd223da0acacfca301
-  ecosystem_specific:
-    severity: MEDIUM
+    introduced: 933c0c455c91da06604163f533e9a2084cd2f6ca
+    fixed: 28c392c59448389adfb1f8fd223da0acacfca301
+modified: '2021-06-21T06:56:25.986573Z'
+published: '2021-01-07T00:01:14.405652Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29287

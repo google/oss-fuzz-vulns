@@ -1,4 +1,7 @@
 id: OSV-2018-137
+package:
+  name: wget2
+  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in set_char_prefix
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=10159
@@ -8,20 +11,16 @@ details: |
   set_char_prefix
   parse_included_directories
   set_long_option
-modified: '2021-06-21T06:56:27.225170Z'
-published: '2021-01-13T00:00:59.684851Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=10159
-affected:
-- package:
-    name: wget2
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://gitlab.com/gnuwget/wget2.git
-    events:
-    - introduced: 756e470de942ec830a9a424a2340b7e986e9fe7c
-    - fixed: f6e762181df35bb081d8e776df6cbb6af4bd5939
-  ecosystem_specific:
-    severity: HIGH
+    introduced: 756e470de942ec830a9a424a2340b7e986e9fe7c
+    fixed: f6e762181df35bb081d8e776df6cbb6af4bd5939
+modified: '2021-06-21T06:56:27.225170Z'
+published: '2021-01-13T00:00:59.684851Z'
+ecosystem_specific:
+  severity: HIGH
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=10159

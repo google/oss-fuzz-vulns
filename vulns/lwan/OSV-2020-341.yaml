@@ -1,4 +1,7 @@
 id: OSV-2020-341
+package:
+  name: lwan
+  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in post_process_template
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18952
@@ -8,20 +11,16 @@ details: |
   post_process_template
   parser_shutdown
   parse_string
-modified: '2021-06-21T06:56:19.439214Z'
-published: '2020-07-01T00:00:04.091956Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18952
-affected:
-- package:
-    name: lwan
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: git://github.com/lpereira/lwan
-    events:
-    - introduced: 0fc10a8c657339b2a26b8bf1b64d4431a293a24f
-    - fixed: f7b91535da39550693214dbe7ae2c16d83d70a4f
-  ecosystem_specific:
-    severity: MEDIUM
+    introduced: 0fc10a8c657339b2a26b8bf1b64d4431a293a24f
+    fixed: f7b91535da39550693214dbe7ae2c16d83d70a4f
+modified: '2021-06-21T06:56:19.439214Z'
+published: '2020-07-01T00:00:04.091956Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18952

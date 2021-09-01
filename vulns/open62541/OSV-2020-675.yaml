@@ -1,4 +1,7 @@
 id: OSV-2020-675
+package:
+  name: open62541
+  ecosystem: OSS-Fuzz
 summary: Use-of-uninitialized-value in UA_base64
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14625
@@ -8,26 +11,22 @@ details: |
   UA_base64
   ByteString_encodeJson
   Variant_encodeJson
-modified: '2021-06-21T06:56:26.899585Z'
-published: '2020-07-01T00:00:24.096789Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14625
-affected:
-- package:
-    name: open62541
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/open62541/open62541.git
-    events:
-    - introduced: 58a2fdb5b1ad1efafef455d66a9cbfb93c3fae9d
-    - fixed: fb4a98f6550529162d4daf7b528c7a74cdb7008a
+    introduced: 58a2fdb5b1ad1efafef455d66a9cbfb93c3fae9d
+    fixed: fb4a98f6550529162d4daf7b528c7a74cdb7008a
   versions:
   - v1.0-rc1
   - v1.0-rc2
   - v1.0-rc3
   - v1.0-rc4
   - v1.0-rc5
-  ecosystem_specific:
-    severity: MEDIUM
+modified: '2021-06-21T06:56:26.899585Z'
+published: '2020-07-01T00:00:24.096789Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14625

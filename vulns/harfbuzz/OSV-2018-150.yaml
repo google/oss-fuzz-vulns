@@ -1,4 +1,7 @@
 id: OSV-2018-150
+package:
+  name: harfbuzz
+  ecosystem: OSS-Fuzz
 summary: Global-buffer-overflow in BEInt<unsigned short, 2>::operator unsigned short
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11010
@@ -8,18 +11,14 @@ details: |
   BEInt<unsigned short, 2>::operator unsigned short
   AAT::ContextualSubtable::driver_context_t::transition
   void AAT::StateTableDriver<AAT::ContextualSubtable::EntryData>::drive<AAT::Conte
-modified: '2021-03-09T04:49:04.843507Z'
-published: '2021-01-13T00:01:04.544450Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11010
-affected:
-- package:
-    name: harfbuzz
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/harfbuzz/harfbuzz.git
-    events:
-    - introduced: 4c27da7638f6d072c3ff93223488c4ab316236c1
-    - fixed: 3341c7fbfb9bc8e137afd9f16da8cf18eb67b25b
+    introduced: 4c27da7638f6d072c3ff93223488c4ab316236c1
+    fixed: 3341c7fbfb9bc8e137afd9f16da8cf18eb67b25b
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11010
+modified: '2021-03-09T04:49:04.843507Z'
+published: '2021-01-13T00:01:04.544450Z'

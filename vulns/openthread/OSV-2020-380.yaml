@@ -1,4 +1,7 @@
 id: OSV-2020-380
+package:
+  name: openthread
+  ecosystem: OSS-Fuzz
 summary: Stack-buffer-overflow in ot::MeshCoP::ChannelMaskEntry::GetMask
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13619
@@ -8,20 +11,16 @@ details: |
   ot::MeshCoP::ChannelMaskEntry::GetMask
   ot::MeshCoP::ChannelMaskTlv::GetChannelMask
   ot::MeshCoP::ChannelMaskTlv::GetChannelMask
-modified: '2021-06-21T06:56:25.096956Z'
-published: '2020-07-01T00:00:06.263172Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13619
-affected:
-- package:
-    name: openthread
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/openthread/openthread
-    events:
-    - introduced: 96725a985ed57a64721c61c4721e5792b44264c5
-    - fixed: e82531507b7bd1efe6c70ebf4741d5c05c05c6ab
-  ecosystem_specific:
-    severity: MEDIUM
+    introduced: 96725a985ed57a64721c61c4721e5792b44264c5
+    fixed: e82531507b7bd1efe6c70ebf4741d5c05c05c6ab
+modified: '2021-06-21T06:56:25.096956Z'
+published: '2020-07-01T00:00:06.263172Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13619

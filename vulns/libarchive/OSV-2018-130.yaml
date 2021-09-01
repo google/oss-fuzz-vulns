@@ -1,4 +1,7 @@
 id: OSV-2018-130
+package:
+  name: libarchive
+  ecosystem: OSS-Fuzz
 summary: Stack-buffer-overflow in parse_tables
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=12466
@@ -8,20 +11,16 @@ details: |
   parse_tables
   process_block
   do_uncompress_file
-modified: '2021-06-21T06:56:26.638180Z'
-published: '2021-01-13T00:00:58.133861Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=12466
-affected:
-- package:
-    name: libarchive
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/libarchive/libarchive.git
-    events:
-    - introduced: 58167a9af435618c44e2faef5af5a86af51c003a
-    - fixed: 4bd12b6f40cb4413c8970c52f15f3b6885b5e32f
-  ecosystem_specific:
-    severity: HIGH
+    introduced: 58167a9af435618c44e2faef5af5a86af51c003a
+    fixed: 4bd12b6f40cb4413c8970c52f15f3b6885b5e32f
+modified: '2021-06-21T06:56:26.638180Z'
+published: '2021-01-13T00:00:58.133861Z'
+ecosystem_specific:
+  severity: HIGH
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=12466

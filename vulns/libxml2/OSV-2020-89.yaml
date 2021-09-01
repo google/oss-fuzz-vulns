@@ -1,4 +1,7 @@
 id: OSV-2020-89
+package:
+  name: libxml2
+  ecosystem: OSS-Fuzz
 summary: Heap-use-after-free in __xmlRaiseError
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23120
@@ -8,20 +11,16 @@ details: |
   __xmlRaiseError
   xmlErrValidNode
   xmlValidateRef
-modified: '2021-06-21T06:56:25.711931Z'
-published: '2020-06-24T01:51:13.556119Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23120
-affected:
-- package:
-    name: libxml2
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://gitlab.gnome.org/GNOME/libxml2.git
-    events:
-    - introduced: 00ed736eecf93aeab49089abb06e0e5fc0e7e091
-    - fixed: 2af3c2a8b974cb5896cd3beb74561ba979de9f34
-  ecosystem_specific:
-    severity: HIGH
+    introduced: 00ed736eecf93aeab49089abb06e0e5fc0e7e091
+    fixed: 2af3c2a8b974cb5896cd3beb74561ba979de9f34
+modified: '2021-06-21T06:56:25.711931Z'
+published: '2020-06-24T01:51:13.556119Z'
+ecosystem_specific:
+  severity: HIGH
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23120

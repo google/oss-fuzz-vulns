@@ -1,4 +1,7 @@
 id: OSV-2020-1671
+package:
+  name: qt
+  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in Dasher::Dasher
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25243
@@ -8,36 +11,17 @@ details: |
   Dasher::Dasher
   bool drawLineAA<&
   QCosmeticStroker::drawPath
-modified: '2021-08-16T04:50:56.115845Z'
-published: '2020-08-29T00:00:13.673013Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25243
-- type: FIX
-  url: https://codereview.qt-project.org/c/qt/qtbase/+/316936
-affected:
-- package:
-    name: qt
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: git://code.qt.io/qt/qtbase.git
-    events:
-    - introduced: '0'
-    - fixed: f575ed4b15c97726c64dbceff23237c84ac26480
+    fixed: f575ed4b15c97726c64dbceff23237c84ac26480
   - type: GIT
     repo: git://code.qt.io/qt/qtbase.git
-    events:
-    - introduced: '0'
-    - fixed: f575ed4b15c97726c64dbceff23237c84ac26480
-    - fixed: 80e3ded22d873e4d5d4251f29943f6f670cb69f0
+    fixed: 80e3ded22d873e4d5d4251f29943f6f670cb69f0
   - type: GIT
     repo: git://code.qt.io/qt/qtbase.git
-    events:
-    - introduced: '0'
-    - fixed: f575ed4b15c97726c64dbceff23237c84ac26480
-    - fixed: 80e3ded22d873e4d5d4251f29943f6f670cb69f0
-    - fixed: 1d778a59f781ecf822c9e3f7777b680fea2c4e62
+    fixed: 1d778a59f781ecf822c9e3f7777b680fea2c4e62
   versions:
   - qt-v5.0.0-alpha1
   - v5.0.0
@@ -177,5 +161,12 @@ affected:
   - v5.9.8
   - v5.9.9
   - v6.0.0-alpha1
-  ecosystem_specific:
-    severity: MEDIUM
+modified: '2021-08-16T04:50:56.115845Z'
+published: '2020-08-29T00:00:13.673013Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25243
+- type: FIX
+  url: https://codereview.qt-project.org/c/qt/qtbase/+/316936

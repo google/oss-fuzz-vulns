@@ -1,4 +1,7 @@
 id: OSV-2020-1115
+package:
+  name: openh264
+  ecosystem: OSS-Fuzz
 summary: Heap-use-after-free in WelsDec::MapColToList0
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13941
@@ -8,21 +11,18 @@ details: |
   WelsDec::MapColToList0
   WelsDec::PredBDirectTemporal
   WelsDec::ParseInterBInfo
-modified: '2021-06-23T06:26:25.700599Z'
-published: '2020-07-22T21:49:48.334349Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13941
-affected:
-- package:
-    name: openh264
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/cisco/openh264.git
-    events:
-    - introduced: 70eeb783515dbfee3e0c781d6667838caba5113b
-    - fixed: 8159a25f20df4baec6b420201da846a26f7e6bca
-  ecosystem_specific:
-    introduced_range: unknown:70eeb783515dbfee3e0c781d6667838caba5113b
-    severity: HIGH
+    introduced: 70eeb783515dbfee3e0c781d6667838caba5113b
+    fixed: 8159a25f20df4baec6b420201da846a26f7e6bca
+modified: '2021-06-23T06:26:25.700599Z'
+published: '2020-07-22T21:49:48.334349Z'
+ecosystem_specific:
+  severity: HIGH
+database_specific:
+  introduced_range: unknown:70eeb783515dbfee3e0c781d6667838caba5113b
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13941

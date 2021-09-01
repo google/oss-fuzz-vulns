@@ -1,4 +1,7 @@
 id: OSV-2020-2212
+package:
+  name: libavc
+  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in ih264d_fill_bs1_16x16mb_pslice
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=28039
@@ -8,26 +11,20 @@ details: |
   ih264d_fill_bs1_16x16mb_pslice
   ih264d_compute_bs_non_mbaff_thread
   ih264d_recon_deblk_slice
-modified: '2021-06-21T06:56:22.149196Z'
-published: '2020-11-30T00:00:44.518285Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=28039
-affected:
-- package:
-    name: libavc
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://android.googlesource.com/platform/external/libavc
-    events:
-    - introduced: 6efeedf0633e1965a4d4e17d64f14215e9b6d48f
-    - fixed: a9345b686dbbfa927a51598ec7582cf61e35ef55
+    introduced: 6efeedf0633e1965a4d4e17d64f14215e9b6d48f
+    fixed: a9345b686dbbfa927a51598ec7582cf61e35ef55
   - type: GIT
     repo: https://android.googlesource.com/platform/external/libavc
-    events:
-    - introduced: 6efeedf0633e1965a4d4e17d64f14215e9b6d48f
-    - fixed: a9345b686dbbfa927a51598ec7582cf61e35ef55
-    - fixed: 0b601e1a4fb246ce7c60aa101af5af4edd0a842d
-  ecosystem_specific:
-    severity: MEDIUM
+    introduced: 6efeedf0633e1965a4d4e17d64f14215e9b6d48f
+    fixed: 0b601e1a4fb246ce7c60aa101af5af4edd0a842d
+modified: '2021-06-21T06:56:22.149196Z'
+published: '2020-11-30T00:00:44.518285Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=28039

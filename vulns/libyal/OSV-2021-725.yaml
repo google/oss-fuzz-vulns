@@ -1,4 +1,7 @@
 id: OSV-2021-725
+package:
+  name: libyal
+  ecosystem: OSS-Fuzz
 summary: UNKNOWN READ in libfsext_directory_entry_read_data
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=33935
@@ -8,20 +11,16 @@ details: |
   libfsext_directory_entry_read_data
   libfsext_directory_read_inline_data
   libfsext_directory_read_file_io_handle
-modified: '2021-06-21T06:56:27.287841Z'
-published: '2021-05-05T00:00:09.753732Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=33935
-affected:
-- package:
-    name: libyal
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/libyal/libfplist.git
-    events:
-    - introduced: e29196674e2152935af6d454e09021855c159435
-    - fixed: e29196674e2152935af6d454e09021855c159435
-  ecosystem_specific:
-    severity: MEDIUM
+    introduced: e29196674e2152935af6d454e09021855c159435
+    fixed: e29196674e2152935af6d454e09021855c159435
+modified: '2021-06-21T06:56:27.287841Z'
+published: '2021-05-05T00:00:09.753732Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=33935

@@ -1,4 +1,7 @@
 id: OSV-2021-147
+package:
+  name: gnutls
+  ecosystem: OSS-Fuzz
 summary: Use-of-uninitialized-value in gnutls_ocsp_resp_get_status
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=1492
@@ -8,20 +11,16 @@ details: |
   gnutls_ocsp_resp_get_status
   gnutls_ocsp_resp_import
   _start
-modified: '2021-06-21T06:56:22.261361Z'
-published: '2021-01-13T21:56:29.997Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=1492
-affected:
-- package:
-    name: gnutls
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://gitlab.com/gnutls/gnutls.git
-    events:
-    - introduced: d246f61b04836c6040fff7936de551ef92529971
-    - fixed: 73988c65e9e8d6563fe4c7e45602c0248ca56c6c
-  ecosystem_specific:
-    severity: MEDIUM
+    introduced: d246f61b04836c6040fff7936de551ef92529971
+    fixed: 73988c65e9e8d6563fe4c7e45602c0248ca56c6c
+modified: '2021-06-21T06:56:22.261361Z'
+published: '2021-01-13T21:56:29.997Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=1492

@@ -1,4 +1,7 @@
 id: OSV-2020-1768
+package:
+  name: php
+  ecosystem: OSS-Fuzz
 summary: Memcpy-param-overlap in zend_lex_tstring
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23547
@@ -8,20 +11,16 @@ details: |
   zend_lex_tstring
   zendparse
   zend_compile
-modified: '2021-06-21T06:56:20.933553Z'
-published: '2020-09-16T00:00:23.588932Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23547
-affected:
-- package:
-    name: php
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/php/php-src.git
-    events:
-    - introduced: b03cafd19c01db57b89727ce77cc89a7d816077c
-    - fixed: aa2e68cf6e4adcaaf884ea6b17f182e3be552fa7
-  ecosystem_specific:
-    severity: MEDIUM
+    introduced: b03cafd19c01db57b89727ce77cc89a7d816077c
+    fixed: aa2e68cf6e4adcaaf884ea6b17f182e3be552fa7
+modified: '2021-06-21T06:56:20.933553Z'
+published: '2020-09-16T00:00:23.588932Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23547

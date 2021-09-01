@@ -1,4 +1,7 @@
 id: OSV-2020-2148
+package:
+  name: fluent-bit
+  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in flb_gzip_compress
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=27368
@@ -7,27 +10,15 @@ details: |
   Crash state:
   flb_gzip_compress
   utils_fuzzer.c
-modified: '2021-06-21T06:56:24.367913Z'
-published: '2020-11-12T00:00:05.550790Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=27368
-affected:
-- package:
-    name: fluent-bit
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/fluent/fluent-bit/
-    events:
-    - introduced: cadff53c093210404aed01c4cf586adb8caa07af
-    - fixed: df2af999105cd6c94ec8b533bcca498664b1aa16
+    introduced: cadff53c093210404aed01c4cf586adb8caa07af
+    fixed: df2af999105cd6c94ec8b533bcca498664b1aa16
   - type: GIT
     repo: https://github.com/fluent/fluent-bit/
-    events:
-    - introduced: cadff53c093210404aed01c4cf586adb8caa07af
-    - fixed: df2af999105cd6c94ec8b533bcca498664b1aa16
-    - introduced: fe2a7dc356bd652a5c2e1137726716e5d18967c8
+    introduced: fe2a7dc356bd652a5c2e1137726716e5d18967c8
   versions:
   - v1.6.10
   - v1.6.4
@@ -47,5 +38,10 @@ affected:
   - v1.7.0-rc8
   - v1.7.0-rc9
   - v1.7.1
-  ecosystem_specific:
-    severity: HIGH
+modified: '2021-06-21T06:56:24.367913Z'
+published: '2020-11-12T00:00:05.550790Z'
+ecosystem_specific:
+  severity: HIGH
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=27368

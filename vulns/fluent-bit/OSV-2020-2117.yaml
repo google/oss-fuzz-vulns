@@ -1,4 +1,7 @@
 id: OSV-2020-2117
+package:
+  name: fluent-bit
+  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in flb_msgpack_gelf_value_ext
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26851
@@ -8,27 +11,15 @@ details: |
   flb_msgpack_gelf_value_ext
   flb_msgpack_to_gelf
   flb_msgpack_raw_to_gelf
-modified: '2021-06-23T06:51:41.639272Z'
-published: '2020-11-02T00:00:07.716307Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26851
-affected:
-- package:
-    name: fluent-bit
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/fluent/fluent-bit/
-    events:
-    - introduced: d95ea655478ab9b0e97312ad80ac1da591ce7aaa
-    - fixed: 9a3bd47ec6121492e2c5e37ca14f5827bb7d6db2
+    introduced: d95ea655478ab9b0e97312ad80ac1da591ce7aaa
+    fixed: 9a3bd47ec6121492e2c5e37ca14f5827bb7d6db2
   - type: GIT
     repo: https://github.com/fluent/fluent-bit/
-    events:
-    - introduced: d95ea655478ab9b0e97312ad80ac1da591ce7aaa
-    - fixed: 9a3bd47ec6121492e2c5e37ca14f5827bb7d6db2
-    - introduced: aea2b787028482a159de615fe9a891deb19cb8dc
+    introduced: aea2b787028482a159de615fe9a891deb19cb8dc
   versions:
   - v1.6.1
   - v1.6.10
@@ -59,6 +50,12 @@ affected:
   - v1.7.7
   - v1.7.8
   - v1.7.9
-  ecosystem_specific:
-    severity: MEDIUM
-    introduced_range: 9643eebeba6bddd31978783cbbfb1686c93d8e24:1b262cebff01a2d54c7dab8ff5d3d8e340faed30
+modified: '2021-06-23T06:51:41.639272Z'
+published: '2020-11-02T00:00:07.716307Z'
+ecosystem_specific:
+  severity: MEDIUM
+database_specific:
+  introduced_range: 9643eebeba6bddd31978783cbbfb1686c93d8e24:1b262cebff01a2d54c7dab8ff5d3d8e340faed30
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26851

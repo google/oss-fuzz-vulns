@@ -1,4 +1,7 @@
 id: OSV-2021-251
+package:
+  name: htslib
+  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in safe_ltf8_get
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30012
@@ -8,20 +11,16 @@ details: |
   safe_ltf8_get
   cram_const_decode_init
   cram_decoder_init
-modified: '2021-06-21T06:56:19.903174Z'
-published: '2021-01-30T00:00:11.035389Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30012
-affected:
-- package:
-    name: htslib
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/samtools/htslib.git
-    events:
-    - introduced: 96c64aa1f56fdb724565d7a56798515d27cbb1f9
-    - fixed: 8510a0d2a5ac878f1a4b9a6683580bcdfa9196d3
-  ecosystem_specific:
-    severity: MEDIUM
+    introduced: 96c64aa1f56fdb724565d7a56798515d27cbb1f9
+    fixed: 8510a0d2a5ac878f1a4b9a6683580bcdfa9196d3
+modified: '2021-06-21T06:56:19.903174Z'
+published: '2021-01-30T00:00:11.035389Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30012

@@ -1,4 +1,7 @@
 id: OSV-2020-1540
+package:
+  name: augeas
+  ecosystem: OSS-Fuzz
 summary: UNKNOWN READ in eval_expr
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23781
@@ -8,19 +11,15 @@ details: |
   eval_expr
   eval_binary
   eval_expr
-modified: '2021-06-21T06:56:21.433912Z'
-published: '2020-07-29T00:00:39.727472Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23781
-affected:
-- package:
-    name: augeas
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/hercules-team/augeas
-    events:
-    - introduced: 9c52a0b258f77394c9ade6c032e00b49bd01f949
-  ecosystem_specific:
-    severity: MEDIUM
+    introduced: 9c52a0b258f77394c9ade6c032e00b49bd01f949
+modified: '2021-06-21T06:56:21.433912Z'
+published: '2020-07-29T00:00:39.727472Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23781

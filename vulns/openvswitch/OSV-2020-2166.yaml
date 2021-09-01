@@ -1,4 +1,7 @@
 id: OSV-2020-2166
+package:
+  name: openvswitch
+  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in get_32aligned_be64
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=27524
@@ -8,28 +11,22 @@ details: |
   get_32aligned_be64
   nl_attr_get_be64
   format_odp_tun_attr
-modified: '2021-06-21T06:56:26.309458Z'
-published: '2020-11-17T00:00:58.901949Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=27524
-affected:
-- package:
-    name: openvswitch
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/openvswitch/ovs.git
-    events:
-    - introduced: 3c6d05a02e0fd2cde2f988a0e41a19f47c3d6947
-    - fixed: bb9303899b8bd7a9251a723393959c923d0c0196
+    introduced: 3c6d05a02e0fd2cde2f988a0e41a19f47c3d6947
+    fixed: bb9303899b8bd7a9251a723393959c923d0c0196
   - type: GIT
     repo: https://github.com/openvswitch/ovs.git
-    events:
-    - introduced: 3c6d05a02e0fd2cde2f988a0e41a19f47c3d6947
-    - fixed: bb9303899b8bd7a9251a723393959c923d0c0196
-    - fixed: d40db569e2a83d925c67b3affa1a31de6d9ef07c
+    introduced: 3c6d05a02e0fd2cde2f988a0e41a19f47c3d6947
+    fixed: d40db569e2a83d925c67b3affa1a31de6d9ef07c
   versions:
   - v2.14.0
-  ecosystem_specific:
-    severity: MEDIUM
+modified: '2021-06-21T06:56:26.309458Z'
+published: '2020-11-17T00:00:58.901949Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=27524

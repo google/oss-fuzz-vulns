@@ -1,4 +1,7 @@
 id: OSV-2020-1712
+package:
+  name: ghostscript
+  ecosystem: OSS-Fuzz
 summary: Use-of-uninitialized-value in gx_color_frac_map
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25463
@@ -8,21 +11,18 @@ details: |
   gx_color_frac_map
   pdf14_cmap_rgb_direct
   gx_remap_concrete_DRGB
-modified: '2021-06-23T06:25:38.170334Z'
-published: '2020-09-07T00:00:05.414284Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25463
-affected:
-- package:
-    name: ghostscript
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: git://git.ghostscript.com/ghostpdl.git
-    events:
-    - introduced: 6153b859d1fd3780cb95d20f678843ab1ba470a1
-    - fixed: 6dbcee4e0b4868843938233eb2c37c927f674d69
-  ecosystem_specific:
-    fixed_range: 6290ce42ac84767a84ddc949c9348a194477ab9b:6dbcee4e0b4868843938233eb2c37c927f674d69
-    severity: MEDIUM
+    introduced: 6153b859d1fd3780cb95d20f678843ab1ba470a1
+    fixed: 6dbcee4e0b4868843938233eb2c37c927f674d69
+modified: '2021-06-23T06:25:38.170334Z'
+published: '2020-09-07T00:00:05.414284Z'
+ecosystem_specific:
+  severity: MEDIUM
+database_specific:
+  fixed_range: 6290ce42ac84767a84ddc949c9348a194477ab9b:6dbcee4e0b4868843938233eb2c37c927f674d69
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25463

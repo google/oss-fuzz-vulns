@@ -1,4 +1,7 @@
 id: OSV-2021-940
+package:
+  name: wireshark
+  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in json_string_unescape
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=35925
@@ -8,20 +11,16 @@ details: |
   json_string_unescape
   after_value
   execute_callbacks
-modified: '2021-07-09T00:01:28.772557Z'
-published: '2021-07-09T00:01:28.772223Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=35925
-affected:
-- package:
-    name: wireshark
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://gitlab.com/wireshark/wireshark.git
-    events:
-    - introduced: 3dd7ba03fa2bffc908a4e8cc363fe344a84cc361
-    - fixed: 1f12e1d26707123b5516540ec07f8c77aa437f31
-  ecosystem_specific:
-    severity: HIGH
+    introduced: 3dd7ba03fa2bffc908a4e8cc363fe344a84cc361
+    fixed: 1f12e1d26707123b5516540ec07f8c77aa437f31
+modified: '2021-07-09T00:01:28.772557Z'
+published: '2021-07-09T00:01:28.772223Z'
+ecosystem_specific:
+  severity: HIGH
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=35925

@@ -1,4 +1,7 @@
 id: OSV-2020-2254
+package:
+  name: opensc
+  ecosystem: OSS-Fuzz
 summary: Stack-use-after-return in insert_pin
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=28383
@@ -8,22 +11,18 @@ details: |
   insert_pin
   detect_idkey
   sc_pkcs15emu_tcos_init_ex
-modified: '2021-03-09T04:49:05.746134Z'
-published: '2020-12-10T00:00:49.551956Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=28383
-affected:
-- package:
-    name: opensc
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/OpenSC/OpenSC
-    events:
-    - introduced: 9ffb9bae63c8b7fbababb8481a83f1b575e59a18
-    - fixed: 5df913b7f57ad89b9832555d24c08d23a534311e
+    introduced: 9ffb9bae63c8b7fbababb8481a83f1b575e59a18
+    fixed: 5df913b7f57ad89b9832555d24c08d23a534311e
   versions:
   - 0.21.0
   - 0.21.0-rc1
   - 0.21.0-rc2
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=28383
+modified: '2021-03-09T04:49:05.746134Z'
+published: '2020-12-10T00:00:49.551956Z'

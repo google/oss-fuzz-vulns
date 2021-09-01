@@ -1,4 +1,7 @@
 id: OSV-2020-1252
+package:
+  name: opencv
+  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in jpc_dec_process_sot
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13310
@@ -8,24 +11,21 @@ details: |
   jpc_dec_process_sot
   jpc_decode
   jp2_decode
-modified: '2021-06-23T06:25:08.729618Z'
-published: '2020-07-22T21:50:00.494951Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13310
-affected:
-- package:
-    name: opencv
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/opencv/opencv.git
-    events:
-    - introduced: 6bcf0b5519c190826cf0f21efd87cbe256eabc48
-    - fixed: 26087e28adbd2a9acee05019aac2aea35ef5195d
+    introduced: 6bcf0b5519c190826cf0f21efd87cbe256eabc48
+    fixed: 26087e28adbd2a9acee05019aac2aea35ef5195d
   versions:
   - 4.0.1
-  ecosystem_specific:
-    fixed_range: 17ad33c9196aa75df24d4f1c1763547079f5b650:26087e28adbd2a9acee05019aac2aea35ef5195d
-    introduced_range: unknown:6bcf0b5519c190826cf0f21efd87cbe256eabc48
-    severity: MEDIUM
+modified: '2021-06-23T06:25:08.729618Z'
+published: '2020-07-22T21:50:00.494951Z'
+ecosystem_specific:
+  severity: MEDIUM
+database_specific:
+  introduced_range: unknown:6bcf0b5519c190826cf0f21efd87cbe256eabc48
+  fixed_range: 17ad33c9196aa75df24d4f1c1763547079f5b650:26087e28adbd2a9acee05019aac2aea35ef5195d
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13310

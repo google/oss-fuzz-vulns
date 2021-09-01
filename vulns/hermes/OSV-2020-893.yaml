@@ -1,4 +1,7 @@
 id: OSV-2020-893
+package:
+  name: hermes
+  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in hermes::parser::JSLexer::consumeBracedCodePoint
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23725
@@ -8,20 +11,16 @@ details: |
   hermes::parser::JSLexer::consumeBracedCodePoint
   hermes::parser::JSLexer::consumeUnicodeEscape
   hermes::parser::JSLexer::advance
-modified: '2021-06-21T06:56:18.967745Z'
-published: '2020-07-21T00:00:06.900609Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23725
-affected:
-- package:
-    name: hermes
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/facebook/hermes.git
-    events:
-    - introduced: 2e72425f875640779c7ce29de55a5e5cd73abd4e
-    - fixed: f126e71e362dad0f7f1841cbc56b5d85e16e8cc4
-  ecosystem_specific:
-    severity: MEDIUM
+    introduced: 2e72425f875640779c7ce29de55a5e5cd73abd4e
+    fixed: f126e71e362dad0f7f1841cbc56b5d85e16e8cc4
+modified: '2021-06-21T06:56:18.967745Z'
+published: '2020-07-21T00:00:06.900609Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23725

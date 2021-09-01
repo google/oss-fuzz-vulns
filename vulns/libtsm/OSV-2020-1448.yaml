@@ -1,4 +1,7 @@
 id: OSV-2020-1448
+package:
+  name: libtsm
+  ecosystem: OSS-Fuzz
 summary: Global-buffer-overflow in vte_write_debug
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22203
@@ -8,18 +11,14 @@ details: |
   vte_write_debug
   send_primary_da
   do_esc
-modified: '2021-03-09T04:49:05.270415Z'
-published: '2020-07-28T00:00:21.964189Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22203
-affected:
-- package:
-    name: libtsm
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: git://people.freedesktop.org/~dvdhrm/libtsm
-    events:
-    - introduced: b73acb4c71698a764763ae8dad94c1e8a2b8d7a3
-    - fixed: b73acb4c71698a764763ae8dad94c1e8a2b8d7a3
+    introduced: b73acb4c71698a764763ae8dad94c1e8a2b8d7a3
+    fixed: b73acb4c71698a764763ae8dad94c1e8a2b8d7a3
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22203
+modified: '2021-03-09T04:49:05.270415Z'
+published: '2020-07-28T00:00:21.964189Z'

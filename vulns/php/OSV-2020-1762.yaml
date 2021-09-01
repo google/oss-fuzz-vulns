@@ -1,4 +1,7 @@
 id: OSV-2020-1762
+package:
+  name: php
+  ecosystem: OSS-Fuzz
 summary: Heap-use-after-free in gc_mark_grey
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23350
@@ -8,20 +11,16 @@ details: |
   gc_mark_grey
   gc_mark_roots
   zend_gc_collect_cycles
-modified: '2021-06-21T06:56:21.012471Z'
-published: '2020-09-16T00:00:06.911473Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23350
-affected:
-- package:
-    name: php
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/php/php-src.git
-    events:
-    - introduced: 48a34bc1202e9664121c9e9aa004c79ac71af3f5
-    - fixed: cb0fa99174fa2af6f626509b85845ff599557615
-  ecosystem_specific:
-    severity: HIGH
+    introduced: 48a34bc1202e9664121c9e9aa004c79ac71af3f5
+    fixed: cb0fa99174fa2af6f626509b85845ff599557615
+modified: '2021-06-21T06:56:21.012471Z'
+published: '2020-09-16T00:00:06.911473Z'
+ecosystem_specific:
+  severity: HIGH
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23350

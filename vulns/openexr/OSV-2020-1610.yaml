@@ -1,4 +1,7 @@
 id: OSV-2020-1610
+package:
+  name: openexr
+  ecosystem: OSS-Fuzz
 summary: Segv on unknown address in Imf_2_5::hufUncompress
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24854
@@ -8,28 +11,21 @@ details: |
   Imf_2_5::hufUncompress
   Imf_2_5::DwaCompressor::uncompress
   Imf_2_5::DwaCompressor::uncompress
-modified: '2021-03-09T04:49:05.354552Z'
-published: '2020-08-14T00:01:49.720909Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24854
-affected:
-- package:
-    name: openexr
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/AcademySoftwareFoundation/openexr
-    events:
-    - introduced: c7af102e6bce6638add2f38576ffe9c6741ba768
-    - fixed: b0c63c0b96eb9b0d3998f603e12f9f414fb0d44a
+    introduced: c7af102e6bce6638add2f38576ffe9c6741ba768
+    fixed: b0c63c0b96eb9b0d3998f603e12f9f414fb0d44a
   - type: GIT
     repo: https://github.com/AcademySoftwareFoundation/openexr
-    events:
-    - introduced: c7af102e6bce6638add2f38576ffe9c6741ba768
-    - fixed: b0c63c0b96eb9b0d3998f603e12f9f414fb0d44a
-    - introduced: 9752e70d31193f649eb5286bb649916ecfcc51ea
+    introduced: 9752e70d31193f649eb5286bb649916ecfcc51ea
   versions:
   - v2.5.3
   - v2.5.4
   - v2.5.5
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24854
+modified: '2021-03-09T04:49:05.354552Z'
+published: '2020-08-14T00:01:49.720909Z'

@@ -1,4 +1,7 @@
 id: OSV-2020-207
+package:
+  name: pcapplusplus
+  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in pcpp::IPv6Layer::parseExtensions
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22232
@@ -8,21 +11,18 @@ details: |
   pcpp::IPv6Layer::parseExtensions
   pcpp::IPv6Layer::IPv6Layer
   pcpp::Packet::createFirstLayer
-modified: '2021-06-23T06:28:20.542411Z'
-published: '2020-06-24T01:51:18.953301Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22232
-affected:
-- package:
-    name: pcapplusplus
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/seladb/PcapPlusPlus
-    events:
-    - introduced: aeaa2e1cd094ff2083517bf4c987dc3a1380ec71
-    - fixed: d2dadc4e18dfd924490c529a058eb5276a2ab6c5
-  ecosystem_specific:
-    severity: MEDIUM
-    introduced_range: 016e90f193d4383b94143d0b2be26408cc32c703:5ef0c6da8c34b5d4155f865e94bdf83cb18fcbad
+    introduced: aeaa2e1cd094ff2083517bf4c987dc3a1380ec71
+    fixed: d2dadc4e18dfd924490c529a058eb5276a2ab6c5
+modified: '2021-06-23T06:28:20.542411Z'
+published: '2020-06-24T01:51:18.953301Z'
+ecosystem_specific:
+  severity: MEDIUM
+database_specific:
+  introduced_range: 016e90f193d4383b94143d0b2be26408cc32c703:5ef0c6da8c34b5d4155f865e94bdf83cb18fcbad
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22232

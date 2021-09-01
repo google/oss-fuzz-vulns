@@ -1,4 +1,7 @@
 id: OSV-2020-66
+package:
+  name: gdal
+  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in CPLErr GDALResampleChunk32R_AverageT<unsigned char,
   int>
 details: |
@@ -9,20 +12,16 @@ details: |
   CPLErr GDALResampleChunk32R_AverageT<unsigned char, int>
   GDALResampleChunk32R_Average
   GDALRasterBand::RasterIOResampled
-modified: '2021-06-21T06:56:27.501858Z'
-published: '2020-06-24T01:51:12.546926Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21558
-affected:
-- package:
-    name: gdal
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/OSGeo/gdal
-    events:
-    - introduced: cd0029b22d465cc7277ce8f3e4c57ebd57bc5aed
-    - fixed: 9cdb32691ee7eac5cc9e07062e1f2f7f867f77fc
-  ecosystem_specific:
-    severity: MEDIUM
+    introduced: cd0029b22d465cc7277ce8f3e4c57ebd57bc5aed
+    fixed: 9cdb32691ee7eac5cc9e07062e1f2f7f867f77fc
+modified: '2021-06-21T06:56:27.501858Z'
+published: '2020-06-24T01:51:12.546926Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21558

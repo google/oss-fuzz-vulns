@@ -1,4 +1,7 @@
 id: OSV-2020-354
+package:
+  name: openthread
+  ecosystem: OSS-Fuzz
 summary: UNKNOWN READ in ot::Ip6::NetifUnicastAddress::GetNext
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13409
@@ -8,20 +11,16 @@ details: |
   ot::Ip6::NetifUnicastAddress::GetNext
   ot::Ip6::Netif::RemoveUnicastAddress
   ot::Mle::Mle::SetStateDetached
-modified: '2021-06-21T06:56:24.941209Z'
-published: '2020-07-01T00:00:04.807199Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13409
-affected:
-- package:
-    name: openthread
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/openthread/openthread
-    events:
-    - introduced: 3eb5a106ffa6678e23c6bc244e843e264cae9b31
-    - fixed: a3548df579617e737b075be4a88591e68195e115
-  ecosystem_specific:
-    severity: MEDIUM
+    introduced: 3eb5a106ffa6678e23c6bc244e843e264cae9b31
+    fixed: a3548df579617e737b075be4a88591e68195e115
+modified: '2021-06-21T06:56:24.941209Z'
+published: '2020-07-01T00:00:04.807199Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13409

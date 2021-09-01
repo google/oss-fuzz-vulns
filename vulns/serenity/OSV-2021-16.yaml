@@ -1,4 +1,7 @@
 id: OSV-2021-16
+package:
+  name: serenity
+  ecosystem: OSS-Fuzz
 summary: Stack-buffer-overflow in JS::Heap::gather_conservative_roots
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29266
@@ -8,20 +11,16 @@ details: |
   JS::Heap::gather_conservative_roots
   JS::Heap::gather_roots
   JS::Heap::collect_garbage
-modified: '2021-06-21T06:56:19.779642Z'
-published: '2021-01-06T00:00:22.099017Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29266
-affected:
-- package:
-    name: serenity
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/SerenityOS/serenity
-    events:
-    - introduced: c49899b0b64abf1a9cc7e79751fe500fbf5b9ab4
-    - fixed: 51b880b0383089822f513330cd64f93b54b9f21c
-  ecosystem_specific:
-    severity: MEDIUM
+    introduced: c49899b0b64abf1a9cc7e79751fe500fbf5b9ab4
+    fixed: 51b880b0383089822f513330cd64f93b54b9f21c
+modified: '2021-06-21T06:56:19.779642Z'
+published: '2021-01-06T00:00:22.099017Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29266

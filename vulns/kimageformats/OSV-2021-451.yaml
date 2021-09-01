@@ -1,4 +1,7 @@
 id: OSV-2021-451
+package:
+  name: kimageformats
+  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in void apply_sao_internal<unsigned short>
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31485
@@ -8,20 +11,11 @@ details: |
   void apply_sao_internal<unsigned short>
   void apply_sao<unsigned char>
   thread_task_sao::work
-modified: '2021-08-15T00:01:57.652788Z'
-published: '2021-02-28T00:00:09.511962Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31485
-affected:
-- package:
-    name: kimageformats
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://invent.kde.org/frameworks/kimageformats.git
-    events:
-    - introduced: ca52d4ddf540cc731d0f31dbccc1897f7e6d9db4
+    introduced: ca52d4ddf540cc731d0f31dbccc1897f7e6d9db4
   versions:
   - v5.80.0
   - v5.80.0-rc1
@@ -36,5 +30,10 @@ affected:
   - v5.84.0-rc1
   - v5.85.0-rc1
   - v5.85.0
-  ecosystem_specific:
-    severity: MEDIUM
+modified: '2021-08-15T00:01:57.652788Z'
+published: '2021-02-28T00:00:09.511962Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31485

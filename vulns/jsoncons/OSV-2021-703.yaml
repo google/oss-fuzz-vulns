@@ -1,4 +1,7 @@
 id: OSV-2021-703
+package:
+  name: jsoncons
+  ecosystem: OSS-Fuzz
 summary: Container-overflow in unsigned long jsoncons::detail::escape_string<char,
   jsoncons::string_sink<std::_
 details: |
@@ -9,20 +12,16 @@ details: |
   unsigned long jsoncons::detail::escape_string<char, jsoncons::string_sink<std::_
   jsoncons::basic_json_encoder<char, jsoncons::string_sink<std::__1::basic_string<
   jsoncons::basic_json_visitor<char>::key
-modified: '2021-06-21T06:56:25.503271Z'
-published: '2021-04-29T00:00:31.595556Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=33781
-affected:
-- package:
-    name: jsoncons
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/danielaparker/jsoncons
-    events:
-    - introduced: 39a59991dff68d488432f59c9bca60001c501d69
-    - fixed: e0ee905e3e2f2997606f146370af6a5d448aafe5
-  ecosystem_specific:
-    severity: MEDIUM
+    introduced: 39a59991dff68d488432f59c9bca60001c501d69
+    fixed: e0ee905e3e2f2997606f146370af6a5d448aafe5
+modified: '2021-06-21T06:56:25.503271Z'
+published: '2021-04-29T00:00:31.595556Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=33781

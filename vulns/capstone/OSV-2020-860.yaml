@@ -1,4 +1,7 @@
 id: OSV-2020-860
+package:
+  name: capstone
+  ecosystem: OSS-Fuzz
 summary: Use-of-uninitialized-value in printUInt32
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14912
@@ -8,27 +11,22 @@ details: |
   printUInt32
   printU1ImmOperand
   printInstruction
-modified: '2021-06-23T06:51:11.719391Z'
-published: '2020-07-14T22:13:48.029065Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14912
-affected:
-- package:
-    name: capstone
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/aquynh/capstone.git
-    events:
-    - introduced: dbefe3a6d5d9d08ffefca45c3ad7e59601f99cfa
-    - fixed: 7ca653c7bd16497a05bf98953b20e7d881689f19
+    introduced: dbefe3a6d5d9d08ffefca45c3ad7e59601f99cfa
+    fixed: 7ca653c7bd16497a05bf98953b20e7d881689f19
   - type: GIT
     repo: https://github.com/aquynh/capstone.git
-    events:
-    - introduced: dbefe3a6d5d9d08ffefca45c3ad7e59601f99cfa
-    - fixed: 7ca653c7bd16497a05bf98953b20e7d881689f19
-    - fixed: c66bb3396701d1cf4cef44ab02c225d44a8d7f95
-  ecosystem_specific:
-    fixed_range: 659c01aa9858f78ff726d1b375d41e7529c6c5b7:7ca653c7bd16497a05bf98953b20e7d881689f19
-    severity: MEDIUM
+    introduced: dbefe3a6d5d9d08ffefca45c3ad7e59601f99cfa
+    fixed: c66bb3396701d1cf4cef44ab02c225d44a8d7f95
+modified: '2021-06-23T06:51:11.719391Z'
+published: '2020-07-14T22:13:48.029065Z'
+ecosystem_specific:
+  severity: MEDIUM
+database_specific:
+  fixed_range: 659c01aa9858f78ff726d1b375d41e7529c6c5b7:7ca653c7bd16497a05bf98953b20e7d881689f19
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14912

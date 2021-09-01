@@ -1,4 +1,7 @@
 id: OSV-2020-1506
+package:
+  name: keystone
+  ecosystem: OSS-Fuzz
 summary: Invalid-free in llvm_ks::SmallVectorImpl<llvm_ks::MCFixup>::~SmallVectorImpl
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22371
@@ -8,22 +11,18 @@ details: |
   llvm_ks::SmallVectorImpl<llvm_ks::MCFixup>::~SmallVectorImpl
   llvm_ks::MCEncodedFragmentWithFixups<32u, 4u>::~MCEncodedFragmentWithFixups
   llvm_ks::MCFragment::destroy
-modified: '2021-03-09T04:49:05.301577Z'
-published: '2020-07-28T00:00:34.572692Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22371
-affected:
-- package:
-    name: keystone
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/keystone-engine/keystone.git
-    events:
-    - introduced: 23b54ce7493575d13ac88982f30ab523c3d5a3b1
+    introduced: 23b54ce7493575d13ac88982f30ab523c3d5a3b1
   versions:
   - 0.9.2
   - 0.9.2-rc1
   - 0.9.2-rc1.post1
   - 0.9.2-rc1.post2
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22371
+modified: '2021-03-09T04:49:05.301577Z'
+published: '2020-07-28T00:00:34.572692Z'

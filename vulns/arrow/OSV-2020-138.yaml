@@ -1,4 +1,7 @@
 id: OSV-2020-138
+package:
+  name: arrow
+  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in org::apache::arrow::flatbuf::Message::Verify
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21681
@@ -8,20 +11,16 @@ details: |
   org::apache::arrow::flatbuf::Message::Verify
   arrow::ipc::CheckMetadataAndGetBodyLength
   arrow::ipc::MessageDecoder::MessageDecoderImpl::ConsumeMetadata
-modified: '2021-06-21T06:56:19.531828Z'
-published: '2020-06-24T01:51:15.842848Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21681
-affected:
-- package:
-    name: arrow
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/apache/arrow.git
-    events:
-    - introduced: 866e6a82e2794b151235c19b8c5cbf1fcaf780ef
-    - fixed: c47d0d3df865d34d877c84042c11a7cb259f7cdd
-  ecosystem_specific:
-    severity: HIGH
+    introduced: 866e6a82e2794b151235c19b8c5cbf1fcaf780ef
+    fixed: c47d0d3df865d34d877c84042c11a7cb259f7cdd
+modified: '2021-06-21T06:56:19.531828Z'
+published: '2020-06-24T01:51:15.842848Z'
+ecosystem_specific:
+  severity: HIGH
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21681

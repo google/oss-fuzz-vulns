@@ -1,4 +1,7 @@
 id: OSV-2020-830
+package:
+  name: cryptofuzz
+  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in CRYPTO_128_wrap
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22836
@@ -8,22 +11,19 @@ details: |
   CRYPTO_128_wrap
   aes_wrap_cipher_internal
   aes_wrap_cipher
-modified: '2021-06-23T06:25:43.228242Z'
-published: '2020-07-14T22:13:37.469370Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22836
-affected:
-- package:
-    name: cryptofuzz
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/guidovranken/cryptofuzz
-    events:
-    - introduced: 66afa3c33b88efd74cdce8e9a35579144680657a
-    - fixed: 68b5828c3ad46397d21cea7c8fe3ff5ccfcf2e3b
-  ecosystem_specific:
-    severity: HIGH
-    fixed_range: 3d70d8b17018ab2c52070d177a8a5f9d08223921:68b5828c3ad46397d21cea7c8fe3ff5ccfcf2e3b
-    introduced_range: c25023be1a719a79a9e017134385bedd58b05e96:1f0605b43a250d795a9c4d2b5479a8603a68d069
+    introduced: 66afa3c33b88efd74cdce8e9a35579144680657a
+    fixed: 68b5828c3ad46397d21cea7c8fe3ff5ccfcf2e3b
+modified: '2021-06-23T06:25:43.228242Z'
+published: '2020-07-14T22:13:37.469370Z'
+ecosystem_specific:
+  severity: HIGH
+database_specific:
+  fixed_range: 3d70d8b17018ab2c52070d177a8a5f9d08223921:68b5828c3ad46397d21cea7c8fe3ff5ccfcf2e3b
+  introduced_range: c25023be1a719a79a9e017134385bedd58b05e96:1f0605b43a250d795a9c4d2b5479a8603a68d069
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22836

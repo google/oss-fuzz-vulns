@@ -1,4 +1,7 @@
 id: OSV-2021-414
+package:
+  name: uwebsockets
+  ecosystem: OSS-Fuzz
 summary: Heap-use-after-free in us_socket_close
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31047
@@ -8,20 +11,16 @@ details: |
   us_socket_close
   __wrap_epoll_wait
   us_loop_run
-modified: '2021-06-21T06:56:26.540713Z'
-published: '2021-02-18T00:02:35.938517Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31047
-affected:
-- package:
-    name: uwebsockets
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/uNetworking/uWebSockets.git
-    events:
-    - introduced: 1ef15da77b591594b19a5a81f5c80fb3b34d089f
-    - fixed: 5a3c7c03c59405d56ad4aeb6c12267039f5d17a1
-  ecosystem_specific:
-    severity: HIGH
+    introduced: 1ef15da77b591594b19a5a81f5c80fb3b34d089f
+    fixed: 5a3c7c03c59405d56ad4aeb6c12267039f5d17a1
+modified: '2021-06-21T06:56:26.540713Z'
+published: '2021-02-18T00:02:35.938517Z'
+ecosystem_specific:
+  severity: HIGH
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31047

@@ -1,4 +1,7 @@
 id: OSV-2018-54
+package:
+  name: harfbuzz
+  ecosystem: OSS-Fuzz
 summary: UNKNOWN READ in BEInt<short, 2>::operator short
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11305
@@ -8,20 +11,16 @@ details: |
   BEInt<short, 2>::operator short
   AAT::KerxSubTableFormat1<AAT::KerxSubTableHeader>::driver_context_t::transition
   void AAT::StateTableDriver<AAT::ExtendedTypes, AAT::Format1Entry<true>::EntryDat
-modified: '2021-06-21T06:56:20.544691Z'
-published: '2021-01-13T00:00:28.751017Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11305
-affected:
-- package:
-    name: harfbuzz
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/harfbuzz/harfbuzz.git
-    events:
-    - introduced: f4bad0086e40c70d66d6514f038ddda1411657c8
-    - fixed: 752bd8a192af209f44dacaf1d3510d0bfc6354b8
-  ecosystem_specific:
-    severity: MEDIUM
+    introduced: f4bad0086e40c70d66d6514f038ddda1411657c8
+    fixed: 752bd8a192af209f44dacaf1d3510d0bfc6354b8
+modified: '2021-06-21T06:56:20.544691Z'
+published: '2021-01-13T00:00:28.751017Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11305

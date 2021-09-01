@@ -1,4 +1,7 @@
 id: OSV-2020-1923
+package:
+  name: libressl
+  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in do_print_ex
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13914
@@ -8,21 +11,12 @@ details: |
   do_print_ex
   asn1_item_print_ctx
   ASN1_item_print
-modified: '2021-06-23T06:28:25.166862Z'
-published: '2020-10-02T00:00:28.271775Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13914
-affected:
-- package:
-    name: libressl
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/libressl-portable/portable.git
-    events:
-    - introduced: 23fa9a51d8f50a563566455dd9428c3525c9216d
-    - fixed: 17c88164016df821df2dff4b2b1291291ec4f28a
+    introduced: 23fa9a51d8f50a563566455dd9428c3525c9216d
+    fixed: 17c88164016df821df2dff4b2b1291291ec4f28a
   versions:
   - v2.9.1
   - v2.9.2
@@ -37,7 +31,13 @@ affected:
   - v3.1.5
   - v3.2.0
   - v3.2.1
-  ecosystem_specific:
-    fixed_range: 4b6c7bfd02dec26021882f1599dbcbccdd4d2889:17c88164016df821df2dff4b2b1291291ec4f28a
-    severity: MEDIUM
-    introduced_range: 4ea2a01a0d2cc889e95316f51c7a36f8f158df44:4b6c7bfd02dec26021882f1599dbcbccdd4d2889
+modified: '2021-06-23T06:28:25.166862Z'
+published: '2020-10-02T00:00:28.271775Z'
+ecosystem_specific:
+  severity: MEDIUM
+database_specific:
+  introduced_range: 4ea2a01a0d2cc889e95316f51c7a36f8f158df44:4b6c7bfd02dec26021882f1599dbcbccdd4d2889
+  fixed_range: 4b6c7bfd02dec26021882f1599dbcbccdd4d2889:17c88164016df821df2dff4b2b1291291ec4f28a
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13914

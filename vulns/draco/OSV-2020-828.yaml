@@ -1,4 +1,7 @@
 id: OSV-2020-828
+package:
+  name: draco
+  ecosystem: OSS-Fuzz
 summary: Heap-use-after-free in draco::Metadata::AddSubMetadata
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24059
@@ -8,23 +11,20 @@ details: |
   draco::Metadata::AddSubMetadata
   draco::MetadataDecoder::DecodeMetadata
   draco::MetadataDecoder::DecodeGeometryMetadata
-modified: '2021-06-23T06:31:11.498536Z'
-published: '2020-07-14T05:37:49.784283Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24059
-affected:
-- package:
-    name: draco
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/google/draco
-    events:
-    - introduced: 25484b31235d1a35fa72be6ce8d1f7f286b5c0bf
+    introduced: 25484b31235d1a35fa72be6ce8d1f7f286b5c0bf
   versions:
   - 1.4.0
   - 1.4.1
-  ecosystem_specific:
-    severity: HIGH
-    introduced_range: aef4bfbd61798ecc21d94c873b679fbdeaf92462:79601d2d060be52e673a82ed1c46f4666eb28255
+modified: '2021-06-23T06:31:11.498536Z'
+published: '2020-07-14T05:37:49.784283Z'
+ecosystem_specific:
+  severity: HIGH
+database_specific:
+  introduced_range: aef4bfbd61798ecc21d94c873b679fbdeaf92462:79601d2d060be52e673a82ed1c46f4666eb28255
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24059

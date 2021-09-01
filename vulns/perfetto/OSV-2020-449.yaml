@@ -1,4 +1,7 @@
 id: OSV-2020-449
+package:
+  name: perfetto
+  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in perfetto::trace_processor::FuchsiaTraceParser::ParseTracePacket
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14752
@@ -8,21 +11,12 @@ details: |
   perfetto::trace_processor::FuchsiaTraceParser::ParseTracePacket
   perfetto::trace_processor::TraceSorter::SortAndExtractEventsBeyondWindow
   perfetto::trace_processor::TraceProcessorImpl::NotifyEndOfFile
-modified: '2021-06-21T06:56:27.359168Z'
-published: '2020-07-01T00:00:10.213693Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14752
-affected:
-- package:
-    name: perfetto
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://android.googlesource.com/platform/external/perfetto/
-    events:
-    - introduced: 2ffc4a93685c45efec70e07c8acddf60eb1ae60a
-    - fixed: 4973513f89e0b42ee40bea3f1420a4738a15b719
+    introduced: 2ffc4a93685c45efec70e07c8acddf60eb1ae60a
+    fixed: 4973513f89e0b42ee40bea3f1420a4738a15b719
   versions:
   - android-10.0.0_r1
   - android-10.0.0_r10
@@ -99,5 +93,10 @@ affected:
   - android-vts-10.0_r7
   - platform-tools-29.0.1
   - platform-tools-29.0.2
-  ecosystem_specific:
-    severity: MEDIUM
+modified: '2021-06-21T06:56:27.359168Z'
+published: '2020-07-01T00:00:10.213693Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14752

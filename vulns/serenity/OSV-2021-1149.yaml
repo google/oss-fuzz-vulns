@@ -1,4 +1,7 @@
 id: OSV-2021-1149
+package:
+  name: serenity
+  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in JS::Lexer::consume
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=37294
@@ -8,19 +11,15 @@ details: |
   JS::Lexer::consume
   JS::Lexer::next
   JS::Parser::consume
-modified: '2021-08-19T00:01:39.960917Z'
-published: '2021-08-19T00:01:39.960686Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=37294
-affected:
-- package:
-    name: serenity
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/SerenityOS/serenity
-    events:
-    - introduced: 47bc72bcf6f2fae3dc0938b96d8c7890b1005ead
-  ecosystem_specific:
-    severity: MEDIUM
+    introduced: 47bc72bcf6f2fae3dc0938b96d8c7890b1005ead
+modified: '2021-08-19T00:01:39.960917Z'
+published: '2021-08-19T00:01:39.960686Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=37294

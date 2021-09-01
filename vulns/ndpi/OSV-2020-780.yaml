@@ -1,4 +1,7 @@
 id: OSV-2020-780
+package:
+  name: ndpi
+  ecosystem: OSS-Fuzz
 summary: Segv on unknown address in ndpi_strdup
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22676
@@ -8,18 +11,14 @@ details: |
   ndpi_strdup
   process_ndpi_collected_info
   packet_processing
-modified: '2021-03-09T04:49:06.071706Z'
-published: '2020-07-14T05:37:32.263949Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22676
-affected:
-- package:
-    name: ndpi
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/ntop/nDPI.git
-    events:
-    - introduced: 4a09b4efa053a26e187119a540da4b41dd8a24d8
-    - fixed: 204f3ddff5efc929095556ed22ec62d18bef6324
+    introduced: 4a09b4efa053a26e187119a540da4b41dd8a24d8
+    fixed: 204f3ddff5efc929095556ed22ec62d18bef6324
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22676
+modified: '2021-03-09T04:49:06.071706Z'
+published: '2020-07-14T05:37:32.263949Z'

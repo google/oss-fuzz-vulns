@@ -1,4 +1,7 @@
 id: OSV-2021-597
+package:
+  name: skcms
+  ecosystem: OSS-Fuzz
 summary: Stack-buffer-overflow in read_mft_common
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=32837
@@ -8,20 +11,16 @@ details: |
   read_mft_common
   bool read_tag_mft1<skcms_B2A>
   read_b2a
-modified: '2021-06-21T06:56:19.210615Z'
-published: '2021-04-04T00:00:06.122996Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=32837
-affected:
-- package:
-    name: skcms
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://skia.googlesource.com/skcms.git
-    events:
-    - introduced: 4e8691e281941320a5644d50c566c2d4394cf1c8
-    - fixed: 411e27776f5c0ec8359508f0e2cabb1538375e53
-  ecosystem_specific:
-    severity: HIGH
+    introduced: 4e8691e281941320a5644d50c566c2d4394cf1c8
+    fixed: 411e27776f5c0ec8359508f0e2cabb1538375e53
+modified: '2021-06-21T06:56:19.210615Z'
+published: '2021-04-04T00:00:06.122996Z'
+ecosystem_specific:
+  severity: HIGH
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=32837

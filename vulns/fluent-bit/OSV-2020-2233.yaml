@@ -1,4 +1,7 @@
 id: OSV-2020-2233
+package:
+  name: fluent-bit
+  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in flb_sds_cat_utf8
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=28222
@@ -8,21 +11,12 @@ details: |
   flb_sds_cat_utf8
   flb_msgpack_gelf_value
   flb_msgpack_to_gelf
-modified: '2021-06-21T06:56:24.329709Z'
-published: '2020-12-04T00:01:24.065614Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=28222
-affected:
-- package:
-    name: fluent-bit
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/fluent/fluent-bit/
-    events:
-    - introduced: d62166140fab2faa5307d871957dbac16bc08dc2
-    - fixed: 4c1de376612bb0665bc0c1e3c4b03790a949ac3f
+    introduced: d62166140fab2faa5307d871957dbac16bc08dc2
+    fixed: 4c1de376612bb0665bc0c1e3c4b03790a949ac3f
   versions:
   - v1.6.0
   - v1.6.1
@@ -46,5 +40,10 @@ affected:
   - v1.7.0-rc8
   - v1.7.0-rc9
   - v1.7.1
-  ecosystem_specific:
-    severity: MEDIUM
+modified: '2021-06-21T06:56:24.329709Z'
+published: '2020-12-04T00:01:24.065614Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=28222

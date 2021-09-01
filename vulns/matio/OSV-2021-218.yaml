@@ -1,4 +1,7 @@
 id: OSV-2021-218
+package:
+  name: matio
+  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in H5F_addr_decode_len
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29776
@@ -8,22 +11,18 @@ details: |
   H5F_addr_decode_len
   H5F_addr_decode
   H5G_ent_decode
-modified: '2021-06-21T06:56:28.138570Z'
-published: '2021-01-22T00:00:16.221512Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29776
-affected:
-- package:
-    name: matio
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: git://git.code.sf.net/p/matio/matio
-    events:
-    - introduced: 1ce8f2d1845ecdde19a35605cabdbb884776d52d
+    introduced: 1ce8f2d1845ecdde19a35605cabdbb884776d52d
   versions:
   - v1.5.20
   - v1.5.21
-  ecosystem_specific:
-    severity: MEDIUM
+modified: '2021-06-21T06:56:28.138570Z'
+published: '2021-01-22T00:00:16.221512Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29776

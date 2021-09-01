@@ -1,4 +1,7 @@
 id: OSV-2020-671
+package:
+  name: openh264
+  ecosystem: OSS-Fuzz
 summary: Heap-use-after-free in WelsDec::SetUnRef
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18743
@@ -8,20 +11,16 @@ details: |
   WelsDec::SetUnRef
   WelsDec::SlidingWindow
   WelsDec::WelsMarkAsRef
-modified: '2021-06-21T06:56:23.842205Z'
-published: '2020-07-01T00:00:23.823813Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18743
-affected:
-- package:
-    name: openh264
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/cisco/openh264.git
-    events:
-    - introduced: c185ac351eff0ae277bfe14a3b2ad52e9ed8ab81
-    - fixed: 2c13955d0649b2afc575bc5416dcedeffc8c01ec
-  ecosystem_specific:
-    severity: HIGH
+    introduced: c185ac351eff0ae277bfe14a3b2ad52e9ed8ab81
+    fixed: 2c13955d0649b2afc575bc5416dcedeffc8c01ec
+modified: '2021-06-21T06:56:23.842205Z'
+published: '2020-07-01T00:00:23.823813Z'
+ecosystem_specific:
+  severity: HIGH
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18743

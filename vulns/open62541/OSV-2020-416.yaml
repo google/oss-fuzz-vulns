@@ -1,4 +1,7 @@
 id: OSV-2020-416
+package:
+  name: open62541
+  ecosystem: OSS-Fuzz
 summary: Use-of-uninitialized-value in UA_ServerConfig_clean
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14848
@@ -8,20 +11,16 @@ details: |
   UA_ServerConfig_clean
   UA_Server_delete
   fuzz_binary_message.cc
-modified: '2021-06-21T06:56:26.751276Z'
-published: '2020-07-01T00:00:08.299104Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14848
-affected:
-- package:
-    name: open62541
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/open62541/open62541.git
-    events:
-    - introduced: 71d206c202a8612d885e7f78821f177238a4fd81
-    - fixed: 4e3d0b046c3a7fe4c5ece8a5f4f1e59520b39ae3
-  ecosystem_specific:
-    severity: MEDIUM
+    introduced: 71d206c202a8612d885e7f78821f177238a4fd81
+    fixed: 4e3d0b046c3a7fe4c5ece8a5f4f1e59520b39ae3
+modified: '2021-06-21T06:56:26.751276Z'
+published: '2020-07-01T00:00:08.299104Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14848

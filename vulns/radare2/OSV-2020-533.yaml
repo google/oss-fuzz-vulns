@@ -1,4 +1,7 @@
 id: OSV-2020-533
+package:
+  name: radare2
+  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in r_utf8_strlen
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13726
@@ -8,23 +11,19 @@ details: |
   r_utf8_strlen
   getstr
   parse_class
-modified: '2021-06-21T06:56:23.115857Z'
-published: '2020-07-01T00:00:15.106987Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13726
-affected:
-- package:
-    name: radare2
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/radare/radare2
-    events:
-    - introduced: 449e081db89748cdd434268cd654038c49ae84d6
-    - fixed: c10df533f658e068cfcadbf400c65b9dd579040a
+    introduced: 449e081db89748cdd434268cd654038c49ae84d6
+    fixed: c10df533f658e068cfcadbf400c65b9dd579040a
   versions:
   - 3.4.0
   - 3.4.1
-  ecosystem_specific:
-    severity: MEDIUM
+modified: '2021-06-21T06:56:23.115857Z'
+published: '2020-07-01T00:00:15.106987Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13726

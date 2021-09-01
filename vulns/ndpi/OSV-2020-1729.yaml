@@ -1,4 +1,7 @@
 id: OSV-2020-1729
+package:
+  name: ndpi
+  ecosystem: OSS-Fuzz
 summary: Use-of-uninitialized-value in ndpi_check_dga_name
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25545
@@ -8,20 +11,16 @@ details: |
   ndpi_check_dga_name
   check_content_type_and_change_protocol
   ndpi_check_http_tcp
-modified: '2021-06-21T06:56:22.867844Z'
-published: '2020-09-11T00:00:28.205135Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25545
-affected:
-- package:
-    name: ndpi
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/ntop/nDPI.git
-    events:
-    - introduced: ea4240055d5301b52d9fa934b8d14c126375eb17
-    - fixed: 1c0e617d802d214b0186f2752b50b8ee2a9e17a6
-  ecosystem_specific:
-    severity: MEDIUM
+    introduced: ea4240055d5301b52d9fa934b8d14c126375eb17
+    fixed: 1c0e617d802d214b0186f2752b50b8ee2a9e17a6
+modified: '2021-06-21T06:56:22.867844Z'
+published: '2020-09-11T00:00:28.205135Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25545

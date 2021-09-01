@@ -1,4 +1,7 @@
 id: OSV-2020-1782
+package:
+  name: clamav
+  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in cli_codepage_to_utf8
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23499
@@ -8,20 +11,16 @@ details: |
   cli_codepage_to_utf8
   cli_vba_readdir_new
   cli_vba_scandir_new
-modified: '2021-06-21T06:56:25.379960Z'
-published: '2020-09-18T00:00:05.693053Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23499
-affected:
-- package:
-    name: clamav
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/Cisco-Talos/clamav-devel.git
-    events:
-    - introduced: b7f8440965fef5e03fcedf12c5ed902235ba8124
-    - fixed: 20490786224f4a8256fb395deb9c05084db91708
-  ecosystem_specific:
-    severity: MEDIUM
+    introduced: b7f8440965fef5e03fcedf12c5ed902235ba8124
+    fixed: 20490786224f4a8256fb395deb9c05084db91708
+modified: '2021-06-21T06:56:25.379960Z'
+published: '2020-09-18T00:00:05.693053Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23499

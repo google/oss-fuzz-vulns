@@ -1,4 +1,7 @@
 id: OSV-2020-2178
+package:
+  name: opensc
+  ecosystem: OSS-Fuzz
 summary: Stack-buffer-overflow in insert_key
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=27719
@@ -8,24 +11,20 @@ details: |
   insert_key
   detect_netkey
   sc_pkcs15emu_tcos_init_ex
-modified: '2021-06-21T06:56:27.165336Z'
-published: '2020-11-23T00:00:03.001326Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=27719
-affected:
-- package:
-    name: opensc
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/OpenSC/OpenSC
-    events:
-    - introduced: b02da8348be97d4b24081783f6af46757373bc3e
-    - fixed: 78cdab949f098ad7e593d853229fccf57d749d0c
+    introduced: b02da8348be97d4b24081783f6af46757373bc3e
+    fixed: 78cdab949f098ad7e593d853229fccf57d749d0c
   versions:
   - 0.21.0
   - 0.21.0-rc1
   - 0.21.0-rc2
-  ecosystem_specific:
-    severity: MEDIUM
+modified: '2021-06-21T06:56:27.165336Z'
+published: '2020-11-23T00:00:03.001326Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=27719

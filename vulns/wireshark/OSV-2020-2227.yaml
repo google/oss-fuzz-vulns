@@ -1,4 +1,7 @@
 id: OSV-2020-2227
+package:
+  name: wireshark
+  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in ieeeNUMBER_fragment_hash
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=28191
@@ -8,21 +11,12 @@ details: |
   ieeeNUMBER_fragment_hash
   g_hash_table_insert_internal
   fragment_add_seq_common
-modified: '2021-06-21T06:56:24.079656Z'
-published: '2020-12-04T00:00:30.414831Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=28191
-affected:
-- package:
-    name: wireshark
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://gitlab.com/wireshark/wireshark.git
-    events:
-    - introduced: cb8fa301774d3aca43d950bfe60760b064b1a136
-    - fixed: 894a70d0796a96f25fe6f0dd017c7b1faad9819f
+    introduced: cb8fa301774d3aca43d950bfe60760b064b1a136
+    fixed: 894a70d0796a96f25fe6f0dd017c7b1faad9819f
   versions:
   - v3.3.0
   - v3.3.1
@@ -43,5 +37,10 @@ affected:
   - wireshark-3.4.1
   - wireshark-3.4.2
   - wireshark-3.4.3
-  ecosystem_specific:
-    severity: MEDIUM
+modified: '2021-06-21T06:56:24.079656Z'
+published: '2020-12-04T00:00:30.414831Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=28191

@@ -1,4 +1,7 @@
 id: OSV-2020-1078
+package:
+  name: libxslt
+  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in xmlXPathCompileExpr
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18385
@@ -8,22 +11,19 @@ details: |
   xmlXPathCompileExpr
   xmlXPathCtxtCompile
   xsltFuzzXPath
-modified: '2021-06-23T06:25:31.001151Z'
-published: '2020-07-22T21:49:45.671780Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18385
-affected:
-- package:
-    name: libxslt
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://gitlab.gnome.org/GNOME/libxslt.git
-    events:
-    - introduced: 7f56378a73af8a61da78b8091f0e317316cee300
-    - fixed: 9d4bfeecbdf28f3980b23fa8f2504bdf54f04486
-  ecosystem_specific:
-    introduced_range: unknown:7f56378a73af8a61da78b8091f0e317316cee300
-    severity: MEDIUM
-    fixed_range: 6d4a773a4bd06cbfe3c0ca68728d0099777e8df6:9d4bfeecbdf28f3980b23fa8f2504bdf54f04486
+    introduced: 7f56378a73af8a61da78b8091f0e317316cee300
+    fixed: 9d4bfeecbdf28f3980b23fa8f2504bdf54f04486
+modified: '2021-06-23T06:25:31.001151Z'
+published: '2020-07-22T21:49:45.671780Z'
+ecosystem_specific:
+  severity: MEDIUM
+database_specific:
+  fixed_range: 6d4a773a4bd06cbfe3c0ca68728d0099777e8df6:9d4bfeecbdf28f3980b23fa8f2504bdf54f04486
+  introduced_range: unknown:7f56378a73af8a61da78b8091f0e317316cee300
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18385

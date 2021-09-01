@@ -1,4 +1,7 @@
 id: OSV-2020-1007
+package:
+  name: suricata
+  ecosystem: OSS-Fuzz
 summary: Heap-use-after-free in DetectParseDupSigCompareFunc
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22715
@@ -8,22 +11,19 @@ details: |
   DetectParseDupSigCompareFunc
   HashListTableLookup
   DetectEngineSignatureIsDuplicate
-modified: '2021-06-23T06:25:28.991511Z'
-published: '2020-07-22T21:49:39.655879Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22715
-affected:
-- package:
-    name: suricata
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/OISF/suricata.git
-    events:
-    - introduced: 19fe8d9894207f18dbd305a5834820f3a698dc32
-    - fixed: 8c5c949cfa05e00a896fe6f61513f1d234cb7d24
-  ecosystem_specific:
-    fixed_range: c09235e327eed02eb22d990c017c40316cd246f8:8c5c949cfa05e00a896fe6f61513f1d234cb7d24
-    introduced_range: unknown:19fe8d9894207f18dbd305a5834820f3a698dc32
-    severity: HIGH
+    introduced: 19fe8d9894207f18dbd305a5834820f3a698dc32
+    fixed: 8c5c949cfa05e00a896fe6f61513f1d234cb7d24
+modified: '2021-06-23T06:25:28.991511Z'
+published: '2020-07-22T21:49:39.655879Z'
+ecosystem_specific:
+  severity: HIGH
+database_specific:
+  fixed_range: c09235e327eed02eb22d990c017c40316cd246f8:8c5c949cfa05e00a896fe6f61513f1d234cb7d24
+  introduced_range: unknown:19fe8d9894207f18dbd305a5834820f3a698dc32
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22715

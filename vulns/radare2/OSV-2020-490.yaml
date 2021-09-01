@@ -1,4 +1,7 @@
 id: OSV-2020-490
+package:
+  name: radare2
+  ecosystem: OSS-Fuzz
 summary: Heap-double-free in _free_resources
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=12945
@@ -8,20 +11,16 @@ details: |
   _free_resources
   r_list_delete
   r_list_purge
-modified: '2021-06-21T06:56:23.122004Z'
-published: '2020-07-01T00:00:12.658645Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=12945
-affected:
-- package:
-    name: radare2
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/radare/radare2
-    events:
-    - introduced: b022c9533482a8f1c9ae825ced5c1a3e251837d9
-    - fixed: 149cb3587e4cd3928f8f56553ecfeaac15452585
-  ecosystem_specific:
-    severity: HIGH
+    introduced: b022c9533482a8f1c9ae825ced5c1a3e251837d9
+    fixed: 149cb3587e4cd3928f8f56553ecfeaac15452585
+modified: '2021-06-21T06:56:23.122004Z'
+published: '2020-07-01T00:00:12.658645Z'
+ecosystem_specific:
+  severity: HIGH
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=12945

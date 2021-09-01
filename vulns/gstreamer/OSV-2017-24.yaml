@@ -1,4 +1,7 @@
 id: OSV-2017-24
+package:
+  name: gstreamer
+  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in pnm_type_find
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=4039
@@ -8,22 +11,19 @@ details: |
   pnm_type_find
   gst_type_find_factory_call_function
   gst_type_find_helper_for_data
-modified: '2021-06-23T06:25:36.198845Z'
-published: '2021-01-13T00:01:28.099192Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=4039
-affected:
-- package:
-    name: gstreamer
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://gitlab.freedesktop.org/gstreamer/gstreamer.git
-    events:
-    - introduced: 5d885b9dc73d3007ea04e96c24d0ef30c365bc4d
-    - fixed: d106390adce5cee837d2d0aab377d758a45a4b2d
-  ecosystem_specific:
-    introduced_range: fb56ad6bee2366813f6be4f697579c06774b062d:4c795924dba5595fb1472864f7d27262bce247a8
-    fixed_range: 4c795924dba5595fb1472864f7d27262bce247a8:d106390adce5cee837d2d0aab377d758a45a4b2d
-    severity: MEDIUM
+    introduced: 5d885b9dc73d3007ea04e96c24d0ef30c365bc4d
+    fixed: d106390adce5cee837d2d0aab377d758a45a4b2d
+modified: '2021-06-23T06:25:36.198845Z'
+published: '2021-01-13T00:01:28.099192Z'
+ecosystem_specific:
+  severity: MEDIUM
+database_specific:
+  fixed_range: 4c795924dba5595fb1472864f7d27262bce247a8:d106390adce5cee837d2d0aab377d758a45a4b2d
+  introduced_range: fb56ad6bee2366813f6be4f697579c06774b062d:4c795924dba5595fb1472864f7d27262bce247a8
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=4039

@@ -1,4 +1,7 @@
 id: OSV-2021-916
+package:
+  name: libjxl
+  ecosystem: OSS-Fuzz
 summary: Use-of-uninitialized-value in jxl::ModularFrameDecoder::DecodeAcMetadata
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=35778
@@ -8,20 +11,16 @@ details: |
   jxl::ModularFrameDecoder::DecodeAcMetadata
   jxl::FrameDecoder::ProcessDCGroup
   jxl::ThreadPool::RunCallState<jxl::Status
-modified: '2021-07-04T00:00:13.275187Z'
-published: '2021-07-04T00:00:13.274805Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=35778
-affected:
-- package:
-    name: libjxl
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/libjxl/libjxl.git
-    events:
-    - introduced: 42d9f78fce38e2f97c675d03b6a19ccc6bee7d39
-    - fixed: f8dd198a2d8ad4f4fccd591349a384bc0eff5ec9
-  ecosystem_specific:
-    severity: MEDIUM
+    introduced: 42d9f78fce38e2f97c675d03b6a19ccc6bee7d39
+    fixed: f8dd198a2d8ad4f4fccd591349a384bc0eff5ec9
+modified: '2021-07-04T00:00:13.275187Z'
+published: '2021-07-04T00:00:13.274805Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=35778

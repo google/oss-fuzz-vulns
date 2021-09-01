@@ -1,4 +1,7 @@
 id: OSV-2020-742
+package:
+  name: hoextdown
+  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in is_codefence
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23764
@@ -8,23 +11,19 @@ details: |
   is_codefence
   parse_listitem
   parse_definition
-modified: '2021-06-21T06:56:23.264563Z'
-published: '2020-07-04T00:00:01.713043Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23764
-affected:
-- package:
-    name: hoextdown
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/kjdev/hoextdown.git
-    events:
-    - introduced: d01948a1c9af87f2284235df7c66e5cee05f724e
-    - fixed: 7c7dc6ac9adce5413ab54dcd604db95a9b935b05
+    introduced: d01948a1c9af87f2284235df7c66e5cee05f724e
+    fixed: 7c7dc6ac9adce5413ab54dcd604db95a9b935b05
   versions:
   - 3.0.7.16
   - 3.0.7.17
-  ecosystem_specific:
-    severity: MEDIUM
+modified: '2021-06-21T06:56:23.264563Z'
+published: '2020-07-04T00:00:01.713043Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23764

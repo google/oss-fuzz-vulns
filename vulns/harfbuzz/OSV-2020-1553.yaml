@@ -1,4 +1,7 @@
 id: OSV-2020-1553
+package:
+  name: harfbuzz
+  ecosystem: OSS-Fuzz
 summary: UNKNOWN READ in hb_realloc_impl
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24497
@@ -8,20 +11,16 @@ details: |
   hb_realloc_impl
   hb_vector_t<CFF::dict_val_t>::alloc
   hb_vector_t<CFF::dict_val_t>::resize
-modified: '2021-06-21T06:56:20.747659Z'
-published: '2020-07-31T00:00:55.823679Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24497
-affected:
-- package:
-    name: harfbuzz
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/harfbuzz/harfbuzz.git
-    events:
-    - introduced: 48ad745996159337fb4733561e834a0ffbe3a1ae
-    - fixed: d307c24abf37b2702706cf9df0fab571a99e2a70
-  ecosystem_specific:
-    severity: MEDIUM
+    introduced: 48ad745996159337fb4733561e834a0ffbe3a1ae
+    fixed: d307c24abf37b2702706cf9df0fab571a99e2a70
+modified: '2021-06-21T06:56:20.747659Z'
+published: '2020-07-31T00:00:55.823679Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24497

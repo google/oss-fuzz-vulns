@@ -1,4 +1,7 @@
 id: OSV-2020-2093
+package:
+  name: openh264
+  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in ExpandPictureChroma_c
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26570
@@ -8,20 +11,16 @@ details: |
   ExpandPictureChroma_c
   ExpandReferencingPicture
   WelsDec::WelsCheckAndRecoverForFutureDecoding
-modified: '2021-06-21T06:56:23.884546Z'
-published: '2020-10-23T00:00:43.617858Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26570
-affected:
-- package:
-    name: openh264
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/cisco/openh264.git
-    events:
-    - introduced: f1bb6d3acb057785b4d89e8228e23cc4fc9caa12
-    - fixed: b52786888ddce9d6bc06b7825ba9bffc65924e0c
-  ecosystem_specific:
-    severity: HIGH
+    introduced: f1bb6d3acb057785b4d89e8228e23cc4fc9caa12
+    fixed: b52786888ddce9d6bc06b7825ba9bffc65924e0c
+modified: '2021-06-21T06:56:23.884546Z'
+published: '2020-10-23T00:00:43.617858Z'
+ecosystem_specific:
+  severity: HIGH
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26570

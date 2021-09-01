@@ -1,4 +1,7 @@
 id: OSV-2021-421
+package:
+  name: selinux
+  ecosystem: OSS-Fuzz
 summary: Heap-use-after-free in __cil_verify_classperms
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31124
@@ -8,21 +11,12 @@ details: |
   __cil_verify_classperms
   __verify_map_perm_classperms
   hashtab_map
-modified: '2021-06-21T06:56:27.711792Z'
-published: '2021-02-20T00:00:20.081676Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31124
-affected:
-- package:
-    name: selinux
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/SELinuxProject/selinux
-    events:
-    - introduced: 0451adebdf153eee1f69914141311114a0130982
-    - fixed: 2d35fcc7e9e976a2346b1de20e54f8663e8a6cba
+    introduced: 0451adebdf153eee1f69914141311114a0130982
+    fixed: 2d35fcc7e9e976a2346b1de20e54f8663e8a6cba
   versions:
   - '3.2'
   - 3.2-rc3
@@ -52,5 +46,10 @@ affected:
   - selinux-sandbox-3.2-rc3
   - semodule-utils-3.2
   - semodule-utils-3.2-rc3
-  ecosystem_specific:
-    severity: HIGH
+modified: '2021-06-21T06:56:27.711792Z'
+published: '2021-02-20T00:00:20.081676Z'
+ecosystem_specific:
+  severity: HIGH
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31124

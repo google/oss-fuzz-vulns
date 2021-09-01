@@ -1,4 +1,7 @@
 id: OSV-2020-509
+package:
+  name: harfbuzz
+  ecosystem: OSS-Fuzz
 summary: Use-of-uninitialized-value in hb_hashmap_t<hb_serialize_context_t::object_t
   const*, unsigned int,
 details: |
@@ -9,20 +12,16 @@ details: |
   hb_hashmap_t<hb_serialize_context_t::object_t const*, unsigned int,
   hb_hashmap_t<hb_serialize_context_t::object_t const*, unsigned int,
   hb_hashmap_t<hb_serialize_context_t::object_t const*, unsigned int,
-modified: '2021-06-21T06:56:20.399191Z'
-published: '2020-07-01T00:00:13.704856Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14641
-affected:
-- package:
-    name: harfbuzz
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/harfbuzz/harfbuzz.git
-    events:
-    - introduced: 59ee61fddc76cd18f19f351bca7dd293eb610333
-    - fixed: 503748d8a80dd5db450c8c4dc109f2b97049d989
-  ecosystem_specific:
-    severity: MEDIUM
+    introduced: 59ee61fddc76cd18f19f351bca7dd293eb610333
+    fixed: 503748d8a80dd5db450c8c4dc109f2b97049d989
+modified: '2021-06-21T06:56:20.399191Z'
+published: '2020-07-01T00:00:13.704856Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14641

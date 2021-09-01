@@ -1,4 +1,7 @@
 id: OSV-2021-766
+package:
+  name: c-blosc2
+  ecosystem: OSS-Fuzz
 summary: Negative-size-param in frame_get_vlmetalayers
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34259
@@ -8,21 +11,17 @@ details: |
   frame_get_vlmetalayers
   frame_to_schunk
   blosc2_schunk_from_buffer
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/Blosc/c-blosc2.git
+    introduced: ce9aa2247006ed182dabb922bd3536b13375c4cf
+    fixed: ac7b9359e84d796bfb1ff1fd3f7c9eaf9a506799
+  versions:
+  - v2.0.0-rc2
+  - v2.0.0.rc1
 modified: '2021-05-15T00:00:29.864212Z'
 published: '2021-05-15T00:00:29.863946Z'
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34259
-affected:
-- package:
-    name: c-blosc2
-    ecosystem: OSS-Fuzz
-  ranges:
-  - type: GIT
-    repo: https://github.com/Blosc/c-blosc2.git
-    events:
-    - introduced: ce9aa2247006ed182dabb922bd3536b13375c4cf
-    - fixed: ac7b9359e84d796bfb1ff1fd3f7c9eaf9a506799
-  versions:
-  - v2.0.0-rc2
-  - v2.0.0.rc1

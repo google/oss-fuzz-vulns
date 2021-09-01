@@ -1,4 +1,7 @@
 id: OSV-2021-577
+package:
+  name: libredwg
+  ecosystem: OSS-Fuzz
 summary: Segv on unknown address in dwg_free_MTEXTATTRIBUTEOBJECTCONTEXTDATA_private
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=32604
@@ -8,21 +11,12 @@ details: |
   dwg_free_MTEXTATTRIBUTEOBJECTCONTEXTDATA_private
   dwg_free_MTEXTATTRIBUTEOBJECTCONTEXTDATA
   dwg_free_variable_no_class
-modified: '2021-03-29T00:00:22.956466Z'
-published: '2021-03-29T00:00:22.956129Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=32604
-affected:
-- package:
-    name: libredwg
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/LibreDWG/libredwg
-    events:
-    - introduced: cb74d5cf5bffc2a9dee8da43105d892f9a728777
-    - fixed: 035876226d3eadd4e5e47b06fe34e3aa858b6406
+    introduced: cb74d5cf5bffc2a9dee8da43105d892f9a728777
+    fixed: 035876226d3eadd4e5e47b06fe34e3aa858b6406
   versions:
   - 0.12.3.4163
   - 0.12.3.4165
@@ -51,3 +45,8 @@ affected:
   - 0.12.3.4267
   - 0.12.3.4270
   - 0.12.3.4273
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=32604
+modified: '2021-03-29T00:00:22.956466Z'
+published: '2021-03-29T00:00:22.956129Z'

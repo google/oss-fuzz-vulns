@@ -1,4 +1,7 @@
 id: OSV-2017-116
+package:
+  name: librawspeed
+  ecosystem: OSS-Fuzz
 summary: Use-after-poison in rawspeed::OrfDecoder::decodeCompressed
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=3012
@@ -8,22 +11,19 @@ details: |
   rawspeed::OrfDecoder::decodeCompressed
   rawspeed::OrfDecoder::decodeRawInternal
   rawspeed::RawDecoder::decodeRaw
-modified: '2021-06-23T06:26:05.934010Z'
-published: '2021-01-13T21:57:50.232817Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=3012
-affected:
-- package:
-    name: librawspeed
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/darktable-org/rawspeed.git
-    events:
-    - introduced: 23d5018f6b231d62daa6543094a85747beb9654a
-    - fixed: 16b0853077eec08bccb74aec29bb395c6eb5e50c
-  ecosystem_specific:
-    severity: HIGH
-    fixed_range: 1cd7fc3e0b353a45f63a0a2d98c8c793fbf6104c:16b0853077eec08bccb74aec29bb395c6eb5e50c
-    introduced_range: f0e9f60474d98883ab9343f584b73ca046263679:52da2b8fda29aa257088d91fb11877f909d578a2
+    introduced: 23d5018f6b231d62daa6543094a85747beb9654a
+    fixed: 16b0853077eec08bccb74aec29bb395c6eb5e50c
+modified: '2021-06-23T06:26:05.934010Z'
+published: '2021-01-13T21:57:50.232817Z'
+ecosystem_specific:
+  severity: HIGH
+database_specific:
+  fixed_range: 1cd7fc3e0b353a45f63a0a2d98c8c793fbf6104c:16b0853077eec08bccb74aec29bb395c6eb5e50c
+  introduced_range: f0e9f60474d98883ab9343f584b73ca046263679:52da2b8fda29aa257088d91fb11877f909d578a2
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=3012

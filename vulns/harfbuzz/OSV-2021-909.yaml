@@ -1,4 +1,7 @@
 id: OSV-2021-909
+package:
+  name: harfbuzz
+  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in OT::CPALV1Tail::serialize
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=35672
@@ -8,20 +11,16 @@ details: |
   OT::CPALV1Tail::serialize
   OT::CPAL::subset
   bool _try_subset<OT::CPAL>
-modified: '2021-07-01T00:00:58.474718Z'
-published: '2021-07-01T00:00:58.474357Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=35672
-affected:
-- package:
-    name: harfbuzz
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/harfbuzz/harfbuzz.git
-    events:
-    - introduced: f739e1dc6a875d092d94bcc906d1604887729eac
-    - fixed: 7416faceeb7a875ba7316cee124edee2d59ea8d0
-  ecosystem_specific:
-    severity: MEDIUM
+    introduced: f739e1dc6a875d092d94bcc906d1604887729eac
+    fixed: 7416faceeb7a875ba7316cee124edee2d59ea8d0
+modified: '2021-07-01T00:00:58.474718Z'
+published: '2021-07-01T00:00:58.474357Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=35672

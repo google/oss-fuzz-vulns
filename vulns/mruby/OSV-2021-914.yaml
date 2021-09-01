@@ -1,4 +1,7 @@
 id: OSV-2021-914
+package:
+  name: mruby
+  ecosystem: OSS-Fuzz
 summary: UNKNOWN READ in mrb_vm_ci_env
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=35718
@@ -8,20 +11,16 @@ details: |
   mrb_vm_ci_env
   cipop
   mrb_vm_exec
-modified: '2021-07-03T00:01:26.278936Z'
-published: '2021-07-03T00:01:26.278614Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=35718
-affected:
-- package:
-    name: mruby
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/mruby/mruby
-    events:
-    - introduced: 99dbcec89c892bc90f36fbf38e46a9ec971e3a77
-    - fixed: a624da6fdb160b9a70a96c1ffe9dec017d7f5cb4
-  ecosystem_specific:
-    severity: MEDIUM
+    introduced: 99dbcec89c892bc90f36fbf38e46a9ec971e3a77
+    fixed: a624da6fdb160b9a70a96c1ffe9dec017d7f5cb4
+modified: '2021-07-03T00:01:26.278936Z'
+published: '2021-07-03T00:01:26.278614Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=35718

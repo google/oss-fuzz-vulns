@@ -1,4 +1,7 @@
 id: OSV-2020-1573
+package:
+  name: arduinojson
+  ecosystem: OSS-Fuzz
 summary: Use-of-uninitialized-value in void ArduinoJsonNUMBER_71::Utf8::encodeCodepoint<ArduinoJsonNUMBER_71::StringCop
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24633
@@ -8,22 +11,18 @@ details: |
   void ArduinoJsonNUMBER_71::Utf8::encodeCodepoint<ArduinoJsonNUMBER_71::StringCop
   ArduinoJsonNUMBER_71::JsonDeserializer<ArduinoJsonNUMBER_71::BoundedReader<unsig
   ArduinoJsonNUMBER_71::JsonDeserializer<ArduinoJsonNUMBER_71::BoundedReader<unsig
-modified: '2021-06-21T06:56:25.351737Z'
-published: '2020-08-04T00:00:11.334079Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24633
-affected:
-- package:
-    name: arduinojson
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/bblanchon/ArduinoJson.git
-    events:
-    - introduced: 298864bafe080e6a0a42185445b278be92820110
-    - fixed: 96b65713528476eed35dbab690be837967cedb93
+    introduced: 298864bafe080e6a0a42185445b278be92820110
+    fixed: 96b65713528476eed35dbab690be837967cedb93
   versions:
   - v6.16.0
-  ecosystem_specific:
-    severity: MEDIUM
+modified: '2021-06-21T06:56:25.351737Z'
+published: '2020-08-04T00:00:11.334079Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24633

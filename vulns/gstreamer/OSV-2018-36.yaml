@@ -1,4 +1,7 @@
 id: OSV-2018-36
+package:
+  name: gstreamer
+  ecosystem: OSS-Fuzz
 summary: UNKNOWN READ in ebml_parse_chunk
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=7887
@@ -8,27 +11,16 @@ details: |
   ebml_parse_chunk
   matroska_type_find
   gst_type_find_factory_call_function
-modified: '2021-06-23T06:55:58.056686Z'
-published: '2021-01-13T00:00:18.931589Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=7887
-affected:
-- package:
-    name: gstreamer
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://gitlab.freedesktop.org/gstreamer/gstreamer.git
-    events:
-    - introduced: 5d885b9dc73d3007ea04e96c24d0ef30c365bc4d
-    - fixed: b71841c2d2f3759abc5ebe2703cc96c18da77dc9
+    introduced: 5d885b9dc73d3007ea04e96c24d0ef30c365bc4d
+    fixed: b71841c2d2f3759abc5ebe2703cc96c18da77dc9
   - type: GIT
     repo: https://gitlab.freedesktop.org/gstreamer/gstreamer.git
-    events:
-    - introduced: 5d885b9dc73d3007ea04e96c24d0ef30c365bc4d
-    - fixed: b71841c2d2f3759abc5ebe2703cc96c18da77dc9
-    - fixed: 968f261fe2fbf94c07a5ae41ba58423d272a6cab
+    introduced: 5d885b9dc73d3007ea04e96c24d0ef30c365bc4d
+    fixed: 968f261fe2fbf94c07a5ae41ba58423d272a6cab
   versions:
   - 1.13.1
   - 1.13.90
@@ -53,7 +45,13 @@ affected:
   - 1.18.1
   - 1.18.2
   - 1.18.3
-  ecosystem_specific:
-    fixed_range: 9722e896446ed052623d795d8511140fbca7f023:b71841c2d2f3759abc5ebe2703cc96c18da77dc9
-    severity: MEDIUM
-    introduced_range: fb56ad6bee2366813f6be4f697579c06774b062d:4c795924dba5595fb1472864f7d27262bce247a8
+modified: '2021-06-23T06:55:58.056686Z'
+published: '2021-01-13T00:00:18.931589Z'
+ecosystem_specific:
+  severity: MEDIUM
+database_specific:
+  fixed_range: 9722e896446ed052623d795d8511140fbca7f023:b71841c2d2f3759abc5ebe2703cc96c18da77dc9
+  introduced_range: fb56ad6bee2366813f6be4f697579c06774b062d:4c795924dba5595fb1472864f7d27262bce247a8
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=7887

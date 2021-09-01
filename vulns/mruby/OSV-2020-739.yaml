@@ -1,4 +1,7 @@
 id: OSV-2020-739
+package:
+  name: mruby
+  ecosystem: OSS-Fuzz
 summary: UNKNOWN READ in str_decref
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18756
@@ -8,23 +11,19 @@ details: |
   str_decref
   obj_free
   mrb_gc_destroy
-modified: '2021-06-21T06:56:25.564195Z'
-published: '2020-07-01T00:00:27.971876Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18756
-affected:
-- package:
-    name: mruby
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/mruby/mruby
-    events:
-    - introduced: caba5fef274ab7df91b7247182ecbf2483b853b8
-    - fixed: 45aa5081e418423b47a32a06e0515406f63b64d2
+    introduced: caba5fef274ab7df91b7247182ecbf2483b853b8
+    fixed: 45aa5081e418423b47a32a06e0515406f63b64d2
   versions:
   - 2.1.0
   - 2.1.0-rc
-  ecosystem_specific:
-    severity: MEDIUM
+modified: '2021-06-21T06:56:25.564195Z'
+published: '2020-07-01T00:00:27.971876Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18756

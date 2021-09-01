@@ -1,4 +1,7 @@
 id: OSV-2018-136
+package:
+  name: glib
+  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in fast_validate
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=10319
@@ -8,27 +11,24 @@ details: |
   fast_validate
   g_utf8_validate
   g_variant_serialiser_is_string
-modified: '2021-06-23T06:25:19.542366Z'
-published: '2021-01-13T00:00:59.593904Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=10319
-affected:
-- package:
-    name: glib
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://gitlab.gnome.org/GNOME/glib
-    events:
-    - introduced: 10ee7301e8edb13e59143ee5653cd2b46e26c044
-    - fixed: d192a078c876107652e535e3e74b90e387d51a0f
+    introduced: 10ee7301e8edb13e59143ee5653cd2b46e26c044
+    fixed: d192a078c876107652e535e3e74b90e387d51a0f
   versions:
   - 2.57.3
   - 2.58.0
   - 2.58.1
   - 2.58.2
   - 2.58.3
-  ecosystem_specific:
-    severity: MEDIUM
-    introduced_range: 8defa46e6ec16aa3722aa0ac0bc3db0fecd86c45:0d271223d894e9c69b7fa6b7983511f8ad770682
+modified: '2021-06-23T06:25:19.542366Z'
+published: '2021-01-13T00:00:59.593904Z'
+ecosystem_specific:
+  severity: MEDIUM
+database_specific:
+  introduced_range: 8defa46e6ec16aa3722aa0ac0bc3db0fecd86c45:0d271223d894e9c69b7fa6b7983511f8ad770682
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=10319

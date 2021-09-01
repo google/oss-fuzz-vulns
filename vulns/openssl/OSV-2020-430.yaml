@@ -1,4 +1,7 @@
 id: OSV-2020-430
+package:
+  name: openssl
+  ecosystem: OSS-Fuzz
 summary: Stack-use-after-return in OSSL_PARAM_get_int32
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15114
@@ -8,18 +11,14 @@ details: |
   OSSL_PARAM_get_int32
   md5_sha1_set_params
   ssl3_final_finish_mac
-modified: '2021-03-09T04:49:05.883624Z'
-published: '2020-07-01T00:00:09.096641Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15114
-affected:
-- package:
-    name: openssl
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/openssl/openssl.git
-    events:
-    - introduced: d5e5e2ffafc7dbc861f7d285508cf129c5e8f5ac
-    - fixed: 83b4a24384e62ed8cf91f51bf9a303f98017e13e
+    introduced: d5e5e2ffafc7dbc861f7d285508cf129c5e8f5ac
+    fixed: 83b4a24384e62ed8cf91f51bf9a303f98017e13e
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15114
+modified: '2021-03-09T04:49:05.883624Z'
+published: '2020-07-01T00:00:09.096641Z'

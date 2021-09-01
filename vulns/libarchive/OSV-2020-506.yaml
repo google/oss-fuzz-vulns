@@ -1,4 +1,7 @@
 id: OSV-2020-506
+package:
+  name: libarchive
+  ecosystem: OSS-Fuzz
 summary: Stack-buffer-overflow in parse_file_extra_owner
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14331
@@ -8,20 +11,16 @@ details: |
   parse_file_extra_owner
   process_head_file_extra
   process_head_file
-modified: '2021-06-21T06:56:26.632150Z'
-published: '2020-07-01T00:00:13.588403Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14331
-affected:
-- package:
-    name: libarchive
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/libarchive/libarchive.git
-    events:
-    - introduced: 64e68f2034e6c5c6fd20d6b274b67fbdb88c3804
-    - fixed: 2fce6f81cc59144bf4f2f66f7620233d609b41ef
-  ecosystem_specific:
-    severity: HIGH
+    introduced: 64e68f2034e6c5c6fd20d6b274b67fbdb88c3804
+    fixed: 2fce6f81cc59144bf4f2f66f7620233d609b41ef
+modified: '2021-06-21T06:56:26.632150Z'
+published: '2020-07-01T00:00:13.588403Z'
+ecosystem_specific:
+  severity: HIGH
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14331

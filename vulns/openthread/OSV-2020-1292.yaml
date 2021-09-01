@@ -1,4 +1,7 @@
 id: OSV-2020-1292
+package:
+  name: openthread
+  ecosystem: OSS-Fuzz
 summary: Stack-buffer-overflow in ot::ExtendedTlv::GetLength
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20775
@@ -8,21 +11,18 @@ details: |
   ot::ExtendedTlv::GetLength
   ot::Tlv::GetSize
   ot::Tlv::GetNext
-modified: '2021-06-23T06:28:31.031432Z'
-published: '2020-07-22T21:50:03.818147Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20775
-affected:
-- package:
-    name: openthread
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/openthread/openthread
-    events:
-    - introduced: 05ba4c29f4badfe99fe6b478900e7af072059ebe
-    - fixed: 167d616bc2eefe9e4712da5a65681502de5851c0
-  ecosystem_specific:
-    introduced_range: unknown:05ba4c29f4badfe99fe6b478900e7af072059ebe
-    severity: MEDIUM
+    introduced: 05ba4c29f4badfe99fe6b478900e7af072059ebe
+    fixed: 167d616bc2eefe9e4712da5a65681502de5851c0
+modified: '2021-06-23T06:28:31.031432Z'
+published: '2020-07-22T21:50:03.818147Z'
+ecosystem_specific:
+  severity: MEDIUM
+database_specific:
+  introduced_range: unknown:05ba4c29f4badfe99fe6b478900e7af072059ebe
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20775

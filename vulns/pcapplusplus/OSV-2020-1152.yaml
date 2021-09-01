@@ -1,4 +1,7 @@
 id: OSV-2020-1152
+package:
+  name: pcapplusplus
+  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in pcpp::tbp_my_own_strnlen
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22483
@@ -8,21 +11,18 @@ details: |
   pcpp::tbp_my_own_strnlen
   pcpp::HeaderField::HeaderField
   pcpp::TextBasedProtocolMessage::parseFields
-modified: '2021-06-23T06:28:21.539387Z'
-published: '2020-07-22T21:49:51.614814Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22483
-affected:
-- package:
-    name: pcapplusplus
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/seladb/PcapPlusPlus
-    events:
-    - introduced: 4366d2f86bf105025765a0ce3db6e647ba0f3508
-    - fixed: af9c97f1356654fc896a30194330f38e6b613d08
-  ecosystem_specific:
-    severity: MEDIUM
-    introduced_range: unknown:4366d2f86bf105025765a0ce3db6e647ba0f3508
+    introduced: 4366d2f86bf105025765a0ce3db6e647ba0f3508
+    fixed: af9c97f1356654fc896a30194330f38e6b613d08
+modified: '2021-06-23T06:28:21.539387Z'
+published: '2020-07-22T21:49:51.614814Z'
+ecosystem_specific:
+  severity: MEDIUM
+database_specific:
+  introduced_range: unknown:4366d2f86bf105025765a0ce3db6e647ba0f3508
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22483

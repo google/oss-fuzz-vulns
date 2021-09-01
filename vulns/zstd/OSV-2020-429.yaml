@@ -1,4 +1,7 @@
 id: OSV-2020-429
+package:
+  name: zstd
+  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in MEM_read32
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14368
@@ -8,20 +11,16 @@ details: |
   MEM_read32
   ZSTDv05_decodeSequence
   ZSTDv05_decompressSequences
-modified: '2021-06-21T06:56:19.407398Z'
-published: '2020-07-01T00:00:08.999234Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14368
-affected:
-- package:
-    name: zstd
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/facebook/zstd
-    events:
-    - introduced: 610a81ecf9593893ed2f69718d3ecbd234297804
-    - fixed: 0fd322f812211e653a83492c0c114b933f8b6bc5
-  ecosystem_specific:
-    severity: MEDIUM
+    introduced: 610a81ecf9593893ed2f69718d3ecbd234297804
+    fixed: 0fd322f812211e653a83492c0c114b933f8b6bc5
+modified: '2021-06-21T06:56:19.407398Z'
+published: '2020-07-01T00:00:08.999234Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14368

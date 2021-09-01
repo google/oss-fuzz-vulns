@@ -1,4 +1,7 @@
 id: OSV-2021-586
+package:
+  name: kimageformats
+  ecosystem: OSS-Fuzz
 summary: Use-of-uninitialized-value in void intra_prediction_angular<unsigned short>
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=32682
@@ -8,20 +11,11 @@ details: |
   void intra_prediction_angular<unsigned short>
   void decode_intra_prediction_internal<unsigned short>
   decode_intra_prediction
-modified: '2021-08-15T00:04:05.456124Z'
-published: '2021-03-31T00:01:03.787831Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=32682
-affected:
-- package:
-    name: kimageformats
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://invent.kde.org/frameworks/kimageformats.git
-    events:
-    - introduced: ca52d4ddf540cc731d0f31dbccc1897f7e6d9db4
+    introduced: ca52d4ddf540cc731d0f31dbccc1897f7e6d9db4
   versions:
   - v5.80.0
   - v5.80.0-rc1
@@ -34,5 +28,10 @@ affected:
   - v5.84.0-rc1
   - v5.85.0-rc1
   - v5.85.0
-  ecosystem_specific:
-    severity: MEDIUM
+modified: '2021-08-15T00:04:05.456124Z'
+published: '2021-03-31T00:01:03.787831Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=32682

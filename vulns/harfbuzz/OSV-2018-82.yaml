@@ -1,4 +1,7 @@
 id: OSV-2018-82
+package:
+  name: harfbuzz
+  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in OT::LigatureSubstFormat1::closure
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=10081
@@ -8,20 +11,16 @@ details: |
   OT::LigatureSubstFormat1::closure
   _hb_void_t const* OT::hb_closure_context_t::dispatch<OT::LigatureSubstFormat1>
   OT::hb_closure_context_t::return_t OT::LigatureSubst::dispatch<OT::hb_closure_co
-modified: '2021-06-21T06:56:20.590816Z'
-published: '2021-01-13T00:00:38.893481Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=10081
-affected:
-- package:
-    name: harfbuzz
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/harfbuzz/harfbuzz.git
-    events:
-    - introduced: acce1fa3ea9707d0883cd66397fd187d3268905c
-    - fixed: 2dde6c803a9e50c5bff74095187b0cb2e12eebdd
-  ecosystem_specific:
-    severity: MEDIUM
+    introduced: acce1fa3ea9707d0883cd66397fd187d3268905c
+    fixed: 2dde6c803a9e50c5bff74095187b0cb2e12eebdd
+modified: '2021-06-21T06:56:20.590816Z'
+published: '2021-01-13T00:00:38.893481Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=10081

@@ -1,4 +1,7 @@
 id: OSV-2020-176
+package:
+  name: harfbuzz
+  ecosystem: OSS-Fuzz
 summary: UNKNOWN READ in OT::SBIXGlyph::copy
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20223
@@ -8,20 +11,16 @@ details: |
   OT::SBIXGlyph::copy
   OT::SBIXStrike::subset
   OT::sbix::add_strike
-modified: '2021-06-21T06:56:20.626966Z'
-published: '2020-06-24T01:51:17.508470Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20223
-affected:
-- package:
-    name: harfbuzz
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/harfbuzz/harfbuzz.git
-    events:
-    - introduced: 93376a64362a0d062aa3f9f39bfe0d7b4328a92e
-    - fixed: 8614a30bc9763ba7f8b452df5527d806bacf4fd9
-  ecosystem_specific:
-    severity: MEDIUM
+    introduced: 93376a64362a0d062aa3f9f39bfe0d7b4328a92e
+    fixed: 8614a30bc9763ba7f8b452df5527d806bacf4fd9
+modified: '2021-06-21T06:56:20.626966Z'
+published: '2020-06-24T01:51:17.508470Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20223

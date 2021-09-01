@@ -1,4 +1,7 @@
 id: OSV-2020-146
+package:
+  name: jsoncpp
+  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in Json::OurReader::parse
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21916
@@ -8,28 +11,22 @@ details: |
   Json::OurReader::parse
   Json::OurCharReader::parse
   fuzz.cpp
-modified: '2021-06-21T06:56:23.251430Z'
-published: '2020-06-24T01:51:16.175015Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21916
-affected:
-- package:
-    name: jsoncpp
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/open-source-parsers/jsoncpp
-    events:
-    - introduced: 83946a28db3d13ffe8184bdae23287a81c09fd7f
-    - fixed: 6aba23f4a8628d599a9ef7fa4811c4ff6e4070e2
+    introduced: 83946a28db3d13ffe8184bdae23287a81c09fd7f
+    fixed: 6aba23f4a8628d599a9ef7fa4811c4ff6e4070e2
   - type: GIT
     repo: https://github.com/open-source-parsers/jsoncpp
-    events:
-    - introduced: 83946a28db3d13ffe8184bdae23287a81c09fd7f
-    - fixed: 6aba23f4a8628d599a9ef7fa4811c4ff6e4070e2
-    - fixed: 3228be44b0b33a1f14fb343bb5b653a8a33d611a
+    introduced: 83946a28db3d13ffe8184bdae23287a81c09fd7f
+    fixed: 3228be44b0b33a1f14fb343bb5b653a8a33d611a
   versions:
   - 00.11.0
-  ecosystem_specific:
-    severity: MEDIUM
+modified: '2021-06-21T06:56:23.251430Z'
+published: '2020-06-24T01:51:16.175015Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21916

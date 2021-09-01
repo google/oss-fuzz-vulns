@@ -1,4 +1,7 @@
 id: OSV-2020-600
+package:
+  name: curl
+  ecosystem: OSS-Fuzz
 summary: Use-of-uninitialized-value in dprintf_formatf
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=16699
@@ -8,20 +11,16 @@ details: |
   dprintf_formatf
   curl_mvsnprintf
   curl_msnprintf
-modified: '2021-06-21T06:56:28.063401Z'
-published: '2020-07-01T00:00:19.594728Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=16699
-affected:
-- package:
-    name: curl
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/curl/curl.git
-    events:
-    - introduced: 0a5d28fa2ec872de55c8d3f3b62675f17ca9cd45
-    - fixed: 84ced9389e1a7f576812e0675b37056331c4dbcd
-  ecosystem_specific:
-    severity: MEDIUM
+    introduced: 0a5d28fa2ec872de55c8d3f3b62675f17ca9cd45
+    fixed: 84ced9389e1a7f576812e0675b37056331c4dbcd
+modified: '2021-06-21T06:56:28.063401Z'
+published: '2020-07-01T00:00:19.594728Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=16699

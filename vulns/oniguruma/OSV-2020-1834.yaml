@@ -1,4 +1,7 @@
 id: OSV-2020-1834
+package:
+  name: oniguruma
+  ecosystem: OSS-Fuzz
 summary: Stack-buffer-overflow in onigenc_unicode_get_case_fold_codes_by_str
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25893
@@ -8,21 +11,18 @@ details: |
   onigenc_unicode_get_case_fold_codes_by_str
   utf16be_get_case_fold_codes_by_str
   unravel_case_fold_string
-modified: '2021-06-23T06:29:45.552753Z'
-published: '2020-09-25T00:00:07.959427Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25893
-affected:
-- package:
-    name: oniguruma
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/kkos/oniguruma.git
-    events:
-    - introduced: 864c1d8c76575057fef22abd7e44d8bf3fc27dca
-    - fixed: a4aaa67878509ea8296ef349bcfe98da48bc5457
-  ecosystem_specific:
-    severity: HIGH
-    introduced_range: cdff3c762abc4c1aedfe9900b65698cd08d6959b:14f5efb82321e26502caa2df3c58aa1c2d36c801
+    introduced: 864c1d8c76575057fef22abd7e44d8bf3fc27dca
+    fixed: a4aaa67878509ea8296ef349bcfe98da48bc5457
+modified: '2021-06-23T06:29:45.552753Z'
+published: '2020-09-25T00:00:07.959427Z'
+ecosystem_specific:
+  severity: HIGH
+database_specific:
+  introduced_range: cdff3c762abc4c1aedfe9900b65698cd08d6959b:14f5efb82321e26502caa2df3c58aa1c2d36c801
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25893

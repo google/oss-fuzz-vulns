@@ -1,4 +1,7 @@
 id: OSV-2020-494
+package:
+  name: open62541
+  ecosystem: OSS-Fuzz
 summary: Use-of-uninitialized-value in Variant_decodeJson
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14620
@@ -8,21 +11,12 @@ details: |
   Variant_decodeJson
   UA_decodeJson
   fuzz_json_decode.cc
-modified: '2021-06-21T06:56:26.884501Z'
-published: '2020-07-01T00:00:12.896994Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14620
-affected:
-- package:
-    name: open62541
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/open62541/open62541.git
-    events:
-    - introduced: 58a2fdb5b1ad1efafef455d66a9cbfb93c3fae9d
-    - fixed: cc7d2558ff2f63859ee1301b5d07b8b110f6cd6e
+    introduced: 58a2fdb5b1ad1efafef455d66a9cbfb93c3fae9d
+    fixed: cc7d2558ff2f63859ee1301b5d07b8b110f6cd6e
   versions:
   - v1.0
   - v1.0-dev
@@ -32,5 +26,10 @@ affected:
   - v1.0-rc4
   - v1.0-rc5
   - v1.1-dev
-  ecosystem_specific:
-    severity: MEDIUM
+modified: '2021-06-21T06:56:26.884501Z'
+published: '2020-07-01T00:00:12.896994Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14620

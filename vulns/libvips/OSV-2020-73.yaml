@@ -1,4 +1,7 @@
 id: OSV-2020-73
+package:
+  name: libvips
+  ecosystem: OSS-Fuzz
 summary: UNKNOWN WRITE in vips_foreign_load_gif_render
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20613
@@ -8,20 +11,16 @@ details: |
   vips_foreign_load_gif_render
   vips_foreign_load_gif_next_page
   vips_foreign_load_gif_generate
-modified: '2021-06-21T06:56:24.220388Z'
-published: '2020-06-24T01:51:12.855986Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20613
-affected:
-- package:
-    name: libvips
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/libvips/libvips
-    events:
-    - introduced: f88dab9ccdecd1948239fffbd86629db247e5c05
-    - fixed: 3ad3c30ab4f3791e438558e4a9cf5481da2f1156
-  ecosystem_specific:
-    severity: HIGH
+    introduced: f88dab9ccdecd1948239fffbd86629db247e5c05
+    fixed: 3ad3c30ab4f3791e438558e4a9cf5481da2f1156
+modified: '2021-06-21T06:56:24.220388Z'
+published: '2020-06-24T01:51:12.855986Z'
+ecosystem_specific:
+  severity: HIGH
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20613

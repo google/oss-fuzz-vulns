@@ -1,4 +1,7 @@
 id: OSV-2021-642
+package:
+  name: wasm3
+  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in op_Const64
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=33318
@@ -8,20 +11,16 @@ details: |
   op_Const64
   EvaluateExpression
   InitElements
-modified: '2021-06-21T06:56:18.568894Z'
-published: '2021-04-17T00:00:10.657238Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=33318
-affected:
-- package:
-    name: wasm3
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/wasm3/wasm3
-    events:
-    - introduced: 64a22dcdc3e4239cb91b153d25c8b5bb2fac430e
-    - fixed: b48695bb940e55c0baa0a3d5740cf48e03643b58
-  ecosystem_specific:
-    severity: HIGH
+    introduced: 64a22dcdc3e4239cb91b153d25c8b5bb2fac430e
+    fixed: b48695bb940e55c0baa0a3d5740cf48e03643b58
+modified: '2021-06-21T06:56:18.568894Z'
+published: '2021-04-17T00:00:10.657238Z'
+ecosystem_specific:
+  severity: HIGH
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=33318

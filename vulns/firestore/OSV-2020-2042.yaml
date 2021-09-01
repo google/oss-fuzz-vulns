@@ -1,4 +1,7 @@
 id: OSV-2020-2042
+package:
+  name: firestore
+  ecosystem: OSS-Fuzz
 summary: UNKNOWN WRITE in pb_release_single_field
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22329
@@ -8,20 +11,11 @@ details: |
   pb_release_single_field
   pb_release
   pb_decode
-modified: '2021-06-21T06:56:21.260775Z'
-published: '2020-10-13T00:00:28.349821Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22329
-affected:
-- package:
-    name: firestore
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/firebase/firebase-ios-sdk.git
-    events:
-    - introduced: 819091b289b48ac111008f0950853fd7bb54a521
+    introduced: 819091b289b48ac111008f0950853fd7bb54a521
   versions:
   - 6.26.0
   - 7.0.0
@@ -219,5 +213,10 @@ affected:
   - nightly-test-7.9
   - v7.3.2-fireperf-mock
   - 7.9.1
-  ecosystem_specific:
-    severity: HIGH
+modified: '2021-06-21T06:56:21.260775Z'
+published: '2020-10-13T00:00:28.349821Z'
+ecosystem_specific:
+  severity: HIGH
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22329

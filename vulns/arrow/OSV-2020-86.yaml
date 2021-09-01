@@ -1,4 +1,7 @@
 id: OSV-2020-86
+package:
+  name: arrow
+  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in bool arrow::util::RleDecoder::NextCounts<int>
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20735
@@ -8,20 +11,16 @@ details: |
   bool arrow::util::RleDecoder::NextCounts<int>
   parquet::DictByteArrayDecoderImpl::DecodeArrowDense
   parquet::DictByteArrayDecoderImpl::DecodeArrow
-modified: '2021-06-21T06:56:19.692334Z'
-published: '2020-06-24T01:51:13.440194Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20735
-affected:
-- package:
-    name: arrow
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/apache/arrow.git
-    events:
-    - introduced: 431fdbfbc0fb4bb16c4a89298404ad16784db2a0
-    - fixed: d2ab289294f5eaa175e6bc4ab5fb74b5ea013f6e
-  ecosystem_specific:
-    severity: HIGH
+    introduced: 431fdbfbc0fb4bb16c4a89298404ad16784db2a0
+    fixed: d2ab289294f5eaa175e6bc4ab5fb74b5ea013f6e
+modified: '2021-06-21T06:56:19.692334Z'
+published: '2020-06-24T01:51:13.440194Z'
+ecosystem_specific:
+  severity: HIGH
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20735

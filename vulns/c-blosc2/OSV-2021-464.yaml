@@ -1,4 +1,7 @@
 id: OSV-2021-464
+package:
+  name: c-blosc2
+  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in blosc_read_header
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31535
@@ -8,20 +11,16 @@ details: |
   blosc_read_header
   blosc2_cbuffer_sizes
   frame_get_lazychunk
-modified: '2021-06-21T06:56:25.943126Z'
-published: '2021-03-01T00:01:15.739563Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31535
-affected:
-- package:
-    name: c-blosc2
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/Blosc/c-blosc2.git
-    events:
-    - introduced: 5d06b75a46ebc8ced68b2c5c11cd771aac0a4270
-    - fixed: 4f6d42ab4b25e781dad94c5324dab8a4dbb702ad
-  ecosystem_specific:
-    severity: MEDIUM
+    introduced: 5d06b75a46ebc8ced68b2c5c11cd771aac0a4270
+    fixed: 4f6d42ab4b25e781dad94c5324dab8a4dbb702ad
+modified: '2021-06-21T06:56:25.943126Z'
+published: '2021-03-01T00:01:15.739563Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31535

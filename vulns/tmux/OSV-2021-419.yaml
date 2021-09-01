@@ -1,4 +1,7 @@
 id: OSV-2021-419
+package:
+  name: tmux
+  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in input_osc_parse_colour
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31106
@@ -8,20 +11,16 @@ details: |
   input_osc_parse_colour
   input_osc_11
   input_exit_osc
-modified: '2021-06-21T06:56:21.339607Z'
-published: '2021-02-19T00:02:48.073974Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31106
-affected:
-- package:
-    name: tmux
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/tmux/tmux.git
-    events:
-    - introduced: ce5de765929ea38b68e3fd6c26e554ab0c1e09b1
-    - fixed: 11e404ca3c80893f59b1001f000c9390216c7e7a
-  ecosystem_specific:
-    severity: MEDIUM
+    introduced: ce5de765929ea38b68e3fd6c26e554ab0c1e09b1
+    fixed: 11e404ca3c80893f59b1001f000c9390216c7e7a
+modified: '2021-06-21T06:56:21.339607Z'
+published: '2021-02-19T00:02:48.073974Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31106

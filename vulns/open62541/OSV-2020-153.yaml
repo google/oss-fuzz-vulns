@@ -1,4 +1,7 @@
 id: OSV-2020-153
+package:
+  name: open62541
+  ecosystem: OSS-Fuzz
 summary: UNKNOWN WRITE in Variant_encodeJson
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20578
@@ -8,21 +11,12 @@ details: |
   Variant_encodeJson
   Variant_encodeJson
   Variant_encodeJson
-modified: '2021-06-21T06:56:26.779286Z'
-published: '2020-06-24T01:51:16.477749Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20578
-affected:
-- package:
-    name: open62541
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/open62541/open62541.git
-    events:
-    - introduced: d595367366bd97b19fd9f1d4f28acf689d20a36a
-    - fixed: c800e2987b10bb3af6ef644b515b5d6392f8861d
+    introduced: d595367366bd97b19fd9f1d4f28acf689d20a36a
+    fixed: c800e2987b10bb3af6ef644b515b5d6392f8861d
   versions:
   - v1.0
   - v1.0.1
@@ -31,5 +25,10 @@ affected:
   - v1.0.5
   - v1.0.6
   - v1.1-rc1
-  ecosystem_specific:
-    severity: HIGH
+modified: '2021-06-21T06:56:26.779286Z'
+published: '2020-06-24T01:51:16.477749Z'
+ecosystem_specific:
+  severity: HIGH
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20578

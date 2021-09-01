@@ -1,4 +1,7 @@
 id: OSV-2021-562
+package:
+  name: w3m
+  ecosystem: OSS-Fuzz
 summary: Segv on unknown address in GC_generic_malloc_many
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=32453
@@ -8,20 +11,16 @@ details: |
   GC_generic_malloc_many
   GC_malloc_atomic
   Strnew_size
-modified: '2021-06-21T06:56:27.243114Z'
-published: '2021-03-26T00:00:11.571998Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=32453
-affected:
-- package:
-    name: w3m
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/tats/w3m
-    events:
-    - introduced: d9d9d7b278c9efbcf138bc45dccf06a216a1b69a
-    - fixed: 5a1059b6f3ab031afa48c5ddcd81392444de53a9
-  ecosystem_specific:
-    severity: MEDIUM
+    introduced: d9d9d7b278c9efbcf138bc45dccf06a216a1b69a
+    fixed: 5a1059b6f3ab031afa48c5ddcd81392444de53a9
+modified: '2021-06-21T06:56:27.243114Z'
+published: '2021-03-26T00:00:11.571998Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=32453

@@ -1,4 +1,7 @@
 id: OSV-2020-1848
+package:
+  name: opensc
+  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in sc_oberthur_parse_publicinfo
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25943
@@ -8,20 +11,16 @@ details: |
   sc_oberthur_parse_publicinfo
   sc_pkcs15emu_oberthur_init
   sc_pkcs15emu_oberthur_init_ex
-modified: '2021-06-21T06:56:27.177627Z'
-published: '2020-09-26T00:00:10.945991Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25943
-affected:
-- package:
-    name: opensc
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/OpenSC/OpenSC
-    events:
-    - introduced: 6903aebfddc466d966c7b865fae34572bf3ed23e
-    - fixed: 3ff059a74bcd10ead9a92cc67e5c8c006996e940
-  ecosystem_specific:
-    severity: MEDIUM
+    introduced: 6903aebfddc466d966c7b865fae34572bf3ed23e
+    fixed: 3ff059a74bcd10ead9a92cc67e5c8c006996e940
+modified: '2021-06-21T06:56:27.177627Z'
+published: '2020-09-26T00:00:10.945991Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25943

@@ -1,4 +1,7 @@
 id: OSV-2020-2273
+package:
+  name: perfetto
+  ecosystem: OSS-Fuzz
 summary: Stack-buffer-overflow in perfetto::trace_processor::MemoryTrackerSnapshotParser::EmitRows
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=28766
@@ -8,22 +11,18 @@ details: |
   perfetto::trace_processor::MemoryTrackerSnapshotParser::EmitRows
   perfetto::trace_processor::MemoryTrackerSnapshotParser::GenerateGraphFromRawNode
   perfetto::trace_processor::MemoryTrackerSnapshotParser::NotifyEndOfFile
-modified: '2021-06-21T06:56:27.377150Z'
-published: '2020-12-19T00:00:21.828942Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=28766
-affected:
-- package:
-    name: perfetto
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://android.googlesource.com/platform/external/perfetto/
-    events:
-    - introduced: f37338cdaa2126eef2a11e1a6f0cb075888c20e6
-    - fixed: 23280234a3ee0ef4b96c11b31d57a9575142f1e4
+    introduced: f37338cdaa2126eef2a11e1a6f0cb075888c20e6
+    fixed: 23280234a3ee0ef4b96c11b31d57a9575142f1e4
   versions:
   - v10.0
-  ecosystem_specific:
-    severity: MEDIUM
+modified: '2021-06-21T06:56:27.377150Z'
+published: '2020-12-19T00:00:21.828942Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=28766

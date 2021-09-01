@@ -1,4 +1,7 @@
 id: OSV-2020-633
+package:
+  name: nestegg
+  ecosystem: OSS-Fuzz
 summary: Global-buffer-overflow in ne_find_element
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15056
@@ -8,18 +11,14 @@ details: |
   ne_find_element
   ne_parse
   nestegg_init
-modified: '2021-03-09T04:49:05.992267Z'
-published: '2020-07-01T00:00:21.552705Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15056
-affected:
-- package:
-    name: nestegg
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/kinetiknz/nestegg.git
-    events:
-    - introduced: 97508e2e9a01f38abdc1910ea754c6ea98d126fa
-    - fixed: 9d5b774db2bb5a982c1438a17ad1bcaf6ea03cbd
+    introduced: 97508e2e9a01f38abdc1910ea754c6ea98d126fa
+    fixed: 9d5b774db2bb5a982c1438a17ad1bcaf6ea03cbd
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15056
+modified: '2021-03-09T04:49:05.992267Z'
+published: '2020-07-01T00:00:21.552705Z'

@@ -1,4 +1,7 @@
 id: OSV-2020-2168
+package:
+  name: matio
+  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in H5D__scatter_mem
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=27625
@@ -8,24 +11,21 @@ details: |
   H5D__scatter_mem
   H5D__scatgath_read
   H5D__contig_read
-modified: '2021-06-23T06:31:47.109859Z'
-published: '2020-11-20T00:00:56.200635Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=27625
-affected:
-- package:
-    name: matio
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: git://git.code.sf.net/p/matio/matio
-    events:
-    - introduced: f94c087aa9be54ec86a01e267b80fd61108069be
-    - fixed: 1ce8f2d1845ecdde19a35605cabdbb884776d52d
+    introduced: f94c087aa9be54ec86a01e267b80fd61108069be
+    fixed: 1ce8f2d1845ecdde19a35605cabdbb884776d52d
   versions:
   - v1.5.18
   - v1.5.19
-  ecosystem_specific:
-    severity: HIGH
-    introduced_range: 7a9958485036ef37b4e88df5cbe32bd7ec4c0d25:6540087e697ca2b8950bada3d4ca653951b467dc
+modified: '2021-06-23T06:31:47.109859Z'
+published: '2020-11-20T00:00:56.200635Z'
+ecosystem_specific:
+  severity: HIGH
+database_specific:
+  introduced_range: 7a9958485036ef37b4e88df5cbe32bd7ec4c0d25:6540087e697ca2b8950bada3d4ca653951b467dc
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=27625

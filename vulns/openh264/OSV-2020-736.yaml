@@ -1,4 +1,7 @@
 id: OSV-2020-736
+package:
+  name: openh264
+  ecosystem: OSS-Fuzz
 summary: Heap-use-after-free in WelsDec::DecreasePicBuff
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14423
@@ -8,22 +11,18 @@ details: |
   WelsDec::DecreasePicBuff
   WelsRequestMem
   SyncPictureResolutionExt
-modified: '2021-06-21T06:56:23.686805Z'
-published: '2020-07-01T00:00:27.634899Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14423
-affected:
-- package:
-    name: openh264
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/cisco/openh264.git
-    events:
-    - introduced: 84b5847d016eb2f77318feef88d930f13b6fab61
-    - fixed: 901b92c7f3a8295a7335f9be447e667a7eec8075
+    introduced: 84b5847d016eb2f77318feef88d930f13b6fab61
+    fixed: 901b92c7f3a8295a7335f9be447e667a7eec8075
   versions:
   - v2.0.0
-  ecosystem_specific:
-    severity: HIGH
+modified: '2021-06-21T06:56:23.686805Z'
+published: '2020-07-01T00:00:27.634899Z'
+ecosystem_specific:
+  severity: HIGH
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14423

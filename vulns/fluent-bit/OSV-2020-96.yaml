@@ -1,4 +1,7 @@
 id: OSV-2020-96
+package:
+  name: fluent-bit
+  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in logfmt_parser
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21953
@@ -8,29 +11,22 @@ details: |
   logfmt_parser
   flb_parser_logfmt_do
   parse_logfmt_fuzzer.c
-modified: '2021-06-21T06:56:24.254835Z'
-published: '2020-06-24T01:51:13.861732Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21953
-affected:
-- package:
-    name: fluent-bit
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/fluent/fluent-bit/
-    events:
-    - introduced: 754c40a5aa372b08b7773fa3c39b2c6aabf667b6
-    - fixed: 418cf03390093f4f50507c4388ef9e4d897724d4
+    introduced: 754c40a5aa372b08b7773fa3c39b2c6aabf667b6
+    fixed: 418cf03390093f4f50507c4388ef9e4d897724d4
   - type: GIT
     repo: https://github.com/fluent/fluent-bit/
-    events:
-    - introduced: 754c40a5aa372b08b7773fa3c39b2c6aabf667b6
-    - fixed: 418cf03390093f4f50507c4388ef9e4d897724d4
-    - introduced: 0a05f222752f0325ff55417745d47d4672c2387e
-    - fixed: b5571d0953cfd323880e7f4fe3c8563fa59ce85e
+    introduced: 0a05f222752f0325ff55417745d47d4672c2387e
+    fixed: b5571d0953cfd323880e7f4fe3c8563fa59ce85e
   versions:
   - v1.4.3
-  ecosystem_specific:
-    severity: MEDIUM
+modified: '2021-06-21T06:56:24.254835Z'
+published: '2020-06-24T01:51:13.861732Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21953

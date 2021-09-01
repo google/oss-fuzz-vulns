@@ -1,4 +1,7 @@
 id: OSV-2020-250
+package:
+  name: libsass
+  ecosystem: OSS-Fuzz
 summary: UNKNOWN READ in Sass::Inspect::operator
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=19988
@@ -8,23 +11,19 @@ details: |
   Sass::Inspect::operator
   Sass::Output::operator
   Sass::Output::operator
-modified: '2021-06-21T06:56:24.516108Z'
-published: '2020-06-26T00:00:10.424929Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=19988
-affected:
-- package:
-    name: libsass
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/sass/libsass.git
-    events:
-    - introduced: f964dcddd76f4c1f00da06bfd905be790618c33b
-    - fixed: e904bce8ac6c8e16fed27b4cc5fe3418be7689a5
+    introduced: f964dcddd76f4c1f00da06bfd905be790618c33b
+    fixed: e904bce8ac6c8e16fed27b4cc5fe3418be7689a5
   versions:
   - 3.6.2
   - 3.6.3
-  ecosystem_specific:
-    severity: MEDIUM
+modified: '2021-06-21T06:56:24.516108Z'
+published: '2020-06-26T00:00:10.424929Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=19988

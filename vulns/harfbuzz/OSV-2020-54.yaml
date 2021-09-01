@@ -1,4 +1,7 @@
 id: OSV-2020-54
+package:
+  name: harfbuzz
+  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in OT::HintingDevice* hb_serialize_context_t::embed<OT::HintingDevice>
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20211
@@ -8,20 +11,16 @@ details: |
   OT::HintingDevice* hb_serialize_context_t::embed<OT::HintingDevice>
   OT::HintingDevice::copy
   OT::Device::copy
-modified: '2021-06-21T06:56:20.464601Z'
-published: '2020-06-24T01:51:11.997638Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20211
-affected:
-- package:
-    name: harfbuzz
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/harfbuzz/harfbuzz.git
-    events:
-    - introduced: c828d7bf76dd039be1775edff1d798dbcc10708b
-    - fixed: 06a1fcb3b47050257f7819eb3d6043cf78ebbac2
-  ecosystem_specific:
-    severity: MEDIUM
+    introduced: c828d7bf76dd039be1775edff1d798dbcc10708b
+    fixed: 06a1fcb3b47050257f7819eb3d6043cf78ebbac2
+modified: '2021-06-21T06:56:20.464601Z'
+published: '2020-06-24T01:51:11.997638Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20211

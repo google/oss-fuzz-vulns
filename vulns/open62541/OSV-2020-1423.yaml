@@ -1,4 +1,7 @@
 id: OSV-2020-1423
+package:
+  name: open62541
+  ecosystem: OSS-Fuzz
 summary: Use-of-uninitialized-value in txt2sd
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22219
@@ -8,25 +11,14 @@ details: |
   txt2sd
   fuzz_mdns_xht.cc
   txt2sd
-modified: '2021-06-29T00:03:56.228997Z'
-published: '2020-07-28T00:00:16.191970Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22219
-affected:
-- package:
-    name: open62541
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/open62541/open62541.git
-    events:
-    - introduced: 2919785d72474ed553317c4f3bafadf3e8c027f2
+    introduced: 2919785d72474ed553317c4f3bafadf3e8c027f2
   - type: GIT
     repo: https://github.com/open62541/open62541.git
-    events:
-    - introduced: 2919785d72474ed553317c4f3bafadf3e8c027f2
-    - introduced: 798210374ad7a5fd43b31fc3c178a34a3ac21a0c
+    introduced: 798210374ad7a5fd43b31fc3c178a34a3ac21a0c
   versions:
   - v1.1
   - v1.1.1
@@ -45,5 +37,10 @@ affected:
   - v1.0.1
   - v1.0.2
   - v1.0.3
-  ecosystem_specific:
-    severity: MEDIUM
+modified: '2021-06-29T00:03:56.228997Z'
+published: '2020-07-28T00:00:16.191970Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22219

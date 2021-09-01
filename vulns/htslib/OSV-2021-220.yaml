@@ -1,4 +1,7 @@
 id: OSV-2021-220
+package:
+  name: htslib
+  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in rans_uncompress_to_4x16
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29795
@@ -8,20 +11,16 @@ details: |
   rans_uncompress_to_4x16
   rans_uncompress_4x16
   cram_uncompress_block
-modified: '2021-06-21T06:56:19.964306Z'
-published: '2021-01-23T00:00:03.732785Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29795
-affected:
-- package:
-    name: htslib
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/samtools/htslib.git
-    events:
-    - introduced: 0d1971cbebb269d90a563464e4f56987290e20ab
-    - fixed: a01a139ac1fa365a688ec8734d62ef859a8bc416
-  ecosystem_specific:
-    severity: MEDIUM
+    introduced: 0d1971cbebb269d90a563464e4f56987290e20ab
+    fixed: a01a139ac1fa365a688ec8734d62ef859a8bc416
+modified: '2021-06-21T06:56:19.964306Z'
+published: '2021-01-23T00:00:03.732785Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29795

@@ -1,4 +1,7 @@
 id: OSV-2020-1233
+package:
+  name: ndpi
+  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in getTLScertificate
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=19269
@@ -8,21 +11,18 @@ details: |
   getTLScertificate
   tlsDetectProtocolFromCertificate
   ndpi_search_tls_tcp_udp
-modified: '2021-06-23T06:26:05.324696Z'
-published: '2020-07-22T21:49:58.860561Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=19269
-affected:
-- package:
-    name: ndpi
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/ntop/nDPI.git
-    events:
-    - introduced: e695dd6eade754b2d50bdf297ca8bdc4105f93ff
-    - fixed: 6d7f3976f33b0d4fbbece60d6b7d549b13107674
-  ecosystem_specific:
-    introduced_range: unknown:e695dd6eade754b2d50bdf297ca8bdc4105f93ff
-    severity: MEDIUM
+    introduced: e695dd6eade754b2d50bdf297ca8bdc4105f93ff
+    fixed: 6d7f3976f33b0d4fbbece60d6b7d549b13107674
+modified: '2021-06-23T06:26:05.324696Z'
+published: '2020-07-22T21:49:58.860561Z'
+ecosystem_specific:
+  severity: MEDIUM
+database_specific:
+  introduced_range: unknown:e695dd6eade754b2d50bdf297ca8bdc4105f93ff
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=19269

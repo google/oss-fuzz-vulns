@@ -1,4 +1,7 @@
 id: OSV-2020-1280
+package:
+  name: file
+  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in cdf_read_property_info
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=16780
@@ -8,21 +11,18 @@ details: |
   cdf_read_property_info
   cdf_unpack_summary_info
   cdf_file_summary_info
-modified: '2021-06-23T06:24:48.135899Z'
-published: '2020-07-22T21:50:02.720163Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=16780
-affected:
-- package:
-    name: file
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/file/file.git
-    events:
-    - introduced: 07d847a8d4c440da564fbef4992bca2531fe676f
-    - fixed: 46a8443f76cec4b41ec736eca396984c74664f84
-  ecosystem_specific:
-    introduced_range: unknown:07d847a8d4c440da564fbef4992bca2531fe676f
-    severity: HIGH
+    introduced: 07d847a8d4c440da564fbef4992bca2531fe676f
+    fixed: 46a8443f76cec4b41ec736eca396984c74664f84
+modified: '2021-06-23T06:24:48.135899Z'
+published: '2020-07-22T21:50:02.720163Z'
+ecosystem_specific:
+  severity: HIGH
+database_specific:
+  introduced_range: unknown:07d847a8d4c440da564fbef4992bca2531fe676f
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=16780

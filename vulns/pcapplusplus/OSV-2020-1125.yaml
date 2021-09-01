@@ -1,4 +1,7 @@
 id: OSV-2020-1125
+package:
+  name: pcapplusplus
+  ecosystem: OSS-Fuzz
 summary: Use-of-uninitialized-value in pcpp::IDnsResource::decodeName
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22451
@@ -8,21 +11,18 @@ details: |
   pcpp::IDnsResource::decodeName
   pcpp::IDnsResource::IDnsResource
   pcpp::DnsQuery::DnsQuery
-modified: '2021-06-23T06:28:21.835926Z'
-published: '2020-07-22T21:49:49.025252Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22451
-affected:
-- package:
-    name: pcapplusplus
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/seladb/PcapPlusPlus
-    events:
-    - introduced: 4366d2f86bf105025765a0ce3db6e647ba0f3508
-    - fixed: 994419f1bcb9151553ad8044e1757a6d406deea3
-  ecosystem_specific:
-    severity: MEDIUM
-    introduced_range: unknown:4366d2f86bf105025765a0ce3db6e647ba0f3508
+    introduced: 4366d2f86bf105025765a0ce3db6e647ba0f3508
+    fixed: 994419f1bcb9151553ad8044e1757a6d406deea3
+modified: '2021-06-23T06:28:21.835926Z'
+published: '2020-07-22T21:49:49.025252Z'
+ecosystem_specific:
+  severity: MEDIUM
+database_specific:
+  introduced_range: unknown:4366d2f86bf105025765a0ce3db6e647ba0f3508
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22451

@@ -1,4 +1,7 @@
 id: OSV-2020-462
+package:
+  name: lwan
+  ecosystem: OSS-Fuzz
 summary: Global-buffer-overflow in strsep_char
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14509
@@ -8,18 +11,14 @@ details: |
   strsep_char
   parse_proxy_protocol_v1
   parse_http_request
-modified: '2021-03-09T04:49:05.902146Z'
-published: '2020-07-01T00:00:10.876736Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14509
-affected:
-- package:
-    name: lwan
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: git://github.com/lpereira/lwan
-    events:
-    - introduced: 7220bbf47f668fc600824b513afd207097fa6b68
-    - fixed: 6be9574a2d80457a5bfc16b23b67905d8f68e827
+    introduced: 7220bbf47f668fc600824b513afd207097fa6b68
+    fixed: 6be9574a2d80457a5bfc16b23b67905d8f68e827
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14509
+modified: '2021-03-09T04:49:05.902146Z'
+published: '2020-07-01T00:00:10.876736Z'

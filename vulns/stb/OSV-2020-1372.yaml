@@ -1,4 +1,7 @@
 id: OSV-2020-1372
+package:
+  name: stb
+  ecosystem: OSS-Fuzz
 summary: Index-out-of-bounds in stbi__build_huffman
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22584
@@ -8,19 +11,15 @@ details: |
   stbi__build_huffman
   stbi__process_marker
   stbi__decode_jpeg_header
-modified: '2021-06-21T06:56:26.419442Z'
-published: '2020-07-28T00:00:04.120846Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22584
-affected:
-- package:
-    name: stb
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/nothings/stb.git
-    events:
-    - introduced: f54acd4e13430c5122cab4ca657705c84aa61b08
-  ecosystem_specific:
-    severity: MEDIUM
+    introduced: f54acd4e13430c5122cab4ca657705c84aa61b08
+modified: '2021-06-21T06:56:26.419442Z'
+published: '2020-07-28T00:00:04.120846Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22584

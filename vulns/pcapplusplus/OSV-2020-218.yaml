@@ -1,4 +1,7 @@
 id: OSV-2020-218
+package:
+  name: pcapplusplus
+  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in __libcpp_strstr
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23145
@@ -8,21 +11,18 @@ details: |
   __libcpp_strstr
   strstr
   pcpp::SipRequestFirstLine::parseVersion
-modified: '2021-06-23T06:28:21.525486Z'
-published: '2020-06-24T01:51:19.441010Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23145
-affected:
-- package:
-    name: pcapplusplus
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/seladb/PcapPlusPlus
-    events:
-    - introduced: aeaa2e1cd094ff2083517bf4c987dc3a1380ec71
-    - fixed: 80adbb255c24e278425cb66878e7209258abb2b0
-  ecosystem_specific:
-    severity: MEDIUM
-    introduced_range: 016e90f193d4383b94143d0b2be26408cc32c703:5ef0c6da8c34b5d4155f865e94bdf83cb18fcbad
+    introduced: aeaa2e1cd094ff2083517bf4c987dc3a1380ec71
+    fixed: 80adbb255c24e278425cb66878e7209258abb2b0
+modified: '2021-06-23T06:28:21.525486Z'
+published: '2020-06-24T01:51:19.441010Z'
+ecosystem_specific:
+  severity: MEDIUM
+database_specific:
+  introduced_range: 016e90f193d4383b94143d0b2be26408cc32c703:5ef0c6da8c34b5d4155f865e94bdf83cb18fcbad
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23145

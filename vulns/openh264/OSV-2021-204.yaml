@@ -1,4 +1,7 @@
 id: OSV-2021-204
+package:
+  name: openh264
+  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in WelsDec::NeedErrorCon
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29604
@@ -8,20 +11,16 @@ details: |
   WelsDec::NeedErrorCon
   WelsDec::CheckAndFinishLastPic
   WelsDecodeBs
-modified: '2021-06-21T06:56:23.643607Z'
-published: '2021-01-16T00:00:32.109463Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29604
-affected:
-- package:
-    name: openh264
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/cisco/openh264.git
-    events:
-    - introduced: 66ef706acd55b0b8daec32ca299d2586a1f473c9
-    - fixed: b52786888ddce9d6bc06b7825ba9bffc65924e0c
-  ecosystem_specific:
-    severity: HIGH
+    introduced: 66ef706acd55b0b8daec32ca299d2586a1f473c9
+    fixed: b52786888ddce9d6bc06b7825ba9bffc65924e0c
+modified: '2021-06-21T06:56:23.643607Z'
+published: '2021-01-16T00:00:32.109463Z'
+ecosystem_specific:
+  severity: HIGH
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29604

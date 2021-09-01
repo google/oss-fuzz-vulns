@@ -1,4 +1,7 @@
 id: OSV-2021-688
+package:
+  name: wasm3
+  ecosystem: OSS-Fuzz
 summary: Segv on unknown address in std::__Fuzzer::basic_string<char, std::__Fuzzer::char_traits<char>,
   std::__Fuzze
 details: |
@@ -8,18 +11,14 @@ details: |
   Crash state:
   std::__Fuzzer::basic_string<char, std::__Fuzzer::char_traits<char>, std::__Fuzze
   std::__Fuzzer::moneypunct_byname<char, true>::init
+affects:
+  ranges:
+  - type: GIT
+    repo: https://github.com/wasm3/wasm3
+    introduced: 0d76b81c4b109272b2d98c91cb3776c8aa36befd
+    fixed: 6bb612ccbfd5f8993a07a99092fab534722df1c3
 modified: '2021-04-27T00:01:02.966454Z'
 published: '2021-04-27T00:01:02.966143Z'
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=33682
-affected:
-- package:
-    name: wasm3
-    ecosystem: OSS-Fuzz
-  ranges:
-  - type: GIT
-    repo: https://github.com/wasm3/wasm3
-    events:
-    - introduced: 0d76b81c4b109272b2d98c91cb3776c8aa36befd
-    - fixed: 6bb612ccbfd5f8993a07a99092fab534722df1c3

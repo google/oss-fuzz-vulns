@@ -1,4 +1,7 @@
 id: OSV-2020-1730
+package:
+  name: rdkit
+  ecosystem: OSS-Fuzz
 summary: Bad-cast to RDKit::Atom
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25547
@@ -6,21 +9,12 @@ details: |
   Crash type: Bad-cast
   Crash state:
   Bad-cast to RDKit::Atom
-modified: '2021-06-23T06:57:07.669660Z'
-published: '2020-09-11T00:00:51.334144Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25547
-affected:
-- package:
-    name: rdkit
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/rdkit/rdkit.git
-    events:
-    - introduced: a9010da8a4af17479c706f2cf4e8c6acdc1585ce
-    - fixed: 759b7a4b603c8a3c4bbb8bc31594bbab501094e3
+    introduced: a9010da8a4af17479c706f2cf4e8c6acdc1585ce
+    fixed: 759b7a4b603c8a3c4bbb8bc31594bbab501094e3
   versions:
   - Release_2020_09_1
   - Release_2020_09_1b1
@@ -28,6 +22,12 @@ affected:
   - Release_2020_09_3
   - Release_2020_09_4
   - Release_2020_09_5
-  ecosystem_specific:
-    severity: HIGH
-    fixed_range: b1fd950eb240baf1b6337dc25bc99f80359fe4d7:759b7a4b603c8a3c4bbb8bc31594bbab501094e3
+modified: '2021-06-23T06:57:07.669660Z'
+published: '2020-09-11T00:00:51.334144Z'
+ecosystem_specific:
+  severity: HIGH
+database_specific:
+  fixed_range: b1fd950eb240baf1b6337dc25bc99f80359fe4d7:759b7a4b603c8a3c4bbb8bc31594bbab501094e3
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25547

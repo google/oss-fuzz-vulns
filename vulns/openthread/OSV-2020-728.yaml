@@ -1,4 +1,7 @@
 id: OSV-2020-728
+package:
+  name: openthread
+  ecosystem: OSS-Fuzz
 summary: Stack-buffer-overflow in ot::Ip6::OptionPadN::Init
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14854
@@ -8,20 +11,16 @@ details: |
   ot::Ip6::OptionPadN::Init
   ot::Ip6::Ip6::RemoveMplOption
   ot::Ip6::Ip6::ProcessReceiveCallback
-modified: '2021-06-21T06:56:25.195553Z'
-published: '2020-07-01T00:00:26.997848Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14854
-affected:
-- package:
-    name: openthread
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/openthread/openthread
-    events:
-    - introduced: b7b085c9f97ee2d9f16415249ccdcc9f28663fb8
-    - fixed: bcfa791912dd7bd3dd7432f9f6313b6dd5ca358b
-  ecosystem_specific:
-    severity: HIGH
+    introduced: b7b085c9f97ee2d9f16415249ccdcc9f28663fb8
+    fixed: bcfa791912dd7bd3dd7432f9f6313b6dd5ca358b
+modified: '2021-06-21T06:56:25.195553Z'
+published: '2020-07-01T00:00:26.997848Z'
+ecosystem_specific:
+  severity: HIGH
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14854

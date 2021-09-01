@@ -1,4 +1,7 @@
 id: OSV-2020-2081
+package:
+  name: mruby
+  ecosystem: OSS-Fuzz
 summary: UNKNOWN READ in presym_sym2name
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26400
@@ -8,22 +11,18 @@ details: |
   presym_sym2name
   sym2name_len
   mrb_sym_name_len
-modified: '2021-06-21T06:56:25.613992Z'
-published: '2020-10-18T00:00:15.125270Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26400
-affected:
-- package:
-    name: mruby
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/mruby/mruby
-    events:
-    - introduced: 500f721f7080e79c2e41e306cc1d94471c10f173
-    - fixed: 3d8a8fb6613f177416cc09e81e2a0082db006926
+    introduced: 500f721f7080e79c2e41e306cc1d94471c10f173
+    fixed: 3d8a8fb6613f177416cc09e81e2a0082db006926
   versions:
   - 3.0.0-preview
-  ecosystem_specific:
-    severity: MEDIUM
+modified: '2021-06-21T06:56:25.613992Z'
+published: '2020-10-18T00:00:15.125270Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26400

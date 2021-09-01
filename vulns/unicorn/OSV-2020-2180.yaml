@@ -1,4 +1,7 @@
 id: OSV-2020-2180
+package:
+  name: unicorn
+  ecosystem: OSS-Fuzz
 summary: UNKNOWN READ in helper_be_stl_mmu_armeb
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=27736
@@ -7,21 +10,12 @@ details: |
   Crash state:
   helper_be_stl_mmu_armeb
   [stack]
-modified: '2021-06-23T06:28:44.045603Z'
-published: '2020-11-23T00:00:58.574949Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=27736
-affected:
-- package:
-    name: unicorn
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/unicorn-engine/unicorn.git
-    events:
-    - introduced: 8b659c61b2dad88e55a0f1af6f725be6bce782bd
-    - fixed: 7ca7e8a79d85ca57bb523be49009b0326b7a5210
+    introduced: 8b659c61b2dad88e55a0f1af6f725be6bce782bd
+    fixed: 7ca7e8a79d85ca57bb523be49009b0326b7a5210
   versions:
   - 1.0.2
   - 1.0.2-rc1
@@ -30,6 +24,12 @@ affected:
   - 1.0.2-rc4
   - 1.0.2-rc5
   - 1.0.2-rc6
-  ecosystem_specific:
-    severity: MEDIUM
-    introduced_range: 57e3509812f0842b0752bff1e1b3a44ad438271e:355eaecc12b8022ccefac432dfa003fdb642c0f5
+modified: '2021-06-23T06:28:44.045603Z'
+published: '2020-11-23T00:00:58.574949Z'
+ecosystem_specific:
+  severity: MEDIUM
+database_specific:
+  introduced_range: 57e3509812f0842b0752bff1e1b3a44ad438271e:355eaecc12b8022ccefac432dfa003fdb642c0f5
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=27736

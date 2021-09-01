@@ -1,4 +1,7 @@
 id: OSV-2021-21
+package:
+  name: c-blosc2
+  ecosystem: OSS-Fuzz
 summary: Segv on unknown address in frame_get_lazychunk
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29295
@@ -8,18 +11,14 @@ details: |
   frame_get_lazychunk
   frame_decompress_chunk
   blosc2_schunk_decompress_chunk
-modified: '2021-03-09T04:49:06.254134Z'
-published: '2021-01-07T00:00:16.593508Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29295
-affected:
-- package:
-    name: c-blosc2
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/Blosc/c-blosc2.git
-    events:
-    - introduced: 7be72a8f72330c13eb51c0eb992bcb0f2a027038
-    - fixed: c473b21cff5e1a459b4467f18bf7414114f848fd
+    introduced: 7be72a8f72330c13eb51c0eb992bcb0f2a027038
+    fixed: c473b21cff5e1a459b4467f18bf7414114f848fd
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29295
+modified: '2021-03-09T04:49:06.254134Z'
+published: '2021-01-07T00:00:16.593508Z'

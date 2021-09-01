@@ -1,4 +1,7 @@
 id: OSV-2020-1453
+package:
+  name: rdkit
+  ecosystem: OSS-Fuzz
 summary: UNKNOWN READ in RDKit::labelRecursivePatterns
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24352
@@ -8,26 +11,22 @@ details: |
   RDKit::labelRecursivePatterns
   RDKit::SmartsToMol
   RDKit::ParseMarvinSmartsLine
-modified: '2021-06-21T06:56:26.993280Z'
-published: '2020-07-28T00:00:23.047374Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24352
-affected:
-- package:
-    name: rdkit
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/rdkit/rdkit.git
-    events:
-    - introduced: a9010da8a4af17479c706f2cf4e8c6acdc1585ce
-    - fixed: 52c83c45f0213656ab963271641db696d56e7886
+    introduced: a9010da8a4af17479c706f2cf4e8c6acdc1585ce
+    fixed: 52c83c45f0213656ab963271641db696d56e7886
   versions:
   - Release_2020_09_1
   - Release_2020_09_1b1
   - Release_2020_09_2
   - Release_2020_09_3
   - Release_2020_09_4
-  ecosystem_specific:
-    severity: MEDIUM
+modified: '2021-06-21T06:56:26.993280Z'
+published: '2020-07-28T00:00:23.047374Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24352

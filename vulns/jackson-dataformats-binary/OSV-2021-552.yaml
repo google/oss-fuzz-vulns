@@ -1,4 +1,7 @@
 id: OSV-2021-552
+package:
+  name: jackson-dataformats-binary
+  ecosystem: OSS-Fuzz
 summary: Uncaught exception in java.base/java.lang.ClassLoader.defineClass0
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=32407
@@ -8,21 +11,18 @@ details: |
   java.base/java.lang.ClassLoader.defineClass0
   java.base/java.lang.System$2.defineClass
   java.base/java.lang.invoke.MethodHandles$Lookup$ClassDefiner.defineClass
-modified: '2021-06-23T06:29:42.109225Z'
-published: '2021-03-25T00:00:02.194060Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=32407
-affected:
-- package:
-    name: jackson-dataformats-binary
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/FasterXML/jackson-dataformats-binary
-    events:
-    - introduced: 5b10d2317b7dbb41b6642523f5720052848027f7
-    - fixed: 5fefc76b5a446d9afc62975e64ad46b707804639
-  ecosystem_specific:
-    severity: LOW
-    fixed_range: 437353d8f6c3cd8ea50bb66ddfe9787a7960c874:5fefc76b5a446d9afc62975e64ad46b707804639
+    introduced: 5b10d2317b7dbb41b6642523f5720052848027f7
+    fixed: 5fefc76b5a446d9afc62975e64ad46b707804639
+modified: '2021-06-23T06:29:42.109225Z'
+published: '2021-03-25T00:00:02.194060Z'
+ecosystem_specific:
+  severity: LOW
+database_specific:
+  fixed_range: 437353d8f6c3cd8ea50bb66ddfe9787a7960c874:5fefc76b5a446d9afc62975e64ad46b707804639
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=32407

@@ -1,4 +1,7 @@
 id: OSV-2020-1159
+package:
+  name: arrow
+  ecosystem: OSS-Fuzz
 summary: Segv on unknown address in arrow::ipc::ReadMessage
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20124
@@ -8,20 +11,16 @@ details: |
   arrow::ipc::ReadMessage
   arrow::ipc::RecordBatchFileReader::RecordBatchFileReaderImpl::ReadMessageFromBlo
   arrow::ipc::RecordBatchFileReader::RecordBatchFileReaderImpl::ReadDictionaries
-modified: '2021-06-23T06:25:11.627094Z'
-published: '2020-07-22T21:49:52.147608Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20124
-affected:
-- package:
-    name: arrow
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/apache/arrow.git
-    events:
-    - introduced: ccdc4b076cbd5fb03e1cbc42292def871d2b6035
-    - fixed: 724da320eaac94003a8f1229d6a820fe8c8c1816
-  ecosystem_specific:
-    introduced_range: unknown:ccdc4b076cbd5fb03e1cbc42292def871d2b6035
+    introduced: ccdc4b076cbd5fb03e1cbc42292def871d2b6035
+    fixed: 724da320eaac94003a8f1229d6a820fe8c8c1816
+modified: '2021-06-23T06:25:11.627094Z'
+published: '2020-07-22T21:49:52.147608Z'
+database_specific:
+  introduced_range: unknown:ccdc4b076cbd5fb03e1cbc42292def871d2b6035
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20124

@@ -1,4 +1,7 @@
 id: OSV-2020-2075
+package:
+  name: fluent-bit
+  ecosystem: OSS-Fuzz
 summary: Heap-use-after-free in flb_parser_decoder_list_destroy
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26345
@@ -8,27 +11,15 @@ details: |
   flb_parser_decoder_list_destroy
   parser_fuzzer.c
   flb_free
-modified: '2021-06-21T06:56:24.396204Z'
-published: '2020-10-16T00:00:35.685490Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26345
-affected:
-- package:
-    name: fluent-bit
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/fluent/fluent-bit/
-    events:
-    - introduced: d95ea655478ab9b0e97312ad80ac1da591ce7aaa
-    - fixed: 61164218298f9dbee5bac6648b5b4f5e97759bba
+    introduced: d95ea655478ab9b0e97312ad80ac1da591ce7aaa
+    fixed: 61164218298f9dbee5bac6648b5b4f5e97759bba
   - type: GIT
     repo: https://github.com/fluent/fluent-bit/
-    events:
-    - introduced: d95ea655478ab9b0e97312ad80ac1da591ce7aaa
-    - fixed: 61164218298f9dbee5bac6648b5b4f5e97759bba
-    - introduced: aea2b787028482a159de615fe9a891deb19cb8dc
+    introduced: aea2b787028482a159de615fe9a891deb19cb8dc
   versions:
   - v1.6.1
   - v1.6.10
@@ -40,5 +31,10 @@ affected:
   - v1.6.7
   - v1.6.8
   - v1.6.9
-  ecosystem_specific:
-    severity: HIGH
+modified: '2021-06-21T06:56:24.396204Z'
+published: '2020-10-16T00:00:35.685490Z'
+ecosystem_specific:
+  severity: HIGH
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26345

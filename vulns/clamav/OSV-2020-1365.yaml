@@ -1,4 +1,7 @@
 id: OSV-2020-1365
+package:
+  name: clamav
+  ecosystem: OSS-Fuzz
 summary: UNKNOWN READ in cli_vba_readdir_new
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24354
@@ -8,20 +11,16 @@ details: |
   cli_vba_readdir_new
   cli_vba_scandir_new
   cli_scanole2
-modified: '2021-06-21T06:56:25.393734Z'
-published: '2020-07-28T00:00:02.964345Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24354
-affected:
-- package:
-    name: clamav
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/Cisco-Talos/clamav-devel.git
-    events:
-    - introduced: b7f8440965fef5e03fcedf12c5ed902235ba8124
-    - fixed: b35d1e1bec27d90b4acdc896f6f2164990f747e7
-  ecosystem_specific:
-    severity: MEDIUM
+    introduced: b7f8440965fef5e03fcedf12c5ed902235ba8124
+    fixed: b35d1e1bec27d90b4acdc896f6f2164990f747e7
+modified: '2021-06-21T06:56:25.393734Z'
+published: '2020-07-28T00:00:02.964345Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24354

@@ -1,4 +1,7 @@
 id: OSV-2020-744
+package:
+  name: mruby
+  ecosystem: OSS-Fuzz
 summary: Heap-double-free in mrb_default_allocf
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23801
@@ -8,24 +11,20 @@ details: |
   mrb_default_allocf
   mrb_free
   obj_free
-modified: '2021-06-21T06:56:25.626805Z'
-published: '2020-07-04T00:00:01.948828Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23801
-affected:
-- package:
-    name: mruby
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/mruby/mruby
-    events:
-    - introduced: 9cdf439db52b66447b4e37c61179d54fad6c8f33
-    - fixed: 97319697c8f9f6ff27b32589947e1918e3015503
+    introduced: 9cdf439db52b66447b4e37c61179d54fad6c8f33
+    fixed: 97319697c8f9f6ff27b32589947e1918e3015503
   versions:
   - 2.1.2
   - 2.1.2-rc
   - 2.1.2-rc2
-  ecosystem_specific:
-    severity: HIGH
+modified: '2021-06-21T06:56:25.626805Z'
+published: '2020-07-04T00:00:01.948828Z'
+ecosystem_specific:
+  severity: HIGH
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23801

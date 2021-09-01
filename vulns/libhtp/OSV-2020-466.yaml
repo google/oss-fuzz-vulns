@@ -1,4 +1,7 @@
 id: OSV-2020-466
+package:
+  name: libhtp
+  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in LzmaDec_DecodeToDic
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=17198
@@ -8,20 +11,16 @@ details: |
   LzmaDec_DecodeToDic
   LzmaDec_DecodeToBuf
   htp_gzip_decompressor_decompress
-modified: '2021-06-21T06:56:26.112694Z'
-published: '2020-07-01T00:00:11.093231Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=17198
-affected:
-- package:
-    name: libhtp
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/OISF/libhtp.git
-    events:
-    - introduced: 3c6555078ec30e0baa4855ec69d55a22fc8d3589
-    - fixed: fe16fa764f7cea57be5a288ee85b27dffc460f6f
-  ecosystem_specific:
-    severity: MEDIUM
+    introduced: 3c6555078ec30e0baa4855ec69d55a22fc8d3589
+    fixed: fe16fa764f7cea57be5a288ee85b27dffc460f6f
+modified: '2021-06-21T06:56:26.112694Z'
+published: '2020-07-01T00:00:11.093231Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=17198

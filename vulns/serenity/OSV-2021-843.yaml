@@ -1,4 +1,7 @@
 id: OSV-2021-843
+package:
+  name: serenity
+  ecosystem: OSS-Fuzz
 summary: Use-after-poison in AK::NonnullOwnPtr<JS::IndexedPropertyStorage>::operator->
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=35038
@@ -8,19 +11,15 @@ details: |
   AK::NonnullOwnPtr<JS::IndexedPropertyStorage>::operator->
   JS::IndexedProperties::array_like_size
   JS::IndexedProperties::append
-modified: '2021-06-21T06:56:19.818152Z'
-published: '2021-06-09T00:00:19.914318Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=35038
-affected:
-- package:
-    name: serenity
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/SerenityOS/serenity
-    events:
-    - introduced: 6aba64b60ff7fa3bc062ebcd2597e13d30747936
-  ecosystem_specific:
-    severity: HIGH
+    introduced: 6aba64b60ff7fa3bc062ebcd2597e13d30747936
+modified: '2021-06-21T06:56:19.818152Z'
+published: '2021-06-09T00:00:19.914318Z'
+ecosystem_specific:
+  severity: HIGH
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=35038

@@ -1,4 +1,7 @@
 id: OSV-2020-1300
+package:
+  name: libhevc
+  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in ihevcd_parse_slice_data
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=17036
@@ -8,23 +11,20 @@ details: |
   ihevcd_parse_slice_data
   ihevcd_decode
   ihevcd_cxa_api_function
-modified: '2021-06-23T06:24:50.392157Z'
-published: '2020-07-22T21:50:04.218936Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=17036
-affected:
-- package:
-    name: libhevc
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://android.googlesource.com/platform/external/libhevc
-    events:
-    - introduced: 5e7dc4732015717682ac0da1431fe3e656aea617
-    - fixed: 60f9768c9e8488be9f5b5ba88ffe0a4528504a68
+    introduced: 5e7dc4732015717682ac0da1431fe3e656aea617
+    fixed: 60f9768c9e8488be9f5b5ba88ffe0a4528504a68
   versions:
   - platform-tools-29.0.5
-  ecosystem_specific:
-    severity: HIGH
-    introduced_range: unknown:5e7dc4732015717682ac0da1431fe3e656aea617
+modified: '2021-06-23T06:24:50.392157Z'
+published: '2020-07-22T21:50:04.218936Z'
+ecosystem_specific:
+  severity: HIGH
+database_specific:
+  introduced_range: unknown:5e7dc4732015717682ac0da1431fe3e656aea617
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=17036

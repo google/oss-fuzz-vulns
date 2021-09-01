@@ -1,4 +1,7 @@
 id: OSV-2017-69
+package:
+  name: unrar
+  ecosystem: OSS-Fuzz
 summary: Use-of-uninitialized-value in IsRelativeSymlinkSafe
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=4409
@@ -8,21 +11,12 @@ details: |
   IsRelativeSymlinkSafe
   ExtractUnixLink30
   ExtractSymlink
-modified: '2021-06-23T06:25:52.858441Z'
-published: '2021-01-13T21:56:34.401253Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=4409
-affected:
-- package:
-    name: unrar
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/aawc/unrar.git
-    events:
-    - introduced: d2e5341ebf6f34c9bd5939c3ac812cb2cd983081
-    - fixed: 48592b298a81601380032fef55470c1a8eb0eeea
+    introduced: d2e5341ebf6f34c9bd5939c3ac812cb2cd983081
+    fixed: 48592b298a81601380032fef55470c1a8eb0eeea
   versions:
   - 5.6.1.2
   - 5.6.1.3
@@ -35,6 +29,12 @@ affected:
   - v5.7.1
   - v5.7.3
   - v6.0.3
-  ecosystem_specific:
-    severity: MEDIUM
-    introduced_range: 2a079823c708a637bc36e888180ebb96fdfba526:1d8ea7923dae7c8f136912b6bdca95dcb52e80bc
+modified: '2021-06-23T06:25:52.858441Z'
+published: '2021-01-13T21:56:34.401253Z'
+ecosystem_specific:
+  severity: MEDIUM
+database_specific:
+  introduced_range: 2a079823c708a637bc36e888180ebb96fdfba526:1d8ea7923dae7c8f136912b6bdca95dcb52e80bc
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=4409

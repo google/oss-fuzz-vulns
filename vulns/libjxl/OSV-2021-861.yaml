@@ -1,4 +1,7 @@
 id: OSV-2021-861
+package:
+  name: libjxl
+  ecosystem: OSS-Fuzz
 summary: Use-of-uninitialized-value in jxl::N_AVX2::FloatToRGBA8
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=35231
@@ -8,20 +11,16 @@ details: |
   jxl::N_AVX2::FloatToRGBA8
   jxl::FinalizeImageRect
   jxl::ThreadPool::RunCallState<jxl::FinalizeFrameDecoding
-modified: '2021-06-15T00:01:22.973144Z'
-published: '2021-06-15T00:01:22.972854Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=35231
-affected:
-- package:
-    name: libjxl
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/libjxl/libjxl.git
-    events:
-    - introduced: 7b974a32bc5620ff0c02b1c0b101d421b3edc44a
-    - fixed: 4f97fa00ed1432e910817813b07f7d16817e353b
-  ecosystem_specific:
-    severity: MEDIUM
+    introduced: 7b974a32bc5620ff0c02b1c0b101d421b3edc44a
+    fixed: 4f97fa00ed1432e910817813b07f7d16817e353b
+modified: '2021-06-15T00:01:22.973144Z'
+published: '2021-06-15T00:01:22.972854Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=35231

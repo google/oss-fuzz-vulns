@@ -1,4 +1,7 @@
 id: OSV-2020-1083
+package:
+  name: wget2
+  ecosystem: OSS-Fuzz
 summary: Heap-use-after-free in rpl_glob
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20176
@@ -8,21 +11,18 @@ details: |
   rpl_glob
   read_config_expand
   read_config_expand
-modified: '2021-06-23T06:30:09.541219Z'
-published: '2020-07-22T21:49:45.883645Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20176
-affected:
-- package:
-    name: wget2
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://gitlab.com/gnuwget/wget2.git
-    events:
-    - introduced: 59d9ecd9c0a9411c9b02185e49637396a77bd205
-    - fixed: e225d9109cabbd25a063500c129ef8c47a763d19
-  ecosystem_specific:
-    introduced_range: unknown:59d9ecd9c0a9411c9b02185e49637396a77bd205
-    severity: HIGH
+    introduced: 59d9ecd9c0a9411c9b02185e49637396a77bd205
+    fixed: e225d9109cabbd25a063500c129ef8c47a763d19
+modified: '2021-06-23T06:30:09.541219Z'
+published: '2020-07-22T21:49:45.883645Z'
+ecosystem_specific:
+  severity: HIGH
+database_specific:
+  introduced_range: unknown:59d9ecd9c0a9411c9b02185e49637396a77bd205
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20176

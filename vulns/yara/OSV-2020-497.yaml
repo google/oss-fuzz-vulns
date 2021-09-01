@@ -1,4 +1,7 @@
 id: OSV-2020-497
+package:
+  name: yara
+  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in str_table_entry
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13956
@@ -8,20 +11,16 @@ details: |
   str_table_entry
   parse_elf_header_64_be
   elf__load
-modified: '2021-06-21T06:56:27.548894Z'
-published: '2020-07-01T00:00:13.107969Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13956
-affected:
-- package:
-    name: yara
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/VirusTotal/yara.git
-    events:
-    - introduced: 77288a93d1fd10a3813a2422fdad011767e800a7
-    - fixed: 462ffd339228ac57d98e8034239d122e4303f653
-  ecosystem_specific:
-    severity: MEDIUM
+    introduced: 77288a93d1fd10a3813a2422fdad011767e800a7
+    fixed: 462ffd339228ac57d98e8034239d122e4303f653
+modified: '2021-06-21T06:56:27.548894Z'
+published: '2020-07-01T00:00:13.107969Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13956

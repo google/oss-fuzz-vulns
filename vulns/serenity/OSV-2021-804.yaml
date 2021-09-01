@@ -1,4 +1,7 @@
 id: OSV-2021-804
+package:
+  name: serenity
+  ecosystem: OSS-Fuzz
 summary: Heap-use-after-free in AK::NonnullOwnPtr<JS::IndexedPropertyStorage>::operator->
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34688
@@ -8,19 +11,15 @@ details: |
   AK::NonnullOwnPtr<JS::IndexedPropertyStorage>::operator->
   JS::IndexedProperties::array_like_size
   JS::IndexedProperties::append
-modified: '2021-06-21T06:56:19.804776Z'
-published: '2021-05-27T00:01:21.705422Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34688
-affected:
-- package:
-    name: serenity
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/SerenityOS/serenity
-    events:
-    - introduced: 51b880b0383089822f513330cd64f93b54b9f21c
-  ecosystem_specific:
-    severity: HIGH
+    introduced: 51b880b0383089822f513330cd64f93b54b9f21c
+modified: '2021-06-21T06:56:19.804776Z'
+published: '2021-05-27T00:01:21.705422Z'
+ecosystem_specific:
+  severity: HIGH
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34688

@@ -1,4 +1,7 @@
 id: OSV-2021-439
+package:
+  name: c-blosc2
+  ecosystem: OSS-Fuzz
 summary: UNKNOWN READ in blosc_d
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31241
@@ -8,20 +11,16 @@ details: |
   blosc_d
   do_job
   blosc_run_decompression_with_context
-modified: '2021-06-21T06:56:25.993946Z'
-published: '2021-02-23T00:01:11.746887Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31241
-affected:
-- package:
-    name: c-blosc2
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/Blosc/c-blosc2.git
-    events:
-    - introduced: 861ba79f31393dec0a0782ca11cf32cebb6f6610
-    - fixed: cb44cf0fc82cf19efb002bba0eb5cc42e9527c3f
-  ecosystem_specific:
-    severity: MEDIUM
+    introduced: 861ba79f31393dec0a0782ca11cf32cebb6f6610
+    fixed: cb44cf0fc82cf19efb002bba0eb5cc42e9527c3f
+modified: '2021-06-21T06:56:25.993946Z'
+published: '2021-02-23T00:01:11.746887Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31241

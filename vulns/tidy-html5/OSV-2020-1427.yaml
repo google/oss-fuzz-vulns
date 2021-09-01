@@ -1,4 +1,7 @@
 id: OSV-2020-1427
+package:
+  name: tidy-html5
+  ecosystem: OSS-Fuzz
 summary: Use-of-uninitialized-value in TextEndsWithNewline
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13191
@@ -8,25 +11,21 @@ details: |
   TextEndsWithNewline
   PPrintText
   PPrintScriptStyle
-modified: '2021-08-19T00:06:24.698432Z'
-published: '2020-07-28T00:00:17.183105Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13191
-affected:
-- package:
-    name: tidy-html5
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/htacg/tidy-html5.git
-    events:
-    - introduced: 68a29fb3e46d6fc22f7a8ff119c0956ddc8ebe8b
+    introduced: 68a29fb3e46d6fc22f7a8ff119c0956ddc8ebe8b
   versions:
   - 5.7.28
   - 5.8.0
   - 5.9.8-next
   - 5.9.9-next
   - 5.9.14-next
-  ecosystem_specific:
-    severity: MEDIUM
+modified: '2021-08-19T00:06:24.698432Z'
+published: '2020-07-28T00:00:17.183105Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13191

@@ -1,4 +1,7 @@
 id: OSV-2020-804
+package:
+  name: qpdf
+  ecosystem: OSS-Fuzz
 summary: Use-of-uninitialized-value in read_markers
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23581
@@ -8,21 +11,12 @@ details: |
   read_markers
   consume_markers
   jpeg_consume_input
-modified: '2021-06-21T06:56:19.331889Z'
-published: '2020-07-14T05:37:42.500988Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23581
-affected:
-- package:
-    name: qpdf
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/qpdf/qpdf.git
-    events:
-    - introduced: f561a5df325945c896bdec266d2e457a002fef0e
-    - fixed: 232f5fc9f3bed8e1b02bca5d10b2eca444e30f95
+    introduced: f561a5df325945c896bdec266d2e457a002fef0e
+    fixed: 232f5fc9f3bed8e1b02bca5d10b2eca444e30f95
   versions:
   - release-qpdf-10.0.0
   - release-qpdf-10.0.1
@@ -32,5 +26,10 @@ affected:
   - release-qpdf-9.1.0
   - release-qpdf-9.1.1
   - release-qpdf-9.1.rc1
-  ecosystem_specific:
-    severity: MEDIUM
+modified: '2021-06-21T06:56:19.331889Z'
+published: '2020-07-14T05:37:42.500988Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23581

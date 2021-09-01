@@ -1,4 +1,7 @@
 id: OSV-2018-143
+package:
+  name: harfbuzz
+  ecosystem: OSS-Fuzz
 summary: Global-buffer-overflow in CFF::BlendArg::set_blends
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11714
@@ -8,18 +11,14 @@ details: |
   CFF::BlendArg::set_blends
   CFF::CFF2CSOpSet<CFF2CSOpSet_SubrSubset, CFF::SubrSubsetParam, CFF::PathProcsNul
   CFF2CSOpSet_SubrSubset::process_op
-modified: '2021-03-09T04:49:04.839764Z'
-published: '2021-01-13T00:01:01.540340Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11714
-affected:
-- package:
-    name: harfbuzz
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/harfbuzz/harfbuzz.git
-    events:
-    - introduced: 0996c0ff6279f377e2b14f08663df2ce82de2b14
-    - fixed: 14d29a10437205566c4bd7bcfa2282d34d9f4f2f
+    introduced: 0996c0ff6279f377e2b14f08663df2ce82de2b14
+    fixed: 14d29a10437205566c4bd7bcfa2282d34d9f4f2f
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11714
+modified: '2021-03-09T04:49:04.839764Z'
+published: '2021-01-13T00:01:01.540340Z'

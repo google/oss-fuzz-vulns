@@ -1,4 +1,7 @@
 id: OSV-2020-1898
+package:
+  name: openh264
+  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in WelsDec::UpdateP16x16RefIdx
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26078
@@ -8,20 +11,16 @@ details: |
   WelsDec::UpdateP16x16RefIdx
   WelsDec::PredBDirectTemporal
   WelsDec::ParseInterBInfo
-modified: '2021-06-21T06:56:23.860369Z'
-published: '2020-10-02T00:00:14.116993Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26078
-affected:
-- package:
-    name: openh264
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/cisco/openh264.git
-    events:
-    - introduced: 66ef706acd55b0b8daec32ca299d2586a1f473c9
-    - fixed: f1bb6d3acb057785b4d89e8228e23cc4fc9caa12
-  ecosystem_specific:
-    severity: HIGH
+    introduced: 66ef706acd55b0b8daec32ca299d2586a1f473c9
+    fixed: f1bb6d3acb057785b4d89e8228e23cc4fc9caa12
+modified: '2021-06-21T06:56:23.860369Z'
+published: '2020-10-02T00:00:14.116993Z'
+ecosystem_specific:
+  severity: HIGH
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26078

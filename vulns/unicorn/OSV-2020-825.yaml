@@ -1,4 +1,7 @@
 id: OSV-2020-825
+package:
+  name: unicorn
+  ecosystem: OSS-Fuzz
 summary: Index-out-of-bounds in tcg_liveness_analysis_arm
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23971
@@ -8,20 +11,11 @@ details: |
   tcg_liveness_analysis_arm
   tcg_gen_code_arm
   cpu_arm_gen_code_arm
-modified: '2021-07-14T00:04:49.796976Z'
-published: '2020-07-14T05:37:49.161459Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23971
-affected:
-- package:
-    name: unicorn
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/unicorn-engine/unicorn.git
-    events:
-    - introduced: 8621bca53758532ad6a4ec5d17684fcdb9923cc6
+    introduced: 8621bca53758532ad6a4ec5d17684fcdb9923cc6
   versions:
   - 1.0.2
   - 1.0.2-rc2
@@ -30,5 +24,10 @@ affected:
   - 1.0.2-rc5
   - 1.0.2-rc6
   - 1.0.3
-  ecosystem_specific:
-    severity: MEDIUM
+modified: '2021-07-14T00:04:49.796976Z'
+published: '2020-07-14T05:37:49.161459Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23971

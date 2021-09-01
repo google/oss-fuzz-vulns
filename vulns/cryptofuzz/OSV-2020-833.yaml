@@ -1,4 +1,7 @@
 id: OSV-2020-833
+package:
+  name: cryptofuzz
+  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in Hacl_Chacha20PolyNUMBER_256_aead_decrypt
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23934
@@ -8,22 +11,19 @@ details: |
   Hacl_Chacha20PolyNUMBER_256_aead_decrypt
   ChaCha20PolyNUMBER_Open
   sftk_ChaCha20PolyNUMBER_Decrypt
-modified: '2021-06-23T06:25:45.080151Z'
-published: '2020-07-14T22:13:39.041123Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23934
-affected:
-- package:
-    name: cryptofuzz
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/guidovranken/cryptofuzz
-    events:
-    - introduced: 2619bffde72e48bfe5a572776783bf92615b7c05
-    - fixed: 7b97d7fbad5d847074ffb0a8cbe14778d78e28ca
-  ecosystem_specific:
-    fixed_range: 919fa5710aec81c21dc26492e499ae541042e68c:7b97d7fbad5d847074ffb0a8cbe14778d78e28ca
-    introduced_range: 9a08637f4aa56f0da3c8b1f4f363c7ec7a933a75:bb51393c0d141478d0255f1bd1ee06eb845edeb2
-    severity: MEDIUM
+    introduced: 2619bffde72e48bfe5a572776783bf92615b7c05
+    fixed: 7b97d7fbad5d847074ffb0a8cbe14778d78e28ca
+modified: '2021-06-23T06:25:45.080151Z'
+published: '2020-07-14T22:13:39.041123Z'
+ecosystem_specific:
+  severity: MEDIUM
+database_specific:
+  fixed_range: 919fa5710aec81c21dc26492e499ae541042e68c:7b97d7fbad5d847074ffb0a8cbe14778d78e28ca
+  introduced_range: 9a08637f4aa56f0da3c8b1f4f363c7ec7a933a75:bb51393c0d141478d0255f1bd1ee06eb845edeb2
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23934

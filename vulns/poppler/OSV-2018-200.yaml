@@ -1,4 +1,7 @@
 id: OSV-2018-200
+package:
+  name: poppler
+  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in SplashPath::lineTo
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=10148
@@ -8,20 +11,16 @@ details: |
   SplashPath::lineTo
   Splash::makeDashedPath
   Splash::stroke
-modified: '2021-06-21T06:56:23.483903Z'
-published: '2021-01-13T00:01:22.340872Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=10148
-affected:
-- package:
-    name: poppler
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://gitlab.freedesktop.org/poppler/poppler.git
-    events:
-    - introduced: 987bbb684e688651e3d06502e2ff9b6f08130538
-    - fixed: bb078cbd88252e421d14747b98c5c71062cf7571
-  ecosystem_specific:
-    severity: MEDIUM
+    introduced: 987bbb684e688651e3d06502e2ff9b6f08130538
+    fixed: bb078cbd88252e421d14747b98c5c71062cf7571
+modified: '2021-06-21T06:56:23.483903Z'
+published: '2021-01-13T00:01:22.340872Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=10148

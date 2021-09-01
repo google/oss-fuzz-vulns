@@ -1,4 +1,7 @@
 id: OSV-2020-383
+package:
+  name: openthread
+  ecosystem: OSS-Fuzz
 summary: Stack-buffer-overflow in ot::NetworkData::Leader::IsStableUpdated
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15971
@@ -8,20 +11,16 @@ details: |
   ot::NetworkData::Leader::IsStableUpdated
   ot::NetworkData::Leader::RegisterNetworkData
   ot::NetworkData::Leader::HandleServerData
-modified: '2021-06-21T06:56:25.146420Z'
-published: '2020-07-01T00:00:06.392501Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15971
-affected:
-- package:
-    name: openthread
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/openthread/openthread
-    events:
-    - introduced: c972c5cb936ef1f640ab90fbe03e7f2631dbcb18
-    - fixed: a211901f62b96fb6fb0ee792dab4007c64b44e18
-  ecosystem_specific:
-    severity: MEDIUM
+    introduced: c972c5cb936ef1f640ab90fbe03e7f2631dbcb18
+    fixed: a211901f62b96fb6fb0ee792dab4007c64b44e18
+modified: '2021-06-21T06:56:25.146420Z'
+published: '2020-07-01T00:00:06.392501Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15971

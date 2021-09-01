@@ -1,4 +1,7 @@
 id: OSV-2018-100
+package:
+  name: freetype2
+  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in cff_parser_run
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=10869
@@ -8,21 +11,18 @@ details: |
   cff_parser_run
   cff_subfont_load
   cff_font_load
-modified: '2021-06-23T06:25:40.693493Z'
-published: '2021-01-13T00:00:43.817225Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=10869
-affected:
-- package:
-    name: freetype2
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/freetype/freetype2-testing.git
-    events:
-    - introduced: 0c256f6e16eb73be1aef98197755e0e6bb4c56a9
-    - fixed: 7e045f03edb2a34b731c999c586a03a914502d88
-  ecosystem_specific:
-    severity: HIGH
-    fixed_range: 08b711d0182229d7e0a1e52cecf73660cb95addb:7e045f03edb2a34b731c999c586a03a914502d88
+    introduced: 0c256f6e16eb73be1aef98197755e0e6bb4c56a9
+    fixed: 7e045f03edb2a34b731c999c586a03a914502d88
+modified: '2021-06-23T06:25:40.693493Z'
+published: '2021-01-13T00:00:43.817225Z'
+ecosystem_specific:
+  severity: HIGH
+database_specific:
+  fixed_range: 08b711d0182229d7e0a1e52cecf73660cb95addb:7e045f03edb2a34b731c999c586a03a914502d88
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=10869

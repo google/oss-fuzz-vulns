@@ -1,4 +1,7 @@
 id: OSV-2020-1161
+package:
+  name: libmpeg2
+  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in impeg2_fmt_conv_yuv420p_to_yuv420sp_uv
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=16604
@@ -8,27 +11,16 @@ details: |
   impeg2_fmt_conv_yuv420p_to_yuv420sp_uv
   impeg2d_format_convert
   impeg2d_dec_pic_data_thread
-modified: '2021-06-23T06:51:06.915094Z'
-published: '2020-07-22T21:49:52.257088Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=16604
-affected:
-- package:
-    name: libmpeg2
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://android.googlesource.com/platform/external/libmpeg2
-    events:
-    - introduced: 313d5efa2d866f01aaf25b015f31480ce095e7f5
-    - fixed: 6f28264c1170fae4f6c847625f4a6d4467a3262b
+    introduced: 313d5efa2d866f01aaf25b015f31480ce095e7f5
+    fixed: 6f28264c1170fae4f6c847625f4a6d4467a3262b
   - type: GIT
     repo: https://android.googlesource.com/platform/external/libmpeg2
-    events:
-    - introduced: 313d5efa2d866f01aaf25b015f31480ce095e7f5
-    - fixed: 6f28264c1170fae4f6c847625f4a6d4467a3262b
-    - fixed: 5c8de517396c1a3b5e12e6a345a8df78660cc2fc
+    introduced: 313d5efa2d866f01aaf25b015f31480ce095e7f5
+    fixed: 5c8de517396c1a3b5e12e6a345a8df78660cc2fc
   versions:
   - android-mainline-10.0.0_r6
   - android-mainline-10.0.0_r8
@@ -42,6 +34,12 @@ affected:
   - platform-tools-30.0.1
   - platform-tools-30.0.2
   - platform-tools-30.0.3
-  ecosystem_specific:
-    introduced_range: unknown:313d5efa2d866f01aaf25b015f31480ce095e7f5
-    severity: HIGH
+modified: '2021-06-23T06:51:06.915094Z'
+published: '2020-07-22T21:49:52.257088Z'
+ecosystem_specific:
+  severity: HIGH
+database_specific:
+  introduced_range: unknown:313d5efa2d866f01aaf25b015f31480ce095e7f5
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=16604

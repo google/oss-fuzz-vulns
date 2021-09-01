@@ -1,4 +1,7 @@
 id: OSV-2020-1194
+package:
+  name: ndpi
+  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in ndpi_search_mail_smtp_tcp
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20563
@@ -8,21 +11,18 @@ details: |
   ndpi_search_mail_smtp_tcp
   check_ndpi_tcp_flow_func
   ndpi_detection_process_packet
-modified: '2021-06-23T06:26:03.549836Z'
-published: '2020-07-22T21:49:55.131761Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20563
-affected:
-- package:
-    name: ndpi
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/ntop/nDPI.git
-    events:
-    - introduced: e695dd6eade754b2d50bdf297ca8bdc4105f93ff
-    - fixed: d4ae8a5f164167ef4fcf5b76b743e92b9e76d9dd
-  ecosystem_specific:
-    severity: MEDIUM
-    introduced_range: unknown:e695dd6eade754b2d50bdf297ca8bdc4105f93ff
+    introduced: e695dd6eade754b2d50bdf297ca8bdc4105f93ff
+    fixed: d4ae8a5f164167ef4fcf5b76b743e92b9e76d9dd
+modified: '2021-06-23T06:26:03.549836Z'
+published: '2020-07-22T21:49:55.131761Z'
+ecosystem_specific:
+  severity: MEDIUM
+database_specific:
+  introduced_range: unknown:e695dd6eade754b2d50bdf297ca8bdc4105f93ff
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20563

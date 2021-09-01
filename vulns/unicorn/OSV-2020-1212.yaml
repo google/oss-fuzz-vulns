@@ -1,4 +1,7 @@
 id: OSV-2020-1212
+package:
+  name: unicorn
+  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in helper_ret_stb_mmu_mips
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13489
@@ -6,23 +9,20 @@ details: |
   Crash type: Heap-buffer-overflow READ 4
   Crash state:
   helper_ret_stb_mmu_mips
-modified: '2021-06-23T06:28:31.875444Z'
-published: '2020-07-22T21:49:57.228163Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13489
-affected:
-- package:
-    name: unicorn
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/unicorn-engine/unicorn.git
-    events:
-    - introduced: 12bcf3bea093ed733904d3993bbdba0c2572a497
-    - fixed: 8b99637f774436e222e6d4393135aab0964967a0
+    introduced: 12bcf3bea093ed733904d3993bbdba0c2572a497
+    fixed: 8b99637f774436e222e6d4393135aab0964967a0
   versions:
   - 1.0.2-rc1
-  ecosystem_specific:
-    severity: MEDIUM
-    introduced_range: unknown:12bcf3bea093ed733904d3993bbdba0c2572a497
+modified: '2021-06-23T06:28:31.875444Z'
+published: '2020-07-22T21:49:57.228163Z'
+ecosystem_specific:
+  severity: MEDIUM
+database_specific:
+  introduced_range: unknown:12bcf3bea093ed733904d3993bbdba0c2572a497
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13489

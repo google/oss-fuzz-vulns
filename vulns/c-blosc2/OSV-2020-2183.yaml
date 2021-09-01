@@ -1,4 +1,7 @@
 id: OSV-2020-2183
+package:
+  name: c-blosc2
+  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in Lizard_decompress_safe
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=27818
@@ -8,20 +11,16 @@ details: |
   Lizard_decompress_safe
   blosc_d
   do_job
-modified: '2021-06-21T06:56:25.892183Z'
-published: '2020-11-25T00:00:12.713716Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=27818
-affected:
-- package:
-    name: c-blosc2
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/Blosc/c-blosc2.git
-    events:
-    - introduced: 603cd3d160c28b807c2ca50113fda00bafa51be7
-    - fixed: 3724317f7bd698abb3b3d39a6d785088b9f8db0a
-  ecosystem_specific:
-    severity: MEDIUM
+    introduced: 603cd3d160c28b807c2ca50113fda00bafa51be7
+    fixed: 3724317f7bd698abb3b3d39a6d785088b9f8db0a
+modified: '2021-06-21T06:56:25.892183Z'
+published: '2020-11-25T00:00:12.713716Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=27818

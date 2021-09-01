@@ -1,4 +1,7 @@
 id: OSV-2021-557
+package:
+  name: libarchive
+  ecosystem: OSS-Fuzz
 summary: Heap-use-after-free in copy_string
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=32375
@@ -8,20 +11,11 @@ details: |
   copy_string
   do_uncompress_block
   process_block
-modified: '2021-08-23T00:05:30.838374Z'
-published: '2021-03-25T00:01:05.489589Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=32375
-affected:
-- package:
-    name: libarchive
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/libarchive/libarchive.git
-    events:
-    - introduced: 47bb8187d3ef2d49ee8c7841cb2872b3cfa1f6f7
+    introduced: 47bb8187d3ef2d49ee8c7841cb2872b3cfa1f6f7
   versions:
   - 3.5.1
   - v3.4.1
@@ -30,5 +24,10 @@ affected:
   - v3.5.0
   - v3.5.1
   - v3.5.2
-  ecosystem_specific:
-    severity: HIGH
+modified: '2021-08-23T00:05:30.838374Z'
+published: '2021-03-25T00:01:05.489589Z'
+ecosystem_specific:
+  severity: HIGH
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=32375

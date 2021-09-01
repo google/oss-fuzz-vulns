@@ -1,4 +1,7 @@
 id: OSV-2020-535
+package:
+  name: file
+  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in looks_ucs32
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13222
@@ -8,22 +11,18 @@ details: |
   looks_ucs32
   file_encoding
   file_buffer
-modified: '2021-06-21T06:56:18.747216Z'
-published: '2020-07-01T00:00:15.186923Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13222
-affected:
-- package:
-    name: file
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/file/file.git
-    events:
-    - introduced: f0a26da7b371127e4460cc6d2da1b410c3d85ad9
-    - fixed: ecca6e54f49f251bb4c16fe145d04c2b45923dc3
+    introduced: f0a26da7b371127e4460cc6d2da1b410c3d85ad9
+    fixed: ecca6e54f49f251bb4c16fe145d04c2b45923dc3
   versions:
   - FILE5_36
-  ecosystem_specific:
-    severity: MEDIUM
+modified: '2021-06-21T06:56:18.747216Z'
+published: '2020-07-01T00:00:15.186923Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13222

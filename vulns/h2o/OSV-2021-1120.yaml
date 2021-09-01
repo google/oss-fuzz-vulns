@@ -1,4 +1,7 @@
 id: OSV-2021-1120
+package:
+  name: h2o
+  ecosystem: OSS-Fuzz
 summary: Heap-use-after-free in on_body
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=37023
@@ -8,20 +11,16 @@ details: |
   on_body
   req_body_send_complete
   run_socket
-modified: '2021-08-11T00:01:35.546544Z'
-published: '2021-08-11T00:01:35.546323Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=37023
-affected:
-- package:
-    name: h2o
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/h2o/h2o
-    events:
-    - introduced: 658d4548bcaa253e3f941e67b928d12b8a2a98b8
-    - fixed: 38774e5aa18090f34a8c0b6010dcaebd9fdd8b62
-  ecosystem_specific:
-    severity: HIGH
+    introduced: 658d4548bcaa253e3f941e67b928d12b8a2a98b8
+    fixed: 38774e5aa18090f34a8c0b6010dcaebd9fdd8b62
+modified: '2021-08-11T00:01:35.546544Z'
+published: '2021-08-11T00:01:35.546323Z'
+ecosystem_specific:
+  severity: HIGH
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=37023

@@ -1,4 +1,7 @@
 id: OSV-2018-58
+package:
+  name: libgit2
+  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in tag_parse
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=10999
@@ -8,20 +11,16 @@ details: |
   tag_parse
   git_tag__parse_raw
   git_object__from_raw
-modified: '2021-06-21T06:56:21.949292Z'
-published: '2021-01-13T00:00:29.755710Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=10999
-affected:
-- package:
-    name: libgit2
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/libgit2/libgit2
-    events:
-    - introduced: a1d5fd0630c6f7e3ac23bc9e13ba33901dfddba4
-    - fixed: ee11d47e3d907b66eeff99e0ba1e1c71e05164b7
-  ecosystem_specific:
-    severity: MEDIUM
+    introduced: a1d5fd0630c6f7e3ac23bc9e13ba33901dfddba4
+    fixed: ee11d47e3d907b66eeff99e0ba1e1c71e05164b7
+modified: '2021-06-21T06:56:21.949292Z'
+published: '2021-01-13T00:00:29.755710Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=10999

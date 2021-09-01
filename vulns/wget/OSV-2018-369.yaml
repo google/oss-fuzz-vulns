@@ -1,4 +1,7 @@
 id: OSV-2018-369
+package:
+  name: wget
+  ecosystem: OSS-Fuzz
 summary: Negative-size-param in get_urls_css
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=8032
@@ -7,18 +10,14 @@ details: |
   Crash state:
   get_urls_css
   wget_css_fuzzer.c
-modified: '2021-03-09T04:49:04.958797Z'
-published: '2021-01-15T00:00:59.859441Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=8032
-affected:
-- package:
-    name: wget
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://git.savannah.gnu.org/git/wget.git
-    events:
-    - introduced: f56f970bc2b0df1d26ebd6a0a86083b37017cd70
-    - fixed: cb47f3aaa4591b3a7f20fd30019fc4d81ecb4f4c
+    introduced: f56f970bc2b0df1d26ebd6a0a86083b37017cd70
+    fixed: cb47f3aaa4591b3a7f20fd30019fc4d81ecb4f4c
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=8032
+modified: '2021-03-09T04:49:04.958797Z'
+published: '2021-01-15T00:00:59.859441Z'

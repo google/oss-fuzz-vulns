@@ -1,4 +1,7 @@
 id: OSV-2020-410
+package:
+  name: lwan
+  ecosystem: OSS-Fuzz
 summary: Global-buffer-overflow in lex_multiline_string
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18455
@@ -8,18 +11,14 @@ details: |
   lex_multiline_string
   lex_next
   parse_config
-modified: '2021-03-09T04:49:05.872972Z'
-published: '2020-07-01T00:00:07.995615Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18455
-affected:
-- package:
-    name: lwan
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: git://github.com/lpereira/lwan
-    events:
-    - introduced: c9ac13203b6685d3bf89ab6d257b37dd6b0d5833
-    - fixed: ab882fe013ec880425bd918e0bcbf9e798361585
+    introduced: c9ac13203b6685d3bf89ab6d257b37dd6b0d5833
+    fixed: ab882fe013ec880425bd918e0bcbf9e798361585
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18455
+modified: '2021-03-09T04:49:05.872972Z'
+published: '2020-07-01T00:00:07.995615Z'

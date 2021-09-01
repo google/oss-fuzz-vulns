@@ -1,4 +1,7 @@
 id: OSV-2020-31
+package:
+  name: cryptofuzz
+  ecosystem: OSS-Fuzz
 summary: Heap-use-after-free in AES_wrap_key
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23014
@@ -8,20 +11,16 @@ details: |
   AES_wrap_key
   aes_wrap_cipher
   EVP_EncryptUpdate
-modified: '2021-06-21T06:56:21.823553Z'
-published: '2020-06-24T01:51:10.989967Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23014
-affected:
-- package:
-    name: cryptofuzz
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/guidovranken/cryptofuzz
-    events:
-    - introduced: 65d7aca879ee557b80ebc9b06cea0a3197b91e64
-    - fixed: 27a32a5381e525de5646bb23898a1748cd09172a
-  ecosystem_specific:
-    severity: HIGH
+    introduced: 65d7aca879ee557b80ebc9b06cea0a3197b91e64
+    fixed: 27a32a5381e525de5646bb23898a1748cd09172a
+modified: '2021-06-21T06:56:21.823553Z'
+published: '2020-06-24T01:51:10.989967Z'
+ecosystem_specific:
+  severity: HIGH
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23014

@@ -1,4 +1,7 @@
 id: OSV-2021-654
+package:
+  name: libjpeg-turbo
+  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in decode_mcu_fast
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=33340
@@ -8,22 +11,19 @@ details: |
   decode_mcu_fast
   decode_mcu
   consume_data
-modified: '2021-06-23T06:26:26.825844Z'
-published: '2021-04-18T00:01:02.873828Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=33340
-affected:
-- package:
-    name: libjpeg-turbo
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/libjpeg-turbo/libjpeg-turbo
-    events:
-    - introduced: 171b875b272f47f1ae42a5009c64f424db22a95b
-    - fixed: 4de8f6922a9be7d0a51a429e367283fd40031b26
-  ecosystem_specific:
-    fixed_range: d147be83e9a9f904918ba7f834b0fb28e09de9b5:4de8f6922a9be7d0a51a429e367283fd40031b26
-    introduced_range: 3ab3234875bd58320b1646c086f95511ab67c972:d147be83e9a9f904918ba7f834b0fb28e09de9b5
-    severity: HIGH
+    introduced: 171b875b272f47f1ae42a5009c64f424db22a95b
+    fixed: 4de8f6922a9be7d0a51a429e367283fd40031b26
+modified: '2021-06-23T06:26:26.825844Z'
+published: '2021-04-18T00:01:02.873828Z'
+ecosystem_specific:
+  severity: HIGH
+database_specific:
+  introduced_range: 3ab3234875bd58320b1646c086f95511ab67c972:d147be83e9a9f904918ba7f834b0fb28e09de9b5
+  fixed_range: d147be83e9a9f904918ba7f834b0fb28e09de9b5:4de8f6922a9be7d0a51a429e367283fd40031b26
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=33340

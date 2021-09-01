@@ -1,4 +1,7 @@
 id: OSV-2020-177
+package:
+  name: ndpi
+  ecosystem: OSS-Fuzz
 summary: UNKNOWN in get_ndpi_flow_info6
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20747
@@ -8,20 +11,16 @@ details: |
   get_ndpi_flow_info6
   packet_processing
   ndpi_workflow_process_packet
-modified: '2021-06-21T06:56:22.588365Z'
-published: '2020-06-24T01:51:17.542041Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20747
-affected:
-- package:
-    name: ndpi
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/ntop/nDPI.git
-    events:
-    - introduced: 812505b56bb4508bc42e1615d6425ad26444d3f8
-    - fixed: 90e08b3568d8963a459cf06c4e67ff6fc99298e3
-  ecosystem_specific:
-    severity: MEDIUM
+    introduced: 812505b56bb4508bc42e1615d6425ad26444d3f8
+    fixed: 90e08b3568d8963a459cf06c4e67ff6fc99298e3
+modified: '2021-06-21T06:56:22.588365Z'
+published: '2020-06-24T01:51:17.542041Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20747

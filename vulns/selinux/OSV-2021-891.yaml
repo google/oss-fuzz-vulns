@@ -1,4 +1,7 @@
 id: OSV-2021-891
+package:
+  name: selinux
+  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in __cil_cat_expr_range_to_bitmap_helper
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=35492
@@ -8,20 +11,16 @@ details: |
   __cil_cat_expr_range_to_bitmap_helper
   __cil_expr_to_bitmap
   __evaluate_cat_expression
-modified: '2021-06-24T00:00:40.543305Z'
-published: '2021-06-24T00:00:40.542962Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=35492
-affected:
-- package:
-    name: selinux
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/SELinuxProject/selinux
-    events:
-    - introduced: 982ec302b67f3c7f8df667dadb67352b1e4a6d18
-    - fixed: 8470058934e89d1876b8e034d1ea818bde62b994
-  ecosystem_specific:
-    severity: MEDIUM
+    introduced: 982ec302b67f3c7f8df667dadb67352b1e4a6d18
+    fixed: 8470058934e89d1876b8e034d1ea818bde62b994
+modified: '2021-06-24T00:00:40.543305Z'
+published: '2021-06-24T00:00:40.542962Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=35492

@@ -1,4 +1,7 @@
 id: OSV-2020-161
+package:
+  name: jbig2dec
+  ecosystem: OSS-Fuzz
 summary: Heap-use-after-free in jbig2_release_huffman_table
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21587
@@ -8,20 +11,16 @@ details: |
   jbig2_release_huffman_table
   jbig2_text_region
   jbig2_data_in
-modified: '2021-06-21T06:56:26.187712Z'
-published: '2020-06-24T01:51:16.820995Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21587
-affected:
-- package:
-    name: jbig2dec
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: git://git.ghostscript.com/jbig2dec.git
-    events:
-    - introduced: 0665a13dcda6ab99dd93c1002d52e0206c7ecb0b
-    - fixed: 778862c21165b485302010beb5fb0765f8338b96
-  ecosystem_specific:
-    severity: HIGH
+    introduced: 0665a13dcda6ab99dd93c1002d52e0206c7ecb0b
+    fixed: 778862c21165b485302010beb5fb0765f8338b96
+modified: '2021-06-21T06:56:26.187712Z'
+published: '2020-06-24T01:51:16.820995Z'
+ecosystem_specific:
+  severity: HIGH
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21587

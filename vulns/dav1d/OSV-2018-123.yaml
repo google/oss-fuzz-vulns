@@ -1,4 +1,7 @@
 id: OSV-2018-123
+package:
+  name: dav1d
+  ecosystem: OSS-Fuzz
 summary: Use-of-uninitialized-value in iclip
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11532
@@ -8,21 +11,18 @@ details: |
   iclip
   wiener_c
   lr_stripe
-modified: '2021-06-23T06:28:52.126359Z'
-published: '2021-01-13T00:00:55.919718Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11532
-affected:
-- package:
-    name: dav1d
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://code.videolan.org/videolan/dav1d.git
-    events:
-    - introduced: c1b0808c4035bd0d62d7bfd66d0befe220ec1e52
-    - fixed: 6d87752bbaa75c80a98db558386e46c59c7bbf6f
-  ecosystem_specific:
-    severity: MEDIUM
-    fixed_range: be15be35336927caf3da6c10349b89ccf035552f:6d87752bbaa75c80a98db558386e46c59c7bbf6f
+    introduced: c1b0808c4035bd0d62d7bfd66d0befe220ec1e52
+    fixed: 6d87752bbaa75c80a98db558386e46c59c7bbf6f
+modified: '2021-06-23T06:28:52.126359Z'
+published: '2021-01-13T00:00:55.919718Z'
+ecosystem_specific:
+  severity: MEDIUM
+database_specific:
+  fixed_range: be15be35336927caf3da6c10349b89ccf035552f:6d87752bbaa75c80a98db558386e46c59c7bbf6f
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11532

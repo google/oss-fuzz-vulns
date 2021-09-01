@@ -1,4 +1,7 @@
 id: OSV-2021-367
+package:
+  name: matio
+  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in H5MM_memcpy
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30749
@@ -8,25 +11,22 @@ details: |
   H5MM_memcpy
   H5VM_memcpyvv
   H5D__compact_readvv
-modified: '2021-06-23T06:31:37.986763Z'
-published: '2021-02-11T00:00:57.089990Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30749
-affected:
-- package:
-    name: matio
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: git://git.code.sf.net/p/matio/matio
-    events:
-    - introduced: f94c087aa9be54ec86a01e267b80fd61108069be
+    introduced: f94c087aa9be54ec86a01e267b80fd61108069be
   versions:
   - v1.5.18
   - v1.5.19
   - v1.5.20
   - v1.5.21
-  ecosystem_specific:
-    severity: MEDIUM
-    introduced_range: 7a9958485036ef37b4e88df5cbe32bd7ec4c0d25:6540087e697ca2b8950bada3d4ca653951b467dc
+modified: '2021-06-23T06:31:37.986763Z'
+published: '2021-02-11T00:00:57.089990Z'
+ecosystem_specific:
+  severity: MEDIUM
+database_specific:
+  introduced_range: 7a9958485036ef37b4e88df5cbe32bd7ec4c0d25:6540087e697ca2b8950bada3d4ca653951b467dc
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30749

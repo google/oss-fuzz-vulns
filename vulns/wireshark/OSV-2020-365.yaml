@@ -1,4 +1,7 @@
 id: OSV-2020-365
+package:
+  name: wireshark
+  ecosystem: OSS-Fuzz
 summary: UNKNOWN READ in fuzzshark_ip_proto-udp
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=16442
@@ -8,20 +11,16 @@ details: |
   fuzzshark_ip_proto-udp
   g_hash_table_lookup
   dissect_tls
-modified: '2021-06-21T06:56:24.095672Z'
-published: '2020-07-01T00:00:05.383535Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=16442
-affected:
-- package:
-    name: wireshark
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://gitlab.com/wireshark/wireshark.git
-    events:
-    - introduced: ede7be3440689cee51489361934704467f2b2ffb
-    - fixed: 83220acb484e1ae615602c57c4f4eafaecbf4a5d
-  ecosystem_specific:
-    severity: MEDIUM
+    introduced: ede7be3440689cee51489361934704467f2b2ffb
+    fixed: 83220acb484e1ae615602c57c4f4eafaecbf4a5d
+modified: '2021-06-21T06:56:24.095672Z'
+published: '2020-07-01T00:00:05.383535Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=16442

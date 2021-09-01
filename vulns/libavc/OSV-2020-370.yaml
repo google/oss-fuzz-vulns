@@ -1,4 +1,7 @@
 id: OSV-2020-370
+package:
+  name: libavc
+  ecosystem: OSS-Fuzz
 summary: Heap-use-after-free in ih264_inter_pred_luma_horz_hpel_vert_qpel_ssse3
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18595
@@ -8,24 +11,20 @@ details: |
   ih264_inter_pred_luma_horz_hpel_vert_qpel_ssse3
   ih264d_motion_compensate_mp
   ih264d_decode_recon_tfr_nmb
-modified: '2021-06-21T06:56:22.142045Z'
-published: '2020-07-01T00:00:05.612589Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18595
-affected:
-- package:
-    name: libavc
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://android.googlesource.com/platform/external/libavc
-    events:
-    - introduced: 976012797811d3c1a15fdb73755c960d239a7ae8
-    - fixed: 942e7f88963d5b99a2a73c271667c5132252bd0c
+    introduced: 976012797811d3c1a15fdb73755c960d239a7ae8
+    fixed: 942e7f88963d5b99a2a73c271667c5132252bd0c
   versions:
   - android-r-preview-1
   - platform-tools-29.0.5
   - platform-tools-29.0.6
-  ecosystem_specific:
-    severity: HIGH
+modified: '2021-06-21T06:56:22.142045Z'
+published: '2020-07-01T00:00:05.612589Z'
+ecosystem_specific:
+  severity: HIGH
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18595

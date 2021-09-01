@@ -1,4 +1,7 @@
 id: OSV-2018-26
+package:
+  name: harfbuzz
+  ecosystem: OSS-Fuzz
 summary: UNKNOWN READ in BEInt<unsigned char, 1>::operator unsigned char
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11351
@@ -8,20 +11,16 @@ details: |
   BEInt<unsigned char, 1>::operator unsigned char
   OT::DeviceRecord::serialize
   OT::hdmx::serialize
-modified: '2021-06-21T06:56:20.703959Z'
-published: '2021-01-13T00:00:09.922802Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11351
-affected:
-- package:
-    name: harfbuzz
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/harfbuzz/harfbuzz.git
-    events:
-    - introduced: a953b647507fe2ae8f5187fbfb04e69d2a2952e4
-    - fixed: 9e9f16c92debecb4caf533fa112898dfec116d98
-  ecosystem_specific:
-    severity: MEDIUM
+    introduced: a953b647507fe2ae8f5187fbfb04e69d2a2952e4
+    fixed: 9e9f16c92debecb4caf533fa112898dfec116d98
+modified: '2021-06-21T06:56:20.703959Z'
+published: '2021-01-13T00:00:09.922802Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11351

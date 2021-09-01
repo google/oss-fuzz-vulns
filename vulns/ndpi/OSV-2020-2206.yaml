@@ -1,4 +1,7 @@
 id: OSV-2020-2206
+package:
+  name: ndpi
+  ecosystem: OSS-Fuzz
 summary: Segv on unknown address in ndpi_free
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=27988
@@ -8,22 +11,18 @@ details: |
   ndpi_free
   ndpi_free_flow
   fuzz_process_packet.c
-modified: '2021-06-21T06:56:22.576225Z'
-published: '2020-11-29T00:00:04.133863Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=27988
-affected:
-- package:
-    name: ndpi
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/ntop/nDPI.git
-    events:
-    - introduced: 7a1147d733dc2a43c375207747e8c4587af83388
-    - fixed: 0fceb6576aeb76b78ad9c19c86830fba694cfd5d
+    introduced: 7a1147d733dc2a43c375207747e8c4587af83388
+    fixed: 0fceb6576aeb76b78ad9c19c86830fba694cfd5d
   versions:
   - '3.4'
-  ecosystem_specific:
-    severity: HIGH
+modified: '2021-06-21T06:56:22.576225Z'
+published: '2020-11-29T00:00:04.133863Z'
+ecosystem_specific:
+  severity: HIGH
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=27988

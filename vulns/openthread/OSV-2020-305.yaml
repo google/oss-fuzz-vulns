@@ -1,4 +1,7 @@
 id: OSV-2020-305
+package:
+  name: openthread
+  ecosystem: OSS-Fuzz
 summary: Stack-buffer-overflow in ot::NetworkData::Leader::SendCommissioningGetResponse
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=17297
@@ -8,20 +11,16 @@ details: |
   ot::NetworkData::Leader::SendCommissioningGetResponse
   ot::NetworkData::Leader::HandleCommissioningGet
   ot::Coap::CoapBase::ProcessReceivedRequest
-modified: '2021-06-21T06:56:25.189347Z'
-published: '2020-06-30T00:00:48.691484Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=17297
-affected:
-- package:
-    name: openthread
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/openthread/openthread
-    events:
-    - introduced: 68426e236fe8a15884c3893a2083663687b2610f
-    - fixed: 8be8bf1fdff6181453a2c5e946618186b8b64c54
-  ecosystem_specific:
-    severity: MEDIUM
+    introduced: 68426e236fe8a15884c3893a2083663687b2610f
+    fixed: 8be8bf1fdff6181453a2c5e946618186b8b64c54
+modified: '2021-06-21T06:56:25.189347Z'
+published: '2020-06-30T00:00:48.691484Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=17297

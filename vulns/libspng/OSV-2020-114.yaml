@@ -1,4 +1,7 @@
 id: OSV-2020-114
+package:
+  name: libspng
+  ecosystem: OSS-Fuzz
 summary: Use-of-uninitialized-value in read_non_idat_chunks
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22646
@@ -8,20 +11,16 @@ details: |
   read_non_idat_chunks
   read_chunks
   spng_get_plte
-modified: '2021-06-21T06:56:21.045313Z'
-published: '2020-06-24T01:51:14.708164Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22646
-affected:
-- package:
-    name: libspng
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/randy408/libspng.git
-    events:
-    - introduced: 56ea34629ac4e56f2264f7a8212b228873e9f174
-    - fixed: 04b668f9824d0c52cdc0a0b7e58bf767d2a385fc
-  ecosystem_specific:
-    severity: MEDIUM
+    introduced: 56ea34629ac4e56f2264f7a8212b228873e9f174
+    fixed: 04b668f9824d0c52cdc0a0b7e58bf767d2a385fc
+modified: '2021-06-21T06:56:21.045313Z'
+published: '2020-06-24T01:51:14.708164Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22646

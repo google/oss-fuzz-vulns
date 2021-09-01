@@ -1,4 +1,7 @@
 id: OSV-2018-134
+package:
+  name: bloaty
+  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in bloaty::DisassembleFindReferences
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=5873
@@ -8,20 +11,16 @@ details: |
   bloaty::DisassembleFindReferences
   bloaty::ReadELFSymbols
   bloaty::ReadELFSymbols
-modified: '2021-06-21T06:56:22.423874Z'
-published: '2021-01-13T00:00:59.023336Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=5873
-affected:
-- package:
-    name: bloaty
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/google/bloaty.git
-    events:
-    - introduced: 0120168db4ba908b11545f19b08aea8afbbe9bc1
-    - fixed: 18384d6c6cbb666d08d08c0dabc4a0d1b7623f6f
-  ecosystem_specific:
-    severity: MEDIUM
+    introduced: 0120168db4ba908b11545f19b08aea8afbbe9bc1
+    fixed: 18384d6c6cbb666d08d08c0dabc4a0d1b7623f6f
+modified: '2021-06-21T06:56:22.423874Z'
+published: '2021-01-13T00:00:59.023336Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=5873

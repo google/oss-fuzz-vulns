@@ -1,4 +1,7 @@
 id: OSV-2020-245
+package:
+  name: ndpi
+  ecosystem: OSS-Fuzz
 summary: Heap-use-after-free in ndpi_http_check_content
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23046
@@ -8,20 +11,16 @@ details: |
   ndpi_http_check_content
   check_content_type_and_change_protocol
   ndpi_check_http_tcp
-modified: '2021-06-21T06:56:22.486660Z'
-published: '2020-06-26T00:00:09.813827Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23046
-affected:
-- package:
-    name: ndpi
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/ntop/nDPI.git
-    events:
-    - introduced: 374a24a1fb373617be23d7cbb397b47d23a5ffda
-    - fixed: 6a9f5e4f7c3fd5ddab3e6727b071904d76773952
-  ecosystem_specific:
-    severity: HIGH
+    introduced: 374a24a1fb373617be23d7cbb397b47d23a5ffda
+    fixed: 6a9f5e4f7c3fd5ddab3e6727b071904d76773952
+modified: '2021-06-21T06:56:22.486660Z'
+published: '2020-06-26T00:00:09.813827Z'
+ecosystem_specific:
+  severity: HIGH
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23046

@@ -1,4 +1,7 @@
 id: OSV-2021-447
+package:
+  name: lua
+  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in luaG_runerror
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31331
@@ -8,22 +11,18 @@ details: |
   luaG_runerror
   luaD_pretailcall
   luaV_execute
-modified: '2021-06-21T06:56:18.607418Z'
-published: '2021-02-25T00:02:41.560298Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31331
-affected:
-- package:
-    name: lua
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/lua/lua
-    events:
-    - introduced: 5d8ce05b3f6fad79e37ed21c1076e47a322472c6
-    - fixed: c03c527fd207b4ad8f5a8e0f4f2c176bd227c979
+    introduced: 5d8ce05b3f6fad79e37ed21c1076e47a322472c6
+    fixed: c03c527fd207b4ad8f5a8e0f4f2c176bd227c979
   versions:
   - v5.4.2
-  ecosystem_specific:
-    severity: MEDIUM
+modified: '2021-06-21T06:56:18.607418Z'
+published: '2021-02-25T00:02:41.560298Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31331

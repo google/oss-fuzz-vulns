@@ -1,4 +1,7 @@
 id: OSV-2020-548
+package:
+  name: aspell
+  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in acommon::DecodeDirect<unsigned short>::decode
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=16531
@@ -8,20 +11,16 @@ details: |
   acommon::DecodeDirect<unsigned short>::decode
   acommon::Convert::convert
   aspell_speller_suggest
-modified: '2021-06-21T06:56:20.825329Z'
-published: '2020-07-01T00:00:16.159762Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=16531
-affected:
-- package:
-    name: aspell
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/gnuaspell/aspell.git
-    events:
-    - introduced: e0646f9b063b23754951f1254f1ecb7af8ca36f3
-    - fixed: de29341638833ba7717bd6b5e6850998454b044b
-  ecosystem_specific:
-    severity: MEDIUM
+    introduced: e0646f9b063b23754951f1254f1ecb7af8ca36f3
+    fixed: de29341638833ba7717bd6b5e6850998454b044b
+modified: '2021-06-21T06:56:20.825329Z'
+published: '2020-07-01T00:00:16.159762Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=16531

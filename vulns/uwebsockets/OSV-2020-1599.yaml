@@ -1,4 +1,7 @@
 id: OSV-2020-1599
+package:
+  name: uwebsockets
+  ecosystem: OSS-Fuzz
 summary: Use-of-uninitialized-value in slide_hash
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24820
@@ -8,22 +11,18 @@ details: |
   slide_hash
   fill_window
   deflate_fast
-modified: '2021-06-21T06:56:26.548404Z'
-published: '2020-08-12T00:00:13.402621Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24820
-affected:
-- package:
-    name: uwebsockets
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/uNetworking/uWebSockets.git
-    events:
-    - introduced: 4aa7424b106eb26ed9f0c497d62c3aa40d5fe3c3
-    - fixed: 8b82998e5da42c6b08f59a6f3bccf4a81bcf55ea
+    introduced: 4aa7424b106eb26ed9f0c497d62c3aa40d5fe3c3
+    fixed: 8b82998e5da42c6b08f59a6f3bccf4a81bcf55ea
   versions:
   - v18.11.0
-  ecosystem_specific:
-    severity: MEDIUM
+modified: '2021-06-21T06:56:26.548404Z'
+published: '2020-08-12T00:00:13.402621Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24820

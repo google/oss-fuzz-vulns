@@ -1,4 +1,7 @@
 id: OSV-2020-757
+package:
+  name: cras
+  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in cras_channel_remix_conv_create
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23612
@@ -8,20 +11,16 @@ details: |
   cras_channel_remix_conv_create
   audio_thread_config_global_remix
   ccr_handle_message_from_client
-modified: '2021-06-21T06:56:27.889986Z'
-published: '2020-07-09T00:00:09.165795Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23612
-affected:
-- package:
-    name: cras
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://chromium.googlesource.com/chromiumos/third_party/adhd
-    events:
-    - introduced: 829025d88c2f1d4cbe0daa02ed37f88b4b3fffd7
-    - fixed: 144bf3828e41b26c7746be463d17d6ea55dd7163
-  ecosystem_specific:
-    severity: MEDIUM
+    introduced: 829025d88c2f1d4cbe0daa02ed37f88b4b3fffd7
+    fixed: 144bf3828e41b26c7746be463d17d6ea55dd7163
+modified: '2021-06-21T06:56:27.889986Z'
+published: '2020-07-09T00:00:09.165795Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23612

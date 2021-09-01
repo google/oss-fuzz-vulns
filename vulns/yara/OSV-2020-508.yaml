@@ -1,4 +1,7 @@
 id: OSV-2020-508
+package:
+  name: yara
+  ecosystem: OSS-Fuzz
 summary: Use-of-uninitialized-value in pe_rva_to_offset
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=19003
@@ -8,24 +11,21 @@ details: |
   pe_rva_to_offset
   dotnet_parse_tilde_2
   dotnet_parse_tilde
-modified: '2021-06-23T06:30:56.035478Z'
-published: '2020-07-01T00:00:13.673641Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=19003
-affected:
-- package:
-    name: yara
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/VirusTotal/yara.git
-    events:
-    - introduced: 49a0045c841b909e2fbf9a7ad7c45c48b3aae32b
-    - fixed: f79be4f2330f4b89ea2f42e1c44ca998c59a0c0f
+    introduced: 49a0045c841b909e2fbf9a7ad7c45c48b3aae32b
+    fixed: f79be4f2330f4b89ea2f42e1c44ca998c59a0c0f
   versions:
   - v3.11.0
-  ecosystem_specific:
-    introduced_range: 4df40fca364a8fdf29b2f84b2abac26cd16ca75f:4bdad16c167de43c407c330b2714cc5d98e04491
-    severity: MEDIUM
-    fixed_range: 1e403e9259a1abedf108ab86f711ba52c907226d:f79be4f2330f4b89ea2f42e1c44ca998c59a0c0f
+modified: '2021-06-23T06:30:56.035478Z'
+published: '2020-07-01T00:00:13.673641Z'
+ecosystem_specific:
+  severity: MEDIUM
+database_specific:
+  fixed_range: 1e403e9259a1abedf108ab86f711ba52c907226d:f79be4f2330f4b89ea2f42e1c44ca998c59a0c0f
+  introduced_range: 4df40fca364a8fdf29b2f84b2abac26cd16ca75f:4bdad16c167de43c407c330b2714cc5d98e04491
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=19003

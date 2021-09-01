@@ -1,4 +1,7 @@
 id: OSV-2018-62
+package:
+  name: openvswitch
+  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in parse_odp_key_mask_attr
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11170
@@ -8,27 +11,15 @@ details: |
   parse_odp_key_mask_attr
   parse_odp_action
   odp_actions_from_string
-modified: '2021-06-21T06:56:26.369588Z'
-published: '2021-01-13T00:00:31.395003Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11170
-affected:
-- package:
-    name: openvswitch
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/openvswitch/ovs.git
-    events:
-    - introduced: 4e9c96f00614d829347dce7f183c3bedc2b35829
-    - fixed: 2d3deb58df05c4686f19ecf16ddbd76a79b2d5a5
+    introduced: 4e9c96f00614d829347dce7f183c3bedc2b35829
+    fixed: 2d3deb58df05c4686f19ecf16ddbd76a79b2d5a5
   - type: GIT
     repo: https://github.com/openvswitch/ovs.git
-    events:
-    - introduced: 4e9c96f00614d829347dce7f183c3bedc2b35829
-    - fixed: 2d3deb58df05c4686f19ecf16ddbd76a79b2d5a5
-    - introduced: a184b7b596fbb243a6f20894df5456a96747cf39
+    introduced: a184b7b596fbb243a6f20894df5456a96747cf39
   versions:
   - v2.10.2
   - v2.10.3
@@ -36,5 +27,10 @@ affected:
   - v2.10.5
   - v2.10.6
   - v2.10.7
-  ecosystem_specific:
-    severity: MEDIUM
+modified: '2021-06-21T06:56:26.369588Z'
+published: '2021-01-13T00:00:31.395003Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11170

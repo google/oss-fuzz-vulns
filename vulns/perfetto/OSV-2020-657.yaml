@@ -1,4 +1,7 @@
 id: OSV-2020-657
+package:
+  name: perfetto
+  ecosystem: OSS-Fuzz
 summary: UNKNOWN READ in perfetto::trace_processor::ProtoTraceParser::ParseTypedFtraceToRaw
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13724
@@ -8,20 +11,16 @@ details: |
   perfetto::trace_processor::ProtoTraceParser::ParseTypedFtraceToRaw
   perfetto::trace_processor::ProtoTraceParser::ParseFtracePacket
   perfetto::trace_processor::TraceSorter::SortAndExtractEventsBeyondWindow
-modified: '2021-03-09T04:49:06.005470Z'
-published: '2020-07-01T00:00:22.958401Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13724
-affected:
-- package:
-    name: perfetto
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://android.googlesource.com/platform/external/perfetto/
-    events:
-    - introduced: fb72c36506e2f181e833637cb397befb2d598f6f
-    - fixed: 6b89433d4ad1808b386659f3afe491b19bb0acf6
+    introduced: fb72c36506e2f181e833637cb397befb2d598f6f
+    fixed: 6b89433d4ad1808b386659f3afe491b19bb0acf6
   versions:
   - android-q-preview-1
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13724
+modified: '2021-03-09T04:49:06.005470Z'
+published: '2020-07-01T00:00:22.958401Z'

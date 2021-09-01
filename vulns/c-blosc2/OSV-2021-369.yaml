@@ -1,4 +1,7 @@
 id: OSV-2021-369
+package:
+  name: c-blosc2
+  ecosystem: OSS-Fuzz
 summary: Segv on unknown address in blosc_read_header
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30761
@@ -8,18 +11,14 @@ details: |
   blosc_read_header
   blosc2_getitem_ctx
   blosc_getitem
-modified: '2021-03-15T12:00:45.425323Z'
-published: '2021-02-11T00:01:00.831869Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30761
-affected:
-- package:
-    name: c-blosc2
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/Blosc/c-blosc2.git
-    events:
-    - introduced: 57fca38a4f51687d71e451ae29df6b353764fb72
-    - fixed: 5a222cc79dc67ce01477da3a3ee10edf1076c655
+    introduced: 57fca38a4f51687d71e451ae29df6b353764fb72
+    fixed: 5a222cc79dc67ce01477da3a3ee10edf1076c655
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30761
+modified: '2021-03-15T12:00:45.425323Z'
+published: '2021-02-11T00:01:00.831869Z'

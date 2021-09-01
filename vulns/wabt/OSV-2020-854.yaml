@@ -1,25 +1,19 @@
 id: OSV-2020-854
+package:
+  name: wabt
+  ecosystem: OSS-Fuzz
 summary: UNKNOWN READ in std::__1::__hash_node_base<std::__1::__hash_node<std::__1::__hash_value_type<std
 details: "OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20959\n\
   \nCrash type: UNKNOWN READ\nCrash state:\nstd::__1::__hash_node_base<std::__1::__hash_node<std::__1::__hash_value_type<std\n\
   std::__1::__hash_table<std::__1::__hash_value_type<std::__1::basic_string<char,\
   \ \nstd::__1::__hash_table<std::__1::__hash_value_type<std::__1::basic_string<char,\
   \ \n"
-modified: '2021-06-21T06:56:24.188107Z'
-published: '2020-07-14T22:13:46.858160Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20959
-affected:
-- package:
-    name: wabt
-    ecosystem: OSS-Fuzz
+affects:
   ranges:
   - type: GIT
     repo: https://github.com/WebAssembly/wabt
-    events:
-    - introduced: ac29d4f571f54ce3c99243048ebdac6cfe6cc671
-    - fixed: ef0d3789f229e1176910e45fc47600336ae3aed9
+    introduced: ac29d4f571f54ce3c99243048ebdac6cfe6cc671
+    fixed: ef0d3789f229e1176910e45fc47600336ae3aed9
   versions:
   - 1.0.14
   - 1.0.15
@@ -29,5 +23,10 @@ affected:
   - 1.0.19
   - gh-actions-test
   - gh-actions-test2
-  ecosystem_specific:
-    severity: MEDIUM
+modified: '2021-06-21T06:56:24.188107Z'
+published: '2020-07-14T22:13:46.858160Z'
+ecosystem_specific:
+  severity: MEDIUM
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20959
