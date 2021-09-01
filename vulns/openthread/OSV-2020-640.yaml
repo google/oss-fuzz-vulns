@@ -1,7 +1,4 @@
 id: OSV-2020-640
-package:
-  name: openthread
-  ecosystem: OSS-Fuzz
 summary: Stack-buffer-overflow in ot::Message::Write
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15447
@@ -11,16 +8,20 @@ details: |
   ot::Message::Write
   ot::Message::Append
   ot::AddressResolver::SendAddressQueryResponse
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/openthread/openthread
-    introduced: b694b00951eeeb4986387de1179d55dd38643a87
-    fixed: 016b1b152327c27b2f46accd272b49da8a16ed9f
 modified: '2021-06-21T06:56:25.053797Z'
 published: '2020-07-01T00:00:21.979079Z'
-ecosystem_specific:
-  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15447
+affected:
+- package:
+    name: openthread
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/openthread/openthread
+    events:
+    - introduced: b694b00951eeeb4986387de1179d55dd38643a87
+    - fixed: 016b1b152327c27b2f46accd272b49da8a16ed9f
+  ecosystem_specific:
+    severity: MEDIUM

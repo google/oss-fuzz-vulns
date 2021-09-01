@@ -1,7 +1,4 @@
 id: OSV-2021-32
-package:
-  name: igraph
-  ecosystem: OSS-Fuzz
 summary: Heap-use-after-free in igraph_vector_ptr_size
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29408
@@ -11,16 +8,20 @@ details: |
   igraph_vector_ptr_size
   igraph_gml_tree_destroy
   igraph_i_gml_parsedata_destroy
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/igraph/igraph
-    introduced: 7cd0a0b5ce70bacce2ace8c9f7f3316cbf27484c
-    fixed: 47eec2c3a87e0c129766046ad15b074eb60a1213
 modified: '2021-06-21T06:56:18.651014Z'
 published: '2021-01-09T00:00:09.974433Z'
-ecosystem_specific:
-  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29408
+affected:
+- package:
+    name: igraph
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/igraph/igraph
+    events:
+    - introduced: 7cd0a0b5ce70bacce2ace8c9f7f3316cbf27484c
+    - fixed: 47eec2c3a87e0c129766046ad15b074eb60a1213
+  ecosystem_specific:
+    severity: HIGH

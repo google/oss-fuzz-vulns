@@ -1,7 +1,4 @@
 id: OSV-2018-422
-package:
-  name: mupdf
-  ecosystem: OSS-Fuzz
 summary: Use-of-uninitialized-value in cf2_glyphpath_pushPrevElem
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=5659
@@ -11,22 +8,25 @@ details: |
   cf2_glyphpath_pushPrevElem
   cf2_glyphpath_curveTo
   cf2_interpT2CharString
-affects:
-  ranges:
-  - type: GIT
-    repo: git://git.ghostscript.com/mupdf.git
-    introduced: 11ee2bcf4d23bcb443d6b39caa2ac62fdd9920b2
-    fixed: c7f89b2484ef1448670dd862e417d395131da7f8
-  versions:
-  - 1.13.0
-  - 1.13.0-rc1
 modified: '2021-06-23T06:25:06.618448Z'
 published: '2021-01-15T00:01:16.942847Z'
-ecosystem_specific:
-  severity: MEDIUM
-database_specific:
-  fixed_range: 319f9ba70bd8de9514d6308259190fd4e3fc74f0:c7f89b2484ef1448670dd862e417d395131da7f8
-  introduced_range: 9086386263154498dcb18c96f1e1630903b21a3c:d9bc8c6f7fb2e3ec7035bebaaee0edcf59287705
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=5659
+affected:
+- package:
+    name: mupdf
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: git://git.ghostscript.com/mupdf.git
+    events:
+    - introduced: 11ee2bcf4d23bcb443d6b39caa2ac62fdd9920b2
+    - fixed: c7f89b2484ef1448670dd862e417d395131da7f8
+  versions:
+  - 1.13.0
+  - 1.13.0-rc1
+  ecosystem_specific:
+    severity: MEDIUM
+    fixed_range: 319f9ba70bd8de9514d6308259190fd4e3fc74f0:c7f89b2484ef1448670dd862e417d395131da7f8
+    introduced_range: 9086386263154498dcb18c96f1e1630903b21a3c:d9bc8c6f7fb2e3ec7035bebaaee0edcf59287705

@@ -1,7 +1,4 @@
 id: OSV-2020-847
-package:
-  name: qpdf
-  ecosystem: OSS-Fuzz
 summary: Use-of-uninitialized-value in ycck_cmyk_convert
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18732
@@ -11,12 +8,21 @@ details: |
   ycck_cmyk_convert
   sep_upsample
   process_data_simple_main
-affects:
+modified: '2021-06-21T06:56:19.346444Z'
+published: '2020-07-14T22:13:44.357655Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18732
+affected:
+- package:
+    name: qpdf
+    ecosystem: OSS-Fuzz
   ranges:
   - type: GIT
     repo: https://github.com/qpdf/qpdf.git
-    introduced: 0ae344d002755d1f218fe4fbd818a814bc3ebdbc
-    fixed: 232f5fc9f3bed8e1b02bca5d10b2eca444e30f95
+    events:
+    - introduced: 0ae344d002755d1f218fe4fbd818a814bc3ebdbc
+    - fixed: 232f5fc9f3bed8e1b02bca5d10b2eca444e30f95
   versions:
   - release-qpdf-10.0.0
   - release-qpdf-10.0.1
@@ -26,10 +32,5 @@ affects:
   - release-qpdf-9.1.0
   - release-qpdf-9.1.1
   - release-qpdf-9.1.rc1
-modified: '2021-06-21T06:56:19.346444Z'
-published: '2020-07-14T22:13:44.357655Z'
-ecosystem_specific:
-  severity: MEDIUM
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18732
+  ecosystem_specific:
+    severity: MEDIUM

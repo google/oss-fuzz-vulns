@@ -1,7 +1,4 @@
 id: OSV-2021-757
-package:
-  name: libecc
-  ecosystem: OSS-Fuzz
 summary: Use-of-uninitialized-value in nn_check_initialized
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34156
@@ -11,18 +8,21 @@ details: |
   nn_check_initialized
   nn_zero
   ecgdsa_sign_raw
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/ANSSI-FR/libecc.git
-    introduced: f3abf297e84874278129fb91bc1b89356dd66627
-    fixed: d6cbbbb0c4afb6097dfea9eadf1516759dd337eb
 modified: '2021-06-23T06:25:06.625504Z'
 published: '2021-05-12T00:01:05.638739Z'
-ecosystem_specific:
-  severity: MEDIUM
-database_specific:
-  fixed_range: f3abf297e84874278129fb91bc1b89356dd66627:d6cbbbb0c4afb6097dfea9eadf1516759dd337eb
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34156
+affected:
+- package:
+    name: libecc
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/ANSSI-FR/libecc.git
+    events:
+    - introduced: f3abf297e84874278129fb91bc1b89356dd66627
+    - fixed: d6cbbbb0c4afb6097dfea9eadf1516759dd337eb
+  ecosystem_specific:
+    fixed_range: f3abf297e84874278129fb91bc1b89356dd66627:d6cbbbb0c4afb6097dfea9eadf1516759dd337eb
+    severity: MEDIUM

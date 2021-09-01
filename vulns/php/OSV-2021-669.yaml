@@ -1,7 +1,4 @@
 id: OSV-2021-669
-package:
-  name: php
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in _estrdup
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=33495
@@ -11,16 +8,20 @@ details: |
   _estrdup
   exif_process_user_comment
   exif_process_IFD_TAG_impl
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/php/php-src.git
-    introduced: 2bebe104c127582e9b9ab5d165717ebee44e8afc
-    fixed: 8bb81226c167e0c90a1f87357e9abd32c05076c8
 modified: '2021-06-21T06:56:20.894856Z'
 published: '2021-04-22T00:00:12.106706Z'
-ecosystem_specific:
-  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=33495
+affected:
+- package:
+    name: php
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/php/php-src.git
+    events:
+    - introduced: 2bebe104c127582e9b9ab5d165717ebee44e8afc
+    - fixed: 8bb81226c167e0c90a1f87357e9abd32c05076c8
+  ecosystem_specific:
+    severity: MEDIUM

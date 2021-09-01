@@ -1,7 +1,4 @@
 id: OSV-2020-1990
-package:
-  name: opensc
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in sc_oberthur_parse_privateinfo
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26116
@@ -11,18 +8,22 @@ details: |
   sc_oberthur_parse_privateinfo
   sc_pkcs15emu_oberthur_init
   sc_pkcs15emu_oberthur_init_ex
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/OpenSC/OpenSC
-    introduced: 6903aebfddc466d966c7b865fae34572bf3ed23e
-    fixed: fca2ba9474e150e72282317b91ce68d0b801f573
-  versions:
-  - 0.21.0-rc1
 modified: '2021-06-21T06:56:27.119370Z'
 published: '2020-10-06T00:00:11.269608Z'
-ecosystem_specific:
-  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26116
+affected:
+- package:
+    name: opensc
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/OpenSC/OpenSC
+    events:
+    - introduced: 6903aebfddc466d966c7b865fae34572bf3ed23e
+    - fixed: fca2ba9474e150e72282317b91ce68d0b801f573
+  versions:
+  - 0.21.0-rc1
+  ecosystem_specific:
+    severity: MEDIUM

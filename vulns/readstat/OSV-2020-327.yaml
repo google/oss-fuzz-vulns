@@ -1,7 +1,4 @@
 id: OSV-2020-327
-package:
-  name: readstat
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in sas_read8
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=12662
@@ -11,16 +8,20 @@ details: |
   sas_read8
   sas7bdat_parse_page_pass2
   sas7bdat_parse_all_pages_pass2
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/WizardMac/ReadStat
-    introduced: 1de4f389a8ffb07775cb1d99e33cbfa7e96bccf2
-    fixed: 15d2192da9028fee80da0b2dd8df1b6a00873e46
 modified: '2021-06-21T06:56:26.212093Z'
 published: '2020-07-01T00:00:02.920090Z'
-ecosystem_specific:
-  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=12662
+affected:
+- package:
+    name: readstat
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/WizardMac/ReadStat
+    events:
+    - introduced: 1de4f389a8ffb07775cb1d99e33cbfa7e96bccf2
+    - fixed: 15d2192da9028fee80da0b2dd8df1b6a00873e46
+  ecosystem_specific:
+    severity: MEDIUM

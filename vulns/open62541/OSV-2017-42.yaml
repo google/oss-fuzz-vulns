@@ -1,7 +1,4 @@
 id: OSV-2017-42
-package:
-  name: open62541
-  ecosystem: OSS-Fuzz
 summary: Heap-use-after-free in UA_Array_copy
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=4346
@@ -11,23 +8,30 @@ details: |
   UA_Array_copy
   copy_noInit
   NodeId_copy
-affects:
+modified: '2021-06-21T06:56:26.864146Z'
+published: '2021-01-13T21:56:05.277761Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=4346
+affected:
+- package:
+    name: open62541
+    ecosystem: OSS-Fuzz
   ranges:
   - type: GIT
     repo: https://github.com/open62541/open62541.git
-    introduced: 424f13ad6ae3929ee8bbee26bc27aa5b2d592373
-    fixed: 9165b056a95f3ff5db23dbf9628acb1efee6f86b
+    events:
+    - introduced: 424f13ad6ae3929ee8bbee26bc27aa5b2d592373
+    - fixed: 9165b056a95f3ff5db23dbf9628acb1efee6f86b
   - type: GIT
     repo: https://github.com/open62541/open62541.git
-    introduced: 2c7e4633ac4080dc21b63d6e80bc8090c3e8f6aa
+    events:
+    - introduced: 424f13ad6ae3929ee8bbee26bc27aa5b2d592373
+    - fixed: 9165b056a95f3ff5db23dbf9628acb1efee6f86b
+    - introduced: 2c7e4633ac4080dc21b63d6e80bc8090c3e8f6aa
   versions:
   - 0.2.1
   - v0.2.1
   - v0.2.2
-modified: '2021-06-21T06:56:26.864146Z'
-published: '2021-01-13T21:56:05.277761Z'
-ecosystem_specific:
-  severity: HIGH
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=4346
+  ecosystem_specific:
+    severity: HIGH

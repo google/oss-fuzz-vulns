@@ -1,7 +1,4 @@
 id: OSV-2020-1285
-package:
-  name: libhevc
-  ecosystem: OSS-Fuzz
 summary: Use-of-uninitialized-value in ihevc_deblk_luma_vert_ssse3
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=17009
@@ -11,24 +8,27 @@ details: |
   ihevc_deblk_luma_vert_ssse3
   ihevcd_deblk_ctb
   ihevcd_process
-affects:
+modified: '2021-06-23T07:03:41.879271Z'
+published: '2020-07-22T21:50:02.950786Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=17009
+affected:
+- package:
+    name: libhevc
+    ecosystem: OSS-Fuzz
   ranges:
   - type: GIT
     repo: https://android.googlesource.com/platform/external/libhevc
-    introduced: d28f2210ee8e65afdfb07a1fd6582285d3d178e0
-    fixed: 4d36db275bb4d0abc410415f6d8f5af4bc179102
+    events:
+    - introduced: d28f2210ee8e65afdfb07a1fd6582285d3d178e0
+    - fixed: 4d36db275bb4d0abc410415f6d8f5af4bc179102
   versions:
   - android-mainline-10.0.0_r11
   - android-mainline-10.0.0_r6
   - android-mainline-10.0.0_r8
   - platform-tools-29.0.5
   - android-mainline-10.0.0_r12
-modified: '2021-06-23T07:03:41.879271Z'
-published: '2020-07-22T21:50:02.950786Z'
-ecosystem_specific:
-  severity: MEDIUM
-database_specific:
-  introduced_range: unknown:d28f2210ee8e65afdfb07a1fd6582285d3d178e0
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=17009
+  ecosystem_specific:
+    introduced_range: unknown:d28f2210ee8e65afdfb07a1fd6582285d3d178e0
+    severity: MEDIUM

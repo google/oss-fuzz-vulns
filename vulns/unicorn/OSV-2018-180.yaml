@@ -1,7 +1,4 @@
 id: OSV-2018-180
-package:
-  name: unicorn
-  ecosystem: OSS-Fuzz
 summary: UNKNOWN READ in [stack]
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=10445
@@ -9,22 +6,25 @@ details: |
   Crash type: UNKNOWN READ
   Crash state:
   [stack]
-affects:
+modified: '2021-06-23T06:28:31.842823Z'
+published: '2021-01-13T00:01:14.415295Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=10445
+affected:
+- package:
+    name: unicorn
+    ecosystem: OSS-Fuzz
   ranges:
   - type: GIT
     repo: https://github.com/unicorn-engine/unicorn.git
-    introduced: 910999d3969b682d8376db1266f9885866cd785c
-    fixed: 414c230b59643cf15914b7374a3b72ef00a07038
+    events:
+    - introduced: 910999d3969b682d8376db1266f9885866cd785c
+    - fixed: 414c230b59643cf15914b7374a3b72ef00a07038
   versions:
   - 1.0.2-rc1
   - 1.0.2-rc2
   - 1.0.2-rc3
-modified: '2021-06-23T06:28:31.842823Z'
-published: '2021-01-13T00:01:14.415295Z'
-ecosystem_specific:
-  severity: MEDIUM
-database_specific:
-  fixed_range: cc5bfbc8440b176e7254181d2967771e736fd830:414c230b59643cf15914b7374a3b72ef00a07038
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=10445
+  ecosystem_specific:
+    fixed_range: cc5bfbc8440b176e7254181d2967771e736fd830:414c230b59643cf15914b7374a3b72ef00a07038
+    severity: MEDIUM

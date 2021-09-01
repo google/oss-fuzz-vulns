@@ -1,7 +1,4 @@
 id: OSV-2020-1777
-package:
-  name: php
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in exif_process_IFD_in_MAKERNOTE
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=19044
@@ -11,18 +8,21 @@ details: |
   exif_process_IFD_in_MAKERNOTE
   exif_process_IFD_TAG
   exif_process_IFD_in_TIFF
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/php/php-src.git
-    introduced: ecb1e312a0b4e90fa4d2e7bd89dbddd031f82de6
-    fixed: 655691675927fa94b634daa59fa07562f921621c
 modified: '2021-06-23T06:25:30.845494Z'
 published: '2020-09-16T00:00:31.920721Z'
-ecosystem_specific:
-  severity: MEDIUM
-database_specific:
-  introduced_range: unknown:ecb1e312a0b4e90fa4d2e7bd89dbddd031f82de6
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=19044
+affected:
+- package:
+    name: php
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/php/php-src.git
+    events:
+    - introduced: ecb1e312a0b4e90fa4d2e7bd89dbddd031f82de6
+    - fixed: 655691675927fa94b634daa59fa07562f921621c
+  ecosystem_specific:
+    introduced_range: unknown:ecb1e312a0b4e90fa4d2e7bd89dbddd031f82de6
+    severity: MEDIUM

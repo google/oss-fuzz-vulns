@@ -1,7 +1,4 @@
 id: OSV-2021-875
-package:
-  name: serenity
-  ecosystem: OSS-Fuzz
 summary: Use-after-poison in AK::RefPtr<AK::StringImpl, AK::RefPtrTraits<AK::StringImpl>
   >::RefPtr
 details: |
@@ -12,16 +9,20 @@ details: |
   AK::RefPtr<AK::StringImpl, AK::RefPtrTraits<AK::StringImpl> >::RefPtr
   AK::String::String
   JS::abstract_relation
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/SerenityOS/serenity
-    introduced: 9cbd90fdb6c92d4b74a996f9848ee9c54b189757
-    fixed: 37340aa599e177597f81748a14951c0d3d38efaf
 modified: '2021-06-21T06:56:19.859638Z'
 published: '2021-06-19T00:00:39.638228Z'
-ecosystem_specific:
-  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=35337
+affected:
+- package:
+    name: serenity
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/SerenityOS/serenity
+    events:
+    - introduced: 9cbd90fdb6c92d4b74a996f9848ee9c54b189757
+    - fixed: 37340aa599e177597f81748a14951c0d3d38efaf
+  ecosystem_specific:
+    severity: HIGH

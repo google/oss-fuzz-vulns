@@ -1,7 +1,4 @@
 id: OSV-2020-1563
-package:
-  name: harfbuzz
-  ecosystem: OSS-Fuzz
 summary: UNKNOWN READ in OT::VariationSelectorRecord::operator=
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24548
@@ -11,16 +8,20 @@ details: |
   OT::VariationSelectorRecord::operator=
   OT::VariationSelectorRecord::VariationSelectorRecord
   hb_array_t<OT::VariationSelectorRecord>::reverse
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/harfbuzz/harfbuzz.git
-    introduced: 42237adffcfd951616efc2f8fba2cd195eb002ea
-    fixed: 18ab8029d5aab6ac20c240515ad1795bd31dca1e
 modified: '2021-06-21T06:56:20.477556Z'
 published: '2020-08-01T00:00:59.284106Z'
-ecosystem_specific:
-  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24548
+affected:
+- package:
+    name: harfbuzz
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/harfbuzz/harfbuzz.git
+    events:
+    - introduced: 42237adffcfd951616efc2f8fba2cd195eb002ea
+    - fixed: 18ab8029d5aab6ac20c240515ad1795bd31dca1e
+  ecosystem_specific:
+    severity: MEDIUM

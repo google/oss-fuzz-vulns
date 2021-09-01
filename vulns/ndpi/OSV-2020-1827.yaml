@@ -1,7 +1,4 @@
 id: OSV-2020-1827
-package:
-  name: ndpi
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in http_process_user_agent
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25845
@@ -11,18 +8,22 @@ details: |
   http_process_user_agent
   process_chlo
   ndpi_search_quic
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/ntop/nDPI.git
-    introduced: 753b5dde16bae60299ca8e31afb4f519b13629c1
-    fixed: b70ad0e2f19aa1d6f4b3b64208e14c6e5839d60a
-  versions:
-  - '3.4'
 modified: '2021-06-21T06:56:22.880180Z'
 published: '2020-09-23T00:00:09.799504Z'
-ecosystem_specific:
-  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25845
+affected:
+- package:
+    name: ndpi
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/ntop/nDPI.git
+    events:
+    - introduced: 753b5dde16bae60299ca8e31afb4f519b13629c1
+    - fixed: b70ad0e2f19aa1d6f4b3b64208e14c6e5839d60a
+  versions:
+  - '3.4'
+  ecosystem_specific:
+    severity: MEDIUM

@@ -1,7 +1,4 @@
 id: OSV-2021-594
-package:
-  name: libheif
-  ecosystem: OSS-Fuzz
 summary: Global-buffer-overflow in read_coding_unit
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=32791
@@ -11,19 +8,23 @@ details: |
   read_coding_unit
   read_coding_quadtree
   read_coding_quadtree
-affects:
+modified: '2021-04-03T00:00:33.651887Z'
+published: '2021-04-03T00:00:33.651641Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=32791
+affected:
+- package:
+    name: libheif
+    ecosystem: OSS-Fuzz
   ranges:
   - type: GIT
     repo: https://github.com/strukturag/libheif.git
-    introduced: 77549e1d2595d9ac3fa2e14ed28a3e8a800e07f7
+    events:
+    - introduced: 77549e1d2595d9ac3fa2e14ed28a3e8a800e07f7
   versions:
   - v1.10.0
   - v1.11.0
   - v1.12.0
-modified: '2021-04-03T00:00:33.651887Z'
-published: '2021-04-03T00:00:33.651641Z'
-ecosystem_specific:
-  severity: null
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=32791
+  ecosystem_specific:
+    severity: null

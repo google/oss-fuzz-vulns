@@ -1,7 +1,4 @@
 id: OSV-2021-1134
-package:
-  name: libexif
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in exif_mnote_data_apple_load
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=37222
@@ -11,16 +8,20 @@ details: |
   exif_mnote_data_apple_load
   exif_mnote_data_load
   interpret_maker_note
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/libexif/libexif
-    introduced: 2f1eff50327597ddf169d9fff9df9cc237dda7f4
-    fixed: 790fb01e1c33c5c83e7f3e051fe6c6d5c3396ade
 modified: '2021-08-16T00:00:42.179090Z'
 published: '2021-08-16T00:00:42.178884Z'
-ecosystem_specific:
-  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=37222
+affected:
+- package:
+    name: libexif
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/libexif/libexif
+    events:
+    - introduced: 2f1eff50327597ddf169d9fff9df9cc237dda7f4
+    - fixed: 790fb01e1c33c5c83e7f3e051fe6c6d5c3396ade
+  ecosystem_specific:
+    severity: MEDIUM

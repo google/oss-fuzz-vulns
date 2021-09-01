@@ -1,7 +1,4 @@
 id: OSV-2020-2094
-package:
-  name: fluent-bit
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in flb_utils_time_to_seconds
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26593
@@ -10,16 +7,20 @@ details: |
   Crash state:
   flb_utils_time_to_seconds
   utils_fuzzer.c
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/fluent/fluent-bit/
-    introduced: 9ef04be94ca1ce1275ba9e7adb9eeccbe9156580
-    fixed: c2e33ae40af02fabe59b51637501a5be73583a15
 modified: '2021-06-21T06:56:24.403232Z'
 published: '2020-10-24T00:00:09.093170Z'
-ecosystem_specific:
-  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26593
+affected:
+- package:
+    name: fluent-bit
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/fluent/fluent-bit/
+    events:
+    - introduced: 9ef04be94ca1ce1275ba9e7adb9eeccbe9156580
+    - fixed: c2e33ae40af02fabe59b51637501a5be73583a15
+  ecosystem_specific:
+    severity: MEDIUM

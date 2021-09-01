@@ -1,7 +1,4 @@
 id: OSV-2018-106
-package:
-  name: harfbuzz
-  ecosystem: OSS-Fuzz
 summary: Stack-use-after-return in BEInt<unsigned short, 2>::operator unsigned short
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=10082
@@ -11,14 +8,18 @@ details: |
   BEInt<unsigned short, 2>::operator unsigned short
   OT::CoverageFormat2::Iter::more
   OT::SingleSubstFormat2::closure
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/harfbuzz/harfbuzz.git
-    introduced: acce1fa3ea9707d0883cd66397fd187d3268905c
-    fixed: 2dde6c803a9e50c5bff74095187b0cb2e12eebdd
+modified: '2021-03-09T04:49:04.819531Z'
+published: '2021-01-13T00:00:46.804388Z'
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=10082
-modified: '2021-03-09T04:49:04.819531Z'
-published: '2021-01-13T00:00:46.804388Z'
+affected:
+- package:
+    name: harfbuzz
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/harfbuzz/harfbuzz.git
+    events:
+    - introduced: acce1fa3ea9707d0883cd66397fd187d3268905c
+    - fixed: 2dde6c803a9e50c5bff74095187b0cb2e12eebdd

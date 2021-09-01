@@ -1,7 +1,4 @@
 id: OSV-2020-473
-package:
-  name: envoy
-  ecosystem: OSS-Fuzz
 summary: Heap-use-after-free in Envoy::Server::InitManagerImpl::initializeTarget
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13221
@@ -11,19 +8,23 @@ details: |
   Envoy::Server::InitManagerImpl::initializeTarget
   Envoy::Server::InitManagerImpl::initialize
   Envoy::Server::ValidationInstance::initialize
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/envoyproxy/envoy.git
-    introduced: e96425aabcce10ab2030de66f69cbb20a867322f
-    fixed: fd79055373e0b127b3d32a062ac93b6bc891fb77
-  versions:
-  - v1.9.0
-  - v1.9.1
 modified: '2021-06-21T06:56:19.380830Z'
 published: '2020-07-01T00:00:11.677829Z'
-ecosystem_specific:
-  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13221
+affected:
+- package:
+    name: envoy
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/envoyproxy/envoy.git
+    events:
+    - introduced: e96425aabcce10ab2030de66f69cbb20a867322f
+    - fixed: fd79055373e0b127b3d32a062ac93b6bc891fb77
+  versions:
+  - v1.9.0
+  - v1.9.1
+  ecosystem_specific:
+    severity: HIGH

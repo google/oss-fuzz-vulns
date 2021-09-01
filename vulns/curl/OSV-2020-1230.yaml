@@ -1,7 +1,4 @@
 id: OSV-2020-1230
-package:
-  name: curl
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in to_u32
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=16734
@@ -11,19 +8,22 @@ details: |
   to_u32
   fuzz_get_tlv_comn
   fuzz_add_mime_part
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/curl/curl.git
-    introduced: 0a5d28fa2ec872de55c8d3f3b62675f17ca9cd45
-    fixed: 25f962193574e35fe638764c3afb9d25d8a9768b
 modified: '2021-06-23T06:31:20.242669Z'
 published: '2020-07-22T21:49:58.592376Z'
-ecosystem_specific:
-  severity: MEDIUM
-database_specific:
-  introduced_range: unknown:0a5d28fa2ec872de55c8d3f3b62675f17ca9cd45
-  fixed_range: 0a5d28fa2ec872de55c8d3f3b62675f17ca9cd45:25f962193574e35fe638764c3afb9d25d8a9768b
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=16734
+affected:
+- package:
+    name: curl
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/curl/curl.git
+    events:
+    - introduced: 0a5d28fa2ec872de55c8d3f3b62675f17ca9cd45
+    - fixed: 25f962193574e35fe638764c3afb9d25d8a9768b
+  ecosystem_specific:
+    fixed_range: 0a5d28fa2ec872de55c8d3f3b62675f17ca9cd45:25f962193574e35fe638764c3afb9d25d8a9768b
+    introduced_range: unknown:0a5d28fa2ec872de55c8d3f3b62675f17ca9cd45
+    severity: MEDIUM

@@ -1,7 +1,4 @@
 id: OSV-2021-765
-package:
-  name: espeak-ng
-  ecosystem: OSS-Fuzz
 summary: Heap-use-after-free in LookupDict2
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34298
@@ -11,15 +8,19 @@ details: |
   LookupDict2
   LookupDictList
   Lookup
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/espeak-ng/espeak-ng
-    introduced: 0a713d52bbf3e061823d1a7f35e5303e7320f27a
 modified: '2021-05-15T00:00:28.613922Z'
 published: '2021-05-15T00:00:28.613673Z'
-ecosystem_specific:
-  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34298
+affected:
+- package:
+    name: espeak-ng
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/espeak-ng/espeak-ng
+    events:
+    - introduced: 0a713d52bbf3e061823d1a7f35e5303e7320f27a
+  ecosystem_specific:
+    severity: HIGH

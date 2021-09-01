@@ -1,7 +1,4 @@
 id: OSV-2020-1863
-package:
-  name: pcapplusplus
-  ecosystem: OSS-Fuzz
 summary: Bad-cast to pcpp::Layer from invalid vptr
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26013
@@ -11,21 +8,24 @@ details: |
   Bad-cast to pcpp::Layer from invalid vptr
   pcpp::IDnsResource::getRawData
   pcpp::DnsResource::getDataLength
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/seladb/PcapPlusPlus
-    introduced: a4e0d302a45f30a5c4c7be29d33b5e5a5c052a7c
-    fixed: 653e9b04b3248d782e8ceaace8cfc35ded1c024e
-  versions:
-  - v20.08
 modified: '2021-06-23T06:28:20.212752Z'
 published: '2020-09-28T00:00:15.902359Z'
-ecosystem_specific:
-  severity: HIGH
-database_specific:
-  fixed_range: 86e3f4c47dab4a4380fd4e58da1952c29da8d26a:653e9b04b3248d782e8ceaace8cfc35ded1c024e
-  introduced_range: cbe1ffdfe2deaf2fbdbae9c1c7927e083156c165:0376f65957378c9235f9f094cec7c655ab836f15
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26013
+affected:
+- package:
+    name: pcapplusplus
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/seladb/PcapPlusPlus
+    events:
+    - introduced: a4e0d302a45f30a5c4c7be29d33b5e5a5c052a7c
+    - fixed: 653e9b04b3248d782e8ceaace8cfc35ded1c024e
+  versions:
+  - v20.08
+  ecosystem_specific:
+    severity: HIGH
+    fixed_range: 86e3f4c47dab4a4380fd4e58da1952c29da8d26a:653e9b04b3248d782e8ceaace8cfc35ded1c024e
+    introduced_range: cbe1ffdfe2deaf2fbdbae9c1c7927e083156c165:0376f65957378c9235f9f094cec7c655ab836f15

@@ -1,7 +1,4 @@
 id: OSV-2021-719
-package:
-  name: freetype2
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in tt_face_get_paint_layers
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=33855
@@ -11,16 +8,20 @@ details: |
   tt_face_get_paint_layers
   FT_Get_Paint_Layers
   colrv1_traverse_paint
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/freetype/freetype2-testing.git
-    introduced: 9927e6ec5a322fcaac8e3a649b152fca2c88cf93
-    fixed: ca6201f250316e6efd445a7fd92c4d82950e4cb0
 modified: '2021-06-21T06:56:21.668265Z'
 published: '2021-05-02T00:01:07.686676Z'
-ecosystem_specific:
-  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=33855
+affected:
+- package:
+    name: freetype2
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/freetype/freetype2-testing.git
+    events:
+    - introduced: 9927e6ec5a322fcaac8e3a649b152fca2c88cf93
+    - fixed: ca6201f250316e6efd445a7fd92c4d82950e4cb0
+  ecosystem_specific:
+    severity: MEDIUM

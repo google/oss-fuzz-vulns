@@ -1,7 +1,4 @@
 id: OSV-2020-1558
-package:
-  name: rnp
-  ecosystem: OSS-Fuzz
 summary: Stack-buffer-overflow in dst_print_s2k
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24538
@@ -11,20 +8,27 @@ details: |
   dst_print_s2k
   stream_dump_packets_raw
   stream_dump_packets
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/rnpgp/rnp.git
-    introduced: 5caadd90614c75928d536f10a8d22c7cf051a3ab
-    fixed: 8507acfd5612dd8026a092e6630c179fb60a6b0c
-  - type: GIT
-    repo: https://github.com/rnpgp/rnp.git
-    introduced: c81154e503614f45b101683945bf27ce10a32b4f
-    fixed: 943cfd6d474f11910d2f137ed8cf0fc39297423f
 modified: '2021-06-21T06:56:21.901032Z'
 published: '2020-08-01T00:00:10.494492Z'
-ecosystem_specific:
-  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24538
+affected:
+- package:
+    name: rnp
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/rnpgp/rnp.git
+    events:
+    - introduced: 5caadd90614c75928d536f10a8d22c7cf051a3ab
+    - fixed: 8507acfd5612dd8026a092e6630c179fb60a6b0c
+  - type: GIT
+    repo: https://github.com/rnpgp/rnp.git
+    events:
+    - introduced: 5caadd90614c75928d536f10a8d22c7cf051a3ab
+    - fixed: 8507acfd5612dd8026a092e6630c179fb60a6b0c
+    - introduced: c81154e503614f45b101683945bf27ce10a32b4f
+    - fixed: 943cfd6d474f11910d2f137ed8cf0fc39297423f
+  ecosystem_specific:
+    severity: MEDIUM

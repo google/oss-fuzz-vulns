@@ -1,7 +1,4 @@
 id: OSV-2020-11
-package:
-  name: jbig2dec
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in jbig2_image_get_pixel_fast
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20440
@@ -11,16 +8,20 @@ details: |
   jbig2_image_get_pixel_fast
   jbig2_decode_generic_template0_TPGDON
   jbig2_immediate_generic_region
-affects:
-  ranges:
-  - type: GIT
-    repo: git://git.ghostscript.com/jbig2dec.git
-    introduced: 8a5ad7cc54f23fb99e231be3a123d6488829dc9e
-    fixed: 9d1f28c1e9b8619073b36400e787eff8d84b27c3
 modified: '2021-06-21T06:56:26.193777Z'
 published: '2020-06-24T01:51:10.030258Z'
-ecosystem_specific:
-  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20440
+affected:
+- package:
+    name: jbig2dec
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: git://git.ghostscript.com/jbig2dec.git
+    events:
+    - introduced: 8a5ad7cc54f23fb99e231be3a123d6488829dc9e
+    - fixed: 9d1f28c1e9b8619073b36400e787eff8d84b27c3
+  ecosystem_specific:
+    severity: MEDIUM

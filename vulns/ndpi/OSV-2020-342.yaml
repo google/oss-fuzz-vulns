@@ -1,7 +1,4 @@
 id: OSV-2020-342
-package:
-  name: ndpi
-  ecosystem: OSS-Fuzz
 summary: UNKNOWN READ in ndpi_search_kerberos
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=19175
@@ -11,16 +8,20 @@ details: |
   ndpi_search_kerberos
   check_ndpi_tcp_flow_func
   ndpi_detection_process_packet
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/ntop/nDPI.git
-    introduced: 65a629304c7930bd566b592c84d3478443a9e659
-    fixed: 23b0b8625d1f20596b2b20a149fb28c38046f4e1
 modified: '2021-06-21T06:56:22.607906Z'
 published: '2020-07-01T00:00:04.127415Z'
-ecosystem_specific:
-  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=19175
+affected:
+- package:
+    name: ndpi
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/ntop/nDPI.git
+    events:
+    - introduced: 65a629304c7930bd566b592c84d3478443a9e659
+    - fixed: 23b0b8625d1f20596b2b20a149fb28c38046f4e1
+  ecosystem_specific:
+    severity: HIGH

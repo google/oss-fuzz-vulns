@@ -1,7 +1,4 @@
 id: OSV-2020-2197
-package:
-  name: openvswitch
-  ecosystem: OSS-Fuzz
 summary: Heap-use-after-free in decode_NXAST_RAW_ENCAP
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=27851
@@ -11,32 +8,61 @@ details: |
   decode_NXAST_RAW_ENCAP
   ofpact_decode
   ofpacts_decode
-affects:
+modified: '2021-06-21T06:56:26.352640Z'
+published: '2020-11-27T00:01:16.495329Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=27851
+affected:
+- package:
+    name: openvswitch
+    ecosystem: OSS-Fuzz
   ranges:
   - type: GIT
     repo: https://github.com/openvswitch/ovs.git
-    introduced: 418a7a84245f5fbe589dd1267463fc9ba27a1dd6
-    fixed: 77cccc74deede443e8b9102299efc869a52b65b2
+    events:
+    - introduced: 418a7a84245f5fbe589dd1267463fc9ba27a1dd6
+    - fixed: 77cccc74deede443e8b9102299efc869a52b65b2
   - type: GIT
     repo: https://github.com/openvswitch/ovs.git
-    introduced: 418a7a84245f5fbe589dd1267463fc9ba27a1dd6
-    fixed: 38744b1bcb022c611712527f039722115300f58f
+    events:
+    - introduced: 418a7a84245f5fbe589dd1267463fc9ba27a1dd6
+    - fixed: 77cccc74deede443e8b9102299efc869a52b65b2
+    - fixed: 38744b1bcb022c611712527f039722115300f58f
   - type: GIT
     repo: https://github.com/openvswitch/ovs.git
-    introduced: 418a7a84245f5fbe589dd1267463fc9ba27a1dd6
-    fixed: 65c61b0c23a0d474696d7b1cea522a5016a8aeb3
+    events:
+    - introduced: 418a7a84245f5fbe589dd1267463fc9ba27a1dd6
+    - fixed: 77cccc74deede443e8b9102299efc869a52b65b2
+    - fixed: 38744b1bcb022c611712527f039722115300f58f
+    - fixed: 65c61b0c23a0d474696d7b1cea522a5016a8aeb3
   - type: GIT
     repo: https://github.com/openvswitch/ovs.git
-    introduced: 418a7a84245f5fbe589dd1267463fc9ba27a1dd6
-    fixed: 6d67310f4d2524b466b98f05ebccc1add1e8cf35
+    events:
+    - introduced: 418a7a84245f5fbe589dd1267463fc9ba27a1dd6
+    - fixed: 77cccc74deede443e8b9102299efc869a52b65b2
+    - fixed: 38744b1bcb022c611712527f039722115300f58f
+    - fixed: 65c61b0c23a0d474696d7b1cea522a5016a8aeb3
+    - fixed: 6d67310f4d2524b466b98f05ebccc1add1e8cf35
   - type: GIT
     repo: https://github.com/openvswitch/ovs.git
-    introduced: 418a7a84245f5fbe589dd1267463fc9ba27a1dd6
-    fixed: 8ce8dc34b5f73b30ce0c1869af9947013c3c6575
+    events:
+    - introduced: 418a7a84245f5fbe589dd1267463fc9ba27a1dd6
+    - fixed: 77cccc74deede443e8b9102299efc869a52b65b2
+    - fixed: 38744b1bcb022c611712527f039722115300f58f
+    - fixed: 65c61b0c23a0d474696d7b1cea522a5016a8aeb3
+    - fixed: 6d67310f4d2524b466b98f05ebccc1add1e8cf35
+    - fixed: 8ce8dc34b5f73b30ce0c1869af9947013c3c6575
   - type: GIT
     repo: https://github.com/openvswitch/ovs.git
-    introduced: 418a7a84245f5fbe589dd1267463fc9ba27a1dd6
-    fixed: 9926637a80d0d243dbf9c49761046895e9d1a8e2
+    events:
+    - introduced: 418a7a84245f5fbe589dd1267463fc9ba27a1dd6
+    - fixed: 77cccc74deede443e8b9102299efc869a52b65b2
+    - fixed: 38744b1bcb022c611712527f039722115300f58f
+    - fixed: 65c61b0c23a0d474696d7b1cea522a5016a8aeb3
+    - fixed: 6d67310f4d2524b466b98f05ebccc1add1e8cf35
+    - fixed: 8ce8dc34b5f73b30ce0c1869af9947013c3c6575
+    - fixed: 9926637a80d0d243dbf9c49761046895e9d1a8e2
   versions:
   - v2.11.0
   - v2.11.1
@@ -57,10 +83,5 @@ affects:
   - v2.14.1
   - v2.14.2
   - v2.15.0
-modified: '2021-06-21T06:56:26.352640Z'
-published: '2020-11-27T00:01:16.495329Z'
-ecosystem_specific:
-  severity: HIGH
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=27851
+  ecosystem_specific:
+    severity: HIGH

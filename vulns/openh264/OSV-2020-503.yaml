@@ -1,7 +1,4 @@
 id: OSV-2020-503
-package:
-  name: openh264
-  ecosystem: OSS-Fuzz
 summary: Heap-use-after-free in WelsDec::SetUnRef
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18438
@@ -11,16 +8,20 @@ details: |
   WelsDec::SetUnRef
   WelsDec::WelsResetRefPic
   WelsFreeDynamicMemory
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/cisco/openh264.git
-    introduced: c185ac351eff0ae277bfe14a3b2ad52e9ed8ab81
-    fixed: aef502aca2b912fe24764b02161a61eacdf249ba
 modified: '2021-06-21T06:56:23.730880Z'
 published: '2020-07-01T00:00:13.407780Z'
-ecosystem_specific:
-  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18438
+affected:
+- package:
+    name: openh264
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/cisco/openh264.git
+    events:
+    - introduced: c185ac351eff0ae277bfe14a3b2ad52e9ed8ab81
+    - fixed: aef502aca2b912fe24764b02161a61eacdf249ba
+  ecosystem_specific:
+    severity: HIGH

@@ -1,7 +1,4 @@
 id: OSV-2020-858
-package:
-  name: matio
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in H5O_fill_new_shared_decode
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18810
@@ -11,19 +8,23 @@ details: |
   H5O_fill_new_shared_decode
   H5O_msg_read_oh
   H5O_msg_read
-affects:
-  ranges:
-  - type: GIT
-    repo: git://git.code.sf.net/p/matio/matio
-    introduced: 6540087e697ca2b8950bada3d4ca653951b467dc
-    fixed: 1ce8f2d1845ecdde19a35605cabdbb884776d52d
-  versions:
-  - v1.5.18
-  - v1.5.19
 modified: '2021-06-21T06:56:28.293703Z'
 published: '2020-07-14T22:13:47.514744Z'
-ecosystem_specific:
-  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18810
+affected:
+- package:
+    name: matio
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: git://git.code.sf.net/p/matio/matio
+    events:
+    - introduced: 6540087e697ca2b8950bada3d4ca653951b467dc
+    - fixed: 1ce8f2d1845ecdde19a35605cabdbb884776d52d
+  versions:
+  - v1.5.18
+  - v1.5.19
+  ecosystem_specific:
+    severity: MEDIUM

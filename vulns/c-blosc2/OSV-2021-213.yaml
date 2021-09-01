@@ -1,7 +1,4 @@
 id: OSV-2021-213
-package:
-  name: c-blosc2
-  ecosystem: OSS-Fuzz
 summary: Heap-use-after-free in ZSTD_freeDDict
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29705
@@ -11,16 +8,20 @@ details: |
   ZSTD_freeDDict
   blosc2_free_ctx
   blosc2_schunk_free
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/Blosc/c-blosc2.git
-    introduced: 250ca709b73000fe9c96fcc26109f233103b1636
-    fixed: c473b21cff5e1a459b4467f18bf7414114f848fd
 modified: '2021-06-21T06:56:26.085686Z'
 published: '2021-01-20T00:01:17.956363Z'
-ecosystem_specific:
-  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29705
+affected:
+- package:
+    name: c-blosc2
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/Blosc/c-blosc2.git
+    events:
+    - introduced: 250ca709b73000fe9c96fcc26109f233103b1636
+    - fixed: c473b21cff5e1a459b4467f18bf7414114f848fd
+  ecosystem_specific:
+    severity: HIGH

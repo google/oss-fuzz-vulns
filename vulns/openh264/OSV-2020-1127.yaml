@@ -1,7 +1,4 @@
 id: OSV-2020-1127
-package:
-  name: openh264
-  ecosystem: OSS-Fuzz
 summary: Use-of-uninitialized-value in WelsDec::CWelsDecoder::ReorderPicturesInDisplay
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=12647
@@ -11,19 +8,22 @@ details: |
   WelsDec::CWelsDecoder::ReorderPicturesInDisplay
   WelsDec::CWelsDecoder::DecodeFrame2
   WelsDec::CWelsDecoder::DecodeFrameNoDelay
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/cisco/openh264.git
-    introduced: 70eeb783515dbfee3e0c781d6667838caba5113b
-    fixed: 1e2e87f07903b3dcf142b153bd92329eeb650984
 modified: '2021-06-23T06:26:22.365411Z'
 published: '2020-07-22T21:49:49.163030Z'
-ecosystem_specific:
-  severity: MEDIUM
-database_specific:
-  fixed_range: 70eeb783515dbfee3e0c781d6667838caba5113b:1e2e87f07903b3dcf142b153bd92329eeb650984
-  introduced_range: unknown:70eeb783515dbfee3e0c781d6667838caba5113b
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=12647
+affected:
+- package:
+    name: openh264
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/cisco/openh264.git
+    events:
+    - introduced: 70eeb783515dbfee3e0c781d6667838caba5113b
+    - fixed: 1e2e87f07903b3dcf142b153bd92329eeb650984
+  ecosystem_specific:
+    severity: MEDIUM
+    introduced_range: unknown:70eeb783515dbfee3e0c781d6667838caba5113b
+    fixed_range: 70eeb783515dbfee3e0c781d6667838caba5113b:1e2e87f07903b3dcf142b153bd92329eeb650984

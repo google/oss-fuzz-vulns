@@ -1,7 +1,4 @@
 id: OSV-2021-553
-package:
-  name: freetype2
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in read_color_line
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=32421
@@ -11,16 +8,20 @@ details: |
   read_color_line
   read_paint
   tt_face_get_paint
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/freetype/freetype2-testing.git
-    introduced: 9927e6ec5a322fcaac8e3a649b152fca2c88cf93
-    fixed: 9927e6ec5a322fcaac8e3a649b152fca2c88cf93
 modified: '2021-06-21T06:56:21.674292Z'
 published: '2021-03-25T00:00:03.677091Z'
-ecosystem_specific:
-  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=32421
+affected:
+- package:
+    name: freetype2
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/freetype/freetype2-testing.git
+    events:
+    - introduced: 9927e6ec5a322fcaac8e3a649b152fca2c88cf93
+    - fixed: 9927e6ec5a322fcaac8e3a649b152fca2c88cf93
+  ecosystem_specific:
+    severity: MEDIUM

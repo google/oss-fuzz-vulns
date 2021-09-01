@@ -1,7 +1,4 @@
 id: OSV-2020-373
-package:
-  name: lwan
-  ecosystem: OSS-Fuzz
 summary: UNKNOWN READ in url_decode
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14501
@@ -11,16 +8,20 @@ details: |
   url_decode
   parse_key_values
   fuzz_parse_http_request
-affects:
-  ranges:
-  - type: GIT
-    repo: git://github.com/lpereira/lwan
-    introduced: 3402997c93f794903a27d35c4624ca489f52f8ac
-    fixed: 341dca6b2594eea98df73dcdb96bb80b6ccc9fb9
 modified: '2021-06-21T06:56:19.445201Z'
 published: '2020-07-01T00:00:05.814415Z'
-ecosystem_specific:
-  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14501
+affected:
+- package:
+    name: lwan
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: git://github.com/lpereira/lwan
+    events:
+    - introduced: 3402997c93f794903a27d35c4624ca489f52f8ac
+    - fixed: 341dca6b2594eea98df73dcdb96bb80b6ccc9fb9
+  ecosystem_specific:
+    severity: MEDIUM

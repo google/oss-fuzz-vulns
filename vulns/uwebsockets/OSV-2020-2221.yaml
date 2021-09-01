@@ -1,7 +1,4 @@
 id: OSV-2020-2221
-package:
-  name: uwebsockets
-  ecosystem: OSS-Fuzz
 summary: UNKNOWN READ in std::__1::pair<unsigned int, void*> uWS::HttpParser::fenceAndConsumePostPadded<0
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=28216
@@ -11,16 +8,20 @@ details: |
   std::__1::pair<unsigned int, void*> uWS::HttpParser::fenceAndConsumePostPadded<0
   uWS::HttpParser::consumePostPadded
   std::__1::__function::__func<LLVMFuzzerTestOneInput::$_0, std::__1::allocator<LL
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/uNetworking/uWebSockets.git
-    introduced: ad0a9614307f0b3f4def859d560010b4b178f360
-    fixed: e30217e787fbd52cc74f6c61b08c2425f56df48e
 modified: '2021-06-21T06:56:26.534507Z'
 published: '2020-12-04T00:00:11.822761Z'
-ecosystem_specific:
-  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=28216
+affected:
+- package:
+    name: uwebsockets
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/uNetworking/uWebSockets.git
+    events:
+    - introduced: ad0a9614307f0b3f4def859d560010b4b178f360
+    - fixed: e30217e787fbd52cc74f6c61b08c2425f56df48e
+  ecosystem_specific:
+    severity: MEDIUM

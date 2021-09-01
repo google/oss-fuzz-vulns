@@ -1,7 +1,4 @@
 id: OSV-2020-247
-package:
-  name: wavpack
-  ecosystem: OSS-Fuzz
 summary: Use-of-uninitialized-value in WavpackDeleteTagItem
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20060
@@ -11,16 +8,20 @@ details: |
   WavpackDeleteTagItem
   WavpackAppendTagItem
   fuzzer.cc
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/dbry/WavPack.git
-    introduced: 109a35ecb400580983790961c9066bb1449185db
-    fixed: c4e193f3a360817eb097fb54f2f9f84d5dda7112
 modified: '2021-06-21T06:56:27.731522Z'
 published: '2020-06-26T00:00:10.203402Z'
-ecosystem_specific:
-  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20060
+affected:
+- package:
+    name: wavpack
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/dbry/WavPack.git
+    events:
+    - introduced: 109a35ecb400580983790961c9066bb1449185db
+    - fixed: c4e193f3a360817eb097fb54f2f9f84d5dda7112
+  ecosystem_specific:
+    severity: MEDIUM

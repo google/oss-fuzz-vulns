@@ -1,7 +1,4 @@
 id: OSV-2020-496
-package:
-  name: openthread
-  ecosystem: OSS-Fuzz
 summary: Stack-buffer-overflow in ot::Mle::Mle::HandleParentResponse
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15382
@@ -11,16 +8,20 @@ details: |
   ot::Mle::Mle::HandleParentResponse
   ot::Mle::Mle::HandleUdpReceive
   ot::Ip6::Udp::HandleMessage
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/openthread/openthread
-    introduced: b694b00951eeeb4986387de1179d55dd38643a87
-    fixed: 8224b3c49f8bd285ad5658c1b3cd9683d6627bdb
 modified: '2021-06-21T06:56:24.921341Z'
 published: '2020-07-01T00:00:13.016987Z'
-ecosystem_specific:
-  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15382
+affected:
+- package:
+    name: openthread
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/openthread/openthread
+    events:
+    - introduced: b694b00951eeeb4986387de1179d55dd38643a87
+    - fixed: 8224b3c49f8bd285ad5658c1b3cd9683d6627bdb
+  ecosystem_specific:
+    severity: MEDIUM

@@ -1,7 +1,4 @@
 id: OSV-2020-171
-package:
-  name: ndpi
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in ndpi_parse_packet_line_info
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23396
@@ -11,16 +8,20 @@ details: |
   ndpi_parse_packet_line_info
   ndpi_int_search_bittorrent_tcp_zero
   ndpi_int_search_bittorrent_tcp
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/ntop/nDPI.git
-    introduced: cd765c08d6f1038ea5efd7a7cc556ca89bdec9e4
-    fixed: 38e4910636bd6273b62e0b195c9d45483c39cc1a
 modified: '2021-06-21T06:56:22.539052Z'
 published: '2020-06-24T01:51:17.251380Z'
-ecosystem_specific:
-  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23396
+affected:
+- package:
+    name: ndpi
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/ntop/nDPI.git
+    events:
+    - introduced: cd765c08d6f1038ea5efd7a7cc556ca89bdec9e4
+    - fixed: 38e4910636bd6273b62e0b195c9d45483c39cc1a
+  ecosystem_specific:
+    severity: MEDIUM

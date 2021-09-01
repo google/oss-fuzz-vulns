@@ -1,7 +1,4 @@
 id: OSV-2020-75
-package:
-  name: file
-  ecosystem: OSS-Fuzz
 summary: Index-out-of-bounds in der_tag
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20753
@@ -11,19 +8,22 @@ details: |
   der_tag
   der_cmp
   magiccheck
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/file/file.git
-    introduced: 648bbd918a00661b5a4f355cb40f9a0f3c58007d
-    fixed: 29955546ee23b05359f2a4ed6986de590ed0b9f2
 modified: '2021-06-23T06:24:49.242815Z'
 published: '2020-06-24T01:51:12.970172Z'
-ecosystem_specific:
-  severity: MEDIUM
-database_specific:
-  introduced_range: 6cd9ecd332c05896009db23bac64692ee3e2df24:1956e3ada75acf8953936dc4a9db7d5f4157fd72
-  fixed_range: 1956e3ada75acf8953936dc4a9db7d5f4157fd72:29955546ee23b05359f2a4ed6986de590ed0b9f2
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20753
+affected:
+- package:
+    name: file
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/file/file.git
+    events:
+    - introduced: 648bbd918a00661b5a4f355cb40f9a0f3c58007d
+    - fixed: 29955546ee23b05359f2a4ed6986de590ed0b9f2
+  ecosystem_specific:
+    fixed_range: 1956e3ada75acf8953936dc4a9db7d5f4157fd72:29955546ee23b05359f2a4ed6986de590ed0b9f2
+    severity: MEDIUM
+    introduced_range: 6cd9ecd332c05896009db23bac64692ee3e2df24:1956e3ada75acf8953936dc4a9db7d5f4157fd72

@@ -1,7 +1,4 @@
 id: OSV-2021-620
-package:
-  name: libredwg
-  ecosystem: OSS-Fuzz
 summary: Segv on unknown address in dwg_free_summaryinfo
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=33059
@@ -11,11 +8,20 @@ details: |
   dwg_free_summaryinfo
   dwg_free
   llvmfuzz.c
-affects:
+modified: '2021-07-10T00:04:25.393455Z'
+published: '2021-04-10T00:00:11.142635Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=33059
+affected:
+- package:
+    name: libredwg
+    ecosystem: OSS-Fuzz
   ranges:
   - type: GIT
     repo: https://github.com/LibreDWG/libredwg
-    introduced: cb74d5cf5bffc2a9dee8da43105d892f9a728777
+    events:
+    - introduced: cb74d5cf5bffc2a9dee8da43105d892f9a728777
   versions:
   - 0.12.3.4163
   - 0.12.3.4165
@@ -60,10 +66,5 @@ affects:
   - 0.12.4.4338
   - 0.12.4.4343
   - 0.12.4.4348
-modified: '2021-07-10T00:04:25.393455Z'
-published: '2021-04-10T00:00:11.142635Z'
-ecosystem_specific:
-  severity: null
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=33059
+  ecosystem_specific:
+    severity: null

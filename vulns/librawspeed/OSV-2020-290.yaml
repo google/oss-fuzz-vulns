@@ -1,7 +1,4 @@
 id: OSV-2020-290
-package:
-  name: librawspeed
-  ecosystem: OSS-Fuzz
 summary: Use-of-uninitialized-value in rawspeed::RawImageData::checkMemIsInitialized
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18877
@@ -11,16 +8,20 @@ details: |
   rawspeed::RawImageData::checkMemIsInitialized
   PhaseOneDecompressor.cpp
   posix_memalign
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/darktable-org/rawspeed.git
-    introduced: 3c59e32dd1a1b88beeb66942f8c14c11166f7c4d
-    fixed: 3753c84ea46eeb86a0daf8da8c088342515b10dd
 modified: '2021-06-21T06:56:22.969520Z'
 published: '2020-06-30T00:00:46.872041Z'
-ecosystem_specific:
-  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18877
+affected:
+- package:
+    name: librawspeed
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/darktable-org/rawspeed.git
+    events:
+    - introduced: 3c59e32dd1a1b88beeb66942f8c14c11166f7c4d
+    - fixed: 3753c84ea46eeb86a0daf8da8c088342515b10dd
+  ecosystem_specific:
+    severity: MEDIUM

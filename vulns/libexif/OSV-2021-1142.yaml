@@ -1,7 +1,4 @@
 id: OSV-2021-1142
-package:
-  name: libexif
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in exif_get_slong
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=37231
@@ -11,16 +8,20 @@ details: |
   exif_get_slong
   mnote_apple_entry_get_value
   exif_mnote_data_apple_get_value
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/libexif/libexif
-    introduced: 2f1eff50327597ddf169d9fff9df9cc237dda7f4
-    fixed: eb452f533b2d906130a557ced3d6e38d7b064ff9
 modified: '2021-08-17T00:02:03.206448Z'
 published: '2021-08-17T00:02:03.206223Z'
-ecosystem_specific:
-  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=37231
+affected:
+- package:
+    name: libexif
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/libexif/libexif
+    events:
+    - introduced: 2f1eff50327597ddf169d9fff9df9cc237dda7f4
+    - fixed: eb452f533b2d906130a557ced3d6e38d7b064ff9
+  ecosystem_specific:
+    severity: HIGH

@@ -1,7 +1,4 @@
 id: OSV-2018-446
-package:
-  name: mupdf
-  ecosystem: OSS-Fuzz
 summary: Use-of-uninitialized-value in fz_drop_key_storable
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=5879
@@ -11,18 +8,21 @@ details: |
   fz_drop_key_storable
   fz_drop_colorspace_context
   fz_drop_context
-affects:
-  ranges:
-  - type: GIT
-    repo: git://git.ghostscript.com/mupdf.git
-    introduced: 11ee2bcf4d23bcb443d6b39caa2ac62fdd9920b2
-    fixed: 4dcc6affe04368461310a21238f7e1871a752a05
 modified: '2021-06-23T06:24:54.522535Z'
 published: '2021-01-15T00:01:21.873280Z'
-ecosystem_specific:
-  severity: MEDIUM
-database_specific:
-  introduced_range: 9086386263154498dcb18c96f1e1630903b21a3c:d9bc8c6f7fb2e3ec7035bebaaee0edcf59287705
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=5879
+affected:
+- package:
+    name: mupdf
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: git://git.ghostscript.com/mupdf.git
+    events:
+    - introduced: 11ee2bcf4d23bcb443d6b39caa2ac62fdd9920b2
+    - fixed: 4dcc6affe04368461310a21238f7e1871a752a05
+  ecosystem_specific:
+    severity: MEDIUM
+    introduced_range: 9086386263154498dcb18c96f1e1630903b21a3c:d9bc8c6f7fb2e3ec7035bebaaee0edcf59287705

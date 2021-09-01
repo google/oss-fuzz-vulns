@@ -1,7 +1,4 @@
 id: OSV-2020-1203
-package:
-  name: openh264
-  ecosystem: OSS-Fuzz
 summary: Heap-use-after-free in WelsDec::WelsReorderRefList
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20491
@@ -11,22 +8,25 @@ details: |
   WelsDec::WelsReorderRefList
   WelsDec::InitRefPicList
   WelsDec::DecodeCurrentAccessUnit
-affects:
+modified: '2021-06-23T06:26:20.666576Z'
+published: '2020-07-22T21:49:56.222517Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20491
+affected:
+- package:
+    name: openh264
+    ecosystem: OSS-Fuzz
   ranges:
   - type: GIT
     repo: https://github.com/cisco/openh264.git
-    introduced: 70eeb783515dbfee3e0c781d6667838caba5113b
-    fixed: 68b51e8aed5ea83bcbb9da90af03023ce54a5427
+    events:
+    - introduced: 70eeb783515dbfee3e0c781d6667838caba5113b
+    - fixed: 68b51e8aed5ea83bcbb9da90af03023ce54a5427
   versions:
   - v2.0.0
   - v2.1.0
   - v2.1.1
-modified: '2021-06-23T06:26:20.666576Z'
-published: '2020-07-22T21:49:56.222517Z'
-ecosystem_specific:
-  severity: HIGH
-database_specific:
-  introduced_range: unknown:70eeb783515dbfee3e0c781d6667838caba5113b
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20491
+  ecosystem_specific:
+    introduced_range: unknown:70eeb783515dbfee3e0c781d6667838caba5113b
+    severity: HIGH

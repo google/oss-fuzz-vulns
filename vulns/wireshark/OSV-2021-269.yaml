@@ -1,7 +1,4 @@
 id: OSV-2021-269
-package:
-  name: wireshark
-  ecosystem: OSS-Fuzz
 summary: Stack-use-after-return in sta_prop_equal_fn
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30192
@@ -11,14 +8,18 @@ details: |
   sta_prop_equal_fn
   wmem_map_insert
   dissect_ieeeNUMBER_common
-affects:
-  ranges:
-  - type: GIT
-    repo: https://gitlab.com/wireshark/wireshark.git
-    introduced: fb2a0b4a71b134a2830e39b6493a4007818ceda6
-    fixed: 910c489a4a77b297052873be2e018bc98f0f77be
+modified: '2021-03-10T12:00:46.310796Z'
+published: '2021-02-04T00:00:11.295257Z'
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30192
-modified: '2021-03-10T12:00:46.310796Z'
-published: '2021-02-04T00:00:11.295257Z'
+affected:
+- package:
+    name: wireshark
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://gitlab.com/wireshark/wireshark.git
+    events:
+    - introduced: fb2a0b4a71b134a2830e39b6493a4007818ceda6
+    - fixed: 910c489a4a77b297052873be2e018bc98f0f77be

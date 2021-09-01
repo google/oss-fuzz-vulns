@@ -1,7 +1,4 @@
 id: OSV-2020-180
-package:
-  name: arrow
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in parquet::PlainByteArrayDecoder::DecodeArrowDense
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21009
@@ -11,16 +8,20 @@ details: |
   parquet::PlainByteArrayDecoder::DecodeArrowDense
   parquet::PlainByteArrayDecoder::DecodeArrow
   parquet::internal::ByteArrayChunkedRecordReader::ReadValuesSpaced
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/apache/arrow.git
-    introduced: 431fdbfbc0fb4bb16c4a89298404ad16784db2a0
-    fixed: 6b87c6c9fb00ade7eff909afa4a6a61464cd516c
 modified: '2021-06-21T06:56:19.627814Z'
 published: '2020-06-24T01:51:17.681643Z'
-ecosystem_specific:
-  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21009
+affected:
+- package:
+    name: arrow
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/apache/arrow.git
+    events:
+    - introduced: 431fdbfbc0fb4bb16c4a89298404ad16784db2a0
+    - fixed: 6b87c6c9fb00ade7eff909afa4a6a61464cd516c
+  ecosystem_specific:
+    severity: MEDIUM

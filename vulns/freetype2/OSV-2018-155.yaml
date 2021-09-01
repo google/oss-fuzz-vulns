@@ -1,7 +1,4 @@
 id: OSV-2018-155
-package:
-  name: freetype2
-  ecosystem: OSS-Fuzz
 summary: Stack-buffer-overflow in cff_parser_run
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=9865
@@ -11,19 +8,22 @@ details: |
   cff_parser_run
   cff_subfont_load
   cff_font_load
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/freetype/freetype2-testing.git
-    introduced: 731c059129aeb228ea62d8cad40c71dcaa9530b2
-    fixed: 2ec74e56d188909f4f4117faa564a8b68d6e22bb
 modified: '2021-06-23T06:25:41.931598Z'
 published: '2021-01-13T00:01:06.516725Z'
-ecosystem_specific:
-  severity: MEDIUM
-database_specific:
-  introduced_range: f926f1a2f4dbbc61fcae96da71ba65de5280b94d:4fa3193a6e42c6e65bea0698c85d5a4792e2351c
-  fixed_range: 0c256f6e16eb73be1aef98197755e0e6bb4c56a9:2ec74e56d188909f4f4117faa564a8b68d6e22bb
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=9865
+affected:
+- package:
+    name: freetype2
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/freetype/freetype2-testing.git
+    events:
+    - introduced: 731c059129aeb228ea62d8cad40c71dcaa9530b2
+    - fixed: 2ec74e56d188909f4f4117faa564a8b68d6e22bb
+  ecosystem_specific:
+    severity: MEDIUM
+    fixed_range: 0c256f6e16eb73be1aef98197755e0e6bb4c56a9:2ec74e56d188909f4f4117faa564a8b68d6e22bb
+    introduced_range: f926f1a2f4dbbc61fcae96da71ba65de5280b94d:4fa3193a6e42c6e65bea0698c85d5a4792e2351c

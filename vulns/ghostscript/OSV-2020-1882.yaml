@@ -1,7 +1,4 @@
 id: OSV-2020-1882
-package:
-  name: ghostscript
-  ecosystem: OSS-Fuzz
 summary: Use-of-uninitialized-value in gx_dc_ht_colored_read
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21617
@@ -11,18 +8,21 @@ details: |
   gx_dc_ht_colored_read
   clist_playback_band
   clist_playback_file_bands
-affects:
-  ranges:
-  - type: GIT
-    repo: git://git.ghostscript.com/ghostpdl.git
-    introduced: 668917a10e7eada030f7d2dddec9f579fddeed3d
-    fixed: b503c46c124cf5aaa82a71e28f624f2ef2b71e71
 modified: '2021-06-23T06:25:38.180260Z'
 published: '2020-09-29T00:00:38.635677Z'
-ecosystem_specific:
-  severity: MEDIUM
-database_specific:
-  introduced_range: unknown:668917a10e7eada030f7d2dddec9f579fddeed3d
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21617
+affected:
+- package:
+    name: ghostscript
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: git://git.ghostscript.com/ghostpdl.git
+    events:
+    - introduced: 668917a10e7eada030f7d2dddec9f579fddeed3d
+    - fixed: b503c46c124cf5aaa82a71e28f624f2ef2b71e71
+  ecosystem_specific:
+    severity: MEDIUM
+    introduced_range: unknown:668917a10e7eada030f7d2dddec9f579fddeed3d

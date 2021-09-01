@@ -1,7 +1,4 @@
 id: OSV-2021-1074
-package:
-  name: skia
-  ecosystem: OSS-Fuzz
 summary: Use-of-uninitialized-value in SkBaseDevice::save
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=36647
@@ -11,18 +8,21 @@ details: |
   SkBaseDevice::save
   SkCanvas::internalSave
   SkCanvas::internalSaveLayer
-affects:
-  ranges:
-  - type: GIT
-    repo: https://skia.googlesource.com/skia.git
-    introduced: 222c1c16317c54a8701e7ccf767a1a62b4f30627
-    fixed: 17eaf6216046fba422081c8bb4d5580008ab283e
 modified: '2021-07-30T00:01:28.710527Z'
 published: '2021-07-30T00:01:28.710335Z'
-ecosystem_specific:
-  severity: MEDIUM
-database_specific:
-  fixed_range: 222c1c16317c54a8701e7ccf767a1a62b4f30627:17eaf6216046fba422081c8bb4d5580008ab283e
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=36647
+affected:
+- package:
+    name: skia
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://skia.googlesource.com/skia.git
+    events:
+    - introduced: 222c1c16317c54a8701e7ccf767a1a62b4f30627
+    - fixed: 17eaf6216046fba422081c8bb4d5580008ab283e
+  ecosystem_specific:
+    severity: MEDIUM
+    fixed_range: 222c1c16317c54a8701e7ccf767a1a62b4f30627:17eaf6216046fba422081c8bb4d5580008ab283e

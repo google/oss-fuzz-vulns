@@ -1,7 +1,4 @@
 id: OSV-2018-108
-package:
-  name: harfbuzz
-  ecosystem: OSS-Fuzz
 summary: UNKNOWN READ in BEInt<int, 4>::operator int
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=10898
@@ -11,18 +8,21 @@ details: |
   BEInt<int, 4>::operator int
   hb_kern_machine_t<AAT::KerxSubTableFormat6::accelerator_t>::kern
   AAT::KerxSubTableFormat6::apply
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/harfbuzz/harfbuzz.git
-    introduced: ab1f30bd059f1d2270793e9726b60666b328d2b8
-    fixed: 0f85edb7781f4d5ec2de676979be75a0f6559d80
 modified: '2021-06-23T06:25:30.794910Z'
 published: '2021-01-13T00:00:47.924143Z'
-ecosystem_specific:
-  severity: MEDIUM
-database_specific:
-  fixed_range: ab1f30bd059f1d2270793e9726b60666b328d2b8:0f85edb7781f4d5ec2de676979be75a0f6559d80
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=10898
+affected:
+- package:
+    name: harfbuzz
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/harfbuzz/harfbuzz.git
+    events:
+    - introduced: ab1f30bd059f1d2270793e9726b60666b328d2b8
+    - fixed: 0f85edb7781f4d5ec2de676979be75a0f6559d80
+  ecosystem_specific:
+    fixed_range: ab1f30bd059f1d2270793e9726b60666b328d2b8:0f85edb7781f4d5ec2de676979be75a0f6559d80
+    severity: MEDIUM

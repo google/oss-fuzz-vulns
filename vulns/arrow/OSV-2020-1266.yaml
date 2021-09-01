@@ -1,7 +1,4 @@
 id: OSV-2020-1266
-package:
-  name: arrow
-  ecosystem: OSS-Fuzz
 summary: UNKNOWN READ in arrow::Array::IsNull
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20139
@@ -11,18 +8,21 @@ details: |
   arrow::Array::IsNull
   arrow::Status arrow::VisitArrayInline<arrow::internal::ValidateArrayDataVisitor>
   arrow::internal::ValidateArrayData
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/apache/arrow.git
-    introduced: ccdc4b076cbd5fb03e1cbc42292def871d2b6035
-    fixed: 724da320eaac94003a8f1229d6a820fe8c8c1816
 modified: '2021-06-23T06:25:11.664391Z'
 published: '2020-07-22T21:50:01.820417Z'
-ecosystem_specific:
-  severity: MEDIUM
-database_specific:
-  introduced_range: unknown:ccdc4b076cbd5fb03e1cbc42292def871d2b6035
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20139
+affected:
+- package:
+    name: arrow
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/apache/arrow.git
+    events:
+    - introduced: ccdc4b076cbd5fb03e1cbc42292def871d2b6035
+    - fixed: 724da320eaac94003a8f1229d6a820fe8c8c1816
+  ecosystem_specific:
+    introduced_range: unknown:ccdc4b076cbd5fb03e1cbc42292def871d2b6035
+    severity: MEDIUM

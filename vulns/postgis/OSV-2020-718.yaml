@@ -1,7 +1,4 @@
 id: OSV-2020-718
-package:
-  name: postgis
-  ecosystem: OSS-Fuzz
 summary: UNKNOWN READ in double_from_wkb_state
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18153
@@ -11,19 +8,23 @@ details: |
   double_from_wkb_state
   ptarray_from_wkb_state
   lwline_from_wkb_state
-affects:
-  ranges:
-  - type: GIT
-    repo: https://git.osgeo.org/gitea/postgis/postgis.git
-    introduced: f9ed41356bf26b475ae9600eca47d25d240fcdb2
-    fixed: a1b82509e40fcb5c4065a8fe1bf8b078e8a8373f
-  versions:
-  - 3.0.0beta1
-  - 3.0.0rc1
 modified: '2021-06-21T06:56:25.412635Z'
 published: '2020-07-01T00:00:26.532203Z'
-ecosystem_specific:
-  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18153
+affected:
+- package:
+    name: postgis
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://git.osgeo.org/gitea/postgis/postgis.git
+    events:
+    - introduced: f9ed41356bf26b475ae9600eca47d25d240fcdb2
+    - fixed: a1b82509e40fcb5c4065a8fe1bf8b078e8a8373f
+  versions:
+  - 3.0.0beta1
+  - 3.0.0rc1
+  ecosystem_specific:
+    severity: MEDIUM

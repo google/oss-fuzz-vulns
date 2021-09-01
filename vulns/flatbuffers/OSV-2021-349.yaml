@@ -1,7 +1,4 @@
 id: OSV-2021-349
-package:
-  name: flatbuffers
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in flatbuffers::vector_downward::fill
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30684
@@ -11,16 +8,20 @@ details: |
   flatbuffers::vector_downward::fill
   flatbuffers::FlatBufferBuilder::PreAlign
   flatbuffers::FlatBufferBuilder::ForceVectorAlignment
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/google/flatbuffers
-    introduced: 6f3e45eca1fde7a68cb72fd4499a3647f719c9db
-    fixed: fee095410b0969765b5c2545c10e585f69e961b0
 modified: '2021-06-21T06:56:27.462025Z'
 published: '2021-02-10T00:00:39.669242Z'
-ecosystem_specific:
-  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30684
+affected:
+- package:
+    name: flatbuffers
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/google/flatbuffers
+    events:
+    - introduced: 6f3e45eca1fde7a68cb72fd4499a3647f719c9db
+    - fixed: fee095410b0969765b5c2545c10e585f69e961b0
+  ecosystem_specific:
+    severity: HIGH

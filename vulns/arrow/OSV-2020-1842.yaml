@@ -1,7 +1,4 @@
 id: OSV-2020-1842
-package:
-  name: arrow
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in parquet::arrow::SchemaManifest::Make
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25933
@@ -11,21 +8,25 @@ details: |
   parquet::arrow::SchemaManifest::Make
   parquet::arrow::FileReader::Make
   parquet::arrow::internal::FuzzReader
-affects:
+modified: '2021-06-21T06:56:19.705406Z'
+published: '2020-09-26T00:00:04.850649Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25933
+affected:
+- package:
+    name: arrow
+    ecosystem: OSS-Fuzz
   ranges:
   - type: GIT
     repo: https://github.com/apache/arrow.git
-    introduced: 6d3c08586b7a3d79a618ace0eddfe79bdb223282
-    fixed: 571d48e007718321bca8adb5f100555fed0e1957
+    events:
+    - introduced: 6d3c08586b7a3d79a618ace0eddfe79bdb223282
+    - fixed: 571d48e007718321bca8adb5f100555fed0e1957
   versions:
   - apache-arrow-0.17.0
   - apache-arrow-0.17.1
   - apache-arrow-1.0.0
   - apache-arrow-1.0.1
-modified: '2021-06-21T06:56:19.705406Z'
-published: '2020-09-26T00:00:04.850649Z'
-ecosystem_specific:
-  severity: MEDIUM
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25933
+  ecosystem_specific:
+    severity: MEDIUM

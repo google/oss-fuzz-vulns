@@ -1,7 +1,4 @@
 id: OSV-2020-758
-package:
-  name: arrow
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in void arrow::internal::TransferBitmap<
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23868
@@ -11,16 +8,20 @@ details: |
   void arrow::internal::TransferBitmap<
   arrow::ConcatenateBitmaps
   arrow::ConcatenateImpl::Concatenate
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/apache/arrow.git
-    introduced: 39d9345ec465c735ff071c20737007209afe7405
-    fixed: cb2cf2f2a4714d161535837d90b025feef5bca5c
 modified: '2021-06-21T06:56:19.640360Z'
 published: '2020-07-09T00:00:16.162262Z'
-ecosystem_specific:
-  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23868
+affected:
+- package:
+    name: arrow
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/apache/arrow.git
+    events:
+    - introduced: 39d9345ec465c735ff071c20737007209afe7405
+    - fixed: cb2cf2f2a4714d161535837d90b025feef5bca5c
+  ecosystem_specific:
+    severity: MEDIUM

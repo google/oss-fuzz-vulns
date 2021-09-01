@@ -1,7 +1,4 @@
 id: OSV-2020-2130
-package:
-  name: wolfssl
-  ecosystem: OSS-Fuzz
 summary: Use-of-uninitialized-value in memory_test
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=27020
@@ -11,16 +8,20 @@ details: |
   memory_test
   fuzzer_send
   SendBuffered
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/wolfssl/wolfssl
-    introduced: 9793414d78298323202b9fcb6876524b81efb88f
-    fixed: c697520826d5f3e7089609c887913290f6fa55c0
 modified: '2021-06-21T06:56:22.353084Z'
 published: '2020-11-07T00:00:36.395318Z'
-ecosystem_specific:
-  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=27020
+affected:
+- package:
+    name: wolfssl
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/wolfssl/wolfssl
+    events:
+    - introduced: 9793414d78298323202b9fcb6876524b81efb88f
+    - fixed: c697520826d5f3e7089609c887913290f6fa55c0
+  ecosystem_specific:
+    severity: MEDIUM

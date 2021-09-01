@@ -1,7 +1,4 @@
 id: OSV-2020-560
-package:
-  name: radare2
-  ecosystem: OSS-Fuzz
 summary: Heap-use-after-free in cin_get
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15200
@@ -11,21 +8,25 @@ details: |
   cin_get
   get_token
   prim
-affects:
+modified: '2021-06-21T06:56:23.065765Z'
+published: '2020-07-01T00:00:16.991378Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15200
+affected:
+- package:
+    name: radare2
+    ecosystem: OSS-Fuzz
   ranges:
   - type: GIT
     repo: https://github.com/radare/radare2
-    introduced: 1b0a7bc988c4d327d7090af9757c775f88947e42
-    fixed: d7fd30df8ef0f1a9081863b91a0197f26408dc6b
+    events:
+    - introduced: 1b0a7bc988c4d327d7090af9757c775f88947e42
+    - fixed: d7fd30df8ef0f1a9081863b91a0197f26408dc6b
   versions:
   - 3.5.0
   - 3.5.1
   - 3.6.0
   - 3.7.0
-modified: '2021-06-21T06:56:23.065765Z'
-published: '2020-07-01T00:00:16.991378Z'
-ecosystem_specific:
-  severity: HIGH
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15200
+  ecosystem_specific:
+    severity: HIGH

@@ -1,7 +1,4 @@
 id: OSV-2020-2134
-package:
-  name: hostap
-  ecosystem: OSS-Fuzz
 summary: UNKNOWN READ in wpabuf_free
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=27269
@@ -11,12 +8,21 @@ details: |
   wpabuf_free
   p2p_device_free
   p2p_flush
-affects:
+modified: '2021-06-21T06:56:21.717904Z'
+published: '2020-11-08T00:00:23.538Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=27269
+affected:
+- package:
+    name: hostap
+    ecosystem: OSS-Fuzz
   ranges:
   - type: GIT
     repo: git://w1.fi/srv/git/hostap.git
-    introduced: e57ae6e19edfaf1cbecbdfabbfe9fbc729e2d064
-    fixed: 947272febe24a8f0ea828b5b2f35f13c3821901e
+    events:
+    - introduced: e57ae6e19edfaf1cbecbdfabbfe9fbc729e2d064
+    - fixed: 947272febe24a8f0ea828b5b2f35f13c3821901e
   versions:
   - aosp-jb-from-upstream
   - aosp-jb-start
@@ -32,10 +38,5 @@ affects:
   - hostap_2_7
   - hostap_2_8
   - hostap_2_9
-modified: '2021-06-21T06:56:21.717904Z'
-published: '2020-11-08T00:00:23.538Z'
-ecosystem_specific:
-  severity: MEDIUM
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=27269
+  ecosystem_specific:
+    severity: MEDIUM

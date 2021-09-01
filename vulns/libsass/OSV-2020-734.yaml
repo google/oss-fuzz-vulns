@@ -1,7 +1,4 @@
 id: OSV-2020-734
-package:
-  name: libsass
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in Sass::Prelexer::quoted_string
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15890
@@ -11,21 +8,25 @@ details: |
   Sass::Prelexer::quoted_string
   char const* Sass::Parser::lex<&
   Sass::Parser::parse_value_schema
-affects:
+modified: '2021-06-21T06:56:24.529659Z'
+published: '2020-07-01T00:00:27.416077Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15890
+affected:
+- package:
+    name: libsass
+    ecosystem: OSS-Fuzz
   ranges:
   - type: GIT
     repo: https://github.com/sass/libsass.git
-    introduced: 8e681e20795ee1cf203ff7002367c29735addf67
-    fixed: 7a21c79e321927363a153dc5d7e9c492365faf9b
+    events:
+    - introduced: 8e681e20795ee1cf203ff7002367c29735addf67
+    - fixed: 7a21c79e321927363a153dc5d7e9c492365faf9b
   versions:
   - 3.6.0
   - 3.6.1
   - 3.6.2
   - 3.6.3
-modified: '2021-06-21T06:56:24.529659Z'
-published: '2020-07-01T00:00:27.416077Z'
-ecosystem_specific:
-  severity: MEDIUM
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15890
+  ecosystem_specific:
+    severity: MEDIUM

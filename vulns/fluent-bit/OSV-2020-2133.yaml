@@ -1,7 +1,4 @@
 id: OSV-2020-2133
-package:
-  name: fluent-bit
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in tdefl_compress_lz_codes
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=27263
@@ -11,15 +8,27 @@ details: |
   tdefl_compress_lz_codes
   tdefl_compress_block
   tdefl_flush_block
-affects:
+modified: '2021-06-21T06:56:24.454756Z'
+published: '2020-11-08T00:00:05.283717Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=27263
+affected:
+- package:
+    name: fluent-bit
+    ecosystem: OSS-Fuzz
   ranges:
   - type: GIT
     repo: https://github.com/fluent/fluent-bit/
-    introduced: 7a588237fdb744e5825fb119753dcad2e8878866
-    fixed: df2af999105cd6c94ec8b533bcca498664b1aa16
+    events:
+    - introduced: 7a588237fdb744e5825fb119753dcad2e8878866
+    - fixed: df2af999105cd6c94ec8b533bcca498664b1aa16
   - type: GIT
     repo: https://github.com/fluent/fluent-bit/
-    introduced: 03ff96d82f5f51a8bea6981fc9d7e8c3429c50b1
+    events:
+    - introduced: 7a588237fdb744e5825fb119753dcad2e8878866
+    - fixed: df2af999105cd6c94ec8b533bcca498664b1aa16
+    - introduced: 03ff96d82f5f51a8bea6981fc9d7e8c3429c50b1
   versions:
   - v1.6.10
   - v1.6.4
@@ -39,10 +48,5 @@ affects:
   - v1.7.0-rc8
   - v1.7.0-rc9
   - v1.7.1
-modified: '2021-06-21T06:56:24.454756Z'
-published: '2020-11-08T00:00:05.283717Z'
-ecosystem_specific:
-  severity: HIGH
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=27263
+  ecosystem_specific:
+    severity: HIGH

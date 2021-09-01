@@ -1,7 +1,4 @@
 id: OSV-2020-2300
-package:
-  name: matio
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in H5MM_strdup
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29493
@@ -11,19 +8,23 @@ details: |
   H5MM_strdup
   H5O_attr_shared_decode
   H5O_msg_iterate_real
-affects:
-  ranges:
-  - type: GIT
-    repo: git://git.code.sf.net/p/matio/matio
-    introduced: a47b7cd3aca70e9a0bddf8146eb4ab0cbd19c2c3
-    fixed: 8195e5d3e3c65ff6bcc0aae31a4a53eb609c4d7e
-  versions:
-  - v1.5.18
-  - v1.5.19
 modified: '2021-06-21T06:56:28.300148Z'
 published: '2021-01-13T00:00:07.792566Z'
-ecosystem_specific:
-  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29493
+affected:
+- package:
+    name: matio
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: git://git.code.sf.net/p/matio/matio
+    events:
+    - introduced: a47b7cd3aca70e9a0bddf8146eb4ab0cbd19c2c3
+    - fixed: 8195e5d3e3c65ff6bcc0aae31a4a53eb609c4d7e
+  versions:
+  - v1.5.18
+  - v1.5.19
+  ecosystem_specific:
+    severity: MEDIUM

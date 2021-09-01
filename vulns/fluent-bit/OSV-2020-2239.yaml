@@ -1,7 +1,4 @@
 id: OSV-2020-2239
-package:
-  name: fluent-bit
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in flb_http_do
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=28256
@@ -10,12 +7,21 @@ details: |
   Crash state:
   flb_http_do
   http_fuzzer.c
-affects:
+modified: '2021-06-21T06:56:24.286960Z'
+published: '2020-12-05T00:00:32.824865Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=28256
+affected:
+- package:
+    name: fluent-bit
+    ecosystem: OSS-Fuzz
   ranges:
   - type: GIT
     repo: https://github.com/fluent/fluent-bit/
-    introduced: 10ceb5b2ab6635a000f3eceaa267e1e34496de6b
-    fixed: 16f4084f36c78d1c121a78aafb7dc1db5fe699e9
+    events:
+    - introduced: 10ceb5b2ab6635a000f3eceaa267e1e34496de6b
+    - fixed: 16f4084f36c78d1c121a78aafb7dc1db5fe699e9
   versions:
   - v1.7.0
   - v1.7.0-rc1
@@ -28,10 +34,5 @@ affects:
   - v1.7.0-rc8
   - v1.7.0-rc9
   - v1.7.1
-modified: '2021-06-21T06:56:24.286960Z'
-published: '2020-12-05T00:00:32.824865Z'
-ecosystem_specific:
-  severity: HIGH
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=28256
+  ecosystem_specific:
+    severity: HIGH

@@ -1,7 +1,4 @@
 id: OSV-2020-1816
-package:
-  name: fluent-bit
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in encoded_to_buf
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25785
@@ -11,16 +8,20 @@ details: |
   encoded_to_buf
   flb_utils_write_str
   msgpack2json
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/fluent/fluent-bit/
-    introduced: d62166140fab2faa5307d871957dbac16bc08dc2
-    fixed: 15254d5bb2101995b32c7e34e86d01a1a878590b
 modified: '2021-06-21T06:56:24.479346Z'
 published: '2020-09-20T00:00:19.063209Z'
-ecosystem_specific:
-  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25785
+affected:
+- package:
+    name: fluent-bit
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/fluent/fluent-bit/
+    events:
+    - introduced: d62166140fab2faa5307d871957dbac16bc08dc2
+    - fixed: 15254d5bb2101995b32c7e34e86d01a1a878590b
+  ecosystem_specific:
+    severity: HIGH

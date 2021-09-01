@@ -1,7 +1,4 @@
 id: OSV-2021-392
-package:
-  name: mruby
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in heredoc_remove_indent
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30886
@@ -11,18 +8,22 @@ details: |
   heredoc_remove_indent
   parse_string
   parser_yylex
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/mruby/mruby
-    introduced: 0d22e11b757c6fe9b30e55cb7d83ab7421575968
-    fixed: 94fb86f89b131814201596d301f584dfe4547526
-  versions:
-  - 3.0.0-rc
 modified: '2021-06-21T06:56:25.589707Z'
 published: '2021-02-14T00:00:02.251664Z'
-ecosystem_specific:
-  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30886
+affected:
+- package:
+    name: mruby
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/mruby/mruby
+    events:
+    - introduced: 0d22e11b757c6fe9b30e55cb7d83ab7421575968
+    - fixed: 94fb86f89b131814201596d301f584dfe4547526
+  versions:
+  - 3.0.0-rc
+  ecosystem_specific:
+    severity: MEDIUM

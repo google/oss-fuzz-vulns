@@ -1,7 +1,4 @@
 id: OSV-2020-2008
-package:
-  name: wolfssl
-  ecosystem: OSS-Fuzz
 summary: UNKNOWN WRITE in wolfCrypt_custom_free
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26214
@@ -11,16 +8,20 @@ details: |
   wolfCrypt_custom_free
   wolfSSL_Free
   GetDhPublicKey
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/wolfssl/wolfssl
-    introduced: 2ed8f93592e0a2d97296c5c7f12584378a6fb502
-    fixed: a4bfa0dec78d2e427480a550b45c172e3a69c107
 modified: '2021-06-21T06:56:22.365964Z'
 published: '2020-10-10T00:00:12.931523Z'
-ecosystem_specific:
-  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26214
+affected:
+- package:
+    name: wolfssl
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/wolfssl/wolfssl
+    events:
+    - introduced: 2ed8f93592e0a2d97296c5c7f12584378a6fb502
+    - fixed: a4bfa0dec78d2e427480a550b45c172e3a69c107
+  ecosystem_specific:
+    severity: HIGH

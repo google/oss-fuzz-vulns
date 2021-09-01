@@ -1,7 +1,4 @@
 id: OSV-2021-668
-package:
-  name: ghostscript
-  ecosystem: OSS-Fuzz
 summary: Stack-use-after-return in pdf14_initialize
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=33529
@@ -11,14 +8,18 @@ details: |
   pdf14_initialize
   pdf14_procs_initialize
   pdf14_RGB_initialize
-affects:
-  ranges:
-  - type: GIT
-    repo: git://git.ghostscript.com/ghostpdl.git
-    introduced: e1a3956f252404f07d93be47f7845b23e4a2c4de
-    fixed: 20610dc28ee3cf7e64ad46f11e9b96fb3befba00
 modified: '2021-04-22T00:00:06.489457Z'
 published: '2021-04-22T00:00:06.489177Z'
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=33529
+affected:
+- package:
+    name: ghostscript
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: git://git.ghostscript.com/ghostpdl.git
+    events:
+    - introduced: e1a3956f252404f07d93be47f7845b23e4a2c4de
+    - fixed: 20610dc28ee3cf7e64ad46f11e9b96fb3befba00

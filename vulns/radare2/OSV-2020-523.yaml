@@ -1,7 +1,4 @@
 id: OSV-2020-523
-package:
-  name: radare2
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in check_buffer
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15003
@@ -11,16 +8,20 @@ details: |
   check_buffer
   r_bin_get_binplugin_by_buffer
   get_plugin_from_buffer
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/radare/radare2
-    introduced: a875795bb5d8c216fa17d685b49784c4d5c93f87
-    fixed: 0e7b37601a2011c9b11112566e2d8f1b2611986d
 modified: '2021-06-21T06:56:23.053067Z'
 published: '2020-07-01T00:00:14.409944Z'
-ecosystem_specific:
-  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15003
+affected:
+- package:
+    name: radare2
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/radare/radare2
+    events:
+    - introduced: a875795bb5d8c216fa17d685b49784c4d5c93f87
+    - fixed: 0e7b37601a2011c9b11112566e2d8f1b2611986d
+  ecosystem_specific:
+    severity: MEDIUM

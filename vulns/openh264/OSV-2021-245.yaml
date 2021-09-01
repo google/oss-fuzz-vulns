@@ -1,7 +1,4 @@
 id: OSV-2021-245
-package:
-  name: openh264
-  ecosystem: OSS-Fuzz
 summary: UNKNOWN WRITE in WelsDecodeBs
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29969
@@ -11,18 +8,21 @@ details: |
   WelsDecodeBs
   WelsDec::CWelsDecoder::DecodeFrame2WithCtx
   WelsDec::CWelsDecoder::DecodeFrame2
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/cisco/openh264.git
-    introduced: 4c76c67e9b790fd40650c4e8a2a059603e8ce195
-    fixed: b52786888ddce9d6bc06b7825ba9bffc65924e0c
 modified: '2021-06-23T06:26:19.031683Z'
 published: '2021-01-28T00:02:30.610788Z'
-ecosystem_specific:
-  severity: HIGH
-database_specific:
-  introduced_range: 83a0eae9bbbda5bfe802438109a025a3d7caee10:992c1c147175126c3fe7ab78216aa0395f9e6c71
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29969
+affected:
+- package:
+    name: openh264
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/cisco/openh264.git
+    events:
+    - introduced: 4c76c67e9b790fd40650c4e8a2a059603e8ce195
+    - fixed: b52786888ddce9d6bc06b7825ba9bffc65924e0c
+  ecosystem_specific:
+    introduced_range: 83a0eae9bbbda5bfe802438109a025a3d7caee10:992c1c147175126c3fe7ab78216aa0395f9e6c71
+    severity: HIGH

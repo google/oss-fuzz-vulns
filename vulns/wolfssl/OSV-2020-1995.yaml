@@ -1,7 +1,4 @@
 id: OSV-2020-1995
-package:
-  name: wolfssl
-  ecosystem: OSS-Fuzz
 summary: Index-out-of-bounds in fp_read_radix_16
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26163
@@ -11,19 +8,22 @@ details: |
   fp_read_radix_16
   fp_read_radix
   mp_read_radix
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/wolfssl/wolfssl
-    introduced: 83cdd1c314af5d6326470254b3cdbb9d85182348
-    fixed: 4d11e3c83b8f3ed9fb8b8bf561399a94dbeee1d6
 modified: '2021-06-23T06:25:58.065663Z'
 published: '2020-10-08T00:00:07.345946Z'
-ecosystem_specific:
-  severity: MEDIUM
-database_specific:
-  introduced_range: deaf3b4b40d26663191d085557fbeb8cafa420ae:881657782478cef4a1527847bb2c4cd427bd6c99
-  fixed_range: 4f6c1db9a2ae47cfe488e7443ce54b7e2a815261:4d11e3c83b8f3ed9fb8b8bf561399a94dbeee1d6
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26163
+affected:
+- package:
+    name: wolfssl
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/wolfssl/wolfssl
+    events:
+    - introduced: 83cdd1c314af5d6326470254b3cdbb9d85182348
+    - fixed: 4d11e3c83b8f3ed9fb8b8bf561399a94dbeee1d6
+  ecosystem_specific:
+    severity: MEDIUM
+    fixed_range: 4f6c1db9a2ae47cfe488e7443ce54b7e2a815261:4d11e3c83b8f3ed9fb8b8bf561399a94dbeee1d6
+    introduced_range: deaf3b4b40d26663191d085557fbeb8cafa420ae:881657782478cef4a1527847bb2c4cd427bd6c99

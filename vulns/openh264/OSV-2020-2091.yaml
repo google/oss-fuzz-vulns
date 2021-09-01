@@ -1,7 +1,4 @@
 id: OSV-2020-2091
-package:
-  name: openh264
-  ecosystem: OSS-Fuzz
 summary: UNKNOWN READ in WelsDec::WelsMarkAsRef
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26533
@@ -11,20 +8,24 @@ details: |
   WelsDec::WelsMarkAsRef
   WelsDec::MarkECFrameAsRef
   WelsDec::CheckAndFinishLastPic
-affects:
+modified: '2021-06-21T06:56:23.799813Z'
+published: '2020-10-22T00:00:21.083633Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26533
+affected:
+- package:
+    name: openh264
+    ecosystem: OSS-Fuzz
   ranges:
   - type: GIT
     repo: https://github.com/cisco/openh264.git
-    introduced: 519b0ff554e9713198bc3b3185da809be42be20c
-    fixed: b52786888ddce9d6bc06b7825ba9bffc65924e0c
+    events:
+    - introduced: 519b0ff554e9713198bc3b3185da809be42be20c
+    - fixed: b52786888ddce9d6bc06b7825ba9bffc65924e0c
   versions:
   - v2.0.0
   - v2.1.0
   - v2.1.1
-modified: '2021-06-21T06:56:23.799813Z'
-published: '2020-10-22T00:00:21.083633Z'
-ecosystem_specific:
-  severity: MEDIUM
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26533
+  ecosystem_specific:
+    severity: MEDIUM

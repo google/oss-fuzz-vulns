@@ -1,7 +1,4 @@
 id: OSV-2018-29
-package:
-  name: radare2
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in r_bin_mdmp_get_mem_info
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=10222
@@ -11,18 +8,22 @@ details: |
   r_bin_mdmp_get_mem_info
   r_bin_mdmp_get_srwx
   sections
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/radare/radare2
-    introduced: 65ebf72e66d493f2d1b3508f8665fd1e9fb5ba9d
-    fixed: 533da1306534ece22d67eaa3c32e46b717cd9199
-  versions:
-  - 2.9.0
 modified: '2021-06-21T06:56:23.128163Z'
 published: '2021-01-13T00:00:11.314581Z'
-ecosystem_specific:
-  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=10222
+affected:
+- package:
+    name: radare2
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/radare/radare2
+    events:
+    - introduced: 65ebf72e66d493f2d1b3508f8665fd1e9fb5ba9d
+    - fixed: 533da1306534ece22d67eaa3c32e46b717cd9199
+  versions:
+  - 2.9.0
+  ecosystem_specific:
+    severity: MEDIUM

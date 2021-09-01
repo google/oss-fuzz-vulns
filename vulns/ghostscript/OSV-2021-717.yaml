@@ -1,7 +1,4 @@
 id: OSV-2021-717
-package:
-  name: ghostscript
-  ecosystem: OSS-Fuzz
 summary: Heap-use-after-free in real_param
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=33862
@@ -11,15 +8,27 @@ details: |
   real_param
   zpdfinkpath
   interp
-affects:
+modified: '2021-06-21T06:56:21.514880Z'
+published: '2021-05-02T00:00:44.749274Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=33862
+affected:
+- package:
+    name: ghostscript
+    ecosystem: OSS-Fuzz
   ranges:
   - type: GIT
     repo: git://git.ghostscript.com/ghostpdl.git
-    introduced: e63504054baea4275af88e95418b5282c4394685
-    fixed: fe8965b8a179c083060b66a7db13cad171ff470b
+    events:
+    - introduced: e63504054baea4275af88e95418b5282c4394685
+    - fixed: fe8965b8a179c083060b66a7db13cad171ff470b
   - type: GIT
     repo: git://git.ghostscript.com/ghostpdl.git
-    introduced: bbdfaa56b00f2ba556476f0265e65e4ad370f641
+    events:
+    - introduced: e63504054baea4275af88e95418b5282c4394685
+    - fixed: fe8965b8a179c083060b66a7db13cad171ff470b
+    - introduced: bbdfaa56b00f2ba556476f0265e65e4ad370f641
   versions:
   - ghostpdl-9.28rc2
   - ghostpdl-9.28rc3
@@ -76,10 +85,5 @@ affects:
   - rjj_9.53.2_test
   - robin_test_ref
   - robin_test_rev
-modified: '2021-06-21T06:56:21.514880Z'
-published: '2021-05-02T00:00:44.749274Z'
-ecosystem_specific:
-  severity: HIGH
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=33862
+  ecosystem_specific:
+    severity: HIGH

@@ -1,7 +1,4 @@
 id: OSV-2020-2112
-package:
-  name: cras
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in ccr_handle_message_from_client
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26739
@@ -11,19 +8,26 @@ details: |
   ccr_handle_message_from_client
   cras_rclient_buffer_from_client
   rclient_message.cc
-affects:
-  ranges:
-  - type: GIT
-    repo: https://chromium.googlesource.com/chromiumos/third_party/adhd
-    introduced: 91706175e0494084b36d98aac31ad3f6c5691ec1
-    fixed: e37374a1af08505a76352d21e0959977e210d0b1
-  - type: GIT
-    repo: https://chromium.googlesource.com/chromiumos/third_party/adhd
-    introduced: e5482ce00f51003ea4642f6c722d1f46fff9a573
 modified: '2021-06-21T06:56:27.902770Z'
 published: '2020-10-31T00:00:32.556884Z'
-ecosystem_specific:
-  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26739
+affected:
+- package:
+    name: cras
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://chromium.googlesource.com/chromiumos/third_party/adhd
+    events:
+    - introduced: 91706175e0494084b36d98aac31ad3f6c5691ec1
+    - fixed: e37374a1af08505a76352d21e0959977e210d0b1
+  - type: GIT
+    repo: https://chromium.googlesource.com/chromiumos/third_party/adhd
+    events:
+    - introduced: 91706175e0494084b36d98aac31ad3f6c5691ec1
+    - fixed: e37374a1af08505a76352d21e0959977e210d0b1
+    - introduced: e5482ce00f51003ea4642f6c722d1f46fff9a573
+  ecosystem_specific:
+    severity: MEDIUM

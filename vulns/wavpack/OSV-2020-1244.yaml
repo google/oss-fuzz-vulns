@@ -1,7 +1,4 @@
 id: OSV-2020-1244
-package:
-  name: wavpack
-  ecosystem: OSS-Fuzz
 summary: Use-of-uninitialized-value in decimate_dsd_run
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=19925
@@ -11,18 +8,21 @@ details: |
   decimate_dsd_run
   WavpackUnpackSamples
   fuzzer.cc
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/dbry/WavPack.git
-    introduced: 348ff60b489e731ffd046f837500313499623e3e
-    fixed: 4cb11c66de6cc759e57508d38df4956fe4bb3311
 modified: '2021-06-23T06:30:57.332274Z'
 published: '2020-07-22T21:49:59.837324Z'
-ecosystem_specific:
-  severity: MEDIUM
-database_specific:
-  introduced_range: unknown:348ff60b489e731ffd046f837500313499623e3e
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=19925
+affected:
+- package:
+    name: wavpack
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/dbry/WavPack.git
+    events:
+    - introduced: 348ff60b489e731ffd046f837500313499623e3e
+    - fixed: 4cb11c66de6cc759e57508d38df4956fe4bb3311
+  ecosystem_specific:
+    severity: MEDIUM
+    introduced_range: unknown:348ff60b489e731ffd046f837500313499623e3e

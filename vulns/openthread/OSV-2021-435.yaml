@@ -1,7 +1,4 @@
 id: OSV-2021-435
-package:
-  name: openthread
-  ecosystem: OSS-Fuzz
 summary: Stack-buffer-overflow in ot::Cli::Interpreter::OutputFormatV
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31232
@@ -11,16 +8,20 @@ details: |
   ot::Cli::Interpreter::OutputFormatV
   ot::Cli::Interpreter::OutputLine
   ot::Cli::Interpreter::HandleDnsServiceResponse
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/openthread/openthread
-    introduced: 196aa39c38c8099cf4abfa6049957b5d41a031d0
-    fixed: f57c5e23709c33d6b0c1a4e209223f35fd040529
 modified: '2021-06-21T06:56:25.109369Z'
 published: '2021-02-23T00:00:14.405289Z'
-ecosystem_specific:
-  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31232
+affected:
+- package:
+    name: openthread
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/openthread/openthread
+    events:
+    - introduced: 196aa39c38c8099cf4abfa6049957b5d41a031d0
+    - fixed: f57c5e23709c33d6b0c1a4e209223f35fd040529
+  ecosystem_specific:
+    severity: MEDIUM

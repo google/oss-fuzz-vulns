@@ -1,7 +1,4 @@
 id: OSV-2020-1130
-package:
-  name: libxslt
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in xsltFormatNumberConversion
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=17171
@@ -11,18 +8,21 @@ details: |
   xsltFormatNumberConversion
   xsltFormatNumberFunction
   xmlXPathCompOpEval
-affects:
-  ranges:
-  - type: GIT
-    repo: https://gitlab.gnome.org/GNOME/libxslt.git
-    introduced: 7f56378a73af8a61da78b8091f0e317316cee300
-    fixed: e1f8d2e6eb1167fd51eb5b8c99d2d40c37299897
 modified: '2021-06-23T06:25:31.007988Z'
 published: '2020-07-22T21:49:49.395683Z'
-ecosystem_specific:
-  severity: MEDIUM
-database_specific:
-  introduced_range: unknown:7f56378a73af8a61da78b8091f0e317316cee300
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=17171
+affected:
+- package:
+    name: libxslt
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://gitlab.gnome.org/GNOME/libxslt.git
+    events:
+    - introduced: 7f56378a73af8a61da78b8091f0e317316cee300
+    - fixed: e1f8d2e6eb1167fd51eb5b8c99d2d40c37299897
+  ecosystem_specific:
+    introduced_range: unknown:7f56378a73af8a61da78b8091f0e317316cee300
+    severity: MEDIUM

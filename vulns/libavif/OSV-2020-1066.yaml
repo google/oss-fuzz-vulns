@@ -1,7 +1,4 @@
 id: OSV-2020-1066
-package:
-  name: libavif
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in dav1dFeedData
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21947
@@ -11,12 +8,21 @@ details: |
   dav1dFeedData
   dav1dCodecGetNextImage
   avifDecoderNextImage
-affects:
+modified: '2021-06-23T06:30:09.555925Z'
+published: '2020-07-22T21:49:44.588962Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21947
+affected:
+- package:
+    name: libavif
+    ecosystem: OSS-Fuzz
   ranges:
   - type: GIT
     repo: https://github.com/AOMediaCodec/libavif.git
-    introduced: 4be7ce1dd3f0a45cd2555c94bd76a8f40baabcc4
-    fixed: 34c0d3147f3d30e1218bceda410c978481a5e1be
+    events:
+    - introduced: 4be7ce1dd3f0a45cd2555c94bd76a8f40baabcc4
+    - fixed: 34c0d3147f3d30e1218bceda410c978481a5e1be
   versions:
   - v0.5.5
   - v0.5.6
@@ -29,12 +35,6 @@ affects:
   - v0.7.0
   - v0.7.1
   - v0.7.2
-modified: '2021-06-23T06:30:09.555925Z'
-published: '2020-07-22T21:49:44.588962Z'
-ecosystem_specific:
-  severity: MEDIUM
-database_specific:
-  introduced_range: unknown:4be7ce1dd3f0a45cd2555c94bd76a8f40baabcc4
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21947
+  ecosystem_specific:
+    severity: MEDIUM
+    introduced_range: unknown:4be7ce1dd3f0a45cd2555c94bd76a8f40baabcc4

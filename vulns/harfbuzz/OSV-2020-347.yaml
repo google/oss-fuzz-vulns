@@ -1,7 +1,4 @@
 id: OSV-2020-347
-package:
-  name: harfbuzz
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in BEInt<unsigned short, 2>::operator unsigned short
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14825
@@ -11,16 +8,20 @@ details: |
   BEInt<unsigned short, 2>::operator unsigned short
   OT::IntType<unsigned short, 2u>::operator unsigned int
   OT::AxisValue::sanitize
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/harfbuzz/harfbuzz.git
-    introduced: 02e5e5d939be36d8f108029601a1ce1f533e5ccb
-    fixed: 3efb7af7e28061f8cd138eb2ed5261bf521abc63
 modified: '2021-06-21T06:56:20.386528Z'
 published: '2020-07-01T00:00:04.515175Z'
-ecosystem_specific:
-  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14825
+affected:
+- package:
+    name: harfbuzz
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/harfbuzz/harfbuzz.git
+    events:
+    - introduced: 02e5e5d939be36d8f108029601a1ce1f533e5ccb
+    - fixed: 3efb7af7e28061f8cd138eb2ed5261bf521abc63
+  ecosystem_specific:
+    severity: MEDIUM

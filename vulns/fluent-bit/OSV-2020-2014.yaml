@@ -1,7 +1,4 @@
 id: OSV-2020-2014
-package:
-  name: fluent-bit
-  ecosystem: OSS-Fuzz
 summary: Stack-buffer-overflow in flb_sds_cat
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26237
@@ -11,16 +8,27 @@ details: |
   flb_sds_cat
   flb_msgpack_gelf_value
   flb_msgpack_to_gelf
-affects:
+modified: '2021-06-21T06:56:24.344163Z'
+published: '2020-10-11T00:00:12.565611Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26237
+affected:
+- package:
+    name: fluent-bit
+    ecosystem: OSS-Fuzz
   ranges:
   - type: GIT
     repo: https://github.com/fluent/fluent-bit/
-    introduced: d62166140fab2faa5307d871957dbac16bc08dc2
-    fixed: 8315c5029f1b8bc855a2263b1986f22d24cd1a3b
+    events:
+    - introduced: d62166140fab2faa5307d871957dbac16bc08dc2
+    - fixed: 8315c5029f1b8bc855a2263b1986f22d24cd1a3b
   - type: GIT
     repo: https://github.com/fluent/fluent-bit/
-    introduced: d62166140fab2faa5307d871957dbac16bc08dc2
-    fixed: 4e7894d3fd7c03071a8079ee33595921d0133893
+    events:
+    - introduced: d62166140fab2faa5307d871957dbac16bc08dc2
+    - fixed: 8315c5029f1b8bc855a2263b1986f22d24cd1a3b
+    - fixed: 4e7894d3fd7c03071a8079ee33595921d0133893
   versions:
   - v1.6.0
   - v1.6.1
@@ -29,10 +37,5 @@ affects:
   - v1.6.4
   - v1.6.5
   - v1.6.6
-modified: '2021-06-21T06:56:24.344163Z'
-published: '2020-10-11T00:00:12.565611Z'
-ecosystem_specific:
-  severity: MEDIUM
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26237
+  ecosystem_specific:
+    severity: MEDIUM

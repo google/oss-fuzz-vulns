@@ -1,7 +1,4 @@
 id: OSV-2020-67
-package:
-  name: ndpi
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in ndpi_workflow_process_packet
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21348
@@ -10,18 +7,22 @@ details: |
   Crash state:
   ndpi_workflow_process_packet
   fuzz_ndpi_reader.c
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/ntop/nDPI.git
-    introduced: 10738a0ca334104377e19a1e683bd13f2451a9e2
-    fixed: c1baf1516de5fc0cd122e4693f4774b0fd4b627b
-  versions:
-  - '3.2'
 modified: '2021-06-21T06:56:22.526922Z'
 published: '2020-06-24T01:51:12.608279Z'
-ecosystem_specific:
-  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21348
+affected:
+- package:
+    name: ndpi
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/ntop/nDPI.git
+    events:
+    - introduced: 10738a0ca334104377e19a1e683bd13f2451a9e2
+    - fixed: c1baf1516de5fc0cd122e4693f4774b0fd4b627b
+  versions:
+  - '3.2'
+  ecosystem_specific:
+    severity: MEDIUM

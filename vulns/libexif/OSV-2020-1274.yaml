@@ -1,7 +1,4 @@
 id: OSV-2020-1274
-package:
-  name: libexif
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in exif_entry_get_value
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14543
@@ -11,18 +8,21 @@ details: |
   exif_entry_get_value
   content_func
   exif_content_foreach_entry
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/libexif/libexif
-    introduced: 3f35f94a93081ced2bc3c9112f820f5fdb200af0
-    fixed: f9bb9f263fb00f0603ecbefa8957cad24168cbff
 modified: '2021-06-23T06:29:25.770607Z'
 published: '2020-07-22T21:50:02.388928Z'
-ecosystem_specific:
-  severity: MEDIUM
-database_specific:
-  introduced_range: unknown:3f35f94a93081ced2bc3c9112f820f5fdb200af0
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14543
+affected:
+- package:
+    name: libexif
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/libexif/libexif
+    events:
+    - introduced: 3f35f94a93081ced2bc3c9112f820f5fdb200af0
+    - fixed: f9bb9f263fb00f0603ecbefa8957cad24168cbff
+  ecosystem_specific:
+    introduced_range: unknown:3f35f94a93081ced2bc3c9112f820f5fdb200af0
+    severity: MEDIUM

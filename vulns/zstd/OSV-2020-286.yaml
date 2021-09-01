@@ -1,7 +1,4 @@
 id: OSV-2020-286
-package:
-  name: zstd
-  ecosystem: OSS-Fuzz
 summary: Use-of-uninitialized-value in ZSTD_loadCEntropy
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=19146
@@ -11,16 +8,20 @@ details: |
   ZSTD_loadCEntropy
   ZSTD_loadZstdDictionary
   ZSTD_compress_insertDictionary
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/facebook/zstd
-    introduced: a3a3c62b81ef41fc3edbc991c165ff0acd3a29be
-    fixed: 49c6d492479227644e60c2caa15a6334f302f6ea
 modified: '2021-06-21T06:56:19.414018Z'
 published: '2020-06-30T00:00:46.352280Z'
-ecosystem_specific:
-  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=19146
+affected:
+- package:
+    name: zstd
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/facebook/zstd
+    events:
+    - introduced: a3a3c62b81ef41fc3edbc991c165ff0acd3a29be
+    - fixed: 49c6d492479227644e60c2caa15a6334f302f6ea
+  ecosystem_specific:
+    severity: MEDIUM

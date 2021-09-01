@@ -1,7 +1,4 @@
 id: OSV-2018-59
-package:
-  name: libaom
-  ecosystem: OSS-Fuzz
 summary: Heap-use-after-free in read_uncompressed_header
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=10200
@@ -11,16 +8,20 @@ details: |
   read_uncompressed_header
   av1_decode_frame_headers_and_setup
   aom_decode_frame_from_obus
-affects:
-  ranges:
-  - type: GIT
-    repo: https://aomedia.googlesource.com/aom
-    introduced: 2754f83f65eb57fb9aff7029f355ad57421b57f3
-    fixed: bb5c2833051f4bc8d084bbbe8c8adbdad7dd5449
 modified: '2021-06-21T06:56:25.418923Z'
 published: '2021-01-13T00:00:29.924163Z'
-ecosystem_specific:
-  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=10200
+affected:
+- package:
+    name: libaom
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://aomedia.googlesource.com/aom
+    events:
+    - introduced: 2754f83f65eb57fb9aff7029f355ad57421b57f3
+    - fixed: bb5c2833051f4bc8d084bbbe8c8adbdad7dd5449
+  ecosystem_specific:
+    severity: HIGH

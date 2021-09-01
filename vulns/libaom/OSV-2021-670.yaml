@@ -1,7 +1,4 @@
 id: OSV-2021-670
-package:
-  name: libaom
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in av1_free_cdef_buffers
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=33480
@@ -11,16 +8,20 @@ details: |
   av1_free_cdef_buffers
   decoder_destroy
   aom_codec_destroy
-affects:
-  ranges:
-  - type: GIT
-    repo: https://aomedia.googlesource.com/aom
-    introduced: f194981140e5a19a209bcb16333f1db1ecde5599
-    fixed: 80bd452152ec39b7d88bded3d9090fb20b1ba12f
 modified: '2021-06-21T06:56:25.424937Z'
 published: '2021-04-22T00:00:12.948723Z'
-ecosystem_specific:
-  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=33480
+affected:
+- package:
+    name: libaom
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://aomedia.googlesource.com/aom
+    events:
+    - introduced: f194981140e5a19a209bcb16333f1db1ecde5599
+    - fixed: 80bd452152ec39b7d88bded3d9090fb20b1ba12f
+  ecosystem_specific:
+    severity: MEDIUM

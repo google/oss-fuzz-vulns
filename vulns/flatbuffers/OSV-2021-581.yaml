@@ -1,7 +1,4 @@
 id: OSV-2021-581
-package:
-  name: flatbuffers
-  ecosystem: OSS-Fuzz
 summary: UNKNOWN READ in unsigned short flatbuffers::ReadScalar<unsigned short>
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=32647
@@ -11,17 +8,21 @@ details: |
   unsigned short flatbuffers::ReadScalar<unsigned short>
   flatbuffers::Table::GetOptionalFieldOffset
   flatbuffers::Table::CheckField
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/google/flatbuffers
-    introduced: 8573108bbef495f3dd13db8353f43b2e86d25950
-  versions:
-  - v2.0.0
 modified: '2021-03-30T00:01:07.234862Z'
 published: '2021-03-30T00:01:07.234600Z'
-ecosystem_specific:
-  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=32647
+affected:
+- package:
+    name: flatbuffers
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/google/flatbuffers
+    events:
+    - introduced: 8573108bbef495f3dd13db8353f43b2e86d25950
+  versions:
+  - v2.0.0
+  ecosystem_specific:
+    severity: HIGH

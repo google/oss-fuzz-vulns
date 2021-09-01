@@ -1,7 +1,4 @@
 id: OSV-2020-2264
-package:
-  name: openthread
-  ecosystem: OSS-Fuzz
 summary: Stack-buffer-overflow in ot::IsValidUtf8String
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=28682
@@ -11,16 +8,20 @@ details: |
   ot::IsValidUtf8String
   ot::MeshCoP::NetworkNameTlv::IsValid
   ot::MeshCoP::Tlv::IsValid
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/openthread/openthread
-    introduced: c7192ba7988d6487e6bd8789198ce8196a9c992b
-    fixed: b3fc7bc453034aa61cd27d5208f08ead9c7789e0
 modified: '2021-06-21T06:56:25.047718Z'
 published: '2020-12-16T00:00:05.494996Z'
-ecosystem_specific:
-  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=28682
+affected:
+- package:
+    name: openthread
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/openthread/openthread
+    events:
+    - introduced: c7192ba7988d6487e6bd8789198ce8196a9c992b
+    - fixed: b3fc7bc453034aa61cd27d5208f08ead9c7789e0
+  ecosystem_specific:
+    severity: MEDIUM

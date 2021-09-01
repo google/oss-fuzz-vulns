@@ -1,7 +1,4 @@
 id: OSV-2018-119
-package:
-  name: harfbuzz
-  ecosystem: OSS-Fuzz
 summary: UNKNOWN READ in AAT::KerxSubTableFormat1<AAT::KerxSubTableHeader>::driver_context_t::transition
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11367
@@ -11,16 +8,20 @@ details: |
   AAT::KerxSubTableFormat1<AAT::KerxSubTableHeader>::driver_context_t::transition
   void AAT::StateTableDriver<AAT::ExtendedTypes, AAT::Format1Entry<true>::EntryDat
   AAT::KerxSubTableFormat1<AAT::KerxSubTableHeader>::apply
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/harfbuzz/harfbuzz.git
-    introduced: 752bd8a192af209f44dacaf1d3510d0bfc6354b8
-    fixed: a549aa14a0b60436a16f7f8924a5b5f82b4d5b7e
 modified: '2021-06-21T06:56:20.450233Z'
 published: '2021-01-13T00:00:54.593710Z'
-ecosystem_specific:
-  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11367
+affected:
+- package:
+    name: harfbuzz
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/harfbuzz/harfbuzz.git
+    events:
+    - introduced: 752bd8a192af209f44dacaf1d3510d0bfc6354b8
+    - fixed: a549aa14a0b60436a16f7f8924a5b5f82b4d5b7e
+  ecosystem_specific:
+    severity: MEDIUM

@@ -1,7 +1,4 @@
 id: OSV-2021-508
-package:
-  name: libsass
-  ecosystem: OSS-Fuzz
 summary: Segv on unknown address in Sass::CompoundSelector::resolve_parent_refs
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31832
@@ -11,18 +8,22 @@ details: |
   Sass::CompoundSelector::resolve_parent_refs
   Sass::ComplexSelector::resolve_parent_refs
   Sass::SelectorList::resolve_parent_refs
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/sass/libsass.git
-    introduced: f964dcddd76f4c1f00da06bfd905be790618c33b
-  versions:
-  - 3.6.2
-  - 3.6.3
-  - 3.6.4
-  - 3.6.5
 modified: '2021-03-09T05:47:10.477752Z'
 published: '2021-03-09T00:02:18.581527Z'
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31832
+affected:
+- package:
+    name: libsass
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/sass/libsass.git
+    events:
+    - introduced: f964dcddd76f4c1f00da06bfd905be790618c33b
+  versions:
+  - 3.6.2
+  - 3.6.3
+  - 3.6.4
+  - 3.6.5

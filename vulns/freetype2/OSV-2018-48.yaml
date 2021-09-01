@@ -1,7 +1,4 @@
 id: OSV-2018-48
-package:
-  name: freetype2
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in PCF_Glyph_Load
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=9524
@@ -11,19 +8,22 @@ details: |
   PCF_Glyph_Load
   FT_Load_Glyph
   ftfuzzer.cc
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/freetype/freetype2-testing.git
-    introduced: 53e3af654d5491e6481747a28d425cda3f73cb12
-    fixed: 8f0427985b16b0cea6779391fa7b89cecd156b2f
 modified: '2021-06-23T06:25:42.230975Z'
 published: '2021-01-13T00:00:26.415724Z'
-ecosystem_specific:
-  severity: MEDIUM
-database_specific:
-  fixed_range: f646e9f4598f261ebcef6f989c883428987f4975:8f0427985b16b0cea6779391fa7b89cecd156b2f
-  introduced_range: 20cbff1970d10e1f7086a5ef89ada4229481bb1e:f646e9f4598f261ebcef6f989c883428987f4975
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=9524
+affected:
+- package:
+    name: freetype2
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/freetype/freetype2-testing.git
+    events:
+    - introduced: 53e3af654d5491e6481747a28d425cda3f73cb12
+    - fixed: 8f0427985b16b0cea6779391fa7b89cecd156b2f
+  ecosystem_specific:
+    severity: MEDIUM
+    introduced_range: 20cbff1970d10e1f7086a5ef89ada4229481bb1e:f646e9f4598f261ebcef6f989c883428987f4975
+    fixed_range: f646e9f4598f261ebcef6f989c883428987f4975:8f0427985b16b0cea6779391fa7b89cecd156b2f

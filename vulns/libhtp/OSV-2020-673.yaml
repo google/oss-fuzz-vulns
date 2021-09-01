@@ -1,7 +1,4 @@
 id: OSV-2020-673
-package:
-  name: libhtp
-  ecosystem: OSS-Fuzz
 summary: UNKNOWN WRITE in htp_connp_res_buffer
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=19323
@@ -11,16 +8,20 @@ details: |
   htp_connp_res_buffer
   htp_connp_RES_LINE
   htp_connp_res_data
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/OISF/libhtp.git
-    introduced: d01949a3984c2b5ba20260b0766abe8b201c1c76
-    fixed: 234431b6f32ff2ef25e0e3ec482afe19a1f4e299
 modified: '2021-06-21T06:56:26.100775Z'
 published: '2020-07-01T00:00:23.898100Z'
-ecosystem_specific:
-  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=19323
+affected:
+- package:
+    name: libhtp
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/OISF/libhtp.git
+    events:
+    - introduced: d01949a3984c2b5ba20260b0766abe8b201c1c76
+    - fixed: 234431b6f32ff2ef25e0e3ec482afe19a1f4e299
+  ecosystem_specific:
+    severity: HIGH

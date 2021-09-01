@@ -1,7 +1,4 @@
 id: OSV-2020-632
-package:
-  name: lwan
-  ecosystem: OSS-Fuzz
 summary: Global-buffer-overflow in parse_http_request
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14582
@@ -10,14 +7,18 @@ details: |
   Crash state:
   parse_http_request
   fuzz_parse_http_request
-affects:
-  ranges:
-  - type: GIT
-    repo: git://github.com/lpereira/lwan
-    introduced: 7220bbf47f668fc600824b513afd207097fa6b68
-    fixed: 9ad6eb501b55f27a17d6383fa5bdcb2328147685
+modified: '2021-03-09T04:49:05.991794Z'
+published: '2020-07-01T00:00:21.523430Z'
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14582
-modified: '2021-03-09T04:49:05.991794Z'
-published: '2020-07-01T00:00:21.523430Z'
+affected:
+- package:
+    name: lwan
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: git://github.com/lpereira/lwan
+    events:
+    - introduced: 7220bbf47f668fc600824b513afd207097fa6b68
+    - fixed: 9ad6eb501b55f27a17d6383fa5bdcb2328147685

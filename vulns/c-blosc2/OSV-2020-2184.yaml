@@ -1,7 +1,4 @@
 id: OSV-2020-2184
-package:
-  name: c-blosc2
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in frame_get_usermeta
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=27812
@@ -11,16 +8,20 @@ details: |
   frame_get_usermeta
   blosc2_frame_to_schunk
   blosc2_schunk_open_sframe
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/Blosc/c-blosc2.git
-    introduced: 4d78953db484839708091c610951678ab4b2b555
-    fixed: 877959117eef391293b5abff200a23bafe458754
 modified: '2021-06-21T06:56:25.956511Z'
 published: '2020-11-25T00:00:17.879160Z'
-ecosystem_specific:
-  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=27812
+affected:
+- package:
+    name: c-blosc2
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/Blosc/c-blosc2.git
+    events:
+    - introduced: 4d78953db484839708091c610951678ab4b2b555
+    - fixed: 877959117eef391293b5abff200a23bafe458754
+  ecosystem_specific:
+    severity: MEDIUM

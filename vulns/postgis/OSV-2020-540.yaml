@@ -1,7 +1,4 @@
 id: OSV-2020-540
-package:
-  name: postgis
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in byte_from_wkb_state
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=16591
@@ -11,19 +8,23 @@ details: |
   byte_from_wkb_state
   lwgeom_from_wkb_state
   lwcollection_from_wkb_state
-affects:
-  ranges:
-  - type: GIT
-    repo: https://git.osgeo.org/gitea/postgis/postgis.git
-    introduced: e0b9fcce14c44a6a3be8e79a4cb3a2d13e79fc7a
-    fixed: b1abe27db0869d345ac5c0240a21e322a725fff9
-  versions:
-  - 3.0.0beta1
-  - 3.0.0rc1
 modified: '2021-06-21T06:56:25.406111Z'
 published: '2020-07-01T00:00:15.605041Z'
-ecosystem_specific:
-  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=16591
+affected:
+- package:
+    name: postgis
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://git.osgeo.org/gitea/postgis/postgis.git
+    events:
+    - introduced: e0b9fcce14c44a6a3be8e79a4cb3a2d13e79fc7a
+    - fixed: b1abe27db0869d345ac5c0240a21e322a725fff9
+  versions:
+  - 3.0.0beta1
+  - 3.0.0rc1
+  ecosystem_specific:
+    severity: MEDIUM

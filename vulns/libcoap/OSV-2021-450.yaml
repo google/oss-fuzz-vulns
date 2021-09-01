@@ -1,7 +1,4 @@
 id: OSV-2021-450
-package:
-  name: libcoap
-  ecosystem: OSS-Fuzz
 summary: Global-buffer-overflow in coap_pdu_parse_opt
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31479
@@ -10,14 +7,18 @@ details: |
   Crash state:
   coap_pdu_parse_opt
   coap_pdu_parse
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/obgm/libcoap.git
-    introduced: 757ca19cd0b7612b17ce05f6dcad6e02e4b7e497
-    fixed: f930b0ad5bc73689d4b63d3742f39d6ff49197a9
+modified: '2021-03-09T05:46:30.296628Z'
+published: '2021-02-28T00:00:03.278436Z'
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31479
-modified: '2021-03-09T05:46:30.296628Z'
-published: '2021-02-28T00:00:03.278436Z'
+affected:
+- package:
+    name: libcoap
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/obgm/libcoap.git
+    events:
+    - introduced: 757ca19cd0b7612b17ce05f6dcad6e02e4b7e497
+    - fixed: f930b0ad5bc73689d4b63d3742f39d6ff49197a9

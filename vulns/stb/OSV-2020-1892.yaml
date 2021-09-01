@@ -1,7 +1,4 @@
 id: OSV-2020-1892
-package:
-  name: stb
-  ecosystem: OSS-Fuzz
 summary: Use-of-uninitialized-value in stbi__expand_png_palette
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23234
@@ -11,16 +8,20 @@ details: |
   stbi__expand_png_palette
   stbi__parse_png_file
   stbi__do_png
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/nothings/stb.git
-    introduced: f54acd4e13430c5122cab4ca657705c84aa61b08
-    fixed: 9cd6cdc0e55ec3d4c002313fd5f0e6b255e8e06c
 modified: '2021-06-21T06:56:26.436970Z'
 published: '2020-10-02T00:00:07.829126Z'
-ecosystem_specific:
-  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23234
+affected:
+- package:
+    name: stb
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/nothings/stb.git
+    events:
+    - introduced: f54acd4e13430c5122cab4ca657705c84aa61b08
+    - fixed: 9cd6cdc0e55ec3d4c002313fd5f0e6b255e8e06c
+  ecosystem_specific:
+    severity: MEDIUM

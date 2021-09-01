@@ -1,7 +1,4 @@
 id: OSV-2017-78
-package:
-  name: open62541
-  ecosystem: OSS-Fuzz
 summary: Negative-size-param in UA_SecureChannel_processChunk
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=3609
@@ -11,14 +8,18 @@ details: |
   UA_SecureChannel_processChunk
   processCompleteChunk
   UA_Connection_processChunks
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/open62541/open62541.git
-    introduced: 84d46ddefe21c7eb5f678a5046fa200ac1b4e617
-    fixed: 3e9fdcb66c5a1adf0e1cdc9485b4e6efe8103e1b
+modified: '2021-03-09T04:49:04.803704Z'
+published: '2021-01-13T21:57:35.111717Z'
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=3609
-modified: '2021-03-09T04:49:04.803704Z'
-published: '2021-01-13T21:57:35.111717Z'
+affected:
+- package:
+    name: open62541
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/open62541/open62541.git
+    events:
+    - introduced: 84d46ddefe21c7eb5f678a5046fa200ac1b4e617
+    - fixed: 3e9fdcb66c5a1adf0e1cdc9485b4e6efe8103e1b

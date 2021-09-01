@@ -1,7 +1,4 @@
 id: OSV-2020-677
-package:
-  name: radare2
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in load
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15007
@@ -11,16 +8,20 @@ details: |
   load
   r_bin_object_new
   r_bin_file_new_from_buffer
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/radare/radare2
-    introduced: a875795bb5d8c216fa17d685b49784c4d5c93f87
-    fixed: 9392fc7117dd5240c76d8ab81d84b482bc968339
 modified: '2021-06-21T06:56:23.109664Z'
 published: '2020-07-01T00:00:24.199741Z'
-ecosystem_specific:
-  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15007
+affected:
+- package:
+    name: radare2
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/radare/radare2
+    events:
+    - introduced: a875795bb5d8c216fa17d685b49784c4d5c93f87
+    - fixed: 9392fc7117dd5240c76d8ab81d84b482bc968339
+  ecosystem_specific:
+    severity: MEDIUM

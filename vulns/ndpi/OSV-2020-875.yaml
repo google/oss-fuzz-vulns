@@ -1,7 +1,4 @@
 id: OSV-2020-875
-package:
-  name: ndpi
-  ecosystem: OSS-Fuzz
 summary: Use-of-uninitialized-value in ndpi_strdup
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22475
@@ -11,20 +8,23 @@ details: |
   ndpi_strdup
   processClientServerHello
   processTLSBlock
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/ntop/nDPI.git
-    introduced: 4ec3e6c064b56f1434bd4c887bd96d0916d07f2e
-    fixed: 6c366d73e27ab2097a197cd6d9870c1ca2457cc8
-  versions:
-  - '3.4'
 modified: '2021-06-23T06:26:05.290319Z'
 published: '2020-07-14T22:13:54.264021Z'
-ecosystem_specific:
-  severity: MEDIUM
-database_specific:
-  fixed_range: 50f4049b58b9d04a403ba7570935f887aef937db:6c366d73e27ab2097a197cd6d9870c1ca2457cc8
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22475
+affected:
+- package:
+    name: ndpi
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/ntop/nDPI.git
+    events:
+    - introduced: 4ec3e6c064b56f1434bd4c887bd96d0916d07f2e
+    - fixed: 6c366d73e27ab2097a197cd6d9870c1ca2457cc8
+  versions:
+  - '3.4'
+  ecosystem_specific:
+    fixed_range: 50f4049b58b9d04a403ba7570935f887aef937db:6c366d73e27ab2097a197cd6d9870c1ca2457cc8
+    severity: MEDIUM

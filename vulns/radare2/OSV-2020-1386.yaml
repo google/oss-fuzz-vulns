@@ -1,7 +1,4 @@
 id: OSV-2020-1386
-package:
-  name: radare2
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in parse_relocation_info
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24400
@@ -11,11 +8,20 @@ details: |
   parse_relocation_info
   get_relocs_64
   relocs
-affects:
+modified: '2021-08-21T00:07:50.410932Z'
+published: '2020-07-28T00:00:08.332887Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24400
+affected:
+- package:
+    name: radare2
+    ecosystem: OSS-Fuzz
   ranges:
   - type: GIT
     repo: https://github.com/radare/radare2
-    introduced: ee9025c9170c15dea5e68d4d5179d41e78868493
+    events:
+    - introduced: ee9025c9170c15dea5e68d4d5179d41e78868493
   versions:
   - 4.5.0
   - 4.5.1
@@ -31,10 +37,5 @@ affects:
   - 5.4.0-git
   - 5.4.0
   - continuous
-modified: '2021-08-21T00:07:50.410932Z'
-published: '2020-07-28T00:00:08.332887Z'
-ecosystem_specific:
-  severity: MEDIUM
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24400
+  ecosystem_specific:
+    severity: MEDIUM

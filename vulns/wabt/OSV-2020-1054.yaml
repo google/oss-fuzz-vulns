@@ -1,7 +1,4 @@
 id: OSV-2020-1054
-package:
-  name: wabt
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in wabt::string_view::compare
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18962
@@ -11,23 +8,26 @@ details: |
   wabt::string_view::compare
   wabt::operator==
   wabt::BinaryReader::ReadCustomSection
-affects:
+modified: '2021-06-23T06:27:57.001465Z'
+published: '2020-07-22T21:49:43.465976Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18962
+affected:
+- package:
+    name: wabt
+    ecosystem: OSS-Fuzz
   ranges:
   - type: GIT
     repo: https://github.com/WebAssembly/wabt
-    introduced: ddcec7c6122bbf0ee82a197fbb739ffcc52b63d9
-    fixed: d087e702d520207871ae82c58461fb08d58af187
+    events:
+    - introduced: ddcec7c6122bbf0ee82a197fbb739ffcc52b63d9
+    - fixed: d087e702d520207871ae82c58461fb08d58af187
   versions:
   - 1.0.13
   - 1.0.14
   - 1.0.15
-modified: '2021-06-23T06:27:57.001465Z'
-published: '2020-07-22T21:49:43.465976Z'
-ecosystem_specific:
-  severity: MEDIUM
-database_specific:
-  introduced_range: unknown:ddcec7c6122bbf0ee82a197fbb739ffcc52b63d9
-  fixed_range: a5a9b341b7fb7aa66427d4701871d2b3c73bcc87:d087e702d520207871ae82c58461fb08d58af187
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18962
+  ecosystem_specific:
+    introduced_range: unknown:ddcec7c6122bbf0ee82a197fbb739ffcc52b63d9
+    severity: MEDIUM
+    fixed_range: a5a9b341b7fb7aa66427d4701871d2b3c73bcc87:d087e702d520207871ae82c58461fb08d58af187

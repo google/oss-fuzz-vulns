@@ -1,7 +1,4 @@
 id: OSV-2020-225
-package:
-  name: unbound
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in dname_pkt_compare
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20308
@@ -11,24 +8,27 @@ details: |
   dname_pkt_compare
   scrub_normalize
   scrub_message
-affects:
+modified: '2021-06-23T06:25:08.392472Z'
+published: '2020-06-24T01:51:19.752668Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20308
+affected:
+- package:
+    name: unbound
+    ecosystem: OSS-Fuzz
   ranges:
   - type: GIT
     repo: https://github.com/NLnetLabs/unbound
-    introduced: 9b3f3101e3d0b027ef7a7b4370587724a57abac2
-    fixed: f37242566b3187c1d715af6d0e4e0c5b75ccafeb
+    events:
+    - introduced: 9b3f3101e3d0b027ef7a7b4370587724a57abac2
+    - fixed: f37242566b3187c1d715af6d0e4e0c5b75ccafeb
   versions:
   - release-1.10.0
   - release-1.10.0rc1
   - release-1.10.0rc2
   - release-1.10.1
-modified: '2021-06-23T06:25:08.392472Z'
-published: '2020-06-24T01:51:19.752668Z'
-ecosystem_specific:
-  severity: MEDIUM
-database_specific:
-  introduced_range: e149bc70460268f7f559ce10ab7e3678a5baac0f:1e0c957dcd7b0b1e03ff2d8bf58fdbb147ce4978
-  fixed_range: 4ccac696caf8826995c9db78af6074a5a1381f00:f37242566b3187c1d715af6d0e4e0c5b75ccafeb
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20308
+  ecosystem_specific:
+    fixed_range: 4ccac696caf8826995c9db78af6074a5a1381f00:f37242566b3187c1d715af6d0e4e0c5b75ccafeb
+    severity: MEDIUM
+    introduced_range: e149bc70460268f7f559ce10ab7e3678a5baac0f:1e0c957dcd7b0b1e03ff2d8bf58fdbb147ce4978

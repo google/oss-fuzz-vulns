@@ -1,7 +1,4 @@
 id: OSV-2020-2024
-package:
-  name: leptonica
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in pixFindHorizontalRuns
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26268
@@ -11,16 +8,20 @@ details: |
   pixFindHorizontalRuns
   pixFillPolygon
   graphics_fuzzer.cc
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/DanBloomberg/leptonica.git
-    introduced: ef35b298c87cee04bf35dac4bc7c8c489d26fbc4
-    fixed: 20b8d16e4f3fa4d94b606a7f7804ee56c776768b
 modified: '2021-06-21T06:56:20.298390Z'
 published: '2020-10-13T00:00:08.718271Z'
-ecosystem_specific:
-  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26268
+affected:
+- package:
+    name: leptonica
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/DanBloomberg/leptonica.git
+    events:
+    - introduced: ef35b298c87cee04bf35dac4bc7c8c489d26fbc4
+    - fixed: 20b8d16e4f3fa4d94b606a7f7804ee56c776768b
+  ecosystem_specific:
+    severity: HIGH

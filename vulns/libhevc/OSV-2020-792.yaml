@@ -1,7 +1,4 @@
 id: OSV-2020-792
-package:
-  name: libhevc
-  ecosystem: OSS-Fuzz
 summary: Use-of-uninitialized-value in ihevc_inter_pred_chroma_copy_ssse3
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23197
@@ -11,32 +8,61 @@ details: |
   ihevc_inter_pred_chroma_copy_ssse3
   ihevcd_inter_pred_ctb
   ihevcd_process
-affects:
+modified: '2021-06-23T06:52:32.938825Z'
+published: '2020-07-14T05:37:35.331259Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23197
+affected:
+- package:
+    name: libhevc
+    ecosystem: OSS-Fuzz
   ranges:
   - type: GIT
     repo: https://android.googlesource.com/platform/external/libhevc
-    introduced: 4d36db275bb4d0abc410415f6d8f5af4bc179102
-    fixed: e979e4f69a45519b574186b56c883f5f1a413ba8
+    events:
+    - introduced: 4d36db275bb4d0abc410415f6d8f5af4bc179102
+    - fixed: e979e4f69a45519b574186b56c883f5f1a413ba8
   - type: GIT
     repo: https://android.googlesource.com/platform/external/libhevc
-    introduced: 4d36db275bb4d0abc410415f6d8f5af4bc179102
-    fixed: 663b9fd80355898fb087793752f72632b110b2b3
+    events:
+    - introduced: 4d36db275bb4d0abc410415f6d8f5af4bc179102
+    - fixed: e979e4f69a45519b574186b56c883f5f1a413ba8
+    - fixed: 663b9fd80355898fb087793752f72632b110b2b3
   - type: GIT
     repo: https://android.googlesource.com/platform/external/libhevc
-    introduced: 4d36db275bb4d0abc410415f6d8f5af4bc179102
-    fixed: 3cacdbc078fc3269f2273a45220f3d127e0d87e9
+    events:
+    - introduced: 4d36db275bb4d0abc410415f6d8f5af4bc179102
+    - fixed: e979e4f69a45519b574186b56c883f5f1a413ba8
+    - fixed: 663b9fd80355898fb087793752f72632b110b2b3
+    - fixed: 3cacdbc078fc3269f2273a45220f3d127e0d87e9
   - type: GIT
     repo: https://android.googlesource.com/platform/external/libhevc
-    introduced: 4d36db275bb4d0abc410415f6d8f5af4bc179102
-    fixed: 7995c17c17c37a5261bc43405457a05a8569500a
+    events:
+    - introduced: 4d36db275bb4d0abc410415f6d8f5af4bc179102
+    - fixed: e979e4f69a45519b574186b56c883f5f1a413ba8
+    - fixed: 663b9fd80355898fb087793752f72632b110b2b3
+    - fixed: 3cacdbc078fc3269f2273a45220f3d127e0d87e9
+    - fixed: 7995c17c17c37a5261bc43405457a05a8569500a
   - type: GIT
     repo: https://android.googlesource.com/platform/external/libhevc
-    introduced: 4d36db275bb4d0abc410415f6d8f5af4bc179102
-    fixed: f642bac36be1660c1038e0dc30bb664c145a5373
+    events:
+    - introduced: 4d36db275bb4d0abc410415f6d8f5af4bc179102
+    - fixed: e979e4f69a45519b574186b56c883f5f1a413ba8
+    - fixed: 663b9fd80355898fb087793752f72632b110b2b3
+    - fixed: 3cacdbc078fc3269f2273a45220f3d127e0d87e9
+    - fixed: 7995c17c17c37a5261bc43405457a05a8569500a
+    - fixed: f642bac36be1660c1038e0dc30bb664c145a5373
   - type: GIT
     repo: https://android.googlesource.com/platform/external/libhevc
-    introduced: 4d36db275bb4d0abc410415f6d8f5af4bc179102
-    fixed: dcef8335b71f8a6dc50bbb2b02ed99a4cf44577a
+    events:
+    - introduced: 4d36db275bb4d0abc410415f6d8f5af4bc179102
+    - fixed: e979e4f69a45519b574186b56c883f5f1a413ba8
+    - fixed: 663b9fd80355898fb087793752f72632b110b2b3
+    - fixed: 3cacdbc078fc3269f2273a45220f3d127e0d87e9
+    - fixed: 7995c17c17c37a5261bc43405457a05a8569500a
+    - fixed: f642bac36be1660c1038e0dc30bb664c145a5373
+    - fixed: dcef8335b71f8a6dc50bbb2b02ed99a4cf44577a
   versions:
   - android-11.0.0_r1
   - android-11.0.0_r10
@@ -99,12 +125,6 @@ affects:
   - android-cts-11.0_r4
   - android-mainline-11.0.0_r35
   - android-vts-11.0_r4
-modified: '2021-06-23T06:52:32.938825Z'
-published: '2020-07-14T05:37:35.331259Z'
-ecosystem_specific:
-  severity: MEDIUM
-database_specific:
-  fixed_range: 9623000c124facfcee78ffbc341740fa68f3d914:e979e4f69a45519b574186b56c883f5f1a413ba8
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23197
+  ecosystem_specific:
+    severity: MEDIUM
+    fixed_range: 9623000c124facfcee78ffbc341740fa68f3d914:e979e4f69a45519b574186b56c883f5f1a413ba8

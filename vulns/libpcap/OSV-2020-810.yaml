@@ -1,7 +1,4 @@
 id: OSV-2020-810
-package:
-  name: libpcap
-  ecosystem: OSS-Fuzz
 summary: Use-of-uninitialized-value in pcap_filter_with_aux_data
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22220
@@ -11,19 +8,23 @@ details: |
   pcap_filter_with_aux_data
   pcap_filter
   pcap_offline_filter
-affects:
+modified: '2021-07-14T00:05:05.017869Z'
+published: '2020-07-14T05:37:43.627443Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22220
+affected:
+- package:
+    name: libpcap
+    ecosystem: OSS-Fuzz
   ranges:
   - type: GIT
     repo: https://github.com/the-tcpdump-group/libpcap.git
-    introduced: 54d6e832a0d201e7e7252b5b72c20755dfdc6841
+    events:
+    - introduced: 54d6e832a0d201e7e7252b5b72c20755dfdc6841
   versions:
   - libpcap-1.10-bp
   - libpcap-1.10.0
   - libpcap-1.10.1
-modified: '2021-07-14T00:05:05.017869Z'
-published: '2020-07-14T05:37:43.627443Z'
-ecosystem_specific:
-  severity: MEDIUM
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22220
+  ecosystem_specific:
+    severity: MEDIUM

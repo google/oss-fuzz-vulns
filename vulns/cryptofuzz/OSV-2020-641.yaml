@@ -1,7 +1,4 @@
 id: OSV-2020-641
-package:
-  name: cryptofuzz
-  ecosystem: OSS-Fuzz
 summary: Use-of-uninitialized-value in bool std::__1::equal<std::__1::__wrap_iter<unsigned
   char const*>, std::__1::__wr
 details: |
@@ -12,16 +9,20 @@ details: |
   bool std::__1::equal<std::__1::__wrap_iter<unsigned char const*>, std::__1::__wr
   bool std::__1::operator==<unsigned char, std::__1::allocator<unsigned char> >
   std::__1::enable_if<is_convertible_v<decltype
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/guidovranken/cryptofuzz
-    introduced: c039117fcd5fd56824d2ae329368bd8744ad8743
-    fixed: 17edd756cd3cee2d666ff825af592c5acef87eb8
 modified: '2021-06-21T06:56:21.798416Z'
 published: '2020-07-01T00:00:22.030129Z'
-ecosystem_specific:
-  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14353
+affected:
+- package:
+    name: cryptofuzz
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/guidovranken/cryptofuzz
+    events:
+    - introduced: c039117fcd5fd56824d2ae329368bd8744ad8743
+    - fixed: 17edd756cd3cee2d666ff825af592c5acef87eb8
+  ecosystem_specific:
+    severity: MEDIUM

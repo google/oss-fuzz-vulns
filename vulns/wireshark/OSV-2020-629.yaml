@@ -1,7 +1,4 @@
 id: OSV-2020-629
-package:
-  name: wireshark
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in bytestring_to_str
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=19070
@@ -11,12 +8,21 @@ details: |
   bytestring_to_str
   dissect_NUMBER_acf_lin
   call_dissector_work
-affects:
+modified: '2021-06-21T06:56:24.104842Z'
+published: '2020-07-01T00:00:21.373324Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=19070
+affected:
+- package:
+    name: wireshark
+    ecosystem: OSS-Fuzz
   ranges:
   - type: GIT
     repo: https://gitlab.com/wireshark/wireshark.git
-    introduced: 22fd28940a87dc55294614cb15faed3cb82b4986
-    fixed: f17f1277607e5d745d889489f8da43b2a4e996a6
+    events:
+    - introduced: 22fd28940a87dc55294614cb15faed3cb82b4986
+    - fixed: f17f1277607e5d745d889489f8da43b2a4e996a6
   versions:
   - v3.1.1
   - v3.1.2rc0
@@ -60,10 +66,5 @@ affects:
   - wireshark-3.2.7
   - wireshark-3.2.8
   - wireshark-3.2.9
-modified: '2021-06-21T06:56:24.104842Z'
-published: '2020-07-01T00:00:21.373324Z'
-ecosystem_specific:
-  severity: MEDIUM
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=19070
+  ecosystem_specific:
+    severity: MEDIUM

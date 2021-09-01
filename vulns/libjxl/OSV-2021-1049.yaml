@@ -1,7 +1,4 @@
 id: OSV-2021-1049
-package:
-  name: libjxl
-  ecosystem: OSS-Fuzz
 summary: Container-overflow in jxl::InvSqueeze
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=36485
@@ -11,20 +8,27 @@ details: |
   jxl::InvSqueeze
   jxl::Transform::Inverse
   jxl::Image::undo_transforms
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/libjxl/libjxl.git
-    introduced: 84c6421732054399e9b8046f1cdf2e999dbaaab2
-    fixed: f134b5a31da90e743af41fb6cc227af06b91bcc2
-  - type: GIT
-    repo: https://github.com/libjxl/libjxl.git
-    introduced: d8b577c75ba31f93399ea4b13cd019422d529106
-    fixed: ad4cac4bf89949007922f1147648c91fcee83b7b
 modified: '2021-07-31T00:06:29.837157Z'
 published: '2021-07-25T00:00:06.796305Z'
-ecosystem_specific:
-  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=36485
+affected:
+- package:
+    name: libjxl
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/libjxl/libjxl.git
+    events:
+    - introduced: 84c6421732054399e9b8046f1cdf2e999dbaaab2
+    - fixed: f134b5a31da90e743af41fb6cc227af06b91bcc2
+  - type: GIT
+    repo: https://github.com/libjxl/libjxl.git
+    events:
+    - introduced: 84c6421732054399e9b8046f1cdf2e999dbaaab2
+    - fixed: f134b5a31da90e743af41fb6cc227af06b91bcc2
+    - introduced: d8b577c75ba31f93399ea4b13cd019422d529106
+    - fixed: ad4cac4bf89949007922f1147648c91fcee83b7b
+  ecosystem_specific:
+    severity: MEDIUM

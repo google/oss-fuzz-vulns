@@ -1,7 +1,4 @@
 id: OSV-2020-65
-package:
-  name: perfetto
-  ecosystem: OSS-Fuzz
 summary: Heap-use-after-free in std::__1::vector<unsigned long, std::__1::allocator<unsigned
   long> >::begin
 details: |
@@ -12,18 +9,22 @@ details: |
   std::__1::vector<unsigned long, std::__1::allocator<unsigned long> >::begin
   perfetto::trace_processor::TrackTracker::ResolveDescriptorTrack
   perfetto::trace_processor::TrackTracker::GetDescriptorTrackImpl
-affects:
-  ranges:
-  - type: GIT
-    repo: https://android.googlesource.com/platform/external/perfetto/
-    introduced: e5a041472ebe8e99532d0dfdcc8970bf4714ee19
-    fixed: 0df72fe5d206a73023cc970840869021e249f647
-  versions:
-  - platform-tools-30.0.1
 modified: '2021-06-21T06:56:27.326521Z'
 published: '2020-06-24T01:51:12.508705Z'
-ecosystem_specific:
-  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21908
+affected:
+- package:
+    name: perfetto
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://android.googlesource.com/platform/external/perfetto/
+    events:
+    - introduced: e5a041472ebe8e99532d0dfdcc8970bf4714ee19
+    - fixed: 0df72fe5d206a73023cc970840869021e249f647
+  versions:
+  - platform-tools-30.0.1
+  ecosystem_specific:
+    severity: HIGH

@@ -1,7 +1,4 @@
 id: OSV-2018-161
-package:
-  name: harfbuzz
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in BEInt<unsigned short, 2>::set
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11081
@@ -11,21 +8,25 @@ details: |
   BEInt<unsigned short, 2>::set
   OT::Script::subset
   void OT::OffsetTo<OT::Script, OT::IntType<unsigned short, 2u>, true>::serialize_
-affects:
+modified: '2021-06-21T06:56:20.510896Z'
+published: '2021-01-13T00:01:07.793293Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11081
+affected:
+- package:
+    name: harfbuzz
+    ecosystem: OSS-Fuzz
   ranges:
   - type: GIT
     repo: https://github.com/harfbuzz/harfbuzz.git
-    introduced: 5f17dbc3025093308d2191a4abd2eec24db35c0e
-    fixed: aa5af8d041521507f8bc8ded8a365ee56098388c
+    events:
+    - introduced: 5f17dbc3025093308d2191a4abd2eec24db35c0e
+    - fixed: aa5af8d041521507f8bc8ded8a365ee56098388c
   versions:
   - 1.9.0
   - 2.0.0
   - 2.0.1
   - 2.0.2
-modified: '2021-06-21T06:56:20.510896Z'
-published: '2021-01-13T00:01:07.793293Z'
-ecosystem_specific:
-  severity: HIGH
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11081
+  ecosystem_specific:
+    severity: HIGH

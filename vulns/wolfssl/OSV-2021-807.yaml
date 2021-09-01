@@ -1,7 +1,4 @@
 id: OSV-2021-807
-package:
-  name: wolfssl
-  ecosystem: OSS-Fuzz
 summary: Stack-buffer-overflow in DecodeSingleResponse
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34713
@@ -11,19 +8,22 @@ details: |
   DecodeSingleResponse
   DecodeResponseData
   DecodeBasicOcspResponse
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/wolfssl/wolfssl
-    introduced: e1bc0c4447d421b42bf303c1fa61dbf97a4b749d
-    fixed: 1fe445368c6d5972b6760be86f2d2fd6e24427bf
 modified: '2021-06-23T06:25:59.545085Z'
 published: '2021-05-28T00:00:29.003221Z'
-ecosystem_specific:
-  severity: HIGH
-database_specific:
-  introduced_range: 956a0f2b5f000de6955a51379917bf7b3ff29a41:41af3da0e3106c85b32429b13790fb34b2e77823
-  fixed_range: 41af3da0e3106c85b32429b13790fb34b2e77823:1fe445368c6d5972b6760be86f2d2fd6e24427bf
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34713
+affected:
+- package:
+    name: wolfssl
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/wolfssl/wolfssl
+    events:
+    - introduced: e1bc0c4447d421b42bf303c1fa61dbf97a4b749d
+    - fixed: 1fe445368c6d5972b6760be86f2d2fd6e24427bf
+  ecosystem_specific:
+    introduced_range: 956a0f2b5f000de6955a51379917bf7b3ff29a41:41af3da0e3106c85b32429b13790fb34b2e77823
+    fixed_range: 41af3da0e3106c85b32429b13790fb34b2e77823:1fe445368c6d5972b6760be86f2d2fd6e24427bf
+    severity: HIGH

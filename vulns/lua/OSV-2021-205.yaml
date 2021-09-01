@@ -1,7 +1,4 @@
 id: OSV-2021-205
-package:
-  name: lua
-  ecosystem: OSS-Fuzz
 summary: Heap-use-after-free in lua_closeslot
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29610
@@ -11,16 +8,20 @@ details: |
   lua_closeslot
   luaL_traceback
   msghandler
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/lua/lua
-    introduced: cc1692515e2a6aabc6d07159e7926656e38eda53
-    fixed: 2bfa13e520e53210b96ead88f49a9ca20c5a5d18
 modified: '2021-06-21T06:56:18.613570Z'
 published: '2021-01-16T00:01:03.500860Z'
-ecosystem_specific:
-  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29610
+affected:
+- package:
+    name: lua
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/lua/lua
+    events:
+    - introduced: cc1692515e2a6aabc6d07159e7926656e38eda53
+    - fixed: 2bfa13e520e53210b96ead88f49a9ca20c5a5d18
+  ecosystem_specific:
+    severity: HIGH

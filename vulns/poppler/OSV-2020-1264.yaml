@@ -1,7 +1,4 @@
 id: OSV-2020-1264
-package:
-  name: poppler
-  ecosystem: OSS-Fuzz
 summary: Use-of-uninitialized-value in AnnotAppearanceBuilder::drawText
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=17607
@@ -11,12 +8,21 @@ details: |
   AnnotAppearanceBuilder::drawText
   AnnotAppearanceBuilder::drawFormFieldChoice
   AnnotAppearanceBuilder::drawFormField
-affects:
+modified: '2021-06-23T06:26:15.714573Z'
+published: '2020-07-22T21:50:01.559473Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=17607
+affected:
+- package:
+    name: poppler
+    ecosystem: OSS-Fuzz
   ranges:
   - type: GIT
     repo: https://gitlab.freedesktop.org/poppler/poppler.git
-    introduced: c9e2dc7ea7e098875e6b93566bdb1d14451c3673
-    fixed: 0e8ed9a34e04cc4e56b31f4057c267630c4a7656
+    events:
+    - introduced: c9e2dc7ea7e098875e6b93566bdb1d14451c3673
+    - fixed: 0e8ed9a34e04cc4e56b31f4057c267630c4a7656
   versions:
   - poppler-0.65.0
   - poppler-0.66.0
@@ -37,12 +43,6 @@ affects:
   - poppler-0.79.0
   - poppler-0.80.0
   - poppler-0.81.0
-modified: '2021-06-23T06:26:15.714573Z'
-published: '2020-07-22T21:50:01.559473Z'
-ecosystem_specific:
-  severity: MEDIUM
-database_specific:
-  introduced_range: unknown:c9e2dc7ea7e098875e6b93566bdb1d14451c3673
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=17607
+  ecosystem_specific:
+    introduced_range: unknown:c9e2dc7ea7e098875e6b93566bdb1d14451c3673
+    severity: MEDIUM

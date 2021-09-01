@@ -1,7 +1,4 @@
 id: OSV-2020-862
-package:
-  name: libsass
-  ecosystem: OSS-Fuzz
 summary: Use-of-uninitialized-value in std::__1::vector<std::__1::vector<Sass::Extension,
   std::__1::allocator<Sass::Ext
 details: |
@@ -12,20 +9,24 @@ details: |
   std::__1::vector<std::__1::vector<Sass::Extension, std::__1::allocator<Sass::Ext
   Sass::Extender::extendCompound
   Sass::Extender::extendComplex
-affects:
+modified: '2021-06-21T06:56:24.501091Z'
+published: '2020-07-14T22:13:48.731457Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21223
+affected:
+- package:
+    name: libsass
+    ecosystem: OSS-Fuzz
   ranges:
   - type: GIT
     repo: https://github.com/sass/libsass.git
-    introduced: 2c4b0c39138b3bde9ee6db86264459812161ddd0
+    events:
+    - introduced: 2c4b0c39138b3bde9ee6db86264459812161ddd0
   versions:
   - 3.6.2
   - 3.6.3
   - 3.6.4
   - 3.6.5
-modified: '2021-06-21T06:56:24.501091Z'
-published: '2020-07-14T22:13:48.731457Z'
-ecosystem_specific:
-  severity: MEDIUM
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21223
+  ecosystem_specific:
+    severity: MEDIUM

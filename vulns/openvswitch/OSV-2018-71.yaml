@@ -1,7 +1,4 @@
 id: OSV-2018-71
-package:
-  name: openvswitch
-  ecosystem: OSS-Fuzz
 summary: Heap-use-after-free in parse_odp_action
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=10796
@@ -11,16 +8,20 @@ details: |
   parse_odp_action
   odp_actions_from_string
   parse_actions
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/openvswitch/ovs.git
-    introduced: ea43b024a8a03f6648d0e06589137a4fbfea9f5a
-    fixed: 2c022949efff7f135686bd9007fffaaa6147f935
 modified: '2021-06-21T06:56:26.316151Z'
 published: '2021-01-13T00:00:34.603056Z'
-ecosystem_specific:
-  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=10796
+affected:
+- package:
+    name: openvswitch
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/openvswitch/ovs.git
+    events:
+    - introduced: ea43b024a8a03f6648d0e06589137a4fbfea9f5a
+    - fixed: 2c022949efff7f135686bd9007fffaaa6147f935
+  ecosystem_specific:
+    severity: HIGH

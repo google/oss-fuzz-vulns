@@ -1,7 +1,4 @@
 id: OSV-2021-397
-package:
-  name: serenity
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in Crypto::UnsignedBigInteger::UnsignedBigInteger
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30920
@@ -11,16 +8,20 @@ details: |
   Crypto::UnsignedBigInteger::UnsignedBigInteger
   Crypto::UnsignedBigInteger::import_data
   Crypto::der_decode_integer
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/SerenityOS/serenity
-    introduced: 5b891b0c36b9cf6efe1c8873e34f2fc114a686d3
-    fixed: 3fe7ac0924ada70faaf27636b6e0f40bcde24f77
 modified: '2021-06-21T06:56:19.865872Z'
 published: '2021-02-15T00:00:26.730634Z'
-ecosystem_specific:
-  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30920
+affected:
+- package:
+    name: serenity
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/SerenityOS/serenity
+    events:
+    - introduced: 5b891b0c36b9cf6efe1c8873e34f2fc114a686d3
+    - fixed: 3fe7ac0924ada70faaf27636b6e0f40bcde24f77
+  ecosystem_specific:
+    severity: MEDIUM

@@ -1,7 +1,4 @@
 id: OSV-2020-881
-package:
-  name: radare2
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in read_uleb128
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18549
@@ -11,11 +8,20 @@ details: |
   read_uleb128
   walk_exports
   get_symbols
-affects:
+modified: '2021-08-20T00:06:37.888786Z'
+published: '2020-07-14T22:13:57.548799Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18549
+affected:
+- package:
+    name: radare2
+    ecosystem: OSS-Fuzz
   ranges:
   - type: GIT
     repo: https://github.com/radare/radare2
-    introduced: 74958b8e88879302d6f61a813943b968cf03dbd5
+    events:
+    - introduced: 74958b8e88879302d6f61a813943b968cf03dbd5
   versions:
   - 4.0.0
   - 4.1.0
@@ -39,10 +45,5 @@ affects:
   - 5.3.1
   - 5.4.0-git
   - 5.4.0
-modified: '2021-08-20T00:06:37.888786Z'
-published: '2020-07-14T22:13:57.548799Z'
-ecosystem_specific:
-  severity: MEDIUM
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18549
+  ecosystem_specific:
+    severity: MEDIUM

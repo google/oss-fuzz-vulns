@@ -1,7 +1,4 @@
 id: OSV-2021-422
-package:
-  name: c-blosc2
-  ecosystem: OSS-Fuzz
 summary: Heap-use-after-free in frame_get_lazychunk
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31120
@@ -11,16 +8,20 @@ details: |
   frame_get_lazychunk
   frame_decompress_chunk
   blosc2_schunk_decompress_chunk
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/Blosc/c-blosc2.git
-    introduced: 969fb4cbb617801876fb5ddefc73778935ff1a56
-    fixed: e411d87705c65db2aafb0e774092fe57647fb31c
 modified: '2021-06-21T06:56:25.931082Z'
 published: '2021-02-20T00:01:08.633490Z'
-ecosystem_specific:
-  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31120
+affected:
+- package:
+    name: c-blosc2
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/Blosc/c-blosc2.git
+    events:
+    - introduced: 969fb4cbb617801876fb5ddefc73778935ff1a56
+    - fixed: e411d87705c65db2aafb0e774092fe57647fb31c
+  ecosystem_specific:
+    severity: MEDIUM

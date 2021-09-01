@@ -1,7 +1,4 @@
 id: OSV-2021-907
-package:
-  name: h2o
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in decode_header_value_literal
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=35675
@@ -11,16 +8,20 @@ details: |
   decode_header_value_literal
   decode_header
   h2o_hpack_parse_request
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/h2o/h2o
-    introduced: 456db08747ce01ab548e3da67da90a4d9da7286e
-    fixed: 1785a2fe97eda2de3d065147a0a4e5b509f0e3c0
 modified: '2021-07-01T00:00:08.550834Z'
 published: '2021-07-01T00:00:08.550315Z'
-ecosystem_specific:
-  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=35675
+affected:
+- package:
+    name: h2o
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/h2o/h2o
+    events:
+    - introduced: 456db08747ce01ab548e3da67da90a4d9da7286e
+    - fixed: 1785a2fe97eda2de3d065147a0a4e5b509f0e3c0
+  ecosystem_specific:
+    severity: MEDIUM

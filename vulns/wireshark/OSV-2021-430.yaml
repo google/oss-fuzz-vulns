@@ -1,7 +1,4 @@
 id: OSV-2021-430
-package:
-  name: wireshark
-  ecosystem: OSS-Fuzz
 summary: Stack-buffer-overflow in tvb_memcpy
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31198
@@ -11,16 +8,20 @@ details: |
   tvb_memcpy
   composite_memcpy
   _tvb_get_nstringz
-affects:
-  ranges:
-  - type: GIT
-    repo: https://gitlab.com/wireshark/wireshark.git
-    introduced: 23a5f6a17767c39a7ed04df438ae3b4bf1fe90d8
-    fixed: 2ba52cdc0e4216dafdfc32498fc0210c99449ec9
 modified: '2021-06-21T06:56:24.066090Z'
 published: '2021-02-22T00:00:22.320320Z'
-ecosystem_specific:
-  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31198
+affected:
+- package:
+    name: wireshark
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://gitlab.com/wireshark/wireshark.git
+    events:
+    - introduced: 23a5f6a17767c39a7ed04df438ae3b4bf1fe90d8
+    - fixed: 2ba52cdc0e4216dafdfc32498fc0210c99449ec9
+  ecosystem_specific:
+    severity: HIGH

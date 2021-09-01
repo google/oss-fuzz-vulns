@@ -1,7 +1,4 @@
 id: OSV-2020-2161
-package:
-  name: qemu
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in msix_vector_masked
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=27418
@@ -11,22 +8,26 @@ details: |
   msix_vector_masked
   msix_is_masked
   msix_table_mmio_write
-affects:
+modified: '2021-06-21T06:56:20.853091Z'
+published: '2020-11-15T22:34:13.437070Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=27418
+affected:
+- package:
+    name: qemu
+    ecosystem: OSS-Fuzz
   ranges:
   - type: GIT
     repo: https://git.qemu.org/git/qemu.git
-    introduced: 326c9a0eb67672f3d7515fe41e9deaa58fb15227
-    fixed: 94a4f8167dd9dde35b27e1d82bdf6c2fa5071364
+    events:
+    - introduced: 326c9a0eb67672f3d7515fe41e9deaa58fb15227
+    - fixed: 94a4f8167dd9dde35b27e1d82bdf6c2fa5071364
   versions:
   - v5.2.0
   - v5.2.0-rc1
   - v5.2.0-rc2
   - v5.2.0-rc3
   - v5.2.0-rc4
-modified: '2021-06-21T06:56:20.853091Z'
-published: '2020-11-15T22:34:13.437070Z'
-ecosystem_specific:
-  severity: MEDIUM
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=27418
+  ecosystem_specific:
+    severity: MEDIUM

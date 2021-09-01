@@ -1,7 +1,4 @@
 id: OSV-2018-179
-package:
-  name: harfbuzz
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in OT::post::accelerator_t::cmp_gids
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11290
@@ -11,18 +8,22 @@ details: |
   OT::post::accelerator_t::cmp_gids
   sort_r_cmpswap
   sort_r_simple
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/harfbuzz/harfbuzz.git
-    introduced: bce437cf0b71e9b60bbf058eaf61593fed30ae33
-    fixed: 517a1bac97b6273e03562deefcca129648698c31
-  versions:
-  - 2.1.1
 modified: '2021-06-21T06:56:20.641062Z'
 published: '2021-01-13T00:01:14.304385Z'
-ecosystem_specific:
-  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11290
+affected:
+- package:
+    name: harfbuzz
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/harfbuzz/harfbuzz.git
+    events:
+    - introduced: bce437cf0b71e9b60bbf058eaf61593fed30ae33
+    - fixed: 517a1bac97b6273e03562deefcca129648698c31
+  versions:
+  - 2.1.1
+  ecosystem_specific:
+    severity: MEDIUM

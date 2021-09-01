@@ -1,7 +1,4 @@
 id: OSV-2020-424
-package:
-  name: readstat
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in sav_parse_long_string_missing_values_record
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13076
@@ -11,12 +8,21 @@ details: |
   sav_parse_long_string_missing_values_record
   sav_parse_records_pass2
   readstat_parse_sav
-affects:
+modified: '2021-06-21T06:56:26.224917Z'
+published: '2020-07-01T00:00:08.721678Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13076
+affected:
+- package:
+    name: readstat
+    ecosystem: OSS-Fuzz
   ranges:
   - type: GIT
     repo: https://github.com/WizardMac/ReadStat
-    introduced: a48bdfb6e94e5ad0ef8962f5aeab7ac2c45f87de
-    fixed: 54874a7ac5bbf13fdabcd023ddabdabf5f8092f4
+    events:
+    - introduced: a48bdfb6e94e5ad0ef8962f5aeab7ac2c45f87de
+    - fixed: 54874a7ac5bbf13fdabcd023ddabdabf5f8092f4
   versions:
   - v1.0.0
   - v1.0.0-rc0
@@ -27,10 +33,5 @@ affects:
   - v1.0.0-rc5
   - v1.0.0-rc6
   - v1.0.0-rc7
-modified: '2021-06-21T06:56:26.224917Z'
-published: '2020-07-01T00:00:08.721678Z'
-ecosystem_specific:
-  severity: MEDIUM
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13076
+  ecosystem_specific:
+    severity: MEDIUM

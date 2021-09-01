@@ -1,7 +1,4 @@
 id: OSV-2020-1875
-package:
-  name: ghostscript
-  ecosystem: OSS-Fuzz
 summary: Heap-use-after-free in dict_find_string
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20652
@@ -11,22 +8,28 @@ details: |
   dict_find_string
   gs_main_tempnames
   gs_main_finit
-affects:
-  ranges:
-  - type: GIT
-    repo: git://git.ghostscript.com/ghostpdl.git
-    introduced: f35924926cb35f08be5a12ded4a00eb2f42aed3e
-    fixed: 5fc8e7c0b656d4e2be8f5e316121f06039c35273
-  - type: GIT
-    repo: git://git.ghostscript.com/ghostpdl.git
-    introduced: f35924926cb35f08be5a12ded4a00eb2f42aed3e
-    fixed: bbecd13cc34f3dcdcedd726e7de12c988da9794a
-  versions:
-  - ghostpdl-9.51rc1
 modified: '2021-06-21T06:56:21.525798Z'
 published: '2020-09-29T00:00:26.901998Z'
-ecosystem_specific:
-  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20652
+affected:
+- package:
+    name: ghostscript
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: git://git.ghostscript.com/ghostpdl.git
+    events:
+    - introduced: f35924926cb35f08be5a12ded4a00eb2f42aed3e
+    - fixed: 5fc8e7c0b656d4e2be8f5e316121f06039c35273
+  - type: GIT
+    repo: git://git.ghostscript.com/ghostpdl.git
+    events:
+    - introduced: f35924926cb35f08be5a12ded4a00eb2f42aed3e
+    - fixed: 5fc8e7c0b656d4e2be8f5e316121f06039c35273
+    - fixed: bbecd13cc34f3dcdcedd726e7de12c988da9794a
+  versions:
+  - ghostpdl-9.51rc1
+  ecosystem_specific:
+    severity: HIGH

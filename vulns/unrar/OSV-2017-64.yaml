@@ -1,7 +1,4 @@
 id: OSV-2017-64
-package:
-  name: unrar
-  ecosystem: OSS-Fuzz
 summary: Use-of-uninitialized-value in SetExtraInfo20
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=4408
@@ -11,25 +8,28 @@ details: |
   SetExtraInfo20
   CmdExtract::ExtractCurrentFile
   CmdExtract::ExtractArchive
-affects:
+modified: '2021-06-23T06:25:50.650741Z'
+published: '2021-01-13T21:56:31.829117Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=4408
+affected:
+- package:
+    name: unrar
+    ecosystem: OSS-Fuzz
   ranges:
   - type: GIT
     repo: https://github.com/aawc/unrar.git
-    introduced: d2e5341ebf6f34c9bd5939c3ac812cb2cd983081
-    fixed: b676eae90fc9c620a214889ed040d356638a18f6
+    events:
+    - introduced: d2e5341ebf6f34c9bd5939c3ac812cb2cd983081
+    - fixed: b676eae90fc9c620a214889ed040d356638a18f6
   versions:
   - 5.6.1.2
   - 5.6.1.3
   - 5.6.1.4
   - 5.6.1.5
   - 5.6.1.7
-modified: '2021-06-23T06:25:50.650741Z'
-published: '2021-01-13T21:56:31.829117Z'
-ecosystem_specific:
-  severity: MEDIUM
-database_specific:
-  fixed_range: 9866c9649507f177233ca96feefac8b12e36a91f:b676eae90fc9c620a214889ed040d356638a18f6
-  introduced_range: 2a079823c708a637bc36e888180ebb96fdfba526:1d8ea7923dae7c8f136912b6bdca95dcb52e80bc
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=4408
+  ecosystem_specific:
+    fixed_range: 9866c9649507f177233ca96feefac8b12e36a91f:b676eae90fc9c620a214889ed040d356638a18f6
+    introduced_range: 2a079823c708a637bc36e888180ebb96fdfba526:1d8ea7923dae7c8f136912b6bdca95dcb52e80bc
+    severity: MEDIUM

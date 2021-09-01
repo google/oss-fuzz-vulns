@@ -1,7 +1,4 @@
 id: OSV-2020-908
-package:
-  name: libxml2
-  ecosystem: OSS-Fuzz
 summary: Heap-use-after-free in xmlParserPrintFileContextInternal
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24055
@@ -11,16 +8,20 @@ details: |
   xmlParserPrintFileContextInternal
   xmlReportError
   __xmlRaiseError
-affects:
-  ranges:
-  - type: GIT
-    repo: https://gitlab.gnome.org/GNOME/libxml2.git
-    introduced: 84bab955fe01c50e64382481de67259047d917a9
-    fixed: 3f18e7486d5feb8ae41911ce3c122e05641a4c3d
 modified: '2021-06-21T06:56:25.723971Z'
 published: '2020-07-21T00:00:26.575286Z'
-ecosystem_specific:
-  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24055
+affected:
+- package:
+    name: libxml2
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://gitlab.gnome.org/GNOME/libxml2.git
+    events:
+    - introduced: 84bab955fe01c50e64382481de67259047d917a9
+    - fixed: 3f18e7486d5feb8ae41911ce3c122e05641a4c3d
+  ecosystem_specific:
+    severity: HIGH

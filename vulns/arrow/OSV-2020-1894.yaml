@@ -1,7 +1,4 @@
 id: OSV-2020-1894
-package:
-  name: arrow
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in parquet::arrow::ApplyOriginalStorageMetadata
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26064
@@ -11,21 +8,25 @@ details: |
   parquet::arrow::ApplyOriginalStorageMetadata
   parquet::arrow::SchemaManifest::Make
   parquet::arrow::FileReader::Make
-affects:
+modified: '2021-06-21T06:56:19.765384Z'
+published: '2020-10-02T00:00:08.666922Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26064
+affected:
+- package:
+    name: arrow
+    ecosystem: OSS-Fuzz
   ranges:
   - type: GIT
     repo: https://github.com/apache/arrow.git
-    introduced: 431fdbfbc0fb4bb16c4a89298404ad16784db2a0
-    fixed: fa441346b69ed1064aac39409731740c228319c0
+    events:
+    - introduced: 431fdbfbc0fb4bb16c4a89298404ad16784db2a0
+    - fixed: fa441346b69ed1064aac39409731740c228319c0
   versions:
   - apache-arrow-0.17.0
   - apache-arrow-0.17.1
   - apache-arrow-1.0.0
   - apache-arrow-1.0.1
-modified: '2021-06-21T06:56:19.765384Z'
-published: '2020-10-02T00:00:08.666922Z'
-ecosystem_specific:
-  severity: MEDIUM
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26064
+  ecosystem_specific:
+    severity: MEDIUM

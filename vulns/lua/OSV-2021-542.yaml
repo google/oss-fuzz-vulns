@@ -1,7 +1,4 @@
 id: OSV-2021-542
-package:
-  name: lua
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in luaG_getfuncline
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=32279
@@ -11,18 +8,22 @@ details: |
   luaG_getfuncline
   luaG_runerror
   luaD_growstack
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/lua/lua
-    introduced: 5d8ce05b3f6fad79e37ed21c1076e47a322472c6
-    fixed: eadd8c7178c79c814ecca9652973a9b9dd4cc71b
-  versions:
-  - v5.4.2
 modified: '2021-06-21T06:56:18.594676Z'
 published: '2021-03-21T00:00:57.635576Z'
-ecosystem_specific:
-  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=32279
+affected:
+- package:
+    name: lua
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/lua/lua
+    events:
+    - introduced: 5d8ce05b3f6fad79e37ed21c1076e47a322472c6
+    - fixed: eadd8c7178c79c814ecca9652973a9b9dd4cc71b
+  versions:
+  - v5.4.2
+  ecosystem_specific:
+    severity: MEDIUM

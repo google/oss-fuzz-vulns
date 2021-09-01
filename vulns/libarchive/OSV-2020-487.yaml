@@ -1,7 +1,4 @@
 id: OSV-2020-487
-package:
-  name: libarchive
-  ecosystem: OSS-Fuzz
 summary: UNKNOWN READ in crc32
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15278
@@ -11,18 +8,22 @@ details: |
   crc32
   update_crc
   push_data_ready
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/libarchive/libarchive.git
-    introduced: 4bd12b6f40cb4413c8970c52f15f3b6885b5e32f
-    fixed: 47bb8187d3ef2d49ee8c7841cb2872b3cfa1f6f7
-  versions:
-  - v3.4.0
 modified: '2021-06-21T06:56:26.656229Z'
 published: '2020-07-01T00:00:12.477818Z'
-ecosystem_specific:
-  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15278
+affected:
+- package:
+    name: libarchive
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/libarchive/libarchive.git
+    events:
+    - introduced: 4bd12b6f40cb4413c8970c52f15f3b6885b5e32f
+    - fixed: 47bb8187d3ef2d49ee8c7841cb2872b3cfa1f6f7
+  versions:
+  - v3.4.0
+  ecosystem_specific:
+    severity: MEDIUM

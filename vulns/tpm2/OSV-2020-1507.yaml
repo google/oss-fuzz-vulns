@@ -1,7 +1,4 @@
 id: OSV-2020-1507
-package:
-  name: tpm2
-  ecosystem: OSS-Fuzz
 summary: Index-out-of-bounds in MemoryRemoveTrailingZeros
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23127
@@ -11,23 +8,29 @@ details: |
   MemoryRemoveTrailingZeros
   CheckPWAuthSession
   CheckAuthSession
-affects:
+modified: '2021-06-21T06:56:22.905881Z'
+published: '2020-07-28T00:00:34.623899Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23127
+affected:
+- package:
+    name: tpm2
+    ecosystem: OSS-Fuzz
   ranges:
   - type: GIT
     repo: https://chromium.googlesource.com/chromiumos/third_party/tpm2
-    introduced: 1a68fe6fa860f563e8b45e3826110ceec75d61a8
+    events:
+    - introduced: 1a68fe6fa860f563e8b45e3826110ceec75d61a8
   - type: GIT
     repo: https://chromium.googlesource.com/chromiumos/third_party/tpm2
-    introduced: 5e4dd24d2d92ea9b9582388be6ecf4a055605c8b
+    events:
+    - introduced: 1a68fe6fa860f563e8b45e3826110ceec75d61a8
+    - introduced: 5e4dd24d2d92ea9b9582388be6ecf4a055605c8b
   versions:
   - cr50_v3.4
   - cr50_v4.4
   - cr50_v4.5
   - v1.9308_26_0.0.22
-modified: '2021-06-21T06:56:22.905881Z'
-published: '2020-07-28T00:00:34.623899Z'
-ecosystem_specific:
-  severity: MEDIUM
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23127
+  ecosystem_specific:
+    severity: MEDIUM

@@ -1,7 +1,4 @@
 id: OSV-2020-1410
-package:
-  name: unicorn
-  ecosystem: OSS-Fuzz
 summary: Use-of-uninitialized-value in float64_squash_input_denormal_aarch64eb
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=17032
@@ -11,12 +8,21 @@ details: |
   float64_squash_input_denormal_aarch64eb
   float64_to_float32_aarch64eb
   helper_vfp_fcvtsd_aarch64eb
-affects:
+modified: '2021-06-21T06:56:25.293940Z'
+published: '2020-07-28T00:00:12.342145Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=17032
+affected:
+- package:
+    name: unicorn
+    ecosystem: OSS-Fuzz
   ranges:
   - type: GIT
     repo: https://github.com/unicorn-engine/unicorn.git
-    introduced: 626d72d6df1777733c79f546d08c9fd66f107d6e
-    fixed: 7ca7e8a79d85ca57bb523be49009b0326b7a5210
+    events:
+    - introduced: 626d72d6df1777733c79f546d08c9fd66f107d6e
+    - fixed: 7ca7e8a79d85ca57bb523be49009b0326b7a5210
   versions:
   - 1.0.2-rc1
   - 1.0.2-rc2
@@ -24,10 +30,5 @@ affects:
   - 1.0.2-rc4
   - 1.0.2-rc5
   - 1.0.2-rc6
-modified: '2021-06-21T06:56:25.293940Z'
-published: '2020-07-28T00:00:12.342145Z'
-ecosystem_specific:
-  severity: MEDIUM
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=17032
+  ecosystem_specific:
+    severity: MEDIUM

@@ -1,7 +1,4 @@
 id: OSV-2021-456
-package:
-  name: grok
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in grk::Quantizer::read_SQcd_SQcc
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31460
@@ -11,11 +8,20 @@ details: |
   grk::Quantizer::read_SQcd_SQcc
   grk::CodeStreamDecompress::read_qcd
   grk::CodeStreamDecompress::process_marker
-affects:
+modified: '2021-08-20T00:02:18.295651Z'
+published: '2021-02-28T00:01:15.686942Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31460
+affected:
+- package:
+    name: grok
+    ecosystem: OSS-Fuzz
   ranges:
   - type: GIT
     repo: https://github.com/GrokImageCompression/grok.git
-    introduced: 9747b921eda1e267d8c05ca24a7ef69fe2fd1a78
+    events:
+    - introduced: 9747b921eda1e267d8c05ca24a7ef69fe2fd1a78
   versions:
   - v8.0.1
   - v8.0.2
@@ -25,10 +31,5 @@ affects:
   - v9.2.0
   - v9.3.0
   - v9.4.0
-modified: '2021-08-20T00:02:18.295651Z'
-published: '2021-02-28T00:01:15.686942Z'
-ecosystem_specific:
-  severity: MEDIUM
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31460
+  ecosystem_specific:
+    severity: MEDIUM

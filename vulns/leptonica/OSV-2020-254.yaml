@@ -1,7 +1,4 @@
 id: OSV-2020-254
-package:
-  name: leptonica
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in pixReadFromTiffStream
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23654
@@ -11,16 +8,20 @@ details: |
   pixReadFromTiffStream
   pixReadMemTiff
   pixReadMem
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/DanBloomberg/leptonica.git
-    introduced: 26425b91ea850552d11af0ead0557eb0a328785f
-    fixed: 5ba34b1fe741d69d43a6c8cf767756997eadd87c
 modified: '2021-06-21T06:56:20.213430Z'
 published: '2020-06-26T00:00:11.669926Z'
-ecosystem_specific:
-  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23654
+affected:
+- package:
+    name: leptonica
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/DanBloomberg/leptonica.git
+    events:
+    - introduced: 26425b91ea850552d11af0ead0557eb0a328785f
+    - fixed: 5ba34b1fe741d69d43a6c8cf767756997eadd87c
+  ecosystem_specific:
+    severity: MEDIUM

@@ -1,7 +1,4 @@
 id: OSV-2020-252
-package:
-  name: json-c
-  ecosystem: OSS-Fuzz
 summary: Global-buffer-overflow in json_tokener_parse_ex
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23619
@@ -10,14 +7,18 @@ details: |
   Crash state:
   json_tokener_parse_ex
   tokener_parse_ex_fuzzer.cc
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/json-c/json-c.git
-    introduced: da76ee26e7977cc4d796ed8c7e263d95cd94a199
-    fixed: 36118b681ea3b8e99735beee73cbd25a63e942cd
+modified: '2021-03-09T04:49:05.786859Z'
+published: '2020-06-26T00:00:11.383919Z'
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23619
-modified: '2021-03-09T04:49:05.786859Z'
-published: '2020-06-26T00:00:11.383919Z'
+affected:
+- package:
+    name: json-c
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/json-c/json-c.git
+    events:
+    - introduced: da76ee26e7977cc4d796ed8c7e263d95cd94a199
+    - fixed: 36118b681ea3b8e99735beee73cbd25a63e942cd

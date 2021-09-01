@@ -1,7 +1,4 @@
 id: OSV-2021-1122
-package:
-  name: sudoers
-  ecosystem: OSS-Fuzz
 summary: Heap-double-free in sudoers_gc_run
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=37056
@@ -11,16 +8,20 @@ details: |
   sudoers_gc_run
   fuzz_policy.c
   resolve_editor
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/sudo-project/sudo
-    introduced: 9798fd86bf14122098474544ca8ebc32815d242f
-    fixed: ffdd7920cd98b495a42775bb35012ec259e33a46
 modified: '2021-08-12T00:01:58.667926Z'
 published: '2021-08-12T00:01:58.667720Z'
-ecosystem_specific:
-  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=37056
+affected:
+- package:
+    name: sudoers
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/sudo-project/sudo
+    events:
+    - introduced: 9798fd86bf14122098474544ca8ebc32815d242f
+    - fixed: ffdd7920cd98b495a42775bb35012ec259e33a46
+  ecosystem_specific:
+    severity: HIGH

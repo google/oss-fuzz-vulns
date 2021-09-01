@@ -1,7 +1,4 @@
 id: OSV-2018-99
-package:
-  name: libgit2
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in git__strntol64
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11173
@@ -11,16 +8,20 @@ details: |
   git__strntol64
   git_signature__parse
   git_commit__parse_raw
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/libgit2/libgit2
-    introduced: 3db9aa6f79711103a331a2bbbd044a3c37d4f136
-    fixed: 41863a00f0d811c659c9ba87ae2cc0c3aae5a77f
 modified: '2021-06-21T06:56:21.955244Z'
 published: '2021-01-13T00:00:43.443325Z'
-ecosystem_specific:
-  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11173
+affected:
+- package:
+    name: libgit2
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/libgit2/libgit2
+    events:
+    - introduced: 3db9aa6f79711103a331a2bbbd044a3c37d4f136
+    - fixed: 41863a00f0d811c659c9ba87ae2cc0c3aae5a77f
+  ecosystem_specific:
+    severity: MEDIUM

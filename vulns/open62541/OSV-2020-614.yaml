@@ -1,7 +1,4 @@
 id: OSV-2020-614
-package:
-  name: open62541
-  ecosystem: OSS-Fuzz
 summary: Use-of-uninitialized-value in __RefHead_ZIP_INSERT
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15133
@@ -11,16 +8,20 @@ details: |
   __RefHead_ZIP_INSERT
   __RefHead_ZIP_INSERT
   RefTree_add
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/open62541/open62541.git
-    introduced: 9789cdcdb64377bc449e78f6bdc6568d2c53edc7
-    fixed: 054f460d6e9e98deba186eee6bd956756dfc89e0
 modified: '2021-06-21T06:56:26.821664Z'
 published: '2020-07-01T00:00:20.478171Z'
-ecosystem_specific:
-  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15133
+affected:
+- package:
+    name: open62541
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/open62541/open62541.git
+    events:
+    - introduced: 9789cdcdb64377bc449e78f6bdc6568d2c53edc7
+    - fixed: 054f460d6e9e98deba186eee6bd956756dfc89e0
+  ecosystem_specific:
+    severity: MEDIUM

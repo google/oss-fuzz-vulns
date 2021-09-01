@@ -1,7 +1,4 @@
 id: OSV-2021-1113
-package:
-  name: net-snmp
-  ecosystem: OSS-Fuzz
 summary: Stack-buffer-overflow in getoid
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=36962
@@ -11,18 +8,21 @@ details: |
   getoid
   parse_objectid
   parse_asntype
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/net-snmp/net-snmp
-    introduced: 5fdcac101060591cb57ae47e44a471a335b45245
-    fixed: 7274e4b843683ed7bc657988227e8d65469b8829
 modified: '2021-08-09T00:00:17.111143Z'
 published: '2021-08-09T00:00:17.110921Z'
-ecosystem_specific:
-  severity: MEDIUM
-database_specific:
-  fixed_range: 1cb8393797913cad028124eb765560abe196fd43:7274e4b843683ed7bc657988227e8d65469b8829
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=36962
+affected:
+- package:
+    name: net-snmp
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/net-snmp/net-snmp
+    events:
+    - introduced: 5fdcac101060591cb57ae47e44a471a335b45245
+    - fixed: 7274e4b843683ed7bc657988227e8d65469b8829
+  ecosystem_specific:
+    severity: MEDIUM
+    fixed_range: 1cb8393797913cad028124eb765560abe196fd43:7274e4b843683ed7bc657988227e8d65469b8829

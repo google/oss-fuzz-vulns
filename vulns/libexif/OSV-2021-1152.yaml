@@ -1,7 +1,4 @@
 id: OSV-2021-1152
-package:
-  name: libexif
-  ecosystem: OSS-Fuzz
 summary: UNKNOWN READ in exif_mnote_data_apple_load
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=37334
@@ -11,16 +8,20 @@ details: |
   exif_mnote_data_apple_load
   exif_mnote_data_load
   interpret_maker_note
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/libexif/libexif
-    introduced: 22799320cc1187868d9a572661d12f0c3f9939b5
-    fixed: d61e9aaddf4f8af5aecea4935f8feb59f42141c1
 modified: '2021-08-20T00:00:16.563409Z'
 published: '2021-08-20T00:00:16.563182Z'
-ecosystem_specific:
-  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=37334
+affected:
+- package:
+    name: libexif
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/libexif/libexif
+    events:
+    - introduced: 22799320cc1187868d9a572661d12f0c3f9939b5
+    - fixed: d61e9aaddf4f8af5aecea4935f8feb59f42141c1
+  ecosystem_specific:
+    severity: MEDIUM

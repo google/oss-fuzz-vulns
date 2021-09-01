@@ -1,7 +1,4 @@
 id: OSV-2021-810
-package:
-  name: espeak-ng
-  ecosystem: OSS-Fuzz
 summary: Global-buffer-overflow in SubstitutePhonemes
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34747
@@ -11,15 +8,19 @@ details: |
   SubstitutePhonemes
   MakePhonemeList
   TranslateClause
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/espeak-ng/espeak-ng
-    introduced: 0a713d52bbf3e061823d1a7f35e5303e7320f27a
 modified: '2021-05-29T00:00:08.421329Z'
 published: '2021-05-29T00:00:08.420998Z'
-ecosystem_specific:
-  severity: null
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34747
+affected:
+- package:
+    name: espeak-ng
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/espeak-ng/espeak-ng
+    events:
+    - introduced: 0a713d52bbf3e061823d1a7f35e5303e7320f27a
+  ecosystem_specific:
+    severity: null

@@ -1,7 +1,4 @@
 id: OSV-2017-53
-package:
-  name: libpsl
-  ecosystem: OSS-Fuzz
 summary: Stack-buffer-overflow in _psl_idna_toASCII
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=2600
@@ -11,16 +8,20 @@ details: |
   _psl_idna_toASCII
   _add_punycode_if_needed
   psl_load_fp
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/rockdaboot/libpsl.git
-    introduced: 631362d3d0ee858010d5597cc1dfdf35ef514330
-    fixed: a6e470331854df14d754d7732eba902b8acd17e5
 modified: '2021-06-21T06:56:25.760141Z'
 published: '2021-01-13T21:56:23.412375Z'
-ecosystem_specific:
-  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=2600
+affected:
+- package:
+    name: libpsl
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/rockdaboot/libpsl.git
+    events:
+    - introduced: 631362d3d0ee858010d5597cc1dfdf35ef514330
+    - fixed: a6e470331854df14d754d7732eba902b8acd17e5
+  ecosystem_specific:
+    severity: MEDIUM

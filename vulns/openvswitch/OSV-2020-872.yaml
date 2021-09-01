@@ -1,7 +1,4 @@
 id: OSV-2020-872
-package:
-  name: openvswitch
-  ecosystem: OSS-Fuzz
 summary: Use-of-uninitialized-value in tun_key_to_attr
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22026
@@ -11,22 +8,28 @@ details: |
   tun_key_to_attr
   odp_flow_key_from_flow__
   parse_keys
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/openvswitch/ovs.git
-    introduced: 3c6d05a02e0fd2cde2f988a0e41a19f47c3d6947
-    fixed: 1e1a15669e324e0971c46a31f3de233e3a0ba5b2
-  - type: GIT
-    repo: https://github.com/openvswitch/ovs.git
-    introduced: 3c6d05a02e0fd2cde2f988a0e41a19f47c3d6947
-    fixed: 5aa1bdc8e40d2df512de6197a8ab58c2e9aa1fc4
-  versions:
-  - v2.14.0
 modified: '2021-06-21T06:56:26.341085Z'
 published: '2020-07-14T22:13:51.984458Z'
-ecosystem_specific:
-  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22026
+affected:
+- package:
+    name: openvswitch
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/openvswitch/ovs.git
+    events:
+    - introduced: 3c6d05a02e0fd2cde2f988a0e41a19f47c3d6947
+    - fixed: 1e1a15669e324e0971c46a31f3de233e3a0ba5b2
+  - type: GIT
+    repo: https://github.com/openvswitch/ovs.git
+    events:
+    - introduced: 3c6d05a02e0fd2cde2f988a0e41a19f47c3d6947
+    - fixed: 1e1a15669e324e0971c46a31f3de233e3a0ba5b2
+    - fixed: 5aa1bdc8e40d2df512de6197a8ab58c2e9aa1fc4
+  versions:
+  - v2.14.0
+  ecosystem_specific:
+    severity: MEDIUM

@@ -1,7 +1,4 @@
 id: OSV-2020-2070
-package:
-  name: wolfssl
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in wolfSSH_accept
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26332
@@ -10,19 +7,22 @@ details: |
   Crash state:
   wolfSSH_accept
   server.c
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/wolfssl/wolfssl
-    introduced: 83cdd1c314af5d6326470254b3cdbb9d85182348
-    fixed: d784bd61cd7e899b8ee1ed79043defeeef30031d
 modified: '2021-06-23T06:25:58.715359Z'
 published: '2020-10-15T00:00:36.872Z'
-ecosystem_specific:
-  severity: MEDIUM
-database_specific:
-  introduced_range: deaf3b4b40d26663191d085557fbeb8cafa420ae:881657782478cef4a1527847bb2c4cd427bd6c99
-  fixed_range: b40543b3421273f5ef1d1849bc44bf4931a92286:d784bd61cd7e899b8ee1ed79043defeeef30031d
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26332
+affected:
+- package:
+    name: wolfssl
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/wolfssl/wolfssl
+    events:
+    - introduced: 83cdd1c314af5d6326470254b3cdbb9d85182348
+    - fixed: d784bd61cd7e899b8ee1ed79043defeeef30031d
+  ecosystem_specific:
+    introduced_range: deaf3b4b40d26663191d085557fbeb8cafa420ae:881657782478cef4a1527847bb2c4cd427bd6c99
+    fixed_range: b40543b3421273f5ef1d1849bc44bf4931a92286:d784bd61cd7e899b8ee1ed79043defeeef30031d
+    severity: MEDIUM

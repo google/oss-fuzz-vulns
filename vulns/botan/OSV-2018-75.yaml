@@ -1,7 +1,4 @@
 id: OSV-2018-75
-package:
-  name: botan
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in ref_oneandzero_unpad
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=10628
@@ -11,16 +8,20 @@ details: |
   ref_oneandzero_unpad
   fuzz
   fuzzers.h
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/randombit/botan.git
-    introduced: 5d5ca7b276e687d9e3480e70d4718c99ce34cc23
-    fixed: b859e175a0f2357dcfe2211ca487a7bde0e971b1
 modified: '2021-06-21T06:56:21.302267Z'
 published: '2021-01-13T00:00:36.224912Z'
-ecosystem_specific:
-  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=10628
+affected:
+- package:
+    name: botan
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/randombit/botan.git
+    events:
+    - introduced: 5d5ca7b276e687d9e3480e70d4718c99ce34cc23
+    - fixed: b859e175a0f2357dcfe2211ca487a7bde0e971b1
+  ecosystem_specific:
+    severity: MEDIUM

@@ -1,7 +1,4 @@
 id: OSV-2020-1726
-package:
-  name: libxml2
-  ecosystem: OSS-Fuzz
 summary: Heap-use-after-free in xmlXPathNodeSetAdd
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25536
@@ -11,16 +8,20 @@ details: |
   xmlXPathNodeSetAdd
   xmlXPathGetElementsByIds
   xmlXPathIdFunction
-affects:
-  ranges:
-  - type: GIT
-    repo: https://gitlab.gnome.org/GNOME/libxml2.git
-    introduced: f0fd1b67fc883a24cdd039abb3d4fe4696104d72
-    fixed: b215c270fa3b1436314cc56654718bd12182cfec
 modified: '2021-06-21T06:56:25.730028Z'
 published: '2020-09-11T00:00:07.083398Z'
-ecosystem_specific:
-  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25536
+affected:
+- package:
+    name: libxml2
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://gitlab.gnome.org/GNOME/libxml2.git
+    events:
+    - introduced: f0fd1b67fc883a24cdd039abb3d4fe4696104d72
+    - fixed: b215c270fa3b1436314cc56654718bd12182cfec
+  ecosystem_specific:
+    severity: HIGH

@@ -1,7 +1,4 @@
 id: OSV-2020-2143
-package:
-  name: rdkit
-  ecosystem: OSS-Fuzz
 summary: UNKNOWN READ in __dynamic_cast
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=27315
@@ -11,11 +8,20 @@ details: |
   __dynamic_cast
   HandleDynamicTypeCacheMiss
   RDKit::SubstanceGroup::addAtomWithBookmark
-affects:
+modified: '2021-06-21T06:56:27.007024Z'
+published: '2020-11-10T00:00:14.277810Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=27315
+affected:
+- package:
+    name: rdkit
+    ecosystem: OSS-Fuzz
   ranges:
   - type: GIT
     repo: https://github.com/rdkit/rdkit.git
-    introduced: a9010da8a4af17479c706f2cf4e8c6acdc1585ce
+    events:
+    - introduced: a9010da8a4af17479c706f2cf4e8c6acdc1585ce
   versions:
   - Release_2020_09_1
   - Release_2020_09_1b1
@@ -24,10 +30,5 @@ affects:
   - Release_2020_09_4
   - Release_2020_09_5
   - Release_2021_03_1b1
-modified: '2021-06-21T06:56:27.007024Z'
-published: '2020-11-10T00:00:14.277810Z'
-ecosystem_specific:
-  severity: MEDIUM
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=27315
+  ecosystem_specific:
+    severity: MEDIUM

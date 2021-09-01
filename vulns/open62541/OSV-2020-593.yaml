@@ -1,7 +1,4 @@
 id: OSV-2020-593
-package:
-  name: open62541
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in UInt32_encodeBinary
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=12889
@@ -11,16 +8,20 @@ details: |
   UInt32_encodeBinary
   DiagnosticInfo_encodeBinary
   DiagnosticInfo_encodeBinary
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/open62541/open62541.git
-    introduced: 36fdd9779b1327192ace66ebdb0f4dc59bc77d0f
-    fixed: ac0d94217d06a229c9c671cfa0e37b497114848a
 modified: '2021-06-21T06:56:26.850096Z'
 published: '2020-07-01T00:00:19.014289Z'
-ecosystem_specific:
-  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=12889
+affected:
+- package:
+    name: open62541
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/open62541/open62541.git
+    events:
+    - introduced: 36fdd9779b1327192ace66ebdb0f4dc59bc77d0f
+    - fixed: ac0d94217d06a229c9c671cfa0e37b497114848a
+  ecosystem_specific:
+    severity: MEDIUM

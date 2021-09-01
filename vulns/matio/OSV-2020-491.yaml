@@ -1,7 +1,4 @@
 id: OSV-2020-491
-package:
-  name: matio
-  ecosystem: OSS-Fuzz
 summary: Stack-buffer-overflow in Mat_VarReadNextInfo5
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=17119
@@ -11,18 +8,21 @@ details: |
   Mat_VarReadNextInfo5
   Mat_GetDir
   MatioRead
-affects:
-  ranges:
-  - type: GIT
-    repo: git://git.code.sf.net/p/matio/matio
-    introduced: f94c087aa9be54ec86a01e267b80fd61108069be
-    fixed: 8b3ee30a8d9cfdc3799252a4a42572fc6f8e205e
 modified: '2021-06-23T06:31:45.605134Z'
 published: '2020-07-01T00:00:12.708028Z'
-ecosystem_specific:
-  severity: MEDIUM
-database_specific:
-  introduced_range: 7a9958485036ef37b4e88df5cbe32bd7ec4c0d25:6540087e697ca2b8950bada3d4ca653951b467dc
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=17119
+affected:
+- package:
+    name: matio
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: git://git.code.sf.net/p/matio/matio
+    events:
+    - introduced: f94c087aa9be54ec86a01e267b80fd61108069be
+    - fixed: 8b3ee30a8d9cfdc3799252a4a42572fc6f8e205e
+  ecosystem_specific:
+    introduced_range: 7a9958485036ef37b4e88df5cbe32bd7ec4c0d25:6540087e697ca2b8950bada3d4ca653951b467dc
+    severity: MEDIUM

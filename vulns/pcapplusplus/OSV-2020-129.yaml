@@ -1,7 +1,4 @@
 id: OSV-2020-129
-package:
-  name: pcapplusplus
-  ecosystem: OSS-Fuzz
 summary: UNKNOWN READ in pcpp::Packet::setRawPacket
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23011
@@ -11,19 +8,22 @@ details: |
   pcpp::Packet::setRawPacket
   pcpp::Packet::Packet
   FuzzTarget.cpp
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/seladb/PcapPlusPlus
-    introduced: 994419f1bcb9151553ad8044e1757a6d406deea3
-    fixed: 0376f65957378c9235f9f094cec7c655ab836f15
 modified: '2021-06-23T06:28:22.774824Z'
 published: '2020-06-24T01:51:15.420626Z'
-ecosystem_specific:
-  severity: MEDIUM
-database_specific:
-  fixed_range: cbe1ffdfe2deaf2fbdbae9c1c7927e083156c165:0376f65957378c9235f9f094cec7c655ab836f15
-  introduced_range: 46840c644dfe9160c4111b06bbbf7731c9d1370c:0a62fd3e959813ca41d71d42c86aa7cf1f55ced0
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23011
+affected:
+- package:
+    name: pcapplusplus
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/seladb/PcapPlusPlus
+    events:
+    - introduced: 994419f1bcb9151553ad8044e1757a6d406deea3
+    - fixed: 0376f65957378c9235f9f094cec7c655ab836f15
+  ecosystem_specific:
+    fixed_range: cbe1ffdfe2deaf2fbdbae9c1c7927e083156c165:0376f65957378c9235f9f094cec7c655ab836f15
+    severity: MEDIUM
+    introduced_range: 46840c644dfe9160c4111b06bbbf7731c9d1370c:0a62fd3e959813ca41d71d42c86aa7cf1f55ced0

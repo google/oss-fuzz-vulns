@@ -1,7 +1,4 @@
 id: OSV-2020-877
-package:
-  name: matio
-  ecosystem: OSS-Fuzz
 summary: Use-of-uninitialized-value in Mat_VarReadNumeric5
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=17112
@@ -11,16 +8,20 @@ details: |
   Mat_VarReadNumeric5
   Mat_VarRead5
   ReadData
-affects:
-  ranges:
-  - type: GIT
-    repo: git://git.code.sf.net/p/matio/matio
-    introduced: 30730d8d181caa9982e041868257050872642188
-    fixed: 7a1831b94a73f2cd665bd48f65c8516509d0740e
 modified: '2021-06-21T06:56:28.132464Z'
 published: '2020-07-14T22:13:56.653856Z'
-ecosystem_specific:
-  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=17112
+affected:
+- package:
+    name: matio
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: git://git.code.sf.net/p/matio/matio
+    events:
+    - introduced: 30730d8d181caa9982e041868257050872642188
+    - fixed: 7a1831b94a73f2cd665bd48f65c8516509d0740e
+  ecosystem_specific:
+    severity: MEDIUM

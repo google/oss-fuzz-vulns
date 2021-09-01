@@ -1,7 +1,4 @@
 id: OSV-2020-1294
-package:
-  name: ndpi
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in SHA1Update
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18740
@@ -11,18 +8,21 @@ details: |
   SHA1Update
   getSSCertificateFingerprint
   tlsDetectProtocolFromCertificate
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/ntop/nDPI.git
-    introduced: e695dd6eade754b2d50bdf297ca8bdc4105f93ff
-    fixed: ab9ccf9eb9a6571d84bd0b2c8e185565d0d700f6
 modified: '2021-06-23T06:26:05.283196Z'
 published: '2020-07-22T21:50:03.900037Z'
-ecosystem_specific:
-  severity: MEDIUM
-database_specific:
-  introduced_range: unknown:e695dd6eade754b2d50bdf297ca8bdc4105f93ff
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18740
+affected:
+- package:
+    name: ndpi
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/ntop/nDPI.git
+    events:
+    - introduced: e695dd6eade754b2d50bdf297ca8bdc4105f93ff
+    - fixed: ab9ccf9eb9a6571d84bd0b2c8e185565d0d700f6
+  ecosystem_specific:
+    introduced_range: unknown:e695dd6eade754b2d50bdf297ca8bdc4105f93ff
+    severity: MEDIUM

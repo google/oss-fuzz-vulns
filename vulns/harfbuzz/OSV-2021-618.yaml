@@ -1,7 +1,4 @@
 id: OSV-2021-618
-package:
-  name: harfbuzz
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in OT::AnchorFormat1* hb_serialize_context_t::embed<OT::AnchorFormat1>
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=33031
@@ -11,16 +8,20 @@ details: |
   OT::AnchorFormat1* hb_serialize_context_t::embed<OT::AnchorFormat1>
   OT::AnchorFormat1::copy
   OT::Anchor::subset
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/harfbuzz/harfbuzz.git
-    introduced: 6f98a8ed4627b662d9591649328d2d302fc01987
-    fixed: 9dc9f0385dce05456d48730bf5dc7cac52eaa4da
 modified: '2021-06-21T06:56:20.373905Z'
 published: '2021-04-09T00:01:00.954975Z'
-ecosystem_specific:
-  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=33031
+affected:
+- package:
+    name: harfbuzz
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/harfbuzz/harfbuzz.git
+    events:
+    - introduced: 6f98a8ed4627b662d9591649328d2d302fc01987
+    - fixed: 9dc9f0385dce05456d48730bf5dc7cac52eaa4da
+  ecosystem_specific:
+    severity: MEDIUM

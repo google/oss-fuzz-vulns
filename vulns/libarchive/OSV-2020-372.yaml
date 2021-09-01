@@ -1,7 +1,4 @@
 id: OSV-2020-372
-package:
-  name: libarchive
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in circular_memcpy
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13435
@@ -11,16 +8,20 @@ details: |
   circular_memcpy
   run_e8e9_filter
   run_filter
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/libarchive/libarchive.git
-    introduced: b52dd6c9e4ef7cf95c2a6ae5ab7ccac7f6d462a1
-    fixed: 39736c43bd7374beedb372aa300ecf36c9fc4733
 modified: '2021-06-21T06:56:26.644147Z'
 published: '2020-07-01T00:00:05.776845Z'
-ecosystem_specific:
-  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13435
+affected:
+- package:
+    name: libarchive
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/libarchive/libarchive.git
+    events:
+    - introduced: b52dd6c9e4ef7cf95c2a6ae5ab7ccac7f6d462a1
+    - fixed: 39736c43bd7374beedb372aa300ecf36c9fc4733
+  ecosystem_specific:
+    severity: MEDIUM

@@ -1,7 +1,4 @@
 id: OSV-2017-22
-package:
-  name: openjpeg
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in opj_tcd_mct_decode
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=3331
@@ -11,16 +8,20 @@ details: |
   opj_tcd_mct_decode
   opj_tcd_decode_tile
   opj_j2k_decode_tile
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/uclouvain/openjpeg
-    introduced: cc893a4ebfaf8c42cf1221ac82c83df91e77340b
-    fixed: 28094e1ebfa420f9a0bdc7a11b8d4ee5f154db35
 modified: '2021-06-21T06:56:25.539992Z'
 published: '2021-01-13T00:01:24.955187Z'
-ecosystem_specific:
-  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=3331
+affected:
+- package:
+    name: openjpeg
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/uclouvain/openjpeg
+    events:
+    - introduced: cc893a4ebfaf8c42cf1221ac82c83df91e77340b
+    - fixed: 28094e1ebfa420f9a0bdc7a11b8d4ee5f154db35
+  ecosystem_specific:
+    severity: MEDIUM

@@ -1,7 +1,4 @@
 id: OSV-2020-49
-package:
-  name: ndpi
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in ndpi_netbios_name_interpret
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21365
@@ -11,20 +8,23 @@ details: |
   ndpi_netbios_name_interpret
   ndpi_int_netbios_add_connection
   check_ndpi_udp_flow_func
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/ntop/nDPI.git
-    introduced: 7234f369499e02f44efcbbf0efe43bae596ddc53
-    fixed: 4f370fe7c49cb38125cff2a1411261011e433c94
-  versions:
-  - '3.2'
 modified: '2021-06-23T06:26:04.606039Z'
 published: '2020-06-24T01:51:11.785336Z'
-ecosystem_specific:
-  severity: MEDIUM
-database_specific:
-  introduced_range: 2efc09a20e6503d99fe3d76fcc16b1892fb7c7ff:5c52c00ea4ad8afaebd5259bc53215a1ab41569f
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21365
+affected:
+- package:
+    name: ndpi
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/ntop/nDPI.git
+    events:
+    - introduced: 7234f369499e02f44efcbbf0efe43bae596ddc53
+    - fixed: 4f370fe7c49cb38125cff2a1411261011e433c94
+  versions:
+  - '3.2'
+  ecosystem_specific:
+    severity: MEDIUM
+    introduced_range: 2efc09a20e6503d99fe3d76fcc16b1892fb7c7ff:5c52c00ea4ad8afaebd5259bc53215a1ab41569f

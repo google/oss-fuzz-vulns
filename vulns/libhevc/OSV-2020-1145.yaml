@@ -1,7 +1,4 @@
 id: OSV-2020-1145
-package:
-  name: libhevc
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in ihevcd_sao_shift_ctb
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=16817
@@ -11,18 +8,21 @@ details: |
   ihevcd_sao_shift_ctb
   ihevcd_process
   ihevcd_parse_slice_data
-affects:
-  ranges:
-  - type: GIT
-    repo: https://android.googlesource.com/platform/external/libhevc
-    introduced: 5e7dc4732015717682ac0da1431fe3e656aea617
-    fixed: 67e394c9f3743b8ce41f11736136319efcef6d3d
 modified: '2021-06-23T06:24:50.386065Z'
 published: '2020-07-22T21:49:50.700750Z'
-ecosystem_specific:
-  severity: HIGH
-database_specific:
-  introduced_range: unknown:5e7dc4732015717682ac0da1431fe3e656aea617
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=16817
+affected:
+- package:
+    name: libhevc
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://android.googlesource.com/platform/external/libhevc
+    events:
+    - introduced: 5e7dc4732015717682ac0da1431fe3e656aea617
+    - fixed: 67e394c9f3743b8ce41f11736136319efcef6d3d
+  ecosystem_specific:
+    severity: HIGH
+    introduced_range: unknown:5e7dc4732015717682ac0da1431fe3e656aea617

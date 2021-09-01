@@ -1,7 +1,4 @@
 id: OSV-2017-10
-package:
-  name: open62541
-  ecosystem: OSS-Fuzz
 summary: Heap-use-after-free in UA_Subscription_answerPublishRequestsNoSubscription
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=4097
@@ -11,16 +8,20 @@ details: |
   UA_Subscription_answerPublishRequestsNoSubscription
   UA_Server_run_shutdown
   _start
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/open62541/open62541.git
-    introduced: 6610fcecc0a920346d391b41e8973e403ae3f731
-    fixed: d9208207e458a973e481ded5f7c2cf765dd7ea4c
 modified: '2021-06-21T06:56:26.797621Z'
 published: '2021-01-13T00:00:22.415687Z'
-ecosystem_specific:
-  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=4097
+affected:
+- package:
+    name: open62541
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/open62541/open62541.git
+    events:
+    - introduced: 6610fcecc0a920346d391b41e8973e403ae3f731
+    - fixed: d9208207e458a973e481ded5f7c2cf765dd7ea4c
+  ecosystem_specific:
+    severity: HIGH

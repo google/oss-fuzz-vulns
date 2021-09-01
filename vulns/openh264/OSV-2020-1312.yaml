@@ -1,7 +1,4 @@
 id: OSV-2020-1312
-package:
-  name: openh264
-  ecosystem: OSS-Fuzz
 summary: Use-of-uninitialized-value in FilterInput8bitWithStride_c
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13004
@@ -11,19 +8,22 @@ details: |
   FilterInput8bitWithStride_c
   McHorVer20_c
   McHorVer30_c
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/cisco/openh264.git
-    introduced: 70eeb783515dbfee3e0c781d6667838caba5113b
-    fixed: be82ccf42fc044ae1ea0792837a9415eaf535002
 modified: '2021-06-23T06:26:22.358206Z'
 published: '2020-07-22T21:50:05.402144Z'
-ecosystem_specific:
-  severity: MEDIUM
-database_specific:
-  fixed_range: c81d7f67583ce92664147110e8d7cd36b17a272c:be82ccf42fc044ae1ea0792837a9415eaf535002
-  introduced_range: unknown:70eeb783515dbfee3e0c781d6667838caba5113b
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13004
+affected:
+- package:
+    name: openh264
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/cisco/openh264.git
+    events:
+    - introduced: 70eeb783515dbfee3e0c781d6667838caba5113b
+    - fixed: be82ccf42fc044ae1ea0792837a9415eaf535002
+  ecosystem_specific:
+    severity: MEDIUM
+    fixed_range: c81d7f67583ce92664147110e8d7cd36b17a272c:be82ccf42fc044ae1ea0792837a9415eaf535002
+    introduced_range: unknown:70eeb783515dbfee3e0c781d6667838caba5113b

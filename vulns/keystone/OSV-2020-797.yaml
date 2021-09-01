@@ -1,7 +1,4 @@
 id: OSV-2020-797
-package:
-  name: keystone
-  ecosystem: OSS-Fuzz
 summary: Use-of-uninitialized-value in MipsAsmParser::isPicAndNotNxxAbi
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22778
@@ -11,21 +8,25 @@ details: |
   MipsAsmParser::isPicAndNotNxxAbi
   MipsAsmParser::processInstruction
   MipsAsmParser::MatchAndEmitInstruction
-affects:
+modified: '2021-06-21T06:56:24.133299Z'
+published: '2020-07-14T05:37:37.559643Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22778
+affected:
+- package:
+    name: keystone
+    ecosystem: OSS-Fuzz
   ranges:
   - type: GIT
     repo: https://github.com/keystone-engine/keystone.git
-    introduced: d49b6fa4013efb919d434bfd439311d6cb67a0f7
-    fixed: e1547852d9accb9460573eb156fc81645b8e1871
+    events:
+    - introduced: d49b6fa4013efb919d434bfd439311d6cb67a0f7
+    - fixed: e1547852d9accb9460573eb156fc81645b8e1871
   versions:
   - 0.9.2
   - 0.9.2-rc1
   - 0.9.2-rc1.post1
   - 0.9.2-rc1.post2
-modified: '2021-06-21T06:56:24.133299Z'
-published: '2020-07-14T05:37:37.559643Z'
-ecosystem_specific:
-  severity: MEDIUM
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22778
+  ecosystem_specific:
+    severity: MEDIUM

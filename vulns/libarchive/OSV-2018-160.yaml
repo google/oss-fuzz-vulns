@@ -1,7 +1,4 @@
 id: OSV-2018-160
-package:
-  name: libarchive
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in do_uncompress_block
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11011
@@ -11,16 +8,20 @@ details: |
   do_uncompress_block
   process_block
   do_uncompress_file
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/libarchive/libarchive.git
-    introduced: 58167a9af435618c44e2faef5af5a86af51c003a
-    fixed: b52dd6c9e4ef7cf95c2a6ae5ab7ccac7f6d462a1
 modified: '2021-06-21T06:56:26.699423Z'
 published: '2021-01-13T00:01:07.606550Z'
-ecosystem_specific:
-  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11011
+affected:
+- package:
+    name: libarchive
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/libarchive/libarchive.git
+    events:
+    - introduced: 58167a9af435618c44e2faef5af5a86af51c003a
+    - fixed: b52dd6c9e4ef7cf95c2a6ae5ab7ccac7f6d462a1
+  ecosystem_specific:
+    severity: HIGH

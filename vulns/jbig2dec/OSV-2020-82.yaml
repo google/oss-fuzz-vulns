@@ -1,7 +1,4 @@
 id: OSV-2020-82
-package:
-  name: jbig2dec
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in template_image_compose_opt
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20332
@@ -11,18 +8,21 @@ details: |
   template_image_compose_opt
   jbig2_image_compose_opt_REPLACE
   jbig2_image_compose
-affects:
-  ranges:
-  - type: GIT
-    repo: git://git.ghostscript.com/jbig2dec.git
-    introduced: c3134491a3010fcce440a45968407c6511766671
-    fixed: 0726320a4b55078e9d8deb590e477d598b3da66e
 modified: '2021-06-23T06:29:24.842561Z'
 published: '2020-06-24T01:51:13.276594Z'
-ecosystem_specific:
-  severity: HIGH
-database_specific:
-  introduced_range: 060a2afad426347a9d63544f8ff7a5c2c96ae8e1:583c3db6e8c5336499e4506d4fa5bc469845745b
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20332
+affected:
+- package:
+    name: jbig2dec
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: git://git.ghostscript.com/jbig2dec.git
+    events:
+    - introduced: c3134491a3010fcce440a45968407c6511766671
+    - fixed: 0726320a4b55078e9d8deb590e477d598b3da66e
+  ecosystem_specific:
+    severity: HIGH
+    introduced_range: 060a2afad426347a9d63544f8ff7a5c2c96ae8e1:583c3db6e8c5336499e4506d4fa5bc469845745b

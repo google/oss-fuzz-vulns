@@ -1,7 +1,4 @@
 id: OSV-2020-2132
-package:
-  name: fluent-bit
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in flb_gzip_compress
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=27261
@@ -10,16 +7,20 @@ details: |
   Crash state:
   flb_gzip_compress
   utils_fuzzer.c
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/fluent/fluent-bit/
-    introduced: 9ef04be94ca1ce1275ba9e7adb9eeccbe9156580
-    fixed: cadff53c093210404aed01c4cf586adb8caa07af
 modified: '2021-06-21T06:56:24.336920Z'
 published: '2020-11-08T00:00:02.510551Z'
-ecosystem_specific:
-  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=27261
+affected:
+- package:
+    name: fluent-bit
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/fluent/fluent-bit/
+    events:
+    - introduced: 9ef04be94ca1ce1275ba9e7adb9eeccbe9156580
+    - fixed: cadff53c093210404aed01c4cf586adb8caa07af
+  ecosystem_specific:
+    severity: HIGH

@@ -1,7 +1,4 @@
 id: OSV-2020-1022
-package:
-  name: picotls
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in ptls_set_negotiated_protocol
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13682
@@ -11,18 +8,21 @@ details: |
   ptls_set_negotiated_protocol
   client_handle_encrypted_extensions
   handle_handshake_record
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/h2o/picotls
-    introduced: 4965a3820533a979fb01da26cd4d6e1fea89e5b7
-    fixed: 96c5aa9dd25f1ee27548d8ad8b25a890af1504d8
 modified: '2021-06-23T06:30:57.346149Z'
 published: '2020-07-22T21:49:40.455457Z'
-ecosystem_specific:
-  severity: MEDIUM
-database_specific:
-  introduced_range: unknown:4965a3820533a979fb01da26cd4d6e1fea89e5b7
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13682
+affected:
+- package:
+    name: picotls
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/h2o/picotls
+    events:
+    - introduced: 4965a3820533a979fb01da26cd4d6e1fea89e5b7
+    - fixed: 96c5aa9dd25f1ee27548d8ad8b25a890af1504d8
+  ecosystem_specific:
+    introduced_range: unknown:4965a3820533a979fb01da26cd4d6e1fea89e5b7
+    severity: MEDIUM

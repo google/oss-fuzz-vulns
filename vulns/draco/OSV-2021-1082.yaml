@@ -1,7 +1,4 @@
 id: OSV-2021-1082
-package:
-  name: draco
-  ecosystem: OSS-Fuzz
 summary: UNKNOWN READ in std::__1::__tree<std::__1::__value_type<std::__1::basic_string<char,
   std::__1::c
 details: |
@@ -12,20 +9,23 @@ details: |
   std::__1::__tree<std::__1::__value_type<std::__1::basic_string<char, std::__1::c
   std::__1::pair<std::__1::__tree_iterator<std::__1::__value_type<std::__1::basic_
   std::__1::map<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/google/draco
-    introduced: 25484b31235d1a35fa72be6ce8d1f7f286b5c0bf
-  versions:
-  - 1.4.0
-  - 1.4.1
 modified: '2021-08-01T00:00:48.182379Z'
 published: '2021-08-01T00:00:48.182181Z'
-ecosystem_specific:
-  severity: MEDIUM
-database_specific:
-  introduced_range: aef4bfbd61798ecc21d94c873b679fbdeaf92462:79601d2d060be52e673a82ed1c46f4666eb28255
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24051
+affected:
+- package:
+    name: draco
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/google/draco
+    events:
+    - introduced: 25484b31235d1a35fa72be6ce8d1f7f286b5c0bf
+  versions:
+  - 1.4.0
+  - 1.4.1
+  ecosystem_specific:
+    introduced_range: aef4bfbd61798ecc21d94c873b679fbdeaf92462:79601d2d060be52e673a82ed1c46f4666eb28255
+    severity: MEDIUM

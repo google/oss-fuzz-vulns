@@ -1,7 +1,4 @@
 id: OSV-2020-1869
-package:
-  name: ghostscript
-  ecosystem: OSS-Fuzz
 summary: Use-of-uninitialized-value in gs_scan_token
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21625
@@ -11,19 +8,22 @@ details: |
   gs_scan_token
   tokenexec_continue
   interp
-affects:
-  ranges:
-  - type: GIT
-    repo: git://git.ghostscript.com/ghostpdl.git
-    introduced: 668917a10e7eada030f7d2dddec9f579fddeed3d
-    fixed: 87688cd48fb52c305e159b785bd184232426a766
 modified: '2021-06-23T06:25:40.362883Z'
 published: '2020-09-29T00:00:10.617022Z'
-ecosystem_specific:
-  severity: MEDIUM
-database_specific:
-  introduced_range: unknown:668917a10e7eada030f7d2dddec9f579fddeed3d
-  fixed_range: ebabebad34a3811230b7bfe351eface7f5efc8a9:87688cd48fb52c305e159b785bd184232426a766
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21625
+affected:
+- package:
+    name: ghostscript
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: git://git.ghostscript.com/ghostpdl.git
+    events:
+    - introduced: 668917a10e7eada030f7d2dddec9f579fddeed3d
+    - fixed: 87688cd48fb52c305e159b785bd184232426a766
+  ecosystem_specific:
+    fixed_range: ebabebad34a3811230b7bfe351eface7f5efc8a9:87688cd48fb52c305e159b785bd184232426a766
+    severity: MEDIUM
+    introduced_range: unknown:668917a10e7eada030f7d2dddec9f579fddeed3d

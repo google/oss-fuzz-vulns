@@ -1,7 +1,4 @@
 id: OSV-2020-1491
-package:
-  name: open62541
-  ecosystem: OSS-Fuzz
 summary: Use-of-uninitialized-value in UA_Array_copy
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22250
@@ -11,14 +8,25 @@ details: |
   UA_Array_copy
   String_copy
   LocalizedText_copy
-affects:
+modified: '2021-06-30T00:04:03.246365Z'
+published: '2020-07-28T00:00:30.302361Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22250
+affected:
+- package:
+    name: open62541
+    ecosystem: OSS-Fuzz
   ranges:
   - type: GIT
     repo: https://github.com/open62541/open62541.git
-    introduced: 2919785d72474ed553317c4f3bafadf3e8c027f2
+    events:
+    - introduced: 2919785d72474ed553317c4f3bafadf3e8c027f2
   - type: GIT
     repo: https://github.com/open62541/open62541.git
-    introduced: 798210374ad7a5fd43b31fc3c178a34a3ac21a0c
+    events:
+    - introduced: 2919785d72474ed553317c4f3bafadf3e8c027f2
+    - introduced: 798210374ad7a5fd43b31fc3c178a34a3ac21a0c
   versions:
   - v1.1
   - v1.1.1
@@ -37,10 +45,5 @@ affects:
   - v1.0.1
   - v1.0.2
   - v1.0.3
-modified: '2021-06-30T00:04:03.246365Z'
-published: '2020-07-28T00:00:30.302361Z'
-ecosystem_specific:
-  severity: MEDIUM
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22250
+  ecosystem_specific:
+    severity: MEDIUM

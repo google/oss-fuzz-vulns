@@ -1,7 +1,4 @@
 id: OSV-2020-1804
-package:
-  name: clamav
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in text_normalize_buffer
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22211
@@ -11,23 +8,30 @@ details: |
   text_normalize_buffer
   arj_read_main_header
   cli_unarj_open
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/Cisco-Talos/clamav-devel.git
-    introduced: 5d411c68fb8a079748ddb6d3b115133ea0fdf242
-    fixed: 305df4091a36c35824f93da27347a39819ea70c6
-  - type: GIT
-    repo: https://github.com/Cisco-Talos/clamav-devel.git
-    introduced: 75a4267eff9a9e7a969735a0c83cd2d0f0082730
-    fixed: 899c20c85934c02e654d7feab935f1305a24acb6
-  versions:
-  - clamav-0.102.2
-  - clamav-0.102.3
 modified: '2021-06-21T06:56:25.386965Z'
 published: '2020-09-18T00:00:32.617703Z'
-ecosystem_specific:
-  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22211
+affected:
+- package:
+    name: clamav
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/Cisco-Talos/clamav-devel.git
+    events:
+    - introduced: 5d411c68fb8a079748ddb6d3b115133ea0fdf242
+    - fixed: 305df4091a36c35824f93da27347a39819ea70c6
+  - type: GIT
+    repo: https://github.com/Cisco-Talos/clamav-devel.git
+    events:
+    - introduced: 5d411c68fb8a079748ddb6d3b115133ea0fdf242
+    - fixed: 305df4091a36c35824f93da27347a39819ea70c6
+    - introduced: 75a4267eff9a9e7a969735a0c83cd2d0f0082730
+    - fixed: 899c20c85934c02e654d7feab935f1305a24acb6
+  versions:
+  - clamav-0.102.2
+  - clamav-0.102.3
+  ecosystem_specific:
+    severity: MEDIUM

@@ -1,7 +1,4 @@
 id: OSV-2018-33
-package:
-  name: yara
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in yr_object_set_string
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14560
@@ -11,21 +8,25 @@ details: |
   yr_object_set_string
   dotnet_parse_us
   dotnet_parse_com
-affects:
+modified: '2021-06-21T06:56:27.610985Z'
+published: '2021-01-13T00:00:14.651679Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14560
+affected:
+- package:
+    name: yara
+    ecosystem: OSS-Fuzz
   ranges:
   - type: GIT
     repo: https://github.com/VirusTotal/yara.git
-    introduced: aa182b4f928e54189fe51606d4dc419e7b27022f
-    fixed: e83662f85c6f9534dc19e1a0cede55bebc64f21f
+    events:
+    - introduced: aa182b4f928e54189fe51606d4dc419e7b27022f
+    - fixed: e83662f85c6f9534dc19e1a0cede55bebc64f21f
   versions:
   - v.3.9.0
   - v3.10.0
   - v3.10.0-rc1
   - v3.9.0
-modified: '2021-06-21T06:56:27.610985Z'
-published: '2021-01-13T00:00:14.651679Z'
-ecosystem_specific:
-  severity: MEDIUM
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14560
+  ecosystem_specific:
+    severity: MEDIUM

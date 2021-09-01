@@ -1,7 +1,4 @@
 id: OSV-2018-89
-package:
-  name: wpantund
-  ecosystem: OSS-Fuzz
 summary: Heap-use-after-free in TunnelIPv6Interface::remove_address
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=10864
@@ -11,16 +8,20 @@ details: |
   TunnelIPv6Interface::remove_address
   nl::wpantund::NCPInstanceBase::unicast_address_was_removed
   nl::wpantund::NCPInstanceBase::on_mesh_prefix_was_removed
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/openthread/wpantund
-    introduced: 0b1be41c37455de642834235f497e79ab9867b63
-    fixed: bd1361434619a52b296e6a94c4188aae1a693179
 modified: '2021-06-21T06:56:21.314461Z'
 published: '2021-01-13T00:00:40.795012Z'
-ecosystem_specific:
-  severity: HIGH
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=10864
+affected:
+- package:
+    name: wpantund
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/openthread/wpantund
+    events:
+    - introduced: 0b1be41c37455de642834235f497e79ab9867b63
+    - fixed: bd1361434619a52b296e6a94c4188aae1a693179
+  ecosystem_specific:
+    severity: HIGH

@@ -1,7 +1,4 @@
 id: OSV-2020-1178
-package:
-  name: arrow
-  ecosystem: OSS-Fuzz
 summary: Global-buffer-overflow in arrow::Status arrow::VisitArrayInline<arrow::internal::ValidateArrayDataVisitor>
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20203
@@ -11,17 +8,21 @@ details: |
   arrow::Status arrow::VisitArrayInline<arrow::internal::ValidateArrayDataVisitor>
   arrow::Status arrow::internal::ValidateArrayDataVisitor::ValidateListArray<arrow
   arrow::Status arrow::VisitArrayInline<arrow::internal::ValidateArrayDataVisitor>
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/apache/arrow.git
-    introduced: ccdc4b076cbd5fb03e1cbc42292def871d2b6035
-    fixed: 3dc281397f42dd26bf77e45c7ba4ebeb1eb9aba8
 modified: '2021-06-23T06:25:11.724637Z'
 published: '2020-07-22T21:49:53.967051Z'
-database_specific:
-  introduced_range: unknown:ccdc4b076cbd5fb03e1cbc42292def871d2b6035
-  fixed_range: 45ad34603a065071673e6484e037a2374c53e43b:3dc281397f42dd26bf77e45c7ba4ebeb1eb9aba8
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20203
+affected:
+- package:
+    name: arrow
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/apache/arrow.git
+    events:
+    - introduced: ccdc4b076cbd5fb03e1cbc42292def871d2b6035
+    - fixed: 3dc281397f42dd26bf77e45c7ba4ebeb1eb9aba8
+  ecosystem_specific:
+    introduced_range: unknown:ccdc4b076cbd5fb03e1cbc42292def871d2b6035
+    fixed_range: 45ad34603a065071673e6484e037a2374c53e43b:3dc281397f42dd26bf77e45c7ba4ebeb1eb9aba8

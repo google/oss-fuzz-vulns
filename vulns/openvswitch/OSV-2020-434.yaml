@@ -1,7 +1,4 @@
 id: OSV-2020-434
-package:
-  name: openvswitch
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in format_generic_odp_key
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14429
@@ -11,12 +8,21 @@ details: |
   format_generic_odp_key
   check_attr_len
   format_odp_key_attr
-affects:
+modified: '2021-06-23T06:54:24.240957Z'
+published: '2020-07-01T00:00:09.309832Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14429
+affected:
+- package:
+    name: openvswitch
+    ecosystem: OSS-Fuzz
   ranges:
   - type: GIT
     repo: https://github.com/openvswitch/ovs.git
-    introduced: ea43b024a8a03f6648d0e06589137a4fbfea9f5a
-    fixed: e2ed6fbeb18cba1235c6a260b754f11ecc9d4cb0
+    events:
+    - introduced: ea43b024a8a03f6648d0e06589137a4fbfea9f5a
+    - fixed: e2ed6fbeb18cba1235c6a260b754f11ecc9d4cb0
   versions:
   - v2.11.0
   - v2.11.1
@@ -30,12 +36,6 @@ affects:
   - v2.12.2
   - v2.12.3
   - v2.11.7
-modified: '2021-06-23T06:54:24.240957Z'
-published: '2020-07-01T00:00:09.309832Z'
-ecosystem_specific:
-  severity: MEDIUM
-database_specific:
-  fixed_range: 187bb41fbf447acf9fb6ac117dc923bbe649e78c:e2ed6fbeb18cba1235c6a260b754f11ecc9d4cb0
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14429
+  ecosystem_specific:
+    severity: MEDIUM
+    fixed_range: 187bb41fbf447acf9fb6ac117dc923bbe649e78c:e2ed6fbeb18cba1235c6a260b754f11ecc9d4cb0

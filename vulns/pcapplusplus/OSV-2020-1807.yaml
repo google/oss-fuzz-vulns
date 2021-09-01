@@ -1,7 +1,4 @@
 id: OSV-2020-1807
-package:
-  name: pcapplusplus
-  ecosystem: OSS-Fuzz
 summary: UNKNOWN READ in __libcpp_memchr
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25711
@@ -11,17 +8,21 @@ details: |
   __libcpp_memchr
   memchr
   pcpp::cross_platform_memmem
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/seladb/PcapPlusPlus
-    introduced: fbc52d37c6a7e8cc75e4950d2621cbd907c6cf8a
-  versions:
-  - v21.05
 modified: '2021-06-21T06:56:24.561592Z'
 published: '2020-09-18T00:00:38.027965Z'
-ecosystem_specific:
-  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25711
+affected:
+- package:
+    name: pcapplusplus
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/seladb/PcapPlusPlus
+    events:
+    - introduced: fbc52d37c6a7e8cc75e4950d2621cbd907c6cf8a
+  versions:
+  - v21.05
+  ecosystem_specific:
+    severity: MEDIUM

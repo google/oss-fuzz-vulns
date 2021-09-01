@@ -1,7 +1,4 @@
 id: OSV-2018-228
-package:
-  name: glib
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in g_variant_serialiser_is_string
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=9828
@@ -11,24 +8,27 @@ details: |
   g_variant_serialiser_is_string
   g_variant_serialiser_is_object_path
   g_variant_serialised_is_normal
-affects:
+modified: '2021-06-23T06:25:27.816429Z'
+published: '2021-01-13T00:01:34.116112Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=9828
+affected:
+- package:
+    name: glib
+    ecosystem: OSS-Fuzz
   ranges:
   - type: GIT
     repo: https://gitlab.gnome.org/GNOME/glib
-    introduced: 10ee7301e8edb13e59143ee5653cd2b46e26c044
-    fixed: 372e81b56ca4cdbccc3a036b41442bdc58e2164e
+    events:
+    - introduced: 10ee7301e8edb13e59143ee5653cd2b46e26c044
+    - fixed: 372e81b56ca4cdbccc3a036b41442bdc58e2164e
   versions:
   - 2.57.3
   - 2.58.0
   - 2.58.1
   - 2.58.2
   - 2.58.3
-modified: '2021-06-23T06:25:27.816429Z'
-published: '2021-01-13T00:01:34.116112Z'
-ecosystem_specific:
-  severity: MEDIUM
-database_specific:
-  introduced_range: 8defa46e6ec16aa3722aa0ac0bc3db0fecd86c45:0d271223d894e9c69b7fa6b7983511f8ad770682
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=9828
+  ecosystem_specific:
+    introduced_range: 8defa46e6ec16aa3722aa0ac0bc3db0fecd86c45:0d271223d894e9c69b7fa6b7983511f8ad770682
+    severity: MEDIUM

@@ -1,7 +1,4 @@
 id: OSV-2020-2084
-package:
-  name: openh264
-  ecosystem: OSS-Fuzz
 summary: UNKNOWN READ in WelsCommon::WelsMalloc
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26420
@@ -11,18 +8,21 @@ details: |
   WelsCommon::WelsMalloc
   WelsCommon::CMemoryAlign::WelsMalloc
   WelsCommon::CMemoryAlign::WelsMallocz
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/cisco/openh264.git
-    introduced: 4c76c67e9b790fd40650c4e8a2a059603e8ce195
-    fixed: 992c1c147175126c3fe7ab78216aa0395f9e6c71
 modified: '2021-06-23T06:26:25.672426Z'
 published: '2020-10-18T00:00:42.312751Z'
-ecosystem_specific:
-  severity: MEDIUM
-database_specific:
-  introduced_range: 83a0eae9bbbda5bfe802438109a025a3d7caee10:992c1c147175126c3fe7ab78216aa0395f9e6c71
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26420
+affected:
+- package:
+    name: openh264
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/cisco/openh264.git
+    events:
+    - introduced: 4c76c67e9b790fd40650c4e8a2a059603e8ce195
+    - fixed: 992c1c147175126c3fe7ab78216aa0395f9e6c71
+  ecosystem_specific:
+    introduced_range: 83a0eae9bbbda5bfe802438109a025a3d7caee10:992c1c147175126c3fe7ab78216aa0395f9e6c71
+    severity: MEDIUM

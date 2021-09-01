@@ -1,7 +1,4 @@
 id: OSV-2021-902
-package:
-  name: selinux
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in ebitmap_match_any
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=35553
@@ -11,16 +8,20 @@ details: |
   ebitmap_match_any
   avtab_map
   cil_check_neverallow
-affects:
-  ranges:
-  - type: GIT
-    repo: https://github.com/SELinuxProject/selinux
-    introduced: 37863b0b1444c85a1ddc6c333c8bfea0c678c592
-    fixed: 9af91692416d01814f4b2ac22e39d3b57993af4f
 modified: '2021-06-27T00:01:23.702761Z'
 published: '2021-06-27T00:01:23.702334Z'
-ecosystem_specific:
-  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=35553
+affected:
+- package:
+    name: selinux
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/SELinuxProject/selinux
+    events:
+    - introduced: 37863b0b1444c85a1ddc6c333c8bfea0c678c592
+    - fixed: 9af91692416d01814f4b2ac22e39d3b57993af4f
+  ecosystem_specific:
+    severity: MEDIUM

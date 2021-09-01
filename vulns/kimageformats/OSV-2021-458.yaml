@@ -1,7 +1,4 @@
 id: OSV-2021-458
-package:
-  name: kimageformats
-  ecosystem: OSS-Fuzz
 summary: Heap-buffer-overflow in put_epel_8_fallback
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31501
@@ -11,16 +8,20 @@ details: |
   put_epel_8_fallback
   acceleration_functions::put_hevc_epel
   void mc_chroma<unsigned short>
-affects:
-  ranges:
-  - type: GIT
-    repo: https://invent.kde.org/frameworks/kimageformats.git
-    introduced: ca52d4ddf540cc731d0f31dbccc1897f7e6d9db4
-    fixed: 511a22f0b49a467af1e2932f7a339481acab94a1
 modified: '2021-06-21T06:56:27.864354Z'
 published: '2021-03-01T00:00:01.613862Z'
-ecosystem_specific:
-  severity: MEDIUM
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31501
+affected:
+- package:
+    name: kimageformats
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://invent.kde.org/frameworks/kimageformats.git
+    events:
+    - introduced: ca52d4ddf540cc731d0f31dbccc1897f7e6d9db4
+    - fixed: 511a22f0b49a467af1e2932f7a339481acab94a1
+  ecosystem_specific:
+    severity: MEDIUM
