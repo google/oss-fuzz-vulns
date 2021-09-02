@@ -1,0 +1,32 @@
+id: OSV-2021-934
+summary: Heap-buffer-overflow in extract_addresses
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=35865
+
+  Crash type: Heap-buffer-overflow WRITE 1
+  Crash state:
+  extract_addresses
+  FuzzExtractTheAddress
+  fuzz_rfc1035.c
+modified: '2021-07-08T00:01:26.898847Z'
+published: '2021-07-08T00:01:26.898533Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=35865
+affected:
+- package:
+    name: dnsmasq
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: git://thekelleys.org.uk/dnsmasq.git
+    events:
+    - introduced: 96f6444958c29a670f4254722d787f328153605c
+    - fixed: 7b80c75d9d3c19d8d328f749c06d06788ddb63fc
+  versions:
+  - v2.86rc1
+  - v2.86test5
+  - v2.86test6
+  - v2.86test7
+  ecosystem_specific:
+    severity: HIGH
