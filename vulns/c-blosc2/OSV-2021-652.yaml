@@ -8,7 +8,7 @@ details: |
   ZSTD_freeDDict
   blosc2_free_ctx
   blosc2_schunk_free
-modified: '2021-04-18T00:01:00.614668Z'
+modified: '2021-09-02T00:05:25.705268Z'
 published: '2021-04-18T00:01:00.614418Z'
 references:
 - type: REPORT
@@ -28,5 +28,6 @@ affected:
   - v2.0.0.rc1
   - v2.0.1
   - v2.0.2
+  - v2.0.3
   ecosystem_specific:
     severity: HIGH
