@@ -8,7 +8,7 @@ details: |
   fetchARGB32ToRGBA64PM_avx2
   blend_untransformed_generic_rgb64
   fillRect_normalized
-modified: '2021-08-16T00:05:08.231793Z'
+modified: '2021-09-05T00:03:43.664301Z'
 published: '2020-07-14T22:13:50.828646Z'
 references:
 - type: REPORT
@@ -58,5 +58,6 @@ affected:
   - v5.84.0-rc1
   - v5.85.0-rc1
   - v5.85.0
+  - v5.86.0-rc1
   ecosystem_specific:
     severity: MEDIUM
