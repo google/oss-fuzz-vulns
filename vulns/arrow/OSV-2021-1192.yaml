@@ -1,0 +1,27 @@
+id: OSV-2021-1192
+summary: Segv on unknown address in arrow::DefaultBackend
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=37927
+
+  Crash type: Segv on unknown address
+  Crash state:
+  arrow::DefaultBackend
+  arrow::PoolBuffer::MakeUnique
+  arrow::AllocateBuffer
+modified: '2021-09-02T00:01:47.797593Z'
+published: '2021-09-02T00:01:47.797383Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=37927
+affected:
+- package:
+    name: arrow
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/apache/arrow.git
+    events:
+    - introduced: 27affa3181708c4f800f9d0a70603fb3390d6462
+    - fixed: 495c734969f4af9288a8e745c29fb1d707a46baa
+  ecosystem_specific:
+    severity: null

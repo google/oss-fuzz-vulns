@@ -1,0 +1,27 @@
+id: OSV-2021-1194
+summary: Heap-use-after-free in zend_string_release
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=38014
+
+  Crash type: Heap-use-after-free READ 4
+  Crash state:
+  zend_string_release
+  zend_closure_free_storage
+  zend_objects_store_del
+modified: '2021-09-03T00:00:12.853984Z'
+published: '2021-09-03T00:00:12.853762Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=38014
+affected:
+- package:
+    name: php
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/php/php-src.git
+    events:
+    - introduced: 09f55604ec8013b8162afc568a92936263272e05
+    - fixed: 2cc47a04df8bb5fb7bc638df677fe02c07263a91
+  ecosystem_specific:
+    severity: HIGH
