@@ -8,7 +8,7 @@ details: |
   put_epel_8_fallback
   acceleration_functions::put_hevc_epel
   void mc_chroma<unsigned short>
-modified: '2021-08-15T00:02:08.574180Z'
+modified: '2021-09-05T00:03:57.897226Z'
 published: '2021-03-06T00:01:09.514607Z'
 references:
 - type: REPORT
@@ -36,5 +36,6 @@ affected:
   - v5.84.0-rc1
   - v5.85.0-rc1
   - v5.85.0
+  - v5.86.0-rc1
   ecosystem_specific:
     severity: MEDIUM
