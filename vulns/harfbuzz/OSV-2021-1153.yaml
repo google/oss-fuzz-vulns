@@ -6,7 +6,7 @@ details: "OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id
   \ int, 4u> const> hb_array_t<OT::IntType<unsigned \nOT::UnsizedArrayOf<OT::IntType<unsigned\
   \ int, 4u> >::copy\n_hb_head_t<OT::UnsizedArrayOf<OT::IntType<unsigned int, 4u>\
   \ >*, decltype\n"
-modified: '2021-08-20T00:00:40.299318Z'
+modified: '2021-09-08T00:05:03.182263Z'
 published: '2021-08-20T00:00:40.299081Z'
 references:
 - type: REPORT
@@ -22,5 +22,6 @@ affected:
     - introduced: a6c6cda48608e988a7debc3c18597186e3b4e2ee
   versions:
   - 2.9.0
+  - 2.9.1
   ecosystem_specific:
     severity: MEDIUM
