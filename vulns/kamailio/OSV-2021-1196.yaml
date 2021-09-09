@@ -1,0 +1,27 @@
+id: OSV-2021-1196
+summary: Heap-buffer-overflow in parse_content_length
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=38050
+
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  parse_content_length
+  get_hdr_field
+  parse_headers
+modified: '2021-09-04T00:00:36.456788Z'
+published: '2021-09-04T00:00:36.456594Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=38050
+affected:
+- package:
+    name: kamailio
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/kamailio/kamailio
+    events:
+    - introduced: 199f13a7dfac8cd817850c6a6afe5ba510835418
+    - fixed: baed515e8aed8e5b505ff716eb57d0c60e582632
+  ecosystem_specific:
+    severity: MEDIUM
