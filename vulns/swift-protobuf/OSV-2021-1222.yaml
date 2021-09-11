@@ -1,0 +1,29 @@
+id: OSV-2021-1222
+summary: Invalid-free in swift_unexpectedError
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=38323
+
+  Crash type: Invalid-free
+  Crash state:
+  swift_unexpectedError
+  SwiftProtobuf.TextFormatEncodingVisitor.visitRepeatedMessageField<A where A: Swi
+  merged protocol witness for SwiftProtobuf.Visitor.visitRepeatedEnumField<A where
+modified: '2021-09-11T00:00:12.263065Z'
+published: '2021-09-11T00:00:12.261007Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=38323
+affected:
+- package:
+    name: swift-protobuf
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/apple/swift-protobuf.git
+    events:
+    - introduced: ddbc8f3dc63b11b9b64939f75d877068c6300f3d
+    - fixed: b09ca380d6116c442a6c838bf8bac6f72c82b0ad
+  ecosystem_specific:
+    severity: null
+  database_specific:
+    introduced_range: 1f62db409f2c9b0223a3f68567b4a01333aae778:e1943f3e70df8dbf80195cdaf5fd090787c4d135

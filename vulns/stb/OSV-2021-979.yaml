@@ -1,0 +1,27 @@
+id: OSV-2021-979
+summary: Heap-buffer-overflow in stbi__convert_16_to_8
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=36087
+
+  Crash type: Heap-buffer-overflow READ 2
+  Crash state:
+  stbi__convert_16_to_8
+  stbi__load_and_postprocess_8bit
+  stbi_load_from_memory
+modified: '2021-07-13T00:01:26.986851Z'
+published: '2021-07-13T00:01:26.986629Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=36087
+affected:
+- package:
+    name: stb
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/nothings/stb.git
+    events:
+    - introduced: 8c15cc9c79bf6f180d74808657046caf2ec0b445
+    - fixed: 8c15cc9c79bf6f180d74808657046caf2ec0b445
+  ecosystem_specific:
+    severity: MEDIUM

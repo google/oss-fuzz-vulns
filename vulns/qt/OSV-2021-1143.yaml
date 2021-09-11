@@ -1,0 +1,29 @@
+id: OSV-2021-1143
+summary: UNKNOWN WRITE in QtPrivate::QPodArrayOps<QPainterPath::Element>::copyAppend
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=37306
+
+  Crash type: UNKNOWN WRITE
+  Crash state:
+  QtPrivate::QPodArrayOps<QPainterPath::Element>::copyAppend
+  QtPrivate::QCommonArrayOps<QPainterPath::Element>::growAppend
+  QList<QPainterPath::Element>::append
+modified: '2021-08-19T00:00:37.149628Z'
+published: '2021-08-19T00:00:37.149406Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=37306
+affected:
+- package:
+    name: qt
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: git://code.qt.io/qt/qt5.git
+    events:
+    - introduced: dcab4e83f35a7972ed0b565f02efc864d5f28df7
+    - fixed: 3b6c8eea207f42c561088395b80c64e5f82f7169
+  ecosystem_specific:
+    severity: HIGH
+  database_specific:
+    introduced_range: e3834034f88af27d48f2f7a2cc6ab0c84d6faf1e:e8a86ab6c84f6618fae6f961c34c25ef42e91332

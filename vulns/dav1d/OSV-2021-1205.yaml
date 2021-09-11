@@ -1,0 +1,27 @@
+id: OSV-2021-1205
+summary: Heap-buffer-overflow in backup_lpf
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=38152
+
+  Crash type: Heap-buffer-overflow WRITE {*}
+  Crash state:
+  backup_lpf
+  dav1d_lr_copy_lpf_16bpc
+  dav1d_filter_sbrow_deblock_rows_16bpc
+modified: '2021-09-06T00:00:42.136829Z'
+published: '2021-09-06T00:00:42.136598Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=38152
+affected:
+- package:
+    name: dav1d
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://code.videolan.org/videolan/dav1d.git
+    events:
+    - introduced: 753eef833bdd8ff1585c5c858cafeca8fefbb16e
+    - fixed: 159215a82da88ca6c511194c8188e9df7a193998
+  ecosystem_specific:
+    severity: HIGH

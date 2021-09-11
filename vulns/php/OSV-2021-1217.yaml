@@ -1,0 +1,27 @@
+id: OSV-2021-1217
+summary: Heap-use-after-free in ZEND_FETCH_OBJ_R_SPEC_CV_CONST_INLINE_HANDLER
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=38297
+
+  Crash type: Heap-use-after-free READ 8
+  Crash state:
+  ZEND_FETCH_OBJ_R_SPEC_CV_CONST_INLINE_HANDLER
+  ZEND_FETCH_OBJ_R_SPEC_CV_CONST_HANDLER
+  fuzzer_execute_ex
+modified: '2021-09-10T00:00:45.962449Z'
+published: '2021-09-10T00:00:45.962198Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=38297
+affected:
+- package:
+    name: php
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/php/php-src.git
+    events:
+    - introduced: 53e9c36cd94fae193a4fcbb879b93db31a4906c3
+    - fixed: 6381a16f3f1d0ce5d260f90661a7026b8f05d074
+  ecosystem_specific:
+    severity: HIGH
