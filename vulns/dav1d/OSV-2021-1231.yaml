@@ -1,0 +1,27 @@
+id: OSV-2021-1231
+summary: Heap-buffer-overflow in padding
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=38439
+
+  Crash type: Heap-buffer-overflow READ {*}
+  Crash state:
+  padding
+  sgr_mix_c
+  lr_stripe
+modified: '2021-09-12T00:00:14.393596Z'
+published: '2021-09-12T00:00:14.393392Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=38439
+affected:
+- package:
+    name: dav1d
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://code.videolan.org/videolan/dav1d.git
+    events:
+    - introduced: e53314177a5a45a1c1c907464b19ade625d110a6
+    - fixed: 69ff474a7f3a7ccc61c5e6881e45e0afe693f352
+  ecosystem_specific:
+    severity: MEDIUM
