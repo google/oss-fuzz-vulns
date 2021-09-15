@@ -1,0 +1,36 @@
+id: OSV-2021-857
+summary: Heap-buffer-overflow in mk_string_copy_substr
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=35202
+
+  Crash type: Heap-buffer-overflow READ {*}
+  Crash state:
+  mk_string_copy_substr
+  mk_rconf_meta_add
+  mk_rconf_read
+modified: '2021-06-14T00:00:34.638637Z'
+published: '2021-06-14T00:00:34.638360Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=35202
+affected:
+- package:
+    name: fluent-bit
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/fluent/fluent-bit/
+    events:
+    - introduced: 8f653c34c0dd46c39e2a5ebf9ff3fe9ec932fc4f
+    - introduced: ed82460da17f5a029df74503d3a5f8f69d29d3ea
+  versions:
+  - v1.8.0
+  - v1.8.0-rc1
+  - v1.8.1
+  - v1.8.2
+  - v1.8.3
+  - v1.8.4
+  - v1.8.5
+  - v1.8.6
+  ecosystem_specific:
+    severity: MEDIUM

@@ -1,0 +1,30 @@
+id: OSV-2021-1257
+summary: Stack-buffer-overflow in GRIBDataset::Open
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=38610
+
+  Crash type: Stack-buffer-overflow READ 1
+  Crash state:
+  GRIBDataset::Open
+  GDALOpenEx
+  GDALOpen
+modified: '2021-09-14T00:01:43.347217Z'
+published: '2021-09-14T00:01:43.346984Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=38610
+affected:
+- package:
+    name: gdal
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/OSGeo/gdal
+    events:
+    - introduced: dde3a2ffeea4ae256bf14855453e9a9590880f8a
+    - fixed: b8cc984317dbc6628d43256b7059f22b5b8bbe55
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: fd3f98b3b3c5caa081c03ac5ad3cdf01199967c2:543dd29d28b2121417eb699e28843c534a3c4c69
+  versions: []

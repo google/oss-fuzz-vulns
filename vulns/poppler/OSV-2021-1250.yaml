@@ -1,0 +1,30 @@
+id: OSV-2021-1250
+summary: Segv on unknown address in ft_free
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=38635
+
+  Crash type: Segv on unknown address
+  Crash state:
+  ft_free
+  ft_mem_free
+  cff_cmap_unicode_done
+modified: '2021-09-14T00:00:09.258370Z'
+published: '2021-09-14T00:00:09.257971Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=38635
+affected:
+- package:
+    name: poppler
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://gitlab.freedesktop.org/poppler/poppler.git
+    events:
+    - introduced: 3ad10c30433f19da65f638326336865504fb972a
+    - fixed: 2549552043acf0a98f64360853ce37e6e045c35a
+  ecosystem_specific:
+    severity: null
+  database_specific:
+    introduced_range: 736337fdab52ba77e1877347adff595136f74d73:a1901ee99bf46beac43d129bb3f6ad2f9ed758af
+  versions: []
