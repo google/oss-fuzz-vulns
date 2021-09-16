@@ -1,0 +1,27 @@
+id: OSV-2021-1266
+summary: UNKNOWN WRITE in void AK::BumpAllocator<true, 2097152ul>::for_each_chunk<AK::UniformBumpAllocator
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=38701
+
+  Crash type: UNKNOWN WRITE
+  Crash state:
+  void AK::BumpAllocator<true, 2097152ul>::for_each_chunk<AK::UniformBumpAllocator
+  regex::BumpAllocatedLinkedList<regex::MatchState>::~BumpAllocatedLinkedList
+  regex::Matcher<regex::ECMA262Parser>::execute
+modified: '2021-09-16T00:00:19.187821Z'
+published: '2021-09-16T00:00:19.187563Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=38701
+affected:
+- package:
+    name: serenity
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/SerenityOS/serenity
+    events:
+    - introduced: 25f43ea0a1cc3a9304d0676d50149b5103d1688a
+  ecosystem_specific:
+    severity: HIGH
+  versions: []

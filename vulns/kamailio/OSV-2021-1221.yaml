@@ -1,0 +1,28 @@
+id: OSV-2021-1221
+summary: Heap-buffer-overflow in parse_via_param
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=38307
+
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  parse_via_param
+  parse_via
+  get_hdr_field
+modified: '2021-09-11T00:00:10.922405Z'
+published: '2021-09-11T00:00:10.922189Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=38307
+affected:
+- package:
+    name: kamailio
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/kamailio/kamailio
+    events:
+    - introduced: 199f13a7dfac8cd817850c6a6afe5ba510835418
+    - fixed: 1d3fde1205440296c1d6a54feee5a9d637055bee
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
