@@ -8,7 +8,7 @@ details: |
   GRIBDataset::Open
   GDALOpenEx
   GDALOpen
-modified: '2021-09-14T00:01:43.347217Z'
+modified: '2021-09-16T00:16:24.866223Z'
 published: '2021-09-14T00:01:43.346984Z'
 references:
 - type: REPORT
@@ -23,6 +23,8 @@ affected:
     events:
     - introduced: dde3a2ffeea4ae256bf14855453e9a9590880f8a
     - fixed: b8cc984317dbc6628d43256b7059f22b5b8bbe55
+    - introduced: 1891d11bd87aef7e6b63f9e886f31940cdf3f0e3
+    - fixed: bbf710970397896b1540e589c1bfccae94d64843
   ecosystem_specific:
     severity: MEDIUM
   database_specific:
