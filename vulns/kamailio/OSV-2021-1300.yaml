@@ -1,0 +1,31 @@
+id: OSV-2021-1300
+summary: UNKNOWN READ in get_body
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=38750
+
+  Crash type: UNKNOWN READ
+  Crash state:
+  get_body
+  parse_sdp
+  fuzz_parse_msg.c
+modified: '2021-09-17T00:01:33.669003Z'
+published: '2021-09-17T00:01:33.668747Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=38750
+affected:
+- package:
+    name: kamailio
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/kamailio/kamailio
+    events:
+    - introduced: 1e71168342894c992ab376bf8538c0953db31fe4
+    - fixed: 63ecb827631189d27da6a85d41149985d95fc479
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    fixed_range: 1d9a972692a44210884137c5d941909022ce6183:63ecb827631189d27da6a85d41149985d95fc479
+    introduced_range: 22f9e269dd68edcb025e103d9aa1432423dd5550:199f13a7dfac8cd817850c6a6afe5ba510835418
+  versions: []

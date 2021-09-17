@@ -1,0 +1,28 @@
+id: OSV-2021-1206
+summary: Stack-use-after-scope in uprv_stricmp_70
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=38156
+
+  Crash type: Stack-use-after-scope READ 1
+  Crash state:
+  uprv_stricmp_70
+  ulocimp_getLanguage_70
+  _canonicalize
+modified: '2021-09-07T00:00:06.847364Z'
+published: '2021-09-07T00:00:06.847136Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=38156
+affected:
+- package:
+    name: icu
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/unicode-org/icu.git
+    events:
+    - introduced: 01e1adc9e412c9c3177dc3e30d056c25d8687853
+    - fixed: adb109f440f5dc9c7bb9f2b1df3a9d63109aa585
+  ecosystem_specific:
+    severity: null
+  versions: []
