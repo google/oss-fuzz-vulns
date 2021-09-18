@@ -1,0 +1,30 @@
+id: OSV-2021-1238
+summary: UNKNOWN READ in cdf_read_property_info
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=38393
+
+  Crash type: UNKNOWN READ
+  Crash state:
+  cdf_read_property_info
+  cdf_unpack_summary_info
+  cdf_check_summary_info
+modified: '2021-09-12T00:00:57.130170Z'
+published: '2021-09-12T00:00:57.129964Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=38393
+affected:
+- package:
+    name: file
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/file/file.git
+    events:
+    - introduced: c8deb32eab1089d1841482fb2e91833f114b6712
+    - fixed: a9c8d2a9493c4e0cd201db57801f3502e65c686c
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: 0e6b4a09765cf3ad46a374172df52258c4e3fb97:48e53e1c7c23f855d76ddb37a01c1ab578aa2a26
+  versions: []
