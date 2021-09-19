@@ -1,0 +1,30 @@
+id: OSV-2021-1319
+summary: Heap-buffer-overflow in geos::operation::valid::PolygonNode::isInteriorSegment
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=38922
+
+  Crash type: Heap-buffer-overflow READ 8
+  Crash state:
+  geos::operation::valid::PolygonNode::isInteriorSegment
+  geos::operation::valid::PolygonTopologyAnalyzer::isSegmentInRing
+  geos::operation::valid::IsValidOp::checkHolesOutsideShell
+modified: '2021-09-19T00:00:07.078029Z'
+published: '2021-09-19T00:00:07.077782Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=38922
+affected:
+- package:
+    name: geos
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://git.osgeo.org/gitea/geos/geos.git
+    events:
+    - introduced: f593230f5907260096202ef0302abe99b81c0bf7
+    - fixed: f593230f5907260096202ef0302abe99b81c0bf7
+    - introduced: 0d3e09cc31101a7bd58051add7db0ce0aef6b6f5
+    - fixed: 0d3e09cc31101a7bd58051add7db0ce0aef6b6f5
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
