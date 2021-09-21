@@ -1,0 +1,28 @@
+id: OSV-2021-1333
+summary: Heap-buffer-overflow in pe_get_section_full_name
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=38952
+
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  pe_get_section_full_name
+  pe__load
+  yr_modules_load
+modified: '2021-09-20T00:00:16.641873Z'
+published: '2021-09-20T00:00:16.641649Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=38952
+affected:
+- package:
+    name: yara
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/VirusTotal/yara.git
+    events:
+    - introduced: 5cc28d24a251370218448100de4e9817e0d9233e
+    - fixed: ae503e9671b274802cb07dc032b5e5cea28773bd
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []

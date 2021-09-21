@@ -1,0 +1,30 @@
+id: OSV-2021-1310
+summary: Heap-use-after-free in hb_resolve_overflows
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=38878
+
+  Crash type: Heap-use-after-free READ 4
+  Crash state:
+  hb_resolve_overflows
+  _repack
+  hb_subset_or_fail
+modified: '2021-09-18T00:00:25.727248Z'
+published: '2021-09-18T00:00:25.727046Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=38878
+affected:
+- package:
+    name: harfbuzz
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/harfbuzz/harfbuzz.git
+    events:
+    - introduced: 3844e58e14f6f528c52df06d49c771dd174730b9
+    - fixed: 74f96d9d4b359fc138d21709c975a09ba933fb3d
+  versions:
+  - 2.9.1
+  - 3.0.0
+  ecosystem_specific:
+    severity: HIGH
