@@ -1,0 +1,30 @@
+id: OSV-2021-1301
+summary: 'Use-of-uninitialized-value in std::__1::__hash_iterator<std::__1::__hash_node<std::__1::__hash_value_type<std:'
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=38823
+
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  std::__1::__hash_iterator<std::__1::__hash_node<std::__1::__hash_value_type<std:
+  opencensus::tags::TagKeyRegistry::Register
+  opencensus::tags::TagKey::Register
+modified: '2021-09-17T00:01:36.462472Z'
+published: '2021-09-17T00:01:36.462295Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=38823
+affected:
+- package:
+    name: opencensus-cpp
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/census-instrumentation/opencensus-cpp
+    events:
+    - introduced: 9461de16eef2286a4a062e890548ab148aa94c55
+    - fixed: 62d8281899a1cfd1084793f64295329a6b5d22b3
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: afe0460f92fb78e6d6cf8c8a30ced9bc5e2e57d3:62d8281899a1cfd1084793f64295329a6b5d22b3
+  versions: []

@@ -1,0 +1,31 @@
+id: OSV-2021-1305
+summary: Use-of-uninitialized-value in std::__1::basic_ostream<char, std::__1::char_traits<char>
+  >& std::__1::__put_cha
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=38831
+
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  std::__1::basic_ostream<char, std::__1::char_traits<char> >& std::__1::__put_cha
+  S2LatLng::ToPoint
+  s2textformat::ParsePoints
+modified: '2021-09-17T00:01:40.665456Z'
+published: '2021-09-17T00:01:40.665077Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=38831
+affected:
+- package:
+    name: s2geometry
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/google/s2geometry
+    events:
+    - introduced: 20ea540d81f4575a3fc0aea585aac611bcd03ede
+    - fixed: 20ea540d81f4575a3fc0aea585aac611bcd03ede
+    - introduced: c061b65fe8f220340b1db8c9378529e8f3022c6a
+    - fixed: c061b65fe8f220340b1db8c9378529e8f3022c6a
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []

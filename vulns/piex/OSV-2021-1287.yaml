@@ -1,0 +1,28 @@
+id: OSV-2021-1287
+summary: Use-of-uninitialized-value in piex::image_type_recognition::ContainsNikonSignatures
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=38799
+
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  piex::image_type_recognition::ContainsNikonSignatures
+  piex::image_type_recognition::NefTypeChecker::IsMyType
+  piex::image_type_recognition::RecognizeRawImageTypeLite
+modified: '2021-09-17T00:00:35.215970Z'
+published: '2021-09-17T00:00:35.215722Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=38799
+affected:
+- package:
+    name: piex
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/guidovranken/piex.git
+    events:
+    - introduced: 2aa74c2dd295758ef4562906a5525300972821fc
+    - fixed: 2aa74c2dd295758ef4562906a5525300972821fc
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []

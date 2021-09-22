@@ -1,0 +1,27 @@
+id: OSV-2021-1346
+summary: UNKNOWN READ in state_VLC_dec::load_bytes
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=39046
+
+  Crash type: UNKNOWN READ
+  Crash state:
+  state_VLC_dec::load_bytes
+  state_VLC_dec::state_VLC_dec
+  htj2k_decode
+modified: '2021-09-22T00:00:11.187965Z'
+published: '2021-09-22T00:00:11.187759Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=39046
+affected:
+- package:
+    name: grok
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/GrokImageCompression/grok.git
+    events:
+    - introduced: 9c466c61a86ffc12f4890b0ff80717d4a9909015
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []

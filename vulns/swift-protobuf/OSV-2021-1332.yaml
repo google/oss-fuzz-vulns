@@ -1,0 +1,31 @@
+id: OSV-2021-1332
+summary: Invalid-free in swift_unexpectedError
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=38951
+
+  Crash type: Invalid-free
+  Crash state:
+  swift_unexpectedError
+  FuzzJSON.FuzzJSON
+  <compiler-generated>
+modified: '2021-09-20T00:00:14.317683Z'
+published: '2021-09-20T00:00:14.317470Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=38951
+affected:
+- package:
+    name: swift-protobuf
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/apple/swift-protobuf.git
+    events:
+    - introduced: ddbc8f3dc63b11b9b64939f75d877068c6300f3d
+    - fixed: b426152ab86132d40c26345db32b4310d7d80e0b
+  ecosystem_specific:
+    severity: null
+  database_specific:
+    fixed_range: 5ec1e8703f1badd233645cb88fff49865b2d5e5a:b426152ab86132d40c26345db32b4310d7d80e0b
+    introduced_range: 1f62db409f2c9b0223a3f68567b4a01333aae778:e1943f3e70df8dbf80195cdaf5fd090787c4d135
+  versions: []
