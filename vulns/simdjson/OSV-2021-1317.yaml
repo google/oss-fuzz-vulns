@@ -1,0 +1,29 @@
+id: OSV-2021-1317
+summary: Use-of-uninitialized-value in std::__1::basic_ostream<char, std::__1::char_traits<char>
+  >& std::__1::__put_cha
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=38824
+
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  std::__1::basic_ostream<char, std::__1::char_traits<char> >& std::__1::__put_cha
+  ostream
+  std::__1::basic_ostream<char, std::__1::char_traits<char> >& std::__1::__put_cha
+modified: '2021-09-18T00:01:38.031778Z'
+published: '2021-09-18T00:01:38.031586Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=38824
+affected:
+- package:
+    name: simdjson
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/simdjson/simdjson.git
+    events:
+    - introduced: d28e5534d96a57aae44a6604aa08ab6cea36fa84
+    - fixed: 1dce4fed6e3432f6fca8d4b09dc4ca6a44823ee1
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []

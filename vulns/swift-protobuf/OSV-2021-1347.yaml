@@ -1,0 +1,33 @@
+id: OSV-2021-1347
+summary: 'Invalid-free in generic specialization <Swift.Int> of Swift.Array.subscript.getter
+  :'
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=39049
+
+  Crash type: Invalid-free
+  Crash state:
+  generic specialization <Swift.Int> of Swift.Array.subscript.getter :
+  SwiftProtobuf.
+  SwiftProtobuf.Google_Protobuf_Timestamp.decodeJSON
+modified: '2021-09-22T00:00:35.225114Z'
+published: '2021-09-22T00:00:35.224651Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=39049
+affected:
+- package:
+    name: swift-protobuf
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/apple/swift-protobuf.git
+    events:
+    - introduced: afe828b40394f68482167a14cc4d17fabb4c357c
+    - fixed: 32cdef52680fc5388f62c9c539a4fca8a34c4390
+  versions:
+  - 1.17.0
+  ecosystem_specific:
+    severity: null
+  database_specific:
+    fixed_range: b426152ab86132d40c26345db32b4310d7d80e0b:32cdef52680fc5388f62c9c539a4fca8a34c4390
+    introduced_range: bfe4255ff60f22a41cafa113059668571ed5d461:3bd5c56c26c0fddab8fcb6b2b06d773702bf1bfb

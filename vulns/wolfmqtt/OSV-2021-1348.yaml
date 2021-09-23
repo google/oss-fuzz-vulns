@@ -1,0 +1,29 @@
+id: OSV-2021-1348
+summary: Heap-buffer-overflow in MqttDecode_Disconnect
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=39053
+
+  Crash type: Heap-buffer-overflow WRITE 1
+  Crash state:
+  MqttDecode_Disconnect
+  MqttClient_DecodePacket
+  MqttClient_WaitType
+modified: '2021-09-22T00:00:38.609230Z'
+published: '2021-09-22T00:00:38.608969Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=39053
+affected:
+- package:
+    name: wolfmqtt
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/wolfSSL/wolfMQTT.git
+    events:
+    - introduced: 237f693c5731dcbd6adc9de69d9f575421c4414e
+    - fixed: 84d4b53122e0fa0280c7872350b89d5777dabbb2
+  versions:
+  - v1.9
+  ecosystem_specific:
+    severity: HIGH

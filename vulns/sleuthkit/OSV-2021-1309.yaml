@@ -1,0 +1,31 @@
+id: OSV-2021-1309
+summary: Heap-buffer-overflow in ext2fs_dinode_copy
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=38872
+
+  Crash type: Heap-buffer-overflow READ {*}
+  Crash state:
+  ext2fs_dinode_copy
+  ext2fs_inode_walk
+  tsk_fs_meta_walk
+modified: '2021-09-18T00:00:18.282174Z'
+published: '2021-09-18T00:00:18.281968Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=38872
+affected:
+- package:
+    name: sleuthkit
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/sleuthkit/sleuthkit
+    events:
+    - introduced: 126cbe2b7e7c9879ec1de7355369c06adbc27313
+    - fixed: 675093ee08b1cc970419946760ca6340edfca272
+  versions:
+  - sleuthkit-4.10.1
+  - sleuthkit-4.10.2
+  - sleuthkit-4.11.0
+  ecosystem_specific:
+    severity: MEDIUM

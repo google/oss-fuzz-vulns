@@ -1,0 +1,29 @@
+id: OSV-2021-1358
+summary: Heap-buffer-overflow in MqttClient_DecodePacket
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=39094
+
+  Crash type: Heap-buffer-overflow READ 8
+  Crash state:
+  MqttClient_DecodePacket
+  MqttClient_WaitType
+  MqttClient_Ping_ex
+modified: '2021-09-23T00:01:36.077212Z'
+published: '2021-09-23T00:01:36.076855Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=39094
+affected:
+- package:
+    name: wolfmqtt
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/wolfSSL/wolfMQTT.git
+    events:
+    - introduced: 237f693c5731dcbd6adc9de69d9f575421c4414e
+    - fixed: 84d4b53122e0fa0280c7872350b89d5777dabbb2
+  versions:
+  - v1.9
+  ecosystem_specific:
+    severity: MEDIUM

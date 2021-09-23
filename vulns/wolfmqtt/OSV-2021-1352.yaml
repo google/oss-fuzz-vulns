@@ -1,0 +1,29 @@
+id: OSV-2021-1352
+summary: UNKNOWN READ in MqttProps_Free
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=39070
+
+  Crash type: UNKNOWN READ
+  Crash state:
+  MqttProps_Free
+  MqttClient_Unsubscribe
+  wolfMQTTFuzzer::unsubscribe
+modified: '2021-09-22T00:01:28.525543Z'
+published: '2021-09-22T00:01:28.525327Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=39070
+affected:
+- package:
+    name: wolfmqtt
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/wolfSSL/wolfMQTT.git
+    events:
+    - introduced: 237f693c5731dcbd6adc9de69d9f575421c4414e
+    - fixed: 84d4b53122e0fa0280c7872350b89d5777dabbb2
+  versions:
+  - v1.9
+  ecosystem_specific:
+    severity: MEDIUM
