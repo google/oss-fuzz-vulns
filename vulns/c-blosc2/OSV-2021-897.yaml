@@ -1,0 +1,33 @@
+id: OSV-2021-897
+summary: Heap-buffer-overflow in ZSTD_decompressMultiFrame
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=35537
+
+  Crash type: Heap-buffer-overflow READ {*}
+  Crash state:
+  ZSTD_decompressMultiFrame
+  ZSTD_decompress_usingDDict
+  blosc_d
+modified: '2021-06-26T00:00:37.934613Z'
+published: '2021-06-26T00:00:37.934284Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=35537
+affected:
+- package:
+    name: c-blosc2
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/Blosc/c-blosc2.git
+    events:
+    - introduced: d1ea514286c47433dabcf47b11cf81d2248ca5bf
+  versions:
+  - v2.0.0
+  - v2.0.0-rc2
+  - v2.0.0.rc1
+  - v2.0.1
+  - v2.0.2
+  - v2.0.3
+  ecosystem_specific:
+    severity: MEDIUM
