@@ -1,0 +1,28 @@
+id: OSV-2021-1368
+summary: Stack-buffer-overflow in dispatch_print_error
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=39196
+
+  Crash type: Stack-buffer-overflow READ {*}
+  Crash state:
+  dispatch_print_error
+  internal_exr_parse_header
+  exr_start_read
+modified: '2021-09-25T00:00:17.537253Z'
+published: '2021-09-25T00:00:17.537038Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=39196
+affected:
+- package:
+    name: openexr
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/AcademySoftwareFoundation/openexr
+    events:
+    - introduced: 40eb606dc5e8b04b7634f8a4a15f44b4e2044191
+    - fixed: c4847d2e7bc6ca5047bc112ec441b1fa7fcff57c
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []

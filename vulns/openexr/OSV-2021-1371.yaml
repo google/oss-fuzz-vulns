@@ -1,0 +1,28 @@
+id: OSV-2021-1371
+summary: Heap-use-after-free in dispatch_print_error
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=39212
+
+  Crash type: Heap-use-after-free READ 6
+  Crash state:
+  dispatch_print_error
+  internal_exr_parse_header
+  exr_start_read
+modified: '2021-09-26T00:00:10.966353Z'
+published: '2021-09-26T00:00:10.966065Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=39212
+affected:
+- package:
+    name: openexr
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/AcademySoftwareFoundation/openexr
+    events:
+    - introduced: 40eb606dc5e8b04b7634f8a4a15f44b4e2044191
+    - fixed: 82f703a1dd030eb3f8cb9e207435ae914a36380a
+  ecosystem_specific:
+    severity: HIGH
+  versions: []

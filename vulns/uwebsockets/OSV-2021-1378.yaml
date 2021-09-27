@@ -1,0 +1,30 @@
+id: OSV-2021-1378
+summary: Container-overflow in std::__1::__function::__func<LLVMFuzzerTestOneInput::$_0,
+  std::__1::allocator<LL
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=39263
+
+  Crash type: Container-overflow READ 1
+  Crash state:
+  std::__1::__function::__func<LLVMFuzzerTestOneInput::$_0, std::__1::allocator<LL
+  std::__1::__function::__func<LLVMFuzzerTestOneInput::$_1, std::__1::allocator<LL
+  function.h
+modified: '2021-09-27T00:00:27.699856Z'
+published: '2021-09-27T00:00:27.699638Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=39263
+affected:
+- package:
+    name: uwebsockets
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/uNetworking/uWebSockets.git
+    events:
+    - introduced: 42438749674b17b5be7e9eaf6bddd0d6823e2091
+    - fixed: 42438749674b17b5be7e9eaf6bddd0d6823e2091
+  versions:
+  - v20.0.0
+  ecosystem_specific:
+    severity: MEDIUM
