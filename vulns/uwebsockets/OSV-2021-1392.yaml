@@ -1,0 +1,29 @@
+id: OSV-2021-1392
+summary: Container-overflow in std::__1::__function::__func<uWS::TemplatedApp<false>&&
+  uWS::TemplatedApp<false>
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=39354
+
+  Crash type: Container-overflow READ 1
+  Crash state:
+  std::__1::__function::__func<uWS::TemplatedApp<false>&& uWS::TemplatedApp<false>
+  uWS::TopicTree<uWS::TopicTreeMessage>::publish
+  ofats::any_detail::handler_traits<void, uWS::WebSocket<false, true, test
+modified: '2021-09-28T00:01:42.603165Z'
+published: '2021-09-28T00:01:42.602963Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=39354
+affected:
+- package:
+    name: uwebsockets
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/uNetworking/uWebSockets.git
+    events:
+    - introduced: a924404bed081bdfa94df54c79395285ca83644c
+    - fixed: 7a3bc47f753c192a54c11a3bfe826d1af8b92eda
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
