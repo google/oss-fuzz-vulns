@@ -1,0 +1,27 @@
+id: OSV-2021-1394
+summary: Use-after-poison in JS::Reference::put_value
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=39379
+
+  Crash type: Use-after-poison READ 8
+  Crash state:
+  JS::Reference::put_value
+  JS::AssignmentExpression::execute
+  JS::ExpressionStatement::execute
+modified: '2021-09-29T00:00:38.765793Z'
+published: '2021-09-29T00:00:38.765609Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=39379
+affected:
+- package:
+    name: serenity
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/SerenityOS/serenity
+    events:
+    - introduced: 9043041dd34e361d761313dcaba81f220e31b7de
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
