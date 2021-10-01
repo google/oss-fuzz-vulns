@@ -1,0 +1,28 @@
+id: OSV-2021-1381
+summary: Heap-buffer-overflow in OT::MathValueRecord::copy
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=39225
+
+  Crash type: Heap-buffer-overflow READ 4
+  Crash state:
+  OT::MathValueRecord::copy
+  OT::MathGlyphAssembly::subset
+  OT::MathGlyphConstruction::subset
+modified: '2021-09-27T00:01:25.283041Z'
+published: '2021-09-27T00:01:25.282839Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=39225
+affected:
+- package:
+    name: harfbuzz
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/harfbuzz/harfbuzz.git
+    events:
+    - introduced: ca7b9daef06fc515ec84cfb95e7204e9eef3f00e
+    - fixed: 794b00db4b63e8314aee96c23a20ecb878452eef
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
