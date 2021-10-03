@@ -8,7 +8,7 @@ details: |
   ZSTD_decompressMultiFrame
   ZSTD_decompress_usingDDict
   blosc_d
-modified: '2021-06-26T00:00:37.934613Z'
+modified: '2021-10-03T00:05:54.570096Z'
 published: '2021-06-26T00:00:37.934284Z'
 references:
 - type: REPORT
@@ -29,5 +29,6 @@ affected:
   - v2.0.1
   - v2.0.2
   - v2.0.3
+  - v2.0.4
   ecosystem_specific:
     severity: MEDIUM
