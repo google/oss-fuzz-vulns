@@ -8,7 +8,7 @@ details: |
   blosc_d
   do_job
   blosc_run_decompression_with_context
-modified: '2021-09-01T03:50:33.436215Z'
+modified: '2021-10-03T00:05:50.183446Z'
 published: '2021-03-02T00:01:22.540205Z'
 references:
 - type: REPORT
@@ -29,5 +29,6 @@ affected:
   - v2.0.1
   - v2.0.2
   - v2.0.3
+  - v2.0.4
   ecosystem_specific:
     severity: MEDIUM
