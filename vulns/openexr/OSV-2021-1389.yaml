@@ -1,0 +1,28 @@
+id: OSV-2021-1389
+summary: Negative-size-param in Imf_3_1::memstream_read
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=39329
+
+  Crash type: Negative-size-param
+  Crash state:
+  Imf_3_1::memstream_read
+  dispatch_read
+  exr_read_scanline_chunk_info
+modified: '2021-09-28T00:00:34.073522Z'
+published: '2021-09-28T00:00:34.073331Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=39329
+affected:
+- package:
+    name: openexr
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/AcademySoftwareFoundation/openexr
+    events:
+    - introduced: 40eb606dc5e8b04b7634f8a4a15f44b4e2044191
+    - fixed: 88536d465e7388f987d07fd8fdb10b5da194570c
+  ecosystem_specific:
+    severity: null
+  versions: []
