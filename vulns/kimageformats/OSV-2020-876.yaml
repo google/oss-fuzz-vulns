@@ -8,7 +8,7 @@ details: |
   XCFImageFormat::mergeRGBToRGB
   XCFImageFormat::mergeLayerIntoImage
   XCFImageFormat::loadLayer
-modified: '2021-09-12T00:04:49.604735Z'
+modified: '2021-10-04T00:05:27.537734Z'
 published: '2020-07-14T22:13:55.541274Z'
 references:
 - type: REPORT
@@ -60,5 +60,6 @@ affected:
   - v5.85.0
   - v5.86.0-rc1
   - v5.86.0
+  - v5.87.0-rc1
   ecosystem_specific:
     severity: MEDIUM
