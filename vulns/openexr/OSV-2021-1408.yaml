@@ -1,0 +1,28 @@
+id: OSV-2021-1408
+summary: Heap-buffer-overflow in unpack_16bit_4chan_planar
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=39532
+
+  Crash type: Heap-buffer-overflow WRITE {*}
+  Crash state:
+  unpack_16bit_4chan_planar
+  exr_decoding_run
+  Imf_3_1::checkCoreFile
+modified: '2021-10-04T00:01:38.482413Z'
+published: '2021-10-04T00:01:38.482183Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=39532
+affected:
+- package:
+    name: openexr
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/AcademySoftwareFoundation/openexr
+    events:
+    - introduced: 5ae1ec0fd948e9e1009093148126636b5bbce4d8
+    - fixed: 481bde4b2584ef018cca4a6538062efd0d5d0b88
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
