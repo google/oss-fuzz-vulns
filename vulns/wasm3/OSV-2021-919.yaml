@@ -1,0 +1,28 @@
+id: OSV-2021-919
+summary: UNKNOWN READ in v_FindFunction
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=35801
+
+  Crash type: UNKNOWN READ
+  Crash state:
+  v_FindFunction
+  m3_FindFunction
+  fuzzer.c
+modified: '2021-07-05T00:01:12.284218Z'
+published: '2021-07-05T00:01:12.283873Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=35801
+affected:
+- package:
+    name: wasm3
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/wasm3/wasm3
+    events:
+    - introduced: 555f3ee408e736dd331534d01c37b526a6085d36
+  versions:
+  - v0.5.0
+  ecosystem_specific:
+    severity: MEDIUM
