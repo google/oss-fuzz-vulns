@@ -8,7 +8,7 @@ details: |
   cpu_arm_exec_arm
   tcg_cpu_exec_arm
   tcg_exec_all_arm
-modified: '2021-06-21T06:56:25.214388Z'
+modified: '2021-10-05T00:05:44.773213Z'
 published: '2021-02-10T00:00:20.946004Z'
 references:
 - type: REPORT
@@ -28,5 +28,6 @@ affected:
   - 1.0.2-rc5
   - 1.0.2-rc6
   - 1.0.3
+  - 2.0.0-rc1
   ecosystem_specific:
     severity: MEDIUM
