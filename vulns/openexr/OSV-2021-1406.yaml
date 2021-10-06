@@ -1,0 +1,28 @@
+id: OSV-2021-1406
+summary: Heap-buffer-overflow in Imf_3_1::memstream_read
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=39542
+
+  Crash type: Heap-buffer-overflow WRITE {*}
+  Crash state:
+  Imf_3_1::memstream_read
+  dispatch_read
+  read_uncompressed_direct
+modified: '2021-10-04T00:00:13.690826Z'
+published: '2021-10-04T00:00:13.690629Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=39542
+affected:
+- package:
+    name: openexr
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/AcademySoftwareFoundation/openexr
+    events:
+    - introduced: 40eb606dc5e8b04b7634f8a4a15f44b4e2044191
+    - fixed: f68dc195ef2079793e2ea68f089adca902f0a4d8
+  ecosystem_specific:
+    severity: HIGH
+  versions: []

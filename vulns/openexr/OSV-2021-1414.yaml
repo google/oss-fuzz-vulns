@@ -1,0 +1,28 @@
+id: OSV-2021-1414
+summary: Heap-buffer-overflow in internal_huf_decompress
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=39601
+
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  internal_huf_decompress
+  internal_exr_undo_piz
+  default_decompress_chunk
+modified: '2021-10-06T00:01:27.953341Z'
+published: '2021-10-06T00:01:27.953116Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=39601
+affected:
+- package:
+    name: openexr
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/AcademySoftwareFoundation/openexr
+    events:
+    - introduced: 5ae1ec0fd948e9e1009093148126636b5bbce4d8
+    - fixed: f68dc195ef2079793e2ea68f089adca902f0a4d8
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
