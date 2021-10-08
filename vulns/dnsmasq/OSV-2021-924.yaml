@@ -8,7 +8,7 @@ details: |
   check_bad_address
   check_for_bogus_wildcard
   FuzzCheckForBogusWildcard
-modified: '2021-07-08T00:00:12.086525Z'
+modified: '2021-10-08T00:05:23.820623Z'
 published: '2021-07-08T00:00:12.086205Z'
 references:
 - type: REPORT
@@ -33,5 +33,6 @@ affected:
   - v2.87test1
   - v2.87test2
   - v2.87test3
+  - v2.87test4
   ecosystem_specific:
     severity: HIGH
