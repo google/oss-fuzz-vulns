@@ -8,7 +8,7 @@ details: |
   extract_name
   hash_questions
   fuzz_util.c
-modified: '2021-07-08T00:00:32.007322Z'
+modified: '2021-10-08T00:05:25.293531Z'
 published: '2021-07-08T00:00:32.006993Z'
 references:
 - type: REPORT
@@ -33,5 +33,6 @@ affected:
   - v2.87test1
   - v2.87test2
   - v2.87test3
+  - v2.87test4
   ecosystem_specific:
     severity: HIGH
