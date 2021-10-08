@@ -1,0 +1,28 @@
+id: OSV-2021-1422
+summary: Heap-buffer-overflow in fr_dns_label_uncompressed_length
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=39657
+
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  fr_dns_label_uncompressed_length
+  decode_value_trampoline
+  fr_struct_from_network
+modified: '2021-10-08T00:00:31.482584Z'
+published: '2021-10-08T00:00:31.482387Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=39657
+affected:
+- package:
+    name: freeradius
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/FreeRADIUS/freeradius-server.git
+    events:
+    - introduced: 3882a233ede1ece51e5b6ebdc3c90b37ccc7223a
+    - fixed: 1def06002d0722f02e396ee83e900ee4a011ad4d
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []

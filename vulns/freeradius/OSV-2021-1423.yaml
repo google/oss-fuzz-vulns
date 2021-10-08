@@ -1,0 +1,28 @@
+id: OSV-2021-1423
+summary: Heap-buffer-overflow in fr_struct_from_network
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=39660
+
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  fr_struct_from_network
+  fr_struct_from_network
+  decode_record
+modified: '2021-10-08T00:00:48.266933Z'
+published: '2021-10-08T00:00:48.266734Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=39660
+affected:
+- package:
+    name: freeradius
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/FreeRADIUS/freeradius-server.git
+    events:
+    - introduced: 1bbab6c778b08fde6e35e06777230f80277f9ffd
+    - fixed: 8ac5bbfbbc5dff69d0344c9aa815669e9a3fa105
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []

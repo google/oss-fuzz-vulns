@@ -1,0 +1,28 @@
+id: OSV-2021-1417
+summary: Heap-buffer-overflow in openhtj2k::T1OpenHTJ2K::decompress
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=39632
+
+  Crash type: Heap-buffer-overflow WRITE 4
+  Crash state:
+  openhtj2k::T1OpenHTJ2K::decompress
+  std::__1::__packaged_task_func<std::__1::__bind<grk::T1DecompressScheduler::deco
+  std::__1::packaged_task<int
+modified: '2021-10-07T00:00:22.505809Z'
+published: '2021-10-07T00:00:22.505600Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=39632
+affected:
+- package:
+    name: grok
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/GrokImageCompression/grok.git
+    events:
+    - introduced: 9c466c61a86ffc12f4890b0ff80717d4a9909015
+    - fixed: b9e67bcc7b62d2d4490357a6d49d240e892b061c
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
