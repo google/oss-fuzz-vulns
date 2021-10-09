@@ -8,7 +8,7 @@ details: |
   print_mac
   log_packet
   dhcp_reply
-modified: '2021-07-08T00:01:26.369858Z'
+modified: '2021-10-09T00:07:27.426059Z'
 published: '2021-07-08T00:01:26.369555Z'
 references:
 - type: REPORT
@@ -33,5 +33,6 @@ affected:
   - v2.87test1
   - v2.87test2
   - v2.87test3
+  - v2.87test4
   ecosystem_specific:
     severity: HIGH
