@@ -1,0 +1,30 @@
+id: OSV-2021-1413
+summary: UNKNOWN READ in helper_uc_tracecode
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=39559
+
+  Crash type: UNKNOWN READ
+  Crash state:
+  helper_uc_tracecode
+modified: '2021-10-05T00:01:45.386353Z'
+published: '2021-10-05T00:01:45.386128Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=39559
+affected:
+- package:
+    name: unicorn
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/unicorn-engine/unicorn.git
+    events:
+    - introduced: 34ddafcbcf6d16508a63623a68715394ea4e12d8
+    - fixed: 3fadb5aa5aad22926f5f816dbe396f8661990374
+  versions:
+  - 1.0.3
+  - 2.0.0-rc1
+  - 2.0.0-rc2
+  - 2.0.0-rc3
+  ecosystem_specific:
+    severity: MEDIUM

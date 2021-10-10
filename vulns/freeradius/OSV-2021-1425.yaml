@@ -1,0 +1,28 @@
+id: OSV-2021-1425
+summary: Heap-buffer-overflow in fr_dns_label_to_value_box
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=39689
+
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  fr_dns_label_to_value_box
+  decode_value_trampoline
+  fr_struct_from_network
+modified: '2021-10-09T00:00:09.054394Z'
+published: '2021-10-09T00:00:09.054154Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=39689
+affected:
+- package:
+    name: freeradius
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/FreeRADIUS/freeradius-server.git
+    events:
+    - introduced: 3882a233ede1ece51e5b6ebdc3c90b37ccc7223a
+    - fixed: 66e59da0336526c1f2d2d49aa12838b26d0e8240
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []

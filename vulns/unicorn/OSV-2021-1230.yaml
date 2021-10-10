@@ -1,0 +1,39 @@
+id: OSV-2021-1230
+summary: UNKNOWN READ in helper_ret_stb_mmu_x86_64
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=38438
+
+  Crash type: UNKNOWN READ
+  Crash state:
+  helper_ret_stb_mmu_x86_64
+  resume_all_vcpus_x86_64
+  vm_start_x86_64
+modified: '2021-09-12T00:00:11.430374Z'
+published: '2021-09-12T00:00:11.430175Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=38438
+affected:
+- package:
+    name: unicorn
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/unicorn-engine/unicorn.git
+    events:
+    - introduced: 5bf6d77e4ee258c67c2d7ead94cf266a7b9773e7
+    - fixed: 3fadb5aa5aad22926f5f816dbe396f8661990374
+  versions:
+  - 1.0.2
+  - 1.0.2-rc1
+  - 1.0.2-rc2
+  - 1.0.2-rc3
+  - 1.0.2-rc4
+  - 1.0.2-rc5
+  - 1.0.2-rc6
+  - 1.0.3
+  - 2.0.0-rc1
+  - 2.0.0-rc2
+  - 2.0.0-rc3
+  ecosystem_specific:
+    severity: MEDIUM

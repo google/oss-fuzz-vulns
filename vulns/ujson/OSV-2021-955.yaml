@@ -1,0 +1,30 @@
+id: OSV-2021-955
+summary: Stack-buffer-overflow in Buffer_AppendIndentUnchecked
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=36009
+
+  Crash type: Stack-buffer-overflow WRITE 1
+  Crash state:
+  Buffer_AppendIndentUnchecked
+  encode
+  encode
+modified: '2021-07-11T00:01:05.153988Z'
+published: '2021-07-11T00:01:05.153778Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=36009
+affected:
+- package:
+    name: ujson
+    ecosystem: PyPI
+  ranges:
+  - type: GIT
+    repo: https://github.com/ultrajson/ultrajson.git
+    events:
+    - introduced: a920bfa9d85bcd78836b866d1be80c1e3dcca1da
+  versions:
+  - 4.0.2
+  - 4.1.0
+  - 4.2.0
+  ecosystem_specific:
+    severity: HIGH
