@@ -9,7 +9,7 @@ details: |
   draco::MeshPredictionSchemeTexCoordsDecoder<int, draco::PredictionSchemeWrapDeco
   draco::MeshPredictionSchemeTexCoordsDecoder<int, draco::PredictionSchemeWrapDeco
   draco::SequentialIntegerAttributeDecoder::DecodeIntegerValues
-modified: '2021-06-23T06:31:10.580334Z'
+modified: '2021-10-13T00:04:53.407729Z'
 published: '2021-03-03T00:00:23.252114Z'
 references:
 - type: REPORT
@@ -26,6 +26,7 @@ affected:
   versions:
   - 1.4.0
   - 1.4.1
+  - 1.4.3
   ecosystem_specific:
     severity: HIGH
     introduced_range: aef4bfbd61798ecc21d94c873b679fbdeaf92462:79601d2d060be52e673a82ed1c46f4666eb28255
