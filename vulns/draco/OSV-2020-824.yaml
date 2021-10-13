@@ -9,7 +9,7 @@ details: |
   std::__1::_MetaBase<__can_be_converted_to_string_view<char, std::__1::char_trait
   bool std::__1::operator<<char, std::__1::char_traits<char>, std::__1::allocator<
   std::__1::__tree_iterator<std::__1::__value_type<std::__1::basic_string<char, st
-modified: '2021-06-23T06:31:09.949279Z'
+modified: '2021-10-13T00:05:23.319743Z'
 published: '2020-07-14T05:37:49.054851Z'
 references:
 - type: REPORT
@@ -26,6 +26,7 @@ affected:
   versions:
   - 1.4.0
   - 1.4.1
+  - 1.4.3
   ecosystem_specific:
     severity: MEDIUM
     introduced_range: aef4bfbd61798ecc21d94c873b679fbdeaf92462:79601d2d060be52e673a82ed1c46f4666eb28255
