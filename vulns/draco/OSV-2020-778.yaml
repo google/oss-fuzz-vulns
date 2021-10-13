@@ -9,7 +9,7 @@ details: |
   void draco::Metadata::AddEntry<std::__1::vector<unsigned char, std::__1::allocat
   draco::MetadataDecoder::DecodeEntry
   draco::MetadataDecoder::DecodeMetadata
-modified: '2021-06-23T06:31:10.263910Z'
+modified: '2021-10-13T00:05:05.064585Z'
 published: '2020-07-14T05:37:30.449855Z'
 references:
 - type: REPORT
@@ -26,6 +26,7 @@ affected:
   versions:
   - 1.4.0
   - 1.4.1
+  - 1.4.3
   ecosystem_specific:
-    introduced_range: aef4bfbd61798ecc21d94c873b679fbdeaf92462:79601d2d060be52e673a82ed1c46f4666eb28255
     severity: HIGH
+    introduced_range: aef4bfbd61798ecc21d94c873b679fbdeaf92462:79601d2d060be52e673a82ed1c46f4666eb28255
