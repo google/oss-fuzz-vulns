@@ -1,0 +1,29 @@
+id: OSV-2021-1261
+summary: UNKNOWN READ in kh_get_ucl_hash_node
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=38660
+
+  Crash type: UNKNOWN READ
+  Crash state:
+  kh_get_ucl_hash_node
+  ucl_hash_search
+  ucl_inherit_handler
+modified: '2021-09-15T00:00:41.384547Z'
+published: '2021-09-15T00:00:41.384284Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=38660
+affected:
+- package:
+    name: libucl
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/vstakhov/libucl
+    events:
+    - introduced: b56171afae328bb605aa5aafbab9331e3e34b03e
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: be59572d66b2cf547d743277599781ef87ddaad9:95df30cf3e35788c08be537a1623499c98415674
+  versions: []
