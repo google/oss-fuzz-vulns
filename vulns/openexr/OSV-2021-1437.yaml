@@ -1,0 +1,28 @@
+id: OSV-2021-1437
+summary: Heap-buffer-overflow in unpack_32bit
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=39799
+
+  Crash type: Heap-buffer-overflow WRITE 4
+  Crash state:
+  unpack_32bit
+  exr_decoding_run
+  Imf_3_1::checkCoreFile
+modified: '2021-10-11T00:01:37.363491Z'
+published: '2021-10-11T00:01:37.363287Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=39799
+affected:
+- package:
+    name: openexr
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/AcademySoftwareFoundation/openexr
+    events:
+    - introduced: 5ae1ec0fd948e9e1009093148126636b5bbce4d8
+    - fixed: b39b63a1d2989a90655cd9b02b0fe8af8cd8c017
+  ecosystem_specific:
+    severity: HIGH
+  versions: []

@@ -1,0 +1,28 @@
+id: OSV-2021-1427
+summary: Global-buffer-overflow in fr_base16_decode_nstd
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=39699
+
+  Crash type: Global-buffer-overflow READ 1
+  Crash state:
+  fr_base16_decode_nstd
+  fr_value_box_from_str
+  fr_pair_value_from_str
+modified: '2021-10-09T00:01:36.586451Z'
+published: '2021-10-09T00:01:36.586243Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=39699
+affected:
+- package:
+    name: freeradius
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/FreeRADIUS/freeradius-server.git
+    events:
+    - introduced: 6c6878ce4cdc5ac58e5115553656e05c9695544e
+    - fixed: 20e38cd1ba068cc86de12949dadcf9668f989ef8
+  ecosystem_specific:
+    severity: null
+  versions: []
