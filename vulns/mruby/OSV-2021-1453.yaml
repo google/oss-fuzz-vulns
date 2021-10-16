@@ -1,0 +1,28 @@
+id: OSV-2021-1453
+summary: Heap-buffer-overflow in mrb_funcall_with_block
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=39931
+
+  Crash type: Heap-buffer-overflow WRITE 8
+  Crash state:
+  mrb_funcall_with_block
+  mrb_funcall_id
+  mrb_equal
+modified: '2021-10-15T00:01:35.957042Z'
+published: '2021-10-15T00:01:35.956841Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=39931
+affected:
+- package:
+    name: mruby
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/mruby/mruby
+    events:
+    - introduced: dccd66f9efecd0a974b735c62836fe566015cf37
+    - fixed: 7010ed0f0a414b1367e4620a504f106759341cc2
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
