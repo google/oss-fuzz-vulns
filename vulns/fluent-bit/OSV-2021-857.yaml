@@ -8,7 +8,7 @@ details: |
   mk_string_copy_substr
   mk_rconf_meta_add
   mk_rconf_read
-modified: '2021-10-09T00:08:11.022074Z'
+modified: '2021-10-20T00:06:23.372641Z'
 published: '2021-06-14T00:00:34.638360Z'
 references:
 - type: REPORT
@@ -34,5 +34,7 @@ affected:
   - v1.8.6
   - v1.8.7
   - v1.8.8
+  - 1.8.9-dev-6b56f51
+  - v1.8.9-dev-6b56f51
   ecosystem_specific:
     severity: MEDIUM
