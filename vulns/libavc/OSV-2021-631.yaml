@@ -8,7 +8,7 @@ details: |
   ih264d_decode_slice_thread
   ih264d_decode_picture_thread
   clone
-modified: '2021-10-06T00:05:30.084881Z'
+modified: '2021-10-20T00:04:16.289740Z'
 published: '2021-04-13T00:00:57.946Z'
 references:
 - type: REPORT
@@ -69,5 +69,6 @@ affected:
   - android-mainline-11.0.0_r44
   - android-vts-12.0_r1
   - android-11.0.0_r46
+  - android-12.0.0_r3
   ecosystem_specific:
     severity: HIGH
