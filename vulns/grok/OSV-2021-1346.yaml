@@ -8,7 +8,7 @@ details: |
   state_VLC_dec::load_bytes
   state_VLC_dec::state_VLC_dec
   htj2k_decode
-modified: '2021-09-22T00:00:11.187965Z'
+modified: '2021-10-21T00:07:25.326032Z'
 published: '2021-09-22T00:00:11.187759Z'
 references:
 - type: REPORT
@@ -22,6 +22,8 @@ affected:
     repo: https://github.com/GrokImageCompression/grok.git
     events:
     - introduced: 9c466c61a86ffc12f4890b0ff80717d4a9909015
+  versions:
+  - v9.5.0
+  - v9.5.0.debian
   ecosystem_specific:
     severity: MEDIUM
-  versions: []
