@@ -8,7 +8,7 @@ details: |
   grk::Quantizer::read_SQcd_SQcc
   grk::CodeStreamDecompress::read_qcd
   grk::CodeStreamDecompress::process_marker
-modified: '2021-08-20T00:02:18.295651Z'
+modified: '2021-10-21T00:07:40.192939Z'
 published: '2021-02-28T00:01:15.686942Z'
 references:
 - type: REPORT
@@ -31,5 +31,7 @@ affected:
   - v9.2.0
   - v9.3.0
   - v9.4.0
+  - v9.5.0
+  - v9.5.0.debian
   ecosystem_specific:
     severity: MEDIUM
