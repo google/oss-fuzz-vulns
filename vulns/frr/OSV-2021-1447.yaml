@@ -1,0 +1,28 @@
+id: OSV-2021-1447
+summary: UNKNOWN READ
+details: |-
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=39900
+
+  Crash type: UNKNOWN READ
+  Crash state:
+  NULL
+modified: '2021-10-14T00:00:18.116327Z'
+published: '2021-10-14T00:00:18.116118Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=39900
+affected:
+- package:
+    name: frr
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/FRRouting/frr
+    events:
+    - introduced: f4b9fde3e7be9bcb854ae2a8680ecd67b07fdd82
+    - fixed: 40b8eba6f331038b2bc45f85f329cede50e44f94
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: 892114bea7a474276f3dc8427b0e1ba009f6f4b7:3a4438a8d713a3f65792ff66c220221818a11f22
+  versions: []

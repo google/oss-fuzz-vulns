@@ -1,0 +1,28 @@
+id: OSV-2021-1470
+summary: Heap-buffer-overflow in hufDecode
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=40091
+
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  hufDecode
+  internal_huf_decompress
+  internal_exr_undo_piz
+modified: '2021-10-21T00:00:36.107417Z'
+published: '2021-10-21T00:00:36.107139Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=40091
+affected:
+- package:
+    name: openexr
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/AcademySoftwareFoundation/openexr
+    events:
+    - introduced: 5ae1ec0fd948e9e1009093148126636b5bbce4d8
+    - fixed: 268c4759630207b4cffed54cb5b173b054446ccf
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []

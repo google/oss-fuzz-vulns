@@ -1,0 +1,26 @@
+id: OSV-2021-1179
+summary: UNKNOWN READ
+details: |-
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=37759
+
+  Crash type: UNKNOWN READ
+  Crash state:
+  NULL
+modified: '2021-08-30T00:00:39.163692Z'
+published: '2021-08-30T00:00:39.163462Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=37759
+affected:
+- package:
+    name: net-snmp
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/net-snmp/net-snmp
+    events:
+    - introduced: 0c7cf9c46d00a3b52c1fc4255375a06df18e17cb
+    - fixed: d9cab398b816a610bb6de98e7a0b1e71e5ebff76
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
