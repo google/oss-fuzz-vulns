@@ -1,0 +1,27 @@
+id: OSV-2021-1472
+summary: UNKNOWN WRITE in h3NeighborRotations
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=40106
+
+  Crash type: UNKNOWN WRITE
+  Crash state:
+  h3NeighborRotations
+  h3_fuzzer.c
+modified: '2021-10-21T00:01:21.968196Z'
+published: '2021-10-21T00:01:21.968011Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=40106
+affected:
+- package:
+    name: h3
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/uber/h3
+    events:
+    - introduced: 583de2fe5f6a68cb0040a955d87f16f9b9478e15
+    - fixed: 583de2fe5f6a68cb0040a955d87f16f9b9478e15
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
