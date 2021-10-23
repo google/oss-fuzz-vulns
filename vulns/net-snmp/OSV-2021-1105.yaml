@@ -1,0 +1,27 @@
+id: OSV-2021-1105
+summary: Heap-buffer-overflow in read_config
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=36908
+
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  read_config
+  snmp_config_fuzzer.c
+modified: '2021-08-07T00:03:09.707216Z'
+published: '2021-08-07T00:03:09.706987Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=36908
+affected:
+- package:
+    name: net-snmp
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/net-snmp/net-snmp
+    events:
+    - introduced: 21ee65f8bac93d336e0b472dd3ccf44b3b32f2af
+    - fixed: 4f4a37ee1825d8e723364af6ec84c109594cd29c
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
