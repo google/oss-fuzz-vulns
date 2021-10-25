@@ -1,0 +1,30 @@
+id: OSV-2021-1442
+summary: Heap-use-after-free in find_es_header
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=39842
+
+  Crash type: Heap-use-after-free READ 4
+  Crash state:
+  find_es_header
+  analyze_chunk
+  probe_stream
+modified: '2021-10-12T00:01:42.721416Z'
+published: '2021-10-12T00:01:42.721228Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=39842
+affected:
+- package:
+    name: vlc
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/videolan/vlc
+    events:
+    - introduced: 93f9e618f8722b4c93d9523fa517e8afa758d110
+    - fixed: 8a01a37c61fa5bb8b5d085e36032a2a2fb7fbf17
+  ecosystem_specific:
+    severity: HIGH
+  database_specific:
+    fixed_range: d5102812dab5e94b1c8da2b71faf8db7601063d3:8a01a37c61fa5bb8b5d085e36032a2a2fb7fbf17
+  versions: []
