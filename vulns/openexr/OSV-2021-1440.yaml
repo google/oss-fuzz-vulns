@@ -8,7 +8,7 @@ details: |
   internal_huf_decompress
   internal_exr_undo_piz
   default_decompress_chunk
-modified: '2021-10-12T00:01:30.701410Z'
+modified: '2021-10-25T00:06:17.609621Z'
 published: '2021-10-12T00:01:30.701207Z'
 references:
 - type: REPORT
@@ -23,6 +23,8 @@ affected:
     events:
     - introduced: 5ae1ec0fd948e9e1009093148126636b5bbce4d8
     - fixed: 9d05d50eddacf4c5afac725617e12dfb5407e3cb
+    - introduced: 526d92aa76bc79556d73c4e01ac2c2100a601ed4
+    - fixed: 6c129349e37a094ab2ce515b00f0fc5f276d09d8
   ecosystem_specific:
     severity: MEDIUM
   versions: []
