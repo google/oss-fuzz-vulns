@@ -8,7 +8,7 @@ details: |
   eval_expr
   eval_binary
   eval_expr
-modified: '2021-06-21T06:56:21.433912Z'
+modified: '2021-10-25T00:06:53.006279Z'
 published: '2020-07-29T00:00:39.727472Z'
 references:
 - type: REPORT
@@ -22,5 +22,7 @@ affected:
     repo: https://github.com/hercules-team/augeas
     events:
     - introduced: 9c52a0b258f77394c9ade6c032e00b49bd01f949
+  versions:
+  - release-1.13.0
   ecosystem_specific:
     severity: MEDIUM
