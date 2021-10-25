@@ -8,7 +8,7 @@ details: |
   Imf_3_1::memstream_read
   dispatch_read
   read_uncompressed_direct
-modified: '2021-10-15T00:00:15.606655Z'
+modified: '2021-10-25T00:06:18.044133Z'
 published: '2021-10-15T00:00:15.606456Z'
 references:
 - type: REPORT
@@ -23,6 +23,8 @@ affected:
     events:
     - introduced: 5ae1ec0fd948e9e1009093148126636b5bbce4d8
     - fixed: b39b63a1d2989a90655cd9b02b0fe8af8cd8c017
+    - introduced: 526d92aa76bc79556d73c4e01ac2c2100a601ed4
+    - fixed: 8b65408c5db588eb4ec7e0563040b1ce356c6691
   ecosystem_specific:
     severity: HIGH
   versions: []
