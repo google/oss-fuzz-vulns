@@ -8,7 +8,7 @@ details: |
   hufDecode
   internal_huf_decompress
   internal_exr_undo_piz
-modified: '2021-10-21T00:00:36.107417Z'
+modified: '2021-10-26T00:04:41.282788Z'
 published: '2021-10-21T00:00:36.107139Z'
 references:
 - type: REPORT
@@ -23,6 +23,8 @@ affected:
     events:
     - introduced: 5ae1ec0fd948e9e1009093148126636b5bbce4d8
     - fixed: 268c4759630207b4cffed54cb5b173b054446ccf
+    - introduced: 526d92aa76bc79556d73c4e01ac2c2100a601ed4
+    - fixed: 9bb2d70d8325f6db48b8b7aab0492b62a6259317
   ecosystem_specific:
     severity: MEDIUM
   versions: []
