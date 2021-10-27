@@ -1,0 +1,28 @@
+id: OSV-2021-1061
+summary: UNKNOWN WRITE in CompileBlock
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=36551
+
+  Crash type: UNKNOWN WRITE
+  Crash state:
+  CompileBlock
+  CompileElseBlock
+  Compile_If
+modified: '2021-07-26T00:00:19.072888Z'
+published: '2021-07-26T00:00:19.072681Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=36551
+affected:
+- package:
+    name: wasm3
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/wasm3/wasm3
+    events:
+    - introduced: 1aa41b90649a44cde14e3700e11f7feb4c9865fe
+  versions:
+  - v0.5.0
+  ecosystem_specific:
+    severity: HIGH
