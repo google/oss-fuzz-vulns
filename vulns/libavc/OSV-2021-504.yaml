@@ -8,7 +8,7 @@ details: |
   ih264d_mark_err_slice_skip
   ih264d_video_decode
   ih264d_api_function
-modified: '2021-10-20T00:03:54.134365Z'
+modified: '2021-10-28T00:07:11.523538Z'
 published: '2021-03-07T00:00:59.495834Z'
 references:
 - type: REPORT
@@ -70,5 +70,6 @@ affected:
   - android-vts-12.0_r1
   - android-11.0.0_r46
   - android-12.0.0_r3
+  - android-s-v2-preview-1
   ecosystem_specific:
     severity: HIGH
