@@ -8,7 +8,7 @@ details: |
   icu_64::UCharsTrie::branchNext
   icu_64::UCharsTrie::nextImpl
   icu_64::UCharsTrie::next
-modified: '2021-10-26T00:16:49.356030Z'
+modified: '2021-10-29T00:19:56.773040Z'
 published: '2020-07-14T22:13:50.019093Z'
 references:
 - type: REPORT
@@ -49,5 +49,6 @@ affected:
   - cldr/2021-09-29
   - cldr/2021-10-19
   - cldr/2021-10-25
+  - release-70-1
   ecosystem_specific:
     severity: MEDIUM
