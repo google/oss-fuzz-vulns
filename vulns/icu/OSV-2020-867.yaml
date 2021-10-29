@@ -8,7 +8,7 @@ details: |
   icu_64::CollationIterator::appendCEsFromCE32
   icu_64::DataBuilderCollationIterator::fetchCEs
   icu_64::CollationDataBuilder::getCEs
-modified: '2021-10-26T00:36:35.608364Z'
+modified: '2021-10-29T00:39:41.327815Z'
 published: '2020-07-14T22:13:50.339661Z'
 references:
 - type: REPORT
@@ -49,5 +49,6 @@ affected:
   - cldr/2021-09-29
   - cldr/2021-10-19
   - cldr/2021-10-25
+  - release-70-1
   ecosystem_specific:
     severity: MEDIUM
