@@ -1,0 +1,30 @@
+id: OSV-2021-1076
+summary: UNKNOWN READ in ParseXMLElement
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=36671
+
+  Crash type: UNKNOWN READ
+  Crash state:
+  ParseXMLElement
+  prvTidyParseXMLDocument
+  prvTidyDocParseStream
+modified: '2021-07-31T00:00:13.254999Z'
+published: '2021-07-31T00:00:13.254766Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=36671
+affected:
+- package:
+    name: tidy-html5
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/htacg/tidy-html5.git
+    events:
+    - introduced: ab6b76dae9083a71d507a6729f6d966cbf996330
+  versions:
+  - 5.9.14-next
+  - 5.9.8-next
+  - 5.9.9-next
+  ecosystem_specific:
+    severity: MEDIUM

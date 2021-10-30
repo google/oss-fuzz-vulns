@@ -1,0 +1,27 @@
+id: OSV-2021-1510
+summary: Heap-buffer-overflow in WriteRingBuffer
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=40449
+
+  Crash type: Heap-buffer-overflow WRITE {*}
+  Crash state:
+  WriteRingBuffer
+  BrotliDecoderDecompressStream
+  jxl::JxlBoxContentDecoder::Process
+modified: '2021-10-30T00:01:37.386236Z'
+published: '2021-10-30T00:01:37.386031Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=40449
+affected:
+- package:
+    name: libjxl
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/libjxl/libjxl.git
+    events:
+    - introduced: f0b9147ee57805c4ab45abdf8d72e2da9c5a951c
+  ecosystem_specific:
+    severity: HIGH
+  versions: []

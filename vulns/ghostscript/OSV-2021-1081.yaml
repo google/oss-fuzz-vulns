@@ -1,0 +1,48 @@
+id: OSV-2021-1081
+summary: Heap-use-after-free in gx_pattern_accum_finalize_cw
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=36714
+
+  Crash type: Heap-use-after-free READ 8
+  Crash state:
+  gx_pattern_accum_finalize_cw
+  gx_device_finalize
+  gc_objects_set_reloc
+modified: '2021-08-01T00:00:15.709997Z'
+published: '2021-08-01T00:00:15.709805Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=36714
+affected:
+- package:
+    name: ghostscript
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: git://git.ghostscript.com/ghostpdl.git
+    events:
+    - introduced: 6cd65db61b4285365b930adad85c0ca0c54a7dc4
+    - introduced: 4d2bf7b009922bef2efdbc3d0c8dcfe5d3a8cdb0
+  versions:
+  - ghostpdl-9.54.0
+  - ghostpdl-9.55-test-base-0
+  - ghostpdl-9.55.0
+  - ghostpdl-9.55.0rc1
+  - ghostpdl-9.56.0-test-base-0
+  - gpdf_alpha1
+  - gpdf_gs_text_filter_019
+  - gpdf_gs_text_filter_020
+  - gpdf_gs_text_filter_021
+  - gpdf_gs_text_filter_022
+  - gpdf_gs_text_filter_023
+  - gpdf_gs_text_filter_024
+  - gpdf_gs_text_filter_026
+  - gpdf_gs_text_filter_027
+  - gpdf_gs_text_filter_028
+  - gpdf_gs_text_filter_029
+  - gpdf_gs_text_filter_030
+  - gpdf_gs_text_filter_031
+  - gpdf_gs_text_filter_032
+  - robin_test_ref
+  ecosystem_specific:
+    severity: HIGH
