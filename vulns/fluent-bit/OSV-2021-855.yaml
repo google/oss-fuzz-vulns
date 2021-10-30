@@ -8,7 +8,7 @@ details: |
   mk_rconf_read
   mk_rconf_open
   flb_parser_conf_file
-modified: '2021-10-20T00:06:26.167388Z'
+modified: '2021-10-30T00:06:38.512407Z'
 published: '2021-06-14T00:00:18.084172Z'
 references:
 - type: REPORT
@@ -36,5 +36,6 @@ affected:
   - v1.8.8
   - 1.8.9-dev-6b56f51
   - v1.8.9-dev-6b56f51
+  - v1.8.9
   ecosystem_specific:
     severity: MEDIUM
