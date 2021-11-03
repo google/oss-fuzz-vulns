@@ -19,10 +19,12 @@ affected:
     ecosystem: OSS-Fuzz
   ranges:
   - type: GIT
-    repo: git://code.qt.io/qt/qt5.git
+    repo: git://code.qt.io/qt/qtsvg.git
     events:
-    - introduced: dcab4e83f35a7972ed0b565f02efc864d5f28df7
-    - fixed: 3b6c8eea207f42c561088395b80c64e5f82f7169
+    - introduced: '0'
+    - fixed: a3b753c2d077313fc9eb93af547051b956e383fc
+    - fixed: 79bb9f51fa374106a612d17c9d98d35d807be670
+    - fixed: 36cfd9efb9b22b891adee9c48d30202289cfa620
   ecosystem_specific:
     severity: HIGH
   database_specific:
