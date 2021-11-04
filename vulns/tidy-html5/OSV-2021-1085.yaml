@@ -1,0 +1,30 @@
+id: OSV-2021-1085
+summary: Stack-buffer-overflow in strcat
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=36743
+
+  Crash type: Stack-buffer-overflow WRITE {*}
+  Crash state:
+  strcat
+  prvTidystrrep
+  tidyMessageCreateInitV
+modified: '2021-08-02T00:00:16.885240Z'
+published: '2021-08-02T00:00:16.885038Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=36743
+affected:
+- package:
+    name: tidy-html5
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/htacg/tidy-html5.git
+    events:
+    - introduced: 68a3d81d027e0a712bf3c6b93d5e135bd9277bd3
+  versions:
+  - 5.9.14-next
+  - 5.9.8-next
+  - 5.9.9-next
+  ecosystem_specific:
+    severity: HIGH
