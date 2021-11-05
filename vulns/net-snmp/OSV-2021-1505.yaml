@@ -1,0 +1,28 @@
+id: OSV-2021-1505
+summary: Heap-buffer-overflow in asn_build_string
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=40429
+
+  Crash type: Heap-buffer-overflow READ {*}
+  Crash state:
+  asn_build_string
+  snmpv3_packet_build
+  snmp_build
+modified: '2021-10-29T00:01:41.651863Z'
+published: '2021-10-29T00:01:41.651682Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=40429
+affected:
+- package:
+    name: net-snmp
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/net-snmp/net-snmp
+    events:
+    - introduced: 8babb2d078f83a4956c7cf70a013c80f78e6f71d
+    - fixed: abd1c594422eefed24c9586724d58525a7628226
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []

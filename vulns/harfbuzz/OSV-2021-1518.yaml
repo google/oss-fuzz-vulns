@@ -1,0 +1,29 @@
+id: OSV-2021-1518
+summary: UNKNOWN READ in bool OT::OffsetTo<OT::ClipBox, OT::IntType<unsigned int,
+  3u>, true>::serialize_c
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=40540
+
+  Crash type: UNKNOWN READ
+  Crash state:
+  bool OT::OffsetTo<OT::ClipBox, OT::IntType<unsigned int, 3u>, true>::serialize_c
+  OT::ClipList::serialize_clip_records
+  OT::ClipList::subset
+modified: '2021-11-01T00:01:38.720701Z'
+published: '2021-11-01T00:01:38.720506Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=40540
+affected:
+- package:
+    name: harfbuzz
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/harfbuzz/harfbuzz.git
+    events:
+    - introduced: 8c583db9b5c63dc790f6553044b8915e1f5906bb
+    - fixed: 0a7563a53ffedd735cb41c03f697269ef48f0ec2
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []

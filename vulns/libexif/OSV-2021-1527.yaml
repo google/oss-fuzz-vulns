@@ -1,0 +1,28 @@
+id: OSV-2021-1527
+summary: UNKNOWN READ in exif_mnote_data_canon_load
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=40623
+
+  Crash type: UNKNOWN READ
+  Crash state:
+  exif_mnote_data_canon_load
+  exif_mnote_data_load
+  interpret_maker_note
+modified: '2021-11-04T00:00:08.421427Z'
+published: '2021-11-04T00:00:08.421183Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=40623
+affected:
+- package:
+    name: libexif
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/libexif/libexif
+    events:
+    - introduced: a918830b8830e1e3657b4f36f48571a8d95a4ec8
+    - fixed: 54461dde98692a0741fbbe2e0c6c2533ae9594e1
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []

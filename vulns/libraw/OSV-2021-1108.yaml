@@ -1,0 +1,27 @@
+id: OSV-2021-1108
+summary: Use-of-uninitialized-value in init_main_qtable
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=36913
+
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  init_main_qtable
+  LibRaw::fuji_decode_strip
+  LibRaw::fuji_decode_loop
+modified: '2021-08-08T00:00:50.022949Z'
+published: '2021-08-08T00:00:50.022743Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=36913
+affected:
+- package:
+    name: libraw
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/libraw/libraw
+    events:
+    - introduced: 4c954948ba2de262b9cb23a1843fb8651aa3dcc1
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
