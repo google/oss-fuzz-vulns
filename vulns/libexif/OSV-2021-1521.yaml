@@ -1,0 +1,28 @@
+id: OSV-2021-1521
+summary: Heap-buffer-overflow in exif_data_load_data_content
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=40617
+
+  Crash type: Heap-buffer-overflow READ 4
+  Crash state:
+  exif_data_load_data_content
+  exif_data_load_data
+  exif_loader_get_data
+modified: '2021-11-03T00:00:07.006719Z'
+published: '2021-11-03T00:00:07.006490Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=40617
+affected:
+- package:
+    name: libexif
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/libexif/libexif
+    events:
+    - introduced: a918830b8830e1e3657b4f36f48571a8d95a4ec8
+    - fixed: 4bd5cd63390731a1473205f9346cd4fcc1b0f668
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
