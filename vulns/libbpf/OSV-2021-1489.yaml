@@ -1,0 +1,28 @@
+id: OSV-2021-1489
+summary: UNKNOWN READ in __bpf_object__open
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=40317
+
+  Crash type: UNKNOWN READ
+  Crash state:
+  __bpf_object__open
+  bpf_object__open_mem
+  bpf-object-fuzzer.c
+modified: '2021-10-26T00:01:29.852826Z'
+published: '2021-10-26T00:01:29.852624Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=40317
+affected:
+- package:
+    name: libbpf
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/libbpf/libbpf
+    events:
+    - introduced: d7982f3948552963e009c06f4ed42c376934bc62
+    - fixed: 36cc591ac8a7b390249c4f3afcef21b8c9c6c76f
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []

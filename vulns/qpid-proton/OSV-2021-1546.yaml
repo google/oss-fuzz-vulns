@@ -1,0 +1,28 @@
+id: OSV-2021-1546
+summary: Heap-buffer-overflow in pn_buffer_append
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=40748
+
+  Crash type: Heap-buffer-overflow READ {*}
+  Crash state:
+  pn_buffer_append
+  pni_data_intern_node
+  pni_decoder_decode_value
+modified: '2021-11-07T00:01:30.451349Z'
+published: '2021-11-07T00:01:30.451093Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=40748
+affected:
+- package:
+    name: qpid-proton
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/apache/qpid-proton.git
+    events:
+    - introduced: 72c87537a136dbfc63a0c811d159631ecd0e3986
+    - fixed: b788baad3e9d9ba028d3d115e272e94a30227e17
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
