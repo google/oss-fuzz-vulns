@@ -8,7 +8,7 @@ details: |
   __libcpp_memchr
   memchr
   pcpp::cross_platform_memmem
-modified: '2021-06-21T06:56:24.561592Z'
+modified: '2021-11-11T00:10:03.508287Z'
 published: '2020-09-18T00:00:38.027965Z'
 references:
 - type: REPORT
@@ -24,5 +24,6 @@ affected:
     - introduced: fbc52d37c6a7e8cc75e4950d2621cbd907c6cf8a
   versions:
   - v21.05
+  - v21.11
   ecosystem_specific:
     severity: MEDIUM
