@@ -1,0 +1,27 @@
+id: OSV-2021-1127
+summary: Heap-use-after-free in zebra_nhg_hash_equal
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=37164
+
+  Crash type: Heap-use-after-free READ 4
+  Crash state:
+  zebra_nhg_hash_equal
+  hash_get
+  hash_lookup
+modified: '2021-08-15T00:00:44.029504Z'
+published: '2021-08-15T00:00:44.029276Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=37164
+affected:
+- package:
+    name: frr
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/FRRouting/frr
+    events:
+    - introduced: f4b9fde3e7be9bcb854ae2a8680ecd67b07fdd82
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []

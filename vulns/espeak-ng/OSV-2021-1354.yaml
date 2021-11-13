@@ -1,0 +1,28 @@
+id: OSV-2021-1354
+summary: Stack-buffer-underflow in InterpretPhoneme
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=39042
+
+  Crash type: Stack-buffer-underflow READ 8
+  Crash state:
+  InterpretPhoneme
+  InterpretPhoneme2
+  CalcLengths
+modified: '2021-09-22T00:01:41.604971Z'
+published: '2021-09-22T00:01:41.604762Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=39042
+affected:
+- package:
+    name: espeak-ng
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/espeak-ng/espeak-ng
+    events:
+    - introduced: ac643ea5add300e036afbcc0d48e28d94edad5a9
+    - fixed: be962b067b889852da6194342b26e1759e1d7952
+  ecosystem_specific:
+    severity: null
+  versions: []

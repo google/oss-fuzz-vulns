@@ -1,0 +1,30 @@
+id: OSV-2021-1549
+summary: Uncaught exception in com.google.gson.internal.bind.TypeAdapters$27.read
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=40830
+
+  Crash type: Uncaught exception
+  Crash state:
+  com.google.gson.internal.bind.TypeAdapters$27.read
+  java.base/java.lang.StringUTF16.compress
+  java.base/java.lang.String.<init>
+modified: '2021-11-09T00:00:09.004431Z'
+published: '2021-11-09T00:00:09.004185Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=40830
+affected:
+- package:
+    name: gson
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/google/gson
+    events:
+    - introduced: cc505e1b9fa6e6e29466914a348315f73d326d27
+    - fixed: b0595c595bd2c052cd05e0283bb37b67c02bd06f
+  ecosystem_specific:
+    severity: LOW
+  database_specific:
+    introduced_range: a92bbf849c99b1fc708eb3dd209af9c72110ed4d:ca2ed748ba6e31c4a319ea6f2d2dc7048021f0a0
+  versions: []
