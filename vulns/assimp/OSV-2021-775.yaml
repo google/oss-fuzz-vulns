@@ -8,7 +8,7 @@ details: |
   _m3d_safestr
   m3d_load
   Assimp::M3DWrapper::M3DWrapper
-modified: '2021-10-20T00:05:49.139102Z'
+modified: '2021-11-14T00:10:23.306419Z'
 published: '2021-05-19T00:00:10.101287Z'
 references:
 - type: REPORT
@@ -24,5 +24,6 @@ affected:
     - introduced: af0aca796ebab7663bba2778f7f30dd424f324ca
   versions:
   - v5.1.0.rc1
+  - v5.1.0
   ecosystem_specific:
     severity: HIGH
