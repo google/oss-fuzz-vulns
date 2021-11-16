@@ -1,0 +1,28 @@
+id: OSV-2021-1577
+summary: Heap-buffer-overflow in apreq_header_attribute
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=40985
+
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  apreq_header_attribute
+  create_multipart_context
+  apreq_parse_multipart
+modified: '2021-11-14T00:01:26.531346Z'
+published: '2021-11-14T00:01:26.531147Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=40985
+affected:
+- package:
+    name: apache-httpd
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/apache/httpd
+    events:
+    - introduced: beec41a39a7206a8ed95d6aac31631a2f10118cd
+    - fixed: 6b1247e8a6ce5708d57187cb33db5f6da96f86dc
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
