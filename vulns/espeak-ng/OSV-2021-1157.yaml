@@ -1,0 +1,27 @@
+id: OSV-2021-1157
+summary: Heap-use-after-free in TranslateRules
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=37410
+
+  Crash type: Heap-use-after-free READ 1
+  Crash state:
+  TranslateRules
+  TranslateWord3
+  TranslateWord
+modified: '2021-08-21T00:01:35.555230Z'
+published: '2021-08-21T00:01:35.555020Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=37410
+affected:
+- package:
+    name: espeak-ng
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/espeak-ng/espeak-ng
+    events:
+    - introduced: 0a713d52bbf3e061823d1a7f35e5303e7320f27a
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
