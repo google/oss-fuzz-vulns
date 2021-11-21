@@ -8,7 +8,7 @@ details: |
   std::__1::char_traits<char>::length
   std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<ch
   ODDLParser::logInvalidTokenError
-modified: '2021-11-14T00:10:22.227408Z'
+modified: '2021-11-21T00:10:18.378070Z'
 published: '2021-05-14T00:00:07.433655Z'
 references:
 - type: REPORT
@@ -25,5 +25,6 @@ affected:
   versions:
   - v5.1.0.rc1
   - v5.1.0
+  - v5.1.1
   ecosystem_specific:
     severity: MEDIUM
