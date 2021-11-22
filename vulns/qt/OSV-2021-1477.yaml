@@ -1,0 +1,31 @@
+id: OSV-2021-1477
+summary: UNKNOWN WRITE in QtPrivate::QCommonArrayOps<QPainterPath::Element>::growAppend
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=40161
+
+  Crash type: UNKNOWN WRITE
+  Crash state:
+  QtPrivate::QCommonArrayOps<QPainterPath::Element>::growAppend
+  QPainterPath::addPath
+  QPathClipper::intersect
+modified: '2021-10-22T00:01:25.431193Z'
+published: '2021-10-22T00:01:25.430987Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=40161
+affected:
+- package:
+    name: qt
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: git://code.qt.io/qt/qt5.git
+    events:
+    - introduced: a341894f29be54642de9dd1c8d03604415c9577d
+    - fixed: 83b4afd584b6c5b7267d8a288ef43f55fc12f5eb
+  ecosystem_specific:
+    severity: HIGH
+  database_specific:
+    fixed_range: 3c38cc22ce504b221939a1cfa1e37db58010e749:83b4afd584b6c5b7267d8a288ef43f55fc12f5eb
+    introduced_range: 1c17b656e0c7b3f5fae598a0915fdebfeb822dae:f1b826440d0c9407b08329bb563b95781d6aeb6b
+  versions: []
