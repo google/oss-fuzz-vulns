@@ -8,7 +8,7 @@ details: |
   format_generic_odp_key
   check_attr_len
   format_odp_key_attr
-modified: '2021-06-23T06:54:24.240957Z'
+modified: '2021-11-22T06:28:39.653798Z'
 published: '2020-07-01T00:00:09.309832Z'
 references:
 - type: REPORT
@@ -36,6 +36,7 @@ affected:
   - v2.12.2
   - v2.12.3
   - v2.11.7
+  - v2.12.4
   ecosystem_specific:
     severity: MEDIUM
     fixed_range: 187bb41fbf447acf9fb6ac117dc923bbe649e78c:e2ed6fbeb18cba1235c6a260b754f11ecc9d4cb0
