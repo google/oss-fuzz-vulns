@@ -8,7 +8,7 @@ details: |
   ideint_process
   impeg2d_deinterlace
   impeg2d_dec_pic_data_thread
-modified: '2021-06-23T06:25:37.767380Z'
+modified: '2021-11-22T06:22:08.230510Z'
 published: '2020-07-22T00:00:14.651452Z'
 references:
 - type: REPORT
@@ -23,6 +23,29 @@ affected:
     events:
     - introduced: 313d5efa2d866f01aaf25b015f31480ce095e7f5
     - fixed: 2841477682f8a718bcfba2a8da2e3cce15135b37
+  versions:
+  - android-10.0.0_r12
+  - android-10.0.0_r13
+  - android-10.0.0_r14
+  - android-10.0.0_r30
+  - android-10.0.0_r31
+  - android-10.0.0_r32
+  - android-10.0.0_r33
+  - android-10.0.0_r34
+  - android-10.0.0_r35
+  - android-10.0.0_r36
+  - android-10.0.0_r42
+  - android-10.0.0_r43
+  - android-10.0.0_r44
+  - android-10.0.0_r45
+  - android-10.0.0_r7
+  - android-10.0.0_r8
+  - android-10.0.0_r9
+  - android-mainline-10.0.0_r10
+  - android-mainline-10.0.0_r4
+  - android-mainline-10.0.0_r5
+  - android-mainline-10.0.0_r7
+  - android-mainline-10.0.0_r9
   ecosystem_specific:
     severity: HIGH
     introduced_range: unknown:313d5efa2d866f01aaf25b015f31480ce095e7f5
