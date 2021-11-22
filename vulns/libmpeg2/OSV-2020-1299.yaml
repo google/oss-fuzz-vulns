@@ -8,7 +8,7 @@ details: |
   ideint_weave_blk
   ideint_process
   impeg2d_deinterlace
-modified: '2021-06-23T06:25:37.761422Z'
+modified: '2021-11-22T06:24:56.267440Z'
 published: '2020-07-22T21:50:04.188246Z'
 references:
 - type: REPORT
@@ -23,6 +23,7 @@ affected:
     events:
     - introduced: 313d5efa2d866f01aaf25b015f31480ce095e7f5
     - fixed: 6f28264c1170fae4f6c847625f4a6d4467a3262b
+    - fixed: 5c8de517396c1a3b5e12e6a345a8df78660cc2fc
   versions:
   - android-mainline-10.0.0_r6
   - android-mainline-10.0.0_r8
@@ -36,6 +37,28 @@ affected:
   - platform-tools-30.0.1
   - platform-tools-30.0.2
   - platform-tools-30.0.3
+  - android-10.0.0_r12
+  - android-10.0.0_r13
+  - android-10.0.0_r14
+  - android-10.0.0_r30
+  - android-10.0.0_r31
+  - android-10.0.0_r32
+  - android-10.0.0_r33
+  - android-10.0.0_r34
+  - android-10.0.0_r35
+  - android-10.0.0_r36
+  - android-10.0.0_r42
+  - android-10.0.0_r43
+  - android-10.0.0_r44
+  - android-10.0.0_r45
+  - android-10.0.0_r7
+  - android-10.0.0_r8
+  - android-10.0.0_r9
+  - android-mainline-10.0.0_r10
+  - android-mainline-10.0.0_r4
+  - android-mainline-10.0.0_r5
+  - android-mainline-10.0.0_r7
+  - android-mainline-10.0.0_r9
   ecosystem_specific:
-    severity: HIGH
     introduced_range: unknown:313d5efa2d866f01aaf25b015f31480ce095e7f5
+    severity: HIGH
