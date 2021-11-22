@@ -8,7 +8,7 @@ details: |
   ARM_post_printer
   fill_insn
   cs_disasm
-modified: '2021-06-23T06:28:53.629920Z'
+modified: '2021-11-22T06:21:31.487768Z'
 published: '2020-07-01T00:00:09.576759Z'
 references:
 - type: REPORT
@@ -23,8 +23,10 @@ affected:
     events:
     - introduced: 4156eefd32479dbea8011612ff14a4946dbcc4a2
     - fixed: fb6179eca88e6d0af801cf046446161459ad6a55
+    - introduced: e889a41e3af3a0cea95434f43299743771b9b270
+    - introduced: 6d61df9d2533710292b829669ec4305a99cbc051
   versions:
   - 4.0.2
   ecosystem_specific:
-    severity: MEDIUM
     fixed_range: fb11ad1a4abe90b0ca34f1fa4cdbb7687f6e0aad:fb6179eca88e6d0af801cf046446161459ad6a55
+    severity: MEDIUM
