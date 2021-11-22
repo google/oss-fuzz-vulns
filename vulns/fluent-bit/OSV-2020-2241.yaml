@@ -8,7 +8,7 @@ details: |
   mk_string_copy_substr
   mk_rconf_meta_add
   mk_rconf_read
-modified: '2021-06-21T06:56:24.472454Z'
+modified: '2021-11-22T06:21:57.211208Z'
 published: '2020-12-05T00:00:48.941441Z'
 references:
 - type: REPORT
@@ -22,6 +22,7 @@ affected:
     repo: https://github.com/fluent/fluent-bit/
     events:
     - introduced: 10ceb5b2ab6635a000f3eceaa267e1e34496de6b
+    - fixed: 03f3339594bdb472315823db78ca209b7ba319fb
   versions:
   - v1.7.0
   - v1.7.0-rc1
@@ -41,5 +42,6 @@ affected:
   - v1.7.6
   - v1.7.7
   - v1.7.8
+  - v1.7.9
   ecosystem_specific:
     severity: MEDIUM
