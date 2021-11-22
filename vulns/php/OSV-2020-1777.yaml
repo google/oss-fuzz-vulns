@@ -8,7 +8,7 @@ details: |
   exif_process_IFD_in_MAKERNOTE
   exif_process_IFD_TAG
   exif_process_IFD_in_TIFF
-modified: '2021-06-23T06:25:30.845494Z'
+modified: '2021-11-22T08:09:12.598746Z'
 published: '2020-09-16T00:00:31.920721Z'
 references:
 - type: REPORT
@@ -23,6 +23,9 @@ affected:
     events:
     - introduced: ecb1e312a0b4e90fa4d2e7bd89dbddd031f82de6
     - fixed: 655691675927fa94b634daa59fa07562f921621c
+  versions:
+  - php-7.1.32
+  - php-7.1.33
   ecosystem_specific:
-    introduced_range: unknown:ecb1e312a0b4e90fa4d2e7bd89dbddd031f82de6
     severity: MEDIUM
+    introduced_range: unknown:ecb1e312a0b4e90fa4d2e7bd89dbddd031f82de6
