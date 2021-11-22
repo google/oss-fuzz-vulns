@@ -8,7 +8,7 @@ details: |
   TIFFReadRGBATileExt
   cv::TiffDecoder::readData
   cv::imread
-modified: '2021-06-23T06:55:15.575485Z'
+modified: '2021-11-22T06:29:18.612747Z'
 published: '2020-07-22T21:50:00.758042Z'
 references:
 - type: REPORT
@@ -28,6 +28,8 @@ affected:
   - 4.0.1
   - 4.1.0
   - 4.1.0-openvino
+  - 3.4.5
+  - 3.4.6
   ecosystem_specific:
-    introduced_range: unknown:6bcf0b5519c190826cf0f21efd87cbe256eabc48
     severity: HIGH
+    introduced_range: unknown:6bcf0b5519c190826cf0f21efd87cbe256eabc48
