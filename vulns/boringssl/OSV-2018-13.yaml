@@ -8,7 +8,7 @@ details: |
   bn_sub_words
   bn_reduce_once
   bn_from_montgomery_in_place
-modified: '2021-06-23T06:25:27.830624Z'
+modified: '2021-11-22T06:22:42.582856Z'
 published: '2021-01-13T00:00:05.629092Z'
 references:
 - type: REPORT
@@ -27,6 +27,7 @@ affected:
   - fips-20180730
   - fips-20190808
   - fips-android-20191020
+  - version_for_cocoapods_10.0
   ecosystem_specific:
-    severity: MEDIUM
     fixed_range: 81a6f6d8de908e27901f5c968c576fbb9c3f35d0:f8f35c95550e6796ab8b2c0f8e37e7ce4bc67302
+    severity: MEDIUM
