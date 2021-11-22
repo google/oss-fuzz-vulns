@@ -8,7 +8,7 @@ details: |
   ihevc_recon_32x32
   ihevcd_iquant_itrans_recon_ctb
   ihevcd_process
-modified: '2021-06-23T07:01:28.510385Z'
+modified: '2021-11-22T06:22:29.731292Z'
 published: '2020-07-22T21:49:39.707812Z'
 references:
 - type: REPORT
@@ -35,6 +35,23 @@ affected:
   - platform-tools-29.0.5
   - platform-tools-29.0.6
   - android-mainline-10.0.0_r12
+  - android-10.0.0_r12
+  - android-10.0.0_r13
+  - android-10.0.0_r14
+  - android-10.0.0_r30
+  - android-10.0.0_r31
+  - android-10.0.0_r32
+  - android-10.0.0_r33
+  - android-10.0.0_r34
+  - android-10.0.0_r35
+  - android-10.0.0_r36
+  - android-10.0.0_r7
+  - android-10.0.0_r8
+  - android-10.0.0_r9
+  - android-mainline-10.0.0_r10
+  - android-mainline-10.0.0_r5
+  - android-mainline-10.0.0_r7
+  - android-mainline-10.0.0_r9
   ecosystem_specific:
-    severity: MEDIUM
     introduced_range: unknown:d28f2210ee8e65afdfb07a1fd6582285d3d178e0
+    severity: MEDIUM
