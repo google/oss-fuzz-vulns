@@ -8,7 +8,7 @@ details: |
   ihevc_inter_pred_chroma_copy_ssse3
   ihevcd_inter_pred_ctb
   ihevcd_process
-modified: '2021-06-23T06:52:32.938825Z'
+modified: '2021-11-22T06:22:27.621987Z'
 published: '2020-07-14T05:37:35.331259Z'
 references:
 - type: REPORT
@@ -90,6 +90,26 @@ affected:
   - android-cts-11.0_r4
   - android-mainline-11.0.0_r35
   - android-vts-11.0_r4
+  - android-10.0.0_r12
+  - android-10.0.0_r13
+  - android-10.0.0_r14
+  - android-10.0.0_r30
+  - android-10.0.0_r31
+  - android-10.0.0_r32
+  - android-10.0.0_r33
+  - android-10.0.0_r34
+  - android-10.0.0_r35
+  - android-10.0.0_r36
+  - android-10.0.0_r7
+  - android-10.0.0_r8
+  - android-10.0.0_r9
+  - android-cts-11.0_r5
+  - android-mainline-10.0.0_r10
+  - android-mainline-10.0.0_r5
+  - android-mainline-10.0.0_r7
+  - android-mainline-10.0.0_r9
+  - android-security-11.0.0_r49
+  - android-vts-11.0_r5
   ecosystem_specific:
     fixed_range: 9623000c124facfcee78ffbc341740fa68f3d914:e979e4f69a45519b574186b56c883f5f1a413ba8
     severity: MEDIUM
