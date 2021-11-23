@@ -8,7 +8,7 @@ details: |
   ih264d_fill_bs1_16x16mb_pslice
   ih264d_compute_bs_non_mbaff_thread
   ih264d_recon_deblk_slice
-modified: '2021-11-17T00:08:11.900623Z'
+modified: '2021-11-23T00:09:31.397280Z'
 published: '2021-02-12T00:02:40.784817Z'
 references:
 - type: REPORT
@@ -22,6 +22,8 @@ affected:
     repo: https://android.googlesource.com/platform/external/libavc
     events:
     - introduced: 6efeedf0633e1965a4d4e17d64f14215e9b6d48f
+    - fixed: fa13b3087684ffefd82d61c34e61714881674cd3
+    - fixed: a88e0683a420d7ee9aa4b6f41f94cb8dc0c5e040
   versions:
   - android-s-beta-1
   - android-s-preview-1
