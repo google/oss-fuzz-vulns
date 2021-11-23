@@ -11,9 +11,7 @@ Users may submit PRs to update any information here.
 
 ## Format spec
 
-The format is described [here](https://osv.dev/docs/index.html#tag/vulnerability_schema).
-
-Note that this format may not be stable and is subject to change.
+The format is described [here](https://ossf.github.io/osv-schema/).
 
 ## Automation
 
