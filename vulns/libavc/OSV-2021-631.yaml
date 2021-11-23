@@ -8,7 +8,7 @@ details: |
   ih264d_decode_slice_thread
   ih264d_decode_picture_thread
   clone
-modified: '2021-11-17T00:08:21.877223Z'
+modified: '2021-11-23T00:09:39.197201Z'
 published: '2021-04-13T00:00:57.946Z'
 references:
 - type: REPORT
@@ -22,6 +22,8 @@ affected:
     repo: https://android.googlesource.com/platform/external/libavc
     events:
     - introduced: 6efeedf0633e1965a4d4e17d64f14215e9b6d48f
+    - fixed: fa13b3087684ffefd82d61c34e61714881674cd3
+    - fixed: a88e0683a420d7ee9aa4b6f41f94cb8dc0c5e040
   versions:
   - android-11.0.0_r18
   - android-11.0.0_r19
