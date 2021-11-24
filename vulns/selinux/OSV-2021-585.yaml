@@ -23,6 +23,7 @@ affected:
     events:
     - introduced: 0451adebdf153eee1f69914141311114a0130982
     - fixed: 340f0eb7f3673e8aacaf0a96cbfcd4d12a405521
+    - fixed: bad0a746e9f4cf260dedba5828d9645d50176aac
   versions:
   - '3.2'
   - 3.2-rc3
@@ -55,3 +56,5 @@ affected:
   ecosystem_specific:
     fixed_range: d1a34d3f1df5e90c9e01fcd9791c26db89064a7e:340f0eb7f3673e8aacaf0a96cbfcd4d12a405521
     severity: MEDIUM
+  database_specific:
+    fixed_range: d1a34d3f1df5e90c9e01fcd9791c26db89064a7e:bad0a746e9f4cf260dedba5828d9645d50176aac
