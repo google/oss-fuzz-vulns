@@ -23,6 +23,7 @@ affected:
     events:
     - introduced: 668917a10e7eada030f7d2dddec9f579fddeed3d
     - fixed: 9e85e7a9518aa19964f1f8d30d3175ef8c3b950f
+    - fixed: 825d6807a72b68a2faf11fc37f89b1b75967d727
   versions:
   - ghostpdl-9.52-test-base-3
   - ghostpdl-9.52-test-base-4
@@ -31,3 +32,5 @@ affected:
   ecosystem_specific:
     severity: MEDIUM
     introduced_range: unknown:668917a10e7eada030f7d2dddec9f579fddeed3d
+  database_specific:
+    fixed_range: d68f56e25110ba3baf03553c2d1839febc02dbdb:825d6807a72b68a2faf11fc37f89b1b75967d727
