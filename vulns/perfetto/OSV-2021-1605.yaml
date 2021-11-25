@@ -1,0 +1,28 @@
+id: OSV-2021-1605
+summary: Heap-use-after-free in perfetto::trace_processor::SliceTracker::GetStackHash
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=41226
+
+  Crash type: Heap-use-after-free READ 8
+  Crash state:
+  perfetto::trace_processor::SliceTracker::GetStackHash
+  perfetto::trace_processor::SliceTracker::StartSlice
+  perfetto::trace_processor::SliceTracker::Scoped
+modified: '2021-11-22T00:00:36.355522Z'
+published: '2021-11-22T00:00:36.355325Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=41226
+affected:
+- package:
+    name: perfetto
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://android.googlesource.com/platform/external/perfetto/
+    events:
+    - introduced: c986ca1784a49445c82d4f02c97361a9c0e9e677
+    - fixed: 5d40eca0de4d3e907944dbf9251552219d125f16
+  ecosystem_specific:
+    severity: HIGH
+  versions: []

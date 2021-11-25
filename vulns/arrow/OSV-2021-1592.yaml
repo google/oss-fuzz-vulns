@@ -1,0 +1,28 @@
+id: OSV-2021-1592
+summary: Heap-buffer-overflow in arrow::internal::ValidateArrayImpl::Visit
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=41143
+
+  Crash type: Heap-buffer-overflow READ 4
+  Crash state:
+  arrow::internal::ValidateArrayImpl::Visit
+  arrow::internal::ValidateArrayImpl::ValidateWithType
+  arrow::internal::ValidateArrayImpl::Validate
+modified: '2021-11-20T00:00:17.805132Z'
+published: '2021-11-20T00:00:17.804875Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=41143
+affected:
+- package:
+    name: arrow
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/apache/arrow.git
+    events:
+    - introduced: 6b0248d5b5502a1cf76d5853d15be9844b84522c
+    - fixed: a36dd8cd208582316322b0dd6e7569785c8f2780
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
