@@ -6,7 +6,7 @@ details: |-
   Crash type: UNKNOWN READ
   Crash state:
   NULL
-modified: '2021-11-09T00:12:55.030318Z'
+modified: '2021-11-26T00:10:44.845699Z'
 published: '2020-07-14T05:37:41.456127Z'
 references:
 - type: REPORT
@@ -33,6 +33,7 @@ affected:
   - 2.0.0-rc2
   - 2.0.0-rc3
   - 2.0.0-rc4
+  - 2.0.0-rc5
   ecosystem_specific:
-    introduced_range: 57e3509812f0842b0752bff1e1b3a44ad438271e:355eaecc12b8022ccefac432dfa003fdb642c0f5
     severity: MEDIUM
+    introduced_range: 57e3509812f0842b0752bff1e1b3a44ad438271e:355eaecc12b8022ccefac432dfa003fdb642c0f5
