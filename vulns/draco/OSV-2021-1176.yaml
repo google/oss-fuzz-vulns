@@ -1,0 +1,32 @@
+id: OSV-2021-1176
+summary: Index-out-of-bounds in draco::MeshEdgebreakerTraversalValenceDecoder::DecodeSymbol
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=37705
+
+  Crash type: Index-out-of-bounds
+  Crash state:
+  draco::MeshEdgebreakerTraversalValenceDecoder::DecodeSymbol
+  draco::MeshEdgebreakerDecoderImpl<draco::MeshEdgebreakerTraversalValenceDecoder>
+  draco::MeshEdgebreakerDecoderImpl<draco::MeshEdgebreakerTraversalValenceDecoder>
+modified: '2021-08-29T00:00:08.243106Z'
+published: '2021-08-29T00:00:08.242884Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=37705
+affected:
+- package:
+    name: draco
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/google/draco
+    events:
+    - introduced: 25484b31235d1a35fa72be6ce8d1f7f286b5c0bf
+  versions:
+  - 1.4.0
+  - 1.4.1
+  - 1.4.3
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: aef4bfbd61798ecc21d94c873b679fbdeaf92462:79601d2d060be52e673a82ed1c46f4666eb28255
