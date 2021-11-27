@@ -1,0 +1,31 @@
+id: OSV-2021-1625
+summary: Heap-buffer-overflow in junkscan
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=41390
+
+  Crash type: Heap-buffer-overflow READ 16
+  Crash state:
+  junkscan
+  seturl
+  parseurl
+modified: '2021-11-26T00:01:33.118372Z'
+published: '2021-11-26T00:01:33.118188Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=41390
+affected:
+- package:
+    name: curl
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/curl/curl.git
+    events:
+    - introduced: 0969805e20ffe3731a9b020a990a907c3eec907f
+    - fixed: 2361d11d4c9602937aa081a6899f1b313398514a
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: cc2870e275666ef7e4a6c27fa8b99938c6d1ff2f:a5f5687368a5f95415d58d37e8dfb10c6b6d44c5
+    fixed_range: a5f5687368a5f95415d58d37e8dfb10c6b6d44c5:2361d11d4c9602937aa081a6899f1b313398514a
+  versions: []
