@@ -1,0 +1,33 @@
+id: OSV-2021-1181
+summary: Heap-buffer-overflow in draco::MeshPredictionSchemeTexCoordsDecoder<int,
+  draco::PredictionSchemeWrapDeco
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=37814
+
+  Crash type: Heap-buffer-overflow WRITE 4
+  Crash state:
+  draco::MeshPredictionSchemeTexCoordsDecoder<int, draco::PredictionSchemeWrapDeco
+  draco::MeshPredictionSchemeTexCoordsDecoder<int, draco::PredictionSchemeWrapDeco
+  draco::SequentialIntegerAttributeDecoder::DecodeIntegerValues
+modified: '2021-08-31T00:00:29.156095Z'
+published: '2021-08-31T00:00:29.155871Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=37814
+affected:
+- package:
+    name: draco
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/google/draco
+    events:
+    - introduced: 25484b31235d1a35fa72be6ce8d1f7f286b5c0bf
+  versions:
+  - 1.4.0
+  - 1.4.1
+  - 1.4.3
+  ecosystem_specific:
+    severity: HIGH
+  database_specific:
+    introduced_range: aef4bfbd61798ecc21d94c873b679fbdeaf92462:79601d2d060be52e673a82ed1c46f4666eb28255

@@ -1,0 +1,29 @@
+id: OSV-2021-1184
+summary: UNKNOWN READ in ucl_array_append
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=37885
+
+  Crash type: UNKNOWN READ
+  Crash state:
+  ucl_array_append
+  ucl_object_copy_internal
+  ucl_object_copy
+modified: '2021-09-01T00:00:25.788757Z'
+published: '2021-09-01T00:00:25.788562Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=37885
+affected:
+- package:
+    name: libucl
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/vstakhov/libucl
+    events:
+    - introduced: b56171afae328bb605aa5aafbab9331e3e34b03e
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: be59572d66b2cf547d743277599781ef87ddaad9:95df30cf3e35788c08be537a1623499c98415674
+  versions: []
