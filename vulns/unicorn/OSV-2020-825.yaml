@@ -8,7 +8,7 @@ details: |
   tcg_liveness_analysis_arm
   tcg_gen_code_arm
   cpu_arm_gen_code_arm
-modified: '2021-11-26T00:10:45.371965Z'
+modified: '2021-11-30T00:08:31.968013Z'
 published: '2020-07-14T05:37:49.161459Z'
 references:
 - type: REPORT
@@ -35,5 +35,6 @@ affected:
   - 2.0.0-rc3
   - 2.0.0-rc4
   - 2.0.0-rc5
+  - 2.0.0-rc5.post1
   ecosystem_specific:
     severity: MEDIUM
