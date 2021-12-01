@@ -1,0 +1,28 @@
+id: OSV-2021-1199
+summary: Heap-use-after-free in i_zval_ptr_dtor
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=38001
+
+  Crash type: Heap-use-after-free READ 1
+  Crash state:
+  i_zval_ptr_dtor
+  concat_function
+  zend_binary_op
+modified: '2021-09-04T00:01:34.068775Z'
+published: '2021-09-04T00:01:34.068585Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=38001
+affected:
+- package:
+    name: php
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/php/php-src.git
+    events:
+    - introduced: 1902f730ee2bda60552f34c0643e2d7b47e4fb64
+  versions:
+  - php-8.1.0
+  ecosystem_specific:
+    severity: HIGH

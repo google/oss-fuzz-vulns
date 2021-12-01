@@ -1,0 +1,28 @@
+id: OSV-2021-1229
+summary: Heap-buffer-overflow in flatbuffers::JsonPrinter::GenFieldOffset
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=38371
+
+  Crash type: Heap-buffer-overflow READ 4
+  Crash state:
+  flatbuffers::JsonPrinter::GenFieldOffset
+  flatbuffers::JsonPrinter::GenStruct
+  flatbuffers::GenerateText
+modified: '2021-09-12T00:00:09.534540Z'
+published: '2021-09-12T00:00:09.534319Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=38371
+affected:
+- package:
+    name: flatbuffers
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/google/flatbuffers
+    events:
+    - introduced: 8fb8c2ce1dff00bc1455aba0770eb7eae9a06ece
+    - fixed: 0fadaf391d55aac675e6cff122c83bf52eeabc2a
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
