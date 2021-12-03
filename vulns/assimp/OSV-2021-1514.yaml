@@ -1,0 +1,29 @@
+id: OSV-2021-1514
+summary: Container-overflow in m3d_load
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=40535
+
+  Crash type: Container-overflow READ 1
+  Crash state:
+  m3d_load
+  Assimp::M3DWrapper::M3DWrapper
+  Assimp::M3DImporter::InternReadFile
+modified: '2021-11-01T00:00:10.147133Z'
+published: '2021-11-01T00:00:10.146855Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=40535
+affected:
+- package:
+    name: assimp
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/assimp/assimp.git
+    events:
+    - introduced: af0aca796ebab7663bba2778f7f30dd424f324ca
+    - fixed: 145f972d76eaf3cd947a92789ecefb4cc1b78765
+  versions:
+  - v5.1.0.rc1
+  ecosystem_specific:
+    severity: MEDIUM
