@@ -8,7 +8,7 @@ details: |
   gx_pattern_accum_finalize_cw
   gx_device_finalize
   gc_objects_set_reloc
-modified: '2021-08-01T00:00:15.709997Z'
+modified: '2021-12-03T00:18:29.093070Z'
 published: '2021-08-01T00:00:15.709805Z'
 references:
 - type: REPORT
@@ -44,5 +44,6 @@ affected:
   - gpdf_gs_text_filter_031
   - gpdf_gs_text_filter_032
   - robin_test_ref
+  - ghostpdl-9.56.0-test-base-2
   ecosystem_specific:
     severity: HIGH
