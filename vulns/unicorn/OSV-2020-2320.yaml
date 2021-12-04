@@ -1,0 +1,35 @@
+id: OSV-2020-2320
+summary: UNKNOWN WRITE in cpu_arm_exec_arm
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20220
+
+  Crash type: UNKNOWN WRITE
+  Crash state:
+  cpu_arm_exec_arm
+  tcg_exec_all_arm
+  qemu_tcg_cpu_loop
+modified: '2021-12-04T00:00:54.942812Z'
+published: '2021-12-04T00:00:54.942609Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20220
+affected:
+- package:
+    name: unicorn
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/unicorn-engine/unicorn.git
+    events:
+    - introduced: 07f94ad1fc62293cac330df9714d739be6354926
+    - fixed: 198e432a1d7edbed6f4726acc42c50c3a4141b6b
+  versions:
+  - 1.0.2-rc1
+  - 1.0.2-rc2
+  - 1.0.2-rc3
+  - 1.0.2-rc4
+  - 1.0.2-rc5
+  ecosystem_specific:
+    severity: HIGH
+  database_specific:
+    fixed_range: 94c94cdff045736de0f37ece382251c3024ce107:198e432a1d7edbed6f4726acc42c50c3a4141b6b

@@ -1,0 +1,46 @@
+id: OSV-2020-2328
+summary: UNKNOWN READ in UA_Server_initNS0
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23137
+
+  Crash type: UNKNOWN READ
+  Crash state:
+  UA_Server_initNS0
+  UA_Server_newWithConfig
+  UA_Server_new
+modified: '2021-12-04T00:01:20.593606Z'
+published: '2021-12-04T00:01:20.593406Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23137
+affected:
+- package:
+    name: open62541
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/open62541/open62541.git
+    events:
+    - introduced: 7453262ccf8b26e622c4afa6ab5facfc42962663
+    - fixed: c6e4e028a740b50c49a6dd5987ee8e61a52953c9
+  versions:
+  - v1.0.1
+  - v1.0.2
+  - v1.0.3
+  - v1.1
+  - v1.1.1
+  - v1.1.2
+  - v1.1.3
+  - v1.1.4
+  - v1.1.5
+  - v1.2
+  - v1.2-rc1
+  - v1.2-rc2
+  - v1.2.1
+  - v1.2.2
+  - v1.2.3
+  - v1.3-rc1
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    fixed_range: a524accc338c9611a5ec60bf595c1a587243b457:c6e4e028a740b50c49a6dd5987ee8e61a52953c9

@@ -1,0 +1,35 @@
+id: OSV-2020-2324
+summary: Heap-buffer-overflow in archive_read_format_cpio_read_header
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21048
+
+  Crash type: Heap-buffer-overflow READ {*}
+  Crash state:
+  archive_read_format_cpio_read_header
+  _archive_read_next_header2
+  _archive_read_next_header
+modified: '2021-12-04T00:01:03.220431Z'
+published: '2021-12-04T00:01:03.220230Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21048
+affected:
+- package:
+    name: libarchive
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/libarchive/libarchive.git
+    events:
+    - introduced: f001f3b0e6a66a7eb989ed3783791c0316831202
+    - fixed: 56c920eab3352f7877ee0cf9e472c1ab376c7e3e
+  versions:
+  - 3.5.1
+  - v3.4.3
+  - v3.5.0
+  - v3.5.1
+  - v3.5.2
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    fixed_range: f001f3b0e6a66a7eb989ed3783791c0316831202:56c920eab3352f7877ee0cf9e472c1ab376c7e3e
