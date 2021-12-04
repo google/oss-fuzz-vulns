@@ -22,7 +22,10 @@ affected:
     repo: https://github.com/richgel999/miniz.git
     events:
     - introduced: 1e7621d96cb9d0821c61db6f4e3ef36ddc19b0cd
+    - fixed: b43f8a0c22d6bae6b5416264232f57a2aca539fe
   versions:
   - 2.2.0
   ecosystem_specific:
     severity: MEDIUM
+  database_specific:
+    fixed_range: d6566206ce120069708e77eff79cf117957b419a:b43f8a0c22d6bae6b5416264232f57a2aca539fe
