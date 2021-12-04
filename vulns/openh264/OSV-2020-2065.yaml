@@ -22,5 +22,9 @@ affected:
     repo: https://github.com/cisco/openh264.git
     events:
     - introduced: 66ef706acd55b0b8daec32ca299d2586a1f473c9
+    - fixed: f15f940425eebf24ce66984db2445733cf500b7b
   ecosystem_specific:
     severity: MEDIUM
+  database_specific:
+    fixed_range: 992c1c147175126c3fe7ab78216aa0395f9e6c71:f15f940425eebf24ce66984db2445733cf500b7b
+  versions: []
