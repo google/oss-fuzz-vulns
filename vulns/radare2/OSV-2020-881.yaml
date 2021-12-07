@@ -8,7 +8,7 @@ details: |
   read_uleb128
   walk_exports
   get_symbols
-modified: '2021-11-15T00:10:40.727195Z'
+modified: '2021-12-07T00:09:04.924027Z'
 published: '2020-07-14T22:13:57.548799Z'
 references:
 - type: REPORT
@@ -47,5 +47,6 @@ affected:
   - 5.4.0
   - 5.4.2
   - 5.5.0
+  - 5.5.2
   ecosystem_specific:
     severity: MEDIUM
