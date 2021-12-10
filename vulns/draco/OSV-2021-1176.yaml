@@ -8,7 +8,7 @@ details: |
   draco::MeshEdgebreakerTraversalValenceDecoder::DecodeSymbol
   draco::MeshEdgebreakerDecoderImpl<draco::MeshEdgebreakerTraversalValenceDecoder>
   draco::MeshEdgebreakerDecoderImpl<draco::MeshEdgebreakerTraversalValenceDecoder>
-modified: '2021-08-29T00:00:08.243106Z'
+modified: '2021-12-10T00:07:50.344401Z'
 published: '2021-08-29T00:00:08.242884Z'
 references:
 - type: REPORT
@@ -26,6 +26,7 @@ affected:
   - 1.4.0
   - 1.4.1
   - 1.4.3
+  - 1.5.0
   ecosystem_specific:
     severity: MEDIUM
   database_specific:
