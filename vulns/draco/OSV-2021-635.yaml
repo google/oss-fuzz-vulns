@@ -9,7 +9,7 @@ details: |
   std::__1::__tree_iterator<std::__1::__value_type<std::__1::basic_string<char, st
   void draco::Metadata::AddEntry<std::__1::vector<unsigned char, std::__1::allocat
   draco::MetadataDecoder::DecodeEntry
-modified: '2021-10-13T00:04:48.177543Z'
+modified: '2021-12-10T00:08:13.458125Z'
 published: '2021-04-15T00:00:23.567516Z'
 references:
 - type: REPORT
@@ -27,6 +27,7 @@ affected:
   - 1.4.0
   - 1.4.1
   - 1.4.3
+  - 1.5.0
   ecosystem_specific:
-    severity: HIGH
     introduced_range: aef4bfbd61798ecc21d94c873b679fbdeaf92462:79601d2d060be52e673a82ed1c46f4666eb28255
+    severity: HIGH
