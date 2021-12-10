@@ -1,0 +1,32 @@
+id: OSV-2021-1224
+summary: Heap-buffer-overflow in srtp_stream_init_keys
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=38359
+
+  Crash type: Heap-buffer-overflow READ {*}
+  Crash state:
+  srtp_stream_init_keys
+  srtp_stream_init
+  srtp_add_stream
+modified: '2021-09-11T00:01:13.005137Z'
+published: '2021-09-11T00:01:13.004929Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=38359
+affected:
+- package:
+    name: libsrtp
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/cisco/libsrtp
+    events:
+    - introduced: 812a683c8554f53b80f64b94966c790c59b7de32
+    - introduced: 2437e647e499b1294682f3a67ab57f601c655b59
+  versions:
+  - v2
+  - v2.4
+  - v2.4.1
+  - v2.4.2
+  ecosystem_specific:
+    severity: MEDIUM

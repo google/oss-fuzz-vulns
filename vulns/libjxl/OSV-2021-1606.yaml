@@ -1,0 +1,28 @@
+id: OSV-2021-1606
+summary: Segv on unknown address in jxl::N_AVX2::SingleFromSingle
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=41233
+
+  Crash type: Segv on unknown address
+  Crash state:
+  jxl::N_AVX2::SingleFromSingle
+  jxl::ThreadPool::SequentialRunnerStatic
+  jxl::ModularFrameDecoder::ModularImageToDecodedRect
+modified: '2021-11-22T00:00:41.045329Z'
+published: '2021-11-22T00:00:41.045135Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=41233
+affected:
+- package:
+    name: libjxl
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/libjxl/libjxl.git
+    events:
+    - introduced: fcc8ef851c6aa4ad9be711b1cac83e8c23aa51e1
+    - fixed: a915cd9ed0fd803449307aa37ba3c5364398bcc6
+  ecosystem_specific:
+    severity: null
+  versions: []

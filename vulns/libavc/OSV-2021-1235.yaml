@@ -1,0 +1,136 @@
+id: OSV-2021-1235
+summary: Heap-buffer-overflow in ih264d_fill_bs1_16x16mb_pslice
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=38387
+
+  Crash type: Heap-buffer-overflow READ 4
+  Crash state:
+  ih264d_fill_bs1_16x16mb_pslice
+  ih264d_compute_bs_non_mbaff_thread
+  ih264d_recon_deblk_slice
+modified: '2021-09-12T00:00:37.950013Z'
+published: '2021-09-12T00:00:37.949727Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=38387
+affected:
+- package:
+    name: libavc
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://android.googlesource.com/platform/external/libavc
+    events:
+    - introduced: 6efeedf0633e1965a4d4e17d64f14215e9b6d48f
+  versions:
+  - android-11.0.0_r18
+  - android-11.0.0_r19
+  - android-11.0.0_r20
+  - android-11.0.0_r21
+  - android-11.0.0_r22
+  - android-11.0.0_r23
+  - android-11.0.0_r24
+  - android-11.0.0_r26
+  - android-11.0.0_r27
+  - android-11.0.0_r28
+  - android-11.0.0_r29
+  - android-11.0.0_r38
+  - android-11.0.0_r39
+  - android-11.0.0_r40
+  - android-11.0.0_r43
+  - android-11.0.0_r46
+  - android-12.0.0_r1
+  - android-12.0.0_r10
+  - android-12.0.0_r11
+  - android-12.0.0_r12
+  - android-12.0.0_r13
+  - android-12.0.0_r14
+  - android-12.0.0_r15
+  - android-12.0.0_r16
+  - android-12.0.0_r2
+  - android-12.0.0_r3
+  - android-12.0.0_r4
+  - android-12.0.0_r5
+  - android-12.0.0_r6
+  - android-12.0.0_r7
+  - android-12.0.0_r8
+  - android-12.0.0_r9
+  - android-cts-12.0_r1
+  - android-mainline-11.0.0_r12
+  - android-mainline-11.0.0_r13
+  - android-mainline-11.0.0_r14
+  - android-mainline-11.0.0_r15
+  - android-mainline-11.0.0_r16
+  - android-mainline-11.0.0_r17
+  - android-mainline-11.0.0_r18
+  - android-mainline-11.0.0_r20
+  - android-mainline-11.0.0_r21
+  - android-mainline-11.0.0_r22
+  - android-mainline-11.0.0_r23
+  - android-mainline-11.0.0_r24
+  - android-mainline-11.0.0_r25
+  - android-mainline-11.0.0_r26
+  - android-mainline-11.0.0_r27
+  - android-mainline-11.0.0_r28
+  - android-mainline-11.0.0_r30
+  - android-mainline-11.0.0_r31
+  - android-mainline-11.0.0_r32
+  - android-mainline-11.0.0_r34
+  - android-mainline-11.0.0_r35
+  - android-mainline-11.0.0_r36
+  - android-mainline-11.0.0_r37
+  - android-mainline-11.0.0_r38
+  - android-mainline-11.0.0_r39
+  - android-mainline-11.0.0_r40
+  - android-mainline-11.0.0_r41
+  - android-mainline-11.0.0_r42
+  - android-mainline-11.0.0_r43
+  - android-mainline-11.0.0_r44
+  - android-mainline-12.0.0_r1
+  - android-mainline-12.0.0_r10
+  - android-mainline-12.0.0_r11
+  - android-mainline-12.0.0_r12
+  - android-mainline-12.0.0_r13
+  - android-mainline-12.0.0_r14
+  - android-mainline-12.0.0_r15
+  - android-mainline-12.0.0_r16
+  - android-mainline-12.0.0_r17
+  - android-mainline-12.0.0_r18
+  - android-mainline-12.0.0_r19
+  - android-mainline-12.0.0_r2
+  - android-mainline-12.0.0_r20
+  - android-mainline-12.0.0_r3
+  - android-mainline-12.0.0_r4
+  - android-mainline-12.0.0_r5
+  - android-mainline-12.0.0_r6
+  - android-mainline-12.0.0_r7
+  - android-mainline-12.0.0_r8
+  - android-mainline-12.0.0_r9
+  - android-platform-12.0.0_r1
+  - android-platform-12.0.0_r2
+  - android-s-beta-1
+  - android-s-beta-2
+  - android-s-beta-3
+  - android-s-beta-4
+  - android-s-beta-5
+  - android-s-preview-1
+  - android-s-v2-preview-1
+  - android-vts-12.0_r1
+  - platform-tools-29.0.1
+  - platform-tools-29.0.2
+  - platform-tools-29.0.3
+  - platform-tools-29.0.4
+  - platform-tools-29.0.5
+  - platform-tools-29.0.6
+  - platform-tools-30.0.0
+  - platform-tools-30.0.1
+  - platform-tools-30.0.2
+  - platform-tools-30.0.3
+  - platform-tools-30.0.4
+  - platform-tools-30.0.5
+  - platform-tools-31.0.0
+  - platform-tools-31.0.1
+  - platform-tools-31.0.2
+  - platform-tools-31.0.3
+  ecosystem_specific:
+    severity: MEDIUM

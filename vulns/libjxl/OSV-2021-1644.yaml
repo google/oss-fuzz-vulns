@@ -1,0 +1,28 @@
+id: OSV-2021-1644
+summary: Container-overflow in void jxl::CopyImageTo<int>
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=41608
+
+  Crash type: Container-overflow READ 4
+  Crash state:
+  void jxl::CopyImageTo<int>
+  jxl::ModularFrameDecoder::DecodeGroup
+  jxl::FrameDecoder::ProcessACGroup
+modified: '2021-12-04T00:00:20.702689Z'
+published: '2021-12-04T00:00:20.702471Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=41608
+affected:
+- package:
+    name: libjxl
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/libjxl/libjxl.git
+    events:
+    - introduced: fcc8ef851c6aa4ad9be711b1cac83e8c23aa51e1
+    - fixed: a915cd9ed0fd803449307aa37ba3c5364398bcc6
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []

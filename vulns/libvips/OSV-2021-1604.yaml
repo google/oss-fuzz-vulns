@@ -1,0 +1,33 @@
+id: OSV-2021-1604
+summary: Heap-buffer-overflow in jxl::N_AVX2::SingleFromSingle
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=41225
+
+  Crash type: Heap-buffer-overflow READ {*}
+  Crash state:
+  jxl::N_AVX2::SingleFromSingle
+  jxl::ThreadPool::SequentialRunnerStatic
+  jxl::ModularFrameDecoder::ModularImageToDecodedRect
+modified: '2021-11-22T00:00:35.889516Z'
+published: '2021-11-22T00:00:35.889328Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=41225
+affected:
+- package:
+    name: libvips
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/libvips/libvips
+    events:
+    - introduced: cb58d7d9600282802d2d04a04254f6d9dfefe203
+    - fixed: 5b089951ac8e92670df03ddfaca5d5f2b7cbbebd
+  versions:
+  - v8.12.0
+  - v8.12.1
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: 4fd2de57540082b80c4c67a4cd1efc7bd7d86b42:f352bcd1911d8076a5d5a218d2d15f5d583d4e5b
+    fixed_range: de199fe59cde38290709c7eb0d25406daa1314d7:5b089951ac8e92670df03ddfaca5d5f2b7cbbebd
