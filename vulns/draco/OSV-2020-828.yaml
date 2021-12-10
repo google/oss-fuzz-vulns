@@ -8,7 +8,7 @@ details: |
   draco::Metadata::AddSubMetadata
   draco::MetadataDecoder::DecodeMetadata
   draco::MetadataDecoder::DecodeGeometryMetadata
-modified: '2021-10-13T00:05:22.353339Z'
+modified: '2021-12-10T00:07:14.750529Z'
 published: '2020-07-14T05:37:49.784283Z'
 references:
 - type: REPORT
@@ -26,6 +26,7 @@ affected:
   - 1.4.0
   - 1.4.1
   - 1.4.3
+  - 1.5.0
   ecosystem_specific:
-    severity: HIGH
     introduced_range: aef4bfbd61798ecc21d94c873b679fbdeaf92462:79601d2d060be52e673a82ed1c46f4666eb28255
+    severity: HIGH
