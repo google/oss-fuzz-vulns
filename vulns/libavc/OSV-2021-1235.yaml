@@ -8,7 +8,7 @@ details: |
   ih264d_fill_bs1_16x16mb_pslice
   ih264d_compute_bs_non_mbaff_thread
   ih264d_recon_deblk_slice
-modified: '2021-09-12T00:00:37.950013Z'
+modified: '2021-12-11T00:09:35.186704Z'
 published: '2021-09-12T00:00:37.949727Z'
 references:
 - type: REPORT
@@ -132,5 +132,6 @@ affected:
   - platform-tools-31.0.1
   - platform-tools-31.0.2
   - platform-tools-31.0.3
+  - android-cts-12.0_r2
   ecosystem_specific:
     severity: MEDIUM
