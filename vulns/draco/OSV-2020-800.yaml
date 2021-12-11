@@ -9,7 +9,7 @@ details: |
   std::__1::__tree<std::__1::__value_type<std::__1::basic_string<char, std::__1::c
   std::__1::pair<std::__1::__tree_iterator<std::__1::__value_type<std::__1::basic_
   std::__1::map<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1
-modified: '2021-10-13T00:05:23.046889Z'
+modified: '2021-12-11T00:09:45.066869Z'
 published: '2020-07-14T05:37:39.527741Z'
 references:
 - type: REPORT
@@ -27,6 +27,7 @@ affected:
   - 1.4.0
   - 1.4.1
   - 1.4.3
+  - 1.5.0
   ecosystem_specific:
     severity: MEDIUM
     introduced_range: aef4bfbd61798ecc21d94c873b679fbdeaf92462:79601d2d060be52e673a82ed1c46f4666eb28255
