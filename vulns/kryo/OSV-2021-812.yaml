@@ -8,7 +8,7 @@ details: |
   com.esotericsoftware.kryo.serializers.FieldSerializer.read
   com.esotericsoftware.kryo.Kryo.readObject
   DeserializeStringFuzzer.fuzzerTestOneInput
-modified: '2021-05-29T00:01:09.011918Z'
+modified: '2021-12-12T00:07:30.013369Z'
 published: '2021-05-29T00:01:09.011604Z'
 references:
 - type: REPORT
@@ -24,6 +24,7 @@ affected:
     - introduced: adbac896f1d88a91f645c60133d66b1e83eadf3a
   versions:
   - kryo-parent-5.2.0
+  - kryo-parent-5.2.1
   ecosystem_specific:
-    severity: LOW
     introduced_range: 8ba63454705509b99049ee0292348c52e3f34fa1:1d72a60844fdd75250f09f74fd493485092026fe
+    severity: LOW
