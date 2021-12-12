@@ -8,7 +8,7 @@ details: |
   draco::DepthFirstTraverser<draco::CornerTable, draco::MeshAttributeIndicesEncodi
   draco::MeshTraversalSequencer<draco::DepthFirstTraverser<draco::CornerTable, dra
   draco::SequentialAttributeDecodersController::DecodeAttributes
-modified: '2021-09-01T00:00:21.323350Z'
+modified: '2021-12-12T00:07:28.076079Z'
 published: '2021-09-01T00:00:21.323146Z'
 references:
 - type: REPORT
@@ -26,6 +26,7 @@ affected:
   - 1.4.0
   - 1.4.1
   - 1.4.3
+  - 1.5.0
   ecosystem_specific:
     severity: HIGH
   database_specific:
