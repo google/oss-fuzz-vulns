@@ -1,0 +1,29 @@
+id: OSV-2021-1670
+summary: Dynamic-stack-buffer-overflow in zend_calc_live_ranges
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42156
+
+  Crash type: Dynamic-stack-buffer-overflow READ 4
+  Crash state:
+  zend_calc_live_ranges
+  pass_two
+  zend_compile_func_decl
+modified: '2021-12-12T00:00:10.869745Z'
+published: '2021-12-12T00:00:10.869505Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42156
+affected:
+- package:
+    name: php
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/php/php-src.git
+    events:
+    - introduced: 9c6b843ff0f4b7af926a69ef89d7f9ec1db31866
+    - fixed: 91734fc5795bc07dc718f9d884a014a90097e56f
+    - introduced: efb901ebedf941039241c6194c452f8a16d807aa
+  ecosystem_specific:
+    severity: null
+  versions: []

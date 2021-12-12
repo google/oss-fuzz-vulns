@@ -1,0 +1,29 @@
+id: OSV-2021-1562
+summary: Heap-buffer-overflow in __bpf_object__open
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=40868
+
+  Crash type: Heap-buffer-overflow WRITE 4
+  Crash state:
+  __bpf_object__open
+  bpf_object__open_mem
+  bpf-object-fuzzer.c
+modified: '2021-11-11T00:01:42.735453Z'
+published: '2021-11-11T00:01:42.735141Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=40868
+affected:
+- package:
+    name: libbpf
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/libbpf/libbpf
+    events:
+    - introduced: d7982f3948552963e009c06f4ed42c376934bc62
+  versions:
+  - v0.6.0
+  - v0.6.1
+  ecosystem_specific:
+    severity: HIGH

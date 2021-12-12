@@ -1,0 +1,45 @@
+id: OSV-2021-1651
+summary: Heap-buffer-overflow in PCIDSK::CPCIDSKFile::ReadFromFile
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=41993
+
+  Crash type: Heap-buffer-overflow WRITE {*}
+  Crash state:
+  PCIDSK::CPCIDSKFile::ReadFromFile
+  PCIDSK::CPCIDSKSegment::ReadFromFile
+  PCIDSK::CPCIDSKBinarySegment::CPCIDSKBinarySegment
+modified: '2021-12-06T00:00:07.397071Z'
+published: '2021-12-06T00:00:07.396834Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=41993
+affected:
+- package:
+    name: gdal
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/OSGeo/gdal
+    events:
+    - introduced: 3c7e9db1ab4d28306a8700e38d2f4c0e2fa46b82
+    - fixed: 1ca6a3e5168c200763fa46d8aa7e698d0b757e7e
+  versions:
+  - v3.3.0
+  - v3.3.0RC1
+  - v3.3.0beta1
+  - v3.3.1
+  - v3.3.1RC1
+  - v3.3.2
+  - v3.3.2RC1
+  - v3.3.2RC2
+  - v3.3.2RC3
+  - v3.3.3
+  - v3.3.3RC1
+  - v3.4.0
+  - v3.4.0RC1
+  - v3.4.0RC2
+  - v3.4.0RC3
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: 53960d2a40b39b4482efc514f9ca289652447675:762a261f32617b506a9fc199040a5dbdc5214716
