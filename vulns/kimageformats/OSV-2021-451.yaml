@@ -8,7 +8,7 @@ details: |
   void apply_sao_internal<unsigned short>
   void apply_sao<unsigned char>
   thread_task_sao::work
-modified: '2021-12-05T00:05:04.784913Z'
+modified: '2021-12-13T00:07:48.664394Z'
 published: '2021-02-28T00:00:09.511962Z'
 references:
 - type: REPORT
@@ -43,5 +43,6 @@ affected:
   - v5.88.0-rc1
   - v5.88.0
   - v5.89.0-rc1
+  - v5.89.0
   ecosystem_specific:
     severity: MEDIUM
