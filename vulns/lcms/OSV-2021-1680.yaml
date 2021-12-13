@@ -1,0 +1,28 @@
+id: OSV-2021-1680
+summary: Global-buffer-overflow in InStringSymbol
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42227
+
+  Crash type: Global-buffer-overflow WRITE {*}
+  Crash state:
+  InStringSymbol
+  InSymbol
+  ParseIT8
+modified: '2021-12-13T00:01:45.106067Z'
+published: '2021-12-13T00:01:45.105861Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42227
+affected:
+- package:
+    name: lcms
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/mm2/Little-CMS.git
+    events:
+    - introduced: 1c667a762c4272ec970a2dd6f945836c52f35720
+    - fixed: 32d19328855dd599bf7f15dcfd5fafd6f87fb0d5
+  ecosystem_specific:
+    severity: null
+  versions: []
