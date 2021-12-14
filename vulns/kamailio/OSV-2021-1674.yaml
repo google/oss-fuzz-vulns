@@ -1,0 +1,28 @@
+id: OSV-2021-1674
+summary: Heap-buffer-overflow in find_sdp_line_delimiter
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42238
+
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  find_sdp_line_delimiter
+  parse_mixed_content
+  parse_sdp
+modified: '2021-12-13T00:00:05.791027Z'
+published: '2021-12-13T00:00:05.790795Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42238
+affected:
+- package:
+    name: kamailio
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/kamailio/kamailio
+    events:
+    - introduced: 199f13a7dfac8cd817850c6a6afe5ba510835418
+    - fixed: b83810eb1eb70f326698db874a1f67cf6a8d06cf
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []

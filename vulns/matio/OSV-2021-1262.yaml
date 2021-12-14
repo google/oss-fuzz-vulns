@@ -1,0 +1,27 @@
+id: OSV-2021-1262
+summary: Heap-buffer-overflow in H5O__chunk_deserialize
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=38686
+
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  H5O__chunk_deserialize
+  H5O__cache_chk_deserialize
+  H5C_protect
+modified: '2021-09-15T00:01:43.515583Z'
+published: '2021-09-15T00:01:43.515380Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=38686
+affected:
+- package:
+    name: matio
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: git://git.code.sf.net/p/matio/matio
+    events:
+    - introduced: b89ed176f27c71657587d231794bee09d0461d08
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
