@@ -8,7 +8,7 @@ details: |
   ih264d_parse_decode_slice
   ih264d_parse_nal_unit
   ih264d_video_decode
-modified: '2021-09-12T00:00:40.701818Z'
+modified: '2021-12-14T00:09:20.033870Z'
 published: '2021-09-12T00:00:40.701615Z'
 references:
 - type: REPORT
@@ -350,5 +350,7 @@ affected:
   - platform-tools-31.0.1
   - platform-tools-31.0.2
   - platform-tools-31.0.3
+  - android-12.0.0_r18
+  - android-12.0.0_r20
   ecosystem_specific:
     severity: MEDIUM
