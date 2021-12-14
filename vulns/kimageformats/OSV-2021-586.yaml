@@ -8,7 +8,7 @@ details: |
   void intra_prediction_angular<unsigned short>
   void decode_intra_prediction_internal<unsigned short>
   decode_intra_prediction
-modified: '2021-12-05T00:05:04.836463Z'
+modified: '2021-12-14T00:08:13.883535Z'
 published: '2021-03-31T00:01:03.787831Z'
 references:
 - type: REPORT
@@ -41,5 +41,6 @@ affected:
   - v5.88.0-rc1
   - v5.88.0
   - v5.89.0-rc1
+  - v5.89.0
   ecosystem_specific:
     severity: MEDIUM
