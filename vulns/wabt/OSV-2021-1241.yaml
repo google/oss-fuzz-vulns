@@ -8,7 +8,7 @@ details: |
   wabt::string_view::compare
   wabt::ReadBinary
   wabt::ReadBinaryIr
-modified: '2021-09-12T00:01:27.535890Z'
+modified: '2021-12-15T00:09:28.908093Z'
 published: '2021-09-12T00:01:27.535685Z'
 references:
 - type: REPORT
@@ -22,6 +22,7 @@ affected:
     repo: https://github.com/WebAssembly/wabt
     events:
     - introduced: 5b6070d749a005ad755610c341de813618cc3077
+  versions:
+  - 1.0.25
   ecosystem_specific:
     severity: MEDIUM
-  versions: []
