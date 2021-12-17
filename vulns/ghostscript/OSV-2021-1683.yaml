@@ -1,0 +1,29 @@
+id: OSV-2021-1683
+summary: Memcpy-param-overlap in pdfi_set_input_stream
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42268
+
+  Crash type: Memcpy-param-overlap
+  Crash state:
+  pdfi_set_input_stream
+  zPDFstream
+  gs_interpret
+modified: '2021-12-14T00:00:12.736266Z'
+published: '2021-12-14T00:00:12.736055Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42268
+affected:
+- package:
+    name: ghostscript
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: git://git.ghostscript.com/ghostpdl.git
+    events:
+    - introduced: 75fbddf52051987287e62d13c659eb73ba16982f
+    - fixed: 2be8b436910cfc8b013a13df000c3c854cf3c5c5
+  versions:
+  - ghostpdl-9.56.0-test-base-2
+  ecosystem_specific:
+    severity: MEDIUM

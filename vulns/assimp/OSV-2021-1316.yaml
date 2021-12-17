@@ -1,0 +1,32 @@
+id: OSV-2021-1316
+summary: Stack-buffer-overflow in Assimp::ZipArchiveIOSystem::Implement::MapArchive
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=38870
+
+  Crash type: Stack-buffer-overflow READ {*}
+  Crash state:
+  Assimp::ZipArchiveIOSystem::Implement::MapArchive
+  Assimp::ZipArchiveIOSystem::getFileList
+  Assimp::D3MF::D3MFOpcPackage::D3MFOpcPackage
+modified: '2021-09-18T00:01:34.920446Z'
+published: '2021-09-18T00:01:34.920205Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=38870
+affected:
+- package:
+    name: assimp
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/assimp/assimp.git
+    events:
+    - introduced: 8a975549a99bd21b7a2c09cc37b73e52a3919fed
+  versions:
+  - v5.1.0
+  - v5.1.0.rc1
+  - v5.1.1
+  - v5.1.2
+  - v5.1.3
+  ecosystem_specific:
+    severity: MEDIUM

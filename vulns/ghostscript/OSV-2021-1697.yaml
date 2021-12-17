@@ -1,0 +1,29 @@
+id: OSV-2021-1697
+summary: Heap-use-after-free in stell
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42280
+
+  Crash type: Heap-use-after-free READ 1
+  Crash state:
+  stell
+  pdfi_unread_tell
+  pdfi_dereference
+modified: '2021-12-15T00:01:36.957674Z'
+published: '2021-12-15T00:01:36.957451Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42280
+affected:
+- package:
+    name: ghostscript
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: git://git.ghostscript.com/ghostpdl.git
+    events:
+    - introduced: 75fbddf52051987287e62d13c659eb73ba16982f
+    - fixed: 115663a52dcaef53c91547907f45cc4ffa385537
+  versions:
+  - ghostpdl-9.56.0-test-base-2
+  ecosystem_specific:
+    severity: HIGH

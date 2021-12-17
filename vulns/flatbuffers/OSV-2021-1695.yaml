@@ -1,0 +1,28 @@
+id: OSV-2021-1695
+summary: Heap-buffer-overflow in flexbuffers::Verifier::VerifyRef
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42373
+
+  Crash type: Heap-buffer-overflow READ 4
+  Crash state:
+  flexbuffers::Verifier::VerifyRef
+  flexbuffers::Verifier::VerifyVector
+  flexbuffers::Verifier::VerifyRef
+modified: '2021-12-15T00:00:06.478590Z'
+published: '2021-12-15T00:00:06.478363Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42373
+affected:
+- package:
+    name: flatbuffers
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/google/flatbuffers
+    events:
+    - introduced: 4264daadd2487cd3e63cf83f5dca3f0ccc53af64
+    - fixed: 5b0d4911278eec507fe5e621bd81fd7db42aa4db
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []

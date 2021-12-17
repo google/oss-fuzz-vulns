@@ -1,0 +1,29 @@
+id: OSV-2021-1688
+summary: Stack-buffer-overflow in pdfi_annot_draw
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42329
+
+  Crash type: Stack-buffer-overflow WRITE {*}
+  Crash state:
+  pdfi_annot_draw
+  pdfi_do_annotations
+  pdfi_page_render
+modified: '2021-12-14T00:00:54.347494Z'
+published: '2021-12-14T00:00:54.347284Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42329
+affected:
+- package:
+    name: ghostscript
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: git://git.ghostscript.com/ghostpdl.git
+    events:
+    - introduced: 75fbddf52051987287e62d13c659eb73ba16982f
+    - fixed: a7f2474c5aaac7a75a4119478c77d2cafcf45b85
+  versions:
+  - ghostpdl-9.56.0-test-base-2
+  ecosystem_specific:
+    severity: HIGH

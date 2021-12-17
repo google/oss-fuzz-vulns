@@ -1,0 +1,28 @@
+id: OSV-2021-1684
+summary: UNKNOWN READ in pdfi_open_memory_stream_from_filtered_stream
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42285
+
+  Crash type: UNKNOWN READ
+  Crash state:
+  pdfi_open_memory_stream_from_filtered_stream
+  pdfi_create_iccbased
+  pdfi_create_colorspace_by_array
+modified: '2021-12-14T00:00:15.030245Z'
+published: '2021-12-14T00:00:15.030040Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42285
+affected:
+- package:
+    name: ghostscript
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: git://git.ghostscript.com/ghostpdl.git
+    events:
+    - introduced: 6a4847cd2566e8446753fd0ba17fe2f42c6e0315
+    - fixed: 7fe54b1dbf221864b25ff55eccf1d624c07bb21d
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []

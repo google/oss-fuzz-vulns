@@ -1,0 +1,29 @@
+id: OSV-2021-1694
+summary: Stack-buffer-overflow in pdfi_read_cff_dict
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42298
+
+  Crash type: Stack-buffer-overflow WRITE 4
+  Crash state:
+  pdfi_read_cff_dict
+  pdfi_read_cff_dict
+  pdfi_read_cff_dict
+modified: '2021-12-14T00:01:48.327245Z'
+published: '2021-12-14T00:01:48.327020Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42298
+affected:
+- package:
+    name: ghostscript
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: git://git.ghostscript.com/ghostpdl.git
+    events:
+    - introduced: 75fbddf52051987287e62d13c659eb73ba16982f
+    - fixed: 0c4e9f7312637d512fec2b806570bfbea9da1aff
+  versions:
+  - ghostpdl-9.56.0-test-base-2
+  ecosystem_specific:
+    severity: HIGH

@@ -1,0 +1,28 @@
+id: OSV-2021-1681
+summary: Segv on unknown address in pdfi_dereference
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42283
+
+  Crash type: Segv on unknown address
+  Crash state:
+  pdfi_dereference
+  pdfi_get_child
+  pdfi_get_page_dict
+modified: '2021-12-14T00:00:07.309595Z'
+published: '2021-12-14T00:00:07.309348Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42283
+affected:
+- package:
+    name: ghostscript
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: git://git.ghostscript.com/ghostpdl.git
+    events:
+    - introduced: 6a4847cd2566e8446753fd0ba17fe2f42c6e0315
+    - fixed: 632230836e6a5aa347c037a66f478d752b62242a
+  ecosystem_specific:
+    severity: null
+  versions: []
