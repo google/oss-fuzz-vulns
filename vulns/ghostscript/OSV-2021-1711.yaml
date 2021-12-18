@@ -1,0 +1,29 @@
+id: OSV-2021-1711
+summary: Heap-buffer-overflow in cmap_endcodespacerange_func
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42541
+
+  Crash type: Heap-buffer-overflow WRITE {*}
+  Crash state:
+  cmap_endcodespacerange_func
+  pdfi_pscript_interpret
+  pdfi_read_cmap
+modified: '2021-12-18T00:00:16.893742Z'
+published: '2021-12-18T00:00:16.893499Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42541
+affected:
+- package:
+    name: ghostscript
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: git://git.ghostscript.com/ghostpdl.git
+    events:
+    - introduced: 75fbddf52051987287e62d13c659eb73ba16982f
+    - fixed: 1a3c64e7a65025ea024bd65cc726b6ec5dd0e172
+  versions:
+  - ghostpdl-9.56.0-test-base-2
+  ecosystem_specific:
+    severity: HIGH
