@@ -1,0 +1,28 @@
+id: OSV-2021-1719
+summary: Heap-buffer-overflow in insert_free
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42560
+
+  Crash type: Heap-buffer-overflow WRITE 8
+  Crash state:
+  insert_free
+  chunk_obj_alloc
+  chunk_alloc_bytes
+modified: '2021-12-19T00:00:35.862469Z'
+published: '2021-12-19T00:00:35.862260Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42560
+affected:
+- package:
+    name: ghostscript
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: git://git.ghostscript.com/ghostpdl.git
+    events:
+    - introduced: 31e249d5cbd561d76dd2149ceee5fe3a2d84d658
+    - fixed: 4107288ebb23d418ff5c1a9d40c48a4f00950193
+  ecosystem_specific:
+    severity: HIGH
+  versions: []

@@ -1,0 +1,28 @@
+id: OSV-2021-1715
+summary: Segv on unknown address in sreadbuf
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42489
+
+  Crash type: Segv on unknown address
+  Crash state:
+  sreadbuf
+  spgetcc
+  sgets
+modified: '2021-12-18T00:01:42.169289Z'
+published: '2021-12-18T00:01:42.169089Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42489
+affected:
+- package:
+    name: ghostscript
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: git://git.ghostscript.com/ghostpdl.git
+    events:
+    - introduced: 6a4847cd2566e8446753fd0ba17fe2f42c6e0315
+    - fixed: 4107288ebb23d418ff5c1a9d40c48a4f00950193
+  ecosystem_specific:
+    severity: null
+  versions: []

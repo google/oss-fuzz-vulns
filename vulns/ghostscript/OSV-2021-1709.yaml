@@ -1,0 +1,28 @@
+id: OSV-2021-1709
+summary: Stack-buffer-overflow in pdfi_do_image
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42454
+
+  Crash type: Stack-buffer-overflow WRITE {*}
+  Crash state:
+  pdfi_do_image
+  pdfi_do_image_or_form
+  pdfi_Do
+modified: '2021-12-17T00:00:38.802070Z'
+published: '2021-12-17T00:00:38.801863Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42454
+affected:
+- package:
+    name: ghostscript
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: git://git.ghostscript.com/ghostpdl.git
+    events:
+    - introduced: 82b097fe8e76ea92f69ef483f45c0cf491a98d43
+    - fixed: 9191f693bbfe5b70b91cb068d2fb38316aa0cc5e
+  ecosystem_specific:
+    severity: HIGH
+  versions: []

@@ -1,0 +1,29 @@
+id: OSV-2021-1707
+summary: Negative-size-param in general_endcidrange_func
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42479
+
+  Crash type: Negative-size-param
+  Crash state:
+  general_endcidrange_func
+  cmap_endcidrange_func
+  pdfi_pscript_interpret
+modified: '2021-12-17T00:00:30.513321Z'
+published: '2021-12-17T00:00:30.513115Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42479
+affected:
+- package:
+    name: ghostscript
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: git://git.ghostscript.com/ghostpdl.git
+    events:
+    - introduced: 75fbddf52051987287e62d13c659eb73ba16982f
+    - fixed: cb2b78cddfc67fee13b4bec3f16747f2ec611793
+  versions:
+  - ghostpdl-9.56.0-test-base-2
+  ecosystem_specific:
+    severity: null
