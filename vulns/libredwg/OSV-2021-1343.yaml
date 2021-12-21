@@ -1,0 +1,38 @@
+id: OSV-2021-1343
+summary: Heap-buffer-overflow in get_next_owned_entity
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=38994
+
+  Crash type: Heap-buffer-overflow READ 8
+  Crash state:
+  get_next_owned_entity
+  dwg_write_dxfb
+  llvmfuzz.c
+modified: '2021-09-21T00:01:33.177601Z'
+published: '2021-09-21T00:01:33.177403Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=38994
+affected:
+- package:
+    name: libredwg
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/LibreDWG/libredwg
+    events:
+    - introduced: 1d691254204db38d1473e050776346b7de751ce8
+  versions:
+  - 0.12.4.4313
+  - 0.12.4.4317
+  - 0.12.4.4321
+  - 0.12.4.4324
+  - 0.12.4.4331
+  - 0.12.4.4338
+  - 0.12.4.4343
+  - 0.12.4.4348
+  - 0.12.4.4362
+  - 0.12.4.4364
+  - 0.12.4.4367
+  ecosystem_specific:
+    severity: MEDIUM
