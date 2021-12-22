@@ -1,0 +1,22 @@
+id: OSV-2021-1726
+summary: UNKNOWN READ in pdfi_dereference
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42616
+
+  Crash type: UNKNOWN READ
+  Crash state:
+  pdfi_dereference
+  pdfi_deref_loop_detect
+  pdfi_dict_get
+modified: '2021-12-20T00:02:16.105176Z'
+published: '2021-12-20T00:02:16.104976Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42616
+affected:
+- package:
+    name: ghostscript
+    ecosystem: OSS-Fuzz
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []

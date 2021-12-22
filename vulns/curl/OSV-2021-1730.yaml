@@ -1,0 +1,30 @@
+id: OSV-2021-1730
+summary: Heap-buffer-overflow in seturl
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42708
+
+  Crash type: Heap-buffer-overflow READ {*}
+  Crash state:
+  seturl
+  parseurl
+  curl_url_set
+modified: '2021-12-21T00:01:40.507152Z'
+published: '2021-12-21T00:01:40.506935Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42708
+affected:
+- package:
+    name: curl
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/curl/curl.git
+    events:
+    - introduced: 7a92f865b43aac942ae5755a7a3a06775751fdea
+    - fixed: ef4dc1b5be8c092550617ea0f1b9844a9cdc6ae8
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    fixed_range: 7a92f865b43aac942ae5755a7a3a06775751fdea:ef4dc1b5be8c092550617ea0f1b9844a9cdc6ae8
+  versions: []
