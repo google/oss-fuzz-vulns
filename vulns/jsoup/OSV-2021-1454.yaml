@@ -1,0 +1,32 @@
+id: OSV-2021-1454
+summary: Uncaught exception in org.jsoup.parser.HtmlTreeBuilder.process
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=39939
+
+  Crash type: Uncaught exception
+  Crash state:
+  org.jsoup.parser.HtmlTreeBuilder.process
+  org.jsoup.parser.HtmlTreeBuilderState$9.process
+  org.jsoup.parser.HtmlTreeBuilder.process
+modified: '2021-10-15T00:01:43.342797Z'
+published: '2021-10-15T00:01:43.342560Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=39939
+affected:
+- package:
+    name: jsoup
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/jhy/jsoup/
+    events:
+    - introduced: a049edcdae373ef6c24747845adb846d1298cb72
+    - fixed: 5d94d2af069f8b5a51f5902b8079c18efede2350
+  versions:
+  - jsoup-1.14.3
+  ecosystem_specific:
+    severity: LOW
+  database_specific:
+    fixed_range: d4f7d7ab0b25f20ec77e074bc5d47b3ee5c81f22:5d94d2af069f8b5a51f5902b8079c18efede2350
+    introduced_range: d075651d59bd0565f718077bfe4e3c6f543f477b:ec9847624f75ee485247f1173cafa20eb4a385a8

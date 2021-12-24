@@ -1,0 +1,34 @@
+id: OSV-2021-1385
+summary: Heap-buffer-overflow in Assimp::BaseImporter::ConvertToUTF8
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=39339
+
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  Assimp::BaseImporter::ConvertToUTF8
+  Assimp::BaseImporter::TextFileToBuffer
+  Assimp::OpenGEX::OpenGEXImporter::InternReadFile
+modified: '2021-09-28T00:00:07.487166Z'
+published: '2021-09-28T00:00:07.486971Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=39339
+affected:
+- package:
+    name: assimp
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/assimp/assimp.git
+    events:
+    - introduced: 8a975549a99bd21b7a2c09cc37b73e52a3919fed
+    - fixed: 215f4e1f4dcca57f1dee9f18519df1af659ad62c
+  versions:
+  - v5.1.0
+  - v5.1.0.rc1
+  - v5.1.1
+  - v5.1.2
+  - v5.1.3
+  - v5.1.4
+  ecosystem_specific:
+    severity: MEDIUM
