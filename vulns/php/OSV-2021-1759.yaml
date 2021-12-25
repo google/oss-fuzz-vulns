@@ -1,0 +1,28 @@
+id: OSV-2021-1759
+summary: Heap-use-after-free in zend_hash_reverse_apply
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42894
+
+  Crash type: Heap-use-after-free READ 4
+  Crash state:
+  zend_hash_reverse_apply
+  shutdown_destructors
+  zend_call_destructors
+modified: '2021-12-25T00:02:02.853979Z'
+published: '2021-12-25T00:02:02.853767Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42894
+affected:
+- package:
+    name: php
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/php/php-src.git
+    events:
+    - introduced: 97cdf62a6a1d8491f8d1ef1580f344400eb51f1d
+    - introduced: 713dcb28181895d241e6dbe63f63ee654ba757b4
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
