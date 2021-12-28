@@ -1,0 +1,27 @@
+id: OSV-2021-1373
+summary: Global-buffer-overflow in vte_write_debug
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=39313
+
+  Crash type: Global-buffer-overflow READ 1
+  Crash state:
+  vte_write_debug
+  csi_dev_attr
+  do_action
+modified: '2021-09-27T00:00:07.177626Z'
+published: '2021-09-27T00:00:07.177410Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=39313
+affected:
+- package:
+    name: libtsm
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: git://people.freedesktop.org/~dvdhrm/libtsm
+    events:
+    - introduced: b73acb4c71698a764763ae8dad94c1e8a2b8d7a3
+  ecosystem_specific:
+    severity: null
+  versions: []

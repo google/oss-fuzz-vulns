@@ -1,0 +1,28 @@
+id: OSV-2021-1380
+summary: Negative-size-param in ntfs_attr_walk_special
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=39317
+
+  Crash type: Negative-size-param
+  Crash state:
+  ntfs_attr_walk_special
+  tsk_fs_attr_walk
+  ntfs_proc_attrseq
+modified: '2021-09-27T00:01:19.023948Z'
+published: '2021-09-27T00:01:19.023732Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=39317
+affected:
+- package:
+    name: sleuthkit
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/sleuthkit/sleuthkit
+    events:
+    - introduced: 84f5109267cb2a54a950be0dd3480f9ff2762e36
+  versions:
+  - sleuthkit-4.11.1
+  ecosystem_specific:
+    severity: null

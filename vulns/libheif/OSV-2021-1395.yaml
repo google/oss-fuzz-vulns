@@ -1,0 +1,33 @@
+id: OSV-2021-1395
+summary: Heap-buffer-overflow in Op_YCbCr_to_RGB<unsigned char>::convert_colorspace
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=39373
+
+  Crash type: Heap-buffer-overflow READ {*}
+  Crash state:
+  Op_YCbCr_to_RGB<unsigned char>::convert_colorspace
+  heif::ColorConversionPipeline::convert_image
+  heif::convert_colorspace
+modified: '2021-09-29T00:01:29.961714Z'
+published: '2021-09-29T00:01:29.961504Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=39373
+affected:
+- package:
+    name: libheif
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/strukturag/libheif.git
+    events:
+    - introduced: 7cd1e3a92dba6ac0d873550a7ba894d2584036e9
+  versions:
+  - v1.10.0
+  - v1.11.0
+  - v1.12.0
+  - v1.8.0
+  - v1.9.0
+  - v1.9.1
+  ecosystem_specific:
+    severity: MEDIUM
