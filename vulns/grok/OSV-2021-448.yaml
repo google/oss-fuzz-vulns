@@ -8,7 +8,7 @@ details: |
   std::__1::__packaged_task_func<std::__1::__bind<grk::mct::decompress_irrev
   std::__1::packaged_task<int
   ThreadPool::ThreadPool
-modified: '2021-10-22T00:04:55.490963Z'
+modified: '2021-12-29T00:08:38.295968Z'
 published: '2021-02-26T00:00:17.945183Z'
 references:
 - type: REPORT
@@ -33,5 +33,6 @@ affected:
   - v9.4.0
   - v9.5.0
   - v9.5.0.debian
+  - v9.6.0
   ecosystem_specific:
     severity: MEDIUM
