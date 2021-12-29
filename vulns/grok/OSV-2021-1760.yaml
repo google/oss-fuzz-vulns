@@ -1,0 +1,28 @@
+id: OSV-2021-1760
+summary: Heap-buffer-overflow in grk::GrkImage::sycc420_to_rgb
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42931
+
+  Crash type: Heap-buffer-overflow WRITE 4
+  Crash state:
+  grk::GrkImage::sycc420_to_rgb
+  grk::GrkImage::color_sycc_to_rgb
+  grk::GrkImage::colorConvert
+modified: '2021-12-26T00:00:10.275044Z'
+published: '2021-12-26T00:00:10.274571Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42931
+affected:
+- package:
+    name: grok
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/GrokImageCompression/grok.git
+    events:
+    - introduced: c8494d9ce0bee12cc31f543a452c414ab0f774b4
+    - fixed: aca5525b7dd533fe6b08db45721cb57f46c56940
+  ecosystem_specific:
+    severity: HIGH
+  versions: []

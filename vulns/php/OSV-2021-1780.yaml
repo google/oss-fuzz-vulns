@@ -1,0 +1,28 @@
+id: OSV-2021-1780
+summary: Heap-use-after-free in zend_jit_fetch_dim_r_helper
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=43055
+
+  Crash type: Heap-use-after-free READ 4
+  Crash state:
+  zend_jit_fetch_dim_r_helper
+  zero
+  zend_execute
+modified: '2021-12-29T00:00:46.057180Z'
+published: '2021-12-29T00:00:46.056980Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=43055
+affected:
+- package:
+    name: php
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/php/php-src.git
+    events:
+    - introduced: faa143ca1b11f09ef15f1cab8ed460dc1c59898c
+    - introduced: 75b2973974414fb52a19c0466c8f2afc2081eb49
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
