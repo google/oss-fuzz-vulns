@@ -1,0 +1,30 @@
+id: OSV-2021-1704
+summary: Stack-buffer-overflow in pdfi_create_iccbased
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42460
+
+  Crash type: Stack-buffer-overflow WRITE 4
+  Crash state:
+  pdfi_create_iccbased
+  pdfi_create_colorspace_by_array
+  pdfi_setcolorspace
+modified: '2021-12-17T00:00:14.243954Z'
+published: '2021-12-17T00:00:14.243740Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42460
+affected:
+- package:
+    name: ghostscript
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: git://git.ghostscript.com/ghostpdl.git
+    events:
+    - introduced: 75fbddf52051987287e62d13c659eb73ba16982f
+    - fixed: d066f5000d9a959708838c0ee471ffeb84d00bfc
+  versions:
+  - ghostpdl-9.56.0-test-base-2
+  - ghostpdl-9.56.0-test-base-3
+  ecosystem_specific:
+    severity: HIGH

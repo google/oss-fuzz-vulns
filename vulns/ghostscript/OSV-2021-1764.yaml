@@ -1,0 +1,30 @@
+id: OSV-2021-1764
+summary: UNKNOWN READ in read_xref_stream_entries
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42927
+
+  Crash type: UNKNOWN READ
+  Crash state:
+  read_xref_stream_entries
+  pdfi_process_xref_stream
+  pdfi_read_xref_stream_dict
+modified: '2021-12-26T00:01:39.227964Z'
+published: '2021-12-26T00:01:39.227755Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42927
+affected:
+- package:
+    name: ghostscript
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: git://git.ghostscript.com/ghostpdl.git
+    events:
+    - introduced: 75fbddf52051987287e62d13c659eb73ba16982f
+    - fixed: b0855fa22cd6ba447482ee2ae1c5e091428c4bc0
+  versions:
+  - ghostpdl-9.56.0-test-base-2
+  - ghostpdl-9.56.0-test-base-3
+  ecosystem_specific:
+    severity: MEDIUM
