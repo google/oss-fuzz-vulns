@@ -1,0 +1,28 @@
+id: OSV-2021-1748
+summary: Heap-buffer-overflow in jxl::N_AVX2::FloatToRGBA8
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42839
+
+  Crash type: Heap-buffer-overflow WRITE 1
+  Crash state:
+  jxl::N_AVX2::FloatToRGBA8
+  jxl::FinalizeImageRect
+  jxl::ThreadPool::RunCallState<jxl::FinalizeFrameDecoding
+modified: '2021-12-24T00:01:41.024252Z'
+published: '2021-12-24T00:01:41.024002Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42839
+affected:
+- package:
+    name: libjxl
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/libjxl/libjxl.git
+    events:
+    - introduced: 7c5dfcd35fc6a91ae9d776bda7e23ecfaa8bfb38
+    - fixed: 533444ddc1a71987f263a40fb6286c3303a54a51
+  ecosystem_specific:
+    severity: HIGH
+  versions: []

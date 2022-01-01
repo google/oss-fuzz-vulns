@@ -1,0 +1,28 @@
+id: OSV-2021-1786
+summary: Segv on unknown address in r_buf_free
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=43092
+
+  Crash type: Segv on unknown address
+  Crash state:
+  r_buf_free
+  destroy
+  r_bin_file_free
+modified: '2021-12-31T00:00:11.428553Z'
+published: '2021-12-31T00:00:11.428301Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=43092
+affected:
+- package:
+    name: radare2
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/radareorg/radare2
+    events:
+    - introduced: 3b04d3ef4093dafeff72e22589a3598ca0202ac9
+    - fixed: 500686304a355ef007875d841c848275487f7626
+  ecosystem_specific:
+    severity: null
+  versions: []
