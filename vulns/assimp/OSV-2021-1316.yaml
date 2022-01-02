@@ -8,7 +8,7 @@ details: |
   Assimp::ZipArchiveIOSystem::Implement::MapArchive
   Assimp::ZipArchiveIOSystem::getFileList
   Assimp::D3MF::D3MFOpcPackage::D3MFOpcPackage
-modified: '2021-12-19T00:07:59.310047Z'
+modified: '2022-01-02T00:08:36.845310Z'
 published: '2021-09-18T00:01:34.920205Z'
 references:
 - type: REPORT
@@ -29,5 +29,6 @@ affected:
   - v5.1.2
   - v5.1.3
   - v5.1.4
+  - v5.1.5
   ecosystem_specific:
     severity: MEDIUM
