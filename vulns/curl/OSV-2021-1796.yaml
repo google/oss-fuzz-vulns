@@ -1,0 +1,30 @@
+id: OSV-2021-1796
+summary: Heap-buffer-overflow in Curl_sasl_decode_mech
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=43186
+
+  Crash type: Heap-buffer-overflow READ 10
+  Crash state:
+  Curl_sasl_decode_mech
+  Curl_sasl_parse_url_auth_option
+  pop3_parse_url_options
+modified: '2022-01-02T00:01:47.989273Z'
+published: '2022-01-02T00:01:47.989011Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=43186
+affected:
+- package:
+    name: curl
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/curl/curl.git
+    events:
+    - introduced: e1b04106f8cf3cf2a0b5284ddc048ea621ce94c9
+    - fixed: d8f6e5dc8ebce2b2c258227651c5f193de5e58f8
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: a4d9876c314a1786912006f6e60f21f3571ae3d1:d8f6e5dc8ebce2b2c258227651c5f193de5e58f8
+  versions: []
