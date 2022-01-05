@@ -1,0 +1,29 @@
+id: OSV-2021-1418
+summary: Heap-buffer-overflow in spvTextEncodeOperand
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=39637
+
+  Crash type: Heap-buffer-overflow READ 4
+  Crash state:
+  spvTextEncodeOperand
+  spvTextEncodeOperand
+  spvTextEncodeOpcode
+modified: '2021-10-07T00:00:34.846864Z'
+published: '2021-10-07T00:00:34.846656Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=39637
+affected:
+- package:
+    name: spirv-tools
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/KhronosGroup/SPIRV-Tools.git
+    events:
+    - introduced: 2d12367ced2dd34444822340070b4545ae7c02f1
+  versions:
+  - sdk-1.2.198.0
+  - v2021.4
+  ecosystem_specific:
+    severity: MEDIUM

@@ -1,0 +1,28 @@
+id: OSV-2021-1727
+summary: UNKNOWN WRITE in void uWS::WebSocketProtocol<true, Impl>::UnrolledXor<4>
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42672
+
+  Crash type: UNKNOWN WRITE
+  Crash state:
+  void uWS::WebSocketProtocol<true, Impl>::UnrolledXor<4>
+  void uWS::WebSocketProtocol<true, Impl>::UnrolledXor<10>
+  void uWS::WebSocketProtocol<true, Impl>::UnrolledXor<14>
+modified: '2021-12-21T00:00:12.717116Z'
+published: '2021-12-21T00:00:12.716885Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42672
+affected:
+- package:
+    name: uwebsockets
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/uNetworking/uWebSockets.git
+    events:
+    - introduced: 0c8be4d20ccce75be632dd8aae109b68485ccb40
+    - fixed: 5df695e02aa4f7b5be1959082239eb72db275be5
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
