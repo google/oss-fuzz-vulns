@@ -8,7 +8,7 @@ details: |
   zend_jit_fetch_dim_r_helper
   zero
   zend_execute
-modified: '2021-12-29T00:00:46.057180Z'
+modified: '2022-01-05T02:10:48.664613Z'
 published: '2021-12-29T00:00:46.056980Z'
 references:
 - type: REPORT
@@ -24,6 +24,7 @@ affected:
     - introduced: faa143ca1b11f09ef15f1cab8ed460dc1c59898c
     - introduced: 75b2973974414fb52a19c0466c8f2afc2081eb49
     - fixed: 9362d6f5f08bf5f86fc30cf12433e1634f746c4d
+  versions:
+  - php-8.1.2RC1
   ecosystem_specific:
     severity: HIGH
-  versions: []
