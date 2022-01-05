@@ -8,7 +8,7 @@ details: |
   zend_hash_reverse_apply
   shutdown_destructors
   zend_call_destructors
-modified: '2021-12-25T00:02:02.853979Z'
+modified: '2022-01-05T03:49:05.101758Z'
 published: '2021-12-25T00:02:02.853767Z'
 references:
 - type: REPORT
@@ -24,6 +24,7 @@ affected:
     - introduced: 97cdf62a6a1d8491f8d1ef1580f344400eb51f1d
     - introduced: 713dcb28181895d241e6dbe63f63ee654ba757b4
     - fixed: eee3b1d917591e5106aef9fd4fe93393e95fc13d
+  versions:
+  - php-8.1.2RC1
   ecosystem_specific:
     severity: HIGH
-  versions: []
