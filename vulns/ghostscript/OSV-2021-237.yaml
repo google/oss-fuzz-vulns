@@ -22,40 +22,7 @@ affected:
     repo: git://git.ghostscript.com/ghostpdl.git
     events:
     - introduced: 45e765e59a45b46dcb05e8c729689a7c0574a48c
-    - fixed: 0bd6877f480a84657696a80adc13f9c5485dd996
-  versions:
-  - ghostpdl-9.28rc1
-  - ghostpdl-9.28rc2
-  - ghostpdl-9.28rc3
-  - ghostpdl-9.28rc4
-  - ghostpdl-9.50
-  - ghostpdl-9.51
-  - ghostpdl-9.51rc1
-  - ghostpdl-9.51rc2
-  - ghostpdl-9.51rc2_test
-  - ghostpdl-9.51rc2_test2
-  - ghostpdl-9.51rc3
-  - ghostpdl-9.52
-  - ghostpdl-9.52-test-base-1
-  - ghostpdl-9.52-test-base-2
-  - ghostpdl-9.52-test-base-3
-  - ghostpdl-9.52-test-base-4
-  - ghostpdl-9.52-test-base-5
-  - ghostpdl-9.52-test-base-6
-  - ghostpdl-9.52.1
-  - ghostpdl-9.53.0
-  - ghostpdl-9.53.0-test-base-0
-  - ghostpdl-9.53.0rc1
-  - ghostpdl-9.53.0rc2
-  - ghostpdl-9.53.1
-  - ghostpdl-9.53.2
-  - ghostpdl-9.53.3
-  - ghostpdl-9.54.0-test-base-0
-  - ghostscript-9.50
-  - ghostscript-9.51
-  - ghostscript-9.52
-  - gs9.28-temp-for-testing-tag
-  - rjj_9.53.2_test
+    - fixed: 7861fcad13c497728189feafb41cd57b5b50ea25
   ecosystem_specific:
     introduced_range: f209fb3a0f50cd0a9974d8627a4ac7f358f60c8a:470897e484fb0bfaa8553e0ccd5b9db91eda008b
     severity: HIGH
