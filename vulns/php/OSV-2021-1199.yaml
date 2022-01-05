@@ -8,7 +8,7 @@ details: |
   i_zval_ptr_dtor
   concat_function
   zend_binary_op
-modified: '2021-09-04T00:01:34.068775Z'
+modified: '2022-01-05T01:50:48.800006Z'
 published: '2021-09-04T00:01:34.068585Z'
 references:
 - type: REPORT
@@ -24,5 +24,6 @@ affected:
     - introduced: 1902f730ee2bda60552f34c0643e2d7b47e4fb64
   versions:
   - php-8.1.0
+  - php-8.1.2RC1
   ecosystem_specific:
     severity: HIGH
