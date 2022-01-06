@@ -8,7 +8,7 @@ details: |
   ih264d_parse_decode_slice
   ih264d_parse_nal_unit
   ih264d_video_decode
-modified: '2022-01-05T00:08:43.381376Z'
+modified: '2022-01-06T00:08:43.283617Z'
 published: '2021-09-12T00:00:40.701615Z'
 references:
 - type: REPORT
@@ -359,5 +359,8 @@ affected:
   - android-vts-9.0_r19
   - android-12.0.0_r25
   - android-12.0.0_r26
+  - android-security-10.0.0_r62
+  - android-security-11.0.0_r51
+  - android-security-9.0.0_r76
   ecosystem_specific:
     severity: MEDIUM
