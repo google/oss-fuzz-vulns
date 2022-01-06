@@ -8,7 +8,7 @@ details: |
   Curl_sasl_decode_mech
   Curl_sasl_parse_url_auth_option
   pop3_parse_url_options
-modified: '2021-12-22T00:01:51.212391Z'
+modified: '2022-01-06T00:10:05.750925Z'
 published: '2021-12-22T00:01:51.212187Z'
 references:
 - type: REPORT
@@ -22,6 +22,7 @@ affected:
     repo: https://github.com/curl/curl.git
     events:
     - introduced: 7a92f865b43aac942ae5755a7a3a06775751fdea
+  versions:
+  - curl-7_81_0
   ecosystem_specific:
     severity: MEDIUM
-  versions: []
