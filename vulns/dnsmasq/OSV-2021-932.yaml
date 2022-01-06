@@ -8,7 +8,7 @@ details: |
   resize_packet
   FuzzResizePacket
   fuzz_rfc1035.c
-modified: '2021-10-08T00:05:03.400974Z'
+modified: '2022-01-06T00:07:48.121207Z'
 published: '2021-07-08T00:01:25.139349Z'
 references:
 - type: REPORT
@@ -34,5 +34,6 @@ affected:
   - v2.87test2
   - v2.87test3
   - v2.87test4
+  - v2.87test5
   ecosystem_specific:
     severity: HIGH
