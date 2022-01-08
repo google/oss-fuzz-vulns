@@ -1,0 +1,29 @@
+id: OSV-2021-1741
+summary: Stack-buffer-overflow in line_join_points
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42796
+
+  Crash type: Stack-buffer-overflow WRITE 4
+  Crash state:
+  line_join_points
+  stroke_add_compat
+  gx_stroke_path_only
+modified: '2021-12-23T00:00:50.608103Z'
+published: '2021-12-23T00:00:50.607893Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42796
+affected:
+- package:
+    name: ghostscript
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: git://git.ghostscript.com/ghostpdl.git
+    events:
+    - introduced: 866d8b4b104e2dcbd8352cf86edff28bbf9ad165
+    - fixed: 07cfc24d532beadf23d50effa3b8a0bca45b849d
+  versions:
+  - ghostpdl-9.56.0-test-base-3
+  ecosystem_specific:
+    severity: HIGH

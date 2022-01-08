@@ -1,0 +1,29 @@
+id: OSV-2022-17
+summary: Heap-buffer-overflow in ap_is_chunked
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=43371
+
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  ap_is_chunked
+  fuzz_utils.c
+modified: '2022-01-07T00:01:40.476842Z'
+published: '2022-01-07T00:01:40.476644Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=43371
+affected:
+- package:
+    name: apache-httpd
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/apache/httpd
+    events:
+    - introduced: 30c11ebbb696469d4b2c098e64dec583c8155395
+    - fixed: ed611d3754bc38f2d9c9aabf0fb7becd8d8fdc7d
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    fixed_range: 30c11ebbb696469d4b2c098e64dec583c8155395:ed611d3754bc38f2d9c9aabf0fb7becd8d8fdc7d
+  versions: []

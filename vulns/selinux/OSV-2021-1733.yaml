@@ -1,0 +1,28 @@
+id: OSV-2021-1733
+summary: UNKNOWN READ in mls_semantic_level_expand
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42729
+
+  Crash type: UNKNOWN READ
+  Crash state:
+  mls_semantic_level_expand
+  policydb_user_cache
+  hashtab_map
+modified: '2021-12-22T00:00:12.409511Z'
+published: '2021-12-22T00:00:12.409265Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42729
+affected:
+- package:
+    name: selinux
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/SELinuxProject/selinux
+    events:
+    - introduced: 82438341f799a4700544bf5142f01a7876ad2631
+    - fixed: b78560fd372e01c11ca4f183f929d99b1f89f314
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []

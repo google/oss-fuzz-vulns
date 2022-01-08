@@ -1,0 +1,30 @@
+id: OSV-2021-1752
+summary: Heap-buffer-overflow in s_hex_process
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42896
+
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  s_hex_process
+  s_exD_process
+  sreadbuf
+modified: '2021-12-25T00:00:23.788694Z'
+published: '2021-12-25T00:00:23.788476Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42896
+affected:
+- package:
+    name: ghostscript
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: git://git.ghostscript.com/ghostpdl.git
+    events:
+    - introduced: 2be8b436910cfc8b013a13df000c3c854cf3c5c5
+    - fixed: 067d47b5efa3631ac58a62916136ad21cd9017df
+  versions:
+  - ghostpdl-9.56.0-test-base-3
+  - ghostpdl-9.56.0-test-base-4
+  ecosystem_specific:
+    severity: MEDIUM
