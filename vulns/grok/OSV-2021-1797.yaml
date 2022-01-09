@@ -1,0 +1,28 @@
+id: OSV-2021-1797
+summary: Heap-buffer-overflow in grk::GrkImage::cieLabToRGB
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=43161
+
+  Crash type: Heap-buffer-overflow WRITE 4
+  Crash state:
+  grk::GrkImage::cieLabToRGB
+  grk::GrkImage::applyColourManagement
+  grk::CodeStreamDecompress::postProcess
+modified: '2022-01-02T00:01:48.961510Z'
+published: '2022-01-02T00:01:48.961299Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=43161
+affected:
+- package:
+    name: grok
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/GrokImageCompression/grok.git
+    events:
+    - introduced: 28f1ea700dfc35a1364898fdc5c1e2fe500e8bc7
+    - fixed: 5ee01b547418efb8b90702d8b8ec5d05d1f28015
+  ecosystem_specific:
+    severity: HIGH
+  versions: []

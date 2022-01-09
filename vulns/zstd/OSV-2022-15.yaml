@@ -1,0 +1,32 @@
+id: OSV-2022-15
+summary: Global-buffer-overflow in ZSTD_compressBlock_opt0
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=43365
+
+  Crash type: Global-buffer-overflow READ 1
+  Crash state:
+  ZSTD_compressBlock_opt0
+  ZSTD_compressBlock_btopt
+  ZSTD_buildSeqStore
+modified: '2022-01-07T00:00:09.720758Z'
+published: '2022-01-07T00:00:09.720542Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=43365
+affected:
+- package:
+    name: zstd
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/facebook/zstd
+    events:
+    - introduced: 08ceda3dfc9c1e4ae7e35d210e0318a696f7f394
+    - fixed: 5f2c3d9720f5b5f8294f0c8e8da0a39d2529b335
+  versions:
+  - v1.4.8
+  - v1.4.9
+  - v1.5.0
+  - v1.5.1
+  ecosystem_specific:
+    severity: null
