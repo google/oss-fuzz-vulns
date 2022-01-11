@@ -8,7 +8,7 @@ details: |
   ih264d_parse_decode_slice
   ih264d_parse_nal_unit
   ih264d_video_decode
-modified: '2022-01-06T00:08:43.283617Z'
+modified: '2022-01-11T00:09:18.653113Z'
 published: '2021-09-12T00:00:40.701615Z'
 references:
 - type: REPORT
@@ -362,5 +362,6 @@ affected:
   - android-security-10.0.0_r62
   - android-security-11.0.0_r51
   - android-security-9.0.0_r76
+  - android-o-mr1-iot-release-smart-display-r40.1J
   ecosystem_specific:
     severity: MEDIUM
