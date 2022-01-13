@@ -1,0 +1,30 @@
+id: OSV-2021-1724
+summary: Segv on unknown address in chunk_obj_alloc
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42633
+
+  Crash type: Segv on unknown address
+  Crash state:
+  chunk_obj_alloc
+  chunk_alloc_bytes
+  pdfi_pscript_interpret
+modified: '2021-12-20T00:01:59.846405Z'
+published: '2021-12-20T00:01:59.846207Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42633
+affected:
+- package:
+    name: ghostscript
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: git://git.ghostscript.com/ghostpdl.git
+    events:
+    - introduced: 1a3c64e7a65025ea024bd65cc726b6ec5dd0e172
+    - fixed: 47e220942dfc68de777b91db1c2b3e81d0275e1b
+  versions:
+  - ghostpdl-9.56.0-test-base-3
+  - ghostpdl-9.56.0-test-base-4
+  ecosystem_specific:
+    severity: null

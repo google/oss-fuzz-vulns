@@ -1,0 +1,29 @@
+id: OSV-2022-1
+summary: Heap-use-after-free in pdfi_dereference
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=43268
+
+  Crash type: Heap-use-after-free READ 4
+  Crash state:
+  pdfi_dereference
+  pdfi_dict_next
+  pdfi_check_Resources
+modified: '2022-01-04T00:00:08.007790Z'
+published: '2022-01-04T00:00:08.007553Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=43268
+affected:
+- package:
+    name: ghostscript
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: git://git.ghostscript.com/ghostpdl.git
+    events:
+    - introduced: c7cd63be10c23c712921d9ad7359ddbe5d282e44
+    - fixed: 3f5a2b75b2914b41ee600ab6226f1b4061bf267e
+  versions:
+  - ghostpdl-9.56.0-test-base-4
+  ecosystem_specific:
+    severity: HIGH

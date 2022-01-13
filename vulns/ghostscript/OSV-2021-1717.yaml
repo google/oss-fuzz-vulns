@@ -1,0 +1,31 @@
+id: OSV-2021-1717
+summary: UNKNOWN READ in pdfi_read_cff_font
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42559
+
+  Crash type: UNKNOWN READ
+  Crash state:
+  pdfi_read_cff_font
+  pdfi_load_font
+  pdfi_load_dict_font
+modified: '2021-12-19T00:00:21.544629Z'
+published: '2021-12-19T00:00:21.544417Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42559
+affected:
+- package:
+    name: ghostscript
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: git://git.ghostscript.com/ghostpdl.git
+    events:
+    - introduced: 75fbddf52051987287e62d13c659eb73ba16982f
+    - fixed: b0e070917438341e342000928ff35aacba0d95fa
+  versions:
+  - ghostpdl-9.56.0-test-base-2
+  - ghostpdl-9.56.0-test-base-3
+  - ghostpdl-9.56.0-test-base-4
+  ecosystem_specific:
+    severity: MEDIUM

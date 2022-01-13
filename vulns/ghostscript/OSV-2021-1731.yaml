@@ -1,0 +1,31 @@
+id: OSV-2021-1731
+summary: Memcpy-param-overlap in gs_fapi_do_char
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42656
+
+  Crash type: Memcpy-param-overlap
+  Crash state:
+  gs_fapi_do_char
+  pdfi_fapi_build_char
+  show_proceed
+modified: '2021-12-21T00:01:56.737053Z'
+published: '2021-12-21T00:01:56.736819Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42656
+affected:
+- package:
+    name: ghostscript
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: git://git.ghostscript.com/ghostpdl.git
+    events:
+    - introduced: 75fbddf52051987287e62d13c659eb73ba16982f
+    - fixed: 0f8c0b5742577e31e419e84fbf0bcd42db0c5f41
+  versions:
+  - ghostpdl-9.56.0-test-base-2
+  - ghostpdl-9.56.0-test-base-3
+  - ghostpdl-9.56.0-test-base-4
+  ecosystem_specific:
+    severity: MEDIUM

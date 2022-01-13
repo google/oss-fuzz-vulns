@@ -1,0 +1,31 @@
+id: OSV-2021-1753
+summary: UNKNOWN READ in names_string_ref
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42907
+
+  Crash type: UNKNOWN READ
+  Crash state:
+  names_string_ref
+  zfont_glyph_name
+  pdfi_fapi_get_glyphname_or_cid
+modified: '2021-12-25T00:00:41.933505Z'
+published: '2021-12-25T00:00:41.933291Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42907
+affected:
+- package:
+    name: ghostscript
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: git://git.ghostscript.com/ghostpdl.git
+    events:
+    - introduced: 75fbddf52051987287e62d13c659eb73ba16982f
+    - fixed: cb1fec72cee2eab9cdda54dabe1db173c7a3ad9e
+  versions:
+  - ghostpdl-9.56.0-test-base-2
+  - ghostpdl-9.56.0-test-base-3
+  - ghostpdl-9.56.0-test-base-4
+  ecosystem_specific:
+    severity: MEDIUM

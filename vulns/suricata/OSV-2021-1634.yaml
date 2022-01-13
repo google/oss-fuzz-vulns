@@ -1,0 +1,22 @@
+id: OSV-2021-1634
+summary: Dynamic-stack-buffer-overflow in OutputJsonDNP3SetItem
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=41487
+
+  Crash type: Dynamic-stack-buffer-overflow READ 4
+  Crash state:
+  OutputJsonDNP3SetItem
+  JsonDNP3LogObjects
+  JsonDNP3LogResponse
+modified: '2021-11-30T00:00:09.401252Z'
+published: '2021-11-30T00:00:09.401031Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=41487
+affected:
+- package:
+    name: suricata
+    ecosystem: OSS-Fuzz
+  ecosystem_specific:
+    severity: null
+  versions: []
