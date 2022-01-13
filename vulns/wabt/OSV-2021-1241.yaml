@@ -8,7 +8,7 @@ details: |
   wabt::string_view::compare
   wabt::ReadBinary
   wabt::ReadBinaryIr
-modified: '2021-12-15T00:09:28.908093Z'
+modified: '2022-01-13T00:07:34.905928Z'
 published: '2021-09-12T00:01:27.535685Z'
 references:
 - type: REPORT
@@ -24,5 +24,6 @@ affected:
     - introduced: 5b6070d749a005ad755610c341de813618cc3077
   versions:
   - 1.0.25
+  - test_tag
   ecosystem_specific:
     severity: MEDIUM
