@@ -1,0 +1,30 @@
+id: OSV-2022-39
+summary: Stack-buffer-overflow in BZ2_decompress
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=43564
+
+  Crash type: Stack-buffer-overflow READ 1
+  Crash state:
+  BZ2_decompress
+  BZ2_bzDecompress
+  ft_bzip2_file_fill_output
+modified: '2022-01-14T00:00:06.951940Z'
+published: '2022-01-14T00:00:06.951694Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=43564
+affected:
+- package:
+    name: freetype2
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/freetype/freetype2-testing.git
+    events:
+    - introduced: 3c052a837a3c960709227a0d6ddd256e87b88853
+    - fixed: 0eb700d45bb00af96bff247efc79cee58dbfa4ed
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: e3ac6a743c4871c0b6de35e097248824a5454c40:84057a41a887fb82032a2a8de36192af961be27c
+  versions: []

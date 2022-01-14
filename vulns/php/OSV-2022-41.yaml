@@ -1,0 +1,31 @@
+id: OSV-2022-41
+summary: Segv on unknown address in zero
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=43538
+
+  Crash type: Segv on unknown address
+  Crash state:
+  zero
+  zend_execute
+  fuzzer_do_request_from_buffer
+modified: '2022-01-14T00:00:26.166270Z'
+published: '2022-01-14T00:00:26.166067Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=43538
+affected:
+- package:
+    name: php
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/php/php-src.git
+    events:
+    - introduced: 72cdb0af5500b57e4a83c6eeb64faf5bb3a917e7
+    - fixed: a8ccbafa6e0e86e319cd7439b725b0c692fc1ac1
+    - fixed: 78974a4776a25425d836a8e842b8519b14d4127b
+    - introduced: d8b0337cff18d4a7e6ec288dd470efa2e720ecf8
+    - fixed: 522406c0ec8d35f12683acfb3f4ee8d5b6ea6f13
+  ecosystem_specific:
+    severity: null
+  versions: []
