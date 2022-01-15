@@ -1,0 +1,28 @@
+id: OSV-2022-35
+summary: Use-after-poison in absl::BytesToHexString
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=43554
+
+  Crash type: Use-after-poison READ 1
+  Crash state:
+  absl::BytesToHexString
+modified: '2022-01-13T00:00:25.384374Z'
+published: '2022-01-13T00:00:25.384147Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=43554
+affected:
+- package:
+    name: tcmalloc
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/google/tcmalloc
+    events:
+    - introduced: 778abcc57b634d93f2b9fe196f556673402b9a53
+    - fixed: a4838d5b4ab520f4d6360865464d63993561c732
+  ecosystem_specific:
+    severity: HIGH
+  database_specific:
+    fixed_range: c9da0eab4728e145803692e876d9277da7fd2a6a:a4838d5b4ab520f4d6360865464d63993561c732
+  versions: []

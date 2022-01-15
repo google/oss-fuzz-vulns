@@ -1,0 +1,28 @@
+id: OSV-2022-40
+summary: UNKNOWN READ in md_build_attribute
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=43587
+
+  Crash type: UNKNOWN READ
+  Crash state:
+  md_build_attribute
+  md_enter_leave_span_a
+  md_process_normal_block_contents
+modified: '2022-01-14T00:00:14.345242Z'
+published: '2022-01-14T00:00:14.345044Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=43587
+affected:
+- package:
+    name: md4c
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/mity/md4c
+    events:
+    - introduced: db9ab417b11eaf96722b6cfb22f8ead5e22513c9
+    - fixed: 62b60979f6a281b2b3cf883abc84299431fe2f76
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []

@@ -1,0 +1,30 @@
+id: OSV-2022-36
+summary: Heap-buffer-overflow in void absl::BytesToHexStringInternal<std::__1::basic_string<char,
+  std::__1::char_
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=43553
+
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  void absl::BytesToHexStringInternal<std::__1::basic_string<char, std::__1::char_
+  absl::BytesToHexString
+modified: '2022-01-13T00:00:36.808581Z'
+published: '2022-01-13T00:00:36.808390Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=43553
+affected:
+- package:
+    name: tcmalloc
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/google/tcmalloc
+    events:
+    - introduced: 778abcc57b634d93f2b9fe196f556673402b9a53
+    - fixed: a4838d5b4ab520f4d6360865464d63993561c732
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    fixed_range: c9da0eab4728e145803692e876d9277da7fd2a6a:a4838d5b4ab520f4d6360865464d63993561c732
+  versions: []
