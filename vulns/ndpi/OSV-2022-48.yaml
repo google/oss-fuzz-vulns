@@ -1,0 +1,30 @@
+id: OSV-2022-48
+summary: Heap-buffer-overflow in processClientServerHello
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=43664
+
+  Crash type: Heap-buffer-overflow READ 2
+  Crash state:
+  processClientServerHello
+  processTLSBlock
+  ndpi_search_tls_udp
+modified: '2022-01-16T00:01:02.352631Z'
+published: '2022-01-16T00:01:02.352424Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=43664
+affected:
+- package:
+    name: ndpi
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/ntop/nDPI.git
+    events:
+    - introduced: 9c3bfeca80a5064ce5ac689002a9f518d0cb3347
+    - fixed: eb5d7b07afae0d1dd8f5b079835d8f1ec66dc160
+  versions:
+  - '3.4'
+  - '4.0'
+  ecosystem_specific:
+    severity: MEDIUM
