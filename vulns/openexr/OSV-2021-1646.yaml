@@ -1,0 +1,32 @@
+id: OSV-2021-1646
+summary: Heap-buffer-overflow in uncompress_b44_impl
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=41625
+
+  Crash type: Heap-buffer-overflow READ {*}
+  Crash state:
+  uncompress_b44_impl
+  default_decompress_chunk
+  exr_decoding_run
+modified: '2021-12-04T00:01:33.435658Z'
+published: '2021-12-04T00:01:33.435462Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=41625
+affected:
+- package:
+    name: openexr
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/openexr
+  ranges:
+  - type: GIT
+    repo: https://github.com/AcademySoftwareFoundation/openexr
+    events:
+    - introduced: 40eb606dc5e8b04b7634f8a4a15f44b4e2044191
+    - fixed: 236c4b2782d787d56ddc586ed4a313c1d31acd95
+    - introduced: 57b05e055c7065ac5873f64e42350449be1eccb8
+  versions:
+  - v3.1.3
+  - v3.1.3-rc
+  ecosystem_specific:
+    severity: MEDIUM

@@ -1,0 +1,33 @@
+id: OSV-2021-1463
+summary: UNKNOWN READ in helper_be_stw_mmu_armeb
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=40073
+
+  Crash type: UNKNOWN READ
+  Crash state:
+  helper_be_stw_mmu_armeb
+modified: '2021-10-19T00:00:32.912635Z'
+published: '2021-10-19T00:00:32.912410Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=40073
+affected:
+- package:
+    name: unicorn
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/unicorn
+  ranges:
+  - type: GIT
+    repo: https://github.com/unicorn-engine/unicorn.git
+    events:
+    - introduced: 34ddafcbcf6d16508a63623a68715394ea4e12d8
+  versions:
+  - 1.0.3
+  - 2.0.0-rc1
+  - 2.0.0-rc2
+  - 2.0.0-rc3
+  - 2.0.0-rc4
+  - 2.0.0-rc5
+  - 2.0.0-rc5.post1
+  ecosystem_specific:
+    severity: MEDIUM

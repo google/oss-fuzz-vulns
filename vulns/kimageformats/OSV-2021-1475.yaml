@@ -1,0 +1,49 @@
+id: OSV-2021-1475
+summary: Heap-buffer-overflow in derive_spatial_luma_vector_prediction
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=40107
+
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  derive_spatial_luma_vector_prediction
+  fill_luma_motion_vector_predictors
+  motion_vectors_and_ref_indices
+modified: '2021-10-21T00:01:39.891838Z'
+published: '2021-10-21T00:01:39.891638Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=40107
+affected:
+- package:
+    name: kimageformats
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/kimageformats
+  ranges:
+  - type: GIT
+    repo: https://invent.kde.org/frameworks/kimageformats.git
+    events:
+    - introduced: ca52d4ddf540cc731d0f31dbccc1897f7e6d9db4
+  versions:
+  - v5.80.0
+  - v5.80.0-rc1
+  - v5.81.0
+  - v5.81.0-rc1
+  - v5.81.0-rc2
+  - v5.82.0-rc1
+  - v5.83.0
+  - v5.83.0-rc1
+  - v5.84.0-rc1
+  - v5.85.0
+  - v5.85.0-rc1
+  - v5.86.0
+  - v5.86.0-rc1
+  - v5.87.0
+  - v5.87.0-rc1
+  - v5.88.0
+  - v5.88.0-rc1
+  - v5.89.0
+  - v5.89.0-rc1
+  - v5.90.0
+  - v5.90.0-rc1
+  ecosystem_specific:
+    severity: MEDIUM

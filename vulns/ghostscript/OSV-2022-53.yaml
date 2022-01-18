@@ -1,0 +1,29 @@
+id: OSV-2022-53
+summary: Heap-buffer-overflow in mem_true24_fill_rectangle
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=43688
+
+  Crash type: Heap-buffer-overflow WRITE 4
+  Crash state:
+  mem_true24_fill_rectangle
+  gx_dc_pure_fill_rectangle
+  gx_default_fillpage
+modified: '2022-01-17T00:00:11.001907Z'
+published: '2022-01-17T00:00:11.001652Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=43688
+affected:
+- package:
+    name: ghostscript
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/ghostscript
+  ranges:
+  - type: GIT
+    repo: git://git.ghostscript.com/ghostpdl.git
+    events:
+    - introduced: b98c81c443fc9ea7c6351eff306da74765d2581e
+    - fixed: 0c036b19d498afdbe07895ff605298372b3432e2
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
