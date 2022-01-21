@@ -1,0 +1,31 @@
+id: OSV-2021-1775
+summary: Heap-buffer-overflow in hfs_dir_open_meta_cb
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=43040
+
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  hfs_dir_open_meta_cb
+  hfs_cat_traverse
+  hfs_dir_open_meta
+modified: '2021-12-29T00:00:18.595869Z'
+published: '2021-12-29T00:00:18.595646Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=43040
+affected:
+- package:
+    name: sleuthkit
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/sleuthkit
+  ranges:
+  - type: GIT
+    repo: https://github.com/sleuthkit/sleuthkit
+    events:
+    - introduced: 6bac602fc47bd668fb0b8c14ce64c073ecc2de63
+    - fixed: 890b7ede03ed065237566930c0e95737b6df0bbd
+  versions:
+  - sleuthkit-4.11.0
+  - sleuthkit-4.11.1
+  ecosystem_specific:
+    severity: MEDIUM

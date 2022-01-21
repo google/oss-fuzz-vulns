@@ -1,0 +1,32 @@
+id: OSV-2022-47
+summary: Heap-buffer-overflow in mem_mono_copy_mono
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=43621
+
+  Crash type: Heap-buffer-overflow READ 2
+  Crash state:
+  mem_mono_copy_mono
+  mem_mapped4_copy_color
+  tile_clip_copy_color
+modified: '2022-01-16T00:00:36.108547Z'
+published: '2022-01-16T00:00:36.108268Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=43621
+affected:
+- package:
+    name: ghostscript
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/ghostscript
+  ranges:
+  - type: GIT
+    repo: git://git.ghostscript.com/ghostpdl.git
+    events:
+    - introduced: 75fbddf52051987287e62d13c659eb73ba16982f
+    - fixed: fd267e86e80929b9b82d8741552250a121d4f8c9
+  versions:
+  - ghostpdl-9.56.0-test-base-2
+  - ghostpdl-9.56.0-test-base-3
+  - ghostpdl-9.56.0-test-base-4
+  ecosystem_specific:
+    severity: MEDIUM
