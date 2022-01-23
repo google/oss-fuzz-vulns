@@ -1,0 +1,36 @@
+id: OSV-2021-1745
+summary: Heap-buffer-overflow in std::__1::basic_string<char, std::__1::char_traits<char>,
+  std::__1::allocator<ch
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42862
+
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<ch
+  bool SmilesParseOps::parser::parse_data_sgroup<std::__1::__wrap_iter<char const*
+  bool SmilesParseOps::parser::parse_it<std::__1::__wrap_iter<char const*> >
+modified: '2021-12-24T00:00:18.937522Z'
+published: '2021-12-24T00:00:18.937291Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42862
+affected:
+- package:
+    name: rdkit
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/rdkit
+  ranges:
+  - type: GIT
+    repo: https://github.com/rdkit/rdkit.git
+    events:
+    - introduced: 2138c51b8c92d4e1c5b69a2a33811a744aacbc61
+  versions:
+  - Release_2021_09_1
+  - Release_2021_09_1b1
+  - Release_2021_09_2
+  - Release_2021_09_3
+  - Release_2021_09_4
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: 5065340b20d03fbf4395f4fb32c88f22ab790f32:e32810c65e6b9c19746397065a634417798a3928
