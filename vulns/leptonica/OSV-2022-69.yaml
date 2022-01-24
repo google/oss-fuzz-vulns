@@ -1,0 +1,34 @@
+id: OSV-2022-69
+summary: Stack-buffer-overflow in pixCountPixels
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=43841
+
+  Crash type: Stack-buffer-overflow READ 4
+  Crash state:
+  pixCountPixels
+  pixCountPixelsInRect
+  pix3_fuzzer.cc
+modified: '2022-01-21T00:01:32.742600Z'
+published: '2022-01-21T00:01:32.742217Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=43841
+affected:
+- package:
+    name: leptonica
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/leptonica
+  ranges:
+  - type: GIT
+    repo: https://github.com/DanBloomberg/leptonica.git
+    events:
+    - introduced: b9c2544f9528dd122ed8a757deb2f458c6d5b5f6
+    - fixed: 748723a795e48ce0ec0ce2fa78082ef0c62aac9c
+  versions:
+  - 1.81.0
+  - 1.81.1
+  - 1.82.0
+  ecosystem_specific:
+    severity: null
+  database_specific:
+    introduced_range: 6012d1b615079134f1d399ac7058a88a0f70c702:9562d40781afffb0ae041681346ab5443e36528f

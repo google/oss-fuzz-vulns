@@ -1,0 +1,28 @@
+id: OSV-2022-84
+summary: Heap-buffer-overflow in Core::Stream::File::open_path
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=43978
+
+  Crash type: Heap-buffer-overflow READ {*}
+  Crash state:
+  Core::Stream::File::open_path
+  Core::Stream::File::open
+  Audio::FlacLoaderPlugin::FlacLoaderPlugin
+modified: '2022-01-24T00:00:39.186656Z'
+published: '2022-01-24T00:00:39.186446Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=43978
+affected:
+- package:
+    name: serenity
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/serenity
+  ranges:
+  - type: GIT
+    repo: https://github.com/SerenityOS/serenity
+    events:
+    - introduced: 8a92573732fca3ec43ea3ab4cbecda500dfd9a8d
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
