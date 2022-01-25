@@ -1,0 +1,46 @@
+id: OSV-2021-1500
+summary: Heap-buffer-overflow in parse_microsoft_mangled_name
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=40342
+
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  parse_microsoft_mangled_name
+  microsoft_demangle
+  r_bin_demangle_msvc
+modified: '2021-10-28T00:01:38.205501Z'
+published: '2021-10-28T00:01:38.205304Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=40342
+affected:
+- package:
+    name: radare2
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/radare2
+  ranges:
+  - type: GIT
+    repo: https://github.com/radareorg/radare2
+    events:
+    - introduced: 775f2b3d8d6d44f3312f9911dcf70b203268f387
+  versions:
+  - 4.4.0
+  - 4.5.1
+  - 5.0.0
+  - 5.1.0
+  - 5.1.1
+  - 5.2.0
+  - 5.2.1
+  - 5.3.0
+  - 5.3.1
+  - 5.4.0
+  - 5.4.0-git
+  - 5.4.2
+  - 5.5.0
+  - 5.5.2
+  - 5.5.4
+  - continuous
+  - release-5.0.0
+  ecosystem_specific:
+    severity: MEDIUM
+schema_version: 1.2.0
