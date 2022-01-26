@@ -1,0 +1,32 @@
+id: OSV-2022-91
+summary: Heap-buffer-overflow in pixCountArbInRect
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=44008
+
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  pixCountArbInRect
+  pix3_fuzzer.cc
+modified: '2022-01-26T00:01:54.834336Z'
+published: '2022-01-26T00:01:54.834091Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=44008
+affected:
+- package:
+    name: leptonica
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/leptonica
+  ranges:
+  - type: GIT
+    repo: https://github.com/DanBloomberg/leptonica.git
+    events:
+    - introduced: 74fd90e484ef7dd846a42490808d56388d7b033e
+    - fixed: f694a026b400a5f501f055e536eff2bfaa3c1bc1
+  versions:
+  - 1.81.0
+  - 1.81.1
+  - 1.82.0
+  ecosystem_specific:
+    severity: MEDIUM
+schema_version: 1.2.0
