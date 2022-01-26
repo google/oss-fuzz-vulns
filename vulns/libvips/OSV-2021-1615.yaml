@@ -8,7 +8,7 @@ details: |
   jxl::ModularFrameDecoder::DecodeGroup
   jxl::FrameDecoder::ProcessACGroup
   jxl::ThreadPool::RunCallState<jxl::FrameDecoder::ProcessSections
-modified: '2022-01-19T00:08:43.487510Z'
+modified: '2022-01-26T00:09:21.589947Z'
 published: '2021-11-24T00:00:37.422188Z'
 references:
 - type: REPORT
@@ -26,6 +26,7 @@ affected:
   - v8.12.0
   - v8.12.1
   - v8.13.0-pre1
+  - v8.12.2
   ecosystem_specific:
     severity: MEDIUM
   database_specific:
