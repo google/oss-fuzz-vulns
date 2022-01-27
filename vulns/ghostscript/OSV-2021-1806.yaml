@@ -1,0 +1,33 @@
+id: OSV-2021-1806
+summary: Stack-buffer-overflow in pdfi_open_CIDFont_substitute_file
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=44034
+
+  Crash type: Stack-buffer-overflow WRITE {*}
+  Crash state:
+  pdfi_open_CIDFont_substitute_file
+  pdfi_load_font
+  pdfi_read_type0_font
+modified: '2022-01-26T00:01:49.919576Z'
+published: '2022-01-26T00:01:49.919350Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=44034
+affected:
+- package:
+    name: ghostscript
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/ghostscript
+  ranges:
+  - type: GIT
+    repo: git://git.ghostscript.com/ghostpdl.git
+    events:
+    - introduced: 75fbddf52051987287e62d13c659eb73ba16982f
+    - fixed: bd747c5c2d320cd80ce08f16627c70a77ff67978
+  versions:
+  - ghostpdl-9.56.0-test-base-2
+  - ghostpdl-9.56.0-test-base-3
+  - ghostpdl-9.56.0-test-base-4
+  ecosystem_specific:
+    severity: HIGH
+schema_version: 1.2.0

@@ -1,0 +1,30 @@
+id: OSV-2022-81
+summary: Global-buffer-overflow in get_space_object
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=43991
+
+  Crash type: Global-buffer-overflow READ 1
+  Crash state:
+  get_space_object
+  zsetcolorspace
+  gs_interpret
+modified: '2022-01-24T00:00:28.385631Z'
+published: '2022-01-24T00:00:28.385382Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=43991
+affected:
+- package:
+    name: ghostscript
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/ghostscript
+  ranges:
+  - type: GIT
+    repo: git://git.ghostscript.com/ghostpdl.git
+    events:
+    - introduced: 9584d5caa7b3ad25f47cf0fa05a28ee6a8bff6c7
+    - fixed: f99464b8c9c37ffa9d07f2bc5b088572d5e5ca06
+  ecosystem_specific:
+    severity: null
+  versions: []
+schema_version: 1.2.0
