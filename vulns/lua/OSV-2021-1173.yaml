@@ -8,7 +8,7 @@ details: |
   luaG_getfuncline
   luaG_runerror
   luaD_growstack
-modified: '2021-08-28T00:00:12.122474Z'
+modified: '2022-01-28T00:04:59.836905Z'
 published: '2021-08-28T00:00:12.122245Z'
 references:
 - type: REPORT
@@ -22,8 +22,9 @@ affected:
     repo: https://github.com/lua/lua
     events:
     - introduced: 65434b4d1b5509e95940939e28fd90d4558da12e
+  versions:
+  - v5.4.4
   ecosystem_specific:
     severity: MEDIUM
   database_specific:
     introduced_range: 59acd79c05b78950fe03279d60b015aeed5348ab:91673a8ec0ae55e188a790bd2dfdc99246adf20e
-  versions: []
