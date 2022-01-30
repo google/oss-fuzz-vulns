@@ -8,7 +8,7 @@ details: |
   ih264d_fill_bs1_16x16mb_pslice
   ih264d_compute_bs_non_mbaff_thread
   ih264d_recon_deblk_slice
-modified: '2022-01-15T00:07:18.252944Z'
+modified: '2022-01-30T00:04:45.458606Z'
 published: '2021-09-12T00:00:37.949727Z'
 references:
 - type: REPORT
@@ -144,5 +144,13 @@ affected:
   - android-s-v2-preview-2
   - android-s-v2-beta-2
   - android-12.0.0_r27
+  - android-mainline-12.0.0_r21
+  - android-mainline-12.0.0_r23
+  - android-mainline-12.0.0_r25
+  - android-mainline-12.0.0_r26
+  - android-mainline-12.0.0_r27
+  - android-mainline-12.0.0_r31
+  - android-mainline-12.0.0_r33
+  - android-mainline-12.0.0_r36
   ecosystem_specific:
     severity: MEDIUM
