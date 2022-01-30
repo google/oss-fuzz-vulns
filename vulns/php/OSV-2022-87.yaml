@@ -23,6 +23,7 @@ affected:
     repo: https://github.com/php/php-src.git
     events:
     - introduced: 902d64390e49f8bf970588cf53cd8e00630c68bb
+    - fixed: f1ae13509f23a639bd47b4035e6bf74c68cef752
   ecosystem_specific:
     severity: HIGH
   versions: []
