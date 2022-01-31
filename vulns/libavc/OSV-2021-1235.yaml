@@ -8,7 +8,7 @@ details: |
   ih264d_fill_bs1_16x16mb_pslice
   ih264d_compute_bs_non_mbaff_thread
   ih264d_recon_deblk_slice
-modified: '2022-01-30T00:04:45.458606Z'
+modified: '2022-01-31T00:04:47.528618Z'
 published: '2021-09-12T00:00:37.949727Z'
 references:
 - type: REPORT
@@ -152,5 +152,7 @@ affected:
   - android-mainline-12.0.0_r31
   - android-mainline-12.0.0_r33
   - android-mainline-12.0.0_r36
+  - android-mainline-12.0.0_r37
+  - android-mainline-12.0.0_r39
   ecosystem_specific:
     severity: MEDIUM
