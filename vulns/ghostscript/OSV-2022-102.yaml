@@ -1,0 +1,30 @@
+id: OSV-2022-102
+summary: Segv on unknown address in pdfi_array_get
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=44151
+
+  Crash type: Segv on unknown address
+  Crash state:
+  pdfi_array_get
+  pdfi_TJ
+  pdfi_interpret_stream_operator
+modified: '2022-01-30T00:00:20.319534Z'
+published: '2022-01-30T00:00:20.319324Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=44151
+affected:
+- package:
+    name: ghostscript
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/ghostscript
+  ranges:
+  - type: GIT
+    repo: git://git.ghostscript.com/ghostpdl.git
+    events:
+    - introduced: a1f3fb482e257c3b52e470146ec4f9abd51e2ddd
+    - fixed: 85fa6e1874189a349e9842fbf1ed90e2fd474588
+  ecosystem_specific:
+    severity: null
+  versions: []
+schema_version: 1.2.0

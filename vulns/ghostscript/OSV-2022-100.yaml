@@ -1,0 +1,33 @@
+id: OSV-2022-100
+summary: Stack-buffer-overflow in sgets
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=44160
+
+  Crash type: Stack-buffer-overflow WRITE 1
+  Crash state:
+  sgets
+  pdfi_read_bytes
+  read_xref_entry_slow
+modified: '2022-01-30T00:00:08.379317Z'
+published: '2022-01-30T00:00:08.379078Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=44160
+affected:
+- package:
+    name: ghostscript
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/ghostscript
+  ranges:
+  - type: GIT
+    repo: git://git.ghostscript.com/ghostpdl.git
+    events:
+    - introduced: 75fbddf52051987287e62d13c659eb73ba16982f
+    - fixed: 76c27d4f4dceeba02840a29c6e3ba45989a7daca
+  versions:
+  - ghostpdl-9.56.0-test-base-2
+  - ghostpdl-9.56.0-test-base-3
+  - ghostpdl-9.56.0-test-base-4
+  ecosystem_specific:
+    severity: HIGH
+schema_version: 1.2.0

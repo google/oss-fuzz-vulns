@@ -1,0 +1,30 @@
+id: OSV-2021-1805
+summary: Heap-buffer-overflow in ndpi_search_kerberos
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=43925
+
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  ndpi_search_kerberos
+  check_ndpi_detection_func
+  ndpi_check_flow_func
+modified: '2022-01-23T00:00:37.838797Z'
+published: '2022-01-23T00:00:37.838585Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=43925
+affected:
+- package:
+    name: ndpi
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/ndpi
+  ranges:
+  - type: GIT
+    repo: https://github.com/ntop/nDPI.git
+    events:
+    - introduced: ed51987e3a4838dd9aef27dfab2c0651f2f52836
+    - fixed: 9dcc4a2334fa10d7d0a3c019ee35dfde4c06e044
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.2.0
