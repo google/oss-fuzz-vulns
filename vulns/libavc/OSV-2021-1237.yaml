@@ -8,7 +8,7 @@ details: |
   ih264d_parse_decode_slice
   ih264d_parse_nal_unit
   ih264d_video_decode
-modified: '2022-01-30T00:05:48.665866Z'
+modified: '2022-01-31T00:05:47.737727Z'
 published: '2021-09-12T00:00:40.701615Z'
 references:
 - type: REPORT
@@ -376,5 +376,7 @@ affected:
   - android-mainline-12.0.0_r31
   - android-mainline-12.0.0_r33
   - android-mainline-12.0.0_r36
+  - android-mainline-12.0.0_r37
+  - android-mainline-12.0.0_r39
   ecosystem_specific:
     severity: MEDIUM
