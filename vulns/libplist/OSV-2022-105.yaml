@@ -1,0 +1,30 @@
+id: OSV-2022-105
+summary: Heap-buffer-overflow in parse_object
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=44199
+
+  Crash type: Heap-buffer-overflow READ 4
+  Crash state:
+  parse_object
+  parse_object
+  parse_object
+modified: '2022-01-31T00:00:44.191488Z'
+published: '2022-01-31T00:00:44.191266Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=44199
+affected:
+- package:
+    name: libplist
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libplist
+  ranges:
+  - type: GIT
+    repo: https://github.com/libimobiledevice/libplist
+    events:
+    - introduced: 31a353b57152e7b44254853520a06568a4a91dce
+    - fixed: 924ba961d68f6833f617fd3ad03c40f63f287142
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.2.0
