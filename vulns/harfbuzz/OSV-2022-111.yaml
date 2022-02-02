@@ -1,0 +1,31 @@
+id: OSV-2022-111
+summary: Heap-use-after-free in OT::CoverageFormat1::intersected_coverage_glyphs
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=44257
+
+  Crash type: Heap-use-after-free READ 4
+  Crash state:
+  OT::CoverageFormat1::intersected_coverage_glyphs
+  OT::ChainContextFormat3::closure
+  OT::hb_closure_context_t::return_t OT::SubstLookupSubTable::dispatch<OT::hb_clos
+modified: '2022-02-02T00:00:17.029682Z'
+published: '2022-02-02T00:00:17.029431Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=44257
+affected:
+- package:
+    name: harfbuzz
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/harfbuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/harfbuzz/harfbuzz.git
+    events:
+    - introduced: bc899650c7976df7bc62ed55da5268f1d10b9a43
+    - fixed: 4e2f409bce77b97de2d098365977beeeb4447b1e
+  versions:
+  - 3.3.0
+  ecosystem_specific:
+    severity: HIGH
+schema_version: 1.2.0

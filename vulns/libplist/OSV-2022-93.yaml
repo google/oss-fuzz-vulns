@@ -1,0 +1,30 @@
+id: OSV-2022-93
+summary: Heap-buffer-overflow in strtol
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=44089
+
+  Crash type: Heap-buffer-overflow READ 2
+  Crash state:
+  strtol
+  parse_primitive
+  plist_from_json
+modified: '2022-01-27T00:00:50.546428Z'
+published: '2022-01-27T00:00:50.546211Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=44089
+affected:
+- package:
+    name: libplist
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libplist
+  ranges:
+  - type: GIT
+    repo: https://github.com/libimobiledevice/libplist
+    events:
+    - introduced: 7e45a2ee6e407d36374eb6c3d5196e768c246115
+    - fixed: 8ea84caa3cba801c4f240648a6b7919e9b3e0b0d
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.2.0

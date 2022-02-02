@@ -1,0 +1,31 @@
+id: OSV-2022-112
+summary: Heap-use-after-free in hb_bit_set_invertible_t::next
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=44263
+
+  Crash type: Heap-use-after-free READ 1
+  Crash state:
+  hb_bit_set_invertible_t::next
+  hb_bit_set_invertible_t::intersects
+  hb_sparseset_t<hb_bit_set_invertible_t>::intersects
+modified: '2022-02-02T00:01:18.382521Z'
+published: '2022-02-02T00:01:18.382284Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=44263
+affected:
+- package:
+    name: harfbuzz
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/harfbuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/harfbuzz/harfbuzz.git
+    events:
+    - introduced: bc899650c7976df7bc62ed55da5268f1d10b9a43
+    - fixed: 4e2f409bce77b97de2d098365977beeeb4447b1e
+  versions:
+  - 3.3.0
+  ecosystem_specific:
+    severity: HIGH
+schema_version: 1.2.0
