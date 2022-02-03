@@ -1,0 +1,30 @@
+id: OSV-2022-110
+summary: Heap-buffer-overflow in ZSTD_compressLiterals
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=44239
+
+  Crash type: Heap-buffer-overflow WRITE 1
+  Crash state:
+  ZSTD_compressLiterals
+  ZSTD_entropyCompressSeqStore
+  ZSTD_compressSequences
+modified: '2022-02-01T00:01:50.971835Z'
+published: '2022-02-01T00:01:50.971611Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=44239
+affected:
+- package:
+    name: zstd
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/zstd
+  ranges:
+  - type: GIT
+    repo: https://github.com/facebook/zstd
+    events:
+    - introduced: fc2ea97442460158a92d1e7b7c26e7486e45a605
+    - fixed: cad9f8d5f9c451b1cc8ce00a16c125e3d2ffc418
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
+schema_version: 1.2.0
