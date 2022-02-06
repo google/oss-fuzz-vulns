@@ -1,0 +1,30 @@
+id: OSV-2022-120
+summary: Heap-buffer-overflow in ndpi_strncasestr
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=44405
+
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  ndpi_strncasestr
+  check_content_type_and_change_protocol
+  ndpi_search_http_tcp
+modified: '2022-02-05T00:01:07.016558Z'
+published: '2022-02-05T00:01:07.016269Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=44405
+affected:
+- package:
+    name: ndpi
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/ndpi
+  ranges:
+  - type: GIT
+    repo: https://github.com/ntop/nDPI.git
+    events:
+    - introduced: 0dd5ac89f842ac37f4c36ff67620a49b9e7eb76f
+    - fixed: 79968f3245ae7bf277e01d8c5a28349b75d9ac74
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.2.0
