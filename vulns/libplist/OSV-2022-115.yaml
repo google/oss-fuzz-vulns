@@ -1,0 +1,33 @@
+id: OSV-2022-115
+summary: UNKNOWN READ in unescape_string
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=44300
+
+  Crash type: UNKNOWN READ
+  Crash state:
+  unescape_string
+  parse_string
+  parse_object
+modified: '2022-02-04T00:00:20.060920Z'
+published: '2022-02-04T00:00:20.060698Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=44300
+affected:
+- package:
+    name: libplist
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libplist
+  ranges:
+  - type: GIT
+    repo: https://github.com/libimobiledevice/libplist
+    events:
+    - introduced: 31a353b57152e7b44254853520a06568a4a91dce
+    - fixed: 7bc4d2f14e5a0bb80fd7342f954554947b9fee01
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    fixed_range: db4635a081b03eb9a2ea310bfb2f994fd9d4ee94:7bc4d2f14e5a0bb80fd7342f954554947b9fee01
+    introduced_range: f3c65feb0e1f4e177a75ba936d0730f7c3f4b076:7e45a2ee6e407d36374eb6c3d5196e768c246115
+  versions: []
+schema_version: 1.2.0
