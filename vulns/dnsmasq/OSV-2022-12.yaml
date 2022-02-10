@@ -1,0 +1,33 @@
+id: OSV-2022-12
+summary: Heap-buffer-overflow in print_mac
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=43304
+
+  Crash type: Heap-buffer-overflow WRITE 4
+  Crash state:
+  print_mac
+  log_packet
+  dhcp_reply
+modified: '2022-01-06T00:02:06.880825Z'
+published: '2022-01-06T00:02:06.880603Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=43304
+affected:
+- package:
+    name: dnsmasq
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/dnsmasq
+  ranges:
+  - type: GIT
+    repo: git://thekelleys.org.uk/dnsmasq.git
+    events:
+    - introduced: d242cbffa4f20c9f7472f79b3a9e47008b6fe77c
+    - fixed: e426c2d3bc182d790f83039b77a09d55230ca71f
+  versions:
+  - v2.87test5
+  - v2.87test6
+  - v2.87test7
+  ecosystem_specific:
+    severity: HIGH
+schema_version: 1.2.0
