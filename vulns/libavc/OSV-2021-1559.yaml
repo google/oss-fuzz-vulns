@@ -8,7 +8,7 @@ details: |
   ih264d_mark_err_slice_skip
   ih264d_video_decode
   ih264d_api_function
-modified: '2022-02-10T00:05:11.013806Z'
+modified: '2022-02-11T00:07:12.218049Z'
 published: '2021-11-10T00:01:37.617431Z'
 references:
 - type: REPORT
@@ -23,6 +23,9 @@ affected:
     repo: https://android.googlesource.com/platform/external/libavc
     events:
     - introduced: 6efeedf0633e1965a4d4e17d64f14215e9b6d48f
+    - fixed: 2191ac2b82618e4acf73e5247794f51eb01eabd3
+    - fixed: 23247c81421129686df32536ed9a15b0508acd39
+    - fixed: a20b83447dbefd90b21e109fb9d5fcc4d0b1e193
   versions:
   - android-11.0.0_r18
   - android-11.0.0_r19
