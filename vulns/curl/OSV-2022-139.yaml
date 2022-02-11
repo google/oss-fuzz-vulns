@@ -1,0 +1,30 @@
+id: OSV-2022-139
+summary: Heap-use-after-free in nghttp2_http_record_request_method
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=44516
+
+  Crash type: Heap-use-after-free READ 4
+  Crash state:
+  nghttp2_http_record_request_method
+  nghttp2_session_mem_send_internal
+  nghttp2_session_send
+modified: '2022-02-11T00:01:42.563279Z'
+published: '2022-02-11T00:01:42.562895Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=44516
+affected:
+- package:
+    name: curl
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/curl
+  ranges:
+  - type: GIT
+    repo: https://github.com/curl/curl.git
+    events:
+    - introduced: 9f985a11e794fdd2e175a4ea9ceb9d922a3400cd
+    - fixed: 2a1951519e78c1aa404ec0201b9eaeae469d757b
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
+schema_version: 1.2.0
