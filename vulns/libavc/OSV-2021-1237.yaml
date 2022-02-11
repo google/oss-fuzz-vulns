@@ -8,7 +8,7 @@ details: |
   ih264d_parse_decode_slice
   ih264d_parse_nal_unit
   ih264d_video_decode
-modified: '2022-02-10T00:06:18.307453Z'
+modified: '2022-02-11T00:08:15.292697Z'
 published: '2021-09-12T00:00:40.701615Z'
 references:
 - type: REPORT
@@ -29,6 +29,11 @@ affected:
     - introduced: b70ba0edef21355a2459062e275936ae298a32c4
     - introduced: f6473beaa92ca26e6f0fb1da1f0d19aa4a41b99d
     - introduced: fa13b3087684ffefd82d61c34e61714881674cd3
+    - fixed: 2191ac2b82618e4acf73e5247794f51eb01eabd3
+    - fixed: 6a155ff191db9307e91897fc6096e5214a9be0f7
+    - fixed: 23247c81421129686df32536ed9a15b0508acd39
+    - fixed: 45ee63f03a91b91ca6e96ba359cdd92c13830f3c
+    - fixed: a20b83447dbefd90b21e109fb9d5fcc4d0b1e193
   versions:
   - android-10.0.0_r12
   - android-10.0.0_r13
