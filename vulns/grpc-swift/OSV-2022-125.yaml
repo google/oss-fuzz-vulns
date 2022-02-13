@@ -1,0 +1,48 @@
+id: OSV-2022-125
+summary: Invalid-free in NIOHTTP2.NIOHTTP2Handler.
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=44431
+
+  Crash type: Invalid-free
+  Crash state:
+  NIOHTTP2.NIOHTTP2Handler.
+  NIOHTTP2.NIOHTTP2Handler.channelRead
+  NIOCore.ChannelHandlerContext.
+modified: '2022-02-06T00:01:40.864035Z'
+published: '2022-02-06T00:01:40.863807Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=44431
+affected:
+- package:
+    name: grpc-swift
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/grpc-swift
+  ranges:
+  - type: GIT
+    repo: https://github.com/grpc/grpc-swift
+    events:
+    - introduced: 1791c3e7b5783376f7b71e365552e41d603ba999
+    - fixed: d7961746769616d0b81bda771de5648ebfa1abf9
+  versions:
+  - 1.1.0
+  - 1.1.1
+  - 1.2.0
+  - 1.3.0
+  - 1.4.0
+  - 1.4.1
+  - 1.4.1-async-await.1
+  - 1.4.1-async-await.2
+  - 1.4.1-async-await.3
+  - 1.4.2
+  - 1.5.0
+  - 1.6.0
+  - 1.6.0-async-await.1
+  - 1.6.1
+  - 1.7.0
+  ecosystem_specific:
+    severity: null
+  database_specific:
+    fixed_range: 393feb7d38baf5b04189a165147ab65d0b4b0453:d7961746769616d0b81bda771de5648ebfa1abf9
+    introduced_range: a19bc8cf4540276daa08b1038a0ccd246c1b9cbc:972c701444f5a366ce055039b63bdb62427e1a22
+schema_version: 1.2.0
