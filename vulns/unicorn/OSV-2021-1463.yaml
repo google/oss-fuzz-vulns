@@ -21,6 +21,7 @@ affected:
     repo: https://github.com/unicorn-engine/unicorn.git
     events:
     - introduced: 34ddafcbcf6d16508a63623a68715394ea4e12d8
+    - fixed: c10639fd4658a852049546162d116b123e2b1ec2
   versions:
   - 1.0.3
   - 2.0.0-rc1
@@ -31,3 +32,5 @@ affected:
   - 2.0.0-rc5.post1
   ecosystem_specific:
     severity: MEDIUM
+  database_specific:
+    fixed_range: 63a445cbba18bf1313ac3699b5d25462b5d529f4:c10639fd4658a852049546162d116b123e2b1ec2
