@@ -8,7 +8,7 @@ details: |
   get_next_owned_entity
   dwg_write_dxfb
   llvmfuzz.c
-modified: '2022-02-14T00:09:00.545357Z'
+modified: '2022-02-15T00:10:58.250504Z'
 published: '2021-09-21T00:01:33.177403Z'
 references:
 - type: REPORT
@@ -50,5 +50,6 @@ affected:
   - 0.12.4.4402
   - 0.12.5
   - 0.12.4.4403
+  - 0.12.4.4404
   ecosystem_specific:
     severity: MEDIUM
