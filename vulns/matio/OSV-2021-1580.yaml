@@ -1,0 +1,35 @@
+id: OSV-2021-1580
+summary: Heap-buffer-overflow in H5G__node_found
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=41011
+
+  Crash type: Heap-buffer-overflow READ 15
+  Crash state:
+  H5G__node_found
+  H5B_find
+  H5G__stab_lookup
+modified: '2021-11-15T00:00:41.529062Z'
+published: '2021-11-15T00:00:41.528810Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=41011
+affected:
+- package:
+    name: matio
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/matio
+  ranges:
+  - type: GIT
+    repo: git://git.code.sf.net/p/matio/matio
+    events:
+    - introduced: f94c087aa9be54ec86a01e267b80fd61108069be
+  versions:
+  - v1.5.18
+  - v1.5.19
+  - v1.5.20
+  - v1.5.21
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: 7a9958485036ef37b4e88df5cbe32bd7ec4c0d25:6540087e697ca2b8950bada3d4ca653951b467dc
+schema_version: 1.2.0

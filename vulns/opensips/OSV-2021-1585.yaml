@@ -1,0 +1,33 @@
+id: OSV-2021-1585
+summary: Heap-buffer-overflow in _parse_to
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=41073
+
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  _parse_to
+  parse_to
+  get_hdr_field
+modified: '2021-11-18T00:00:17.931863Z'
+published: '2021-11-18T00:00:17.931643Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=41073
+affected:
+- package:
+    name: opensips
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/opensips
+  ranges:
+  - type: GIT
+    repo: https://github.com/OpenSIPS/opensips
+    events:
+    - introduced: cb56694d290530ac308f44b453c18120b1c1109d
+    - introduced: 1d4e56fc1f4f96dbb811074fbf1ac4c72b2b7167
+    - introduced: eab8ff654bebaa04dda7bed78266844b385f928b
+  versions:
+  - 3.1.7
+  - 3.2.4
+  ecosystem_specific:
+    severity: MEDIUM
+schema_version: 1.2.0

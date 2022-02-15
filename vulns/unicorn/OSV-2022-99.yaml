@@ -1,0 +1,32 @@
+id: OSV-2022-99
+summary: UNKNOWN WRITE in helper_shl_cc_arm
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=44136
+
+  Crash type: UNKNOWN WRITE
+  Crash state:
+  helper_shl_cc_arm
+modified: '2022-01-29T00:01:34.585554Z'
+published: '2022-01-29T00:01:34.585336Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=44136
+affected:
+- package:
+    name: unicorn
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/unicorn
+  ranges:
+  - type: GIT
+    repo: https://github.com/unicorn-engine/unicorn.git
+    events:
+    - introduced: 34ddafcbcf6d16508a63623a68715394ea4e12d8
+    - fixed: 5572c3db43959294bf216ac27cf3d34ed042d7e2
+  versions:
+  - 1.0.3
+  - 2.0.0-rc1
+  - 2.0.0-rc2
+  - 2.0.0-rc3
+  ecosystem_specific:
+    severity: HIGH
+schema_version: 1.2.0
