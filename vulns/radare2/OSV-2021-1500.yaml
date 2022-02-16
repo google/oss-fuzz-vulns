@@ -8,7 +8,7 @@ details: |
   parse_microsoft_mangled_name
   microsoft_demangle
   r_bin_demangle_msvc
-modified: '2022-02-03T00:07:43.726983Z'
+modified: '2022-02-16T00:09:22.469804Z'
 published: '2021-10-28T00:01:38.205304Z'
 references:
 - type: REPORT
@@ -42,6 +42,7 @@ affected:
   - continuous
   - release-5.0.0
   - 5.6.0
+  - 5.6.2
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.2.0
