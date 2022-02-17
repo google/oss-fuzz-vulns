@@ -8,7 +8,7 @@ details: |
   answer_request
   FuzzAnswerTheRequest
   fuzz_rfc1035.c
-modified: '2021-07-09T00:00:11.077111Z'
+modified: '2022-02-17T01:01:20.104073Z'
 published: '2021-07-09T00:00:11.076648Z'
 references:
 - type: REPORT
@@ -22,7 +22,8 @@ affected:
     repo: git://thekelleys.org.uk/dnsmasq.git
     events:
     - introduced: 96f6444958c29a670f4254722d787f328153605c
-  versions: 
+    - fixed: d242cbffa4f20c9f7472f79b3a9e47008b6fe77c
+  versions:
   - v2.86
   - v2.86rc1
   - v2.86rc2
