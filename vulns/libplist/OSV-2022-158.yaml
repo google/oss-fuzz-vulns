@@ -1,0 +1,30 @@
+id: OSV-2022-158
+summary: Heap-buffer-overflow in parse_primitive
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=44695
+
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  parse_primitive
+  plist_from_json
+  jplist_fuzzer.cc
+modified: '2022-02-16T00:00:29.292930Z'
+published: '2022-02-16T00:00:29.292668Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=44695
+affected:
+- package:
+    name: libplist
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libplist
+  ranges:
+  - type: GIT
+    repo: https://github.com/libimobiledevice/libplist
+    events:
+    - introduced: 7bc4d2f14e5a0bb80fd7342f954554947b9fee01
+    - fixed: 106c4ee7f53ef800a82fce9638f29756e8b78640
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.2.0

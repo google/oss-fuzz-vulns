@@ -1,0 +1,29 @@
+id: OSV-2022-136
+summary: Heap-buffer-overflow in cli_js_parse_done
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=44490
+
+  Crash type: Heap-buffer-overflow READ 4
+  Crash state:
+  cli_js_parse_done
+  cli_html_normalise
+  html_normalise_map
+modified: '2022-02-10T00:01:30.573221Z'
+published: '2022-02-10T00:01:30.573024Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=44490
+affected:
+- package:
+    name: clamav
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/clamav
+  ranges:
+  - type: GIT
+    repo: https://github.com/Cisco-Talos/clamav.git
+    events:
+    - introduced: 0037f5825b0b17a789c7eb29c9cb9a2d39c452bc
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.2.0
