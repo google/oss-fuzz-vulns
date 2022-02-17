@@ -8,7 +8,7 @@ details: |
   draco::MeshEdgebreakerDecoderImpl<draco::MeshEdgebreakerTraversalValenceDecoder>
   draco::MeshEdgebreakerDecoderImpl<draco::MeshEdgebreakerTraversalValenceDecoder>
   draco::MeshDecoder::DecodeGeometryData
-modified: '2021-12-10T00:07:49.032732Z'
+modified: '2022-02-17T00:05:00.689448Z'
 published: '2020-11-28T00:00:21.818545Z'
 references:
 - type: REPORT
@@ -27,5 +27,6 @@ affected:
   - 1.4.1
   - 1.4.3
   - 1.5.0
+  - 1.5.1
   ecosystem_specific:
     introduced_range: aef4bfbd61798ecc21d94c873b679fbdeaf92462:79601d2d060be52e673a82ed1c46f4666eb28255
