@@ -1,0 +1,30 @@
+id: OSV-2022-142
+summary: Heap-use-after-free in archive_read_format_rar_read_data
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=44547
+
+  Crash type: Heap-use-after-free READ 4
+  Crash state:
+  archive_read_format_rar_read_data
+  archive_read_data
+  libarchive_fuzzer.cc
+modified: '2022-02-12T00:00:11.417019Z'
+published: '2022-02-12T00:00:11.416771Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=44547
+affected:
+- package:
+    name: libarchive
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libarchive
+  ranges:
+  - type: GIT
+    repo: https://github.com/libarchive/libarchive.git
+    events:
+    - introduced: d7fec62918f48dc1f56457df02eb3c8b0d12863b
+  versions:
+  - v3.6.0
+  ecosystem_specific:
+    severity: HIGH
+schema_version: 1.2.0
