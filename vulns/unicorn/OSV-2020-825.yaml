@@ -8,7 +8,7 @@ details: |
   tcg_liveness_analysis_arm
   tcg_gen_code_arm
   cpu_arm_gen_code_arm
-modified: '2022-02-14T00:04:44.045532Z'
+modified: '2022-02-19T19:25:45.989656Z'
 published: '2020-07-14T05:37:49.161459Z'
 references:
 - type: REPORT
@@ -22,6 +22,7 @@ affected:
     repo: https://github.com/unicorn-engine/unicorn.git
     events:
     - introduced: 8621bca53758532ad6a4ec5d17684fcdb9923cc6
+    - fixed: c10639fd4658a852049546162d116b123e2b1ec2
   versions:
   - 1.0.2
   - 1.0.2-rc2
@@ -36,6 +37,7 @@ affected:
   - 2.0.0-rc4
   - 2.0.0-rc5
   - 2.0.0-rc5.post1
-  - 2.0.0-rc6
   ecosystem_specific:
     severity: MEDIUM
+  database_specific:
+    fixed_range: 63a445cbba18bf1313ac3699b5d25462b5d529f4:c10639fd4658a852049546162d116b123e2b1ec2
