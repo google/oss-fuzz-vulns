@@ -22,7 +22,9 @@ affected:
     repo: https://github.com/curl/curl.git
     events:
     - introduced: 7a92f865b43aac942ae5755a7a3a06775751fdea
-  versions:
-  - curl-7_81_0
+    - fixed: ef4dc1b5be8c092550617ea0f1b9844a9cdc6ae8
   ecosystem_specific:
     severity: MEDIUM
+  database_specific:
+    fixed_range: 7a92f865b43aac942ae5755a7a3a06775751fdea:ef4dc1b5be8c092550617ea0f1b9844a9cdc6ae8
+  versions: []
