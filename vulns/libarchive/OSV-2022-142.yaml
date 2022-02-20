@@ -8,7 +8,7 @@ details: |
   archive_read_format_rar_read_data
   archive_read_data
   libarchive_fuzzer.cc
-modified: '2022-02-12T00:00:11.417019Z'
+modified: '2022-02-20T01:37:33.089301Z'
 published: '2022-02-12T00:00:11.416771Z'
 references:
 - type: REPORT
@@ -23,6 +23,7 @@ affected:
     repo: https://github.com/libarchive/libarchive.git
     events:
     - introduced: d7fec62918f48dc1f56457df02eb3c8b0d12863b
+    - fixed: 52efa50c69653029687bfc545703b7340b7a51e2
   versions:
   - v3.6.0
   ecosystem_specific:
