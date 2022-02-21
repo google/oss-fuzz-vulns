@@ -1,0 +1,30 @@
+id: OSV-2022-181
+summary: Heap-use-after-free in zval_call_destructor
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=44885
+
+  Crash type: Heap-use-after-free READ 4
+  Crash state:
+  zval_call_destructor
+  zend_hash_reverse_apply
+  shutdown_destructors
+modified: '2022-02-21T00:00:49.283152Z'
+published: '2022-02-21T00:00:49.282928Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=44885
+affected:
+- package:
+    name: php
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/php
+  ranges:
+  - type: GIT
+    repo: https://github.com/php/php-src.git
+    events:
+    - introduced: 55b4ddebc37ba012b9f987890939bc9d71b698bc
+    - introduced: 3198b8787bdbe08a893faf1164c48b9bd0f86562
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
+schema_version: 1.2.0
