@@ -6,7 +6,7 @@ details: |-
   Crash type: UNKNOWN READ
   Crash state:
   NULL
-modified: '2022-02-14T00:04:43.425951Z'
+modified: '2022-02-22T00:04:46.855607Z'
 published: '2020-07-14T05:37:41.456127Z'
 references:
 - type: REPORT
@@ -20,6 +20,7 @@ affected:
     repo: https://github.com/unicorn-engine/unicorn.git
     events:
     - introduced: 8b659c61b2dad88e55a0f1af6f725be6bce782bd
+    - fixed: c10639fd4658a852049546162d116b123e2b1ec2
   versions:
   - 1.0.2
   - 1.0.2-rc1
@@ -35,7 +36,8 @@ affected:
   - 2.0.0-rc4
   - 2.0.0-rc5
   - 2.0.0-rc5.post1
-  - 2.0.0-rc6
   ecosystem_specific:
     introduced_range: 57e3509812f0842b0752bff1e1b3a44ad438271e:355eaecc12b8022ccefac432dfa003fdb642c0f5
     severity: MEDIUM
+  database_specific:
+    fixed_range: 63a445cbba18bf1313ac3699b5d25462b5d529f4:c10639fd4658a852049546162d116b123e2b1ec2
