@@ -8,7 +8,7 @@ details: |
   jxl::ModularFrameDecoder::DecodeGroup
   jxl::FrameDecoder::ProcessACGroup
   jxl::ThreadPool::RunCallState<jxl::FrameDecoder::ProcessSections
-modified: '2022-01-26T00:09:21.589947Z'
+modified: '2022-02-22T00:05:25.362295Z'
 published: '2021-11-24T00:00:37.422188Z'
 references:
 - type: REPORT
@@ -22,12 +22,13 @@ affected:
     repo: https://github.com/libvips/libvips
     events:
     - introduced: cb58d7d9600282802d2d04a04254f6d9dfefe203
+    - fixed: 5b089951ac8e92670df03ddfaca5d5f2b7cbbebd
   versions:
   - v8.12.0
   - v8.12.1
-  - v8.13.0-pre1
   - v8.12.2
   ecosystem_specific:
     severity: MEDIUM
   database_specific:
+    fixed_range: de199fe59cde38290709c7eb0d25406daa1314d7:5b089951ac8e92670df03ddfaca5d5f2b7cbbebd
     introduced_range: 4fd2de57540082b80c4c67a4cd1efc7bd7d86b42:f352bcd1911d8076a5d5a218d2d15f5d583d4e5b
