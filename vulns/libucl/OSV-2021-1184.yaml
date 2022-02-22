@@ -22,8 +22,10 @@ affected:
     repo: https://github.com/vstakhov/libucl
     events:
     - introduced: b56171afae328bb605aa5aafbab9331e3e34b03e
+    - fixed: 45997ade65d18806f52e3a2f5b8ca2c3e3283554
   ecosystem_specific:
     severity: MEDIUM
   database_specific:
+    fixed_range: 71f16a847414eb6d9b014bdae2844c8a1134fc04:45997ade65d18806f52e3a2f5b8ca2c3e3283554
     introduced_range: be59572d66b2cf547d743277599781ef87ddaad9:95df30cf3e35788c08be537a1623499c98415674
   versions: []
