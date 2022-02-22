@@ -9,7 +9,7 @@ details: |
   draco::MeshPredictionSchemeTexCoordsDecoder<int, draco::PredictionSchemeWrapDeco
   draco::MeshPredictionSchemeTexCoordsDecoder<int, draco::PredictionSchemeWrapDeco
   draco::SequentialIntegerAttributeDecoder::DecodeIntegerValues
-modified: '2022-02-18T00:05:42.170913Z'
+modified: '2022-02-22T00:05:01.755370Z'
 published: '2021-03-03T00:00:23.252114Z'
 references:
 - type: REPORT
@@ -23,13 +23,10 @@ affected:
     repo: https://github.com/google/draco
     events:
     - introduced: 25484b31235d1a35fa72be6ce8d1f7f286b5c0bf
+    - fixed: c2d57bc9de5c0a2de0a25a6354e930380c27f372
   versions:
   - 1.4.0
   - 1.4.1
-  - 1.4.3
-  - 1.5.0
-  - 1.5.1
-  - 1.5.2
   ecosystem_specific:
     introduced_range: aef4bfbd61798ecc21d94c873b679fbdeaf92462:79601d2d060be52e673a82ed1c46f4666eb28255
     severity: HIGH
