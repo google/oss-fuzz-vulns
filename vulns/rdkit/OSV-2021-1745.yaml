@@ -9,7 +9,7 @@ details: |
   std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<ch
   bool SmilesParseOps::parser::parse_data_sgroup<std::__1::__wrap_iter<char const*
   bool SmilesParseOps::parser::parse_it<std::__1::__wrap_iter<char const*> >
-modified: '2021-12-24T00:00:18.937522Z'
+modified: '2022-02-22T00:06:09.727813Z'
 published: '2021-12-24T00:00:18.937291Z'
 references:
 - type: REPORT
@@ -24,6 +24,7 @@ affected:
     repo: https://github.com/rdkit/rdkit.git
     events:
     - introduced: 2138c51b8c92d4e1c5b69a2a33811a744aacbc61
+    - fixed: 3757a1e0fa4757c9ed0b422578538772cc0dab5c
   versions:
   - Release_2021_09_1
   - Release_2021_09_1b1
