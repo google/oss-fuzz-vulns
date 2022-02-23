@@ -1,0 +1,35 @@
+id: OSV-2022-177
+summary: UNKNOWN READ in gx_dc_default_fill_masked
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=44855
+
+  Crash type: UNKNOWN READ
+  Crash state:
+  gx_dc_default_fill_masked
+  copy_portrait
+  image_render_simple
+modified: '2022-02-21T00:00:26.967272Z'
+published: '2022-02-21T00:00:26.966993Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=44855
+affected:
+- package:
+    name: ghostscript
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/ghostscript
+  ranges:
+  - type: GIT
+    repo: git://git.ghostscript.com/ghostpdl.git
+    events:
+    - introduced: 2be8b436910cfc8b013a13df000c3c854cf3c5c5
+    - fixed: c8051ae666672cb7ca39531e28ec85636e1ce6d5
+  versions:
+  - ghostpdl-9.56.0-test-base-3
+  - ghostpdl-9.56.0-test-base-4
+  - ghostpdl-9.56.0-test-base-5
+  - ken_20220210_baseline
+  - robin-test-base-0
+  ecosystem_specific:
+    severity: MEDIUM
+schema_version: 1.2.0

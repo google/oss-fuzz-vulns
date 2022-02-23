@@ -1,0 +1,29 @@
+id: OSV-2021-1628
+summary: Stack-buffer-overflow in sprint_realloc_hinted_integer
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=41372
+
+  Crash type: Stack-buffer-overflow WRITE 1
+  Crash state:
+  sprint_realloc_hinted_integer
+  sprint_realloc_integer
+  snprint_integer
+modified: '2021-11-27T00:01:21.209042Z'
+published: '2021-11-27T00:01:21.208846Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=41372
+affected:
+- package:
+    name: net-snmp
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/net-snmp
+  ranges:
+  - type: GIT
+    repo: https://github.com/net-snmp/net-snmp
+    events:
+    - introduced: 94436b16947c3f9039b96c4cc135507d864b422d
+  ecosystem_specific:
+    severity: null
+  versions: []
+schema_version: 1.2.0
