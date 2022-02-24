@@ -8,7 +8,7 @@ details: |
   pdfi_cspace_free_callback
   gs_cspace_final
   alloc_restore_step_in
-modified: '2022-02-23T00:15:23.265247Z'
+modified: '2022-02-24T00:18:37.541424Z'
 published: '2022-01-22T00:00:41.413569Z'
 references:
 - type: REPORT
@@ -30,5 +30,6 @@ affected:
   - robin-test-base-0
   - ken_20220210_baseline
   - ghostpdl-9.56.0rc1_release_tests_001
+  - ghostpdl-9.56.0-test-base-6
   ecosystem_specific:
     severity: HIGH
