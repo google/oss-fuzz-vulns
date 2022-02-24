@@ -8,7 +8,7 @@ details: |
   MqttDecode_Props
   MqttDecode_Disconnect
   MqttClient_DecodePacket
-modified: '2021-11-12T00:00:42.998743Z'
+modified: '2022-02-24T00:06:00.481617Z'
 published: '2021-11-12T00:00:42.998549Z'
 references:
 - type: REPORT
@@ -23,9 +23,12 @@ affected:
     repo: https://github.com/wolfSSL/wolfMQTT.git
     events:
     - introduced: 07527e688cfa41fa9406a1271052de3cd677069a
+    - fixed: 147aa20720112bb8d3c814c6a3cfa95837df4256
   versions:
   - v1.10.0
   - v1.11.0
   ecosystem_specific:
     severity: HIGH
+  database_specific:
+    fixed_range: 9ca8696699cda17ad32ecb2cf22e2cd9ca5e47ab:147aa20720112bb8d3c814c6a3cfa95837df4256
 schema_version: 1.2.0
