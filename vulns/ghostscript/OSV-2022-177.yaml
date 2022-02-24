@@ -8,7 +8,7 @@ details: |
   gx_dc_default_fill_masked
   copy_portrait
   image_render_simple
-modified: '2022-02-21T00:00:26.967272Z'
+modified: '2022-02-24T00:19:04.037532Z'
 published: '2022-02-21T00:00:26.966993Z'
 references:
 - type: REPORT
@@ -30,6 +30,7 @@ affected:
   - ghostpdl-9.56.0-test-base-5
   - ken_20220210_baseline
   - robin-test-base-0
+  - ghostpdl-9.56.0-test-base-6
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.2.0
