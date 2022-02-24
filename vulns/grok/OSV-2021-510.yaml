@@ -8,7 +8,7 @@ details: |
   grk_object_unref
   grk::GrkObjectImpl<grk::GrkImage>::release
   grk::GrkObject::unref
-modified: '2022-01-30T00:05:09.056728Z'
+modified: '2022-02-24T00:06:16.458039Z'
 published: '2021-03-11T00:00:21.858475Z'
 references:
 - type: REPORT
@@ -36,5 +36,6 @@ affected:
   - v9.5.0.debian
   - v9.6.0
   - v9.7.0
+  - v9.7.1
   ecosystem_specific:
     severity: HIGH
