@@ -1,0 +1,30 @@
+id: OSV-2022-168
+summary: Heap-buffer-overflow in fmt::v8::detail::big_decimal_fp fmt::v8::detail::write_padded<
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=44791
+
+  Crash type: Heap-buffer-overflow WRITE 1
+  Crash state:
+  fmt::v8::detail::big_decimal_fp fmt::v8::detail::write_padded<
+  std::__1::back_insert_iterator<fmt::v8::basic_memory_buffer<char, 500ul, std::__
+  std::__1::back_insert_iterator<fmt::v8::basic_memory_buffer<char, 500ul, std::__
+modified: '2022-02-19T00:01:40.526231Z'
+published: '2022-02-19T00:01:40.526021Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=44791
+affected:
+- package:
+    name: fmt
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/fmt
+  ranges:
+  - type: GIT
+    repo: https://github.com/fmtlib/fmt.git
+    events:
+    - introduced: 161059dd981b18a3f6b9babc922539adc52dab70
+    - fixed: 86477f7ecc1606e15abae1ff784e6b0c55d99619
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
+schema_version: 1.2.0

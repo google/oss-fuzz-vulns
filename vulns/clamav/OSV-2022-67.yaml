@@ -1,0 +1,32 @@
+id: OSV-2022-67
+summary: Heap-buffer-overflow in cli_bcomp_freemeta
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=43816
+
+  Crash type: Heap-buffer-overflow READ 8
+  Crash state:
+  cli_bcomp_freemeta
+  cli_bcomp_addpatt
+  cli_parse_add
+modified: '2022-01-21T00:00:45.049025Z'
+published: '2022-01-21T00:00:45.048694Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=43816
+affected:
+- package:
+    name: clamav
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/clamav
+  ranges:
+  - type: GIT
+    repo: https://github.com/Cisco-Talos/clamav.git
+    events:
+    - introduced: 0037f5825b0b17a789c7eb29c9cb9a2d39c452bc
+    - fixed: 618e3b6bcfc2867a713d29a0696d9b87be197ed6
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    fixed_range: 9035ef10afc94ef00a130bb3059815986aa0cda5:618e3b6bcfc2867a713d29a0696d9b87be197ed6
+  versions: []
+schema_version: 1.2.0

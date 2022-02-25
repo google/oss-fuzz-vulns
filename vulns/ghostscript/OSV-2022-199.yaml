@@ -1,0 +1,36 @@
+id: OSV-2022-199
+summary: Stack-buffer-overflow in check_user_password_preR5
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=44983
+
+  Crash type: Stack-buffer-overflow READ {*}
+  Crash state:
+  check_user_password_preR5
+  pdfi_initialise_Decryption
+  pdfi_set_input_stream
+modified: '2022-02-25T00:01:57.594900Z'
+published: '2022-02-25T00:01:57.594646Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=44983
+affected:
+- package:
+    name: ghostscript
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/ghostscript
+  ranges:
+  - type: GIT
+    repo: git://git.ghostscript.com/ghostpdl.git
+    events:
+    - introduced: 75fbddf52051987287e62d13c659eb73ba16982f
+    - fixed: 4a79f807fd13bd0e53bd1aad6f26066be8bf0b15
+  versions:
+  - ghostpdl-9.56.0-test-base-2
+  - ghostpdl-9.56.0-test-base-3
+  - ghostpdl-9.56.0-test-base-4
+  - ghostpdl-9.56.0-test-base-5
+  - ken_20220210_baseline
+  - robin-test-base-0
+  ecosystem_specific:
+    severity: MEDIUM
+schema_version: 1.2.0

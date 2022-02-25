@@ -1,0 +1,31 @@
+id: OSV-2022-169
+summary: Heap-buffer-overflow in ucasemap_internalUTF8ToTitle_70
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=44779
+
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  ucasemap_internalUTF8ToTitle_70
+  ucasemap_mapUTF8
+  ucasemap_utf8ToTitle_70
+modified: '2022-02-19T00:01:40.865864Z'
+published: '2022-02-19T00:01:40.865642Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=44779
+affected:
+- package:
+    name: icu
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/icu
+  ranges:
+  - type: GIT
+    repo: https://github.com/unicode-org/icu.git
+    events:
+    - introduced: 039ecd6fd02078b7a184417714a45a90d2499812
+    - fixed: 4962050f47ecdef3539b7035b030ff712c1fc6f7
+  versions:
+  - cldr/2022-02-22
+  ecosystem_specific:
+    severity: MEDIUM
+schema_version: 1.2.0
