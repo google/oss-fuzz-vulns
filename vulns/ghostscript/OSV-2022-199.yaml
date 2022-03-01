@@ -8,7 +8,7 @@ details: |
   check_user_password_preR5
   pdfi_initialise_Decryption
   pdfi_set_input_stream
-modified: '2022-02-25T00:01:57.594900Z'
+modified: '2022-03-01T00:34:17.567248Z'
 published: '2022-02-25T00:01:57.594646Z'
 references:
 - type: REPORT
@@ -24,6 +24,7 @@ affected:
     events:
     - introduced: 75fbddf52051987287e62d13c659eb73ba16982f
     - fixed: 4a79f807fd13bd0e53bd1aad6f26066be8bf0b15
+    - fixed: a16917a77693e16c3a63a8a00ad782052ed5434e
   versions:
   - ghostpdl-9.56.0-test-base-2
   - ghostpdl-9.56.0-test-base-3
@@ -31,6 +32,7 @@ affected:
   - ghostpdl-9.56.0-test-base-5
   - ken_20220210_baseline
   - robin-test-base-0
+  - ghostpdl-9.56.0rc1_release_tests_001
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.2.0
