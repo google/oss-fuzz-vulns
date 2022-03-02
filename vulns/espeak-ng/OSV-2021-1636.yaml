@@ -1,0 +1,29 @@
+id: OSV-2021-1636
+summary: Stack-buffer-overflow in MatchRule
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=41504
+
+  Crash type: Stack-buffer-overflow READ 1
+  Crash state:
+  MatchRule
+  TranslateRules
+  TranslateWord3
+modified: '2021-12-01T00:00:23.705772Z'
+published: '2021-12-01T00:00:23.705541Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=41504
+affected:
+- package:
+    name: espeak-ng
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/espeak-ng
+  ranges:
+  - type: GIT
+    repo: https://github.com/espeak-ng/espeak-ng
+    events:
+    - introduced: 0a713d52bbf3e061823d1a7f35e5303e7320f27a
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.2.0

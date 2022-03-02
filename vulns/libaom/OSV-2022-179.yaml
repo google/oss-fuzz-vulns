@@ -1,0 +1,30 @@
+id: OSV-2022-179
+summary: Heap-buffer-overflow in row_mt_worker_hook
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=44856
+
+  Crash type: Heap-buffer-overflow WRITE 4
+  Crash state:
+  row_mt_worker_hook
+  execute
+  av1_decode_tg_tiles_and_wrapup
+modified: '2022-02-21T00:00:40.376308Z'
+published: '2022-02-21T00:00:40.376028Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=44856
+affected:
+- package:
+    name: libaom
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libaom
+  ranges:
+  - type: GIT
+    repo: https://aomedia.googlesource.com/aom
+    events:
+    - introduced: dd5066dca0efb6fb687c667cf4eecbd865d1fa87
+    - fixed: 493cf67c62441838a56c5ea6f8dfbf6777e3cee7
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
+schema_version: 1.2.0

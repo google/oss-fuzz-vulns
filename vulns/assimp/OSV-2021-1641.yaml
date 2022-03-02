@@ -1,0 +1,42 @@
+id: OSV-2021-1641
+summary: Heap-buffer-overflow in std::__1::basic_string<char, std::__1::char_traits<char>,
+  std::__1::allocator<ch
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=41582
+
+  Crash type: Heap-buffer-overflow READ {*}
+  Crash state:
+  std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<ch
+  void Assimp::Logger::warn<char const
+  Assimp::NDOImporter::InternReadFile
+modified: '2021-12-03T00:00:36.651378Z'
+published: '2021-12-03T00:00:36.651134Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=41582
+affected:
+- package:
+    name: assimp
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/assimp
+  ranges:
+  - type: GIT
+    repo: https://github.com/assimp/assimp.git
+    events:
+    - introduced: 8a975549a99bd21b7a2c09cc37b73e52a3919fed
+  versions:
+  - 5.2.0
+  - v5.1.0
+  - v5.1.0.rc1
+  - v5.1.1
+  - v5.1.2
+  - v5.1.3
+  - v5.1.4
+  - v5.1.5
+  - v5.1.6
+  - v5.2.0
+  - v5.2.1
+  - v5.2.2
+  ecosystem_specific:
+    severity: MEDIUM
+schema_version: 1.2.0
