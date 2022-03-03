@@ -8,7 +8,7 @@ details: |
   zval_call_destructor
   zend_hash_reverse_apply
   shutdown_destructors
-modified: '2022-02-21T00:00:49.283152Z'
+modified: '2022-03-03T03:45:27.997599Z'
 published: '2022-02-21T00:00:49.282928Z'
 references:
 - type: REPORT
@@ -24,6 +24,8 @@ affected:
     events:
     - introduced: 55b4ddebc37ba012b9f987890939bc9d71b698bc
     - introduced: 3198b8787bdbe08a893faf1164c48b9bd0f86562
+    - fixed: 83d96d677907f85204202e79da5e0b40b88eb9dc
+    - fixed: 01702a851b3902ac043d634f8cd7452edb26df1b
   ecosystem_specific:
     severity: HIGH
   versions: []
