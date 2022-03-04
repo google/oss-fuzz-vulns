@@ -1,0 +1,30 @@
+id: OSV-2022-209
+summary: Heap-buffer-overflow in dotnet_parse_tilde_2
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=45161
+
+  Crash type: Heap-buffer-overflow READ 4
+  Crash state:
+  dotnet_parse_tilde_2
+  dotnet_parse_tilde
+  dotnet_parse_com
+modified: '2022-03-03T00:00:39.597369Z'
+published: '2022-03-03T00:00:39.597102Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=45161
+affected:
+- package:
+    name: yara
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/yara
+  ranges:
+  - type: GIT
+    repo: https://github.com/VirusTotal/yara.git
+    events:
+    - introduced: 7f01792a8b94c730a9b740e178cf2f5a478368df
+    - fixed: 7ed3cc413635b51ea34006cd6094a8cd8455b526
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.2.0

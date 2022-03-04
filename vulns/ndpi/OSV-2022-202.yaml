@@ -1,0 +1,29 @@
+id: OSV-2022-202
+summary: Heap-buffer-overflow in ndpi_workflow_process_packet
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=45036
+
+  Crash type: Heap-buffer-overflow READ 4
+  Crash state:
+  ndpi_workflow_process_packet
+  fuzz_ndpi_reader.c
+modified: '2022-02-27T00:00:22.129808Z'
+published: '2022-02-27T00:00:22.129581Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=45036
+affected:
+- package:
+    name: ndpi
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/ndpi
+  ranges:
+  - type: GIT
+    repo: https://github.com/ntop/nDPI.git
+    events:
+    - introduced: 75a53ad064bcb19570847554b72e9303d776b8fd
+    - fixed: 6f431057c5e11ce24dc88a43b681e9ba9aa5a0e1
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.2.0

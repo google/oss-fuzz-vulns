@@ -1,0 +1,30 @@
+id: OSV-2022-61
+summary: Heap-buffer-overflow in cli_loadcrt
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=43828
+
+  Crash type: Heap-buffer-overflow READ {*}
+  Crash state:
+  cli_loadcrt
+  cli_load
+  cl_load
+modified: '2022-01-21T00:00:05.087834Z'
+published: '2022-01-21T00:00:05.087581Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=43828
+affected:
+- package:
+    name: clamav
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/clamav
+  ranges:
+  - type: GIT
+    repo: https://github.com/Cisco-Talos/clamav.git
+    events:
+    - introduced: 0037f5825b0b17a789c7eb29c9cb9a2d39c452bc
+    - fixed: 76dab42a3097e1108c293e89313e7d02cfc0f9d8
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.2.0
