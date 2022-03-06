@@ -1,0 +1,35 @@
+id: OSV-2022-218
+summary: UNKNOWN READ in pdfi_read_cff_font
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=45222
+
+  Crash type: UNKNOWN READ
+  Crash state:
+  pdfi_read_cff_font
+  pdfi_load_font
+  pdfi_read_type0_font
+modified: '2022-03-06T00:01:40.011081Z'
+published: '2022-03-06T00:01:40.010815Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=45222
+affected:
+- package:
+    name: ghostscript
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/ghostscript
+  ranges:
+  - type: GIT
+    repo: git://git.ghostscript.com/ghostpdl.git
+    events:
+    - introduced: 651a93ca20079a446f4338f91a8b3b05bbc5258c
+    - fixed: edb02250825f20203c137886c5253a908b536985
+    - introduced: 351875730056edf20b282b2cf88c3333a91ba2ac
+    - fixed: 7bb076b06cba409abf52f935440dea5fbbd9c15b
+  versions:
+  - ghostpdl-9.56.0rc1
+  - ghostpdl-9.56.0rc1_release_tests_001
+  - ghostpdl-9.56.0rc1_release_tests_002
+  ecosystem_specific:
+    severity: MEDIUM
+schema_version: 1.2.0
