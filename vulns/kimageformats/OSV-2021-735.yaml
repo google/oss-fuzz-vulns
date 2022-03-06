@@ -8,7 +8,7 @@ details: |
   decode_CABAC_FL_bypass
   decode_coeff_abs_level_remaining
   residual_coding
-modified: '2022-02-15T00:06:51.453055Z'
+modified: '2022-03-06T00:05:11.438275Z'
 published: '2021-05-08T00:00:14.355747Z'
 references:
 - type: REPORT
@@ -46,5 +46,6 @@ affected:
   - v5.90.0
   - v5.91.0-rc1
   - v5.91.0
+  - v5.92.0-rc1
   ecosystem_specific:
     severity: MEDIUM
