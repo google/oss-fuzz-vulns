@@ -8,7 +8,7 @@ details: |
   dotnet_parse_com
   dotnet__load
   yr_modules_load
-modified: '2022-01-11T00:08:14.102250Z'
+modified: '2022-03-10T00:05:03.586412Z'
 published: '2020-07-28T00:00:05.738705Z'
 references:
 - type: REPORT
@@ -43,5 +43,6 @@ affected:
   - v4.1.2
   - v4.1.3
   - v4.2.0-rc1
+  - v4.2.0
   ecosystem_specific:
     severity: MEDIUM
