@@ -1,0 +1,30 @@
+id: OSV-2022-226
+summary: Heap-buffer-overflow in vips_rect_intersectrect
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=45353
+
+  Crash type: Heap-buffer-overflow READ 4
+  Crash state:
+  vips_rect_intersectrect
+  vips_foreign_load_pdf_generate
+  vips_region_prepare_to_generate
+modified: '2022-03-09T00:00:12.248309Z'
+published: '2022-03-09T00:00:12.248020Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=45353
+affected:
+- package:
+    name: libvips
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libvips
+  ranges:
+  - type: GIT
+    repo: https://github.com/libvips/libvips.git
+    events:
+    - introduced: de2adb99a2ae7564ea23dedeede2c716a8bdcb90
+    - fixed: 2fdab9ba70f5ebf22588943e951339ceb19b184e
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.2.0

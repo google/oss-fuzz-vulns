@@ -1,0 +1,44 @@
+id: OSV-2022-206
+summary: Heap-buffer-overflow in spgetcc
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=45049
+
+  Crash type: Heap-buffer-overflow READ {*}
+  Crash state:
+  spgetcc
+  gs_scan_token
+  gs_interpret
+modified: '2022-02-27T00:02:01.721732Z'
+published: '2022-02-27T00:02:01.721420Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=45049
+affected:
+- package:
+    name: ghostscript
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/ghostscript
+  ranges:
+  - type: GIT
+    repo: git://git.ghostscript.com/ghostpdl.git
+    events:
+    - introduced: 4297fa6c36ccd90859f2cc13f563d87326b0705a
+    - fixed: a424f166ee9c1196a6cd7e2ee2289f81545d022d
+  versions:
+  - ghostpdl-9.55.0
+  - ghostpdl-9.55.0rc1
+  - ghostpdl-9.56.0-test-base-0
+  - ghostpdl-9.56.0-test-base-2
+  - ghostpdl-9.56.0-test-base-3
+  - ghostpdl-9.56.0-test-base-4
+  - ghostpdl-9.56.0-test-base-5
+  - ghostpdl-9.56.0rc1
+  - ghostpdl-9.56.0rc1_release_tests_001
+  - ghostpdl-9.56.0rc1_release_tests_002
+  - ken_20220210_baseline
+  - robin-test-base-0
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: b0bbf56c2746bfe21293451594fa56d8cc881e78:a9bd3dec9fde03327a4a2c69dad1036bf9632e20
+schema_version: 1.2.0

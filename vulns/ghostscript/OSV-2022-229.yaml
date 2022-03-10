@@ -1,0 +1,37 @@
+id: OSV-2022-229
+summary: UNKNOWN READ in spgetcc
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=45347
+
+  Crash type: UNKNOWN READ
+  Crash state:
+  spgetcc
+  pdfi_read_byte
+  pdfi_read_token
+modified: '2022-03-09T00:01:43.021905Z'
+published: '2022-03-09T00:01:43.021663Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=45347
+affected:
+- package:
+    name: ghostscript
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/ghostscript
+  ranges:
+  - type: GIT
+    repo: git://git.ghostscript.com/ghostpdl.git
+    events:
+    - introduced: a16d4303a172eb1f4f0e6c0133a728fe5f78c07e
+    - fixed: a9c7640b90bc583e04be7b1eebccd5c07e79c063
+    - fixed: 3817df3154b8dd0067e124221bf38494dd12c0af
+  versions:
+  - ghostpdl-9.56.0-test-base-5
+  - ghostpdl-9.56.0rc1
+  - ghostpdl-9.56.0rc1_release_tests_001
+  - ghostpdl-9.56.0rc1_release_tests_002
+  - ken_20220210_baseline
+  - robin-test-base-0
+  ecosystem_specific:
+    severity: MEDIUM
+schema_version: 1.2.0
