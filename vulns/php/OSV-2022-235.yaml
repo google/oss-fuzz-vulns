@@ -1,0 +1,29 @@
+id: OSV-2022-235
+summary: Heap-buffer-overflow in zend_gc_collect_cycles
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=45369
+
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  zend_gc_collect_cycles
+  fuzzer_request_shutdown
+  fuzzer_do_request_from_buffer
+modified: '2022-03-11T00:01:44.806087Z'
+published: '2022-03-11T00:01:44.805842Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=45369
+affected:
+- package:
+    name: php
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/php
+  ranges:
+  - type: GIT
+    repo: https://github.com/php/php-src.git
+    events:
+    - introduced: c77bbcd4642a982fd9fdaf32dbe444d925c7883f
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.2.0

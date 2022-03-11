@@ -1,0 +1,35 @@
+id: OSV-2022-21
+summary: Heap-buffer-overflow in Assimp::IOSystem2Unzip::opendisk
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=43414
+
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  Assimp::IOSystem2Unzip::opendisk
+  call_zopendisk64
+  unzOpenCurrentFile3
+modified: '2022-01-09T00:00:18.775773Z'
+published: '2022-01-09T00:00:18.775490Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=43414
+affected:
+- package:
+    name: assimp
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/assimp
+  ranges:
+  - type: GIT
+    repo: https://github.com/assimp/assimp.git
+    events:
+    - introduced: 310c81aaa20b7328ce7a354897db817f8becac3a
+    - fixed: c14eccefaf0ba0286d2e9f3ae7b8dd1f3e055a27
+  versions:
+  - 5.2.0
+  - v5.1.6
+  - v5.2.0
+  - v5.2.1
+  - v5.2.2
+  ecosystem_specific:
+    severity: MEDIUM
+schema_version: 1.2.0
