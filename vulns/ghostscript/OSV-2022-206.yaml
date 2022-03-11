@@ -8,7 +8,7 @@ details: |
   spgetcc
   gs_scan_token
   gs_interpret
-modified: '2022-02-27T00:02:01.721732Z'
+modified: '2022-03-11T00:19:44.150538Z'
 published: '2022-02-27T00:02:01.721420Z'
 references:
 - type: REPORT
@@ -24,6 +24,7 @@ affected:
     events:
     - introduced: 4297fa6c36ccd90859f2cc13f563d87326b0705a
     - fixed: a424f166ee9c1196a6cd7e2ee2289f81545d022d
+    - fixed: f01a4f949d047e597f70daed8d5e01cab9772bcb
   versions:
   - ghostpdl-9.55.0
   - ghostpdl-9.55.0rc1
