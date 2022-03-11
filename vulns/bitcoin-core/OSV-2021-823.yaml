@@ -8,7 +8,7 @@ details: |
   FuzzedFileProvider::seek
   _IO_do_write
   _IO_file_close_it
-modified: '2022-03-04T00:04:58.519859Z'
+modified: '2022-03-11T00:06:34.109007Z'
 published: '2021-06-03T00:01:12.500483Z'
 references:
 - type: REPORT
@@ -29,6 +29,7 @@ affected:
   - v22.0rc3
   - v22.0
   - v23.0rc1
+  - v23.0rc2
   ecosystem_specific:
-    introduced_range: eb9a1fe03779bf05062b70f14190cb23ff42b46f:9313c4e6aa4b707c06a86b33d5d2753cd8383340
     severity: MEDIUM
+    introduced_range: eb9a1fe03779bf05062b70f14190cb23ff42b46f:9313c4e6aa4b707c06a86b33d5d2753cd8383340
