@@ -1,0 +1,34 @@
+id: OSV-2022-232
+summary: UNKNOWN READ in pdfi_fapi_get_glyph
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=45439
+
+  Crash type: UNKNOWN READ
+  Crash state:
+  pdfi_fapi_get_glyph
+  get_fapi_glyph_data
+  cff_slot_load
+modified: '2022-03-11T00:00:50.999547Z'
+published: '2022-03-11T00:00:50.999282Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=45439
+affected:
+- package:
+    name: ghostscript
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/ghostscript
+  ranges:
+  - type: GIT
+    repo: git://git.ghostscript.com/ghostpdl.git
+    events:
+    - introduced: 651a93ca20079a446f4338f91a8b3b05bbc5258c
+    - fixed: 4549e723d4c1dd44aa3051ce167d3a28dc75e53f
+    - introduced: 351875730056edf20b282b2cf88c3333a91ba2ac
+  versions:
+  - ghostpdl-9.56.0rc1
+  - ghostpdl-9.56.0rc1_release_tests_001
+  - ghostpdl-9.56.0rc1_release_tests_002
+  ecosystem_specific:
+    severity: MEDIUM
+schema_version: 1.2.0
