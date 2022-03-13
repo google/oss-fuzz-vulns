@@ -8,7 +8,7 @@ details: |
   i_zval_ptr_dtor
   zend_leave_helper_SPEC
   zend_dispatch_try_catch_finally_helper_SPEC
-modified: '2022-03-12T00:00:45.927218Z'
+modified: '2022-03-13T04:10:17.672964Z'
 published: '2022-03-12T00:00:45.926897Z'
 references:
 - type: REPORT
@@ -24,6 +24,8 @@ affected:
     events:
     - introduced: 5cdc65e245e74dbd2abd713185ea495b5077f9d6
     - introduced: 1b0081e122b306f393979f952807863461a54b0c
+    - fixed: df14a0788709cebb933296b4e5e64ed619d5a77d
+    - fixed: 770a544af4c0c3dcff115e60b607f8782a7d21d4
   versions:
   - php-8.1.0
   - php-8.1.2RC1
