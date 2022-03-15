@@ -8,7 +8,7 @@ details: |
   pdfi_fapi_get_glyph
   get_fapi_glyph_data
   cff_slot_load
-modified: '2022-03-11T00:00:50.999547Z'
+modified: '2022-03-15T00:44:41.278105Z'
 published: '2022-03-11T00:00:50.999282Z'
 references:
 - type: REPORT
@@ -25,6 +25,7 @@ affected:
     - introduced: 651a93ca20079a446f4338f91a8b3b05bbc5258c
     - fixed: 4549e723d4c1dd44aa3051ce167d3a28dc75e53f
     - introduced: 351875730056edf20b282b2cf88c3333a91ba2ac
+    - fixed: d115cfcb622db3cf7649fbaff2f65f1fe3b14cd4
   versions:
   - ghostpdl-9.56.0rc1
   - ghostpdl-9.56.0rc1_release_tests_001
