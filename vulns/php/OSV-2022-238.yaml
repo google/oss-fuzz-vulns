@@ -8,7 +8,7 @@ details: |
   i_zval_ptr_dtor
   zend_leave_helper_SPEC
   zend_dispatch_try_catch_finally_helper_SPEC
-modified: '2022-03-13T04:10:17.672964Z'
+modified: '2022-03-16T01:28:05.680502Z'
 published: '2022-03-12T00:00:45.926897Z'
 references:
 - type: REPORT
@@ -30,6 +30,7 @@ affected:
   - php-8.1.0
   - php-8.1.2RC1
   - php-8.1.3
+  - php-8.1.4RC1
   ecosystem_specific:
     severity: null
 schema_version: 1.2.0
