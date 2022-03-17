@@ -1,0 +1,31 @@
+id: OSV-2022-243
+summary: Heap-buffer-overflow in grk::PacketIter::next_pcrl
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=45537
+
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  grk::PacketIter::next_pcrl
+  grk::T2Decompress::decompressPackets
+  grk::TileProcessor::decompressT2
+modified: '2022-03-15T00:00:45.637176Z'
+published: '2022-03-15T00:00:45.636919Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=45537
+affected:
+- package:
+    name: grok
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/grok
+  ranges:
+  - type: GIT
+    repo: https://github.com/GrokImageCompression/grok.git
+    events:
+    - introduced: 7113ab221774f06eee06a361cfb0870b572fe0dd
+  versions:
+  - v9.7.2
+  - v9.7.3
+  ecosystem_specific:
+    severity: MEDIUM
+schema_version: 1.2.0

@@ -1,0 +1,33 @@
+id: OSV-2022-248
+summary: Uncaught exception in java.base/java.nio.Bits.reserveMemory
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=45563
+
+  Crash type: Uncaught exception
+  Crash state:
+  java.base/java.nio.Bits.reserveMemory
+  java.base/java.nio.DirectByteBuffer.<init>
+  java.base/java.nio.ByteBuffer.allocateDirect
+modified: '2022-03-16T00:01:40.965395Z'
+published: '2022-03-16T00:01:40.965144Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=45563
+affected:
+- package:
+    name: arrow-java
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/arrow-java
+  ranges:
+  - type: GIT
+    repo: https://github.com/apache/arrow.git
+    events:
+    - introduced: ed03ea2401deeeca4a3274a8a0ca7124d07cde33
+    - fixed: 3eaa7dd0e8b3dabc5438203331f05e3e6c011e37
+  ecosystem_specific:
+    severity: LOW
+  database_specific:
+    introduced_range: 5592cf7cc7056679f1d7fd0ca2f9a9149e97b5c2:0ed5fa166107387246024c6dd7cf42f5eed54c38
+    fixed_range: 884d2b873c2103b247aa3cd38e38be20079b0890:3eaa7dd0e8b3dabc5438203331f05e3e6c011e37
+  versions: []
+schema_version: 1.2.0
