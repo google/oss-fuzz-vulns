@@ -8,7 +8,7 @@ details: |
   IsLetterGroup
   MatchRule
   TranslateRules
-modified: '2021-05-21T00:00:07.676068Z'
+modified: '2022-03-18T00:04:58.265807Z'
 published: '2021-05-21T00:00:07.675695Z'
 references:
 - type: REPORT
@@ -22,5 +22,8 @@ affected:
     repo: https://github.com/espeak-ng/espeak-ng
     events:
     - introduced: 0a713d52bbf3e061823d1a7f35e5303e7320f27a
+    - fixed: 34a12c83b46b51373ae183c3fb8fcce990414a05
+    - fixed: 1ce5a1bb0b229084c7c5f5154d01c35795d69e3f
   ecosystem_specific:
     severity: null
+  versions: []
