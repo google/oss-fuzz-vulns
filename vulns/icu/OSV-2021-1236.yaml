@@ -8,7 +8,7 @@ details: |
   icu_70::UCharsTrie::branchNext
   icu_70::UCharsTrie::firstForCodePoint
   icu_70::CollationIterator::nextCE32FromContraction
-modified: '2022-02-24T00:17:47.744220Z'
+modified: '2022-03-18T00:16:29.351517Z'
 published: '2021-09-12T00:00:39.088726Z'
 references:
 - type: REPORT
@@ -32,6 +32,7 @@ affected:
   - cldr/2022-02-08
   - cldr/2022-02-22
   - cldr/2022-02-23
+  - release-71-rc
   ecosystem_specific:
     severity: MEDIUM
   database_specific:
