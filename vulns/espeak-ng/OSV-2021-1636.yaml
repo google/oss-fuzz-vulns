@@ -8,7 +8,7 @@ details: |
   MatchRule
   TranslateRules
   TranslateWord3
-modified: '2021-12-01T00:00:23.705772Z'
+modified: '2022-03-18T00:04:51.382314Z'
 published: '2021-12-01T00:00:23.705541Z'
 references:
 - type: REPORT
@@ -23,6 +23,8 @@ affected:
     repo: https://github.com/espeak-ng/espeak-ng
     events:
     - introduced: 0a713d52bbf3e061823d1a7f35e5303e7320f27a
+    - fixed: 34a12c83b46b51373ae183c3fb8fcce990414a05
+    - fixed: 1ce5a1bb0b229084c7c5f5154d01c35795d69e3f
   ecosystem_specific:
     severity: MEDIUM
   versions: []
