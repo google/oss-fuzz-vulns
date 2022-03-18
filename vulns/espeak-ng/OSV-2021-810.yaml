@@ -8,7 +8,7 @@ details: |
   SubstitutePhonemes
   MakePhonemeList
   TranslateClause
-modified: '2021-05-29T00:00:08.421329Z'
+modified: '2022-03-18T00:04:58.561855Z'
 published: '2021-05-29T00:00:08.420998Z'
 references:
 - type: REPORT
@@ -22,5 +22,8 @@ affected:
     repo: https://github.com/espeak-ng/espeak-ng
     events:
     - introduced: 0a713d52bbf3e061823d1a7f35e5303e7320f27a
+    - fixed: 26a675543c63832e37ec780a6c30e49707df1db4
+    - fixed: 7f1222c6ad6a3652be35afbbc980a382076ff0a9
   ecosystem_specific:
     severity: null
+  versions: []
