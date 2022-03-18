@@ -1,0 +1,30 @@
+id: OSV-2022-250
+summary: Heap-buffer-overflow in __covrec_1D46B478ANUMBER
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=45603
+
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  __covrec_1D46B478ANUMBER
+  __covrec_F49D057CNUMBER
+  __covrec_5D82FD3F85773DBDu
+modified: '2022-03-17T00:01:53.988751Z'
+published: '2022-03-17T00:01:53.988524Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=45603
+affected:
+- package:
+    name: freeradius
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/freeradius
+  ranges:
+  - type: GIT
+    repo: https://github.com/FreeRADIUS/freeradius-server.git
+    events:
+    - introduced: abd736764099124eae8e29caafbec4572962d515
+    - fixed: 622489f07fd4fd4eaefdb24fa1381aab3bed3ed3
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.2.0

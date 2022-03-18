@@ -1,0 +1,31 @@
+id: OSV-2022-183
+summary: Heap-buffer-overflow in evax_bfd_print_dst
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=44864
+
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  evax_bfd_print_dst
+  evax_bfd_print_image
+  vms_bfd_print_private_bfd_data
+modified: '2022-02-21T00:01:49.509251Z'
+published: '2022-02-21T00:01:49.508994Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=44864
+affected:
+- package:
+    name: binutils
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/binutils
+  ranges:
+  - type: GIT
+    repo: git://sourceware.org/git/binutils-gdb.git
+    events:
+    - introduced: c5967f38de59c7375970c09b2c8b8702a01eb9d2
+    - fixed: 5f4a18df321c8c2f2db61cda1ed201b70ceb424f
+  versions:
+  - binutils-2_38
+  ecosystem_specific:
+    severity: MEDIUM
+schema_version: 1.2.0

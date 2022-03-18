@@ -1,0 +1,31 @@
+id: OSV-2022-252
+summary: Heap-buffer-overflow in grk::PacketLengthMarkers::readPLM
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=45622
+
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  grk::PacketLengthMarkers::readPLM
+  grk::CodeStreamDecompress::process_marker
+  grk::CodeStreamDecompress::readHeaderProcedureImpl
+modified: '2022-03-18T00:01:35.796846Z'
+published: '2022-03-18T00:01:35.796630Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=45622
+affected:
+- package:
+    name: grok
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/grok
+  ranges:
+  - type: GIT
+    repo: https://github.com/GrokImageCompression/grok.git
+    events:
+    - introduced: 0cf697ed3f32dbf2df822a8a42974e50262b064d
+  versions:
+  - v9.7.2
+  - v9.7.3
+  ecosystem_specific:
+    severity: MEDIUM
+schema_version: 1.2.0

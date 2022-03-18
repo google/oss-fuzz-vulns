@@ -1,0 +1,34 @@
+id: OSV-2022-222
+summary: Heap-use-after-free in cb_stdout_flush
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=45251
+
+  Crash type: Heap-use-after-free READ {*}
+  Crash state:
+  cb_stdout_flush
+  output_pre_cb_flush
+  flb-it-fuzz-filter_stdout_fuzzer_OSSFUZZ
+modified: '2022-03-07T00:01:53.429602Z'
+published: '2022-03-07T00:01:53.429306Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=45251
+affected:
+- package:
+    name: fluent-bit
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/fluent-bit
+  ranges:
+  - type: GIT
+    repo: https://github.com/fluent/fluent-bit/
+    events:
+    - introduced: fcbc08efd431106563873cf888e50272a3f713fe
+    - fixed: 42b2d0ec7e8139b7e1f5724b18d83c4e7e450e5f
+  versions:
+  - v1.9.0
+  - v1.9.0-ci-test-1
+  - v1.9.0-rc3
+  - v1.9.0-rc4
+  ecosystem_specific:
+    severity: HIGH
+schema_version: 1.2.0
