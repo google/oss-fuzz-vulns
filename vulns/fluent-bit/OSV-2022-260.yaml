@@ -1,0 +1,30 @@
+id: OSV-2022-260
+summary: Heap-double-free in read_config
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=45687
+
+  Crash type: Heap-double-free
+  Crash state:
+  read_config
+  flb_cf_fluentbit_create
+  flb_cf_create_from_file
+modified: '2022-03-19T00:01:34.875655Z'
+published: '2022-03-19T00:01:34.875264Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=45687
+affected:
+- package:
+    name: fluent-bit
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/fluent-bit
+  ranges:
+  - type: GIT
+    repo: https://github.com/fluent/fluent-bit/
+    events:
+    - introduced: 42b2d0ec7e8139b7e1f5724b18d83c4e7e450e5f
+    - fixed: cee783e53b96e445983a667ba51da087df14e472
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
+schema_version: 1.2.0
