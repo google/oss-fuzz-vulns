@@ -8,7 +8,7 @@ details: |
   ndlz4_decompress
   ndlz_decompress
   blosc_d
-modified: '2021-12-17T00:01:06.310817Z'
+modified: '2022-03-20T00:04:35.691347Z'
 published: '2021-12-17T00:01:06.310525Z'
 references:
 - type: REPORT
@@ -23,6 +23,7 @@ affected:
     repo: https://github.com/Blosc/c-blosc2.git
     events:
     - introduced: 1c9795f2e3e04a79f13d9e7658e6d6e47dfe1cc4
+    - fixed: 36fbefb68fd04d9399aec57e46f4ed44a84c39e1
   versions:
   - v2.0.0
   - v2.0.1
