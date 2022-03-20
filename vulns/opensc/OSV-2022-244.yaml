@@ -1,0 +1,30 @@
+id: OSV-2022-244
+summary: Heap-buffer-overflow in process_ef
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=45552
+
+  Crash type: Heap-buffer-overflow WRITE 8
+  Crash state:
+  process_ef
+  process_block
+  process_df
+modified: '2022-03-15T00:01:37.262242Z'
+published: '2022-03-15T00:01:37.262017Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=45552
+affected:
+- package:
+    name: opensc
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/opensc
+  ranges:
+  - type: GIT
+    repo: https://github.com/OpenSC/OpenSC
+    events:
+    - introduced: bec4f63c5b8308d7fdca842c5c0b62c3491d106a
+    - fixed: e96dbe9a59b30f00eefa823b731c85e89d5aa960
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
+schema_version: 1.2.0
