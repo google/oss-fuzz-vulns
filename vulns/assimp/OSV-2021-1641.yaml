@@ -9,7 +9,7 @@ details: |
   std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<ch
   void Assimp::Logger::warn<char const
   Assimp::NDOImporter::InternReadFile
-modified: '2021-12-03T00:00:36.651378Z'
+modified: '2022-03-20T00:05:33.031973Z'
 published: '2021-12-03T00:00:36.651134Z'
 references:
 - type: REPORT
@@ -37,6 +37,7 @@ affected:
   - v5.2.0
   - v5.2.1
   - v5.2.2
+  - v5.2.3
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.2.0
