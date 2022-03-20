@@ -8,7 +8,7 @@ details: |
   grk::PacketIter::next_pcrl
   grk::T2Decompress::decompressPackets
   grk::TileProcessor::decompressT2
-modified: '2022-03-15T00:00:45.637176Z'
+modified: '2022-03-20T00:05:03.385763Z'
 published: '2022-03-15T00:00:45.636919Z'
 references:
 - type: REPORT
@@ -26,6 +26,7 @@ affected:
   versions:
   - v9.7.2
   - v9.7.3
+  - v9.7.4
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.2.0
