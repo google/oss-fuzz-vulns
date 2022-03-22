@@ -1,0 +1,42 @@
+id: OSV-2022-270
+summary: Stack-buffer-overflow in fn_ElIn_evaluate
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=45886
+
+  Crash type: Stack-buffer-overflow WRITE 4
+  Crash state:
+  fn_ElIn_evaluate
+  pdfi_set_transfer
+  GS_TR
+modified: '2022-03-22T00:00:43.287497Z'
+published: '2022-03-22T00:00:43.287274Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=45886
+affected:
+- package:
+    name: ghostscript
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/ghostscript
+  ranges:
+  - type: GIT
+    repo: git://git.ghostscript.com/ghostpdl.git
+    events:
+    - introduced: 75fbddf52051987287e62d13c659eb73ba16982f
+    - fixed: 9f6772c1292022dee6576b2f3d0c258e523af834
+    - fixed: 6abd758e502a2cd71045f3db5496ff85478f0abb
+  versions:
+  - ghostpdl-9.56.0-test-base-2
+  - ghostpdl-9.56.0-test-base-3
+  - ghostpdl-9.56.0-test-base-4
+  - ghostpdl-9.56.0-test-base-5
+  - ghostpdl-9.56.0rc1
+  - ghostpdl-9.56.0rc1_release_tests_001
+  - ghostpdl-9.56.0rc1_release_tests_002
+  - ghostpdl-9.56.0rc2
+  - ghostpdl-9.56.0rc2_release_tests_001
+  - ken_20220210_baseline
+  - robin-test-base-0
+  ecosystem_specific:
+    severity: HIGH
+schema_version: 1.2.0

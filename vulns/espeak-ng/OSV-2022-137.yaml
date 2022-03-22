@@ -1,0 +1,33 @@
+id: OSV-2022-137
+summary: Stack-buffer-overflow in LoadVoice
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=44527
+
+  Crash type: Stack-buffer-overflow READ {*}
+  Crash state:
+  LoadVoice
+  LoadVoiceVariant
+  SpeakNextClause
+modified: '2022-02-10T00:01:38.135656Z'
+published: '2022-02-10T00:01:38.135452Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=44527
+affected:
+- package:
+    name: espeak-ng
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/espeak-ng
+  ranges:
+  - type: GIT
+    repo: https://github.com/espeak-ng/espeak-ng
+    events:
+    - introduced: 80895db0a82749fb139807e73210819663a78061
+    - fixed: a9f48fdb15f46d554aa107af3ae5a308d9f2cf84
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    fixed_range: 602fc3bed399eeecfe67e264da4db86683e15068:a9f48fdb15f46d554aa107af3ae5a308d9f2cf84
+    introduced_range: 9ae762d4074d1abb177672ae657cc37feae27090:ac643ea5add300e036afbcc0d48e28d94edad5a9
+  versions: []
+schema_version: 1.2.0

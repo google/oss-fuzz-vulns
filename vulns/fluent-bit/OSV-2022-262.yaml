@@ -1,0 +1,29 @@
+id: OSV-2022-262
+summary: Heap-double-free in flb_pack_state_reset
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=45810
+
+  Crash type: Heap-double-free
+  Crash state:
+  flb_pack_state_reset
+  in_lib_collect
+  flb_input_collector_fd
+modified: '2022-03-20T00:01:42.677567Z'
+published: '2022-03-20T00:01:42.677304Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=45810
+affected:
+- package:
+    name: fluent-bit
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/fluent-bit
+  ranges:
+  - type: GIT
+    repo: https://github.com/fluent/fluent-bit/
+    events:
+    - introduced: cee783e53b96e445983a667ba51da087df14e472
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
+schema_version: 1.2.0
