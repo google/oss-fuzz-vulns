@@ -1,0 +1,30 @@
+id: OSV-2022-265
+summary: Heap-buffer-overflow in jxl::WriteToPixelCallbackStage::ProcessRow
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=45833
+
+  Crash type: Heap-buffer-overflow READ 4
+  Crash state:
+  jxl::WriteToPixelCallbackStage::ProcessRow
+  jxl::LowMemoryRenderPipeline::RenderRect
+  jxl::LowMemoryRenderPipeline::ProcessBuffers
+modified: '2022-03-21T00:00:38.667972Z'
+published: '2022-03-21T00:00:38.667705Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=45833
+affected:
+- package:
+    name: libjxl
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libjxl
+  ranges:
+  - type: GIT
+    repo: https://github.com/libjxl/libjxl.git
+    events:
+    - introduced: ffa47f29119a558bfff18fc2e4e9311e68fcfd2a
+    - fixed: eadb9f70eb83e7f88246431d355b9bc7387fcc6f
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.2.0

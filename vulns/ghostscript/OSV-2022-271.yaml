@@ -1,0 +1,36 @@
+id: OSV-2022-271
+summary: UNKNOWN READ in pdf14_buf_free
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=45892
+
+  Crash type: UNKNOWN READ
+  Crash state:
+  pdf14_buf_free
+  rc_pdf14_maskbuf_free
+  pdf14_end_transparency_mask
+modified: '2022-03-22T00:01:47.478496Z'
+published: '2022-03-22T00:01:47.478262Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=45892
+affected:
+- package:
+    name: ghostscript
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/ghostscript
+  ranges:
+  - type: GIT
+    repo: git://git.ghostscript.com/ghostpdl.git
+    events:
+    - introduced: efab3239bc4a02827cafbc89149bb8d982ee8a8e
+    - fixed: dc67c64d6d61f5fa9b065c03cabd237d67158802
+    - fixed: a4b71ab352e9e9b3f849b3727944b6e8ec64e7b0
+  versions:
+  - ghostpdl-9.56.0rc1
+  - ghostpdl-9.56.0rc1_release_tests_001
+  - ghostpdl-9.56.0rc1_release_tests_002
+  - ghostpdl-9.56.0rc2
+  - ghostpdl-9.56.0rc2_release_tests_001
+  ecosystem_specific:
+    severity: MEDIUM
+schema_version: 1.2.0

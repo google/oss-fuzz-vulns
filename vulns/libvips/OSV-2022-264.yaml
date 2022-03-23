@@ -1,0 +1,30 @@
+id: OSV-2022-264
+summary: Heap-buffer-overflow in jxl::N_AVX2::BlendingStage::ProcessRow
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=45822
+
+  Crash type: Heap-buffer-overflow READ 4
+  Crash state:
+  jxl::N_AVX2::BlendingStage::ProcessRow
+  jxl::LowMemoryRenderPipeline::RenderRect
+  jxl::LowMemoryRenderPipeline::ProcessBuffers
+modified: '2022-03-21T00:00:16.278632Z'
+published: '2022-03-21T00:00:16.278407Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=45822
+affected:
+- package:
+    name: libvips
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libvips
+  ranges:
+  - type: GIT
+    repo: https://github.com/libvips/libvips.git
+    events:
+    - introduced: eaf34b8f13d22b35acf2e07775c12ae5ccd615fd
+    - fixed: eaf34b8f13d22b35acf2e07775c12ae5ccd615fd
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.2.0
