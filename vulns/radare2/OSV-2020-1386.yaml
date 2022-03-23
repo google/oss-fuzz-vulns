@@ -8,7 +8,7 @@ details: |
   parse_relocation_info
   get_relocs_64
   relocs
-modified: '2022-03-01T00:07:19.690396Z'
+modified: '2022-03-23T00:07:50.768159Z'
 published: '2020-07-28T00:00:08.332887Z'
 references:
 - type: REPORT
@@ -44,5 +44,6 @@ affected:
   - 5.6.0
   - 5.6.2
   - 5.6.4
+  - 5.6.6
   ecosystem_specific:
     severity: MEDIUM
