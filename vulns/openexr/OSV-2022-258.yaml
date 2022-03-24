@@ -1,0 +1,30 @@
+id: OSV-2022-258
+summary: Heap-double-free in Imf_3_1::RgbaInputFile::~RgbaInputFile
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=45718
+
+  Crash type: Heap-double-free
+  Crash state:
+  Imf_3_1::RgbaInputFile::~RgbaInputFile
+  Imf_3_1::checkOpenEXRFile
+  openexr_exrcheck_fuzzer.cc
+modified: '2022-03-19T00:00:41.775689Z'
+published: '2022-03-19T00:00:41.775467Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=45718
+affected:
+- package:
+    name: openexr
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/openexr
+  ranges:
+  - type: GIT
+    repo: https://github.com/AcademySoftwareFoundation/openexr
+    events:
+    - introduced: a29fa0510b355647d2d6f216b7733c696ec8c5ac
+    - fixed: 0b27d291b04924d5228b020247dbd02031d2aa51
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
+schema_version: 1.2.0
