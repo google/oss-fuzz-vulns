@@ -8,7 +8,7 @@ details: |
   grk::PacketIter::next_pcrl
   grk::T2Decompress::decompressPackets
   grk::TileProcessor::decompressT2
-modified: '2022-03-20T00:05:03.385763Z'
+modified: '2022-03-27T00:04:09.876892Z'
 published: '2022-03-15T00:00:45.636919Z'
 references:
 - type: REPORT
@@ -23,6 +23,7 @@ affected:
     repo: https://github.com/GrokImageCompression/grok.git
     events:
     - introduced: 7113ab221774f06eee06a361cfb0870b572fe0dd
+    - fixed: f33b49fa40b0abad23f25d2c8a74794bccd22a53
   versions:
   - v9.7.2
   - v9.7.3
