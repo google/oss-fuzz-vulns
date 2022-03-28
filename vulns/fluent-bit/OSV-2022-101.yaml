@@ -1,0 +1,40 @@
+id: OSV-2022-101
+summary: Heap-double-free in flb_sds_destroy
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=44153
+
+  Crash type: Heap-double-free
+  Crash state:
+  flb_sds_destroy
+  flb_parser_conf_file
+  config_random_fuzzer.c
+modified: '2022-01-30T00:00:16.518667Z'
+published: '2022-01-30T00:00:16.518467Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=44153
+affected:
+- package:
+    name: fluent-bit
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/fluent-bit
+  ranges:
+  - type: GIT
+    repo: https://github.com/fluent/fluent-bit/
+    events:
+    - introduced: e59f16b1168fca4046fff219ba9ae4e20dee6610
+    - fixed: 67b144340b46bbc2585363cc1fb2de6b662e7b36
+    - introduced: 715e40c3104db7576866041e47bf62ccfbf8b518
+  versions:
+  - ci-release-test
+  - unstable
+  - unstable-master
+  - v1.9.0
+  - v1.9.0-ci-test-1
+  - v1.9.0-rc1
+  - v1.9.0-rc2
+  - v1.9.0-rc3
+  - v1.9.0-rc4
+  ecosystem_specific:
+    severity: HIGH
+schema_version: 1.2.0

@@ -1,0 +1,35 @@
+id: OSV-2022-55
+summary: Heap-buffer-overflow in ndlz4_decompress
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=43687
+
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  ndlz4_decompress
+  ndlz_decompress
+  blosc_d
+modified: '2022-01-17T00:01:46.845067Z'
+published: '2022-01-17T00:01:46.844742Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=43687
+affected:
+- package:
+    name: c-blosc2
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/c-blosc2
+  ranges:
+  - type: GIT
+    repo: https://github.com/Blosc/c-blosc2.git
+    events:
+    - introduced: 1c9795f2e3e04a79f13d9e7658e6d6e47dfe1cc4
+    - fixed: 16cc1d55b7d84f05668133b6bce5b30d3c52b6b3
+  versions:
+  - v2.0.0
+  - v2.0.1
+  - v2.0.2
+  - v2.0.3
+  - v2.0.4
+  ecosystem_specific:
+    severity: MEDIUM
+schema_version: 1.2.0

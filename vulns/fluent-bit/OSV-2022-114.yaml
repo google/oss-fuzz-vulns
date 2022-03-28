@@ -1,0 +1,40 @@
+id: OSV-2022-114
+summary: Heap-buffer-overflow in add_compile_string
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=44379
+
+  Crash type: Heap-buffer-overflow READ 3
+  Crash state:
+  add_compile_string
+  compile_tree
+  compile_tree
+modified: '2022-02-04T00:00:10.501269Z'
+published: '2022-02-04T00:00:10.501043Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=44379
+affected:
+- package:
+    name: fluent-bit
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/fluent-bit
+  ranges:
+  - type: GIT
+    repo: https://github.com/fluent/fluent-bit/
+    events:
+    - introduced: e59f16b1168fca4046fff219ba9ae4e20dee6610
+    - fixed: 67b144340b46bbc2585363cc1fb2de6b662e7b36
+    - introduced: 715e40c3104db7576866041e47bf62ccfbf8b518
+  versions:
+  - ci-release-test
+  - unstable
+  - unstable-master
+  - v1.9.0
+  - v1.9.0-ci-test-1
+  - v1.9.0-rc1
+  - v1.9.0-rc2
+  - v1.9.0-rc3
+  - v1.9.0-rc4
+  ecosystem_specific:
+    severity: MEDIUM
+schema_version: 1.2.0
