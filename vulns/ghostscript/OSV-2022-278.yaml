@@ -8,7 +8,7 @@ details: |
   s_RLE_process
   cmd_put_bits
   clist_copy_mono
-modified: '2022-03-26T00:00:21.518135Z'
+modified: '2022-03-30T00:36:09.442822Z'
 published: '2022-03-26T00:00:21.517737Z'
 references:
 - type: REPORT
@@ -24,6 +24,7 @@ affected:
     events:
     - introduced: 75fbddf52051987287e62d13c659eb73ba16982f
     - fixed: 38b3bde1293ea8b6064bd6c2a1ed60171adea82b
+    - fixed: 74fcdb4671a45bc2f4b8803b58640661e2b3a615
   versions:
   - ghostpdl-9.56.0-test-base-2
   - ghostpdl-9.56.0-test-base-3
