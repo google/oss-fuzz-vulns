@@ -8,7 +8,7 @@ details: |
   grk::PacketIter::genPrecinctInfo
   grk::PacketManager::PacketManager
   grk::T2Decompress::decompressPackets
-modified: '2022-03-20T00:05:03.980626Z'
+modified: '2022-03-31T00:05:11.548388Z'
 published: '2022-03-15T00:01:42.984652Z'
 references:
 - type: REPORT
@@ -27,6 +27,7 @@ affected:
   - v9.7.2
   - v9.7.3
   - v9.7.4
+  - v9.7.4.debian
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.2.0
