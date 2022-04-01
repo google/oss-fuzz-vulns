@@ -1,0 +1,30 @@
+id: OSV-2022-241
+summary: UNKNOWN READ in write_cond_nodes_to_conf
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=45523
+
+  Crash type: UNKNOWN READ
+  Crash state:
+  write_cond_nodes_to_conf
+  sepol_kernel_policydb_to_conf
+  binpolicy-fuzzer.c
+modified: '2022-03-14T00:01:31.071603Z'
+published: '2022-03-14T00:01:31.071382Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=45523
+affected:
+- package:
+    name: selinux
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/selinux
+  ranges:
+  - type: GIT
+    repo: https://github.com/SELinuxProject/selinux
+    events:
+    - introduced: b76eda527fcb0f878ab2d9a9fa7cf94a09be347f
+    - fixed: c3f0124b1817dd4bdc79c86491d77a7a2b08d479
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.2.0
