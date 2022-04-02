@@ -1,0 +1,47 @@
+id: OSV-2021-1807
+summary: Heap-use-after-free in dhcp6_no_relay
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=44573
+
+  Crash type: Heap-use-after-free WRITE 1
+  Crash state:
+  dhcp6_no_relay
+  dhcp6_maybe_relay
+  dhcp6_maybe_relay
+modified: '2022-02-13T00:01:51.009694Z'
+published: '2022-02-13T00:01:51.009220Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=44573
+affected:
+- package:
+    name: dnsmasq
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/dnsmasq
+  ranges:
+  - type: GIT
+    repo: git://thekelleys.org.uk/dnsmasq.git
+    events:
+    - introduced: 96f6444958c29a670f4254722d787f328153605c
+    - fixed: 03345ecefeb0d82e3c3a4c28f27c3554f0611b39
+  versions:
+  - v2.86
+  - v2.86rc1
+  - v2.86rc2
+  - v2.86rc3
+  - v2.86test5
+  - v2.86test6
+  - v2.86test7
+  - v2.87test1
+  - v2.87test2
+  - v2.87test3
+  - v2.87test4
+  - v2.87test5
+  - v2.87test6
+  - v2.87test7
+  - v2.87test8
+  ecosystem_specific:
+    severity: HIGH
+  database_specific:
+    fixed_range: 756a1dcc1925ed0f2768ededf0e20505ee15b9ff:03345ecefeb0d82e3c3a4c28f27c3554f0611b39
+schema_version: 1.2.0
