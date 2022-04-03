@@ -8,7 +8,7 @@ details: |
   LookupDict2
   LookupDictList
   Lookup
-modified: '2021-05-15T00:00:28.613922Z'
+modified: '2022-04-03T00:03:45.504726Z'
 published: '2021-05-15T00:00:28.613673Z'
 references:
 - type: REPORT
@@ -22,5 +22,7 @@ affected:
     repo: https://github.com/espeak-ng/espeak-ng
     events:
     - introduced: 0a713d52bbf3e061823d1a7f35e5303e7320f27a
+  versions:
+  - '1.51'
   ecosystem_specific:
     severity: HIGH
