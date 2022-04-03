@@ -8,7 +8,7 @@ details: |
   TranslateRules
   TranslateWord3
   TranslateWord
-modified: '2021-08-21T00:01:35.555230Z'
+modified: '2022-04-03T00:04:21.367558Z'
 published: '2021-08-21T00:01:35.555020Z'
 references:
 - type: REPORT
@@ -22,6 +22,7 @@ affected:
     repo: https://github.com/espeak-ng/espeak-ng
     events:
     - introduced: 0a713d52bbf3e061823d1a7f35e5303e7320f27a
+  versions:
+  - '1.51'
   ecosystem_specific:
     severity: HIGH
-  versions: []
