@@ -8,7 +8,7 @@ details: |
   GetSsmlAttribute
   GetVoiceAttributes
   ProcessSsmlTag
-modified: '2021-07-17T00:00:48.123605Z'
+modified: '2022-04-03T00:04:20.307884Z'
 published: '2021-07-17T00:00:48.123388Z'
 references:
 - type: REPORT
@@ -22,6 +22,7 @@ affected:
     repo: https://github.com/espeak-ng/espeak-ng
     events:
     - introduced: 0a713d52bbf3e061823d1a7f35e5303e7320f27a
+  versions:
+  - '1.51'
   ecosystem_specific:
     severity: null
-  versions: []
