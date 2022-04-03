@@ -8,7 +8,7 @@ details: |
   derive_spatial_luma_vector_prediction
   fill_luma_motion_vector_predictors
   motion_vectors_and_ref_indices
-modified: '2022-03-14T00:03:44.407998Z'
+modified: '2022-04-03T00:03:45.153560Z'
 published: '2021-10-21T00:01:39.891638Z'
 references:
 - type: REPORT
@@ -49,5 +49,6 @@ affected:
   - v5.91.0
   - v5.92.0-rc1
   - v5.92.0
+  - v5.93.0-rc1
   ecosystem_specific:
     severity: MEDIUM
