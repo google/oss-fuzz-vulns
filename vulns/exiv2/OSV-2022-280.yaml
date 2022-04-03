@@ -1,0 +1,30 @@
+id: OSV-2022-280
+summary: Heap-buffer-overflow in Exiv2::getULong
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=45993
+
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  Exiv2::getULong
+  Exiv2::Internal::isValidBoxFileType
+  Exiv2::Jp2Image::readMetadata
+modified: '2022-03-26T00:00:34.484395Z'
+published: '2022-03-26T00:00:34.484159Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=45993
+affected:
+- package:
+    name: exiv2
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/exiv2
+  ranges:
+  - type: GIT
+    repo: https://github.com/Exiv2/exiv2
+    events:
+    - introduced: 1545a1bc4aa4323ad15607d007918f3483c71dea
+    - fixed: d16ca65b01188d28afbe5a52b1495ac0270dd95a
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.2.0
