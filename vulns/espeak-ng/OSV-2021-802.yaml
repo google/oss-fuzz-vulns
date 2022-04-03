@@ -8,7 +8,7 @@ details: |
   InterpretCondition
   InterpretPhoneme
   MakePhonemeList
-modified: '2021-05-27T00:00:31.797995Z'
+modified: '2022-04-03T00:04:24.572341Z'
 published: '2021-05-27T00:00:31.797718Z'
 references:
 - type: REPORT
@@ -22,5 +22,7 @@ affected:
     repo: https://github.com/espeak-ng/espeak-ng
     events:
     - introduced: 0a713d52bbf3e061823d1a7f35e5303e7320f27a
+  versions:
+  - '1.51'
   ecosystem_specific:
     severity: MEDIUM
