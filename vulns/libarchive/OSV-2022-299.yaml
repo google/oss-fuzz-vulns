@@ -1,0 +1,31 @@
+id: OSV-2022-299
+summary: Heap-use-after-free in read_data_compressed
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=46279
+
+  Crash type: Heap-use-after-free READ 4
+  Crash state:
+  read_data_compressed
+  archive_read_format_rar_read_data
+  _archive_read_data_block
+modified: '2022-04-04T00:00:06.864392Z'
+published: '2022-04-04T00:00:06.861660Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=46279
+affected:
+- package:
+    name: libarchive
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libarchive
+  ranges:
+  - type: GIT
+    repo: https://github.com/libarchive/libarchive.git
+    events:
+    - introduced: d7fec62918f48dc1f56457df02eb3c8b0d12863b
+    - fixed: db714553712debbc447383f735e022031dc13127
+  versions:
+  - v3.6.0
+  ecosystem_specific:
+    severity: HIGH
+schema_version: 1.2.0

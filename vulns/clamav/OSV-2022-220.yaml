@@ -1,0 +1,31 @@
+id: OSV-2022-220
+summary: Stack-buffer-overflow in load_regex_matcher
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=45247
+
+  Crash type: Stack-buffer-overflow WRITE 1
+  Crash state:
+  load_regex_matcher
+  cli_loadpdb
+  cli_load
+modified: '2022-03-07T00:00:32.716671Z'
+published: '2022-03-07T00:00:32.716453Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=45247
+affected:
+- package:
+    name: clamav
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/clamav
+  ranges:
+  - type: GIT
+    repo: https://github.com/Cisco-Talos/clamav.git
+    events:
+    - introduced: 0037f5825b0b17a789c7eb29c9cb9a2d39c452bc
+    - fixed: 9d9caf396ad99b19a1dfa5f61cf5f73b51c6c964
+  versions:
+  - clamav-0.105.0-rc
+  ecosystem_specific:
+    severity: HIGH
+schema_version: 1.2.0
