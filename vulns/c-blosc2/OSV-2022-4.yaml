@@ -1,0 +1,36 @@
+id: OSV-2022-4
+summary: Memcpy-param-overlap in ZSTD_createDDict
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=43287
+
+  Crash type: Memcpy-param-overlap
+  Crash state:
+  ZSTD_createDDict
+  blosc_run_decompression_with_context
+  blosc2_decompress_ctx
+modified: '2022-01-05T00:00:41.045737Z'
+published: '2022-01-05T00:00:41.045461Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=43287
+affected:
+- package:
+    name: c-blosc2
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/c-blosc2
+  ranges:
+  - type: GIT
+    repo: https://github.com/Blosc/c-blosc2.git
+    events:
+    - introduced: 4a727370b1c2e9746434c00bf2236db86c31ea5c
+  versions:
+  - v2.0.0
+  - v2.0.0-rc2
+  - v2.0.0.rc1
+  - v2.0.1
+  - v2.0.2
+  - v2.0.3
+  - v2.0.4
+  ecosystem_specific:
+    severity: MEDIUM
+schema_version: 1.2.0

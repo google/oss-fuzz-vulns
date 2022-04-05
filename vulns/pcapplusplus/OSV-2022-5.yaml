@@ -1,0 +1,31 @@
+id: OSV-2022-5
+summary: Heap-buffer-overflow in pcpp::IPv6AuthenticationHeader::getExtensionLen
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=43290
+
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  pcpp::IPv6AuthenticationHeader::getExtensionLen
+  pcpp::IPv6Layer::parseExtensions
+  pcpp::IPv6Layer::IPv6Layer
+modified: '2022-01-05T00:00:46.966136Z'
+published: '2022-01-05T00:00:46.965901Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=43290
+affected:
+- package:
+    name: pcapplusplus
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/pcapplusplus
+  ranges:
+  - type: GIT
+    repo: https://github.com/seladb/PcapPlusPlus
+    events:
+    - introduced: fbc52d37c6a7e8cc75e4950d2621cbd907c6cf8a
+  versions:
+  - v21.05
+  - v21.11
+  ecosystem_specific:
+    severity: MEDIUM
+schema_version: 1.2.0
