@@ -8,7 +8,7 @@ details: |
   icu_70::UCharsTrie::branchNext
   icu_70::UCharsTrie::firstForCodePoint
   icu_70::CollationIterator::nextCE32FromContraction
-modified: '2022-04-01T00:16:04.153853Z'
+modified: '2022-04-06T00:18:23.633756Z'
 published: '2021-09-12T00:00:39.088726Z'
 references:
 - type: REPORT
@@ -22,19 +22,20 @@ affected:
     repo: https://github.com/unicode-org/icu.git
     events:
     - introduced: 7851f708a3dd43fc1e0e9dd784e7dfe9a70915b2
+    - fixed: 4833cc89b2fae2e8863b46bf1dc785964847e882
   versions:
   - cldr/2021-09-15
   - cldr/2021-09-29
   - cldr/2021-10-19
   - cldr/2021-10-25
-  - release-70-1
-  - release-70-rc
   - cldr/2022-02-08
   - cldr/2022-02-22
   - cldr/2022-02-23
-  - release-71-rc
   - cldr/2022-03-30
   - cldr/2022-03-31
+  - release-70-1
+  - release-70-rc
+  - release-71-rc
   ecosystem_specific:
     severity: MEDIUM
   database_specific:
