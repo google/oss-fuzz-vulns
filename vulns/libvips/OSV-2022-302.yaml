@@ -1,0 +1,30 @@
+id: OSV-2022-302
+summary: Heap-use-after-free in read_markers
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=46334
+
+  Crash type: Heap-use-after-free READ 4
+  Crash state:
+  read_markers
+  consume_markers
+  jpeg_consume_input
+modified: '2022-04-05T00:00:09.283625Z'
+published: '2022-04-05T00:00:09.283355Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=46334
+affected:
+- package:
+    name: libvips
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libvips
+  ranges:
+  - type: GIT
+    repo: https://github.com/libvips/libvips.git
+    events:
+    - introduced: 89bd46d1c4e0465974b886ef5b5021e988f111a2
+    - fixed: 0f30690360a647360b0c712bd97401caf21f8007
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
+schema_version: 1.2.0

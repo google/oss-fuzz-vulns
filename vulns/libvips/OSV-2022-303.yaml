@@ -1,0 +1,32 @@
+id: OSV-2022-303
+summary: Heap-use-after-free in start_pass_phuff_decoder
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=46338
+
+  Crash type: Heap-use-after-free WRITE 4
+  Crash state:
+  start_pass_phuff_decoder
+  start_input_pass
+  jinit_master_decompress
+modified: '2022-04-05T00:00:12.039977Z'
+published: '2022-04-05T00:00:12.039669Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=46338
+affected:
+- package:
+    name: libvips
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libvips
+  ranges:
+  - type: GIT
+    repo: https://github.com/libvips/libvips.git
+    events:
+    - introduced: 89bd46d1c4e0465974b886ef5b5021e988f111a2
+    - fixed: 2dc319b1b1610e4c8ae95b8ca47b46926cd41ce1
+  ecosystem_specific:
+    severity: HIGH
+  database_specific:
+    fixed_range: 89bd46d1c4e0465974b886ef5b5021e988f111a2:2dc319b1b1610e4c8ae95b8ca47b46926cd41ce1
+  versions: []
+schema_version: 1.2.0

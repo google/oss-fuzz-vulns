@@ -1,0 +1,32 @@
+id: OSV-2022-304
+summary: Heap-use-after-free in decode_mcu
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=46335
+
+  Crash type: Heap-use-after-free WRITE 4
+  Crash state:
+  decode_mcu
+  consume_data
+  jpeg_start_decompress
+modified: '2022-04-05T00:00:22.785479Z'
+published: '2022-04-05T00:00:22.785247Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=46335
+affected:
+- package:
+    name: libvips
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libvips
+  ranges:
+  - type: GIT
+    repo: https://github.com/libvips/libvips.git
+    events:
+    - introduced: 89bd46d1c4e0465974b886ef5b5021e988f111a2
+    - fixed: 2dc319b1b1610e4c8ae95b8ca47b46926cd41ce1
+  ecosystem_specific:
+    severity: HIGH
+  database_specific:
+    fixed_range: 89bd46d1c4e0465974b886ef5b5021e988f111a2:2dc319b1b1610e4c8ae95b8ca47b46926cd41ce1
+  versions: []
+schema_version: 1.2.0

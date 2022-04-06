@@ -1,0 +1,28 @@
+id: OSV-2022-308
+summary: Null-dereference READ in ubsan_GetStackTrace
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=46341
+
+  Crash type: Null-dereference READ
+  Crash state:
+  ubsan_GetStackTrace
+modified: '2022-04-06T00:00:09.670431Z'
+published: '2022-04-06T00:00:09.670188Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=46341
+affected:
+- package:
+    name: libvips
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libvips
+  ranges:
+  - type: GIT
+    repo: https://github.com/libvips/libvips.git
+    events:
+    - introduced: 89bd46d1c4e0465974b886ef5b5021e988f111a2
+    - fixed: 0f30690360a647360b0c712bd97401caf21f8007
+  ecosystem_specific:
+    severity: null
+  versions: []
+schema_version: 1.2.0

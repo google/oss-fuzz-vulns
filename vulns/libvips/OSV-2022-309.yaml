@@ -1,0 +1,32 @@
+id: OSV-2022-309
+summary: UNKNOWN READ in decompress_smooth_data
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=46349
+
+  Crash type: UNKNOWN READ
+  Crash state:
+  decompress_smooth_data
+  process_data_simple_main
+  jpeg_read_scanlines
+modified: '2022-04-06T00:00:33.512453Z'
+published: '2022-04-06T00:00:33.512236Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=46349
+affected:
+- package:
+    name: libvips
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libvips
+  ranges:
+  - type: GIT
+    repo: https://github.com/libvips/libvips.git
+    events:
+    - introduced: 9228e50f46b79dc448b9416a5ae1dfdcfdfcf98c
+    - fixed: 0f30690360a647360b0c712bd97401caf21f8007
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: dc07b0005960687b7ec541b0a3714210e1e16f6a:89bd46d1c4e0465974b886ef5b5021e988f111a2
+  versions: []
+schema_version: 1.2.0
