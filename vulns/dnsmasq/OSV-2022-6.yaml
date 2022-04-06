@@ -8,7 +8,7 @@ details: |
   extract_name
   hash_questions
   fuzz_util.c
-modified: '2022-01-06T00:00:09.667883Z'
+modified: '2022-04-06T00:06:22.989311Z'
 published: '2022-01-06T00:00:09.667642Z'
 references:
 - type: REPORT
@@ -23,6 +23,7 @@ affected:
     repo: git://thekelleys.org.uk/dnsmasq.git
     events:
     - introduced: 96f6444958c29a670f4254722d787f328153605c
+    - fixed: 03345ecefeb0d82e3c3a4c28f27c3554f0611b39
   versions:
   - v2.86
   - v2.86rc1
