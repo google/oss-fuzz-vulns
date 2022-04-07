@@ -1,0 +1,31 @@
+id: OSV-2022-318
+summary: UNKNOWN READ
+details: |-
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=46356
+
+  Crash type: UNKNOWN READ
+  Crash state:
+  NULL
+modified: '2022-04-07T00:01:51.631332Z'
+published: '2022-04-07T00:01:51.631058Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=46356
+affected:
+- package:
+    name: libvips
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libvips
+  ranges:
+  - type: GIT
+    repo: https://github.com/libvips/libvips.git
+    events:
+    - introduced: 9228e50f46b79dc448b9416a5ae1dfdcfdfcf98c
+    - fixed: 2dc319b1b1610e4c8ae95b8ca47b46926cd41ce1
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    fixed_range: 89bd46d1c4e0465974b886ef5b5021e988f111a2:2dc319b1b1610e4c8ae95b8ca47b46926cd41ce1
+    introduced_range: dc07b0005960687b7ec541b0a3714210e1e16f6a:89bd46d1c4e0465974b886ef5b5021e988f111a2
+  versions: []
+schema_version: 1.2.0

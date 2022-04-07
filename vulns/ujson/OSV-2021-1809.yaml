@@ -1,0 +1,32 @@
+id: OSV-2021-1809
+summary: Heap-buffer-overflow in ujson.cpython-38-x86_64-linux-gnu.so
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=44973
+
+  Crash type: Heap-buffer-overflow WRITE 1
+  Crash state:
+  ujson.cpython-38-x86_64-linux-gnu.so
+  ujson.cpython-38-x86_64-linux-gnu.so
+  ujson.cpython-38-x86_64-linux-gnu.so
+modified: '2022-02-25T00:00:25.106952Z'
+published: '2022-02-25T00:00:25.106722Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=44973
+affected:
+- package:
+    name: ujson
+    ecosystem: PyPI
+    purl: pkg:pypi/ujson
+  ranges:
+  - type: GIT
+    repo: https://github.com/ultrajson/ultrajson.git
+    events:
+    - introduced: b9275f7b001da11495040f1332f6c3adf3daa57b
+    - fixed: 550ba4d77294e61597a5259d00769c61281e0042
+  versions:
+  - 5.1.0
+  - 5.2.0
+  ecosystem_specific:
+    severity: HIGH
+schema_version: 1.2.0
