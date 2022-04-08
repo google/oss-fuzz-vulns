@@ -8,7 +8,7 @@ details: |
   Imf_3_1::memstream_read
   dispatch_read
   extract_chunk_leader
-modified: '2022-04-05T00:00:45.087250Z'
+modified: '2022-04-08T00:04:42.605774Z'
 published: '2022-04-05T00:00:45.087023Z'
 references:
 - type: REPORT
@@ -24,7 +24,9 @@ affected:
     events:
     - introduced: 3b0aaaae03ab1a34cdc2c4ae4c5c72a34305c583
     - fixed: 36af3db60e2c4dff4c3efe51cd83a28add116871
+    - introduced: f9758ac65404b7fe46e980d3be7a1d1e23043050
+  versions:
+  - v3.1.5-rc
   ecosystem_specific:
     severity: MEDIUM
-  versions: []
 schema_version: 1.2.0
