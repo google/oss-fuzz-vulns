@@ -1,0 +1,35 @@
+id: OSV-2022-223
+summary: Container-overflow in Exiv2::Photoshop::locateIrb
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=45302
+
+  Crash type: Container-overflow READ 4
+  Crash state:
+  Exiv2::Photoshop::locateIrb
+  Exiv2::Photoshop::setIptcIrb
+  Exiv2::JpegBase::doWriteMetadata
+modified: '2022-03-08T00:00:07.482676Z'
+published: '2022-03-08T00:00:07.482401Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=45302
+affected:
+- package:
+    name: exiv2
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/exiv2
+  ranges:
+  - type: GIT
+    repo: https://github.com/Exiv2/exiv2
+    events:
+    - introduced: b9f9d041eabc0cd9620ca4373190f167085a9b44
+    - fixed: e715243aa51fa38a89d35ea377d267600217e192
+  versions:
+  - nightly
+  - testIPO
+  - testIPO_2
+  - testIPO_3
+  - testIPO_exiv2-xmp-OBJECT
+  ecosystem_specific:
+    severity: MEDIUM
+schema_version: 1.2.0
