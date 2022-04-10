@@ -8,7 +8,7 @@ details: |
   void mc_chroma<unsigned short>
   generate_inter_prediction_samples
   decode_prediction_unit
-modified: '2022-04-03T00:03:38.311259Z'
+modified: '2022-04-10T00:03:47.383027Z'
 published: '2021-07-13T00:00:16.631711Z'
 references:
 - type: REPORT
@@ -49,5 +49,6 @@ affected:
   - v5.92.0-rc1
   - v5.92.0
   - v5.93.0-rc1
+  - v5.93.0
   ecosystem_specific:
     severity: MEDIUM
