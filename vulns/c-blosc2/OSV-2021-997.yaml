@@ -8,7 +8,7 @@ details: |
   ZSTD_createDDict_advanced
   ZSTD_createDDict
   blosc_run_decompression_with_context
-modified: '2021-07-14T00:01:21.159386Z'
+modified: '2022-04-10T00:04:05.083719Z'
 published: '2021-07-14T00:01:21.159182Z'
 references:
 - type: REPORT
@@ -30,5 +30,6 @@ affected:
   - v2.0.2
   - v2.0.3
   - v2.0.4
+  - v2.1.0
   ecosystem_specific:
     severity: MEDIUM
