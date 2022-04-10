@@ -1,0 +1,30 @@
+id: OSV-2022-319
+summary: Heap-buffer-overflow in LoadPSD
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=46437
+
+  Crash type: Heap-buffer-overflow WRITE 2
+  Crash state:
+  LoadPSD
+  PSDHandler::read
+  kimgio_fuzzer.cc
+modified: '2022-04-08T00:01:29.512590Z'
+published: '2022-04-08T00:01:29.512342Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=46437
+affected:
+- package:
+    name: kimageformats
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/kimageformats
+  ranges:
+  - type: GIT
+    repo: https://invent.kde.org/frameworks/kimageformats.git
+    events:
+    - introduced: 98f19c60aed45e81cad631825c212005889b459b
+    - fixed: 9e28aae868156242e4a83faa71190ad15df7c108
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
+schema_version: 1.2.0
