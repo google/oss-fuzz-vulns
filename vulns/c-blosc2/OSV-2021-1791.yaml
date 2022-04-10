@@ -8,7 +8,7 @@ details: |
   ZSTD_createDDict
   blosc_run_decompression_with_context
   blosc2_decompress_ctx
-modified: '2021-12-31T00:02:03.777319Z'
+modified: '2022-04-10T00:03:59.782004Z'
 published: '2021-12-31T00:02:03.777116Z'
 references:
 - type: REPORT
@@ -31,6 +31,7 @@ affected:
   - v2.0.2
   - v2.0.3
   - v2.0.4
+  - v2.1.0
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.2.0
