@@ -8,7 +8,7 @@ details: |
   grk::PacketLengthMarkers::readPLM
   grk::CodeStreamDecompress::process_marker
   grk::CodeStreamDecompress::readHeaderProcedureImpl
-modified: '2022-04-06T00:07:14.612779Z'
+modified: '2022-04-11T00:04:13.392845Z'
 published: '2022-03-18T00:01:35.796630Z'
 references:
 - type: REPORT
@@ -29,6 +29,7 @@ affected:
   - v9.7.4
   - v9.7.4.debian
   - v9.7.5
+  - v9.7.5.debian
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.2.0
