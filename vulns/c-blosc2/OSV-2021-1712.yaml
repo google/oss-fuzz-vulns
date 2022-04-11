@@ -8,7 +8,7 @@ details: |
   ndlz8_decompress
   blosc_d
   do_job
-modified: '2021-12-18T00:00:41.642451Z'
+modified: '2022-04-11T00:03:36.422934Z'
 published: '2021-12-18T00:00:41.642240Z'
 references:
 - type: REPORT
@@ -29,6 +29,7 @@ affected:
   - v2.0.2
   - v2.0.3
   - v2.0.4
+  - v2.1.0
   ecosystem_specific:
     severity: HIGH
 schema_version: 1.2.0
