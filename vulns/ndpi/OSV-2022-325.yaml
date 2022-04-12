@@ -1,0 +1,32 @@
+id: OSV-2022-325
+summary: Heap-buffer-overflow in ndpi_search_tinc
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=46499
+
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  ndpi_search_tinc
+  check_ndpi_detection_func
+  ndpi_check_flow_func
+modified: '2022-04-09T00:01:54.199824Z'
+published: '2022-04-09T00:01:54.199571Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=46499
+affected:
+- package:
+    name: ndpi
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/ndpi
+  ranges:
+  - type: GIT
+    repo: https://github.com/ntop/nDPI.git
+    events:
+    - introduced: b04040768323a7666bcf588f2323054082883d75
+    - fixed: 06a0abb6fdf8fb7a446ef5aafdf2c7d24608977f
+  versions:
+  - '4.0'
+  - '4.2'
+  ecosystem_specific:
+    severity: MEDIUM
+schema_version: 1.2.0

@@ -1,0 +1,31 @@
+id: OSV-2022-330
+summary: Stack-use-after-return in std::__1::__function::__func<bool grk::WaveletReverse::decompress_partial_tile<i
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=46575
+
+  Crash type: Stack-use-after-return READ 1
+  Crash state:
+  std::__1::__function::__func<bool grk::WaveletReverse::decompress_partial_tile<i
+  tf::Executor::_invoke
+  tf::Executor::_consume_task
+modified: '2022-04-11T00:00:12.423708Z'
+published: '2022-04-11T00:00:12.423473Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=46575
+affected:
+- package:
+    name: grok
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/grok
+  ranges:
+  - type: GIT
+    repo: https://github.com/GrokImageCompression/grok.git
+    events:
+    - introduced: a27b85d5d31dc6da58aa8af859e63448a6384150
+  versions:
+  - v9.7.5
+  - v9.7.5.debian
+  ecosystem_specific:
+    severity: null
+schema_version: 1.2.0

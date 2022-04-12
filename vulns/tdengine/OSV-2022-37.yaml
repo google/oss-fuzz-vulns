@@ -1,0 +1,31 @@
+id: OSV-2022-37
+summary: Heap-buffer-overflow in stringProcess
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=43535
+
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  stringProcess
+  tVariantCreateExt
+  tVariantCreate
+modified: '2022-01-13T00:01:03.930183Z'
+published: '2022-01-13T00:01:03.929984Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=43535
+affected:
+- package:
+    name: tdengine
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/tdengine
+  ranges:
+  - type: GIT
+    repo: https://github.com/taosdata/TDengine
+    events:
+    - introduced: eed7ebdde1ca045d07caaa5f1114eae9a67dd71f
+  versions:
+  - ver-2.5.0.0
+  - ver-2.5.0.1
+  ecosystem_specific:
+    severity: MEDIUM
+schema_version: 1.2.0

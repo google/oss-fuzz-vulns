@@ -1,0 +1,37 @@
+id: OSV-2022-34
+summary: Heap-buffer-overflow in LZ4_decompress_safe
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=43513
+
+  Crash type: Heap-buffer-overflow READ 16
+  Crash state:
+  LZ4_decompress_safe
+  blosc_d
+  do_job
+modified: '2022-01-12T00:01:27.704583Z'
+published: '2022-01-12T00:01:27.704351Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=43513
+affected:
+- package:
+    name: c-blosc2
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/c-blosc2
+  ranges:
+  - type: GIT
+    repo: https://github.com/Blosc/c-blosc2.git
+    events:
+    - introduced: 4a727370b1c2e9746434c00bf2236db86c31ea5c
+  versions:
+  - v2.0.0
+  - v2.0.0-rc2
+  - v2.0.0.rc1
+  - v2.0.1
+  - v2.0.2
+  - v2.0.3
+  - v2.0.4
+  - v2.1.0
+  ecosystem_specific:
+    severity: MEDIUM
+schema_version: 1.2.0
