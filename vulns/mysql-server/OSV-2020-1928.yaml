@@ -10,7 +10,7 @@ details: |
   net_field_length_ll_safe
   read_ok_ex
   ```
-modified: '2022-04-13T03:04:36.987909Z'
+modified: '2022-04-13T04:34:43.892885Z'
 published: '2020-10-02T00:00:30.533072Z'
 references:
 - type: REPORT
@@ -33,6 +33,10 @@ affected:
     - introduced: 2b34b27ce9ec3713a0eecc61114dc0bf42cbf82a
     - introduced: 72f34dff96f8a25e3d10aa00a02374b6f000201f
     - introduced: 3290a66c89eb1625a7058e0ef732432b6952b435
+    - introduced: 6846e6b2f72931991cc9fd589dc9946ea2ab58c9
+    - introduced: f6f54dff3d74f451d41058c0400b0831d51d200e
+    - introduced: 3f143ef16c605ccfe45102b1da3eaa38c1c5b357
+    - introduced: 813c49ab745fe445e0deaea69165ca4d0e2d7c1a
   versions:
   - mysql-3.23.24-beta
   - mysql-3.23.27-beta
@@ -733,6 +737,12 @@ affected:
   - mysql-cluster-7.6.19
   - mysql-cluster-7.6.20
   - mysql-cluster-8.0.27
+  - mysql-5.7.37
+  - mysql-8.0.28
+  - mysql-cluster-7.4.35
+  - mysql-cluster-7.5.25
+  - mysql-cluster-7.6.21
+  - mysql-cluster-8.0.28
   ecosystem_specific:
     severity: MEDIUM
     fixed_range: 91a17cedb1ee880fe7915fb14cfd74c04e8d6588:ea7d2e2d16ac03afdd9cb72a972a95981107bf51
