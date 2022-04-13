@@ -10,7 +10,7 @@ details: |
   icu_70::UCharsTrie::firstForCodePoint
   icu_70::CollationIterator::nextCE32FromContraction
   ```
-modified: '2022-04-13T03:04:34.096082Z'
+modified: '2022-04-13T03:41:06.698048Z'
 published: '2021-09-12T00:00:39.088726Z'
 references:
 - type: REPORT
@@ -38,6 +38,7 @@ affected:
   - release-70-1
   - release-70-rc
   - release-71-rc
+  - release-71-1
   ecosystem_specific:
     severity: MEDIUM
   database_specific:
