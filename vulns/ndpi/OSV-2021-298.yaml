@@ -10,7 +10,7 @@ details: |
   process_chlo
   ndpi_search_quic
   ```
-modified: '2022-04-13T03:04:36.134800Z'
+modified: '2022-04-13T03:35:22.889969Z'
 published: '2021-02-08T00:00:02.197314Z'
 references:
 - type: REPORT
@@ -24,6 +24,7 @@ affected:
     repo: https://github.com/ntop/nDPI.git
     events:
     - introduced: 753b5dde16bae60299ca8e31afb4f519b13629c1
+    - fixed: 550e6fe6fcd96e507763db66873791b96f19fe2b
   versions:
   - '3.4'
   - '4.0'
