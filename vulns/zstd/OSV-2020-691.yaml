@@ -10,7 +10,7 @@ details: |
   ZSTD_decompressBlock
   ZSTD_decompressDCtx
   ```
-modified: '2022-04-13T03:04:31.632645Z'
+modified: '2022-04-13T03:35:33.844573Z'
 published: '2020-07-01T00:00:25.109905Z'
 references:
 - type: REPORT
@@ -29,5 +29,6 @@ affected:
   - v1.4.1
   - v1.4.2
   - v1.4.3
+  - v1.4.0
   ecosystem_specific:
     severity: HIGH
