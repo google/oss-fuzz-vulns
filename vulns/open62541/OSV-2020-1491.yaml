@@ -10,7 +10,7 @@ details: |
   String_copy
   LocalizedText_copy
   ```
-modified: '2022-04-13T03:04:41.399018Z'
+modified: '2022-04-13T03:27:34.979633Z'
 published: '2020-07-28T00:00:30.302361Z'
 references:
 - type: REPORT
@@ -25,23 +25,24 @@ affected:
     events:
     - introduced: 2919785d72474ed553317c4f3bafadf3e8c027f2
     - introduced: 798210374ad7a5fd43b31fc3c178a34a3ac21a0c
+    - fixed: 6f21ecb48a49fd292d568feb3751a50e51e083a3
   versions:
-  - v1.1
-  - v1.1.1
-  - v1.1.2
-  - v1.0.4
-  - v1.1.3
-  - v1.1.4
-  - v1.1.5
-  - v1.2
-  - v1.2-rc1
-  - v1.2-rc2
-  - v1.1.6
-  - v1.2.1
-  - v.1.2.2
-  - v1.2.2
   - v1.0.1
   - v1.0.2
   - v1.0.3
+  - v1.1
+  - v1.1.1
+  - v1.1.2
+  - v1.1.3
+  - v1.1.4
+  - v1.1.5
+  - v1.1.6
+  - v1.2
+  - v1.2-rc1
+  - v1.2-rc2
+  - v1.2.1
+  - v1.2.2
+  - v1.2.3
+  - v1.2.4
   ecosystem_specific:
     severity: MEDIUM
