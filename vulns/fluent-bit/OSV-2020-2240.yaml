@@ -10,7 +10,7 @@ details: |
   process_data
   fuzz_process_data
   ```
-modified: '2022-04-13T03:04:38.296752Z'
+modified: '2022-04-13T03:27:42.987211Z'
 published: '2020-12-05T00:00:47.996292Z'
 references:
 - type: REPORT
@@ -25,6 +25,7 @@ affected:
     events:
     - introduced: 10ceb5b2ab6635a000f3eceaa267e1e34496de6b
     - fixed: cfee54301badc5fd61422eb85ff4c1028ad6cbc7
+    - fixed: c2804da892cda672096597fc419399a0a91a1482
   versions:
   - v1.7.0
   - v1.7.0-rc1
