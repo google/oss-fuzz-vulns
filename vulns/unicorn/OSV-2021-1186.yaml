@@ -8,7 +8,7 @@ details: |
   Crash state:
   helper_uc_tracecode
   ```
-modified: '2022-04-13T03:04:39.226076Z'
+modified: '2022-04-13T03:21:33.922164Z'
 published: '2021-09-01T00:00:37.265526Z'
 references:
 - type: REPORT
@@ -23,6 +23,7 @@ affected:
     events:
     - introduced: 34ddafcbcf6d16508a63623a68715394ea4e12d8
     - fixed: 772558119af66269742fe4dcc45ec6000a5a6ea7
+    - fixed: 34ddafcbcf6d16508a63623a68715394ea4e12d8
   versions:
   - 1.0.3
   ecosystem_specific:
