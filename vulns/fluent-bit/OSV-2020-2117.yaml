@@ -10,7 +10,7 @@ details: |
   flb_msgpack_to_gelf
   flb_msgpack_raw_to_gelf
   ```
-modified: '2022-04-13T03:04:38.416834Z'
+modified: '2022-04-13T03:33:04.306630Z'
 published: '2020-11-02T00:00:07.716307Z'
 references:
 - type: REPORT
@@ -26,17 +26,10 @@ affected:
     - introduced: d95ea655478ab9b0e97312ad80ac1da591ce7aaa
     - fixed: 9a3bd47ec6121492e2c5e37ca14f5827bb7d6db2
     - introduced: aea2b787028482a159de615fe9a891deb19cb8dc
+    - fixed: 13ea5bcdeac5e8e84c9d0e51e357fd05d15d4a3d
+    - fixed: e0aed4a1422c30b038f5f51db950c3c5ab0cf2a9
+    - fixed: 8e32391ba4ea8bcde66ae7cba894171837442a1b
   versions:
-  - v1.6.1
-  - v1.6.10
-  - v1.6.2
-  - v1.6.3
-  - v1.6.4
-  - v1.6.5
-  - v1.6.6
-  - v1.6.7
-  - v1.6.8
-  - v1.6.9
   - v1.7.0
   - v1.7.0-rc1
   - v1.7.0-rc2
@@ -48,14 +41,8 @@ affected:
   - v1.7.0-rc8
   - v1.7.0-rc9
   - v1.7.1
-  - v1.7.2
-  - v1.7.3
-  - v1.7.4
-  - v1.7.5
-  - v1.7.6
-  - v1.7.7
-  - v1.7.8
-  - v1.7.9
   ecosystem_specific:
     severity: MEDIUM
     introduced_range: 9643eebeba6bddd31978783cbbfb1686c93d8e24:1b262cebff01a2d54c7dab8ff5d3d8e340faed30
+  database_specific:
+    fixed_range: 7114027056f78ff24e255f9f5ae72765b79aad45:13ea5bcdeac5e8e84c9d0e51e357fd05d15d4a3d
