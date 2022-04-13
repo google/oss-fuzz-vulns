@@ -10,7 +10,7 @@ details: |
   exr_decoding_run
   Imf_3_1::checkCoreFile
   ```
-modified: '2022-04-13T03:04:37.111652Z'
+modified: '2022-04-13T03:32:30.366609Z'
 published: '2021-10-05T00:00:18.081765Z'
 references:
 - type: REPORT
@@ -25,6 +25,11 @@ affected:
     events:
     - introduced: 5ae1ec0fd948e9e1009093148126636b5bbce4d8
     - fixed: f68dc195ef2079793e2ea68f089adca902f0a4d8
+    - fixed: e86910cb1fa2cd4e555bdb3c04b69eda28c74547
+    - introduced: 526d92aa76bc79556d73c4e01ac2c2100a601ed4
+    - fixed: 666e2064d10445c501d48544d2d4566c304015c7
   ecosystem_specific:
     severity: HIGH
+  database_specific:
+    fixed_range: 481bde4b2584ef018cca4a6538062efd0d5d0b88:e86910cb1fa2cd4e555bdb3c04b69eda28c74547
   versions: []
