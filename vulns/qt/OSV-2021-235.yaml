@@ -10,7 +10,7 @@ details: |
   QSvgTinyDocument::draw
   QSvgTinyDocument::draw
   ```
-modified: '2022-04-13T03:04:36.790837Z'
+modified: '2022-04-13T03:31:50.004072Z'
 published: '2021-01-25T00:00:16.933600Z'
 references:
 - type: REPORT
@@ -181,5 +181,7 @@ affected:
   - v6.0.0-rc2
   - v6.0.1
   - v6.1.0-alpha1
+  - v5.12.12
+  - v5.15.3-lts-lgpl
   ecosystem_specific:
     introduced_range: ac489d92a3ae32540c4794d85be6fb103c701ee8:1095b1abc6d233bc27321f46f71bbd85fe8556de
