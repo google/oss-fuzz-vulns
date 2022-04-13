@@ -10,7 +10,7 @@ details: |
   decode_number
   do_uncompress_block
   ```
-modified: '2022-04-13T03:04:41.237623Z'
+modified: '2022-04-13T03:29:39.057427Z'
 published: '2021-01-05T00:01:28.725353Z'
 references:
 - type: REPORT
@@ -25,8 +25,8 @@ affected:
     events:
     - introduced: 840266712006de5e737f8052db920dfea2be4260
     - fixed: 858fa8eaa9435340d2bda988715e0d9023089bec
+    - fixed: 56c920eab3352f7877ee0cf9e472c1ab376c7e3e
   versions:
-  - 3.5.1
   - v3.4.0
   - v3.4.1
   - v3.4.2
@@ -35,3 +35,5 @@ affected:
   - v3.5.1
   ecosystem_specific:
     severity: MEDIUM
+  database_specific:
+    fixed_range: 858fa8eaa9435340d2bda988715e0d9023089bec:56c920eab3352f7877ee0cf9e472c1ab376c7e3e
