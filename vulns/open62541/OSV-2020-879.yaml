@@ -10,7 +10,7 @@ details: |
   jumpOverRec
   jumpOverRec
   ```
-modified: '2022-04-13T03:04:41.427651Z'
+modified: '2022-04-13T03:27:20.435764Z'
 published: '2020-07-14T22:13:57.199901Z'
 references:
 - type: REPORT
@@ -25,13 +25,15 @@ affected:
     events:
     - introduced: e1cdb1dd75ea92adcc949c5d3dc4fc4ebdf74b92
     - introduced: d09ab036733583a0d2ddd3d556a93ba47a73b0b3
+    - fixed: e5f593fa6d30383c1239f8eac1121402e533898d
   versions:
+  - basic256sha256
   - v1.0
   - v1.0-dev
+  - v1.0-rc5
   - v1.0.1
   - v1.0.2
   - v1.0.3
-  - v1.0.4
   - v1.0.5
   - v1.0.6
   - v1.1
@@ -42,8 +44,11 @@ affected:
   - v1.1.3
   - v1.1.4
   - v1.1.5
+  - v1.1.6
   - v1.2
   - v1.2-rc1
   - v1.2-rc2
+  - v1.2.1
+  - v1.2.2
   ecosystem_specific:
     severity: MEDIUM
