@@ -10,7 +10,7 @@ details: |
   loop
   ftp_pl_insert_finfo
   ```
-modified: '2022-04-13T03:04:42.857296Z'
+modified: '2022-04-13T03:23:36.724121Z'
 published: '2021-01-13T00:01:25.235178Z'
 references:
 - type: REPORT
@@ -25,8 +25,11 @@ affected:
     events:
     - introduced: 7ee59512f875604eb468fb6f3d26e39290f781c9
     - fixed: cb5accab9ee3abdee777b59b463b5e0ca05a490a
+    - fixed: 2c0c4dff083f9b258c18456567cf15fa32e3acd7
   versions:
   - curl-7_57_0
   ecosystem_specific:
-    introduced_range: 1cb4f5d6e8e470638759a48ba99fda230089712f:e240a546a7ac2fa7956adb664b8c40c4dee4f82b
     severity: MEDIUM
+    introduced_range: 1cb4f5d6e8e470638759a48ba99fda230089712f:e240a546a7ac2fa7956adb664b8c40c4dee4f82b
+  database_specific:
+    fixed_range: 25c40c9af97782c9d475e765d50eaac071fd7d91:2c0c4dff083f9b258c18456567cf15fa32e3acd7
