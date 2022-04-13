@@ -10,7 +10,7 @@ details: |
   resume_all_vcpus_x86_64
   vm_start_x86_64
   ```
-modified: '2022-04-13T03:04:39.164394Z'
+modified: '2022-04-13T03:32:30.819169Z'
 published: '2021-09-12T00:00:11.430175Z'
 references:
 - type: REPORT
@@ -37,5 +37,8 @@ affected:
   - 2.0.0-rc1
   - 2.0.0-rc2
   - 2.0.0-rc3
+  - 2.0.0-rc4
+  - 2.0.0-rc5
+  - 2.0.0-rc5.post1
   ecosystem_specific:
     severity: MEDIUM
