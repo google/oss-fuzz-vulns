@@ -10,7 +10,7 @@ details: |
   m3d_load
   Assimp::M3DWrapper::M3DWrapper
   ```
-modified: '2022-04-13T03:04:42.656269Z'
+modified: '2022-04-13T03:28:49.058628Z'
 published: '2021-05-19T00:00:10.101287Z'
 references:
 - type: REPORT
@@ -24,9 +24,8 @@ affected:
     repo: https://github.com/assimp/assimp.git
     events:
     - introduced: af0aca796ebab7663bba2778f7f30dd424f324ca
+    - fixed: 30f17aa2064b86c0096f0ec701b9e8ea9312fef2
   versions:
   - v5.1.0.rc1
-  - v5.1.0
-  - v5.1.1
   ecosystem_specific:
     severity: HIGH
