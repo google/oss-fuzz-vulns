@@ -25,8 +25,9 @@ affected:
     events:
     - introduced: b8650dfa05e661af131d9f9636782427dd2568b5
     - fixed: cfdb4a83246e826f5bc29732c9cea7fdd22ebe2b
+    - fixed: 7056f9405a0f317152529c3cc6e5692250402ddc
   ecosystem_specific:
-    introduced_range: 95d8a4a9f5b15995474f5a94666904b20183c09d:4d6ecf83c0bd3858292959c5090a97fe3ea71823
     fixed_range: 4d6ecf83c0bd3858292959c5090a97fe3ea71823:cfdb4a83246e826f5bc29732c9cea7fdd22ebe2b
+    introduced_range: 95d8a4a9f5b15995474f5a94666904b20183c09d:4d6ecf83c0bd3858292959c5090a97fe3ea71823
     severity: MEDIUM
   versions: []
