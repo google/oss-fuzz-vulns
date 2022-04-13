@@ -6,7 +6,7 @@ details: "OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id
   \ int, 4u> const> hb_array_t<OT::IntType<unsigned \nOT::UnsizedArrayOf<OT::IntType<unsigned\
   \ int, 4u> >::copy\n_hb_head_t<OT::UnsizedArrayOf<OT::IntType<unsigned int, 4u>\
   \ >*, decltype\n```\n"
-modified: '2022-04-13T03:04:33.164072Z'
+modified: '2022-04-13T03:27:39.250416Z'
 published: '2021-08-20T00:00:40.299081Z'
 references:
 - type: REPORT
@@ -20,11 +20,8 @@ affected:
     repo: https://github.com/harfbuzz/harfbuzz.git
     events:
     - introduced: a6c6cda48608e988a7debc3c18597186e3b4e2ee
+    - fixed: 829b0f33531b3c14b2e08331b8cc5b31fed73129
   versions:
   - 2.9.0
-  - 2.9.1
-  - 3.0.0
-  - 3.1.0
-  - 3.1.1
   ecosystem_specific:
     severity: MEDIUM
