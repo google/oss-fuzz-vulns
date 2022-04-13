@@ -10,7 +10,7 @@ details: |
   gs_main_tempnames
   gs_main_finit
   ```
-modified: '2022-04-13T03:04:34.536672Z'
+modified: '2022-04-13T04:12:40.578439Z'
 published: '2020-09-29T00:00:26.901998Z'
 references:
 - type: REPORT
@@ -26,7 +26,10 @@ affected:
     - introduced: f35924926cb35f08be5a12ded4a00eb2f42aed3e
     - fixed: 5fc8e7c0b656d4e2be8f5e316121f06039c35273
     - fixed: bbecd13cc34f3dcdcedd726e7de12c988da9794a
+    - fixed: f5b7acb59c4f2e88591aab9f355813e0b7b68db5
   versions:
   - ghostpdl-9.51rc1
   ecosystem_specific:
     severity: HIGH
+  database_specific:
+    fixed_range: cd5f21df6c710664ff0ba3f100ca5283d9367ed8:f5b7acb59c4f2e88591aab9f355813e0b7b68db5
