@@ -10,7 +10,7 @@ details: |
   ihevcd_inter_pred_ctb
   ihevcd_process
   ```
-modified: '2022-04-13T03:04:31.063762Z'
+modified: '2022-04-13T03:19:36.527891Z'
 published: '2020-07-14T05:37:35.331259Z'
 references:
 - type: REPORT
@@ -112,6 +112,15 @@ affected:
   - android-mainline-10.0.0_r9
   - android-security-11.0.0_r49
   - android-vts-11.0_r5
+  - android-cts-11.0_r6
+  - android-cts-11.0_r7
+  - android-security-11.0.0_r50
+  - android-security-11.0.0_r51
+  - android-security-11.0.0_r52
+  - android-security-11.0.0_r53
+  - android-security-11.0.0_r54
+  - android-vts-11.0_r6
+  - android-vts-11.0_r7
   ecosystem_specific:
     severity: MEDIUM
     fixed_range: 9623000c124facfcee78ffbc341740fa68f3d914:e979e4f69a45519b574186b56c883f5f1a413ba8
