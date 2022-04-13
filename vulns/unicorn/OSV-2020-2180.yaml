@@ -9,7 +9,7 @@ details: |
   helper_be_stl_mmu_armeb
   [stack]
   ```
-modified: '2022-04-13T03:04:39.286032Z'
+modified: '2022-04-13T03:20:55.766524Z'
 published: '2020-11-23T00:00:58.574949Z'
 references:
 - type: REPORT
@@ -25,6 +25,7 @@ affected:
     - introduced: 8b659c61b2dad88e55a0f1af6f725be6bce782bd
     - fixed: 7ca7e8a79d85ca57bb523be49009b0326b7a5210
     - fixed: e2a924a32b6fd3f24163b93996ac91782f518a25
+    - fixed: 3fadb5aa5aad22926f5f816dbe396f8661990374
   versions:
   - 1.0.2
   - 1.0.2-rc1
@@ -38,5 +39,7 @@ affected:
   - 2.0.0-rc2
   - 2.0.0-rc3
   ecosystem_specific:
-    severity: MEDIUM
     introduced_range: 57e3509812f0842b0752bff1e1b3a44ad438271e:355eaecc12b8022ccefac432dfa003fdb642c0f5
+    severity: MEDIUM
+  database_specific:
+    fixed_range: 7ca7e8a79d85ca57bb523be49009b0326b7a5210:3fadb5aa5aad22926f5f816dbe396f8661990374
