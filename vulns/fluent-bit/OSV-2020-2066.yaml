@@ -10,7 +10,7 @@ details: |
   flb_utils_write_str
   msgpack2json
   ```
-modified: '2022-04-13T03:04:38.183570Z'
+modified: '2022-04-13T03:34:33.873004Z'
 published: '2020-10-14T00:00:30.510704Z'
 references:
 - type: REPORT
@@ -27,6 +27,7 @@ affected:
     - fixed: 979a9bb728b490659e7e6076c17f3e4cb2c5bd59
     - fixed: 73410b3cd81ac8972160902db7d6f666cad3a7fa
     - introduced: 7f2b5f71377be5042de99b16caef0dc6fd021285
+    - fixed: 72b62d2270edda9a0281ff8a6c3903d99e1892c9
   versions:
   - v1.5.7
   - v1.5.7-winfix
@@ -36,3 +37,5 @@ affected:
   - v1.6.3
   ecosystem_specific:
     severity: HIGH
+  database_specific:
+    fixed_range: 370a68585b5eb7763183c2f1e6a6d937b5e1d077:72b62d2270edda9a0281ff8a6c3903d99e1892c9
