@@ -10,7 +10,7 @@ details: |
   UA_ByteString_allocBuffer
   fuzz_json_decode_encode.cc
   ```
-modified: '2022-04-13T03:04:41.405020Z'
+modified: '2022-04-13T03:22:23.510563Z'
 published: '2021-07-25T00:01:28.049657Z'
 references:
 - type: REPORT
@@ -24,6 +24,13 @@ affected:
     repo: https://github.com/open62541/open62541.git
     events:
     - introduced: 6f21ecb48a49fd292d568feb3751a50e51e083a3
+  versions:
+  - v1.2.3
+  - v1.2.4
+  - v1.3
+  - v1.3-rc1
+  - v1.3-rc2
+  - v1.3-rc2-ef
+  - v1.3-rc2-ef2
   ecosystem_specific:
     severity: MEDIUM
-  versions: []
