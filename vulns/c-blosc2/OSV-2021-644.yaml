@@ -10,7 +10,7 @@ details: |
   do_job
   blosc_run_decompression_with_context
   ```
-modified: '2022-04-13T03:04:40.327648Z'
+modified: '2022-04-13T03:33:26.944758Z'
 published: '2021-04-17T00:00:14.337746Z'
 references:
 - type: REPORT
@@ -24,6 +24,7 @@ affected:
     repo: https://github.com/Blosc/c-blosc2.git
     events:
     - introduced: 861ba79f31393dec0a0782ca11cf32cebb6f6610
+    - fixed: b2434ad1be6ea46e101e0691bfd6b2a43174cc8a
   versions:
   - v2.0.0
   - v2.0.0-rc2
@@ -34,3 +35,5 @@ affected:
   - v2.0.4
   ecosystem_specific:
     severity: MEDIUM
+  database_specific:
+    fixed_range: 8d6bb0d7ddbd3cc00c09c39f2fd9faf473e8fd51:b2434ad1be6ea46e101e0691bfd6b2a43174cc8a
