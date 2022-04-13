@@ -10,7 +10,7 @@ details: |
   IlmThread_3_1::NullThreadPoolProvider::addTask
   IlmThread_3_1::ThreadPool::addGlobalTask
   ```
-modified: '2022-04-13T03:04:37.178128Z'
+modified: '2022-04-13T03:21:28.115569Z'
 published: '2021-11-27T00:00:35.244395Z'
 references:
 - type: REPORT
@@ -25,6 +25,7 @@ affected:
     events:
     - introduced: 8f45d8fa44bc2420a365b2818d97ed91fb0dc689
     - fixed: db217f29dfb24f6b4b5100c24ac5e7490e1c57d0
+    - fixed: 2a9380544b13e401eb7687c4085a9bb24188b1b3
   versions:
   - v3.1.0
   - v3.1.0-rc1
