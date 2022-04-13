@@ -10,7 +10,7 @@ details: |
   ra_translate_keymap
   flb_ra_translate
   ```
-modified: '2022-04-13T03:04:38.449075Z'
+modified: '2022-04-13T03:33:49.226177Z'
 published: '2021-02-02T00:00:01.200032Z'
 references:
 - type: REPORT
@@ -24,6 +24,8 @@ affected:
     repo: https://github.com/fluent/fluent-bit/
     events:
     - introduced: 68746b76af8b143daf477033a6799902be2f3cad
+    - fixed: e3e0bb0b083621f6c54af29388ee32637d24f518
+    - fixed: cba4fdca0f5496ea7f3f75adc44b21d4ca430fbd
   versions:
   - v1.7.0
   - v1.7.0-rc2
