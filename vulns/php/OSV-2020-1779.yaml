@@ -10,7 +10,7 @@ details: |
   zend_generator_update_current
   zend_generator_dtor_storage
   ```
-modified: '2022-04-13T03:04:33.599624Z'
+modified: '2022-04-13T07:12:28.838544Z'
 published: '2020-09-17T00:00:13.246764Z'
 references:
 - type: REPORT
@@ -51,5 +51,11 @@ affected:
   - php-8.0.0RC2
   - php-8.0.0beta4
   - php-8.0.0rc1
+  - php-7.3.28
+  - php-7.3.29
+  - php-7.3.30
+  - php-7.3.31
+  - php-7.3.32
+  - php-7.3.33
   ecosystem_specific:
     severity: HIGH
