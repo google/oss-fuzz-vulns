@@ -24,6 +24,9 @@ affected:
     repo: https://github.com/SerenityOS/serenity
     events:
     - introduced: 1292d80b93d7ec8e61147a877231588d10725f68
+    - fixed: 8fce5caa4938697734c855d2905d0c65073510f0
   ecosystem_specific:
     severity: HIGH
+  database_specific:
+    fixed_range: 9bdb44c5d26d8f702264c47a82c75fbb368a7ffc:8fce5caa4938697734c855d2905d0c65073510f0
   versions: []
