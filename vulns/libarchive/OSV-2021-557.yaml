@@ -10,7 +10,7 @@ details: |
   do_uncompress_block
   process_block
   ```
-modified: '2022-04-13T03:04:41.232020Z'
+modified: '2022-04-13T03:36:31.924256Z'
 published: '2021-03-25T00:01:05.489589Z'
 references:
 - type: REPORT
@@ -24,13 +24,16 @@ affected:
     repo: https://github.com/libarchive/libarchive.git
     events:
     - introduced: 47bb8187d3ef2d49ee8c7841cb2872b3cfa1f6f7
+    - fixed: 56c920eab3352f7877ee0cf9e472c1ab376c7e3e
   versions:
-  - 3.5.1
   - v3.4.1
   - v3.4.2
   - v3.4.3
   - v3.5.0
   - v3.5.1
   - v3.5.2
+  - v3.5.3
   ecosystem_specific:
     severity: HIGH
+  database_specific:
+    fixed_range: d3ae4163e1d51b1b0c039fd2140e9f3aae4c6559:56c920eab3352f7877ee0cf9e472c1ab376c7e3e
