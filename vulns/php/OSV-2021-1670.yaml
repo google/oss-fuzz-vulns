@@ -10,7 +10,7 @@ details: |
   pass_two
   zend_compile_func_decl
   ```
-modified: '2022-04-13T03:04:33.646052Z'
+modified: '2022-04-13T08:16:56.943887Z'
 published: '2021-12-12T00:00:10.869505Z'
 references:
 - type: REPORT
@@ -26,6 +26,9 @@ affected:
     - introduced: 9c6b843ff0f4b7af926a69ef89d7f9ec1db31866
     - fixed: 91734fc5795bc07dc718f9d884a014a90097e56f
     - introduced: efb901ebedf941039241c6194c452f8a16d807aa
+  versions:
+  - php-8.1.2RC1
+  - php-8.1.3
+  - php-8.1.4RC1
   ecosystem_specific:
     severity: null
-  versions: []
