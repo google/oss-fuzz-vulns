@@ -10,7 +10,7 @@ details: |
   strpbrk
   tesseract::Tesseract::one_ell_conflict
   ```
-modified: '2022-04-13T03:04:31.471880Z'
+modified: '2022-04-13T03:30:02.769609Z'
 published: '2021-01-19T00:00:01.795893Z'
 references:
 - type: REPORT
@@ -25,6 +25,7 @@ affected:
     events:
     - introduced: 4043204c2b418994475f6f09332363427b2702e7
     - fixed: e6f15621c2ab2ecbfabf656942d8ef66f03b2d55
+    - fixed: 91b2b4f4a08d4693b02838636c53a2af93397138
   versions:
   - 5.0.0-alpha-20201231
   ecosystem_specific:
