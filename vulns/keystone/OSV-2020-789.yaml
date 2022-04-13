@@ -10,7 +10,7 @@ details: |
   X86AsmParser::MatchAndEmitATTInstruction
   X86AsmParser::MatchAndEmitInstruction
   ```
-modified: '2022-04-13T03:04:37.921888Z'
+modified: '2022-04-13T03:33:15.594673Z'
 published: '2020-07-14T05:37:34.150718Z'
 references:
 - type: REPORT
@@ -25,6 +25,7 @@ affected:
     events:
     - introduced: 105761ffe7176a60b4ff1b1c165ad937110ae63e
     - fixed: e1547852d9accb9460573eb156fc81645b8e1871
+    - fixed: 1475885daa7e566c064ae9754706e1a0ba24be3b
   versions:
   - 0.9.2
   - 0.9.2-rc1
@@ -32,3 +33,5 @@ affected:
   - 0.9.2-rc1.post2
   ecosystem_specific:
     severity: HIGH
+  database_specific:
+    fixed_range: e1547852d9accb9460573eb156fc81645b8e1871:1475885daa7e566c064ae9754706e1a0ba24be3b
