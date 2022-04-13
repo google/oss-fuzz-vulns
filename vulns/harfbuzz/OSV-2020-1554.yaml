@@ -10,7 +10,7 @@ details: |
   hb_ot_map_t::position
   hb_ot_shape_plan_t::position
   ```
-modified: '2022-04-13T03:04:32.907969Z'
+modified: '2022-04-13T03:31:33.522Z'
 published: '2020-07-31T00:01:20.122854Z'
 references:
 - type: REPORT
@@ -25,9 +25,12 @@ affected:
     events:
     - introduced: dae32b4f12da5d90de32886b0fd16653e3853e25
     - fixed: a5f6f869e80c371665026dfe9d156f0088f2553d
+    - fixed: 53806e5b83cee0e275eac038d0780f95ac56588c
   versions:
   - 2.7.1
   - 2.7.2
   ecosystem_specific:
-    introduced_range: d38d63319bcec35a5dccb5e6ab49eee123bd4c0e:48ad745996159337fb4733561e834a0ffbe3a1ae
     severity: MEDIUM
+    introduced_range: d38d63319bcec35a5dccb5e6ab49eee123bd4c0e:48ad745996159337fb4733561e834a0ffbe3a1ae
+  database_specific:
+    fixed_range: b2e7bb2a7caa20af244b7452ec960f9957eb8bba:53806e5b83cee0e275eac038d0780f95ac56588c
