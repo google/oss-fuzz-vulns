@@ -10,7 +10,7 @@ details: |
   _write_cff2
   _hb_subset_cff2
   ```
-modified: '2022-04-13T03:04:32.853223Z'
+modified: '2022-04-13T03:30:11.099886Z'
 published: '2021-01-13T00:00:43.025385Z'
 references:
 - type: REPORT
@@ -25,6 +25,9 @@ affected:
     events:
     - introduced: b403be8ad98ffd2dbe95dad73e96c7ed1295d9fc
     - fixed: c31092ab34641072606f854408eb1bea18ed2507
+  versions:
+  - 2.1.2
+  - 2.1.3
+  - 2.2.0
   ecosystem_specific:
     severity: MEDIUM
-  versions: []
