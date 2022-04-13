@@ -10,7 +10,7 @@ details: |
   perfetto::trace_processor::MemoryTrackerSnapshotParser::GenerateGraphFromRawNode
   perfetto::trace_processor::MemoryTrackerSnapshotParser::NotifyEndOfFile
   ```
-modified: '2022-04-13T03:04:41.976214Z'
+modified: '2022-04-13T03:35:42.209750Z'
 published: '2020-12-19T00:00:21.828942Z'
 references:
 - type: REPORT
@@ -27,5 +27,14 @@ affected:
     - fixed: 23280234a3ee0ef4b96c11b31d57a9575142f1e4
   versions:
   - v10.0
+  - android-11.0.0_r30
+  - android-11.0.0_r32
+  - android-11.0.0_r33
+  - android-11.0.0_r34
+  - android-11.0.0_r35
+  - android-11.0.0_r36
+  - android-11.0.0_r37
+  - android-cts-11.0_r2
+  - android-vts-11.0_r2
   ecosystem_specific:
     severity: MEDIUM
