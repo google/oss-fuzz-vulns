@@ -28,6 +28,9 @@ affected:
     - fixed: 434776bd0e9d6c911a0dd60d234af49fca48b3c1
     - introduced: e598a72aa0166bfab8947eb691ba473a54bfed06
     - fixed: 360b9915cdfebcc42a5d773ec58c2ea228dc48ba
+    - fixed: aeaf98f8ad0ce6c1c84a776fedfbdb38bee98af7
   ecosystem_specific:
     severity: MEDIUM
+  database_specific:
+    fixed_range: a29fa0510b355647d2d6f216b7733c696ec8c5ac:aeaf98f8ad0ce6c1c84a776fedfbdb38bee98af7
   versions: []
