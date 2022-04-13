@@ -10,7 +10,7 @@ details: |
   CFF::CFF2CSOpSet<CFF2CSOpSet_SubrSubset, CFF::SubrSubsetParam, CFF::PathProcsNul
   CFF2CSOpSet_SubrSubset::process_op
   ```
-modified: '2022-04-13T03:04:32.946704Z'
+modified: '2022-04-13T03:35:31.377146Z'
 published: '2021-01-13T00:01:01.540340Z'
 references:
 - type: REPORT
@@ -25,4 +25,7 @@ affected:
     events:
     - introduced: 0996c0ff6279f377e2b14f08663df2ce82de2b14
     - fixed: 14d29a10437205566c4bd7bcfa2282d34d9f4f2f
-  versions: []
+  versions:
+  - 2.1.2
+  - 2.1.3
+  - 2.2.0
