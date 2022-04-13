@@ -9,7 +9,7 @@ details: |
   helper_ret_stb_mmu_x86_64
   [stack]
   ```
-modified: '2022-04-13T03:04:39.124950Z'
+modified: '2022-04-13T03:28:37.014547Z'
 published: '2021-07-24T00:01:13.887224Z'
 references:
 - type: REPORT
@@ -24,6 +24,7 @@ affected:
     events:
     - introduced: 075bd65bbb199e4e772160d5ab9c581a818d4b5f
     - fixed: 772558119af66269742fe4dcc45ec6000a5a6ea7
+    - fixed: 3fadb5aa5aad22926f5f816dbe396f8661990374
   versions:
   - 1.0.2
   - 1.0.2-rc1
@@ -36,4 +37,5 @@ affected:
   ecosystem_specific:
     severity: MEDIUM
   database_specific:
+    fixed_range: 772558119af66269742fe4dcc45ec6000a5a6ea7:3fadb5aa5aad22926f5f816dbe396f8661990374
     introduced_range: 5bf6d77e4ee258c67c2d7ead94cf266a7b9773e7:6d47b38b7f8b6de0ee96a93a91180fafe2f01525
