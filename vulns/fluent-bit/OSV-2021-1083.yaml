@@ -9,7 +9,7 @@ details: |
   flb_hash_get_by_id
   utils_fuzzer.c
   ```
-modified: '2022-04-13T03:04:38.242825Z'
+modified: '2022-04-13T03:38:50.195219Z'
 published: '2021-08-01T00:00:59.162586Z'
 references:
 - type: REPORT
@@ -52,5 +52,19 @@ affected:
   - v1.8.4
   - v1.8.5
   - v1.8.6
+  - 1.8.9-dev-6b56f51
+  - '20220215'
+  - unstable-1.8
+  - unstable-leonardo-cio-log-poc
+  - v1.8.10
+  - v1.8.11
+  - v1.8.12
+  - v1.8.13
+  - v1.8.14
+  - v1.8.15
+  - v1.8.7
+  - v1.8.8
+  - v1.8.9
+  - v1.8.9-dev-6b56f51
   ecosystem_specific:
     severity: MEDIUM
