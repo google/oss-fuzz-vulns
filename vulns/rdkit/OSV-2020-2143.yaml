@@ -10,7 +10,7 @@ details: |
   HandleDynamicTypeCacheMiss
   RDKit::SubstanceGroup::addAtomWithBookmark
   ```
-modified: '2022-04-13T03:04:41.521091Z'
+modified: '2022-04-13T03:33:47.833102Z'
 published: '2020-11-10T00:00:14.277810Z'
 references:
 - type: REPORT
@@ -24,6 +24,8 @@ affected:
     repo: https://github.com/rdkit/rdkit.git
     events:
     - introduced: a9010da8a4af17479c706f2cf4e8c6acdc1585ce
+    - fixed: 193f27730c3b3bb5068e56858ea90a3ddcc92a8e
+    - fixed: c660758abce8852c99d7d7a167a9e0bd2168eb55
   versions:
   - Release_2020_09_1
   - Release_2020_09_1b1
@@ -31,6 +33,9 @@ affected:
   - Release_2020_09_3
   - Release_2020_09_4
   - Release_2020_09_5
+  - Release_2021_03_1
   - Release_2021_03_1b1
   ecosystem_specific:
     severity: MEDIUM
+  database_specific:
+    fixed_range: 0b934953a264e0e8c59e31c009bf9cb285e978c4:193f27730c3b3bb5068e56858ea90a3ddcc92a8e
