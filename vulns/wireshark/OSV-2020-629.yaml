@@ -10,7 +10,7 @@ details: |
   dissect_NUMBER_acf_lin
   call_dissector_work
   ```
-modified: '2022-04-13T03:04:37.877254Z'
+modified: '2022-04-13T04:14:54.501439Z'
 published: '2020-07-01T00:00:21.373324Z'
 references:
 - type: REPORT
@@ -68,5 +68,25 @@ affected:
   - wireshark-3.2.7
   - wireshark-3.2.8
   - wireshark-3.2.9
+  - v3.2.12
+  - v3.2.13
+  - v3.2.13rc0
+  - v3.2.14
+  - v3.2.14rc0
+  - v3.2.15
+  - v3.2.15rc0
+  - v3.2.16
+  - v3.2.16rc0
+  - v3.2.17
+  - v3.2.17rc0
+  - v3.2.18
+  - v3.2.18rc0
+  - wireshark-3.2.12
+  - wireshark-3.2.13
+  - wireshark-3.2.14
+  - wireshark-3.2.15
+  - wireshark-3.2.16
+  - wireshark-3.2.17
+  - wireshark-3.2.18
   ecosystem_specific:
     severity: MEDIUM
