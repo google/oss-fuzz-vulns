@@ -10,7 +10,7 @@ details: |
   perfetto::base::StringView::Hash
   perfetto::trace_processor::StringPool::InternString
   ```
-modified: '2022-04-13T03:04:41.910747Z'
+modified: '2022-04-13T03:40:10.578056Z'
 published: '2020-07-01T00:00:22.674176Z'
 references:
 - type: REPORT
@@ -103,5 +103,27 @@ affected:
   - platform-tools-29.0.2
   - platform-tools-29.0.3
   - platform-tools-29.0.4
+  - android-cts-10.0_r10
+  - android-cts-10.0_r11
+  - android-cts-10.0_r8
+  - android-cts-10.0_r9
+  - android-security-10.0.0_r52
+  - android-security-10.0.0_r53
+  - android-security-10.0.0_r54
+  - android-security-10.0.0_r55
+  - android-security-10.0.0_r56
+  - android-security-10.0.0_r57
+  - android-security-10.0.0_r58
+  - android-security-10.0.0_r59
+  - android-security-10.0.0_r60
+  - android-security-10.0.0_r61
+  - android-security-10.0.0_r62
+  - android-security-10.0.0_r63
+  - android-security-10.0.0_r64
+  - android-security-10.0.0_r65
+  - android-vts-10.0_r10
+  - android-vts-10.0_r11
+  - android-vts-10.0_r8
+  - android-vts-10.0_r9
   ecosystem_specific:
     severity: MEDIUM
