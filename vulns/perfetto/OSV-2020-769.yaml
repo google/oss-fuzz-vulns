@@ -10,7 +10,7 @@ details: |
   perfetto::trace_processor::ClockTracker::Convert
   perfetto::trace_processor::ClockTracker::ToTraceTime
   ```
-modified: '2022-04-13T03:04:41.989258Z'
+modified: '2022-04-13T03:27:59.053927Z'
 published: '2020-07-10T00:00:21.254899Z'
 references:
 - type: REPORT
@@ -73,5 +73,90 @@ affected:
   - android-vts-11.0_r3
   - v5.0
   - v5.1
+  - android-11.0.0_r32
+  - android-11.0.0_r33
+  - android-11.0.0_r34
+  - android-11.0.0_r35
+  - android-11.0.0_r36
+  - android-11.0.0_r37
+  - android-11.0.0_r38
+  - android-11.0.0_r39
+  - android-11.0.0_r40
+  - android-11.0.0_r41
+  - android-11.0.0_r42
+  - android-11.0.0_r43
+  - android-11.0.0_r44
+  - android-11.0.0_r45
+  - android-11.0.0_r46
+  - android-11.0.0_r47
+  - android-11.0.0_r48
+  - android-cts-11.0_r4
+  - android-cts-11.0_r5
+  - android-cts-11.0_r6
+  - android-cts-11.0_r7
+  - android-mainline-11.0.0_r10
+  - android-mainline-11.0.0_r12
+  - android-mainline-11.0.0_r13
+  - android-mainline-11.0.0_r14
+  - android-mainline-11.0.0_r15
+  - android-mainline-11.0.0_r16
+  - android-mainline-11.0.0_r17
+  - android-mainline-11.0.0_r18
+  - android-mainline-11.0.0_r19
+  - android-mainline-11.0.0_r20
+  - android-mainline-11.0.0_r21
+  - android-mainline-11.0.0_r22
+  - android-mainline-11.0.0_r23
+  - android-mainline-11.0.0_r24
+  - android-mainline-11.0.0_r25
+  - android-mainline-11.0.0_r26
+  - android-mainline-11.0.0_r27
+  - android-mainline-11.0.0_r28
+  - android-mainline-11.0.0_r29
+  - android-mainline-11.0.0_r30
+  - android-mainline-11.0.0_r31
+  - android-mainline-11.0.0_r32
+  - android-mainline-11.0.0_r33
+  - android-mainline-11.0.0_r34
+  - android-mainline-11.0.0_r35
+  - android-mainline-11.0.0_r36
+  - android-mainline-11.0.0_r37
+  - android-mainline-11.0.0_r38
+  - android-mainline-11.0.0_r39
+  - android-mainline-11.0.0_r40
+  - android-mainline-11.0.0_r41
+  - android-mainline-11.0.0_r42
+  - android-mainline-11.0.0_r43
+  - android-mainline-11.0.0_r44
+  - android-mainline-11.0.0_r45
+  - android-mainline-11.0.0_r5
+  - android-mainline-11.0.0_r6
+  - android-mainline-11.0.0_r7
+  - android-mainline-11.0.0_r8
+  - android-mainline-11.0.0_r9
+  - android-mainline-12.0.0_r55
+  - android-platform-11.0.0_r10
+  - android-platform-11.0.0_r11
+  - android-platform-11.0.0_r12
+  - android-platform-11.0.0_r13
+  - android-platform-11.0.0_r14
+  - android-platform-11.0.0_r15
+  - android-platform-11.0.0_r16
+  - android-platform-11.0.0_r17
+  - android-platform-11.0.0_r5
+  - android-platform-11.0.0_r6
+  - android-platform-11.0.0_r7
+  - android-platform-11.0.0_r8
+  - android-platform-11.0.0_r9
+  - android-security-11.0.0_r49
+  - android-security-11.0.0_r50
+  - android-security-11.0.0_r51
+  - android-security-11.0.0_r52
+  - android-security-11.0.0_r53
+  - android-security-11.0.0_r54
+  - android-vts-11.0_r4
+  - android-vts-11.0_r5
+  - android-vts-11.0_r6
+  - android-vts-11.0_r7
   ecosystem_specific:
     severity: MEDIUM
