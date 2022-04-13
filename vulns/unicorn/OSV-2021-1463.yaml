@@ -8,7 +8,7 @@ details: |
   Crash state:
   helper_be_stw_mmu_armeb
   ```
-modified: '2022-04-13T03:04:39.303580Z'
+modified: '2022-04-13T03:21:10.822311Z'
 published: '2021-10-19T00:00:32.912410Z'
 references:
 - type: REPORT
@@ -24,6 +24,7 @@ affected:
     events:
     - introduced: 34ddafcbcf6d16508a63623a68715394ea4e12d8
     - fixed: c10639fd4658a852049546162d116b123e2b1ec2
+    - fixed: 96518634fbd2b405af197df15a0d787dd883afa4
   versions:
   - 1.0.3
   - 2.0.0-rc1
