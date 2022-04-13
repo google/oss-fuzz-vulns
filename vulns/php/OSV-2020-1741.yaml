@@ -24,29 +24,7 @@ affected:
     repo: https://github.com/php/php-src.git
     events:
     - introduced: 1902f730ee2bda60552f34c0643e2d7b47e4fb64
-  versions:
-  - php-8.0.0beta3
-  - php-8.0.0beta4
-  - php-8.0.0rc1
-  - php-8.0.0
-  - php-8.0.0RC2
-  - php-8.0.0RC3
-  - php-8.0.0RC4
-  - php-8.0.0RC5
-  - php-8.0.1
-  - php-8.0.1RC1
-  - php-8.0.2
-  - php-8.0.2RC1
-  - php-8.0.3
-  - php-8.0.3RC1
-  - php-8.0.4RC1
-  - php-8.0.5RC1
-  - php-8.0.5
-  - php-8.0.6
-  - php-8.0.7RC1
-  - php-8.0.7
-  - php-8.1.0alpha1
-  - php-8.0.8RC1
-  - php-8.1.0alpha2
+    - fixed: e80dbd5f38b8bfc27153485f3ed3d24789d7d83a
   ecosystem_specific:
     severity: HIGH
+  versions: []
