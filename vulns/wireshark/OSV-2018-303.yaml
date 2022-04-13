@@ -10,7 +10,7 @@ details: |
   cmac_write
   _gcry_cipher_cmac_authenticate
   ```
-modified: '2022-04-13T03:04:37.786149Z'
+modified: '2022-04-13T04:20:11.137505Z'
 published: '2021-01-15T00:00:29.537688Z'
 references:
 - type: REPORT
@@ -25,10 +25,13 @@ affected:
     events:
     - introduced: 6ef693dec1fd189d0995d8ad6a06c29c05823ce8
     - fixed: bc43d687f0751cb95ecd9446589e7b37506ff1c6
+    - fixed: d0b07245ec7878fceba1cb6b272d3efb333b7dd6
   versions:
   - v2.5.0
   - v2.5.1rc0
   - wireshark-2.5.0
   ecosystem_specific:
-    introduced_range: 8fbad3dd56b45874463f9d811b80006314413c0e:95c50e3dd766e919953def30f65ba5496226a660
     severity: MEDIUM
+    introduced_range: 8fbad3dd56b45874463f9d811b80006314413c0e:95c50e3dd766e919953def30f65ba5496226a660
+  database_specific:
+    fixed_range: 0a8152c260b7939633e91202ae6f5c8075405f97:d0b07245ec7878fceba1cb6b272d3efb333b7dd6
