@@ -10,7 +10,7 @@ details: |
   gx_dc_pure_fill_rectangle
   gx_default_fillpage
   ```
-modified: '2022-04-13T03:04:34.791044Z'
+modified: '2022-04-13T04:06:39.561786Z'
 published: '2020-09-29T00:00:30.602171Z'
 references:
 - type: REPORT
@@ -25,6 +25,7 @@ affected:
     events:
     - introduced: d1eac80695b2c6f2a85942a82518715549541969
     - fixed: 748edd2fd75c684d63486eded71ad20254de6f4c
+    - fixed: b9a4616cdf710c79f575adb33b331cb495461d93
   versions:
   - ghostpdl-9.51
   - ghostpdl-9.51rc1
@@ -34,13 +35,12 @@ affected:
   - ghostpdl-9.51rc3
   - ghostpdl-9.52
   - ghostpdl-9.52-test-base-1
-  - ghostpdl-9.52-test-base-2
   - ghostpdl-9.52-test-base-3
   - ghostpdl-9.52-test-base-4
-  - ghostpdl-9.52-test-base-5
-  - ghostpdl-9.52-test-base-6
   - ghostpdl-9.52.1
   - ghostscript-9.51
   - ghostscript-9.52
   ecosystem_specific:
     severity: MEDIUM
+  database_specific:
+    fixed_range: 560ff82b0bc782465aa4591b2953954d7cf5608c:b9a4616cdf710c79f575adb33b331cb495461d93
