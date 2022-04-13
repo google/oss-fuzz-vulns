@@ -10,7 +10,7 @@ details: |
   wmem_leave_packet_scope
   fuzzshark.c
   ```
-modified: '2022-04-13T03:04:37.774569Z'
+modified: '2022-04-13T05:45:10.770591Z'
 published: '2020-11-05T00:00:51.605889Z'
 references:
 - type: REPORT
@@ -25,6 +25,7 @@ affected:
     events:
     - introduced: c8e24f5c55cb37b9a311e5226923d291892de892
     - fixed: 5fcedcf8f45f22d9e0cdf433cd1a6351ff5aaddf
+    - fixed: 561c5607a839ddf9795b8b29b63bb9b120ed86ee
   versions:
   - v3.3.0
   - v3.3.1
@@ -34,16 +35,46 @@ affected:
   - v3.4.0rc0
   - v3.4.0rc1
   - v3.4.1
+  - v3.4.10
+  - v3.4.10rc0
+  - v3.4.11
+  - v3.4.11rc0
+  - v3.4.12
+  - v3.4.12rc0
+  - v3.4.13
+  - v3.4.13rc0
+  - v3.4.14rc0
   - v3.4.1rc0
   - v3.4.2
   - v3.4.2rc0
   - v3.4.3
   - v3.4.3rc0
+  - v3.4.4
   - v3.4.4rc0
+  - v3.4.5
+  - v3.4.5rc0
+  - v3.4.6
+  - v3.4.6rc0
+  - v3.4.7
+  - v3.4.7rc0
+  - v3.4.8
+  - v3.4.8rc0
+  - v3.4.9
+  - v3.4.9rc0
   - v3.5.0rc0
   - wireshark-3.4.0
   - wireshark-3.4.1
+  - wireshark-3.4.10
+  - wireshark-3.4.11
+  - wireshark-3.4.12
+  - wireshark-3.4.13
   - wireshark-3.4.2
   - wireshark-3.4.3
+  - wireshark-3.4.4
+  - wireshark-3.4.5
+  - wireshark-3.4.6
+  - wireshark-3.4.7
+  - wireshark-3.4.8
+  - wireshark-3.4.9
   ecosystem_specific:
     severity: HIGH
