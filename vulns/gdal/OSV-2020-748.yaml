@@ -25,6 +25,9 @@ affected:
     events:
     - introduced: 39111a0fe9b174302f67102bdd849e8290472d70
     - fixed: 6e896f4a3affa9578993487753b751af944bfda4
+    - fixed: 69b0c4ec4174fde36c609a4aac6f4281424021b3
   ecosystem_specific:
     severity: MEDIUM
+  database_specific:
+    fixed_range: 39111a0fe9b174302f67102bdd849e8290472d70:69b0c4ec4174fde36c609a4aac6f4281424021b3
   versions: []
