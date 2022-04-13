@@ -10,7 +10,7 @@ details: |
   dhcp6_maybe_relay
   dhcp6_maybe_relay
   ```
-modified: '2022-04-13T03:04:31.198379Z'
+modified: '2022-04-13T03:30:15.025589Z'
 published: '2021-07-08T00:00:18.003362Z'
 references:
 - type: REPORT
@@ -25,6 +25,7 @@ affected:
     events:
     - introduced: 96f6444958c29a670f4254722d787f328153605c
     - fixed: a42ee397f3d48b5df837689c2c55aeaba5feaa01
+    - fixed: ed4e7defd7d231e2e424aed0b160603f6e627aba
   versions:
   - v2.86test5
   - v2.86test6
