@@ -10,7 +10,7 @@ details: |
   QPainterPath::addPath
   QPathClipper::intersect
   ```
-modified: '2022-04-13T03:04:36.837575Z'
+modified: '2022-04-13T03:21:32.726306Z'
 published: '2021-08-12T00:00:36.570149Z'
 references:
 - type: REPORT
@@ -200,6 +200,7 @@ affected:
   - v6.2.0-rc1
   - v6.2.0-rc2
   - v6.2.1
+  - v5.15.3-lts-lgpl
   ecosystem_specific:
     severity: HIGH
     introduced_range: 1c17b656e0c7b3f5fae598a0915fdebfeb822dae:f1b826440d0c9407b08329bb563b95781d6aeb6b
