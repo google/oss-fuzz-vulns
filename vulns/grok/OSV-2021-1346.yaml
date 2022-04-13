@@ -24,8 +24,9 @@ affected:
     repo: https://github.com/GrokImageCompression/grok.git
     events:
     - introduced: 9c466c61a86ffc12f4890b0ff80717d4a9909015
-  versions:
-  - v9.5.0
-  - v9.5.0.debian
+    - fixed: 9ae0d1071c360b5a7fc85bf969dbf3e1a01f6608
   ecosystem_specific:
     severity: MEDIUM
+  database_specific:
+    fixed_range: f2d5bee54f2cd57ed6a4562e69bdd327b76aef88:9ae0d1071c360b5a7fc85bf969dbf3e1a01f6608
+  versions: []
