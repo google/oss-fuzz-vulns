@@ -10,7 +10,7 @@ details: |
   Assimp::M3DWrapper::M3DWrapper
   Assimp::M3DImporter::InternReadFile
   ```
-modified: '2022-04-13T03:04:42.645684Z'
+modified: '2022-04-13T03:28:14.100774Z'
 published: '2021-11-01T00:00:10.146855Z'
 references:
 - type: REPORT
@@ -25,6 +25,7 @@ affected:
     events:
     - introduced: af0aca796ebab7663bba2778f7f30dd424f324ca
     - fixed: 145f972d76eaf3cd947a92789ecefb4cc1b78765
+    - fixed: fc0617280eed3fd951e1cd097d5d056fb36823e7
   versions:
   - v5.1.0.rc1
   ecosystem_specific:
