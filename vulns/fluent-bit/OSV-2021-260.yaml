@@ -10,7 +10,7 @@ details: |
   flb_parser_do
   parser_fuzzer.c
   ```
-modified: '2022-04-13T03:04:38.442836Z'
+modified: '2022-04-13T03:28:54.427822Z'
 published: '2021-02-01T00:01:01.495854Z'
 references:
 - type: REPORT
@@ -25,6 +25,7 @@ affected:
     events:
     - introduced: 68746b76af8b143daf477033a6799902be2f3cad
     - fixed: 6e6cb845e96de2474456aceb8d6ffdf42b19942c
+    - fixed: 2c6f7f8a5bdf8fcec39415503ffdf0536f00be2d
   versions:
   - v1.7.0
   - v1.7.0-rc2
