@@ -10,7 +10,7 @@ details: |
   ih264d_decode_picture_thread
   start_thread
   ```
-modified: '2022-04-13T03:04:35.437136Z'
+modified: '2022-04-13T03:23:55.649834Z'
 published: '2020-07-01T00:00:16.058420Z'
 references:
 - type: REPORT
@@ -36,5 +36,12 @@ affected:
   - platform-tools-30.0.1
   - platform-tools-30.0.2
   - platform-tools-30.0.3
+  - android-10.0.0_r12
+  - android-10.0.0_r13
+  - android-10.0.0_r14
+  - android-10.0.0_r7
+  - android-10.0.0_r8
+  - android-10.0.0_r9
+  - android-mainline-10.0.0_r4
   ecosystem_specific:
     severity: MEDIUM
