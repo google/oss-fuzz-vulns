@@ -10,7 +10,7 @@ details: |
   wabt::BinaryReader::ReadRelocSection
   wabt::BinaryReader::ReadCustomSection
   ```
-modified: '2022-04-13T03:04:37.997124Z'
+modified: '2022-04-13T03:34:13.937241Z'
 published: '2021-02-12T00:00:06.148219Z'
 references:
 - type: REPORT
@@ -24,6 +24,7 @@ affected:
     repo: https://github.com/WebAssembly/wabt
     events:
     - introduced: 713becedfe45e7b7a993d7efb6fd2994f064b234
+    - fixed: e808dfe3fc7ec890be4ef59d4772afaa19af4847
   versions:
   - 1.0.20
   - 1.0.21
