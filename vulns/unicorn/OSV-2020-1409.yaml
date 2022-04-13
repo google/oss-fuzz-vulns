@@ -10,7 +10,7 @@ details: |
   tcg_cpu_exec_armeb
   tcg_exec_all_armeb
   ```
-modified: '2022-04-13T03:04:39.147494Z'
+modified: '2022-04-13T03:31:39.936779Z'
 published: '2020-07-28T00:00:12.058612Z'
 references:
 - type: REPORT
@@ -25,6 +25,8 @@ affected:
     events:
     - introduced: 07f94ad1fc62293cac330df9714d739be6354926
     - fixed: 7ca7e8a79d85ca57bb523be49009b0326b7a5210
+    - fixed: 34ddafcbcf6d16508a63623a68715394ea4e12d8
+    - fixed: e2a924a32b6fd3f24163b93996ac91782f518a25
   versions:
   - 1.0.2
   - 1.0.2-rc1
@@ -33,5 +35,9 @@ affected:
   - 1.0.2-rc4
   - 1.0.2-rc5
   - 1.0.2-rc6
+  - 1.0.3
+  - 2.0.0-rc1
+  - 2.0.0-rc2
+  - 2.0.0-rc3
   ecosystem_specific:
     severity: MEDIUM
