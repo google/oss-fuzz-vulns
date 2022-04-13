@@ -10,7 +10,7 @@ details: |
   OT::VariationStore::serialize
   bool OT::HVARVVAR::_subset<OT::HVAR>
   ```
-modified: '2022-04-13T03:04:32.919183Z'
+modified: '2022-04-13T03:32:46.403544Z'
 published: '2020-06-26T00:00:09.657756Z'
 references:
 - type: REPORT
@@ -25,6 +25,13 @@ affected:
     events:
     - introduced: 8f8e8a84795db45098c95e19a7ff83d898d3bc7d
     - fixed: 257a197ae723b55d26c3254dbe1edd8b0509af1b
+  versions:
+  - 2.5.2
+  - 2.5.3
+  - 2.6.0
+  - 2.6.1
+  - 2.6.2
+  - 2.6.3
+  - 2.6.4
   ecosystem_specific:
     severity: MEDIUM
-  versions: []
