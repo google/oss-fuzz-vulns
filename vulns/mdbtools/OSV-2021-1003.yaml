@@ -10,7 +10,7 @@ details: |
   mdb_xfer_bound_data
   _mdb_attempt_bind
   ```
-modified: '2022-04-13T03:04:38.141935Z'
+modified: '2022-04-13T03:34:27.957616Z'
 published: '2021-07-15T00:00:10.906210Z'
 references:
 - type: REPORT
@@ -25,6 +25,7 @@ affected:
     events:
     - introduced: 9b5e5919052c5dff80a3f7301ae520b71571814a
     - fixed: 373b7ff4c4daf887269c078407cb1338942c4ea6
+    - fixed: ab9e4088a9cbcf3e0aa0053437327287e2869756
   versions:
   - v0.9.2
   - v0.9.2-beta1
@@ -39,3 +40,5 @@ affected:
   - v0.9.3-beta4
   ecosystem_specific:
     severity: null
+  database_specific:
+    fixed_range: 373b7ff4c4daf887269c078407cb1338942c4ea6:ab9e4088a9cbcf3e0aa0053437327287e2869756
