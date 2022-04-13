@@ -10,7 +10,7 @@ details: |
   luaD_pretailcall
   luaV_execute
   ```
-modified: '2022-04-13T03:04:30.714279Z'
+modified: '2022-04-13T03:36:53.712818Z'
 published: '2021-02-25T00:02:41.560298Z'
 references:
 - type: REPORT
@@ -25,6 +25,7 @@ affected:
     events:
     - introduced: 5d8ce05b3f6fad79e37ed21c1076e47a322472c6
     - fixed: c03c527fd207b4ad8f5a8e0f4f2c176bd227c979
+    - fixed: 5d8ce05b3f6fad79e37ed21c1076e47a322472c6
   versions:
   - v5.4.2
   ecosystem_specific:
