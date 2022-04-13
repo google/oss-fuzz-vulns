@@ -10,7 +10,7 @@ details: |
   slice_segment_header::read
   decoder_context::read_slice_NAL
   ```
-modified: '2022-04-13T03:04:42.524314Z'
+modified: '2022-04-13T03:33:16.984989Z'
 published: '2021-03-01T00:00:01.773251Z'
 references:
 - type: REPORT
@@ -25,6 +25,7 @@ affected:
     events:
     - introduced: ca52d4ddf540cc731d0f31dbccc1897f7e6d9db4
     - fixed: 780f3428253bff4b029736fa9f195ca5938203bc
+    - fixed: 957c199c68f6377441bc733d2672eb7656f1be0a
   versions:
   - v5.80.0
   - v5.80.0-rc1
@@ -32,4 +33,5 @@ affected:
   - v5.81.0-rc1
   - v5.81.0-rc2
   - v5.82.0-rc1
-  - v5.82.0-rc2
+  database_specific:
+    fixed_range: 780f3428253bff4b029736fa9f195ca5938203bc:957c199c68f6377441bc733d2672eb7656f1be0a
