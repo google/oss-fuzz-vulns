@@ -10,7 +10,7 @@ details: |
   luaG_runerror
   luaD_growstack
   ```
-modified: '2022-04-13T03:04:30.703580Z'
+modified: '2022-04-13T03:31:48.822497Z'
 published: '2021-03-21T00:00:57.635576Z'
 references:
 - type: REPORT
@@ -25,7 +25,10 @@ affected:
     events:
     - introduced: 5d8ce05b3f6fad79e37ed21c1076e47a322472c6
     - fixed: eadd8c7178c79c814ecca9652973a9b9dd4cc71b
+    - fixed: ad3942adba574c9d008c99ce2785a5af19d146bf
   versions:
   - v5.4.2
   ecosystem_specific:
     severity: MEDIUM
+  database_specific:
+    fixed_range: eadd8c7178c79c814ecca9652973a9b9dd4cc71b:ad3942adba574c9d008c99ce2785a5af19d146bf
