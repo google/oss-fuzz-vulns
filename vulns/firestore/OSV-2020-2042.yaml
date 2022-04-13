@@ -10,7 +10,7 @@ details: |
   pb_release
   pb_decode
   ```
-modified: '2022-04-13T03:04:33.870166Z'
+modified: '2022-04-13T03:28:13.014472Z'
 published: '2020-10-13T00:00:28.349821Z'
 references:
 - type: REPORT
@@ -24,6 +24,7 @@ affected:
     repo: https://github.com/firebase/firebase-ios-sdk.git
     events:
     - introduced: 819091b289b48ac111008f0950853fd7bb54a521
+    - fixed: e81547f313af6f6733ccc25eb3c0cea8e6008578
   versions:
   - 6.26.0
   - 7.0.0
@@ -39,6 +40,7 @@ affected:
   - 7.8.0
   - 7.8.1
   - 7.9.0
+  - 7.9.1
   - ABTesting-3.3.0
   - ABTesting-4.0.0
   - ABTesting-4.1.0
@@ -64,7 +66,6 @@ affected:
   - CocoaPods-6.31.0
   - CocoaPods-6.31.1
   - CocoaPods-6.32.0
-  - CocoaPods-6.32.2
   - CocoaPods-6.33.0
   - CocoaPods-6.33.0.nightly
   - CocoaPods-6.34.0
@@ -96,11 +97,9 @@ affected:
   - CocoaPods-7.7.nightly
   - CocoaPods-7.8.0
   - CocoaPods-7.8.0-beta
-  - CocoaPods-7.8.1
   - CocoaPods-7.8.nightly
   - CocoaPods-7.9.0
   - CocoaPods-7.9.0-beta
-  - CocoaPods-7.9.0.nightly
   - CocoaPods-7.9.nightly
   - Core-6.10.0
   - Core-6.10.1
@@ -205,21 +204,5 @@ affected:
   - Utilities-7.1.0
   - Utilities-7.1.1
   - Utilities-7.2.0
-  - mock-7.3.2
-  - nightly-test-6.32.1
-  - nightly-test-6.33.0
-  - nightly-test-6.34.0
-  - nightly-test-7.0
-  - nightly-test-7.1
-  - nightly-test-7.2
-  - nightly-test-7.3
-  - nightly-test-7.4
-  - nightly-test-7.5
-  - nightly-test-7.6
-  - nightly-test-7.7
-  - nightly-test-7.8
-  - nightly-test-7.9
-  - v7.3.2-fireperf-mock
-  - 7.9.1
   ecosystem_specific:
     severity: HIGH
