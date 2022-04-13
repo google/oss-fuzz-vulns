@@ -10,7 +10,7 @@ details: |
   ih264d_parse_nal_unit
   ih264d_video_decode
   ```
-modified: '2022-04-13T03:04:35.403941Z'
+modified: '2022-04-13T03:33:40.143841Z'
 published: '2021-09-12T00:00:40.701615Z'
 references:
 - type: REPORT
@@ -36,6 +36,9 @@ affected:
     - fixed: 23247c81421129686df32536ed9a15b0508acd39
     - fixed: 45ee63f03a91b91ca6e96ba359cdd92c13830f3c
     - fixed: a20b83447dbefd90b21e109fb9d5fcc4d0b1e193
+    - fixed: dc110841d6a3fb2f9c9f1af04b3b71da40fbd392
+    - fixed: 479c2eab082f4fd9a1aa384cf4e4db6ef6bd907f
+    - fixed: 1f6d235f4ed135fe641712149129730aa2286179
   versions:
   - android-10.0.0_r12
   - android-10.0.0_r13
@@ -394,5 +397,34 @@ affected:
   - android-cts-11.0_r7
   - android-cts-12.0_r3
   - android-cts-9.0_r19
+  - android-mainline-12.0.0_r22
+  - android-mainline-12.0.0_r24
+  - android-mainline-12.0.0_r28
+  - android-mainline-12.0.0_r29
+  - android-mainline-12.0.0_r30
+  - android-mainline-12.0.0_r34
+  - android-mainline-12.0.0_r35
+  - android-mainline-12.0.0_r38
+  - android-mainline-12.0.0_r40
+  - android-mainline-12.0.0_r41
+  - android-mainline-12.0.0_r42
+  - android-mainline-12.0.0_r43
+  - android-mainline-12.0.0_r44
+  - android-mainline-12.0.0_r45
+  - android-mainline-12.0.0_r46
+  - android-mainline-12.0.0_r47
+  - android-mainline-12.0.0_r48
+  - android-mainline-12.0.0_r49
+  - android-mainline-12.0.0_r50
+  - android-mainline-12.0.0_r51
+  - android-mainline-12.0.0_r52
+  - android-mainline-12.0.0_r53
+  - android-mainline-12.0.0_r54
+  - android-mainline-12.0.0_r56
+  - android-mainline-12.0.0_r57
+  - android-mainline-12.0.0_r58
+  - android-vts-11.0_r7
+  - android-vts-12.0_r3
+  - android-wear-9.0.0_r34
   ecosystem_specific:
     severity: MEDIUM
