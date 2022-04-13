@@ -10,7 +10,7 @@ details: |
   H5MM_malloc
   H5C_load_entry
   ```
-modified: '2022-04-13T03:04:43.005585Z'
+modified: '2022-04-13T03:28:23.858966Z'
 published: '2021-02-24T00:00:05.141282Z'
 references:
 - type: REPORT
@@ -25,6 +25,7 @@ affected:
     events:
     - introduced: 1ce8f2d1845ecdde19a35605cabdbb884776d52d
     - fixed: cddcdad17864c4b95ead23581047b41636f180a3
+    - fixed: b89ed176f27c71657587d231794bee09d0461d08
   versions:
   - v1.5.20
   - v1.5.21
