@@ -10,7 +10,7 @@ details: |
   QRasterPaintEngine::fill
   QPaintEngineEx::stroke
   ```
-modified: '2022-04-13T03:04:36.879743Z'
+modified: '2022-04-13T04:06:30.412500Z'
 published: '2021-06-27T00:01:31.379142Z'
 references:
 - type: REPORT
@@ -196,7 +196,8 @@ affected:
   - v6.2.0-alpha1
   - v6.2.0-beta1
   - v6.2.0-beta2
+  - v5.15.3-lts-lgpl
   ecosystem_specific:
-    severity: HIGH
     introduced_range: 1c17b656e0c7b3f5fae598a0915fdebfeb822dae:f1b826440d0c9407b08329bb563b95781d6aeb6b
     fixed_range: dd24bc25c9d897b944768db3ebe52f8d68c8f6da:16ab287262e246b27c83f18ccdbd47d68485bbf6
+    severity: HIGH
