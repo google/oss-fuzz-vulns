@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in AK::Formatter<char const*, void>::format
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34863
 
+  ```
   Crash type: Heap-buffer-overflow READ 3
   Crash state:
   AK::Formatter<char const*, void>::format
   void AK::__format_value<char const*>
   AK::vformat_impl
-modified: '2021-06-21T06:56:19.842039Z'
+  ```
+modified: '2022-04-13T03:04:32.201464Z'
 published: '2021-06-03T00:00:53.648543Z'
 references:
 - type: REPORT
@@ -24,3 +26,4 @@ affected:
     - introduced: 81f03e7a5d2b78f750d525c27b964ffe9bad6179
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

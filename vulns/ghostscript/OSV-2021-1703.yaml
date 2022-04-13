@@ -3,12 +3,14 @@ summary: UNKNOWN in pdfi_fapi_get_gsubr
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42485
 
+  ```
   Crash type: UNKNOWN
   Crash state:
   pdfi_fapi_get_gsubr
   gs_fapi_serialize_type2_font
   gs_fapi_ft_get_scaled_font
-modified: '2021-12-17T00:00:08.819222Z'
+  ```
+modified: '2022-04-13T03:04:34.471097Z'
 published: '2021-12-17T00:00:08.818935Z'
 references:
 - type: REPORT

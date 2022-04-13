@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in OGRFeatureFormatDateTimeBuffer
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23417
 
+  ```
   Crash type: Heap-buffer-overflow WRITE 2
   Crash state:
   OGRFeatureFormatDateTimeBuffer
   OGRFeature::GetFieldAsString
   OGRMemLayer::AlterFieldDefn
-modified: '2021-06-23T06:30:50.088380Z'
+  ```
+modified: '2022-04-13T03:04:42.149408Z'
 published: '2020-06-24T01:51:11.337556Z'
 references:
 - type: REPORT
@@ -24,5 +26,6 @@ affected:
     - introduced: 4ba6e3ce6655a651097c5ff19f707808e6b82189
     - fixed: bb8555c956c75e4f6ae50db6d28e40b660d9a777
   ecosystem_specific:
-    severity: HIGH
     fixed_range: 7e3771089616198d9329cfc9ed8f0620f4e5ea66:bb8555c956c75e4f6ae50db6d28e40b660d9a777
+    severity: HIGH
+  versions: []

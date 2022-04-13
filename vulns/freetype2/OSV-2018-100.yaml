@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in cff_parser_run
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=10869
 
+  ```
   Crash type: Heap-buffer-overflow WRITE 1
   Crash state:
   cff_parser_run
   cff_subfont_load
   cff_font_load
-modified: '2021-06-23T06:25:40.693493Z'
+  ```
+modified: '2022-04-13T03:04:34.877739Z'
 published: '2021-01-13T00:00:43.817225Z'
 references:
 - type: REPORT
@@ -24,5 +26,6 @@ affected:
     - introduced: 0c256f6e16eb73be1aef98197755e0e6bb4c56a9
     - fixed: 7e045f03edb2a34b731c999c586a03a914502d88
   ecosystem_specific:
-    fixed_range: 08b711d0182229d7e0a1e52cecf73660cb95addb:7e045f03edb2a34b731c999c586a03a914502d88
     severity: HIGH
+    fixed_range: 08b711d0182229d7e0a1e52cecf73660cb95addb:7e045f03edb2a34b731c999c586a03a914502d88
+  versions: []

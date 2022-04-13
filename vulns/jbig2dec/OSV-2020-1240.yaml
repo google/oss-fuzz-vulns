@@ -3,12 +3,14 @@ summary: Use-of-uninitialized-value in jbig2_decode_mmr_line
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=17855
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   jbig2_decode_mmr_line
   jbig2_decode_halftone_mmr
   jbig2_decode_gray_scale_image
-modified: '2021-06-23T06:29:24.858741Z'
+  ```
+modified: '2022-04-13T03:04:40.563878Z'
 published: '2020-07-22T21:49:59.411582Z'
 references:
 - type: REPORT

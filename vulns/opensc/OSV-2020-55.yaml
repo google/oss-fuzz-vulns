@@ -3,12 +3,14 @@ summary: Stack-buffer-overflow in tcos_decipher
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22967
 
+  ```
   Crash type: Stack-buffer-overflow WRITE {*}
   Crash state:
   tcos_decipher
   sc_decipher
   use_key
-modified: '2021-06-21T06:56:27.159034Z'
+  ```
+modified: '2022-04-13T03:04:41.675366Z'
 published: '2020-06-24T01:51:12.036793Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 9d294de90d1cc66956389856e60b6944b27b4817
   ecosystem_specific:
     severity: HIGH
+  versions: []

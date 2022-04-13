@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in proto_item_append_text
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=35102
 
+  ```
   Crash type: Heap-buffer-overflow READ 8
   Crash state:
   proto_item_append_text
   dissect_pfcp_3gpp_enterprise_ies
   call_dissector_work
-modified: '2021-06-21T06:56:24.048924Z'
+  ```
+modified: '2022-04-13T03:04:37.806635Z'
 published: '2021-06-11T00:01:24.261978Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: b86ec10ca4e85d40e8103a0f7779b27ab65e4ccf
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

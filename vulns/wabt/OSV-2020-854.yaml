@@ -1,11 +1,11 @@
 id: OSV-2020-854
 summary: UNKNOWN READ in std::__1::__hash_node_base<std::__1::__hash_node<std::__1::__hash_value_type<std
 details: "OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20959\n\
-  \nCrash type: UNKNOWN READ\nCrash state:\nstd::__1::__hash_node_base<std::__1::__hash_node<std::__1::__hash_value_type<std\n\
+  \n```\nCrash type: UNKNOWN READ\nCrash state:\nstd::__1::__hash_node_base<std::__1::__hash_node<std::__1::__hash_value_type<std\n\
   std::__1::__hash_table<std::__1::__hash_value_type<std::__1::basic_string<char,\
   \ \nstd::__1::__hash_table<std::__1::__hash_value_type<std::__1::basic_string<char,\
-  \ \n"
-modified: '2021-06-21T06:56:24.188107Z'
+  \ \n```\n"
+modified: '2022-04-13T03:04:37.973535Z'
 published: '2020-07-14T22:13:46.858160Z'
 references:
 - type: REPORT

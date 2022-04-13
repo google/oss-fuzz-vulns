@@ -3,12 +3,14 @@ summary: Heap-use-after-free in tsk_fs_attr_set_run
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=35684
 
+  ```
   Crash type: Heap-use-after-free READ 8
   Crash state:
   tsk_fs_attr_set_run
   fatfs_make_data_runs
   tsk_fs_file_attr_check
-modified: '2021-07-01T00:00:24.935419Z'
+  ```
+modified: '2022-04-13T03:04:36.436826Z'
 published: '2021-07-01T00:00:24.935073Z'
 references:
 - type: REPORT

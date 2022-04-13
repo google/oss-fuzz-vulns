@@ -3,12 +3,14 @@ summary: 'Use-of-uninitialized-value in std::__1::__hash_iterator<std::__1::__ha
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=38823
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   std::__1::__hash_iterator<std::__1::__hash_node<std::__1::__hash_value_type<std:
   opencensus::tags::TagKeyRegistry::Register
   opencensus::tags::TagKey::Register
-modified: '2021-09-17T00:01:36.462472Z'
+  ```
+modified: '2022-04-13T03:04:39.662150Z'
 published: '2021-09-17T00:01:36.462295Z'
 references:
 - type: REPORT

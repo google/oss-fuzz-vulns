@@ -3,12 +3,14 @@ summary: Bad-cast to zmq::session_base_t from invalid vptr
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24018
 
+  ```
   Crash type: Bad-cast
   Crash state:
   Bad-cast to zmq::session_base_t from invalid vptr
   zmq::stream_engine_base_t::in_event_internal
   zmq::stream_engine_base_t::in_event
-modified: '2021-06-21T06:56:20.355091Z'
+  ```
+modified: '2022-04-13T03:04:32.781119Z'
 published: '2020-07-14T05:37:33.175193Z'
 references:
 - type: REPORT

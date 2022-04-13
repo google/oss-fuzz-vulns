@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in ndpi_search_oscar_tcp_connect
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21000
 
+  ```
   Crash type: Heap-buffer-overflow READ 4
   Crash state:
   ndpi_search_oscar_tcp_connect
   check_ndpi_tcp_flow_func
   ndpi_detection_process_packet
-modified: '2021-06-23T06:26:03.529036Z'
+  ```
+modified: '2022-04-13T03:04:36.025854Z'
 published: '2020-07-22T21:49:49.427461Z'
 references:
 - type: REPORT

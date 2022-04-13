@@ -3,12 +3,14 @@ summary: Use-of-uninitialized-value in std::__1::__packaged_task_func<std::__1::
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31180
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   std::__1::__packaged_task_func<std::__1::__bind<grk::mct::decompress_irrev
   std::__1::packaged_task<int
   ThreadPool::ThreadPool
-modified: '2022-01-30T00:05:06.989120Z'
+  ```
+modified: '2022-04-13T03:04:39.546116Z'
 published: '2021-02-22T00:00:08.360778Z'
 references:
 - type: REPORT

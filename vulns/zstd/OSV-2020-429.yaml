@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in MEM_read32
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14368
 
+  ```
   Crash type: Heap-buffer-overflow READ 4
   Crash state:
   MEM_read32
   ZSTDv05_decodeSequence
   ZSTDv05_decompressSequences
-modified: '2021-06-21T06:56:19.407398Z'
+  ```
+modified: '2022-04-13T03:04:31.653842Z'
 published: '2020-07-01T00:00:08.999234Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 0fd322f812211e653a83492c0c114b933f8b6bc5
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

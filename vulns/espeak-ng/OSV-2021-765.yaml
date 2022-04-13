@@ -3,12 +3,14 @@ summary: Heap-use-after-free in LookupDict2
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34298
 
+  ```
   Crash type: Heap-use-after-free READ 4
   Crash state:
   LookupDict2
   LookupDictList
   Lookup
-modified: '2022-04-03T00:03:45.504726Z'
+  ```
+modified: '2022-04-13T03:04:34.163709Z'
 published: '2021-05-15T00:00:28.613673Z'
 references:
 - type: REPORT

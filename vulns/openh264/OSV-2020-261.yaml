@@ -3,12 +3,14 @@ summary: Use-of-uninitialized-value in WelsDec::CWelsDecoder::ReleaseBufferedRea
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18744
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   WelsDec::CWelsDecoder::ReleaseBufferedReadyPicture
   WelsDec::CWelsDecoder::ReorderPicturesInDisplay
   WelsDec::CWelsDecoder::DecodeFrame2WithCtx
-modified: '2021-06-21T06:56:23.909062Z'
+  ```
+modified: '2022-04-13T03:04:37.631728Z'
 published: '2020-06-30T00:00:43.014785Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 8dca82ab0d4548ab4d064229e293f2edb8f257ba
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

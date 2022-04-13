@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in put_8tap_scaled_c
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11378
 
+  ```
   Crash type: Heap-buffer-overflow READ 2
   Crash state:
   put_8tap_scaled_c
   put_8tap_sharp_scaled_c
   mc
-modified: '2021-06-23T06:28:52.114646Z'
+  ```
+modified: '2022-04-13T03:04:39.817392Z'
 published: '2021-01-13T00:00:39.442989Z'
 references:
 - type: REPORT
@@ -24,5 +26,6 @@ affected:
     - introduced: 7ef74ca1005785f0791874d52217aecc76f190cd
     - fixed: 66adb457af2bedc1280af147047c64683834d939
   ecosystem_specific:
-    introduced_range: 4a646a0ca25a22a809bfcb743332f6b6646d86a3:ec53ec6d5b4ebbb06d5c7209fd4f25634a6ad606
     severity: MEDIUM
+    introduced_range: 4a646a0ca25a22a809bfcb743332f6b6646d86a3:ec53ec6d5b4ebbb06d5c7209fd4f25634a6ad606
+  versions: []

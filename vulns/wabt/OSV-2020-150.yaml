@@ -4,12 +4,14 @@ summary: Segv on unknown address in std::__1::basic_string<char, std::__1::char_
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20457
 
+  ```
   Crash type: Segv on unknown address
   Crash state:
   std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<ch
   std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<ch
   wabt::BinaryReaderIR::OnDataSymbol
-modified: '2021-06-23T06:27:56.995997Z'
+  ```
+modified: '2022-04-13T03:04:37.943567Z'
 published: '2020-06-24T01:51:16.354141Z'
 references:
 - type: REPORT

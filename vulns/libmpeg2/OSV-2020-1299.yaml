@@ -3,12 +3,14 @@ summary: UNKNOWN WRITE in ideint_weave_blk
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=17084
 
+  ```
   Crash type: UNKNOWN WRITE
   Crash state:
   ideint_weave_blk
   ideint_process
   impeg2d_deinterlace
-modified: '2021-11-22T06:24:56.267440Z'
+  ```
+modified: '2022-04-13T03:04:33.824326Z'
 published: '2020-07-22T21:50:04.188246Z'
 references:
 - type: REPORT
@@ -60,5 +62,5 @@ affected:
   - android-mainline-10.0.0_r7
   - android-mainline-10.0.0_r9
   ecosystem_specific:
-    introduced_range: unknown:313d5efa2d866f01aaf25b015f31480ce095e7f5
     severity: HIGH
+    introduced_range: unknown:313d5efa2d866f01aaf25b015f31480ce095e7f5

@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in inflate
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=41111
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   inflate
   uncompress2
   uncompress
-modified: '2022-04-11T00:04:41.136831Z'
+  ```
+modified: '2022-04-13T03:04:40.348516Z'
 published: '2021-11-19T00:00:42.702380Z'
 references:
 - type: REPORT

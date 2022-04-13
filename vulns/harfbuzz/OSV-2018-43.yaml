@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in OT::post::accelerator_t::cmp_gids
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11263
 
+  ```
   Crash type: Heap-buffer-overflow READ {*}
   Crash state:
   OT::post::accelerator_t::cmp_gids
   sort_r_cmpswap
   sort_r_simple
-modified: '2021-06-21T06:56:20.722786Z'
+  ```
+modified: '2022-04-13T03:04:33.153002Z'
 published: '2021-01-13T00:00:24.227595Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 6482fda519ca7d173e3bcb3717aa30e237f04b25
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

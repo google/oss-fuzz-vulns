@@ -3,12 +3,14 @@ summary: Heap-use-after-free in nghttp2_hd_deflate_hd_bufs
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=44517
 
+  ```
   Crash type: Heap-use-after-free READ 3
   Crash state:
   nghttp2_hd_deflate_hd_bufs
   nghttp2_frame_pack_headers
   nghttp2_session_mem_send_internal
-modified: '2022-02-11T00:01:56.941509Z'
+  ```
+modified: '2022-04-13T03:04:42.872996Z'
 published: '2022-02-11T00:01:56.941272Z'
 references:
 - type: REPORT

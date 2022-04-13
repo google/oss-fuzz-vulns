@@ -2,11 +2,11 @@ id: OSV-2021-1153
 summary: 'Heap-buffer-overflow in hb_array_t<OT::IntType<unsigned int, 4u> const>
   hb_array_t<OT::IntType<unsigned '
 details: "OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=37348\n\
-  \nCrash type: Heap-buffer-overflow READ 4\nCrash state:\nhb_array_t<OT::IntType<unsigned\
+  \n```\nCrash type: Heap-buffer-overflow READ 4\nCrash state:\nhb_array_t<OT::IntType<unsigned\
   \ int, 4u> const> hb_array_t<OT::IntType<unsigned \nOT::UnsizedArrayOf<OT::IntType<unsigned\
   \ int, 4u> >::copy\n_hb_head_t<OT::UnsizedArrayOf<OT::IntType<unsigned int, 4u>\
-  \ >*, decltype\n"
-modified: '2021-11-09T00:13:51.845337Z'
+  \ >*, decltype\n```\n"
+modified: '2022-04-13T03:04:33.164072Z'
 published: '2021-08-20T00:00:40.299081Z'
 references:
 - type: REPORT

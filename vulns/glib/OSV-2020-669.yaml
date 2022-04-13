@@ -3,12 +3,14 @@ summary: Use-of-uninitialized-value in g_date_time_get_week_number
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=17648
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   g_date_time_get_week_number
   g_date_time_new_week
   parse_isoNUMBER_date
-modified: '2021-06-21T06:56:20.155180Z'
+  ```
+modified: '2022-04-13T03:04:32.552070Z'
 published: '2020-07-01T00:00:23.657942Z'
 references:
 - type: REPORT

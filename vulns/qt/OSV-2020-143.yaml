@@ -4,12 +4,14 @@ summary: Heap-buffer-overflow in QSpecialInteger<QBigEndianStorageType<unsigned 
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21909
 
+  ```
   Crash type: Heap-buffer-overflow READ 4
   Crash state:
   QSpecialInteger<QBigEndianStorageType<unsigned int> >::operator unsigned int
   QIcc::fromIccProfile
   QColorSpace::fromIccProfile
-modified: '2021-11-22T06:56:05.145221Z'
+  ```
+modified: '2022-04-13T03:04:36.824658Z'
 published: '2020-06-24T01:51:16.055970Z'
 references:
 - type: REPORT
@@ -27,6 +29,6 @@ affected:
   versions:
   - v5.14.2
   ecosystem_specific:
+    severity: MEDIUM
     fixed_range: 538223d10d133d23133db1ec7a50cb2775aca657:76fe36645eb41fa35e526a97874f1e15a39c3823
     introduced_range: cc106ce56550ebfc7e1808e1b9015f5618d9f5e5:e10e5318bc02a48a866b76b6f0b7f268d16af642
-    severity: MEDIUM

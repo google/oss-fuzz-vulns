@@ -3,12 +3,14 @@ summary: Use-of-uninitialized-value in Mat_VarReadNumeric5
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=17112
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   Mat_VarReadNumeric5
   Mat_VarRead5
   ReadData
-modified: '2021-06-21T06:56:28.132464Z'
+  ```
+modified: '2022-04-13T03:04:42.989542Z'
 published: '2020-07-14T22:13:56.653856Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 7a1831b94a73f2cd665bd48f65c8516509d0740e
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

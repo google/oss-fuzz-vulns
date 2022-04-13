@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in processClientServerHello
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=43664
 
+  ```
   Crash type: Heap-buffer-overflow READ 2
   Crash state:
   processClientServerHello
   processTLSBlock
   ndpi_search_tls_udp
-modified: '2022-01-16T00:01:02.352631Z'
+  ```
+modified: '2022-04-13T03:04:35.950537Z'
 published: '2022-01-16T00:01:02.352424Z'
 references:
 - type: REPORT

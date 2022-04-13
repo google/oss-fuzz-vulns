@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in jxl::N_AVX2::BlendingStage::ProcessRow
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=45822
 
+  ```
   Crash type: Heap-buffer-overflow READ 4
   Crash state:
   jxl::N_AVX2::BlendingStage::ProcessRow
   jxl::LowMemoryRenderPipeline::RenderRect
   jxl::LowMemoryRenderPipeline::ProcessBuffers
-modified: '2022-03-21T00:00:16.278632Z'
+  ```
+modified: '2022-04-13T03:04:38.130266Z'
 published: '2022-03-21T00:00:16.278407Z'
 references:
 - type: REPORT

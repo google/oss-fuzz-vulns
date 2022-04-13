@@ -3,12 +3,14 @@ summary: UNKNOWN WRITE in CFF::parsed_cs_op_t::set_skip
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24507
 
+  ```
   Crash type: UNKNOWN WRITE
   Crash state:
   CFF::parsed_cs_op_t::set_skip
   CFF::parsed_cs_str_t::add_call_op
   cff1_cs_opset_subr_subset_t::process_call_subr
-modified: '2021-06-21T06:56:20.753725Z'
+  ```
+modified: '2022-04-13T03:04:33.191902Z'
 published: '2020-07-31T00:00:53.218119Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 32f052b033f12fbeb8741c9616860743b1f567c4
   ecosystem_specific:
     severity: HIGH
+  versions: []

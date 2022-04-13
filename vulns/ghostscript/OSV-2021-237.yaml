@@ -3,12 +3,14 @@ summary: Heap-use-after-free in sampled_data_sample
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29903
 
+  ```
   Crash type: Heap-use-after-free WRITE 4
   Crash state:
   sampled_data_sample
   sampled_data_continue
   interp
-modified: '2022-01-05T02:57:38.646859Z'
+  ```
+modified: '2022-04-13T03:04:34.568287Z'
 published: '2021-01-26T00:00:02.244670Z'
 references:
 - type: REPORT
@@ -54,5 +56,5 @@ affected:
   - gs9.28-temp-for-testing-tag
   - rjj_9.53.2_test
   ecosystem_specific:
-    severity: HIGH
     introduced_range: f209fb3a0f50cd0a9974d8627a4ac7f358f60c8a:470897e484fb0bfaa8553e0ccd5b9db91eda008b
+    severity: HIGH

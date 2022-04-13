@@ -3,12 +3,14 @@ summary: UNKNOWN WRITE in Runtime_Release
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=33689
 
+  ```
   Crash type: UNKNOWN WRITE
   Crash state:
   Runtime_Release
   EvaluateExpression
   InitDataSegments
-modified: '2021-04-27T00:01:03.314516Z'
+  ```
+modified: '2022-04-13T03:04:30.620813Z'
 published: '2021-04-27T00:01:03.314259Z'
 references:
 - type: REPORT

@@ -3,12 +3,14 @@ summary: Heap-use-after-free in zend_hash_reverse_apply
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42894
 
+  ```
   Crash type: Heap-use-after-free READ 4
   Crash state:
   zend_hash_reverse_apply
   shutdown_destructors
   zend_call_destructors
-modified: '2022-01-05T03:49:05.101758Z'
+  ```
+modified: '2022-04-13T03:04:33.575502Z'
 published: '2021-12-25T00:02:02.853767Z'
 references:
 - type: REPORT

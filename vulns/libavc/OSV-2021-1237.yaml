@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in ih264d_parse_decode_slice
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=38482
 
+  ```
   Crash type: Heap-buffer-overflow READ 4
   Crash state:
   ih264d_parse_decode_slice
   ih264d_parse_nal_unit
   ih264d_video_decode
-modified: '2022-02-11T00:08:15.292697Z'
+  ```
+modified: '2022-04-13T03:04:35.403941Z'
 published: '2021-09-12T00:00:40.701615Z'
 references:
 - type: REPORT

@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in asn1_parse_oid
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20363
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   asn1_parse_oid
   asn1_get_oid
   x509_parse_ext_certificate_policies
-modified: '2021-06-21T06:56:21.704729Z'
+  ```
+modified: '2022-04-13T03:04:34.949401Z'
 published: '2020-06-24T01:51:15.551172Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 76162b18280b174cd5e7101c9678f69785409fa3
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

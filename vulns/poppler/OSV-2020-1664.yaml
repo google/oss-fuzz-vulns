@@ -3,12 +3,14 @@ summary: Negative-size-param in BaseMemStream<char const>::getChars
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25221
 
+  ```
   Crash type: Negative-size-param
   Crash state:
   BaseMemStream<char const>::getChars
   Stream::doGetChars
   Stream::fillString
-modified: '2021-03-09T04:49:05.380178Z'
+  ```
+modified: '2022-04-13T03:04:37.336851Z'
 published: '2020-08-27T00:00:08.371618Z'
 references:
 - type: REPORT

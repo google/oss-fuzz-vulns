@@ -3,12 +3,14 @@ summary: Memcpy-param-overlap in ZSTD_createDDict
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=43287
 
+  ```
   Crash type: Memcpy-param-overlap
   Crash state:
   ZSTD_createDDict
   blosc_run_decompression_with_context
   blosc2_decompress_ctx
-modified: '2022-04-10T00:03:53.489092Z'
+  ```
+modified: '2022-04-13T03:04:40.446203Z'
 published: '2022-01-05T00:00:41.045461Z'
 references:
 - type: REPORT

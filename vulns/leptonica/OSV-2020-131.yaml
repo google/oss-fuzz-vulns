@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in pixGetRGBComponentCmap
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22295
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   pixGetRGBComponentCmap
   pixGetRGBComponent
   pixUnsharpMasking
-modified: '2021-06-21T06:56:20.249509Z'
+  ```
+modified: '2022-04-13T03:04:32.671359Z'
 published: '2020-06-24T01:51:15.520013Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 33e0c892ff0036da5d23dce834f384df786c91bb
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

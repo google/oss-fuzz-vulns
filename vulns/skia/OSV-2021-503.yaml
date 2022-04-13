@@ -3,12 +3,14 @@ summary: Use-after-poison in std::__1::unique_ptr<SkSL::Expression, std::__1::de
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31765
 
+  ```
   Crash type: Use-after-poison READ 8
   Crash state:
   std::__1::unique_ptr<SkSL::Expression, std::__1::default_delete<SkSL::Expression
   SkSL::DefinitionMap::getKnownDefinition
   SkSL::VariableReference::constantPropagate
-modified: '2021-06-23T06:25:33.117539Z'
+  ```
+modified: '2022-04-13T03:04:33.774982Z'
 published: '2021-03-07T00:00:48.743475Z'
 references:
 - type: REPORT
@@ -27,5 +29,5 @@ affected:
   - canvaskit/0.24.0
   - canvaskit/0.25.0
   ecosystem_specific:
-    introduced_range: 1d62221553b70cbfd3df37c411d5e1951192d6cb:75b7606c0fe1b0dbb253d9e0a1c5f14b963ed0ad
     severity: HIGH
+    introduced_range: 1d62221553b70cbfd3df37c411d5e1951192d6cb:75b7606c0fe1b0dbb253d9e0a1c5f14b963ed0ad

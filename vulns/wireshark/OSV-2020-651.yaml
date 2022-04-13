@@ -3,12 +3,14 @@ summary: Stack-buffer-overflow in tvb_memcpy
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15936
 
+  ```
   Crash type: Stack-buffer-overflow WRITE {*}
   Crash state:
   tvb_memcpy
   quic_extract_header
   dissect_quic
-modified: '2021-06-21T06:56:24.089718Z'
+  ```
+modified: '2022-04-13T03:04:37.865446Z'
 published: '2020-07-01T00:00:22.588939Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: ba54b896969930491645aa3ec4125b76480add9c
   ecosystem_specific:
     severity: HIGH
+  versions: []

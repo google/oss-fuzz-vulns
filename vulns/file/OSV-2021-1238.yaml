@@ -3,12 +3,14 @@ summary: UNKNOWN READ in cdf_read_property_info
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=38393
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   cdf_read_property_info
   cdf_unpack_summary_info
   cdf_check_summary_info
-modified: '2021-09-12T00:00:57.130170Z'
+  ```
+modified: '2022-04-13T03:04:30.837467Z'
 published: '2021-09-12T00:00:57.129964Z'
 references:
 - type: REPORT

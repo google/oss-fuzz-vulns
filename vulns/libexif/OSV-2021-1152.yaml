@@ -3,12 +3,14 @@ summary: UNKNOWN READ in exif_mnote_data_apple_load
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=37334
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   exif_mnote_data_apple_load
   exif_mnote_data_load
   interpret_maker_note
-modified: '2021-08-20T00:00:16.563409Z'
+  ```
+modified: '2022-04-13T03:04:40.863460Z'
 published: '2021-08-20T00:00:16.563182Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: d61e9aaddf4f8af5aecea4935f8feb59f42141c1
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

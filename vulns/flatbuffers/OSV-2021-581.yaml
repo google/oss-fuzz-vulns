@@ -3,12 +3,14 @@ summary: UNKNOWN READ in unsigned short flatbuffers::ReadScalar<unsigned short>
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=32647
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   unsigned short flatbuffers::ReadScalar<unsigned short>
   flatbuffers::Table::GetOptionalFieldOffset
   flatbuffers::Table::CheckField
-modified: '2021-03-30T00:01:07.234862Z'
+  ```
+modified: '2022-04-13T03:04:42.056594Z'
 published: '2021-03-30T00:01:07.234600Z'
 references:
 - type: REPORT

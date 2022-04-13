@@ -3,12 +3,14 @@ summary: Use-of-uninitialized-value in ihevc_recon_32x32
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=17072
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   ihevc_recon_32x32
   ihevcd_iquant_itrans_recon_ctb
   ihevcd_process
-modified: '2021-11-22T06:22:08.762198Z'
+  ```
+modified: '2022-04-13T03:04:30.997795Z'
 published: '2020-07-22T21:49:58.911110Z'
 references:
 - type: REPORT

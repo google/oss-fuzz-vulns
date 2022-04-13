@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in ot::MeshForwarder::GetFramePriority
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11376
 
+  ```
   Crash type: Heap-buffer-overflow READ 8
   Crash state:
   ot::MeshForwarder::GetFramePriority
   ot::MeshForwarder::HandleFragment
   ot::MeshForwarder::HandleReceivedFrame
-modified: '2021-06-21T06:56:25.059889Z'
+  ```
+modified: '2022-04-13T03:04:38.977370Z'
 published: '2021-01-13T00:00:29.118912Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: bf72fd8f8d4a898c019f279c8605e66fc0b42878
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

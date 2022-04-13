@@ -3,12 +3,14 @@ summary: UNKNOWN READ in parquet::LevelDecoder::SetData
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20666
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   parquet::LevelDecoder::SetData
   parquet::ColumnReaderImplBase<parquet::PhysicalType<
   parquet::ColumnReaderImplBase<parquet::PhysicalType<
-modified: '2021-06-21T06:56:19.725707Z'
+  ```
+modified: '2022-04-13T03:04:32.024330Z'
 published: '2020-06-24T01:51:11.146400Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: d2ab289294f5eaa175e6bc4ab5fb74b5ea013f6e
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

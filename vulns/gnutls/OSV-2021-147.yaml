@@ -3,12 +3,14 @@ summary: Use-of-uninitialized-value in gnutls_ocsp_resp_get_status
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=1492
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   gnutls_ocsp_resp_get_status
   gnutls_ocsp_resp_import
   _start
-modified: '2021-06-21T06:56:22.261361Z'
+  ```
+modified: '2022-04-13T03:04:35.607327Z'
 published: '2021-01-13T21:56:29.997Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 73988c65e9e8d6563fe4c7e45602c0248ca56c6c
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

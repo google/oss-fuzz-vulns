@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in Exiv2::getULong
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=45993
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   Exiv2::getULong
   Exiv2::Internal::isValidBoxFileType
   Exiv2::Jp2Image::readMetadata
-modified: '2022-03-26T00:00:34.484395Z'
+  ```
+modified: '2022-04-13T03:04:39.315882Z'
 published: '2022-03-26T00:00:34.484159Z'
 references:
 - type: REPORT

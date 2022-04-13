@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in run_arm_filter
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15431
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   run_arm_filter
   run_filter
   apply_filters
-modified: '2021-06-21T06:56:26.693299Z'
+  ```
+modified: '2022-04-13T03:04:41.211464Z'
 published: '2020-07-01T00:00:12.210263Z'
 references:
 - type: REPORT

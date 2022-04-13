@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in stringProcess
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=43535
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   stringProcess
   tVariantCreateExt
   tVariantCreate
-modified: '2022-01-13T00:01:03.930183Z'
+  ```
+modified: '2022-04-13T03:04:30.692300Z'
 published: '2022-01-13T00:01:03.929984Z'
 references:
 - type: REPORT

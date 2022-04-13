@@ -3,12 +3,14 @@ summary: Heap-use-after-free in perfetto::trace_processor::SliceTracker::GetStac
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=41226
 
+  ```
   Crash type: Heap-use-after-free READ 8
   Crash state:
   perfetto::trace_processor::SliceTracker::GetStackHash
   perfetto::trace_processor::SliceTracker::StartSlice
   perfetto::trace_processor::SliceTracker::Scoped
-modified: '2021-11-22T00:00:36.355522Z'
+  ```
+modified: '2022-04-13T03:04:42.003237Z'
 published: '2021-11-22T00:00:36.355325Z'
 references:
 - type: REPORT

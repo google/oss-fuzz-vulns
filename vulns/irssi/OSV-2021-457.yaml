@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in unescape_tag
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31491
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   unescape_tag
   irc_parse_message_tags
   irc_server_event_tags
-modified: '2021-06-21T06:56:21.354474Z'
+  ```
+modified: '2022-04-13T03:04:33.983701Z'
 published: '2021-03-01T00:00:00.960970Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 4c069f5c8f3b63d8ba8556ba8292e1f5972508d6
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

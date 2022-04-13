@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in diagnosticInfoOrder
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=39741
 
+  ```
   Crash type: Heap-buffer-overflow READ 8
   Crash state:
   diagnosticInfoOrder
   structureOrder
   UA_order
-modified: '2021-10-10T00:01:34.859714Z'
+  ```
+modified: '2022-04-13T03:04:41.309026Z'
 published: '2021-10-10T00:01:34.859517Z'
 references:
 - type: REPORT

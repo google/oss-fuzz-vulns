@@ -4,12 +4,14 @@ summary: Heap-buffer-overflow in std::__1::basic_string<char, std::__1::char_tra
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=41582
 
+  ```
   Crash type: Heap-buffer-overflow READ {*}
   Crash state:
   std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<ch
   void Assimp::Logger::warn<char const
   Assimp::NDOImporter::InternReadFile
-modified: '2022-03-20T00:05:33.031973Z'
+  ```
+modified: '2022-04-13T03:04:42.639546Z'
 published: '2021-12-03T00:00:36.651134Z'
 references:
 - type: REPORT

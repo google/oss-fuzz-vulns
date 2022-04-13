@@ -3,12 +3,14 @@ summary: Heap-use-after-free in cb_stdout_flush
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=45251
 
+  ```
   Crash type: Heap-use-after-free READ {*}
   Crash state:
   cb_stdout_flush
   output_pre_cb_flush
   flb-it-fuzz-filter_stdout_fuzzer_OSSFUZZ
-modified: '2022-03-07T00:01:53.429602Z'
+  ```
+modified: '2022-04-13T03:04:38.208453Z'
 published: '2022-03-07T00:01:53.429306Z'
 references:
 - type: REPORT

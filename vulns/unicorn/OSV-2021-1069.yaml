@@ -3,10 +3,12 @@ summary: Segv on unknown address in helper_uc_tracecode
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=36616
 
+  ```
   Crash type: Segv on unknown address
   Crash state:
   helper_uc_tracecode
-modified: '2021-07-29T00:00:26.940658Z'
+  ```
+modified: '2022-04-13T03:04:39.153136Z'
 published: '2021-07-29T00:00:26.940432Z'
 references:
 - type: REPORT

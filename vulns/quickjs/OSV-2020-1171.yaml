@@ -3,12 +3,14 @@ summary: Heap-use-after-free in JS_ReadObjectRec
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21532
 
+  ```
   Crash type: Heap-use-after-free READ 4
   Crash state:
   JS_ReadObjectRec
   JS_ReadObject
   fuzz_compile.c
-modified: '2021-06-23T06:29:53.732647Z'
+  ```
+modified: '2022-04-13T03:04:41.243346Z'
 published: '2020-07-22T21:49:53.004112Z'
 references:
 - type: REPORT

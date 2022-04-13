@@ -3,12 +3,14 @@ summary: Stack-buffer-overflow in ot::Cli::Interpreter::ProcessService
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=12642
 
+  ```
   Crash type: Stack-buffer-overflow WRITE {*}
   Crash state:
   ot::Cli::Interpreter::ProcessService
   ot::Cli::Interpreter::ProcessLine
   ot::Cli::Uart::ProcessCommand
-modified: '2021-06-21T06:56:25.134145Z'
+  ```
+modified: '2022-04-13T03:04:39.040405Z'
 published: '2020-07-01T00:00:11.530819Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 249bc598748ad08a98b08995698669613594e54b
   ecosystem_specific:
     severity: HIGH
+  versions: []

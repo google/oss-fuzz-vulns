@@ -3,12 +3,14 @@ summary: Stack-buffer-overflow in LoadVoice
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=44527
 
+  ```
   Crash type: Stack-buffer-overflow READ {*}
   Crash state:
   LoadVoice
   LoadVoiceVariant
   SpeakNextClause
-modified: '2022-02-10T00:01:38.135656Z'
+  ```
+modified: '2022-04-13T03:04:34.254583Z'
 published: '2022-02-10T00:01:38.135452Z'
 references:
 - type: REPORT

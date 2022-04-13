@@ -3,12 +3,14 @@ summary: Stack-buffer-overflow in rijndaelSetupEncrypt
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21329
 
+  ```
   Crash type: Stack-buffer-overflow READ 1
   Crash state:
   rijndaelSetupEncrypt
   rijndaelSetupDecrypt
   aes_decrypt
-modified: '2021-06-21T06:56:25.399744Z'
+  ```
+modified: '2022-04-13T03:04:39.441974Z'
 published: '2020-09-18T00:00:33.966162Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 399ce5bb2d5c839786e79c641c00b8205e47dd4a
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

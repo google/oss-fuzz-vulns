@@ -3,12 +3,14 @@ summary: UNKNOWN READ in std::__1::pair<unsigned int, void*> uWS::HttpParser::fe
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=28216
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   std::__1::pair<unsigned int, void*> uWS::HttpParser::fenceAndConsumePostPadded<0
   uWS::HttpParser::consumePostPadded
   std::__1::__function::__func<LLVMFuzzerTestOneInput::$_0, std::__1::allocator<LL
-modified: '2021-06-21T06:56:26.534507Z'
+  ```
+modified: '2022-04-13T03:04:40.965864Z'
 published: '2020-12-04T00:00:11.822761Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: e30217e787fbd52cc74f6c61b08c2425f56df48e
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

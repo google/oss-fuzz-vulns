@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in fr_dns_label_to_value_box
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=39689
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   fr_dns_label_to_value_box
   decode_value_trampoline
   fr_struct_from_network
-modified: '2021-10-09T00:00:09.054394Z'
+  ```
+modified: '2022-04-13T03:04:40.120596Z'
 published: '2021-10-09T00:00:09.054154Z'
 references:
 - type: REPORT

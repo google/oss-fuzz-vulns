@@ -3,12 +3,14 @@ summary: Heap-use-after-free in zend_std_get_property_ptr_ptr
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=43988
 
+  ```
   Crash type: Heap-use-after-free READ 8
   Crash state:
   zend_std_get_property_ptr_ptr
   zend_fetch_property_address
   ZEND_FETCH_OBJ_W_SPEC_CV_CONST_HANDLER
-modified: '2022-01-24T00:01:39.877066Z'
+  ```
+modified: '2022-04-13T03:04:33.651611Z'
 published: '2022-01-24T00:01:39.876775Z'
 references:
 - type: REPORT

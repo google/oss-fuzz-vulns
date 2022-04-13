@@ -3,12 +3,14 @@ summary: Stack-buffer-overflow in XCFImageFormat::loadTileRLE
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=33742
 
+  ```
   Crash type: Stack-buffer-overflow WRITE 1
   Crash state:
   XCFImageFormat::loadTileRLE
   XCFImageFormat::loadLevel
   XCFImageFormat::loadHierarchy
-modified: '2021-06-23T06:31:02.361979Z'
+  ```
+modified: '2022-04-13T03:04:42.517182Z'
 published: '2021-04-28T00:00:28.555303Z'
 references:
 - type: REPORT

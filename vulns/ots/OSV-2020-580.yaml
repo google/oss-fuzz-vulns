@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in ots::OpenTypeSTAT::Serialize
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=12840
 
+  ```
   Crash type: Heap-buffer-overflow READ 2
   Crash state:
   ots::OpenTypeSTAT::Serialize
   ProcessGeneric
   ProcessTTF
-modified: '2021-06-23T06:25:29.624324Z'
+  ```
+modified: '2022-04-13T03:04:32.769242Z'
 published: '2020-07-01T00:00:18.191041Z'
 references:
 - type: REPORT
@@ -26,5 +28,5 @@ affected:
   versions:
   - v7.1.8
   ecosystem_specific:
-    severity: MEDIUM
     introduced_range: cad0b4f9405d03ddf801f977f2f65892192ad047:560a0fb259120f3fb6c2aec532ccea3fcd4d873a
+    severity: MEDIUM

@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in blosc_run_decompression_with_context
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31585
 
+  ```
   Crash type: Heap-buffer-overflow READ 4
   Crash state:
   blosc_run_decompression_with_context
   blosc2_decompress_ctx
   frame_decompress_chunk
-modified: '2021-06-21T06:56:25.980584Z'
+  ```
+modified: '2022-04-13T03:04:40.301856Z'
 published: '2021-03-03T00:01:05.956215Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 4f6d42ab4b25e781dad94c5324dab8a4dbb702ad
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

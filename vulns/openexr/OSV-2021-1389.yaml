@@ -3,12 +3,14 @@ summary: Negative-size-param in Imf_3_1::memstream_read
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=39329
 
+  ```
   Crash type: Negative-size-param
   Crash state:
   Imf_3_1::memstream_read
   dispatch_read
   exr_read_scanline_chunk_info
-modified: '2021-09-28T00:00:34.073522Z'
+  ```
+modified: '2022-04-13T03:04:37.161933Z'
 published: '2021-09-28T00:00:34.073331Z'
 references:
 - type: REPORT

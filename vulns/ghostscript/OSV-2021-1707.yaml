@@ -3,12 +3,14 @@ summary: Negative-size-param in general_endcidrange_func
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42479
 
+  ```
   Crash type: Negative-size-param
   Crash state:
   general_endcidrange_func
   cmap_endcidrange_func
   pdfi_pscript_interpret
-modified: '2021-12-17T00:00:30.513321Z'
+  ```
+modified: '2022-04-13T03:04:34.412270Z'
 published: '2021-12-17T00:00:30.513115Z'
 references:
 - type: REPORT

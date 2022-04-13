@@ -3,12 +3,14 @@ summary: Global-buffer-overflow in InStringSymbol
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42227
 
+  ```
   Crash type: Global-buffer-overflow WRITE {*}
   Crash state:
   InStringSymbol
   InSymbol
   ParseIT8
-modified: '2021-12-13T00:01:45.106067Z'
+  ```
+modified: '2022-04-13T03:04:33.902662Z'
 published: '2021-12-13T00:01:45.105861Z'
 references:
 - type: REPORT

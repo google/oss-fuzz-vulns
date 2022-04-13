@@ -3,12 +3,14 @@ summary: UNKNOWN READ in gx_restrict_Pattern
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=43354
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   gx_restrict_Pattern
   gs_setcolor
   pdfi_gs_setrgbcolor
-modified: '2022-01-07T00:02:01.271028Z'
+  ```
+modified: '2022-04-13T03:04:34.575775Z'
 published: '2022-01-07T00:02:01.270812Z'
 references:
 - type: REPORT

@@ -3,12 +3,14 @@ summary: Use-of-uninitialized-value in pcap_filter_with_aux_data
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22220
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   pcap_filter_with_aux_data
   pcap_filter
   pcap_offline_filter
-modified: '2021-07-14T00:05:05.017869Z'
+  ```
+modified: '2022-04-13T03:04:38.730766Z'
 published: '2020-07-14T05:37:43.627443Z'
 references:
 - type: REPORT

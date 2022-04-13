@@ -3,12 +3,14 @@ summary: UNKNOWN READ in state_VLC_dec::load_bytes
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=39046
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   state_VLC_dec::load_bytes
   state_VLC_dec::state_VLC_dec
   htj2k_decode
-modified: '2021-10-21T00:07:25.326032Z'
+  ```
+modified: '2022-04-13T03:04:39.517865Z'
 published: '2021-09-22T00:00:11.187759Z'
 references:
 - type: REPORT

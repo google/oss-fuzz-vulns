@@ -3,12 +3,14 @@ summary: Heap-use-after-free in pdfi_cspace_free_callback
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=43904
 
+  ```
   Crash type: Heap-use-after-free READ 8
   Crash state:
   pdfi_cspace_free_callback
   gs_cspace_final
   alloc_restore_step_in
-modified: '2022-04-02T00:18:18.851461Z'
+  ```
+modified: '2022-04-13T03:04:34.459257Z'
 published: '2022-01-22T00:00:41.413569Z'
 references:
 - type: REPORT

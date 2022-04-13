@@ -3,12 +3,14 @@ summary: Heap-use-after-free in OT::CoverageFormat1::intersected_coverage_glyphs
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=44257
 
+  ```
   Crash type: Heap-use-after-free READ 4
   Crash state:
   OT::CoverageFormat1::intersected_coverage_glyphs
   OT::ChainContextFormat3::closure
   OT::hb_closure_context_t::return_t OT::SubstLookupSubTable::dispatch<OT::hb_clos
-modified: '2022-02-02T00:00:17.029682Z'
+  ```
+modified: '2022-04-13T03:04:33.208408Z'
 published: '2022-02-02T00:00:17.029431Z'
 references:
 - type: REPORT

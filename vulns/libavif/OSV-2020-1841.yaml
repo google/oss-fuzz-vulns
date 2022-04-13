@@ -3,12 +3,14 @@ summary: UNKNOWN READ in avifRWDataSet
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25911
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   avifRWDataSet
   avifParseItemDataBox
   avifParseMetaBox
-modified: '2021-06-21T06:56:27.275808Z'
+  ```
+modified: '2022-04-13T03:04:41.887078Z'
 published: '2020-09-25T00:00:39.705135Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: b86bc3c8296f7d37cacf674ee031851cd513b8e4
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

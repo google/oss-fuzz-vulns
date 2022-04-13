@@ -3,12 +3,14 @@ summary: UNKNOWN READ in insert_free_size
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42917
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   insert_free_size
   chunk_free_object
   pdfi_pscript_stack_finit
-modified: '2021-12-25T00:01:31.295672Z'
+  ```
+modified: '2022-04-13T03:04:34.631378Z'
 published: '2021-12-25T00:01:31.295369Z'
 references:
 - type: REPORT

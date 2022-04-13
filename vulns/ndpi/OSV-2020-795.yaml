@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in ndpi_search_setup_iax
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23831
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   ndpi_search_setup_iax
   ndpi_search_iax
   check_ndpi_udp_flow_func
-modified: '2021-06-21T06:56:22.830771Z'
+  ```
+modified: '2022-04-13T03:04:36.303801Z'
 published: '2020-07-14T05:37:37.217885Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 05dfae6430d34d66ea8e43084f5c12a9f3a6dc5d
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in mu::ParserBase::ParseCmdCodeBulk
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24164
 
+  ```
   Crash type: Heap-buffer-overflow READ 8
   Crash state:
   mu::ParserBase::ParseCmdCodeBulk
   mu::ParserBase::ParseString
   set_eval_fuzzer.cc
-modified: '2021-06-23T06:24:47.001140Z'
+  ```
+modified: '2022-04-13T03:04:30.741147Z'
 published: '2020-07-22T21:50:07.104906Z'
 references:
 - type: REPORT

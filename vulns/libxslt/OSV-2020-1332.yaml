@@ -3,12 +3,14 @@ summary: Index-out-of-bounds in xsltSetAttrVTsegment
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14273
 
+  ```
   Crash type: Index-out-of-bounds
   Crash state:
   xsltSetAttrVTsegment
   xsltCompileAttr
   xsltParseTemplateContent
-modified: '2021-06-23T06:25:30.996117Z'
+  ```
+modified: '2022-04-13T03:04:33.752444Z'
 published: '2020-07-22T21:50:07.164634Z'
 references:
 - type: REPORT
@@ -24,6 +26,7 @@ affected:
     - introduced: 7f56378a73af8a61da78b8091f0e317316cee300
     - fixed: 01f8317dd8ffe2141fae0348edd9fd51037ee41b
   ecosystem_specific:
+    introduced_range: unknown:7f56378a73af8a61da78b8091f0e317316cee300
     severity: MEDIUM
     fixed_range: 7f56378a73af8a61da78b8091f0e317316cee300:01f8317dd8ffe2141fae0348edd9fd51037ee41b
-    introduced_range: unknown:7f56378a73af8a61da78b8091f0e317316cee300
+  versions: []

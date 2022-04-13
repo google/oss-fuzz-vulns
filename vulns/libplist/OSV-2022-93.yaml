@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in strtol
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=44089
 
+  ```
   Crash type: Heap-buffer-overflow READ 2
   Crash state:
   strtol
   parse_primitive
   plist_from_json
-modified: '2022-01-27T00:00:50.546428Z'
+  ```
+modified: '2022-04-13T03:04:39.865451Z'
 published: '2022-01-27T00:00:50.546211Z'
 references:
 - type: REPORT

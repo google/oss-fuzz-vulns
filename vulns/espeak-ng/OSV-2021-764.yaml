@@ -3,12 +3,14 @@ summary: Stack-buffer-overflow in TranslateNumber_1
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34285
 
+  ```
   Crash type: Stack-buffer-overflow READ 1
   Crash state:
   TranslateNumber_1
   TranslateNumber
   TranslateWord3
-modified: '2021-05-15T00:00:11.842140Z'
+  ```
+modified: '2022-04-13T03:04:34.216007Z'
 published: '2021-05-15T00:00:11.841899Z'
 references:
 - type: REPORT

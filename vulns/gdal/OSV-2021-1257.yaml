@@ -3,12 +3,14 @@ summary: Stack-buffer-overflow in GRIBDataset::Open
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=38610
 
+  ```
   Crash type: Stack-buffer-overflow READ 1
   Crash state:
   GRIBDataset::Open
   GDALOpenEx
   GDALOpen
-modified: '2021-09-16T00:16:24.866223Z'
+  ```
+modified: '2022-04-13T03:04:42.155223Z'
 published: '2021-09-14T00:01:43.346984Z'
 references:
 - type: REPORT

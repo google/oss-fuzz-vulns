@@ -3,12 +3,14 @@ summary: UNKNOWN READ in _gcry_aes_cbc_enc
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=6336
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   _gcry_aes_cbc_enc
   cmac_write
   _gcry_cipher_cmac_authenticate
-modified: '2021-06-23T06:27:51.532475Z'
+  ```
+modified: '2022-04-13T03:04:37.786149Z'
 published: '2021-01-15T00:00:29.537688Z'
 references:
 - type: REPORT
@@ -28,5 +30,5 @@ affected:
   - v2.5.1rc0
   - wireshark-2.5.0
   ecosystem_specific:
-    severity: MEDIUM
     introduced_range: 8fbad3dd56b45874463f9d811b80006314413c0e:95c50e3dd766e919953def30f65ba5496226a660
+    severity: MEDIUM

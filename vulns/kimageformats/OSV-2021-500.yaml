@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in put_epel_8_fallback
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31738
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   put_epel_8_fallback
   acceleration_functions::put_hevc_epel
   void mc_chroma<unsigned short>
-modified: '2022-04-10T00:03:50.600845Z'
+  ```
+modified: '2022-04-13T03:04:42.559323Z'
 published: '2021-03-06T00:01:09.514607Z'
 references:
 - type: REPORT

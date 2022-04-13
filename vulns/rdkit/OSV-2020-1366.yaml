@@ -3,12 +3,14 @@ summary: Heap-use-after-free in RDKit::SubstanceGroup::addParentAtomWithBookmark
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24406
 
+  ```
   Crash type: Heap-use-after-free READ 4
   Crash state:
   RDKit::SubstanceGroup::addParentAtomWithBookmark
   RDKit::SGroupParsing::ParseSGroupV2000VectorDataLine
   RDKit::ParseMolBlockProperties
-modified: '2021-06-21T06:56:27.014Z'
+  ```
+modified: '2022-04-13T03:04:41.526756Z'
 published: '2020-07-28T00:00:03.076252Z'
 references:
 - type: REPORT

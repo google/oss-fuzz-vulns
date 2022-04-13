@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in str_table_entry
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13956
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   str_table_entry
   parse_elf_header_64_be
   elf__load
-modified: '2021-06-21T06:56:27.548894Z'
+  ```
+modified: '2022-04-13T03:04:42.182726Z'
 published: '2020-07-01T00:00:13.107969Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 462ffd339228ac57d98e8034239d122e4303f653
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

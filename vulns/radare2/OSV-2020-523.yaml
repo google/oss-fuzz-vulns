@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in check_buffer
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15003
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   check_buffer
   r_bin_get_binplugin_by_buffer
   get_plugin_from_buffer
-modified: '2021-06-21T06:56:23.053067Z'
+  ```
+modified: '2022-04-13T03:04:36.545958Z'
 published: '2020-07-01T00:00:14.409944Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 0e7b37601a2011c9b11112566e2d8f1b2611986d
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

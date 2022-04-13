@@ -3,12 +3,14 @@ summary: Use-of-uninitialized-value in decimate_dsd_run
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=19928
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   decimate_dsd_run
   WavpackUnpackSamples
   WavpackSeekSample64
-modified: '2021-06-23T06:30:57.341010Z'
+  ```
+modified: '2022-04-13T03:04:42.381416Z'
 published: '2020-07-22T21:49:39.626805Z'
 references:
 - type: REPORT
@@ -25,5 +27,6 @@ affected:
     - fixed: db878b73e76c14842e99ad05aed9338d495703c0
   ecosystem_specific:
     fixed_range: 348ff60b489e731ffd046f837500313499623e3e:db878b73e76c14842e99ad05aed9338d495703c0
-    introduced_range: unknown:348ff60b489e731ffd046f837500313499623e3e
     severity: MEDIUM
+    introduced_range: unknown:348ff60b489e731ffd046f837500313499623e3e
+  versions: []

@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in json_object_new_string
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=37017
 
+  ```
   Crash type: Heap-buffer-overflow READ {*}
   Crash state:
   json_object_new_string
   cli_jsonstr
   cli_hwp5header
-modified: '2021-08-11T00:00:07.476792Z'
+  ```
+modified: '2022-04-13T03:04:39.374295Z'
 published: '2021-08-11T00:00:07.476563Z'
 references:
 - type: REPORT
@@ -26,3 +28,4 @@ affected:
     - fixed: e6eff8908828eed0b99d5340f9c2cccfafc208ae
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in BEInt<unsigned short, 2>::operator unsigned sho
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=10356
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   BEInt<unsigned short, 2>::operator unsigned short
   OT::BinSearchHeader::operator unsigned int
   OT::OffsetTable::find_table_index
-modified: '2021-06-21T06:56:20.735344Z'
+  ```
+modified: '2022-04-13T03:04:33.169999Z'
 published: '2021-01-13T00:00:50.445326Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: f8ccb545c47abe8f0f4ed318ff7b5bf176913893
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

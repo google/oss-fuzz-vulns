@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in sc_pkcs15emu_oberthur_add_pubkey
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=32202
 
+  ```
   Crash type: Heap-buffer-overflow READ {*}
   Crash state:
   sc_pkcs15emu_oberthur_add_pubkey
   sc_oberthur_parse_publicinfo
   sc_pkcs15emu_oberthur_init
-modified: '2021-06-21T06:56:27.127408Z'
+  ```
+modified: '2022-04-13T03:04:41.644691Z'
 published: '2021-03-20T00:01:07.086960Z'
 references:
 - type: REPORT

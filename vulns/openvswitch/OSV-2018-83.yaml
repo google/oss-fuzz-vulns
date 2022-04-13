@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in encode_LEARN
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=12328
 
+  ```
   Crash type: Heap-buffer-overflow READ {*}
   Crash state:
   encode_LEARN
   ofpacts_put_openflow_actions
   ofputil_encode_flow_mod
-modified: '2021-06-21T06:56:26.362517Z'
+  ```
+modified: '2022-04-13T03:04:40.745583Z'
 published: '2021-01-13T00:00:39.130781Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 8ed9df00b6e4b8b3aadba4b552c27c0382d3508b
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

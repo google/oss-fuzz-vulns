@@ -4,12 +4,14 @@ summary: Stack-buffer-overflow in std::__1::basic_string<char, std::__1::char_tr
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15159
 
+  ```
   Crash type: Stack-buffer-overflow READ {*}
   Crash state:
   std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<ch
   nccfdriver::attrf
   nccfdriver::getCFVersion
-modified: '2021-06-23T07:04:18.378007Z'
+  ```
+modified: '2022-04-13T03:04:42.135767Z'
 published: '2020-07-01T00:00:02.845124Z'
 references:
 - type: REPORT
@@ -39,5 +41,5 @@ affected:
   - v3.0.4
   - v3.0.4RC1
   ecosystem_specific:
-    introduced_range: 289b796e365ac26020548410d6ae16022bc80718:f956a3c6ff43a877a63ee1199c5e0092c11a8c31
     severity: MEDIUM
+    introduced_range: 289b796e365ac26020548410d6ae16022bc80718:f956a3c6ff43a877a63ee1199c5e0092c11a8c31

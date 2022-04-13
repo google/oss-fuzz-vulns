@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in r_str_utf16_to_utf8
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=10487
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   r_str_utf16_to_utf8
   sections
   r_bin_object_set_items
-modified: '2021-06-21T06:56:23.059245Z'
+  ```
+modified: '2022-04-13T03:04:36.551157Z'
 published: '2021-01-13T00:01:22.627214Z'
 references:
 - type: REPORT

@@ -4,12 +4,14 @@ summary: Heap-buffer-overflow in OT::UnsizedArrayOf<OT::IntType<unsigned char, 1
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14637
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   OT::UnsizedArrayOf<OT::IntType<unsigned char, 1u> >::copy
   bool OT::OffsetTo<OT::UnsizedArrayOf<OT::IntType<unsigned char, 1u> >, OT::IntTy
   OT::NameRecord::copy
-modified: '2021-06-21T06:56:20.691280Z'
+  ```
+modified: '2022-04-13T03:04:33.125806Z'
 published: '2020-07-01T00:00:21.866519Z'
 references:
 - type: REPORT
@@ -26,3 +28,4 @@ affected:
     - fixed: 503748d8a80dd5db450c8c4dc109f2b97049d989
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

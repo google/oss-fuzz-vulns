@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in fp_to_unsigned_bin_at_pos
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26295
 
+  ```
   Crash type: Heap-buffer-overflow WRITE 1
   Crash state:
   fp_to_unsigned_bin_at_pos
   fp_to_unsigned_bin
   mp_to_unsigned_bin
-modified: '2021-06-23T06:26:01.354050Z'
+  ```
+modified: '2022-04-13T03:04:35.729439Z'
 published: '2020-10-14T00:00:10.194970Z'
 references:
 - type: REPORT
@@ -24,5 +26,6 @@ affected:
     - introduced: 83cdd1c314af5d6326470254b3cdbb9d85182348
     - fixed: ebde736ee742e2152268289b2d286077ff951ea7
   ecosystem_specific:
-    introduced_range: deaf3b4b40d26663191d085557fbeb8cafa420ae:881657782478cef4a1527847bb2c4cd427bd6c99
     severity: HIGH
+    introduced_range: deaf3b4b40d26663191d085557fbeb8cafa420ae:881657782478cef4a1527847bb2c4cd427bd6c99
+  versions: []

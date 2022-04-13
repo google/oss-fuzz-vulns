@@ -3,12 +3,14 @@ summary: Use-of-uninitialized-value in json_string_unescape
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11473
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   json_string_unescape
   ofputil_table_from_string
   parse_ofp_str__
-modified: '2021-06-23T06:29:25.727165Z'
+  ```
+modified: '2022-04-13T03:04:40.726264Z'
 published: '2021-01-13T00:00:58.327572Z'
 references:
 - type: REPORT
@@ -24,5 +26,6 @@ affected:
     - introduced: 581d3bec7b8c714a98744b0b5f48dd7c7c4db037
     - fixed: 40fc4d8c8e24b8f15464607941d0c1835eed93a6
   ecosystem_specific:
-    fixed_range: a32bab26e5d83e97624f265dad7ef3d07c8e0741:40fc4d8c8e24b8f15464607941d0c1835eed93a6
     severity: MEDIUM
+    fixed_range: a32bab26e5d83e97624f265dad7ef3d07c8e0741:40fc4d8c8e24b8f15464607941d0c1835eed93a6
+  versions: []

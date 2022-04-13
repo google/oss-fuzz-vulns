@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in ff_hevc_put_hevc_epel_pixels_8_sse
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13568
 
+  ```
   Crash type: Heap-buffer-overflow READ 16
   Crash state:
   ff_hevc_put_hevc_epel_pixels_8_sse
   acceleration_functions::put_hevc_epel
   void mc_chroma<unsigned short>
-modified: '2021-06-23T06:25:11.850938Z'
+  ```
+modified: '2022-04-13T03:04:32.413194Z'
 published: '2020-07-22T21:49:50.461909Z'
 references:
 - type: REPORT
@@ -27,5 +29,5 @@ affected:
   - v1.5.0
   - v1.5.1
   ecosystem_specific:
-    severity: MEDIUM
     introduced_range: unknown:0acdca433f338f1f378f6f104e72f5f95c4f8568
+    severity: MEDIUM

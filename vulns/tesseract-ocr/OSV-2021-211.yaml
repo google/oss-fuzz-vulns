@@ -3,12 +3,14 @@ summary: Heap-use-after-free in __libcpp_strpbrk
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29698
 
+  ```
   Crash type: Heap-use-after-free READ 2
   Crash state:
   __libcpp_strpbrk
   strpbrk
   tesseract::Tesseract::one_ell_conflict
-modified: '2021-06-21T06:56:19.230851Z'
+  ```
+modified: '2022-04-13T03:04:31.471880Z'
 published: '2021-01-19T00:00:01.795893Z'
 references:
 - type: REPORT

@@ -3,12 +3,14 @@ summary: UNKNOWN READ in blosc_run_decompression_with_context
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31611
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   blosc_run_decompression_with_context
   blosc2_decompress_ctx
   frame_decompress_chunk
-modified: '2021-06-21T06:56:25.962548Z'
+  ```
+modified: '2022-04-13T03:04:40.286519Z'
 published: '2021-03-04T00:02:22.600849Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: cf02dfc992ae5544c92f69befc7093aacf168e77
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

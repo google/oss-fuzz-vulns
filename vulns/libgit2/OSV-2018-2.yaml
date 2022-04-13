@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in git_buf_vprintf
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11004
 
+  ```
   Crash type: Heap-buffer-overflow READ 13
   Crash state:
   git_buf_vprintf
   giterr_set
   git__strntol32
-modified: '2021-06-21T06:56:21.961203Z'
+  ```
+modified: '2022-04-13T03:04:35.213787Z'
 published: '2021-01-12T06:20:27.447382Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: bea65980c7a42e34edfafbdc40b199ba7b2a564e
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

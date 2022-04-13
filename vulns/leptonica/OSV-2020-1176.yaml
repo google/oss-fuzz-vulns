@@ -3,12 +3,14 @@ summary: Use-of-uninitialized-value in put4bitbwtile
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21434
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   put4bitbwtile
   gtStripContig
   TIFFRGBAImageGet
-modified: '2021-06-23T06:25:27.843631Z'
+  ```
+modified: '2022-04-13T03:04:32.628091Z'
 published: '2020-07-22T21:49:53.886180Z'
 references:
 - type: REPORT
@@ -27,6 +29,6 @@ affected:
   - 1.78.0
   - 1.79.0
   ecosystem_specific:
-    introduced_range: unknown:7dac4b18eab74e44dd4b03f0539352acbc986f1a
     fixed_range: 7274a4a0cd69d20f4e8eec524ef3482852cb340d:ad50d81027f7e7716f2b9ab28b7aa476eae2d741
+    introduced_range: unknown:7dac4b18eab74e44dd4b03f0539352acbc986f1a
     severity: MEDIUM

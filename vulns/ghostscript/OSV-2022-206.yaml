@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in spgetcc
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=45049
 
+  ```
   Crash type: Heap-buffer-overflow READ {*}
   Crash state:
   spgetcc
   gs_scan_token
   gs_interpret
-modified: '2022-03-11T00:19:44.150538Z'
+  ```
+modified: '2022-04-13T03:04:34.680498Z'
 published: '2022-02-27T00:02:01.721420Z'
 references:
 - type: REPORT

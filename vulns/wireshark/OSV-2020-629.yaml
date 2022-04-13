@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in bytestring_to_str
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=19070
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   bytestring_to_str
   dissect_NUMBER_acf_lin
   call_dissector_work
-modified: '2021-06-21T06:56:24.104842Z'
+  ```
+modified: '2022-04-13T03:04:37.877254Z'
 published: '2020-07-01T00:00:21.373324Z'
 references:
 - type: REPORT

@@ -3,12 +3,14 @@ summary: Stack-buffer-overflow in getoid
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=36962
 
+  ```
   Crash type: Stack-buffer-overflow READ 8
   Crash state:
   getoid
   parse_objectid
   parse_asntype
-modified: '2021-08-09T00:00:17.111143Z'
+  ```
+modified: '2022-04-13T03:04:35.821769Z'
 published: '2021-08-09T00:00:17.110921Z'
 references:
 - type: REPORT
@@ -26,3 +28,4 @@ affected:
   ecosystem_specific:
     fixed_range: 1cb8393797913cad028124eb765560abe196fd43:7274e4b843683ed7bc657988227e8d65469b8829
     severity: MEDIUM
+  versions: []

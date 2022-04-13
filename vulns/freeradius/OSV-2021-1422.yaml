@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in fr_dns_label_uncompressed_length
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=39657
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   fr_dns_label_uncompressed_length
   decode_value_trampoline
   fr_struct_from_network
-modified: '2021-10-08T00:00:31.482584Z'
+  ```
+modified: '2022-04-13T03:04:40.125934Z'
 published: '2021-10-08T00:00:31.482387Z'
 references:
 - type: REPORT

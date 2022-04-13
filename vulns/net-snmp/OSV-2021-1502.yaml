@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in asn_realloc_rbuild_string
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=40431
 
+  ```
   Crash type: Heap-buffer-overflow READ {*}
   Crash state:
   asn_realloc_rbuild_string
   snmpv3_scopedPDU_header_realloc_rbuild
   snmpv3_packet_realloc_rbuild
-modified: '2021-10-29T00:01:25.958828Z'
+  ```
+modified: '2022-04-13T03:04:35.795166Z'
 published: '2021-10-29T00:01:25.958637Z'
 references:
 - type: REPORT

@@ -3,12 +3,14 @@ summary: Use-of-uninitialized-value in H5F_addr_decode_len
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=37536
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   H5F_addr_decode_len
   H5VL_native_token_to_addr
   H5VL__native_object_open
-modified: '2021-08-25T00:01:19.023752Z'
+  ```
+modified: '2022-04-13T03:04:43.193034Z'
 published: '2021-08-25T00:01:19.023498Z'
 references:
 - type: REPORT

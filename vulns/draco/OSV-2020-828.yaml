@@ -3,12 +3,14 @@ summary: Heap-use-after-free in draco::Metadata::AddSubMetadata
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24059
 
+  ```
   Crash type: Heap-use-after-free READ 8
   Crash state:
   draco::Metadata::AddSubMetadata
   draco::MetadataDecoder::DecodeMetadata
   draco::MetadataDecoder::DecodeGeometryMetadata
-modified: '2022-02-19T19:30:52.473052Z'
+  ```
+modified: '2022-04-13T03:04:42.797365Z'
 published: '2020-07-14T05:37:49.784283Z'
 references:
 - type: REPORT
@@ -30,5 +32,5 @@ affected:
   - 1.5.1
   - 1.5.2
   ecosystem_specific:
-    severity: HIGH
     introduced_range: aef4bfbd61798ecc21d94c873b679fbdeaf92462:79601d2d060be52e673a82ed1c46f4666eb28255
+    severity: HIGH

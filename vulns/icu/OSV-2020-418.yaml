@@ -3,12 +3,14 @@ summary: Use-of-uninitialized-value in isMatchAtCPBoundary
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15505
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   isMatchAtCPBoundary
   u_strFindFirst_64
   icu_64::UnicodeString::indexOf
-modified: '2021-06-21T06:56:21.392140Z'
+  ```
+modified: '2022-04-13T03:04:34.083961Z'
 published: '2020-07-01T00:00:08.369511Z'
 references:
 - type: REPORT

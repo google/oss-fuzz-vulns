@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in TTF::be_u16
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42934
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   TTF::be_u16
   TTF::Cmap::subtable
   TTF::Font::try_load_from_offset
-modified: '2021-12-26T00:00:42.254449Z'
+  ```
+modified: '2022-04-13T03:04:32.144802Z'
 published: '2021-12-26T00:00:42.254250Z'
 references:
 - type: REPORT

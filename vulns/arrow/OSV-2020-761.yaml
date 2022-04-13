@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in arrow::ConcatenateBuffers
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23848
 
+  ```
   Crash type: Heap-buffer-overflow READ {*}
   Crash state:
   arrow::ConcatenateBuffers
   arrow::ConcatenateImpl::Visit
   arrow::Status arrow::VisitTypeInline<arrow::ConcatenateImpl>
-modified: '2021-06-21T06:56:19.506853Z'
+  ```
+modified: '2022-04-13T03:04:31.812566Z'
 published: '2020-07-09T00:00:21.470735Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: cb2cf2f2a4714d161535837d90b025feef5bca5c
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

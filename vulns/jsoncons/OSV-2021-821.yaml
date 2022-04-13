@@ -3,12 +3,14 @@ summary: Stack-buffer-overflow in jsoncons::bson::decimal128_to_chars
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34816
 
+  ```
   Crash type: Stack-buffer-overflow WRITE 6
   Crash state:
   jsoncons::bson::decimal128_to_chars
   jsoncons::bson::basic_bson_parser<jsoncons::binary_stream_source, std::__1::allo
   jsoncons::bson::basic_bson_parser<jsoncons::binary_stream_source, std::__1::allo
-modified: '2021-06-21T06:56:25.509696Z'
+  ```
+modified: '2022-04-13T03:04:39.615002Z'
 published: '2021-06-02T00:00:55.316399Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: cebedbefd441489cdf6a33d238ed3e3ed7be9958
   ecosystem_specific:
     severity: HIGH
+  versions: []

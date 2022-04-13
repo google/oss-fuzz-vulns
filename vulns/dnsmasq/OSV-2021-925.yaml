@@ -3,12 +3,14 @@ summary: Stack-buffer-overflow in is_same_net6
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=35889
 
+  ```
   Crash type: Stack-buffer-overflow READ {*}
   Crash state:
   is_same_net6
   dhcp6_maybe_relay
   dhcp6_maybe_relay
-modified: '2021-07-08T00:00:18.003680Z'
+  ```
+modified: '2022-04-13T03:04:31.198379Z'
 published: '2021-07-08T00:00:18.003362Z'
 references:
 - type: REPORT

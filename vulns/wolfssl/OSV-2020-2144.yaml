@@ -3,11 +3,13 @@ summary: Heap-buffer-overflow in wolfSSH_accept
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=27298
 
+  ```
   Crash type: Heap-buffer-overflow READ 5
   Crash state:
   wolfSSH_accept
   server.c
-modified: '2021-06-23T06:25:57.740137Z'
+  ```
+modified: '2022-04-13T03:04:35.656508Z'
 published: '2020-11-10T00:00:23.166211Z'
 references:
 - type: REPORT
@@ -25,6 +27,6 @@ affected:
   versions:
   - v4.6.0-stable
   ecosystem_specific:
-    severity: MEDIUM
     introduced_range: deaf3b4b40d26663191d085557fbeb8cafa420ae:881657782478cef4a1527847bb2c4cd427bd6c99
     fixed_range: 6e0e507dad67f62f148e8124903172de817802f9:a1e083b5b13a681003e564351a55634d2f56d03a
+    severity: MEDIUM

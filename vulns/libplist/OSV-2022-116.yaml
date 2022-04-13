@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in parse_object
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=44301
 
+  ```
   Crash type: Heap-buffer-overflow READ 4
   Crash state:
   parse_object
   parse_object
   parse_object
-modified: '2022-02-04T00:00:28.846236Z'
+  ```
+modified: '2022-04-13T03:04:39.876645Z'
 published: '2022-02-04T00:00:28.846023Z'
 references:
 - type: REPORT

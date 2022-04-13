@@ -3,12 +3,14 @@ summary: Use-of-uninitialized-value in cf2_glyphpath_lineTo
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=5782
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   cf2_glyphpath_lineTo
   cf2_interpT2CharString
   cf2_getGlyphOutline
-modified: '2021-06-23T06:25:05.942584Z'
+  ```
+modified: '2022-04-13T03:04:31.404902Z'
 published: '2021-01-15T00:00:09.629777Z'
 references:
 - type: REPORT
@@ -27,6 +29,6 @@ affected:
   - 1.13.0
   - 1.13.0-rc1
   ecosystem_specific:
-    introduced_range: 9086386263154498dcb18c96f1e1630903b21a3c:d9bc8c6f7fb2e3ec7035bebaaee0edcf59287705
     severity: MEDIUM
+    introduced_range: 9086386263154498dcb18c96f1e1630903b21a3c:d9bc8c6f7fb2e3ec7035bebaaee0edcf59287705
     fixed_range: 319f9ba70bd8de9514d6308259190fd4e3fc74f0:c7f89b2484ef1448670dd862e417d395131da7f8

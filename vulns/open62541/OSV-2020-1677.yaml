@@ -3,12 +3,14 @@ summary: Heap-use-after-free in UA_NodeMap_delete
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25245
 
+  ```
   Crash type: Heap-use-after-free READ 4
   Crash state:
   UA_NodeMap_delete
   UA_Server_new
   fuzz_binary_message.cc
-modified: '2021-06-21T06:56:26.914414Z'
+  ```
+modified: '2022-04-13T03:04:41.410030Z'
 published: '2020-08-30T00:00:18.780626Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 46a618acfbb3a71f3ccabcbc26cd620636300868
   ecosystem_specific:
     severity: HIGH
+  versions: []

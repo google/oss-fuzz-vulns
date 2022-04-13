@@ -3,12 +3,14 @@ summary: UNKNOWN READ in ucl_array_append
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=37885
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   ucl_array_append
   ucl_object_copy_internal
   ucl_object_copy
-modified: '2021-09-01T00:00:25.788757Z'
+  ```
+modified: '2022-04-13T03:04:41.758531Z'
 published: '2021-09-01T00:00:25.788562Z'
 references:
 - type: REPORT

@@ -3,12 +3,14 @@ summary: Stack-buffer-overflow in ot::IsValidUtf8String
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=28682
 
+  ```
   Crash type: Stack-buffer-overflow READ 1
   Crash state:
   ot::IsValidUtf8String
   ot::MeshCoP::NetworkNameTlv::IsValid
   ot::MeshCoP::Tlv::IsValid
-modified: '2021-06-21T06:56:25.047718Z'
+  ```
+modified: '2022-04-13T03:04:38.967076Z'
 published: '2020-12-16T00:00:05.494996Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: b3fc7bc453034aa61cd27d5208f08ead9c7789e0
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

@@ -3,12 +3,14 @@ summary: UNKNOWN READ in UA_Server_initNS0
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23137
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   UA_Server_initNS0
   UA_Server_newWithConfig
   UA_Server_new
-modified: '2021-12-04T00:01:20.593606Z'
+  ```
+modified: '2022-04-13T03:04:41.420681Z'
 published: '2021-12-04T00:01:20.593406Z'
 references:
 - type: REPORT

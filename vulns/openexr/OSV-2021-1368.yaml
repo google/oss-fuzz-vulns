@@ -3,12 +3,14 @@ summary: Stack-buffer-overflow in dispatch_print_error
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=39196
 
+  ```
   Crash type: Stack-buffer-overflow READ {*}
   Crash state:
   dispatch_print_error
   internal_exr_parse_header
   exr_start_read
-modified: '2021-09-25T00:00:17.537253Z'
+  ```
+modified: '2022-04-13T03:04:37.172493Z'
 published: '2021-09-25T00:00:17.537038Z'
 references:
 - type: REPORT

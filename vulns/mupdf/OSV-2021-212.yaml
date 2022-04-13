@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in pdf_get_xref_entry
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29728
 
+  ```
   Crash type: Heap-buffer-overflow READ 4
   Crash state:
   pdf_get_xref_entry
   pdf_cache_object
   pdf_resolve_indirect
-modified: '2021-06-21T06:56:19.048363Z'
+  ```
+modified: '2022-04-13T03:04:31.283755Z'
 published: '2021-01-20T00:00:22.336840Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: e27ceb2b0e64b9a56ba79d844ea96553d87dc113
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

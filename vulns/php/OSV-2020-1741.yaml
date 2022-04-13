@@ -3,12 +3,14 @@ summary: Heap-use-after-free in zend_assign_to_variable
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25601
 
+  ```
   Crash type: Heap-use-after-free READ 1
   Crash state:
   zend_assign_to_variable
   zend_std_write_property
   ZEND_ASSIGN_OBJ_SPEC_CV_CONST_OP_DATA_VAR_HANDLER
-modified: '2021-06-23T02:17:05.736909Z'
+  ```
+modified: '2022-04-13T03:04:33.349367Z'
 published: '2020-09-13T00:00:46.091782Z'
 references:
 - type: REPORT

@@ -3,12 +3,14 @@ summary: UNKNOWN READ in validate_past_idat
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14935
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   validate_past_idat
   spng_decode_image
   spng_read_fuzzer.cc
-modified: '2021-06-21T06:56:21.057300Z'
+  ```
+modified: '2022-04-13T03:04:33.672637Z'
 published: '2020-07-01T00:00:04.694618Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 94c6198a1bb93fa6cd209085b817c1e64272abb4
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

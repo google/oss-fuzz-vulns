@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in r_bin_mdmp_get_mem_info
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=10222
 
+  ```
   Crash type: Heap-buffer-overflow READ 8
   Crash state:
   r_bin_mdmp_get_mem_info
   r_bin_mdmp_get_srwx
   sections
-modified: '2021-06-21T06:56:23.128163Z'
+  ```
+modified: '2022-04-13T03:04:36.615630Z'
 published: '2021-01-13T00:00:11.314581Z'
 references:
 - type: REPORT

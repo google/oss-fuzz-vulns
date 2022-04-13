@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in jxl::N_SCALAR::SingleFromSingle
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=36490
 
+  ```
   Crash type: Heap-buffer-overflow WRITE 4
   Crash state:
   jxl::N_SCALAR::SingleFromSingle
   jxl::ThreadPool::SequentialRunnerStatic
   jxl::ModularFrameDecoder::ModularImageToDecodedRect
-modified: '2021-07-25T00:00:29.072152Z'
+  ```
+modified: '2022-04-13T03:04:41.864953Z'
 published: '2021-07-25T00:00:29.071944Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 48e2a0ba25a7bac9ec510c48e322e5199de0583e
   ecosystem_specific:
     severity: HIGH
+  versions: []

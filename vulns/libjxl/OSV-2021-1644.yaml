@@ -3,12 +3,14 @@ summary: Container-overflow in void jxl::CopyImageTo<int>
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=41608
 
+  ```
   Crash type: Container-overflow READ 4
   Crash state:
   void jxl::CopyImageTo<int>
   jxl::ModularFrameDecoder::DecodeGroup
   jxl::FrameDecoder::ProcessACGroup
-modified: '2021-12-04T00:00:20.702689Z'
+  ```
+modified: '2022-04-13T03:04:41.848813Z'
 published: '2021-12-04T00:00:20.702471Z'
 references:
 - type: REPORT

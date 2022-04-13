@@ -3,12 +3,14 @@ summary: Stack-buffer-overflow in tvb_get_ipv4_addr_with_prefix_len
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21718
 
+  ```
   Crash type: Stack-buffer-overflow READ 4
   Crash state:
   tvb_get_ipv4_addr_with_prefix_len
   dissect_lsp_ext_ip_reachability_clv
   isis_dissect_clvs
-modified: '2021-06-21T06:56:24.035425Z'
+  ```
+modified: '2022-04-13T03:04:37.791677Z'
 published: '2020-06-24T01:51:18.143719Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 6d25a1062d092fdae62defeb7ed83a0807fe238a
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

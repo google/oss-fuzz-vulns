@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in http_process_user_agent
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30389
 
+  ```
   Crash type: Heap-buffer-overflow READ {*}
   Crash state:
   http_process_user_agent
   process_chlo
   ndpi_search_quic
-modified: '2021-07-27T00:04:06.521120Z'
+  ```
+modified: '2022-04-13T03:04:36.134800Z'
 published: '2021-02-08T00:00:02.197314Z'
 references:
 - type: REPORT

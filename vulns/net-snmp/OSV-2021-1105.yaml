@@ -3,11 +3,13 @@ summary: Heap-buffer-overflow in read_config
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=36908
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   read_config
   snmp_config_fuzzer.c
-modified: '2021-08-07T00:03:09.707216Z'
+  ```
+modified: '2022-04-13T03:04:35.827176Z'
 published: '2021-08-07T00:03:09.706987Z'
 references:
 - type: REPORT

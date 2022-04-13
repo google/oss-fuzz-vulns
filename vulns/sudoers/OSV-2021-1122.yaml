@@ -3,12 +3,14 @@ summary: Heap-double-free in sudoers_gc_run
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=37056
 
+  ```
   Crash type: Heap-double-free
   Crash state:
   sudoers_gc_run
   fuzz_policy.c
   resolve_editor
-modified: '2021-08-12T00:01:58.667926Z'
+  ```
+modified: '2022-04-13T03:04:39.321318Z'
 published: '2021-08-12T00:01:58.667720Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: ffdd7920cd98b495a42775bb35012ec259e33a46
   ecosystem_specific:
     severity: HIGH
+  versions: []

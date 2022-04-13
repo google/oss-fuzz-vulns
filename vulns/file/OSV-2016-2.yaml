@@ -3,12 +3,14 @@ summary: UNKNOWN READ in file_regexec
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=283
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   file_regexec
   magiccheck
   match
-modified: '2021-06-21T06:56:18.741120Z'
+  ```
+modified: '2022-04-13T03:04:30.860493Z'
 published: '2021-01-13T21:57:40.577225Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 8c16c9e3c9a82f859c3ed47c34c14eea6a3d7b18
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

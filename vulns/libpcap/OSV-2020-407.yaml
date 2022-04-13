@@ -3,12 +3,14 @@ summary: Heap-double-free in opt_cleanup
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15178
 
+  ```
   Crash type: Heap-double-free
   Crash state:
   opt_cleanup
   bpf_optimize
   pcap_compile
-modified: '2021-06-21T06:56:24.789345Z'
+  ```
+modified: '2022-04-13T03:04:38.725198Z'
 published: '2020-07-01T00:00:07.757751Z'
 references:
 - type: REPORT
@@ -27,3 +29,4 @@ affected:
     - fixed: de978afd02065649222988833063998b5e0dfc84
   ecosystem_specific:
     severity: HIGH
+  versions: []

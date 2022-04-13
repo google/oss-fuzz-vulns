@@ -3,12 +3,14 @@ summary: UNKNOWN READ in gx_dc_default_fill_masked
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=44855
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   gx_dc_default_fill_masked
   copy_portrait
   image_render_simple
-modified: '2022-02-24T00:19:04.037532Z'
+  ```
+modified: '2022-04-13T03:04:34.838399Z'
 published: '2022-02-21T00:00:26.966993Z'
 references:
 - type: REPORT

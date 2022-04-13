@@ -3,12 +3,14 @@ summary: Heap-use-after-free in __xmlRaiseError
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23120
 
+  ```
   Crash type: Heap-use-after-free READ 2
   Crash state:
   __xmlRaiseError
   xmlErrValidNode
   xmlValidateRef
-modified: '2021-06-21T06:56:25.711931Z'
+  ```
+modified: '2022-04-13T03:04:39.922037Z'
 published: '2020-06-24T01:51:13.556119Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 2af3c2a8b974cb5896cd3beb74561ba979de9f34
   ecosystem_specific:
     severity: HIGH
+  versions: []

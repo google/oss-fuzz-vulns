@@ -3,12 +3,14 @@ summary: Dynamic-stack-buffer-overflow in CryptDigestUpdateInt
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=36074
 
+  ```
   Crash type: Dynamic-stack-buffer-overflow WRITE 8
   Crash state:
   CryptDigestUpdateInt
   ComputeCpHash
   CheckCommandAudit
-modified: '2021-07-13T00:01:14.992723Z'
+  ```
+modified: '2022-04-13T03:04:35.884858Z'
 published: '2021-07-13T00:01:14.992472Z'
 references:
 - type: REPORT
@@ -31,3 +33,4 @@ affected:
     - fixed: f640123f1ffbe70fdce87ee1b9f75684553af99c
   ecosystem_specific:
     severity: null
+  versions: []

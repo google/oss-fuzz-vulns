@@ -3,12 +3,14 @@ summary: UNKNOWN READ in mprint
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=144
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   mprint
   match
   file_softmagic
-modified: '2021-06-21T06:56:18.670052Z'
+  ```
+modified: '2022-04-13T03:04:30.786861Z'
 published: '2021-01-15T05:22:02.070395Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 8a667072e65294efa6a7b7d9a3bc417e145e0aea
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

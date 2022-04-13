@@ -3,12 +3,14 @@ summary: UNKNOWN WRITE in draco::DepthFirstTraverser<draco::CornerTable, draco::
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=37864
 
+  ```
   Crash type: UNKNOWN WRITE
   Crash state:
   draco::DepthFirstTraverser<draco::CornerTable, draco::MeshAttributeIndicesEncodi
   draco::MeshTraversalSequencer<draco::DepthFirstTraverser<draco::CornerTable, dra
   draco::SequentialAttributeDecodersController::DecodeAttributes
-modified: '2022-02-18T00:05:39.643266Z'
+  ```
+modified: '2022-04-13T03:04:42.773416Z'
 published: '2021-09-01T00:00:21.323146Z'
 references:
 - type: REPORT

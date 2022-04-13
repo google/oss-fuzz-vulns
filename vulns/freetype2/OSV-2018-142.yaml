@@ -3,12 +3,14 @@ summary: UNKNOWN READ in cff_decoder_parse_charstrings
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11157
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   cff_decoder_parse_charstrings
   cff_slot_load
   FT_Load_Glyph
-modified: '2021-06-23T06:25:40.983570Z'
+  ```
+modified: '2022-04-13T03:04:34.888420Z'
 published: '2021-01-13T00:01:01.333392Z'
 references:
 - type: REPORT
@@ -25,5 +27,6 @@ affected:
     - fixed: f3e8aba79174d95cfb222a0af5ce377cc22ecc1a
   ecosystem_specific:
     introduced_range: f926f1a2f4dbbc61fcae96da71ba65de5280b94d:4fa3193a6e42c6e65bea0698c85d5a4792e2351c
-    fixed_range: e9d2381ddc89ee53cfeb051429628f59416ba7e7:f3e8aba79174d95cfb222a0af5ce377cc22ecc1a
     severity: MEDIUM
+    fixed_range: e9d2381ddc89ee53cfeb051429628f59416ba7e7:f3e8aba79174d95cfb222a0af5ce377cc22ecc1a
+  versions: []

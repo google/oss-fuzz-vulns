@@ -3,12 +3,14 @@ summary: Stack-buffer-overflow in ot::Coap::Message::AppendUintOption
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30831
 
+  ```
   Crash type: Stack-buffer-overflow READ 1
   Crash state:
   ot::Coap::Message::AppendUintOption
   ot::Coap::Message::AppendBlockOption
   otCoapMessageAppendBlock2Option
-modified: '2021-06-21T06:56:25.023263Z'
+  ```
+modified: '2022-04-13T03:04:38.946438Z'
 published: '2021-02-13T00:00:59.547439Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 159efe77c07abbd38f3afc754d6a644f1a14d64e
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

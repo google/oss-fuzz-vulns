@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in pn_buffer_append
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=40748
 
+  ```
   Crash type: Heap-buffer-overflow READ {*}
   Crash state:
   pn_buffer_append
   pni_data_intern_node
   pni_decoder_decode_value
-modified: '2021-11-07T00:01:30.451349Z'
+  ```
+modified: '2022-04-13T03:04:36.943886Z'
 published: '2021-11-07T00:01:30.451093Z'
 references:
 - type: REPORT

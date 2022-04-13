@@ -3,12 +3,14 @@ summary: Stack-buffer-overflow in pgp_parse_algo_attr_blob
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=19548
 
+  ```
   Crash type: Stack-buffer-overflow WRITE 4
   Crash state:
   pgp_parse_algo_attr_blob
   pgp_get_card_features
   pgp_init
-modified: '2021-06-23T06:30:09.471057Z'
+  ```
+modified: '2022-04-13T03:04:41.592346Z'
 published: '2020-07-22T00:00:28.643216Z'
 references:
 - type: REPORT
@@ -26,5 +28,5 @@ affected:
   versions:
   - 0.20.0-rc4
   ecosystem_specific:
-    severity: HIGH
     introduced_range: unknown:c4dcac5de77825e79763c9cd5f58aa8bde22f0b2
+    severity: HIGH

@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in rawspeed::VC5Decompressor::Wavelet::HighPassBan
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11429
 
+  ```
   Crash type: Heap-buffer-overflow WRITE 2
   Crash state:
   rawspeed::VC5Decompressor::Wavelet::HighPassBand::decode
   rawspeed::VC5Decompressor::decode
   VC5Decompressor.cpp
-modified: '2021-06-21T06:56:22.957009Z'
+  ```
+modified: '2022-04-13T03:04:36.459254Z'
 published: '2021-01-13T00:01:11.945159Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 0bcf3488a4989c2724f0c4383401b0d0dcfc3dcc
   ecosystem_specific:
     severity: HIGH
+  versions: []

@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in ihevcd_ctb_boundary_strength_islice
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=16842
 
+  ```
   Crash type: Heap-buffer-overflow WRITE 1
   Crash state:
   ihevcd_ctb_boundary_strength_islice
   ihevcd_parse_slice_data
   ihevcd_nal_unit
-modified: '2021-06-23T06:24:50.415397Z'
+  ```
+modified: '2022-04-13T03:04:30.966929Z'
 published: '2020-07-22T21:49:57.563500Z'
 references:
 - type: REPORT
@@ -24,5 +26,6 @@ affected:
     - introduced: 5e7dc4732015717682ac0da1431fe3e656aea617
     - fixed: 67e394c9f3743b8ce41f11736136319efcef6d3d
   ecosystem_specific:
-    severity: HIGH
     introduced_range: unknown:5e7dc4732015717682ac0da1431fe3e656aea617
+    severity: HIGH
+  versions: []

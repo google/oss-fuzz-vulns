@@ -3,12 +3,14 @@ summary: Stack-use-after-return in insert_pin
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=28383
 
+  ```
   Crash type: Stack-use-after-return READ 1
   Crash state:
   insert_pin
   detect_idkey
   sc_pkcs15emu_tcos_init_ex
-modified: '2021-03-09T04:49:05.746134Z'
+  ```
+modified: '2022-04-13T03:04:41.554103Z'
 published: '2020-12-10T00:00:49.551956Z'
 references:
 - type: REPORT

@@ -3,10 +3,12 @@ summary: UNKNOWN READ in [stack]
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=10445
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   [stack]
-modified: '2021-06-23T06:28:31.842823Z'
+  ```
+modified: '2022-04-13T03:04:39.103639Z'
 published: '2021-01-13T00:01:14.415295Z'
 references:
 - type: REPORT
@@ -26,5 +28,5 @@ affected:
   - 1.0.2-rc2
   - 1.0.2-rc3
   ecosystem_specific:
-    severity: MEDIUM
     fixed_range: cc5bfbc8440b176e7254181d2967771e736fd830:414c230b59643cf15914b7374a3b72ef00a07038
+    severity: MEDIUM

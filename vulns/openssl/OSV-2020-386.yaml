@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in OPENSSL_strlcpy
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=16107
 
+  ```
   Crash type: Heap-buffer-overflow WRITE 1
   Crash state:
   OPENSSL_strlcpy
   OPENSSL_strlcat
   ERR_add_error_vdata
-modified: '2021-06-21T06:56:24.808074Z'
+  ```
+modified: '2022-04-13T03:04:38.742191Z'
 published: '2020-07-01T00:00:06.528477Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 036913b1076da41f257c640a5e6230476c647eff
   ecosystem_specific:
     severity: HIGH
+  versions: []

@@ -3,12 +3,14 @@ summary: UNKNOWN WRITE in mips_release_mips
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13852
 
+  ```
   Crash type: UNKNOWN WRITE
   Crash state:
   mips_release_mips
   uc_close
   fuzz_emu_mips_32be.c
-modified: '2021-06-23T06:28:31.868487Z'
+  ```
+modified: '2022-04-13T03:04:39.204639Z'
 published: '2020-07-22T21:49:50.620818Z'
 references:
 - type: REPORT
@@ -26,5 +28,5 @@ affected:
   versions:
   - 1.0.2-rc1
   ecosystem_specific:
-    introduced_range: unknown:12bcf3bea093ed733904d3993bbdba0c2572a497
     severity: HIGH
+    introduced_range: unknown:12bcf3bea093ed733904d3993bbdba0c2572a497

@@ -3,12 +3,14 @@ summary: Segv on unknown address in gp_semaphore_close
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=43984
 
+  ```
   Crash type: Segv on unknown address
   Crash state:
   gp_semaphore_close
   gx_semaphore_free
   icc_linkcache_finalize
-modified: '2022-01-24T00:00:12.635889Z'
+  ```
+modified: '2022-04-13T03:04:34.603551Z'
 published: '2022-01-24T00:00:12.635637Z'
 references:
 - type: REPORT

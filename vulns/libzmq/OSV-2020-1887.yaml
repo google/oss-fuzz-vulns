@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in zmq::tcp_read
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26042
 
+  ```
   Crash type: Heap-buffer-overflow WRITE {*}
   Crash state:
   zmq::tcp_read
   zmq::stream_engine_base_t::read
   zmq::stream_engine_base_t::in_event_internal
-modified: '2021-06-21T06:56:20.361386Z'
+  ```
+modified: '2022-04-13T03:04:32.787196Z'
 published: '2020-09-30T00:00:04.296094Z'
 references:
 - type: REPORT

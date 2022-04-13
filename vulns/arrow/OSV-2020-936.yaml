@@ -3,12 +3,14 @@ summary: Global-buffer-overflow in arrow::Status arrow::VisitArrayInline<arrow::
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20181
 
+  ```
   Crash type: Global-buffer-overflow READ 1
   Crash state:
   arrow::Status arrow::VisitArrayInline<arrow::internal::ValidateArrayDataVisitor>
   arrow::internal::ValidateArrayData
   arrow::RecordBatch::ValidateFull
-modified: '2021-06-23T06:25:11.696643Z'
+  ```
+modified: '2022-04-13T03:04:31.981199Z'
 published: '2020-07-22T00:00:15.065970Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: a6307cc8a0127a4852b7d3d2c20940a094eed0d6
   ecosystem_specific:
     introduced_range: unknown:ccdc4b076cbd5fb03e1cbc42292def871d2b6035
+  versions: []

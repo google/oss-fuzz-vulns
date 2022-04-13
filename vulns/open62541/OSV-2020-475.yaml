@@ -3,12 +3,14 @@ summary: Heap-use-after-free in String_clear
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14487
 
+  ```
   Crash type: Heap-use-after-free READ 8
   Crash state:
   String_clear
   clearStructure
   UA_Array_delete
-modified: '2021-06-21T06:56:26.791594Z'
+  ```
+modified: '2022-04-13T03:04:41.298842Z'
 published: '2020-07-01T00:00:11.741452Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: b9225f9f936a48af66c4aeb7e3fd1684e4d3b88b
   ecosystem_specific:
     severity: HIGH
+  versions: []

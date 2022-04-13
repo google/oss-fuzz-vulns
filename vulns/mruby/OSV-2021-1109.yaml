@@ -3,12 +3,14 @@ summary: UNKNOWN READ in mrb_check_frozen
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=36930
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   mrb_check_frozen
   mrb_str_modify_keep_ascii
   mrb_str_modify
-modified: '2021-08-08T00:01:08.046173Z'
+  ```
+modified: '2022-04-13T03:04:39.672881Z'
 published: '2021-08-08T00:01:08.045960Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 06f49b3f84e799f08a80b16054eda916f2d32819
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

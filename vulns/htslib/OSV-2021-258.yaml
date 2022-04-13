@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in unstripe
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30087
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   unstripe
   arith_uncompress_to
   arith_decode
-modified: '2021-06-21T06:56:19.915721Z'
+  ```
+modified: '2022-04-13T03:04:32.279738Z'
 published: '2021-02-01T00:00:12.032478Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 6568f13bf7b36f280a8f0e4777fe05c85a9dcf06
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

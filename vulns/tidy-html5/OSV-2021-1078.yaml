@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in prvTidygrowStack
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=36694
 
+  ```
   Crash type: Heap-buffer-overflow WRITE {*}
   Crash state:
   prvTidygrowStack
   prvTidypush
   CleanSpaces
-modified: '2021-07-31T00:00:35.042348Z'
+  ```
+modified: '2022-04-13T03:04:32.589780Z'
 published: '2021-07-31T00:00:35.042139Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 5f98ccd606310bf6b96e5acd8c5048e359f44908
   ecosystem_specific:
     severity: HIGH
+  versions: []

@@ -3,12 +3,14 @@ summary: Stack-buffer-overflow in nc4_get_att
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15143
 
+  ```
   Crash type: Stack-buffer-overflow WRITE {*}
   Crash state:
   nc4_get_att
   nc4_get_att_tc
   nc_get_att_text
-modified: '2021-06-23T07:06:14.719393Z'
+  ```
+modified: '2022-04-13T03:04:42.107611Z'
 published: '2020-07-01T00:00:06.889412Z'
 references:
 - type: REPORT
@@ -38,5 +40,5 @@ affected:
   - v3.0.4
   - v3.0.4RC1
   ecosystem_specific:
-    introduced_range: 289b796e365ac26020548410d6ae16022bc80718:f956a3c6ff43a877a63ee1199c5e0092c11a8c31
     severity: HIGH
+    introduced_range: 289b796e365ac26020548410d6ae16022bc80718:f956a3c6ff43a877a63ee1199c5e0092c11a8c31

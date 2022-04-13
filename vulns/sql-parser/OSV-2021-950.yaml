@@ -3,12 +3,14 @@ summary: Dynamic-stack-buffer-overflow in std::__1::__wrap_iter<hsql::Expr**>::_
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=35944
 
+  ```
   Crash type: Dynamic-stack-buffer-overflow WRITE 8
   Crash state:
   std::__1::__wrap_iter<hsql::Expr**>::__wrap_iter
   std::__1::vector<hsql::Expr*, std::__1::allocator<hsql::Expr*> >::__make_iter
   std::__1::vector<hsql::Expr*, std::__1::allocator<hsql::Expr*> >::begin
-modified: '2021-07-13T00:04:17.372533Z'
+  ```
+modified: '2022-04-13T03:04:30.774343Z'
 published: '2021-07-10T00:01:24.552480Z'
 references:
 - type: REPORT
@@ -27,3 +29,4 @@ affected:
   ecosystem_specific:
     introduced_range: 55f9dd2a6d23ddb26d8371961b9a51beb79fc5fb:6c9bb2e4d6d312553185feea2173acc7fe0dabdb
     severity: null
+  versions: []

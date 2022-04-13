@@ -3,12 +3,14 @@ summary: UNKNOWN READ in local_add_lv
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18030
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   local_add_lv
   yyparse
   mrb_parser_parse
-modified: '2021-06-21T06:56:25.620338Z'
+  ```
+modified: '2022-04-13T03:04:39.775341Z'
 published: '2020-07-01T00:00:17.111214Z'
 references:
 - type: REPORT

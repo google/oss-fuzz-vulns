@@ -3,12 +3,14 @@ summary: Index-out-of-bounds in DHT::get_hv_rbg
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23870
 
+  ```
   Crash type: Index-out-of-bounds
   Crash state:
   DHT::get_hv_rbg
   DHT::make_hv_dline
   DHT::make_hv_dirs
-modified: '2021-06-21T06:56:25.796824Z'
+  ```
+modified: '2022-04-13T03:04:40.005059Z'
 published: '2020-07-28T00:00:14.188786Z'
 references:
 - type: REPORT

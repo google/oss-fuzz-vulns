@@ -3,12 +3,14 @@ summary: Heap-use-after-free in dwg_free_TABLEGEOMETRY_private
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34377
 
+  ```
   Crash type: Heap-use-after-free READ 8
   Crash state:
   dwg_free_TABLEGEOMETRY_private
   dwg_free_TABLEGEOMETRY
   dwg_free_variable_no_class
-modified: '2022-04-12T00:08:24.038406Z'
+  ```
+modified: '2022-04-13T03:04:41.098950Z'
 published: '2021-05-18T00:00:05.875957Z'
 references:
 - type: REPORT

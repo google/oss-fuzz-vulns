@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in loop
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=5251
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   loop
   loop
   ftp_pl_insert_finfo
-modified: '2021-06-23T06:31:20.229091Z'
+  ```
+modified: '2022-04-13T03:04:42.857296Z'
 published: '2021-01-13T00:01:25.235178Z'
 references:
 - type: REPORT
@@ -26,5 +28,5 @@ affected:
   versions:
   - curl-7_57_0
   ecosystem_specific:
-    severity: MEDIUM
     introduced_range: 1cb4f5d6e8e470638759a48ba99fda230089712f:e240a546a7ac2fa7956adb664b8c40c4dee4f82b
+    severity: MEDIUM

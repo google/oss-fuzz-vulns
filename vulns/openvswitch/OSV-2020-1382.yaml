@@ -3,12 +3,14 @@ summary: Use-of-uninitialized-value in nl_attr_is_valid
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=19890
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   nl_attr_is_valid
   format_odp_tun_attr
   format_odp_key_attr__
-modified: '2021-06-21T06:56:26.377586Z'
+  ```
+modified: '2022-04-13T03:04:40.757089Z'
 published: '2020-07-28T00:00:06.837707Z'
 references:
 - type: REPORT

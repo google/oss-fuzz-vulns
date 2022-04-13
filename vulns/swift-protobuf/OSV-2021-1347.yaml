@@ -4,12 +4,14 @@ summary: 'Invalid-free in generic specialization <Swift.Int> of Swift.Array.subs
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=39049
 
+  ```
   Crash type: Invalid-free
   Crash state:
   generic specialization <Swift.Int> of Swift.Array.subscript.getter :
   SwiftProtobuf.
   SwiftProtobuf.Google_Protobuf_Timestamp.decodeJSON
-modified: '2021-09-22T00:00:35.225114Z'
+  ```
+modified: '2022-04-13T03:04:35.872621Z'
 published: '2021-09-22T00:00:35.224651Z'
 references:
 - type: REPORT

@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in search_valid_dns
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21263
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   search_valid_dns
   ndpi_search_dns
   check_ndpi_udp_flow_func
-modified: '2021-06-23T06:26:04.945122Z'
+  ```
+modified: '2022-04-13T03:04:36.204911Z'
 published: '2020-06-24T01:51:16.532133Z'
 references:
 - type: REPORT
@@ -26,5 +28,5 @@ affected:
   versions:
   - '3.2'
   ecosystem_specific:
-    introduced_range: 2efc09a20e6503d99fe3d76fcc16b1892fb7c7ff:5c52c00ea4ad8afaebd5259bc53215a1ab41569f
     severity: MEDIUM
+    introduced_range: 2efc09a20e6503d99fe3d76fcc16b1892fb7c7ff:5c52c00ea4ad8afaebd5259bc53215a1ab41569f

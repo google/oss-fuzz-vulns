@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in arrow::internal::ValidateArrayImpl::Visit
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=41143
 
+  ```
   Crash type: Heap-buffer-overflow READ 4
   Crash state:
   arrow::internal::ValidateArrayImpl::Visit
   arrow::internal::ValidateArrayImpl::ValidateWithType
   arrow::internal::ValidateArrayImpl::Validate
-modified: '2021-11-20T00:00:17.805132Z'
+  ```
+modified: '2022-04-13T03:04:32.029669Z'
 published: '2021-11-20T00:00:17.804875Z'
 references:
 - type: REPORT

@@ -3,12 +3,14 @@ summary: Heap-use-after-free in int arrow::BitUtil::BitReader::GetBatch<short>
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20685
 
+  ```
   Crash type: Heap-use-after-free WRITE 2
   Crash state:
   int arrow::BitUtil::BitReader::GetBatch<short>
   parquet::LevelDecoder::Decode
   parquet::internal::TypedRecordReader<parquet::PhysicalType<
-modified: '2021-06-21T06:56:19.571401Z'
+  ```
+modified: '2022-04-13T03:04:31.872314Z'
 published: '2020-06-24T01:51:16.108113Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: d2ab289294f5eaa175e6bc4ab5fb74b5ea013f6e
   ecosystem_specific:
     severity: HIGH
+  versions: []

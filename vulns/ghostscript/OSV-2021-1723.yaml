@@ -3,12 +3,14 @@ summary: Global-buffer-overflow in ps_font_def_func
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42613
 
+  ```
   Crash type: Global-buffer-overflow READ {*}
   Crash state:
   ps_font_def_func
   pdfi_pscript_interpret
   pdfi_read_ps_font
-modified: '2021-12-20T00:00:48.321317Z'
+  ```
+modified: '2022-04-13T03:04:34.357718Z'
 published: '2021-12-20T00:00:48.321103Z'
 references:
 - type: REPORT

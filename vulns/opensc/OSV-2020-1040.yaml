@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in decode_bit_string
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=16615
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   decode_bit_string
   decode_bit_field
   asn1_decode_entry
-modified: '2021-06-23T06:30:09.523542Z'
+  ```
+modified: '2022-04-13T03:04:41.691566Z'
 published: '2020-07-22T21:49:41.688762Z'
 references:
 - type: REPORT
@@ -26,3 +28,4 @@ affected:
   ecosystem_specific:
     severity: MEDIUM
     introduced_range: unknown:b0241eefa1b47f1420456f5dbc43564d59961a54
+  versions: []

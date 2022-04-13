@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in ZSTD_decompressBlock_internal
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=36623
 
+  ```
   Crash type: Heap-buffer-overflow READ 4
   Crash state:
   ZSTD_decompressBlock_internal
   ZSTD_decompressMultiFrame
   ZSTD_decompressDCtx
-modified: '2022-04-11T00:04:37.682877Z'
+  ```
+modified: '2022-04-13T03:04:40.380641Z'
 published: '2021-07-29T00:01:10.187569Z'
 references:
 - type: REPORT

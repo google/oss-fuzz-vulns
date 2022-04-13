@@ -3,12 +3,14 @@ summary: Heap-use-after-free in zend_string_release
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=37695
 
+  ```
   Crash type: Heap-use-after-free READ 4
   Crash state:
   zend_string_release
   zend_closure_free_storage
   zend_objects_store_del
-modified: '2021-08-28T00:00:14.689946Z'
+  ```
+modified: '2022-04-13T03:04:33.395251Z'
 published: '2021-08-28T00:00:14.689674Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 2cc47a04df8bb5fb7bc638df677fe02c07263a91
   ecosystem_specific:
     severity: HIGH
+  versions: []

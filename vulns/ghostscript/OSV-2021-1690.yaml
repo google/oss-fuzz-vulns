@@ -3,12 +3,14 @@ summary: Global-buffer-overflow in search_table_1
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42266
 
+  ```
   Crash type: Global-buffer-overflow READ 1
   Crash state:
   search_table_1
   split_bogus_operator
   pdfi_interpret_stream_operator
-modified: '2021-12-14T00:01:39.477871Z'
+  ```
+modified: '2022-04-13T03:04:34.363246Z'
 published: '2021-12-14T00:01:39.477607Z'
 references:
 - type: REPORT

@@ -3,12 +3,14 @@ summary: Use-of-uninitialized-value in ndpi_parse_packet_line_info
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23058
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   ndpi_parse_packet_line_info
   ndpi_check_http_tcp
   ndpi_search_http_tcp
-modified: '2021-06-21T06:56:22.480647Z'
+  ```
+modified: '2022-04-13T03:04:35.934793Z'
 published: '2020-06-24T01:51:10.071847Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 38e4910636bd6273b62e0b195c9d45483c39cc1a
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

@@ -3,12 +3,14 @@ summary: Negative-size-param in parse_proxy_protocol_v2
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14455
 
+  ```
   Crash type: Negative-size-param
   Crash state:
   parse_proxy_protocol_v2
   parse_http_request
   fuzz_parse_http_request
-modified: '2021-03-09T04:49:05.824910Z'
+  ```
+modified: '2022-04-13T03:04:31.700929Z'
 published: '2020-07-01T00:00:02.608126Z'
 references:
 - type: REPORT
@@ -23,3 +25,4 @@ affected:
     events:
     - introduced: abf6eda654c8336e2ffe4e5c1a5179576da185c5
     - fixed: b506275b36827f194bc15d77bd6d2f8f7b3b935f
+  versions: []

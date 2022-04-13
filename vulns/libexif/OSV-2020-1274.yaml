@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in exif_entry_get_value
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14543
 
+  ```
   Crash type: Heap-buffer-overflow READ 7
   Crash state:
   exif_entry_get_value
   content_func
   exif_content_foreach_entry
-modified: '2021-06-23T06:29:25.770607Z'
+  ```
+modified: '2022-04-13T03:04:40.847318Z'
 published: '2020-07-22T21:50:02.388928Z'
 references:
 - type: REPORT
@@ -24,5 +26,6 @@ affected:
     - introduced: 3f35f94a93081ced2bc3c9112f820f5fdb200af0
     - fixed: f9bb9f263fb00f0603ecbefa8957cad24168cbff
   ecosystem_specific:
-    severity: MEDIUM
     introduced_range: unknown:3f35f94a93081ced2bc3c9112f820f5fdb200af0
+    severity: MEDIUM
+  versions: []

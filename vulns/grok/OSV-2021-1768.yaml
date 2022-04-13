@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in grk::GrkImage::color_esycc_to_rgb
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42958
 
+  ```
   Crash type: Heap-buffer-overflow READ 16
   Crash state:
   grk::GrkImage::color_esycc_to_rgb
   grk::GrkImage::colorConvert
   grk_decompress_fuzzer.cpp
-modified: '2021-12-27T00:01:47.612689Z'
+  ```
+modified: '2022-04-13T03:04:39.552004Z'
 published: '2021-12-27T00:01:47.612463Z'
 references:
 - type: REPORT

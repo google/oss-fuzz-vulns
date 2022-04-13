@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in sc_pkcs15emu_oberthur_add_cert
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31540
 
+  ```
   Crash type: Heap-buffer-overflow READ {*}
   Crash state:
   sc_pkcs15emu_oberthur_add_cert
   sc_oberthur_parse_publicinfo
   sc_pkcs15emu_oberthur_init
-modified: '2021-06-21T06:56:27.026920Z'
+  ```
+modified: '2022-04-13T03:04:41.537593Z'
 published: '2021-03-02T00:01:16.102524Z'
 references:
 - type: REPORT

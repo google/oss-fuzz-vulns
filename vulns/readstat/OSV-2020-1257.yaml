@@ -3,12 +3,14 @@ summary: Stack-buffer-overflow in readstat_convert
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=12579
 
+  ```
   Crash type: Stack-buffer-overflow WRITE 1
   Crash state:
   readstat_convert
   dta_handle_row
   dta_handle_rows
-modified: '2021-06-23T06:29:25.686526Z'
+  ```
+modified: '2022-04-13T03:04:40.651968Z'
 published: '2020-07-22T21:50:00.845495Z'
 references:
 - type: REPORT
@@ -26,3 +28,4 @@ affected:
   ecosystem_specific:
     introduced_range: unknown:d1bfd735515803800cb9708e3fca9e5c1e8e7a48
     severity: HIGH
+  versions: []

@@ -3,12 +3,14 @@ summary: Heap-use-after-free in archive_read_format_rar_read_data
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=44547
 
+  ```
   Crash type: Heap-use-after-free READ 4
   Crash state:
   archive_read_format_rar_read_data
   archive_read_data
   libarchive_fuzzer.cc
-modified: '2022-02-20T01:37:33.089301Z'
+  ```
+modified: '2022-04-13T03:04:41.195078Z'
 published: '2022-02-12T00:00:11.416771Z'
 references:
 - type: REPORT

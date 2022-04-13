@@ -3,12 +3,14 @@ summary: Heap-use-after-free in r_core_task_decref
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11359
 
+  ```
   Crash type: Heap-use-after-free READ 8
   Crash state:
   r_core_task_decref
   r_list_delete
   r_list_purge
-modified: '2021-06-21T06:56:23.134323Z'
+  ```
+modified: '2022-04-13T03:04:36.620847Z'
 published: '2021-01-13T00:01:20.948805Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 5783cf42c40aaed9b9180ae7069c7a60ea86dc45
   ecosystem_specific:
     severity: HIGH
+  versions: []

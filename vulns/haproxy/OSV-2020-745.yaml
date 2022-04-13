@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in memvprintf
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23715
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   memvprintf
   print_message
   ha_alert
-modified: '2021-06-21T06:56:18.803048Z'
+  ```
+modified: '2022-04-13T03:04:30.917892Z'
 published: '2020-07-04T00:00:02.054678Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 07d47060e0d99d0884440c3fa55ef2a338987769
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

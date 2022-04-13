@@ -3,12 +3,14 @@ summary: UNKNOWN READ in chunk_obj_alloc
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=43680
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   chunk_obj_alloc
   chunk_alloc_bytes
   cmap_endfbrange_func
-modified: '2022-01-17T00:01:26.622191Z'
+  ```
+modified: '2022-04-13T03:04:34.776233Z'
 published: '2022-01-17T00:01:26.621940Z'
 references:
 - type: REPORT

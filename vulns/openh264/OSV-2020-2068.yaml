@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in WelsDec::Update8x8RefIdx
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26328
 
+  ```
   Crash type: Heap-buffer-overflow WRITE 1
   Crash state:
   WelsDec::Update8x8RefIdx
   WelsDec::ParseInterBMotionInfoCabac
   WelsDec::WelsDecodeMbCabacBSliceBaseMode0
-modified: '2021-06-21T06:56:23.945408Z'
+  ```
+modified: '2022-04-13T03:04:37.662889Z'
 published: '2020-10-15T00:00:09.751849Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: b52786888ddce9d6bc06b7825ba9bffc65924e0c
   ecosystem_specific:
     severity: HIGH
+  versions: []

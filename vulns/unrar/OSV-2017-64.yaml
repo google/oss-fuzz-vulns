@@ -3,12 +3,14 @@ summary: Use-of-uninitialized-value in SetExtraInfo20
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=4408
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   SetExtraInfo20
   CmdExtract::ExtractCurrentFile
   CmdExtract::ExtractArchive
-modified: '2021-06-23T06:25:50.650741Z'
+  ```
+modified: '2022-04-13T03:04:35.311562Z'
 published: '2021-01-13T21:56:31.829117Z'
 references:
 - type: REPORT
@@ -30,6 +32,6 @@ affected:
   - 5.6.1.5
   - 5.6.1.7
   ecosystem_specific:
-    severity: MEDIUM
     introduced_range: 2a079823c708a637bc36e888180ebb96fdfba526:1d8ea7923dae7c8f136912b6bdca95dcb52e80bc
     fixed_range: 9866c9649507f177233ca96feefac8b12e36a91f:b676eae90fc9c620a214889ed040d356638a18f6
+    severity: MEDIUM

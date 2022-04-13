@@ -3,12 +3,14 @@ summary: UNKNOWN WRITE in Variant_encodeJson
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20578
 
+  ```
   Crash type: UNKNOWN WRITE
   Crash state:
   Variant_encodeJson
   Variant_encodeJson
   Variant_encodeJson
-modified: '2021-06-21T06:56:26.779286Z'
+  ```
+modified: '2022-04-13T03:04:41.288335Z'
 published: '2020-06-24T01:51:16.477749Z'
 references:
 - type: REPORT

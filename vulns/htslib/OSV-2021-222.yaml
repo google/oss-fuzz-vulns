@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in arith_uncompress_to
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29792
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   arith_uncompress_to
   cram_uncompress_block
   cram_read_SAM_hdr
-modified: '2021-06-21T06:56:19.934271Z'
+  ```
+modified: '2022-04-13T03:04:32.296206Z'
 published: '2021-01-23T00:01:01.932285Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: a01a139ac1fa365a688ec8734d62ef859a8bc416
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

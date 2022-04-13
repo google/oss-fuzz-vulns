@@ -3,11 +3,13 @@ summary: Heap-buffer-overflow in ndpi_workflow_process_packet
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=43921
 
+  ```
   Crash type: Heap-buffer-overflow READ 2
   Crash state:
   ndpi_workflow_process_packet
   fuzz_ndpi_reader.c
-modified: '2022-01-23T00:00:25.006411Z'
+  ```
+modified: '2022-04-13T03:04:36.242722Z'
 published: '2022-01-23T00:00:25.006190Z'
 references:
 - type: REPORT

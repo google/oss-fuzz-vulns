@@ -3,12 +3,14 @@ summary: Heap-use-after-free in ofats::any_detail::handler_traits<void>::handler
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31209
 
+  ```
   Crash type: Heap-use-after-free WRITE 8
   Crash state:
   ofats::any_detail::handler_traits<void>::handler_base<ofats::any_detail::handler
   uWS::Loop::wakeupCb
   us_internal_dispatch_ready_poll
-modified: '2021-06-21T06:56:26.561177Z'
+  ```
+modified: '2022-04-13T03:04:41.003419Z'
 published: '2021-02-23T00:00:23.638786Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 09aef610e0dbc1de7297fda3a873a6d84498d4f7
   ecosystem_specific:
     severity: HIGH
+  versions: []

@@ -3,12 +3,14 @@ summary: UNKNOWN READ in zend_gc_delref
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25321
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   zend_gc_delref
   zval_delref_p
   zval_ptr_dtor_nogc
-modified: '2021-06-21T06:56:20.882674Z'
+  ```
+modified: '2022-04-13T03:04:33.355942Z'
 published: '2020-09-01T00:00:58.177927Z'
 references:
 - type: REPORT

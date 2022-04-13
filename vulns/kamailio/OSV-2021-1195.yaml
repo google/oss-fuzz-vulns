@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in trim_leading
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=38048
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   trim_leading
   parse_contacts
   contact_parser
-modified: '2021-09-04T00:00:17.660999Z'
+  ```
+modified: '2022-04-13T03:04:37.742922Z'
 published: '2021-09-04T00:00:17.660776Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 20db418f1e35f31d7a90d7cabbd22ae989b7266c
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

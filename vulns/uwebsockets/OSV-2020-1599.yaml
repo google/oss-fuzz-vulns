@@ -3,12 +3,14 @@ summary: Use-of-uninitialized-value in slide_hash
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24820
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   slide_hash
   fill_window
   deflate_fast
-modified: '2021-06-21T06:56:26.548404Z'
+  ```
+modified: '2022-04-13T03:04:40.986860Z'
 published: '2020-08-12T00:00:13.402621Z'
 references:
 - type: REPORT

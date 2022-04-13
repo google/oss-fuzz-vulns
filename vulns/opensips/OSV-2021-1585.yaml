@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in _parse_to
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=41073
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   _parse_to
   parse_to
   get_hdr_field
-modified: '2022-02-24T00:08:53.367101Z'
+  ```
+modified: '2022-04-13T03:04:32.481082Z'
 published: '2021-11-18T00:00:17.931643Z'
 references:
 - type: REPORT

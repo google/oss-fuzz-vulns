@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in H5O_fill_new_shared_decode
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18810
 
+  ```
   Crash type: Heap-buffer-overflow READ {*}
   Crash state:
   H5O_fill_new_shared_decode
   H5O_msg_read_oh
   H5O_msg_read
-modified: '2021-06-21T06:56:28.293703Z'
+  ```
+modified: '2022-04-13T03:04:43.155650Z'
 published: '2020-07-14T22:13:47.514744Z'
 references:
 - type: REPORT

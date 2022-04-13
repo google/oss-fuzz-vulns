@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in evax_bfd_print_dst
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=44864
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   evax_bfd_print_dst
   evax_bfd_print_image
   vms_bfd_print_private_bfd_data
-modified: '2022-02-21T00:01:49.509251Z'
+  ```
+modified: '2022-04-13T03:04:31.586732Z'
 published: '2022-02-21T00:01:49.508994Z'
 references:
 - type: REPORT

@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in org::apache::arrow::flatbuf::Message::Verify
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21681
 
+  ```
   Crash type: Heap-buffer-overflow READ 4
   Crash state:
   org::apache::arrow::flatbuf::Message::Verify
   arrow::ipc::CheckMetadataAndGetBodyLength
   arrow::ipc::MessageDecoder::MessageDecoderImpl::ConsumeMetadata
-modified: '2021-06-21T06:56:19.531828Z'
+  ```
+modified: '2022-04-13T03:04:31.834108Z'
 published: '2020-06-24T01:51:15.842848Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: c47d0d3df865d34d877c84042c11a7cb259f7cdd
   ecosystem_specific:
     severity: HIGH
+  versions: []

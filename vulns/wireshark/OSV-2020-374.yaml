@@ -3,12 +3,14 @@ summary: Heap-use-after-free in wmem_strbuf_get_str
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=17305
 
+  ```
   Crash type: Heap-use-after-free READ 8
   Crash state:
   wmem_strbuf_get_str
   dissect_rrc_PLMN_IdentityWithOptionalMCC_r6
   dissect_per_constrained_sequence_of
-modified: '2021-06-21T06:56:24.054948Z'
+  ```
+modified: '2022-04-13T03:04:37.811763Z'
 published: '2020-07-01T00:00:05.857808Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 7d874e2d3caff57d571cfca28b7919bda9f30c97
   ecosystem_specific:
     severity: HIGH
+  versions: []

@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in r_str_utf8_codepoint
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18122
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   r_str_utf8_codepoint
   r_str_char_fullwidth
   r_str_len_utf8
-modified: '2021-06-21T06:56:23.085207Z'
+  ```
+modified: '2022-04-13T03:04:36.573045Z'
 published: '2020-07-01T00:00:01.824434Z'
 references:
 - type: REPORT

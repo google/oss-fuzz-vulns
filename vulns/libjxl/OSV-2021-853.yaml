@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in jxl::ThreadPool::RunCallState<jxl::ConvertToExt
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=35172
 
+  ```
   Crash type: Heap-buffer-overflow WRITE 4
   Crash state:
   jxl::ThreadPool::RunCallState<jxl::ConvertToExternal
   jpegxl::ThreadParallelRunner::ThreadFunc
   void* std::__1::__thread_proxy<std::__1::tuple<std::__1::unique_ptr<std::__1::__
-modified: '2021-06-21T06:56:27.249611Z'
+  ```
+modified: '2022-04-13T03:04:41.811984Z'
 published: '2021-06-13T00:00:30.089891Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 85aa1491b967709701d2d2293627c5cd1c7cb96d
   ecosystem_specific:
     severity: HIGH
+  versions: []

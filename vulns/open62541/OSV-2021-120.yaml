@@ -3,12 +3,14 @@ summary: Heap-use-after-free in UA_SecureChannel_deleteMembersCleanup
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=5652
 
+  ```
   Crash type: Heap-use-after-free READ 8
   Crash state:
   UA_SecureChannel_deleteMembersCleanup
   UA_SecureChannelManager_deleteMembers
   UA_Server_delete
-modified: '2021-06-23T06:29:53.743533Z'
+  ```
+modified: '2022-04-13T03:04:41.254422Z'
 published: '2021-01-13T00:01:31.105656Z'
 references:
 - type: REPORT
@@ -26,3 +28,4 @@ affected:
   ecosystem_specific:
     fixed_range: c54a3e26439600a075c5ac427da1aae0f0781655:24176ffff471a25fa765d5fdd475c5dec2b59837
     severity: HIGH
+  versions: []

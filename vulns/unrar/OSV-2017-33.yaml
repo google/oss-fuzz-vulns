@@ -3,12 +3,14 @@ summary: Use-of-uninitialized-value in __cxxabiv1::scan_eh_tab
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=4307
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   __cxxabiv1::scan_eh_tab
   __gxx_personality_v0
   _Unwind_RaiseException
-modified: '2021-06-23T06:25:47.890529Z'
+  ```
+modified: '2022-04-13T03:04:35.249805Z'
 published: '2021-01-13T21:55:59.387722Z'
 references:
 - type: REPORT

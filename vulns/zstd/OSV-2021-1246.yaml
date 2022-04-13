@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in FSE_writeNCount_generic
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=38553
 
+  ```
   Crash type: Heap-buffer-overflow WRITE 1
   Crash state:
   FSE_writeNCount_generic
   FSE_writeNCount
   ZSTD_buildCTable
-modified: '2021-09-13T00:00:35.678320Z'
+  ```
+modified: '2022-04-13T03:04:31.669800Z'
 published: '2021-09-13T00:00:35.678119Z'
 references:
 - type: REPORT

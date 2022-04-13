@@ -3,12 +3,14 @@ summary: Heap-use-after-free in lua_closeslot
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29610
 
+  ```
   Crash type: Heap-use-after-free WRITE 1
   Crash state:
   lua_closeslot
   luaL_traceback
   msghandler
-modified: '2021-06-21T06:56:18.613570Z'
+  ```
+modified: '2022-04-13T03:04:30.724783Z'
 published: '2021-01-16T00:01:03.500860Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 2bfa13e520e53210b96ead88f49a9ca20c5a5d18
   ecosystem_specific:
     severity: HIGH
+  versions: []

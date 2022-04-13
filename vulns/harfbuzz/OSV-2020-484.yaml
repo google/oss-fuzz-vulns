@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in AAT::KerxSubTableFormat4<AAT::KerxSubTableHeade
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=12532
 
+  ```
   Crash type: Heap-buffer-overflow READ 4
   Crash state:
   AAT::KerxSubTableFormat4<AAT::KerxSubTableHeader>::driver_context_t::transition
   void AAT::StateTableDriver<AAT::ExtendedTypes, AAT::KerxSubTableFormat4<AAT::Ker
   AAT::KerxSubTableFormat4<AAT::KerxSubTableHeader>::apply
-modified: '2021-06-21T06:56:20.412220Z'
+  ```
+modified: '2022-04-13T03:04:32.842142Z'
 published: '2020-07-01T00:00:12.297418Z'
 references:
 - type: REPORT

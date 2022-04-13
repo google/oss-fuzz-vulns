@@ -3,12 +3,14 @@ summary: Stack-buffer-overflow in check_user_password_preR5
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=44983
 
+  ```
   Crash type: Stack-buffer-overflow READ {*}
   Crash state:
   check_user_password_preR5
   pdfi_initialise_Decryption
   pdfi_set_input_stream
-modified: '2022-03-01T00:34:17.567248Z'
+  ```
+modified: '2022-04-13T03:04:34.758434Z'
 published: '2022-02-25T00:01:57.594646Z'
 references:
 - type: REPORT

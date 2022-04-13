@@ -3,12 +3,14 @@ summary: Use-of-uninitialized-value in Splash::pipeRunSimpleXBGR8
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29651
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   Splash::pipeRunSimpleXBGR8
   Splash::drawSpan
   Splash::fillWithPattern
-modified: '2021-09-03T00:04:45.943392Z'
+  ```
+modified: '2022-04-13T03:04:37.283654Z'
 published: '2021-01-18T00:00:08.864783Z'
 references:
 - type: REPORT

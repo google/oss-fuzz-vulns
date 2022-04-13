@@ -3,12 +3,14 @@ summary: UNKNOWN WRITE in uffd_cleanup
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15156
 
+  ```
   Crash type: UNKNOWN WRITE
   Crash state:
   uffd_cleanup
   netCDFDataset::~netCDFDataset
   netCDFDataset::~netCDFDataset
-modified: '2021-06-23T07:01:46.431025Z'
+  ```
+modified: '2022-04-13T03:04:42.095380Z'
 published: '2020-07-01T00:00:08.489132Z'
 references:
 - type: REPORT
@@ -38,5 +40,5 @@ affected:
   - v3.0.4
   - v3.0.4RC1
   ecosystem_specific:
-    introduced_range: 289b796e365ac26020548410d6ae16022bc80718:f956a3c6ff43a877a63ee1199c5e0092c11a8c31
     severity: HIGH
+    introduced_range: 289b796e365ac26020548410d6ae16022bc80718:f956a3c6ff43a877a63ee1199c5e0092c11a8c31

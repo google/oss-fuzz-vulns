@@ -3,12 +3,14 @@ summary: Segv on unknown address in GC_generic_malloc_many
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=32453
 
+  ```
   Crash type: Segv on unknown address
   Crash state:
   GC_generic_malloc_many
   GC_malloc_atomic
   Strnew_size
-modified: '2021-06-21T06:56:27.243114Z'
+  ```
+modified: '2022-04-13T03:04:41.780477Z'
 published: '2021-03-26T00:00:11.571998Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 5a1059b6f3ab031afa48c5ddcd81392444de53a9
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

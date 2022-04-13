@@ -3,12 +3,14 @@ summary: Segv on unknown address in Imf_2_5::hufUncompress
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24854
 
+  ```
   Crash type: Segv on unknown address
   Crash state:
   Imf_2_5::hufUncompress
   Imf_2_5::DwaCompressor::uncompress
   Imf_2_5::DwaCompressor::uncompress
-modified: '2021-03-09T04:49:05.354552Z'
+  ```
+modified: '2022-04-13T03:04:37.092944Z'
 published: '2020-08-14T00:01:49.720909Z'
 references:
 - type: REPORT

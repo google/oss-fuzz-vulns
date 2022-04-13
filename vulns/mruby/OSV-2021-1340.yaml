@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in mrb_vm_exec
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=38989
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   mrb_vm_exec
   mrb_vm_run
   mrb_top_run
-modified: '2021-09-21T00:00:36.045620Z'
+  ```
+modified: '2022-04-13T03:04:39.739013Z'
 published: '2021-09-21T00:00:36.045422Z'
 references:
 - type: REPORT

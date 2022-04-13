@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in unpack_32bit
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=39799
 
+  ```
   Crash type: Heap-buffer-overflow WRITE 4
   Crash state:
   unpack_32bit
   exr_decoding_run
   Imf_3_1::checkCoreFile
-modified: '2021-10-11T00:01:37.363491Z'
+  ```
+modified: '2022-04-13T03:04:37.167235Z'
 published: '2021-10-11T00:01:37.363287Z'
 references:
 - type: REPORT

@@ -3,12 +3,14 @@ summary: Segv on unknown address in pdfi_array_get
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=44151
 
+  ```
   Crash type: Segv on unknown address
   Crash state:
   pdfi_array_get
   pdfi_TJ
   pdfi_interpret_stream_operator
-modified: '2022-01-30T00:00:20.319534Z'
+  ```
+modified: '2022-04-13T03:04:34.502434Z'
 published: '2022-01-30T00:00:20.319324Z'
 references:
 - type: REPORT

@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in hfs_dir_open_meta_cb
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=43040
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   hfs_dir_open_meta_cb
   hfs_cat_traverse
   hfs_dir_open_meta
-modified: '2021-12-29T00:00:18.595869Z'
+  ```
+modified: '2022-04-13T03:04:36.442282Z'
 published: '2021-12-29T00:00:18.595646Z'
 references:
 - type: REPORT

@@ -3,12 +3,14 @@ summary: Segv on unknown address in arrow::DefaultBackend
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=37915
 
+  ```
   Crash type: Segv on unknown address
   Crash state:
   arrow::DefaultBackend
   arrow::default_memory_pool
   arrow::ipc::IpcReadOptions::Defaults
-modified: '2021-09-02T00:00:11.313491Z'
+  ```
+modified: '2022-04-13T03:04:31.943435Z'
 published: '2021-09-02T00:00:11.313252Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 495c734969f4af9288a8e745c29fb1d707a46baa
   ecosystem_specific:
     severity: null
+  versions: []

@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in fnv_32a_buf
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31301
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   fnv_32a_buf
   font_hash
   ass_cache_get
-modified: '2021-06-21T06:56:18.538543Z'
+  ```
+modified: '2022-04-13T03:04:30.615610Z'
 published: '2021-02-24T00:00:23.135123Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 8f987713dd0fa791c5c511c13bb27021fa653fb0
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

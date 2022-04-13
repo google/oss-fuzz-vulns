@@ -3,12 +3,14 @@ summary: UNKNOWN READ in unescape_string
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=44237
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   unescape_string
   parse_string
   parse_object
-modified: '2022-02-01T00:01:34.223605Z'
+  ```
+modified: '2022-04-13T03:04:39.889052Z'
 published: '2022-02-01T00:01:34.223287Z'
 references:
 - type: REPORT
@@ -27,7 +29,7 @@ affected:
   ecosystem_specific:
     severity: MEDIUM
   database_specific:
-    fixed_range: 25f2f01c2693da8cc651d80debda9ad61fa17743:6fcecd0226ee25e69ce049c4eba10933a0a2e944
     introduced_range: f3c65feb0e1f4e177a75ba936d0730f7c3f4b076:7e45a2ee6e407d36374eb6c3d5196e768c246115
+    fixed_range: 25f2f01c2693da8cc651d80debda9ad61fa17743:6fcecd0226ee25e69ce049c4eba10933a0a2e944
   versions: []
 schema_version: 1.2.0

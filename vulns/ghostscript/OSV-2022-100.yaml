@@ -3,12 +3,14 @@ summary: Stack-buffer-overflow in sgets
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=44160
 
+  ```
   Crash type: Stack-buffer-overflow WRITE 1
   Crash state:
   sgets
   pdfi_read_bytes
   read_xref_entry_slow
-modified: '2022-01-30T00:00:08.379317Z'
+  ```
+modified: '2022-04-13T03:04:34.508334Z'
 published: '2022-01-30T00:00:08.379078Z'
 references:
 - type: REPORT

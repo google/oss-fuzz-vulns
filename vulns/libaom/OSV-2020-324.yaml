@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in av1_convolve_2d_copy_sr_sse2
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=12549
 
+  ```
   Crash type: Heap-buffer-overflow READ 16
   Crash state:
   av1_convolve_2d_copy_sr_sse2
   av1_convolve_2d_facade
   av1_make_inter_predictor
-modified: '2021-06-21T06:56:25.437949Z'
+  ```
+modified: '2022-04-13T03:04:39.484676Z'
 published: '2020-07-01T00:00:02.786882Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: b46542180d551d5e4eb666cf35dd62395ba43f3e
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

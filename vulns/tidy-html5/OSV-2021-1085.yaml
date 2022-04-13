@@ -3,12 +3,14 @@ summary: Stack-buffer-overflow in strcat
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=36743
 
+  ```
   Crash type: Stack-buffer-overflow WRITE {*}
   Crash state:
   strcat
   prvTidystrrep
   tidyMessageCreateInitV
-modified: '2021-08-02T00:00:16.885240Z'
+  ```
+modified: '2022-04-13T03:04:32.568035Z'
 published: '2021-08-02T00:00:16.885038Z'
 references:
 - type: REPORT

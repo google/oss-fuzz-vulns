@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in arrow::internal::CountSetBits
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20199
 
+  ```
   Crash type: Heap-buffer-overflow READ 8
   Crash state:
   arrow::internal::CountSetBits
   arrow::Array::null_count
   arrow::internal::ValidateArray
-modified: '2021-06-23T06:25:11.714261Z'
+  ```
+modified: '2022-04-13T03:04:32.014023Z'
 published: '2020-07-22T21:49:52.928701Z'
 references:
 - type: REPORT
@@ -26,3 +28,4 @@ affected:
   ecosystem_specific:
     severity: MEDIUM
     introduced_range: unknown:ccdc4b076cbd5fb03e1cbc42292def871d2b6035
+  versions: []

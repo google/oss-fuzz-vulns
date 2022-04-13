@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in __libcpp_memchr
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23328
 
+  ```
   Crash type: Heap-buffer-overflow READ {*}
   Crash state:
   __libcpp_memchr
   memchr
   pcpp::HeaderField::HeaderField
-modified: '2021-06-23T06:28:22.396999Z'
+  ```
+modified: '2022-04-13T03:04:38.663249Z'
 published: '2020-07-14T05:37:32.830824Z'
 references:
 - type: REPORT

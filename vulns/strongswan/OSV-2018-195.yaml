@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in gmp_emsa_pkcs1_signature_data
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=10671
 
+  ```
   Crash type: Heap-buffer-overflow WRITE 1
   Crash state:
   gmp_emsa_pkcs1_signature_data
   verify_emsa_pkcs1_signature
   verify
-modified: '2021-07-09T13:04:40.343979Z'
+  ```
+modified: '2022-04-13T03:04:34.061437Z'
 published: '2021-01-13T00:01:21.218732Z'
 references:
 - type: REPORT

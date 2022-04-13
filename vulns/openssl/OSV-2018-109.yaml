@@ -3,12 +3,14 @@ summary: Heap-use-after-free in ssl_get_prev_session
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=8241
 
+  ```
   Crash type: Heap-use-after-free READ 4
   Crash state:
   ssl_get_prev_session
   tls_early_post_process_client_hello
   tls_post_process_client_hello
-modified: '2021-06-21T06:56:24.834757Z'
+  ```
+modified: '2022-04-13T03:04:38.768619Z'
 published: '2021-01-13T00:00:48.206043Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 5f96a95e2562f026557f625e50c052e77c7bc2e8
   ecosystem_specific:
     severity: HIGH
+  versions: []

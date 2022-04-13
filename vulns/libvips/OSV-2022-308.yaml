@@ -3,10 +3,12 @@ summary: Null-dereference READ in ubsan_GetStackTrace
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=46341
 
+  ```
   Crash type: Null-dereference READ
   Crash state:
   ubsan_GetStackTrace
-modified: '2022-04-06T00:00:09.670431Z'
+  ```
+modified: '2022-04-13T03:04:38.101911Z'
 published: '2022-04-06T00:00:09.670188Z'
 references:
 - type: REPORT

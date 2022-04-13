@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in ndpi_search_irc_tcp
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21346
 
+  ```
   Crash type: Heap-buffer-overflow READ 7
   Crash state:
   ndpi_search_irc_tcp
   check_ndpi_tcp_flow_func
   ndpi_detection_process_packet
-modified: '2021-06-23T06:26:03.005385Z'
+  ```
+modified: '2022-04-13T03:04:35.929330Z'
 published: '2020-07-22T21:49:36.913972Z'
 references:
 - type: REPORT

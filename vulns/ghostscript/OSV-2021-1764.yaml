@@ -3,12 +3,14 @@ summary: UNKNOWN READ in read_xref_stream_entries
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42927
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   read_xref_stream_entries
   pdfi_process_xref_stream
   pdfi_read_xref_stream_dict
-modified: '2021-12-26T00:01:39.227964Z'
+  ```
+modified: '2022-04-13T03:04:34.615016Z'
 published: '2021-12-26T00:01:39.227755Z'
 references:
 - type: REPORT

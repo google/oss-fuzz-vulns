@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in dwg_convert_SAB_to_SAT1
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=36728
 
+  ```
   Crash type: Heap-buffer-overflow READ 2
   Crash state:
   dwg_convert_SAB_to_SAT1
   dxf_3dsolid
   dwg_dxf_REGION_private
-modified: '2022-04-12T00:08:07.980606Z'
+  ```
+modified: '2022-04-13T03:04:41.072767Z'
 published: '2021-08-02T00:00:31.888461Z'
 references:
 - type: REPORT

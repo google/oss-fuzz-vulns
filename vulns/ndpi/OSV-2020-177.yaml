@@ -3,12 +3,14 @@ summary: UNKNOWN in get_ndpi_flow_info6
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20747
 
+  ```
   Crash type: UNKNOWN
   Crash state:
   get_ndpi_flow_info6
   packet_processing
   ndpi_workflow_process_packet
-modified: '2021-06-21T06:56:22.588365Z'
+  ```
+modified: '2022-04-13T03:04:36.058542Z'
 published: '2020-06-24T01:51:17.542041Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 90e08b3568d8963a459cf06c4e67ff6fc99298e3
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

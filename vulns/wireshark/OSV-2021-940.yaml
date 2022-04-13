@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in json_string_unescape
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=35925
 
+  ```
   Crash type: Heap-buffer-overflow WRITE 1
   Crash state:
   json_string_unescape
   after_value
   execute_callbacks
-modified: '2021-07-09T00:01:28.772557Z'
+  ```
+modified: '2022-04-13T03:04:37.827671Z'
 published: '2021-07-09T00:01:28.772223Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 1f12e1d26707123b5516540ec07f8c77aa437f31
   ecosystem_specific:
     severity: HIGH
+  versions: []

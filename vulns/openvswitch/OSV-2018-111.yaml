@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in format_generic_odp_key
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=10850
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   format_generic_odp_key
   check_attr_len
   format_odp_key_attr
-modified: '2021-06-21T06:56:26.328071Z'
+  ```
+modified: '2022-04-13T03:04:40.721048Z'
 published: '2021-01-13T00:00:49.915963Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: a1da3f297717c2de70dab88f7783117b78f85e89
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

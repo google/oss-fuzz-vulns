@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in vips_rect_intersectrect
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=45353
 
+  ```
   Crash type: Heap-buffer-overflow READ 4
   Crash state:
   vips_rect_intersectrect
   vips_foreign_load_pdf_generate
   vips_region_prepare_to_generate
-modified: '2022-03-09T00:00:12.248309Z'
+  ```
+modified: '2022-04-13T03:04:38.135997Z'
 published: '2022-03-09T00:00:12.248020Z'
 references:
 - type: REPORT

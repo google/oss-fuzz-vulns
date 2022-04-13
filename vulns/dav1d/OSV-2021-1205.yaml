@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in backup_lpf
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=38152
 
+  ```
   Crash type: Heap-buffer-overflow WRITE {*}
   Crash state:
   backup_lpf
   dav1d_lr_copy_lpf_16bpc
   dav1d_filter_sbrow_deblock_rows_16bpc
-modified: '2021-09-06T00:00:42.136829Z'
+  ```
+modified: '2022-04-13T03:04:39.833196Z'
 published: '2021-09-06T00:00:42.136598Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 159215a82da88ca6c511194c8188e9df7a193998
   ecosystem_specific:
     severity: HIGH
+  versions: []

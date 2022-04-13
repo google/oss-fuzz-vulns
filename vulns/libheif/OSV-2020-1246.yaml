@@ -3,12 +3,14 @@ summary: Stack-buffer-overflow in void apply_sao_internal<unsigned short>
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13643
 
+  ```
   Crash type: Stack-buffer-overflow READ 4
   Crash state:
   void apply_sao_internal<unsigned short>
   void apply_sao<unsigned char>
   thread_task_sao::work
-modified: '2021-06-23T06:25:11.880601Z'
+  ```
+modified: '2022-04-13T03:04:32.453257Z'
 published: '2020-07-22T21:50:00.006966Z'
 references:
 - type: REPORT
@@ -26,3 +28,4 @@ affected:
   ecosystem_specific:
     introduced_range: unknown:0acdca433f338f1f378f6f104e72f5f95c4f8568
     severity: MEDIUM
+  versions: []

@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in UA_unbase64
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14621
 
+  ```
   Crash type: Heap-buffer-overflow WRITE 1
   Crash state:
   UA_unbase64
   ByteString_decodeJson
   decodeFields
-modified: '2021-06-21T06:56:26.871255Z'
+  ```
+modified: '2022-04-13T03:04:41.369625Z'
 published: '2020-07-01T00:00:06.148009Z'
 references:
 - type: REPORT

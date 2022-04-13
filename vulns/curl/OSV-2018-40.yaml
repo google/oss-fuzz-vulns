@@ -3,12 +3,14 @@ summary: UNKNOWN READ in ftp_disconnect
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=12173
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   ftp_disconnect
   Curl_disconnect
   ConnectionExists
-modified: '2021-06-23T06:31:21.645309Z'
+  ```
+modified: '2022-04-13T03:04:42.929064Z'
 published: '2021-01-13T00:00:22.110168Z'
 references:
 - type: REPORT
@@ -26,3 +28,4 @@ affected:
   ecosystem_specific:
     severity: MEDIUM
     introduced_range: 207e7cfa98c35c9d40193ef83bba1d7a830bf141:c98ee5f67f497195c9127cc70fa53a487f994cd5
+  versions: []

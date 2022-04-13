@@ -3,12 +3,14 @@ summary: Heap-double-free in ExtensionObject_deleteMembers
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=4345
 
+  ```
   Crash type: Heap-double-free
   Crash state:
   ExtensionObject_deleteMembers
   UA_deleteMembers
   UA_decodeBinary
-modified: '2021-06-21T06:56:26.931818Z'
+  ```
+modified: '2022-04-13T03:04:41.439985Z'
 published: '2021-01-13T21:57:41.211384Z'
 references:
 - type: REPORT

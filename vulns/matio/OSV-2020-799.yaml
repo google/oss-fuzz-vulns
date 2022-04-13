@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in ReadInt32DataDouble
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21421
 
+  ```
   Crash type: Heap-buffer-overflow WRITE 4
   Crash state:
   ReadInt32DataDouble
   ReadInt32Data
   Mat_VarRead4
-modified: '2021-07-13T00:04:05.612970Z'
+  ```
+modified: '2022-04-13T03:04:43.021946Z'
 published: '2020-07-14T05:37:38.154412Z'
 references:
 - type: REPORT

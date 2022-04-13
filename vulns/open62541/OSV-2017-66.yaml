@@ -3,12 +3,14 @@ summary: UNKNOWN READ in cfree
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=4561
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   cfree
   copyAttributeIntoNode
   UA_Server_editNode
-modified: '2021-06-21T06:56:26.938450Z'
+  ```
+modified: '2022-04-13T03:04:41.445471Z'
 published: '2021-01-13T21:56:32.213437Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 334e25a86d977e389fabe3006be3ff1a40c16ddb
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

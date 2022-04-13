@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in asn1_ex_i2c
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=7696
 
+  ```
   Crash type: Heap-buffer-overflow READ 4
   Crash state:
   asn1_ex_i2c
   asn1_i2d_ex_primitive
   ASN1_item_ex_i2d
-modified: '2021-06-23T06:28:23.524218Z'
+  ```
+modified: '2022-04-13T03:04:38.752978Z'
 published: '2021-01-13T00:01:05.757240Z'
 references:
 - type: REPORT

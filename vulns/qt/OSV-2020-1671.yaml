@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in Dasher::Dasher
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25243
 
+  ```
   Crash type: Heap-buffer-overflow READ 4
   Crash state:
   Dasher::Dasher
   bool drawLineAA<&
   QCosmeticStroker::drawPath
-modified: '2021-08-16T04:50:56.115845Z'
+  ```
+modified: '2022-04-13T03:04:36.810808Z'
 published: '2020-08-29T00:00:13.673013Z'
 references:
 - type: REPORT

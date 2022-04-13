@@ -4,12 +4,14 @@ summary: Use-of-uninitialized-value in bool std::__1::equal<std::__1::__wrap_ite
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18320
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   bool std::__1::equal<std::__1::__wrap_iter<unsigned char const*>, std::__1::__wr
   bool std::__1::operator==<unsigned char, std::__1::allocator<unsigned char> >
   cryptofuzz::ExecutorBase<cryptofuzz::Buffer, cryptofuzz::operation::CMAC>::compa
-modified: '2021-06-21T06:56:21.817251Z'
+  ```
+modified: '2022-04-13T03:04:35.049761Z'
 published: '2020-07-01T00:00:13.977406Z'
 references:
 - type: REPORT
@@ -26,3 +28,4 @@ affected:
     - fixed: 69c82214652a0a5d2aab9e4ab077a87ffa8057fb
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

@@ -3,12 +3,14 @@ summary: UNKNOWN READ in presym_sym2name
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26400
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   presym_sym2name
   sym2name_len
   mrb_sym_name_len
-modified: '2021-06-21T06:56:25.613992Z'
+  ```
+modified: '2022-04-13T03:04:39.770022Z'
 published: '2020-10-18T00:00:15.125270Z'
 references:
 - type: REPORT

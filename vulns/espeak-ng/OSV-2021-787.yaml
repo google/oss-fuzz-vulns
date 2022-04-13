@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in string_decoder_getc_utf_8
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34533
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   string_decoder_getc_utf_8
   text_decoder_getc
   GetC
-modified: '2022-04-03T00:04:25.446077Z'
+  ```
+modified: '2022-04-13T03:04:34.199948Z'
 published: '2021-05-23T00:00:32.013206Z'
 references:
 - type: REPORT

@@ -3,12 +3,14 @@ summary: Use-of-uninitialized-value in zcheck_r6_password
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23440
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   zcheck_r6_password
   interp
   gs_call_interp
-modified: '2021-06-23T06:25:40.370148Z'
+  ```
+modified: '2022-04-13T03:04:34.709607Z'
 published: '2020-09-29T00:00:20.291651Z'
 references:
 - type: REPORT

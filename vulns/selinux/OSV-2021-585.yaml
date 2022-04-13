@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in ebitmap_match_any
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=32675
 
+  ```
   Crash type: Heap-buffer-overflow READ 8
   Crash state:
   ebitmap_match_any
   avtab_map
   cil_check_neverallow
-modified: '2021-07-21T22:18:09.393198Z'
+  ```
+modified: '2022-04-13T03:04:42.321301Z'
 published: '2021-03-31T00:00:26.273923Z'
 references:
 - type: REPORT

@@ -3,12 +3,14 @@ summary: UNKNOWN READ in frame_get_metalayers
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29280
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   frame_get_metalayers
   blosc2_frame_to_schunk
   blosc2_schunk_open_sframe
-modified: '2021-06-21T06:56:26.024072Z'
+  ```
+modified: '2022-04-13T03:04:40.359865Z'
 published: '2021-01-07T00:00:43.126785Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: c473b21cff5e1a459b4467f18bf7414114f848fd
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

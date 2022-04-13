@@ -1,12 +1,13 @@
 id: OSV-2021-591
 summary: Segv on unknown address
-details: |-
+details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=32767
 
+  ```
   Crash type: Segv on unknown address
   Crash state:
-  NULL
-modified: '2021-06-23T06:25:07.920201Z'
+  NULL```
+modified: '2022-04-13T03:04:31.448881Z'
 published: '2021-04-02T00:01:01.958406Z'
 references:
 - type: REPORT
@@ -23,3 +24,4 @@ affected:
     - fixed: 411e27776f5c0ec8359508f0e2cabb1538375e53
   ecosystem_specific:
     introduced_range: b9593d4e39ea3dbf1ba5e894f0cefc1cb1568437:c8a56c57ab7c5547ad29e2112ccf02e8dd91ce91
+  versions: []

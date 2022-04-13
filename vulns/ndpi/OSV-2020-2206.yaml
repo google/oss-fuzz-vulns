@@ -3,12 +3,14 @@ summary: Segv on unknown address in ndpi_free
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=27988
 
+  ```
   Crash type: Segv on unknown address
   Crash state:
   ndpi_free
   ndpi_free_flow
   fuzz_process_packet.c
-modified: '2021-06-21T06:56:22.576225Z'
+  ```
+modified: '2022-04-13T03:04:36.047885Z'
 published: '2020-11-29T00:00:04.133863Z'
 references:
 - type: REPORT

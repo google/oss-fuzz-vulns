@@ -3,12 +3,14 @@ summary: Global-buffer-overflow in SubstitutePhonemes
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34747
 
+  ```
   Crash type: Global-buffer-overflow READ 2
   Crash state:
   SubstitutePhonemes
   MakePhonemeList
   TranslateClause
-modified: '2022-03-18T00:04:58.561855Z'
+  ```
+modified: '2022-04-13T03:04:34.184424Z'
 published: '2021-05-29T00:00:08.420998Z'
 references:
 - type: REPORT

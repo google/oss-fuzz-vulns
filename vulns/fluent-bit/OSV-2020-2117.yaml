@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in flb_msgpack_gelf_value_ext
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26851
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   flb_msgpack_gelf_value_ext
   flb_msgpack_to_gelf
   flb_msgpack_raw_to_gelf
-modified: '2021-06-23T06:51:41.639272Z'
+  ```
+modified: '2022-04-13T03:04:38.416834Z'
 published: '2020-11-02T00:00:07.716307Z'
 references:
 - type: REPORT

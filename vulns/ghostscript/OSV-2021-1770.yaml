@@ -3,12 +3,14 @@ summary: UNKNOWN READ in pdfi_free_object
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42980
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   pdfi_free_object
   pdfi_clear_context
   pdfi_free_context
-modified: '2021-12-27T00:02:04.651657Z'
+  ```
+modified: '2022-04-13T03:04:34.346518Z'
 published: '2021-12-27T00:02:04.650984Z'
 references:
 - type: REPORT

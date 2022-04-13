@@ -3,12 +3,14 @@ summary: Index-out-of-bounds in MemoryRemoveTrailingZeros
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23127
 
+  ```
   Crash type: Index-out-of-bounds
   Crash state:
   MemoryRemoveTrailingZeros
   CheckPWAuthSession
   CheckAuthSession
-modified: '2021-06-21T06:56:22.905881Z'
+  ```
+modified: '2022-04-13T03:04:36.369092Z'
 published: '2020-07-28T00:00:34.623899Z'
 references:
 - type: REPORT

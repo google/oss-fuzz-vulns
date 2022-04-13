@@ -3,12 +3,14 @@ summary: Heap-double-free in mfree
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31055
 
+  ```
   Crash type: Heap-double-free
   Crash state:
   mfree
   parse_path_argument
   systemctl_parse_argv
-modified: '2021-06-21T06:56:25.832185Z'
+  ```
+modified: '2022-04-13T03:04:40.068602Z'
 published: '2021-02-19T00:02:40.501688Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 5800f0fc682baccb24ae076b3ffea0a548812486
   ecosystem_specific:
     severity: HIGH
+  versions: []

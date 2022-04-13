@@ -4,12 +4,14 @@ summary: Use-of-uninitialized-value in std::__1::basic_ostream<char, std::__1::c
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=38777
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   std::__1::basic_ostream<char, std::__1::char_traits<char> >& std::__1::__put_cha
   S2LaxPolylineShape::Init
   S2LaxPolylineShape::S2LaxPolylineShape
-modified: '2021-09-17T00:00:07.966812Z'
+  ```
+modified: '2022-04-13T03:04:32.390354Z'
 published: '2021-09-17T00:00:07.966622Z'
 references:
 - type: REPORT

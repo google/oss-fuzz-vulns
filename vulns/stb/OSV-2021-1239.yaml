@@ -3,11 +3,13 @@ summary: Heap-buffer-overflow in stbi__load_and_postprocess_8bit
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=38394
 
+  ```
   Crash type: Heap-buffer-overflow READ 2
   Crash state:
   stbi__load_and_postprocess_8bit
   stb_image.h
-modified: '2021-09-12T00:01:05.421557Z'
+  ```
+modified: '2022-04-13T03:04:40.826791Z'
 published: '2021-09-12T00:01:05.421369Z'
 references:
 - type: REPORT

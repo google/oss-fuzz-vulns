@@ -3,12 +3,14 @@ summary: UNKNOWN READ in RDKit::labelRecursivePatterns
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24352
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   RDKit::labelRecursivePatterns
   RDKit::SmartsToMol
   RDKit::ParseMarvinSmartsLine
-modified: '2021-06-21T06:56:26.993280Z'
+  ```
+modified: '2022-04-13T03:04:41.509391Z'
 published: '2020-07-28T00:00:23.047374Z'
 references:
 - type: REPORT

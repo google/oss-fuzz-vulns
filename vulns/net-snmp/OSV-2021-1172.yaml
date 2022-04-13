@@ -3,11 +3,13 @@ summary: UNKNOWN WRITE in snmp_add_var
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=37647
 
+  ```
   Crash type: UNKNOWN WRITE
   Crash state:
   snmp_add_var
   snmp_api_fuzzer.c
-modified: '2021-08-27T00:00:41.017367Z'
+  ```
+modified: '2022-04-13T03:04:35.816547Z'
 published: '2021-08-27T00:00:41.017168Z'
 references:
 - type: REPORT

@@ -3,12 +3,14 @@ summary: Stack-buffer-overflow in ot::Ip6::OptionPadN::Init
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14854
 
+  ```
   Crash type: Stack-buffer-overflow WRITE 9
   Crash state:
   ot::Ip6::OptionPadN::Init
   ot::Ip6::Ip6::RemoveMplOption
   ot::Ip6::Ip6::ProcessReceiveCallback
-modified: '2021-06-21T06:56:25.195553Z'
+  ```
+modified: '2022-04-13T03:04:39.092225Z'
 published: '2020-07-01T00:00:26.997848Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: bcfa791912dd7bd3dd7432f9f6313b6dd5ca358b
   ecosystem_specific:
     severity: HIGH
+  versions: []

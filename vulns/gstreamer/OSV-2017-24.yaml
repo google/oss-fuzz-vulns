@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in pnm_type_find
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=4039
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   pnm_type_find
   gst_type_find_factory_call_function
   gst_type_find_helper_for_data
-modified: '2021-06-23T06:25:36.198845Z'
+  ```
+modified: '2022-04-13T03:04:33.800629Z'
 published: '2021-01-13T00:01:28.099192Z'
 references:
 - type: REPORT
@@ -25,5 +27,6 @@ affected:
     - fixed: d106390adce5cee837d2d0aab377d758a45a4b2d
   ecosystem_specific:
     severity: MEDIUM
-    introduced_range: fb56ad6bee2366813f6be4f697579c06774b062d:4c795924dba5595fb1472864f7d27262bce247a8
     fixed_range: 4c795924dba5595fb1472864f7d27262bce247a8:d106390adce5cee837d2d0aab377d758a45a4b2d
+    introduced_range: fb56ad6bee2366813f6be4f697579c06774b062d:4c795924dba5595fb1472864f7d27262bce247a8
+  versions: []

@@ -4,12 +4,14 @@ summary: Heap-buffer-overflow in CPLErr GDALResampleChunk32R_AverageT<unsigned c
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21558
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   CPLErr GDALResampleChunk32R_AverageT<unsigned char, int>
   GDALResampleChunk32R_Average
   GDALRasterBand::RasterIOResampled
-modified: '2021-06-21T06:56:27.501858Z'
+  ```
+modified: '2022-04-13T03:04:42.124066Z'
 published: '2020-06-24T01:51:12.546926Z'
 references:
 - type: REPORT
@@ -26,3 +28,4 @@ affected:
     - fixed: 9cdb32691ee7eac5cc9e07062e1f2f7f867f77fc
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

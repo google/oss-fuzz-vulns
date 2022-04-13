@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in ihevcd_process
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18406
 
+  ```
   Crash type: Heap-buffer-overflow READ 4
   Crash state:
   ihevcd_process
   ihevcd_process_thread
   start_thread
-modified: '2021-06-21T06:56:18.857509Z'
+  ```
+modified: '2022-04-13T03:04:30.972397Z'
 published: '2020-07-01T00:00:25.530945Z'
 references:
 - type: REPORT

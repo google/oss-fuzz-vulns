@@ -3,12 +3,14 @@ summary: Stack-buffer-overflow in cff_parser_run
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=9865
 
+  ```
   Crash type: Stack-buffer-overflow READ 8
   Crash state:
   cff_parser_run
   cff_subfont_load
   cff_font_load
-modified: '2021-06-23T06:25:41.931598Z'
+  ```
+modified: '2022-04-13T03:04:34.911031Z'
 published: '2021-01-13T00:01:06.516725Z'
 references:
 - type: REPORT
@@ -24,6 +26,7 @@ affected:
     - introduced: 731c059129aeb228ea62d8cad40c71dcaa9530b2
     - fixed: 2ec74e56d188909f4f4117faa564a8b68d6e22bb
   ecosystem_specific:
-    severity: MEDIUM
     introduced_range: f926f1a2f4dbbc61fcae96da71ba65de5280b94d:4fa3193a6e42c6e65bea0698c85d5a4792e2351c
     fixed_range: 0c256f6e16eb73be1aef98197755e0e6bb4c56a9:2ec74e56d188909f4f4117faa564a8b68d6e22bb
+    severity: MEDIUM
+  versions: []

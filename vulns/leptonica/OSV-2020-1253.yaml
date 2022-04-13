@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in pixReadFromTiffStream
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21435
 
+  ```
   Crash type: Heap-buffer-overflow WRITE 1
   Crash state:
   pixReadFromTiffStream
   pixReadMemTiff
   pixReadMem
-modified: '2021-06-23T06:25:27.852671Z'
+  ```
+modified: '2022-04-13T03:04:32.644327Z'
 published: '2020-07-22T21:50:00.586423Z'
 references:
 - type: REPORT
@@ -26,3 +28,4 @@ affected:
   ecosystem_specific:
     severity: HIGH
     introduced_range: unknown:e88377bfc6b2c07977485180ada4ad19826e06cb
+  versions: []

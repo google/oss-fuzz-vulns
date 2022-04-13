@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in to_u32
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=16734
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   to_u32
   fuzz_get_tlv_comn
   fuzz_add_mime_part
-modified: '2021-06-23T06:31:20.242669Z'
+  ```
+modified: '2022-04-13T03:04:42.884077Z'
 published: '2020-07-22T21:49:58.592376Z'
 references:
 - type: REPORT
@@ -24,6 +26,7 @@ affected:
     - introduced: 0a5d28fa2ec872de55c8d3f3b62675f17ca9cd45
     - fixed: 25f962193574e35fe638764c3afb9d25d8a9768b
   ecosystem_specific:
-    fixed_range: 0a5d28fa2ec872de55c8d3f3b62675f17ca9cd45:25f962193574e35fe638764c3afb9d25d8a9768b
     severity: MEDIUM
     introduced_range: unknown:0a5d28fa2ec872de55c8d3f3b62675f17ca9cd45
+    fixed_range: 0a5d28fa2ec872de55c8d3f3b62675f17ca9cd45:25f962193574e35fe638764c3afb9d25d8a9768b
+  versions: []

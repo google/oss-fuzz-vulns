@@ -3,12 +3,14 @@ summary: UNKNOWN READ in ot::Ip6::NetifUnicastAddress::GetNext
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13409
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   ot::Ip6::NetifUnicastAddress::GetNext
   ot::Ip6::Netif::RemoveUnicastAddress
   ot::Mle::Mle::SetStateDetached
-modified: '2021-06-21T06:56:24.941209Z'
+  ```
+modified: '2022-04-13T03:04:38.878276Z'
 published: '2020-07-01T00:00:04.807199Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: a3548df579617e737b075be4a88591e68195e115
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

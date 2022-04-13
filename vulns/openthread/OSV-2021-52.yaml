@@ -3,12 +3,14 @@ summary: Stack-buffer-overflow in ot::KeyManager::SetMasterKey
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=7766
 
+  ```
   Crash type: Stack-buffer-overflow READ 16
   Crash state:
   ot::KeyManager::SetMasterKey
   ot::MeshCoP::Dataset::ApplyConfiguration
   ot::MeshCoP::DatasetManager::Set
-modified: '2021-06-23T06:28:31.012882Z'
+  ```
+modified: '2022-04-13T03:04:38.841996Z'
 published: '2021-01-13T00:00:04.419420Z'
 references:
 - type: REPORT
@@ -26,3 +28,4 @@ affected:
   ecosystem_specific:
     introduced_range: 68a605f22e579ae45ab1d8221faa2d45e8668e05:bf52ed706facbbbd12b2d86c902c0f71b2b72bb0
     severity: MEDIUM
+  versions: []

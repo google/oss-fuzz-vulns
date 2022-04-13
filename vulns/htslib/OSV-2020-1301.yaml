@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in hts_md5_update
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22231
 
+  ```
   Crash type: Heap-buffer-overflow READ {*}
   Crash state:
   hts_md5_update
   cram_decode_slice
   cram_decode_slice_mt
-modified: '2021-06-23T06:25:11.821924Z'
+  ```
+modified: '2022-04-13T03:04:32.327879Z'
 published: '2020-07-22T21:50:04.440116Z'
 references:
 - type: REPORT

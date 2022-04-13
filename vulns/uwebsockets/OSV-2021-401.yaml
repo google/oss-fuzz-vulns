@@ -3,12 +3,14 @@ summary: Segv on unknown address in us_internal_dispatch_ready_poll
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30951
 
+  ```
   Crash type: Segv on unknown address
   Crash state:
   us_internal_dispatch_ready_poll
   us_loop_run
   test
-modified: '2021-03-01T00:05:55.393342Z'
+  ```
+modified: '2022-04-13T03:04:40.981759Z'
 published: '2021-02-16T00:00:19.243505Z'
 references:
 - type: REPORT

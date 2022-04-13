@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in le_to_u32
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25533
 
+  ```
   Crash type: Heap-buffer-overflow READ 4
   Crash state:
   le_to_u32
   le_to_i32
   bcf_dec_typed_int1_safe
-modified: '2021-06-21T06:56:20.006879Z'
+  ```
+modified: '2022-04-13T03:04:32.360821Z'
 published: '2020-09-11T00:01:15.355070Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 8bab82bdb8c2613e1ca7bd5573d7c12117a2dc02
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

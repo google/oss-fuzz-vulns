@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in int flatbuffers::ReadScalar<int>
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30699
 
+  ```
   Crash type: Heap-buffer-overflow READ 4
   Crash state:
   int flatbuffers::ReadScalar<int>
   flatbuffers::Table::GetVTable
   flatbuffers::Table::GetOptionalFieldOffset
-modified: '2021-06-21T06:56:27.436961Z'
+  ```
+modified: '2022-04-13T03:04:42.062018Z'
 published: '2021-02-10T00:00:03.957076Z'
 references:
 - type: REPORT

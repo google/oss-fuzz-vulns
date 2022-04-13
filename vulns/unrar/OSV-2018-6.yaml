@@ -3,12 +3,14 @@ summary: Use-of-uninitialized-value in DosSlashToUnix
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=9307
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   DosSlashToUnix
   ExtractUnixLink50
   ExtractSymlink
-modified: '2021-06-23T06:25:52.589588Z'
+  ```
+modified: '2022-04-13T03:04:35.355594Z'
 published: '2021-01-13T00:00:02.571744Z'
 references:
 - type: REPORT

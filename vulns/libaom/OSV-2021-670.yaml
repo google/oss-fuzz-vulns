@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in av1_free_cdef_buffers
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=33480
 
+  ```
   Crash type: Heap-buffer-overflow READ 8
   Crash state:
   av1_free_cdef_buffers
   decoder_destroy
   aom_codec_destroy
-modified: '2021-06-21T06:56:25.424937Z'
+  ```
+modified: '2022-04-13T03:04:39.463330Z'
 published: '2021-04-22T00:00:12.948723Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 80bd452152ec39b7d88bded3d9090fb20b1ba12f
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

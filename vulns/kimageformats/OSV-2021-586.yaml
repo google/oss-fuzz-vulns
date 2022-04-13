@@ -3,12 +3,14 @@ summary: Use-of-uninitialized-value in void intra_prediction_angular<unsigned sh
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=32682
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   void intra_prediction_angular<unsigned short>
   void decode_intra_prediction_internal<unsigned short>
   decode_intra_prediction
-modified: '2022-04-10T00:03:48.521203Z'
+  ```
+modified: '2022-04-13T03:04:42.459009Z'
 published: '2021-03-31T00:01:03.787831Z'
 references:
 - type: REPORT

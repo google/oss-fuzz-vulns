@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in hufDecode
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=40231
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   hufDecode
   internal_huf_decompress
   internal_exr_undo_piz
-modified: '2021-10-24T00:00:36.769338Z'
+  ```
+modified: '2022-04-13T03:04:37.038723Z'
 published: '2021-10-24T00:00:36.769120Z'
 references:
 - type: REPORT

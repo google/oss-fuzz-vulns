@@ -3,12 +3,14 @@ summary: Stack-buffer-overflow in insert_key
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=27719
 
+  ```
   Crash type: Stack-buffer-overflow READ 1
   Crash state:
   insert_key
   detect_netkey
   sc_pkcs15emu_tcos_init_ex
-modified: '2021-06-21T06:56:27.165336Z'
+  ```
+modified: '2022-04-13T03:04:41.680639Z'
 published: '2020-11-23T00:00:03.001326Z'
 references:
 - type: REPORT

@@ -3,12 +3,14 @@ summary: UNKNOWN WRITE in sudoers_lookup_check
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31250
 
+  ```
   Crash type: UNKNOWN WRITE
   Crash state:
   sudoers_lookup_check
   sudoers_lookup
   fuzz_sudoers.c
-modified: '2021-06-21T06:56:25.328820Z'
+  ```
+modified: '2022-04-13T03:04:39.326513Z'
 published: '2021-02-24T00:00:14.005613Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 322e0b3693fa43d281ffe082a1e08e523e8dd17f
   ecosystem_specific:
     severity: HIGH
+  versions: []

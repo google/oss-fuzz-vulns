@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in symbols
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15004
 
+  ```
   Crash type: Heap-buffer-overflow READ 4
   Crash state:
   symbols
   r_bin_object_set_items
   r_bin_object_new
-modified: '2021-06-21T06:56:23.223817Z'
+  ```
+modified: '2022-04-13T03:04:36.709304Z'
 published: '2020-07-01T00:00:06.002017Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 9392fc7117dd5240c76d8ab81d84b482bc968339
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

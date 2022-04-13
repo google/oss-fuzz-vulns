@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in mem_mono_copy_mono
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=43621
 
+  ```
   Crash type: Heap-buffer-overflow READ 2
   Crash state:
   mem_mono_copy_mono
   mem_mapped4_copy_color
   tile_clip_copy_color
-modified: '2022-01-16T00:00:36.108547Z'
+  ```
+modified: '2022-04-13T03:04:34.703597Z'
 published: '2022-01-16T00:00:36.108268Z'
 references:
 - type: REPORT

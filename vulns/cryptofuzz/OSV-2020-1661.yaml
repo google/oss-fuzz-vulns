@@ -3,12 +3,14 @@ summary: Use-of-uninitialized-value in fuzzing::memory::memory_test_msan
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25181
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   fuzzing::memory::memory_test_msan
   cryptofuzz::ExecutorBase<cryptofuzz::Buffer, cryptofuzz::operation::CMAC>::postp
   cryptofuzz::ExecutorBase<cryptofuzz::Buffer, cryptofuzz::operation::CMAC>::Run
-modified: '2021-06-21T06:56:21.792103Z'
+  ```
+modified: '2022-04-13T03:04:35.027684Z'
 published: '2020-08-25T00:00:58.570983Z'
 references:
 - type: REPORT
@@ -24,3 +26,4 @@ affected:
     - introduced: 69c82214652a0a5d2aab9e4ab077a87ffa8057fb
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

@@ -3,12 +3,14 @@ summary: Heap-use-after-free in decode_NXAST_RAW_ENCAP
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=27851
 
+  ```
   Crash type: Heap-use-after-free WRITE 2
   Crash state:
   decode_NXAST_RAW_ENCAP
   ofpact_decode
   ofpacts_decode
-modified: '2021-06-21T06:56:26.352640Z'
+  ```
+modified: '2022-04-13T03:04:40.738536Z'
 published: '2020-11-27T00:01:16.495329Z'
 references:
 - type: REPORT

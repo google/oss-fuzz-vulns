@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in get_32aligned_be64
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=27524
 
+  ```
   Crash type: Heap-buffer-overflow READ 4
   Crash state:
   get_32aligned_be64
   nl_attr_get_be64
   format_odp_tun_attr
-modified: '2021-06-21T06:56:26.309458Z'
+  ```
+modified: '2022-04-13T03:04:40.705503Z'
 published: '2020-11-17T00:00:58.901949Z'
 references:
 - type: REPORT

@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in void apply_sao_internal<unsigned short>
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14184
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   void apply_sao_internal<unsigned short>
   void apply_sao<unsigned char>
   thread_task_sao::work
-modified: '2021-06-23T06:25:11.856287Z'
+  ```
+modified: '2022-04-13T03:04:32.419159Z'
 published: '2020-07-22T21:49:50.071384Z'
 references:
 - type: REPORT
@@ -27,5 +29,5 @@ affected:
   - v1.5.0
   - v1.5.1
   ecosystem_specific:
-    introduced_range: unknown:0acdca433f338f1f378f6f104e72f5f95c4f8568
     severity: MEDIUM
+    introduced_range: unknown:0acdca433f338f1f378f6f104e72f5f95c4f8568

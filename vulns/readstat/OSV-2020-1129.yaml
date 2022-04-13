@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in rt_read_handler
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=12572
 
+  ```
   Crash type: Heap-buffer-overflow WRITE {*}
   Crash state:
   rt_read_handler
   sav_read_variable_missing_values
   sav_read_variable_record
-modified: '2021-06-23T06:29:25.701630Z'
+  ```
+modified: '2022-04-13T03:04:40.673543Z'
 published: '2020-07-22T21:49:49.305204Z'
 references:
 - type: REPORT
@@ -24,5 +26,6 @@ affected:
     - introduced: d1bfd735515803800cb9708e3fca9e5c1e8e7a48
     - fixed: 14265e717e48fc877697a27f1bee232116ce21e5
   ecosystem_specific:
-    severity: HIGH
     introduced_range: unknown:d1bfd735515803800cb9708e3fca9e5c1e8e7a48
+    severity: HIGH
+  versions: []

@@ -3,10 +3,12 @@ summary: Heap-buffer-overflow in sequence_compression_api.c
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=44122
 
+  ```
   Crash type: Heap-buffer-overflow WRITE 16
   Crash state:
   sequence_compression_api.c
-modified: '2022-01-29T00:00:24.594684Z'
+  ```
+modified: '2022-04-13T03:04:31.675527Z'
 published: '2022-01-29T00:00:24.594329Z'
 references:
 - type: REPORT

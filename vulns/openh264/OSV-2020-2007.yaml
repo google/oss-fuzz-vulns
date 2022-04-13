@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in WelsDec::WelsCheckAndRecoverForFutureDecoding
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26220
 
+  ```
   Crash type: Heap-buffer-overflow WRITE {*}
   Crash state:
   WelsDec::WelsCheckAndRecoverForFutureDecoding
   WelsDec::WelsInitBSliceRefList
   WelsDec::InitRefPicList
-modified: '2021-06-21T06:56:23.655755Z'
+  ```
+modified: '2022-04-13T03:04:37.409264Z'
 published: '2020-10-10T00:00:11.992505Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: f1bb6d3acb057785b4d89e8228e23cc4fc9caa12
   ecosystem_specific:
     severity: HIGH
+  versions: []

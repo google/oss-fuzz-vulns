@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in decode_chars
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26674
 
+  ```
   Crash type: Heap-buffer-overflow WRITE 1
   Crash state:
   decode_chars
   decode_font
   process_text
-modified: '2021-06-21T06:56:18.532096Z'
+  ```
+modified: '2022-04-13T03:04:30.610125Z'
 published: '2020-10-28T00:00:05.887987Z'
 references:
 - type: REPORT

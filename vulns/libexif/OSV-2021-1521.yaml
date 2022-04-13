@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in exif_data_load_data_content
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=40617
 
+  ```
   Crash type: Heap-buffer-overflow READ 4
   Crash state:
   exif_data_load_data_content
   exif_data_load_data
   exif_loader_get_data
-modified: '2021-11-03T00:00:07.006719Z'
+  ```
+modified: '2022-04-13T03:04:40.842031Z'
 published: '2021-11-03T00:00:07.006490Z'
 references:
 - type: REPORT

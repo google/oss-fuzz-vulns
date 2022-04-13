@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in parse_sec_attr_44
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18798
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   parse_sec_attr_44
   setcos_select_file
   sc_select_file
-modified: '2021-06-21T06:56:27.074822Z'
+  ```
+modified: '2022-04-13T03:04:41.597761Z'
 published: '2020-07-01T00:00:25.178023Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: e50bc29bd9519c9f4c43e9f3cf34b5b8a9aa38da
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

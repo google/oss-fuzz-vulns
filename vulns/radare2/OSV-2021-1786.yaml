@@ -3,12 +3,14 @@ summary: Segv on unknown address in r_buf_free
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=43092
 
+  ```
   Crash type: Segv on unknown address
   Crash state:
   r_buf_free
   destroy
   r_bin_file_free
-modified: '2021-12-31T00:00:11.428553Z'
+  ```
+modified: '2022-04-13T03:04:36.579017Z'
 published: '2021-12-31T00:00:11.428301Z'
 references:
 - type: REPORT

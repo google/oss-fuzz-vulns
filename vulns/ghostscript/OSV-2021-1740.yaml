@@ -3,12 +3,14 @@ summary: Stack-buffer-overflow in pdfi_annot_draw_LE_one
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42783
 
+  ```
   Crash type: Stack-buffer-overflow WRITE {*}
   Crash state:
   pdfi_annot_draw_LE_one
   pdfi_annot_draw_LE
   pdfi_annot_draw_Line
-modified: '2021-12-23T00:00:41.224888Z'
+  ```
+modified: '2022-04-13T03:04:34.351988Z'
 published: '2021-12-23T00:00:41.224661Z'
 references:
 - type: REPORT

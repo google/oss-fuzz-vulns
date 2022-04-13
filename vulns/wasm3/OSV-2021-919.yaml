@@ -3,12 +3,14 @@ summary: UNKNOWN READ in v_FindFunction
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=35801
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   v_FindFunction
   m3_FindFunction
   fuzzer.c
-modified: '2021-07-05T00:01:12.284218Z'
+  ```
+modified: '2022-04-13T03:04:30.666785Z'
 published: '2021-07-05T00:01:12.283873Z'
 references:
 - type: REPORT

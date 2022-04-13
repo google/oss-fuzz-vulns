@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in cras_rclient_message_from_client
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15058
 
+  ```
   Crash type: Heap-buffer-overflow READ 4
   Crash state:
   cras_rclient_message_from_client
   cras_rclient_buffer_from_client
   rclient_message.cc
-modified: '2021-06-21T06:56:27.922080Z'
+  ```
+modified: '2022-04-13T03:04:42.603373Z'
 published: '2020-07-01T00:00:26.392362Z'
 references:
 - type: REPORT
@@ -26,3 +28,4 @@ affected:
     - introduced: d2f8aea7c38919fbee0feb9a474f4c9524e6231f
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

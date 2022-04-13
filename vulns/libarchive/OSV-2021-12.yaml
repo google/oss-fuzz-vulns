@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in read_bits_16
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29221
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   read_bits_16
   decode_number
   do_uncompress_block
-modified: '2021-06-21T06:56:26.718414Z'
+  ```
+modified: '2022-04-13T03:04:41.237623Z'
 published: '2021-01-05T00:01:28.725353Z'
 references:
 - type: REPORT

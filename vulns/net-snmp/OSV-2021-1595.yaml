@@ -3,12 +3,14 @@ summary: UNKNOWN WRITE in sprint_realloc_hinted_integer
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=41205
 
+  ```
   Crash type: UNKNOWN WRITE
   Crash state:
   sprint_realloc_hinted_integer
   sprint_realloc_integer
   snprint_integer
-modified: '2022-04-06T00:10:36.899162Z'
+  ```
+modified: '2022-04-13T03:04:35.800568Z'
 published: '2021-11-21T00:00:06.936393Z'
 references:
 - type: REPORT

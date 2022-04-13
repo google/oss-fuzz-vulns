@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in cras_channel_remix_conv_create
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23612
 
+  ```
   Crash type: Heap-buffer-overflow READ 4
   Crash state:
   cras_channel_remix_conv_create
   audio_thread_config_global_remix
   ccr_handle_message_from_client
-modified: '2021-06-21T06:56:27.889986Z'
+  ```
+modified: '2022-04-13T03:04:42.576554Z'
 published: '2020-07-09T00:00:09.165795Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 144bf3828e41b26c7746be463d17d6ea55dd7163
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in CFF::CFF2VariationStore::serialize
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11713
 
+  ```
   Crash type: Heap-buffer-overflow READ {*}
   Crash state:
   CFF::CFF2VariationStore::serialize
   _write_cff2
   _hb_subset_cff2
-modified: '2021-06-21T06:56:20.424939Z'
+  ```
+modified: '2022-04-13T03:04:32.853223Z'
 published: '2021-01-13T00:00:43.025385Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: c31092ab34641072606f854408eb1bea18ed2507
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in H5MM_memcpy
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30749
 
+  ```
   Crash type: Heap-buffer-overflow READ {*}
   Crash state:
   H5MM_memcpy
   H5VM_memcpyvv
   H5D__compact_readvv
-modified: '2022-03-26T00:03:43.126723Z'
+  ```
+modified: '2022-04-13T03:04:42.957992Z'
 published: '2021-02-11T00:00:57.089990Z'
 references:
 - type: REPORT

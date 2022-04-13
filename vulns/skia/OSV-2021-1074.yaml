@@ -3,12 +3,14 @@ summary: Use-of-uninitialized-value in SkBaseDevice::save
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=36647
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   SkBaseDevice::save
   SkCanvas::internalSave
   SkCanvas::internalSaveLayer
-modified: '2021-07-30T00:01:28.710527Z'
+  ```
+modified: '2022-04-13T03:04:33.780866Z'
 published: '2021-07-30T00:01:28.710335Z'
 references:
 - type: REPORT
@@ -24,5 +26,6 @@ affected:
     - introduced: 222c1c16317c54a8701e7ccf767a1a62b4f30627
     - fixed: 17eaf6216046fba422081c8bb4d5580008ab283e
   ecosystem_specific:
-    fixed_range: 222c1c16317c54a8701e7ccf767a1a62b4f30627:17eaf6216046fba422081c8bb4d5580008ab283e
     severity: MEDIUM
+    fixed_range: 222c1c16317c54a8701e7ccf767a1a62b4f30627:17eaf6216046fba422081c8bb4d5580008ab283e
+  versions: []

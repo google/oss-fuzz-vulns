@@ -3,12 +3,14 @@ summary: UNKNOWN READ in libfsext_directory_entry_read_data
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=33935
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   libfsext_directory_entry_read_data
   libfsext_directory_read_inline_data
   libfsext_directory_read_file_io_handle
-modified: '2021-06-21T06:56:27.287841Z'
+  ```
+modified: '2022-04-13T03:04:41.897348Z'
 published: '2021-05-05T00:00:09.753732Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: e29196674e2152935af6d454e09021855c159435
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

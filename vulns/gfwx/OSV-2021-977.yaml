@@ -4,12 +4,14 @@ summary: Dynamic-stack-buffer-overflow in std::__1::pair<unsigned int, unsigned 
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=36062
 
+  ```
   Crash type: Dynamic-stack-buffer-overflow WRITE 4
   Crash state:
   std::__1::pair<unsigned int, unsigned int>::pair<unsigned int, unsigned int, fal
   std::__1::pair<std::__1::__unwrap_ref_decay<unsigned int>::type, std::__1::__unw
   void GFWX::decode<short>
-modified: '2021-07-13T00:01:21.215848Z'
+  ```
+modified: '2022-04-13T03:04:32.606614Z'
 published: '2021-07-13T00:01:21.215619Z'
 references:
 - type: REPORT
@@ -26,3 +28,4 @@ affected:
     - fixed: 9293b105b3f50033a4017f02685e3feb672f517a
   ecosystem_specific:
     severity: null
+  versions: []

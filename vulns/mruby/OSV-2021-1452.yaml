@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in mrb_funcall_with_block
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=39937
 
+  ```
   Crash type: Heap-buffer-overflow WRITE 8
   Crash state:
   mrb_funcall_with_block
   mrb_instance_new
   mrb_funcall_with_block
-modified: '2021-10-15T00:00:40.001938Z'
+  ```
+modified: '2022-04-13T03:04:39.698442Z'
 published: '2021-10-15T00:00:40.001741Z'
 references:
 - type: REPORT

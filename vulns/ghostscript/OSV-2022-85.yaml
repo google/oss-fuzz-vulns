@@ -3,12 +3,14 @@ summary: UNKNOWN READ in pdfi_setcolorN
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=43994
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   pdfi_setcolorN
   pdfi_interpret_stream_operator
   pdfi_interpret_content_stream
-modified: '2022-01-24T00:00:56.571452Z'
+  ```
+modified: '2022-04-13T03:04:34.722894Z'
 published: '2022-01-24T00:00:56.571243Z'
 references:
 - type: REPORT

@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in pcpp::IPv6AuthenticationHeader::getExtensionLen
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=43290
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   pcpp::IPv6AuthenticationHeader::getExtensionLen
   pcpp::IPv6Layer::parseExtensions
   pcpp::IPv6Layer::IPv6Layer
-modified: '2022-01-05T00:00:46.966136Z'
+  ```
+modified: '2022-04-13T03:04:38.574058Z'
 published: '2022-01-05T00:00:46.965901Z'
 references:
 - type: REPORT

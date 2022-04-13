@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in H5F_addr_decode_len
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29776
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   H5F_addr_decode_len
   H5F_addr_decode
   H5G_ent_decode
-modified: '2022-03-26T00:04:28.424348Z'
+  ```
+modified: '2022-04-13T03:04:42.994680Z'
 published: '2021-01-22T00:00:16.221512Z'
 references:
 - type: REPORT

@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in seturl
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42892
 
+  ```
   Crash type: Heap-buffer-overflow READ {*}
   Crash state:
   seturl
   parseurl
   curl_url_set
-modified: '2021-12-25T00:01:59.000356Z'
+  ```
+modified: '2022-04-13T03:04:42.895414Z'
 published: '2021-12-25T00:01:59.000146Z'
 references:
 - type: REPORT

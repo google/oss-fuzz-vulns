@@ -3,12 +3,14 @@ summary: Stack-buffer-overflow in ot::NetworkData::PrefixTlv::GetPrefixLength
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23267
 
+  ```
   Crash type: Stack-buffer-overflow READ 1
   Crash state:
   ot::NetworkData::PrefixTlv::GetPrefixLength
   ot::NetworkData::NetworkData::FindPrefix
   ot::NetworkData::Leader::Validate
-modified: '2021-06-21T06:56:25.004741Z'
+  ```
+modified: '2022-04-13T03:04:38.930668Z'
 published: '2020-06-24T01:51:12.118424Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 2c258a3f3e0a09315fe41ea2c32e8b0ecab8176b
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

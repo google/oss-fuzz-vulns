@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in Imf_2_5::FastHufDecoder::decode
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29106
 
+  ```
   Crash type: Heap-buffer-overflow READ 2
   Crash state:
   Imf_2_5::FastHufDecoder::decode
   Imf_2_5::hufUncompress
   Imf_2_5::PizCompressor::uncompress
-modified: '2021-06-21T06:56:23.456075Z'
+  ```
+modified: '2022-04-13T03:04:37.123418Z'
 published: '2021-01-01T00:00:05.623596Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 1c0d8f7703da1555378bcf7357b9d2d898246d59
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

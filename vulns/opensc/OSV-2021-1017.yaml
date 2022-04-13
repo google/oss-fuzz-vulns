@@ -3,12 +3,14 @@ summary: Stack-buffer-overflow in piv_compute_signature
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=36200
 
+  ```
   Crash type: Stack-buffer-overflow WRITE {*}
   Crash state:
   piv_compute_signature
   sc_compute_signature
   use_key
-modified: '2021-07-16T00:00:22.598811Z'
+  ```
+modified: '2022-04-13T03:04:41.569910Z'
 published: '2021-07-16T00:00:22.598607Z'
 references:
 - type: REPORT

@@ -3,12 +3,14 @@ summary: Stack-buffer-overflow in write_png_comment
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=16154
 
+  ```
   Crash type: Stack-buffer-overflow WRITE {*}
   Crash state:
   write_png_comment
   vips_slist_map2
   vips_image_map
-modified: '2021-06-23T06:28:00.210126Z'
+  ```
+modified: '2022-04-13T03:04:38.107476Z'
 published: '2020-07-22T21:49:38.743050Z'
 references:
 - type: REPORT
@@ -24,6 +26,7 @@ affected:
     - introduced: 0f1e278dd97163de5890117abdc9707fecc27e9f
     - fixed: cfe0857ae102818d4ce5e9f4564af9d6bfb090da
   ecosystem_specific:
-    fixed_range: 0f1e278dd97163de5890117abdc9707fecc27e9f:cfe0857ae102818d4ce5e9f4564af9d6bfb090da
-    introduced_range: unknown:0f1e278dd97163de5890117abdc9707fecc27e9f
     severity: HIGH
+    introduced_range: unknown:0f1e278dd97163de5890117abdc9707fecc27e9f
+    fixed_range: 0f1e278dd97163de5890117abdc9707fecc27e9f:cfe0857ae102818d4ce5e9f4564af9d6bfb090da
+  versions: []

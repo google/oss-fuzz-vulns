@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in encoded_to_buf
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25785
 
+  ```
   Crash type: Heap-buffer-overflow WRITE 1
   Crash state:
   encoded_to_buf
   flb_utils_write_str
   msgpack2json
-modified: '2021-06-21T06:56:24.479346Z'
+  ```
+modified: '2022-04-13T03:04:38.437196Z'
 published: '2020-09-20T00:00:19.063209Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 15254d5bb2101995b32c7e34e86d01a1a878590b
   ecosystem_specific:
     severity: HIGH
+  versions: []

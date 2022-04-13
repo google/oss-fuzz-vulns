@@ -3,12 +3,14 @@ summary: Use-of-uninitialized-value in WelsDec::WelsDeblockingMb
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=27306
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   WelsDec::WelsDeblockingMb
   WelsDec::WelsDeblockingFilterSlice
   WelsDec::WelsTargetSliceConstruction
-modified: '2021-06-21T06:56:23.674478Z'
+  ```
+modified: '2022-04-13T03:04:37.425490Z'
 published: '2020-11-09T00:00:12.506119Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: b52786888ddce9d6bc06b7825ba9bffc65924e0c
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

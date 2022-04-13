@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in looks_ucs32
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13222
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   looks_ucs32
   file_encoding
   file_buffer
-modified: '2021-06-21T06:56:18.747216Z'
+  ```
+modified: '2022-04-13T03:04:30.865616Z'
 published: '2020-07-01T00:00:15.186923Z'
 references:
 - type: REPORT

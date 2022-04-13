@@ -3,12 +3,14 @@ summary: UNKNOWN READ in arrow::Status arrow::VisitArrayInline<arrow::internal::
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20135
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   arrow::Status arrow::VisitArrayInline<arrow::internal::ValidateArrayDataVisitor>
   arrow::Status arrow::internal::ValidateArrayDataVisitor::ValidateListArray<arrow
   arrow::Status arrow::VisitArrayInline<arrow::internal::ValidateArrayDataVisitor>
-modified: '2021-06-23T06:25:11.659171Z'
+  ```
+modified: '2022-04-13T03:04:31.904776Z'
 published: '2020-07-22T21:50:06.904891Z'
 references:
 - type: REPORT
@@ -26,3 +28,4 @@ affected:
   ecosystem_specific:
     introduced_range: unknown:ccdc4b076cbd5fb03e1cbc42292def871d2b6035
     severity: MEDIUM
+  versions: []

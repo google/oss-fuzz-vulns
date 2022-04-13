@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in ndpi_search_mail_smtp_tcp
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20563
 
+  ```
   Crash type: Heap-buffer-overflow READ 4
   Crash state:
   ndpi_search_mail_smtp_tcp
   check_ndpi_tcp_flow_func
   ndpi_detection_process_packet
-modified: '2021-06-23T06:26:03.549836Z'
+  ```
+modified: '2022-04-13T03:04:36.053193Z'
 published: '2020-07-22T21:49:55.131761Z'
 references:
 - type: REPORT
@@ -24,5 +26,6 @@ affected:
     - introduced: e695dd6eade754b2d50bdf297ca8bdc4105f93ff
     - fixed: d4ae8a5f164167ef4fcf5b76b743e92b9e76d9dd
   ecosystem_specific:
-    severity: MEDIUM
     introduced_range: unknown:e695dd6eade754b2d50bdf297ca8bdc4105f93ff
+    severity: MEDIUM
+  versions: []

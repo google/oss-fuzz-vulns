@@ -3,10 +3,12 @@ summary: Global-buffer-overflow in template_fuzzer.cc
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18988
 
+  ```
   Crash type: Global-buffer-overflow WRITE 1
   Crash state:
   template_fuzzer.cc
-modified: '2021-03-09T04:49:05.831830Z'
+  ```
+modified: '2022-04-13T03:04:31.744454Z'
 published: '2020-07-01T00:00:03.741355Z'
 references:
 - type: REPORT
@@ -21,3 +23,4 @@ affected:
     events:
     - introduced: 0fc10a8c657339b2a26b8bf1b64d4431a293a24f
     - fixed: d7fc0d27fbea5c68d61444033517d0e962e822e6
+  versions: []

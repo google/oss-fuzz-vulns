@@ -3,12 +3,14 @@ summary: Dynamic-stack-buffer-overflow in janus_rtcp_incoming_transport_cc
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20529
 
+  ```
   Crash type: Dynamic-stack-buffer-overflow READ 2
   Crash state:
   janus_rtcp_incoming_transport_cc
   janus_rtcp_fix_ssrc
   rtcp_fuzzer.c
-modified: '2021-03-09T04:49:06.111343Z'
+  ```
+modified: '2022-04-13T03:04:33.969023Z'
 published: '2020-06-24T01:51:13.404463Z'
 references:
 - type: REPORT
@@ -23,3 +25,4 @@ affected:
     events:
     - introduced: 249f36fc3544620e0a0fcf070f704cc046c5a41f
     - fixed: 03cfcd34a472e1a249221a8fb1d275784ee63ea3
+  versions: []

@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in GDAL_LercNS::RLE::readCount
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=9282
 
+  ```
   Crash type: Heap-buffer-overflow READ 2
   Crash state:
   GDAL_LercNS::RLE::readCount
   GDAL_LercNS::RLE::decompress
   GDAL_LercNS::Lerc2::ReadMask
-modified: '2021-06-21T06:56:27.495680Z'
+  ```
+modified: '2022-04-13T03:04:42.118866Z'
 published: '2021-01-13T00:00:25.728786Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 3fe14382ac0cb578b7b5a978942b64dab97e2346
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

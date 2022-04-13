@@ -3,12 +3,14 @@ summary: Stack-buffer-overflow in ot::NetworkData::Leader::SendCommissioningGetR
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=17297
 
+  ```
   Crash type: Stack-buffer-overflow READ 1
   Crash state:
   ot::NetworkData::Leader::SendCommissioningGetResponse
   ot::NetworkData::Leader::HandleCommissioningGet
   ot::Coap::CoapBase::ProcessReceivedRequest
-modified: '2021-06-21T06:56:25.189347Z'
+  ```
+modified: '2022-04-13T03:04:39.086968Z'
 published: '2020-06-30T00:00:48.691484Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 8be8bf1fdff6181453a2c5e946618186b8b64c54
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

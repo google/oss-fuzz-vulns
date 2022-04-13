@@ -3,12 +3,14 @@ summary: UNKNOWN READ in helper_ret_stb_mmu_x86_64
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=38438
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   helper_ret_stb_mmu_x86_64
   resume_all_vcpus_x86_64
   vm_start_x86_64
-modified: '2021-09-12T00:00:11.430374Z'
+  ```
+modified: '2022-04-13T03:04:39.164394Z'
 published: '2021-09-12T00:00:11.430175Z'
 references:
 - type: REPORT

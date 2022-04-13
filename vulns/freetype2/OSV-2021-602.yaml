@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in read_paint
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=32913
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   read_paint
   tt_face_get_paint
   FT_Get_Paint
-modified: '2021-06-21T06:56:21.680287Z'
+  ```
+modified: '2022-04-13T03:04:34.927118Z'
 published: '2021-04-06T00:00:07.623862Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 9927e6ec5a322fcaac8e3a649b152fca2c88cf93
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

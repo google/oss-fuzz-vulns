@@ -3,12 +3,14 @@ summary: Use-of-uninitialized-value in match
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=1065
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   match
   file_softmagic
   mget
-modified: '2021-06-23T06:24:50.367936Z'
+  ```
+modified: '2022-04-13T03:04:30.902318Z'
 published: '2021-01-13T21:57:41.999614Z'
 references:
 - type: REPORT
@@ -26,3 +28,4 @@ affected:
   ecosystem_specific:
     introduced_range: 1426b2cab25b2de843d7380864e054ce072518db:8a942980f3f705226300f43f4b49a557c0918660
     severity: MEDIUM
+  versions: []

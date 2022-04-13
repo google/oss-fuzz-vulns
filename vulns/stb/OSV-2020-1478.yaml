@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in load_jpeg_image
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23153
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   load_jpeg_image
   stbi__jpeg_load
   stbi__load_main
-modified: '2021-06-21T06:56:26.425090Z'
+  ```
+modified: '2022-04-13T03:04:40.801582Z'
 published: '2020-07-28T00:00:27.954104Z'
 references:
 - type: REPORT
@@ -24,3 +26,4 @@ affected:
     - introduced: f54acd4e13430c5122cab4ca657705c84aa61b08
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

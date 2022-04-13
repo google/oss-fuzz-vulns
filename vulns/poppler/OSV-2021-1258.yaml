@@ -3,12 +3,14 @@ summary: Bad-cast to SplashPattern from invalid vptr
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=38669
 
+  ```
   Crash type: Bad-cast
   Crash state:
   Bad-cast to SplashPattern from invalid vptr
   SplashState::~SplashState
   Splash::restoreState
-modified: '2021-09-15T00:00:11.561069Z'
+  ```
+modified: '2022-04-13T03:04:37.235796Z'
 published: '2021-09-15T00:00:11.560834Z'
 references:
 - type: REPORT

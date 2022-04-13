@@ -3,12 +3,14 @@ summary: Stack-use-after-scope in std::__1::__function::__func<bool grk::Wavelet
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=46468
 
+  ```
   Crash type: Stack-use-after-scope WRITE 1
   Crash state:
   std::__1::__function::__func<bool grk::WaveletReverse::decompress_partial_tile<g
   tf::Executor::_invoke
   tf::Executor::_consume_task
-modified: '2022-04-09T00:00:21.286528Z'
+  ```
+modified: '2022-04-13T03:04:39.574474Z'
 published: '2022-04-09T00:00:21.286205Z'
 references:
 - type: REPORT

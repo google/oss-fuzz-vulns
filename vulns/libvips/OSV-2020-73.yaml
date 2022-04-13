@@ -3,12 +3,14 @@ summary: UNKNOWN WRITE in vips_foreign_load_gif_render
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20613
 
+  ```
   Crash type: UNKNOWN WRITE
   Crash state:
   vips_foreign_load_gif_render
   vips_foreign_load_gif_next_page
   vips_foreign_load_gif_generate
-modified: '2021-06-21T06:56:24.220388Z'
+  ```
+modified: '2022-04-13T03:04:38.047842Z'
 published: '2020-06-24T01:51:12.855986Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 3ad3c30ab4f3791e438558e4a9cf5481da2f1156
   ecosystem_specific:
     severity: HIGH
+  versions: []

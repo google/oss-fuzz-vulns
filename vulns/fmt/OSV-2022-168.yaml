@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in fmt::v8::detail::big_decimal_fp fmt::v8::detail
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=44791
 
+  ```
   Crash type: Heap-buffer-overflow WRITE 1
   Crash state:
   fmt::v8::detail::big_decimal_fp fmt::v8::detail::write_padded<
   std::__1::back_insert_iterator<fmt::v8::basic_memory_buffer<char, 500ul, std::__
   std::__1::back_insert_iterator<fmt::v8::basic_memory_buffer<char, 500ul, std::__
-modified: '2022-02-19T00:01:40.526231Z'
+  ```
+modified: '2022-04-13T03:04:33.952012Z'
 published: '2022-02-19T00:01:40.526021Z'
 references:
 - type: REPORT

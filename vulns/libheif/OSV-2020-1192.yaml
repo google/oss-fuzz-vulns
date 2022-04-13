@@ -3,12 +3,14 @@ summary: Index-out-of-bounds in decoder_context::has_sps
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13591
 
+  ```
   Crash type: Index-out-of-bounds
   Crash state:
   decoder_context::has_sps
   pic_parameter_set::read
   decoder_context::read_pps_NAL
-modified: '2021-06-23T06:25:11.868126Z'
+  ```
+modified: '2022-04-13T03:04:32.436045Z'
 published: '2020-07-22T21:49:55.027546Z'
 references:
 - type: REPORT
@@ -24,6 +26,7 @@ affected:
     - introduced: 0acdca433f338f1f378f6f104e72f5f95c4f8568
     - fixed: a691e7ac53b31d1145a6c1210f692dbc9050809e
   ecosystem_specific:
-    introduced_range: unknown:0acdca433f338f1f378f6f104e72f5f95c4f8568
-    severity: MEDIUM
     fixed_range: a78ec32c9fda3b46d63c08b37f0cf5ffab9a98f9:a691e7ac53b31d1145a6c1210f692dbc9050809e
+    severity: MEDIUM
+    introduced_range: unknown:0acdca433f338f1f378f6f104e72f5f95c4f8568
+  versions: []

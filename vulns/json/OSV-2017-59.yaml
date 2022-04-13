@@ -4,12 +4,14 @@ summary: Heap-buffer-overflow in nlohmann::basic_json<std::__1::map, std::__1::v
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=381
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   nlohmann::basic_json<std::__1::map, std::__1::vector, std::__1::basic_string<cha
   nlohmann::basic_json<std::__1::map, std::__1::vector, std::__1::basic_string<cha
   nlohmann::basic_json<std::__1::map, std::__1::vector, std::__1::basic_string<cha
-modified: '2021-06-21T06:56:21.378248Z'
+  ```
+modified: '2022-04-13T03:04:34.067021Z'
 published: '2021-01-13T21:56:29.409531Z'
 references:
 - type: REPORT
@@ -26,3 +28,4 @@ affected:
     - fixed: 476507031890fd6effb7b447a156168803b0bd37
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

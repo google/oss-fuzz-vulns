@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in apreq_header_attribute
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=40985
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   apreq_header_attribute
   create_multipart_context
   apreq_parse_multipart
-modified: '2021-11-14T00:01:26.531346Z'
+  ```
+modified: '2022-04-13T03:04:35.778838Z'
 published: '2021-11-14T00:01:26.531147Z'
 references:
 - type: REPORT

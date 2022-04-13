@@ -4,12 +4,14 @@ summary: Container-overflow in std::__1::__function::__func<LLVMFuzzerTestOneInp
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=39263
 
+  ```
   Crash type: Container-overflow READ 1
   Crash state:
   std::__1::__function::__func<LLVMFuzzerTestOneInput::$_0, std::__1::allocator<LL
   std::__1::__function::__func<LLVMFuzzerTestOneInput::$_1, std::__1::allocator<LL
   function.h
-modified: '2021-09-27T00:00:27.699856Z'
+  ```
+modified: '2022-04-13T03:04:41.008888Z'
 published: '2021-09-27T00:00:27.699638Z'
 references:
 - type: REPORT

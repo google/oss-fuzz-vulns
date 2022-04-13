@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in irc_parse_message_tags
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31443
 
+  ```
   Crash type: Heap-buffer-overflow READ 8
   Crash state:
   irc_parse_message_tags
   irc_server_event_tags
   signal_emit_real
-modified: '2021-06-21T06:56:21.360450Z'
+  ```
+modified: '2022-04-13T03:04:33.988940Z'
 published: '2021-02-28T00:00:59.573272Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: a8144cd98fdb08c1d942195f65fbc604f7bd3055
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

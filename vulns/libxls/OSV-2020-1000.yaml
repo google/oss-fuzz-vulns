@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in xls_isCellTooSmall
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=12619
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   xls_isCellTooSmall
   xls_preparseWorkSheet
   xls_parseWorkSheet
-modified: '2021-06-23T06:28:44.068940Z'
+  ```
+modified: '2022-04-13T03:04:39.352181Z'
 published: '2020-07-22T21:49:39.123105Z'
 references:
 - type: REPORT
@@ -26,3 +28,4 @@ affected:
   ecosystem_specific:
     introduced_range: unknown:59d46ecc398f26a2dd5b94e599168df3d54ab478
     severity: MEDIUM
+  versions: []

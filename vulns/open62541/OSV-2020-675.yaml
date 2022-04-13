@@ -3,12 +3,14 @@ summary: Use-of-uninitialized-value in UA_base64
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14625
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   UA_base64
   ByteString_encodeJson
   Variant_encodeJson
-modified: '2021-06-21T06:56:26.899585Z'
+  ```
+modified: '2022-04-13T03:04:41.392956Z'
 published: '2020-07-01T00:00:24.096789Z'
 references:
 - type: REPORT

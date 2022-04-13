@@ -3,10 +3,12 @@ summary: UNKNOWN READ in numberparsing.h
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26858
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   numberparsing.h
-modified: '2021-06-21T06:56:19.203188Z'
+  ```
+modified: '2022-04-13T03:04:31.438301Z'
 published: '2020-11-02T00:00:15.881957Z'
 references:
 - type: REPORT
@@ -23,3 +25,4 @@ affected:
     - fixed: 0b82f071157db9848f45dd8cf07ced05c8eb8022
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

@@ -3,12 +3,14 @@ summary: Segv on unknown address in arrow::ipc::ReadMessage
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20124
 
+  ```
   Crash type: Segv on unknown address
   Crash state:
   arrow::ipc::ReadMessage
   arrow::ipc::RecordBatchFileReader::RecordBatchFileReaderImpl::ReadMessageFromBlo
   arrow::ipc::RecordBatchFileReader::RecordBatchFileReaderImpl::ReadDictionaries
-modified: '2021-06-23T06:25:11.627094Z'
+  ```
+modified: '2022-04-13T03:04:31.845158Z'
 published: '2020-07-22T21:49:52.147608Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 724da320eaac94003a8f1229d6a820fe8c8c1816
   ecosystem_specific:
     introduced_range: unknown:ccdc4b076cbd5fb03e1cbc42292def871d2b6035
+  versions: []

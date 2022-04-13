@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in void cv::copyToMat<int>
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25779
 
+  ```
   Crash type: Heap-buffer-overflow READ 4
   Crash state:
   void cv::copyToMat<int>
   cv::decodeSRGBData
   cv::Jpeg2KOpjDecoder::readData
-modified: '2021-06-21T06:56:19.262997Z'
+  ```
+modified: '2022-04-13T03:04:31.501046Z'
 published: '2020-09-21T00:00:12.969129Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: f7b8f522ff4084d584628811a02a621736c3a731
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

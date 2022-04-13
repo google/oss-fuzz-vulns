@@ -3,12 +3,14 @@ summary: UNKNOWN READ in ot::Ip6::Address::PrefixMatch
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13349
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   ot::Ip6::Address::PrefixMatch
   ot::Dhcp6::Dhcp6Server::RemovePrefixAgent
   ot::Dhcp6::Dhcp6Server::UpdateService
-modified: '2021-06-21T06:56:25.084733Z'
+  ```
+modified: '2022-04-13T03:04:38.998672Z'
 published: '2020-07-01T00:00:20.187182Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 0938be7f8405bf61d5e9698bb8996da8b7471d84
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

@@ -3,12 +3,14 @@ summary: Use-of-uninitialized-value in llvm_ks::MCAssembler::computeFragmentSize
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22482
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   llvm_ks::MCAssembler::computeFragmentSize
   llvm_ks::MCAsmLayout::layoutFragment
   llvm_ks::MCAsmLayout::ensureValid
-modified: '2021-06-21T06:56:24.156765Z'
+  ```
+modified: '2022-04-13T03:04:37.932542Z'
 published: '2020-07-14T22:13:46.021034Z'
 references:
 - type: REPORT

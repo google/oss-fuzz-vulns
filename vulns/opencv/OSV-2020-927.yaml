@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in LogLuv24toXYZ
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14011
 
+  ```
   Crash type: Heap-buffer-overflow WRITE 4
   Crash state:
   LogLuv24toXYZ
   Luv24toXYZ
   LogLuvDecode24
-modified: '2021-11-22T06:27:24.135643Z'
+  ```
+modified: '2022-04-13T03:04:31.537150Z'
 published: '2020-07-22T00:00:11.527956Z'
 references:
 - type: REPORT
@@ -29,5 +31,5 @@ affected:
   - 3.4.5
   - 4.0.1-openvino
   ecosystem_specific:
-    introduced_range: unknown:6bcf0b5519c190826cf0f21efd87cbe256eabc48
     severity: HIGH
+    introduced_range: unknown:6bcf0b5519c190826cf0f21efd87cbe256eabc48

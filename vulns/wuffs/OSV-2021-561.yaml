@@ -3,12 +3,14 @@ summary: UNKNOWN WRITE in wuffs_base__pixel_swizzler__bgr__bgra_premul__src
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=32451
 
+  ```
   Crash type: UNKNOWN WRITE
   Crash state:
   wuffs_base__pixel_swizzler__bgr__bgra_premul__src
   wuffs_base__pixel_swizzler__swizzle_interleaved_from_slice
   fuzz
-modified: '2021-06-21T06:56:26.944488Z'
+  ```
+modified: '2022-04-13T03:04:41.450587Z'
 published: '2021-03-26T00:00:06.908702Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: b645180357d2ba2a5dcd610fff4ffe2872540dad
   ecosystem_specific:
     severity: HIGH
+  versions: []

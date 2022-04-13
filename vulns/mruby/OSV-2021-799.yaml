@@ -3,12 +3,14 @@ summary: UNKNOWN READ in mrb_ary_shift_m
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34691
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   mrb_ary_shift_m
   mrb_vm_exec
   mrb_vm_run
-modified: '2021-06-21T06:56:25.582170Z'
+  ```
+modified: '2022-04-13T03:04:39.713825Z'
 published: '2021-05-27T00:00:07.387216Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 9a72869043e0377ec549a325a074e592f82ef5ed
   ecosystem_specific:
     severity: HIGH
+  versions: []

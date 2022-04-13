@@ -3,12 +3,14 @@ summary: Heap-use-after-free in Envoy::Server::InitManagerImpl::initializeTarget
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13221
 
+  ```
   Crash type: Heap-use-after-free READ 8
   Crash state:
   Envoy::Server::InitManagerImpl::initializeTarget
   Envoy::Server::InitManagerImpl::initialize
   Envoy::Server::ValidationInstance::initialize
-modified: '2021-06-21T06:56:19.380830Z'
+  ```
+modified: '2022-04-13T03:04:31.621610Z'
 published: '2020-07-01T00:00:11.677829Z'
 references:
 - type: REPORT

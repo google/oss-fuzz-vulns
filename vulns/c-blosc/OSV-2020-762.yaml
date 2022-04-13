@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in blosclz_compress
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23794
 
+  ```
   Crash type: Heap-buffer-overflow WRITE 1
   Crash state:
   blosclz_compress
   blosc_c
   do_job
-modified: '2021-06-21T06:56:22.417850Z'
+  ```
+modified: '2022-04-13T03:04:35.757590Z'
 published: '2020-07-09T00:00:22.344814Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: e3fdd3e506a23ec66d9f3fe2fe346e4a03b1787a
   ecosystem_specific:
     severity: HIGH
+  versions: []

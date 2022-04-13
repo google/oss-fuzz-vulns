@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in mk_string_copy_substr
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=28277
 
+  ```
   Crash type: Heap-buffer-overflow READ {*}
   Crash state:
   mk_string_copy_substr
   mk_rconf_meta_add
   mk_rconf_read
-modified: '2021-11-22T06:21:57.211208Z'
+  ```
+modified: '2022-04-13T03:04:38.424624Z'
 published: '2020-12-05T00:00:48.941441Z'
 references:
 - type: REPORT

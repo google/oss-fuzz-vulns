@@ -3,12 +3,14 @@ summary: Stack-buffer-overflow in line_join_points
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42796
 
+  ```
   Crash type: Stack-buffer-overflow WRITE 4
   Crash state:
   line_join_points
   stroke_add_compat
   gx_stroke_path_only
-modified: '2021-12-23T00:00:50.608103Z'
+  ```
+modified: '2022-04-13T03:04:34.389644Z'
 published: '2021-12-23T00:00:50.607893Z'
 references:
 - type: REPORT

@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in parse_sigalgs_list
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=9808
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   parse_sigalgs_list
   SSL_CTX_set1_sigalgs_list
   std::__1::function<void
-modified: '2021-06-21T06:56:20.182468Z'
+  ```
+modified: '2022-04-13T03:04:32.601109Z'
 published: '2021-01-13T00:01:24.412685Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: ddedf6d455e33d6a0b3bc40581700f3d252029d7
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

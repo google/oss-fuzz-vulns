@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in ih264d_cavlc_4x4res_block_totalcoeff_11to16
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=16514
 
+  ```
   Crash type: Heap-buffer-overflow READ 4
   Crash state:
   ih264d_cavlc_4x4res_block_totalcoeff_11to16
   ih264d_cavlc_parse4x4coeff_n0to7
   ih264d_cavlc_parse_8x8block_both_available
-modified: '2021-06-23T06:25:53.180041Z'
+  ```
+modified: '2022-04-13T03:04:35.548197Z'
 published: '2020-07-22T21:49:51.644958Z'
 references:
 - type: REPORT
@@ -26,3 +28,4 @@ affected:
   ecosystem_specific:
     severity: MEDIUM
     introduced_range: unknown:9046ac21822cbb46358b5731294e6e47db571e34
+  versions: []

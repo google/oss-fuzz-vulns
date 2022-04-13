@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in arrow::Status arrow::ConcatenateOffsets<int>
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23916
 
+  ```
   Crash type: Heap-buffer-overflow READ 4
   Crash state:
   arrow::Status arrow::ConcatenateOffsets<int>
   arrow::ConcatenateImpl::Visit
   arrow::Status arrow::VisitTypeInline<arrow::ConcatenateImpl>
-modified: '2021-06-21T06:56:19.686093Z'
+  ```
+modified: '2022-04-13T03:04:31.986646Z'
 published: '2020-07-21T00:00:27.530378Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 52afc10adc0c65e3c999665fad28ce78944e23b0
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

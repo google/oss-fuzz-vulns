@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in Variant_decodeJson
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18259
 
+  ```
   Crash type: Heap-buffer-overflow READ 4
   Crash state:
   Variant_decodeJson
   UA_decodeJson
   fuzz_json_decode_encode.cc
-modified: '2021-06-21T06:56:26.856813Z'
+  ```
+modified: '2022-04-13T03:04:41.358059Z'
 published: '2020-07-01T00:00:23.391973Z'
 references:
 - type: REPORT

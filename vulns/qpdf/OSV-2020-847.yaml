@@ -3,12 +3,14 @@ summary: Use-of-uninitialized-value in ycck_cmyk_convert
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18732
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   ycck_cmyk_convert
   sep_upsample
   process_data_simple_main
-modified: '2021-06-21T06:56:19.346444Z'
+  ```
+modified: '2022-04-13T03:04:31.574083Z'
 published: '2020-07-14T22:13:44.357655Z'
 references:
 - type: REPORT

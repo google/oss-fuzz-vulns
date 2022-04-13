@@ -3,12 +3,14 @@ summary: UNKNOWN WRITE in wolfCrypt_custom_free
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26214
 
+  ```
   Crash type: UNKNOWN WRITE
   Crash state:
   wolfCrypt_custom_free
   wolfSSL_Free
   GetDhPublicKey
-modified: '2021-06-21T06:56:22.365964Z'
+  ```
+modified: '2022-04-13T03:04:35.700900Z'
 published: '2020-10-10T00:00:12.931523Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: a4bfa0dec78d2e427480a550b45c172e3a69c107
   ecosystem_specific:
     severity: HIGH
+  versions: []

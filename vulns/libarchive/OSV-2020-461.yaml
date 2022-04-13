@@ -3,12 +3,14 @@ summary: Index-out-of-bounds in parse_file_extra_owner
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14393
 
+  ```
   Crash type: Index-out-of-bounds
   Crash state:
   parse_file_extra_owner
   process_head_file_extra
   process_head_file
-modified: '2021-06-23T06:29:53.702541Z'
+  ```
+modified: '2022-04-13T03:04:41.205848Z'
 published: '2020-07-01T00:00:10.823501Z'
 references:
 - type: REPORT
@@ -27,3 +29,4 @@ affected:
     introduced_range: 660802fa971274258a91be9a239b7528983e2f81:64e68f2034e6c5c6fd20d6b274b67fbdb88c3804
     severity: MEDIUM
     fixed_range: 7b3068c4bf7a217a1838db280072653197d30012:ba641f73f3d758d9032b3f0e5597a9c6e593a505
+  versions: []

@@ -3,11 +3,13 @@ summary: Heap-buffer-overflow in snmp_add_var
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=37564
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   snmp_add_var
   snmp_api_fuzzer.c
-modified: '2021-08-25T00:01:21.513860Z'
+  ```
+modified: '2022-04-13T03:04:35.811191Z'
 published: '2021-08-25T00:01:21.513657Z'
 references:
 - type: REPORT

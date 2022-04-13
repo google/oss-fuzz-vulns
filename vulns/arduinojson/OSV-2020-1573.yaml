@@ -3,12 +3,14 @@ summary: Use-of-uninitialized-value in void ArduinoJsonNUMBER_71::Utf8::encodeCo
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24633
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   void ArduinoJsonNUMBER_71::Utf8::encodeCodepoint<ArduinoJsonNUMBER_71::StringCop
   ArduinoJsonNUMBER_71::JsonDeserializer<ArduinoJsonNUMBER_71::BoundedReader<unsig
   ArduinoJsonNUMBER_71::JsonDeserializer<ArduinoJsonNUMBER_71::BoundedReader<unsig
-modified: '2021-06-21T06:56:25.351737Z'
+  ```
+modified: '2022-04-13T03:04:39.357700Z'
 published: '2020-08-04T00:00:11.334079Z'
 references:
 - type: REPORT

@@ -3,12 +3,14 @@ summary: Heap-use-after-free in e1000e_write_packet_to_guest
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=28194
 
+  ```
   Crash type: Heap-use-after-free READ 8
   Crash state:
   e1000e_write_packet_to_guest
   e1000e_receive_iov
   e1000e_nc_receive_iov
-modified: '2021-06-21T06:56:20.861342Z'
+  ```
+modified: '2022-04-13T03:04:33.332274Z'
 published: '2020-12-04T00:00:19.497055Z'
 references:
 - type: REPORT

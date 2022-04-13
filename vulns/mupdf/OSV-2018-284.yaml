@@ -3,12 +3,14 @@ summary: Stack-buffer-overflow in pdf_lookup_cmap_full
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=5494
 
+  ```
   Crash type: Stack-buffer-overflow WRITE 4
   Crash state:
   pdf_lookup_cmap_full
   pdf_remap_cmap_range
   pdf_remap_cmap
-modified: '2021-03-09T04:49:04.915198Z'
+  ```
+modified: '2022-04-13T03:04:31.343138Z'
 published: '2021-01-15T00:00:22.790093Z'
 references:
 - type: REPORT
@@ -23,3 +25,4 @@ affected:
     events:
     - introduced: 80b59185030368fecf38d9abe13ffb0302a60c2a
     - fixed: 71ceebcf56e682504da22c4035b39a2d451e8ffd
+  versions: []

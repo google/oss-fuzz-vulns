@@ -3,12 +3,14 @@ summary: Segv on unknown address in llvm_ks::StringRef::operator
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30932
 
+  ```
   Crash type: Segv on unknown address
   Crash state:
   llvm_ks::StringRef::operator
   llvm_ks::HashString
   llvm_ks::StringMapImpl::LookupBucketFor
-modified: '2021-03-09T05:46:31.086400Z'
+  ```
+modified: '2022-04-13T03:04:37.911221Z'
 published: '2021-02-15T00:00:40.792550Z'
 references:
 - type: REPORT

@@ -3,12 +3,14 @@ summary: UNKNOWN READ in write_cond_nodes_to_conf
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=45523
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   write_cond_nodes_to_conf
   sepol_kernel_policydb_to_conf
   binpolicy-fuzzer.c
-modified: '2022-03-14T00:01:31.071603Z'
+  ```
+modified: '2022-04-13T03:04:42.314289Z'
 published: '2022-03-14T00:01:31.071382Z'
 references:
 - type: REPORT

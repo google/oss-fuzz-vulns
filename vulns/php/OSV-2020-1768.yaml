@@ -3,12 +3,14 @@ summary: Memcpy-param-overlap in zend_lex_tstring
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23547
 
+  ```
   Crash type: Memcpy-param-overlap
   Crash state:
   zend_lex_tstring
   zendparse
   zend_compile
-modified: '2021-06-21T06:56:20.933553Z'
+  ```
+modified: '2022-04-13T03:04:33.439261Z'
 published: '2020-09-16T00:00:23.588932Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: aa2e68cf6e4adcaaf884ea6b17f182e3be552fa7
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

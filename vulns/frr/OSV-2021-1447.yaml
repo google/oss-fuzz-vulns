@@ -1,12 +1,13 @@
 id: OSV-2021-1447
 summary: UNKNOWN READ
-details: |-
+details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=39900
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
-  NULL
-modified: '2021-10-14T00:00:18.116327Z'
+  NULL```
+modified: '2022-04-13T03:04:35.553810Z'
 published: '2021-10-14T00:00:18.116118Z'
 references:
 - type: REPORT

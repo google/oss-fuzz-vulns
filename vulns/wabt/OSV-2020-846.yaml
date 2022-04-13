@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in std::__1::char_traits<char>::compare
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22358
 
+  ```
   Crash type: Heap-buffer-overflow READ 6
   Crash state:
   std::__1::char_traits<char>::compare
   wabt::string_view::compare
   wabt::operator==
-modified: '2021-06-23T06:27:59.894222Z'
+  ```
+modified: '2022-04-13T03:04:37.979970Z'
 published: '2020-07-14T22:13:43.983088Z'
 references:
 - type: REPORT
@@ -32,5 +34,5 @@ affected:
   - gh-actions-test
   - gh-actions-test2
   ecosystem_specific:
-    severity: MEDIUM
     introduced_range: a5a9b341b7fb7aa66427d4701871d2b3c73bcc87:d087e702d520207871ae82c58461fb08d58af187
+    severity: MEDIUM

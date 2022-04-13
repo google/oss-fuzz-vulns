@@ -3,12 +3,14 @@ summary: Null-dereference READ in session_startup
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=43419
 
+  ```
   Crash type: Null-dereference READ
   Crash state:
   session_startup
   libssh2_session_handshake
   ssh2_client_fuzzer.cc
-modified: '2022-01-09T00:01:35.904141Z'
+  ```
+modified: '2022-04-13T03:04:41.712276Z'
 published: '2022-01-09T00:01:35.903934Z'
 references:
 - type: REPORT

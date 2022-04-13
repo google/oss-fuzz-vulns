@@ -2,11 +2,11 @@ id: OSV-2021-396
 summary: Heap-buffer-overflow in OT::OffsetTo<OT::Anchor, OT::IntType<unsigned short,
   2u>, true>* hb_serialize_co
 details: "OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30908\n\
-  \nCrash type: Heap-buffer-overflow READ 2\nCrash state:\nOT::OffsetTo<OT::Anchor,\
+  \n```\nCrash type: Heap-buffer-overflow READ 2\nCrash state:\nOT::OffsetTo<OT::Anchor,\
   \ OT::IntType<unsigned short, 2u>, true>* hb_serialize_co\nOT::OffsetTo<OT::Anchor,\
   \ OT::IntType<unsigned short, 2u>, true>* hb_serialize_co\nbool OT::AnchorMatrix::serialize<hb_filter_iter_t<hb_range_iter_t<unsigned\
-  \ int, \n"
-modified: '2021-06-21T06:56:20.531476Z'
+  \ int, \n```\n"
+modified: '2022-04-13T03:04:32.951934Z'
 published: '2021-02-14T00:01:08.088962Z'
 references:
 - type: REPORT
@@ -23,3 +23,4 @@ affected:
     - fixed: 5ca353a2d026f655af61ae159adcaeace1fdb09c
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

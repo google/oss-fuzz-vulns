@@ -3,12 +3,14 @@ summary: Heap-use-after-free in xmlStaticCopyNode
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26022
 
+  ```
   Crash type: Heap-use-after-free READ 4
   Crash state:
   xmlStaticCopyNode
   xmlCopyNode
   xmlXIncludeLoadTxt
-modified: '2021-06-21T06:56:25.741975Z'
+  ```
+modified: '2022-04-13T03:04:39.952934Z'
 published: '2020-09-29T00:00:43.015893Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 847a3a1181d59dc49c1b446d646d344d0543af3e
   ecosystem_specific:
     severity: HIGH
+  versions: []

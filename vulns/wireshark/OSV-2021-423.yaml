@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in dissect_vjc_uncomp
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31121
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   dissect_vjc_uncomp
   call_dissector_work
   dissector_try_uint
-modified: '2021-06-21T06:56:24.072093Z'
+  ```
+modified: '2022-04-13T03:04:37.843092Z'
 published: '2021-02-20T00:01:09.114506Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 72c9b4b1e8e9bb5ae0ffc4493f3fd86b06c014d8
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

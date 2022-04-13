@@ -4,12 +4,14 @@ summary: UNKNOWN READ in std::__1::_MetaBase<__can_be_converted_to_string_view<c
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23429
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   std::__1::_MetaBase<__can_be_converted_to_string_view<char, std::__1::char_trait
   bool std::__1::operator<<char, std::__1::char_traits<char>, std::__1::allocator<
   std::__1::__tree_iterator<std::__1::__value_type<std::__1::basic_string<char, st
-modified: '2021-06-23T06:31:10.272547Z'
+  ```
+modified: '2022-04-13T03:04:42.741248Z'
 published: '2020-07-22T21:50:03.564988Z'
 references:
 - type: REPORT

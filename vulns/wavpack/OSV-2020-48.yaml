@@ -3,12 +3,14 @@ summary: UNKNOWN READ in decode_fast
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20448
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   decode_fast
   unpack_dsd_samples
   WavpackUnpackSamples
-modified: '2021-06-21T06:56:27.725592Z'
+  ```
+modified: '2022-04-13T03:04:42.371093Z'
 published: '2020-06-24T01:51:11.743367Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: eefe90e7724a0ffce730655f417e34336b6d0a2b
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

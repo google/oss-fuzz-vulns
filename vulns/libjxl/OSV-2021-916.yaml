@@ -3,12 +3,14 @@ summary: Use-of-uninitialized-value in jxl::ModularFrameDecoder::DecodeAcMetadat
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=35778
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   jxl::ModularFrameDecoder::DecodeAcMetadata
   jxl::FrameDecoder::ProcessDCGroup
   jxl::ThreadPool::RunCallState<jxl::Status
-modified: '2021-07-04T00:00:13.275187Z'
+  ```
+modified: '2022-04-13T03:04:41.822581Z'
 published: '2021-07-04T00:00:13.274805Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: f8dd198a2d8ad4f4fccd591349a384bc0eff5ec9
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

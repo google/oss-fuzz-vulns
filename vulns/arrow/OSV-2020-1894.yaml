@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in parquet::arrow::ApplyOriginalStorageMetadata
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26064
 
+  ```
   Crash type: Heap-buffer-overflow READ 4
   Crash state:
   parquet::arrow::ApplyOriginalStorageMetadata
   parquet::arrow::SchemaManifest::Make
   parquet::arrow::FileReader::Make
-modified: '2021-06-21T06:56:19.765384Z'
+  ```
+modified: '2022-04-13T03:04:32.072063Z'
 published: '2020-10-02T00:00:08.666922Z'
 references:
 - type: REPORT

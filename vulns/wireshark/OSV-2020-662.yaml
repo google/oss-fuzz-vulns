@@ -3,12 +3,14 @@ summary: UNKNOWN READ in wmem_strdup_printf
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13725
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   wmem_strdup_printf
   dissect_parameter_sequence
   dissect_rtps_submessage_v2
-modified: '2021-06-23T07:58:09.527923Z'
+  ```
+modified: '2022-04-13T03:04:37.886597Z'
 published: '2020-07-01T00:00:23.358358Z'
 references:
 - type: REPORT

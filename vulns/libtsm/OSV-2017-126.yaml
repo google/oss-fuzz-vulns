@@ -3,10 +3,12 @@ summary: Bad-cast to const std::__1::__less<unsigned long, unsigned long> *_star
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=606
 
+  ```
   Crash type: Bad-cast
   Crash state:
   Bad-cast to const std::__1::__less<unsigned long, unsigned long> *_start
-modified: '2021-06-21T06:56:25.803053Z'
+  ```
+modified: '2022-04-13T03:04:40.015212Z'
 published: '2021-01-15T00:00:07.054153Z'
 references:
 - type: REPORT
@@ -23,3 +25,4 @@ affected:
     - fixed: b73acb4c71698a764763ae8dad94c1e8a2b8d7a3
   ecosystem_specific:
     severity: HIGH
+  versions: []

@@ -3,12 +3,14 @@ summary: UNKNOWN READ in ot::Buffer::GetNextBuffer
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13412
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   ot::Buffer::GetNextBuffer
   ot::MessagePool::FreeBuffers
   ot::Coap::ResponsesQueue::DequeueAllResponses
-modified: '2021-06-21T06:56:25.140271Z'
+  ```
+modified: '2022-04-13T03:04:39.045579Z'
 published: '2020-07-01T00:00:21.221442Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: a3548df579617e737b075be4a88591e68195e115
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

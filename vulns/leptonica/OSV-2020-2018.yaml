@@ -3,12 +3,14 @@ summary: Heap-use-after-free in fpixChangeRefcount
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26260
 
+  ```
   Crash type: Heap-use-after-free READ 4
   Crash state:
   fpixChangeRefcount
   fpixDestroy
   fpix2_fuzzer.cc
-modified: '2021-06-21T06:56:20.292380Z'
+  ```
+modified: '2022-04-13T03:04:32.714945Z'
 published: '2020-10-12T00:00:40.582555Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 7d0c940768fa3f7d07396dbae1d668cfded6bf05
   ecosystem_specific:
     severity: HIGH
+  versions: []

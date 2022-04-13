@@ -3,12 +3,14 @@ summary: Use-of-uninitialized-value in __gxx_personality_v0
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=4310
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   __gxx_personality_v0
   _Unwind_RaiseException
   ErrorHandler::Throw
-modified: '2021-06-23T06:25:53.135697Z'
+  ```
+modified: '2022-04-13T03:04:35.368733Z'
 published: '2021-01-13T21:57:49.330781Z'
 references:
 - type: REPORT

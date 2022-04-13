@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in coap_opt_length
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26371
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   coap_opt_length
   coap_pdu_parse_opt
   coap_pdu_parse
-modified: '2021-06-21T06:56:27.755759Z'
+  ```
+modified: '2022-04-13T03:04:42.397429Z'
 published: '2020-10-17T00:00:43.023138Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 238fded2d8d6288429810573c2b27dc73898134f
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

@@ -3,11 +3,13 @@ summary: Use-of-uninitialized-value in ares_parse_caa_reply
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26012
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   ares_parse_caa_reply
   ares-test-fuzz.c
-modified: '2021-06-23T06:26:05.624133Z'
+  ```
+modified: '2022-04-13T03:04:36.390657Z'
 published: '2020-09-28T00:00:13.102068Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
   ecosystem_specific:
     introduced_range: 05eb0c1dca9175358c725e4833e923e73a1a769b:89e9eeb4efbd4ad487ef9c9debbe9920e7b3b236
     severity: MEDIUM
+  versions: []

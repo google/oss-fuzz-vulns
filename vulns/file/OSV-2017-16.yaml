@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in file_strncmp
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=750
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   file_strncmp
   magiccheck
   match
-modified: '2021-10-19T00:04:41.065219Z'
+  ```
+modified: '2022-04-13T03:04:30.843383Z'
 published: '2021-01-13T00:00:27.841127Z'
 references:
 - type: REPORT

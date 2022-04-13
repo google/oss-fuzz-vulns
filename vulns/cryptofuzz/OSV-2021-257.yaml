@@ -3,12 +3,14 @@ summary: Stack-buffer-overflow in kdf_sshkdf_set_ctx_params
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30037
 
+  ```
   Crash type: Stack-buffer-overflow READ 1
   Crash state:
   kdf_sshkdf_set_ctx_params
   EVP_KDF_CTX_set_params
   cryptofuzz::module::OpenSSL::OpKDF_SSH
-modified: '2021-06-21T06:56:21.869529Z'
+  ```
+modified: '2022-04-13T03:04:35.105209Z'
 published: '2021-01-30T00:01:07.919205Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 515dd7aaf8ac0cbe6c0a5adc7aede32092cebf0a
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in get_word_rgb_row
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=32964
 
+  ```
   Crash type: Heap-buffer-overflow WRITE 1
   Crash state:
   get_word_rgb_row
   tjLoadImage
   compress.cc
-modified: '2021-06-21T06:56:23.977256Z'
+  ```
+modified: '2022-04-13T03:04:37.694188Z'
 published: '2021-04-07T00:01:13.031934Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: f35fd27ec641c42d6b115bfa595e483ec58188d2
   ecosystem_specific:
     severity: HIGH
+  versions: []

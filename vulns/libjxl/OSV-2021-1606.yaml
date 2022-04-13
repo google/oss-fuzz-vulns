@@ -3,12 +3,14 @@ summary: Segv on unknown address in jxl::N_AVX2::SingleFromSingle
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=41233
 
+  ```
   Crash type: Segv on unknown address
   Crash state:
   jxl::N_AVX2::SingleFromSingle
   jxl::ThreadPool::SequentialRunnerStatic
   jxl::ModularFrameDecoder::ModularImageToDecodedRect
-modified: '2021-11-22T00:00:41.045329Z'
+  ```
+modified: '2022-04-13T03:04:41.806651Z'
 published: '2021-11-22T00:00:41.045135Z'
 references:
 - type: REPORT

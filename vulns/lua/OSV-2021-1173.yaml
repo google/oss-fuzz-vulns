@@ -3,12 +3,14 @@ summary: UNKNOWN READ in luaG_getfuncline
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=37678
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   luaG_getfuncline
   luaG_runerror
   luaD_growstack
-modified: '2022-01-28T00:04:59.836905Z'
+  ```
+modified: '2022-04-13T03:04:30.697967Z'
 published: '2021-08-28T00:00:12.122245Z'
 references:
 - type: REPORT

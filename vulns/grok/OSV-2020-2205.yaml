@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in ojph::local::ojph_decode_codeblock
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=27924
 
+  ```
   Crash type: Heap-buffer-overflow WRITE 4
   Crash state:
   ojph::local::ojph_decode_codeblock
   grk::t1_ht::T1HT::decompress
   grk::DecompressBlockExec::open
-modified: '2021-06-21T06:56:25.469527Z'
+  ```
+modified: '2022-04-13T03:04:39.528978Z'
 published: '2020-11-28T00:01:12.405006Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: d16525621f47141af0ed655932c89125c4780e93
   ecosystem_specific:
     severity: HIGH
+  versions: []

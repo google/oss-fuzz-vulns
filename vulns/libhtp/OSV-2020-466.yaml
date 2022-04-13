@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in LzmaDec_DecodeToDic
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=17198
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   LzmaDec_DecodeToDic
   LzmaDec_DecodeToBuf
   htp_gzip_decompressor_decompress
-modified: '2021-06-21T06:56:26.112694Z'
+  ```
+modified: '2022-04-13T03:04:40.509192Z'
 published: '2020-07-01T00:00:11.093231Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: fe16fa764f7cea57be5a288ee85b27dffc460f6f
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

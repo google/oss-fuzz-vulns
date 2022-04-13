@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in grk::FileFormatDecompress::apply_palette_clr
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=33544
 
+  ```
   Crash type: Heap-buffer-overflow WRITE 16
   Crash state:
   grk::FileFormatDecompress::apply_palette_clr
   grk::FileFormatDecompress::applyColour
   grk_decompress_fuzzer.cpp
-modified: '2022-04-11T00:04:44.797006Z'
+  ```
+modified: '2022-04-13T03:04:39.511602Z'
 published: '2021-04-23T00:00:13.554175Z'
 references:
 - type: REPORT

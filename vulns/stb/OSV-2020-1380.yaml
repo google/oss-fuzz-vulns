@@ -3,12 +3,14 @@ summary: Use-of-uninitialized-value in stbi__jpeg_decode_block_prog_ac
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22589
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   stbi__jpeg_decode_block_prog_ac
   stbi__parse_entropy_coded_data
   stbi__decode_jpeg_image
-modified: '2021-06-21T06:56:26.430945Z'
+  ```
+modified: '2022-04-13T03:04:40.806471Z'
 published: '2020-07-28T00:00:05.816594Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: b42009b3b9d4ca35bc703f5310eedc74f584be58
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

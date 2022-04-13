@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in LibRaw_buffer_datastream::read
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30324
 
+  ```
   Crash type: Heap-buffer-overflow WRITE {*}
   Crash state:
   LibRaw_buffer_datastream::read
   LibRaw::uncompressed_fp_dng_load_raw
   LibRaw::unpack
-modified: '2021-06-21T06:56:25.772101Z'
+  ```
+modified: '2022-04-13T03:04:39.979494Z'
 published: '2021-02-06T00:00:24.519678Z'
 references:
 - type: REPORT
@@ -24,3 +26,4 @@ affected:
     - introduced: 4c954948ba2de262b9cb23a1843fb8651aa3dcc1
   ecosystem_specific:
     severity: HIGH
+  versions: []

@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in heredoc_remove_indent
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30886
 
+  ```
   Crash type: Heap-buffer-overflow READ {*}
   Crash state:
   heredoc_remove_indent
   parse_string
   parser_yylex
-modified: '2021-06-21T06:56:25.589707Z'
+  ```
+modified: '2022-04-13T03:04:39.733776Z'
 published: '2021-02-14T00:00:02.251664Z'
 references:
 - type: REPORT

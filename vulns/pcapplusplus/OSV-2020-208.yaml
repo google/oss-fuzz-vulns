@@ -4,12 +4,14 @@ summary: Use-of-uninitialized-value in std::__1::basic_string<char, std::__1::ch
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22235
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<ch
   std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<ch
   pcpp::IDnsResource::IDnsResource
-modified: '2021-06-23T06:28:22.118163Z'
+  ```
+modified: '2022-04-13T03:04:38.657493Z'
 published: '2020-06-24T01:51:19.019962Z'
 references:
 - type: REPORT
@@ -27,3 +29,4 @@ affected:
   ecosystem_specific:
     introduced_range: 016e90f193d4383b94143d0b2be26408cc32c703:5ef0c6da8c34b5d4155f865e94bdf83cb18fcbad
     severity: MEDIUM
+  versions: []

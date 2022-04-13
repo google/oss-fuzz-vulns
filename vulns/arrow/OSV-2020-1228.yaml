@@ -3,12 +3,14 @@ summary: Heap-use-after-free in arrow::internal::CountSetBits
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20120
 
+  ```
   Crash type: Heap-use-after-free READ 8
   Crash state:
   arrow::internal::CountSetBits
   arrow::Array::null_count
   arrow::internal::ValidateArray
-modified: '2021-06-23T06:25:11.669418Z'
+  ```
+modified: '2022-04-13T03:04:31.916896Z'
 published: '2020-07-22T21:49:58.406648Z'
 references:
 - type: REPORT
@@ -24,5 +26,6 @@ affected:
     - introduced: ccdc4b076cbd5fb03e1cbc42292def871d2b6035
     - fixed: 724da320eaac94003a8f1229d6a820fe8c8c1816
   ecosystem_specific:
-    severity: HIGH
     introduced_range: unknown:ccdc4b076cbd5fb03e1cbc42292def871d2b6035
+    severity: HIGH
+  versions: []

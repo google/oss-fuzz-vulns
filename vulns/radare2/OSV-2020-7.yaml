@@ -3,12 +3,14 @@ summary: Segv on unknown address in pvector_free_elem
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22734
 
+  ```
   Crash type: Segv on unknown address
   Crash state:
   pvector_free_elem
   vector_free_elems
   r_vector_clear
-modified: '2021-03-09T04:49:06.029438Z'
+  ```
+modified: '2022-04-13T03:04:36.625957Z'
 published: '2020-06-24T01:51:09.499211Z'
 references:
 - type: REPORT
@@ -23,3 +25,4 @@ affected:
     events:
     - introduced: 0b91114d7d528f88e3b85f40c6bd1eabb0ee6319
     - fixed: ee9025c9170c15dea5e68d4d5179d41e78868493
+  versions: []

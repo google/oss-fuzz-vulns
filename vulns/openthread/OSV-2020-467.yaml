@@ -3,12 +3,14 @@ summary: UNKNOWN READ in ot::MessageQueue::GetTail
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13345
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   ot::MessageQueue::GetTail
   ot::Message::GetNext
   ot::MeshForwarder::GetDirectTransmission
-modified: '2021-06-21T06:56:24.909140Z'
+  ```
+modified: '2022-04-13T03:04:38.847365Z'
 published: '2020-07-01T00:00:11.176081Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: e7acaa887997f529182c6cbcd29f144af8b453ba
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

@@ -3,12 +3,14 @@ summary: UNKNOWN READ in __libcpp_memchr
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25711
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   __libcpp_memchr
   memchr
   pcpp::cross_platform_memmem
-modified: '2021-11-11T00:10:03.508287Z'
+  ```
+modified: '2022-04-13T03:04:38.515798Z'
 published: '2020-09-18T00:00:38.027965Z'
 references:
 - type: REPORT

@@ -3,12 +3,14 @@ summary: UNKNOWN READ in _hb_ot_shape_fallback_kern
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=10762
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   _hb_ot_shape_fallback_kern
   hb_ot_position
   hb_ot_shape_internal
-modified: '2021-06-21T06:56:20.685116Z'
+  ```
+modified: '2022-04-13T03:04:33.120426Z'
 published: '2021-01-13T00:01:11.447378Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 5c65ed800de4caef5ee9ad2111225fa5d8235737
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

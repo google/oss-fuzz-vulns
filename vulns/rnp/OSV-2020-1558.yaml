@@ -3,12 +3,14 @@ summary: Stack-buffer-overflow in dst_print_s2k
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24538
 
+  ```
   Crash type: Stack-buffer-overflow READ 1
   Crash state:
   dst_print_s2k
   stream_dump_packets_raw
   stream_dump_packets
-modified: '2021-06-21T06:56:21.901032Z'
+  ```
+modified: '2022-04-13T03:04:35.162017Z'
 published: '2020-08-01T00:00:10.494492Z'
 references:
 - type: REPORT
@@ -27,3 +29,4 @@ affected:
     - fixed: 943cfd6d474f11910d2f137ed8cf0fc39297423f
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

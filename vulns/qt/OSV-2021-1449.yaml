@@ -3,12 +3,14 @@ summary: UNKNOWN WRITE in void QtPrivate::QPodArrayOps<QPainterPath::Element>::e
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=39957
 
+  ```
   Crash type: UNKNOWN WRITE
   Crash state:
   void QtPrivate::QPodArrayOps<QPainterPath::Element>::emplace<QPainterPath::Eleme
   QPainterPath::lineTo
   QOutlineMapper::clipElements
-modified: '2021-10-15T00:00:09.551056Z'
+  ```
+modified: '2022-04-13T03:04:36.901754Z'
 published: '2021-10-15T00:00:09.550775Z'
 references:
 - type: REPORT

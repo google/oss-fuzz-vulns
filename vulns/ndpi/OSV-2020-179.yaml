@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in get16
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20832
 
+  ```
   Crash type: Heap-buffer-overflow READ 2
   Crash state:
   get16
   search_valid_dns
   ndpi_search_dns
-modified: '2021-06-21T06:56:22.768947Z'
+  ```
+modified: '2022-04-13T03:04:36.237311Z'
 published: '2020-06-24T01:51:17.643208Z'
 references:
 - type: REPORT

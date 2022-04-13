@@ -4,12 +4,14 @@ summary: Heap-use-after-free in void draco::Metadata::AddEntry<std::__1::vector<
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24044
 
+  ```
   Crash type: Heap-use-after-free READ 8
   Crash state:
   void draco::Metadata::AddEntry<std::__1::vector<unsigned char, std::__1::allocat
   draco::MetadataDecoder::DecodeEntry
   draco::MetadataDecoder::DecodeMetadata
-modified: '2022-02-19T19:11:38.225972Z'
+  ```
+modified: '2022-04-13T03:04:42.734994Z'
 published: '2020-07-14T05:37:30.449855Z'
 references:
 - type: REPORT

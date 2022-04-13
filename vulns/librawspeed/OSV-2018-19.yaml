@@ -3,12 +3,14 @@ summary: Use-of-uninitialized-value in rawspeed::RawImageData::checkMemIsInitial
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=6796
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   rawspeed::RawImageData::checkMemIsInitialized
   rawspeed::RawDecoder::decodeRaw
   rawspeed::alignedMalloc
-modified: '2021-06-23T06:26:06.516274Z'
+  ```
+modified: '2022-04-13T03:04:36.482083Z'
 published: '2021-01-13T00:00:08.496128Z'
 references:
 - type: REPORT
@@ -27,5 +29,5 @@ affected:
   - v3.1
   ecosystem_specific:
     severity: MEDIUM
-    introduced_range: a4bee717f1ce54a16526454f92c22f2b79c7a04f:90dbb09c639869fbb65ad9d7f073b3c22c541732
     fixed_range: 688fa9d819177e917b0102e9ce4d5680952ebe55:98d3ec824f0b4e498b175fb937b4217319d01450
+    introduced_range: a4bee717f1ce54a16526454f92c22f2b79c7a04f:90dbb09c639869fbb65ad9d7f073b3c22c541732

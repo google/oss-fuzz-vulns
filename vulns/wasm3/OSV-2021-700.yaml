@@ -3,12 +3,14 @@ summary: UNKNOWN READ in ReadLEB_u32
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=33749
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   ReadLEB_u32
   InitElements
   Compile_ExtendedOpcode
-modified: '2021-06-21T06:56:18.562860Z'
+  ```
+modified: '2022-04-13T03:04:30.651451Z'
 published: '2021-04-29T00:00:12.162949Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 6bb612ccbfd5f8993a07a99092fab534722df1c3
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

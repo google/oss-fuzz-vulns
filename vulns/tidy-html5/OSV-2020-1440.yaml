@@ -3,12 +3,14 @@ summary: Use-of-uninitialized-value in PPrintText
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13014
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   PPrintText
   prvTidyPPrintTree
   prvTidyPPrintTree
-modified: '2021-08-18T00:04:05.036844Z'
+  ```
+modified: '2022-04-13T03:04:32.584249Z'
 published: '2020-07-28T00:00:19.153741Z'
 references:
 - type: REPORT

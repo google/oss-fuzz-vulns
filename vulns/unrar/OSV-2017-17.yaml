@@ -3,12 +3,14 @@ summary: Use-of-uninitialized-value in QuickOpen::Seek
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=4522
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   QuickOpen::Seek
   Archive::Seek
   QuickOpen::Load
-modified: '2021-06-23T06:25:48.978203Z'
+  ```
+modified: '2022-04-13T03:04:35.274300Z'
 published: '2021-01-13T00:00:28.517212Z'
 references:
 - type: REPORT

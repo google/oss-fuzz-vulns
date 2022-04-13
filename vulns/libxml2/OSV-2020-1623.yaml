@@ -3,12 +3,14 @@ summary: Heap-use-after-free in xmlXIncludeIncludeNode
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24925
 
+  ```
   Crash type: Heap-use-after-free READ 4
   Crash state:
   xmlXIncludeIncludeNode
   xmlXIncludeDoProcess
   xmlXIncludeLoadFallback
-modified: '2021-06-21T06:56:25.717935Z'
+  ```
+modified: '2022-04-13T03:04:39.927181Z'
 published: '2020-08-16T00:01:16.093615Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: dba82a8c0453b7d4d138167a771c1c2988b889be
   ecosystem_specific:
     severity: HIGH
+  versions: []

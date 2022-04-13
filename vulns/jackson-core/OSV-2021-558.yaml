@@ -3,12 +3,14 @@ summary: Uncaught exception in java.base/java.nio.Buffer.<init>
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=32399
 
+  ```
   Crash type: Uncaught exception
   Crash state:
   java.base/java.nio.Buffer.<init>
   java.base/java.nio.CharBuffer.<init>
   java.base/java.nio.HeapCharBuffer.<init>
-modified: '2021-06-23T06:25:10.597691Z'
+  ```
+modified: '2022-04-13T03:04:31.784176Z'
 published: '2021-03-25T00:01:05.933424Z'
 references:
 - type: REPORT
@@ -24,6 +26,7 @@ affected:
     - introduced: 2bd85ebcdd94233d9e59a0833f29e06ce4281f3b
     - fixed: 66b44ad1c0e1715454725b6d6ddade3102311584
   ecosystem_specific:
-    introduced_range: b051c9036ee505a7e85c81a704e2e43c5397200f:8a2036e948ee849b922121c061c002cb0e131bfa
-    severity: LOW
     fixed_range: 0deae137735e1c81159e83bd1b4613e6d6b36501:66b44ad1c0e1715454725b6d6ddade3102311584
+    severity: LOW
+    introduced_range: b051c9036ee505a7e85c81a704e2e43c5397200f:8a2036e948ee849b922121c061c002cb0e131bfa
+  versions: []

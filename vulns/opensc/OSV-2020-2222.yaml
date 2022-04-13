@@ -3,12 +3,14 @@ summary: Heap-double-free in sc_pkcs15_free_tokeninfo
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=28185
 
+  ```
   Crash type: Heap-double-free
   Crash state:
   sc_pkcs15_free_tokeninfo
   sc_pkcs15_card_free
   fuzz_pkcs15_reader.c
-modified: '2021-06-21T06:56:27.047841Z'
+  ```
+modified: '2022-04-13T03:04:41.564448Z'
 published: '2020-12-04T00:00:16.472882Z'
 references:
 - type: REPORT

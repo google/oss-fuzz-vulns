@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in OT::MathValueRecord::copy
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=39225
 
+  ```
   Crash type: Heap-buffer-overflow READ 4
   Crash state:
   OT::MathValueRecord::copy
   OT::MathGlyphAssembly::subset
   OT::MathGlyphConstruction::subset
-modified: '2021-09-27T00:01:25.283041Z'
+  ```
+modified: '2022-04-13T03:04:32.963380Z'
 published: '2021-09-27T00:01:25.282839Z'
 references:
 - type: REPORT

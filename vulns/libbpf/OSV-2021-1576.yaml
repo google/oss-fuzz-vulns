@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in __bpf_object__open
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=40957
 
+  ```
   Crash type: Heap-buffer-overflow WRITE 8
   Crash state:
   __bpf_object__open
   bpf_object__open_mem
   bpf-object-fuzzer.c
-modified: '2022-02-12T00:04:39.938660Z'
+  ```
+modified: '2022-04-13T03:04:36.768609Z'
 published: '2021-11-14T00:01:18.685915Z'
 references:
 - type: REPORT

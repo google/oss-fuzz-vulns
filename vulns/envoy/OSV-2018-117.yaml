@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in Envoy::StringUtil::itoa
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=10038
 
+  ```
   Crash type: Heap-buffer-overflow WRITE 1
   Crash state:
   Envoy::StringUtil::itoa
   Envoy::Http::HeaderString::setInteger
   Envoy::TestOneProtoInput
-modified: '2021-06-23T06:25:09.221951Z'
+  ```
+modified: '2022-04-13T03:04:31.611152Z'
 published: '2021-01-13T00:00:54.062431Z'
 references:
 - type: REPORT
@@ -24,5 +26,6 @@ affected:
     - introduced: 78ad2ef735657ba79393ce8f3a41259c136e41ed
     - fixed: f7d3cb638662f0787699b763134e1e64118d573f
   ecosystem_specific:
-    severity: HIGH
     introduced_range: f1aee97b079ad4a0130583ef7cd656351dd70bd7:f4ac32bfc884e418bd8c5bc7777e45f9d9f22b34
+    severity: HIGH
+  versions: []

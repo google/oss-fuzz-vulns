@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in pcpp::IPv6Extension::getExtensionLen
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22105
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   pcpp::IPv6Extension::getExtensionLen
   pcpp::IPv6Layer::parseExtensions
   pcpp::IPv6Layer::IPv6Layer
-modified: '2021-06-23T06:28:20.239866Z'
+  ```
+modified: '2022-04-13T03:04:38.520954Z'
 published: '2020-07-22T21:49:54.616174Z'
 references:
 - type: REPORT
@@ -26,3 +28,4 @@ affected:
   ecosystem_specific:
     severity: MEDIUM
     introduced_range: unknown:4366d2f86bf105025765a0ce3db6e647ba0f3508
+  versions: []

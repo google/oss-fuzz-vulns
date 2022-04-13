@@ -3,12 +3,14 @@ summary: Container-overflow in yysmiles_parse
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22242
 
+  ```
   Crash type: Container-overflow READ 8
   Crash state:
   yysmiles_parse
   RDKit::smiles_parse_helper
   RDKit::smiles_parse
-modified: '2021-06-23T06:30:02.347208Z'
+  ```
+modified: '2022-04-13T03:04:41.497030Z'
 published: '2020-07-22T00:00:26.027272Z'
 references:
 - type: REPORT
@@ -26,3 +28,4 @@ affected:
   ecosystem_specific:
     introduced_range: unknown:8cbce48c7dc73d6a246e704e3e175e7b355b34c2
     severity: MEDIUM
+  versions: []

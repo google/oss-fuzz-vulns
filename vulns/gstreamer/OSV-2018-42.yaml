@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in tap_type_find
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=8159
 
+  ```
   Crash type: Heap-buffer-overflow READ 12
   Crash state:
   tap_type_find
   gst_type_find_factory_call_function
   gst_type_find_helper_for_data
-modified: '2021-06-23T06:25:37.743489Z'
+  ```
+modified: '2022-04-13T03:04:33.806745Z'
 published: '2021-01-13T00:00:23.803331Z'
 references:
 - type: REPORT
@@ -30,6 +32,6 @@ affected:
   - 1.14.4
   - 1.14.5
   ecosystem_specific:
+    introduced_range: 554f604d37970c26fc61726eec2f81a384a691fc:4fb02fc85b70be631f5331b2547e5dc61ef7a43a
     fixed_range: 4fb02fc85b70be631f5331b2547e5dc61ef7a43a:80dfb7bb3f415dac465f89f8945a1546c4fcc280
     severity: MEDIUM
-    introduced_range: 554f604d37970c26fc61726eec2f81a384a691fc:4fb02fc85b70be631f5331b2547e5dc61ef7a43a

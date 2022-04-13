@@ -3,12 +3,14 @@ summary: UNKNOWN READ in perfetto::trace_processor::TraceStorage::GetIdForVariad
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=19999
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   perfetto::trace_processor::TraceStorage::GetIdForVariadicType
   perfetto::trace_processor::GlobalArgsTracker::AddArgSet
   perfetto::trace_processor::ArgsTracker::Flush
-modified: '2021-06-21T06:56:27.410060Z'
+  ```
+modified: '2022-04-13T03:04:42.008649Z'
 published: '2020-06-26T00:00:09.058036Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 0c7921b510e02ac4b935953225e4586b3f5d923c
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

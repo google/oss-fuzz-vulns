@@ -3,12 +3,14 @@ summary: Use-of-uninitialized-value in residual_coding
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=35950
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   residual_coding
   read_transform_unit
   read_transform_tree
-modified: '2022-04-10T00:03:48.351310Z'
+  ```
+modified: '2022-04-13T03:04:42.509489Z'
 published: '2021-07-10T00:01:12.890029Z'
 references:
 - type: REPORT

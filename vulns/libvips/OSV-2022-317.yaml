@@ -3,12 +3,14 @@ summary: Heap-use-after-free in save_marker
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=46421
 
+  ```
   Crash type: Heap-use-after-free WRITE 1
   Crash state:
   save_marker
   read_markers
   consume_markers
-modified: '2022-04-07T00:01:50.873974Z'
+  ```
+modified: '2022-04-13T03:04:38.002433Z'
 published: '2022-04-07T00:01:50.873728Z'
 references:
 - type: REPORT

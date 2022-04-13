@@ -3,12 +3,14 @@ summary: Container-overflow in parquet::schema::Unflatten
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20897
 
+  ```
   Crash type: Container-overflow READ 4
   Crash state:
   parquet::schema::Unflatten
   parquet::FileMetaData::FileMetaDataImpl::FileMetaDataImpl
   parquet::FileMetaData::FileMetaData
-modified: '2021-06-21T06:56:19.525631Z'
+  ```
+modified: '2022-04-13T03:04:31.828829Z'
 published: '2020-06-24T01:51:10.604817Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 6b87c6c9fb00ade7eff909afa4a6a61464cd516c
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

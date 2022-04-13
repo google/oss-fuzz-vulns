@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in parse_microsoft_mangled_name
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=40342
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   parse_microsoft_mangled_name
   microsoft_demangle
   r_bin_demangle_msvc
-modified: '2022-03-23T00:07:21.083785Z'
+  ```
+modified: '2022-04-13T03:04:36.726404Z'
 published: '2021-10-28T00:01:38.205304Z'
 references:
 - type: REPORT

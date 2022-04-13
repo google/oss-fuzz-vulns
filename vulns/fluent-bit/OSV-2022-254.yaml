@@ -3,12 +3,14 @@ summary: Heap-use-after-free in jsmn_parse
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=45651
 
+  ```
   Crash type: Heap-use-after-free WRITE 4
   Crash state:
   jsmn_parse
   flb_json_tokenise
   flb_pack_json_state
-modified: '2022-03-19T00:00:21.433679Z'
+  ```
+modified: '2022-04-13T03:04:38.320458Z'
 published: '2022-03-19T00:00:21.433441Z'
 references:
 - type: REPORT

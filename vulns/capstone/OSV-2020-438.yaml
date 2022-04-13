@@ -3,12 +3,14 @@ summary: Use-of-uninitialized-value in ARM_post_printer
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13768
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   ARM_post_printer
   fill_insn
   cs_disasm
-modified: '2021-11-22T06:21:31.487768Z'
+  ```
+modified: '2022-04-13T03:04:39.911191Z'
 published: '2020-07-01T00:00:09.576759Z'
 references:
 - type: REPORT

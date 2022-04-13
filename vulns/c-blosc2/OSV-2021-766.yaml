@@ -3,12 +3,14 @@ summary: Negative-size-param in frame_get_vlmetalayers
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34259
 
+  ```
   Crash type: Negative-size-param
   Crash state:
   frame_get_vlmetalayers
   frame_to_schunk
   blosc2_schunk_from_buffer
-modified: '2021-05-15T00:00:29.864212Z'
+  ```
+modified: '2022-04-13T03:04:40.477958Z'
 published: '2021-05-15T00:00:29.863946Z'
 references:
 - type: REPORT

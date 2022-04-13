@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in internal_huf_decompress
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=39601
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   internal_huf_decompress
   internal_exr_undo_piz
   default_decompress_chunk
-modified: '2021-10-06T00:01:27.953341Z'
+  ```
+modified: '2022-04-13T03:04:37.140024Z'
 published: '2021-10-06T00:01:27.953116Z'
 references:
 - type: REPORT

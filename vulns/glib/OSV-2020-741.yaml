@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in uri_decoder
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23815
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   uri_decoder
   uri_decode
   g_uri_parse_params
-modified: '2021-06-21T06:56:20.080395Z'
+  ```
+modified: '2022-04-13T03:04:32.487072Z'
 published: '2020-07-04T00:00:01.437763Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: f9d165add1342ecae6cdde1b95e9ce63320768dd
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in Core::Stream::File::open_path
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=43978
 
+  ```
   Crash type: Heap-buffer-overflow READ {*}
   Crash state:
   Core::Stream::File::open_path
   Core::Stream::File::open
   Audio::FlacLoaderPlugin::FlacLoaderPlugin
-modified: '2022-01-24T00:00:39.186656Z'
+  ```
+modified: '2022-04-13T03:04:32.119317Z'
 published: '2022-01-24T00:00:39.186446Z'
 references:
 - type: REPORT

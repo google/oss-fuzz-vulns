@@ -3,12 +3,14 @@ summary: Segv on unknown address in pdfi_dereference
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42283
 
+  ```
   Crash type: Segv on unknown address
   Crash state:
   pdfi_dereference
   pdfi_get_child
   pdfi_get_page_dict
-modified: '2021-12-14T00:00:07.309595Z'
+  ```
+modified: '2022-04-13T03:04:34.447842Z'
 published: '2021-12-14T00:00:07.309348Z'
 references:
 - type: REPORT

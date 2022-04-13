@@ -3,12 +3,14 @@ summary: Heap-use-after-free in CRYPTO_DOWN_REF
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20816
 
+  ```
   Crash type: Heap-use-after-free WRITE 4
   Crash state:
   CRYPTO_DOWN_REF
   DH_free
   evp_pkey_free_it
-modified: '2021-06-21T06:56:24.840750Z'
+  ```
+modified: '2022-04-13T03:04:38.773716Z'
 published: '2020-06-24T01:51:10.908381Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: fe56d5951f0b42fd3ff1cf42a96d07f06f9692bc
   ecosystem_specific:
     severity: HIGH
+  versions: []

@@ -3,12 +3,14 @@ summary: Segv on unknown address in gx_adjust_color_Pattern
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42453
 
+  ```
   Crash type: Segv on unknown address
   Crash state:
   gx_adjust_color_Pattern
   gs_setcolor
   pdfi_setfillcolor
-modified: '2021-12-17T00:00:24.541397Z'
+  ```
+modified: '2022-04-13T03:04:34.316920Z'
 published: '2021-12-17T00:00:24.541194Z'
 references:
 - type: REPORT

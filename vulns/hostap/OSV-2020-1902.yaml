@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in asn1_get_next
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15408
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   asn1_get_next
   x509_parse_ext_basic_constraints
   x509_parse_extension
-modified: '2021-06-21T06:56:21.710772Z'
+  ```
+modified: '2022-04-13T03:04:34.954473Z'
 published: '2020-10-02T00:00:17.808481Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: ce11c281ad1de25a815d49a29043d127cbc6354d
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

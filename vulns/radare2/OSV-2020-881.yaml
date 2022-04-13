@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in read_uleb128
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18549
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   read_uleb128
   walk_exports
   get_symbols
-modified: '2021-12-16T00:12:08.977380Z'
+  ```
+modified: '2022-04-13T03:04:36.670946Z'
 published: '2020-07-14T22:13:57.548799Z'
 references:
 - type: REPORT

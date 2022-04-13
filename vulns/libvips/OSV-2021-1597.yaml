@@ -3,12 +3,14 @@ summary: UNKNOWN READ in void jxl::CopyImageTo<int>
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=41217
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   void jxl::CopyImageTo<int>
   jxl::ModularFrameDecoder::DecodeGroup
   jxl::FrameDecoder::ProcessACGroup
-modified: '2021-11-21T00:00:11.620604Z'
+  ```
+modified: '2022-04-13T03:04:38.025041Z'
 published: '2021-11-21T00:00:11.620406Z'
 references:
 - type: REPORT

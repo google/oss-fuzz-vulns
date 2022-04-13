@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in __cil_cat_expr_range_to_bitmap_helper
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=35492
 
+  ```
   Crash type: Heap-buffer-overflow READ 4
   Crash state:
   __cil_cat_expr_range_to_bitmap_helper
   __cil_expr_to_bitmap
   __evaluate_cat_expression
-modified: '2021-06-24T00:00:40.543305Z'
+  ```
+modified: '2022-04-13T03:04:42.328918Z'
 published: '2021-06-24T00:00:40.542962Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 8470058934e89d1876b8e034d1ea818bde62b994
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

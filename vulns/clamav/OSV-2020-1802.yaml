@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in cli_codepage_to_utf8
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21960
 
+  ```
   Crash type: Heap-buffer-overflow READ {*}
   Crash state:
   cli_codepage_to_utf8
   cli_vba_readdir_new
   cli_vba_scandir_new
-modified: '2021-06-21T06:56:25.358266Z'
+  ```
+modified: '2022-04-13T03:04:39.369080Z'
 published: '2020-09-18T00:00:31.737564Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: a97ce0c8371162d51972d7e03e4592e7d8e8e0e3
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

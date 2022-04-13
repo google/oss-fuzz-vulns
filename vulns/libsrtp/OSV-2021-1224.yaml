@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in srtp_stream_init_keys
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=38359
 
+  ```
   Crash type: Heap-buffer-overflow READ {*}
   Crash state:
   srtp_stream_init_keys
   srtp_stream_init
   srtp_add_stream
-modified: '2021-09-11T00:01:13.005137Z'
+  ```
+modified: '2022-04-13T03:04:39.630798Z'
 published: '2021-09-11T00:01:13.004929Z'
 references:
 - type: REPORT

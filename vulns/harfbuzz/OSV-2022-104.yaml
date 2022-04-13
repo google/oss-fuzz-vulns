@@ -3,12 +3,14 @@ summary: Heap-use-after-free in hb_bit_set_invertible_t::intersects
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=44198
 
+  ```
   Crash type: Heap-use-after-free READ 1
   Crash state:
   hb_bit_set_invertible_t::intersects
   OT::CoverageFormat2::intersected_coverage_glyphs
   OT::ChainContextFormat1::closure
-modified: '2022-01-31T00:00:41.139433Z'
+  ```
+modified: '2022-04-13T03:04:33.186304Z'
 published: '2022-01-31T00:00:41.139177Z'
 references:
 - type: REPORT

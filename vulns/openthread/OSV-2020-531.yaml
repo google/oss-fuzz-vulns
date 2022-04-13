@@ -3,12 +3,14 @@ summary: Stack-buffer-overflow in ot::MeshCoP::DatasetManager::HandleSet
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15374
 
+  ```
   Crash type: Stack-buffer-overflow READ 15
   Crash state:
   ot::MeshCoP::DatasetManager::HandleSet
   ot::MeshCoP::ActiveDataset::HandleSet
   ot::Coap::CoapBase::ProcessReceivedRequest
-modified: '2021-06-21T06:56:24.985407Z'
+  ```
+modified: '2022-04-13T03:04:38.914540Z'
 published: '2020-07-01T00:00:14.991959Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: d1ded876f9cb09d83b904b40cf6a4f67adfe91fe
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

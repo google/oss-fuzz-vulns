@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in flb_unescape_string_utf8
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22132
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   flb_unescape_string_utf8
   logfmt_parser
   flb_parser_logfmt_do
-modified: '2021-06-21T06:56:24.446104Z'
+  ```
+modified: '2022-04-13T03:04:38.397174Z'
 published: '2020-06-24T01:51:16.609624Z'
 references:
 - type: REPORT

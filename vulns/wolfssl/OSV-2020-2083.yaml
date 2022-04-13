@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in clean_path
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26424
 
+  ```
   Crash type: Heap-buffer-overflow READ {*}
   Crash state:
   clean_path
   ParseScpCommand
   DoScpRequest
-modified: '2021-06-23T06:25:59.030816Z'
+  ```
+modified: '2022-04-13T03:04:35.684870Z'
 published: '2020-10-18T00:00:41.563494Z'
 references:
 - type: REPORT
@@ -27,3 +29,4 @@ affected:
     fixed_range: 937a7ce8ced5f316668865db28c36c3111e65e43:3050f288909e53d8fdc54651328fcc6de6616ff9
     introduced_range: deaf3b4b40d26663191d085557fbeb8cafa420ae:881657782478cef4a1527847bb2c4cd427bd6c99
     severity: MEDIUM
+  versions: []

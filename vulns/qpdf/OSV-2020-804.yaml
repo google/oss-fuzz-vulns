@@ -3,12 +3,14 @@ summary: Use-of-uninitialized-value in read_markers
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23581
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   read_markers
   consume_markers
   jpeg_consume_input
-modified: '2021-06-21T06:56:19.331889Z'
+  ```
+modified: '2022-04-13T03:04:31.561816Z'
 published: '2020-07-14T05:37:42.500988Z'
 references:
 - type: REPORT

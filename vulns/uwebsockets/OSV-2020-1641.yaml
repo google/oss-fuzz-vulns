@@ -3,12 +3,14 @@ summary: Use-of-uninitialized-value in us_internal_dispatch_ready_poll
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25057
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   us_internal_dispatch_ready_poll
   us_loop_run
   uWS::TemplatedApp<false>::run
-modified: '2021-06-21T06:56:26.573356Z'
+  ```
+modified: '2022-04-13T03:04:41.019439Z'
 published: '2020-08-21T00:01:21.212570Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 8bdae7645f375f0fcf52acefce8f004f166b82c2
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

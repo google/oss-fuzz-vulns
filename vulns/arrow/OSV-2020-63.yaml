@@ -3,12 +3,14 @@ summary: UNKNOWN READ in arrow::BaseBinaryBuilder<arrow::BinaryType>::UnsafeAppe
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20697
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   arrow::BaseBinaryBuilder<arrow::BinaryType>::UnsafeAppend
   parquet::PlainByteArrayDecoder::DecodeArrowDense
   parquet::PlainByteArrayDecoder::DecodeArrow
-modified: '2021-06-21T06:56:19.577669Z'
+  ```
+modified: '2022-04-13T03:04:31.882807Z'
 published: '2020-06-24T01:51:12.364400Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: d2ab289294f5eaa175e6bc4ab5fb74b5ea013f6e
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

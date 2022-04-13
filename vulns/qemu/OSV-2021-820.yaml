@@ -3,12 +3,14 @@ summary: UNKNOWN READ in virtio_gpu_disable_scanout
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34831
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   virtio_gpu_disable_scanout
   virtio_gpu_set_scanout
   virtio_gpu_simple_process_cmd
-modified: '2021-08-25T00:51:31.362413Z'
+  ```
+modified: '2022-04-13T03:04:33.309323Z'
 published: '2021-06-02T00:00:31.619765Z'
 references:
 - type: REPORT

@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in inflate
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15495
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   inflate
   perfetto::trace_processor::GzipTraceParser::Parse
   perfetto::trace_processor::TraceProcessorImpl::Parse
-modified: '2021-06-21T06:56:27.383794Z'
+  ```
+modified: '2022-04-13T03:04:41.981810Z'
 published: '2020-07-01T00:00:22.988954Z'
 references:
 - type: REPORT

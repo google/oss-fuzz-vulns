@@ -3,12 +3,14 @@ summary: Heap-use-after-free in stell
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42280
 
+  ```
   Crash type: Heap-use-after-free READ 1
   Crash state:
   stell
   pdfi_unread_tell
   pdfi_dereference
-modified: '2021-12-15T00:01:36.957674Z'
+  ```
+modified: '2022-04-13T03:04:34.491329Z'
 published: '2021-12-15T00:01:36.957451Z'
 references:
 - type: REPORT

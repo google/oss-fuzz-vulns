@@ -3,12 +3,14 @@ summary: Use-of-uninitialized-value in DeblockChromaLt42_c
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26758
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   DeblockChromaLt42_c
   DeblockChromaLt4V2_c
   WelsDec::FilteringEdgeChromaH
-modified: '2021-06-21T06:56:23.786710Z'
+  ```
+modified: '2022-04-13T03:04:37.526560Z'
 published: '2020-11-01T00:00:43.079464Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: b52786888ddce9d6bc06b7825ba9bffc65924e0c
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

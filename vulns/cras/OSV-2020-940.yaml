@@ -3,12 +3,14 @@ summary: Heap-use-after-free in surround51_to_stereo_downmix_mtx
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21113
 
+  ```
   Crash type: Heap-use-after-free WRITE 4
   Crash state:
   surround51_to_stereo_downmix_mtx
   cras_fmt_conv_create
   config_format_converter
-modified: '2021-06-23T06:31:02.402913Z'
+  ```
+modified: '2022-04-13T03:04:42.597913Z'
 published: '2020-07-22T00:00:19.715558Z'
 references:
 - type: REPORT
@@ -26,3 +28,4 @@ affected:
   ecosystem_specific:
     introduced_range: unknown:5529a730601bcc81f64ddec83469e1ef348c8f7c
     severity: HIGH
+  versions: []

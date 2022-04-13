@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in arrow::internal::ValidateUTF8
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=27731
 
+  ```
   Crash type: Heap-buffer-overflow READ 8
   Crash state:
   arrow::internal::ValidateUTF8
   arrow::internal::ValidateArrayFullImpl::ValidateWithType
   arrow::internal::ValidateArrayFullImpl::Visit
-modified: '2021-06-21T06:56:19.731852Z'
+  ```
+modified: '2022-04-13T03:04:32.035032Z'
 published: '2020-11-23T00:00:07.508800Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: be13bf50fe00f0f4c2d065a61db189d6c59b1f7b
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

@@ -3,11 +3,13 @@ summary: Heap-buffer-overflow in ap_escape_path_segment_buffer
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=36882
 
+  ```
   Crash type: Heap-buffer-overflow WRITE 1
   Crash state:
   ap_escape_path_segment_buffer
   fuzz_utils.c
-modified: '2021-08-07T00:00:39.490209Z'
+  ```
+modified: '2022-04-13T03:04:35.789780Z'
 published: '2021-08-07T00:00:39.489954Z'
 references:
 - type: REPORT
@@ -24,3 +26,4 @@ affected:
     - fixed: 4fe572b80f76ff0b0e916b639d1e04d5af48b157
   ecosystem_specific:
     severity: HIGH
+  versions: []

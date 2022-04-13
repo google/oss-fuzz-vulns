@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in ndpi_parse_packet_line_info
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22167
 
+  ```
   Crash type: Heap-buffer-overflow READ 8
   Crash state:
   ndpi_parse_packet_line_info
   ndpi_check_steam_http
   ndpi_search_steam
-modified: '2021-06-21T06:56:22.455890Z'
+  ```
+modified: '2022-04-13T03:04:35.913056Z'
 published: '2020-06-24T01:51:12.776008Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 61066fb106efa6d3d95b67e47b662de208b2b622
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

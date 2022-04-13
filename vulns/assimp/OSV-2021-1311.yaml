@@ -3,12 +3,14 @@ summary: Null-dereference READ in unzOpenCurrentFile3
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=38873
 
+  ```
   Crash type: Null-dereference READ
   Crash state:
   unzOpenCurrentFile3
   unzOpenCurrentFile
   Assimp::ZipFileInfo::Extract
-modified: '2022-01-02T00:08:35.940406Z'
+  ```
+modified: '2022-04-13T03:04:42.679623Z'
 published: '2021-09-18T00:00:37.776159Z'
 references:
 - type: REPORT

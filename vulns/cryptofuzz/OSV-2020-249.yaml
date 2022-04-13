@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in cipher_generic_initiv
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=19926
 
+  ```
   Crash type: Heap-buffer-overflow READ 16
   Crash state:
   cipher_generic_initiv
   cipher_generic_init_internal
   cryptofuzz::module::OpenSSL::OpSymmetricDecrypt_EVP
-modified: '2021-06-23T06:25:46.210313Z'
+  ```
+modified: '2022-04-13T03:04:35.116242Z'
 published: '2020-06-26T00:00:10.386061Z'
 references:
 - type: REPORT
@@ -24,6 +26,7 @@ affected:
     - introduced: 16fa554301044751f7a339f973536aa797265ba5
     - fixed: 5820007745aceb9708055791a16e69edc02da146
   ecosystem_specific:
+    fixed_range: 9cb7175bf5069b238c2ce88ae26243204081a919:5820007745aceb9708055791a16e69edc02da146
     introduced_range: 5b42807c259ed836004066faafd8b18a9e978d96:8aa5576b934f3430149d337254b2bcc1889418d9
     severity: MEDIUM
-    fixed_range: 9cb7175bf5069b238c2ce88ae26243204081a919:5820007745aceb9708055791a16e69edc02da146
+  versions: []

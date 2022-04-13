@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in OT::VarRegionList::serialize
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=19956
 
+  ```
   Crash type: Heap-buffer-overflow READ 12
   Crash state:
   OT::VarRegionList::serialize
   OT::VariationStore::serialize
   bool OT::HVARVVAR::_subset<OT::HVAR>
-modified: '2021-06-21T06:56:20.496764Z'
+  ```
+modified: '2022-04-13T03:04:32.919183Z'
 published: '2020-06-26T00:00:09.657756Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 257a197ae723b55d26c3254dbe1edd8b0509af1b
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in jxl::JxlBoxContentDecoder::Process
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=40396
 
+  ```
   Crash type: Heap-buffer-overflow WRITE 1
   Crash state:
   jxl::JxlBoxContentDecoder::Process
   JxlDecoderProcessInput
   djxl_fuzzer.cc
-modified: '2021-10-28T00:00:18.879938Z'
+  ```
+modified: '2022-04-13T03:04:41.801326Z'
 published: '2021-10-28T00:00:18.879739Z'
 references:
 - type: REPORT

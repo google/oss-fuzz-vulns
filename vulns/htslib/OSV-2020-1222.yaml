@@ -3,12 +3,14 @@ summary: UNKNOWN READ in hpeek
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20473
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   hpeek
   sam_hdr_create
   view_sam
-modified: '2021-06-23T06:25:11.790876Z'
+  ```
+modified: '2022-04-13T03:04:32.274127Z'
 published: '2020-07-22T21:49:57.988557Z'
 references:
 - type: REPORT

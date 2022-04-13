@@ -3,12 +3,14 @@ summary: Stack-buffer-overflow in _psl_idna_toASCII
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=2600
 
+  ```
   Crash type: Stack-buffer-overflow READ {*}
   Crash state:
   _psl_idna_toASCII
   _add_punycode_if_needed
   psl_load_fp
-modified: '2021-06-21T06:56:25.760141Z'
+  ```
+modified: '2022-04-13T03:04:39.969058Z'
 published: '2021-01-13T21:56:23.412375Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: a6e470331854df14d754d7732eba902b8acd17e5
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

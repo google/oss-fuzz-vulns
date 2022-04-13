@@ -3,12 +3,14 @@ summary: UNKNOWN READ in kh_get_ucl_hash_node
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=38660
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   kh_get_ucl_hash_node
   ucl_hash_search
   ucl_inherit_handler
-modified: '2021-09-15T00:00:41.384547Z'
+  ```
+modified: '2022-04-13T03:04:41.764296Z'
 published: '2021-09-15T00:00:41.384284Z'
 references:
 - type: REPORT

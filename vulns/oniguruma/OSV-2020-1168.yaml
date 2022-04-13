@@ -3,12 +3,14 @@ summary: Use-of-uninitialized-value in gbNUMBER_mbc_enc_len
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21944
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   gbNUMBER_mbc_enc_len
   onigenc_mb4_code_to_mbc
   parse_exp
-modified: '2021-06-23T06:29:42.114479Z'
+  ```
+modified: '2022-04-13T03:04:40.925429Z'
 published: '2020-07-22T21:49:52.801225Z'
 references:
 - type: REPORT

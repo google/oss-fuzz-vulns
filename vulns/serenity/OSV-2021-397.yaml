@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in Crypto::UnsignedBigInteger::UnsignedBigInteger
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30920
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   Crypto::UnsignedBigInteger::UnsignedBigInteger
   Crypto::UnsignedBigInteger::import_data
   Crypto::der_decode_integer
-modified: '2021-06-21T06:56:19.865872Z'
+  ```
+modified: '2022-04-13T03:04:32.227173Z'
 published: '2021-02-15T00:00:26.730634Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 3fe7ac0924ada70faaf27636b6e0f40bcde24f77
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

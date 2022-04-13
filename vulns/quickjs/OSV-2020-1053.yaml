@@ -3,12 +3,14 @@ summary: UNKNOWN READ in js_parse_source_element
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21404
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   js_parse_source_element
   __JS_EvalInternal
   JS_Eval
-modified: '2021-06-23T06:29:53.738225Z'
+  ```
+modified: '2022-04-13T03:04:41.248875Z'
 published: '2020-07-22T21:49:43.353213Z'
 references:
 - type: REPORT

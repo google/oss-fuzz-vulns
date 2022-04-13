@@ -3,11 +3,13 @@ summary: Heap-buffer-overflow in ares_parse_aaaa_reply
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15373
 
+  ```
   Crash type: Heap-buffer-overflow READ 16
   Crash state:
   ares_parse_aaaa_reply
   ares-test-fuzz.c
-modified: '2021-06-21T06:56:22.939317Z'
+  ```
+modified: '2022-04-13T03:04:36.416216Z'
 published: '2020-07-01T00:00:09.430097Z'
 references:
 - type: REPORT
@@ -24,3 +26,4 @@ affected:
     - fixed: 5dd3629bc93449840c36dd635ea6cce606b8c366
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

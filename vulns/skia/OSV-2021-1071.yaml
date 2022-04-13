@@ -3,12 +3,14 @@ summary: Heap-use-after-free in SkCanvas::MCRec::MCRec
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=36644
 
+  ```
   Crash type: Heap-use-after-free READ 8
   Crash state:
   SkCanvas::MCRec::MCRec
   SkCanvas::MCRec& SkTArray<SkCanvas::MCRec, false>::emplace_back<SkCanvas::MCRec&
   SkCanvas::internalSave
-modified: '2021-07-30T00:00:17.189052Z'
+  ```
+modified: '2022-04-13T03:04:33.786453Z'
 published: '2021-07-30T00:00:17.188826Z'
 references:
 - type: REPORT
@@ -26,3 +28,4 @@ affected:
   ecosystem_specific:
     fixed_range: 222c1c16317c54a8701e7ccf767a1a62b4f30627:17eaf6216046fba422081c8bb4d5580008ab283e
     severity: HIGH
+  versions: []

@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in grk::PacketIter::next_pcrl
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=45537
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   grk::PacketIter::next_pcrl
   grk::T2Decompress::decompressPackets
   grk::TileProcessor::decompressT2
-modified: '2022-03-27T00:04:09.876892Z'
+  ```
+modified: '2022-04-13T03:04:39.523343Z'
 published: '2022-03-15T00:00:45.636919Z'
 references:
 - type: REPORT

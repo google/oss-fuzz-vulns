@@ -3,12 +3,14 @@ summary: Global-buffer-overflow in pdfi_fapi_get_glyph
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42310
 
+  ```
   Crash type: Global-buffer-overflow READ {*}
   Crash state:
   pdfi_fapi_get_glyph
   get_fapi_glyph_data
   cff_slot_load
-modified: '2021-12-14T00:01:47.957090Z'
+  ```
+modified: '2022-04-13T03:04:34.476556Z'
 published: '2021-12-14T00:01:47.956886Z'
 references:
 - type: REPORT

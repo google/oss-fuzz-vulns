@@ -3,12 +3,14 @@ summary: Heap-use-after-free in hb_resolve_overflows
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=38878
 
+  ```
   Crash type: Heap-use-after-free READ 4
   Crash state:
   hb_resolve_overflows
   _repack
   hb_subset_or_fail
-modified: '2021-09-18T00:00:25.727248Z'
+  ```
+modified: '2022-04-13T03:04:33.258700Z'
 published: '2021-09-18T00:00:25.727046Z'
 references:
 - type: REPORT

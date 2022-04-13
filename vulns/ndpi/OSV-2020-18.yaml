@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in ndpi_search_openvpn
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22244
 
+  ```
   Crash type: Heap-buffer-overflow READ 8
   Crash state:
   ndpi_search_openvpn
   check_ndpi_udp_flow_func
   ndpi_detection_process_packet
-modified: '2021-06-21T06:56:22.520594Z'
+  ```
+modified: '2022-04-13T03:04:35.993017Z'
 published: '2020-06-24T01:51:10.400007Z'
 references:
 - type: REPORT

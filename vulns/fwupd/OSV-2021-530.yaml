@@ -3,12 +3,14 @@ summary: UNKNOWN WRITE in g_array_append_vals
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=32131
 
+  ```
   Crash type: UNKNOWN WRITE
   Crash state:
   g_array_append_vals
   g_byte_array_append
   fu_efi_firmware_filesystem_write
-modified: '2021-06-21T06:56:25.515897Z'
+  ```
+modified: '2022-04-13T03:04:39.620295Z'
 published: '2021-03-18T00:00:07.203180Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 119d260bd2d3781e9b24d1cc3dc1cbf11787e774
   ecosystem_specific:
     severity: HIGH
+  versions: []

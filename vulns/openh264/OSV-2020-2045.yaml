@@ -3,12 +3,14 @@ summary: Use-of-uninitialized-value in WelsDec::GetColocatedMb
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26272
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   WelsDec::GetColocatedMb
   WelsDec::PredBDirectTemporal
   WelsDec::WelsDecodeMbCavlcBSlice
-modified: '2021-06-21T06:56:23.890605Z'
+  ```
+modified: '2022-04-13T03:04:37.615819Z'
 published: '2020-10-13T00:00:35.800515Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: f1bb6d3acb057785b4d89e8228e23cc4fc9caa12
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

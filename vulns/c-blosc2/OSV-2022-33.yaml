@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in ndlz8_decompress
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=43519
 
+  ```
   Crash type: Heap-buffer-overflow READ 8
   Crash state:
   ndlz8_decompress
   blosc_d
   do_job
-modified: '2022-01-12T00:00:34.083762Z'
+  ```
+modified: '2022-04-13T03:04:40.200092Z'
 published: '2022-01-12T00:00:34.083560Z'
 references:
 - type: REPORT

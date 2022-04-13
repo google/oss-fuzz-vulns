@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in parse_mode
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11167
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   parse_mode
   git_tree__parse_raw
   git_object__from_raw
-modified: '2021-06-21T06:56:21.943367Z'
+  ```
+modified: '2022-04-13T03:04:35.198491Z'
 published: '2021-01-13T00:01:22.703610Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: f647bbc88d243a81d8771ba2fd1c346c34a3d9d7
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

@@ -3,12 +3,14 @@ summary: Stack-buffer-overflow in pdfi_oc_is_ocg_visible
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42908
 
+  ```
   Crash type: Stack-buffer-overflow WRITE {*}
   Crash state:
   pdfi_oc_is_ocg_visible
   pdfi_op_BDC
   pdfi_interpret_stream_operator
-modified: '2021-12-26T00:01:37.317255Z'
+  ```
+modified: '2022-04-13T03:04:34.453206Z'
 published: '2021-12-26T00:01:37.317038Z'
 references:
 - type: REPORT

@@ -3,12 +3,14 @@ summary: Heap-use-after-free in xmlAddNextSibling
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34461
 
+  ```
   Crash type: Heap-use-after-free READ 4
   Crash state:
   xmlAddNextSibling
   xmlXIncludeCopyRange
   xmlXIncludeCopyXPointer
-modified: '2021-05-20T00:00:30.166987Z'
+  ```
+modified: '2022-04-13T03:04:39.937646Z'
 published: '2021-05-20T00:00:30.166614Z'
 references:
 - type: REPORT

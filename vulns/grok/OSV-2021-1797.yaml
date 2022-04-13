@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in grk::GrkImage::cieLabToRGB
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=43161
 
+  ```
   Crash type: Heap-buffer-overflow WRITE 4
   Crash state:
   grk::GrkImage::cieLabToRGB
   grk::GrkImage::applyColourManagement
   grk::CodeStreamDecompress::postProcess
-modified: '2022-01-02T00:01:48.961510Z'
+  ```
+modified: '2022-04-13T03:04:39.534267Z'
 published: '2022-01-02T00:01:48.961299Z'
 references:
 - type: REPORT

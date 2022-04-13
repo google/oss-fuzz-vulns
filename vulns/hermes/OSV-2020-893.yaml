@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in hermes::parser::JSLexer::consumeBracedCodePoint
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23725
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   hermes::parser::JSLexer::consumeBracedCodePoint
   hermes::parser::JSLexer::consumeUnicodeEscape
   hermes::parser::JSLexer::advance
-modified: '2021-06-21T06:56:18.967745Z'
+  ```
+modified: '2022-04-13T03:04:31.087641Z'
 published: '2020-07-21T00:00:06.900609Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: f126e71e362dad0f7f1841cbc56b5d85e16e8cc4
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

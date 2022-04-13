@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in pe_valid_dll_name
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=37443
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   pe_valid_dll_name
   pe_parse_delay_import_dll_name
   pe_parse_delayed_imports
-modified: '2021-08-22T00:01:21.562167Z'
+  ```
+modified: '2022-04-13T03:04:42.166443Z'
 published: '2021-08-22T00:01:21.561957Z'
 references:
 - type: REPORT
@@ -27,3 +29,4 @@ affected:
     introduced_range: 95d8a4a9f5b15995474f5a94666904b20183c09d:4d6ecf83c0bd3858292959c5090a97fe3ea71823
     fixed_range: 4d6ecf83c0bd3858292959c5090a97fe3ea71823:cfdb4a83246e826f5bc29732c9cea7fdd22ebe2b
     severity: MEDIUM
+  versions: []

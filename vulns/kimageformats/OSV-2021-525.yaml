@@ -4,12 +4,14 @@ summary: Use-of-uninitialized-value in void edge_filtering_chroma_internal<unsig
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=32059
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   void edge_filtering_chroma_internal<unsigned char>
   edge_filtering_chroma
   thread_task_deblock_CTBRow::work
-modified: '2022-04-11T00:04:07.018053Z'
+  ```
+modified: '2022-04-13T03:04:42.530809Z'
 published: '2021-03-16T00:00:19.176877Z'
 references:
 - type: REPORT

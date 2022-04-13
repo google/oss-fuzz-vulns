@@ -3,12 +3,14 @@ summary: Stack-buffer-overflow in perfetto::trace_processor::MemoryTrackerSnapsh
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=28766
 
+  ```
   Crash type: Stack-buffer-overflow READ 4
   Crash state:
   perfetto::trace_processor::MemoryTrackerSnapshotParser::EmitRows
   perfetto::trace_processor::MemoryTrackerSnapshotParser::GenerateGraphFromRawNode
   perfetto::trace_processor::MemoryTrackerSnapshotParser::NotifyEndOfFile
-modified: '2021-06-21T06:56:27.377150Z'
+  ```
+modified: '2022-04-13T03:04:41.976214Z'
 published: '2020-12-19T00:00:21.828942Z'
 references:
 - type: REPORT

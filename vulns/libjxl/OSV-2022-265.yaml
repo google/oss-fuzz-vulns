@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in jxl::WriteToPixelCallbackStage::ProcessRow
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=45833
 
+  ```
   Crash type: Heap-buffer-overflow READ 4
   Crash state:
   jxl::WriteToPixelCallbackStage::ProcessRow
   jxl::LowMemoryRenderPipeline::RenderRect
   jxl::LowMemoryRenderPipeline::ProcessBuffers
-modified: '2022-03-21T00:00:38.667972Z'
+  ```
+modified: '2022-04-13T03:04:41.859422Z'
 published: '2022-03-21T00:00:38.667705Z'
 references:
 - type: REPORT

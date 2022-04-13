@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in consume_list
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=40723
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   consume_list
   pn_amqp_decode_DqEoQBIoIe
   pn_message_decode
-modified: '2021-11-06T00:01:33.530470Z'
+  ```
+modified: '2022-04-13T03:04:36.938644Z'
 published: '2021-11-06T00:01:33.530210Z'
 references:
 - type: REPORT

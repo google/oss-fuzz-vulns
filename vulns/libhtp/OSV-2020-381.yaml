@@ -3,12 +3,14 @@ summary: Use-of-uninitialized-value in crc32
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=17262
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   crc32
   htp_gzip_decompressor_decompress
   htp_tx_res_process_body_data_ex
-modified: '2021-06-21T06:56:26.118701Z'
+  ```
+modified: '2022-04-13T03:04:40.514300Z'
 published: '2020-07-01T00:00:06.294878Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: fe16fa764f7cea57be5a288ee85b27dffc460f6f
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

@@ -3,12 +3,14 @@ summary: UNKNOWN WRITE in jxl::ModularFrameDecoder::DecodeGroup
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=36456
 
+  ```
   Crash type: UNKNOWN WRITE
   Crash state:
   jxl::ModularFrameDecoder::DecodeGroup
   jxl::FrameDecoder::ProcessACGroup
   jxl::ThreadPool::RunCallState<jxl::FrameDecoder::ProcessSections
-modified: '2021-07-25T00:00:32.621901Z'
+  ```
+modified: '2022-04-13T03:04:38.031184Z'
 published: '2021-07-25T00:00:32.621715Z'
 references:
 - type: REPORT

@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in ndpi_netbios_name_interpret
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20823
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   ndpi_netbios_name_interpret
   ndpi_int_netbios_add_connection
   check_ndpi_udp_flow_func
-modified: '2021-06-23T06:26:04.250079Z'
+  ```
+modified: '2022-04-13T03:04:36.123517Z'
 published: '2020-06-24T01:51:15.742937Z'
 references:
 - type: REPORT

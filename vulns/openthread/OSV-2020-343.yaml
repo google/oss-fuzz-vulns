@@ -3,12 +3,14 @@ summary: Stack-use-after-return in ot::MeshCoP::ChannelMaskEntryBase::GetChannel
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13741
 
+  ```
   Crash type: Stack-use-after-return READ 1
   Crash state:
   ot::MeshCoP::ChannelMaskEntryBase::GetChannelPage
   ot::MeshCoP::ChannelMaskTlv::GetChannelMask
   ot::MeshCoP::ChannelMaskTlv::GetChannelMask
-modified: '2021-03-09T04:49:05.836080Z'
+  ```
+modified: '2022-04-13T03:04:38.873261Z'
 published: '2020-07-01T00:00:04.277007Z'
 references:
 - type: REPORT
@@ -23,3 +25,4 @@ affected:
     events:
     - introduced: 96725a985ed57a64721c61c4721e5792b44264c5
     - fixed: fab45352f5d6b2f516fed8a86c0d197bb7c27958
+  versions: []

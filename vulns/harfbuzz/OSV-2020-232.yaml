@@ -1,10 +1,11 @@
 id: OSV-2020-232
 summary: Heap-buffer-overflow in BEInt<unsigned short, 2>::operator unsigned short
 details: "OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20021\n\
-  \nCrash type: Heap-buffer-overflow READ 2\nCrash state:\nBEInt<unsigned short, 2>::operator\
-  \ unsigned short\nOT::IntType<unsigned short, 2u>::operator unsigned int\nOT::ArrayOf<OT::FeatureTableSubstitutionRecord,\
-  \ OT::IntType<unsigned short, 2u> \n"
-modified: '2021-06-21T06:56:20.538209Z'
+  \n```\nCrash type: Heap-buffer-overflow READ 2\nCrash state:\nBEInt<unsigned short,\
+  \ 2>::operator unsigned short\nOT::IntType<unsigned short, 2u>::operator unsigned\
+  \ int\nOT::ArrayOf<OT::FeatureTableSubstitutionRecord, OT::IntType<unsigned short,\
+  \ 2u> \n```\n"
+modified: '2022-04-13T03:04:32.957836Z'
 published: '2020-06-26T00:00:06.617669Z'
 references:
 - type: REPORT
@@ -21,3 +22,4 @@ affected:
     - fixed: a32ecc15aec6518f5a126fb8f3643e563327f74d
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

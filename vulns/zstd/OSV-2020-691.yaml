@@ -3,12 +3,14 @@ summary: UNKNOWN WRITE in ZSTD_decodeLiteralsBlock
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=16541
 
+  ```
   Crash type: UNKNOWN WRITE
   Crash state:
   ZSTD_decodeLiteralsBlock
   ZSTD_decompressBlock
   ZSTD_decompressDCtx
-modified: '2021-06-21T06:56:19.389Z'
+  ```
+modified: '2022-04-13T03:04:31.632645Z'
 published: '2020-07-01T00:00:25.109905Z'
 references:
 - type: REPORT

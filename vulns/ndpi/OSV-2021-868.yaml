@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in ndpi_set_detected_protocol
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=35288
 
+  ```
   Crash type: Heap-buffer-overflow READ 4
   Crash state:
   ndpi_set_detected_protocol
   ndpi_match_hostname_protocol
   processClientServerHello
-modified: '2021-06-21T06:56:22.669940Z'
+  ```
+modified: '2022-04-13T03:04:36.145859Z'
 published: '2021-06-18T00:00:07.405397Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: b0b3e1bc6c8db7cf8a2a26dbb29ffdb057d86121
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

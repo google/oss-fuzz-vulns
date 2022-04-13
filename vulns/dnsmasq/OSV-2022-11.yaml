@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in dhcp_reply
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=43300
 
+  ```
   Crash type: Heap-buffer-overflow WRITE {*}
   Crash state:
   dhcp_reply
   dhcp_packet
   FuzzDhcp
-modified: '2022-01-06T00:01:04.471147Z'
+  ```
+modified: '2022-04-13T03:04:31.185616Z'
 published: '2022-01-06T00:01:04.470937Z'
 references:
 - type: REPORT

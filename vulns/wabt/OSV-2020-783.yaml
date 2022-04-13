@@ -3,12 +3,14 @@ summary: UNKNOWN READ in wabt::BinaryReaderIR::OnFunctionSymbol
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20364
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   wabt::BinaryReaderIR::OnFunctionSymbol
   wabt::BinaryReader::ReadLinkingSection
   wabt::BinaryReader::ReadCustomSection
-modified: '2021-06-23T06:28:00.194151Z'
+  ```
+modified: '2022-04-13T03:04:37.986252Z'
 published: '2020-07-14T05:37:33.041385Z'
 references:
 - type: REPORT
@@ -33,5 +35,5 @@ affected:
   - gh-actions-test
   - gh-actions-test2
   ecosystem_specific:
-    severity: MEDIUM
     introduced_range: 2132abdd621a354a25af6bc67d1bb603c6b3c4dc:c74e612ff9d95d6afd1bbfb6d9656655aa6d70ed
+    severity: MEDIUM

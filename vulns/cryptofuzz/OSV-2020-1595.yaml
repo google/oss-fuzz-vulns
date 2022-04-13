@@ -3,12 +3,14 @@ summary: Use-of-uninitialized-value in cryptofuzz::module::Nettle::OpSymmetricDe
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24785
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   cryptofuzz::module::Nettle::OpSymmetricDecrypt
   cryptofuzz::ExecutorBase<cryptofuzz::Buffer, cryptofuzz::operation::SymmetricDec
   cryptofuzz::ExecutorBase<cryptofuzz::Buffer, cryptofuzz::operation::SymmetricDec
-modified: '2021-06-23T06:25:45.652350Z'
+  ```
+modified: '2022-04-13T03:04:35.088457Z'
 published: '2020-08-11T00:00:35.680707Z'
 references:
 - type: REPORT
@@ -26,3 +28,4 @@ affected:
   ecosystem_specific:
     severity: MEDIUM
     fixed_range: 1fc0a6fdc6e3d2f684b297a29eb5992398573437:88b300a164e5eb9fc26941a938411ad99a66b789
+  versions: []

@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in _iri_unescape_inline
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14449
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   _iri_unescape_inline
   wget_iri_parse
   init
-modified: '2021-06-21T06:56:27.207311Z'
+  ```
+modified: '2022-04-13T03:04:41.727444Z'
 published: '2020-07-01T00:00:17.414112Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 6e5c820cf7a1d54b7732af3c6a3c9727d4bd78bf
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

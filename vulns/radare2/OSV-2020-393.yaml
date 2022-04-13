@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in Elf32_r_bin_elf_compiler
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13858
 
+  ```
   Crash type: Heap-buffer-overflow WRITE 1
   Crash state:
   Elf32_r_bin_elf_compiler
   info
   r_bin_object_set_items
-modified: '2021-06-21T06:56:23.141764Z'
+  ```
+modified: '2022-04-13T03:04:36.630830Z'
 published: '2020-07-01T00:00:06.928110Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 9f840c6306b853e98eab75ed2fa9522f7e2dae98
   ecosystem_specific:
     severity: HIGH
+  versions: []

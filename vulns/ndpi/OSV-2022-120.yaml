@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in ndpi_strncasestr
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=44405
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   ndpi_strncasestr
   check_content_type_and_change_protocol
   ndpi_search_http_tcp
-modified: '2022-02-05T00:01:07.016558Z'
+  ```
+modified: '2022-04-13T03:04:36.281315Z'
 published: '2022-02-05T00:01:07.016269Z'
 references:
 - type: REPORT

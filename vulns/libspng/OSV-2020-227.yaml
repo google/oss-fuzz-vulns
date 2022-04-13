@@ -3,12 +3,14 @@ summary: Heap-double-free in spng__free
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22720
 
+  ```
   Crash type: Heap-double-free
   Crash state:
   spng__free
   spng__inflate_stream
   read_non_idat_chunks
-modified: '2021-06-21T06:56:21.087106Z'
+  ```
+modified: '2022-04-13T03:04:33.698514Z'
 published: '2020-06-24T01:51:19.852052Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: f47ed26affe9655c70340b8df9fd9e6f1f2ec85e
   ecosystem_specific:
     severity: HIGH
+  versions: []

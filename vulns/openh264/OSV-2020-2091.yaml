@@ -3,12 +3,14 @@ summary: UNKNOWN READ in WelsDec::WelsMarkAsRef
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26533
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   WelsDec::WelsMarkAsRef
   WelsDec::MarkECFrameAsRef
   WelsDec::CheckAndFinishLastPic
-modified: '2021-06-21T06:56:23.799813Z'
+  ```
+modified: '2022-04-13T03:04:37.536962Z'
 published: '2020-10-22T00:00:21.083633Z'
 references:
 - type: REPORT

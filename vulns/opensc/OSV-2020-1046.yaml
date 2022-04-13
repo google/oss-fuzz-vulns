@@ -3,12 +3,14 @@ summary: Stack-buffer-overflow in sc_pkcs15emu_object_add
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=19251
 
+  ```
   Crash type: Stack-buffer-overflow READ {*}
   Crash state:
   sc_pkcs15emu_object_add
   sc_pkcs15emu_coolkey_init
   sc_pkcs15emu_coolkey_init_ex
-modified: '2021-06-23T06:30:09.491174Z'
+  ```
+modified: '2022-04-13T03:04:41.613341Z'
 published: '2020-07-22T21:49:42.803976Z'
 references:
 - type: REPORT
@@ -26,5 +28,5 @@ affected:
   versions:
   - 0.20.0-rc4
   ecosystem_specific:
-    introduced_range: unknown:c4dcac5de77825e79763c9cd5f58aa8bde22f0b2
     severity: MEDIUM
+    introduced_range: unknown:c4dcac5de77825e79763c9cd5f58aa8bde22f0b2

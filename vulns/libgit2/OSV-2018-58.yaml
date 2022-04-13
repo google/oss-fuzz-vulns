@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in tag_parse
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=10999
 
+  ```
   Crash type: Heap-buffer-overflow READ 2
   Crash state:
   tag_parse
   git_tag__parse_raw
   git_object__from_raw
-modified: '2021-06-21T06:56:21.949292Z'
+  ```
+modified: '2022-04-13T03:04:35.203520Z'
 published: '2021-01-13T00:00:29.755710Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: ee11d47e3d907b66eeff99e0ba1e1c71e05164b7
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

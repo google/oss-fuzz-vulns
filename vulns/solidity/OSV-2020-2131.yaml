@@ -3,12 +3,14 @@ summary: Stack-use-after-return in solidity::smtutil::CHCSmtLib2Interface::query
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26997
 
+  ```
   Crash type: Stack-use-after-return READ 8
   Crash state:
   solidity::smtutil::CHCSmtLib2Interface::querySolver
   solidity::smtutil::CHCSmtLib2Interface::query
   solidity::frontend::CHC::query
-modified: '2021-03-09T04:49:05.628104Z'
+  ```
+modified: '2022-04-13T03:04:30.907651Z'
 published: '2020-11-07T00:00:44.497592Z'
 references:
 - type: REPORT

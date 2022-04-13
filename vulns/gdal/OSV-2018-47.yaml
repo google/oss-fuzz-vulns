@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in ycc_rgb_convert
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=9471
 
+  ```
   Crash type: Heap-buffer-overflow WRITE 1
   Crash state:
   ycc_rgb_convert
   sep_upsample
   process_data_context_main
-modified: '2021-06-23T06:30:48.401269Z'
+  ```
+modified: '2022-04-13T03:04:42.129484Z'
 published: '2021-01-13T00:00:26.157766Z'
 references:
 - type: REPORT
@@ -24,6 +26,7 @@ affected:
     - introduced: 5eb75bc8495a304b6f9a13ecabcbfa88997c64e1
     - fixed: 60eef5839291a1c2ab71cdc064bd654358fcdb49
   ecosystem_specific:
-    introduced_range: 6f7ed05cbdd7e3bf3fac7b55a2526abe48ceb49b:07b7be15cebf2d7fce93bcfc362a7675ee7ff660
-    fixed_range: ca4d5f62359f196c7331e75a25ba318b4509e6b5:60eef5839291a1c2ab71cdc064bd654358fcdb49
     severity: HIGH
+    fixed_range: ca4d5f62359f196c7331e75a25ba318b4509e6b5:60eef5839291a1c2ab71cdc064bd654358fcdb49
+    introduced_range: 6f7ed05cbdd7e3bf3fac7b55a2526abe48ceb49b:07b7be15cebf2d7fce93bcfc362a7675ee7ff660
+  versions: []

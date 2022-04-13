@@ -3,12 +3,14 @@ summary: UNKNOWN READ in OT::propagate_attachment_offsets
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11013
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   OT::propagate_attachment_offsets
   OT::propagate_attachment_offsets
   OT::GPOS::position_finish_offsets
-modified: '2021-06-21T06:56:20.666038Z'
+  ```
+modified: '2022-04-13T03:04:33.103877Z'
 published: '2021-01-13T00:00:29.354624Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 3341c7fbfb9bc8e137afd9f16da8cf18eb67b25b
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

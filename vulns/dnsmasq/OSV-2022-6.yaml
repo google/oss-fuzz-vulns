@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in extract_name
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=43299
 
+  ```
   Crash type: Heap-buffer-overflow WRITE 1
   Crash state:
   extract_name
   hash_questions
   fuzz_util.c
-modified: '2022-04-06T00:06:22.989311Z'
+  ```
+modified: '2022-04-13T03:04:31.123021Z'
 published: '2022-01-06T00:00:09.667642Z'
 references:
 - type: REPORT

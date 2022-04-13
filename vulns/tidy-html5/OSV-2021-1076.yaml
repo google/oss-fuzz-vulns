@@ -3,12 +3,14 @@ summary: UNKNOWN READ in ParseXMLElement
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=36671
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   ParseXMLElement
   prvTidyParseXMLDocument
   prvTidyDocParseStream
-modified: '2021-07-31T00:00:13.254999Z'
+  ```
+modified: '2022-04-13T03:04:32.562660Z'
 published: '2021-07-31T00:00:13.254766Z'
 references:
 - type: REPORT

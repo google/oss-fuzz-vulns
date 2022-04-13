@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in lduw_he_p
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26691
 
+  ```
   Crash type: Heap-buffer-overflow READ 2
   Crash state:
   lduw_he_p
   ldn_he_p
   flatview_write_continue
-modified: '2021-06-21T06:56:20.837625Z'
+  ```
+modified: '2022-04-13T03:04:33.292896Z'
 published: '2020-10-29T00:00:36.328045Z'
 references:
 - type: REPORT

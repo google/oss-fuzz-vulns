@@ -4,12 +4,14 @@ summary: Stack-buffer-overflow in hermes::regex::Parser<hermes::regex::Regex<her
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25815
 
+  ```
   Crash type: Stack-buffer-overflow READ 2
   Crash state:
   hermes::regex::Parser<hermes::regex::Regex<hermes::regex::UTF16RegexTraits>, cha
   hermes::regex::Parser<hermes::regex::Regex<hermes::regex::UTF16RegexTraits>, cha
   hermes::regex::Parser<hermes::regex::Regex<hermes::regex::UTF16RegexTraits>, cha
-modified: '2021-06-21T06:56:18.974144Z'
+  ```
+modified: '2022-04-13T03:04:31.093016Z'
 published: '2020-09-21T00:00:18.040780Z'
 references:
 - type: REPORT
@@ -26,3 +28,4 @@ affected:
     - fixed: c593863a881796f8bf4f4faea1fa179edf5d532f
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

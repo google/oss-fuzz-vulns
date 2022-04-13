@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in H5HG_read
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30743
 
+  ```
   Crash type: Heap-buffer-overflow READ 8
   Crash state:
   H5HG_read
   H5VL__native_blob_get
   H5VL__blob_get
-modified: '2022-03-26T00:04:42.822770Z'
+  ```
+modified: '2022-04-13T03:04:42.969097Z'
 published: '2021-02-11T00:00:41.682350Z'
 references:
 - type: REPORT

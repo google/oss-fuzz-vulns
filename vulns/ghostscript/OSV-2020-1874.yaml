@@ -3,12 +3,14 @@ summary: Use-of-uninitialized-value in load_truetype_glyph
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22182
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   load_truetype_glyph
   TT_Load_Glyph
   tt_glyph_load
-modified: '2021-06-23T06:25:40.384039Z'
+  ```
+modified: '2022-04-13T03:04:34.803318Z'
 published: '2020-09-29T00:00:24.645658Z'
 references:
 - type: REPORT

@@ -3,12 +3,14 @@ summary: Stack-buffer-overflow in ot::MeshCoP::Leader::HandlePetition
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13537
 
+  ```
   Crash type: Stack-buffer-overflow READ 1
   Crash state:
   ot::MeshCoP::Leader::HandlePetition
   ot::Coap::CoapBase::ProcessReceivedRequest
   ot::Ip6::Udp::HandleMessage
-modified: '2021-06-21T06:56:25.035466Z'
+  ```
+modified: '2022-04-13T03:04:38.956721Z'
 published: '2020-07-01T00:00:27.229373Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 2805ca463b9679b475fa917409cbb1d2738606c4
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

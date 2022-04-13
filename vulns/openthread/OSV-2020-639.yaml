@@ -3,12 +3,14 @@ summary: UNKNOWN READ in ot::Dhcp6::Dhcp6Client::UpdateAddresses
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13332
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   ot::Dhcp6::Dhcp6Client::UpdateAddresses
   ot::Mle::Mle::HandleStateChanged
   ot::Notifier::HandleStateChanged
-modified: '2021-06-21T06:56:25.041619Z'
+  ```
+modified: '2022-04-13T03:04:38.961925Z'
 published: '2020-07-01T00:00:21.898651Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: a3548df579617e737b075be4a88591e68195e115
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

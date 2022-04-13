@@ -3,12 +3,14 @@ summary: UNKNOWN READ in flb_sds_cat
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25904
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   flb_sds_cat
   flb_msgpack_gelf_key
   flb_msgpack_gelf_flatten
-modified: '2021-06-21T06:56:24.375309Z'
+  ```
+modified: '2022-04-13T03:04:38.309534Z'
 published: '2020-09-25T00:00:21.320950Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 0f2b1c83ecb069ab63a78e470da648147a525154
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

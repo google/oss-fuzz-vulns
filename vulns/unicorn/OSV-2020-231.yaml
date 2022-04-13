@@ -3,10 +3,12 @@ summary: UNKNOWN WRITE in gen_mftr
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20081
 
+  ```
   Crash type: UNKNOWN WRITE
   Crash state:
   gen_mftr
-modified: '2021-06-21T06:56:25.254892Z'
+  ```
+modified: '2022-04-13T03:04:39.209952Z'
 published: '2020-06-26T00:00:06.484913Z'
 references:
 - type: REPORT
@@ -23,3 +25,4 @@ affected:
     - fixed: ec2e4544819b2ef0ecd297ba331d4f2172b77245
   ecosystem_specific:
     severity: HIGH
+  versions: []

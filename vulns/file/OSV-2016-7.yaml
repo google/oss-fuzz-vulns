@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in mcopy
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=153
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   mcopy
   mget
   match
-modified: '2021-06-21T06:56:18.676148Z'
+  ```
+modified: '2022-04-13T03:04:30.792444Z'
 published: '2021-01-15T05:22:13.068Z'
 references:
 - type: REPORT

@@ -3,12 +3,14 @@ summary: UNKNOWN WRITE in m3_FreeModule
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=33726
 
+  ```
   Crash type: UNKNOWN WRITE
   Crash state:
   m3_FreeModule
   _FreeModule
   Compile_ExtendedOpcode
-modified: '2021-06-21T06:56:18.582382Z'
+  ```
+modified: '2022-04-13T03:04:30.676815Z'
 published: '2021-04-28T00:01:11.169950Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 8cb2fd424309fa6ff70cf00bfcedc4e66d3355c0
   ecosystem_specific:
     severity: HIGH
+  versions: []

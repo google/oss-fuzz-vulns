@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in BEInt<unsigned int, 4>::operator unsigned int
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11522
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   BEInt<unsigned int, 4>::operator unsigned int
   void hb_sanitize_context_t::set_object<OT::KernSubTable<OT::KernAATSubTableHeade
   AAT::KerxTable<OT::KernAAT>::sanitize
-modified: '2021-06-21T06:56:20.380173Z'
+  ```
+modified: '2022-04-13T03:04:32.803589Z'
 published: '2021-01-13T00:00:31.625117Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 8dcc1913a1670ede7b124f7b5b775d7ab8791386
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

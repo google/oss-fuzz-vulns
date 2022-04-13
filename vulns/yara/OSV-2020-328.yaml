@@ -3,12 +3,14 @@ summary: UNKNOWN READ in dotnet_parse_tilde_2
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=16448
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   dotnet_parse_tilde_2
   dotnet_parse_tilde
   dotnet_parse_com
-modified: '2021-06-21T06:56:27.563213Z'
+  ```
+modified: '2022-04-13T03:04:42.194462Z'
 published: '2020-07-01T00:00:03.116576Z'
 references:
 - type: REPORT

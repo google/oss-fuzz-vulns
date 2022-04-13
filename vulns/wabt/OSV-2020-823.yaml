@@ -4,12 +4,14 @@ summary: 'Object-size in std::__1::vector<wabt::DataSegment*, std::__1::allocato
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20367
 
+  ```
   Crash type: Object-size
   Crash state:
   std::__1::vector<wabt::DataSegment*, std::__1::allocator<wabt::DataSegment*> >::
   wabt::BinaryReaderIR::OnDataSymbol
   wabt::BinaryReader::ReadLinkingSection
-modified: '2021-06-23T06:27:59.577465Z'
+  ```
+modified: '2022-04-13T03:04:37.966850Z'
 published: '2020-07-14T05:37:48.903126Z'
 references:
 - type: REPORT
@@ -34,5 +36,5 @@ affected:
   - gh-actions-test
   - gh-actions-test2
   ecosystem_specific:
-    severity: MEDIUM
     introduced_range: 2132abdd621a354a25af6bc67d1bb603c6b3c4dc:c74e612ff9d95d6afd1bbfb6d9656655aa6d70ed
+    severity: MEDIUM

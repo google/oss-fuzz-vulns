@@ -3,12 +3,14 @@ summary: Segv on unknown address in cs_adjust_counts_icc
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42290
 
+  ```
   Crash type: Segv on unknown address
   Crash state:
   cs_adjust_counts_icc
   gstate_clone_core
   gs_gsave
-modified: '2021-12-14T00:00:46.859655Z'
+  ```
+modified: '2022-04-13T03:04:34.740613Z'
 published: '2021-12-14T00:00:46.859448Z'
 references:
 - type: REPORT

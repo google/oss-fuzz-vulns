@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in ofpbuf_insert
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11253
 
+  ```
   Crash type: Heap-buffer-overflow WRITE {*}
   Crash state:
   ofpbuf_insert
   nx_put_raw
   nx_put_match
-modified: '2021-06-21T06:56:26.296591Z'
+  ```
+modified: '2022-04-13T03:04:40.695116Z'
 published: '2021-01-13T00:01:07.295311Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 39976b99178eaa4862c43eaf00959f2653a01a6f
   ecosystem_specific:
     severity: HIGH
+  versions: []

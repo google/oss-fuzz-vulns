@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in grk::PacketIter::genPrecinctInfo
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=45548
 
+  ```
   Crash type: Heap-buffer-overflow READ 4
   Crash state:
   grk::PacketIter::genPrecinctInfo
   grk::PacketManager::PacketManager
   grk::T2Decompress::decompressPackets
-modified: '2022-04-11T00:04:12.261144Z'
+  ```
+modified: '2022-04-13T03:04:39.562855Z'
 published: '2022-03-15T00:01:42.984652Z'
 references:
 - type: REPORT

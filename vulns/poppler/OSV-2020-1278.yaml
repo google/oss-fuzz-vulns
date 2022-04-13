@@ -3,12 +3,14 @@ summary: Use-of-uninitialized-value in SampledFunction::SampledFunction
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=12608
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   SampledFunction::SampledFunction
   Function::parse
   Function::parse
-modified: '2021-06-23T06:26:17.394703Z'
+  ```
+modified: '2022-04-13T03:04:37.342687Z'
 published: '2020-07-22T21:50:02.576507Z'
 references:
 - type: REPORT

@@ -3,12 +3,14 @@ summary: Heap-use-after-free in usbredirparser_serialize
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=36861
 
+  ```
   Crash type: Heap-use-after-free WRITE 4
   Crash state:
   usbredirparser_serialize
   try_serialize
   usbredirparserfuzz.cc
-modified: '2021-08-06T00:02:18.278305Z'
+  ```
+modified: '2022-04-13T03:04:34.072455Z'
 published: '2021-08-06T00:02:18.278086Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 03c519ff5831ba75120e00ebebbf1d5a1f7220ab
   ecosystem_specific:
     severity: HIGH
+  versions: []

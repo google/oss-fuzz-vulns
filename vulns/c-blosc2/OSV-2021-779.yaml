@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in _blosc_getitem
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34458
 
+  ```
   Crash type: Heap-buffer-overflow READ 8
   Crash state:
   _blosc_getitem
   blosc2_getitem_ctx
   blosc2_getitem
-modified: '2022-04-10T00:03:56.327954Z'
+  ```
+modified: '2022-04-13T03:04:40.243630Z'
 published: '2021-05-20T00:01:22.816013Z'
 references:
 - type: REPORT

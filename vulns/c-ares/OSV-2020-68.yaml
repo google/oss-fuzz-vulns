@@ -3,12 +3,14 @@ summary: Heap-double-free in ares_parse_soa_reply
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21176
 
+  ```
   Crash type: Heap-double-free
   Crash state:
   ares_parse_soa_reply
   ares-test-fuzz.c
   ares_parse_soa_reply
-modified: '2021-06-21T06:56:22.932Z'
+  ```
+modified: '2022-04-13T03:04:36.406432Z'
 published: '2020-06-24T01:51:12.645377Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 910df394fc40d90dda233b27bf122e50357943e6
   ecosystem_specific:
     severity: HIGH
+  versions: []

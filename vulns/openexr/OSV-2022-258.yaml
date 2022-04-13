@@ -3,12 +3,14 @@ summary: Heap-double-free in Imf_3_1::RgbaInputFile::~RgbaInputFile
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=45718
 
+  ```
   Crash type: Heap-double-free
   Crash state:
   Imf_3_1::RgbaInputFile::~RgbaInputFile
   Imf_3_1::checkOpenEXRFile
   openexr_exrcheck_fuzzer.cc
-modified: '2022-03-19T00:00:41.775689Z'
+  ```
+modified: '2022-04-13T03:04:37.079008Z'
 published: '2022-03-19T00:00:41.775467Z'
 references:
 - type: REPORT

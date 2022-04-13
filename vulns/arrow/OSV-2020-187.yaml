@@ -3,12 +3,14 @@ summary: UNKNOWN READ in arrow::ipc::MessageDecoder::MessageDecoderImpl::Consume
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21680
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   arrow::ipc::MessageDecoder::MessageDecoderImpl::ConsumeDataBufferInt32
   arrow::ipc::MessageDecoder::MessageDecoderImpl::ConsumeInitialBuffer
   arrow::ipc::MessageDecoder::MessageDecoderImpl::ConsumeBuffer
-modified: '2021-06-21T06:56:19.653048Z'
+  ```
+modified: '2022-04-13T03:04:31.954408Z'
 published: '2020-06-24T01:51:18.041219Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: c47d0d3df865d34d877c84042c11a7cb259f7cdd
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in std::__1::pair<int, void*> uWS::HttpParser::fen
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=28143
 
+  ```
   Crash type: Heap-buffer-overflow READ {*}
   Crash state:
   std::__1::pair<int, void*> uWS::HttpParser::fenceAndConsumePostPadded<0>
   uWS::HttpParser::consumePostPadded
   uWS::HttpContext<false>::init
-modified: '2021-06-21T06:56:26.592626Z'
+  ```
+modified: '2022-04-13T03:04:41.047024Z'
 published: '2020-12-04T00:00:01.928228Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: a8b33acf7ba5158af434ae4dfa8003c1ddbc7e18
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

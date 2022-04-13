@@ -3,12 +3,14 @@ summary: Global-buffer-overflow in fr_is_base16_nstd
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=38283
 
+  ```
   Crash type: Global-buffer-overflow READ 1
   Crash state:
   fr_is_base16_nstd
   fr_base16_decode_nstd
   fr_value_box_from_str
-modified: '2021-09-10T00:00:35.488304Z'
+  ```
+modified: '2022-04-13T03:04:40.152583Z'
 published: '2021-09-10T00:00:35.488094Z'
 references:
 - type: REPORT

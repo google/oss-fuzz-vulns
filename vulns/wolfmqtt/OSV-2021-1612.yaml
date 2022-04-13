@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in MqttDecode_Props
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=41291
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   MqttDecode_Props
   MqttDecode_Disconnect
   MqttClient_DecodePacket
-modified: '2022-02-24T00:06:01.829966Z'
+  ```
+modified: '2022-04-13T03:04:34.038824Z'
 published: '2021-11-24T00:00:12.425812Z'
 references:
 - type: REPORT

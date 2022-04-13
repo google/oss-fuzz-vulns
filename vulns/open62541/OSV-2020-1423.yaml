@@ -3,12 +3,14 @@ summary: Use-of-uninitialized-value in txt2sd
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22219
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   txt2sd
   fuzz_mdns_xht.cc
   txt2sd
-modified: '2021-06-29T00:03:56.228997Z'
+  ```
+modified: '2022-04-13T03:04:41.335027Z'
 published: '2020-07-28T00:00:16.191970Z'
 references:
 - type: REPORT

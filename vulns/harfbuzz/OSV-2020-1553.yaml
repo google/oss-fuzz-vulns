@@ -3,12 +3,14 @@ summary: UNKNOWN READ in hb_realloc_impl
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24497
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   hb_realloc_impl
   hb_vector_t<CFF::dict_val_t>::alloc
   hb_vector_t<CFF::dict_val_t>::resize
-modified: '2021-06-21T06:56:20.747659Z'
+  ```
+modified: '2022-04-13T03:04:33.180680Z'
 published: '2020-07-31T00:00:55.823679Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: d307c24abf37b2702706cf9df0fab571a99e2a70
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

@@ -3,12 +3,14 @@ summary: UNKNOWN WRITE in InitDataSegments
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=33663
 
+  ```
   Crash type: UNKNOWN WRITE
   Crash state:
   InitDataSegments
   CompileBlockStatements
   CompileBlock
-modified: '2021-06-21T06:56:18.550738Z'
+  ```
+modified: '2022-04-13T03:04:30.636114Z'
 published: '2021-04-26T00:00:14.214692Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 8cb2fd424309fa6ff70cf00bfcedc4e66d3355c0
   ecosystem_specific:
     severity: HIGH
+  versions: []

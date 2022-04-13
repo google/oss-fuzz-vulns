@@ -3,12 +3,14 @@ summary: Stack-buffer-overflow in pdfi_do_image
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42454
 
+  ```
   Crash type: Stack-buffer-overflow WRITE {*}
   Crash state:
   pdfi_do_image
   pdfi_do_image_or_form
   pdfi_Do
-modified: '2021-12-17T00:00:38.802070Z'
+  ```
+modified: '2022-04-13T03:04:34.277390Z'
 published: '2021-12-17T00:00:38.801863Z'
 references:
 - type: REPORT

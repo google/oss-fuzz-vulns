@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in skip_to_next_entry
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34110
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   skip_to_next_entry
   get_exception_handler
   _PyEval_EvalFrameDefault
-modified: '2021-06-21T06:56:27.749762Z'
+  ```
+modified: '2022-04-13T03:04:42.392317Z'
 published: '2021-05-11T00:00:17.714291Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 45862f9f5ef5d3c9da37f35e4fe4b18618530cfa
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

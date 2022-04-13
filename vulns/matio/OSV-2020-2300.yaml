@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in H5MM_strdup
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29493
 
+  ```
   Crash type: Heap-buffer-overflow READ {*}
   Crash state:
   H5MM_strdup
   H5O_attr_shared_decode
   H5O_msg_iterate_real
-modified: '2021-06-21T06:56:28.300148Z'
+  ```
+modified: '2022-04-13T03:04:43.161034Z'
 published: '2021-01-13T00:00:07.792566Z'
 references:
 - type: REPORT

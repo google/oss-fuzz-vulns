@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in dispatch
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=35727
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   dispatch
   dispatch_linked
   codegen
-modified: '2021-07-03T00:00:29.297922Z'
+  ```
+modified: '2022-04-13T03:04:39.790952Z'
 published: '2021-07-03T00:00:29.297612Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: a6657afab9ffb258b01b3d6e485a86328bf4d40e
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

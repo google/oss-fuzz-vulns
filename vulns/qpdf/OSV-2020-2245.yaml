@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in Pl_ASCII85Decoder::write
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=28262
 
+  ```
   Crash type: Heap-buffer-overflow WRITE 1
   Crash state:
   Pl_ASCII85Decoder::write
   Pl_AES_PDF::flush
   Pl_AES_PDF::finish
-modified: '2021-06-21T06:56:19.324264Z'
+  ```
+modified: '2022-04-13T03:04:31.555525Z'
 published: '2020-12-06T00:00:11.834199Z'
 references:
 - type: REPORT

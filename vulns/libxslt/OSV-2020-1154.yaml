@@ -3,12 +3,14 @@ summary: Use-of-uninitialized-value in xmlStrlen
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15746
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   xmlStrlen
   xmlStrncat
   xmlNodeAddContentLen
-modified: '2021-06-23T06:25:30.991207Z'
+  ```
+modified: '2022-04-13T03:04:33.746967Z'
 published: '2020-07-22T21:49:51.684969Z'
 references:
 - type: REPORT
@@ -24,5 +26,6 @@ affected:
     - introduced: 7f56378a73af8a61da78b8091f0e317316cee300
     - fixed: 2232473733b7313d67de8836ea3b29eec6e8e285
   ecosystem_specific:
-    introduced_range: unknown:7f56378a73af8a61da78b8091f0e317316cee300
     severity: MEDIUM
+    introduced_range: unknown:7f56378a73af8a61da78b8091f0e317316cee300
+  versions: []

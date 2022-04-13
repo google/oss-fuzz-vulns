@@ -3,12 +3,14 @@ summary: 'ASSERT: bufferRemainingSize() >= length.'
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18431
 
+  ```
   Crash type: ASSERT
   Crash state:
   bufferRemainingSize() >= length.
   Envoy::Http::Http1::ConnectionImpl::copyToBuffer
   Envoy::Http::Http1::RequestStreamEncoderImpl::encodeHeaders
-modified: '2021-06-21T06:56:19.354866Z'
+  ```
+modified: '2022-04-13T03:04:31.593071Z'
 published: '2021-03-29T05:14:39.113684Z'
 references:
 - type: REPORT

@@ -3,12 +3,14 @@ summary: Heap-use-after-free in UA_Session_deleteMembersCleanup
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=5577
 
+  ```
   Crash type: Heap-use-after-free WRITE 8
   Crash state:
   UA_Session_deleteMembersCleanup
   removeSessionCallback
   UA_Server_run_shutdown
-modified: '2021-06-21T06:56:26.836160Z'
+  ```
+modified: '2022-04-13T03:04:41.341050Z'
 published: '2021-01-13T00:00:26.992658Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: a6d732b4050e902d9bba3acfa7bf72e30fa4dcc6
   ecosystem_specific:
     severity: HIGH
+  versions: []

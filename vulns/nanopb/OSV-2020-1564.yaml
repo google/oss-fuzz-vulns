@@ -3,12 +3,14 @@ summary: Use-of-uninitialized-value in pb_encode_varint
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24582
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   pb_encode_varint
   pb_enc_varint
   encode_array
-modified: '2021-06-21T06:56:20.200806Z'
+  ```
+modified: '2022-04-13T03:04:32.622428Z'
 published: '2020-08-02T00:00:28.082567Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: cf507d1b1e71b45136ca2bd7d37b7b4958443cd1
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in fdisk_partname
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24859
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   fdisk_partname
   write_file_sfdisk
   fdisk_script_write_file
-modified: '2021-06-21T06:56:21.428108Z'
+  ```
+modified: '2022-04-13T03:04:34.136019Z'
 published: '2020-08-14T00:01:33.935815Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 678d03cc8a9c665ba989b098a9be903ede72f554
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

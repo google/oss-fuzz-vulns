@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in r_bin_filter_sections
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11272
 
+  ```
   Crash type: Heap-buffer-overflow WRITE 3
   Crash state:
   r_bin_filter_sections
   r_bin_object_set_items
   r_bin_object_new
-modified: '2021-06-21T06:56:23.169797Z'
+  ```
+modified: '2022-04-13T03:04:36.658399Z'
 published: '2021-01-13T00:01:04.024149Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: a6a04332f86ff190058b358b4f89b9fa482567f8
   ecosystem_specific:
     severity: HIGH
+  versions: []

@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in bool arrow::util::RleDecoder::NextCounts<int>
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20735
 
+  ```
   Crash type: Heap-buffer-overflow WRITE {*}
   Crash state:
   bool arrow::util::RleDecoder::NextCounts<int>
   parquet::DictByteArrayDecoderImpl::DecodeArrowDense
   parquet::DictByteArrayDecoderImpl::DecodeArrow
-modified: '2021-06-21T06:56:19.692334Z'
+  ```
+modified: '2022-04-13T03:04:31.991977Z'
 published: '2020-06-24T01:51:13.440194Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: d2ab289294f5eaa175e6bc4ab5fb74b5ea013f6e
   ecosystem_specific:
     severity: HIGH
+  versions: []

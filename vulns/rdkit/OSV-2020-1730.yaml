@@ -3,10 +3,12 @@ summary: Bad-cast to RDKit::Atom
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25547
 
+  ```
   Crash type: Bad-cast
   Crash state:
   Bad-cast to RDKit::Atom
-modified: '2021-06-23T06:57:07.669660Z'
+  ```
+modified: '2022-04-13T03:04:41.515246Z'
 published: '2020-09-11T00:00:51.334144Z'
 references:
 - type: REPORT

@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in exif_mnote_data_apple_identify
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=37211
 
+  ```
   Crash type: Heap-buffer-overflow READ 3
   Crash state:
   exif_mnote_data_apple_identify
   interpret_maker_note
   exif_data_load_data
-modified: '2021-08-16T00:00:06.948294Z'
+  ```
+modified: '2022-04-13T03:04:40.868546Z'
 published: '2021-08-16T00:00:06.948057Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 22799320cc1187868d9a572661d12f0c3f9939b5
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

@@ -3,12 +3,14 @@ summary: Heap-use-after-free in prvTidyInsertedToken
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=37196
 
+  ```
   Crash type: Heap-use-after-free READ 8
   Crash state:
   prvTidyInsertedToken
   prvTidyGetToken
   prvTidyoldParseInline
-modified: '2021-08-16T00:01:09.422981Z'
+  ```
+modified: '2022-04-13T03:04:32.573278Z'
 published: '2021-08-16T00:01:09.422775Z'
 references:
 - type: REPORT

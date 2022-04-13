@@ -3,12 +3,14 @@ summary: UNKNOWN READ in htp_connp_RES_FINALIZE
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29551
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   htp_connp_RES_FINALIZE
   htp_connp_res_data
   fuzz_htp.c
-modified: '2021-06-21T06:56:26.106728Z'
+  ```
+modified: '2022-04-13T03:04:40.504136Z'
 published: '2021-01-13T21:57:34.116557Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 8b5c94af604d5a873f8ae10d252940b9dd1f6339
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

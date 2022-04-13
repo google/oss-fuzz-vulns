@@ -3,12 +3,14 @@ summary: Stack-use-after-return in v9fs_string_free
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=32624
 
+  ```
   Crash type: Stack-use-after-return READ 8
   Crash state:
   v9fs_string_free
   v9fs_xattrwalk
   coroutine_trampoline
-modified: '2021-06-23T06:25:30.812564Z'
+  ```
+modified: '2022-04-13T03:04:33.303356Z'
 published: '2021-03-30T00:00:08.991714Z'
 references:
 - type: REPORT

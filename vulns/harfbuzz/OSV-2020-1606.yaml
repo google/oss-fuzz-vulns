@@ -3,12 +3,14 @@ summary: UNKNOWN READ in hb_set_digest_lowest_bits_t<unsigned long, 4u>::may_hav
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24842
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   hb_set_digest_lowest_bits_t<unsigned long, 4u>::may_have
   hb_set_digest_combiner_t<hb_set_digest_lowest_bits_t<unsigned long, 4u>, hb_set_
   OT::hb_ot_layout_lookup_accelerator_t::may_have
-modified: '2021-06-21T06:56:20.785484Z'
+  ```
+modified: '2022-04-13T03:04:33.225527Z'
 published: '2020-08-14T00:01:09.886475Z'
 references:
 - type: REPORT

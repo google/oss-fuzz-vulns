@@ -3,12 +3,14 @@ summary: UNKNOWN WRITE in FLAC__bitwriter_write_raw_uint32_nocheck
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=19816
 
+  ```
   Crash type: UNKNOWN WRITE
   Crash state:
   FLAC__bitwriter_write_raw_uint32_nocheck
   FLAC__bitwriter_write_raw_uint32
   FLAC__frame_add_header
-modified: '2021-06-21T06:56:26.137404Z'
+  ```
+modified: '2022-04-13T03:04:40.529820Z'
 published: '2020-07-28T00:00:35.146104Z'
 references:
 - type: REPORT
@@ -26,3 +28,4 @@ affected:
     - introduced: 7e79d0aa9c4274776259a52a15081dc5f62c5063
   ecosystem_specific:
     severity: HIGH
+  versions: []

@@ -3,12 +3,14 @@ summary: Bad-cast to Sass::PreValue from Sass::Unary_Expression
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15896
 
+  ```
   Crash type: Bad-cast
   Crash state:
   Bad-cast to Sass::PreValue from Sass::Unary_Expression
   Sass::SharedImpl<Sass::PreValue>::SharedImpl<Sass::Expression>
   Sass::Parser::parse_ie_keyword_arg
-modified: '2021-06-21T06:56:24.522781Z'
+  ```
+modified: '2022-04-13T03:04:38.476623Z'
 published: '2020-07-28T00:00:14.887375Z'
 references:
 - type: REPORT

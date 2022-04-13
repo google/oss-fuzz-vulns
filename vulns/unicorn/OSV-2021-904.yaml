@@ -3,10 +3,12 @@ summary: UNKNOWN READ in helper_uc_tracecode
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=35567
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   helper_uc_tracecode
-modified: '2021-06-27T00:01:32.667741Z'
+  ```
+modified: '2022-04-13T03:04:39.109056Z'
 published: '2021-06-27T00:01:32.667386Z'
 references:
 - type: REPORT
@@ -23,3 +25,4 @@ affected:
     - fixed: 52f90cda023abaca510d59f021c88629270ad6c0
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

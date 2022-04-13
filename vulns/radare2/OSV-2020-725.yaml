@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in walk_exports
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18321
 
+  ```
   Crash type: Heap-buffer-overflow READ 2
   Crash state:
   walk_exports
   get_symbols
   get_main
-modified: '2021-06-21T06:56:23.191275Z'
+  ```
+modified: '2022-04-13T03:04:36.677850Z'
 published: '2020-07-01T00:00:26.892834Z'
 references:
 - type: REPORT

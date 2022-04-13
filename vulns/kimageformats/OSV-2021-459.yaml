@@ -3,12 +3,14 @@ summary: Segv on unknown address in slice_segment_header::operator=
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31492
 
+  ```
   Crash type: Segv on unknown address
   Crash state:
   slice_segment_header::operator=
   slice_segment_header::read
   decoder_context::read_slice_NAL
-modified: '2021-03-09T05:46:26.062868Z'
+  ```
+modified: '2022-04-13T03:04:42.524314Z'
 published: '2021-03-01T00:00:01.773251Z'
 references:
 - type: REPORT

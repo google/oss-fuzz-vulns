@@ -3,12 +3,14 @@ summary: Heap-use-after-free in decode_mcu
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=46335
 
+  ```
   Crash type: Heap-use-after-free WRITE 4
   Crash state:
   decode_mcu
   consume_data
   jpeg_start_decompress
-modified: '2022-04-05T00:00:22.785479Z'
+  ```
+modified: '2022-04-13T03:04:38.096047Z'
 published: '2022-04-05T00:00:22.785247Z'
 references:
 - type: REPORT

@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in read_xref_stream_entries
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=44610
 
+  ```
   Crash type: Heap-buffer-overflow WRITE 8
   Crash state:
   read_xref_stream_entries
   pdfi_process_xref_stream
   pdfi_read_xref_stream_dict
-modified: '2022-02-14T00:00:48.225205Z'
+  ```
+modified: '2022-04-13T03:04:34.435603Z'
 published: '2022-02-14T00:00:48.224847Z'
 references:
 - type: REPORT

@@ -3,12 +3,14 @@ summary: UNKNOWN READ in Interpreter::evaluate
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15844
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   Interpreter::evaluate
   jsonnet_vm_execute
   jsonnet_evaluate_snippet_aux
-modified: '2021-06-23T06:27:56.962686Z'
+  ```
+modified: '2022-04-13T03:04:37.894780Z'
 published: '2020-07-01T00:00:18.669002Z'
 references:
 - type: REPORT
@@ -24,5 +26,6 @@ affected:
     - introduced: 8ac54da59568a3beef718f4d1374a546dd2500ff
     - fixed: 206ed1cb2068e47df8b6e3ab03f062b339e0e5f3
   ecosystem_specific:
-    severity: MEDIUM
     introduced_range: 0ebb1b31e2a9f83d90eca5356fa3d820177ae8ab:8d4bf07af93f77fcc0a36d4c8871c4ff90405774
+    severity: MEDIUM
+  versions: []

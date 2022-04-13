@@ -3,12 +3,14 @@ summary: Use-of-uninitialized-value in mcopy
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=2242
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   mcopy
   mget
   match
-modified: '2021-06-21T06:56:18.701857Z'
+  ```
+modified: '2022-04-13T03:04:30.821252Z'
 published: '2021-01-13T21:56:15.043847Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 55cb70a24a58fc73b7a2b9d1b2a49845668342cc
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in sampled_data_finish
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34675
 
+  ```
   Crash type: Heap-buffer-overflow WRITE 16
   Crash state:
   sampled_data_finish
   sampled_data_continue
   interp
-modified: '2021-06-23T06:25:38.899733Z'
+  ```
+modified: '2022-04-13T03:04:34.371918Z'
 published: '2021-05-27T00:01:05.378775Z'
 references:
 - type: REPORT
@@ -95,5 +97,5 @@ affected:
   - robin_test_ref
   - robin_test_rev
   ecosystem_specific:
-    severity: HIGH
     introduced_range: f209fb3a0f50cd0a9974d8627a4ac7f358f60c8a:470897e484fb0bfaa8553e0ccd5b9db91eda008b
+    severity: HIGH

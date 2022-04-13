@@ -3,12 +3,14 @@ summary: Heap-use-after-free in UA_Array_copy
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=4346
 
+  ```
   Crash type: Heap-use-after-free READ 2
   Crash state:
   UA_Array_copy
   copy_noInit
   NodeId_copy
-modified: '2021-06-21T06:56:26.864146Z'
+  ```
+modified: '2022-04-13T03:04:41.363919Z'
 published: '2021-01-13T21:56:05.277761Z'
 references:
 - type: REPORT

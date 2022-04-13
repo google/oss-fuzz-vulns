@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in json_parse_string
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=9922
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   json_parse_string
   json_parse
   json_parse_array
-modified: '2021-06-21T06:56:18.689837Z'
+  ```
+modified: '2022-04-13T03:04:30.805121Z'
 published: '2021-01-13T00:00:06.229450Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 87f27958cfbb05d262504976f66db70c24d5061f
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

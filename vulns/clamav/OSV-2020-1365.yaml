@@ -3,12 +3,14 @@ summary: UNKNOWN READ in cli_vba_readdir_new
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24354
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   cli_vba_readdir_new
   cli_vba_scandir_new
   cli_scanole2
-modified: '2021-06-21T06:56:25.393734Z'
+  ```
+modified: '2022-04-13T03:04:39.436925Z'
 published: '2020-07-28T00:00:02.964345Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: b35d1e1bec27d90b4acdc896f6f2164990f747e7
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

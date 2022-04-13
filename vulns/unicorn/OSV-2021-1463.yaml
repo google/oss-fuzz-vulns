@@ -3,10 +3,12 @@ summary: UNKNOWN READ in helper_be_stw_mmu_armeb
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=40073
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   helper_be_stw_mmu_armeb
-modified: '2021-10-19T00:00:32.912635Z'
+  ```
+modified: '2022-04-13T03:04:39.303580Z'
 published: '2021-10-19T00:00:32.912410Z'
 references:
 - type: REPORT

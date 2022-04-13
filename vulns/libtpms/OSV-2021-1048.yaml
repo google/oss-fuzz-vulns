@@ -3,12 +3,14 @@ summary: Stack-buffer-overflow in INDEX_ORDERLY_RAM_Marshal
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=36476
 
+  ```
   Crash type: Stack-buffer-overflow READ 4
   Crash state:
   INDEX_ORDERLY_RAM_Marshal
   PERSISTENT_ALL_Marshal
   TPM2_PersistentAllStore
-modified: '2021-07-24T00:01:22.493159Z'
+  ```
+modified: '2022-04-13T03:04:35.878745Z'
 published: '2021-07-24T00:01:22.492962Z'
 references:
 - type: REPORT
@@ -26,3 +28,4 @@ affected:
     - fixed: e739c034e97258a9799060a9d0d68fd1f6f7b003
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

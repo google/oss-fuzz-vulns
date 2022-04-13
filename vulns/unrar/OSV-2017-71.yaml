@@ -3,12 +3,14 @@ summary: Use-of-uninitialized-value in wcsncatz
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=4350
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   wcsncatz
   Archive::ProcessExtra50
   Archive::ReadHeader50
-modified: '2021-06-23T06:25:47.609691Z'
+  ```
+modified: '2022-04-13T03:04:35.243592Z'
 published: '2021-01-13T21:56:56.231357Z'
 references:
 - type: REPORT

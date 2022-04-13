@@ -3,12 +3,14 @@ summary: Use-after-poison in JS::Reference::put_value
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=39379
 
+  ```
   Crash type: Use-after-poison READ 8
   Crash state:
   JS::Reference::put_value
   JS::AssignmentExpression::execute
   JS::ExpressionStatement::execute
-modified: '2021-09-29T00:00:38.765793Z'
+  ```
+modified: '2022-04-13T03:04:32.247868Z'
 published: '2021-09-29T00:00:38.765609Z'
 references:
 - type: REPORT

@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in answer_request
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=35920
 
+  ```
   Crash type: Heap-buffer-overflow WRITE 1
   Crash state:
   answer_request
   FuzzAnswerTheRequest
   fuzz_rfc1035.c
-modified: '2022-02-17T01:01:20.104073Z'
+  ```
+modified: '2022-04-13T03:04:31.129678Z'
 published: '2021-07-09T00:00:11.076648Z'
 references:
 - type: REPORT

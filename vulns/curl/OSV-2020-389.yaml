@@ -3,12 +3,14 @@ summary: Use-of-uninitialized-value in smtp_state_ehlo_resp
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=16918
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   smtp_state_ehlo_resp
   smtp_statemach_act
   Curl_pp_statemach
-modified: '2021-06-21T06:56:28.033920Z'
+  ```
+modified: '2022-04-13T03:04:42.827258Z'
 published: '2020-07-01T00:00:06.761801Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 4d0306c6982ad80be532438265c52c39a55889a0
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

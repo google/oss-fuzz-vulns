@@ -3,12 +3,14 @@ summary: Use-of-uninitialized-value in parser_get_next_char
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14739
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   parser_get_next_char
   parser_get_param_name_heap
   icalparser_add_line
-modified: '2021-06-21T06:56:21.455040Z'
+  ```
+modified: '2022-04-13T03:04:34.158183Z'
 published: '2020-07-01T00:00:16.957587Z'
 references:
 - type: REPORT
@@ -27,3 +29,4 @@ affected:
     - fixed: 584a7b4832551d75e4dcacc7cfece7ddd0fdc74c
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

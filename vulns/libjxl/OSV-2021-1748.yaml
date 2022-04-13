@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in jxl::N_AVX2::FloatToRGBA8
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42839
 
+  ```
   Crash type: Heap-buffer-overflow WRITE 1
   Crash state:
   jxl::N_AVX2::FloatToRGBA8
   jxl::FinalizeImageRect
   jxl::ThreadPool::RunCallState<jxl::FinalizeFrameDecoding
-modified: '2021-12-24T00:01:41.024252Z'
+  ```
+modified: '2022-04-13T03:04:41.785711Z'
 published: '2021-12-24T00:01:41.024002Z'
 references:
 - type: REPORT

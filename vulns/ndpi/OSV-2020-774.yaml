@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in ndpi_search_kerberos
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23021
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   ndpi_search_kerberos
   check_ndpi_udp_flow_func
   ndpi_check_flow_func
-modified: '2021-06-21T06:56:22.504834Z'
+  ```
+modified: '2022-04-13T03:04:35.961132Z'
 published: '2020-07-14T05:37:28.736261Z'
 references:
 - type: REPORT

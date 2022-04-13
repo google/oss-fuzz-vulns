@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in blosc_d
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42210
 
+  ```
   Crash type: Heap-buffer-overflow READ 4
   Crash state:
   blosc_d
   do_job
   blosc_run_decompression_with_context
-modified: '2022-04-10T00:04:24.983766Z'
+  ```
+modified: '2022-04-13T03:04:40.169196Z'
 published: '2021-12-12T00:01:29.747137Z'
 references:
 - type: REPORT

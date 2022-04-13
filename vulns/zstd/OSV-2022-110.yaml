@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in ZSTD_compressLiterals
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=44239
 
+  ```
   Crash type: Heap-buffer-overflow WRITE 1
   Crash state:
   ZSTD_compressLiterals
   ZSTD_entropyCompressSeqStore
   ZSTD_compressSequences
-modified: '2022-02-01T00:01:50.971835Z'
+  ```
+modified: '2022-04-13T03:04:31.686195Z'
 published: '2022-02-01T00:01:50.971611Z'
 references:
 - type: REPORT

@@ -3,12 +3,14 @@ summary: Global-buffer-overflow in vte_write_debug
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22203
 
+  ```
   Crash type: Global-buffer-overflow READ 1
   Crash state:
   vte_write_debug
   send_primary_da
   do_esc
-modified: '2021-03-09T04:49:05.270415Z'
+  ```
+modified: '2022-04-13T03:04:40.043504Z'
 published: '2020-07-28T00:00:21.964189Z'
 references:
 - type: REPORT
@@ -23,3 +25,4 @@ affected:
     events:
     - introduced: b73acb4c71698a764763ae8dad94c1e8a2b8d7a3
     - fixed: b73acb4c71698a764763ae8dad94c1e8a2b8d7a3
+  versions: []

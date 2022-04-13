@@ -3,12 +3,14 @@ summary: Stack-use-after-return in BEInt<unsigned short, 2>::operator unsigned s
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=10082
 
+  ```
   Crash type: Stack-use-after-return READ 1
   Crash state:
   BEInt<unsigned short, 2>::operator unsigned short
   OT::CoverageFormat2::Iter::more
   OT::SingleSubstFormat2::closure
-modified: '2021-03-09T04:49:04.819531Z'
+  ```
+modified: '2022-04-13T03:04:32.985065Z'
 published: '2021-01-13T00:00:46.804388Z'
 references:
 - type: REPORT
@@ -23,3 +25,4 @@ affected:
     events:
     - introduced: acce1fa3ea9707d0883cd66397fd187d3268905c
     - fixed: 2dde6c803a9e50c5bff74095187b0cb2e12eebdd
+  versions: []

@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in std::__1::char_traits<char>::length
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34230
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   std::__1::char_traits<char>::length
   std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<ch
   ODDLParser::logInvalidTokenError
-modified: '2021-11-21T00:10:18.378070Z'
+  ```
+modified: '2022-04-13T03:04:42.685258Z'
 published: '2021-05-14T00:00:07.433655Z'
 references:
 - type: REPORT

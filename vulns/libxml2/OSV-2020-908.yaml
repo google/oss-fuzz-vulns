@@ -3,12 +3,14 @@ summary: Heap-use-after-free in xmlParserPrintFileContextInternal
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24055
 
+  ```
   Crash type: Heap-use-after-free READ 1
   Crash state:
   xmlParserPrintFileContextInternal
   xmlReportError
   __xmlRaiseError
-modified: '2021-06-21T06:56:25.723971Z'
+  ```
+modified: '2022-04-13T03:04:39.932469Z'
 published: '2020-07-21T00:00:26.575286Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 3f18e7486d5feb8ae41911ce3c122e05641a4c3d
   ecosystem_specific:
     severity: HIGH
+  versions: []

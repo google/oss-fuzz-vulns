@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in int arrow::BitUtil::BitReader::GetBatch<short>
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21166
 
+  ```
   Crash type: Heap-buffer-overflow WRITE 8
   Crash state:
   int arrow::BitUtil::BitReader::GetBatch<short>
   int arrow::util::RleDecoder::GetBatch<short>
   parquet::internal::TypedRecordReader<parquet::PhysicalType<
-modified: '2021-06-21T06:56:19.634134Z'
+  ```
+modified: '2022-04-13T03:04:31.932877Z'
 published: '2020-06-24T01:51:17.409834Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 6b87c6c9fb00ade7eff909afa4a6a61464cd516c
   ecosystem_specific:
     severity: HIGH
+  versions: []

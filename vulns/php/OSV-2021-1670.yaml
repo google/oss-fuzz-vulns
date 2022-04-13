@@ -3,12 +3,14 @@ summary: Dynamic-stack-buffer-overflow in zend_calc_live_ranges
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42156
 
+  ```
   Crash type: Dynamic-stack-buffer-overflow READ 4
   Crash state:
   zend_calc_live_ranges
   pass_two
   zend_compile_func_decl
-modified: '2021-12-12T00:00:10.869745Z'
+  ```
+modified: '2022-04-13T03:04:33.646052Z'
 published: '2021-12-12T00:00:10.869505Z'
 references:
 - type: REPORT

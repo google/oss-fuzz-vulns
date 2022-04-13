@@ -3,12 +3,14 @@ summary: UNKNOWN READ in Sass::Parser::parseCompoundSelector
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15904
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   Sass::Parser::parseCompoundSelector
   Sass::Parser::parseComplexSelector
   Sass::Parser::parseSelectorList
-modified: '2021-06-21T06:56:24.542598Z'
+  ```
+modified: '2022-04-13T03:04:38.493199Z'
 published: '2020-07-01T00:00:19.975718Z'
 references:
 - type: REPORT

@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in cdf_file_property_info
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=1064
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   cdf_file_property_info
   cdf_file_summary_info
   cdf_check_summary_info
-modified: '2021-06-21T06:56:18.708130Z'
+  ```
+modified: '2022-04-13T03:04:30.826487Z'
 published: '2021-01-15T00:00:24.559102Z'
 references:
 - type: REPORT

@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in flb_log_print
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26325
 
+  ```
   Crash type: Heap-buffer-overflow READ {*}
   Crash state:
   flb_log_print
   flb_parser_typecast
   logfmt_parser
-modified: '2021-06-21T06:56:24.424051Z'
+  ```
+modified: '2022-04-13T03:04:38.379480Z'
 published: '2020-10-15T00:00:37.893897Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 7f0c3bb1bd8645ca556125b5afae8db77f973085
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

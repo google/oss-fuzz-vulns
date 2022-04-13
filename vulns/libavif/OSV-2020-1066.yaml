@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in dav1dFeedData
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21947
 
+  ```
   Crash type: Heap-buffer-overflow READ {*}
   Crash state:
   dav1dFeedData
   dav1dCodecGetNextImage
   avifDecoderNextImage
-modified: '2021-06-23T06:30:09.555925Z'
+  ```
+modified: '2022-04-13T03:04:41.870711Z'
 published: '2020-07-22T21:49:44.588962Z'
 references:
 - type: REPORT

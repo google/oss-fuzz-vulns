@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in ih264d_decode_slice_thread
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=19027
 
+  ```
   Crash type: Heap-buffer-overflow READ 4
   Crash state:
   ih264d_decode_slice_thread
   ih264d_decode_picture_thread
   clone
-modified: '2021-06-21T06:56:22.193712Z'
+  ```
+modified: '2022-04-13T03:04:35.492305Z'
 published: '2020-06-30T00:00:45.549045Z'
 references:
 - type: REPORT

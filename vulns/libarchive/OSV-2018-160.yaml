@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in do_uncompress_block
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11011
 
+  ```
   Crash type: Heap-buffer-overflow WRITE 1
   Crash state:
   do_uncompress_block
   process_block
   do_uncompress_file
-modified: '2021-06-21T06:56:26.699423Z'
+  ```
+modified: '2022-04-13T03:04:41.216636Z'
 published: '2021-01-13T00:01:07.606550Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: b52dd6c9e4ef7cf95c2a6ae5ab7ccac7f6d462a1
   ecosystem_specific:
     severity: HIGH
+  versions: []

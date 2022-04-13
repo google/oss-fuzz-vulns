@@ -3,12 +3,14 @@ summary: Stack-buffer-overflow in MatchRule
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=41504
 
+  ```
   Crash type: Stack-buffer-overflow READ 1
   Crash state:
   MatchRule
   TranslateRules
   TranslateWord3
-modified: '2022-03-18T00:04:51.382314Z'
+  ```
+modified: '2022-04-13T03:04:34.232231Z'
 published: '2021-12-01T00:00:23.705541Z'
 references:
 - type: REPORT

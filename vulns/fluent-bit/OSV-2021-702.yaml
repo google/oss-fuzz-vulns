@@ -3,12 +3,14 @@ summary: Heap-double-free in flb_free
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=33750
 
+  ```
   Crash type: Heap-double-free
   Crash state:
   flb_free
   flb_parser_json_do
   flb_parser_do
-modified: '2021-06-21T06:56:24.438482Z'
+  ```
+modified: '2022-04-13T03:04:38.391046Z'
 published: '2021-04-29T00:00:25.185079Z'
 references:
 - type: REPORT

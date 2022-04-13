@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in logfmt_parser
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21953
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   logfmt_parser
   flb_parser_logfmt_do
   parse_logfmt_fuzzer.c
-modified: '2021-06-21T06:56:24.254835Z'
+  ```
+modified: '2022-04-13T03:04:38.177488Z'
 published: '2020-06-24T01:51:13.861732Z'
 references:
 - type: REPORT

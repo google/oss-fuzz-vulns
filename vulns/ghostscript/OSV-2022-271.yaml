@@ -3,12 +3,14 @@ summary: UNKNOWN READ in pdf14_buf_free
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=45892
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   pdf14_buf_free
   rc_pdf14_maskbuf_free
   pdf14_end_transparency_mask
-modified: '2022-03-22T00:01:47.478496Z'
+  ```
+modified: '2022-04-13T03:04:34.441603Z'
 published: '2022-03-22T00:01:47.478262Z'
 references:
 - type: REPORT

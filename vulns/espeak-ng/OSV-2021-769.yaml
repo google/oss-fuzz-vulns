@@ -3,12 +3,14 @@ summary: Stack-buffer-overflow in TranslateClause
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34332
 
+  ```
   Crash type: Stack-buffer-overflow READ 16
   Crash state:
   TranslateClause
   SpeakNextClause
   Synthesize
-modified: '2022-03-18T00:05:12.602848Z'
+  ```
+modified: '2022-04-13T03:04:34.260811Z'
 published: '2021-05-16T00:01:06.642521Z'
 references:
 - type: REPORT

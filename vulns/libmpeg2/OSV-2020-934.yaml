@@ -3,12 +3,14 @@ summary: UNKNOWN WRITE in ideint_process
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=16813
 
+  ```
   Crash type: UNKNOWN WRITE
   Crash state:
   ideint_process
   impeg2d_deinterlace
   impeg2d_dec_pic_data_thread
-modified: '2021-11-22T06:22:08.230510Z'
+  ```
+modified: '2022-04-13T03:04:33.833299Z'
 published: '2020-07-22T00:00:14.651452Z'
 references:
 - type: REPORT

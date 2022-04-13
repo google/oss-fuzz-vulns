@@ -3,12 +3,14 @@ summary: Use-of-uninitialized-value in varlink_write
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14688
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   varlink_write
   varlink_process
   defer_callback
-modified: '2021-06-21T06:56:25.867970Z'
+  ```
+modified: '2022-04-13T03:04:40.098918Z'
 published: '2020-07-01T00:00:21.697190Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 2a04712c19556517b47215d49b3faea14490a4f3
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

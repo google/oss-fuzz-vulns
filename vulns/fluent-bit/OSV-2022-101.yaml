@@ -3,12 +3,14 @@ summary: Heap-double-free in flb_sds_destroy
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=44153
 
+  ```
   Crash type: Heap-double-free
   Crash state:
   flb_sds_destroy
   flb_parser_conf_file
   config_random_fuzzer.c
-modified: '2022-01-30T00:00:16.518667Z'
+  ```
+modified: '2022-04-13T03:04:38.367382Z'
 published: '2022-01-30T00:00:16.518467Z'
 references:
 - type: REPORT

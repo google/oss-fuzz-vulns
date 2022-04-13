@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in JS::Lexer::consume
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=37294
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   JS::Lexer::consume
   JS::Lexer::next
   JS::Parser::consume
-modified: '2021-08-19T00:01:39.960917Z'
+  ```
+modified: '2022-04-13T03:04:32.170615Z'
 published: '2021-08-19T00:01:39.960686Z'
 references:
 - type: REPORT
@@ -24,3 +26,4 @@ affected:
     - introduced: 47bc72bcf6f2fae3dc0938b96d8c7890b1005ead
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

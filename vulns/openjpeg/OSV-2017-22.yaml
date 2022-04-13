@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in opj_tcd_mct_decode
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=3331
 
+  ```
   Crash type: Heap-buffer-overflow READ 4
   Crash state:
   opj_tcd_mct_decode
   opj_tcd_decode_tile
   opj_j2k_decode_tile
-modified: '2021-06-21T06:56:25.539992Z'
+  ```
+modified: '2022-04-13T03:04:39.646551Z'
 published: '2021-01-13T00:01:24.955187Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 28094e1ebfa420f9a0bdc7a11b8d4ee5f154db35
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

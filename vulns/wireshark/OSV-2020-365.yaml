@@ -3,12 +3,14 @@ summary: UNKNOWN READ in fuzzshark_ip_proto-udp
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=16442
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   fuzzshark_ip_proto-udp
   g_hash_table_lookup
   dissect_tls
-modified: '2021-06-21T06:56:24.095672Z'
+  ```
+modified: '2022-04-13T03:04:37.870514Z'
 published: '2020-07-01T00:00:05.383535Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 83220acb484e1ae615602c57c4f4eafaecbf4a5d
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

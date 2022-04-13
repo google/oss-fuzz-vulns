@@ -3,12 +3,14 @@ summary: Heap-use-after-free in xmlTextReaderRead
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25210
 
+  ```
   Crash type: Heap-use-after-free READ 4
   Crash state:
   xmlTextReaderRead
   xml.c
   xmlTextReaderFreeNode
-modified: '2021-06-21T06:56:25.705967Z'
+  ```
+modified: '2022-04-13T03:04:39.916971Z'
 published: '2020-08-27T00:00:24.605339Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: ba589adc2f86c6be9ad7e0d771d4c9b09d059b89
   ecosystem_specific:
     severity: HIGH
+  versions: []

@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in ext2fs_dinode_copy
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=38872
 
+  ```
   Crash type: Heap-buffer-overflow READ {*}
   Crash state:
   ext2fs_dinode_copy
   ext2fs_inode_walk
   tsk_fs_meta_walk
-modified: '2021-09-18T00:00:18.282174Z'
+  ```
+modified: '2022-04-13T03:04:36.448065Z'
 published: '2021-09-18T00:00:18.281968Z'
 references:
 - type: REPORT

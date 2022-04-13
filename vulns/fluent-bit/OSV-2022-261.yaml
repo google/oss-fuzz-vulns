@@ -3,11 +3,13 @@ summary: Segv on unknown address in flb_ra_create
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=45659
 
+  ```
   Crash type: Segv on unknown address
   Crash state:
   flb_ra_create
   record_ac_fuzzer.c
-modified: '2022-03-19T00:01:36.425983Z'
+  ```
+modified: '2022-04-13T03:04:38.160364Z'
 published: '2022-03-19T00:01:36.425719Z'
 references:
 - type: REPORT

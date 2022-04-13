@@ -3,12 +3,14 @@ summary: Use-of-uninitialized-value in adler32_z
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13317
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   adler32_z
   inflate
   ZIPDecode
-modified: '2021-11-22T06:23:59.765048Z'
+  ```
+modified: '2022-04-13T03:04:31.489268Z'
 published: '2020-07-22T00:00:25.376679Z'
 references:
 - type: REPORT
@@ -29,5 +31,5 @@ affected:
   - 4.1.0-openvino
   - 3.4.5
   ecosystem_specific:
-    severity: MEDIUM
     introduced_range: unknown:6bcf0b5519c190826cf0f21efd87cbe256eabc48
+    severity: MEDIUM

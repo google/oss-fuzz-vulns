@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in FLAC__bitreader_read_rice_signed_block
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=17069
 
+  ```
   Crash type: Heap-buffer-overflow READ 4
   Crash state:
   FLAC__bitreader_read_rice_signed_block
   read_residual_partitioned_rice_
   read_subframe_lpc_
-modified: '2021-06-23T06:51:17.501434Z'
+  ```
+modified: '2022-04-13T03:04:40.535378Z'
 published: '2020-07-22T21:49:51.797478Z'
 references:
 - type: REPORT
@@ -25,5 +27,6 @@ affected:
     - fixed: 2e7931c27eb15e387da440a37f12437e35b22dd4
     - introduced: a718a5ac2d16ac2b0f4122f93daa0b48626d905d
   ecosystem_specific:
-    severity: MEDIUM
     introduced_range: unknown:4ca0d85c5d0ea3e9d9afc4ac53b5187c9ab98689
+    severity: MEDIUM
+  versions: []

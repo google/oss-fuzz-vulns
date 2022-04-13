@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in opj_dwt_interleave_partial_v
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=3115
 
+  ```
   Crash type: Heap-buffer-overflow READ 4
   Crash state:
   opj_dwt_interleave_partial_v
   opj_dwt_decode_partial_tile
   opj_tcd_dwt_decode
-modified: '2021-06-21T06:56:25.527988Z'
+  ```
+modified: '2022-04-13T03:04:39.636392Z'
 published: '2021-01-13T00:00:03.425630Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: a55c024fc6b917a409b85aeafd7326421c4aea34
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

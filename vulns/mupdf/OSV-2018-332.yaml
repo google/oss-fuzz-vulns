@@ -3,12 +3,14 @@ summary: UNKNOWN READ in template_affine_color_N_lerp
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=6522
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   template_affine_color_N_lerp
   paint_affine_color_lerp_N
   fz_paint_image_imp
-modified: '2021-06-23T06:24:53.856730Z'
+  ```
+modified: '2022-04-13T03:04:31.234198Z'
 published: '2021-01-15T00:00:42.303176Z'
 references:
 - type: REPORT

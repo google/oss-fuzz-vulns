@@ -3,12 +3,14 @@ summary: Global-buffer-overflow in QSvgSwitch::draw
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29873
 
+  ```
   Crash type: Global-buffer-overflow READ 1
   Crash state:
   QSvgSwitch::draw
   QSvgTinyDocument::draw
   QSvgTinyDocument::draw
-modified: '2021-08-16T04:02:19.004581Z'
+  ```
+modified: '2022-04-13T03:04:36.790837Z'
 published: '2021-01-25T00:00:16.933600Z'
 references:
 - type: REPORT

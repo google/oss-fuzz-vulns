@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in ieeeNUMBER_fragment_hash
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=28191
 
+  ```
   Crash type: Heap-buffer-overflow READ 6
   Crash state:
   ieeeNUMBER_fragment_hash
   g_hash_table_insert_internal
   fragment_add_seq_common
-modified: '2021-06-21T06:56:24.079656Z'
+  ```
+modified: '2022-04-13T03:04:37.848952Z'
 published: '2020-12-04T00:00:30.414831Z'
 references:
 - type: REPORT

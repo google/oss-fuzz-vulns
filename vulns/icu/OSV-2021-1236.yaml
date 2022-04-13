@@ -3,12 +3,14 @@ summary: UNKNOWN READ in icu_70::UCharsTrie::branchNext
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=38390
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   icu_70::UCharsTrie::branchNext
   icu_70::UCharsTrie::firstForCodePoint
   icu_70::CollationIterator::nextCE32FromContraction
-modified: '2022-04-06T00:18:23.633756Z'
+  ```
+modified: '2022-04-13T03:04:34.096082Z'
 published: '2021-09-12T00:00:39.088726Z'
 references:
 - type: REPORT

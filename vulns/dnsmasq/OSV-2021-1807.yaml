@@ -3,12 +3,14 @@ summary: Heap-use-after-free in dhcp6_no_relay
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=44573
 
+  ```
   Crash type: Heap-use-after-free WRITE 1
   Crash state:
   dhcp6_no_relay
   dhcp6_maybe_relay
   dhcp6_maybe_relay
-modified: '2022-02-13T00:01:51.009694Z'
+  ```
+modified: '2022-04-13T03:04:31.136434Z'
 published: '2022-02-13T00:01:51.009220Z'
 references:
 - type: REPORT

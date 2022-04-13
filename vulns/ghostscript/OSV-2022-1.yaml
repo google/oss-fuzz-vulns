@@ -3,12 +3,14 @@ summary: Heap-use-after-free in pdfi_dereference
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=43268
 
+  ```
   Crash type: Heap-use-after-free READ 4
   Crash state:
   pdfi_dereference
   pdfi_dict_next
   pdfi_check_Resources
-modified: '2022-01-04T00:00:08.007790Z'
+  ```
+modified: '2022-04-13T03:04:34.692809Z'
 published: '2022-01-04T00:00:08.007553Z'
 references:
 - type: REPORT

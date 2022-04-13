@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in Assimp::BaseImporter::ConvertToUTF8
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=39339
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   Assimp::BaseImporter::ConvertToUTF8
   Assimp::BaseImporter::TextFileToBuffer
   Assimp::OpenGEX::OpenGEXImporter::InternReadFile
-modified: '2021-09-28T00:00:07.487166Z'
+  ```
+modified: '2022-04-13T03:04:42.673761Z'
 published: '2021-09-28T00:00:07.486971Z'
 references:
 - type: REPORT

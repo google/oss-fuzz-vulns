@@ -3,12 +3,14 @@ summary: Heap-use-after-free in cil_destroy_block
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30234
 
+  ```
   Crash type: Heap-use-after-free READ 4
   Crash state:
   cil_destroy_block
   cil_destroy_data
   cil_tree_node_destroy
-modified: '2021-06-21T06:56:27.693185Z'
+  ```
+modified: '2022-04-13T03:04:42.339265Z'
 published: '2021-02-04T00:00:11.709031Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: eba0ffee01ee11bb4fc3f6505d9cf69693088621
   ecosystem_specific:
     severity: HIGH
+  versions: []

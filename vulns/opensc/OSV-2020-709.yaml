@@ -3,12 +3,14 @@ summary: Heap-double-free in sc_pkcs15_free_object_content
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18890
 
+  ```
   Crash type: Heap-double-free
   Crash state:
   sc_pkcs15_free_object_content
   sc_pkcs15_free_object
   fuzz_pkcs15_decode.c
-modified: '2021-06-21T06:56:27.189601Z'
+  ```
+modified: '2022-04-13T03:04:41.707057Z'
 published: '2020-07-01T00:00:26.090578Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 5557f34f5ef86cbf2d2de0ff39b591d4c836defb
   ecosystem_specific:
     severity: HIGH
+  versions: []

@@ -4,12 +4,14 @@ summary: Heap-use-after-free in std::__1::__tree_iterator<std::__1::__value_type
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=33227
 
+  ```
   Crash type: Heap-use-after-free READ 8
   Crash state:
   std::__1::__tree_iterator<std::__1::__value_type<std::__1::basic_string<char, st
   void draco::Metadata::AddEntry<std::__1::vector<unsigned char, std::__1::allocat
   draco::MetadataDecoder::DecodeEntry
-modified: '2022-02-22T00:05:06.005729Z'
+  ```
+modified: '2022-04-13T03:04:42.803279Z'
 published: '2021-04-15T00:00:23.567516Z'
 references:
 - type: REPORT
@@ -28,5 +30,5 @@ affected:
   - 1.4.0
   - 1.4.1
   ecosystem_specific:
-    introduced_range: aef4bfbd61798ecc21d94c873b679fbdeaf92462:79601d2d060be52e673a82ed1c46f4666eb28255
     severity: HIGH
+    introduced_range: aef4bfbd61798ecc21d94c873b679fbdeaf92462:79601d2d060be52e673a82ed1c46f4666eb28255

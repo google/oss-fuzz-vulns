@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in BEInt<short, 2>::operator short
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20924
 
+  ```
   Crash type: Heap-buffer-overflow READ 2
   Crash state:
   BEInt<short, 2>::operator short
   OT::IntType<short, 2u>::operator int
   OT::TupleVarHeader::calculate_scalar
-modified: '2021-06-21T06:56:20.741553Z'
+  ```
+modified: '2022-04-13T03:04:33.175458Z'
 published: '2020-06-24T01:51:18.079088Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 61208401f41f5d41f32d436cee500c630706f6be
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

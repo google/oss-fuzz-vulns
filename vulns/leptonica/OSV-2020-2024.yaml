@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in pixFindHorizontalRuns
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26268
 
+  ```
   Crash type: Heap-buffer-overflow WRITE 4
   Crash state:
   pixFindHorizontalRuns
   pixFillPolygon
   graphics_fuzzer.cc
-modified: '2021-06-21T06:56:20.298390Z'
+  ```
+modified: '2022-04-13T03:04:32.720146Z'
 published: '2020-10-13T00:00:08.718271Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 20b8d16e4f3fa4d94b606a7f7804ee56c776768b
   ecosystem_specific:
     severity: HIGH
+  versions: []

@@ -3,12 +3,14 @@ summary: UNKNOWN WRITE in WelsDecodeBs
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29969
 
+  ```
   Crash type: UNKNOWN WRITE
   Crash state:
   WelsDecodeBs
   WelsDec::CWelsDecoder::DecodeFrame2WithCtx
   WelsDec::CWelsDecoder::DecodeFrame2
-modified: '2021-06-23T06:26:19.031683Z'
+  ```
+modified: '2022-04-13T03:04:37.403912Z'
 published: '2021-01-28T00:02:30.610788Z'
 references:
 - type: REPORT
@@ -26,3 +28,4 @@ affected:
   ecosystem_specific:
     severity: HIGH
     introduced_range: 83a0eae9bbbda5bfe802438109a025a3d7caee10:992c1c147175126c3fe7ab78216aa0395f9e6c71
+  versions: []

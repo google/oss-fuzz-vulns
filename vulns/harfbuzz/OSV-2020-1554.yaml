@@ -3,12 +3,14 @@ summary: Object-size in void hb_ot_map_t::apply<GPOSProxy>
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24508
 
+  ```
   Crash type: Object-size
   Crash state:
   void hb_ot_map_t::apply<GPOSProxy>
   hb_ot_map_t::position
   hb_ot_shape_plan_t::position
-modified: '2021-06-23T06:25:30.679312Z'
+  ```
+modified: '2022-04-13T03:04:32.907969Z'
 published: '2020-07-31T00:01:20.122854Z'
 references:
 - type: REPORT

@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in flatbuffers::vector_downward::fill
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30684
 
+  ```
   Crash type: Heap-buffer-overflow WRITE 1
   Crash state:
   flatbuffers::vector_downward::fill
   flatbuffers::FlatBufferBuilder::PreAlign
   flatbuffers::FlatBufferBuilder::ForceVectorAlignment
-modified: '2021-06-21T06:56:27.462025Z'
+  ```
+modified: '2022-04-13T03:04:42.089425Z'
 published: '2021-02-10T00:00:39.669242Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: fee095410b0969765b5c2545c10e585f69e961b0
   ecosystem_specific:
     severity: HIGH
+  versions: []

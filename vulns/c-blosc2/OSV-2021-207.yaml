@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in blosc_getitem
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29613
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   blosc_getitem
   get_coffset
   frame_get_lazychunk
-modified: '2021-06-23T06:29:21.212060Z'
+  ```
+modified: '2022-04-13T03:04:40.365046Z'
 published: '2021-01-17T00:00:12.646500Z'
 references:
 - type: REPORT
@@ -24,5 +26,6 @@ affected:
     - introduced: 933c0c455c91da06604163f533e9a2084cd2f6ca
     - fixed: aebf2b9858368681e497f136501ab33cc1014aed
   ecosystem_specific:
-    severity: MEDIUM
     fixed_range: 0e8bdfce66ba4b2fef79a2525fd83ecfc22b0983:aebf2b9858368681e497f136501ab33cc1014aed
+    severity: MEDIUM
+  versions: []

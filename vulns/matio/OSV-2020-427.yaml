@@ -3,12 +3,14 @@ summary: Stack-buffer-overflow in Mat_uint32Swap
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=17113
 
+  ```
   Crash type: Stack-buffer-overflow READ 4
   Crash state:
   Mat_uint32Swap
   Mat_VarReadNextInfo5
   Mat_GetDir
-modified: '2021-06-23T06:31:45.077468Z'
+  ```
+modified: '2022-04-13T03:04:43.096948Z'
 published: '2020-07-01T00:00:08.917488Z'
 references:
 - type: REPORT
@@ -24,5 +26,6 @@ affected:
     - introduced: f94c087aa9be54ec86a01e267b80fd61108069be
     - fixed: 8b3ee30a8d9cfdc3799252a4a42572fc6f8e205e
   ecosystem_specific:
-    severity: MEDIUM
     introduced_range: 7a9958485036ef37b4e88df5cbe32bd7ec4c0d25:6540087e697ca2b8950bada3d4ca653951b467dc
+    severity: MEDIUM
+  versions: []

@@ -3,12 +3,14 @@ summary: UNKNOWN WRITE in ideint_process
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18993
 
+  ```
   Crash type: UNKNOWN WRITE
   Crash state:
   ideint_process
   impeg2d_deinterlace
   impeg2d_dec_pic_data_thread
-modified: '2021-06-23T06:53:38.933545Z'
+  ```
+modified: '2022-04-13T03:04:33.841097Z'
 published: '2020-07-22T21:49:54.155583Z'
 references:
 - type: REPORT
@@ -38,5 +40,5 @@ affected:
   - platform-tools-30.0.2
   - platform-tools-30.0.3
   ecosystem_specific:
-    severity: HIGH
     introduced_range: unknown:2caf20ff25c090341965cc88b7f31f129e806a3a
+    severity: HIGH

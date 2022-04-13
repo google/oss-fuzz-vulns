@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in ProcessReply
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31527
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   ProcessReply
   wolfSSL_connect
   client.c
-modified: '2021-06-23T06:26:00.970156Z'
+  ```
+modified: '2022-04-13T03:04:35.723733Z'
 published: '2021-03-01T00:00:11.827075Z'
 references:
 - type: REPORT
@@ -27,5 +29,5 @@ affected:
   - v4.6.0-stable
   - v4.7.0-stable
   ecosystem_specific:
-    severity: MEDIUM
     introduced_range: deaf3b4b40d26663191d085557fbeb8cafa420ae:881657782478cef4a1527847bb2c4cd427bd6c99
+    severity: MEDIUM

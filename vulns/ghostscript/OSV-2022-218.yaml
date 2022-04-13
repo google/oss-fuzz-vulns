@@ -3,12 +3,14 @@ summary: UNKNOWN READ in pdfi_read_cff_font
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=45222
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   pdfi_read_cff_font
   pdfi_load_font
   pdfi_read_type0_font
-modified: '2022-03-06T00:01:40.011081Z'
+  ```
+modified: '2022-04-13T03:04:34.729007Z'
 published: '2022-03-06T00:01:40.010815Z'
 references:
 - type: REPORT

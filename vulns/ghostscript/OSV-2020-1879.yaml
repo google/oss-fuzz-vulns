@@ -3,12 +3,14 @@ summary: Use-of-uninitialized-value in gp_pwrite_impl
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21621
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   gp_pwrite_impl
   clist_fwrite_chars
   cmd_write_band
-modified: '2021-06-23T06:25:38.175329Z'
+  ```
+modified: '2022-04-13T03:04:34.306016Z'
 published: '2020-09-29T00:00:35.398249Z'
 references:
 - type: REPORT
@@ -26,3 +28,4 @@ affected:
   ecosystem_specific:
     introduced_range: unknown:668917a10e7eada030f7d2dddec9f579fddeed3d
     severity: MEDIUM
+  versions: []

@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in decode_header_value_literal
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=35675
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   decode_header_value_literal
   decode_header
   h2o_hpack_parse_request
-modified: '2021-07-01T00:00:08.550834Z'
+  ```
+modified: '2022-04-13T03:04:35.146504Z'
 published: '2021-07-01T00:00:08.550315Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 1785a2fe97eda2de3d065147a0a4e5b509f0e3c0
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

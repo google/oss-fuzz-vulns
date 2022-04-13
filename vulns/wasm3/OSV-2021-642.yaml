@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in op_Const64
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=33318
 
+  ```
   Crash type: Heap-buffer-overflow WRITE 8
   Crash state:
   op_Const64
   EvaluateExpression
   InitElements
-modified: '2021-06-21T06:56:18.568894Z'
+  ```
+modified: '2022-04-13T03:04:30.656599Z'
 published: '2021-04-17T00:00:10.657238Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: b48695bb940e55c0baa0a3d5740cf48e03643b58
   ecosystem_specific:
     severity: HIGH
+  versions: []

@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in dex_parse_debug_item
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=12973
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   dex_parse_debug_item
   parse_dex_class_method
   parse_class
-modified: '2021-06-23T06:26:08.417322Z'
+  ```
+modified: '2022-04-13T03:04:36.517077Z'
 published: '2020-07-22T21:49:46.622078Z'
 references:
 - type: REPORT

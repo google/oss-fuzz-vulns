@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in learn_check
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11862
 
+  ```
   Crash type: Heap-buffer-overflow READ 2
   Crash state:
   learn_check
   ofpacts_check
   parse_ofp_str__
-modified: '2021-06-21T06:56:26.322120Z'
+  ```
+modified: '2022-04-13T03:04:40.715978Z'
 published: '2021-01-13T00:00:33.905138Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 8ed9df00b6e4b8b3aadba4b552c27c0382d3508b
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

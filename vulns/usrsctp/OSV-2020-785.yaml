@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in sctp_handle_packet_dropped
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23656
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   sctp_handle_packet_dropped
   sctp_process_control
   sctp_common_input_processing
-modified: '2021-06-21T06:56:27.934636Z'
+  ```
+modified: '2022-04-13T03:04:42.613820Z'
 published: '2020-07-14T05:37:33.243806Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 25f4212f48563db7e37c606f04826ffd32b8b198
   ecosystem_specific:
     severity: HIGH
+  versions: []

@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in r_utf8_strlen
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13726
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   r_utf8_strlen
   getstr
   parse_class
-modified: '2021-06-21T06:56:23.115857Z'
+  ```
+modified: '2022-04-13T03:04:36.604999Z'
 published: '2020-07-01T00:00:15.106987Z'
 references:
 - type: REPORT

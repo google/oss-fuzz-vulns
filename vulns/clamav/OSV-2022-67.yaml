@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in cli_bcomp_freemeta
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=43816
 
+  ```
   Crash type: Heap-buffer-overflow READ 8
   Crash state:
   cli_bcomp_freemeta
   cli_bcomp_addpatt
   cli_parse_add
-modified: '2022-01-21T00:00:45.049025Z'
+  ```
+modified: '2022-04-13T03:04:39.425407Z'
 published: '2022-01-21T00:00:45.048694Z'
 references:
 - type: REPORT

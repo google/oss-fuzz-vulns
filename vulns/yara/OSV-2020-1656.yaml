@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in macho_is_32
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25134
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   macho_is_32
   macho_parse_file
   macho_parse_fat_file
-modified: '2021-06-23T06:30:50.095819Z'
+  ```
+modified: '2022-04-13T03:04:42.172036Z'
 published: '2020-08-24T00:01:51.084869Z'
 references:
 - type: REPORT
@@ -24,5 +26,6 @@ affected:
     - introduced: 39076d2eb2d529dd4a47a61d79454554e22551b9
     - fixed: 94299eee3819d7cef18faaae52251596888e22cd
   ecosystem_specific:
-    fixed_range: c6b3c4d1e0daa478e0592446cfd349a14acf9c81:94299eee3819d7cef18faaae52251596888e22cd
     severity: MEDIUM
+    fixed_range: c6b3c4d1e0daa478e0592446cfd349a14acf9c81:94299eee3819d7cef18faaae52251596888e22cd
+  versions: []

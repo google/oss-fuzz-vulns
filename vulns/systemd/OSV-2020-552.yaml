@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in varlink_enqueue_json
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14708
 
+  ```
   Crash type: Heap-buffer-overflow WRITE {*}
   Crash state:
   varlink_enqueue_json
   varlink_error
   varlink_errorb
-modified: '2021-06-21T06:56:25.856009Z'
+  ```
+modified: '2022-04-13T03:04:40.088782Z'
 published: '2020-07-01T00:00:16.498284Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: be44e091621a71525b850c84fc149c644a63f779
   ecosystem_specific:
     severity: HIGH
+  versions: []

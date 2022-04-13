@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in text_normalize_buffer
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22211
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   text_normalize_buffer
   arj_read_main_header
   cli_unarj_open
-modified: '2021-06-21T06:56:25.386965Z'
+  ```
+modified: '2022-04-13T03:04:39.402517Z'
 published: '2020-09-18T00:00:32.617703Z'
 references:
 - type: REPORT

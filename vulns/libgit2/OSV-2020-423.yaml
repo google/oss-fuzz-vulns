@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in stdalloc__strdup
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18356
 
+  ```
   Crash type: Heap-buffer-overflow READ {*}
   Crash state:
   stdalloc__strdup
   parse_hunk_body
   parse_patch_hunks
-modified: '2021-06-21T06:56:21.931488Z'
+  ```
+modified: '2022-04-13T03:04:35.188247Z'
 published: '2020-07-01T00:00:08.690856Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 6c6c15e935091a33f83d8de4ee5b0640339b2b89
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

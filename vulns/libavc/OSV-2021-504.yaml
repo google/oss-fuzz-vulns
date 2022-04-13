@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in ih264d_mark_err_slice_skip
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31757
 
+  ```
   Crash type: Heap-buffer-overflow WRITE 8
   Crash state:
   ih264d_mark_err_slice_skip
   ih264d_video_decode
   ih264d_api_function
-modified: '2021-11-23T00:09:33.527247Z'
+  ```
+modified: '2022-04-13T03:04:35.458691Z'
 published: '2021-03-07T00:00:59.495834Z'
 references:
 - type: REPORT

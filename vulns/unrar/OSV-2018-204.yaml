@@ -3,12 +3,14 @@ summary: UNKNOWN WRITE in __msan_memcpy.part.51
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=9845
 
+  ```
   Crash type: UNKNOWN WRITE
   Crash state:
   __msan_memcpy.part.51
   QuickOpen::ReadRaw
   QuickOpen::ReadNext
-modified: '2021-06-23T06:25:49.832338Z'
+  ```
+modified: '2022-04-13T03:04:35.292989Z'
 published: '2021-01-13T00:01:23.035709Z'
 references:
 - type: REPORT
@@ -32,5 +34,5 @@ affected:
   - v5.7.4
   - v6.0.3
   ecosystem_specific:
-    introduced_range: 9866c9649507f177233ca96feefac8b12e36a91f:b676eae90fc9c620a214889ed040d356638a18f6
     severity: HIGH
+    introduced_range: 9866c9649507f177233ca96feefac8b12e36a91f:b676eae90fc9c620a214889ed040d356638a18f6

@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in rasteropGeneralLow
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24134
 
+  ```
   Crash type: Heap-buffer-overflow READ 4
   Crash state:
   rasteropGeneralLow
   rasteropLow
   pixRasterop
-modified: '2021-06-21T06:56:20.274258Z'
+  ```
+modified: '2022-04-13T03:04:32.699227Z'
 published: '2020-07-21T00:00:19.151415Z'
 references:
 - type: REPORT

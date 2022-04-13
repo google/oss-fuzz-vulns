@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in gif_internal_decode_frame
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=32855
 
+  ```
   Crash type: Heap-buffer-overflow WRITE {*}
   Crash state:
   gif_internal_decode_frame
   gif_decode_frame
   vips_foreign_load_nsgif_generate
-modified: '2021-06-21T06:56:24.239542Z'
+  ```
+modified: '2022-04-13T03:04:38.118602Z'
 published: '2021-04-04T00:00:13.289894Z'
 references:
 - type: REPORT
@@ -26,3 +28,4 @@ affected:
     - introduced: 9bdf5e8cda3e0c63584984282b1e36d97c50bb1a
   ecosystem_specific:
     severity: HIGH
+  versions: []

@@ -3,12 +3,14 @@ summary: UNKNOWN READ in ndlz8_decompress
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42262
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   ndlz8_decompress
   blosc_d
   do_job
-modified: '2022-04-11T00:03:34.301367Z'
+  ```
+modified: '2022-04-13T03:04:40.354433Z'
 published: '2021-12-13T00:01:17.549900Z'
 references:
 - type: REPORT

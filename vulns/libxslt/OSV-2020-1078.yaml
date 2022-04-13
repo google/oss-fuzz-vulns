@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in xmlXPathCompileExpr
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18385
 
+  ```
   Crash type: Heap-buffer-overflow READ 4
   Crash state:
   xmlXPathCompileExpr
   xmlXPathCtxtCompile
   xsltFuzzXPath
-modified: '2021-06-23T06:25:31.001151Z'
+  ```
+modified: '2022-04-13T03:04:33.758281Z'
 published: '2020-07-22T21:49:45.671780Z'
 references:
 - type: REPORT
@@ -25,5 +27,6 @@ affected:
     - fixed: 9d4bfeecbdf28f3980b23fa8f2504bdf54f04486
   ecosystem_specific:
     fixed_range: 6d4a773a4bd06cbfe3c0ca68728d0099777e8df6:9d4bfeecbdf28f3980b23fa8f2504bdf54f04486
-    severity: MEDIUM
     introduced_range: unknown:7f56378a73af8a61da78b8091f0e317316cee300
+    severity: MEDIUM
+  versions: []

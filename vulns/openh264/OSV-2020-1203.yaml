@@ -3,12 +3,14 @@ summary: Heap-use-after-free in WelsDec::WelsReorderRefList
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20491
 
+  ```
   Crash type: Heap-use-after-free READ 4
   Crash state:
   WelsDec::WelsReorderRefList
   WelsDec::InitRefPicList
   WelsDec::DecodeCurrentAccessUnit
-modified: '2021-06-23T06:26:20.666576Z'
+  ```
+modified: '2022-04-13T03:04:37.419955Z'
 published: '2020-07-22T21:49:56.222517Z'
 references:
 - type: REPORT

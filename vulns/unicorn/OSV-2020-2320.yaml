@@ -3,12 +3,14 @@ summary: UNKNOWN WRITE in cpu_arm_exec_arm
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20220
 
+  ```
   Crash type: UNKNOWN WRITE
   Crash state:
   cpu_arm_exec_arm
   tcg_exec_all_arm
   qemu_tcg_cpu_loop
-modified: '2021-12-04T00:00:54.942812Z'
+  ```
+modified: '2022-04-13T03:04:39.176437Z'
 published: '2021-12-04T00:00:54.942609Z'
 references:
 - type: REPORT

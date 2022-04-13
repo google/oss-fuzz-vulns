@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in strlcpy
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=33556
 
+  ```
   Crash type: Heap-buffer-overflow WRITE {*}
   Crash state:
   strlcpy
   parse_lxc_mntopts
   set_config_rootfs_options
-modified: '2021-06-21T06:56:26.467757Z'
+  ```
+modified: '2022-04-13T03:04:40.899383Z'
 published: '2021-04-23T00:01:10.860169Z'
 references:
 - type: REPORT
@@ -27,3 +29,4 @@ affected:
     - fixed: c1831266cb936945509db98c2640390c52a78c83
   ecosystem_specific:
     severity: HIGH
+  versions: []

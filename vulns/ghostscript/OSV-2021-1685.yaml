@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in pdfi_dereference
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42327
 
+  ```
   Crash type: Heap-buffer-overflow READ 8
   Crash state:
   pdfi_dereference
   pdfi_deref_loop_detect
   pdfi_dict_get
-modified: '2021-12-14T00:00:35.301861Z'
+  ```
+modified: '2022-04-13T03:04:34.832636Z'
 published: '2021-12-14T00:00:35.301657Z'
 references:
 - type: REPORT

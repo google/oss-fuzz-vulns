@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in wolfSSH_CleanPath
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=27436
 
+  ```
   Crash type: Heap-buffer-overflow READ 16
   Crash state:
   wolfSSH_CleanPath
   ParseScpCommand
   DoScpRequest
-modified: '2021-06-23T06:26:02.970919Z'
+  ```
+modified: '2022-04-13T03:04:35.746596Z'
 published: '2020-11-15T22:33:36.192808Z'
 references:
 - type: REPORT
@@ -26,6 +28,6 @@ affected:
   versions:
   - v4.6.0-stable
   ecosystem_specific:
-    fixed_range: 6e0e507dad67f62f148e8124903172de817802f9:a1e083b5b13a681003e564351a55634d2f56d03a
     introduced_range: deaf3b4b40d26663191d085557fbeb8cafa420ae:881657782478cef4a1527847bb2c4cd427bd6c99
+    fixed_range: 6e0e507dad67f62f148e8124903172de817802f9:a1e083b5b13a681003e564351a55634d2f56d03a
     severity: MEDIUM

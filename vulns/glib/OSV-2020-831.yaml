@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in g_string_insert_len
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23816
 
+  ```
   Crash type: Heap-buffer-overflow READ 5
   Crash state:
   g_string_insert_len
   g_string_append_len
   _uri_encoder
-modified: '2021-06-21T06:56:20.106925Z'
+  ```
+modified: '2022-04-13T03:04:32.510149Z'
 published: '2020-07-14T22:13:38.399117Z'
 references:
 - type: REPORT

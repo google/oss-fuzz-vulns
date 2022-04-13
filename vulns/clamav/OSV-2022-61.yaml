@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in cli_loadcrt
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=43828
 
+  ```
   Crash type: Heap-buffer-overflow READ {*}
   Crash state:
   cli_loadcrt
   cli_load
   cl_load
-modified: '2022-01-21T00:00:05.087834Z'
+  ```
+modified: '2022-04-13T03:04:39.408377Z'
 published: '2022-01-21T00:00:05.087581Z'
 references:
 - type: REPORT

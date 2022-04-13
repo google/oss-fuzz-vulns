@@ -3,12 +3,14 @@ summary: Heap-use-after-free in us_socket_close
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31047
 
+  ```
   Crash type: Heap-use-after-free READ 8
   Crash state:
   us_socket_close
   __wrap_epoll_wait
   us_loop_run
-modified: '2021-06-21T06:56:26.540713Z'
+  ```
+modified: '2022-04-13T03:04:40.971191Z'
 published: '2021-02-18T00:02:35.938517Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 5a3c7c03c59405d56ad4aeb6c12267039f5d17a1
   ecosystem_specific:
     severity: HIGH
+  versions: []

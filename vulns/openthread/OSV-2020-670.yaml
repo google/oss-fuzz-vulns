@@ -3,12 +3,14 @@ summary: Memcpy-param-overlap in ot::Cli::CoapSecure::Process
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=12679
 
+  ```
   Crash type: Memcpy-param-overlap
   Crash state:
   ot::Cli::CoapSecure::Process
   ot::Cli::Interpreter::ProcessCoapSecure
   ot::Cli::Interpreter::ProcessLine
-modified: '2021-06-21T06:56:24.967097Z'
+  ```
+modified: '2022-04-13T03:04:38.899024Z'
 published: '2020-07-01T00:00:23.712711Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: cb5e076a3e0a8daa7ee3576e1962c5388f2002ca
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

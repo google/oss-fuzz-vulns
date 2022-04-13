@@ -3,12 +3,14 @@ summary: Stack-buffer-overflow in ot::MeshCoP::CommissionerSessionIdTlv::GetComm
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=3376
 
+  ```
   Crash type: Stack-buffer-overflow READ 2
   Crash state:
   ot::MeshCoP::CommissionerSessionIdTlv::GetCommissionerSessionId
   ot::NetworkData::Leader::HandleCommissioningSet
   ot::Coap::Coap::ProcessReceivedRequest
-modified: '2021-06-21T06:56:25.078490Z'
+  ```
+modified: '2022-04-13T03:04:38.993383Z'
 published: '2021-01-13T21:57:51.011913Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: ba148cf5bf7fa7cc445fb53c4aa88886d01e76d0
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

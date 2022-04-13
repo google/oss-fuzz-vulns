@@ -3,12 +3,14 @@ summary: Use-of-uninitialized-value in fetchARGB32ToRGBA64PM_avx2
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21808
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   fetchARGB32ToRGBA64PM_avx2
   blend_untransformed_generic_rgb64
   fillRect_normalized
-modified: '2022-04-10T00:03:47.589532Z'
+  ```
+modified: '2022-04-13T03:04:42.434523Z'
 published: '2020-07-14T22:13:50.828646Z'
 references:
 - type: REPORT

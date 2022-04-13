@@ -3,12 +3,14 @@ summary: Stack-buffer-overflow in ot::MeshCoP::ChannelMaskEntryBase::GetEntrySiz
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=28315
 
+  ```
   Crash type: Stack-buffer-overflow READ 1
   Crash state:
   ot::MeshCoP::ChannelMaskEntryBase::GetEntrySize
   ot::MeshCoP::ChannelMaskEntryBase::GetNext
   ot::MeshCoP::ChannelMaskBaseTlv::IsValid
-modified: '2021-06-21T06:56:25.115574Z'
+  ```
+modified: '2022-04-13T03:04:39.024692Z'
 published: '2020-12-06T00:00:26.193153Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 02f7dbb42be7f75355436ec43bc82d0b2b4caad6
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in QPointF::x
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24615
 
+  ```
   Crash type: Heap-buffer-overflow READ 8
   Crash state:
   QPointF::x
   QBezier::fromPoints
   QOutlineMapper::curveTo
-modified: '2021-08-16T04:51:39.436009Z'
+  ```
+modified: '2022-04-13T03:04:36.919807Z'
 published: '2020-08-04T00:00:33.938651Z'
 references:
 - type: REPORT

@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in chunk_obj_alloc
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42356
 
+  ```
   Crash type: Heap-buffer-overflow READ 8
   Crash state:
   chunk_obj_alloc
   chunk_alloc_bytes
   pdfi_object_alloc
-modified: '2021-12-15T00:01:50.752575Z'
+  ```
+modified: '2022-04-13T03:04:34.687467Z'
 published: '2021-12-15T00:01:50.752361Z'
 references:
 - type: REPORT

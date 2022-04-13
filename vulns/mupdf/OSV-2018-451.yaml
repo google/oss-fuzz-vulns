@@ -3,12 +3,14 @@ summary: Use-of-uninitialized-value in jbig2_huffman_get
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=9682
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   jbig2_huffman_get
   jbig2_decode_symbol_dict
   jbig2_symbol_dictionary
-modified: '2021-06-21T06:56:19.022107Z'
+  ```
+modified: '2022-04-13T03:04:31.255933Z'
 published: '2021-01-15T00:01:23.287241Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: ce3e98c07e29dab2743e792e478395ed30d27dc1
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

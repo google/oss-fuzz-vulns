@@ -3,12 +3,14 @@ summary: Negative-size-param in parquet::ColumnReaderImplBase<parquet::PhysicalT
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20698
 
+  ```
   Crash type: Negative-size-param
   Crash state:
   parquet::ColumnReaderImplBase<parquet::PhysicalType<
   parquet::internal::TypedRecordReader<parquet::PhysicalType<
   parquet::arrow::LeafReader::NextBatch
-modified: '2021-03-09T04:49:05.577574Z'
+  ```
+modified: '2022-04-13T03:04:31.807491Z'
 published: '2020-06-24T01:51:18.827983Z'
 references:
 - type: REPORT
@@ -23,3 +25,4 @@ affected:
     events:
     - introduced: 431fdbfbc0fb4bb16c4a89298404ad16784db2a0
     - fixed: d2ab289294f5eaa175e6bc4ab5fb74b5ea013f6e
+  versions: []

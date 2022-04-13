@@ -3,12 +3,14 @@ summary: Stack-buffer-overflow in ihevcd_ref_list
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=17029
 
+  ```
   Crash type: Stack-buffer-overflow WRITE 4
   Crash state:
   ihevcd_ref_list
   ihevcd_parse_slice_header
   ihevcd_nal_unit
-modified: '2021-06-21T06:56:18.896642Z'
+  ```
+modified: '2022-04-13T03:04:31.010237Z'
 published: '2020-07-01T00:00:07.241400Z'
 references:
 - type: REPORT

@@ -3,12 +3,14 @@ summary: UNKNOWN in TIFFReadRGBATileExt
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13277
 
+  ```
   Crash type: UNKNOWN
   Crash state:
   TIFFReadRGBATileExt
   cv::TiffDecoder::readData
   cv::imread
-modified: '2021-11-23T22:30:45.739901Z'
+  ```
+modified: '2022-04-13T03:04:31.506488Z'
 published: '2020-07-22T21:49:38.378993Z'
 references:
 - type: REPORT

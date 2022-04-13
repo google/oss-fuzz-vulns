@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in pcpp::HeaderField::HeaderField
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22528
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   pcpp::HeaderField::HeaderField
   pcpp::TextBasedProtocolMessage::parseFields
   pcpp::SipResponseLayer::SipResponseLayer
-modified: '2021-06-23T06:28:20.860334Z'
+  ```
+modified: '2022-04-13T03:04:38.590838Z'
 published: '2020-07-22T00:00:21.373584Z'
 references:
 - type: REPORT
@@ -26,3 +28,4 @@ affected:
   ecosystem_specific:
     introduced_range: unknown:4366d2f86bf105025765a0ce3db6e647ba0f3508
     severity: MEDIUM
+  versions: []

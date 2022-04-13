@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in vorbis_book_decodev_add
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22207
 
+  ```
   Crash type: Heap-buffer-overflow READ 4
   Crash state:
   vorbis_book_decodev_add
   _01inverse
   res1_inverse
-modified: '2021-06-23T06:26:28.316081Z'
+  ```
+modified: '2022-04-13T03:04:37.716167Z'
 published: '2020-06-24T01:51:14.665804Z'
 references:
 - type: REPORT
@@ -26,3 +28,4 @@ affected:
   ecosystem_specific:
     introduced_range: 7c30a66346199f3f09017a09567c6c8a3a0eedc8:b56ffce0c0773ec5ca04c466bc00b1bbcaf65aef
     severity: MEDIUM
+  versions: []

@@ -3,12 +3,14 @@ summary: Global-buffer-overflow in pdfi_dict_get
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42957
 
+  ```
   Crash type: Global-buffer-overflow READ 8
   Crash state:
   pdfi_dict_get
   pdfi_dict_get_int
   pdfi_read_bare_object
-modified: '2021-12-27T00:01:40.028460Z'
+  ```
+modified: '2022-04-13T03:04:34.429961Z'
 published: '2021-12-27T00:01:40.028032Z'
 references:
 - type: REPORT

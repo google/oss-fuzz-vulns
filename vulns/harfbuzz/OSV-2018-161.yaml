@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in BEInt<unsigned short, 2>::set
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11081
 
+  ```
   Crash type: Heap-buffer-overflow WRITE 1
   Crash state:
   BEInt<unsigned short, 2>::set
   OT::Script::subset
   void OT::OffsetTo<OT::Script, OT::IntType<unsigned short, 2u>, true>::serialize_
-modified: '2021-06-21T06:56:20.510896Z'
+  ```
+modified: '2022-04-13T03:04:32.930471Z'
 published: '2021-01-13T00:01:07.793293Z'
 references:
 - type: REPORT

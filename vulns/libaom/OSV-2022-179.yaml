@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in row_mt_worker_hook
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=44856
 
+  ```
   Crash type: Heap-buffer-overflow WRITE 4
   Crash state:
   row_mt_worker_hook
   execute
   av1_decode_tg_tiles_and_wrapup
-modified: '2022-02-21T00:00:40.376308Z'
+  ```
+modified: '2022-04-13T03:04:39.479274Z'
 published: '2022-02-21T00:00:40.376028Z'
 references:
 - type: REPORT

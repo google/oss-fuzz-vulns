@@ -3,12 +3,14 @@ summary: Use-of-uninitialized-value in Variant_decodeJson
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14620
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   Variant_decodeJson
   UA_decodeJson
   fuzz_json_decode.cc
-modified: '2021-06-21T06:56:26.884501Z'
+  ```
+modified: '2022-04-13T03:04:41.381133Z'
 published: '2020-07-01T00:00:12.896994Z'
 references:
 - type: REPORT

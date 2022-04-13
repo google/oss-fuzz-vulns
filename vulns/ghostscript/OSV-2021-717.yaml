@@ -3,12 +3,14 @@ summary: Heap-use-after-free in real_param
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=33862
 
+  ```
   Crash type: Heap-use-after-free READ 1
   Crash state:
   real_param
   zpdfinkpath
   interp
-modified: '2021-06-21T06:56:21.514880Z'
+  ```
+modified: '2022-04-13T03:04:34.397585Z'
 published: '2021-05-02T00:00:44.749274Z'
 references:
 - type: REPORT

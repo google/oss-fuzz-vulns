@@ -3,12 +3,14 @@ summary: Memcpy-param-overlap in parquet::DeltaByteArrayDecoder::GetInternal
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=40902
 
+  ```
   Crash type: Memcpy-param-overlap
   Crash state:
   parquet::DeltaByteArrayDecoder::GetInternal
   parquet::DeltaByteArrayDecoder::DecodeArrow
   parquet::internal::ByteArrayChunkedRecordReader::ReadValuesSpaced
-modified: '2021-11-12T00:00:22.286510Z'
+  ```
+modified: '2022-04-13T03:04:32.061851Z'
 published: '2021-11-12T00:00:22.286310Z'
 references:
 - type: REPORT

@@ -3,12 +3,14 @@ summary: Heap-use-after-free in jpeg_fill_bit_buffer
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=46343
 
+  ```
   Crash type: Heap-use-after-free WRITE 4
   Crash state:
   jpeg_fill_bit_buffer
   jpeg_huff_decode
   decode_mcu
-modified: '2022-04-06T00:00:40.210484Z'
+  ```
+modified: '2022-04-13T03:04:38.124312Z'
 published: '2022-04-06T00:00:40.210191Z'
 references:
 - type: REPORT

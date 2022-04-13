@@ -3,12 +3,14 @@ summary: Stack-buffer-overflow in processClientServerHello
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30393
 
+  ```
   Crash type: Stack-buffer-overflow WRITE 6
   Crash state:
   processClientServerHello
   processTLSBlock
   ndpi_search_tls_tcp
-modified: '2021-06-21T06:56:22.861691Z'
+  ```
+modified: '2022-04-13T03:04:36.330693Z'
 published: '2021-02-08T00:00:05.010743Z'
 references:
 - type: REPORT

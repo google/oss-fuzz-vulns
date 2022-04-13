@@ -3,12 +3,14 @@ summary: Global-buffer-overflow in csnStreamDissector
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=1436
 
+  ```
   Crash type: Global-buffer-overflow READ 2
   Crash state:
   csnStreamDissector
   csnStreamDissector
   csnStreamDissector
-modified: '2021-06-23T06:27:52.048889Z'
+  ```
+modified: '2022-04-13T03:04:37.832807Z'
 published: '2021-01-15T00:01:17.650107Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 129bdb5a164a6386c35ff387e9d8f0d3d6a12dbf
   ecosystem_specific:
     introduced_range: ab504191fccdb7db1d9559ac0592f22872586133:954548fdb951cbffbfa3c7cadb2c202919c0204c
+  versions: []

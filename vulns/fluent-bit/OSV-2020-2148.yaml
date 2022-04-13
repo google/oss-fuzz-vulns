@@ -3,11 +3,13 @@ summary: Heap-buffer-overflow in flb_gzip_compress
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=27368
 
+  ```
   Crash type: Heap-buffer-overflow WRITE 1
   Crash state:
   flb_gzip_compress
   utils_fuzzer.c
-modified: '2021-06-21T06:56:24.367913Z'
+  ```
+modified: '2022-04-13T03:04:38.303320Z'
 published: '2020-11-12T00:00:05.550790Z'
 references:
 - type: REPORT

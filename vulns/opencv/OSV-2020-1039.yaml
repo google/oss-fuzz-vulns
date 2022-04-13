@@ -3,12 +3,14 @@ summary: UNKNOWN WRITE in putgreytile
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13283
 
+  ```
   Crash type: UNKNOWN WRITE
   Crash state:
   putgreytile
   gtStripContig
   TIFFReadRGBAStripExt
-modified: '2021-11-22T06:25:40.967700Z'
+  ```
+modified: '2022-04-13T03:04:31.483339Z'
 published: '2020-07-22T21:49:41.614766Z'
 references:
 - type: REPORT

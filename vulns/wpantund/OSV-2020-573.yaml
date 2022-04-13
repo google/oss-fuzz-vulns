@@ -3,12 +3,14 @@ summary: UNKNOWN READ in (__has_construct<std::__1::allocator<unsigned
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14479
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   (__has_construct<std::__1::allocator<unsigned
   std::__1::enable_if<__is_forward_iterator<unsigned char const*>::value, void>::t
   std::__1::vector<unsigned char, std::__1::allocator<unsigned char> >::vector<uns
-modified: '2021-06-21T06:56:21.320758Z'
+  ```
+modified: '2022-04-13T03:04:33.929074Z'
 published: '2020-07-01T00:00:17.789046Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: f19f0b8169c3daa60e37b0293a2d4be8b768e5cc
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

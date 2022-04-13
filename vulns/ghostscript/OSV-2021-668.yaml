@@ -3,12 +3,14 @@ summary: Stack-use-after-return in pdf14_initialize
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=33529
 
+  ```
   Crash type: Stack-use-after-return WRITE 8
   Crash state:
   pdf14_initialize
   pdf14_procs_initialize
   pdf14_RGB_initialize
-modified: '2021-04-22T00:00:06.489457Z'
+  ```
+modified: '2022-04-13T03:04:34.636806Z'
 published: '2021-04-22T00:00:06.489177Z'
 references:
 - type: REPORT
@@ -23,3 +25,4 @@ affected:
     events:
     - introduced: e1a3956f252404f07d93be47f7845b23e4a2c4de
     - fixed: 20610dc28ee3cf7e64ad46f11e9b96fb3befba00
+  versions: []

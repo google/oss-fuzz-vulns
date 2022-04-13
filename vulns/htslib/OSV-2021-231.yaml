@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in int32_get_blk
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29855
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   int32_get_blk
   cram_read_SAM_hdr
   cram_dopen
-modified: '2021-06-21T06:56:19.940260Z'
+  ```
+modified: '2022-04-13T03:04:32.301338Z'
 published: '2021-01-24T00:00:23.631012Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 90fef7300c75ca6b8834da0dcb710e27d599324e
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

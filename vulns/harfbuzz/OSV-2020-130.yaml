@@ -3,12 +3,14 @@ summary: Use-of-uninitialized-value in OT::TupleVarHeader::calculate_scalar
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20919
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   OT::TupleVarHeader::calculate_scalar
   OT::gvar::accelerator_t::apply_deltas_to_points
   bool OT::glyf::Glyph::get_points<bool OT::glyf::accelerator_t::get_points<OT::gl
-modified: '2021-06-21T06:56:20.678921Z'
+  ```
+modified: '2022-04-13T03:04:33.115052Z'
 published: '2020-06-24T01:51:15.452987Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 61208401f41f5d41f32d436cee500c630706f6be
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

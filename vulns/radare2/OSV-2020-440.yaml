@@ -3,12 +3,14 @@ summary: UNKNOWN READ in r_uleb128
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13915
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   r_uleb128
   parse_class
   dex_loadcode
-modified: '2021-06-21T06:56:23.197500Z'
+  ```
+modified: '2022-04-13T03:04:36.683164Z'
 published: '2020-07-01T00:00:09.710794Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 118bf6a693ef0a349959919fd6217e70a26ddf62
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

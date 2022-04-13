@@ -3,12 +3,14 @@ summary: Uncaught exception in com.esotericsoftware.kryo.serializers.FieldSerial
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34733
 
+  ```
   Crash type: Uncaught exception
   Crash state:
   com.esotericsoftware.kryo.serializers.FieldSerializer.read
   com.esotericsoftware.kryo.Kryo.readObject
   DeserializeStringFuzzer.fuzzerTestOneInput
-modified: '2022-02-22T00:04:35.616148Z'
+  ```
+modified: '2022-04-13T03:04:36.375090Z'
 published: '2021-05-29T00:01:09.011604Z'
 references:
 - type: REPORT

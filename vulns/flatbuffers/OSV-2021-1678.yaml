@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in flatbuffers::EscapeString
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42244
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   flatbuffers::EscapeString
   flexbuffers::Reference::ToString
   void flexbuffers::AppendToString<flexbuffers::Vector>
-modified: '2021-12-13T00:01:41.859143Z'
+  ```
+modified: '2022-04-13T03:04:42.029998Z'
 published: '2021-12-13T00:01:41.858945Z'
 references:
 - type: REPORT

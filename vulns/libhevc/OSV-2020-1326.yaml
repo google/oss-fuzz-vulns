@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in ihevcd_parse_slice_data
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=16804
 
+  ```
   Crash type: Heap-buffer-overflow READ 4
   Crash state:
   ihevcd_parse_slice_data
   ihevcd_decode
   ihevcd_cxa_api_function
-modified: '2021-06-23T06:24:50.424628Z'
+  ```
+modified: '2022-04-13T03:04:30.983191Z'
 published: '2020-07-22T21:50:06.811741Z'
 references:
 - type: REPORT
@@ -26,3 +28,4 @@ affected:
   ecosystem_specific:
     introduced_range: unknown:5e7dc4732015717682ac0da1431fe3e656aea617
     severity: MEDIUM
+  versions: []

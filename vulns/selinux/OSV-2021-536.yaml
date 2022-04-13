@@ -3,12 +3,14 @@ summary: Heap-use-after-free in cil_reset_classpermission
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=32177
 
+  ```
   Crash type: Heap-use-after-free READ 8
   Crash state:
   cil_reset_classpermission
   cil_reset_classperms_set
   cil_reset_classperms_list
-modified: '2021-06-21T06:56:27.701577Z'
+  ```
+modified: '2022-04-13T03:04:42.350659Z'
 published: '2021-03-19T00:01:12.719776Z'
 references:
 - type: REPORT

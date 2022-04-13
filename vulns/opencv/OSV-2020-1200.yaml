@@ -3,12 +3,14 @@ summary: UNKNOWN WRITE in DumpModeDecode
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14071
 
+  ```
   Crash type: UNKNOWN WRITE
   Crash state:
   DumpModeDecode
   TIFFReadEncodedStrip
   cv::TiffDecoder::readData_32FC3
-modified: '2021-11-22T06:28:54.541184Z'
+  ```
+modified: '2022-04-13T03:04:31.512475Z'
 published: '2020-07-22T21:49:55.773582Z'
 references:
 - type: REPORT
@@ -30,5 +32,5 @@ affected:
   - 4.0.1-openvino
   ecosystem_specific:
     severity: HIGH
-    fixed_range: 4001346a30ad31cd96544937c01a88f37ff02670:473941c3418e2c8d0d91b8d48ae824cec87232f4
     introduced_range: unknown:6bcf0b5519c190826cf0f21efd87cbe256eabc48
+    fixed_range: 4001346a30ad31cd96544937c01a88f37ff02670:473941c3418e2c8d0d91b8d48ae824cec87232f4

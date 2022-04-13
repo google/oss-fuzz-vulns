@@ -3,12 +3,14 @@ summary: Negative-size-param in mrb_str_format
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=35109
 
+  ```
   Crash type: Negative-size-param
   Crash state:
   mrb_str_format
   mrb_f_sprintf
   mrb_vm_exec
-modified: '2021-06-11T00:01:20.115521Z'
+  ```
+modified: '2022-04-13T03:04:39.728879Z'
 published: '2021-06-11T00:01:20.115204Z'
 references:
 - type: REPORT
@@ -23,3 +25,4 @@ affected:
     events:
     - introduced: 972cc8b5a8c0378c391f981153ccdccf24c89d21
     - fixed: 62f4cc8cd1d5839153eb364c1c095df64d7cdc22
+  versions: []

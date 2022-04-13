@@ -3,12 +3,14 @@ summary: Index-out-of-bounds in tcg_liveness_analysis_arm
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23971
 
+  ```
   Crash type: Index-out-of-bounds
   Crash state:
   tcg_liveness_analysis_arm
   tcg_gen_code_arm
   cpu_arm_gen_code_arm
-modified: '2022-02-19T19:25:45.989656Z'
+  ```
+modified: '2022-04-13T03:04:39.232015Z'
 published: '2020-07-14T05:37:49.161459Z'
 references:
 - type: REPORT

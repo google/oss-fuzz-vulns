@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in q_memchr
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=38065
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   q_memchr
   parse_quoted_param
   parse_param_body
-modified: '2021-09-05T00:00:46.108834Z'
+  ```
+modified: '2022-04-13T03:04:37.747979Z'
 published: '2021-09-05T00:00:46.108630Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 20db418f1e35f31d7a90d7cabbd22ae989b7266c
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

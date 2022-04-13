@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in spng_decode_scanline
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22595
 
+  ```
   Crash type: Heap-buffer-overflow WRITE 2
   Crash state:
   spng_decode_scanline
   spng_decode_row
   spng_decode_image
-modified: '2021-06-21T06:56:21.104958Z'
+  ```
+modified: '2022-04-13T03:04:33.713905Z'
 published: '2020-06-24T01:51:18.641839Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 954b5570a02822a1fdd3c7508ac86ce5984aedee
   ecosystem_specific:
     severity: HIGH
+  versions: []

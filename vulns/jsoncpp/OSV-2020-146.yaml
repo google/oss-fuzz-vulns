@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in Json::OurReader::parse
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21916
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   Json::OurReader::parse
   Json::OurCharReader::parse
   fuzz.cpp
-modified: '2021-06-21T06:56:23.251430Z'
+  ```
+modified: '2022-04-13T03:04:36.739790Z'
 published: '2020-06-24T01:51:16.175015Z'
 references:
 - type: REPORT

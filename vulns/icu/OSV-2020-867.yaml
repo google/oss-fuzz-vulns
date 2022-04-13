@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in icu_64::CollationIterator::appendCEsFromCE32
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15613
 
+  ```
   Crash type: Heap-buffer-overflow READ 4
   Crash state:
   icu_64::CollationIterator::appendCEsFromCE32
   icu_64::DataBuilderCollationIterator::fetchCEs
   icu_64::CollationDataBuilder::getCEs
-modified: '2022-04-06T00:18:43.599983Z'
+  ```
+modified: '2022-04-13T03:04:34.114186Z'
 published: '2020-07-14T22:13:50.339661Z'
 references:
 - type: REPORT

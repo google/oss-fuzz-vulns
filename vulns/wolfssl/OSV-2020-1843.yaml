@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in SendUserAuthPkOk
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25926
 
+  ```
   Crash type: Heap-buffer-overflow READ {*}
   Crash state:
   SendUserAuthPkOk
   DoUserAuthRequestPublicKey
   DoUserAuthRequest
-modified: '2021-06-23T06:26:00.066379Z'
+  ```
+modified: '2022-04-13T03:04:35.717971Z'
 published: '2020-09-26T00:00:06.428089Z'
 references:
 - type: REPORT
@@ -27,3 +29,4 @@ affected:
     introduced_range: deaf3b4b40d26663191d085557fbeb8cafa420ae:881657782478cef4a1527847bb2c4cd427bd6c99
     fixed_range: 84ee1509b736cac51bd1b2f13fb7e86505b0735a:4f6c1db9a2ae47cfe488e7443ce54b7e2a815261
     severity: MEDIUM
+  versions: []

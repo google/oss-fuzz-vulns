@@ -3,12 +3,14 @@ summary: Use-of-uninitialized-value in jbig2_arith_decode
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23762
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   jbig2_arith_decode
   jbig2_decode_refinement_TPGRON
   jbig2_decode_refinement_region
-modified: '2021-06-21T06:56:26.181645Z'
+  ```
+modified: '2022-04-13T03:04:40.569287Z'
 published: '2020-07-14T05:37:48.869064Z'
 references:
 - type: REPORT

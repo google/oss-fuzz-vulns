@@ -3,12 +3,14 @@ summary: Global-buffer-overflow in mode_sense_page
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30219
 
+  ```
   Crash type: Global-buffer-overflow READ 4
   Crash state:
   mode_sense_page
   scsi_disk_check_mode_select
   mode_select_pages
-modified: '2021-06-23T06:25:30.821462Z'
+  ```
+modified: '2022-04-13T03:04:33.320557Z'
 published: '2021-02-05T00:00:20.001417Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: d0dddab40e472ba62b5f43f11cc7dba085dabe71
   ecosystem_specific:
     fixed_range: 2c6df987965729df702fa12f79564b5f76e3fa4e:d0dddab40e472ba62b5f43f11cc7dba085dabe71
+  versions: []

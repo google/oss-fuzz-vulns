@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in fuzz_read_callback
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=4785
 
+  ```
   Crash type: Heap-buffer-overflow WRITE {*}
   Crash state:
   fuzz_read_callback
   Curl_fillreadbuffer
   readwrite_upload
-modified: '2021-06-23T06:31:19.886801Z'
+  ```
+modified: '2022-04-13T03:04:42.850130Z'
 published: '2021-01-13T21:57:35.291125Z'
 references:
 - type: REPORT
@@ -52,5 +54,5 @@ affected:
   - tiny-curl-7_72_0
   ecosystem_specific:
     introduced_range: 1cb4f5d6e8e470638759a48ba99fda230089712f:e240a546a7ac2fa7956adb664b8c40c4dee4f82b
-    severity: HIGH
     fixed_range: b399b04902c43f479b51b142505700edcfc34271:ab6eb2ec0744074004980d0f98677e52b215941f
+    severity: HIGH

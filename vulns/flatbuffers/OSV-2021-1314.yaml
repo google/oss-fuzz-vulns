@@ -3,12 +3,14 @@ summary: Use-of-uninitialized-value in LoadBinarySchema
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=38817
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   LoadBinarySchema
   do_test
   flatbuffers_monster_fuzzer.cc
-modified: '2021-09-18T00:01:28.793787Z'
+  ```
+modified: '2022-04-13T03:04:42.024738Z'
 published: '2021-09-18T00:01:28.793578Z'
 references:
 - type: REPORT

@@ -3,12 +3,14 @@ summary: Global-buffer-overflow in DoEmbedded2
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34718
 
+  ```
   Crash type: Global-buffer-overflow READ 4
   Crash state:
   DoEmbedded2
   CalcLengths
   SpeakNextClause
-modified: '2022-03-19T00:06:02.823999Z'
+  ```
+modified: '2022-04-13T03:04:34.221370Z'
 published: '2021-05-28T00:00:30.256086Z'
 references:
 - type: REPORT

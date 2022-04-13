@@ -3,12 +3,14 @@ summary: Use-of-uninitialized-value in gx_color_frac_map
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25463
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   gx_color_frac_map
   pdf14_cmap_rgb_direct
   gx_remap_concrete_DRGB
-modified: '2021-06-23T06:25:38.170334Z'
+  ```
+modified: '2022-04-13T03:04:34.282683Z'
 published: '2020-09-07T00:00:05.414284Z'
 references:
 - type: REPORT
@@ -26,3 +28,4 @@ affected:
   ecosystem_specific:
     fixed_range: 6290ce42ac84767a84ddc949c9348a194477ab9b:6dbcee4e0b4868843938233eb2c37c927f674d69
     severity: MEDIUM
+  versions: []

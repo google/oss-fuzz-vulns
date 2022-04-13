@@ -3,12 +3,14 @@ summary: UNKNOWN READ in __bpf_object__open
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=40317
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   __bpf_object__open
   bpf_object__open_mem
   bpf-object-fuzzer.c
-modified: '2021-10-26T00:01:29.852826Z'
+  ```
+modified: '2022-04-13T03:04:36.763265Z'
 published: '2021-10-26T00:01:29.852624Z'
 references:
 - type: REPORT

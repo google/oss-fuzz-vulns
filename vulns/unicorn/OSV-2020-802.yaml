@@ -1,12 +1,13 @@
 id: OSV-2020-802
 summary: UNKNOWN READ
-details: |-
+details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22234
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
-  NULL
-modified: '2022-02-22T00:04:46.855607Z'
+  NULL```
+modified: '2022-04-13T03:04:39.278997Z'
 published: '2020-07-14T05:37:41.456127Z'
 references:
 - type: REPORT
@@ -37,7 +38,7 @@ affected:
   - 2.0.0-rc5
   - 2.0.0-rc5.post1
   ecosystem_specific:
-    introduced_range: 57e3509812f0842b0752bff1e1b3a44ad438271e:355eaecc12b8022ccefac432dfa003fdb642c0f5
     severity: MEDIUM
+    introduced_range: 57e3509812f0842b0752bff1e1b3a44ad438271e:355eaecc12b8022ccefac432dfa003fdb642c0f5
   database_specific:
     fixed_range: 63a445cbba18bf1313ac3699b5d25462b5d529f4:c10639fd4658a852049546162d116b123e2b1ec2

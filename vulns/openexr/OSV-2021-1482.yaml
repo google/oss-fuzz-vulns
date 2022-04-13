@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in generic_unpack
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=40234
 
+  ```
   Crash type: Heap-buffer-overflow READ 2
   Crash state:
   generic_unpack
   exr_decoding_run
   Imf_3_1::checkCoreFile
-modified: '2021-10-24T00:01:22.728316Z'
+  ```
+modified: '2022-04-13T03:04:37.200848Z'
 published: '2021-10-24T00:01:22.728134Z'
 references:
 - type: REPORT

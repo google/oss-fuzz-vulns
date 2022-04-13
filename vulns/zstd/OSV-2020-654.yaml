@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in ZSTD_copy16
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=17451
 
+  ```
   Crash type: Heap-buffer-overflow READ 16
   Crash state:
   ZSTD_copy16
   ZSTD_decompressSequences_bmi2
   ZSTD_decompressBlock_internal
-modified: '2021-06-21T06:56:19.401298Z'
+  ```
+modified: '2022-04-13T03:04:31.648748Z'
 published: '2020-07-01T00:00:22.703216Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: efd37a64eaff5a0a26ae2566fdb45dc4a0c91673
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

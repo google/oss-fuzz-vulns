@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in load
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15007
 
+  ```
   Crash type: Heap-buffer-overflow READ 4
   Crash state:
   load
   r_bin_object_new
   r_bin_file_new_from_buffer
-modified: '2021-06-21T06:56:23.109664Z'
+  ```
+modified: '2022-04-13T03:04:36.599691Z'
 published: '2020-07-01T00:00:24.199741Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 9392fc7117dd5240c76d8ab81d84b482bc968339
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

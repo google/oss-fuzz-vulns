@@ -3,12 +3,14 @@ summary: Heap-use-after-free in find_es_header
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=39842
 
+  ```
   Crash type: Heap-use-after-free READ 4
   Crash state:
   find_es_header
   analyze_chunk
   probe_stream
-modified: '2021-10-12T00:01:42.721416Z'
+  ```
+modified: '2022-04-13T03:04:32.366279Z'
 published: '2021-10-12T00:01:42.721228Z'
 references:
 - type: REPORT

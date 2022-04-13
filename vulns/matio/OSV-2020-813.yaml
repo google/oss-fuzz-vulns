@@ -3,12 +3,14 @@ summary: Use-of-uninitialized-value in inflate
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=17121
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   inflate
   InflateRankDims
   ReadNextStructField
-modified: '2021-06-23T06:31:46.102573Z'
+  ```
+modified: '2022-04-13T03:04:43.140468Z'
 published: '2020-07-14T05:37:44.963693Z'
 references:
 - type: REPORT
@@ -26,3 +28,4 @@ affected:
   ecosystem_specific:
     severity: MEDIUM
     introduced_range: 7a9958485036ef37b4e88df5cbe32bd7ec4c0d25:6540087e697ca2b8950bada3d4ca653951b467dc
+  versions: []

@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in WelsDec::UpdateP16x16MotionInfo
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25961
 
+  ```
   Crash type: Heap-buffer-overflow WRITE 4
   Crash state:
   WelsDec::UpdateP16x16MotionInfo
   WelsDec::ParseInterPMotionInfoCabac
   WelsDec::WelsDecodeMbCabacPSliceBaseMode0
-modified: '2021-06-21T06:56:23.957563Z'
+  ```
+modified: '2022-04-13T03:04:37.673448Z'
 published: '2020-09-27T00:00:13.048083Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: f1bb6d3acb057785b4d89e8228e23cc4fc9caa12
   ecosystem_specific:
     severity: HIGH
+  versions: []

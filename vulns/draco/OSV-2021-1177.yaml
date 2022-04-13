@@ -3,12 +3,14 @@ summary: Stack-buffer-overflow in bool draco::FloatPointsTreeDecoder::DecodePoin
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=37716
 
+  ```
   Crash type: Stack-buffer-overflow READ {*}
   Crash state:
   bool draco::FloatPointsTreeDecoder::DecodePointCloud<draco::PointAttributeVector
   draco::KdTreeAttributesDecoder::DecodeDataNeededByPortableTransforms
   draco::AttributesDecoder::DecodeAttributes
-modified: '2022-02-18T00:05:40.872267Z'
+  ```
+modified: '2022-04-13T03:04:42.703747Z'
 published: '2021-08-29T00:01:18.789522Z'
 references:
 - type: REPORT

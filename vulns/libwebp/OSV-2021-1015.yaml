@@ -3,12 +3,14 @@ summary: Dynamic-stack-buffer-overflow in VP8SetSegmentParams
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=36191
 
+  ```
   Crash type: Dynamic-stack-buffer-overflow WRITE {*}
   Crash state:
   VP8SetSegmentParams
   SetLoopParams
   OneStatPass
-modified: '2021-07-16T00:00:06.429502Z'
+  ```
+modified: '2022-04-13T03:04:41.769854Z'
 published: '2021-07-16T00:00:06.429201Z'
 references:
 - type: REPORT

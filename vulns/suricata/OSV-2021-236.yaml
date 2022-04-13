@@ -3,12 +3,14 @@ summary: Heap-use-after-free in DatasetAdd
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29886
 
+  ```
   Crash type: Heap-use-after-free READ 4
   Crash state:
   DatasetAdd
   DetectDatasetBufferMatch
   DetectEngineContentInspection
-modified: '2021-06-23T06:52:03.349387Z'
+  ```
+modified: '2022-04-13T03:04:32.725819Z'
 published: '2021-01-25T00:00:22.782153Z'
 references:
 - type: REPORT
@@ -28,3 +30,4 @@ affected:
   ecosystem_specific:
     fixed_range: b869ac01eef6d488b91dcc653c911c3af4966d75:e586d8526b3aea6562f7e04d3cde88bded9bd420
     severity: HIGH
+  versions: []

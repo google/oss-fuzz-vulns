@@ -3,12 +3,14 @@ summary: Segv on unknown address in symhash
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42741
 
+  ```
   Crash type: Segv on unknown address
   Crash state:
   symhash
   hashtab_search
   mls_semantic_level_expand
-modified: '2021-12-22T00:01:49.194930Z'
+  ```
+modified: '2022-04-13T03:04:42.334128Z'
 published: '2021-12-22T00:01:49.194656Z'
 references:
 - type: REPORT

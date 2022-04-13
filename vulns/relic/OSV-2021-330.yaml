@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in bn_sqr_karat_imp
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30537
 
+  ```
   Crash type: Heap-buffer-overflow WRITE 8
   Crash state:
   bn_sqr_karat_imp
   bn_sqr_karat
   cryptofuzz::module::relic_bignum::Sqr::Run
-modified: '2021-06-21T06:56:21.278785Z'
+  ```
+modified: '2022-04-13T03:04:33.887695Z'
 published: '2021-02-09T00:02:19.523920Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 707708d83188b04ea0b7b0ae2487aa8ac7e62f41
   ecosystem_specific:
     severity: HIGH
+  versions: []

@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in rle_decode
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30395
 
+  ```
   Crash type: Heap-buffer-overflow WRITE {*}
   Crash state:
   rle_decode
   rans_uncompress_to_4x16
   rans_uncompress_4x16
-modified: '2021-06-21T06:56:19.958274Z'
+  ```
+modified: '2022-04-13T03:04:32.317259Z'
 published: '2021-02-08T00:00:06.404697Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 56ac133b2fd4b41b2f05f8a3f30134fd79f7b31f
   ecosystem_specific:
     severity: HIGH
+  versions: []

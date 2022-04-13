@@ -3,12 +3,14 @@ summary: UNKNOWN WRITE in dwg_free_BLOCK_private
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34766
 
+  ```
   Crash type: UNKNOWN WRITE
   Crash state:
   dwg_free_BLOCK_private
   dwg_free_BLOCK
   dwg_free_object
-modified: '2022-02-07T00:09:01.694219Z'
+  ```
+modified: '2022-04-13T03:04:41.089284Z'
 published: '2021-05-30T00:00:24.550464Z'
 references:
 - type: REPORT

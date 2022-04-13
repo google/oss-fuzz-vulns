@@ -3,12 +3,14 @@ summary: Global-buffer-overflow in libfsext_inode_read_data
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=33940
 
+  ```
   Crash type: Global-buffer-overflow READ {*}
   Crash state:
   libfsext_inode_read_data
   libfsext_inode_read_element_data
   libfdata_vector_get_element_value_by_index
-modified: '2021-05-05T00:00:31.360552Z'
+  ```
+modified: '2022-04-13T03:04:41.902360Z'
 published: '2021-05-05T00:00:31.360258Z'
 references:
 - type: REPORT
@@ -23,3 +25,4 @@ affected:
     events:
     - introduced: e29196674e2152935af6d454e09021855c159435
     - fixed: e29196674e2152935af6d454e09021855c159435
+  versions: []

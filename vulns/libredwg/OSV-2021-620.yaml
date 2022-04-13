@@ -3,12 +3,14 @@ summary: Segv on unknown address in dwg_free_summaryinfo
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=33059
 
+  ```
   Crash type: Segv on unknown address
   Crash state:
   dwg_free_summaryinfo
   dwg_free
   llvmfuzz.c
-modified: '2022-04-12T00:08:19.045927Z'
+  ```
+modified: '2022-04-13T03:04:41.055258Z'
 published: '2021-04-10T00:00:11.142635Z'
 references:
 - type: REPORT

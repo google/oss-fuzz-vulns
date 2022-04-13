@@ -3,12 +3,14 @@ summary: Global-buffer-overflow in GetSsmlAttribute
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=36228
 
+  ```
   Crash type: Global-buffer-overflow READ 1
   Crash state:
   GetSsmlAttribute
   GetVoiceAttributes
   ProcessSsmlTag
-modified: '2022-04-03T00:04:20.307884Z'
+  ```
+modified: '2022-04-13T03:04:34.168849Z'
 published: '2021-07-17T00:00:48.123388Z'
 references:
 - type: REPORT

@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in avifROStreamRead
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25903
 
+  ```
   Crash type: Heap-buffer-overflow READ 4
   Crash state:
   avifROStreamRead
   avifROStreamReadU32
   avifROStreamReadBoxHeader
-modified: '2021-06-21T06:56:27.263338Z'
+  ```
+modified: '2022-04-13T03:04:41.876574Z'
 published: '2020-09-25T00:00:04.438974Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: b86bc3c8296f7d37cacf674ee031851cd513b8e4
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

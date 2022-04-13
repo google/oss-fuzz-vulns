@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in encode_3dsolid
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=32165
 
+  ```
   Crash type: Heap-buffer-overflow READ 4
   Crash state:
   encode_3dsolid
   dwg_encode_BODY_private
   dwg_encode_BODY
-modified: '2021-06-21T06:56:26.608293Z'
+  ```
+modified: '2022-04-13T03:04:41.081680Z'
 published: '2021-03-19T00:00:24.962467Z'
 references:
 - type: REPORT

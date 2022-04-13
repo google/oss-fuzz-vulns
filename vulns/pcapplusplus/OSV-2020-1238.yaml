@@ -3,12 +3,14 @@ summary: Use-of-uninitialized-value in pcpp::Packet::createFirstLayer
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22085
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   pcpp::Packet::createFirstLayer
   pcpp::Packet::setRawPacket
   FuzzTarget.cpp
-modified: '2021-06-23T06:28:22.805007Z'
+  ```
+modified: '2022-04-13T03:04:38.696815Z'
 published: '2020-07-22T21:49:59.288052Z'
 references:
 - type: REPORT
@@ -24,6 +26,7 @@ affected:
     - introduced: 4366d2f86bf105025765a0ce3db6e647ba0f3508
     - fixed: 46840c644dfe9160c4111b06bbbf7731c9d1370c
   ecosystem_specific:
-    fixed_range: 2799c51d0692423392c4fc9224e55a9b930845d5:46840c644dfe9160c4111b06bbbf7731c9d1370c
-    introduced_range: unknown:4366d2f86bf105025765a0ce3db6e647ba0f3508
     severity: MEDIUM
+    introduced_range: unknown:4366d2f86bf105025765a0ce3db6e647ba0f3508
+    fixed_range: 2799c51d0692423392c4fc9224e55a9b930845d5:46840c644dfe9160c4111b06bbbf7731c9d1370c
+  versions: []

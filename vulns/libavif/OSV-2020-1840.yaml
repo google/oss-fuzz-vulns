@@ -3,12 +3,14 @@ summary: Heap-use-after-free in avifFileTypeIsCompatible
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25910
 
+  ```
   Crash type: Heap-use-after-free READ 4
   Crash state:
   avifFileTypeIsCompatible
   avifDecoderParse
   avif_decode_fuzzer.cc
-modified: '2021-06-21T06:56:27.281783Z'
+  ```
+modified: '2022-04-13T03:04:41.892196Z'
 published: '2020-09-25T00:00:39.613381Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 468ded88b6ee5ccc4ce1ed029a7d310e5764947c
   ecosystem_specific:
     severity: HIGH
+  versions: []

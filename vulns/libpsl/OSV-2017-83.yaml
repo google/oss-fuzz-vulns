@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in idn2_lookup_u8
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=2262
 
+  ```
   Crash type: Heap-buffer-overflow READ 4
   Crash state:
   idn2_lookup_u8
   _psl_idna_toASCII
   _add_punycode_if_needed
-modified: '2021-06-23T06:29:21.101826Z'
+  ```
+modified: '2022-04-13T03:04:39.974250Z'
 published: '2021-01-13T21:57:36.312189Z'
 references:
 - type: REPORT
@@ -26,3 +28,4 @@ affected:
   ecosystem_specific:
     severity: MEDIUM
     fixed_range: fa69455d0748ae3c3318a5e2b9860ac9bb80485d:0cbb7089f60931870d19c9fc323fa0cccafd8907
+  versions: []

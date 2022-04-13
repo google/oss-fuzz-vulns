@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in u8_read_escape_sequence
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22180
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   u8_read_escape_sequence
   flb_unescape_string_utf8
   logfmt_parser
-modified: '2021-06-21T06:56:24.417300Z'
+  ```
+modified: '2022-04-13T03:04:38.373807Z'
 published: '2020-06-24T01:51:14.628328Z'
 references:
 - type: REPORT

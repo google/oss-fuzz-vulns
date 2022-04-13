@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in void parquet::internal::DefRepLevelsToListInfo<
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26829
 
+  ```
   Crash type: Heap-buffer-overflow WRITE 1
   Crash state:
   void parquet::internal::DefRepLevelsToListInfo<int>
   parquet::internal::DefRepLevelsToBitmap
   parquet::arrow::StructReader::BuildArray
-modified: '2021-06-21T06:56:19.665728Z'
+  ```
+modified: '2022-04-13T03:04:31.965135Z'
 published: '2020-11-02T00:00:35.960641Z'
 references:
 - type: REPORT

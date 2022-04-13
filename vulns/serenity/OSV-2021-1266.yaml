@@ -3,12 +3,14 @@ summary: UNKNOWN WRITE in void AK::BumpAllocator<true, 2097152ul>::for_each_chun
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=38701
 
+  ```
   Crash type: UNKNOWN WRITE
   Crash state:
   void AK::BumpAllocator<true, 2097152ul>::for_each_chunk<AK::UniformBumpAllocator
   regex::BumpAllocatedLinkedList<regex::MatchState>::~BumpAllocatedLinkedList
   regex::Matcher<regex::ECMA262Parser>::execute
-modified: '2021-09-16T00:00:19.187821Z'
+  ```
+modified: '2022-04-13T03:04:32.129544Z'
 published: '2021-09-16T00:00:19.187563Z'
 references:
 - type: REPORT

@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in ZSTD_decompressMultiFrame
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=35537
 
+  ```
   Crash type: Heap-buffer-overflow READ {*}
   Crash state:
   ZSTD_decompressMultiFrame
   ZSTD_decompress_usingDDict
   blosc_d
-modified: '2022-04-10T00:04:03.065830Z'
+  ```
+modified: '2022-04-13T03:04:40.467895Z'
 published: '2021-06-26T00:00:37.934284Z'
 references:
 - type: REPORT

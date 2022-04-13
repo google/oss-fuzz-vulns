@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in hextoint
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25935
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   hextoint
   get_name_from_EF_DatiPersonali
   itacns_add_data_files
-modified: '2021-06-21T06:56:27.020533Z'
+  ```
+modified: '2022-04-13T03:04:41.532322Z'
 published: '2020-09-26T00:00:09.496267Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 3ebfb01a3c54650391ce9eeb0dbe5b88e41f1f5b
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

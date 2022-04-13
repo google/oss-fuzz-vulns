@@ -3,12 +3,14 @@ summary: Use-of-uninitialized-value in gs_scan_token
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21625
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   gs_scan_token
   tokenexec_continue
   interp
-modified: '2021-06-23T06:25:40.362883Z'
+  ```
+modified: '2022-04-13T03:04:34.662902Z'
 published: '2020-09-29T00:00:10.617022Z'
 references:
 - type: REPORT
@@ -27,3 +29,4 @@ affected:
     severity: MEDIUM
     introduced_range: unknown:668917a10e7eada030f7d2dddec9f579fddeed3d
     fixed_range: ebabebad34a3811230b7bfe351eface7f5efc8a9:87688cd48fb52c305e159b785bd184232426a766
+  versions: []

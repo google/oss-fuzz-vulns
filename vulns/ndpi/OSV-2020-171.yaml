@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in ndpi_parse_packet_line_info
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23396
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   ndpi_parse_packet_line_info
   ndpi_int_search_bittorrent_tcp_zero
   ndpi_int_search_bittorrent_tcp
-modified: '2021-06-21T06:56:22.539052Z'
+  ```
+modified: '2022-04-13T03:04:36.008919Z'
 published: '2020-06-24T01:51:17.251380Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 38e4910636bd6273b62e0b195c9d45483c39cc1a
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

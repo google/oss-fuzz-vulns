@@ -3,12 +3,14 @@ summary: Heap-use-after-free in dict_find_string
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20652
 
+  ```
   Crash type: Heap-use-after-free READ 8
   Crash state:
   dict_find_string
   gs_main_tempnames
   gs_main_finit
-modified: '2021-06-21T06:56:21.525798Z'
+  ```
+modified: '2022-04-13T03:04:34.536672Z'
 published: '2020-09-29T00:00:26.901998Z'
 references:
 - type: REPORT

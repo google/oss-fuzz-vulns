@@ -4,12 +4,14 @@ summary: Segv on unknown address in std::__1::__tree<std::__1::__value_type<unsi
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25376
 
+  ```
   Crash type: Segv on unknown address
   Crash state:
   std::__1::__tree<std::__1::__value_type<unsigned int, std::__1::pair<std::__1::b
   uWS::TopicTree::drain
   std::__1::__function::__func<LLVMFuzzerTestOneInput::$_1, std::__1::allocator<LL
-modified: '2021-06-21T06:56:26.586041Z'
+  ```
+modified: '2022-04-13T03:04:41.030382Z'
 published: '2020-09-04T00:00:07.333173Z'
 references:
 - type: REPORT

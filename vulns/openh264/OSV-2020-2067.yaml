@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in WelsDec::DecodeCurrentAccessUnit
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26302
 
+  ```
   Crash type: Heap-buffer-overflow WRITE {*}
   Crash state:
   WelsDec::DecodeCurrentAccessUnit
   WelsDec::ConstructAccessUnit
   WelsDecodeBs
-modified: '2021-06-21T06:56:23.866432Z'
+  ```
+modified: '2022-04-13T03:04:37.595214Z'
 published: '2020-10-14T00:00:41.933918Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: b52786888ddce9d6bc06b7825ba9bffc65924e0c
   ecosystem_specific:
     severity: HIGH
+  versions: []

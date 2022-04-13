@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in post_process_template
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18952
 
+  ```
   Crash type: Heap-buffer-overflow READ 4
   Crash state:
   post_process_template
   parser_shutdown
   parse_string
-modified: '2021-06-21T06:56:19.439214Z'
+  ```
+modified: '2022-04-13T03:04:31.710540Z'
 published: '2020-07-01T00:00:04.091956Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: f7b91535da39550693214dbe7ae2c16d83d70a4f
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

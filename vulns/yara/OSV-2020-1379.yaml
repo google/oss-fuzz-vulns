@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in dotnet_parse_com
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=8901
 
+  ```
   Crash type: Heap-buffer-overflow READ 16
   Crash state:
   dotnet_parse_com
   dotnet__load
   yr_modules_load
-modified: '2022-03-10T00:05:03.586412Z'
+  ```
+modified: '2022-04-13T03:04:42.218582Z'
 published: '2020-07-28T00:00:05.738705Z'
 references:
 - type: REPORT

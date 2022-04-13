@@ -3,12 +3,14 @@ summary: Invalid-free in llvm_ks::SmallVectorImpl<llvm_ks::MCFixup>::~SmallVecto
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22371
 
+  ```
   Crash type: Invalid-free
   Crash state:
   llvm_ks::SmallVectorImpl<llvm_ks::MCFixup>::~SmallVectorImpl
   llvm_ks::MCEncodedFragmentWithFixups<32u, 4u>::~MCEncodedFragmentWithFixups
   llvm_ks::MCFragment::destroy
-modified: '2021-03-09T04:49:05.301577Z'
+  ```
+modified: '2022-04-13T03:04:37.900368Z'
 published: '2020-07-28T00:00:34.572692Z'
 references:
 - type: REPORT

@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in parse_content_length
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=38050
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   parse_content_length
   get_hdr_field
   parse_headers
-modified: '2021-09-04T00:00:36.456788Z'
+  ```
+modified: '2022-04-13T03:04:37.732807Z'
 published: '2021-09-04T00:00:36.456594Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: baed515e8aed8e5b505ff716eb57d0c60e582632
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

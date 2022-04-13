@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in parse_primitive
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=44574
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   parse_primitive
   plist_from_json
   jplist_fuzzer.cc
-modified: '2022-02-13T00:01:52.104988Z'
+  ```
+modified: '2022-04-13T03:04:39.871047Z'
 published: '2022-02-13T00:01:52.104750Z'
 references:
 - type: REPORT

@@ -3,12 +3,14 @@ summary: UNKNOWN READ in net_field_length_size
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=19830
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   net_field_length_size
   net_field_length_ll_safe
   read_ok_ex
-modified: '2021-11-22T09:14:15.233398Z'
+  ```
+modified: '2022-04-13T03:04:36.987909Z'
 published: '2020-10-02T00:00:30.533072Z'
 references:
 - type: REPORT

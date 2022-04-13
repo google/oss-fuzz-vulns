@@ -3,12 +3,14 @@ summary: UNKNOWN READ in exif_mnote_data_canon_load
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=40623
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   exif_mnote_data_canon_load
   exif_mnote_data_load
   interpret_maker_note
-modified: '2021-11-04T00:00:08.421427Z'
+  ```
+modified: '2022-04-13T03:04:40.852633Z'
 published: '2021-11-04T00:00:08.421183Z'
 references:
 - type: REPORT

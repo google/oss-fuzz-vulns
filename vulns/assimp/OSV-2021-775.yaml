@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in _m3d_safestr
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34416
 
+  ```
   Crash type: Heap-buffer-overflow WRITE 1
   Crash state:
   _m3d_safestr
   m3d_load
   Assimp::M3DWrapper::M3DWrapper
-modified: '2021-11-21T00:10:19.851551Z'
+  ```
+modified: '2022-04-13T03:04:42.656269Z'
 published: '2021-05-19T00:00:10.101287Z'
 references:
 - type: REPORT

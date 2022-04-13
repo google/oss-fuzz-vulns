@@ -3,12 +3,14 @@ summary: UNKNOWN READ in get_body
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=38750
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   get_body
   parse_sdp
   fuzz_parse_msg.c
-modified: '2021-09-17T00:01:33.669003Z'
+  ```
+modified: '2022-04-13T03:04:37.727198Z'
 published: '2021-09-17T00:01:33.668747Z'
 references:
 - type: REPORT

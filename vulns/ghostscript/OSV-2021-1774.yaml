@@ -3,12 +3,14 @@ summary: UNKNOWN READ in pdfi_array_get
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=43004
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   pdfi_array_get
   pdfi_array_get_type
   pdfi_create_colorspace_by_array
-modified: '2021-12-28T00:01:54.096603Z'
+  ```
+modified: '2022-04-13T03:04:34.827132Z'
 published: '2021-12-28T00:01:54.096383Z'
 references:
 - type: REPORT

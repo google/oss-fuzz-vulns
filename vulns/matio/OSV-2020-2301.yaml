@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in H5MM_xstrdup
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29553
 
+  ```
   Crash type: Heap-buffer-overflow READ {*}
   Crash state:
   H5MM_xstrdup
   H5G__ent_to_link
   H5G__node_iterate
-modified: '2022-03-26T00:05:08.262389Z'
+  ```
+modified: '2022-04-13T03:04:43.027446Z'
 published: '2021-01-15T00:00:42.910636Z'
 references:
 - type: REPORT

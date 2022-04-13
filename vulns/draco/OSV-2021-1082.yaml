@@ -4,12 +4,14 @@ summary: UNKNOWN READ in std::__1::__tree<std::__1::__value_type<std::__1::basic
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24051
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   std::__1::__tree<std::__1::__value_type<std::__1::basic_string<char, std::__1::c
   std::__1::pair<std::__1::__tree_iterator<std::__1::__value_type<std::__1::basic_
   std::__1::map<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1
-modified: '2022-02-17T00:04:38.297167Z'
+  ```
+modified: '2022-04-13T03:04:42.716268Z'
 published: '2021-08-01T00:00:48.182181Z'
 references:
 - type: REPORT

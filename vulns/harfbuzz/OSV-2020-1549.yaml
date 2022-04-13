@@ -3,12 +3,14 @@ summary: UNKNOWN WRITE in hb_vector_t<CFF::op_str_t>::resize
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24500
 
+  ```
   Crash type: UNKNOWN WRITE
   Crash state:
   hb_vector_t<CFF::op_str_t>::resize
   hb_vector_t<CFF::op_str_t>::push
   CFF::parsed_values_t<CFF::op_str_t>::add_op
-modified: '2021-06-21T06:56:20.437833Z'
+  ```
+modified: '2022-04-13T03:04:32.864310Z'
 published: '2020-07-31T00:00:39.916125Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: d307c24abf37b2702706cf9df0fab571a99e2a70
   ecosystem_specific:
     severity: HIGH
+  versions: []

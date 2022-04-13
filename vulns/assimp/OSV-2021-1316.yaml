@@ -3,12 +3,14 @@ summary: Stack-buffer-overflow in Assimp::ZipArchiveIOSystem::Implement::MapArch
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=38870
 
+  ```
   Crash type: Stack-buffer-overflow READ {*}
   Crash state:
   Assimp::ZipArchiveIOSystem::Implement::MapArchive
   Assimp::ZipArchiveIOSystem::getFileList
   Assimp::D3MF::D3MFOpcPackage::D3MFOpcPackage
-modified: '2022-01-02T00:08:36.845310Z'
+  ```
+modified: '2022-04-13T03:04:42.667817Z'
 published: '2021-09-18T00:01:34.920205Z'
 references:
 - type: REPORT

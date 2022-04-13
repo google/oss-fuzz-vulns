@@ -3,12 +3,14 @@ summary: UNKNOWN WRITE in std::__1::pair<unsigned int, void*> uWS::HttpParser::f
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31457
 
+  ```
   Crash type: UNKNOWN WRITE
   Crash state:
   std::__1::pair<unsigned int, void*> uWS::HttpParser::fenceAndConsumePostPadded<0
   uWS::HttpParser::consumePostPadded
   std::__1::__function::__func<LLVMFuzzerTestOneInput::$_0, std::__1::allocator<LL
-modified: '2021-11-26T00:10:31.906821Z'
+  ```
+modified: '2022-04-13T03:04:41.024750Z'
 published: '2021-02-28T00:00:19.863324Z'
 references:
 - type: REPORT
@@ -23,6 +25,6 @@ affected:
     events:
     - introduced: 7b330e9e03102ad75b102c9bb75bba573dc70045
     - fixed: 1507f3f98abf6bb56cd5bb26de0776a9e2c2cf36
-  versions: []
   ecosystem_specific:
     severity: HIGH
+  versions: []

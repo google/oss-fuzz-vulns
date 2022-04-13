@@ -4,12 +4,14 @@ summary: Heap-buffer-overflow in draco::MeshPredictionSchemeTexCoordsDecoder<int
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=37814
 
+  ```
   Crash type: Heap-buffer-overflow WRITE 4
   Crash state:
   draco::MeshPredictionSchemeTexCoordsDecoder<int, draco::PredictionSchemeWrapDeco
   draco::MeshPredictionSchemeTexCoordsDecoder<int, draco::PredictionSchemeWrapDeco
   draco::SequentialIntegerAttributeDecoder::DecodeIntegerValues
-modified: '2022-02-19T19:39:54.112688Z'
+  ```
+modified: '2022-04-13T03:04:42.710034Z'
 published: '2021-08-31T00:00:29.155871Z'
 references:
 - type: REPORT

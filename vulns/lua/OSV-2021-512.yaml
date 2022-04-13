@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in luaG_getfuncline
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31892
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   luaG_getfuncline
   luaG_runerror
   luaD_growstack
-modified: '2021-06-21T06:56:18.601051Z'
+  ```
+modified: '2022-04-13T03:04:30.708927Z'
 published: '2021-03-11T00:01:02.762585Z'
 references:
 - type: REPORT

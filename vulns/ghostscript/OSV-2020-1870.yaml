@@ -3,12 +3,14 @@ summary: Use-of-uninitialized-value in get_fapi_glyph_data
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22752
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   get_fapi_glyph_data
   load_truetype_glyph
   TT_Load_Glyph
-modified: '2021-06-23T06:25:40.375801Z'
+  ```
+modified: '2022-04-13T03:04:34.746346Z'
 published: '2020-09-29T00:00:14.014972Z'
 references:
 - type: REPORT

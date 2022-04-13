@@ -3,12 +3,14 @@ summary: Use-of-uninitialized-value in Gfx::fillPatch
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15395
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   Gfx::fillPatch
   Gfx::doPatchMeshShFill
   Gfx::doShadingPatternFill
-modified: '2021-06-23T06:26:14.371307Z'
+  ```
+modified: '2022-04-13T03:04:37.268795Z'
 published: '2020-07-22T21:50:07.878108Z'
 references:
 - type: REPORT

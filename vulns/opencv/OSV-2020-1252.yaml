@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in jpc_dec_process_sot
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13310
 
+  ```
   Crash type: Heap-buffer-overflow READ 4
   Crash state:
   jpc_dec_process_sot
   jpc_decode
   jp2_decode
-modified: '2021-11-22T06:23:51.831787Z'
+  ```
+modified: '2022-04-13T03:04:31.495336Z'
 published: '2020-07-22T21:50:00.494951Z'
 references:
 - type: REPORT

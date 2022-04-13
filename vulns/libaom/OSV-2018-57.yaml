@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in read_uncompressed_header
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11523
 
+  ```
   Crash type: Heap-buffer-overflow READ {*}
   Crash state:
   read_uncompressed_header
   av1_decode_frame_headers_and_setup
   aom_decode_frame_from_obus
-modified: '2021-06-21T06:56:25.456119Z'
+  ```
+modified: '2022-04-13T03:04:39.500081Z'
 published: '2021-01-13T00:00:29.647549Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 0ad5c625be27d7a3622dae95e9afe5e66b112d46
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

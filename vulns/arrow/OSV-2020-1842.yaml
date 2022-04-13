@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in parquet::arrow::SchemaManifest::Make
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25933
 
+  ```
   Crash type: Heap-buffer-overflow READ 8
   Crash state:
   parquet::arrow::SchemaManifest::Make
   parquet::arrow::FileReader::Make
   parquet::arrow::internal::FuzzReader
-modified: '2021-06-21T06:56:19.705406Z'
+  ```
+modified: '2022-04-13T03:04:32.002917Z'
 published: '2020-09-26T00:00:04.850649Z'
 references:
 - type: REPORT

@@ -4,12 +4,14 @@ summary: Stack-buffer-overflow in fmt::v8::basic_memory_buffer<unsigned int, 32u
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=44763
 
+  ```
   Crash type: Stack-buffer-overflow READ 4
   Crash state:
   fmt::v8::basic_memory_buffer<unsigned int, 32ul, std::__1::allocator<unsigned in
   fmt::v8::detail::bigint::square
   fmt::v8::detail::bigint::assign_pow10
-modified: '2022-02-18T00:00:13.958055Z'
+  ```
+modified: '2022-04-13T03:04:33.946076Z'
 published: '2022-02-18T00:00:13.957825Z'
 references:
 - type: REPORT

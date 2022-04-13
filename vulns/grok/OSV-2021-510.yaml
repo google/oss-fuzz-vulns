@@ -3,12 +3,14 @@ summary: Heap-use-after-free in grk_object_unref
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31874
 
+  ```
   Crash type: Heap-use-after-free READ 8
   Crash state:
   grk_object_unref
   grk::GrkObjectImpl<grk::GrkImage>::release
   grk::GrkObject::unref
-modified: '2022-04-11T00:04:18.297234Z'
+  ```
+modified: '2022-04-13T03:04:39.585990Z'
 published: '2021-03-11T00:00:21.858475Z'
 references:
 - type: REPORT

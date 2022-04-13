@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in rans_uncompress_to_4x16
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29939
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   rans_uncompress_to_4x16
   rans_decode
   uncompress
-modified: '2021-06-21T06:56:19.982961Z'
+  ```
+modified: '2022-04-13T03:04:32.338631Z'
 published: '2021-01-26T23:45:33.235035Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 9d9e60c83487a8ac4644079e9636e34a9dd4bb08
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in void arrow::util::internal::ByteStreamSlitDecod
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21420
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   void arrow::util::internal::ByteStreamSlitDecodeSSE2<double>
   virtual thunk to parquet::ByteStreamSplitDecoder<parquet::PhysicalType<
   parquet::TypedDecoder<parquet::PhysicalType<
-modified: '2021-06-21T06:56:19.546151Z'
+  ```
+modified: '2022-04-13T03:04:31.850595Z'
 published: '2020-06-24T01:51:14.239845Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: faf9bc011cb452e9def7dcd63dd3a0f6ec823534
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

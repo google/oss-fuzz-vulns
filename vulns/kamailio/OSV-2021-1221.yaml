@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in parse_via_param
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=38307
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   parse_via_param
   parse_via
   get_hdr_field
-modified: '2021-09-11T00:00:10.922405Z'
+  ```
+modified: '2022-04-13T03:04:37.763544Z'
 published: '2021-09-11T00:00:10.922189Z'
 references:
 - type: REPORT

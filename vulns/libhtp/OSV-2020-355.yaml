@@ -3,12 +3,14 @@ summary: Use-of-uninitialized-value in LzmaDec_TryDummy
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=17189
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   LzmaDec_TryDummy
   LzmaDec_DecodeToDic
   LzmaDec_DecodeToBuf
-modified: '2021-06-21T06:56:26.124686Z'
+  ```
+modified: '2022-04-13T03:04:40.519387Z'
 published: '2020-07-01T00:00:04.840679Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: fe16fa764f7cea57be5a288ee85b27dffc460f6f
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

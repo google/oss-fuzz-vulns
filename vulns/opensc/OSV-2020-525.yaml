@@ -3,12 +3,14 @@ summary: UNKNOWN READ in parse_sec_attr_44
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18693
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   parse_sec_attr_44
   setcos_select_file
   sc_select_file
-modified: '2021-06-21T06:56:27.113213Z'
+  ```
+modified: '2022-04-13T03:04:41.629362Z'
 published: '2020-07-01T00:00:14.612318Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 7a1e42e1352201127d1a97b6cb5f41e48cace0f5
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

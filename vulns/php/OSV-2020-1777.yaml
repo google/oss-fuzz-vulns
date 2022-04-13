@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in exif_process_IFD_in_MAKERNOTE
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=19044
 
+  ```
   Crash type: Heap-buffer-overflow READ 9
   Crash state:
   exif_process_IFD_in_MAKERNOTE
   exif_process_IFD_TAG
   exif_process_IFD_in_TIFF
-modified: '2021-11-22T08:09:12.598746Z'
+  ```
+modified: '2022-04-13T03:04:33.411895Z'
 published: '2020-09-16T00:00:31.920721Z'
 references:
 - type: REPORT

@@ -3,12 +3,14 @@ summary: Heap-use-after-free in zend_jit_fetch_dim_r_helper
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=43055
 
+  ```
   Crash type: Heap-use-after-free READ 4
   Crash state:
   zend_jit_fetch_dim_r_helper
   zero
   zend_execute
-modified: '2022-01-05T02:10:48.664613Z'
+  ```
+modified: '2022-04-13T03:04:33.622543Z'
 published: '2021-12-29T00:00:46.056980Z'
 references:
 - type: REPORT

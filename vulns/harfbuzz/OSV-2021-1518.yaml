@@ -4,12 +4,14 @@ summary: UNKNOWN READ in bool OT::OffsetTo<OT::ClipBox, OT::IntType<unsigned int
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=40540
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   bool OT::OffsetTo<OT::ClipBox, OT::IntType<unsigned int, 3u>, true>::serialize_c
   OT::ClipList::serialize_clip_records
   OT::ClipList::subset
-modified: '2021-11-01T00:01:38.720701Z'
+  ```
+modified: '2022-04-13T03:04:32.836473Z'
 published: '2021-11-01T00:01:38.720506Z'
 references:
 - type: REPORT

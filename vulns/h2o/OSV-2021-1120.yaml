@@ -3,12 +3,14 @@ summary: Heap-use-after-free in on_body
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=37023
 
+  ```
   Crash type: Heap-use-after-free READ 1
   Crash state:
   on_body
   req_body_send_complete
   run_socket
-modified: '2021-08-11T00:01:35.546544Z'
+  ```
+modified: '2022-04-13T03:04:35.151574Z'
 published: '2021-08-11T00:01:35.546323Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 38774e5aa18090f34a8c0b6010dcaebd9fdd8b62
   ecosystem_specific:
     severity: HIGH
+  versions: []

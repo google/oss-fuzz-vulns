@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in prefixcmp
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11007
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   prefixcmp
   git__prefixcmp
   git_commit__parse_raw
-modified: '2021-06-21T06:56:21.937446Z'
+  ```
+modified: '2022-04-13T03:04:35.193285Z'
 published: '2021-01-13T00:01:13.296112Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: cb23c3efd22d34db279ceb39cc312473761db5ed
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

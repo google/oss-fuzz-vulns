@@ -3,12 +3,14 @@ summary: Use-of-uninitialized-value in fz_is_empty_irect
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=5865
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   fz_is_empty_irect
   fz_intersect_irect
   fz_draw_clip_path
-modified: '2021-06-23T06:24:59.894025Z'
+  ```
+modified: '2022-04-13T03:04:31.331986Z'
 published: '2021-01-15T00:01:14.057811Z'
 references:
 - type: REPORT
@@ -25,5 +27,6 @@ affected:
     - fixed: 7e8807ead274119194ce9a911cbf9c0e61a110bb
   ecosystem_specific:
     introduced_range: 9086386263154498dcb18c96f1e1630903b21a3c:d9bc8c6f7fb2e3ec7035bebaaee0edcf59287705
-    severity: MEDIUM
     fixed_range: 461b81547c1328b819ee626a3f9b55c044b45dcd:7e8807ead274119194ce9a911cbf9c0e61a110bb
+    severity: MEDIUM
+  versions: []

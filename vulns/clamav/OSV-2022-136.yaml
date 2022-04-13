@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in cli_js_parse_done
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=44490
 
+  ```
   Crash type: Heap-buffer-overflow READ 4
   Crash state:
   cli_js_parse_done
   cli_html_normalise
   html_normalise_map
-modified: '2022-02-10T00:01:30.573221Z'
+  ```
+modified: '2022-04-13T03:04:39.419617Z'
 published: '2022-02-10T00:01:30.573024Z'
 references:
 - type: REPORT

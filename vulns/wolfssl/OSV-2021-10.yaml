@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in sp_tohex
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29185
 
+  ```
   Crash type: Heap-buffer-overflow WRITE 1
   Crash state:
   sp_tohex
   sp_toradix
   cryptofuzz::module::wolfCrypt_bignum::Bignum::baseConversion
-modified: '2021-06-23T06:25:57.745607Z'
+  ```
+modified: '2022-04-13T03:04:35.662208Z'
 published: '2021-01-04T00:01:27.624698Z'
 references:
 - type: REPORT
@@ -24,5 +26,6 @@ affected:
     - introduced: 81f70fba5f6f3fd4715cbe1d51e3b7e76ce22b5d
     - fixed: 209c4c08e11c4a72c0d9e91b7e011016fabe1e34
   ecosystem_specific:
-    severity: HIGH
     fixed_range: 0ac43bb09557578be61967e802234e05e087540a:209c4c08e11c4a72c0d9e91b7e011016fabe1e34
+    severity: HIGH
+  versions: []

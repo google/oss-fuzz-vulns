@@ -3,11 +3,13 @@ summary: UNKNOWN WRITE in flb_utils_proxy_url_split
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31306
 
+  ```
   Crash type: UNKNOWN WRITE
   Crash state:
   flb_utils_proxy_url_split
   utils_fuzzer.c
-modified: '2021-06-21T06:56:24.388164Z'
+  ```
+modified: '2022-04-13T03:04:38.338240Z'
 published: '2021-02-25T00:02:39.501845Z'
 references:
 - type: REPORT

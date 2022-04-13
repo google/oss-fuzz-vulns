@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in r_buf_cpy
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14125
 
+  ```
   Crash type: Heap-buffer-overflow WRITE {*}
   Crash state:
   r_buf_cpy
   get_relocs_64
   relocs
-modified: '2021-06-21T06:56:23.039756Z'
+  ```
+modified: '2022-04-13T03:04:36.533413Z'
 published: '2020-07-01T00:00:09.757737Z'
 references:
 - type: REPORT

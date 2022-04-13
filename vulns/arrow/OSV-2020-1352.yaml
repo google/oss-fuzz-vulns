@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in arrow::Status arrow::internal::ValidateArrayVis
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20186
 
+  ```
   Crash type: Heap-buffer-overflow READ 4
   Crash state:
   arrow::Status arrow::internal::ValidateArrayVisitor::ValidateListArray<arrow::Li
   arrow::Status arrow::VisitArrayInline<arrow::internal::ValidateArrayVisitor>
   arrow::internal::ValidateArray
-modified: '2021-06-23T06:25:11.682026Z'
+  ```
+modified: '2022-04-13T03:04:31.948799Z'
 published: '2020-07-22T21:50:08.733370Z'
 references:
 - type: REPORT
@@ -26,3 +28,4 @@ affected:
   ecosystem_specific:
     severity: MEDIUM
     introduced_range: unknown:ccdc4b076cbd5fb03e1cbc42292def871d2b6035
+  versions: []

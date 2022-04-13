@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in OT::MathGlyphConstruction::subset
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=39211
 
+  ```
   Crash type: Heap-buffer-overflow READ 2
   Crash state:
   OT::MathGlyphConstruction::subset
   OT::MathVariants::subset
   OT::MATH::subset
-modified: '2021-09-25T00:01:37.745783Z'
+  ```
+modified: '2022-04-13T03:04:33.093067Z'
 published: '2021-09-25T00:01:37.745585Z'
 references:
 - type: REPORT

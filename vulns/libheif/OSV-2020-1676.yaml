@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in Op_YCbCr_to_RGB<unsigned char>::convert_colorsp
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25267
 
+  ```
   Crash type: Heap-buffer-overflow READ {*}
   Crash state:
   Op_YCbCr_to_RGB<unsigned char>::convert_colorspace
   heif::ColorConversionPipeline::convert_image
   heif::convert_colorspace
-modified: '2021-06-21T06:56:20.067990Z'
+  ```
+modified: '2022-04-13T03:04:32.459003Z'
 published: '2020-08-30T00:00:07.006768Z'
 references:
 - type: REPORT

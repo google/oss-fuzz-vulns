@@ -3,12 +3,14 @@ summary: UNKNOWN READ in MEM_read32
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=33956
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   MEM_read32
   ZSTD_compressBlock_greedy_extDict_row
   ZSTD_ldm_blockCompress
-modified: '2021-06-21T06:56:19.427442Z'
+  ```
+modified: '2022-04-13T03:04:31.680876Z'
 published: '2021-05-05T00:00:30.975717Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: d40f55cd950919d7eac951b122668e55e33e5202
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

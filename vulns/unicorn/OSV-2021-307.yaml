@@ -3,12 +3,14 @@ summary: UNKNOWN READ in cpu_arm_exec_armeb
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30444
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   cpu_arm_exec_armeb
   resume_all_vcpus_armeb
   vm_start_armeb
-modified: '2021-06-21T06:56:25.308434Z'
+  ```
+modified: '2022-04-13T03:04:39.262116Z'
 published: '2021-02-08T00:00:08.491999Z'
 references:
 - type: REPORT

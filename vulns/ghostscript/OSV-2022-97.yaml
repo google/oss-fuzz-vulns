@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in gs_interpret
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=44123
 
+  ```
   Crash type: Heap-buffer-overflow WRITE 16
   Crash state:
   gs_interpret
   gs_main_run_string_with_length
   gs_main_run_string
-modified: '2022-01-29T00:00:27.567920Z'
+  ```
+modified: '2022-04-13T03:04:34.418274Z'
 published: '2022-01-29T00:00:27.567705Z'
 references:
 - type: REPORT

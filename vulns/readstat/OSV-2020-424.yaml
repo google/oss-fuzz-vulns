@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in sav_parse_long_string_missing_values_record
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13076
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   sav_parse_long_string_missing_values_record
   sav_parse_records_pass2
   readstat_parse_sav
-modified: '2021-06-21T06:56:26.224917Z'
+  ```
+modified: '2022-04-13T03:04:40.624731Z'
 published: '2020-07-01T00:00:08.721678Z'
 references:
 - type: REPORT

@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in gvs_read_unaligned_le
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=9807
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   gvs_read_unaligned_le
   gvs_tuple_is_normal
   g_variant_serialised_is_normal
-modified: '2021-06-23T06:25:26.058322Z'
+  ```
+modified: '2022-04-13T03:04:32.539752Z'
 published: '2021-01-13T00:00:09.013990Z'
 references:
 - type: REPORT
@@ -30,5 +32,5 @@ affected:
   - 2.58.2
   - 2.58.3
   ecosystem_specific:
-    introduced_range: 8defa46e6ec16aa3722aa0ac0bc3db0fecd86c45:0d271223d894e9c69b7fa6b7983511f8ad770682
     severity: MEDIUM
+    introduced_range: 8defa46e6ec16aa3722aa0ac0bc3db0fecd86c45:0d271223d894e9c69b7fa6b7983511f8ad770682

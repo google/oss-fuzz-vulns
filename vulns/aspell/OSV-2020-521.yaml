@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in acommon::ObjStack::dup_top
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18462
 
+  ```
   Crash type: Heap-buffer-overflow WRITE {*}
   Crash state:
   acommon::ObjStack::dup_top
   acommon::StringMap::add
   acommon::Config::lookup_list
-modified: '2021-06-21T06:56:20.818929Z'
+  ```
+modified: '2022-04-13T03:04:33.269949Z'
 published: '2020-07-01T00:00:14.312168Z'
 references:
 - type: REPORT

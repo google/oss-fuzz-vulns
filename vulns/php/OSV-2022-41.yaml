@@ -3,12 +3,14 @@ summary: Segv on unknown address in zero
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=43538
 
+  ```
   Crash type: Segv on unknown address
   Crash state:
   zero
   zend_execute
   fuzzer_do_request_from_buffer
-modified: '2022-01-14T00:00:26.166270Z'
+  ```
+modified: '2022-04-13T03:04:33.433288Z'
 published: '2022-01-14T00:00:26.166067Z'
 references:
 - type: REPORT

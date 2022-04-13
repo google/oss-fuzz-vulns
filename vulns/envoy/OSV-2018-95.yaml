@@ -3,12 +3,14 @@ summary: Heap-use-after-free in Envoy::FakeConnectionBase::close
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=8783
 
+  ```
   Crash type: Heap-use-after-free READ 1
   Crash state:
   Envoy::FakeConnectionBase::close
   Envoy::Event::DispatcherImpl::runPostCallbacks
   event_process_active_single_queue
-modified: '2021-06-23T06:25:08.795117Z'
+  ```
+modified: '2022-04-13T03:04:31.605627Z'
 published: '2021-01-13T00:00:42.203275Z'
 references:
 - type: REPORT
@@ -24,5 +26,6 @@ affected:
     - introduced: f9b2041af0ca5dda5daed5ef80816e907fb0c6fd
     - fixed: a89eb3c59204caa3e0cd1bcd845bcb1a0be95267
   ecosystem_specific:
-    severity: HIGH
     fixed_range: 09c5d356684194f8b06df1a6b62f27a1a9cb1d69:a89eb3c59204caa3e0cd1bcd845bcb1a0be95267
+    severity: HIGH
+  versions: []

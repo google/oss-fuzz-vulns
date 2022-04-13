@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in Lizard_decompress_safe
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=27818
 
+  ```
   Crash type: Heap-buffer-overflow READ 2
   Crash state:
   Lizard_decompress_safe
   blosc_d
   do_job
-modified: '2021-06-21T06:56:25.892183Z'
+  ```
+modified: '2022-04-13T03:04:40.174785Z'
 published: '2020-11-25T00:00:12.713716Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 3724317f7bd698abb3b3d39a6d785088b9f8db0a
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

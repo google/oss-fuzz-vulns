@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in cram_xpack_decode_init
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29827
 
+  ```
   Crash type: Heap-buffer-overflow WRITE 4
   Crash state:
   cram_xpack_decode_init
   cram_decoder_init
   cram_decode_compression_header
-modified: '2021-06-21T06:56:19.994912Z'
+  ```
+modified: '2022-04-13T03:04:32.349253Z'
 published: '2021-01-24T00:00:18.032169Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 40afaaa5bf7e3f9cd6d6d9d9d8ae26496df82aea
   ecosystem_specific:
     severity: HIGH
+  versions: []

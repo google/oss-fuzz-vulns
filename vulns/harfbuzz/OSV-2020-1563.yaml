@@ -3,12 +3,14 @@ summary: UNKNOWN READ in OT::VariationSelectorRecord::operator=
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24548
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   OT::VariationSelectorRecord::operator=
   OT::VariationSelectorRecord::VariationSelectorRecord
   hb_array_t<OT::VariationSelectorRecord>::reverse
-modified: '2021-06-21T06:56:20.477556Z'
+  ```
+modified: '2022-04-13T03:04:32.902373Z'
 published: '2020-08-01T00:00:59.284106Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 18ab8029d5aab6ac20c240515ad1795bd31dca1e
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

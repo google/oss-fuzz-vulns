@@ -3,12 +3,14 @@ summary: Heap-use-after-free in hb_bit_set_invertible_t::next
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=44263
 
+  ```
   Crash type: Heap-use-after-free READ 1
   Crash state:
   hb_bit_set_invertible_t::next
   hb_bit_set_invertible_t::intersects
   hb_sparseset_t<hb_bit_set_invertible_t>::intersects
-modified: '2022-02-02T00:01:18.382521Z'
+  ```
+modified: '2022-04-13T03:04:33.242063Z'
 published: '2022-02-02T00:01:18.382284Z'
 references:
 - type: REPORT

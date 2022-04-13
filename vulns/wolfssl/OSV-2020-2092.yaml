@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in RsaPad_PSS
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26567
 
+  ```
   Crash type: Heap-buffer-overflow WRITE {*}
   Crash state:
   RsaPad_PSS
   wc_RsaPad_ex
   RsaPublicEncryptEx
-modified: '2021-06-23T06:25:58.382011Z'
+  ```
+modified: '2022-04-13T03:04:35.673500Z'
 published: '2020-10-23T00:00:33.187354Z'
 references:
 - type: REPORT
@@ -24,5 +26,6 @@ affected:
     - introduced: 83cdd1c314af5d6326470254b3cdbb9d85182348
     - fixed: 63bf5dc56ccbfc12a73b06327361687091a4c6f7
   ecosystem_specific:
-    introduced_range: deaf3b4b40d26663191d085557fbeb8cafa420ae:881657782478cef4a1527847bb2c4cd427bd6c99
     severity: HIGH
+    introduced_range: deaf3b4b40d26663191d085557fbeb8cafa420ae:881657782478cef4a1527847bb2c4cd427bd6c99
+  versions: []

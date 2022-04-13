@@ -4,12 +4,14 @@ summary: Use-of-uninitialized-value in std::__1::basic_ostream<char, std::__1::c
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=38808
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   std::__1::basic_ostream<char, std::__1::char_traits<char> >& std::__1::__put_cha
   print_json
   fuzz_dump.cpp
-modified: '2021-09-18T00:01:03.273312Z'
+  ```
+modified: '2022-04-13T03:04:31.443505Z'
 published: '2021-09-18T00:01:03.273096Z'
 references:
 - type: REPORT

@@ -3,12 +3,14 @@ summary: Use-of-uninitialized-value in bn_sub_words
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=8654
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   bn_sub_words
   bn_reduce_once
   bn_from_montgomery_in_place
-modified: '2021-11-22T06:22:42.582856Z'
+  ```
+modified: '2022-04-13T03:04:32.595447Z'
 published: '2021-01-13T00:00:05.629092Z'
 references:
 - type: REPORT
@@ -29,5 +31,5 @@ affected:
   - fips-android-20191020
   - version_for_cocoapods_10.0
   ecosystem_specific:
-    fixed_range: 81a6f6d8de908e27901f5c968c576fbb9c3f35d0:f8f35c95550e6796ab8b2c0f8e37e7ce4bc67302
     severity: MEDIUM
+    fixed_range: 81a6f6d8de908e27901f5c968c576fbb9c3f35d0:f8f35c95550e6796ab8b2c0f8e37e7ce4bc67302

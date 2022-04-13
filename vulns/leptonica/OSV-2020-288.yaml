@@ -3,12 +3,14 @@ summary: Heap-use-after-free in pixReadMemBmp
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=19723
 
+  ```
   Crash type: Heap-use-after-free READ {*}
   Crash state:
   pixReadMemBmp
   pixReadMem
   pix_rotate_shear_fuzzer.cc
-modified: '2021-06-21T06:56:20.231519Z'
+  ```
+modified: '2022-04-13T03:04:32.649721Z'
 published: '2020-06-30T00:00:46.704258Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 7a74abcd7b574109d8ad29b0dd5583f3963a6939
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

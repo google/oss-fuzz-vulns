@@ -1,12 +1,13 @@
 id: OSV-2018-335
 summary: Null-dereference READ
-details: |-
+details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=10888
 
+  ```
   Crash type: Null-dereference READ
   Crash state:
-  NULL
-modified: '2021-06-23T06:25:09.848504Z'
+  NULL```
+modified: '2022-04-13T03:04:31.627132Z'
 published: '2021-01-15T00:00:43.734642Z'
 references:
 - type: REPORT
@@ -24,3 +25,4 @@ affected:
   ecosystem_specific:
     introduced_range: 613cc3cfa10d9dd6fe18213c41d221549b10e10d:483391017765c52cea9ebd1bae65dbe615e9ef4d
     fixed_range: bc322c8ffd9971e1aa38f4870b7629890d4c5958:8ecacd083362412f0695ccb86585cda153268dc4
+  versions: []

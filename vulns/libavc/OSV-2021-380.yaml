@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in ih264d_fill_bs1_16x16mb_pslice
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30801
 
+  ```
   Crash type: Heap-buffer-overflow READ 8
   Crash state:
   ih264d_fill_bs1_16x16mb_pslice
   ih264d_compute_bs_non_mbaff_thread
   ih264d_recon_deblk_slice
-modified: '2021-11-23T00:09:31.397280Z'
+  ```
+modified: '2022-04-13T03:04:35.446199Z'
 published: '2021-02-12T00:02:40.784817Z'
 references:
 - type: REPORT

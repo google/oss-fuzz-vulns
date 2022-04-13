@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in blosc_c
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26442
 
+  ```
   Crash type: Heap-buffer-overflow WRITE 1
   Crash state:
   blosc_c
   do_job
   blosc_compress_context
-modified: '2021-06-21T06:56:25.974576Z'
+  ```
+modified: '2022-04-13T03:04:40.296793Z'
 published: '2020-10-19T00:00:42.021414Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: c4c6470e88210afc95262c8b9fcc27e30ca043ee
   ecosystem_specific:
     severity: HIGH
+  versions: []

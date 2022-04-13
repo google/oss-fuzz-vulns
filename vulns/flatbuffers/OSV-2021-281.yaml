@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in flatbuffers::Table* flatbuffers::GetMutableRoot
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30289
 
+  ```
   Crash type: Heap-buffer-overflow READ 4
   Crash state:
   flatbuffers::Table* flatbuffers::GetMutableRoot<flatbuffers::Table>
   flatbuffers::Table const* flatbuffers::GetRoot<flatbuffers::Table>
   flatbuffers::JsonPrinter::GenFieldOffset
-modified: '2021-06-21T06:56:27.449334Z'
+  ```
+modified: '2022-04-13T03:04:42.078485Z'
 published: '2021-02-06T00:00:11.762958Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 815d3e820d4969af68800ddca5f1e6771c3622da
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

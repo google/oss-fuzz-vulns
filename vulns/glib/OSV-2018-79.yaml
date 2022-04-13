@@ -3,12 +3,14 @@ summary: Use-of-uninitialized-value in g_dbus_message_new_from_blob
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=9825
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   g_dbus_message_new_from_blob
   fuzz_dbus_message.c
   g_dbus_message_new_from_blob
-modified: '2021-06-23T06:25:15.398377Z'
+  ```
+modified: '2022-04-13T03:04:32.498984Z'
 published: '2021-01-13T00:00:38.105623Z'
 references:
 - type: REPORT
@@ -30,5 +32,5 @@ affected:
   - 2.58.2
   - 2.58.3
   ecosystem_specific:
-    introduced_range: 8defa46e6ec16aa3722aa0ac0bc3db0fecd86c45:0d271223d894e9c69b7fa6b7983511f8ad770682
     severity: MEDIUM
+    introduced_range: 8defa46e6ec16aa3722aa0ac0bc3db0fecd86c45:0d271223d894e9c69b7fa6b7983511f8ad770682

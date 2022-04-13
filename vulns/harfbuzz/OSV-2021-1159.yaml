@@ -3,12 +3,14 @@ summary: UNKNOWN WRITE in hb_bit_set_invertible_t::set
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=37425
 
+  ```
   Crash type: UNKNOWN WRITE
   Crash state:
   hb_bit_set_invertible_t::set
   hb_sparseset_t<hb_bit_set_invertible_t>::set
   hb_set_copy
-modified: '2021-08-22T00:00:24.932034Z'
+  ```
+modified: '2022-04-13T03:04:33.060992Z'
 published: '2021-08-22T00:00:24.931714Z'
 references:
 - type: REPORT

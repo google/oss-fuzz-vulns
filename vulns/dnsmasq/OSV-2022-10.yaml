@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in check_bad_address
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=43308
 
+  ```
   Crash type: Heap-buffer-overflow WRITE 1
   Crash state:
   check_bad_address
   check_for_bogus_wildcard
   FuzzCheckForBogusWildcard
-modified: '2022-04-06T00:06:56.159034Z'
+  ```
+modified: '2022-04-13T03:04:31.191964Z'
 published: '2022-01-06T00:00:44.554417Z'
 references:
 - type: REPORT

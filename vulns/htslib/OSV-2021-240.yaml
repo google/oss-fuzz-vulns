@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in safe_itf8_get
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29908
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   safe_itf8_get
   cram_decode_compression_header
   cram_first_slice
-modified: '2021-06-21T06:56:19.976960Z'
+  ```
+modified: '2022-04-13T03:04:32.333405Z'
 published: '2021-01-26T00:01:01.964692Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 90fef7300c75ca6b8834da0dcb710e27d599324e
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

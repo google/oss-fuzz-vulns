@@ -3,12 +3,14 @@ summary: UNKNOWN WRITE in CompileBlock
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=33555
 
+  ```
   Crash type: UNKNOWN WRITE
   Crash state:
   CompileBlock
   Compile_LoopOrBlock
   CompileBlockStatements
-modified: '2021-04-23T00:00:13.901043Z'
+  ```
+modified: '2022-04-13T03:04:30.625906Z'
 published: '2021-04-23T00:00:13.900793Z'
 references:
 - type: REPORT

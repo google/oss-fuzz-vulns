@@ -3,12 +3,14 @@ summary: Heap-use-after-free in zval_call_destructor
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=44885
 
+  ```
   Crash type: Heap-use-after-free READ 4
   Crash state:
   zval_call_destructor
   zend_hash_reverse_apply
   shutdown_destructors
-modified: '2022-03-03T03:45:27.997599Z'
+  ```
+modified: '2022-04-13T03:04:33.592539Z'
 published: '2022-02-21T00:00:49.282928Z'
 references:
 - type: REPORT

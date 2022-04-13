@@ -3,12 +3,14 @@ summary: Heap-use-after-free in ndpi_http_check_content
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22899
 
+  ```
   Crash type: Heap-use-after-free READ 1
   Crash state:
   ndpi_http_check_content
   ndpi_int_http_add_connection
   ndpi_check_http_tcp
-modified: '2021-06-21T06:56:22.620185Z'
+  ```
+modified: '2022-04-13T03:04:36.101229Z'
 published: '2020-06-24T01:51:11.374665Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 29d9c2d2c80289f31278f8717959a5718a2e6ce1
   ecosystem_specific:
     severity: HIGH
+  versions: []

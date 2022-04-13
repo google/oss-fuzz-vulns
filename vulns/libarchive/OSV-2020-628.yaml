@@ -3,12 +3,14 @@ summary: UNKNOWN READ in copy_string
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15482
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   copy_string
   do_uncompress_block
   process_block
-modified: '2021-06-21T06:56:26.705391Z'
+  ```
+modified: '2022-04-13T03:04:41.221723Z'
 published: '2020-07-01T00:00:21.328353Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: b625b17e6fd6e89b2f54236b402ccd3722ace2bb
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

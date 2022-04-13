@@ -3,12 +3,14 @@ summary: Heap-use-after-free in ZSTD_freeDDict
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=33324
 
+  ```
   Crash type: Heap-use-after-free READ 4
   Crash state:
   ZSTD_freeDDict
   blosc2_free_ctx
   blosc2_schunk_free
-modified: '2022-04-10T00:04:27.351359Z'
+  ```
+modified: '2022-04-13T03:04:40.216664Z'
 published: '2021-04-18T00:01:00.614418Z'
 references:
 - type: REPORT

@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in spvTextEncodeOperand
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=39637
 
+  ```
   Crash type: Heap-buffer-overflow READ 4
   Crash state:
   spvTextEncodeOperand
   spvTextEncodeOperand
   spvTextEncodeOpcode
-modified: '2021-10-07T00:00:34.846864Z'
+  ```
+modified: '2022-04-13T03:04:34.855789Z'
 published: '2021-10-07T00:00:34.846656Z'
 references:
 - type: REPORT

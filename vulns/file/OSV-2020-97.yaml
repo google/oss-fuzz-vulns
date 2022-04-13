@@ -3,12 +3,14 @@ summary: Use-of-uninitialized-value in file_vprintf
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20702
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   file_vprintf
   file_printf
   mget
-modified: '2021-06-21T06:56:18.771283Z'
+  ```
+modified: '2022-04-13T03:04:30.886577Z'
 published: '2020-06-24T01:51:13.931038Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 4f1887eb56f4abdf448274afc5abdc8f9d078929
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

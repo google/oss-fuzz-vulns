@@ -3,12 +3,14 @@ summary: Stack-buffer-overflow in pdfi_create_iccbased
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42460
 
+  ```
   Crash type: Stack-buffer-overflow WRITE 4
   Crash state:
   pdfi_create_iccbased
   pdfi_create_colorspace_by_array
   pdfi_setcolorspace
-modified: '2021-12-17T00:00:14.243954Z'
+  ```
+modified: '2022-04-13T03:04:34.465691Z'
 published: '2021-12-17T00:00:14.243740Z'
 references:
 - type: REPORT

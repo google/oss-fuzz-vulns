@@ -3,12 +3,14 @@ summary: Heap-use-after-free in start_pass_phuff_decoder
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=46338
 
+  ```
   Crash type: Heap-use-after-free WRITE 4
   Crash state:
   start_pass_phuff_decoder
   start_input_pass
   jinit_master_decompress
-modified: '2022-04-05T00:00:12.039977Z'
+  ```
+modified: '2022-04-13T03:04:38.084296Z'
 published: '2022-04-05T00:00:12.039669Z'
 references:
 - type: REPORT

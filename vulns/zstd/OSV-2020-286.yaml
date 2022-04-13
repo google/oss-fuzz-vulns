@@ -3,12 +3,14 @@ summary: Use-of-uninitialized-value in ZSTD_loadCEntropy
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=19146
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   ZSTD_loadCEntropy
   ZSTD_loadZstdDictionary
   ZSTD_compress_insertDictionary
-modified: '2021-06-21T06:56:19.414018Z'
+  ```
+modified: '2022-04-13T03:04:31.658980Z'
 published: '2020-06-30T00:00:46.352280Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 49c6d492479227644e60c2caa15a6334f302f6ea
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

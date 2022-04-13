@@ -3,12 +3,14 @@ summary: Segv on unknown address in cbor_decref
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21386
 
+  ```
   Crash type: Segv on unknown address
   Crash state:
   cbor_decref
   cbor_decref
   cbor_load
-modified: '2021-03-09T04:49:06.130216Z'
+  ```
+modified: '2022-04-13T03:04:41.486347Z'
 published: '2020-06-24T01:51:13.521395Z'
 references:
 - type: REPORT
@@ -23,3 +25,4 @@ affected:
     events:
     - introduced: 6e6050e9ca2a898de1c6b0f3babadb745b5047da
     - fixed: 3bfb7acb29d9812ffe8085af77c7fac72f76d33a
+  versions: []

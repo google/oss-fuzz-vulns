@@ -3,12 +3,14 @@ summary: Heap-use-after-free in TranslateLetter
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=37238
 
+  ```
   Crash type: Heap-use-after-free READ 4
   Crash state:
   TranslateLetter
   TranslateWord3
   TranslateWord
-modified: '2022-04-03T00:04:20.488283Z'
+  ```
+modified: '2022-04-13T03:04:34.179233Z'
 published: '2021-08-17T00:01:54.252372Z'
 references:
 - type: REPORT

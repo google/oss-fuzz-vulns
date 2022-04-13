@@ -3,10 +3,12 @@ summary: UNKNOWN READ in dav1d_put_bilin_avx2
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=16954
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   dav1d_put_bilin_avx2
-modified: '2021-06-21T06:56:25.657462Z'
+  ```
+modified: '2022-04-13T03:04:39.828062Z'
 published: '2020-06-30T00:00:48.527659Z'
 references:
 - type: REPORT

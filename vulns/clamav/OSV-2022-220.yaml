@@ -3,12 +3,14 @@ summary: Stack-buffer-overflow in load_regex_matcher
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=45247
 
+  ```
   Crash type: Stack-buffer-overflow WRITE 1
   Crash state:
   load_regex_matcher
   cli_loadpdb
   cli_load
-modified: '2022-03-07T00:00:32.716671Z'
+  ```
+modified: '2022-04-13T03:04:39.413972Z'
 published: '2022-03-07T00:00:32.716453Z'
 references:
 - type: REPORT

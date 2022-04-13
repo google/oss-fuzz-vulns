@@ -3,12 +3,14 @@ summary: UNKNOWN READ in ebml_parse_chunk
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=7887
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   ebml_parse_chunk
   matroska_type_find
   gst_type_find_factory_call_function
-modified: '2021-06-23T06:55:58.056686Z'
+  ```
+modified: '2022-04-13T03:04:33.793167Z'
 published: '2021-01-13T00:00:18.931589Z'
 references:
 - type: REPORT
@@ -49,6 +51,6 @@ affected:
   - 1.18.2
   - 1.18.3
   ecosystem_specific:
-    introduced_range: fb56ad6bee2366813f6be4f697579c06774b062d:4c795924dba5595fb1472864f7d27262bce247a8
-    severity: MEDIUM
     fixed_range: 9722e896446ed052623d795d8511140fbca7f023:b71841c2d2f3759abc5ebe2703cc96c18da77dc9
+    severity: MEDIUM
+    introduced_range: fb56ad6bee2366813f6be4f697579c06774b062d:4c795924dba5595fb1472864f7d27262bce247a8

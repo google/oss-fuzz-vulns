@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in value_move
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=38298
 
+  ```
   Crash type: Heap-buffer-overflow READ 8
   Crash state:
   value_move
   mrb_ary_splice
   mrb_ary_aset
-modified: '2021-09-10T00:01:30.327858Z'
+  ```
+modified: '2022-04-13T03:04:39.785928Z'
 published: '2021-09-10T00:01:30.327601Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: da749d870f4a57df7a05ef4a9ae023602d48af86
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

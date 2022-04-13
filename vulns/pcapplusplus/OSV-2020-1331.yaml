@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in pcpp::GtpV1Layer::GtpExtension::getNextExtensio
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23183
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   pcpp::GtpV1Layer::GtpExtension::getNextExtensionHeaderType
   pcpp::GtpV1Layer::GtpExtension::getNextExtension
   pcpp::GtpV1Layer::getHeaderLen
-modified: '2021-06-23T06:28:21.544589Z'
+  ```
+modified: '2022-04-13T03:04:38.628878Z'
 published: '2020-07-22T21:50:07.132825Z'
 references:
 - type: REPORT
@@ -26,3 +28,4 @@ affected:
   ecosystem_specific:
     severity: MEDIUM
     introduced_range: unknown:4366d2f86bf105025765a0ce3db6e647ba0f3508
+  versions: []

@@ -3,12 +3,14 @@ summary: Negative-size-param in tcos_decipher
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=28768
 
+  ```
   Crash type: Negative-size-param
   Crash state:
   tcos_decipher
   sc_decipher
   use_key
-modified: '2021-06-23T06:30:09.454541Z'
+  ```
+modified: '2022-04-13T03:04:41.586495Z'
 published: '2020-12-19T00:01:12.908184Z'
 references:
 - type: REPORT

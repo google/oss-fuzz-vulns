@@ -3,12 +3,14 @@ summary: Segv on unknown address in i_zval_ptr_dtor
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=45429
 
+  ```
   Crash type: Segv on unknown address
   Crash state:
   i_zval_ptr_dtor
   zend_leave_helper_SPEC
   zend_dispatch_try_catch_finally_helper_SPEC
-modified: '2022-03-16T01:28:05.680502Z'
+  ```
+modified: '2022-04-13T03:04:33.378430Z'
 published: '2022-03-12T00:00:45.926897Z'
 references:
 - type: REPORT

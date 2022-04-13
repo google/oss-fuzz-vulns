@@ -3,12 +3,14 @@ summary: UNKNOWN WRITE in void uWS::WebSocketProtocol<true, Impl>::UnrolledXor<4
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42672
 
+  ```
   Crash type: UNKNOWN WRITE
   Crash state:
   void uWS::WebSocketProtocol<true, Impl>::UnrolledXor<4>
   void uWS::WebSocketProtocol<true, Impl>::UnrolledXor<10>
   void uWS::WebSocketProtocol<true, Impl>::UnrolledXor<14>
-modified: '2021-12-21T00:00:12.717116Z'
+  ```
+modified: '2022-04-13T03:04:41.036032Z'
 published: '2021-12-21T00:00:12.716885Z'
 references:
 - type: REPORT

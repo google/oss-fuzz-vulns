@@ -3,12 +3,14 @@ summary: Stack-buffer-overflow in ndpi_search_kerberos
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25446
 
+  ```
   Crash type: Stack-buffer-overflow READ 1
   Crash state:
   ndpi_search_kerberos
   check_ndpi_udp_flow_func
   ndpi_check_flow_func
-modified: '2021-06-21T06:56:22.849364Z'
+  ```
+modified: '2022-04-13T03:04:36.320061Z'
 published: '2020-09-07T00:00:49.972310Z'
 references:
 - type: REPORT

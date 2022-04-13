@@ -3,12 +3,14 @@ summary: Use-of-uninitialized-value in stbi__expand_png_palette
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23234
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   stbi__expand_png_palette
   stbi__parse_png_file
   stbi__do_png
-modified: '2021-06-21T06:56:26.436970Z'
+  ```
+modified: '2022-04-13T03:04:40.816714Z'
 published: '2020-10-02T00:00:07.829126Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 9cd6cdc0e55ec3d4c002313fd5f0e6b255e8e06c
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

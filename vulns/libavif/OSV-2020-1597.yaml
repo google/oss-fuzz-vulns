@@ -3,12 +3,14 @@ summary: UNKNOWN WRITE in avifDecoderDataFillImageGrid
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24811
 
+  ```
   Crash type: UNKNOWN WRITE
   Crash state:
   avifDecoderDataFillImageGrid
   avifDecoderNextImage
   avif_decode_fuzzer.cc
-modified: '2021-06-21T06:56:27.269621Z'
+  ```
+modified: '2022-04-13T03:04:41.881785Z'
 published: '2020-08-12T00:00:12.469996Z'
 references:
 - type: REPORT

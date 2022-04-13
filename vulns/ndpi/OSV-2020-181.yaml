@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in get_ndpi_flow_info
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20162
 
+  ```
   Crash type: Heap-buffer-overflow READ 2
   Crash state:
   get_ndpi_flow_info
   packet_processing
   ndpi_workflow_process_packet
-modified: '2021-06-21T06:56:22.812052Z'
+  ```
+modified: '2022-04-13T03:04:36.286917Z'
 published: '2020-06-24T01:51:17.721072Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: b287dccecfecd32f114b043f395019eb3b000791
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

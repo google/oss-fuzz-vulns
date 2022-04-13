@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in ujson.cpython-38-x86_64-linux-gnu.so
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=44973
 
+  ```
   Crash type: Heap-buffer-overflow WRITE 1
   Crash state:
   ujson.cpython-38-x86_64-linux-gnu.so
   ujson.cpython-38-x86_64-linux-gnu.so
   ujson.cpython-38-x86_64-linux-gnu.so
-modified: '2022-02-25T00:00:25.106952Z'
+  ```
+modified: '2022-04-13T03:04:31.104493Z'
 published: '2022-02-25T00:00:25.106722Z'
 references:
 - type: REPORT

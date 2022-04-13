@@ -4,12 +4,14 @@ summary: 'Use-of-uninitialized-value in std::__1::vector<std::__1::vector<Sass::
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18066
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   std::__1::vector<std::__1::vector<Sass::SharedImpl<Sass::ComplexSelector>, std::
   Sass::ComplexSelector::resolve_parent_refs
   Sass::Eval::operator
-modified: '2021-06-21T06:56:24.509476Z'
+  ```
+modified: '2022-04-13T03:04:38.465562Z'
 published: '2020-07-01T00:00:20.375619Z'
 references:
 - type: REPORT

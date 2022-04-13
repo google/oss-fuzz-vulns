@@ -3,12 +3,14 @@ summary: UNKNOWN READ in wabt::ReadBinary
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30373
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   wabt::ReadBinary
   wabt::ReadBinaryIr
   wasm2wat_fuzzer.cc
-modified: '2021-06-21T06:56:24.171549Z'
+  ```
+modified: '2022-04-13T03:04:37.955214Z'
 published: '2021-02-07T00:00:01.703392Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 09ac53e41d959ce8e14e703e627327971e67f6d3
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

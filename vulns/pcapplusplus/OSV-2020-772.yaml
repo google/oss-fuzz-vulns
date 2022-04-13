@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in __libcpp_strstr
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23601
 
+  ```
   Crash type: Heap-buffer-overflow READ 4
   Crash state:
   __libcpp_strstr
   strstr
   pcpp::SipRequestFirstLine::parseVersion
-modified: '2021-06-23T06:28:21.827916Z'
+  ```
+modified: '2022-04-13T03:04:38.640033Z'
 published: '2020-07-14T05:37:27.956803Z'
 references:
 - type: REPORT

@@ -3,12 +3,14 @@ summary: Container-overflow in jxl::InvSqueeze
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=36485
 
+  ```
   Crash type: Container-overflow READ 8
   Crash state:
   jxl::InvSqueeze
   jxl::Transform::Inverse
   jxl::Image::undo_transforms
-modified: '2021-07-31T00:06:29.837157Z'
+  ```
+modified: '2022-04-13T03:04:41.828010Z'
 published: '2021-07-25T00:00:06.796305Z'
 references:
 - type: REPORT
@@ -27,3 +29,4 @@ affected:
     - fixed: ad4cac4bf89949007922f1147648c91fcee83b7b
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

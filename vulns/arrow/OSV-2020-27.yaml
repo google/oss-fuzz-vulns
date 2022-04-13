@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in parquet::LevelDecoder::SetData
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20940
 
+  ```
   Crash type: Heap-buffer-overflow READ 4
   Crash state:
   parquet::LevelDecoder::SetData
   parquet::ColumnReaderImplBase<parquet::PhysicalType<
   parquet::internal::TypedRecordReader<parquet::PhysicalType<
-modified: '2021-06-21T06:56:19.519427Z'
+  ```
+modified: '2022-04-13T03:04:31.823547Z'
 published: '2020-06-24T01:51:10.819423Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 5ba0b643f2b7f5a183d67b40a63f7e67e42ec8bd
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

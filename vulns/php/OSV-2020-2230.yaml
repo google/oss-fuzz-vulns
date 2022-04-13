@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in _zend_is_inconsistent
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=28129
 
+  ```
   Crash type: Heap-buffer-overflow READ 4
   Crash state:
   _zend_is_inconsistent
   zend_hash_find
   zend_hash_find_ptr
-modified: '2021-06-21T06:56:20.907531Z'
+  ```
+modified: '2022-04-13T03:04:33.406070Z'
 published: '2020-12-04T00:01:16.269909Z'
 references:
 - type: REPORT

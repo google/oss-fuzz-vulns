@@ -4,12 +4,14 @@ summary: UNKNOWN READ in std::__1::__tree<std::__1::__value_type<Json::Value::CZ
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34531
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   std::__1::__tree<std::__1::__value_type<Json::Value::CZString, Json::Value>, std
   std::__1::map<Json::Value::CZString, Json::Value, std::__1::less<Json::Value::CZ
   Json::Value::begin
-modified: '2021-06-21T06:56:27.416428Z'
+  ```
+modified: '2022-04-13T03:04:42.014016Z'
 published: '2021-05-24T00:00:15.793602Z'
 references:
 - type: REPORT
@@ -26,3 +28,4 @@ affected:
     - fixed: 45123b7d05fe7aee73321f5d3f731b32465acb25
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

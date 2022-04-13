@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in ih264d_compute_bs_non_mbaff_thread
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=16505
 
+  ```
   Crash type: Heap-buffer-overflow READ 8
   Crash state:
   ih264d_compute_bs_non_mbaff_thread
   ih264d_recon_deblk_slice
   ih264d_recon_deblk_thread
-modified: '2021-06-23T06:25:53.174854Z'
+  ```
+modified: '2022-04-13T03:04:35.498573Z'
 published: '2020-07-22T21:49:41.125485Z'
 references:
 - type: REPORT
@@ -26,3 +28,4 @@ affected:
   ecosystem_specific:
     severity: MEDIUM
     introduced_range: unknown:9046ac21822cbb46358b5731294e6e47db571e34
+  versions: []

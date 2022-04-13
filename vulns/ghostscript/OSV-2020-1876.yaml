@@ -3,12 +3,14 @@ summary: UNKNOWN READ in mem_mapped4_fill_rectangle
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22007
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   mem_mapped4_fill_rectangle
   gx_dc_pure_fill_rectangle
   gx_default_fillpage
-modified: '2021-06-21T06:56:21.609472Z'
+  ```
+modified: '2022-04-13T03:04:34.791044Z'
 published: '2020-09-29T00:00:30.602171Z'
 references:
 - type: REPORT

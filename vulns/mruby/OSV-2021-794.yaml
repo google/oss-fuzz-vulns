@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in mrb_format_float
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34652
 
+  ```
   Crash type: Heap-buffer-overflow WRITE 1
   Crash state:
   mrb_format_float
   fmt_float
   mrb_str_format
-modified: '2021-06-21T06:56:25.570319Z'
+  ```
+modified: '2022-04-13T03:04:39.693249Z'
 published: '2021-05-25T23:49:50.285850Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 063b49ab8e6a10212c7f88e5b114b90fe59296f7
   ecosystem_specific:
     severity: HIGH
+  versions: []

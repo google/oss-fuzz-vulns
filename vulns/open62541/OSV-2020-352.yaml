@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in searchObjectForKeyRec
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14619
 
+  ```
   Crash type: Heap-buffer-overflow READ 4
   Crash state:
   searchObjectForKeyRec
   searchObjectForKeyRec
   searchObjectForKeyRec
-modified: '2021-06-21T06:56:26.892188Z'
+  ```
+modified: '2022-04-13T03:04:41.387084Z'
 published: '2020-07-01T00:00:04.730408Z'
 references:
 - type: REPORT

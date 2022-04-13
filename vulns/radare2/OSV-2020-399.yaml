@@ -3,12 +3,14 @@ summary: Heap-use-after-free in sdb_free
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13704
 
+  ```
   Crash type: Heap-use-after-free READ 8
   Crash state:
   sdb_free
   ns_free
   sdb_ns_free
-modified: '2021-06-21T06:56:23.091784Z'
+  ```
+modified: '2022-04-13T03:04:36.584151Z'
 published: '2020-07-01T00:00:07.312045Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 5d65cbe1f7d677a22c0fca593dcae1aebf8cf35b
   ecosystem_specific:
     severity: HIGH
+  versions: []

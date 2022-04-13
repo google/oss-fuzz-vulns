@@ -3,12 +3,14 @@ summary: Heap-use-after-free in xmlXPathNodeSetAdd
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25536
 
+  ```
   Crash type: Heap-use-after-free READ 4
   Crash state:
   xmlXPathNodeSetAdd
   xmlXPathGetElementsByIds
   xmlXPathIdFunction
-modified: '2021-06-21T06:56:25.730028Z'
+  ```
+modified: '2022-04-13T03:04:39.942783Z'
 published: '2020-09-11T00:00:07.083398Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: b215c270fa3b1436314cc56654718bd12182cfec
   ecosystem_specific:
     severity: HIGH
+  versions: []

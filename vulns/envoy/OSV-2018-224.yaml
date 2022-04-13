@@ -1,12 +1,13 @@
 id: OSV-2018-224
 summary: UNKNOWN READ
-details: |-
+details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=8353
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
-  NULL
-modified: '2021-06-21T06:56:19.374552Z'
+  NULL```
+modified: '2022-04-13T03:04:31.616426Z'
 published: '2021-01-13T00:01:32.384790Z'
 references:
 - type: REPORT
@@ -23,3 +24,4 @@ affected:
     - fixed: 40b1ac06e065d633c6a28d89823a491a47f2d44a
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

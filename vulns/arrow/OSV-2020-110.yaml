@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in parquet::internal::RecordReader::Make
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20989
 
+  ```
   Crash type: Heap-buffer-overflow READ 8
   Crash state:
   parquet::internal::RecordReader::Make
   parquet::arrow::LeafReader::LeafReader
   parquet::arrow::GetReader
-modified: '2021-06-21T06:56:19.771895Z'
+  ```
+modified: '2022-04-13T03:04:32.083138Z'
 published: '2020-06-24T01:51:14.532580Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 6b87c6c9fb00ade7eff909afa4a6a61464cd516c
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

@@ -3,11 +3,13 @@ summary: UNKNOWN WRITE in h3NeighborRotations
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=40106
 
+  ```
   Crash type: UNKNOWN WRITE
   Crash state:
   h3NeighborRotations
   h3_fuzzer.c
-modified: '2021-10-21T00:01:21.968196Z'
+  ```
+modified: '2022-04-13T03:04:32.469807Z'
 published: '2021-10-21T00:01:21.968011Z'
 references:
 - type: REPORT

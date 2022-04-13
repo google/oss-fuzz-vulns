@@ -3,12 +3,14 @@ summary: Global-buffer-overflow in stbi__jpeg_decode_block
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=43113
 
+  ```
   Crash type: Global-buffer-overflow READ 4
   Crash state:
   stbi__jpeg_decode_block
   stbi__decode_jpeg_image
   stbi__jpeg_load
-modified: '2021-12-31T00:00:36.879262Z'
+  ```
+modified: '2022-04-13T03:04:40.786367Z'
 published: '2021-12-31T00:00:36.879041Z'
 references:
 - type: REPORT

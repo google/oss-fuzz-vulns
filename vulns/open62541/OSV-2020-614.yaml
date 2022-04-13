@@ -3,12 +3,14 @@ summary: Use-of-uninitialized-value in __RefHead_ZIP_INSERT
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15133
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   __RefHead_ZIP_INSERT
   __RefHead_ZIP_INSERT
   RefTree_add
-modified: '2021-06-21T06:56:26.821664Z'
+  ```
+modified: '2022-04-13T03:04:41.329282Z'
 published: '2020-07-01T00:00:20.478171Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 054f460d6e9e98deba186eee6bd956756dfc89e0
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

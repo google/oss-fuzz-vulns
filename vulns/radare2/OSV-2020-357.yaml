@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in r_read_le32
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=12685
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   r_read_le32
   dex_method_signature2
   dex_parse_debug_item
-modified: '2021-06-21T06:56:23.078328Z'
+  ```
+modified: '2022-04-13T03:04:36.567512Z'
 published: '2020-07-01T00:00:04.961488Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 55ec5cc1938fba3c506e87c5314630f1f0736a15
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

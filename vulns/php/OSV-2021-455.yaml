@@ -3,12 +3,14 @@ summary: Heap-use-after-free in zend_hash_iterator_pos_ex
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31423
 
+  ```
   Crash type: Heap-use-after-free READ 1
   Crash state:
   zend_hash_iterator_pos_ex
   ZEND_FE_FETCH_RW_SPEC_VAR_HANDLER
   fuzzer_execute_ex
-modified: '2021-06-21T06:56:21.031896Z'
+  ```
+modified: '2022-04-13T03:04:33.633980Z'
 published: '2021-02-28T00:01:13.121524Z'
 references:
 - type: REPORT

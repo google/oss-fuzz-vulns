@@ -3,10 +3,12 @@ summary: Use-after-poison in absl::BytesToHexString
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=43554
 
+  ```
   Crash type: Use-after-poison READ 1
   Crash state:
   absl::BytesToHexString
-modified: '2022-01-13T00:00:25.384374Z'
+  ```
+modified: '2022-04-13T03:04:42.821777Z'
 published: '2022-01-13T00:00:25.384147Z'
 references:
 - type: REPORT

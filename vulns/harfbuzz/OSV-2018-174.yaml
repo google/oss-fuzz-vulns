@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in BEInt<unsigned char, 1>::operator unsigned char
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11245
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   BEInt<unsigned char, 1>::operator unsigned char
   OT::KernSubTableFormat3::get_kerning
   hb_kern_machine_t<OT::KernSubTableFormat3>::kern
-modified: '2021-06-21T06:56:20.653569Z'
+  ```
+modified: '2022-04-13T03:04:33.087704Z'
 published: '2021-01-13T00:01:11.845509Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 8d98c51d133b058a845ed7a84bfe8a43083bbb03
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

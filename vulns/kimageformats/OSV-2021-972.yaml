@@ -3,12 +3,14 @@ summary: UNKNOWN READ in void mc_chroma<unsigned short>
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=36056
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   void mc_chroma<unsigned short>
   generate_inter_prediction_samples
   decode_prediction_unit
-modified: '2022-04-10T00:03:47.383027Z'
+  ```
+modified: '2022-04-13T03:04:42.451559Z'
 published: '2021-07-13T00:00:16.631711Z'
 references:
 - type: REPORT

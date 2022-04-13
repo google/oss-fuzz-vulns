@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in OT::Coverage::intersects
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=10084
 
+  ```
   Crash type: Heap-buffer-overflow READ 8
   Crash state:
   OT::Coverage::intersects
   OT::ContextFormat2::closure
   _hb_void_t const* OT::hb_closure_context_t::dispatch<OT::ContextFormat2>
-modified: '2021-06-21T06:56:20.647326Z'
+  ```
+modified: '2022-04-13T03:04:33.082285Z'
 published: '2021-01-13T00:01:19.816069Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 2dde6c803a9e50c5bff74095187b0cb2e12eebdd
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

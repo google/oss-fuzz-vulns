@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in mem_src_read
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25388
 
+  ```
   Crash type: Heap-buffer-overflow READ {*}
   Crash state:
   mem_src_read
   src_peek
   src_eof
-modified: '2021-06-21T06:56:21.894402Z'
+  ```
+modified: '2022-04-13T03:04:35.156747Z'
 published: '2020-09-04T00:00:43.281890Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 1c43db6db6ec3c8f84d6d751f904ab8558561430
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

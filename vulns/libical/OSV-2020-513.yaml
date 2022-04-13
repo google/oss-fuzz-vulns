@@ -3,12 +3,14 @@ summary: Use-of-uninitialized-value in icalcomponent_remove_component
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14738
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   icalcomponent_remove_component
   icalcomponent_free
   icalparser_free
-modified: '2021-06-21T06:56:21.440437Z'
+  ```
+modified: '2022-04-13T03:04:34.146558Z'
 published: '2020-07-01T00:00:13.868635Z'
 references:
 - type: REPORT
@@ -27,3 +29,4 @@ affected:
     - fixed: 584a7b4832551d75e4dcacc7cfece7ddd0fdc74c
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

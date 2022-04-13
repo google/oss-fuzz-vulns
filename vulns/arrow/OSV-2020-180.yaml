@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in parquet::PlainByteArrayDecoder::DecodeArrowDens
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21009
 
+  ```
   Crash type: Heap-buffer-overflow READ 4
   Crash state:
   parquet::PlainByteArrayDecoder::DecodeArrowDense
   parquet::PlainByteArrayDecoder::DecodeArrow
   parquet::internal::ByteArrayChunkedRecordReader::ReadValuesSpaced
-modified: '2021-06-21T06:56:19.627814Z'
+  ```
+modified: '2022-04-13T03:04:31.927524Z'
 published: '2020-06-24T01:51:17.681643Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 6b87c6c9fb00ade7eff909afa4a6a61464cd516c
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

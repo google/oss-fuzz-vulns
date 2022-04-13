@@ -3,12 +3,14 @@ summary: Use-of-uninitialized-value in MipsAsmParser::isPicAndNotNxxAbi
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22778
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   MipsAsmParser::isPicAndNotNxxAbi
   MipsAsmParser::processInstruction
   MipsAsmParser::MatchAndEmitInstruction
-modified: '2021-06-21T06:56:24.133299Z'
+  ```
+modified: '2022-04-13T03:04:37.905755Z'
 published: '2020-07-14T05:37:37.559643Z'
 references:
 - type: REPORT

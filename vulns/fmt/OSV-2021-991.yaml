@@ -3,12 +3,14 @@ summary: Dynamic-stack-buffer-overflow in fmt::v8::detail::dragonbox::umul192_up
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=36110
 
+  ```
   Crash type: Dynamic-stack-buffer-overflow WRITE 8
   Crash state:
   fmt::v8::detail::dragonbox::umul192_upper64
   fmt::v8::detail::dragonbox::cache_accessor<double>::compute_mul
   fmt::v8::detail::dragonbox::decimal_fp<double> fmt::v8::detail::dragonbox::to_de
-modified: '2021-07-14T00:00:34.913448Z'
+  ```
+modified: '2022-04-13T03:04:33.958236Z'
 published: '2021-07-14T00:00:34.913206Z'
 references:
 - type: REPORT

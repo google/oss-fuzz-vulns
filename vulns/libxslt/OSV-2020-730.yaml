@@ -3,12 +3,14 @@ summary: Use-of-uninitialized-value in xmlOutputBufferWriteEscape
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15914
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   xmlOutputBufferWriteEscape
   xmlNodeDumpOutput
   xsltSaveResultTo
-modified: '2021-06-21T06:56:21.129311Z'
+  ```
+modified: '2022-04-13T03:04:33.735876Z'
 published: '2020-07-01T00:00:27.090633Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 2232473733b7313d67de8836ea3b29eec6e8e285
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

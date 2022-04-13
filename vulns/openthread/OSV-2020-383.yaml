@@ -3,12 +3,14 @@ summary: Stack-buffer-overflow in ot::NetworkData::Leader::IsStableUpdated
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15971
 
+  ```
   Crash type: Stack-buffer-overflow READ 8
   Crash state:
   ot::NetworkData::Leader::IsStableUpdated
   ot::NetworkData::Leader::RegisterNetworkData
   ot::NetworkData::Leader::HandleServerData
-modified: '2021-06-21T06:56:25.146420Z'
+  ```
+modified: '2022-04-13T03:04:39.050756Z'
 published: '2020-07-01T00:00:06.392501Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: a211901f62b96fb6fb0ee792dab4007c64b44e18
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

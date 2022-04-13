@@ -3,11 +3,13 @@ summary: Negative-size-param in get_urls_css
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=8032
 
+  ```
   Crash type: Negative-size-param
   Crash state:
   get_urls_css
   wget_css_fuzzer.c
-modified: '2021-03-09T04:49:04.958797Z'
+  ```
+modified: '2022-04-13T03:04:42.417731Z'
 published: '2021-01-15T00:00:59.859441Z'
 references:
 - type: REPORT
@@ -22,3 +24,4 @@ affected:
     events:
     - introduced: f56f970bc2b0df1d26ebd6a0a86083b37017cd70
     - fixed: cb47f3aaa4591b3a7f20fd30019fc4d81ecb4f4c
+  versions: []

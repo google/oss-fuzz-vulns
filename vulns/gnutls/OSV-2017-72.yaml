@@ -3,12 +3,14 @@ summary: Use-of-uninitialized-value in _gnutls_mpi_dprint_size
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=1494
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   _gnutls_mpi_dprint_size
   _wrap_nettle_pk_encrypt
   _gnutls_gen_rsa_client_kx
-modified: '2021-06-23T06:25:53.189066Z'
+  ```
+modified: '2022-04-13T03:04:35.574876Z'
 published: '2021-01-13T21:57:00.941902Z'
 references:
 - type: REPORT
@@ -26,3 +28,4 @@ affected:
   ecosystem_specific:
     fixed_range: 73cbbfc551e814f7598e02924f0728e3abff1818:0081a51a3df7ec30da22402fe878be61790ab721
     severity: MEDIUM
+  versions: []

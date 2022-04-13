@@ -3,12 +3,14 @@ summary: Use-of-uninitialized-value in float64_squash_input_denormal_aarch64eb
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=17032
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   float64_squash_input_denormal_aarch64eb
   float64_to_float32_aarch64eb
   helper_vfp_fcvtsd_aarch64eb
-modified: '2021-06-21T06:56:25.293940Z'
+  ```
+modified: '2022-04-13T03:04:39.249649Z'
 published: '2020-07-28T00:00:12.342145Z'
 references:
 - type: REPORT

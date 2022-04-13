@@ -3,12 +3,14 @@ summary: Use-of-uninitialized-value in pcpp::SSLCertificateRequestMessage::SSLCe
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22513
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   pcpp::SSLCertificateRequestMessage::SSLCertificateRequestMessage
   pcpp::SSLHandshakeMessage::createHandhakeMessage
   pcpp::SSLHandshakeLayer::SSLHandshakeLayer
-modified: '2021-06-23T06:28:22.799719Z'
+  ```
+modified: '2022-04-13T03:04:38.691127Z'
 published: '2020-07-22T21:50:05.088004Z'
 references:
 - type: REPORT
@@ -24,5 +26,6 @@ affected:
     - introduced: 4366d2f86bf105025765a0ce3db6e647ba0f3508
     - fixed: 50aab202d24331ef35b9eff68d96ef9f97baf6a1
   ecosystem_specific:
-    severity: MEDIUM
     introduced_range: unknown:4366d2f86bf105025765a0ce3db6e647ba0f3508
+    severity: MEDIUM
+  versions: []

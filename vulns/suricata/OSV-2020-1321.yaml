@@ -3,12 +3,14 @@ summary: UNKNOWN READ in FlowGetHash
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21479
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   FlowGetHash
   FlowSetupPacket
   DecodeICMPV4
-modified: '2021-06-23T06:25:28.996694Z'
+  ```
+modified: '2022-04-13T03:04:32.748792Z'
 published: '2020-07-22T21:50:06.291563Z'
 references:
 - type: REPORT
@@ -24,5 +26,6 @@ affected:
     - introduced: 19fe8d9894207f18dbd305a5834820f3a698dc32
     - fixed: 8cbae1371f18d1427244f18fe2110256496a9f9f
   ecosystem_specific:
-    severity: MEDIUM
     introduced_range: unknown:19fe8d9894207f18dbd305a5834820f3a698dc32
+    severity: MEDIUM
+  versions: []

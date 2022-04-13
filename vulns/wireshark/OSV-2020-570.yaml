@@ -3,12 +3,14 @@ summary: Global-buffer-overflow in decode_tlv
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13542
 
+  ```
   Crash type: Global-buffer-overflow READ 4
   Crash state:
   decode_tlv
   dissect_noe
   call_dissector_work
-modified: '2021-03-09T04:49:05.958962Z'
+  ```
+modified: '2022-04-13T03:04:37.816713Z'
 published: '2020-07-01T00:00:17.578359Z'
 references:
 - type: REPORT
@@ -23,3 +25,4 @@ affected:
     events:
     - introduced: 00318b3267c22528134ffefa026f9a46abc3f5f9
     - fixed: b8b582af3d54b924c6ae89cfaaa47ce1cbd3c958
+  versions: []

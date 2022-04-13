@@ -3,12 +3,14 @@ summary: Stack-buffer-overflow in ot::StringFind
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=36830
 
+  ```
   Crash type: Stack-buffer-overflow READ 1
   Crash state:
   ot::StringFind
   ot::Coap::Message::AppendUriPathOptions
   otCoapMessageAppendUriPathOptions
-modified: '2021-08-05T00:00:36.874925Z'
+  ```
+modified: '2022-04-13T03:04:38.826141Z'
 published: '2021-08-05T00:00:36.874659Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: d4005f9d14f8e156bbde563186f73f60e91c5872
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

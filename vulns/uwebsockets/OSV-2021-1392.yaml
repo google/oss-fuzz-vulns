@@ -4,12 +4,14 @@ summary: Container-overflow in std::__1::__function::__func<uWS::TemplatedApp<fa
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=39354
 
+  ```
   Crash type: Container-overflow READ 1
   Crash state:
   std::__1::__function::__func<uWS::TemplatedApp<false>&& uWS::TemplatedApp<false>
   uWS::TopicTree<uWS::TopicTreeMessage>::publish
   ofats::any_detail::handler_traits<void, uWS::WebSocket<false, true, test
-modified: '2021-09-28T00:01:42.603165Z'
+  ```
+modified: '2022-04-13T03:04:41.041539Z'
 published: '2021-09-28T00:01:42.602963Z'
 references:
 - type: REPORT

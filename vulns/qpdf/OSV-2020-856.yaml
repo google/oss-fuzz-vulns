@@ -3,12 +3,14 @@ summary: Use-of-uninitialized-value in deflate_slow
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18745
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   deflate_slow
   deflate
   Pl_Flate::handleData
-modified: '2021-06-21T06:56:19.316621Z'
+  ```
+modified: '2022-04-13T03:04:31.549307Z'
 published: '2020-07-14T22:13:46.996334Z'
 references:
 - type: REPORT

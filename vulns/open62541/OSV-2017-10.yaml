@@ -3,12 +3,14 @@ summary: Heap-use-after-free in UA_Subscription_answerPublishRequestsNoSubscript
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=4097
 
+  ```
   Crash type: Heap-use-after-free READ 8
   Crash state:
   UA_Subscription_answerPublishRequestsNoSubscription
   UA_Server_run_shutdown
   _start
-modified: '2021-06-21T06:56:26.797621Z'
+  ```
+modified: '2022-04-13T03:04:41.303920Z'
 published: '2021-01-13T00:00:22.415687Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: d9208207e458a973e481ded5f7c2cf765dd7ea4c
   ecosystem_specific:
     severity: HIGH
+  versions: []

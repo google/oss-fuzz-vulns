@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in des_ede3_wrap
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30847
 
+  ```
   Crash type: Heap-buffer-overflow WRITE 8
   Crash state:
   des_ede3_wrap
   tdes_wrap_cipher_internal
   tdes_wrap_cipher
-modified: '2021-06-23T06:25:45.365678Z'
+  ```
+modified: '2022-04-13T03:04:35.077314Z'
 published: '2021-02-13T00:00:16.616574Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
   ecosystem_specific:
     introduced_range: 5fdf7b2e3fe603a879d3f3a06083aeccb59f7b46:04fefea284821610af211cabc4a805bc52e2b770
     severity: HIGH
+  versions: []

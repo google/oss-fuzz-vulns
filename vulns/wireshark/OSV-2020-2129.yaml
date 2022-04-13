@@ -3,12 +3,14 @@ summary: Heap-double-free in wmem_simple_free_all
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26952
 
+  ```
   Crash type: Heap-double-free
   Crash state:
   wmem_simple_free_all
   wmem_leave_packet_scope
   fuzzshark.c
-modified: '2021-06-21T06:56:24.015549Z'
+  ```
+modified: '2022-04-13T03:04:37.774569Z'
 published: '2020-11-05T00:00:51.605889Z'
 references:
 - type: REPORT

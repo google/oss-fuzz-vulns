@@ -3,12 +3,14 @@ summary: Use-of-uninitialized-value in llvm_ks::isIntN
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22920
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   llvm_ks::isIntN
   X86AsmBackend::applyFixup
   llvm_ks::MCAssembler::layout
-modified: '2021-06-21T06:56:24.141645Z'
+  ```
+modified: '2022-04-13T03:04:37.916410Z'
 published: '2020-07-14T05:37:49.656443Z'
 references:
 - type: REPORT

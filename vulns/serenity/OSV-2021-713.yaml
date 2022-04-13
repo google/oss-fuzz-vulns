@@ -3,12 +3,14 @@ summary: Heap-use-after-free in AK::StringView::StringView
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=33852
 
+  ```
   Crash type: Heap-use-after-free READ 8
   Crash state:
   AK::StringView::StringView
   void AK::__format_value<AK::String>
   AK::vformat_impl
-modified: '2021-06-21T06:56:19.895832Z'
+  ```
+modified: '2022-04-13T03:04:32.258179Z'
 published: '2021-05-02T00:00:26.435557Z'
 references:
 - type: REPORT
@@ -24,3 +26,4 @@ affected:
     - introduced: 3048274f5efdb5a02407d021338faa6770ac5280
   ecosystem_specific:
     severity: HIGH
+  versions: []

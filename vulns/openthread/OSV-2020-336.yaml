@@ -3,12 +3,14 @@ summary: Stack-buffer-overflow in ot::NetworkData::PrefixTlv::Init
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=12589
 
+  ```
   Crash type: Stack-buffer-overflow READ {*}
   Crash state:
   ot::NetworkData::PrefixTlv::Init
   ot::NetworkData::Local::AddOnMeshPrefix
   otError ot::Ncp::NcpBase::HandlePropertyInsert<
-modified: '2021-06-21T06:56:25.010921Z'
+  ```
+modified: '2022-04-13T03:04:38.935999Z'
 published: '2020-07-01T00:00:03.773709Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: a00c53883001654444f45db8c15aff38e15b4a04
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

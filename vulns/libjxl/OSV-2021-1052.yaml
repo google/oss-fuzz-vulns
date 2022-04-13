@@ -3,12 +3,14 @@ summary: Use-of-uninitialized-value in jxl::N_AVX2::UpsampleRect
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=36497
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   jxl::N_AVX2::UpsampleRect
   jxl::Upsampler::UpsampleRect
   jxl::FinalizeImageRect
-modified: '2021-07-25T00:00:12.369767Z'
+  ```
+modified: '2022-04-13T03:04:41.796132Z'
 published: '2021-07-25T00:00:12.369578Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: b4c01782212931014c603d337d762174a742c5b6
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

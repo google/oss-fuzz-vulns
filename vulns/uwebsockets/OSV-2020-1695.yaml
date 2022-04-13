@@ -3,12 +3,14 @@ summary: Stack-buffer-overflow in uWS::TopicTree::trimTree
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25381
 
+  ```
   Crash type: Stack-buffer-overflow WRITE 8
   Crash state:
   uWS::TopicTree::trimTree
   uWS::TopicTree::unsubscribeAll
   TopicTree.cpp
-modified: '2021-06-21T06:56:26.554807Z'
+  ```
+modified: '2022-04-13T03:04:40.998047Z'
 published: '2020-09-04T00:00:08.299412Z'
 references:
 - type: REPORT

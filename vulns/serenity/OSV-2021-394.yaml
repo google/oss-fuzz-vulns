@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in Crypto::der_decode_sequence
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30906
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   Crypto::der_decode_sequence
   Crypto::PK::RSA::parse_rsa_key
   FuzzRSAKeyParsing.cpp
-modified: '2021-06-21T06:56:19.810798Z'
+  ```
+modified: '2022-04-13T03:04:32.155419Z'
 published: '2021-02-14T00:01:02.208971Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 3fe7ac0924ada70faaf27636b6e0f40bcde24f77
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

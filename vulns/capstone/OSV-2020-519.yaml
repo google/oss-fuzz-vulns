@@ -3,12 +3,14 @@ summary: Use-of-uninitialized-value in MOS65XX_group_name
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15112
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   MOS65XX_group_name
   cs_group_name
   fuzz_disasm.c
-modified: '2021-06-21T06:56:25.681502Z'
+  ```
+modified: '2022-04-13T03:04:39.894964Z'
 published: '2020-07-01T00:00:14.210861Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 3fc1d8ed86084f281583b074d86dc992cb9558c9
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

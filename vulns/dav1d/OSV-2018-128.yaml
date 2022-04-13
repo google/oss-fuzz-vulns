@@ -3,12 +3,14 @@ summary: Use-of-uninitialized-value in iclip
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11392
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   iclip
   avg_c
   dav1d_recon_b_inter_16bpc
-modified: '2021-06-23T06:28:49.146232Z'
+  ```
+modified: '2022-04-13T03:04:39.796293Z'
 published: '2021-01-13T00:00:57.531193Z'
 references:
 - type: REPORT
@@ -27,3 +29,4 @@ affected:
     severity: MEDIUM
     fixed_range: ec53ec6d5b4ebbb06d5c7209fd4f25634a6ad606:a6b94ca9e5cded0070419a02d9cadaa5f45b2d0d
     introduced_range: 4a646a0ca25a22a809bfcb743332f6b6646d86a3:ec53ec6d5b4ebbb06d5c7209fd4f25634a6ad606
+  versions: []

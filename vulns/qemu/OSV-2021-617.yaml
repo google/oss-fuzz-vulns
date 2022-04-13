@@ -3,11 +3,13 @@ summary: Stack-use-after-return in v9fs_setattr
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=32995
 
+  ```
   Crash type: Stack-use-after-return READ 4
   Crash state:
   v9fs_setattr
   coroutine_trampoline
-modified: '2021-08-25T00:19:38.671294Z'
+  ```
+modified: '2022-04-13T03:04:33.281599Z'
 published: '2021-04-09T00:00:27.093027Z'
 references:
 - type: REPORT

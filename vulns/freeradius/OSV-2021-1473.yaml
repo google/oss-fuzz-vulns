@@ -3,12 +3,14 @@ summary: Global-buffer-overflow in fr_unix_time_from_tm
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=40118
 
+  ```
   Crash type: Global-buffer-overflow READ 2
   Crash state:
   fr_unix_time_from_tm
   fr_unix_time_from_str
   fr_value_box_from_str
-modified: '2021-10-21T00:01:32.674929Z'
+  ```
+modified: '2022-04-13T03:04:40.131117Z'
 published: '2021-10-21T00:01:32.674721Z'
 references:
 - type: REPORT

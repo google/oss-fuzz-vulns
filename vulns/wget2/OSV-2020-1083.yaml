@@ -3,12 +3,14 @@ summary: Heap-use-after-free in rpl_glob
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20176
 
+  ```
   Crash type: Heap-use-after-free READ {*}
   Crash state:
   rpl_glob
   read_config_expand
   read_config_expand
-modified: '2021-06-23T06:30:09.541219Z'
+  ```
+modified: '2022-04-13T03:04:41.737685Z'
 published: '2020-07-22T21:49:45.883645Z'
 references:
 - type: REPORT
@@ -26,3 +28,4 @@ affected:
   ecosystem_specific:
     introduced_range: unknown:59d9ecd9c0a9411c9b02185e49637396a77bd205
     severity: HIGH
+  versions: []

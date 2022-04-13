@@ -3,12 +3,14 @@ summary: Use-of-uninitialized-value in ihevc_deblk_luma_vert_ssse3
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=17009
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   ihevc_deblk_luma_vert_ssse3
   ihevcd_deblk_ctb
   ihevcd_process
-modified: '2021-11-22T06:26:50.521054Z'
+  ```
+modified: '2022-04-13T03:04:31.038198Z'
 published: '2020-07-22T21:50:02.950786Z'
 references:
 - type: REPORT
@@ -47,5 +49,5 @@ affected:
   - android-mainline-10.0.0_r7
   - android-mainline-10.0.0_r9
   ecosystem_specific:
-    severity: MEDIUM
     introduced_range: unknown:d28f2210ee8e65afdfb07a1fd6582285d3d178e0
+    severity: MEDIUM

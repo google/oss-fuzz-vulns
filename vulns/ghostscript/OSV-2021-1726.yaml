@@ -3,12 +3,14 @@ summary: UNKNOWN READ in pdfi_dereference
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42616
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   pdfi_dereference
   pdfi_deref_loop_detect
   pdfi_dict_get
-modified: '2021-12-20T00:02:16.105176Z'
+  ```
+modified: '2022-04-13T03:04:34.481346Z'
 published: '2021-12-20T00:02:16.104976Z'
 references:
 - type: REPORT

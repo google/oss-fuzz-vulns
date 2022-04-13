@@ -3,12 +3,14 @@ summary: Stack-buffer-overflow in fmt_setup
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22507
 
+  ```
   Crash type: Stack-buffer-overflow WRITE 1
   Crash state:
   fmt_setup
   mrb_str_format
   mrb_f_sprintf
-modified: '2021-06-21T06:56:25.595832Z'
+  ```
+modified: '2022-04-13T03:04:39.744094Z'
 published: '2020-06-24T01:51:10.171293Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 15c63688e3f1a3c6067e6af70e3e9bf999d91389
   ecosystem_specific:
     severity: HIGH
+  versions: []

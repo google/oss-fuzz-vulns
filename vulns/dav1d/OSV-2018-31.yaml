@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in emu_edge_c
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11389
 
+  ```
   Crash type: Heap-buffer-overflow READ 2
   Crash state:
   emu_edge_c
   warp_affine
   dav1d_recon_b_inter_8bpc
-modified: '2021-06-23T06:28:53.597167Z'
+  ```
+modified: '2022-04-13T03:04:39.838451Z'
 published: '2021-01-13T00:00:13.344740Z'
 references:
 - type: REPORT
@@ -24,5 +26,6 @@ affected:
     - introduced: 7ef74ca1005785f0791874d52217aecc76f190cd
     - fixed: cf9ec49ac7d0c766ea88ea801c0831bca3e663a9
   ecosystem_specific:
-    severity: MEDIUM
     introduced_range: 4a646a0ca25a22a809bfcb743332f6b6646d86a3:ec53ec6d5b4ebbb06d5c7209fd4f25634a6ad606
+    severity: MEDIUM
+  versions: []

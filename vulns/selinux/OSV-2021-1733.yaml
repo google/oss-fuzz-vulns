@@ -3,12 +3,14 @@ summary: UNKNOWN READ in mls_semantic_level_expand
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42729
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   mls_semantic_level_expand
   policydb_user_cache
   hashtab_map
-modified: '2021-12-22T00:00:12.409511Z'
+  ```
+modified: '2022-04-13T03:04:42.300750Z'
 published: '2021-12-22T00:00:12.409265Z'
 references:
 - type: REPORT

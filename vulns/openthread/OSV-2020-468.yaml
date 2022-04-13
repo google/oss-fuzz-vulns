@@ -3,12 +3,14 @@ summary: Stack-buffer-overflow in ot::Ip6::Address::FromString
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14821
 
+  ```
   Crash type: Stack-buffer-overflow WRITE 1
   Crash state:
   ot::Ip6::Address::FromString
   ot::Cli::Coap::ProcessRequest
   ot::Cli::Interpreter::ProcessCoap
-modified: '2021-06-21T06:56:24.960608Z'
+  ```
+modified: '2022-04-13T03:04:38.893804Z'
 published: '2020-07-01T00:00:11.286088Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 8bb50d4ccde667295f892f976ee5ff90ba4a4a2f
   ecosystem_specific:
     severity: HIGH
+  versions: []

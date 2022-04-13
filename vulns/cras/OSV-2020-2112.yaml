@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in ccr_handle_message_from_client
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26739
 
+  ```
   Crash type: Heap-buffer-overflow READ {*}
   Crash state:
   ccr_handle_message_from_client
   cras_rclient_buffer_from_client
   rclient_message.cc
-modified: '2021-06-21T06:56:27.902770Z'
+  ```
+modified: '2022-04-13T03:04:42.587032Z'
 published: '2020-10-31T00:00:32.556884Z'
 references:
 - type: REPORT
@@ -26,3 +28,4 @@ affected:
     - introduced: e5482ce00f51003ea4642f6c722d1f46fff9a573
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

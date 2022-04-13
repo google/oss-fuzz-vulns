@@ -3,12 +3,14 @@ summary: Negative-size-param in parquet::PlainByteArrayDecoder::DecodeArrowDense
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20669
 
+  ```
   Crash type: Negative-size-param
   Crash state:
   parquet::PlainByteArrayDecoder::DecodeArrowDense
   parquet::PlainByteArrayDecoder::DecodeArrow
   parquet::internal::ByteArrayChunkedRecordReader::ReadValuesSpaced
-modified: '2021-03-09T04:49:05.168933Z'
+  ```
+modified: '2022-04-13T03:04:32.019256Z'
 published: '2020-06-24T01:51:15.244409Z'
 references:
 - type: REPORT
@@ -23,3 +25,4 @@ affected:
     events:
     - introduced: 431fdbfbc0fb4bb16c4a89298404ad16784db2a0
     - fixed: d2ab289294f5eaa175e6bc4ab5fb74b5ea013f6e
+  versions: []

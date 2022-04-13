@@ -3,12 +3,14 @@ summary: Dynamic-stack-buffer-overflow in mdb_numeric_to_string
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=36187
 
+  ```
   Crash type: Dynamic-stack-buffer-overflow WRITE 16
   Crash state:
   mdb_numeric_to_string
   mdb_xfer_bound_data
   _mdb_attempt_bind
-modified: '2021-07-15T00:00:10.906417Z'
+  ```
+modified: '2022-04-13T03:04:38.141935Z'
 published: '2021-07-15T00:00:10.906210Z'
 references:
 - type: REPORT

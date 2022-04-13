@@ -3,12 +3,14 @@ summary: Heap-double-free in read_config
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=45687
 
+  ```
   Crash type: Heap-double-free
   Crash state:
   read_config
   flb_cf_fluentbit_create
   flb_cf_create_from_file
-modified: '2022-03-19T00:01:34.875655Z'
+  ```
+modified: '2022-04-13T03:04:38.402999Z'
 published: '2022-03-19T00:01:34.875264Z'
 references:
 - type: REPORT

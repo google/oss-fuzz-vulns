@@ -3,12 +3,14 @@ summary: UNKNOWN READ in __msan_memcpy.part.51
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=9801
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   __msan_memcpy.part.51
   gvs_read_unaligned_le
   gvs_variable_sized_array_is_normal
-modified: '2021-06-23T06:25:23.664942Z'
+  ```
+modified: '2022-04-13T03:04:32.533533Z'
 published: '2021-01-13T00:00:04.818178Z'
 references:
 - type: REPORT
@@ -30,5 +32,5 @@ affected:
   - 2.58.2
   - 2.58.3
   ecosystem_specific:
-    severity: MEDIUM
     introduced_range: 8defa46e6ec16aa3722aa0ac0bc3db0fecd86c45:0d271223d894e9c69b7fa6b7983511f8ad770682
+    severity: MEDIUM

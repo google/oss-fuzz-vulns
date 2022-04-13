@@ -3,12 +3,14 @@ summary: Segv on unknown address in chunk_obj_alloc
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42633
 
+  ```
   Crash type: Segv on unknown address
   Crash state:
   chunk_obj_alloc
   chunk_alloc_bytes
   pdfi_pscript_interpret
-modified: '2021-12-20T00:01:59.846405Z'
+  ```
+modified: '2022-04-13T03:04:34.322322Z'
 published: '2021-12-20T00:01:59.846207Z'
 references:
 - type: REPORT

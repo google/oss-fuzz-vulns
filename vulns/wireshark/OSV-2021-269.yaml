@@ -3,12 +3,14 @@ summary: Stack-use-after-return in sta_prop_equal_fn
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30192
 
+  ```
   Crash type: Stack-use-after-return READ 6
   Crash state:
   sta_prop_equal_fn
   wmem_map_insert
   dissect_ieeeNUMBER_common
-modified: '2021-03-10T12:00:46.310796Z'
+  ```
+modified: '2022-04-13T03:04:37.801763Z'
 published: '2021-02-04T00:00:11.295257Z'
 references:
 - type: REPORT
@@ -23,3 +25,4 @@ affected:
     events:
     - introduced: fb2a0b4a71b134a2830e39b6493a4007818ceda6
     - fixed: 910c489a4a77b297052873be2e018bc98f0f77be
+  versions: []

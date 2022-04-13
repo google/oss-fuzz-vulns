@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in virtual thunk to parquet::ByteStreamSplitDecode
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21453
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   virtual thunk to parquet::ByteStreamSplitDecoder<parquet::PhysicalType<
   parquet::TypedDecoder<parquet::PhysicalType<
   parquet::internal::TypedRecordReader<parquet::PhysicalType<
-modified: '2021-06-21T06:56:19.565077Z'
+  ```
+modified: '2022-04-13T03:04:31.866912Z'
 published: '2020-06-24T01:51:09.174614Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: faf9bc011cb452e9def7dcd63dd3a0f6ec823534
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

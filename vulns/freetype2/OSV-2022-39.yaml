@@ -3,12 +3,14 @@ summary: Stack-buffer-overflow in BZ2_decompress
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=43564
 
+  ```
   Crash type: Stack-buffer-overflow READ 1
   Crash state:
   BZ2_decompress
   BZ2_bzDecompress
   ft_bzip2_file_fill_output
-modified: '2022-01-14T00:00:06.951940Z'
+  ```
+modified: '2022-04-13T03:04:34.905281Z'
 published: '2022-01-14T00:00:06.951694Z'
 references:
 - type: REPORT

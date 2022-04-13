@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in SHA1Transform
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18742
 
+  ```
   Crash type: Heap-buffer-overflow READ 4
   Crash state:
   SHA1Transform
   SHA1Update
   getSSCertificateFingerprint
-modified: '2021-06-23T06:26:04.966298Z'
+  ```
+modified: '2022-04-13T03:04:36.231830Z'
 published: '2020-07-22T21:49:45.433131Z'
 references:
 - type: REPORT
@@ -26,3 +28,4 @@ affected:
   ecosystem_specific:
     introduced_range: unknown:e695dd6eade754b2d50bdf297ca8bdc4105f93ff
     severity: MEDIUM
+  versions: []

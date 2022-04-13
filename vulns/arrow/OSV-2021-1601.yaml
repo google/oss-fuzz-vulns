@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in parquet::DeltaByteArrayDecoder::GetInternal
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=41221
 
+  ```
   Crash type: Heap-buffer-overflow WRITE 1
   Crash state:
   parquet::DeltaByteArrayDecoder::GetInternal
   parquet::DeltaByteArrayDecoder::DecodeArrow
   parquet::internal::ByteArrayChunkedRecordReader::ReadValuesSpaced
-modified: '2021-11-22T00:00:06.055505Z'
+  ```
+modified: '2022-04-13T03:04:32.077733Z'
 published: '2021-11-22T00:00:06.055274Z'
 references:
 - type: REPORT

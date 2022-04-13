@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in xsltFormatNumberConversion
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=17171
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   xsltFormatNumberConversion
   xsltFormatNumberFunction
   xmlXPathCompOpEval
-modified: '2021-06-23T06:25:31.007988Z'
+  ```
+modified: '2022-04-13T03:04:33.769202Z'
 published: '2020-07-22T21:49:49.395683Z'
 references:
 - type: REPORT
@@ -24,5 +26,6 @@ affected:
     - introduced: 7f56378a73af8a61da78b8091f0e317316cee300
     - fixed: e1f8d2e6eb1167fd51eb5b8c99d2d40c37299897
   ecosystem_specific:
-    severity: MEDIUM
     introduced_range: unknown:7f56378a73af8a61da78b8091f0e317316cee300
+    severity: MEDIUM
+  versions: []

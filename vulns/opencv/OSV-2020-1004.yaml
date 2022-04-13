@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in gtTileSeparate
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13280
 
+  ```
   Crash type: Heap-buffer-overflow READ 4
   Crash state:
   gtTileSeparate
   TIFFReadRGBATileExt
   cv::TiffDecoder::readData
-modified: '2021-11-23T22:27:44.914994Z'
+  ```
+modified: '2022-04-13T03:04:31.531266Z'
 published: '2020-07-22T21:49:39.484722Z'
 references:
 - type: REPORT

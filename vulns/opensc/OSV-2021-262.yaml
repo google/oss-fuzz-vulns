@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in sc_pkcs15emu_oberthur_add_data
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30112
 
+  ```
   Crash type: Heap-buffer-overflow READ {*}
   Crash state:
   sc_pkcs15emu_oberthur_add_data
   sc_oberthur_parse_privateinfo
   sc_pkcs15emu_oberthur_init
-modified: '2021-06-21T06:56:27.101Z'
+  ```
+modified: '2022-04-13T03:04:41.618920Z'
 published: '2021-02-02T00:00:59.070801Z'
 references:
 - type: REPORT

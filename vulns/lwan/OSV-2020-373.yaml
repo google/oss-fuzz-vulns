@@ -3,12 +3,14 @@ summary: UNKNOWN READ in url_decode
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14501
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   url_decode
   parse_key_values
   fuzz_parse_http_request
-modified: '2021-06-21T06:56:19.445201Z'
+  ```
+modified: '2022-04-13T03:04:31.715630Z'
 published: '2020-07-01T00:00:05.814415Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 341dca6b2594eea98df73dcdb96bb80b6ccc9fb9
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

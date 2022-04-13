@@ -3,12 +3,14 @@ summary: Container-overflow in Exiv2::Photoshop::locateIrb
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=45302
 
+  ```
   Crash type: Container-overflow READ 4
   Crash state:
   Exiv2::Photoshop::locateIrb
   Exiv2::Photoshop::setIptcIrb
   Exiv2::JpegBase::doWriteMetadata
-modified: '2022-03-08T00:00:07.482676Z'
+  ```
+modified: '2022-04-13T03:04:39.309960Z'
 published: '2022-03-08T00:00:07.482401Z'
 references:
 - type: REPORT

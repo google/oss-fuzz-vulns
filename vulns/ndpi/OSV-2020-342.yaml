@@ -3,12 +3,14 @@ summary: UNKNOWN READ in ndpi_search_kerberos
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=19175
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   ndpi_search_kerberos
   check_ndpi_tcp_flow_func
   ndpi_detection_process_packet
-modified: '2021-06-21T06:56:22.607906Z'
+  ```
+modified: '2022-04-13T03:04:36.090661Z'
 published: '2020-07-01T00:00:04.127415Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 23b0b8625d1f20596b2b20a149fb28c38046f4e1
   ecosystem_specific:
     severity: HIGH
+  versions: []

@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in geos::operation::valid::PolygonNode::isInterior
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=38922
 
+  ```
   Crash type: Heap-buffer-overflow READ 8
   Crash state:
   geos::operation::valid::PolygonNode::isInteriorSegment
   geos::operation::valid::PolygonTopologyAnalyzer::isSegmentInRing
   geos::operation::valid::IsValidOp::checkHolesOutsideShell
-modified: '2021-09-19T00:00:07.078029Z'
+  ```
+modified: '2022-04-13T03:04:36.757432Z'
 published: '2021-09-19T00:00:07.077782Z'
 references:
 - type: REPORT

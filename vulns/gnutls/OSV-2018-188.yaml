@@ -3,12 +3,14 @@ summary: Use-of-uninitialized-value in _decode_pkcs12_auth_safe
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=10138
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   _decode_pkcs12_auth_safe
   gnutls_pkcs12_get_bag
   gnutls_pkcs12_simple_parse
-modified: '2021-06-23T07:00:14.673326Z'
+  ```
+modified: '2022-04-13T03:04:35.641785Z'
 published: '2021-01-13T00:01:19.024161Z'
 references:
 - type: REPORT
@@ -43,5 +45,5 @@ affected:
   - 3.6.16
   ecosystem_specific:
     fixed_range: d165c2a37f7d072cc88db88ec97f057a9ac6e4aa:f6b4695ccafd6945cc7affda4ab9f7b9f9ed8616
-    severity: MEDIUM
     introduced_range: 5333d20ce6f14229f6579086b57de0eeacedd4fa:90a71b2e53e9696bd4c07ff98a12d06ecd2e424d
+    severity: MEDIUM

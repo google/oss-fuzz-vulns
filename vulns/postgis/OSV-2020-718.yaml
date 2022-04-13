@@ -3,12 +3,14 @@ summary: UNKNOWN READ in double_from_wkb_state
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18153
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   double_from_wkb_state
   ptarray_from_wkb_state
   lwline_from_wkb_state
-modified: '2021-06-21T06:56:25.412635Z'
+  ```
+modified: '2022-04-13T03:04:39.452898Z'
 published: '2020-07-01T00:00:26.532203Z'
 references:
 - type: REPORT

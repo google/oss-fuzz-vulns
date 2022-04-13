@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in surround51_to_stereo_downmix_mtx
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20163
 
+  ```
   Crash type: Heap-buffer-overflow WRITE 4
   Crash state:
   surround51_to_stereo_downmix_mtx
   cras_fmt_conv_create
   config_format_converter
-modified: '2021-06-23T06:31:02.397823Z'
+  ```
+modified: '2022-04-13T03:04:42.592497Z'
 published: '2020-07-22T21:49:37.746028Z'
 references:
 - type: REPORT
@@ -26,3 +28,4 @@ affected:
   ecosystem_specific:
     severity: HIGH
     introduced_range: unknown:5529a730601bcc81f64ddec83469e1ef348c8f7c
+  versions: []

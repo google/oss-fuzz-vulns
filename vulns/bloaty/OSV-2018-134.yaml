@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in bloaty::DisassembleFindReferences
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=5873
 
+  ```
   Crash type: Heap-buffer-overflow READ 4
   Crash state:
   bloaty::DisassembleFindReferences
   bloaty::ReadELFSymbols
   bloaty::ReadELFSymbols
-modified: '2021-06-21T06:56:22.423874Z'
+  ```
+modified: '2022-04-13T03:04:35.762718Z'
 published: '2021-01-13T00:00:59.023336Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 18384d6c6cbb666d08d08c0dabc4a0d1b7623f6f
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

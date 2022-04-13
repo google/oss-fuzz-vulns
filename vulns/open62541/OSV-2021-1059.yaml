@@ -3,12 +3,14 @@ summary: Use-of-uninitialized-value in fuzz_json_decode_encode.cc
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=36502
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   fuzz_json_decode_encode.cc
   UA_ByteString_allocBuffer
   fuzz_json_decode_encode.cc
-modified: '2021-07-25T00:01:28.049853Z'
+  ```
+modified: '2022-04-13T03:04:41.405020Z'
 published: '2021-07-25T00:01:28.049657Z'
 references:
 - type: REPORT

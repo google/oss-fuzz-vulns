@@ -3,12 +3,14 @@ summary: Index-out-of-bounds in parse_exp
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22925
 
+  ```
   Crash type: Index-out-of-bounds
   Crash state:
   parse_exp
   parse_branch
   parse_alts
-modified: '2021-06-23T06:29:46.655159Z'
+  ```
+modified: '2022-04-13T03:04:40.943207Z'
 published: '2020-06-24T01:51:11.960925Z'
 references:
 - type: REPORT
@@ -26,3 +28,4 @@ affected:
   ecosystem_specific:
     introduced_range: efa4e3afb3926b2899e09a0d7c73bc7914e30c3a:bcccd7929f794d3ab5cb59c9fb1146322cd5510b
     severity: MEDIUM
+  versions: []

@@ -3,12 +3,14 @@ summary: Stack-buffer-overflow in pdfi_read_cff_dict
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42298
 
+  ```
   Crash type: Stack-buffer-overflow WRITE 4
   Crash state:
   pdfi_read_cff_dict
   pdfi_read_cff_dict
   pdfi_read_cff_dict
-modified: '2021-12-14T00:01:48.327245Z'
+  ```
+modified: '2022-04-13T03:04:34.300508Z'
 published: '2021-12-14T00:01:48.327020Z'
 references:
 - type: REPORT

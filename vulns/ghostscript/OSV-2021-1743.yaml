@@ -3,12 +3,14 @@ summary: Stack-buffer-overflow in strncat
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42736
 
+  ```
   Crash type: Stack-buffer-overflow WRITE {*}
   Crash state:
   strncat
   pdf_cmap_open_file
   pdfi_read_cmap
-modified: '2021-12-23T00:01:23.696901Z'
+  ```
+modified: '2022-04-13T03:04:34.554904Z'
 published: '2021-12-23T00:01:23.696684Z'
 references:
 - type: REPORT

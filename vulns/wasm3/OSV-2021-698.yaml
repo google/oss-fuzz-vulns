@@ -3,12 +3,14 @@ summary: UNKNOWN READ in m3_Realloc
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=33744
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   m3_Realloc
   InitMemory
   CompileBlockStatements
-modified: '2021-06-21T06:56:18.588412Z'
+  ```
+modified: '2022-04-13T03:04:30.686964Z'
 published: '2021-04-28T00:01:10.793206Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 6bb612ccbfd5f8993a07a99092fab534722df1c3
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

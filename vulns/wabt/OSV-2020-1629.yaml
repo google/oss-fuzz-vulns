@@ -3,12 +3,14 @@ summary: Segv on unknown address in wabt::BinaryReader::PrintError
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24992
 
+  ```
   Crash type: Segv on unknown address
   Crash state:
   wabt::BinaryReader::PrintError
   wabt::BinaryReader::ReadRelocSection
   wabt::BinaryReader::ReadCustomSection
-modified: '2021-03-09T04:49:05.362924Z'
+  ```
+modified: '2022-04-13T03:04:37.992103Z'
 published: '2020-08-19T00:00:06.787048Z'
 references:
 - type: REPORT

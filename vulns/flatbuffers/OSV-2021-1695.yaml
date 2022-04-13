@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in flexbuffers::Verifier::VerifyRef
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42373
 
+  ```
   Crash type: Heap-buffer-overflow READ 4
   Crash state:
   flexbuffers::Verifier::VerifyRef
   flexbuffers::Verifier::VerifyVector
   flexbuffers::Verifier::VerifyRef
-modified: '2021-12-15T00:00:06.478590Z'
+  ```
+modified: '2022-04-13T03:04:42.040710Z'
 published: '2021-12-15T00:00:06.478363Z'
 references:
 - type: REPORT

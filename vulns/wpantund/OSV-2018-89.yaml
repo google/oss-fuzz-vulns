@@ -3,12 +3,14 @@ summary: Heap-use-after-free in TunnelIPv6Interface::remove_address
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=10864
 
+  ```
   Crash type: Heap-use-after-free READ 4
   Crash state:
   TunnelIPv6Interface::remove_address
   nl::wpantund::NCPInstanceBase::unicast_address_was_removed
   nl::wpantund::NCPInstanceBase::on_mesh_prefix_was_removed
-modified: '2021-06-21T06:56:21.314461Z'
+  ```
+modified: '2022-04-13T03:04:33.923566Z'
 published: '2021-01-13T00:00:40.795012Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: bd1361434619a52b296e6a94c4188aae1a693179
   ecosystem_specific:
     severity: HIGH
+  versions: []

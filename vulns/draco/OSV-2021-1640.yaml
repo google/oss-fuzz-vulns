@@ -3,12 +3,14 @@ summary: Global-buffer-overflow in draco::MeshEdgebreakerDecoderImpl<draco::Mesh
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=41545
 
+  ```
   Crash type: Global-buffer-overflow READ 4
   Crash state:
   draco::MeshEdgebreakerDecoderImpl<draco::MeshEdgebreakerTraversalValenceDecoder>
   draco::MeshEdgebreakerDecoderImpl<draco::MeshEdgebreakerTraversalValenceDecoder>
   draco::MeshDecoder::DecodeGeometryData
-modified: '2021-12-02T00:01:06.640778Z'
+  ```
+modified: '2022-04-13T03:04:42.809572Z'
 published: '2021-12-02T00:01:06.640577Z'
 references:
 - type: REPORT

@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in mbc_case_fold
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21977
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   mbc_case_fold
   string_cmp_ic
   match_at
-modified: '2021-06-23T06:29:42.119639Z'
+  ```
+modified: '2022-04-13T03:04:40.931744Z'
 published: '2020-07-22T21:49:59.040421Z'
 references:
 - type: REPORT

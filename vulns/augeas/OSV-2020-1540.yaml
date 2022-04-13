@@ -3,12 +3,14 @@ summary: UNKNOWN READ in eval_expr
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23781
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   eval_expr
   eval_binary
   eval_expr
-modified: '2021-10-25T00:06:53.006279Z'
+  ```
+modified: '2022-04-13T03:04:34.141099Z'
 published: '2020-07-29T00:00:39.727472Z'
 references:
 - type: REPORT

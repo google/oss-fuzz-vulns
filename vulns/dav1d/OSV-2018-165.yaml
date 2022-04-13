@@ -3,12 +3,14 @@ summary: Use-of-uninitialized-value in imax
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11537
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   imax
   selfguided_filter
   selfguided_c
-modified: '2021-06-23T06:28:53.612950Z'
+  ```
+modified: '2022-04-13T03:04:39.848777Z'
 published: '2021-01-13T00:01:09.122049Z'
 references:
 - type: REPORT
@@ -26,3 +28,4 @@ affected:
   ecosystem_specific:
     fixed_range: be15be35336927caf3da6c10349b89ccf035552f:6d87752bbaa75c80a98db558386e46c59c7bbf6f
     severity: MEDIUM
+  versions: []

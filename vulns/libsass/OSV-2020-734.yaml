@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in Sass::Prelexer::quoted_string
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15890
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   Sass::Prelexer::quoted_string
   char const* Sass::Parser::lex<&
   Sass::Parser::parse_value_schema
-modified: '2021-06-21T06:56:24.529659Z'
+  ```
+modified: '2022-04-13T03:04:38.482266Z'
 published: '2020-07-01T00:00:27.416077Z'
 references:
 - type: REPORT

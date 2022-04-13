@@ -3,12 +3,14 @@ summary: Stack-buffer-overflow in coolkey_rsa_op
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22392
 
+  ```
   Crash type: Stack-buffer-overflow READ {*}
   Crash state:
   coolkey_rsa_op
   coolkey_compute_crypt
   sc_decipher
-modified: '2021-06-21T06:56:27.183614Z'
+  ```
+modified: '2022-04-13T03:04:41.701963Z'
 published: '2020-06-24T01:51:19.054921Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: b02da8348be97d4b24081783f6af46757373bc3e
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

@@ -3,12 +3,14 @@ summary: UNKNOWN READ in crc32
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15278
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   crc32
   update_crc
   push_data_ready
-modified: '2021-06-21T06:56:26.656229Z'
+  ```
+modified: '2022-04-13T03:04:41.162898Z'
 published: '2020-07-01T00:00:12.477818Z'
 references:
 - type: REPORT

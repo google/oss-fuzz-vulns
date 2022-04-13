@@ -3,12 +3,14 @@ summary: Negative-size-param in WebPRescalerInit
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=35583
 
+  ```
   Crash type: Negative-size-param
   Crash state:
   WebPRescalerInit
   AllocateAndInitRescaler
   VP8LDecodeImage
-modified: '2021-06-27T00:00:31.134683Z'
+  ```
+modified: '2022-04-13T03:04:41.775376Z'
 published: '2021-06-27T00:00:31.134360Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 277d30749f15d3fd99649c9347867ddc2fe4f32e
   ecosystem_specific:
     severity: null
+  versions: []

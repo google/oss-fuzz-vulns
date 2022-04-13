@@ -3,12 +3,14 @@ summary: Heap-use-after-free in ih264_inter_pred_luma_horz_hpel_vert_qpel_ssse3
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18595
 
+  ```
   Crash type: Heap-use-after-free READ 16
   Crash state:
   ih264_inter_pred_luma_horz_hpel_vert_qpel_ssse3
   ih264d_motion_compensate_mp
   ih264d_decode_recon_tfr_nmb
-modified: '2021-06-21T06:56:22.142045Z'
+  ```
+modified: '2022-04-13T03:04:35.375113Z'
 published: '2020-07-01T00:00:05.612589Z'
 references:
 - type: REPORT

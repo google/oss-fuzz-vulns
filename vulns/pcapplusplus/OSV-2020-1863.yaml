@@ -3,12 +3,14 @@ summary: Bad-cast to pcpp::Layer from invalid vptr
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26013
 
+  ```
   Crash type: Bad-cast
   Crash state:
   Bad-cast to pcpp::Layer from invalid vptr
   pcpp::IDnsResource::getRawData
   pcpp::DnsResource::getDataLength
-modified: '2021-06-23T06:28:20.212752Z'
+  ```
+modified: '2022-04-13T03:04:38.504701Z'
 published: '2020-09-28T00:00:15.902359Z'
 references:
 - type: REPORT
@@ -26,6 +28,6 @@ affected:
   versions:
   - v20.08
   ecosystem_specific:
+    introduced_range: cbe1ffdfe2deaf2fbdbae9c1c7927e083156c165:0376f65957378c9235f9f094cec7c655ab836f15
     severity: HIGH
     fixed_range: 86e3f4c47dab4a4380fd4e58da1952c29da8d26a:653e9b04b3248d782e8ceaace8cfc35ded1c024e
-    introduced_range: cbe1ffdfe2deaf2fbdbae9c1c7927e083156c165:0376f65957378c9235f9f094cec7c655ab836f15

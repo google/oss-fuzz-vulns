@@ -3,12 +3,14 @@ summary: Use-of-uninitialized-value in gx_dc_ht_colored_read
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21617
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   gx_dc_ht_colored_read
   clist_playback_band
   clist_playback_file_bands
-modified: '2021-06-23T06:25:38.180260Z'
+  ```
+modified: '2022-04-13T03:04:34.311396Z'
 published: '2020-09-29T00:00:38.635677Z'
 references:
 - type: REPORT
@@ -24,5 +26,6 @@ affected:
     - introduced: 668917a10e7eada030f7d2dddec9f579fddeed3d
     - fixed: b503c46c124cf5aaa82a71e28f624f2ef2b71e71
   ecosystem_specific:
-    severity: MEDIUM
     introduced_range: unknown:668917a10e7eada030f7d2dddec9f579fddeed3d
+    severity: MEDIUM
+  versions: []

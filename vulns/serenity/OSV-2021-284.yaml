@@ -3,10 +3,12 @@ summary: UNKNOWN READ in _fini
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30296
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   _fini
-modified: '2021-06-21T06:56:19.853629Z'
+  ```
+modified: '2022-04-13T03:04:32.216607Z'
 published: '2021-02-06T00:00:56.704817Z'
 references:
 - type: REPORT
@@ -23,3 +25,4 @@ affected:
     - fixed: 81c6d8e98ee240874ea36a85be6e7f4c05e15ff4
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

@@ -3,12 +3,14 @@ summary: Heap-double-free in bit_chain_free
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31724
 
+  ```
   Crash type: Heap-double-free
   Crash state:
   bit_chain_free
   dwg_encode_MTEXT
   dwg_encode_add_object
-modified: '2021-06-21T06:56:26.599766Z'
+  ```
+modified: '2022-04-13T03:04:41.065051Z'
 published: '2021-03-06T00:00:08.738235Z'
 references:
 - type: REPORT

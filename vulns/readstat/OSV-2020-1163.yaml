@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in readstat_convert
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=12566
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   readstat_convert
   sas7bcat_parse_value_labels
   sas7bcat_parse_block
-modified: '2021-06-23T06:29:25.638569Z'
+  ```
+modified: '2022-04-13T03:04:40.619015Z'
 published: '2020-07-22T21:49:52.343920Z'
 references:
 - type: REPORT
@@ -26,3 +28,4 @@ affected:
   ecosystem_specific:
     severity: MEDIUM
     introduced_range: unknown:d1bfd735515803800cb9708e3fca9e5c1e8e7a48
+  versions: []

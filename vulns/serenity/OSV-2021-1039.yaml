@@ -4,12 +4,14 @@ summary: Use-after-poison in AK::RefPtr<AK::StringImpl, AK::RefPtrTraits<AK::Str
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=36388
 
+  ```
   Crash type: Use-after-poison WRITE 8
   Crash state:
   AK::RefPtr<AK::StringImpl, AK::RefPtrTraits<AK::StringImpl> >::RefPtr
   AK::String::String
   JS::abstract_relation
-modified: '2021-07-22T00:01:20.343018Z'
+  ```
+modified: '2022-04-13T03:04:32.103963Z'
 published: '2021-07-22T00:01:20.342791Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - introduced: 94322ea985e6d570602f2b8b50cb1770be65d442
   ecosystem_specific:
     severity: HIGH
+  versions: []

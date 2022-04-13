@@ -3,12 +3,14 @@ summary: Use-of-uninitialized-value in piex::image_type_recognition::ContainsNik
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=38799
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   piex::image_type_recognition::ContainsNikonSignatures
   piex::image_type_recognition::NefTypeChecker::IsMyType
   piex::image_type_recognition::RecognizeRawImageTypeLite
-modified: '2021-09-17T00:00:35.215970Z'
+  ```
+modified: '2022-04-13T03:04:39.505395Z'
 published: '2021-09-17T00:00:35.215722Z'
 references:
 - type: REPORT

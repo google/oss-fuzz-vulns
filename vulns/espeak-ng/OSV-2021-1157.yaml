@@ -3,12 +3,14 @@ summary: Heap-use-after-free in TranslateRules
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=37410
 
+  ```
   Crash type: Heap-use-after-free READ 1
   Crash state:
   TranslateRules
   TranslateWord3
   TranslateWord
-modified: '2022-04-03T00:04:21.367558Z'
+  ```
+modified: '2022-04-13T03:04:34.194908Z'
 published: '2021-08-21T00:01:35.555020Z'
 references:
 - type: REPORT

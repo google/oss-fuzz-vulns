@@ -3,12 +3,14 @@ summary: Heap-use-after-free in dispatch_print_error
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=39212
 
+  ```
   Crash type: Heap-use-after-free READ 6
   Crash state:
   dispatch_print_error
   internal_exr_parse_header
   exr_start_read
-modified: '2021-09-26T00:00:10.966353Z'
+  ```
+modified: '2022-04-13T03:04:37.156631Z'
 published: '2021-09-26T00:00:10.966065Z'
 references:
 - type: REPORT

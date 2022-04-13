@@ -3,10 +3,12 @@ summary: UNKNOWN READ in jsoncharutils.h
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26859
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   jsoncharutils.h
-modified: '2021-06-21T06:56:19.190884Z'
+  ```
+modified: '2022-04-13T03:04:31.422219Z'
 published: '2020-11-02T00:00:43.118421Z'
 references:
 - type: REPORT
@@ -23,3 +25,4 @@ affected:
     - fixed: 0b82f071157db9848f45dd8cf07ced05c8eb8022
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

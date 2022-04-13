@@ -3,12 +3,14 @@ summary: Heap-use-after-free in destroy_op_array
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24567
 
+  ```
   Crash type: Heap-use-after-free READ 4
   Crash state:
   destroy_op_array
   fuzzer_do_request
   fuzzer_do_request_from_buffer
-modified: '2021-06-23T06:25:30.834744Z'
+  ```
+modified: '2022-04-13T03:04:33.384592Z'
 published: '2020-10-13T00:00:44.006560Z'
 references:
 - type: REPORT
@@ -26,3 +28,4 @@ affected:
   ecosystem_specific:
     fixed_range: 2dbb4ecfa1d7e32ccce6591158391a62cf4cbe2f:ec22e5aa3841770259161ff260da19b781af536e
     severity: HIGH
+  versions: []

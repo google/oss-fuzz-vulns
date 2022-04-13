@@ -3,11 +3,13 @@ summary: Heap-buffer-overflow in row_mt_worker_hook
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=44862
 
+  ```
   Crash type: Heap-buffer-overflow WRITE 4
   Crash state:
   row_mt_worker_hook
   thread_loop
-modified: '2022-02-21T00:00:46.102628Z'
+  ```
+modified: '2022-04-13T03:04:39.473707Z'
 published: '2022-02-21T00:00:46.102389Z'
 references:
 - type: REPORT

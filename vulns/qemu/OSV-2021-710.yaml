@@ -3,12 +3,14 @@ summary: Heap-use-after-free in iov_from_buf_full
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=33785
 
+  ```
   Crash type: Heap-use-after-free WRITE 2
   Crash state:
   iov_from_buf_full
   iov_from_buf
   virtio_net_receive_rcu
-modified: '2021-08-25T00:19:00.208672Z'
+  ```
+modified: '2022-04-13T03:04:33.326369Z'
 published: '2021-05-01T00:00:22.994253Z'
 references:
 - type: REPORT

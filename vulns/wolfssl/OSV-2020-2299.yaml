@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in ato16
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29103
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   ato16
   TLSX_CSR_Parse
   TLSX_Parse
-modified: '2021-06-23T06:25:59.038248Z'
+  ```
+modified: '2022-04-13T03:04:35.695657Z'
 published: '2020-12-31T00:01:21.746087Z'
 references:
 - type: REPORT
@@ -24,5 +26,6 @@ affected:
     - introduced: c482d160290c5cf314a3b10eba621dd37b6795a1
     - fixed: 209ad82df24e3c4b1c7a6e68206ba77e9fb1ce63
   ecosystem_specific:
-    fixed_range: 54f072fd8d591eebd9c800315a036e35f116f991:209ad82df24e3c4b1c7a6e68206ba77e9fb1ce63
     severity: MEDIUM
+    fixed_range: 54f072fd8d591eebd9c800315a036e35f116f991:209ad82df24e3c4b1c7a6e68206ba77e9fb1ce63
+  versions: []

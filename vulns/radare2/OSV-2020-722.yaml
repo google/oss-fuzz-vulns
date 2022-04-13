@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in r_buf_read
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15218
 
+  ```
   Crash type: Heap-buffer-overflow WRITE {*}
   Crash state:
   r_buf_read
   parse_function_starts
   init_items
-modified: '2021-06-21T06:56:23.163793Z'
+  ```
+modified: '2022-04-13T03:04:36.653138Z'
 published: '2020-07-01T00:00:26.690009Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 2ec8d3c9f2103c7da8bcb7d864db000b9e93a05a
   ecosystem_specific:
     severity: HIGH
+  versions: []

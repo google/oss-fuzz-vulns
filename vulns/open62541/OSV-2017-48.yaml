@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in Operation_addNode_finish
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=4183
 
+  ```
   Crash type: Heap-buffer-overflow READ 8
   Crash state:
   Operation_addNode_finish
   Service_AddNode
   UA_Server_processServiceOperations
-modified: '2021-06-21T06:56:26.803708Z'
+  ```
+modified: '2022-04-13T03:04:41.313990Z'
 published: '2021-01-13T21:56:09.508442Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 4ff3993542d66e3050beeb7351f339433239944e
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

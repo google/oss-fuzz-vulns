@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in pe_get_section_full_name
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=38952
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   pe_get_section_full_name
   pe__load
   yr_modules_load
-modified: '2021-09-20T00:00:16.641873Z'
+  ```
+modified: '2022-04-13T03:04:42.265452Z'
 published: '2021-09-20T00:00:16.641649Z'
 references:
 - type: REPORT

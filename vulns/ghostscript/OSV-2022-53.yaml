@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in mem_true24_fill_rectangle
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=43688
 
+  ```
   Crash type: Heap-buffer-overflow WRITE 4
   Crash state:
   mem_true24_fill_rectangle
   gx_dc_pure_fill_rectangle
   gx_default_fillpage
-modified: '2022-01-17T00:00:11.001907Z'
+  ```
+modified: '2022-04-13T03:04:34.496848Z'
 published: '2022-01-17T00:00:11.001652Z'
 references:
 - type: REPORT

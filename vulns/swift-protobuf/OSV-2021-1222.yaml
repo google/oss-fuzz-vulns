@@ -3,12 +3,14 @@ summary: Invalid-free in swift_unexpectedError
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=38323
 
+  ```
   Crash type: Invalid-free
   Crash state:
   swift_unexpectedError
   SwiftProtobuf.TextFormatEncodingVisitor.visitRepeatedMessageField<A where A: Swi
   merged protocol witness for SwiftProtobuf.Visitor.visitRepeatedEnumField<A where
-modified: '2021-09-11T00:00:12.263065Z'
+  ```
+modified: '2022-04-13T03:04:35.854242Z'
 published: '2021-09-11T00:00:12.261007Z'
 references:
 - type: REPORT
@@ -27,3 +29,4 @@ affected:
     severity: null
   database_specific:
     introduced_range: 1f62db409f2c9b0223a3f68567b4a01333aae778:e1943f3e70df8dbf80195cdaf5fd090787c4d135
+  versions: []

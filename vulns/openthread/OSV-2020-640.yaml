@@ -3,12 +3,14 @@ summary: Stack-buffer-overflow in ot::Message::Write
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15447
 
+  ```
   Crash type: Stack-buffer-overflow READ {*}
   Crash state:
   ot::Message::Write
   ot::Message::Append
   ot::AddressResolver::SendAddressQueryResponse
-modified: '2021-06-21T06:56:25.053797Z'
+  ```
+modified: '2022-04-13T03:04:38.972205Z'
 published: '2020-07-01T00:00:21.979079Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 016b1b152327c27b2f46accd272b49da8a16ed9f
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

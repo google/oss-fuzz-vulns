@@ -3,12 +3,14 @@ summary: Stack-buffer-underflow in read_xref
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42294
 
+  ```
   Crash type: Stack-buffer-underflow WRITE 1
   Crash state:
   read_xref
   pdfi_read_xref
   pdfi_set_input_stream
-modified: '2021-12-14T00:01:34.934925Z'
+  ```
+modified: '2022-04-13T03:04:34.334536Z'
 published: '2021-12-14T00:01:34.934737Z'
 references:
 - type: REPORT

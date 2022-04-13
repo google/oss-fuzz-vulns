@@ -3,12 +3,14 @@ summary: Use-of-uninitialized-value in IsRelativeSymlinkSafe
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=4409
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   IsRelativeSymlinkSafe
   ExtractUnixLink30
   ExtractSymlink
-modified: '2021-06-23T06:25:52.858441Z'
+  ```
+modified: '2022-04-13T03:04:35.361991Z'
 published: '2021-01-13T21:56:34.401253Z'
 references:
 - type: REPORT

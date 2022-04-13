@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in print_mac
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=43304
 
+  ```
   Crash type: Heap-buffer-overflow WRITE 4
   Crash state:
   print_mac
   log_packet
   dhcp_reply
-modified: '2022-01-06T00:02:06.880825Z'
+  ```
+modified: '2022-04-13T03:04:31.155422Z'
 published: '2022-01-06T00:02:06.880603Z'
 references:
 - type: REPORT

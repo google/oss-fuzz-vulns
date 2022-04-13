@@ -3,12 +3,14 @@ summary: Use-of-uninitialized-value in jbig2_immediate_generic_region
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=9680
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   jbig2_immediate_generic_region
   jbig2_parse_segment
   jbig2_data_in
-modified: '2021-06-21T06:56:19.085038Z'
+  ```
+modified: '2022-04-13T03:04:31.316179Z'
 published: '2021-01-15T00:01:14.704723Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: ce3e98c07e29dab2743e792e478395ed30d27dc1
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

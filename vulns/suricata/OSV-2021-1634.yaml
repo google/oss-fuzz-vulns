@@ -3,12 +3,14 @@ summary: Dynamic-stack-buffer-overflow in OutputJsonDNP3SetItem
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=41487
 
+  ```
   Crash type: Dynamic-stack-buffer-overflow READ 4
   Crash state:
   OutputJsonDNP3SetItem
   JsonDNP3LogObjects
   JsonDNP3LogResponse
-modified: '2021-11-30T00:00:09.401252Z'
+  ```
+modified: '2022-04-13T03:04:32.759081Z'
 published: '2021-11-30T00:00:09.401031Z'
 references:
 - type: REPORT

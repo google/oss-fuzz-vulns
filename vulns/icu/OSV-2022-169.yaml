@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in ucasemap_internalUTF8ToTitle_70
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=44779
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   ucasemap_internalUTF8ToTitle_70
   ucasemap_mapUTF8
   ucasemap_utf8ToTitle_70
-modified: '2022-02-19T00:01:40.865864Z'
+  ```
+modified: '2022-04-13T03:04:34.130335Z'
 published: '2022-02-19T00:01:40.865642Z'
 references:
 - type: REPORT

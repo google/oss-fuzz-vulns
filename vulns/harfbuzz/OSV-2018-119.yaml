@@ -3,12 +3,14 @@ summary: UNKNOWN READ in AAT::KerxSubTableFormat1<AAT::KerxSubTableHeader>::driv
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11367
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   AAT::KerxSubTableFormat1<AAT::KerxSubTableHeader>::driver_context_t::transition
   void AAT::StateTableDriver<AAT::ExtendedTypes, AAT::Format1Entry<true>::EntryDat
   AAT::KerxSubTableFormat1<AAT::KerxSubTableHeader>::apply
-modified: '2021-06-21T06:56:20.450233Z'
+  ```
+modified: '2022-04-13T03:04:32.875049Z'
 published: '2021-01-13T00:00:54.593710Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: a549aa14a0b60436a16f7f8924a5b5f82b4d5b7e
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

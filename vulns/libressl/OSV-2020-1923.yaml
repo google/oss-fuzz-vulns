@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in do_print_ex
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13914
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   do_print_ex
   asn1_item_print_ctx
   ASN1_item_print
-modified: '2021-06-23T06:28:25.166862Z'
+  ```
+modified: '2022-04-13T03:04:38.819877Z'
 published: '2020-10-02T00:00:28.271775Z'
 references:
 - type: REPORT
@@ -38,6 +40,6 @@ affected:
   - v3.2.0
   - v3.2.1
   ecosystem_specific:
+    fixed_range: 4b6c7bfd02dec26021882f1599dbcbccdd4d2889:17c88164016df821df2dff4b2b1291291ec4f28a
     severity: MEDIUM
     introduced_range: 4ea2a01a0d2cc889e95316f51c7a36f8f158df44:4b6c7bfd02dec26021882f1599dbcbccdd4d2889
-    fixed_range: 4b6c7bfd02dec26021882f1599dbcbccdd4d2889:17c88164016df821df2dff4b2b1291291ec4f28a

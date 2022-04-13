@@ -3,12 +3,14 @@ summary: UNKNOWN READ in parquet::DictDecoderImpl<parquet::PhysicalType<
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21567
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   parquet::DictDecoderImpl<parquet::PhysicalType<
   parquet::ColumnReaderImplBase<parquet::PhysicalType<
   parquet::ColumnReaderImplBase<parquet::PhysicalType<
-modified: '2021-06-21T06:56:19.752310Z'
+  ```
+modified: '2022-04-13T03:04:32.056995Z'
 published: '2020-06-24T01:51:10.780616Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 2898577b22a1047516af9ad2bc53490c458cf3b8
   ecosystem_specific:
     severity: HIGH
+  versions: []

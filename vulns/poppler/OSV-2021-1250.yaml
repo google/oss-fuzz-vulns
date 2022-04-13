@@ -3,12 +3,14 @@ summary: Segv on unknown address in ft_free
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=38635
 
+  ```
   Crash type: Segv on unknown address
   Crash state:
   ft_free
   ft_mem_free
   cff_cmap_unicode_done
-modified: '2021-09-14T00:00:09.258370Z'
+  ```
+modified: '2022-04-13T03:04:37.307853Z'
 published: '2021-09-14T00:00:09.257971Z'
 references:
 - type: REPORT

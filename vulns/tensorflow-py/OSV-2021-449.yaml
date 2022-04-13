@@ -3,12 +3,14 @@ summary: UNKNOWN READ in std::pair<absl::lts_NUMBER_02_25::container_internal::r
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31393
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   std::pair<absl::lts_NUMBER_02_25::container_internal::raw_hash_set<absl::lts_NUM
   tensorflow::SparseCount<long, long>::Compute
   tensorflow::KernelAndDeviceOp::Run
-modified: '2021-06-23T06:25:11.843993Z'
+  ```
+modified: '2022-04-13T03:04:32.371909Z'
 published: '2021-02-27T00:00:29.109256Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 7677422a56f18c10e3827e29dc8da8a7b23fbede
   ecosystem_specific:
     fixed_range: 62dfa9e1bf26c58cae6aaa0663d69a872f543dc1:7677422a56f18c10e3827e29dc8da8a7b23fbede
+  versions: []

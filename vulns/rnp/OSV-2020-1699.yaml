@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in rnp_key_store_kbx_from_src
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25386
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   rnp_key_store_kbx_from_src
   rnp_load_keys
   keyring_kbx.c
-modified: '2021-06-21T06:56:21.907558Z'
+  ```
+modified: '2022-04-13T03:04:35.167651Z'
 published: '2020-09-04T00:00:16.840683Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: a78cdb748a715796613c59f07575737b767fcab9
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

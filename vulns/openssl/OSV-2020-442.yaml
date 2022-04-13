@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in CRYPTO_strdup
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=17715
 
+  ```
   Crash type: Heap-buffer-overflow READ 14
   Crash state:
   CRYPTO_strdup
   X509V3_add_value
   i2v_GENERAL_NAME
-modified: '2021-06-21T06:56:24.827297Z'
+  ```
+modified: '2022-04-13T03:04:38.758794Z'
 published: '2020-07-01T00:00:09.812508Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: aec9667bd19a8ca9bdd519db3a231a95b9e92674
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

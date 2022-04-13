@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in explicit_bzero
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=35485
 
+  ```
   Crash type: Heap-buffer-overflow WRITE {*}
   Crash state:
   explicit_bzero
   crypto_free
   ssh_disconnect
-modified: '2021-06-24T00:01:20.018695Z'
+  ```
+modified: '2022-04-13T03:04:36.933273Z'
 published: '2021-06-24T00:01:20.018361Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: f5211239f918acf405d104b200891ca58130e23e
   ecosystem_specific:
     severity: HIGH
+  versions: []

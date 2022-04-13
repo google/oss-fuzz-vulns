@@ -3,11 +3,13 @@ summary: Heap-buffer-overflow in readcfgfile
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23653
 
+  ```
   Crash type: Heap-buffer-overflow WRITE 1
   Crash state:
   readcfgfile
   fuzz_cfg_parser.c
-modified: '2021-06-21T06:56:18.797073Z'
+  ```
+modified: '2022-04-13T03:04:30.912816Z'
 published: '2020-07-04T00:00:14.603582Z'
 references:
 - type: REPORT
@@ -24,3 +26,4 @@ affected:
     - fixed: 08488f66b6028761d8eb60a3bddb9aa080a2af4a
   ecosystem_specific:
     severity: HIGH
+  versions: []

@@ -3,12 +3,14 @@ summary: Heap-use-after-free in frame_get_lazychunk
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31120
 
+  ```
   Crash type: Heap-use-after-free READ 4
   Crash state:
   frame_get_lazychunk
   frame_decompress_chunk
   blosc2_schunk_decompress_chunk
-modified: '2021-06-21T06:56:25.931082Z'
+  ```
+modified: '2022-04-13T03:04:40.233181Z'
 published: '2021-02-20T00:01:08.633490Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: e411d87705c65db2aafb0e774092fe57647fb31c
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

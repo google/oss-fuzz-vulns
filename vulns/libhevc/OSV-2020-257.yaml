@@ -3,12 +3,14 @@ summary: Heap-use-after-free in ihevcd_jobq_lock
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=17553
 
+  ```
   Crash type: Heap-use-after-free READ 4
   Crash state:
   ihevcd_jobq_lock
   ihevcd_jobq_yield
   ihevcd_jobq_dequeue
-modified: '2021-06-21T06:56:18.837915Z'
+  ```
+modified: '2022-04-13T03:04:30.955722Z'
 published: '2020-06-30T00:00:41.839764Z'
 references:
 - type: REPORT

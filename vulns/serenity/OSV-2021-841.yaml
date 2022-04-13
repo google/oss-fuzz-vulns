@@ -3,12 +3,14 @@ summary: Heap-use-after-free in AK::StringImpl::create
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34973
 
+  ```
   Crash type: Heap-use-after-free READ {*}
   Crash state:
   AK::StringImpl::create
   AK::String::String
   AK::URLParser::parse_data_url
-modified: '2021-06-21T06:56:19.830224Z'
+  ```
+modified: '2022-04-13T03:04:32.191299Z'
 published: '2021-06-07T00:01:31.914915Z'
 references:
 - type: REPORT
@@ -24,3 +26,4 @@ affected:
     - introduced: e01f1c949fbbc7eb310e35b50f41890310af665d
   ecosystem_specific:
     severity: HIGH
+  versions: []

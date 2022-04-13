@@ -4,12 +4,14 @@ summary: Heap-buffer-overflow in std::__1::basic_string<char, std::__1::char_tra
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42862
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<ch
   bool SmilesParseOps::parser::parse_data_sgroup<std::__1::__wrap_iter<char const*
   bool SmilesParseOps::parser::parse_it<std::__1::__wrap_iter<char const*> >
-modified: '2022-02-22T00:06:09.727813Z'
+  ```
+modified: '2022-04-13T03:04:41.502938Z'
 published: '2021-12-24T00:00:18.937291Z'
 references:
 - type: REPORT

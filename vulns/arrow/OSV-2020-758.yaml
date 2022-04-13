@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in void arrow::internal::TransferBitmap<
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23868
 
+  ```
   Crash type: Heap-buffer-overflow READ 8
   Crash state:
   void arrow::internal::TransferBitmap<
   arrow::ConcatenateBitmaps
   arrow::ConcatenateImpl::Concatenate
-modified: '2021-06-21T06:56:19.640360Z'
+  ```
+modified: '2022-04-13T03:04:31.938186Z'
 published: '2020-07-09T00:00:16.162262Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: cb2cf2f2a4714d161535837d90b025feef5bca5c
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

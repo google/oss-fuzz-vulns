@@ -3,12 +3,14 @@ summary: Stack-buffer-overflow in fuzz_reader_transmit
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26103
 
+  ```
   Crash type: Stack-buffer-overflow WRITE {*}
   Crash state:
   fuzz_reader_transmit
   sc_single_transmit
   sc_transmit
-modified: '2021-06-21T06:56:27.133758Z'
+  ```
+modified: '2022-04-13T03:04:41.650052Z'
 published: '2020-10-04T00:00:10.213058Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 0b40d3b999d1e9feddbd9ebd144cf7b11ab81020
   ecosystem_specific:
     severity: HIGH
+  versions: []

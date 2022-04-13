@@ -3,12 +3,14 @@ summary: Stack-buffer-overflow in sprint_realloc_hinted_integer
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=41372
 
+  ```
   Crash type: Stack-buffer-overflow WRITE 1
   Crash state:
   sprint_realloc_hinted_integer
   sprint_realloc_integer
   snprint_integer
-modified: '2022-04-06T00:10:31.985617Z'
+  ```
+modified: '2022-04-13T03:04:35.842933Z'
 published: '2021-11-27T00:01:21.208846Z'
 references:
 - type: REPORT

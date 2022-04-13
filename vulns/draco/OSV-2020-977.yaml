@@ -4,12 +4,14 @@ summary: Segv on unknown address in draco::MeshPredictionSchemeTexCoordsDecoder<
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23414
 
+  ```
   Crash type: Segv on unknown address
   Crash state:
   draco::MeshPredictionSchemeTexCoordsDecoder<int, draco::PredictionSchemeWrapDeco
   draco::MeshPredictionSchemeTexCoordsDecoder<int, draco::PredictionSchemeWrapDeco
   draco::SequentialIntegerAttributeDecoder::DecodeIntegerValues
-modified: '2021-06-23T06:31:10.284319Z'
+  ```
+modified: '2022-04-13T03:04:42.754414Z'
 published: '2020-07-22T21:49:37.459040Z'
 references:
 - type: REPORT

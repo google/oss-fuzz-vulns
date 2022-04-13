@@ -3,12 +3,14 @@ summary: Memcpy-param-overlap in pdfi_set_input_stream
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42268
 
+  ```
   Crash type: Memcpy-param-overlap
   Crash state:
   pdfi_set_input_stream
   zPDFstream
   gs_interpret
-modified: '2021-12-14T00:00:12.736266Z'
+  ```
+modified: '2022-04-13T03:04:34.815969Z'
 published: '2021-12-14T00:00:12.736055Z'
 references:
 - type: REPORT

@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in process_ef
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=45552
 
+  ```
   Crash type: Heap-buffer-overflow WRITE 8
   Crash state:
   process_ef
   process_block
   process_df
-modified: '2022-03-15T00:01:37.262242Z'
+  ```
+modified: '2022-04-13T03:04:41.543168Z'
 published: '2022-03-15T00:01:37.262017Z'
 references:
 - type: REPORT

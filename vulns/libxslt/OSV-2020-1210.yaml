@@ -3,12 +3,14 @@ summary: UNKNOWN READ in xmlXPathCompileExpr
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=16288
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   xmlXPathCompileExpr
   xmlXPathCompPrimaryExpr
   xmlXPathCompFilterExpr
-modified: '2021-06-23T06:25:30.979144Z'
+  ```
+modified: '2022-04-13T03:04:33.730239Z'
 published: '2020-07-22T21:49:56.883463Z'
 references:
 - type: REPORT
@@ -24,6 +26,7 @@ affected:
     - introduced: 7f56378a73af8a61da78b8091f0e317316cee300
     - fixed: 9d4bfeecbdf28f3980b23fa8f2504bdf54f04486
   ecosystem_specific:
+    introduced_range: unknown:7f56378a73af8a61da78b8091f0e317316cee300
     fixed_range: 6d4a773a4bd06cbfe3c0ca68728d0099777e8df6:9d4bfeecbdf28f3980b23fa8f2504bdf54f04486
     severity: MEDIUM
-    introduced_range: unknown:7f56378a73af8a61da78b8091f0e317316cee300
+  versions: []

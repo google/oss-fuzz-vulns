@@ -3,12 +3,14 @@ summary: Memcpy-param-overlap in frame_get_metalayers
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30253
 
+  ```
   Crash type: Memcpy-param-overlap
   Crash state:
   frame_get_metalayers
   blosc2_frame_to_schunk
   fuzz_decompress_frame.c
-modified: '2021-03-11T12:00:48.849030Z'
+  ```
+modified: '2022-04-13T03:04:40.264956Z'
 published: '2021-02-05T00:00:01.412696Z'
 references:
 - type: REPORT
@@ -23,3 +25,4 @@ affected:
     events:
     - introduced: c473b21cff5e1a459b4467f18bf7414114f848fd
     - fixed: dd0e099a4cf51ec01064065778b1d3bfb314f201
+  versions: []

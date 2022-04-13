@@ -3,12 +3,14 @@ summary: Global-buffer-overflow in read_coding_unit
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=32791
 
+  ```
   Crash type: Global-buffer-overflow READ 1
   Crash state:
   read_coding_unit
   read_coding_quadtree
   read_coding_quadtree
-modified: '2021-04-03T00:00:33.651887Z'
+  ```
+modified: '2022-04-13T03:04:32.402365Z'
 published: '2021-04-03T00:00:33.651641Z'
 references:
 - type: REPORT

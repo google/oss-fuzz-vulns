@@ -3,12 +3,14 @@ summary: UNKNOWN READ in auto LLVMFuzzerTestOneInput::$_1::operator
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24195
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   auto LLVMFuzzerTestOneInput::$_1::operator
   int fuzzer_input::run<LLVMFuzzerTestOneInput::$_1>
   set-gc.cpp
-modified: '2021-06-23T06:25:46.218983Z'
+  ```
+modified: '2022-04-13T03:04:35.121970Z'
 published: '2020-07-22T21:49:40.649517Z'
 references:
 - type: REPORT
@@ -24,5 +26,6 @@ affected:
     - introduced: ad3e3556d38bb75966dd24c61a774970a7c7957e
     - fixed: e04435d170769830f526d1b17b8b3e573f1e1ef2
   ecosystem_specific:
-    severity: MEDIUM
     introduced_range: unknown:ad3e3556d38bb75966dd24c61a774970a7c7957e
+    severity: MEDIUM
+  versions: []

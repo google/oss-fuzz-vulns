@@ -3,12 +3,14 @@ summary: UNKNOWN READ in perfetto::trace_processor::ProtoTraceParser::ParseTyped
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13724
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   perfetto::trace_processor::ProtoTraceParser::ParseTypedFtraceToRaw
   perfetto::trace_processor::ProtoTraceParser::ParseFtracePacket
   perfetto::trace_processor::TraceSorter::SortAndExtractEventsBeyondWindow
-modified: '2021-03-09T04:49:06.005470Z'
+  ```
+modified: '2022-04-13T03:04:42.019404Z'
 published: '2020-07-01T00:00:22.958401Z'
 references:
 - type: REPORT

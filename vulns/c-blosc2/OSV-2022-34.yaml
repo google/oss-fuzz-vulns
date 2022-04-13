@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in LZ4_decompress_safe
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=43513
 
+  ```
   Crash type: Heap-buffer-overflow READ 16
   Crash state:
   LZ4_decompress_safe
   blosc_d
   do_job
-modified: '2022-01-12T00:01:27.704583Z'
+  ```
+modified: '2022-04-13T03:04:40.249344Z'
 published: '2022-01-12T00:01:27.704351Z'
 references:
 - type: REPORT

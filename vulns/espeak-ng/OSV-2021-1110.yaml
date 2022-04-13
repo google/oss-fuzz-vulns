@@ -3,12 +3,14 @@ summary: Stack-buffer-overflow in TranslateWord2
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=36932
 
+  ```
   Crash type: Stack-buffer-overflow WRITE 1
   Crash state:
   TranslateWord2
   TranslateClause
   SpeakNextClause
-modified: '2022-04-04T00:04:11.100774Z'
+  ```
+modified: '2022-04-13T03:04:34.189849Z'
 published: '2021-08-08T00:02:17.026887Z'
 references:
 - type: REPORT

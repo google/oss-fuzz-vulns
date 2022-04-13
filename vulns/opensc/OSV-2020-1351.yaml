@@ -3,12 +3,14 @@ summary: Heap-use-after-free in sc_pkcs15_free_object
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=17170
 
+  ```
   Crash type: Heap-use-after-free READ 4
   Crash state:
   sc_pkcs15_free_object
   fuzz_pkcs15_decode.c
   fuzz_pkcs15_decode.c
-modified: '2021-06-23T06:30:02.375631Z'
+  ```
+modified: '2022-04-13T03:04:41.575360Z'
 published: '2020-07-22T21:50:08.637276Z'
 references:
 - type: REPORT

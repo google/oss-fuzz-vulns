@@ -3,12 +3,14 @@ summary: Stack-buffer-overflow in fn_ElIn_evaluate
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=43012
 
+  ```
   Crash type: Stack-buffer-overflow WRITE 4
   Crash state:
   fn_ElIn_evaluate
   pdfi_tf_using_function
   gs_begin_transparency_mask
-modified: '2021-12-28T00:00:07.775091Z'
+  ```
+modified: '2022-04-13T03:04:34.657360Z'
 published: '2021-12-28T00:00:07.774854Z'
 references:
 - type: REPORT

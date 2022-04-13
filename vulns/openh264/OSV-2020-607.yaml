@@ -3,12 +3,14 @@ summary: UNKNOWN READ in WelsDec::CWelsDecoder::DecodeFrame2WithCtx
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18864
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   WelsDec::CWelsDecoder::DecodeFrame2WithCtx
   WelsDec::CWelsDecoder::DecodeFrame2
   WelsDec::CWelsDecoder::DecodeFrameNoDelay
-modified: '2021-06-21T06:56:23.902883Z'
+  ```
+modified: '2022-04-13T03:04:37.626480Z'
 published: '2020-07-01T00:00:20.087273Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: e3b90efed243779b5c4961c2f9d6f1cedfeb1f46
   ecosystem_specific:
     severity: HIGH
+  versions: []

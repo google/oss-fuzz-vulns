@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in WelsDec::UpdateP16x16RefIdx
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26078
 
+  ```
   Crash type: Heap-buffer-overflow WRITE 2
   Crash state:
   WelsDec::UpdateP16x16RefIdx
   WelsDec::PredBDirectTemporal
   WelsDec::ParseInterBInfo
-modified: '2021-06-21T06:56:23.860369Z'
+  ```
+modified: '2022-04-13T03:04:37.589868Z'
 published: '2020-10-02T00:00:14.116993Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: f1bb6d3acb057785b4d89e8228e23cc4fc9caa12
   ecosystem_specific:
     severity: HIGH
+  versions: []

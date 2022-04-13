@@ -3,12 +3,14 @@ summary: Use-of-uninitialized-value in pcpp::IDnsResource::decodeName
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22451
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   pcpp::IDnsResource::decodeName
   pcpp::IDnsResource::IDnsResource
   pcpp::DnsQuery::DnsQuery
-modified: '2021-06-23T06:28:21.835926Z'
+  ```
+modified: '2022-04-13T03:04:38.645915Z'
 published: '2020-07-22T21:49:49.025252Z'
 references:
 - type: REPORT
@@ -25,8 +27,8 @@ affected:
     - fixed: 994419f1bcb9151553ad8044e1757a6d406deea3
     - fixed: 0a62fd3e959813ca41d71d42c86aa7cf1f55ced0
   ecosystem_specific:
-    introduced_range: unknown:4366d2f86bf105025765a0ce3db6e647ba0f3508
     severity: MEDIUM
+    introduced_range: unknown:4366d2f86bf105025765a0ce3db6e647ba0f3508
   database_specific:
     fixed_range: 46840c644dfe9160c4111b06bbbf7731c9d1370c:0a62fd3e959813ca41d71d42c86aa7cf1f55ced0
   versions: []

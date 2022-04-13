@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in parse_odp_key_mask_attr
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11160
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   parse_odp_key_mask_attr
   odp_flow_from_string
   parse_keys
-modified: '2021-06-21T06:56:26.385568Z'
+  ```
+modified: '2022-04-13T03:04:40.763093Z'
 published: '2021-01-13T00:00:59.914224Z'
 references:
 - type: REPORT

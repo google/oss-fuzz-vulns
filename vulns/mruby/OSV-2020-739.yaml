@@ -3,12 +3,14 @@ summary: UNKNOWN READ in str_decref
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18756
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   str_decref
   obj_free
   mrb_gc_destroy
-modified: '2021-06-21T06:56:25.564195Z'
+  ```
+modified: '2022-04-13T03:04:39.688080Z'
 published: '2020-07-01T00:00:27.971876Z'
 references:
 - type: REPORT

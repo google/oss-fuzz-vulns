@@ -3,12 +3,14 @@ summary: Negative-size-param in UA_SecureChannel_processChunk
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=3609
 
+  ```
   Crash type: Negative-size-param
   Crash state:
   UA_SecureChannel_processChunk
   processCompleteChunk
   UA_Connection_processChunks
-modified: '2021-03-09T04:49:04.803704Z'
+  ```
+modified: '2022-04-13T03:04:41.415024Z'
 published: '2021-01-13T21:57:35.111717Z'
 references:
 - type: REPORT
@@ -23,3 +25,4 @@ affected:
     events:
     - introduced: 84d46ddefe21c7eb5f678a5046fa200ac1b4e617
     - fixed: 3e9fdcb66c5a1adf0e1cdc9485b4e6efe8103e1b
+  versions: []

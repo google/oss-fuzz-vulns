@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in cmap_endcodespacerange_func
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42541
 
+  ```
   Crash type: Heap-buffer-overflow WRITE {*}
   Crash state:
   cmap_endcodespacerange_func
   pdfi_pscript_interpret
   pdfi_read_cmap
-modified: '2021-12-18T00:00:16.893742Z'
+  ```
+modified: '2022-04-13T03:04:34.271887Z'
 published: '2021-12-18T00:00:16.893499Z'
 references:
 - type: REPORT

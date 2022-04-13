@@ -3,12 +3,14 @@ summary: Stack-buffer-overflow in parse_file_extra_owner
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14331
 
+  ```
   Crash type: Stack-buffer-overflow WRITE 1
   Crash state:
   parse_file_extra_owner
   process_head_file_extra
   process_head_file
-modified: '2021-06-21T06:56:26.632150Z'
+  ```
+modified: '2022-04-13T03:04:41.136226Z'
 published: '2020-07-01T00:00:13.588403Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 2fce6f81cc59144bf4f2f66f7620233d609b41ef
   ecosystem_specific:
     severity: HIGH
+  versions: []

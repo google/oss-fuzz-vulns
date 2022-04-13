@@ -3,12 +3,14 @@ summary: UNKNOWN READ in boost::sub_match<std::__1::__wrap_iter<char const*> >::
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=9539
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   boost::sub_match<std::__1::__wrap_iter<char const*> >::sub_match
   _ZNSt3__16vectorIN5boost9sub_matchINS_11__wrap_iterIPKcEEEENS_9allocatorIS7_EEE1
   boost::match_results<std::__1::__wrap_iter<char const*>, std::__1::allocator<boo
-modified: '2021-11-22T06:25:09.418618Z'
+  ```
+modified: '2022-04-13T03:04:40.905295Z'
 published: '2021-01-15T00:01:14.949558Z'
 references:
 - type: REPORT

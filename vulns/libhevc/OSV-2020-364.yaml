@@ -3,11 +3,13 @@ summary: Stack-use-after-return in ihevcd_process_thread
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=17601
 
+  ```
   Crash type: Stack-use-after-return READ 4
   Crash state:
   ihevcd_process_thread
   clone
-modified: '2021-03-09T04:49:05.846944Z'
+  ```
+modified: '2022-04-13T03:04:31.026426Z'
 published: '2020-07-01T00:00:05.352256Z'
 references:
 - type: REPORT

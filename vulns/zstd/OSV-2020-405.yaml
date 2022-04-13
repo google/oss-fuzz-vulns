@@ -3,12 +3,14 @@ summary: Stack-buffer-overflow in ZSTD_decodeLiteralsBlock
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=16445
 
+  ```
   Crash type: Stack-buffer-overflow WRITE {*}
   Crash state:
   ZSTD_decodeLiteralsBlock
   ZSTD_decompressBlock
   ZSTD_decompressDCtx
-modified: '2021-06-21T06:56:19.420922Z'
+  ```
+modified: '2022-04-13T03:04:31.664253Z'
 published: '2020-07-01T00:00:07.677115Z'
 references:
 - type: REPORT

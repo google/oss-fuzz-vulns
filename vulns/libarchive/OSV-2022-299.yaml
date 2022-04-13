@@ -3,12 +3,14 @@ summary: Heap-use-after-free in read_data_compressed
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=46279
 
+  ```
   Crash type: Heap-use-after-free READ 4
   Crash state:
   read_data_compressed
   archive_read_format_rar_read_data
   _archive_read_data_block
-modified: '2022-04-04T00:00:06.864392Z'
+  ```
+modified: '2022-04-13T03:04:41.189362Z'
 published: '2022-04-04T00:00:06.861660Z'
 references:
 - type: REPORT

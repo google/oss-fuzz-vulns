@@ -3,12 +3,14 @@ summary: Global-buffer-overflow in strsep_char
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14509
 
+  ```
   Crash type: Global-buffer-overflow READ {*}
   Crash state:
   strsep_char
   parse_proxy_protocol_v1
   parse_http_request
-modified: '2021-03-09T04:49:05.902146Z'
+  ```
+modified: '2022-04-13T03:04:31.758468Z'
 published: '2020-07-01T00:00:10.876736Z'
 references:
 - type: REPORT
@@ -23,3 +25,4 @@ affected:
     events:
     - introduced: 7220bbf47f668fc600824b513afd207097fa6b68
     - fixed: 6be9574a2d80457a5bfc16b23b67905d8f68e827
+  versions: []

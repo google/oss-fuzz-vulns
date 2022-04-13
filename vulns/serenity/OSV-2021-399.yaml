@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in void AK::__format_value<unsigned char>
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30914
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   void AK::__format_value<unsigned char>
   AK::vformat_impl
   AK::vformat_impl
-modified: '2021-06-21T06:56:19.872037Z'
+  ```
+modified: '2022-04-13T03:04:32.232416Z'
 published: '2021-02-15T00:01:06.379936Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 3fe7ac0924ada70faaf27636b6e0f40bcde24f77
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

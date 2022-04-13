@@ -3,12 +3,14 @@ summary: Heap-use-after-free in jbig2_release_huffman_table
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21587
 
+  ```
   Crash type: Heap-use-after-free READ 8
   Crash state:
   jbig2_release_huffman_table
   jbig2_text_region
   jbig2_data_in
-modified: '2021-06-21T06:56:26.187712Z'
+  ```
+modified: '2022-04-13T03:04:40.575919Z'
 published: '2020-06-24T01:51:16.820995Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 778862c21165b485302010beb5fb0765f8338b96
   ecosystem_specific:
     severity: HIGH
+  versions: []

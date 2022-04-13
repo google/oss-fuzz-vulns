@@ -3,12 +3,14 @@ summary: Use-of-uninitialized-value in Mat_VarRead4
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=16857
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   Mat_VarRead4
   Mat_VarReadDataAll
   matio_fuzzer.cc
-modified: '2021-06-21T06:56:28.267167Z'
+  ```
+modified: '2022-04-13T03:04:43.129699Z'
 published: '2020-07-01T00:00:14.729759Z'
 references:
 - type: REPORT

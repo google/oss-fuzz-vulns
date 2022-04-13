@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in resize_packet
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=35898
 
+  ```
   Crash type: Heap-buffer-overflow WRITE {*}
   Crash state:
   resize_packet
   FuzzResizePacket
   fuzz_rfc1035.c
-modified: '2022-04-06T00:06:10.360057Z'
+  ```
+modified: '2022-04-13T03:04:31.204327Z'
 published: '2021-07-08T00:01:25.139349Z'
 references:
 - type: REPORT

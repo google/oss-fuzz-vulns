@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in WelsDec::ParseIntra4x4Mode
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26723
 
+  ```
   Crash type: Heap-buffer-overflow WRITE 1
   Crash state:
   WelsDec::ParseIntra4x4Mode
   WelsDec::WelsActualDecodeMbCavlcISlice
   WelsDec::WelsDecodeMbCavlcISlice
-modified: '2021-06-21T06:56:23.711149Z'
+  ```
+modified: '2022-04-13T03:04:37.457147Z'
 published: '2020-10-30T00:00:46.801962Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: b52786888ddce9d6bc06b7825ba9bffc65924e0c
   ecosystem_specific:
     severity: HIGH
+  versions: []

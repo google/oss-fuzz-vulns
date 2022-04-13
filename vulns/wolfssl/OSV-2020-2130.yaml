@@ -3,12 +3,14 @@ summary: Use-of-uninitialized-value in memory_test
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=27020
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   memory_test
   fuzzer_send
   SendBuffered
-modified: '2021-06-21T06:56:22.353084Z'
+  ```
+modified: '2022-04-13T03:04:35.690413Z'
 published: '2020-11-07T00:00:36.395318Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: c697520826d5f3e7089609c887913290f6fa55c0
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

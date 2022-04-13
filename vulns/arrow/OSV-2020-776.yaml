@@ -3,12 +3,14 @@ summary: Negative-size-param in arrow::ConcatenateBuffers
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24101
 
+  ```
   Crash type: Negative-size-param
   Crash state:
   arrow::ConcatenateBuffers
   arrow::ConcatenateImpl::Visit
   arrow::Status arrow::VisitTypeInline<arrow::ConcatenateImpl>
-modified: '2021-06-21T06:56:19.659331Z'
+  ```
+modified: '2022-04-13T03:04:31.959785Z'
 published: '2020-07-14T05:37:29.441412Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 389b1535bbb40da80f441c02ff93335eb5407316
   ecosystem_specific:
     severity: HIGH
+  versions: []

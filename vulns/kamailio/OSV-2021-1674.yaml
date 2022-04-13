@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in find_sdp_line_delimiter
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42238
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   find_sdp_line_delimiter
   parse_mixed_content
   parse_sdp
-modified: '2021-12-13T00:00:05.791027Z'
+  ```
+modified: '2022-04-13T03:04:37.753098Z'
 published: '2021-12-13T00:00:05.790795Z'
 references:
 - type: REPORT

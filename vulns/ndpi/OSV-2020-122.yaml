@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in ndpi_strnstr
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22022
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   ndpi_strnstr
   ndpi_search_nats_tcp
   check_ndpi_tcp_flow_func
-modified: '2021-06-21T06:56:22.707926Z'
+  ```
+modified: '2022-04-13T03:04:36.183580Z'
 published: '2020-06-24T01:51:15.062488Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: db16a987c57c2fa097b5efabb66cef16caeddb03
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

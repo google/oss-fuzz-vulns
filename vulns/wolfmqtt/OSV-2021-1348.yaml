@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in MqttDecode_Disconnect
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=39053
 
+  ```
   Crash type: Heap-buffer-overflow WRITE 1
   Crash state:
   MqttDecode_Disconnect
   MqttClient_DecodePacket
   MqttClient_WaitType
-modified: '2021-09-22T00:00:38.609230Z'
+  ```
+modified: '2022-04-13T03:04:34.015885Z'
 published: '2021-09-22T00:00:38.608969Z'
 references:
 - type: REPORT

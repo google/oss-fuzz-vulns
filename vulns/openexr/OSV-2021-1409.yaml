@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in unpack_16bit_4chan_planar
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=39538
 
+  ```
   Crash type: Heap-buffer-overflow WRITE 2
   Crash state:
   unpack_16bit_4chan_planar
   exr_decoding_run
   Imf_3_1::checkCoreFile
-modified: '2021-10-04T00:01:39.306572Z'
+  ```
+modified: '2022-04-13T03:04:37.128722Z'
 published: '2021-10-04T00:01:39.306375Z'
 references:
 - type: REPORT

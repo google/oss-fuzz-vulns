@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in pcpp::SSLServerHelloMessage::getSessionIDLength
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22523
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   pcpp::SSLServerHelloMessage::getSessionIDLength
   pcpp::SSLServerHelloMessage::SSLServerHelloMessage
   pcpp::SSLHandshakeMessage::createHandhakeMessage
-modified: '2021-06-23T06:28:22.794489Z'
+  ```
+modified: '2022-04-13T03:04:38.685508Z'
 published: '2020-07-22T00:00:09.077665Z'
 references:
 - type: REPORT
@@ -24,5 +26,6 @@ affected:
     - introduced: 4366d2f86bf105025765a0ce3db6e647ba0f3508
     - fixed: 50aab202d24331ef35b9eff68d96ef9f97baf6a1
   ecosystem_specific:
-    severity: MEDIUM
     introduced_range: unknown:4366d2f86bf105025765a0ce3db6e647ba0f3508
+    severity: MEDIUM
+  versions: []

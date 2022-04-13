@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in git__strntol64
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11194
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   git__strntol64
   git__strntol32
   git_signature__parse
-modified: '2021-06-21T06:56:21.919593Z'
+  ```
+modified: '2022-04-13T03:04:35.177963Z'
 published: '2021-01-12T06:20:32.894786Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 52f859fd534e3c16c2c03b9a2375f00a50f3996e
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

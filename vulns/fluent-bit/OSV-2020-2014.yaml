@@ -3,12 +3,14 @@ summary: Stack-buffer-overflow in flb_sds_cat
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26237
 
+  ```
   Crash type: Stack-buffer-overflow READ {*}
   Crash state:
   flb_sds_cat
   flb_msgpack_gelf_value
   flb_msgpack_to_gelf
-modified: '2021-06-21T06:56:24.344163Z'
+  ```
+modified: '2022-04-13T03:04:38.285201Z'
 published: '2020-10-11T00:00:12.565611Z'
 references:
 - type: REPORT

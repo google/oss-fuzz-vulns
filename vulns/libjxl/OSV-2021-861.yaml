@@ -3,12 +3,14 @@ summary: Use-of-uninitialized-value in jxl::N_AVX2::FloatToRGBA8
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=35231
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   jxl::N_AVX2::FloatToRGBA8
   jxl::FinalizeImageRect
   jxl::ThreadPool::RunCallState<jxl::FinalizeFrameDecoding
-modified: '2021-06-15T00:01:22.973144Z'
+  ```
+modified: '2022-04-13T03:04:41.790968Z'
 published: '2021-06-15T00:01:22.972854Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 4f97fa00ed1432e910817813b07f7d16817e353b
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

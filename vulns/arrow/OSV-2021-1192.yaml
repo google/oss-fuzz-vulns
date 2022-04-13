@@ -3,12 +3,14 @@ summary: Segv on unknown address in arrow::DefaultBackend
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=37927
 
+  ```
   Crash type: Segv on unknown address
   Crash state:
   arrow::DefaultBackend
   arrow::PoolBuffer::MakeUnique
   arrow::AllocateBuffer
-modified: '2021-09-02T00:01:47.797593Z'
+  ```
+modified: '2022-04-13T03:04:31.877586Z'
 published: '2021-09-02T00:01:47.797383Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 495c734969f4af9288a8e745c29fb1d707a46baa
   ecosystem_specific:
     severity: null
+  versions: []

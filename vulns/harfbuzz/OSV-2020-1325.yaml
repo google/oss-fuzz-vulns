@@ -3,12 +3,14 @@ summary: Global-buffer-overflow in BEInt<unsigned short, 2>::operator unsigned s
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21769
 
+  ```
   Crash type: Global-buffer-overflow READ 2
   Crash state:
   BEInt<unsigned short, 2>::operator unsigned short
   OT::IntType<unsigned short, 2u>::operator unsigned int
   CFF::Charset0::get_glyph
-modified: '2021-06-23T06:25:30.729470Z'
+  ```
+modified: '2022-04-13T03:04:33.044825Z'
 published: '2020-07-22T21:50:06.762604Z'
 references:
 - type: REPORT

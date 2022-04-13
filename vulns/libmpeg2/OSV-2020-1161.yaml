@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in impeg2_fmt_conv_yuv420p_to_yuv420sp_uv
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=16604
 
+  ```
   Crash type: Heap-buffer-overflow WRITE 1
   Crash state:
   impeg2_fmt_conv_yuv420p_to_yuv420sp_uv
   impeg2d_format_convert
   impeg2d_dec_pic_data_thread
-modified: '2021-11-22T06:19:47.617075Z'
+  ```
+modified: '2022-04-13T03:04:33.814502Z'
 published: '2020-07-22T21:49:52.257088Z'
 references:
 - type: REPORT

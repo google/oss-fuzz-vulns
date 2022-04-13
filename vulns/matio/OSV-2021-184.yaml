@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in H5HL__fl_deserialize
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29580
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   H5HL__fl_deserialize
   H5HL__cache_datablock_deserialize
   H5C_load_entry
-modified: '2022-03-26T00:05:46.917869Z'
+  ```
+modified: '2022-04-13T03:04:43.102279Z'
 published: '2021-01-15T00:00:16.202094Z'
 references:
 - type: REPORT

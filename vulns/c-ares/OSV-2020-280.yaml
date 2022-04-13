@@ -1,12 +1,13 @@
 id: OSV-2020-280
 summary: Null-dereference READ
-details: |-
+details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15458
 
+  ```
   Crash type: Null-dereference READ
   Crash state:
-  NULL
-modified: '2021-03-09T04:49:05.802822Z'
+  NULL```
+modified: '2022-04-13T03:04:36.411292Z'
 published: '2020-06-30T00:00:45.791652Z'
 references:
 - type: REPORT
@@ -21,3 +22,4 @@ affected:
     events:
     - introduced: 7d3591ee8a1a63e7748e68e6d880bd1763a32885
     - fixed: b949cc3ddfbeb1b3fba571fb53b186b645e66e9c
+  versions: []

@@ -3,12 +3,14 @@ summary: Stack-use-after-return in zend_fiber_suspend_context
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34013
 
+  ```
   Crash type: Stack-use-after-return READ 4
   Crash state:
   zend_fiber_suspend_context
   zend_fiber_suspend
   zim_Fiber_suspend
-modified: '2021-05-08T00:00:26.963992Z'
+  ```
+modified: '2022-04-13T03:04:33.495546Z'
 published: '2021-05-08T00:00:26.963755Z'
 references:
 - type: REPORT

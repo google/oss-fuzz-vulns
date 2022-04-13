@@ -3,12 +3,14 @@ summary: Stack-buffer-overflow in pixCountPixels
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=43841
 
+  ```
   Crash type: Stack-buffer-overflow READ 4
   Crash state:
   pixCountPixels
   pixCountPixelsInRect
   pix3_fuzzer.cc
-modified: '2022-01-21T00:01:32.742600Z'
+  ```
+modified: '2022-04-13T03:04:32.687605Z'
 published: '2022-01-21T00:01:32.742217Z'
 references:
 - type: REPORT

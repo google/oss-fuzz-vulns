@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in flb_msgpack_to_json
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26248
 
+  ```
   Crash type: Heap-buffer-overflow WRITE 1
   Crash state:
   flb_msgpack_to_json
   flb_msgpack_raw_to_json_sds
   msgpack_parse_fuzzer.c
-modified: '2021-06-21T06:56:24.247108Z'
+  ```
+modified: '2022-04-13T03:04:38.166042Z'
 published: '2020-10-12T00:00:07.776885Z'
 references:
 - type: REPORT

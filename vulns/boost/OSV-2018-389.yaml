@@ -4,12 +4,14 @@ summary: UNKNOWN READ in boost::re_detail_NUMBER::basic_regex_creator<char, boos
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=6708
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   boost::re_detail_NUMBER::basic_regex_creator<char, boost::regex_traits<char, boo
   boost::re_detail_NUMBER::basic_regex_creator<char, boost::regex_traits<char, boo
   boost::re_detail_NUMBER::basic_regex_parser<char, boost::regex_traits<char, boos
-modified: '2021-11-22T06:26:29.977335Z'
+  ```
+modified: '2022-04-13T03:04:40.912286Z'
 published: '2021-01-15T00:01:08.730847Z'
 references:
 - type: REPORT
@@ -42,6 +44,6 @@ affected:
   - boost-1.73.0
   - boost-1.73.0.beta1
   ecosystem_specific:
-    fixed_range: b078cd00e84a8ff8a901ebf6d78b65aaada8149d:1b085e6b351350816a6ad6e2f1a88e519b093382
     severity: MEDIUM
     introduced_range: 34ecafd457688d6124ec20489e4e5f4482374a29:a5836469835ec3ac377df07cfbb5bc2dca88396c
+    fixed_range: b078cd00e84a8ff8a901ebf6d78b65aaada8149d:1b085e6b351350816a6ad6e2f1a88e519b093382

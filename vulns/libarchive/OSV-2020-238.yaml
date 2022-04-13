@@ -3,12 +3,14 @@ summary: Heap-use-after-free in copy_string
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=19990
 
+  ```
   Crash type: Heap-use-after-free READ 1
   Crash state:
   copy_string
   do_uncompress_block
   process_block
-modified: '2021-06-21T06:56:26.662548Z'
+  ```
+modified: '2022-04-13T03:04:41.168121Z'
 published: '2020-06-26T00:00:08.394661Z'
 references:
 - type: REPORT

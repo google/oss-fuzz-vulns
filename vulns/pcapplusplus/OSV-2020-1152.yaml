@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in pcpp::tbp_my_own_strnlen
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22483
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   pcpp::tbp_my_own_strnlen
   pcpp::HeaderField::HeaderField
   pcpp::TextBasedProtocolMessage::parseFields
-modified: '2021-06-23T06:28:21.539387Z'
+  ```
+modified: '2022-04-13T03:04:38.623396Z'
 published: '2020-07-22T21:49:51.614814Z'
 references:
 - type: REPORT
@@ -26,3 +28,4 @@ affected:
   ecosystem_specific:
     introduced_range: unknown:4366d2f86bf105025765a0ce3db6e647ba0f3508
     severity: MEDIUM
+  versions: []

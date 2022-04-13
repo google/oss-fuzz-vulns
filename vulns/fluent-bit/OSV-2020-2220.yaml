@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in mk_rconf_read
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=28241
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   mk_rconf_read
   mk_rconf_open
   flb_parser_conf_file
-modified: '2021-06-21T06:56:24.430859Z'
+  ```
+modified: '2022-04-13T03:04:38.384918Z'
 published: '2020-12-04T00:00:07.219620Z'
 references:
 - type: REPORT

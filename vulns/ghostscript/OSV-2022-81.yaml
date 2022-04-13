@@ -3,12 +3,14 @@ summary: Global-buffer-overflow in get_space_object
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=43991
 
+  ```
   Crash type: Global-buffer-overflow READ 1
   Crash state:
   get_space_object
   zsetcolorspace
   gs_interpret
-modified: '2022-01-24T00:00:28.385631Z'
+  ```
+modified: '2022-04-13T03:04:34.752188Z'
 published: '2022-01-24T00:00:28.385382Z'
 references:
 - type: REPORT

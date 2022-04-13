@@ -3,12 +3,14 @@ summary: UNKNOWN READ in blosc_getitem
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29287
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   blosc_getitem
   get_coffset
   frame_get_lazychunk
-modified: '2021-06-21T06:56:25.986573Z'
+  ```
+modified: '2022-04-13T03:04:40.306977Z'
 published: '2021-01-07T00:01:14.405652Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 28c392c59448389adfb1f8fd223da0acacfca301
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

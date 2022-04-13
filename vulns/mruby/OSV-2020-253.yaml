@@ -3,12 +3,14 @@ summary: Stack-buffer-overflow in mrb_str_len_to_dbl
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=19902
 
+  ```
   Crash type: Stack-buffer-overflow WRITE 1
   Crash state:
   mrb_str_len_to_dbl
   mrb_str_len_to_inum
   mrb_str_to_i
-modified: '2021-06-21T06:56:25.557999Z'
+  ```
+modified: '2022-04-13T03:04:39.682918Z'
 published: '2020-06-26T00:00:11.566328Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 2124b9b4c95e66e63b1eb26a8dab49753b82fd6c
   ecosystem_specific:
     severity: HIGH
+  versions: []

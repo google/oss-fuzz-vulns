@@ -3,10 +3,12 @@ summary: UNKNOWN READ in dav1d_resize_ssse3
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21547
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   dav1d_resize_ssse3
-modified: '2021-06-21T06:56:25.669512Z'
+  ```
+modified: '2022-04-13T03:04:39.843682Z'
 published: '2020-06-24T01:51:15.781691Z'
 references:
 - type: REPORT
@@ -23,3 +25,4 @@ affected:
     - fixed: 41cd4199f149760a4d16326342d646b2eb66e8b0
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

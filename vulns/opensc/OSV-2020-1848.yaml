@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in sc_oberthur_parse_publicinfo
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25943
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   sc_oberthur_parse_publicinfo
   sc_pkcs15emu_oberthur_init
   sc_pkcs15emu_oberthur_init_ex
-modified: '2021-06-21T06:56:27.177627Z'
+  ```
+modified: '2022-04-13T03:04:41.696843Z'
 published: '2020-09-26T00:00:10.945991Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 3ff059a74bcd10ead9a92cc67e5c8c006996e940
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

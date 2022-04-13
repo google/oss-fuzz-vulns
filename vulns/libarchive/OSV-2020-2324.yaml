@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in archive_read_format_cpio_read_header
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21048
 
+  ```
   Crash type: Heap-buffer-overflow READ {*}
   Crash state:
   archive_read_format_cpio_read_header
   _archive_read_next_header2
   _archive_read_next_header
-modified: '2021-12-04T00:01:03.220431Z'
+  ```
+modified: '2022-04-13T03:04:41.146898Z'
 published: '2021-12-04T00:01:03.220230Z'
 references:
 - type: REPORT

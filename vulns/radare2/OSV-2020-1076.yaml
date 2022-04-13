@@ -3,12 +3,14 @@ summary: Stack-buffer-overflow in string_scan_range
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15467
 
+  ```
   Crash type: Stack-buffer-overflow WRITE 1
   Crash state:
   string_scan_range
   get_strings_range
   r_bin_file_get_strings
-modified: '2021-06-23T06:26:08.464292Z'
+  ```
+modified: '2022-04-13T03:04:36.636815Z'
 published: '2020-07-22T21:49:45.514181Z'
 references:
 - type: REPORT
@@ -40,5 +42,5 @@ affected:
   - 3.5.0
   - 3.5.1
   ecosystem_specific:
-    severity: HIGH
     introduced_range: unknown:efe53437ff4f34bbb7785a229c8428b449c6069f
+    severity: HIGH

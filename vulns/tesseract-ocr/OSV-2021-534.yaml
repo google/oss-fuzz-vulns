@@ -3,12 +3,14 @@ summary: Container-overflow in tesseract::ExtractResults16
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=32142
 
+  ```
   Crash type: Container-overflow WRITE {*}
   Crash state:
   tesseract::ExtractResults16
   tesseract::PartialMatrixDotVector16
   tesseract::matrixDotVector
-modified: '2021-06-21T06:56:19.237336Z'
+  ```
+modified: '2022-04-13T03:04:31.477640Z'
 published: '2021-03-19T00:00:04.481954Z'
 references:
 - type: REPORT

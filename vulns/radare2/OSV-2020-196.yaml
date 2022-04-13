@@ -3,12 +3,14 @@ summary: Heap-use-after-free in Pe64_r_bin_pe_free
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21630
 
+  ```
   Crash type: Heap-use-after-free READ 8
   Crash state:
   Pe64_r_bin_pe_free
   r_bin_file_free
   r_list_delete
-modified: '2021-06-21T06:56:23.072195Z'
+  ```
+modified: '2022-04-13T03:04:36.562136Z'
 published: '2020-06-24T01:51:18.455623Z'
 references:
 - type: REPORT

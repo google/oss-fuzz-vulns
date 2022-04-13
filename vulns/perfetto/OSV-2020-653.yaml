@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in perfetto::base::Hash::Update
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14753
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   perfetto::base::Hash::Update
   perfetto::base::StringView::Hash
   perfetto::trace_processor::StringPool::InternString
-modified: '2021-06-21T06:56:27.302018Z'
+  ```
+modified: '2022-04-13T03:04:41.910747Z'
 published: '2020-07-01T00:00:22.674176Z'
 references:
 - type: REPORT

@@ -3,12 +3,14 @@ summary: Bad-cast to pcpp::IDnsResource from invalid vptr
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22872
 
+  ```
   Crash type: Bad-cast
   Crash state:
   Bad-cast to pcpp::IDnsResource from invalid vptr
   pcpp::DnsLayer::~DnsLayer
   pcpp::DnsLayer::~DnsLayer
-modified: '2021-06-23T06:28:21.243020Z'
+  ```
+modified: '2022-04-13T03:04:38.606966Z'
 published: '2020-06-24T01:51:11.832891Z'
 references:
 - type: REPORT
@@ -26,3 +28,4 @@ affected:
   ecosystem_specific:
     severity: HIGH
     fixed_range: 50aab202d24331ef35b9eff68d96ef9f97baf6a1:cbe1ffdfe2deaf2fbdbae9c1c7927e083156c165
+  versions: []

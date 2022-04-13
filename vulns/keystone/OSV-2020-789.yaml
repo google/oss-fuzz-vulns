@@ -3,12 +3,14 @@ summary: Heap-use-after-free in llvm_ks::X86Operand::getToken
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22850
 
+  ```
   Crash type: Heap-use-after-free READ 4
   Crash state:
   llvm_ks::X86Operand::getToken
   X86AsmParser::MatchAndEmitATTInstruction
   X86AsmParser::MatchAndEmitInstruction
-modified: '2021-06-21T06:56:24.148360Z'
+  ```
+modified: '2022-04-13T03:04:37.921888Z'
 published: '2020-07-14T05:37:34.150718Z'
 references:
 - type: REPORT

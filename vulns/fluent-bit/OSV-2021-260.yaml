@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in flb_parser_json_do
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30090
 
+  ```
   Crash type: Heap-buffer-overflow READ {*}
   Crash state:
   flb_parser_json_do
   flb_parser_do
   parser_fuzzer.c
-modified: '2021-06-21T06:56:24.486370Z'
+  ```
+modified: '2022-04-13T03:04:38.442836Z'
 published: '2021-02-01T00:01:01.495854Z'
 references:
 - type: REPORT

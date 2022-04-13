@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in smtp_command_parse_line
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23514
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   smtp_command_parse_line
   smtp_command_parse
   smtp_command_parse_next
-modified: '2021-06-21T06:56:21.290375Z'
+  ```
+modified: '2022-04-13T03:04:33.897659Z'
 published: '2020-07-14T22:13:57.514686Z'
 references:
 - type: REPORT
@@ -24,3 +26,4 @@ affected:
     - introduced: f5befde9939b105b490cd475df380c3220275bb6
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

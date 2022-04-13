@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in handle_gets
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=40455
 
+  ```
   Crash type: Heap-buffer-overflow READ {*}
   Crash state:
   handle_gets
   cli_mbox
   cli_scanmail
-modified: '2021-10-30T00:01:19.289348Z'
+  ```
+modified: '2022-04-13T03:04:39.363555Z'
 published: '2021-10-30T00:01:19.289143Z'
 references:
 - type: REPORT

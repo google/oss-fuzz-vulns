@@ -3,12 +3,14 @@ summary: Segv on unknown address in vips_XYZ2Lab_line
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24290
 
+  ```
   Crash type: Segv on unknown address
   Crash state:
   vips_XYZ2Lab_line
   vips_colour_gen
   vips_region_generate
-modified: '2021-03-09T04:49:05.226051Z'
+  ```
+modified: '2022-04-13T03:04:38.042963Z'
 published: '2020-07-24T00:00:05.678188Z'
 references:
 - type: REPORT
@@ -23,3 +25,4 @@ affected:
     events:
     - introduced: 54791b221cf4cad622f988f03d54502f70c91ad9
     - fixed: 3460814b9862795015e2295272157a72555ff4fd
+  versions: []

@@ -3,12 +3,14 @@ summary: Index-out-of-bounds in prepare_macpads
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14768
 
+  ```
   Crash type: Index-out-of-bounds
   Crash state:
   prepare_macpads
   _gcry_md_setkey
   gcry_mac_setkey
-modified: '2021-06-23T06:25:44.098878Z'
+  ```
+modified: '2022-04-13T03:04:35.044097Z'
 published: '2020-07-01T00:00:19.430674Z'
 references:
 - type: REPORT
@@ -26,3 +28,4 @@ affected:
   ecosystem_specific:
     severity: MEDIUM
     introduced_range: 121a73867d9139fb2f9f123f8b170ea9b8f30877:a3438fff66f02dae0c19e4169500d5a347321681
+  versions: []

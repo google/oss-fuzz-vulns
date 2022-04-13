@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in is_codefence
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23764
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   is_codefence
   parse_listitem
   parse_definition
-modified: '2021-06-21T06:56:23.264563Z'
+  ```
+modified: '2022-04-13T03:04:36.779217Z'
 published: '2020-07-04T00:00:01.713043Z'
 references:
 - type: REPORT

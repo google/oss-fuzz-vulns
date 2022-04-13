@@ -3,11 +3,13 @@ summary: Heap-buffer-overflow in pixCountArbInRect
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=44008
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   pixCountArbInRect
   pix3_fuzzer.cc
-modified: '2022-01-26T00:01:54.834336Z'
+  ```
+modified: '2022-04-13T03:04:32.660483Z'
 published: '2022-01-26T00:01:54.834091Z'
 references:
 - type: REPORT

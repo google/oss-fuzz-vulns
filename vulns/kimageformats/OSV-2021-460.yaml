@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in Op_to_sdr_planes::convert_colorspace
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31495
 
+  ```
   Crash type: Heap-buffer-overflow READ 2
   Crash state:
   Op_to_sdr_planes::convert_colorspace
   heif::ColorConversionPipeline::convert_image
   heif::convert_colorspace
-modified: '2021-06-21T06:56:27.820629Z'
+  ```
+modified: '2022-04-13T03:04:42.503023Z'
 published: '2021-03-01T00:00:11.393443Z'
 references:
 - type: REPORT

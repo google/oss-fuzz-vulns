@@ -3,12 +3,14 @@ summary: Use-of-uninitialized-value in macho_parse_file_32_be
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=4375
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   macho_parse_file_32_be
   macho__load
   yr_modules_load
-modified: '2021-06-23T06:30:56.662485Z'
+  ```
+modified: '2022-04-13T03:04:42.254202Z'
 published: '2021-01-13T21:56:24.033170Z'
 references:
 - type: REPORT

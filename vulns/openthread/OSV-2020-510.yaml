@@ -3,12 +3,14 @@ summary: UNKNOWN READ in ot::Timer::GetFireTime
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13390
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   ot::Timer::GetFireTime
   ot::Timer::DoesFireBefore
   ot::TimerScheduler::Add
-modified: '2021-06-21T06:56:25.183202Z'
+  ```
+modified: '2022-04-13T03:04:39.081813Z'
 published: '2020-07-01T00:00:13.757263Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: a3548df579617e737b075be4a88591e68195e115
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

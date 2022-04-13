@@ -3,12 +3,14 @@ summary: Stack-buffer-overflow in ot::MeshCoP::Commissioner::GeneratePskc
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=19386
 
+  ```
   Crash type: Stack-buffer-overflow WRITE {*}
   Crash state:
   ot::MeshCoP::Commissioner::GeneratePskc
   ot::Ncp::NcpBase::HandlePropertySet_SPINEL_PROP_MESHCOP_COMMISSIONER_GENERATE_PS
   ot::Ncp::NcpBase::HandlePropertySetForSpecialProperties
-modified: '2021-06-21T06:56:24.991838Z'
+  ```
+modified: '2022-04-13T03:04:38.919894Z'
 published: '2020-07-01T00:00:04.770226Z'
 references:
 - type: REPORT

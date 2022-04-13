@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in Curl_sasl_decode_mech
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42901
 
+  ```
   Crash type: Heap-buffer-overflow READ 10
   Crash state:
   Curl_sasl_decode_mech
   Curl_sasl_parse_url_auth_option
   pop3_parse_url_options
-modified: '2021-12-25T00:01:47.005603Z'
+  ```
+modified: '2022-04-13T03:04:42.912178Z'
 published: '2021-12-25T00:01:47.005391Z'
 references:
 - type: REPORT

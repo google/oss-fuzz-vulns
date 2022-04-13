@@ -3,12 +3,14 @@ summary: Stack-buffer-overflow in ot::Cli::Interpreter::OutputFormatV
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31232
 
+  ```
   Crash type: Stack-buffer-overflow READ {*}
   Crash state:
   ot::Cli::Interpreter::OutputFormatV
   ot::Cli::Interpreter::OutputLine
   ot::Cli::Interpreter::HandleDnsServiceResponse
-modified: '2021-06-21T06:56:25.109369Z'
+  ```
+modified: '2022-04-13T03:04:39.019449Z'
 published: '2021-02-23T00:00:14.405289Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: f57c5e23709c33d6b0c1a4e209223f35fd040529
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

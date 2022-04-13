@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in H5G__node_found
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=41011
 
+  ```
   Crash type: Heap-buffer-overflow READ 15
   Crash state:
   H5G__node_found
   H5B_find
   H5G__stab_lookup
-modified: '2022-03-26T00:05:22.322572Z'
+  ```
+modified: '2022-04-13T03:04:43.118629Z'
 published: '2021-11-15T00:00:41.528810Z'
 references:
 - type: REPORT

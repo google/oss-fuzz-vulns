@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in macho_handle_segment_64_be
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=4382
 
+  ```
   Crash type: Heap-buffer-overflow READ 8
   Crash state:
   macho_handle_segment_64_be
   macho_parse_file_64_be
   macho__load
-modified: '2021-06-23T06:30:55.574343Z'
+  ```
+modified: '2022-04-13T03:04:42.206560Z'
 published: '2021-01-13T21:57:36.399042Z'
 references:
 - type: REPORT

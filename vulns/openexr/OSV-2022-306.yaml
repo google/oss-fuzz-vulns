@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in Imf_3_1::memstream_read
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=46309
 
+  ```
   Crash type: Heap-buffer-overflow READ {*}
   Crash state:
   Imf_3_1::memstream_read
   dispatch_read
   extract_chunk_leader
-modified: '2022-04-12T00:04:09.490675Z'
+  ```
+modified: '2022-04-13T03:04:37.050267Z'
 published: '2022-04-05T00:00:45.087023Z'
 references:
 - type: REPORT

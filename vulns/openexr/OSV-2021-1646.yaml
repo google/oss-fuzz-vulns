@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in uncompress_b44_impl
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=41625
 
+  ```
   Crash type: Heap-buffer-overflow READ {*}
   Crash state:
   uncompress_b44_impl
   default_decompress_chunk
   exr_decoding_run
-modified: '2021-12-04T00:01:33.435658Z'
+  ```
+modified: '2022-04-13T03:04:37.134310Z'
 published: '2021-12-04T00:01:33.435462Z'
 references:
 - type: REPORT

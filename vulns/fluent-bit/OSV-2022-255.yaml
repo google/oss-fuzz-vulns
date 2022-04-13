@@ -3,12 +3,14 @@ summary: Heap-double-free in flb_pack_state_reset
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=45667
 
+  ```
   Crash type: Heap-double-free
   Crash state:
   flb_pack_state_reset
   pack_json_state_fuzzer.c
   flb_pack_state_init
-modified: '2022-03-19T00:00:22.692911Z'
+  ```
+modified: '2022-04-13T03:04:38.225956Z'
 published: '2022-03-19T00:00:22.692682Z'
 references:
 - type: REPORT

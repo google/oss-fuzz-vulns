@@ -3,12 +3,14 @@ summary: Heap-use-after-free in WelsDec::CWelsDecoder::SetOption
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18747
 
+  ```
   Crash type: Heap-use-after-free WRITE 1
   Crash state:
   WelsDec::CWelsDecoder::SetOption
   decoder_fuzzer.cpp
   WelsCommon::WelsFree
-modified: '2021-06-21T06:56:23.848203Z'
+  ```
+modified: '2022-04-13T03:04:37.579466Z'
 published: '2020-07-01T00:00:16.726929Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: e3b90efed243779b5c4961c2f9d6f1cedfeb1f46
   ecosystem_specific:
     severity: HIGH
+  versions: []

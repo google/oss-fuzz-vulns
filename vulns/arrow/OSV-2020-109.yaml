@@ -3,12 +3,14 @@ summary: UNKNOWN READ in arrow::BufferBuilder::Append
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20721
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   arrow::BufferBuilder::Append
   arrow::BaseBinaryBuilder<arrow::BinaryType>::Append
   parquet::ArrowBinaryHelper::Append
-modified: '2021-06-21T06:56:19.583848Z'
+  ```
+modified: '2022-04-13T03:04:31.888090Z'
 published: '2020-06-24T01:51:14.472718Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: d2ab289294f5eaa175e6bc4ab5fb74b5ea013f6e
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

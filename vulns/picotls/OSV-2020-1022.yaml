@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in ptls_set_negotiated_protocol
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13682
 
+  ```
   Crash type: Heap-buffer-overflow READ {*}
   Crash state:
   ptls_set_negotiated_protocol
   client_handle_encrypted_extensions
   handle_handshake_record
-modified: '2021-06-23T06:30:57.346149Z'
+  ```
+modified: '2022-04-13T03:04:42.386990Z'
 published: '2020-07-22T21:49:40.455457Z'
 references:
 - type: REPORT
@@ -26,3 +28,4 @@ affected:
   ecosystem_specific:
     severity: MEDIUM
     introduced_range: unknown:4965a3820533a979fb01da26cd4d6e1fea89e5b7
+  versions: []

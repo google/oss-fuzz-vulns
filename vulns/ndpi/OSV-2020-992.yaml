@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in ndpi_search_oscar
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20540
 
+  ```
   Crash type: Heap-buffer-overflow READ 4
   Crash state:
   ndpi_search_oscar
   check_ndpi_tcp_flow_func
   ndpi_detection_process_packet
-modified: '2021-06-23T06:26:05.304746Z'
+  ```
+modified: '2022-04-13T03:04:36.314529Z'
 published: '2020-07-22T21:49:38.649374Z'
 references:
 - type: REPORT
@@ -24,5 +26,6 @@ affected:
     - introduced: e695dd6eade754b2d50bdf297ca8bdc4105f93ff
     - fixed: 90e08b3568d8963a459cf06c4e67ff6fc99298e3
   ecosystem_specific:
-    severity: MEDIUM
     introduced_range: unknown:e695dd6eade754b2d50bdf297ca8bdc4105f93ff
+    severity: MEDIUM
+  versions: []

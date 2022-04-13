@@ -3,12 +3,14 @@ summary: Global-buffer-overflow in ZSTD_compressBlock_opt0
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=43365
 
+  ```
   Crash type: Global-buffer-overflow READ 1
   Crash state:
   ZSTD_compressBlock_opt0
   ZSTD_compressBlock_btopt
   ZSTD_buildSeqStore
-modified: '2022-01-07T00:00:09.720758Z'
+  ```
+modified: '2022-04-13T03:04:31.638184Z'
 published: '2022-01-07T00:00:09.720542Z'
 references:
 - type: REPORT

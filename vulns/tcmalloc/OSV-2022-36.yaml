@@ -4,11 +4,13 @@ summary: Heap-buffer-overflow in void absl::BytesToHexStringInternal<std::__1::b
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=43553
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   void absl::BytesToHexStringInternal<std::__1::basic_string<char, std::__1::char_
   absl::BytesToHexString
-modified: '2022-01-13T00:00:36.808581Z'
+  ```
+modified: '2022-04-13T03:04:42.815986Z'
 published: '2022-01-13T00:00:36.808390Z'
 references:
 - type: REPORT

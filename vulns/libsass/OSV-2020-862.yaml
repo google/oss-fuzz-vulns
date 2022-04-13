@@ -4,12 +4,14 @@ summary: Use-of-uninitialized-value in std::__1::vector<std::__1::vector<Sass::E
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21223
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   std::__1::vector<std::__1::vector<Sass::Extension, std::__1::allocator<Sass::Ext
   Sass::Extender::extendCompound
   Sass::Extender::extendComplex
-modified: '2021-06-21T06:56:24.501091Z'
+  ```
+modified: '2022-04-13T03:04:38.454933Z'
 published: '2020-07-14T22:13:48.731457Z'
 references:
 - type: REPORT

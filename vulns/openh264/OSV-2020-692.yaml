@@ -3,12 +3,14 @@ summary: Heap-use-after-free in WelsDec::SetUnRef
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18458
 
+  ```
   Crash type: Heap-use-after-free WRITE 1
   Crash state:
   WelsDec::SetUnRef
   WelsDec::SlidingWindow
   WelsDec::WelsMarkAsRef
-modified: '2021-06-21T06:56:23.755062Z'
+  ```
+modified: '2022-04-13T03:04:37.499930Z'
 published: '2020-07-01T00:00:25.142699Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: aef502aca2b912fe24764b02161a61eacdf249ba
   ecosystem_specific:
     severity: HIGH
+  versions: []

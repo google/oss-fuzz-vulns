@@ -3,12 +3,14 @@ summary: Stack-buffer-overflow in fmt::v7::detail::buffer<char>::push_back
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25884
 
+  ```
   Crash type: Stack-buffer-overflow READ 1
   Crash state:
   fmt::v7::detail::buffer<char>::push_back
   std::__1::back_insert_iterator<fmt::v7::detail::buffer<char> >::operator=
   fmt::v7::detail::buffer_appender<char> std::__1::__copy_constexpr<char const*, f
-modified: '2021-06-21T06:56:26.962655Z'
+  ```
+modified: '2022-04-13T03:04:41.466004Z'
 published: '2020-09-25T00:00:10.846065Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: c156093ffd99b0689af3826f3aa04e7db97cc543
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

@@ -3,12 +3,14 @@ summary: Use-of-uninitialized-value in FLAC::Decoder::FuzzerStream::write_callba
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=16503
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   FLAC::Decoder::FuzzerStream::write_callback
   write_audio_frame_to_client_
   read_frame_
-modified: '2021-06-21T06:56:26.156459Z'
+  ```
+modified: '2022-04-13T03:04:40.547682Z'
 published: '2020-10-03T00:00:34.944603Z'
 references:
 - type: REPORT
@@ -26,3 +28,4 @@ affected:
     - introduced: 7e79d0aa9c4274776259a52a15081dc5f62c5063
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

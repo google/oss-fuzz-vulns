@@ -3,12 +3,14 @@ summary: Null-dereference READ in gstate_clone_core
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=43989
 
+  ```
   Crash type: Null-dereference READ
   Crash state:
   gstate_clone_core
   gs_gsave
   gs_output_page
-modified: '2022-01-24T00:00:19.630995Z'
+  ```
+modified: '2022-04-13T03:04:34.647038Z'
 published: '2022-01-24T00:00:19.630777Z'
 references:
 - type: REPORT

@@ -3,12 +3,14 @@ summary: Use-after-poison in rawspeed::unroll_loop_t<void rawspeed::LJpegDecompr
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=4451
 
+  ```
   Crash type: Use-after-poison WRITE 2
   Crash state:
   rawspeed::unroll_loop_t<void rawspeed::LJpegDecompressor::decodeN<4>
   void rawspeed::LJpegDecompressor::decodeN<4>
   rawspeed::AbstractLJpegDecompressor::decode
-modified: '2021-06-23T06:26:06.526729Z'
+  ```
+modified: '2022-04-13T03:04:36.488088Z'
 published: '2021-01-13T21:57:40.779998Z'
 references:
 - type: REPORT
@@ -26,3 +28,4 @@ affected:
   ecosystem_specific:
     severity: HIGH
     fixed_range: 297ccdd0e7dfd378aeb2a3896987baa5d96ed344:580add2219c696e425087bc61b952f4ccb295f09
+  versions: []

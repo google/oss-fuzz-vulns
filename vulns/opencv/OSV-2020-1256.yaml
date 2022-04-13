@@ -3,12 +3,14 @@ summary: UNKNOWN WRITE in TIFFReadRGBATileExt
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14185
 
+  ```
   Crash type: UNKNOWN WRITE
   Crash state:
   TIFFReadRGBATileExt
   cv::TiffDecoder::readData
   cv::imread
-modified: '2021-11-22T06:29:18.612747Z'
+  ```
+modified: '2022-04-13T03:04:31.525122Z'
 published: '2020-07-22T21:50:00.758042Z'
 references:
 - type: REPORT
@@ -31,5 +33,5 @@ affected:
   - 3.4.5
   - 3.4.6
   ecosystem_specific:
-    severity: HIGH
     introduced_range: unknown:6bcf0b5519c190826cf0f21efd87cbe256eabc48
+    severity: HIGH

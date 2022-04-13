@@ -3,12 +3,14 @@ summary: Negative-size-param in fuzz_tlv_to_string
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=16696
 
+  ```
   Crash type: Negative-size-param
   Crash state:
   fuzz_tlv_to_string
   fuzz_parse_tlv
   curl_fuzzer.cc
-modified: '2021-06-23T06:31:20.237833Z'
+  ```
+modified: '2022-04-13T03:04:42.878556Z'
 published: '2020-07-22T21:49:45.752151Z'
 references:
 - type: REPORT
@@ -26,3 +28,4 @@ affected:
   ecosystem_specific:
     fixed_range: 0a5d28fa2ec872de55c8d3f3b62675f17ca9cd45:25f962193574e35fe638764c3afb9d25d8a9768b
     introduced_range: unknown:0a5d28fa2ec872de55c8d3f3b62675f17ca9cd45
+  versions: []

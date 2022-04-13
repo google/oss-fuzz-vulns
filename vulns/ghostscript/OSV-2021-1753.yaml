@@ -3,12 +3,14 @@ summary: UNKNOWN READ in names_string_ref
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42907
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   names_string_ref
   zfont_glyph_name
   pdfi_fapi_get_glyphname_or_cid
-modified: '2021-12-25T00:00:41.933505Z'
+  ```
+modified: '2022-04-13T03:04:34.530908Z'
 published: '2021-12-25T00:00:41.933291Z'
 references:
 - type: REPORT

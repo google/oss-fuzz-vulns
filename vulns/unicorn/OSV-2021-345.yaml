@@ -3,12 +3,14 @@ summary: UNKNOWN READ in cpu_arm_exec_arm
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30636
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   cpu_arm_exec_arm
   tcg_cpu_exec_arm
   tcg_exec_all_arm
-modified: '2021-11-10T00:07:59.478145Z'
+  ```
+modified: '2022-04-13T03:04:39.131199Z'
 published: '2021-02-10T00:00:20.946004Z'
 references:
 - type: REPORT

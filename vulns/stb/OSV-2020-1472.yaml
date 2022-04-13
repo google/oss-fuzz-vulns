@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in stbi__YCbCr_to_RGB_simd
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22605
 
+  ```
   Crash type: Heap-buffer-overflow READ 8
   Crash state:
   stbi__YCbCr_to_RGB_simd
   load_jpeg_image
   stbi__jpeg_load
-modified: '2021-06-21T06:56:26.442939Z'
+  ```
+modified: '2022-04-13T03:04:40.821778Z'
 published: '2020-07-28T00:00:27.093869Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: b42009b3b9d4ca35bc703f5310eedc74f584be58
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

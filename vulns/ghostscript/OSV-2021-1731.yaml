@@ -3,12 +3,14 @@ summary: Memcpy-param-overlap in gs_fapi_do_char
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42656
 
+  ```
   Crash type: Memcpy-param-overlap
   Crash state:
   gs_fapi_do_char
   pdfi_fapi_build_char
   show_proceed
-modified: '2021-12-21T00:01:56.737053Z'
+  ```
+modified: '2022-04-13T03:04:34.609379Z'
 published: '2021-12-21T00:01:56.736819Z'
 references:
 - type: REPORT

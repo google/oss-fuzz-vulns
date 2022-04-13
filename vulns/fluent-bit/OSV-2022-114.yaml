@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in add_compile_string
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=44379
 
+  ```
   Crash type: Heap-buffer-overflow READ 3
   Crash state:
   add_compile_string
   compile_tree
   compile_tree
-modified: '2022-02-04T00:00:10.501269Z'
+  ```
+modified: '2022-04-13T03:04:38.331653Z'
 published: '2022-02-04T00:00:10.501043Z'
 references:
 - type: REPORT

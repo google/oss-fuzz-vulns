@@ -3,12 +3,14 @@ summary: Heap-double-free in mrb_default_allocf
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23801
 
+  ```
   Crash type: Heap-double-free
   Crash state:
   mrb_default_allocf
   mrb_free
   obj_free
-modified: '2021-06-21T06:56:25.626805Z'
+  ```
+modified: '2022-04-13T03:04:39.780694Z'
 published: '2020-07-04T00:00:01.948828Z'
 references:
 - type: REPORT

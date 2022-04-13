@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in dotnet_parse_tilde_2
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29419
 
+  ```
   Crash type: Heap-buffer-overflow READ 2
   Crash state:
   dotnet_parse_tilde_2
   dotnet_parse_tilde
   dotnet_parse_com
-modified: '2021-06-21T06:56:27.644866Z'
+  ```
+modified: '2022-04-13T03:04:42.276480Z'
 published: '2021-01-10T00:01:34.995212Z'
 references:
 - type: REPORT

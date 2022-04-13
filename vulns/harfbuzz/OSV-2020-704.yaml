@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in BEInt<unsigned char, 1>::set
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13736
 
+  ```
   Crash type: Heap-buffer-overflow WRITE 1
   Crash state:
   BEInt<unsigned char, 1>::set
   CFF::CFFIndex<OT::IntType<unsigned int, 4u> >::set_offset_at
   bool CFF::FDArray<OT::IntType<unsigned int, 4u> >::serialize<CFF::cff2_font_dict
-modified: '2021-06-21T06:56:20.503659Z'
+  ```
+modified: '2022-04-13T03:04:32.924555Z'
 published: '2020-07-01T00:00:25.806258Z'
 references:
 - type: REPORT
@@ -26,3 +28,4 @@ affected:
     - introduced: 5bbe78a0f353bb806a686fd97ad411fa8a9ebf5b
   ecosystem_specific:
     severity: HIGH
+  versions: []

@@ -3,12 +3,14 @@ summary: Heap-use-after-free in AK::Utf8CodePointIterator::operator*
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34911
 
+  ```
   Crash type: Heap-use-after-free READ 1
   Crash state:
   AK::Utf8CodePointIterator::operator*
   AK::URLParser::parse
   AK::URL::URL
-modified: '2021-06-21T06:56:19.847825Z'
+  ```
+modified: '2022-04-13T03:04:32.206558Z'
 published: '2021-06-05T00:00:36.391254Z'
 references:
 - type: REPORT
@@ -24,3 +26,4 @@ affected:
     - introduced: c0d1a7588153d35f06a9ff5d009261099e6fc647
   ecosystem_specific:
     severity: HIGH
+  versions: []

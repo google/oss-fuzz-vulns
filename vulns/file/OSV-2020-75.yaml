@@ -3,12 +3,14 @@ summary: Index-out-of-bounds in der_tag
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20753
 
+  ```
   Crash type: Index-out-of-bounds
   Crash state:
   der_tag
   der_cmp
   magiccheck
-modified: '2021-06-23T06:24:49.242815Z'
+  ```
+modified: '2022-04-13T03:04:30.881125Z'
 published: '2020-06-24T01:51:12.970172Z'
 references:
 - type: REPORT
@@ -24,6 +26,7 @@ affected:
     - introduced: 648bbd918a00661b5a4f355cb40f9a0f3c58007d
     - fixed: 29955546ee23b05359f2a4ed6986de590ed0b9f2
   ecosystem_specific:
-    introduced_range: 6cd9ecd332c05896009db23bac64692ee3e2df24:1956e3ada75acf8953936dc4a9db7d5f4157fd72
-    fixed_range: 1956e3ada75acf8953936dc4a9db7d5f4157fd72:29955546ee23b05359f2a4ed6986de590ed0b9f2
     severity: MEDIUM
+    fixed_range: 1956e3ada75acf8953936dc4a9db7d5f4157fd72:29955546ee23b05359f2a4ed6986de590ed0b9f2
+    introduced_range: 6cd9ecd332c05896009db23bac64692ee3e2df24:1956e3ada75acf8953936dc4a9db7d5f4157fd72
+  versions: []

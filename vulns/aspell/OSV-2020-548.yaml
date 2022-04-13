@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in acommon::DecodeDirect<unsigned short>::decode
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=16531
 
+  ```
   Crash type: Heap-buffer-overflow READ 2
   Crash state:
   acommon::DecodeDirect<unsigned short>::decode
   acommon::Convert::convert
   aspell_speller_suggest
-modified: '2021-06-21T06:56:20.825329Z'
+  ```
+modified: '2022-04-13T03:04:33.275580Z'
 published: '2020-07-01T00:00:16.159762Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: de29341638833ba7717bd6b5e6850998454b044b
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

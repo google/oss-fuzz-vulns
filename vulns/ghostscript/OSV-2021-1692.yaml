@@ -3,12 +3,14 @@ summary: Heap-use-after-free in chunk_free_object
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42324
 
+  ```
   Crash type: Heap-use-after-free READ 8
   Crash state:
   chunk_free_object
   pdfi_open_memory_stream_from_filtered_stream
   pdfi_build_mesh_shading
-modified: '2021-12-14T00:01:46.707942Z'
+  ```
+modified: '2022-04-13T03:04:34.525419Z'
 published: '2021-12-14T00:01:46.707735Z'
 references:
 - type: REPORT

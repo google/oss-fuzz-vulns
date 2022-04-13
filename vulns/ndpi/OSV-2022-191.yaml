@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in ndpi_handle_ipv6_extension_headers
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=44942
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   ndpi_handle_ipv6_extension_headers
   ndpi_workflow_process_packet
   fuzz_ndpi_reader.c
-modified: '2022-02-23T00:01:48.558669Z'
+  ```
+modified: '2022-04-13T03:04:35.972108Z'
 published: '2022-02-23T00:01:48.558449Z'
 references:
 - type: REPORT

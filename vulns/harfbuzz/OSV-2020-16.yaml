@@ -3,12 +3,14 @@ summary: Heap-use-after-free in BEInt<unsigned short, 2>::operator unsigned shor
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20906
 
+  ```
   Crash type: Heap-use-after-free READ 2
   Crash state:
   BEInt<unsigned short, 2>::operator unsigned short
   OT::IntType<unsigned short, 2u>::operator unsigned int
   OT::GlyphVarData::has_data
-modified: '2021-06-21T06:56:20.578044Z'
+  ```
+modified: '2022-04-13T03:04:33.001228Z'
 published: '2020-06-24T01:51:10.290066Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 8eba66c1c6d19bcc779a3b4e7b68251511986ee8
   ecosystem_specific:
     severity: HIGH
+  versions: []

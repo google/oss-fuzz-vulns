@@ -3,12 +3,14 @@ summary: Heap-use-after-free in XRefEntry::setFlag
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11244
 
+  ```
   Crash type: Heap-use-after-free READ 4
   Crash state:
   XRefEntry::setFlag
   Parser::makeStream
   Parser::getObj
-modified: '2021-06-21T06:56:23.539165Z'
+  ```
+modified: '2022-04-13T03:04:37.294930Z'
 published: '2021-01-13T00:01:05.885589Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 08572e1bdca03baed694dd9828bb2b878865e669
   ecosystem_specific:
     severity: HIGH
+  versions: []

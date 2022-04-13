@@ -4,12 +4,14 @@ summary: Use-of-uninitialized-value in std::__1::__function::__func<LLVMFuzzerTe
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26617
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   std::__1::__function::__func<LLVMFuzzerTestOneInput::$_0, std::__1::allocator<LL
   functional
   std::__1::__function::__func<LLVMFuzzerTestOneInput::$_0, std::__1::allocator<LL
-modified: '2021-06-21T06:56:26.528006Z'
+  ```
+modified: '2022-04-13T03:04:40.954895Z'
 published: '2020-10-25T00:00:31.690756Z'
 references:
 - type: REPORT
@@ -26,3 +28,4 @@ affected:
     - fixed: 72e26ea4839206a379f46e49e84e5203294b9fbb
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

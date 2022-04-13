@@ -3,11 +3,13 @@ summary: Heap-buffer-overflow in flb_hash_get_by_id
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=36718
 
+  ```
   Crash type: Heap-buffer-overflow READ {*}
   Crash state:
   flb_hash_get_by_id
   utils_fuzzer.c
-modified: '2021-08-01T00:00:59.162893Z'
+  ```
+modified: '2022-04-13T03:04:38.242825Z'
 published: '2021-08-01T00:00:59.162586Z'
 references:
 - type: REPORT

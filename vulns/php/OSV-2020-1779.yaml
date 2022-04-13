@@ -3,12 +3,14 @@ summary: Heap-use-after-free in zend_gc_addref
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25697
 
+  ```
   Crash type: Heap-use-after-free READ 4
   Crash state:
   zend_gc_addref
   zend_generator_update_current
   zend_generator_dtor_storage
-modified: '2021-06-21T06:56:20.998322Z'
+  ```
+modified: '2022-04-13T03:04:33.599624Z'
 published: '2020-09-17T00:00:13.246764Z'
 references:
 - type: REPORT

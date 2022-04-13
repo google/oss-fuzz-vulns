@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in ih264d_parse_pslice
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=27856
 
+  ```
   Crash type: Heap-buffer-overflow WRITE {*}
   Crash state:
   ih264d_parse_pslice
   ih264d_parse_decode_slice
   ih264d_parse_nal_unit
-modified: '2021-06-21T06:56:22.185506Z'
+  ```
+modified: '2022-04-13T03:04:35.473895Z'
 published: '2020-11-26T00:00:03.791789Z'
 references:
 - type: REPORT
@@ -26,3 +28,4 @@ affected:
     - fixed: 0b601e1a4fb246ce7c60aa101af5af4edd0a842d
   ecosystem_specific:
     severity: HIGH
+  versions: []

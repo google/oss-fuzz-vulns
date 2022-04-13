@@ -3,12 +3,14 @@ summary: Heap-use-after-free in gc_mark_grey
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23350
 
+  ```
   Crash type: Heap-use-after-free READ 4
   Crash state:
   gc_mark_grey
   gc_mark_roots
   zend_gc_collect_cycles
-modified: '2021-06-21T06:56:21.012471Z'
+  ```
+modified: '2022-04-13T03:04:33.611778Z'
 published: '2020-09-16T00:00:06.911473Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: cb0fa99174fa2af6f626509b85845ff599557615
   ecosystem_specific:
     severity: HIGH
+  versions: []

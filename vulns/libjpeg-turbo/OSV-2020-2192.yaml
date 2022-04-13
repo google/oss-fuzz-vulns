@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in decompress_smooth_data
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=27852
 
+  ```
   Crash type: Heap-buffer-overflow READ 2
   Crash state:
   decompress_smooth_data
   process_data_context_main
   jpeg_read_scanlines
-modified: '2021-06-21T06:56:23.983436Z'
+  ```
+modified: '2022-04-13T03:04:37.699400Z'
 published: '2020-11-26T00:00:47.446491Z'
 references:
 - type: REPORT

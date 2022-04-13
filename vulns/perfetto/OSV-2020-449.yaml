@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in perfetto::trace_processor::FuchsiaTraceParser::
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14752
 
+  ```
   Crash type: Heap-buffer-overflow READ 8
   Crash state:
   perfetto::trace_processor::FuchsiaTraceParser::ParseTracePacket
   perfetto::trace_processor::TraceSorter::SortAndExtractEventsBeyondWindow
   perfetto::trace_processor::TraceProcessorImpl::NotifyEndOfFile
-modified: '2021-06-21T06:56:27.359168Z'
+  ```
+modified: '2022-04-13T03:04:41.960263Z'
 published: '2020-07-01T00:00:10.213693Z'
 references:
 - type: REPORT

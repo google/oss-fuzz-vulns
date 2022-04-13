@@ -3,12 +3,14 @@ summary: UNKNOWN READ in Sass::Inspect::operator
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=19988
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   Sass::Inspect::operator
   Sass::Output::operator
   Sass::Output::operator
-modified: '2021-06-21T06:56:24.516108Z'
+  ```
+modified: '2022-04-13T03:04:38.471160Z'
 published: '2020-06-26T00:00:10.424929Z'
 references:
 - type: REPORT

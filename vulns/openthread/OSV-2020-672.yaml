@@ -3,12 +3,14 @@ summary: Stack-buffer-overflow in ot::NetworkData::NetworkData::PrefixMatch
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13333
 
+  ```
   Crash type: Stack-buffer-overflow READ 1
   Crash state:
   ot::NetworkData::NetworkData::PrefixMatch
   ot::NetworkData::LeaderBase::GetContext
   ot::Mle::MleRouter::GetNeighbor
-modified: '2021-06-21T06:56:25.017111Z'
+  ```
+modified: '2022-04-13T03:04:38.941219Z'
 published: '2020-07-01T00:00:23.867280Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: a3548df579617e737b075be4a88591e68195e115
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

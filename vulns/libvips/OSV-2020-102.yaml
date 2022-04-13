@@ -3,12 +3,14 @@ summary: Heap-use-after-free in vips_buf_vappendf
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20843
 
+  ```
   Crash type: Heap-use-after-free READ 2
   Crash state:
   vips_buf_vappendf
   vips_verror
   vips_error
-modified: '2021-06-21T06:56:24.212953Z'
+  ```
+modified: '2022-04-13T03:04:38.019472Z'
 published: '2020-06-24T01:51:14.150858Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 175408733fcffed7aa0618c6d5ad5390ed5c4f88
   ecosystem_specific:
     severity: HIGH
+  versions: []

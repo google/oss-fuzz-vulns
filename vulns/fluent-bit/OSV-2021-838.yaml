@@ -3,12 +3,14 @@ summary: Heap-use-after-free in multiline_parser_conf_file
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34960
 
+  ```
   Crash type: Heap-use-after-free READ 8
   Crash state:
   multiline_parser_conf_file
   flb_parser_conf_file
   config_fuzzer.c
-modified: '2021-06-21T06:56:24.351855Z'
+  ```
+modified: '2022-04-13T03:04:38.291023Z'
 published: '2021-06-07T00:00:33.275043Z'
 references:
 - type: REPORT
@@ -26,3 +28,4 @@ affected:
     - fixed: ed82460da17f5a029df74503d3a5f8f69d29d3ea
   ecosystem_specific:
     severity: HIGH
+  versions: []

@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in pcpp::SSLCertificateRequestMessage::SSLCertific
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23592
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   pcpp::SSLCertificateRequestMessage::SSLCertificateRequestMessage
   pcpp::SSLHandshakeMessage::createHandhakeMessage
   pcpp::SSLHandshakeLayer::SSLHandshakeLayer
-modified: '2021-06-21T06:56:24.625453Z'
+  ```
+modified: '2022-04-13T03:04:38.579606Z'
 published: '2020-07-14T05:37:28.661560Z'
 references:
 - type: REPORT

@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in asn1_decode_entry
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=16620
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   asn1_decode_entry
   asn1_decode
   asn1_decode_entry
-modified: '2021-06-23T06:30:09.482763Z'
+  ```
+modified: '2022-04-13T03:04:41.602984Z'
 published: '2020-07-22T21:50:03.236534Z'
 references:
 - type: REPORT
@@ -26,3 +28,4 @@ affected:
   ecosystem_specific:
     introduced_range: unknown:b0241eefa1b47f1420456f5dbc43564d59961a54
     severity: MEDIUM
+  versions: []

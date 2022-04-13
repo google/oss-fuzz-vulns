@@ -3,12 +3,14 @@ summary: Use-of-uninitialized-value in tinfl_decompress
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=27413
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   tinfl_decompress
   mz_inflate
   mz_uncompress2
-modified: '2021-06-28T00:03:44.441923Z'
+  ```
+modified: '2022-04-13T03:04:40.063023Z'
 published: '2020-11-13T00:00:56.838971Z'
 references:
 - type: REPORT

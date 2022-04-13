@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in ExpandPictureChroma_c
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26570
 
+  ```
   Crash type: Heap-buffer-overflow WRITE 8
   Crash state:
   ExpandPictureChroma_c
   ExpandReferencingPicture
   WelsDec::WelsCheckAndRecoverForFutureDecoding
-modified: '2021-06-21T06:56:23.884546Z'
+  ```
+modified: '2022-04-13T03:04:37.610667Z'
 published: '2020-10-23T00:00:43.617858Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: b52786888ddce9d6bc06b7825ba9bffc65924e0c
   ecosystem_specific:
     severity: HIGH
+  versions: []

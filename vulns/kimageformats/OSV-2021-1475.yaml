@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in derive_spatial_luma_vector_prediction
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=40107
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   derive_spatial_luma_vector_prediction
   fill_luma_motion_vector_predictors
   motion_vectors_and_ref_indices
-modified: '2022-04-10T00:04:13.701579Z'
+  ```
+modified: '2022-04-13T03:04:42.496087Z'
 published: '2021-10-21T00:01:39.891638Z'
 references:
 - type: REPORT

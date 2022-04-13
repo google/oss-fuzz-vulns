@@ -3,12 +3,14 @@ summary: Heap-double-free in RMFRasterBand::IReadBlock
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=9138
 
+  ```
   Crash type: Heap-double-free
   Crash state:
   RMFRasterBand::IReadBlock
   GDALRasterBand::GetLockedBlockRef
   GDALRasterBand::IRasterIO
-modified: '2021-06-21T06:56:27.489670Z'
+  ```
+modified: '2022-04-13T03:04:42.113743Z'
 published: '2021-01-13T00:00:05.543072Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 65f13fc5fb879cd00f08904f14a9339c11be59c3
   ecosystem_specific:
     severity: HIGH
+  versions: []

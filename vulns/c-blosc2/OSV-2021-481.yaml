@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in ZSTD_createDDict_advanced
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31586
 
+  ```
   Crash type: Heap-buffer-overflow READ {*}
   Crash state:
   ZSTD_createDDict_advanced
   ZSTD_createDDict
   blosc_run_decompression_with_context
-modified: '2021-06-21T06:56:26.067771Z'
+  ```
+modified: '2022-04-13T03:04:40.423955Z'
 published: '2021-03-03T00:00:10.560497Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 4f6d42ab4b25e781dad94c5324dab8a4dbb702ad
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

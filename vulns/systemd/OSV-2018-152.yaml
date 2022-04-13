@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in dhcp6_option_parse_status
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=10746
 
+  ```
   Crash type: Heap-buffer-overflow READ 2
   Crash state:
   dhcp6_option_parse_status
   dhcp6_option_parse_pdprefix
   dhcp6_option_parse_ia
-modified: '2021-06-21T06:56:25.838161Z'
+  ```
+modified: '2022-04-13T03:04:40.073658Z'
 published: '2021-01-13T00:01:04.855220Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 84452783b8bcc44e0dbb7fa6ddc6dad8c064bdfe
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

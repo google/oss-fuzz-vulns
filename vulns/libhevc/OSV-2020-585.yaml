@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in ihevcd_get_mv_ctb
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=17286
 
+  ```
   Crash type: Heap-buffer-overflow WRITE 1
   Crash state:
   ihevcd_get_mv_ctb
   ihevcd_process
   ihevcd_decode
-modified: '2021-06-21T06:56:18.863941Z'
+  ```
+modified: '2022-04-13T03:04:30.977795Z'
 published: '2020-07-01T00:00:18.469990Z'
 references:
 - type: REPORT

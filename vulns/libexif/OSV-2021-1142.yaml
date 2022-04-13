@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in exif_get_slong
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=37231
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   exif_get_slong
   mnote_apple_entry_get_value
   exif_mnote_data_apple_get_value
-modified: '2021-08-17T00:02:03.206448Z'
+  ```
+modified: '2022-04-13T03:04:40.888904Z'
 published: '2021-08-17T00:02:03.206223Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: eb452f533b2d906130a557ced3d6e38d7b064ff9
   ecosystem_specific:
     severity: HIGH
+  versions: []

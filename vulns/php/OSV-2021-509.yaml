@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in _estrdup
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31922
 
+  ```
   Crash type: Heap-buffer-overflow READ {*}
   Crash state:
   _estrdup
   exif_process_user_comment
   exif_process_IFD_TAG_impl
-modified: '2021-06-23T06:25:30.852060Z'
+  ```
+modified: '2022-04-13T03:04:33.422383Z'
 published: '2021-03-11T00:00:07.409097Z'
 references:
 - type: REPORT
@@ -24,5 +26,6 @@ affected:
     - introduced: 1d5f359f5671dc26df5369b00aab1bbf1f40c65b
     - fixed: 65859fe17e2d0b39a7376704e46b9d240d4d2ef7
   ecosystem_specific:
-    fixed_range: 1d5f359f5671dc26df5369b00aab1bbf1f40c65b:65859fe17e2d0b39a7376704e46b9d240d4d2ef7
     severity: MEDIUM
+    fixed_range: 1d5f359f5671dc26df5369b00aab1bbf1f40c65b:65859fe17e2d0b39a7376704e46b9d240d4d2ef7
+  versions: []

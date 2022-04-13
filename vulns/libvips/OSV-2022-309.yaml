@@ -3,12 +3,14 @@ summary: UNKNOWN READ in decompress_smooth_data
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=46349
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   decompress_smooth_data
   process_data_simple_main
   jpeg_read_scanlines
-modified: '2022-04-06T00:00:33.512453Z'
+  ```
+modified: '2022-04-13T03:04:38.013782Z'
 published: '2022-04-06T00:00:33.512236Z'
 references:
 - type: REPORT

@@ -3,12 +3,14 @@ summary: Use-of-uninitialized-value in UA_ServerConfig_clean
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14848
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   UA_ServerConfig_clean
   UA_Server_delete
   fuzz_binary_message.cc
-modified: '2021-06-21T06:56:26.751276Z'
+  ```
+modified: '2022-04-13T03:04:41.265587Z'
 published: '2020-07-01T00:00:08.299104Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 4e3d0b046c3a7fe4c5ece8a5f4f1e59520b39ae3
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

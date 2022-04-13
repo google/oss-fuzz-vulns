@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in s_hex_process
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=43693
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   s_hex_process
   s_exD_process
   sreadbuf
-modified: '2022-01-17T00:00:22.068771Z'
+  ```
+modified: '2022-04-13T03:04:34.485965Z'
 published: '2022-01-17T00:00:22.068535Z'
 references:
 - type: REPORT

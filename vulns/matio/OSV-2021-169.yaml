@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in H5O__cont_decode
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29549
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   H5O__cont_decode
   H5O__chunk_deserialize
   H5O__cache_deserialize
-modified: '2021-06-21T06:56:28.285930Z'
+  ```
+modified: '2022-04-13T03:04:43.145723Z'
 published: '2021-01-13T21:57:45.199364Z'
 references:
 - type: REPORT

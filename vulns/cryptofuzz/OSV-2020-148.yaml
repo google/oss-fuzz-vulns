@@ -3,12 +3,14 @@ summary: Use-of-uninitialized-value in AES_encrypt
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23015
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   AES_encrypt
   AES_wrap_key
   aes_wrap_cipher
-modified: '2021-06-21T06:56:21.857244Z'
+  ```
+modified: '2022-04-13T03:04:35.093996Z'
 published: '2020-06-24T01:51:16.262503Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 27a32a5381e525de5646bb23898a1748cd09172a
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

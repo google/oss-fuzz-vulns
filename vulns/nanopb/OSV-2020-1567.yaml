@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in allocate_field
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24580
 
+  ```
   Crash type: Heap-buffer-overflow WRITE 8
   Crash state:
   allocate_field
   decode_pointer_field
   decode_field
-modified: '2021-06-21T06:56:20.194837Z'
+  ```
+modified: '2022-04-13T03:04:32.617326Z'
 published: '2020-08-02T00:01:18.300186Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: cf507d1b1e71b45136ca2bd7d37b7b4958443cd1
   ecosystem_specific:
     severity: HIGH
+  versions: []

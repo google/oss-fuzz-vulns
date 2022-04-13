@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in parse_param_name
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=38052
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   parse_param_name
   parse_param2
   parse_params2
-modified: '2021-09-04T00:01:26.375401Z'
+  ```
+modified: '2022-04-13T03:04:37.768689Z'
 published: '2021-09-04T00:01:26.375213Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 20db418f1e35f31d7a90d7cabbd22ae989b7266c
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

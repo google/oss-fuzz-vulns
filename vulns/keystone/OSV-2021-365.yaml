@@ -3,12 +3,14 @@ summary: Global-buffer-overflow in llvm_ks::StringRef::find_last_not_of
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30790
 
+  ```
   Crash type: Global-buffer-overflow READ 1
   Crash state:
   llvm_ks::StringRef::find_last_not_of
   llvm_ks::StringRef::rtrim
   llvm_ks::StringRef::trim
-modified: '2021-03-09T05:46:28.897362Z'
+  ```
+modified: '2022-04-13T03:04:37.927355Z'
 published: '2021-02-11T00:00:55.402078Z'
 references:
 - type: REPORT

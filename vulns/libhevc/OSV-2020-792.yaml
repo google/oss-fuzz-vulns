@@ -3,12 +3,14 @@ summary: Use-of-uninitialized-value in ihevc_inter_pred_chroma_copy_ssse3
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23197
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   ihevc_inter_pred_chroma_copy_ssse3
   ihevcd_inter_pred_ctb
   ihevcd_process
-modified: '2021-11-22T06:22:27.621987Z'
+  ```
+modified: '2022-04-13T03:04:31.063762Z'
 published: '2020-07-14T05:37:35.331259Z'
 references:
 - type: REPORT
@@ -111,5 +113,5 @@ affected:
   - android-security-11.0.0_r49
   - android-vts-11.0_r5
   ecosystem_specific:
-    fixed_range: 9623000c124facfcee78ffbc341740fa68f3d914:e979e4f69a45519b574186b56c883f5f1a413ba8
     severity: MEDIUM
+    fixed_range: 9623000c124facfcee78ffbc341740fa68f3d914:e979e4f69a45519b574186b56c883f5f1a413ba8

@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in agentx_parse_string
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14481
 
+  ```
   Crash type: Heap-buffer-overflow READ {*}
   Crash state:
   agentx_parse_string
   agentx_parse
   agentx_parse_fuzzer.c
-modified: '2021-06-21T06:56:22.431464Z'
+  ```
+modified: '2022-04-13T03:04:35.805999Z'
 published: '2020-07-01T00:00:06.466746Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 7de049193ab78d9fcdc3baa2c0673bd1e300ed5b
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

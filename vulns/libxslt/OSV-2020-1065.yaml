@@ -3,12 +3,14 @@ summary: Use-of-uninitialized-value in xsltNumberFormatInsertNumbers
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14471
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   xsltNumberFormatInsertNumbers
   xsltNumberFormat
   xsltNumber
-modified: '2021-06-23T06:25:30.974231Z'
+  ```
+modified: '2022-04-13T03:04:33.724571Z'
 published: '2020-07-22T21:49:44.558167Z'
 references:
 - type: REPORT
@@ -26,3 +28,4 @@ affected:
   ecosystem_specific:
     severity: MEDIUM
     introduced_range: unknown:7f56378a73af8a61da78b8091f0e317316cee300
+  versions: []

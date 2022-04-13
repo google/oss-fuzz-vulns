@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in jbig2_image_get_pixel_fast
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20440
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   jbig2_image_get_pixel_fast
   jbig2_decode_generic_template0_TPGDON
   jbig2_immediate_generic_region
-modified: '2021-06-21T06:56:26.193777Z'
+  ```
+modified: '2022-04-13T03:04:40.591217Z'
 published: '2020-06-24T01:51:10.030258Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 9d1f28c1e9b8619073b36400e787eff8d84b27c3
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

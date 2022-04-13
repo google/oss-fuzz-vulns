@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in Crypto::der_decode_integer
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30907
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   Crypto::der_decode_integer
   Crypto::der_decode_sequence
   Crypto::der_decode_sequence_many<4ul>::operator bool
-modified: '2021-06-21T06:56:19.889906Z'
+  ```
+modified: '2022-04-13T03:04:32.252952Z'
 published: '2021-02-14T00:01:07.503942Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 3fe7ac0924ada70faaf27636b6e0f40bcde24f77
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

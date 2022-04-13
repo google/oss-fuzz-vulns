@@ -3,12 +3,14 @@ summary: Stack-buffer-overflow in ot::Mle::Mle::HandleParentResponse
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15382
 
+  ```
   Crash type: Stack-buffer-overflow READ {*}
   Crash state:
   ot::Mle::Mle::HandleParentResponse
   ot::Mle::Mle::HandleUdpReceive
   ot::Ip6::Udp::HandleMessage
-modified: '2021-06-21T06:56:24.921341Z'
+  ```
+modified: '2022-04-13T03:04:38.857861Z'
 published: '2020-07-01T00:00:13.016987Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 8224b3c49f8bd285ad5658c1b3cd9683d6627bdb
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

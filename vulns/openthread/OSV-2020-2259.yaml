@@ -3,12 +3,14 @@ summary: Stack-buffer-overflow in ot::MeshCoP::ChannelMaskEntry::GetMask
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=28556
 
+  ```
   Crash type: Stack-buffer-overflow READ 4
   Crash state:
   ot::MeshCoP::ChannelMaskEntry::GetMask
   ot::MeshCoP::ChannelMaskTlv::GetChannelMask
   ot::MeshCoP::Dataset::ConvertTo
-modified: '2021-06-21T06:56:25.103173Z'
+  ```
+modified: '2022-04-13T03:04:39.014179Z'
 published: '2020-12-13T00:00:10.196605Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 02aab7041915b603eb3d36d55fe7960013bae591
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

@@ -3,12 +3,14 @@ summary: UNKNOWN READ in op_BranchIfPrologue_s
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=33397
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   op_BranchIfPrologue_s
   m3_CallVL
   m3_CallV
-modified: '2021-06-21T06:56:18.544688Z'
+  ```
+modified: '2022-04-13T03:04:30.630968Z'
 published: '2021-04-20T00:00:13.765122Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 12a5277ec0977af493530b704a5a16e28f734788
   ecosystem_specific:
     severity: HIGH
+  versions: []

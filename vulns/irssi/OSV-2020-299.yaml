@@ -3,12 +3,14 @@ summary: Bad-free in sig_destroyed
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=17160
 
+  ```
   Crash type: Bad-free
   Crash state:
   sig_destroyed
   signal_emit_real
   signal_emit
-modified: '2021-03-09T04:49:05.812112Z'
+  ```
+modified: '2022-04-13T03:04:33.978934Z'
 published: '2020-06-30T00:00:47.672996Z'
 references:
 - type: REPORT
@@ -23,3 +25,4 @@ affected:
     events:
     - introduced: e36d6b9b8c1266f9786bbb3c197f32f208f8aaeb
     - fixed: ed65499d76daac352d76ae0f30e36f3feb623174
+  versions: []

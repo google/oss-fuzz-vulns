@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in check_ymsg
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20856
 
+  ```
   Crash type: Heap-buffer-overflow READ 4
   Crash state:
   check_ymsg
   ndpi_search_yahoo_tcp
   ndpi_search_yahoo
-modified: '2021-06-23T06:26:03.520624Z'
+  ```
+modified: '2022-04-13T03:04:36.020083Z'
 published: '2020-06-24T01:51:18.363782Z'
 references:
 - type: REPORT

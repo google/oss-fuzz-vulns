@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in File::Write
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=4293
 
+  ```
   Crash type: Heap-buffer-overflow READ {*}
   Crash state:
   File::Write
   ComprDataIO::UnpWrite
   CmdExtract::UnstoreFile
-modified: '2021-06-23T06:25:50.936733Z'
+  ```
+modified: '2022-04-13T03:04:35.317926Z'
 published: '2021-01-13T00:00:25.896164Z'
 references:
 - type: REPORT
@@ -27,6 +29,6 @@ affected:
   - 5.6.1.2
   - 5.6.1.3
   ecosystem_specific:
+    introduced_range: 2a079823c708a637bc36e888180ebb96fdfba526:1d8ea7923dae7c8f136912b6bdca95dcb52e80bc
     severity: MEDIUM
     fixed_range: 1d8ea7923dae7c8f136912b6bdca95dcb52e80bc:637fc8446edb8444c7a66918f109f2fa552ff987
-    introduced_range: 2a079823c708a637bc36e888180ebb96fdfba526:1d8ea7923dae7c8f136912b6bdca95dcb52e80bc

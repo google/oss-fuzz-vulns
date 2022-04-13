@@ -3,11 +3,13 @@ summary: Global-buffer-overflow in parse_http_request
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14582
 
+  ```
   Crash type: Global-buffer-overflow READ 1
   Crash state:
   parse_http_request
   fuzz_parse_http_request
-modified: '2021-03-09T04:49:05.991794Z'
+  ```
+modified: '2022-04-13T03:04:31.763179Z'
 published: '2020-07-01T00:00:21.523430Z'
 references:
 - type: REPORT
@@ -22,3 +24,4 @@ affected:
     events:
     - introduced: 7220bbf47f668fc600824b513afd207097fa6b68
     - fixed: 9ad6eb501b55f27a17d6383fa5bdcb2328147685
+  versions: []

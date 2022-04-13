@@ -3,12 +3,14 @@ summary: UNKNOWN READ in jbig2_decode_mmr_init
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=9681
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   jbig2_decode_mmr_init
   jbig2_decode_generic_mmr
   jbig2_decode_symbol_dict
-modified: '2021-06-21T06:56:19.158570Z'
+  ```
+modified: '2022-04-13T03:04:31.393316Z'
 published: '2021-01-15T00:01:17.967941Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: ce3e98c07e29dab2743e792e478395ed30d27dc1
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

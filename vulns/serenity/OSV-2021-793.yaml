@@ -4,12 +4,14 @@ summary: Heap-use-after-free in AK::RefPtr<AK::StringImpl, AK::RefPtrTraits<AK::
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34584
 
+  ```
   Crash type: Heap-use-after-free WRITE 8
   Crash state:
   AK::RefPtr<AK::StringImpl, AK::RefPtrTraits<AK::StringImpl> >::RefPtr
   AK::String::String
   JS::abstract_relation
-modified: '2021-06-21T06:56:19.785648Z'
+  ```
+modified: '2022-04-13T03:04:32.108972Z'
 published: '2021-05-24T00:01:24.097636Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - introduced: 4d34802f74c859135397f6f4fa2bbf9cf1829118
   ecosystem_specific:
     severity: HIGH
+  versions: []

@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in UA_copy
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15152
 
+  ```
   Crash type: Heap-buffer-overflow WRITE {*}
   Crash state:
   UA_copy
   RefTree_add
   Operation_Browse
-modified: '2021-06-21T06:56:26.785674Z'
+  ```
+modified: '2022-04-13T03:04:41.293776Z'
 published: '2020-06-30T00:00:49.384650Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 054f460d6e9e98deba186eee6bd956756dfc89e0
   ecosystem_specific:
     severity: HIGH
+  versions: []

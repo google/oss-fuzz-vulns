@@ -3,12 +3,14 @@ summary: UNKNOWN READ in decode_ise
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=37413
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   decode_ise
   physical_to_symbolic
   fuzz_astc_physical_to_symbolic.cpp
-modified: '2021-08-22T00:01:29.796850Z'
+  ```
+modified: '2022-04-13T03:04:40.493955Z'
 published: '2021-08-22T00:01:29.796636Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 5c5dee52401189c27e481e8a7ec30f54fcdcdb5f
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

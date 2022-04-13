@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in WelsDec::WelsDecodeMbCavlcBSlice
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26296
 
+  ```
   Crash type: Heap-buffer-overflow WRITE 16
   Crash state:
   WelsDec::WelsDecodeMbCavlcBSlice
   WelsDec::WelsDecodeSlice
   WelsDec::DecodeCurrentAccessUnit
-modified: '2021-06-21T06:56:23.705076Z'
+  ```
+modified: '2022-04-13T03:04:37.451970Z'
 published: '2020-10-14T00:00:24.741197Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: b52786888ddce9d6bc06b7825ba9bffc65924e0c
   ecosystem_specific:
     severity: HIGH
+  versions: []

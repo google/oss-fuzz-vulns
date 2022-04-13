@@ -3,12 +3,14 @@ summary: Index-out-of-bounds in draco::MeshEdgebreakerTraversalValenceDecoder::D
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=37705
 
+  ```
   Crash type: Index-out-of-bounds
   Crash state:
   draco::MeshEdgebreakerTraversalValenceDecoder::DecodeSymbol
   draco::MeshEdgebreakerDecoderImpl<draco::MeshEdgebreakerTraversalValenceDecoder>
   draco::MeshEdgebreakerDecoderImpl<draco::MeshEdgebreakerTraversalValenceDecoder>
-modified: '2022-02-18T00:05:41.355500Z'
+  ```
+modified: '2022-04-13T03:04:42.728794Z'
 published: '2021-08-29T00:00:08.242884Z'
 references:
 - type: REPORT

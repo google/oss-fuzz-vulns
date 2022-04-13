@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in zend_gc_collect_cycles
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=45369
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   zend_gc_collect_cycles
   fuzzer_request_shutdown
   fuzzer_do_request_from_buffer
-modified: '2022-03-11T00:01:44.806087Z'
+  ```
+modified: '2022-04-13T03:04:33.343084Z'
 published: '2022-03-11T00:01:44.805842Z'
 references:
 - type: REPORT

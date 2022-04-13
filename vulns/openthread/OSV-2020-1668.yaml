@@ -3,12 +3,14 @@ summary: Memcpy-param-overlap in ot::Message::Write
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25226
 
+  ```
   Crash type: Memcpy-param-overlap
   Crash state:
   ot::Message::Write
   ot::Message::CopyTo
   ot::Ip6::Ip6::InsertMplOption
-modified: '2021-06-21T06:56:24.973177Z'
+  ```
+modified: '2022-04-13T03:04:38.904167Z'
 published: '2020-08-27T00:00:35.795876Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: e507e24ffb6ed326e48d9cf287cabc90260c2a8b
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

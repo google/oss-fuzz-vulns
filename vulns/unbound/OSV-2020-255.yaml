@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in dname_pkt_copy
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20093
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   dname_pkt_copy
   pkt_strict_sub
   scrub_normalize
-modified: '2021-06-23T06:25:08.708590Z'
+  ```
+modified: '2022-04-13T03:04:31.465910Z'
 published: '2020-06-26T00:00:11.725033Z'
 references:
 - type: REPORT
@@ -29,6 +31,6 @@ affected:
   - release-1.10.0rc2
   - release-1.10.1
   ecosystem_specific:
+    severity: MEDIUM
     introduced_range: e149bc70460268f7f559ce10ab7e3678a5baac0f:1e0c957dcd7b0b1e03ff2d8bf58fdbb147ce4978
     fixed_range: 4ccac696caf8826995c9db78af6074a5a1381f00:f37242566b3187c1d715af6d0e4e0c5b75ccafeb
-    severity: MEDIUM

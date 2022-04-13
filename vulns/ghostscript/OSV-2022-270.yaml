@@ -3,12 +3,14 @@ summary: Stack-buffer-overflow in fn_ElIn_evaluate
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=45886
 
+  ```
   Crash type: Stack-buffer-overflow WRITE 4
   Crash state:
   fn_ElIn_evaluate
   pdfi_set_transfer
   GS_TR
-modified: '2022-03-22T00:00:43.287497Z'
+  ```
+modified: '2022-04-13T03:04:34.716244Z'
 published: '2022-03-22T00:00:43.287274Z'
 references:
 - type: REPORT

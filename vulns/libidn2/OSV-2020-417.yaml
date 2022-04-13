@@ -3,11 +3,13 @@ summary: Heap-buffer-overflow in idn2_to_ascii_4i
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=12420
 
+  ```
   Crash type: Heap-buffer-overflow WRITE {*}
   Crash state:
   idn2_to_ascii_4i
   libidn2_to_ascii_8z_fuzzer.c
-modified: '2021-06-21T06:56:26.956482Z'
+  ```
+modified: '2022-04-13T03:04:41.460832Z'
 published: '2020-07-01T00:00:08.331193Z'
 references:
 - type: REPORT
@@ -24,3 +26,4 @@ affected:
     - fixed: e4d1558aa2c1c04a05066ee8600f37603890ba8c
   ecosystem_specific:
     severity: HIGH
+  versions: []

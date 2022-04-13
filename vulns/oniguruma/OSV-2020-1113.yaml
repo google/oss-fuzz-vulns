@@ -3,12 +3,14 @@ summary: Heap-use-after-free in node_min_byte_len
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21998
 
+  ```
   Crash type: Heap-use-after-free READ 4
   Crash state:
   node_min_byte_len
   tune_quant
   tune_tree
-modified: '2021-06-23T06:29:46.666601Z'
+  ```
+modified: '2022-04-13T03:04:40.948922Z'
 published: '2020-07-22T21:49:48.153542Z'
 references:
 - type: REPORT

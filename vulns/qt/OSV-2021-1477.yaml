@@ -3,12 +3,14 @@ summary: UNKNOWN WRITE in QtPrivate::QCommonArrayOps<QPainterPath::Element>::gro
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=40161
 
+  ```
   Crash type: UNKNOWN WRITE
   Crash state:
   QtPrivate::QCommonArrayOps<QPainterPath::Element>::growAppend
   QPainterPath::addPath
   QPathClipper::intersect
-modified: '2021-10-22T00:01:25.431193Z'
+  ```
+modified: '2022-04-13T03:04:36.895614Z'
 published: '2021-10-22T00:01:25.430987Z'
 references:
 - type: REPORT

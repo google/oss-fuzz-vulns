@@ -3,12 +3,14 @@ summary: UNKNOWN READ in vcf_format
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18196
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   vcf_format
   vcf_write
   bcf_write
-modified: '2021-06-23T06:25:11.830728Z'
+  ```
+modified: '2022-04-13T03:04:32.343836Z'
 published: '2020-07-22T21:49:48.717026Z'
 references:
 - type: REPORT
@@ -24,5 +26,6 @@ affected:
     - introduced: dd6f0b72c92591252bb77818663629cc1a129949
     - fixed: 92ea05adb2478c64be571aff6fe00130fd29c252
   ecosystem_specific:
-    introduced_range: unknown:dd6f0b72c92591252bb77818663629cc1a129949
     severity: MEDIUM
+    introduced_range: unknown:dd6f0b72c92591252bb77818663629cc1a129949
+  versions: []

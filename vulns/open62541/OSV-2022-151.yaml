@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in extensionObjectOrder
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=44623
 
+  ```
   Crash type: Heap-buffer-overflow READ 4
   Crash state:
   extensionObjectOrder
   extensionObjectOrder
   extensionObjectOrder
-modified: '2022-02-14T00:00:57.573660Z'
+  ```
+modified: '2022-04-13T03:04:41.434067Z'
 published: '2022-02-14T00:00:57.573403Z'
 references:
 - type: REPORT

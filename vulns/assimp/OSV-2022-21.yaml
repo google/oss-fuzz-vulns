@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in Assimp::IOSystem2Unzip::opendisk
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=43414
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   Assimp::IOSystem2Unzip::opendisk
   call_zopendisk64
   unzOpenCurrentFile3
-modified: '2022-01-09T00:00:18.775773Z'
+  ```
+modified: '2022-04-13T03:04:42.661784Z'
 published: '2022-01-09T00:00:18.775490Z'
 references:
 - type: REPORT

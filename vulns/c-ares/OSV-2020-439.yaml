@@ -3,10 +3,12 @@ summary: UNKNOWN WRITE in ares-test-fuzz.c
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15375
 
+  ```
   Crash type: UNKNOWN WRITE
   Crash state:
   ares-test-fuzz.c
-modified: '2021-06-21T06:56:22.945195Z'
+  ```
+modified: '2022-04-13T03:04:36.421240Z'
 published: '2020-07-01T00:00:09.657657Z'
 references:
 - type: REPORT
@@ -23,3 +25,4 @@ affected:
     - fixed: b949cc3ddfbeb1b3fba571fb53b186b645e66e9c
   ecosystem_specific:
     severity: HIGH
+  versions: []

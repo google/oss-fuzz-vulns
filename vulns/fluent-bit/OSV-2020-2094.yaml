@@ -3,11 +3,13 @@ summary: Heap-buffer-overflow in flb_utils_time_to_seconds
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26593
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   flb_utils_time_to_seconds
   utils_fuzzer.c
-modified: '2021-06-21T06:56:24.403232Z'
+  ```
+modified: '2022-04-13T03:04:38.350404Z'
 published: '2020-10-24T00:00:09.093170Z'
 references:
 - type: REPORT
@@ -24,3 +26,4 @@ affected:
     - fixed: c2e33ae40af02fabe59b51637501a5be73583a15
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

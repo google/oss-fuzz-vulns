@@ -3,12 +3,14 @@ summary: Heap-use-after-free in WelsDec::MapColToList0
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13037
 
+  ```
   Crash type: Heap-use-after-free READ 4
   Crash state:
   WelsDec::MapColToList0
   WelsDec::PredBDirectTemporal
   WelsDec::ParseInterBInfo
-modified: '2021-06-23T06:26:20.681430Z'
+  ```
+modified: '2022-04-13T03:04:37.441439Z'
 published: '2020-07-22T21:50:03.268821Z'
 references:
 - type: REPORT
@@ -24,5 +26,6 @@ affected:
     - introduced: 70eeb783515dbfee3e0c781d6667838caba5113b
     - fixed: 717fe1463d4f2025d8bbfd432a4cf9cdbfc9d35c
   ecosystem_specific:
-    severity: HIGH
     introduced_range: unknown:70eeb783515dbfee3e0c781d6667838caba5113b
+    severity: HIGH
+  versions: []

@@ -3,12 +3,14 @@ summary: Use-of-uninitialized-value in Archive::ConvertFileHeader
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=4614
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   Archive::ConvertFileHeader
   Archive::ReadHeader15
   Archive::ReadHeader
-modified: '2021-06-23T06:25:47.059330Z'
+  ```
+modified: '2022-04-13T03:04:35.231883Z'
 published: '2021-01-13T00:00:26.084396Z'
 references:
 - type: REPORT

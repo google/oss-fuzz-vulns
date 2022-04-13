@@ -3,12 +3,14 @@ summary: UNKNOWN READ in spinel_datatype_vunpack_
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=4790
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   spinel_datatype_vunpack_
   spinel_datatype_unpack
   nl::wpantund::SpinelNCPInstance::handle_ncp_spinel_value_inserted
-modified: '2021-06-23T06:25:38.122674Z'
+  ```
+modified: '2022-04-13T03:04:33.940188Z'
 published: '2021-01-13T21:57:39.977856Z'
 references:
 - type: REPORT
@@ -24,5 +26,6 @@ affected:
     - introduced: d7df81c8a0bc8b9293ecc2f1a247a724f67c0fe7
     - fixed: 7838e0c00a8599cc964cdd19c972ebaeb17bfcbe
   ecosystem_specific:
-    severity: MEDIUM
     introduced_range: 7f7fe1c5423350b3422db4bfb8e2ae1b2be68eec:120ef3e004f2a6df1a960191440436d9ba78fa81
+    severity: MEDIUM
+  versions: []

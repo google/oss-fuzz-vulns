@@ -3,12 +3,14 @@ summary: Stack-buffer-overflow in pdfi_open_CIDFont_substitute_file
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=44034
 
+  ```
   Crash type: Stack-buffer-overflow WRITE {*}
   Crash state:
   pdfi_open_CIDFont_substitute_file
   pdfi_load_font
   pdfi_read_type0_font
-modified: '2022-01-26T00:01:49.919576Z'
+  ```
+modified: '2022-04-13T03:04:34.288933Z'
 published: '2022-01-26T00:01:49.919350Z'
 references:
 - type: REPORT

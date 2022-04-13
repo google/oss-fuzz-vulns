@@ -3,12 +3,14 @@ summary: Stack-buffer-overflow in JS::Heap::gather_conservative_roots
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=29266
 
+  ```
   Crash type: Stack-buffer-overflow READ 8
   Crash state:
   JS::Heap::gather_conservative_roots
   JS::Heap::gather_roots
   JS::Heap::collect_garbage
-modified: '2021-06-21T06:56:19.779642Z'
+  ```
+modified: '2022-04-13T03:04:32.093974Z'
 published: '2021-01-06T00:00:22.099017Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 51b880b0383089822f513330cd64f93b54b9f21c
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

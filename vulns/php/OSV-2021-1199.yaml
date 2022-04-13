@@ -3,12 +3,14 @@ summary: Heap-use-after-free in i_zval_ptr_dtor
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=38001
 
+  ```
   Crash type: Heap-use-after-free READ 1
   Crash state:
   i_zval_ptr_dtor
   concat_function
   zend_binary_op
-modified: '2022-03-16T01:29:41.036379Z'
+  ```
+modified: '2022-04-13T03:04:33.361250Z'
 published: '2021-09-04T00:01:34.068585Z'
 references:
 - type: REPORT

@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in H5O__linfo_decode
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=38041
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   H5O__linfo_decode
   H5O_msg_read_oh
   H5O_msg_read
-modified: '2021-09-04T00:00:54.649277Z'
+  ```
+modified: '2022-04-13T03:04:42.974116Z'
 published: '2021-09-04T00:00:54.649060Z'
 references:
 - type: REPORT

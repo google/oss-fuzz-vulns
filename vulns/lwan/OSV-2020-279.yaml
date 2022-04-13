@@ -3,12 +3,14 @@ summary: Global-buffer-overflow in lex_multiline_string
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18562
 
+  ```
   Crash type: Global-buffer-overflow READ 3
   Crash state:
   lex_multiline_string
   lex_next
   parse_key_value
-modified: '2021-03-09T04:49:05.801892Z'
+  ```
+modified: '2022-04-13T03:04:31.705665Z'
 published: '2020-06-30T00:00:45.609366Z'
 references:
 - type: REPORT
@@ -23,3 +25,4 @@ affected:
     events:
     - introduced: 56c5aae6cb30c0247596d72916c8f2f47d6abde3
     - fixed: 604eb733ecdbe8f637787825223c4c4ba5a3459c
+  versions: []

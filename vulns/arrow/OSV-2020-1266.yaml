@@ -3,12 +3,14 @@ summary: UNKNOWN READ in arrow::Array::IsNull
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20139
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   arrow::Array::IsNull
   arrow::Status arrow::VisitArrayInline<arrow::internal::ValidateArrayDataVisitor>
   arrow::internal::ValidateArrayData
-modified: '2021-06-23T06:25:11.664391Z'
+  ```
+modified: '2022-04-13T03:04:31.910847Z'
 published: '2020-07-22T21:50:01.820417Z'
 references:
 - type: REPORT

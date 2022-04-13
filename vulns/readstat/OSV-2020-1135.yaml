@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in sas_read4
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=12584
 
+  ```
   Crash type: Heap-buffer-overflow READ 4
   Crash state:
   sas_read4
   sas7bcat_parse_block
   readstat_parse_sas7bcat
-modified: '2021-06-23T06:29:25.674216Z'
+  ```
+modified: '2022-04-13T03:04:40.635227Z'
 published: '2020-07-22T21:49:49.811983Z'
 references:
 - type: REPORT
@@ -26,3 +28,4 @@ affected:
   ecosystem_specific:
     severity: MEDIUM
     introduced_range: unknown:d1bfd735515803800cb9708e3fca9e5c1e8e7a48
+  versions: []

@@ -3,10 +3,12 @@ summary: UNKNOWN WRITE in helper_shl_cc_arm
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=44136
 
+  ```
   Crash type: UNKNOWN WRITE
   Crash state:
   helper_shl_cc_arm
-modified: '2022-01-29T00:01:34.585554Z'
+  ```
+modified: '2022-04-13T03:04:39.097728Z'
 published: '2022-01-29T00:01:34.585336Z'
 references:
 - type: REPORT

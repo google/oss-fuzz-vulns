@@ -3,12 +3,14 @@ summary: Stack-buffer-overflow in sc_get_response
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25998
 
+  ```
   Crash type: Stack-buffer-overflow WRITE {*}
   Crash state:
   sc_get_response
   sc_transmit
   sc_transmit_apdu
-modified: '2021-06-21T06:56:27.145673Z'
+  ```
+modified: '2022-04-13T03:04:41.660227Z'
 published: '2020-09-28T00:00:07.869363Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 732ed77ad67e5303c46c0fa767929afd87076c87
   ecosystem_specific:
     severity: HIGH
+  versions: []

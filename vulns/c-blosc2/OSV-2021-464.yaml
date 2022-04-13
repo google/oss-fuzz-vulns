@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in blosc_read_header
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31535
 
+  ```
   Crash type: Heap-buffer-overflow READ 16
   Crash state:
   blosc_read_header
   blosc2_cbuffer_sizes
   frame_get_lazychunk
-modified: '2021-06-21T06:56:25.943126Z'
+  ```
+modified: '2022-04-13T03:04:40.254932Z'
 published: '2021-03-01T00:01:15.739563Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 4f6d42ab4b25e781dad94c5324dab8a4dbb702ad
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

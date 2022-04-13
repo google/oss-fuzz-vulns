@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in padding
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=38439
 
+  ```
   Crash type: Heap-buffer-overflow READ {*}
   Crash state:
   padding
   sgr_mix_c
   lr_stripe
-modified: '2021-09-12T00:00:14.393596Z'
+  ```
+modified: '2022-04-13T03:04:39.801760Z'
 published: '2021-09-12T00:00:14.393392Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 69ff474a7f3a7ccc61c5e6881e45e0afe693f352
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

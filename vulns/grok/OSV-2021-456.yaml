@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in grk::Quantizer::read_SQcd_SQcc
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31460
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   grk::Quantizer::read_SQcd_SQcc
   grk::CodeStreamDecompress::read_qcd
   grk::CodeStreamDecompress::process_marker
-modified: '2022-01-30T00:05:07.296166Z'
+  ```
+modified: '2022-04-13T03:04:39.603759Z'
 published: '2021-02-28T00:01:15.686942Z'
 references:
 - type: REPORT

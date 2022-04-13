@@ -3,12 +3,14 @@ summary: Use-of-uninitialized-value in psnip_safe_size_mul
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=17120
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   psnip_safe_size_mul
   SafeMul
   Mat_VarGetSize
-modified: '2021-06-21T06:56:28.312978Z'
+  ```
+modified: '2022-04-13T03:04:43.176927Z'
 published: '2020-07-01T00:00:26.967984Z'
 references:
 - type: REPORT

@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in circular_memcpy
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13435
 
+  ```
   Crash type: Heap-buffer-overflow READ {*}
   Crash state:
   circular_memcpy
   run_e8e9_filter
   run_filter
-modified: '2021-06-21T06:56:26.644147Z'
+  ```
+modified: '2022-04-13T03:04:41.152670Z'
 published: '2020-07-01T00:00:05.776845Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 39736c43bd7374beedb372aa300ecf36c9fc4733
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

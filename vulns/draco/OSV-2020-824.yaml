@@ -4,12 +4,14 @@ summary: UNKNOWN READ in std::__1::_MetaBase<__can_be_converted_to_string_view<c
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24057
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   std::__1::_MetaBase<__can_be_converted_to_string_view<char, std::__1::char_trait
   bool std::__1::operator<<char, std::__1::char_traits<char>, std::__1::allocator<
   std::__1::__tree_iterator<std::__1::__value_type<std::__1::basic_string<char, st
-modified: '2022-02-17T00:05:02.708861Z'
+  ```
+modified: '2022-04-13T03:04:42.697591Z'
 published: '2020-07-14T05:37:49.054851Z'
 references:
 - type: REPORT
@@ -30,5 +32,5 @@ affected:
   - 1.5.0
   - 1.5.1
   ecosystem_specific:
-    introduced_range: aef4bfbd61798ecc21d94c873b679fbdeaf92462:79601d2d060be52e673a82ed1c46f4666eb28255
     severity: MEDIUM
+    introduced_range: aef4bfbd61798ecc21d94c873b679fbdeaf92462:79601d2d060be52e673a82ed1c46f4666eb28255

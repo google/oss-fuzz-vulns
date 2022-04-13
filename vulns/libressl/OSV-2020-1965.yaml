@@ -3,12 +3,14 @@ summary: UNKNOWN READ in asn1_item_print_ctx
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13920
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   asn1_item_print_ctx
   asn1_template_print_ctx
   asn1_item_print_ctx
-modified: '2021-06-23T06:28:24.550256Z'
+  ```
+modified: '2022-04-13T03:04:38.790305Z'
 published: '2020-10-03T00:00:22.855250Z'
 references:
 - type: REPORT
@@ -38,6 +40,6 @@ affected:
   - v3.2.0
   - v3.2.1
   ecosystem_specific:
-    severity: MEDIUM
     introduced_range: 4ea2a01a0d2cc889e95316f51c7a36f8f158df44:4b6c7bfd02dec26021882f1599dbcbccdd4d2889
+    severity: MEDIUM
     fixed_range: 4b6c7bfd02dec26021882f1599dbcbccdd4d2889:17c88164016df821df2dff4b2b1291291ec4f28a

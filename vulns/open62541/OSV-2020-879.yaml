@@ -3,12 +3,14 @@ summary: Use-of-uninitialized-value in jumpOverRec
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20112
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   jumpOverRec
   jumpOverRec
   jumpOverRec
-modified: '2021-06-21T06:56:26.923640Z'
+  ```
+modified: '2022-04-13T03:04:41.427651Z'
 published: '2020-07-14T22:13:57.199901Z'
 references:
 - type: REPORT

@@ -3,12 +3,14 @@ summary: Global-buffer-overflow in AK::StringView::operator==
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31338
 
+  ```
   Crash type: Global-buffer-overflow READ 1
   Crash state:
   AK::StringView::operator==
   =
   Markdown::Table::parse
-modified: '2021-03-09T05:46:40.713903Z'
+  ```
+modified: '2022-04-13T03:04:32.160533Z'
 published: '2021-02-25T00:00:11.169626Z'
 references:
 - type: REPORT

@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in MqttDecode_Publish
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=38237
 
+  ```
   Crash type: Heap-buffer-overflow WRITE 8
   Crash state:
   MqttDecode_Publish
   MqttClient_DecodePacket
   MqttClient_HandlePacket
-modified: '2021-09-09T00:00:39.898506Z'
+  ```
+modified: '2022-04-13T03:04:33.994155Z'
 published: '2021-09-09T00:00:39.898203Z'
 references:
 - type: REPORT

@@ -3,12 +3,14 @@ summary: UNKNOWN READ in apache::thrift::protocol::TCompactProtocolT<apache::thr
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20670
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   apache::thrift::protocol::TCompactProtocolT<apache::thrift::transport::TMemoryBu
   parquet::format::FileMetaData::read
   void parquet::DeserializeThriftUnencryptedMsg<parquet::format::FileMetaData>
-modified: '2021-06-21T06:56:19.758622Z'
+  ```
+modified: '2022-04-13T03:04:32.066459Z'
 published: '2020-06-24T01:51:16.975519Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: d2ab289294f5eaa175e6bc4ab5fb74b5ea013f6e
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

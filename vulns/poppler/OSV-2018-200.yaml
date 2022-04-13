@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in SplashPath::lineTo
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=10148
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   SplashPath::lineTo
   Splash::makeDashedPath
   Splash::stroke
-modified: '2021-06-21T06:56:23.483903Z'
+  ```
+modified: '2022-04-13T03:04:37.248718Z'
 published: '2021-01-13T00:01:22.340872Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: bb078cbd88252e421d14747b98c5c71062cf7571
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

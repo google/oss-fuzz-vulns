@@ -3,12 +3,14 @@ summary: Uncaught exception in org.jsoup.parser.HtmlTreeBuilderState$18.process
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=39164
 
+  ```
   Crash type: Uncaught exception
   Crash state:
   org.jsoup.parser.HtmlTreeBuilderState$18.process
   org.jsoup.parser.HtmlTreeBuilder.process
   org.jsoup.parser.HtmlTreeBuilderState$7.process
-modified: '2021-09-25T00:00:14.555729Z'
+  ```
+modified: '2022-04-13T03:04:35.134132Z'
 published: '2021-09-25T00:00:14.555492Z'
 references:
 - type: REPORT
@@ -26,6 +28,6 @@ affected:
   ecosystem_specific:
     severity: LOW
   database_specific:
-    fixed_range: 2b22ef803a5761dd960fbb7cbd3dd1d0c9bae9ef:5f546b31307660fd260bb51c12a431c32c351c53
     introduced_range: d075651d59bd0565f718077bfe4e3c6f543f477b:ec9847624f75ee485247f1173cafa20eb4a385a8
+    fixed_range: 2b22ef803a5761dd960fbb7cbd3dd1d0c9bae9ef:5f546b31307660fd260bb51c12a431c32c351c53
   versions: []

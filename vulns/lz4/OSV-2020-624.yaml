@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in LZ4_write32
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15941
 
+  ```
   Crash type: Heap-buffer-overflow WRITE 4
   Crash state:
   LZ4_write32
   LZ4_compress_fast_extState
   LZ4_compress_fast
-modified: '2021-06-21T06:56:27.237123Z'
+  ```
+modified: '2022-04-13T03:04:41.753082Z'
 published: '2020-07-01T00:00:21.077578Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 13a2d9e34ffc4170720ce417c73e396d0ac1471a
   ecosystem_specific:
     severity: HIGH
+  versions: []

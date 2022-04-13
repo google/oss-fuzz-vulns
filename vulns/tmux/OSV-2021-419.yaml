@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in input_osc_parse_colour
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31106
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   input_osc_parse_colour
   input_osc_11
   input_exit_osc
-modified: '2021-06-21T06:56:21.339607Z'
+  ```
+modified: '2022-04-13T03:04:33.963941Z'
 published: '2021-02-19T00:02:48.073974Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 11e404ca3c80893f59b1001f000c9390216c7e7a
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

@@ -3,12 +3,14 @@ summary: Stack-buffer-overflow in InterpretCondition
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34692
 
+  ```
   Crash type: Stack-buffer-overflow READ 1
   Crash state:
   InterpretCondition
   InterpretPhoneme
   MakePhonemeList
-modified: '2022-04-03T00:04:24.572341Z'
+  ```
+modified: '2022-04-13T03:04:34.226889Z'
 published: '2021-05-27T00:00:31.797718Z'
 references:
 - type: REPORT

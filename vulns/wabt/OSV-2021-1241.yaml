@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in wabt::string_view::compare
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=38404
 
+  ```
   Crash type: Heap-buffer-overflow READ 6
   Crash state:
   wabt::string_view::compare
   wabt::ReadBinary
   wabt::ReadBinaryIr
-modified: '2022-03-19T00:05:48.775077Z'
+  ```
+modified: '2022-04-13T03:04:37.938017Z'
 published: '2021-09-12T00:01:27.535685Z'
 references:
 - type: REPORT

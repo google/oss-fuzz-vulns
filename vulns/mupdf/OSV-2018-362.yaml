@@ -3,12 +3,14 @@ summary: Use-of-uninitialized-value in fz_unpack_tile
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11022
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   fz_unpack_tile
   fz_decomp_image_from_stream
   compressed_image_get_pixmap
-modified: '2021-06-23T06:25:01.907885Z'
+  ```
+modified: '2022-04-13T03:04:31.364805Z'
 published: '2021-01-15T00:00:57.147547Z'
 references:
 - type: REPORT

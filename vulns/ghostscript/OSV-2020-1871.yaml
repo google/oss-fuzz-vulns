@@ -3,12 +3,14 @@ summary: Segv on unknown address in s_DCTD_process
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21416
 
+  ```
   Crash type: Segv on unknown address
   Crash state:
   s_DCTD_process
   sreadbuf
   s_process_read_buf
-modified: '2021-06-23T07:14:28.914447Z'
+  ```
+modified: '2022-04-13T03:04:34.849081Z'
 published: '2020-09-29T00:00:17.109944Z'
 references:
 - type: REPORT

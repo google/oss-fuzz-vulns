@@ -3,12 +3,14 @@ summary: Index-out-of-bounds in fuzz_send_next_response
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=3956
 
+  ```
   Crash type: Index-out-of-bounds
   Crash state:
   fuzz_send_next_response
   fuzz_handle_transfer
   _start
-modified: '2021-06-23T06:31:21.300588Z'
+  ```
+modified: '2022-04-13T03:04:42.923505Z'
 published: '2021-01-13T00:00:01.695158Z'
 references:
 - type: REPORT
@@ -24,6 +26,7 @@ affected:
     - introduced: 7ee59512f875604eb468fb6f3d26e39290f781c9
     - fixed: 544bfdebea2a9e8be1c01fc7954cd49638fe2803
   ecosystem_specific:
-    introduced_range: 1cb4f5d6e8e470638759a48ba99fda230089712f:e240a546a7ac2fa7956adb664b8c40c4dee4f82b
-    severity: MEDIUM
     fixed_range: fa394c8c2e39ea327d668f14353b32580e821b1c:544bfdebea2a9e8be1c01fc7954cd49638fe2803
+    severity: MEDIUM
+    introduced_range: 1cb4f5d6e8e470638759a48ba99fda230089712f:e240a546a7ac2fa7956adb664b8c40c4dee4f82b
+  versions: []

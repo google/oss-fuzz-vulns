@@ -3,11 +3,13 @@ summary: UNKNOWN READ in helper_be_stl_mmu_armeb
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=27736
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   helper_be_stl_mmu_armeb
   [stack]
-modified: '2021-11-23T22:26:18.641653Z'
+  ```
+modified: '2022-04-13T03:04:39.286032Z'
 published: '2020-11-23T00:00:58.574949Z'
 references:
 - type: REPORT
@@ -36,5 +38,5 @@ affected:
   - 2.0.0-rc2
   - 2.0.0-rc3
   ecosystem_specific:
-    introduced_range: 57e3509812f0842b0752bff1e1b3a44ad438271e:355eaecc12b8022ccefac432dfa003fdb642c0f5
     severity: MEDIUM
+    introduced_range: 57e3509812f0842b0752bff1e1b3a44ad438271e:355eaecc12b8022ccefac432dfa003fdb642c0f5

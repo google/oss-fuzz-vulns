@@ -3,12 +3,14 @@ summary: Use-of-uninitialized-value in processClientServerHello
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21296
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   processClientServerHello
   processTLSBlock
   ndpi_search_tls_tcp
-modified: '2021-06-23T06:26:04.628625Z'
+  ```
+modified: '2022-04-13T03:04:36.167492Z'
 published: '2020-07-22T21:49:45.834056Z'
 references:
 - type: REPORT
@@ -24,6 +26,7 @@ affected:
     - introduced: b2cbe76e716e628438a94d2e112acddb67ec89f2
     - fixed: a845e997209b987ef85a2562697d4d0522cb0c66
   ecosystem_specific:
-    introduced_range: unknown:b2cbe76e716e628438a94d2e112acddb67ec89f2
     fixed_range: b2cbe76e716e628438a94d2e112acddb67ec89f2:a845e997209b987ef85a2562697d4d0522cb0c66
+    introduced_range: unknown:b2cbe76e716e628438a94d2e112acddb67ec89f2
     severity: MEDIUM
+  versions: []

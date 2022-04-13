@@ -3,12 +3,14 @@ summary: Use-of-uninitialized-value in jxl::N_AVX2::AddNoise
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=36158
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   jxl::N_AVX2::AddNoise
   jxl::FinalizeImageRect
   jxl::ThreadPool::RunCallState<jxl::FinalizeFrameDecoding
-modified: '2021-07-15T00:01:15.197329Z'
+  ```
+modified: '2022-04-13T03:04:41.843573Z'
 published: '2021-07-15T00:01:15.197122Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 98231abe99b322fe286ea80ab2c066528540a4c5
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

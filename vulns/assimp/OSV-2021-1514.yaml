@@ -3,12 +3,14 @@ summary: Container-overflow in m3d_load
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=40535
 
+  ```
   Crash type: Container-overflow READ 1
   Crash state:
   m3d_load
   Assimp::M3DWrapper::M3DWrapper
   Assimp::M3DImporter::InternReadFile
-modified: '2021-11-01T00:00:10.147133Z'
+  ```
+modified: '2022-04-13T03:04:42.645684Z'
 published: '2021-11-01T00:00:10.146855Z'
 references:
 - type: REPORT

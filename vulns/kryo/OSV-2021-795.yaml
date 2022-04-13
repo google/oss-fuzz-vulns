@@ -1,12 +1,13 @@
 id: OSV-2021-795
 summary: Uncaught exception
-details: |-
+details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34646
 
+  ```
   Crash type: Uncaught exception
   Crash state:
-  NULL
-modified: '2021-05-25T23:50:45.529135Z'
+  NULL```
+modified: '2022-04-13T03:04:36.380867Z'
 published: '2021-05-25T23:50:45.528753Z'
 references:
 - type: REPORT

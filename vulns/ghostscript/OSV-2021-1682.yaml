@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in pdfi_repair_file
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42325
 
+  ```
   Crash type: Heap-buffer-overflow WRITE 4
   Crash state:
   pdfi_repair_file
   pdfi_read_xref_stream_dict
   pdfi_read_xref
-modified: '2021-12-14T00:00:11.539393Z'
+  ```
+modified: '2022-04-13T03:04:34.764669Z'
 published: '2021-12-14T00:00:11.539141Z'
 references:
 - type: REPORT

@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in xstrdup
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=7931
 
+  ```
   Crash type: Heap-buffer-overflow READ {*}
   Crash state:
   xstrdup
   ftp_parse_winnt_ls
   wget_ftpls_fuzzer.c
-modified: '2021-06-21T06:56:27.770527Z'
+  ```
+modified: '2022-04-13T03:04:42.422504Z'
 published: '2021-01-15T00:00:20.694236Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: b0f802c46c286f4e07c499042ba3e3ea15c2d585
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

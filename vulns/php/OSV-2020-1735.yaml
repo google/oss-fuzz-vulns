@@ -3,12 +3,14 @@ summary: Heap-use-after-free in zend_gc_delref
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25526
 
+  ```
   Crash type: Heap-use-after-free READ 4
   Crash state:
   zend_gc_delref
   i_zval_ptr_dtor
   zval_ptr_dtor
-modified: '2021-06-21T06:56:21.006359Z'
+  ```
+modified: '2022-04-13T03:04:33.606598Z'
 published: '2020-09-12T00:01:46.026747Z'
 references:
 - type: REPORT

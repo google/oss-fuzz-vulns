@@ -3,11 +3,13 @@ summary: Use-of-uninitialized-value in spng_read_fuzzer.c
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23936
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   spng_read_fuzzer.c
   spng_read_fuzzer.c
-modified: '2021-06-21T06:56:21.075225Z'
+  ```
+modified: '2022-04-13T03:04:33.688216Z'
 published: '2020-07-09T00:00:05.644183Z'
 references:
 - type: REPORT
@@ -24,3 +26,4 @@ affected:
     - fixed: 932e9c836ea388dbd0d7a214af78a70373079c9d
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

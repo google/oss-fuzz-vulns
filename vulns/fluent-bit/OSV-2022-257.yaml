@@ -3,11 +3,13 @@ summary: Segv on unknown address in flb_config_map_properties_check
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=45670
 
+  ```
   Crash type: Segv on unknown address
   Crash state:
   flb_config_map_properties_check
   config_map_fuzzer.c
-modified: '2022-03-19T00:00:27.794619Z'
+  ```
+modified: '2022-04-13T03:04:38.314832Z'
 published: '2022-03-19T00:00:27.794395Z'
 references:
 - type: REPORT

@@ -3,12 +3,14 @@ summary: Use-after-poison in JS::PrimitiveString::string
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=36985
 
+  ```
   Crash type: Use-after-poison READ 1
   Crash state:
   JS::PrimitiveString::string
   JS::abstract_relation
   JS::less_than
-modified: '2021-08-10T00:02:29.787790Z'
+  ```
+modified: '2022-04-13T03:04:32.099079Z'
 published: '2021-08-10T00:02:29.787563Z'
 references:
 - type: REPORT
@@ -24,3 +26,4 @@ affected:
     - introduced: 6852ba4d34306109d746cfb57651d76f3b88a2c6
   ecosystem_specific:
     severity: HIGH
+  versions: []

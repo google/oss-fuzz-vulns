@@ -3,12 +3,14 @@ summary: UNKNOWN WRITE in vcf_parse_format
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21139
 
+  ```
   Crash type: UNKNOWN WRITE
   Crash state:
   vcf_parse_format
   vcf_parse
   view_vcf
-modified: '2021-06-23T06:25:11.837364Z'
+  ```
+modified: '2022-04-13T03:04:32.354959Z'
 published: '2020-07-22T21:49:39.091716Z'
 references:
 - type: REPORT
@@ -25,8 +27,8 @@ affected:
     - fixed: 29c294e6842a56ba3b9a24a24a5f6de1575b0961
     - fixed: c6ce820d5ccfeca1c38e6644d72ca6543da01eb1
   ecosystem_specific:
-    severity: HIGH
     introduced_range: unknown:d8075641275729878bf2455ac9e999fed4263d9e
+    severity: HIGH
   database_specific:
     fixed_range: 8ff8bb328f5d4c2981933ff7847374ddc747d572:c6ce820d5ccfeca1c38e6644d72ca6543da01eb1
   versions: []

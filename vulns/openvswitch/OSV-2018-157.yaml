@@ -3,12 +3,14 @@ summary: Heap-double-free in minimatch_destroy
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=11408
 
+  ```
   Crash type: Heap-double-free
   Crash state:
   minimatch_destroy
   ofctl_parse_flow
   ofctl_parse_target.c
-modified: '2021-06-21T06:56:26.399976Z'
+  ```
+modified: '2022-04-13T03:04:40.774314Z'
 published: '2021-01-13T00:01:07.205739Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 4d1ca7035df8d1688b7d85e6495722f57870726f
   ecosystem_specific:
     severity: HIGH
+  versions: []

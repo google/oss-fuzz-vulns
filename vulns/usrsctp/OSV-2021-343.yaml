@@ -3,12 +3,14 @@ summary: Heap-use-after-free in sctp_sorecvmsg
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30571
 
+  ```
   Crash type: Heap-use-after-free READ 8
   Crash state:
   sctp_sorecvmsg
   usrsctp_recvv
   handle_upcall
-modified: '2021-06-21T06:56:27.946440Z'
+  ```
+modified: '2022-04-13T03:04:42.623897Z'
 published: '2021-02-10T00:00:18.193322Z'
 references:
 - type: REPORT
@@ -24,3 +26,4 @@ affected:
     - introduced: 37a9dc3e18bfdcc972946dff0206155cee6b5dd0
   ecosystem_specific:
     severity: HIGH
+  versions: []

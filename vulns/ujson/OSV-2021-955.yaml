@@ -3,12 +3,14 @@ summary: Stack-buffer-overflow in Buffer_AppendIndentUnchecked
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=36009
 
+  ```
   Crash type: Stack-buffer-overflow WRITE 1
   Crash state:
   Buffer_AppendIndentUnchecked
   encode
   encode
-modified: '2021-12-17T00:12:05.831314Z'
+  ```
+modified: '2022-04-13T03:04:31.111093Z'
 published: '2021-07-11T00:01:05.153778Z'
 references:
 - type: REPORT

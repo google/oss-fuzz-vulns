@@ -3,12 +3,14 @@ summary: UNKNOWN READ in pdfi_fapi_get_glyph
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=45439
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   pdfi_fapi_get_glyph
   get_fapi_glyph_data
   cff_slot_load
-modified: '2022-03-15T00:44:41.278105Z'
+  ```
+modified: '2022-04-13T03:04:34.809697Z'
 published: '2022-03-11T00:00:50.999282Z'
 references:
 - type: REPORT

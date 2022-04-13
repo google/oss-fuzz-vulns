@@ -3,12 +3,14 @@ summary: Use-of-uninitialized-value in pcpp::tbp_my_own_strnlen
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22829
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   pcpp::tbp_my_own_strnlen
   pcpp::HeaderField::HeaderField
   pcpp::TextBasedProtocolMessage::parseFields
-modified: '2021-06-23T06:28:21.232732Z'
+  ```
+modified: '2022-04-13T03:04:38.596300Z'
 published: '2020-06-24T01:51:11.617477Z'
 references:
 - type: REPORT
@@ -26,3 +28,4 @@ affected:
   ecosystem_specific:
     severity: MEDIUM
     introduced_range: 016e90f193d4383b94143d0b2be26408cc32c703:5ef0c6da8c34b5d4155f865e94bdf83cb18fcbad
+  versions: []

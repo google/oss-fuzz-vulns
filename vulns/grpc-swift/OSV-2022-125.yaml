@@ -3,12 +3,14 @@ summary: Invalid-free in NIOHTTP2.NIOHTTP2Handler.
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=44431
 
+  ```
   Crash type: Invalid-free
   Crash state:
   NIOHTTP2.NIOHTTP2Handler.
   NIOHTTP2.NIOHTTP2Handler.channelRead
   NIOCore.ChannelHandlerContext.
-modified: '2022-02-06T00:01:40.864035Z'
+  ```
+modified: '2022-04-13T03:04:36.950396Z'
 published: '2022-02-06T00:01:40.863807Z'
 references:
 - type: REPORT
@@ -43,6 +45,6 @@ affected:
   ecosystem_specific:
     severity: null
   database_specific:
-    fixed_range: 393feb7d38baf5b04189a165147ab65d0b4b0453:d7961746769616d0b81bda771de5648ebfa1abf9
     introduced_range: a19bc8cf4540276daa08b1038a0ccd246c1b9cbc:972c701444f5a366ce055039b63bdb62427e1a22
+    fixed_range: 393feb7d38baf5b04189a165147ab65d0b4b0453:d7961746769616d0b81bda771de5648ebfa1abf9
 schema_version: 1.2.0

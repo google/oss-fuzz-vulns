@@ -3,12 +3,14 @@ summary: Global-buffer-overflow in dissect_snmp_PDUs
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18816
 
+  ```
   Crash type: Global-buffer-overflow READ 4
   Crash state:
   dissect_snmp_PDUs
   dissect_ber_choice
   dissect_snmp_RegisterResponse
-modified: '2021-03-09T04:49:05.951742Z'
+  ```
+modified: '2022-04-13T03:04:37.855035Z'
 published: '2020-07-01T00:00:16.823057Z'
 references:
 - type: REPORT
@@ -23,3 +25,4 @@ affected:
     events:
     - introduced: 14d398fe67c1da7b1554a52714b513d86f78e424
     - fixed: 7cbe0b2e1580686af3e13df83577cc581668950e
+  versions: []

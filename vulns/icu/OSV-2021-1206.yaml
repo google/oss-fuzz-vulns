@@ -3,12 +3,14 @@ summary: Stack-use-after-scope in uprv_stricmp_70
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=38156
 
+  ```
   Crash type: Stack-use-after-scope READ 1
   Crash state:
   uprv_stricmp_70
   ulocimp_getLanguage_70
   _canonicalize
-modified: '2021-09-07T00:00:06.847364Z'
+  ```
+modified: '2022-04-13T03:04:34.107648Z'
 published: '2021-09-07T00:00:06.847136Z'
 references:
 - type: REPORT

@@ -3,12 +3,14 @@ summary: Use-of-uninitialized-value in ndpi_strdup
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22475
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   ndpi_strdup
   processClientServerHello
   processTLSBlock
-modified: '2021-06-23T06:26:05.290319Z'
+  ```
+modified: '2022-04-13T03:04:36.292237Z'
 published: '2020-07-14T22:13:54.264021Z'
 references:
 - type: REPORT
@@ -26,5 +28,5 @@ affected:
   versions:
   - '3.4'
   ecosystem_specific:
-    fixed_range: 50f4049b58b9d04a403ba7570935f887aef937db:6c366d73e27ab2097a197cd6d9870c1ca2457cc8
     severity: MEDIUM
+    fixed_range: 50f4049b58b9d04a403ba7570935f887aef937db:6c366d73e27ab2097a197cd6d9870c1ca2457cc8

@@ -4,12 +4,14 @@ summary: Use-of-uninitialized-value in hb_hashmap_t<hb_serialize_context_t::obje
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14641
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   hb_hashmap_t<hb_serialize_context_t::object_t const*, unsigned int,
   hb_hashmap_t<hb_serialize_context_t::object_t const*, unsigned int,
   hb_hashmap_t<hb_serialize_context_t::object_t const*, unsigned int,
-modified: '2021-06-21T06:56:20.399191Z'
+  ```
+modified: '2022-04-13T03:04:32.820071Z'
 published: '2020-07-01T00:00:13.704856Z'
 references:
 - type: REPORT
@@ -26,3 +28,4 @@ affected:
     - fixed: 503748d8a80dd5db450c8c4dc109f2b97049d989
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

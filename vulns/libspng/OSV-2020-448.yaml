@@ -3,12 +3,14 @@ summary: Heap-use-after-free in read_chunks_before_idat
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=16051
 
+  ```
   Crash type: Heap-use-after-free READ 2
   Crash state:
   read_chunks_before_idat
   get_ancillary
   spng_decoded_image_size
-modified: '2021-06-21T06:56:21.063257Z'
+  ```
+modified: '2022-04-13T03:04:33.677865Z'
 published: '2020-07-01T00:00:10.159770Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: d876b1d23f0642304c758194045889a19ea823a0
   ecosystem_specific:
     severity: HIGH
+  versions: []

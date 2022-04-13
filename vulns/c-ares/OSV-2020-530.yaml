@@ -3,11 +3,13 @@ summary: Stack-buffer-overflow in ares_parse_aaaa_reply
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=15459
 
+  ```
   Crash type: Stack-buffer-overflow WRITE 4
   Crash state:
   ares_parse_aaaa_reply
   ares-test-fuzz.c
-modified: '2021-06-21T06:56:22.926055Z'
+  ```
+modified: '2022-04-13T03:04:36.401229Z'
 published: '2020-07-01T00:00:14.958697Z'
 references:
 - type: REPORT
@@ -24,3 +26,4 @@ affected:
     - fixed: b949cc3ddfbeb1b3fba571fb53b186b645e66e9c
   ecosystem_specific:
     severity: HIGH
+  versions: []

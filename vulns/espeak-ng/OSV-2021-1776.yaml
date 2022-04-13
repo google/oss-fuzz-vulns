@@ -3,12 +3,14 @@ summary: Stack-buffer-underflow in InterpretPhoneme
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=43037
 
+  ```
   Crash type: Stack-buffer-underflow READ 8
   Crash state:
   InterpretPhoneme
   InterpretPhoneme2
   CalcLengths
-modified: '2021-12-29T00:00:39.584223Z'
+  ```
+modified: '2022-04-13T03:04:34.205315Z'
 published: '2021-12-29T00:00:39.584026Z'
 references:
 - type: REPORT

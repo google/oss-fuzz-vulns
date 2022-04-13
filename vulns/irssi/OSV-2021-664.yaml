@@ -3,12 +3,14 @@ summary: Heap-use-after-free in module_check_cast
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=33444
 
+  ```
   Crash type: Heap-use-after-free READ 4
   Crash state:
   module_check_cast
   server_connect_unref
   server_unref
-modified: '2021-06-21T06:56:21.347108Z'
+  ```
+modified: '2022-04-13T03:04:33.973965Z'
 published: '2021-04-21T00:00:14.547847Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 3dbfac5699c6887b7149a0b1c805c4730f63d0f4
   ecosystem_specific:
     severity: HIGH
+  versions: []

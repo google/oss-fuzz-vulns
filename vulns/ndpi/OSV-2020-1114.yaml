@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in ndpi_int_check_stun
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=19332
 
+  ```
   Crash type: Heap-buffer-overflow READ 2
   Crash state:
   ndpi_int_check_stun
   ndpi_search_stun
   check_ndpi_udp_flow_func
-modified: '2021-06-23T06:26:04.618092Z'
+  ```
+modified: '2022-04-13T03:04:36.156281Z'
 published: '2020-07-22T21:49:48.206675Z'
 references:
 - type: REPORT
@@ -26,3 +28,4 @@ affected:
   ecosystem_specific:
     severity: MEDIUM
     introduced_range: unknown:e695dd6eade754b2d50bdf297ca8bdc4105f93ff
+  versions: []

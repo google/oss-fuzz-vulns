@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in WriteRingBuffer
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=40449
 
+  ```
   Crash type: Heap-buffer-overflow WRITE {*}
   Crash state:
   WriteRingBuffer
   BrotliDecoderDecompressStream
   jxl::JxlBoxContentDecoder::Process
-modified: '2021-10-30T00:01:37.386236Z'
+  ```
+modified: '2022-04-13T03:04:41.838573Z'
 published: '2021-10-30T00:01:37.386031Z'
 references:
 - type: REPORT

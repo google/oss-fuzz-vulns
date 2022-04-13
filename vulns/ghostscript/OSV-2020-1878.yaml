@@ -3,12 +3,14 @@ summary: Use-of-uninitialized-value in s_A85D_process
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21616
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   s_A85D_process
   gs_scan_token
   interp
-modified: '2021-06-23T06:25:39.640964Z'
+  ```
+modified: '2022-04-13T03:04:34.620532Z'
 published: '2020-09-29T00:00:31.252499Z'
 references:
 - type: REPORT
@@ -26,3 +28,4 @@ affected:
   ecosystem_specific:
     introduced_range: unknown:668917a10e7eada030f7d2dddec9f579fddeed3d
     severity: MEDIUM
+  versions: []

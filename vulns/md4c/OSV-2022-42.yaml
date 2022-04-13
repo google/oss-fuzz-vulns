@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in md_decode_utf8__
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=43589
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   md_decode_utf8__
   md_link_label_hash
   md_is_link_reference
-modified: '2022-01-14T00:00:32.201398Z'
+  ```
+modified: '2022-04-13T03:04:34.861184Z'
 published: '2022-01-14T00:00:32.201187Z'
 references:
 - type: REPORT

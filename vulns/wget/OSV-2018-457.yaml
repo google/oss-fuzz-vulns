@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in xstrndup
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=8033
 
+  ```
   Crash type: Heap-buffer-overflow READ 11
   Crash state:
   xstrndup
   get_urls_css
   wget_css_fuzzer.c
-modified: '2021-06-21T06:56:27.763183Z'
+  ```
+modified: '2022-04-13T03:04:42.412834Z'
 published: '2021-01-15T00:01:25.715652Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 78838d761f9699a6f17107a522c13cb200ae50c5
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

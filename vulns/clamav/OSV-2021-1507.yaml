@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in handle_gets
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=40452
 
+  ```
   Crash type: Heap-buffer-overflow READ 2
   Crash state:
   handle_gets
   uudecodeFile
   cli_uuencode
-modified: '2021-10-30T00:00:17.677287Z'
+  ```
+modified: '2022-04-13T03:04:39.431410Z'
 published: '2021-10-30T00:00:17.677101Z'
 references:
 - type: REPORT

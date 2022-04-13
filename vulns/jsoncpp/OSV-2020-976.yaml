@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in Json::OurReader::readComment
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=18140
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   Json::OurReader::readComment
   Json::OurReader::readToken
   Json::OurReader::parse
-modified: '2021-06-23T06:26:08.515529Z'
+  ```
+modified: '2022-04-13T03:04:36.745492Z'
 published: '2020-07-22T21:49:37.423382Z'
 references:
 - type: REPORT
@@ -24,5 +26,6 @@ affected:
     - introduced: c4bc6da87d9588032a3ce54abf59c7548af58f7f
     - fixed: 2e33c218cbd53b8d016e9230c2f600411b6146b8
   ecosystem_specific:
-    introduced_range: unknown:c4bc6da87d9588032a3ce54abf59c7548af58f7f
     severity: MEDIUM
+    introduced_range: unknown:c4bc6da87d9588032a3ce54abf59c7548af58f7f
+  versions: []

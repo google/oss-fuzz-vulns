@@ -3,12 +3,14 @@ summary: Heap-use-after-free in check_content_type_and_change_protocol
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=23834
 
+  ```
   Crash type: Heap-use-after-free READ 2
   Crash state:
   check_content_type_and_change_protocol
   ndpi_check_http_tcp
   ndpi_search_http_tcp
-modified: '2021-06-21T06:56:22.898851Z'
+  ```
+modified: '2022-04-13T03:04:36.363405Z'
 published: '2020-07-14T05:37:49.889652Z'
 references:
 - type: REPORT

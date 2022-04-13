@@ -3,12 +3,14 @@ summary: Use-of-uninitialized-value in c_pdf14trans_clist_read_update
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21640
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   c_pdf14trans_clist_read_update
   apply_create_compositor
   execute_compositor_queue
-modified: '2021-06-23T07:50:45.611175Z'
+  ```
+modified: '2022-04-13T03:04:34.542308Z'
 published: '2020-09-29T00:00:35.972666Z'
 references:
 - type: REPORT
@@ -25,5 +27,6 @@ affected:
     - fixed: d12d2085b5bd08ca1e813d97f3f7f7e630e791a0
     - fixed: a464804e35809e6bacee025accc25eecd246f9a4
   ecosystem_specific:
-    introduced_range: unknown:668917a10e7eada030f7d2dddec9f579fddeed3d
     severity: MEDIUM
+    introduced_range: unknown:668917a10e7eada030f7d2dddec9f579fddeed3d
+  versions: []

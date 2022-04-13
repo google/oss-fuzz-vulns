@@ -3,10 +3,12 @@ summary: UNKNOWN READ in decoder_fuzzer
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=26428
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   decoder_fuzzer
-modified: '2021-06-23T06:26:20.659277Z'
+  ```
+modified: '2022-04-13T03:04:37.414496Z'
 published: '2020-10-18T00:00:44.007704Z'
 references:
 - type: REPORT
@@ -22,5 +24,6 @@ affected:
     - introduced: e7cc7ab7e9091f09449cc66a5c5add600a842c82
     - fixed: b52786888ddce9d6bc06b7825ba9bffc65924e0c
   ecosystem_specific:
-    severity: MEDIUM
     introduced_range: 84590b641f4bd07ae448bdb05cb5700d991efa53:effb3931c7c67f34b167fe6e0a93253bf075f78c
+    severity: MEDIUM
+  versions: []

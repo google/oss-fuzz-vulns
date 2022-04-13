@@ -3,12 +3,14 @@ summary: Heap-use-after-free in icalparameter_new_from_value_string
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14737
 
+  ```
   Crash type: Heap-use-after-free READ 2
   Crash state:
   icalparameter_new_from_value_string
   icalparser_add_line
   icalparser_parse
-modified: '2021-06-21T06:56:21.447746Z'
+  ```
+modified: '2022-04-13T03:04:34.152333Z'
 published: '2020-07-01T00:00:24.868591Z'
 references:
 - type: REPORT
@@ -27,3 +29,4 @@ affected:
     - fixed: 584a7b4832551d75e4dcacc7cfece7ddd0fdc74c
   ecosystem_specific:
     severity: HIGH
+  versions: []

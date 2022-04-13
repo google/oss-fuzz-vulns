@@ -3,12 +3,14 @@ summary: Segv on unknown address in dwg_free_MTEXTATTRIBUTEOBJECTCONTEXTDATA_pri
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=32604
 
+  ```
   Crash type: Segv on unknown address
   Crash state:
   dwg_free_MTEXTATTRIBUTEOBJECTCONTEXTDATA_private
   dwg_free_MTEXTATTRIBUTEOBJECTCONTEXTDATA
   dwg_free_variable_no_class
-modified: '2021-03-29T00:00:22.956466Z'
+  ```
+modified: '2022-04-13T03:04:41.114789Z'
 published: '2021-03-29T00:00:22.956129Z'
 references:
 - type: REPORT

@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in mprint
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=1523
 
+  ```
   Crash type: Heap-buffer-overflow READ 3
   Crash state:
   mprint
   match
   file_softmagic
-modified: '2021-06-23T06:24:47.026398Z'
+  ```
+modified: '2022-04-13T03:04:30.798695Z'
 published: '2021-01-15T00:01:14.133316Z'
 references:
 - type: REPORT
@@ -35,5 +37,5 @@ affected:
   - FILE5_38
   - FILE5_39
   ecosystem_specific:
-    fixed_range: 100ff6d0edb3441962e518690b327186dbc0e652:6fc66d12c0ca172f4681adb63c6f662ac33cbc7c
     severity: MEDIUM
+    fixed_range: 100ff6d0edb3441962e518690b327186dbc0e652:6fc66d12c0ca172f4681adb63c6f662ac33cbc7c

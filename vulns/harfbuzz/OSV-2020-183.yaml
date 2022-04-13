@@ -4,12 +4,14 @@ summary: Global-buffer-overflow in hb_array_t<OT::IntType<unsigned char, 1u> con
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=20321
 
+  ```
   Crash type: Global-buffer-overflow READ 1
   Crash state:
   hb_array_t<OT::IntType<unsigned char, 1u> const> hb_array_t<OT::IntType<unsigned
   OT::UnsizedArrayOf<OT::IntType<unsigned char, 1u> >::copy
   OT::SBIXGlyph::copy
-modified: '2021-03-09T04:49:05.462693Z'
+  ```
+modified: '2022-04-13T03:04:33.236636Z'
 published: '2020-06-24T01:51:17.808376Z'
 references:
 - type: REPORT
@@ -24,3 +26,4 @@ affected:
     events:
     - introduced: 7dc341fe745bc1784b08efd4c658de292b958b0d
     - fixed: 0e4b2676bdffeef3cb79b235bc9624f2a49dccad
+  versions: []

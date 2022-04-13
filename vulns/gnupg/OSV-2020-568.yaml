@@ -3,12 +3,14 @@ summary: Heap-use-after-free in proc_plaintext
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13730
 
+  ```
   Crash type: Heap-use-after-free READ 4
   Crash state:
   proc_plaintext
   do_proc_packets
   proc_signature_packets
-modified: '2021-06-21T06:56:20.074383Z'
+  ```
+modified: '2022-04-13T03:04:32.464454Z'
 published: '2020-07-01T00:00:17.473815Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 3e1f3df6183b2ed2cadf2af2383063891e2c53bd
   ecosystem_specific:
     severity: HIGH
+  versions: []

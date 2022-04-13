@@ -3,12 +3,14 @@ summary: UNKNOWN READ in yyparse
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=17968
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   yyparse
   mrb_parser_parse
   mrb_parse_nstring
-modified: '2021-06-21T06:56:25.576232Z'
+  ```
+modified: '2022-04-13T03:04:39.703625Z'
 published: '2020-07-01T00:00:10.057682Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 264239f78fb9ec8047cf04b82f547fc41d65ab28
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

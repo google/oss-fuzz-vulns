@@ -3,12 +3,14 @@ summary: UNKNOWN READ in ntlm_decode_type2_target
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=33720
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   ntlm_decode_type2_target
   Curl_auth_decode_ntlm_type2_message
   Curl_sasl_continue
-modified: '2021-06-21T06:56:28.069358Z'
+  ```
+modified: '2022-04-13T03:04:42.867684Z'
 published: '2021-04-28T00:00:54.883431Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 3e820fbf25f38743fd30e0ce96ba9ae34791aa7c
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in process_chunked_data
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=28265
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   process_chunked_data
   process_data
   fuzz_process_data
-modified: '2021-06-21T06:56:24.359349Z'
+  ```
+modified: '2022-04-13T03:04:38.296752Z'
 published: '2020-12-05T00:00:47.996292Z'
 references:
 - type: REPORT

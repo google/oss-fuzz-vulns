@@ -3,12 +3,14 @@ summary: UNKNOWN WRITE in Imf_2_5::copyIntoFrameBuffer
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25770
 
+  ```
   Crash type: UNKNOWN WRITE
   Crash state:
   Imf_2_5::copyIntoFrameBuffer
   Imf_2_5::LineBufferTask::execute
   IlmThread_2_5::NullThreadPoolProvider::addTask
-modified: '2021-06-21T06:56:23.446580Z'
+  ```
+modified: '2022-04-13T03:04:37.067494Z'
 published: '2020-09-19T00:00:09.405373Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 25e9515b06a6bc293d871622b8cafaee7af84e0f
   ecosystem_specific:
     severity: HIGH
+  versions: []

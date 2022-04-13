@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in populate_relocs_record
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21850
 
+  ```
   Crash type: Heap-buffer-overflow WRITE 4
   Crash state:
   populate_relocs_record
   relocs
   r_bin_object_set_items
-modified: '2021-06-21T06:56:23.027557Z'
+  ```
+modified: '2022-04-13T03:04:36.522943Z'
 published: '2020-06-24T01:51:17.217363Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 78de31fe69a600c035dbce373b9f2f62ea2af6de
   ecosystem_specific:
     severity: HIGH
+  versions: []

@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in void mc_chroma<unsigned short>
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=13583
 
+  ```
   Crash type: Heap-buffer-overflow READ 2
   Crash state:
   void mc_chroma<unsigned short>
   generate_inter_prediction_samples
   decode_prediction_unit
-modified: '2021-06-23T06:25:11.875416Z'
+  ```
+modified: '2022-04-13T03:04:32.447601Z'
 published: '2020-07-22T21:49:58.234804Z'
 references:
 - type: REPORT

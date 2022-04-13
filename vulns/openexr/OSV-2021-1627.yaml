@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in Imf_3_1::LineCompositeTask::execute
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=41416
 
+  ```
   Crash type: Heap-buffer-overflow WRITE 2
   Crash state:
   Imf_3_1::LineCompositeTask::execute
   IlmThread_3_1::NullThreadPoolProvider::addTask
   IlmThread_3_1::ThreadPool::addGlobalTask
-modified: '2021-11-27T00:00:35.244613Z'
+  ```
+modified: '2022-04-13T03:04:37.178128Z'
 published: '2021-11-27T00:00:35.244395Z'
 references:
 - type: REPORT

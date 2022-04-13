@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in decode_mcu_fast
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=33340
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   decode_mcu_fast
   decode_mcu
   consume_data
-modified: '2021-06-23T06:26:26.825844Z'
+  ```
+modified: '2022-04-13T03:04:37.704903Z'
 published: '2021-04-18T00:01:02.873828Z'
 references:
 - type: REPORT
@@ -24,6 +26,7 @@ affected:
     - introduced: 171b875b272f47f1ae42a5009c64f424db22a95b
     - fixed: 4de8f6922a9be7d0a51a429e367283fd40031b26
   ecosystem_specific:
-    severity: HIGH
     fixed_range: d147be83e9a9f904918ba7f834b0fb28e09de9b5:4de8f6922a9be7d0a51a429e367283fd40031b26
+    severity: HIGH
     introduced_range: 3ab3234875bd58320b1646c086f95511ab67c972:d147be83e9a9f904918ba7f834b0fb28e09de9b5
+  versions: []

@@ -3,12 +3,14 @@ summary: UNKNOWN READ in MqttProps_Free
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=39070
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   MqttProps_Free
   MqttClient_Unsubscribe
   wolfMQTTFuzzer::unsubscribe
-modified: '2021-09-22T00:01:28.525543Z'
+  ```
+modified: '2022-04-13T03:04:33.999639Z'
 published: '2021-09-22T00:01:28.525327Z'
 references:
 - type: REPORT

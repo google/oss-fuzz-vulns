@@ -3,12 +3,14 @@ summary: UNKNOWN READ in bebytes2ushort
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=19039
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   bebytes2ushort
   coolkey_v0_get_attribute_len
   coolkey_v0_get_attribute_record_len
-modified: '2021-06-21T06:56:27.041532Z'
+  ```
+modified: '2022-04-13T03:04:41.559197Z'
 published: '2020-07-01T00:00:05.421205Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 249e9281761fc861bab93f76baf6cdcefb1774ee
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

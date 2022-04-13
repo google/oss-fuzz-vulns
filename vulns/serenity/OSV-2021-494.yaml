@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in AK::ByteBuffer::overwrite
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31698
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   AK::ByteBuffer::overwrite
   Crypto::PK::RSA::parse_rsa_key
   FuzzRSAKeyParsing.cpp
-modified: '2021-06-21T06:56:19.797473Z'
+  ```
+modified: '2022-04-13T03:04:32.124394Z'
 published: '2021-03-06T00:00:07.530011Z'
 references:
 - type: REPORT
@@ -24,3 +26,4 @@ affected:
     - introduced: ed9ab38b3b074f188ac739c132335dac2f0f6cb8
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in PCIDSK::CPCIDSKFile::ReadFromFile
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=41993
 
+  ```
   Crash type: Heap-buffer-overflow WRITE {*}
   Crash state:
   PCIDSK::CPCIDSKFile::ReadFromFile
   PCIDSK::CPCIDSKSegment::ReadFromFile
   PCIDSK::CPCIDSKBinarySegment::CPCIDSKBinarySegment
-modified: '2021-12-06T00:00:07.397071Z'
+  ```
+modified: '2022-04-13T03:04:42.142930Z'
 published: '2021-12-06T00:00:07.396834Z'
 references:
 - type: REPORT

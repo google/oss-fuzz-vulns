@@ -3,12 +3,14 @@ summary: Bad-cast to tt_cmap_t' (aka 'struct _tt_cmap')_cairo_truetype_index_to_
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30823
 
+  ```
   Crash type: Bad-cast
   Crash state:
   Bad-cast to tt_cmap_t' (aka 'struct _tt_cmap')_cairo_truetype_index_to_ucs4
   _cairo_sub_font_glyph_lookup_unicode
   _cairo_sub_font_map_glyph
-modified: '2021-06-23T06:26:12.981036Z'
+  ```
+modified: '2022-04-13T03:04:37.229998Z'
 published: '2021-02-13T00:01:04.517207Z'
 references:
 - type: REPORT
@@ -24,5 +26,6 @@ affected:
     - introduced: 41f5acecf50aa6b16f95aca557dbcf6b49b8f394
     - fixed: 5161fa6f1ff9f7d2c19b5326aed6ad2858c30476
   ecosystem_specific:
-    introduced_range: 5b8f942fe4b9e0d3aeed3422b92362018d88429c:c72a1c31b40322f660b6529e2dab077d3bf7b79b
     severity: HIGH
+    introduced_range: 5b8f942fe4b9e0d3aeed3422b92362018d88429c:c72a1c31b40322f660b6529e2dab077d3bf7b79b
+  versions: []

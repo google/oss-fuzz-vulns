@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in luaG_runerror
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=31331
 
+  ```
   Crash type: Heap-buffer-overflow READ 8
   Crash state:
   luaG_runerror
   luaD_pretailcall
   luaV_execute
-modified: '2021-06-21T06:56:18.607418Z'
+  ```
+modified: '2022-04-13T03:04:30.714279Z'
 published: '2021-02-25T00:02:41.560298Z'
 references:
 - type: REPORT

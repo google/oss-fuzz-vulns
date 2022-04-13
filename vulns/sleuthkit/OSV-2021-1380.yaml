@@ -3,12 +3,14 @@ summary: Negative-size-param in ntfs_attr_walk_special
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=39317
 
+  ```
   Crash type: Negative-size-param
   Crash state:
   ntfs_attr_walk_special
   tsk_fs_attr_walk
   ntfs_proc_attrseq
-modified: '2021-09-27T00:01:19.023948Z'
+  ```
+modified: '2022-04-13T03:04:36.431420Z'
 published: '2021-09-27T00:01:19.023732Z'
 references:
 - type: REPORT

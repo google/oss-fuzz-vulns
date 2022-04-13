@@ -3,12 +3,14 @@ summary: Heap-use-after-free in gx_monitor_free
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=43981
 
+  ```
   Crash type: Heap-use-after-free READ 8
   Crash state:
   gx_monitor_free
   icc_linkcache_finalize
   i_free_object
-modified: '2022-01-24T00:00:35.150598Z'
+  ```
+modified: '2022-04-13T03:04:34.797554Z'
 published: '2022-01-24T00:00:35.150378Z'
 references:
 - type: REPORT

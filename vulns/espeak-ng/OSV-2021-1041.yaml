@@ -3,12 +3,14 @@ summary: Global-buffer-overflow in SetUpPhonemeTable
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=36412
 
+  ```
   Crash type: Global-buffer-overflow READ 4
   Crash state:
   SetUpPhonemeTable
   SelectPhonemeTable
   TranslateWord2
-modified: '2022-04-04T00:04:06.637957Z'
+  ```
+modified: '2022-04-13T03:04:34.210757Z'
 published: '2021-07-23T00:00:14.684306Z'
 references:
 - type: REPORT

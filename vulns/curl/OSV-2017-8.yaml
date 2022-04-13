@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in setcharset
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=4161
 
+  ```
   Crash type: Heap-buffer-overflow READ 1
   Crash state:
   setcharset
   loop
   loop
-modified: '2021-06-23T06:31:20.584923Z'
+  ```
+modified: '2022-04-13T03:04:42.906669Z'
 published: '2021-01-13T00:00:08.384698Z'
 references:
 - type: REPORT
@@ -24,5 +26,6 @@ affected:
     - introduced: 7ee59512f875604eb468fb6f3d26e39290f781c9
     - fixed: 0b664ba968437715819bfe4c7ada5679d16ebbc3
   ecosystem_specific:
-    severity: MEDIUM
     introduced_range: 1cb4f5d6e8e470638759a48ba99fda230089712f:e240a546a7ac2fa7956adb664b8c40c4dee4f82b
+    severity: MEDIUM
+  versions: []

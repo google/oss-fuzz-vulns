@@ -1,11 +1,11 @@
 id: OSV-2020-565
 summary: Use-of-uninitialized-value in OT::AxisValue::sanitize
 details: "OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14850\n\
-  \nCrash type: Use-of-uninitialized-value\nCrash state:\nOT::AxisValue::sanitize\n\
+  \n```\nCrash type: Use-of-uninitialized-value\nCrash state:\nOT::AxisValue::sanitize\n\
   bool OT::OffsetTo<OT::AxisValue, OT::IntType<unsigned short, 2u>, true>::sanitiz\n\
   bool OT::UnsizedArrayOf<OT::OffsetTo<OT::AxisValue, OT::IntType<unsigned short,\
-  \ \n"
-modified: '2021-06-21T06:56:20.584401Z'
+  \ \n```\n"
+modified: '2022-04-13T03:04:33.006791Z'
 published: '2020-07-01T00:00:17.279338Z'
 references:
 - type: REPORT
@@ -22,3 +22,4 @@ affected:
     - fixed: 3efb7af7e28061f8cd138eb2ed5261bf521abc63
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

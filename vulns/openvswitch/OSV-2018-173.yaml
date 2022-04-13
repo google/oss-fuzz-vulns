@@ -3,12 +3,14 @@ summary: Stack-buffer-overflow in nullable_memcpy
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=10865
 
+  ```
   Crash type: Stack-buffer-overflow READ {*}
   Crash state:
   nullable_memcpy
   nsh_key_to_attr
   parse_odp_push_nsh_action
-modified: '2021-06-21T06:56:26.302566Z'
+  ```
+modified: '2022-04-13T03:04:40.700194Z'
 published: '2021-01-13T00:01:11.531593Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 33a3ee6b39acd9799301ec6cc0069bc9e4b4428b
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

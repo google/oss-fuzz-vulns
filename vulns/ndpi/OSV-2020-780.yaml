@@ -3,12 +3,14 @@ summary: Segv on unknown address in ndpi_strdup
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=22676
 
+  ```
   Crash type: Segv on unknown address
   Crash state:
   ndpi_strdup
   process_ndpi_collected_info
   packet_processing
-modified: '2021-03-09T04:49:06.071706Z'
+  ```
+modified: '2022-04-13T03:04:36.080614Z'
 published: '2020-07-14T05:37:32.263949Z'
 references:
 - type: REPORT
@@ -23,3 +25,4 @@ affected:
     events:
     - introduced: 4a09b4efa053a26e187119a540da4b41dd8a24d8
     - fixed: 204f3ddff5efc929095556ed22ec62d18bef6324
+  versions: []

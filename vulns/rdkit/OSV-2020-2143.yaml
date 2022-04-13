@@ -3,12 +3,14 @@ summary: UNKNOWN READ in __dynamic_cast
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=27315
 
+  ```
   Crash type: UNKNOWN READ
   Crash state:
   __dynamic_cast
   HandleDynamicTypeCacheMiss
   RDKit::SubstanceGroup::addAtomWithBookmark
-modified: '2021-06-21T06:56:27.007024Z'
+  ```
+modified: '2022-04-13T03:04:41.521091Z'
 published: '2020-11-10T00:00:14.277810Z'
 references:
 - type: REPORT

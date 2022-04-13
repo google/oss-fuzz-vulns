@@ -3,12 +3,14 @@ summary: Heap-use-after-free in MqttDecode_Props
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=40904
 
+  ```
   Crash type: Heap-use-after-free READ 1
   Crash state:
   MqttDecode_Props
   MqttDecode_Disconnect
   MqttClient_DecodePacket
-modified: '2022-02-24T00:06:00.481617Z'
+  ```
+modified: '2022-04-13T03:04:34.027054Z'
 published: '2021-11-12T00:00:42.998549Z'
 references:
 - type: REPORT

@@ -3,12 +3,14 @@ summary: Stack-use-after-return in bool OT::Coverage::serialize<hb_map_iter_t<hb
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=14786
 
+  ```
   Crash type: Stack-use-after-return READ 4
   Crash state:
   bool OT::Coverage::serialize<hb_map_iter_t<hb_map_iter_t<hb_filter_iter_t<OT::Co
   bool OT::SingleSubstFormat1::serialize<hb_map_iter_t<hb_map_iter_t<hb_filter_ite
   bool OT::SingleSubst::serialize<hb_map_iter_t<hb_filter_iter_t<OT::Coverage::ite
-modified: '2021-03-09T04:49:05.860409Z'
+  ```
+modified: '2022-04-13T03:04:33.050351Z'
 published: '2020-07-01T00:00:06.690091Z'
 references:
 - type: REPORT
@@ -23,3 +25,4 @@ affected:
     events:
     - introduced: d214b07883a626f3ecebb027797e8bb994e174a4
     - fixed: b7be59311f27112791e9b9c6356464e1c3ff92c1
+  versions: []

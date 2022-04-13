@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in OSS_FUZZ_png_combine_row
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=3608
 
+  ```
   Crash type: Heap-buffer-overflow WRITE {*}
   Crash state:
   OSS_FUZZ_png_combine_row
   OSS_FUZZ_png_read_row
   _start
-modified: '2021-06-21T06:56:22.219685Z'
+  ```
+modified: '2022-04-13T03:04:35.569529Z'
 published: '2021-01-13T21:56:33.199482Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: a3d1057a735d923626f1f6bdc0f662a13d0cba6f
   ecosystem_specific:
     severity: HIGH
+  versions: []

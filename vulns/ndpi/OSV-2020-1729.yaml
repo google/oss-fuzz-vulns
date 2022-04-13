@@ -3,12 +3,14 @@ summary: Use-of-uninitialized-value in ndpi_check_dga_name
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=25545
 
+  ```
   Crash type: Use-of-uninitialized-value
   Crash state:
   ndpi_check_dga_name
   check_content_type_and_change_protocol
   ndpi_check_http_tcp
-modified: '2021-06-21T06:56:22.867844Z'
+  ```
+modified: '2022-04-13T03:04:36.336114Z'
 published: '2020-09-11T00:00:28.205135Z'
 references:
 - type: REPORT
@@ -25,3 +27,4 @@ affected:
     - fixed: 1c0e617d802d214b0186f2752b50b8ee2a9e17a6
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

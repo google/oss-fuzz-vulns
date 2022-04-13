@@ -3,12 +3,14 @@ summary: Heap-buffer-overflow in yaml_emitter_emit_flow_mapping_key
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24869
 
+  ```
   Crash type: Heap-buffer-overflow READ 4
   Crash state:
   yaml_emitter_emit_flow_mapping_key
   yaml_emitter_state_machine
   yaml_emitter_emit
-modified: '2021-06-21T06:56:27.195454Z'
+  ```
+modified: '2022-04-13T03:04:41.717390Z'
 published: '2020-08-14T00:01:51.615528Z'
 references:
 - type: REPORT
@@ -24,3 +26,4 @@ affected:
     - introduced: acd6f6f014c25e46363e718381e0b35205df2d83
   ecosystem_specific:
     severity: MEDIUM
+  versions: []

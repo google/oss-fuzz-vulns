@@ -3,12 +3,14 @@ summary: Heap-use-after-free in nghttp2_http_record_request_method
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=44516
 
+  ```
   Crash type: Heap-use-after-free READ 4
   Crash state:
   nghttp2_http_record_request_method
   nghttp2_session_mem_send_internal
   nghttp2_session_send
-modified: '2022-02-11T00:01:42.563279Z'
+  ```
+modified: '2022-04-13T03:04:42.843414Z'
 published: '2022-02-11T00:01:42.562895Z'
 references:
 - type: REPORT
