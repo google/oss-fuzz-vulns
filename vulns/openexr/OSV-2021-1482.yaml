@@ -10,7 +10,7 @@ details: |
   exr_decoding_run
   Imf_3_1::checkCoreFile
   ```
-modified: '2022-04-13T03:04:37.200848Z'
+modified: '2022-04-13T03:31:05.823477Z'
 published: '2021-10-24T00:01:22.728134Z'
 references:
 - type: REPORT
@@ -27,6 +27,7 @@ affected:
     - introduced: 40eb606dc5e8b04b7634f8a4a15f44b4e2044191
     - fixed: 236c4b2782d787d56ddc586ed4a313c1d31acd95
     - introduced: 57b05e055c7065ac5873f64e42350449be1eccb8
+    - fixed: e598a72aa0166bfab8947eb691ba473a54bfed06
   versions:
   - v3.1.3
   - v3.1.3-rc
