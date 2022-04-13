@@ -10,7 +10,7 @@ details: |
   WelsDec::MarkECFrameAsRef
   WelsDec::CheckAndFinishLastPic
   ```
-modified: '2022-04-13T03:04:37.536962Z'
+modified: '2022-04-13T03:30:58.096308Z'
 published: '2020-10-22T00:00:21.083633Z'
 references:
 - type: REPORT
@@ -25,9 +25,12 @@ affected:
     events:
     - introduced: 519b0ff554e9713198bc3b3185da809be42be20c
     - fixed: b52786888ddce9d6bc06b7825ba9bffc65924e0c
+    - fixed: f15f940425eebf24ce66984db2445733cf500b7b
   versions:
   - v2.0.0
   - v2.1.0
   - v2.1.1
   ecosystem_specific:
     severity: MEDIUM
+  database_specific:
+    fixed_range: 992c1c147175126c3fe7ab78216aa0395f9e6c71:f15f940425eebf24ce66984db2445733cf500b7b
