@@ -10,7 +10,7 @@ details: |
   Envoy::Http::Http1::ConnectionImpl::copyToBuffer
   Envoy::Http::Http1::RequestStreamEncoderImpl::encodeHeaders
   ```
-modified: '2022-04-13T03:04:31.593071Z'
+modified: '2022-04-13T03:30:04.042660Z'
 published: '2021-03-29T05:14:39.113684Z'
 references:
 - type: REPORT
@@ -26,13 +26,12 @@ affected:
     - introduced: '0'
     - fixed: b3f42a4ebbd51e816cfde63ee672ce31e420602a
     - fixed: 22c9fbd5673c8de33cc89d733f41ce338db3c8ad
+    - fixed: 58802ba2f503200d93e52a4eb6ac1076e0faa272
   versions:
   - v1.0.0
   - v1.1.0
   - v1.10.0
   - v1.11.0
-  - v1.11.1
-  - v1.11.2
   - v1.12.0
   - v1.12.1
   - v1.2.0
@@ -41,9 +40,9 @@ affected:
   - v1.5.0
   - v1.6.0
   - v1.7.0
-  - v1.7.1
   - v1.8.0
   - v1.9.0
-  - v1.9.1
   ecosystem_specific:
     severity: HIGH
+  database_specific:
+    fixed_range: 61201908c18b71633e4a8393c03978a83faac4d1:58802ba2f503200d93e52a4eb6ac1076e0faa272
