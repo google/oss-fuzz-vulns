@@ -10,7 +10,7 @@ details: |
   internal_exr_parse_header
   exr_start_read
   ```
-modified: '2022-04-13T03:04:37.156631Z'
+modified: '2022-04-13T03:20:58.017345Z'
 published: '2021-09-26T00:00:10.966065Z'
 references:
 - type: REPORT
@@ -25,6 +25,11 @@ affected:
     events:
     - introduced: 40eb606dc5e8b04b7634f8a4a15f44b4e2044191
     - fixed: 82f703a1dd030eb3f8cb9e207435ae914a36380a
+    - fixed: 9571a805e96ec921e2ab6a83086477c87f44ec29
+    - introduced: 57b05e055c7065ac5873f64e42350449be1eccb8
+    - fixed: 4ff3eb73050a1d3bcc72c38175aa1d832f8a6f6b
   ecosystem_specific:
     severity: HIGH
+  database_specific:
+    fixed_range: a0cfa81153b2464b864c5fe39a53cb03339092ed:9571a805e96ec921e2ab6a83086477c87f44ec29
   versions: []
