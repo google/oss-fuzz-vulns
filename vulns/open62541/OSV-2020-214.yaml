@@ -10,7 +10,7 @@ details: |
   clearStructure
   Variant_clear
   ```
-modified: '2022-04-13T03:04:41.282171Z'
+modified: '2022-04-13T03:35:27.733269Z'
 published: '2020-06-24T01:51:19.252592Z'
 references:
 - type: REPORT
@@ -25,7 +25,9 @@ affected:
     events:
     - introduced: 58a2fdb5b1ad1efafef455d66a9cbfb93c3fae9d
     - fixed: 36c440147e0adbd1c7254d98851c8a856e77cbfe
+    - fixed: c4f86a28309f9da93e68eed78d13aced2a20432d
   versions:
+  - basic256sha256
   - v1.0
   - v1.0-dev
   - v1.0-rc1
@@ -42,3 +44,5 @@ affected:
   - v1.1-rc1
   ecosystem_specific:
     severity: HIGH
+  database_specific:
+    fixed_range: 50f8074e654f8223334512f5a66e62854191a3eb:c4f86a28309f9da93e68eed78d13aced2a20432d
