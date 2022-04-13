@@ -10,7 +10,7 @@ details: |
   dhcp_packet
   FuzzDhcp
   ```
-modified: '2022-04-13T03:04:31.149539Z'
+modified: '2022-04-13T03:34:44.550863Z'
 published: '2021-07-08T00:00:29.994570Z'
 references:
 - type: REPORT
@@ -24,6 +24,7 @@ affected:
     repo: git://thekelleys.org.uk/dnsmasq.git
     events:
     - introduced: 96f6444958c29a670f4254722d787f328153605c
+    - fixed: d242cbffa4f20c9f7472f79b3a9e47008b6fe77c
   versions:
   - v2.86
   - v2.86rc1
