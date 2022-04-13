@@ -11,7 +11,7 @@ details: |
   bool SmilesParseOps::parser::parse_data_sgroup<std::__1::__wrap_iter<char const*
   bool SmilesParseOps::parser::parse_it<std::__1::__wrap_iter<char const*> >
   ```
-modified: '2022-04-13T03:04:41.502938Z'
+modified: '2022-04-13T03:27:42.700438Z'
 published: '2021-12-24T00:00:18.937291Z'
 references:
 - type: REPORT
@@ -33,6 +33,7 @@ affected:
   - Release_2021_09_2
   - Release_2021_09_3
   - Release_2021_09_4
+  - Release_2021_09_5
   ecosystem_specific:
     severity: MEDIUM
   database_specific:
