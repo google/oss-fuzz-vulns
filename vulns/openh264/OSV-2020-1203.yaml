@@ -10,7 +10,7 @@ details: |
   WelsDec::InitRefPicList
   WelsDec::DecodeCurrentAccessUnit
   ```
-modified: '2022-04-13T03:04:37.419955Z'
+modified: '2022-04-13T03:34:09.198121Z'
 published: '2020-07-22T21:49:56.222517Z'
 references:
 - type: REPORT
@@ -25,6 +25,7 @@ affected:
     events:
     - introduced: 70eeb783515dbfee3e0c781d6667838caba5113b
     - fixed: 68b51e8aed5ea83bcbb9da90af03023ce54a5427
+    - fixed: 989067645537fc54d547126adc5567b5fdc0fae2
   versions:
   - v2.0.0
   - v2.1.0
