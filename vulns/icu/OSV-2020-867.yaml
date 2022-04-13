@@ -10,7 +10,7 @@ details: |
   icu_64::DataBuilderCollationIterator::fetchCEs
   icu_64::CollationDataBuilder::getCEs
   ```
-modified: '2022-04-13T03:04:34.114186Z'
+modified: '2022-04-13T03:46:31.716727Z'
 published: '2020-07-14T22:13:50.339661Z'
 references:
 - type: REPORT
@@ -58,5 +58,6 @@ affected:
   - release-70-1
   - release-70-rc
   - release-71-rc
+  - release-71-1
   ecosystem_specific:
     severity: MEDIUM
