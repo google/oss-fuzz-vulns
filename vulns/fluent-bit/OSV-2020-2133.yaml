@@ -10,7 +10,7 @@ details: |
   tdefl_compress_block
   tdefl_flush_block
   ```
-modified: '2022-04-13T03:04:38.409202Z'
+modified: '2022-04-13T03:29:21.391124Z'
 published: '2020-11-08T00:00:05.283717Z'
 references:
 - type: REPORT
@@ -45,5 +45,13 @@ affected:
   - v1.7.0-rc8
   - v1.7.0-rc9
   - v1.7.1
+  - v1.7.2
+  - v1.7.3
+  - v1.7.4
+  - v1.7.5
+  - v1.7.6
+  - v1.7.7
+  - v1.7.8
+  - v1.7.9
   ecosystem_specific:
     severity: HIGH
