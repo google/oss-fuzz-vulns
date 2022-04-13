@@ -10,7 +10,7 @@ details: |
   heif::ColorConversionPipeline::convert_image
   heif::convert_colorspace
   ```
-modified: '2022-04-13T03:04:32.459003Z'
+modified: '2022-04-13T03:30:49.549940Z'
 published: '2020-08-30T00:00:07.006768Z'
 references:
 - type: REPORT
@@ -24,12 +24,15 @@ affected:
     repo: https://github.com/strukturag/libheif.git
     events:
     - introduced: a8e5e37f46e2ec1f14a52477e1b439fe47cd430d
+    - fixed: 085531bd09a364deb759513204107bf8c99b0402
   versions:
   - v1.10.0
   - v1.11.0
+  - v1.12.0
   - v1.8.0
   - v1.9.0
   - v1.9.1
-  - v1.12.0
   ecosystem_specific:
     severity: MEDIUM
+  database_specific:
+    fixed_range: 5f948947733bceb5ff243c785265ebeeabbeb170:085531bd09a364deb759513204107bf8c99b0402
