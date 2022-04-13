@@ -10,7 +10,7 @@ details: |
   cli_mbox
   cli_scanmail
   ```
-modified: '2022-04-13T03:04:39.363555Z'
+modified: '2022-04-13T03:29:14.526232Z'
 published: '2021-10-30T00:01:19.289143Z'
 references:
 - type: REPORT
@@ -27,6 +27,8 @@ affected:
     - fixed: d1141becac82099de46f94f5d7a02d60cb1baf1d
     - introduced: f3f5e0c1f4c25f53fe353a23a25af392232851d2
     - fixed: 7e49c758ac412651afd71cbb37aa61a2b513ce2e
+    - introduced: 960e212dd568c0fc8975676583c7abb3c6b5b213
+    - fixed: dbd02f15322de849ba8d55494c8a0d1b86a7d7aa
   ecosystem_specific:
     severity: HIGH
   versions: []
