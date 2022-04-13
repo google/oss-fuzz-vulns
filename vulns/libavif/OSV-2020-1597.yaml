@@ -10,7 +10,7 @@ details: |
   avifDecoderNextImage
   avif_decode_fuzzer.cc
   ```
-modified: '2022-04-13T03:04:41.881785Z'
+modified: '2022-04-13T03:29:21.202851Z'
 published: '2020-08-12T00:00:12.469996Z'
 references:
 - type: REPORT
@@ -25,8 +25,11 @@ affected:
     events:
     - introduced: 9c5f5653d1b08b1fd75b4af3fe8ed9c4a2ce0563
     - fixed: 0a8e7244d494ae98e9756355dfbfb6697ded2ff9
+    - fixed: 4cfee6282b97533e6c99183ddf7a897173755c69
   versions:
   - v0.8.0
   - v0.8.1
   ecosystem_specific:
     severity: HIGH
+  database_specific:
+    fixed_range: c14d7fe55b0721cc7def752054cad10e2754521c:4cfee6282b97533e6c99183ddf7a897173755c69
