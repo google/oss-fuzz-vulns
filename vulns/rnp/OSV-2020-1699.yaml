@@ -10,7 +10,7 @@ details: |
   rnp_load_keys
   keyring_kbx.c
   ```
-modified: '2022-04-13T03:04:35.167651Z'
+modified: '2022-04-13T03:33:34.317362Z'
 published: '2020-09-04T00:00:16.840683Z'
 references:
 - type: REPORT
@@ -25,6 +25,11 @@ affected:
     events:
     - introduced: 29ab1870c84737b836fd6ea7ee1d7cd9d1ecfafb
     - fixed: a78cdb748a715796613c59f07575737b767fcab9
+    - fixed: 6a5fb890eb30a59f7aa46b3e915a236d4bbe4176
+    - introduced: 0d8da3729dab8d36ba3a86116cd204aef7a725b8
+    - fixed: f390442dc9bc3a4cf44c35a642f6094f11075f5d
   ecosystem_specific:
     severity: MEDIUM
+  database_specific:
+    fixed_range: cfcd0dffdb42bcc2b96f4dd9485dde2796d48fcc:6a5fb890eb30a59f7aa46b3e915a236d4bbe4176
   versions: []
