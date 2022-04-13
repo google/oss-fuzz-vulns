@@ -8,7 +8,7 @@ details: |
   Crash state:
   helper_shl_cc_arm
   ```
-modified: '2022-04-13T03:04:39.097728Z'
+modified: '2022-04-13T03:23:15.899637Z'
 published: '2022-01-29T00:01:34.585336Z'
 references:
 - type: REPORT
@@ -24,6 +24,7 @@ affected:
     events:
     - introduced: 34ddafcbcf6d16508a63623a68715394ea4e12d8
     - fixed: 5572c3db43959294bf216ac27cf3d34ed042d7e2
+    - fixed: 5b2c6105273c16356ac61c2396db4426cae38aa4
   versions:
   - 1.0.3
   - 2.0.0-rc1
