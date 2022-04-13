@@ -9,7 +9,7 @@ details: |
   flb_gzip_compress
   utils_fuzzer.c
   ```
-modified: '2022-04-13T03:04:38.303320Z'
+modified: '2022-04-13T03:36:45.802759Z'
 published: '2020-11-12T00:00:05.550790Z'
 references:
 - type: REPORT
@@ -44,5 +44,13 @@ affected:
   - v1.7.0-rc8
   - v1.7.0-rc9
   - v1.7.1
+  - v1.7.2
+  - v1.7.3
+  - v1.7.4
+  - v1.7.5
+  - v1.7.6
+  - v1.7.7
+  - v1.7.8
+  - v1.7.9
   ecosystem_specific:
     severity: HIGH
