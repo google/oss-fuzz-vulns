@@ -10,7 +10,7 @@ details: |
   Envoy::Server::InitManagerImpl::initialize
   Envoy::Server::ValidationInstance::initialize
   ```
-modified: '2022-04-13T03:04:31.621610Z'
+modified: '2022-04-13T03:31:47.875856Z'
 published: '2020-07-01T00:00:11.677829Z'
 references:
 - type: REPORT
@@ -25,8 +25,10 @@ affected:
     events:
     - introduced: e96425aabcce10ab2030de66f69cbb20a867322f
     - fixed: fd79055373e0b127b3d32a062ac93b6bc891fb77
+    - fixed: 330d03c58910d6ebe97a696fe0d2e70b3d7519ed
   versions:
   - v1.9.0
-  - v1.9.1
   ecosystem_specific:
     severity: HIGH
+  database_specific:
+    fixed_range: 4fae56e36d6d640c12d9c6bf60d798d54923e0d2:330d03c58910d6ebe97a696fe0d2e70b3d7519ed
