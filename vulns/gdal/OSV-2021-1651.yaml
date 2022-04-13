@@ -10,7 +10,7 @@ details: |
   PCIDSK::CPCIDSKSegment::ReadFromFile
   PCIDSK::CPCIDSKBinarySegment::CPCIDSKBinarySegment
   ```
-modified: '2022-04-13T03:04:42.142930Z'
+modified: '2022-04-13T03:35:10.552874Z'
 published: '2021-12-06T00:00:07.396834Z'
 references:
 - type: REPORT
@@ -25,6 +25,7 @@ affected:
     events:
     - introduced: 3c7e9db1ab4d28306a8700e38d2f4c0e2fa46b82
     - fixed: 1ca6a3e5168c200763fa46d8aa7e698d0b757e7e
+    - fixed: 73f006c054b47b00acf42bc6bf96e348fd53ab4b
   versions:
   - v3.3.0
   - v3.3.0RC1
@@ -41,7 +42,13 @@ affected:
   - v3.4.0RC1
   - v3.4.0RC2
   - v3.4.0RC3
+  - v3.4.1
+  - v3.4.1RC1
+  - v3.4.2
+  - v3.4.2RC1
+  - v3.4.2RC2
   ecosystem_specific:
     severity: MEDIUM
   database_specific:
     introduced_range: 53960d2a40b39b4482efc514f9ca289652447675:762a261f32617b506a9fc199040a5dbdc5214716
+    fixed_range: a6d42bd6adbdcec27a6a64c844598912d325de14:73f006c054b47b00acf42bc6bf96e348fd53ab4b
