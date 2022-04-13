@@ -10,7 +10,7 @@ details: |
   _Unwind_RaiseException
   ErrorHandler::Throw
   ```
-modified: '2022-04-13T03:04:35.368733Z'
+modified: '2022-04-13T03:26:23.973185Z'
 published: '2021-01-13T21:57:49.330781Z'
 references:
 - type: REPORT
@@ -25,6 +25,7 @@ affected:
     events:
     - introduced: d2e5341ebf6f34c9bd5939c3ac812cb2cd983081
     - fixed: 48592b298a81601380032fef55470c1a8eb0eeea
+    - fixed: db8eea2de60a98e8de6bef1c89346471f5aa6f4f
   versions:
   - 5.6.1.2
   - 5.6.1.3
@@ -36,7 +37,8 @@ affected:
   - 5.6.8
   - v5.7.1
   - v5.7.3
-  - v6.0.3
   ecosystem_specific:
     severity: MEDIUM
     introduced_range: 2a079823c708a637bc36e888180ebb96fdfba526:1d8ea7923dae7c8f136912b6bdca95dcb52e80bc
+  database_specific:
+    fixed_range: 9866c9649507f177233ca96feefac8b12e36a91f:db8eea2de60a98e8de6bef1c89346471f5aa6f4f
