@@ -31,6 +31,9 @@ affected:
     - fixed: ad7c381c79769104653fa8ed9677a73ce71f9c5e
     - introduced: f640123f1ffbe70fdce87ee1b9f75684553af99c
     - fixed: f640123f1ffbe70fdce87ee1b9f75684553af99c
+    - fixed: cd8025fa6fbf141ef431595efc2a5d416244d3c3
   ecosystem_specific:
     severity: null
+  database_specific:
+    fixed_range: 98b34147ad3ea412ba938de24491d96fa265447f:cd8025fa6fbf141ef431595efc2a5d416244d3c3
   versions: []
