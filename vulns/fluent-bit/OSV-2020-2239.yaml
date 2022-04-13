@@ -9,7 +9,7 @@ details: |
   flb_http_do
   http_fuzzer.c
   ```
-modified: '2022-04-13T03:04:38.214515Z'
+modified: '2022-04-13T03:23:34.051218Z'
 published: '2020-12-05T00:00:32.824865Z'
 references:
 - type: REPORT
@@ -24,6 +24,8 @@ affected:
     events:
     - introduced: 10ceb5b2ab6635a000f3eceaa267e1e34496de6b
     - fixed: 16f4084f36c78d1c121a78aafb7dc1db5fe699e9
+    - fixed: b4036d78e0963f9051bea9501437852d0bf6772e
+    - fixed: d5e58829f7aa930d4d2dafbe8cd9fdfb080be924
   versions:
   - v1.7.0
   - v1.7.0-rc1
