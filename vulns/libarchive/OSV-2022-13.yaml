@@ -10,7 +10,7 @@ details: |
   archive_read_format_rar_read_data
   _archive_read_data_block
   ```
-modified: '2022-04-13T03:04:41.178739Z'
+modified: '2022-04-13T03:31:58.721976Z'
 published: '2022-01-06T00:02:10.206687Z'
 references:
 - type: REPORT
@@ -25,6 +25,7 @@ affected:
     repo: https://github.com/libarchive/libarchive.git
     events:
     - introduced: d7fec62918f48dc1f56457df02eb3c8b0d12863b
+    - fixed: 52efa50c69653029687bfc545703b7340b7a51e2
   versions:
   - v3.6.0
   ecosystem_specific:
