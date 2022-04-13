@@ -10,7 +10,7 @@ details: |
   flb_parser_json_do
   flb_parser_do
   ```
-modified: '2022-04-13T03:04:38.391046Z'
+modified: '2022-04-13T03:36:08.894942Z'
 published: '2021-04-29T00:00:25.185079Z'
 references:
 - type: REPORT
@@ -25,6 +25,7 @@ affected:
     events:
     - introduced: 68746b76af8b143daf477033a6799902be2f3cad
     - fixed: 22346a74c07ceb90296be872be2d53eb92252a54
+    - fixed: 9b4d9ee0f9d42383bad593b05b95f25e8b294c71
   versions:
   - v1.7.0
   - v1.7.0-rc2
