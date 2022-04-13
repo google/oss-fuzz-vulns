@@ -10,7 +10,7 @@ details: |
   dispatch_read
   read_uncompressed_direct
   ```
-modified: '2022-04-13T03:04:37.195296Z'
+modified: '2022-04-13T03:22:04.516243Z'
 published: '2021-10-04T00:00:13.690629Z'
 references:
 - type: REPORT
@@ -25,6 +25,11 @@ affected:
     events:
     - introduced: 40eb606dc5e8b04b7634f8a4a15f44b4e2044191
     - fixed: f68dc195ef2079793e2ea68f089adca902f0a4d8
+    - fixed: e86910cb1fa2cd4e555bdb3c04b69eda28c74547
+    - introduced: 57b05e055c7065ac5873f64e42350449be1eccb8
+    - fixed: 666e2064d10445c501d48544d2d4566c304015c7
   ecosystem_specific:
     severity: HIGH
+  database_specific:
+    fixed_range: 481bde4b2584ef018cca4a6538062efd0d5d0b88:e86910cb1fa2cd4e555bdb3c04b69eda28c74547
   versions: []
