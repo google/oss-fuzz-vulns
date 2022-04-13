@@ -10,7 +10,7 @@ details: |
   CFF::CFF2CSOpSet<CFF2CSOpSet_Extents, ExtentsParam, CFF2PathProcs_Extents>::proc
   CFF::CSInterpreter<CFF::CFF2CSInterpEnv, CFF2CSOpSet_Extents, ExtentsParam>::int
   ```
-modified: '2022-04-13T03:04:33.023062Z'
+modified: '2022-04-13T03:33:56.471620Z'
 published: '2021-01-13T00:00:53.045964Z'
 references:
 - type: REPORT
@@ -25,4 +25,7 @@ affected:
     events:
     - introduced: 7b21319edfd6531a444846f71e87303bc09f4621
     - fixed: 72d8f76368b264a42fe58438fe15811d458a7935
-  versions: []
+  versions:
+  - 2.1.2
+  - 2.1.3
+  - 2.2.0
