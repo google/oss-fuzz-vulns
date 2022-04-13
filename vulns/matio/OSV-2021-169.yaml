@@ -10,7 +10,7 @@ details: |
   H5O__chunk_deserialize
   H5O__cache_deserialize
   ```
-modified: '2022-04-13T03:04:43.145723Z'
+modified: '2022-04-13T03:34:02.929451Z'
 published: '2021-01-13T21:57:45.199364Z'
 references:
 - type: REPORT
@@ -24,8 +24,10 @@ affected:
     repo: git://git.code.sf.net/p/matio/matio
     events:
     - introduced: 1ce8f2d1845ecdde19a35605cabdbb884776d52d
+    - fixed: b89ed176f27c71657587d231794bee09d0461d08
   versions:
   - v1.5.20
   - v1.5.21
+  - v1.5.22
   ecosystem_specific:
     severity: MEDIUM
