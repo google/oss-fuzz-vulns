@@ -10,7 +10,7 @@ details: |
   flb_msgpack_gelf_value
   flb_msgpack_to_gelf
   ```
-modified: '2022-04-13T03:04:38.273472Z'
+modified: '2022-04-13T03:36:15.406207Z'
 published: '2020-12-04T00:01:24.065614Z'
 references:
 - type: REPORT
@@ -25,6 +25,7 @@ affected:
     events:
     - introduced: d62166140fab2faa5307d871957dbac16bc08dc2
     - fixed: 4c1de376612bb0665bc0c1e3c4b03790a949ac3f
+    - fixed: 9d21819b331e62c80bd3a946d48ae3fffe3d8809
   versions:
   - v1.6.0
   - v1.6.1
