@@ -10,7 +10,7 @@ details: |
   ih264d_motion_compensate_mp
   ih264d_decode_recon_tfr_nmb
   ```
-modified: '2022-04-13T03:04:35.375113Z'
+modified: '2022-04-13T03:36:38.304614Z'
 published: '2020-07-01T00:00:05.612589Z'
 references:
 - type: REPORT
@@ -29,5 +29,12 @@ affected:
   - android-r-preview-1
   - platform-tools-29.0.5
   - platform-tools-29.0.6
+  - android-10.0.0_r12
+  - android-10.0.0_r13
+  - android-10.0.0_r14
+  - android-10.0.0_r7
+  - android-10.0.0_r8
+  - android-10.0.0_r9
+  - android-mainline-10.0.0_r4
   ecosystem_specific:
     severity: HIGH
