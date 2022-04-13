@@ -24,9 +24,7 @@ affected:
     repo: https://github.com/assimp/assimp.git
     events:
     - introduced: cb7d3ac598dcabbbd8b061ba79fd8a4c70468704
-  versions:
-  - v5.1.0.rc1
-  - v5.1.0
-  - v5.1.1
+    - fixed: 71a87b653cd4b5671104fe49e2e38cf5dd4d8675
   ecosystem_specific:
     severity: MEDIUM
+  versions: []
