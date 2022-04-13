@@ -10,7 +10,7 @@ details: |
   generate_inter_prediction_samples
   decode_prediction_unit
   ```
-modified: '2022-04-13T03:04:42.537824Z'
+modified: '2022-04-13T03:36:18.680417Z'
 published: '2021-03-01T00:01:28.337558Z'
 references:
 - type: REPORT
@@ -24,17 +24,26 @@ affected:
     repo: https://invent.kde.org/frameworks/kimageformats.git
     events:
     - introduced: ca52d4ddf540cc731d0f31dbccc1897f7e6d9db4
+    - fixed: 957c199c68f6377441bc733d2672eb7656f1be0a
   versions:
   - v5.80.0
   - v5.80.0-rc1
   - v5.81.0
   - v5.81.0-rc1
   - v5.81.0-rc2
-  - v5.82.0
   - v5.82.0-rc1
-  - v5.82.0-rc2
-  - v5.83.0-rc1
   - v5.83.0
+  - v5.83.0-rc1
   - v5.84.0-rc1
+  - v5.85.0
+  - v5.85.0-rc1
+  - v5.86.0
+  - v5.86.0-rc1
+  - v5.87.0
+  - v5.87.0-rc1
+  - v5.88.0
+  - v5.88.0-rc1
   ecosystem_specific:
     severity: MEDIUM
+  database_specific:
+    fixed_range: 3266a9c4660c12f12fc709892816857804a346bf:957c199c68f6377441bc733d2672eb7656f1be0a
