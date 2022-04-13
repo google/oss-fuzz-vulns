@@ -10,7 +10,7 @@ details: |
   processTLSBlock
   ndpi_search_tls_tcp
   ```
-modified: '2022-04-13T03:04:36.085637Z'
+modified: '2022-04-13T03:22:27.975956Z'
 published: '2021-05-22T00:00:27.949231Z'
 references:
 - type: REPORT
@@ -24,6 +24,7 @@ affected:
     repo: https://github.com/ntop/nDPI.git
     events:
     - introduced: e2c3445a204c39c152bd3ae93a73f0cf2e57d286
+    - fixed: ed51987e3a4838dd9aef27dfab2c0651f2f52836
   versions:
   - '4.0'
   ecosystem_specific:
