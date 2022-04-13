@@ -10,7 +10,7 @@ details: |
   fuzz_mdns_xht.cc
   txt2sd
   ```
-modified: '2022-04-13T03:04:41.335027Z'
+modified: '2022-04-13T03:35:57.950572Z'
 published: '2020-07-28T00:00:16.191970Z'
 references:
 - type: REPORT
@@ -43,5 +43,12 @@ affected:
   - v1.0.1
   - v1.0.2
   - v1.0.3
+  - v1.2.3
+  - v1.2.4
+  - v1.3
+  - v1.3-rc1
+  - v1.3-rc2
+  - v1.3-rc2-ef
+  - v1.3-rc2-ef2
   ecosystem_specific:
     severity: MEDIUM
