@@ -10,7 +10,7 @@ details: |
   H5G_traverse
   H5G_loc_info
   ```
-modified: '2022-04-13T03:33:54.156531Z'
+modified: '2022-04-15T00:05:16.240664Z'
 published: '2021-01-13T21:56:17.197324Z'
 references:
 - type: REPORT
@@ -24,9 +24,12 @@ affected:
     repo: git://git.code.sf.net/p/matio/matio
     events:
     - introduced: 1ce8f2d1845ecdde19a35605cabdbb884776d52d
+    - fixed: b89ed176f27c71657587d231794bee09d0461d08
   versions:
   - v1.5.20
   - v1.5.21
   - v1.5.22
   ecosystem_specific:
     severity: MEDIUM
+  database_specific:
+    fixed_range: 8e18058117fcf177d236e68d453d04e20f937598:b89ed176f27c71657587d231794bee09d0461d08
