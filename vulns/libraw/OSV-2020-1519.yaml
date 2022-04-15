@@ -10,7 +10,7 @@ details: |
   LibRaw::dht_interpolate
   LibRaw::dcraw_process
   ```
-modified: '2022-04-13T03:04:39.984500Z'
+modified: '2022-04-15T00:06:08.963961Z'
 published: '2020-07-28T00:00:36.268160Z'
 references:
 - type: REPORT
@@ -24,10 +24,13 @@ affected:
     repo: https://github.com/libraw/libraw
     events:
     - introduced: 5eeffd556eec1e2baea7826a4be20664f9d70662
+    - fixed: 363e91ea656f4ce46584b4b0af6285030f236b7e
   versions:
-  - 0.20.0
   - 0.20-RC2
+  - 0.20.0
   - 0.20.1
   - 0.20.2
   ecosystem_specific:
     severity: MEDIUM
+  database_specific:
+    fixed_range: 371161a06d7f98f231a001dad4af2dfb463e270a:363e91ea656f4ce46584b4b0af6285030f236b7e
