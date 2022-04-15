@@ -10,7 +10,7 @@ details: |
   get_relocs_64
   relocs
   ```
-modified: '2022-04-13T03:04:36.539609Z'
+modified: '2022-04-15T00:08:37.592330Z'
 published: '2020-07-28T00:00:08.332887Z'
 references:
 - type: REPORT
@@ -24,21 +24,18 @@ affected:
     repo: https://github.com/radare/radare2
     events:
     - introduced: ee9025c9170c15dea5e68d4d5179d41e78868493
+    - fixed: ca8d8b39f3e34a4fd943270330b80f1148129de4
   versions:
-  - 4.5.0
   - 4.5.1
   - 5.0.0
   - 5.1.0
   - 5.1.1
-  - release-5.0.0
   - 5.2.0
   - 5.2.1
   - 5.3.0
   - 5.3.1
-  - 5.4.0-dev
-  - 5.4.0-git
   - 5.4.0
-  - continuous
+  - 5.4.0-git
   - 5.4.2
   - 5.5.0
   - 5.5.2
@@ -47,5 +44,7 @@ affected:
   - 5.6.2
   - 5.6.4
   - 5.6.6
+  - continuous
+  - release-5.0.0
   ecosystem_specific:
     severity: MEDIUM
