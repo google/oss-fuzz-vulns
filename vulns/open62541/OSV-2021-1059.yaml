@@ -24,13 +24,9 @@ affected:
     repo: https://github.com/open62541/open62541.git
     events:
     - introduced: 6f21ecb48a49fd292d568feb3751a50e51e083a3
-  versions:
-  - v1.2.3
-  - v1.2.4
-  - v1.3
-  - v1.3-rc1
-  - v1.3-rc2
-  - v1.3-rc2-ef
-  - v1.3-rc2-ef2
+    - fixed: 4a12b64f32427042605dbeafa6fded3583316244
   ecosystem_specific:
     severity: MEDIUM
+  database_specific:
+    fixed_range: 49c92d79b0ad5f23191ab27a6729a096d5eded5c:4a12b64f32427042605dbeafa6fded3583316244
+  versions: []
