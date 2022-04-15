@@ -10,7 +10,7 @@ details: |
   acceleration_functions::put_hevc_epel
   void mc_chroma<unsigned short>
   ```
-modified: '2022-04-13T03:04:42.559323Z'
+modified: '2022-04-15T00:04:46.166358Z'
 published: '2021-03-06T00:01:09.514607Z'
 references:
 - type: REPORT
@@ -24,35 +24,36 @@ affected:
     repo: https://invent.kde.org/frameworks/kimageformats.git
     events:
     - introduced: ca52d4ddf540cc731d0f31dbccc1897f7e6d9db4
+    - fixed: 384f78a13ceff1fb3577bfa916fcc9dd480fb23b
   versions:
   - v5.80.0
   - v5.80.0-rc1
   - v5.81.0
   - v5.81.0-rc1
   - v5.81.0-rc2
-  - v5.82.0
   - v5.82.0-rc1
-  - v5.82.0-rc2
-  - v5.83.0-rc1
   - v5.83.0
+  - v5.83.0-rc1
   - v5.84.0-rc1
-  - v5.85.0-rc1
   - v5.85.0
-  - v5.86.0-rc1
+  - v5.85.0-rc1
   - v5.86.0
-  - v5.87.0-rc1
+  - v5.86.0-rc1
   - v5.87.0
-  - v5.88.0-rc1
+  - v5.87.0-rc1
   - v5.88.0
-  - v5.89.0-rc1
+  - v5.88.0-rc1
   - v5.89.0
-  - v5.90.0-rc1
+  - v5.89.0-rc1
   - v5.90.0
-  - v5.91.0-rc1
+  - v5.90.0-rc1
   - v5.91.0
-  - v5.92.0-rc1
+  - v5.91.0-rc1
   - v5.92.0
-  - v5.93.0-rc1
+  - v5.92.0-rc1
   - v5.93.0
+  - v5.93.0-rc1
   ecosystem_specific:
     severity: MEDIUM
+  database_specific:
+    fixed_range: 98f19c60aed45e81cad631825c212005889b459b:384f78a13ceff1fb3577bfa916fcc9dd480fb23b
