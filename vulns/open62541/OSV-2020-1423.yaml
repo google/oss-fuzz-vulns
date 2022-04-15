@@ -10,7 +10,7 @@ details: |
   fuzz_mdns_xht.cc
   txt2sd
   ```
-modified: '2022-04-13T03:35:57.950572Z'
+modified: '2022-04-15T00:06:34.889356Z'
 published: '2020-07-28T00:00:16.191970Z'
 references:
 - type: REPORT
@@ -25,30 +25,26 @@ affected:
     events:
     - introduced: 2919785d72474ed553317c4f3bafadf3e8c027f2
     - introduced: 798210374ad7a5fd43b31fc3c178a34a3ac21a0c
+    - fixed: 6f21ecb48a49fd292d568feb3751a50e51e083a3
   versions:
-  - v1.1
-  - v1.1.1
-  - v1.1.2
-  - v1.0.4
-  - v1.1.3
-  - v1.1.4
-  - v1.1.5
-  - v1.2
-  - v1.2-rc1
-  - v1.2-rc2
-  - v1.1.6
-  - v1.2.1
-  - v.1.2.2
-  - v1.2.2
   - v1.0.1
   - v1.0.2
   - v1.0.3
+  - v1.1
+  - v1.1.1
+  - v1.1.2
+  - v1.1.3
+  - v1.1.4
+  - v1.1.5
+  - v1.1.6
+  - v1.2
+  - v1.2-rc1
+  - v1.2-rc2
+  - v1.2.1
+  - v1.2.2
   - v1.2.3
   - v1.2.4
-  - v1.3
-  - v1.3-rc1
-  - v1.3-rc2
-  - v1.3-rc2-ef
-  - v1.3-rc2-ef2
   ecosystem_specific:
     severity: MEDIUM
+  database_specific:
+    fixed_range: 11805745b0b2b85040b249870b80ee0e87b74b67:6f21ecb48a49fd292d568feb3751a50e51e083a3
