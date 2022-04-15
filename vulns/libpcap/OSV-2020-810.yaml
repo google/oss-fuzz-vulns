@@ -10,7 +10,7 @@ details: |
   pcap_filter
   pcap_offline_filter
   ```
-modified: '2022-04-13T03:04:38.730766Z'
+modified: '2022-04-15T00:05:14.704159Z'
 published: '2020-07-14T05:37:43.627443Z'
 references:
 - type: REPORT
@@ -24,9 +24,13 @@ affected:
     repo: https://github.com/the-tcpdump-group/libpcap.git
     events:
     - introduced: 54d6e832a0d201e7e7252b5b72c20755dfdc6841
+    - fixed: 5947994e98f51f0779f48c0ca50b98ae9e00d2fa
+    - fixed: c6e2cb7607c413ab1bdb53ba915dd2bd89e029ef
   versions:
   - libpcap-1.10-bp
   - libpcap-1.10.0
   - libpcap-1.10.1
   ecosystem_specific:
     severity: MEDIUM
+  database_specific:
+    fixed_range: db18302098f227e0e76f752c204e1b0528b81ddd:5947994e98f51f0779f48c0ca50b98ae9e00d2fa
