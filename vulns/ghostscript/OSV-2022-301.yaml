@@ -1,0 +1,32 @@
+id: OSV-2022-301
+summary: Heap-buffer-overflow in template_compose_group
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=46307
+
+  ```
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  template_compose_group
+  compose_group_nonknockout_noblend_general
+  pdf14_compose_group
+  ```
+modified: '2022-04-04T00:01:45.327710Z'
+published: '2022-04-04T00:01:45.327471Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=46307
+affected:
+- package:
+    name: ghostscript
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/ghostscript
+  ranges:
+  - type: GIT
+    repo: git://git.ghostscript.com/ghostpdl.git
+    events:
+    - introduced: 984b6bcba88a35a1a705480ad6b7cd14f60f9661
+    - fixed: 1a18793a02e1dab7676d594366b93847fde6fe44
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.2.0

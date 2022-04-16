@@ -1,0 +1,35 @@
+id: OSV-2022-51
+summary: Negative-size-param in ndlz4_decompress
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=43671
+
+  Crash type: Negative-size-param
+  Crash state:
+  ndlz4_decompress
+  ndlz_decompress
+  blosc_d
+modified: '2022-01-16T00:01:39.199927Z'
+published: '2022-01-16T00:01:39.199642Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=43671
+affected:
+- package:
+    name: c-blosc2
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/c-blosc2
+  ranges:
+  - type: GIT
+    repo: https://github.com/Blosc/c-blosc2.git
+    events:
+    - introduced: 1c9795f2e3e04a79f13d9e7658e6d6e47dfe1cc4
+  versions:
+  - v2.0.0
+  - v2.0.1
+  - v2.0.2
+  - v2.0.3
+  - v2.0.4
+  - v2.1.0
+  ecosystem_specific:
+    severity: null
+schema_version: 1.2.0

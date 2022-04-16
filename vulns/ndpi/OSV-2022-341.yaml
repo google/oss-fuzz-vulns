@@ -1,0 +1,32 @@
+id: OSV-2022-341
+summary: Heap-buffer-overflow in krb_parse
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=46670
+
+  ```
+  Crash type: Heap-buffer-overflow READ 2
+  Crash state:
+  krb_parse
+  ndpi_search_kerberos
+  check_ndpi_detection_func
+  ```
+modified: '2022-04-14T00:01:37.890823Z'
+published: '2022-04-14T00:01:37.890580Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=46670
+affected:
+- package:
+    name: ndpi
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/ndpi
+  ranges:
+  - type: GIT
+    repo: https://github.com/ntop/nDPI.git
+    events:
+    - introduced: e3faecf9de165adececbf77cbe54a8cbe373a91c
+    - fixed: 4775be3d85434d4e385f43a47b783844bbfb2571
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.2.0
