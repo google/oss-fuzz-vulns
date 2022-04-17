@@ -1,0 +1,97 @@
+id: OSV-2022-351
+summary: UNKNOWN READ in ref_stack_counttomark
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=46705
+
+  ```
+  Crash type: UNKNOWN READ
+  Crash state:
+  ref_stack_counttomark
+  zcounttomark
+  gs_interpret
+  ```
+modified: '2022-04-16T00:01:10.988680Z'
+published: '2022-04-16T00:01:10.988352Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=46705
+affected:
+- package:
+    name: ghostscript
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/ghostscript
+  ranges:
+  - type: GIT
+    repo: git://git.ghostscript.com/ghostpdl.git
+    events:
+    - introduced: 45e765e59a45b46dcb05e8c729689a7c0574a48c
+    - fixed: d9c9ce0bf43b17770ff826261d5fed835a29d8ff
+  versions:
+  - ghostpdl-9.28rc1
+  - ghostpdl-9.28rc2
+  - ghostpdl-9.28rc3
+  - ghostpdl-9.28rc4
+  - ghostpdl-9.50
+  - ghostpdl-9.51
+  - ghostpdl-9.51rc1
+  - ghostpdl-9.51rc2
+  - ghostpdl-9.51rc2_test
+  - ghostpdl-9.51rc2_test2
+  - ghostpdl-9.51rc3
+  - ghostpdl-9.52
+  - ghostpdl-9.52-test-base-1
+  - ghostpdl-9.52-test-base-3
+  - ghostpdl-9.52-test-base-4
+  - ghostpdl-9.52.1
+  - ghostpdl-9.53.0
+  - ghostpdl-9.53.0-test-base-0
+  - ghostpdl-9.53.0rc1
+  - ghostpdl-9.53.0rc2
+  - ghostpdl-9.53.1
+  - ghostpdl-9.53.2
+  - ghostpdl-9.53.3
+  - ghostpdl-9.54.0
+  - ghostpdl-9.54.0-test-base-0
+  - ghostpdl-9.54.0rc1_test
+  - ghostpdl-9.55-test-base-0
+  - ghostpdl-9.55.0
+  - ghostpdl-9.55.0rc1
+  - ghostpdl-9.56.0
+  - ghostpdl-9.56.0-test-base-0
+  - ghostpdl-9.56.0-test-base-2
+  - ghostpdl-9.56.0-test-base-3
+  - ghostpdl-9.56.0-test-base-4
+  - ghostpdl-9.56.0-test-base-5
+  - ghostpdl-9.56.0rc1
+  - ghostpdl-9.56.0rc1_release_tests_001
+  - ghostpdl-9.56.0rc1_release_tests_002
+  - ghostpdl-9.56.0rc2
+  - ghostpdl-9.56.0rc2_release_tests_001
+  - ghostpdl-9.56.1_release_tests_001
+  - ghostscript-9.50
+  - ghostscript-9.51
+  - ghostscript-9.52
+  - gpdf_alpha1
+  - gpdf_gs_text_filter_019
+  - gpdf_gs_text_filter_020
+  - gpdf_gs_text_filter_021
+  - gpdf_gs_text_filter_022
+  - gpdf_gs_text_filter_023
+  - gpdf_gs_text_filter_024
+  - gpdf_gs_text_filter_026
+  - gpdf_gs_text_filter_027
+  - gpdf_gs_text_filter_028
+  - gpdf_gs_text_filter_029
+  - gpdf_gs_text_filter_030
+  - gpdf_gs_text_filter_031
+  - gpdf_gs_text_filter_032
+  - gs9.28-temp-for-testing-tag
+  - ken_20220210_baseline
+  - rjj_9.53.2_test
+  - robin-test-base-0
+  - robin_test_ref
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: f209fb3a0f50cd0a9974d8627a4ac7f358f60c8a:470897e484fb0bfaa8553e0ccd5b9db91eda008b
+schema_version: 1.2.0
