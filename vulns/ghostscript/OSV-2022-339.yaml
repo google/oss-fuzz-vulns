@@ -26,9 +26,11 @@ affected:
     events:
     - introduced: f75e9fa8a5bdf6ed8ea8ea5ea86f0834236c7da5
     - fixed: 9adc7cda128a8494b2657901707bbd94367a125b
+    - fixed: 2b8ac667b8eba0a7f828341bc4262693d7e47b96
   ecosystem_specific:
     severity: HIGH
   database_specific:
     introduced_range: 03c264eb8ba86d43caa678d0c6cd928eabefa5ab:2125cee36a52f623e410d6422693f3125a152145
+    fixed_range: 1a18793a02e1dab7676d594366b93847fde6fe44:2b8ac667b8eba0a7f828341bc4262693d7e47b96
   versions: []
 schema_version: 1.2.0
