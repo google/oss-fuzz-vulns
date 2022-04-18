@@ -1,0 +1,102 @@
+id: OSV-2022-129
+summary: Heap-buffer-overflow in dwg_free_HATCH_private
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=44481
+
+  ```
+  Crash type: Heap-buffer-overflow READ 8
+  Crash state:
+  dwg_free_HATCH_private
+  dwg_free_HATCH
+  dwg_free_object
+  ```
+modified: '2022-02-09T00:00:11.798577Z'
+published: '2022-02-09T00:00:11.798343Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=44481
+affected:
+- package:
+    name: libredwg
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libredwg
+  ranges:
+  - type: GIT
+    repo: https://github.com/LibreDWG/libredwg
+    events:
+    - introduced: cb74d5cf5bffc2a9dee8da43105d892f9a728777
+    - fixed: 8bd75b4e2dfcb229e5121c3e45e5d284bf0d0477
+  versions:
+  - 0.12.3.4163
+  - 0.12.3.4165
+  - 0.12.3.4167
+  - 0.12.3.4173
+  - 0.12.3.4176
+  - 0.12.3.4178
+  - 0.12.3.4180
+  - 0.12.3.4185
+  - 0.12.3.4189
+  - 0.12.3.4191
+  - 0.12.3.4194
+  - 0.12.3.4201
+  - 0.12.3.4203
+  - 0.12.3.4206
+  - 0.12.3.4219
+  - 0.12.3.4221
+  - 0.12.3.4229
+  - 0.12.3.4231
+  - 0.12.3.4244
+  - 0.12.3.4248
+  - 0.12.3.4250
+  - 0.12.3.4253
+  - 0.12.3.4261
+  - 0.12.3.4264
+  - 0.12.3.4267
+  - 0.12.3.4270
+  - 0.12.3.4273
+  - 0.12.3.4280
+  - 0.12.4
+  - 0.12.4.4287
+  - 0.12.4.4288
+  - 0.12.4.4296
+  - 0.12.4.4298
+  - 0.12.4.4300
+  - 0.12.4.4302
+  - 0.12.4.4307
+  - 0.12.4.4313
+  - 0.12.4.4317
+  - 0.12.4.4321
+  - 0.12.4.4324
+  - 0.12.4.4331
+  - 0.12.4.4338
+  - 0.12.4.4343
+  - 0.12.4.4348
+  - 0.12.4.4362
+  - 0.12.4.4364
+  - 0.12.4.4367
+  - 0.12.4.4368
+  - 0.12.4.4375
+  - 0.12.4.4378
+  - 0.12.4.4382
+  - 0.12.4.4384
+  - 0.12.4.4387
+  - 0.12.4.4390
+  - 0.12.4.4395
+  - 0.12.4.4399
+  - 0.12.4.4400
+  - 0.12.4.4409
+  - 0.12.4.4415
+  - 0.12.4.4420
+  - 0.12.4.4423
+  - 0.12.4.4425
+  - 0.12.4.4430
+  - 0.12.4.4437
+  - 0.12.4.4442
+  - 0.12.4.4444
+  - 0.12.4.4462
+  - 0.12.4.4466
+  - 0.12.4.4467
+  - 0.12.5
+  ecosystem_specific:
+    severity: MEDIUM
+schema_version: 1.2.0
