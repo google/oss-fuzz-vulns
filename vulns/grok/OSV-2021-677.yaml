@@ -10,7 +10,7 @@ details: |
   grk::FileFormatDecompress::applyColour
   grk_decompress_fuzzer.cpp
   ```
-modified: '2022-04-13T03:04:39.511602Z'
+modified: '2022-04-19T00:04:22.916908Z'
 published: '2021-04-23T00:00:13.554175Z'
 references:
 - type: REPORT
@@ -48,5 +48,6 @@ affected:
   - v9.7.4.debian
   - v9.7.5
   - v9.7.5.debian
+  - v9.7.6
   ecosystem_specific:
     severity: HIGH
