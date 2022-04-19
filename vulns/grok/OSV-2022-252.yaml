@@ -10,7 +10,7 @@ details: |
   grk::CodeStreamDecompress::process_marker
   grk::CodeStreamDecompress::readHeaderProcedureImpl
   ```
-modified: '2022-04-13T03:04:39.592348Z'
+modified: '2022-04-19T00:04:13.300201Z'
 published: '2022-03-18T00:01:35.796630Z'
 references:
 - type: REPORT
@@ -32,6 +32,7 @@ affected:
   - v9.7.4.debian
   - v9.7.5
   - v9.7.5.debian
+  - v9.7.6
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.2.0
