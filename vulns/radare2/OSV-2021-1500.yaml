@@ -10,7 +10,7 @@ details: |
   microsoft_demangle
   r_bin_demangle_msvc
   ```
-modified: '2022-04-13T03:04:36.726404Z'
+modified: '2022-04-19T00:07:22.456214Z'
 published: '2021-10-28T00:01:38.205304Z'
 references:
 - type: REPORT
@@ -47,6 +47,7 @@ affected:
   - 5.6.2
   - 5.6.4
   - 5.6.6
+  - 5.6.8
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.2.0
