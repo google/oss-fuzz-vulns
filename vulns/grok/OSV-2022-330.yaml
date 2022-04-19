@@ -10,7 +10,7 @@ details: |
   tf::Executor::_invoke
   tf::Executor::_consume_task
   ```
-modified: '2022-04-13T03:04:39.568698Z'
+modified: '2022-04-19T00:04:27.366607Z'
 published: '2022-04-11T00:00:12.423473Z'
 references:
 - type: REPORT
@@ -28,6 +28,7 @@ affected:
   versions:
   - v9.7.5
   - v9.7.5.debian
+  - v9.7.6
   ecosystem_specific:
     severity: null
 schema_version: 1.2.0
