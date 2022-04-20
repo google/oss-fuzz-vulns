@@ -1,0 +1,32 @@
+id: OSV-2022-354
+summary: Segv on unknown address in gs_heap_free_object
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=46734
+
+  ```
+  Crash type: Segv on unknown address
+  Crash state:
+  gs_heap_free_object
+  chunk_free_object
+  pdfi_repair_add_object
+  ```
+modified: '2022-04-17T00:01:44.034686Z'
+published: '2022-04-17T00:01:44.034459Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=46734
+affected:
+- package:
+    name: ghostscript
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/ghostscript
+  ranges:
+  - type: GIT
+    repo: git://git.ghostscript.com/ghostpdl.git
+    events:
+    - introduced: 341d69825f9af14ff95f820dcdd9ae2e9c4420a0
+    - fixed: 479649281467ca84a220873d51c7a461b5a78104
+  ecosystem_specific:
+    severity: null
+  versions: []
+schema_version: 1.2.0
