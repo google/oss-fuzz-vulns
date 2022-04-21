@@ -1,0 +1,32 @@
+id: OSV-2022-327
+summary: Stack-use-after-return in QSemaphore::release
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=46525
+
+  ```
+  Crash type: Stack-use-after-return WRITE 8
+  Crash state:
+  QSemaphore::release
+  std::__1::__function::__func<void handleSpans<BlendSrcGeneric>
+  FunctionRunnable::run
+  ```
+modified: '2022-04-10T00:01:12.212032Z'
+published: '2022-04-10T00:01:12.211800Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=46525
+affected:
+- package:
+    name: qt
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/qt
+  ranges:
+  - type: GIT
+    repo: git://code.qt.io/qt/qtsvg.git
+    events:
+    - introduced: 1e57829e54c3c786964cb777736e096045a26ad7
+    - fixed: 05ffea9775e75d7890c833bff3d2e9682072c736
+  ecosystem_specific:
+    severity: null
+  versions: []
+schema_version: 1.2.0
