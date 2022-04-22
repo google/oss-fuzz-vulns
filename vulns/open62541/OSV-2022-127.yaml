@@ -1,0 +1,35 @@
+id: OSV-2022-127
+summary: Heap-use-after-free in UA_ServerConfig_clean
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=44434
+
+  ```
+  Crash type: Heap-use-after-free READ 8
+  Crash state:
+  UA_ServerConfig_clean
+  fuzz_binary_message.cc
+  UA_memoryManager_free
+  ```
+modified: '2022-02-07T00:00:13.222344Z'
+published: '2022-02-07T00:00:13.222125Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=44434
+affected:
+- package:
+    name: open62541
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/open62541
+  ranges:
+  - type: GIT
+    repo: https://github.com/open62541/open62541.git
+    events:
+    - introduced: f73404023ddadfe6eeb9938f653cd6a62c8d72a8
+    - fixed: 37b8ff8872dbde18c34c8c9a96ef349a1921bddc
+  versions:
+  - v1.3-rc2
+  - v1.3-rc2-ef
+  - v1.3-rc2-ef2
+  ecosystem_specific:
+    severity: HIGH
+schema_version: 1.2.0

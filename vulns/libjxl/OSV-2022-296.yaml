@@ -1,0 +1,32 @@
+id: OSV-2022-296
+summary: Negative-size-param in jxl::N_SSE4::BlendingStage::ProcessPaddingRow
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=46243
+
+  ```
+  Crash type: Negative-size-param
+  Crash state:
+  jxl::N_SSE4::BlendingStage::ProcessPaddingRow
+  jxl::LowMemoryRenderPipeline::RenderPadding
+  jxl::LowMemoryRenderPipeline::ProcessBuffers
+  ```
+modified: '2022-04-03T00:00:21.309111Z'
+published: '2022-04-03T00:00:21.308788Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=46243
+affected:
+- package:
+    name: libjxl
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libjxl
+  ranges:
+  - type: GIT
+    repo: https://github.com/libjxl/libjxl.git
+    events:
+    - introduced: d9282d901e27b6bb749a146b2a3a78933d1013a7
+    - fixed: 6140e82cbbf79a360adf8a75e11e8d76847dbcca
+  ecosystem_specific:
+    severity: null
+  versions: []
+schema_version: 1.2.0
