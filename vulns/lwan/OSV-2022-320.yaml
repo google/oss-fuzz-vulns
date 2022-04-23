@@ -1,0 +1,31 @@
+id: OSV-2022-320
+summary: Heap-buffer-overflow in lwan_h2_huffman_decode_for_fuzzing
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=46506
+
+  ```
+  Crash type: Heap-buffer-overflow READ 8
+  Crash state:
+  lwan_h2_huffman_decode_for_fuzzing
+  h2_huffman_fuzzer.cc
+  ```
+modified: '2022-04-09T00:00:11.594Z'
+published: '2022-04-09T00:00:11.593728Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=46506
+affected:
+- package:
+    name: lwan
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/lwan
+  ranges:
+  - type: GIT
+    repo: https://github.com/lpereira/lwan.git
+    events:
+    - introduced: d7fa49968a50107519421d388fd3de60ecb3f17a
+    - fixed: 44283f701359c7b0bcf5e0b5466591c7442d081a
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.2.0
