@@ -1,0 +1,32 @@
+id: OSV-2022-368
+summary: Heap-buffer-overflow in exif_get_long
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=46917
+
+  ```
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  exif_get_long
+  exif_mnote_data_fuji_load
+  exif_mnote_data_load
+  ```
+modified: '2022-04-23T00:01:48.708304Z'
+published: '2022-04-23T00:01:48.707920Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=46917
+affected:
+- package:
+    name: libexif
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libexif
+  ranges:
+  - type: GIT
+    repo: https://github.com/libexif/libexif
+    events:
+    - introduced: 30e50906596aa69a484c1044abb07eaa0ffda2dd
+    - fixed: 4f42b6ea0641aaad1bf9835988616c52ac111fc3
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.2.0
