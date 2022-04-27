@@ -14,7 +14,7 @@ details: |
   std::__1::__function::__func<void handleSpans<BlendSrcGeneric>
   FunctionRunnable::run
   ```
-modified: '2022-04-27T21:00:00.000000Z'
+modified: '2022-04-27T22:12:36.132079Z'
 published: '2022-04-10T00:01:12.211800Z'
 references:
 - type: REPORT
@@ -40,7 +40,11 @@ affected:
     - fixed: da5a55e034c74a42485358cf704e75467a62696e
     - fixed: a210635b6d8f7b94453914d6798a83b41964e7ea
     - fixed: 830b1550de303dd59c29a87c28e44fa41112b8f4
+    - fixed: 05ffea9775e75d7890c833bff3d2e9682072c736
+    - fixed: fd8441a97cdd212098aeb214b2a5b2caaf108e3c
   ecosystem_specific:
     severity: null
+  database_specific:
+    fixed_range: 88532603ff2836249e576e902d322585fc2b3ed2:05ffea9775e75d7890c833bff3d2e9682072c736
   versions: []
 schema_version: 1.2.0
