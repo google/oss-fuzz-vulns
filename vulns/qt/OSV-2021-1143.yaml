@@ -12,7 +12,7 @@ details: |
   QtPrivate::QCommonArrayOps<QPainterPath::Element>::growAppend
   QList<QPainterPath::Element>::append
   ```
-modified: '2022-04-27T20:24:00.000000Z'
+modified: '2022-04-27T21:32:08.530698Z'
 published: '2021-08-19T00:00:37.149406Z'
 references:
 - type: REPORT
@@ -29,6 +29,7 @@ affected:
     - fixed: a3b753c2d077313fc9eb93af547051b956e383fc
     - fixed: 79bb9f51fa374106a612d17c9d98d35d807be670
     - fixed: 36cfd9efb9b22b891adee9c48d30202289cfa620
+    - fixed: 3b6c8eea207f42c561088395b80c64e5f82f7169
   versions:
   - qt-v5.0.0-alpha1
   - v5.0.0
@@ -207,3 +208,4 @@ affected:
     severity: HIGH
   database_specific:
     introduced_range: e3834034f88af27d48f2f7a2cc6ab0c84d6faf1e:e8a86ab6c84f6618fae6f961c34c25ef42e91332
+    fixed_range: f320433979bdc5a17618d8fcb140bf0e8ab04503:3b6c8eea207f42c561088395b80c64e5f82f7169
