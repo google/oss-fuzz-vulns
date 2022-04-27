@@ -1,0 +1,33 @@
+id: OSV-2022-94
+summary: Heap-buffer-overflow in cli_strlcat
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=44087
+
+  Crash type: Heap-buffer-overflow WRITE 1
+  Crash state:
+  cli_strlcat
+  yara_yyparse
+  yr_lex_parse_rules_file
+modified: '2022-01-27T00:02:12.466193Z'
+published: '2022-01-27T00:02:12.465969Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=44087
+affected:
+- package:
+    name: clamav
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/clamav
+  ranges:
+  - type: GIT
+    repo: https://github.com/Cisco-Talos/clamav.git
+    events:
+    - introduced: 428cd7951827535fdc50425f963eb2878fc39cc1
+  versions:
+  - clamav-0.105.0-rc
+  - clamav-0.105.0-rc2
+  ecosystem_specific:
+    severity: HIGH
+  database_specific:
+    introduced_range: d9a584b39fb694adc5740b666cba0242b55f774a:0037f5825b0b17a789c7eb29c9cb9a2d39c452bc
+schema_version: 1.2.0
