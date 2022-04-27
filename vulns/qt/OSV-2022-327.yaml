@@ -3,6 +3,10 @@ summary: Stack-use-after-return in QSemaphore::release
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=46525
 
+  The issue already existed before oss-fuzz could reproduce it. oss-fuzz found
+  it after qdrawhelper routines were made multithreaded. There might be ways to
+  trigger the issue before that.
+
   ```
   Crash type: Stack-use-after-return WRITE 8
   Crash state:
@@ -10,11 +14,19 @@ details: |
   std::__1::__function::__func<void handleSpans<BlendSrcGeneric>
   FunctionRunnable::run
   ```
-modified: '2022-04-10T00:01:12.212032Z'
+modified: '2022-04-27T21:00:00.000000Z'
 published: '2022-04-10T00:01:12.211800Z'
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=46525
+- type: REPORT
+  url: https://bugreports.qt.io/browse/QTBUG-102484
+- type: FIX
+  url: https://codereview.qt-project.org/c/qt/qtbase/+/406260
+- type: FIX
+  url: https://codereview.qt-project.org/c/qt/qtbase/+/406261
+- type: FIX
+  url: https://codereview.qt-project.org/c/qt/qtbase/+/405857
 affected:
 - package:
     name: qt
@@ -22,10 +34,12 @@ affected:
     purl: pkg:generic/qt
   ranges:
   - type: GIT
-    repo: git://code.qt.io/qt/qtsvg.git
+    repo: git://code.qt.io/qt/qtbase.git
     events:
-    - introduced: 1e57829e54c3c786964cb777736e096045a26ad7
-    - fixed: 05ffea9775e75d7890c833bff3d2e9682072c736
+    - introduced: b18959ad7ebe2311993348f779087b214bd7a72b
+    - fixed: da5a55e034c74a42485358cf704e75467a62696e
+    - fixed: a210635b6d8f7b94453914d6798a83b41964e7ea
+    - fixed: 830b1550de303dd59c29a87c28e44fa41112b8f4
   ecosystem_specific:
     severity: null
   versions: []
