@@ -3,6 +3,8 @@ summary: UNKNOWN WRITE in QtPrivate::QPodArrayOps<QPainterPath::Element>::copyAp
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=37306
 
+  This is the same issue as OSV-2021-1121 which it replaced after that one was closed wrongly.
+
   ```
   Crash type: UNKNOWN WRITE
   Crash state:
@@ -10,7 +12,7 @@ details: |
   QtPrivate::QCommonArrayOps<QPainterPath::Element>::growAppend
   QList<QPainterPath::Element>::append
   ```
-modified: '2022-04-13T03:26:15.213355Z'
+modified: '2022-04-27T20:24:00.000000Z'
 published: '2021-08-19T00:00:37.149406Z'
 references:
 - type: REPORT
