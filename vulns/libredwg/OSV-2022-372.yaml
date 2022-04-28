@@ -1,0 +1,38 @@
+id: OSV-2022-372
+summary: Heap-buffer-overflow in dwg_encode_VERTEX_2D
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=46994
+
+  ```
+  Crash type: Heap-buffer-overflow READ 8
+  Crash state:
+  dwg_encode_VERTEX_2D
+  dwg_encode_add_object
+  dwg_encode
+  ```
+modified: '2022-04-26T00:00:09.353044Z'
+published: '2022-04-26T00:00:09.352798Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=46994
+affected:
+- package:
+    name: libredwg
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libredwg
+  ranges:
+  - type: GIT
+    repo: https://github.com/LibreDWG/libredwg
+    events:
+    - introduced: 7bda865d59f843e174ac7e14c7dfe25243900956
+  versions:
+  - 0.12.4.4522
+  - 0.12.4.4527
+  - 0.12.4.4530
+  - 0.12.4.4533
+  - 0.12.4.4535
+  - 0.12.4.4542
+  - 0.12.4.4544
+  ecosystem_specific:
+    severity: MEDIUM
+schema_version: 1.2.0
