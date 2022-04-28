@@ -8,7 +8,7 @@ details: |
   cli_strlcat
   yara_yyparse
   yr_lex_parse_rules_file
-modified: '2022-01-27T00:02:12.466193Z'
+modified: '2022-04-28T00:08:39.874100Z'
 published: '2022-01-27T00:02:12.465969Z'
 references:
 - type: REPORT
@@ -23,6 +23,7 @@ affected:
     repo: https://github.com/Cisco-Talos/clamav.git
     events:
     - introduced: 428cd7951827535fdc50425f963eb2878fc39cc1
+    - introduced: e5f001c9ca4175beecd445004a8e01bbdd29579c
   versions:
   - clamav-0.105.0-rc
   - clamav-0.105.0-rc2
