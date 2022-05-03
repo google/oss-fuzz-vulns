@@ -1,0 +1,32 @@
+id: OSV-2022-383
+summary: Heap-use-after-free in r_asm_free
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=47113
+
+  ```
+  Crash type: Heap-use-after-free READ 4
+  Crash state:
+  r_asm_free
+  r_core_fini
+  r_core_free
+  ```
+modified: '2022-04-30T00:00:25.155685Z'
+published: '2022-04-30T00:00:25.155380Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=47113
+affected:
+- package:
+    name: radare2
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/radare2
+  ranges:
+  - type: GIT
+    repo: https://github.com/radareorg/radare2
+    events:
+    - introduced: c54ce884d89317ff7f69ae7195168a8f0efb935e
+    - fixed: 3a9ba748f2bee9d3950346dac0753145809e4abc
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
+schema_version: 1.2.0
