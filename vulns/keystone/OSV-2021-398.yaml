@@ -10,7 +10,7 @@ details: |
   llvm_ks::HashString
   llvm_ks::StringMapImpl::LookupBucketFor
   ```
-modified: '2022-04-13T03:04:37.911221Z'
+modified: '2022-05-04T00:04:15.653021Z'
 published: '2021-02-15T00:00:40.792550Z'
 references:
 - type: REPORT
@@ -24,6 +24,7 @@ affected:
     repo: https://github.com/keystone-engine/keystone.git
     events:
     - introduced: 105761ffe7176a60b4ff1b1c165ad937110ae63e
+    - fixed: 18569351000cf1b8bd1ea2cc8a02c2e17b76391f
   versions:
   - 0.9.2
   - 0.9.2-rc1
