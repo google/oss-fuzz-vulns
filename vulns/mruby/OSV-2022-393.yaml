@@ -1,0 +1,32 @@
+id: OSV-2022-393
+summary: Heap-use-after-free in mrb_funcall_with_block
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=47213
+
+  ```
+  Crash type: Heap-use-after-free READ 8
+  Crash state:
+  mrb_funcall_with_block
+  mrb_instance_new
+  mrb_funcall_with_block
+  ```
+modified: '2022-05-04T00:00:21.150142Z'
+published: '2022-05-04T00:00:21.149913Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=47213
+affected:
+- package:
+    name: mruby
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/mruby
+  ranges:
+  - type: GIT
+    repo: https://github.com/mruby/mruby
+    events:
+    - introduced: 23ce122fc2b1d29ee7241813bbab1c7e150e23ae
+    - fixed: c32cac6e59a899497c603025b74fcfd316282f36
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
+schema_version: 1.2.0

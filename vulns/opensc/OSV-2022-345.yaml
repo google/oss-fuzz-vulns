@@ -1,0 +1,32 @@
+id: OSV-2022-345
+summary: Stack-buffer-overflow in sc_hsm_list_files
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=46679
+
+  ```
+  Crash type: Stack-buffer-overflow READ {*}
+  Crash state:
+  sc_hsm_list_files
+  sc_list_files
+  fuzz_card.c
+  ```
+modified: '2022-04-15T00:01:47.875889Z'
+published: '2022-04-15T00:01:47.875554Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=46679
+affected:
+- package:
+    name: opensc
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/opensc
+  ranges:
+  - type: GIT
+    repo: https://github.com/OpenSC/OpenSC
+    events:
+    - introduced: 847ccabd898f31d2ade49cbfd11fef083ee9e84a
+    - fixed: fdf343bfcd80d8041f6d199492cf5508dec7b2f8
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.2.0

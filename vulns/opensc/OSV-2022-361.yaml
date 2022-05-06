@@ -1,0 +1,32 @@
+id: OSV-2022-361
+summary: UNKNOWN READ in sc_pkcs15_decode_pubkey_ec
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=46852
+
+  ```
+  Crash type: UNKNOWN READ
+  Crash state:
+  sc_pkcs15_decode_pubkey_ec
+  sc_pkcs15_decode_pubkey
+  fuzz_pkcs15_decode.c
+  ```
+modified: '2022-04-21T00:00:24.706829Z'
+published: '2022-04-21T00:00:24.706566Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=46852
+affected:
+- package:
+    name: opensc
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/opensc
+  ranges:
+  - type: GIT
+    repo: https://github.com/OpenSC/OpenSC
+    events:
+    - introduced: b4fd86cdbdb06d022b9a03bca6e2b43b4906fbd6
+    - fixed: 0ed4b62ae9cd7104706b779fd50bb65385443310
+  ecosystem_specific:
+    severity: null
+  versions: []
+schema_version: 1.2.0

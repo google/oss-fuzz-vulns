@@ -1,0 +1,32 @@
+id: OSV-2022-276
+summary: Segv on unknown address in sc_file_clear_acl_entries
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=45969
+
+  ```
+  Crash type: Segv on unknown address
+  Crash state:
+  sc_file_clear_acl_entries
+  sc_file_free
+  sc_profile_free
+  ```
+modified: '2022-03-24T00:00:43.846203Z'
+published: '2022-03-24T00:00:43.845979Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=45969
+affected:
+- package:
+    name: opensc
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/opensc
+  ranges:
+  - type: GIT
+    repo: https://github.com/OpenSC/OpenSC
+    events:
+    - introduced: bec4f63c5b8308d7fdca842c5c0b62c3491d106a
+    - fixed: 8697a01850d5e02a3099acd5160d0a0ee2d31077
+  ecosystem_specific:
+    severity: null
+  versions: []
+schema_version: 1.2.0
