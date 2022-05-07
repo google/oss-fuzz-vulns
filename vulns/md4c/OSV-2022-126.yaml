@@ -1,0 +1,29 @@
+id: OSV-2022-126
+summary: Heap-buffer-overflow in md_analyze_inlines
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=44446
+
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  md_analyze_inlines
+  md_process_normal_block_contents
+  md_process_table_cell
+modified: '2022-02-07T00:00:05.720368Z'
+published: '2022-02-07T00:00:05.720107Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=44446
+affected:
+- package:
+    name: md4c
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/md4c
+  ranges:
+  - type: GIT
+    repo: https://github.com/mity/md4c
+    events:
+    - introduced: 62b60979f6a281b2b3cf883abc84299431fe2f76
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.2.0

@@ -1,0 +1,71 @@
+id: OSV-2022-128
+summary: Stack-buffer-overflow in decompress_rNUMBER
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=44432
+
+  Crash type: Stack-buffer-overflow WRITE 1
+  Crash state:
+  decompress_rNUMBER
+  read_rNUMBER_meta_data
+  dwg_decode
+modified: '2022-02-07T00:00:43.455235Z'
+published: '2022-02-07T00:00:43.453413Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=44432
+affected:
+- package:
+    name: libredwg
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libredwg
+  ranges:
+  - type: GIT
+    repo: https://github.com/LibreDWG/libredwg
+    events:
+    - introduced: 161045124139f7288f335fc1f51b1d403054ad61
+  versions:
+  - 0.12.4.4390
+  - 0.12.4.4395
+  - 0.12.4.4399
+  - 0.12.4.4400
+  - 0.12.4.4409
+  - 0.12.4.4415
+  - 0.12.4.4420
+  - 0.12.4.4423
+  - 0.12.4.4425
+  - 0.12.4.4430
+  - 0.12.4.4437
+  - 0.12.4.4442
+  - 0.12.4.4444
+  - 0.12.4.4462
+  - 0.12.4.4466
+  - 0.12.4.4467
+  - 0.12.4.4475
+  - 0.12.4.4487
+  - 0.12.4.4491
+  - 0.12.4.4492
+  - 0.12.4.4494
+  - 0.12.4.4497
+  - 0.12.4.4507
+  - 0.12.4.4515
+  - 0.12.4.4517
+  - 0.12.4.4522
+  - 0.12.4.4527
+  - 0.12.4.4530
+  - 0.12.4.4533
+  - 0.12.4.4535
+  - 0.12.4.4542
+  - 0.12.4.4544
+  - 0.12.4.4545
+  - 0.12.4.4548
+  - 0.12.4.4550
+  - 0.12.4.4553
+  - 0.12.4.4566
+  - 0.12.4.4567
+  - 0.12.4.4572
+  - 0.12.4.4583
+  - 0.12.4.4590
+  - 0.12.5
+  ecosystem_specific:
+    severity: HIGH
+schema_version: 1.2.0
