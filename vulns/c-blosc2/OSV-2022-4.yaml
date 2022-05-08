@@ -10,7 +10,7 @@ details: |
   blosc_run_decompression_with_context
   blosc2_decompress_ctx
   ```
-modified: '2022-04-13T03:04:40.446203Z'
+modified: '2022-05-08T00:03:36.488096Z'
 published: '2022-01-05T00:00:41.045461Z'
 references:
 - type: REPORT
@@ -34,6 +34,7 @@ affected:
   - v2.0.3
   - v2.0.4
   - v2.1.0
+  - v2.1.1
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.2.0
