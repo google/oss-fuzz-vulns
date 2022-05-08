@@ -1,0 +1,32 @@
+id: OSV-2022-401
+summary: UNKNOWN READ in OT::gvar::subset
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=47281
+
+  ```
+  Crash type: UNKNOWN READ
+  Crash state:
+  OT::gvar::subset
+  bool _try_subset<OT::gvar>
+  hb_subset_plan_execute_or_fail
+  ```
+modified: '2022-05-08T00:00:43.200135Z'
+published: '2022-05-08T00:00:43.199921Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=47281
+affected:
+- package:
+    name: harfbuzz
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/harfbuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/harfbuzz/harfbuzz.git
+    events:
+    - introduced: 4fe69bc41327596af540a2f683062b41a4f37f45
+    - fixed: ca8a0f3ea32af8fdaf2f99ad87a43e82be854f62
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.2.0
