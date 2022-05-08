@@ -10,7 +10,7 @@ details: |
   blosc2_decompress_ctx
   frame_decompress_chunk
   ```
-modified: '2022-04-13T03:04:40.402633Z'
+modified: '2022-05-08T00:04:22.122199Z'
 published: '2021-07-13T00:00:23.000106Z'
 references:
 - type: REPORT
@@ -33,5 +33,6 @@ affected:
   - v2.0.3
   - v2.0.4
   - v2.1.0
+  - v2.1.1
   ecosystem_specific:
     severity: MEDIUM
