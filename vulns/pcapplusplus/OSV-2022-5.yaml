@@ -10,7 +10,7 @@ details: |
   pcpp::IPv6Layer::parseExtensions
   pcpp::IPv6Layer::IPv6Layer
   ```
-modified: '2022-04-13T03:04:38.574058Z'
+modified: '2022-05-09T00:04:09.473640Z'
 published: '2022-01-05T00:00:46.965901Z'
 references:
 - type: REPORT
@@ -28,6 +28,7 @@ affected:
   versions:
   - v21.05
   - v21.11
+  - v22.05
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.2.0
