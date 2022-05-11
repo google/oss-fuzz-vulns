@@ -10,7 +10,7 @@ details: |
   ExtractUnixLink50
   ExtractSymlink
   ```
-modified: '2022-04-13T03:04:35.355594Z'
+modified: '2022-05-11T00:04:05.595765Z'
 published: '2021-01-13T00:00:02.571744Z'
 references:
 - type: REPORT
@@ -37,6 +37,7 @@ affected:
   - v5.7.3
   - v5.7.4
   - v6.0.3
+  - v6.1.2
   ecosystem_specific:
     introduced_range: 2a079823c708a637bc36e888180ebb96fdfba526:1d8ea7923dae7c8f136912b6bdca95dcb52e80bc
     severity: MEDIUM
