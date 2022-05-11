@@ -1,0 +1,32 @@
+id: OSV-2022-134
+summary: Heap-use-after-free in RDKit::Chirality::cleanupStereoGroups
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=44520
+
+  Crash type: Heap-use-after-free READ 1
+  Crash state:
+  RDKit::Chirality::cleanupStereoGroups
+  RDKit::MolOps::assignStereochemistry
+  RDKit::SmilesToMol
+modified: '2022-02-10T00:00:40.784591Z'
+published: '2022-02-10T00:00:40.784389Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=44520
+affected:
+- package:
+    name: rdkit
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/rdkit
+  ranges:
+  - type: GIT
+    repo: https://github.com/rdkit/rdkit.git
+    events:
+    - introduced: 7e575db3c495d5546832be2317291861fa7b1030
+  versions:
+  - Release_2022_03_1
+  - Release_2022_03_1b1
+  - Release_2022_03_2
+  ecosystem_specific:
+    severity: HIGH
+schema_version: 1.2.0
