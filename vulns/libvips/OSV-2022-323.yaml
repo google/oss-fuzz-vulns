@@ -1,0 +1,34 @@
+id: OSV-2022-323
+summary: Heap-buffer-overflow in ConvertRGB24ToY_SSE41
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=46436
+
+  ```
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  ConvertRGB24ToY_SSE41
+  ImportYUVAFromRGBA
+  Import
+  ```
+modified: '2022-04-09T00:00:46.308780Z'
+published: '2022-04-09T00:00:46.308548Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=46436
+affected:
+- package:
+    name: libvips
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libvips
+  ranges:
+  - type: GIT
+    repo: https://github.com/libvips/libvips.git
+    events:
+    - introduced: 57cd94278a245785e840634b3600fae8cfc4d244
+    - fixed: 9cbc361269cedd5ddadd9695d7aa3368daa31d24
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    fixed_range: ceaa2d2096ce44f1798eaaf5f437492aae474a39:9cbc361269cedd5ddadd9695d7aa3368daa31d24
+  versions: []
+schema_version: 1.2.0
