@@ -1,0 +1,28 @@
+id: OSV-2022-150
+summary: Heap-buffer-overflow in coap_split_uri_sub
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=44611
+
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  coap_split_uri_sub
+  coap_get_uri_path
+modified: '2022-02-14T00:00:50.309146Z'
+published: '2022-02-14T00:00:50.308933Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=44611
+affected:
+- package:
+    name: libcoap
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libcoap
+  ranges:
+  - type: GIT
+    repo: https://github.com/obgm/libcoap.git
+    events:
+    - introduced: 6504b667d38012efa81087bf4cc960128f4dc2d4
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.2.0
