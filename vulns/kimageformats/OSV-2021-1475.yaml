@@ -10,7 +10,7 @@ details: |
   fill_luma_motion_vector_predictors
   motion_vectors_and_ref_indices
   ```
-modified: '2022-05-08T00:03:56.395236Z'
+modified: '2022-05-15T00:03:54.188090Z'
 published: '2021-10-21T00:01:39.891638Z'
 references:
 - type: REPORT
@@ -54,5 +54,6 @@ affected:
   - v5.93.0-rc1
   - v5.93.0
   - v5.94.0-rc1
+  - v5.94.0
   ecosystem_specific:
     severity: MEDIUM
