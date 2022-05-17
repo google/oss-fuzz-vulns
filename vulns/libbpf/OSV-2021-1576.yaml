@@ -10,7 +10,7 @@ details: |
   bpf_object__open_mem
   bpf-object-fuzzer.c
   ```
-modified: '2022-04-13T03:04:36.768609Z'
+modified: '2022-05-17T00:17:05.902331Z'
 published: '2021-11-14T00:01:18.685915Z'
 references:
 - type: REPORT
@@ -28,5 +28,6 @@ affected:
   - v0.6.0
   - v0.6.1
   - v0.7.0
+  - v0.8.0
   ecosystem_specific:
     severity: HIGH
