@@ -1,0 +1,35 @@
+id: OSV-2022-313
+summary: Heap-buffer-overflow in generic_unpack
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=46432
+
+  ```
+  Crash type: Heap-buffer-overflow READ 2
+  Crash state:
+  generic_unpack
+  exr_decoding_run
+  Imf_3_1::checkCoreFile
+  ```
+modified: '2022-04-07T00:00:47.839583Z'
+published: '2022-04-07T00:00:47.839342Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=46432
+affected:
+- package:
+    name: openexr
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/openexr
+  ranges:
+  - type: GIT
+    repo: https://github.com/AcademySoftwareFoundation/openexr
+    events:
+    - introduced: 4854db9316efe645628928dd378f389e1671bf18
+    - fixed: 672c77d7c923402f549371e08b39ece4552cbb85
+    - introduced: 876fcf50482bdb5535d7255b817fbaf4de9ee5b3
+  versions:
+  - v3.1.5
+  - v3.1.5-rc
+  ecosystem_specific:
+    severity: MEDIUM
+schema_version: 1.2.0
