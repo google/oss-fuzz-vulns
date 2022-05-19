@@ -10,7 +10,7 @@ details: |
   ujson.cpython-38-x86_64-linux-gnu.so
   ujson.cpython-38-x86_64-linux-gnu.so
   ```
-modified: '2022-04-13T03:04:31.104493Z'
+modified: '2022-05-19T00:55:00.970552Z'
 published: '2022-02-25T00:00:25.106722Z'
 references:
 - type: REPORT
@@ -26,7 +26,9 @@ affected:
     events:
     - introduced: b9275f7b001da11495040f1332f6c3adf3daa57b
     - fixed: f6860f1f3d8d4e92b9be0e5815355a8976c6e75b
-  versions: [] 
+    - fixed: 550ba4d77294e61597a5259d00769c61281e0042
+  versions:
+  - 5.1.0
   ecosystem_specific:
     severity: HIGH
 schema_version: 1.2.0
