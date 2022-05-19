@@ -23,15 +23,8 @@ affected:
   - type: GIT
     repo: https://github.com/ultrajson/ultrajson.git
     events:
-    - introduced: a920bfa9d85bcd78836b866d1be80c1e3dcca1da
-    - fixed: 5525f8c9ef8bb879dadd0eb942d524827d1b0362
-  versions:
-  - 4.0.2
-  - 4.1.0
-  - 4.2.0
-  - 4.3.0
-  - 5.0.0
-  - 5.1.0
-  - 5.2.0
+    - introduced: 0c52200eb4e2d97e548a765d5f089858c41967b0
+    - fixed: f6860f1f3d8d4e92b9be0e5815355a8976c6e75b
+  versions: []
   ecosystem_specific:
     severity: HIGH
