@@ -10,7 +10,7 @@ details: |
   encode
   encode
   ```
-modified: '2022-04-13T03:26:07.069166Z'
+modified: '2022-05-19T00:45:08.957102Z'
 published: '2021-07-11T00:01:05.153778Z'
 references:
 - type: REPORT
@@ -25,6 +25,24 @@ affected:
     events:
     - introduced: 0c52200eb4e2d97e548a765d5f089858c41967b0
     - fixed: f6860f1f3d8d4e92b9be0e5815355a8976c6e75b
-  versions: []
+    - fixed: 5525f8c9ef8bb879dadd0eb942d524827d1b0362
+  versions:
+  - 2.0.0
+  - 2.0.1
+  - 2.0.2
+  - 2.0.3
+  - 3.0.0
+  - 3.1.0
+  - 3.2.0
+  - 4.0.0
+  - 4.0.1
+  - 4.0.2
+  - 4.1.0
+  - 4.2.0
+  - 4.3.0
+  - 5.0.0
+  - 5.1.0
+  - v1.34
+  - v1.35
   ecosystem_specific:
     severity: HIGH
