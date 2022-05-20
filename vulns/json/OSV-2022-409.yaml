@@ -1,0 +1,32 @@
+id: OSV-2022-409
+summary: 'Heap-buffer-overflow in std::__1::__tree_node_base<void*>*& std::__1::__tree<std::__1::__value_type<std:'
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=47391
+
+  ```
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  std::__1::__tree_node_base<void*>*& std::__1::__tree<std::__1::__value_type<std:
+  std::__1::pair<std::__1::__tree_iterator<std::__1::__value_type<std::__1::basic_
+  nlohmann::detail::binary_reader<nlohmann::basic_json<std::__1::map, std::__1::ve
+  ```
+modified: '2022-05-12T00:01:13.318534Z'
+published: '2022-05-12T00:01:13.318272Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=47391
+affected:
+- package:
+    name: json
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/json
+  ranges:
+  - type: GIT
+    repo: https://github.com/nlohmann/json.git
+    events:
+    - introduced: a8a547d7a212a6a39943bbd5b4220be504a1a33e
+    - fixed: 93c9e0c703b98f5082413920a62067ae0b68671e
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.2.0
