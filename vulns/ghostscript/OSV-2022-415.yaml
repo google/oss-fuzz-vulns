@@ -1,0 +1,32 @@
+id: OSV-2022-415
+summary: UNKNOWN READ in pdfi_free_object
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=47499
+
+  ```
+  Crash type: UNKNOWN READ
+  Crash state:
+  pdfi_free_object
+  pdfi_clear_context
+  pdfi_free_context
+  ```
+modified: '2022-05-19T00:00:14.734703Z'
+published: '2022-05-19T00:00:14.734454Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=47499
+affected:
+- package:
+    name: ghostscript
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/ghostscript
+  ranges:
+  - type: GIT
+    repo: git://git.ghostscript.com/ghostpdl.git
+    events:
+    - introduced: f89a938877ccaee51b3143b916f66b5ec9c8f0b5
+    - fixed: 7ab96e83d85165801894e887816db6042ea2f9be
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.2.0

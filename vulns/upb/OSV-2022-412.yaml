@@ -1,0 +1,35 @@
+id: OSV-2022-412
+summary: Bad-cast to const upb_tabent' (aka 'const struct _upb_tabent')insert
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=47464
+
+  ```
+  Crash type: Bad-cast
+  Crash state:
+  Bad-cast to const upb_tabent' (aka 'const struct _upb_tabent')insert
+  upb_strtable_insert
+  create_fielddef
+  ```
+modified: '2022-05-17T00:00:31.470713Z'
+published: '2022-05-17T00:00:31.470478Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=47464
+affected:
+- package:
+    name: upb
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/upb
+  ranges:
+  - type: GIT
+    repo: https://github.com/protocolbuffers/upb.git
+    events:
+    - introduced: 1cf8214e4daa1d0dd9777c987697e82c2a3c6584
+    - fixed: eebcd59a96a126307ddf6d16efe2977e64337ad7
+  ecosystem_specific:
+    severity: HIGH
+  database_specific:
+    fixed_range: 12efc9b096f35b62055a217f45e6b0fe5fb1a099:eebcd59a96a126307ddf6d16efe2977e64337ad7
+    introduced_range: c3cfd09b0184bcbdade71a3d788df02c83e897f2:483cea085e11179cffa2a997d910fcc07938668a
+  versions: []
+schema_version: 1.2.0

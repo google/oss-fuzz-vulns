@@ -1,0 +1,32 @@
+id: OSV-2022-422
+summary: UNKNOWN WRITE in alloc_restore_step_in
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=47513
+
+  ```
+  Crash type: UNKNOWN WRITE
+  Crash state:
+  alloc_restore_step_in
+  alloc_restore_all
+  gs_main_finit
+  ```
+modified: '2022-05-19T00:01:44.795111Z'
+published: '2022-05-19T00:01:44.794873Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=47513
+affected:
+- package:
+    name: ghostscript
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/ghostscript
+  ranges:
+  - type: GIT
+    repo: git://git.ghostscript.com/ghostpdl.git
+    events:
+    - introduced: f89a938877ccaee51b3143b916f66b5ec9c8f0b5
+    - fixed: d68a1ad7e7ce228a3e36c4d2d1bf4c82b23e9dbb
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
+schema_version: 1.2.0

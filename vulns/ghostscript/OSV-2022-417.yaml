@@ -1,0 +1,32 @@
+id: OSV-2022-417
+summary: Heap-buffer-overflow in read_xref
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=47501
+
+  ```
+  Crash type: Heap-buffer-overflow READ 8
+  Crash state:
+  read_xref
+  pdfi_read_xref
+  pdfi_set_input_stream
+  ```
+modified: '2022-05-19T00:00:17.646459Z'
+published: '2022-05-19T00:00:17.646200Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=47501
+affected:
+- package:
+    name: ghostscript
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/ghostscript
+  ranges:
+  - type: GIT
+    repo: git://git.ghostscript.com/ghostpdl.git
+    events:
+    - introduced: f89a938877ccaee51b3143b916f66b5ec9c8f0b5
+    - fixed: 7ab96e83d85165801894e887816db6042ea2f9be
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.2.0

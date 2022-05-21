@@ -1,0 +1,32 @@
+id: OSV-2022-425
+summary: 'Heap-use-after-free in std::__1::__tree_node_base<void*>*& std::__1::__tree<std::__1::__value_type<std:'
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=47533
+
+  ```
+  Crash type: Heap-use-after-free READ 1
+  Crash state:
+  std::__1::__tree_node_base<void*>*& std::__1::__tree<std::__1::__value_type<std:
+  std::__1::pair<std::__1::__tree_iterator<std::__1::__value_type<std::__1::basic_
+  nlohmann::detail::binary_reader<nlohmann::basic_json<std::__1::map, std::__1::ve
+  ```
+modified: '2022-05-21T00:01:00.208655Z'
+published: '2022-05-21T00:01:00.208406Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=47533
+affected:
+- package:
+    name: json
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/json
+  ranges:
+  - type: GIT
+    repo: https://github.com/nlohmann/json.git
+    events:
+    - introduced: 93c9e0c703b98f5082413920a62067ae0b68671e
+    - fixed: 6ff2ea3aed110c17c2a4d9180dd5d422e1dfe6d0
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
+schema_version: 1.2.0
