@@ -1,0 +1,30 @@
+id: OSV-2022-193
+summary: UNKNOWN READ in GC_generic_malloc_many
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=44961
+
+  Crash type: UNKNOWN READ
+  Crash state:
+  GC_generic_malloc_many
+  GC_malloc_kind
+  Strnew_size
+modified: '2022-02-24T00:00:07.843498Z'
+published: '2022-02-24T00:00:07.843234Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=44961
+affected:
+- package:
+    name: w3m
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/w3m
+  ranges:
+  - type: GIT
+    repo: https://github.com/tats/w3m
+    events:
+    - introduced: 83df90dc112f79b80ab432c64253f8f078655e69
+  versions:
+  - v0.5.3+git20220429
+  ecosystem_specific:
+    severity: null
+schema_version: 1.2.0
