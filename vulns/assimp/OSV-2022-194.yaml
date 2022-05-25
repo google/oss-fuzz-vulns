@@ -1,0 +1,36 @@
+id: OSV-2022-194
+summary: Heap-buffer-overflow in SuperFastHash
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=44964
+
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  SuperFastHash
+  Assimp::SceneCombiner::AddNodePrefixesChecked
+  Assimp::SceneCombiner::AddNodePrefixesChecked
+modified: '2022-02-24T00:00:08.859136Z'
+published: '2022-02-24T00:00:08.858909Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=44964
+affected:
+- package:
+    name: assimp
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/assimp
+  ranges:
+  - type: GIT
+    repo: https://github.com/assimp/assimp.git
+    events:
+    - introduced: 776130534bb66cb64c6f11b92a1375df9604ba83
+  versions:
+  - 5.2.0
+  - v5.1.6
+  - v5.2.0
+  - v5.2.1
+  - v5.2.2
+  - v5.2.3
+  - v5.2.4
+  ecosystem_specific:
+    severity: MEDIUM
+schema_version: 1.2.0
