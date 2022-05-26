@@ -1,0 +1,32 @@
+id: OSV-2022-421
+summary: Stack-buffer-overflow in cardos_list_files
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=47512
+
+  ```
+  Crash type: Stack-buffer-overflow READ 1
+  Crash state:
+  cardos_list_files
+  sc_list_files
+  fuzz_card.c
+  ```
+modified: '2022-05-19T00:01:39.869761Z'
+published: '2022-05-19T00:01:39.869536Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=47512
+affected:
+- package:
+    name: opensc
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/opensc
+  ranges:
+  - type: GIT
+    repo: https://github.com/OpenSC/OpenSC
+    events:
+    - introduced: 847ccabd898f31d2ade49cbfd11fef083ee9e84a
+    - fixed: 74a8f296e0f195916d28e1c928f457e04aa22892
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.2.0
