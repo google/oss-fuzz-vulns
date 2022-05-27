@@ -1,0 +1,32 @@
+id: OSV-2022-432
+summary: Stack-use-after-return in conversation_match_element_list
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=47624
+
+  ```
+  Crash type: Stack-use-after-return READ 4
+  Crash state:
+  conversation_match_element_list
+  wmem_map_lookup
+  find_conversation_by_id
+  ```
+modified: '2022-05-26T00:00:29.927244Z'
+published: '2022-05-26T00:00:29.927017Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=47624
+affected:
+- package:
+    name: wireshark
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/wireshark
+  ranges:
+  - type: GIT
+    repo: https://gitlab.com/wireshark/wireshark.git
+    events:
+    - introduced: 865feb2bf85dcce1190bb33f17f95e1d3c51e820
+    - fixed: 1a60de0b761ae67be76c4cb903c7b719f3c48445
+  ecosystem_specific:
+    severity: null
+  versions: []
+schema_version: 1.2.0
