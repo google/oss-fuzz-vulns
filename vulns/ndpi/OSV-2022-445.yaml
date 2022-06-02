@@ -1,0 +1,32 @@
+id: OSV-2022-445
+summary: Stack-buffer-overflow in tlsCheckUncommonALPN
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=47730
+
+  ```
+  Crash type: Stack-buffer-overflow WRITE {*}
+  Crash state:
+  tlsCheckUncommonALPN
+  processClientServerHello
+  processTLSBlock
+  ```
+modified: '2022-06-01T00:00:07.685074Z'
+published: '2022-06-01T00:00:07.684819Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=47730
+affected:
+- package:
+    name: ndpi
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/ndpi
+  ranges:
+  - type: GIT
+    repo: https://github.com/ntop/nDPI.git
+    events:
+    - introduced: f25deeccb1ccbebd6346271828762fdd8326c32b
+    - fixed: 9040bc74c94dbd44cd86b29ec3de40621df53467
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
+schema_version: 1.2.0
