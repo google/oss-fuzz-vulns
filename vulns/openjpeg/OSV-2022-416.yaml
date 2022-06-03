@@ -1,0 +1,33 @@
+id: OSV-2022-416
+summary: Heap-buffer-overflow in opj_t1_allocate_buffers
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=47500
+
+  ```
+  Crash type: Heap-buffer-overflow WRITE {*}
+  Crash state:
+  opj_t1_allocate_buffers
+  opj_t1_clbl_decode_processor
+  opj_thread_pool_submit_job
+  ```
+modified: '2022-05-19T00:00:17.026871Z'
+published: '2022-05-19T00:00:17.026619Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=47500
+affected:
+- package:
+    name: openjpeg
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/openjpeg
+  ranges:
+  - type: GIT
+    repo: https://github.com/uclouvain/openjpeg
+    events:
+    - introduced: cf90ff0c57ad5b12aa6e227d7202960a5770144d
+    - fixed: 0535bfc3b7d5cd6fc73a7d4a6749a338fc5d7703
+  versions:
+  - v2.5.0
+  ecosystem_specific:
+    severity: HIGH
+schema_version: 1.2.0

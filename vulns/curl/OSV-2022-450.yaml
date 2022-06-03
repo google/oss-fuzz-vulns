@@ -1,0 +1,32 @@
+id: OSV-2022-450
+summary: Heap-buffer-overflow in Curl_headers_push
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=47767
+
+  ```
+  Crash type: Heap-buffer-overflow WRITE 5
+  Crash state:
+  Curl_headers_push
+  Curl_client_write
+  Curl_http_readwrite_headers
+  ```
+modified: '2022-06-02T00:01:55.821619Z'
+published: '2022-06-02T00:01:55.821368Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=47767
+affected:
+- package:
+    name: curl
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/curl
+  ranges:
+  - type: GIT
+    repo: https://github.com/curl/curl.git
+    events:
+    - introduced: 4d94fac9f0d1dd02b8308291e4c47651142dc28b
+    - fixed: f810047f9d7a983c4479ae07f79282b7c9b54ccb
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
+schema_version: 1.2.0

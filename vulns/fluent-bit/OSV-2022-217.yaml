@@ -1,0 +1,37 @@
+id: OSV-2022-217
+summary: Stack-buffer-overflow in msgpack_sbuffer_write
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=45208
+
+  Crash type: Stack-buffer-overflow READ {*}
+  Crash state:
+  msgpack_sbuffer_write
+  flb_pack_msgpack_to_json_format
+  flb_json_fuzzer.c
+modified: '2022-03-06T00:00:18.912008Z'
+published: '2022-03-06T00:00:18.911752Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=45208
+affected:
+- package:
+    name: fluent-bit
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/fluent-bit
+  ranges:
+  - type: GIT
+    repo: https://github.com/fluent/fluent-bit/
+    events:
+    - introduced: cae4f2ce5e225418a3f34a5a96b1424441814eac
+  versions:
+  - unstable-master
+  - v1.9.0
+  - v1.9.0-ci-test-1
+  - v1.9.0-rc3
+  - v1.9.0-rc4
+  - v1.9.1
+  - v1.9.2
+  - v1.9.3
+  ecosystem_specific:
+    severity: MEDIUM
+schema_version: 1.2.0
