@@ -1,0 +1,32 @@
+id: OSV-2022-456
+summary: Null-dereference READ in load_glyph
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=47798
+
+  ```
+  Crash type: Null-dereference READ
+  Crash state:
+  load_glyph
+  gs_fapi_ft_get_char_raster_metrics
+  gs_fapi_do_char
+  ```
+modified: '2022-06-04T00:01:31.295128Z'
+published: '2022-06-04T00:01:31.294896Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=47798
+affected:
+- package:
+    name: ghostscript
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/ghostscript
+  ranges:
+  - type: GIT
+    repo: git://git.ghostscript.com/ghostpdl.git
+    events:
+    - introduced: 697d39ae1a842a3b67cf12e88e9a0cb6587a30fb
+    - fixed: 640d33e19e3d58a9c71c2fd6c44187cb4a242d2b
+  ecosystem_specific:
+    severity: null
+  versions: []
+schema_version: 1.2.0

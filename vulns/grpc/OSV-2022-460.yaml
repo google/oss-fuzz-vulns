@@ -1,0 +1,34 @@
+id: OSV-2022-460
+summary: Heap-use-after-free in inflate
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=47834
+
+  ```
+  Crash type: Heap-use-after-free READ 1
+  Crash state:
+  inflate
+  zlib_body
+  zlib_decompress
+  ```
+modified: '2022-06-06T00:01:38.349213Z'
+published: '2022-06-06T00:01:38.349008Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=47834
+affected:
+- package:
+    name: grpc
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/grpc
+  ranges:
+  - type: GIT
+    repo: https://github.com/grpc/grpc
+    events:
+    - introduced: 93cdc8b77e7b3fe4a3afec1c9c7e29b3f02ec3cf
+    - fixed: df3ce2091354762571bff832558110a40af69e2f
+  ecosystem_specific:
+    severity: HIGH
+  database_specific:
+    fixed_range: 98dcba2807211759dc795aa2d3a41e59af837ee5:df3ce2091354762571bff832558110a40af69e2f
+  versions: []
+schema_version: 1.2.0
