@@ -10,7 +10,7 @@ details: |
   zlib_body
   zlib_decompress
   ```
-modified: '2022-06-06T00:01:38.349213Z'
+modified: '2022-06-09T00:43:11.909085Z'
 published: '2022-06-06T00:01:38.349008Z'
 references:
 - type: REPORT
@@ -26,6 +26,7 @@ affected:
     events:
     - introduced: 93cdc8b77e7b3fe4a3afec1c9c7e29b3f02ec3cf
     - fixed: df3ce2091354762571bff832558110a40af69e2f
+    - introduced: aacf0e252bf3eda7b8883b3e2fcf39752c459e5f
   ecosystem_specific:
     severity: HIGH
   database_specific:
