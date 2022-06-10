@@ -1,0 +1,33 @@
+id: OSV-2022-457
+summary: Heap-buffer-overflow in CFF::Charset::collect_glyph_to_sid_map
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=47790
+
+  ```
+  Crash type: Heap-buffer-overflow READ 2
+  Crash state:
+  CFF::Charset::collect_glyph_to_sid_map
+  cff_subset_plan::plan_subset_charset
+  cff_subset_plan::create
+  ```
+modified: '2022-06-04T00:01:52.823308Z'
+published: '2022-06-04T00:01:52.823074Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=47790
+affected:
+- package:
+    name: harfbuzz
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/harfbuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/harfbuzz/harfbuzz.git
+    events:
+    - introduced: a4d98b63ea59f17ef5e4795f6048f9cd6baa4340
+    - fixed: b59e25f25ef20dddc7e4dff0432c63d1afe287ae
+  versions:
+  - 4.3.0
+  ecosystem_specific:
+    severity: HIGH
+schema_version: 1.2.0
