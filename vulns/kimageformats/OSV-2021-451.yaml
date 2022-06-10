@@ -10,7 +10,7 @@ details: |
   void apply_sao<unsigned char>
   thread_task_sao::work
   ```
-modified: '2022-05-15T00:03:41.919263Z'
+modified: '2022-06-10T00:03:48.803922Z'
 published: '2021-02-28T00:00:09.511962Z'
 references:
 - type: REPORT
@@ -56,5 +56,6 @@ affected:
   - v5.93.0
   - v5.94.0-rc1
   - v5.94.0
+  - v5.95.0-rc1
   ecosystem_specific:
     severity: MEDIUM
