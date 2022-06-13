@@ -1,0 +1,32 @@
+id: OSV-2022-468
+summary: Heap-buffer-overflow in json_parse
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=47961
+
+  ```
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  json_parse
+  file_is_json
+  file_buffer
+  ```
+modified: '2022-06-12T00:00:08.434602Z'
+published: '2022-06-12T00:00:08.434300Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=47961
+affected:
+- package:
+    name: file
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/file
+  ranges:
+  - type: GIT
+    repo: https://github.com/file/file.git
+    events:
+    - introduced: 87060b287acdc06297bb73e668445e57023f3a75
+    - fixed: 46976e05f97e4b2bc77476a16f7107ff0be12df1
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
+schema_version: 1.2.0

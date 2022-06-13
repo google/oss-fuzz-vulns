@@ -1,0 +1,32 @@
+id: OSV-2022-473
+summary: Stack-buffer-overflow in input_osc_52
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=47964
+
+  ```
+  Crash type: Stack-buffer-overflow READ 9
+  Crash state:
+  input_osc_52
+  input_exit_osc
+  input_parse
+  ```
+modified: '2022-06-13T00:00:43.680337Z'
+published: '2022-06-13T00:00:43.680059Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=47964
+affected:
+- package:
+    name: tmux
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/tmux
+  ranges:
+  - type: GIT
+    repo: https://github.com/tmux/tmux.git
+    events:
+    - introduced: 67960dcc9ad3ed0bde23c1a7c8202c9b2aeec34f
+    - fixed: 6d0828b81cd39362869155dbea0143b66efe4e21
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.2.0
