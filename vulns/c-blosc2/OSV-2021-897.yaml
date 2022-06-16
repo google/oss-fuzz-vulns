@@ -10,7 +10,7 @@ details: |
   ZSTD_decompress_usingDDict
   blosc_d
   ```
-modified: '2022-05-08T00:04:19.726311Z'
+modified: '2022-06-16T00:04:17.202124Z'
 published: '2021-06-26T00:00:37.934284Z'
 references:
 - type: REPORT
@@ -24,6 +24,7 @@ affected:
     repo: https://github.com/Blosc/c-blosc2.git
     events:
     - introduced: d1ea514286c47433dabcf47b11cf81d2248ca5bf
+    - fixed: 7f4574f51ad7db56fc13de89e13e7893b1a82189
   versions:
   - v2.0.0
   - v2.0.0-rc2
