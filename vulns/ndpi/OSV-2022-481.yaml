@@ -1,0 +1,32 @@
+id: OSV-2022-481
+summary: UNKNOWN READ in ndpi_strdup
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=48020
+
+  ```
+  Crash type: UNKNOWN READ
+  Crash state:
+  ndpi_strdup
+  process_ndpi_collected_info
+  ndpi_workflow_process_packet
+  ```
+modified: '2022-06-15T00:01:12.654543Z'
+published: '2022-06-15T00:01:12.654297Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=48020
+affected:
+- package:
+    name: ndpi
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/ndpi
+  ranges:
+  - type: GIT
+    repo: https://github.com/ntop/nDPI.git
+    events:
+    - introduced: 7419cfee6407ff2dad687733da8eb27edd181ef9
+    - fixed: bdf54d725bb3e751b63af171e08203e3e434c587
+  ecosystem_specific:
+    severity: null
+  versions: []
+schema_version: 1.2.0

@@ -1,0 +1,32 @@
+id: OSV-2022-483
+summary: Heap-buffer-overflow in ndpi_search_dns
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=48034
+
+  ```
+  Crash type: Heap-buffer-overflow READ 4
+  Crash state:
+  ndpi_search_dns
+  check_ndpi_detection_func
+  ndpi_check_flow_func
+  ```
+modified: '2022-06-15T00:01:56.102595Z'
+published: '2022-06-15T00:01:56.102357Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=48034
+affected:
+- package:
+    name: ndpi
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/ndpi
+  ranges:
+  - type: GIT
+    repo: https://github.com/ntop/nDPI.git
+    events:
+    - introduced: 32428026d6dbcf7ee36aa3c882056b869b593d65
+    - fixed: 8dcaa5c0e11a7af1b529d0d657f4b37f11e8ec11
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
+schema_version: 1.2.0
