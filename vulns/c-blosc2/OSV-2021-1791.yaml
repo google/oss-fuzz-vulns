@@ -10,7 +10,7 @@ details: |
   blosc_run_decompression_with_context
   blosc2_decompress_ctx
   ```
-modified: '2022-05-08T00:04:15.099755Z'
+modified: '2022-06-16T00:04:04.371193Z'
 published: '2021-12-31T00:02:03.777116Z'
 references:
 - type: REPORT
@@ -25,6 +25,7 @@ affected:
     repo: https://github.com/Blosc/c-blosc2.git
     events:
     - introduced: 861ba79f31393dec0a0782ca11cf32cebb6f6610
+    - fixed: 7f4574f51ad7db56fc13de89e13e7893b1a82189
   versions:
   - v2.0.0
   - v2.0.0-rc2
