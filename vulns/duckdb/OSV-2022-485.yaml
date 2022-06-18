@@ -1,0 +1,34 @@
+id: OSV-2022-485
+summary: Segv on unknown address in duckdb::ExpressionBinder::BindExpression
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=48047
+
+  ```
+  Crash type: Segv on unknown address
+  Crash state:
+  duckdb::ExpressionBinder::BindExpression
+  duckdb::ExpressionBinder::BindExpression
+  duckdb::SelectBinder::BindExpression
+  ```
+modified: '2022-06-16T00:00:15.479757Z'
+published: '2022-06-16T00:00:15.479357Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=48047
+affected:
+- package:
+    name: duckdb
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/duckdb
+  ranges:
+  - type: GIT
+    repo: https://github.com/duckdb/duckdb
+    events:
+    - introduced: dfcb8a47c57fb694da20a47c92b81fe9e806fda6
+    - fixed: d4c4375975df60dcf98e7685adbdcb5107a99cee
+  ecosystem_specific:
+    severity: null
+  database_specific:
+    fixed_range: cdfb9f92ffb04669d46bd531de5c88e85ade9d43:d4c4375975df60dcf98e7685adbdcb5107a99cee
+  versions: []
+schema_version: 1.2.0

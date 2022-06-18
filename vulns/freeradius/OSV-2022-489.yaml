@@ -1,0 +1,32 @@
+id: OSV-2022-489
+summary: Heap-buffer-overflow in fr_size_from_str
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=48069
+
+  ```
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  fr_size_from_str
+  fr_value_box_from_substr
+  fr_value_box_from_str
+  ```
+modified: '2022-06-17T00:00:29.739073Z'
+published: '2022-06-17T00:00:29.738821Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=48069
+affected:
+- package:
+    name: freeradius
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/freeradius
+  ranges:
+  - type: GIT
+    repo: https://github.com/FreeRADIUS/freeradius-server.git
+    events:
+    - introduced: cd59058558275715ca46761ae96c652f3cb0a8d8
+    - fixed: ddfd3a99268136d4c321fa9e2fc38c2d2b8e329d
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.2.0

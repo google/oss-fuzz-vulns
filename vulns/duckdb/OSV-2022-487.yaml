@@ -1,0 +1,32 @@
+id: OSV-2022-487
+summary: Heap-use-after-free in duckdb::Planner::CreatePlan
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=48062
+
+  ```
+  Crash type: Heap-use-after-free READ 1
+  Crash state:
+  duckdb::Planner::CreatePlan
+  duckdb::Planner::CreatePlan
+  duckdb::ClientContext::CreatePreparedStatement
+  ```
+modified: '2022-06-17T00:00:15.351999Z'
+published: '2022-06-17T00:00:15.351733Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=48062
+affected:
+- package:
+    name: duckdb
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/duckdb
+  ranges:
+  - type: GIT
+    repo: https://github.com/duckdb/duckdb
+    events:
+    - introduced: dfcb8a47c57fb694da20a47c92b81fe9e806fda6
+    - fixed: 6e099b510cf72f5fa62b9e5a2c14fdc39e89d4e4
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
+schema_version: 1.2.0

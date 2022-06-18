@@ -1,0 +1,32 @@
+id: OSV-2022-371
+summary: Segv on unknown address in jxl::N_AVX2::WriteToU8Stage::ProcessRow
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=46963
+
+  ```
+  Crash type: Segv on unknown address
+  Crash state:
+  jxl::N_AVX2::WriteToU8Stage::ProcessRow
+  jxl::LowMemoryRenderPipeline::RenderRect
+  jxl::LowMemoryRenderPipeline::ProcessBuffers
+  ```
+modified: '2022-04-25T00:00:23.683365Z'
+published: '2022-04-25T00:00:23.683106Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=46963
+affected:
+- package:
+    name: libvips
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libvips
+  ranges:
+  - type: GIT
+    repo: https://github.com/libvips/libvips.git
+    events:
+    - introduced: 43db3985d0c0f0321434f2bd1cda36c7dd4fa1e5
+    - fixed: 9c22d74cff6d9013173724ab001188f9fdb96933
+  ecosystem_specific:
+    severity: null
+  versions: []
+schema_version: 1.2.0
