@@ -8,7 +8,7 @@ details: |
   onig_free_body
   onig_new
   flb_regex_create
-modified: '2022-06-07T00:05:56.083461Z'
+modified: '2022-06-18T00:05:39.561324Z'
 published: '2022-02-13T00:00:46.389187Z'
 references:
 - type: REPORT
@@ -37,6 +37,7 @@ affected:
   - v1.9.2
   - v1.9.3
   - v1.9.4
+  - v1.9.5
   ecosystem_specific:
     severity: HIGH
 schema_version: 1.2.0
