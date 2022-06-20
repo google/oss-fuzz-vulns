@@ -10,7 +10,7 @@ details: |
   grk::PacketManager::PacketManager
   grk::T2Decompress::decompressPackets
   ```
-modified: '2022-05-28T00:04:14.092809Z'
+modified: '2022-06-20T00:04:40.911772Z'
 published: '2022-03-15T00:01:42.984652Z'
 references:
 - type: REPORT
@@ -34,6 +34,7 @@ affected:
   - v9.7.5.debian
   - v9.7.6
   - v9.7.7
+  - v9.7.8
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.2.0
