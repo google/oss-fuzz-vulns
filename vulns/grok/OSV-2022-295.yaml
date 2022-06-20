@@ -8,7 +8,7 @@ details: |
   unsigned long grk::N_SSE4::vscheduler<grk::N_SSE4::DecompressDcShiftIrrev>
   std::__1::__function::__func<unsigned long grk::N_SSE4::vscheduler<grk::N_SSE4::
   tf::Executor::_invoke
-modified: '2022-05-28T00:04:00.327949Z'
+modified: '2022-06-20T00:04:22.782581Z'
 published: '2022-04-02T00:01:43.648632Z'
 references:
 - type: REPORT
@@ -28,6 +28,7 @@ affected:
   - v9.7.5.debian
   - v9.7.6
   - v9.7.7
+  - v9.7.8
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.2.0
