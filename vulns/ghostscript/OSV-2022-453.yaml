@@ -1,0 +1,32 @@
+id: OSV-2022-453
+summary: Segv on unknown address in gx_device_finalize
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=47770
+
+  ```
+  Crash type: Segv on unknown address
+  Crash state:
+  gx_device_finalize
+  alloc_restore_step_in
+  dorestore
+  ```
+modified: '2022-06-03T00:00:46.765738Z'
+published: '2022-06-03T00:00:46.765501Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=47770
+affected:
+- package:
+    name: ghostscript
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/ghostscript
+  ranges:
+  - type: GIT
+    repo: git://git.ghostscript.com/ghostpdl.git
+    events:
+    - introduced: e4fef6cf2181283849322c244b953d8c1d42ca4d
+    - fixed: 6ae825b8a85f93917b07cef1f4b2d6951f4b07cf
+  ecosystem_specific:
+    severity: null
+  versions: []
+schema_version: 1.2.0

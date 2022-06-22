@@ -1,0 +1,32 @@
+id: OSV-2022-437
+summary: Stack-buffer-overflow in sc_asn1_read_tag
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=47675
+
+  ```
+  Crash type: Stack-buffer-overflow READ 1
+  Crash state:
+  sc_asn1_read_tag
+  sc_asn1_find_tag
+  cardos_list_files
+  ```
+modified: '2022-05-29T00:00:46.150356Z'
+published: '2022-05-29T00:00:46.150112Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=47675
+affected:
+- package:
+    name: opensc
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/opensc
+  ranges:
+  - type: GIT
+    repo: https://github.com/OpenSC/OpenSC
+    events:
+    - introduced: 74a8f296e0f195916d28e1c928f457e04aa22892
+    - fixed: 972d3292eee44e9b4c61769365a3ec651ec18f39
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.2.0
