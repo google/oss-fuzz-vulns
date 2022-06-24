@@ -1,0 +1,32 @@
+id: OSV-2022-475
+summary: Heap-double-free in nft_set_context_free_many
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=47973
+
+  ```
+  Crash type: Heap-double-free
+  Crash state:
+  nft_set_context_free_many
+  network_unref
+  network_load_one
+  ```
+modified: '2022-06-13T00:01:49.208454Z'
+published: '2022-06-13T00:01:49.208216Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=47973
+affected:
+- package:
+    name: systemd
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/systemd
+  ranges:
+  - type: GIT
+    repo: https://github.com/systemd/systemd
+    events:
+    - introduced: ab51fd9dbdc59f9a37acd8acaea3e9088d092bba
+    - fixed: b48ed70c79c6482e1f39b77d16e62043ff5042a5
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
+schema_version: 1.2.0

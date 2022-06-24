@@ -1,0 +1,32 @@
+id: OSV-2022-496
+summary: Heap-buffer-overflow in pdfi_dict_get_no_store_R_inner
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=48167
+
+  ```
+  Crash type: Heap-buffer-overflow READ {*}
+  Crash state:
+  pdfi_dict_get_no_store_R_inner
+  pdfi_dict_get_no_store_R_key
+  pdfi_find_resource
+  ```
+modified: '2022-06-23T00:00:48.827258Z'
+published: '2022-06-23T00:00:48.826856Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=48167
+affected:
+- package:
+    name: ghostscript
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/ghostscript
+  ranges:
+  - type: GIT
+    repo: git://git.ghostscript.com/ghostpdl.git
+    events:
+    - introduced: 7a57a0db991ff9d38419961717c6ce1e3678db4c
+    - fixed: dd15cd3cd5495800de5ca5c8a152147b485e124f
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.2.0
