@@ -10,7 +10,7 @@ details: |
   grk::CodeStreamDecompress::skipNonScheduledTLM
   grk::CodeStreamDecompress::parseTileParts
   ```
-modified: '2022-06-24T00:01:56.977661Z'
+modified: '2022-06-27T00:04:10.724141Z'
 published: '2022-06-24T00:01:56.977425Z'
 references:
 - type: REPORT
@@ -25,6 +25,7 @@ affected:
     repo: https://github.com/GrokImageCompression/grok.git
     events:
     - introduced: 48d2c98b803c5e2ddddaa6281ba02aa7adc4777d
+    - fixed: edecdb89539e32c31b701ba2cf6140737135697a
   versions:
   - v9.7.8
   ecosystem_specific:
