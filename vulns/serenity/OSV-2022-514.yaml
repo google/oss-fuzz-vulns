@@ -1,0 +1,32 @@
+id: OSV-2022-514
+summary: Heap-use-after-free in AK::HashTable<AK::StringView, AK::Traits<AK::StringView>,
+  false>::try_lookup_for
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=48405
+
+  ```
+  Crash type: Heap-use-after-free READ 2
+  Crash state:
+  AK::HashTable<AK::StringView, AK::Traits<AK::StringView>, false>::try_lookup_for
+  JS::Parser::is_private_identifier_valid
+  JS::Parser::parse_primary_expression
+  ```
+modified: '2022-06-27T00:01:40.437595Z'
+published: '2022-06-27T00:01:40.437362Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=48405
+affected:
+- package:
+    name: serenity
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/serenity
+  ranges:
+  - type: GIT
+    repo: https://github.com/SerenityOS/serenity
+    events:
+    - introduced: c2ebaa9d87fc896623c09fcf299284b1ae5a8ba0
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
+schema_version: 1.2.0
