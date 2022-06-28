@@ -1,0 +1,34 @@
+id: OSV-2022-288
+summary: Segv on unknown address in flb_ra_translate
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=46082
+
+  Crash type: Segv on unknown address
+  Crash state:
+  flb_ra_translate
+  record_ac_fuzzer.c
+modified: '2022-03-30T00:01:21.966935Z'
+published: '2022-03-30T00:01:21.966556Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=46082
+affected:
+- package:
+    name: fluent-bit
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/fluent-bit
+  ranges:
+  - type: GIT
+    repo: https://github.com/fluent/fluent-bit/
+    events:
+    - introduced: 39b035b72761f3f4678bcce2cdb23f8b517a5665
+  versions:
+  - unstable-master
+  - v1.9.1
+  - v1.9.2
+  - v1.9.3
+  - v1.9.4
+  - v1.9.5
+  ecosystem_specific:
+    severity: null
+schema_version: 1.2.0
