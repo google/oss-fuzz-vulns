@@ -8,7 +8,7 @@ details: |
   void apply_string<GSUBProxy>
   void hb_ot_map_t::apply<GSUBProxy>
   hb_ot_map_t::substitute
-modified: '2022-06-28T00:04:29.419044Z'
+modified: '2022-06-30T00:04:58.919925Z'
 published: '2022-01-31T00:01:43.533565Z'
 references:
 - type: REPORT
@@ -37,6 +37,7 @@ affected:
   - 4.2.1
   - 4.3.0
   - 4.4.0
+  - 4.4.1
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.2.0
