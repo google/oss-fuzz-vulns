@@ -1,0 +1,33 @@
+id: OSV-2022-490
+summary: Stack-buffer-overflow in spvtools::opt::CompositeInsertToCompositeConstruct
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=48060
+
+  ```
+  Crash type: Stack-buffer-overflow READ 4
+  Crash state:
+  spvtools::opt::CompositeInsertToCompositeConstruct
+  std::__1::__function::__func<bool
+  spvtools::opt::InstructionFolder::FoldInstructionInternal
+  ```
+modified: '2022-06-17T00:01:02.206010Z'
+published: '2022-06-17T00:01:02.205743Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=48060
+affected:
+- package:
+    name: spirv-tools
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/spirv-tools
+  ranges:
+  - type: GIT
+    repo: https://github.com/KhronosGroup/SPIRV-Tools.git
+    events:
+    - introduced: 088cb1a5c81f45c8e778c4305e8668f3380401e8
+    - fixed: 286e9c1187053b4363fe963636f242263e1e5cd9
+  versions:
+  - sdk-1.3.216.0
+  ecosystem_specific:
+    severity: MEDIUM
+schema_version: 1.2.0
