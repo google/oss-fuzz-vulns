@@ -1,0 +1,32 @@
+id: OSV-2022-480
+summary: Heap-buffer-overflow in jxl::JxlBoxContentDecoder::Process
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=48029
+
+  ```
+  Crash type: Heap-buffer-overflow READ {*}
+  Crash state:
+  jxl::JxlBoxContentDecoder::Process
+  HandleBoxes
+  JxlDecoderProcessInput
+  ```
+modified: '2022-06-15T00:00:47.673708Z'
+published: '2022-06-15T00:00:47.673415Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=48029
+affected:
+- package:
+    name: libjxl
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libjxl
+  ranges:
+  - type: GIT
+    repo: https://github.com/libjxl/libjxl.git
+    events:
+    - introduced: b7076f1869914eee47b3eae107750f3a3ce43a76
+    - fixed: 746d1f5e8498f501238894899c301e70ea57e2aa
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.2.0

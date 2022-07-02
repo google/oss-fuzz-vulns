@@ -1,0 +1,32 @@
+id: OSV-2022-492
+summary: Heap-buffer-overflow in jxl::BitsCoder::Read
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=48123
+
+  ```
+  Crash type: Heap-buffer-overflow READ 8
+  Crash state:
+  jxl::BitsCoder::Read
+  jxl::ReadVisitor::Bits
+  jxl::jpeg::JPEGData::VisitFields
+  ```
+modified: '2022-06-20T00:01:36.686881Z'
+published: '2022-06-20T00:01:36.686599Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=48123
+affected:
+- package:
+    name: libjxl
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libjxl
+  ranges:
+  - type: GIT
+    repo: https://github.com/libjxl/libjxl.git
+    events:
+    - introduced: b7076f1869914eee47b3eae107750f3a3ce43a76
+    - fixed: 746d1f5e8498f501238894899c301e70ea57e2aa
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.2.0
