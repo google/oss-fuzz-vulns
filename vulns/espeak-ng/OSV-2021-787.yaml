@@ -10,7 +10,7 @@ details: |
   text_decoder_getc
   GetC
   ```
-modified: '2022-06-23T00:04:47.885575Z'
+modified: '2022-07-02T00:18:43.075583Z'
 published: '2021-05-23T00:00:32.013206Z'
 references:
 - type: REPORT
@@ -24,6 +24,7 @@ affected:
     repo: https://github.com/espeak-ng/espeak-ng
     events:
     - introduced: 0a713d52bbf3e061823d1a7f35e5303e7320f27a
+    - fixed: 9decedb8c229e1a4219baceaab7a3d656e889e31
   versions:
   - '1.51'
   - 1.51.1
