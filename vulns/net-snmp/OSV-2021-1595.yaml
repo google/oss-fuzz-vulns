@@ -10,7 +10,7 @@ details: |
   sprint_realloc_integer
   snprint_integer
   ```
-modified: '2022-06-13T00:08:31.807701Z'
+modified: '2022-07-03T00:08:13.010415Z'
 published: '2021-11-21T00:00:06.936393Z'
 references:
 - type: REPORT
@@ -28,6 +28,8 @@ affected:
   versions:
   - v5.9.2.pre1
   - v5.9.2.rc1
+  - v5.9.2
+  - v5.9.2.rc2
   ecosystem_specific:
     severity: HIGH
 schema_version: 1.2.0
