@@ -1,0 +1,34 @@
+id: OSV-2022-530
+summary: Heap-buffer-overflow in string_decoder_getc_utf_8
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=48589
+
+  ```
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  string_decoder_getc_utf_8
+  text_decoder_getc
+  ReadClause
+  ```
+modified: '2022-07-03T00:00:53.117024Z'
+published: '2022-07-03T00:00:53.116791Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=48589
+affected:
+- package:
+    name: espeak-ng
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/espeak-ng
+  ranges:
+  - type: GIT
+    repo: https://github.com/espeak-ng/espeak-ng
+    events:
+    - introduced: 0a713d52bbf3e061823d1a7f35e5303e7320f27a
+    - fixed: 482ee1da05189252c3dee49514506e1d2271a2c0
+  versions:
+  - '1.51'
+  - 1.51.1
+  ecosystem_specific:
+    severity: MEDIUM
+schema_version: 1.2.0
