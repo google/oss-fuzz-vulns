@@ -8,7 +8,7 @@ details: |
   onig_free_body
   onig_new
   flb_regex_create
-modified: '2022-06-18T00:05:39.561324Z'
+modified: '2022-07-07T03:04:18.191141Z'
 published: '2022-02-13T00:00:46.389187Z'
 references:
 - type: REPORT
@@ -23,6 +23,8 @@ affected:
     repo: https://github.com/fluent/fluent-bit/
     events:
     - introduced: e59f16b1168fca4046fff219ba9ae4e20dee6610
+    - fixed: 138de6ad92c6eee88ecf67cdf78a28d45a8bb3fb
+    - fixed: c6fb81a5f43153809456d5444bb28e7f72d308a8
   versions:
   - ci-release-test
   - unstable
@@ -40,4 +42,6 @@ affected:
   - v1.9.5
   ecosystem_specific:
     severity: HIGH
+  database_specific:
+    fixed_range: b8cf2aedcb426f4706425d3f7c15b0b9cfbb8332:138de6ad92c6eee88ecf67cdf78a28d45a8bb3fb
 schema_version: 1.2.0
