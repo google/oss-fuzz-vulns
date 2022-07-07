@@ -1,0 +1,31 @@
+id: OSV-2022-524
+summary: Heap-buffer-overflow in Ins_JROF
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=48547
+
+  ```
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  Ins_JROF
+  RunIns
+  Instance_Reset
+  ```
+modified: '2022-07-01T00:01:43.353577Z'
+published: '2022-07-01T00:01:43.353257Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=48547
+affected:
+- package:
+    name: ghostscript
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/ghostscript
+  ranges:
+  - type: GIT
+    repo: git://git.ghostscript.com/ghostpdl.git
+    events:
+    - introduced: 441c9e3a4ca08fa7f7c00063af33196b0d88ebaf
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.2.0
