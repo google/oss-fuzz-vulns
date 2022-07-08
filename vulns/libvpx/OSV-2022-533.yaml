@@ -1,0 +1,33 @@
+id: OSV-2022-533
+summary: Check failed in CheckUnwind
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=48629
+
+  ```
+  Crash type: Check failed
+  Crash state:
+  CheckUnwind
+  vp9_loop_filter_dealloc
+  vp9_decoder_remove
+  ```
+modified: '2022-07-05T00:01:52.897506Z'
+published: '2022-07-05T00:01:52.897160Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=48629
+affected:
+- package:
+    name: libvpx
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libvpx
+  ranges:
+  - type: GIT
+    repo: https://chromium.googlesource.com/webm/libvpx
+    events:
+    - introduced: 5b530fc962bcb8a51bbf03f5fbc2912f21b86e70
+  ecosystem_specific:
+    severity: null
+  database_specific:
+    introduced_range: dbac8e01e05ad3d1b47887b1ac864339115aa721:7b65e46983e8aae8024fef562a68aa72d7a111b9
+  versions: []
+schema_version: 1.2.0

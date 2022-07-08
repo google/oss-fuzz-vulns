@@ -1,0 +1,32 @@
+id: OSV-2022-529
+summary: Heap-buffer-overflow in init_mt
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=48609
+
+  ```
+  Crash type: Heap-buffer-overflow WRITE {*}
+  Crash state:
+  init_mt
+  vp9_decode_frame
+  vp9_receive_compressed_data
+  ```
+modified: '2022-07-03T00:00:48.434484Z'
+published: '2022-07-03T00:00:48.434255Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=48609
+affected:
+- package:
+    name: libvpx
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libvpx
+  ranges:
+  - type: GIT
+    repo: https://chromium.googlesource.com/webm/libvpx
+    events:
+    - introduced: 5b530fc962bcb8a51bbf03f5fbc2912f21b86e70
+    - fixed: 933b6b90a583b593efd8acb644603ab189226309
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
+schema_version: 1.2.0
