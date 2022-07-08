@@ -10,7 +10,7 @@ details: |
   draco::KdTreeAttributesDecoder::DecodeDataNeededByPortableTransforms
   draco::AttributesDecoder::DecodeAttributes
   ```
-modified: '2022-04-13T03:04:42.703747Z'
+modified: '2022-07-08T00:09:39.559498Z'
 published: '2021-08-29T00:01:18.789522Z'
 references:
 - type: REPORT
@@ -24,6 +24,7 @@ affected:
     repo: https://github.com/google/draco
     events:
     - introduced: 25484b31235d1a35fa72be6ce8d1f7f286b5c0bf
+    - fixed: 1af95a20b81624f64c4b19794cb3ca991e6d0a76
   versions:
   - 1.4.0
   - 1.4.1
