@@ -10,7 +10,7 @@ details: |
   draco::MeshEdgebreakerDecoderImpl<draco::MeshEdgebreakerTraversalValenceDecoder>
   draco::MeshEdgebreakerDecoderImpl<draco::MeshEdgebreakerTraversalValenceDecoder>
   ```
-modified: '2022-04-13T03:04:42.728794Z'
+modified: '2022-07-08T00:09:40.094418Z'
 published: '2021-08-29T00:00:08.242884Z'
 references:
 - type: REPORT
@@ -24,6 +24,7 @@ affected:
     repo: https://github.com/google/draco
     events:
     - introduced: 25484b31235d1a35fa72be6ce8d1f7f286b5c0bf
+    - fixed: 1af95a20b81624f64c4b19794cb3ca991e6d0a76
   versions:
   - 1.4.0
   - 1.4.1
@@ -35,3 +36,4 @@ affected:
     severity: MEDIUM
   database_specific:
     introduced_range: aef4bfbd61798ecc21d94c873b679fbdeaf92462:79601d2d060be52e673a82ed1c46f4666eb28255
+    fixed_range: cfa05470fe534497fc6548e65568d26dab00653a:1af95a20b81624f64c4b19794cb3ca991e6d0a76
