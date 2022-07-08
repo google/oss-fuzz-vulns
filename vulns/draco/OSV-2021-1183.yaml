@@ -10,7 +10,7 @@ details: |
   draco::MeshTraversalSequencer<draco::DepthFirstTraverser<draco::CornerTable, dra
   draco::SequentialAttributeDecodersController::DecodeAttributes
   ```
-modified: '2022-04-13T03:04:42.773416Z'
+modified: '2022-07-08T00:09:38.379641Z'
 published: '2021-09-01T00:00:21.323146Z'
 references:
 - type: REPORT
@@ -24,6 +24,7 @@ affected:
     repo: https://github.com/google/draco
     events:
     - introduced: 25484b31235d1a35fa72be6ce8d1f7f286b5c0bf
+    - fixed: 1af95a20b81624f64c4b19794cb3ca991e6d0a76
   versions:
   - 1.4.0
   - 1.4.1
