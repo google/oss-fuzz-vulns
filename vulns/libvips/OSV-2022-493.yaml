@@ -1,0 +1,36 @@
+id: OSV-2022-493
+summary: Segv on unknown address in jxl::N_AVX2::XYBStage<jxl::N_AVX2::PerChannelOp<jxl::N_AVX2::Op709>
+  >::ProcessRo
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=48132
+
+  ```
+  Crash type: Segv on unknown address
+  Crash state:
+  jxl::N_AVX2::XYBStage<jxl::N_AVX2::PerChannelOp<jxl::N_AVX2::Op709> >::ProcessRo
+  jxl::LowMemoryRenderPipeline::RenderRect
+  jxl::LowMemoryRenderPipeline::ProcessBuffers
+  ```
+modified: '2022-06-21T00:01:55.187587Z'
+published: '2022-06-21T00:01:55.187291Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=48132
+affected:
+- package:
+    name: libvips
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libvips
+  ranges:
+  - type: GIT
+    repo: https://github.com/libvips/libvips.git
+    events:
+    - introduced: d91cfa4e5346d4abd71e0b6d908112663a53a5c2
+    - fixed: 55cbde674be27fcb4f79023e8cf1d3ec1291d4fd
+  versions:
+  - v8.13.0-rc1
+  ecosystem_specific:
+    severity: null
+  database_specific:
+    introduced_range: ceaa2d2096ce44f1798eaaf5f437492aae474a39:9cbc361269cedd5ddadd9695d7aa3368daa31d24
+schema_version: 1.2.0
