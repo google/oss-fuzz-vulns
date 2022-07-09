@@ -8,7 +8,7 @@ details: |
   msgpack_sbuffer_write
   flb_pack_msgpack_to_json_format
   flb_json_fuzzer.c
-modified: '2022-06-18T00:05:45.447269Z'
+modified: '2022-07-09T00:10:29.623567Z'
 published: '2022-03-06T00:00:18.911752Z'
 references:
 - type: REPORT
@@ -34,6 +34,7 @@ affected:
   - v1.9.3
   - v1.9.4
   - v1.9.5
+  - v1.9.6
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.2.0
