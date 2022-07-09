@@ -9,7 +9,7 @@ details: |
   v9fs_setattr
   coroutine_trampoline
   ```
-modified: '2022-04-13T03:04:33.281599Z'
+modified: '2022-07-09T00:38:04.296171Z'
 published: '2021-04-09T00:00:27.093027Z'
 references:
 - type: REPORT
@@ -23,6 +23,7 @@ affected:
     repo: https://git.qemu.org/git/qemu.git
     events:
     - introduced: f4ceebdec531243dd72e38f85f085287e6e63258
+    - fixed: bd662023e683850c085e98c8ff8297142c2dd9f2
   versions:
   - v6.0.0
   - v6.0.0-rc0
@@ -31,11 +32,13 @@ affected:
   - v6.0.0-rc3
   - v6.0.0-rc4
   - v6.0.0-rc5
+  - v6.0.1
+  - v6.1.0
   - v6.1.0-rc0
   - v6.1.0-rc1
   - v6.1.0-rc2
   - v6.1.0-rc3
   - v6.1.0-rc4
-  - v6.1.0
+  - v6.1.1
   ecosystem_specific:
     severity: null
