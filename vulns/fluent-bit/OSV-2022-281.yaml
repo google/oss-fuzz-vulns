@@ -8,7 +8,7 @@ details: |
   jsmn_parse
   flb_json_tokenise
   flb_pack_json_state
-modified: '2022-03-26T00:01:08.817158Z'
+modified: '2022-07-09T00:10:26.198397Z'
 published: '2022-03-26T00:01:08.816881Z'
 references:
 - type: REPORT
@@ -30,6 +30,7 @@ affected:
   - v1.9.3
   - v1.9.4
   - v1.9.5
+  - v1.9.6
   ecosystem_specific:
     severity: HIGH
 schema_version: 1.2.0
