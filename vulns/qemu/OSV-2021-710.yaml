@@ -10,7 +10,7 @@ details: |
   iov_from_buf
   virtio_net_receive_rcu
   ```
-modified: '2022-04-13T03:04:33.326369Z'
+modified: '2022-07-09T00:39:34.474998Z'
 published: '2021-05-01T00:00:22.994253Z'
 references:
 - type: REPORT
@@ -24,6 +24,7 @@ affected:
     repo: https://git.qemu.org/git/qemu.git
     events:
     - introduced: b12498fc575f2ad30f09fe78badc7fef526e2d76
+    - fixed: 8664d30a30fd676b56b4c29dbcbdd5c5538acfc1
   versions:
   - v6.0.0
   - v6.0.0-rc0
@@ -32,11 +33,13 @@ affected:
   - v6.0.0-rc3
   - v6.0.0-rc4
   - v6.0.0-rc5
+  - v6.0.1
+  - v6.1.0
   - v6.1.0-rc0
   - v6.1.0-rc1
   - v6.1.0-rc2
   - v6.1.0-rc3
   - v6.1.0-rc4
-  - v6.1.0
+  - v6.1.1
   ecosystem_specific:
     severity: HIGH
