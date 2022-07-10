@@ -8,7 +8,7 @@ details: |
   jsmn_parse
   flb_json_tokenise
   flb_pack_json_state
-modified: '2022-07-09T00:10:26.198397Z'
+modified: '2022-07-10T00:25:16.837038Z'
 published: '2022-03-26T00:01:08.816881Z'
 references:
 - type: REPORT
@@ -23,6 +23,8 @@ affected:
     repo: https://github.com/fluent/fluent-bit/
     events:
     - introduced: af7ef37d6f0c61a79a8bd66f603273245198e069
+    - fixed: 7568fddddca799fc921e9db29c3f57d67d0fd85c
+    - fixed: 7e6e42d1c12644b6d5007b0415553e24761e7e59
   versions:
   - unstable-master
   - v1.9.1
