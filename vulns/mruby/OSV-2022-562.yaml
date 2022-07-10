@@ -1,0 +1,32 @@
+id: OSV-2022-562
+summary: UNKNOWN WRITE in udiv
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=48904
+
+  ```
+  Crash type: UNKNOWN WRITE
+  Crash state:
+  udiv
+  mrb_bint_mod
+  int_mod
+  ```
+modified: '2022-07-10T00:01:06.488225Z'
+published: '2022-07-10T00:01:06.487981Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=48904
+affected:
+- package:
+    name: mruby
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/mruby
+  ranges:
+  - type: GIT
+    repo: https://github.com/mruby/mruby
+    events:
+    - introduced: 872020bb3d85ba4066ec19cfcad375e51fdf024b
+    - fixed: 8d349815309e374b545deb4d4202323c7bc5bd28
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
+schema_version: 1.2.0

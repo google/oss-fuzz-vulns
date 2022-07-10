@@ -1,0 +1,32 @@
+id: OSV-2022-550
+summary: Heap-use-after-free in mrb_bint_new_str
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=48873
+
+  ```
+  Crash type: Heap-use-after-free READ 1
+  Crash state:
+  mrb_bint_new_str
+  mrb_vm_exec
+  mrb_vm_run
+  ```
+modified: '2022-07-09T00:00:43.820285Z'
+published: '2022-07-09T00:00:43.820059Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=48873
+affected:
+- package:
+    name: mruby
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/mruby
+  ranges:
+  - type: GIT
+    repo: https://github.com/mruby/mruby
+    events:
+    - introduced: 872020bb3d85ba4066ec19cfcad375e51fdf024b
+    - fixed: a40842eb73164254f465ce5bac74045200e5acb0
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
+schema_version: 1.2.0

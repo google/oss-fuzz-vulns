@@ -1,0 +1,32 @@
+id: OSV-2022-556
+summary: UNKNOWN READ in mrb_bint_cmp
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=48877
+
+  ```
+  Crash type: UNKNOWN READ
+  Crash state:
+  mrb_bint_cmp
+  cmpnum
+  num_gt
+  ```
+modified: '2022-07-09T00:01:42.437163Z'
+published: '2022-07-09T00:01:42.436937Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=48877
+affected:
+- package:
+    name: mruby
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/mruby
+  ranges:
+  - type: GIT
+    repo: https://github.com/mruby/mruby
+    events:
+    - introduced: 872020bb3d85ba4066ec19cfcad375e51fdf024b
+    - fixed: 960021e51989881c06c7c87b2661440c1fb2a784
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.2.0
