@@ -8,7 +8,7 @@ details: |
   read_config
   read_glob
   read_config
-modified: '2022-07-09T00:10:39.897899Z'
+modified: '2022-07-10T00:25:14.635181Z'
 published: '2022-03-27T00:00:37.751332Z'
 references:
 - type: REPORT
@@ -23,6 +23,8 @@ affected:
     repo: https://github.com/fluent/fluent-bit/
     events:
     - introduced: cee783e53b96e445983a667ba51da087df14e472
+    - fixed: 82d1819c655d2a74acc0a0cf7643430aa0da7d4b
+    - fixed: 5375fb219ca8aa70ecce8136621016a51c0b37ba
   versions:
   - unstable-master
   - v1.9.1
@@ -33,4 +35,6 @@ affected:
   - v1.9.6
   ecosystem_specific:
     severity: HIGH
+  database_specific:
+    fixed_range: d917afd6f7560fdc7304c0fe4252a870b5a9c3cf:82d1819c655d2a74acc0a0cf7643430aa0da7d4b
 schema_version: 1.2.0
