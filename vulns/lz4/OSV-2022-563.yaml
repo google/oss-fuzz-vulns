@@ -1,0 +1,32 @@
+id: OSV-2022-563
+summary: Use-of-uninitialized-value in LZ4HC_compress_generic_noDictCtx
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=48910
+
+  ```
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  LZ4HC_compress_generic_noDictCtx
+  LZ4_compress_HC_extStateHC_fastReset
+  LZ4F_compressBlockHC
+  ```
+modified: '2022-07-10T00:01:51.341599Z'
+published: '2022-07-10T00:01:51.341319Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=48910
+affected:
+- package:
+    name: lz4
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/lz4
+  ranges:
+  - type: GIT
+    repo: https://github.com/lz4/lz4.git
+    events:
+    - introduced: 0ac3c74de1b6de584c361f3e9485dde35f10c756
+    - fixed: 910ec80d2856cfa825e2230ff2de8347a4fa4522
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.2.0

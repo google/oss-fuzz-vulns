@@ -1,0 +1,30 @@
+id: OSV-2022-549
+summary: Invalid-free in round_trip_fuzzer.c
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=48884
+
+  ```
+  Crash type: Invalid-free
+  Crash state:
+  round_trip_fuzzer.c
+  ```
+modified: '2022-07-09T00:00:25.413619Z'
+published: '2022-07-09T00:00:25.413389Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=48884
+affected:
+- package:
+    name: lz4
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/lz4
+  ranges:
+  - type: GIT
+    repo: https://github.com/lz4/lz4.git
+    events:
+    - introduced: 4ebe313e00aa52c837ee029ede39a0503a8a39c9
+    - fixed: 910ec80d2856cfa825e2230ff2de8347a4fa4522
+  ecosystem_specific:
+    severity: null
+  versions: []
+schema_version: 1.2.0
