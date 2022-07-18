@@ -1,0 +1,32 @@
+id: OSV-2022-423
+summary: Heap-buffer-overflow in sc_build_pin
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=47521
+
+  ```
+  Crash type: Heap-buffer-overflow READ 4
+  Crash state:
+  sc_build_pin
+  isoNUMBER_build_pin_apdu
+  isoNUMBER_pin_cmd
+  ```
+modified: '2022-05-20T00:00:21.693236Z'
+published: '2022-05-20T00:00:21.692977Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=47521
+affected:
+- package:
+    name: opensc
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/opensc
+  ranges:
+  - type: GIT
+    repo: https://github.com/OpenSC/OpenSC
+    events:
+    - introduced: 8bb15107a0495e2e0e9ffbc6673e39f04e304674
+    - fixed: 27e3db8b142522d7367cc446283fb07d855443d7
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.2.0

@@ -1,0 +1,32 @@
+id: OSV-2022-451
+summary: Heap-buffer-overflow in myeid_create_key
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=47769
+
+  ```
+  Crash type: Heap-buffer-overflow WRITE {*}
+  Crash state:
+  myeid_create_key
+  sc_pkcs15init_store_secret_key
+  do_store_secret_key
+  ```
+modified: '2022-06-02T00:02:00.251315Z'
+published: '2022-06-02T00:02:00.250877Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=47769
+affected:
+- package:
+    name: opensc
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/opensc
+  ranges:
+  - type: GIT
+    repo: https://github.com/OpenSC/OpenSC
+    events:
+    - introduced: bec4f63c5b8308d7fdca842c5c0b62c3491d106a
+    - fixed: 367c3ad2ef2c10cb29602f72163e7fb23c3f5827
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
+schema_version: 1.2.0

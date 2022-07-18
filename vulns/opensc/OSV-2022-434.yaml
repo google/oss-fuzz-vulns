@@ -1,0 +1,32 @@
+id: OSV-2022-434
+summary: Segv on unknown address in sc_aux_data_free
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=47655
+
+  ```
+  Crash type: Segv on unknown address
+  Crash state:
+  sc_aux_data_free
+  sc_pkcs15_free_prkey_info
+  sc_pkcs15_free_object
+  ```
+modified: '2022-05-28T00:00:15.236194Z'
+published: '2022-05-28T00:00:15.235936Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=47655
+affected:
+- package:
+    name: opensc
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/opensc
+  ranges:
+  - type: GIT
+    repo: https://github.com/OpenSC/OpenSC
+    events:
+    - introduced: 0773f4098ad424582af9f367fd7627fcdefba66e
+    - fixed: 367c3ad2ef2c10cb29602f72163e7fb23c3f5827
+  ecosystem_specific:
+    severity: null
+  versions: []
+schema_version: 1.2.0

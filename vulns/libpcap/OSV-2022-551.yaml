@@ -1,0 +1,34 @@
+id: OSV-2022-551
+summary: Heap-buffer-overflow in fixup_pcap_pkthdr
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=48863
+
+  ```
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  fixup_pcap_pkthdr
+  pcap_next_packet
+  pcap_offline_read
+  ```
+modified: '2022-07-09T00:00:45.162417Z'
+published: '2022-07-09T00:00:45.162171Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=48863
+affected:
+- package:
+    name: libpcap
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libpcap
+  ranges:
+  - type: GIT
+    repo: https://github.com/the-tcpdump-group/libpcap.git
+    events:
+    - introduced: b4eeafb93955807464d8bb9327772fb217fcdd9a
+    - fixed: e2c0fd75e48a3cbf1bf48b8afe28fff50d8e0877
+    - introduced: 854614423a5b790aaac73131591cb7c716157241
+    - fixed: a774407d41419bc8f3069b70e9d9be26c82f0f70
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.2.0

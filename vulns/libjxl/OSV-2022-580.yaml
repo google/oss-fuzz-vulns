@@ -1,0 +1,32 @@
+id: OSV-2022-580
+summary: Heap-buffer-overflow in jxl::N_AVX2::BlendingStage::ProcessPaddingRow
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=49049
+
+  ```
+  Crash type: Heap-buffer-overflow WRITE {*}
+  Crash state:
+  jxl::N_AVX2::BlendingStage::ProcessPaddingRow
+  jxl::LowMemoryRenderPipeline::RenderPadding
+  jxl::LowMemoryRenderPipeline::ProcessBuffers
+  ```
+modified: '2022-07-13T00:02:03.212489Z'
+published: '2022-07-13T00:02:03.212239Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=49049
+affected:
+- package:
+    name: libjxl
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libjxl
+  ranges:
+  - type: GIT
+    repo: https://github.com/libjxl/libjxl.git
+    events:
+    - introduced: d9282d901e27b6bb749a146b2a3a78933d1013a7
+    - fixed: 658017a0256aab2c35cf96ed478c8339757608f4
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
+schema_version: 1.2.0

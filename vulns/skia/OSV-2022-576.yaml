@@ -1,0 +1,47 @@
+id: OSV-2022-576
+summary: UNKNOWN WRITE in SkMaskBlurFilter::blur
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=49061
+
+  ```
+  Crash type: UNKNOWN WRITE
+  Crash state:
+  SkMaskBlurFilter::blur
+  SkBlurMask::BoxBlur
+  SkBlurMaskFilterImpl::filterMask
+  ```
+modified: '2022-07-13T00:00:55.846705Z'
+published: '2022-07-13T00:00:55.846420Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=49061
+affected:
+- package:
+    name: skia
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/skia
+  ranges:
+  - type: GIT
+    repo: https://skia.googlesource.com/skia.git
+    events:
+    - introduced: 4b76265c6660d94a50cc5c492821d254a52aa21e
+    - fixed: b70a030066b554b0fc7ba4c061449ac486a62283
+  versions:
+  - canvaskit/0.25.1
+  - canvaskit/0.26.0
+  - canvaskit/0.27.0
+  - canvaskit/0.28.0
+  - canvaskit/0.28.1
+  - canvaskit/0.29.0
+  - canvaskit/0.30.0
+  - canvaskit/0.31.0
+  - canvaskit/0.32.0
+  - canvaskit/0.33.0
+  - canvaskit/0.34.0
+  - canvaskit/0.34.1
+  - pathkit/1.0.0
+  ecosystem_specific:
+    severity: HIGH
+  database_specific:
+    introduced_range: bf9c63b760fb6fe4022c4b1ac53efd826d63f379:12a75588e7bc45347670ca22241cae4d065881f1
+schema_version: 1.2.0

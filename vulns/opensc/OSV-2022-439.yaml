@@ -1,0 +1,32 @@
+id: OSV-2022-439
+summary: Stack-use-after-return in test_update
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=47676
+
+  ```
+  Crash type: Stack-use-after-return READ 1
+  Crash state:
+  test_update
+  _main
+  fuzz_pkcs15_tool.c
+  ```
+modified: '2022-05-29T00:01:40.731836Z'
+published: '2022-05-29T00:01:40.731606Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=47676
+affected:
+- package:
+    name: opensc
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/opensc
+  ranges:
+  - type: GIT
+    repo: https://github.com/OpenSC/OpenSC
+    events:
+    - introduced: 217590ce6d0d02bb9abe20ac26bde8774cf8c8a4
+    - fixed: d1a3039c350bf081cae132d6ffc1781d01fd55c6
+  ecosystem_specific:
+    severity: null
+  versions: []
+schema_version: 1.2.0

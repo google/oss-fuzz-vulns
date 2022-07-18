@@ -1,0 +1,31 @@
+id: OSV-2022-349
+summary: Heap-buffer-overflow in JS_CallInternal
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=46701
+
+  ```
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  JS_CallInternal
+  JS_EvalFunctionInternal
+  __JS_EvalInternal
+  ```
+modified: '2022-04-16T00:00:12.325106Z'
+published: '2022-04-16T00:00:12.324830Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=46701
+affected:
+- package:
+    name: quickjs
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/quickjs
+  ranges:
+  - type: GIT
+    repo: https://github.com/bellard/quickjs
+    events:
+    - introduced: b5e62895c619d4ffc75c9d822c8d85f1ece77e5b
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.2.0

@@ -1,0 +1,32 @@
+id: OSV-2022-510
+summary: Heap-buffer-overflow in read_blob_signed
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=48329
+
+  ```
+  Crash type: Heap-buffer-overflow READ 4
+  Crash state:
+  read_blob_signed
+  parse_signature_type
+  parse_signature_type
+  ```
+modified: '2022-06-26T00:00:24.389364Z'
+published: '2022-06-26T00:00:24.389136Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=48329
+affected:
+- package:
+    name: yara
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/yara
+  ranges:
+  - type: GIT
+    repo: https://github.com/VirusTotal/yara.git
+    events:
+    - introduced: 15ec337e041791d5a354c8a3ec7729ab5af6adf4
+    - fixed: 86b0e3f7c7fc2c689db88972221b5d4da1c7214f
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
+schema_version: 1.2.0
