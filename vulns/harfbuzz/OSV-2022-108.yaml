@@ -8,7 +8,7 @@ details: |
   void apply_string<GSUBProxy>
   void hb_ot_map_t::apply<GSUBProxy>
   hb_ot_map_t::substitute
-modified: '2022-06-30T00:04:58.919925Z'
+modified: '2022-07-18T02:26:29.025862Z'
 published: '2022-01-31T00:01:43.533565Z'
 references:
 - type: REPORT
@@ -23,6 +23,7 @@ affected:
     repo: https://github.com/harfbuzz/harfbuzz.git
     events:
     - introduced: a75b96f7e5833c9206f6a15d11168a757a85ee59
+    - fixed: 5363e40de13425938bc833ae2b6c1d9d565bcf65
   versions:
   - 3.1.2
   - 3.2.0
@@ -40,4 +41,6 @@ affected:
   - 4.4.1
   ecosystem_specific:
     severity: MEDIUM
+  database_specific:
+    fixed_range: d8f9d517801c5c361f329764329731bc0bde950f:5363e40de13425938bc833ae2b6c1d9d565bcf65
 schema_version: 1.2.0
