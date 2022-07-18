@@ -10,7 +10,7 @@ details: |
   parse_to
   get_hdr_field
   ```
-modified: '2022-06-23T00:06:51.681511Z'
+modified: '2022-07-18T02:28:09.249050Z'
 published: '2021-11-18T00:00:17.931643Z'
 references:
 - type: REPORT
@@ -38,6 +38,7 @@ affected:
   - 3.1.10
   - 3.2.7
   - 3.3.0-rc1
+  - 3.3.0
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.2.0
