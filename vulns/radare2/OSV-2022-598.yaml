@@ -1,0 +1,36 @@
+id: OSV-2022-598
+summary: Heap-buffer-overflow in get_symbols_64
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=49209
+
+  ```
+  Crash type: Heap-buffer-overflow READ 8
+  Crash state:
+  get_symbols_64
+  get_main_64
+  binsym
+  ```
+modified: '2022-07-19T00:02:00.850820Z'
+published: '2022-07-19T00:02:00.850559Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=49209
+affected:
+- package:
+    name: radare2
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/radare2
+  ranges:
+  - type: GIT
+    repo: https://github.com/radareorg/radare2
+    events:
+    - introduced: 8e4f69a74b68611a7730fb87b8a75fe4a33bd5e8
+    - fixed: 7447468cb57e278edde36b52eb72645e1290e9e3
+    - fixed: 04ea9a5c72de59e03820104113506c4ba3a7108e
+  versions:
+  - 5.7.0
+  - 5.7.2
+  - 5.7.4
+  ecosystem_specific:
+    severity: MEDIUM
+schema_version: 1.2.0

@@ -1,0 +1,31 @@
+id: OSV-2022-360
+summary: Invalid-free in igl::MshLoader::~MshLoader
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=46818
+
+  ```
+  Crash type: Invalid-free
+  Crash state:
+  igl::MshLoader::~MshLoader
+  igl_fuzzer.cpp
+  ```
+modified: '2022-04-20T00:01:28.066162Z'
+published: '2022-04-20T00:01:28.065887Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=46818
+affected:
+- package:
+    name: libigl
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libigl
+  ranges:
+  - type: GIT
+    repo: https://github.com/libigl/libigl
+    events:
+    - introduced: e91fb2b9e071c4a54a2c53c405affff9510fffdf
+  versions:
+  - v2.4.0
+  ecosystem_specific:
+    severity: null
+schema_version: 1.2.0
