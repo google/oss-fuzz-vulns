@@ -1,0 +1,32 @@
+id: OSV-2022-600
+summary: Segv on unknown address in mrb_bint_to_s
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=49269
+
+  ```
+  Crash type: Segv on unknown address
+  Crash state:
+  mrb_bint_to_s
+  mrb_integer_to_str
+  int_to_s
+  ```
+modified: '2022-07-20T00:00:13.612334Z'
+published: '2022-07-20T00:00:13.612086Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=49269
+affected:
+- package:
+    name: mruby
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/mruby
+  ranges:
+  - type: GIT
+    repo: https://github.com/mruby/mruby
+    events:
+    - introduced: 714e8a57af690805b3edcffdffc42729833bc50a
+    - fixed: cfea0c28a045790388aedf53f1c9a5c43a683dd2
+  ecosystem_specific:
+    severity: null
+  versions: []
+schema_version: 1.2.0

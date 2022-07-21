@@ -1,0 +1,32 @@
+id: OSV-2022-605
+summary: Heap-buffer-overflow in mrb_bint_cmp
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=49291
+
+  ```
+  Crash type: Heap-buffer-overflow READ 8
+  Crash state:
+  mrb_bint_cmp
+  cmpnum
+  num_gt
+  ```
+modified: '2022-07-21T00:00:15.227263Z'
+published: '2022-07-21T00:00:15.226959Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=49291
+affected:
+- package:
+    name: mruby
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/mruby
+  ranges:
+  - type: GIT
+    repo: https://github.com/mruby/mruby
+    events:
+    - introduced: 714e8a57af690805b3edcffdffc42729833bc50a
+    - fixed: b84bca666fdc4fe94286b49b6f6b9a64e4c3a534
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.2.0
