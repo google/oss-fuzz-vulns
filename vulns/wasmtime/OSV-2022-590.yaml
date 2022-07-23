@@ -1,0 +1,32 @@
+id: OSV-2022-590
+summary: Heap-use-after-free in .tmpoLlNv4
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=49166
+
+  ```
+  Crash type: Heap-use-after-free READ 8
+  Crash state:
+  .tmpoLlNv4
+  .tmpoLlNv4
+  wasmtime_setjmp
+  ```
+modified: '2022-07-19T00:00:24.804013Z'
+published: '2022-07-19T00:00:24.803758Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=49166
+affected:
+- package:
+    name: wasmtime
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/wasmtime
+  ranges:
+  - type: GIT
+    repo: https://github.com/bytecodealliance/wasmtime
+    events:
+    - introduced: 80976b6fc7558ddd0ef71894c5e4a89346e260e6
+    - fixed: 2154c63de94e0372bca5a596c3eaf90147c922d1
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
+schema_version: 1.2.0
