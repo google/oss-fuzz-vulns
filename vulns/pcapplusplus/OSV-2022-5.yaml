@@ -10,7 +10,7 @@ details: |
   pcpp::IPv6Layer::parseExtensions
   pcpp::IPv6Layer::IPv6Layer
   ```
-modified: '2022-05-09T00:04:09.473640Z'
+modified: '2022-07-24T00:16:53.407604Z'
 published: '2022-01-05T00:00:46.965901Z'
 references:
 - type: REPORT
@@ -25,6 +25,7 @@ affected:
     repo: https://github.com/seladb/PcapPlusPlus
     events:
     - introduced: fbc52d37c6a7e8cc75e4950d2621cbd907c6cf8a
+    - fixed: 6cd7a5e096378ebd541b9c9d9d5b4ad9dbd75713
   versions:
   - v21.05
   - v21.11
