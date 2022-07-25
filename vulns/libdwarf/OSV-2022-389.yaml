@@ -1,0 +1,34 @@
+id: OSV-2022-389
+summary: Global-buffer-overflow in _dwarf_pathjoinl
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=47150
+
+  ```
+  Crash type: Global-buffer-overflow READ 1
+  Crash state:
+  _dwarf_pathjoinl
+  _dwarf_construct_linkedto_path
+  dwarf_gnu_debuglink
+  ```
+modified: '2022-05-01T00:01:57.432994Z'
+published: '2022-05-01T00:01:57.432738Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=47150
+affected:
+- package:
+    name: libdwarf
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libdwarf
+  ranges:
+  - type: GIT
+    repo: https://github.com/davea42/libdwarf-code
+    events:
+    - introduced: 6af6e566ae71b585659484e7be7cbab83dd770fb
+    - fixed: 24dff940cc4c71a9c3cb5475aee231b19163a12c
+  versions:
+  - libdwarf-0.4.1
+  - v0.4.1
+  ecosystem_specific:
+    severity: null
+schema_version: 1.2.0

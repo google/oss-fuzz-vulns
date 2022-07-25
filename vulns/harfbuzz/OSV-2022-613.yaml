@@ -1,0 +1,32 @@
+id: OSV-2022-613
+summary: UNKNOWN READ in OT::avar::map_coords
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=49407
+
+  ```
+  Crash type: UNKNOWN READ
+  Crash state:
+  OT::avar::map_coords
+  hb_ot_var_normalize_variations
+  test-ot-face.c
+  ```
+modified: '2022-07-24T00:00:06.664183Z'
+published: '2022-07-24T00:00:06.663903Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=49407
+affected:
+- package:
+    name: harfbuzz
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/harfbuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/harfbuzz/harfbuzz.git
+    events:
+    - introduced: edca52c3b644f6ebc90eeeb307ed3e87a7245348
+    - fixed: 32c85b8c8c1994e318dce49b928a7298a0b23560
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.2.0

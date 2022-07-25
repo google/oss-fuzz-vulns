@@ -1,0 +1,32 @@
+id: OSV-2022-615
+summary: Heap-buffer-overflow in TetrahedralInterp16
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=49386
+
+  ```
+  Crash type: Heap-buffer-overflow READ 2
+  Crash state:
+  TetrahedralInterp16
+  cmsPipelineEval16
+  FixWhiteMisalignment
+  ```
+modified: '2022-07-24T00:01:36.775552Z'
+published: '2022-07-24T00:01:36.775330Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=49386
+affected:
+- package:
+    name: lcms
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/lcms
+  ranges:
+  - type: GIT
+    repo: https://github.com/mm2/Little-CMS.git
+    events:
+    - introduced: a9796f61c682f5320ff572c888062ee34315b836
+    - fixed: 1394d740d96886b501e0ad04fe926a72eca3f01c
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.2.0
