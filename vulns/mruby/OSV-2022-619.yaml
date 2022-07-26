@@ -1,0 +1,32 @@
+id: OSV-2022-619
+summary: Heap-buffer-overflow in udiv
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=49425
+
+  ```
+  Crash type: Heap-buffer-overflow READ 4
+  Crash state:
+  udiv
+  mrb_bint_mod
+  int_mod
+  ```
+modified: '2022-07-25T00:00:11.230049Z'
+published: '2022-07-25T00:00:11.229803Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=49425
+affected:
+- package:
+    name: mruby
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/mruby
+  ranges:
+  - type: GIT
+    repo: https://github.com/mruby/mruby
+    events:
+    - introduced: e04184185ab43b94980550e850d8813a415fa438
+    - fixed: e02e9ae434e462c2ff21f47c1210089951db562b
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.2.0

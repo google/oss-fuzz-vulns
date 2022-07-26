@@ -1,0 +1,54 @@
+id: OSV-2022-377
+summary: Heap-buffer-overflow in decode_preR13_section_hdr
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=46983
+
+  ```
+  Crash type: Heap-buffer-overflow WRITE 4
+  Crash state:
+  decode_preR13_section_hdr
+  decode_preR13
+  dwg_decode
+  ```
+modified: '2022-04-26T00:01:48.422837Z'
+published: '2022-04-26T00:01:48.422620Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=46983
+affected:
+- package:
+    name: libredwg
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libredwg
+  ranges:
+  - type: GIT
+    repo: https://github.com/LibreDWG/libredwg
+    events:
+    - introduced: 7bda865d59f843e174ac7e14c7dfe25243900956
+  versions:
+  - 0.12.4.4522
+  - 0.12.4.4527
+  - 0.12.4.4530
+  - 0.12.4.4533
+  - 0.12.4.4535
+  - 0.12.4.4542
+  - 0.12.4.4544
+  - 0.12.4.4545
+  - 0.12.4.4548
+  - 0.12.4.4550
+  - 0.12.4.4553
+  - 0.12.4.4566
+  - 0.12.4.4567
+  - 0.12.4.4572
+  - 0.12.4.4583
+  - 0.12.4.4590
+  - 0.12.4.4598
+  - 0.12.4.4601
+  - 0.12.4.4606
+  - 0.12.4.4607
+  - 0.12.4.4608
+  - 0.12.4.4613
+  - 0.12.4.4615
+  ecosystem_specific:
+    severity: HIGH
+schema_version: 1.2.0
