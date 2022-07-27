@@ -1,0 +1,32 @@
+id: OSV-2022-621
+summary: Segv on unknown address in mpz_add
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=49427
+
+  ```
+  Crash type: Segv on unknown address
+  Crash state:
+  mpz_add
+  mrb_bint_add
+  int_add
+  ```
+modified: '2022-07-25T00:00:48.757810Z'
+published: '2022-07-25T00:00:48.757551Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=49427
+affected:
+- package:
+    name: mruby
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/mruby
+  ranges:
+  - type: GIT
+    repo: https://github.com/mruby/mruby
+    events:
+    - introduced: e04184185ab43b94980550e850d8813a415fa438
+    - fixed: 26ce85bd5de515906e01fdeeac774316628ad599
+  ecosystem_specific:
+    severity: null
+  versions: []
+schema_version: 1.2.0

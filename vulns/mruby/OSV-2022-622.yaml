@@ -1,0 +1,32 @@
+id: OSV-2022-622
+summary: Segv on unknown address in urshift
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=49429
+
+  ```
+  Crash type: Segv on unknown address
+  Crash state:
+  urshift
+  mpz_div_2exp
+  mrb_bint_rshift
+  ```
+modified: '2022-07-25T00:01:52.179390Z'
+published: '2022-07-25T00:01:52.179092Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=49429
+affected:
+- package:
+    name: mruby
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/mruby
+  ranges:
+  - type: GIT
+    repo: https://github.com/mruby/mruby
+    events:
+    - introduced: e04184185ab43b94980550e850d8813a415fa438
+    - fixed: 25a32ed681cd3fc48eabd6b8efa5683b1d32ffd0
+  ecosystem_specific:
+    severity: null
+  versions: []
+schema_version: 1.2.0

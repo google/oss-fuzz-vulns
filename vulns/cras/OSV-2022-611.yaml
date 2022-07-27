@@ -1,0 +1,32 @@
+id: OSV-2022-611
+summary: Heap-use-after-free in cras_iodev_list_disable_dev
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=49368
+
+  ```
+  Crash type: Heap-use-after-free READ 4
+  Crash state:
+  cras_iodev_list_disable_dev
+  cras_iodev_list_rm_output
+  a2dp_pcm_iodev_destroy
+  ```
+modified: '2022-07-23T00:00:18.304480Z'
+published: '2022-07-23T00:00:18.304218Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=49368
+affected:
+- package:
+    name: cras
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/cras
+  ranges:
+  - type: GIT
+    repo: https://chromium.googlesource.com/chromiumos/third_party/adhd
+    events:
+    - introduced: 1a535b8b6d33013c271fa86f8c8c8f45184bded3
+    - fixed: af4c2ba0b138f035efc9c207cb76861402ddbd54
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
+schema_version: 1.2.0

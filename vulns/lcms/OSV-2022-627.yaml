@@ -1,0 +1,32 @@
+id: OSV-2022-627
+summary: Heap-buffer-overflow in cmsMLUgetASCII
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=49475
+
+  ```
+  Crash type: Heap-buffer-overflow READ 2
+  Crash state:
+  cmsMLUgetASCII
+  WriteCountAndString
+  Type_CrdInfo_Write
+  ```
+modified: '2022-07-26T00:00:23.478935Z'
+published: '2022-07-26T00:00:23.478650Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=49475
+affected:
+- package:
+    name: lcms
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/lcms
+  ranges:
+  - type: GIT
+    repo: https://github.com/mm2/Little-CMS.git
+    events:
+    - introduced: 737cb6fcfd575fe16dd4f907fb049a8b05a25f76
+    - fixed: 77758b7f815f4ced91e088ce855b31c90ad0a406
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.2.0
