@@ -1,0 +1,34 @@
+id: OSV-2022-642
+summary: Segv on unknown address in cmsNamedColorInfo
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=49501
+
+  ```
+  Crash type: Segv on unknown address
+  Crash state:
+  cmsNamedColorInfo
+  Type_NamedColor_Write
+  SaveTags
+  ```
+modified: '2022-07-28T00:00:18.999033Z'
+published: '2022-07-28T00:00:18.998740Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=49501
+affected:
+- package:
+    name: lcms
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/lcms
+  ranges:
+  - type: GIT
+    repo: https://github.com/mm2/Little-CMS.git
+    events:
+    - introduced: 1394d740d96886b501e0ad04fe926a72eca3f01c
+    - fixed: 77758b7f815f4ced91e088ce855b31c90ad0a406
+  ecosystem_specific:
+    severity: null
+  database_specific:
+    introduced_range: a9796f61c682f5320ff572c888062ee34315b836:6849af422fd296cb8ce160d376978ef5d79f9417
+  versions: []
+schema_version: 1.2.0

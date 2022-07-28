@@ -1,0 +1,32 @@
+id: OSV-2022-638
+summary: Use-of-uninitialized-value in ComputeConversion
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=49495
+
+  ```
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  ComputeConversion
+  DefaultICCintents
+  _cmsLinkProfiles
+  ```
+modified: '2022-07-27T00:02:09.427319Z'
+published: '2022-07-27T00:02:09.427043Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=49495
+affected:
+- package:
+    name: lcms
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/lcms
+  ranges:
+  - type: GIT
+    repo: https://github.com/mm2/Little-CMS.git
+    events:
+    - introduced: a9796f61c682f5320ff572c888062ee34315b836
+    - fixed: b7e119beadd56e5d6aefcf4a3edee33dc78c92c6
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.2.0
