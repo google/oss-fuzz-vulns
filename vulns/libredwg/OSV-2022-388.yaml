@@ -1,0 +1,54 @@
+id: OSV-2022-388
+summary: Segv on unknown address in dwg_ref_get_object
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=47151
+
+  ```
+  Crash type: Segv on unknown address
+  Crash state:
+  dwg_ref_get_object
+  dwg_geojson_feature
+  dwg_geojson_object
+  ```
+modified: '2022-05-01T00:01:54.905100Z'
+published: '2022-05-01T00:01:54.904711Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=47151
+affected:
+- package:
+    name: libredwg
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libredwg
+  ranges:
+  - type: GIT
+    repo: https://github.com/LibreDWG/libredwg
+    events:
+    - introduced: 7bda865d59f843e174ac7e14c7dfe25243900956
+  versions:
+  - 0.12.4.4522
+  - 0.12.4.4527
+  - 0.12.4.4530
+  - 0.12.4.4533
+  - 0.12.4.4535
+  - 0.12.4.4542
+  - 0.12.4.4544
+  - 0.12.4.4545
+  - 0.12.4.4548
+  - 0.12.4.4550
+  - 0.12.4.4553
+  - 0.12.4.4566
+  - 0.12.4.4567
+  - 0.12.4.4572
+  - 0.12.4.4583
+  - 0.12.4.4590
+  - 0.12.4.4598
+  - 0.12.4.4601
+  - 0.12.4.4606
+  - 0.12.4.4607
+  - 0.12.4.4608
+  - 0.12.4.4613
+  - 0.12.4.4615
+  ecosystem_specific:
+    severity: null
+schema_version: 1.2.0

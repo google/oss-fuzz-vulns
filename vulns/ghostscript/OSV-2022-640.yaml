@@ -1,0 +1,32 @@
+id: OSV-2022-640
+summary: Stack-use-after-return in rc_free_text_enum
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=49530
+
+  ```
+  Crash type: Stack-use-after-return READ 8
+  Crash state:
+  rc_free_text_enum
+  gs_text_release
+  pdf_text_release
+  ```
+modified: '2022-07-28T00:00:10.449870Z'
+published: '2022-07-28T00:00:10.449600Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=49530
+affected:
+- package:
+    name: ghostscript
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/ghostscript
+  ranges:
+  - type: GIT
+    repo: git://git.ghostscript.com/ghostpdl.git
+    events:
+    - introduced: e292bb232c987c50671699a8dd8172c0d7adcfe3
+    - fixed: 3e86fa5ea2da0bde5e1fd9adaf297be874417993
+  ecosystem_specific:
+    severity: null
+  versions: []
+schema_version: 1.2.0
