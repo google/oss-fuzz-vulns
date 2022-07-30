@@ -8,7 +8,7 @@ details: |
   decompress_rNUMBER
   read_rNUMBER_meta_data
   dwg_decode
-modified: '2022-06-28T00:07:43.240752Z'
+modified: '2022-07-30T00:11:15.450699Z'
 published: '2022-02-07T00:00:43.453413Z'
 references:
 - type: REPORT
@@ -23,6 +23,7 @@ affected:
     repo: https://github.com/LibreDWG/libredwg
     events:
     - introduced: 161045124139f7288f335fc1f51b1d403054ad61
+    - fixed: fe03c5a89cbd441b6840335bd484cf08bc65c7c4
   versions:
   - 0.12.4.4390
   - 0.12.4.4395
@@ -65,7 +66,6 @@ affected:
   - 0.12.4.4572
   - 0.12.4.4583
   - 0.12.4.4590
-  - 0.12.5
   - 0.12.4.4598
   - 0.12.4.4601
   - 0.12.4.4606
@@ -73,6 +73,7 @@ affected:
   - 0.12.4.4608
   - 0.12.4.4613
   - 0.12.4.4615
+  - 0.12.5
   ecosystem_specific:
     severity: HIGH
 schema_version: 1.2.0
