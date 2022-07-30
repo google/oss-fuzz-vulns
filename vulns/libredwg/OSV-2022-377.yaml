@@ -10,7 +10,7 @@ details: |
   decode_preR13
   dwg_decode
   ```
-modified: '2022-04-26T00:01:48.422837Z'
+modified: '2022-07-30T00:11:24.476167Z'
 published: '2022-04-26T00:01:48.422620Z'
 references:
 - type: REPORT
@@ -25,6 +25,7 @@ affected:
     repo: https://github.com/LibreDWG/libredwg
     events:
     - introduced: 7bda865d59f843e174ac7e14c7dfe25243900956
+    - fixed: 580e8bbebf18579b97e2c20b032368b9079624ca
   versions:
   - 0.12.4.4522
   - 0.12.4.4527
