@@ -10,7 +10,7 @@ details: |
   dwg_free_TABLEGEOMETRY
   dwg_free_variable_no_class
   ```
-modified: '2022-04-21T00:01:58.402704Z'
+modified: '2022-07-30T00:11:38.468823Z'
 published: '2022-04-21T00:01:58.402473Z'
 references:
 - type: REPORT
@@ -25,6 +25,7 @@ affected:
     repo: https://github.com/LibreDWG/libredwg
     events:
     - introduced: cb74d5cf5bffc2a9dee8da43105d892f9a728777
+    - fixed: 9e629ba3649464a928b0af75ddd246b3defee128
   versions:
   - 0.12.3.4163
   - 0.12.3.4165
