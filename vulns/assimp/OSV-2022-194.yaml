@@ -8,7 +8,7 @@ details: |
   SuperFastHash
   Assimp::SceneCombiner::AddNodePrefixesChecked
   Assimp::SceneCombiner::AddNodePrefixesChecked
-modified: '2022-02-24T00:00:08.859136Z'
+modified: '2022-07-31T00:32:48.104607Z'
 published: '2022-02-24T00:00:08.858909Z'
 references:
 - type: REPORT
@@ -23,6 +23,7 @@ affected:
     repo: https://github.com/assimp/assimp.git
     events:
     - introduced: 776130534bb66cb64c6f11b92a1375df9604ba83
+    - fixed: b0210cb3cf2ea90e540a99ec57499dd65bc02840
   versions:
   - 5.2.0
   - v5.1.6
