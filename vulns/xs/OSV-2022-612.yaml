@@ -1,0 +1,32 @@
+id: OSV-2022-612
+summary: Heap-buffer-overflow in fxGetNextEntity
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=49357
+
+  ```
+  Crash type: Heap-buffer-overflow WRITE 1
+  Crash state:
+  fxGetNextEntity
+  fxGetNextTokenJSXChild
+  fxJSXElement
+  ```
+modified: '2022-07-23T00:01:34.852490Z'
+published: '2022-07-23T00:01:34.852237Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=49357
+affected:
+- package:
+    name: xs
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/xs
+  ranges:
+  - type: GIT
+    repo: https://github.com/AFLplusplus/AFLplusplus.git
+    events:
+    - introduced: c208dcf9c573e3d85990c7dea777646f7fa4961c
+    - fixed: c208dcf9c573e3d85990c7dea777646f7fa4961c
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
+schema_version: 1.2.0
