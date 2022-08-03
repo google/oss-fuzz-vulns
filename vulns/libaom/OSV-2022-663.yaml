@@ -1,0 +1,32 @@
+id: OSV-2022-663
+summary: Heap-buffer-overflow in av1_read_mode_info
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=49652
+
+  ```
+  Crash type: Heap-buffer-overflow WRITE 1
+  Crash state:
+  av1_read_mode_info
+  parse_decode_block
+  decode_partition
+  ```
+modified: '2022-08-01T00:02:06.452091Z'
+published: '2022-08-01T00:02:06.451838Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=49652
+affected:
+- package:
+    name: libaom
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libaom
+  ranges:
+  - type: GIT
+    repo: https://aomedia.googlesource.com/aom
+    events:
+    - introduced: 12a16c2980184c16684a7d222e0bbac1b8bfd5a2
+    - fixed: 8cc8160a5cb1e2e79db9f010896d70656981f409
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
+schema_version: 1.2.0

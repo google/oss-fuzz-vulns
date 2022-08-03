@@ -1,0 +1,32 @@
+id: OSV-2022-655
+summary: UNKNOWN WRITE in pdfi_repair_file
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=49606
+
+  ```
+  Crash type: UNKNOWN WRITE
+  Crash state:
+  pdfi_repair_file
+  pdfi_read_xref_stream_dict
+  pdfi_read_xref
+  ```
+modified: '2022-07-31T00:00:27.898067Z'
+published: '2022-07-31T00:00:27.897800Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=49606
+affected:
+- package:
+    name: ghostscript
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/ghostscript
+  ranges:
+  - type: GIT
+    repo: git://git.ghostscript.com/ghostpdl.git
+    events:
+    - introduced: db0f98bdf4c75486c47df4d5e9919420638f7f2c
+    - fixed: dd907d6d9e772f91a9b652c3e765439f38e7147d
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
+schema_version: 1.2.0

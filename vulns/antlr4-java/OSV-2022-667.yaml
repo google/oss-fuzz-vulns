@@ -1,0 +1,34 @@
+id: OSV-2022-667
+summary: Uncaught exception in com.code_intelligence.jazzer.sanitizers.RegexInjection.hookInternal
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=49680
+
+  ```
+  Crash type: Uncaught exception
+  Crash state:
+  com.code_intelligence.jazzer.sanitizers.RegexInjection.hookInternal
+  com.code_intelligence.jazzer.sanitizers.RegexInjection.stringHook
+  org.antlr.runtime.BaseRecognizer.getTokenErrorDisplay
+  ```
+modified: '2022-08-02T00:01:42.264866Z'
+published: '2022-08-02T00:01:42.264623Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=49680
+affected:
+- package:
+    name: antlr4-java
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/antlr4-java
+  ranges:
+  - type: GIT
+    repo: https://github.com/antlr/antlr4.git
+    events:
+    - introduced: 1df58f77820b5feb747d34cc6aff26276db8b6dd
+    - fixed: 14703f21b5802e880da8c3afe80824ab651aee07
+  ecosystem_specific:
+    severity: LOW
+  database_specific:
+    introduced_range: f1df3164ca2c2b143b83ff535082ec6f846165c2:14703f21b5802e880da8c3afe80824ab651aee07
+  versions: []
+schema_version: 1.2.0
