@@ -10,7 +10,7 @@ details: |
   java.base/jdk.internal.math.FDBigInteger.multByPow52
   java.base/jdk.internal.math.FloatingDecimal$ASCIIToBinaryBuffer.floatValue
   ```
-modified: '2022-04-15T00:01:30.888812Z'
+modified: '2022-08-03T00:19:59.503915Z'
 published: '2022-04-15T00:01:30.888554Z'
 references:
 - type: REPORT
@@ -25,6 +25,7 @@ affected:
     repo: https://github.com/alibaba/fastjson
     events:
     - introduced: 6841ca79104f6b78179e44b56ae9a033b8131c70
+    - fixed: bcd0505019425b2b8a7146828bec51739b933318
   versions:
   - 1.2.80
   ecosystem_specific:
