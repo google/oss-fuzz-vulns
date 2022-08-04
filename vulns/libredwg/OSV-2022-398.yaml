@@ -1,0 +1,68 @@
+id: OSV-2022-398
+summary: Heap-buffer-overflow in json_common_entity_data
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=47259
+
+  ```
+  Crash type: Heap-buffer-overflow READ 8
+  Crash state:
+  json_common_entity_data
+  dwg_json_REPEAT
+  dwg_json_object
+  ```
+modified: '2022-05-07T00:00:06.829267Z'
+published: '2022-05-07T00:00:06.828980Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=47259
+affected:
+- package:
+    name: libredwg
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libredwg
+  ranges:
+  - type: GIT
+    repo: https://github.com/LibreDWG/libredwg
+    events:
+    - introduced: 9a5a3259a4434de01693992fca655575f9eff4ee
+  versions:
+  - 0.12.4.4462
+  - 0.12.4.4466
+  - 0.12.4.4467
+  - 0.12.4.4475
+  - 0.12.4.4487
+  - 0.12.4.4491
+  - 0.12.4.4492
+  - 0.12.4.4494
+  - 0.12.4.4497
+  - 0.12.4.4507
+  - 0.12.4.4515
+  - 0.12.4.4517
+  - 0.12.4.4522
+  - 0.12.4.4527
+  - 0.12.4.4530
+  - 0.12.4.4533
+  - 0.12.4.4535
+  - 0.12.4.4542
+  - 0.12.4.4544
+  - 0.12.4.4545
+  - 0.12.4.4548
+  - 0.12.4.4550
+  - 0.12.4.4553
+  - 0.12.4.4566
+  - 0.12.4.4567
+  - 0.12.4.4572
+  - 0.12.4.4583
+  - 0.12.4.4590
+  - 0.12.4.4598
+  - 0.12.4.4601
+  - 0.12.4.4606
+  - 0.12.4.4607
+  - 0.12.4.4608
+  - 0.12.4.4613
+  - 0.12.4.4615
+  - 0.12.4.4635
+  - 0.12.4.4637
+  ecosystem_specific:
+    severity: HIGH
+schema_version: 1.2.0
