@@ -1,0 +1,41 @@
+id: OSV-2022-400
+summary: Heap-double-free in dwg_free_XRECORD_private
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=47300
+
+  ```
+  Crash type: Heap-double-free
+  Crash state:
+  dwg_free_XRECORD_private
+  dwg_free_XRECORD
+  dwg_free_object
+  ```
+modified: '2022-05-08T00:00:40.782806Z'
+published: '2022-05-08T00:00:40.782520Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=47300
+affected:
+- package:
+    name: libredwg
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libredwg
+  ranges:
+  - type: GIT
+    repo: https://github.com/LibreDWG/libredwg
+    events:
+    - introduced: 4eadb3538aee39bf0732ee5b273f414ddafa765e
+  versions:
+  - 0.12.4.4590
+  - 0.12.4.4598
+  - 0.12.4.4601
+  - 0.12.4.4606
+  - 0.12.4.4607
+  - 0.12.4.4608
+  - 0.12.4.4613
+  - 0.12.4.4615
+  - 0.12.4.4635
+  - 0.12.4.4637
+  ecosystem_specific:
+    severity: null
+schema_version: 1.2.0
