@@ -1,0 +1,44 @@
+id: OSV-2022-515
+summary: Uncaught exception in com.github.javaparser.CommentsInserter.insertComments
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=48408
+
+  ```
+  Crash type: Uncaught exception
+  Crash state:
+  com.github.javaparser.CommentsInserter.insertComments
+  java.base/java.util.TreeMap.compare
+  java.base/java.util.TreeMap.addEntryToEmptyMap
+  ```
+modified: '2022-06-27T00:01:52.994584Z'
+published: '2022-06-27T00:01:52.994345Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=48408
+affected:
+- package:
+    name: javaparser
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/javaparser
+  ranges:
+  - type: GIT
+    repo: https://github.com/javaparser/javaparser
+    events:
+    - introduced: b65ff06076c53e6c5c75e732a7cad98baff3a1b1
+    - fixed: 6aec0795bc57b716a703ee35f94df96a5efe855c
+  versions:
+  - javaparser-parent-2.24.0
+  - javaparser-parent-3.22.1
+  - javaparser-parent-3.23.0
+  - javaparser-parent-3.23.1
+  - javaparser-parent-3.24.0
+  - javaparser-parent-3.24.1
+  - javaparser-parent-3.24.2
+  - javaparser-parent-3.24.3
+  - javaparser-parent-3.24.4
+  - v_snapshot_68f5e84
+  ecosystem_specific:
+    severity: LOW
+  database_specific:
+    introduced_range: a68f540b53f05cd4d24b137e09fdcc30f6fc19b2:17707db43006caef9098ef094e9fcc6638a5a75e
+schema_version: 1.2.0
