@@ -1,0 +1,41 @@
+id: OSV-2022-403
+summary: Heap-use-after-free in dwg_add_handleref
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=47319
+
+  ```
+  Crash type: Heap-use-after-free READ 8
+  Crash state:
+  dwg_add_handleref
+  dwg_add_STYLE
+  decode_preR13_section
+  ```
+modified: '2022-05-09T00:00:48.738283Z'
+published: '2022-05-09T00:00:48.738027Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=47319
+affected:
+- package:
+    name: libredwg
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libredwg
+  ranges:
+  - type: GIT
+    repo: https://github.com/LibreDWG/libredwg
+    events:
+    - introduced: 5514add433990bd19845bb5591b44f187487230f
+  versions:
+  - 0.12.4.4590
+  - 0.12.4.4598
+  - 0.12.4.4601
+  - 0.12.4.4606
+  - 0.12.4.4607
+  - 0.12.4.4608
+  - 0.12.4.4613
+  - 0.12.4.4615
+  - 0.12.4.4635
+  - 0.12.4.4637
+  ecosystem_specific:
+    severity: HIGH
+schema_version: 1.2.0

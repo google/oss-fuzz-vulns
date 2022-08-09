@@ -1,0 +1,32 @@
+id: OSV-2022-681
+summary: Uncaught exception in com.ctc.wstx.dtd.FullDTDReader.readContentSpec
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=49858
+
+  ```
+  Crash type: Uncaught exception
+  Crash state:
+  com.ctc.wstx.dtd.FullDTDReader.readContentSpec
+  java.base/java.io.StringReader.ensureOpen
+  java.base/java.io.StringReader.read
+  ```
+modified: '2022-08-08T00:00:07.767681Z'
+published: '2022-08-08T00:00:07.767401Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=49858
+affected:
+- package:
+    name: xstream
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/xstream
+  ranges:
+  - type: GIT
+    repo: https://github.com/x-stream/xstream.git
+    events:
+    - introduced: cf61d543f17d284a7c878c27704857e2ebc08079
+    - fixed: cf61d543f17d284a7c878c27704857e2ebc08079
+  ecosystem_specific:
+    severity: LOW
+  versions: []
+schema_version: 1.2.0
