@@ -10,7 +10,7 @@ details: |
   sprint_realloc_integer
   snprint_integer
   ```
-modified: '2022-07-03T00:08:13.010415Z'
+modified: '2022-08-10T00:20:17.544182Z'
 published: '2021-11-21T00:00:06.936393Z'
 references:
 - type: REPORT
@@ -25,10 +25,11 @@ affected:
     repo: https://github.com/net-snmp/net-snmp
     events:
     - introduced: 94436b16947c3f9039b96c4cc135507d864b422d
+    - fixed: d65925a9f8f60bb0ccabcf8701b6b07ea54cc983
   versions:
+  - v5.9.2
   - v5.9.2.pre1
   - v5.9.2.rc1
-  - v5.9.2
   - v5.9.2.rc2
   ecosystem_specific:
     severity: HIGH
