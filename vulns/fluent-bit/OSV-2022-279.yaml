@@ -8,7 +8,7 @@ details: |
   flb_pack_state_reset
   in_lib_collect
   flb_input_collector_fd
-modified: '2022-07-09T00:10:41.414107Z'
+modified: '2022-08-10T00:19:20.493407Z'
 published: '2022-03-26T00:00:22.006982Z'
 references:
 - type: REPORT
@@ -31,6 +31,7 @@ affected:
   - v1.9.4
   - v1.9.5
   - v1.9.6
+  - v1.9.7
   ecosystem_specific:
     severity: HIGH
 schema_version: 1.2.0
