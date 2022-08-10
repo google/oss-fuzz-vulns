@@ -1,0 +1,32 @@
+id: OSV-2022-684
+summary: Heap-buffer-overflow in pdfi_load_font
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=49847
+
+  ```
+  Crash type: Heap-buffer-overflow READ 8
+  Crash state:
+  pdfi_load_font
+  pdfi_load_dict_font
+  pdfi_Tf
+  ```
+modified: '2022-08-08T00:00:15.494606Z'
+published: '2022-08-08T00:00:15.494327Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=49847
+affected:
+- package:
+    name: ghostscript
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/ghostscript
+  ranges:
+  - type: GIT
+    repo: git://git.ghostscript.com/ghostpdl.git
+    events:
+    - introduced: 7409743d98cab135da537bce11103a8416d77f60
+    - fixed: 1d4dbb3178e6d1842b635aecc6c9eb8564a838e4
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.2.0

@@ -1,0 +1,33 @@
+id: OSV-2022-616
+summary: Timeout in JsonFuzzer
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=49401
+
+  ```
+  Crash type: Timeout
+  Crash state:
+  JsonFuzzer
+  ```
+modified: '2022-07-24T00:01:38.754608Z'
+published: '2022-07-24T00:01:38.754389Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=49401
+affected:
+- package:
+    name: fastjson2
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/fastjson2
+  ranges:
+  - type: GIT
+    repo: https://github.com/alibaba/fastjson
+    events:
+    - introduced: 6841ca79104f6b78179e44b56ae9a033b8131c70
+    - fixed: bcd0505019425b2b8a7146828bec51739b933318
+  versions:
+  - 1.2.80
+  ecosystem_specific:
+    severity: LOW
+  database_specific:
+    introduced_range: 6460f65759694488446a51e79f74c742290fc13e:e14b1e4a2c8d55ccc6b7d3c57dd172b4176988d2
+schema_version: 1.2.0
