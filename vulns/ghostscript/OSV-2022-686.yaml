@@ -1,0 +1,32 @@
+id: OSV-2022-686
+summary: Heap-use-after-free in FT_Stream_ReadULong
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=49859
+
+  ```
+  Crash type: Heap-use-after-free READ 1
+  Crash state:
+  FT_Stream_ReadULong
+  sfnt_init_face
+  tt_face_init
+  ```
+modified: '2022-08-08T00:01:45.109483Z'
+published: '2022-08-08T00:01:45.109242Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=49859
+affected:
+- package:
+    name: ghostscript
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/ghostscript
+  ranges:
+  - type: GIT
+    repo: git://git.ghostscript.com/ghostpdl.git
+    events:
+    - introduced: 7409743d98cab135da537bce11103a8416d77f60
+    - fixed: 7c01bec1475f8b308be1efe2c2e91c9cdd73faca
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
+schema_version: 1.2.0

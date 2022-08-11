@@ -1,0 +1,32 @@
+id: OSV-2022-691
+summary: Heap-buffer-overflow in dissect_softether_host_fqdn
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=49901
+
+  ```
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  dissect_softether_host_fqdn
+  ndpi_search_softether
+  check_ndpi_detection_func
+  ```
+modified: '2022-08-10T00:00:27.762754Z'
+published: '2022-08-10T00:00:27.762520Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=49901
+affected:
+- package:
+    name: ndpi
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/ndpi
+  ranges:
+  - type: GIT
+    repo: https://github.com/ntop/nDPI.git
+    events:
+    - introduced: 346e274a1b1d713aedfc341f7d1300009f9f0e1a
+    - fixed: 59a9bdeb55fb5a712b51141bfa4492a897cda5c8
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
+schema_version: 1.2.0

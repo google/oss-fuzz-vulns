@@ -1,0 +1,32 @@
+id: OSV-2022-695
+summary: Segv on unknown address in ndpi_free_flow_data
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=49906
+
+  ```
+  Crash type: Segv on unknown address
+  Crash state:
+  ndpi_free_flow_data
+  ndpi_flow_free
+  process_ndpi_collected_info
+  ```
+modified: '2022-08-10T00:00:51.473267Z'
+published: '2022-08-10T00:00:51.473017Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=49906
+affected:
+- package:
+    name: ndpi
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/ndpi
+  ranges:
+  - type: GIT
+    repo: https://github.com/ntop/nDPI.git
+    events:
+    - introduced: c0732eda45884de91e0c221e9dd23eeec364bf68
+    - fixed: 540848c254ab4f8f89b6cfab03269ed8dc4dc887
+  ecosystem_specific:
+    severity: null
+  versions: []
+schema_version: 1.2.0
