@@ -10,7 +10,7 @@ details: |
   Assimp::ASE::Parser::Parse
   Assimp::ASEImporter::InternReadFile
   ```
-modified: '2022-05-12T00:01:58.200890Z'
+modified: '2022-08-13T00:17:10.220371Z'
 published: '2022-05-12T00:01:58.200644Z'
 references:
 - type: REPORT
@@ -25,6 +25,7 @@ affected:
     repo: https://github.com/assimp/assimp.git
     events:
     - introduced: 8a975549a99bd21b7a2c09cc37b73e52a3919fed
+    - fixed: 4b85eb59c23bd87bf64ec0e84c93c2be5eda4898
   versions:
   - 5.2.0
   - v5.1.0
