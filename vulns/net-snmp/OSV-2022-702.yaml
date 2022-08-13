@@ -1,0 +1,32 @@
+id: OSV-2022-702
+summary: Heap-double-free in ada_fuzz_header.h
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=50042
+
+  ```
+  Crash type: Heap-double-free
+  Crash state:
+  ada_fuzz_header.h
+  snmp_free_pdu
+  snmp_api_fuzzer.c
+  ```
+modified: '2022-08-12T00:00:49.994628Z'
+published: '2022-08-12T00:00:49.994375Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=50042
+affected:
+- package:
+    name: net-snmp
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/net-snmp
+  ranges:
+  - type: GIT
+    repo: https://github.com/net-snmp/net-snmp
+    events:
+    - introduced: 041396bce75d3780a0b5a808eb33310f49b00601
+    - fixed: 90aa2c37dc6a8bc280951ec6b6efe9714b0ef4de
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
+schema_version: 1.2.0
