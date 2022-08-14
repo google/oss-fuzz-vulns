@@ -1,0 +1,34 @@
+id: OSV-2022-626
+summary: Heap-buffer-overflow in Write16bitTables
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=49461
+
+  ```
+  Crash type: Heap-buffer-overflow READ 2
+  Crash state:
+  Write16bitTables
+  Type_LUT16_Write
+  SaveTags
+  ```
+modified: '2022-07-26T00:00:10.915434Z'
+published: '2022-07-26T00:00:10.915179Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=49461
+affected:
+- package:
+    name: lcms
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/lcms
+  ranges:
+  - type: GIT
+    repo: https://github.com/mm2/Little-CMS.git
+    events:
+    - introduced: 1394d740d96886b501e0ad04fe926a72eca3f01c
+    - fixed: 959064542d2ea82f97bb409dda4df471efc53feb
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: a9796f61c682f5320ff572c888062ee34315b836:6849af422fd296cb8ce160d376978ef5d79f9417
+  versions: []
+schema_version: 1.2.0
