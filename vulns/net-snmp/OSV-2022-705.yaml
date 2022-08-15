@@ -1,0 +1,30 @@
+id: OSV-2022-705
+summary: Heap-buffer-overflow in netsnmp_memdup
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=50096
+
+  ```
+  Crash type: Heap-buffer-overflow READ {*}
+  Crash state:
+  netsnmp_memdup
+  snmp_api_fuzzer.c
+  ```
+modified: '2022-08-13T00:00:24.016796Z'
+published: '2022-08-13T00:00:24.016550Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=50096
+affected:
+- package:
+    name: net-snmp
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/net-snmp
+  ranges:
+  - type: GIT
+    repo: https://github.com/net-snmp/net-snmp
+    events:
+    - introduced: 90aa2c37dc6a8bc280951ec6b6efe9714b0ef4de
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.2.0
