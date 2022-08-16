@@ -1,0 +1,32 @@
+id: OSV-2022-696
+summary: Use-of-uninitialized-value in mix_add_scale_stride
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=49921
+
+  ```
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  mix_add_scale_stride
+  cras_mix_add_scale_stride
+  cras_audio_area_copy
+  ```
+modified: '2022-08-10T00:02:04.821702Z'
+published: '2022-08-10T00:02:04.821394Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=49921
+affected:
+- package:
+    name: cras
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/cras
+  ranges:
+  - type: GIT
+    repo: https://chromium.googlesource.com/chromiumos/third_party/adhd
+    events:
+    - introduced: 3bb2705695cea964fd475bde1601fa3cd84a49ef
+    - fixed: 014771d61a77dfdd8ad623a0138c9e90b9f3ee35
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.2.0
