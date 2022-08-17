@@ -1,0 +1,32 @@
+id: OSV-2022-710
+summary: Heap-buffer-overflow in pdfi_read_cff_dict
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=50099
+
+  ```
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  pdfi_read_cff_dict
+  pdfi_read_cff_dict
+  pdfi_read_cff_font
+  ```
+modified: '2022-08-14T00:00:54.497510Z'
+published: '2022-08-14T00:00:54.497240Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=50099
+affected:
+- package:
+    name: ghostscript
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/ghostscript
+  ranges:
+  - type: GIT
+    repo: git://git.ghostscript.com/ghostpdl.git
+    events:
+    - introduced: bfee68bd4724373e41301e22c4d8e66c23a63a1a
+    - fixed: 2b3b754fe12591dc26309fc92fcefac12ca5a6af
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.2.0
