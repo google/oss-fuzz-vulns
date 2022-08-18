@@ -1,0 +1,32 @@
+id: OSV-2022-719
+summary: Stack-buffer-overflow in gs_glyph_data_from_string
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=50267
+
+  ```
+  Crash type: Stack-buffer-overflow WRITE 8
+  Crash state:
+  gs_glyph_data_from_string
+  copied_type1_subr_data
+  gs_type2_interpret
+  ```
+modified: '2022-08-17T00:01:47.335210Z'
+published: '2022-08-17T00:01:47.334986Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=50267
+affected:
+- package:
+    name: ghostscript
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/ghostscript
+  ranges:
+  - type: GIT
+    repo: git://git.ghostscript.com/ghostpdl.git
+    events:
+    - introduced: bb2fd595dd08728323a86a24e0f5643383c92d03
+    - fixed: fc370414d680550407d6cb2a8f692c755fa02f6d
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
+schema_version: 1.2.0
