@@ -10,7 +10,7 @@ details: |
   RunIns
   Instance_Reset
   ```
-modified: '2022-07-01T00:01:43.353577Z'
+modified: '2022-08-18T00:19:23.861174Z'
 published: '2022-07-01T00:01:43.353257Z'
 references:
 - type: REPORT
@@ -25,7 +25,8 @@ affected:
     repo: git://git.ghostscript.com/ghostpdl.git
     events:
     - introduced: 441c9e3a4ca08fa7f7c00063af33196b0d88ebaf
+  versions:
+  - ghostpdl-10.0.0_release_tests_001
   ecosystem_specific:
     severity: MEDIUM
-  versions: []
 schema_version: 1.2.0
