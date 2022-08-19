@@ -1,0 +1,32 @@
+id: OSV-2022-726
+summary: Heap-use-after-free in gx_device_forward_finalize
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=50307
+
+  ```
+  Crash type: Heap-use-after-free READ 8
+  Crash state:
+  gx_device_forward_finalize
+  gx_device_finalize
+  alloc_restore_step_in
+  ```
+modified: '2022-08-18T00:02:06.680485Z'
+published: '2022-08-18T00:02:06.680237Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=50307
+affected:
+- package:
+    name: ghostscript
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/ghostscript
+  ranges:
+  - type: GIT
+    repo: git://git.ghostscript.com/ghostpdl.git
+    events:
+    - introduced: 441c9e3a4ca08fa7f7c00063af33196b0d88ebaf
+    - fixed: 27152931e783a7dffd22443c88e0234957ca1a1c
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
+schema_version: 1.2.0

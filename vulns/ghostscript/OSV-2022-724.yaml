@@ -1,0 +1,32 @@
+id: OSV-2022-724
+summary: Stack-buffer-underflow in gs_type2_interpret
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=50306
+
+  ```
+  Crash type: Stack-buffer-underflow READ 4
+  Crash state:
+  gs_type2_interpret
+  copied_type1_glyph_outline
+  gs_default_glyph_info
+  ```
+modified: '2022-08-18T00:01:01.736604Z'
+published: '2022-08-18T00:01:01.736353Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=50306
+affected:
+- package:
+    name: ghostscript
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/ghostscript
+  ranges:
+  - type: GIT
+    repo: git://git.ghostscript.com/ghostpdl.git
+    events:
+    - introduced: 441c9e3a4ca08fa7f7c00063af33196b0d88ebaf
+    - fixed: 05efb77627aa0e05ab59ec1d6cb6988e1eb9710e
+  ecosystem_specific:
+    severity: null
+  versions: []
+schema_version: 1.2.0

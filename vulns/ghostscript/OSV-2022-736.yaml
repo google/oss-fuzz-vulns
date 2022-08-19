@@ -1,0 +1,32 @@
+id: OSV-2022-736
+summary: Heap-buffer-overflow in copy_glyph_data
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=50321
+
+  ```
+  Crash type: Heap-buffer-overflow READ {*}
+  Crash state:
+  copy_glyph_data
+  copy_glyph_type1
+  gs_copy_glyph_options
+  ```
+modified: '2022-08-19T00:00:25.579898Z'
+published: '2022-08-19T00:00:25.579648Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=50321
+affected:
+- package:
+    name: ghostscript
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/ghostscript
+  ranges:
+  - type: GIT
+    repo: git://git.ghostscript.com/ghostpdl.git
+    events:
+    - introduced: 461818d4af16839b9cd8c68320fc224f66d76691
+    - fixed: 3eb1eeac22f53b8b332e67d8ba18540f4020eadc
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.2.0
