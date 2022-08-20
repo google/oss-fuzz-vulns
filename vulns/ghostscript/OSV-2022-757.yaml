@@ -1,0 +1,33 @@
+id: OSV-2022-757
+summary: UNKNOWN WRITE in pdfi_free_array
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=50406
+
+  ```
+  Crash type: UNKNOWN WRITE
+  Crash state:
+  pdfi_free_array
+  pdfi_free_object
+  pdfi_clear_to_mark
+  ```
+modified: '2022-08-20T00:00:59.035892Z'
+published: '2022-08-20T00:00:59.035627Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=50406
+affected:
+- package:
+    name: ghostscript
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/ghostscript
+  ranges:
+  - type: GIT
+    repo: git://git.ghostscript.com/ghostpdl.git
+    events:
+    - introduced: 461818d4af16839b9cd8c68320fc224f66d76691
+    - fixed: 1d8d9605e251d1b51281efe5ef8db07640e49203
+  versions:
+  - ghostpdl-10.0.0_release_tests_001
+  ecosystem_specific:
+    severity: HIGH
+schema_version: 1.2.0

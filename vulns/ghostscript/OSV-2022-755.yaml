@@ -1,0 +1,33 @@
+id: OSV-2022-755
+summary: Global-buffer-overflow in chunk_obj_alloc
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=50436
+
+  ```
+  Crash type: Global-buffer-overflow READ 8
+  Crash state:
+  chunk_obj_alloc
+  chunk_alloc_byte_array_immovable
+  s_zlib_alloc
+  ```
+modified: '2022-08-20T00:00:49.311893Z'
+published: '2022-08-20T00:00:49.311644Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=50436
+affected:
+- package:
+    name: ghostscript
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/ghostscript
+  ranges:
+  - type: GIT
+    repo: git://git.ghostscript.com/ghostpdl.git
+    events:
+    - introduced: 3eb1eeac22f53b8b332e67d8ba18540f4020eadc
+    - fixed: 1d8d9605e251d1b51281efe5ef8db07640e49203
+  versions:
+  - ghostpdl-10.0.0_release_tests_001
+  ecosystem_specific:
+    severity: null
+schema_version: 1.2.0
