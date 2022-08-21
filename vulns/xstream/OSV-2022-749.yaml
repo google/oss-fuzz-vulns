@@ -1,0 +1,32 @@
+id: OSV-2022-749
+summary: Security exception in com.ctc.wstx.dtd.FullDTDReader.readContentSpec
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=50393
+
+  ```
+  Crash type: Security exception
+  Crash state:
+  com.ctc.wstx.dtd.FullDTDReader.readContentSpec
+  java.base/java.nio.charset.CharsetEncoder.replaceWith
+  java.base/java.nio.charset.CharsetEncoder.<init>
+  ```
+modified: '2022-08-20T00:00:08.691032Z'
+published: '2022-08-20T00:00:08.690762Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=50393
+affected:
+- package:
+    name: xstream
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/xstream
+  ranges:
+  - type: GIT
+    repo: https://github.com/x-stream/xstream.git
+    events:
+    - introduced: cf61d543f17d284a7c878c27704857e2ebc08079
+    - fixed: cf61d543f17d284a7c878c27704857e2ebc08079
+  ecosystem_specific:
+    severity: LOW
+  versions: []
+schema_version: 1.2.0
