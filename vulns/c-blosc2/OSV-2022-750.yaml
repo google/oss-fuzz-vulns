@@ -1,0 +1,33 @@
+id: OSV-2022-750
+summary: Heap-buffer-overflow in do_job
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=50433
+
+  ```
+  Crash type: Heap-buffer-overflow WRITE 4
+  Crash state:
+  do_job
+  blosc_compress_context
+  blosc2_compress_ctx
+  ```
+modified: '2022-08-20T00:00:10.770920Z'
+published: '2022-08-20T00:00:10.770653Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=50433
+affected:
+- package:
+    name: c-blosc2
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/c-blosc2
+  ranges:
+  - type: GIT
+    repo: https://github.com/Blosc/c-blosc2.git
+    events:
+    - introduced: 29d770956cab08bf610f73d23ecbf78a5d87b314
+    - fixed: 55e9b06c6191af68938dc3301b7ed4153cf86f7a
+  versions:
+  - v2.3.0
+  ecosystem_specific:
+    severity: HIGH
+schema_version: 1.2.0
