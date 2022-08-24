@@ -8,7 +8,7 @@ details: |
   resize_packet
   FuzzResizePacket
   fuzz_rfc1035.c
-modified: '2022-08-09T00:22:42.508542Z'
+modified: '2022-08-24T00:04:34.375755Z'
 published: '2022-04-09T00:01:08.603836Z'
 references:
 - type: REPORT
@@ -23,6 +23,7 @@ affected:
     repo: git://thekelleys.org.uk/dnsmasq.git
     events:
     - introduced: 96f6444958c29a670f4254722d787f328153605c
+    - fixed: 09d741f58a50f7e9ec2d6e0634f8ab5b11a7de5f
   versions:
   - v2.86
   - v2.86rc1
