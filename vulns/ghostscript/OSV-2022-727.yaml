@@ -1,0 +1,32 @@
+id: OSV-2022-727
+summary: Heap-buffer-overflow in s_file_write_flush
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=50370
+
+  ```
+  Crash type: Heap-buffer-overflow READ 8
+  Crash state:
+  s_file_write_flush
+  sclose
+  stream_finalize
+  ```
+modified: '2022-08-19T00:00:07.551246Z'
+published: '2022-08-19T00:00:07.550998Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=50370
+affected:
+- package:
+    name: ghostscript
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/ghostscript
+  ranges:
+  - type: GIT
+    repo: git://git.ghostscript.com/ghostpdl.git
+    events:
+    - introduced: 441c9e3a4ca08fa7f7c00063af33196b0d88ebaf
+    - fixed: c43a98a5ad48b9160d0b3741fe7319f4f580e26b
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.2.0
