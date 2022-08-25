@@ -10,7 +10,7 @@ details: |
   microsoft_demangle
   r_bin_demangle_msvc
   ```
-modified: '2022-08-02T00:13:27.542490Z'
+modified: '2022-08-25T03:31:16.805065Z'
 published: '2021-10-28T00:01:38.205304Z'
 references:
 - type: REPORT
@@ -25,6 +25,7 @@ affected:
     repo: https://github.com/radareorg/radare2
     events:
     - introduced: 775f2b3d8d6d44f3312f9911dcf70b203268f387
+    - fixed: a31394b39e6194a8ecd6c83e53c658f704a315fb
   versions:
   - 4.4.0
   - 4.5.1
@@ -41,18 +42,16 @@ affected:
   - 5.5.0
   - 5.5.2
   - 5.5.4
-  - continuous
-  - release-5.0.0
   - 5.6.0
   - 5.6.2
   - 5.6.4
   - 5.6.6
   - 5.6.8
-  - wip
   - 5.7.0
   - 5.7.2
   - 5.7.4
   - 5.7.6
+  - release-5.0.0
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.2.0
