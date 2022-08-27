@@ -1,0 +1,32 @@
+id: OSV-2022-648
+summary: Use-of-uninitialized-value in _LUTeval16
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=49549
+
+  ```
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  _LUTeval16
+  cmsCreateExtendedTransform
+  cmsCreateTransform
+  ```
+modified: '2022-07-29T00:00:36.357246Z'
+published: '2022-07-29T00:00:36.357Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=49549
+affected:
+- package:
+    name: lcms
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/lcms
+  ranges:
+  - type: GIT
+    repo: https://github.com/mm2/Little-CMS.git
+    events:
+    - introduced: a9796f61c682f5320ff572c888062ee34315b836
+    - fixed: f3f6b7bceb629bc4b6f1dea3e45b44dc3f8674af
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.2.0

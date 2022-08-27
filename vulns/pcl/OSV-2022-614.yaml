@@ -1,0 +1,33 @@
+id: OSV-2022-614
+summary: UNKNOWN READ in std::__1::basic_filebuf<char, std::__1::char_traits<char>
+  >::underflow
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=49381
+
+  ```
+  Crash type: UNKNOWN READ
+  Crash state:
+  std::__1::basic_filebuf<char, std::__1::char_traits<char> >::underflow
+  std::__1::basic_streambuf<char, std::__1::char_traits<char> >::uflow
+  std::__1::basic_streambuf<char, std::__1::char_traits<char> >::xsgetn
+  ```
+modified: '2022-07-24T00:01:03.302538Z'
+published: '2022-07-24T00:01:03.302330Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=49381
+affected:
+- package:
+    name: pcl
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/pcl
+  ranges:
+  - type: GIT
+    repo: https://github.com/PointCloudLibrary/pcl
+    events:
+    - introduced: 7d52b107223ef8adec990608e8685392b48d79c6
+    - fixed: 10e8736b6ae7194e0b11f998ca6b8cae6b0664c1
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
+schema_version: 1.2.0
