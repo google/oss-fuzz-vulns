@@ -1,0 +1,32 @@
+id: OSV-2022-711
+summary: Heap-buffer-overflow in _cmsMAT3per
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=50115
+
+  ```
+  Crash type: Heap-buffer-overflow READ 8
+  Crash state:
+  _cmsMAT3per
+  OptimizeMatrixShaper
+  _cmsOptimizePipeline
+  ```
+modified: '2022-08-14T00:01:56.994936Z'
+published: '2022-08-14T00:01:56.994605Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=50115
+affected:
+- package:
+    name: lcms
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/lcms
+  ranges:
+  - type: GIT
+    repo: https://github.com/mm2/Little-CMS.git
+    events:
+    - introduced: a9796f61c682f5320ff572c888062ee34315b836
+    - fixed: f3f6b7bceb629bc4b6f1dea3e45b44dc3f8674af
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.2.0

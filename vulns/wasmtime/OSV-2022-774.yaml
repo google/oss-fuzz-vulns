@@ -1,0 +1,30 @@
+id: OSV-2022-774
+summary: Segv on unknown address in cranelift_filetests::function_runner::CompiledFunction::call::ha6b9162cd2eNUMBER
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=50556
+
+  ```
+  Crash type: Segv on unknown address
+  Crash state:
+  cranelift_filetests::function_runner::CompiledFunction::call::ha6b9162cd2eNUMBER
+  ```
+modified: '2022-08-24T00:00:24.236021Z'
+published: '2022-08-24T00:00:24.235770Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=50556
+affected:
+- package:
+    name: wasmtime
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/wasmtime
+  ranges:
+  - type: GIT
+    repo: https://github.com/bytecodealliance/wasmtime
+    events:
+    - introduced: cee4b209f346ea279490268fe434dc52d0e0680c
+  versions:
+  - dev
+  ecosystem_specific:
+    severity: null
+schema_version: 1.2.0
