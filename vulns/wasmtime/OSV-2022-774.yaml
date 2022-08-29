@@ -23,8 +23,8 @@ affected:
     repo: https://github.com/bytecodealliance/wasmtime
     events:
     - introduced: cee4b209f346ea279490268fe434dc52d0e0680c
-  versions:
-  - dev
+    - fixed: 573ae0c60bb20e010d74ba7fd2e7e59247f3385d
   ecosystem_specific:
     severity: null
+  versions: []
 schema_version: 1.2.0
