@@ -1,0 +1,35 @@
+id: OSV-2022-798
+summary: Heap-use-after-free in cmsFreeNamedColorList
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=50665
+
+  ```
+  Crash type: Heap-use-after-free READ 8
+  Crash state:
+  cmsFreeNamedColorList
+  Type_NamedColor_Free
+  cmsCloseProfile
+  ```
+modified: '2022-08-28T00:00:53.745986Z'
+published: '2022-08-28T00:00:53.745737Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=50665
+affected:
+- package:
+    name: lcms
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/lcms
+  ranges:
+  - type: GIT
+    repo: https://github.com/mm2/Little-CMS.git
+    events:
+    - introduced: ab5029d60d5dc41a414e4acc472d024e3449d36a
+    - fixed: 617f3ae6f95cd448de7b34caef00ff51de4cf57f
+  versions:
+  - lcms2.13
+  - lcms2.13.1
+  - lcms2.13rc2
+  ecosystem_specific:
+    severity: HIGH
+schema_version: 1.2.0
