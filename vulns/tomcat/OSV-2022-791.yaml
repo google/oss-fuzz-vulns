@@ -1,0 +1,34 @@
+id: OSV-2022-791
+summary: Security exception in java.base/java.util.Arrays.copyOf
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=50631
+
+  ```
+  Crash type: Security exception
+  Crash state:
+  java.base/java.util.Arrays.copyOf
+  java.base/java.lang.AbstractStringBuilder.ensureCapacityInternal
+  java.base/java.lang.AbstractStringBuilder.append
+  ```
+modified: '2022-08-27T00:00:53.774914Z'
+published: '2022-08-27T00:00:53.774660Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=50631
+affected:
+- package:
+    name: tomcat
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/tomcat
+  ranges:
+  - type: GIT
+    repo: https://github.com/apache/tomcat
+    events:
+    - introduced: 00c6bc21a05a387114d4f26002d251f5be9dab0b
+    - fixed: 054abe0fab178bfdfab005ae75f2317e7ca80151
+  ecosystem_specific:
+    severity: LOW
+  database_specific:
+    fixed_range: d243251948a351224f2e6d9d04264769cac27fbe:054abe0fab178bfdfab005ae75f2317e7ca80151
+  versions: []
+schema_version: 1.2.0

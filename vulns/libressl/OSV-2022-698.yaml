@@ -1,0 +1,35 @@
+id: OSV-2022-698
+summary: Heap-buffer-overflow in i2c_ASN1_INTEGER
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=49963
+
+  ```
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  i2c_ASN1_INTEGER
+  bn_i2c
+  asn1_ex_i2c
+  ```
+modified: '2022-08-11T00:02:06.232158Z'
+published: '2022-08-11T00:02:06.231896Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=49963
+affected:
+- package:
+    name: libressl
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libressl
+  ranges:
+  - type: GIT
+    repo: https://github.com/libressl-portable/portable.git
+    events:
+    - introduced: cc613e785e9272db37991ec35785d78f50e0ca15
+    - fixed: d46266c297dc0cf9a187203a3f329d6a25bf2de6
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: 5f5feb2bbc94a8cd8d101b6245c0d9b50f2a15ce:e7c48bb560efd49ace610f9f8c516728366435f3
+    fixed_range: 08895e84976efd5f63bc515856efe43aad5abffb:d46266c297dc0cf9a187203a3f329d6a25bf2de6
+  versions: []
+schema_version: 1.2.0
