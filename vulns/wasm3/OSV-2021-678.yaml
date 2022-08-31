@@ -10,7 +10,7 @@ details: |
   Compile_LoopOrBlock
   CompileBlockStatements
   ```
-modified: '2022-04-13T03:04:30.625906Z'
+modified: '2022-08-31T00:21:39.438080Z'
 published: '2021-04-23T00:00:13.900793Z'
 references:
 - type: REPORT
@@ -24,6 +24,7 @@ affected:
     repo: https://github.com/wasm3/wasm3
     events:
     - introduced: ef7c7f3a7578b9ed362cfbd0d1c6f065678df531
+    - fixed: 321ba58316e77b5f4d977897aaa4bdbe43a5e38b
   versions:
   - v0.5.0
   ecosystem_specific:
