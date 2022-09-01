@@ -10,7 +10,7 @@ details: |
   java.base/java.lang.AbstractStringBuilder.ensureCapacityInternal
   java.base/java.lang.AbstractStringBuilder.append
   ```
-modified: '2022-08-27T00:00:53.774914Z'
+modified: '2022-09-01T00:16:14.955289Z'
 published: '2022-08-27T00:00:53.774660Z'
 references:
 - type: REPORT
@@ -26,6 +26,8 @@ affected:
     events:
     - introduced: 00c6bc21a05a387114d4f26002d251f5be9dab0b
     - fixed: 054abe0fab178bfdfab005ae75f2317e7ca80151
+    - introduced: de334718a7c78a4418286d617064b43b291597a2
+    - fixed: fb4d9198de7bd8b2ad144c6aa728de874448d278
   ecosystem_specific:
     severity: LOW
   database_specific:
