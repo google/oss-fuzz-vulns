@@ -8,7 +8,7 @@ details: |
   void unwindstack::Symbols::BuildRemapTable<Elf64_Sym>
   bool unwindstack::Symbols::GetName<Elf64_Sym>
   unwindstack::ElfInterfaceImpl<unwindstack::ElfTypes64>::GetFunctionName
-modified: '2022-08-30T00:24:39.093213Z'
+modified: '2022-09-01T00:13:48.044945Z'
 published: '2022-04-11T00:00:39.202876Z'
 references:
 - type: REPORT
@@ -355,6 +355,30 @@ affected:
   - platform-tools-33.0.2
   - platform-tools-33.0.3
   - studio-2021.2.1-patch2
+  - aml_doc_310851020
+  - aml_mpr_311911090
+  - aml_sdk_311710000
+  - aml_tet_311811050
+  - aml_tz2_303200001
+  - aml_tz3_311312010
+  - aml_wif_311811030
+  - android-mainline-12.0.0_r109
+  - android-mainline-12.0.0_r112
+  - android-mainline-12.0.0_r81
+  - t_frc_adb_330444000
+  - t_frc_art_330443060
+  - t_frc_cbr_330443000
+  - t_frc_con_330443020
+  - t_frc_ext_330443000
+  - t_frc_ips_330443010
+  - t_frc_med_330443030
+  - t_frc_net_330443000
+  - t_frc_neu_330443000
+  - t_frc_per_330444010
+  - t_frc_res_330443000
+  - t_frc_sch_330443010
+  - t_frc_sta_330443010
+  - t_frc_swc_330443010
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.2.0
