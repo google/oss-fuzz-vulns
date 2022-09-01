@@ -10,7 +10,7 @@ details: |
   Splash::drawSpan
   Splash::fillWithPattern
   ```
-modified: '2022-08-02T00:11:06.572999Z'
+modified: '2022-09-01T00:09:08.147011Z'
 published: '2021-01-18T00:00:08.864783Z'
 references:
 - type: REPORT
@@ -48,5 +48,6 @@ affected:
   - poppler-22.06.0
   - poppler-22.07.0
   - poppler-22.08.0
+  - poppler-22.09.0
   ecosystem_specific:
     severity: MEDIUM
