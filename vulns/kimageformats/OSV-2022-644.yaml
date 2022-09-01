@@ -1,0 +1,67 @@
+id: OSV-2022-644
+summary: Global-buffer-overflow in decode_CABAC_bit
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=49538
+
+  ```
+  Crash type: Global-buffer-overflow READ 1
+  Crash state:
+  decode_CABAC_bit
+  read_coding_unit
+  read_coding_quadtree
+  ```
+modified: '2022-07-28T00:00:54.618774Z'
+published: '2022-07-28T00:00:54.618523Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=49538
+affected:
+- package:
+    name: kimageformats
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/kimageformats
+  ranges:
+  - type: GIT
+    repo: https://invent.kde.org/frameworks/kimageformats.git
+    events:
+    - introduced: ca52d4ddf540cc731d0f31dbccc1897f7e6d9db4
+    - fixed: 43543f96bc45732a55aca2aa073d6d26ef57821c
+  versions:
+  - v5.80.0
+  - v5.80.0-rc1
+  - v5.81.0
+  - v5.81.0-rc1
+  - v5.81.0-rc2
+  - v5.82.0-rc1
+  - v5.83.0
+  - v5.83.0-rc1
+  - v5.84.0-rc1
+  - v5.85.0
+  - v5.85.0-rc1
+  - v5.86.0
+  - v5.86.0-rc1
+  - v5.87.0
+  - v5.87.0-rc1
+  - v5.88.0
+  - v5.88.0-rc1
+  - v5.89.0
+  - v5.89.0-rc1
+  - v5.90.0
+  - v5.90.0-rc1
+  - v5.91.0
+  - v5.91.0-rc1
+  - v5.92.0
+  - v5.92.0-rc1
+  - v5.93.0
+  - v5.93.0-rc1
+  - v5.94.0
+  - v5.94.0-rc1
+  - v5.95.0
+  - v5.95.0-rc1
+  - v5.96.0
+  - v5.96.0-rc1
+  - v5.97.0
+  - v5.97.0-rc1
+  ecosystem_specific:
+    severity: null
+schema_version: 1.2.0

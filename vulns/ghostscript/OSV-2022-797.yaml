@@ -1,0 +1,34 @@
+id: OSV-2022-797
+summary: Heap-buffer-overflow in Ins_NPUSHB
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=50656
+
+  ```
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  Ins_NPUSHB
+  RunIns
+  Instance_Reset
+  ```
+modified: '2022-08-28T00:00:50.707704Z'
+published: '2022-08-28T00:00:50.707451Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=50656
+affected:
+- package:
+    name: ghostscript
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/ghostscript
+  ranges:
+  - type: GIT
+    repo: git://git.ghostscript.com/ghostpdl.git
+    events:
+    - introduced: 441c9e3a4ca08fa7f7c00063af33196b0d88ebaf
+    - fixed: ed51807f5c7d5208c703de3ab60cff49adf96328
+  versions:
+  - ghostpdl-10.0.0_release_tests_002
+  - ghostpdl-10.0.0rc1
+  ecosystem_specific:
+    severity: MEDIUM
+schema_version: 1.2.0

@@ -1,0 +1,34 @@
+id: OSV-2022-805
+summary: Global-buffer-overflow in get_unpack_proc
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=50731
+
+  ```
+  Crash type: Global-buffer-overflow READ 8
+  Crash state:
+  get_unpack_proc
+  xps_begin_typed_image
+  default_subclass_begin_typed_image
+  ```
+modified: '2022-08-30T00:01:51.885434Z'
+published: '2022-08-30T00:01:51.885191Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=50731
+affected:
+- package:
+    name: ghostscript
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/ghostscript
+  ranges:
+  - type: GIT
+    repo: git://git.ghostscript.com/ghostpdl.git
+    events:
+    - introduced: ee290c1aebaa172c812f21024af2dbf721fa5865
+    - fixed: 593cc12df5834bf0734b4196d7447e02414f5ba3
+  ecosystem_specific:
+    severity: null
+  database_specific:
+    introduced_range: 19c421c10385b89da8564d664c2c5679c7558035:1f56d7736465c45a2785d6bb3db1c37289599b40
+  versions: []
+schema_version: 1.2.0
