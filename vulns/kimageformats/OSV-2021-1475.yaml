@@ -10,7 +10,7 @@ details: |
   fill_luma_motion_vector_predictors
   motion_vectors_and_ref_indices
   ```
-modified: '2022-08-14T00:14:28.330102Z'
+modified: '2022-09-01T00:08:33.459779Z'
 published: '2021-10-21T00:01:39.891638Z'
 references:
 - type: REPORT
@@ -25,6 +25,7 @@ affected:
     repo: https://invent.kde.org/frameworks/kimageformats.git
     events:
     - introduced: ca52d4ddf540cc731d0f31dbccc1897f7e6d9db4
+    - fixed: 43543f96bc45732a55aca2aa073d6d26ef57821c
   versions:
   - v5.80.0
   - v5.80.0-rc1
@@ -47,19 +48,19 @@ affected:
   - v5.89.0-rc1
   - v5.90.0
   - v5.90.0-rc1
-  - v5.91.0-rc1
   - v5.91.0
-  - v5.92.0-rc1
+  - v5.91.0-rc1
   - v5.92.0
-  - v5.93.0-rc1
+  - v5.92.0-rc1
   - v5.93.0
-  - v5.94.0-rc1
+  - v5.93.0-rc1
   - v5.94.0
-  - v5.95.0-rc1
+  - v5.94.0-rc1
   - v5.95.0
-  - v5.96.0-rc1
+  - v5.95.0-rc1
   - v5.96.0
-  - v5.97.0-rc1
+  - v5.96.0-rc1
   - v5.97.0
+  - v5.97.0-rc1
   ecosystem_specific:
     severity: MEDIUM
