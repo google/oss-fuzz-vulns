@@ -8,7 +8,7 @@ details: |
   flb_pack_state_reset
   in_lib_collect
   flb_input_collector_fd
-modified: '2022-08-10T00:19:20.493407Z'
+modified: '2022-09-03T00:24:48.577747Z'
 published: '2022-03-26T00:00:22.006982Z'
 references:
 - type: REPORT
@@ -23,6 +23,9 @@ affected:
     repo: https://github.com/fluent/fluent-bit/
     events:
     - introduced: 5a0005dc5c19ee2992c837f2f6fd9986f8cf6f4f
+    - fixed: b71a561cd2bf3cdc40335c0f4c701a5be070c8d3
+    - fixed: 97a5e9dcf3f9d2e2107660cf73f6ef253fd227cd
+    - fixed: 49a63830719f350c299e697f2339190b7917b2a9
   versions:
   - unstable-master
   - v1.9.1
