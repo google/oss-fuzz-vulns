@@ -10,7 +10,7 @@ details: |
   grk::GrkObjectImpl<grk::GrkImage>::release
   grk::GrkObject::unref
   ```
-modified: '2022-06-21T00:03:54.181487Z'
+modified: '2022-09-05T00:20:06.228876Z'
 published: '2021-03-11T00:00:21.858475Z'
 references:
 - type: REPORT
@@ -48,5 +48,6 @@ affected:
   - v9.7.6
   - v9.7.7
   - v9.7.8
+  - v10.0.0
   ecosystem_specific:
     severity: HIGH
