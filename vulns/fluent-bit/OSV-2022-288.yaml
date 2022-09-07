@@ -7,7 +7,7 @@ details: |
   Crash state:
   flb_ra_translate
   record_ac_fuzzer.c
-modified: '2022-09-04T00:07:02.169983Z'
+modified: '2022-09-07T00:34:41.520028Z'
 published: '2022-03-30T00:01:21.966556Z'
 references:
 - type: REPORT
@@ -22,6 +22,7 @@ affected:
     repo: https://github.com/fluent/fluent-bit/
     events:
     - introduced: 39b035b72761f3f4678bcce2cdb23f8b517a5665
+    - fixed: 80d028109d3a55792f3bcfcb799292891409bdab
   versions:
   - unstable-master
   - v1.9.1
