@@ -10,7 +10,7 @@ details: |
   gs_fapi_prepare_font
   gs_fapi_passfont
   ```
-modified: '2022-08-30T00:00:29.137349Z'
+modified: '2022-09-07T01:05:10.157021Z'
 published: '2022-08-30T00:00:29.137097Z'
 references:
 - type: REPORT
@@ -26,6 +26,8 @@ affected:
     events:
     - introduced: ee290c1aebaa172c812f21024af2dbf721fa5865
     - fixed: a8168fcba7cf6ebb82d3ec334c25cfa57062fc83
+    - introduced: eb9fc0106d45d1ce81ab2c4ae1a3d6e90a8c0164
+    - fixed: c8e196adf0cdc4fa2461fa1cdfde3dfed823d5d4
   ecosystem_specific:
     severity: null
   database_specific:
