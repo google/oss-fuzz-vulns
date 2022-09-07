@@ -10,7 +10,7 @@ details: |
   xps_begin_typed_image
   default_subclass_begin_typed_image
   ```
-modified: '2022-08-30T00:01:51.885434Z'
+modified: '2022-09-07T01:03:01.139904Z'
 published: '2022-08-30T00:01:51.885191Z'
 references:
 - type: REPORT
@@ -26,6 +26,8 @@ affected:
     events:
     - introduced: ee290c1aebaa172c812f21024af2dbf721fa5865
     - fixed: 593cc12df5834bf0734b4196d7447e02414f5ba3
+    - introduced: eb9fc0106d45d1ce81ab2c4ae1a3d6e90a8c0164
+    - fixed: 9f8b92bf33fb0bdd20ac2ce2e1164dbce30ac5fb
   ecosystem_specific:
     severity: null
   database_specific:
