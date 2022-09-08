@@ -1,0 +1,70 @@
+id: OSV-2022-531
+summary: Heap-buffer-overflow in perfetto::trace_processor::TrackEventParser::ParseTrackDescriptor
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=48684
+
+  ```
+  Crash type: Heap-buffer-overflow WRITE 4
+  Crash state:
+  perfetto::trace_processor::TrackEventParser::ParseTrackDescriptor
+  perfetto::trace_processor::TrackEventModule::ParsePacket
+  perfetto::trace_processor::ProtoTraceParser::ParseTracePacketImpl
+  ```
+modified: '2022-07-05T00:00:15.936663Z'
+published: '2022-07-05T00:00:15.936407Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=48684
+affected:
+- package:
+    name: perfetto
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/perfetto
+  ranges:
+  - type: GIT
+    repo: https://android.googlesource.com/platform/external/perfetto/
+    events:
+    - introduced: 8209fb9b9a4156232aa87ad4621e541bfb777ec1
+    - fixed: d824b5ee6b52575d449e98b590744641136087d1
+  versions:
+  - android-13.0.0_r1
+  - android-13.0.0_r2
+  - android-13.0.0_r3
+  - android-cts-13.0_r1
+  - android-mainline-12.0.0_r100
+  - android-mainline-12.0.0_r122
+  - android-mainline-12.0.0_r49
+  - android-mainline-12.0.0_r59
+  - android-mainline-12.0.0_r63
+  - android-mainline-12.0.0_r70
+  - android-mainline-12.0.0_r77
+  - android-mainline-12.0.0_r99
+  - android-security-13.0.0_r1
+  - android-vts-13.0_r1
+  - platform-tools-29.0.1
+  - platform-tools-29.0.2
+  - platform-tools-29.0.3
+  - platform-tools-29.0.4
+  - platform-tools-29.0.5
+  - platform-tools-29.0.6
+  - platform-tools-30.0.0
+  - platform-tools-30.0.1
+  - platform-tools-30.0.2
+  - platform-tools-30.0.3
+  - platform-tools-30.0.4
+  - platform-tools-30.0.5
+  - platform-tools-31.0.0
+  - platform-tools-31.0.1
+  - platform-tools-31.0.2
+  - platform-tools-31.0.3
+  - platform-tools-32.0.0
+  - platform-tools-33.0.0
+  - platform-tools-33.0.1
+  - platform-tools-33.0.2
+  - platform-tools-33.0.3
+  - v27.0
+  - v27.1
+  - v28.0
+  ecosystem_specific:
+    severity: HIGH
+schema_version: 1.2.0

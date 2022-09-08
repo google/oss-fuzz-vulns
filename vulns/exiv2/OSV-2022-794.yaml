@@ -1,0 +1,33 @@
+id: OSV-2022-794
+summary: Heap-buffer-overflow in std::__1::basic_string<char, std::__1::char_traits<char>,
+  std::__1::allocator<ch
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=50629
+
+  ```
+  Crash type: Heap-buffer-overflow READ 5
+  Crash state:
+  std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<ch
+  Exiv2::QuickTimeVideo::previewTagDecoder
+  Exiv2::QuickTimeVideo::tagDecoder
+  ```
+modified: '2022-08-27T00:02:10.620143Z'
+published: '2022-08-27T00:02:10.619878Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=50629
+affected:
+- package:
+    name: exiv2
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/exiv2
+  ranges:
+  - type: GIT
+    repo: https://github.com/Exiv2/exiv2
+    events:
+    - introduced: 0a948c6a7d7538e27feef17816406cc5d7769a78
+    - fixed: 337fe1854ff17f169032e993789a24bbb53579c4
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.2.0

@@ -1,0 +1,26 @@
+id: OSV-2022-840
+summary: Negative-size-param in wc_Sha3_256_Final
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=50953
+
+  ```
+  Crash type: Negative-size-param
+  Crash state:
+  wc_Sha3_256_Final
+  wc_Hash
+  wc_RsaPad_ex
+  ```
+modified: '2022-09-05T00:00:13.232811Z'
+published: '2022-09-05T00:00:13.232523Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=50953
+affected:
+- package:
+    name: wolfssl
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/wolfssl
+  ecosystem_specific:
+    severity: null
+  versions: []
+schema_version: 1.2.0

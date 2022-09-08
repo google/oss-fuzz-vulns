@@ -1,0 +1,35 @@
+id: OSV-2022-751
+summary: Heap-buffer-overflow in gs_type2_interpret
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=50448
+
+  ```
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  gs_type2_interpret
+  copied_type1_glyph_outline
+  gs_default_glyph_info
+  ```
+modified: '2022-08-20T00:00:12.956299Z'
+published: '2022-08-20T00:00:12.956053Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=50448
+affected:
+- package:
+    name: ghostscript
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/ghostscript
+  ranges:
+  - type: GIT
+    repo: git://git.ghostscript.com/ghostpdl.git
+    events:
+    - introduced: 441c9e3a4ca08fa7f7c00063af33196b0d88ebaf
+    - fixed: 36544f71d8742ba213e6ce003e52a81db3a89ba9
+    - fixed: a6ed2d417205ddf4194a2385402a5c97fe991013
+  versions:
+  - ghostpdl-10.0.0_release_tests_002
+  - ghostpdl-10.0.0rc1
+  ecosystem_specific:
+    severity: MEDIUM
+schema_version: 1.2.0

@@ -1,0 +1,31 @@
+id: OSV-2022-842
+summary: Stack-buffer-overflow in wc_Shake256_Final
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=50946
+
+  ```
+  Crash type: Stack-buffer-overflow WRITE {*}
+  Crash state:
+  wc_Shake256_Final
+  wc_ed448_sign_msg_ex
+  wc_ed448_sign_msg
+  ```
+modified: '2022-09-05T00:00:28.251363Z'
+published: '2022-09-05T00:00:28.251072Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=50946
+affected:
+- package:
+    name: wolfssl
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/wolfssl
+  ranges:
+  - type: GIT
+    repo: https://github.com/wolfssl/wolfssl
+    events:
+    - introduced: aa036b6ea402e9159d2a9b12c7f05701d44a4f09
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
+schema_version: 1.2.0

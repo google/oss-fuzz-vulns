@@ -1,0 +1,32 @@
+id: OSV-2022-781
+summary: Segv on unknown address in wasmtime_runtime::traphandlers::catch_traps::call_closure::hec711b3339636b04
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=50596
+
+  ```
+  Crash type: Segv on unknown address
+  Crash state:
+  wasmtime_runtime::traphandlers::catch_traps::call_closure::hec711b3339636b04
+  wasmtime_setjmp
+  wasmtime::linker::Linker$LT$T$GT$::instantiate::h7e42baf4a320e0da
+  ```
+modified: '2022-08-26T00:00:47.982073Z'
+published: '2022-08-26T00:00:47.981814Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=50596
+affected:
+- package:
+    name: wasmtime
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/wasmtime
+  ranges:
+  - type: GIT
+    repo: https://github.com/bytecodealliance/wasmtime
+    events:
+    - introduced: cee4b209f346ea279490268fe434dc52d0e0680c
+    - fixed: dde2c5a3b6ee6caa1d597da0885613d2ce6a406a
+  ecosystem_specific:
+    severity: null
+  versions: []
+schema_version: 1.2.0

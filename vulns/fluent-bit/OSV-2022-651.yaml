@@ -1,0 +1,36 @@
+id: OSV-2022-651
+summary: Heap-use-after-free in jsmn_parse
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=49552
+
+  ```
+  Crash type: Heap-use-after-free WRITE 4
+  Crash state:
+  jsmn_parse
+  flb_json_tokenise
+  flb_pack_json_state
+  ```
+modified: '2022-07-29T00:02:00.109581Z'
+published: '2022-07-29T00:02:00.109341Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=49552
+affected:
+- package:
+    name: fluent-bit
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/fluent-bit
+  ranges:
+  - type: GIT
+    repo: https://github.com/fluent/fluent-bit/
+    events:
+    - introduced: b1662a437725410d382b5f881ace793141726853
+    - fixed: b71a561cd2bf3cdc40335c0f4c701a5be070c8d3
+    - fixed: 49a63830719f350c299e697f2339190b7917b2a9
+    - fixed: 97a5e9dcf3f9d2e2107660cf73f6ef253fd227cd
+  versions:
+  - v1.9.6
+  - v1.9.7
+  ecosystem_specific:
+    severity: HIGH
+schema_version: 1.2.0

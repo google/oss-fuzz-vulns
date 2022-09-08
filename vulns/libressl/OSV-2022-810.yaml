@@ -1,0 +1,34 @@
+id: OSV-2022-810
+summary: Stack-buffer-overflow in CBS_stow
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=50791
+
+  ```
+  Crash type: Stack-buffer-overflow READ {*}
+  Crash state:
+  CBS_stow
+  i2c_ASN1_INTEGER
+  asn1_ex_i2c
+  ```
+modified: '2022-09-01T00:02:14.948162Z'
+published: '2022-09-01T00:02:14.947906Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=50791
+affected:
+- package:
+    name: libressl
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libressl
+  ranges:
+  - type: GIT
+    repo: https://github.com/libressl-portable/portable.git
+    events:
+    - introduced: ed9359727a502d5ec5162e4017f76ffccf6aaa79
+    - fixed: d46266c297dc0cf9a187203a3f329d6a25bf2de6
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: 08895e84976efd5f63bc515856efe43aad5abffb:d46266c297dc0cf9a187203a3f329d6a25bf2de6
+  versions: []
+schema_version: 1.2.0

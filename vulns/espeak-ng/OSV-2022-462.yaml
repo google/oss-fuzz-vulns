@@ -1,0 +1,33 @@
+id: OSV-2022-462
+summary: Stack-buffer-overflow in strcat
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=47841
+
+  ```
+  Crash type: Stack-buffer-overflow WRITE 5
+  Crash state:
+  strcat
+  TranslateNumber
+  TranslateWord3
+  ```
+modified: '2022-06-07T00:01:47.521754Z'
+published: '2022-06-07T00:01:47.521548Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=47841
+affected:
+- package:
+    name: espeak-ng
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/espeak-ng
+  ranges:
+  - type: GIT
+    repo: https://github.com/espeak-ng/espeak-ng
+    events:
+    - introduced: 0a713d52bbf3e061823d1a7f35e5303e7320f27a
+  versions:
+  - '1.51'
+  - 1.51.1
+  ecosystem_specific:
+    severity: HIGH
+schema_version: 1.2.0

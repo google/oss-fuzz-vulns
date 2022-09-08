@@ -1,0 +1,35 @@
+id: OSV-2022-799
+summary: Incorrect-function-pointer-type in grk::BufferedStream::read
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=50661
+
+  ```
+  Crash type: Incorrect-function-pointer-type
+  Crash state:
+  grk::BufferedStream::read
+  grk::FileFormatDecompress::read_box_hdr
+  grk::FileFormatDecompress::readHeaderProcedureImpl
+  ```
+modified: '2022-08-28T00:02:06.610220Z'
+published: '2022-08-28T00:02:06.609956Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=50661
+affected:
+- package:
+    name: grok
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/grok
+  ranges:
+  - type: GIT
+    repo: https://github.com/GrokImageCompression/grok.git
+    events:
+    - introduced: 2750da0c384c29eedd23d99ee205949447fadba8
+  versions:
+  - v10.0.0
+  - v10.0.0.debian
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: 3c74373d8cb9a4bdf0895842271a214b5527206c:9175d65fe99fc1b1faf5710c5b71e5a974c9d011
+schema_version: 1.2.0

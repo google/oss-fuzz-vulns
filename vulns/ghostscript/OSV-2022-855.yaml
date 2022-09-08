@@ -1,0 +1,34 @@
+id: OSV-2022-855
+summary: UNKNOWN WRITE in Ins_ISECT
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=51045
+
+  ```
+  Crash type: UNKNOWN WRITE
+  Crash state:
+  Ins_ISECT
+  RunIns
+  Instance_Reset
+  ```
+modified: '2022-09-07T00:01:52.675043Z'
+published: '2022-09-07T00:01:52.674790Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=51045
+affected:
+- package:
+    name: ghostscript
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/ghostscript
+  ranges:
+  - type: GIT
+    repo: git://git.ghostscript.com/ghostpdl.git
+    events:
+    - introduced: 7a57a0db991ff9d38419961717c6ce1e3678db4c
+    - fixed: f86dd15fb28335c36274d76fd98b5c8d49f4008a
+  versions:
+  - ghostpdl-10.0.0_release_tests_002
+  - ghostpdl-10.0.0rc1
+  ecosystem_specific:
+    severity: HIGH
+schema_version: 1.2.0

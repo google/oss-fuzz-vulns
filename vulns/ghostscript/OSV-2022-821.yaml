@@ -1,0 +1,35 @@
+id: OSV-2022-821
+summary: Heap-buffer-overflow in ttfOutliner__BuildGlyphOutlineAux
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=50847
+
+  ```
+  Crash type: Heap-buffer-overflow READ 4
+  Crash state:
+  ttfOutliner__BuildGlyphOutlineAux
+  ttfOutliner__Outline
+  gx_ttf_outline
+  ```
+modified: '2022-09-02T00:00:51.176468Z'
+published: '2022-09-02T00:00:51.176206Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=50847
+affected:
+- package:
+    name: ghostscript
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/ghostscript
+  ranges:
+  - type: GIT
+    repo: git://git.ghostscript.com/ghostpdl.git
+    events:
+    - introduced: 631aecc58ee697ee514fec9b49cad19f237caa20
+    - fixed: 361febcf961baa853f34909cd3925ffa7f90e7ea
+    - fixed: 9abf36b47a1293479b1da6ec5cf269448909e201
+  versions:
+  - ghostpdl-10.0.0_release_tests_002
+  - ghostpdl-10.0.0rc1
+  ecosystem_specific:
+    severity: MEDIUM
+schema_version: 1.2.0

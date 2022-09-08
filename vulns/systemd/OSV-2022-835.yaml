@@ -1,0 +1,32 @@
+id: OSV-2022-835
+summary: Use-of-uninitialized-value in json_buildv
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=50949
+
+  ```
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  json_buildv
+  json_build
+  show_boot_entries
+  ```
+modified: '2022-09-04T00:00:50.399329Z'
+published: '2022-09-04T00:00:50.399079Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=50949
+affected:
+- package:
+    name: systemd
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/systemd
+  ranges:
+  - type: GIT
+    repo: https://github.com/systemd/systemd
+    events:
+    - introduced: 7f5780edfbbeb29c7b5062194207580ce7e6ca51
+    - fixed: 69a34a4fd4202a4917d7eddb60ae6df6bc9562c0
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.2.0

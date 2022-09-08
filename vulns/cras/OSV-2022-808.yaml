@@ -1,0 +1,32 @@
+id: OSV-2022-808
+summary: Use-of-uninitialized-value in _dbus_marshal_write_basic
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=50762
+
+  ```
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  _dbus_marshal_write_basic
+  _dbus_type_writer_write_basic
+  write_basic_field
+  ```
+modified: '2022-08-31T00:02:04.144156Z'
+published: '2022-08-31T00:02:04.143893Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=50762
+affected:
+- package:
+    name: cras
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/cras
+  ranges:
+  - type: GIT
+    repo: https://chromium.googlesource.com/chromiumos/third_party/adhd
+    events:
+    - introduced: f43c1e6f45470badd40642ac54a508e9f1884154
+    - fixed: 03f6dc6195c558f7d5fdd1c12ea12b30759c8838
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.2.0

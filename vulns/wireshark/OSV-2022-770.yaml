@@ -1,0 +1,38 @@
+id: OSV-2022-770
+summary: Stack-buffer-overflow in get_transaction
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=50477
+
+  ```
+  Crash type: Stack-buffer-overflow READ 2
+  Crash state:
+  get_transaction
+  dissect_asp
+  call_dissector_work_error
+  ```
+modified: '2022-08-22T00:01:37.084285Z'
+published: '2022-08-22T00:01:37.084046Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=50477
+affected:
+- package:
+    name: wireshark
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/wireshark
+  ranges:
+  - type: GIT
+    repo: https://gitlab.com/wireshark/wireshark.git
+    events:
+    - introduced: b093b6a9928d296f6d7a610ddd22650b4043b6c6
+    - fixed: eb83e055b855d23802a25d5de6e3c8682f38fb9d
+    - fixed: 4c287a90288e1ce78aa30a13e87626ce9ef73593
+  versions:
+  - v3.7.2
+  - v3.7.3rc0
+  - v4.0.0rc0
+  - v4.0.0rc1
+  - v4.1.0rc0
+  ecosystem_specific:
+    severity: MEDIUM
+schema_version: 1.2.0

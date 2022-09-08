@@ -1,0 +1,33 @@
+id: OSV-2022-674
+summary: Use-of-uninitialized-value in cdef_filter_block_c
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=49787
+
+  ```
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  cdef_filter_block_c
+  cdef_filter_block_8x8_c
+  dav1d_cdef_brow_8bpc
+  ```
+modified: '2022-08-06T00:00:32.896358Z'
+published: '2022-08-06T00:00:32.896121Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=49787
+affected:
+- package:
+    name: dav1d
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/dav1d
+  ranges:
+  - type: GIT
+    repo: https://code.videolan.org/videolan/dav1d.git
+    events:
+    - introduced: 609fbaba84b8e15a25de9efbc8b14988be6df94d
+    - fixed: a3a55b18494f5dd1e34f289298f78ffa4f32a25d
+  versions:
+  - 1.0.0
+  ecosystem_specific:
+    severity: MEDIUM
+schema_version: 1.2.0
