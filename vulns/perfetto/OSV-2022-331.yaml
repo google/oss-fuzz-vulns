@@ -8,7 +8,7 @@ details: |
   void unwindstack::Symbols::BuildRemapTable<Elf64_Sym>
   bool unwindstack::Symbols::GetName<Elf64_Sym>
   unwindstack::ElfInterfaceImpl<unwindstack::ElfTypes64>::GetFunctionName
-modified: '2022-09-07T00:40:03.645701Z'
+modified: '2022-09-08T00:40:27.326187Z'
 published: '2022-04-11T00:00:39.202876Z'
 references:
 - type: REPORT
@@ -384,6 +384,7 @@ affected:
   - android-platform-12.0.0_r11
   - android-platform-12.1.0_r7
   - v29.0
+  - android-security-12.0.0_r39
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.2.0
