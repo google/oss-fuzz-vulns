@@ -1,0 +1,33 @@
+id: OSV-2022-857
+summary: Heap-double-free in fuzz_textfile.c
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=51072
+
+  ```
+  Crash type: Heap-double-free
+  Crash state:
+  fuzz_textfile.c
+  fuzz_textfile.c
+  ```
+modified: '2022-09-08T00:00:14.898884Z'
+published: '2022-09-08T00:00:14.898621Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=51072
+affected:
+- package:
+    name: bluez
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/bluez
+  ranges:
+  - type: GIT
+    repo: https://github.com/bluez/bluez
+    events:
+    - introduced: 3d3b1ceab9cbd7c03ba2496ec2d2e0cb951b1db2
+    - fixed: 4c8a6ba5ec7fb82e77710c69f14f774aa4c348a9
+  ecosystem_specific:
+    severity: HIGH
+  database_specific:
+    introduced_range: c96629bedbae22ffd059b842a1454254f4cd3607:4c8a6ba5ec7fb82e77710c69f14f774aa4c348a9
+  versions: []
+schema_version: 1.2.0
