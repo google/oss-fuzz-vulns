@@ -8,7 +8,7 @@ details: |
   msgpack_sbuffer_write
   flb_pack_msgpack_to_json_format
   flb_json_fuzzer.c
-modified: '2022-09-04T00:07:01.159220Z'
+modified: '2022-09-11T00:23:50.345230Z'
 published: '2022-03-06T00:00:18.911752Z'
 references:
 - type: REPORT
@@ -23,6 +23,7 @@ affected:
     repo: https://github.com/fluent/fluent-bit/
     events:
     - introduced: cae4f2ce5e225418a3f34a5a96b1424441814eac
+    - fixed: 60c668c824a46a88e332c73737423043e2ded3fa
   versions:
   - unstable-master
   - v1.9.0
