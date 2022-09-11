@@ -1,0 +1,32 @@
+id: OSV-2022-868
+summary: Heap-buffer-overflow in AffixMgr::redundant_condition
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=51124
+
+  ```
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  AffixMgr::redundant_condition
+  AffixMgr::parse_affix
+  AffixMgr::parse_file
+  ```
+modified: '2022-09-10T00:00:11.270409Z'
+published: '2022-09-10T00:00:11.270144Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=51124
+affected:
+- package:
+    name: hunspell
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/hunspell
+  ranges:
+  - type: GIT
+    repo: https://github.com/hunspell/hunspell.git
+    events:
+    - introduced: 74b08bfb8b611b7ae4bea2a6f1f74d9f73c1d0e3
+    - fixed: ebf0e2ce8d903815a6e8d828286394b6f8830860
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.2.0

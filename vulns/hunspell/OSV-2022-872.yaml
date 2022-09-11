@@ -1,0 +1,32 @@
+id: OSV-2022-872
+summary: Stack-buffer-overflow in PfxEntry::test_condition
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=51134
+
+  ```
+  Crash type: Stack-buffer-overflow READ 1
+  Crash state:
+  PfxEntry::test_condition
+  PfxEntry::checkword
+  AffixMgr::prefix_check
+  ```
+modified: '2022-09-10T00:00:29.690509Z'
+published: '2022-09-10T00:00:29.690253Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=51134
+affected:
+- package:
+    name: hunspell
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/hunspell
+  ranges:
+  - type: GIT
+    repo: https://github.com/hunspell/hunspell.git
+    events:
+    - introduced: 74b08bfb8b611b7ae4bea2a6f1f74d9f73c1d0e3
+    - fixed: 4631c530b0afbd57ef34ffa6260899ffa6d91eb4
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.2.0

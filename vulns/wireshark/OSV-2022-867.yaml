@@ -1,0 +1,31 @@
+id: OSV-2022-867
+summary: Heap-buffer-overflow in get_utf_8_string
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=51090
+
+  ```
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  get_utf_8_string
+  dissect_form_urlencoded
+  call_dissector_work
+  ```
+modified: '2022-09-09T00:01:54.157986Z'
+published: '2022-09-09T00:01:54.157712Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=51090
+affected:
+- package:
+    name: wireshark
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/wireshark
+  ranges:
+  - type: GIT
+    repo: https://gitlab.com/wireshark/wireshark.git
+    events:
+    - introduced: 248ff020e7ea17785cc9451f6d24ad61c4310d1f
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.2.0

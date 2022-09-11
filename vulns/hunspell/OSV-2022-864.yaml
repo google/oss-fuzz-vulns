@@ -1,0 +1,32 @@
+id: OSV-2022-864
+summary: Heap-buffer-overflow in SuggestMgr::badcharkey_utf
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=51102
+
+  ```
+  Crash type: Heap-buffer-overflow READ 2
+  Crash state:
+  SuggestMgr::badcharkey_utf
+  SuggestMgr::suggest
+  HunspellImpl::suggest_internal
+  ```
+modified: '2022-09-09T00:00:10.507431Z'
+published: '2022-09-09T00:00:10.507172Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=51102
+affected:
+- package:
+    name: hunspell
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/hunspell
+  ranges:
+  - type: GIT
+    repo: https://github.com/hunspell/hunspell.git
+    events:
+    - introduced: 74b08bfb8b611b7ae4bea2a6f1f74d9f73c1d0e3
+    - fixed: 5aa940a5a3b65263db809953024e9689e191868f
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.2.0
