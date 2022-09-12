@@ -1,0 +1,32 @@
+id: OSV-2022-883
+summary: Segv on unknown address in HashMgr::add_word
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=51187
+
+  ```
+  Crash type: Segv on unknown address
+  Crash state:
+  HashMgr::add_word
+  HashMgr::load_tables
+  HashMgr::HashMgr
+  ```
+modified: '2022-09-11T00:01:56.479808Z'
+published: '2022-09-11T00:01:56.479432Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=51187
+affected:
+- package:
+    name: hunspell
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/hunspell
+  ranges:
+  - type: GIT
+    repo: https://github.com/hunspell/hunspell.git
+    events:
+    - introduced: 74b08bfb8b611b7ae4bea2a6f1f74d9f73c1d0e3
+    - fixed: a319f19cbf4e7599c1f7fb08278d0cd2284ace68
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.2.0
