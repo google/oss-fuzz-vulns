@@ -8,7 +8,7 @@ details: |
   grk::N_SCALAR::DecompressIrrev::vtrans
   unsigned long grk::N_SCALAR::vscheduler<grk::N_SCALAR::DecompressIrrev>
   std::__1::__function::__func<unsigned long grk::N_SCALAR::vscheduler<grk::N_SCAL
-modified: '2022-09-06T00:20:09.979377Z'
+modified: '2022-09-14T00:09:58.320508Z'
 published: '2022-04-12T00:00:32.150063Z'
 references:
 - type: REPORT
@@ -30,6 +30,7 @@ affected:
   - v9.7.8
   - v10.0.0
   - v10.0.0.debian
+  - v10.0.1
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.2.0
