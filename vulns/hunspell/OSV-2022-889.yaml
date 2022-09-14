@@ -1,0 +1,32 @@
+id: OSV-2022-889
+summary: Heap-use-after-free in AffixMgr::prefix_check
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=51277
+
+  ```
+  Crash type: Heap-use-after-free READ 2
+  Crash state:
+  AffixMgr::prefix_check
+  AffixMgr::affix_check
+  HunspellImpl::checkword
+  ```
+modified: '2022-09-13T00:02:00.776827Z'
+published: '2022-09-13T00:02:00.776572Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=51277
+affected:
+- package:
+    name: hunspell
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/hunspell
+  ranges:
+  - type: GIT
+    repo: https://github.com/hunspell/hunspell.git
+    events:
+    - introduced: a51d7aa0b398f4dc2510f53debdf03c03bec458c
+    - fixed: d6836713630f752a1ea1729c666b26afd8f1e432
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.2.0

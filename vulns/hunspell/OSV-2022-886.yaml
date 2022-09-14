@@ -1,0 +1,35 @@
+id: OSV-2022-886
+summary: Heap-buffer-overflow in SfxEntry::add
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=51242
+
+  ```
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  SfxEntry::add
+  AffixMgr::expand_rootword
+  SuggestMgr::ngsuggest
+  ```
+modified: '2022-09-12T00:00:26.866618Z'
+published: '2022-09-12T00:00:26.866357Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=51242
+affected:
+- package:
+    name: hunspell
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/hunspell
+  ranges:
+  - type: GIT
+    repo: https://github.com/hunspell/hunspell.git
+    events:
+    - introduced: 736841ffd4997b73e939595a140addbfd530329c
+    - fixed: 6291cac8fb85a96f7e6d5a35f1912365f3b17ae9
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: dce0a9af72dfab77f75fab3e675f5a13523d1eb3:74b08bfb8b611b7ae4bea2a6f1f74d9f73c1d0e3
+    fixed_range: a51d7aa0b398f4dc2510f53debdf03c03bec458c:6291cac8fb85a96f7e6d5a35f1912365f3b17ae9
+  versions: []
+schema_version: 1.2.0

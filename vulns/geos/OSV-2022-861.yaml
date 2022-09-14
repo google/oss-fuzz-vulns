@@ -1,0 +1,32 @@
+id: OSV-2022-861
+summary: Heap-use-after-free in std::__1::pair<std::__1::__tree_iterator<std::__1::__value_type<geos::geom::Coor
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=51083
+
+  ```
+  Crash type: Heap-use-after-free READ 8
+  Crash state:
+  std::__1::pair<std::__1::__tree_iterator<std::__1::__value_type<geos::geom::Coor
+  geos::geomgraph::NodeMap::addNode
+  geos::operation::overlay::OverlayOp::copyPoints
+  ```
+modified: '2022-09-08T00:02:26.219053Z'
+published: '2022-09-08T00:02:26.218765Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=51083
+affected:
+- package:
+    name: geos
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/geos
+  ranges:
+  - type: GIT
+    repo: https://git.osgeo.org/gitea/geos/geos.git
+    events:
+    - introduced: bd3146275054c8689d1cbada47bfe51ebed898dd
+    - fixed: de17e6fb6ba645622d1edc798d5bc77fdfe4189a
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
+schema_version: 1.2.0

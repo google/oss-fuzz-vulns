@@ -1,0 +1,32 @@
+id: OSV-2022-893
+summary: UNKNOWN READ in AffixMgr::suffix_check
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=51294
+
+  ```
+  Crash type: UNKNOWN READ
+  Crash state:
+  AffixMgr::suffix_check
+  PfxEntry::checkword
+  AffixMgr::prefix_check
+  ```
+modified: '2022-09-14T00:02:00.622886Z'
+published: '2022-09-14T00:02:00.622371Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=51294
+affected:
+- package:
+    name: hunspell
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/hunspell
+  ranges:
+  - type: GIT
+    repo: https://github.com/hunspell/hunspell.git
+    events:
+    - introduced: a51d7aa0b398f4dc2510f53debdf03c03bec458c
+    - fixed: d6836713630f752a1ea1729c666b26afd8f1e432
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.2.0

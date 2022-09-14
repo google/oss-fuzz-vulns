@@ -1,0 +1,37 @@
+id: OSV-2022-880
+summary: Global-buffer-overflow in _getBaseCellNeighbor
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=51208
+
+  ```
+  Crash type: Global-buffer-overflow READ 4
+  Crash state:
+  _getBaseCellNeighbor
+  localIjkToCell
+  localIjToCell
+  ```
+modified: '2022-09-11T00:00:31.857517Z'
+published: '2022-09-11T00:00:31.857265Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=51208
+affected:
+- package:
+    name: h3
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/h3
+  ranges:
+  - type: GIT
+    repo: https://github.com/uber/h3
+    events:
+    - introduced: ba89a19aa6d765ceb6f52d0e956b576293a67911
+    - fixed: fce1c53844ca21dcc14f3acabeaf2e12d47e5568
+  versions:
+  - v4.0.0
+  - v4.0.0-rc2
+  - v4.0.0-rc3
+  - v4.0.0-rc4
+  - v4.0.0-rc5
+  ecosystem_specific:
+    severity: null
+schema_version: 1.2.0
