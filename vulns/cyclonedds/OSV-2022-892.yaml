@@ -1,0 +1,31 @@
+id: OSV-2022-892
+summary: Segv on unknown address in ddsi_config_init
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=51292
+
+  ```
+  Crash type: Segv on unknown address
+  Crash state:
+  ddsi_config_init
+  fuzz_config_init.c
+  ```
+modified: '2022-09-14T00:00:47.567334Z'
+published: '2022-09-14T00:00:47.567090Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=51292
+affected:
+- package:
+    name: cyclonedds
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/cyclonedds
+  ranges:
+  - type: GIT
+    repo: https://github.com/eclipse-cyclonedds/cyclonedds
+    events:
+    - introduced: 95c7779a885184889d3ae923a7146653fb0653af
+    - fixed: 9f9026899dc94f5a3e740ba5cabc2647f1e9a0bd
+  ecosystem_specific:
+    severity: null
+  versions: []
+schema_version: 1.2.0
