@@ -10,7 +10,7 @@ details: |
   _php_stream_opendir
   _php_do_opendir
   ```
-modified: '2022-09-08T00:02:36.883940Z'
+modified: '2022-09-15T02:50:36.298826Z'
 published: '2022-09-08T00:02:36.883642Z'
 references:
 - type: REPORT
@@ -25,6 +25,8 @@ affected:
     repo: https://github.com/php/php-src.git
     events:
     - introduced: cae80ef552c7da262e8070264ccf778454477a08
+    - fixed: 09aa27cc0993e321678b6e66a1d3fc428b6e3c59
+    - fixed: 9af98cd4657bfcfe21f42ab36d9be7de7b2709b2
   versions:
   - php-8.1.0
   - php-8.1.2RC1
