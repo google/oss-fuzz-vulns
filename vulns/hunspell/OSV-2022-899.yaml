@@ -1,0 +1,33 @@
+id: OSV-2022-899
+summary: Heap-buffer-overflow in std::__1::basic_string<char, std::__1::char_traits<char>,
+  std::__1::allocator<ch
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=51390
+
+  ```
+  Crash type: Heap-buffer-overflow READ 7
+  Crash state:
+  std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<ch
+  PfxEntry::add
+  AffixMgr::expand_rootword
+  ```
+modified: '2022-09-16T00:00:59.054490Z'
+published: '2022-09-16T00:00:59.054256Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=51390
+affected:
+- package:
+    name: hunspell
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/hunspell
+  ranges:
+  - type: GIT
+    repo: https://github.com/hunspell/hunspell.git
+    events:
+    - introduced: 062f51d2fbd74601cfbac725ffdb5601e812f61a
+    - fixed: 810859c7e74830d606140a1d28d24ff02977fded
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.2.0
