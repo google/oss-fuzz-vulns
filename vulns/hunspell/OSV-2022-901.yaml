@@ -1,0 +1,32 @@
+id: OSV-2022-901
+summary: Heap-double-free in HashMgr::~HashMgr
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=51432
+
+  ```
+  Crash type: Heap-double-free
+  Crash state:
+  HashMgr::~HashMgr
+  HunspellImpl::~HunspellImpl
+  Hunspell::~Hunspell
+  ```
+modified: '2022-09-17T00:00:27.034726Z'
+published: '2022-09-17T00:00:27.034470Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=51432
+affected:
+- package:
+    name: hunspell
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/hunspell
+  ranges:
+  - type: GIT
+    repo: https://github.com/hunspell/hunspell.git
+    events:
+    - introduced: 74b08bfb8b611b7ae4bea2a6f1f74d9f73c1d0e3
+    - fixed: 7d1c7d46c7a7fcd9987fc2691712b0696ab6646c
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
+schema_version: 1.2.0

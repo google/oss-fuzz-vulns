@@ -1,0 +1,34 @@
+id: OSV-2022-902
+summary: Invalid-free in function signature specialization <Arg
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=51434
+
+  ```
+  Crash type: Invalid-free
+  Crash state:
+  function signature specialization <Arg
+  NIOHTTP1.HTTPDecoder.didFinishHead
+  protocol witness for NIOHTTP1.
+  ```
+modified: '2022-09-17T00:00:27.435079Z'
+published: '2022-09-17T00:00:27.434825Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=51434
+affected:
+- package:
+    name: swift-nio
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/swift-nio
+  ranges:
+  - type: GIT
+    repo: https://github.com/apple/swift-nio.git
+    events:
+    - introduced: 6918034260d1b0ff46a24a6e3ced445bc2d0ed4b
+    - fixed: 26afcecdc2142f1cd0d9b7f4d25b3a72938c3368
+  ecosystem_specific:
+    severity: null
+  database_specific:
+    fixed_range: 6918034260d1b0ff46a24a6e3ced445bc2d0ed4b:26afcecdc2142f1cd0d9b7f4d25b3a72938c3368
+  versions: []
+schema_version: 1.2.0
