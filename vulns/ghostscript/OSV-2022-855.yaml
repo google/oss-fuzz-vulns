@@ -10,7 +10,7 @@ details: |
   RunIns
   Instance_Reset
   ```
-modified: '2022-09-07T00:01:52.675043Z'
+modified: '2022-09-20T00:53:10.048964Z'
 published: '2022-09-07T00:01:52.674790Z'
 references:
 - type: REPORT
@@ -26,6 +26,7 @@ affected:
     events:
     - introduced: 7a57a0db991ff9d38419961717c6ce1e3678db4c
     - fixed: f86dd15fb28335c36274d76fd98b5c8d49f4008a
+    - fixed: 8d30023842e59a9af26844e6172f8413ff51d7fb
   versions:
   - ghostpdl-10.0.0_release_tests_002
   - ghostpdl-10.0.0rc1
