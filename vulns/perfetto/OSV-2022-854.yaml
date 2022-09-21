@@ -1,0 +1,76 @@
+id: OSV-2022-854
+summary: Heap-buffer-overflow in perfetto::trace_processor::TrackEventParser::ParseTrackDescriptor
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=51022
+
+  ```
+  Crash type: Heap-buffer-overflow WRITE 4
+  Crash state:
+  perfetto::trace_processor::TrackEventParser::ParseTrackDescriptor
+  perfetto::trace_processor::TrackEventModule::ParsePacket
+  perfetto::trace_processor::ProtoTraceParser::ParseTracePacketImpl
+  ```
+modified: '2022-09-07T00:00:54.323585Z'
+published: '2022-09-07T00:00:54.323344Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=51022
+affected:
+- package:
+    name: perfetto
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/perfetto
+  ranges:
+  - type: GIT
+    repo: https://android.googlesource.com/platform/external/perfetto/
+    events:
+    - introduced: 8209fb9b9a4156232aa87ad4621e541bfb777ec1
+    - fixed: bb1b58e6d1d86b3122bb9574f2530093ff1cc2eb
+  versions:
+  - android-13.0.0_r1
+  - android-13.0.0_r2
+  - android-13.0.0_r3
+  - android-13.0.0_r4
+  - android-13.0.0_r5
+  - android-13.0.0_r6
+  - android-cts-13.0_r1
+  - android-mainline-12.0.0_r100
+  - android-mainline-12.0.0_r122
+  - android-mainline-12.0.0_r49
+  - android-mainline-12.0.0_r59
+  - android-mainline-12.0.0_r63
+  - android-mainline-12.0.0_r70
+  - android-mainline-12.0.0_r77
+  - android-mainline-12.0.0_r99
+  - android-security-13.0.0_r1
+  - android-vts-13.0_r1
+  - platform-tools-29.0.1
+  - platform-tools-29.0.2
+  - platform-tools-29.0.3
+  - platform-tools-29.0.4
+  - platform-tools-29.0.5
+  - platform-tools-29.0.6
+  - platform-tools-30.0.0
+  - platform-tools-30.0.1
+  - platform-tools-30.0.2
+  - platform-tools-30.0.3
+  - platform-tools-30.0.4
+  - platform-tools-30.0.5
+  - platform-tools-31.0.0
+  - platform-tools-31.0.1
+  - platform-tools-31.0.2
+  - platform-tools-31.0.3
+  - platform-tools-32.0.0
+  - platform-tools-33.0.0
+  - platform-tools-33.0.1
+  - platform-tools-33.0.2
+  - platform-tools-33.0.3
+  - v27.0
+  - v27.1
+  - v28.0
+  - v29.0
+  ecosystem_specific:
+    severity: HIGH
+  database_specific:
+    fixed_range: ee1648233f427cc5526481e1074a48bd77caa29e:bb1b58e6d1d86b3122bb9574f2530093ff1cc2eb
+schema_version: 1.3.0
