@@ -1,0 +1,34 @@
+id: OSV-2022-923
+summary: Heap-buffer-overflow in file_magwarn
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=51603
+
+  ```
+  Crash type: Heap-buffer-overflow READ {*}
+  Crash state:
+  file_magwarn
+  parse_strength
+  load_1
+  ```
+modified: '2022-09-21T00:01:36.581887Z'
+published: '2022-09-21T00:01:36.581644Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=51603
+affected:
+- package:
+    name: file
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/file
+  ranges:
+  - type: GIT
+    repo: https://github.com/file/file.git
+    events:
+    - introduced: fc5ce7ab57ab4755430cd05706d4289a7d704b03
+    - fixed: 66efe2fa6abc233011a58965d6de2bb0f91328bd
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: 2d5f85874bf3c9c4841c08d18e97e0fe16bae19f:5f957469b734366c8d4cbd050609ba4cc3a5c47c
+  versions: []
+schema_version: 1.3.0

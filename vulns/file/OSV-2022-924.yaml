@@ -1,0 +1,34 @@
+id: OSV-2022-924
+summary: Heap-buffer-overflow in file_zmagic
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=51608
+
+  ```
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  file_zmagic
+  file_buffer
+  magic_buffer
+  ```
+modified: '2022-09-21T00:02:48.427412Z'
+published: '2022-09-21T00:02:48.427165Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=51608
+affected:
+- package:
+    name: file
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/file
+  ranges:
+  - type: GIT
+    repo: https://github.com/file/file.git
+    events:
+    - introduced: fc5ce7ab57ab4755430cd05706d4289a7d704b03
+    - fixed: 411ec5bf0708dcd5ec99e4d0961740fca30a6bc7
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: 2d5f85874bf3c9c4841c08d18e97e0fe16bae19f:5f957469b734366c8d4cbd050609ba4cc3a5c47c
+  versions: []
+schema_version: 1.3.0

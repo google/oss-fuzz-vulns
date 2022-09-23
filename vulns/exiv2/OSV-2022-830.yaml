@@ -1,0 +1,32 @@
+id: OSV-2022-830
+summary: Heap-buffer-overflow in Exiv2::MemIo::read
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=50901
+
+  ```
+  Crash type: Heap-buffer-overflow WRITE 8
+  Crash state:
+  Exiv2::MemIo::read
+  Exiv2::BasicIo::readOrThrow
+  Exiv2::QuickTimeVideo::tagDecoder
+  ```
+modified: '2022-09-03T00:01:42.338575Z'
+published: '2022-09-03T00:01:42.338079Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=50901
+affected:
+- package:
+    name: exiv2
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/exiv2
+  ranges:
+  - type: GIT
+    repo: https://github.com/Exiv2/exiv2
+    events:
+    - introduced: 393815ffb09ff68ec704a60439b26d186979402d
+    - fixed: d3651fdbd352cbaf259f89abf7557da343339378
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
+schema_version: 1.3.0

@@ -1,0 +1,32 @@
+id: OSV-2022-678
+summary: Security exception in com.fasterxml.jackson.databind.node.ArrayNode.serialize
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=49828
+
+  ```
+  Crash type: Security exception
+  Crash state:
+  com.fasterxml.jackson.databind.node.ArrayNode.serialize
+  com.fasterxml.jackson.core.json.WriterBasedJsonGenerator._verifyValueWrite
+  com.fasterxml.jackson.core.json.WriterBasedJsonGenerator.writeStartArray
+  ```
+modified: '2022-08-07T00:01:59.526741Z'
+published: '2022-08-07T00:01:59.526488Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=49828
+affected:
+- package:
+    name: jackson-databind
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/jackson-databind
+  ranges:
+  - type: GIT
+    repo: https://github.com/FasterXML/jackson-databind
+    events:
+    - introduced: 6abe555d69e0d7cd5741f223b90db02b633cf97a
+    - fixed: 6e9193f069d1cf5e9590afeaeb2907a9e43fb143
+  ecosystem_specific:
+    severity: LOW
+  versions: []
+schema_version: 1.3.0
