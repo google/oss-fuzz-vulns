@@ -1,0 +1,35 @@
+id: OSV-2022-952
+summary: UNKNOWN WRITE in regcomp
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=51778
+
+  ```
+  Crash type: UNKNOWN WRITE
+  Crash state:
+  regcomp
+  file_regcomp
+  load_1
+  ```
+modified: '2022-09-25T00:03:20.623718Z'
+published: '2022-09-25T00:03:20.623473Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=51778
+affected:
+- package:
+    name: file
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/file
+  ranges:
+  - type: GIT
+    repo: https://github.com/file/file.git
+    events:
+    - introduced: fc5ce7ab57ab4755430cd05706d4289a7d704b03
+    - fixed: e94d52646d646125cc5452b33f3a70f4e601c59e
+  ecosystem_specific:
+    severity: HIGH
+  database_specific:
+    introduced_range: 2d5f85874bf3c9c4841c08d18e97e0fe16bae19f:5f957469b734366c8d4cbd050609ba4cc3a5c47c
+    fixed_range: c5a2afc11857ce67144e9ed1c5d65cb25eb1ea87:e94d52646d646125cc5452b33f3a70f4e601c59e
+  versions: []
+schema_version: 1.3.0
