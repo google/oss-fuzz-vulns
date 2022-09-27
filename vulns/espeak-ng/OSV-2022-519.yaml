@@ -1,0 +1,33 @@
+id: OSV-2022-519
+summary: Stack-buffer-overflow in LookupThousands
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=48470
+
+  ```
+  Crash type: Stack-buffer-overflow WRITE {*}
+  Crash state:
+  LookupThousands
+  LookupNum3
+  TranslateNumber
+  ```
+modified: '2022-06-29T00:00:24.108048Z'
+published: '2022-06-29T00:00:24.107785Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=48470
+affected:
+- package:
+    name: espeak-ng
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/espeak-ng
+  ranges:
+  - type: GIT
+    repo: https://github.com/espeak-ng/espeak-ng
+    events:
+    - introduced: 7b9c99cec7b0c517049d39cbbee610c3a8407fa4
+  versions:
+  - '1.51'
+  - 1.51.1
+  ecosystem_specific:
+    severity: HIGH
+schema_version: 1.3.0
