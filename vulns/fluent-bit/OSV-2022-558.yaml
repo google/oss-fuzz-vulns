@@ -1,0 +1,51 @@
+id: OSV-2022-558
+summary: Segv on unknown address in onig_free_body
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=48895
+
+  ```
+  Crash type: Segv on unknown address
+  Crash state:
+  onig_free_body
+  onig_new
+  flb_regex_create
+  ```
+modified: '2022-07-10T00:00:10.411623Z'
+published: '2022-07-10T00:00:10.411359Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=48895
+affected:
+- package:
+    name: fluent-bit
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/fluent-bit
+  ranges:
+  - type: GIT
+    repo: https://github.com/fluent/fluent-bit/
+    events:
+    - introduced: e59f16b1168fca4046fff219ba9ae4e20dee6610
+    - fixed: 9cc2ff55a146b2b3e8c321a87920c0d39a2b2ba6
+    - fixed: 3c13edab76389a7412deef12ac61a25b85f00c39
+  versions:
+  - ci-release-test
+  - unstable
+  - unstable-master
+  - v1.9.0
+  - v1.9.0-ci-test-1
+  - v1.9.0-rc1
+  - v1.9.0-rc2
+  - v1.9.0-rc3
+  - v1.9.0-rc4
+  - v1.9.1
+  - v1.9.2
+  - v1.9.3
+  - v1.9.4
+  - v1.9.5
+  - v1.9.6
+  - v1.9.7
+  - v1.9.8
+  - v1.9.9
+  ecosystem_specific:
+    severity: null
+schema_version: 1.3.0
