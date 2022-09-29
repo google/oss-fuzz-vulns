@@ -1,0 +1,34 @@
+id: OSV-2022-525
+summary: Heap-buffer-overflow in spvtools::CFA<spvtools::val::BasicBlock>::CalculateDominators
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=48553
+
+  ```
+  Crash type: Heap-buffer-overflow READ 8
+  Crash state:
+  spvtools::CFA<spvtools::val::BasicBlock>::CalculateDominators
+  spvtools::val::PerformCfgChecks
+  spvtools::val::ValidateBinaryUsingContextAndValidationState
+  ```
+modified: '2022-07-01T00:01:50.518819Z'
+published: '2022-07-01T00:01:50.518518Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=48553
+affected:
+- package:
+    name: spirv-tools
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/spirv-tools
+  ranges:
+  - type: GIT
+    repo: https://github.com/KhronosGroup/SPIRV-Tools.git
+    events:
+    - introduced: 286e9c1187053b4363fe963636f242263e1e5cd9
+  versions:
+  - sdk-1.3.224.0
+  - sdk-1.3.224.1
+  - v2022.3
+  ecosystem_specific:
+    severity: MEDIUM
+schema_version: 1.3.0

@@ -1,0 +1,35 @@
+id: OSV-2022-969
+summary: Heap-buffer-overflow in SkPath::Iter::next
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=51875
+
+  ```
+  Crash type: Heap-buffer-overflow READ 8
+  Crash state:
+  SkPath::Iter::next
+  SkRegion::setPath
+  SkRasterClip::SkRasterClip
+  ```
+modified: '2022-09-28T00:00:26.095493Z'
+published: '2022-09-28T00:00:26.095263Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=51875
+affected:
+- package:
+    name: skia
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/skia
+  ranges:
+  - type: GIT
+    repo: https://skia.googlesource.com/skia.git
+    events:
+    - introduced: 13a15693a1834c9d946807f5dd6867932e1d11e8
+    - fixed: e11ad879ef49e0c7081d6fee9e3758b439077aa8
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    fixed_range: ef455e147d74c4d08d66430e2cd0999934293c5d:e11ad879ef49e0c7081d6fee9e3758b439077aa8
+    introduced_range: bdb042b664e9d6cd30404634188efdcb51adf475:56c606cac39ece14dd9cb66fad4985bc6903b08c
+  versions: []
+schema_version: 1.3.0
