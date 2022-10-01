@@ -1,0 +1,32 @@
+id: OSV-2022-953
+summary: Dynamic-stack-buffer-overflow in rx_icmp
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=51757
+
+  ```
+  Crash type: Dynamic-stack-buffer-overflow WRITE {*}
+  Crash state:
+  rx_icmp
+  rx_ip
+  mip_rx
+  ```
+modified: '2022-09-25T00:03:37.541603Z'
+published: '2022-09-25T00:03:37.541324Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=51757
+affected:
+- package:
+    name: mongoose
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/mongoose
+  ranges:
+  - type: GIT
+    repo: https://github.com/cesanta/mongoose
+    events:
+    - introduced: e5b0528aca2524d15bf421ce36c64afa8db137c8
+    - fixed: 9680b8ccb396d0a49b309b3d23787c092c2f6cd7
+  ecosystem_specific:
+    severity: null
+  versions: []
+schema_version: 1.3.0
