@@ -8,7 +8,7 @@ details: |
   void unwindstack::Symbols::BuildRemapTable<Elf64_Sym>
   bool unwindstack::Symbols::GetName<Elf64_Sym>
   unwindstack::ElfInterfaceImpl<unwindstack::ElfTypes64>::GetFunctionName
-modified: '2022-09-16T00:24:29.964746Z'
+modified: '2022-10-02T00:41:37.965789Z'
 published: '2022-04-11T00:00:39.202876Z'
 references:
 - type: REPORT
@@ -388,6 +388,27 @@ affected:
   - android-13.0.0_r5
   - android-13.0.0_r6
   - studio-2021.3.1
+  - aml_go_adb_330913000
+  - aml_go_art_330913000
+  - aml_go_ase_330913000
+  - aml_go_cbr_330912000
+  - aml_go_con_330913000
+  - aml_go_doc_330912000
+  - aml_go_ext_330912000
+  - aml_go_ips_330911000
+  - aml_go_med_330913000
+  - aml_go_mpr_330912000
+  - aml_go_net_330913000
+  - aml_go_neu_330912000
+  - aml_go_per_330912000
+  - aml_go_res_330912000
+  - aml_go_sch_330911000
+  - aml_go_sta_330911000
+  - aml_go_swc_330913000
+  - aml_go_tet_330914010
+  - aml_go_tz4_330912000
+  - aml_go_uwb_330912000
+  - aml_go_wif_330911000
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.2.0
