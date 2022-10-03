@@ -1,0 +1,31 @@
+id: OSV-2022-1009
+summary: Heap-buffer-overflow in parse_line
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=52049
+
+  ```
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  parse_line
+  readcfgfile
+  fuzz_cfg_parser.c
+  ```
+modified: '2022-10-03T00:00:30.185399Z'
+published: '2022-10-03T00:00:30.185111Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=52049
+affected:
+- package:
+    name: haproxy
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/haproxy
+  ranges:
+  - type: GIT
+    repo: https://github.com/haproxy/haproxy
+    events:
+    - introduced: 8a6767d266e0b885d1752a99cbe6b1e11c4e4256
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
+schema_version: 1.3.0
