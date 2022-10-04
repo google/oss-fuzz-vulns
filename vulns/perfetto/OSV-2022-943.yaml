@@ -10,7 +10,7 @@ details: |
   perfetto::trace_processor::TrackEventModule::ParsePacket
   perfetto::trace_processor::ProtoTraceParser::ParseTracePacketImpl
   ```
-modified: '2022-09-24T00:00:47.318470Z'
+modified: '2022-10-04T00:43:45.309444Z'
 published: '2022-09-24T00:00:47.318199Z'
 references:
 - type: REPORT
@@ -69,6 +69,8 @@ affected:
   - v27.1
   - v28.0
   - v29.0
+  - android-13.0.0_r7
+  - android-13.0.0_r8
   ecosystem_specific:
     severity: HIGH
 schema_version: 1.3.0
