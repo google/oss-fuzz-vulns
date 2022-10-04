@@ -8,7 +8,7 @@ details: |
   void unwindstack::Symbols::BuildRemapTable<Elf64_Sym>
   bool unwindstack::Symbols::GetName<Elf64_Sym>
   unwindstack::ElfInterfaceImpl<unwindstack::ElfTypes64>::GetFunctionName
-modified: '2022-10-03T00:14:25.567991Z'
+modified: '2022-10-04T00:25:23.332128Z'
 published: '2022-04-11T00:00:39.202876Z'
 references:
 - type: REPORT
@@ -412,6 +412,9 @@ affected:
   - aml_go_ads_330913000
   - aml_go_odp_330912000
   - aml_go_sdk_330810000
+  - android-13.0.0_r7
+  - android-13.0.0_r8
+  - android-security-12.0.0_r40
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.2.0
