@@ -1,0 +1,32 @@
+id: OSV-2022-963
+summary: Security exception in org.codehaus.janino.Parser.parseConditionalExpression
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=51821
+
+  ```
+  Crash type: Security exception
+  Crash state:
+  org.codehaus.janino.Parser.parseConditionalExpression
+  java.base/sun.nio.cs.CESU_8$Encoder.encodeLoop
+  java.base/java.nio.charset.CharsetEncoder.encode
+  ```
+modified: '2022-09-27T00:01:03.909482Z'
+published: '2022-09-27T00:01:03.909243Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=51821
+affected:
+- package:
+    name: janino
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/janino
+  ranges:
+  - type: GIT
+    repo: https://github.com/janino-compiler/janino.git
+    events:
+    - introduced: 0a1292babbaf23f767feec4c6fd75e961e3fe98b
+    - fixed: 2e0cc5fc6aa8b8020a84437a0ac4a7befb99969b
+  ecosystem_specific:
+    severity: LOW
+  versions: []
+schema_version: 1.3.0

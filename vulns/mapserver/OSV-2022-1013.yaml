@@ -1,0 +1,32 @@
+id: OSV-2022-1013
+summary: Heap-buffer-overflow in msyylex
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=52066
+
+  ```
+  Crash type: Heap-buffer-overflow WRITE 1
+  Crash state:
+  msyylex
+  loadMapInternal
+  msLoadMap
+  ```
+modified: '2022-10-04T00:00:17.452178Z'
+published: '2022-10-04T00:00:17.451905Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=52066
+affected:
+- package:
+    name: mapserver
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/mapserver
+  ranges:
+  - type: GIT
+    repo: https://github.com/MapServer/MapServer
+    events:
+    - introduced: 3b0aa0d2757512fdaa72c6856ce4cf58ff57f8b4
+    - fixed: c8d59b9251e2977232fec50087288cef188961a3
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
+schema_version: 1.3.0
