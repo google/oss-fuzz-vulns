@@ -10,7 +10,7 @@ details: |
   parse_to
   get_hdr_field
   ```
-modified: '2022-08-18T00:09:27.414135Z'
+modified: '2022-10-06T00:08:13.850361Z'
 published: '2021-11-18T00:00:17.931643Z'
 references:
 - type: REPORT
@@ -27,20 +27,21 @@ affected:
     - introduced: cb56694d290530ac308f44b453c18120b1c1109d
     - introduced: 1d4e56fc1f4f96dbb811074fbf1ac4c72b2b7167
     - introduced: eab8ff654bebaa04dda7bed78266844b385f928b
+    - fixed: 51b908f8fde0aa2eac8dbcfff319281625d6f3f2
   versions:
-  - 3.1.7
-  - 3.2.4
-  - 3.1.8
-  - 3.2.5
-  - 3.1.9
-  - 3.2.6
-  - 3.3.0-beta
   - 3.1.10
-  - 3.2.7
-  - 3.3.0-rc1
-  - 3.3.0
   - 3.1.11
+  - 3.1.7
+  - 3.1.8
+  - 3.1.9
+  - 3.2.4
+  - 3.2.5
+  - 3.2.6
+  - 3.2.7
   - 3.2.8
+  - 3.3.0
+  - 3.3.0-beta
+  - 3.3.0-rc1
   - 3.3.1
   ecosystem_specific:
     severity: MEDIUM
