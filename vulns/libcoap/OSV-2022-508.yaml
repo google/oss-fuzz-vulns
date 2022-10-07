@@ -9,7 +9,7 @@ details: |
   coap_split_uri_sub
   coap_get_uri_path
   ```
-modified: '2022-06-26T00:00:06.153574Z'
+modified: '2022-10-07T00:27:00.022288Z'
 published: '2022-06-26T00:00:06.153307Z'
 references:
 - type: REPORT
@@ -24,6 +24,7 @@ affected:
     repo: https://github.com/obgm/libcoap.git
     events:
     - introduced: 6504b667d38012efa81087bf4cc960128f4dc2d4
+    - fixed: c0572443dcfe544071ef2f66f0059ebd7b01311b
   versions:
   - v4.3.1-rc1
   - v4.3.1-rc2
