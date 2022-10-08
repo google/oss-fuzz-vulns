@@ -8,7 +8,7 @@ details: |
   void unwindstack::Symbols::BuildRemapTable<Elf64_Sym>
   bool unwindstack::Symbols::GetName<Elf64_Sym>
   unwindstack::ElfInterfaceImpl<unwindstack::ElfTypes64>::GetFunctionName
-modified: '2022-10-07T00:32:33.674563Z'
+modified: '2022-10-08T00:28:48.868758Z'
 published: '2022-04-11T00:00:39.202876Z'
 references:
 - type: REPORT
@@ -423,6 +423,21 @@ affected:
   - v30.0
   - aml_cbr_330810000
   - studio-2022.2.1-canary2
+  - aml_cbr_330911010
+  - aml_mpr_330811020
+  - aml_mpr_330911040
+  - aml_net_330811010
+  - aml_net_330910010
+  - aml_per_330811030
+  - aml_per_330912010
+  - aml_res_330810000
+  - aml_res_330910000
+  - aml_tet_330812150
+  - aml_tet_330911010
+  - aml_tz4_331012000
+  - aml_wif_330810040
+  - aml_wif_330910030
+  - t_frc_swc_330443040
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.2.0
