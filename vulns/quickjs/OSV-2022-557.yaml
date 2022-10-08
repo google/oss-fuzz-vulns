@@ -1,0 +1,31 @@
+id: OSV-2022-557
+summary: Heap-buffer-overflow in emit_goto
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=48924
+
+  ```
+  Crash type: Heap-buffer-overflow READ 4
+  Crash state:
+  emit_goto
+  js_parse_for_in_of
+  js_parse_statement_or_decl
+  ```
+modified: '2022-07-10T00:00:08.803287Z'
+published: '2022-07-10T00:00:08.803034Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=48924
+affected:
+- package:
+    name: quickjs
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/quickjs
+  ranges:
+  - type: GIT
+    repo: https://github.com/bellard/quickjs
+    events:
+    - introduced: 204682fb87ab9312f0cf81f959ecd181180457bc
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.3.0

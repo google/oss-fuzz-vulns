@@ -1,0 +1,32 @@
+id: OSV-2022-1022
+summary: Stack-buffer-overflow in check_content_type_and_change_protocol
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=52160
+
+  ```
+  Crash type: Stack-buffer-overflow READ {*}
+  Crash state:
+  check_content_type_and_change_protocol
+  ndpi_search_http_tcp
+  check_ndpi_detection_func
+  ```
+modified: '2022-10-07T00:01:07.705333Z'
+published: '2022-10-07T00:01:07.705075Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=52160
+affected:
+- package:
+    name: ndpi
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/ndpi
+  ranges:
+  - type: GIT
+    repo: https://github.com/ntop/nDPI.git
+    events:
+    - introduced: 37c88b129f6f5a3475dc6364cc4a898df9ff37ab
+    - fixed: 3c0021d6036532a6fdff9196b7ee7a614bdbd525
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.3.0
