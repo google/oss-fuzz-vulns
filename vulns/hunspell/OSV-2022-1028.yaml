@@ -1,0 +1,32 @@
+id: OSV-2022-1028
+summary: Heap-buffer-overflow in AffixMgr::compound_check
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=52195
+
+  ```
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  AffixMgr::compound_check
+  SuggestMgr::checkword
+  SuggestMgr::testsug
+  ```
+modified: '2022-10-08T00:02:22.648821Z'
+published: '2022-10-08T00:02:22.648562Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=52195
+affected:
+- package:
+    name: hunspell
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/hunspell
+  ranges:
+  - type: GIT
+    repo: https://github.com/hunspell/hunspell.git
+    events:
+    - introduced: 062f51d2fbd74601cfbac725ffdb5601e812f61a
+    - fixed: ef41c16af9a7fe0df27f421bd90120363c60dbb9
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.3.0

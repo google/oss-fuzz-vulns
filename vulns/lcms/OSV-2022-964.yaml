@@ -1,0 +1,36 @@
+id: OSV-2022-964
+summary: Use-of-uninitialized-value in cmsMLUgetASCII
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=51841
+
+  ```
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  cmsMLUgetASCII
+  Type_Text_Description_Write
+  SaveTags
+  ```
+modified: '2022-09-27T00:01:05.734772Z'
+published: '2022-09-27T00:01:05.734529Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=51841
+affected:
+- package:
+    name: lcms
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/lcms
+  ranges:
+  - type: GIT
+    repo: https://github.com/mm2/Little-CMS.git
+    events:
+    - introduced: 4ce24635d9422be4de4f2da3fa7825e1f163ac82
+    - fixed: 430f9166ed15f991c3f92ba592e2cdf1d1429f64
+  versions:
+  - lcms2.13
+  - lcms2.13.1
+  - lcms2.13rc1
+  - lcms2.13rc2
+  ecosystem_specific:
+    severity: MEDIUM
+schema_version: 1.3.0

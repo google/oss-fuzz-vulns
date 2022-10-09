@@ -1,0 +1,32 @@
+id: OSV-2022-1026
+summary: Heap-buffer-overflow in msSetError
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=52175
+
+  ```
+  Crash type: Heap-buffer-overflow READ {*}
+  Crash state:
+  msSetError
+  loadColor
+  loadMapInternal
+  ```
+modified: '2022-10-08T00:00:17.417303Z'
+published: '2022-10-08T00:00:17.417038Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=52175
+affected:
+- package:
+    name: mapserver
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/mapserver
+  ranges:
+  - type: GIT
+    repo: https://github.com/MapServer/MapServer
+    events:
+    - introduced: 3b0aa0d2757512fdaa72c6856ce4cf58ff57f8b4
+    - fixed: 8cf2023b172b2eafda8ecc4c5e12b0bfe3c5f9d2
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.3.0
