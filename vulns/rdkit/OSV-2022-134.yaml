@@ -8,7 +8,7 @@ details: |
   RDKit::Chirality::cleanupStereoGroups
   RDKit::MolOps::assignStereochemistry
   RDKit::SmilesToMol
-modified: '2022-08-05T00:17:42.506997Z'
+modified: '2022-10-11T00:22:20.647848Z'
 published: '2022-02-10T00:00:40.784389Z'
 references:
 - type: REPORT
@@ -30,6 +30,7 @@ affected:
   - Release_2022_03_3
   - Release_2022_03_4
   - Release_2022_03_5
+  - Release_2022_09_1b1
   ecosystem_specific:
     severity: HIGH
 schema_version: 1.2.0
