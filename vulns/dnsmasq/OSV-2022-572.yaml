@@ -1,0 +1,35 @@
+id: OSV-2022-572
+summary: Heap-buffer-overflow in dhcp_reply
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=49002
+
+  ```
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  dhcp_reply
+  dhcp_packet
+  FuzzDhcp
+  ```
+modified: '2022-07-12T00:00:45.818516Z'
+published: '2022-07-12T00:00:45.818288Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=49002
+affected:
+- package:
+    name: dnsmasq
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/dnsmasq
+  ranges:
+  - type: GIT
+    repo: git://thekelleys.org.uk/dnsmasq.git
+    events:
+    - introduced: 20b4a4ea5b19f3143add1342dde74a0be2b30a86
+    - introduced: 151d7dc5eaabb38a2a7cb2ace72fe8860f4415ae
+  versions:
+  - v2.87
+  - v2.87rc1
+  - v2.87test9
+  ecosystem_specific:
+    severity: MEDIUM
+schema_version: 1.3.0
