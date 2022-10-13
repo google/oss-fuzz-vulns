@@ -1,0 +1,50 @@
+id: OSV-2022-891
+summary: Stack-buffer-overflow in flb_env_var_translate
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=51278
+
+  ```
+  Crash type: Stack-buffer-overflow WRITE {*}
+  Crash state:
+  flb_env_var_translate
+  flb_parser_conf_file
+  config_random_fuzzer.c
+  ```
+modified: '2022-09-14T00:00:07.226724Z'
+published: '2022-09-14T00:00:07.226430Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=51278
+affected:
+- package:
+    name: fluent-bit
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/fluent-bit
+  ranges:
+  - type: GIT
+    repo: https://github.com/fluent/fluent-bit/
+    events:
+    - introduced: e59f16b1168fca4046fff219ba9ae4e20dee6610
+    - fixed: 7362d3a03b70304f05c38cea9d37793c092ea9db
+  versions:
+  - ci-release-test
+  - unstable
+  - unstable-master
+  - v1.9.0
+  - v1.9.0-ci-test-1
+  - v1.9.0-rc1
+  - v1.9.0-rc2
+  - v1.9.0-rc3
+  - v1.9.0-rc4
+  - v1.9.1
+  - v1.9.2
+  - v1.9.3
+  - v1.9.4
+  - v1.9.5
+  - v1.9.6
+  - v1.9.7
+  - v1.9.8
+  - v1.9.9
+  ecosystem_specific:
+    severity: HIGH
+schema_version: 1.3.0
