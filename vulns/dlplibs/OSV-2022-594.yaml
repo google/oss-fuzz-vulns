@@ -1,0 +1,31 @@
+id: OSV-2022-594
+summary: Container-overflow in STOFFStarMathToMMLConverterInternal::Parser::convert
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=49164
+
+  ```
+  Crash type: Container-overflow READ 1
+  Crash state:
+  STOFFStarMathToMMLConverterInternal::Parser::convert
+  STOFFStarMathToMMLConverterInternal::Parser::parse
+  STOFFStarMathToMMLConverter::convertStarMath
+  ```
+modified: '2022-07-19T00:01:28.212684Z'
+published: '2022-07-19T00:01:28.212413Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=49164
+affected:
+- package:
+    name: dlplibs
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/dlplibs
+  ranges:
+  - type: GIT
+    repo: git://gerrit.libreoffice.org/libabw
+    events:
+    - introduced: 6ad72753cf22aa4cffdc6bb7b9082c90b4ed0502
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.3.0
