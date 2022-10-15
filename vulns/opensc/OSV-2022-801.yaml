@@ -1,0 +1,33 @@
+id: OSV-2022-801
+summary: Stack-buffer-overflow in sc_hsm_decode_ecdsa_signature
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=50683
+
+  ```
+  Crash type: Stack-buffer-overflow WRITE {*}
+  Crash state:
+  sc_hsm_decode_ecdsa_signature
+  sc_hsm_compute_signature
+  sc_compute_signature
+  ```
+modified: '2022-08-29T00:00:46.333151Z'
+published: '2022-08-29T00:00:46.332913Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=50683
+affected:
+- package:
+    name: opensc
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/opensc
+  ranges:
+  - type: GIT
+    repo: https://github.com/OpenSC/OpenSC
+    events:
+    - introduced: df1b854ae4cf9aa7421c87670e489fe8fca953a7
+    - fixed: 581b93543abbeda6c17a5da11e2cf82401824bef
+  versions:
+  - 0.23.0-rc1
+  ecosystem_specific:
+    severity: HIGH
+schema_version: 1.3.0
