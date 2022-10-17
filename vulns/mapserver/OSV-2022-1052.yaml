@@ -1,0 +1,32 @@
+id: OSV-2022-1052
+summary: UNKNOWN READ in loadSymbol
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=52410
+
+  ```
+  Crash type: UNKNOWN READ
+  Crash state:
+  loadSymbol
+  loadMapInternal
+  msLoadMap
+  ```
+modified: '2022-10-16T00:00:23.768922Z'
+published: '2022-10-16T00:00:23.768636Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=52410
+affected:
+- package:
+    name: mapserver
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/mapserver
+  ranges:
+  - type: GIT
+    repo: https://github.com/MapServer/MapServer
+    events:
+    - introduced: c8d59b9251e2977232fec50087288cef188961a3
+    - fixed: f4dd92750c85236c79a90a81433854c4dab39836
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.3.0

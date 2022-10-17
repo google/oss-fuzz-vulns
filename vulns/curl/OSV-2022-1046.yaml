@@ -1,0 +1,32 @@
+id: OSV-2022-1046
+summary: Stack-buffer-overflow in Curl_output_aws_sigv4
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=52349
+
+  ```
+  Crash type: Stack-buffer-overflow WRITE {*}
+  Crash state:
+  Curl_output_aws_sigv4
+  output_auth_headers
+  Curl_http_output_auth
+  ```
+modified: '2022-10-14T00:02:17.850216Z'
+published: '2022-10-14T00:02:17.849957Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=52349
+affected:
+- package:
+    name: curl
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/curl
+  ranges:
+  - type: GIT
+    repo: https://github.com/curl/curl.git
+    events:
+    - introduced: 29c4aa00a16872514eb2e2c639576a382ffb66d3
+    - fixed: 57ba1dd51975c95628cc3936ab086f80cba4c2d0
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
+schema_version: 1.3.0
