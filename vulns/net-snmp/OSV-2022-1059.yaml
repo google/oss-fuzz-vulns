@@ -1,0 +1,32 @@
+id: OSV-2022-1059
+summary: Heap-buffer-overflow in asn_build_unsigned_int64
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=52465
+
+  ```
+  Crash type: Heap-buffer-overflow WRITE 1
+  Crash state:
+  asn_build_unsigned_int64
+  snmp_build_var_op
+  snmp_pdu_build
+  ```
+modified: '2022-10-17T00:01:35.996998Z'
+published: '2022-10-17T00:01:35.996725Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=52465
+affected:
+- package:
+    name: net-snmp
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/net-snmp
+  ranges:
+  - type: GIT
+    repo: https://github.com/net-snmp/net-snmp
+    events:
+    - introduced: a0a02e5e5e8ceffb173d9dfb5601c3deeded97ca
+    - fixed: 6cac0c842537b9b6aaa104d909a06b85192793a6
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
+schema_version: 1.3.0
