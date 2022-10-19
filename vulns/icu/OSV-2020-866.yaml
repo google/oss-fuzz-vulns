@@ -10,7 +10,7 @@ details: |
   icu_64::UCharsTrie::nextImpl
   icu_64::UCharsTrie::next
   ```
-modified: '2022-10-12T00:20:56.666972Z'
+modified: '2022-10-19T01:08:48.103104Z'
 published: '2020-07-14T22:13:50.019093Z'
 references:
 - type: REPORT
@@ -75,5 +75,6 @@ affected:
   - release-72-rc
   - release-72-rc-cldr-beta3
   - cldr/2022-10-11
+  - release-72-1
   ecosystem_specific:
     severity: MEDIUM
