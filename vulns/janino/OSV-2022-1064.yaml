@@ -1,0 +1,34 @@
+id: OSV-2022-1064
+summary: Security exception in org.codehaus.janino.Parser.parseAssignmentExpression
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=52507
+
+  ```
+  Crash type: Security exception
+  Crash state:
+  org.codehaus.janino.Parser.parseAssignmentExpression
+  java.base/java.nio.charset.CharsetEncoder.<init>
+  java.base/java.nio.charset.CharsetEncoder.<init>
+  ```
+modified: '2022-10-19T00:02:23.352351Z'
+published: '2022-10-19T00:02:23.352099Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=52507
+affected:
+- package:
+    name: janino
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/janino
+  ranges:
+  - type: GIT
+    repo: https://github.com/janino-compiler/janino.git
+    events:
+    - introduced: 827169fb01b5b10343b385de50fc8785a2e94360
+    - fixed: 2e0cc5fc6aa8b8020a84437a0ac4a7befb99969b
+  ecosystem_specific:
+    severity: LOW
+  database_specific:
+    introduced_range: 0a1292babbaf23f767feec4c6fd75e961e3fe98b:2e0cc5fc6aa8b8020a84437a0ac4a7befb99969b
+  versions: []
+schema_version: 1.3.0
