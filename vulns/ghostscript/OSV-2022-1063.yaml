@@ -10,7 +10,7 @@ details: |
   alloc_restore_step_in
   dorestore
   ```
-modified: '2022-10-19T00:00:45.093343Z'
+modified: '2022-10-21T00:38:08.934054Z'
 published: '2022-10-19T00:00:45.093099Z'
 references:
 - type: REPORT
@@ -26,6 +26,7 @@ affected:
     events:
     - introduced: ee290c1aebaa172c812f21024af2dbf721fa5865
     - fixed: 880d248bab777e6cd7ee9cbd6e9de6563dd2078c
+    - introduced: eb9fc0106d45d1ce81ab2c4ae1a3d6e90a8c0164
   versions:
   - ghostpdl-10.0.0
   - ghostpdl-10.0.0rc2
