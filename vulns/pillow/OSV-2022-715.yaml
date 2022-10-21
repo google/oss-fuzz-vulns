@@ -1,0 +1,34 @@
+id: OSV-2022-715
+summary: Segv on unknown address in jpeg_read_scanlines
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=50217
+
+  ```
+  Crash type: Segv on unknown address
+  Crash state:
+  jpeg_read_scanlines
+  ImagingJpegDecode
+  _decode
+  ```
+modified: '2022-08-15T00:00:50.156776Z'
+published: '2022-08-15T00:00:50.156496Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=50217
+affected:
+- package:
+    name: pillow
+    ecosystem: PyPI
+    purl: pkg:pypi/pillow
+  ranges:
+  - type: GIT
+    repo: https://github.com/python-pillow/Pillow
+    events:
+    - introduced: c58d2817bc891c26e6b8098b8909c0eb2e7ce61b
+  versions:
+  - 9.1.0
+  - 9.1.1
+  - 9.2.0
+  ecosystem_specific:
+    severity: null
+schema_version: 1.3.0
