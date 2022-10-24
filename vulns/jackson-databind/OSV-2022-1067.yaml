@@ -1,0 +1,32 @@
+id: OSV-2022-1067
+summary: Security exception in jaz.Zer.<clinit>
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=52546
+
+  ```
+  Crash type: Security exception
+  Crash state:
+  jaz.Zer.<clinit>
+  java.base/java.lang.Class.forName0
+  java.base/java.lang.Class.forName
+  ```
+modified: '2022-10-21T00:00:11.016564Z'
+published: '2022-10-21T00:00:11.016183Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=52546
+affected:
+- package:
+    name: jackson-databind
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/jackson-databind
+  ranges:
+  - type: GIT
+    repo: https://github.com/FasterXML/jackson-databind
+    events:
+    - introduced: 5b036e1c0ba8af72bc5347253bcad1537904831b
+    - fixed: 5b036e1c0ba8af72bc5347253bcad1537904831b
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
+schema_version: 1.3.0

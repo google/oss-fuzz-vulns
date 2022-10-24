@@ -1,0 +1,32 @@
+id: OSV-2022-1074
+summary: Invalid-free in _dealloc
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=52587
+
+  ```
+  Crash type: Invalid-free
+  Crash state:
+  _dealloc
+  _Py_DECREF
+  frame_dealloc
+  ```
+modified: '2022-10-22T00:00:27.669183Z'
+published: '2022-10-22T00:00:27.668938Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=52587
+affected:
+- package:
+    name: pillow
+    ecosystem: PyPI
+    purl: pkg:pypi/pillow
+  ranges:
+  - type: GIT
+    repo: https://github.com/python-pillow/Pillow
+    events:
+    - introduced: bb2016794f1f9bf9e4726727080e1beb789823fb
+    - fixed: f7363c1091c70356d92e56abfca6b65bef9e7b26
+  ecosystem_specific:
+    severity: null
+  versions: []
+schema_version: 1.3.0
