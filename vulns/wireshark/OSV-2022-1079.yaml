@@ -1,0 +1,32 @@
+id: OSV-2022-1079
+summary: Stack-buffer-overflow in add_ff_action
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=52596
+
+  ```
+  Crash type: Stack-buffer-overflow WRITE 9
+  Crash state:
+  add_ff_action
+  dissect_ieeeNUMBER_pv0
+  dissect_ieeeNUMBER_common
+  ```
+modified: '2022-10-23T00:00:23.842187Z'
+published: '2022-10-23T00:00:23.841917Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=52596
+affected:
+- package:
+    name: wireshark
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/wireshark
+  ranges:
+  - type: GIT
+    repo: https://gitlab.com/wireshark/wireshark.git
+    events:
+    - introduced: 7b5ef933b0c0d1fad4d6e5c2ca4540ef61fa9a64
+    - fixed: 39910654d3010fc1d199754c962979592293ebd6
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
+schema_version: 1.3.0

@@ -1,0 +1,32 @@
+id: OSV-2022-1002
+summary: Segv on unknown address in upb_MiniTable_SetSubEnum
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=51950
+
+  ```
+  Crash type: Segv on unknown address
+  Crash state:
+  upb_MiniTable_SetSubEnum
+  _upb_MessageDef_LinkMiniTable
+  _upb_FileDef_Create
+  ```
+modified: '2022-09-30T00:01:07.221455Z'
+published: '2022-09-30T00:01:07.221190Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=51950
+affected:
+- package:
+    name: upb
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/upb
+  ranges:
+  - type: GIT
+    repo: https://github.com/protocolbuffers/upb.git
+    events:
+    - introduced: efd06e46a41161fd7e923a4ffa1cf485c1b9e3db
+    - fixed: 6f68ba1350e9edffec3e4cc011de97aa77e50ea4
+  ecosystem_specific:
+    severity: null
+  versions: []
+schema_version: 1.3.0
