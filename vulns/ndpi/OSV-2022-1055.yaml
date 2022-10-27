@@ -1,0 +1,34 @@
+id: OSV-2022-1055
+summary: UNKNOWN READ in ndpi_search_irc_tcp
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=52435
+
+  ```
+  Crash type: UNKNOWN READ
+  Crash state:
+  ndpi_search_irc_tcp
+  check_ndpi_detection_func
+  ndpi_detection_process_packet
+  ```
+modified: '2022-10-16T00:02:47.901603Z'
+published: '2022-10-16T00:02:47.901346Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=52435
+affected:
+- package:
+    name: ndpi
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/ndpi
+  ranges:
+  - type: GIT
+    repo: https://github.com/ntop/nDPI.git
+    events:
+    - introduced: 199c86e3df8da0b4734193df8424cd4a62768ae8
+    - fixed: de16fd35aa08ab584eaec487c02d31ad7a7a8942
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    fixed_range: e674a8ae37db3cc5a773b63d4e82b89b42ad14f2:de16fd35aa08ab584eaec487c02d31ad7a7a8942
+  versions: []
+schema_version: 1.3.0

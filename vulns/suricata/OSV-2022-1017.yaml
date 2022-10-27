@@ -1,0 +1,34 @@
+id: OSV-2022-1017
+summary: Null-dereference READ in AlertJson
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=52128
+
+  ```
+  Crash type: Null-dereference READ
+  Crash state:
+  AlertJson
+  JsonAlertLogger
+  OutputPacketLog
+  ```
+modified: '2022-10-06T00:00:53.118993Z'
+published: '2022-10-06T00:00:53.118743Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=52128
+affected:
+- package:
+    name: suricata
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/suricata
+  ranges:
+  - type: GIT
+    repo: https://github.com/OISF/suricata.git
+    events:
+    - introduced: e46a0bd46a590a2cfbd1b9ddad0d152b4274790b
+    - fixed: 1fafb83fed2b03c9f8730f6cd191a6b4299ff489
+  ecosystem_specific:
+    severity: null
+  database_specific:
+    fixed_range: 55cf11fdc2ede6bbd89d387fa8ec9f4524c72e46:1fafb83fed2b03c9f8730f6cd191a6b4299ff489
+  versions: []
+schema_version: 1.3.0

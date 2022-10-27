@@ -1,0 +1,32 @@
+id: OSV-2022-1071
+summary: Heap-use-after-free in xmlXIncludeCopyXPointer
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=52554
+
+  ```
+  Crash type: Heap-use-after-free READ 4
+  Crash state:
+  xmlXIncludeCopyXPointer
+  xmlXIncludeDoProcess
+  xmlXIncludeProcessTreeFlagsData
+  ```
+modified: '2022-10-21T00:02:26.399509Z'
+published: '2022-10-21T00:02:26.399267Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=52554
+affected:
+- package:
+    name: libxml2
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libxml2
+  ranges:
+  - type: GIT
+    repo: https://gitlab.gnome.org/GNOME/libxml2.git
+    events:
+    - introduced: 7f04e297318b1b908cec20711f74f75625afed7f
+    - fixed: 938105b572433e0772c507d434a8e7985e6cdf5d
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
+schema_version: 1.3.0

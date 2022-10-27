@@ -1,0 +1,36 @@
+id: OSV-2022-1097
+summary: Stack-use-after-return in gs_type2_interpret
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=52691
+
+  ```
+  Crash type: Stack-use-after-return READ 4
+  Crash state:
+  gs_type2_interpret
+  pdfi_cff_glyph_outline
+  gs_default_glyph_info
+  ```
+modified: '2022-10-26T00:02:22.076539Z'
+published: '2022-10-26T00:02:22.076282Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=52691
+affected:
+- package:
+    name: ghostscript
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/ghostscript
+  ranges:
+  - type: GIT
+    repo: git://git.ghostscript.com/ghostpdl.git
+    events:
+    - introduced: 441c9e3a4ca08fa7f7c00063af33196b0d88ebaf
+    - fixed: 28a4b16ec292d181b7227040dd47925e3b0949d9
+  versions:
+  - ghostpdl-10.0.0
+  - ghostpdl-10.0.0_release_tests_002
+  - ghostpdl-10.0.0rc1
+  - ghostpdl-10.0.0rc2
+  ecosystem_specific:
+    severity: null
+schema_version: 1.3.0
