@@ -1,0 +1,35 @@
+id: OSV-2022-653
+summary: Heap-double-free in dwg_free_common_entity_data
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=49602
+
+  ```
+  Crash type: Heap-double-free
+  Crash state:
+  dwg_free_common_entity_data
+  dwg_free_DIMENSION_ANG2LN
+  dwg_free_object
+  ```
+modified: '2022-07-30T00:01:52.491359Z'
+published: '2022-07-30T00:01:52.491112Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=49602
+affected:
+- package:
+    name: libredwg
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libredwg
+  ranges:
+  - type: GIT
+    repo: https://github.com/LibreDWG/libredwg
+    events:
+    - introduced: 8984c223f14dc81180ca5da66f92e5932992bb5c
+  versions:
+  - 0.12.4.4635
+  - 0.12.4.4637
+  - 0.12.4.4641
+  - 0.12.4.4643
+  ecosystem_specific:
+    severity: HIGH
+schema_version: 1.3.0
