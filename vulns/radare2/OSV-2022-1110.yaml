@@ -1,0 +1,32 @@
+id: OSV-2022-1110
+summary: Heap-buffer-overflow in parse_classes_64
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=52807
+
+  ```
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  parse_classes_64
+  classes
+  r_bin_object_set_items
+  ```
+modified: '2022-10-29T00:00:58.770919Z'
+published: '2022-10-29T00:00:58.770691Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=52807
+affected:
+- package:
+    name: radare2
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/radare2
+  ranges:
+  - type: GIT
+    repo: https://github.com/radareorg/radare2
+    events:
+    - introduced: 202a65a129975dc21ca749748917d8695c7ef968
+    - fixed: 0f2952ea080596fc51f484aca4cdc7efb59af59d
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.3.0

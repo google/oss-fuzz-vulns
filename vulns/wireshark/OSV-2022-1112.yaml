@@ -1,0 +1,31 @@
+id: OSV-2022-1112
+summary: Heap-buffer-overflow in wmem_strbuf_append_vprintf
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=52797
+
+  ```
+  Crash type: Heap-buffer-overflow READ {*}
+  Crash state:
+  wmem_strbuf_append_vprintf
+  wmem_strbuf_append_printf
+  dissect_dibs
+  ```
+modified: '2022-10-29T00:02:08.475437Z'
+published: '2022-10-29T00:02:08.475185Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=52797
+affected:
+- package:
+    name: wireshark
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/wireshark
+  ranges:
+  - type: GIT
+    repo: https://gitlab.com/wireshark/wireshark.git
+    events:
+    - introduced: f55cb116a002ae0097564522abf49e2498a7380a
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.3.0

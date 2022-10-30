@@ -1,0 +1,33 @@
+id: OSV-2022-1060
+summary: UNKNOWN READ in LibRaw::sget4
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=52475
+
+  ```
+  Crash type: UNKNOWN READ
+  Crash state:
+  LibRaw::sget4
+  LibRaw::parseAdobeRAFMakernote
+  LibRaw::parse_tiff_ifd
+  ```
+modified: '2022-10-18T00:00:26.857344Z'
+published: '2022-10-18T00:00:26.857071Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=52475
+affected:
+- package:
+    name: libraw
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libraw
+  ranges:
+  - type: GIT
+    repo: https://github.com/libraw/libraw
+    events:
+    - introduced: 4c954948ba2de262b9cb23a1843fb8651aa3dcc1
+    - fixed: c00f3dd7daeba0596899b34cbade6b6abdba46b7
+  versions:
+  - 0.21-Beta1
+  ecosystem_specific:
+    severity: MEDIUM
+schema_version: 1.3.0

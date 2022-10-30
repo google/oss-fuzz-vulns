@@ -1,0 +1,32 @@
+id: OSV-2022-1114
+summary: Heap-buffer-overflow in g_strchug
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=52798
+
+  ```
+  Crash type: Heap-buffer-overflow READ {*}
+  Crash state:
+  g_strchug
+  dissect_dcm_main
+  call_dissector_work
+  ```
+modified: '2022-10-29T00:02:16.622144Z'
+published: '2022-10-29T00:02:16.621855Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=52798
+affected:
+- package:
+    name: wireshark
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/wireshark
+  ranges:
+  - type: GIT
+    repo: https://gitlab.com/wireshark/wireshark.git
+    events:
+    - introduced: f55cb116a002ae0097564522abf49e2498a7380a
+    - fixed: 86af1d6707956fa401399d16b10eeab5f24976ce
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.3.0

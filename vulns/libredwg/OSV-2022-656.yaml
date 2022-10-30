@@ -1,0 +1,35 @@
+id: OSV-2022-656
+summary: Heap-buffer-overflow in dwg_decode_LWPOLYLINE_private
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=49630
+
+  ```
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  dwg_decode_LWPOLYLINE_private
+  dwg_decode_LWPOLYLINE
+  dwg_decode_add_object
+  ```
+modified: '2022-07-31T00:00:46.624913Z'
+published: '2022-07-31T00:00:46.624694Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=49630
+affected:
+- package:
+    name: libredwg
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libredwg
+  ranges:
+  - type: GIT
+    repo: https://github.com/LibreDWG/libredwg
+    events:
+    - introduced: 7a44f5e43b2a49bf244e24b796a657c9c78f31a1
+  versions:
+  - 0.12.4.4635
+  - 0.12.4.4637
+  - 0.12.4.4641
+  - 0.12.4.4643
+  ecosystem_specific:
+    severity: MEDIUM
+schema_version: 1.3.0
