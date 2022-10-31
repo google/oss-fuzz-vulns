@@ -1,0 +1,37 @@
+id: OSV-2022-1078
+summary: Heap-buffer-overflow in LibRaw_buffer_datastream::read
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=52579
+
+  ```
+  Crash type: Heap-buffer-overflow WRITE 6
+  Crash state:
+  LibRaw_buffer_datastream::read
+  LibRaw::read_shorts
+  LibRaw::kodak_thumb_load_raw
+  ```
+modified: '2022-10-22T00:02:28.969542Z'
+published: '2022-10-22T00:02:28.969073Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=52579
+affected:
+- package:
+    name: libraw
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libraw
+  ranges:
+  - type: GIT
+    repo: https://github.com/libraw/libraw
+    events:
+    - introduced: e53e15c72e630d6478f30e8c2c90ace96cd69a72
+    - fixed: 63794a2471b426ff4268de6982e8a6f711163e2e
+  versions:
+  - 0.20-RC2
+  - 0.20.0
+  - 0.20.1
+  - 0.20.2
+  - 0.21-Beta1
+  ecosystem_specific:
+    severity: HIGH
+schema_version: 1.3.0

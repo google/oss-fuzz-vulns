@@ -1,0 +1,32 @@
+id: OSV-2022-1120
+summary: Heap-use-after-free in xmlXIncludeDoProcess
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=52869
+
+  ```
+  Crash type: Heap-use-after-free READ 4
+  Crash state:
+  xmlXIncludeDoProcess
+  xmlXIncludeProcessNode
+  xmlTextReaderRead
+  ```
+modified: '2022-10-31T00:01:06.206161Z'
+published: '2022-10-31T00:01:06.205897Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=52869
+affected:
+- package:
+    name: libxml2
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libxml2
+  ranges:
+  - type: GIT
+    repo: https://gitlab.gnome.org/GNOME/libxml2.git
+    events:
+    - introduced: 5f664ab2cfcf5b817924e303ca9e6699487b2af9
+    - fixed: 075cee9e9f1bedb6b2ca87e73a952fb2e92da3c1
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
+schema_version: 1.3.0
