@@ -1,0 +1,36 @@
+id: OSV-2022-1113
+summary: Heap-buffer-overflow in ForceZero
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=52822
+
+  ```
+  Crash type: Heap-buffer-overflow WRITE 8
+  Crash state:
+  ForceZero
+  BuildMessage
+  SendFinished
+  ```
+modified: '2022-10-29T00:02:15.234747Z'
+published: '2022-10-29T00:02:15.234535Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=52822
+affected:
+- package:
+    name: wolfssl
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/wolfssl
+  ranges:
+  - type: GIT
+    repo: https://github.com/wolfssl/wolfssl
+    events:
+    - introduced: fd7544ca19b5540c8de1c131723b37598ee344c8
+    - fixed: 502a395723148ebc0ae672d4adfeba478169600e
+  versions:
+  - v5.5.2-stable
+  ecosystem_specific:
+    severity: HIGH
+  database_specific:
+    fixed_range: 0ea0b887a51771cc1668d71b9113bbc286dd4f8a:502a395723148ebc0ae672d4adfeba478169600e
+    introduced_range: 1c09a67f6ae08d4a31f153eebdf79325d451eea6:319901a85cb8a72e0cd6b829a3009b664dc77ae2
+schema_version: 1.3.0

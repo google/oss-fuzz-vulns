@@ -1,0 +1,33 @@
+id: OSV-2022-675
+summary: Heap-buffer-overflow in void RDKit::ParseV3000AtomProps<std::__1::vector<std::__1::basic_string_view<cha
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=49783
+
+  ```
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  void RDKit::ParseV3000AtomProps<std::__1::vector<std::__1::basic_string_view<cha
+  RDKit::ParseV3000AtomBlock
+  RDKit::FileParserUtils::ParseV3000CTAB
+  ```
+modified: '2022-08-06T00:00:51.363905Z'
+published: '2022-08-06T00:00:51.363676Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=49783
+affected:
+- package:
+    name: rdkit
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/rdkit
+  ranges:
+  - type: GIT
+    repo: https://github.com/rdkit/rdkit.git
+    events:
+    - introduced: fbbddc6035d74f12edde15bf1a93fa70a3fe6fd1
+  versions:
+  - Release_2022_09_1
+  - Release_2022_09_1b1
+  ecosystem_specific:
+    severity: MEDIUM
+schema_version: 1.3.0
