@@ -10,7 +10,7 @@ details: |
   xps_begin_typed_image
   epo_begin_typed_image
   ```
-modified: '2022-10-31T00:01:58.006365Z'
+modified: '2022-11-04T00:38:08.490845Z'
 published: '2022-10-31T00:01:58.006119Z'
 references:
 - type: REPORT
@@ -26,6 +26,7 @@ affected:
     events:
     - introduced: ee290c1aebaa172c812f21024af2dbf721fa5865
     - fixed: fa394e79b7e2228aacc4c8366cd41c3b2d6b05f5
+    - introduced: eb9fc0106d45d1ce81ab2c4ae1a3d6e90a8c0164
   versions:
   - ghostpdl-10.0.0
   - ghostpdl-10.0.0rc2
