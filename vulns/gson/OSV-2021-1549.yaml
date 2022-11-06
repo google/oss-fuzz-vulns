@@ -10,7 +10,7 @@ details: |
   java.base/java.lang.StringUTF16.compress
   java.base/java.lang.String.<init>
   ```
-modified: '2022-04-13T03:04:38.498761Z'
+modified: '2022-11-07T03:04:38.498761Z'
 published: '2021-11-09T00:00:09.004185Z'
 references:
 - type: REPORT
@@ -24,7 +24,7 @@ affected:
     repo: https://github.com/google/gson
     events:
     - introduced: cc505e1b9fa6e6e29466914a348315f73d326d27
-    - fixed: b0595c595bd2c052cd05e0283bb37b67c02bd06f
+    - fixed: 2d01d6a20f39881c692977564c1ea591d9f39027
   ecosystem_specific:
     severity: LOW
   database_specific:
