@@ -1,0 +1,34 @@
+id: OSV-2022-1149
+summary: Heap-buffer-overflow in gbNUMBER_mbc_enc_len
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=53036
+
+  ```
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  gbNUMBER_mbc_enc_len
+  match_at
+  search_in_range
+  ```
+modified: '2022-11-06T00:02:33.238946Z'
+published: '2022-11-06T00:02:33.238692Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=53036
+affected:
+- package:
+    name: oniguruma
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/oniguruma
+  ranges:
+  - type: GIT
+    repo: https://github.com/kkos/oniguruma.git
+    events:
+    - introduced: 9eefafd7d4294af6e05c8aa41c4327b9adef5029
+    - fixed: 34eac8830181bc348dab845932ae3368d1bcf3ff
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: 9a64b3925c9f2f86fa3bb5d5b8bcee22b7462b5e:f7ff8bc6e9535b0227e2d146e596befc920beca2
+  versions: []
+schema_version: 1.3.0

@@ -1,0 +1,34 @@
+id: OSV-2022-1142
+summary: Heap-buffer-overflow in onigenc_unicode_mbc_case_fold
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=53030
+
+  ```
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  onigenc_unicode_mbc_case_fold
+  mbc_case_fold
+  string_cmp_ic
+  ```
+modified: '2022-11-06T00:00:24.469652Z'
+published: '2022-11-06T00:00:24.469442Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=53030
+affected:
+- package:
+    name: oniguruma
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/oniguruma
+  ranges:
+  - type: GIT
+    repo: https://github.com/kkos/oniguruma.git
+    events:
+    - introduced: 9eefafd7d4294af6e05c8aa41c4327b9adef5029
+    - fixed: 34eac8830181bc348dab845932ae3368d1bcf3ff
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: 9a64b3925c9f2f86fa3bb5d5b8bcee22b7462b5e:f7ff8bc6e9535b0227e2d146e596befc920beca2
+  versions: []
+schema_version: 1.3.0
