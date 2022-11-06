@@ -10,7 +10,7 @@ details: |
   java.base/java.lang.StringUTF16.compress
   java.base/java.lang.String.<init>
   ```
-modified: '2022-11-07T03:04:38.498761Z'
+modified: '2022-11-06T23:48:30.706011Z'
 published: '2021-11-09T00:00:09.004185Z'
 references:
 - type: REPORT
@@ -25,8 +25,11 @@ affected:
     events:
     - introduced: cc505e1b9fa6e6e29466914a348315f73d326d27
     - fixed: 2d01d6a20f39881c692977564c1ea591d9f39027
+    - fixed: b0595c595bd2c052cd05e0283bb37b67c02bd06f
+  versions:
+  - gson-parent-2.9.0
   ecosystem_specific:
     severity: LOW
   database_specific:
+    fixed_range: 0d9f6b677ae67cbd749ebca817139041d1977831:b0595c595bd2c052cd05e0283bb37b67c02bd06f
     introduced_range: a92bbf849c99b1fc708eb3dd209af9c72110ed4d:ca2ed748ba6e31c4a319ea6f2d2dc7048021f0a0
-  versions: []
