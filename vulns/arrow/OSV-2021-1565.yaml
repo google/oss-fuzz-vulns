@@ -10,7 +10,7 @@ details: |
   parquet::DeltaByteArrayDecoder::DecodeArrow
   parquet::internal::ByteArrayChunkedRecordReader::ReadValuesSpaced
   ```
-modified: '2022-04-13T03:04:32.061851Z'
+modified: '2022-11-07T00:00:00.061851Z'
 published: '2021-11-12T00:00:22.286310Z'
 references:
 - type: REPORT
@@ -19,6 +19,12 @@ affected:
 - package:
     name: arrow
     ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/apache/arrow.git 
+    events:
+    - introduced: "41000a134e1007a587ac3afd70493a4aeed690c9"
+    - fixed: "35cc9d1409ed4bab07a40af704a13a6b2011f691"
   ecosystem_specific:
     severity: MEDIUM
   versions: []
