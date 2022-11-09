@@ -1,0 +1,32 @@
+id: OSV-2022-1143
+summary: UNKNOWN READ in Ins_MSIRP
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=53052
+
+  ```
+  Crash type: UNKNOWN READ
+  Crash state:
+  Ins_MSIRP
+  RunIns
+  Instance_Reset
+  ```
+modified: '2022-11-06T00:00:25.171703Z'
+published: '2022-11-06T00:00:25.171482Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=53052
+affected:
+- package:
+    name: ghostscript
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/ghostscript
+  ranges:
+  - type: GIT
+    repo: git://git.ghostscript.com/ghostpdl.git
+    events:
+    - introduced: 45a27a3b7d45fc75c2f9bf96cb877036f6c7e6c2
+    - fixed: cb46ea041582033e874e1e7b7149e9a9370e3b2f
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.3.0
