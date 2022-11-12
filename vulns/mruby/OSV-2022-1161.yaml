@@ -1,0 +1,32 @@
+id: OSV-2022-1161
+summary: UNKNOWN READ in pack_unpack
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=53161
+
+  ```
+  Crash type: UNKNOWN READ
+  Crash state:
+  pack_unpack
+  mrb_pack_unpack
+  mrb_vm_exec
+  ```
+modified: '2022-11-10T13:02:30.999645Z'
+published: '2022-11-10T13:02:30.999392Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=53161
+affected:
+- package:
+    name: mruby
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/mruby
+  ranges:
+  - type: GIT
+    repo: https://github.com/mruby/mruby
+    events:
+    - introduced: 4e9773ae3db701ff284171f916d3cd144d6fcae4
+    - fixed: 9fcfd01f205fdd092be0932ac0b7a6a4eb29d2b3
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.3.0

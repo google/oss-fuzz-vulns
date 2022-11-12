@@ -1,0 +1,35 @@
+id: OSV-2022-1160
+summary: Index-out-of-bounds in str_init_embed
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=53173
+
+  ```
+  Crash type: Index-out-of-bounds
+  Crash state:
+  str_init_embed
+  str_new
+  mrb_str_new
+  ```
+modified: '2022-11-10T13:02:30.023077Z'
+published: '2022-11-10T13:02:30.022816Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=53173
+affected:
+- package:
+    name: mruby
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/mruby
+  ranges:
+  - type: GIT
+    repo: https://github.com/mruby/mruby
+    events:
+    - introduced: 4e9773ae3db701ff284171f916d3cd144d6fcae4
+    - fixed: 6bcbfed8bb955a4412e0ca79da0244f97076ba18
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: 440adc447b935e505cf001155a6aa669c81abd63:98cc66070be74da84804544ea357d571b709055f
+    fixed_range: 98cc66070be74da84804544ea357d571b709055f:6bcbfed8bb955a4412e0ca79da0244f97076ba18
+  versions: []
+schema_version: 1.3.0
