@@ -10,7 +10,7 @@ details: |
   get_hdr_field
   parse_headers
   ```
-modified: '2022-11-12T13:00:05.964351Z'
+modified: '2022-11-14T00:09:11.677269Z'
 published: '2022-11-12T13:00:05.964113Z'
 references:
 - type: REPORT
@@ -25,6 +25,8 @@ affected:
     repo: https://github.com/OpenSIPS/opensips
     events:
     - introduced: 4bc9d9603f6612f5b294eb6fa55ab38a474d1ce2
+    - introduced: 0cca86fe789d77ea3e2b58326d6f282eb3433544
+    - introduced: 1a71fded7d736ff53b6dc005e3f10626417a9d21
   versions:
   - 3.1.10
   - 3.1.11
