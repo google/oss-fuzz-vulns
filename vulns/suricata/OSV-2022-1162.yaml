@@ -1,0 +1,29 @@
+id: OSV-2022-1162
+summary: Null-dereference READ
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=53181
+
+  ```
+  Crash type: Null-dereference READ
+  Crash state:
+  NULL```
+modified: '2022-11-11T13:00:54.864997Z'
+published: '2022-11-11T13:00:54.864747Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=53181
+affected:
+- package:
+    name: suricata
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/suricata
+  ranges:
+  - type: GIT
+    repo: https://github.com/OISF/suricata.git
+    events:
+    - introduced: 41d529fb24f18e142a16abbb5707fff9e916a202
+    - fixed: a4239d433a9804f0893a1e8989211e7ee8b82fef
+  ecosystem_specific:
+    severity: null
+  versions: []
+schema_version: 1.3.0
