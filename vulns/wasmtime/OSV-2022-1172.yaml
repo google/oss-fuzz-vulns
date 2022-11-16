@@ -1,0 +1,32 @@
+id: OSV-2022-1172
+summary: UNKNOWN WRITE in instantiate_many::_::run::hb58bf0fc7b8817e5
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=53381
+
+  ```
+  Crash type: UNKNOWN WRITE
+  Crash state:
+  instantiate_many::_::run::hb58bf0fc7b8817e5
+  ```
+modified: '2022-11-15T13:00:11.461842Z'
+published: '2022-11-15T13:00:11.461532Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=53381
+affected:
+- package:
+    name: wasmtime
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/wasmtime
+  ranges:
+  - type: GIT
+    repo: https://github.com/bytecodealliance/wasmtime
+    events:
+    - introduced: 7b7eeac1befb9ff63d7d4ef8331bdfe174544826
+    - fixed: 3535acbf3be032ef1ba0b469b8ab92538a8a18a6
+  ecosystem_specific:
+    severity: HIGH
+  database_specific:
+    introduced_range: 387426e7f4dd740cbee2375079a64e35fc996ed5:fba2287c543f1de0d6da3a495d14150c96b92603
+  versions: []
+schema_version: 1.3.0
