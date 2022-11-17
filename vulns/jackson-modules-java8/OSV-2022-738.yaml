@@ -1,0 +1,38 @@
+id: OSV-2022-738
+summary: Security exception in DatatypeFuzzer.fuzzerTestOneInput
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=50379
+
+  ```
+  Crash type: Security exception
+  Crash state:
+  DatatypeFuzzer.fuzzerTestOneInput
+  com.code_intelligence.jazzer.driver.FuzzTargetRunner.runOne
+  com.code_intelligence.jazzer.driver.FuzzTargetRunner.startLibFuzzer
+  ```
+modified: '2022-08-19T00:00:35.295071Z'
+published: '2022-08-19T00:00:35.294543Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=50379
+affected:
+- package:
+    name: jackson-modules-java8
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/jackson-modules-java8
+  ranges:
+  - type: GIT
+    repo: https://github.com/FasterXML/jackson-modules-java8
+    events:
+    - introduced: 2ed0cf089b61416ad23146a55b3f1fa97e98375b
+  versions:
+  - jackson-modules-java8-2.13.4
+  - jackson-modules-java8-2.14.0
+  - jackson-modules-java8-2.14.0-rc1
+  - jackson-modules-java8-2.14.0-rc2
+  - jackson-modules-java8-2.14.0-rc3
+  ecosystem_specific:
+    severity: LOW
+  database_specific:
+    introduced_range: 6544a192eae6c158d690dc4ecdb3d93cb257a8b4:f82c3af6eb968a9f02ab810be6562dd27d5a3d26
+schema_version: 1.3.0

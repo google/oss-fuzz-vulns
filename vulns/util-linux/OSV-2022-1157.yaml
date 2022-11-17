@@ -1,0 +1,32 @@
+id: OSV-2022-1157
+summary: Stack-buffer-overflow in merge_utf16be_ascii
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=53149
+
+  ```
+  Crash type: Stack-buffer-overflow WRITE 1
+  Crash state:
+  merge_utf16be_ascii
+  probe_isoNUMBER
+  superblocks_probe
+  ```
+modified: '2022-11-10T13:00:16.300418Z'
+published: '2022-11-10T13:00:16.300150Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=53149
+affected:
+- package:
+    name: util-linux
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/util-linux
+  ranges:
+  - type: GIT
+    repo: https://github.com/util-linux/util-linux
+    events:
+    - introduced: d9edc382f56791e301c2d2b193c1067c717ae8e8
+    - fixed: 32bd447fd7d0933c5aecac75cc1823b3ee897f11
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
+schema_version: 1.3.0

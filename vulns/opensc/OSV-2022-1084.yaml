@@ -1,0 +1,34 @@
+id: OSV-2022-1084
+summary: Stack-buffer-overflow in authentic_parse_size
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=52662
+
+  ```
+  Crash type: Stack-buffer-overflow READ 1
+  Crash state:
+  authentic_parse_size
+  authentic_get_tagged_data
+  authentic_parse_credential_data
+  ```
+modified: '2022-10-24T00:01:05.279893Z'
+published: '2022-10-24T00:01:05.279645Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=52662
+affected:
+- package:
+    name: opensc
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/opensc
+  ranges:
+  - type: GIT
+    repo: https://github.com/OpenSC/OpenSC
+    events:
+    - introduced: 847ccabd898f31d2ade49cbfd11fef083ee9e84a
+    - fixed: e6593b237eea851072e0d545795ee23ec0b4b524
+  versions:
+  - 0.23.0-rc1
+  - 0.23.0-rc2
+  ecosystem_specific:
+    severity: MEDIUM
+schema_version: 1.3.0
