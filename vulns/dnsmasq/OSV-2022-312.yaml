@@ -8,7 +8,7 @@ details: |
   dhcp_reply
   dhcp_packet
   FuzzDhcp
-modified: '2022-11-17T00:12:08.133057Z'
+modified: '2022-11-18T00:12:24.157510Z'
 published: '2022-04-07T00:00:40.457052Z'
 references:
 - type: REPORT
@@ -31,6 +31,8 @@ affected:
   - v2.88test2
   - v2.88test3
   - v2.88rc1
+  - v2.88rc2
+  - v2.88rc3
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.2.0
