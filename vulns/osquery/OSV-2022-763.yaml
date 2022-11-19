@@ -1,0 +1,33 @@
+id: OSV-2022-763
+summary: Heap-buffer-overflow in sqlite3VdbeExec
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=50466
+
+  ```
+  Crash type: Heap-buffer-overflow READ {*}
+  Crash state:
+  sqlite3VdbeExec
+  sqlite3_step
+  osquery::readRows
+  ```
+modified: '2022-08-21T00:00:23.656294Z'
+published: '2022-08-21T00:00:23.656015Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=50466
+affected:
+- package:
+    name: osquery
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/osquery
+  ranges:
+  - type: GIT
+    repo: https://github.com/osquery/osquery
+    events:
+    - introduced: 877d5e69ab97e15800b5c5128b3de2cf6f322942
+  versions:
+  - 5.5.1
+  - 5.6.0
+  ecosystem_specific:
+    severity: MEDIUM
+schema_version: 1.3.0
