@@ -10,7 +10,7 @@ details: |
   dwg_json_REPEAT
   dwg_json_object
   ```
-modified: '2022-11-19T00:36:32.855688Z'
+modified: '2022-11-20T00:16:38.866820Z'
 published: '2022-05-07T00:00:06.828980Z'
 references:
 - type: REPORT
@@ -25,6 +25,7 @@ affected:
     repo: https://github.com/LibreDWG/libredwg
     events:
     - introduced: 9a5a3259a4434de01693992fca655575f9eff4ee
+    - fixed: 756d716867a4e862faa07ae395254b048b1322dc
   versions:
   - 0.12.4.4462
   - 0.12.4.4466
@@ -66,7 +67,6 @@ affected:
   - 0.12.4.4641
   - 0.12.4.4643
   - 0.12.4.4647
-  - 0.12.4.4652
   ecosystem_specific:
     severity: HIGH
 schema_version: 1.2.0
