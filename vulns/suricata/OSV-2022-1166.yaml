@@ -1,0 +1,33 @@
+id: OSV-2022-1166
+summary: Use-of-uninitialized-value in TLSDecodeHandshakeHello
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=53209
+
+  ```
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  TLSDecodeHandshakeHello
+  SSLv3ParseHandshakeType
+  SSLDecode
+  ```
+modified: '2022-11-12T13:00:09.892117Z'
+published: '2022-11-12T13:00:09.891864Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=53209
+affected:
+- package:
+    name: suricata
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/suricata
+  ranges:
+  - type: GIT
+    repo: https://github.com/OISF/suricata.git
+    events:
+    - introduced: ad6bea510822c5905b7fd8bce2e7a386ee612ff6
+    - fixed: cc23923de14aa703690de2bdb50090e12e54d5ed
+  versions:
+  - suricata-7.0.0-beta1
+  ecosystem_specific:
+    severity: MEDIUM
+schema_version: 1.3.0
