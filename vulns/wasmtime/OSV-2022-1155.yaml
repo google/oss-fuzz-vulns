@@ -9,7 +9,7 @@ details: |
   wasmtime_fuzzing::oracles::instantiate_many::h1a28dda90c13f877
   instantiate_many::_::run::he4646225c064edb2
   ```
-modified: '2022-11-08T13:02:21.272966Z'
+modified: '2022-11-22T01:05:19.140670Z'
 published: '2022-11-08T13:02:21.272721Z'
 references:
 - type: REPORT
@@ -25,9 +25,10 @@ affected:
     events:
     - introduced: d3a6181939015eabd30d0c154b1cf2922e9dc4ba
     - fixed: dece901d1694bd5f148b67afc9a512e4cc344591
+  versions:
+  - v3.0.0
   ecosystem_specific:
     severity: HIGH
   database_specific:
     fixed_range: b077854b57b3aa25295e37ad55a21300e7768c7c:dece901d1694bd5f148b67afc9a512e4cc344591
-  versions: []
 schema_version: 1.3.0
