@@ -1,0 +1,32 @@
+id: OSV-2022-1199
+summary: Use-of-uninitialized-value in rawspeed::RawImageData::checkRowIsInitialized
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=53618
+
+  ```
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  rawspeed::RawImageData::checkRowIsInitialized
+  rawspeed::RawImageData::checkMemIsInitialized
+  rawspeed::RawDecoder::decodeRaw
+  ```
+modified: '2022-11-23T13:02:10.345722Z'
+published: '2022-11-23T13:02:10.345362Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=53618
+affected:
+- package:
+    name: librawspeed
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/librawspeed
+  ranges:
+  - type: GIT
+    repo: https://github.com/darktable-org/rawspeed.git
+    events:
+    - introduced: 1828186ad516a4ca06689e0c0f28b0d25518e430
+    - fixed: a27d3e37d8a07af333d7626f0d75cc8b49a12428
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.3.0
