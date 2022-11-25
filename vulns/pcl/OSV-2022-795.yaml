@@ -1,0 +1,31 @@
+id: OSV-2022-795
+summary: UNKNOWN READ in pcl::PLYReader::read
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=50663
+
+  ```
+  Crash type: UNKNOWN READ
+  Crash state:
+  pcl::PLYReader::read
+  ply_io.h
+  ```
+modified: '2022-08-28T00:00:11.408669Z'
+published: '2022-08-28T00:00:11.408403Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=50663
+affected:
+- package:
+    name: pcl
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/pcl
+  ranges:
+  - type: GIT
+    repo: https://github.com/PointCloudLibrary/pcl
+    events:
+    - introduced: 3f897554837966b71aa3bfd72dd7ce482e5e55ae
+  versions:
+  - pcl-1.13.0-rc1
+  ecosystem_specific:
+    severity: MEDIUM
+schema_version: 1.3.0
