@@ -10,7 +10,7 @@ details: |
   msgpack_unpack_next
   cb_stdout_flush
   ```
-modified: '2022-11-18T13:02:20.167502Z'
+modified: '2022-11-25T00:13:42.942619Z'
 published: '2022-11-18T13:02:20.167230Z'
 references:
 - type: REPORT
@@ -26,6 +26,7 @@ affected:
     events:
     - introduced: 145261858d0d7fd1bce4e7bd51c5a69dbce208cc
     - fixed: b9846054287dd112e4229f24e73936c26a77e52c
+    - introduced: d14b203dd4108b4156acf3d9046a47c46da8f8ce
   versions:
   - v1.9.7
   - v1.9.8
