@@ -1,0 +1,32 @@
+id: OSV-2022-1208
+summary: Stack-buffer-overflow in cmap_put_ranges
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=53711
+
+  ```
+  Crash type: Stack-buffer-overflow READ 1
+  Crash state:
+  cmap_put_ranges
+  psf_write_cmap
+  pdf_write_cmap
+  ```
+modified: '2022-11-25T13:00:40.523768Z'
+published: '2022-11-25T13:00:40.523526Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=53711
+affected:
+- package:
+    name: ghostscript
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/ghostscript
+  ranges:
+  - type: GIT
+    repo: git://git.ghostscript.com/ghostpdl.git
+    events:
+    - introduced: efafa5e9761102fa8190f5bc48231aa3d366b6d9
+    - fixed: f4bcc37667d82541eaf8a29e0b021fe1d7aa7b5b
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.3.0

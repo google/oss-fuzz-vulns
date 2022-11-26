@@ -1,0 +1,36 @@
+id: OSV-2022-1178
+summary: Heap-buffer-overflow in bytes_copy_rectangle_zero_padding
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=53456
+
+  ```
+  Crash type: Heap-buffer-overflow WRITE 7
+  Crash state:
+  bytes_copy_rectangle_zero_padding
+  cmd_put_bits
+  clist_change_bits
+  ```
+modified: '2022-11-18T13:00:40.887954Z'
+published: '2022-11-18T13:00:40.887717Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=53456
+affected:
+- package:
+    name: ghostscript
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/ghostscript
+  ranges:
+  - type: GIT
+    repo: git://git.ghostscript.com/ghostpdl.git
+    events:
+    - introduced: ee290c1aebaa172c812f21024af2dbf721fa5865
+    - fixed: db34d54064ae35adc78a499c49363a256f5145f6
+  versions:
+  - ghostpdl-10.0.0
+  - ghostpdl-10.0.0rc2
+  ecosystem_specific:
+    severity: HIGH
+  database_specific:
+    introduced_range: 19c421c10385b89da8564d664c2c5679c7558035:1f56d7736465c45a2785d6bb3db1c37289599b40
+schema_version: 1.3.0
