@@ -10,7 +10,7 @@ details: |
   cmd_put_bits
   clist_change_bits
   ```
-modified: '2022-11-18T13:00:40.887954Z'
+modified: '2022-11-27T00:20:07.053947Z'
 published: '2022-11-18T13:00:40.887717Z'
 references:
 - type: REPORT
@@ -26,6 +26,7 @@ affected:
     events:
     - introduced: ee290c1aebaa172c812f21024af2dbf721fa5865
     - fixed: db34d54064ae35adc78a499c49363a256f5145f6
+    - introduced: eb9fc0106d45d1ce81ab2c4ae1a3d6e90a8c0164
   versions:
   - ghostpdl-10.0.0
   - ghostpdl-10.0.0rc2
