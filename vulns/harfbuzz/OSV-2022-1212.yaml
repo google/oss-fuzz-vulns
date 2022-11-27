@@ -1,0 +1,32 @@
+id: OSV-2022-1212
+summary: Heap-buffer-overflow in OT::hb_ot_apply_context_t::skipping_iterator_t::next
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=53722
+
+  ```
+  Crash type: Heap-buffer-overflow READ 4
+  Crash state:
+  OT::hb_ot_apply_context_t::skipping_iterator_t::next
+  bool OT::match_input<OT::IntType<unsigned short, 2u> >
+  bool OT::context_apply_lookup<OT::IntType<unsigned short, 2u> >
+  ```
+modified: '2022-11-26T13:00:53.392505Z'
+published: '2022-11-26T13:00:53.392207Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=53722
+affected:
+- package:
+    name: harfbuzz
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/harfbuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/harfbuzz/harfbuzz.git
+    events:
+    - introduced: 1fa64c0c23ed86d60117198420587aee81fdc8d8
+    - fixed: 4c49daf7cd961fb47126baf04240243736cae606
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.3.0
