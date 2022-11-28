@@ -10,7 +10,7 @@ details: |
   msgpack_unpack_next
   cb_stdout_flush
   ```
-modified: '2022-11-25T00:13:42.942619Z'
+modified: '2022-11-28T00:14:28.341608Z'
 published: '2022-11-18T13:02:20.167230Z'
 references:
 - type: REPORT
@@ -42,6 +42,7 @@ affected:
   - v2.0.4
   - v2.0.5
   - v2.0.6
+  - v1.9.10
   ecosystem_specific:
     severity: HIGH
   database_specific:
