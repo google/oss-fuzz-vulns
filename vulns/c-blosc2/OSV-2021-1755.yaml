@@ -10,7 +10,7 @@ details: |
   ndlz_decompress
   blosc_d
   ```
-modified: '2022-10-24T00:05:55.757639Z'
+modified: '2022-11-30T00:09:20.439752Z'
 published: '2021-12-25T00:01:45.638342Z'
 references:
 - type: REPORT
@@ -40,6 +40,7 @@ affected:
   - v2.4.1
   - v2.4.2
   - v2.4.3
+  - v2.5.0
   ecosystem_specific:
     severity: HIGH
 schema_version: 1.2.0
