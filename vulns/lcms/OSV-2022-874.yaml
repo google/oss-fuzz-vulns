@@ -1,0 +1,36 @@
+id: OSV-2022-874
+summary: UNKNOWN WRITE in from8to16
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=51128
+
+  ```
+  Crash type: UNKNOWN WRITE
+  Crash state:
+  from8to16
+  _cmsHandleExtraChannels
+  CachedXFORM
+  ```
+modified: '2022-09-10T00:00:51.814238Z'
+published: '2022-09-10T00:00:51.813984Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=51128
+affected:
+- package:
+    name: lcms
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/lcms
+  ranges:
+  - type: GIT
+    repo: https://github.com/mm2/Little-CMS.git
+    events:
+    - introduced: ad121a18594e496d0b76328d08403ea0bd304183
+    - fixed: caab4c07e60022a0f776b543eaa30785e2bb42ed
+  versions:
+  - lcms2.14
+  - lcms2.14rc1
+  ecosystem_specific:
+    severity: HIGH
+  database_specific:
+    introduced_range: 991713e8456e62de82793e0594997fe997045431:be25a63be953dbfeef41cfec42550739ba74ea63
+schema_version: 1.3.0
