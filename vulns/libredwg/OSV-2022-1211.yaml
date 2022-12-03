@@ -1,0 +1,64 @@
+id: OSV-2022-1211
+summary: Heap-buffer-overflow in bit_calc_CRC
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=53750
+
+  ```
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  bit_calc_CRC
+  decode_preR13
+  dwg_decode
+  ```
+modified: '2022-11-26T13:00:13.775771Z'
+published: '2022-11-26T13:00:13.775523Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=53750
+affected:
+- package:
+    name: libredwg
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libredwg
+  ranges:
+  - type: GIT
+    repo: https://github.com/LibreDWG/libredwg
+    events:
+    - introduced: 7bda865d59f843e174ac7e14c7dfe25243900956
+    - fixed: 98729e9d56bd5e8e0530de39d955dc838803cbb2
+  versions:
+  - 0.12.4.4522
+  - 0.12.4.4527
+  - 0.12.4.4530
+  - 0.12.4.4533
+  - 0.12.4.4535
+  - 0.12.4.4542
+  - 0.12.4.4544
+  - 0.12.4.4545
+  - 0.12.4.4548
+  - 0.12.4.4550
+  - 0.12.4.4553
+  - 0.12.4.4566
+  - 0.12.4.4567
+  - 0.12.4.4572
+  - 0.12.4.4583
+  - 0.12.4.4590
+  - 0.12.4.4598
+  - 0.12.4.4601
+  - 0.12.4.4606
+  - 0.12.4.4607
+  - 0.12.4.4608
+  - 0.12.4.4613
+  - 0.12.4.4615
+  - 0.12.4.4635
+  - 0.12.4.4637
+  - 0.12.4.4641
+  - 0.12.4.4643
+  - 0.12.4.4647
+  - 0.12.4.4652
+  - 0.12.4.4654
+  - 0.12.4.4658
+  - 0.12.4.4660
+  ecosystem_specific:
+    severity: MEDIUM
+schema_version: 1.3.0
