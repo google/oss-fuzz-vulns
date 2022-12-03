@@ -10,7 +10,7 @@ details: |
   dwg_add_STYLE
   decode_preR13_section
   ```
-modified: '2022-12-02T00:15:01.399722Z'
+modified: '2022-12-03T00:15:46.871208Z'
 published: '2022-05-09T00:00:48.738027Z'
 references:
 - type: REPORT
@@ -25,6 +25,7 @@ affected:
     repo: https://github.com/LibreDWG/libredwg
     events:
     - introduced: 5514add433990bd19845bb5591b44f187487230f
+    - fixed: 7209631ce9b38244dd5ac69da8e21cb9478c24e8
   versions:
   - 0.12.4.4590
   - 0.12.4.4598
@@ -43,8 +44,6 @@ affected:
   - 0.12.4.4654
   - 0.12.4.4658
   - 0.12.4.4660
-  - 0.12.4.4668
-  - 0.12.5.4669
   ecosystem_specific:
     severity: HIGH
 schema_version: 1.2.0
