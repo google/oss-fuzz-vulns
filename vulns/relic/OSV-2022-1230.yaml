@@ -1,0 +1,34 @@
+id: OSV-2022-1230
+summary: Use-of-uninitialized-value in bn_trim
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=53911
+
+  ```
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  bn_trim
+  bn_div_dig
+  bn_size_str
+  ```
+modified: '2022-12-03T13:00:07.835919Z'
+published: '2022-12-03T13:00:07.835694Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=53911
+affected:
+- package:
+    name: relic
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/relic
+  ranges:
+  - type: GIT
+    repo: https://github.com/relic-toolkit/relic.git
+    events:
+    - introduced: 4d57a04409301a2a6a2564a54dcc22da3419c9e5
+    - fixed: d4cf7f6faa73136fe14938fa47b24fcc6c626c47
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    fixed_range: 4d57a04409301a2a6a2564a54dcc22da3419c9e5:d4cf7f6faa73136fe14938fa47b24fcc6c626c47
+  versions: []
+schema_version: 1.3.0
