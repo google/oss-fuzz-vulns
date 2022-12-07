@@ -8,7 +8,7 @@ details: |
   void unwindstack::Symbols::BuildRemapTable<Elf64_Sym>
   bool unwindstack::Symbols::GetName<Elf64_Sym>
   unwindstack::ElfInterfaceImpl<unwindstack::ElfTypes64>::GetFunctionName
-modified: '2022-12-06T00:16:35.561418Z'
+modified: '2022-12-07T00:17:22.614021Z'
 published: '2022-04-11T00:00:39.202876Z'
 references:
 - type: REPORT
@@ -23,7 +23,83 @@ affected:
     repo: https://android.googlesource.com/platform/external/perfetto/
     events:
     - introduced: da9e4d482dd38db6cdf5d1316adbad1c97a9f7a1
+    - fixed: ca566bde5f2e1159a8debf4f8cdec4973a2f0e61
   versions:
+  - aml_adb_331011040
+  - aml_adb_331011050
+  - aml_ads_331131000
+  - aml_art_331012050
+  - aml_ase_331011020
+  - aml_cbr_330810000
+  - aml_cbr_330911010
+  - aml_cbr_331013010
+  - aml_con_331011010
+  - aml_doc_310851020
+  - aml_ext_331012020
+  - aml_go_adb_330913000
+  - aml_go_ads_330913000
+  - aml_go_art_330913000
+  - aml_go_ase_330913000
+  - aml_go_cbr_330912000
+  - aml_go_con_330913000
+  - aml_go_doc_330912000
+  - aml_go_ext_330912000
+  - aml_go_ips_330911000
+  - aml_go_med_330913000
+  - aml_go_mpr_330912000
+  - aml_go_net_330913000
+  - aml_go_neu_330912000
+  - aml_go_odp_330912000
+  - aml_go_per_330912000
+  - aml_go_res_330912000
+  - aml_go_sch_330911000
+  - aml_go_sdk_330810000
+  - aml_go_sta_330911000
+  - aml_go_swc_330913000
+  - aml_go_tet_330914010
+  - aml_go_tz4_330912000
+  - aml_go_uwb_330912000
+  - aml_go_wif_330911000
+  - aml_ips_331014020
+  - aml_med_331012020
+  - aml_mpr_311911090
+  - aml_mpr_330811020
+  - aml_mpr_330911040
+  - aml_mpr_331011070
+  - aml_net_330811010
+  - aml_net_330910010
+  - aml_net_331011030
+  - aml_per_330811030
+  - aml_per_330912010
+  - aml_per_331019040
+  - aml_res_330810000
+  - aml_res_330910000
+  - aml_res_331011050
+  - aml_sdk_311710000
+  - aml_sdk_330810010
+  - aml_sdk_330810050
+  - aml_sta_330910000
+  - aml_sta_331010010
+  - aml_swc_331012020
+  - aml_tet_311811050
+  - aml_tet_330812150
+  - aml_tet_330911010
+  - aml_tet_331012080
+  - aml_tz2_303200001
+  - aml_tz2_303800001
+  - aml_tz2_303800002
+  - aml_tz3_311312010
+  - aml_tz3_312410010
+  - aml_tz3_312410020
+  - aml_tz4_331012000
+  - aml_tz4_331012040
+  - aml_tz4_331012050
+  - aml_uwb_330810010
+  - aml_uwb_331015040
+  - aml_wif_311811030
+  - aml_wif_330810040
+  - aml_wif_330910030
+  - aml_wif_331016070
   - android-11.0.0_r30
   - android-11.0.0_r32
   - android-11.0.0_r33
@@ -69,7 +145,23 @@ affected:
   - android-12.1.0_r1
   - android-12.1.0_r10
   - android-12.1.0_r11
+  - android-12.1.0_r12
+  - android-12.1.0_r13
+  - android-12.1.0_r14
+  - android-12.1.0_r15
+  - android-12.1.0_r16
+  - android-12.1.0_r17
+  - android-12.1.0_r18
+  - android-12.1.0_r19
   - android-12.1.0_r2
+  - android-12.1.0_r20
+  - android-12.1.0_r21
+  - android-12.1.0_r22
+  - android-12.1.0_r23
+  - android-12.1.0_r24
+  - android-12.1.0_r25
+  - android-12.1.0_r26
+  - android-12.1.0_r27
   - android-12.1.0_r3
   - android-12.1.0_r4
   - android-12.1.0_r5
@@ -77,13 +169,37 @@ affected:
   - android-12.1.0_r7
   - android-12.1.0_r8
   - android-12.1.0_r9
+  - android-13.0.0_r1
+  - android-13.0.0_r10
+  - android-13.0.0_r11
+  - android-13.0.0_r12
+  - android-13.0.0_r13
+  - android-13.0.0_r14
+  - android-13.0.0_r15
+  - android-13.0.0_r16
+  - android-13.0.0_r17
+  - android-13.0.0_r18
+  - android-13.0.0_r2
+  - android-13.0.0_r3
+  - android-13.0.0_r4
+  - android-13.0.0_r5
+  - android-13.0.0_r6
+  - android-13.0.0_r7
+  - android-13.0.0_r8
+  - android-13.0.0_r9
   - android-cts-11.0_r2
   - android-cts-12.0_r1
   - android-cts-12.0_r2
   - android-cts-12.0_r3
   - android-cts-12.0_r4
+  - android-cts-12.0_r5
+  - android-cts-12.0_r6
   - android-cts-12.1_r1
   - android-cts-12.1_r2
+  - android-cts-12.1_r3
+  - android-cts-12.1_r4
+  - android-cts-13.0_r1
+  - android-cts-13.0_r2
   - android-mainline-11.0.0_r12
   - android-mainline-11.0.0_r13
   - android-mainline-11.0.0_r14
@@ -125,11 +241,25 @@ affected:
   - android-mainline-12.0.0_r106
   - android-mainline-12.0.0_r107
   - android-mainline-12.0.0_r108
+  - android-mainline-12.0.0_r109
   - android-mainline-12.0.0_r11
   - android-mainline-12.0.0_r110
+  - android-mainline-12.0.0_r112
   - android-mainline-12.0.0_r113
   - android-mainline-12.0.0_r114
+  - android-mainline-12.0.0_r115
+  - android-mainline-12.0.0_r116
+  - android-mainline-12.0.0_r117
+  - android-mainline-12.0.0_r118
+  - android-mainline-12.0.0_r119
   - android-mainline-12.0.0_r12
+  - android-mainline-12.0.0_r120
+  - android-mainline-12.0.0_r121
+  - android-mainline-12.0.0_r122
+  - android-mainline-12.0.0_r123
+  - android-mainline-12.0.0_r124
+  - android-mainline-12.0.0_r125
+  - android-mainline-12.0.0_r126
   - android-mainline-12.0.0_r13
   - android-mainline-12.0.0_r15
   - android-mainline-12.0.0_r16
@@ -201,6 +331,7 @@ affected:
   - android-mainline-12.0.0_r79
   - android-mainline-12.0.0_r8
   - android-mainline-12.0.0_r80
+  - android-mainline-12.0.0_r81
   - android-mainline-12.0.0_r82
   - android-mainline-12.0.0_r83
   - android-mainline-12.0.0_r84
@@ -221,6 +352,11 @@ affected:
   - android-mainline-12.0.0_r98
   - android-mainline-12.0.0_r99
   - android-platform-12.0.0_r1
+  - android-platform-12.0.0_r10
+  - android-platform-12.0.0_r11
+  - android-platform-12.0.0_r12
+  - android-platform-12.0.0_r13
+  - android-platform-12.0.0_r14
   - android-platform-12.0.0_r2
   - android-platform-12.0.0_r3
   - android-platform-12.0.0_r4
@@ -230,10 +366,18 @@ affected:
   - android-platform-12.0.0_r8
   - android-platform-12.0.0_r9
   - android-platform-12.1.0_r1
+  - android-platform-12.1.0_r10
   - android-platform-12.1.0_r2
   - android-platform-12.1.0_r3
   - android-platform-12.1.0_r4
   - android-platform-12.1.0_r5
+  - android-platform-12.1.0_r6
+  - android-platform-12.1.0_r7
+  - android-platform-12.1.0_r8
+  - android-platform-12.1.0_r9
+  - android-platform-13.0.0_r1
+  - android-platform-13.0.0_r2
+  - android-platform-13.0.0_r3
   - android-s-beta-1
   - android-s-beta-2
   - android-s-beta-3
@@ -249,6 +393,12 @@ affected:
   - android-security-12.0.0_r35
   - android-security-12.0.0_r36
   - android-security-12.0.0_r37
+  - android-security-12.0.0_r38
+  - android-security-12.0.0_r39
+  - android-security-12.0.0_r40
+  - android-security-12.0.0_r41
+  - android-security-12.0.0_r42
+  - android-security-13.0.0_r1
   - android-t-beta-3
   - android-t-preview-1
   - android-t-preview-2
@@ -257,8 +407,14 @@ affected:
   - android-vts-12.0_r2
   - android-vts-12.0_r3
   - android-vts-12.0_r4
+  - android-vts-12.0_r5
+  - android-vts-12.0_r6
   - android-vts-12.1_r1
   - android-vts-12.1_r2
+  - android-vts-12.1_r3
+  - android-vts-12.1_r4
+  - android-vts-13.0_r1
+  - android-vts-13.0_r2
   - platform-tools-29.0.1
   - platform-tools-29.0.2
   - platform-tools-29.0.3
@@ -278,8 +434,37 @@ affected:
   - platform-tools-32.0.0
   - platform-tools-33.0.0
   - platform-tools-33.0.1
+  - platform-tools-33.0.2
+  - platform-tools-33.0.3
   - studio-2021.2.1
   - studio-2021.2.1-patch1
+  - studio-2021.2.1-patch2
+  - studio-2021.3.1
+  - studio-2021.3.1-beta
+  - studio-2022.1.1-beta2
+  - studio-2022.1.1-beta4
+  - studio-2022.1.1-canary
+  - studio-2022.2.1-canary2
+  - studio-2022.2.1-canary7
+  - t_frc_adb_330444000
+  - t_frc_art_330443060
+  - t_frc_cbr_330443000
+  - t_frc_con_330443020
+  - t_frc_doc_330443000
+  - t_frc_doc_330443060
+  - t_frc_ext_330443000
+  - t_frc_ips_330443010
+  - t_frc_med_330443030
+  - t_frc_net_330443000
+  - t_frc_neu_330443000
+  - t_frc_neu_330443030
+  - t_frc_per_330444010
+  - t_frc_res_330443000
+  - t_frc_sch_330443010
+  - t_frc_sch_330443040
+  - t_frc_sta_330443010
+  - t_frc_swc_330443010
+  - t_frc_swc_330443040
   - v10.0
   - v11.0
   - v12.0
@@ -305,195 +490,14 @@ affected:
   - v26.0
   - v26.1
   - v27.0
+  - v27.1
+  - v28.0
+  - v29.0
+  - v30.0
+  - v31.0
   - v7.0
   - v8.0
   - v9.0
-  - android-mainline-12.0.0_r115
-  - android-mainline-12.0.0_r116
-  - android-mainline-12.0.0_r117
-  - android-mainline-12.0.0_r118
-  - android-mainline-12.0.0_r119
-  - android-mainline-12.0.0_r120
-  - android-mainline-12.0.0_r121
-  - android-mainline-12.0.0_r122
-  - android-mainline-12.0.0_r123
-  - android-mainline-12.0.0_r124
-  - android-mainline-12.0.0_r125
-  - android-mainline-12.0.0_r126
-  - studio-2021.3.1-beta
-  - studio-2022.1.1-canary
-  - v27.1
-  - android-12.1.0_r12
-  - android-12.1.0_r13
-  - android-12.1.0_r14
-  - android-12.1.0_r15
-  - android-12.1.0_r16
-  - android-12.1.0_r17
-  - android-12.1.0_r18
-  - android-platform-12.0.0_r10
-  - android-platform-12.1.0_r6
-  - android-security-12.0.0_r38
-  - android-12.1.0_r19
-  - android-12.1.0_r20
-  - v28.0
-  - android-12.1.0_r22
-  - android-12.1.0_r24
-  - android-12.1.0_r21
-  - android-12.1.0_r23
-  - android-12.1.0_r25
-  - android-12.1.0_r26
-  - android-cts-12.0_r5
-  - android-cts-12.1_r3
-  - android-13.0.0_r1
-  - android-13.0.0_r2
-  - android-13.0.0_r3
-  - android-cts-13.0_r1
-  - android-security-13.0.0_r1
-  - android-vts-13.0_r1
-  - android-vts-12.0_r5
-  - android-vts-12.1_r3
-  - platform-tools-33.0.2
-  - platform-tools-33.0.3
-  - studio-2021.2.1-patch2
-  - aml_doc_310851020
-  - aml_mpr_311911090
-  - aml_sdk_311710000
-  - aml_tet_311811050
-  - aml_tz2_303200001
-  - aml_tz3_311312010
-  - aml_wif_311811030
-  - android-mainline-12.0.0_r109
-  - android-mainline-12.0.0_r112
-  - android-mainline-12.0.0_r81
-  - t_frc_adb_330444000
-  - t_frc_art_330443060
-  - t_frc_cbr_330443000
-  - t_frc_con_330443020
-  - t_frc_ext_330443000
-  - t_frc_ips_330443010
-  - t_frc_med_330443030
-  - t_frc_net_330443000
-  - t_frc_neu_330443000
-  - t_frc_per_330444010
-  - t_frc_res_330443000
-  - t_frc_sch_330443010
-  - t_frc_sta_330443010
-  - t_frc_swc_330443010
-  - android-12.1.0_r27
-  - android-13.0.0_r4
-  - android-platform-12.0.0_r11
-  - android-platform-12.1.0_r7
-  - v29.0
-  - android-security-12.0.0_r39
-  - android-13.0.0_r5
-  - android-13.0.0_r6
-  - studio-2021.3.1
-  - aml_go_adb_330913000
-  - aml_go_art_330913000
-  - aml_go_ase_330913000
-  - aml_go_cbr_330912000
-  - aml_go_con_330913000
-  - aml_go_doc_330912000
-  - aml_go_ext_330912000
-  - aml_go_ips_330911000
-  - aml_go_med_330913000
-  - aml_go_mpr_330912000
-  - aml_go_net_330913000
-  - aml_go_neu_330912000
-  - aml_go_per_330912000
-  - aml_go_res_330912000
-  - aml_go_sch_330911000
-  - aml_go_sta_330911000
-  - aml_go_swc_330913000
-  - aml_go_tet_330914010
-  - aml_go_tz4_330912000
-  - aml_go_uwb_330912000
-  - aml_go_wif_330911000
-  - aml_go_ads_330913000
-  - aml_go_odp_330912000
-  - aml_go_sdk_330810000
-  - android-13.0.0_r7
-  - android-13.0.0_r8
-  - android-security-12.0.0_r40
-  - android-platform-12.0.0_r12
-  - android-platform-12.1.0_r8
-  - android-platform-13.0.0_r1
-  - studio-2022.1.1-beta2
-  - studio-2022.1.1-canary2
-  - v30.0
-  - aml_cbr_330810000
-  - studio-2022.2.1-canary2
-  - aml_cbr_330911010
-  - aml_mpr_330811020
-  - aml_mpr_330911040
-  - aml_net_330811010
-  - aml_net_330910010
-  - aml_per_330811030
-  - aml_per_330912010
-  - aml_res_330810000
-  - aml_res_330910000
-  - aml_tet_330812150
-  - aml_tet_330911010
-  - aml_tz4_331012000
-  - aml_wif_330810040
-  - aml_wif_330910030
-  - t_frc_swc_330443040
-  - android-13.0.0_r10
-  - android-13.0.0_r11
-  - android-13.0.0_r9
-  - aml_sta_330910000
-  - aml_sdk_330810010
-  - aml_adb_331011040
-  - aml_art_331012050
-  - aml_ase_331011020
-  - aml_cbr_331013010
-  - aml_con_331011010
-  - aml_ext_331012020
-  - aml_ips_331014020
-  - aml_med_331012020
-  - aml_mpr_331011070
-  - aml_net_331011030
-  - aml_per_331019040
-  - aml_res_331011050
-  - aml_sdk_330810050
-  - aml_swc_331012020
-  - aml_tet_331012080
-  - aml_tz2_303800001
-  - aml_tz3_312410010
-  - aml_tz4_331012040
-  - aml_uwb_330810010
-  - aml_uwb_331015040
-  - aml_wif_331016070
-  - t_frc_doc_330443000
-  - t_frc_doc_330443060
-  - t_frc_neu_330443030
-  - t_frc_sch_330443040
-  - studio-2022.1.1-beta4
-  - studio-2022.2.1-canary7
-  - aml_sta_331010010
-  - android-13.0.0_r12
-  - android-13.0.0_r13
-  - android-13.0.0_r14
-  - android-platform-12.0.0_r13
-  - android-platform-12.1.0_r9
-  - android-platform-13.0.0_r2
-  - aml_ads_331131000
-  - android-13.0.0_r15
-  - android-security-12.0.0_r41
-  - android-cts-12.0_r6
-  - android-cts-12.1_r4
-  - android-cts-13.0_r2
-  - v31.0
-  - aml_adb_331011050
-  - android-vts-12.0_r6
-  - android-vts-12.1_r4
-  - android-vts-13.0_r2
-  - aml_tz2_303800002
-  - aml_tz3_312410020
-  - aml_tz4_331012050
-  - android-13.0.0_r16
-  - android-13.0.0_r17
-  - android-13.0.0_r18
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.2.0
