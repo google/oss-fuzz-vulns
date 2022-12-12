@@ -10,7 +10,7 @@ details: |
   pcpp::HttpRequestFirstLine::HttpRequestFirstLine
   pcpp::HttpRequestLayer::HttpRequestLayer
   ```
-modified: '2022-09-06T00:01:33.775976Z'
+modified: '2022-12-12T00:11:45.288626Z'
 published: '2022-09-06T00:01:33.775721Z'
 references:
 - type: REPORT
@@ -25,6 +25,7 @@ affected:
     repo: https://github.com/seladb/PcapPlusPlus
     events:
     - introduced: fbc52d37c6a7e8cc75e4950d2621cbd907c6cf8a
+    - fixed: e9884b9637e171f5e0b846fe55a9a170faa97b3b
   versions:
   - v21.05
   - v21.11
