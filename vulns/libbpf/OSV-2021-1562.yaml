@@ -10,7 +10,7 @@ details: |
   bpf_object__open_mem
   bpf-object-fuzzer.c
   ```
-modified: '2022-09-30T00:34:59.178401Z'
+modified: '2022-12-14T22:22:31.473646Z'
 published: '2021-11-11T00:01:42.735141Z'
 references:
 - type: REPORT
@@ -23,7 +23,8 @@ affected:
   - type: GIT
     repo: https://github.com/libbpf/libbpf
     events:
-    - introduced: d7982f3948552963e009c06f4ed42c376934bc62
+    - introduced: 421213a052aebb0c357b6d0872d6c57f2113800d
+    - fixed: 741277511035893c72a34df05da3b943afa747a4
   versions:
   - v0.6.0
   - v0.6.1
