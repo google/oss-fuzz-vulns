@@ -1,0 +1,32 @@
+id: OSV-2022-1262
+summary: Heap-use-after-free in HEIFHandler::ensureDecoder
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=54246
+
+  ```
+  Crash type: Heap-use-after-free READ 3
+  Crash state:
+  HEIFHandler::ensureDecoder
+  HEIFHandler::read
+  kimgio_fuzzer.cc
+  ```
+modified: '2022-12-14T13:00:07.679889Z'
+published: '2022-12-14T13:00:07.679619Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=54246
+affected:
+- package:
+    name: kimageformats
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/kimageformats
+  ranges:
+  - type: GIT
+    repo: https://invent.kde.org/frameworks/kimageformats.git
+    events:
+    - introduced: a30f043e5d99fa4be5e0c2f0b690d4aadf216549
+    - fixed: f4ca3f6783bb3d78a9f158efe4874d426b75ae72
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
+schema_version: 1.3.0
