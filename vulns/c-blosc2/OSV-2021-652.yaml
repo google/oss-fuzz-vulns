@@ -10,7 +10,7 @@ details: |
   blosc2_free_ctx
   blosc2_schunk_free
   ```
-modified: '2022-12-09T00:12:09.236290Z'
+modified: '2022-12-16T00:30:35.727905Z'
 published: '2021-04-18T00:01:00.614418Z'
 references:
 - type: REPORT
@@ -43,5 +43,6 @@ affected:
   - v2.4.3
   - v2.5.0
   - v2.6.0
+  - v2.6.1
   ecosystem_specific:
     severity: HIGH
