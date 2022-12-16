@@ -1,0 +1,65 @@
+id: OSV-2022-1176
+summary: Heap-double-free in dwg_free
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=53483
+
+  ```
+  Crash type: Heap-double-free
+  Crash state:
+  dwg_free
+  llvmfuzz.c
+  dwg_free
+  ```
+modified: '2022-11-18T13:00:26.857771Z'
+published: '2022-11-18T13:00:26.857477Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=53483
+affected:
+- package:
+    name: libredwg
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libredwg
+  ranges:
+  - type: GIT
+    repo: https://github.com/LibreDWG/libredwg
+    events:
+    - introduced: 2d4a473b670848fe9aac2fde249964d1ed9ba97e
+  versions:
+  - 0.12.4.4590
+  - 0.12.4.4598
+  - 0.12.4.4601
+  - 0.12.4.4606
+  - 0.12.4.4607
+  - 0.12.4.4608
+  - 0.12.4.4613
+  - 0.12.4.4615
+  - 0.12.4.4635
+  - 0.12.4.4637
+  - 0.12.4.4641
+  - 0.12.4.4643
+  - 0.12.4.4647
+  - 0.12.4.4652
+  - 0.12.4.4654
+  - 0.12.4.4658
+  - 0.12.4.4660
+  - 0.12.4.4668
+  - 0.12.5.4669
+  - 0.12.5.4678
+  - 0.12.5.4685
+  - 0.12.5.4690
+  - 0.12.5.4693
+  - 0.12.5.4695
+  - 0.12.5.4697
+  - 0.12.5.4700
+  - 0.12.5.4709
+  - 0.12.5.4712
+  - 0.12.5.4715
+  - 0.12.5.4722
+  - 0.12.5.4724
+  - 0.12.5.4726
+  - 0.12.5.4731
+  - 0.12.5.4735
+  ecosystem_specific:
+    severity: HIGH
+schema_version: 1.3.0
