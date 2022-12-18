@@ -1,0 +1,32 @@
+id: OSV-2022-908
+summary: Heap-buffer-overflow in element_end
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=51480
+
+  ```
+  Crash type: Heap-buffer-overflow READ 4
+  Crash state:
+  element_end
+  emit_end_element
+  g_markup_parse_context_parse
+  ```
+modified: '2022-09-18T00:02:08.324269Z'
+published: '2022-09-18T00:02:08.324002Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=51480
+affected:
+- package:
+    name: bluez
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/bluez
+  ranges:
+  - type: GIT
+    repo: https://github.com/bluez/bluez
+    events:
+    - introduced: af1bfbb470c04a4d09ed999ac4975642b61ccd36
+  versions:
+  - '5.66'
+  ecosystem_specific:
+    severity: MEDIUM
+schema_version: 1.3.0
