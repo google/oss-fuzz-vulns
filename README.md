@@ -63,5 +63,5 @@ if the bug is reliably reproducible.
 ## Removing an entry
 
 If a vulnerability in this repository is not considered a security vulnerability,
-it may be removed by submitting a PR to delete the corresponding files.
-
+it may be removed by submitting a PR to add a [`withdrawn`](https://ossf.github.io/osv-schema/#withdrawn-field)
+field to the relevant entry. 
