@@ -1,0 +1,34 @@
+id: OSV-2022-916
+summary: Container-overflow in wabt::interp::BinaryReaderInterp::BeginFunctionBody
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=51565
+
+  ```
+  Crash type: Container-overflow WRITE 4
+  Crash state:
+  wabt::interp::BinaryReaderInterp::BeginFunctionBody
+  wabt::ReadBinary
+  wabt::interp::ReadBinaryInterp
+  ```
+modified: '2022-09-20T00:00:42.123156Z'
+published: '2022-09-20T00:00:42.122902Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=51565
+affected:
+- package:
+    name: wabt
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/wabt
+  ranges:
+  - type: GIT
+    repo: https://github.com/WebAssembly/wabt
+    events:
+    - introduced: e93625448d4436defb6024a7dbc8765d63046bc9
+  versions:
+  - 1.0.29
+  - 1.0.30
+  - 1.0.31
+  ecosystem_specific:
+    severity: HIGH
+schema_version: 1.3.0
