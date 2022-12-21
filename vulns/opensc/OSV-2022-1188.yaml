@@ -1,0 +1,34 @@
+id: OSV-2022-1188
+summary: Stack-buffer-overflow in authentic_get_tagged_data
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=53536
+
+  ```
+  Crash type: Stack-buffer-overflow READ 1
+  Crash state:
+  authentic_get_tagged_data
+  authentic_parse_credential_data
+  authentic_pin_get_policy
+  ```
+modified: '2022-11-20T13:01:57.719381Z'
+published: '2022-11-20T13:01:57.719130Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=53536
+affected:
+- package:
+    name: opensc
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/opensc
+  ranges:
+  - type: GIT
+    repo: https://github.com/OpenSC/OpenSC
+    events:
+    - introduced: 847ccabd898f31d2ade49cbfd11fef083ee9e84a
+  versions:
+  - 0.23.0
+  - 0.23.0-rc1
+  - 0.23.0-rc2
+  ecosystem_specific:
+    severity: null
+schema_version: 1.3.0
