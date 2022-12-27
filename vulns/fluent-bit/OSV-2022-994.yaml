@@ -1,0 +1,64 @@
+id: OSV-2022-994
+summary: Heap-buffer-overflow in onig_node_str_cat
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=51920
+
+  ```
+  Crash type: Heap-buffer-overflow READ 4
+  Crash state:
+  onig_node_str_cat
+  parse_exp
+  parse_branch
+  ```
+modified: '2022-09-29T00:02:22.487Z'
+published: '2022-09-29T00:02:22.486759Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=51920
+affected:
+- package:
+    name: fluent-bit
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/fluent-bit
+  ranges:
+  - type: GIT
+    repo: https://github.com/fluent/fluent-bit/
+    events:
+    - introduced: e59f16b1168fca4046fff219ba9ae4e20dee6610
+  versions:
+  - ci-release-test
+  - unstable
+  - unstable-master
+  - v1.9.0
+  - v1.9.0-ci-test-1
+  - v1.9.0-rc1
+  - v1.9.0-rc2
+  - v1.9.0-rc3
+  - v1.9.0-rc4
+  - v1.9.1
+  - v1.9.10
+  - v1.9.2
+  - v1.9.3
+  - v1.9.4
+  - v1.9.5
+  - v1.9.6
+  - v1.9.7
+  - v1.9.8
+  - v1.9.9
+  - v2.0.0
+  - v2.0.0-rc1
+  - v2.0.0-rc2
+  - v2.0.0-rc3
+  - v2.0.0pre
+  - v2.0.1
+  - v2.0.2
+  - v2.0.3
+  - v2.0.4
+  - v2.0.5
+  - v2.0.6
+  - v2.0.7
+  - v2.0.8
+  - vv.2.0.7
+  ecosystem_specific:
+    severity: MEDIUM
+schema_version: 1.3.0

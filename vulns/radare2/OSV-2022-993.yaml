@@ -1,0 +1,32 @@
+id: OSV-2022-993
+summary: Stack-use-after-return in check_buffer
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=51910
+
+  ```
+  Crash type: Stack-use-after-return READ 1
+  Crash state:
+  check_buffer
+  r_bin_get_binplugin_by_buffer
+  r_bin_file_new_from_buffer
+  ```
+modified: '2022-09-29T00:02:10.256921Z'
+published: '2022-09-29T00:02:10.256639Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=51910
+affected:
+- package:
+    name: radare2
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/radare2
+  ranges:
+  - type: GIT
+    repo: https://github.com/radareorg/radare2
+    events:
+    - introduced: 67ead854ea3736384f6d13a56ce9e5fa14c9478c
+  versions:
+  - 5.8.0
+  ecosystem_specific:
+    severity: null
+schema_version: 1.3.0
