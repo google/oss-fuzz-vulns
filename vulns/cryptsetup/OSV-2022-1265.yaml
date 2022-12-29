@@ -1,0 +1,34 @@
+id: OSV-2022-1265
+summary: Heap-buffer-overflow in BITLK_read_sb
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=54548
+
+  ```
+  Crash type: Heap-buffer-overflow READ {*}
+  Crash state:
+  BITLK_read_sb
+  _crypt_load_bitlk
+  crypt_load
+  ```
+modified: '2022-12-25T13:01:07.280239Z'
+published: '2022-12-25T13:01:07.279978Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=54548
+affected:
+- package:
+    name: cryptsetup
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/cryptsetup
+  ranges:
+  - type: GIT
+    repo: https://gitlab.com/cryptsetup/cryptsetup.git
+    events:
+    - introduced: 50e88795281a6ea34ebb47b9845642f0d19b57ec
+    - fixed: 1682e72bf5199c0c8cef32a21929f026b2e1e6d4
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: c18dcfaa0b91eb48006232fbfadce9e6a9b4a790:8e7f07841e41a1344923e6500eec20fd20ac1c91
+  versions: []
+schema_version: 1.3.0
