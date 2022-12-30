@@ -10,7 +10,7 @@ details: |
   AffixMgr::compound_check
   HunspellImpl::checkword
   ```
-modified: '2022-12-13T13:01:01.668880Z'
+modified: '2022-12-30T00:11:08.178221Z'
 published: '2022-12-13T13:01:01.668619Z'
 references:
 - type: REPORT
@@ -25,7 +25,8 @@ affected:
     repo: https://github.com/hunspell/hunspell.git
     events:
     - introduced: 73d84b602bd35f74be6d01e712c0617fd99b6e47
+  versions:
+  - v1.7.2
   ecosystem_specific:
     severity: MEDIUM
-  versions: []
 schema_version: 1.3.0
