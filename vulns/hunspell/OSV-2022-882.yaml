@@ -10,7 +10,7 @@ details: |
   SfxEntry::add
   AffixMgr::expand_rootword
   ```
-modified: '2022-09-11T00:01:48.463376Z'
+modified: '2022-12-30T00:12:51.945769Z'
 published: '2022-09-11T00:01:48.463118Z'
 references:
 - type: REPORT
@@ -25,7 +25,8 @@ affected:
     repo: https://github.com/hunspell/hunspell.git
     events:
     - introduced: 74b08bfb8b611b7ae4bea2a6f1f74d9f73c1d0e3
+  versions:
+  - v1.7.2
   ecosystem_specific:
     severity: MEDIUM
-  versions: []
 schema_version: 1.2.0
