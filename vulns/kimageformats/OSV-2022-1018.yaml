@@ -1,0 +1,36 @@
+id: OSV-2022-1018
+summary: Index-out-of-bounds in LibRaw::kodak_radc_load_raw
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=52139
+
+  ```
+  Crash type: Index-out-of-bounds
+  Crash state:
+  LibRaw::kodak_radc_load_raw
+  LibRaw::unpack
+  LoadRAW
+  ```
+modified: '2022-10-06T00:02:27.511912Z'
+published: '2022-10-06T00:02:27.511658Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=52139
+affected:
+- package:
+    name: kimageformats
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/kimageformats
+  ranges:
+  - type: GIT
+    repo: https://invent.kde.org/frameworks/kimageformats.git
+    events:
+    - introduced: d881a7bbb1562af383bbb6ca20340ad739fb0d13
+  versions:
+  - v5.100.0-rc1
+  - v5.101.0
+  - v5.101.0-rc1
+  - v5.99.0
+  - v5.99.0-rc1
+  ecosystem_specific:
+    severity: MEDIUM
+schema_version: 1.3.0
