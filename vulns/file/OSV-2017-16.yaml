@@ -10,7 +10,7 @@ details: |
   magiccheck
   match
   ```
-modified: '2023-11-04T00:26:01.362015Z'
+modified: '2023-01-04T05:25:43.259245Z'
 published: '2021-01-13T00:00:27.841127Z'
 references:
 - type: REPORT
@@ -25,6 +25,8 @@ affected:
     events:
     - introduced: 17f892b32cc92f7505f02d198142c1a57204582f
     - fixed: 3590556273652e71251fa79890eeb959ef02d8d8
-  versions: []
+    - fixed: 77a7041fae5b7c8cc3844bcd29b88a193b8e3752
+  versions:
+  - FILE5_30
   ecosystem_specific:
     severity: MEDIUM
