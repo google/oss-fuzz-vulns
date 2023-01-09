@@ -10,7 +10,7 @@ details: |
   ucl_hash_search
   ucl_inherit_handler
   ```
-modified: '2022-04-13T03:04:41.764296Z'
+modified: '2023-01-09T00:24:05.403846Z'
 published: '2021-09-15T00:00:41.384284Z'
 references:
 - type: REPORT
@@ -24,8 +24,9 @@ affected:
     repo: https://github.com/vstakhov/libucl
     events:
     - introduced: b56171afae328bb605aa5aafbab9331e3e34b03e
+  versions:
+  - 0.8.2
   ecosystem_specific:
     severity: MEDIUM
   database_specific:
     introduced_range: be59572d66b2cf547d743277599781ef87ddaad9:95df30cf3e35788c08be537a1623499c98415674
-  versions: []
