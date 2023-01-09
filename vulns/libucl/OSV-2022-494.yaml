@@ -10,7 +10,7 @@ details: |
   ucl_parser_process_object_element
   ucl_state_machine
   ```
-modified: '2022-06-22T00:01:16.539350Z'
+modified: '2023-01-09T00:31:53.953368Z'
 published: '2022-06-22T00:01:16.539035Z'
 references:
 - type: REPORT
@@ -25,7 +25,8 @@ affected:
     repo: https://github.com/vstakhov/libucl
     events:
     - introduced: b56171afae328bb605aa5aafbab9331e3e34b03e
+  versions:
+  - 0.8.2
   ecosystem_specific:
     severity: MEDIUM
-  versions: []
 schema_version: 1.3.0
