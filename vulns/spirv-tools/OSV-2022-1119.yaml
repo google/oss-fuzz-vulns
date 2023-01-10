@@ -10,7 +10,7 @@ details: |
   std::__1::__function::__func<spvtools::opt::BlockMergePass::Process
   spvtools::opt::IRContext::ProcessCallTreeFromRoots
   ```
-modified: '2022-10-31T00:00:28.776220Z'
+modified: '2023-01-10T07:03:44.497651Z'
 published: '2022-10-31T00:00:28.775967Z'
 references:
 - type: REPORT
@@ -26,7 +26,8 @@ affected:
     events:
     - introduced: a52de681dd17f8b545ecd9ea2138f72b39bf449a
     - fixed: 235182cfee2cf03a6f05f7c62b7927584b955850
-  versions: []
+  versions:
+  - sdk-1.3.236.0
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.3.0
