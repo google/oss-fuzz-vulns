@@ -10,7 +10,7 @@ details: |
   sc_pkcs15init_erase_card_recursively
   cardos_erase
   ```
-modified: '2022-12-03T13:02:04.273298Z'
+modified: '2023-01-13T00:06:49.146258Z'
 published: '2022-12-03T13:02:04.273073Z'
 references:
 - type: REPORT
@@ -25,6 +25,7 @@ affected:
     repo: https://github.com/OpenSC/OpenSC
     events:
     - introduced: dbe4af17713b7a7b0c036f86486dc21e639e955f
+    - fixed: 578aed8391ef117ca64a9e0cba8e5c264368a0ec
   versions:
   - 0.23.0
   - 0.23.0-rc1
