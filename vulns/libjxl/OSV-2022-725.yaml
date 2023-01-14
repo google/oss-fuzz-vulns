@@ -10,7 +10,7 @@ details: |
   jxl::LowMemoryRenderPipeline::RenderRect
   jxl::LowMemoryRenderPipeline::ProcessBuffers
   ```
-modified: '2022-08-18T00:01:05.919179Z'
+modified: '2023-01-14T00:25:59.607638Z'
 published: '2022-08-18T00:01:05.918943Z'
 references:
 - type: REPORT
@@ -25,7 +25,8 @@ affected:
     repo: https://github.com/libjxl/libjxl.git
     events:
     - introduced: a50e71631cabfbdd57d540ba080ecec19b4664af
+  versions:
+  - v0.8.0rc1
   ecosystem_specific:
     severity: HIGH
-  versions: []
 schema_version: 1.2.0
