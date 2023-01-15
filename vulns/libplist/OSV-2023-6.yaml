@@ -1,0 +1,32 @@
+id: OSV-2023-6
+summary: Heap-buffer-overflow in parse_skip_ws
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=55035
+
+  ```
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  parse_skip_ws
+  node_from_openstep
+  parse_dict_data
+  ```
+modified: '2023-01-14T13:00:05.918656Z'
+published: '2023-01-14T13:00:05.918404Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=55035
+affected:
+- package:
+    name: libplist
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libplist
+  ranges:
+  - type: GIT
+    repo: https://github.com/libimobiledevice/libplist
+    events:
+    - introduced: 491a3acc1015951042c95c389a10634e331818c4
+    - fixed: 47a7fbe438ee7350a2b151e007f07043ef596775
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
+schema_version: 1.3.0
