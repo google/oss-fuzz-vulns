@@ -1,0 +1,32 @@
+id: OSV-2023-11
+summary: Heap-buffer-overflow in node_from_openstep
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=55146
+
+  ```
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  node_from_openstep
+  node_from_openstep
+  plist_from_openstep
+  ```
+modified: '2023-01-18T13:00:13.106623Z'
+published: '2023-01-18T13:00:13.106298Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=55146
+affected:
+- package:
+    name: libplist
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libplist
+  ranges:
+  - type: GIT
+    repo: https://github.com/libimobiledevice/libplist
+    events:
+    - introduced: 491a3acc1015951042c95c389a10634e331818c4
+    - fixed: 85f5cbd3705b34fcc52009ca51d8167ab18764fa
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
+schema_version: 1.3.0

@@ -1,0 +1,33 @@
+id: OSV-2022-1234
+summary: Heap-use-after-free in gf_odf_vvc_cfg_read_bs
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=53971
+
+  ```
+  Crash type: Heap-use-after-free READ 1
+  Crash state:
+  gf_odf_vvc_cfg_read_bs
+  vvcc_box_read
+  gf_isom_box_read
+  ```
+modified: '2022-12-04T13:00:21.935497Z'
+published: '2022-12-04T13:00:21.935260Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=53971
+affected:
+- package:
+    name: gpac
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/gpac
+  ranges:
+  - type: GIT
+    repo: https://github.com/gpac/gpac
+    events:
+    - introduced: 9914a5a0556e045ddce22037558b5149e387c68a
+    - fixed: 9971fb125cf91cefd081a080c417b90bbe4a467b
+  versions:
+  - v2.2.0
+  ecosystem_specific:
+    severity: HIGH
+schema_version: 1.3.0
