@@ -10,7 +10,7 @@ details: |
   mrb_bint_mod
   int_mod
   ```
-modified: '2023-01-14T00:25:42.134782Z'
+modified: '2023-01-19T00:12:31.465274Z'
 published: '2022-07-29T00:02:04.321859Z'
 references:
 - type: REPORT
@@ -27,6 +27,7 @@ affected:
     - introduced: 547d465340b5358502483a97729a95661bcd754d
   versions:
   - 3.2.0-rc
+  - 3.2.0-rc2
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.2.0
