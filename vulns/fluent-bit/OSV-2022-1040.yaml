@@ -10,7 +10,7 @@ details: |
   setup_tree
   setup_tree
   ```
-modified: '2022-10-11T00:02:05.093662Z'
+modified: '2023-01-21T00:15:48.643777Z'
 published: '2022-10-11T00:02:05.093425Z'
 references:
 - type: REPORT
@@ -25,6 +25,7 @@ affected:
     repo: https://github.com/fluent/fluent-bit/
     events:
     - introduced: e59f16b1168fca4046fff219ba9ae4e20dee6610
+    - fixed: 5ddb06fe4273bdec0171bc30877959c7bef666c2
   versions:
   - ci-release-test
   - tiger-2.0.9-dev-20230104
