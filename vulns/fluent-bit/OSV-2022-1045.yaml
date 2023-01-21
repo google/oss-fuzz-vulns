@@ -10,7 +10,7 @@ details: |
   mbc_case_fold
   update_string_node_case_fold
   ```
-modified: '2022-10-13T00:00:26.744510Z'
+modified: '2023-01-21T00:17:36.250595Z'
 published: '2022-10-13T00:00:26.744265Z'
 references:
 - type: REPORT
@@ -26,6 +26,7 @@ affected:
     events:
     - introduced: 9cc2ff55a146b2b3e8c321a87920c0d39a2b2ba6
     - introduced: 3c13edab76389a7412deef12ac61a25b85f00c39
+    - fixed: 5ddb06fe4273bdec0171bc30877959c7bef666c2
   versions:
   - tiger-2.0.9-dev-20230104
   - v2.0.0
