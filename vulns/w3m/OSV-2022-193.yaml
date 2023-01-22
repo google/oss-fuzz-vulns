@@ -8,7 +8,7 @@ details: |
   GC_generic_malloc_many
   GC_malloc_kind
   Strnew_size
-modified: '2022-02-24T00:00:07.843498Z'
+modified: '2023-01-22T00:12:25.178113Z'
 published: '2022-02-24T00:00:07.843234Z'
 references:
 - type: REPORT
@@ -25,6 +25,7 @@ affected:
     - introduced: 83df90dc112f79b80ab432c64253f8f078655e69
   versions:
   - v0.5.3+git20220429
+  - v0.5.3+git20230121
   ecosystem_specific:
     severity: null
 schema_version: 1.2.0
