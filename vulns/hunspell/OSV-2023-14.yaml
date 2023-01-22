@@ -1,0 +1,33 @@
+id: OSV-2023-14
+summary: Stack-buffer-overflow in AffixMgr::compound_check
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=55191
+
+  ```
+  Crash type: Stack-buffer-overflow READ 1
+  Crash state:
+  AffixMgr::compound_check
+  SuggestMgr::checkword
+  SuggestMgr::testsug
+  ```
+modified: '2023-01-19T13:00:59.219478Z'
+published: '2023-01-19T13:00:59.219251Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=55191
+affected:
+- package:
+    name: hunspell
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/hunspell
+  ranges:
+  - type: GIT
+    repo: https://github.com/hunspell/hunspell.git
+    events:
+    - introduced: 473241e89d4d24a964e8fd711863725aba207422
+    - fixed: 0a92068c30a860cb0673d7b3a89afe2143a714f7
+  versions:
+  - v1.7.2
+  ecosystem_specific:
+    severity: MEDIUM
+schema_version: 1.3.0

@@ -1,0 +1,32 @@
+id: OSV-2023-19
+summary: Heap-buffer-overflow in ndpi_search_bittorrent
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=55218
+
+  ```
+  Crash type: Heap-buffer-overflow READ {*}
+  Crash state:
+  ndpi_search_bittorrent
+  check_ndpi_detection_func
+  ndpi_check_flow_func
+  ```
+modified: '2023-01-20T13:02:10.969774Z'
+published: '2023-01-20T13:02:10.969546Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=55218
+affected:
+- package:
+    name: ndpi
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/ndpi
+  ranges:
+  - type: GIT
+    repo: https://github.com/ntop/nDPI.git
+    events:
+    - introduced: 470eaa6ff388435d7233ff2680e3ea013068d1fe
+    - fixed: f95bdaf625a540cbd040508bfbb8808223f97aed
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.3.0
