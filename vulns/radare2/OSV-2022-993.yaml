@@ -10,7 +10,7 @@ details: |
   r_bin_get_binplugin_by_buffer
   r_bin_file_new_from_buffer
   ```
-modified: '2022-09-29T00:02:10.256921Z'
+modified: '2023-01-23T00:15:17.280247Z'
 published: '2022-09-29T00:02:10.256639Z'
 references:
 - type: REPORT
@@ -27,6 +27,7 @@ affected:
     - introduced: 67ead854ea3736384f6d13a56ce9e5fa14c9478c
   versions:
   - 5.8.0
+  - 5.8.2
   ecosystem_specific:
     severity: null
 schema_version: 1.3.0
