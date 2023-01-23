@@ -10,7 +10,7 @@ details: |
   classes
   r_bin_object_set_items
   ```
-modified: '2022-12-23T00:15:21.495275Z'
+modified: '2023-01-23T00:13:26.611763Z'
 published: '2022-10-24T00:02:39.818289Z'
 references:
 - type: REPORT
@@ -27,6 +27,7 @@ affected:
     - introduced: 202a65a129975dc21ca749748917d8695c7ef968
   versions:
   - 5.8.0
+  - 5.8.2
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.3.0
