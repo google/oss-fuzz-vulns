@@ -1,0 +1,33 @@
+id: OSV-2023-27
+summary: Heap-buffer-overflow in OT::Layout::GPOS_impl::PairSet<OT::Layout::MediumTypes>::apply
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=55287
+
+  ```
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  OT::Layout::GPOS_impl::PairSet<OT::Layout::MediumTypes>::apply
+  OT::Layout::GPOS_impl::PairPosFormat1_3<OT::Layout::MediumTypes>::apply
+  bool OT::hb_accelerate_subtables_context_t::apply_to<OT::Layout::GPOS_impl::Pair
+  ```
+modified: '2023-01-23T13:01:48.208833Z'
+published: '2023-01-23T13:01:48.208593Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=55287
+affected:
+- package:
+    name: harfbuzz
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/harfbuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/harfbuzz/harfbuzz.git
+    events:
+    - introduced: af450a757d8471e55b71d1f3eb3c1e1fd3390d7b
+    - fixed: b63159e8bf579345a6f56d04ad1b2c28eee66bac
+  versions:
+  - 6.0.0
+  ecosystem_specific:
+    severity: MEDIUM
+schema_version: 1.3.0
