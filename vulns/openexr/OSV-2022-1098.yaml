@@ -1,0 +1,31 @@
+id: OSV-2022-1098
+summary: Heap-buffer-overflow in fasthuf_initialize
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=52730
+
+  ```
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  fasthuf_initialize
+  internal_huf_decompress
+  internal_exr_undo_piz
+  ```
+modified: '2022-10-27T00:01:30.614382Z'
+published: '2022-10-27T00:01:30.614104Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=52730
+affected:
+- package:
+    name: openexr
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/openexr
+  ranges:
+  - type: GIT
+    repo: https://github.com/AcademySoftwareFoundation/openexr
+    events:
+    - introduced: 115e42ee34bd34899a8ea29b1118efdf543588b1
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.3.0

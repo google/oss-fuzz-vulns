@@ -1,0 +1,32 @@
+id: OSV-2022-1106
+summary: Heap-buffer-overflow in APFSJObject::add_entry
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=52764
+
+  ```
+  Crash type: Heap-buffer-overflow READ {*}
+  Crash state:
+  APFSJObject::add_entry
+  APFSJObject::APFSJObject
+  APFSJObject::APFSJObject
+  ```
+modified: '2022-10-28T00:02:37.921953Z'
+published: '2022-10-28T00:02:37.921684Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=52764
+affected:
+- package:
+    name: sleuthkit
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/sleuthkit
+  ranges:
+  - type: GIT
+    repo: https://github.com/sleuthkit/sleuthkit
+    events:
+    - introduced: 58c8b602d5134ab69be2826410005c2894e45a73
+  versions:
+  - sleuthkit-4.12.0
+  ecosystem_specific:
+    severity: MEDIUM
+schema_version: 1.3.0

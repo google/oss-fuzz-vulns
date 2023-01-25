@@ -1,0 +1,27 @@
+id: OSV-2022-1101
+summary: 'UNKNOWN READ in APFSBtreeNodeIterator<APFSJObjBtreeNode> APFSJObjBtreeNode::find<unsigned
+  long, '
+details: "OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=52740\n\
+  \n```\nCrash type: UNKNOWN READ\nCrash state:\nAPFSBtreeNodeIterator<APFSJObjBtreeNode>\
+  \ APFSJObjBtreeNode::find<unsigned long, \nstd::__1::pair<APFSBtreeNodeIterator<APFSJObjBtreeNode>,\
+  \ APFSBtreeNodeIterator<A\nAPFSJObjTree::obj\n```\n"
+modified: '2022-10-28T00:00:27.715087Z'
+published: '2022-10-28T00:00:27.714849Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=52740
+affected:
+- package:
+    name: sleuthkit
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/sleuthkit
+  ranges:
+  - type: GIT
+    repo: https://github.com/sleuthkit/sleuthkit
+    events:
+    - introduced: 58c8b602d5134ab69be2826410005c2894e45a73
+  versions:
+  - sleuthkit-4.12.0
+  ecosystem_specific:
+    severity: HIGH
+schema_version: 1.3.0
