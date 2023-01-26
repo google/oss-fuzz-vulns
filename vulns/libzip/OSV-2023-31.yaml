@@ -1,0 +1,32 @@
+id: OSV-2023-31
+summary: Heap-use-after-free in zip_source_open
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=55365
+
+  ```
+  Crash type: Heap-use-after-free READ 1
+  Crash state:
+  zip_source_open
+  zip_source_open
+  _zip_open
+  ```
+modified: '2023-01-25T13:00:19.349630Z'
+published: '2023-01-25T13:00:19.349341Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=55365
+affected:
+- package:
+    name: libzip
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libzip
+  ranges:
+  - type: GIT
+    repo: https://github.com/nih-at/libzip.git
+    events:
+    - introduced: 4a0b206bf11e70ffd9850b0b1b72cf3f664d13ac
+    - fixed: e907b0bda2f04c16eb7f10d5b2f41a3416a3e2b8
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
+schema_version: 1.3.0
