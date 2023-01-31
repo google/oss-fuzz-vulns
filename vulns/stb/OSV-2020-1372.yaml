@@ -24,6 +24,9 @@ affected:
     repo: https://github.com/nothings/stb.git
     events:
     - introduced: f54acd4e13430c5122cab4ca657705c84aa61b08
+    - fixed: 5736b15f7ea0ffb08dd38af21067c314d6a3aae9
   ecosystem_specific:
     severity: MEDIUM
+  database_specific:
+    fixed_range: 8b5f1f37b5b75829fc72d38e7b5d4bcbf8a26d55:5736b15f7ea0ffb08dd38af21067c314d6a3aae9
   versions: []
