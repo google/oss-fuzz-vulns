@@ -10,7 +10,7 @@ details: |
   DetectFastPatternSetup
   SigParse
   ```
-modified: '2022-09-04T00:01:56.922182Z'
+modified: '2023-02-01T00:15:24.450330Z'
 published: '2022-09-04T00:01:56.921937Z'
 references:
 - type: REPORT
@@ -27,6 +27,7 @@ affected:
     - introduced: 474e0e364471fed2b6765b2c105f143e8b1864ea
   versions:
   - suricata-7.0.0-beta1
+  - suricata-7.0.0-rc1
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.3.0
