@@ -10,7 +10,7 @@ details: |
   blosc2_decompress_ctx
   frame_decompress_chunk
   ```
-modified: '2022-12-16T00:31:03.310271Z'
+modified: '2023-02-04T00:11:29.912867Z'
 published: '2021-07-13T00:00:23.000106Z'
 references:
 - type: REPORT
@@ -24,6 +24,7 @@ affected:
     repo: https://github.com/Blosc/c-blosc2.git
     events:
     - introduced: 4a727370b1c2e9746434c00bf2236db86c31ea5c
+    - fixed: 7f4574f51ad7db56fc13de89e13e7893b1a82189
   versions:
   - v2.0.0
   - v2.0.0-rc2
@@ -34,15 +35,5 @@ affected:
   - v2.0.4
   - v2.1.0
   - v2.1.1
-  - v2.2.0
-  - v2.3.0
-  - v2.3.1
-  - v2.4.0
-  - v2.4.1
-  - v2.4.2
-  - v2.4.3
-  - v2.5.0
-  - v2.6.0
-  - v2.6.1
   ecosystem_specific:
     severity: MEDIUM
