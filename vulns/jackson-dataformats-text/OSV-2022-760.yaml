@@ -10,7 +10,7 @@ details: |
   com.fasterxml.jackson.dataformat.toml.Parser.parseValue
   com.fasterxml.jackson.dataformat.toml.Parser.parseKeyVal
   ```
-modified: '2023-01-30T00:11:10.606634Z'
+modified: '2023-02-06T00:11:44.700186Z'
 published: '2022-08-20T00:01:56.371630Z'
 references:
 - type: REPORT
@@ -33,6 +33,7 @@ affected:
   - jackson-dataformats-text-2.14.0-rc3
   - jackson-dataformats-text-2.14.1
   - jackson-dataformats-text-2.14.2
+  - jackson-dataformats-text-2.13.5
   ecosystem_specific:
     severity: LOW
   database_specific:
