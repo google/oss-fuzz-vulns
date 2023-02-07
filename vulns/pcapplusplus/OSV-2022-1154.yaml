@@ -1,0 +1,32 @@
+id: OSV-2022-1154
+summary: UNKNOWN READ in pcpp::SomeIpSdLayer::SomeIpSdLayer
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=53099
+
+  ```
+  Crash type: UNKNOWN READ
+  Crash state:
+  pcpp::SomeIpSdLayer::SomeIpSdLayer
+  pcpp::SomeIpLayer::parseSomeIpLayer
+  pcpp::UdpLayer::parseNextLayer
+  ```
+modified: '2022-11-08T13:00:45.917465Z'
+published: '2022-11-08T13:00:45.917220Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=53099
+affected:
+- package:
+    name: pcapplusplus
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/pcapplusplus
+  ranges:
+  - type: GIT
+    repo: https://github.com/seladb/PcapPlusPlus
+    events:
+    - introduced: 6d156bfda910cff94b04124abdb58020b5e1c2a0
+  versions:
+  - v22.11
+  ecosystem_specific:
+    severity: MEDIUM
+schema_version: 1.3.0
