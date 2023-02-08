@@ -10,7 +10,7 @@ details: |
   grk::CodeStreamDecompress::process_marker
   grk::CodeStreamDecompress::readHeaderProcedureImpl
   ```
-modified: '2022-09-24T00:19:04.850239Z'
+modified: '2023-02-08T00:10:30.940604Z'
 published: '2022-03-18T00:01:35.796630Z'
 references:
 - type: REPORT
@@ -41,6 +41,7 @@ affected:
   - v10.0.2
   - v10.0.3
   - v10.0.4
+  - v10.0.5
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.2.0
