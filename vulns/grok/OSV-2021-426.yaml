@@ -10,7 +10,7 @@ details: |
   std::__1::packaged_task<int
   ThreadPool::ThreadPool
   ```
-modified: '2023-02-08T00:09:13.558925Z'
+modified: '2023-02-10T00:27:39.692364Z'
 published: '2021-02-22T00:00:08.360778Z'
 references:
 - type: REPORT
@@ -53,5 +53,6 @@ affected:
   - v10.0.3
   - v10.0.4
   - v10.0.5
+  - v10.0.5.debian
   ecosystem_specific:
     severity: MEDIUM
