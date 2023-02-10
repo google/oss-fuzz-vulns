@@ -1,0 +1,41 @@
+id: OSV-2022-1168
+summary: Heap-buffer-overflow in parse_subrip
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=53210
+
+  ```
+  Crash type: Heap-buffer-overflow WRITE {*}
+  Crash state:
+  parse_subrip
+  parse_webvtt
+  gst_sub_parse_chain
+  ```
+modified: '2022-11-12T13:00:43.600167Z'
+published: '2022-11-12T13:00:43.599907Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=53210
+affected:
+- package:
+    name: gstreamer
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/gstreamer
+  ranges:
+  - type: GIT
+    repo: https://gitlab.freedesktop.org/gstreamer/gstreamer.git
+    events:
+    - introduced: 86f0f8b67f54ddae25af2a8ed1a64cb5d57fc2fe
+    - introduced: e9e4ac0ba99df5240b2905c694e1c095055fb65a
+  versions:
+  - 1.20.2
+  - 1.20.3
+  - 1.20.4
+  - 1.20.5
+  - 1.21.1
+  - 1.21.2
+  - 1.21.3
+  - 1.21.90
+  - 1.22.0
+  ecosystem_specific:
+    severity: HIGH
+schema_version: 1.3.0
