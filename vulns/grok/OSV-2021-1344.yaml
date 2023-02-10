@@ -10,7 +10,7 @@ details: |
   std::__1::__packaged_task_func<std::__1::__bind<grk::T1DecompressScheduler::deco
   std::__1::packaged_task<int
   ```
-modified: '2023-02-08T00:08:55.120246Z'
+modified: '2023-02-10T00:27:24.264444Z'
 published: '2021-09-21T00:01:35.030626Z'
 references:
 - type: REPORT
@@ -45,5 +45,6 @@ affected:
   - v10.0.3
   - v10.0.4
   - v10.0.5
+  - v10.0.5.debian
   ecosystem_specific:
     severity: HIGH
