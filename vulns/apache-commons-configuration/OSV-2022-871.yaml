@@ -1,0 +1,31 @@
+id: OSV-2022-871
+summary: Security exception in java.base/java.util.Collections$UnmodifiableCollection.forEach
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=51154
+
+  ```
+  Crash type: Security exception
+  Crash state:
+  java.base/java.util.Collections$UnmodifiableCollection.forEach
+  org.apache.commons.configuration2.tree.NodeTreeWalker.dfs
+  org.apache.commons.configuration2.tree.NodeTreeWalker.lambda$dfs$0
+  ```
+modified: '2022-09-10T00:00:24.780719Z'
+published: '2022-09-10T00:00:24.780487Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=51154
+affected:
+- package:
+    name: apache-commons-configuration
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/apache-commons-configuration
+  ranges:
+  - type: GIT
+    repo: https://gitbox.apache.org/repos/asf/commons-configuration.git
+    events:
+    - introduced: 4117b2050ab011f131d5a81c824bf89ddde303d4
+  ecosystem_specific:
+    severity: LOW
+  versions: []
+schema_version: 1.3.0

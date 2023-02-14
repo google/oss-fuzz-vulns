@@ -1,0 +1,31 @@
+id: OSV-2022-764
+summary: Security exception in org.apache.commons.jxpath.ri.compiler.CoreOperation.parenthesize
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=50458
+
+  ```
+  Crash type: Security exception
+  Crash state:
+  org.apache.commons.jxpath.ri.compiler.CoreOperation.parenthesize
+  org.apache.commons.jxpath.ri.compiler.CoreOperation.toString
+  com.code_intelligence.jazzer.runtime.TraceDataFlowNativeCallbacks.traceCmpInt
+  ```
+modified: '2022-08-21T00:00:44.740834Z'
+published: '2022-08-21T00:00:44.740591Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=50458
+affected:
+- package:
+    name: apache-commons-jxpath
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/apache-commons-jxpath
+  ranges:
+  - type: GIT
+    repo: https://github.com/apache/commons-jxpath.git
+    events:
+    - introduced: 192f4c92727cf5387a8043525a1e1e1533c9ac69
+  ecosystem_specific:
+    severity: LOW
+  versions: []
+schema_version: 1.3.0

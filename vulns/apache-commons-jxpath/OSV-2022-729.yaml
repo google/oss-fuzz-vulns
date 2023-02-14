@@ -1,0 +1,31 @@
+id: OSV-2022-729
+summary: Security exception in org.apache.commons.jxpath.ri.compiler.CoreOperationMultiply.computeValue
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=50372
+
+  ```
+  Crash type: Security exception
+  Crash state:
+  org.apache.commons.jxpath.ri.compiler.CoreOperationMultiply.computeValue
+  org.apache.commons.jxpath.ri.compiler.CoreOperationMultiply.computeValue
+  org.apache.commons.jxpath.ri.compiler.CoreOperationMultiply.computeValue
+  ```
+modified: '2022-08-19T00:00:10.461689Z'
+published: '2022-08-19T00:00:10.461426Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=50372
+affected:
+- package:
+    name: apache-commons-jxpath
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/apache-commons-jxpath
+  ranges:
+  - type: GIT
+    repo: https://github.com/apache/commons-jxpath.git
+    events:
+    - introduced: 192f4c92727cf5387a8043525a1e1e1533c9ac69
+  ecosystem_specific:
+    severity: LOW
+  versions: []
+schema_version: 1.3.0

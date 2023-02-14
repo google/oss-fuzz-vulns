@@ -1,0 +1,39 @@
+id: OSV-2022-1174
+summary: Heap-buffer-overflow in crc64_clmul
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=53423
+
+  ```
+  Crash type: Heap-buffer-overflow READ 16
+  Crash state:
+  crc64_clmul
+  lzma_crc64
+  lzma_check_update
+  ```
+modified: '2022-11-16T13:02:12.420742Z'
+published: '2022-11-16T13:02:12.420492Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=53423
+affected:
+- package:
+    name: karchive
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/karchive
+  ranges:
+  - type: GIT
+    repo: https://invent.kde.org/frameworks/karchive.git
+    events:
+    - introduced: e6225a1fb55c4390835e2992caf5adff20d36e95
+  versions:
+  - v5.101.0
+  - v5.101.0-rc1
+  - v5.102.0
+  - v5.102.0-rc1
+  - v5.103.0
+  - v5.103.0-rc1
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: 350c8b192f9227b9869ccf1523b5a37329f083bf:ffbc107db9453c3271d61a95c362c30979f190a8
+schema_version: 1.3.0
