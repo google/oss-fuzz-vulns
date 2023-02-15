@@ -10,7 +10,7 @@ details: |
   get_hdr_field
   parse_headers
   ```
-modified: '2023-02-10T00:29:09.293161Z'
+modified: '2023-02-15T22:52:54.957958Z'
 published: '2022-11-16T13:00:11.675811Z'
 references:
 - type: REPORT
@@ -27,6 +27,10 @@ affected:
     - introduced: 4bc9d9603f6612f5b294eb6fa55ab38a474d1ce2
     - introduced: 1a71fded7d736ff53b6dc005e3f10626417a9d21
     - introduced: 0cca86fe789d77ea3e2b58326d6f282eb3433544
+    - fixed: e060fe93429b6da665a4d4210a49876b43223a17
+    - fixed: bf0b37d3f5b7c5434d84fc84502432834d167e1d
+    - fixed: e447586f36e2120db316405db0172b7842be930e
+    - fixed: a0824c2784b8343d22ccb2de35206f9ecebfe998
   versions:
   - 3.1.10
   - 3.1.11
