@@ -34,8 +34,8 @@ def main():
   try:
     data = urllib.request.urlopen(f'{_VULN_URL}/{issue_id}.json').read()
   except urllib.error.HTTPError:
-    print('Vuln does not exist. OSS-Fuzz bugs need to '
-          'be marked as security to be included.', file=sys.stderr)
+    print('Vuln does not exist. OSS-Fuzz bugs need to be marked as security to be included.')
+    file = sys.stderr
     return
 
   data = json.loads(data)
@@ -47,7 +47,7 @@ def main():
   with open(vuln_path, 'w') as handle:
     yaml.dump(data, handle, sort_keys=False, Dumper=_YamlDumper)
 
-  print('Vuln written to', os.path.relpath(vuln_path, os.getcwd()))
+  print(f'Vuln written to {os.path.relpath(vuln_path, os.getcwd())})
 
 
 if __name__ == '__main__':
