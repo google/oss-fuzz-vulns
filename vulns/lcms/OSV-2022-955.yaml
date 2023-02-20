@@ -10,7 +10,7 @@ details: |
   _cmsWriteUInt16Number
   Type_MLU_Write
   ```
-modified: '2022-09-26T00:00:25.285178Z'
+modified: '2023-02-20T00:12:01.986209Z'
 published: '2022-09-26T00:00:25.284903Z'
 references:
 - type: REPORT
@@ -32,6 +32,7 @@ affected:
   - lcms2.13rc2
   - lcms2.14
   - lcms2.14rc1
+  - lcms2.15rc1
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.3.0
