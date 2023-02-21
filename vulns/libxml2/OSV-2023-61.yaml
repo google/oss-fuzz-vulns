@@ -1,0 +1,32 @@
+id: OSV-2023-61
+summary: Heap-buffer-overflow in xmlParseTryOrFinish
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=55980
+
+  ```
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  xmlParseTryOrFinish
+  xmlParseChunk
+  xml.c
+  ```
+modified: '2023-02-15T13:02:21.069046Z'
+published: '2023-02-15T13:02:21.068814Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=55980
+affected:
+- package:
+    name: libxml2
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libxml2
+  ranges:
+  - type: GIT
+    repo: https://gitlab.gnome.org/GNOME/libxml2.git
+    events:
+    - introduced: c63900fbc1a7c20eb872996ae700f264ba6d75ef
+    - fixed: 5d55315e32b34af7070d38060ccf9a60941b9696
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.3.0
