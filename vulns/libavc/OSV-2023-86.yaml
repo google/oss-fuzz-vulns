@@ -1,0 +1,32 @@
+id: OSV-2023-86
+summary: UNKNOWN READ in isvce_cabac_flush
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=56137
+
+  ```
+  Crash type: UNKNOWN READ
+  Crash state:
+  isvce_cabac_flush
+  isvce_cabac_encode_terminate
+  isvce_entropy
+  ```
+modified: '2023-02-20T13:00:28.632115Z'
+published: '2023-02-20T13:00:28.631850Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=56137
+affected:
+- package:
+    name: libavc
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libavc
+  ranges:
+  - type: GIT
+    repo: https://github.com/ittiam-systems/libavc.git
+    events:
+    - introduced: e14ee149ef87f1e90b10cbda4b9d120432c8a410
+    - fixed: c38af025abf0040f6693d15f4ce2e878a728cfee
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.3.0
