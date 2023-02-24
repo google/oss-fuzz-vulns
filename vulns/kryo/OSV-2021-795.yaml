@@ -7,7 +7,7 @@ details: |
   Crash type: Uncaught exception
   Crash state:
   NULL```
-modified: '2022-04-13T03:04:36.380867Z'
+modified: '2023-02-24T01:59:56.280376Z'
 published: '2021-05-25T23:50:45.528753Z'
 references:
 - type: REPORT
@@ -21,7 +21,10 @@ affected:
     repo: https://github.com/EsotericSoftware/kryo
     events:
     - introduced: a830dac4e5cb923ef878413767b5951bfe696559
+    - fixed: b75ae5e0ac3842b9761bcf18671c99960230eb74
   versions:
   - kryo-parent-5.2.0
   ecosystem_specific:
     severity: LOW
+  database_specific:
+    fixed_range: a2dfa5c8c2ea6f6fbb264199ef7e2ab972424190:b75ae5e0ac3842b9761bcf18671c99960230eb74
