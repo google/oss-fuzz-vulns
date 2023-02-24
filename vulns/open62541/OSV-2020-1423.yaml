@@ -10,7 +10,7 @@ details: |
   fuzz_mdns_xht.cc
   txt2sd
   ```
-modified: '2022-04-15T00:06:34.889356Z'
+modified: '2023-02-24T01:38:47.975346Z'
 published: '2020-07-28T00:00:16.191970Z'
 references:
 - type: REPORT
@@ -44,6 +44,9 @@ affected:
   - v1.2.2
   - v1.2.3
   - v1.2.4
+  - v1.2.5
+  - v1.2.6
+  - v1.2.7
   ecosystem_specific:
     severity: MEDIUM
   database_specific:
