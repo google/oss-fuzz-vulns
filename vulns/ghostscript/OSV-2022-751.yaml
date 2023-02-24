@@ -10,7 +10,7 @@ details: |
   copied_type1_glyph_outline
   gs_default_glyph_info
   ```
-modified: '2022-08-20T00:00:12.956299Z'
+modified: '2023-02-24T02:57:17.854976Z'
 published: '2022-08-20T00:00:12.956053Z'
 references:
 - type: REPORT
@@ -27,9 +27,12 @@ affected:
     - introduced: 441c9e3a4ca08fa7f7c00063af33196b0d88ebaf
     - fixed: 36544f71d8742ba213e6ce003e52a81db3a89ba9
     - fixed: a6ed2d417205ddf4194a2385402a5c97fe991013
+    - fixed: 04b799c66a8993af13c4b9b5fafb3dcfa44a16c5
   versions:
   - ghostpdl-10.0.0_release_tests_002
   - ghostpdl-10.0.0rc1
   ecosystem_specific:
     severity: MEDIUM
+  database_specific:
+    fixed_range: fb0af3efbe9b18c876d6a80e6ea2d1206b1fa5eb:04b799c66a8993af13c4b9b5fafb3dcfa44a16c5
 schema_version: 1.2.0
