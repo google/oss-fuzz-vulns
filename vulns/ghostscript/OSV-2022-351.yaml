@@ -10,7 +10,7 @@ details: |
   zcounttomark
   gs_interpret
   ```
-modified: '2022-04-16T00:01:10.988680Z'
+modified: '2023-02-24T02:14:14.338741Z'
 published: '2022-04-16T00:01:10.988352Z'
 references:
 - type: REPORT
@@ -90,6 +90,8 @@ affected:
   - rjj_9.53.2_test
   - robin-test-base-0
   - robin_test_ref
+  - ghostpdl-9.56.0-test-base-6
+  - ghostpdl-9.56.1
   ecosystem_specific:
     severity: MEDIUM
   database_specific:
