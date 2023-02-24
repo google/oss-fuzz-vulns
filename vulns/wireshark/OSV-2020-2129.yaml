@@ -10,7 +10,7 @@ details: |
   wmem_leave_packet_scope
   fuzzshark.c
   ```
-modified: '2022-04-13T05:45:10.770591Z'
+modified: '2023-02-24T02:20:16.266586Z'
 published: '2020-11-05T00:00:51.605889Z'
 references:
 - type: REPORT
@@ -76,5 +76,14 @@ affected:
   - wireshark-3.4.7
   - wireshark-3.4.8
   - wireshark-3.4.9
+  - v3.4.14
+  - v3.4.15
+  - v3.4.15rc0
+  - v3.4.16
+  - v3.4.16rc0
+  - v3.4.17rc0
+  - wireshark-3.4.14
+  - wireshark-3.4.15
+  - wireshark-3.4.16
   ecosystem_specific:
     severity: HIGH
