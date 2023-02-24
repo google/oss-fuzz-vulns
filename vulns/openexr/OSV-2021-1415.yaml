@@ -10,7 +10,7 @@ details: |
   dispatch_read
   exr_read_scanline_chunk_info
   ```
-modified: '2022-04-13T03:04:37.044431Z'
+modified: '2023-02-24T01:51:34.418760Z'
 published: '2021-10-07T00:00:14.846615Z'
 references:
 - type: REPORT
@@ -25,6 +25,11 @@ affected:
     events:
     - introduced: f68dc195ef2079793e2ea68f089adca902f0a4d8
     - fixed: b39b63a1d2989a90655cd9b02b0fe8af8cd8c017
+    - fixed: 06575aaaf7eb0bff820585123449dd8967b47f46
+    - introduced: 666e2064d10445c501d48544d2d4566c304015c7
+    - fixed: 8b65408c5db588eb4ec7e0563040b1ce356c6691
   ecosystem_specific:
     severity: MEDIUM
+  database_specific:
+    fixed_range: 9d05d50eddacf4c5afac725617e12dfb5407e3cb:06575aaaf7eb0bff820585123449dd8967b47f46
   versions: []
