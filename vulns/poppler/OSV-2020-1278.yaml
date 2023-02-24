@@ -10,7 +10,7 @@ details: |
   Function::parse
   Function::parse
   ```
-modified: '2022-04-13T03:04:37.342687Z'
+modified: '2023-02-24T02:26:34.919340Z'
 published: '2020-07-22T21:50:02.576507Z'
 references:
 - type: REPORT
@@ -25,6 +25,7 @@ affected:
     events:
     - introduced: c9e2dc7ea7e098875e6b93566bdb1d14451c3673
     - fixed: f2493d53a70e10ea69bd147c48be7c8544979436
+    - fixed: 6f5327114c824791dda72dc415b047d445e46d9d
   versions:
   - poppler-0.65.0
   - poppler-0.66.0
@@ -39,3 +40,5 @@ affected:
   ecosystem_specific:
     severity: MEDIUM
     introduced_range: unknown:c9e2dc7ea7e098875e6b93566bdb1d14451c3673
+  database_specific:
+    fixed_range: 7486e4995d66f1a8676f3e65e408e8cdab049f6b:6f5327114c824791dda72dc415b047d445e46d9d
