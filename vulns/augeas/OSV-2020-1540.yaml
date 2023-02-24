@@ -10,7 +10,7 @@ details: |
   eval_binary
   eval_expr
   ```
-modified: '2022-04-13T03:04:34.141099Z'
+modified: '2023-02-24T01:45:46.469207Z'
 published: '2020-07-29T00:00:39.727472Z'
 references:
 - type: REPORT
@@ -26,5 +26,6 @@ affected:
     - introduced: 9c52a0b258f77394c9ade6c032e00b49bd01f949
   versions:
   - release-1.13.0
+  - release-1.14.0
   ecosystem_specific:
     severity: MEDIUM
