@@ -10,7 +10,7 @@ details: |
   tcg_cpu_exec_arm
   tcg_exec_all_arm
   ```
-modified: '2022-04-13T03:04:39.131199Z'
+modified: '2023-02-24T01:55:56.489885Z'
 published: '2021-02-10T00:00:20.946004Z'
 references:
 - type: REPORT
@@ -24,15 +24,11 @@ affected:
     repo: https://github.com/unicorn-engine/unicorn.git
     events:
     - introduced: 881e08da017e2679ccc98bfcbf1fc5b74ee822d4
+    - fixed: 34ddafcbcf6d16508a63623a68715394ea4e12d8
   versions:
   - 1.0.2
   - 1.0.2-rc4
   - 1.0.2-rc5
   - 1.0.2-rc6
-  - 1.0.3
-  - 2.0.0-rc1
-  - 2.0.0-rc2
-  - 2.0.0-rc3
-  - 2.0.0-rc4
   ecosystem_specific:
     severity: MEDIUM
