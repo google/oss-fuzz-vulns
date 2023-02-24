@@ -10,7 +10,7 @@ details: |
   ih264d_video_decode
   ih264d_api_function
   ```
-modified: '2022-04-13T03:35:55.610160Z'
+modified: '2023-02-24T01:57:33.198621Z'
 published: '2021-11-10T00:01:37.617431Z'
 references:
 - type: REPORT
@@ -193,6 +193,17 @@ affected:
   - android-mainline-12.0.0_r57
   - android-mainline-12.0.0_r58
   - android-vts-12.0_r3
+  - aml_doc_310851020
+  - android-12.0.0_r33
+  - android-12.0.0_r34
+  - android-cts-12.0_r4
+  - android-cts-12.0_r5
+  - android-cts-12.0_r6
+  - android-cts-12.0_r7
+  - android-vts-12.0_r4
+  - android-vts-12.0_r5
+  - android-vts-12.0_r6
+  - android-vts-12.0_r7
   ecosystem_specific:
     severity: HIGH
 schema_version: 1.2.0
