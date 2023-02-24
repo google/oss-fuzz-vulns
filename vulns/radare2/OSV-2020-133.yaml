@@ -10,7 +10,7 @@ details: |
   r_bin_object_set_items
   r_bin_object_new
   ```
-modified: '2022-04-13T03:04:36.714476Z'
+modified: '2023-02-24T01:44:53.994861Z'
 published: '2020-06-24T01:51:15.618979Z'
 references:
 - type: REPORT
@@ -25,6 +25,7 @@ affected:
     events:
     - introduced: 961d5007a99fdf025e8ec819ec050f843230f54c
     - fixed: 498292a70d65073a7bf1a36e3997debe8f1f0792
+    - fixed: 941245d871e27ffc879a9ca6f25e3b39efec376a
   versions:
   - 4.4.0
   ecosystem_specific:
