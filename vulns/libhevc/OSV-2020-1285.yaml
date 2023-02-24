@@ -10,7 +10,7 @@ details: |
   ihevcd_deblk_ctb
   ihevcd_process
   ```
-modified: '2022-04-13T03:23:50.509986Z'
+modified: '2023-02-24T01:30:44.196020Z'
 published: '2020-07-22T21:50:02.950786Z'
 references:
 - type: REPORT
@@ -50,6 +50,11 @@ affected:
   - android-mainline-10.0.0_r9
   - android-mainline-10.0.0_r13
   - android-mainline-12.0.0_r54
+  - android-mainline-12.0.0_r111
+  - q_tzdata_aml_294400310
+  - q_tzdata_aml_295500001
+  - q_tzdata_aml_295500002
+  - q_tzdata_aml_295600110
   ecosystem_specific:
     severity: MEDIUM
     introduced_range: unknown:d28f2210ee8e65afdfb07a1fd6582285d3d178e0
