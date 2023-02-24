@@ -10,7 +10,7 @@ details: |
   pdfi_read_byte
   pdfi_read_token
   ```
-modified: '2022-04-13T03:04:34.560760Z'
+modified: '2023-02-24T02:17:15.756244Z'
 published: '2022-03-09T00:01:43.021663Z'
 references:
 - type: REPORT
@@ -34,6 +34,7 @@ affected:
   - ghostpdl-9.56.0rc1_release_tests_002
   - ken_20220210_baseline
   - robin-test-base-0
+  - ghostpdl-9.56.0-test-base-6
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.2.0
