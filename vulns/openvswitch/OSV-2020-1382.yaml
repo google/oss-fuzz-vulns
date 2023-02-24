@@ -10,7 +10,7 @@ details: |
   format_odp_tun_attr
   format_odp_key_attr__
   ```
-modified: '2022-04-13T03:33:53.128078Z'
+modified: '2023-02-24T01:43:04.741020Z'
 published: '2020-07-28T00:00:06.837707Z'
 references:
 - type: REPORT
@@ -26,15 +26,13 @@ affected:
     - introduced: 1ecb4cde6d889cf265667c798e8503103782869e
     - fixed: bb9303899b8bd7a9251a723393959c923d0c0196
     - fixed: d40db569e2a83d925c67b3affa1a31de6d9ef07c
+    - fixed: 17f22fe46142ef0402bff0e3eb9a4768d93b8008
+    - fixed: abe7fe44862153e93cff8992ae27915931634a80
   versions:
   - v2.13.0
   - v2.13.1
-  - v2.13.2
-  - v2.13.3
   - v2.14.0
-  - v2.13.4
-  - v2.13.5
-  - v2.13.6
-  - v2.13.7
   ecosystem_specific:
     severity: MEDIUM
+  database_specific:
+    fixed_range: 193995f81c07347847190b03bd9da23948d497a6:17f22fe46142ef0402bff0e3eb9a4768d93b8008
