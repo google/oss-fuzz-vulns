@@ -10,7 +10,7 @@ details: |
   g_utf8_validate
   g_variant_serialiser_is_string
   ```
-modified: '2022-04-13T03:04:32.521802Z'
+modified: '2023-02-24T01:42:43.122045Z'
 published: '2021-01-13T00:00:59.593904Z'
 references:
 - type: REPORT
@@ -25,6 +25,7 @@ affected:
     events:
     - introduced: 10ee7301e8edb13e59143ee5653cd2b46e26c044
     - fixed: d192a078c876107652e535e3e74b90e387d51a0f
+    - fixed: 1564ef55896b37c469dc8ee230068488bfaf0871
   versions:
   - 2.57.3
   - 2.58.0
@@ -34,3 +35,5 @@ affected:
   ecosystem_specific:
     severity: MEDIUM
     introduced_range: 8defa46e6ec16aa3722aa0ac0bc3db0fecd86c45:0d271223d894e9c69b7fa6b7983511f8ad770682
+  database_specific:
+    fixed_range: da512adc34926d20bac929e51acefcb4d2c92a72:1564ef55896b37c469dc8ee230068488bfaf0871
