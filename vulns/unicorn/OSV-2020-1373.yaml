@@ -8,7 +8,7 @@ details: |
   Crash state:
   helper_uc_tracecode
   ```
-modified: '2022-04-13T03:04:39.188618Z'
+modified: '2023-02-24T01:56:33.315977Z'
 published: '2020-07-28T00:00:04.707812Z'
 references:
 - type: REPORT
@@ -23,8 +23,16 @@ affected:
     events:
     - introduced: 881e08da017e2679ccc98bfcbf1fc5b74ee822d4
     - fixed: 7ca7e8a79d85ca57bb523be49009b0326b7a5210
+    - fixed: 3fadb5aa5aad22926f5f816dbe396f8661990374
+    - fixed: e2a924a32b6fd3f24163b93996ac91782f518a25
   versions:
   - 1.0.2
   - 1.0.2-rc4
   - 1.0.2-rc5
   - 1.0.2-rc6
+  - 1.0.3
+  - 2.0.0-rc1
+  - 2.0.0-rc2
+  - 2.0.0-rc3
+  database_specific:
+    fixed_range: 7ca7e8a79d85ca57bb523be49009b0326b7a5210:3fadb5aa5aad22926f5f816dbe396f8661990374
