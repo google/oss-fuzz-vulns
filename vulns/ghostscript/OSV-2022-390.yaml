@@ -10,7 +10,7 @@ details: |
   sreadbuf
   spgetcc
   ```
-modified: '2022-05-10T00:14:10.999134Z'
+modified: '2023-02-24T01:55:09.258829Z'
 published: '2022-05-02T00:01:27.811540Z'
 references:
 - type: REPORT
@@ -41,6 +41,7 @@ affected:
   - ken_20220210_baseline
   - robin-test-base-0
   - ghostpdl-9.56.0-test-base-6
+  - ghostpdl-9.56.1
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.2.0
