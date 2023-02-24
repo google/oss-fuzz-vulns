@@ -1,0 +1,91 @@
+id: OSV-2023-72
+summary: Heap-buffer-overflow in perfetto::trace_processor::TrackEventParser::ParseTrackDescriptor
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=56057
+
+  ```
+  Crash type: Heap-buffer-overflow WRITE 4
+  Crash state:
+  perfetto::trace_processor::TrackEventParser::ParseTrackDescriptor
+  perfetto::trace_processor::TrackEventModule::ParseTracePacketData
+  perfetto::trace_processor::ProtoTraceParser::ParseTracePacket
+  ```
+modified: '2023-02-18T13:00:15.470417Z'
+published: '2023-02-18T13:00:15.470143Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=56057
+affected:
+- package:
+    name: perfetto
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/perfetto
+  ranges:
+  - type: GIT
+    repo: https://android.googlesource.com/platform/external/perfetto/
+    events:
+    - introduced: 8209fb9b9a4156232aa87ad4621e541bfb777ec1
+  versions:
+  - android-13.0.0_r1
+  - android-13.0.0_r12
+  - android-13.0.0_r2
+  - android-13.0.0_r3
+  - android-13.0.0_r31
+  - android-13.0.0_r4
+  - android-13.0.0_r5
+  - android-13.0.0_r6
+  - android-13.0.0_r7
+  - android-13.0.0_r8
+  - android-cts-13.0_r1
+  - android-cts-13.0_r2
+  - android-cts-13.0_r3
+  - android-mainline-12.0.0_r100
+  - android-mainline-12.0.0_r122
+  - android-mainline-12.0.0_r49
+  - android-mainline-12.0.0_r59
+  - android-mainline-12.0.0_r63
+  - android-mainline-12.0.0_r70
+  - android-mainline-12.0.0_r77
+  - android-mainline-12.0.0_r99
+  - android-platform-13.0.0_r1
+  - android-platform-13.0.0_r2
+  - android-security-13.0.0_r1
+  - android-security-13.0.0_r2
+  - android-vts-13.0_r1
+  - android-vts-13.0_r2
+  - android-vts-13.0_r3
+  - platform-tools-29.0.1
+  - platform-tools-29.0.2
+  - platform-tools-29.0.3
+  - platform-tools-29.0.4
+  - platform-tools-29.0.5
+  - platform-tools-29.0.6
+  - platform-tools-30.0.0
+  - platform-tools-30.0.1
+  - platform-tools-30.0.2
+  - platform-tools-30.0.3
+  - platform-tools-30.0.4
+  - platform-tools-30.0.5
+  - platform-tools-31.0.0
+  - platform-tools-31.0.1
+  - platform-tools-31.0.2
+  - platform-tools-31.0.3
+  - platform-tools-32.0.0
+  - platform-tools-33.0.0
+  - platform-tools-33.0.1
+  - platform-tools-33.0.2
+  - platform-tools-33.0.3
+  - platform-tools-33.0.4
+  - platform-tools-34.0.0
+  - v27.0
+  - v27.1
+  - v28.0
+  - v29.0
+  - v30.0
+  - v31.0
+  - v32.0
+  - v32.1
+  - v32.2
+  ecosystem_specific:
+    severity: HIGH
+schema_version: 1.3.0
