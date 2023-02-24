@@ -10,7 +10,7 @@ details: |
   wabt::BinaryReader::ReadRelocSection
   wabt::BinaryReader::ReadCustomSection
   ```
-modified: '2022-04-13T03:04:37.992103Z'
+modified: '2023-02-24T01:54:39.392108Z'
 published: '2020-08-19T00:00:06.787048Z'
 references:
 - type: REPORT
@@ -25,5 +25,8 @@ affected:
     events:
     - introduced: 4b9852ad23541c851031398b835d6387b1b51393
     - fixed: 09ac53e41d959ce8e14e703e627327971e67f6d3
+    - fixed: cf1e138ba9cde79d51f56d873e10b7ac9e4481b1
   versions:
   - 1.0.20
+  database_specific:
+    fixed_range: 09ac53e41d959ce8e14e703e627327971e67f6d3:cf1e138ba9cde79d51f56d873e10b7ac9e4481b1
