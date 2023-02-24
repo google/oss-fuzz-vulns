@@ -25,7 +25,9 @@ affected:
     events:
     - introduced: 1902f730ee2bda60552f34c0643e2d7b47e4fb64
     - fixed: ddc2a2d381843e086fc36388981d0b8ba1ea789d
-  versions:
-  - php-8.0.0beta3
+    - fixed: c4016ecd446ef26bb3dc77735b6e441e151ea985
   ecosystem_specific:
     severity: MEDIUM
+  database_specific:
+    fixed_range: 8b6b2bda093b26640d0d1d640e4566684df88011:c4016ecd446ef26bb3dc77735b6e441e151ea985
+  versions: []
