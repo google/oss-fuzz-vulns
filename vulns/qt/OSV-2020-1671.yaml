@@ -10,7 +10,7 @@ details: |
   bool drawLineAA<&
   QCosmeticStroker::drawPath
   ```
-modified: '2022-04-13T03:04:36.810808Z'
+modified: '2023-02-24T02:01:45.842239Z'
 published: '2020-08-29T00:00:13.673013Z'
 references:
 - type: REPORT
@@ -29,6 +29,7 @@ affected:
     - fixed: f575ed4b15c97726c64dbceff23237c84ac26480
     - fixed: 80e3ded22d873e4d5d4251f29943f6f670cb69f0
     - fixed: 1d778a59f781ecf822c9e3f7777b680fea2c4e62
+    - fixed: b3326dc04e20bd1e7a455dd4fe00fba4bf0b7445
   versions:
   - qt-v5.0.0-alpha1
   - v5.0.0
@@ -110,7 +111,6 @@ affected:
   - v5.15.0-beta4
   - v5.15.0-rc1
   - v5.15.0-rc2
-  - v5.15.1
   - v5.2.0
   - v5.2.0-alpha1
   - v5.2.0-beta1
@@ -170,3 +170,5 @@ affected:
   - v6.0.0-alpha1
   ecosystem_specific:
     severity: MEDIUM
+  database_specific:
+    fixed_range: 91c229fc17054feacb63de186e3419bc5c2f1933:b3326dc04e20bd1e7a455dd4fe00fba4bf0b7445
