@@ -10,7 +10,7 @@ details: |
   mk_rconf_meta_add
   mk_rconf_read
   ```
-modified: '2022-04-13T03:22:54.745562Z'
+modified: '2023-02-24T01:41:08.404496Z'
 published: '2021-06-14T00:00:34.638360Z'
 references:
 - type: REPORT
@@ -49,5 +49,8 @@ affected:
   - v1.8.8
   - v1.8.9
   - v1.8.9-dev-6b56f51
+  - tiger-1.8.15-20221123
+  - tiger-1.8.15-20221220
+  - tiger-1.8.15-20230223
   ecosystem_specific:
     severity: MEDIUM
