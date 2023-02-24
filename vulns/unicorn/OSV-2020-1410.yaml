@@ -10,7 +10,7 @@ details: |
   float64_to_float32_aarch64eb
   helper_vfp_fcvtsd_aarch64eb
   ```
-modified: '2022-04-13T03:04:39.249649Z'
+modified: '2023-02-24T01:22:46.281541Z'
 published: '2020-07-28T00:00:12.342145Z'
 references:
 - type: REPORT
@@ -25,6 +25,7 @@ affected:
     events:
     - introduced: 626d72d6df1777733c79f546d08c9fd66f107d6e
     - fixed: 7ca7e8a79d85ca57bb523be49009b0326b7a5210
+    - fixed: e2a924a32b6fd3f24163b93996ac91782f518a25
   versions:
   - 1.0.2-rc1
   - 1.0.2-rc2
@@ -32,5 +33,10 @@ affected:
   - 1.0.2-rc4
   - 1.0.2-rc5
   - 1.0.2-rc6
+  - 1.0.2
+  - 1.0.3
+  - 2.0.0-rc1
+  - 2.0.0-rc2
+  - 2.0.0-rc3
   ecosystem_specific:
     severity: MEDIUM
