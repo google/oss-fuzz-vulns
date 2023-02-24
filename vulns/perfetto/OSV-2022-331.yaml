@@ -8,7 +8,7 @@ details: |
   void unwindstack::Symbols::BuildRemapTable<Elf64_Sym>
   bool unwindstack::Symbols::GetName<Elf64_Sym>
   unwindstack::ElfInterfaceImpl<unwindstack::ElfTypes64>::GetFunctionName
-modified: '2022-12-07T00:17:22.614021Z'
+modified: '2023-02-24T01:39:21.134337Z'
 published: '2022-04-11T00:00:39.202876Z'
 references:
 - type: REPORT
@@ -498,6 +498,75 @@ affected:
   - v7.0
   - v8.0
   - v9.0
+  - aml_adb_331113120
+  - aml_adb_331314020
+  - aml_art_331113000
+  - aml_art_331314010
+  - aml_ase_331112000
+  - aml_cbr_331111030
+  - aml_cbr_331310010
+  - aml_con_331115000
+  - aml_con_331312000
+  - aml_ext_331112010
+  - aml_ext_331312000
+  - aml_ips_331111030
+  - aml_ips_331310000
+  - aml_med_331115000
+  - aml_med_331318000
+  - aml_mpr_331112030
+  - aml_mpr_331112050
+  - aml_mpr_331311080
+  - aml_net_331110020
+  - aml_net_331313010
+  - aml_net_331313030
+  - aml_per_331115020
+  - aml_per_331313010
+  - aml_res_331114000
+  - aml_res_331314010
+  - aml_sta_331311000
+  - aml_swc_331116000
+  - aml_swc_331318000
+  - aml_tet_331117000
+  - aml_tet_331312080
+  - aml_tz2_303900102
+  - aml_tz3_312511010
+  - aml_tz4_331314010
+  - aml_uwb_331115000
+  - aml_uwb_331310030
+  - aml_wif_331112000
+  - aml_wif_331310070
+  - android-13.0.0_r19
+  - android-13.0.0_r20
+  - android-13.0.0_r21
+  - android-13.0.0_r22
+  - android-13.0.0_r23
+  - android-13.0.0_r24
+  - android-13.0.0_r27
+  - android-13.0.0_r28
+  - android-13.0.0_r29
+  - android-13.0.0_r30
+  - android-13.0.0_r31
+  - android-cts-12.0_r7
+  - android-cts-12.1_r5
+  - android-cts-13.0_r3
+  - android-platform-12.0.0_r15
+  - android-platform-12.0.0_r16
+  - android-platform-12.1.0_r11
+  - android-platform-12.1.0_r12
+  - android-platform-13.0.0_r4
+  - android-platform-13.0.0_r5
+  - android-security-12.0.0_r43
+  - android-security-12.0.0_r44
+  - android-security-13.0.0_r2
+  - android-vts-12.0_r7
+  - android-vts-12.1_r5
+  - android-vts-13.0_r3
+  - studio-2022.1.1
+  - studio-2022.1.1-rc3
+  - studio-2022.2.1-beta1
+  - studio-2022.2.1-canary10
+  - studio-2022.3.1-canary1
+  - t_frc_doc_330543000
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.2.0
