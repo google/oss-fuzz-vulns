@@ -10,7 +10,7 @@ details: |
   sampled_data_continue
   interp
   ```
-modified: '2022-04-13T03:04:34.568287Z'
+modified: '2023-02-24T01:41:11.985482Z'
 published: '2021-01-26T00:00:02.244670Z'
 references:
 - type: REPORT
@@ -25,6 +25,7 @@ affected:
     events:
     - introduced: 45e765e59a45b46dcb05e8c729689a7c0574a48c
     - fixed: 7861fcad13c497728189feafb41cd57b5b50ea25
+    - fixed: 0bd6877f480a84657696a80adc13f9c5485dd996
   versions:
   - ghostpdl-9.28rc1
   - ghostpdl-9.28rc2
@@ -58,3 +59,5 @@ affected:
   ecosystem_specific:
     introduced_range: f209fb3a0f50cd0a9974d8627a4ac7f358f60c8a:470897e484fb0bfaa8553e0ccd5b9db91eda008b
     severity: HIGH
+  database_specific:
+    fixed_range: 8cac642a1caf0ff821b2f1f83ee322a1cffc9a3e:0bd6877f480a84657696a80adc13f9c5485dd996
