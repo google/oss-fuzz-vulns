@@ -10,7 +10,7 @@ details: |
   flb_parser_conf_file
   config_random_fuzzer.c
   ```
-modified: '2022-09-14T00:00:07.226724Z'
+modified: '2023-02-24T01:24:28.948286Z'
 published: '2022-09-14T00:00:07.226430Z'
 references:
 - type: REPORT
@@ -45,6 +45,7 @@ affected:
   - v1.9.7
   - v1.9.8
   - v1.9.9
+  - v1.9.10
   ecosystem_specific:
     severity: HIGH
 schema_version: 1.3.0
