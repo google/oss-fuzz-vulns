@@ -10,7 +10,7 @@ details: |
   evax_bfd_print_image
   vms_bfd_print_private_bfd_data
   ```
-modified: '2022-04-13T03:04:31.586732Z'
+modified: '2023-02-24T05:02:12.387302Z'
 published: '2022-02-21T00:01:49.508994Z'
 references:
 - type: REPORT
@@ -28,6 +28,12 @@ affected:
     - fixed: 5f4a18df321c8c2f2db61cda1ed201b70ceb424f
   versions:
   - binutils-2_38
+  - binutils-2_39
+  - binutils-2_40
+  - gdb-12-branchpoint
+  - gdb-12.1-release
+  - gdb-13-branchpoint
+  - gdb-13.1-release
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.2.0
