@@ -10,7 +10,7 @@ details: |
   sampled_data_continue
   interp
   ```
-modified: '2022-04-13T03:04:34.371918Z'
+modified: '2023-02-24T01:39:10.148952Z'
 published: '2021-05-27T00:01:05.378775Z'
 references:
 - type: REPORT
@@ -25,6 +25,7 @@ affected:
     events:
     - introduced: 45e765e59a45b46dcb05e8c729689a7c0574a48c
     - fixed: 2a3129365d3bc0d4a41f107ef175920d1505d1f7
+    - fixed: 9d6e533f6486fe3fd0a6e29b23d1811361adf904
   versions:
   - ghostpdl-9.28rc1
   - ghostpdl-9.28rc2
@@ -39,11 +40,8 @@ affected:
   - ghostpdl-9.51rc3
   - ghostpdl-9.52
   - ghostpdl-9.52-test-base-1
-  - ghostpdl-9.52-test-base-2
   - ghostpdl-9.52-test-base-3
   - ghostpdl-9.52-test-base-4
-  - ghostpdl-9.52-test-base-5
-  - ghostpdl-9.52-test-base-6
   - ghostpdl-9.52.1
   - ghostpdl-9.53.0
   - ghostpdl-9.53.0-test-base-0
@@ -54,48 +52,15 @@ affected:
   - ghostpdl-9.53.3
   - ghostpdl-9.54.0
   - ghostpdl-9.54.0-test-base-0
-  - ghostpdl-9.54.0rc1
   - ghostpdl-9.54.0rc1_test
-  - ghostpdl-9.54.0rc1_test_002
   - ghostscript-9.50
   - ghostscript-9.51
   - ghostscript-9.52
   - gpdf_alpha1
-  - gpdf_gs_text_filter_000
-  - gpdf_gs_text_filter_001
-  - gpdf_gs_text_filter_002
-  - gpdf_gs_text_filter_003
-  - gpdf_gs_text_filter_004
-  - gpdf_gs_text_filter_005
-  - gpdf_gs_text_filter_006
-  - gpdf_gs_text_filter_007
-  - gpdf_gs_text_filter_008
-  - gpdf_gs_text_filter_009
-  - gpdf_gs_text_filter_010
-  - gpdf_gs_text_filter_011
-  - gpdf_gs_text_filter_012
-  - gpdf_gs_text_filter_013
-  - gpdf_gs_text_filter_014
-  - gpdf_gs_text_filter_015
-  - gpdf_gs_text_filter_016
-  - gpdf_gs_text_filter_017
-  - gpdf_gs_text_filter_018
-  - gpdf_gs_text_filter_019
-  - gpdf_gs_text_filter_020
-  - gpdf_gs_text_filter_021
-  - gpdf_gs_text_filter_022
-  - gpdf_gs_text_filter_023
-  - gpdf_gs_text_filter_024
-  - gpdf_gs_text_filter_025
-  - gpdf_gs_text_filter_026
-  - gpdf_gs_text_filter_027
-  - gpdf_gs_text_filter_028
-  - gpdf_gs_text_filter_029
-  - gpdf_gs_text_filter_030
   - gs9.28-temp-for-testing-tag
   - rjj_9.53.2_test
-  - robin_test_ref
-  - robin_test_rev
   ecosystem_specific:
     introduced_range: f209fb3a0f50cd0a9974d8627a4ac7f358f60c8a:470897e484fb0bfaa8553e0ccd5b9db91eda008b
     severity: HIGH
+  database_specific:
+    fixed_range: 25b8457be76ba09c2380e5058ca4878e1a7f5ee8:9d6e533f6486fe3fd0a6e29b23d1811361adf904
