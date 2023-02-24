@@ -10,7 +10,7 @@ details: |
   mk_rconf_open
   flb_parser_conf_file
   ```
-modified: '2022-04-13T03:04:38.431344Z'
+modified: '2023-02-24T02:09:05.039845Z'
 published: '2021-06-14T00:00:18.084172Z'
 references:
 - type: REPORT
@@ -25,10 +25,24 @@ affected:
     events:
     - introduced: 8f653c34c0dd46c39e2a5ebf9ff3fe9ec932fc4f
     - introduced: ed82460da17f5a029df74503d3a5f8f69d29d3ea
+    - fixed: 1c3811ba12bf924a96c916e2409a0d41c336debf
   versions:
+  - 1.8.9-dev-6b56f51
+  - '20220215'
+  - tiger-1.8.15-20221123
+  - tiger-1.8.15-20221220
+  - tiger-1.8.15-20230223
+  - unstable-1.8
+  - unstable-leonardo-cio-log-poc
   - v1.8.0
   - v1.8.0-rc1
   - v1.8.1
+  - v1.8.10
+  - v1.8.11
+  - v1.8.12
+  - v1.8.13
+  - v1.8.14
+  - v1.8.15
   - v1.8.2
   - v1.8.3
   - v1.8.4
@@ -36,9 +50,7 @@ affected:
   - v1.8.6
   - v1.8.7
   - v1.8.8
-  - 1.8.9-dev-6b56f51
-  - v1.8.9-dev-6b56f51
   - v1.8.9
-  - v1.8.10
+  - v1.8.9-dev-6b56f51
   ecosystem_specific:
     severity: MEDIUM
