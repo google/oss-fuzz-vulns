@@ -25,4 +25,7 @@ affected:
     events:
     - introduced: e1a3956f252404f07d93be47f7845b23e4a2c4de
     - fixed: 20610dc28ee3cf7e64ad46f11e9b96fb3befba00
+    - fixed: f2c1c8ede3cd425cdea802319413c74e48c2a12d
+  database_specific:
+    fixed_range: edd20b3b8c3c1a7117dd5dbee0b54cd1de7838bf:f2c1c8ede3cd425cdea802319413c74e48c2a12d
   versions: []
