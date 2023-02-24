@@ -10,7 +10,7 @@ details: |
   perfetto::trace_processor::ClockTracker::Convert
   perfetto::trace_processor::ClockTracker::ToTraceTime
   ```
-modified: '2022-04-13T03:27:59.053927Z'
+modified: '2023-02-24T01:40:13.423551Z'
 published: '2020-07-10T00:00:21.254899Z'
 references:
 - type: REPORT
@@ -158,5 +158,33 @@ affected:
   - android-vts-11.0_r5
   - android-vts-11.0_r6
   - android-vts-11.0_r7
+  - android-cts-11.0_r10
+  - android-cts-11.0_r11
+  - android-cts-11.0_r8
+  - android-cts-11.0_r9
+  - android-platform-11.0.0_r18
+  - android-platform-11.0.0_r19
+  - android-platform-11.0.0_r20
+  - android-platform-11.0.0_r21
+  - android-platform-11.0.0_r22
+  - android-platform-11.0.0_r23
+  - android-platform-11.0.0_r24
+  - android-platform-11.0.0_r25
+  - android-platform-11.0.0_r26
+  - android-platform-11.0.0_r27
+  - android-security-11.0.0_r55
+  - android-security-11.0.0_r56
+  - android-security-11.0.0_r57
+  - android-security-11.0.0_r58
+  - android-security-11.0.0_r59
+  - android-security-11.0.0_r60
+  - android-security-11.0.0_r61
+  - android-security-11.0.0_r62
+  - android-security-11.0.0_r63
+  - android-security-11.0.0_r64
+  - android-vts-11.0_r10
+  - android-vts-11.0_r11
+  - android-vts-11.0_r8
+  - android-vts-11.0_r9
   ecosystem_specific:
     severity: MEDIUM
