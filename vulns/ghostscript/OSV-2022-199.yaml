@@ -10,7 +10,7 @@ details: |
   pdfi_initialise_Decryption
   pdfi_set_input_stream
   ```
-modified: '2022-04-13T03:04:34.758434Z'
+modified: '2023-02-24T02:18:08.648171Z'
 published: '2022-02-25T00:01:57.594646Z'
 references:
 - type: REPORT
@@ -35,6 +35,7 @@ affected:
   - ken_20220210_baseline
   - robin-test-base-0
   - ghostpdl-9.56.0rc1_release_tests_001
+  - ghostpdl-9.56.0-test-base-6
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.2.0
