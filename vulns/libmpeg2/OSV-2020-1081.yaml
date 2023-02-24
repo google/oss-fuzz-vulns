@@ -10,7 +10,7 @@ details: |
   impeg2d_deinterlace
   impeg2d_dec_pic_data_thread
   ```
-modified: '2022-04-13T03:34:39.288244Z'
+modified: '2023-02-24T01:54:55.430091Z'
 published: '2020-07-22T21:49:45.804538Z'
 references:
 - type: REPORT
@@ -33,6 +33,11 @@ affected:
   - android-mainline-10.0.0_r12
   - android-mainline-10.0.0_r13
   - android-mainline-12.0.0_r54
+  - android-mainline-12.0.0_r111
+  - q_tzdata_aml_294400310
+  - q_tzdata_aml_295500001
+  - q_tzdata_aml_295500002
+  - q_tzdata_aml_295600110
   ecosystem_specific:
     severity: HIGH
     introduced_range: unknown:2caf20ff25c090341965cc88b7f31f129e806a3a
