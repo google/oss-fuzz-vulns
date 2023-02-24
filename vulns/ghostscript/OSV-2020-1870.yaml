@@ -10,7 +10,7 @@ details: |
   load_truetype_glyph
   TT_Load_Glyph
   ```
-modified: '2022-04-13T03:04:34.746346Z'
+modified: '2023-02-24T02:00:50.660133Z'
 published: '2020-09-29T00:00:14.014972Z'
 references:
 - type: REPORT
@@ -25,11 +25,12 @@ affected:
     events:
     - introduced: 668917a10e7eada030f7d2dddec9f579fddeed3d
     - fixed: 0ae681ab1fd3475995418d00da1ccfe374f069cc
+    - fixed: 825d6807a72b68a2faf11fc37f89b1b75967d727
   versions:
   - ghostpdl-9.52-test-base-3
   - ghostpdl-9.52-test-base-4
-  - ghostpdl-9.52-test-base-5
-  - ghostpdl-9.52-test-base-6
   ecosystem_specific:
     introduced_range: unknown:668917a10e7eada030f7d2dddec9f579fddeed3d
     severity: MEDIUM
+  database_specific:
+    fixed_range: d68f56e25110ba3baf03553c2d1839febc02dbdb:825d6807a72b68a2faf11fc37f89b1b75967d727
