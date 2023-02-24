@@ -10,7 +10,7 @@ details: |
   ihevcd_iquant_itrans_recon_ctb
   ihevcd_process
   ```
-modified: '2022-04-13T03:35:45.699378Z'
+modified: '2023-02-24T02:05:15.506698Z'
 published: '2020-07-22T21:49:44.388184Z'
 references:
 - type: REPORT
@@ -50,6 +50,11 @@ affected:
   - android-mainline-10.0.0_r9
   - android-mainline-10.0.0_r13
   - android-mainline-12.0.0_r54
+  - android-mainline-12.0.0_r111
+  - q_tzdata_aml_294400310
+  - q_tzdata_aml_295500001
+  - q_tzdata_aml_295500002
+  - q_tzdata_aml_295600110
   ecosystem_specific:
     severity: MEDIUM
     introduced_range: unknown:d28f2210ee8e65afdfb07a1fd6582285d3d178e0
