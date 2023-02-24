@@ -10,7 +10,7 @@ details: |
   jbig2_decode_refinement_TPGRON
   jbig2_decode_refinement_region
   ```
-modified: '2022-04-13T03:04:40.569287Z'
+modified: '2023-02-24T01:40:59.824172Z'
 published: '2020-07-14T05:37:48.869064Z'
 references:
 - type: REPORT
@@ -24,8 +24,11 @@ affected:
     repo: git://git.ghostscript.com/jbig2dec.git
     events:
     - introduced: c3134491a3010fcce440a45968407c6511766671
+    - fixed: 8c4cb846ba1634f1e149833090beb7376f216157
   versions:
   - '0.18'
   - '0.19'
   ecosystem_specific:
     severity: MEDIUM
+  database_specific:
+    fixed_range: a6cc1dace9e08159766a45798a69fe4c4a6a881c:8c4cb846ba1634f1e149833090beb7376f216157
