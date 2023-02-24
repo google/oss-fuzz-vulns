@@ -10,7 +10,7 @@ details: |
   CheckPWAuthSession
   CheckAuthSession
   ```
-modified: '2022-12-09T00:10:12.839380Z'
+modified: '2023-02-24T01:39:07.720489Z'
 published: '2020-07-28T00:00:34.623899Z'
 references:
 - type: REPORT
@@ -26,6 +26,8 @@ affected:
     - introduced: 1a68fe6fa860f563e8b45e3826110ceec75d61a8
     - introduced: 5e4dd24d2d92ea9b9582388be6ecf4a055605c8b
     - fixed: 65c804e123ea391008f7675bec4b4108669a0f58
+    - fixed: 59ce8a4993e215973e1a9741dd287e989a3e53f8
+    - fixed: 601f56c69e97eed8d87d003099c80af7163b250a
   versions:
   - cr50_v3.4
   - cr50_v4.4
