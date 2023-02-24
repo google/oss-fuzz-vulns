@@ -10,7 +10,7 @@ details: |
   __gxx_personality_v0
   _Unwind_RaiseException
   ```
-modified: '2022-04-13T03:27:38.650898Z'
+modified: '2023-02-24T01:48:53.108156Z'
 published: '2021-01-13T21:55:59.387722Z'
 references:
 - type: REPORT
@@ -37,6 +37,8 @@ affected:
   - 5.6.8
   - v5.7.1
   - v5.7.3
+  - tag-6.1.7
+  - v6.1.2
   ecosystem_specific:
     introduced_range: 2a079823c708a637bc36e888180ebb96fdfba526:1d8ea7923dae7c8f136912b6bdca95dcb52e80bc
     severity: MEDIUM
