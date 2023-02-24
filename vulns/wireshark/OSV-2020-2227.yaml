@@ -10,7 +10,7 @@ details: |
   g_hash_table_insert_internal
   fragment_add_seq_common
   ```
-modified: '2022-04-13T04:21:33.233075Z'
+modified: '2023-02-24T02:37:08.122111Z'
 published: '2020-12-04T00:00:30.414831Z'
 references:
 - type: REPORT
@@ -76,5 +76,14 @@ affected:
   - wireshark-3.4.7
   - wireshark-3.4.8
   - wireshark-3.4.9
+  - v3.4.14
+  - v3.4.15
+  - v3.4.15rc0
+  - v3.4.16
+  - v3.4.16rc0
+  - v3.4.17rc0
+  - wireshark-3.4.14
+  - wireshark-3.4.15
+  - wireshark-3.4.16
   ecosystem_specific:
     severity: MEDIUM
