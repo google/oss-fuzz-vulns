@@ -10,7 +10,7 @@ details: |
   cli_bcomp_addpatt
   readdb_parse_ldb_subsignature
   ```
-modified: '2022-04-15T00:01:49.289433Z'
+modified: '2023-02-24T01:29:44.509664Z'
 published: '2022-04-15T00:01:49.289095Z'
 references:
 - type: REPORT
@@ -30,6 +30,8 @@ affected:
   - clamav-0.105.0
   - clamav-0.105.0-rc
   - clamav-0.105.0-rc2
+  - clamav-0.105.1
+  - clamav-0.105.2
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.2.0
