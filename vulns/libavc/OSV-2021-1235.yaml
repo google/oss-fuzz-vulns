@@ -10,7 +10,7 @@ details: |
   ih264d_compute_bs_non_mbaff_thread
   ih264d_recon_deblk_slice
   ```
-modified: '2022-04-13T03:04:35.510496Z'
+modified: '2023-02-24T01:45:10.980832Z'
 published: '2021-09-12T00:00:37.949727Z'
 references:
 - type: REPORT
@@ -27,6 +27,8 @@ affected:
     - fixed: 2191ac2b82618e4acf73e5247794f51eb01eabd3
     - fixed: 23247c81421129686df32536ed9a15b0508acd39
     - fixed: a20b83447dbefd90b21e109fb9d5fcc4d0b1e193
+    - fixed: dc110841d6a3fb2f9c9f1af04b3b71da40fbd392
+    - fixed: 479c2eab082f4fd9a1aa384cf4e4db6ef6bd907f
   versions:
   - android-11.0.0_r18
   - android-11.0.0_r19
@@ -164,5 +166,21 @@ affected:
   - android-12.0.0_r30
   - android-12.0.0_r31
   - android-cts-12.0_r3
+  - aml_doc_310851020
+  - android-12.0.0_r33
+  - android-12.0.0_r34
+  - android-cts-12.0_r4
+  - android-cts-12.0_r5
+  - android-cts-12.0_r6
+  - android-cts-12.0_r7
+  - android-mainline-12.0.0_r22
+  - android-mainline-12.0.0_r42
+  - android-mainline-12.0.0_r49
+  - android-mainline-12.0.0_r58
+  - android-vts-12.0_r3
+  - android-vts-12.0_r4
+  - android-vts-12.0_r5
+  - android-vts-12.0_r6
+  - android-vts-12.0_r7
   ecosystem_specific:
     severity: MEDIUM
