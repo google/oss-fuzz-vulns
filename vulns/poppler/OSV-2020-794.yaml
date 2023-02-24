@@ -10,7 +10,7 @@ details: |
   Splash::blitImage
   Splash::drawImage
   ```
-modified: '2022-04-13T03:04:37.260713Z'
+modified: '2023-02-24T02:01:01.294459Z'
 published: '2020-07-14T05:37:37.128981Z'
 references:
 - type: REPORT
@@ -25,6 +25,7 @@ affected:
     events:
     - introduced: 710534c7229c42c85038b4263fc67f4ff4a94182
     - fixed: d776dafbd40e75f35d6a6fc6cb012f158ee1409d
+    - fixed: 051cae3b34226953aa0381f850e8e6eaa0b564bd
   versions:
   - poppler-0.70.0
   - poppler-0.70.1
@@ -61,3 +62,5 @@ affected:
   ecosystem_specific:
     introduced_range: 5b9f42db983e1d5e915373cf554a50ce4e9b7ef0:f162ecdea0dda5dbbdb45503c1d55d9afaa41d44
     severity: MEDIUM
+  database_specific:
+    fixed_range: 3252bc323c814eb010df011024f06597755b4b7d:051cae3b34226953aa0381f850e8e6eaa0b564bd
