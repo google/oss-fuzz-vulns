@@ -10,7 +10,7 @@ details: |
   r_bin_file_free
   r_list_delete
   ```
-modified: '2022-04-13T03:04:36.562136Z'
+modified: '2023-02-24T01:33:55.035893Z'
 published: '2020-06-24T01:51:18.455623Z'
 references:
 - type: REPORT
@@ -25,6 +25,7 @@ affected:
     events:
     - introduced: 775f2b3d8d6d44f3312f9911dcf70b203268f387
     - fixed: 498292a70d65073a7bf1a36e3997debe8f1f0792
+    - fixed: 941245d871e27ffc879a9ca6f25e3b39efec376a
   versions:
   - 4.4.0
   ecosystem_specific:
