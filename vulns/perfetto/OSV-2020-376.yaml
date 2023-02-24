@@ -10,7 +10,7 @@ details: |
   perfetto::trace_processor::FuchsiaTraceParser::ParseTracePacket
   perfetto::trace_processor::TraceSorter::SortAndExtractEventsBeyondWindow
   ```
-modified: '2022-04-13T03:31:37.392338Z'
+modified: '2023-02-24T01:37:02.630745Z'
 published: '2020-07-01T00:00:05.968178Z'
 references:
 - type: REPORT
@@ -125,5 +125,23 @@ affected:
   - android-vts-10.0_r11
   - android-vts-10.0_r8
   - android-vts-10.0_r9
+  - android-cts-10.0_r12
+  - android-cts-10.0_r13
+  - android-cts-10.0_r14
+  - android-cts-10.0_r15
+  - android-security-10.0.0_r66
+  - android-security-10.0.0_r67
+  - android-security-10.0.0_r68
+  - android-security-10.0.0_r69
+  - android-security-10.0.0_r70
+  - android-security-10.0.0_r71
+  - android-security-10.0.0_r72
+  - android-security-10.0.0_r73
+  - android-security-10.0.0_r74
+  - android-security-10.0.0_r75
+  - android-vts-10.0_r12
+  - android-vts-10.0_r13
+  - android-vts-10.0_r14
+  - android-vts-10.0_r15
   ecosystem_specific:
     severity: MEDIUM
