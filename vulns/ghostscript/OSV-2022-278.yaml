@@ -10,7 +10,7 @@ details: |
   cmd_put_bits
   clist_copy_mono
   ```
-modified: '2022-04-13T03:04:34.382982Z'
+modified: '2023-02-24T01:59:07.320866Z'
 published: '2022-03-26T00:00:21.517737Z'
 references:
 - type: REPORT
@@ -39,6 +39,7 @@ affected:
   - ghostpdl-9.56.0rc2_release_tests_001
   - ken_20220210_baseline
   - robin-test-base-0
+  - ghostpdl-9.56.0-test-base-6
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.2.0
