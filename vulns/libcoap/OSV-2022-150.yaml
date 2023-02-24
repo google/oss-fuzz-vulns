@@ -7,7 +7,7 @@ details: |
   Crash state:
   coap_split_uri_sub
   coap_get_uri_path
-modified: '2022-02-14T00:00:50.309146Z'
+modified: '2023-02-24T02:00:30.395656Z'
 published: '2022-02-14T00:00:50.308933Z'
 references:
 - type: REPORT
@@ -22,7 +22,10 @@ affected:
     repo: https://github.com/obgm/libcoap.git
     events:
     - introduced: 6504b667d38012efa81087bf4cc960128f4dc2d4
+  versions:
+  - v4.3.1
+  - v4.3.1-rc1
+  - v4.3.1-rc2
   ecosystem_specific:
     severity: MEDIUM
-  versions: []
 schema_version: 1.2.0
