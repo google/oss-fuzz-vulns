@@ -10,7 +10,7 @@ details: |
   net_field_length_ll_safe
   read_ok_ex
   ```
-modified: '2022-04-13T04:34:43.892885Z'
+modified: '2023-02-24T02:33:10.821309Z'
 published: '2020-10-02T00:00:30.533072Z'
 references:
 - type: REPORT
@@ -37,6 +37,9 @@ affected:
     - introduced: f6f54dff3d74f451d41058c0400b0831d51d200e
     - introduced: 3f143ef16c605ccfe45102b1da3eaa38c1c5b357
     - introduced: 813c49ab745fe445e0deaea69165ca4d0e2d7c1a
+    - introduced: dc162c0c6e674351969f3dfc7e26268d8e4d86ee
+    - introduced: 1bfe02bdad6604d54913c62614bde57a055c8332
+    - introduced: 7128377197f3221f3a5541a159143e293910e902
   versions:
   - mysql-3.23.24-beta
   - mysql-3.23.27-beta
@@ -743,6 +746,21 @@ affected:
   - mysql-cluster-7.5.25
   - mysql-cluster-7.6.21
   - mysql-cluster-8.0.28
+  - mysql-5.7.41
+  - mysql-8.0.32
+  - mysql-cluster-7.4.36
+  - mysql-cluster-7.4.37
+  - mysql-cluster-7.4.38
+  - mysql-cluster-7.4.39
+  - mysql-cluster-7.5.26
+  - mysql-cluster-7.5.27
+  - mysql-cluster-7.5.28
+  - mysql-cluster-7.5.29
+  - mysql-cluster-7.6.22
+  - mysql-cluster-7.6.23
+  - mysql-cluster-7.6.24
+  - mysql-cluster-7.6.25
+  - mysql-cluster-8.0.32
   ecosystem_specific:
     severity: MEDIUM
     fixed_range: 91a17cedb1ee880fe7915fb14cfd74c04e8d6588:ea7d2e2d16ac03afdd9cb72a972a95981107bf51
