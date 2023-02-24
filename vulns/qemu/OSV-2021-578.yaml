@@ -10,7 +10,7 @@ details: |
   v9fs_xattrwalk
   coroutine_trampoline
   ```
-modified: '2022-04-13T03:04:33.303356Z'
+modified: '2023-02-24T01:58:19.627977Z'
 published: '2021-03-30T00:00:08.991714Z'
 references:
 - type: REPORT
@@ -33,5 +33,6 @@ affected:
   - v6.0.0-rc3
   - v6.0.0-rc4
   - v6.0.0-rc5
+  - v6.0.1
   ecosystem_specific:
     fixed_range: 52848929b70dcf92a68aedcfd90207be81ba3274:1ea06abceec61b6f3ab33dadb0510b6e09fb61e2
