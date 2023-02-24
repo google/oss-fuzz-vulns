@@ -9,7 +9,7 @@ details: |
   flb_hash_get_by_id
   utils_fuzzer.c
   ```
-modified: '2022-04-13T03:38:50.195219Z'
+modified: '2023-02-24T01:27:27.971126Z'
 published: '2021-08-01T00:00:59.162586Z'
 references:
 - type: REPORT
@@ -66,5 +66,8 @@ affected:
   - v1.8.8
   - v1.8.9
   - v1.8.9-dev-6b56f51
+  - tiger-1.8.15-20221123
+  - tiger-1.8.15-20221220
+  - tiger-1.8.15-20230223
   ecosystem_specific:
     severity: MEDIUM
