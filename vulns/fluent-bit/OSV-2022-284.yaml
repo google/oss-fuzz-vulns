@@ -8,7 +8,7 @@ details: |
   read_config
   read_glob
   read_config
-modified: '2022-07-10T00:25:14.635181Z'
+modified: '2023-02-24T01:42:35.895091Z'
 published: '2022-03-27T00:00:37.751332Z'
 references:
 - type: REPORT
@@ -33,6 +33,10 @@ affected:
   - v1.9.4
   - v1.9.5
   - v1.9.6
+  - v1.9.10
+  - v1.9.7
+  - v1.9.8
+  - v1.9.9
   ecosystem_specific:
     severity: HIGH
   database_specific:
