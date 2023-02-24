@@ -10,7 +10,7 @@ details: |
   QBezier::fromPoints
   QOutlineMapper::curveTo
   ```
-modified: '2022-04-13T03:04:36.919807Z'
+modified: '2023-02-24T02:29:58.691557Z'
 published: '2020-08-04T00:00:33.938651Z'
 references:
 - type: REPORT
@@ -29,6 +29,7 @@ affected:
     - fixed: 5c370569e5a7043300393a44181eeea2a93b7d04
     - fixed: 5d715e09aed7071157f4dd604c7f150b9fd1750d
     - fixed: 74146e0102d367c5e7a3567ad6bf8a46548d55de
+    - fixed: b19292f1bd145dbe691aafb8b345f02812ad682f
   versions:
   - qt-v5.0.0-alpha1
   - v5.0.0
@@ -110,7 +111,6 @@ affected:
   - v5.15.0-beta4
   - v5.15.0-rc1
   - v5.15.0-rc2
-  - v5.15.1
   - v5.2.0
   - v5.2.0-alpha1
   - v5.2.0-beta1
@@ -170,3 +170,5 @@ affected:
   - v6.0.0-alpha1
   ecosystem_specific:
     severity: MEDIUM
+  database_specific:
+    fixed_range: 6d73ff5b719d03bda2d18acf83c77d92fadc48c3:b19292f1bd145dbe691aafb8b345f02812ad682f
