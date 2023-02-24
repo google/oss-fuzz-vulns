@@ -10,7 +10,7 @@ details: |
   perfetto::trace_processor::TrackEventModule::ParseTracePacketData
   perfetto::trace_processor::ProtoTraceParser::ParseTracePacket
   ```
-modified: '2023-02-18T13:00:15.470417Z'
+modified: '2023-02-24T02:11:44.980841Z'
 published: '2023-02-18T13:00:15.470143Z'
 references:
 - type: REPORT
@@ -25,6 +25,7 @@ affected:
     repo: https://android.googlesource.com/platform/external/perfetto/
     events:
     - introduced: 8209fb9b9a4156232aa87ad4621e541bfb777ec1
+    - fixed: 9a7f09383dd39f19e662d428321ca708a2a600a3
   versions:
   - android-13.0.0_r1
   - android-13.0.0_r12
