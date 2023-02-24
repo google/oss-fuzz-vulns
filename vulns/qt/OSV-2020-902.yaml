@@ -3,7 +3,7 @@ summary: Index-out-of-bounds in QUnicodeTables::qGetProp
 details: "OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24266\n\
   \n```\nCrash type: Index-out-of-bounds\nCrash state: \nQUnicodeTables::qGetProp\n\
   QString QUnicodeTables::convertCase<QString>\nQString::toLower_helper\n```\n"
-modified: '2022-04-13T04:08:21.143860Z'
+modified: '2023-02-24T02:13:48.401981Z'
 published: '2020-07-21T00:00:16.344765Z'
 references:
 - type: REPORT
@@ -20,6 +20,7 @@ affected:
     events:
     - introduced: '0'
     - fixed: 78cf89c07d7fa834a455afa5862823e50171415c
+    - fixed: ab05df01943f6d7b30ce48dc26b159dd34d71205
   versions:
   - qt-v5.0.0-alpha1
   - v5.0.0
@@ -65,8 +66,6 @@ affected:
   - v5.12.0-rc1
   - v5.12.0-rc2
   - v5.12.1
-  - v5.12.10
-  - v5.12.11
   - v5.12.2
   - v5.12.3
   - v5.12.4
@@ -103,8 +102,12 @@ affected:
   - v5.15.0-beta4
   - v5.15.0-rc1
   - v5.15.0-rc2
-  - v5.15.1
-  - v5.15.2
+  - v5.15.3-lts-lgpl
+  - v5.15.4-lts-lgpl
+  - v5.15.5-lts-lgpl
+  - v5.15.6-lts-lgpl
+  - v5.15.7-lts-lgpl
+  - v5.15.8-lts-lgpl
   - v5.2.0
   - v5.2.0-alpha1
   - v5.2.0-beta1
@@ -161,9 +164,9 @@ affected:
   - v5.9.7
   - v5.9.8
   - v5.9.9
-  - v5.12.12
-  - v5.15.3-lts-lgpl
   ecosystem_specific:
     introduced_range: 8a5938bd2288c13dfe41c289c8ed0647cfa412e9:176d9ce09c8abcc232a4bd5ebc2ac6d6413113af
     severity: MEDIUM
     fixed_range: 6cafc374865cf051cdda62b21323cd1e375f64ef:61d6a120dccb48e6bff78c4b5bf8913916416689
+  database_specific:
+    fixed_range: 6cafc374865cf051cdda62b21323cd1e375f64ef:ab05df01943f6d7b30ce48dc26b159dd34d71205
