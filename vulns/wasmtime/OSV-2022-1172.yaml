@@ -8,7 +8,7 @@ details: |
   Crash state:
   instantiate_many::_::run::hb58bf0fc7b8817e5
   ```
-modified: '2022-11-22T01:05:35.580576Z'
+modified: '2023-02-24T02:08:37.177254Z'
 published: '2022-11-15T13:00:11.461532Z'
 references:
 - type: REPORT
@@ -26,6 +26,7 @@ affected:
     - fixed: 3535acbf3be032ef1ba0b469b8ab92538a8a18a6
   versions:
   - v3.0.0
+  - v3.0.1
   ecosystem_specific:
     severity: HIGH
   database_specific:
