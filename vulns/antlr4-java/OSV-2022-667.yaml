@@ -10,7 +10,7 @@ details: |
   com.code_intelligence.jazzer.sanitizers.RegexInjection.stringHook
   org.antlr.runtime.BaseRecognizer.getTokenErrorDisplay
   ```
-modified: '2022-08-02T00:01:42.264866Z'
+modified: '2023-02-24T01:27:48.502253Z'
 published: '2022-08-02T00:01:42.264623Z'
 references:
 - type: REPORT
@@ -26,6 +26,7 @@ affected:
     events:
     - introduced: 1df58f77820b5feb747d34cc6aff26276db8b6dd
     - fixed: 14703f21b5802e880da8c3afe80824ab651aee07
+    - fixed: 592ccc4e48db2b862523fd022b954231b8609fe0
   ecosystem_specific:
     severity: LOW
   database_specific:
