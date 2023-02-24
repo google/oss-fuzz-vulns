@@ -9,7 +9,7 @@ details: |
   flb_utils_proxy_url_split
   utils_fuzzer.c
   ```
-modified: '2022-04-13T03:04:38.338240Z'
+modified: '2023-02-24T01:27:02.287251Z'
 published: '2021-02-25T00:02:39.501845Z'
 references:
 - type: REPORT
@@ -37,5 +37,12 @@ affected:
   - v1.7.0-rc9
   - v1.7.1
   - v1.7.2
+  - v1.7.3
+  - v1.7.4
+  - v1.7.5
+  - v1.7.6
+  - v1.7.7
+  - v1.7.8
+  - v1.7.9
   ecosystem_specific:
     severity: HIGH
