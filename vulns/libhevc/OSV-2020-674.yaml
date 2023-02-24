@@ -10,7 +10,7 @@ details: |
   ihevcd_get_mv_ctb
   ihevcd_parse_slice_data
   ```
-modified: '2022-04-13T03:23:57.723536Z'
+modified: '2023-02-24T01:29:47.316559Z'
 published: '2020-07-01T00:00:23.966789Z'
 references:
 - type: REPORT
@@ -50,5 +50,10 @@ affected:
   - android-mainline-10.0.0_r7
   - android-mainline-10.0.0_r9
   - android-mainline-12.0.0_r54
+  - android-mainline-12.0.0_r111
+  - q_tzdata_aml_294400310
+  - q_tzdata_aml_295500001
+  - q_tzdata_aml_295500002
+  - q_tzdata_aml_295600110
   ecosystem_specific:
     severity: MEDIUM
