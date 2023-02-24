@@ -10,7 +10,7 @@ details: |
   _Unwind_RaiseException
   ErrorHandler::Throw
   ```
-modified: '2022-04-13T03:26:23.973185Z'
+modified: '2023-02-24T02:00:57.467780Z'
 published: '2021-01-13T21:57:49.330781Z'
 references:
 - type: REPORT
@@ -37,6 +37,8 @@ affected:
   - 5.6.8
   - v5.7.1
   - v5.7.3
+  - tag-6.1.7
+  - v6.1.2
   ecosystem_specific:
     severity: MEDIUM
     introduced_range: 2a079823c708a637bc36e888180ebb96fdfba526:1d8ea7923dae7c8f136912b6bdca95dcb52e80bc
