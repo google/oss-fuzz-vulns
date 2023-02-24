@@ -10,7 +10,7 @@ details: |
   QSvgTinyDocument::draw
   QSvgTinyDocument::draw
   ```
-modified: '2022-04-13T03:31:50.004072Z'
+modified: '2023-02-24T01:36:23.915679Z'
 published: '2021-01-25T00:00:16.933600Z'
 references:
 - type: REPORT
@@ -29,6 +29,7 @@ affected:
     - fixed: 117f4f34c6162eb8ac749569a5fff604713a3eba
     - fixed: fc1a706440a33c792da08aa0f4b3ed2e0057e349
     - fixed: afde7ca3a40f524e40052df696f74190452b22cb
+    - fixed: 63714587d1ea7bc0ff0c31f68ac879e777b9a3cd
   versions:
   - qt-v5.0.0-alpha1
   - v5.0.0
@@ -74,8 +75,8 @@ affected:
   - v5.12.0-rc1
   - v5.12.0-rc2
   - v5.12.1
-  - v5.12.10
   - v5.12.11
+  - v5.12.12
   - v5.12.2
   - v5.12.3
   - v5.12.4
@@ -112,8 +113,12 @@ affected:
   - v5.15.0-beta4
   - v5.15.0-rc1
   - v5.15.0-rc2
-  - v5.15.1
-  - v5.15.2
+  - v5.15.3-lts-lgpl
+  - v5.15.4-lts-lgpl
+  - v5.15.5-lts-lgpl
+  - v5.15.6-lts-lgpl
+  - v5.15.7-lts-lgpl
+  - v5.15.8-lts-lgpl
   - v5.2.0
   - v5.2.0-alpha1
   - v5.2.0-beta1
@@ -170,18 +175,15 @@ affected:
   - v5.9.7
   - v5.9.8
   - v5.9.9
-  - v6.0.0
   - v6.0.0-alpha1
   - v6.0.0-beta1
   - v6.0.0-beta2
   - v6.0.0-beta3
   - v6.0.0-beta4
   - v6.0.0-beta5
-  - v6.0.0-rc1
-  - v6.0.0-rc2
   - v6.0.1
   - v6.1.0-alpha1
-  - v5.12.12
-  - v5.15.3-lts-lgpl
   ecosystem_specific:
     introduced_range: ac489d92a3ae32540c4794d85be6fb103c701ee8:1095b1abc6d233bc27321f46f71bbd85fe8556de
+  database_specific:
+    fixed_range: 7b3e2f369d9ba2ee5e636e1ec9b7a3890363e187:63714587d1ea7bc0ff0c31f68ac879e777b9a3cd
