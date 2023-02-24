@@ -10,7 +10,7 @@ details: |
   jxl::FrameDecoder::ProcessACGroup
   jxl::ThreadPool::RunCallState<jxl::FrameDecoder::ProcessSections
   ```
-modified: '2022-04-13T03:30:05.347108Z'
+modified: '2023-02-24T02:01:14.670136Z'
 published: '2021-07-25T00:00:32.621715Z'
 references:
 - type: REPORT
@@ -25,6 +25,7 @@ affected:
     events:
     - introduced: 813a5f84cf94c9e7c0fe9b043c545500aef11411
     - fixed: 86466a9b9ab37c0f469d84797d477260aa669cfa
+    - fixed: 728f2e29053d03ad5d82b4bbfbc1ca91f24e7cf6
   versions:
   - v8.11
   - v8.11.0
@@ -35,3 +36,5 @@ affected:
   - v8.11.4
   ecosystem_specific:
     severity: HIGH
+  database_specific:
+    fixed_range: 86466a9b9ab37c0f469d84797d477260aa669cfa:728f2e29053d03ad5d82b4bbfbc1ca91f24e7cf6
