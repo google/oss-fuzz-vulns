@@ -10,7 +10,7 @@ details: |
   pcpp::IDnsResource::getRawData
   pcpp::DnsResource::getDataLength
   ```
-modified: '2022-05-09T00:04:24.072838Z'
+modified: '2023-02-24T01:46:51.347624Z'
 published: '2020-12-25T00:01:03.941509Z'
 references:
 - type: REPORT
@@ -28,6 +28,7 @@ affected:
   - v21.05
   - v21.11
   - v22.05
+  - v22.11
   ecosystem_specific:
     introduced_range: 633fdfb78b85d795f4b437cdb5fbdc041ae2b622:54fcc6190efeeb54dc6d66c809ec7b7e7308eab8
     severity: HIGH
