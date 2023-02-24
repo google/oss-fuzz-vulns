@@ -10,7 +10,7 @@ details: |
   PCIDSK::CPCIDSKSegment::ReadFromFile
   PCIDSK::CPCIDSKBinarySegment::CPCIDSKBinarySegment
   ```
-modified: '2022-04-13T03:35:10.552874Z'
+modified: '2023-02-24T02:04:52.362539Z'
 published: '2021-12-06T00:00:07.396834Z'
 references:
 - type: REPORT
@@ -47,6 +47,9 @@ affected:
   - v3.4.2
   - v3.4.2RC1
   - v3.4.2RC2
+  - v3.4.3
+  - v3.4.3RC1
+  - v3.4.3RC2
   ecosystem_specific:
     severity: MEDIUM
   database_specific:
