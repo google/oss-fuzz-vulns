@@ -10,7 +10,7 @@ details: |
   do_paint_tri
   fz_process_shade_type4
   ```
-modified: '2022-04-13T03:04:31.353731Z'
+modified: '2023-02-24T01:36:16.914202Z'
 published: '2021-01-15T00:00:28.806152Z'
 references:
 - type: REPORT
@@ -25,9 +25,12 @@ affected:
     events:
     - introduced: 11ee2bcf4d23bcb443d6b39caa2ac62fdd9920b2
     - fixed: dac34508c049d12c801416727652f94daed4fd4b
+    - fixed: df3e707a46e6d8b19a87a979bd1bc424c5ea975f
   versions:
   - 1.13.0
   - 1.13.0-rc1
   ecosystem_specific:
     severity: MEDIUM
     introduced_range: 9086386263154498dcb18c96f1e1630903b21a3c:d9bc8c6f7fb2e3ec7035bebaaee0edcf59287705
+  database_specific:
+    fixed_range: 199668e936ba87e2f9d88562d83b89dc3cc40a5a:df3e707a46e6d8b19a87a979bd1bc424c5ea975f
