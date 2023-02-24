@@ -10,7 +10,7 @@ details: |
   LibRaw::parse_mos
   LibRaw::parse_tiff_ifd
   ```
-modified: '2023-02-21T13:00:32.973471Z'
+modified: '2023-02-24T01:53:57.243568Z'
 published: '2023-02-21T13:00:32.973229Z'
 references:
 - type: REPORT
@@ -25,6 +25,8 @@ affected:
     repo: https://github.com/libraw/libraw
     events:
     - introduced: 2a9a4de21ea7f5d15314da8ee5f27feebf239655
+    - fixed: 443b7fb51e1ca89a1178180258a0f10ed353617d
+    - fixed: f6a57cfb81561bb9a3bd884795896a61f65ba29e
   versions:
   - 0.21-Beta1
   - 0.21.0
