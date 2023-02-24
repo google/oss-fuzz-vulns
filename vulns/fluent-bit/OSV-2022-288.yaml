@@ -7,7 +7,7 @@ details: |
   Crash state:
   flb_ra_translate
   record_ac_fuzzer.c
-modified: '2022-09-07T00:34:41.520028Z'
+modified: '2023-02-24T01:26:04.553459Z'
 published: '2022-03-30T00:01:21.966556Z'
 references:
 - type: REPORT
@@ -23,6 +23,8 @@ affected:
     events:
     - introduced: 39b035b72761f3f4678bcce2cdb23f8b517a5665
     - fixed: 80d028109d3a55792f3bcfcb799292891409bdab
+    - fixed: 60d4b2edd80c66ead1797c05f9294153d48129f7
+    - fixed: 5d8d6bc46822a32e1c5a60b91cc59cecf0e63f10
   versions:
   - unstable-master
   - v1.9.1
