@@ -11,7 +11,7 @@ details: |
   QIcc::fromIccProfile
   QColorSpace::fromIccProfile
   ```
-modified: '2022-04-13T03:04:36.824658Z'
+modified: '2023-02-24T02:09:45.849924Z'
 published: '2020-06-24T01:51:16.055970Z'
 references:
 - type: REPORT
@@ -26,9 +26,12 @@ affected:
     events:
     - introduced: 13873c6bc6e9514e4b6d4e11f7100863a439e33c
     - fixed: 6ebef2eb9a6a3630f9142fb040c3f87ba8eeac8e
+    - fixed: f4b02da372a602b792c39d97d72727efbd86b37c
   versions:
   - v5.14.2
   ecosystem_specific:
     severity: MEDIUM
     fixed_range: 538223d10d133d23133db1ec7a50cb2775aca657:76fe36645eb41fa35e526a97874f1e15a39c3823
     introduced_range: cc106ce56550ebfc7e1808e1b9015f5618d9f5e5:e10e5318bc02a48a866b76b6f0b7f268d16af642
+  database_specific:
+    fixed_range: 38139878ffdfea6b45d61bc3d071e7a244264516:f4b02da372a602b792c39d97d72727efbd86b37c
