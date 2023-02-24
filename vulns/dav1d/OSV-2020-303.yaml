@@ -8,7 +8,7 @@ details: |
   Crash state:
   dav1d_put_bilin_avx2
   ```
-modified: '2022-04-13T03:04:39.828062Z'
+modified: '2023-02-24T01:46:54.568363Z'
 published: '2020-06-30T00:00:48.527659Z'
 references:
 - type: REPORT
@@ -23,7 +23,10 @@ affected:
     events:
     - introduced: 6ef9a030145eef79fdeab6d4d38e00423ae7a83d
     - fixed: 69dae683fdce08dabf406787cdd8d1f76a9f0437
+    - fixed: acad1a99eaaeefacadbd1756c80365665bc7570a
   versions:
   - 0.4.0
   ecosystem_specific:
     severity: MEDIUM
+  database_specific:
+    fixed_range: e2702eaf5f13d5f93be75084a5bfecc77a67c001:acad1a99eaaeefacadbd1756c80365665bc7570a
