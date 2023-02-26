@@ -1,0 +1,61 @@
+id: OSV-2023-106
+summary: UNKNOWN WRITE in sudo_lbuf_append_quoted_v1
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=56278
+
+  ```
+  Crash type: UNKNOWN WRITE
+  Crash state:
+  sudo_lbuf_append_quoted_v1
+  sudoers_format_member_int
+  sudoers_format_member_int
+  ```
+modified: '2023-02-24T13:02:18.928454Z'
+published: '2023-02-24T13:02:18.928195Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=56278
+affected:
+- package:
+    name: sudoers
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/sudoers
+  ranges:
+  - type: GIT
+    repo: https://github.com/sudo-project/sudo
+    events:
+    - introduced: dc9ef690216fc95d0bfafa344a2cfb936bfaf513
+    - fixed: 0be5a5191852ec50f96b6a759ce5b2e17ed0aab5
+  versions:
+  - SUDO_1_9_1
+  - SUDO_1_9_10
+  - SUDO_1_9_11
+  - SUDO_1_9_11p1
+  - SUDO_1_9_11p2
+  - SUDO_1_9_11p3
+  - SUDO_1_9_12
+  - SUDO_1_9_12p1
+  - SUDO_1_9_12p2
+  - SUDO_1_9_13
+  - SUDO_1_9_13p1
+  - SUDO_1_9_2
+  - SUDO_1_9_3
+  - SUDO_1_9_3p1
+  - SUDO_1_9_4
+  - SUDO_1_9_4p1
+  - SUDO_1_9_4p2
+  - SUDO_1_9_5
+  - SUDO_1_9_5p1
+  - SUDO_1_9_5p2
+  - SUDO_1_9_6
+  - SUDO_1_9_6p1
+  - SUDO_1_9_7
+  - SUDO_1_9_7p1
+  - SUDO_1_9_7p2
+  - SUDO_1_9_8
+  - SUDO_1_9_8p1
+  - SUDO_1_9_8p2
+  - SUDO_1_9_9
+  ecosystem_specific:
+    severity: HIGH
+schema_version: 1.3.0
