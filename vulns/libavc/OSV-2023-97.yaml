@@ -1,0 +1,32 @@
+id: OSV-2023-97
+summary: Heap-buffer-overflow in isvcd_reflayer_construction_dyadic
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=56210
+
+  ```
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  isvcd_reflayer_construction_dyadic
+  isvcd_intra_resamp_mb_dyadic
+  isvcd_process_ibl_mb
+  ```
+modified: '2023-02-23T13:00:38.917134Z'
+published: '2023-02-23T13:00:38.916882Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=56210
+affected:
+- package:
+    name: libavc
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libavc
+  ranges:
+  - type: GIT
+    repo: https://github.com/ittiam-systems/libavc.git
+    events:
+    - introduced: b2a61a152a5e83b3419212e8d15a10d4488e51d9
+    - fixed: 5fabd43f6af6c5f432c543b8a84e690dfa31a3b2
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.3.0

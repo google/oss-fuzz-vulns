@@ -1,0 +1,32 @@
+id: OSV-2023-95
+summary: Use-of-uninitialized-value in isvcd_interpolate_residual_sse42
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=56176
+
+  ```
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  isvcd_interpolate_residual_sse42
+  isvcd_residual_samp_mb
+  isvcd_process_residual_resample_mb
+  ```
+modified: '2023-02-22T13:02:05.515242Z'
+published: '2023-02-22T13:02:05.514993Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=56176
+affected:
+- package:
+    name: libavc
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libavc
+  ranges:
+  - type: GIT
+    repo: https://github.com/ittiam-systems/libavc.git
+    events:
+    - introduced: b2a61a152a5e83b3419212e8d15a10d4488e51d9
+    - fixed: 5fabd43f6af6c5f432c543b8a84e690dfa31a3b2
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.3.0
