@@ -10,7 +10,7 @@ details: |
   sudoers_format_member_int
   sudoers_format_member_int
   ```
-modified: '2023-02-24T13:02:18.928454Z'
+modified: '2023-02-28T00:23:22.122155Z'
 published: '2023-02-24T13:02:18.928195Z'
 references:
 - type: REPORT
@@ -26,6 +26,7 @@ affected:
     events:
     - introduced: dc9ef690216fc95d0bfafa344a2cfb936bfaf513
     - fixed: 0be5a5191852ec50f96b6a759ce5b2e17ed0aab5
+    - fixed: ea2f22bc9ac854cefa9e29c2324562c0f066b7ff
   versions:
   - SUDO_1_9_1
   - SUDO_1_9_10
