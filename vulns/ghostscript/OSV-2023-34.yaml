@@ -10,7 +10,7 @@ details: |
   gs_gc_reclaim
   ireclaim
   ```
-modified: '2023-01-29T13:00:17.773639Z'
+modified: '2023-03-03T00:26:37.532491Z'
 published: '2023-01-29T13:00:17.773387Z'
 references:
 - type: REPORT
@@ -25,7 +25,8 @@ affected:
     repo: git://git.ghostscript.com/ghostpdl.git
     events:
     - introduced: 85277d1dd24c5eebf4579ae22c54fb9b25683c9d
+  versions:
+  - ghostpdl-10.01.0rc1
   ecosystem_specific:
     severity: HIGH
-  versions: []
 schema_version: 1.3.0
