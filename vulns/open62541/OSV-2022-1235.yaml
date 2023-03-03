@@ -1,0 +1,32 @@
+id: OSV-2022-1235
+summary: Heap-buffer-overflow in _rrparse
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=53939
+
+  ```
+  Crash type: Heap-buffer-overflow READ 16
+  Crash state:
+  _rrparse
+  message_parse
+  fuzz_mdns_message.cc
+  ```
+modified: '2022-12-04T13:00:30.303656Z'
+published: '2022-12-04T13:00:30.303410Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=53939
+affected:
+- package:
+    name: open62541
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/open62541
+  ranges:
+  - type: GIT
+    repo: https://github.com/open62541/open62541.git
+    events:
+    - introduced: 9c13c7596242c573ca67a004bc000574af2cff03
+  versions:
+  - v1.2.7
+  ecosystem_specific:
+    severity: MEDIUM
+schema_version: 1.3.0
