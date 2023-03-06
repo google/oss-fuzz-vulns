@@ -10,7 +10,7 @@ details: |
   sc_select_file
   sc_pkcs15init_rmdir
   ```
-modified: '2022-11-16T13:02:16.773498Z'
+modified: '2023-03-06T00:30:27.623440Z'
 published: '2022-11-16T13:02:16.773258Z'
 references:
 - type: REPORT
@@ -25,10 +25,13 @@ affected:
     repo: https://github.com/OpenSC/OpenSC
     events:
     - introduced: dbe4af17713b7a7b0c036f86486dc21e639e955f
+    - fixed: bdb89174cd5441a279feea258c2792abbbe024ac
   versions:
   - 0.23.0
   - 0.23.0-rc1
   - 0.23.0-rc2
   ecosystem_specific:
     severity: MEDIUM
+  database_specific:
+    fixed_range: 16fdd70a7e02bc87c14d363ca21777b293cdcf2c:bdb89174cd5441a279feea258c2792abbbe024ac
 schema_version: 1.3.0
