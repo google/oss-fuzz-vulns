@@ -1,0 +1,26 @@
+id: OSV-2023-152
+summary: UNKNOWN READ in dissect_oran_c_section
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=56724
+
+  ```
+  Crash type: UNKNOWN READ
+  Crash state:
+  dissect_oran_c_section
+  dissect_oran
+  call_dissector_work
+  ```
+modified: '2023-03-07T13:00:13.697607Z'
+published: '2023-03-07T13:00:13.697350Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=56724
+affected:
+- package:
+    name: wireshark
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/wireshark
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.3.0
