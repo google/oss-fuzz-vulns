@@ -10,7 +10,7 @@ details: |
   com.fasterxml.jackson.dataformat.toml.Parser.parseValue
   com.fasterxml.jackson.dataformat.toml.Parser.parseKeyVal
   ```
-modified: '2023-02-06T00:11:44.700186Z'
+modified: '2023-03-09T00:21:36.500254Z'
 published: '2022-08-20T00:01:56.371630Z'
 references:
 - type: REPORT
@@ -25,17 +25,19 @@ affected:
     repo: https://github.com/FasterXML/jackson-dataformats-text.git
     events:
     - introduced: 06983a968d62cd04dc73e58c7f0270aea2852e23
+    - fixed: 1f2b0afdc65dfbb50c136481189bf3228e1b23be
   versions:
   - jackson-dataformats-text-2.13.4
+  - jackson-dataformats-text-2.13.5
   - jackson-dataformats-text-2.14.0
   - jackson-dataformats-text-2.14.0-rc1
   - jackson-dataformats-text-2.14.0-rc2
   - jackson-dataformats-text-2.14.0-rc3
   - jackson-dataformats-text-2.14.1
   - jackson-dataformats-text-2.14.2
-  - jackson-dataformats-text-2.13.5
   ecosystem_specific:
     severity: LOW
   database_specific:
     introduced_range: 4e26d0ecac5aa508f7307a9380b198f1f503bbc3:48f08d72a1021765f3ce131d20a0a5980f3eb431
+    fixed_range: 7b4b0cd22596c304fa63ad529d65debfddb6689f:1f2b0afdc65dfbb50c136481189bf3228e1b23be
 schema_version: 1.3.0
