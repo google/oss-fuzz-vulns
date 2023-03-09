@@ -1,0 +1,32 @@
+id: OSV-2023-156
+summary: Heap-use-after-free in HashMgr::add_word
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=56737
+
+  ```
+  Crash type: Heap-use-after-free READ 2
+  Crash state:
+  HashMgr::add_word
+  HashMgr::load_tables
+  HashMgr::HashMgr
+  ```
+modified: '2023-03-08T13:00:22.803102Z'
+published: '2023-03-08T13:00:22.802840Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=56737
+affected:
+- package:
+    name: hunspell
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/hunspell
+  ranges:
+  - type: GIT
+    repo: https://github.com/hunspell/hunspell.git
+    events:
+    - introduced: 82b92126325d91446abfe340b7d4fcd44c6f6bbe
+    - fixed: c6d900cfd5d10c428008dc40f804b9d9319cec87
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.3.0
