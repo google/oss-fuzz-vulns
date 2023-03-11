@@ -1,0 +1,34 @@
+id: OSV-2023-160
+summary: Global-buffer-overflow in OT::gvar::accelerator_t::apply_deltas_to_points
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=56800
+
+  ```
+  Crash type: Global-buffer-overflow READ 2
+  Crash state:
+  OT::gvar::accelerator_t::apply_deltas_to_points
+  bool OT::glyf_impl::Glyph::get_points<OT::glyf_accelerator_t>
+  bool OT::glyf_impl::Glyph::get_points<OT::glyf_accelerator_t>
+  ```
+modified: '2023-03-10T13:01:50.295694Z'
+published: '2023-03-10T13:01:50.295470Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=56800
+affected:
+- package:
+    name: harfbuzz
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/harfbuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/harfbuzz/harfbuzz.git
+    events:
+    - introduced: f325aba561335a4f0f3c71aa59e42f1a23c774f2
+    - fixed: 552290f60437ceaa5aa299a2db726046c0385f80
+  ecosystem_specific:
+    severity: null
+  database_specific:
+    introduced_range: b4b089c4278f041f69c3253f84901de226d38558:7327006d686c149cefdc7ee6047d2b426ac1ac75
+  versions: []
+schema_version: 1.3.0
