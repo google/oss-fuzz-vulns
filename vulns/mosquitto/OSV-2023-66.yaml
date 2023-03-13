@@ -1,0 +1,32 @@
+id: OSV-2023-66
+summary: Heap-buffer-overflow in mosquitto__strdup
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=56008
+
+  ```
+  Crash type: Heap-buffer-overflow READ {*}
+  Crash state:
+  mosquitto__strdup
+  config__read_file_core
+  config__read_file
+  ```
+modified: '2023-02-17T13:00:27.069318Z'
+published: '2023-02-17T13:00:27.069083Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=56008
+affected:
+- package:
+    name: mosquitto
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/mosquitto
+  ranges:
+  - type: GIT
+    repo: https://github.com/eclipse/mosquitto
+    events:
+    - introduced: b2c566976d901c3780c8af1a23075f6368f1080b
+    - fixed: 44415cb97421257e82a40b491598438d0bedef26
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.3.0
