@@ -1,0 +1,35 @@
+id: OSV-2022-1261
+summary: UNKNOWN WRITE in void std::__1::allocator_traits<std::__1::allocator<wabt::interp::HandlerDesc>
+  >
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=54245
+
+  ```
+  Crash type: UNKNOWN WRITE
+  Crash state:
+  void std::__1::allocator_traits<std::__1::allocator<wabt::interp::HandlerDesc> >
+  void std::__1::vector<wabt::interp::HandlerDesc, std::__1::allocator<wabt::inter
+  std::__1::vector<wabt::interp::HandlerDesc, std::__1::allocator<wabt::interp::Ha
+  ```
+modified: '2022-12-13T13:01:10.970817Z'
+published: '2022-12-13T13:01:10.970571Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=54245
+affected:
+- package:
+    name: wabt
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/wabt
+  ranges:
+  - type: GIT
+    repo: https://github.com/WebAssembly/wabt
+    events:
+    - introduced: 65ce49a6d307b101aa058da8269e1ccae43feeb9
+  versions:
+  - 1.0.30
+  - 1.0.31
+  - 1.0.32
+  ecosystem_specific:
+    severity: HIGH
+schema_version: 1.3.0
