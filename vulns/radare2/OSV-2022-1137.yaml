@@ -10,7 +10,7 @@ details: |
   r_io_plugin_read
   r_io_desc_read
   ```
-modified: '2022-11-05T00:00:44.244071Z'
+modified: '2023-03-15T00:16:43.775512Z'
 published: '2022-11-05T00:00:44.243862Z'
 references:
 - type: REPORT
@@ -28,6 +28,7 @@ affected:
   versions:
   - 5.8.0
   - 5.8.2
+  - 5.8.4
   ecosystem_specific:
     severity: HIGH
 schema_version: 1.3.0
