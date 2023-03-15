@@ -1,0 +1,37 @@
+id: OSV-2023-151
+summary: UNKNOWN READ in mrb_vm_find_method
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=56687
+
+  ```
+  Crash type: UNKNOWN READ
+  Crash state:
+  mrb_vm_find_method
+  mrb_vm_exec
+  mrb_vm_run
+  ```
+modified: '2023-03-06T13:02:13.814007Z'
+published: '2023-03-06T13:02:13.813764Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=56687
+affected:
+- package:
+    name: mruby
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/mruby
+  ranges:
+  - type: GIT
+    repo: https://github.com/mruby/mruby
+    events:
+    - introduced: 672495555bb741aefbde2f31a523f7ed8666d2c6
+    - fixed: 8d1192f8a28034b1931a41e8c55cd86715101d0c
+  versions:
+  - 3.2.0
+  - 3.2.0-rc
+  - 3.2.0-rc2
+  - 3.2.0-rc3
+  - 3.2.0-rc4
+  ecosystem_specific:
+    severity: MEDIUM
+schema_version: 1.3.0

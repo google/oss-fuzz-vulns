@@ -1,0 +1,32 @@
+id: OSV-2023-174
+summary: Global-buffer-overflow in htmlCurrentChar
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=56964
+
+  ```
+  Crash type: Global-buffer-overflow READ 1
+  Crash state:
+  htmlCurrentChar
+  htmlParseNameComplex
+  htmlParseName
+  ```
+modified: '2023-03-14T13:00:07.970462Z'
+published: '2023-03-14T13:00:07.970213Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=56964
+affected:
+- package:
+    name: libxml2
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libxml2
+  ranges:
+  - type: GIT
+    repo: https://gitlab.gnome.org/GNOME/libxml2.git
+    events:
+    - introduced: 42322eba820022eaebb9b6e7c083a8aadddea286
+    - fixed: 3eb6bf03869b449bbe990efe7e5101457d40f36e
+  ecosystem_specific:
+    severity: null
+  versions: []
+schema_version: 1.3.0

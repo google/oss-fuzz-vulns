@@ -1,0 +1,32 @@
+id: OSV-2023-176
+summary: Heap-use-after-free in mrb_gc_mark
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=56991
+
+  ```
+  Crash type: Heap-use-after-free READ 4
+  Crash state:
+  mrb_gc_mark
+  mrb_gc_mark_iv
+  gc_mark_children
+  ```
+modified: '2023-03-14T13:01:00.857973Z'
+published: '2023-03-14T13:01:00.857694Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=56991
+affected:
+- package:
+    name: mruby
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/mruby
+  ranges:
+  - type: GIT
+    repo: https://github.com/mruby/mruby
+    events:
+    - introduced: 0e51da81bb7981a5005ca22c95384056bcb87671
+    - fixed: 8d1192f8a28034b1931a41e8c55cd86715101d0c
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
+schema_version: 1.3.0
