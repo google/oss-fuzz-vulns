@@ -10,7 +10,7 @@ details: |
   grk::FileFormatDecompress::read_box_hdr
   grk::FileFormatDecompress::readHeaderProcedureImpl
   ```
-modified: '2023-02-24T01:28:00.027192Z'
+modified: '2023-03-16T14:22:18.713018Z'
 published: '2022-08-28T00:02:06.609956Z'
 references:
 - type: REPORT
@@ -34,6 +34,7 @@ affected:
   - v10.0.4
   - v10.0.5
   - v10.0.5.debian
+  - v10.0.6
   ecosystem_specific:
     severity: MEDIUM
   database_specific:
