@@ -10,7 +10,7 @@ details: |
   OT::glyf::_free_compiled_subset_glyphs
   OT::glyf::_populate_subset_glyphs
   ```
-modified: '2023-03-13T13:00:54.744502Z'
+modified: '2023-03-16T14:25:44.765201Z'
 published: '2023-03-13T13:00:54.744253Z'
 references:
 - type: REPORT
@@ -25,6 +25,7 @@ affected:
     repo: https://github.com/harfbuzz/harfbuzz.git
     events:
     - introduced: c0fac016dc017596e2d979e19e1eb8f88df38ea3
+    - fixed: 75e6498d9a8b600ab7f00b3d279f1054dd72feec
   versions:
   - 7.1.0
   ecosystem_specific:
