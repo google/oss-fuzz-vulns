@@ -10,7 +10,7 @@ details: |
   ra_to_uint32_array
   roaring_bitmap_serialize
   ```
-modified: '2023-03-12T13:00:29.802350Z'
+modified: '2023-03-16T14:24:12.891209Z'
 published: '2023-03-12T13:00:29.802108Z'
 references:
 - type: REPORT
@@ -25,7 +25,11 @@ affected:
     repo: https://github.com/RoaringBitmap/CRoaring
     events:
     - introduced: 95de500c8dcbf2ba01c2677fe9097ce7db2f4f70
+    - fixed: 2411b3be4ddf5cd982c8acadf56be109ba9d7b2c
+    - fixed: 09de07567b9facb305ccdc739a1f4b0f21add8ba
   ecosystem_specific:
     severity: HIGH
+  database_specific:
+    fixed_range: 95de500c8dcbf2ba01c2677fe9097ce7db2f4f70:2411b3be4ddf5cd982c8acadf56be109ba9d7b2c
   versions: []
 schema_version: 1.4.0
