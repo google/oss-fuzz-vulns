@@ -1,0 +1,31 @@
+id: OSV-2023-155
+summary: Heap-buffer-overflow in run_container_write
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=56710
+
+  ```
+  Crash type: Heap-buffer-overflow WRITE 16
+  Crash state:
+  run_container_write
+  ra_portable_serialize
+  roaring_bitmap_serialize
+  ```
+modified: '2023-03-07T13:02:03.518332Z'
+published: '2023-03-07T13:02:03.518078Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=56710
+affected:
+- package:
+    name: croaring
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/croaring
+  ranges:
+  - type: GIT
+    repo: https://github.com/RoaringBitmap/CRoaring
+    events:
+    - introduced: 95de500c8dcbf2ba01c2677fe9097ce7db2f4f70
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
+schema_version: 1.4.0
