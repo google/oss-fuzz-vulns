@@ -1,0 +1,31 @@
+id: OSV-2023-181
+summary: Heap-double-free in xsltCompileStepPattern
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=57061
+
+  ```
+  Crash type: Heap-double-free
+  Crash state:
+  xsltCompileStepPattern
+  xsltCompileRelativePathPattern
+  xsltCompilePatternInternal
+  ```
+modified: '2023-03-16T13:00:52.122921Z'
+published: '2023-03-16T13:00:52.122593Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=57061
+affected:
+- package:
+    name: libxslt
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libxslt
+  ranges:
+  - type: GIT
+    repo: https://gitlab.gnome.org/GNOME/libxslt.git
+    events:
+    - introduced: 93407f6d3234ae3f036154d69f07da291eff34ff
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
+schema_version: 1.4.0
