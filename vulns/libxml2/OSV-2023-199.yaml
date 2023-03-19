@@ -1,0 +1,31 @@
+id: OSV-2023-199
+summary: Global-buffer-overflow in xmlParseQName
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=57151
+
+  ```
+  Crash type: Global-buffer-overflow READ 1
+  Crash state:
+  xmlParseQName
+  xmlParseStartTag2
+  xmlParseTryOrFinish
+  ```
+modified: '2023-03-18T13:02:06.280552Z'
+published: '2023-03-18T13:02:06.280323Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=57151
+affected:
+- package:
+    name: libxml2
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libxml2
+  ranges:
+  - type: GIT
+    repo: https://gitlab.gnome.org/GNOME/libxml2.git
+    events:
+    - introduced: b167c7314497b6cb0d9a587a31874ae0d273ffaa
+  ecosystem_specific:
+    severity: null
+  versions: []
+schema_version: 1.4.0
