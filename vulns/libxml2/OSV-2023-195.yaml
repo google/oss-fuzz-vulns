@@ -1,0 +1,32 @@
+id: OSV-2023-195
+summary: Global-buffer-overflow in htmlParseDocument
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=57089
+
+  ```
+  Crash type: Global-buffer-overflow READ 1
+  Crash state:
+  htmlParseDocument
+  htmlDoRead
+  htmlReadMemory
+  ```
+modified: '2023-03-17T13:01:21.932172Z'
+published: '2023-03-17T13:01:21.931934Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=57089
+affected:
+- package:
+    name: libxml2
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libxml2
+  ranges:
+  - type: GIT
+    repo: https://gitlab.gnome.org/GNOME/libxml2.git
+    events:
+    - introduced: b167c7314497b6cb0d9a587a31874ae0d273ffaa
+    - fixed: 8090e5856465c0b8e26e2a080f4b498f37fa83ab
+  ecosystem_specific:
+    severity: null
+  versions: []
+schema_version: 1.4.0

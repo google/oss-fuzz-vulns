@@ -1,0 +1,30 @@
+id: OSV-2023-204
+summary: Global-buffer-overflow in htmlParseChunk
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=57224
+
+  ```
+  Crash type: Global-buffer-overflow READ 1
+  Crash state:
+  htmlParseChunk
+  html.c
+  ```
+modified: '2023-03-19T13:02:08.092478Z'
+published: '2023-03-19T13:02:08.092138Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=57224
+affected:
+- package:
+    name: libxml2
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libxml2
+  ranges:
+  - type: GIT
+    repo: https://gitlab.gnome.org/GNOME/libxml2.git
+    events:
+    - introduced: 9ef2a9abf357f747c2fb03841b7f479cc0dfd3ef
+  ecosystem_specific:
+    severity: null
+  versions: []
+schema_version: 1.4.0
