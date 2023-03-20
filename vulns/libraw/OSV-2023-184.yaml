@@ -10,7 +10,7 @@ details: |
   LibRaw::parseAdobeRAFMakernote
   LibRaw::parse_tiff_ifd
   ```
-modified: '2023-03-17T13:00:06.635299Z'
+modified: '2023-03-20T14:21:04.285680Z'
 published: '2023-03-17T13:00:06.635055Z'
 references:
 - type: REPORT
@@ -25,6 +25,8 @@ affected:
     repo: https://github.com/libraw/libraw
     events:
     - introduced: 4c954948ba2de262b9cb23a1843fb8651aa3dcc1
+    - fixed: f2998bacc3d06484769150bfbc8df379a4f81f2c
+    - fixed: e942a7db6b9abdcbaedc8a21400ffc5edacbd9c3
   versions:
   - 0.21-Beta1
   - 0.21.0
