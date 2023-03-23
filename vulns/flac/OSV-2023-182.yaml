@@ -1,0 +1,34 @@
+id: OSV-2023-182
+summary: Heap-buffer-overflow in FLAC__bitwriter_write_rice_signed_block
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=57071
+
+  ```
+  Crash type: Heap-buffer-overflow WRITE 4
+  Crash state:
+  FLAC__bitwriter_write_rice_signed_block
+  add_residual_partitioned_rice_
+  FLAC__subframe_add_fixed
+  ```
+modified: '2023-03-16T13:02:02.851471Z'
+published: '2023-03-16T13:02:02.851218Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=57071
+affected:
+- package:
+    name: flac
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/flac
+  ranges:
+  - type: GIT
+    repo: https://github.com/xiph/flac.git
+    events:
+    - introduced: 3173fc064f639535b5b74bdbf0fb683edf166c55
+    - fixed: 68f605bd281a37890ed696555a52c6180457164f
+  ecosystem_specific:
+    severity: HIGH
+  database_specific:
+    introduced_range: 2db6c1d138bd39a366cbba4591321df8d58a7cf5:4d21da118322af1c0033f1bd5ea18d86b58b49d4
+  versions: []
+schema_version: 1.4.0
