@@ -1,0 +1,33 @@
+id: OSV-2023-107
+summary: Heap-buffer-overflow in DecodeBasicOcspResponse
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=56308
+
+  ```
+  Crash type: Heap-buffer-overflow READ {*}
+  Crash state:
+  DecodeBasicOcspResponse
+  OcspResponseDecode
+  ocsp.c
+  ```
+modified: '2023-02-25T13:00:07.390787Z'
+published: '2023-02-25T13:00:07.390537Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=56308
+affected:
+- package:
+    name: wolfssl
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/wolfssl
+  ranges:
+  - type: GIT
+    repo: https://github.com/wolfssl/wolfssl
+    events:
+    - introduced: b32036258d8efa6617b916f0c4be11a33e699b37
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: 69ceedbcff5a2ae0dab8fd6c8199c12ec7b45b79:b2a6203ec01fcc5d55ab37b3d0e85ab160e962d4
+  versions: []
+schema_version: 1.4.0

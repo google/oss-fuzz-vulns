@@ -1,0 +1,31 @@
+id: OSV-2023-98
+summary: Heap-buffer-overflow in sc_hsm_write_ef
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=56213
+
+  ```
+  Crash type: Heap-buffer-overflow READ {*}
+  Crash state:
+  sc_hsm_write_ef
+  sc_hsm_update_binary
+  sc_update_binary
+  ```
+modified: '2023-02-23T13:02:02.553148Z'
+published: '2023-02-23T13:02:02.552905Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=56213
+affected:
+- package:
+    name: opensc
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/opensc
+  ranges:
+  - type: GIT
+    repo: https://github.com/OpenSC/OpenSC
+    events:
+    - introduced: aadd82bb071e574fc57263a103e3bf06ebbd8de7
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.4.0
