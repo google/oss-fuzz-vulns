@@ -1,0 +1,31 @@
+id: OSV-2023-211
+summary: Global-buffer-overflow in xmlStrndup
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=57284
+
+  ```
+  Crash type: Global-buffer-overflow READ 1
+  Crash state:
+  xmlStrndup
+  htmlParseSystemLiteral
+  htmlParseDocTypeDecl
+  ```
+modified: '2023-03-22T13:00:29.358840Z'
+published: '2023-03-22T13:00:29.358592Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=57284
+affected:
+- package:
+    name: libxml2
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libxml2
+  ranges:
+  - type: GIT
+    repo: https://gitlab.gnome.org/GNOME/libxml2.git
+    events:
+    - introduced: ca2bfecea9c23f8d2e11741fff7c6a5372c56bb8
+  ecosystem_specific:
+    severity: null
+  versions: []
+schema_version: 1.4.0

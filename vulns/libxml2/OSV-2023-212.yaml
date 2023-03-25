@@ -1,0 +1,31 @@
+id: OSV-2023-212
+summary: Global-buffer-overflow in xmlParseEntityDecl
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=57294
+
+  ```
+  Crash type: Global-buffer-overflow READ 1
+  Crash state:
+  xmlParseEntityDecl
+  xmlParseMarkupDecl
+  xmlParseInternalSubset
+  ```
+modified: '2023-03-22T13:01:34.391485Z'
+published: '2023-03-22T13:01:34.391238Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=57294
+affected:
+- package:
+    name: libxml2
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libxml2
+  ranges:
+  - type: GIT
+    repo: https://gitlab.gnome.org/GNOME/libxml2.git
+    events:
+    - introduced: 3e85d7b7ab511b67d54ccf5dfd2f5953050eec83
+  ecosystem_specific:
+    severity: null
+  versions: []
+schema_version: 1.4.0

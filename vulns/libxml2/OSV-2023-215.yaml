@@ -1,0 +1,31 @@
+id: OSV-2023-215
+summary: Global-buffer-overflow in htmlParsePI
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=57304
+
+  ```
+  Crash type: Global-buffer-overflow READ 1
+  Crash state:
+  htmlParsePI
+  htmlParseDocument
+  htmlDoRead
+  ```
+modified: '2023-03-23T13:00:45.604628Z'
+published: '2023-03-23T13:00:45.604359Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=57304
+affected:
+- package:
+    name: libxml2
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libxml2
+  ranges:
+  - type: GIT
+    repo: https://gitlab.gnome.org/GNOME/libxml2.git
+    events:
+    - introduced: b167c7314497b6cb0d9a587a31874ae0d273ffaa
+  ecosystem_specific:
+    severity: null
+  versions: []
+schema_version: 1.4.0
