@@ -10,7 +10,7 @@ details: |
   RunIns
   Instance_Reset
   ```
-modified: '2023-03-22T14:26:18.845139Z'
+modified: '2023-03-27T14:27:30.795774Z'
 published: '2022-07-01T00:01:43.353257Z'
 references:
 - type: REPORT
@@ -34,6 +34,7 @@ affected:
   - ghostpdl-10.01.0rc1
   - ghostpdl-10.01.0rc2
   - ghostpdl-10.01.0
+  - ghostpdl-10.01.1
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.2.0
