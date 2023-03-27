@@ -1,0 +1,32 @@
+id: OSV-2023-222
+summary: Heap-buffer-overflow in hb_subset_plan_t::hb_subset_plan_t
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=57342
+
+  ```
+  Crash type: Heap-buffer-overflow READ 2
+  Crash state:
+  hb_subset_plan_t::hb_subset_plan_t
+  hb_subset_plan_create_or_fail
+  hb_subset_or_fail
+  ```
+modified: '2023-03-24T13:00:38.968843Z'
+published: '2023-03-24T13:00:38.968605Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=57342
+affected:
+- package:
+    name: harfbuzz
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/harfbuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/harfbuzz/harfbuzz.git
+    events:
+    - introduced: c0fac016dc017596e2d979e19e1eb8f88df38ea3
+  versions:
+  - 7.1.0
+  ecosystem_specific:
+    severity: MEDIUM
+schema_version: 1.4.0
