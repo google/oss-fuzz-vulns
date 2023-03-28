@@ -1,0 +1,33 @@
+id: OSV-2023-242
+summary: Use-of-uninitialized-value in xmlSwitchEncoding
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=57431
+
+  ```
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  xmlSwitchEncoding
+  xmlParsePEReference
+  xmlParseInternalSubset
+  ```
+modified: '2023-03-27T13:00:27.197986Z'
+published: '2023-03-27T13:00:27.197749Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=57431
+affected:
+- package:
+    name: libxslt
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libxslt
+  ranges:
+  - type: GIT
+    repo: https://gitlab.gnome.org/GNOME/libxslt.git
+    events:
+    - introduced: 569328d95d418f10067bb5915147d600986f9058
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: d8dda889b361f85fd94c6a2feba61e2309a17515:aab7eedca3c2dcaa1795d6acba38a4c9811d2a75
+  versions: []
+schema_version: 1.4.0
