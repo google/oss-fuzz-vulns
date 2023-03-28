@@ -25,9 +25,11 @@ affected:
     repo: https://gitlab.gnome.org/GNOME/libxslt.git
     events:
     - introduced: 569328d95d418f10067bb5915147d600986f9058
+    - fixed: f80ae929fa9e80d66d4c42108c6fb2456ce14b8b
   ecosystem_specific:
     severity: MEDIUM
   database_specific:
     introduced_range: d8dda889b361f85fd94c6a2feba61e2309a17515:aab7eedca3c2dcaa1795d6acba38a4c9811d2a75
+    fixed_range: aab7eedca3c2dcaa1795d6acba38a4c9811d2a75:f80ae929fa9e80d66d4c42108c6fb2456ce14b8b
   versions: []
 schema_version: 1.4.0
