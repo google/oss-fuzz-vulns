@@ -1,0 +1,31 @@
+id: OSV-2023-248
+summary: Heap-double-free in _dwarf_read_line_table_header
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=57443
+
+  ```
+  Crash type: Heap-double-free
+  Crash state:
+  _dwarf_read_line_table_header
+  _dwarf_internal_srclines
+  dwarf_srclines_b
+  ```
+modified: '2023-03-27T13:01:51.351903Z'
+published: '2023-03-27T13:01:51.351691Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=57443
+affected:
+- package:
+    name: libdwarf
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libdwarf
+  ranges:
+  - type: GIT
+    repo: https://github.com/davea42/libdwarf-code
+    events:
+    - introduced: 484f50ef8be0506be2e4b5fbad489868db5c7985
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
+schema_version: 1.4.0
