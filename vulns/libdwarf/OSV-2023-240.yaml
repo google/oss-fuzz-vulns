@@ -1,0 +1,30 @@
+id: OSV-2023-240
+summary: Invalid-free in fuzz_die_cu_attrs.c
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=57429
+
+  ```
+  Crash type: Invalid-free
+  Crash state:
+  fuzz_die_cu_attrs.c
+  ```
+modified: '2023-03-27T13:00:21.287635Z'
+published: '2023-03-27T13:00:21.287359Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=57429
+affected:
+- package:
+    name: libdwarf
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libdwarf
+  ranges:
+  - type: GIT
+    repo: https://github.com/davea42/libdwarf-code
+    events:
+    - introduced: e4053c9a0f25db0bed28372d9b77a50a0307dc10
+    - fixed: 2b19bc239f3cedd1b2461e4265d90633277ce704
+  ecosystem_specific:
+    severity: null
+  versions: []
+schema_version: 1.4.0

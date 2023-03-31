@@ -1,0 +1,31 @@
+id: OSV-2023-251
+summary: Stack-buffer-overflow in ext11_work_out_bundles
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=57494
+
+  ```
+  Crash type: Stack-buffer-overflow WRITE 4
+  Crash state:
+  ext11_work_out_bundles
+  dissect_oran_c_section
+  dissect_oran
+  ```
+modified: '2023-03-30T13:00:33.543462Z'
+published: '2023-03-30T13:00:33.543215Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=57494
+affected:
+- package:
+    name: wireshark
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/wireshark
+  ranges:
+  - type: GIT
+    repo: https://gitlab.com/wireshark/wireshark.git
+    events:
+    - introduced: 53914b044780c3ebac42f465d7f54df27933d22e
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
+schema_version: 1.4.0

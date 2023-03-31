@@ -1,0 +1,30 @@
+id: OSV-2023-243
+summary: UNKNOWN WRITE in processCertificateElements
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=57448
+
+  ```
+  Crash type: UNKNOWN WRITE
+  Crash state:
+  processCertificateElements
+  fuzz_tls_certificate.c
+  ```
+modified: '2023-03-27T13:00:39.113130Z'
+published: '2023-03-27T13:00:39.112912Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=57448
+affected:
+- package:
+    name: ndpi
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/ndpi
+  ranges:
+  - type: GIT
+    repo: https://github.com/ntop/nDPI.git
+    events:
+    - introduced: 0e80828e146a30bc03b60eefbf0d4c3583e243e3
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
+schema_version: 1.4.0
