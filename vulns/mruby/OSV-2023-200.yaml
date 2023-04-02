@@ -1,0 +1,31 @@
+id: OSV-2023-200
+summary: Segv on unknown address in mrb_vm_find_method
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=57135
+
+  ```
+  Crash type: Segv on unknown address
+  Crash state:
+  mrb_vm_find_method
+  mrb_vm_exec
+  mrb_vm_run
+  ```
+modified: '2023-03-18T13:02:09.375493Z'
+published: '2023-03-18T13:02:09.375268Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=57135
+affected:
+- package:
+    name: mruby
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/mruby
+  ranges:
+  - type: GIT
+    repo: https://github.com/mruby/mruby
+    events:
+    - introduced: 8d1192f8a28034b1931a41e8c55cd86715101d0c
+  ecosystem_specific:
+    severity: null
+  versions: []
+schema_version: 1.4.0

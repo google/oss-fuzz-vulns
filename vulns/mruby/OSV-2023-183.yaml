@@ -1,0 +1,31 @@
+id: OSV-2023-183
+summary: UNKNOWN READ in mrb_exc_get_id
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=57064
+
+  ```
+  Crash type: UNKNOWN READ
+  Crash state:
+  mrb_exc_get_id
+  mrb_no_method_error
+  mrb_method_missing
+  ```
+modified: '2023-03-16T13:02:15.380131Z'
+published: '2023-03-16T13:02:15.379877Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=57064
+affected:
+- package:
+    name: mruby
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/mruby
+  ranges:
+  - type: GIT
+    repo: https://github.com/mruby/mruby
+    events:
+    - introduced: 8d1192f8a28034b1931a41e8c55cd86715101d0c
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.4.0
