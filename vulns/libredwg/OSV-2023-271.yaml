@@ -1,0 +1,35 @@
+id: OSV-2023-271
+summary: Heap-buffer-overflow in bit_utf8_to_TU
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=57589
+
+  ```
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  bit_utf8_to_TU
+  dxf_header_read
+  dwg_read_dxf
+  ```
+modified: '2023-04-02T14:01:58.656539Z'
+published: '2023-04-02T14:01:58.656302Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=57589
+affected:
+- package:
+    name: libredwg
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libredwg
+  ranges:
+  - type: GIT
+    repo: https://github.com/LibreDWG/libredwg
+    events:
+    - introduced: 19fe196c8831a6608d6d0ac807ff91ec4c47a41e
+    - fixed: c1ed1d91e28a6ddc7a9b5479d4795d58fb6be0ca
+  versions:
+  - 0.12.5.5227
+  - 0.12.5.5245
+  - 0.12.5.5249
+  ecosystem_specific:
+    severity: MEDIUM
+schema_version: 1.4.0
