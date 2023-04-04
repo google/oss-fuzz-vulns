@@ -10,7 +10,7 @@ details: |
   simdutf::haswell::implementation::convert_utf8_to_utf16le
   roundtrip.cc
   ```
-modified: '2023-04-03T14:00:08.698208Z'
+modified: '2023-04-04T14:10:41.334668Z'
 published: '2023-04-03T14:00:08.697953Z'
 references:
 - type: REPORT
@@ -25,9 +25,9 @@ affected:
     repo: https://github.com/simdutf/simdutf
     events:
     - introduced: 5e7e1f75d35e8c4d5da323ff66d26944e39ed07d
+    - fixed: 72af817153515c8715417794e7b0d7b91eb1be12
   versions:
   - v3.2.3
-  - v3.2.4
   ecosystem_specific:
     severity: HIGH
 schema_version: 1.4.0
