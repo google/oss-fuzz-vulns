@@ -10,7 +10,7 @@ details: |
   flb_sched_destroy
   flb_config_exit
   ```
-modified: '2023-03-16T14:25:19.416670Z'
+modified: '2023-04-04T14:10:41.688026Z'
 published: '2022-09-04T00:00:31.605787Z'
 references:
 - type: REPORT
@@ -44,6 +44,7 @@ affected:
   - tiger-2.0.9-dev-20230104
   - v2.0.9
   - v2.0.10
+  - v2.0.11
   ecosystem_specific:
     severity: HIGH
 schema_version: 1.3.0
