@@ -1,0 +1,33 @@
+id: OSV-2023-272
+summary: Heap-buffer-overflow in unsigned long simdutf::haswell::convert_masked_utf8_to_utf16<
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=57632
+
+  ```
+  Crash type: Heap-buffer-overflow WRITE {*}
+  Crash state:
+  unsigned long simdutf::haswell::convert_masked_utf8_to_utf16<
+  simdutf::haswell::implementation::convert_utf8_to_utf16le
+  roundtrip.cc
+  ```
+modified: '2023-04-03T14:00:08.698208Z'
+published: '2023-04-03T14:00:08.697953Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=57632
+affected:
+- package:
+    name: simdutf
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/simdutf
+  ranges:
+  - type: GIT
+    repo: https://github.com/simdutf/simdutf
+    events:
+    - introduced: 5e7e1f75d35e8c4d5da323ff66d26944e39ed07d
+  versions:
+  - v3.2.3
+  - v3.2.4
+  ecosystem_specific:
+    severity: HIGH
+schema_version: 1.4.0
