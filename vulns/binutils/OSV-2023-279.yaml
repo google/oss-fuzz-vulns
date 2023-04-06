@@ -1,0 +1,32 @@
+id: OSV-2023-279
+summary: Heap-use-after-free in filename_cmp
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=57678
+
+  ```
+  Crash type: Heap-use-after-free READ 3
+  Crash state:
+  filename_cmp
+  debug_start_source
+  parse_stab
+  ```
+modified: '2023-04-05T14:00:58.582171Z'
+published: '2023-04-05T14:00:58.581945Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=57678
+affected:
+- package:
+    name: binutils
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/binutils
+  ranges:
+  - type: GIT
+    repo: git://sourceware.org/git/binutils-gdb.git
+    events:
+    - introduced: a6336913332303c45608d77b731bee5c3a3095e0
+    - fixed: 19cacf672930cee20feaf1f3468e3d5ac3099ffd
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
+schema_version: 1.4.0
