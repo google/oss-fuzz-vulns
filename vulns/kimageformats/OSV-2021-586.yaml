@@ -10,7 +10,7 @@ details: |
   void decode_intra_prediction_internal<unsigned short>
   decode_intra_prediction
   ```
-modified: '2023-04-01T14:09:35.383865Z'
+modified: '2023-04-08T14:12:16.858274Z'
 published: '2021-03-31T00:01:03.787831Z'
 references:
 - type: REPORT
@@ -74,5 +74,6 @@ affected:
   - v5.104.0-rc1
   - v5.104.0
   - v5.105.0-rc1
+  - v5.105.0
   ecosystem_specific:
     severity: MEDIUM
