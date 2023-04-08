@@ -10,7 +10,7 @@ details: |
   pdfi_set_blackgeneration
   GS_BG
   ```
-modified: '2023-04-07T14:02:29.265841Z'
+modified: '2023-04-08T14:27:35.919762Z'
 published: '2023-04-07T14:02:29.265601Z'
 references:
 - type: REPORT
@@ -25,6 +25,7 @@ affected:
     repo: git://git.ghostscript.com/ghostpdl.git
     events:
     - introduced: f20fac9d4d505be579ca4c5872233b3ec2d85f85
+    - fixed: 7eced55b5700c0d2aa2e102ed78f10b0ce755a64
   versions:
   - ghostpdl-10.0.0
   - ghostpdl-10.0.0_release_tests_002
