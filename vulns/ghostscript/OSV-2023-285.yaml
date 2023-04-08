@@ -1,0 +1,43 @@
+id: OSV-2023-285
+summary: Stack-buffer-overflow in fn_ElIn_evaluate
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=57745
+
+  ```
+  Crash type: Stack-buffer-overflow WRITE 4
+  Crash state:
+  fn_ElIn_evaluate
+  pdfi_set_blackgeneration
+  GS_BG
+  ```
+modified: '2023-04-07T14:02:29.265841Z'
+published: '2023-04-07T14:02:29.265601Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=57745
+affected:
+- package:
+    name: ghostscript
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/ghostscript
+  ranges:
+  - type: GIT
+    repo: git://git.ghostscript.com/ghostpdl.git
+    events:
+    - introduced: f20fac9d4d505be579ca4c5872233b3ec2d85f85
+  versions:
+  - ghostpdl-10.0.0
+  - ghostpdl-10.0.0_release_tests_002
+  - ghostpdl-10.0.0rc1
+  - ghostpdl-10.0.0rc2
+  - ghostpdl-10.01.0
+  - ghostpdl-10.01.0rc1
+  - ghostpdl-10.01.0rc2
+  - ghostpdl-10.01.1
+  - ghostpdl-10.01.1-gse-10174
+  - ghostpdl-10.02.0-test-base-001
+  ecosystem_specific:
+    severity: HIGH
+  database_specific:
+    introduced_range: 79740c34d8ffed84d1742028015c2b3b2e3a7a10:d060ee8ac72f28b59f952b1f2e6ccad32b161e4e
+schema_version: 1.4.0
