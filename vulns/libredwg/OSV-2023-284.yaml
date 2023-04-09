@@ -1,0 +1,33 @@
+id: OSV-2023-284
+summary: Global-buffer-overflow in dwg_codepage_dxfstr
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=57723
+
+  ```
+  Crash type: Global-buffer-overflow READ 8
+  Crash state:
+  dwg_codepage_dxfstr
+  dxf_header_write
+  dwg_write_dxf
+  ```
+modified: '2023-04-07T14:00:08.323744Z'
+published: '2023-04-07T14:00:08.323496Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=57723
+affected:
+- package:
+    name: libredwg
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libredwg
+  ranges:
+  - type: GIT
+    repo: https://github.com/LibreDWG/libredwg
+    events:
+    - introduced: 784605ad5b9c44ba9243158cb7b4a4bcc169f130
+    - fixed: 0ce8315eb9c45a6967d9578c7e51ae1d6d639166
+  versions:
+  - 0.12.5.5320
+  ecosystem_specific:
+    severity: null
+schema_version: 1.4.0
