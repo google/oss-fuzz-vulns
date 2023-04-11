@@ -10,7 +10,7 @@ details: |
   icu_64::UCharsTrie::nextImpl
   icu_64::UCharsTrie::next
   ```
-modified: '2023-04-07T14:29:57.254371Z'
+modified: '2023-04-11T14:25:24.273674Z'
 published: '2020-07-14T22:13:50.019093Z'
 references:
 - type: REPORT
@@ -89,5 +89,6 @@ affected:
   - icu4x/2023-03-22a/72.x
   - release-73-rc
   - cldr/2023-04-06
+  - cldr/2023-04-10
   ecosystem_specific:
     severity: MEDIUM
