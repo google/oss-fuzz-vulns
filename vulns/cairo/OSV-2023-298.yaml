@@ -1,0 +1,34 @@
+id: OSV-2023-298
+summary: UNKNOWN READ in active_edges
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=57884
+
+  ```
+  Crash type: UNKNOWN READ
+  Crash state:
+  active_edges
+  intersect
+  _cairo_boxes_intersect
+  ```
+modified: '2023-04-12T14:02:04.134541Z'
+published: '2023-04-12T14:02:04.134251Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=57884
+affected:
+- package:
+    name: cairo
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/cairo
+  ranges:
+  - type: GIT
+    repo: https://gitlab.freedesktop.org/cairo/cairo.git
+    events:
+    - introduced: cbcf962da267c519c73dce3cb25afc8c983e1f5b
+  versions:
+  - 1.17.8
+  ecosystem_specific:
+    severity: HIGH
+  database_specific:
+    introduced_range: 7072f62611f43cc1311b76f111fdd1e96278b4e4:ea51a5d66aaae74cdb436d5de4c429e1f1609aba
+schema_version: 1.4.0

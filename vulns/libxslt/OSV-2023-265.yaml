@@ -1,0 +1,31 @@
+id: OSV-2023-265
+summary: Heap-double-free in xmlHashDefaultDeallocator
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=57551
+
+  ```
+  Crash type: Heap-double-free
+  Crash state:
+  xmlHashDefaultDeallocator
+  xmlHashFree
+  xmlFreeParserCtxt
+  ```
+modified: '2023-04-01T13:02:22.849084Z'
+published: '2023-04-01T13:02:22.848837Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=57551
+affected:
+- package:
+    name: libxslt
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libxslt
+  ranges:
+  - type: GIT
+    repo: https://gitlab.gnome.org/GNOME/libxslt.git
+    events:
+    - introduced: 93407f6d3234ae3f036154d69f07da291eff34ff
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
+schema_version: 1.4.0
