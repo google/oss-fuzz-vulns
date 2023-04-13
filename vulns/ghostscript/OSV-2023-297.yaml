@@ -10,7 +10,7 @@ details: |
   pdfi_load_font_buffer
   pdfi_load_font
   ```
-modified: '2023-04-12T14:01:05.168483Z'
+modified: '2023-04-13T14:23:41.374262Z'
 published: '2023-04-12T14:01:05.168220Z'
 references:
 - type: REPORT
@@ -25,6 +25,7 @@ affected:
     repo: git://git.ghostscript.com/ghostpdl.git
     events:
     - introduced: 7409743d98cab135da537bce11103a8416d77f60
+    - fixed: acaa21f68ede3ae8fca48136fa95ee32de6533b2
   versions:
   - ghostpdl-10.0.0
   - ghostpdl-10.0.0_release_tests_002
