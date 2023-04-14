@@ -1,0 +1,31 @@
+id: OSV-2023-303
+summary: Heap-use-after-free in picture_copy_props
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=57927
+
+  ```
+  Crash type: Heap-use-after-free READ {*}
+  Crash state:
+  picture_copy_props
+  dav1d_picture_alloc_copy
+  dav1d_apply_grain
+  ```
+modified: '2023-04-13T14:01:21.389231Z'
+published: '2023-04-13T14:01:21.388989Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=57927
+affected:
+- package:
+    name: dav1d
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/dav1d
+  ranges:
+  - type: GIT
+    repo: https://code.videolan.org/videolan/dav1d.git
+    events:
+    - introduced: 62f8b887d552fec72a757b71418c62268b6ea67a
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
+schema_version: 1.4.0
