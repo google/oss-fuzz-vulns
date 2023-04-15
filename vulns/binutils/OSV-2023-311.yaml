@@ -1,0 +1,32 @@
+id: OSV-2023-311
+summary: Heap-double-free in cache_bclose
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=57939
+
+  ```
+  Crash type: Heap-double-free
+  Crash state:
+  cache_bclose
+  bfd_close_all_done
+  fuzz_objdump.h
+  ```
+modified: '2023-04-14T14:00:06.430169Z'
+published: '2023-04-14T14:00:06.429916Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=57939
+affected:
+- package:
+    name: binutils
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/binutils
+  ranges:
+  - type: GIT
+    repo: git://sourceware.org/git/binutils-gdb.git
+    events:
+    - introduced: c10adfbb15a7e7d94f55cb012ed7c0ddef4156be
+    - fixed: 5d1fefd3b35589d792e5bff800d2bb7e9c4431e2
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
+schema_version: 1.4.0
