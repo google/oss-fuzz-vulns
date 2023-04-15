@@ -10,7 +10,7 @@ details: |
   com.code_intelligence.jazzer.driver.FuzzTargetRunner.runOne
   com.code_intelligence.jazzer.driver.FuzzTargetRunner.startLibFuzzer
   ```
-modified: '2023-03-29T14:08:34.937679Z'
+modified: '2023-04-15T14:07:26.132390Z'
 published: '2022-08-19T00:00:35.294543Z'
 references:
 - type: REPORT
@@ -35,6 +35,7 @@ affected:
   - jackson-modules-java8-2.14.2
   - jackson-modules-java8-2.15.0-rc1
   - jackson-modules-java8-2.15.0-rc2
+  - jackson-modules-java8-2.15.0-rc3
   ecosystem_specific:
     severity: LOW
   database_specific:
