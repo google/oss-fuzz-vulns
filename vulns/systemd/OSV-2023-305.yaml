@@ -25,7 +25,10 @@ affected:
     repo: https://github.com/systemd/systemd
     events:
     - introduced: 82929336c77ee9e1b0056f25daa6a4210403d1b3
+    - fixed: c8ae0a81bfd5669c6da672cdf86119fb07feb575
   ecosystem_specific:
     severity: MEDIUM
+  database_specific:
+    fixed_range: 8521338f95142203cb29c85113c13f9301fcee6a:c8ae0a81bfd5669c6da672cdf86119fb07feb575
   versions: []
 schema_version: 1.4.0
