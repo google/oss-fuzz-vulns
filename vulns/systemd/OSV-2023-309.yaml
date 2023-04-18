@@ -1,0 +1,31 @@
+id: OSV-2023-309
+summary: UNKNOWN READ in fmemopen_unlocked
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=57936
+
+  ```
+  Crash type: UNKNOWN READ
+  Crash state:
+  fmemopen_unlocked
+  fuzz.h
+  centipede::RunOneInput
+  ```
+modified: '2023-04-13T14:02:20.585067Z'
+published: '2023-04-13T14:02:20.584809Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=57936
+affected:
+- package:
+    name: systemd
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/systemd
+  ranges:
+  - type: GIT
+    repo: https://github.com/systemd/systemd
+    events:
+    - introduced: 82929336c77ee9e1b0056f25daa6a4210403d1b3
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.4.0

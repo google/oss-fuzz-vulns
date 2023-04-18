@@ -1,0 +1,31 @@
+id: OSV-2023-304
+summary: UNKNOWN READ in _hashmap_free
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=57928
+
+  ```
+  Crash type: UNKNOWN READ
+  Crash state:
+  _hashmap_free
+  journal_remote_server_destroy
+  fuzz-journal-remote.c
+  ```
+modified: '2023-04-13T14:01:33.310687Z'
+published: '2023-04-13T14:01:33.310424Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=57928
+affected:
+- package:
+    name: systemd
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/systemd
+  ranges:
+  - type: GIT
+    repo: https://github.com/systemd/systemd
+    events:
+    - introduced: 82929336c77ee9e1b0056f25daa6a4210403d1b3
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.4.0
