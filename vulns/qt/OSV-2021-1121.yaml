@@ -12,7 +12,7 @@ details: |
   QPainterPath::addPath
   QPathClipper::intersect
   ```
-modified: '2023-02-24T01:34:04.602485Z'
+modified: '2023-04-19T23:08:00.000000Z'
 published: '2021-08-12T00:00:36.570149Z'
 references:
 - type: REPORT
@@ -29,7 +29,6 @@ affected:
     - fixed: a3b753c2d077313fc9eb93af547051b956e383fc
     - fixed: 79bb9f51fa374106a612d17c9d98d35d807be670
     - fixed: 36cfd9efb9b22b891adee9c48d30202289cfa620
-    - fixed: e8a86ab6c84f6618fae6f961c34c25ef42e91332
     - fixed: 6958581c5cfa6ceb75edcd8b64699b2e71af29f7
   versions:
   - qt-v5.0.0-alpha1
