@@ -1,0 +1,32 @@
+id: OSV-2023-302
+summary: UNKNOWN READ in google_myanmar_tools::ZawgyiDetector::ZawgyiDetector
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=57922
+
+  ```
+  Crash type: UNKNOWN READ
+  Crash state:
+  google_myanmar_tools::ZawgyiDetector::ZawgyiDetector
+  zawgyi_detector_fuzz_target.cpp
+  centipede::RunOneInput
+  ```
+modified: '2023-04-13T14:00:50.881075Z'
+published: '2023-04-13T14:00:50.880825Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=57922
+affected:
+- package:
+    name: myanmar-tools
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/myanmar-tools
+  ranges:
+  - type: GIT
+    repo: https://github.com/google/myanmar-tools.git
+    events:
+    - introduced: 4eeacefc2c3e5a7ff47b53ec47fd275e2920c81d
+    - fixed: 4eeacefc2c3e5a7ff47b53ec47fd275e2920c81d
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.4.0
