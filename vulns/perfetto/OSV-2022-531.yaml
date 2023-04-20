@@ -10,7 +10,7 @@ details: |
   perfetto::trace_processor::TrackEventModule::ParsePacket
   perfetto::trace_processor::ProtoTraceParser::ParseTracePacketImpl
   ```
-modified: '2023-02-24T02:10:29.634080Z'
+modified: '2023-04-20T22:42:42.108104Z'
 published: '2022-07-05T00:00:15.936407Z'
 references:
 - type: REPORT
@@ -79,6 +79,8 @@ affected:
   - android-security-13.0.0_r2
   - android-vts-13.0_r2
   - android-vts-13.0_r3
+  - android-security-13.0.0_r3
+  - android-security-13.0.0_r4
   ecosystem_specific:
     severity: HIGH
 schema_version: 1.2.0
