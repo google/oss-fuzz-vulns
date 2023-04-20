@@ -10,7 +10,7 @@ details: |
   perfetto::trace_processor::ClockTracker::Convert
   perfetto::trace_processor::ClockTracker::ToTraceTime
   ```
-modified: '2023-02-24T01:40:13.423551Z'
+modified: '2023-04-20T22:59:35.504666Z'
 published: '2020-07-10T00:00:21.254899Z'
 references:
 - type: REPORT
@@ -186,5 +186,9 @@ affected:
   - android-vts-11.0_r11
   - android-vts-11.0_r8
   - android-vts-11.0_r9
+  - android-platform-11.0.0_r28
+  - android-platform-11.0.0_r29
+  - android-security-11.0.0_r65
+  - android-security-11.0.0_r66
   ecosystem_specific:
     severity: MEDIUM
