@@ -10,7 +10,7 @@ details: |
   ihevcd_iquant_itrans_recon_ctb
   ihevcd_process
   ```
-modified: '2023-02-24T01:56:12.150271Z'
+modified: '2023-04-20T22:39:10.635628Z'
 published: '2020-07-22T21:49:39.707812Z'
 references:
 - type: REPORT
@@ -61,6 +61,7 @@ affected:
   - q_tzdata_aml_295500001
   - q_tzdata_aml_295500002
   - q_tzdata_aml_295600110
+  - q_tzdata_aml_295600118
   ecosystem_specific:
     introduced_range: unknown:d28f2210ee8e65afdfb07a1fd6582285d3d178e0
     severity: MEDIUM
