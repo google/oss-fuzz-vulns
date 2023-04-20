@@ -10,7 +10,7 @@ details: |
   snmp_free_pdu
   snmp_api_fuzzer.c
   ```
-modified: '2023-02-24T02:04:13.317391Z'
+modified: '2023-04-20T22:42:36.759292Z'
 published: '2022-08-12T00:00:49.994375Z'
 references:
 - type: REPORT
@@ -29,6 +29,8 @@ affected:
   versions:
   - v5.9.3
   - v5.9.3.rc1
+  - v5.9.4.pre1
+  - v5.9.4.pre2
   ecosystem_specific:
     severity: HIGH
 schema_version: 1.2.0
