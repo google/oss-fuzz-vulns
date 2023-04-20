@@ -10,7 +10,7 @@ details: |
   check_attr_len
   format_odp_key_attr
   ```
-modified: '2023-02-24T01:44:19.887567Z'
+modified: '2023-04-20T22:40:34.629186Z'
 published: '2020-07-28T00:00:13.378550Z'
 references:
 - type: REPORT
@@ -39,5 +39,6 @@ affected:
   - v2.13.7
   - v2.13.8
   - v2.13.9
+  - v2.13.11
   ecosystem_specific:
     severity: MEDIUM
