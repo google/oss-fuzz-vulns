@@ -8,7 +8,7 @@ details: |
   void unwindstack::Symbols::BuildRemapTable<Elf64_Sym>
   bool unwindstack::Symbols::GetName<Elf64_Sym>
   unwindstack::ElfInterfaceImpl<unwindstack::ElfTypes64>::GetFunctionName
-modified: '2023-02-28T04:54:14.727673Z'
+modified: '2023-04-20T22:56:13.048149Z'
 published: '2022-04-11T00:00:39.202876Z'
 references:
 - type: REPORT
@@ -568,6 +568,55 @@ affected:
   - studio-2022.3.1-canary1
   - t_frc_doc_330543000
   - aml_ads_331418080
+  - aml_ads_331511020
+  - aml_art_331413030
+  - aml_cbr_331411000
+  - aml_cbr_331510000
+  - aml_con_331411000
+  - aml_ext_331412000
+  - aml_med_331410000
+  - aml_med_331511000
+  - aml_mpr_331412040
+  - aml_mpr_331512020
+  - aml_net_331412000
+  - aml_per_331411000
+  - aml_per_331512020
+  - aml_res_331512000
+  - aml_sta_331410000
+  - aml_sta_331511000
+  - aml_swc_331410000
+  - aml_swc_331511000
+  - aml_tet_331412030
+  - aml_tet_331511000
+  - aml_tz2_303900110
+  - aml_tz3_312511020
+  - aml_tz4_331314020
+  - aml_tz4_331314030
+  - aml_uwb_331410010
+  - aml_wif_331414000
+  - aml_wif_331511020
+  - android-13.0.0_r32
+  - android-13.0.0_r33
+  - android-13.0.0_r34
+  - android-13.0.0_r35
+  - android-13.0.0_r36
+  - android-13.0.0_r37
+  - android-13.0.0_r38
+  - android-13.0.0_r39
+  - android-13.0.0_r40
+  - android-13.0.0_r41
+  - android-platform-12.0.0_r17
+  - android-platform-12.0.0_r18
+  - android-platform-12.1.0_r13
+  - android-platform-12.1.0_r14
+  - android-platform-13.0.0_r6
+  - android-security-12.0.0_r45
+  - android-security-12.0.0_r46
+  - android-security-13.0.0_r3
+  - android-security-13.0.0_r4
+  - studio-2022.2.1
+  - studio-2022.2.1-beta5
+  - studio-2022.3.1-canary8
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.2.0
