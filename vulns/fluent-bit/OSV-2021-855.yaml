@@ -10,7 +10,7 @@ details: |
   mk_rconf_open
   flb_parser_conf_file
   ```
-modified: '2023-02-24T02:09:05.039845Z'
+modified: '2023-04-20T22:43:29.858337Z'
 published: '2021-06-14T00:00:18.084172Z'
 references:
 - type: REPORT
@@ -52,5 +52,6 @@ affected:
   - v1.8.8
   - v1.8.9
   - v1.8.9-dev-6b56f51
+  - tiger-1.8.15-20230329
   ecosystem_specific:
     severity: MEDIUM
