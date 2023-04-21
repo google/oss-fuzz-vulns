@@ -25,6 +25,7 @@ affected:
     repo: https://github.com/eclipse/mosquitto
     events:
     - introduced: b7d7dc4a09900741d1e0567dcac2d624429b9230
+    - fixed: 56462c122925f716865827cc5505f671c2933aca
   ecosystem_specific:
     severity: HIGH
   versions: []
