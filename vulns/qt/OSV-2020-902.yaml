@@ -3,7 +3,7 @@ summary: Index-out-of-bounds in QUnicodeTables::qGetProp
 details: "OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24266\n\
   \n```\nCrash type: Index-out-of-bounds\nCrash state: \nQUnicodeTables::qGetProp\n\
   QString QUnicodeTables::convertCase<QString>\nQString::toLower_helper\n```\n"
-modified: '2023-02-24T02:13:48.401981Z'
+modified: '2023-04-21T01:16:49.636521Z'
 published: '2020-07-21T00:00:16.344765Z'
 references:
 - type: REPORT
@@ -164,6 +164,7 @@ affected:
   - v5.9.7
   - v5.9.8
   - v5.9.9
+  - v5.15.9-lts-lgpl
   ecosystem_specific:
     introduced_range: 8a5938bd2288c13dfe41c289c8ed0647cfa412e9:176d9ce09c8abcc232a4bd5ebc2ac6d6413113af
     severity: MEDIUM
