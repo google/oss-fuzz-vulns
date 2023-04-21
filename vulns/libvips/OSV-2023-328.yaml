@@ -1,0 +1,33 @@
+id: OSV-2023-328
+summary: Heap-buffer-overflow in RegionItem::parse
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=58152
+
+  ```
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  RegionItem::parse
+  heif::HeifContext::interpret_heif_file
+  heif::HeifContext::read
+  ```
+modified: '2023-04-20T14:00:08.128764Z'
+published: '2023-04-20T14:00:08.128442Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=58152
+affected:
+- package:
+    name: libvips
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libvips
+  ranges:
+  - type: GIT
+    repo: https://github.com/libvips/libvips.git
+    events:
+    - introduced: 3be16bb5c263f4bd03aa00d20fce186adc396e63
+    - fixed: e34cbae4b7162db783d3677ac09112394690ccb1
+    - introduced: f64ae327c10670f46b46e5d64ff5ff5c07816cdc
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.4.0

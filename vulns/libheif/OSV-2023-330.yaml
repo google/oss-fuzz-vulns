@@ -1,0 +1,32 @@
+id: OSV-2023-330
+summary: Heap-buffer-overflow in RegionItem::parse
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=58150
+
+  ```
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  RegionItem::parse
+  heif::HeifContext::interpret_heif_file
+  heif::HeifContext::read_from_memory
+  ```
+modified: '2023-04-20T14:02:21.337046Z'
+published: '2023-04-20T14:02:21.336788Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=58150
+affected:
+- package:
+    name: libheif
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libheif
+  ranges:
+  - type: GIT
+    repo: https://github.com/strukturag/libheif.git
+    events:
+    - introduced: 75c7dcc52996f52ceeaf1136958b46e6a17e5b2a
+    - fixed: f2d7c57c71a0810b25fc2bead63c5ab35e5d0284
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.4.0

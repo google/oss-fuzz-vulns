@@ -1,0 +1,33 @@
+id: OSV-2023-323
+summary: Heap-buffer-overflow in OT::glyf_impl::SubsetGlyph::serialize
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=58071
+
+  ```
+  Crash type: Heap-buffer-overflow WRITE 2
+  Crash state:
+  OT::glyf_impl::SubsetGlyph::serialize
+  OT::glyf::subset
+  bool _try_subset<OT::glyf>
+  ```
+modified: '2023-04-17T14:02:31.782535Z'
+published: '2023-04-17T14:02:31.782283Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=58071
+affected:
+- package:
+    name: harfbuzz
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/harfbuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/harfbuzz/harfbuzz.git
+    events:
+    - introduced: c0fac016dc017596e2d979e19e1eb8f88df38ea3
+    - fixed: 647b024784e1346f6886565f570cdf940d7b82b4
+  versions:
+  - 7.1.0
+  ecosystem_specific:
+    severity: HIGH
+schema_version: 1.4.0

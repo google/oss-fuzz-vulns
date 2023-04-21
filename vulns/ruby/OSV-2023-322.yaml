@@ -1,0 +1,35 @@
+id: OSV-2023-322
+summary: Use-after-poison in str_new_frozen_buffer
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=58079
+
+  ```
+  Crash type: Use-after-poison READ 8
+  Crash state:
+  str_new_frozen_buffer
+  fstr_update_callback
+  rb_st_update
+  ```
+modified: '2023-04-17T14:02:30.767357Z'
+published: '2023-04-17T14:02:30.767106Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=58079
+affected:
+- package:
+    name: ruby
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/ruby
+  ranges:
+  - type: GIT
+    repo: https://github.com/ruby/ruby.git
+    events:
+    - introduced: 19aa30d5d515cd602211d4708e709913d5a136e1
+    - fixed: 628e432739e1d2578d357420aa652a97eb8c2649
+  ecosystem_specific:
+    severity: HIGH
+  database_specific:
+    introduced_range: 34f484d233e8417588e2c1f7733b483597603cfc:29e01c6f5f8901bdaab818dfd4699cfa2a86b8e6
+    fixed_range: d8a6db7292e8c92540f3dd2c939508ca1dd8cc41:628e432739e1d2578d357420aa652a97eb8c2649
+  versions: []
+schema_version: 1.4.0
