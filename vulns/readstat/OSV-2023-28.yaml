@@ -1,0 +1,32 @@
+id: OSV-2023-28
+summary: Heap-buffer-overflow in sas_read2
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=55308
+
+  ```
+  Crash type: Heap-buffer-overflow READ 2
+  Crash state:
+  sas_read2
+  sas7bcat_parse_block
+  readstat_parse_sas7bcat
+  ```
+modified: '2023-01-23T13:01:59.758989Z'
+published: '2023-01-23T13:01:59.758734Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=55308
+affected:
+- package:
+    name: readstat
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/readstat
+  ranges:
+  - type: GIT
+    repo: https://github.com/WizardMac/ReadStat
+    events:
+    - introduced: b8e708d14d5e11abca74822a701ec5e51b61ce14
+  versions:
+  - v1.1.9
+  ecosystem_specific:
+    severity: MEDIUM
+schema_version: 1.4.0

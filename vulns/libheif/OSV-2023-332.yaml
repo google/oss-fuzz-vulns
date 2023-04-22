@@ -1,0 +1,31 @@
+id: OSV-2023-332
+summary: Heap-buffer-overflow in RegionGeometry_Polygon::parse
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=58183
+
+  ```
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  RegionGeometry_Polygon::parse
+  RegionItem::parse
+  heif::HeifContext::interpret_heif_file
+  ```
+modified: '2023-04-21T14:00:12.632090Z'
+published: '2023-04-21T14:00:12.631857Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=58183
+affected:
+- package:
+    name: libheif
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libheif
+  ranges:
+  - type: GIT
+    repo: https://github.com/strukturag/libheif.git
+    events:
+    - introduced: 75c7dcc52996f52ceeaf1136958b46e6a17e5b2a
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.4.0
