@@ -10,7 +10,7 @@ details: |
   dwg_decode_header_variables
   decode_R13_RNUMBER
   ```
-modified: '2023-04-22T14:13:54.006620Z'
+modified: '2023-04-24T14:20:41.877715Z'
 published: '2022-12-10T13:00:16.385102Z'
 references:
 - type: REPORT
@@ -166,6 +166,12 @@ affected:
   - 0.12.5.5396
   - 0.12.5.5405
   - 0.12.5.5411
+  - 0.12.5.5415
+  - 0.12.5.5417
+  - 0.12.5.5422
+  - 0.12.5.5429
+  - 0.12.5.5432
+  - 0.12.5.5435
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.3.0
