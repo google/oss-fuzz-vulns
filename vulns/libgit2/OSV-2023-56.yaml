@@ -10,7 +10,7 @@ details: |
   commit_graph_parse_oid_lookup
   git_commit_graph_file_parse
   ```
-modified: '2023-02-07T13:00:10.989968Z'
+modified: '2023-04-24T14:22:48.200282Z'
 published: '2023-02-07T13:00:10.989656Z'
 references:
 - type: REPORT
@@ -25,6 +25,7 @@ affected:
     repo: https://github.com/libgit2/libgit2
     events:
     - introduced: 6de3221debf785c328842667eb04c07c747c73a0
+    - fixed: b899fda3d88dc92f50e73544fb7524a1c3c70354
   versions:
   - v1.6.1
   - v1.6.2
