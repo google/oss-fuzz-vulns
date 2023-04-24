@@ -1,0 +1,35 @@
+id: OSV-2023-56
+summary: Heap-buffer-overflow in git_oid_raw_cmp
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=55724
+
+  ```
+  Crash type: Heap-buffer-overflow READ {*}
+  Crash state:
+  git_oid_raw_cmp
+  commit_graph_parse_oid_lookup
+  git_commit_graph_file_parse
+  ```
+modified: '2023-02-07T13:00:10.989968Z'
+published: '2023-02-07T13:00:10.989656Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=55724
+affected:
+- package:
+    name: libgit2
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libgit2
+  ranges:
+  - type: GIT
+    repo: https://github.com/libgit2/libgit2
+    events:
+    - introduced: 6de3221debf785c328842667eb04c07c747c73a0
+  versions:
+  - v1.6.1
+  - v1.6.2
+  - v1.6.3
+  - v1.6.4
+  ecosystem_specific:
+    severity: MEDIUM
+schema_version: 1.4.0
