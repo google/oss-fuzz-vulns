@@ -25,6 +25,7 @@ affected:
     repo: https://github.com/xiph/flac.git
     events:
     - introduced: 383512d551de2ebf640a95d010b38ad58b0d12ae
+    - fixed: 147cfc8df424b3b4fe6cc15a37d8ab9f3320dcd6
   ecosystem_specific:
     severity: HIGH
   versions: []
