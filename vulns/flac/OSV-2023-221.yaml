@@ -1,0 +1,31 @@
+id: OSV-2023-221
+summary: Heap-use-after-free in flac__analyze_frame
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=57354
+
+  ```
+  Crash type: Heap-use-after-free READ 4
+  Crash state:
+  flac__analyze_frame
+  write_callback
+  write_audio_frame_to_client_
+  ```
+modified: '2023-03-24T13:00:26.025239Z'
+published: '2023-03-24T13:00:26.024981Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=57354
+affected:
+- package:
+    name: flac
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/flac
+  ranges:
+  - type: GIT
+    repo: https://github.com/xiph/flac.git
+    events:
+    - introduced: 383512d551de2ebf640a95d010b38ad58b0d12ae
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
+schema_version: 1.4.0
