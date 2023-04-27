@@ -10,7 +10,7 @@ details: |
   H5O__msg_iterate_real
   H5O__msg_remove_real
   ```
-modified: '2023-02-18T13:01:01.581183Z'
+modified: '2023-04-27T14:30:07.165171Z'
 published: '2023-02-18T13:01:01.580923Z'
 references:
 - type: REPORT
@@ -28,6 +28,7 @@ affected:
     - introduced: 04f0647727677d716a3c1c772d35a660a8ea0dc5
     - introduced: 5a0ec52099cf02224a4066b158bcf1a34829db20
     - introduced: f527239564fc27a6e666ce734b88e4ab18765efc
+    - fixed: 9e765b9c43c89ad88971e8f0ecae7d610f2cd463
   versions:
   - hdf5-1_10_10
   ecosystem_specific:
