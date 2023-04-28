@@ -1,0 +1,31 @@
+id: OSV-2023-337
+summary: Heap-buffer-overflow in PyBytes_FromStringAndSize
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=58225
+
+  ```
+  Crash type: Heap-buffer-overflow READ {*}
+  Crash state:
+  PyBytes_FromStringAndSize
+  do_mkvalue
+  va_build_stack
+  ```
+modified: '2023-04-22T14:02:16.430016Z'
+published: '2023-04-22T14:02:16.429774Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=58225
+affected:
+- package:
+    name: python3-libraries
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/python3-libraries
+  ranges:
+  - type: GIT
+    repo: https://github.com/python/cpython.git
+    events:
+    - introduced: 1ef61cf71a218c71860ff6aecf0fd51edb8b65dc
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.4.0
