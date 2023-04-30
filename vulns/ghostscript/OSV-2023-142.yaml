@@ -10,7 +10,7 @@ details: |
   pdf14_push_transparency_group
   pdf14_begin_transparency_group
   ```
-modified: '2023-03-03T13:02:19.918589Z'
+modified: '2023-04-30T14:24:04.617671Z'
 published: '2023-03-03T13:02:19.918280Z'
 references:
 - type: REPORT
@@ -25,6 +25,7 @@ affected:
     repo: git://git.ghostscript.com/ghostpdl.git
     events:
     - introduced: 51516cfda0abb9b27e9571646edf1dcebe6245ba
+    - fixed: f62a3f606db3163b85666a0b8997e52987c87e97
   versions:
   - ghostpdl-10.01.0
   - ghostpdl-10.01.0rc1
