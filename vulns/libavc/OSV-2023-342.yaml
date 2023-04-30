@@ -1,0 +1,33 @@
+id: OSV-2023-342
+summary: Heap-use-after-free in ih264_inter_pred_luma_vert_ssse3
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=58278
+
+  ```
+  Crash type: Heap-use-after-free READ 16
+  Crash state:
+  ih264_inter_pred_luma_vert_ssse3
+  ih264d_motion_compensate_mp
+  isvcd_decode_recon_tfr_nmb_non_base_lyr
+  ```
+modified: '2023-04-24T14:02:30.819120Z'
+published: '2023-04-24T14:02:30.818849Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=58278
+affected:
+- package:
+    name: libavc
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libavc
+  ranges:
+  - type: GIT
+    repo: https://github.com/ittiam-systems/libavc.git
+    events:
+    - introduced: 992407f6c3e77c9ff84684c77072b913eaa3152b
+    - fixed: 84f955dd77e42ffb57cb05a869cb8c8bf68f1e13
+  versions:
+  - v1.1.1
+  ecosystem_specific:
+    severity: HIGH
+schema_version: 1.4.0

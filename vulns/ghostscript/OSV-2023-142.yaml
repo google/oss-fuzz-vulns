@@ -1,0 +1,38 @@
+id: OSV-2023-142
+summary: Heap-buffer-overflow in pdf14_preserve_backdrop
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=56544
+
+  ```
+  Crash type: Heap-buffer-overflow WRITE {*}
+  Crash state:
+  pdf14_preserve_backdrop
+  pdf14_push_transparency_group
+  pdf14_begin_transparency_group
+  ```
+modified: '2023-03-03T13:02:19.918589Z'
+published: '2023-03-03T13:02:19.918280Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=56544
+affected:
+- package:
+    name: ghostscript
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/ghostscript
+  ranges:
+  - type: GIT
+    repo: git://git.ghostscript.com/ghostpdl.git
+    events:
+    - introduced: 51516cfda0abb9b27e9571646edf1dcebe6245ba
+  versions:
+  - ghostpdl-10.01.0
+  - ghostpdl-10.01.0rc1
+  - ghostpdl-10.01.0rc2
+  - ghostpdl-10.01.1
+  - ghostpdl-10.01.1-gse-10174
+  - ghostpdl-10.02.0-test-base-001
+  - rjw-test
+  ecosystem_specific:
+    severity: HIGH
+schema_version: 1.4.0
