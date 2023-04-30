@@ -10,7 +10,7 @@ details: |
   html_normalise_map
   cli_scanhtml
   ```
-modified: '2023-04-29T14:01:02.901142Z'
+modified: '2023-04-30T14:20:30.195844Z'
 published: '2023-04-29T14:01:02.900884Z'
 references:
 - type: REPORT
@@ -26,6 +26,7 @@ affected:
     events:
     - introduced: 60d9465a7371031c66a19b05e0697ae8a77269fe
     - fixed: 7a6fe78172c86144aed3cfa4d20683f5b8fb51c9
+    - fixed: fd0c4bc251c211b211b3e4f1813bd0d07bdba657
   versions:
   - clamav-1.1.0-rc
   ecosystem_specific:
