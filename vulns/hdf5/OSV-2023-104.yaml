@@ -10,7 +10,7 @@ details: |
   H5FS_sect_add
   H5MF__add_sect
   ```
-modified: '2023-02-24T13:02:14.199272Z'
+modified: '2023-05-03T14:30:28.198633Z'
 published: '2023-02-24T13:02:14.199033Z'
 references:
 - type: REPORT
@@ -28,6 +28,7 @@ affected:
     - introduced: 04f0647727677d716a3c1c772d35a660a8ea0dc5
     - introduced: 5a0ec52099cf02224a4066b158bcf1a34829db20
     - introduced: f527239564fc27a6e666ce734b88e4ab18765efc
+    - fixed: 07e94155a7d456d663fe19a38851556117b5e315
   versions:
   - hdf5-1_10_10
   ecosystem_specific:
