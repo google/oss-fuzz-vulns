@@ -1,0 +1,31 @@
+id: OSV-2023-361
+summary: Heap-buffer-overflow in tok_get_normal_mode
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=58510
+
+  ```
+  Crash type: Heap-buffer-overflow WRITE 1
+  Crash state:
+  tok_get_normal_mode
+  _PyTokenizer_Get
+  _PyPegen_tokenize_full_source_to_check_for_errors
+  ```
+modified: '2023-05-02T14:00:14.864013Z'
+published: '2023-05-02T14:00:14.863724Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=58510
+affected:
+- package:
+    name: python3-libraries
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/python3-libraries
+  ranges:
+  - type: GIT
+    repo: https://github.com/python/cpython.git
+    events:
+    - introduced: 1ef61cf71a218c71860ff6aecf0fd51edb8b65dc
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
+schema_version: 1.4.0
