@@ -25,6 +25,7 @@ affected:
     repo: https://github.com/python/cpython.git
     events:
     - introduced: 1ef61cf71a218c71860ff6aecf0fd51edb8b65dc
+    - fixed: 5078eedc5b18f0d208af6e30f60b33419132d1b6
   ecosystem_specific:
     severity: HIGH
   versions: []
