@@ -10,7 +10,7 @@ details: |
   HunspellImpl::~HunspellImpl
   Hunspell::~Hunspell
   ```
-modified: '2023-05-03T14:00:43.946518Z'
+modified: '2023-05-04T14:11:43.526808Z'
 published: '2023-05-03T14:00:43.946257Z'
 references:
 - type: REPORT
@@ -25,6 +25,7 @@ affected:
     repo: https://github.com/hunspell/hunspell.git
     events:
     - introduced: 74b08bfb8b611b7ae4bea2a6f1f74d9f73c1d0e3
+    - fixed: 63d1a3e864b88f0522f12e08a46abefd355394e4
   versions:
   - v1.7.2
   ecosystem_specific:
