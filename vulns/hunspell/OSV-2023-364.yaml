@@ -1,0 +1,32 @@
+id: OSV-2023-364
+summary: Heap-double-free in HashMgr::~HashMgr
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=58553
+
+  ```
+  Crash type: Heap-double-free
+  Crash state:
+  HashMgr::~HashMgr
+  HunspellImpl::~HunspellImpl
+  Hunspell::~Hunspell
+  ```
+modified: '2023-05-03T14:00:43.946518Z'
+published: '2023-05-03T14:00:43.946257Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=58553
+affected:
+- package:
+    name: hunspell
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/hunspell
+  ranges:
+  - type: GIT
+    repo: https://github.com/hunspell/hunspell.git
+    events:
+    - introduced: 74b08bfb8b611b7ae4bea2a6f1f74d9f73c1d0e3
+  versions:
+  - v1.7.2
+  ecosystem_specific:
+    severity: HIGH
+schema_version: 1.4.0
