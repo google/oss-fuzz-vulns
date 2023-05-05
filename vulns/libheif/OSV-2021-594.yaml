@@ -10,7 +10,7 @@ details: |
   read_coding_quadtree
   read_coding_quadtree
   ```
-modified: '2023-05-03T14:10:13.229459Z'
+modified: '2023-05-05T14:02:59.779815Z'
 published: '2021-04-03T00:00:33.651641Z'
 references:
 - type: REPORT
@@ -24,6 +24,7 @@ affected:
     repo: https://github.com/strukturag/libheif.git
     events:
     - introduced: 77549e1d2595d9ac3fa2e14ed28a3e8a800e07f7
+    - fixed: 8bec5d258e1e6a1a9a6b04fd15716925cceadd17
   versions:
   - v1.10.0
   - v1.11.0
