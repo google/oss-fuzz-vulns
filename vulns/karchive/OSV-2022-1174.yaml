@@ -10,7 +10,7 @@ details: |
   lzma_crc64
   lzma_check_update
   ```
-modified: '2023-04-08T14:16:23.350897Z'
+modified: '2023-05-06T14:08:17.828938Z'
 published: '2022-11-16T13:02:12.420492Z'
 references:
 - type: REPORT
@@ -36,6 +36,7 @@ affected:
   - v5.104.0
   - v5.105.0-rc1
   - v5.105.0
+  - v5.106.0-rc1
   ecosystem_specific:
     severity: MEDIUM
   database_specific:
