@@ -1,0 +1,32 @@
+id: OSV-2023-372
+summary: UNKNOWN WRITE in hb_ot_layout_substitute_start
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=58626
+
+  ```
+  Crash type: UNKNOWN WRITE
+  Crash state:
+  hb_ot_layout_substitute_start
+  _hb_ot_shape
+  hb_shape_plan_execute
+  ```
+modified: '2023-05-06T14:02:02.806822Z'
+published: '2023-05-06T14:02:02.806574Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=58626
+affected:
+- package:
+    name: harfbuzz
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/harfbuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/harfbuzz/harfbuzz.git
+    events:
+    - introduced: 8a8fc37c42135b3ed524e4179bcc4add854ae195
+    - fixed: 319a488b3903cf92c3b45d1772717168a10f94d7
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
+schema_version: 1.4.0
