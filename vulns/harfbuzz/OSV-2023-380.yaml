@@ -1,0 +1,32 @@
+id: OSV-2023-380
+summary: UNKNOWN WRITE in bool OT::Layout::Common::Coverage::serialize<hb_map_iter_t<hb_map_iter_t<hb_filt
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=58663
+
+  ```
+  Crash type: UNKNOWN WRITE
+  Crash state:
+  bool OT::Layout::Common::Coverage::serialize<hb_map_iter_t<hb_map_iter_t<hb_filt
+  OT::Layout::GSUB_impl::SingleSubstFormat2_4<OT::Layout::SmallTypes>::subset
+  hb_subset_context_t::return_t OT::Layout::GSUB_impl::SubstLookupSubTable::dispat
+  ```
+modified: '2023-05-07T14:02:23.816302Z'
+published: '2023-05-07T14:02:23.816056Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=58663
+affected:
+- package:
+    name: harfbuzz
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/harfbuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/harfbuzz/harfbuzz.git
+    events:
+    - introduced: 1be39729140a6d726de164746e516c1fe5afcb19
+    - fixed: cda646a598207642721b753ef5abcebb2525f61b
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
+schema_version: 1.4.0

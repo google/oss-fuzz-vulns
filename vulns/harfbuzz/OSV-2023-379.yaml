@@ -1,0 +1,26 @@
+id: OSV-2023-379
+summary: Heap-buffer-overflow in void sort_r_simple<>
+details: "OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=58662\n\
+  \n```\nCrash type: Heap-buffer-overflow READ 1\nCrash state:\nvoid sort_r_simple<>\n\
+  bool OT::ClassDef::serialize<hb_sorted_array_t<hb_pair_t<unsigned int, unsigned\
+  \ \nOT::ClassDef_remap_and_serialize\n```\n"
+modified: '2023-05-07T14:02:21.125050Z'
+published: '2023-05-07T14:02:21.124794Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=58662
+affected:
+- package:
+    name: harfbuzz
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/harfbuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/harfbuzz/harfbuzz.git
+    events:
+    - introduced: 1be39729140a6d726de164746e516c1fe5afcb19
+    - fixed: 86658df5d29308d66ddead03f1112442df04ec27
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.4.0
