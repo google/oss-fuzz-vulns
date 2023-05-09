@@ -10,7 +10,7 @@ details: |
   bit_read_BD
   dwg_decode_header_variables
   ```
-modified: '2023-05-08T14:15:18.411842Z'
+modified: '2023-05-09T14:18:52.417074Z'
 published: '2022-12-10T13:00:18.486240Z'
 references:
 - type: REPORT
@@ -193,6 +193,8 @@ affected:
   - 0.12.5.5521
   - 0.12.5.5528
   - 0.12.5.5530
+  - 0.12.5.5537
+  - 0.12.5.5539
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.3.0
