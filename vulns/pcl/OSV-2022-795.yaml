@@ -9,7 +9,7 @@ details: |
   pcl::PLYReader::read
   ply_io.h
   ```
-modified: '2023-04-26T14:17:55.773546Z'
+modified: '2023-05-10T14:16:17.845957Z'
 published: '2022-08-28T00:00:11.408403Z'
 references:
 - type: REPORT
@@ -28,6 +28,7 @@ affected:
   - pcl-1.13.0-rc1
   - pcl-1.13.0
   - pcl-1.13.1-rc1
+  - pcl-1.13.1
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.3.0
