@@ -10,7 +10,7 @@ details: |
   LibRaw::unpack
   LoadRAW
   ```
-modified: '2023-05-06T14:06:45.145746Z'
+modified: '2023-05-13T14:13:15.521540Z'
 published: '2022-10-06T00:02:27.511658Z'
 references:
 - type: REPORT
@@ -40,6 +40,7 @@ affected:
   - v5.105.0-rc1
   - v5.105.0
   - v5.106.0-rc1
+  - v5.106.0
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.3.0
