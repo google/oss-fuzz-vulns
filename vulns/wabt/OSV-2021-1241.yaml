@@ -10,7 +10,7 @@ details: |
   wabt::ReadBinary
   wabt::ReadBinaryIr
   ```
-modified: '2022-12-28T00:19:43.509224Z'
+modified: '2023-05-13T14:07:00.077600Z'
 published: '2021-09-12T00:01:27.535685Z'
 references:
 - type: REPORT
@@ -34,5 +34,6 @@ affected:
   - 1.0.30
   - 1.0.31
   - 1.0.32
+  - 1.0.33
   ecosystem_specific:
     severity: MEDIUM
