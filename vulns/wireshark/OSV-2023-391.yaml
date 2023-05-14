@@ -25,6 +25,7 @@ affected:
     repo: https://gitlab.com/wireshark/wireshark.git
     events:
     - introduced: f030ecdbccd8c26f06e1fd65c0e25d29fbb9c293
+    - fixed: ba1084daac619e9f342c9b27fa40650fb6ea0c09
   ecosystem_specific:
     severity: MEDIUM
   versions: []
