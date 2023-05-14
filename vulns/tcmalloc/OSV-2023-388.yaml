@@ -1,0 +1,29 @@
+id: OSV-2023-388
+summary: Heap-buffer-overflow
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=58786
+
+  ```
+  Crash type: Heap-buffer-overflow READ 4
+  Crash state:
+  NULL```
+modified: '2023-05-11T14:00:53.703051Z'
+published: '2023-05-11T14:00:53.702804Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=58786
+affected:
+- package:
+    name: tcmalloc
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/tcmalloc
+  ranges:
+  - type: GIT
+    repo: https://github.com/google/tcmalloc
+    events:
+    - introduced: c33cb2d8935002f8ba942028a1f0871d075345a1
+    - fixed: 200f3b2b1ce4012433495d4f7281cbbb740b7004
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.4.0

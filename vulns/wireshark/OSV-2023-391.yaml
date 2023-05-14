@@ -1,0 +1,31 @@
+id: OSV-2023-391
+summary: UNKNOWN READ in wmem_tree_lookup32_array_le
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=58832
+
+  ```
+  Crash type: UNKNOWN READ
+  Crash state:
+  wmem_tree_lookup32_array_le
+  dissect_btl2cap
+  call_dissector_work
+  ```
+modified: '2023-05-12T14:02:08.527885Z'
+published: '2023-05-12T14:02:08.527602Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=58832
+affected:
+- package:
+    name: wireshark
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/wireshark
+  ranges:
+  - type: GIT
+    repo: https://gitlab.com/wireshark/wireshark.git
+    events:
+    - introduced: f030ecdbccd8c26f06e1fd65c0e25d29fbb9c293
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.4.0

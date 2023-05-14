@@ -1,0 +1,32 @@
+id: OSV-2023-358
+summary: Heap-double-free in wolfCrypt_custom_free
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=58484
+
+  ```
+  Crash type: Heap-double-free
+  Crash state:
+  wolfCrypt_custom_free
+  wolfSSL_Free
+  FreeOcspRequest
+  ```
+modified: '2023-05-01T14:01:17.580425Z'
+published: '2023-05-01T14:01:17.580134Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=58484
+affected:
+- package:
+    name: wolfssl
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/wolfssl
+  ranges:
+  - type: GIT
+    repo: https://github.com/wolfssl/wolfssl
+    events:
+    - introduced: b2a6203ec01fcc5d55ab37b3d0e85ab160e962d4
+  versions:
+  - v5.6.0-stable
+  ecosystem_specific:
+    severity: HIGH
+schema_version: 1.4.0
