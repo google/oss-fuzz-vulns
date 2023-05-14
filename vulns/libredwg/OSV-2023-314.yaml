@@ -9,7 +9,7 @@ details: |
   dwg_encode
   llvmfuzz.c
   ```
-modified: '2023-04-14T14:02:37.022242Z'
+modified: '2023-05-14T14:15:16.434655Z'
 published: '2023-04-14T14:02:37.021991Z'
 references:
 - type: REPORT
@@ -24,6 +24,7 @@ affected:
     repo: https://github.com/LibreDWG/libredwg
     events:
     - introduced: 919f9faa30942269ba453ae563a0d376b290d861
+    - fixed: 9a6bd55c9d0722cb101fe85a3b22d89e4ff4fe52
   versions:
   - 0.12.5.5103
   - 0.12.5.5104
@@ -109,11 +110,6 @@ affected:
   - 0.12.5.5549
   - 0.12.5.5552
   - 0.12.5.5554
-  - 0.12.5.5557
-  - 0.12.5.5560
-  - 0.12.5.5563
-  - 0.12.5.5570
-  - 0.12.5.5577
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.4.0
