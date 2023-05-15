@@ -1,0 +1,35 @@
+id: OSV-2023-80
+summary: Heap-buffer-overflow in set_data
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=56037
+
+  ```
+  Crash type: Heap-buffer-overflow READ {*}
+  Crash state:
+  set_data
+  ref_pkt
+  git_pkt_parse_line
+  ```
+modified: '2023-02-18T13:01:03.497058Z'
+published: '2023-02-18T13:01:03.496830Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=56037
+affected:
+- package:
+    name: libgit2
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libgit2
+  ranges:
+  - type: GIT
+    repo: https://github.com/libgit2/libgit2
+    events:
+    - introduced: b8fff35ab32a384f7e224d1afd06ef4fe1863e1f
+  versions:
+  - v1.6.1
+  - v1.6.2
+  - v1.6.3
+  - v1.6.4
+  ecosystem_specific:
+    severity: MEDIUM
+schema_version: 1.4.0
