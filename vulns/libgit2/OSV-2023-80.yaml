@@ -10,7 +10,7 @@ details: |
   ref_pkt
   git_pkt_parse_line
   ```
-modified: '2023-02-18T13:01:03.497058Z'
+modified: '2023-05-15T14:22:01.756573Z'
 published: '2023-02-18T13:01:03.496830Z'
 references:
 - type: REPORT
@@ -25,6 +25,7 @@ affected:
     repo: https://github.com/libgit2/libgit2
     events:
     - introduced: b8fff35ab32a384f7e224d1afd06ef4fe1863e1f
+    - fixed: 11c89c386c8862f834097cdc5d9ed79634cf00f3
   versions:
   - v1.6.1
   - v1.6.2
