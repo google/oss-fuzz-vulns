@@ -1,0 +1,31 @@
+id: OSV-2023-399
+summary: Heap-use-after-free in get_got_entry
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=58949
+
+  ```
+  Crash type: Heap-use-after-free READ 8
+  Crash state:
+  get_got_entry
+  get_import_addr
+  Elf64__r_bin_elf_load_symbols_and_imports
+  ```
+modified: '2023-05-15T14:01:19.849790Z'
+published: '2023-05-15T14:01:19.849514Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=58949
+affected:
+- package:
+    name: radare2
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/radare2
+  ranges:
+  - type: GIT
+    repo: https://github.com/radareorg/radare2
+    events:
+    - introduced: 8f1af2e1ce8992afe99f14453555eace299ee5ca
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
+schema_version: 1.4.0
