@@ -1,0 +1,38 @@
+id: OSV-2023-76
+summary: Heap-buffer-overflow in H5SM_delete
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=56033
+
+  ```
+  Crash type: Heap-buffer-overflow READ 4
+  Crash state:
+  H5SM_delete
+  H5O__msg_write_real
+  H5O_msg_write
+  ```
+modified: '2023-02-18T13:00:50.472154Z'
+published: '2023-02-18T13:00:50.471845Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=56033
+affected:
+- package:
+    name: hdf5
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/hdf5
+  ranges:
+  - type: GIT
+    repo: https://github.com/HDFGroup/hdf5
+    events:
+    - introduced: 966454aac1231da7209ef81c11055d3312181f99
+    - introduced: 04f0647727677d716a3c1c772d35a660a8ea0dc5
+    - introduced: 5a0ec52099cf02224a4066b158bcf1a34829db20
+    - introduced: f527239564fc27a6e666ce734b88e4ab18765efc
+  versions:
+  - 1.14.1
+  - hdf5-1_10_10
+  - hdf5-1_14_1
+  - hdf5-1_14_1-2
+  ecosystem_specific:
+    severity: MEDIUM
+schema_version: 1.4.0
