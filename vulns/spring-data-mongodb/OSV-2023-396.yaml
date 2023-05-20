@@ -1,0 +1,35 @@
+id: OSV-2023-396
+summary: Security exception in org.springframework.expression.spel.ast.OpPlus.getValueInternal
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=58938
+
+  ```
+  Crash type: Security exception
+  Crash state:
+  org.springframework.expression.spel.ast.OpPlus.getValueInternal
+  java.base/java.util.Arrays.hashCode
+  java.base/sun.reflect.generics.reflectiveObjects.ParameterizedTypeImpl.hashCode
+  ```
+modified: '2023-05-14T14:02:12.108548Z'
+published: '2023-05-14T14:02:12.108286Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=58938
+affected:
+- package:
+    name: spring-data-mongodb
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/spring-data-mongodb
+  ranges:
+  - type: GIT
+    repo: https://github.com/spring-projects/spring-data-mongodb
+    events:
+    - introduced: 629dfc187e7a1d4978e549207770bb46f6cf64d4
+    - fixed: 5163e544ae082ca2ff88ecfc2b03434880f7748e
+  versions:
+  - 4.1.0
+  ecosystem_specific:
+    severity: LOW
+  database_specific:
+    introduced_range: 289438b1e4c2695bb464d21471f1993df05f2285:776dadeac8670eb948e8a5243fdb065c0afc49fb
+schema_version: 1.4.0
