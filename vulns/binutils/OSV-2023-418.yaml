@@ -1,0 +1,32 @@
+id: OSV-2023-418
+summary: Heap-buffer-overflow in bfd_getl32
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=59148
+
+  ```
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  bfd_getl32
+  _bfd_stab_section_find_nearest_line
+  coff_find_nearest_line_with_names
+  ```
+modified: '2023-05-21T14:02:30.263496Z'
+published: '2023-05-21T14:02:30.263252Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=59148
+affected:
+- package:
+    name: binutils
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/binutils
+  ranges:
+  - type: GIT
+    repo: git://sourceware.org/git/binutils-gdb.git
+    events:
+    - introduced: 70ea5a46bd926149fb4a9c3da32c2fc14f6e83c3
+    - fixed: 0bbd2b1ad0426aee86445cd7f0c86667624da7ca
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.4.0
