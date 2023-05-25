@@ -25,9 +25,11 @@ affected:
     repo: https://gitbox.apache.org/repos/asf/commons-imaging.git
     events:
     - introduced: b5026706fa6811353a8b53ece95d89f349b81bd1
+    - fixed: a6ccaa76fdf1627a402eb7a2b965e457a7733968
   ecosystem_specific:
     severity: LOW
   database_specific:
     introduced_range: ee635db6e144fd5c4c5be293338c9fc5abe6cc96:01189e72cd64abea8664953550ea75c5a2b94d3f
+    fixed_range: 74d4c28893fefe08c6e24cbd63537051c745093d:a6ccaa76fdf1627a402eb7a2b965e457a7733968
   versions: []
 schema_version: 1.3.0
