@@ -10,7 +10,7 @@ details: |
   concat_function
   zend_binary_op
   ```
-modified: '2022-05-25T01:24:03.842788Z'
+modified: '2023-05-26T15:17:48.975421Z'
 published: '2021-09-04T00:01:34.068585Z'
 references:
 - type: REPORT
@@ -24,6 +24,7 @@ affected:
     repo: https://github.com/php/php-src.git
     events:
     - introduced: 1902f730ee2bda60552f34c0643e2d7b47e4fb64
+    - fixed: 24ff7eee3f04070d8ab1b31f57d17f0c840185bf
   versions:
   - php-8.1.0
   - php-8.1.2RC1
