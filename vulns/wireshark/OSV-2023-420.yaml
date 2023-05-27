@@ -1,0 +1,32 @@
+id: OSV-2023-420
+summary: Heap-use-after-free in fragment_addresses_equal
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=59173
+
+  ```
+  Crash type: Heap-use-after-free READ 6
+  Crash state:
+  fragment_addresses_equal
+  g_hash_table_lookup_extended
+  fragment_add_seq_single_work
+  ```
+modified: '2023-05-22T14:00:41.157099Z'
+published: '2023-05-22T14:00:41.156918Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=59173
+affected:
+- package:
+    name: wireshark
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/wireshark
+  ranges:
+  - type: GIT
+    repo: https://gitlab.com/wireshark/wireshark.git
+    events:
+    - introduced: 32e175034392f41ce59b97edf517f9635cb42e08
+    - fixed: caeedef803b84cd2d0bc8019cc90ce807dbb2533
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
+schema_version: 1.4.0

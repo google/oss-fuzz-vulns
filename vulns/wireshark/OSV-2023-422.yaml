@@ -1,0 +1,32 @@
+id: OSV-2023-422
+summary: Heap-use-after-free in wmem_memdup
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=59167
+
+  ```
+  Crash type: Heap-use-after-free READ 6
+  Crash state:
+  wmem_memdup
+  copy_address
+  fragment_addresses_persistent_key
+  ```
+modified: '2023-05-22T14:01:21.886307Z'
+published: '2023-05-22T14:01:21.886121Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=59167
+affected:
+- package:
+    name: wireshark
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/wireshark
+  ranges:
+  - type: GIT
+    repo: https://gitlab.com/wireshark/wireshark.git
+    events:
+    - introduced: 32e175034392f41ce59b97edf517f9635cb42e08
+    - fixed: fdd1863a018179ebc384a5079b015e7ff702a6a5
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
+schema_version: 1.4.0

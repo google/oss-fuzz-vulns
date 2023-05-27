@@ -1,0 +1,32 @@
+id: OSV-2023-425
+summary: Heap-buffer-overflow in ICMPinfo::dissectICMP
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=59217
+
+  ```
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  ICMPinfo::dissectICMP
+  NetworkInterface::processPacket
+  NetworkInterface::dissectPacket
+  ```
+modified: '2023-05-23T14:01:00.402221Z'
+published: '2023-05-23T14:01:00.402025Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=59217
+affected:
+- package:
+    name: ntopng
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/ntopng
+  ranges:
+  - type: GIT
+    repo: https://github.com/ntop/ntopng.git
+    events:
+    - introduced: ab73418e29e000c54acb2a71d9f3bb57a779e792
+    - fixed: bf61ca1bcd64f7a457a8290f2a119bf62ecbb8e8
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.4.0

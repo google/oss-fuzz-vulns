@@ -1,0 +1,35 @@
+id: OSV-2023-385
+summary: Bad-cast to Assimp::BaseImporter from invalid vptr
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=58724
+
+  ```
+  Crash type: Bad-cast
+  Crash state:
+  Bad-cast to Assimp::BaseImporter from invalid vptr
+  Assimp::Importer::ReadFile
+  Assimp::BatchLoader::LoadAll
+  ```
+modified: '2023-05-09T14:00:46.631303Z'
+published: '2023-05-09T14:00:46.630999Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=58724
+affected:
+- package:
+    name: assimp
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/assimp
+  ranges:
+  - type: GIT
+    repo: https://github.com/assimp/assimp.git
+    events:
+    - introduced: 7eb9edf0b9b3e761ee815cfc50b9b9efcab6d2f7
+    - fixed: 9f593d70b51f2b3a277cfb6b3f6ff614a1fc5f90
+  ecosystem_specific:
+    severity: HIGH
+  database_specific:
+    introduced_range: 4b65d65af391e946bce0326afe5082ac12a22532:b70277e1ab97c201a27649629443f0a6e7b9a011
+    fixed_range: 0e06a5f945699325e666a0ace5b9c4263933f2a1:9f593d70b51f2b3a277cfb6b3f6ff614a1fc5f90
+  versions: []
+schema_version: 1.4.0

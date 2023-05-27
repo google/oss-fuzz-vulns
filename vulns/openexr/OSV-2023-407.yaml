@@ -1,0 +1,32 @@
+id: OSV-2023-407
+summary: Stack-buffer-overflow in DwaCompressor_readChannelRules
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=59070
+
+  ```
+  Crash type: Stack-buffer-overflow READ {*}
+  Crash state:
+  DwaCompressor_readChannelRules
+  DwaCompressor_uncompress
+  internal_exr_undo_dwaa
+  ```
+modified: '2023-05-19T14:02:24.198372Z'
+published: '2023-05-19T14:02:24.198097Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=59070
+affected:
+- package:
+    name: openexr
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/openexr
+  ranges:
+  - type: GIT
+    repo: https://github.com/AcademySoftwareFoundation/openexr
+    events:
+    - introduced: 7c40603eb2812148c6a99fbb6ee07533395fdadb
+    - fixed: 6f235a803c6370583891f008181f85a91eedb681
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.4.0
