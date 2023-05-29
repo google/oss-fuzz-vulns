@@ -10,7 +10,7 @@ details: |
   H5C_protect
   H5AC_protect
   ```
-modified: '2023-05-26T14:50:10.257049Z'
+modified: '2023-05-29T14:29:23.762948Z'
 published: '2023-02-18T13:00:53.191660Z'
 references:
 - type: REPORT
@@ -28,12 +28,14 @@ affected:
     - introduced: 04f0647727677d716a3c1c772d35a660a8ea0dc5
     - introduced: 5a0ec52099cf02224a4066b158bcf1a34829db20
     - introduced: f527239564fc27a6e666ce734b88e4ab18765efc
+    - fixed: 40324e0c31eef2cfcf0289079c58f81717d65184
   versions:
   - 1.14.1
   - hdf5-1_10_10
   - hdf5-1_14_1
   - hdf5-1_14_1-2
-  - snapshot
   ecosystem_specific:
     severity: MEDIUM
+  database_specific:
+    fixed_range: 79bb60c3f6f67411e5d70b84743fc9f6b6143cbc:40324e0c31eef2cfcf0289079c58f81717d65184
 schema_version: 1.4.0
