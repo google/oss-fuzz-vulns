@@ -10,7 +10,7 @@ details: |
   g_ptr_array_foreach
   generic_fuzz
   ```
-modified: '2023-02-24T13:00:28.645978Z'
+modified: '2023-05-30T14:33:34.578336Z'
 published: '2023-02-24T13:00:28.645738Z'
 references:
 - type: REPORT
@@ -32,6 +32,7 @@ affected:
   - v8.0.0-rc2
   - v8.0.0-rc3
   - v8.0.0-rc4
+  - v8.0.1
   ecosystem_specific:
     severity: HIGH
 schema_version: 1.4.0
