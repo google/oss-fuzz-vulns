@@ -1,0 +1,35 @@
+id: OSV-2023-119
+summary: Use-of-uninitialized-value in rename_process
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=56401
+
+  ```
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  rename_process
+  safe_fork_full
+  parse_timestamp
+  ```
+modified: '2023-02-28T13:02:11.477247Z'
+published: '2023-02-28T13:02:11.477Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=56401
+affected:
+- package:
+    name: systemd
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/systemd
+  ranges:
+  - type: GIT
+    repo: https://github.com/systemd/systemd
+    events:
+    - introduced: 8d8d4b092aa94803c01638a2a7343d12f2b2776c
+  versions:
+  - v253
+  - v253-rc1
+  - v253-rc2
+  - v253-rc3
+  ecosystem_specific:
+    severity: MEDIUM
+schema_version: 1.4.0
