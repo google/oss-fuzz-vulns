@@ -10,7 +10,7 @@ details: |
   libssh2_session_handshake
   ssh2_client_fuzzer.cc
   ```
-modified: '2022-04-13T03:04:41.712276Z'
+modified: '2023-05-31T14:06:59.685148Z'
 published: '2022-01-09T00:01:35.903934Z'
 references:
 - type: REPORT
@@ -25,7 +25,8 @@ affected:
     repo: https://github.com/libssh2/libssh2.git
     events:
     - introduced: 64a555d6f5aafed504a10e5b756e85c91b1d56ce
+  versions:
+  - libssh2-1.11.0
   ecosystem_specific:
     severity: null
-  versions: []
 schema_version: 1.2.0
