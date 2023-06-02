@@ -10,7 +10,7 @@ details: |
   Assimp::ObjFileImporter::createTopology
   Assimp::ObjFileImporter::createNodes
   ```
-modified: '2022-12-11T13:02:16.977749Z'
+modified: '2023-06-02T14:09:49.967819Z'
 published: '2022-12-11T13:02:16.977497Z'
 references:
 - type: REPORT
@@ -25,6 +25,7 @@ affected:
     repo: https://github.com/assimp/assimp.git
     events:
     - introduced: 43763f53d6d794c524a4f9ba47809a83b8997c04
+    - fixed: 628dde4a91a2abbc3f79c1c78bc4e537048bab90
   versions:
   - 5.2.0
   - v5.2.0
