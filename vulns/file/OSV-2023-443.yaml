@@ -1,0 +1,32 @@
+id: OSV-2023-443
+summary: Use-after-poison in file_is_simh
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=59438
+
+  ```
+  Crash type: Use-after-poison READ 4
+  Crash state:
+  file_is_simh
+  file_buffer
+  magic_buffer
+  ```
+modified: '2023-05-31T14:00:37.980057Z'
+published: '2023-05-31T14:00:37.979797Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=59438
+affected:
+- package:
+    name: file
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/file
+  ranges:
+  - type: GIT
+    repo: https://github.com/file/file.git
+    events:
+    - introduced: b17d1647cba360469ae1c22b1f7de1a3a15528b7
+    - fixed: c7eddddfd5d99821ea52e52e24468b43282c8f90
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
+schema_version: 1.4.0
