@@ -25,6 +25,7 @@ affected:
     repo: https://github.com/harfbuzz/harfbuzz.git
     events:
     - introduced: 3d08a2f10cada7c72513d9491ddf66820ef008fb
+    - fixed: af3fdf1f9e09fb7e47d4528d81fd510730b80745
   ecosystem_specific:
     severity: HIGH
   versions: []
