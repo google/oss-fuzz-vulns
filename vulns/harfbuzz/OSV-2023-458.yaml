@@ -1,0 +1,31 @@
+id: OSV-2023-458
+summary: Invalid-free in hb_free_impl
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=59592
+
+  ```
+  Crash type: Invalid-free
+  Crash state:
+  hb_free_impl
+  OT::glyf::_free_compiled_subset_glyphs
+  OT::glyf::subset
+  ```
+modified: '2023-06-05T14:01:54.286189Z'
+published: '2023-06-05T14:01:54.285948Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=59592
+affected:
+- package:
+    name: harfbuzz
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/harfbuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/harfbuzz/harfbuzz.git
+    events:
+    - introduced: 3d08a2f10cada7c72513d9491ddf66820ef008fb
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
+schema_version: 1.4.0
