@@ -10,7 +10,7 @@ details: |
   AAHairlineOp::onPrepareDraws
   GrMeshDrawOp::onPrepare
   ```
-modified: '2023-01-13T00:45:47.558186Z'
+modified: '2023-06-09T14:32:53.192675Z'
 published: '2022-09-28T00:02:05.739495Z'
 references:
 - type: REPORT
@@ -29,6 +29,7 @@ affected:
   - canvaskit/0.37.1
   - canvaskit/0.37.2
   - canvaskit/0.38.0
+  - canvaskit/0.38.2
   ecosystem_specific:
     severity: MEDIUM
   database_specific:
