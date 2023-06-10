@@ -1,0 +1,32 @@
+id: OSV-2023-462
+summary: Heap-buffer-overflow in IEC104Stats::processPacket
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=59625
+
+  ```
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  IEC104Stats::processPacket
+  Flow::processIEC60870Packet
+  Flow::processPacket
+  ```
+modified: '2023-06-07T14:02:18.785836Z'
+published: '2023-06-07T14:02:18.785565Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=59625
+affected:
+- package:
+    name: ntopng
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/ntopng
+  ranges:
+  - type: GIT
+    repo: https://github.com/ntop/ntopng.git
+    events:
+    - introduced: ab73418e29e000c54acb2a71d9f3bb57a779e792
+    - fixed: f95b4cdd852fca7052fc7a2b115e4958499f1df9
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.4.0
