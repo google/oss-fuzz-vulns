@@ -10,7 +10,7 @@ details: |
   dwg_dxf_LAYOUT_private
   dwg_dxf_LAYOUT
   ```
-modified: '2023-05-20T14:01:02.466017Z'
+modified: '2023-06-11T14:15:45.072848Z'
 published: '2023-05-20T14:01:02.465780Z'
 references:
 - type: REPORT
@@ -25,6 +25,7 @@ affected:
     repo: https://github.com/LibreDWG/libredwg
     events:
     - introduced: a954ad92edf387d7a681f865611ea24c79228ce6
+    - fixed: 9b7e822916a0ccd6fa961e5364f99112bed964c6
   versions:
   - 0.12.5.5646
   - 0.12.5.5648
@@ -55,11 +56,6 @@ affected:
   - 0.12.5.5746
   - 0.12.5.5748
   - 0.12.5.5751
-  - 0.12.5.5754
-  - 0.12.5.5759
-  - 0.12.5.5761
-  - 0.12.5.5764
-  - 0.12.5.5772
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.4.0
