@@ -1,0 +1,65 @@
+id: OSV-2023-412
+summary: UNKNOWN READ in dxf_fixup_string
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=59089
+
+  ```
+  Crash type: UNKNOWN READ
+  Crash state:
+  dxf_fixup_string
+  dxf_header_write
+  dwg_write_dxf
+  ```
+modified: '2023-05-20T14:00:35.493332Z'
+published: '2023-05-20T14:00:35.493084Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=59089
+affected:
+- package:
+    name: libredwg
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libredwg
+  ranges:
+  - type: GIT
+    repo: https://github.com/LibreDWG/libredwg
+    events:
+    - introduced: a954ad92edf387d7a681f865611ea24c79228ce6
+  versions:
+  - 0.12.5.5646
+  - 0.12.5.5648
+  - 0.12.5.5654
+  - 0.12.5.5656
+  - 0.12.5.5660
+  - 0.12.5.5663
+  - 0.12.5.5666
+  - 0.12.5.5667
+  - 0.12.5.5668
+  - 0.12.5.5671
+  - 0.12.5.5688
+  - 0.12.5.5691
+  - 0.12.5.5697
+  - 0.12.5.5700
+  - 0.12.5.5708
+  - 0.12.5.5710
+  - 0.12.5.5712
+  - 0.12.5.5713
+  - 0.12.5.5716
+  - 0.12.5.5720
+  - 0.12.5.5721
+  - 0.12.5.5725
+  - 0.12.5.5731
+  - 0.12.5.5733
+  - 0.12.5.5741
+  - 0.12.5.5745
+  - 0.12.5.5746
+  - 0.12.5.5748
+  - 0.12.5.5751
+  - 0.12.5.5754
+  - 0.12.5.5759
+  - 0.12.5.5761
+  - 0.12.5.5764
+  - 0.12.5.5772
+  ecosystem_specific:
+    severity: MEDIUM
+schema_version: 1.4.0
