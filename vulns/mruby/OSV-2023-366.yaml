@@ -10,7 +10,7 @@ details: |
   incremental_gc
   mrb_full_gc
   ```
-modified: '2023-05-04T14:02:02.626495Z'
+modified: '2023-06-13T05:21:25.752073Z'
 published: '2023-05-04T14:02:02.626247Z'
 references:
 - type: REPORT
@@ -25,6 +25,7 @@ affected:
     repo: https://github.com/mruby/mruby
     events:
     - introduced: 672495555bb741aefbde2f31a523f7ed8666d2c6
+    - fixed: b47c8b738ae3e400ec02269fae9857222218e9d5
   versions:
   - 3.2.0
   - 3.2.0-rc
