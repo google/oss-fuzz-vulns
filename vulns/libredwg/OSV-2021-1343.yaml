@@ -10,7 +10,7 @@ details: |
   dwg_write_dxfb
   llvmfuzz.c
   ```
-modified: '2023-06-13T14:11:50.539091Z'
+modified: '2023-06-14T14:09:55.085261Z'
 published: '2021-09-21T00:01:33.177403Z'
 references:
 - type: REPORT
@@ -329,5 +329,8 @@ affected:
   - 0.12.5.5787
   - 0.12.5.5789
   - 0.12.5.5793
+  - 0.12.5.5796
+  - 0.12.5.5799
+  - 0.12.5.5802
   ecosystem_specific:
     severity: MEDIUM
