@@ -1,0 +1,29 @@
+id: OSV-2023-472
+summary: Heap-buffer-overflow in TestFuzzCommonAssistanceParseFileBuffer.c
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=59682
+
+  ```
+  Crash type: Heap-buffer-overflow WRITE {*}
+  Crash state:
+  TestFuzzCommonAssistanceParseFileBuffer.c
+  ```
+modified: '2023-06-09T14:00:57.791841Z'
+published: '2023-06-09T14:00:57.791577Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=59682
+affected:
+- package:
+    name: freerdp
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/freerdp
+  ranges:
+  - type: GIT
+    repo: https://github.com/FreeRDP/FreeRDP.git
+    events:
+    - introduced: 81e95e51cabfc2db201991b43c0b861b201e17f2
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
+schema_version: 1.4.0
