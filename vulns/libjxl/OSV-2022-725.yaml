@@ -10,7 +10,7 @@ details: |
   jxl::LowMemoryRenderPipeline::RenderRect
   jxl::LowMemoryRenderPipeline::ProcessBuffers
   ```
-modified: '2023-02-24T01:19:42.545833Z'
+modified: '2023-06-14T14:11:08.412381Z'
 published: '2022-08-18T00:01:05.918943Z'
 references:
 - type: REPORT
@@ -30,6 +30,7 @@ affected:
   - v0.8.0
   - v0.8.1
   - v0.9-snapshot
+  - v0.8.2
   ecosystem_specific:
     severity: HIGH
 schema_version: 1.2.0
