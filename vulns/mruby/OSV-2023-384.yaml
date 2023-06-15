@@ -1,0 +1,32 @@
+id: OSV-2023-384
+summary: Heap-use-after-free in mrb_str_hash_m
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=58723
+
+  ```
+  Crash type: Heap-use-after-free READ 1
+  Crash state:
+  mrb_str_hash_m
+  mrb_funcall_with_block
+  mrb_funcall_argv
+  ```
+modified: '2023-05-09T14:00:31.526487Z'
+published: '2023-05-09T14:00:31.526197Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=58723
+affected:
+- package:
+    name: mruby
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/mruby
+  ranges:
+  - type: GIT
+    repo: https://github.com/mruby/mruby
+    events:
+    - introduced: 8d1192f8a28034b1931a41e8c55cd86715101d0c
+    - fixed: b47c8b738ae3e400ec02269fae9857222218e9d5
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
+schema_version: 1.4.0
