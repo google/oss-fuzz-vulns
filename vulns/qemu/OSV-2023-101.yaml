@@ -10,7 +10,7 @@ details: |
   g_ptr_array_foreach
   generic_fuzz
   ```
-modified: '2023-05-31T14:53:37.026871Z'
+modified: '2023-06-16T15:05:06.165958Z'
 published: '2023-02-24T13:00:28.645738Z'
 references:
 - type: REPORT
@@ -25,6 +25,7 @@ affected:
     repo: https://git.qemu.org/git/qemu.git
     events:
     - introduced: 1375104370fc80bbcaa55430d2fbc0b1d8fc158b
+    - fixed: 7efd65423ab22e6f5890ca08ae40c84d6660242f
   versions:
   - v8.0.0
   - v8.0.0-rc0
