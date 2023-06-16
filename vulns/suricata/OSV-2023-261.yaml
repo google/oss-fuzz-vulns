@@ -10,7 +10,7 @@ details: |
   HTPCallbackRequestBodyData
   htp_hook_run_all
   ```
-modified: '2023-04-01T13:02:00.983324Z'
+modified: '2023-06-16T14:08:27.124553Z'
 published: '2023-04-01T13:02:00.983076Z'
 references:
 - type: REPORT
@@ -25,7 +25,8 @@ affected:
     repo: https://github.com/OISF/suricata.git
     events:
     - introduced: 578f328e06b3e03f3bdbbf852b5d121e20849b8b
+  versions:
+  - suricata-7.0.0-rc2
   ecosystem_specific:
     severity: MEDIUM
-  versions: []
 schema_version: 1.4.0
