@@ -1,0 +1,46 @@
+id: OSV-2023-201
+summary: UNKNOWN READ in Assimp::SMDImporter::ParseNodeInfo
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=57218
+
+  ```
+  Crash type: UNKNOWN READ
+  Crash state:
+  Assimp::SMDImporter::ParseNodeInfo
+  Assimp::SMDImporter::ParseNodesSection
+  Assimp::SMDImporter::ParseFile
+  ```
+modified: '2023-03-19T13:00:22.411179Z'
+published: '2023-03-19T13:00:22.410933Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=57218
+affected:
+- package:
+    name: assimp
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/assimp
+  ranges:
+  - type: GIT
+    repo: https://github.com/assimp/assimp.git
+    events:
+    - introduced: 8a975549a99bd21b7a2c09cc37b73e52a3919fed
+  versions:
+  - 5.2.0
+  - v5.1.0
+  - v5.1.0.rc1
+  - v5.1.1
+  - v5.1.2
+  - v5.1.3
+  - v5.1.4
+  - v5.1.5
+  - v5.1.6
+  - v5.2.0
+  - v5.2.1
+  - v5.2.2
+  - v5.2.3
+  - v5.2.4
+  - v5.2.5
+  ecosystem_specific:
+    severity: MEDIUM
+schema_version: 1.4.0
