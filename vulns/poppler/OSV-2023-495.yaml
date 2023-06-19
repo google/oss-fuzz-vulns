@@ -1,0 +1,34 @@
+id: OSV-2023-495
+summary: Heap-buffer-overflow in utf8ToUtf16
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=59884
+
+  ```
+  Crash type: Heap-buffer-overflow WRITE 2
+  Crash state:
+  utf8ToUtf16
+  utf8ToUtf16WithBom
+  Lexer::getObj
+  ```
+modified: '2023-06-18T14:01:41.997865Z'
+published: '2023-06-18T14:01:41.997633Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=59884
+affected:
+- package:
+    name: poppler
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/poppler
+  ranges:
+  - type: GIT
+    repo: https://gitlab.freedesktop.org/poppler/poppler.git
+    events:
+    - introduced: 9183da4fcb8d06360ed51f7f1131a14300008735
+    - fixed: e885124ab3b071b7fbb2f001e4a9a88b7e758605
+  ecosystem_specific:
+    severity: HIGH
+  database_specific:
+    introduced_range: 7cf6cd7b9a0fc496738c245421eea54ec669448d:222982849168a8aa0a78cb2a4fa2b903f2f74146
+  versions: []
+schema_version: 1.4.0
