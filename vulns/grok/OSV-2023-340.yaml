@@ -10,7 +10,7 @@ details: |
   grk::t1_part1::T1Part1::decompress
   std::__1::__function::__func<grk::DecompressScheduler::scheduleBlocks
   ```
-modified: '2023-04-24T14:00:30.054814Z'
+modified: '2023-06-20T14:14:43.265931Z'
 published: '2023-04-24T14:00:30.054535Z'
 references:
 - type: REPORT
@@ -25,6 +25,7 @@ affected:
     repo: https://github.com/GrokImageCompression/grok.git
     events:
     - introduced: 73ef6711005759b4dc91381f6cdf1cba6d36b59f
+    - fixed: faa589e382bf7bd63f24e2042210db3ee912227f
   versions:
   - v10.0.0
   - v10.0.1
