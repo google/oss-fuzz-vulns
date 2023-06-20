@@ -10,7 +10,7 @@ details: |
   get_hdr_field
   parse_headers
   ```
-modified: '2023-05-17T14:17:25.823370Z'
+modified: '2023-06-20T14:13:24.692715Z'
 published: '2022-11-12T13:00:05.964113Z'
 references:
 - type: REPORT
@@ -49,6 +49,7 @@ affected:
   - 3.2.12
   - 3.3.5
   - 3.4.0-beta
+  - 3.4.0-rc1
   ecosystem_specific:
     severity: HIGH
   database_specific:
