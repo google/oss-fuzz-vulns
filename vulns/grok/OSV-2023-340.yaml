@@ -1,0 +1,40 @@
+id: OSV-2023-340
+summary: Heap-double-free in grk::DecompressCodeblock::release
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=58285
+
+  ```
+  Crash type: Heap-double-free
+  Crash state:
+  grk::DecompressCodeblock::release
+  grk::t1_part1::T1Part1::decompress
+  std::__1::__function::__func<grk::DecompressScheduler::scheduleBlocks
+  ```
+modified: '2023-04-24T14:00:30.054814Z'
+published: '2023-04-24T14:00:30.054535Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=58285
+affected:
+- package:
+    name: grok
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/grok
+  ranges:
+  - type: GIT
+    repo: https://github.com/GrokImageCompression/grok.git
+    events:
+    - introduced: 73ef6711005759b4dc91381f6cdf1cba6d36b59f
+  versions:
+  - v10.0.0
+  - v10.0.1
+  - v10.0.2
+  - v10.0.3
+  - v10.0.4
+  - v10.0.5
+  - v10.0.5.debian
+  - v10.0.6
+  - v9.7.8
+  ecosystem_specific:
+    severity: HIGH
+schema_version: 1.4.0
