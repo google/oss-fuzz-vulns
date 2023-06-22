@@ -10,7 +10,7 @@ details: |
   SendChannelExit
   wolfSSH_shutdown
   ```
-modified: '2023-06-02T14:02:19.304230Z'
+modified: '2023-06-22T14:25:02.611556Z'
 published: '2023-06-02T14:02:19.303950Z'
 references:
 - type: REPORT
@@ -25,10 +25,10 @@ affected:
     repo: https://github.com/wolfssl/wolfssl
     events:
     - introduced: b32036258d8efa6617b916f0c4be11a33e699b37
+    - fixed: 3b3c175af0e993ffaae251871421e206cc41963f
   versions:
   - v5.6.0-stable
   - v5.6.2-stable
-  - v5.6.3-stable
   ecosystem_specific:
     severity: HIGH
   database_specific:
