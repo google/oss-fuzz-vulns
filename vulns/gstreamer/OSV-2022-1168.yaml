@@ -10,7 +10,7 @@ details: |
   parse_webvtt
   gst_sub_parse_chain
   ```
-modified: '2023-06-21T14:19:03.712514Z'
+modified: '2023-06-22T14:16:08.910225Z'
 published: '2022-11-12T13:00:43.599907Z'
 references:
 - type: REPORT
@@ -26,21 +26,23 @@ affected:
     events:
     - introduced: 86f0f8b67f54ddae25af2a8ed1a64cb5d57fc2fe
     - introduced: e9e4ac0ba99df5240b2905c694e1c095055fb65a
+    - fixed: 97c6d7495e6edb009789cf43ea79e26c54f88538
+    - fixed: 7632b0c2a004f28d6309a884c14b943278db8166
+    - fixed: 518ecba8f960137715f776dac6c93e4c4e4179d1
   versions:
   - 1.20.2
   - 1.20.3
   - 1.20.4
   - 1.20.5
+  - 1.20.6
   - 1.21.1
   - 1.21.2
   - 1.21.3
   - 1.21.90
   - 1.22.0
-  - 1.20.6
   - 1.22.1
   - 1.22.2
   - 1.22.3
-  - 1.22.4
   ecosystem_specific:
     severity: HIGH
 schema_version: 1.3.0
