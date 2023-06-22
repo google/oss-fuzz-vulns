@@ -1,0 +1,32 @@
+id: OSV-2023-225
+summary: Heap-buffer-overflow in std::__1::enable_if<true, void>::type APFSBtreeNodeIterator<APFSBtreeNode<apfs_o
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=57364
+
+  ```
+  Crash type: Heap-buffer-overflow READ 2
+  Crash state:
+  std::__1::enable_if<true, void>::type APFSBtreeNodeIterator<APFSBtreeNode<apfs_o
+  APFSBtreeNodeIterator<APFSBtreeNode<apfs_omap_key, apfs_omap_value> >::APFSBtree
+  APFSBtreeNodeIterator<APFSBtreeNode<apfs_omap_key, apfs_omap_value> > APFSBtreeN
+  ```
+modified: '2023-03-24T13:02:18.004733Z'
+published: '2023-03-24T13:02:18.004510Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=57364
+affected:
+- package:
+    name: sleuthkit
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/sleuthkit
+  ranges:
+  - type: GIT
+    repo: https://github.com/sleuthkit/sleuthkit
+    events:
+    - introduced: 69cec8222562293935b4d1befc693407378b92d0
+  versions:
+  - sleuthkit-4.12.0
+  ecosystem_specific:
+    severity: MEDIUM
+schema_version: 1.4.0

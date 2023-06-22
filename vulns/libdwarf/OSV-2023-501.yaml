@@ -1,0 +1,32 @@
+id: OSV-2023-501
+summary: UNKNOWN READ in _dwarf_exec_frame_instr
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=59950
+
+  ```
+  Crash type: UNKNOWN READ
+  Crash state:
+  _dwarf_exec_frame_instr
+  _dwarf_get_fde_info_for_a_pc_row
+  dwarf_get_fde_info_for_all_regs3
+  ```
+modified: '2023-06-20T14:02:17.702338Z'
+published: '2023-06-20T14:02:17.702087Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=59950
+affected:
+- package:
+    name: libdwarf
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libdwarf
+  ranges:
+  - type: GIT
+    repo: https://github.com/davea42/libdwarf-code
+    events:
+    - introduced: 5612eff9f1a40229690fd0e61083101df85e776b
+    - fixed: b7437c9e4923906e9b3f3860a0c8a8289cff0a91
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.4.0

@@ -1,0 +1,36 @@
+id: OSV-2023-451
+summary: Heap-buffer-overflow in BundlePacket
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=59498
+
+  ```
+  Crash type: Heap-buffer-overflow WRITE 9
+  Crash state:
+  BundlePacket
+  SendChannelExit
+  wolfSSH_shutdown
+  ```
+modified: '2023-06-02T14:02:19.304230Z'
+published: '2023-06-02T14:02:19.303950Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=59498
+affected:
+- package:
+    name: wolfssl
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/wolfssl
+  ranges:
+  - type: GIT
+    repo: https://github.com/wolfssl/wolfssl
+    events:
+    - introduced: b32036258d8efa6617b916f0c4be11a33e699b37
+  versions:
+  - v5.6.0-stable
+  - v5.6.2-stable
+  - v5.6.3-stable
+  ecosystem_specific:
+    severity: HIGH
+  database_specific:
+    introduced_range: 69ceedbcff5a2ae0dab8fd6c8199c12ec7b45b79:b2a6203ec01fcc5d55ab37b3d0e85ab160e962d4
+schema_version: 1.4.0
