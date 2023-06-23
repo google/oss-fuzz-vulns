@@ -10,7 +10,7 @@ details: |
   blosc_d
   do_job
   ```
-modified: '2023-06-21T14:16:00.141982Z'
+modified: '2023-06-23T14:11:41.995914Z'
 published: '2022-09-06T00:01:17.903893Z'
 references:
 - type: REPORT
@@ -25,6 +25,7 @@ affected:
     repo: https://github.com/Blosc/c-blosc2.git
     events:
     - introduced: 1c9795f2e3e04a79f13d9e7658e6d6e47dfe1cc4
+    - fixed: d55bfcd6804699e1435dc3e233fd76c8a5d3f9e3
   versions:
   - v2.0.0
   - v2.0.1
@@ -49,7 +50,6 @@ affected:
   - v2.9.0
   - v2.9.1
   - v2.9.2
-  - v2.9.3
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.3.0
