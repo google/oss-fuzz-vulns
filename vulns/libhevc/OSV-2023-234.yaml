@@ -1,0 +1,32 @@
+id: OSV-2023-234
+summary: Use-of-uninitialized-value in ihevce_enc_frm_proc_slave_thrd
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=57397
+
+  ```
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  ihevce_enc_frm_proc_slave_thrd
+  osal_func
+  posix_memalign
+  ```
+modified: '2023-03-26T13:00:12.135538Z'
+published: '2023-03-26T13:00:12.135289Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=57397
+affected:
+- package:
+    name: libhevc
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libhevc
+  ranges:
+  - type: GIT
+    repo: https://github.com/ittiam-systems/libhevc.git
+    events:
+    - introduced: caae21611ae310e11b711865f8b7aa7db8996d87
+  versions:
+  - v1.1.1
+  ecosystem_specific:
+    severity: MEDIUM
+schema_version: 1.4.0

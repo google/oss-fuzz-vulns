@@ -1,0 +1,32 @@
+id: OSV-2023-235
+summary: Use-of-uninitialized-value in complexity_RC_reset_marking
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=57398
+
+  ```
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  complexity_RC_reset_marking
+  ihevce_pre_enc_process_frame_thrd
+  osal_func
+  ```
+modified: '2023-03-26T13:00:16.681997Z'
+published: '2023-03-26T13:00:16.681780Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=57398
+affected:
+- package:
+    name: libhevc
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libhevc
+  ranges:
+  - type: GIT
+    repo: https://github.com/ittiam-systems/libhevc.git
+    events:
+    - introduced: caae21611ae310e11b711865f8b7aa7db8996d87
+  versions:
+  - v1.1.1
+  ecosystem_specific:
+    severity: MEDIUM
+schema_version: 1.4.0
