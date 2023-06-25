@@ -1,0 +1,31 @@
+id: OSV-2023-499
+summary: Heap-use-after-free in obj_free
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=59931
+
+  ```
+  Crash type: Heap-use-after-free READ 4
+  Crash state:
+  obj_free
+  incremental_gc
+  mrb_incremental_gc
+  ```
+modified: '2023-06-20T14:00:45.756308Z'
+published: '2023-06-20T14:00:45.756059Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=59931
+affected:
+- package:
+    name: mruby
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/mruby
+  ranges:
+  - type: GIT
+    repo: https://github.com/mruby/mruby
+    events:
+    - introduced: 727a2ec7933ec249cd97b932861f289750050717
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
+schema_version: 1.4.0
