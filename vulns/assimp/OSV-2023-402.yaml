@@ -1,0 +1,31 @@
+id: OSV-2023-402
+summary: Heap-use-after-free in Assimp::FBXExporter::WriteObjects
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=59036
+
+  ```
+  Crash type: Heap-use-after-free READ 4
+  Crash state:
+  Assimp::FBXExporter::WriteObjects
+  Assimp::FBXExporter::ExportBinary
+  Assimp::ExportSceneFBX
+  ```
+modified: '2023-05-18T14:01:38.415480Z'
+published: '2023-05-18T14:01:38.415215Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=59036
+affected:
+- package:
+    name: assimp
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/assimp
+  ranges:
+  - type: GIT
+    repo: https://github.com/assimp/assimp.git
+    events:
+    - introduced: 9d6b32f5c5118e67e99d4be3087f49ad0b7660de
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
+schema_version: 1.4.0
