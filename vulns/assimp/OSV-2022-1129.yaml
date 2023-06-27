@@ -10,7 +10,7 @@ details: |
   Assimp::ObjFileMtlImporter::load
   Assimp::ObjFileMtlImporter::ObjFileMtlImporter
   ```
-modified: '2022-11-03T00:00:05.582565Z'
+modified: '2023-06-27T14:09:22.733005Z'
 published: '2022-11-03T00:00:05.582301Z'
 references:
 - type: REPORT
@@ -25,6 +25,7 @@ affected:
     repo: https://github.com/assimp/assimp.git
     events:
     - introduced: 72888c49f6958f3314bb2e45d308f413465ec8d6
+    - fixed: b1181b108601088e3704a0eb101d251ffafa867e
   versions:
   - v5.2.3
   - v5.2.4
