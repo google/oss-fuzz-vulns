@@ -10,7 +10,7 @@ details: |
   pdfi_find_cff_index
   pdfi_read_cff_font
   ```
-modified: '2023-06-25T14:00:26.558368Z'
+modified: '2023-06-28T14:24:46.618588Z'
 published: '2023-06-25T14:00:26.558044Z'
 references:
 - type: REPORT
@@ -25,6 +25,7 @@ affected:
     repo: git://git.ghostscript.com/ghostpdl.git
     events:
     - introduced: ec203362d93fd7d61ca2775aaac17b23c1cca6c8
+    - fixed: cd3143c71173e67226dc8102b49a3b304162dcdf
   versions:
   - ghostpdl-10.01.0
   - ghostpdl-10.01.0rc1
