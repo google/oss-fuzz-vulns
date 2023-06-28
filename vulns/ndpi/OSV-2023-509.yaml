@@ -1,0 +1,31 @@
+id: OSV-2023-509
+summary: Heap-buffer-overflow in ndpi_search_thrift_tcp_udp
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=60070
+
+  ```
+  Crash type: Heap-buffer-overflow WRITE {*}
+  Crash state:
+  ndpi_search_thrift_tcp_udp
+  check_ndpi_detection_func
+  ndpi_check_flow_func
+  ```
+modified: '2023-06-25T14:00:10.361277Z'
+published: '2023-06-25T14:00:10.361021Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=60070
+affected:
+- package:
+    name: ndpi
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/ndpi
+  ranges:
+  - type: GIT
+    repo: https://github.com/ntop/nDPI.git
+    events:
+    - introduced: 167888828470d26a10252d67b62117f770341a5f
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
+schema_version: 1.4.0

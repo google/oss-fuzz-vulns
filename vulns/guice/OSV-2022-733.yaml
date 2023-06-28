@@ -1,0 +1,32 @@
+id: OSV-2022-733
+summary: Security exception in jaz.Zer.<clinit>
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=50374
+
+  ```
+  Crash type: Security exception
+  Crash state:
+  jaz.Zer.<clinit>
+  java.base/java.lang.Class.forName0
+  java.base/java.lang.Class.forName
+  ```
+modified: '2022-08-19T00:00:14.579980Z'
+published: '2022-08-19T00:00:14.579733Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=50374
+affected:
+- package:
+    name: guice
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/guice
+  ranges:
+  - type: GIT
+    repo: https://github.com/google/guice
+    events:
+    - introduced: 701448681228e2dd4907719f78d16849e8e22645
+    - fixed: ec227cce3e0f87cf279dbbd1815c373f6789f5b5
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
+schema_version: 1.4.0

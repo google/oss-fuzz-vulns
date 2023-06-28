@@ -1,0 +1,38 @@
+id: OSV-2023-510
+summary: Heap-buffer-overflow in uofs
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=60056
+
+  ```
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  uofs
+  pdfi_find_cff_index
+  pdfi_read_cff_font
+  ```
+modified: '2023-06-25T14:00:26.558368Z'
+published: '2023-06-25T14:00:26.558044Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=60056
+affected:
+- package:
+    name: ghostscript
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/ghostscript
+  ranges:
+  - type: GIT
+    repo: git://git.ghostscript.com/ghostpdl.git
+    events:
+    - introduced: ec203362d93fd7d61ca2775aaac17b23c1cca6c8
+  versions:
+  - ghostpdl-10.01.0
+  - ghostpdl-10.01.0rc1
+  - ghostpdl-10.01.0rc2
+  - ghostpdl-10.01.1
+  - ghostpdl-10.01.1-gse-10174
+  - ghostpdl-10.01.2
+  - ghostpdl-10.02.0-test-base-001
+  ecosystem_specific:
+    severity: MEDIUM
+schema_version: 1.4.0

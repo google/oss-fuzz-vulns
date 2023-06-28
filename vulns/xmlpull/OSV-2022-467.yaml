@@ -1,0 +1,32 @@
+id: OSV-2022-467
+summary: Security exception in jaz.Zer.<clinit>
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=47914
+
+  ```
+  Crash type: Security exception
+  Crash state:
+  jaz.Zer.<clinit>
+  java.base/java.lang.Class.forName0
+  java.base/java.lang.Class.forName
+  ```
+modified: '2022-06-10T00:00:30.387111Z'
+published: '2022-06-10T00:00:30.386864Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=47914
+affected:
+- package:
+    name: xmlpull
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/xmlpull
+  ranges:
+  - type: GIT
+    repo: https://github.com/xmlpull-org/xmlpull-api-v1
+    events:
+    - introduced: abeaa4aa87b2625af70c32f658f44e11355fe568
+    - fixed: abeaa4aa87b2625af70c32f658f44e11355fe568
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
+schema_version: 1.4.0
