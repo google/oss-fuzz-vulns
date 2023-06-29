@@ -1,0 +1,31 @@
+id: OSV-2023-345
+summary: Heap-buffer-overflow in mg_mqtt_parse
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=58319
+
+  ```
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  mg_mqtt_parse
+  fuzz.c
+  ```
+modified: '2023-04-26T14:02:05.194342Z'
+published: '2023-04-26T14:02:05.194063Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=58319
+affected:
+- package:
+    name: mongoose
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/mongoose
+  ranges:
+  - type: GIT
+    repo: https://github.com/cesanta/mongoose
+    events:
+    - introduced: 6c13df1affa425ae81e07d954af6666b4da7b895
+  versions:
+  - '7.10'
+  ecosystem_specific:
+    severity: HIGH
+schema_version: 1.4.0
