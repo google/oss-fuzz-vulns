@@ -9,7 +9,7 @@ details: |
   mg_mqtt_parse
   fuzz.c
   ```
-modified: '2023-04-26T14:02:05.194342Z'
+modified: '2023-06-29T14:16:50.467360Z'
 published: '2023-04-26T14:02:05.194063Z'
 references:
 - type: REPORT
@@ -24,6 +24,7 @@ affected:
     repo: https://github.com/cesanta/mongoose
     events:
     - introduced: 6c13df1affa425ae81e07d954af6666b4da7b895
+    - fixed: aed7b6b37ae189680dce9f5d444c90b4dc8df7a2
   versions:
   - '7.10'
   ecosystem_specific:
