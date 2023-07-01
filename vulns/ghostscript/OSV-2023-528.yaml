@@ -1,0 +1,31 @@
+id: OSV-2023-528
+summary: Memcpy-param-overlap in pdfi_copy_truetype_font
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=60204
+
+  ```
+  Crash type: Memcpy-param-overlap
+  Crash state:
+  pdfi_copy_truetype_font
+  pdfi_load_font
+  pdfi_load_dict_font
+  ```
+modified: '2023-06-30T14:02:13.032223Z'
+published: '2023-06-30T14:02:13.031940Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=60204
+affected:
+- package:
+    name: ghostscript
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/ghostscript
+  ranges:
+  - type: GIT
+    repo: git://git.ghostscript.com/ghostpdl.git
+    events:
+    - introduced: 1660a3d5d60b9d2a429cab19eed54af8cfbd6092
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.4.0

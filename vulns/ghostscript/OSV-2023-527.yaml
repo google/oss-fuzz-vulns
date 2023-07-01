@@ -1,0 +1,31 @@
+id: OSV-2023-527
+summary: Heap-buffer-overflow in default_get_outline
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=60207
+
+  ```
+  Crash type: Heap-buffer-overflow READ 4
+  Crash state:
+  default_get_outline
+  pdfi_fapi_get_glyph
+  get_fapi_glyph_data
+  ```
+modified: '2023-06-30T14:00:13.481879Z'
+published: '2023-06-30T14:00:13.481603Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=60207
+affected:
+- package:
+    name: ghostscript
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/ghostscript
+  ranges:
+  - type: GIT
+    repo: git://git.ghostscript.com/ghostpdl.git
+    events:
+    - introduced: ce81cd8afab80b9af62c99add1ba7a372f5cbfc7
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.4.0

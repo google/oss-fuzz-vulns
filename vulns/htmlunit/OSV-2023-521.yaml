@@ -1,0 +1,33 @@
+id: OSV-2023-521
+summary: Security exception in com.code_intelligence.jazzer.sanitizers.ServerSideRequestForgery.checkSsrf
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=60179
+
+  ```
+  Crash type: Security exception
+  Crash state:
+  com.code_intelligence.jazzer.sanitizers.ServerSideRequestForgery.checkSsrf
+  com.code_intelligence.jazzer.sanitizers.ServerSideRequestForgery.checkSsrfSocket
+  java.base/java.net.Socket.connect
+  ```
+modified: '2023-06-29T14:00:49.132469Z'
+published: '2023-06-29T14:00:49.132217Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=60179
+affected:
+- package:
+    name: htmlunit
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/htmlunit
+  ranges:
+  - type: GIT
+    repo: https://github.com/HtmlUnit/htmlunit.git
+    events:
+    - introduced: 3096a98f02632ca68444d9f902064a36b9b324dc
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: 52db0647996b1be30af28afa2e46dde217a64cb0:7a928417992de3c7acf4ca9ec62e944558c4177f
+  versions: []
+schema_version: 1.4.0
