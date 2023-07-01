@@ -25,9 +25,11 @@ affected:
     repo: https://github.com/HtmlUnit/htmlunit.git
     events:
     - introduced: 3096a98f02632ca68444d9f902064a36b9b324dc
+    - fixed: 9bbf08dbc137a81f1bf7138fadee145015faaf8d
   ecosystem_specific:
     severity: MEDIUM
   database_specific:
     introduced_range: 52db0647996b1be30af28afa2e46dde217a64cb0:7a928417992de3c7acf4ca9ec62e944558c4177f
+    fixed_range: 4011c28fbdfee298069e4072420c780e1a52b797:9bbf08dbc137a81f1bf7138fadee145015faaf8d
   versions: []
 schema_version: 1.4.0
