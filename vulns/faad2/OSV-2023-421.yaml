@@ -1,0 +1,31 @@
+id: OSV-2023-421
+summary: Global-buffer-overflow in hf_adjustment
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=59185
+
+  ```
+  Crash type: Global-buffer-overflow READ 4
+  Crash state:
+  hf_adjustment
+  sbr_process_channel
+  sbrDecodeCoupleFrame
+  ```
+modified: '2023-05-22T14:01:06.910307Z'
+published: '2023-05-22T14:01:06.910126Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=59185
+affected:
+- package:
+    name: faad2
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/faad2
+  ranges:
+  - type: GIT
+    repo: https://github.com/knik0/faad2
+    events:
+    - introduced: 42a1b1b8515c1625c46b7adfee759308808bee3d
+  ecosystem_specific:
+    severity: null
+  versions: []
+schema_version: 1.4.0
