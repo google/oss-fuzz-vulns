@@ -1,0 +1,31 @@
+id: OSV-2023-538
+summary: Heap-buffer-overflow in Gfx::BooleanDecoder::initialize
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=60262
+
+  ```
+  Crash type: Heap-buffer-overflow READ 7
+  Crash state:
+  Gfx::BooleanDecoder::initialize
+  Video::VP9::FrameContext::create_range_decoder
+  Video::VP9::Parser::compressed_header
+  ```
+modified: '2023-07-02T14:01:51.278050Z'
+published: '2023-07-02T14:01:51.277801Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=60262
+affected:
+- package:
+    name: serenity
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/serenity
+  ranges:
+  - type: GIT
+    repo: https://github.com/SerenityOS/serenity
+    events:
+    - introduced: bfd6deed1e860ce9516c7ca1613150a2c2c75f75
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.4.0
