@@ -10,7 +10,7 @@ details: |
   blosc_d
   _blosc_getitem
   ```
-modified: '2023-06-21T14:11:32.447646Z'
+modified: '2023-07-04T14:11:13.037313Z'
 published: '2022-06-26T00:00:31.850695Z'
 references:
 - type: REPORT
@@ -45,6 +45,7 @@ affected:
   - v2.9.1
   - v2.9.2
   - v2.9.3
+  - v2.10.0
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.3.0
