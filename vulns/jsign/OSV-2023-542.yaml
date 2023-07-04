@@ -25,7 +25,10 @@ affected:
     repo: https://github.com/ebourg/jsign.git
     events:
     - introduced: 65fea7237f17973b08cd65144e85a34d114f2030
+    - fixed: 76956c731089e01fadf236bf9ad4ce2f85c7f305
   ecosystem_specific:
     severity: LOW
+  database_specific:
+    fixed_range: 1cdad22785de7456575e99bac70bc1ea30768722:76956c731089e01fadf236bf9ad4ce2f85c7f305
   versions: []
 schema_version: 1.4.0
