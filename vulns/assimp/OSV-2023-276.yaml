@@ -1,0 +1,39 @@
+id: OSV-2023-276
+summary: Heap-use-after-free in aiScene::~aiScene
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=57656
+
+  ```
+  Crash type: Heap-use-after-free READ 8
+  Crash state:
+  aiScene::~aiScene
+  Assimp::BatchLoader::~BatchLoader
+  Assimp::LWSImporter::InternReadFile
+  ```
+modified: '2023-04-04T14:01:47.666798Z'
+published: '2023-04-04T14:01:47.666563Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=57656
+affected:
+- package:
+    name: assimp
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/assimp
+  ranges:
+  - type: GIT
+    repo: https://github.com/assimp/assimp.git
+    events:
+    - introduced: 776130534bb66cb64c6f11b92a1375df9604ba83
+  versions:
+  - 5.2.0
+  - v5.1.6
+  - v5.2.0
+  - v5.2.1
+  - v5.2.2
+  - v5.2.3
+  - v5.2.4
+  - v5.2.5
+  ecosystem_specific:
+    severity: HIGH
+schema_version: 1.4.0
