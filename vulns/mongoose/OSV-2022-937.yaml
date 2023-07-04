@@ -10,7 +10,7 @@ details: |
   mip_rx
   fuzz.c
   ```
-modified: '2023-05-19T14:12:21.779261Z'
+modified: '2023-07-04T14:16:39.203417Z'
 published: '2022-09-23T00:02:21.434097Z'
 references:
 - type: REPORT
@@ -28,6 +28,7 @@ affected:
   versions:
   - '7.9'
   - '7.10'
+  - '7.11'
   ecosystem_specific:
     severity: HIGH
 schema_version: 1.3.0
