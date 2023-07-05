@@ -10,7 +10,7 @@ details: |
   Assimp::SMDImporter::ParseNodesSection
   Assimp::SMDImporter::ParseFile
   ```
-modified: '2023-03-19T13:00:22.411179Z'
+modified: '2023-07-05T14:13:55.259699Z'
 published: '2023-03-19T13:00:22.410933Z'
 references:
 - type: REPORT
@@ -25,6 +25,7 @@ affected:
     repo: https://github.com/assimp/assimp.git
     events:
     - introduced: 8a975549a99bd21b7a2c09cc37b73e52a3919fed
+    - fixed: 093e35dd54489232bbc9ed3e12f984747994b268
   versions:
   - 5.2.0
   - v5.1.0
