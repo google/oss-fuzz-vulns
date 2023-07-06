@@ -1,0 +1,34 @@
+id: OSV-2023-543
+summary: Security exception in com.github.javaparser.ast.validator.TreeVisitorValidator.accept
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=60355
+
+  ```
+  Crash type: Security exception
+  Crash state:
+  com.github.javaparser.ast.validator.TreeVisitorValidator.accept
+  com.github.javaparser.ast.expr.FieldAccessExpr.getMetaModel
+  com.github.javaparser.ast.expr.FieldAccessExpr.getMetaModel
+  ```
+modified: '2023-07-05T14:00:23.803252Z'
+published: '2023-07-05T14:00:23.802979Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=60355
+affected:
+- package:
+    name: javaparser
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/javaparser
+  ranges:
+  - type: GIT
+    repo: https://github.com/javaparser/javaparser
+    events:
+    - introduced: 8b358698318380d9b9b15c510a8e8cbe89a4c648
+  versions:
+  - javaparser-parent-3.25.4
+  ecosystem_specific:
+    severity: LOW
+  database_specific:
+    introduced_range: 8f0624b757601dfc69a136698b66bfe571043bb6:a3ac3cb1040c633466ab33ac181a197cd12bf82d
+schema_version: 1.4.0
