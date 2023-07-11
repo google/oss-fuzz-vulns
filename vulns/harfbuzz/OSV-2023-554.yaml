@@ -1,0 +1,32 @@
+id: OSV-2023-554
+summary: Heap-buffer-overflow in OT::CmapSubtable::get_glyph
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=60475
+
+  ```
+  Crash type: Heap-buffer-overflow READ 2
+  Crash state:
+  OT::CmapSubtable::get_glyph
+  bool OT::cmap::accelerator_t::get_glyph_from<OT::CmapSubtable>
+  hb_ot_get_nominal_glyphs
+  ```
+modified: '2023-07-10T14:02:00.983375Z'
+published: '2023-07-10T14:02:00.983105Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=60475
+affected:
+- package:
+    name: harfbuzz
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/harfbuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/harfbuzz/harfbuzz.git
+    events:
+    - introduced: d84504206c420250bfe80bee25f6a59a7177c9eb
+    - fixed: f60dbd906a4bf89354af1ed0616a61a5099d8c1a
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
+schema_version: 1.4.0
