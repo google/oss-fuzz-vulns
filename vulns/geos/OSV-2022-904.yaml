@@ -10,7 +10,7 @@ details: |
   geos::geomgraph::NodeMap::addNode
   geos::geomgraph::GeometryGraph::addSelfIntersectionNode
   ```
-modified: '2023-06-28T14:09:15.524768Z'
+modified: '2023-07-11T14:17:31.116763Z'
 published: '2022-09-17T00:02:05.375997Z'
 references:
 - type: REPORT
@@ -25,10 +25,12 @@ affected:
     repo: https://git.osgeo.org/gitea/geos/geos.git
     events:
     - introduced: bd3146275054c8689d1cbada47bfe51ebed898dd
+    - fixed: 6bc91ff0f985abb96e44f1c8ef9cf010d9d2006c
+    - fixed: e93854317dd3130644891c73579e773859a12717
   versions:
+  - 3.12.0
   - 3.12.0beta1
   - 3.12.0beta2
-  - 3.12.0
   ecosystem_specific:
     severity: HIGH
 schema_version: 1.3.0
