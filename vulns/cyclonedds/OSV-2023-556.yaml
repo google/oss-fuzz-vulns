@@ -1,0 +1,31 @@
+id: OSV-2023-556
+summary: Heap-buffer-overflow in xt_valid_enum_values
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=60514
+
+  ```
+  Crash type: Heap-buffer-overflow READ 4
+  Crash state:
+  xt_valid_enum_values
+  xt_validate_impl
+  ddsi_xt_type_add_typeobj
+  ```
+modified: '2023-07-11T14:00:08.082346Z'
+published: '2023-07-11T14:00:08.080412Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=60514
+affected:
+- package:
+    name: cyclonedds
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/cyclonedds
+  ranges:
+  - type: GIT
+    repo: https://github.com/eclipse-cyclonedds/cyclonedds
+    events:
+    - introduced: f663cb17460c1202b8b069173c8fb786346623d9
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.4.0
