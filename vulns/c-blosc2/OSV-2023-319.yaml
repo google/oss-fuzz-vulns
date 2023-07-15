@@ -1,0 +1,58 @@
+id: OSV-2023-319
+summary: Heap-buffer-overflow in ZSTD_decompressSequencesLong_bmi2
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=58035
+
+  ```
+  Crash type: Heap-buffer-overflow READ 8
+  Crash state:
+  ZSTD_decompressSequencesLong_bmi2
+  ZSTD_decompressSequencesLong
+  ZSTD_decompressBlock_internal
+  ```
+modified: '2023-04-16T14:01:58.406785Z'
+published: '2023-04-16T14:01:58.406534Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=58035
+affected:
+- package:
+    name: c-blosc2
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/c-blosc2
+  ranges:
+  - type: GIT
+    repo: https://github.com/Blosc/c-blosc2.git
+    events:
+    - introduced: 4a727370b1c2e9746434c00bf2236db86c31ea5c
+  versions:
+  - v2.0.0
+  - v2.0.0-rc2
+  - v2.0.0.rc1
+  - v2.0.1
+  - v2.0.2
+  - v2.0.3
+  - v2.0.4
+  - v2.1.0
+  - v2.1.1
+  - v2.10.0
+  - v2.2.0
+  - v2.3.0
+  - v2.3.1
+  - v2.4.0
+  - v2.4.1
+  - v2.4.2
+  - v2.4.3
+  - v2.5.0
+  - v2.6.0
+  - v2.6.1
+  - v2.7.0
+  - v2.7.1
+  - v2.8.0
+  - v2.9.0
+  - v2.9.1
+  - v2.9.2
+  - v2.9.3
+  ecosystem_specific:
+    severity: MEDIUM
+schema_version: 1.4.0
