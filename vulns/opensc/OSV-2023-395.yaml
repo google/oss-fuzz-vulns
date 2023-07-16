@@ -1,0 +1,34 @@
+id: OSV-2023-395
+summary: Stack-buffer-overflow in sc_path_print
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=58932
+
+  ```
+  Crash type: Stack-buffer-overflow READ 1
+  Crash state:
+  sc_path_print
+  sc_select_file
+  cflex_delete_file
+  ```
+modified: '2023-05-14T14:00:57.078767Z'
+published: '2023-05-14T14:00:57.078498Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=58932
+affected:
+- package:
+    name: opensc
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/opensc
+  ranges:
+  - type: GIT
+    repo: https://github.com/OpenSC/OpenSC
+    events:
+    - introduced: bec4f63c5b8308d7fdca842c5c0b62c3491d106a
+  versions:
+  - 0.23.0
+  - 0.23.0-rc1
+  - 0.23.0-rc2
+  ecosystem_specific:
+    severity: MEDIUM
+schema_version: 1.4.0

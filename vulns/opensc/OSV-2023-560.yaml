@@ -1,0 +1,31 @@
+id: OSV-2023-560
+summary: Stack-buffer-overflow in sc_pkcs15_get_lastupdate
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=60527
+
+  ```
+  Crash type: Stack-buffer-overflow READ {*}
+  Crash state:
+  sc_pkcs15_get_lastupdate
+  generate_cache_filename
+  sc_pkcs15_read_cached_file
+  ```
+modified: '2023-07-12T14:02:05.479901Z'
+published: '2023-07-12T14:02:05.479616Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=60527
+affected:
+- package:
+    name: opensc
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/opensc
+  ranges:
+  - type: GIT
+    repo: https://github.com/OpenSC/OpenSC
+    events:
+    - introduced: df693351f8ca823d6e118ff751b649eeb3f540d5
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.4.0
