@@ -1,0 +1,31 @@
+id: OSV-2023-573
+summary: Negative-size-param in check_content_type_and_change_protocol
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=60605
+
+  ```
+  Crash type: Negative-size-param
+  Crash state:
+  check_content_type_and_change_protocol
+  process_response
+  ndpi_check_http_tcp
+  ```
+modified: '2023-07-16T14:01:41.261270Z'
+published: '2023-07-16T14:01:41.260979Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=60605
+affected:
+- package:
+    name: ndpi
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/ndpi
+  ranges:
+  - type: GIT
+    repo: https://github.com/ntop/nDPI.git
+    events:
+    - introduced: 0b0f255cc2b4ef18b9c1b51cf71e86de5b2c462b
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.4.0
