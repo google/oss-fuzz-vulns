@@ -10,7 +10,7 @@ details: |
   H5O__cache_chk_serialize
   H5C__generate_image
   ```
-modified: '2023-07-18T14:31:24.102758Z'
+modified: '2023-07-21T14:54:07.761210Z'
 published: '2023-05-01T14:02:33.841821Z'
 references:
 - type: REPORT
@@ -36,6 +36,7 @@ affected:
   - snapshot
   - snapshot-1.14
   - snapshot-1.12
+  - snapshot-1.10
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.4.0
