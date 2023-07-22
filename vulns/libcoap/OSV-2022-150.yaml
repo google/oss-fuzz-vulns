@@ -7,7 +7,7 @@ details: |
   Crash state:
   coap_split_uri_sub
   coap_get_uri_path
-modified: '2023-02-24T02:00:30.395656Z'
+modified: '2023-07-22T14:11:25.765211Z'
 published: '2022-02-14T00:00:50.308933Z'
 references:
 - type: REPORT
@@ -26,6 +26,7 @@ affected:
   - v4.3.1
   - v4.3.1-rc1
   - v4.3.1-rc2
+  - v4.3.2-rc1
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.2.0
