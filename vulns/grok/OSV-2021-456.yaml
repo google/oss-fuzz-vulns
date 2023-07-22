@@ -10,7 +10,7 @@ details: |
   grk::CodeStreamDecompress::read_qcd
   grk::CodeStreamDecompress::process_marker
   ```
-modified: '2023-07-05T14:10:27.841872Z'
+modified: '2023-07-22T14:10:08.300968Z'
 published: '2021-02-28T00:01:15.686942Z'
 references:
 - type: REPORT
@@ -56,5 +56,6 @@ affected:
   - v10.0.5.debian
   - v10.0.6
   - v10.0.7
+  - v10.0.8
   ecosystem_specific:
     severity: MEDIUM
