@@ -1,0 +1,31 @@
+id: OSV-2023-445
+summary: Heap-buffer-overflow in LossyDctDecoder_execute
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=59457
+
+  ```
+  Crash type: Heap-buffer-overflow READ 2
+  Crash state:
+  LossyDctDecoder_execute
+  DwaCompressor_uncompress
+  internal_exr_undo_dwaa
+  ```
+modified: '2023-06-01T14:00:09.278588Z'
+published: '2023-06-01T14:00:09.278335Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=59457
+affected:
+- package:
+    name: openexr
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/openexr
+  ranges:
+  - type: GIT
+    repo: https://github.com/AcademySoftwareFoundation/openexr
+    events:
+    - introduced: 7c40603eb2812148c6a99fbb6ee07533395fdadb
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.4.0

@@ -1,0 +1,32 @@
+id: OSV-2023-343
+summary: Heap-buffer-overflow in _libssh2_ntohu32
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=58291
+
+  ```
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  _libssh2_ntohu32
+  packet_authagent_open
+  _libssh2_packet_add
+  ```
+modified: '2023-04-25T14:01:02.981158Z'
+published: '2023-04-25T14:01:02.980876Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=58291
+affected:
+- package:
+    name: libssh2
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libssh2
+  ranges:
+  - type: GIT
+    repo: https://github.com/libssh2/libssh2.git
+    events:
+    - introduced: bc4e619e76071393e466c29220fc4ef5764c2820
+  versions:
+  - libssh2-1.11.0
+  ecosystem_specific:
+    severity: MEDIUM
+schema_version: 1.4.0
