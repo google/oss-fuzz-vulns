@@ -10,7 +10,7 @@ details: |
   dwg_decode_INSERT
   dwg_decode_add_object
   ```
-modified: '2023-07-24T14:14:21.347459Z'
+modified: '2023-07-26T14:14:23.727360Z'
 published: '2022-12-13T13:00:46.870838Z'
 references:
 - type: REPORT
@@ -299,6 +299,10 @@ affected:
   - 0.12.5.5970
   - 0.12.5.5971
   - 0.12.5.5975
+  - 0.12.5.5982
+  - 0.12.5.6001
+  - 0.12.5.6004
+  - 0.12.5.6010
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.3.0
