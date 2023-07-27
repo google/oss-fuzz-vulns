@@ -10,7 +10,7 @@ details: |
   json_objects_write
   dwg_write_json
   ```
-modified: '2023-07-26T14:08:13.334344Z'
+modified: '2023-07-27T14:16:13.886370Z'
 published: '2022-11-23T13:02:06.623044Z'
 references:
 - type: REPORT
@@ -303,6 +303,10 @@ affected:
   - 0.12.5.6001
   - 0.12.5.6004
   - 0.12.5.6010
+  - 0.12.5.6013
+  - 0.12.5.6016
+  - 0.12.5.6019
+  - 0.12.5.6022
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.3.0
