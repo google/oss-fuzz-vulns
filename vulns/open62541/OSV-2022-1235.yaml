@@ -10,7 +10,7 @@ details: |
   message_parse
   fuzz_mdns_message.cc
   ```
-modified: '2023-03-28T14:14:01.504683Z'
+modified: '2023-07-27T14:13:42.345806Z'
 published: '2022-12-04T13:00:30.303410Z'
 references:
 - type: REPORT
@@ -28,6 +28,7 @@ affected:
   versions:
   - v1.2.7
   - v1.3.5
+  - v1.3.6
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.3.0
