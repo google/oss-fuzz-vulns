@@ -1,0 +1,32 @@
+id: OSV-2023-623
+summary: Heap-use-after-free in Elf32_free
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=60863
+
+  ```
+  Crash type: Heap-use-after-free READ 8
+  Crash state:
+  Elf32_free
+  destroy
+  r_bin_file_free
+  ```
+modified: '2023-07-28T14:01:31.646403Z'
+published: '2023-07-28T14:01:31.646164Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=60863
+affected:
+- package:
+    name: radare2
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/radare2
+  ranges:
+  - type: GIT
+    repo: https://github.com/radareorg/radare2
+    events:
+    - introduced: 09d631be5b49b2da0034fc69ff79bd133f8a69a7
+    - fixed: 85b4fa4f96db8d1c4fc4315fed93b624e3b1cade
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
+schema_version: 1.4.0
