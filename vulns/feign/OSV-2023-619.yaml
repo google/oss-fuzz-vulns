@@ -25,7 +25,10 @@ affected:
     repo: https://github.com/openfeign/feign
     events:
     - introduced: 9f6ccaa4ea2910a4685626ba291e6b6a182fff2e
+    - fixed: 387049458d284f4aa7e6eeac6a94fbc7b01c0241
   ecosystem_specific:
     severity: LOW
+  database_specific:
+    fixed_range: fe036ac032b7098c054fc69923f34498d98fc8a0:387049458d284f4aa7e6eeac6a94fbc7b01c0241
   versions: []
 schema_version: 1.4.0
