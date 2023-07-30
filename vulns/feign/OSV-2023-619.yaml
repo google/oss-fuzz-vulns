@@ -1,0 +1,31 @@
+id: OSV-2023-619
+summary: Security exception in java.base/java.util.regex.Pattern$GroupTail.match
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=60846
+
+  ```
+  Crash type: Security exception
+  Crash state:
+  java.base/java.util.regex.Pattern$GroupTail.match
+  java.base/java.io.BufferedWriter.ensureOpen
+  java.base/java.io.BufferedWriter.write
+  ```
+modified: '2023-07-27T14:00:54.002341Z'
+published: '2023-07-27T14:00:54.002113Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=60846
+affected:
+- package:
+    name: feign
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/feign
+  ranges:
+  - type: GIT
+    repo: https://github.com/openfeign/feign
+    events:
+    - introduced: 9f6ccaa4ea2910a4685626ba291e6b6a182fff2e
+  ecosystem_specific:
+    severity: LOW
+  versions: []
+schema_version: 1.4.0
