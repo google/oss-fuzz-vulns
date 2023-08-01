@@ -10,7 +10,7 @@ details: |
   file_regcomp
   load_1
   ```
-modified: '2023-06-22T14:02:20.855497Z'
+modified: '2023-08-01T14:06:27.325503Z'
 published: '2023-06-22T14:02:20.855256Z'
 references:
 - type: REPORT
@@ -25,6 +25,7 @@ affected:
     repo: https://github.com/file/file.git
     events:
     - introduced: fc5ce7ab57ab4755430cd05706d4289a7d704b03
+    - fixed: 1fc9175166fc5c5117838a1dcfb309b7c595eb56
   versions:
   - FILE5_44
   - FILE5_45
@@ -32,4 +33,5 @@ affected:
     severity: HIGH
   database_specific:
     introduced_range: 2d5f85874bf3c9c4841c08d18e97e0fe16bae19f:5f957469b734366c8d4cbd050609ba4cc3a5c47c
+    fixed_range: 218fdf813fd5ccecbb8887a1b62509cd1c6dd3a1:1fc9175166fc5c5117838a1dcfb309b7c595eb56
 schema_version: 1.4.0
