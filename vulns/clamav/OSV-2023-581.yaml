@@ -25,9 +25,11 @@ affected:
     repo: https://github.com/Cisco-Talos/clamav.git
     events:
     - introduced: 89cd0df3d7d4c2163d79056b5c0ec55c4992c8f4
+    - fixed: cec59d79c94ee4ec579764d0a6e934e67e11cc94
   ecosystem_specific:
     severity: HIGH
   database_specific:
     introduced_range: ca6b9beea23b980bbc482bb537f6e0403f43b292:b778a6b12e5592d57ba9f0f11e85b4c5a281540b
+    fixed_range: 93c769778f1a7d45fae3873f531e62701a15ac95:cec59d79c94ee4ec579764d0a6e934e67e11cc94
   versions: []
 schema_version: 1.4.0
