@@ -1,0 +1,33 @@
+id: OSV-2023-581
+summary: Heap-buffer-overflow in wwunpack
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=60655
+
+  ```
+  Crash type: Heap-buffer-overflow WRITE 1
+  Crash state:
+  wwunpack
+  cli_scanpe
+  cli_magic_scan
+  ```
+modified: '2023-07-18T14:00:33.760126Z'
+published: '2023-07-18T14:00:33.759863Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=60655
+affected:
+- package:
+    name: clamav
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/clamav
+  ranges:
+  - type: GIT
+    repo: https://github.com/Cisco-Talos/clamav.git
+    events:
+    - introduced: 89cd0df3d7d4c2163d79056b5c0ec55c4992c8f4
+  ecosystem_specific:
+    severity: HIGH
+  database_specific:
+    introduced_range: ca6b9beea23b980bbc482bb537f6e0403f43b292:b778a6b12e5592d57ba9f0f11e85b4c5a281540b
+  versions: []
+schema_version: 1.4.0
