@@ -1,0 +1,31 @@
+id: OSV-2023-645
+summary: Segv on unknown address in decUnitCompare
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=61050
+
+  ```
+  Crash type: Segv on unknown address
+  Crash state:
+  decUnitCompare
+  decCompare
+  decCompareOp
+  ```
+modified: '2023-08-04T14:02:38.271192Z'
+published: '2023-08-04T14:02:38.270949Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=61050
+affected:
+- package:
+    name: jq
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/jq
+  ranges:
+  - type: GIT
+    repo: https://github.com/jqlang/jq
+    events:
+    - introduced: 680baeffeb7983e7570b5e68db07fe47f94db8c7
+  ecosystem_specific:
+    severity: null
+  versions: []
+schema_version: 1.4.0

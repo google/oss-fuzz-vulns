@@ -1,0 +1,38 @@
+id: OSV-2023-640
+summary: Stack-buffer-overflow in initialize_encryption_key
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=61039
+
+  ```
+  Crash type: Stack-buffer-overflow READ {*}
+  Crash state:
+  initialize_encryption_key
+  cli_ole2_extract
+  cli_scanole2
+  ```
+modified: '2023-08-04T14:00:55.352436Z'
+published: '2023-08-04T14:00:55.352181Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=61039
+affected:
+- package:
+    name: clamav
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/clamav
+  ranges:
+  - type: GIT
+    repo: https://github.com/Cisco-Talos/clamav.git
+    events:
+    - introduced: e16a552851652e47b6d2d77e4420b25dccf75797
+    - fixed: 09fef084d1a43e7ea595aee4fe5a0506a4f92b6c
+  versions:
+  - clamav-1.0.0
+  - clamav-1.0.0-rc
+  - clamav-1.0.0-rc2
+  - clamav-1.0.1
+  - clamav-1.1.0
+  - clamav-1.1.0-rc
+  ecosystem_specific:
+    severity: MEDIUM
+schema_version: 1.4.0
