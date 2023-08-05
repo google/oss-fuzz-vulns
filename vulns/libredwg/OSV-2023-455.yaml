@@ -10,7 +10,7 @@ details: |
   json_cquote
   dwg_geojson_feature
   ```
-modified: '2023-06-05T14:00:16.339513Z'
+modified: '2023-08-05T14:19:01.096560Z'
 published: '2023-06-05T14:00:16.339269Z'
 references:
 - type: REPORT
@@ -25,6 +25,7 @@ affected:
     repo: https://github.com/LibreDWG/libredwg
     events:
     - introduced: 784605ad5b9c44ba9243158cb7b4a4bcc169f130
+    - fixed: aa1efabfa067d0ca63ce7a950ca4420755edadf2
   versions:
   - 0.12.5.5320
   - 0.12.5.5329
@@ -184,10 +185,6 @@ affected:
   - 0.12.5.6055
   - 0.12.5.6057
   - 0.12.5.6068
-  - 0.12.5.6076
-  - 0.12.5.6077
-  - 0.12.5.6078
-  - 0.12.5.6080
   ecosystem_specific:
     severity: HIGH
 schema_version: 1.4.0
