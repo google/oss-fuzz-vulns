@@ -25,7 +25,10 @@ affected:
     repo: https://github.com/apache/poi.git
     events:
     - introduced: c488cae3f3536253d0bd2c7580f08193dd70b2da
+    - fixed: 2e8afc0c016cee39f56eb5e88ace66ed7f09c7b5
   ecosystem_specific:
     severity: LOW
+  database_specific:
+    fixed_range: 1b7613329e6258a85d548998f5dd36e58046a5b4:2e8afc0c016cee39f56eb5e88ace66ed7f09c7b5
   versions: []
 schema_version: 1.4.0
