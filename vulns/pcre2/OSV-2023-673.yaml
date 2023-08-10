@@ -1,0 +1,31 @@
+id: OSV-2023-673
+summary: Heap-buffer-overflow in match
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=61268
+
+  ```
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  match
+  pcre2_match_8
+  pcre2_fuzzsupport.c
+  ```
+modified: '2023-08-09T14:01:09.834676Z'
+published: '2023-08-09T14:01:09.834447Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=61268
+affected:
+- package:
+    name: pcre2
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/pcre2
+  ranges:
+  - type: GIT
+    repo: https://github.com/PCRE2Project/pcre2
+    events:
+    - introduced: 1e78b77382564b4cc9991e486652d4b105d8ee35
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.4.0

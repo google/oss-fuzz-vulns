@@ -1,0 +1,31 @@
+id: OSV-2023-660
+summary: Security exception in org.apache.poi.hwpf.model.StyleSheet.createPap
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=61252
+
+  ```
+  Crash type: Security exception
+  Crash state:
+  org.apache.poi.hwpf.model.StyleSheet.createPap
+  org.apache.poi.util.BitField.getRawValue
+  org.apache.poi.util.BitField.getValue
+  ```
+modified: '2023-08-08T14:00:31.168352Z'
+published: '2023-08-08T14:00:31.168112Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=61252
+affected:
+- package:
+    name: apache-poi
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/apache-poi
+  ranges:
+  - type: GIT
+    repo: https://github.com/apache/poi.git
+    events:
+    - introduced: c488cae3f3536253d0bd2c7580f08193dd70b2da
+  ecosystem_specific:
+    severity: LOW
+  versions: []
+schema_version: 1.4.0
