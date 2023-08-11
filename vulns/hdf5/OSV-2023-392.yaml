@@ -1,0 +1,42 @@
+id: OSV-2023-392
+summary: Negative-size-param in H5MM_memcpy
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=58892
+
+  ```
+  Crash type: Negative-size-param
+  Crash state:
+  H5MM_memcpy
+  H5O__link_decode
+  H5O__msg_iterate_real
+  ```
+modified: '2023-05-13T14:00:26.093375Z'
+published: '2023-05-13T14:00:26.093088Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=58892
+affected:
+- package:
+    name: hdf5
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/hdf5
+  ranges:
+  - type: GIT
+    repo: https://github.com/HDFGroup/hdf5
+    events:
+    - introduced: 966454aac1231da7209ef81c11055d3312181f99
+    - introduced: 04f0647727677d716a3c1c772d35a660a8ea0dc5
+    - introduced: 5a0ec52099cf02224a4066b158bcf1a34829db20
+    - introduced: f527239564fc27a6e666ce734b88e4ab18765efc
+  versions:
+  - 1.14.1
+  - hdf5-1_10_10
+  - hdf5-1_14_1
+  - hdf5-1_14_1-2
+  - snapshot
+  - snapshot-1.10
+  - snapshot-1.12
+  - snapshot-1.14
+  ecosystem_specific:
+    severity: null
+schema_version: 1.4.0
