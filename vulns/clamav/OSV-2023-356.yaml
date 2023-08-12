@@ -10,7 +10,7 @@ details: |
   find_length
   pdf_extract_obj
   ```
-modified: '2023-08-04T14:17:18.023924Z'
+modified: '2023-08-12T14:21:32.402904Z'
 published: '2023-04-30T14:03:00.823786Z'
 references:
 - type: REPORT
@@ -25,6 +25,7 @@ affected:
     repo: https://github.com/Cisco-Talos/clamav.git
     events:
     - introduced: ba34bc033c32a22fefe18985e186777390c2dc1c
+    - fixed: ba49cbfafa82f1cf10774055615e8d21014d44d0
   versions:
   - clamav-1.1.0
   - clamav-1.2.0-rc
