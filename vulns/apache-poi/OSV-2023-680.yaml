@@ -1,0 +1,32 @@
+id: OSV-2023-680
+summary: Security exception in org.apache.poi.hdgf.streams.PointerContainingStream.findChildren
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=61372
+
+  ```
+  Crash type: Security exception
+  Crash state:
+  org.apache.poi.hdgf.streams.PointerContainingStream.findChildren
+  ```
+modified: '2023-08-11T14:00:29.963569Z'
+published: '2023-08-11T14:00:29.963332Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=61372
+affected:
+- package:
+    name: apache-poi
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/apache-poi
+  ranges:
+  - type: GIT
+    repo: https://github.com/apache/poi.git
+    events:
+    - introduced: c488cae3f3536253d0bd2c7580f08193dd70b2da
+    - fixed: 316738c9d042980ba450d2b4234682bfc723cd53
+  ecosystem_specific:
+    severity: LOW
+  database_specific:
+    fixed_range: 2e8afc0c016cee39f56eb5e88ace66ed7f09c7b5:316738c9d042980ba450d2b4234682bfc723cd53
+  versions: []
+schema_version: 1.4.0
