@@ -1,0 +1,32 @@
+id: OSV-2023-688
+summary: Invalid-free in Flow::~Flow
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=61361
+
+  ```
+  Crash type: Invalid-free
+  Crash state:
+  Flow::~Flow
+  Flow::~Flow
+  GenericHash::cleanup
+  ```
+modified: '2023-08-12T14:00:58.559035Z'
+published: '2023-08-12T14:00:58.558753Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=61361
+affected:
+- package:
+    name: ntopng
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/ntopng
+  ranges:
+  - type: GIT
+    repo: https://github.com/ntop/ntopng.git
+    events:
+    - introduced: f6296c76ea3c51ce2e602b3280c3df431a1820cd
+    - fixed: 139ac17a0c927224a87c4772bc5abaca1931e608
+  ecosystem_specific:
+    severity: null
+  versions: []
+schema_version: 1.4.0
