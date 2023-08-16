@@ -1,0 +1,32 @@
+id: OSV-2023-405
+summary: Heap-buffer-overflow in _lou_stringHash
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=59057
+
+  ```
+  Crash type: Heap-buffer-overflow READ 2
+  Crash state:
+  _lou_stringHash
+  _lou_translate
+  lou_translateString
+  ```
+modified: '2023-05-19T14:00:18.190762Z'
+published: '2023-05-19T14:00:18.190498Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=59057
+affected:
+- package:
+    name: liblouis
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/liblouis
+  ranges:
+  - type: GIT
+    repo: https://github.com/liblouis/liblouis
+    events:
+    - introduced: bd2f5364d74bdc86af7a13fc690138c453c321de
+  versions:
+  - v3.26.0
+  ecosystem_specific:
+    severity: MEDIUM
+schema_version: 1.4.0

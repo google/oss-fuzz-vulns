@@ -1,0 +1,31 @@
+id: OSV-2023-404
+summary: Invalid-free in Assimp::FBX::Scope::Scope
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=59056
+
+  ```
+  Crash type: Invalid-free
+  Crash state:
+  Assimp::FBX::Scope::Scope
+  Assimp::FBX::Element::Element
+  Assimp::FBX::Scope::Scope
+  ```
+modified: '2023-05-19T14:00:12.710610Z'
+published: '2023-05-19T14:00:12.710256Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=59056
+affected:
+- package:
+    name: assimp
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/assimp
+  ranges:
+  - type: GIT
+    repo: https://github.com/assimp/assimp.git
+    events:
+    - introduced: 94905d445fe658d69e2abc6cd4a740bf29ecb249
+  ecosystem_specific:
+    severity: null
+  versions: []
+schema_version: 1.4.0
