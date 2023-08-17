@@ -10,7 +10,7 @@ details: |
   cli_ole2_extract
   cli_scanole2
   ```
-modified: '2023-08-04T14:00:55.352436Z'
+modified: '2023-08-17T14:21:56.675468Z'
 published: '2023-08-04T14:00:55.352181Z'
 references:
 - type: REPORT
@@ -33,6 +33,8 @@ affected:
   - clamav-1.0.1
   - clamav-1.1.0
   - clamav-1.1.0-rc
+  - clamav-1.0.2
+  - clamav-1.1.1
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.4.0
