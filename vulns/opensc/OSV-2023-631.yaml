@@ -1,0 +1,30 @@
+id: OSV-2023-631
+summary: Heap-buffer-overflow in test_verify
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=60971
+
+  ```
+  Crash type: Heap-buffer-overflow READ {*}
+  Crash state:
+  test_verify
+  fuzz_pkcs11.c
+  ```
+modified: '2023-08-01T14:02:11.454673Z'
+published: '2023-08-01T14:02:11.454420Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=60971
+affected:
+- package:
+    name: opensc
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/opensc
+  ranges:
+  - type: GIT
+    repo: https://github.com/OpenSC/OpenSC
+    events:
+    - introduced: d449feeda6b3d8ec27a184417d9b5d1ba73df6d7
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.4.0

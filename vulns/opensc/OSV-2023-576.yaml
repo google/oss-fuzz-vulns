@@ -1,0 +1,31 @@
+id: OSV-2023-576
+summary: Heap-double-free in sc_pkcs15_free_object_content
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=60616
+
+  ```
+  Crash type: Heap-double-free
+  Crash state:
+  sc_pkcs15_free_object_content
+  sc_pkcs15_free_object
+  fuzz_pkcs15_decode.c
+  ```
+modified: '2023-07-16T14:02:13.226071Z'
+published: '2023-07-16T14:02:13.225841Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=60616
+affected:
+- package:
+    name: opensc
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/opensc
+  ranges:
+  - type: GIT
+    repo: https://github.com/OpenSC/OpenSC
+    events:
+    - introduced: 88880db0307a07e33cf2e1592bb029e9c170dfea
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
+schema_version: 1.4.0
