@@ -10,7 +10,7 @@ details: |
   java.base/java.util.BitSet.ensureCapacity
   java.base/java.util.BitSet.expandTo
   ```
-modified: '2023-08-17T14:00:59.717857Z'
+modified: '2023-08-19T14:26:28.816770Z'
 published: '2023-08-17T14:00:59.717535Z'
 references:
 - type: REPORT
@@ -26,6 +26,8 @@ affected:
     events:
     - introduced: 18b56bd0024afeb1d9c04bd58af2711742dbdf67
     - fixed: fb8183332bc5fa74a8eb36105be1026ae7aa0a8e
+    - introduced: 14e0947cdb9bd9150584e9721b46353e29ba0ba0
+    - fixed: db02a1ee780a3d8ad775fdb0c8dd5efbd0d9b8ab
   ecosystem_specific:
     severity: LOW
   database_specific:
