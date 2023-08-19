@@ -1,0 +1,34 @@
+id: OSV-2023-705
+summary: Security exception in org.apache.lucene.util.automaton.RegExp.toAutomaton
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=61493
+
+  ```
+  Crash type: Security exception
+  Crash state:
+  org.apache.lucene.util.automaton.RegExp.toAutomaton
+  java.base/java.util.BitSet.ensureCapacity
+  java.base/java.util.BitSet.expandTo
+  ```
+modified: '2023-08-17T14:00:59.717857Z'
+published: '2023-08-17T14:00:59.717535Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=61493
+affected:
+- package:
+    name: lucene
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/lucene
+  ranges:
+  - type: GIT
+    repo: https://github.com/apache/lucene.git
+    events:
+    - introduced: 18b56bd0024afeb1d9c04bd58af2711742dbdf67
+    - fixed: fb8183332bc5fa74a8eb36105be1026ae7aa0a8e
+  ecosystem_specific:
+    severity: LOW
+  database_specific:
+    fixed_range: 71f6f59a75392e1209d32362a9979ed47898c511:fb8183332bc5fa74a8eb36105be1026ae7aa0a8e
+  versions: []
+schema_version: 1.4.0
