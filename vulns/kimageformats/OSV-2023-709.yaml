@@ -9,7 +9,7 @@ details: |
   QOIHandler::read
   kimgio_fuzzer.cc
   ```
-modified: '2023-08-18T14:02:53.146531Z'
+modified: '2023-08-20T14:15:45.069773Z'
 published: '2023-08-18T14:02:53.146275Z'
 references:
 - type: REPORT
@@ -24,9 +24,13 @@ affected:
     repo: https://invent.kde.org/frameworks/kimageformats.git
     events:
     - introduced: dd4576a4729cc9c44d0a7f10cad02331402afd45
+    - fixed: 274f30e00840cfe0d4476f3b7959cf847a4f9104
+    - introduced: 4c3ade04dd1ded3999426e6e913b9bbd46aca7c0
+    - fixed: 6254529d2d427a5558deb15efb61929dab93e3f4
   ecosystem_specific:
     severity: MEDIUM
   database_specific:
     introduced_range: 94385407351c08698e10cecc227b49878b9540a3:4348a0973382b68de4dc1fa146596d67467d1518
+    fixed_range: 4348a0973382b68de4dc1fa146596d67467d1518:274f30e00840cfe0d4476f3b7959cf847a4f9104
   versions: []
 schema_version: 1.4.0
