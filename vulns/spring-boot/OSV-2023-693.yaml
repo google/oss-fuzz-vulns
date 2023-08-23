@@ -1,0 +1,33 @@
+id: OSV-2023-693
+summary: Security exception in org.json.JSONArray.writeTo
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=61399
+
+  ```
+  Crash type: Security exception
+  Crash state:
+  org.json.JSONArray.writeTo
+  org.json.JSONStringer.value
+  org.json.JSONStringer.peek
+  ```
+modified: '2023-08-13T14:00:24.146368Z'
+published: '2023-08-13T14:00:24.146135Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=61399
+affected:
+- package:
+    name: spring-boot
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/spring-boot
+  ranges:
+  - type: GIT
+    repo: https://github.com/spring-projects/spring-boot
+    events:
+    - introduced: a0de59c209a54c4e1dfa24f7a03be32597d97219
+  ecosystem_specific:
+    severity: LOW
+  database_specific:
+    introduced_range: 12537c717016ed352be4fcc5cf95f18051aee498:0e67fbc855b714253e0b1fa7115d93f76c5618e3
+  versions: []
+schema_version: 1.4.0

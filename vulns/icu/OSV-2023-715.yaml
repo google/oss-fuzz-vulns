@@ -1,0 +1,31 @@
+id: OSV-2023-715
+summary: Stack-use-after-scope in ulocimp_addLikelySubtags_74
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=61582
+
+  ```
+  Crash type: Stack-use-after-scope READ 3
+  Crash state:
+  ulocimp_addLikelySubtags_74
+  uloc_isRightToLeft_74
+  uloc_is_right_to_left_fuzzer.cpp
+  ```
+modified: '2023-08-21T14:00:19.885779Z'
+published: '2023-08-21T14:00:19.885505Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=61582
+affected:
+- package:
+    name: icu
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/icu
+  ranges:
+  - type: GIT
+    repo: https://github.com/unicode-org/icu.git
+    events:
+    - introduced: ffc449de6243b17857b5d67854bdec723bf06f21
+  ecosystem_specific:
+    severity: null
+  versions: []
+schema_version: 1.4.0

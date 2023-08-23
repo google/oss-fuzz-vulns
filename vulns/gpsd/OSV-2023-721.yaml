@@ -1,0 +1,32 @@
+id: OSV-2023-721
+summary: Stack-buffer-overflow in crc24q_check
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=61617
+
+  ```
+  Crash type: Stack-buffer-overflow READ 1
+  Crash state:
+  crc24q_check
+  packet_parse
+  FuzzPacket.c
+  ```
+modified: '2023-08-21T14:02:51.272060Z'
+published: '2023-08-21T14:02:51.271773Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=61617
+affected:
+- package:
+    name: gpsd
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/gpsd
+  ranges:
+  - type: GIT
+    repo: https://gitlab.com/gpsd/gpsd
+    events:
+    - introduced: 97733d06e933132de3267b0c22aeb5dc0546e640
+    - fixed: 964806dd6dac70232ef1e39f31034b12e4517013
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.4.0
