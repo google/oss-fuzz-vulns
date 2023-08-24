@@ -1,0 +1,32 @@
+id: OSV-2023-726
+summary: Heap-buffer-overflow in Flow::dissectNetBIOS
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=61648
+
+  ```
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  Flow::dissectNetBIOS
+  NetworkInterface::processPacket
+  NetworkInterface::dissectPacket
+  ```
+modified: '2023-08-23T14:02:47.143744Z'
+published: '2023-08-23T14:02:47.143481Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=61648
+affected:
+- package:
+    name: ntopng
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/ntopng
+  ranges:
+  - type: GIT
+    repo: https://github.com/ntop/ntopng.git
+    events:
+    - introduced: ab73418e29e000c54acb2a71d9f3bb57a779e792
+    - fixed: 1b58d00fecf24f42ec6e771496076ac1d752baaa
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.4.0
