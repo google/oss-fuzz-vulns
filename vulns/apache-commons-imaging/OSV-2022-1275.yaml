@@ -1,0 +1,33 @@
+id: OSV-2022-1275
+summary: Security exception in java.desktop/java.awt.image.DataBufferInt.<init>
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=59354
+
+  ```
+  Crash type: Security exception
+  Crash state:
+  java.desktop/java.awt.image.DataBufferInt.<init>
+  java.desktop/java.awt.image.Raster.createPackedRaster
+  java.desktop/java.awt.image.DirectColorModel.createCompatibleWritableRaster
+  ```
+modified: '2023-05-28T14:00:35.487711Z'
+published: '2023-05-28T14:00:35.487433Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=59354
+affected:
+- package:
+    name: apache-commons-imaging
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/apache-commons-imaging
+  ranges:
+  - type: GIT
+    repo: https://gitbox.apache.org/repos/asf/commons-imaging.git
+    events:
+    - introduced: b5026706fa6811353a8b53ece95d89f349b81bd1
+  ecosystem_specific:
+    severity: LOW
+  database_specific:
+    introduced_range: ee635db6e144fd5c4c5be293338c9fc5abe6cc96:01189e72cd64abea8664953550ea75c5a2b94d3f
+  versions: []
+schema_version: 1.4.0
