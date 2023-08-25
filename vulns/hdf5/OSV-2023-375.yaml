@@ -10,7 +10,7 @@ details: |
   H5O__alloc_chunk
   H5O__alloc
   ```
-modified: '2023-08-13T14:24:07.304142Z'
+modified: '2023-08-25T14:31:31.759698Z'
 published: '2023-05-07T14:00:16.015866Z'
 references:
 - type: REPORT
@@ -28,16 +28,16 @@ affected:
     - introduced: 04f0647727677d716a3c1c772d35a660a8ea0dc5
     - introduced: 5a0ec52099cf02224a4066b158bcf1a34829db20
     - introduced: f527239564fc27a6e666ce734b88e4ab18765efc
+    - fixed: 0b2e11d5c02303bcc3e762bb843a1d056258eac8
   versions:
   - 1.14.1
   - hdf5-1_10_10
   - hdf5-1_14_1
   - hdf5-1_14_1-2
-  - snapshot
+  - hdf5-1_14_2
   - snapshot-1.10
   - snapshot-1.12
   - snapshot-1.14
-  - hdf5-1_14_2
   ecosystem_specific:
     severity: HIGH
 schema_version: 1.4.0
