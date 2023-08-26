@@ -1,0 +1,32 @@
+id: OSV-2023-738
+summary: Use-of-uninitialized-value in _PyFunction_FromConstructor
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=61721
+
+  ```
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  _PyFunction_FromConstructor
+  PyEval_EvalCode
+  exec_code_in_module
+  ```
+modified: '2023-08-25T14:00:42.118579Z'
+published: '2023-08-25T14:00:42.118304Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=61721
+affected:
+- package:
+    name: cpython3
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/cpython3
+  ranges:
+  - type: GIT
+    repo: https://github.com/python/cpython.git
+    events:
+    - introduced: b8f96b5eda5b376b05a9dbf046208388249e30a6
+    - fixed: 3107b453bcceb0e2d2590fef3612859f2f802d72
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.4.0
