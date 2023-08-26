@@ -10,7 +10,7 @@ details: |
   dissect_form_urlencoded
   call_dissector_work
   ```
-modified: '2022-09-09T00:01:54.157986Z'
+modified: '2023-08-26T15:36:51.381884Z'
 published: '2022-09-09T00:01:54.157712Z'
 references:
 - type: REPORT
@@ -25,7 +25,9 @@ affected:
     repo: https://gitlab.com/wireshark/wireshark.git
     events:
     - introduced: 248ff020e7ea17785cc9451f6d24ad61c4310d1f
+  versions:
+  - v4.1.0
+  - v4.1.1rc0
   ecosystem_specific:
     severity: MEDIUM
-  versions: []
 schema_version: 1.2.0
