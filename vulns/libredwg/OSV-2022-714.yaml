@@ -10,7 +10,7 @@ details: |
   dwg_dynapi_header_set_value
   json_HEADER
   ```
-modified: '2023-08-27T14:20:14.850013Z'
+modified: '2023-08-28T14:12:33.558050Z'
 published: '2022-08-15T00:00:47.794062Z'
 references:
 - type: REPORT
@@ -360,6 +360,11 @@ affected:
   - 0.12.5.6229
   - 0.12.5.6231
   - 0.12.5.6236
+  - 0.12.5.6241
+  - 0.12.5.6243
+  - 0.12.5.6245
+  - 0.12.5.6248
+  - 0.12.5.6253
   ecosystem_specific:
     severity: HIGH
 schema_version: 1.3.0
