@@ -1,0 +1,33 @@
+id: OSV-2023-750
+summary: Security exception in org.antlr.v4.runtime.atn.PredictionContext.fromRuleContext
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=61786
+
+  ```
+  Crash type: Security exception
+  Crash state:
+  org.antlr.v4.runtime.atn.PredictionContext.fromRuleContext
+  java.base/jdk.internal.misc.Unsafe.weakCompareAndSetInt
+  java.base/jdk.internal.misc.Unsafe.getAndAddInt
+  ```
+modified: '2023-08-27T14:01:22.181891Z'
+published: '2023-08-27T14:01:22.181636Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=61786
+affected:
+- package:
+    name: checkstyle
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/checkstyle
+  ranges:
+  - type: GIT
+    repo: https://github.com/checkstyle/checkstyle
+    events:
+    - introduced: 93837326e2eed69abd1b78a6099be8cae2552438
+  ecosystem_specific:
+    severity: LOW
+  database_specific:
+    introduced_range: 722c528c36d51c5bbbabad8c2b19e57d31805d52:98e74d072a8c20ab4cf9f0fdcb35c3cbdb4e7aaf
+  versions: []
+schema_version: 1.4.0
