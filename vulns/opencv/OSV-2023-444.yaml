@@ -1,0 +1,34 @@
+id: OSV-2023-444
+summary: Heap-buffer-overflow in opj_jp2_apply_pclr
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=59450
+
+  ```
+  Crash type: Heap-buffer-overflow READ 4
+  Crash state:
+  opj_jp2_apply_pclr
+  opj_jp2_decode
+  cv::detail::Jpeg2KOpjDecoderBase::readData
+  ```
+modified: '2023-05-31T14:02:00.753756Z'
+published: '2023-05-31T14:02:00.753503Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=59450
+affected:
+- package:
+    name: opencv
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/opencv
+  ranges:
+  - type: GIT
+    repo: https://github.com/opencv/opencv.git
+    events:
+    - introduced: dbd1811d53ac9193e593d8f2dd01f4b128851415
+  versions:
+  - 4.8.0
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: 67e0ed93a938714e14d048e84a227465a98d2706:6ad77b23193bdf7e40db83e6077789284ac08781
+schema_version: 1.4.0
