@@ -8,7 +8,7 @@ details: |
   cli_strlcat
   yara_yyparse
   yr_lex_parse_rules_file
-modified: '2023-08-17T14:19:47.824461Z'
+modified: '2023-08-29T14:19:27.110071Z'
 published: '2022-01-27T00:02:12.465969Z'
 references:
 - type: REPORT
@@ -41,6 +41,9 @@ affected:
   - clamav-1.2.0-rc
   - clamav-1.0.2
   - clamav-1.1.1
+  - clamav-1.0.3
+  - clamav-1.1.2
+  - clamav-1.2.0
   ecosystem_specific:
     severity: HIGH
   database_specific:
