@@ -10,7 +10,7 @@ details: |
   packet_authagent_open
   _libssh2_packet_add
   ```
-modified: '2023-04-25T14:01:02.981158Z'
+modified: '2023-08-30T14:13:26.448798Z'
 published: '2023-04-25T14:01:02.980876Z'
 references:
 - type: REPORT
@@ -25,6 +25,7 @@ affected:
     repo: https://github.com/libssh2/libssh2.git
     events:
     - introduced: bc4e619e76071393e466c29220fc4ef5764c2820
+    - fixed: 88a960a86b9ffbabd17a4bbcf767e26514c4678e
   versions:
   - libssh2-1.11.0
   ecosystem_specific:
