@@ -10,7 +10,7 @@ details: |
   APFSJObject::APFSJObject
   APFSJObject::APFSJObject
   ```
-modified: '2022-10-28T00:02:37.921953Z'
+modified: '2023-08-30T14:11:46.968669Z'
 published: '2022-10-28T00:02:37.921684Z'
 references:
 - type: REPORT
@@ -27,6 +27,7 @@ affected:
     - introduced: 58c8b602d5134ab69be2826410005c2894e45a73
   versions:
   - sleuthkit-4.12.0
+  - sleuthkit-4.12.1
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.3.0
