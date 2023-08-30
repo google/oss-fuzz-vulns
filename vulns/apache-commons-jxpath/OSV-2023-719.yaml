@@ -25,6 +25,7 @@ affected:
     repo: https://github.com/apache/commons-jxpath.git
     events:
     - introduced: f45d6c854d4250a099ee51d053826f3b5693d26d
+    - fixed: 98ead4e5763880cda8403f2fd123ed951333a80d
   ecosystem_specific:
     severity: LOW
   database_specific:
