@@ -1,0 +1,33 @@
+id: OSV-2023-719
+summary: Security exception in org.apache.commons.jxpath.ri.compiler.CoreFunction.toString
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=61597
+
+  ```
+  Crash type: Security exception
+  Crash state:
+  org.apache.commons.jxpath.ri.compiler.CoreFunction.toString
+  java.base/java.lang.String.valueOf
+  java.base/java.lang.StringBuilder.append
+  ```
+modified: '2023-08-21T14:02:38.497866Z'
+published: '2023-08-21T14:02:38.497581Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=61597
+affected:
+- package:
+    name: apache-commons-jxpath
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/apache-commons-jxpath
+  ranges:
+  - type: GIT
+    repo: https://github.com/apache/commons-jxpath.git
+    events:
+    - introduced: f45d6c854d4250a099ee51d053826f3b5693d26d
+  ecosystem_specific:
+    severity: LOW
+  database_specific:
+    introduced_range: 25e23e53f67fd8046c1401520984338edde60964:6846eeb87d035037a24e81828689e21992827b49
+  versions: []
+schema_version: 1.4.0
