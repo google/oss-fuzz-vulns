@@ -10,7 +10,7 @@ details: |
   icu_64::UCharsTrie::nextImpl
   icu_64::UCharsTrie::next
   ```
-modified: '2023-09-01T00:03:15.977440Z'
+modified: '2023-09-01T00:43:30.051617Z'
 published: '2020-07-14T22:13:50.019093Z'
 references:
 - type: REPORT
@@ -25,6 +25,43 @@ affected:
     events:
     - introduced: 6e5755a2a833bc64852eae12967d0a54d7adf629
     - fixed: 4833cc89b2fae2e8863b46bf1dc785964847e882
-  versions: []
+  versions:
+  - cldr/2020-09-22
+  - cldr/2020-10-21
+  - cldr/2021-02-17
+  - cldr/2021-03-09
+  - cldr/2021-06-15
+  - cldr/2021-08-11
+  - cldr/2021-08-25
+  - cldr/2021-09-15
+  - cldr/2021-09-29
+  - cldr/2021-10-19
+  - cldr/2021-10-25
+  - cldr/2022-02-08
+  - cldr/2022-02-22
+  - cldr/2022-02-23
+  - cldr/2022-03-30
+  - cldr/2022-03-31
+  - icu4x/2022-06-30/71.x
+  - icu4x/2022-07-18/71.x
+  - icu4x/2022-07-25/71.x
+  - icu4x/2022-08-17/71.x
+  - release-65-1
+  - release-65-rc
+  - release-66-1
+  - release-66-preview
+  - release-66-rc
+  - release-67-1
+  - release-67-rc
+  - release-68-1
+  - release-68-2
+  - release-68-alpha
+  - release-68-rc
+  - release-69-1
+  - release-69-rc
+  - release-70-1
+  - release-70-rc
+  - release-71-1
+  - release-71-rc
   ecosystem_specific:
     severity: MEDIUM
