@@ -1,0 +1,32 @@
+id: OSV-2023-453
+summary: UNKNOWN READ in ih264e_cabac_put_byte
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=59543
+
+  ```
+  Crash type: UNKNOWN READ
+  Crash state:
+  ih264e_cabac_put_byte
+  ih264e_cabac_encode_bin
+  ih264e_write_pslice_mb_cabac
+  ```
+modified: '2023-06-04T14:00:11.680611Z'
+published: '2023-06-04T14:00:11.680354Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=59543
+affected:
+- package:
+    name: libavc
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libavc
+  ranges:
+  - type: GIT
+    repo: https://github.com/ittiam-systems/libavc.git
+    events:
+    - introduced: bbf593f21619925ee6a4c9935428ed47dc4d4a48
+  versions:
+  - v1.2.0
+  ecosystem_specific:
+    severity: MEDIUM
+schema_version: 1.4.0
