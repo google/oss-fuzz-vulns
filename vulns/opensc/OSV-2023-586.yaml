@@ -1,0 +1,32 @@
+id: OSV-2023-586
+summary: Heap-buffer-overflow in setcos_create_key
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=60672
+
+  ```
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  setcos_create_key
+  sc_pkcs15init_generate_key
+  do_generate_key
+  ```
+modified: '2023-07-19T14:00:35.841409Z'
+published: '2023-07-19T14:00:35.841154Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=60672
+affected:
+- package:
+    name: opensc
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/opensc
+  ranges:
+  - type: GIT
+    repo: https://github.com/OpenSC/OpenSC
+    events:
+    - introduced: 22f73781706a293d10ebe982ece863a73fd62bf3
+    - fixed: 440ca666eff10cc7011901252d20f3fc4ea23651
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.4.0

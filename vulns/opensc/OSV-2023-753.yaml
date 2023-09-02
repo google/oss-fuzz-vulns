@@ -1,0 +1,35 @@
+id: OSV-2023-753
+summary: Stack-buffer-overflow in iasecc_crt_parse
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=61797
+
+  ```
+  Crash type: Stack-buffer-overflow READ 1
+  Crash state:
+  iasecc_crt_parse
+  iasecc_se_parse
+  iasecc_se_get_info
+  ```
+modified: '2023-08-28T14:00:08.789089Z'
+published: '2023-08-28T14:00:08.788843Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=61797
+affected:
+- package:
+    name: opensc
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/opensc
+  ranges:
+  - type: GIT
+    repo: https://github.com/OpenSC/OpenSC
+    events:
+    - introduced: ac8d87751607fcc8669bd63891ecaad1a466f718
+    - fixed: 2a4921ab23fd0853f327517636c50de947548161
+  versions:
+  - 0.23.0
+  - 0.23.0-rc1
+  - 0.23.0-rc2
+  ecosystem_specific:
+    severity: MEDIUM
+schema_version: 1.4.0

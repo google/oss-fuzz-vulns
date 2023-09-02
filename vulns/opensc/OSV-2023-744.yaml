@@ -1,0 +1,32 @@
+id: OSV-2023-744
+summary: Stack-buffer-overflow in sc_color_fprintf_va
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=61750
+
+  ```
+  Crash type: Stack-buffer-overflow READ {*}
+  Crash state:
+  sc_color_fprintf_va
+  sc_do_log_va
+  sc_do_log
+  ```
+modified: '2023-08-26T14:02:46.114892Z'
+published: '2023-08-26T14:02:46.114617Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=61750
+affected:
+- package:
+    name: opensc
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/opensc
+  ranges:
+  - type: GIT
+    repo: https://github.com/OpenSC/OpenSC
+    events:
+    - introduced: 37d9873be6746439cb791079b36236c757afa555
+    - fixed: fa8ad362852dbefad5b6796c32f2a33859b8a8e0
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.4.0

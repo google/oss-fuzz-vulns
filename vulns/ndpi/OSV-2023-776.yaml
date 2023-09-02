@@ -1,0 +1,32 @@
+id: OSV-2023-776
+summary: Heap-buffer-overflow in ndpi_domain_classify_contains
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=61882
+
+  ```
+  Crash type: Heap-buffer-overflow READ 2
+  Crash state:
+  ndpi_domain_classify_contains
+  ndpi_get_custom_category_match
+  ndpi_match_host_subprotocol
+  ```
+modified: '2023-08-31T14:01:17.285839Z'
+published: '2023-08-31T14:01:17.285452Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=61882
+affected:
+- package:
+    name: ndpi
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/ndpi
+  ranges:
+  - type: GIT
+    repo: https://github.com/ntop/nDPI.git
+    events:
+    - introduced: 36abf06c6f59b66bde48e7b3028b4823ecc6ed85
+    - fixed: 19381f330ae735d361d9e765148be5e14478256d
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.4.0
