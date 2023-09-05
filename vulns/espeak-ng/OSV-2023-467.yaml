@@ -1,0 +1,33 @@
+id: OSV-2023-467
+summary: Stack-buffer-overflow in SetPitchGradient
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=59636
+
+  ```
+  Crash type: Stack-buffer-overflow WRITE 1
+  Crash state:
+  SetPitchGradient
+  calc_pitches
+  CalcPitches
+  ```
+modified: '2023-06-08T14:01:12.964880Z'
+published: '2023-06-08T14:01:12.964629Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=59636
+affected:
+- package:
+    name: espeak-ng
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/espeak-ng
+  ranges:
+  - type: GIT
+    repo: https://github.com/espeak-ng/espeak-ng
+    events:
+    - introduced: 26a675543c63832e37ec780a6c30e49707df1db4
+    - introduced: 7f1222c6ad6a3652be35afbbc980a382076ff0a9
+  versions:
+  - '1.51'
+  ecosystem_specific:
+    severity: HIGH
+schema_version: 1.4.0

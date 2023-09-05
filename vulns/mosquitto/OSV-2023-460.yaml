@@ -1,0 +1,31 @@
+id: OSV-2023-460
+summary: Segv on unknown address in config__bridge_cleanup
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=59604
+
+  ```
+  Crash type: Segv on unknown address
+  Crash state:
+  config__bridge_cleanup
+  config__cleanup
+  mosquitto_fuzz_main
+  ```
+modified: '2023-06-06T14:00:25.984144Z'
+published: '2023-06-06T14:00:25.983874Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=59604
+affected:
+- package:
+    name: mosquitto
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/mosquitto
+  ranges:
+  - type: GIT
+    repo: https://github.com/eclipse/mosquitto
+    events:
+    - introduced: ca04ef32f562209dea0a2a0b6658cefcf1f018fb
+  ecosystem_specific:
+    severity: null
+  versions: []
+schema_version: 1.4.0
