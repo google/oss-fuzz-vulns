@@ -1,0 +1,43 @@
+id: OSV-2023-471
+summary: Heap-buffer-overflow in H5FS__sinfo_serialize_node_cb
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=59695
+
+  ```
+  Crash type: Heap-buffer-overflow WRITE 1
+  Crash state:
+  H5FS__sinfo_serialize_node_cb
+  H5SL_iterate
+  H5FS__cache_sinfo_serialize
+  ```
+modified: '2023-06-09T14:00:54.620447Z'
+published: '2023-06-09T14:00:54.620201Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=59695
+affected:
+- package:
+    name: hdf5
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/hdf5
+  ranges:
+  - type: GIT
+    repo: https://github.com/HDFGroup/hdf5
+    events:
+    - introduced: 966454aac1231da7209ef81c11055d3312181f99
+    - introduced: 04f0647727677d716a3c1c772d35a660a8ea0dc5
+    - introduced: 5a0ec52099cf02224a4066b158bcf1a34829db20
+    - introduced: f527239564fc27a6e666ce734b88e4ab18765efc
+  versions:
+  - 1.14.1
+  - hdf5-1_10_10
+  - hdf5-1_14_1
+  - hdf5-1_14_1-2
+  - hdf5-1_14_2
+  - snapshot
+  - snapshot-1.10
+  - snapshot-1.12
+  - snapshot-1.14
+  ecosystem_specific:
+    severity: HIGH
+schema_version: 1.4.0

@@ -1,0 +1,32 @@
+id: OSV-2023-739
+summary: UNKNOWN READ in OT::glyph_variations_t::create_from_glyphs_var_data
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=61724
+
+  ```
+  Crash type: UNKNOWN READ
+  Crash state:
+  OT::glyph_variations_t::create_from_glyphs_var_data
+  OT::gvar::decompile_glyph_variations
+  OT::gvar::instantiate
+  ```
+modified: '2023-08-25T14:02:18.323527Z'
+published: '2023-08-25T14:02:18.323225Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=61724
+affected:
+- package:
+    name: harfbuzz
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/harfbuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/harfbuzz/harfbuzz.git
+    events:
+    - introduced: 5a4694b6934f9e3ca3dc89cc905b4351920085b6
+    - fixed: fd3eb2c6723c3ce241011f1d3429e48c3226af1c
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.4.0

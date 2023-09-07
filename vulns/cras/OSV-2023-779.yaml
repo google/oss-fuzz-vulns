@@ -1,0 +1,34 @@
+id: OSV-2023-779
+summary: Use-of-uninitialized-value in dev_io_capture
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=61919
+
+  ```
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  dev_io_capture
+  dev_io_run
+  audio_io_thread
+  ```
+modified: '2023-09-01T14:02:31.085002Z'
+published: '2023-09-01T14:02:31.084726Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=61919
+affected:
+- package:
+    name: cras
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/cras
+  ranges:
+  - type: GIT
+    repo: https://chromium.googlesource.com/chromiumos/third_party/adhd
+    events:
+    - introduced: 3bb2705695cea964fd475bde1601fa3cd84a49ef
+    - fixed: fb3bd22e3e3d95cd32b3e3938537604aa443dc8b
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: a2a7ca323ee6cb66a7f26a2bf2c522c42a8dae89:4b790853354443e8def516bc8bc166ecf259bfed
+  versions: []
+schema_version: 1.4.0
