@@ -10,7 +10,7 @@ details: |
   wabt::BinaryReaderObjdump::EndInitExpr
   wabt::BinaryReaderObjdump::EndGlobalInitExpr
   ```
-modified: '2023-05-08T14:02:07.619963Z'
+modified: '2023-09-08T14:16:45.211921Z'
 published: '2023-05-08T14:02:07.619674Z'
 references:
 - type: REPORT
@@ -25,6 +25,7 @@ affected:
     repo: https://github.com/WebAssembly/wabt
     events:
     - introduced: 65ce49a6d307b101aa058da8269e1ccae43feeb9
+    - fixed: ab05e50ec44506dc81220a21fb8f5e8d048772e0
   versions:
   - 1.0.30
   - 1.0.31
@@ -32,4 +33,6 @@ affected:
   - 1.0.33
   ecosystem_specific:
     severity: MEDIUM
+  database_specific:
+    fixed_range: 9008bc8080a4adc703643ea67321dd7b6075fe76:ab05e50ec44506dc81220a21fb8f5e8d048772e0
 schema_version: 1.4.0
