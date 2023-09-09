@@ -1,0 +1,25 @@
+id: OSV-2023-764
+summary: Heap-buffer-overflow in pim_pim_packet
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=61854
+
+  ```
+  Crash type: Heap-buffer-overflow READ 2
+  Crash state:
+  pim_pim_packet
+  pim_main.c
+  ```
+modified: '2023-08-30T14:00:10.026257Z'
+published: '2023-08-30T14:00:10.025963Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=61854
+affected:
+- package:
+    name: frr
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/frr
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.4.0
