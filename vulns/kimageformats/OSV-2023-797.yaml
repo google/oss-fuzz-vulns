@@ -1,0 +1,35 @@
+id: OSV-2023-797
+summary: Stack-buffer-overflow in QBuffer::readData
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=62075
+
+  ```
+  Crash type: Stack-buffer-overflow WRITE {*}
+  Crash state:
+  QBuffer::readData
+  QIODevicePrivate::read
+  QDataStream::readRawData
+  ```
+modified: '2023-09-06T14:02:36.542018Z'
+published: '2023-09-06T14:02:36.541753Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=62075
+affected:
+- package:
+    name: kimageformats
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/kimageformats
+  ranges:
+  - type: GIT
+    repo: https://invent.kde.org/frameworks/kimageformats.git
+    events:
+    - introduced: bcec942cc92e0968c724a2c1f92b4cd048bf8fa7
+    - fixed: 723f72930b66f5c188799de67ef8c953c0135880
+  versions:
+  - v5.110.0-rc1
+  ecosystem_specific:
+    severity: HIGH
+  database_specific:
+    introduced_range: 66cb8c91d085dab74ecda971b983f1a4402143fd:b2b677b8a5e4c3cf34790eb990218217bf867c18
+schema_version: 1.4.0
