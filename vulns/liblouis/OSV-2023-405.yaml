@@ -10,7 +10,7 @@ details: |
   _lou_translate
   lou_translateString
   ```
-modified: '2023-05-19T14:00:18.190762Z'
+modified: '2023-09-13T14:18:39.778745Z'
 published: '2023-05-19T14:00:18.190498Z'
 references:
 - type: REPORT
@@ -27,6 +27,7 @@ affected:
     - introduced: bd2f5364d74bdc86af7a13fc690138c453c321de
   versions:
   - v3.26.0
+  - v3.27.0
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.4.0
