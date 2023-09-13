@@ -1,0 +1,44 @@
+id: OSV-2022-1276
+summary: Stack-buffer-overflow in ntlm_phase_3
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=59818
+
+  ```
+  Crash type: Stack-buffer-overflow WRITE 1
+  Crash state:
+  ntlm_phase_3
+  establish_http_proxy_passthru
+  fuzz_proxy.c
+  ```
+modified: '2023-06-15T14:01:52.595042Z'
+published: '2023-06-15T14:01:52.594793Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=59818
+affected:
+- package:
+    name: openvpn
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/openvpn
+  ranges:
+  - type: GIT
+    repo: https://github.com/OpenVPN/openvpn
+    events:
+    - introduced: c768ee96b49a3df459f584d6050802312815deec
+  versions:
+  - contains
+  - v2.6.0
+  - v2.6.1
+  - v2.6.2
+  - v2.6.3
+  - v2.6.4
+  - v2.6.5
+  - v2.6.6
+  - v2.6_beta1
+  - v2.6_beta2
+  - v2.6_branched
+  - v2.6_rc1
+  - v2.6_rc2
+  ecosystem_specific:
+    severity: HIGH
+schema_version: 1.4.0
