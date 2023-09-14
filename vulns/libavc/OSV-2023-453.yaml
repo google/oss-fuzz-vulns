@@ -10,7 +10,7 @@ details: |
   ih264e_cabac_encode_bin
   ih264e_write_pslice_mb_cabac
   ```
-modified: '2023-06-04T14:00:11.680611Z'
+modified: '2023-09-14T14:09:18.630220Z'
 published: '2023-06-04T14:00:11.680354Z'
 references:
 - type: REPORT
@@ -25,6 +25,7 @@ affected:
     repo: https://github.com/ittiam-systems/libavc.git
     events:
     - introduced: bbf593f21619925ee6a4c9935428ed47dc4d4a48
+    - fixed: 30858f49ad57b9a888e6768b0ae1558e5f895176
   versions:
   - v1.2.0
   ecosystem_specific:
