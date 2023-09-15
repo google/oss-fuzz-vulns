@@ -1,0 +1,34 @@
+id: OSV-2023-793
+summary: Security exception in org.apache.lucene.util.BytesRefBuilder.<init>
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=62034
+
+  ```
+  Crash type: Security exception
+  Crash state:
+  org.apache.lucene.util.BytesRefBuilder.<init>
+  org.apache.lucene.analysis.tokenattributes.CharTermAttributeImpl.clone
+  org.apache.lucene.analysis.tokenattributes.PackedTokenAttributeImpl.clone
+  ```
+modified: '2023-09-06T14:00:17.692814Z'
+published: '2023-09-06T14:00:17.692567Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=62034
+affected:
+- package:
+    name: lucene
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/lucene
+  ranges:
+  - type: GIT
+    repo: https://github.com/apache/lucene.git
+    events:
+    - introduced: 5d203f8337cb6a2350c1abe5d83e3e103d060645
+    - fixed: 37a42219fc7e9b2807e69827b1709fe056b7764e
+  ecosystem_specific:
+    severity: LOW
+  database_specific:
+    introduced_range: 223e28ef16acb35cb43c89493855366d171de4f9:8af305892d726c180f03316c73aebf8183c2e481
+  versions: []
+schema_version: 1.4.0

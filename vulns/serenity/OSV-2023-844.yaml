@@ -1,0 +1,31 @@
+id: OSV-2023-844
+summary: Heap-buffer-overflow in Video::VP9::Decoder::create_video_frame
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=62307
+
+  ```
+  Crash type: Heap-buffer-overflow READ {*}
+  Crash state:
+  Video::VP9::Decoder::create_video_frame
+  Video::VP9::Decoder::decode_frame
+  Video::VP9::Decoder::receive_sample
+  ```
+modified: '2023-09-14T14:00:27.712843Z'
+published: '2023-09-14T14:00:27.712533Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=62307
+affected:
+- package:
+    name: serenity
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/serenity
+  ranges:
+  - type: GIT
+    repo: https://github.com/SerenityOS/serenity
+    events:
+    - introduced: bfd6deed1e860ce9516c7ca1613150a2c2c75f75
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.4.0
