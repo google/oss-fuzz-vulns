@@ -10,7 +10,7 @@ details: |
   wabt::ReadBinary
   wabt::ReadBinaryIr
   ```
-modified: '2023-05-13T14:07:00.077600Z'
+modified: '2023-09-16T14:07:19.262111Z'
 published: '2021-09-12T00:01:27.535685Z'
 references:
 - type: REPORT
@@ -24,9 +24,9 @@ affected:
     repo: https://github.com/WebAssembly/wabt
     events:
     - introduced: 5b6070d749a005ad755610c341de813618cc3077
+    - fixed: b22be5a08611c53e8a893bbab049e6f18da6c55a
   versions:
   - 1.0.25
-  - test_tag
   - 1.0.26
   - 1.0.27
   - 1.0.28
@@ -37,3 +37,5 @@ affected:
   - 1.0.33
   ecosystem_specific:
     severity: MEDIUM
+  database_specific:
+    fixed_range: 0869da3eb84616b0dabefc34ea0d5326c1f43888:b22be5a08611c53e8a893bbab049e6f18da6c55a
