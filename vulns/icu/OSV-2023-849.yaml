@@ -1,0 +1,33 @@
+id: OSV-2023-849
+summary: Stack-buffer-overflow in ulocimp_toLanguageTag_74
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=62348
+
+  ```
+  Crash type: Stack-buffer-overflow WRITE 1
+  Crash state:
+  ulocimp_toLanguageTag_74
+  icu_74::Locale::toLanguageTag
+  locale_morph_fuzzer.cpp
+  ```
+modified: '2023-09-15T14:00:28.699782Z'
+published: '2023-09-15T14:00:28.699483Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=62348
+affected:
+- package:
+    name: icu
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/icu
+  ranges:
+  - type: GIT
+    repo: https://github.com/unicode-org/icu.git
+    events:
+    - introduced: aa70ba6746f5a692c14a8a40ec4588669e8efdc7
+    - fixed: 386e9a10db28af620658ca0c635e1d98915f6306
+  versions:
+  - cldr/2023-09-13
+  ecosystem_specific:
+    severity: HIGH
+schema_version: 1.4.0
