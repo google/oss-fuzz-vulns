@@ -10,7 +10,7 @@ details: |
   OT::Layout::GPOS_impl::SinglePosFormat1::sanitize
   hb_sanitize_context_t::return_t OT::Layout::GPOS_impl::PosLookupSubTable::dispat
   ```
-modified: '2023-09-09T14:18:01.287561Z'
+modified: '2023-09-19T14:14:49.297761Z'
 published: '2023-03-03T13:00:38.278632Z'
 references:
 - type: REPORT
@@ -34,6 +34,7 @@ affected:
   - 8.1.0
   - 8.1.1
   - 8.2.0
+  - 8.2.1
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.3.0
