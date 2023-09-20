@@ -1,0 +1,32 @@
+id: OSV-2023-714
+summary: Security exception in org.apache.poi.ddf.EscherContainerRecord.fillFields
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=61562
+
+  ```
+  Crash type: Security exception
+  Crash state:
+  org.apache.poi.ddf.EscherContainerRecord.fillFields
+  java.base/java.util.HashMap.getNode
+  java.base/java.util.HashMap.get
+  ```
+modified: '2023-08-19T14:02:15.130475Z'
+published: '2023-08-19T14:02:15.130219Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=61562
+affected:
+- package:
+    name: apache-poi
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/apache-poi
+  ranges:
+  - type: GIT
+    repo: https://github.com/apache/poi.git
+    events:
+    - introduced: c488cae3f3536253d0bd2c7580f08193dd70b2da
+    - fixed: 88bbfbb3f747e2f18768e928facf11712ab7b4c7
+  ecosystem_specific:
+    severity: LOW
+  versions: []
+schema_version: 1.4.0

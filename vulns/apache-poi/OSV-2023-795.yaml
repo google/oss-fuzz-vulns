@@ -1,0 +1,32 @@
+id: OSV-2023-795
+summary: Security exception in org.apache.poi.hwpf.converter.AbstractWordConverter.processNoteAnchor
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=62068
+
+  ```
+  Crash type: Security exception
+  Crash state:
+  org.apache.poi.hwpf.converter.AbstractWordConverter.processNoteAnchor
+  org.apache.poi.hwpf.converter.AbstractWordConverter.processCharacters
+  org.apache.poi.hwpf.converter.WordToTextConverter.processNote
+  ```
+modified: '2023-09-06T14:00:41.687553Z'
+published: '2023-09-06T14:00:41.687301Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=62068
+affected:
+- package:
+    name: apache-poi
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/apache-poi
+  ranges:
+  - type: GIT
+    repo: https://github.com/apache/poi.git
+    events:
+    - introduced: c488cae3f3536253d0bd2c7580f08193dd70b2da
+    - fixed: 88bbfbb3f747e2f18768e928facf11712ab7b4c7
+  ecosystem_specific:
+    severity: LOW
+  versions: []
+schema_version: 1.4.0
