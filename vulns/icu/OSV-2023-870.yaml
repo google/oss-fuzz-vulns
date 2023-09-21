@@ -1,0 +1,32 @@
+id: OSV-2023-870
+summary: Heap-buffer-overflow in icu_74::SimpleDateFormat::subFormat
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=62432
+
+  ```
+  Crash type: Heap-buffer-overflow READ 4
+  Crash state:
+  icu_74::SimpleDateFormat::subFormat
+  icu_74::SimpleDateFormat::_format
+  icu_74::SimpleDateFormat::format
+  ```
+modified: '2023-09-17T14:01:25.114447Z'
+published: '2023-09-17T14:01:25.114159Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=62432
+affected:
+- package:
+    name: icu
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/icu
+  ranges:
+  - type: GIT
+    repo: https://github.com/unicode-org/icu.git
+    events:
+    - introduced: d082de574ff13873123c55212ad20cf258ffb283
+    - fixed: 990779c4bf935d2741ef6514f4d070231c388d05
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.4.0

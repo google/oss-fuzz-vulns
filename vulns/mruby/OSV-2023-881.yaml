@@ -1,0 +1,32 @@
+id: OSV-2023-881
+summary: Heap-buffer-overflow in read_tmpl
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=62500
+
+  ```
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  read_tmpl
+  mrb_pack_pack
+  mrb_vm_exec
+  ```
+modified: '2023-09-19T14:01:22.611560Z'
+published: '2023-09-19T14:01:22.611246Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=62500
+affected:
+- package:
+    name: mruby
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/mruby
+  ranges:
+  - type: GIT
+    repo: https://github.com/mruby/mruby
+    events:
+    - introduced: 1e1184f62d4b530061c33341f297c017851d28f7
+    - fixed: 393aaada64a7ec77313ef2516fce1c2052b547c8
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.4.0
