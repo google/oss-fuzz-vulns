@@ -10,7 +10,7 @@ details: |
   H5G__ent_to_link
   H5G__stab_lookup_cb
   ```
-modified: '2023-05-26T14:00:26.078269Z'
+modified: '2023-09-22T14:31:03.501851Z'
 published: '2023-05-26T14:00:26.078002Z'
 references:
 - type: REPORT
@@ -38,6 +38,7 @@ affected:
   - snapshot-1.10
   - snapshot-1.12
   - snapshot-1.14
+  - hdf5-1_10_11
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.4.0
