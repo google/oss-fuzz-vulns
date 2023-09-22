@@ -1,0 +1,30 @@
+id: OSV-2023-873
+summary: UNKNOWN WRITE in icu_74::Calendar::set
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=62425
+
+  ```
+  Crash type: UNKNOWN WRITE
+  Crash state:
+  icu_74::Calendar::set
+  calendar_fuzzer.cpp
+  ```
+modified: '2023-09-18T14:00:31.769380Z'
+published: '2023-09-18T14:00:31.769072Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=62425
+affected:
+- package:
+    name: icu
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/icu
+  ranges:
+  - type: GIT
+    repo: https://github.com/unicode-org/icu.git
+    events:
+    - introduced: 84ae742ea01565054a4cccd7fbaed51753ecd80d
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
+schema_version: 1.4.0
