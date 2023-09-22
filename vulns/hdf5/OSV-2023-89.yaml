@@ -10,7 +10,7 @@ details: |
   H5O_msg_flush
   H5O__chunk_serialize
   ```
-modified: '2023-08-13T14:19:04.914404Z'
+modified: '2023-09-22T14:28:05.185097Z'
 published: '2023-02-21T13:00:30.347876Z'
 references:
 - type: REPORT
@@ -38,6 +38,7 @@ affected:
   - snapshot-1.12
   - snapshot-1.10
   - hdf5-1_14_2
+  - hdf5-1_10_11
   ecosystem_specific:
     severity: HIGH
 schema_version: 1.4.0
