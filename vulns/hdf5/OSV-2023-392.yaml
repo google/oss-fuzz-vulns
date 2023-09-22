@@ -10,7 +10,7 @@ details: |
   H5O__link_decode
   H5O__msg_iterate_real
   ```
-modified: '2023-08-13T14:51:02.171323Z'
+modified: '2023-09-22T14:31:30.849143Z'
 published: '2023-05-13T14:00:26.093088Z'
 references:
 - type: REPORT
@@ -38,6 +38,7 @@ affected:
   - snapshot-1.12
   - snapshot-1.14
   - hdf5-1_14_2
+  - hdf5-1_10_11
   ecosystem_specific:
     severity: null
 schema_version: 1.4.0
