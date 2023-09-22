@@ -10,7 +10,7 @@ details: |
   H5SL_iterate
   H5FS__cache_sinfo_serialize
   ```
-modified: '2023-06-09T14:00:54.620447Z'
+modified: '2023-09-22T14:52:40.093375Z'
 published: '2023-06-09T14:00:54.620201Z'
 references:
 - type: REPORT
@@ -38,6 +38,7 @@ affected:
   - snapshot-1.10
   - snapshot-1.12
   - snapshot-1.14
+  - hdf5-1_10_11
   ecosystem_specific:
     severity: HIGH
 schema_version: 1.4.0
