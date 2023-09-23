@@ -1,0 +1,32 @@
+id: OSV-2023-578
+summary: Heap-buffer-overflow in cosm_new_file
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=60650
+
+  ```
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  cosm_new_file
+  cosm_create_key
+  sc_pkcs15init_generate_key
+  ```
+modified: '2023-07-17T14:00:32.356264Z'
+published: '2023-07-17T14:00:32.356018Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=60650
+affected:
+- package:
+    name: opensc
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/opensc
+  ranges:
+  - type: GIT
+    repo: https://github.com/OpenSC/OpenSC
+    events:
+    - introduced: 22f73781706a293d10ebe982ece863a73fd62bf3
+    - fixed: 41d61da8481582e12710b5858f8b635e0a71ab5e
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.4.0

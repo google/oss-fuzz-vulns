@@ -1,0 +1,31 @@
+id: OSV-2023-867
+summary: Negative-size-param in http_cb
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=62389
+
+  ```
+  Crash type: Negative-size-param
+  Crash state:
+  http_cb
+  fuzz.c
+  ```
+modified: '2023-09-16T14:02:46.649266Z'
+published: '2023-09-16T14:02:46.648990Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=62389
+affected:
+- package:
+    name: mongoose
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/mongoose
+  ranges:
+  - type: GIT
+    repo: https://github.com/cesanta/mongoose
+    events:
+    - introduced: ea3968601ea6ef47d71fc4c756ea782dd6a88d01
+    - fixed: d1204e8a66437b9c7a665d2da878c1bbf52f7f93
+  ecosystem_specific:
+    severity: null
+  versions: []
+schema_version: 1.4.0
