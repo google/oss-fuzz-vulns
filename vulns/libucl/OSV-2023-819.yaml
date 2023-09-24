@@ -1,0 +1,32 @@
+id: OSV-2023-819
+summary: Heap-buffer-overflow in ucl_object_dtor_unref_single
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=62167
+
+  ```
+  Crash type: Heap-buffer-overflow READ 8
+  Crash state:
+  ucl_object_dtor_unref_single
+  ucl_object_dtor_unref
+  ucl_hash_destroy
+  ```
+modified: '2023-09-09T14:01:07.369165Z'
+published: '2023-09-09T14:01:07.368928Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=62167
+affected:
+- package:
+    name: libucl
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libucl
+  ranges:
+  - type: GIT
+    repo: https://github.com/vstakhov/libucl
+    events:
+    - introduced: c4fc60ebb0aa695df1e6642770d512adb9f1af4e
+  versions:
+  - 0.8.2
+  ecosystem_specific:
+    severity: MEDIUM
+schema_version: 1.4.0

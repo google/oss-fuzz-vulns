@@ -1,0 +1,35 @@
+id: OSV-2023-896
+summary: UNKNOWN READ in deliver_chunked_chunks
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=62609
+
+  ```
+  Crash type: UNKNOWN READ
+  Crash state:
+  deliver_chunked_chunks
+  http_cb
+  fuzz.c
+  ```
+modified: '2023-09-23T14:00:44.782064Z'
+published: '2023-09-23T14:00:44.781770Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=62609
+affected:
+- package:
+    name: mongoose
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/mongoose
+  ranges:
+  - type: GIT
+    repo: https://github.com/cesanta/mongoose
+    events:
+    - introduced: ea3968601ea6ef47d71fc4c756ea782dd6a88d01
+    - fixed: f552d15fe4f2e4f93a7077d95856979ccceaba93
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: 54be13d1d80c51656a1d5275694a943b39e95405:6cfdc39005a0ac829e35f57bedb5c6873737b5d0
+    fixed_range: 33ab44430cce98acdfabb93719e5bd82b16d011f:f552d15fe4f2e4f93a7077d95856979ccceaba93
+  versions: []
+schema_version: 1.4.0

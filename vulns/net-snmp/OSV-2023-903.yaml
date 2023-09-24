@@ -1,0 +1,32 @@
+id: OSV-2023-903
+summary: Heap-double-free in snmp_e2e_fuzzer.c
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=62604
+
+  ```
+  Crash type: Heap-double-free
+  Crash state:
+  snmp_e2e_fuzzer.c
+  netsnmp_cleanup_session
+  snmp_e2e_fuzzer.c
+  ```
+modified: '2023-09-23T14:02:30.314305Z'
+published: '2023-09-23T14:02:30.314018Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=62604
+affected:
+- package:
+    name: net-snmp
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/net-snmp
+  ranges:
+  - type: GIT
+    repo: https://github.com/net-snmp/net-snmp
+    events:
+    - introduced: d7befa315af545c2a54443f35ede361488bad1a4
+    - fixed: 1e35e62da04e1597ecb45d2f7ec87297cb3022d9
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
+schema_version: 1.4.0

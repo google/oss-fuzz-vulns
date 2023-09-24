@@ -1,0 +1,32 @@
+id: OSV-2023-899
+summary: Heap-buffer-overflow in cosm_create_key
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=62613
+
+  ```
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  cosm_create_key
+  sc_pkcs15init_generate_key
+  do_generate_key
+  ```
+modified: '2023-09-23T14:00:56.860254Z'
+published: '2023-09-23T14:00:56.859961Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=62613
+affected:
+- package:
+    name: opensc
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/opensc
+  ranges:
+  - type: GIT
+    repo: https://github.com/OpenSC/OpenSC
+    events:
+    - introduced: 22f73781706a293d10ebe982ece863a73fd62bf3
+    - fixed: 41d61da8481582e12710b5858f8b635e0a71ab5e
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.4.0
