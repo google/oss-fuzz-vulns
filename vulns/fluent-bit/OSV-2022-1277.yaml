@@ -1,0 +1,67 @@
+id: OSV-2022-1277
+summary: Heap-use-after-free in mk_event_timeout_destroy
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=60089
+
+  ```
+  Crash type: Heap-use-after-free WRITE 8
+  Crash state:
+  mk_event_timeout_destroy
+  flb_sched_destroy
+  flb_config_exit
+  ```
+modified: '2023-06-26T14:01:01.877140Z'
+published: '2023-06-26T14:01:01.876870Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=60089
+affected:
+- package:
+    name: fluent-bit
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/fluent-bit
+  ranges:
+  - type: GIT
+    repo: https://github.com/fluent/fluent-bit/
+    events:
+    - introduced: 0c5d8da6bbf32d4712d4dd718155ac2301b1bb17
+    - introduced: 73bc3ec78451aa41757bf7a12366228b79527544
+  versions:
+  - tiger-2.0.9-dev-20230104
+  - v2.0.0
+  - v2.0.0-rc1
+  - v2.0.0-rc2
+  - v2.0.0-rc3
+  - v2.0.0pre
+  - v2.0.1
+  - v2.0.10
+  - v2.0.11
+  - v2.0.12
+  - v2.0.13
+  - v2.0.14
+  - v2.0.2
+  - v2.0.3
+  - v2.0.4
+  - v2.0.5
+  - v2.0.6
+  - v2.0.7
+  - v2.0.8
+  - v2.0.9
+  - v2.1.0
+  - v2.1.0-rc1
+  - v2.1.0-rc2
+  - v2.1.1
+  - v2.1.10
+  - v2.1.2
+  - v2.1.3
+  - v2.1.4
+  - v2.1.5
+  - v2.1.5-windows-artifact-fix
+  - v2.1.6
+  - v2.1.7
+  - v2.1.8
+  - v2.1.9
+  - vv.2.0.7
+  ecosystem_specific:
+    severity: HIGH
+schema_version: 1.4.0

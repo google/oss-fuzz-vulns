@@ -1,0 +1,36 @@
+id: OSV-2023-890
+summary: Heap-use-after-free in dwarf_dealloc
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=62547
+
+  ```
+  Crash type: Heap-use-after-free READ 2
+  Crash state:
+  dwarf_dealloc
+  _dwarf_fde_destructor
+  tdestroy_free_node
+  ```
+modified: '2023-09-21T14:01:03.576815Z'
+published: '2023-09-21T14:01:03.576514Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=62547
+affected:
+- package:
+    name: libdwarf
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libdwarf
+  ranges:
+  - type: GIT
+    repo: https://github.com/davea42/libdwarf-code
+    events:
+    - introduced: b55ce0185528bf0a99e375cf8f3c84b76b6881a3
+    - fixed: cd741379bd0203a0875b413542d5f982606ae637
+  versions:
+  - libdwarf-0.7.0
+  - libdwarf-0.8.0-fixedtag
+  - v0.7.0
+  - v0.8.0-fixedtag
+  ecosystem_specific:
+    severity: HIGH
+schema_version: 1.4.0
