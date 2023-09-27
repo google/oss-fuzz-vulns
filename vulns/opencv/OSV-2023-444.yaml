@@ -10,7 +10,7 @@ details: |
   opj_jp2_decode
   cv::detail::Jpeg2KOpjDecoderBase::readData
   ```
-modified: '2023-05-31T14:02:00.753756Z'
+modified: '2023-09-27T14:21:00.817953Z'
 published: '2023-05-31T14:02:00.753503Z'
 references:
 - type: REPORT
@@ -27,6 +27,7 @@ affected:
     - introduced: dbd1811d53ac9193e593d8f2dd01f4b128851415
   versions:
   - 4.8.0
+  - 4.8.1
   ecosystem_specific:
     severity: MEDIUM
   database_specific:
