@@ -1,0 +1,32 @@
+id: OSV-2023-901
+summary: UNKNOWN READ in icu_74::RelativeDateTimeFormatter::formatRelativeImpl
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=62601
+
+  ```
+  Crash type: UNKNOWN READ
+  Crash state:
+  icu_74::RelativeDateTimeFormatter::formatRelativeImpl
+  icu_74::FormattedRelativeDateTime icu_74::RelativeDateTimeFormatter::doFormatToV
+  icu_74::RelativeDateTimeFormatter::formatToValue
+  ```
+modified: '2023-09-23T14:01:24.733779Z'
+published: '2023-09-23T14:01:24.733487Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=62601
+affected:
+- package:
+    name: icu
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/icu
+  ranges:
+  - type: GIT
+    repo: https://github.com/unicode-org/icu.git
+    events:
+    - introduced: 77bc51e03e6de0a92ef063da85903ddadce97043
+    - fixed: c1475f4bbdf230bd2ed277ad97d667869291e58b
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
+schema_version: 1.4.0

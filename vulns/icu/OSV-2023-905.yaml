@@ -1,0 +1,32 @@
+id: OSV-2023-905
+summary: Segv on unknown address in icu_74::UnicodeString::copyFrom
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=62651
+
+  ```
+  Crash type: Segv on unknown address
+  Crash state:
+  icu_74::UnicodeString::copyFrom
+  icu_74::UnicodeString::UnicodeString
+  icu_74::number::impl::SimpleModifier::SimpleModifier
+  ```
+modified: '2023-09-24T14:02:51.344511Z'
+published: '2023-09-24T14:02:51.344190Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=62651
+affected:
+- package:
+    name: icu
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/icu
+  ranges:
+  - type: GIT
+    repo: https://github.com/unicode-org/icu.git
+    events:
+    - introduced: 77bc51e03e6de0a92ef063da85903ddadce97043
+    - fixed: c1475f4bbdf230bd2ed277ad97d667869291e58b
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
+schema_version: 1.4.0
