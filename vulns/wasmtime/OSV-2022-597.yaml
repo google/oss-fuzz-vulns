@@ -10,7 +10,7 @@ details: |
   .tmpgt0oOx
   wasmtime_setjmp
   ```
-modified: '2023-09-21T14:13:24.473782Z'
+modified: '2023-09-28T14:08:04.136795Z'
 published: '2022-07-19T00:01:55.792573Z'
 references:
 - type: REPORT
@@ -63,6 +63,7 @@ affected:
   - v11.0.2
   - v12.0.2
   - v13.0.0
+  - minimum-viable-wasi-proxy-serve
   ecosystem_specific:
     severity: HIGH
 schema_version: 1.2.0
