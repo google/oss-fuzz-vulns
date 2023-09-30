@@ -1,0 +1,34 @@
+id: OSV-2023-930
+summary: Heap-buffer-overflow in OT::cvar::decompile_tuple_variations
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=62774
+
+  ```
+  Crash type: Heap-buffer-overflow READ 2
+  Crash state:
+  OT::cvar::decompile_tuple_variations
+  OT::cvar::subset
+  bool _try_subset<OT::cvar>
+  ```
+modified: '2023-09-29T14:02:21.148306Z'
+published: '2023-09-29T14:02:21.147998Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=62774
+affected:
+- package:
+    name: harfbuzz
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/harfbuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/harfbuzz/harfbuzz.git
+    events:
+    - introduced: 0065658e96c79f8b51c2a702908e84d9d23e0971
+    - fixed: 9ceb800ac26fd81a5eaf27ef366d5fce47e80447
+  versions:
+  - 8.2.0
+  - 8.2.1
+  ecosystem_specific:
+    severity: HIGH
+schema_version: 1.4.0
