@@ -1,0 +1,31 @@
+id: OSV-2023-936
+summary: Heap-buffer-overflow in Gfx::decode_bmp_pixel_data
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=62782
+
+  ```
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  Gfx::decode_bmp_pixel_data
+  Gfx::BMPImageDecoderPlugin::frame
+  Gfx::ICOImageDecoderPlugin::load_ico_bitmap
+  ```
+modified: '2023-09-30T14:00:38.870801Z'
+published: '2023-09-30T14:00:38.870417Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=62782
+affected:
+- package:
+    name: serenity
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/serenity
+  ranges:
+  - type: GIT
+    repo: https://github.com/SerenityOS/serenity
+    events:
+    - introduced: a52089452226ce7327c5557ae10b8450b9cc2fee
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.4.0
