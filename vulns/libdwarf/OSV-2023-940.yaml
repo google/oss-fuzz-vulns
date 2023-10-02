@@ -1,0 +1,32 @@
+id: OSV-2023-940
+summary: Heap-buffer-overflow in _dwarf_memcpy_swap_bytes
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=62842
+
+  ```
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  _dwarf_memcpy_swap_bytes
+  fill_in_uni_arch_64
+  _dwarf_macho_setup
+  ```
+modified: '2023-10-01T13:00:41.142498Z'
+published: '2023-10-01T13:00:41.142203Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=62842
+affected:
+- package:
+    name: libdwarf
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libdwarf
+  ranges:
+  - type: GIT
+    repo: https://github.com/davea42/libdwarf-code
+    events:
+    - introduced: e612fb75b2b75ff78f550aea7c659799432f5bb4
+    - fixed: e8df98c5c6629b75402b8ea5e5a44797fb3ae4b3
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.4.0
