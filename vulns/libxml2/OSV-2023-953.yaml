@@ -1,0 +1,32 @@
+id: OSV-2023-953
+summary: Heap-buffer-overflow in xmlDictLookupInternal
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=62911
+
+  ```
+  Crash type: Heap-buffer-overflow READ {*}
+  Crash state:
+  xmlDictLookupInternal
+  xmlDictLookup
+  htmlParseNameComplex
+  ```
+modified: '2023-10-03T13:01:18.896661Z'
+published: '2023-10-03T13:01:18.896337Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=62911
+affected:
+- package:
+    name: libxml2
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libxml2
+  ranges:
+  - type: GIT
+    repo: https://gitlab.gnome.org/GNOME/libxml2.git
+    events:
+    - introduced: 0533daf5d2747860a2aa636466bcf02972c2dfba
+    - fixed: 71aae4e98b7e325463e528242ca363b0380a6c92
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.4.0

@@ -1,0 +1,32 @@
+id: OSV-2023-948
+summary: Global-buffer-overflow in isvce_write_coeff4x4_cavlc
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=62896
+
+  ```
+  Crash type: Global-buffer-overflow READ 1
+  Crash state:
+  isvce_write_coeff4x4_cavlc
+  isvce_encode_residue
+  isvce_write_pslice_mb_cavlc
+  ```
+modified: '2023-10-02T13:02:26.227921Z'
+published: '2023-10-02T13:02:26.227614Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=62896
+affected:
+- package:
+    name: libavc
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libavc
+  ranges:
+  - type: GIT
+    repo: https://github.com/ittiam-systems/libavc.git
+    events:
+    - introduced: 7c59eeb92090e22a46a53d9410475280fd5c86bf
+    - fixed: 56a598ca6f0e255ce33c1abac678abdb19818e75
+  ecosystem_specific:
+    severity: null
+  versions: []
+schema_version: 1.4.0

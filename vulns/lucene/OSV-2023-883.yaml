@@ -1,0 +1,35 @@
+id: OSV-2023-883
+summary: Security exception in org.apache.lucene.util.ArrayUtil.copyOfSubArray
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=62524
+
+  ```
+  Crash type: Security exception
+  Crash state:
+  org.apache.lucene.util.ArrayUtil.copyOfSubArray
+  org.apache.lucene.util.BytesRef.deepCopyOf
+  org.apache.lucene.index.Term.<init>
+  ```
+modified: '2023-09-20T14:01:10.332151Z'
+published: '2023-09-20T14:01:10.331831Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=62524
+affected:
+- package:
+    name: lucene
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/lucene
+  ranges:
+  - type: GIT
+    repo: https://github.com/apache/lucene.git
+    events:
+    - introduced: 5d203f8337cb6a2350c1abe5d83e3e103d060645
+    - fixed: 1dd05c89b0836531d367d2692ea5eae7d54b78fd
+  ecosystem_specific:
+    severity: LOW
+  database_specific:
+    introduced_range: 223e28ef16acb35cb43c89493855366d171de4f9:8af305892d726c180f03316c73aebf8183c2e481
+    fixed_range: 4cff584a48941c5c00bbcfaedf799b629dcc7806:1dd05c89b0836531d367d2692ea5eae7d54b78fd
+  versions: []
+schema_version: 1.4.0
