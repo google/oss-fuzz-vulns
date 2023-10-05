@@ -1,0 +1,31 @@
+id: OSV-2023-547
+summary: UNKNOWN READ in r_str_ncpy
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=60407
+
+  ```
+  Crash type: UNKNOWN READ
+  Crash state:
+  r_str_ncpy
+  Elf32__r_bin_elf_load_symbols_and_imports
+  Elf32_load_symbols
+  ```
+modified: '2023-07-08T14:00:22.062112Z'
+published: '2023-07-08T14:00:22.061855Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=60407
+affected:
+- package:
+    name: radare2
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/radare2
+  ranges:
+  - type: GIT
+    repo: https://github.com/radareorg/radare2
+    events:
+    - introduced: 71fe0470e5b64572c4629bf2ed33bcf4b62d9322
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.6.0

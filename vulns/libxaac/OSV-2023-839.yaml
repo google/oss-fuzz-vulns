@@ -1,0 +1,32 @@
+id: OSV-2023-839
+summary: Global-buffer-overflow in iusace_quantize_lines
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=62261
+
+  ```
+  Crash type: Global-buffer-overflow READ 4
+  Crash state:
+  iusace_quantize_lines
+  iusace_quantize_spec
+  iusace_fd_encode
+  ```
+modified: '2023-09-12T14:01:48.492091Z'
+published: '2023-09-12T14:01:48.491847Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=62261
+affected:
+- package:
+    name: libxaac
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libxaac
+  ranges:
+  - type: GIT
+    repo: https://github.com/ittiam-systems/libxaac.git
+    events:
+    - introduced: 5ee1f8c8485f99c24968466a1ec15b081c86fa23
+    - fixed: 56716426e2087e604ee6267129857b409e53ab09
+  ecosystem_specific:
+    severity: null
+  versions: []
+schema_version: 1.6.0
