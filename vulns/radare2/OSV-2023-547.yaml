@@ -10,7 +10,7 @@ details: |
   Elf32__r_bin_elf_load_symbols_and_imports
   Elf32_load_symbols
   ```
-modified: '2023-07-08T14:00:22.062112Z'
+modified: '2023-10-06T14:21:12.777567Z'
 published: '2023-07-08T14:00:22.061855Z'
 references:
 - type: REPORT
@@ -25,6 +25,8 @@ affected:
     repo: https://github.com/radareorg/radare2
     events:
     - introduced: 71fe0470e5b64572c4629bf2ed33bcf4b62d9322
+    - fixed: 59806217f8fdadd4de7d0edab81c40442d9aec75
+    - fixed: 9a310ec866cc802adf7245b76e357ea0f6145e59
   ecosystem_specific:
     severity: MEDIUM
   versions: []
