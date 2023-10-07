@@ -1,0 +1,33 @@
+id: OSV-2023-971
+summary: Out-of-memory in IndexSearchFuzzer
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=63007
+
+  ```
+  Crash type: Out-of-memory
+  Crash state:
+  IndexSearchFuzzer
+  ```
+modified: '2023-10-06T13:02:59.700094Z'
+published: '2023-10-06T13:02:59.699745Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=63007
+affected:
+- package:
+    name: lucene
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/lucene
+  ranges:
+  - type: GIT
+    repo: https://github.com/apache/lucene.git
+    events:
+    - introduced: c4694c31fde068119445ba6ed5587cfbf2170218
+    - fixed: 2474940bffe6118ed31ceb717fd49705d819e1fc
+  ecosystem_specific:
+    severity: LOW
+  database_specific:
+    introduced_range: 96052891e62b2fc9300e619fff0fb29aa8a4e29a:ba74da1dc0ea9ddd27c30a0f29d173386a336ebf
+    fixed_range: ba74da1dc0ea9ddd27c30a0f29d173386a336ebf:2474940bffe6118ed31ceb717fd49705d819e1fc
+  versions: []
+schema_version: 1.6.0

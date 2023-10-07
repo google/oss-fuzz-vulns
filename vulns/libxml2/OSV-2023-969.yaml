@@ -1,0 +1,32 @@
+id: OSV-2023-969
+summary: Heap-use-after-free in xmlStaticCopyNode
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=62996
+
+  ```
+  Crash type: Heap-use-after-free READ 4
+  Crash state:
+  xmlStaticCopyNode
+  xmlDocCopyNode
+  xmlParseReference
+  ```
+modified: '2023-10-06T13:01:29.969714Z'
+published: '2023-10-06T13:01:29.969398Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=62996
+affected:
+- package:
+    name: libxml2
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libxml2
+  ranges:
+  - type: GIT
+    repo: https://gitlab.gnome.org/GNOME/libxml2.git
+    events:
+    - introduced: fa48187304039f8792d8e19129df7d64422e7f69
+    - fixed: 97e99f411228fe4f65ebb60e4f2c56f9ee9cdb1c
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
+schema_version: 1.6.0
