@@ -1,0 +1,32 @@
+id: OSV-2023-837
+summary: Heap-buffer-overflow in uint7_get_64
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=62270
+
+  ```
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  uint7_get_64
+  cram_huffman_decode_init
+  cram_decoder_init
+  ```
+modified: '2023-09-12T14:00:46.513217Z'
+published: '2023-09-12T14:00:46.512961Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=62270
+affected:
+- package:
+    name: htslib
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/htslib
+  ranges:
+  - type: GIT
+    repo: https://github.com/samtools/htslib.git
+    events:
+    - introduced: 9c7e845e25cdb899cd833e96a46ef7d6dd8fb6be
+    - fixed: 28a980bba6f731f901906f57e5c1ee19f4155849
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.6.0
