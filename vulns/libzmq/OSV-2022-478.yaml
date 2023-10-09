@@ -7,7 +7,7 @@ details: |
   Crash type: Segv on unknown address
   Crash state:
   NULL```
-modified: '2022-06-14T00:01:10.336119Z'
+modified: '2023-10-09T14:11:11.908246Z'
 published: '2022-06-14T00:01:10.335839Z'
 references:
 - type: REPORT
@@ -25,6 +25,7 @@ affected:
   versions:
   - v4.3.3
   - v4.3.4
+  - v4.3.5
   ecosystem_specific:
     severity: null
   database_specific:
