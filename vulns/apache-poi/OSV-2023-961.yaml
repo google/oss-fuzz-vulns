@@ -1,0 +1,34 @@
+id: OSV-2023-961
+summary: Security exception in java.base/java.util.Arrays.copyOf
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=62959
+
+  ```
+  Crash type: Security exception
+  Crash state:
+  java.base/java.util.Arrays.copyOf
+  java.base/java.lang.AbstractStringBuilder.ensureCapacityInternal
+  java.base/java.lang.AbstractStringBuilder.append
+  ```
+modified: '2023-10-04T13:03:08.034845Z'
+published: '2023-10-04T13:03:08.034505Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=62959
+affected:
+- package:
+    name: apache-poi
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/apache-poi
+  ranges:
+  - type: GIT
+    repo: https://github.com/apache/poi.git
+    events:
+    - introduced: 1b88529d072a9d4462c445a9953b898cb37c6913
+    - fixed: 638a9be903dd75f58ab3a260102f4687619784c7
+  ecosystem_specific:
+    severity: LOW
+  database_specific:
+    fixed_range: 42651f6eda8a6c38149ae963447f770441e06ea4:638a9be903dd75f58ab3a260102f4687619784c7
+  versions: []
+schema_version: 1.6.0

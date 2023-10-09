@@ -1,0 +1,33 @@
+id: OSV-2023-989
+summary: Heap-buffer-overflow in load_sections_64
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=63074
+
+  ```
+  Crash type: Heap-buffer-overflow READ {*}
+  Crash state:
+  load_sections_64
+  parse_classes_64
+  classes
+  ```
+modified: '2023-10-08T13:03:15.703238Z'
+published: '2023-10-08T13:03:15.702919Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=63074
+affected:
+- package:
+    name: radare2
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/radare2
+  ranges:
+  - type: GIT
+    repo: https://github.com/radareorg/radare2
+    events:
+    - introduced: f31fcacf8e75a08fa5b9fa9f403b2272cdde1011
+    - fixed: a9d18eb4229893fabd9c40ebdb00d7466d9ab401
+    - introduced: 64f2493f5840722bf319781340cda83de7e6c8cb
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.6.0
