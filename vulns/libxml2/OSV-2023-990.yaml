@@ -1,0 +1,32 @@
+id: OSV-2023-990
+summary: Heap-use-after-free in __xmlRaiseError
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=63092
+
+  ```
+  Crash type: Heap-use-after-free READ 8
+  Crash state:
+  __xmlRaiseError
+  xmlFatalErr
+  xmlStringDecodeEntitiesInt
+  ```
+modified: '2023-10-08T13:03:35.608892Z'
+published: '2023-10-08T13:03:35.608592Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=63092
+affected:
+- package:
+    name: libxml2
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libxml2
+  ranges:
+  - type: GIT
+    repo: https://gitlab.gnome.org/GNOME/libxml2.git
+    events:
+    - introduced: b76d81dab3869f16a5c3506d9902526dff583b3e
+    - fixed: 36374bc9fcf6e670dc9521ac032474066521858b
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
+schema_version: 1.6.0
