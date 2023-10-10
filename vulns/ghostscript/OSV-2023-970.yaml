@@ -10,7 +10,7 @@ details: |
   gx_device_finalize
   alloc_restore_step_in
   ```
-modified: '2023-10-06T13:02:56.048125Z'
+modified: '2023-10-10T15:17:30.632991Z'
 published: '2023-10-06T13:02:56.047818Z'
 references:
 - type: REPORT
@@ -25,6 +25,7 @@ affected:
     repo: git://git.ghostscript.com/ghostpdl.git
     events:
     - introduced: 205d4f51cba82bc7cfa6a64b3d82b77baebf91b4
+    - fixed: 6a3097e2262b61a953651b6280247705945f4c82
   versions:
   - ghostpdl-10.01.0
   - ghostpdl-10.01.0rc1
