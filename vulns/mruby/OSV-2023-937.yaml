@@ -1,0 +1,32 @@
+id: OSV-2023-937
+summary: Heap-buffer-overflow in pack_unpack
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=62822
+
+  ```
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  pack_unpack
+  mrb_pack_unpack
+  mrb_vm_exec
+  ```
+modified: '2023-09-30T14:02:34.958072Z'
+published: '2023-09-30T14:02:34.957735Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=62822
+affected:
+- package:
+    name: mruby
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/mruby
+  ranges:
+  - type: GIT
+    repo: https://github.com/mruby/mruby
+    events:
+    - introduced: e7021f190a5527b497163d3b7093bcc56fecdde0
+    - fixed: 097681b4d458899dff945138ea39ae125df3e16a
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.6.0
