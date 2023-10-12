@@ -1,0 +1,57 @@
+id: OSV-2023-1001
+summary: Security exception in java.base/java.lang.String.repeat
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=63154
+
+  ```
+  Crash type: Security exception
+  Crash state:
+  java.base/java.lang.String.repeat
+  org.springframework.expression.spel.ast.OpMultiply.getValueInternal
+  org.springframework.expression.spel.ast.MethodReference.getArguments
+  ```
+modified: '2023-10-11T13:02:38.205911Z'
+published: '2023-10-11T13:02:38.205441Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=63154
+affected:
+- package:
+    name: spring-data-keyvalue
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/spring-data-keyvalue
+  ranges:
+  - type: GIT
+    repo: https://github.com/spring-projects/spring-data-keyvalue.git
+    events:
+    - introduced: 0d4a18fc90cf134d33a227bea68b6e2d9cad7541
+    - fixed: ee43ad3b43ee470a617c568522edf07f606b1516
+  versions:
+  - 3.0.0
+  - 3.0.1
+  - 3.0.10
+  - 3.0.2
+  - 3.0.3
+  - 3.0.4
+  - 3.0.5
+  - 3.0.6
+  - 3.0.7
+  - 3.0.8
+  - 3.0.9
+  - 3.1.0
+  - 3.1.0-M1
+  - 3.1.0-M2
+  - 3.1.0-M3
+  - 3.1.0-RC1
+  - 3.1.1
+  - 3.1.2
+  - 3.1.3
+  - 3.1.4
+  - 3.2.0-M1
+  - 3.2.0-M2
+  - 3.2.0-M3
+  ecosystem_specific:
+    severity: LOW
+  database_specific:
+    introduced_range: unknown:0d4a18fc90cf134d33a227bea68b6e2d9cad7541
+schema_version: 1.6.0

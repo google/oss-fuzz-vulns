@@ -1,0 +1,32 @@
+id: OSV-2023-920
+summary: Security exception in com.github.javaparser.GeneratedJavaParser.Expression
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=62731
+
+  ```
+  Crash type: Security exception
+  Crash state:
+  com.github.javaparser.GeneratedJavaParser.Expression
+  java.base/sun.nio.cs.CESU_8$Encoder.to3Bytes
+  java.base/sun.nio.cs.CESU_8$Encoder.encodeArrayLoop
+  ```
+modified: '2023-09-28T14:00:20.647008Z'
+published: '2023-09-28T14:00:20.646633Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=62731
+affected:
+- package:
+    name: javaparser
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/javaparser
+  ranges:
+  - type: GIT
+    repo: https://github.com/javaparser/javaparser
+    events:
+    - introduced: 25139c9f1010f3063789b75c04471de90bd5cf8a
+    - fixed: 6fa0a76ac8727fd1ee8ba90d138a932c81a21ab5
+  ecosystem_specific:
+    severity: LOW
+  versions: []
+schema_version: 1.6.0
