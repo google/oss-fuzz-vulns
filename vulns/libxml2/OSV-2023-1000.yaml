@@ -1,0 +1,32 @@
+id: OSV-2023-1000
+summary: Heap-use-after-free in xmlParserPrintFileContextInternal
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=63157
+
+  ```
+  Crash type: Heap-use-after-free READ 1
+  Crash state:
+  xmlParserPrintFileContextInternal
+  xmlReportError
+  __xmlRaiseError
+  ```
+modified: '2023-10-11T13:01:01.024042Z'
+published: '2023-10-11T13:01:01.023722Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=63157
+affected:
+- package:
+    name: libxml2
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libxml2
+  ranges:
+  - type: GIT
+    repo: https://gitlab.gnome.org/GNOME/libxml2.git
+    events:
+    - introduced: 36374bc9fcf6e670dc9521ac032474066521858b
+    - fixed: fef12ed81619c79729bf66a906701308a02d6b2b
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
+schema_version: 1.6.0

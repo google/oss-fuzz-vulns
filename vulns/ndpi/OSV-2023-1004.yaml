@@ -1,0 +1,32 @@
+id: OSV-2023-1004
+summary: Heap-buffer-overflow in ndpi_snprintf
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=63179
+
+  ```
+  Crash type: Heap-buffer-overflow WRITE 11
+  Crash state:
+  ndpi_snprintf
+  ndpi_serialize_string_int32
+  fuzz_serialization.cpp
+  ```
+modified: '2023-10-12T13:00:14.575776Z'
+published: '2023-10-12T13:00:14.575456Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=63179
+affected:
+- package:
+    name: ndpi
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/ndpi
+  ranges:
+  - type: GIT
+    repo: https://github.com/ntop/nDPI.git
+    events:
+    - introduced: a76b9d151f58e000980abffc29b0192b08c5bb4e
+    - fixed: 30fc89e556e5c09bf62b9548862cc3d924b9ec81
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
+schema_version: 1.6.0
