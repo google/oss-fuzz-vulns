@@ -10,7 +10,7 @@ details: |
   org.springframework.expression.spel.ast.OpMultiply.getValueInternal
   org.springframework.expression.spel.ast.MethodReference.getArguments
   ```
-modified: '2023-10-13T14:17:05.709841Z'
+modified: '2023-10-14T14:20:59.452689Z'
 published: '2023-10-11T13:02:38.205441Z'
 references:
 - type: REPORT
@@ -51,6 +51,7 @@ affected:
   - 3.2.0-M2
   - 3.2.0-M3
   - 3.0.11
+  - 3.1.5
   ecosystem_specific:
     severity: LOW
   database_specific:
