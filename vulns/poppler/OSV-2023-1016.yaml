@@ -1,0 +1,34 @@
+id: OSV-2023-1016
+summary: Use-of-uninitialized-value in Render_Single_Pass
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=63241
+
+  ```
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  Render_Single_Pass
+  Render_Glyph
+  ft_black_render
+  ```
+modified: '2023-10-14T13:02:55.074040Z'
+published: '2023-10-14T13:02:55.073559Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=63241
+affected:
+- package:
+    name: poppler
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/poppler
+  ranges:
+  - type: GIT
+    repo: https://gitlab.freedesktop.org/poppler/poppler.git
+    events:
+    - introduced: b4052d02b44e8e412316a8dca1a99f9714e5aa8e
+    - fixed: c89b933f3bd235c6f95b420fdcfe5ca7df900c09
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: 48914b5d5fc12ae96d4f3ac3fc9c6fd08a1d6496:760242166a8dacff674b2039ba27d823f0c27bac
+  versions: []
+schema_version: 1.6.0
