@@ -1,0 +1,33 @@
+id: OSV-2023-599
+summary: Negative-size-param in passDoAction
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=60723
+
+  ```
+  Crash type: Negative-size-param
+  Crash state:
+  passDoAction
+  translateString
+  _lou_translate
+  ```
+modified: '2023-07-20T14:02:17.227329Z'
+published: '2023-07-20T14:02:17.227069Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=60723
+affected:
+- package:
+    name: liblouis
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/liblouis
+  ranges:
+  - type: GIT
+    repo: https://github.com/liblouis/liblouis
+    events:
+    - introduced: bd2f5364d74bdc86af7a13fc690138c453c321de
+  versions:
+  - v3.26.0
+  - v3.27.0
+  ecosystem_specific:
+    severity: null
+schema_version: 1.6.0
