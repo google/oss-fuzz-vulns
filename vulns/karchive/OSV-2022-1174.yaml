@@ -10,7 +10,7 @@ details: |
   lzma_crc64
   lzma_check_update
   ```
-modified: '2023-10-07T14:04:58.799294Z'
+modified: '2023-10-19T14:04:15.204368Z'
 published: '2022-11-16T13:02:12.420492Z'
 references:
 - type: REPORT
@@ -25,6 +25,7 @@ affected:
     repo: https://invent.kde.org/frameworks/karchive.git
     events:
     - introduced: e6225a1fb55c4390835e2992caf5adff20d36e95
+    - fixed: e4248bcb57dfcf8564753c317d01cff8c62fe3b8
   versions:
   - v5.101.0
   - v5.101.0-rc1
@@ -32,23 +33,25 @@ affected:
   - v5.102.0-rc1
   - v5.103.0
   - v5.103.0-rc1
-  - v5.104.0-rc1
   - v5.104.0
-  - v5.105.0-rc1
+  - v5.104.0-rc1
   - v5.105.0
-  - v5.106.0-rc1
+  - v5.105.0-rc1
   - v5.106.0
-  - v5.107.0-rc1
+  - v5.106.0-rc1
   - v5.107.0
-  - v5.108.0-rc1
+  - v5.107.0-rc1
   - v5.108.0
-  - v5.109.0-rc1
+  - v5.108.0-rc1
   - v5.109.0
-  - v5.110.0-rc1
+  - v5.109.0-rc1
   - v5.110.0
+  - v5.110.0-rc1
+  - v5.111.0
   - v5.111.0-rc1
   ecosystem_specific:
     severity: MEDIUM
   database_specific:
     introduced_range: 350c8b192f9227b9869ccf1523b5a37329f083bf:ffbc107db9453c3271d61a95c362c30979f190a8
+    fixed_range: 2677705d2abf582907576cae47397ef8cf5ff3f3:e4248bcb57dfcf8564753c317d01cff8c62fe3b8
 schema_version: 1.3.0
