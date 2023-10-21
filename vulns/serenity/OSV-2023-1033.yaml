@@ -1,0 +1,31 @@
+id: OSV-2023-1033
+summary: Heap-buffer-overflow in Gfx::InputStreamer::read_u32
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=63357
+
+  ```
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  Gfx::InputStreamer::read_u32
+  Gfx::set_dib_bitmasks
+  Gfx::decode_bmp_dib
+  ```
+modified: '2023-10-20T13:00:25.024683Z'
+published: '2023-10-20T13:00:25.024359Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=63357
+affected:
+- package:
+    name: serenity
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/serenity
+  ranges:
+  - type: GIT
+    repo: https://github.com/SerenityOS/serenity
+    events:
+    - introduced: bbf66ea055b40577530961e79fb0ac06076971b0
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
+schema_version: 1.6.0
