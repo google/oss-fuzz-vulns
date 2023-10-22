@@ -10,7 +10,7 @@ details: |
   H5B_find
   H5G__stab_lookup
   ```
-modified: '2022-04-13T03:04:43.118629Z'
+modified: '2023-10-22T14:05:32.861272Z'
 published: '2021-11-15T00:00:41.528810Z'
 references:
 - type: REPORT
@@ -25,6 +25,7 @@ affected:
     repo: git://git.code.sf.net/p/matio/matio
     events:
     - introduced: f94c087aa9be54ec86a01e267b80fd61108069be
+    - fixed: 7019a4c5212ab34ee336d77b9d6965920944b41a
   versions:
   - v1.5.18
   - v1.5.19
