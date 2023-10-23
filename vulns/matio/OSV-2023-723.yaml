@@ -1,0 +1,40 @@
+id: OSV-2023-723
+summary: Heap-buffer-overflow in H5MM_memcpy
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=61626
+
+  ```
+  Crash type: Heap-buffer-overflow WRITE {*}
+  Crash state:
+  H5MM_memcpy
+  H5D__scatter_mem
+  H5D__scatgath_read
+  ```
+modified: '2023-08-22T14:03:07.334606Z'
+published: '2023-08-22T14:03:07.334340Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=61626
+affected:
+- package:
+    name: matio
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/matio
+  ranges:
+  - type: GIT
+    repo: https://github.com/tbeu/matio.git
+    events:
+    - introduced: f94c087aa9be54ec86a01e267b80fd61108069be
+    - fixed: cf58a80672f4a36490cfe81de80805496218d49b
+  versions:
+  - v1.5.18
+  - v1.5.19
+  - v1.5.20
+  - v1.5.21
+  - v1.5.22
+  - v1.5.23
+  ecosystem_specific:
+    severity: HIGH
+  database_specific:
+    introduced_range: 7a9958485036ef37b4e88df5cbe32bd7ec4c0d25:6540087e697ca2b8950bada3d4ca653951b467dc
+schema_version: 1.6.0
