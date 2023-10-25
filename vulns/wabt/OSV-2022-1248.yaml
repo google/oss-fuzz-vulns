@@ -10,7 +10,7 @@ details: |
   wabt::BinaryReader::ReadCodeMetadataSection
   wabt::BinaryReader::ReadCustomSection
   ```
-modified: '2023-05-13T14:13:59.165564Z'
+modified: '2023-10-25T14:10:55.934063Z'
 published: '2022-12-08T13:00:53.255456Z'
 references:
 - type: REPORT
@@ -30,6 +30,7 @@ affected:
   - 1.0.31
   - 1.0.32
   - 1.0.33
+  - 1.0.34
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.3.0
