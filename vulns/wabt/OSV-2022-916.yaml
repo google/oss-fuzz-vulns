@@ -10,7 +10,7 @@ details: |
   wabt::ReadBinary
   wabt::interp::ReadBinaryInterp
   ```
-modified: '2023-05-13T14:10:50.198509Z'
+modified: '2023-10-25T14:12:58.225587Z'
 published: '2022-09-20T00:00:42.122902Z'
 references:
 - type: REPORT
@@ -31,6 +31,7 @@ affected:
   - 1.0.31
   - 1.0.32
   - 1.0.33
+  - 1.0.34
   ecosystem_specific:
     severity: HIGH
 schema_version: 1.3.0
