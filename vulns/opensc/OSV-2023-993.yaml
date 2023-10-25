@@ -1,0 +1,33 @@
+id: OSV-2023-993
+summary: Stack-buffer-overflow in entersafe_reverse_buffer
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=63104
+
+  ```
+  Crash type: Stack-buffer-overflow READ 1
+  Crash state:
+  entersafe_reverse_buffer
+  entersafe_gen_key
+  entersafe_card_ctl_NUMBER
+  ```
+modified: '2023-10-09T13:01:24.534726Z'
+published: '2023-10-09T13:01:24.534357Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=63104
+affected:
+- package:
+    name: opensc
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/opensc
+  ranges:
+  - type: GIT
+    repo: https://github.com/OpenSC/OpenSC
+    events:
+    - introduced: 22f73781706a293d10ebe982ece863a73fd62bf3
+    - fixed: 50f0985f6343eeac4044661d56807ee9286db42c
+  versions:
+  - 0.24.0-rc1
+  ecosystem_specific:
+    severity: MEDIUM
+schema_version: 1.6.0
