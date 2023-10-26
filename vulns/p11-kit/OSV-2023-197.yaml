@@ -10,7 +10,7 @@ details: |
   rpc_C_MessageEncryptInit
   p11_rpc_server_handle
   ```
-modified: '2023-06-29T14:12:37.762096Z'
+modified: '2023-10-26T14:14:31.389372Z'
 published: '2023-03-18T13:00:57.254906Z'
 references:
 - type: REPORT
@@ -27,6 +27,7 @@ affected:
     - introduced: 7fe7e5d95d9197e7f52aab314468d424acc6ac88
   versions:
   - 0.25.0
+  - 0.25.1
   ecosystem_specific:
     severity: null
 schema_version: 1.4.0
