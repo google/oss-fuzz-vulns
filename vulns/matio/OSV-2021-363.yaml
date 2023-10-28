@@ -10,7 +10,7 @@ details: |
   H5VL__native_blob_get
   H5VL__blob_get
   ```
-modified: '2022-04-13T03:04:42.969097Z'
+modified: '2023-10-28T14:06:27.472501Z'
 published: '2021-02-11T00:00:41.682350Z'
 references:
 - type: REPORT
@@ -28,5 +28,7 @@ affected:
   - v1.5.20
   - v1.5.21
   - v1.5.22
+  - v1.5.23
+  - v1.5.24
   ecosystem_specific:
     severity: MEDIUM
