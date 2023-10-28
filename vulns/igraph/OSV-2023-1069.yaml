@@ -1,0 +1,32 @@
+id: OSV-2023-1069
+summary: Heap-use-after-free in igraph_pajek_yyparse
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=63590
+
+  ```
+  Crash type: Heap-use-after-free READ 3
+  Crash state:
+  igraph_pajek_yyparse
+  igraph_read_graph_pajek
+  read_pajek.cpp
+  ```
+modified: '2023-10-26T13:02:48.628308Z'
+published: '2023-10-26T13:02:48.628038Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=63590
+affected:
+- package:
+    name: igraph
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/igraph
+  ranges:
+  - type: GIT
+    repo: https://github.com/igraph/igraph
+    events:
+    - introduced: 2666c1d9b1c62121f26fb13e7e1e0529d7cf726a
+    - fixed: c32ae3b44074c280e1a8cc3ff3fe8899040753ff
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
+schema_version: 1.6.0

@@ -1,0 +1,32 @@
+id: OSV-2023-1072
+summary: UNKNOWN READ in igraph_strvector_set_len
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=63622
+
+  ```
+  Crash type: UNKNOWN READ
+  Crash state:
+  igraph_strvector_set_len
+  igraph_strvector_set
+  add_string_attribute
+  ```
+modified: '2023-10-27T13:00:37.574322Z'
+published: '2023-10-27T13:00:37.573999Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=63622
+affected:
+- package:
+    name: igraph
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/igraph
+  ranges:
+  - type: GIT
+    repo: https://github.com/igraph/igraph
+    events:
+    - introduced: 4f4f2e97e6dddd20081da17d4016dbcf3f573250
+    - fixed: dc6dcf6227dadfc6670bf911bb6e0640b5df7a35
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.6.0
