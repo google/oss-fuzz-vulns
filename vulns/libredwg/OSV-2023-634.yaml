@@ -10,7 +10,7 @@ details: |
   bit_read_BS
   dwg_decode_ATTDEF_private
   ```
-modified: '2023-08-02T14:02:44.231490Z'
+modified: '2023-10-31T14:22:14.193262Z'
 published: '2023-08-02T14:02:44.231233Z'
 references:
 - type: REPORT
@@ -402,6 +402,10 @@ affected:
   - 0.12.5.6468
   - 0.12.5.6479
   - 0.12.5.6483
+  - 0.12.5.6488
+  - 0.12.5.6493
+  - 0.12.5.6495
+  - 0.12.5.6501
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.6.0
