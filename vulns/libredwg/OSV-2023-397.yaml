@@ -10,7 +10,7 @@ details: |
   json_preR13_header_write_private
   dwg_write_json
   ```
-modified: '2023-10-30T14:15:05.184811Z'
+modified: '2023-10-31T14:21:37.168368Z'
 published: '2023-05-14T14:02:14.802227Z'
 references:
 - type: REPORT
@@ -229,6 +229,10 @@ affected:
   - 0.12.5.6468
   - 0.12.5.6479
   - 0.12.5.6483
+  - 0.12.5.6488
+  - 0.12.5.6493
+  - 0.12.5.6495
+  - 0.12.5.6501
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.4.0
