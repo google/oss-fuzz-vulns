@@ -10,7 +10,7 @@ details: |
   dwg_json_LTYPE
   json_objects_write
   ```
-modified: '2023-10-30T14:19:55.165474Z'
+modified: '2023-10-31T14:21:55.530747Z'
 published: '2023-06-03T14:02:13.459131Z'
 references:
 - type: REPORT
@@ -25,6 +25,7 @@ affected:
     repo: https://github.com/LibreDWG/libredwg
     events:
     - introduced: 849794389e436030140dde24ac13b121e933b09f
+    - fixed: 8027830aac4625a96b70b645fbbb4ccb625f781e
   versions:
   - 0.12.5.5712
   - 0.12.5.5713
@@ -205,7 +206,6 @@ affected:
   - 0.12.5.6465
   - 0.12.5.6468
   - 0.12.5.6479
-  - 0.12.5.6483
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.4.0
