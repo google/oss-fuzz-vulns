@@ -10,7 +10,7 @@ details: |
   OcspResponseDecode
   ocsp.c
   ```
-modified: '2023-09-07T14:23:51.968882Z'
+modified: '2023-10-31T14:22:05.289170Z'
 published: '2023-02-25T13:00:07.390537Z'
 references:
 - type: REPORT
@@ -30,6 +30,7 @@ affected:
   - v5.6.2-stable
   - v5.6.3-stable
   - WCv5.2.1-PILOT
+  - v5.6.4-stable
   ecosystem_specific:
     severity: MEDIUM
   database_specific:
