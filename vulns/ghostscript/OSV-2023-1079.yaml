@@ -10,7 +10,7 @@ details: |
   RunIns
   Instance_Reset
   ```
-modified: '2023-10-28T13:02:49.535491Z'
+modified: '2023-11-01T14:20:37.515351Z'
 published: '2023-10-28T13:02:49.535222Z'
 references:
 - type: REPORT
@@ -25,6 +25,7 @@ affected:
     repo: git://git.ghostscript.com/ghostpdl.git
     events:
     - introduced: 441c9e3a4ca08fa7f7c00063af33196b0d88ebaf
+    - fixed: 74bfcfea5faa35ee3c5e7e2690b2473e0c4aac59
   versions:
   - ghostpdl-10.0.0
   - ghostpdl-10.0.0_release_tests_002
