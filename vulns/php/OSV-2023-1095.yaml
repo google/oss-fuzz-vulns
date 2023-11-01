@@ -10,7 +10,7 @@ details: |
   zend_jit_trace_hot_side
   zend_jit_trace_exit
   ```
-modified: '2023-10-31T13:03:18.358933Z'
+modified: '2023-11-01T17:42:22.538231Z'
 published: '2023-10-31T13:03:18.357724Z'
 references:
 - type: REPORT
@@ -26,6 +26,8 @@ affected:
     events:
     - introduced: 3eba1a876a12d02d478e2d714d6449ed8c9585a9
     - introduced: e270ee3008829fa50142ff39b2f6e5d2fa9cc665
+    - fixed: cf7e5f02584a821e821f04b498f9ca57bb4368f1
+    - fixed: b280f1f9647812b490826507efd575cfbad84537
   ecosystem_specific:
     severity: HIGH
   versions: []
