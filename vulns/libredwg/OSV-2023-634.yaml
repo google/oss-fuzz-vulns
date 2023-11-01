@@ -10,7 +10,7 @@ details: |
   bit_read_BS
   dwg_decode_ATTDEF_private
   ```
-modified: '2023-10-31T14:22:14.193262Z'
+modified: '2023-11-01T14:21:43.594840Z'
 published: '2023-08-02T14:02:44.231233Z'
 references:
 - type: REPORT
@@ -25,6 +25,7 @@ affected:
     repo: https://github.com/LibreDWG/libredwg
     events:
     - introduced: 9d068534eb093790d9be1b8aa8ed47cafc7f2285
+    - fixed: 119ef50a0b1ef395defa5ee453acd5d3c158c638
   versions:
   - 0.12.5.4685
   - 0.12.5.4690
@@ -406,6 +407,7 @@ affected:
   - 0.12.5.6493
   - 0.12.5.6495
   - 0.12.5.6501
+  - 0.12.5.6511
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.6.0
