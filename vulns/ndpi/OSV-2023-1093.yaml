@@ -1,0 +1,32 @@
+id: OSV-2023-1093
+summary: Stack-buffer-overflow in ndpi_handle_rule
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=63746
+
+  ```
+  Crash type: Stack-buffer-overflow WRITE {*}
+  Crash state:
+  ndpi_handle_rule
+  ndpi_load_protocols_file_fd
+  fuzz_filecfg_protocols.c
+  ```
+modified: '2023-10-31T13:02:51.707857Z'
+published: '2023-10-31T13:02:51.707592Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=63746
+affected:
+- package:
+    name: ndpi
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/ndpi
+  ranges:
+  - type: GIT
+    repo: https://github.com/ntop/nDPI.git
+    events:
+    - introduced: 9fb7a635765769d1343af32841c24aa908acb79e
+    - fixed: e399bd7e3d4cb4071e426ecb735084c6577a8644
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
+schema_version: 1.6.0

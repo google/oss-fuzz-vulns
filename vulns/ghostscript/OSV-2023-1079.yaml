@@ -1,0 +1,45 @@
+id: OSV-2023-1079
+summary: Heap-buffer-overflow in Calc_Length
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=63648
+
+  ```
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  Calc_Length
+  RunIns
+  Instance_Reset
+  ```
+modified: '2023-10-28T13:02:49.535491Z'
+published: '2023-10-28T13:02:49.535222Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=63648
+affected:
+- package:
+    name: ghostscript
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/ghostscript
+  ranges:
+  - type: GIT
+    repo: git://git.ghostscript.com/ghostpdl.git
+    events:
+    - introduced: 441c9e3a4ca08fa7f7c00063af33196b0d88ebaf
+  versions:
+  - ghostpdl-10.0.0
+  - ghostpdl-10.0.0_release_tests_002
+  - ghostpdl-10.0.0rc1
+  - ghostpdl-10.0.0rc2
+  - ghostpdl-10.01.0
+  - ghostpdl-10.01.0rc1
+  - ghostpdl-10.01.0rc2
+  - ghostpdl-10.01.1
+  - ghostpdl-10.01.1-gse-10174
+  - ghostpdl-10.01.2
+  - ghostpdl-10.02.0
+  - ghostpdl-10.02.0-test-base-001
+  - ghostpdl-10.02.0rc1
+  - ghostpdl-10.02.0rc2
+  ecosystem_specific:
+    severity: MEDIUM
+schema_version: 1.6.0
