@@ -1,0 +1,45 @@
+id: OSV-2023-1051
+summary: Heap-buffer-overflow in dwg_json_VPORT_private
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=63483
+
+  ```
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  dwg_json_VPORT_private
+  json_objects_write
+  dwg_write_json
+  ```
+modified: '2023-10-23T13:00:32.282807Z'
+published: '2023-10-23T13:00:32.282560Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=63483
+affected:
+- package:
+    name: libredwg
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libredwg
+  ranges:
+  - type: GIT
+    repo: https://github.com/LibreDWG/libredwg
+    events:
+    - introduced: 2584efe46a41eae2c41f2d936286c7785093eb04
+    - fixed: 5b4c2fce7262b2bec00fa679e472559ab268d0c7
+  versions:
+  - 0.12.5.6430
+  - 0.12.5.6432
+  - 0.12.5.6434
+  - 0.12.5.6437
+  - 0.12.5.6439
+  - 0.12.5.6444
+  - 0.12.5.6456
+  - 0.12.5.6459
+  - 0.12.5.6461
+  - 0.12.5.6465
+  - 0.12.5.6468
+  - 0.12.5.6479
+  - 0.12.5.6483
+  ecosystem_specific:
+    severity: MEDIUM
+schema_version: 1.6.0

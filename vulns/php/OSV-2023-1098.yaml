@@ -1,0 +1,33 @@
+id: OSV-2023-1098
+summary: Segv on unknown address in ZEND_HANDLE_EXCEPTION_SPEC_HANDLER
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=63749
+
+  ```
+  Crash type: Segv on unknown address
+  Crash state:
+  ZEND_HANDLE_EXCEPTION_SPEC_HANDLER
+  zero
+  zend_execute
+  ```
+modified: '2023-11-01T13:01:21.266677Z'
+published: '2023-11-01T13:01:21.266355Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=63749
+affected:
+- package:
+    name: php
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/php
+  ranges:
+  - type: GIT
+    repo: https://github.com/php/php-src.git
+    events:
+    - introduced: 3eba1a876a12d02d478e2d714d6449ed8c9585a9
+    - fixed: ed37ab9d1418db341121164603db47fee6f1bb9c
+    - introduced: e270ee3008829fa50142ff39b2f6e5d2fa9cc665
+  ecosystem_specific:
+    severity: null
+  versions: []
+schema_version: 1.6.0

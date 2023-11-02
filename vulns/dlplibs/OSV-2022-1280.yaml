@@ -1,0 +1,31 @@
+id: OSV-2022-1280
+summary: Heap-buffer-overflow in Canvas5Structure::NIBDecoder::decode
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=61081
+
+  ```
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  Canvas5Structure::NIBDecoder::decode
+  Canvas5Structure::decodeZone5
+  Canvas5Parser::decode
+  ```
+modified: '2023-08-04T14:00:41.927544Z'
+published: '2023-08-04T14:00:41.927304Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=61081
+affected:
+- package:
+    name: dlplibs
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/dlplibs
+  ranges:
+  - type: GIT
+    repo: git://gerrit.libreoffice.org/libabw
+    events:
+    - introduced: 6ad72753cf22aa4cffdc6bb7b9082c90b4ed0502
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.6.0
