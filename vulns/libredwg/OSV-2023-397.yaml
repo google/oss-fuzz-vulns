@@ -10,7 +10,7 @@ details: |
   json_preR13_header_write_private
   dwg_write_json
   ```
-modified: '2023-11-01T14:21:20.473581Z'
+modified: '2023-11-02T14:21:15.660519Z'
 published: '2023-05-14T14:02:14.802227Z'
 references:
 - type: REPORT
@@ -25,6 +25,7 @@ affected:
     repo: https://github.com/LibreDWG/libredwg
     events:
     - introduced: 9a6bd55c9d0722cb101fe85a3b22d89e4ff4fe52
+    - fixed: e87c75f8e812c3a31d3b1139719d705026fb8202
   versions:
   - 0.12.5.5557
   - 0.12.5.5560
@@ -238,4 +239,6 @@ affected:
   - 0.12.5.6517
   ecosystem_specific:
     severity: MEDIUM
+  database_specific:
+    fixed_range: 119ef50a0b1ef395defa5ee453acd5d3c158c638:e87c75f8e812c3a31d3b1139719d705026fb8202
 schema_version: 1.4.0
