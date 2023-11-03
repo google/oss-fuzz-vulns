@@ -1,0 +1,35 @@
+id: OSV-2023-1097
+summary: Security exception in com.puppycrawl.tools.checkstyle.JavaAstVisitor.getInnerBopAst
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=63766
+
+  ```
+  Crash type: Security exception
+  Crash state:
+  com.puppycrawl.tools.checkstyle.JavaAstVisitor.getInnerBopAst
+  java.base/java.util.stream.ReferencePipeline$3$1.accept
+  java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining
+  ```
+modified: '2023-11-01T13:00:52.072463Z'
+published: '2023-11-01T13:00:52.071904Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=63766
+affected:
+- package:
+    name: checkstyle
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/checkstyle
+  ranges:
+  - type: GIT
+    repo: https://github.com/checkstyle/checkstyle
+    events:
+    - introduced: 8896be8cd4e90c59fdba8e048000b0f3472245c9
+    - fixed: c9b25c0e94530ea9bb9514b853d09de71c7c88fa
+  ecosystem_specific:
+    severity: LOW
+  database_specific:
+    introduced_range: a6a339ff58f83c0a8dda04f72c6db6d6e871af66:bd3a9bb9ec9cf804f628171c2e7557b0afbcfd93
+    fixed_range: 8f9c514d2f96bf9b9ef165931a6c509fe369c5c2:c9b25c0e94530ea9bb9514b853d09de71c7c88fa
+  versions: []
+schema_version: 1.6.0

@@ -1,0 +1,52 @@
+id: OSV-2023-1101
+summary: Heap-buffer-overflow in decode_preR13_entities
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=63776
+
+  ```
+  Crash type: Heap-buffer-overflow READ 10
+  Crash state:
+  decode_preR13_entities
+  decode_preR13
+  dwg_decode
+  ```
+modified: '2023-11-02T13:00:18.006480Z'
+published: '2023-11-02T13:00:18.006273Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=63776
+affected:
+- package:
+    name: libredwg
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libredwg
+  ranges:
+  - type: GIT
+    repo: https://github.com/LibreDWG/libredwg
+    events:
+    - introduced: 1760559320f27e75d86c9e6edab467bab63d58e9
+    - fixed: 119ef50a0b1ef395defa5ee453acd5d3c158c638
+  versions:
+  - 0.12.5.6430
+  - 0.12.5.6432
+  - 0.12.5.6434
+  - 0.12.5.6437
+  - 0.12.5.6439
+  - 0.12.5.6444
+  - 0.12.5.6456
+  - 0.12.5.6459
+  - 0.12.5.6461
+  - 0.12.5.6465
+  - 0.12.5.6468
+  - 0.12.5.6479
+  - 0.12.5.6483
+  - 0.12.5.6488
+  - 0.12.5.6493
+  - 0.12.5.6495
+  - 0.12.5.6501
+  - 0.12.5.6511
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    fixed_range: b92d26a26e31b3b6c117b2d80c5ee1c8248e247f:119ef50a0b1ef395defa5ee453acd5d3c158c638
+schema_version: 1.6.0
