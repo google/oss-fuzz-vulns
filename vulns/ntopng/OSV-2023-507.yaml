@@ -10,7 +10,7 @@ details: |
   Flow::processIEC60870Packet
   NetworkInterface::processPacket
   ```
-modified: '2023-06-24T14:00:16.342538Z'
+modified: '2023-11-03T14:22:10.838616Z'
 published: '2023-06-24T14:00:16.342283Z'
 references:
 - type: REPORT
@@ -25,7 +25,8 @@ affected:
     repo: https://github.com/ntop/ntopng.git
     events:
     - introduced: ab73418e29e000c54acb2a71d9f3bb57a779e792
+  versions:
+  - '6.0'
   ecosystem_specific:
     severity: MEDIUM
-  versions: []
 schema_version: 1.4.0
