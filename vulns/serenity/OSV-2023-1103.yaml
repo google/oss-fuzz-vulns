@@ -1,0 +1,31 @@
+id: OSV-2023-1103
+summary: Heap-buffer-overflow in OpenType::be_u32
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=63777
+
+  ```
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  OpenType::be_u32
+  OpenType::Cmap::subtable
+  OpenType::Font::try_load_from_offset
+  ```
+modified: '2023-11-03T13:00:16.932069Z'
+published: '2023-11-03T13:00:16.931853Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=63777
+affected:
+- package:
+    name: serenity
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/serenity
+  ranges:
+  - type: GIT
+    repo: https://github.com/SerenityOS/serenity
+    events:
+    - introduced: c0b2fa74ace4a79ffaed4b7d57032e6586b54d97
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.6.0

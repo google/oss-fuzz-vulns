@@ -1,0 +1,34 @@
+id: OSV-2023-865
+summary: UNKNOWN in WasmEdge::Loader::SharedLibrary::load
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=62387
+
+  ```
+  Crash type: UNKNOWN
+  Crash state:
+  WasmEdge::Loader::SharedLibrary::load
+  WasmEdge::Loader::Loader::loadModule
+  WasmEdge::Loader::Loader::parseModule
+  ```
+modified: '2023-09-16T14:02:40.468956Z'
+published: '2023-09-16T14:02:40.468661Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=62387
+affected:
+- package:
+    name: wasmedge
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/wasmedge
+  ranges:
+  - type: GIT
+    repo: https://github.com/WasmEdge/WasmEdge.git
+    events:
+    - introduced: 58a6d439aeb507ab6e80a2e3b94bb7b33f916f6b
+    - fixed: 7d4213b3abd5360c88e9120c3bc68ffd9b8a6870
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: acd72bc07e02bd87f01f547f28700f2557eb5ba9:4e702bdf26535784116ae7bed25e33d51b2192fc
+  versions: []
+schema_version: 1.6.0
