@@ -10,7 +10,7 @@ details: |
   zend_dispatch_try_catch_finally_helper_SPEC
   ZEND_HANDLE_EXCEPTION_SPEC_HANDLER
   ```
-modified: '2023-10-27T13:01:43.631526Z'
+modified: '2023-11-04T18:09:50.793423Z'
 published: '2023-10-27T13:01:43.631205Z'
 references:
 - type: REPORT
@@ -26,6 +26,8 @@ affected:
     events:
     - introduced: 3eba1a876a12d02d478e2d714d6449ed8c9585a9
     - introduced: e270ee3008829fa50142ff39b2f6e5d2fa9cc665
+    - fixed: 125dbb2c03185fa7a581146522094b0fd6c3f196
+    - fixed: 19dfe05f16ce3317fe36e41fa7857de59a771cae
   ecosystem_specific:
     severity: null
   versions: []
