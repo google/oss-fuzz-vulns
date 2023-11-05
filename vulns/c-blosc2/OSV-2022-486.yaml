@@ -10,7 +10,7 @@ details: |
   frame_to_schunk
   blosc2_schunk_from_buffer
   ```
-modified: '2023-11-04T14:14:23.967293Z'
+modified: '2023-11-05T14:06:36.683542Z'
 published: '2022-06-17T00:00:08.687092Z'
 references:
 - type: REPORT
@@ -59,6 +59,7 @@ affected:
   - v2.10.4
   - v2.10.5
   - v2.11.0
+  - v2.11.1
   ecosystem_specific:
     severity: HIGH
 schema_version: 1.2.0
