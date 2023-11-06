@@ -1,0 +1,32 @@
+id: OSV-2023-1115
+summary: Use-of-uninitialized-value in fp_uninit
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=63867
+
+  ```
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  fp_uninit
+  cryptofuzz::module::libecc::OpECC_ValidatePubkey
+  cryptofuzz::ExecutorBase<bool, cryptofuzz::operation::ECC_ValidatePubkey>::callM
+  ```
+modified: '2023-11-05T13:01:21.842714Z'
+published: '2023-11-05T13:01:21.842426Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=63867
+affected:
+- package:
+    name: libecc
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libecc
+  ranges:
+  - type: GIT
+    repo: https://github.com/libecc/libecc.git
+    events:
+    - introduced: b9329e2826f4d622dbb9ffdd9316e98fda7a023f
+    - fixed: b9329e2826f4d622dbb9ffdd9316e98fda7a023f
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.6.0
