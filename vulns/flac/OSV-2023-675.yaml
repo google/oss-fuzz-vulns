@@ -1,0 +1,32 @@
+id: OSV-2023-675
+summary: Heap-use-after-free in parse_options
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=61292
+
+  ```
+  Crash type: Heap-use-after-free WRITE 4
+  Crash state:
+  parse_options
+  append_new_operation
+  parse_options
+  ```
+modified: '2023-08-09T14:02:25.749178Z'
+published: '2023-08-09T14:02:25.748940Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=61292
+affected:
+- package:
+    name: flac
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/flac
+  ranges:
+  - type: GIT
+    repo: https://github.com/xiph/flac.git
+    events:
+    - introduced: 67d2e1ee4c09ea28a2dae72750a1714f3b8294ef
+  versions:
+  - 1.4.3
+  ecosystem_specific:
+    severity: HIGH
+schema_version: 1.6.0

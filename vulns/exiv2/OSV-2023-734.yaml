@@ -1,0 +1,34 @@
+id: OSV-2023-734
+summary: Container-overflow in libbrotlidec.so.1
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=61675
+
+  ```
+  Crash type: Container-overflow WRITE {*}
+  Crash state:
+  libbrotlidec.so.1
+  BrotliDecoderDecompressStream
+  Exiv2::BmffImage::brotliUncompress
+  ```
+modified: '2023-08-24T14:02:58.433472Z'
+published: '2023-08-24T14:02:58.433195Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=61675
+affected:
+- package:
+    name: exiv2
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/exiv2
+  ranges:
+  - type: GIT
+    repo: https://github.com/Exiv2/exiv2
+    events:
+    - introduced: 53fe85b2c4696d814cbdd4c83af66a555ba1b777
+    - fixed: a1f254358de167af9a619523ca7ba6492bd89959
+    - introduced: f80403767b34818f3298d7ae54e6b36315f3b0a5
+    - fixed: d8f82d5db1fed05a18aa0f84f1cc8899d011a18b
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
+schema_version: 1.6.0

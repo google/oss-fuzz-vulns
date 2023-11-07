@@ -1,0 +1,32 @@
+id: OSV-2023-1117
+summary: Heap-buffer-overflow in cmsMLUsetWide
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=63861
+
+  ```
+  Crash type: Heap-buffer-overflow READ 4
+  Crash state:
+  cmsMLUsetWide
+  Type_Text_Description_Read
+  cmsReadTag
+  ```
+modified: '2023-11-05T13:02:43.507897Z'
+published: '2023-11-05T13:02:43.507558Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=63861
+affected:
+- package:
+    name: lcms
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/lcms
+  ranges:
+  - type: GIT
+    repo: https://github.com/mm2/Little-CMS.git
+    events:
+    - introduced: 5262c5df0adab6ef1eb3f54675fc4dbd2b0883c5
+    - fixed: 178d734163b315db3009fa473930688a9047656f
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.6.0

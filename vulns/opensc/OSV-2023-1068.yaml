@@ -1,0 +1,32 @@
+id: OSV-2023-1068
+summary: Heap-buffer-overflow in iasecc_parse_size
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=63587
+
+  ```
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  iasecc_parse_size
+  iasecc_parse_get_tlv
+  iasecc_parse_docp
+  ```
+modified: '2023-10-26T13:02:23.112686Z'
+published: '2023-10-26T13:02:23.112449Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=63587
+affected:
+- package:
+    name: opensc
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/opensc
+  ranges:
+  - type: GIT
+    repo: https://github.com/OpenSC/OpenSC
+    events:
+    - introduced: fa709de8dc5045f390f321cb65c9c73c36d52dd0
+    - fixed: fbda61d0d276dc98b9d1d1e6810bbd21d19e3859
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.6.0
