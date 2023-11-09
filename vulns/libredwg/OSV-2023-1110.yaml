@@ -1,0 +1,68 @@
+id: OSV-2023-1110
+summary: Stack-buffer-overflow in dynapi_set_helper
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=63824
+
+  ```
+  Crash type: Stack-buffer-overflow READ {*}
+  Crash state:
+  dynapi_set_helper
+  dwg_dynapi_header_set_value
+  json_HEADER
+  ```
+modified: '2023-11-04T13:01:06.701003Z'
+published: '2023-11-04T13:01:06.700754Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=63824
+affected:
+- package:
+    name: libredwg
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libredwg
+  ranges:
+  - type: GIT
+    repo: https://github.com/LibreDWG/libredwg
+    events:
+    - introduced: 76baf858da4cdc14bb4f0d8c994f0aa859232cae
+    - fixed: c8dd9c66bca793aaf3029d1eda50b06828ae14f2
+  versions:
+  - 0.12.5.6384
+  - 0.12.5.6388
+  - 0.12.5.6391
+  - 0.12.5.6394
+  - 0.12.5.6399
+  - 0.12.5.6402
+  - 0.12.5.6406
+  - 0.12.5.6417
+  - 0.12.5.6424
+  - 0.12.5.6430
+  - 0.12.5.6432
+  - 0.12.5.6434
+  - 0.12.5.6437
+  - 0.12.5.6439
+  - 0.12.5.6444
+  - 0.12.5.6456
+  - 0.12.5.6459
+  - 0.12.5.6461
+  - 0.12.5.6465
+  - 0.12.5.6468
+  - 0.12.5.6479
+  - 0.12.5.6483
+  - 0.12.5.6488
+  - 0.12.5.6493
+  - 0.12.5.6495
+  - 0.12.5.6501
+  - 0.12.5.6511
+  - 0.12.5.6513
+  - 0.12.5.6517
+  - 0.12.5.6527
+  - 0.12.5.6533
+  - 0.12.5.6534
+  - 0.12.5.6539
+  - 0.12.5.6543
+  - 0.12.5.6548
+  - 0.12.5.6550
+  ecosystem_specific:
+    severity: MEDIUM
+schema_version: 1.6.0
