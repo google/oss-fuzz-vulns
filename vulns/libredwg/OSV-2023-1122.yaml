@@ -1,0 +1,94 @@
+id: OSV-2023-1122
+summary: Stack-buffer-overflow in dxf_header_read
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=63919
+
+  ```
+  Crash type: Stack-buffer-overflow READ {*}
+  Crash state:
+  dxf_header_read
+  dwg_read_dxf
+  llvmfuzz.c
+  ```
+modified: '2023-11-07T13:01:32.551038Z'
+published: '2023-11-07T13:01:32.550733Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=63919
+affected:
+- package:
+    name: libredwg
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libredwg
+  ranges:
+  - type: GIT
+    repo: https://github.com/LibreDWG/libredwg
+    events:
+    - introduced: 56b087fa0bdb5c5587f2e68f864a7240255f4d82
+  versions:
+  - 0.12.5.6277
+  - 0.12.5.6279
+  - 0.12.5.6285
+  - 0.12.5.6294
+  - 0.12.5.6302
+  - 0.12.5.6306
+  - 0.12.5.6310
+  - 0.12.5.6313
+  - 0.12.5.6316
+  - 0.12.5.6319
+  - 0.12.5.6321
+  - 0.12.5.6325
+  - 0.12.5.6333
+  - 0.12.5.6342
+  - 0.12.5.6347
+  - 0.12.5.6350
+  - 0.12.5.6355
+  - 0.12.5.6357
+  - 0.12.5.6360
+  - 0.12.5.6362
+  - 0.12.5.6366
+  - 0.12.5.6369
+  - 0.12.5.6374
+  - 0.12.5.6377
+  - 0.12.5.6384
+  - 0.12.5.6388
+  - 0.12.5.6391
+  - 0.12.5.6394
+  - 0.12.5.6399
+  - 0.12.5.6402
+  - 0.12.5.6406
+  - 0.12.5.6417
+  - 0.12.5.6424
+  - 0.12.5.6430
+  - 0.12.5.6432
+  - 0.12.5.6434
+  - 0.12.5.6437
+  - 0.12.5.6439
+  - 0.12.5.6444
+  - 0.12.5.6456
+  - 0.12.5.6459
+  - 0.12.5.6461
+  - 0.12.5.6465
+  - 0.12.5.6468
+  - 0.12.5.6479
+  - 0.12.5.6483
+  - 0.12.5.6488
+  - 0.12.5.6493
+  - 0.12.5.6495
+  - 0.12.5.6501
+  - 0.12.5.6511
+  - 0.12.5.6513
+  - 0.12.5.6517
+  - 0.12.5.6527
+  - 0.12.5.6533
+  - 0.12.5.6534
+  - 0.12.5.6539
+  - 0.12.5.6543
+  - 0.12.5.6548
+  - 0.12.5.6550
+  - 0.12.5.6564
+  - 0.12.5.6573
+  - 0.12.5.6578
+  ecosystem_specific:
+    severity: MEDIUM
+schema_version: 1.6.0

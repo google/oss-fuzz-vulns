@@ -1,0 +1,31 @@
+id: OSV-2023-1124
+summary: UNKNOWN READ in cmsIT8GetDataRowColDbl
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=63954
+
+  ```
+  Crash type: UNKNOWN READ
+  Crash state:
+  cmsIT8GetDataRowColDbl
+  cms_cgats_fuzzer.c
+  ```
+modified: '2023-11-08T13:00:59.655691Z'
+published: '2023-11-08T13:00:59.655386Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=63954
+affected:
+- package:
+    name: lcms
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/lcms
+  ranges:
+  - type: GIT
+    repo: https://github.com/mm2/Little-CMS.git
+    events:
+    - introduced: d2c7f4360e9a6fdf3a9949bc9a12ab5eeb02b538
+    - fixed: c3c1ec2e0ad166586dda191a9aba268d7ce98e3b
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.6.0

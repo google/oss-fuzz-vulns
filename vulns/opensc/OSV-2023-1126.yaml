@@ -1,0 +1,32 @@
+id: OSV-2023-1126
+summary: Heap-buffer-overflow in iasecc_parse_acls
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=63949
+
+  ```
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  iasecc_parse_acls
+  iasecc_parse_docp
+  iasecc_sdo_parse_data
+  ```
+modified: '2023-11-08T13:03:19.403118Z'
+published: '2023-11-08T13:03:19.402769Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=63949
+affected:
+- package:
+    name: opensc
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/opensc
+  ranges:
+  - type: GIT
+    repo: https://github.com/OpenSC/OpenSC
+    events:
+    - introduced: fa709de8dc5045f390f321cb65c9c73c36d52dd0
+    - fixed: 8fc2c20c3f895569eeb58328bb882aec07325d3b
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.6.0
