@@ -10,7 +10,7 @@ details: |
   XCFImageFormat::mergeLayerIntoImage
   XCFImageFormat::loadLayer
   ```
-modified: '2023-11-09T14:06:03.105675Z'
+modified: '2023-11-12T14:06:33.925074Z'
 published: '2020-07-14T22:13:55.541274Z'
 references:
 - type: REPORT
@@ -113,5 +113,6 @@ affected:
   - v5.111.0
   - v5.112.0-rc1
   - v5.245.0
+  - v5.112.0
   ecosystem_specific:
     severity: MEDIUM
