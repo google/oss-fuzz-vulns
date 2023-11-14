@@ -1,0 +1,34 @@
+id: OSV-2023-745
+summary: Heap-buffer-overflow in pcpp::SomeIpSdLayer::isDataValid
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=61774
+
+  ```
+  Crash type: Heap-buffer-overflow READ 4
+  Crash state:
+  pcpp::SomeIpSdLayer::isDataValid
+  pcpp::SomeIpLayer::parseSomeIpLayer
+  pcpp::UdpLayer::parseNextLayer
+  ```
+modified: '2023-08-27T14:00:31.929865Z'
+published: '2023-08-27T14:00:31.929598Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=61774
+affected:
+- package:
+    name: pcapplusplus
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/pcapplusplus
+  ranges:
+  - type: GIT
+    repo: https://github.com/seladb/PcapPlusPlus
+    events:
+    - introduced: 6d156bfda910cff94b04124abdb58020b5e1c2a0
+    - fixed: 641232e657ea712d8a94b9816b2fa97f388edb5c
+  versions:
+  - v22.11
+  - v23.09
+  ecosystem_specific:
+    severity: MEDIUM
+schema_version: 1.6.0
