@@ -10,7 +10,7 @@ details: |
   virtio_gpu_set_scanout
   virtio_gpu_simple_process_cmd
   ```
-modified: '2023-10-17T14:27:07.913631Z'
+modified: '2023-11-15T14:29:43.083912Z'
 published: '2021-06-02T00:00:31.619765Z'
 references:
 - type: REPORT
@@ -80,5 +80,6 @@ affected:
   - v8.0.5
   - v8.1.1
   - v8.1.2
+  - v8.2.0-rc0
   ecosystem_specific:
     severity: MEDIUM
