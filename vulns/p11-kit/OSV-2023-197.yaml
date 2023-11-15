@@ -10,7 +10,7 @@ details: |
   rpc_C_MessageEncryptInit
   p11_rpc_server_handle
   ```
-modified: '2023-10-31T14:12:14.972061Z'
+modified: '2023-11-15T14:11:56.895933Z'
 published: '2023-03-18T13:00:57.254906Z'
 references:
 - type: REPORT
@@ -29,6 +29,7 @@ affected:
   - 0.25.0
   - 0.25.1
   - 0.25.2
+  - 0.25.3
   ecosystem_specific:
     severity: null
 schema_version: 1.4.0
