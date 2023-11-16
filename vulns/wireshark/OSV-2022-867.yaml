@@ -10,7 +10,7 @@ details: |
   dissect_form_urlencoded
   call_dissector_work
   ```
-modified: '2023-10-26T16:09:35.442322Z'
+modified: '2023-11-16T15:03:38.774672Z'
 published: '2022-09-09T00:01:54.157712Z'
 references:
 - type: REPORT
@@ -34,6 +34,9 @@ affected:
   - v4.2.0rc2
   - wireshark-4.2.0rc2
   - v4.2.0rc3
+  - v4.2.0
+  - v4.2.1rc0
+  - wireshark-4.2.0
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.2.0
