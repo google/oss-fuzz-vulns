@@ -1,0 +1,32 @@
+id: OSV-2023-1145
+summary: Heap-buffer-overflow in pcpp::GREv1Layer::computeCalculateFields
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=64110
+
+  ```
+  Crash type: Heap-buffer-overflow WRITE 2
+  Crash state:
+  pcpp::GREv1Layer::computeCalculateFields
+  pcpp::Packet::computeCalculateFields
+  FuzzTarget.cpp
+  ```
+modified: '2023-11-13T13:00:35.547021Z'
+published: '2023-11-13T13:00:35.546722Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=64110
+affected:
+- package:
+    name: pcapplusplus
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/pcapplusplus
+  ranges:
+  - type: GIT
+    repo: https://github.com/seladb/PcapPlusPlus
+    events:
+    - introduced: 6a67cab6914074841ed81116ac72219ca070a44d
+    - fixed: a0ecc6dad71f445c95936697c7ee15997d5761b2
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
+schema_version: 1.6.0
