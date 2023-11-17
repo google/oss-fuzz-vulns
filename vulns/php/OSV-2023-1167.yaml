@@ -1,0 +1,31 @@
+id: OSV-2023-1167
+summary: UNKNOWN WRITE in php_strip_url_passwd
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=64209
+
+  ```
+  Crash type: UNKNOWN WRITE
+  Crash state:
+  php_strip_url_passwd
+  php_message_handler_for_zend
+  zend_message_dispatcher
+  ```
+modified: '2023-11-16T13:00:21.458945Z'
+published: '2023-11-16T13:00:21.458665Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=64209
+affected:
+- package:
+    name: php
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/php
+  ranges:
+  - type: GIT
+    repo: https://github.com/php/php-src.git
+    events:
+    - introduced: df286a1b9819fd2a4f3ec57d722f687b4f5eaa6f
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
+schema_version: 1.6.0

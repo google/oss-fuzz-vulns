@@ -1,0 +1,32 @@
+id: OSV-2023-1146
+summary: Negative-size-param in pcpp::RawPacket::insertData
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=64111
+
+  ```
+  Crash type: Negative-size-param
+  Crash state:
+  pcpp::RawPacket::insertData
+  pcpp::Packet::extendLayer
+  pcpp::BgpUpdateMessageLayer::setNetworkLayerReachabilityInfo
+  ```
+modified: '2023-11-13T13:00:39.716577Z'
+published: '2023-11-13T13:00:39.716145Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=64111
+affected:
+- package:
+    name: pcapplusplus
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/pcapplusplus
+  ranges:
+  - type: GIT
+    repo: https://github.com/seladb/PcapPlusPlus
+    events:
+    - introduced: 0c95dfb3557644acc6a10060e48cfae1a61fc2f0
+    - fixed: 9fbc712003baf498635675388a79a76755446b91
+  ecosystem_specific:
+    severity: null
+  versions: []
+schema_version: 1.6.0
