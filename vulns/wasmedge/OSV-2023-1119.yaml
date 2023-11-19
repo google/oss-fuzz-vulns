@@ -1,0 +1,35 @@
+id: OSV-2023-1119
+summary: Segv on unknown address in FunctionCompiler::compileReturn
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=63885
+
+  ```
+  Crash type: Segv on unknown address
+  Crash state:
+  FunctionCompiler::compileReturn
+  WasmEdge::AOT::Compiler::compile
+  WasmEdge::AOT::Compiler::compile
+  ```
+modified: '2023-11-06T13:02:57.494689Z'
+published: '2023-11-06T13:02:57.494372Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=63885
+affected:
+- package:
+    name: wasmedge
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/wasmedge
+  ranges:
+  - type: GIT
+    repo: https://github.com/WasmEdge/WasmEdge.git
+    events:
+    - introduced: 58a6d439aeb507ab6e80a2e3b94bb7b33f916f6b
+    - fixed: 9ba5f8faeacc35ea41033a4e384bef9cc18e9f5c
+  versions:
+  - 0.13.5
+  ecosystem_specific:
+    severity: null
+  database_specific:
+    introduced_range: acd72bc07e02bd87f01f547f28700f2557eb5ba9:4e702bdf26535784116ae7bed25e33d51b2192fc
+schema_version: 1.6.0

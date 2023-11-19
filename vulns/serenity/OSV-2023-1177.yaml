@@ -1,0 +1,31 @@
+id: OSV-2023-1177
+summary: Heap-buffer-overflow in Gfx::ICC::TextDescriptionTagData::from_bytes
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=64219
+
+  ```
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  Gfx::ICC::TextDescriptionTagData::from_bytes
+  Gfx::ICC::Profile::try_load_from_externally_owned_memory
+  FuzzICCProfile.cpp
+  ```
+modified: '2023-11-18T13:01:39.155768Z'
+published: '2023-11-18T13:01:39.155430Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=64219
+affected:
+- package:
+    name: serenity
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/serenity
+  ranges:
+  - type: GIT
+    repo: https://github.com/SerenityOS/serenity
+    events:
+    - introduced: 6e7a6e2d026aef77395518593b3417a8e6b6e6a7
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.6.0
