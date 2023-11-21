@@ -1,0 +1,38 @@
+id: OSV-2023-728
+summary: Use-of-uninitialized-value in aesEncryptBlock
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=61670
+
+  ```
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  aesEncryptBlock
+  EncryptStream::lookChar
+  BaseCryptStream::getChar
+  ```
+modified: '2023-08-24T14:00:27.838520Z'
+published: '2023-08-24T14:00:27.838220Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=61670
+affected:
+- package:
+    name: poppler
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/poppler
+  ranges:
+  - type: GIT
+    repo: https://gitlab.freedesktop.org/poppler/poppler.git
+    events:
+    - introduced: 2c403ec533ad9ad821c37e3f80f8f361ce9cdea8
+  versions:
+  - poppler-23.07.0
+  - poppler-23.08.0
+  - poppler-23.09.0
+  - poppler-23.10.0
+  - poppler-23.11.0
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: 6ebe45e8dceae11d02c74df47c34f4490a45a15e:d9d1550a3e337e041cf2801dfcb0366fcb5b16d0
+schema_version: 1.6.0
