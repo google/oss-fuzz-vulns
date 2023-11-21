@@ -10,7 +10,7 @@ details: |
   sc_select_file
   cflex_delete_file
   ```
-modified: '2023-09-25T14:14:25.461241Z'
+modified: '2023-11-21T14:16:52.429971Z'
 published: '2023-05-14T14:00:57.078498Z'
 references:
 - type: REPORT
@@ -30,6 +30,7 @@ affected:
   - 0.23.0-rc1
   - 0.23.0-rc2
   - 0.24.0-rc1
+  - 0.24.0-rc2
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.4.0
