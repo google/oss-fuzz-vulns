@@ -1,0 +1,32 @@
+id: OSV-2023-1184
+summary: Global-buffer-overflow in dissect_zcl_read_attr_struct
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=64290
+
+  ```
+  Crash type: Global-buffer-overflow READ 4
+  Crash state:
+  dissect_zcl_read_attr_struct
+  dissect_zbee_zcl
+  call_dissector_work_error
+  ```
+modified: '2023-11-20T13:00:42.304481Z'
+published: '2023-11-20T13:00:42.304213Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=64290
+affected:
+- package:
+    name: wireshark
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/wireshark
+  ranges:
+  - type: GIT
+    repo: https://gitlab.com/wireshark/wireshark.git
+    events:
+    - introduced: 34d9cc68a167fb2bb1a809ec4094a3ce39cb4535
+    - fixed: a9b0dc0aa7e5d6e0ddc8ee4010106fc2a44dc8d9
+  ecosystem_specific:
+    severity: null
+  versions: []
+schema_version: 1.6.0

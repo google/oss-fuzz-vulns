@@ -1,0 +1,33 @@
+id: OSV-2023-1163
+summary: Invalid-free in sc_file_clear_acl_entries
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=64181
+
+  ```
+  Crash type: Invalid-free
+  Crash state:
+  sc_file_clear_acl_entries
+  sc_file_free
+  setcos_create_key
+  ```
+modified: '2023-11-15T13:00:41.204717Z'
+published: '2023-11-15T13:00:41.204460Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=64181
+affected:
+- package:
+    name: opensc
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/opensc
+  ranges:
+  - type: GIT
+    repo: https://github.com/OpenSC/OpenSC
+    events:
+    - introduced: aa4b47e33c43716877b8fa6e671125530d5b12ec
+    - fixed: 4013a807492568bf9907cfb3df41f130ac83c7b9
+  versions:
+  - 0.24.0-rc1
+  ecosystem_specific:
+    severity: null
+schema_version: 1.6.0

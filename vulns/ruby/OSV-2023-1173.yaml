@@ -1,0 +1,34 @@
+id: OSV-2023-1173
+summary: Heap-buffer-overflow in fill_lines
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=64218
+
+  ```
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  fill_lines
+  rb_dump_backtrace_with_lines
+  rb_vm_bugreport
+  ```
+modified: '2023-11-17T13:00:49.902383Z'
+published: '2023-11-17T13:00:49.902117Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=64218
+affected:
+- package:
+    name: ruby
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/ruby
+  ranges:
+  - type: GIT
+    repo: https://github.com/ruby/ruby.git
+    events:
+    - introduced: bbfd735b887de71de48c7f862e6e3842bcc03241
+    - fixed: f5c3cda7d6e9053ae5ed66e36d13e568595ff1ec
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    fixed_range: 701b0650de8a5b1436ce1abc65e0fcc2be480c2d:f5c3cda7d6e9053ae5ed66e36d13e568595ff1ec
+  versions: []
+schema_version: 1.6.0
