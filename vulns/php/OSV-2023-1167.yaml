@@ -10,7 +10,7 @@ details: |
   php_message_handler_for_zend
   zend_message_dispatcher
   ```
-modified: '2023-11-16T13:00:21.458945Z'
+modified: '2023-11-23T16:50:04.455264Z'
 published: '2023-11-16T13:00:21.458665Z'
 references:
 - type: REPORT
@@ -25,6 +25,8 @@ affected:
     repo: https://github.com/php/php-src.git
     events:
     - introduced: df286a1b9819fd2a4f3ec57d722f687b4f5eaa6f
+    - fixed: d8e866da04ec5883500332b3d31d5a684188463e
+    - fixed: daa38dd63e6837ec7e3ecdecf7e7be7b13628f16
   ecosystem_specific:
     severity: HIGH
   versions: []
