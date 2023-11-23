@@ -1,0 +1,32 @@
+id: OSV-2023-1172
+summary: Heap-buffer-overflow in pcpp::TLVRecordReader<pcpp::TcpOption>::getTLVRecord
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=64205
+
+  ```
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  pcpp::TLVRecordReader<pcpp::TcpOption>::getTLVRecord
+  pcpp::TcpLayer::addTcpOptionAfter
+  readParsedPacket
+  ```
+modified: '2023-11-16T13:03:00.976647Z'
+published: '2023-11-16T13:03:00.976378Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=64205
+affected:
+- package:
+    name: pcapplusplus
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/pcapplusplus
+  ranges:
+  - type: GIT
+    repo: https://github.com/seladb/PcapPlusPlus
+    events:
+    - introduced: 6a67cab6914074841ed81116ac72219ca070a44d
+    - fixed: f112d0adcae6b75531894b3c1cb29f97bfdad171
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.6.0

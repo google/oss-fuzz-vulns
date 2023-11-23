@@ -1,0 +1,34 @@
+id: OSV-2023-1180
+summary: Heap-buffer-overflow in ih264d_sev
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=64286
+
+  ```
+  Crash type: Heap-buffer-overflow READ 4
+  Crash state:
+  ih264d_sev
+  ih264d_parse_fgc
+  ih264d_parse_sei_payload
+  ```
+modified: '2023-11-19T13:01:31.126224Z'
+published: '2023-11-19T13:01:31.125934Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=64286
+affected:
+- package:
+    name: libavc
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libavc
+  ranges:
+  - type: GIT
+    repo: https://github.com/ittiam-systems/libavc.git
+    events:
+    - introduced: f8ae418b38e8ac52cf87425d27cb20925607debc
+    - fixed: 37beb9729249a1cde472545e2a19d80660e40edc
+  versions:
+  - v1.2.0
+  - v1.3.0
+  ecosystem_specific:
+    severity: MEDIUM
+schema_version: 1.6.0

@@ -1,0 +1,33 @@
+id: OSV-2023-1174
+summary: Stack-buffer-overflow in std::__1::basic_string<char, std::__1::char_traits<char>,
+  std::__1::allocator<ch
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=64237
+
+  ```
+  Crash type: Stack-buffer-overflow READ 5
+  Crash state:
+  std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<ch
+  pcpp::NtpLayer::getReferenceIdentifierString
+  readParsedPacket
+  ```
+modified: '2023-11-17T13:00:58.541823Z'
+published: '2023-11-17T13:00:58.541560Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=64237
+affected:
+- package:
+    name: pcapplusplus
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/pcapplusplus
+  ranges:
+  - type: GIT
+    repo: https://github.com/seladb/PcapPlusPlus
+    events:
+    - introduced: 6a67cab6914074841ed81116ac72219ca070a44d
+    - fixed: 5f1895a7b496fa78a2927bd5fe610ab619a3f49b
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.6.0

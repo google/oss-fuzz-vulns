@@ -1,0 +1,32 @@
+id: OSV-2023-1154
+summary: Heap-buffer-overflow in pcpp::SomeIpSdEntry::SomeIpSdEntry
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=64127
+
+  ```
+  Crash type: Heap-buffer-overflow READ 4
+  Crash state:
+  pcpp::SomeIpSdEntry::SomeIpSdEntry
+  pcpp::SomeIpSdLayer::getEntries
+  readParsedPacket
+  ```
+modified: '2023-11-13T13:03:20.949199Z'
+published: '2023-11-13T13:03:20.948897Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=64127
+affected:
+- package:
+    name: pcapplusplus
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/pcapplusplus
+  ranges:
+  - type: GIT
+    repo: https://github.com/seladb/PcapPlusPlus
+    events:
+    - introduced: 6a67cab6914074841ed81116ac72219ca070a44d
+    - fixed: 6a5cb61eba4f082f7dcd4e87031520102e1babdf
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.6.0
