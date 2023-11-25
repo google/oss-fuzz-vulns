@@ -1,0 +1,31 @@
+id: OSV-2023-756
+summary: Heap-buffer-overflow in rawspeed::DngDecoder::decodeMetaDataInternal
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=61800
+
+  ```
+  Crash type: Heap-buffer-overflow READ 4
+  Crash state:
+  rawspeed::DngDecoder::decodeMetaDataInternal
+  rawspeed::RawDecoder::decodeMetaData
+  ```
+modified: '2023-08-28T14:02:10.741934Z'
+published: '2023-08-28T14:02:10.741602Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=61800
+affected:
+- package:
+    name: librawspeed
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/librawspeed
+  ranges:
+  - type: GIT
+    repo: https://github.com/darktable-org/rawspeed.git
+    events:
+    - introduced: 903158332b9e1fdb460a3f042ffc8207b70bcd54
+  versions:
+  - v3.6
+  ecosystem_specific:
+    severity: MEDIUM
+schema_version: 1.6.0
