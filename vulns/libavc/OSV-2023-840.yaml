@@ -1,0 +1,35 @@
+id: OSV-2023-840
+summary: Null-dereference READ in isvcd_parse_inter_slice_data_cavlc_enh_lyr
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=62290
+
+  ```
+  Crash type: Null-dereference READ
+  Crash state:
+  isvcd_parse_inter_slice_data_cavlc_enh_lyr
+  isvcd_parse_epslice
+  isvcd_parse_decode_slice_ext_nal
+  ```
+modified: '2023-09-13T14:01:19.214860Z'
+published: '2023-09-13T14:01:19.214532Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=62290
+affected:
+- package:
+    name: libavc
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libavc
+  ranges:
+  - type: GIT
+    repo: https://github.com/ittiam-systems/libavc.git
+    events:
+    - introduced: b2a61a152a5e83b3419212e8d15a10d4488e51d9
+    - fixed: 82f4e69094b7d6e4200d14ba64ac9937f337710d
+  versions:
+  - v1.1.1
+  - v1.2.0
+  - v1.3.0
+  ecosystem_specific:
+    severity: null
+schema_version: 1.6.0

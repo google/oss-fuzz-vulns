@@ -1,0 +1,34 @@
+id: OSV-2023-1179
+summary: Index-out-of-bounds in iaace_calc_sfb_dist
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=64267
+
+  ```
+  Crash type: Index-out-of-bounds
+  Crash state:
+  iaace_calc_sfb_dist
+  iaace_estimate_scfs_chan
+  ia_enhaacplus_enc_qc_main
+  ```
+modified: '2023-11-18T13:02:51.213081Z'
+published: '2023-11-18T13:02:51.211821Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=64267
+affected:
+- package:
+    name: libxaac
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libxaac
+  ranges:
+  - type: GIT
+    repo: https://github.com/ittiam-systems/libxaac.git
+    events:
+    - introduced: 695799b8b696425a0c1afbc829a4b8da3bdd315e
+    - fixed: 9b18e51b8af534af96557fd665497e948d494178
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: 10a262f43c6e7113e1f67a2a034c4ff2e1d3f01a:9b18e51b8af534af96557fd665497e948d494178
+  versions: []
+schema_version: 1.6.0
