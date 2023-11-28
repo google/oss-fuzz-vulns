@@ -1,0 +1,32 @@
+id: OSV-2023-1136
+summary: Security exception in org.apache.poi.hssf.record.crypto.Biff8DecryptingStream.isNeverEncryptedRecord
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=64051
+
+  ```
+  Crash type: Security exception
+  Crash state:
+  org.apache.poi.hssf.record.crypto.Biff8DecryptingStream.isNeverEncryptedRecord
+  org.apache.poi.hssf.record.crypto.Biff8DecryptingStream.readRecordSID
+  org.apache.poi.hssf.record.RecordInputStream.readNextSid
+  ```
+modified: '2023-11-11T13:00:42.865622Z'
+published: '2023-11-11T13:00:42.865311Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=64051
+affected:
+- package:
+    name: apache-poi
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/apache-poi
+  ranges:
+  - type: GIT
+    repo: https://github.com/apache/poi.git
+    events:
+    - introduced: 53cb570a0c3b395104b64ce06561728c11779383
+    - fixed: b5da35ee4ed7f60ab5e146799d27723c84619150
+  ecosystem_specific:
+    severity: LOW
+  versions: []
+schema_version: 1.6.0

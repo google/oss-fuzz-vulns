@@ -1,0 +1,47 @@
+id: OSV-2023-754
+summary: Heap-buffer-overflow in H5O__chunk_protect
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=61803
+
+  ```
+  Crash type: Heap-buffer-overflow READ 8
+  Crash state:
+  H5O__chunk_protect
+  H5O__chunk_delete
+  H5O__cont_delete
+  ```
+modified: '2023-08-28T14:00:10.027006Z'
+published: '2023-08-28T14:00:10.026707Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=61803
+affected:
+- package:
+    name: hdf5
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/hdf5
+  ranges:
+  - type: GIT
+    repo: https://github.com/HDFGroup/hdf5
+    events:
+    - introduced: 966454aac1231da7209ef81c11055d3312181f99
+    - introduced: 04f0647727677d716a3c1c772d35a660a8ea0dc5
+    - introduced: 5a0ec52099cf02224a4066b158bcf1a34829db20
+    - introduced: f527239564fc27a6e666ce734b88e4ab18765efc
+  versions:
+  - 1.14.1
+  - hdf5-1_10_10
+  - hdf5-1_10_11
+  - hdf5-1_12_3
+  - hdf5-1_14_1
+  - hdf5-1_14_1-2
+  - hdf5-1_14_2
+  - hdf5-1_14_3
+  - hdf5-1_14_3-rc1
+  - snapshot
+  - snapshot-1.10
+  - snapshot-1.12
+  - snapshot-1.14
+  ecosystem_specific:
+    severity: MEDIUM
+schema_version: 1.6.0
