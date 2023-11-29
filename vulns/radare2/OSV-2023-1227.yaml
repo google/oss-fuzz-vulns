@@ -1,0 +1,31 @@
+id: OSV-2023-1227
+summary: Stack-buffer-overflow in io_memory_read
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=64529
+
+  ```
+  Crash type: Stack-buffer-overflow WRITE 11
+  Crash state:
+  io_memory_read
+  r_io_plugin_read
+  r_io_desc_read
+  ```
+modified: '2023-11-27T13:03:22.970183Z'
+published: '2023-11-27T13:03:22.969939Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=64529
+affected:
+- package:
+    name: radare2
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/radare2
+  ranges:
+  - type: GIT
+    repo: https://github.com/radareorg/radare2
+    events:
+    - introduced: b647b7d367d6f03d18b870cfcde2a015387c375e
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
+schema_version: 1.6.0
