@@ -11,7 +11,7 @@ details: |
   arrow::ipc::ArrayLoader::GetBuffer
   arrow::ipc::ArrayLoader::Visit
   ```
-modified: '2023-10-30T13:03:09.754957Z'
+modified: '2023-11-29T14:16:28.700148Z'
 published: '2023-10-30T13:03:09.754708Z'
 references:
 - type: REPORT
@@ -26,6 +26,7 @@ affected:
     repo: https://github.com/apache/arrow.git
     events:
     - introduced: f62213921b003cc716d6fe50d8604560cea4a3d4
+    - fixed: 84c15da1997559c37841dc16f9e2c70c643dd9d2
   versions:
   - apache-arrow-15.0.0.dev
   ecosystem_specific:
