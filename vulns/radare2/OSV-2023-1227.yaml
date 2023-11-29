@@ -10,7 +10,7 @@ details: |
   r_io_plugin_read
   r_io_desc_read
   ```
-modified: '2023-11-27T13:03:22.970183Z'
+modified: '2023-11-29T14:21:41.958752Z'
 published: '2023-11-27T13:03:22.969939Z'
 references:
 - type: REPORT
@@ -25,6 +25,8 @@ affected:
     repo: https://github.com/radareorg/radare2
     events:
     - introduced: b647b7d367d6f03d18b870cfcde2a015387c375e
+    - fixed: c7e91db654127765a2d2238752ce76a836b55e02
+    - fixed: fc79e134fa1ebafc00849f129d9a5337c725344c
   ecosystem_specific:
     severity: HIGH
   versions: []
