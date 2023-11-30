@@ -10,7 +10,7 @@ details: |
   dwg_decode_entity
   dwg_decode_OLE2FRAME_private
   ```
-modified: '2023-11-29T14:15:32.743636Z'
+modified: '2023-11-30T14:21:23.061622Z'
 published: '2023-04-13T14:02:09.774988Z'
 references:
 - type: REPORT
@@ -441,6 +441,8 @@ affected:
   - 0.12.5.6677
   - 0.12.5.6682
   - 0.12.5.6688
+  - 0.12.5.6697
+  - 0.12.5.6701
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.4.0
