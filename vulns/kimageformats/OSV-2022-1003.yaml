@@ -10,7 +10,7 @@ details: |
   LibRaw::ahd_interpolate
   LibRaw::dcraw_process
   ```
-modified: '2023-11-29T14:06:05.522007Z'
+modified: '2023-12-03T14:06:10.362282Z'
 published: '2022-09-30T00:02:10.026151Z'
 references:
 - type: REPORT
@@ -55,6 +55,7 @@ affected:
   - v5.245.0
   - v5.112.0
   - v5.246.0
+  - v5.113.0-rc1
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.3.0
