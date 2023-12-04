@@ -1,0 +1,32 @@
+id: OSV-2023-1247
+summary: Heap-buffer-overflow in r_bin_coff_new_buf
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=64638
+
+  ```
+  Crash type: Heap-buffer-overflow READ 4
+  Crash state:
+  r_bin_coff_new_buf
+  load
+  r_bin_object_new
+  ```
+modified: '2023-12-02T13:00:46.247042Z'
+published: '2023-12-02T13:00:46.246790Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=64638
+affected:
+- package:
+    name: radare2
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/radare2
+  ranges:
+  - type: GIT
+    repo: https://github.com/radareorg/radare2
+    events:
+    - introduced: 1a4d6e7fe3ce2442c4c7bfc02944c593af2772ca
+    - fixed: bb40f2ac075e5605970f159f5438dc001a92f9f3
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.6.0
