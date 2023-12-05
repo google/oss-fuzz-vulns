@@ -10,7 +10,7 @@ details: |
   translateString
   _lou_translate
   ```
-modified: '2023-07-20T14:02:17.227329Z'
+modified: '2023-12-05T14:19:49.798233Z'
 published: '2023-07-20T14:02:17.227069Z'
 references:
 - type: REPORT
@@ -25,6 +25,7 @@ affected:
     repo: https://github.com/liblouis/liblouis
     events:
     - introduced: bd2f5364d74bdc86af7a13fc690138c453c321de
+    - fixed: 878ef436e6cf401e5134899d70d5a8c0815cd549
   versions:
   - v3.26.0
   - v3.27.0
