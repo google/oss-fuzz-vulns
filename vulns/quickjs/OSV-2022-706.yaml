@@ -1,0 +1,32 @@
+id: OSV-2022-706
+summary: Heap-buffer-overflow in find_jump_target
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=50077
+
+  ```
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  find_jump_target
+  resolve_labels
+  js_create_function
+  ```
+modified: '2022-08-13T00:01:11.298818Z'
+published: '2022-08-13T00:01:11.298572Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=50077
+affected:
+- package:
+    name: quickjs
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/quickjs
+  ranges:
+  - type: GIT
+    repo: https://github.com/bellard/quickjs
+    events:
+    - introduced: 446099aa9ebd7fcd54d3fdc6f6b25ee8c8c97a7d
+    - fixed: f87cab0fc62866f4d4dfff0526adebe4fda364e2
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.6.0

@@ -1,0 +1,32 @@
+id: OSV-2023-1263
+summary: Heap-buffer-overflow in js_is_live_code
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=64726
+
+  ```
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  js_is_live_code
+  js_parse_statement_or_decl
+  js_parse_block
+  ```
+modified: '2023-12-07T00:05:27.754792Z'
+published: '2023-12-07T00:05:27.754264Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=64726
+affected:
+- package:
+    name: quickjs
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/quickjs
+  ranges:
+  - type: GIT
+    repo: https://github.com/bellard/quickjs
+    events:
+    - introduced: 446099aa9ebd7fcd54d3fdc6f6b25ee8c8c97a7d
+    - fixed: f87cab0fc62866f4d4dfff0526adebe4fda364e2
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.6.0
