@@ -10,7 +10,7 @@ details: |
   XCFImageFormat::loadLevel
   XCFImageFormat::loadHierarchy
   ```
-modified: '2023-09-07T14:00:27.693517Z'
+modified: '2023-12-07T14:15:51.758379Z'
 published: '2023-09-07T14:00:27.693270Z'
 references:
 - type: REPORT
@@ -25,6 +25,7 @@ affected:
     repo: https://invent.kde.org/frameworks/kimageformats.git
     events:
     - introduced: bcec942cc92e0968c724a2c1f92b4cd048bf8fa7
+    - introduced: 4badb3088e90d86208ed6bd435df7fe6a022be64
   versions:
   - v5.110.0
   - v5.110.0-rc1
