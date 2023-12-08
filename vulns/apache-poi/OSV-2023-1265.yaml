@@ -1,0 +1,34 @@
+id: OSV-2023-1265
+summary: Security exception in org.apache.poi.hdgf.streams.ChunkStream.findChunks
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=64782
+
+  ```
+  Crash type: Security exception
+  Crash state:
+  org.apache.poi.hdgf.streams.ChunkStream.findChunks
+  org.apache.poi.hdgf.streams.PointerContainingStream.findChildren
+  org.apache.poi.hdgf.streams.PointerContainingStream.findChildren
+  ```
+modified: '2023-12-08T00:02:47.593139Z'
+published: '2023-12-08T00:02:47.592445Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=64782
+affected:
+- package:
+    name: apache-poi
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/apache-poi
+  ranges:
+  - type: GIT
+    repo: https://github.com/apache/poi.git
+    events:
+    - introduced: e0b7dcda83288307c1ad7b656f0215d990c6ed05
+    - fixed: 6775bd259d4ef3e4c945b823606c63227b1a46ee
+  ecosystem_specific:
+    severity: LOW
+  database_specific:
+    fixed_range: e0b7dcda83288307c1ad7b656f0215d990c6ed05:6775bd259d4ef3e4c945b823606c63227b1a46ee
+  versions: []
+schema_version: 1.6.0
