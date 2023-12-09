@@ -10,7 +10,7 @@ details: |
   parse_privacy
   fuzz_parse_msg.c
   ```
-modified: '2023-09-09T14:00:12.875855Z'
+modified: '2023-12-09T14:23:28.975076Z'
 published: '2023-09-09T14:00:12.875572Z'
 references:
 - type: REPORT
@@ -28,6 +28,8 @@ affected:
     - introduced: 4578fb676177e16324c2241820cf5f8042503a37
     - introduced: 730167bf4e26ba44bf69275730efbf81e541ad1a
     - introduced: 8320cc8db43d8e713a1e2547867755031d724b46
+    - fixed: 804ee651b45498727196886c97cb55d20b254c4a
+    - fixed: 8674b333300d5829bff9cb4993886bcf7bea249b
   versions:
   - 5.3.9
   - 5.4.7
