@@ -1,0 +1,53 @@
+id: OSV-2023-813
+summary: UNKNOWN READ in parse_priv_value
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=62188
+
+  ```
+  Crash type: UNKNOWN READ
+  Crash state:
+  parse_priv_value
+  parse_privacy
+  fuzz_parse_msg.c
+  ```
+modified: '2023-09-09T14:00:12.875855Z'
+published: '2023-09-09T14:00:12.875572Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=62188
+affected:
+- package:
+    name: kamailio
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/kamailio
+  ranges:
+  - type: GIT
+    repo: https://github.com/kamailio/kamailio
+    events:
+    - introduced: 63ecb827631189d27da6a85d41149985d95fc479
+    - introduced: 4578fb676177e16324c2241820cf5f8042503a37
+    - introduced: 730167bf4e26ba44bf69275730efbf81e541ad1a
+    - introduced: 8320cc8db43d8e713a1e2547867755031d724b46
+  versions:
+  - 5.3.9
+  - 5.4.7
+  - 5.4.8
+  - 5.4.9
+  - 5.5.3
+  - 5.5.4
+  - 5.5.5
+  - 5.5.6
+  - 5.5.7
+  - 5.6.0
+  - 5.6.1
+  - 5.6.2
+  - 5.6.3
+  - 5.6.4
+  - 5.6.5
+  - 5.7.0
+  - 5.7.1
+  - 5.7.2
+  - 5.7.3
+  ecosystem_specific:
+    severity: MEDIUM
+schema_version: 1.6.0

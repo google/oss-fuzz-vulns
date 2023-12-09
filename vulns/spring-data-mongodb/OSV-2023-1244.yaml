@@ -1,0 +1,34 @@
+id: OSV-2023-1244
+summary: Security exception in org.springframework.expression.spel.ast.OpPlus.getValueInternal
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=64641
+
+  ```
+  Crash type: Security exception
+  Crash state:
+  org.springframework.expression.spel.ast.OpPlus.getValueInternal
+  org.springframework.util.ConcurrentReferenceHashMap$Segment.restructureIfNecessa
+  org.springframework.util.ConcurrentReferenceHashMap.purgeUnreferencedEntries
+  ```
+modified: '2023-12-02T13:00:17.170997Z'
+published: '2023-12-02T13:00:17.170709Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=64641
+affected:
+- package:
+    name: spring-data-mongodb
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/spring-data-mongodb
+  ranges:
+  - type: GIT
+    repo: https://github.com/spring-projects/spring-data-mongodb
+    events:
+    - introduced: fa9fbcb2edca6e32e7c154b2876a9a4c01762f5f
+    - fixed: 6b8749278bde658ee1c212585cd84f2744fb5936
+  ecosystem_specific:
+    severity: LOW
+  database_specific:
+    introduced_range: b7eedad2f5c7f03f1706ce75755f1d2038cd8092:6b8749278bde658ee1c212585cd84f2744fb5936
+  versions: []
+schema_version: 1.6.0
