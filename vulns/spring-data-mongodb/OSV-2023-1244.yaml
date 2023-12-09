@@ -10,7 +10,7 @@ details: |
   org.springframework.util.ConcurrentReferenceHashMap$Segment.restructureIfNecessa
   org.springframework.util.ConcurrentReferenceHashMap.purgeUnreferencedEntries
   ```
-modified: '2023-12-02T13:00:17.170997Z'
+modified: '2023-12-09T14:11:35.526034Z'
 published: '2023-12-02T13:00:17.170709Z'
 references:
 - type: REPORT
@@ -26,6 +26,8 @@ affected:
     events:
     - introduced: fa9fbcb2edca6e32e7c154b2876a9a4c01762f5f
     - fixed: 6b8749278bde658ee1c212585cd84f2744fb5936
+    - introduced: 6f6b61d59525a4bb3237a065622784aff591379e
+    - fixed: 4aec4f33e61a4f29fe8f28c09ea3b8f434c5b18e
   ecosystem_specific:
     severity: LOW
   database_specific:
