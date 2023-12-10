@@ -1,0 +1,34 @@
+id: OSV-2023-1266
+summary: Security exception in java.base/javax.crypto.spec.SecretKeySpec.<init>
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=64768
+
+  ```
+  Crash type: Security exception
+  Crash state:
+  java.base/javax.crypto.spec.SecretKeySpec.<init>
+  org.apache.poi.poifs.crypt.binaryrc4.BinaryRC4Decryptor.initCipherForBlock
+  org.apache.poi.poifs.crypt.binaryrc4.BinaryRC4Decryptor.initCipherForBlock
+  ```
+modified: '2023-12-08T00:10:39.043541Z'
+published: '2023-12-08T00:10:39.042967Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=64768
+affected:
+- package:
+    name: apache-poi
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/apache-poi
+  ranges:
+  - type: GIT
+    repo: https://github.com/apache/poi.git
+    events:
+    - introduced: 3f317f5b32db4462aa2e9b0e54bf07399ead71c1
+    - fixed: ecc42ac4f25da02b571ab1d29e15f7b3c911447a
+  ecosystem_specific:
+    severity: LOW
+  database_specific:
+    introduced_range: 5b246ca08035a9343f1a1525b53149947be8e554:6e3d031e80d83bc914299a1cc992594f5800595a
+  versions: []
+schema_version: 1.6.0
