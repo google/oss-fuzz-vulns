@@ -1,0 +1,32 @@
+id: OSV-2023-1271
+summary: Heap-buffer-overflow in is_decl_requires_met
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=64849
+
+  ```
+  Crash type: Heap-buffer-overflow READ 8
+  Crash state:
+  is_decl_requires_met
+  enable_avrules
+  link_modules
+  ```
+modified: '2023-12-09T00:03:11.120297Z'
+published: '2023-12-09T00:03:11.119664Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=64849
+affected:
+- package:
+    name: selinux
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/selinux
+  ranges:
+  - type: GIT
+    repo: https://github.com/SELinuxProject/selinux
+    events:
+    - introduced: 00cfecf62914fe9ab8c33f653c78440ef5ed21c7
+    - fixed: e54bedce80267b4fbd79b16f548a278c097bd675
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.6.0

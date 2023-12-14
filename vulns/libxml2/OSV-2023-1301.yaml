@@ -1,0 +1,32 @@
+id: OSV-2023-1301
+summary: Global-buffer-overflow in xmlDictLookupInternal
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=65012
+
+  ```
+  Crash type: Global-buffer-overflow READ 1
+  Crash state:
+  xmlDictLookupInternal
+  xmlDictLookupHashed
+  xmlParseNCName
+  ```
+modified: '2023-12-14T00:13:26.533280Z'
+published: '2023-12-14T00:13:26.532719Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=65012
+affected:
+- package:
+    name: libxml2
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libxml2
+  ranges:
+  - type: GIT
+    repo: https://gitlab.gnome.org/GNOME/libxml2.git
+    events:
+    - introduced: e115194e6fc7f86e2e47224b758653f43501e6fe
+    - fixed: 8e13133dbd2c10e8a498235a62f9beceb19b87a1
+  ecosystem_specific:
+    severity: null
+  versions: []
+schema_version: 1.6.0

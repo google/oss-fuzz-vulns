@@ -1,0 +1,32 @@
+id: OSV-2023-1299
+summary: Global-buffer-overflow in pcre_get_compiled_regex_cache_ex
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=65021
+
+  ```
+  Crash type: Global-buffer-overflow READ 1
+  Crash state:
+  pcre_get_compiled_regex_cache_ex
+  php_do_pcre_match
+  zif_preg_match
+  ```
+modified: '2023-12-14T00:12:13.097842Z'
+published: '2023-12-14T00:12:13.097305Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=65021
+affected:
+- package:
+    name: php
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/php
+  ranges:
+  - type: GIT
+    repo: https://github.com/php/php-src.git
+    events:
+    - introduced: 642e11140c3a8461ab9a78d6ce3d3a79b0151987
+    - fixed: 2b8c00850b86ab40457dcd09a35a8cd9e0c4f9f0
+  ecosystem_specific:
+    severity: null
+  versions: []
+schema_version: 1.6.0
