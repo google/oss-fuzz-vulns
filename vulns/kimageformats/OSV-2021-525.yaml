@@ -11,7 +11,7 @@ details: |
   edge_filtering_chroma
   thread_task_deblock_CTBRow::work
   ```
-modified: '2023-12-02T14:07:24.814233Z'
+modified: '2023-12-15T14:06:31.591610Z'
 published: '2021-03-16T00:00:19.176877Z'
 references:
 - type: REPORT
@@ -95,5 +95,6 @@ affected:
   - v5.112.0
   - v5.246.0
   - v5.113.0-rc1
+  - v5.113.0
   ecosystem_specific:
     severity: MEDIUM
