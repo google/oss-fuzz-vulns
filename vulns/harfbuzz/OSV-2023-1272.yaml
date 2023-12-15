@@ -1,0 +1,33 @@
+id: OSV-2023-1272
+summary: Heap-buffer-overflow in OT::cff2::accelerator_templ_t<CFF::cff2_private_dict_opset_t,
+  CFF::cff2_private_
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=64859
+
+  ```
+  Crash type: Heap-buffer-overflow READ 2
+  Crash state:
+  OT::cff2::accelerator_templ_t<CFF::cff2_private_dict_opset_t, CFF::cff2_private_
+  hb_ot_draw_glyph
+  hb_font_draw_glyph
+  ```
+modified: '2023-12-09T00:05:42.582124Z'
+published: '2023-12-09T00:05:42.581782Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=64859
+affected:
+- package:
+    name: harfbuzz
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/harfbuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/harfbuzz/harfbuzz.git
+    events:
+    - introduced: bf84135edda601fdead430b231a9ce50d38837d2
+    - fixed: 5b325c0ae9cdd7ca03c002d7cae92a6d17f5111b
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.6.0

@@ -1,0 +1,32 @@
+id: OSV-2023-1300
+summary: Security exception in com.fasterxml.jackson.core.JsonParser.currentName
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=65024
+
+  ```
+  Crash type: Security exception
+  Crash state:
+  com.fasterxml.jackson.core.JsonParser.currentName
+  com.fasterxml.jackson.dataformat.yaml.YAMLParser.currentName
+  com.fasterxml.jackson.dataformat.yaml.YAMLParser.getCurrentName
+  ```
+modified: '2023-12-14T00:13:10.209415Z'
+published: '2023-12-14T00:13:10.208981Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=65024
+affected:
+- package:
+    name: jackson-dataformats-text
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/jackson-dataformats-text
+  ranges:
+  - type: GIT
+    repo: https://github.com/FasterXML/jackson-dataformats-text.git
+    events:
+    - introduced: 6b3977368d0795664e204ed59b09f48ddca6934d
+    - fixed: 5aabe075fb0fb87c8f48c676e3fe8e84fa683262
+  ecosystem_specific:
+    severity: LOW
+  versions: []
+schema_version: 1.6.0

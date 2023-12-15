@@ -1,0 +1,32 @@
+id: OSV-2023-1268
+summary: Stack-buffer-overflow in decNaNs
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=64771
+
+  ```
+  Crash type: Stack-buffer-overflow WRITE 2
+  Crash state:
+  decNaNs
+  decCompareOp
+  decNumberCompare
+  ```
+modified: '2023-12-08T00:11:32.087163Z'
+published: '2023-12-08T00:11:32.086790Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=64771
+affected:
+- package:
+    name: jq
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/jq
+  ranges:
+  - type: GIT
+    repo: https://github.com/jqlang/jq
+    events:
+    - introduced: bfb7fd570f521ef832fe1c3bca0e05abd398284c
+    - fixed: c9a51565214eece8f1053089739aea73145bfd6b
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
+schema_version: 1.6.0

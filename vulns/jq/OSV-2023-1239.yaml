@@ -1,0 +1,32 @@
+id: OSV-2023-1239
+summary: Heap-buffer-overflow in decToString
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=64574
+
+  ```
+  Crash type: Heap-buffer-overflow WRITE 1
+  Crash state:
+  decToString
+  decNumberToString
+  jv_number_get_literal
+  ```
+modified: '2023-11-30T13:00:20.622871Z'
+published: '2023-11-30T13:00:20.622604Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=64574
+affected:
+- package:
+    name: jq
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/jq
+  ranges:
+  - type: GIT
+    repo: https://github.com/jqlang/jq
+    events:
+    - introduced: d14393f5522531f57b8e3a83c04b7990c64a249e
+    - fixed: 71c2ab509a8628dbbad4bc7b3f98a64aa90d3297
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
+schema_version: 1.6.0

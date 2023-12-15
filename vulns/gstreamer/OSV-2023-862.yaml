@@ -1,0 +1,31 @@
+id: OSV-2023-862
+summary: Heap-use-after-free in g_datalist_get_flags
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=62381
+
+  ```
+  Crash type: Heap-use-after-free READ 8
+  Crash state:
+  g_datalist_get_flags
+  g_object_unref
+  gst_object_unref
+  ```
+modified: '2023-09-16T14:01:07.281082Z'
+published: '2023-09-16T14:01:07.280790Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=62381
+affected:
+- package:
+    name: gstreamer
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/gstreamer
+  ranges:
+  - type: GIT
+    repo: https://gitlab.freedesktop.org/gstreamer/gstreamer.git
+    events:
+    - introduced: 5fd3c8a16c9035d7ce334e2f1514cbc8f580b4e6
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
+schema_version: 1.6.0

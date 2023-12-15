@@ -1,0 +1,35 @@
+id: OSV-2023-1307
+summary: UNKNOWN READ in init_struct_ops_maps
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=65047
+
+  ```
+  Crash type: UNKNOWN READ
+  Crash state:
+  init_struct_ops_maps
+  bpf_object__init_maps
+  bpf_object_open
+  ```
+modified: '2023-12-15T00:12:51.528602Z'
+published: '2023-12-15T00:12:51.528155Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=65047
+affected:
+- package:
+    name: libbpf
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libbpf
+  ranges:
+  - type: GIT
+    repo: https://github.com/libbpf/libbpf
+    events:
+    - introduced: 3cd45b660ce26f3b6f80a6eac6f9fab7fb56bcb4
+  versions:
+  - v1.1.0
+  - v1.2.0
+  - v1.2.2
+  - v1.3.0
+  ecosystem_specific:
+    severity: MEDIUM
+schema_version: 1.6.0
