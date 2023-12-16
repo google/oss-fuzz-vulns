@@ -10,7 +10,7 @@ details: |
   dwg_decode_MINSERT_private
   dwg_decode_MINSERT
   ```
-modified: '2023-12-15T14:20:30.685069Z'
+modified: '2023-12-16T14:20:07.644053Z'
 published: '2023-02-02T13:00:40.999896Z'
 references:
 - type: REPORT
@@ -25,6 +25,7 @@ affected:
     repo: https://github.com/LibreDWG/libredwg
     events:
     - introduced: ae09b9b7b51bda4a719279a6ade6dadeaf5ef39f
+    - fixed: 02fd447dbbcc68d6e3cf819ccc0f8fb6c9bb07aa
   versions:
   - 0.12.5.5016
   - 0.12.5.5024
@@ -382,7 +383,6 @@ affected:
   - 0.12.5.6735
   - 0.12.5.6739
   - 0.12.5.6754
-  - 0.12.5.6756
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.4.0
