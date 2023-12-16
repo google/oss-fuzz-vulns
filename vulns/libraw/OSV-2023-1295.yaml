@@ -1,0 +1,36 @@
+id: OSV-2023-1295
+summary: Global-buffer-overflow in libraw_tagtype_dataunit_bytes
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=65027
+
+  ```
+  Crash type: Global-buffer-overflow READ 4
+  Crash state:
+  libraw_tagtype_dataunit_bytes
+  checked_buffer_t::tiff_sget
+  LibRaw::parseSonySR2
+  ```
+modified: '2023-12-14T00:03:32.723513Z'
+published: '2023-12-14T00:03:32.723059Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=65027
+affected:
+- package:
+    name: libraw
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libraw
+  ranges:
+  - type: GIT
+    repo: https://github.com/libraw/libraw
+    events:
+    - introduced: 4c954948ba2de262b9cb23a1843fb8651aa3dcc1
+    - fixed: a6f212a4a1fe19dce1f83c83384f171fd7babb0a
+    - fixed: 62f0423663f2fdfd46eedecd4690e39fa899d0a6
+  versions:
+  - 0.21-Beta1
+  - 0.21.0
+  - 0.21.1
+  ecosystem_specific:
+    severity: null
+schema_version: 1.6.0

@@ -1,0 +1,33 @@
+id: OSV-2023-869
+summary: Heap-buffer-overflow in Assimp::MD5::MD5MeshParser::MD5MeshParser
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=62441
+
+  ```
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  Assimp::MD5::MD5MeshParser::MD5MeshParser
+  Assimp::MD5Importer::LoadMD5MeshFile
+  Assimp::MD5Importer::InternReadFile
+  ```
+modified: '2023-09-17T14:01:25.028618Z'
+published: '2023-09-17T14:01:25.028324Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=62441
+affected:
+- package:
+    name: assimp
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/assimp
+  ranges:
+  - type: GIT
+    repo: https://github.com/assimp/assimp.git
+    events:
+    - introduced: 8012657169fdd503251b6694c12cdb32a85bdf6a
+  versions:
+  - v5.3.0
+  - v5.3.1
+  ecosystem_specific:
+    severity: MEDIUM
+schema_version: 1.6.0
