@@ -1,0 +1,32 @@
+id: OSV-2023-1303
+summary: Heap-use-after-free in htmlCurrentChar
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=65043
+
+  ```
+  Crash type: Heap-use-after-free READ 1
+  Crash state:
+  htmlCurrentChar
+  htmlParseComment
+  htmlParseDocument
+  ```
+modified: '2023-12-15T00:00:06.314002Z'
+published: '2023-12-15T00:00:06.313566Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=65043
+affected:
+- package:
+    name: libxml2
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libxml2
+  ranges:
+  - type: GIT
+    repo: https://gitlab.gnome.org/GNOME/libxml2.git
+    events:
+    - introduced: 8e13133dbd2c10e8a498235a62f9beceb19b87a1
+    - fixed: 69d88566b6063b6e11f473fccddaa0174b60d6a6
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
+schema_version: 1.6.0
