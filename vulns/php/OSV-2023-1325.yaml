@@ -1,0 +1,31 @@
+id: OSV-2023-1325
+summary: UNKNOWN WRITE in zero
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=65135
+
+  ```
+  Crash type: UNKNOWN WRITE
+  Crash state:
+  zero
+  zend_execute
+  fuzzer_do_request_from_buffer
+  ```
+modified: '2023-12-18T00:04:49.366308Z'
+published: '2023-12-18T00:04:49.365880Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=65135
+affected:
+- package:
+    name: php
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/php
+  ranges:
+  - type: GIT
+    repo: https://github.com/php/php-src.git
+    events:
+    - introduced: df286a1b9819fd2a4f3ec57d722f687b4f5eaa6f
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
+schema_version: 1.6.0
