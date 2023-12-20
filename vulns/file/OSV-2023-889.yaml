@@ -1,0 +1,35 @@
+id: OSV-2023-889
+summary: Heap-double-free in regcomp
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=62529
+
+  ```
+  Crash type: Heap-double-free
+  Crash state:
+  regcomp
+  file_regcomp
+  load_1
+  ```
+modified: '2023-09-21T14:00:59.739382Z'
+published: '2023-09-21T14:00:59.739088Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=62529
+affected:
+- package:
+    name: file
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/file
+  ranges:
+  - type: GIT
+    repo: https://github.com/file/file.git
+    events:
+    - introduced: fc5ce7ab57ab4755430cd05706d4289a7d704b03
+  versions:
+  - FILE5_44
+  - FILE5_45
+  ecosystem_specific:
+    severity: HIGH
+  database_specific:
+    introduced_range: 2d5f85874bf3c9c4841c08d18e97e0fe16bae19f:5f957469b734366c8d4cbd050609ba4cc3a5c47c
+schema_version: 1.6.0
