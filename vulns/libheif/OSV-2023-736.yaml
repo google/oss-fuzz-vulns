@@ -10,7 +10,7 @@ details: |
   HeifContext::read_from_memory
   heif_context_read_from_memory
   ```
-modified: '2023-11-21T14:16:56.704126Z'
+modified: '2023-12-20T14:12:01.243209Z'
 published: '2023-08-25T14:00:14.487219Z'
 references:
 - type: REPORT
@@ -32,6 +32,7 @@ affected:
   - v1.17.3
   - v1.17.4
   - v1.17.5
+  - v1.17.6
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.6.0
