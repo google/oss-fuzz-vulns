@@ -1,0 +1,31 @@
+id: OSV-2023-1328
+summary: Stack-buffer-overflow in icu_75::TZDBTimeZoneNames::getMetaZoneNames
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=65128
+
+  ```
+  Crash type: Stack-buffer-overflow WRITE 1
+  Crash state:
+  icu_75::TZDBTimeZoneNames::getMetaZoneNames
+  icu_75::TZDBTimeZoneNames::getMetaZoneDisplayName
+  TestNames
+  ```
+modified: '2023-12-18T00:13:09.644022Z'
+published: '2023-12-18T00:13:09.643640Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=65128
+affected:
+- package:
+    name: icu
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/icu
+  ranges:
+  - type: GIT
+    repo: https://github.com/unicode-org/icu.git
+    events:
+    - introduced: 5cf5ec1adbd2332b3cc289b5b1f5ca8324275fc3
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
+schema_version: 1.6.0
