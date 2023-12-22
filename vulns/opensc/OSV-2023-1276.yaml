@@ -1,0 +1,33 @@
+id: OSV-2023-1276
+summary: Heap-use-after-free in authentic_emu_update_tokeninfo
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=64898
+
+  ```
+  Crash type: Heap-use-after-free READ 8
+  Crash state:
+  authentic_emu_update_tokeninfo
+  sc_pkcs15init_update_tokeninfo
+  sc_pkcs15init_update_lastupdate
+  ```
+modified: '2023-12-10T00:04:07.333792Z'
+published: '2023-12-10T00:04:07.333337Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=64898
+affected:
+- package:
+    name: opensc
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/opensc
+  ranges:
+  - type: GIT
+    repo: https://github.com/OpenSC/OpenSC
+    events:
+    - introduced: 6d1fcd9cf82c6501089898066656fbe6737f3ced
+    - fixed: 5835f0d4f6c033bd58806d33fa546908d39825c9
+  versions:
+  - 0.24.0
+  ecosystem_specific:
+    severity: HIGH
+schema_version: 1.6.0
