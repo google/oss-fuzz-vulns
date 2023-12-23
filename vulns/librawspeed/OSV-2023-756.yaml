@@ -9,7 +9,7 @@ details: |
   rawspeed::DngDecoder::decodeMetaDataInternal
   rawspeed::RawDecoder::decodeMetaData
   ```
-modified: '2023-08-28T14:02:10.741934Z'
+modified: '2023-12-23T14:16:41.470280Z'
 published: '2023-08-28T14:02:10.741602Z'
 references:
 - type: REPORT
@@ -24,6 +24,7 @@ affected:
     repo: https://github.com/darktable-org/rawspeed.git
     events:
     - introduced: 903158332b9e1fdb460a3f042ffc8207b70bcd54
+    - fixed: b79d3f2ab9df07be675d262474a70f59eae55a66
   versions:
   - v3.6
   ecosystem_specific:
