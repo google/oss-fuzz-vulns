@@ -1,0 +1,32 @@
+id: OSV-2023-1291
+summary: Security exception in org.apache.poi.poifs.crypt.binaryrc4.BinaryRC4Decryptor.initCipherForBlock
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=64979
+
+  ```
+  Crash type: Security exception
+  Crash state:
+  org.apache.poi.poifs.crypt.binaryrc4.BinaryRC4Decryptor.initCipherForBlock
+  org.apache.poi.poifs.crypt.binaryrc4.BinaryRC4Decryptor.initCipherForBlock
+  org.apache.poi.poifs.crypt.binaryrc4.BinaryRC4Decryptor$BinaryRC4CipherInputStre
+  ```
+modified: '2023-12-13T00:03:48.820457Z'
+published: '2023-12-13T00:03:48.820074Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=64979
+affected:
+- package:
+    name: apache-poi
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/apache-poi
+  ranges:
+  - type: GIT
+    repo: https://github.com/apache/poi.git
+    events:
+    - introduced: e0b7dcda83288307c1ad7b656f0215d990c6ed05
+    - fixed: 2f25c1ab90fd3525dde467757a7a7d99f5900737
+  ecosystem_specific:
+    severity: LOW
+  versions: []
+schema_version: 1.6.0

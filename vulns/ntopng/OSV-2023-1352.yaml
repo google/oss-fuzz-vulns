@@ -1,0 +1,34 @@
+id: OSV-2023-1352
+summary: Heap-buffer-overflow in Flow::dissectMDNS
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=65271
+
+  ```
+  Crash type: Heap-buffer-overflow READ {*}
+  Crash state:
+  Flow::dissectMDNS
+  NetworkInterface::processPacket
+  NetworkInterface::dissectPacket
+  ```
+modified: '2023-12-24T00:05:23.975551Z'
+published: '2023-12-24T00:05:23.975196Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=65271
+affected:
+- package:
+    name: ntopng
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/ntopng
+  ranges:
+  - type: GIT
+    repo: https://github.com/ntop/ntopng.git
+    events:
+    - introduced: 35b09487b9e38f11e5e01fc3cf9eb60b1b493f7c
+    - fixed: 6a91951fd6056db92bf661fdca4c9b4b439a8992
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    fixed_range: 98c8b49d9731e3cb015fd0cc84e9a4d60d0f6193:6a91951fd6056db92bf661fdca4c9b4b439a8992
+  versions: []
+schema_version: 1.6.0
