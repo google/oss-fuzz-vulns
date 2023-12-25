@@ -1,0 +1,33 @@
+id: OSV-2023-1356
+summary: Heap-buffer-overflow in rawspeed::DngDecoder::parseWhiteBalance
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=65309
+
+  ```
+  Crash type: Heap-buffer-overflow READ 4
+  Crash state:
+  rawspeed::DngDecoder::parseWhiteBalance
+  rawspeed::DngDecoder::decodeMetaDataInternal
+  rawspeed::RawDecoder::decodeMetaData
+  ```
+modified: '2023-12-25T00:10:36.483166Z'
+published: '2023-12-25T00:10:36.482844Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=65309
+affected:
+- package:
+    name: librawspeed
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/librawspeed
+  ranges:
+  - type: GIT
+    repo: https://github.com/darktable-org/rawspeed.git
+    events:
+    - introduced: 903158332b9e1fdb460a3f042ffc8207b70bcd54
+    - fixed: b79d3f2ab9df07be675d262474a70f59eae55a66
+  versions:
+  - v3.6
+  ecosystem_specific:
+    severity: MEDIUM
+schema_version: 1.6.0

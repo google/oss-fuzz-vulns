@@ -1,0 +1,32 @@
+id: OSV-2023-1357
+summary: Heap-buffer-overflow in processClientServerHello
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=65307
+
+  ```
+  Crash type: Heap-buffer-overflow READ 2
+  Crash state:
+  processClientServerHello
+  process_tls
+  fuzz_quic_get_crypto_data.c
+  ```
+modified: '2023-12-25T00:13:45.414669Z'
+published: '2023-12-25T00:13:45.414227Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=65307
+affected:
+- package:
+    name: ndpi
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/ndpi
+  ranges:
+  - type: GIT
+    repo: https://github.com/ntop/nDPI.git
+    events:
+    - introduced: cbea1b2203647e3ee819d8d1d93411e8a8f9e116
+    - fixed: f2be9722242880fb9bff3be31d59dae6a25a8690
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.6.0
