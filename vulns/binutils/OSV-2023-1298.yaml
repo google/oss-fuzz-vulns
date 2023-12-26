@@ -1,0 +1,31 @@
+id: OSV-2023-1298
+summary: Heap-buffer-overflow in loongarch_split_args_by_comma
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=65018
+
+  ```
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  loongarch_split_args_by_comma
+  print_insn_loongarch
+  disassemble_section
+  ```
+modified: '2023-12-14T00:10:40.134313Z'
+published: '2023-12-14T00:10:40.133892Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=65018
+affected:
+- package:
+    name: binutils
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/binutils
+  ranges:
+  - type: GIT
+    repo: git://sourceware.org/git/binutils-gdb.git
+    events:
+    - introduced: 0238b543f3c294fc8512021a40b708e8ddc72bb2
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.6.0
