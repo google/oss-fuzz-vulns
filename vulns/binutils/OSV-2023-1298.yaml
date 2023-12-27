@@ -25,6 +25,7 @@ affected:
     repo: git://sourceware.org/git/binutils-gdb.git
     events:
     - introduced: 0238b543f3c294fc8512021a40b708e8ddc72bb2
+    - fixed: 051b3736af7b9dc47a37e31a9c82556e942d1ed4
   ecosystem_specific:
     severity: MEDIUM
   versions: []
