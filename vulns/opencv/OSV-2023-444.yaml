@@ -10,7 +10,7 @@ details: |
   opj_jp2_decode
   cv::detail::Jpeg2KOpjDecoderBase::readData
   ```
-modified: '2023-11-01T14:21:03.997309Z'
+modified: '2023-12-28T14:19:53.064948Z'
 published: '2023-05-31T14:02:00.753503Z'
 references:
 - type: REPORT
@@ -29,6 +29,7 @@ affected:
   - 4.8.0
   - 4.8.1
   - 3.4.20
+  - 4.9.0
   ecosystem_specific:
     severity: MEDIUM
   database_specific:
