@@ -1,0 +1,31 @@
+id: OSV-2023-1360
+summary: Heap-buffer-overflow in NetworkInterface::dissectPacket
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=65332
+
+  ```
+  Crash type: Heap-buffer-overflow READ 2
+  Crash state:
+  NetworkInterface::dissectPacket
+  fuzz_dissect_packet.cpp
+  ```
+modified: '2023-12-27T00:00:10.846829Z'
+published: '2023-12-27T00:00:10.846266Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=65332
+affected:
+- package:
+    name: ntopng
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/ntopng
+  ranges:
+  - type: GIT
+    repo: https://github.com/ntop/ntopng.git
+    events:
+    - introduced: 35b09487b9e38f11e5e01fc3cf9eb60b1b493f7c
+    - fixed: bfc67588eb3f60f1f24a4596e87edcdb7ec254ab
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.6.0

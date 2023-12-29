@@ -1,0 +1,32 @@
+id: OSV-2023-1358
+summary: Heap-buffer-overflow in js_free_function_def
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=65317
+
+  ```
+  Crash type: Heap-buffer-overflow READ 4
+  Crash state:
+  js_free_function_def
+  js_parse_function_decl2
+  js_parse_postfix_expr
+  ```
+modified: '2023-12-26T00:04:18.300779Z'
+published: '2023-12-26T00:04:18.300258Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=65317
+affected:
+- package:
+    name: quickjs
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/quickjs
+  ranges:
+  - type: GIT
+    repo: https://github.com/bellard/quickjs
+    events:
+    - introduced: e68993b6788960de05167be624751d951745be78
+    - fixed: 7414e5f67f9a404f3cf91ffa69d0c93bf46d099e
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.6.0
