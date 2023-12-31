@@ -1,0 +1,32 @@
+id: OSV-2023-1024
+summary: Security exception in org.apache.poi.util.IOUtils.safelyAllocate
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=63288
+
+  ```
+  Crash type: Security exception
+  Crash state:
+  org.apache.poi.util.IOUtils.safelyAllocate
+  org.apache.poi.hssf.record.RecordInputStream.readRemainder
+  org.apache.poi.hssf.record.UnknownRecord.<init>
+  ```
+modified: '2023-10-17T13:03:34.273365Z'
+published: '2023-10-17T13:03:34.273057Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=63288
+affected:
+- package:
+    name: apache-poi
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/apache-poi
+  ranges:
+  - type: GIT
+    repo: https://github.com/apache/poi.git
+    events:
+    - introduced: c488cae3f3536253d0bd2c7580f08193dd70b2da
+    - fixed: fb3f3ef26fe61145e75fb059721476927d6848c4
+  ecosystem_specific:
+    severity: LOW
+  versions: []
+schema_version: 1.6.0

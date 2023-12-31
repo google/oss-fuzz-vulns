@@ -1,0 +1,33 @@
+id: OSV-2023-980
+summary: UNKNOWN READ in skip_chunk
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=63051
+
+  ```
+  Crash type: UNKNOWN READ
+  Crash state:
+  skip_chunk
+  http_cb
+  fuzz.c
+  ```
+modified: '2023-10-07T13:03:05.608627Z'
+published: '2023-10-07T13:03:05.608321Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=63051
+affected:
+- package:
+    name: mongoose
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/mongoose
+  ranges:
+  - type: GIT
+    repo: https://github.com/cesanta/mongoose
+    events:
+    - introduced: 7884a2f3c747aaa39c28e9ea99cf9f657e0fe3e2
+    - fixed: 744df7b2443032e9d342055da12c634150b17c29
+  versions:
+  - '7.12'
+  ecosystem_specific:
+    severity: MEDIUM
+schema_version: 1.6.0
