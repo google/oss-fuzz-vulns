@@ -1,0 +1,32 @@
+id: OSV-2023-1353
+summary: Security exception in org.apache.poi.ddf.EscherContainerRecord.fillFields
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=65303
+
+  ```
+  Crash type: Security exception
+  Crash state:
+  org.apache.poi.ddf.EscherContainerRecord.fillFields
+  org.apache.poi.hslf.record.Record.findChildRecords
+  org.apache.poi.hslf.record.DummyPositionSensitiveRecordWithChildren.<init>
+  ```
+modified: '2023-12-25T00:03:02.003829Z'
+published: '2023-12-25T00:03:02.003193Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=65303
+affected:
+- package:
+    name: apache-poi
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/apache-poi
+  ranges:
+  - type: GIT
+    repo: https://github.com/apache/poi.git
+    events:
+    - introduced: c488cae3f3536253d0bd2c7580f08193dd70b2da
+    - fixed: 8e3b60f63d21458c59b9bf10dde10dcc2fa928b0
+  ecosystem_specific:
+    severity: LOW
+  versions: []
+schema_version: 1.6.0
