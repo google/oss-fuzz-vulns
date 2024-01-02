@@ -1,0 +1,34 @@
+id: OSV-2023-952
+summary: Heap-buffer-overflow in back_passDoAction
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=62875
+
+  ```
+  Crash type: Heap-buffer-overflow READ 10
+  Crash state:
+  back_passDoAction
+  _lou_backTranslate
+  lou_backTranslateString
+  ```
+modified: '2023-10-02T13:03:05.682718Z'
+published: '2023-10-02T13:03:05.682426Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=62875
+affected:
+- package:
+    name: liblouis
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/liblouis
+  ranges:
+  - type: GIT
+    repo: https://github.com/liblouis/liblouis
+    events:
+    - introduced: 7d66e40712f6b44f33d9b4bdcfe42db3e65082b8
+  versions:
+  - v3.26.0
+  - v3.27.0
+  - v3.28.0
+  ecosystem_specific:
+    severity: MEDIUM
+schema_version: 1.6.0
