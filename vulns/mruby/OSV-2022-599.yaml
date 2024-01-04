@@ -10,7 +10,7 @@ details: |
   mrb_ensure_int_type
   mrb_get_args
   ```
-modified: '2023-12-29T14:14:19.372419Z'
+modified: '2024-01-04T14:06:16.243943Z'
 published: '2022-07-20T00:00:11.865502Z'
 references:
 - type: REPORT
@@ -32,6 +32,7 @@ affected:
   - 3.2.0-rc4
   - 3.2.0
   - 3.3.0-rc
+  - 3.3.0-rc2
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.2.0
