@@ -1,0 +1,32 @@
+id: OSV-2023-1370
+summary: Heap-buffer-overflow in process_one_read
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=65383
+
+  ```
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  process_one_read
+  cram_encode_container
+  cram_flush_container_mt
+  ```
+modified: '2023-12-29T00:14:11.002190Z'
+published: '2023-12-29T00:14:11.001809Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=65383
+affected:
+- package:
+    name: htslib
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/htslib
+  ranges:
+  - type: GIT
+    repo: https://github.com/samtools/htslib.git
+    events:
+    - introduced: 9e1ffd856614fcfc0bb3b89501600827cc8705e7
+  versions:
+  - '1.19'
+  ecosystem_specific:
+    severity: MEDIUM
+schema_version: 1.6.0
