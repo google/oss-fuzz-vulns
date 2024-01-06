@@ -1,0 +1,32 @@
+id: OSV-2023-984
+summary: Stack-buffer-overflow in TranslateWord3
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=63064
+
+  ```
+  Crash type: Stack-buffer-overflow READ 4
+  Crash state:
+  TranslateWord3
+  CombineFlag
+  TranslateWord2
+  ```
+modified: '2023-10-08T13:00:48.222397Z'
+published: '2023-10-08T13:00:48.222080Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=63064
+affected:
+- package:
+    name: espeak-ng
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/espeak-ng
+  ranges:
+  - type: GIT
+    repo: https://github.com/espeak-ng/espeak-ng
+    events:
+    - introduced: 0a713d52bbf3e061823d1a7f35e5303e7320f27a
+  versions:
+  - '1.51'
+  ecosystem_specific:
+    severity: MEDIUM
+schema_version: 1.6.0
