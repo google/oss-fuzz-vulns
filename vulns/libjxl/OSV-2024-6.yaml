@@ -1,0 +1,32 @@
+id: OSV-2024-6
+summary: Global-buffer-overflow in void jxl::N_AVX2::WriteToOutputStage::StoreUnsignedRow<unsigned
+  char>
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=65533
+
+  ```
+  Crash type: Global-buffer-overflow READ 16
+  Crash state:
+  void jxl::N_AVX2::WriteToOutputStage::StoreUnsignedRow<unsigned char>
+  jxl::N_AVX2::WriteToOutputStage::OutputBuffers
+  jxl::N_AVX2::WriteToOutputStage::ProcessRow
+  ```
+modified: '2024-01-06T00:11:05.929980Z'
+published: '2024-01-06T00:11:05.929725Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=65533
+affected:
+- package:
+    name: libjxl
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libjxl
+  ranges:
+  - type: GIT
+    repo: https://github.com/libjxl/libjxl.git
+    events:
+    - introduced: 815858b2335c267727c4b438cfdc00d5499791e0
+  ecosystem_specific:
+    severity: null
+  versions: []
+schema_version: 1.6.0
