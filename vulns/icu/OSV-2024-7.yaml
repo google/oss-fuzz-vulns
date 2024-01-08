@@ -1,0 +1,25 @@
+id: OSV-2024-7
+summary: Heap-buffer-overflow in icu_75::Locale::Locale
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=65534
+
+  ```
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  icu_75::Locale::Locale
+  plurrule_fuzzer.cpp
+  ```
+modified: '2024-01-07T00:11:45.065397Z'
+published: '2024-01-07T00:11:45.064745Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=65534
+affected:
+- package:
+    name: icu
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/icu
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
+schema_version: 1.6.0
