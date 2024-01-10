@@ -1,0 +1,31 @@
+id: OSV-2023-1343
+summary: Heap-buffer-overflow in _libssh2_kex_agree_instr
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=65212
+
+  ```
+  Crash type: Heap-buffer-overflow READ {*}
+  Crash state:
+  _libssh2_kex_agree_instr
+  _libssh2_packet_add
+  fullpacket
+  ```
+modified: '2023-12-22T00:10:36.347283Z'
+published: '2023-12-22T00:10:36.346763Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=65212
+affected:
+- package:
+    name: libssh2
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libssh2
+  ranges:
+  - type: GIT
+    repo: https://github.com/libssh2/libssh2.git
+    events:
+    - introduced: d34d9258b8420b19ec3f97b4cc5bf7aa7d98e35a
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.6.0
