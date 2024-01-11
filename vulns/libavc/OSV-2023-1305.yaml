@@ -1,0 +1,36 @@
+id: OSV-2023-1305
+summary: Check failed in CheckUnwind
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=65035
+
+  ```
+  Crash type: Check failed
+  Crash state:
+  CheckUnwind
+  iv_aligned_free
+  ih264d_free_dynamic_bufs
+  ```
+modified: '2023-12-15T00:01:07.184133Z'
+published: '2023-12-15T00:01:07.183702Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=65035
+affected:
+- package:
+    name: libavc
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libavc
+  ranges:
+  - type: GIT
+    repo: https://github.com/ittiam-systems/libavc.git
+    events:
+    - introduced: 375b9b7e44b067d7b87bcae7291154ae59c72267
+  versions:
+  - v1.1.1
+  - v1.2.0
+  - v1.3.0
+  ecosystem_specific:
+    severity: HIGH
+  database_specific:
+    introduced_range: 43629a63d8cb3b52195c032a662e62ac3bfd8aae:b2a61a152a5e83b3419212e8d15a10d4488e51d9
+schema_version: 1.6.0

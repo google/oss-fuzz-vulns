@@ -1,0 +1,34 @@
+id: OSV-2023-1294
+summary: Heap-buffer-overflow in ih264d_compute_bs_non_mbaff
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=65031
+
+  ```
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  ih264d_compute_bs_non_mbaff
+  ih264d_mv_pred_ref_tfr_nby2_pmb
+  isvcd_mark_err_slice_skip
+  ```
+modified: '2023-12-14T00:00:54.615600Z'
+published: '2023-12-14T00:00:54.614578Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=65031
+affected:
+- package:
+    name: libavc
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libavc
+  ranges:
+  - type: GIT
+    repo: https://github.com/ittiam-systems/libavc.git
+    events:
+    - introduced: b2a61a152a5e83b3419212e8d15a10d4488e51d9
+  versions:
+  - v1.1.1
+  - v1.2.0
+  - v1.3.0
+  ecosystem_specific:
+    severity: MEDIUM
+schema_version: 1.6.0
