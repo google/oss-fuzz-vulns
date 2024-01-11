@@ -10,7 +10,7 @@ details: |
   decode_coeff_abs_level_remaining
   residual_coding
   ```
-modified: '2024-01-06T14:05:52.498988Z'
+modified: '2024-01-11T14:07:33.271287Z'
 published: '2021-05-08T00:00:14.355747Z'
 references:
 - type: REPORT
@@ -95,5 +95,6 @@ affected:
   - v5.113.0
   - v5.247.0
   - v5.114.0-rc1
+  - v5.248.0
   ecosystem_specific:
     severity: MEDIUM
