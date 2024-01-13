@@ -10,7 +10,7 @@ details: |
   XCFImageFormat::loadLevel
   XCFImageFormat::loadHierarchy
   ```
-modified: '2024-01-11T14:16:32.009251Z'
+modified: '2024-01-13T14:15:35.740409Z'
 published: '2023-09-07T14:00:27.693270Z'
 references:
 - type: REPORT
@@ -40,6 +40,7 @@ affected:
   - v5.247.0
   - v5.114.0-rc1
   - v5.248.0
+  - v5.114.0
   ecosystem_specific:
     severity: HIGH
   database_specific:
