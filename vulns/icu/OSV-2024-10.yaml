@@ -1,0 +1,29 @@
+id: OSV-2024-10
+summary: Heap-buffer-overflow in __string
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=65632
+
+  ```
+  Crash type: Heap-buffer-overflow READ 2
+  Crash state:
+  __string
+  ```
+modified: '2024-01-12T00:12:45.529061Z'
+published: '2024-01-12T00:12:45.528472Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=65632
+affected:
+- package:
+    name: icu
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/icu
+  ranges:
+  - type: GIT
+    repo: https://github.com/unicode-org/icu.git
+    events:
+    - introduced: cfba9a8caf6cb6ab39eb4ca5702c78f97989bcde
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.6.0
