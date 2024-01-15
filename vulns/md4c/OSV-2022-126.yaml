@@ -8,7 +8,7 @@ details: |
   md_analyze_inlines
   md_process_normal_block_contents
   md_process_table_cell
-modified: '2022-02-07T00:00:05.720368Z'
+modified: '2024-01-15T14:06:41.220092Z'
 published: '2022-02-07T00:00:05.720107Z'
 references:
 - type: REPORT
@@ -23,7 +23,8 @@ affected:
     repo: https://github.com/mity/md4c
     events:
     - introduced: 62b60979f6a281b2b3cf883abc84299431fe2f76
+  versions:
+  - release-0.5.0
   ecosystem_specific:
     severity: MEDIUM
-  versions: []
 schema_version: 1.2.0
