@@ -11,7 +11,7 @@ details: |
   bool std::__1::operator<<char, std::__1::char_traits<char>, std::__1::allocator<
   std::__1::__tree_iterator<std::__1::__value_type<std::__1::basic_string<char, st
   ```
-modified: '2023-02-09T00:29:09.579363Z'
+modified: '2024-01-18T14:11:41.842226Z'
 published: '2020-07-14T05:37:49.054851Z'
 references:
 - type: REPORT
@@ -36,6 +36,7 @@ affected:
   - 1.5.4
   - 1.5.5
   - 1.5.6
+  - 1.5.7
   ecosystem_specific:
     severity: MEDIUM
     introduced_range: aef4bfbd61798ecc21d94c873b679fbdeaf92462:79601d2d060be52e673a82ed1c46f4666eb28255
