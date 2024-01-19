@@ -1,0 +1,31 @@
+id: OSV-2024-17
+summary: Heap-use-after-free in iasecc_delete_file
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=65684
+
+  ```
+  Crash type: Heap-use-after-free READ 4
+  Crash state:
+  iasecc_delete_file
+  sc_delete_file
+  iasecc_pkcs15_delete_file
+  ```
+modified: '2024-01-17T00:12:20.699609Z'
+published: '2024-01-17T00:12:20.698997Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=65684
+affected:
+- package:
+    name: opensc
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/opensc
+  ranges:
+  - type: GIT
+    repo: https://github.com/OpenSC/OpenSC
+    events:
+    - introduced: 773fcc6bd0d047aa629dd297e87244ca3add5b16
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
+schema_version: 1.6.0
