@@ -1,0 +1,32 @@
+id: OSV-2024-18
+summary: Heap-use-after-free in QPDF::read_xref
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=65777
+
+  ```
+  Crash type: Heap-use-after-free READ 8
+  Crash state:
+  QPDF::read_xref
+  QPDF::reconstruct_xref
+  QPDF::parse
+  ```
+modified: '2024-01-19T00:01:09.085498Z'
+published: '2024-01-19T00:01:09.084916Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=65777
+affected:
+- package:
+    name: qpdf
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/qpdf
+  ranges:
+  - type: GIT
+    repo: https://github.com/qpdf/qpdf.git
+    events:
+    - introduced: 5641832e54e347c2c33e9304d96cca450eb305ed
+  versions:
+  - v11.8.0
+  ecosystem_specific:
+    severity: HIGH
+schema_version: 1.6.0

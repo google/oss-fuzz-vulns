@@ -1,0 +1,32 @@
+id: OSV-2024-20
+summary: Heap-buffer-overflow in bam_aux_get
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=65820
+
+  ```
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  bam_aux_get
+  process_one_read
+  cram_encode_container
+  ```
+modified: '2024-01-19T00:05:05.918068Z'
+published: '2024-01-19T00:05:05.917557Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=65820
+affected:
+- package:
+    name: htslib
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/htslib
+  ranges:
+  - type: GIT
+    repo: https://github.com/samtools/htslib.git
+    events:
+    - introduced: 9e1ffd856614fcfc0bb3b89501600827cc8705e7
+  versions:
+  - '1.19'
+  ecosystem_specific:
+    severity: MEDIUM
+schema_version: 1.6.0
