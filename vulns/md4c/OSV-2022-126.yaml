@@ -8,7 +8,7 @@ details: |
   md_analyze_inlines
   md_process_normal_block_contents
   md_process_table_cell
-modified: '2024-01-15T14:06:41.220092Z'
+modified: '2024-01-21T14:07:45.567501Z'
 published: '2022-02-07T00:00:05.720107Z'
 references:
 - type: REPORT
@@ -25,6 +25,7 @@ affected:
     - introduced: 62b60979f6a281b2b3cf883abc84299431fe2f76
   versions:
   - release-0.5.0
+  - release-0.5.1
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.2.0
