@@ -1,0 +1,31 @@
+id: OSV-2024-25
+summary: Stack-buffer-overflow in icu_75::PluralRuleParser::parse
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=65873
+
+  ```
+  Crash type: Stack-buffer-overflow WRITE 1
+  Crash state:
+  icu_75::PluralRuleParser::parse
+  icu_75::PluralRules::createRules
+  plurrule_fuzzer.cpp
+  ```
+modified: '2024-01-21T00:00:16.254527Z'
+published: '2024-01-21T00:00:16.253854Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=65873
+affected:
+- package:
+    name: icu
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/icu
+  ranges:
+  - type: GIT
+    repo: https://github.com/unicode-org/icu.git
+    events:
+    - introduced: 23dd2b8b5499506a9ff541c9c2f8bf7701cf93b8
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
+schema_version: 1.6.0
