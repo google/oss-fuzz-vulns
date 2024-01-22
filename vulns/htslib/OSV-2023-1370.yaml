@@ -10,7 +10,7 @@ details: |
   cram_encode_container
   cram_flush_container_mt
   ```
-modified: '2023-12-29T00:14:11.002190Z'
+modified: '2024-01-22T14:11:18.486775Z'
 published: '2023-12-29T00:14:11.001809Z'
 references:
 - type: REPORT
@@ -27,6 +27,7 @@ affected:
     - introduced: 9e1ffd856614fcfc0bb3b89501600827cc8705e7
   versions:
   - '1.19'
+  - 1.19.1
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.6.0
