@@ -1,0 +1,33 @@
+id: OSV-2024-28
+summary: Security exception in java.base/java.util.Arrays.copyOf
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=65930
+
+  ```
+  Crash type: Security exception
+  Crash state:
+  java.base/java.util.Arrays.copyOf
+  java.base/java.util.ArrayList.grow
+  java.base/java.util.ArrayList.grow
+  ```
+modified: '2024-01-21T00:12:30.614409Z'
+published: '2024-01-21T00:12:30.613951Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=65930
+affected:
+- package:
+    name: apache-poi
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/apache-poi
+  ranges:
+  - type: GIT
+    repo: https://github.com/apache/poi.git
+    events:
+    - introduced: 724fc526bf486b2a600fdbc44bc084dc40619fef
+  ecosystem_specific:
+    severity: LOW
+  database_specific:
+    introduced_range: c3fd1d5731af09aeb62a48026b6437bed4f2c28f:f93306721f52243285a81d261231952077c1aac7
+  versions: []
+schema_version: 1.6.0
