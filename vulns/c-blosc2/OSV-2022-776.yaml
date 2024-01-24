@@ -10,7 +10,7 @@ details: |
   blosc_compress_context
   blosc2_compress
   ```
-modified: '2023-12-28T14:08:12.748181Z'
+modified: '2024-01-24T14:12:07.577855Z'
 published: '2022-08-24T00:00:48.440951Z'
 references:
 - type: REPORT
@@ -53,6 +53,7 @@ affected:
   - v2.11.2
   - v2.11.3
   - v2.12.0
+  - v2.13.0
   ecosystem_specific:
     severity: HIGH
 schema_version: 1.3.0
