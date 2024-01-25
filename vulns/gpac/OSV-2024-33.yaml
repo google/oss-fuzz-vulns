@@ -1,0 +1,31 @@
+id: OSV-2024-33
+summary: Heap-buffer-overflow in ctxload_probe_data
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=66032
+
+  ```
+  Crash type: Heap-buffer-overflow READ {*}
+  Crash state:
+  ctxload_probe_data
+  gf_filter_pid_raw_new
+  filein_process
+  ```
+modified: '2024-01-24T00:05:37.532683Z'
+published: '2024-01-24T00:05:37.532325Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=66032
+affected:
+- package:
+    name: gpac
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/gpac
+  ranges:
+  - type: GIT
+    repo: https://github.com/gpac/gpac
+    events:
+    - introduced: 3ce00a25e6ef31489ed6a74b00e465f1bde52e98
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.6.0
