@@ -1,0 +1,35 @@
+id: OSV-2024-39
+summary: Heap-buffer-overflow in simdutf::westmere::implementation::convert_utf8_to_utf32
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=66063
+
+  ```
+  Crash type: Heap-buffer-overflow WRITE 16
+  Crash state:
+  simdutf::westmere::implementation::convert_utf8_to_utf32
+  roundtrip.cc
+  ```
+modified: '2024-01-25T00:05:37.689377Z'
+published: '2024-01-25T00:05:37.689031Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=66063
+affected:
+- package:
+    name: simdutf
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/simdutf
+  ranges:
+  - type: GIT
+    repo: https://github.com/simdutf/simdutf
+    events:
+    - introduced: 59b81c798c0c88ca4c573ebde77c3b38eb0352cb
+  versions:
+  - v4.0.4
+  - v4.0.5
+  - v4.0.6
+  - v4.0.7
+  - v4.0.8
+  ecosystem_specific:
+    severity: HIGH
+schema_version: 1.6.0
