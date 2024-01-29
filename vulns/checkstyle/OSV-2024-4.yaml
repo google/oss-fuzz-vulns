@@ -10,7 +10,7 @@ details: |
   java.base/java.nio.CharBuffer.wrap
   java.base/sun.nio.cs.StreamEncoder.implWrite
   ```
-modified: '2024-01-04T00:13:53.974494Z'
+modified: '2024-01-29T14:18:56.947672Z'
 published: '2024-01-04T00:13:53.974088Z'
 references:
 - type: REPORT
@@ -25,9 +25,10 @@ affected:
     repo: https://github.com/checkstyle/checkstyle
     events:
     - introduced: 2e99389ba88a7b802383eb79c48b611237ec7de9
+  versions:
+  - checkstyle-10.13.0
   ecosystem_specific:
     severity: LOW
   database_specific:
     introduced_range: 86b9a28f763e0e5b5859b581a276bc290078e84a:13090c515ec207c88f41c8e8646460ff7de76f7f
-  versions: []
 schema_version: 1.6.0
