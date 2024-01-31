@@ -10,7 +10,7 @@ details: |
   LibRaw::raw2image_ex
   LibRaw::dcraw_process
   ```
-modified: '2024-01-13T14:09:28.179910Z'
+modified: '2024-01-31T14:11:52.465116Z'
 published: '2022-11-06T00:00:12.813664Z'
 references:
 - type: REPORT
@@ -61,6 +61,7 @@ affected:
   - v5.114.0-rc1
   - v5.248.0
   - v5.114.0
+  - v5.249.0
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.3.0
