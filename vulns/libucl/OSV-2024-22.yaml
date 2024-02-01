@@ -1,0 +1,32 @@
+id: OSV-2024-22
+summary: Heap-use-after-free in ucl_hash_func
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=65868
+
+  ```
+  Crash type: Heap-use-after-free READ 8
+  Crash state:
+  ucl_hash_func
+  kh_resize_ucl_hash_node
+  kh_put_ucl_hash_node
+  ```
+modified: '2024-01-19T00:14:18.833913Z'
+published: '2024-01-19T00:14:18.833531Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=65868
+affected:
+- package:
+    name: libucl
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libucl
+  ranges:
+  - type: GIT
+    repo: https://github.com/vstakhov/libucl
+    events:
+    - introduced: 9cdb299d32091071bfa9634d32170f54bf710fb2
+  versions:
+  - 0.8.2
+  ecosystem_specific:
+    severity: HIGH
+schema_version: 1.6.0
