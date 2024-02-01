@@ -10,7 +10,7 @@ details: |
   ucl_parser_process_object_element
   ucl_state_machine
   ```
-modified: '2023-01-09T00:31:53.953368Z'
+modified: '2024-02-01T14:09:54.701991Z'
 published: '2022-06-22T00:01:16.539035Z'
 references:
 - type: REPORT
@@ -27,6 +27,7 @@ affected:
     - introduced: b56171afae328bb605aa5aafbab9331e3e34b03e
   versions:
   - 0.8.2
+  - 0.9.0
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.3.0
