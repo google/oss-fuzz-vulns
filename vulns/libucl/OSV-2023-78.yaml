@@ -10,7 +10,7 @@ details: |
   ucl_object_dtor_unref
   ucl_hash_destroy
   ```
-modified: '2023-02-18T13:01:01.445509Z'
+modified: '2024-02-01T14:16:35.842008Z'
 published: '2023-02-18T13:01:01.445224Z'
 references:
 - type: REPORT
@@ -27,6 +27,7 @@ affected:
     - introduced: c4fc60ebb0aa695df1e6642770d512adb9f1af4e
   versions:
   - 0.8.2
+  - 0.9.0
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.4.0
