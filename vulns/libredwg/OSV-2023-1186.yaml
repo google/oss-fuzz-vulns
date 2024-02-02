@@ -10,7 +10,7 @@ details: |
   dwg_read_dxf
   llvmfuzz.c
   ```
-modified: '2024-02-01T14:17:52.185430Z'
+modified: '2024-02-02T14:19:08.137630Z'
 published: '2023-11-20T13:02:13.320596Z'
 references:
 - type: REPORT
@@ -489,6 +489,8 @@ affected:
   - 0.12.5.6973
   - 0.12.5.6979
   - 0.12.5.6984
+  - 0.12.5.6987
+  - 0.12.5.6992
   ecosystem_specific:
     severity: HIGH
 schema_version: 1.6.0
