@@ -1,0 +1,29 @@
+id: OSV-2024-72
+summary: UNKNOWN READ in LLVMFuzzerRunDriver
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=66204
+
+  ```
+  Crash type: UNKNOWN READ
+  Crash state:
+  LLVMFuzzerRunDriver
+  ```
+modified: '2024-02-03T00:04:56.169853Z'
+published: '2024-02-03T00:04:56.169161Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=66204
+affected:
+- package:
+    name: libavif
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libavif
+  ranges:
+  - type: GIT
+    repo: https://github.com/AOMediaCodec/libavif.git
+    events:
+    - introduced: ac3db6001523e179f9e63f974887b19cb29df855
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.6.0
