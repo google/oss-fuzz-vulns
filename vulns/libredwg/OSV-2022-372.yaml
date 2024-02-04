@@ -10,7 +10,7 @@ details: |
   dwg_encode_add_object
   dwg_encode
   ```
-modified: '2024-02-02T14:11:48.293109Z'
+modified: '2024-02-04T14:21:34.665230Z'
 published: '2022-04-26T00:00:09.352798Z'
 references:
 - type: REPORT
@@ -519,6 +519,9 @@ affected:
   - 0.12.5.6984
   - 0.12.5.6987
   - 0.12.5.6992
+  - 0.12.5.6996
+  - '0.13'
+  - 0.13.0.7003
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.2.0
