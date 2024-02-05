@@ -1,0 +1,32 @@
+id: OSV-2024-73
+summary: Heap-buffer-overflow in pdf_finalize_string
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=66093
+
+  ```
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  pdf_finalize_string
+  cli_pdf
+  cli_scanpdf
+  ```
+modified: '2024-02-04T00:02:39.649519Z'
+published: '2024-02-04T00:02:39.648902Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=66093
+affected:
+- package:
+    name: clamav
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/clamav
+  ranges:
+  - type: GIT
+    repo: https://github.com/Cisco-Talos/clamav.git
+    events:
+    - introduced: d114e3fc66fe5ed025ae5d2d3d6ffbcf0a42d7ec
+  versions:
+  - clamav-1.3.0-rc2
+  ecosystem_specific:
+    severity: MEDIUM
+schema_version: 1.6.0
