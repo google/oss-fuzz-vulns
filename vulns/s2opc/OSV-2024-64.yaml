@@ -10,7 +10,7 @@ details: |
   SOPC_Variant_Read_Internal
   SOPC_EncodeableObject_Decode
   ```
-modified: '2024-02-01T00:03:55.791115Z'
+modified: '2024-02-06T14:18:25.113400Z'
 published: '2024-02-01T00:03:55.790847Z'
 references:
 - type: REPORT
@@ -25,7 +25,8 @@ affected:
     repo: https://gitlab.com/systerel/S2OPC
     events:
     - introduced: 2e37456474425ad4ec071c1ddd0a19415a29598d
+  versions:
+  - S2OPC_Toolkit_1.5.0
   ecosystem_specific:
     severity: null
-  versions: []
 schema_version: 1.6.0
