@@ -1,0 +1,39 @@
+id: OSV-2023-1129
+summary: UNKNOWN READ in HeifPixelImage::overlay
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=63990
+
+  ```
+  Crash type: UNKNOWN READ
+  Crash state:
+  HeifPixelImage::overlay
+  HeifContext::decode_overlay_image
+  HeifContext::decode_image_planar
+  ```
+modified: '2023-11-09T13:00:44.442013Z'
+published: '2023-11-09T13:00:44.441721Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=63990
+affected:
+- package:
+    name: libheif
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libheif
+  ranges:
+  - type: GIT
+    repo: https://github.com/strukturag/libheif.git
+    events:
+    - introduced: 8bec5d258e1e6a1a9a6b04fd15716925cceadd17
+  versions:
+  - v1.16.2
+  - v1.17.0
+  - v1.17.1
+  - v1.17.2
+  - v1.17.3
+  - v1.17.4
+  - v1.17.5
+  - v1.17.6
+  ecosystem_specific:
+    severity: MEDIUM
+schema_version: 1.6.0
