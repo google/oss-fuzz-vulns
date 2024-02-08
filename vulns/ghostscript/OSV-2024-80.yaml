@@ -10,7 +10,7 @@ details: |
   stroke_add_compat
   gx_stroke_path_only
   ```
-modified: '2024-02-07T00:03:02.923460Z'
+modified: '2024-02-08T14:28:24.039090Z'
 published: '2024-02-07T00:03:02.923052Z'
 references:
 - type: REPORT
@@ -25,6 +25,7 @@ affected:
     repo: git://git.ghostscript.com/ghostpdl.git
     events:
     - introduced: ee290c1aebaa172c812f21024af2dbf721fa5865
+    - introduced: eb9fc0106d45d1ce81ab2c4ae1a3d6e90a8c0164
   versions:
   - ghostpdl-10.0.0
   - ghostpdl-10.0.0rc2
