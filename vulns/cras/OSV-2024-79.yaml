@@ -1,0 +1,31 @@
+id: OSV-2024-79
+summary: Heap-double-free in supported_features
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=66398
+
+  ```
+  Crash type: Heap-double-free
+  Crash state:
+  supported_features
+  handle_at_command
+  handle_at_command_for_test
+  ```
+modified: '2024-02-07T00:03:00.460359Z'
+published: '2024-02-07T00:03:00.459996Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=66398
+affected:
+- package:
+    name: cras
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/cras
+  ranges:
+  - type: GIT
+    repo: https://chromium.googlesource.com/chromiumos/third_party/adhd
+    events:
+    - introduced: 12e63680bb2808ffd7038cd14c9959dd96cdb546
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
+schema_version: 1.6.0
