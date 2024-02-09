@@ -1,0 +1,42 @@
+id: OSV-2023-1135
+summary: Segv on unknown address in flb_sds_cat_safe
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=64049
+
+  ```
+  Crash type: Segv on unknown address
+  Crash state:
+  flb_sds_cat_safe
+  flb_cf_key_translate
+  flb_cf_section_property_add
+  ```
+modified: '2023-11-11T13:00:21.019567Z'
+published: '2023-11-11T13:00:21.019255Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=64049
+affected:
+- package:
+    name: fluent-bit
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/fluent-bit
+  ranges:
+  - type: GIT
+    repo: https://github.com/fluent/fluent-bit/
+    events:
+    - introduced: 041793599df288420bdfd1894900fe2a6e872f59
+    - introduced: b1726462c24dfe4d908474d38825bf141964e75d
+  versions:
+  - v2.1.10
+  - v2.1.5
+  - v2.1.5-windows-artifact-fix
+  - v2.1.6
+  - v2.1.7
+  - v2.1.8
+  - v2.1.9
+  - v2.2.0
+  - v2.2.1
+  - v2.2.2
+  ecosystem_specific:
+    severity: null
+schema_version: 1.6.0

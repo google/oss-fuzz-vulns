@@ -1,0 +1,33 @@
+id: OSV-2024-88
+summary: Heap-use-after-free in fuzzer_execute_ex
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=66538
+
+  ```
+  Crash type: Heap-use-after-free READ 4
+  Crash state:
+  fuzzer_execute_ex
+  ZEND_DO_FCALL_SPEC_RETVAL_UNUSED_HANDLER
+  fuzzer_execute_ex
+  ```
+modified: '2024-02-09T00:02:29.396615Z'
+published: '2024-02-09T00:02:29.396272Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=66538
+affected:
+- package:
+    name: php
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/php
+  ranges:
+  - type: GIT
+    repo: https://github.com/php/php-src.git
+    events:
+    - introduced: 7aa2b6294b1782b3cdc4123b01fe94b322570ef1
+  ecosystem_specific:
+    severity: HIGH
+  database_specific:
+    introduced_range: 13e7c086a721e11f023ab0a6295c7b512133a8a7:f9cfd40fa25f0bd071e65deb684dd04c75364d1c
+  versions: []
+schema_version: 1.6.0
