@@ -1,0 +1,34 @@
+id: OSV-2023-1140
+summary: Heap-buffer-overflow in H5MM_strdup
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=64092
+
+  ```
+  Crash type: Heap-buffer-overflow READ {*}
+  Crash state:
+  H5MM_strdup
+  H5G__stab_get_name_by_idx_cb
+  H5G__node_by_idx
+  ```
+modified: '2023-11-12T13:01:29.798551Z'
+published: '2023-11-12T13:01:29.798132Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=64092
+affected:
+- package:
+    name: matio
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/matio
+  ranges:
+  - type: GIT
+    repo: https://github.com/tbeu/matio.git
+    events:
+    - introduced: 7019a4c5212ab34ee336d77b9d6965920944b41a
+  versions:
+  - v1.5.24
+  - v1.5.25
+  - v1.5.26
+  ecosystem_specific:
+    severity: MEDIUM
+schema_version: 1.6.0
