@@ -1,0 +1,33 @@
+id: OSV-2024-98
+summary: UNKNOWN READ in PackLinuxElf32::adjABS
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=66287
+
+  ```
+  Crash type: UNKNOWN READ
+  Crash state:
+  PackLinuxElf32::adjABS
+  PackLinuxElf32::un_asl_dynsym
+  PackLinuxElf32::un_shlib_1
+  ```
+modified: '2024-02-11T00:14:29.716034Z'
+published: '2024-02-11T00:14:29.715614Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=66287
+affected:
+- package:
+    name: upx
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/upx
+  ranges:
+  - type: GIT
+    repo: https://github.com/upx/upx.git
+    events:
+    - introduced: 10807ebdc212c44db366131e71b3e358643eae51
+    - introduced: 666b3c0f74efaa67858e109df93856a6f26f419c
+  versions:
+  - v4.2.2
+  ecosystem_specific:
+    severity: MEDIUM
+schema_version: 1.6.0
