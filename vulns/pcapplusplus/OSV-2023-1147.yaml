@@ -1,0 +1,31 @@
+id: OSV-2023-1147
+summary: Heap-buffer-overflow in parse_by_block_type
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=64114
+
+  ```
+  Crash type: Heap-buffer-overflow READ {*}
+  Crash state:
+  parse_by_block_type
+  light_read_record
+  light_get_next_packet
+  ```
+modified: '2023-11-13T13:00:50.800821Z'
+published: '2023-11-13T13:00:50.800524Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=64114
+affected:
+- package:
+    name: pcapplusplus
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/pcapplusplus
+  ranges:
+  - type: GIT
+    repo: https://github.com/seladb/PcapPlusPlus
+    events:
+    - introduced: 0c95dfb3557644acc6a10060e48cfae1a61fc2f0
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.6.0

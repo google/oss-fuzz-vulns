@@ -1,0 +1,34 @@
+id: OSV-2023-1164
+summary: Heap-buffer-overflow in WriteCLUT
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=64166
+
+  ```
+  Crash type: Heap-buffer-overflow READ 4
+  Crash state:
+  WriteCLUT
+  cmsGetPostScriptColorResource
+  cmsGetPostScriptCRD
+  ```
+modified: '2023-11-15T13:00:55.717791Z'
+published: '2023-11-15T13:00:55.717548Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=64166
+affected:
+- package:
+    name: lcms
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/lcms
+  ranges:
+  - type: GIT
+    repo: https://github.com/mm2/Little-CMS.git
+    events:
+    - introduced: d2c7f4360e9a6fdf3a9949bc9a12ab5eeb02b538
+  versions:
+  - lcm2.16rc1
+  - lcms2.16
+  - lcms2.16rc1
+  ecosystem_specific:
+    severity: MEDIUM
+schema_version: 1.6.0
