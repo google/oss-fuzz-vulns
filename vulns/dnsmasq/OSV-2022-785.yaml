@@ -10,7 +10,7 @@ details: |
   FuzzResizePacket
   fuzz_rfc1035.c
   ```
-modified: '2024-01-27T14:11:52.215153Z'
+modified: '2024-02-13T14:16:10.035519Z'
 published: '2022-08-27T00:00:14.614126Z'
 references:
 - type: REPORT
@@ -58,6 +58,7 @@ affected:
   - v2.90test1
   - v2.90test2
   - v2.90test3
+  - v2.90test4
   ecosystem_specific:
     severity: HIGH
 schema_version: 1.3.0
