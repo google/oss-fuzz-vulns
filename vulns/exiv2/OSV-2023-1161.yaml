@@ -11,7 +11,7 @@ details: |
   Exiv2::QuickTimeVideo::NikonTagsDecoder
   Exiv2::QuickTimeVideo::userDataDecoder
   ```
-modified: '2023-11-14T13:03:13.962933Z'
+modified: '2024-02-14T14:07:38.524497Z'
 published: '2023-11-14T13:03:13.962614Z'
 references:
 - type: REPORT
@@ -30,6 +30,8 @@ affected:
   - nightly
   - v0.28.0
   - v0.28.1
+  - nightly-0.28.x
+  - v0.28.2
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.6.0
