@@ -1,0 +1,31 @@
+id: OSV-2023-1168
+summary: Heap-buffer-overflow in pcpp::PPP_PPTPLayer::computeCalculateFields
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=64196
+
+  ```
+  Crash type: Heap-buffer-overflow WRITE 2
+  Crash state:
+  pcpp::PPP_PPTPLayer::computeCalculateFields
+  pcpp::Packet::computeCalculateFields
+  FuzzTarget.cpp
+  ```
+modified: '2023-11-16T13:00:57.037983Z'
+published: '2023-11-16T13:00:57.037733Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=64196
+affected:
+- package:
+    name: pcapplusplus
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/pcapplusplus
+  ranges:
+  - type: GIT
+    repo: https://github.com/seladb/PcapPlusPlus
+    events:
+    - introduced: 6a67cab6914074841ed81116ac72219ca070a44d
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
+schema_version: 1.6.0
