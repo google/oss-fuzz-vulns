@@ -10,7 +10,7 @@ details: |
   mrb_str_byteindex_m
   mrb_vm_exec
   ```
-modified: '2024-01-22T00:05:20.803715Z'
+modified: '2024-02-14T14:19:17.217387Z'
 published: '2024-01-22T00:05:20.803259Z'
 references:
 - type: REPORT
@@ -25,9 +25,12 @@ affected:
     repo: https://github.com/mruby/mruby
     events:
     - introduced: 6f0c34e04ec573f68b977e1be7cab8c645b199fd
+  versions:
+  - 3.3.0
+  - 3.3.0-rc
+  - 3.3.0-rc2
   ecosystem_specific:
     severity: MEDIUM
   database_specific:
     introduced_range: 57fd0edaa763de6208ea7d6a05205e3515b33f65:f13101124c9806311219e5f805fc723dcdbc912c
-  versions: []
 schema_version: 1.6.0
