@@ -10,7 +10,7 @@ details: |
   mrb_str_split_m
   mrb_vm_exec
   ```
-modified: '2024-02-01T00:12:19.098010Z'
+modified: '2024-02-14T14:19:46.707491Z'
 published: '2024-02-01T00:12:19.091201Z'
 references:
 - type: REPORT
@@ -25,7 +25,10 @@ affected:
     repo: https://github.com/mruby/mruby
     events:
     - introduced: 06d9a54760f61846d0d1c12a617c72cf79476abf
+  versions:
+  - 3.3.0
+  - 3.3.0-rc
+  - 3.3.0-rc2
   ecosystem_specific:
     severity: MEDIUM
-  versions: []
 schema_version: 1.6.0
