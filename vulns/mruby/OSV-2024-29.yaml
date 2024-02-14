@@ -10,7 +10,7 @@ details: |
   str_convert_range
   mrb_str_aref
   ```
-modified: '2024-01-22T00:01:33.425372Z'
+modified: '2024-02-14T14:18:57.560129Z'
 published: '2024-01-22T00:01:33.424797Z'
 references:
 - type: REPORT
@@ -25,7 +25,10 @@ affected:
     repo: https://github.com/mruby/mruby
     events:
     - introduced: 69cf074778f2e08c565f03e4251aaef38879ca69
+  versions:
+  - 3.3.0
+  - 3.3.0-rc
+  - 3.3.0-rc2
   ecosystem_specific:
     severity: MEDIUM
-  versions: []
 schema_version: 1.6.0
