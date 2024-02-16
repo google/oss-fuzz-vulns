@@ -10,7 +10,7 @@ details: |
   g_object_unref
   gst_object_unref
   ```
-modified: '2024-02-07T15:03:00.119563Z'
+modified: '2024-02-16T14:45:32.536302Z'
 published: '2023-09-16T14:01:07.280790Z'
 references:
 - type: REPORT
@@ -27,6 +27,7 @@ affected:
     - introduced: 5fd3c8a16c9035d7ce334e2f1514cbc8f580b4e6
   versions:
   - 1.23.1
+  - 1.23.2
   ecosystem_specific:
     severity: HIGH
 schema_version: 1.6.0
