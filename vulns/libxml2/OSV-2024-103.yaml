@@ -1,0 +1,31 @@
+id: OSV-2024-103
+summary: Heap-use-after-free in xmlRemoveID
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=66679
+
+  ```
+  Crash type: Heap-use-after-free READ 4
+  Crash state:
+  xmlRemoveID
+  xmlFreeProp
+  xmlFreeNode
+  ```
+modified: '2024-02-15T00:00:51.271973Z'
+published: '2024-02-15T00:00:51.271367Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=66679
+affected:
+- package:
+    name: libxml2
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libxml2
+  ranges:
+  - type: GIT
+    repo: https://gitlab.gnome.org/GNOME/libxml2.git
+    events:
+    - introduced: d025cfbb4bf05785d970e268e46d674580a8a686
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
+schema_version: 1.6.0

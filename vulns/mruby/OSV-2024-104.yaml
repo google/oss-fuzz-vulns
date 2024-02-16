@@ -1,0 +1,34 @@
+id: OSV-2024-104
+summary: Heap-buffer-overflow in mrb_memsearch
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=66689
+
+  ```
+  Crash type: Heap-buffer-overflow READ 3
+  Crash state:
+  mrb_memsearch
+  str_convert_range
+  mrb_str_aref
+  ```
+modified: '2024-02-15T00:00:54.474295Z'
+published: '2024-02-15T00:00:54.473735Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=66689
+affected:
+- package:
+    name: mruby
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/mruby
+  ranges:
+  - type: GIT
+    repo: https://github.com/mruby/mruby
+    events:
+    - introduced: abcad36bae43f2c7cb8c2b1753dc94ab4cf25366
+  versions:
+  - 3.3.0
+  - 3.3.0-rc
+  - 3.3.0-rc2
+  ecosystem_specific:
+    severity: MEDIUM
+schema_version: 1.6.0
