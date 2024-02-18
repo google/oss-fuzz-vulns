@@ -1,0 +1,31 @@
+id: OSV-2024-114
+summary: Segv on unknown address in lj_BC_RET1
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=66384
+
+  ```
+  Crash type: Segv on unknown address
+  Crash state:
+  lj_BC_RET1
+  lua_pcall
+  luaL_loadbuffer_fuzzer.cc
+  ```
+modified: '2024-02-17T00:12:33.617590Z'
+published: '2024-02-17T00:12:33.617106Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=66384
+affected:
+- package:
+    name: tarantool
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/tarantool
+  ranges:
+  - type: GIT
+    repo: https://github.com/tarantool/tarantool
+    events:
+    - introduced: 6482678041361f9b661b436218b6840ba90c54a3
+  ecosystem_specific:
+    severity: null
+  versions: []
+schema_version: 1.6.0
