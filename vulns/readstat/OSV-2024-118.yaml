@@ -1,0 +1,32 @@
+id: OSV-2024-118
+summary: Heap-buffer-overflow in sav_process_row
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=66805
+
+  ```
+  Crash type: Heap-buffer-overflow WRITE 1
+  Crash state:
+  sav_process_row
+  sav_read_data
+  readstat_parse_sav
+  ```
+modified: '2024-02-20T00:01:08.095647Z'
+published: '2024-02-20T00:01:08.095087Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=66805
+affected:
+- package:
+    name: readstat
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/readstat
+  ranges:
+  - type: GIT
+    repo: https://github.com/WizardMac/ReadStat
+    events:
+    - introduced: 428ba68c4d6c74d69a4a2811fda623487fa76c9e
+  versions:
+  - v1.1.9
+  ecosystem_specific:
+    severity: HIGH
+schema_version: 1.6.0
