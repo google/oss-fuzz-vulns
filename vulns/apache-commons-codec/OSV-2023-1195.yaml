@@ -1,0 +1,33 @@
+id: OSV-2023-1195
+summary: Security exception in java.base/java.util.HashMap.resize
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=64367
+
+  ```
+  Crash type: Security exception
+  Crash state:
+  java.base/java.util.HashMap.resize
+  java.base/java.util.HashMap.putVal
+  java.base/java.util.HashMap.put
+  ```
+modified: '2023-11-22T13:03:08.334514Z'
+published: '2023-11-22T13:03:08.334211Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=64367
+affected:
+- package:
+    name: apache-commons-codec
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/apache-commons-codec
+  ranges:
+  - type: GIT
+    repo: https://gitbox.apache.org/repos/asf/commons-codec.git
+    events:
+    - introduced: 44e4c4d778c3ab87db09c00e9d1c3260fd42dad5
+  versions:
+  - commons-codec-1.16.1-RC1
+  - rel/commons-codec-1.16.1
+  ecosystem_specific:
+    severity: LOW
+schema_version: 1.6.0
