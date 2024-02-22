@@ -10,7 +10,7 @@ details: |
   config__cleanup
   mosquitto_fuzz_main
   ```
-modified: '2023-09-10T14:13:34.767690Z'
+modified: '2024-02-22T14:18:33.811654Z'
 published: '2023-06-06T14:00:25.983874Z'
 references:
 - type: REPORT
@@ -28,6 +28,7 @@ affected:
   versions:
   - v2.0.16
   - v2.0.17
+  - v2.0.18
   ecosystem_specific:
     severity: null
 schema_version: 1.4.0
