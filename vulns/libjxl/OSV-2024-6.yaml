@@ -11,7 +11,7 @@ details: |
   jxl::N_AVX2::WriteToOutputStage::OutputBuffers
   jxl::N_AVX2::WriteToOutputStage::ProcessRow
   ```
-modified: '2024-01-06T00:11:05.929980Z'
+modified: '2024-02-22T14:19:39.277171Z'
 published: '2024-01-06T00:11:05.929725Z'
 references:
 - type: REPORT
@@ -26,7 +26,8 @@ affected:
     repo: https://github.com/libjxl/libjxl.git
     events:
     - introduced: 815858b2335c267727c4b438cfdc00d5499791e0
+  versions:
+  - v0.10.0
   ecosystem_specific:
     severity: null
-  versions: []
 schema_version: 1.6.0
