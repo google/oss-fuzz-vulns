@@ -10,7 +10,7 @@ details: |
   gs_gc_reclaim
   ireclaim
   ```
-modified: '2024-02-22T14:20:28.981354Z'
+modified: '2024-02-23T14:24:35.502961Z'
 published: '2023-01-29T13:00:17.773387Z'
 references:
 - type: REPORT
@@ -41,6 +41,7 @@ affected:
   - ghostpdl-10.03.0rc1_test
   - ghostpdl-10.03.0rc1_test002
   - ghostpdl-10.03.0rc1_test003
+  - ghostpdl-10.03.0rc1
   ecosystem_specific:
     severity: HIGH
 schema_version: 1.3.0
