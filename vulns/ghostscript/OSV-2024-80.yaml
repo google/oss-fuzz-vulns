@@ -10,7 +10,7 @@ details: |
   stroke_add_compat
   gx_stroke_path_only
   ```
-modified: '2024-02-22T14:26:12.989755Z'
+modified: '2024-02-23T14:44:23.226556Z'
 published: '2024-02-07T00:03:02.923052Z'
 references:
 - type: REPORT
@@ -43,6 +43,7 @@ affected:
   - ghostpdl-10.03.0rc1_test
   - ghostpdl-10.03.0rc1_test002
   - ghostpdl-10.03.0rc1_test003
+  - ghostpdl-10.03.0rc1
   ecosystem_specific:
     severity: HIGH
   database_specific:
