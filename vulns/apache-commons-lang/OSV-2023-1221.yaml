@@ -1,0 +1,31 @@
+id: OSV-2023-1221
+summary: Security exception in jaz.Zer.reportFinding
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=64488
+
+  ```
+  Crash type: Security exception
+  Crash state:
+  jaz.Zer.reportFinding
+  jaz.Zer.reportFindingIfEnabled
+  jaz.Zer.readObject
+  ```
+modified: '2023-11-26T13:02:48.996167Z'
+published: '2023-11-26T13:02:48.995906Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=64488
+affected:
+- package:
+    name: apache-commons-lang
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/apache-commons-lang
+  ranges:
+  - type: GIT
+    repo: https://github.com/apache/commons-lang
+    events:
+    - introduced: 7182f72061822cefade0a2169bc54ca51a1427e5
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
+schema_version: 1.6.0
