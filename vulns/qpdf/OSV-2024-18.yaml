@@ -10,7 +10,7 @@ details: |
   QPDF::reconstruct_xref
   QPDF::parse
   ```
-modified: '2024-01-19T00:01:09.085498Z'
+modified: '2024-02-25T14:18:17.331353Z'
 published: '2024-01-19T00:01:09.084916Z'
 references:
 - type: REPORT
@@ -27,6 +27,7 @@ affected:
     - introduced: 5641832e54e347c2c33e9304d96cca450eb305ed
   versions:
   - v11.8.0
+  - v11.9.0
   ecosystem_specific:
     severity: HIGH
 schema_version: 1.6.0
