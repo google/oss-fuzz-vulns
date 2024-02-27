@@ -10,7 +10,7 @@ details: |
   com.fasterxml.jackson.core.util.TextBuffer.expandCurrentSegment
   com.fasterxml.jackson.dataformat.cbor.CBORParser._finishShortText
   ```
-modified: '2024-02-16T14:15:37.328518Z'
+modified: '2024-02-27T14:16:23.162762Z'
 published: '2024-01-20T00:04:01.700018Z'
 references:
 - type: REPORT
@@ -27,6 +27,7 @@ affected:
     - introduced: 955e711ac433f529450048624ee5c30aeb47c258
   versions:
   - jackson-dataformats-binary-2.15.4
+  - jackson-dataformats-binary-2.17.0-rc1
   ecosystem_specific:
     severity: LOW
   database_specific:
