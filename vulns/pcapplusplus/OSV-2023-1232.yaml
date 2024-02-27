@@ -1,0 +1,31 @@
+id: OSV-2023-1232
+summary: Heap-buffer-overflow in pcpp::TLSECPointFormatExtension::getECPointFormatList
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=64543
+
+  ```
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  pcpp::TLSECPointFormatExtension::getECPointFormatList
+  pcpp::SSLClientHelloMessage::generateTLSFingerprint
+  readParsedPacket
+  ```
+modified: '2023-11-28T13:01:23.208619Z'
+published: '2023-11-28T13:01:23.208343Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=64543
+affected:
+- package:
+    name: pcapplusplus
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/pcapplusplus
+  ranges:
+  - type: GIT
+    repo: https://github.com/seladb/PcapPlusPlus
+    events:
+    - introduced: 6a67cab6914074841ed81116ac72219ca070a44d
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.6.0
