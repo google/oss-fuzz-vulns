@@ -11,7 +11,7 @@ details: |
   jxl::N_AVX2::WriteToOutputStage::OutputBuffers
   jxl::N_AVX2::WriteToOutputStage::ProcessRow
   ```
-modified: '2024-02-22T14:19:39.277171Z'
+modified: '2024-02-28T14:20:59.827157Z'
 published: '2024-01-06T00:11:05.929725Z'
 references:
 - type: REPORT
@@ -28,6 +28,7 @@ affected:
     - introduced: 815858b2335c267727c4b438cfdc00d5499791e0
   versions:
   - v0.10.0
+  - v0.10-snapshot
   ecosystem_specific:
     severity: null
 schema_version: 1.6.0
