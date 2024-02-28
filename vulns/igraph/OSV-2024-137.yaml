@@ -1,0 +1,31 @@
+id: OSV-2024-137
+summary: Global-buffer-overflow in igraph_dl_yylex
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=66992
+
+  ```
+  Crash type: Global-buffer-overflow READ 2
+  Crash state:
+  igraph_dl_yylex
+  igraph_dl_yyparse
+  igraph_read_graph_dl
+  ```
+modified: '2024-02-27T00:01:01.787103Z'
+published: '2024-02-27T00:01:01.786536Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=66992
+affected:
+- package:
+    name: igraph
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/igraph
+  ranges:
+  - type: GIT
+    repo: https://github.com/igraph/igraph
+    events:
+    - introduced: 74b2e25f02b82b583ee6c38c52e024337571f443
+  ecosystem_specific:
+    severity: null
+  versions: []
+schema_version: 1.6.0
