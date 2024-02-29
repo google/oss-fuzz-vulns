@@ -1,0 +1,33 @@
+id: OSV-2024-138
+summary: Security exception in com.github.javaparser.GeneratedJavaParser.Expression
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=67005
+
+  ```
+  Crash type: Security exception
+  Crash state:
+  com.github.javaparser.GeneratedJavaParser.Expression
+  java.base/java.util.concurrent.ConcurrentHashMap.putVal
+  java.base/java.util.concurrent.ConcurrentHashMap.putIfAbsent
+  ```
+modified: '2024-02-28T00:05:23.810853Z'
+published: '2024-02-28T00:05:23.810172Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=67005
+affected:
+- package:
+    name: javaparser
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/javaparser
+  ranges:
+  - type: GIT
+    repo: https://github.com/javaparser/javaparser
+    events:
+    - introduced: 600a82f95e99b5a134d72c6fb3c3a60442b4f113
+  ecosystem_specific:
+    severity: LOW
+  database_specific:
+    introduced_range: 91b7cf988f38754f8b85401a832d1a313caabdbb:0946cca68a641fa122192f1761fe4a61a8c4f7ff
+  versions: []
+schema_version: 1.6.0

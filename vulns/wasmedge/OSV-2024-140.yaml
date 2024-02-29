@@ -1,0 +1,32 @@
+id: OSV-2024-140
+summary: Container-overflow in WasmEdge::LLVM::Compiler::compile
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=67006
+
+  ```
+  Crash type: Container-overflow READ 8
+  Crash state:
+  WasmEdge::LLVM::Compiler::compile
+  WasmEdge::LLVM::Compiler::compile
+  WasmEdge::Driver::FuzzTool
+  ```
+modified: '2024-02-28T00:12:59.500677Z'
+published: '2024-02-28T00:12:59.500279Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=67006
+affected:
+- package:
+    name: wasmedge
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/wasmedge
+  ranges:
+  - type: GIT
+    repo: https://github.com/WasmEdge/WasmEdge.git
+    events:
+    - introduced: bfb20047df09143f4e452f8a23e827cc3bd4156a
+  versions:
+  - 0.14.0-alpha.2
+  ecosystem_specific:
+    severity: MEDIUM
+schema_version: 1.6.0
