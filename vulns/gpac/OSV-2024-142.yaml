@@ -1,0 +1,31 @@
+id: OSV-2024-142
+summary: Heap-buffer-overflow in gf_gz_decompress_payload_ex
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=67043
+
+  ```
+  Crash type: Heap-buffer-overflow WRITE 1
+  Crash state:
+  gf_gz_decompress_payload_ex
+  gf_isom_box_parse_ex
+  gf_isom_box_array_read
+  ```
+modified: '2024-02-29T00:06:19.764301Z'
+published: '2024-02-29T00:06:19.763458Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=67043
+affected:
+- package:
+    name: gpac
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/gpac
+  ranges:
+  - type: GIT
+    repo: https://github.com/gpac/gpac
+    events:
+    - introduced: bbf25211ff041da80c52ab960f42e177027b3a7f
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
+schema_version: 1.6.0
