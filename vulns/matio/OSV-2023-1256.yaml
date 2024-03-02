@@ -1,0 +1,34 @@
+id: OSV-2023-1256
+summary: Heap-buffer-overflow in H5T__bit_copy
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=64665
+
+  ```
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  H5T__bit_copy
+  H5T__bit_get_d
+  H5T__conv_f_f
+  ```
+modified: '2023-12-03T13:02:43.376320Z'
+published: '2023-12-03T13:02:43.376076Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=64665
+affected:
+- package:
+    name: matio
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/matio
+  ranges:
+  - type: GIT
+    repo: https://github.com/tbeu/matio.git
+    events:
+    - introduced: 04d1deab800d962055a1c5509e25ad8dfe05c4f1
+  versions:
+  - v1.5.24
+  - v1.5.25
+  - v1.5.26
+  ecosystem_specific:
+    severity: MEDIUM
+schema_version: 1.6.0
