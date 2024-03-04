@@ -10,7 +10,7 @@ details: |
   EncryptStream::lookChar
   BaseCryptStream::getChar
   ```
-modified: '2024-02-02T14:20:52.435976Z'
+modified: '2024-03-04T14:17:00.728772Z'
 published: '2023-08-24T14:00:27.838220Z'
 references:
 - type: REPORT
@@ -34,6 +34,7 @@ affected:
   - poppler-23.12.0
   - poppler-24.01.0
   - poppler-24.02.0
+  - poppler-24.03.0
   ecosystem_specific:
     severity: MEDIUM
   database_specific:
