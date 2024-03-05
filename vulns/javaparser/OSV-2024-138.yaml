@@ -10,7 +10,7 @@ details: |
   java.base/java.util.concurrent.ConcurrentHashMap.putVal
   java.base/java.util.concurrent.ConcurrentHashMap.putIfAbsent
   ```
-modified: '2024-02-28T00:05:23.810853Z'
+modified: '2024-03-05T14:20:06.188931Z'
 published: '2024-02-28T00:05:23.810172Z'
 references:
 - type: REPORT
@@ -25,9 +25,10 @@ affected:
     repo: https://github.com/javaparser/javaparser
     events:
     - introduced: 600a82f95e99b5a134d72c6fb3c3a60442b4f113
+  versions:
+  - javaparser-parent-3.25.9
   ecosystem_specific:
     severity: LOW
   database_specific:
     introduced_range: 91b7cf988f38754f8b85401a832d1a313caabdbb:0946cca68a641fa122192f1761fe4a61a8c4f7ff
-  versions: []
 schema_version: 1.6.0
