@@ -10,7 +10,7 @@ details: |
   sc_delete_file
   iasecc_pkcs15_delete_file
   ```
-modified: '2024-02-19T14:18:54.675559Z'
+modified: '2024-03-06T14:20:16.478187Z'
 published: '2024-01-17T00:12:20.698997Z'
 references:
 - type: REPORT
@@ -27,6 +27,7 @@ affected:
     - introduced: 773fcc6bd0d047aa629dd297e87244ca3add5b16
   versions:
   - 0.25.0-rc1
+  - 0.25.0
   ecosystem_specific:
     severity: HIGH
 schema_version: 1.6.0
