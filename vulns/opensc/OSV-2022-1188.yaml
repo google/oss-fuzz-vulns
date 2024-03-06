@@ -10,7 +10,7 @@ details: |
   authentic_parse_credential_data
   authentic_pin_get_policy
   ```
-modified: '2024-02-21T14:07:15.005741Z'
+modified: '2024-03-06T14:08:37.771773Z'
 published: '2022-11-20T13:01:57.719130Z'
 references:
 - type: REPORT
@@ -33,6 +33,7 @@ affected:
   - 0.24.0-rc2
   - 0.24.0
   - 0.25.0-rc1
+  - 0.25.0
   ecosystem_specific:
     severity: null
 schema_version: 1.3.0
