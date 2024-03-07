@@ -1,0 +1,39 @@
+id: OSV-2023-1267
+summary: Heap-buffer-overflow in dwg_free_object
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=64829
+
+  ```
+  Crash type: Heap-buffer-overflow READ 8
+  Crash state:
+  dwg_free_object
+  dwg_free
+  llvmfuzz.c
+  ```
+modified: '2023-12-08T00:11:02.972245Z'
+published: '2023-12-08T00:11:02.971903Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=64829
+affected:
+- package:
+    name: libredwg
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libredwg
+  ranges:
+  - type: GIT
+    repo: https://github.com/LibreDWG/libredwg
+    events:
+    - introduced: f15763dec40f67ddacbccd674338d163021f2b96
+  versions:
+  - '0.13'
+  - 0.13.1
+  - 0.13.2
+  - 0.13.3
+  - 0.13.3.7163
+  - 0.13.3.7165
+  - 0.13.3.7166
+  - 0.13.3.7168
+  ecosystem_specific:
+    severity: MEDIUM
+schema_version: 1.6.0
