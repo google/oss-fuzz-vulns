@@ -10,7 +10,7 @@ details: |
   spvtools::val::MemoryPass
   spvtools::val::ValidateBinaryUsingContextAndValidationState
   ```
-modified: '2024-02-29T00:12:28.292941Z'
+modified: '2024-03-08T14:18:57.325795Z'
 published: '2024-02-29T00:12:28.292465Z'
 references:
 - type: REPORT
@@ -25,7 +25,8 @@ affected:
     repo: https://github.com/KhronosGroup/SPIRV-Tools.git
     events:
     - introduced: 1b643eac5d4062bbec48b912a1332e6909802479
+  versions:
+  - v2024.1.rc1
   ecosystem_specific:
     severity: MEDIUM
-  versions: []
 schema_version: 1.6.0
