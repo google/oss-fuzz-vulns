@@ -1,0 +1,31 @@
+id: OSV-2024-149
+summary: Heap-use-after-free in get_ls_tile_buffers
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=67055
+
+  ```
+  Crash type: Heap-use-after-free READ 1
+  Crash state:
+  get_ls_tile_buffers
+  av1_decode_tg_tiles_and_wrapup
+  aom_decode_frame_from_obus
+  ```
+modified: '2024-03-07T00:01:26.875511Z'
+published: '2024-03-07T00:01:26.874963Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=67055
+affected:
+- package:
+    name: libaom
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libaom
+  ranges:
+  - type: GIT
+    repo: https://aomedia.googlesource.com/aom
+    events:
+    - introduced: 8db7d7893078a12e89cfdae35b25da97a933ab0b
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
+schema_version: 1.6.0

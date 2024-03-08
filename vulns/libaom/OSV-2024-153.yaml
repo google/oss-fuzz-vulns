@@ -1,0 +1,31 @@
+id: OSV-2024-153
+summary: Heap-buffer-overflow in od_ec_dec_init
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=67184
+
+  ```
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  od_ec_dec_init
+  aom_reader_init
+  tile_worker_hook_init
+  ```
+modified: '2024-03-07T00:13:48.067922Z'
+published: '2024-03-07T00:13:48.067527Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=67184
+affected:
+- package:
+    name: libaom
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libaom
+  ranges:
+  - type: GIT
+    repo: https://aomedia.googlesource.com/aom
+    events:
+    - introduced: 8db7d7893078a12e89cfdae35b25da97a933ab0b
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.6.0
