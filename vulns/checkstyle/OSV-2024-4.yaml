@@ -10,7 +10,7 @@ details: |
   java.base/java.nio.CharBuffer.wrap
   java.base/sun.nio.cs.StreamEncoder.implWrite
   ```
-modified: '2024-02-27T14:20:44.619220Z'
+modified: '2024-03-11T14:21:50.889702Z'
 published: '2024-01-04T00:13:53.974088Z'
 references:
 - type: REPORT
@@ -28,6 +28,7 @@ affected:
   versions:
   - checkstyle-10.13.0
   - checkstyle-10.14.0
+  - checkstyle-10.14.1
   ecosystem_specific:
     severity: LOW
   database_specific:
