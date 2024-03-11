@@ -10,7 +10,7 @@ details: |
   java.base/java.util.stream.ReferencePipeline$3$1.accept
   java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining
   ```
-modified: '2024-02-27T14:22:45.697200Z'
+modified: '2024-03-11T14:22:34.788886Z'
 published: '2024-02-09T00:03:08.288815Z'
 references:
 - type: REPORT
@@ -27,6 +27,7 @@ affected:
     - introduced: 82fd7aac913d239efa69529bb638f7d6fbd7e1be
   versions:
   - checkstyle-10.14.0
+  - checkstyle-10.14.1
   ecosystem_specific:
     severity: LOW
   database_specific:
