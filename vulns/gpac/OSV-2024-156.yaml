@@ -1,0 +1,31 @@
+id: OSV-2024-156
+summary: Stack-buffer-overflow in rtpin_satip_get_server_ip
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=67263
+
+  ```
+  Crash type: Stack-buffer-overflow WRITE 1
+  Crash state:
+  rtpin_satip_get_server_ip
+  rtpin_initialize
+  gf_filter_new_finalize
+  ```
+modified: '2024-03-10T00:01:41.406337Z'
+published: '2024-03-10T00:01:41.405747Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=67263
+affected:
+- package:
+    name: gpac
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/gpac
+  ranges:
+  - type: GIT
+    repo: https://github.com/gpac/gpac
+    events:
+    - introduced: fb35bdcbea0d4d27adfedecc78f9c8e0b28187ec
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
+schema_version: 1.6.0
