@@ -1,0 +1,34 @@
+id: OSV-2024-163
+summary: Stack-buffer-overflow in H5S_get_simple_extent_dims
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=66627
+
+  ```
+  Crash type: Stack-buffer-overflow WRITE 8
+  Crash state:
+  H5S_get_simple_extent_dims
+  H5Sget_simple_extent_dims
+  Mat_H5ReadFieldNames
+  ```
+modified: '2024-03-12T00:05:38.587683Z'
+published: '2024-03-12T00:05:38.587103Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=66627
+affected:
+- package:
+    name: matio
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/matio
+  ranges:
+  - type: GIT
+    repo: https://github.com/tbeu/matio.git
+    events:
+    - introduced: 683282d59a139cc811bdf48a728e2666c632de0c
+  versions:
+  - v1.5.24
+  - v1.5.25
+  - v1.5.26
+  ecosystem_specific:
+    severity: HIGH
+schema_version: 1.6.0
