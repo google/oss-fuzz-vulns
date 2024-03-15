@@ -10,7 +10,7 @@ details: |
   WasmEdge::LLVM::Compiler::compile
   WasmEdge::Driver::FuzzTool
   ```
-modified: '2024-03-06T14:19:29.235302Z'
+modified: '2024-03-15T14:19:10.963527Z'
 published: '2024-02-28T00:12:59.500279Z'
 references:
 - type: REPORT
@@ -28,6 +28,7 @@ affected:
   versions:
   - 0.14.0-alpha.2
   - 0.14.0-alpha.3
+  - 0.14.0-rc.1
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.6.0
