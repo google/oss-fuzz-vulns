@@ -1,0 +1,29 @@
+id: OSV-2024-173
+summary: Heap-buffer-overflow in pcre2_fuzzsupport.c
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=67381
+
+  ```
+  Crash type: Heap-buffer-overflow READ 4
+  Crash state:
+  pcre2_fuzzsupport.c
+  ```
+modified: '2024-03-15T00:09:32.006372Z'
+published: '2024-03-15T00:09:32.005883Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=67381
+affected:
+- package:
+    name: pcre2
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/pcre2
+  ranges:
+  - type: GIT
+    repo: https://github.com/PCRE2Project/pcre2
+    events:
+    - introduced: 6e5283c8499ecc3619722ab1effe7acac2bd7558
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.6.0
