@@ -10,7 +10,7 @@ details: |
   dwg_read_json
   llvmfuzz.c
   ```
-modified: '2024-03-12T14:24:03.334404Z'
+modified: '2024-03-16T14:10:31.128014Z'
 published: '2024-01-25T00:03:33.797633Z'
 references:
 - type: REPORT
@@ -164,6 +164,7 @@ affected:
   - 0.13.3.7186
   - 0.13.3.7187
   - 0.13.3.7190
+  - 0.13.3.7199
   ecosystem_specific:
     severity: HIGH
 schema_version: 1.6.0
