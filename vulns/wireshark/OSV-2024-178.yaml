@@ -1,0 +1,31 @@
+id: OSV-2024-178
+summary: Global-buffer-overflow in dissect_dns_answer
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=67265
+
+  ```
+  Crash type: Global-buffer-overflow WRITE 4
+  Crash state:
+  dissect_dns_answer
+  dissect_dns_common
+  dissect_dns
+  ```
+modified: '2024-03-16T00:04:44.508060Z'
+published: '2024-03-16T00:04:44.507570Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=67265
+affected:
+- package:
+    name: wireshark
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/wireshark
+  ranges:
+  - type: GIT
+    repo: https://gitlab.com/wireshark/wireshark.git
+    events:
+    - introduced: beced82218415468a1624eae1e8fb635328f8133
+  ecosystem_specific:
+    severity: null
+  versions: []
+schema_version: 1.6.0
