@@ -10,7 +10,7 @@ details: |
   org.apache.commons.configuration2.tree.NodeTreeWalker.dfs
   org.apache.commons.configuration2.tree.NodeTreeWalker.lambda$dfs$0
   ```
-modified: '2024-03-13T14:14:10.752741Z'
+modified: '2024-03-18T14:13:58.567077Z'
 published: '2022-09-10T00:00:24.780487Z'
 references:
 - type: REPORT
@@ -30,6 +30,7 @@ affected:
   - rel/commons-configuration-2.9.0
   - commons-configuration-2.10.0-RC1
   - rel/commons-configuration-2.10.0
+  - commons-configuration-2.10.1-RC1
   ecosystem_specific:
     severity: LOW
 schema_version: 1.3.0
