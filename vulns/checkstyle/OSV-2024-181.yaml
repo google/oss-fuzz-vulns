@@ -1,0 +1,34 @@
+id: OSV-2024-181
+summary: Security exception in org.antlr.v4.runtime.atn.PredictionContext.fromRuleContext
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=67461
+
+  ```
+  Crash type: Security exception
+  Crash state:
+  org.antlr.v4.runtime.atn.PredictionContext.fromRuleContext
+  org.antlr.v4.runtime.misc.MurmurHash.update
+  org.antlr.v4.runtime.misc.MurmurHash.update
+  ```
+modified: '2024-03-18T00:11:51.491759Z'
+published: '2024-03-18T00:11:51.491190Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=67461
+affected:
+- package:
+    name: checkstyle
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/checkstyle
+  ranges:
+  - type: GIT
+    repo: https://github.com/checkstyle/checkstyle
+    events:
+    - introduced: 1bb3d569c975eea323094aed9e3fea4edb5a2e08
+  versions:
+  - checkstyle-10.14.2
+  ecosystem_specific:
+    severity: LOW
+  database_specific:
+    introduced_range: 25cd4470a414ba170b67a09644a2e865f46ce48e:68366f7293319ee2b0b6a511d18d33de44155912
+schema_version: 1.6.0
