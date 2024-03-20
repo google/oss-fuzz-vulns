@@ -10,7 +10,7 @@ details: |
   ucl_hash_search
   ucl_inherit_handler
   ```
-modified: '2024-02-01T14:06:02.934523Z'
+modified: '2024-03-20T14:01:49.672461Z'
 published: '2021-09-15T00:00:41.384284Z'
 references:
 - type: REPORT
@@ -27,6 +27,7 @@ affected:
   versions:
   - 0.8.2
   - 0.9.0
+  - 0.9.1
   ecosystem_specific:
     severity: MEDIUM
   database_specific:
