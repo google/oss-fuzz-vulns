@@ -10,7 +10,7 @@ details: |
   wc_ed448_sign_msg_ex
   wc_ed448_sign_msg
   ```
-modified: '2023-12-20T14:15:37.886213Z'
+modified: '2024-03-21T14:20:55.752552Z'
 published: '2022-09-05T00:00:28.251072Z'
 references:
 - type: REPORT
@@ -36,6 +36,7 @@ affected:
   - WCv5.2.1-PILOT
   - v5.6.4-stable
   - v5.6.6-stable
+  - v5.7.0-stable
   ecosystem_specific:
     severity: HIGH
 schema_version: 1.2.0
