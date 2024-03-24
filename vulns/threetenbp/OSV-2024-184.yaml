@@ -1,0 +1,33 @@
+id: OSV-2024-184
+summary: Security exception in org.threeten.bp.format.DateTimeFormatterBuilder$CompositePrinterParser.parse
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=67437
+
+  ```
+  Crash type: Security exception
+  Crash state:
+  org.threeten.bp.format.DateTimeFormatterBuilder$CompositePrinterParser.parse
+  java.base/sun.util.locale.provider.LocaleProviderAdapter.getAdapter
+  java.base/java.text.DateFormatSymbols.getProviderInstance
+  ```
+modified: '2024-03-21T00:13:27.175564Z'
+published: '2024-03-21T00:13:27.175097Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=67437
+affected:
+- package:
+    name: threetenbp
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/threetenbp
+  ranges:
+  - type: GIT
+    repo: https://github.com/ThreeTen/threetenbp
+    events:
+    - introduced: 0a5403ed315b9b1770c27a74ca6c2e162851ca78
+  ecosystem_specific:
+    severity: LOW
+  database_specific:
+    introduced_range: 1bc34b1340ae99978566999f70ae909013ee8c9d:bdf97bf72f4e5af7ae3c3af1ea8e3407c1451341
+  versions: []
+schema_version: 1.6.0
