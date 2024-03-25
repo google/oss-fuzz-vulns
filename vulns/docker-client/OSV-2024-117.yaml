@@ -1,0 +1,31 @@
+id: OSV-2024-117
+summary: Security exception in com.spotify.docker.client.shaded.com.fasterxml.jackson.databind.util.TokenBuffer
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=66745
+
+  ```
+  Crash type: Security exception
+  Crash state:
+  com.spotify.docker.client.shaded.com.fasterxml.jackson.databind.util.TokenBuffer
+  java.base/java.nio.charset.CharsetEncoder.<init>
+  java.base/sun.nio.cs.CESU_8$Encoder.<init>
+  ```
+modified: '2024-02-19T00:05:05.793781Z'
+published: '2024-02-19T00:05:05.793082Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=66745
+affected:
+- package:
+    name: docker-client
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/docker-client
+  ranges:
+  - type: GIT
+    repo: https://github.com/spotify/docker-client
+    events:
+    - introduced: 9a7c3b4994be9a55988f821f7177029201ff6aef
+  ecosystem_specific:
+    severity: LOW
+  versions: []
+schema_version: 1.6.0

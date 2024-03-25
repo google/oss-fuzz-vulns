@@ -1,0 +1,33 @@
+id: OSV-2024-189
+summary: Negative-size-param in vcf_parse_format
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=67431
+
+  ```
+  Crash type: Negative-size-param
+  Crash state:
+  vcf_parse_format
+  vcf_parse
+  bcf_read
+  ```
+modified: '2024-03-23T00:12:44.903543Z'
+published: '2024-03-23T00:12:44.903137Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=67431
+affected:
+- package:
+    name: htslib
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/htslib
+  ranges:
+  - type: GIT
+    repo: https://github.com/samtools/htslib.git
+    events:
+    - introduced: 7ce510c92bb841ded9972cdfaefa527fe34a5e71
+  ecosystem_specific:
+    severity: null
+  database_specific:
+    introduced_range: 7d3efee742cd13a5b23c057ee29a71a51c6f94a6:55cafdc9434f3141019cda7274c7a930a4ddd361
+  versions: []
+schema_version: 1.6.0
