@@ -10,7 +10,7 @@ details: |
   java.base/sun.util.locale.provider.LocaleProviderAdapter.getAdapter
   java.base/java.text.DateFormatSymbols.getProviderInstance
   ```
-modified: '2024-03-21T00:13:27.175564Z'
+modified: '2024-03-26T14:21:41.121165Z'
 published: '2024-03-21T00:13:27.175097Z'
 references:
 - type: REPORT
@@ -25,9 +25,10 @@ affected:
     repo: https://github.com/ThreeTen/threetenbp
     events:
     - introduced: 0a5403ed315b9b1770c27a74ca6c2e162851ca78
+  versions:
+  - v1.6.9
   ecosystem_specific:
     severity: LOW
   database_specific:
     introduced_range: 1bc34b1340ae99978566999f70ae909013ee8c9d:bdf97bf72f4e5af7ae3c3af1ea8e3407c1451341
-  versions: []
 schema_version: 1.6.0
