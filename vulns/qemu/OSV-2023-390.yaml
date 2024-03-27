@@ -10,7 +10,7 @@ details: |
   memory_region_write_accessor
   memory_region_dispatch_write
   ```
-modified: '2024-03-20T14:55:32.723530Z'
+modified: '2024-03-27T14:35:12.131680Z'
 published: '2023-05-12T14:00:08.854823Z'
 references:
 - type: REPORT
@@ -84,6 +84,7 @@ affected:
   - v7.2.10
   - v8.2.2
   - v9.0.0-rc0
+  - v9.0.0-rc1
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.4.0
