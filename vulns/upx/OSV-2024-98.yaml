@@ -10,7 +10,7 @@ details: |
   PackLinuxElf32::un_asl_dynsym
   PackLinuxElf32::un_shlib_1
   ```
-modified: '2024-02-11T00:14:29.716034Z'
+modified: '2024-03-28T14:22:08.985495Z'
 published: '2024-02-11T00:14:29.715614Z'
 references:
 - type: REPORT
@@ -28,6 +28,7 @@ affected:
     - introduced: 666b3c0f74efaa67858e109df93856a6f26f419c
   versions:
   - v4.2.2
+  - v4.2.3
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.6.0
