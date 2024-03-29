@@ -10,7 +10,7 @@ details: |
   icu_75::PluralRules::createRules
   plurrule_fuzzer.cpp
   ```
-modified: '2024-01-21T00:00:16.254527Z'
+modified: '2024-03-29T16:12:09.778725Z'
 published: '2024-01-21T00:00:16.253854Z'
 references:
 - type: REPORT
@@ -25,7 +25,8 @@ affected:
     repo: https://github.com/unicode-org/icu.git
     events:
     - introduced: 23dd2b8b5499506a9ff541c9c2f8bf7701cf93b8
+  versions:
+  - release-75-rc
   ecosystem_specific:
     severity: HIGH
-  versions: []
 schema_version: 1.6.0
