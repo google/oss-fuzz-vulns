@@ -10,7 +10,7 @@ details: |
   ulocimp_getBaseName_75
   ures_openWithType
   ```
-modified: '2024-01-11T00:04:20.734807Z'
+modified: '2024-03-29T18:17:44.335372Z'
 published: '2024-01-11T00:04:20.734197Z'
 references:
 - type: REPORT
@@ -25,7 +25,8 @@ affected:
     repo: https://github.com/unicode-org/icu.git
     events:
     - introduced: cfba9a8caf6cb6ab39eb4ca5702c78f97989bcde
+  versions:
+  - release-75-rc
   ecosystem_specific:
     severity: MEDIUM
-  versions: []
 schema_version: 1.6.0
