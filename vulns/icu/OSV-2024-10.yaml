@@ -8,7 +8,7 @@ details: |
   Crash state:
   __string
   ```
-modified: '2024-01-12T00:12:45.529061Z'
+modified: '2024-03-29T15:36:19.347415Z'
 published: '2024-01-12T00:12:45.528472Z'
 references:
 - type: REPORT
@@ -23,7 +23,8 @@ affected:
     repo: https://github.com/unicode-org/icu.git
     events:
     - introduced: cfba9a8caf6cb6ab39eb4ca5702c78f97989bcde
+  versions:
+  - release-75-rc
   ecosystem_specific:
     severity: MEDIUM
-  versions: []
 schema_version: 1.6.0
