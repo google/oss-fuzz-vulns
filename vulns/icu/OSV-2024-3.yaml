@@ -10,7 +10,7 @@ details: |
   icu_75::TZDBTimeZoneNames::getMetaZoneDisplayName
   TestNames
   ```
-modified: '2024-01-04T00:03:08.481358Z'
+modified: '2024-03-31T15:37:13.312592Z'
 published: '2024-01-04T00:03:08.480968Z'
 references:
 - type: REPORT
@@ -25,7 +25,8 @@ affected:
     repo: https://github.com/unicode-org/icu.git
     events:
     - introduced: 5cf5ec1adbd2332b3cc289b5b1f5ca8324275fc3
+  versions:
+  - release-75-rc
   ecosystem_specific:
     severity: HIGH
-  versions: []
 schema_version: 1.6.0
