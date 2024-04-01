@@ -1,0 +1,33 @@
+id: OSV-2024-221
+summary: Heap-buffer-overflow in libspdm_copy_mem
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=67585
+
+  ```
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  libspdm_copy_mem
+  libspdm_get_response_chunk_send
+  libspdm_get_response_chunk_send
+  ```
+modified: '2024-03-31T00:05:20.376771Z'
+published: '2024-03-31T00:05:20.376065Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=67585
+affected:
+- package:
+    name: libspdm
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libspdm
+  ranges:
+  - type: GIT
+    repo: https://github.com/DMTF/libspdm.git
+    events:
+    - introduced: c2d004512067a23f483a99224165accf3d9d89f2
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: 2586f39ce83d1e96747bdeebfb62eab020bcc1b1:d83ef43d3be34419e118fc3507fefdd0d0d2692c
+  versions: []
+schema_version: 1.6.0
