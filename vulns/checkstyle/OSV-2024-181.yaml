@@ -10,7 +10,7 @@ details: |
   org.antlr.v4.runtime.misc.MurmurHash.update
   org.antlr.v4.runtime.misc.MurmurHash.update
   ```
-modified: '2024-03-18T00:11:51.491759Z'
+modified: '2024-04-01T14:22:24.811254Z'
 published: '2024-03-18T00:11:51.491190Z'
 references:
 - type: REPORT
@@ -27,6 +27,7 @@ affected:
     - introduced: 1bb3d569c975eea323094aed9e3fea4edb5a2e08
   versions:
   - checkstyle-10.14.2
+  - checkstyle-10.15.0
   ecosystem_specific:
     severity: LOW
   database_specific:
