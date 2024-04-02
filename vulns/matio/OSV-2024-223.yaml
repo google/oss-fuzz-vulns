@@ -1,0 +1,36 @@
+id: OSV-2024-223
+summary: UNKNOWN READ in H5HG_read
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=67725
+
+  ```
+  Crash type: UNKNOWN READ
+  Crash state:
+  H5HG_read
+  H5VL__native_blob_get
+  H5VL__blob_get
+  ```
+modified: '2024-04-01T00:01:29.990274Z'
+published: '2024-04-01T00:01:29.989664Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=67725
+affected:
+- package:
+    name: matio
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/matio
+  ranges:
+  - type: GIT
+    repo: https://github.com/tbeu/matio.git
+    events:
+    - introduced: 6fded58f72eda51b7baabf05174315a9570b28c2
+  versions:
+  - v1.5.24
+  - v1.5.25
+  - v1.5.26
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: 77d8c989bc802b81354d86056386a762ef1fcfa1:1a2c5ca53c083ac151e74ae289ad27336d625f9c
+schema_version: 1.6.0
