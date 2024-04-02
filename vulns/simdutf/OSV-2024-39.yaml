@@ -9,7 +9,7 @@ details: |
   simdutf::westmere::implementation::convert_utf8_to_utf32
   roundtrip.cc
   ```
-modified: '2024-03-19T14:21:22.619045Z'
+modified: '2024-04-02T14:20:28.720373Z'
 published: '2024-01-25T00:05:37.689031Z'
 references:
 - type: REPORT
@@ -32,6 +32,9 @@ affected:
   - v4.0.8
   - v4.0.9
   - v5.0.0
+  - v5.1.0
+  - v5.2.0
+  - v5.2.1
   ecosystem_specific:
     severity: HIGH
 schema_version: 1.6.0
