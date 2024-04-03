@@ -10,7 +10,7 @@ details: |
   igraph_dl_yyparse
   igraph_read_graph_dl
   ```
-modified: '2024-02-27T00:01:01.787103Z'
+modified: '2024-04-03T14:17:44.548648Z'
 published: '2024-02-27T00:01:01.786536Z'
 references:
 - type: REPORT
@@ -25,7 +25,8 @@ affected:
     repo: https://github.com/igraph/igraph
     events:
     - introduced: 74b2e25f02b82b583ee6c38c52e024337571f443
+  versions:
+  - 0.10.11
   ecosystem_specific:
     severity: null
-  versions: []
 schema_version: 1.6.0
