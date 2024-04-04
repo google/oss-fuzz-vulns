@@ -10,7 +10,7 @@ details: |
   java.base/java.util.concurrent.ConcurrentHashMap.putVal
   java.base/java.util.concurrent.ConcurrentHashMap.putIfAbsent
   ```
-modified: '2024-03-05T14:20:06.188931Z'
+modified: '2024-04-04T14:17:31.086359Z'
 published: '2024-02-28T00:05:23.810172Z'
 references:
 - type: REPORT
@@ -27,6 +27,7 @@ affected:
     - introduced: 600a82f95e99b5a134d72c6fb3c3a60442b4f113
   versions:
   - javaparser-parent-3.25.9
+  - javaparser-parent-3.25.10
   ecosystem_specific:
     severity: LOW
   database_specific:
