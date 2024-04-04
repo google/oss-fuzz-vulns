@@ -10,7 +10,7 @@ details: |
   java.base/java.lang.String.startsWith
   java.base/java.net.URL.isBuiltinStreamHandler
   ```
-modified: '2024-03-14T00:10:52.219167Z'
+modified: '2024-04-04T14:20:00.056238Z'
 published: '2024-03-14T00:10:52.218597Z'
 references:
 - type: REPORT
@@ -44,6 +44,7 @@ affected:
   - javaparser-parent-3.25.9
   - v_snapshot_56be443
   - v_snapshot_e2590f3
+  - javaparser-parent-3.25.10
   ecosystem_specific:
     severity: LOW
   database_specific:
