@@ -1,0 +1,32 @@
+id: OSV-2024-233
+summary: Use-of-uninitialized-value in WelsDec::CWelsDecoder::ReorderPicturesInDisplay
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=66003
+
+  ```
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  WelsDec::CWelsDecoder::ReorderPicturesInDisplay
+  WelsDec::CWelsDecoder::DecodeFrame2WithCtx
+  WelsDec::CWelsDecoder::DecodeFrame2
+  ```
+modified: '2024-04-03T00:12:42.633039Z'
+published: '2024-04-03T00:12:42.632653Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=66003
+affected:
+- package:
+    name: openh264
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/openh264
+  ranges:
+  - type: GIT
+    repo: https://github.com/cisco/openh264.git
+    events:
+    - introduced: 4f01c15b2199daf16924caa53f77a52e8b559260
+  versions:
+  - v2.4.1
+  ecosystem_specific:
+    severity: MEDIUM
+schema_version: 1.6.0
