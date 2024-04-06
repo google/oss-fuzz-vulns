@@ -10,7 +10,7 @@ details: |
   libspdm_get_response_chunk_send
   libspdm_get_response_chunk_send
   ```
-modified: '2024-03-31T00:05:20.376771Z'
+modified: '2024-04-06T14:38:17.060185Z'
 published: '2024-03-31T00:05:20.376065Z'
 references:
 - type: REPORT
@@ -25,9 +25,10 @@ affected:
     repo: https://github.com/DMTF/libspdm.git
     events:
     - introduced: c2d004512067a23f483a99224165accf3d9d89f2
+  versions:
+  - 3.3.0
   ecosystem_specific:
     severity: MEDIUM
   database_specific:
     introduced_range: 2586f39ce83d1e96747bdeebfb62eab020bcc1b1:d83ef43d3be34419e118fc3507fefdd0d0d2692c
-  versions: []
 schema_version: 1.6.0
