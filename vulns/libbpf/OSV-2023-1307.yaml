@@ -10,7 +10,7 @@ details: |
   bpf_object__init_maps
   bpf_object_open
   ```
-modified: '2024-04-02T14:14:06.062488Z'
+modified: '2024-04-06T14:16:43.617237Z'
 published: '2023-12-15T00:12:51.528155Z'
 references:
 - type: REPORT
@@ -31,6 +31,7 @@ affected:
   - v1.2.2
   - v1.3.0
   - v1.4.0
+  - v0.8.2
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.6.0
