@@ -10,7 +10,7 @@ details: |
   blosc2_free_ctx
   blosc2_schunk_free
   ```
-modified: '2024-04-04T14:12:00.031427Z'
+modified: '2024-04-06T14:12:39.253848Z'
 published: '2023-02-05T13:00:54.245269Z'
 references:
 - type: REPORT
@@ -68,6 +68,8 @@ affected:
   - v2.13.2
   - v2.14.0
   - v2.14.1
+  - v2.14.2
+  - v2.14.3
   ecosystem_specific:
     severity: HIGH
 schema_version: 1.4.0
