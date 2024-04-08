@@ -10,7 +10,7 @@ details: |
   Assimp::MD5::MD5Parser::MD5Parser
   Assimp::MD5Importer::LoadMD5MeshFile
   ```
-modified: '2023-07-02T14:00:19.270066Z'
+modified: '2024-04-08T14:18:10.871342Z'
 published: '2023-07-02T14:00:19.269762Z'
 references:
 - type: REPORT
@@ -43,6 +43,7 @@ affected:
   - v5.2.5
   - v5.3.0
   - v5.3.1
+  - v5.4.0
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.4.0
