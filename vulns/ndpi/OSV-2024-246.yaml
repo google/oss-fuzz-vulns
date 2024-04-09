@@ -1,0 +1,32 @@
+id: OSV-2024-246
+summary: UNKNOWN READ in ndpi_detection_process_packet
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=67881
+
+  ```
+  Crash type: UNKNOWN READ
+  Crash state:
+  ndpi_detection_process_packet
+  fuzz_process_packet.c
+  ```
+modified: '2024-04-08T00:12:19.540398Z'
+published: '2024-04-08T00:12:19.539863Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=67881
+affected:
+- package:
+    name: ndpi
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/ndpi
+  ranges:
+  - type: GIT
+    repo: https://github.com/ntop/nDPI.git
+    events:
+    - introduced: 99e521eaf8b79ef38764edc204ae588f15ea2291
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: 09bb383437c11ef55e926ed15cdf986c0d426827:700637a162ba0d3350cff0ff16331ffaa6c2f841
+  versions: []
+schema_version: 1.6.0
