@@ -10,7 +10,7 @@ details: |
   ZSTD_decompressMultiFrame
   ZSTD_decompressDCtx
   ```
-modified: '2024-04-06T14:06:58.912605Z'
+modified: '2024-04-10T14:07:46.366794Z'
 published: '2021-07-29T00:01:10.187569Z'
 references:
 - type: REPORT
@@ -69,5 +69,6 @@ affected:
   - v2.14.1
   - v2.14.2
   - v2.14.3
+  - v2.14.4
   ecosystem_specific:
     severity: MEDIUM
