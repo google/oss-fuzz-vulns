@@ -10,7 +10,7 @@ details: |
   chunk_free_object
   pdfi_free_font_type1
   ```
-modified: '2024-03-17T00:03:41.276072Z'
+modified: '2024-04-12T14:46:15.104038Z'
 published: '2024-03-17T00:03:41.275523Z'
 references:
 - type: REPORT
@@ -25,7 +25,8 @@ affected:
     repo: git://git.ghostscript.com/ghostpdl.git
     events:
     - introduced: 7d3e88528a466ca81df4196db5322da9aab16667
+  versions:
+  - robin_test_ref
   ecosystem_specific:
     severity: MEDIUM
-  versions: []
 schema_version: 1.6.0
