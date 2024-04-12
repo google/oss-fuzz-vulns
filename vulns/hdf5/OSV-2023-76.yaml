@@ -10,7 +10,7 @@ details: |
   H5O__msg_write_real
   H5O_msg_write
   ```
-modified: '2023-11-08T14:54:04.202005Z'
+modified: '2024-04-12T14:28:58.963273Z'
 published: '2023-02-18T13:00:50.471845Z'
 references:
 - type: REPORT
@@ -42,6 +42,7 @@ affected:
   - hdf5-1_14_3-rc1
   - hdf5-1_14_3
   - hdf5-1_12_3
+  - hdf5_1.14.4
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.4.0
