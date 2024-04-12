@@ -10,7 +10,7 @@ details: |
   H5G__traverse_special
   H5G__traverse_real
   ```
-modified: '2023-11-08T14:33:00.594846Z'
+modified: '2024-04-12T15:20:39.526316Z'
 published: '2023-03-02T13:02:08.499899Z'
 references:
 - type: REPORT
@@ -42,6 +42,7 @@ affected:
   - hdf5-1_14_3-rc1
   - hdf5-1_14_3
   - hdf5-1_12_3
+  - hdf5_1.14.4
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.4.0
