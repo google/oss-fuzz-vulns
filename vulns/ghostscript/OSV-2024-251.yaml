@@ -1,0 +1,52 @@
+id: OSV-2024-251
+summary: Heap-use-after-free in gx_device_forward_finalize
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=67932
+
+  ```
+  Crash type: Heap-use-after-free READ 8
+  Crash state:
+  gx_device_forward_finalize
+  gx_device_finalize
+  gs_gc_reclaim
+  ```
+modified: '2024-04-12T00:02:31.478670Z'
+published: '2024-04-12T00:02:31.478145Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=67932
+affected:
+- package:
+    name: ghostscript
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/ghostscript
+  ranges:
+  - type: GIT
+    repo: git://git.ghostscript.com/ghostpdl.git
+    events:
+    - introduced: 441c9e3a4ca08fa7f7c00063af33196b0d88ebaf
+  versions:
+  - ghostpdl-10.0.0
+  - ghostpdl-10.0.0_release_tests_002
+  - ghostpdl-10.0.0rc1
+  - ghostpdl-10.0.0rc2
+  - ghostpdl-10.01.0
+  - ghostpdl-10.01.0rc1
+  - ghostpdl-10.01.0rc2
+  - ghostpdl-10.01.1
+  - ghostpdl-10.01.1-gse-10174
+  - ghostpdl-10.01.2
+  - ghostpdl-10.02.0
+  - ghostpdl-10.02.0-test-base-001
+  - ghostpdl-10.02.0rc1
+  - ghostpdl-10.02.0rc2
+  - ghostpdl-10.02.1
+  - ghostpdl-10.03.0_test001
+  - ghostpdl-10.03.0_test002
+  - ghostpdl-10.03.0rc1
+  - ghostpdl-10.03.0rc1_test
+  - ghostpdl-10.03.0rc1_test002
+  - ghostpdl-10.03.0rc1_test003
+  ecosystem_specific:
+    severity: HIGH
+schema_version: 1.6.0
