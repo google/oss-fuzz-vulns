@@ -10,7 +10,7 @@ details: |
   blend_untransformed_generic_rgb64
   fillRect_normalized
   ```
-modified: '2024-02-28T14:11:15.603295Z'
+modified: '2024-04-13T14:06:05.635452Z'
 published: '2020-07-14T22:13:50.828646Z'
 references:
 - type: REPORT
@@ -125,5 +125,6 @@ affected:
   - v5.115.0-rc1
   - v5.115.0
   - v6.0.0
+  - v6.1.0
   ecosystem_specific:
     severity: MEDIUM
