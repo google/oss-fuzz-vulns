@@ -10,7 +10,7 @@ details: |
   H5FL_garbage_coll
   H5FL_term_package
   ```
-modified: '2023-05-08T14:02:04.934513Z'
+modified: '2024-04-13T14:30:17.437997Z'
 published: '2023-05-08T14:02:04.934252Z'
 references:
 - type: REPORT
@@ -27,6 +27,7 @@ affected:
     - introduced: a9036005c3916e6fda0296026323f00d043300f8
   versions:
   - snapshot
+  - hdf5-1.14.4.1
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.4.0
