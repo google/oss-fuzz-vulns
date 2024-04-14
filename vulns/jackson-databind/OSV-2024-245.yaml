@@ -1,0 +1,33 @@
+id: OSV-2024-245
+summary: Security exception in com.github.javaparser.ast.validator.TreeVisitorValidator.accept
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=67672
+
+  ```
+  Crash type: Security exception
+  Crash state:
+  com.github.javaparser.ast.validator.TreeVisitorValidator.accept
+  com.github.javaparser.ast.expr.FieldAccessExpr.getMetaModel
+  com.github.javaparser.ast.expr.FieldAccessExpr.getMetaModel
+  ```
+modified: '2024-04-08T00:11:03.596136Z'
+published: '2024-04-08T00:11:03.595756Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=67672
+affected:
+- package:
+    name: jackson-databind
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/jackson-databind
+  ranges:
+  - type: GIT
+    repo: https://github.com/FasterXML/jackson-databind
+    events:
+    - introduced: 407f500a1ec7e7bc31282d8763cf1a47ef4f0338
+  ecosystem_specific:
+    severity: LOW
+  database_specific:
+    introduced_range: 696526db115b42f1f201dea2af406513b88f0d3f:199d3ac25081ba9064e70abe3198210314bab944
+  versions: []
+schema_version: 1.6.0
