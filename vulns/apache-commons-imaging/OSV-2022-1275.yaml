@@ -10,7 +10,7 @@ details: |
   java.desktop/java.awt.image.Raster.createPackedRaster
   java.desktop/java.awt.image.DirectColorModel.createCompatibleWritableRaster
   ```
-modified: '2024-04-03T14:09:09.409640Z'
+modified: '2024-04-15T14:09:32.631266Z'
 published: '2023-05-28T14:00:35.487433Z'
 references:
 - type: REPORT
@@ -29,6 +29,7 @@ affected:
   - commons-imaging-1.0.0-M1-RC1
   - commons-imaging-1.0.0-alpha4-RC1
   - rel/commons-imaging-1.0.0-alpha4
+  - commons-imaging-1.0.0-alpha5-RC1
   ecosystem_specific:
     severity: LOW
   database_specific:
