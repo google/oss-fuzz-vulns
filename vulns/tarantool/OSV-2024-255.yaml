@@ -1,0 +1,30 @@
+id: OSV-2024-255
+summary: UNKNOWN READ
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=66797
+
+  ```
+  Crash type: UNKNOWN READ
+  Crash state:
+  NULL```
+modified: '2024-04-13T00:10:35.758532Z'
+published: '2024-04-13T00:10:35.758074Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=66797
+affected:
+- package:
+    name: tarantool
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/tarantool
+  ranges:
+  - type: GIT
+    repo: https://github.com/tarantool/tarantool
+    events:
+    - introduced: 0f6fa6e0534dea16424692d129860e12523f7306
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: eaff238d97ec20f1131029f1d4bc6aab6d52cf77:3daf2399dd5b2b1987e258918376ff9be87e9b01
+  versions: []
+schema_version: 1.6.0
