@@ -10,7 +10,7 @@ details: |
   icu_75::PluralRules::createRules
   plurrule_fuzzer.cpp
   ```
-modified: '2024-03-29T16:12:09.778725Z'
+modified: '2024-04-16T15:30:31.262505Z'
 published: '2024-01-21T00:00:16.253854Z'
 references:
 - type: REPORT
@@ -27,6 +27,7 @@ affected:
     - introduced: 23dd2b8b5499506a9ff541c9c2f8bf7701cf93b8
   versions:
   - release-75-rc
+  - release-75-1
   ecosystem_specific:
     severity: HIGH
 schema_version: 1.6.0
