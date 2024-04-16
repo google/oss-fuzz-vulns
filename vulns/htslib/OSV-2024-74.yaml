@@ -10,7 +10,7 @@ details: |
   process_one_read
   cram_encode_container
   ```
-modified: '2024-02-04T00:02:45.989318Z'
+modified: '2024-04-16T14:21:50.000776Z'
 published: '2024-02-04T00:02:45.988846Z'
 references:
 - type: REPORT
@@ -28,6 +28,7 @@ affected:
   versions:
   - '1.19'
   - 1.19.1
+  - '1.20'
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.6.0
