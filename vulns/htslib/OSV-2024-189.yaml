@@ -10,7 +10,7 @@ details: |
   vcf_parse
   bcf_read
   ```
-modified: '2024-03-23T00:12:44.903543Z'
+modified: '2024-04-16T14:19:36.401830Z'
 published: '2024-03-23T00:12:44.903137Z'
 references:
 - type: REPORT
@@ -25,9 +25,10 @@ affected:
     repo: https://github.com/samtools/htslib.git
     events:
     - introduced: 7ce510c92bb841ded9972cdfaefa527fe34a5e71
+  versions:
+  - '1.20'
   ecosystem_specific:
     severity: null
   database_specific:
     introduced_range: 7d3efee742cd13a5b23c057ee29a71a51c6f94a6:55cafdc9434f3141019cda7274c7a930a4ddd361
-  versions: []
 schema_version: 1.6.0
