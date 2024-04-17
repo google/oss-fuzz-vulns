@@ -10,7 +10,7 @@ details: |
   lua_pcall
   luaL_loadbuffer_fuzzer.cc
   ```
-modified: '2024-02-17T00:12:33.617590Z'
+modified: '2024-04-17T14:24:32.039372Z'
 published: '2024-02-17T00:12:33.617106Z'
 references:
 - type: REPORT
@@ -25,7 +25,9 @@ affected:
     repo: https://github.com/tarantool/tarantool
     events:
     - introduced: 6482678041361f9b661b436218b6840ba90c54a3
+  versions:
+  - 3.1.0
+  - 3.2.0-entrypoint
   ecosystem_specific:
     severity: null
-  versions: []
 schema_version: 1.6.0
