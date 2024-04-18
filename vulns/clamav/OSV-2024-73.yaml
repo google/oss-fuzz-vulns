@@ -10,7 +10,7 @@ details: |
   cli_pdf
   cli_scanpdf
   ```
-modified: '2024-02-08T14:23:55.008446Z'
+modified: '2024-04-18T14:08:08.229879Z'
 published: '2024-02-04T00:02:39.648902Z'
 references:
 - type: REPORT
@@ -28,6 +28,7 @@ affected:
   versions:
   - clamav-1.3.0-rc2
   - clamav-1.3.0
+  - clamav-1.3.1
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.6.0
