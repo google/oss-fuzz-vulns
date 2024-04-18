@@ -10,7 +10,7 @@ details: |
   gf_bs_read_u8
   dump_sei
   ```
-modified: '2024-02-25T00:05:28.924370Z'
+modified: '2024-04-18T14:10:11.037617Z'
 published: '2024-02-25T00:05:28.923786Z'
 references:
 - type: REPORT
@@ -25,7 +25,8 @@ affected:
     repo: https://github.com/gpac/gpac
     events:
     - introduced: e17710641b59c09238546464768a4e9a1d5e4603
+  versions:
+  - v2.4.0
   ecosystem_specific:
     severity: MEDIUM
-  versions: []
 schema_version: 1.6.0
