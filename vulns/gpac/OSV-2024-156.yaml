@@ -10,7 +10,7 @@ details: |
   rtpin_initialize
   gf_filter_new_finalize
   ```
-modified: '2024-03-10T00:01:41.406337Z'
+modified: '2024-04-18T14:21:00.600694Z'
 published: '2024-03-10T00:01:41.405747Z'
 references:
 - type: REPORT
@@ -25,7 +25,8 @@ affected:
     repo: https://github.com/gpac/gpac
     events:
     - introduced: fb35bdcbea0d4d27adfedecc78f9c8e0b28187ec
+  versions:
+  - v2.4.0
   ecosystem_specific:
     severity: HIGH
-  versions: []
 schema_version: 1.6.0
