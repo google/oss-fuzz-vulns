@@ -10,7 +10,7 @@ details: |
   gf_isom_box_parse_ex
   gf_isom_box_array_read
   ```
-modified: '2024-02-29T00:06:19.764301Z'
+modified: '2024-04-18T14:20:45.279874Z'
 published: '2024-02-29T00:06:19.763458Z'
 references:
 - type: REPORT
@@ -25,7 +25,8 @@ affected:
     repo: https://github.com/gpac/gpac
     events:
     - introduced: bbf25211ff041da80c52ab960f42e177027b3a7f
+  versions:
+  - v2.4.0
   ecosystem_specific:
     severity: HIGH
-  versions: []
 schema_version: 1.6.0
