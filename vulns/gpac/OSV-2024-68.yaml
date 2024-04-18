@@ -10,7 +10,7 @@ details: |
   gf_filter_pid_raw_new
   filein_process
   ```
-modified: '2024-02-03T14:15:17.618676Z'
+modified: '2024-04-18T14:26:13.767979Z'
 published: '2024-02-02T00:02:07.804929Z'
 references:
 - type: REPORT
@@ -26,9 +26,10 @@ affected:
     events:
     - introduced: b8144ba169730953723dcd81aabf6ad445f83275
     - introduced: 34b8d0aa8c14d59cbbfe9bd140f413fa19bf4b62
+  versions:
+  - v2.4.0
   ecosystem_specific:
     severity: MEDIUM
   database_specific:
     introduced_range: 6efd7f002a7e23a117307e4a0f6b47dda7bebd88:334d8f83207aee22a729c0b72cda455271d9976f
-  versions: []
 schema_version: 1.6.0
