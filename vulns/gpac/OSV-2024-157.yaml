@@ -10,7 +10,7 @@ details: |
   txtin_probe_data
   gf_filter_pid_raw_new
   ```
-modified: '2024-03-10T00:06:03.490290Z'
+modified: '2024-04-18T14:20:28.786302Z'
 published: '2024-03-10T00:06:03.489792Z'
 references:
 - type: REPORT
@@ -25,7 +25,8 @@ affected:
     repo: https://github.com/gpac/gpac
     events:
     - introduced: d9da11ec2e3b5f223b303bdcd3f208c000958987
+  versions:
+  - v2.4.0
   ecosystem_specific:
     severity: MEDIUM
-  versions: []
 schema_version: 1.6.0
