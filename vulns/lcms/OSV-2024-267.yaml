@@ -1,0 +1,44 @@
+id: OSV-2024-267
+summary: Heap-buffer-overflow in SetDataFormat
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=68047
+
+  ```
+  Crash type: Heap-buffer-overflow WRITE 8
+  Crash state:
+  SetDataFormat
+  ParseIT8
+  cmsIT8LoadFromMem
+  ```
+modified: '2024-04-18T00:02:12.015630Z'
+published: '2024-04-18T00:02:12.015129Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=68047
+affected:
+- package:
+    name: lcms
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/lcms
+  ranges:
+  - type: GIT
+    repo: https://github.com/mm2/Little-CMS.git
+    events:
+    - introduced: 8aa70ee88c8319eb677b82aebdceb1bda1c3f0b7
+  versions:
+  - lcm2.16rc1
+  - lcms2.13
+  - lcms2.13.1
+  - lcms2.13rc1
+  - lcms2.13rc2
+  - lcms2.14
+  - lcms2.14rc1
+  - lcms2.15
+  - lcms2.15rc1
+  - lcms2.16
+  - lcms2.16rc1
+  ecosystem_specific:
+    severity: HIGH
+  database_specific:
+    introduced_range: 6bef8bd0788527d46316da01b1b679fc160e0196:1c667a762c4272ec970a2dd6f945836c52f35720
+schema_version: 1.6.0

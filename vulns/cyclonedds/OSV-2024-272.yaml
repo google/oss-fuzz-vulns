@@ -1,0 +1,30 @@
+id: OSV-2024-272
+summary: Heap-buffer-overflow in DDS_Security_Deserialize_ParticipantBuiltinTopicData
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=68028
+
+  ```
+  Crash type: Heap-buffer-overflow READ 2
+  Crash state:
+  DDS_Security_Deserialize_ParticipantBuiltinTopicData
+  fuzz_security_deser.c
+  ```
+modified: '2024-04-18T00:05:58.464184Z'
+published: '2024-04-18T00:05:58.463730Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=68028
+affected:
+- package:
+    name: cyclonedds
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/cyclonedds
+  ranges:
+  - type: GIT
+    repo: https://github.com/eclipse-cyclonedds/cyclonedds
+    events:
+    - introduced: 31a4843667830be87a38bd8bb22268061f79b42b
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
+schema_version: 1.6.0
