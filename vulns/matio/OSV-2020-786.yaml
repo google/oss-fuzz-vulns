@@ -10,7 +10,7 @@ details: |
   H5T__conv_i_i
   H5T_convert
   ```
-modified: '2023-10-28T14:07:53.647396Z'
+modified: '2024-04-20T14:07:42.810403Z'
 published: '2020-07-14T05:37:33.311187Z'
 references:
 - type: REPORT
@@ -32,6 +32,9 @@ affected:
   - v1.5.22
   - v1.5.23
   - v1.5.24
+  - v1.5.25
+  - v1.5.26
+  - v1.5.27
   ecosystem_specific:
     severity: MEDIUM
     introduced_range: 7a9958485036ef37b4e88df5cbe32bd7ec4c0d25:6540087e697ca2b8950bada3d4ca653951b467dc
