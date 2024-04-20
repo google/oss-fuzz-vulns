@@ -10,7 +10,7 @@ details: |
   Mat_VarFree
   MatioRead
   ```
-modified: '2024-04-18T00:09:21.578267Z'
+modified: '2024-04-20T14:21:22.678715Z'
 published: '2024-04-18T00:09:21.577754Z'
 references:
 - type: REPORT
@@ -25,9 +25,10 @@ affected:
     repo: https://github.com/tbeu/matio.git
     events:
     - introduced: 689ba82f28484a7b942d91ffe6c97d7edf5e54ca
+  versions:
+  - v1.5.27
   ecosystem_specific:
     severity: HIGH
   database_specific:
     introduced_range: bade6369ff47294a2290ea0f61d564559d7d6d68:36aa91bb702a9217ec05c866f932c78f1e0b2647
-  versions: []
 schema_version: 1.6.0
