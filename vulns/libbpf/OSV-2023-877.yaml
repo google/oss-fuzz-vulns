@@ -10,7 +10,7 @@ details: |
   btf__add_var
   bpf_object__collect_externs
   ```
-modified: '2024-04-06T14:17:02.059188Z'
+modified: '2024-04-20T14:16:43.416962Z'
 published: '2023-09-18T14:02:44.989260Z'
 references:
 - type: REPORT
@@ -39,6 +39,7 @@ affected:
   - v1.3.0
   - v1.4.0
   - v0.8.2
+  - v0.8.3
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.4.0
