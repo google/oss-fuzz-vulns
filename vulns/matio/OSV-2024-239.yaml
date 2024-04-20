@@ -10,7 +10,7 @@ details: |
   H5G__node_iterate
   H5B__iterate_helper
   ```
-modified: '2024-04-06T00:11:00.845461Z'
+modified: '2024-04-20T14:20:22.372285Z'
 published: '2024-04-06T00:11:00.845086Z'
 references:
 - type: REPORT
@@ -25,7 +25,8 @@ affected:
     repo: https://github.com/tbeu/matio.git
     events:
     - introduced: 29e986fb1cfe09dacdbe386f441882025f652377
+  versions:
+  - v1.5.27
   ecosystem_specific:
     severity: MEDIUM
-  versions: []
 schema_version: 1.6.0
