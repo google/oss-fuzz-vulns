@@ -10,7 +10,7 @@ details: |
   H5Sget_simple_extent_dims
   Mat_H5ReadFieldNames
   ```
-modified: '2024-03-12T00:05:38.587683Z'
+modified: '2024-04-20T14:17:12.532430Z'
 published: '2024-03-12T00:05:38.587103Z'
 references:
 - type: REPORT
@@ -29,6 +29,7 @@ affected:
   - v1.5.24
   - v1.5.25
   - v1.5.26
+  - v1.5.27
   ecosystem_specific:
     severity: HIGH
 schema_version: 1.6.0
