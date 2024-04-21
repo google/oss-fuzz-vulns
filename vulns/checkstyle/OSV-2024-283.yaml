@@ -1,0 +1,33 @@
+id: OSV-2024-283
+summary: Security exception in com.puppycrawl.tools.checkstyle.grammar.java.JavaLanguageParser.statement
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=68125
+
+  ```
+  Crash type: Security exception
+  Crash state:
+  com.puppycrawl.tools.checkstyle.grammar.java.JavaLanguageParser.statement
+  java.base/jdk.internal.misc.Unsafe.weakCompareAndSetInt
+  java.base/jdk.internal.misc.Unsafe.getAndAddInt
+  ```
+modified: '2024-04-20T00:16:06.570262Z'
+published: '2024-04-20T00:16:06.569828Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=68125
+affected:
+- package:
+    name: checkstyle
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/checkstyle
+  ranges:
+  - type: GIT
+    repo: https://github.com/checkstyle/checkstyle
+    events:
+    - introduced: aadd8dc3fd1b2a07723895e379437ce310cc7714
+  ecosystem_specific:
+    severity: LOW
+  database_specific:
+    introduced_range: b1498c3d3e70bb2ff590e03fd0792c1587dd43d0:0707dd5ac38b2f0fd4af9941070ea2615c17f335
+  versions: []
+schema_version: 1.6.0
