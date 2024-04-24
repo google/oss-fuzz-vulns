@@ -1,0 +1,38 @@
+id: OSV-2024-294
+summary: Segv on unknown address in gx_device_forward_finalize
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=68051
+
+  ```
+  Crash type: Segv on unknown address
+  Crash state:
+  gx_device_forward_finalize
+  gx_device_finalize
+  pdf14_device_finalize
+  ```
+modified: '2024-04-24T00:03:38.662418Z'
+published: '2024-04-24T00:03:38.661938Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=68051
+affected:
+- package:
+    name: ghostscript
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/ghostscript
+  ranges:
+  - type: GIT
+    repo: git://git.ghostscript.com/ghostpdl.git
+    events:
+    - introduced: e863d7f2cd68d07e3d0274d93a157d41d748a0c4
+  versions:
+  - ghostpdl-10.03.0_test001
+  - ghostpdl-10.03.0_test002
+  - ghostpdl-10.03.0rc1
+  - ghostpdl-10.03.0rc1_test
+  - ghostpdl-10.03.0rc1_test002
+  - ghostpdl-10.03.0rc1_test003
+  - robin_test_ref
+  ecosystem_specific:
+    severity: null
+schema_version: 1.6.0
