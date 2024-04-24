@@ -10,7 +10,7 @@ details: |
   aom_reader_init
   tile_worker_hook_init
   ```
-modified: '2024-04-11T14:27:02.734640Z'
+modified: '2024-04-24T14:26:37.406573Z'
 published: '2024-03-07T00:13:48.067527Z'
 references:
 - type: REPORT
@@ -29,6 +29,7 @@ affected:
   - v3.8.2
   - v3.8.2-rc1
   - v3.9.0-rc1
+  - v3.9.0
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.6.0
