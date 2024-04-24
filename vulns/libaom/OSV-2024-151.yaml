@@ -10,7 +10,7 @@ details: |
   av1_decode_palette_tokens
   av1_visit_palette
   ```
-modified: '2024-04-11T14:26:13.399633Z'
+modified: '2024-04-24T14:26:12.240231Z'
 published: '2024-03-07T00:04:15.146851Z'
 references:
 - type: REPORT
@@ -29,6 +29,7 @@ affected:
   - v3.8.2
   - v3.8.2-rc1
   - v3.9.0-rc1
+  - v3.9.0
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.6.0
