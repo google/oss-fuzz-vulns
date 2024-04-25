@@ -1,0 +1,32 @@
+id: OSV-2024-293
+summary: Stack-buffer-overflow in shoco_decompress
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=68211
+
+  ```
+  Crash type: Stack-buffer-overflow READ 1
+  Crash state:
+  shoco_decompress
+  fuzz_alg_shoco.cpp
+  ```
+modified: '2024-04-24T00:02:46.010298Z'
+published: '2024-04-24T00:02:46.009671Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=68211
+affected:
+- package:
+    name: ndpi
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/ndpi
+  ranges:
+  - type: GIT
+    repo: https://github.com/ntop/nDPI.git
+    events:
+    - introduced: ef891834699db2b0ed16e32fc2d352e8a8419945
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: 905120588bf2a1bb56b280d9accd89e7265b8364:246e972f9c1bf2780c348ae43030119ad417c153
+  versions: []
+schema_version: 1.6.0
