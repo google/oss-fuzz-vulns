@@ -10,7 +10,7 @@ details: |
   ih264d_deblock_mb_nonmbaff
   ih264d_decode_recon_tfr_nmb
   ```
-modified: '2023-12-18T00:01:44.796980Z'
+modified: '2024-04-25T14:13:21.935475Z'
 published: '2023-12-18T00:01:44.796567Z'
 references:
 - type: REPORT
@@ -29,6 +29,7 @@ affected:
   - v1.1.1
   - v1.2.0
   - v1.3.0
+  - v1.4.0
   ecosystem_specific:
     severity: MEDIUM
   database_specific:
