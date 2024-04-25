@@ -10,7 +10,7 @@ details: |
   ih264d_mv_pred_ref_tfr_nby2_pmb
   isvcd_mark_err_slice_skip
   ```
-modified: '2023-12-14T00:00:54.615600Z'
+modified: '2024-04-25T14:13:05.189406Z'
 published: '2023-12-14T00:00:54.614578Z'
 references:
 - type: REPORT
@@ -29,6 +29,7 @@ affected:
   - v1.1.1
   - v1.2.0
   - v1.3.0
+  - v1.4.0
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.6.0
