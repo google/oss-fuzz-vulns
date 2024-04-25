@@ -10,7 +10,7 @@ details: |
   ih264d_parse_fgc
   ih264d_parse_sei_payload
   ```
-modified: '2023-12-31T00:13:35.510838Z'
+modified: '2024-04-25T14:13:38.925666Z'
 published: '2023-12-31T00:13:35.510537Z'
 references:
 - type: REPORT
@@ -25,7 +25,8 @@ affected:
     repo: https://github.com/ittiam-systems/libavc.git
     events:
     - introduced: 37beb9729249a1cde472545e2a19d80660e40edc
+  versions:
+  - v1.4.0
   ecosystem_specific:
     severity: MEDIUM
-  versions: []
 schema_version: 1.6.0
