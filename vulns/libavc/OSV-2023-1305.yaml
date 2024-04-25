@@ -10,7 +10,7 @@ details: |
   iv_aligned_free
   ih264d_free_dynamic_bufs
   ```
-modified: '2023-12-15T00:01:07.184133Z'
+modified: '2024-04-25T14:13:11.727294Z'
 published: '2023-12-15T00:01:07.183702Z'
 references:
 - type: REPORT
@@ -29,6 +29,7 @@ affected:
   - v1.1.1
   - v1.2.0
   - v1.3.0
+  - v1.4.0
   ecosystem_specific:
     severity: HIGH
   database_specific:
