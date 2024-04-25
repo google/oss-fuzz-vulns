@@ -10,7 +10,7 @@ details: |
   isvcd_parse_interlayer_resamp_func_init
   isvcd_mark_err_slice_skip
   ```
-modified: '2023-11-24T13:00:14.783928Z'
+modified: '2024-04-25T14:12:47.606399Z'
 published: '2023-11-24T13:00:14.783667Z'
 references:
 - type: REPORT
@@ -29,6 +29,7 @@ affected:
   - v1.1.1
   - v1.2.0
   - v1.3.0
+  - v1.4.0
   ecosystem_specific:
     severity: HIGH
 schema_version: 1.6.0
