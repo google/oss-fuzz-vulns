@@ -10,7 +10,7 @@ details: |
   isvcd_parse_decode_slice
   isvcd_parse_nal_unit
   ```
-modified: '2023-12-16T00:12:09.532383Z'
+modified: '2024-04-25T14:13:20.347639Z'
 published: '2023-12-16T00:12:09.531964Z'
 references:
 - type: REPORT
@@ -29,6 +29,7 @@ affected:
   - v1.1.1
   - v1.2.0
   - v1.3.0
+  - v1.4.0
   ecosystem_specific:
     severity: HIGH
 schema_version: 1.6.0
