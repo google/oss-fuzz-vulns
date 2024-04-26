@@ -10,7 +10,7 @@ details: |
   QuickOpen::ReadRaw
   QuickOpen::ReadNext
   ```
-modified: '2022-10-20T00:23:55.957665Z'
+modified: '2024-04-26T14:06:37.625240Z'
 published: '2021-01-13T00:01:23.035709Z'
 references:
 - type: REPORT
@@ -35,6 +35,7 @@ affected:
   - v6.0.3
   - v6.1.2
   - tag-6.1.7
+  - v7.0.7
   ecosystem_specific:
     severity: HIGH
     introduced_range: 9866c9649507f177233ca96feefac8b12e36a91f:b676eae90fc9c620a214889ed040d356638a18f6
