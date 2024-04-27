@@ -10,7 +10,7 @@ details: |
   java.base/java.util.HashMap.putVal
   java.base/java.util.HashMap.put
   ```
-modified: '2024-04-21T14:13:01.821402Z'
+modified: '2024-04-27T14:05:48.474241Z'
 published: '2023-11-22T13:03:08.334211Z'
 references:
 - type: REPORT
@@ -29,6 +29,7 @@ affected:
   - commons-codec-1.16.1-RC1
   - rel/commons-codec-1.16.1
   - commons-codec-1.17.0-RC1
+  - rel/commons-codec-1.17.0
   ecosystem_specific:
     severity: LOW
 schema_version: 1.6.0
