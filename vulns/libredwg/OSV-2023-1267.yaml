@@ -10,7 +10,7 @@ details: |
   dwg_free
   llvmfuzz.c
   ```
-modified: '2024-04-15T14:18:53.642736Z'
+modified: '2024-04-27T14:16:15.097034Z'
 published: '2023-12-08T00:11:02.971903Z'
 references:
 - type: REPORT
@@ -48,6 +48,7 @@ affected:
   - 0.13.3.7226
   - 0.13.3.7227
   - 0.13.3.7233
+  - 0.13.3.7240
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.6.0
