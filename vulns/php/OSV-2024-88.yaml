@@ -25,9 +25,11 @@ affected:
     repo: https://github.com/php/php-src.git
     events:
     - introduced: 7aa2b6294b1782b3cdc4123b01fe94b322570ef1
+    - fixed: 5752bbdad54a416ac7c5ba810ef808ddc6aea36a
   ecosystem_specific:
     severity: HIGH
   database_specific:
     introduced_range: 13e7c086a721e11f023ab0a6295c7b512133a8a7:f9cfd40fa25f0bd071e65deb684dd04c75364d1c
+    fixed_range: f9cfd40fa25f0bd071e65deb684dd04c75364d1c:5752bbdad54a416ac7c5ba810ef808ddc6aea36a
   versions: []
 schema_version: 1.6.0
