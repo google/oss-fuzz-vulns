@@ -25,7 +25,10 @@ affected:
     repo: https://chromium.googlesource.com/chromiumos/third_party/adhd
     events:
     - introduced: 12e63680bb2808ffd7038cd14c9959dd96cdb546
+    - fixed: 804624a5a93b00628a455b1e0453d96416ef19d7
   ecosystem_specific:
     severity: HIGH
+  database_specific:
+    fixed_range: d3ae083fa92f2d049b04061ec252ebda6bde09ec:804624a5a93b00628a455b1e0453d96416ef19d7
   versions: []
 schema_version: 1.6.0
