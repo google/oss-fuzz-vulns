@@ -10,7 +10,7 @@ details: |
   java.base/java.util.HashMap.putVal
   java.base/java.util.HashMap.put
   ```
-modified: '2024-04-27T14:05:48.474241Z'
+modified: '2024-04-29T11:21:55.852772Z'
 published: '2023-11-22T13:03:08.334211Z'
 references:
 - type: REPORT
@@ -25,11 +25,12 @@ affected:
     repo: https://gitbox.apache.org/repos/asf/commons-codec.git
     events:
     - introduced: 44e4c4d778c3ab87db09c00e9d1c3260fd42dad5
+    - fixed: 3bf874e2141dc08550c0b330c7a7006f358bb0f0
   versions:
   - commons-codec-1.16.1-RC1
   - rel/commons-codec-1.16.1
-  - commons-codec-1.17.0-RC1
-  - rel/commons-codec-1.17.0
   ecosystem_specific:
     severity: LOW
+  database_specific:
+    fixed_range: 72c40fe6f62410bcaa019dbf2cb570ee4e49b70e:3bf874e2141dc08550c0b330c7a7006f358bb0f0
 schema_version: 1.6.0
