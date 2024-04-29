@@ -25,9 +25,10 @@ affected:
     repo: https://github.com/unicode-org/icu.git
     events:
     - introduced: cfba9a8caf6cb6ab39eb4ca5702c78f97989bcde
-  versions:
-  - release-75-rc
-  - release-75-1
+    - fixed: 87ca0234476c62f7d42ab43bb4f5e17ca329f5d0
   ecosystem_specific:
     severity: MEDIUM
+  database_specific:
+    fixed_range: 3f054adaf3ca34d55338e56773088bd589600583:87ca0234476c62f7d42ab43bb4f5e17ca329f5d0
+  versions: []
 schema_version: 1.6.0
