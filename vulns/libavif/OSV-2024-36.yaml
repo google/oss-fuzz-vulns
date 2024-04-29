@@ -25,7 +25,10 @@ affected:
     repo: https://github.com/AOMediaCodec/libavif.git
     events:
     - introduced: 4a69fdee9facf18442c0c14a7264e6a10dd0e349
+    - fixed: b01a8af573c752f1e0103262531ee08a90b5af08
   ecosystem_specific:
     severity: HIGH
+  database_specific:
+    fixed_range: fc8746e84dab75d2d1d89a0e8ad1ed64a879f1ad:b01a8af573c752f1e0103262531ee08a90b5af08
   versions: []
 schema_version: 1.6.0
