@@ -25,9 +25,11 @@ affected:
     repo: https://github.com/seladb/PcapPlusPlus
     events:
     - introduced: 813f15b87f5e76a62d64360f8cbdf449c21316e4
+    - fixed: 1ff377c5de22caf9907fcc31f3f71ea138346155
   ecosystem_specific:
     severity: MEDIUM
   database_specific:
     introduced_range: 3227ad11ec457c3dad062db548432d2a1c837d50:0c95dfb3557644acc6a10060e48cfae1a61fc2f0
+    fixed_range: e5bcc908e921ce336c621f721a6ed3ecbbe45b06:1ff377c5de22caf9907fcc31f3f71ea138346155
   versions: []
 schema_version: 1.6.0
