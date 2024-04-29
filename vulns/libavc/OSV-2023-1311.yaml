@@ -9,7 +9,7 @@ details: |
   ih264d_format_convert
   ih264d_decode_picture_thread
   ```
-modified: '2024-04-25T14:13:19.119030Z'
+modified: '2024-04-29T11:26:02.378788Z'
 published: '2023-12-16T00:05:49.838718Z'
 references:
 - type: REPORT
@@ -24,11 +24,13 @@ affected:
     repo: https://github.com/ittiam-systems/libavc.git
     events:
     - introduced: b2a61a152a5e83b3419212e8d15a10d4488e51d9
+    - fixed: 28727baf58aa7c8983769aff1ceecb3121a26ee6
   versions:
   - v1.1.1
   - v1.2.0
   - v1.3.0
-  - v1.4.0
   ecosystem_specific:
     severity: HIGH
+  database_specific:
+    fixed_range: 0d29250b990430ca0d7346459c11ca053380bbb5:28727baf58aa7c8983769aff1ceecb3121a26ee6
 schema_version: 1.6.0
