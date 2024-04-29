@@ -25,10 +25,11 @@ affected:
     repo: https://github.com/DMTF/libspdm.git
     events:
     - introduced: c2d004512067a23f483a99224165accf3d9d89f2
-  versions:
-  - 3.3.0
+    - fixed: 4c92ff5ced7862e4f2eea945dd723d2e1b1fc476
   ecosystem_specific:
     severity: MEDIUM
   database_specific:
     introduced_range: 2586f39ce83d1e96747bdeebfb62eab020bcc1b1:d83ef43d3be34419e118fc3507fefdd0d0d2692c
+    fixed_range: d6a800391260d31f973a12e59fa9575066aee6d3:4c92ff5ced7862e4f2eea945dd723d2e1b1fc476
+  versions: []
 schema_version: 1.6.0
