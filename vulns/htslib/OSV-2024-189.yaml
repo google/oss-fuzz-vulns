@@ -25,10 +25,11 @@ affected:
     repo: https://github.com/samtools/htslib.git
     events:
     - introduced: 7ce510c92bb841ded9972cdfaefa527fe34a5e71
-  versions:
-  - '1.20'
+    - fixed: 78e507dbd8a0567c7f3c8c1e265d36218e3f0e77
   ecosystem_specific:
     severity: null
   database_specific:
     introduced_range: 7d3efee742cd13a5b23c057ee29a71a51c6f94a6:55cafdc9434f3141019cda7274c7a930a4ddd361
+    fixed_range: ca0f6214b94adf9278cbcaaefd50f5fe9455f9ad:78e507dbd8a0567c7f3c8c1e265d36218e3f0e77
+  versions: []
 schema_version: 1.6.0
