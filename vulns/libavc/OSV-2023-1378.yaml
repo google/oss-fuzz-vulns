@@ -25,8 +25,10 @@ affected:
     repo: https://github.com/ittiam-systems/libavc.git
     events:
     - introduced: 37beb9729249a1cde472545e2a19d80660e40edc
-  versions:
-  - v1.4.0
+    - fixed: a20a5df162992908b166644f4d5b7dad96b4cdfd
   ecosystem_specific:
     severity: MEDIUM
+  database_specific:
+    fixed_range: 28727baf58aa7c8983769aff1ceecb3121a26ee6:a20a5df162992908b166644f4d5b7dad96b4cdfd
+  versions: []
 schema_version: 1.6.0
