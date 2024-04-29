@@ -25,7 +25,10 @@ affected:
     repo: https://github.com/libssh2/libssh2.git
     events:
     - introduced: d34d9258b8420b19ec3f97b4cc5bf7aa7d98e35a
+    - fixed: f52ffc1ccdedcd5a885e85c2d0f0cb872b2b0a7f
   ecosystem_specific:
     severity: MEDIUM
+  database_specific:
+    fixed_range: b109f304cf035207907a6177ab628147b13608d5:f52ffc1ccdedcd5a885e85c2d0f0cb872b2b0a7f
   versions: []
 schema_version: 1.6.0
