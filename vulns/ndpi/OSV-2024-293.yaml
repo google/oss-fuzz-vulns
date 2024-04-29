@@ -24,9 +24,11 @@ affected:
     repo: https://github.com/ntop/nDPI.git
     events:
     - introduced: ef891834699db2b0ed16e32fc2d352e8a8419945
+    - fixed: a62679952c4fe51fead86f38c76eee8fbdd1f694
   ecosystem_specific:
     severity: MEDIUM
   database_specific:
     introduced_range: 905120588bf2a1bb56b280d9accd89e7265b8364:246e972f9c1bf2780c348ae43030119ad417c153
+    fixed_range: f494bdd653fcac1bd428bbf39eafd138f6f53d2a:a62679952c4fe51fead86f38c76eee8fbdd1f694
   versions: []
 schema_version: 1.6.0
