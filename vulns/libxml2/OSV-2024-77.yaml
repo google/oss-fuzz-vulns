@@ -25,7 +25,10 @@ affected:
     repo: https://gitlab.gnome.org/GNOME/libxml2.git
     events:
     - introduced: d025cfbb4bf05785d970e268e46d674580a8a686
+    - fixed: 1a66b176055d25ee635bf328c7b35b381db0b71d
   ecosystem_specific:
     severity: HIGH
+  database_specific:
+    fixed_range: 84e50a0c48b51fb69ee221afcc98d2a8c6c25d14:1a66b176055d25ee635bf328c7b35b381db0b71d
   versions: []
 schema_version: 1.6.0
