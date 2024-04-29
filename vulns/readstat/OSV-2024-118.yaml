@@ -10,7 +10,7 @@ details: |
   sav_read_data
   readstat_parse_sav
   ```
-modified: '2024-02-20T00:01:08.095647Z'
+modified: '2024-04-29T11:19:02.854462Z'
 published: '2024-02-20T00:01:08.095087Z'
 references:
 - type: REPORT
@@ -25,8 +25,11 @@ affected:
     repo: https://github.com/WizardMac/ReadStat
     events:
     - introduced: 428ba68c4d6c74d69a4a2811fda623487fa76c9e
+    - fixed: c7baae72b36acdc24f56ad48d3e859850fdbdc2b
   versions:
   - v1.1.9
   ecosystem_specific:
     severity: HIGH
+  database_specific:
+    fixed_range: 4926250c8d7d8793153d7d8552a96f130eb68937:c7baae72b36acdc24f56ad48d3e859850fdbdc2b
 schema_version: 1.6.0
