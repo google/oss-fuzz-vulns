@@ -10,7 +10,7 @@ details: |
   dwg_read_dxf
   llvmfuzz.c
   ```
-modified: '2024-04-27T14:22:28.286285Z'
+modified: '2024-04-29T11:24:19.340311Z'
 published: '2024-02-22T00:12:27.847169Z'
 references:
 - type: REPORT
@@ -25,37 +25,13 @@ affected:
     repo: https://github.com/LibreDWG/libredwg
     events:
     - introduced: 8ae1f0216bf015cb9d68a64feaca929b7069a9b7
+    - fixed: e3e4d8701fa8380ad82fa37a27720027d26ec5dc
   versions:
   - '0.13'
   - 0.13.1
   - 0.13.2
-  - 0.13.2.7114
-  - 0.13.2.7117
-  - 0.13.2.7125
-  - 0.13.2.7142
-  - 0.13.2.7151
-  - 0.13.2.7153
-  - 0.13.2.7154
-  - 0.13.3
-  - 0.13.3.7163
-  - 0.13.3.7165
-  - 0.13.3.7166
-  - 0.13.3.7168
-  - 0.13.3.7176
-  - 0.13.3.7183
-  - 0.13.3.7186
-  - 0.13.3.7187
-  - 0.13.3.7190
-  - 0.13.3.7199
-  - 0.13.3.7217
-  - 0.13.3.7220
-  - 0.13.3.7223
-  - 0.13.3.7224
-  - 0.13.3.7225
-  - 0.13.3.7226
-  - 0.13.3.7227
-  - 0.13.3.7233
-  - 0.13.3.7240
   ecosystem_specific:
     severity: HIGH
+  database_specific:
+    fixed_range: f2def1e70daae0ea7358875f412ca7b35a458a0c:e3e4d8701fa8380ad82fa37a27720027d26ec5dc
 schema_version: 1.6.0
