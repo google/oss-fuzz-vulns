@@ -10,7 +10,7 @@ details: |
   java.base/java.lang.String.startsWith
   java.base/java.net.URL.isBuiltinStreamHandler
   ```
-modified: '2024-04-04T14:20:00.056238Z'
+modified: '2024-04-29T11:19:04.592001Z'
 published: '2024-03-14T00:10:52.218597Z'
 references:
 - type: REPORT
@@ -25,6 +25,7 @@ affected:
     repo: https://github.com/javaparser/javaparser
     events:
     - introduced: 59585a5579910e36bc75ac266b5b1cb70ddc4770
+    - fixed: e27e01b56d7398821c94ecb05d6caa0a928ad7ce
   versions:
   - javaparser-parent-3.24.10
   - javaparser-parent-3.24.4
@@ -44,9 +45,9 @@ affected:
   - javaparser-parent-3.25.9
   - v_snapshot_56be443
   - v_snapshot_e2590f3
-  - javaparser-parent-3.25.10
   ecosystem_specific:
     severity: LOW
   database_specific:
     introduced_range: 3d1f6eb34d7ffc8eb1534e6f53964691f3608d7e:ccff30606f8665a030b509ffbde5183d7c9af552
+    fixed_range: feba579fc7fc75956037da5e41cd786802bce5b0:e27e01b56d7398821c94ecb05d6caa0a928ad7ce
 schema_version: 1.6.0
