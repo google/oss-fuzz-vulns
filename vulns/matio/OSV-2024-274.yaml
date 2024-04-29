@@ -25,10 +25,11 @@ affected:
     repo: https://github.com/tbeu/matio.git
     events:
     - introduced: 689ba82f28484a7b942d91ffe6c97d7edf5e54ca
-  versions:
-  - v1.5.27
+    - fixed: 0885c6a34b9f739d57e5cad08b7de866b42c75fc
   ecosystem_specific:
     severity: HIGH
   database_specific:
     introduced_range: bade6369ff47294a2290ea0f61d564559d7d6d68:36aa91bb702a9217ec05c866f932c78f1e0b2647
+    fixed_range: b6219380c57afa91e9357ff09a33866237748d30:0885c6a34b9f739d57e5cad08b7de866b42c75fc
+  versions: []
 schema_version: 1.6.0
