@@ -10,7 +10,7 @@ details: |
   append_new_operation
   parse_options
   ```
-modified: '2023-08-09T14:02:25.749178Z'
+modified: '2024-04-29T14:13:24.917092Z'
 published: '2023-08-09T14:02:25.748940Z'
 references:
 - type: REPORT
@@ -25,8 +25,11 @@ affected:
     repo: https://github.com/xiph/flac.git
     events:
     - introduced: 67d2e1ee4c09ea28a2dae72750a1714f3b8294ef
+    - fixed: 37ca81137af2273686fc6d7d87827bdabd6bf234
   versions:
   - 1.4.3
   ecosystem_specific:
     severity: HIGH
+  database_specific:
+    fixed_range: 89a4d2b9fc802bf903f728d34f72c606b2d525e5:37ca81137af2273686fc6d7d87827bdabd6bf234
 schema_version: 1.6.0
