@@ -25,13 +25,11 @@ affected:
     repo: https://github.com/FasterXML/jackson-dataformats-binary
     events:
     - introduced: 955e711ac433f529450048624ee5c30aeb47c258
-  versions:
-  - jackson-dataformats-binary-2.15.4
-  - jackson-dataformats-binary-2.17.0-rc1
-  - jackson-dataformats-binary-2.16.2
-  - jackson-dataformats-binary-2.17.0
+    - fixed: 1f8c5193a651853be0334968bd7bd860398a7478
   ecosystem_specific:
     severity: LOW
   database_specific:
     introduced_range: 11e473ec679fbef8a2c10d47f6d3b19985bc9a52:0e2a81a78dbfa6583bee7520c2d441dbb38e2f5b
+    fixed_range: 8d484d2573a6240596c9cc002648e27dce8287a4:1f8c5193a651853be0334968bd7bd860398a7478
+  versions: []
 schema_version: 1.6.0
