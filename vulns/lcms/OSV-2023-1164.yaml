@@ -10,7 +10,7 @@ details: |
   cmsGetPostScriptColorResource
   cmsGetPostScriptCRD
   ```
-modified: '2023-11-15T13:00:55.717791Z'
+modified: '2024-04-29T11:24:21.233113Z'
 published: '2023-11-15T13:00:55.717548Z'
 references:
 - type: REPORT
@@ -25,10 +25,13 @@ affected:
     repo: https://github.com/mm2/Little-CMS.git
     events:
     - introduced: d2c7f4360e9a6fdf3a9949bc9a12ab5eeb02b538
+    - fixed: 1176e61afea4b58c5f92c6f226cdb7b1c76797d5
   versions:
   - lcm2.16rc1
   - lcms2.16
   - lcms2.16rc1
   ecosystem_specific:
     severity: MEDIUM
+  database_specific:
+    fixed_range: 46355888b823b563db928faec59b0312a05e1143:1176e61afea4b58c5f92c6f226cdb7b1c76797d5
 schema_version: 1.6.0
