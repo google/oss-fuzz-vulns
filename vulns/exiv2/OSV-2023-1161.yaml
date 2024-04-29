@@ -11,7 +11,7 @@ details: |
   Exiv2::QuickTimeVideo::NikonTagsDecoder
   Exiv2::QuickTimeVideo::userDataDecoder
   ```
-modified: '2024-02-14T14:07:38.524497Z'
+modified: '2024-04-29T11:26:01.442030Z'
 published: '2023-11-14T13:03:13.962614Z'
 references:
 - type: REPORT
@@ -26,12 +26,14 @@ affected:
     repo: https://github.com/Exiv2/exiv2
     events:
     - introduced: 393815ffb09ff68ec704a60439b26d186979402d
+    - fixed: 84ce408771859570d2534effaaecb3dbf535b1c4
   versions:
-  - nightly
+  - nightly-0.28.x
   - v0.28.0
   - v0.28.1
-  - nightly-0.28.x
   - v0.28.2
   ecosystem_specific:
     severity: MEDIUM
+  database_specific:
+    fixed_range: 36e3d55fede51f0d7b3f381f6dab471d9281c7d8:84ce408771859570d2534effaaecb3dbf535b1c4
 schema_version: 1.6.0
