@@ -25,8 +25,10 @@ affected:
     repo: https://github.com/ntop/ntopng.git
     events:
     - introduced: ab73418e29e000c54acb2a71d9f3bb57a779e792
-  versions:
-  - '6.0'
+    - fixed: 14c22ef251556f5365c56c89c218c1e1d3d86f6a
   ecosystem_specific:
     severity: MEDIUM
+  database_specific:
+    fixed_range: 481b13545710ffaae924b24c12035e5755c728ea:14c22ef251556f5365c56c89c218c1e1d3d86f6a
+  versions: []
 schema_version: 1.4.0
