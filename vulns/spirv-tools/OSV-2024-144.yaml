@@ -25,11 +25,10 @@ affected:
     repo: https://github.com/KhronosGroup/SPIRV-Tools.git
     events:
     - introduced: 1b643eac5d4062bbec48b912a1332e6909802479
-  versions:
-  - v2024.1.rc1
-  - vulkan-sdk-1.3.280.0
-  - v2024.1
-  - v2024.2.rc1
+    - fixed: fbc7a14b3e5e494113a464bbfafc48b94516446a
   ecosystem_specific:
     severity: MEDIUM
+  database_specific:
+    fixed_range: 99a3ad32ffbf35797ca079537940bb5c870ebaaf:fbc7a14b3e5e494113a464bbfafc48b94516446a
+  versions: []
 schema_version: 1.6.0
