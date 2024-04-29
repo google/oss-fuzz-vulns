@@ -10,7 +10,7 @@ details: |
   ih264d_deblock_mb_nonmbaff
   ih264d_decode_recon_tfr_nmb
   ```
-modified: '2024-04-25T14:13:21.935475Z'
+modified: '2024-04-29T11:16:39.254259Z'
 published: '2023-12-18T00:01:44.796567Z'
 references:
 - type: REPORT
@@ -25,13 +25,14 @@ affected:
     repo: https://github.com/ittiam-systems/libavc.git
     events:
     - introduced: 375b9b7e44b067d7b87bcae7291154ae59c72267
+    - fixed: 28727baf58aa7c8983769aff1ceecb3121a26ee6
   versions:
   - v1.1.1
   - v1.2.0
   - v1.3.0
-  - v1.4.0
   ecosystem_specific:
     severity: MEDIUM
   database_specific:
     introduced_range: 43629a63d8cb3b52195c032a662e62ac3bfd8aae:b2a61a152a5e83b3419212e8d15a10d4488e51d9
+    fixed_range: 0d29250b990430ca0d7346459c11ca053380bbb5:28727baf58aa7c8983769aff1ceecb3121a26ee6
 schema_version: 1.6.0
