@@ -25,11 +25,10 @@ affected:
     repo: https://aomedia.googlesource.com/aom
     events:
     - introduced: 8db7d7893078a12e89cfdae35b25da97a933ab0b
-  versions:
-  - v3.8.2
-  - v3.8.2-rc1
-  - v3.9.0-rc1
-  - v3.9.0
+    - fixed: 86ba8b684ef53a8bf11e320c2271aaa63108be36
   ecosystem_specific:
     severity: HIGH
+  database_specific:
+    fixed_range: 9bc3992b1139371263a5a6339f1477bfdee2bf71:86ba8b684ef53a8bf11e320c2271aaa63108be36
+  versions: []
 schema_version: 1.6.0
