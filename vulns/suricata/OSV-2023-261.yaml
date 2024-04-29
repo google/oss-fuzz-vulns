@@ -25,14 +25,10 @@ affected:
     repo: https://github.com/OISF/suricata.git
     events:
     - introduced: 578f328e06b3e03f3bdbbf852b5d121e20849b8b
-  versions:
-  - suricata-7.0.0-rc2
-  - suricata-7.0.0
-  - suricata-7.0.1
-  - suricata-7.0.2
-  - suricata-7.0.3
-  - suricata-7.0.4
-  - suricata-7.0.5
+    - fixed: caf9940fd10f474bcbc7bf983e3849a83a8c7562
   ecosystem_specific:
     severity: MEDIUM
+  database_specific:
+    fixed_range: 035863d029290c864388577e7cc9e31250f98523:caf9940fd10f474bcbc7bf983e3849a83a8c7562
+  versions: []
 schema_version: 1.4.0
