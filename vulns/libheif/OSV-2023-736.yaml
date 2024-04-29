@@ -25,14 +25,10 @@ affected:
     repo: https://github.com/strukturag/libheif.git
     events:
     - introduced: 6fb8e4cd53619e547be0045ad1615aa429b7f336
-  versions:
-  - v1.17.0
-  - v1.17.1
-  - v1.17.2
-  - v1.17.3
-  - v1.17.4
-  - v1.17.5
-  - v1.17.6
+    - fixed: cd6274a9e5e106ea990fb150e781d79848b74337
   ecosystem_specific:
     severity: MEDIUM
+  database_specific:
+    fixed_range: 4a3327b5b73c94a26b2deed91d0cae82d53db24a:cd6274a9e5e106ea990fb150e781d79848b74337
+  versions: []
 schema_version: 1.6.0
