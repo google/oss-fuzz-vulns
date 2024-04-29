@@ -10,7 +10,7 @@ details: |
   H5SL_iterate
   H5FS__cache_sinfo_serialize
   ```
-modified: '2024-04-16T15:00:48.811993Z'
+modified: '2024-04-29T14:35:35.936516Z'
 published: '2023-06-09T14:00:54.620201Z'
 references:
 - type: REPORT
@@ -28,24 +28,25 @@ affected:
     - introduced: 04f0647727677d716a3c1c772d35a660a8ea0dc5
     - introduced: 5a0ec52099cf02224a4066b158bcf1a34829db20
     - introduced: f527239564fc27a6e666ce734b88e4ab18765efc
+    - fixed: 589f5238feae51787d3925fba0cb39b1cbabf8d5
   versions:
   - 1.14.1
   - hdf5-1_10_10
+  - hdf5-1_10_11
+  - hdf5-1_12_3
   - hdf5-1_14_1
   - hdf5-1_14_1-2
   - hdf5-1_14_2
-  - snapshot
+  - hdf5-1_14_3
+  - hdf5-1_14_3-rc1
+  - hdf5_1.14.4
+  - hdf5_1.14.4.1
+  - hdf5_1.14.4.2
   - snapshot-1.10
   - snapshot-1.12
   - snapshot-1.14
-  - hdf5-1_10_11
-  - hdf5-1_14_3-rc1
-  - hdf5-1_14_3
-  - hdf5-1_12_3
-  - hdf5_1.14.4
-  - hdf5-1.14.4.1
-  - hdf5_1.14.4.1
-  - hdf5_1.14.4.2
   ecosystem_specific:
     severity: HIGH
+  database_specific:
+    fixed_range: 203a95abb5e2420e3ae7d258f03a87464d48618e:589f5238feae51787d3925fba0cb39b1cbabf8d5
 schema_version: 1.4.0
