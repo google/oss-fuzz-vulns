@@ -25,10 +25,10 @@ affected:
     repo: https://github.com/OpenSC/OpenSC
     events:
     - introduced: 773fcc6bd0d047aa629dd297e87244ca3add5b16
-  versions:
-  - 0.25.0-rc1
-  - 0.25.0
-  - 0.25.1
+    - fixed: c3545018d059b4debde33b9f34de719dd41e5531
   ecosystem_specific:
     severity: HIGH
+  database_specific:
+    fixed_range: 773fcc6bd0d047aa629dd297e87244ca3add5b16:c3545018d059b4debde33b9f34de719dd41e5531
+  versions: []
 schema_version: 1.6.0
