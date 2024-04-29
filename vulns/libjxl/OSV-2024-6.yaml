@@ -26,11 +26,10 @@ affected:
     repo: https://github.com/libjxl/libjxl.git
     events:
     - introduced: 815858b2335c267727c4b438cfdc00d5499791e0
-  versions:
-  - v0.10.0
-  - v0.10-snapshot
-  - v0.10.1
-  - v0.10.2
+    - fixed: 2a7b35f6f29a288496232bb62c65a706209b5557
   ecosystem_specific:
     severity: null
+  database_specific:
+    fixed_range: 815858b2335c267727c4b438cfdc00d5499791e0:2a7b35f6f29a288496232bb62c65a706209b5557
+  versions: []
 schema_version: 1.6.0
