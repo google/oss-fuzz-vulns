@@ -10,7 +10,7 @@ details: |
   gx_device_finalize
   gs_gc_reclaim
   ```
-modified: '2024-04-12T15:11:37.179003Z'
+modified: '2024-04-29T11:38:05.915041Z'
 published: '2024-04-12T00:02:31.478145Z'
 references:
 - type: REPORT
@@ -25,6 +25,7 @@ affected:
     repo: git://git.ghostscript.com/ghostpdl.git
     events:
     - introduced: 441c9e3a4ca08fa7f7c00063af33196b0d88ebaf
+    - fixed: 5fb7114f814645ebf679a8228350e9770bf3f009
   versions:
   - ghostpdl-10.0.0
   - ghostpdl-10.0.0_release_tests_002
@@ -47,7 +48,8 @@ affected:
   - ghostpdl-10.03.0rc1_test
   - ghostpdl-10.03.0rc1_test002
   - ghostpdl-10.03.0rc1_test003
-  - robin_test_ref
   ecosystem_specific:
     severity: HIGH
+  database_specific:
+    fixed_range: e4c276677b423732a3e4bb7fd6feffd91c482d1a:5fb7114f814645ebf679a8228350e9770bf3f009
 schema_version: 1.6.0
