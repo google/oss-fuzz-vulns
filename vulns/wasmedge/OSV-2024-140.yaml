@@ -10,7 +10,7 @@ details: |
   WasmEdge::LLVM::Compiler::compile
   WasmEdge::Driver::FuzzTool
   ```
-modified: '2024-04-03T14:16:27.721923Z'
+modified: '2024-04-29T11:16:32.126190Z'
 published: '2024-02-28T00:12:59.500279Z'
 references:
 - type: REPORT
@@ -25,13 +25,11 @@ affected:
     repo: https://github.com/WasmEdge/WasmEdge.git
     events:
     - introduced: bfb20047df09143f4e452f8a23e827cc3bd4156a
+    - fixed: 62ce0eef5e9f2b4dd390ebbefbb430a95c60af64
   versions:
   - 0.14.0-alpha.2
-  - 0.14.0-alpha.3
-  - 0.14.0-rc.1
-  - 0.14.0-rc.2
-  - 0.14.0-rc.3
-  - 0.14.0-rc.4
   ecosystem_specific:
     severity: MEDIUM
+  database_specific:
+    fixed_range: f5cf26c66e4bbb9bca00497fce5c814aac7d56fa:62ce0eef5e9f2b4dd390ebbefbb430a95c60af64
 schema_version: 1.6.0
