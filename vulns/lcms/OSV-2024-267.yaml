@@ -10,7 +10,7 @@ details: |
   ParseIT8
   cmsIT8LoadFromMem
   ```
-modified: '2024-04-18T00:02:12.015630Z'
+modified: '2024-04-29T11:29:45.142411Z'
 published: '2024-04-18T00:02:12.015129Z'
 references:
 - type: REPORT
@@ -25,6 +25,7 @@ affected:
     repo: https://github.com/mm2/Little-CMS.git
     events:
     - introduced: 8aa70ee88c8319eb677b82aebdceb1bda1c3f0b7
+    - fixed: fe8d3839799adbaf2783ebf27f1433ff8d5abd69
   versions:
   - lcm2.16rc1
   - lcms2.13
@@ -41,4 +42,5 @@ affected:
     severity: HIGH
   database_specific:
     introduced_range: 6bef8bd0788527d46316da01b1b679fc160e0196:1c667a762c4272ec970a2dd6f945836c52f35720
+    fixed_range: 1176e61afea4b58c5f92c6f226cdb7b1c76797d5:fe8d3839799adbaf2783ebf27f1433ff8d5abd69
 schema_version: 1.6.0
