@@ -10,7 +10,7 @@ details: |
   H5G__ent_to_link
   H5G__node_iterate
   ```
-modified: '2024-04-20T14:13:13.913055Z'
+modified: '2024-04-29T11:24:44.447081Z'
 published: '2023-10-25T13:01:17.608747Z'
 references:
 - type: REPORT
@@ -25,11 +25,13 @@ affected:
     repo: https://github.com/tbeu/matio.git
     events:
     - introduced: 77d8c989bc802b81354d86056386a762ef1fcfa1
+    - fixed: 29e986fb1cfe09dacdbe386f441882025f652377
   versions:
   - v1.5.24
   - v1.5.25
   - v1.5.26
-  - v1.5.27
   ecosystem_specific:
     severity: MEDIUM
+  database_specific:
+    fixed_range: 711128127c47ed23d81e37c99461796f5e168c7d:29e986fb1cfe09dacdbe386f441882025f652377
 schema_version: 1.6.0
