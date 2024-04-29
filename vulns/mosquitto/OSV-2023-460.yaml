@@ -10,7 +10,7 @@ details: |
   config__cleanup
   mosquitto_fuzz_main
   ```
-modified: '2024-02-22T14:18:33.811654Z'
+modified: '2024-04-29T14:12:09.500082Z'
 published: '2023-06-06T14:00:25.983874Z'
 references:
 - type: REPORT
@@ -25,10 +25,13 @@ affected:
     repo: https://github.com/eclipse/mosquitto
     events:
     - introduced: ca04ef32f562209dea0a2a0b6658cefcf1f018fb
+    - fixed: 664c6708b2515adbca22ae521b350562da365fc3
   versions:
   - v2.0.16
   - v2.0.17
   - v2.0.18
   ecosystem_specific:
     severity: null
+  database_specific:
+    fixed_range: d36fed991bd8b5f29b001b0d61686e7421c0bec4:664c6708b2515adbca22ae521b350562da365fc3
 schema_version: 1.4.0
