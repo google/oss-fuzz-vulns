@@ -10,7 +10,7 @@ details: |
   stroke_add_compat
   gx_stroke_path_only
   ```
-modified: '2024-04-12T14:21:47.338463Z'
+modified: '2024-04-29T11:39:24.480321Z'
 published: '2024-02-07T00:03:02.923052Z'
 references:
 - type: REPORT
@@ -26,6 +26,7 @@ affected:
     events:
     - introduced: ee290c1aebaa172c812f21024af2dbf721fa5865
     - introduced: eb9fc0106d45d1ce81ab2c4ae1a3d6e90a8c0164
+    - fixed: 0782358e011f158ba5c49137189e5ee320580af2
   versions:
   - ghostpdl-10.0.0
   - ghostpdl-10.0.0rc2
@@ -40,15 +41,9 @@ affected:
   - ghostpdl-10.02.0rc1
   - ghostpdl-10.02.0rc2
   - ghostpdl-10.02.1
-  - ghostpdl-10.03.0rc1_test
-  - ghostpdl-10.03.0rc1_test002
-  - ghostpdl-10.03.0rc1_test003
-  - ghostpdl-10.03.0rc1
-  - ghostpdl-10.03.0_test001
-  - ghostpdl-10.03.0_test002
-  - robin_test_ref
   ecosystem_specific:
     severity: HIGH
   database_specific:
     introduced_range: 19c421c10385b89da8564d664c2c5679c7558035:1f56d7736465c45a2785d6bb3db1c37289599b40
+    fixed_range: b49bf7ac006c50d8ee65bf682e1fe22668cee5ea:0782358e011f158ba5c49137189e5ee320580af2
 schema_version: 1.6.0
