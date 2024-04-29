@@ -10,7 +10,7 @@ details: |
   process_one_read
   cram_encode_container
   ```
-modified: '2024-04-16T14:21:50.000776Z'
+modified: '2024-04-29T11:31:45.626304Z'
 published: '2024-02-04T00:02:45.988846Z'
 references:
 - type: REPORT
@@ -25,10 +25,12 @@ affected:
     repo: https://github.com/samtools/htslib.git
     events:
     - introduced: 9e1ffd856614fcfc0bb3b89501600827cc8705e7
+    - fixed: 7278dabf370f5bb18b02c8fbbbf15ad59ce6712c
   versions:
   - '1.19'
   - 1.19.1
-  - '1.20'
   ecosystem_specific:
     severity: MEDIUM
+  database_specific:
+    fixed_range: 65ae5744347c9403c061585fa2fc9f5262f2f977:7278dabf370f5bb18b02c8fbbbf15ad59ce6712c
 schema_version: 1.6.0
