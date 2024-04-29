@@ -24,7 +24,10 @@ affected:
     repo: https://github.com/eclipse-cyclonedds/cyclonedds
     events:
     - introduced: 31a4843667830be87a38bd8bb22268061f79b42b
+    - fixed: 2ad37f4cc3d545149f680d6a8b0ff31e0ea84edc
   ecosystem_specific:
     severity: HIGH
+  database_specific:
+    fixed_range: 31a4843667830be87a38bd8bb22268061f79b42b:2ad37f4cc3d545149f680d6a8b0ff31e0ea84edc
   versions: []
 schema_version: 1.6.0
