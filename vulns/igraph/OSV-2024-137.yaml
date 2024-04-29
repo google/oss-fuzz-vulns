@@ -25,8 +25,10 @@ affected:
     repo: https://github.com/igraph/igraph
     events:
     - introduced: 74b2e25f02b82b583ee6c38c52e024337571f443
-  versions:
-  - 0.10.11
+    - fixed: 3d19cd132ca57040c6680b54c45a014c9f0f0ea7
   ecosystem_specific:
     severity: null
+  database_specific:
+    fixed_range: 4fcf6190e4d7cfc02a891c0ed08a1bc97e45299e:3d19cd132ca57040c6680b54c45a014c9f0f0ea7
+  versions: []
 schema_version: 1.6.0
