@@ -25,8 +25,10 @@ affected:
     repo: https://github.com/radareorg/radare2
     events:
     - introduced: 09d631be5b49b2da0034fc69ff79bd133f8a69a7
-  versions:
-  - 5.9.0
+    - fixed: aa72538816ef107736b5f2150a9fbba05542b2fa
   ecosystem_specific:
     severity: HIGH
+  database_specific:
+    fixed_range: 514a33e144d737ee99217aa9523b50b596a3754f:aa72538816ef107736b5f2150a9fbba05542b2fa
+  versions: []
 schema_version: 1.4.0
