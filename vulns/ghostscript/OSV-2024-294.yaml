@@ -10,7 +10,7 @@ details: |
   gx_device_finalize
   pdf14_device_finalize
   ```
-modified: '2024-04-24T00:03:38.662418Z'
+modified: '2024-04-29T11:39:29.548726Z'
 published: '2024-04-24T00:03:38.661938Z'
 references:
 - type: REPORT
@@ -25,6 +25,7 @@ affected:
     repo: git://git.ghostscript.com/ghostpdl.git
     events:
     - introduced: e863d7f2cd68d07e3d0274d93a157d41d748a0c4
+    - fixed: 0733f3c565faea01fc03a1757de05b6d71021264
   versions:
   - ghostpdl-10.03.0_test001
   - ghostpdl-10.03.0_test002
@@ -35,4 +36,6 @@ affected:
   - robin_test_ref
   ecosystem_specific:
     severity: null
+  database_specific:
+    fixed_range: 05748479d14c28d40a0e58701a115fda2c418d0c:0733f3c565faea01fc03a1757de05b6d71021264
 schema_version: 1.6.0
