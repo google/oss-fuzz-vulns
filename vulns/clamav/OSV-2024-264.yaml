@@ -10,7 +10,7 @@ details: |
   html_normalise_map
   cli_scanhtml
   ```
-modified: '2024-04-17T00:06:11.717715Z'
+modified: '2024-04-29T11:34:58.355901Z'
 published: '2024-04-17T00:06:11.717243Z'
 references:
 - type: REPORT
@@ -25,13 +25,15 @@ affected:
     repo: https://github.com/Cisco-Talos/clamav.git
     events:
     - introduced: ebd30d7dbedbddb8d7450e75d6a4fcddddfc9953
+    - fixed: 6e1afbbb6255ccd51ce802d58fd1a421f4604794
+    - fixed: b52bdddb5301782e8e73ee3e70e289c1976a8639
   versions:
   - clamav-1.3.0
   - clamav-1.3.0-rc
   - clamav-1.3.0-rc2
-  - clamav-1.3.1
   ecosystem_specific:
     severity: MEDIUM
   database_specific:
     introduced_range: 47c079f15f9d6af26aee580f61f70a41966a5309:86ba9bc8ce0e3beb476a7c95b5a9047407e91e5a
+    fixed_range: 07900fb67374715f321ae0c4a742a41b85f94f18:6e1afbbb6255ccd51ce802d58fd1a421f4604794
 schema_version: 1.6.0
