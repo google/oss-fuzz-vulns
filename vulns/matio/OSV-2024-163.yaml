@@ -10,7 +10,7 @@ details: |
   H5Sget_simple_extent_dims
   Mat_H5ReadFieldNames
   ```
-modified: '2024-04-20T14:17:12.532430Z'
+modified: '2024-04-29T11:18:04.652469Z'
 published: '2024-03-12T00:05:38.587103Z'
 references:
 - type: REPORT
@@ -25,11 +25,13 @@ affected:
     repo: https://github.com/tbeu/matio.git
     events:
     - introduced: 683282d59a139cc811bdf48a728e2666c632de0c
+    - fixed: 1565241343f00b203ee86810694d42992336b7f4
   versions:
   - v1.5.24
   - v1.5.25
   - v1.5.26
-  - v1.5.27
   ecosystem_specific:
     severity: HIGH
+  database_specific:
+    fixed_range: 61d7ed57f8021554cc6618b33b3e73019f8674f9:1565241343f00b203ee86810694d42992336b7f4
 schema_version: 1.6.0
