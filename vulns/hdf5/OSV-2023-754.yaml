@@ -10,7 +10,7 @@ details: |
   H5O__chunk_delete
   H5O__cont_delete
   ```
-modified: '2024-04-16T15:02:38.554595Z'
+modified: '2024-04-29T11:46:37.850365Z'
 published: '2023-08-28T14:00:10.026707Z'
 references:
 - type: REPORT
@@ -28,6 +28,7 @@ affected:
     - introduced: 04f0647727677d716a3c1c772d35a660a8ea0dc5
     - introduced: 5a0ec52099cf02224a4066b158bcf1a34829db20
     - introduced: f527239564fc27a6e666ce734b88e4ab18765efc
+    - fixed: 589f5238feae51787d3925fba0cb39b1cbabf8d5
   versions:
   - 1.14.1
   - hdf5-1_10_10
@@ -38,14 +39,14 @@ affected:
   - hdf5-1_14_2
   - hdf5-1_14_3
   - hdf5-1_14_3-rc1
-  - snapshot
+  - hdf5_1.14.4
+  - hdf5_1.14.4.1
+  - hdf5_1.14.4.2
   - snapshot-1.10
   - snapshot-1.12
   - snapshot-1.14
-  - hdf5_1.14.4
-  - hdf5-1.14.4.1
-  - hdf5_1.14.4.1
-  - hdf5_1.14.4.2
   ecosystem_specific:
     severity: MEDIUM
+  database_specific:
+    fixed_range: 203a95abb5e2420e3ae7d258f03a87464d48618e:589f5238feae51787d3925fba0cb39b1cbabf8d5
 schema_version: 1.6.0
