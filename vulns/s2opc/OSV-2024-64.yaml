@@ -25,8 +25,10 @@ affected:
     repo: https://gitlab.com/systerel/S2OPC
     events:
     - introduced: 2e37456474425ad4ec071c1ddd0a19415a29598d
-  versions:
-  - S2OPC_Toolkit_1.5.0
+    - fixed: 567efabe975f93a5f0f5d98784f9a69b8a4423d6
   ecosystem_specific:
     severity: null
+  database_specific:
+    fixed_range: e481cdc3a11af9ac555dbb307563b2b30602707d:567efabe975f93a5f0f5d98784f9a69b8a4423d6
+  versions: []
 schema_version: 1.6.0
