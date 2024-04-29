@@ -24,7 +24,10 @@ affected:
     repo: https://github.com/ittiam-systems/libxaac.git
     events:
     - introduced: 58381f7993b4af3a07191f55a4b50f5a943a9bb2
+    - fixed: ed65992ff095e40193a311e8192a17b2e9e6cd6b
   ecosystem_specific:
     severity: MEDIUM
+  database_specific:
+    fixed_range: 58381f7993b4af3a07191f55a4b50f5a943a9bb2:ed65992ff095e40193a311e8192a17b2e9e6cd6b
   versions: []
 schema_version: 1.6.0
