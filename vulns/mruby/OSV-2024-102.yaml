@@ -25,10 +25,10 @@ affected:
     repo: https://github.com/mruby/mruby
     events:
     - introduced: 06d9a54760f61846d0d1c12a617c72cf79476abf
-  versions:
-  - 3.3.0
-  - 3.3.0-rc
-  - 3.3.0-rc2
+    - fixed: 9c840a68e212fb54136b67711daff331435c1ce7
   ecosystem_specific:
     severity: MEDIUM
+  database_specific:
+    fixed_range: d2af9da799bf45608b8310d4b35cfe4570f057ee:9c840a68e212fb54136b67711daff331435c1ce7
+  versions: []
 schema_version: 1.6.0
