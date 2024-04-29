@@ -25,7 +25,10 @@ affected:
     repo: https://github.com/p11-glue/p11-kit.git
     events:
     - introduced: 6529b540ce16cab9a589004152e3c1d1c05d200f
+    - fixed: f53bdc2c941aae47d592b0376de9a4bc442ec3d2
   ecosystem_specific:
     severity: HIGH
+  database_specific:
+    fixed_range: ebfc19c741c7399c2bd48133d3bdf2c70a7b5b0e:f53bdc2c941aae47d592b0376de9a4bc442ec3d2
   versions: []
 schema_version: 1.6.0
