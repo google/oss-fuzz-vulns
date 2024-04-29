@@ -25,14 +25,11 @@ affected:
     repo: https://github.com/checkstyle/checkstyle
     events:
     - introduced: 2e99389ba88a7b802383eb79c48b611237ec7de9
-  versions:
-  - checkstyle-10.13.0
-  - checkstyle-10.14.0
-  - checkstyle-10.14.1
-  - checkstyle-10.14.2
-  - checkstyle-10.15.0
+    - fixed: b72cee2f10d2a63df1400c3f8b81ca8ae7062d35
   ecosystem_specific:
     severity: LOW
   database_specific:
     introduced_range: 86b9a28f763e0e5b5859b581a276bc290078e84a:13090c515ec207c88f41c8e8646460ff7de76f7f
+    fixed_range: 13090c515ec207c88f41c8e8646460ff7de76f7f:b72cee2f10d2a63df1400c3f8b81ca8ae7062d35
+  versions: []
 schema_version: 1.6.0
