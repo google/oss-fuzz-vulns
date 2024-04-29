@@ -25,9 +25,11 @@ affected:
     repo: https://github.com/apache/lucene.git
     events:
     - introduced: 5d203f8337cb6a2350c1abe5d83e3e103d060645
+    - fixed: d6316156659967ed9767228bfd9c1b085073c563
   ecosystem_specific:
     severity: LOW
   database_specific:
     introduced_range: 223e28ef16acb35cb43c89493855366d171de4f9:8af305892d726c180f03316c73aebf8183c2e481
+    fixed_range: 9fd45e3951d941edbe575d41d900af589bbbe5df:d6316156659967ed9767228bfd9c1b085073c563
   versions: []
 schema_version: 1.4.0
