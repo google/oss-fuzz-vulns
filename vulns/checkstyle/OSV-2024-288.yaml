@@ -25,7 +25,10 @@ affected:
     repo: https://github.com/checkstyle/checkstyle
     events:
     - introduced: bb56e9de12e0f42c0188eb2a6cad839404d408c1
+    - fixed: 6269e84e65be549213f4f87866555c16d3896f8a
   ecosystem_specific:
     severity: LOW
+  database_specific:
+    fixed_range: bbabd4e3a93ba44e0fc89179e0b56472be28ad3b:6269e84e65be549213f4f87866555c16d3896f8a
   versions: []
 schema_version: 1.6.0
