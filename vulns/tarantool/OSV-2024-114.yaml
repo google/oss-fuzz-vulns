@@ -25,9 +25,10 @@ affected:
     repo: https://github.com/tarantool/tarantool
     events:
     - introduced: 6482678041361f9b661b436218b6840ba90c54a3
-  versions:
-  - 3.1.0
-  - 3.2.0-entrypoint
+    - fixed: 3daf2399dd5b2b1987e258918376ff9be87e9b01
   ecosystem_specific:
     severity: null
+  database_specific:
+    fixed_range: eaff238d97ec20f1131029f1d4bc6aab6d52cf77:3daf2399dd5b2b1987e258918376ff9be87e9b01
+  versions: []
 schema_version: 1.6.0
