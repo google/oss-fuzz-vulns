@@ -9,7 +9,7 @@ details: |
   simdutf::westmere::implementation::convert_utf8_to_utf32
   roundtrip.cc
   ```
-modified: '2024-04-24T14:12:09.326020Z'
+modified: '2024-04-29T11:31:05.900312Z'
 published: '2024-01-25T00:05:37.689031Z'
 references:
 - type: REPORT
@@ -24,22 +24,15 @@ affected:
     repo: https://github.com/simdutf/simdutf
     events:
     - introduced: 59b81c798c0c88ca4c573ebde77c3b38eb0352cb
+    - fixed: c708a9e4c1dc880241c252bec76fada53ab84da3
   versions:
   - v4.0.4
   - v4.0.5
   - v4.0.6
   - v4.0.7
   - v4.0.8
-  - v4.0.9
-  - v5.0.0
-  - v5.1.0
-  - v5.2.0
-  - v5.2.1
-  - v5.2.2
-  - v5.2.3
-  - v5.2.4
-  - v5.2.5
-  - v5.2.6
   ecosystem_specific:
     severity: HIGH
+  database_specific:
+    fixed_range: 9504bf8e7a6aa0a752173a3e83084b31af1a39bb:c708a9e4c1dc880241c252bec76fada53ab84da3
 schema_version: 1.6.0
