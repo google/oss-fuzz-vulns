@@ -1,0 +1,33 @@
+id: OSV-2024-309
+summary: Use-of-uninitialized-value in fast_forward_first_n_chars
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=66944
+
+  ```
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  fast_forward_first_n_chars
+  jit_compile
+  pcre2_jit_compile_8
+  ```
+modified: '2024-04-29T00:00:29.631359Z'
+published: '2024-04-29T00:00:29.630732Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=66944
+affected:
+- package:
+    name: pcre2
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/pcre2
+  ranges:
+  - type: GIT
+    repo: https://github.com/PCRE2Project/pcre2
+    events:
+    - introduced: 04ca5be6c130edf75130d303d1703b55dcbe6b57
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: 589fea34c87a43d5d6521b3bc3f890f00aaa557b:7e0aa46c5d64942e5f1fe4f6cd9d558d98361e74
+  versions: []
+schema_version: 1.6.0

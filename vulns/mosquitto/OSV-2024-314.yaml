@@ -1,0 +1,31 @@
+id: OSV-2024-314
+summary: Heap-buffer-overflow in config__add_listener
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=68361
+
+  ```
+  Crash type: Heap-buffer-overflow WRITE {*}
+  Crash state:
+  config__add_listener
+  config__create_default_listener
+  config__read_file_core
+  ```
+modified: '2024-04-29T05:32:04.759906Z'
+published: '2024-04-29T05:32:04.759568Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=68361
+affected:
+- package:
+    name: mosquitto
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/mosquitto
+  ranges:
+  - type: GIT
+    repo: https://github.com/eclipse/mosquitto
+    events:
+    - introduced: ac26467705ddbe06ced0fa07aba91d12fa62d414
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
+schema_version: 1.6.0
