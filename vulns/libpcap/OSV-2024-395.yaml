@@ -1,0 +1,36 @@
+id: OSV-2024-395
+summary: Use-of-uninitialized-value in pcapint_filter_with_aux_data
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=66124
+
+  ```
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  pcapint_filter_with_aux_data
+  pcapint_filter
+  pcap_offline_filter
+  ```
+modified: '2024-05-01T00:04:54.392744Z'
+published: '2024-05-01T00:04:54.392345Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=66124
+affected:
+- package:
+    name: libpcap
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libpcap
+  ranges:
+  - type: GIT
+    repo: https://github.com/the-tcpdump-group/libpcap.git
+    events:
+    - introduced: 2757ddca53c330c2ba7315e993029b090e8dcb85
+  versions:
+  - libpcap-1.10.2
+  - libpcap-1.10.3
+  - libpcap-1.10.4
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: 1a0912467fca23404cdde032a4ad0e9fbae52632:f322828f9e38972aa5c101e3edeb0c576f5e8a51
+schema_version: 1.6.0

@@ -1,0 +1,36 @@
+id: OSV-2024-398
+summary: Use-of-uninitialized-value in wabt::BinaryReaderObjdump::PrintInitExpr
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=65975
+
+  ```
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  wabt::BinaryReaderObjdump::PrintInitExpr
+  wabt::BinaryReaderObjdump::EndInitExpr
+  wabt::BinaryReaderObjdump::EndGlobalInitExpr
+  ```
+modified: '2024-05-01T00:11:38.603071Z'
+published: '2024-05-01T00:11:38.602555Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=65975
+affected:
+- package:
+    name: wabt
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/wabt
+  ranges:
+  - type: GIT
+    repo: https://github.com/WebAssembly/wabt
+    events:
+    - introduced: 65ce49a6d307b101aa058da8269e1ccae43feeb9
+  versions:
+  - 1.0.30
+  - 1.0.31
+  - 1.0.32
+  - 1.0.33
+  - 1.0.34
+  ecosystem_specific:
+    severity: MEDIUM
+schema_version: 1.6.0

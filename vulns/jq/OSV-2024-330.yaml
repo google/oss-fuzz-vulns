@@ -1,0 +1,30 @@
+id: OSV-2024-330
+summary: UNKNOWN READ in std::__1::__POW10_SPLIT_2
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=67360
+
+  ```
+  Crash type: UNKNOWN READ
+  Crash state:
+  std::__1::__POW10_SPLIT_2
+  ```
+modified: '2024-04-30T00:00:31.578107Z'
+published: '2024-04-30T00:00:31.577722Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=67360
+affected:
+- package:
+    name: jq
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/jq
+  ranges:
+  - type: GIT
+    repo: https://github.com/jqlang/jq
+    events:
+    - introduced: 5029328d35f3e60037970d27f350a742af41aa02
+  versions:
+  - jq-1.7.1
+  ecosystem_specific:
+    severity: MEDIUM
+schema_version: 1.6.0
