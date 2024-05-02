@@ -1,0 +1,33 @@
+id: OSV-2024-319
+summary: Stack-buffer-underflow in filter_apply_chain
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=68328
+
+  ```
+  Crash type: Stack-buffer-underflow READ 4
+  Crash state:
+  filter_apply_chain
+  filter_apply_chain
+  initialize_output_filters
+  ```
+modified: '2024-04-29T05:39:39.043467Z'
+published: '2024-04-29T05:39:39.042459Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=68328
+affected:
+- package:
+    name: flex
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/flex
+  ranges:
+  - type: GIT
+    repo: https://github.com/westes/flex
+    events:
+    - introduced: 978faf231d62ebe7194a5bfcc7137434c3128233
+  ecosystem_specific:
+    severity: null
+  database_specific:
+    introduced_range: ba1efdfa398f3c6da9038af00b65af89e54b8ab8:b162ab50f43a7723d2b2d9ac176df5bca8aaf0ad
+  versions: []
+schema_version: 1.6.0
