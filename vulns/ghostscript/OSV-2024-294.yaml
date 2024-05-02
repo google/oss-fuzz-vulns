@@ -10,7 +10,7 @@ details: |
   gx_device_finalize
   pdf14_device_finalize
   ```
-modified: '2024-04-29T11:39:29.548726Z'
+modified: '2024-05-02T14:25:23.611452Z'
 published: '2024-04-24T00:03:38.661938Z'
 references:
 - type: REPORT
@@ -34,6 +34,8 @@ affected:
   - ghostpdl-10.03.0rc1_test002
   - ghostpdl-10.03.0rc1_test003
   - robin_test_ref
+  - ghostpdl-10.03.0
+  - ghostpdl-10.03.1
   ecosystem_specific:
     severity: null
   database_specific:
