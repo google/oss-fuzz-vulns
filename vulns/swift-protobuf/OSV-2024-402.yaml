@@ -1,0 +1,33 @@
+id: OSV-2024-402
+summary: Stack-buffer-overflow in SwiftProtobuf.TextFormatScanner.
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=68485
+
+  ```
+  Crash type: Stack-buffer-overflow READ 1
+  Crash state:
+  SwiftProtobuf.TextFormatScanner.
+  SwiftProtobuf.TextFormatScanner.
+  function signature specialization <Arg
+  ```
+modified: '2024-05-03T00:00:37.545806Z'
+published: '2024-05-03T00:00:37.545228Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=68485
+affected:
+- package:
+    name: swift-protobuf
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/swift-protobuf
+  ranges:
+  - type: GIT
+    repo: https://github.com/apple/swift-protobuf.git
+    events:
+    - introduced: 35c64a285aa52aafb2944ef7c7d4abc651c039be
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: 188199920430dd531176ca7b7516e8f22f5e5930:1bfc284be58df42528a69f8b9e1bd8fbf0036224
+  versions: []
+schema_version: 1.6.0

@@ -1,0 +1,31 @@
+id: OSV-2024-403
+summary: UNKNOWN READ in mem_planar_put_image_slow
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=68566
+
+  ```
+  Crash type: UNKNOWN READ
+  Crash state:
+  mem_planar_put_image_slow
+  pdf14_cmykspot_put_image
+  gx_update_pdf14_compositor
+  ```
+modified: '2024-05-04T00:02:34.637538Z'
+published: '2024-05-04T00:02:34.636950Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=68566
+affected:
+- package:
+    name: ghostscript
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/ghostscript
+  ranges:
+  - type: GIT
+    repo: git://git.ghostscript.com/ghostpdl.git
+    events:
+    - introduced: d0d127c25192aff5b73c4f55b3f3c4811d6fcbc7
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.6.0
