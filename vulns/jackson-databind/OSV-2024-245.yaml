@@ -10,7 +10,7 @@ details: |
   com.github.javaparser.ast.expr.FieldAccessExpr.getMetaModel
   com.github.javaparser.ast.expr.FieldAccessExpr.getMetaModel
   ```
-modified: '2024-04-08T00:11:03.596136Z'
+modified: '2024-05-05T14:17:48.961715Z'
 published: '2024-04-08T00:11:03.595756Z'
 references:
 - type: REPORT
@@ -25,9 +25,10 @@ affected:
     repo: https://github.com/FasterXML/jackson-databind
     events:
     - introduced: 407f500a1ec7e7bc31282d8763cf1a47ef4f0338
+  versions:
+  - jackson-databind-2.17.1
   ecosystem_specific:
     severity: LOW
   database_specific:
     introduced_range: 696526db115b42f1f201dea2af406513b88f0d3f:199d3ac25081ba9064e70abe3198210314bab944
-  versions: []
 schema_version: 1.6.0
