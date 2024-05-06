@@ -1,0 +1,33 @@
+id: OSV-2024-409
+summary: Use-of-uninitialized-value in Lexer::ReadToken
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=68486
+
+  ```
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  Lexer::ReadToken
+  ManifestParser::Parse
+  Parser::Load
+  ```
+modified: '2024-05-05T00:02:40.009837Z'
+published: '2024-05-05T00:02:40.009382Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=68486
+affected:
+- package:
+    name: ninja
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/ninja
+  ranges:
+  - type: GIT
+    repo: https://github.com/ninja-build/ninja
+    events:
+    - introduced: 62328b667e2aa94c9d3c13cde48357c65dab9ca2
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: 862b53e277d717b03aaac4414b3a06ab6d09f2eb:4ef30b110a528d47b2d7008b79c6e9d4ef48b25d
+  versions: []
+schema_version: 1.6.0

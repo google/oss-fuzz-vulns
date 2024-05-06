@@ -1,0 +1,33 @@
+id: OSV-2024-432
+summary: Use-of-uninitialized-value in ssl_ctx_make_profiles
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=68524
+
+  ```
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  ssl_ctx_make_profiles
+  std::__1::__function::__func<LLVMFuzzerTestOneInput::$_39, std::__1::allocator<L
+  function.h
+  ```
+modified: '2024-05-05T00:15:04.590235Z'
+published: '2024-05-05T00:15:04.589857Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=68524
+affected:
+- package:
+    name: boringssl
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/boringssl
+  ranges:
+  - type: GIT
+    repo: https://boringssl.googlesource.com/boringssl
+    events:
+    - introduced: 0d9ea840bc8c482ca043fb9bbd6376088e37fbcc
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: d69e8b46184b6fd844a4a92b4a6f4347d08ee439:2db0eb3f96a5756298dcd7f9319e56a98585bd10
+  versions: []
+schema_version: 1.6.0

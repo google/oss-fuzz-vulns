@@ -1,0 +1,33 @@
+id: OSV-2024-434
+summary: Use-of-uninitialized-value in validate_bluetooth_device_address
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=68420
+
+  ```
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  validate_bluetooth_device_address
+  handle_on_bluetooth_device_added
+  fuzzer_on_bluetooth_device_added
+  ```
+modified: '2024-05-05T00:16:24.885336Z'
+published: '2024-05-05T00:16:24.885047Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=68420
+affected:
+- package:
+    name: cras
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/cras
+  ranges:
+  - type: GIT
+    repo: https://chromium.googlesource.com/chromiumos/third_party/adhd
+    events:
+    - introduced: 2c0edebd937738b91355f5db4b51b642cdb0a4cd
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: 150f6b6d31ac0ed66a082b6c01fe4638f2794230:2f3b6ba52372fecc1d90aa3ca82b9600f723f66d
+  versions: []
+schema_version: 1.6.0

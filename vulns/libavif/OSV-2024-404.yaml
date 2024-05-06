@@ -1,0 +1,31 @@
+id: OSV-2024-404
+summary: Use-of-uninitialized-value in avifSequenceHeaderParse
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=68568
+
+  ```
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  avifSequenceHeaderParse
+  avifDecoderReset
+  avifDecoderParse
+  ```
+modified: '2024-05-04T00:03:34.449922Z'
+published: '2024-05-04T00:03:34.449449Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=68568
+affected:
+- package:
+    name: libavif
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libavif
+  ranges:
+  - type: GIT
+    repo: https://github.com/AOMediaCodec/libavif.git
+    events:
+    - introduced: 4c7f0f40c3c3c1c362cef47379220041d61fd2af
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.6.0

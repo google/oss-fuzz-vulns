@@ -1,0 +1,33 @@
+id: OSV-2024-422
+summary: Use-of-uninitialized-value in cdc_task
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=68505
+
+  ```
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  cdc_task
+  fuzz.cc
+  std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<ch
+  ```
+modified: '2024-05-05T00:07:53.115405Z'
+published: '2024-05-05T00:07:53.114978Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=68505
+affected:
+- package:
+    name: tinyusb
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/tinyusb
+  ranges:
+  - type: GIT
+    repo: https://github.com/hathach/tinyusb.git
+    events:
+    - introduced: 56dbfe59d93975a6256f5bb00da68919b28e07cb
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: 1c04d5992a020aefe16ffb2acce62d84d4899395:a435befcdeb6bbd40cf3ba342756f8d73f031957
+  versions: []
+schema_version: 1.6.0
