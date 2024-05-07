@@ -1,0 +1,29 @@
+id: OSV-2024-440
+summary: UNKNOWN READ
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=66323
+
+  ```
+  Crash type: UNKNOWN READ
+  Crash state:
+  NULL```
+modified: '2024-05-07T00:06:11.033868Z'
+published: '2024-05-07T00:06:11.033336Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=66323
+affected:
+- package:
+    name: jq
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/jq
+  ranges:
+  - type: GIT
+    repo: https://github.com/jqlang/jq
+    events:
+    - introduced: 5029328d35f3e60037970d27f350a742af41aa02
+  versions:
+  - jq-1.7.1
+  ecosystem_specific:
+    severity: MEDIUM
+schema_version: 1.6.0
