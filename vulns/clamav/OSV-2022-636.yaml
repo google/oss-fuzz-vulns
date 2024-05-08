@@ -10,7 +10,7 @@ details: |
   crtmgr_trust_list_lookup
   crtmgr_add
   ```
-modified: '2024-04-18T14:12:45.761829Z'
+modified: '2024-05-08T14:20:08.461082Z'
 published: '2022-07-27T00:00:35.300337Z'
 references:
 - type: REPORT
@@ -54,6 +54,7 @@ affected:
   - clamav-1.0.6
   - clamav-1.2.3
   - clamav-1.3.1
+  - clamav-1.4.0-rc
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.2.0
