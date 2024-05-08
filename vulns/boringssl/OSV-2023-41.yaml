@@ -10,7 +10,7 @@ details: |
   ASN1_template_free
   asn1_item_combine_free
   ```
-modified: '2023-02-02T13:00:19.898346Z'
+modified: '2024-05-08T03:26:30.000000Z'
 published: '2023-02-02T13:00:19.898084Z'
 references:
 - type: REPORT
@@ -27,6 +27,6 @@ affected:
     - introduced: 33b569282ca124c81d9ba74df696a013cb9a80ae
     - fixed: 507ac830036d7531489490831814cf03e0d7c4d6
   ecosystem_specific:
-    severity: HIGH
+    severity: LOW
   versions: []
 schema_version: 1.3.0

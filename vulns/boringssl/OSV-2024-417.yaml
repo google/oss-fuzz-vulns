@@ -10,8 +10,9 @@ details: |
   bssl::ssl_create_cipher_list
   SSL_CTX_set_cipher_list
   ```
-modified: '2024-05-05T00:05:37.413546Z'
+modified: '2024-05-08T03:26:30.000000Z'
 published: '2024-05-05T00:05:37.413119Z'
+withdrawn: '2024-05-08T03:26:30.000000Z'
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=68441
