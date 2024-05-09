@@ -10,7 +10,7 @@ details: |
   SwiftProtobuf.TextFormatScanner.
   function signature specialization <Arg
   ```
-modified: '2024-05-03T00:00:37.545806Z'
+modified: '2024-05-10T00:00:37.545806Z'
 published: '2024-05-03T00:00:37.545228Z'
 references:
 - type: REPORT
@@ -25,6 +25,7 @@ affected:
     repo: https://github.com/apple/swift-protobuf.git
     events:
     - introduced: 35c64a285aa52aafb2944ef7c7d4abc651c039be
+    - fixed: 0cb8176c7f6f812dd29bc51d54466a2873b32443
   ecosystem_specific:
     severity: MEDIUM
   database_specific:
