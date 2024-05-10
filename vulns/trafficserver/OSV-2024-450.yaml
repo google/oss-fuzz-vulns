@@ -1,0 +1,33 @@
+id: OSV-2024-450
+summary: Use-of-uninitialized-value in ink_filepath_merge
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=68468
+
+  ```
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  ink_filepath_merge
+  layout_relative
+  Layout::Layout
+  ```
+modified: '2024-05-08T00:13:15.437003Z'
+published: '2024-05-08T00:13:15.436703Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=68468
+affected:
+- package:
+    name: trafficserver
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/trafficserver
+  ranges:
+  - type: GIT
+    repo: https://github.com/apache/trafficserver.git
+    events:
+    - introduced: 4d0f7c9fcbc36dbf481bac3c1eedad6c0f9a5c36
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: 5d01b8c858ba531d90c216eed5778d87c9018ca8:051929c978f239e9687322ff44689b44be42414c
+  versions: []
+schema_version: 1.6.0

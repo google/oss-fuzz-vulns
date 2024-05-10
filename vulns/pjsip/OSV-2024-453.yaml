@@ -1,0 +1,30 @@
+id: OSV-2024-453
+summary: Use-of-uninitialized-value in encode_base64_differential
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=68663
+
+  ```
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  encode_base64_differential
+  fuzz-crypto.c
+  ```
+modified: '2024-05-08T00:15:55.868890Z'
+published: '2024-05-08T00:15:55.868630Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=68663
+affected:
+- package:
+    name: pjsip
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/pjsip
+  ranges:
+  - type: GIT
+    repo: https://github.com/pjsip/pjproject
+    events:
+    - introduced: f38d781a82a2b51b51a9996d4d76bdd8e69304d4
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.6.0

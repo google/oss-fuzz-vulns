@@ -1,0 +1,34 @@
+id: OSV-2024-456
+summary: Heap-buffer-overflow in ih264d_read_coeff4x4_cabac
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=66989
+
+  ```
+  Crash type: Heap-buffer-overflow READ 4
+  Crash state:
+  ih264d_read_coeff4x4_cabac
+  ih264d_parse_residual4x4_cabac
+  ih264d_parse_imb_cabac
+  ```
+modified: '2024-05-09T00:08:35.451771Z'
+published: '2024-05-09T00:08:35.451422Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=66989
+affected:
+- package:
+    name: libavc
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libavc
+  ranges:
+  - type: GIT
+    repo: https://github.com/ittiam-systems/libavc.git
+    events:
+    - introduced: 0e723489615b8f81d9d5a7f823969eb91787d636
+  versions:
+  - v1.4.0
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: 972c0aa711cadabb686fa75f95559cfd2c4ad316:37beb9729249a1cde472545e2a19d80660e40edc
+schema_version: 1.6.0
