@@ -1,0 +1,33 @@
+id: OSV-2024-460
+summary: UNKNOWN READ in glslang::TInfoSinkBase::location
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=68613
+
+  ```
+  Crash type: UNKNOWN READ
+  Crash state:
+  glslang::TInfoSinkBase::location
+  glslang::TParseContextBase::outputMessage
+  glslang::TParseContextBase::error
+  ```
+modified: '2024-05-11T00:04:46.149939Z'
+published: '2024-05-11T00:04:46.149516Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=68613
+affected:
+- package:
+    name: glslang
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/glslang
+  ranges:
+  - type: GIT
+    repo: https://github.com/khronosgroup/glslang
+    events:
+    - introduced: 142052fa30f9eca191aa9dcf65359fcaed09eeec
+  versions:
+  - 14.2.0
+  - main-tot
+  ecosystem_specific:
+    severity: MEDIUM
+schema_version: 1.6.0
