@@ -1,0 +1,33 @@
+id: OSV-2024-469
+summary: Heap-buffer-overflow in check_content_type_and_change_protocol
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=68932
+
+  ```
+  Crash type: Heap-buffer-overflow READ {*}
+  Crash state:
+  check_content_type_and_change_protocol
+  process_request
+  ndpi_check_http_tcp
+  ```
+modified: '2024-05-13T00:06:08.553286Z'
+published: '2024-05-13T00:06:08.552810Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=68932
+affected:
+- package:
+    name: ndpi
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/ndpi
+  ranges:
+  - type: GIT
+    repo: https://github.com/ntop/nDPI.git
+    events:
+    - introduced: 6bbae9a70a2b346968406d582f411447c9cbbd00
+  ecosystem_specific:
+    severity: HIGH
+  database_specific:
+    introduced_range: d4650f0f817c8d1663284b7dd225df802104a60b:a813121e0a7021cdbfd64630960b330a23b1a4d2
+  versions: []
+schema_version: 1.6.0
