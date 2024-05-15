@@ -1,0 +1,32 @@
+id: OSV-2024-333
+summary: UNKNOWN READ in Mat_VarPrint
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=68258
+
+  ```
+  Crash type: UNKNOWN READ
+  Crash state:
+  Mat_VarPrint
+  Mat_VarPrint
+  Mat_VarPrint
+  ```
+modified: '2024-04-30T00:01:20.040191Z'
+published: '2024-04-30T00:01:20.039792Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=68258
+affected:
+- package:
+    name: matio
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/matio
+  ranges:
+  - type: GIT
+    repo: https://github.com/tbeu/matio.git
+    events:
+    - introduced: 0885c6a34b9f739d57e5cad08b7de866b42c75fc
+  versions:
+  - v1.5.27
+  ecosystem_specific:
+    severity: MEDIUM
+schema_version: 1.6.0

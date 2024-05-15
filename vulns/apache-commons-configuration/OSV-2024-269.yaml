@@ -1,0 +1,37 @@
+id: OSV-2024-269
+summary: Security exception in java.base/java.util.stream.AbstractPipeline.evaluate
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=66703
+
+  ```
+  Crash type: Security exception
+  Crash state:
+  java.base/java.util.stream.AbstractPipeline.evaluate
+  java.base/java.util.stream.ReferencePipeline.collect
+  org.apache.commons.configuration2.AbstractYAMLBasedConfiguration.parseCollection
+  ```
+modified: '2024-04-18T00:04:02.457402Z'
+published: '2024-04-18T00:04:02.456948Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=66703
+affected:
+- package:
+    name: apache-commons-configuration
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/apache-commons-configuration
+  ranges:
+  - type: GIT
+    repo: https://gitbox.apache.org/repos/asf/commons-configuration.git
+    events:
+    - introduced: 4117b2050ab011f131d5a81c824bf89ddde303d4
+  versions:
+  - commons-configuration-2.10.0-RC1
+  - commons-configuration-2.10.1-RC1
+  - commons-configuration-2.9.0-RC1
+  - rel/commons-configuration-2.10.0
+  - rel/commons-configuration-2.10.1
+  - rel/commons-configuration-2.9.0
+  ecosystem_specific:
+    severity: LOW
+schema_version: 1.6.0
