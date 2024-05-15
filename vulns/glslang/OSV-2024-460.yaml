@@ -10,7 +10,7 @@ details: |
   glslang::TParseContextBase::outputMessage
   glslang::TParseContextBase::error
   ```
-modified: '2024-05-11T00:04:46.149939Z'
+modified: '2024-05-15T14:11:29.888153Z'
 published: '2024-05-11T00:04:46.149516Z'
 references:
 - type: REPORT
@@ -28,6 +28,7 @@ affected:
   versions:
   - 14.2.0
   - main-tot
+  - vulkan-sdk-1.3.283.0
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.6.0
