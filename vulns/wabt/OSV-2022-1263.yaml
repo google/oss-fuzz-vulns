@@ -7,7 +7,7 @@ details: |
   Crash type: Null-dereference READ
   Crash state:
   NULL```
-modified: '2023-10-25T14:11:52.583090Z'
+modified: '2024-05-15T14:09:38.047992Z'
 published: '2022-12-20T13:01:53.219707Z'
 references:
 - type: REPORT
@@ -28,6 +28,7 @@ affected:
   - 1.0.32
   - 1.0.33
   - 1.0.34
+  - 1.0.35
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.4.0
