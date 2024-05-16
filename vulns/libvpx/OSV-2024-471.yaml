@@ -1,0 +1,33 @@
+id: OSV-2024-471
+summary: Use-of-uninitialized-value in vpx_codec_peek_stream_info
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=68912
+
+  ```
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  vpx_codec_peek_stream_info
+  vpx_dec_fuzzer.cc
+  vpx_dec_fuzzer.cc
+  ```
+modified: '2024-05-15T00:02:46.465573Z'
+published: '2024-05-15T00:02:46.464995Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=68912
+affected:
+- package:
+    name: libvpx
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libvpx
+  ranges:
+  - type: GIT
+    repo: https://chromium.googlesource.com/webm/libvpx
+    events:
+    - introduced: 1a3cd4922bcde7c381b1f2681b0463804e71f0c7
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: e934e355157bf56d80e64c37b9b3c96f68734fad:db25581967de10f91ed99fb4fc0c5d8890224d74
+  versions: []
+schema_version: 1.6.0
