@@ -10,7 +10,7 @@ details: |
   boost::read_graphviz_detail::parser::parse_endpoint_rest
   boost::read_graphviz_detail::parser::parse_stmt
   ```
-modified: '2024-02-16T00:05:47.897215Z'
+modified: '2024-05-16T14:17:07.228415Z'
 published: '2024-02-16T00:05:47.896843Z'
 references:
 - type: REPORT
@@ -25,6 +25,7 @@ affected:
     repo: https://github.com/boostorg/boost.git
     events:
     - introduced: 9072bfc2d969ca1e8c49651232817201e05e3eae
+    - introduced: 206cf016ae9454ed65e9c5faf4a322f31444fb80
   versions:
   - boost-1.85.0
   - boost-1.85.0.beta1
