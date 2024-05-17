@@ -10,7 +10,7 @@ details: |
   emit_end_element
   g_markup_parse_context_parse
   ```
-modified: '2024-04-16T14:14:28.288829Z'
+modified: '2024-05-17T14:12:28.147781Z'
 published: '2022-09-18T00:02:08.324002Z'
 references:
 - type: REPORT
@@ -36,6 +36,7 @@ affected:
   - '5.73'
   - '5.74'
   - '5.75'
+  - '5.76'
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.3.0
