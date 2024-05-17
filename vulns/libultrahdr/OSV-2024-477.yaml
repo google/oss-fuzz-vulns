@@ -1,0 +1,31 @@
+id: OSV-2024-477
+summary: Heap-buffer-overflow in ultrahdr::gain_map_metadata::decodeGainmapMetadata
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=68933
+
+  ```
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  ultrahdr::gain_map_metadata::decodeGainmapMetadata
+  ultrahdr::JpegR::decodeJPEGR
+  UltraHdrDecFuzzer::process
+  ```
+modified: '2024-05-16T00:07:25.350518Z'
+published: '2024-05-16T00:07:25.350135Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=68933
+affected:
+- package:
+    name: libultrahdr
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libultrahdr
+  ranges:
+  - type: GIT
+    repo: https://github.com/google/libultrahdr.git
+    events:
+    - introduced: 6b5acee2fb863507515398442dbc9b5fd08eba87
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.6.0
