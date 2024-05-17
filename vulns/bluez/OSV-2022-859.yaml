@@ -10,7 +10,7 @@ details: |
   textfile_put
   fuzz_textfile.c
   ```
-modified: '2024-04-16T14:11:36.461647Z'
+modified: '2024-05-17T14:12:23.635918Z'
 published: '2022-09-08T00:00:41.893865Z'
 references:
 - type: REPORT
@@ -36,6 +36,7 @@ affected:
   - '5.73'
   - '5.74'
   - '5.75'
+  - '5.76'
   ecosystem_specific:
     severity: MEDIUM
   database_specific:
