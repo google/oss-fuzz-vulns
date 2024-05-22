@@ -25,11 +25,8 @@ affected:
     repo: https://skia.googlesource.com/skia.git
     events:
     - introduced: 13a15693a1834c9d946807f5dd6867932e1d11e8
-  versions:
-  - canvaskit/0.37.1
-  - canvaskit/0.37.2
-  - canvaskit/0.38.0
-  - canvaskit/0.38.2
+    - fixed: 652b26b1ab54dcb78f04c4b11c1f82b638031f1f
+  versions: []
   ecosystem_specific:
     severity: MEDIUM
   database_specific:
