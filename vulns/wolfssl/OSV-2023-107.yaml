@@ -10,7 +10,7 @@ details: |
   OcspResponseDecode
   ocsp.c
   ```
-modified: '2024-03-21T14:23:43.210325Z'
+modified: '2024-05-22T14:23:36.170085Z'
 published: '2023-02-25T13:00:07.390537Z'
 references:
 - type: REPORT
@@ -33,6 +33,7 @@ affected:
   - v5.6.4-stable
   - v5.6.6-stable
   - v5.7.0-stable
+  - wolfEntropy1
   ecosystem_specific:
     severity: MEDIUM
   database_specific:
