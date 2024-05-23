@@ -10,7 +10,7 @@ details: |
   H5FS_sect_find
   H5MF__find_sect
   ```
-modified: '2024-04-30T00:12:09.539994Z'
+modified: '2024-05-23T14:57:19.082142Z'
 published: '2024-04-30T00:12:09.539697Z'
 references:
 - type: REPORT
@@ -45,6 +45,7 @@ affected:
   - snapshot-1.10
   - snapshot-1.12
   - snapshot-1.14
+  - temp-1.14.4-3
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.6.0
