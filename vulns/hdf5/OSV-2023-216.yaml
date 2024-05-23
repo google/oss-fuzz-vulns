@@ -10,7 +10,7 @@ details: |
   H5B_find
   H5G__stab_lookup
   ```
-modified: '2024-04-16T14:31:46.505778Z'
+modified: '2024-05-23T14:33:00.566466Z'
 published: '2023-03-23T13:00:48.081705Z'
 references:
 - type: REPORT
@@ -46,6 +46,7 @@ affected:
   - hdf5-1.14.4.1
   - hdf5_1.14.4.1
   - hdf5_1.14.4.2
+  - temp-1.14.4-3
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.4.0
