@@ -10,7 +10,7 @@ details: |
   H5O__cache_chk_serialize
   H5C__generate_image
   ```
-modified: '2024-04-16T14:34:01.388174Z'
+modified: '2024-05-23T14:34:18.215292Z'
 published: '2023-05-01T14:02:33.841821Z'
 references:
 - type: REPORT
@@ -46,6 +46,7 @@ affected:
   - hdf5-1.14.4.1
   - hdf5_1.14.4.1
   - hdf5_1.14.4.2
+  - temp-1.14.4-3
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.4.0
