@@ -10,7 +10,7 @@ details: |
   H5O__link_decode
   H5O__msg_iterate_real
   ```
-modified: '2024-05-23T14:36:36.230039Z'
+modified: '2024-05-24T14:33:33.722345Z'
 published: '2023-05-13T14:00:26.093088Z'
 references:
 - type: REPORT
@@ -47,6 +47,7 @@ affected:
   - hdf5_1.14.4.1
   - hdf5_1.14.4.2
   - temp-1.14.4-3
+  - hdf5_1.14.4.3
   ecosystem_specific:
     severity: null
 schema_version: 1.4.0
