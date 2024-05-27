@@ -25,9 +25,11 @@ affected:
     repo: https://github.com/apache/trafficserver.git
     events:
     - introduced: 4d0f7c9fcbc36dbf481bac3c1eedad6c0f9a5c36
+    - fixed: 7ad84419432b0807578a59efbf63a3a8226ed1f3
   ecosystem_specific:
     severity: MEDIUM
   database_specific:
     introduced_range: 5d01b8c858ba531d90c216eed5778d87c9018ca8:051929c978f239e9687322ff44689b44be42414c
+    fixed_range: 051929c978f239e9687322ff44689b44be42414c:7ad84419432b0807578a59efbf63a3a8226ed1f3
   versions: []
 schema_version: 1.6.0
