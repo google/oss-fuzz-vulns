@@ -24,7 +24,10 @@ affected:
     repo: https://github.com/pjsip/pjproject
     events:
     - introduced: f38d781a82a2b51b51a9996d4d76bdd8e69304d4
+    - fixed: 24ac5875ffdff3f287e495e3ce81ae1d11777f3e
   ecosystem_specific:
     severity: MEDIUM
+  database_specific:
+    fixed_range: f38d781a82a2b51b51a9996d4d76bdd8e69304d4:24ac5875ffdff3f287e495e3ce81ae1d11777f3e
   versions: []
 schema_version: 1.6.0
