@@ -25,9 +25,11 @@ affected:
     repo: https://chromium.googlesource.com/webm/libvpx
     events:
     - introduced: 1a3cd4922bcde7c381b1f2681b0463804e71f0c7
+    - fixed: b1cf64c40b66047ab8b525cbfb70e6366a46c228
   ecosystem_specific:
     severity: MEDIUM
   database_specific:
     introduced_range: e934e355157bf56d80e64c37b9b3c96f68734fad:db25581967de10f91ed99fb4fc0c5d8890224d74
+    fixed_range: 5913401ebb86b643239e896e59e270b1672feae6:b1cf64c40b66047ab8b525cbfb70e6366a46c228
   versions: []
 schema_version: 1.6.0
