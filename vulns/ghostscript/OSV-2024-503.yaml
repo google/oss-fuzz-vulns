@@ -25,9 +25,11 @@ affected:
     repo: git://git.ghostscript.com/ghostpdl.git
     events:
     - introduced: 2422afa72801603247b6a748ea32ca2ce9443ecd
+    - fixed: 647ad9344e825e7495fd5dc4b9d466d37d6f97e8
   ecosystem_specific:
     severity: HIGH
   database_specific:
     introduced_range: 9f3fb435ce90dd855a65df0a03e87743116ea2c4:fdf933dadd618afb53e78a86f115b48decc2ab64
+    fixed_range: a1a4146bebdb24f94e3ace2e933527469d599313:647ad9344e825e7495fd5dc4b9d466d37d6f97e8
   versions: []
 schema_version: 1.6.0
