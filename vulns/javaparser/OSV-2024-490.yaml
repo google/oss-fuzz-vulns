@@ -1,0 +1,33 @@
+id: OSV-2024-490
+summary: Security exception in com.github.javaparser.CommentsInserter.insertComments
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=68929
+
+  ```
+  Crash type: Security exception
+  Crash state:
+  com.github.javaparser.CommentsInserter.insertComments
+  java.base/java.util.Objects.equals
+  com.github.javaparser.Position.equals
+  ```
+modified: '2024-05-20T00:07:13.417898Z'
+published: '2024-05-20T00:07:13.417197Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=68929
+affected:
+- package:
+    name: javaparser
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/javaparser
+  ranges:
+  - type: GIT
+    repo: https://github.com/javaparser/javaparser
+    events:
+    - introduced: 0ca0164a7adad1a7b61b6617aca345a641660ac8
+  ecosystem_specific:
+    severity: LOW
+  database_specific:
+    introduced_range: 24e15da0a0403a9bb33b5394095b998c796e781e:bd5ddb57598bd05045e71b30ceb4c74eb79a3a27
+  versions: []
+schema_version: 1.6.0
