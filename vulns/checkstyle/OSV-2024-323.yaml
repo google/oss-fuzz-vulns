@@ -10,7 +10,7 @@ details: |
   java.base/java.util.stream.ReferencePipeline$3$1.accept
   java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining
   ```
-modified: '2024-04-29T05:41:42.743891Z'
+modified: '2024-05-27T14:02:31.976819Z'
 published: '2024-04-29T05:41:42.743610Z'
 references:
 - type: REPORT
@@ -25,10 +25,12 @@ affected:
     repo: https://github.com/checkstyle/checkstyle
     events:
     - introduced: 145f1e18ce1daf34edf306339c1fee7cbd1b1b09
+    - fixed: e7facb06e1bf121b8715fa82f406a24ab5bf6c0b
   versions:
   - checkstyle-10.16.0
   ecosystem_specific:
     severity: LOW
   database_specific:
     introduced_range: 114a9df1a48ec8c56aff95ab6b3d1be51e9faec4:508c3613a34e2313315799c6a424c54d3389bb40
+    fixed_range: a7ca081725c9a152dadea835a75632bbe998d4c2:e7facb06e1bf121b8715fa82f406a24ab5bf6c0b
 schema_version: 1.6.0
