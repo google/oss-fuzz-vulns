@@ -25,9 +25,11 @@ affected:
     repo: https://github.com/westes/flex
     events:
     - introduced: 978faf231d62ebe7194a5bfcc7137434c3128233
+    - fixed: b7d76db200d2e4dcaaf2f21ad1414b84f6ef337a
   ecosystem_specific:
     severity: null
   database_specific:
     introduced_range: ba1efdfa398f3c6da9038af00b65af89e54b8ab8:b162ab50f43a7723d2b2d9ac176df5bca8aaf0ad
+    fixed_range: e241be63ddd503d203b33262d3ebb7d3a6726bca:b7d76db200d2e4dcaaf2f21ad1414b84f6ef337a
   versions: []
 schema_version: 1.6.0
