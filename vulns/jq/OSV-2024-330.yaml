@@ -8,7 +8,7 @@ details: |
   Crash state:
   std::__1::__POW10_SPLIT_2
   ```
-modified: '2024-04-30T00:00:31.578107Z'
+modified: '2024-05-27T14:01:02.168724Z'
 published: '2024-04-30T00:00:31.577722Z'
 references:
 - type: REPORT
@@ -23,8 +23,11 @@ affected:
     repo: https://github.com/jqlang/jq
     events:
     - introduced: 5029328d35f3e60037970d27f350a742af41aa02
+    - fixed: 6ce6e7c71355a0b6006e9e3371364f6945da5a29
   versions:
   - jq-1.7.1
   ecosystem_specific:
     severity: MEDIUM
+  database_specific:
+    fixed_range: e4d0b12d7d5b91e6bb1d2d233018bc63ed28e3ae:6ce6e7c71355a0b6006e9e3371364f6945da5a29
 schema_version: 1.6.0
