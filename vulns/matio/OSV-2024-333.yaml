@@ -10,7 +10,7 @@ details: |
   Mat_VarPrint
   Mat_VarPrint
   ```
-modified: '2024-04-30T00:01:20.040191Z'
+modified: '2024-05-27T14:01:03.854129Z'
 published: '2024-04-30T00:01:20.039792Z'
 references:
 - type: REPORT
@@ -25,8 +25,11 @@ affected:
     repo: https://github.com/tbeu/matio.git
     events:
     - introduced: 0885c6a34b9f739d57e5cad08b7de866b42c75fc
+    - fixed: 459182d5481477d79de8c5cf101ee191838bf35f
   versions:
   - v1.5.27
   ecosystem_specific:
     severity: MEDIUM
+  database_specific:
+    fixed_range: a9bfd9ffc1ce196cc27b96f2d9655992d72176c3:459182d5481477d79de8c5cf101ee191838bf35f
 schema_version: 1.6.0
