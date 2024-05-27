@@ -25,9 +25,11 @@ affected:
     repo: https://github.com/ninja-build/ninja
     events:
     - introduced: 62328b667e2aa94c9d3c13cde48357c65dab9ca2
+    - fixed: f07dca3185b5ee2261d17cf3d22c366e5edc444c
   ecosystem_specific:
     severity: MEDIUM
   database_specific:
     introduced_range: 862b53e277d717b03aaac4414b3a06ab6d09f2eb:4ef30b110a528d47b2d7008b79c6e9d4ef48b25d
+    fixed_range: 4ef30b110a528d47b2d7008b79c6e9d4ef48b25d:f07dca3185b5ee2261d17cf3d22c366e5edc444c
   versions: []
 schema_version: 1.6.0
