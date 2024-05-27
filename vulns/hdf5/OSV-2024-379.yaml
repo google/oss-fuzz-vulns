@@ -10,7 +10,7 @@ details: |
   H5FS_sect_find
   H5MF__find_sect
   ```
-modified: '2024-05-24T14:57:24.474387Z'
+modified: '2024-05-27T14:16:07.509934Z'
 published: '2024-04-30T00:12:09.539697Z'
 references:
 - type: REPORT
@@ -28,25 +28,14 @@ affected:
     - introduced: 04f0647727677d716a3c1c772d35a660a8ea0dc5
     - introduced: 5a0ec52099cf02224a4066b158bcf1a34829db20
     - introduced: f527239564fc27a6e666ce734b88e4ab18765efc
+    - fixed: 18321dee40b21e19c95bf0ef2f61e3ec71233fe9
+    - fixed: 5e9e8ff598e6af721459db59aea8b2a9b489d4ec
+    - fixed: 88d78fb508d14f3e246fed91064f3546eeb1d702
+    - fixed: 43affeb0f388466b5be555879d91d14037be0e99
   versions:
-  - 1.14.1
-  - hdf5-1_10_10
-  - hdf5-1_10_11
-  - hdf5-1_12_3
-  - hdf5-1_14_1
-  - hdf5-1_14_1-2
-  - hdf5-1_14_2
-  - hdf5-1_14_3
-  - hdf5-1_14_3-rc1
-  - hdf5_1.14.4
-  - hdf5_1.14.4.1
-  - hdf5_1.14.4.2
   - snapshot
-  - snapshot-1.10
-  - snapshot-1.12
-  - snapshot-1.14
-  - temp-1.14.4-3
-  - hdf5_1.14.4.3
   ecosystem_specific:
     severity: MEDIUM
+  database_specific:
+    fixed_range: 9ad5f7e3a9f17368afc60143e39daf0d101742d7:18321dee40b21e19c95bf0ef2f61e3ec71233fe9
 schema_version: 1.6.0
