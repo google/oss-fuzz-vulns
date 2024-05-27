@@ -10,7 +10,7 @@ details: |
   EncryptStream::lookChar
   BaseCryptStream::getChar
   ```
-modified: '2024-04-30T00:03:14.687159Z'
+modified: '2024-05-27T14:03:03.110153Z'
 published: '2024-04-30T00:03:14.686810Z'
 references:
 - type: REPORT
@@ -25,6 +25,7 @@ affected:
     repo: https://gitlab.freedesktop.org/poppler/poppler.git
     events:
     - introduced: 2c403ec533ad9ad821c37e3f80f8f361ce9cdea8
+    - fixed: fceaba5461e276121e50d858169a53f7434b1e05
   versions:
   - poppler-23.07.0
   - poppler-23.08.0
@@ -41,4 +42,5 @@ affected:
     severity: MEDIUM
   database_specific:
     introduced_range: 6ebe45e8dceae11d02c74df47c34f4490a45a15e:d9d1550a3e337e041cf2801dfcb0366fcb5b16d0
+    fixed_range: d40bb7e308c9e3299e50d3e2880229cd6272587e:fceaba5461e276121e50d858169a53f7434b1e05
 schema_version: 1.6.0
