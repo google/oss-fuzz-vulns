@@ -10,7 +10,7 @@ details: |
   RDKit::ParseV3000AtomBlock
   RDKit::FileParserUtils::ParseV3000CTAB
   ```
-modified: '2024-05-02T14:12:03.285451Z'
+modified: '2024-05-31T14:06:53.281178Z'
 published: '2022-08-06T00:00:51.363676Z'
 references:
 - type: REPORT
@@ -46,6 +46,7 @@ affected:
   - Release_2024_03_1b1
   - Release_2024_03_1
   - Release_2024_03_2
+  - Release_2024_03_3
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.3.0
