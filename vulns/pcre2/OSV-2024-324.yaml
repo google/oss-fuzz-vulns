@@ -1,0 +1,30 @@
+id: OSV-2024-324
+summary: Use-of-uninitialized-value in do_callout_jit
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=68365
+
+  ```
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  do_callout_jit
+  jit_machine_stack_exec
+  ```
+modified: '2024-04-29T05:41:58.770418Z'
+published: '2024-04-29T05:41:58.770090Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=68365
+affected:
+- package:
+    name: pcre2
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/pcre2
+  ranges:
+  - type: GIT
+    repo: https://github.com/PCRE2Project/pcre2
+    events:
+    - introduced: 3eedbacfeeecd2a06a282c7f9b630883840cbbc4
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.6.0

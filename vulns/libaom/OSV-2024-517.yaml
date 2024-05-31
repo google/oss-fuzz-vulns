@@ -1,0 +1,37 @@
+id: OSV-2024-517
+summary: Segv on unknown address in od_ec_dec_init
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=68774
+
+  ```
+  Crash type: Segv on unknown address
+  Crash state:
+  od_ec_dec_init
+  aom_reader_init
+  av1_decode_tg_tiles_and_wrapup
+  ```
+modified: '2024-05-30T00:05:57.060706Z'
+published: '2024-05-30T00:05:57.060200Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=68774
+affected:
+- package:
+    name: libaom
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libaom
+  ranges:
+  - type: GIT
+    repo: https://aomedia.googlesource.com/aom
+    events:
+    - introduced: 8db7d7893078a12e89cfdae35b25da97a933ab0b
+  versions:
+  - v3.8.2
+  - v3.8.2-rc1
+  - v3.9.0
+  - v3.9.0-rc1
+  ecosystem_specific:
+    severity: null
+  database_specific:
+    introduced_range: 0414f4e9abe9e859a1a26c92e9c79af2da63bb0b:cae8fbe572bec3443b89d9be858ff0abb7020f1b
+schema_version: 1.6.0
