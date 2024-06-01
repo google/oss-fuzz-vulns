@@ -1,0 +1,32 @@
+id: OSV-2024-521
+summary: Heap-buffer-overflow in ubidi_writeReordered_76
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=68624
+
+  ```
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  ubidi_writeReordered_76
+  ubidi_fuzzer.cpp
+  ```
+modified: '2024-05-31T00:06:51.181049Z'
+published: '2024-05-31T00:06:51.180600Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=68624
+affected:
+- package:
+    name: icu
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/icu
+  ranges:
+  - type: GIT
+    repo: https://github.com/unicode-org/icu.git
+    events:
+    - introduced: 1ff249b73f8a8c3c5c355c976622fc8e39a863cb
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: 6041c249f4612ee556d56ae4cd056450258e460e:464531eb8e08abe0bd183401525a05e32423cb30
+  versions: []
+schema_version: 1.6.0
