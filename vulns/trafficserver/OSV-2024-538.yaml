@@ -1,0 +1,33 @@
+id: OSV-2024-538
+summary: Use-of-uninitialized-value in QUICVariableInt::size
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=69001
+
+  ```
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  QUICVariableInt::size
+  Http3SettingsFrame::Http3SettingsFrame
+  Http3FrameFactory::create
+  ```
+modified: '2024-06-06T00:12:59.951130Z'
+published: '2024-06-06T00:12:59.950768Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=69001
+affected:
+- package:
+    name: trafficserver
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/trafficserver
+  ranges:
+  - type: GIT
+    repo: https://github.com/apache/trafficserver.git
+    events:
+    - introduced: 5d6f2f6c05582a0342e1034f9719df3715e9f679
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: 9012706b4d4566b03e2bc4f02fb2ff5c8a4048c1:1c37f7ab7efc9ab521360654cacf3aacc5fdddc0
+  versions: []
+schema_version: 1.6.0
