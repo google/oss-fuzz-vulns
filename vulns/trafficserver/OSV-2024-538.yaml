@@ -10,7 +10,7 @@ details: |
   Http3SettingsFrame::Http3SettingsFrame
   Http3FrameFactory::create
   ```
-modified: '2024-06-06T00:12:59.951130Z'
+modified: '2024-06-07T14:07:35.983715Z'
 published: '2024-06-06T00:12:59.950768Z'
 references:
 - type: REPORT
@@ -25,6 +25,7 @@ affected:
     repo: https://github.com/apache/trafficserver.git
     events:
     - introduced: 5d6f2f6c05582a0342e1034f9719df3715e9f679
+    - introduced: 779f936789f627575f8fb4a0783104b3c95d37f9
   ecosystem_specific:
     severity: MEDIUM
   database_specific:
