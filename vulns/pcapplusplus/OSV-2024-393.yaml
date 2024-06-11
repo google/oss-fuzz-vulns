@@ -1,0 +1,33 @@
+id: OSV-2024-393
+summary: Heap-buffer-overflow in pcpp::BgpLayer::getHeaderLen
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=67346
+
+  ```
+  Crash type: Heap-buffer-overflow READ 2
+  Crash state:
+  pcpp::BgpLayer::getHeaderLen
+  pcpp::Packet::shortenLayer
+  pcpp::BgpUpdateMessageLayer::setPathAttributes
+  ```
+modified: '2024-04-30T00:15:10.223648Z'
+published: '2024-04-30T00:15:10.223298Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=67346
+affected:
+- package:
+    name: pcapplusplus
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/pcapplusplus
+  ranges:
+  - type: GIT
+    repo: https://github.com/seladb/PcapPlusPlus
+    events:
+    - introduced: 813f15b87f5e76a62d64360f8cbdf449c21316e4
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: 3227ad11ec457c3dad062db548432d2a1c837d50:0c95dfb3557644acc6a10060e48cfae1a61fc2f0
+  versions: []
+schema_version: 1.6.0
