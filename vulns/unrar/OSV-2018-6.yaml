@@ -10,7 +10,7 @@ details: |
   ExtractUnixLink50
   ExtractSymlink
   ```
-modified: '2024-04-27T14:08:25.002745Z'
+modified: '2024-06-11T14:00:35.453974Z'
 published: '2021-01-13T00:00:02.571744Z'
 references:
 - type: REPORT
@@ -41,6 +41,7 @@ affected:
   - tag-6.1.7
   - v7.0.7
   - v7.0.8
+  - v7.0.9
   ecosystem_specific:
     severity: MEDIUM
     introduced_range: 2a079823c708a637bc36e888180ebb96fdfba526:1d8ea7923dae7c8f136912b6bdca95dcb52e80bc
