@@ -10,7 +10,7 @@ details: |
   aom_reader_init
   av1_decode_tg_tiles_and_wrapup
   ```
-modified: '2024-06-11T14:21:19.831855Z'
+modified: '2024-06-12T14:27:19.661443Z'
 published: '2024-05-30T00:05:57.060200Z'
 references:
 - type: REPORT
@@ -33,6 +33,9 @@ affected:
   - v3.9.1-rc1
   - v3.9.1-rc2
   - v3.9.1
+  - v3.8.3
+  - v3.8.3-rc1
+  - v3.8.3-rc2
   ecosystem_specific:
     severity: null
   database_specific:
