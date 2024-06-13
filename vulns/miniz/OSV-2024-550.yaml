@@ -1,0 +1,33 @@
+id: OSV-2024-550
+summary: Heap-buffer-overflow in mz_zip_mem_read_func
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=69528
+
+  ```
+  Crash type: Heap-buffer-overflow READ {*}
+  Crash state:
+  mz_zip_mem_read_func
+  mz_zip_reader_read_central_dir
+  mz_zip_reader_init_mem
+  ```
+modified: '2024-06-12T00:06:02.418563Z'
+published: '2024-06-12T00:06:02.418206Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=69528
+affected:
+- package:
+    name: miniz
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/miniz
+  ranges:
+  - type: GIT
+    repo: https://github.com/richgel999/miniz.git
+    events:
+    - introduced: 43bc679d0571dbfd344a1535e75b9de7961b54a9
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: 8714fd3cd8788eb18304200607247926f9728d1f:3c46a051414a4221247f85e16712d123d0ad4983
+  versions: []
+schema_version: 1.6.0

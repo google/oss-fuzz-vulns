@@ -1,0 +1,33 @@
+id: OSV-2024-552
+summary: UNKNOWN READ in ndpi_search_zoom
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=69520
+
+  ```
+  Crash type: UNKNOWN READ
+  Crash state:
+  ndpi_search_zoom
+  check_ndpi_detection_func
+  ndpi_detection_process_packet
+  ```
+modified: '2024-06-12T00:12:06.313282Z'
+published: '2024-06-12T00:12:06.312903Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=69520
+affected:
+- package:
+    name: ndpi
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/ndpi
+  ranges:
+  - type: GIT
+    repo: https://github.com/ntop/nDPI.git
+    events:
+    - introduced: 070a0908b30c055bf0590fb0d10557c1acf70401
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: 619005c5b22f85479201a60002fe92373232f59b:b90d39c4ac039464798a323ef96dc92262504852
+  versions: []
+schema_version: 1.6.0
