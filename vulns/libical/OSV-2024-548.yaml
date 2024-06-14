@@ -1,0 +1,32 @@
+id: OSV-2024-548
+summary: Use-of-uninitialized-value in icalmemory_strdup
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=69527
+
+  ```
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  icalmemory_strdup
+  icalparameter_new_from_value_string
+  icalparser_add_line
+  ```
+modified: '2024-06-12T00:00:26.364669Z'
+published: '2024-06-12T00:00:26.364017Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=69527
+affected:
+- package:
+    name: libical
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libical
+  ranges:
+  - type: GIT
+    repo: https://github.com/libical/libical.git
+    events:
+    - introduced: 2026582a94915dc3988b40ab222a4d975fd0f10c
+    - introduced: 1442c8a22259e7963573337a7c9d30baf64beee7
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.6.0
