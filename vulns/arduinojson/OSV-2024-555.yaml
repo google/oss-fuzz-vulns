@@ -1,0 +1,33 @@
+id: OSV-2024-555
+summary: Heap-buffer-overflow in ArduinoJson::V704HB22::detail::MsgPackDeserializer<ArduinoJson::V704HB22::detail
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=69497
+
+  ```
+  Crash type: Heap-buffer-overflow WRITE 1
+  Crash state:
+  ArduinoJson::V704HB22::detail::MsgPackDeserializer<ArduinoJson::V704HB22::detail
+  ArduinoJson::V704HB22::DeserializationError::Code ArduinoJson::V704HB22::detail:
+  ArduinoJson::V704HB22::DeserializationError::Code ArduinoJson::V704HB22::detail:
+  ```
+modified: '2024-06-13T00:06:28.783332Z'
+published: '2024-06-13T00:06:28.782972Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=69497
+affected:
+- package:
+    name: arduinojson
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/arduinojson
+  ranges:
+  - type: GIT
+    repo: https://github.com/bblanchon/ArduinoJson.git
+    events:
+    - introduced: aec642be203b4526594319081ec9870a5313840c
+  ecosystem_specific:
+    severity: HIGH
+  database_specific:
+    introduced_range: 5a60c55be74b377c850592b3387759d7261e57fd:5b88b2c1f6bd78af21fc2036f2357253b563accb
+  versions: []
+schema_version: 1.6.0
