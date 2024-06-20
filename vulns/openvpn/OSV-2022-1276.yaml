@@ -10,7 +10,7 @@ details: |
   establish_http_proxy_passthru
   fuzz_proxy.c
   ```
-modified: '2024-03-21T14:08:24.866464Z'
+modified: '2024-06-20T14:07:47.288262Z'
 published: '2023-06-15T14:01:52.594793Z'
 references:
 - type: REPORT
@@ -43,6 +43,7 @@ affected:
   - v2.6.8
   - v2.6.9
   - v2.6.10
+  - v2.6.11
   ecosystem_specific:
     severity: HIGH
 schema_version: 1.4.0
