@@ -1,0 +1,61 @@
+id: OSV-2024-384
+summary: Heap-use-after-free in json_fixed_string
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=67528
+
+  ```
+  Crash type: Heap-use-after-free WRITE 11
+  Crash state:
+  json_fixed_string
+  json_RNUMBER_Header
+  dwg_read_json
+  ```
+modified: '2024-04-30T00:12:26.561225Z'
+published: '2024-04-30T00:12:26.560732Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=67528
+affected:
+- package:
+    name: libredwg
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libredwg
+  ranges:
+  - type: GIT
+    repo: https://github.com/LibreDWG/libredwg
+    events:
+    - introduced: 6d082fd0b2c6c33914cbdc943370b9a0a5dd3ef0
+  versions:
+  - '0.13'
+  - 0.13.1
+  - 0.13.2
+  - 0.13.3
+  - 0.13.3.7163
+  - 0.13.3.7165
+  - 0.13.3.7166
+  - 0.13.3.7168
+  - 0.13.3.7176
+  - 0.13.3.7183
+  - 0.13.3.7186
+  - 0.13.3.7187
+  - 0.13.3.7190
+  - 0.13.3.7199
+  - 0.13.3.7217
+  - 0.13.3.7220
+  - 0.13.3.7223
+  - 0.13.3.7224
+  - 0.13.3.7225
+  - 0.13.3.7226
+  - 0.13.3.7227
+  - 0.13.3.7233
+  - 0.13.3.7240
+  - 0.13.3.7246
+  - 0.13.3.7251
+  - 0.13.3.7257
+  - 0.13.3.7259
+  - 0.13.3.7262
+  - 0.13.3.7264
+  - 0.13.3.7265
+  ecosystem_specific:
+    severity: HIGH
+schema_version: 1.6.0

@@ -1,0 +1,35 @@
+id: OSV-2024-349
+summary: Security exception in java.base/java.lang.AbstractStringBuilder.<init>
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=67525
+
+  ```
+  Crash type: Security exception
+  Crash state:
+  java.base/java.lang.AbstractStringBuilder.<init>
+  java.base/java.lang.StringBuilder.<init>
+  org.apache.commons.codec.language.bm.Rule$Phoneme.<init>
+  ```
+modified: '2024-04-30T00:03:33.577134Z'
+published: '2024-04-30T00:03:33.576785Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=67525
+affected:
+- package:
+    name: apache-commons-codec
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/apache-commons-codec
+  ranges:
+  - type: GIT
+    repo: https://gitbox.apache.org/repos/asf/commons-codec.git
+    events:
+    - introduced: 353e79cd3edd84e1250021e896974d9018fc74bb
+  versions:
+  - commons-codec-1.17.0-RC1
+  - rel/commons-codec-1.17.0
+  ecosystem_specific:
+    severity: LOW
+  database_specific:
+    introduced_range: 72c40fe6f62410bcaa019dbf2cb570ee4e49b70e:3bf874e2141dc08550c0b330c7a7006f358bb0f0
+schema_version: 1.6.0
