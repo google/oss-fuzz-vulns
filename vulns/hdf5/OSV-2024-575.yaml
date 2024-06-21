@@ -1,0 +1,33 @@
+id: OSV-2024-575
+summary: UNKNOWN READ in H5SL_remove
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=69242
+
+  ```
+  Crash type: UNKNOWN READ
+  Crash state:
+  H5SL_remove
+  H5FS__sect_unlink_rest
+  H5FS_sect_find
+  ```
+modified: '2024-06-20T00:03:37.436551Z'
+published: '2024-06-20T00:03:37.435999Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=69242
+affected:
+- package:
+    name: hdf5
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/hdf5
+  ranges:
+  - type: GIT
+    repo: https://github.com/HDFGroup/hdf5
+    events:
+    - introduced: c2099d0e7008478e44f1b3e1f90f261e546ffd49
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: 9ad5f7e3a9f17368afc60143e39daf0d101742d7:18321dee40b21e19c95bf0ef2f61e3ec71233fe9
+  versions: []
+schema_version: 1.6.0

@@ -1,0 +1,31 @@
+id: OSV-2024-574
+summary: Heap-buffer-overflow in spvtools::disassemble::InstructionDisassembler::EmitInstruction
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=69549
+
+  ```
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  spvtools::disassemble::InstructionDisassembler::EmitInstruction
+  spvtools::DisassembleInstruction
+  Parser::parseModule
+  ```
+modified: '2024-06-19T00:15:01.984531Z'
+published: '2024-06-19T00:15:01.983925Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=69549
+affected:
+- package:
+    name: spirv-tools
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/spirv-tools
+  ranges:
+  - type: GIT
+    repo: https://github.com/KhronosGroup/SPIRV-Tools.git
+    events:
+    - introduced: c3178da8eac9bc7d1788e95f8d555918ba483c23
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.6.0
