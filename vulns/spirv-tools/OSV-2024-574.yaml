@@ -10,7 +10,7 @@ details: |
   spvtools::DisassembleInstruction
   Parser::parseModule
   ```
-modified: '2024-06-19T00:15:01.984531Z'
+modified: '2024-06-21T14:16:58.341192Z'
 published: '2024-06-19T00:15:01.983925Z'
 references:
 - type: REPORT
@@ -25,7 +25,8 @@ affected:
     repo: https://github.com/KhronosGroup/SPIRV-Tools.git
     events:
     - introduced: c3178da8eac9bc7d1788e95f8d555918ba483c23
+  versions:
+  - v2024.3.rc1
   ecosystem_specific:
     severity: MEDIUM
-  versions: []
 schema_version: 1.6.0
