@@ -10,7 +10,7 @@ details: |
   spvTextEncodeOpcode
   spvTextToBinaryWithOptions
   ```
-modified: '2024-06-06T00:00:55.008147Z'
+modified: '2024-06-21T14:16:48.821948Z'
 published: '2024-06-06T00:00:55.007699Z'
 references:
 - type: REPORT
@@ -25,9 +25,10 @@ affected:
     repo: https://github.com/KhronosGroup/SPIRV-Tools.git
     events:
     - introduced: 7e1a8cdc534093862cc369bb9f398f919c105684
+  versions:
+  - v2024.3.rc1
   ecosystem_specific:
     severity: MEDIUM
   database_specific:
     introduced_range: 3d24089292ed357658e3de81ddc2e72f11296e39:142bf7de83b550b549b4049eb1f3dcb2ff007ec1
-  versions: []
 schema_version: 1.6.0
