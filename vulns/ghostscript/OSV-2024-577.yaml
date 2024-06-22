@@ -1,0 +1,33 @@
+id: OSV-2024-577
+summary: Heap-use-after-free in sputs
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=69793
+
+  ```
+  Crash type: Heap-use-after-free READ {*}
+  Crash state:
+  sputs
+  xps_write_profile
+  xps_begin_typed_image
+  ```
+modified: '2024-06-22T00:14:08.187320Z'
+published: '2024-06-22T00:14:08.186738Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=69793
+affected:
+- package:
+    name: ghostscript
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/ghostscript
+  ranges:
+  - type: GIT
+    repo: git://git.ghostscript.com/ghostpdl.git
+    events:
+    - introduced: 69f8e47f0c9dbe07d0aceb1edb3c3b9e29e2a622
+  ecosystem_specific:
+    severity: HIGH
+  database_specific:
+    introduced_range: 978cf3fbe49af937ff972a33ff7b52ef52678d84:cab8fb0f916e1372f6a70d5c916e0e1be11d7276
+  versions: []
+schema_version: 1.6.0
