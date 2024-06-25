@@ -10,7 +10,7 @@ details: |
   spvtools::DisassembleInstruction
   Parser::parseModule
   ```
-modified: '2024-06-21T14:16:58.341192Z'
+modified: '2024-06-25T14:22:08.649397Z'
 published: '2024-06-19T00:15:01.983925Z'
 references:
 - type: REPORT
@@ -27,6 +27,7 @@ affected:
     - introduced: c3178da8eac9bc7d1788e95f8d555918ba483c23
   versions:
   - v2024.3.rc1
+  - v2024.3
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.6.0
