@@ -10,7 +10,7 @@ details: |
   spvTextEncodeOpcode
   spvTextToBinaryWithOptions
   ```
-modified: '2024-06-21T14:16:48.821948Z'
+modified: '2024-06-25T14:21:53.898093Z'
 published: '2024-06-06T00:00:55.007699Z'
 references:
 - type: REPORT
@@ -27,6 +27,7 @@ affected:
     - introduced: 7e1a8cdc534093862cc369bb9f398f919c105684
   versions:
   - v2024.3.rc1
+  - v2024.3
   ecosystem_specific:
     severity: MEDIUM
   database_specific:
