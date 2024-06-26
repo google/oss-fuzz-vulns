@@ -10,7 +10,7 @@ details: |
   execute_internal
   fuzzer_execute_internal
   ```
-modified: '2022-07-13T00:00:07.764018Z'
+modified: '2024-06-26T16:08:18.633957Z'
 published: '2022-07-13T00:00:07.763765Z'
 references:
 - type: REPORT
@@ -25,7 +25,8 @@ affected:
     repo: https://github.com/php/php-src.git
     events:
     - introduced: ddc0b490f76b469591f851ccbce56c20ef93f333
+  versions:
+  - security-audit-2024
   ecosystem_specific:
     severity: MEDIUM
-  versions: []
 schema_version: 1.2.0
