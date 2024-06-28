@@ -1,0 +1,33 @@
+id: OSV-2024-592
+summary: UNKNOWN READ in spvtools::disassemble::InstructionDisassembler::EmitInstruction
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=69804
+
+  ```
+  Crash type: UNKNOWN READ
+  Crash state:
+  spvtools::disassemble::InstructionDisassembler::EmitInstruction
+  spvtools::DisassembleInstruction
+  Parser::parseInstruction
+  ```
+modified: '2024-06-27T00:03:46.520696Z'
+published: '2024-06-27T00:03:46.520119Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=69804
+affected:
+- package:
+    name: spirv-tools
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/spirv-tools
+  ranges:
+  - type: GIT
+    repo: https://github.com/KhronosGroup/SPIRV-Tools.git
+    events:
+    - introduced: c3178da8eac9bc7d1788e95f8d555918ba483c23
+  versions:
+  - v2024.3
+  - v2024.3.rc1
+  ecosystem_specific:
+    severity: MEDIUM
+schema_version: 1.6.0
