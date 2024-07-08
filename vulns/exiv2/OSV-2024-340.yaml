@@ -1,0 +1,38 @@
+id: OSV-2024-340
+summary: Heap-buffer-overflow in Exiv2::AsfVideo::GUIDTag::GUIDTag
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=68210
+
+  ```
+  Crash type: Heap-buffer-overflow READ 8
+  Crash state:
+  Exiv2::AsfVideo::GUIDTag::GUIDTag
+  Exiv2::AsfVideo::streamProperties
+  Exiv2::AsfVideo::decodeBlock
+  ```
+modified: '2024-04-30T00:01:53.406325Z'
+published: '2024-04-30T00:01:53.406015Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=68210
+affected:
+- package:
+    name: exiv2
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/exiv2
+  ranges:
+  - type: GIT
+    repo: https://github.com/Exiv2/exiv2
+    events:
+    - introduced: 14e26b5abdad3b725dd6902dabcab32c48813284
+  versions:
+  - nightly
+  - nightly-0.28.x
+  - v0.28.0
+  - v0.28.1
+  - v0.28.2
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: 2a03d8b630546f1f8e0bb4b8688e5ede630bc5c3:93f5acbbff7dacc66cfa02a56957c5746a7c107c
+schema_version: 1.6.0
