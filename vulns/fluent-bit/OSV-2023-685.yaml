@@ -10,7 +10,7 @@ details: |
   cmt_decode_prometheus_create
   cmetrics_decode_fuzz.c
   ```
-modified: '2024-07-09T14:20:40.572845Z'
+modified: '2024-07-10T14:23:35.125451Z'
 published: '2023-08-11T14:02:10.018940Z'
 references:
 - type: REPORT
@@ -47,6 +47,7 @@ affected:
   - v3.0.6
   - v3.0.7
   - v3.1.0
+  - v3.1.1
   ecosystem_specific:
     severity: HIGH
 schema_version: 1.6.0
