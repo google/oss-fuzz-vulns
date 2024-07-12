@@ -10,7 +10,7 @@ details: |
   flb_sched_destroy
   flb_config_exit
   ```
-modified: '2024-07-10T14:17:03.987926Z'
+modified: '2024-07-12T14:14:20.216306Z'
 published: '2023-06-26T14:01:01.876870Z'
 references:
 - type: REPORT
@@ -76,6 +76,7 @@ affected:
   - v3.0.7
   - v3.1.0
   - v3.1.1
+  - v3.1.2
   ecosystem_specific:
     severity: HIGH
 schema_version: 1.4.0
