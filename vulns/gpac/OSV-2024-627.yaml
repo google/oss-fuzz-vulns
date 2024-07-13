@@ -1,0 +1,33 @@
+id: OSV-2024-627
+summary: Heap-buffer-overflow in gf_hevc_parse_nalu_bs
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=70105
+
+  ```
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  gf_hevc_parse_nalu_bs
+  gf_inspect_dump_nalu_internal
+  inspect_process
+  ```
+modified: '2024-07-12T00:01:41.961272Z'
+published: '2024-07-12T00:01:41.960899Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=70105
+affected:
+- package:
+    name: gpac
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/gpac
+  ranges:
+  - type: GIT
+    repo: https://github.com/gpac/gpac
+    events:
+    - introduced: 21cf0d2d4a0d6e5d14ffaa8472c9157f1333d379
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: cf9017e7f44c1d0c9a4e520083aece0d3ab329f7:df8121066cf8fb25cc70adf7ca8b35bda82fe216
+  versions: []
+schema_version: 1.6.0
