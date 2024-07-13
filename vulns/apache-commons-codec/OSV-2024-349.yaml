@@ -10,7 +10,7 @@ details: |
   java.base/java.lang.StringBuilder.<init>
   org.apache.commons.codec.language.bm.Rule$Phoneme.<init>
   ```
-modified: '2024-04-30T00:03:33.577134Z'
+modified: '2024-07-13T14:17:34.237989Z'
 published: '2024-04-30T00:03:33.576785Z'
 references:
 - type: REPORT
@@ -28,6 +28,7 @@ affected:
   versions:
   - commons-codec-1.17.0-RC1
   - rel/commons-codec-1.17.0
+  - commons-codec-1.17.1-RC1
   ecosystem_specific:
     severity: LOW
   database_specific:
