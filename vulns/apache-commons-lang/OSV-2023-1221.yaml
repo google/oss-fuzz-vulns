@@ -10,7 +10,7 @@ details: |
   jaz.Zer.reportFindingIfEnabled
   jaz.Zer.readObject
   ```
-modified: '2023-11-26T13:02:48.996167Z'
+modified: '2024-07-14T14:05:55.066148Z'
 published: '2023-11-26T13:02:48.995906Z'
 references:
 - type: REPORT
@@ -25,7 +25,9 @@ affected:
     repo: https://github.com/apache/commons-lang
     events:
     - introduced: 7182f72061822cefade0a2169bc54ca51a1427e5
+  versions:
+  - commons-lang-3.15.0-RC1
+  - commons-lang-3.15.0-RC2
   ecosystem_specific:
     severity: HIGH
-  versions: []
 schema_version: 1.6.0
