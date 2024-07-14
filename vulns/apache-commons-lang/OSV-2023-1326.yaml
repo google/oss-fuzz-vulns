@@ -10,7 +10,7 @@ details: |
   java.base/java.lang.reflect.Array.newInstance
   java.base/java.io.ObjectInputStream.readArray
   ```
-modified: '2023-12-18T00:05:04.854569Z'
+modified: '2024-07-14T14:14:12.988867Z'
 published: '2023-12-18T00:05:04.854273Z'
 references:
 - type: REPORT
@@ -25,7 +25,9 @@ affected:
     repo: https://github.com/apache/commons-lang
     events:
     - introduced: 7182f72061822cefade0a2169bc54ca51a1427e5
+  versions:
+  - commons-lang-3.15.0-RC1
+  - commons-lang-3.15.0-RC2
   ecosystem_specific:
     severity: LOW
-  versions: []
 schema_version: 1.6.0
