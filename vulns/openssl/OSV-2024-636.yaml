@@ -1,0 +1,33 @@
+id: OSV-2024-636
+summary: Null-dereference READ in evp_mac_final
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=69236
+
+  ```
+  Crash type: Null-dereference READ
+  Crash state:
+  evp_mac_final
+  kbkdf_derive
+  do_evp_kdf
+  ```
+modified: '2024-07-13T00:04:18.446812Z'
+published: '2024-07-13T00:04:18.446520Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=69236
+affected:
+- package:
+    name: openssl
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/openssl
+  ranges:
+  - type: GIT
+    repo: https://github.com/openssl/openssl.git
+    events:
+    - introduced: f3b988dc29512d6575ff435e1ff7c1b66d97051e
+  ecosystem_specific:
+    severity: null
+  database_specific:
+    introduced_range: b9e084f139c53ce133e66aba2f523c680141c0e6:05faa4ffee7f20fcee129f77d153f2dcc609bdc8
+  versions: []
+schema_version: 1.6.0
