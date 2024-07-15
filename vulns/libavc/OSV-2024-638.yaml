@@ -1,0 +1,31 @@
+id: OSV-2024-638
+summary: Heap-buffer-overflow in ih264d_format_convert
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=68807
+
+  ```
+  Crash type: Heap-buffer-overflow WRITE {*}
+  Crash state:
+  ih264d_format_convert
+  ih264d_decode_picture_thread
+  ```
+modified: '2024-07-13T00:12:13.793761Z'
+published: '2024-07-13T00:12:13.793261Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=68807
+affected:
+- package:
+    name: libavc
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libavc
+  ranges:
+  - type: GIT
+    repo: https://github.com/ittiam-systems/libavc.git
+    events:
+    - introduced: 28727baf58aa7c8983769aff1ceecb3121a26ee6
+  versions:
+  - v1.4.0
+  ecosystem_specific:
+    severity: HIGH
+schema_version: 1.6.0
