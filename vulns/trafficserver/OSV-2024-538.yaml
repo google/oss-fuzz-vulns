@@ -10,7 +10,7 @@ details: |
   Http3SettingsFrame::Http3SettingsFrame
   Http3FrameFactory::create
   ```
-modified: '2024-06-07T14:07:35.983715Z'
+modified: '2024-07-16T14:22:07.747083Z'
 published: '2024-06-06T00:12:59.950768Z'
 references:
 - type: REPORT
@@ -26,9 +26,12 @@ affected:
     events:
     - introduced: 5d6f2f6c05582a0342e1034f9719df3715e9f679
     - introduced: 779f936789f627575f8fb4a0783104b3c95d37f9
+    - fixed: 19b332ecf0bb17b96ec6435b537a736e1bb1c243
+    - fixed: 8f29876b00227e33b8bcba27bf7d974458c26d93
   ecosystem_specific:
     severity: MEDIUM
   database_specific:
     introduced_range: 9012706b4d4566b03e2bc4f02fb2ff5c8a4048c1:1c37f7ab7efc9ab521360654cacf3aacc5fdddc0
+    fixed_range: cb6dd9f3ed12f7efc345734825edd312d2aa1072:19b332ecf0bb17b96ec6435b537a736e1bb1c243
   versions: []
 schema_version: 1.6.0
