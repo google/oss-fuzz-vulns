@@ -25,9 +25,11 @@ affected:
     repo: https://github.com/hathach/tinyusb.git
     events:
     - introduced: 56dbfe59d93975a6256f5bb00da68919b28e07cb
+    - fixed: bd15f65e81724d05493fe9e020daf9a2ff7d2865
   ecosystem_specific:
     severity: MEDIUM
   database_specific:
     introduced_range: 1c04d5992a020aefe16ffb2acce62d84d4899395:a435befcdeb6bbd40cf3ba342756f8d73f031957
+    fixed_range: a435befcdeb6bbd40cf3ba342756f8d73f031957:bd15f65e81724d05493fe9e020daf9a2ff7d2865
   versions: []
 schema_version: 1.6.0
