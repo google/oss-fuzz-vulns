@@ -25,9 +25,10 @@ affected:
     repo: https://github.com/KhronosGroup/SPIRV-Tools.git
     events:
     - introduced: c3178da8eac9bc7d1788e95f8d555918ba483c23
-  versions:
-  - v2024.3.rc1
-  - v2024.3
+    - fixed: 7bf2d0275e480852abfccc5ff9a4cabd388286b2
   ecosystem_specific:
     severity: MEDIUM
+  database_specific:
+    fixed_range: bc28ac7c195f59b14535edec8472d97fd32a91ad:7bf2d0275e480852abfccc5ff9a4cabd388286b2
+  versions: []
 schema_version: 1.6.0
