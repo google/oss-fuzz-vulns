@@ -10,7 +10,7 @@ details: |
   java.base/java.util.Objects.equals
   com.github.javaparser.Position.equals
   ```
-modified: '2024-06-24T14:05:50.266517Z'
+modified: '2024-07-16T14:19:14.406686Z'
 published: '2024-06-07T00:08:30.308579Z'
 references:
 - type: REPORT
@@ -25,6 +25,7 @@ affected:
     repo: https://github.com/javaparser/javaparser
     events:
     - introduced: c283f8dec8692fa3792342f0625f59da0855428f
+    - fixed: e52019b107f6c3a9fa1ed7ab856d45f39a5086dc
   versions:
   - javaparser-parent-3.26.0
   - javaparser-parent-3.26.1
@@ -33,4 +34,5 @@ affected:
     severity: LOW
   database_specific:
     introduced_range: 49b47a9391c7480b5abe799a78ae33c5fc3000ed:459a448ef8e8fca593741695720b00029ece1c2e
+    fixed_range: 4e02850027db2a0dbb2de1aa98662734c7bb9423:e52019b107f6c3a9fa1ed7ab856d45f39a5086dc
 schema_version: 1.6.0
