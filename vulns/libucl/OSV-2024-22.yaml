@@ -10,7 +10,7 @@ details: |
   kh_resize_ucl_hash_node
   kh_put_ucl_hash_node
   ```
-modified: '2024-04-21T14:20:53.975815Z'
+modified: '2024-07-16T04:35:26.847250Z'
 published: '2024-01-19T00:14:18.833531Z'
 references:
 - type: REPORT
@@ -25,6 +25,7 @@ affected:
     repo: https://github.com/vstakhov/libucl
     events:
     - introduced: 9cdb299d32091071bfa9634d32170f54bf710fb2
+    - fixed: 5c58d0d5b939daf6f0c389e15019319f138636c2
   versions:
   - 0.8.2
   - 0.9.0
@@ -32,4 +33,6 @@ affected:
   - 0.9.2
   ecosystem_specific:
     severity: HIGH
+  database_specific:
+    fixed_range: d6e62ca904286d4762607099a17efb2119404d06:5c58d0d5b939daf6f0c389e15019319f138636c2
 schema_version: 1.6.0
