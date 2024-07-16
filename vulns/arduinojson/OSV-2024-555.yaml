@@ -25,10 +25,11 @@ affected:
     repo: https://github.com/bblanchon/ArduinoJson.git
     events:
     - introduced: aec642be203b4526594319081ec9870a5313840c
-  versions:
-  - v7.1.0
+    - fixed: 208e7a33043784d4b9939fb236c84f56cd58e6f5
   ecosystem_specific:
     severity: HIGH
   database_specific:
     introduced_range: 5a60c55be74b377c850592b3387759d7261e57fd:5b88b2c1f6bd78af21fc2036f2357253b563accb
+    fixed_range: 45611924f33e4c00d2d0e0ee54df6d890599ebe9:208e7a33043784d4b9939fb236c84f56cd58e6f5
+  versions: []
 schema_version: 1.6.0
