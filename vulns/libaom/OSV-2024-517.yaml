@@ -10,7 +10,7 @@ details: |
   aom_reader_init
   av1_decode_tg_tiles_and_wrapup
   ```
-modified: '2024-06-12T14:27:19.661443Z'
+modified: '2024-07-16T14:24:59.011170Z'
 published: '2024-05-30T00:05:57.060200Z'
 references:
 - type: REPORT
@@ -25,19 +25,18 @@ affected:
     repo: https://aomedia.googlesource.com/aom
     events:
     - introduced: 8db7d7893078a12e89cfdae35b25da97a933ab0b
+    - fixed: 4e1a5d4d08a216d71ecee10c25736abb2ffc2cdc
   versions:
   - v3.8.2
   - v3.8.2-rc1
   - v3.9.0
   - v3.9.0-rc1
+  - v3.9.1
   - v3.9.1-rc1
   - v3.9.1-rc2
-  - v3.9.1
-  - v3.8.3
-  - v3.8.3-rc1
-  - v3.8.3-rc2
   ecosystem_specific:
     severity: null
   database_specific:
     introduced_range: 0414f4e9abe9e859a1a26c92e9c79af2da63bb0b:cae8fbe572bec3443b89d9be858ff0abb7020f1b
+    fixed_range: bdada5c710f882be00ad397da17733eeb4e81918:4e1a5d4d08a216d71ecee10c25736abb2ffc2cdc
 schema_version: 1.6.0
