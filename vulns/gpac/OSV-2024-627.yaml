@@ -25,9 +25,11 @@ affected:
     repo: https://github.com/gpac/gpac
     events:
     - introduced: 21cf0d2d4a0d6e5d14ffaa8472c9157f1333d379
+    - fixed: 2ea39f5e8561ebcb74304c55fc6071fbb3dc0a42
   ecosystem_specific:
     severity: MEDIUM
   database_specific:
     introduced_range: cf9017e7f44c1d0c9a4e520083aece0d3ab329f7:df8121066cf8fb25cc70adf7ca8b35bda82fe216
+    fixed_range: 1f91ecb145d0cff68fd069131c1ecd95e9ef39a2:2ea39f5e8561ebcb74304c55fc6071fbb3dc0a42
   versions: []
 schema_version: 1.6.0
