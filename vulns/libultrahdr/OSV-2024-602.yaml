@@ -25,7 +25,10 @@ affected:
     repo: https://github.com/google/libultrahdr.git
     events:
     - introduced: 6b5acee2fb863507515398442dbc9b5fd08eba87
+    - fixed: aad9408fa68ff6ea7f70834aa337c6945966eb16
   ecosystem_specific:
     severity: MEDIUM
+  database_specific:
+    fixed_range: e9932b399fc2a38ba4e12d428f9159db23303719:aad9408fa68ff6ea7f70834aa337c6945966eb16
   versions: []
 schema_version: 1.6.0
