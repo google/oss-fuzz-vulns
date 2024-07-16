@@ -24,9 +24,11 @@ affected:
     repo: https://github.com/openssl/openssl.git
     events:
     - introduced: f3b988dc29512d6575ff435e1ff7c1b66d97051e
+    - fixed: 861e1f450c808bdf675bbf0d3e17303a3f16d06c
   ecosystem_specific:
     severity: null
   database_specific:
     introduced_range: b9e084f139c53ce133e66aba2f523c680141c0e6:05faa4ffee7f20fcee129f77d153f2dcc609bdc8
+    fixed_range: 06da14737369e7c90899aed4bb21cce9a0910d29:861e1f450c808bdf675bbf0d3e17303a3f16d06c
   versions: []
 schema_version: 1.6.0
