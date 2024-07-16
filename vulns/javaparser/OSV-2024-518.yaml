@@ -25,12 +25,11 @@ affected:
     repo: https://github.com/javaparser/javaparser
     events:
     - introduced: a131800508b064dcf0643694f67b2b458e50b7b9
-  versions:
-  - javaparser-parent-3.26.0
-  - javaparser-parent-3.26.1
-  - v_snapshot_70ed981
+    - fixed: c52a57aa22bba3217dca2b659b5bf68614acf92d
   ecosystem_specific:
     severity: LOW
   database_specific:
     introduced_range: d7ac5027ff5ab0ce0d5010f8c61033068c654d5b:678aaa1f5ace84e95a9a29f9bc62b4ea54199cd4
+    fixed_range: 4a805c6e3d9d42652ac894b27ad72fa6c82019e5:c52a57aa22bba3217dca2b659b5bf68614acf92d
+  versions: []
 schema_version: 1.6.0
