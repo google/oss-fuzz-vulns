@@ -25,9 +25,11 @@ affected:
     repo: https://github.com/HDFGroup/hdf5
     events:
     - introduced: c2099d0e7008478e44f1b3e1f90f261e546ffd49
+    - fixed: 850d6c8f061736529e9647c7f39516dfdf1f5f52
   ecosystem_specific:
     severity: MEDIUM
   database_specific:
     introduced_range: 9ad5f7e3a9f17368afc60143e39daf0d101742d7:18321dee40b21e19c95bf0ef2f61e3ec71233fe9
+    fixed_range: 6bc6fb641ff4d0a4eec8885a2de016e74db73be4:850d6c8f061736529e9647c7f39516dfdf1f5f52
   versions: []
 schema_version: 1.6.0
