@@ -1,0 +1,34 @@
+id: OSV-2024-371
+summary: UNKNOWN READ in jv_array_set
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=68056
+
+  ```
+  Crash type: UNKNOWN READ
+  Crash state:
+  jv_array_set
+  jv_set
+  jv_setpath
+  ```
+modified: '2024-04-30T00:08:27.982392Z'
+published: '2024-04-30T00:08:27.982063Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=68056
+affected:
+- package:
+    name: jq
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/jq
+  ranges:
+  - type: GIT
+    repo: https://github.com/jqlang/jq
+    events:
+    - introduced: 13353515bd3aedf84c6e6ebfb726563ae84db778
+  versions:
+  - jq-1.7.1
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: 98a206964d59143c6ed9189b91cdb34af1ae5071:bfb7fd570f521ef832fe1c3bca0e05abd398284c
+schema_version: 1.6.0
