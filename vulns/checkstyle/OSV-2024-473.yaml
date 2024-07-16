@@ -10,7 +10,7 @@ details: |
   java.base/sun.nio.cs.StreamEncoder.implWrite
   java.base/sun.nio.cs.StreamEncoder.write
   ```
-modified: '2024-07-01T14:16:40.189132Z'
+modified: '2024-07-16T14:20:15.561933Z'
 published: '2024-05-15T00:13:12.880068Z'
 references:
 - type: REPORT
@@ -25,9 +25,11 @@ affected:
     repo: https://github.com/checkstyle/checkstyle
     events:
     - introduced: c34d756b7e798c1b09112523ee9b9102cb3d6440
+    - fixed: d335962fa743408b6823236cd5c352eb7ea7965a
   versions:
   - checkstyle-10.17.0
-  - checkstyle-10.18.0
   ecosystem_specific:
     severity: LOW
+  database_specific:
+    fixed_range: c5a873b11bd1797971f30dae955be3fa8dd460eb:d335962fa743408b6823236cd5c352eb7ea7965a
 schema_version: 1.6.0
