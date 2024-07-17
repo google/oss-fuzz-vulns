@@ -1,0 +1,31 @@
+id: OSV-2024-641
+summary: Security exception in com.puppycrawl.tools.checkstyle.grammar.java.JavaLanguageParser.expr
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=70141
+
+  ```
+  Crash type: Security exception
+  Crash state:
+  com.puppycrawl.tools.checkstyle.grammar.java.JavaLanguageParser.expr
+  java.base/java.nio.HeapCharBuffer.<init>
+  java.base/java.nio.CharBuffer.wrap
+  ```
+modified: '2024-07-14T00:06:37.035057Z'
+published: '2024-07-14T00:06:37.034414Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=70141
+affected:
+- package:
+    name: checkstyle
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/checkstyle
+  ranges:
+  - type: GIT
+    repo: https://github.com/checkstyle/checkstyle
+    events:
+    - introduced: cf701591feb2e7b7111956202fd85dc6bee982a5
+  ecosystem_specific:
+    severity: LOW
+  versions: []
+schema_version: 1.6.0
