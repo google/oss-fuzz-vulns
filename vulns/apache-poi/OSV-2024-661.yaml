@@ -1,0 +1,31 @@
+id: OSV-2024-661
+summary: Security exception in java.base/java.util.ArrayList.<init>
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=66137
+
+  ```
+  Crash type: Security exception
+  Crash state:
+  java.base/java.util.ArrayList.<init>
+  org.apache.poi.xssf.eventusermodel.ReadOnlySharedStringsTable.startElement
+  java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.startEleme
+  ```
+modified: '2024-07-18T00:05:57.666227Z'
+published: '2024-07-18T00:05:57.665844Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=66137
+affected:
+- package:
+    name: apache-poi
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/apache-poi
+  ranges:
+  - type: GIT
+    repo: https://github.com/apache/poi.git
+    events:
+    - introduced: c488cae3f3536253d0bd2c7580f08193dd70b2da
+  ecosystem_specific:
+    severity: LOW
+  versions: []
+schema_version: 1.6.0
