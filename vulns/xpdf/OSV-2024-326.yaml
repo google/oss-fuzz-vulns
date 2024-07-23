@@ -1,0 +1,33 @@
+id: OSV-2024-326
+summary: Heap-buffer-overflow in GfxFont::readFontDescriptor
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=68193
+
+  ```
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  GfxFont::readFontDescriptor
+  Gfx8BitFont::Gfx8BitFont
+  GfxFont::makeFont
+  ```
+modified: '2024-04-29T05:42:32.274141Z'
+published: '2024-04-29T05:42:32.273970Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=68193
+affected:
+- package:
+    name: xpdf
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/xpdf
+  ranges:
+  - type: GIT
+    repo: https://gitlab.freedesktop.org/freetype/freetype
+    events:
+    - introduced: dbdcd758895647028bbc56baf862a1cff07409ff
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: db83e9c0ec8b4ec8d7fa3bb3383d5160d1cfa719:9a2d6d97b2d8a5d22d02948b783df12b764afa2d
+  versions: []
+schema_version: 1.6.0
