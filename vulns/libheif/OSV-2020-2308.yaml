@@ -10,7 +10,7 @@ details: |
   derive_temporal_luma_vector_prediction
   fill_luma_motion_vector_predictors
   ```
-modified: '2024-07-10T14:11:25.019441Z'
+modified: '2024-07-23T14:05:31.535926Z'
 published: '2021-02-10T00:00:17.357392Z'
 references:
 - type: REPORT
@@ -50,5 +50,6 @@ affected:
   - v1.17.6
   - v1.18.0-rc1
   - v1.18.0
+  - v1.18.1
   ecosystem_specific:
     severity: MEDIUM
