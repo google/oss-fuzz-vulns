@@ -1,0 +1,31 @@
+id: OSV-2024-668
+summary: Security exception in jflex.core.NFA.insertNFA
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=70514
+
+  ```
+  Crash type: Security exception
+  Crash state:
+  jflex.core.NFA.insertNFA
+  java.base/java.lang.ClassLoader.defineClass1
+  java.base/java.lang.ClassLoader.defineClass
+  ```
+modified: '2024-07-20T00:01:48.807879Z'
+published: '2024-07-20T00:01:48.807354Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=70514
+affected:
+- package:
+    name: jflex
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/jflex
+  ranges:
+  - type: GIT
+    repo: https://github.com/jflex-de/jflex
+    events:
+    - introduced: 4c942c5ad702199be7bea2876a01c84ef6c1fd23
+  ecosystem_specific:
+    severity: LOW
+  versions: []
+schema_version: 1.6.0
