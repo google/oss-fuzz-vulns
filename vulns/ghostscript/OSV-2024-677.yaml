@@ -1,0 +1,33 @@
+id: OSV-2024-677
+summary: Segv on unknown address in gs_gc_reclaim
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=69038
+
+  ```
+  Crash type: Segv on unknown address
+  Crash state:
+  gs_gc_reclaim
+  ireclaim
+  interp_reclaim
+  ```
+modified: '2024-07-25T00:06:43.763256Z'
+published: '2024-07-25T00:06:43.762625Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=69038
+affected:
+- package:
+    name: ghostscript
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/ghostscript
+  ranges:
+  - type: GIT
+    repo: git://git.ghostscript.com/ghostpdl.git
+    events:
+    - introduced: bf0048d271aa6a4d9898997ada84cf89c197e791
+  ecosystem_specific:
+    severity: null
+  database_specific:
+    introduced_range: f6dc854531c7f591e8f6f60dac7a312c8acb2e6b:4c8ded763017611bb9479a027dc2cc1ae5fe01cb
+  versions: []
+schema_version: 1.6.0
