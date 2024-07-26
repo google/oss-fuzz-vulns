@@ -1,0 +1,33 @@
+id: OSV-2024-322
+summary: Container-overflow in strtol
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=68322
+
+  ```
+  Crash type: Container-overflow READ 3
+  Crash state:
+  strtol
+  Pistache::Http::Private::BodyStep::Chunk::parse
+  Pistache::Http::Private::BodyStep::parseTransferEncoding
+  ```
+modified: '2024-04-29T05:41:35.505031Z'
+published: '2024-04-29T05:41:35.504634Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=68322
+affected:
+- package:
+    name: pistache
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/pistache
+  ranges:
+  - type: GIT
+    repo: https://github.com/pistacheio/pistache
+    events:
+    - introduced: 5dba79ab6856c74580c4fca2229c781e0f3ebdaa
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: 2359c2d4a79920cfac42d07b6e0ddbf68377da96:769c0c3ab7c347f2d4992abb9e1e6475b4832c25
+  versions: []
+schema_version: 1.6.0
