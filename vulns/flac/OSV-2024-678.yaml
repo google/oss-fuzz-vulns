@@ -1,0 +1,32 @@
+id: OSV-2024-678
+summary: Use-of-uninitialized-value in FLAC__replaygain_synthesis__apply_gain
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=70482
+
+  ```
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  FLAC__replaygain_synthesis__apply_gain
+  write_callback
+  read_frame_
+  ```
+modified: '2024-07-25T00:09:08.389840Z'
+published: '2024-07-25T00:09:08.389428Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=70482
+affected:
+- package:
+    name: flac
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/flac
+  ranges:
+  - type: GIT
+    repo: https://github.com/xiph/flac.git
+    events:
+    - introduced: 08f8af084593fc5667cadbb1883b6e5004908917
+  versions:
+  - 1.4.3
+  ecosystem_specific:
+    severity: MEDIUM
+schema_version: 1.6.0
