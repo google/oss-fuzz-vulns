@@ -1,0 +1,53 @@
+id: OSV-2024-680
+summary: Security exception in com.github.javaparser.GeneratedJavaParser.Expression
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=69460
+
+  ```
+  Crash type: Security exception
+  Crash state:
+  com.github.javaparser.GeneratedJavaParser.Expression
+  java.base/java.lang.StringUTF16.compress
+  java.base/java.lang.String.<init>
+  ```
+modified: '2024-07-26T00:06:29.761859Z'
+published: '2024-07-26T00:06:29.761307Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=69460
+affected:
+- package:
+    name: javaparser
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/javaparser
+  ranges:
+  - type: GIT
+    repo: https://github.com/javaparser/javaparser
+    events:
+    - introduced: 2832209dbaaec2a3684b05b70cbafc52cb294d71
+  versions:
+  - javaparser-parent-3.24.10
+  - javaparser-parent-3.24.7
+  - javaparser-parent-3.24.8
+  - javaparser-parent-3.24.9
+  - javaparser-parent-3.25.0
+  - javaparser-parent-3.25.1
+  - javaparser-parent-3.25.10
+  - javaparser-parent-3.25.2
+  - javaparser-parent-3.25.3
+  - javaparser-parent-3.25.4
+  - javaparser-parent-3.25.5
+  - javaparser-parent-3.25.6
+  - javaparser-parent-3.25.7
+  - javaparser-parent-3.25.8
+  - javaparser-parent-3.25.9
+  - javaparser-parent-3.26.0
+  - javaparser-parent-3.26.1
+  - v_snapshot_56be443
+  - v_snapshot_70ed981
+  - v_snapshot_e2590f3
+  ecosystem_specific:
+    severity: LOW
+  database_specific:
+    introduced_range: 2f182e4e13ba755ad38a5d4fbdeef62b32f2164d:6356c4bac6ff5e4232d1388df3c5ce05bd4e6dfb
+schema_version: 1.6.0
