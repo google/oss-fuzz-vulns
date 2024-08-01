@@ -10,7 +10,7 @@ details: |
   wabt::BinaryReaderObjdump::EndInitExpr
   wabt::BinaryReaderObjdump::EndGlobalInitExpr
   ```
-modified: '2024-05-15T14:18:18.902762Z'
+modified: '2024-08-01T14:21:06.591939Z'
 published: '2024-05-01T00:11:38.602555Z'
 references:
 - type: REPORT
@@ -32,6 +32,7 @@ affected:
   - 1.0.33
   - 1.0.34
   - 1.0.35
+  - 1.0.36
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.6.0
