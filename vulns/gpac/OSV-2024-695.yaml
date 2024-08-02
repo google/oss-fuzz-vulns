@@ -1,0 +1,33 @@
+id: OSV-2024-695
+summary: Stack-buffer-overflow in gf_vvc_parse_nalu_bs
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=70549
+
+  ```
+  Crash type: Stack-buffer-overflow WRITE 4
+  Crash state:
+  gf_vvc_parse_nalu_bs
+  gf_inspect_dump_nalu_internal
+  inspect_process
+  ```
+modified: '2024-07-31T00:02:35.218257Z'
+published: '2024-07-31T00:02:35.217594Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=70549
+affected:
+- package:
+    name: gpac
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/gpac
+  ranges:
+  - type: GIT
+    repo: https://github.com/gpac/gpac
+    events:
+    - introduced: 99a7952e91938f8c0d16f2235b912de1fed6c1f8
+  ecosystem_specific:
+    severity: HIGH
+  database_specific:
+    introduced_range: df8121066cf8fb25cc70adf7ca8b35bda82fe216:a012d226ec8de965159f8477e8929bb5d2f57c31
+  versions: []
+schema_version: 1.6.0
