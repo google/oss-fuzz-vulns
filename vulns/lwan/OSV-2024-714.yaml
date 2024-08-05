@@ -1,0 +1,32 @@
+id: OSV-2024-714
+summary: Segv on unknown address in lwan_request_get_cookie
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=69572
+
+  ```
+  Crash type: Segv on unknown address
+  Crash state:
+  lwan_request_get_cookie
+  fuzz_parse_http_request
+  ```
+modified: '2024-08-04T00:01:49.853962Z'
+published: '2024-08-04T00:01:49.853424Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=69572
+affected:
+- package:
+    name: lwan
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/lwan
+  ranges:
+  - type: GIT
+    repo: https://github.com/lpereira/lwan.git
+    events:
+    - introduced: 29a64cecc78d96b9bf164c4bc8fd4da17acf6378
+  ecosystem_specific:
+    severity: null
+  database_specific:
+    introduced_range: 7c8900696e90e41cd45f944c988ff8dfbd481a74:2fbd55d5fc0fcefd2fa6ac748c9e5ce50ab9f424
+  versions: []
+schema_version: 1.6.0
