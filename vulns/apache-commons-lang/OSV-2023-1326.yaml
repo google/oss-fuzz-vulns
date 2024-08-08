@@ -10,7 +10,7 @@ details: |
   java.base/java.lang.reflect.Array.newInstance
   java.base/java.io.ObjectInputStream.readArray
   ```
-modified: '2024-08-01T14:17:11.334649Z'
+modified: '2024-08-08T14:13:13.331605Z'
 published: '2023-12-18T00:05:04.854273Z'
 references:
 - type: REPORT
@@ -30,6 +30,7 @@ affected:
   - commons-lang-3.15.0-RC2
   - rel/commons-lang-3.15.0
   - commons-lang-3.16.0-RC1
+  - rel/commons-lang-3.16.0
   ecosystem_specific:
     severity: LOW
 schema_version: 1.6.0
