@@ -10,7 +10,7 @@ details: |
   jaz.Zer.reportFindingIfEnabled
   jaz.Zer.readObject
   ```
-modified: '2024-08-01T14:17:09.612613Z'
+modified: '2024-08-08T14:13:04.073503Z'
 published: '2023-11-26T13:02:48.995906Z'
 references:
 - type: REPORT
@@ -30,6 +30,7 @@ affected:
   - commons-lang-3.15.0-RC2
   - rel/commons-lang-3.15.0
   - commons-lang-3.16.0-RC1
+  - rel/commons-lang-3.16.0
   ecosystem_specific:
     severity: HIGH
 schema_version: 1.6.0
