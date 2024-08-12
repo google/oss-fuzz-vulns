@@ -10,7 +10,7 @@ details: |
   Gfx8BitFont::Gfx8BitFont
   GfxFont::makeFont
   ```
-modified: '2024-04-29T05:42:32.274141Z'
+modified: '2024-08-12T14:13:53.709919Z'
 published: '2024-04-29T05:42:32.273970Z'
 references:
 - type: REPORT
@@ -25,9 +25,10 @@ affected:
     repo: https://gitlab.freedesktop.org/freetype/freetype
     events:
     - introduced: dbdcd758895647028bbc56baf862a1cff07409ff
+  versions:
+  - VER-2-13-3
   ecosystem_specific:
     severity: MEDIUM
   database_specific:
     introduced_range: db83e9c0ec8b4ec8d7fa3bb3383d5160d1cfa719:9a2d6d97b2d8a5d22d02948b783df12b764afa2d
-  versions: []
 schema_version: 1.6.0
