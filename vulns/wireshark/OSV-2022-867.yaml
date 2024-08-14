@@ -10,7 +10,7 @@ details: |
   dissect_form_urlencoded
   call_dissector_work
   ```
-modified: '2024-08-01T15:11:05.834632Z'
+modified: '2024-08-14T16:46:56.953219Z'
 published: '2022-09-09T00:01:54.157712Z'
 references:
 - type: REPORT
@@ -60,6 +60,8 @@ affected:
   - v4.3.1rc0
   - v4.3.1
   - v4.3.2rc0
+  - v4.4.0rc0
+  - v4.5.0rc0
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.2.0
