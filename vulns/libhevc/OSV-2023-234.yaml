@@ -10,7 +10,7 @@ details: |
   osal_func
   posix_memalign
   ```
-modified: '2024-06-07T14:18:52.647922Z'
+modified: '2024-08-14T14:12:45.626750Z'
 published: '2023-03-26T13:00:12.135289Z'
 references:
 - type: REPORT
@@ -32,6 +32,7 @@ affected:
   - v1.4.0
   - v1.5.0
   - v1.5.1
+  - v1.6.0
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.4.0
