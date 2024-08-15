@@ -10,7 +10,7 @@ details: |
   boost::read_graphviz_detail::parser::parse_endpoint_rest
   boost::read_graphviz_detail::parser::parse_stmt
   ```
-modified: '2024-07-27T14:17:41.045733Z'
+modified: '2024-08-15T14:17:53.452644Z'
 published: '2024-02-16T00:05:47.896843Z'
 references:
 - type: REPORT
@@ -30,6 +30,7 @@ affected:
   - boost-1.85.0
   - boost-1.85.0.beta1
   - boost-1.86.0.beta1
+  - boost-1.86.0
   ecosystem_specific:
     severity: LOW
   database_specific:
