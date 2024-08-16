@@ -10,7 +10,7 @@ details: |
   fuzz_both.c
   pcapint_filter_with_aux_data
   ```
-modified: '2024-08-16T00:02:39.186093Z'
+modified: '2024-08-16T14:22:55.925533Z'
 published: '2024-08-16T00:02:39.185747Z'
 references:
 - type: REPORT
@@ -25,6 +25,7 @@ affected:
     repo: https://github.com/the-tcpdump-group/libpcap.git
     events:
     - introduced: c2c7df02ed999522382b95342d6c157f9d1d21a3
+    - introduced: 003bf4b9b32d33e9e52a8b7f6762f3ba83986411
   ecosystem_specific:
     severity: MEDIUM
   database_specific:
