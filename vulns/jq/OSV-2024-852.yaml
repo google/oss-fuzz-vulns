@@ -1,0 +1,31 @@
+id: OSV-2024-852
+summary: UNKNOWN READ in jvp_object_free
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=68618
+
+  ```
+  Crash type: UNKNOWN READ
+  Crash state:
+  jvp_object_free
+  jv_equal
+  jv_equal
+  ```
+modified: '2024-08-16T00:04:43.642269Z'
+published: '2024-08-16T00:04:43.641868Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=68618
+affected:
+- package:
+    name: jq
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/jq
+  ranges:
+  - type: GIT
+    repo: https://github.com/jqlang/jq
+    events:
+    - introduced: 6ce6e7c71355a0b6006e9e3371364f6945da5a29
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.6.0

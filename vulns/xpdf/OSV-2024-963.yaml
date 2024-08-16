@@ -1,0 +1,34 @@
+id: OSV-2024-963
+summary: Heap-buffer-overflow in GfxTilingPattern::scanXObjectForBlendMode
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=68412
+
+  ```
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  GfxTilingPattern::scanXObjectForBlendMode
+  GfxTilingPattern::scanSoftMaskForBlendMode
+  GfxTilingPattern::scanExtGStateForBlendMode
+  ```
+modified: '2024-08-16T00:14:14.316160Z'
+published: '2024-08-16T00:14:14.315705Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=68412
+affected:
+- package:
+    name: xpdf
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/xpdf
+  ranges:
+  - type: GIT
+    repo: https://gitlab.freedesktop.org/freetype/freetype
+    events:
+    - introduced: dbdcd758895647028bbc56baf862a1cff07409ff
+  versions:
+  - VER-2-13-3
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: db83e9c0ec8b4ec8d7fa3bb3383d5160d1cfa719:9a2d6d97b2d8a5d22d02948b783df12b764afa2d
+schema_version: 1.6.0

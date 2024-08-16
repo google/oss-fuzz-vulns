@@ -1,0 +1,34 @@
+id: OSV-2024-830
+summary: UNKNOWN READ in ShadingImage::generateAxialBitmap
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=68375
+
+  ```
+  Crash type: UNKNOWN READ
+  Crash state:
+  ShadingImage::generateAxialBitmap
+  ShadingImage::generateBitmap
+  SplashOutputDev::shadedFill
+  ```
+modified: '2024-08-16T00:03:09.951596Z'
+published: '2024-08-16T00:03:09.951294Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=68375
+affected:
+- package:
+    name: xpdf
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/xpdf
+  ranges:
+  - type: GIT
+    repo: https://gitlab.freedesktop.org/freetype/freetype
+    events:
+    - introduced: dbdcd758895647028bbc56baf862a1cff07409ff
+  versions:
+  - VER-2-13-3
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: db83e9c0ec8b4ec8d7fa3bb3383d5160d1cfa719:9a2d6d97b2d8a5d22d02948b783df12b764afa2d
+schema_version: 1.6.0

@@ -1,0 +1,32 @@
+id: OSV-2024-793
+summary: Heap-buffer-overflow in H5HL__fl_deserialize
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=68740
+
+  ```
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  H5HL__fl_deserialize
+  H5HL__cache_datablock_deserialize
+  H5C_protect
+  ```
+modified: '2024-08-16T00:01:45.237667Z'
+published: '2024-08-16T00:01:45.237305Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=68740
+affected:
+- package:
+    name: matio
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/matio
+  ranges:
+  - type: GIT
+    repo: https://github.com/tbeu/matio.git
+    events:
+    - introduced: 29e986fb1cfe09dacdbe386f441882025f652377
+  versions:
+  - v1.5.27
+  ecosystem_specific:
+    severity: MEDIUM
+schema_version: 1.6.0

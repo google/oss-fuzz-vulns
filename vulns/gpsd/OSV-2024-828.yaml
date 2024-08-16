@@ -1,0 +1,33 @@
+id: OSV-2024-828
+summary: Use-of-uninitialized-value in packet_parse
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=71120
+
+  ```
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  packet_parse
+  FuzzPacket.c
+  ```
+modified: '2024-08-16T00:03:08.665719Z'
+published: '2024-08-16T00:03:08.665359Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=71120
+affected:
+- package:
+    name: gpsd
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/gpsd
+  ranges:
+  - type: GIT
+    repo: https://gitlab.com/gpsd/gpsd
+    events:
+    - introduced: 52a9fc9a933b9e084c3eacf759b7f1e64daf7310
+    - fixed: b43eacb14fdc828e7b4dc22c64bfbb671fc5be12
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    fixed_range: 52a9fc9a933b9e084c3eacf759b7f1e64daf7310:b43eacb14fdc828e7b4dc22c64bfbb671fc5be12
+  versions: []
+schema_version: 1.6.0

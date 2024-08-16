@@ -1,0 +1,34 @@
+id: OSV-2024-867
+summary: Use-of-uninitialized-value in std::__1::ostreambuf_iterator<char, std::__1::char_traits<char>>
+  std::__1::__pad
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=68801
+
+  ```
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  std::__1::ostreambuf_iterator<char, std::__1::char_traits<char>> std::__1::__pad
+  std::__1::basic_ostream<char, std::__1::char_traits<char>>& std::__1::__put_char
+  ostream
+  ```
+modified: '2024-08-16T00:05:38.614817Z'
+published: '2024-08-16T00:05:38.614485Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=68801
+affected:
+- package:
+    name: pcapplusplus
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/pcapplusplus
+  ranges:
+  - type: GIT
+    repo: https://github.com/seladb/PcapPlusPlus
+    events:
+    - introduced: 56668faab242e53b1282b3405eaa4bb51e474bee
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: 805d75ca1f33ff33951d5082e3d3535c7a090808:4d48615c9bfb2ef0c61d50e1e1dd3e3d63a82be0
+  versions: []
+schema_version: 1.6.0

@@ -1,0 +1,58 @@
+id: OSV-2024-838
+summary: Bad-cast to RDKit::AtomRDKit::ROMol::initFromOther
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=68998
+
+  ```
+  Crash type: Bad-cast
+  Crash state:
+  Bad-cast to RDKit::AtomRDKit::ROMol::initFromOther
+  RDKit::ROMol::ROMol
+  RDKit::RecursiveStructureQuery::copy
+  ```
+modified: '2024-08-16T00:03:32.030212Z'
+published: '2024-08-16T00:03:32.029853Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=68998
+affected:
+- package:
+    name: rdkit
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/rdkit
+  ranges:
+  - type: GIT
+    repo: https://github.com/rdkit/rdkit.git
+    events:
+    - introduced: 0bdb247934ada336f060a13b8868b8720cd2fe9e
+    - introduced: 44e3e0487986f7557b75cc679c0d82b2009c77e0
+  versions:
+  - Release_2022_03_3
+  - Release_2022_03_4
+  - Release_2022_03_5
+  - Release_2022_09_1
+  - Release_2022_09_1b1
+  - Release_2022_09_2
+  - Release_2022_09_3
+  - Release_2022_09_4
+  - Release_2022_09_5
+  - Release_2023_03_1
+  - Release_2023_03_1b1
+  - Release_2023_03_2
+  - Release_2023_03_3
+  - Release_2023_09_1
+  - Release_2023_09_1b1
+  - Release_2023_09_2
+  - Release_2023_09_3
+  - Release_2023_09_4
+  - Release_2023_09_5
+  - Release_2023_09_6
+  - Release_2024_03_1
+  - Release_2024_03_1b1
+  - Release_2024_03_2
+  - Release_2024_03_3
+  - Release_2024_03_4
+  - Release_2024_03_5
+  ecosystem_specific:
+    severity: HIGH
+schema_version: 1.6.0

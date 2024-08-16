@@ -1,0 +1,34 @@
+id: OSV-2024-951
+summary: Index-out-of-bounds in hevc_ref_pic_lists_modification
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=71054
+
+  ```
+  Crash type: Index-out-of-bounds
+  Crash state:
+  hevc_ref_pic_lists_modification
+  gf_hevc_parse_nalu_bs
+  gf_inspect_dump_nalu_internal
+  ```
+modified: '2024-08-16T00:13:38.322849Z'
+published: '2024-08-16T00:13:38.322516Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=71054
+affected:
+- package:
+    name: gpac
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/gpac
+  ranges:
+  - type: GIT
+    repo: https://github.com/gpac/gpac
+    events:
+    - introduced: 21cf0d2d4a0d6e5d14ffaa8472c9157f1333d379
+    - fixed: abd582fd0b1722dbc8c5c2a6d2ab28224a8334a6
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: cf9017e7f44c1d0c9a4e520083aece0d3ab329f7:df8121066cf8fb25cc70adf7ca8b35bda82fe216
+  versions: []
+schema_version: 1.6.0
