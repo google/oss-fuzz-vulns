@@ -1,0 +1,34 @@
+id: OSV-2024-939
+summary: Security exception in org.apache.poi.util.LZWDecompresser.decompress
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=70377
+
+  ```
+  Crash type: Security exception
+  Crash state:
+  org.apache.poi.util.LZWDecompresser.decompress
+  org.apache.poi.util.LZWDecompresser.decompress
+  org.apache.poi.hdgf.streams.CompressedStreamStore.decompress
+  ```
+modified: '2024-08-16T00:13:05.089105Z'
+published: '2024-08-16T00:13:05.088720Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=70377
+affected:
+- package:
+    name: apache-poi
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/apache-poi
+  ranges:
+  - type: GIT
+    repo: https://github.com/apache/poi.git
+    events:
+    - introduced: ce919673c4e935e8c756c91938f973d5c9a23ddb
+    - fixed: c2945d86f92f668a632acbf20f834e74e2990753
+  ecosystem_specific:
+    severity: LOW
+  database_specific:
+    introduced_range: 857b96b2d3ec547fe2a4bc707ed6eb97bcabd2f8:99117381e59d9a7f2abe27784009358c672c0ae3
+  versions: []
+schema_version: 1.6.0
