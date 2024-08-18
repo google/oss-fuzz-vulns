@@ -10,7 +10,7 @@ details: |
   Conversion<
   Conversion<
   ```
-modified: '2024-08-18T00:08:22.168440Z'
+modified: '2024-08-18T14:21:16.718581Z'
 published: '2024-08-18T00:08:22.168066Z'
 references:
 - type: REPORT
@@ -26,6 +26,8 @@ affected:
     events:
     - introduced: dee9177b2b648697fa7df22f84d8b8db77c69606
     - fixed: 4605fef51a235baf940ea56db71c60e0389fe01e
+    - fixed: 17804069551439ef292c6044920f446e97eb7004
+    - introduced: e8ce8f25aa5683d37dc44510c99fc776ac9b27cb
   versions:
   - v5.3.5
   - v5.3.6
@@ -34,4 +36,5 @@ affected:
     severity: HIGH
   database_specific:
     introduced_range: b09ec8f572ac39d613dbf704cac5f6e77a2f0634:29e835f7e33d8c7852ba68a26ab84197e1baff0f
+    fixed_range: eddf7e235cd722d73cb9cba82e30e4442f2a6f4e:17804069551439ef292c6044920f446e97eb7004
 schema_version: 1.6.0
