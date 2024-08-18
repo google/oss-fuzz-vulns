@@ -1,0 +1,37 @@
+id: OSV-2024-1034
+summary: Heap-buffer-overflow in simdutf::haswell::implementation::convert_utf8_to_utf16be
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=71218
+
+  ```
+  Crash type: Heap-buffer-overflow WRITE {*}
+  Crash state:
+  simdutf::haswell::implementation::convert_utf8_to_utf16be
+  Conversion<
+  Conversion<
+  ```
+modified: '2024-08-18T00:08:22.168440Z'
+published: '2024-08-18T00:08:22.168066Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=71218
+affected:
+- package:
+    name: simdutf
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/simdutf
+  ranges:
+  - type: GIT
+    repo: https://github.com/simdutf/simdutf
+    events:
+    - introduced: dee9177b2b648697fa7df22f84d8b8db77c69606
+    - fixed: 4605fef51a235baf940ea56db71c60e0389fe01e
+  versions:
+  - v5.3.5
+  - v5.3.6
+  - v5.3.7
+  ecosystem_specific:
+    severity: HIGH
+  database_specific:
+    introduced_range: b09ec8f572ac39d613dbf704cac5f6e77a2f0634:29e835f7e33d8c7852ba68a26ab84197e1baff0f
+schema_version: 1.6.0

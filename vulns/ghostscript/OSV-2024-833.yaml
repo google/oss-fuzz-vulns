@@ -1,0 +1,34 @@
+id: OSV-2024-833
+summary: UNKNOWN READ in chunk_free_object
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=70998
+
+  ```
+  Crash type: UNKNOWN READ
+  Crash state:
+  chunk_free_object
+  sclose
+  sfclose
+  ```
+modified: '2024-08-16T00:03:18.896644Z'
+published: '2024-08-16T00:03:18.896326Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=70998
+affected:
+- package:
+    name: ghostscript
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/ghostscript
+  ranges:
+  - type: GIT
+    repo: git://git.ghostscript.com/ghostpdl.git
+    events:
+    - introduced: 15276f8a4a07522923475a5a19c470d779ff907c
+    - fixed: 87db48b2fc8297a4537907c425a1eda19239888c
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: d25bb0ca11d9cc0a0ade0545cae6e414b07287bd:f9e46268eaed2933db32b97205387252c4d200ca
+  versions: []
+schema_version: 1.6.0
