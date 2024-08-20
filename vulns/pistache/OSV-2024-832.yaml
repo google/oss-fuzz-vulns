@@ -1,0 +1,33 @@
+id: OSV-2024-832
+summary: UNKNOWN READ in Pistache::Http::Header::Expect::parseRaw
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=69151
+
+  ```
+  Crash type: UNKNOWN READ
+  Crash state:
+  Pistache::Http::Header::Expect::parseRaw
+  Pistache::Http::Private::HeadersStep::apply
+  Pistache::Http::Private::ParserBase::parse
+  ```
+modified: '2024-08-16T00:03:13.834599Z'
+published: '2024-08-16T00:03:13.834235Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=69151
+affected:
+- package:
+    name: pistache
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/pistache
+  ranges:
+  - type: GIT
+    repo: https://github.com/pistacheio/pistache
+    events:
+    - introduced: 5dba79ab6856c74580c4fca2229c781e0f3ebdaa
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: 2359c2d4a79920cfac42d07b6e0ddbf68377da96:769c0c3ab7c347f2d4992abb9e1e6475b4832c25
+  versions: []
+schema_version: 1.6.0
