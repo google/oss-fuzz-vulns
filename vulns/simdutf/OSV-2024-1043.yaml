@@ -1,0 +1,40 @@
+id: OSV-2024-1043
+summary: Heap-buffer-overflow in simdutf::haswell::implementation::convert_utf8_to_latin1
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=71307
+
+  ```
+  Crash type: Heap-buffer-overflow WRITE {*}
+  Crash state:
+  simdutf::haswell::implementation::convert_utf8_to_latin1
+  Conversion<
+  Conversion<
+  ```
+modified: '2024-08-21T00:14:12.264098Z'
+published: '2024-08-21T00:14:12.263763Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=71307
+affected:
+- package:
+    name: simdutf
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/simdutf
+  ranges:
+  - type: GIT
+    repo: https://github.com/simdutf/simdutf
+    events:
+    - introduced: dee9177b2b648697fa7df22f84d8b8db77c69606
+    - fixed: 522758e534b731acf43daa91dbaaea91b875acf3
+  versions:
+  - v5.3.5
+  - v5.3.6
+  - v5.3.7
+  - v5.3.8
+  - v5.3.9
+  ecosystem_specific:
+    severity: HIGH
+  database_specific:
+    introduced_range: b09ec8f572ac39d613dbf704cac5f6e77a2f0634:29e835f7e33d8c7852ba68a26ab84197e1baff0f
+    fixed_range: 6762ed95c669169d550cd79834e1336d07fcd1ac:522758e534b731acf43daa91dbaaea91b875acf3
+schema_version: 1.6.0
