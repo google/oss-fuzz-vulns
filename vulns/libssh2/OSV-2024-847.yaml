@@ -1,0 +1,33 @@
+id: OSV-2024-847
+summary: Null-dereference READ in _libssh2_packet_add
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=69234
+
+  ```
+  Crash type: Null-dereference READ
+  Crash state:
+  _libssh2_packet_add
+  fullpacket
+  _libssh2_transport_read
+  ```
+modified: '2024-08-16T00:04:07.189474Z'
+published: '2024-08-16T00:04:07.189033Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=69234
+affected:
+- package:
+    name: libssh2
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libssh2
+  ranges:
+  - type: GIT
+    repo: https://github.com/libssh2/libssh2.git
+    events:
+    - introduced: d34d9258b8420b19ec3f97b4cc5bf7aa7d98e35a
+  ecosystem_specific:
+    severity: null
+  database_specific:
+    introduced_range: c0f69548be902147ce014ffa40b8db3cf1d4b0b4:b7050d9e0a6e33642ce83b53ecd408bdee4cc521
+  versions: []
+schema_version: 1.6.0
