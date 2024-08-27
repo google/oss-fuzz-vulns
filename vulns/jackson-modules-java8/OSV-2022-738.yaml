@@ -10,7 +10,7 @@ details: |
   com.code_intelligence.jazzer.driver.FuzzTargetRunner.runOne
   com.code_intelligence.jazzer.driver.FuzzTargetRunner.startLibFuzzer
   ```
-modified: '2024-07-06T14:11:11.740799Z'
+modified: '2024-08-27T14:14:40.986073Z'
 published: '2022-08-19T00:00:35.294543Z'
 references:
 - type: REPORT
@@ -25,6 +25,7 @@ affected:
     repo: https://github.com/FasterXML/jackson-modules-java8
     events:
     - introduced: 2ed0cf089b61416ad23146a55b3f1fa97e98375b
+    - fixed: 1cb2f0af1674b7100e6474285c330ef4ac884ff8
   versions:
   - jackson-modules-java8-2.13.4
   - jackson-modules-java8-2.14.0
@@ -33,25 +34,26 @@ affected:
   - jackson-modules-java8-2.14.0-rc3
   - jackson-modules-java8-2.14.1
   - jackson-modules-java8-2.14.2
+  - jackson-modules-java8-2.14.3
+  - jackson-modules-java8-2.15.0
   - jackson-modules-java8-2.15.0-rc1
   - jackson-modules-java8-2.15.0-rc2
   - jackson-modules-java8-2.15.0-rc3
-  - jackson-modules-java8-2.15.0
-  - jackson-modules-java8-2.14.3
   - jackson-modules-java8-2.15.1
   - jackson-modules-java8-2.15.2
   - jackson-modules-java8-2.15.3
-  - jackson-modules-java8-2.16.0-rc1
-  - jackson-modules-java8-2.16.0
-  - jackson-modules-java8-2.16.1
   - jackson-modules-java8-2.15.4
-  - jackson-modules-java8-2.17.0-rc1
+  - jackson-modules-java8-2.16.0
+  - jackson-modules-java8-2.16.0-rc1
+  - jackson-modules-java8-2.16.1
   - jackson-modules-java8-2.16.2
   - jackson-modules-java8-2.17.0
+  - jackson-modules-java8-2.17.0-rc1
   - jackson-modules-java8-2.17.1
   - jackson-modules-java8-2.17.2
   ecosystem_specific:
     severity: LOW
   database_specific:
     introduced_range: 6544a192eae6c158d690dc4ecdb3d93cb257a8b4:f82c3af6eb968a9f02ab810be6562dd27d5a3d26
+    fixed_range: b6d264337e1d8ba515a3a6b68d17b18dd5a51cc7:1cb2f0af1674b7100e6474285c330ef4ac884ff8
 schema_version: 1.3.0
