@@ -10,7 +10,7 @@ details: |
   java.base/java.lang.StringBuilder.<init>
   org.apache.commons.codec.language.bm.Rule$Phoneme.<init>
   ```
-modified: '2024-07-16T04:35:24.683397Z'
+modified: '2024-08-27T14:19:50.205074Z'
 published: '2024-04-30T00:03:33.576785Z'
 references:
 - type: REPORT
@@ -25,10 +25,11 @@ affected:
     repo: https://gitbox.apache.org/repos/asf/commons-codec.git
     events:
     - introduced: 353e79cd3edd84e1250021e896974d9018fc74bb
+    - fixed: 8f8fe823c0f92e5b3b47df5b8ac056af197a9953
   versions:
   - commons-codec-1.17.0-RC1
-  - rel/commons-codec-1.17.0
   - commons-codec-1.17.1-RC1
+  - rel/commons-codec-1.17.0
   - rel/commons-codec-1.17.1
   ecosystem_specific:
     severity: LOW
