@@ -10,7 +10,7 @@ details: |
   java.desktop/java.awt.image.Raster.createPackedRaster
   java.desktop/java.awt.image.DirectColorModel.createCompatibleWritableRaster
   ```
-modified: '2024-04-19T14:04:39.748126Z'
+modified: '2024-08-27T14:11:30.518706Z'
 published: '2023-05-28T14:00:35.487433Z'
 references:
 - type: REPORT
@@ -25,11 +25,11 @@ affected:
     repo: https://gitbox.apache.org/repos/asf/commons-imaging.git
     events:
     - introduced: b5026706fa6811353a8b53ece95d89f349b81bd1
+    - fixed: 4dbd0db102cb5348fc924f0491067c30eca4ae10
   versions:
-  - commons-imaging-1.0.0-M1-RC1
   - commons-imaging-1.0.0-alpha4-RC1
-  - rel/commons-imaging-1.0.0-alpha4
   - commons-imaging-1.0.0-alpha5-RC1
+  - rel/commons-imaging-1.0.0-alpha4
   - rel/commons-imaging-1.0.0-alpha5
   ecosystem_specific:
     severity: LOW
