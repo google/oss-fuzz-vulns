@@ -10,7 +10,7 @@ details: |
   RDKit::ROMol::ROMol
   RDKit::RecursiveStructureQuery::copy
   ```
-modified: '2024-08-16T00:03:32.030212Z'
+modified: '2024-08-29T14:20:36.323719Z'
 published: '2024-08-16T00:03:32.029853Z'
 references:
 - type: REPORT
@@ -53,6 +53,7 @@ affected:
   - Release_2024_03_3
   - Release_2024_03_4
   - Release_2024_03_5
+  - Release_2024_03_6
   ecosystem_specific:
     severity: HIGH
 schema_version: 1.6.0
