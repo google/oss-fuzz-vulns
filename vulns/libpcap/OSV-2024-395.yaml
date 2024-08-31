@@ -10,7 +10,7 @@ details: |
   pcapint_filter
   pcap_offline_filter
   ```
-modified: '2024-05-01T14:11:03.989266Z'
+modified: '2024-08-31T14:18:45.876646Z'
 published: '2024-05-01T00:04:54.392345Z'
 references:
 - type: REPORT
@@ -30,6 +30,7 @@ affected:
   - libpcap-1.10.2
   - libpcap-1.10.3
   - libpcap-1.10.4
+  - libpcap-1.10.5
   ecosystem_specific:
     severity: MEDIUM
   database_specific:
