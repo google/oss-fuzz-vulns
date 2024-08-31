@@ -10,7 +10,7 @@ details: |
   _lou_translate
   lou_translateString
   ```
-modified: '2024-06-04T14:15:24.569478Z'
+modified: '2024-08-31T14:18:34.306703Z'
 published: '2023-05-19T14:00:18.190498Z'
 references:
 - type: REPORT
@@ -25,6 +25,7 @@ affected:
     repo: https://github.com/liblouis/liblouis
     events:
     - introduced: bd2f5364d74bdc86af7a13fc690138c453c321de
+    - fixed: f18314481869463379856961a9670461cefccc2f
   versions:
   - v3.26.0
   - v3.27.0
@@ -33,4 +34,6 @@ affected:
   - v3.30.0
   ecosystem_specific:
     severity: MEDIUM
+  database_specific:
+    fixed_range: 1d008a2b6375ead14bc03c36b1495b04c8737261:f18314481869463379856961a9670461cefccc2f
 schema_version: 1.4.0
