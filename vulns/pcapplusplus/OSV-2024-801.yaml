@@ -1,0 +1,31 @@
+id: OSV-2024-801
+summary: UNKNOWN READ in PointerVector.h
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=69391
+
+  ```
+  Crash type: UNKNOWN READ
+  Crash state:
+  PointerVector.h
+  ```
+modified: '2024-08-16T00:02:10.140630Z'
+published: '2024-08-16T00:02:10.140304Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=69391
+affected:
+- package:
+    name: pcapplusplus
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/pcapplusplus
+  ranges:
+  - type: GIT
+    repo: https://github.com/seladb/PcapPlusPlus
+    events:
+    - introduced: 813f15b87f5e76a62d64360f8cbdf449c21316e4
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: 3227ad11ec457c3dad062db548432d2a1c837d50:0c95dfb3557644acc6a10060e48cfae1a61fc2f0
+  versions: []
+schema_version: 1.6.0
