@@ -10,7 +10,7 @@ details: |
   ireclaim
   interp_reclaim
   ```
-modified: '2024-07-25T00:06:43.763256Z'
+modified: '2024-09-03T14:30:32.805743Z'
 published: '2024-07-25T00:06:43.762625Z'
 references:
 - type: REPORT
@@ -25,9 +25,10 @@ affected:
     repo: git://git.ghostscript.com/ghostpdl.git
     events:
     - introduced: bf0048d271aa6a4d9898997ada84cf89c197e791
+  versions:
+  - ghostpdl-10.04.0rc1_test001
   ecosystem_specific:
     severity: null
   database_specific:
     introduced_range: f6dc854531c7f591e8f6f60dac7a312c8acb2e6b:4c8ded763017611bb9479a027dc2cc1ae5fe01cb
-  versions: []
 schema_version: 1.6.0
