@@ -10,7 +10,7 @@ details: |
   light_read_record
   light_get_next_packet
   ```
-modified: '2023-11-13T13:00:50.800821Z'
+modified: '2024-09-04T14:11:53.944216Z'
 published: '2023-11-13T13:00:50.800524Z'
 references:
 - type: REPORT
@@ -25,7 +25,8 @@ affected:
     repo: https://github.com/seladb/PcapPlusPlus
     events:
     - introduced: 0c95dfb3557644acc6a10060e48cfae1a61fc2f0
+  versions:
+  - v24.09
   ecosystem_specific:
     severity: MEDIUM
-  versions: []
 schema_version: 1.6.0
