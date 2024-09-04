@@ -10,7 +10,7 @@ details: |
   pcpp::SSLClientHelloMessage::ClientHelloTLSFingerprint::toStringAndMD5
   pcpp::SSLClientHelloMessage::ClientHelloTLSFingerprint::toMD5
   ```
-modified: '2024-08-16T00:02:36.618838Z'
+modified: '2024-09-04T14:18:56.239791Z'
 published: '2024-08-16T00:02:36.618439Z'
 references:
 - type: REPORT
@@ -25,9 +25,10 @@ affected:
     repo: https://github.com/seladb/PcapPlusPlus
     events:
     - introduced: 56668faab242e53b1282b3405eaa4bb51e474bee
+  versions:
+  - v24.09
   ecosystem_specific:
     severity: MEDIUM
   database_specific:
     introduced_range: 805d75ca1f33ff33951d5082e3d3535c7a090808:4d48615c9bfb2ef0c61d50e1e1dd3e3d63a82be0
-  versions: []
 schema_version: 1.6.0
