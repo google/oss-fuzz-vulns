@@ -10,7 +10,7 @@ details: |
   pcpp::Packet::computeCalculateFields
   FuzzTarget.cpp
   ```
-modified: '2023-11-16T13:00:57.037983Z'
+modified: '2024-09-04T14:11:55.216690Z'
 published: '2023-11-16T13:00:57.037733Z'
 references:
 - type: REPORT
@@ -25,7 +25,8 @@ affected:
     repo: https://github.com/seladb/PcapPlusPlus
     events:
     - introduced: 6a67cab6914074841ed81116ac72219ca070a44d
+  versions:
+  - v24.09
   ecosystem_specific:
     severity: HIGH
-  versions: []
 schema_version: 1.6.0
