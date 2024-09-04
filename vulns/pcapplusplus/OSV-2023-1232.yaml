@@ -10,7 +10,7 @@ details: |
   pcpp::SSLClientHelloMessage::generateTLSFingerprint
   readParsedPacket
   ```
-modified: '2023-11-28T13:01:23.208619Z'
+modified: '2024-09-04T14:13:04.010051Z'
 published: '2023-11-28T13:01:23.208343Z'
 references:
 - type: REPORT
@@ -25,7 +25,8 @@ affected:
     repo: https://github.com/seladb/PcapPlusPlus
     events:
     - introduced: 6a67cab6914074841ed81116ac72219ca070a44d
+  versions:
+  - v24.09
   ecosystem_specific:
     severity: MEDIUM
-  versions: []
 schema_version: 1.6.0
