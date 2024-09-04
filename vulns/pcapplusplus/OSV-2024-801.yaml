@@ -8,7 +8,7 @@ details: |
   Crash state:
   PointerVector.h
   ```
-modified: '2024-08-16T00:02:10.140630Z'
+modified: '2024-09-04T14:18:51.828983Z'
 published: '2024-08-16T00:02:10.140304Z'
 references:
 - type: REPORT
@@ -23,9 +23,10 @@ affected:
     repo: https://github.com/seladb/PcapPlusPlus
     events:
     - introduced: 813f15b87f5e76a62d64360f8cbdf449c21316e4
+  versions:
+  - v24.09
   ecosystem_specific:
     severity: MEDIUM
   database_specific:
     introduced_range: 3227ad11ec457c3dad062db548432d2a1c837d50:0c95dfb3557644acc6a10060e48cfae1a61fc2f0
-  versions: []
 schema_version: 1.6.0
