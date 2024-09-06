@@ -10,7 +10,7 @@ details: |
   ireclaim
   interp_reclaim
   ```
-modified: '2024-09-03T14:30:32.805743Z'
+modified: '2024-09-06T14:32:49.759052Z'
 published: '2024-07-25T00:06:43.762625Z'
 references:
 - type: REPORT
@@ -27,6 +27,7 @@ affected:
     - introduced: bf0048d271aa6a4d9898997ada84cf89c197e791
   versions:
   - ghostpdl-10.04.0rc1_test001
+  - ghostpdl-10.04.0rc1
   ecosystem_specific:
     severity: null
   database_specific:
