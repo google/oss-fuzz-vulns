@@ -1,0 +1,33 @@
+id: OSV-2024-764
+summary: Use-of-uninitialized-value in _cupsStrAlloc
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=69562
+
+  ```
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  _cupsStrAlloc
+  ippReadIO
+  fuzz_ipp.c
+  ```
+modified: '2024-08-16T00:00:28.318983Z'
+published: '2024-08-16T00:00:28.318434Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=69562
+affected:
+- package:
+    name: cups
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/cups
+  ranges:
+  - type: GIT
+    repo: https://github.com/OpenPrinting/cups
+    events:
+    - introduced: c0e2e975462b3890ad3d426942a9000987a2bdb8
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: fc4c9b6c9aebe6396398784e3dff9b86d4a8d310:7e388c3f45741638bc64adf3d9cf88457425ee9a
+  versions: []
+schema_version: 1.6.0
