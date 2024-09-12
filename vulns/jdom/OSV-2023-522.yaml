@@ -1,0 +1,33 @@
+id: OSV-2023-522
+summary: Security exception in com.code_intelligence.jazzer.sanitizers.ServerSideRequestForgery.checkSsrf
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=60156
+
+  ```
+  Crash type: Security exception
+  Crash state:
+  com.code_intelligence.jazzer.sanitizers.ServerSideRequestForgery.checkSsrf
+  com.code_intelligence.jazzer.sanitizers.ServerSideRequestForgery.checkSsrfSocket
+  java.base/java.net.Socket.connect
+  ```
+modified: '2023-06-29T14:01:00.083088Z'
+published: '2023-06-29T14:01:00.082855Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=60156
+affected:
+- package:
+    name: jdom
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/jdom
+  ranges:
+  - type: GIT
+    repo: https://github.com/hunterhacker/jdom.git
+    events:
+    - introduced: c6065f684bdff5cebf5f23b2859c5e4c89fd89db
+    - fixed: c6065f684bdff5cebf5f23b2859c5e4c89fd89db
+  versions:
+  - JDOM-2.0.6.1
+  ecosystem_specific:
+    severity: MEDIUM
+schema_version: 1.6.0

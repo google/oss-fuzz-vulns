@@ -1,0 +1,34 @@
+id: OSV-2022-1217
+summary: Security exception in com.code_intelligence.jazzer.sanitizers.RegexInjection.hookInternal
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=53767
+
+  ```
+  Crash type: Security exception
+  Crash state:
+  com.code_intelligence.jazzer.sanitizers.RegexInjection.hookInternal
+  com.code_intelligence.jazzer.sanitizers.RegexInjection.patternHook
+  org.hamcrest.text.MatchesPattern.matchesPattern
+  ```
+modified: '2022-11-27T13:00:42.462879Z'
+published: '2022-11-27T13:00:42.462635Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=53767
+affected:
+- package:
+    name: hamcrest
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/hamcrest
+  ranges:
+  - type: GIT
+    repo: https://github.com/hamcrest/JavaHamcrest.git
+    events:
+    - introduced: 76eb0021a30e4838237ed7df18a5cf583ae9fec6
+    - fixed: 6bb90de5c5e114f58d862ed2ad336671c7f50fc1
+  versions:
+  - v3.0
+  - v3.0-rc1
+  ecosystem_specific:
+    severity: LOW
+schema_version: 1.6.0

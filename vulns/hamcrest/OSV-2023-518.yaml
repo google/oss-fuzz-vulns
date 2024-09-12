@@ -1,0 +1,36 @@
+id: OSV-2023-518
+summary: Security exception in com.code_intelligence.jazzer.sanitizers.XPathInjection.checkXpathExecute
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=60148
+
+  ```
+  Crash type: Security exception
+  Crash state:
+  com.code_intelligence.jazzer.sanitizers.XPathInjection.checkXpathExecute
+  org.hamcrest.xml.HasXPath.compiledXPath
+  org.hamcrest.xml.HasXPath.<init>
+  ```
+modified: '2023-06-29T14:00:20.971845Z'
+published: '2023-06-29T14:00:20.971481Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=60148
+affected:
+- package:
+    name: hamcrest
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/hamcrest
+  ranges:
+  - type: GIT
+    repo: https://github.com/hamcrest/JavaHamcrest.git
+    events:
+    - introduced: 0eba90c731af35f65ee016aac6cbaf0f1460ce72
+    - fixed: 6bb90de5c5e114f58d862ed2ad336671c7f50fc1
+  versions:
+  - v3.0
+  - v3.0-rc1
+  ecosystem_specific:
+    severity: HIGH
+  database_specific:
+    introduced_range: 76eb0021a30e4838237ed7df18a5cf583ae9fec6:e4b9afdc2624bbebef3c7c739e6074ecd8a6c06e
+schema_version: 1.6.0

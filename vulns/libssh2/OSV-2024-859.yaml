@@ -1,0 +1,34 @@
+id: OSV-2024-859
+summary: Heap-double-free in libssh2_default_free
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=69726
+
+  ```
+  Crash type: Heap-double-free
+  Crash state:
+  libssh2_default_free
+  diffie_hellman_sha_algo
+  kex_method_diffie_hellman_group14_key_exchange
+  ```
+modified: '2024-08-16T00:05:16.221993Z'
+published: '2024-08-16T00:05:16.221580Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=69726
+affected:
+- package:
+    name: libssh2
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libssh2
+  ranges:
+  - type: GIT
+    repo: https://github.com/libssh2/libssh2.git
+    events:
+    - introduced: d34d9258b8420b19ec3f97b4cc5bf7aa7d98e35a
+    - fixed: b3465418471ffa4cf0bbe1e8f28c4d007f060f99
+  ecosystem_specific:
+    severity: HIGH
+  database_specific:
+    introduced_range: c0f69548be902147ce014ffa40b8db3cf1d4b0b4:b7050d9e0a6e33642ce83b53ecd408bdee4cc521
+  versions: []
+schema_version: 1.6.0
