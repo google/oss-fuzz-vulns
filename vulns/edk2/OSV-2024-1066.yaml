@@ -1,0 +1,37 @@
+id: OSV-2024-1066
+summary: Heap-buffer-overflow in StrLen
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=71496
+
+  ```
+  Crash type: Heap-buffer-overflow READ 2
+  Crash state:
+  StrLen
+  MangleFileName
+  ToolChainHarnessLib.c
+  ```
+modified: '2024-09-13T00:14:35.160137Z'
+published: '2024-09-13T00:14:35.159638Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=71496
+affected:
+- package:
+    name: edk2
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/edk2
+  ranges:
+  - type: GIT
+    repo: https://github.com/tianocore/edk2.git
+    events:
+    - introduced: 248aa153f65866f46b5370ac2ef7dfaf3af72480
+    - fixed: babccb841dbb39de2b4485bdb63dcc5bb6122bd8
+  versions:
+  - edk2-stable202405
+  - edk2-stable202408
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: unknown:248aa153f65866f46b5370ac2ef7dfaf3af72480
+    fixed_range: 14c9ba1a2ca64137de148968823dc20988dcaa4c:babccb841dbb39de2b4485bdb63dcc5bb6122bd8
+schema_version: 1.6.0
