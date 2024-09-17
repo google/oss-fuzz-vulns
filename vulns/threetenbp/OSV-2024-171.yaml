@@ -10,7 +10,7 @@ details: |
   java.base/sun.util.calendar.ZoneInfo.getLastRawOffset
   java.base/sun.util.calendar.ZoneInfo.getOffsets
   ```
-modified: '2024-03-26T14:21:04.026638Z'
+modified: '2024-09-17T14:16:03.170253Z'
 published: '2024-03-15T00:08:01.855772Z'
 references:
 - type: REPORT
@@ -27,6 +27,8 @@ affected:
     - introduced: 0a5403ed315b9b1770c27a74ca6c2e162851ca78
   versions:
   - v1.6.9
+  - tzdb2
+  - v1.7.0
   ecosystem_specific:
     severity: LOW
   database_specific:
