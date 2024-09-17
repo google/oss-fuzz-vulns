@@ -10,7 +10,7 @@ details: |
   java.base/sun.util.locale.provider.LocaleProviderAdapter.getAdapter
   java.base/java.text.DateFormatSymbols.getProviderInstance
   ```
-modified: '2024-03-26T14:21:41.121165Z'
+modified: '2024-09-17T14:15:59.074931Z'
 published: '2024-03-21T00:13:27.175097Z'
 references:
 - type: REPORT
@@ -27,6 +27,8 @@ affected:
     - introduced: 0a5403ed315b9b1770c27a74ca6c2e162851ca78
   versions:
   - v1.6.9
+  - tzdb2
+  - v1.7.0
   ecosystem_specific:
     severity: LOW
   database_specific:
