@@ -9,7 +9,7 @@ details: |
   lwan_request_get_cookie
   fuzz_parse_http_request
   ```
-modified: '2024-08-04T00:01:49.853962Z'
+modified: '2024-09-22T14:18:45.045278Z'
 published: '2024-08-04T00:01:49.853424Z'
 references:
 - type: REPORT
@@ -24,9 +24,10 @@ affected:
     repo: https://github.com/lpereira/lwan.git
     events:
     - introduced: 29a64cecc78d96b9bf164c4bc8fd4da17acf6378
+  versions:
+  - v0.6
   ecosystem_specific:
     severity: null
   database_specific:
     introduced_range: 7c8900696e90e41cd45f944c988ff8dfbd481a74:2fbd55d5fc0fcefd2fa6ac748c9e5ce50ab9f424
-  versions: []
 schema_version: 1.6.0
