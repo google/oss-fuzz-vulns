@@ -10,7 +10,7 @@ details: |
   H5C__generate_image
   H5C__flush_single_entry
   ```
-modified: '2024-04-30T00:14:19.116609Z'
+modified: '2024-10-01T14:59:42.869816Z'
 published: '2024-04-30T00:14:19.116132Z'
 references:
 - type: REPORT
@@ -46,6 +46,7 @@ affected:
   - snapshot-1.10
   - snapshot-1.12
   - snapshot-1.14
+  - hdf5_1.14.5
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.6.0
