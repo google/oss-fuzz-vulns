@@ -10,7 +10,7 @@ details: |
   H5O__chunk_delete
   H5O__cont_delete
   ```
-modified: '2024-04-30T00:08:00.121266Z'
+modified: '2024-10-01T14:35:12.294703Z'
 published: '2024-04-30T00:08:00.120801Z'
 references:
 - type: REPORT
@@ -46,6 +46,7 @@ affected:
   - snapshot-1.10
   - snapshot-1.12
   - snapshot-1.14
+  - hdf5_1.14.5
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.6.0
