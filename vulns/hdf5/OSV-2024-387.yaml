@@ -10,7 +10,7 @@ details: |
   H5O__fsinfo_encode
   H5O_msg_flush
   ```
-modified: '2024-04-30T00:13:39.184660Z'
+modified: '2024-10-01T15:38:04.806295Z'
 published: '2024-04-30T00:13:39.184262Z'
 references:
 - type: REPORT
@@ -46,6 +46,7 @@ affected:
   - snapshot-1.10
   - snapshot-1.12
   - snapshot-1.14
+  - hdf5_1.14.5
   ecosystem_specific:
     severity: HIGH
 schema_version: 1.6.0
