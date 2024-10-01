@@ -1,0 +1,36 @@
+id: OSV-2024-1145
+summary: Heap-buffer-overflow in ultrahdr::getYuv444Pixel
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42538160
+
+  ```
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  ultrahdr::getYuv444Pixel
+  std::__1::__function::__func<ultrahdr::JpegR::applyGainMap
+  ultrahdr::JpegR::applyGainMap
+  ```
+modified: '2024-09-26T00:02:03.374156Z'
+published: '2024-09-26T00:02:03.373431Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42538160
+affected:
+- package:
+    name: libultrahdr
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libultrahdr
+  ranges:
+  - type: GIT
+    repo: https://github.com/google/libultrahdr.git
+    events:
+    - introduced: 4ef6913d25d37d53634cc6f8a31a70198e334008
+    - fixed: 89480db742e0af741901b1f8740566b89b798c3b
+  versions:
+  - 1.1.0
+  - v1.1.1
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: 5c7b3fbab951dc28ae9b496f5fef1e07bd44937b:04788ce50a921cb672aab1426baa831f008e3c7c
+schema_version: 1.6.0

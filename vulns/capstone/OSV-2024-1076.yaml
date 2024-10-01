@@ -1,0 +1,34 @@
+id: OSV-2024-1076
+summary: Heap-buffer-overflow in readBytes48
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42538426
+
+  ```
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  readBytes48
+  SystemZ_LLVM_getInstruction
+  SystemZ_getInstruction
+  ```
+modified: '2024-09-17T00:02:06.644304Z'
+published: '2024-09-17T00:02:06.643980Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42538426
+affected:
+- package:
+    name: capstone
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/capstone
+  ranges:
+  - type: GIT
+    repo: https://github.com/capstone-engine/capstone.git
+    events:
+    - introduced: af1ed2fb3d9d67926389a71e12531bef76f50482
+    - fixed: 21f7bc85f9026ece8adc34d02b6e23863f6185ae
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    fixed_range: a34901e919157c4b0f52e3b93bd977023a97d6b7:21f7bc85f9026ece8adc34d02b6e23863f6185ae
+  versions: []
+schema_version: 1.6.0

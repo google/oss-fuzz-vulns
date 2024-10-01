@@ -1,0 +1,37 @@
+id: OSV-2024-1144
+summary: Security exception in graphql.schema.GraphQLTypeUtil.simplePrint
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=368729570
+
+  ```
+  Crash type: Security exception
+  Crash state:
+  graphql.schema.GraphQLTypeUtil.simplePrint
+  graphql.schema.GraphQLTypeUtil.simplePrint
+  graphql.schema.GraphQLTypeUtil.simplePrint
+  ```
+modified: '2024-09-24T00:15:39.106491Z'
+published: '2024-09-24T00:15:39.106189Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=368729570
+affected:
+- package:
+    name: graphql-java
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/graphql-java
+  ranges:
+  - type: GIT
+    repo: https://github.com/graphql-java/graphql-java
+    events:
+    - introduced: f52305325593dcec70aba9c4a5717b18b6543fa0
+    - fixed: d6dbf6156e8a90a1420a7cee957de0b22100d47f
+  versions:
+  - v22.0
+  - v22.1
+  - v22.2
+  ecosystem_specific:
+    severity: LOW
+  database_specific:
+    introduced_range: ef846bf7a25a4deb8e860c3be2003968c9fcc493:0bc0845f18c33af5859288ce15244e804a92fc2c
+schema_version: 1.6.0

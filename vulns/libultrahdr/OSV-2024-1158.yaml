@@ -1,0 +1,37 @@
+id: OSV-2024-1158
+summary: Use-of-uninitialized-value in format_message
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=370032374
+
+  ```
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  format_message
+  ultrahdr::JpegDecoderHelper::decode
+  ultrahdr::JpegDecoderHelper::decompressImage
+  ```
+modified: '2024-09-30T00:06:39.149753Z'
+published: '2024-09-30T00:06:39.149467Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=370032374
+affected:
+- package:
+    name: libultrahdr
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libultrahdr
+  ranges:
+  - type: GIT
+    repo: https://github.com/google/libultrahdr.git
+    events:
+    - introduced: 06c2624491a79673149a99d5c597bd0ff388c867
+    - fixed: 55ee308d04995d7b97e1402cc9ebf5b3f42f96ee
+  versions:
+  - 1.1.0
+  - v1.1.1
+  - v1.2.0
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: 655c47d3f4b1965d87e7e39f5f59ddee8e5348e7:3fafca08620678f2690fc797615b847c5e98bd8b
+schema_version: 1.6.0
