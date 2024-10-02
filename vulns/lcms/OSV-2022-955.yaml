@@ -10,7 +10,7 @@ details: |
   _cmsWriteUInt16Number
   Type_MLU_Write
   ```
-modified: '2023-12-04T14:07:25.844080Z'
+modified: '2024-10-03T14:07:25.844080Z'
 published: '2022-09-26T00:00:25.284903Z'
 references:
 - type: REPORT
@@ -25,18 +25,8 @@ affected:
     repo: https://github.com/mm2/Little-CMS.git
     events:
     - introduced: 4ce24635d9422be4de4f2da3fa7825e1f163ac82
-  versions:
-  - lcms2.13
-  - lcms2.13.1
-  - lcms2.13rc1
-  - lcms2.13rc2
-  - lcms2.14
-  - lcms2.14rc1
-  - lcms2.15rc1
-  - lcms2.15
-  - lcm2.16rc1
-  - lcms2.16rc1
-  - lcms2.16
+    - fixed: 1ead12acd5a7decb31ab3623da53eebfd88ddc15
+  versions: []
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.3.0
