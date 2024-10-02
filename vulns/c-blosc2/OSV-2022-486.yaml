@@ -10,7 +10,7 @@ details: |
   frame_to_schunk
   blosc2_schunk_from_buffer
   ```
-modified: '2024-07-31T14:07:47.533791Z'
+modified: '2024-10-02T14:11:20.344165Z'
 published: '2022-06-17T00:00:08.687092Z'
 references:
 - type: REPORT
@@ -25,6 +25,7 @@ affected:
     repo: https://github.com/Blosc/c-blosc2.git
     events:
     - introduced: ce9aa2247006ed182dabb922bd3536b13375c4cf
+    - fixed: f8723dc5e4c47a123fddcae993f91b039c5540be
   versions:
   - v2.0.0
   - v2.0.0-rc2
@@ -35,23 +36,6 @@ affected:
   - v2.0.4
   - v2.1.0
   - v2.1.1
-  - v2.2.0
-  - v2.3.0
-  - v2.3.1
-  - v2.4.0
-  - v2.4.1
-  - v2.4.2
-  - v2.4.3
-  - v2.5.0
-  - v2.6.0
-  - v2.6.1
-  - v2.7.0
-  - v2.7.1
-  - v2.8.0
-  - v2.9.0
-  - v2.9.1
-  - v2.9.2
-  - v2.9.3
   - v2.10.0
   - v2.10.1
   - v2.10.2
@@ -73,6 +57,23 @@ affected:
   - v2.14.4
   - v2.15.0
   - v2.15.1
+  - v2.2.0
+  - v2.3.0
+  - v2.3.1
+  - v2.4.0
+  - v2.4.1
+  - v2.4.2
+  - v2.4.3
+  - v2.5.0
+  - v2.6.0
+  - v2.6.1
+  - v2.7.0
+  - v2.7.1
+  - v2.8.0
+  - v2.9.0
+  - v2.9.1
+  - v2.9.2
+  - v2.9.3
   ecosystem_specific:
     severity: HIGH
 schema_version: 1.2.0
