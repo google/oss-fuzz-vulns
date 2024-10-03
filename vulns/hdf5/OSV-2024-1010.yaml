@@ -10,7 +10,7 @@ details: |
   H5FS_sect_find
   H5MF__find_sect
   ```
-modified: '2024-08-16T00:16:31.692980Z'
+modified: '2024-10-03T14:45:20.022988Z'
 published: '2024-08-16T00:16:31.692553Z'
 references:
 - type: REPORT
@@ -25,9 +25,10 @@ affected:
     repo: https://github.com/HDFGroup/hdf5
     events:
     - introduced: c2099d0e7008478e44f1b3e1f90f261e546ffd49
+  versions:
+  - snapshot-1.16
   ecosystem_specific:
     severity: MEDIUM
   database_specific:
     introduced_range: 9ad5f7e3a9f17368afc60143e39daf0d101742d7:18321dee40b21e19c95bf0ef2f61e3ec71233fe9
-  versions: []
 schema_version: 1.6.0
