@@ -1,0 +1,64 @@
+id: OSV-2023-1170
+summary: UNKNOWN READ in loader_log
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42530193
+
+  ```
+  Crash type: UNKNOWN READ
+  Crash state:
+  loader_log
+  loader_scanned_icd_add
+  loader_icd_scan
+  ```
+modified: '2023-11-16T13:02:54.952092Z'
+published: '2023-11-16T13:02:54.951826Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42530193
+affected:
+- package:
+    name: vulkan-loader
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/vulkan-loader
+  ranges:
+  - type: GIT
+    repo: https://github.com/khronosgroup/Vulkan-Loader
+    events:
+    - introduced: 70837963f82bd886828bf667a6ce3837dd3c70f1
+    - fixed: 8bdce6d842ca9f9bd0a4119963b0eb10693f5b23
+  versions:
+  - v1.3.270
+  - v1.3.271
+  - v1.3.272
+  - v1.3.273
+  - v1.3.274
+  - v1.3.275
+  - v1.3.276
+  - v1.3.277
+  - v1.3.278
+  - v1.3.279
+  - v1.3.280
+  - v1.3.281
+  - v1.3.282
+  - v1.3.283
+  - v1.3.284
+  - v1.3.285
+  - v1.3.286
+  - v1.3.287
+  - v1.3.288
+  - v1.3.289
+  - v1.3.290
+  - v1.3.292
+  - v1.3.293
+  - v1.3.294
+  - v1.3.295
+  - v1.3.296
+  - vulkan-sdk-1.3.275.0
+  - vulkan-sdk-1.3.280.0
+  - vulkan-sdk-1.3.283.0
+  - vulkan-sdk-1.3.290.0
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    fixed_range: fae95496d8c8047ae206345955c111fd62b5fd5d:8bdce6d842ca9f9bd0a4119963b0eb10693f5b23
+schema_version: 1.6.0

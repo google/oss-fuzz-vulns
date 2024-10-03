@@ -1,0 +1,26 @@
+id: OSV-2024-1056
+summary: UNKNOWN WRITE in bfd_elf_get_str_section
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42538161
+
+  ```
+  Crash type: UNKNOWN WRITE
+  Crash state:
+  bfd_elf_get_str_section
+  bfd_elf_string_from_elf_section
+  bfd_elf_sym_name
+  ```
+modified: '2024-09-13T00:02:11.288549Z'
+published: '2024-09-13T00:02:11.288214Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42538161
+affected:
+- package:
+    name: binutils
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/binutils
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
+schema_version: 1.6.0
