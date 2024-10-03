@@ -10,7 +10,7 @@ details: |
   H5FS_sect_add
   H5MF__add_sect
   ```
-modified: '2024-10-01T14:34:34.984456Z'
+modified: '2024-10-03T15:07:53.629179Z'
 published: '2023-05-06T14:01:04.165113Z'
 references:
 - type: REPORT
@@ -49,6 +49,7 @@ affected:
   - temp-1.14.4-3
   - hdf5_1.14.4.3
   - hdf5_1.14.5
+  - snapshot-1.16
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.4.0
