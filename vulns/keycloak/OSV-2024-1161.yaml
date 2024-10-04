@@ -1,0 +1,35 @@
+id: OSV-2024-1161
+summary: Security exception in java.base/java.util.Arrays.copyOfRange
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=370272563
+
+  ```
+  Crash type: Security exception
+  Crash state:
+  java.base/java.util.Arrays.copyOfRange
+  java.base/java.lang.StringUTF16.newString
+  java.base/java.lang.String.substring
+  ```
+modified: '2024-10-01T00:13:59.668243Z'
+published: '2024-10-01T00:13:59.667902Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=370272563
+affected:
+- package:
+    name: keycloak
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/keycloak
+  ranges:
+  - type: GIT
+    repo: https://github.com/keycloak/keycloak
+    events:
+    - introduced: 773e309f7539e06889b2583ff6e8775575038501
+    - fixed: 51fd133f051f2f4159cfc7dd7417bb2b7ea7472f
+  ecosystem_specific:
+    severity: LOW
+  database_specific:
+    introduced_range: 942d5d0aa309839bf8b6da28367bd8e6adbec856:7c69c857a1216cf2af07c4d2859fc961817f530a
+    fixed_range: 9b7cf9d5841dea0f8a4883578af06e3bfe638a29:51fd133f051f2f4159cfc7dd7417bb2b7ea7472f
+  versions: []
+schema_version: 1.6.0
