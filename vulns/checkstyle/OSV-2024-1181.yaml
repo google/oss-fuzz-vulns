@@ -1,0 +1,35 @@
+id: OSV-2024-1181
+summary: Security exception in com.puppycrawl.tools.checkstyle.grammar.java.JavaLanguageParser.expr
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=371233781
+
+  ```
+  Crash type: Security exception
+  Crash state:
+  com.puppycrawl.tools.checkstyle.grammar.java.JavaLanguageParser.expr
+  java.base/java.lang.Exception.<init>
+  java.base/java.lang.RuntimeException.<init>
+  ```
+modified: '2024-10-06T00:14:54.118486Z'
+published: '2024-10-06T00:14:54.118103Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=371233781
+affected:
+- package:
+    name: checkstyle
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/checkstyle
+  ranges:
+  - type: GIT
+    repo: https://github.com/checkstyle/checkstyle
+    events:
+    - introduced: 39052f286457e62cd14d911b1d52004a1ca7e252
+    - fixed: d3b1be31b60bf1fed3aa9277c39b75b5b7d6c3e6
+  ecosystem_specific:
+    severity: LOW
+  database_specific:
+    introduced_range: 814afc509c57e53c94af423613d13c07b4b3a9dc:37a777c3f69b162e88bb6fc88659fe4595248b29
+    fixed_range: ee37567e7b96f4e385868b77f11d63a213718b35:d3b1be31b60bf1fed3aa9277c39b75b5b7d6c3e6
+  versions: []
+schema_version: 1.6.0

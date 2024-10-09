@@ -1,0 +1,34 @@
+id: OSV-2024-965
+summary: Stack-buffer-overflow in FLAC__stream_encoder_init_ogg_file
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42537419
+
+  ```
+  Crash type: Stack-buffer-overflow READ 13
+  Crash state:
+  FLAC__stream_encoder_init_ogg_file
+  EncoderSession_init_encoder
+  flac__encode_file
+  ```
+modified: '2024-08-16T00:14:23.665768Z'
+published: '2024-08-16T00:14:23.665242Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42537419
+affected:
+- package:
+    name: flac
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/flac
+  ranges:
+  - type: GIT
+    repo: https://github.com/xiph/flac.git
+    events:
+    - introduced: 33b9a4a765376aad75436b61c5509f0097368167
+    - fixed: 86d6de66a406b66271811a7d2ce35bd684682dae
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: 215d1aa633b218ae16bfc1b09aed6f3f7a22d19e:ce9105664419f542c757c05b28ffd6537d19f63c
+  versions: []
+schema_version: 1.6.0
