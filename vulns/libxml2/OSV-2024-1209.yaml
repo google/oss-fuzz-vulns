@@ -1,0 +1,39 @@
+id: OSV-2024-1209
+summary: Heap-use-after-free in xmlValidateOneElement
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=372547409
+
+  ```
+  Crash type: Heap-use-after-free READ 4
+  Crash state:
+  xmlValidateOneElement
+  xmlValidateElement
+  api.c
+  ```
+modified: '2024-10-11T00:15:43.611199Z'
+published: '2024-10-11T00:15:43.610812Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=372547409
+affected:
+- package:
+    name: libxml2
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libxml2
+  ranges:
+  - type: GIT
+    repo: https://gitlab.gnome.org/GNOME/libxml2.git
+    events:
+    - introduced: 577e2516d0ed3669c7e9879ba9f04214658bfd1b
+    - fixed: bf3619c3282143fee564ca5ff0634559cce3923d
+  versions:
+  - v2.13.0
+  - v2.13.1
+  - v2.13.2
+  - v2.13.3
+  - v2.13.4
+  ecosystem_specific:
+    severity: HIGH
+  database_specific:
+    introduced_range: a279aae30f6c4d488f40b39e80087518b5459ea4:d4d1f3f33d6d4a5e31511281637a857944946e65
+schema_version: 1.6.0

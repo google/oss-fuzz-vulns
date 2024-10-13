@@ -1,0 +1,36 @@
+id: OSV-2024-1062
+summary: UNKNOWN WRITE in std::__1::recursive_mutex::lock
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42538230
+
+  ```
+  Crash type: UNKNOWN WRITE
+  Crash state:
+  std::__1::recursive_mutex::lock
+  Catalog::getForm
+  Page::getAnnots
+  ```
+modified: '2024-09-13T00:05:28.001152Z'
+published: '2024-09-13T00:05:28.000784Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42538230
+affected:
+- package:
+    name: poppler
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/poppler
+  ranges:
+  - type: GIT
+    repo: https://gitlab.freedesktop.org/poppler/poppler.git
+    events:
+    - introduced: b8bb2e46ff289c25f097c2f6baeb21642749f761
+    - fixed: dacf77246ea2d9587c99eb3475db2b8a55af6815
+  versions:
+  - poppler-24.09.0
+  ecosystem_specific:
+    severity: HIGH
+  database_specific:
+    introduced_range: 5a25ac7692d76f3c3e5e5850a062209f3482d85c:095789955b23bf271cc5ecb3a654c9c2df297100
+    fixed_range: 1bce1c823a08c9bd2b63a186339601188f80c08d:dacf77246ea2d9587c99eb3475db2b8a55af6815
+schema_version: 1.6.0
