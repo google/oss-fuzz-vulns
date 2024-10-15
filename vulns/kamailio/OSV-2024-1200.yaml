@@ -1,0 +1,53 @@
+id: OSV-2024-1200
+summary: UNKNOWN READ in eat_line
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=372515100
+
+  ```
+  Crash type: UNKNOWN READ
+  Crash state:
+  eat_line
+  extract_field
+  parse_sdp_session
+  ```
+modified: '2024-10-11T00:02:19.537837Z'
+published: '2024-10-11T00:02:19.537501Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=372515100
+affected:
+- package:
+    name: kamailio
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/kamailio
+  ranges:
+  - type: GIT
+    repo: https://github.com/kamailio/kamailio
+    events:
+    - introduced: 1e71168342894c992ab376bf8538c0953db31fe4
+    - fixed: e802f9187383feb7fdd96c4ded44fda403da4535
+  versions:
+  - 5.6.0
+  - 5.6.1
+  - 5.6.2
+  - 5.6.3
+  - 5.6.4
+  - 5.6.5
+  - 5.6.6
+  - 5.7.0
+  - 5.7.1
+  - 5.7.2
+  - 5.7.3
+  - 5.7.4
+  - 5.7.5
+  - 5.7.6
+  - 5.8.0
+  - 5.8.1
+  - 5.8.2
+  - 5.8.3
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: 22f9e269dd68edcb025e103d9aa1432423dd5550:199f13a7dfac8cd817850c6a6afe5ba510835418
+    fixed_range: 66fe6eb71e58a02222d1a2fb00f9a0cdb863134c:e802f9187383feb7fdd96c4ded44fda403da4535
+schema_version: 1.6.0
