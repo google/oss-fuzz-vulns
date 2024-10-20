@@ -1,0 +1,37 @@
+id: OSV-2024-978
+summary: Stack-buffer-overflow in narrow_conv_backprop
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42537498
+
+  ```
+  Crash type: Stack-buffer-overflow WRITE 4
+  Crash state:
+  narrow_conv_backprop
+  narrow_conv_backprop
+  narrow_conv_backprop
+  ```
+modified: '2024-08-16T00:15:00.390986Z'
+published: '2024-08-16T00:15:00.390591Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42537498
+affected:
+- package:
+    name: tarantool
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/tarantool
+  ranges:
+  - type: GIT
+    repo: https://github.com/tarantool/tarantool
+    events:
+    - introduced: 3d97334fa3e1ea6a94058c73137f115eb2160b3c
+    - fixed: c10c62927e4cba52cfc44103fc1e21c9d6606fb2
+  versions:
+  - 3.2.0
+  - 3.2.1-entrypoint
+  - 3.3.0-entrypoint
+  ecosystem_specific:
+    severity: HIGH
+  database_specific:
+    fixed_range: b33f17b25de6bcbe3ebc236250976e4a0250e75e:c10c62927e4cba52cfc44103fc1e21c9d6606fb2
+schema_version: 1.6.0

@@ -1,0 +1,34 @@
+id: OSV-2024-1212
+summary: Heap-buffer-overflow in cram_encode_container
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=372547397
+
+  ```
+  Crash type: Heap-buffer-overflow READ 8
+  Crash state:
+  cram_encode_container
+  cram_flush_container_mt
+  cram_put_bam_seq
+  ```
+modified: '2024-10-11T00:16:27.350643Z'
+published: '2024-10-11T00:16:27.350249Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=372547397
+affected:
+- package:
+    name: htslib
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/htslib
+  ranges:
+  - type: GIT
+    repo: https://github.com/samtools/htslib.git
+    events:
+    - introduced: e0d19561ab1dfc011d9ecb4acf135a7b877f9951
+    - fixed: 4c1acb8f31a64c07f4a8f8fb07c087bc67e766a7
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: 2ff207bd16bb3094843395450aa48936dd774ecb:ca920611fcd8be1180045589ac11bff2f04eafd8
+  versions: []
+schema_version: 1.6.0
