@@ -1,0 +1,35 @@
+id: OSV-2024-1128
+summary: Segv on unknown address in udiv
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=368076871
+
+  ```
+  Crash type: Segv on unknown address
+  Crash state:
+  udiv
+  mrb_bint_mod
+  mrb_vm_exec
+  ```
+modified: '2024-09-24T00:01:39.913799Z'
+published: '2024-09-24T00:01:39.913285Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=368076871
+affected:
+- package:
+    name: mruby
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/mruby
+  ranges:
+  - type: GIT
+    repo: https://github.com/mruby/mruby
+    events:
+    - introduced: e3ff54fda3786d6fa1dcaf8a6a93438d83625b87
+    - fixed: b95ca53e5c26354395c790cc5ec5dc3f45ba5d2b
+  ecosystem_specific:
+    severity: null
+  database_specific:
+    introduced_range: d1d010a03aafdc499a8b52d2a56dc0e2e4f57adc:f6caf0d78854ec6fdff195fb8f3824486f1feca7
+    fixed_range: f2908031c4d2dc0acb712f92b639892483089f52:b95ca53e5c26354395c790cc5ec5dc3f45ba5d2b
+  versions: []
+schema_version: 1.6.0
