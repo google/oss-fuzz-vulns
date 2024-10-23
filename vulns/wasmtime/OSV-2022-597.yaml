@@ -10,7 +10,7 @@ details: |
   .tmpgt0oOx
   wasmtime_setjmp
   ```
-modified: '2024-10-10T14:12:53.266757Z'
+modified: '2024-10-23T14:11:44.921612Z'
 published: '2022-07-19T00:01:55.792573Z'
 references:
 - type: REPORT
@@ -102,6 +102,7 @@ affected:
   - v23.0.3
   - v24.0.1
   - v25.0.2
+  - v26.0.0
   ecosystem_specific:
     severity: HIGH
 schema_version: 1.2.0
