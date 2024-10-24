@@ -1,0 +1,53 @@
+id: OSV-2024-1230
+summary: Heap-buffer-overflow in extract_rtpmap
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=373736682
+
+  ```
+  Crash type: Heap-buffer-overflow READ 4
+  Crash state:
+  extract_rtpmap
+  parse_sdp_session
+  parse_sdp
+  ```
+modified: '2024-10-19T00:00:26.793338Z'
+published: '2024-10-19T00:00:26.792754Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=373736682
+affected:
+- package:
+    name: kamailio
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/kamailio
+  ranges:
+  - type: GIT
+    repo: https://github.com/kamailio/kamailio
+    events:
+    - introduced: 1e71168342894c992ab376bf8538c0953db31fe4
+    - fixed: c823f41350ab9186a323707e9be32e31922bec17
+  versions:
+  - 5.6.0
+  - 5.6.1
+  - 5.6.2
+  - 5.6.3
+  - 5.6.4
+  - 5.6.5
+  - 5.6.6
+  - 5.7.0
+  - 5.7.1
+  - 5.7.2
+  - 5.7.3
+  - 5.7.4
+  - 5.7.5
+  - 5.7.6
+  - 5.8.0
+  - 5.8.1
+  - 5.8.2
+  - 5.8.3
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: 22f9e269dd68edcb025e103d9aa1432423dd5550:199f13a7dfac8cd817850c6a6afe5ba510835418
+    fixed_range: 62b4ee4a0d0b62b35c8bdf67e5daf9cbe9a28499:c823f41350ab9186a323707e9be32e31922bec17
+schema_version: 1.6.0
