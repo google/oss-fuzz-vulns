@@ -10,7 +10,7 @@ details: |
   wc_ed448_sign_msg_ex
   wc_ed448_sign_msg
   ```
-modified: '2024-07-09T14:22:06.911148Z'
+modified: '2024-10-25T14:17:28.852535Z'
 published: '2022-09-05T00:00:28.251072Z'
 references:
 - type: REPORT
@@ -39,6 +39,7 @@ affected:
   - v5.7.0-stable
   - wolfEntropy1
   - v5.7.2-stable
+  - v5.7.4-stable
   ecosystem_specific:
     severity: HIGH
 schema_version: 1.2.0
