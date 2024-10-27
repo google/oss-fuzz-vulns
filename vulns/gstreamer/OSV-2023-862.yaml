@@ -10,7 +10,7 @@ details: |
   g_object_unref
   gst_object_unref
   ```
-modified: '2024-09-19T15:15:24.694213Z'
+modified: '2024-10-27T14:39:02.547754Z'
 published: '2023-09-16T14:01:07.280790Z'
 references:
 - type: REPORT
@@ -25,6 +25,7 @@ affected:
     repo: https://gitlab.freedesktop.org/gstreamer/gstreamer.git
     events:
     - introduced: 5fd3c8a16c9035d7ce334e2f1514cbc8f580b4e6
+    - fixed: 4c19c9243aed70e9758e3a434e8764df8ae52676
   versions:
   - 1.23.1
   - 1.23.2
@@ -40,4 +41,6 @@ affected:
   - 1.24.8
   ecosystem_specific:
     severity: HIGH
+  database_specific:
+    fixed_range: b3245eb7bdca120ec56586c9d4d9f0efc16b23d3:4c19c9243aed70e9758e3a434e8764df8ae52676
 schema_version: 1.6.0
