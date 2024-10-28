@@ -25,9 +25,11 @@ affected:
     repo: https://github.com/pistacheio/pistache
     events:
     - introduced: 5dba79ab6856c74580c4fca2229c781e0f3ebdaa
+    - fixed: 2d573adb8939499455d4bf7ab631d1219eac5389
   ecosystem_specific:
     severity: MEDIUM
   database_specific:
     introduced_range: 2359c2d4a79920cfac42d07b6e0ddbf68377da96:769c0c3ab7c347f2d4992abb9e1e6475b4832c25
+    fixed_range: 51446160f336fb95731bb64c8902d51c1c8a1488:2d573adb8939499455d4bf7ab631d1219eac5389
   versions: []
 schema_version: 1.6.0
