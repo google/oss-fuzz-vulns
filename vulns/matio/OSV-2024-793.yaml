@@ -10,7 +10,7 @@ details: |
   H5HL__cache_datablock_deserialize
   H5C_protect
   ```
-modified: '2024-08-16T00:01:45.237667Z'
+modified: '2024-10-31T14:18:12.699199Z'
 published: '2024-08-16T00:01:45.237305Z'
 references:
 - type: REPORT
@@ -27,6 +27,7 @@ affected:
     - introduced: 29e986fb1cfe09dacdbe386f441882025f652377
   versions:
   - v1.5.27
+  - v1.5.28
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.6.0
