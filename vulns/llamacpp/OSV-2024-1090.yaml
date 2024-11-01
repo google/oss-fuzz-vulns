@@ -1,0 +1,190 @@
+id: OSV-2024-1090
+summary: UNKNOWN READ in ggml_free
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42538517
+
+  ```
+  Crash type: UNKNOWN READ
+  Crash state:
+  ggml_free
+  llama_model::~llama_model
+  llama_load_model_from_file
+  ```
+modified: '2024-09-19T00:00:17.390515Z'
+published: '2024-09-19T00:00:17.390184Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42538517
+affected:
+- package:
+    name: llamacpp
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/llamacpp
+  ranges:
+  - type: GIT
+    repo: https://github.com/ggerganov/llama.cpp
+    events:
+    - introduced: befaf1197fa447f61714de041828852a270659d2
+    - fixed: c5b0f4b5d90297f3e729fca7f78ddb25fcab5ddc
+  versions:
+  - b3752
+  - b3753
+  - b3754
+  - b3755
+  - b3756
+  - b3759
+  - b3760
+  - b3761
+  - b3763
+  - b3764
+  - b3765
+  - b3766
+  - b3767
+  - b3770
+  - b3771
+  - b3772
+  - b3774
+  - b3775
+  - b3777
+  - b3778
+  - b3779
+  - b3781
+  - b3782
+  - b3783
+  - b3785
+  - b3786
+  - b3787
+  - b3788
+  - b3789
+  - b3790
+  - b3795
+  - b3797
+  - b3798
+  - b3799
+  - b3800
+  - b3801
+  - b3802
+  - b3803
+  - b3804
+  - b3805
+  - b3806
+  - b3807
+  - b3808
+  - b3811
+  - b3812
+  - b3813
+  - b3814
+  - b3816
+  - b3817
+  - b3818
+  - b3820
+  - b3821
+  - b3822
+  - b3823
+  - b3824
+  - b3825
+  - b3827
+  - b3828
+  - b3829
+  - b3831
+  - b3832
+  - b3834
+  - b3835
+  - b3837
+  - b3841
+  - b3847
+  - b3848
+  - b3849
+  - b3853
+  - b3855
+  - b3856
+  - b3861
+  - b3863
+  - b3864
+  - b3865
+  - b3866
+  - b3867
+  - b3868
+  - b3869
+  - b3870
+  - b3872
+  - b3873
+  - b3874
+  - b3878
+  - b3879
+  - b3880
+  - b3883
+  - b3886
+  - b3887
+  - b3889
+  - b3892
+  - b3895
+  - b3896
+  - b3898
+  - b3899
+  - b3901
+  - b3902
+  - b3903
+  - b3904
+  - b3905
+  - b3906
+  - b3907
+  - b3909
+  - b3911
+  - b3912
+  - b3914
+  - b3916
+  - b3917
+  - b3920
+  - b3921
+  - b3922
+  - b3923
+  - b3925
+  - b3926
+  - b3927
+  - b3930
+  - b3931
+  - b3932
+  - b3933
+  - b3935
+  - b3936
+  - b3938
+  - b3939
+  - b3940
+  - b3941
+  - b3942
+  - b3943
+  - b3946
+  - b3947
+  - b3948
+  - b3949
+  - b3950
+  - b3952
+  - b3957
+  - b3958
+  - b3960
+  - b3961
+  - b3962
+  - b3964
+  - b3967
+  - b3970
+  - b3971
+  - b3972
+  - b3974
+  - b3975
+  - b3976
+  - b3977
+  - b3978
+  - b3982
+  - b3983
+  - b3984
+  - b3985
+  - b3987
+  - b3988
+  - b3989
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: feff4aa8461da7c432d144c11da4802e41fef3cf:822b6322dea704110797a5671fc80ae39ee6ac97
+    fixed_range: 61715d5cc83a28181df6a641846e4f6a740f3c74:c5b0f4b5d90297f3e729fca7f78ddb25fcab5ddc
+schema_version: 1.6.0
