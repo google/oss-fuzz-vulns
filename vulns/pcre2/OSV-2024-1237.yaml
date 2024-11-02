@@ -1,0 +1,35 @@
+id: OSV-2024-1237
+summary: Use-of-uninitialized-value in jit_compile
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=374218978
+
+  ```
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  jit_compile
+  pcre2_jit_compile_8
+  pcre2_fuzzsupport.c
+  ```
+modified: '2024-10-22T00:13:19.496460Z'
+published: '2024-10-22T00:13:19.495791Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=374218978
+affected:
+- package:
+    name: pcre2
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/pcre2
+  ranges:
+  - type: GIT
+    repo: https://github.com/PCRE2Project/pcre2
+    events:
+    - introduced: 1e09555d6950bfcf83bd98fa597b0c6440d43c9c
+    - fixed: ccb259f089a8a54c06ce7b17d9cbac4302652bb1
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: 03be4d2d7f8dda6871da7af591e6d0b02e41f4f4:182461aba17fb2a8e56b2c515e67210cd3ea5221
+    fixed_range: fc38d9e784f6d7db070b78d062f1b3de034965b2:ccb259f089a8a54c06ce7b17d9cbac4302652bb1
+  versions: []
+schema_version: 1.6.0

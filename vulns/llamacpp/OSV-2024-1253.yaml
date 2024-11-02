@@ -1,0 +1,48 @@
+id: OSV-2024-1253
+summary: Segv on unknown address in llama_output_reserve
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=376331508
+
+  ```
+  Crash type: Segv on unknown address
+  Crash state:
+  llama_output_reserve
+  llama_decode
+  fuzz_tokenizer.cpp
+  ```
+modified: '2024-11-01T00:03:18.217677Z'
+published: '2024-11-01T00:03:18.217276Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=376331508
+affected:
+- package:
+    name: llamacpp
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/llamacpp
+  ranges:
+  - type: GIT
+    repo: https://github.com/ggerganov/llama.cpp
+    events:
+    - introduced: 8d8ff715367480b856ad86ac3888e9742b13a6fa
+    - fixed: e597e50794f07ec8dc24b9efb18f94ec6386fda0
+  versions:
+  - b3988
+  - b3989
+  - b3990
+  - b3991
+  - b3994
+  - b3995
+  - b3996
+  - b3997
+  - b3998
+  - b3999
+  - b4000
+  - b4001
+  - b4002
+  ecosystem_specific:
+    severity: null
+  database_specific:
+    introduced_range: 61715d5cc83a28181df6a641846e4f6a740f3c74:c5b0f4b5d90297f3e729fca7f78ddb25fcab5ddc
+    fixed_range: 61408e7fad082dc44a11c8a9f1398da4837aad44:e597e50794f07ec8dc24b9efb18f94ec6386fda0
+schema_version: 1.6.0
