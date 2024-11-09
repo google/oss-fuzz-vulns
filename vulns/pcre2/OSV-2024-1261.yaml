@@ -1,0 +1,34 @@
+id: OSV-2024-1261
+summary: Stack-buffer-overflow in _pcre2_compile_class_not_nested_16
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=376515526
+
+  ```
+  Crash type: Stack-buffer-overflow WRITE 2
+  Crash state:
+  _pcre2_compile_class_not_nested_16
+  compile_class_operand
+  _pcre2_compile_class_nested_16
+  ```
+modified: '2024-11-02T00:11:51.445768Z'
+published: '2024-11-02T00:11:51.445365Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=376515526
+affected:
+- package:
+    name: pcre2
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/pcre2
+  ranges:
+  - type: GIT
+    repo: https://github.com/PCRE2Project/pcre2
+    events:
+    - introduced: fc38d9e784f6d7db070b78d062f1b3de034965b2
+    - fixed: 6f36e8ab6a723d8c4d64e0286c3775000da2e876
+  ecosystem_specific:
+    severity: HIGH
+  database_specific:
+    fixed_range: 62b3ceca1787a01b365e75a2976520c91ec455bf:6f36e8ab6a723d8c4d64e0286c3775000da2e876
+  versions: []
+schema_version: 1.6.0
