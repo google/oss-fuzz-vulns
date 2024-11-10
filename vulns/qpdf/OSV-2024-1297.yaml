@@ -1,0 +1,35 @@
+id: OSV-2024-1297
+summary: Heap-buffer-overflow in rijndaelSetupEncrypt
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=377977949
+
+  ```
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  rijndaelSetupEncrypt
+  rijndaelSetupDecrypt
+  AES_PDF_native::AES_PDF_native
+  ```
+modified: '2024-11-09T00:13:03.371200Z'
+published: '2024-11-09T00:13:03.370689Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=377977949
+affected:
+- package:
+    name: qpdf
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/qpdf
+  ranges:
+  - type: GIT
+    repo: https://github.com/qpdf/qpdf.git
+    events:
+    - introduced: d8d73679e71942c4d53e6f8826aa5b51eaa57137
+    - fixed: 3ea83e9993801b002b4db8abaaa08dec31989ec7
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: c1377176f8a65f62c4a2f582062554dc69dd5e81:7f3b05ddb4bd9ff7e2da5fea17646b5fc99b45ba
+    fixed_range: 54cf0e519c49e3fb44c7ca1de95a1fffbafc211c:3ea83e9993801b002b4db8abaaa08dec31989ec7
+  versions: []
+schema_version: 1.6.0
