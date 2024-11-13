@@ -1,0 +1,34 @@
+id: OSV-2024-1293
+summary: Use-of-uninitialized-value in k5_hashtab_add
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=377530685
+
+  ```
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  k5_hashtab_add
+  insert_entry
+  fuzz_kdc.c
+  ```
+modified: '2024-11-08T00:16:09.026399Z'
+published: '2024-11-08T00:16:09.025852Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=377530685
+affected:
+- package:
+    name: krb5
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/krb5
+  ranges:
+  - type: GIT
+    repo: https://github.com/krb5/krb5.git
+    events:
+    - introduced: 7cc16a52b4ea68939da6407ed66914a792441463
+    - fixed: d09433aed821d40142b10dc5b4a0aa8110c5a09e
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: ff4d99b1e4f7b652fc98330c21d1c92e01f14736:0a23b0cd9466e8a7c6fb82fce185be6e0834ce26
+  versions: []
+schema_version: 1.6.0
