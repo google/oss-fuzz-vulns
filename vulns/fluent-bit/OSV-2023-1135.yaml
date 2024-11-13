@@ -10,7 +10,7 @@ details: |
   flb_cf_key_translate
   flb_cf_section_property_add
   ```
-modified: '2024-11-05T14:21:30.434220Z'
+modified: '2024-11-13T14:21:51.852129Z'
 published: '2023-11-11T13:00:21.019255Z'
 references:
 - type: REPORT
@@ -57,6 +57,7 @@ affected:
   - v3.1.8
   - v3.1.9
   - v3.1.10
+  - v3.2.0
   ecosystem_specific:
     severity: null
 schema_version: 1.6.0
