@@ -1,0 +1,32 @@
+id: OSV-2024-1310
+summary: Use-of-uninitialized-value in decompress_yuv.cc
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=378750938
+
+  ```
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  decompress_yuv.cc
+  ```
+modified: '2024-11-15T00:03:32.570195Z'
+published: '2024-11-15T00:03:32.569897Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=378750938
+affected:
+- package:
+    name: libjpeg-turbo
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libjpeg-turbo
+  ranges:
+  - type: GIT
+    repo: https://github.com/libjpeg-turbo/libjpeg-turbo
+    events:
+    - introduced: 46bdedf463de55de9aea68d2060f83d613c6a906
+    - fixed: 0253e338861f1b15ccf530f83d0d2914d6235e0a
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: f02b7209b2ac280d9078224551cf34a08003c862:884bbf73da3c2cb67e958311330b0128cf97005e
+  versions: []
+schema_version: 1.6.0
