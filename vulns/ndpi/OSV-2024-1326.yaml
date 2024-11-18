@@ -1,0 +1,35 @@
+id: OSV-2024-1326
+summary: Heap-buffer-overflow in ndpi_search_mikrotik
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=379180960
+
+  ```
+  Crash type: Heap-buffer-overflow READ 16
+  Crash state:
+  ndpi_search_mikrotik
+  check_ndpi_detection_func
+  ndpi_detection_process_packet
+  ```
+modified: '2024-11-18T00:12:17.791146Z'
+published: '2024-11-18T00:12:17.790747Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=379180960
+affected:
+- package:
+    name: ndpi
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/ndpi
+  ranges:
+  - type: GIT
+    repo: https://github.com/ntop/nDPI.git
+    events:
+    - introduced: dfc3168caf289c6de9ccad6401e819d710455ba2
+    - fixed: 35f37c38d983108b55f38f62b7b58582c1909c39
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: 59ee1fe1156be234fed796972a29a31a0589e25a:3ce8d0e5087f6e3f2a3e1f65d39d78c228054a5d
+    fixed_range: 4fd12278b111eeaf1068876f77fb0a6176f69a34:35f37c38d983108b55f38f62b7b58582c1909c39
+  versions: []
+schema_version: 1.6.0
