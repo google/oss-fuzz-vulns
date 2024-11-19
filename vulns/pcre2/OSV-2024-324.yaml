@@ -9,7 +9,7 @@ details: |
   do_callout_jit
   jit_machine_stack_exec
   ```
-modified: '2024-06-07T14:20:42.928598Z'
+modified: '2024-11-19T21:52:42.928598Z'
 published: '2024-04-29T05:41:58.770090Z'
 references:
 - type: REPORT
@@ -24,8 +24,8 @@ affected:
     repo: https://github.com/PCRE2Project/pcre2
     events:
     - introduced: 3eedbacfeeecd2a06a282c7f9b630883840cbbc4
-  versions:
-  - pcre2-10.44
+    - fixed: 4c7cc9a0037c2ac4490fe7cf879c3957538541a0
+  versions: []
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.6.0
