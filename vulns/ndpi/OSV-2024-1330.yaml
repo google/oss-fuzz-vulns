@@ -10,7 +10,7 @@ details: |
   ndpi_detection_process_packet
   ndpi_workflow_process_packet
   ```
-modified: '2024-11-20T00:15:27.562795Z'
+modified: '2024-11-20T14:27:37.875526Z'
 published: '2024-11-20T00:15:27.562125Z'
 references:
 - type: REPORT
@@ -26,10 +26,12 @@ affected:
     events:
     - introduced: 0d36d9c8c2d02a8d2e93f5419925140674bbeead
     - fixed: 2e2f08cd87266afef888c8b539c1891b30a1cc1c
+    - fixed: c228502cb4d06de42a01e4c451f6b1acd750ce71
   versions:
   - '4.10'
   ecosystem_specific:
     severity: MEDIUM
   database_specific:
     introduced_range: 4072cb8862507ef091c7b3e15abd67a90902379d:ae36648c6cc08a5ef170a719a4476fe16e3a0e37
+    fixed_range: de8c326cd218867b88c25b0e6c0be9e2c909b1e9:c228502cb4d06de42a01e4c451f6b1acd750ce71
 schema_version: 1.6.0
