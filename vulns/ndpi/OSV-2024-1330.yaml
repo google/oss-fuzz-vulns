@@ -1,0 +1,35 @@
+id: OSV-2024-1330
+summary: Heap-buffer-overflow in zoom_search_again
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=379072455
+
+  ```
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  zoom_search_again
+  ndpi_detection_process_packet
+  ndpi_workflow_process_packet
+  ```
+modified: '2024-11-20T00:15:27.562795Z'
+published: '2024-11-20T00:15:27.562125Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=379072455
+affected:
+- package:
+    name: ndpi
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/ndpi
+  ranges:
+  - type: GIT
+    repo: https://github.com/ntop/nDPI.git
+    events:
+    - introduced: 0d36d9c8c2d02a8d2e93f5419925140674bbeead
+    - fixed: 2e2f08cd87266afef888c8b539c1891b30a1cc1c
+  versions:
+  - '4.10'
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: 4072cb8862507ef091c7b3e15abd67a90902379d:ae36648c6cc08a5ef170a719a4476fe16e3a0e37
+schema_version: 1.6.0
