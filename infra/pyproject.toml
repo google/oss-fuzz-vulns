@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "syncer"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+google-auth = "^2.36.0"
+google-auth-httplib2 = "^0.2.0"
+google-api-python-client = "^2.154.0"
+google-cloud-datastore = "^2.20.1"
+google-cloud-pubsub = "^2.27.1"
+pyyaml = "^6.0.2"
+google-cloud-storage = "^2.18.2"
+
+
+[tool.poetry.group.dev.dependencies]
+pylint = "^3.3.1"
+yapf = "^0.43.0"
+pyright = "^1.1.389"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
