@@ -10,7 +10,7 @@ details: |
   cv::split
   TestSplitAndMerge
   ```
-modified: '2024-06-03T14:14:36.416394Z'
+modified: '2024-12-05T14:13:11.956543Z'
 published: '2022-05-04T00:00:27.326853Z'
 references:
 - type: REPORT
@@ -47,6 +47,7 @@ affected:
   - 3.4.20
   - 4.9.0
   - 4.10.0
+  - 5.0.0-alpha
   ecosystem_specific:
     severity: MEDIUM
   database_specific:
