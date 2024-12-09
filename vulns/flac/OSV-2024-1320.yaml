@@ -1,0 +1,32 @@
+id: OSV-2024-1320
+summary: Heap-buffer-overflow in process_page_
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=379254072
+
+  ```
+  Crash type: Heap-buffer-overflow READ 4
+  Crash state:
+  process_page_
+  FLAC__ogg_decoder_aspect_skip_link
+  FLAC__stream_decoder_seek_absolute
+  ```
+modified: '2024-11-17T00:15:09.628193Z'
+published: '2024-11-17T00:15:09.627790Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=379254072
+affected:
+- package:
+    name: flac
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/flac
+  ranges:
+  - type: GIT
+    repo: https://github.com/xiph/flac.git
+    events:
+    - introduced: 17811b3af605b25a10393547479dd1424ae0ccd1
+    - fixed: e3a7157b7415c8c7221ac7f05da1c54a8047d183
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.6.0
