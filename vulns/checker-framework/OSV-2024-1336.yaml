@@ -1,0 +1,35 @@
+id: OSV-2024-1336
+summary: Security exception in org.checkerframework.checker.formatter.util.FormatUtil.formatParameterCategories
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=380409697
+
+  ```
+  Crash type: Security exception
+  Crash state:
+  org.checkerframework.checker.formatter.util.FormatUtil.formatParameterCategories
+  UtilCheckerFuzzer.fuzzChecker
+  UtilCheckerFuzzer.fuzzerTestOneInput
+  ```
+modified: '2024-11-26T00:01:25.737632Z'
+published: '2024-11-26T00:01:25.736998Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=380409697
+affected:
+- package:
+    name: checker-framework
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/checker-framework
+  ranges:
+  - type: GIT
+    repo: https://github.com/typetools/checker-framework
+    events:
+    - introduced: f75357523cbc03389039113699591bef755a9a69
+    - fixed: 5071e451ca61493aac095e8629e1db0495f11922
+  versions:
+  - checker-framework-3.48.3
+  ecosystem_specific:
+    severity: LOW
+  database_specific:
+    introduced_range: b9bbcdd1d8592846320ee03a3b30f422190122a9:890717bbc37e2da9237b44ac1c13539d343b9dde
+schema_version: 1.6.0
