@@ -11,7 +11,7 @@ details: |
   boost::re_detail_500::basic_regex_formatter<std::__1::ostream_iterator<char, cha
   std::__1::ostream_iterator<char, char, std::__1::char_traits<char> > boost::re_d
   ```
-modified: '2024-11-16T14:20:04.771413Z'
+modified: '2024-12-12T14:20:03.494804Z'
 published: '2024-08-16T00:08:20.277708Z'
 references:
 - type: REPORT
@@ -33,6 +33,7 @@ affected:
   - boost-1.86.0
   - boost-1.86.0.beta1
   - boost-1.87.0.beta1
+  - boost-1.87.0
   ecosystem_specific:
     severity: MEDIUM
   database_specific:
