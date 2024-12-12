@@ -1,0 +1,32 @@
+id: OSV-2024-1356
+summary: Heap-buffer-overflow in ChunkAssignData
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=382816119
+
+  ```
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  ChunkAssignData
+  WebPMuxCreateInternal
+  MuxDemuxApiTest
+  ```
+modified: '2024-12-10T00:13:56.482170Z'
+published: '2024-12-10T00:13:56.481718Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=382816119
+affected:
+- package:
+    name: libwebp
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libwebp
+  ranges:
+  - type: GIT
+    repo: https://chromium.googlesource.com/webm/libwebp
+    events:
+    - introduced: 306335198d2419988223cac98f7c99c6975204c2
+    - fixed: 9e5ecfaf0040241da6f541c7a138229b61b10626
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.6.0
