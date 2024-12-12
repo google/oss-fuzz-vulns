@@ -10,7 +10,7 @@ details: |
   CombineFlag
   TranslateWord2
   ```
-modified: '2023-10-08T13:00:48.222397Z'
+modified: '2024-12-12T14:15:21.369705Z'
 published: '2023-10-08T13:00:48.222080Z'
 references:
 - type: REPORT
@@ -27,6 +27,7 @@ affected:
     - introduced: 0a713d52bbf3e061823d1a7f35e5303e7320f27a
   versions:
   - '1.51'
+  - 1.52.0
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.6.0
