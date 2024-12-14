@@ -1,0 +1,34 @@
+id: OSV-2024-1372
+summary: Bad-cast to Assimp::LogStream from Assimp::OptimizeMeshesProcess
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=383595860
+
+  ```
+  Crash type: Bad-cast
+  Crash state:
+  Bad-cast to Assimp::LogStream from Assimp::OptimizeMeshesProcess
+  CallbackToLogRedirector
+  Assimp::DefaultLogger::WriteToStreams
+  ```
+modified: '2024-12-14T00:00:14.982614Z'
+published: '2024-12-14T00:00:14.982156Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=383595860
+affected:
+- package:
+    name: assimp
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/assimp
+  ranges:
+  - type: GIT
+    repo: https://github.com/assimp/assimp.git
+    events:
+    - introduced: 4024726eca89331503bdab33d0b9186e901bbc45
+    - fixed: 76d22e5fbe4bd54458a3a0a04d76ab4a22e7e117
+  ecosystem_specific:
+    severity: HIGH
+  database_specific:
+    fixed_range: 28ebc8452b4205aacbdbb6d1c32ab0da6d6bde56:76d22e5fbe4bd54458a3a0a04d76ab4a22e7e117
+  versions: []
+schema_version: 1.6.0
