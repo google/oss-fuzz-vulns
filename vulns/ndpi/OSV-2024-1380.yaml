@@ -1,0 +1,32 @@
+id: OSV-2024-1380
+summary: Index-out-of-bounds in ndpi_search_dns
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=383911300
+
+  ```
+  Crash type: Index-out-of-bounds
+  Crash state:
+  ndpi_search_dns
+  search_dns_again
+  ndpi_detection_process_packet
+  ```
+modified: '2024-12-15T00:12:21.687988Z'
+published: '2024-12-15T00:12:21.687565Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=383911300
+affected:
+- package:
+    name: ndpi
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/ndpi
+  ranges:
+  - type: GIT
+    repo: https://github.com/ntop/nDPI.git
+    events:
+    - introduced: 45323e3bf8a0fc56fd5f74c12f78e2f27429e701
+    - fixed: 21493d5654484f6dd3427228832d02688789e47c
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.6.0
