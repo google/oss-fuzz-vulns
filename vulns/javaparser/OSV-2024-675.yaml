@@ -10,7 +10,7 @@ details: |
   java.base/java.util.Objects.equals
   com.github.javaparser.Position.equals
   ```
-modified: '2024-09-02T14:18:35.529840Z'
+modified: '2024-12-17T14:18:21.805027Z'
 published: '2024-07-24T00:07:37.523933Z'
 references:
 - type: REPORT
@@ -27,6 +27,8 @@ affected:
     - introduced: bc146276416cc7dfc792db1554dc6e9ff7d8f16a
   versions:
   - javaparser-parent-3.26.2
+  - javaparser-parent-3.26.3
+  - v_snapshot_2751159
   ecosystem_specific:
     severity: LOW
 schema_version: 1.6.0
