@@ -10,7 +10,7 @@ details: |
   Assimp::MD5::MD5Parser::MD5Parser
   Assimp::MD5Importer::LoadMD5MeshFile
   ```
-modified: '2024-08-31T14:11:31.913202Z'
+modified: '2024-12-19T14:05:46.818834Z'
 published: '2023-07-02T14:00:19.269762Z'
 references:
 - type: REPORT
@@ -25,6 +25,7 @@ affected:
     repo: https://github.com/assimp/assimp.git
     events:
     - introduced: 8a975549a99bd21b7a2c09cc37b73e52a3919fed
+    - fixed: ecc8a1c8695560df108d6adc00b3d7b1ba15df9f
   versions:
   - 5.2.0
   - v5.1.0
@@ -49,4 +50,6 @@ affected:
   - v5.4.3
   ecosystem_specific:
     severity: MEDIUM
+  database_specific:
+    fixed_range: 2b773f0f5a726c38dda72307b5311c14fc3a76ae:ecc8a1c8695560df108d6adc00b3d7b1ba15df9f
 schema_version: 1.4.0
