@@ -10,7 +10,7 @@ details: |
   json_RNUMBER_Header
   dwg_read_json
   ```
-modified: '2024-12-24T14:20:17.989242Z'
+modified: '2024-12-25T14:21:22.172697Z'
 published: '2024-04-30T00:12:26.560732Z'
 references:
 - type: REPORT
@@ -25,6 +25,7 @@ affected:
     repo: https://github.com/LibreDWG/libredwg
     events:
     - introduced: 6d082fd0b2c6c33914cbdc943370b9a0a5dd3ef0
+    - fixed: 56d392a7e5ae5f522004ff92396dabd468f8d810
   versions:
   - '0.13'
   - 0.13.1
@@ -62,7 +63,6 @@ affected:
   - 0.13.3.7298
   - 0.13.3.7306
   - 0.13.3.7308
-  - 0.13.3.7311
   - 0.13.3.7320
   - 0.13.3.7324
   - 0.13.3.7327
@@ -81,7 +81,8 @@ affected:
   - 0.13.3.7414
   - 0.13.3.7420
   - 0.13.3.7424
-  - 0.13.3.7426
   ecosystem_specific:
     severity: HIGH
+  database_specific:
+    fixed_range: 47a07e5fadfd335adf63cb3ff995edbda86565a3:56d392a7e5ae5f522004ff92396dabd468f8d810
 schema_version: 1.6.0
