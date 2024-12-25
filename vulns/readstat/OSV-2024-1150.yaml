@@ -1,0 +1,31 @@
+id: OSV-2024-1150
+summary: Heap-buffer-overflow in extract_mr_data
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=369236552
+
+  ```
+  Crash type: Heap-buffer-overflow READ {*}
+  Crash state:
+  extract_mr_data
+  parse_mr_string
+  readstat_parse_sav
+  ```
+modified: '2024-09-29T00:02:55.189369Z'
+published: '2024-09-29T00:02:55.188981Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=369236552
+affected:
+- package:
+    name: readstat
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/readstat
+  ranges:
+  - type: GIT
+    repo: https://github.com/WizardMac/ReadStat
+    events:
+    - introduced: ba4392e9d48c4d997d2737719f4cf6320fb66990
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.6.0
