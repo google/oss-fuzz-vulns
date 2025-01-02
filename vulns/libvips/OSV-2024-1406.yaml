@@ -1,0 +1,34 @@
+id: OSV-2024-1406
+summary: UNKNOWN READ in _TIFFVSetField
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=385406655
+
+  ```
+  Crash type: UNKNOWN READ
+  Crash state:
+  _TIFFVSetField
+  TIFFSetField
+  TIFFFetchNormalTag
+  ```
+modified: '2024-12-27T00:16:38.077756Z'
+published: '2024-12-27T00:16:38.077175Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=385406655
+affected:
+- package:
+    name: libvips
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libvips
+  ranges:
+  - type: GIT
+    repo: https://github.com/libvips/libvips.git
+    events:
+    - introduced: 1ad652636bf80190860afde5f4a0365f71dd0301
+    - fixed: 0c9c7b16fe8ed35237c8994c13ead654f94ed860
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: 681a06340f22620559eb26b4037c9e9acc3e90b8:dee0d89ff385407b65f8526657a5cdb3b1e82bb9
+  versions: []
+schema_version: 1.6.0
