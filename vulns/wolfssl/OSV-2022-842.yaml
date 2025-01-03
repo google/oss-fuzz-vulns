@@ -10,7 +10,7 @@ details: |
   wc_ed448_sign_msg_ex
   wc_ed448_sign_msg
   ```
-modified: '2025-01-01T14:18:49.189446Z'
+modified: '2025-01-03T14:18:59.480558Z'
 published: '2022-09-05T00:00:28.251072Z'
 references:
 - type: REPORT
@@ -41,6 +41,7 @@ affected:
   - v5.7.2-stable
   - v5.7.4-stable
   - v5.7.6-stable
+  - v5.2.1
   ecosystem_specific:
     severity: HIGH
 schema_version: 1.2.0
