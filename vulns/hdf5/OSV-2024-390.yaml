@@ -10,7 +10,7 @@ details: |
   H5C__generate_image
   H5C__flush_single_entry
   ```
-modified: '2024-10-03T15:37:09.897852Z'
+modified: '2025-01-04T14:39:52.747153Z'
 published: '2024-04-30T00:14:19.116132Z'
 references:
 - type: REPORT
@@ -28,6 +28,7 @@ affected:
     - introduced: 04f0647727677d716a3c1c772d35a660a8ea0dc5
     - introduced: 5a0ec52099cf02224a4066b158bcf1a34829db20
     - introduced: f527239564fc27a6e666ce734b88e4ab18765efc
+    - fixed: 85bef9d1a71c0345f7204e4ad56bfc95b8aaca39
   versions:
   - 1.14.1
   - hdf5-1_10_10
@@ -42,12 +43,14 @@ affected:
   - hdf5_1.14.4.1
   - hdf5_1.14.4.2
   - hdf5_1.14.4.3
+  - hdf5_1.14.5
   - snapshot
   - snapshot-1.10
   - snapshot-1.12
   - snapshot-1.14
-  - hdf5_1.14.5
   - snapshot-1.16
   ecosystem_specific:
     severity: MEDIUM
+  database_specific:
+    fixed_range: ed082ac981a23eea56d7e15f1bc1fd2d6f9dd5bd:85bef9d1a71c0345f7204e4ad56bfc95b8aaca39
 schema_version: 1.6.0
