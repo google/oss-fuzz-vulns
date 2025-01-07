@@ -10,7 +10,7 @@ details: |
   unpack_meta_opts
   cmt_mpack_unpack_map
   ```
-modified: '2024-10-08T00:15:47.433701Z'
+modified: '2025-01-07T14:18:41.454320Z'
 published: '2024-10-08T00:15:47.433219Z'
 references:
 - type: REPORT
@@ -25,6 +25,7 @@ affected:
     repo: https://github.com/fluent/fluent-bit/
     events:
     - introduced: 03afd1f185b4814a35ed5f5e81f3d4a687f114dc
+    - introduced: 4c37d914cb50b2135ea76c2dc1c16be9418ae0d4
   versions:
   - v2.1.10
   - v2.1.5
