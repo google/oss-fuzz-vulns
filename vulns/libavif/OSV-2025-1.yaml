@@ -1,0 +1,32 @@
+id: OSV-2025-1
+summary: Segv on unknown address in avif_fuzztest_properties@PropertiesAvifFuzzTest.PropsValid
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=386572864
+
+  ```
+  Crash type: Segv on unknown address
+  Crash state:
+  avif_fuzztest_properties@PropertiesAvifFuzzTest.PropsValid
+  ```
+modified: '2025-01-04T00:00:30.889140Z'
+published: '2025-01-04T00:00:30.888504Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=386572864
+affected:
+- package:
+    name: libavif
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libavif
+  ranges:
+  - type: GIT
+    repo: https://github.com/AOMediaCodec/libavif.git
+    events:
+    - introduced: 3a25ba1db33ff5e91ac28afcda382ea1d1ba4e58
+    - fixed: 04e37141c1aae3b643215ceccfe98297008743c7
+  ecosystem_specific:
+    severity: null
+  database_specific:
+    introduced_range: a2849646e0008314286a814cb656676dea067934:3a020d16558d96f98cb526dcdf6a86742c69955d
+  versions: []
+schema_version: 1.6.0

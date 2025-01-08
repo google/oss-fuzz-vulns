@@ -1,0 +1,33 @@
+id: OSV-2024-1203
+summary: Global-buffer-overflow in AnnouncePunctuation
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=372298920
+
+  ```
+  Crash type: Global-buffer-overflow WRITE {*}
+  Crash state:
+  AnnouncePunctuation
+  ReadClause
+  TranslateClause
+  ```
+modified: '2024-10-11T00:02:53.599146Z'
+published: '2024-10-11T00:02:53.598773Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=372298920
+affected:
+- package:
+    name: espeak-ng
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/espeak-ng
+  ranges:
+  - type: GIT
+    repo: https://github.com/espeak-ng/espeak-ng
+    events:
+    - introduced: 0a713d52bbf3e061823d1a7f35e5303e7320f27a
+  versions:
+  - '1.51'
+  - 1.52.0
+  ecosystem_specific:
+    severity: null
+schema_version: 1.6.0

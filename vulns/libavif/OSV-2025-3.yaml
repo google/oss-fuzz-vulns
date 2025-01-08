@@ -1,0 +1,33 @@
+id: OSV-2025-3
+summary: Heap-buffer-overflow in avifImageAddUUIDProperty
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=386713389
+
+  ```
+  Crash type: Heap-buffer-overflow READ 16
+  Crash state:
+  avifImageAddUUIDProperty
+  avif::testutil::PropsValid
+  ```
+modified: '2025-01-05T00:10:22.872062Z'
+published: '2025-01-05T00:10:22.871565Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=386713389
+affected:
+- package:
+    name: libavif
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libavif
+  ranges:
+  - type: GIT
+    repo: https://github.com/AOMediaCodec/libavif.git
+    events:
+    - introduced: 3a25ba1db33ff5e91ac28afcda382ea1d1ba4e58
+    - fixed: 04e37141c1aae3b643215ceccfe98297008743c7
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: a2849646e0008314286a814cb656676dea067934:3a020d16558d96f98cb526dcdf6a86742c69955d
+  versions: []
+schema_version: 1.6.0

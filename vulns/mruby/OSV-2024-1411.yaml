@@ -1,0 +1,35 @@
+id: OSV-2024-1411
+summary: Use-of-uninitialized-value in mark_context
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=386128938
+
+  ```
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  mark_context
+  incremental_gc
+  mrb_incremental_gc
+  ```
+modified: '2024-12-29T00:03:28.882100Z'
+published: '2024-12-29T00:03:28.881713Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=386128938
+affected:
+- package:
+    name: mruby
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/mruby
+  ranges:
+  - type: GIT
+    repo: https://github.com/mruby/mruby
+    events:
+    - introduced: 7c69a37aa6f7d3ef2a39714ec7c1e4e0282d710e
+    - fixed: 8276143f03a5322bca60aa31e428e16c232ee92c
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: 6037e5029848ad07d3a5000185810a06952a6b5c:61f57b22dd76c4d2f85721417aa21c2bbc4d3e11
+    fixed_range: 8c2c57c59bc3f76e144f4f0773f9d6077360cbf1:8276143f03a5322bca60aa31e428e16c232ee92c
+  versions: []
+schema_version: 1.6.0
