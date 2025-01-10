@@ -10,7 +10,7 @@ details: |
   H5FS_sect_find
   H5MF__find_sect
   ```
-modified: '2024-05-27T14:16:07.509934Z'
+modified: '2025-01-10T05:30:29.297578Z'
 published: '2024-04-30T00:12:09.539697Z'
 references:
 - type: REPORT
@@ -32,6 +32,7 @@ affected:
     - fixed: 5e9e8ff598e6af721459db59aea8b2a9b489d4ec
     - fixed: 88d78fb508d14f3e246fed91064f3546eeb1d702
     - fixed: 43affeb0f388466b5be555879d91d14037be0e99
+    - fixed: e3c709b1eda4d120d6713c738daace7408140e6e
   versions:
   - snapshot
   ecosystem_specific:
