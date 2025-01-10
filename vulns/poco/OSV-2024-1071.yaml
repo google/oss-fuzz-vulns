@@ -1,0 +1,28 @@
+id: OSV-2024-1071
+summary: Use-of-uninitialized-value in Poco::Dynamic::Var::~Var
+details: "OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42538385\n\
+  \n```\nCrash type: Use-of-uninitialized-value\nCrash state:\nPoco::Dynamic::Var::~Var\n\
+  void Poco::JSON::Object::doStringify<std::__1::map<std::__1::basic_string<char,\
+  \ \nPoco::JWT::Serializer::serialize\n```\n"
+modified: '2024-09-15T00:06:58.343242Z'
+published: '2024-09-15T00:06:58.342742Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42538385
+affected:
+- package:
+    name: poco
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/poco
+  ranges:
+  - type: GIT
+    repo: https://github.com/pocoproject/poco
+    events:
+    - introduced: 91c256095f846cd92591e070d4dc075d2a7f7aa9
+    - fixed: bd7be38d6fe7eff50e65223ffe39fb2cbac1c521
+    - fixed: af36c9badfcd8971f7a6cf68f1cb759751694673
+  versions:
+  - poco-1.14.0-release
+  ecosystem_specific:
+    severity: MEDIUM
+schema_version: 1.6.0
