@@ -10,7 +10,7 @@ details: |
   gx_device_finalize
   gs_gc_reclaim
   ```
-modified: '2024-04-29T11:38:05.915041Z'
+modified: '2025-01-10T05:30:43.786965Z'
 published: '2024-04-12T00:02:31.478145Z'
 references:
 - type: REPORT
@@ -48,6 +48,8 @@ affected:
   - ghostpdl-10.03.0rc1_test
   - ghostpdl-10.03.0rc1_test002
   - ghostpdl-10.03.0rc1_test003
+  - ghostpdl-10.03.0
+  - ghostpdl-10.03.1
   ecosystem_specific:
     severity: HIGH
   database_specific:
