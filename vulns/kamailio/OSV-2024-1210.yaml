@@ -10,7 +10,7 @@ details: |
   parse_sdp
   fuzz_parse_msg.c
   ```
-modified: '2024-10-11T00:15:50.055408Z'
+modified: '2025-01-10T05:11:11.351763Z'
 published: '2024-10-11T00:15:50.054920Z'
 references:
 - type: REPORT
@@ -26,6 +26,7 @@ affected:
     events:
     - introduced: 1e71168342894c992ab376bf8538c0953db31fe4
     - fixed: e802f9187383feb7fdd96c4ded44fda403da4535
+    - fixed: e650ace5948c76ea2d8eb7eaeebb5c349970447d
   versions:
   - 5.6.0
   - 5.6.1
