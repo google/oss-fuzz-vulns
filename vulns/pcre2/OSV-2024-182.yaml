@@ -23,7 +23,10 @@ affected:
     repo: https://github.com/PCRE2Project/pcre2
     events:
     - introduced: 6e5283c8499ecc3619722ab1effe7acac2bd7558
+    - fixed: 9b75a3b7a1f2243dd39883a1328b69c0653edea1
   ecosystem_specific:
     severity: MEDIUM
+  database_specific:
+    fixed_range: 3c5ca5c1eabf64e1e0912b6c9eaa18850d4c3b40:9b75a3b7a1f2243dd39883a1328b69c0653edea1
   versions: []
 schema_version: 1.6.0
