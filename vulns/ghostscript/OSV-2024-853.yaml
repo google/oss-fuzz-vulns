@@ -10,7 +10,7 @@ details: |
   pdfi_interpret_content_stream
   pdfi_page_render
   ```
-modified: '2024-08-16T00:04:58.897595Z'
+modified: '2025-01-10T05:30:16.360095Z'
 published: '2024-08-16T00:04:58.897243Z'
 references:
 - type: REPORT
@@ -26,6 +26,7 @@ affected:
     events:
     - introduced: bf0048d271aa6a4d9898997ada84cf89c197e791
     - fixed: 5f738726ebaa0b769bd016651d5f8c9ea9969f3e
+    - fixed: 1857ded8b6ac2fc697e34900a593d96c961d1790
   versions:
   - ghostpdl-10.04.0
   - ghostpdl-10.04.0rc1
@@ -36,4 +37,5 @@ affected:
     severity: MEDIUM
   database_specific:
     introduced_range: f6dc854531c7f591e8f6f60dac7a312c8acb2e6b:4c8ded763017611bb9479a027dc2cc1ae5fe01cb
+    fixed_range: 12fe3c47650a0e74d33a96ae394da5beee537e36:1857ded8b6ac2fc697e34900a593d96c961d1790
 schema_version: 1.6.0
