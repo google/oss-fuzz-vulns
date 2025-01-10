@@ -10,9 +10,9 @@ details: |
   std::__1::__function::__func<LLVMFuzzerTestOneInput::$_39, std::__1::allocator<L
   function.h
   ```
-modified: '2024-05-08T03:26:30.000000Z'
+modified: '2024-05-08T03:26:30Z'
 published: '2024-05-05T00:15:04.589857Z'
-withdrawn: '2024-05-08T03:26:30.000000Z'
+withdrawn: '2024-05-08T03:26:30Z'
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=68524
@@ -26,9 +26,11 @@ affected:
     repo: https://boringssl.googlesource.com/boringssl
     events:
     - introduced: 0d9ea840bc8c482ca043fb9bbd6376088e37fbcc
+    - fixed: 3e89a7e8db8139db356b892ca9993172346c80cf
   ecosystem_specific:
     severity: MEDIUM
   database_specific:
     introduced_range: d69e8b46184b6fd844a4a92b4a6f4347d08ee439:2db0eb3f96a5756298dcd7f9319e56a98585bd10
+    fixed_range: d2e3212de29bac1ceed33ca8ab8bbff3f41a2459:3e89a7e8db8139db356b892ca9993172346c80cf
   versions: []
 schema_version: 1.6.0
