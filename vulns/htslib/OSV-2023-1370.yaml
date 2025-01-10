@@ -10,7 +10,7 @@ details: |
   cram_encode_container
   cram_flush_container_mt
   ```
-modified: '2024-04-16T14:12:41.336230Z'
+modified: '2025-01-10T05:09:49.377670Z'
 published: '2023-12-29T00:14:11.001809Z'
 references:
 - type: REPORT
@@ -25,10 +25,11 @@ affected:
     repo: https://github.com/samtools/htslib.git
     events:
     - introduced: 9e1ffd856614fcfc0bb3b89501600827cc8705e7
+    - fixed: 67f3ab0f3707f8cacb0ad3571fd04eb7a14d5d58
   versions:
   - '1.19'
-  - 1.19.1
-  - '1.20'
   ecosystem_specific:
     severity: MEDIUM
+  database_specific:
+    fixed_range: 61b037bb881e85259f8df30c78d99ad3a357ed52:67f3ab0f3707f8cacb0ad3571fd04eb7a14d5d58
 schema_version: 1.6.0
