@@ -10,7 +10,7 @@ details: |
   llama_model::~llama_model
   llama_load_model_from_file
   ```
-modified: '2024-09-19T00:00:17.390515Z'
+modified: '2025-01-10T05:12:48.974830Z'
 published: '2024-09-19T00:00:17.390184Z'
 references:
 - type: REPORT
@@ -182,6 +182,16 @@ affected:
   - b3987
   - b3988
   - b3989
+  - b3757
+  - b3758
+  - b3769
+  - b3796
+  - b3810
+  - b3928
+  - b3937
+  - b3959
+  - b3965
+  - b3969
   ecosystem_specific:
     severity: MEDIUM
   database_specific:
