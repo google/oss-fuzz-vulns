@@ -10,7 +10,7 @@ details: |
   parse_sdp_session
   parse_sdp
   ```
-modified: '2024-10-19T00:00:26.793338Z'
+modified: '2025-01-10T05:21:03.406469Z'
 published: '2024-10-19T00:00:26.792754Z'
 references:
 - type: REPORT
@@ -26,6 +26,7 @@ affected:
     events:
     - introduced: 1e71168342894c992ab376bf8538c0953db31fe4
     - fixed: c823f41350ab9186a323707e9be32e31922bec17
+    - fixed: 0408c2cb412f0df0a17b70aa4d15026a9ef3a9a7
   versions:
   - 5.6.0
   - 5.6.1
