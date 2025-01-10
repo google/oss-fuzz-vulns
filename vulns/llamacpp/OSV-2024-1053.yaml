@@ -10,7 +10,7 @@ details: |
   llama_model_loader::llama_tensor_weight::llama_tensor_weight
   void std::__1::vector<llama_model_loader::llama_tensor_weight, std::__1::allocat
   ```
-modified: '2024-09-13T00:00:16.433060Z'
+modified: '2025-01-10T05:05:50.790792Z'
 published: '2024-09-13T00:00:16.432562Z'
 references:
 - type: REPORT
@@ -259,6 +259,21 @@ affected:
   - b4000
   - b4001
   - b4002
+  - b3665
+  - b3673
+  - b3736
+  - b3746
+  - b3748
+  - b3757
+  - b3758
+  - b3769
+  - b3796
+  - b3810
+  - b3928
+  - b3937
+  - b3959
+  - b3965
+  - b3969
   ecosystem_specific:
     severity: MEDIUM
   database_specific:
