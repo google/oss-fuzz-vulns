@@ -10,7 +10,7 @@ details: |
   H5O__shared_decode
   H5O__fill_new_shared_decode
   ```
-modified: '2024-04-29T11:42:39.813761Z'
+modified: '2025-01-10T05:29:55.716665Z'
 published: '2023-10-31T13:01:22.289748Z'
 references:
 - type: REPORT
@@ -45,6 +45,8 @@ affected:
   - snapshot-1.10
   - snapshot-1.12
   - snapshot-1.14
+  - hdf5_1.14.4.3
+  - hdf5_1.14.5
   ecosystem_specific:
     severity: MEDIUM
   database_specific:
