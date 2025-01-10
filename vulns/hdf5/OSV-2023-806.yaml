@@ -10,7 +10,7 @@ details: |
   H5MF_xfree
   H5MF_free_aggrs
   ```
-modified: '2024-04-29T11:48:03.166923Z'
+modified: '2025-01-10T06:30:49.271960Z'
 published: '2023-09-08T14:00:12.468140Z'
 references:
 - type: REPORT
@@ -45,6 +45,8 @@ affected:
   - snapshot-1.10
   - snapshot-1.12
   - snapshot-1.14
+  - hdf5_1.14.4.3
+  - hdf5_1.14.5
   ecosystem_specific:
     severity: MEDIUM
   database_specific:
