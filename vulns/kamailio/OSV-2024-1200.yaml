@@ -10,7 +10,7 @@ details: |
   extract_field
   parse_sdp_session
   ```
-modified: '2024-10-11T00:02:19.537837Z'
+modified: '2025-01-10T05:09:26.885831Z'
 published: '2024-10-11T00:02:19.537501Z'
 references:
 - type: REPORT
@@ -26,6 +26,7 @@ affected:
     events:
     - introduced: 1e71168342894c992ab376bf8538c0953db31fe4
     - fixed: e802f9187383feb7fdd96c4ded44fda403da4535
+    - fixed: e650ace5948c76ea2d8eb7eaeebb5c349970447d
   versions:
   - 5.6.0
   - 5.6.1
