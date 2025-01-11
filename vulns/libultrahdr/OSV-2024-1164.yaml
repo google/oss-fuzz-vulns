@@ -10,7 +10,7 @@ details: |
   ultrahdr::JpegEncoderHelper::encode
   ultrahdr::JpegEncoderHelper::compressImage
   ```
-modified: '2025-01-10T05:05:56.968693Z'
+modified: '2025-01-11T14:22:41.737787Z'
 published: '2024-10-02T00:13:05.449687Z'
 references:
 - type: REPORT
@@ -28,6 +28,7 @@ affected:
   versions:
   - v1.3.0
   - v1.3.1
+  - v1.4.0
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.6.0
