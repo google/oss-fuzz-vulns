@@ -1,0 +1,54 @@
+id: OSV-2024-1220
+summary: UNKNOWN READ in Assimp::NDOImporter::InternReadFile
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=372765427
+
+  ```
+  Crash type: UNKNOWN READ
+  Crash state:
+  Assimp::NDOImporter::InternReadFile
+  Assimp::BaseImporter::ReadFile
+  Assimp::Importer::ReadFile
+  ```
+modified: '2024-10-14T00:17:45.089047Z'
+published: '2024-10-14T00:17:45.088625Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=372765427
+affected:
+- package:
+    name: assimp
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/assimp
+  ranges:
+  - type: GIT
+    repo: https://github.com/assimp/assimp.git
+    events:
+    - introduced: 4cf4e7454f883cb5b34a484111fd06d7a3c7951c
+  versions:
+  - 5.2.0
+  - v5.1.0
+  - v5.1.0.rc1
+  - v5.1.1
+  - v5.1.2
+  - v5.1.3
+  - v5.1.4
+  - v5.1.5
+  - v5.1.6
+  - v5.2.0
+  - v5.2.1
+  - v5.2.2
+  - v5.2.3
+  - v5.2.4
+  - v5.2.5
+  - v5.3.0
+  - v5.3.1
+  - v5.4.0
+  - v5.4.1
+  - v5.4.2
+  - v5.4.3
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: 9553894c3b191684e6906aced11d0554900661dc:71a87b653cd4b5671104fe49e2e38cf5dd4d8675
+schema_version: 1.6.0
