@@ -1,0 +1,36 @@
+id: OSV-2025-17
+summary: Heap-buffer-overflow in cv::PngDecoder::readHeader
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=387626408
+
+  ```
+  Crash type: Heap-buffer-overflow READ 2
+  Crash state:
+  cv::PngDecoder::readHeader
+  cv::imdecode_
+  cv::imdecode
+  ```
+modified: '2025-01-08T00:14:02.009997Z'
+published: '2025-01-08T00:14:02.009521Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=387626408
+affected:
+- package:
+    name: opencv
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/opencv
+  ranges:
+  - type: GIT
+    repo: https://github.com/opencv/opencv.git
+    events:
+    - introduced: d39aae6bdfc1a45553e1426334a9c72848354261
+    - fixed: f00814e38db556ad7a31e6dee203e41eea48e7a6
+  versions:
+  - 4.11.0
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: 9c33baebbd262ed6f45436cf71d5f7a50907e9fe:8bc65a1d136c2ac4c31910ee271b5f3c9d14317e
+    fixed_range: bdb6a968ce69a2bf7c34724f9052c20e941ab47b:f00814e38db556ad7a31e6dee203e41eea48e7a6
+schema_version: 1.6.0
