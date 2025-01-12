@@ -10,7 +10,7 @@ details: |
   Poco::Net::HTTPNTLMCredentials::createNTLMMessage
   Poco::Net::HTTPNTLMCredentials::authenticate
   ```
-modified: '2024-10-13T00:11:43.323479Z'
+modified: '2025-01-12T14:19:41.877957Z'
 published: '2024-10-13T00:11:43.323181Z'
 references:
 - type: REPORT
@@ -25,10 +25,12 @@ affected:
     repo: https://github.com/pocoproject/poco
     events:
     - introduced: e55bb7032d20616c3fc22dcdb072ec53c4ef69d6
+    - fixed: 7297033be78f8fab21cce57fceb445e76bdbee26
   versions:
   - poco-1.14.0-release
   ecosystem_specific:
     severity: MEDIUM
   database_specific:
     introduced_range: 03c35cff930e421199b586c33a00eb6cc537ba28:3a8c6a72b13d1a6ce4e45e4f0f1a428b308b531e
+    fixed_range: 5652837b8f622f2e8d6aad5d286c78587a4a37b4:7297033be78f8fab21cce57fceb445e76bdbee26
 schema_version: 1.6.0
