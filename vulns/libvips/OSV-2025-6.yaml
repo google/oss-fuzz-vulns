@@ -1,0 +1,34 @@
+id: OSV-2025-6
+summary: Heap-buffer-overflow in next_marker
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=387317434
+
+  ```
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  next_marker
+  read_markers
+  consume_markers
+  ```
+modified: '2025-01-06T00:16:10.037219Z'
+published: '2025-01-06T00:16:10.036783Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=387317434
+affected:
+- package:
+    name: libvips
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libvips
+  ranges:
+  - type: GIT
+    repo: https://github.com/libvips/libvips.git
+    events:
+    - introduced: 7b47b07bcd0583c4f9d4afaac85d3abb5008edff
+    - fixed: 4689cda680c2b59bf8dca0b856fb58087196f60a
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    fixed_range: 7b47b07bcd0583c4f9d4afaac85d3abb5008edff:4689cda680c2b59bf8dca0b856fb58087196f60a
+  versions: []
+schema_version: 1.6.0
