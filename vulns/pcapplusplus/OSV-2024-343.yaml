@@ -10,7 +10,7 @@ details: |
   pcpp::BgpUpdateMessageLayer::clearPathAttributes
   readParsedPacket
   ```
-modified: '2024-09-04T14:16:51.394837Z'
+modified: '2025-01-13T14:51:10.266632Z'
 published: '2024-04-30T00:02:38.268026Z'
 references:
 - type: REPORT
@@ -25,10 +25,12 @@ affected:
     repo: https://github.com/seladb/PcapPlusPlus
     events:
     - introduced: 5f1895a7b496fa78a2927bd5fe610ab619a3f49b
+    - fixed: bc5c08d3df37e9d725656c345d3991ab0c982717
   versions:
   - v24.09
   ecosystem_specific:
     severity: MEDIUM
   database_specific:
     introduced_range: 762c7fd488d0bc6ce81d105fcb4f07ba2c9e6bc4:f112d0adcae6b75531894b3c1cb29f97bfdad171
+    fixed_range: ab755348711dfb94fa0780c5aa71a8e6e614d132:bc5c08d3df37e9d725656c345d3991ab0c982717
 schema_version: 1.6.0
