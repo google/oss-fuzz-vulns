@@ -10,7 +10,7 @@ details: |
   pcpp::Packet::extendLayer
   pcpp::BgpUpdateMessageLayer::setNetworkLayerReachabilityInfo
   ```
-modified: '2024-09-04T14:12:46.453296Z'
+modified: '2025-01-13T14:49:54.727943Z'
 published: '2023-11-23T13:01:26.936730Z'
 references:
 - type: REPORT
@@ -25,8 +25,11 @@ affected:
     repo: https://github.com/seladb/PcapPlusPlus
     events:
     - introduced: 6a67cab6914074841ed81116ac72219ca070a44d
+    - fixed: bc5c08d3df37e9d725656c345d3991ab0c982717
   versions:
   - v24.09
   ecosystem_specific:
     severity: null
+  database_specific:
+    fixed_range: ab755348711dfb94fa0780c5aa71a8e6e614d132:bc5c08d3df37e9d725656c345d3991ab0c982717
 schema_version: 1.6.0
