@@ -1,0 +1,35 @@
+id: OSV-2025-42
+summary: Heap-use-after-free in r_list_free
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=390467754
+
+  ```
+  Crash type: Heap-use-after-free READ 8
+  Crash state:
+  r_list_free
+  r_bin_bflt_free
+  r_bin_file_free
+  ```
+modified: '2025-01-19T00:06:58.534017Z'
+published: '2025-01-19T00:06:58.533546Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=390467754
+affected:
+- package:
+    name: radare2
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/radare2
+  ranges:
+  - type: GIT
+    repo: https://github.com/radareorg/radare2
+    events:
+    - introduced: d6cd906585b7c01c41b111dde0e0477945954646
+    - fixed: 44a501ba45d51776c9ea4820007477b580df50a3
+  ecosystem_specific:
+    severity: HIGH
+  database_specific:
+    introduced_range: b7d2fec2f732bffc4093d09485e9855c84201bc8:e798bd4482971a0d2aed211c551876f90e5ea411
+    fixed_range: e798bd4482971a0d2aed211c551876f90e5ea411:44a501ba45d51776c9ea4820007477b580df50a3
+  versions: []
+schema_version: 1.6.0
