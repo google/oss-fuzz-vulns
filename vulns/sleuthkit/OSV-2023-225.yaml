@@ -10,7 +10,7 @@ details: |
   APFSBtreeNodeIterator<APFSBtreeNode<apfs_omap_key, apfs_omap_value> >::APFSBtree
   APFSBtreeNodeIterator<APFSBtreeNode<apfs_omap_key, apfs_omap_value> > APFSBtreeN
   ```
-modified: '2023-08-30T14:14:16.149541Z'
+modified: '2025-01-20T14:12:20.434971Z'
 published: '2023-03-24T13:02:18.004510Z'
 references:
 - type: REPORT
@@ -28,6 +28,8 @@ affected:
   versions:
   - sleuthkit-4.12.0
   - sleuthkit-4.12.1
+  - ct-3.5.0
+  - ct-3.6.0
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.4.0
