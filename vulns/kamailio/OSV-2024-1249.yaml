@@ -1,0 +1,54 @@
+id: OSV-2024-1249
+summary: Heap-buffer-overflow in extract_ice_option
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=376100377
+
+  ```
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  extract_ice_option
+  parse_sdp_session
+  parse_sdp
+  ```
+modified: '2024-10-30T00:15:55.709526Z'
+published: '2024-10-30T00:15:55.709182Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=376100377
+affected:
+- package:
+    name: kamailio
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/kamailio
+  ranges:
+  - type: GIT
+    repo: https://github.com/kamailio/kamailio
+    events:
+    - introduced: 236fada43f610b910490f7e0c216ac9aa3d9480c
+    - fixed: 024c649c36bbe1d5ba4b306de53102cec4096734
+  versions:
+  - 5.6.0
+  - 5.6.1
+  - 5.6.2
+  - 5.6.3
+  - 5.6.4
+  - 5.6.5
+  - 5.6.6
+  - 5.7.0
+  - 5.7.1
+  - 5.7.2
+  - 5.7.3
+  - 5.7.4
+  - 5.7.5
+  - 5.7.6
+  - 5.8.0
+  - 5.8.1
+  - 5.8.2
+  - 5.8.3
+  - 5.8.4
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: cc4ac5c4b8133f435438bb322457eef7a8a642cf:fe7d7c571b6c8d446cf66a1cf27d335d98f5f945
+    fixed_range: 0a5db6808e859e88aae739e277d1647e05a4f4c6:024c649c36bbe1d5ba4b306de53102cec4096734
+schema_version: 1.6.0

@@ -1,0 +1,32 @@
+id: OSV-2025-45
+summary: Security exception in POIHDGFFuzzer
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=390461322
+
+  ```
+  Crash type: Security exception
+  Crash state:
+  POIHDGFFuzzer
+  ```
+modified: '2025-01-19T00:14:10.747322Z'
+published: '2025-01-19T00:14:10.746839Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=390461322
+affected:
+- package:
+    name: apache-poi
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/apache-poi
+  ranges:
+  - type: GIT
+    repo: https://github.com/apache/poi.git
+    events:
+    - introduced: 1b88529d072a9d4462c445a9953b898cb37c6913
+    - fixed: 1dbcea46d513e2d3c999db0402de552804844ef6
+  ecosystem_specific:
+    severity: LOW
+  database_specific:
+    fixed_range: 9c249442990221ba65500ed8e5a1a0e6bb005f1e:1dbcea46d513e2d3c999db0402de552804844ef6
+  versions: []
+schema_version: 1.6.0
