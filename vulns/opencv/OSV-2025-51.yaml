@@ -1,0 +1,35 @@
+id: OSV-2025-51
+summary: Heap-buffer-overflow in std::__1::__function::__func<cv::PngDecoder::compose_frame
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=390788198
+
+  ```
+  Crash type: Heap-buffer-overflow WRITE {*}
+  Crash state:
+  std::__1::__function::__func<cv::PngDecoder::compose_frame
+  cv::ParallelLoopBodyWrapper::operator
+  cv::ThreadPool::run
+  ```
+modified: '2025-01-22T00:03:50.356019Z'
+published: '2025-01-22T00:03:50.355443Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=390788198
+affected:
+- package:
+    name: opencv
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/opencv
+  ranges:
+  - type: GIT
+    repo: https://github.com/opencv/opencv.git
+    events:
+    - introduced: b4d03256663b6ceb2994c367be4664f282c9f1ec
+    - fixed: 7728dd3387112636912ff9420461ae11e37a732d
+  versions:
+  - 4.11.0
+  ecosystem_specific:
+    severity: HIGH
+  database_specific:
+    introduced_range: a6f72f813d307f77e7597447bdba25dcb5b6447d:ff18c9cc7904e878b10273265196e0238490e692
+schema_version: 1.6.0

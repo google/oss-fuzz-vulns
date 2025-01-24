@@ -1,0 +1,37 @@
+id: OSV-2023-1398
+summary: Heap-buffer-overflow in load_1
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=376515517
+
+  ```
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  load_1
+  apprentice_load
+  file_apprentice
+  ```
+modified: '2024-11-01T00:02:38.719949Z'
+published: '2024-11-01T00:02:38.719507Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=376515517
+affected:
+- package:
+    name: file
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/file
+  ranges:
+  - type: GIT
+    repo: https://github.com/file/file.git
+    events:
+    - introduced: fc601ce4124603d86277d6bf12242edbbb5ab6de
+    - fixed: 81a0cbd10c347496bdee7dde78f7e47a16b4e79f
+  versions:
+  - FILE5_44
+  - FILE5_45
+  - FILE5_46
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: e94d52646d646125cc5452b33f3a70f4e601c59e:93ddf99bc1d4e3dd526d5ae5367c3b4c4800354f
+schema_version: 1.6.0
