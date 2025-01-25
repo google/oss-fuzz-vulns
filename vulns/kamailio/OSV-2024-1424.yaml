@@ -10,7 +10,7 @@ details: |
   parse_sdp_session
   parse_mixed_content
   ```
-modified: '2025-01-25T00:17:13.787848Z'
+modified: '2025-01-25T14:25:05.188301Z'
 published: '2025-01-25T00:17:13.787335Z'
 references:
 - type: REPORT
@@ -26,6 +26,8 @@ affected:
     events:
     - introduced: 1e71168342894c992ab376bf8538c0953db31fe4
     - fixed: 08eda6e89c1fb899959c3f07efd93db30d7cb30c
+    - fixed: 2790d202e2756e1b5037239983b134d04bdb73f3
+    - fixed: 0e51b497a19c525a89d5fead5e0854b2b18317dd
   versions:
   - 5.6.0
   - 5.6.1
