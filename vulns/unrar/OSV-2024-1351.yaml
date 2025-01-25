@@ -1,0 +1,33 @@
+id: OSV-2024-1351
+summary: Use-of-uninitialized-value in Archive::UnexpEndArcMsg
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=382526743
+
+  ```
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  Archive::UnexpEndArcMsg
+  Archive::ReadHeader50
+  Archive::ReadHeader
+  ```
+modified: '2024-12-10T00:05:42.992960Z'
+published: '2024-12-10T00:05:42.992615Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=382526743
+affected:
+- package:
+    name: unrar
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/unrar
+  ranges:
+  - type: GIT
+    repo: https://github.com/aawc/unrar.git
+    events:
+    - introduced: 7f22bab6a957363b2002d0d6c964bfd49afe5f45
+    - fixed: a4ae80fa158d9f9fd5f745125288e301c2abf9fc
+  versions:
+  - v7.10.2
+  ecosystem_specific:
+    severity: MEDIUM
+schema_version: 1.6.0

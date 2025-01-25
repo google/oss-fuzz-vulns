@@ -1,0 +1,32 @@
+id: OSV-2025-52
+summary: Use-of-uninitialized-value in icalmemory_strdup
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=390646669
+
+  ```
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  icalmemory_strdup
+  icaltimezone_init_builtin_timezones
+  icaltimezone_get_utc_timezone
+  ```
+modified: '2025-01-22T00:07:34.573823Z'
+published: '2025-01-22T00:07:34.573371Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=390646669
+affected:
+- package:
+    name: libical
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libical
+  ranges:
+  - type: GIT
+    repo: https://github.com/libical/libical.git
+    events:
+    - introduced: c63cb1951b339aef71265bc92d23d211d0ac554a
+    - fixed: 6b7b9c2612dc5c8ee1f7d2604c417666e883a2e6
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.6.0
