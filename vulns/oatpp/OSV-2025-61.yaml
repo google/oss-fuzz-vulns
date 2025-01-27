@@ -1,0 +1,35 @@
+id: OSV-2025-61
+summary: Heap-buffer-overflow in oatpp::json::Utils::escapeString
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=391916478
+
+  ```
+  Crash type: Heap-buffer-overflow WRITE 1
+  Crash state:
+  oatpp::json::Utils::escapeString
+  oatpp::json::Serializer::serializeString
+  oatpp::json::Serializer::serializePairs
+  ```
+modified: '2025-01-27T00:00:09.906561Z'
+published: '2025-01-27T00:00:09.905879Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=391916478
+affected:
+- package:
+    name: oatpp
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/oatpp
+  ranges:
+  - type: GIT
+    repo: https://github.com/oatpp/oatpp.git
+    events:
+    - introduced: d48d9e34ae2849c2ed9cfbb1eaf480435578ba86
+    - fixed: d1b868b77ac3b1249db760d037fccbe263bac6d7
+  ecosystem_specific:
+    severity: HIGH
+  database_specific:
+    introduced_range: 151460d9827c680237fd73a0196e861d20f8e6bb:8451ee724a0b720075494bde2fd9d223d53bef17
+    fixed_range: bc1072120812d3c6816b2e2c26ac323f671ce8e8:d1b868b77ac3b1249db760d037fccbe263bac6d7
+  versions: []
+schema_version: 1.6.0
