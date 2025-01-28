@@ -1,0 +1,54 @@
+id: OSV-2024-1427
+summary: Heap-buffer-overflow in extract_mediaip
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=391975654
+
+  ```
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  extract_mediaip
+  parse_sdp_session
+  parse_mixed_content
+  ```
+modified: '2025-01-28T00:14:30.487876Z'
+published: '2025-01-28T00:14:30.487391Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=391975654
+affected:
+- package:
+    name: kamailio
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/kamailio
+  ranges:
+  - type: GIT
+    repo: https://github.com/kamailio/kamailio
+    events:
+    - introduced: 1e71168342894c992ab376bf8538c0953db31fe4
+    - fixed: 200cdb318569191cd012dfe99b252f98fe9623b9
+  versions:
+  - 5.6.0
+  - 5.6.1
+  - 5.6.2
+  - 5.6.3
+  - 5.6.4
+  - 5.6.5
+  - 5.6.6
+  - 5.7.0
+  - 5.7.1
+  - 5.7.2
+  - 5.7.3
+  - 5.7.4
+  - 5.7.5
+  - 5.7.6
+  - 5.8.0
+  - 5.8.1
+  - 5.8.2
+  - 5.8.3
+  - 5.8.4
+  - 5.8.5
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: 22f9e269dd68edcb025e103d9aa1432423dd5550:199f13a7dfac8cd817850c6a6afe5ba510835418
+schema_version: 1.6.0
