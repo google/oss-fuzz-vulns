@@ -10,7 +10,7 @@ details: |
   yr_lex_parse_rules_file
   cli_loadyara
   ```
-modified: '2024-11-05T00:04:03.221201Z'
+modified: '2025-01-30T14:30:47.627921Z'
 published: '2024-11-05T00:04:03.220856Z'
 references:
 - type: REPORT
@@ -25,6 +25,7 @@ affected:
     repo: https://github.com/Cisco-Talos/clamav.git
     events:
     - introduced: 428cd7951827535fdc50425f963eb2878fc39cc1
+    - introduced: e5f001c9ca4175beecd445004a8e01bbdd29579c
   versions:
   - clamav-0.104.3
   - clamav-0.104.4
