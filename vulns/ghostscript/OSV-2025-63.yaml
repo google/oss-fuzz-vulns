@@ -1,0 +1,49 @@
+id: OSV-2025-63
+summary: Stack-buffer-underflow in gs_type1_interpret
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=391934080
+
+  ```
+  Crash type: Stack-buffer-underflow READ 4
+  Crash state:
+  gs_type1_interpret
+  copied_type1_glyph_outline
+  gs_default_glyph_info
+  ```
+modified: '2025-01-27T00:10:00.834151Z'
+published: '2025-01-27T00:10:00.833706Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=391934080
+affected:
+- package:
+    name: ghostscript
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/ghostscript
+  ranges:
+  - type: GIT
+    repo: git://git.ghostscript.com/ghostpdl.git
+    events:
+    - introduced: 171b0c9a4c04aba37e9638e356865df61b108655
+    - fixed: 329fa492271566a43f905edafb83dbce1b01a62a
+  versions:
+  - ghostpdl-10.03.0
+  - ghostpdl-10.03.0_test001
+  - ghostpdl-10.03.0_test002
+  - ghostpdl-10.03.0rc1
+  - ghostpdl-10.03.0rc1_test
+  - ghostpdl-10.03.0rc1_test002
+  - ghostpdl-10.03.0rc1_test003
+  - ghostpdl-10.03.1
+  - ghostpdl-10.04.0
+  - ghostpdl-10.04.0rc1
+  - ghostpdl-10.04.0rc1_test001
+  - ghostpdl-10.04.0rc2_test001
+  - ghostpdl-10.05.0-test-base-001
+  - rjw-test3
+  - robin_test_ref
+  ecosystem_specific:
+    severity: null
+  database_specific:
+    introduced_range: 3309730414735646e951e82a56e4a1a43f0365e1:cdf2135c66af36096181bbd1154c78d5bb72d7f0
+schema_version: 1.6.0
