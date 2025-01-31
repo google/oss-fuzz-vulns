@@ -10,7 +10,7 @@ details: |
   ih264d_cabac_parse_8x8block
   ih264d_parse_residual4x4_cabac
   ```
-modified: '2024-09-21T00:14:26.785213Z'
+modified: '2025-01-31T14:23:52.455197Z'
 published: '2024-09-21T00:14:26.784483Z'
 references:
 - type: REPORT
@@ -25,6 +25,7 @@ affected:
     repo: https://github.com/ittiam-systems/libavc.git
     events:
     - introduced: 0e723489615b8f81d9d5a7f823969eb91787d636
+    - fixed: 3916f3eea4a89090d017aa04981022e1cb49f207
   versions:
   - v1.4.0
   - v1.5.0
@@ -33,4 +34,5 @@ affected:
     severity: MEDIUM
   database_specific:
     introduced_range: 972c0aa711cadabb686fa75f95559cfd2c4ad316:37beb9729249a1cde472545e2a19d80660e40edc
+    fixed_range: ba74b083b43228c5472dfd7f01580204513ad8df:3916f3eea4a89090d017aa04981022e1cb49f207
 schema_version: 1.6.0
