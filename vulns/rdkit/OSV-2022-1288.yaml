@@ -1,0 +1,70 @@
+id: OSV-2022-1288
+summary: Stack-buffer-overflow in bool SmilesParseOps::parser::parse_atom_props<std::__1::__wrap_iter<char
+  const*>
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=376787368
+
+  ```
+  Crash type: Stack-buffer-overflow READ 1
+  Crash state:
+  bool SmilesParseOps::parser::parse_atom_props<std::__1::__wrap_iter<char const*>
+  bool SmilesParseOps::parser::parse_it<std::__1::__wrap_iter<char const*> >
+  SmilesParseOps::parseCXExtensions
+  ```
+modified: '2024-11-04T00:16:22.516952Z'
+published: '2024-11-04T00:16:22.516312Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=376787368
+affected:
+- package:
+    name: rdkit
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/rdkit
+  ranges:
+  - type: GIT
+    repo: https://github.com/rdkit/rdkit.git
+    events:
+    - introduced: db15b372a13380693c9ebd33d270c6bddf394883
+  versions:
+  - Release_2022_03_1
+  - Release_2022_03_1b1
+  - Release_2022_03_2
+  - Release_2022_03_3
+  - Release_2022_03_4
+  - Release_2022_03_5
+  - Release_2022_09_1
+  - Release_2022_09_1b1
+  - Release_2022_09_2
+  - Release_2022_09_3
+  - Release_2022_09_4
+  - Release_2022_09_5
+  - Release_2023_03_1
+  - Release_2023_03_1b1
+  - Release_2023_03_2
+  - Release_2023_03_3
+  - Release_2023_09_1
+  - Release_2023_09_1b1
+  - Release_2023_09_2
+  - Release_2023_09_3
+  - Release_2023_09_4
+  - Release_2023_09_5
+  - Release_2023_09_6
+  - Release_2024_03_1
+  - Release_2024_03_1b1
+  - Release_2024_03_2
+  - Release_2024_03_3
+  - Release_2024_03_4
+  - Release_2024_03_5
+  - Release_2024_03_6
+  - Release_2024_09_1
+  - Release_2024_09_1b1
+  - Release_2024_09_2
+  - Release_2024_09_3
+  - Release_2024_09_4
+  - Release_2024_09_5
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: b603d0d97ed4ecfba9205e449ecff9ed1897e224:3757a1e0fa4757c9ed0b422578538772cc0dab5c
+schema_version: 1.6.0
