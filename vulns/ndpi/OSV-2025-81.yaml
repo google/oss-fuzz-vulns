@@ -1,0 +1,34 @@
+id: OSV-2025-81
+summary: Segv on unknown address in ndpi_serialize_string_string
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=393404264
+
+  ```
+  Crash type: Segv on unknown address
+  Crash state:
+  ndpi_serialize_string_string
+  ndpi_dpi2json
+  fuzz_process_packet.c
+  ```
+modified: '2025-02-02T00:02:52.947083Z'
+published: '2025-02-02T00:02:52.946833Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=393404264
+affected:
+- package:
+    name: ndpi
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/ndpi
+  ranges:
+  - type: GIT
+    repo: https://github.com/ntop/nDPI.git
+    events:
+    - introduced: aacade6d9571bdf6fc9bd0b5cbbafb65d5123f8f
+    - fixed: 41133638dc303be1717462876814a6102669757c
+  ecosystem_specific:
+    severity: null
+  database_specific:
+    introduced_range: dd4be0a9e067e5a8f41e62a17b11d6a8c7450810:fcff6d5abb168c3318c019fc140ce1e809b40d2b
+  versions: []
+schema_version: 1.6.0

@@ -1,0 +1,34 @@
+id: OSV-2025-88
+summary: Segv on unknown address in ___interceptor_free
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=393435814
+
+  ```
+  Crash type: Segv on unknown address
+  Crash state:
+  ___interceptor_free
+  ndpi_free_flow_data
+  ndpi_free_flow
+  ```
+modified: '2025-02-02T00:16:16.202130Z'
+published: '2025-02-02T00:16:16.201801Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=393435814
+affected:
+- package:
+    name: ntopng
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/ntopng
+  ranges:
+  - type: GIT
+    repo: https://github.com/ntop/ntopng.git
+    events:
+    - introduced: bc373e778687e03c3702433d41a15440a9db3dd7
+    - fixed: 08a87f27fdc339d9979eed95832cb7ca885b16ba
+  ecosystem_specific:
+    severity: null
+  database_specific:
+    fixed_range: bc373e778687e03c3702433d41a15440a9db3dd7:08a87f27fdc339d9979eed95832cb7ca885b16ba
+  versions: []
+schema_version: 1.6.0
