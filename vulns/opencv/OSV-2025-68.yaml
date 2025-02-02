@@ -10,7 +10,7 @@ details: |
   cv::ParallelLoopBodyWrapper::operator
   cv::ThreadPool::run
   ```
-modified: '2025-01-28T00:00:46.846576Z'
+modified: '2025-02-02T14:24:45.906876Z'
 published: '2025-01-28T00:00:46.845996Z'
 references:
 - type: REPORT
@@ -26,10 +26,12 @@ affected:
     events:
     - introduced: b4d03256663b6ceb2994c367be4664f282c9f1ec
     - fixed: c21d0ad9d08d364542bb4a6eb971ee3051ccba63
+    - fixed: 43cebe52eba056d9fbb1115928cf698ae44abd60
   versions:
   - 4.11.0
   ecosystem_specific:
     severity: MEDIUM
   database_specific:
     introduced_range: a6f72f813d307f77e7597447bdba25dcb5b6447d:ff18c9cc7904e878b10273265196e0238490e692
+    fixed_range: d5f69305cbfdb727865baac0f7cb5c82c5fdaab9:43cebe52eba056d9fbb1115928cf698ae44abd60
 schema_version: 1.6.0
