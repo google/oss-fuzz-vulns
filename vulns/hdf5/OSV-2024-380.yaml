@@ -10,7 +10,7 @@ details: |
   H5FL_blk_free
   H5O__free
   ```
-modified: '2024-10-03T15:53:47.826981Z'
+modified: '2025-02-06T14:40:09.413505Z'
 published: '2024-04-30T00:12:11.366893Z'
 references:
 - type: REPORT
@@ -48,6 +48,11 @@ affected:
   - snapshot-1.14
   - hdf5_1.14.5
   - snapshot-1.16
+  - hdf5-1.14.5
+  - hdf5-1.14.6
+  - hdf5_1.14.6
+  - hdff5-1_14-_0
+  - hdff5-1_14_0
   ecosystem_specific:
     severity: HIGH
 schema_version: 1.6.0
