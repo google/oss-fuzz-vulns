@@ -10,7 +10,7 @@ details: |
   H5SL__close_common
   H5SL_destroy
   ```
-modified: '2024-10-03T15:15:45.131220Z'
+modified: '2025-02-06T14:40:25.939763Z'
 published: '2024-04-30T00:03:47.754456Z'
 references:
 - type: REPORT
@@ -48,6 +48,11 @@ affected:
   - snapshot-1.14
   - hdf5_1.14.5
   - snapshot-1.16
+  - hdf5-1.14.5
+  - hdf5-1.14.6
+  - hdf5_1.14.6
+  - hdff5-1_14-_0
+  - hdff5-1_14_0
   ecosystem_specific:
     severity: HIGH
 schema_version: 1.6.0
