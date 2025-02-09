@@ -10,7 +10,7 @@ details: |
   sqlite3_step
   osquery::readRows
   ```
-modified: '2024-12-31T14:10:18.970150Z'
+modified: '2025-02-09T14:18:31.952195Z'
 published: '2022-08-21T00:00:23.656015Z'
 references:
 - type: REPORT
@@ -47,6 +47,7 @@ affected:
   - 5.14.0
   - 5.14.1
   - 5.15.0
+  - 5.16.0
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.3.0
