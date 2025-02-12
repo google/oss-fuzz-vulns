@@ -10,7 +10,7 @@ details: |
   Poco::TextConverter::convert
   Poco::Net::NTLMCredentials::parseChallengeMessage
   ```
-modified: '2024-10-14T00:08:40.383090Z'
+modified: '2025-02-12T14:38:06.605071Z'
 published: '2024-10-14T00:08:40.382545Z'
 references:
 - type: REPORT
@@ -27,6 +27,7 @@ affected:
     - introduced: e55bb7032d20616c3fc22dcdb072ec53c4ef69d6
   versions:
   - poco-1.14.0-release
+  - poco-1.14.1-release
   ecosystem_specific:
     severity: MEDIUM
   database_specific:
