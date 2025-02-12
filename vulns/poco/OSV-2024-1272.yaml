@@ -10,7 +10,7 @@ details: |
   Poco::Net::MultipartReader::nextPart
   Poco::Net::MailMessage::readMultipart
   ```
-modified: '2024-11-05T00:03:30.788401Z'
+modified: '2025-02-12T14:38:22.062009Z'
 published: '2024-11-05T00:03:30.787980Z'
 references:
 - type: REPORT
@@ -27,6 +27,7 @@ affected:
     - introduced: e55bb7032d20616c3fc22dcdb072ec53c4ef69d6
   versions:
   - poco-1.14.0-release
+  - poco-1.14.1-release
   ecosystem_specific:
     severity: null
   database_specific:
