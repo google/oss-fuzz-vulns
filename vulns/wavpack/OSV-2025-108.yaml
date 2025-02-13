@@ -1,0 +1,34 @@
+id: OSV-2025-108
+summary: Use-of-uninitialized-value in decimate_dsd_run
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=395207096
+
+  ```
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  decimate_dsd_run
+  WavpackUnpackSamples
+  fuzzer.cc
+  ```
+modified: '2025-02-10T00:12:35.140400Z'
+published: '2025-02-10T00:12:35.140061Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=395207096
+affected:
+- package:
+    name: wavpack
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/wavpack
+  ranges:
+  - type: GIT
+    repo: https://github.com/dbry/WavPack.git
+    events:
+    - introduced: b7b796375293defeae340e83d066efa33fa0d2f3
+    - fixed: 84b576d2c627418a6453cc986b53e79bed38d653
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: 22550559ef745b5bcc6117638cb3add2bc01b82c:0b99613e30cdb85475c5b77ef50a4bf10d79f041
+  versions: []
+schema_version: 1.6.0
