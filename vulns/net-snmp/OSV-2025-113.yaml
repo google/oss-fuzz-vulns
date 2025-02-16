@@ -1,0 +1,34 @@
+id: OSV-2025-113
+summary: Heap-buffer-overflow in snmp_log_options
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=395921931
+
+  ```
+  Crash type: Heap-buffer-overflow READ 8
+  Crash state:
+  snmp_log_options
+  netsnmp_parse_args
+  snmp_parse_args_fuzzer.c
+  ```
+modified: '2025-02-14T00:01:45.813124Z'
+published: '2025-02-14T00:01:45.812592Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=395921931
+affected:
+- package:
+    name: net-snmp
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/net-snmp
+  ranges:
+  - type: GIT
+    repo: https://github.com/net-snmp/net-snmp
+    events:
+    - introduced: a6d63f416b3fe3011a3d11559ddf29ecf01a1667
+    - fixed: c90280f310aa8f9fd0442128244a8672bdfdb80e
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: 1109b6fd408e1c8b03e6ccfdcbe70c2ad0412c13:f720ed11acffa6425694ee3ac5144035aa094716
+  versions: []
+schema_version: 1.6.0
