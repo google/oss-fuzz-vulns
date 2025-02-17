@@ -10,7 +10,7 @@ details: |
   decCompareOp
   decNumberCompare
   ```
-modified: '2023-12-18T00:13:42.546232Z'
+modified: '2025-02-17T14:14:20.492923Z'
 published: '2023-12-18T00:13:42.545765Z'
 references:
 - type: REPORT
@@ -25,8 +25,11 @@ affected:
     repo: https://github.com/jqlang/jq
     events:
     - introduced: c5fd64ba975ee35df17bb0c335efb00bffce4d91
+    - fixed: b86ff49f46a4a37e5a8e75a140cb5fd6e1331384
   versions:
   - jq-1.7.1
   ecosystem_specific:
     severity: HIGH
+  database_specific:
+    fixed_range: fa6a2ff6888f27648c703688f1a973588406d92a:b86ff49f46a4a37e5a8e75a140cb5fd6e1331384
 schema_version: 1.6.0
