@@ -10,7 +10,7 @@ details: |
   blosc2_free_ctx
   blosc2_schunk_free
   ```
-modified: '2025-02-12T14:32:53.268336Z'
+modified: '2025-02-19T14:14:00.172684Z'
 published: '2023-02-05T13:00:54.245269Z'
 references:
 - type: REPORT
@@ -25,6 +25,7 @@ affected:
     repo: https://github.com/Blosc/c-blosc2.git
     events:
     - introduced: abfebc4c4e0f747be1257a21332feac1477f2c2f
+    - fixed: 34db770e436aa4ceaa9b9110948f8dac1f1f443d
   versions:
   - v2.0.0
   - v2.0.0-rc2
@@ -35,23 +36,6 @@ affected:
   - v2.0.4
   - v2.1.0
   - v2.1.1
-  - v2.2.0
-  - v2.3.0
-  - v2.3.1
-  - v2.4.0
-  - v2.4.1
-  - v2.4.2
-  - v2.4.3
-  - v2.5.0
-  - v2.6.0
-  - v2.6.1
-  - v2.7.0
-  - v2.7.1
-  - v2.8.0
-  - v2.9.0
-  - v2.9.1
-  - v2.9.2
-  - v2.9.3
   - v2.10.0
   - v2.10.1
   - v2.10.2
@@ -75,6 +59,25 @@ affected:
   - v2.15.1
   - v2.15.2
   - v2.16.0
+  - v2.2.0
+  - v2.3.0
+  - v2.3.1
+  - v2.4.0
+  - v2.4.1
+  - v2.4.2
+  - v2.4.3
+  - v2.5.0
+  - v2.6.0
+  - v2.6.1
+  - v2.7.0
+  - v2.7.1
+  - v2.8.0
+  - v2.9.0
+  - v2.9.1
+  - v2.9.2
+  - v2.9.3
   ecosystem_specific:
     severity: HIGH
+  database_specific:
+    fixed_range: 14c3af1cc2921057a037718290c03d6218f89b77:34db770e436aa4ceaa9b9110948f8dac1f1f443d
 schema_version: 1.4.0
