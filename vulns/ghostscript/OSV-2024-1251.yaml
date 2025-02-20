@@ -10,7 +10,7 @@ details: |
   sreadbuf
   spgetcc
   ```
-modified: '2024-11-01T00:02:31.749857Z'
+modified: '2025-02-20T14:23:38.872752Z'
 published: '2024-11-01T00:02:31.749497Z'
 references:
 - type: REPORT
@@ -32,6 +32,7 @@ affected:
   - ghostpdl-10.04.0rc2_test001
   - ghostpdl-10.05.0-test-base-001
   - rjw-test3
+  - ghostpdl-10.05.0rc1
   ecosystem_specific:
     severity: HIGH
   database_specific:
