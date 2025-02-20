@@ -1,0 +1,42 @@
+id: OSV-2025-74
+summary: Stack-buffer-overflow in xmlValidateElementContent
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=392687022
+
+  ```
+  Crash type: Stack-buffer-overflow WRITE {*}
+  Crash state:
+  xmlValidateElementContent
+  xmlValidateOneElement
+  xmlValidateElement
+  ```
+modified: '2025-01-29T00:13:55.386629Z'
+published: '2025-01-29T00:13:55.386256Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=392687022
+affected:
+- package:
+    name: libxml2
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libxml2
+  ranges:
+  - type: GIT
+    repo: https://gitlab.gnome.org/GNOME/libxml2.git
+    events:
+    - introduced: 971ce40409978809a202ff4f6f684055ed8184fe
+    - fixed: 22ada0a0bfd92961acb257deae5e7045aaf12d08
+  versions:
+  - v2.13.0
+  - v2.13.1
+  - v2.13.2
+  - v2.13.3
+  - v2.13.4
+  - v2.13.5
+  - v2.13.6
+  ecosystem_specific:
+    severity: HIGH
+  database_specific:
+    introduced_range: 20b0bd9800ae83cbd70f4407ce67058164e16227:f506ec66547ef9bac97a2bf306d368ecea8c0c9e
+    fixed_range: 06b3965086a3954da467f88dc8bce937ecd71380:22ada0a0bfd92961acb257deae5e7045aaf12d08
+schema_version: 1.6.0
