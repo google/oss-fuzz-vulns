@@ -10,7 +10,7 @@ details: |
   ireclaim
   interp_reclaim
   ```
-modified: '2024-10-18T14:25:53.241677Z'
+modified: '2025-02-20T14:24:49.805721Z'
 published: '2024-07-25T00:06:43.762625Z'
 references:
 - type: REPORT
@@ -32,6 +32,7 @@ affected:
   - ghostpdl-10.04.0
   - rjw-test3
   - ghostpdl-10.05.0-test-base-001
+  - ghostpdl-10.05.0rc1
   ecosystem_specific:
     severity: null
   database_specific:
