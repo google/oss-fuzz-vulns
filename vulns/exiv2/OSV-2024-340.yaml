@@ -10,7 +10,7 @@ details: |
   Exiv2::AsfVideo::streamProperties
   Exiv2::AsfVideo::decodeBlock
   ```
-modified: '2025-02-11T14:21:20.901773Z'
+modified: '2025-02-22T14:15:36.139736Z'
 published: '2024-04-30T00:01:53.406015Z'
 references:
 - type: REPORT
@@ -33,6 +33,7 @@ affected:
   - v0.28.2
   - v0.28.3
   - v0.28.4
+  - v0.28.5
   ecosystem_specific:
     severity: MEDIUM
   database_specific:
