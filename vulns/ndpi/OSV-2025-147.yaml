@@ -1,0 +1,34 @@
+id: OSV-2025-147
+summary: UNKNOWN WRITE in ndpi_free_flow_data
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=397731142
+
+  ```
+  Crash type: UNKNOWN WRITE
+  Crash state:
+  ndpi_free_flow_data
+  ndpi_flow_free
+  process_ndpi_collected_info
+  ```
+modified: '2025-02-22T00:18:07.814726Z'
+published: '2025-02-22T00:18:07.814416Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=397731142
+affected:
+- package:
+    name: ndpi
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/ndpi
+  ranges:
+  - type: GIT
+    repo: https://github.com/ntop/nDPI.git
+    events:
+    - introduced: e052e5b6b7b9f38819bcd8f12c10258936e134e9
+    - fixed: 30c3613f2fae705a284284794b5367ad7c7374ae
+  ecosystem_specific:
+    severity: HIGH
+  database_specific:
+    introduced_range: 2c414f1b282ce6f5817076b92cba60c0703582ba:9ee24d5bc110307b988554d83d1a88a6ad63490e
+  versions: []
+schema_version: 1.6.0
