@@ -10,7 +10,7 @@ details: |
   icu_75::TZDBTimeZoneNames::getMetaZoneDisplayName
   TestNames
   ```
-modified: '2025-01-10T08:02:54.107182Z'
+modified: '2025-02-22T16:23:57.720121Z'
 published: '2023-12-18T00:13:09.643640Z'
 references:
 - type: REPORT
@@ -33,6 +33,7 @@ affected:
   - icu4x/2024-12-16/76.x
   - release-76-1
   - release-76-rc
+  - release-77-rc
   ecosystem_specific:
     severity: HIGH
 schema_version: 1.6.0
