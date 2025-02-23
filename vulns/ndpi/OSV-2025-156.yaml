@@ -1,0 +1,34 @@
+id: OSV-2025-156
+summary: Check failed in CheckUnwind
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=398053003
+
+  ```
+  Crash type: Check failed
+  Crash state:
+  CheckUnwind
+  ndpi_free_flow_data
+  fuzz_process_packet.c
+  ```
+modified: '2025-02-23T00:16:50.073520Z'
+published: '2025-02-23T00:16:50.073196Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=398053003
+affected:
+- package:
+    name: ndpi
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/ndpi
+  ranges:
+  - type: GIT
+    repo: https://github.com/ntop/nDPI.git
+    events:
+    - introduced: e052e5b6b7b9f38819bcd8f12c10258936e134e9
+    - fixed: cde5773762210ce21a2400ace30d864897df0d7d
+  ecosystem_specific:
+    severity: null
+  database_specific:
+    introduced_range: 2c414f1b282ce6f5817076b92cba60c0703582ba:9ee24d5bc110307b988554d83d1a88a6ad63490e
+  versions: []
+schema_version: 1.6.0

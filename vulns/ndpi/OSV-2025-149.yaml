@@ -1,0 +1,32 @@
+id: OSV-2025-149
+summary: UNKNOWN READ in processClientServerHello
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=398049414
+
+  ```
+  Crash type: UNKNOWN READ
+  Crash state:
+  processClientServerHello
+  processTLSBlock
+  ndpi_search_tls_udp
+  ```
+modified: '2025-02-23T00:00:50.236700Z'
+published: '2025-02-23T00:00:50.236281Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=398049414
+affected:
+- package:
+    name: ndpi
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/ndpi
+  ranges:
+  - type: GIT
+    repo: https://github.com/ntop/nDPI.git
+    events:
+    - introduced: 30c3613f2fae705a284284794b5367ad7c7374ae
+    - fixed: cde5773762210ce21a2400ace30d864897df0d7d
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.6.0
