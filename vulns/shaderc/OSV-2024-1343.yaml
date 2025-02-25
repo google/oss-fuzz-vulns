@@ -1,0 +1,32 @@
+id: OSV-2024-1343
+summary: Container-overflow in glslang::HlslParseContext::decomposeIntrinsic
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=380569852
+
+  ```
+  Crash type: Container-overflow READ 8
+  Crash state:
+  glslang::HlslParseContext::decomposeIntrinsic
+  glslang::HlslParseContext::handleFunctionCall
+  glslang::HlslGrammar::acceptFunctionCall
+  ```
+modified: '2024-11-27T00:13:21.103959Z'
+published: '2024-11-27T00:13:21.103465Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=380569852
+affected:
+- package:
+    name: shaderc
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/shaderc
+  ranges:
+  - type: GIT
+    repo: https://github.com/google/shaderc
+    events:
+    - introduced: 8c4d729001709e907fba57041749d9ed8985891c
+  versions:
+  - v2024.4
+  ecosystem_specific:
+    severity: MEDIUM
+schema_version: 1.6.0
