@@ -1,0 +1,34 @@
+id: OSV-2025-161
+summary: Heap-buffer-overflow in se_add_pair
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=398356443
+
+  ```
+  Crash type: Heap-buffer-overflow READ 8
+  Crash state:
+  se_add_pair
+  se_read_conf
+  run_config_handler
+  ```
+modified: '2025-02-24T00:15:33.663320Z'
+published: '2025-02-24T00:15:33.662895Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=398356443
+affected:
+- package:
+    name: net-snmp
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/net-snmp
+  ranges:
+  - type: GIT
+    repo: https://github.com/net-snmp/net-snmp
+    events:
+    - introduced: a6d63f416b3fe3011a3d11559ddf29ecf01a1667
+    - fixed: a147b834d49e656f6216701b8769b4b6261e72d5
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: 1109b6fd408e1c8b03e6ccfdcbe70c2ad0412c13:f720ed11acffa6425694ee3ac5144035aa094716
+  versions: []
+schema_version: 1.6.0
