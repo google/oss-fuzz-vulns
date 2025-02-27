@@ -1,0 +1,35 @@
+id: OSV-2025-148
+summary: Heap-buffer-overflow in setup_engineID
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=398053010
+
+  ```
+  Crash type: Heap-buffer-overflow WRITE 4
+  Crash state:
+  setup_engineID
+  init_snmpv3_post_premib_config
+  snmp_call_callbacks
+  ```
+modified: '2025-02-23T00:00:36.951596Z'
+published: '2025-02-23T00:00:36.951152Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=398053010
+affected:
+- package:
+    name: net-snmp
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/net-snmp
+  ranges:
+  - type: GIT
+    repo: https://github.com/net-snmp/net-snmp
+    events:
+    - introduced: a6d63f416b3fe3011a3d11559ddf29ecf01a1667
+    - fixed: 2da22610f90b8a64c930af02d88f07f3a596905f
+  ecosystem_specific:
+    severity: HIGH
+  database_specific:
+    introduced_range: 1109b6fd408e1c8b03e6ccfdcbe70c2ad0412c13:f720ed11acffa6425694ee3ac5144035aa094716
+    fixed_range: a147b834d49e656f6216701b8769b4b6261e72d5:2da22610f90b8a64c930af02d88f07f3a596905f
+  versions: []
+schema_version: 1.6.0
