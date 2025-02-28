@@ -10,7 +10,7 @@ details: |
   gf_hevc_parse_nalu_bs
   gf_inspect_dump_nalu_internal
   ```
-modified: '2024-08-07T00:05:22.699998Z'
+modified: '2025-02-28T14:27:16.807485Z'
 published: '2024-08-07T00:05:22.699506Z'
 references:
 - type: REPORT
@@ -25,9 +25,10 @@ affected:
     repo: https://github.com/gpac/gpac
     events:
     - introduced: 21cf0d2d4a0d6e5d14ffaa8472c9157f1333d379
+  versions:
+  - testtag0.1
   ecosystem_specific:
     severity: HIGH
   database_specific:
     introduced_range: cf9017e7f44c1d0c9a4e520083aece0d3ab329f7:df8121066cf8fb25cc70adf7ca8b35bda82fe216
-  versions: []
 schema_version: 1.6.0
