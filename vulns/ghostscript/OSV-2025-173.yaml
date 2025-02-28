@@ -1,0 +1,34 @@
+id: OSV-2025-173
+summary: UNKNOWN READ in chunk_obj_alloc
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=399390078
+
+  ```
+  Crash type: UNKNOWN READ
+  Crash state:
+  chunk_obj_alloc
+  pdfi_read_cff_dict
+  pdfi_read_cff_dict
+  ```
+modified: '2025-02-28T00:11:40.566797Z'
+published: '2025-02-28T00:11:40.566459Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=399390078
+affected:
+- package:
+    name: ghostscript
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/ghostscript
+  ranges:
+  - type: GIT
+    repo: git://git.ghostscript.com/ghostpdl.git
+    events:
+    - introduced: d30a9b5e2c551e61795a67ce5b4d6aa1c8ad2fb4
+    - fixed: 714ef06bede27cd12bf3c7d3278fa6327d7a81eb
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: e327b7954d593222b9c8c40687bc493b8d46aada:d86fccbb71bfd8b6aa025c4861ceb2d33d83b067
+  versions: []
+schema_version: 1.6.0
