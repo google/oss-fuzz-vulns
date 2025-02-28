@@ -10,7 +10,7 @@ details: |
   gf_inspect_dump_nalu_internal
   inspect_process
   ```
-modified: '2024-07-18T00:01:18.765999Z'
+modified: '2025-02-28T14:26:21.719698Z'
 published: '2024-07-18T00:01:18.765548Z'
 references:
 - type: REPORT
@@ -25,9 +25,10 @@ affected:
     repo: https://github.com/gpac/gpac
     events:
     - introduced: 99a7952e91938f8c0d16f2235b912de1fed6c1f8
+  versions:
+  - testtag0.1
   ecosystem_specific:
     severity: MEDIUM
   database_specific:
     introduced_range: df8121066cf8fb25cc70adf7ca8b35bda82fe216:a012d226ec8de965159f8477e8929bb5d2f57c31
-  versions: []
 schema_version: 1.6.0
