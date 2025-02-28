@@ -10,7 +10,7 @@ details: |
   glslang::HlslParseContext::handleFunctionCall
   glslang::HlslGrammar::acceptFunctionCall
   ```
-modified: '2024-11-27T00:13:21.103959Z'
+modified: '2025-02-28T14:19:50.174678Z'
 published: '2024-11-27T00:13:21.103465Z'
 references:
 - type: REPORT
@@ -27,6 +27,7 @@ affected:
     - introduced: 8c4d729001709e907fba57041749d9ed8985891c
   versions:
   - v2024.4
+  - v2025.1
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.6.0
