@@ -10,7 +10,7 @@ details: |
   gf_dash_resolve_url
   gf_dash_download_init_segment
   ```
-modified: '2024-07-18T00:13:55.576576Z'
+modified: '2025-02-28T14:25:59.765270Z'
 published: '2024-07-18T00:13:55.576218Z'
 references:
 - type: REPORT
@@ -25,7 +25,8 @@ affected:
     repo: https://github.com/gpac/gpac
     events:
     - introduced: 7323c74ff523fa2d5c4db793d5dfbc611ae505c4
+  versions:
+  - testtag0.1
   ecosystem_specific:
     severity: HIGH
-  versions: []
 schema_version: 1.6.0
