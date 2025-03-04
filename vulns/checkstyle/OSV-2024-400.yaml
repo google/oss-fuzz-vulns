@@ -10,7 +10,7 @@ details: |
   java.base/sun.nio.cs.UTF_8.updatePositions
   java.base/sun.nio.cs.UTF_8$Encoder.encodeArrayLoop
   ```
-modified: '2025-02-24T14:18:18.533694Z'
+modified: '2025-03-04T14:32:20.448585Z'
 published: '2024-05-02T00:03:16.309384Z'
 references:
 - type: REPORT
@@ -39,6 +39,7 @@ affected:
   - checkstyle-10.21.1
   - checkstyle-10.21.2
   - checkstyle-10.21.3
+  - checkstyle-10.21.4
   ecosystem_specific:
     severity: LOW
   database_specific:
