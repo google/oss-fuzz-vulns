@@ -1,0 +1,34 @@
+id: OSV-2025-174
+summary: Heap-use-after-free in gc_trace
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=399388654
+
+  ```
+  Crash type: Heap-use-after-free READ 4
+  Crash state:
+  gc_trace
+  gs_gc_reclaim
+  ireclaim
+  ```
+modified: '2025-02-28T00:12:25.140618Z'
+published: '2025-02-28T00:12:25.140274Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=399388654
+affected:
+- package:
+    name: ghostscript
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/ghostscript
+  ranges:
+  - type: GIT
+    repo: git://git.ghostscript.com/ghostpdl.git
+    events:
+    - introduced: d30a9b5e2c551e61795a67ce5b4d6aa1c8ad2fb4
+    - fixed: 4c4dcc85ce4f3c7fe53f72dd0098cd7906312dbd
+  ecosystem_specific:
+    severity: HIGH
+  database_specific:
+    introduced_range: e327b7954d593222b9c8c40687bc493b8d46aada:d86fccbb71bfd8b6aa025c4861ceb2d33d83b067
+  versions: []
+schema_version: 1.6.0
