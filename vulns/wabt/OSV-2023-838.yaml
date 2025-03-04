@@ -10,7 +10,7 @@ details: |
   wabt::BinaryReader::ReadInstructions
   wabt::ReadBinary
   ```
-modified: '2024-08-01T14:19:40.624401Z'
+modified: '2025-03-04T14:30:23.941134Z'
 published: '2023-09-12T14:01:08.316035Z'
 references:
 - type: REPORT
@@ -33,6 +33,7 @@ affected:
   - 1.0.34
   - 1.0.35
   - 1.0.36
+  - 1.0.37
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.6.0
