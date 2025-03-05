@@ -10,7 +10,7 @@ details: |
   jv_string_fmt
   jv_parse_sized_custom_flags
   ```
-modified: '2024-11-15T00:16:08.929283Z'
+modified: '2025-03-05T14:20:12.622041Z'
 published: '2024-11-15T00:16:08.928897Z'
 references:
 - type: REPORT
@@ -25,10 +25,12 @@ affected:
     repo: https://github.com/jqlang/jq
     events:
     - introduced: 13353515bd3aedf84c6e6ebfb726563ae84db778
+    - fixed: 9d6efec1987b544ac2f8030e3c22036f7cb70cd9
   versions:
   - jq-1.7.1
   ecosystem_specific:
     severity: MEDIUM
   database_specific:
     introduced_range: 98a206964d59143c6ed9189b91cdb34af1ae5071:bfb7fd570f521ef832fe1c3bca0e05abd398284c
+    fixed_range: 8ba03f788f28cadeab7de7111d13add88b400d0b:9d6efec1987b544ac2f8030e3c22036f7cb70cd9
 schema_version: 1.6.0
