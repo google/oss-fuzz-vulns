@@ -11,7 +11,7 @@ details: |
   void std::__1::vector<wabt::interp::HandlerDesc, std::__1::allocator<wabt::inter
   std::__1::vector<wabt::interp::HandlerDesc, std::__1::allocator<wabt::interp::Ha
   ```
-modified: '2024-08-01T14:17:11.979929Z'
+modified: '2025-03-05T14:17:14.067341Z'
 published: '2023-04-27T14:02:25.286668Z'
 references:
 - type: REPORT
@@ -34,6 +34,7 @@ affected:
   - 1.0.34
   - 1.0.35
   - 1.0.36
+  - 1.0.37
   ecosystem_specific:
     severity: HIGH
 schema_version: 1.4.0
