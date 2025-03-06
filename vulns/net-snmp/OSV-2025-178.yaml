@@ -1,0 +1,26 @@
+id: OSV-2025-178
+summary: Heap-buffer-overflow in usm_set_user_password
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=399458050
+
+  ```
+  Crash type: Heap-buffer-overflow WRITE 9
+  Crash state:
+  usm_set_user_password
+  usm_set_password
+  run_config_handler
+  ```
+modified: '2025-02-28T00:16:54.655745Z'
+published: '2025-02-28T00:16:54.655227Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=399458050
+affected:
+- package:
+    name: net-snmp
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/net-snmp
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
+schema_version: 1.6.0
