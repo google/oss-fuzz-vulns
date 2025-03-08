@@ -10,7 +10,7 @@ details: |
   LibRaw::parse_jpeg
   LibRaw::identify
   ```
-modified: '2025-02-14T14:16:02.016869Z'
+modified: '2025-03-08T14:19:58.074353Z'
 published: '2023-02-07T13:00:07.438565Z'
 references:
 - type: REPORT
@@ -87,6 +87,7 @@ affected:
   - v6.10.0
   - v6.11.0-rc1
   - v6.11.0
+  - v6.12.0-rc1
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.4.0
