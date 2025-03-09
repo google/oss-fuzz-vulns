@@ -10,7 +10,7 @@ details: |
   intersect
   _cairo_boxes_intersect
   ```
-modified: '2024-09-02T14:15:19.299184Z'
+modified: '2025-03-09T14:16:04.842301Z'
 published: '2023-04-12T14:02:04.134251Z'
 references:
 - type: REPORT
@@ -29,6 +29,7 @@ affected:
   - 1.17.8
   - 1.18.0
   - 1.18.2
+  - 1.18.4
   ecosystem_specific:
     severity: HIGH
   database_specific:
