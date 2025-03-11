@@ -1,0 +1,35 @@
+id: OSV-2024-1355
+summary: UNKNOWN READ in glslang::TInfoSinkBase::location
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=382922237
+
+  ```
+  Crash type: UNKNOWN READ
+  Crash state:
+  glslang::TInfoSinkBase::location
+  glslang::TParseContextBase::outputMessage
+  glslang::TParseContextBase::error
+  ```
+modified: '2024-12-10T00:08:00.540945Z'
+published: '2024-12-10T00:08:00.540533Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=382922237
+affected:
+- package:
+    name: shaderc
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/shaderc
+  ranges:
+  - type: GIT
+    repo: https://github.com/google/shaderc
+    events:
+    - introduced: ffd3be52bbcbd428e9de40da996ad09645fc0dc8
+  versions:
+  - v2024.4
+  - v2025.1
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: 8c4d729001709e907fba57041749d9ed8985891c:082a73bfa9088bd3da35734023a9167ba92aae6c
+schema_version: 1.6.0

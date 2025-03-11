@@ -1,0 +1,33 @@
+id: OSV-2024-1348
+summary: Heap-buffer-overflow in glslang::HlslGrammar::acceptDeclaration
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=382721848
+
+  ```
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  glslang::HlslGrammar::acceptDeclaration
+  glslang::HlslGrammar::acceptCompilationUnit
+  glslang::HlslParseContext::parseShaderStrings
+  ```
+modified: '2024-12-10T00:00:50.788458Z'
+published: '2024-12-10T00:00:50.788Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=382721848
+affected:
+- package:
+    name: shaderc
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/shaderc
+  ranges:
+  - type: GIT
+    repo: https://github.com/google/shaderc
+    events:
+    - introduced: ffd3be52bbcbd428e9de40da996ad09645fc0dc8
+  versions:
+  - v2024.4
+  - v2025.1
+  ecosystem_specific:
+    severity: MEDIUM
+schema_version: 1.6.0
