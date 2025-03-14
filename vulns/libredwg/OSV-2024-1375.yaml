@@ -1,0 +1,55 @@
+id: OSV-2024-1375
+summary: Index-out-of-bounds in dwg_decode_eed
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=383814052
+
+  ```
+  Crash type: Index-out-of-bounds
+  Crash state:
+  dwg_decode_eed
+  dwg_decode_entity
+  dwg_decode_RAY_private
+  ```
+modified: '2024-12-15T00:01:20.442909Z'
+published: '2024-12-15T00:01:20.442440Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=383814052
+affected:
+- package:
+    name: libredwg
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libredwg
+  ranges:
+  - type: GIT
+    repo: https://github.com/LibreDWG/libredwg
+    events:
+    - introduced: b76f99df5bf29af8f0b9bfdeb79793f8b821e247
+  versions:
+  - 0.13.3.7424
+  - 0.13.3.7426
+  - 0.13.3.7429
+  - 0.13.3.7431
+  - 0.13.3.7434
+  - 0.13.3.7437
+  - 0.13.3.7442
+  - 0.13.3.7445
+  - 0.13.3.7453
+  - 0.13.3.7456
+  - 0.13.3.7460
+  - 0.13.3.7466
+  - 0.13.3.7469
+  - 0.13.3.7472
+  - 0.13.3.7473
+  - 0.13.3.7483
+  - 0.13.3.7491
+  - 0.13.3.7501
+  - 0.13.3.7507
+  - 0.13.3.7516
+  - 0.13.3.7533
+  - 0.13.3.7534
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: 0d71418532275597c42f1ab93fe7d62a095ea1d2:47a07e5fadfd335adf63cb3ff995edbda86565a3
+schema_version: 1.6.0
