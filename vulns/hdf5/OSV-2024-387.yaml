@@ -10,7 +10,7 @@ details: |
   H5O__fsinfo_encode
   H5O_msg_flush
   ```
-modified: '2025-02-06T15:13:20.441250Z'
+modified: '2025-03-15T15:47:30.596750Z'
 published: '2024-04-30T00:13:39.184262Z'
 references:
 - type: REPORT
@@ -53,6 +53,7 @@ affected:
   - hdf5_1.14.6
   - hdff5-1_14-_0
   - hdff5-1_14_0
+  - final_autotools_develop
   ecosystem_specific:
     severity: HIGH
 schema_version: 1.6.0
