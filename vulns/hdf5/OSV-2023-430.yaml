@@ -10,7 +10,7 @@ details: |
   H5G__ent_to_link
   H5G__stab_lookup_cb
   ```
-modified: '2025-02-06T14:36:57.648144Z'
+modified: '2025-03-15T14:53:36.436882Z'
 published: '2023-05-26T14:00:26.078002Z'
 references:
 - type: REPORT
@@ -55,6 +55,7 @@ affected:
   - hdf5_1.14.6
   - hdff5-1_14-_0
   - hdff5-1_14_0
+  - final_autotools_develop
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.4.0
