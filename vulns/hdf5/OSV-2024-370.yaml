@@ -10,7 +10,7 @@ details: |
   H5O__chunk_delete
   H5O__cont_delete
   ```
-modified: '2025-02-06T15:34:36.870108Z'
+modified: '2025-03-15T14:57:17.970529Z'
 published: '2024-04-30T00:08:00.120801Z'
 references:
 - type: REPORT
@@ -53,6 +53,7 @@ affected:
   - hdf5_1.14.6
   - hdff5-1_14-_0
   - hdff5-1_14_0
+  - final_autotools_develop
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.6.0
