@@ -10,7 +10,7 @@ details: |
   H5FS_sect_find
   H5MF__find_sect
   ```
-modified: '2024-10-03T14:45:20.022988Z'
+modified: '2025-03-15T15:18:33.731880Z'
 published: '2024-08-16T00:16:31.692553Z'
 references:
 - type: REPORT
@@ -27,6 +27,7 @@ affected:
     - introduced: c2099d0e7008478e44f1b3e1f90f261e546ffd49
   versions:
   - snapshot-1.16
+  - final_autotools_develop
   ecosystem_specific:
     severity: MEDIUM
   database_specific:
