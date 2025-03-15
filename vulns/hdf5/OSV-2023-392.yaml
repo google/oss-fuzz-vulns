@@ -10,7 +10,7 @@ details: |
   H5O__link_decode
   H5O__msg_iterate_real
   ```
-modified: '2025-02-06T14:34:01.862062Z'
+modified: '2025-03-15T15:16:02.670795Z'
 published: '2023-05-13T14:00:26.093088Z'
 references:
 - type: REPORT
@@ -55,6 +55,7 @@ affected:
   - hdf5_1.14.6
   - hdff5-1_14-_0
   - hdff5-1_14_0
+  - final_autotools_develop
   ecosystem_specific:
     severity: null
 schema_version: 1.4.0
