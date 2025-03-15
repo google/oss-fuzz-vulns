@@ -10,7 +10,7 @@ details: |
   H5MF_xfree
   H5MF_free_aggrs
   ```
-modified: '2025-02-06T14:39:32.432078Z'
+modified: '2025-03-15T15:43:45.816716Z'
 published: '2024-04-30T00:12:14.936195Z'
 references:
 - type: REPORT
@@ -53,6 +53,7 @@ affected:
   - hdf5_1.14.6
   - hdff5-1_14-_0
   - hdff5-1_14_0
+  - final_autotools_develop
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.6.0
