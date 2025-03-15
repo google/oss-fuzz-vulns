@@ -10,7 +10,7 @@ details: |
   H5SL__close_common
   H5SL_destroy
   ```
-modified: '2025-02-06T14:40:25.939763Z'
+modified: '2025-03-15T14:56:52.010254Z'
 published: '2024-04-30T00:03:47.754456Z'
 references:
 - type: REPORT
@@ -53,6 +53,7 @@ affected:
   - hdf5_1.14.6
   - hdff5-1_14-_0
   - hdff5-1_14_0
+  - final_autotools_develop
   ecosystem_specific:
     severity: HIGH
 schema_version: 1.6.0
