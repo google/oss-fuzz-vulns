@@ -10,7 +10,7 @@ details: |
   H5FS__sect_remove_real
   H5FS_sect_try_extend
   ```
-modified: '2024-10-03T16:02:56.905584Z'
+modified: '2025-03-15T14:44:30.665044Z'
 published: '2024-08-16T00:00:44.075617Z'
 references:
 - type: REPORT
@@ -27,6 +27,7 @@ affected:
     - introduced: c2099d0e7008478e44f1b3e1f90f261e546ffd49
   versions:
   - snapshot-1.16
+  - final_autotools_develop
   ecosystem_specific:
     severity: MEDIUM
   database_specific:
