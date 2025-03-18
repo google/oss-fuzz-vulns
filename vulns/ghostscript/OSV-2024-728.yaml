@@ -10,7 +10,7 @@ details: |
   process_cmap_text
   pdf_text_process
   ```
-modified: '2025-02-20T14:25:34.750558Z'
+modified: '2025-03-18T14:39:49.908341Z'
 published: '2024-08-08T00:09:33.935595Z'
 references:
 - type: REPORT
@@ -57,6 +57,7 @@ affected:
   - rjw-test3
   - ghostpdl-10.05.0-test-base-001
   - ghostpdl-10.05.0rc1
+  - ghostpdl-10.05.0
   ecosystem_specific:
     severity: null
 schema_version: 1.6.0
