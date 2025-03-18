@@ -4,7 +4,7 @@ details: "OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id
   \n```\nCrash type: Use-of-uninitialized-value\nCrash state:\nPoco::Dynamic::Var::~Var\n\
   void Poco::JSON::Object::doStringify<std::__1::map<std::__1::basic_string<char,\
   \ \nPoco::JWT::Serializer::serialize\n```\n"
-modified: '2024-09-15T00:06:58.343242Z'
+modified: '2025-03-18T00:25:32.915201Z'
 published: '2024-09-15T00:06:58.342742Z'
 references:
 - type: REPORT
@@ -21,8 +21,11 @@ affected:
     - introduced: 91c256095f846cd92591e070d4dc075d2a7f7aa9
     - fixed: bd7be38d6fe7eff50e65223ffe39fb2cbac1c521
     - fixed: af36c9badfcd8971f7a6cf68f1cb759751694673
+    - fixed: 5652837b8f622f2e8d6aad5d286c78587a4a37b4
   versions:
   - poco-1.14.0-release
   ecosystem_specific:
     severity: MEDIUM
+  database_specific:
+    fixed_range: 4ca735d7d80f717911b94a246536b2f04272753e:5652837b8f622f2e8d6aad5d286c78587a4a37b4
 schema_version: 1.6.0
