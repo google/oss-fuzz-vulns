@@ -10,7 +10,7 @@ details: |
   wbuffer_write_thread
   vips_threadset_work
   ```
-modified: '2025-02-16T00:13:44.283335Z'
+modified: '2025-03-18T00:32:21.245932Z'
 published: '2025-02-16T00:13:44.282887Z'
 references:
 - type: REPORT
@@ -26,9 +26,10 @@ affected:
     events:
     - introduced: 7b47b07bcd0583c4f9d4afaac85d3abb5008edff
     - fixed: 68d859f9b7cc8f7d6748bfc44037e8c233b03d7b
+  versions:
+  - v8.16.1
   ecosystem_specific:
     severity: HIGH
   database_specific:
     fixed_range: 762f5030c82861a8d4b981cb398f81e70d002bd9:68d859f9b7cc8f7d6748bfc44037e8c233b03d7b
-  versions: []
 schema_version: 1.6.0
