@@ -10,7 +10,7 @@ details: |
   se_read_conf
   run_config_handler
   ```
-modified: '2025-02-24T00:15:33.663320Z'
+modified: '2025-03-18T00:37:12.676515Z'
 published: '2025-02-24T00:15:33.662895Z'
 references:
 - type: REPORT
@@ -26,6 +26,7 @@ affected:
     events:
     - introduced: a6d63f416b3fe3011a3d11559ddf29ecf01a1667
     - fixed: a147b834d49e656f6216701b8769b4b6261e72d5
+    - fixed: 2985da1608f6731906944c4018fefe73b91997b7
   ecosystem_specific:
     severity: MEDIUM
   database_specific:
