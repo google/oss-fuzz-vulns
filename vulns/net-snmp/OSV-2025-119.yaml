@@ -10,7 +10,7 @@ details: |
   netsnmp_config_process_memory_list
   read_premib_configs
   ```
-modified: '2025-02-14T00:15:08.375770Z'
+modified: '2025-03-18T00:37:43.437021Z'
 published: '2025-02-14T00:15:08.375253Z'
 references:
 - type: REPORT
@@ -27,6 +27,7 @@ affected:
     - introduced: a6d63f416b3fe3011a3d11559ddf29ecf01a1667
     - fixed: 50d5c3d007cf9b4f56a29b79a8a2e736115eb6cb
     - fixed: 0eeb1c0b18d1b5ea594c1e2300725977c7dcf20c
+    - fixed: 9c2aeb5cb12a75f366303623c522f6ed72afd944
   ecosystem_specific:
     severity: MEDIUM
   database_specific:
