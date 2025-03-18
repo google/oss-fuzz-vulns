@@ -10,7 +10,7 @@ details: |
   H5O__dtype_shared_decode
   H5O_msg_read_oh
   ```
-modified: '2025-01-10T05:43:41.318062Z'
+modified: '2025-03-18T00:47:06.884278Z'
 published: '2023-11-27T13:01:18.977198Z'
 references:
 - type: REPORT
@@ -47,6 +47,11 @@ affected:
   - snapshot-1.14
   - hdf5_1.14.4.3
   - hdf5_1.14.5
+  - hdf5-1.14.5
+  - hdf5-1.14.6
+  - hdf5_1.14.6
+  - hdff5-1_14-_0
+  - hdff5-1_14_0
   ecosystem_specific:
     severity: MEDIUM
   database_specific:
