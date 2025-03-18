@@ -10,7 +10,7 @@ details: |
   init_snmpv3_post_premib_config
   snmp_call_callbacks
   ```
-modified: '2025-02-23T00:00:36.951596Z'
+modified: '2025-03-18T00:22:22.817245Z'
 published: '2025-02-23T00:00:36.951152Z'
 references:
 - type: REPORT
@@ -26,6 +26,7 @@ affected:
     events:
     - introduced: a6d63f416b3fe3011a3d11559ddf29ecf01a1667
     - fixed: 2da22610f90b8a64c930af02d88f07f3a596905f
+    - fixed: b7d5bbbb84239f0c22b5c227344b0a6a535cfd69
   ecosystem_specific:
     severity: HIGH
   database_specific:
