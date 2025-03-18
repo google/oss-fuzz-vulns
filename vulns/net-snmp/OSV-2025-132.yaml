@@ -10,7 +10,7 @@ details: |
   snmpv3_parse_arg
   netsnmp_parse_args
   ```
-modified: '2025-02-17T00:01:01.921447Z'
+modified: '2025-03-18T00:33:26.648884Z'
 published: '2025-02-17T00:01:01.920904Z'
 references:
 - type: REPORT
@@ -26,6 +26,7 @@ affected:
     events:
     - introduced: a6d63f416b3fe3011a3d11559ddf29ecf01a1667
     - fixed: cbedf0cba170b967ab312ebc794eabdd6f67c6d5
+    - fixed: 6af1dd2e6ab3820d949e24bc640bdcd75a05e48f
   ecosystem_specific:
     severity: HIGH
   database_specific:
