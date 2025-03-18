@@ -10,7 +10,7 @@ details: |
   java.base/java.nio.charset.CharsetEncoder.replaceWith
   java.base/java.nio.charset.CharsetEncoder.<init>
   ```
-modified: '2025-01-10T05:14:53.836802Z'
+modified: '2025-03-18T00:24:17.881614Z'
 published: '2024-11-18T00:00:16.618504Z'
 references:
 - type: REPORT
@@ -79,6 +79,12 @@ affected:
   - 2.0.53
   - 2.0.53.android5
   - 2.0.53.android8
+  - 2.0.54.android5
+  - 2.0.54.android8
+  - 2.0.55.android5
+  - 2.0.55.android8
+  - 2.0.56.android5
+  - 2.0.56.android8
   ecosystem_specific:
     severity: LOW
   database_specific:
