@@ -10,7 +10,7 @@ details: |
   netsnmp_parse_args
   snmp_parse_args_fuzzer.c
   ```
-modified: '2025-02-14T00:01:45.813124Z'
+modified: '2025-03-18T00:35:43.690001Z'
 published: '2025-02-14T00:01:45.812592Z'
 references:
 - type: REPORT
@@ -27,6 +27,7 @@ affected:
     - introduced: a6d63f416b3fe3011a3d11559ddf29ecf01a1667
     - fixed: c90280f310aa8f9fd0442128244a8672bdfdb80e
     - fixed: 0eeb1c0b18d1b5ea594c1e2300725977c7dcf20c
+    - fixed: e02bab233ca1ccff6b90eda7b644967c7b6917de
   ecosystem_specific:
     severity: MEDIUM
   database_specific:
