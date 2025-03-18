@@ -11,7 +11,7 @@ details: |
   Exiv2::QuickTimeVideo::NikonTagsDecoder
   Exiv2::QuickTimeVideo::userDataDecoder
   ```
-modified: '2025-01-10T05:16:23.655448Z'
+modified: '2025-03-18T00:34:06.623648Z'
 published: '2023-11-14T13:03:13.962614Z'
 references:
 - type: REPORT
@@ -33,6 +33,8 @@ affected:
   - v0.28.1
   - v0.28.2
   - v0.28.3
+  - v0.28.4
+  - v0.28.5
   ecosystem_specific:
     severity: MEDIUM
   database_specific:
