@@ -10,7 +10,7 @@ details: |
   run_config_handler
   snmp_config_when
   ```
-modified: '2025-02-17T00:02:18.986787Z'
+modified: '2025-03-18T00:27:33.917908Z'
 published: '2025-02-17T00:02:18.986364Z'
 references:
 - type: REPORT
@@ -27,6 +27,7 @@ affected:
     - introduced: a6d63f416b3fe3011a3d11559ddf29ecf01a1667
     - fixed: 2342de96b4968969e2f01f3970905963053b0504
     - fixed: 644bc1d4d155f464db94ba3f21be7eb2448f95f7
+    - fixed: c1ae498b04cdc43ebb6e5348dcf51fe061c1dec4
   ecosystem_specific:
     severity: MEDIUM
   database_specific:
