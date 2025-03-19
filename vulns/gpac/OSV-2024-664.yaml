@@ -10,7 +10,7 @@ details: |
   gf_dash_resolve_url
   gf_dash_download_init_segment
   ```
-modified: '2025-02-28T14:25:59.765270Z'
+modified: '2025-03-19T14:31:26.548253Z'
 published: '2024-07-18T00:13:55.576218Z'
 references:
 - type: REPORT
@@ -27,6 +27,8 @@ affected:
     - introduced: 7323c74ff523fa2d5c4db793d5dfbc611ae505c4
   versions:
   - testtag0.1
+  - abi-12
+  - abi-12.16
   ecosystem_specific:
     severity: HIGH
 schema_version: 1.6.0
