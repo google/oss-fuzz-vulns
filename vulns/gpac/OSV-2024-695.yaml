@@ -10,7 +10,7 @@ details: |
   gf_inspect_dump_nalu_internal
   inspect_process
   ```
-modified: '2025-02-28T14:25:45.940109Z'
+modified: '2025-03-19T14:26:01.558312Z'
 published: '2024-07-31T00:02:35.217594Z'
 references:
 - type: REPORT
@@ -27,6 +27,8 @@ affected:
     - introduced: 99a7952e91938f8c0d16f2235b912de1fed6c1f8
   versions:
   - testtag0.1
+  - abi-12
+  - abi-12.16
   ecosystem_specific:
     severity: HIGH
   database_specific:
