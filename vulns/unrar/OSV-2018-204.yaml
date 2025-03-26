@@ -10,7 +10,7 @@ details: |
   QuickOpen::ReadRaw
   QuickOpen::ReadNext
   ```
-modified: '2025-03-06T14:14:33.300990Z'
+modified: '2025-03-26T14:19:00.272214Z'
 published: '2021-01-13T00:01:23.035709Z'
 references:
 - type: REPORT
@@ -41,6 +41,7 @@ affected:
   - v7.10.2
   - v7.10.3
   - v7.11.1
+  - v7.11.0
   ecosystem_specific:
     severity: HIGH
     introduced_range: 9866c9649507f177233ca96feefac8b12e36a91f:b676eae90fc9c620a214889ed040d356638a18f6
