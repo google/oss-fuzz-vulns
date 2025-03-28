@@ -10,7 +10,7 @@ details: |
   htmlSaveFileFormat
   parseAndPrintFile
   ```
-modified: '2024-07-31T00:12:19.255166Z'
+modified: '2025-03-28T14:21:20.166092Z'
 published: '2024-07-31T00:12:19.254629Z'
 references:
 - type: REPORT
@@ -25,7 +25,8 @@ affected:
     repo: https://gitlab.gnome.org/GNOME/libxml2.git
     events:
     - introduced: 36ea881b9d92166568b1d107181a05f673fd4ab1
+  versions:
+  - v2.14.0
   ecosystem_specific:
     severity: HIGH
-  versions: []
 schema_version: 1.6.0
