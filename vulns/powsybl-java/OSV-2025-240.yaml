@@ -10,7 +10,7 @@ details: |
   com.powsybl.commons.xml.XmlUtil.readSubElements
   com.powsybl.commons.xml.XmlUtil.skipSubElements
   ```
-modified: '2025-03-28T00:05:50.145697Z'
+modified: '2025-03-30T14:32:19.516483Z'
 published: '2025-03-28T00:05:50.145107Z'
 references:
 - type: REPORT
@@ -26,6 +26,8 @@ affected:
     events:
     - introduced: c2514b1783e2b07bb14c9dcf7447de37da0c4192
     - fixed: 455fd74f3b9d03754ab8774b50d59e07823a793c
+    - introduced: f61f1fd1d7a7500bf6cb4352d6d8741e31df3790
+    - fixed: a635593ad90a41a991464757d9cd22e959148cd3
   ecosystem_specific:
     severity: LOW
   database_specific:
