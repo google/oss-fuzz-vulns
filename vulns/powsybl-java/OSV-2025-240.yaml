@@ -1,0 +1,34 @@
+id: OSV-2025-240
+summary: Security exception in com.powsybl.commons.xml.XmlUtil.lambda$skipSubElements$0
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=406332767
+
+  ```
+  Crash type: Security exception
+  Crash state:
+  com.powsybl.commons.xml.XmlUtil.lambda$skipSubElements$0
+  com.powsybl.commons.xml.XmlUtil.readSubElements
+  com.powsybl.commons.xml.XmlUtil.skipSubElements
+  ```
+modified: '2025-03-28T00:05:50.145697Z'
+published: '2025-03-28T00:05:50.145107Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=406332767
+affected:
+- package:
+    name: powsybl-java
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/powsybl-java
+  ranges:
+  - type: GIT
+    repo: https://github.com/powsybl/powsybl-core
+    events:
+    - introduced: c2514b1783e2b07bb14c9dcf7447de37da0c4192
+    - fixed: 455fd74f3b9d03754ab8774b50d59e07823a793c
+  ecosystem_specific:
+    severity: LOW
+  database_specific:
+    introduced_range: 615f5617c34112a729ccc68a58639969e66a94ba:455fd74f3b9d03754ab8774b50d59e07823a793c
+  versions: []
+schema_version: 1.6.0
