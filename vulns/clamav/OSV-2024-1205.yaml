@@ -10,7 +10,7 @@ details: |
   repeat
   p_ere
   ```
-modified: '2025-01-23T14:16:02.420761Z'
+modified: '2025-04-01T14:24:00.066746Z'
 published: '2024-10-11T00:12:59.211479Z'
 references:
 - type: REPORT
@@ -56,6 +56,7 @@ affected:
   - clamav-1.4.1
   - clamav-1.0.8
   - clamav-1.4.2
+  - clamav-1.5.0-beta
   ecosystem_specific:
     severity: MEDIUM
   database_specific:
