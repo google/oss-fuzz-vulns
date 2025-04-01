@@ -10,7 +10,7 @@ details: |
   unpack_meta_opts
   cmt_mpack_unpack_map
   ```
-modified: '2025-03-26T14:37:40.170833Z'
+modified: '2025-04-01T14:38:04.289952Z'
 published: '2024-10-08T00:15:47.433219Z'
 references:
 - type: REPORT
@@ -68,6 +68,7 @@ affected:
   - v3.2.8
   - v3.2.9
   - v3.2.10
+  - v4.0.0
   ecosystem_specific:
     severity: MEDIUM
   database_specific:
