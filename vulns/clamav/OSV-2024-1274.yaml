@@ -10,7 +10,7 @@ details: |
   yr_lex_parse_rules_file
   cli_loadyara
   ```
-modified: '2025-01-30T14:30:47.627921Z'
+modified: '2025-04-01T14:33:36.586326Z'
 published: '2024-11-05T00:04:03.220856Z'
 references:
 - type: REPORT
@@ -64,6 +64,7 @@ affected:
   - clamav-1.4.0-rc
   - clamav-1.4.1
   - clamav-1.4.2
+  - clamav-1.5.0-beta
   ecosystem_specific:
     severity: null
   database_specific:
