@@ -10,7 +10,7 @@ details: |
   XpackDynamicTable::insert_entry
   XpackDynamicTable::insert_entry
   ```
-modified: '2025-03-06T14:32:36.058632Z'
+modified: '2025-04-02T14:38:15.497210Z'
 published: '2024-05-08T00:14:48.544622Z'
 references:
 - type: REPORT
@@ -38,6 +38,7 @@ affected:
   - 10.0.3
   - 10.0.4-rc0
   - 10.0.4
+  - 10.0.5-rc0
   ecosystem_specific:
     severity: MEDIUM
   database_specific:
