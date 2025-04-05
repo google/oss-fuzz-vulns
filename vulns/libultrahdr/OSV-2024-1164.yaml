@@ -10,7 +10,7 @@ details: |
   ultrahdr::JpegEncoderHelper::encode
   ultrahdr::JpegEncoderHelper::compressImage
   ```
-modified: '2025-01-11T14:22:41.737787Z'
+modified: '2025-04-05T14:45:16.595433Z'
 published: '2024-10-02T00:13:05.449687Z'
 references:
 - type: REPORT
@@ -25,10 +25,13 @@ affected:
     repo: https://github.com/google/libultrahdr.git
     events:
     - introduced: 55ee308d04995d7b97e1402cc9ebf5b3f42f96ee
+    - fixed: 6db3a83ee2b1f79850f3f597172289808dc6a331
   versions:
   - v1.3.0
   - v1.3.1
   - v1.4.0
   ecosystem_specific:
     severity: MEDIUM
+  database_specific:
+    fixed_range: 93c234987b3ca971e718371abda325e9315e01a2:6db3a83ee2b1f79850f3f597172289808dc6a331
 schema_version: 1.6.0
