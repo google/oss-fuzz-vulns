@@ -1,0 +1,39 @@
+id: OSV-2025-264
+summary: Security exception in org.joni.Parser.parseCharClass
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=408254044
+
+  ```
+  Crash type: Security exception
+  Crash state:
+  org.joni.Parser.parseCharClass
+  org.joni.Lexer.fetchTokenInCC
+  org.joni.Parser.parseCharClass
+  ```
+modified: '2025-04-08T00:00:08.175341Z'
+published: '2025-04-08T00:00:08.174777Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=408254044
+affected:
+- package:
+    name: joni
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/joni
+  ranges:
+  - type: GIT
+    repo: https://github.com/jruby/joni
+    events:
+    - introduced: 6a0d556f7c24d77b0735e3d4fcfc2e3207174b4d
+    - fixed: 65b181b42b8d3737ecf55be0d84f3bf46e76b129
+  versions:
+  - joni-2.2.2
+  - joni-2.2.3
+  - joni-2.2.4
+  - joni-2.2.5
+  - joni-2.2.6
+  ecosystem_specific:
+    severity: LOW
+  database_specific:
+    introduced_range: unknown:6a0d556f7c24d77b0735e3d4fcfc2e3207174b4d
+schema_version: 1.6.0
