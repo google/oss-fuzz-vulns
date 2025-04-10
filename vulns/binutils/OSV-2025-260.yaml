@@ -1,0 +1,26 @@
+id: OSV-2025-260
+summary: Heap-buffer-overflow in bfd_getb16
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=408254000
+
+  ```
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  bfd_getb16
+  nds32_elf_do_9_pcrel_reloc
+  nds32_elf_9_pcrel_reloc
+  ```
+modified: '2025-04-06T00:00:51.202704Z'
+published: '2025-04-06T00:00:51.202273Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=408254000
+affected:
+- package:
+    name: binutils
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/binutils
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.6.0
