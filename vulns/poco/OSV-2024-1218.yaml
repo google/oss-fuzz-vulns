@@ -10,7 +10,7 @@ details: |
   Poco::TextConverter::convert
   Poco::Net::NTLMCredentials::parseChallengeMessage
   ```
-modified: '2025-02-12T14:38:06.605071Z'
+modified: '2025-04-10T14:48:52.198172Z'
 published: '2024-10-14T00:08:40.382545Z'
 references:
 - type: REPORT
@@ -25,6 +25,8 @@ affected:
     repo: https://github.com/pocoproject/poco
     events:
     - introduced: e55bb7032d20616c3fc22dcdb072ec53c4ef69d6
+    - fixed: be2748de0f34f7c48d5055c268bd12ecd32f8dc0
+    - fixed: 8e471e7595d9a9e2bbeb65e9dd6ed1671406d330
   versions:
   - poco-1.14.0-release
   - poco-1.14.1-release
@@ -32,4 +34,5 @@ affected:
     severity: MEDIUM
   database_specific:
     introduced_range: 03c35cff930e421199b586c33a00eb6cc537ba28:3a8c6a72b13d1a6ce4e45e4f0f1a428b308b531e
+    fixed_range: bb0b8f8e81e309ec4e52389d225f0a89c260411b:be2748de0f34f7c48d5055c268bd12ecd32f8dc0
 schema_version: 1.6.0
