@@ -10,7 +10,7 @@ details: |
   org.apache.lucene.util.ArrayUtil.grow
   org.apache.lucene.util.BytesRefBuilder.grow
   ```
-modified: '2024-11-01T00:07:39.301655Z'
+modified: '2025-04-10T15:01:52.586380Z'
 published: '2024-11-01T00:07:39.301298Z'
 references:
 - type: REPORT
@@ -28,6 +28,7 @@ affected:
   versions:
   - releases/lucene/10.0.0
   - releases/lucene/10.1.0
+  - releases/lucene/10.2.0
   ecosystem_specific:
     severity: LOW
   database_specific:
