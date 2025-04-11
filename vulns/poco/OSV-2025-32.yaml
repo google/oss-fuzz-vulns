@@ -1,0 +1,38 @@
+id: OSV-2025-32
+summary: UNKNOWN READ in std::__1::basic_string<char, std::__1::char_traits<char>,
+  std::__1::allocator<ch
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=389754841
+
+  ```
+  Crash type: UNKNOWN READ
+  Crash state:
+  std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<ch
+  Poco::Net::NTLMCredentials::parseChallengeMessage
+  Poco::Net::HTTPNTLMCredentials::createNTLMMessage
+  ```
+modified: '2025-01-16T00:01:09.536403Z'
+published: '2025-01-16T00:01:09.535772Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=389754841
+affected:
+- package:
+    name: poco
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/poco
+  ranges:
+  - type: GIT
+    repo: https://github.com/pocoproject/poco
+    events:
+    - introduced: e55bb7032d20616c3fc22dcdb072ec53c4ef69d6
+    - fixed: be2748de0f34f7c48d5055c268bd12ecd32f8dc0
+  versions:
+  - poco-1.14.0-release
+  - poco-1.14.1-release
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: 03c35cff930e421199b586c33a00eb6cc537ba28:3a8c6a72b13d1a6ce4e45e4f0f1a428b308b531e
+    fixed_range: bb0b8f8e81e309ec4e52389d225f0a89c260411b:be2748de0f34f7c48d5055c268bd12ecd32f8dc0
+schema_version: 1.6.0
