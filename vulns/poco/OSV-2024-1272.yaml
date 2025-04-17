@@ -10,7 +10,7 @@ details: |
   Poco::Net::MultipartReader::nextPart
   Poco::Net::MailMessage::readMultipart
   ```
-modified: '2025-02-12T14:38:22.062009Z'
+modified: '2025-04-17T14:38:30.981292Z'
 published: '2024-11-05T00:03:30.787980Z'
 references:
 - type: REPORT
@@ -25,6 +25,8 @@ affected:
     repo: https://github.com/pocoproject/poco
     events:
     - introduced: e55bb7032d20616c3fc22dcdb072ec53c4ef69d6
+    - fixed: 11619a9e95c2ce14a0edfeddb8c1a0a1c926ba7f
+    - fixed: 6f2f85913c191ab9ddfb8fae781f5d66afccf3bf
   versions:
   - poco-1.14.0-release
   - poco-1.14.1-release
@@ -32,4 +34,5 @@ affected:
     severity: null
   database_specific:
     introduced_range: 03c35cff930e421199b586c33a00eb6cc537ba28:3a8c6a72b13d1a6ce4e45e4f0f1a428b308b531e
+    fixed_range: a0822e02ca08c5fa7cf37c7448a0a647c0e332c1:11619a9e95c2ce14a0edfeddb8c1a0a1c926ba7f
 schema_version: 1.6.0
