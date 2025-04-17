@@ -1,0 +1,35 @@
+id: OSV-2025-50
+summary: Heap-double-free in r_crbtree_free
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=390503425
+
+  ```
+  Crash type: Heap-double-free
+  Crash state:
+  r_crbtree_free
+  r_bin_object_free
+  r_bin_file_free
+  ```
+modified: '2025-01-20T00:16:43.389604Z'
+published: '2025-01-20T00:16:43.389094Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=390503425
+affected:
+- package:
+    name: radare2
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/radare2
+  ranges:
+  - type: GIT
+    repo: https://github.com/radareorg/radare2
+    events:
+    - introduced: d6cd906585b7c01c41b111dde0e0477945954646
+    - fixed: 28c7c2d593a024e8b30eaa56abc6b52158a09842
+  ecosystem_specific:
+    severity: HIGH
+  database_specific:
+    introduced_range: b7d2fec2f732bffc4093d09485e9855c84201bc8:e798bd4482971a0d2aed211c551876f90e5ea411
+    fixed_range: 9ea3e3491f0528ccc41a0ce869b5bf0b0685f0da:28c7c2d593a024e8b30eaa56abc6b52158a09842
+  versions: []
+schema_version: 1.6.0
