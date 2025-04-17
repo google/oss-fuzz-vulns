@@ -11,7 +11,7 @@ details: |
   Poco::Net::NTLMCredentials::parseChallengeMessage
   Poco::Net::HTTPNTLMCredentials::createNTLMMessage
   ```
-modified: '2025-04-14T00:02:37.520337Z'
+modified: '2025-04-17T14:43:50.559313Z'
 published: '2025-04-14T00:02:37.519708Z'
 references:
 - type: REPORT
@@ -27,6 +27,7 @@ affected:
     events:
     - introduced: e55bb7032d20616c3fc22dcdb072ec53c4ef69d6
     - fixed: a0822e02ca08c5fa7cf37c7448a0a647c0e332c1
+    - fixed: 88454842602be2dfe5a3d9b5490660dde804644d
   versions:
   - poco-1.14.0-release
   - poco-1.14.1-release
