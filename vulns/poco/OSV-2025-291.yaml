@@ -1,0 +1,37 @@
+id: OSV-2025-291
+summary: Use-of-uninitialized-value in Poco::Net::NTLMCredentials::parseChallengeMessage
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=411466303
+
+  ```
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  Poco::Net::NTLMCredentials::parseChallengeMessage
+  Poco::Net::HTTPNTLMCredentials::createNTLMMessage
+  Poco::Net::HTTPNTLMCredentials::authenticate
+  ```
+modified: '2025-04-20T00:07:34.287298Z'
+published: '2025-04-20T00:07:34.286645Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=411466303
+affected:
+- package:
+    name: poco
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/poco
+  ranges:
+  - type: GIT
+    repo: https://github.com/pocoproject/poco
+    events:
+    - introduced: e55bb7032d20616c3fc22dcdb072ec53c4ef69d6
+    - fixed: ca571245e6cc38177f4c1f27fc22d807b8468a47
+  versions:
+  - poco-1.14.0-release
+  - poco-1.14.1-release
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: 03c35cff930e421199b586c33a00eb6cc537ba28:3a8c6a72b13d1a6ce4e45e4f0f1a428b308b531e
+    fixed_range: 11619a9e95c2ce14a0edfeddb8c1a0a1c926ba7f:ca571245e6cc38177f4c1f27fc22d807b8468a47
+schema_version: 1.6.0
