@@ -10,7 +10,7 @@ details: |
   java.base/java.util.stream.ReferencePipeline.collect
   org.apache.commons.configuration2.AbstractYAMLBasedConfiguration.parseCollection
   ```
-modified: '2025-04-17T14:35:34.696314Z'
+modified: '2025-04-23T14:34:57.047082Z'
 published: '2024-04-18T00:04:02.456948Z'
 references:
 - type: REPORT
@@ -35,6 +35,7 @@ affected:
   - commons-configuration-2.11.0-RC1
   - rel/commons-configuration-2.11.0
   - commons-configuration-2.11.1-RC1
+  - commons-configuration-2.12.0-RC1
   ecosystem_specific:
     severity: LOW
 schema_version: 1.6.0
