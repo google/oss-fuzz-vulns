@@ -10,7 +10,7 @@ details: |
   glslang::TParseContextBase::outputMessage
   glslang::TParseContextBase::error
   ```
-modified: '2024-12-10T00:08:00.540945Z'
+modified: '2025-04-24T14:22:08.530187Z'
 published: '2024-12-10T00:08:00.540533Z'
 references:
 - type: REPORT
@@ -28,6 +28,7 @@ affected:
   versions:
   - v2024.4
   - v2025.1
+  - v2025.2
   ecosystem_specific:
     severity: MEDIUM
   database_specific:
