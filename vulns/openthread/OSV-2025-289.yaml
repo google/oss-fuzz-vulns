@@ -1,0 +1,34 @@
+id: OSV-2025-289
+summary: Stack-buffer-overflow in ot::Cli::Utils::OutputLine
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=411460530
+
+  ```
+  Crash type: Stack-buffer-overflow READ {*}
+  Crash state:
+  ot::Cli::Utils::OutputLine
+  ot::Cli::Dns::HandleDnsRecordResponse
+  ot::Dns::Client::FinalizeQuery
+  ```
+modified: '2025-04-19T00:05:17.593788Z'
+published: '2025-04-19T00:05:17.593162Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=411460530
+affected:
+- package:
+    name: openthread
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/openthread
+  ranges:
+  - type: GIT
+    repo: https://github.com/openthread/openthread
+    events:
+    - introduced: 98b88dc8f7a3a9f7300248093752455260d605df
+    - fixed: 3e7528e4e9cc992166dba8db471d063443d60710
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    fixed_range: 424de28a2f5cb2f24e81264a56c2425efb44d42d:3e7528e4e9cc992166dba8db471d063443d60710
+  versions: []
+schema_version: 1.6.0
