@@ -10,7 +10,7 @@ details: |
   com.github.javaparser.ast.expr.FieldAccessExpr.getMetaModel
   com.github.javaparser.ast.expr.FieldAccessExpr.getMetaModel
   ```
-modified: '2025-04-14T14:23:05.443009Z'
+modified: '2025-04-25T14:41:17.030030Z'
 published: '2024-04-08T00:11:03.595756Z'
 references:
 - type: REPORT
@@ -38,6 +38,7 @@ affected:
   - jackson-databind-3.0.0-rc2
   - jackson-databind-2.19.0-rc2
   - jackson-databind-3.0.0-rc3
+  - jackson-databind-2.19.0
   ecosystem_specific:
     severity: LOW
   database_specific:
