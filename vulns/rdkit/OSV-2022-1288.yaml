@@ -11,7 +11,7 @@ details: |
   bool SmilesParseOps::parser::parse_it<std::__1::__wrap_iter<char const*> >
   SmilesParseOps::parseCXExtensions
   ```
-modified: '2025-04-01T14:29:58.245668Z'
+modified: '2025-04-26T14:35:51.928968Z'
 published: '2024-11-04T00:16:22.516312Z'
 references:
 - type: REPORT
@@ -66,6 +66,7 @@ affected:
   - Release_2024_09_6
   - Release_2025_03_1b1
   - Release_2025_03_1
+  - Release_2025_03_2
   ecosystem_specific:
     severity: MEDIUM
   database_specific:
