@@ -10,7 +10,7 @@ details: |
   gs_cspace_final
   alloc_restore_step_in
   ```
-modified: '2025-03-18T14:33:01.964358Z'
+modified: '2025-04-28T14:26:35.661599Z'
 published: '2022-01-22T00:00:41.413569Z'
 references:
 - type: REPORT
@@ -74,5 +74,6 @@ affected:
   - ghostpdl-10.05.0-test-base-001
   - ghostpdl-10.05.0rc1
   - ghostpdl-10.05.0
+  - ghostpdl-10.05.1rc1_test001
   ecosystem_specific:
     severity: HIGH
