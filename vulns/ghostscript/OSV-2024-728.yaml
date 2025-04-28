@@ -10,7 +10,7 @@ details: |
   process_cmap_text
   pdf_text_process
   ```
-modified: '2025-03-18T14:39:49.908341Z'
+modified: '2025-04-28T14:34:04.400847Z'
 published: '2024-08-08T00:09:33.935595Z'
 references:
 - type: REPORT
@@ -58,6 +58,7 @@ affected:
   - ghostpdl-10.05.0-test-base-001
   - ghostpdl-10.05.0rc1
   - ghostpdl-10.05.0
+  - ghostpdl-10.05.1rc1_test001
   ecosystem_specific:
     severity: null
 schema_version: 1.6.0
