@@ -1,0 +1,73 @@
+id: OSV-2025-62
+summary: UNKNOWN READ in RDKit::Dict::reset
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=391962480
+
+  ```
+  Crash type: UNKNOWN READ
+  Crash state:
+  RDKit::Dict::reset
+  RDKit::Atom::~Atom
+  RDKit::QueryAtom::~QueryAtom
+  ```
+modified: '2025-01-27T00:01:51.693115Z'
+published: '2025-01-27T00:01:51.692636Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=391962480
+affected:
+- package:
+    name: rdkit
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/rdkit
+  ranges:
+  - type: GIT
+    repo: https://github.com/rdkit/rdkit.git
+    events:
+    - introduced: 82926b048a2706b0c7c7d9e5a2d16a7187561434
+    - introduced: caffd6c0fb5b5f220aea7782fed43181ca78596f
+  versions:
+  - Release_2021_09_5
+  - Release_2022_03_1
+  - Release_2022_03_1b1
+  - Release_2022_03_2
+  - Release_2022_03_3
+  - Release_2022_03_4
+  - Release_2022_03_5
+  - Release_2022_09_1
+  - Release_2022_09_1b1
+  - Release_2022_09_2
+  - Release_2022_09_3
+  - Release_2022_09_4
+  - Release_2022_09_5
+  - Release_2023_03_1
+  - Release_2023_03_1b1
+  - Release_2023_03_2
+  - Release_2023_03_3
+  - Release_2023_09_1
+  - Release_2023_09_1b1
+  - Release_2023_09_2
+  - Release_2023_09_3
+  - Release_2023_09_4
+  - Release_2023_09_5
+  - Release_2023_09_6
+  - Release_2024_03_1
+  - Release_2024_03_1b1
+  - Release_2024_03_2
+  - Release_2024_03_3
+  - Release_2024_03_4
+  - Release_2024_03_5
+  - Release_2024_03_6
+  - Release_2024_09_1
+  - Release_2024_09_1b1
+  - Release_2024_09_2
+  - Release_2024_09_3
+  - Release_2024_09_4
+  - Release_2024_09_5
+  - Release_2024_09_6
+  - Release_2025_03_1
+  - Release_2025_03_1b1
+  - Release_2025_03_2
+  ecosystem_specific:
+    severity: MEDIUM
+schema_version: 1.6.0
