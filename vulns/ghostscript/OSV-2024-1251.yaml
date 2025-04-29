@@ -10,7 +10,7 @@ details: |
   sreadbuf
   spgetcc
   ```
-modified: '2025-04-28T14:31:07.300506Z'
+modified: '2025-04-29T14:29:01.935923Z'
 published: '2024-11-01T00:02:31.749497Z'
 references:
 - type: REPORT
@@ -25,18 +25,21 @@ affected:
     repo: git://git.ghostscript.com/ghostpdl.git
     events:
     - introduced: bf0048d271aa6a4d9898997ada84cf89c197e791
+    - fixed: b5b69dfb04bcec0707275dbbc5a317e77557a0c9
   versions:
   - ghostpdl-10.04.0
   - ghostpdl-10.04.0rc1
   - ghostpdl-10.04.0rc1_test001
   - ghostpdl-10.04.0rc2_test001
-  - ghostpdl-10.05.0-test-base-001
-  - rjw-test3
-  - ghostpdl-10.05.0rc1
   - ghostpdl-10.05.0
-  - ghostpdl-10.05.1rc1_test001
+  - ghostpdl-10.05.0-test-base-001
+  - ghostpdl-10.05.0rc1
+  - ghostpdl-10.05.1
+  - ghostpdl-10.05.1rc1_test002
+  - rjw-test3
   ecosystem_specific:
     severity: HIGH
   database_specific:
     introduced_range: f6dc854531c7f591e8f6f60dac7a312c8acb2e6b:4c8ded763017611bb9479a027dc2cc1ae5fe01cb
+    fixed_range: bb42232d9597d86042b846dd3182336d1837cf58:b5b69dfb04bcec0707275dbbc5a317e77557a0c9
 schema_version: 1.6.0
