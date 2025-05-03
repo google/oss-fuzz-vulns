@@ -10,7 +10,7 @@ details: |
   pcpp::SSLClientHelloMessage::ClientHelloTLSFingerprint::toStringAndMD5
   pcpp::SSLClientHelloMessage::ClientHelloTLSFingerprint::toMD5
   ```
-modified: '2024-09-04T14:18:56.239791Z'
+modified: '2025-05-03T14:12:50.713502Z'
 published: '2024-08-16T00:02:36.618439Z'
 references:
 - type: REPORT
@@ -27,6 +27,7 @@ affected:
     - introduced: 56668faab242e53b1282b3405eaa4bb51e474bee
   versions:
   - v24.09
+  - v25.05-beta
   ecosystem_specific:
     severity: MEDIUM
   database_specific:
