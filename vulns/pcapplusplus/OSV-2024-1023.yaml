@@ -10,7 +10,7 @@ details: |
   pcpp::SomeIpLayer::parseNextLayer
   pcpp::Packet::setRawPacket
   ```
-modified: '2024-08-16T00:17:01.984959Z'
+modified: '2025-05-03T14:09:03.209988Z'
 published: '2024-08-16T00:17:01.984623Z'
 references:
 - type: REPORT
@@ -27,6 +27,7 @@ affected:
     - introduced: 813f15b87f5e76a62d64360f8cbdf449c21316e4
   versions:
   - v24.09
+  - v25.05-beta
   ecosystem_specific:
     severity: MEDIUM
   database_specific:
