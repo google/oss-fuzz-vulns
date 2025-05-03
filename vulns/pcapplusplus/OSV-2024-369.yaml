@@ -10,7 +10,7 @@ details: |
   pcpp::IPv6Layer::~IPv6Layer
   pcpp::Packet::destructPacketData
   ```
-modified: '2024-09-04T14:17:04.668514Z'
+modified: '2025-05-03T14:18:18.844594Z'
 published: '2024-04-30T00:07:01.572543Z'
 references:
 - type: REPORT
@@ -27,6 +27,7 @@ affected:
     - introduced: 813f15b87f5e76a62d64360f8cbdf449c21316e4
   versions:
   - v24.09
+  - v25.05-beta
   ecosystem_specific:
     severity: null
   database_specific:
