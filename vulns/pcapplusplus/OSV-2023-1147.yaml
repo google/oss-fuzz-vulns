@@ -10,7 +10,7 @@ details: |
   light_read_record
   light_get_next_packet
   ```
-modified: '2024-09-04T14:11:53.944216Z'
+modified: '2025-05-03T14:13:20.698001Z'
 published: '2023-11-13T13:00:50.800524Z'
 references:
 - type: REPORT
@@ -27,6 +27,7 @@ affected:
     - introduced: 0c95dfb3557644acc6a10060e48cfae1a61fc2f0
   versions:
   - v24.09
+  - v25.05-beta
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.6.0
