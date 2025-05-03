@@ -10,7 +10,7 @@ details: |
   std::__1::ostreambuf_iterator<char, std::__1::char_traits<char> > std::__1::__pa
   std::__1::basic_ostream<char, std::__1::char_traits<char> >& std::__1::__put_cha
   ```
-modified: '2024-09-04T14:13:01.810494Z'
+modified: '2025-05-03T14:13:31.020357Z'
 published: '2023-12-06T04:45:58.561174Z'
 references:
 - type: REPORT
@@ -27,6 +27,7 @@ affected:
     - introduced: 813f15b87f5e76a62d64360f8cbdf449c21316e4
   versions:
   - v24.09
+  - v25.05-beta
   ecosystem_specific:
     severity: MEDIUM
   database_specific:
