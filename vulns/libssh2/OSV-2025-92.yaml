@@ -1,0 +1,35 @@
+id: OSV-2025-92
+summary: Null-dereference READ in session_startup
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=393523566
+
+  ```
+  Crash type: Null-dereference READ
+  Crash state:
+  session_startup
+  libssh2_session_handshake
+  ssh2_client_fuzzer.cc
+  ```
+modified: '2025-02-05T00:18:00.385535Z'
+published: '2025-02-05T00:18:00.385170Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=393523566
+affected:
+- package:
+    name: libssh2
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libssh2
+  ranges:
+  - type: GIT
+    repo: https://github.com/libssh2/libssh2.git
+    events:
+    - introduced: 64a555d6f5aafed504a10e5b756e85c91b1d56ce
+  versions:
+  - libssh2-1.11.0
+  - libssh2-1.11.1
+  ecosystem_specific:
+    severity: null
+  database_specific:
+    introduced_range: 967792c89625440fe86e0e55ce84082eea9e71a6:13ad7b2f5cd67e0dc843098ce19ce8b208368c29
+schema_version: 1.6.0

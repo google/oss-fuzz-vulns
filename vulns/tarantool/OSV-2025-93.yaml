@@ -1,0 +1,36 @@
+id: OSV-2025-93
+summary: Heap-buffer-overflow in lj_strfmt_pushvf
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=394126186
+
+  ```
+  Crash type: Heap-buffer-overflow WRITE 8
+  Crash state:
+  lj_strfmt_pushvf
+  err_msgv
+  lj_err_msg
+  ```
+modified: '2025-02-05T00:18:14.584998Z'
+published: '2025-02-05T00:18:14.584575Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=394126186
+affected:
+- package:
+    name: tarantool
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/tarantool
+  ranges:
+  - type: GIT
+    repo: https://github.com/tarantool/tarantool
+    events:
+    - introduced: 8ad443de995a7800906718925ce6c9162d80c4a9
+  versions:
+  - 3.4.0
+  - 3.4.1-entrypoint
+  - 3.5.0-entrypoint
+  ecosystem_specific:
+    severity: HIGH
+  database_specific:
+    introduced_range: f40901fbc98e46e0f4c276cbb51ffaf1abbbfebb:43aa0bf45ef18f76b312fabf3d3842d81a970bae
+schema_version: 1.6.0
