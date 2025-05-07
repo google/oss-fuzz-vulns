@@ -1,0 +1,34 @@
+id: OSV-2025-326
+summary: Heap-use-after-free in __JS_FreeValueRT
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=415361008
+
+  ```
+  Crash type: Heap-use-after-free WRITE 8
+  Crash state:
+  __JS_FreeValueRT
+  JS_CallInternal
+  JS_EvalFunctionInternal
+  ```
+modified: '2025-05-05T00:17:02.285666Z'
+published: '2025-05-05T00:17:02.285374Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=415361008
+affected:
+- package:
+    name: quickjs
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/quickjs
+  ranges:
+  - type: GIT
+    repo: https://github.com/bellard/quickjs
+    events:
+    - introduced: be06b3e92b77a343adefa49a4b29e1ad523014ea
+    - fixed: 11d076fac6691da27df021872cdb12ec44d022e6
+  ecosystem_specific:
+    severity: HIGH
+  database_specific:
+    introduced_range: 30fe3de91dd49bc6f725bbae24095c99fe7d001f:11d076fac6691da27df021872cdb12ec44d022e6
+  versions: []
+schema_version: 1.6.0
