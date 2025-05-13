@@ -10,7 +10,7 @@ details: |
   unpack_meta_opts
   cmt_mpack_unpack_map
   ```
-modified: '2025-04-24T14:28:16.499367Z'
+modified: '2025-05-13T14:48:36.393777Z'
 published: '2024-10-08T00:15:47.433219Z'
 references:
 - type: REPORT
@@ -26,6 +26,7 @@ affected:
     events:
     - introduced: 03afd1f185b4814a35ed5f5e81f3d4a687f114dc
     - introduced: 4c37d914cb50b2135ea76c2dc1c16be9418ae0d4
+    - fixed: 3c8f9f27e3960de4d5ee937565943f724ff1a1e6
   versions:
   - v2.1.10
   - v2.1.5
@@ -59,6 +60,7 @@ affected:
   - v3.1.9
   - v3.2.0
   - v3.2.1
+  - v3.2.10
   - v3.2.2
   - v3.2.3
   - v3.2.4
@@ -67,11 +69,11 @@ affected:
   - v3.2.7
   - v3.2.8
   - v3.2.9
-  - v3.2.10
   - v4.0.0
   - v4.0.1
   ecosystem_specific:
     severity: MEDIUM
   database_specific:
     introduced_range: eabc1a10d817772dc04187201bd32d27bcc3dac6:a2105c2c2549f3a2a7e3fc61a9da72544dba2afa
+    fixed_range: 5905ddcb41839ba94ae430e8c10812bc89cde14b:3c8f9f27e3960de4d5ee937565943f724ff1a1e6
 schema_version: 1.6.0
