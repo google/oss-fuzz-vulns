@@ -9,7 +9,7 @@ details: |
   pcpp::Packet::destructPacketData
   Packet.h
   ```
-modified: '2025-05-03T14:18:25.310367Z'
+modified: '2025-05-14T14:16:53.222952Z'
 published: '2024-04-30T00:12:20.588223Z'
 references:
 - type: REPORT
@@ -27,6 +27,7 @@ affected:
   versions:
   - v24.09
   - v25.05-beta
+  - v25.05
   ecosystem_specific:
     severity: MEDIUM
   database_specific:
