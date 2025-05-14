@@ -10,7 +10,7 @@ details: |
   pcpp::TelnetLayer::getFirstCommand
   readParsedPacket
   ```
-modified: '2025-05-03T14:18:14.323161Z'
+modified: '2025-05-14T14:20:13.961988Z'
 published: '2024-04-30T00:05:53.016170Z'
 references:
 - type: REPORT
@@ -28,6 +28,7 @@ affected:
   versions:
   - v24.09
   - v25.05-beta
+  - v25.05
   ecosystem_specific:
     severity: MEDIUM
   database_specific:
