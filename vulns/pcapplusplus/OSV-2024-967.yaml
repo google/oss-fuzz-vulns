@@ -10,7 +10,7 @@ details: |
   pcpp::PacketTrailerLayer::toString
   FuzzTarget.cpp
   ```
-modified: '2025-05-03T14:20:55.259265Z'
+modified: '2025-05-14T14:22:07.709898Z'
 published: '2024-08-16T00:14:27.813459Z'
 references:
 - type: REPORT
@@ -28,6 +28,7 @@ affected:
   versions:
   - v24.09
   - v25.05-beta
+  - v25.05
   ecosystem_specific:
     severity: MEDIUM
   database_specific:
