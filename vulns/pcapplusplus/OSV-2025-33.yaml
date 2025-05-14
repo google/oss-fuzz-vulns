@@ -10,7 +10,7 @@ details: |
   pcpp::Packet::extendLayer
   pcpp::BgpUpdateMessageLayer::setNetworkLayerReachabilityInfo
   ```
-modified: '2025-05-03T14:21:37.354259Z'
+modified: '2025-05-14T14:20:50.264164Z'
 published: '2025-01-16T00:01:14.786268Z'
 references:
 - type: REPORT
@@ -28,6 +28,7 @@ affected:
   versions:
   - v24.09
   - v25.05-beta
+  - v25.05
   ecosystem_specific:
     severity: MEDIUM
   database_specific:
