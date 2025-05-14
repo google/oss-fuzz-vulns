@@ -10,7 +10,7 @@ details: |
   pcpp::TextBasedProtocolMessage::removeField
   readParsedPacket
   ```
-modified: '2025-05-03T14:08:57.940978Z'
+modified: '2025-05-14T14:14:01.007820Z'
 published: '2024-08-16T00:16:31.167287Z'
 references:
 - type: REPORT
@@ -28,6 +28,7 @@ affected:
   versions:
   - v24.09
   - v25.05-beta
+  - v25.05
   ecosystem_specific:
     severity: HIGH
   database_specific:
