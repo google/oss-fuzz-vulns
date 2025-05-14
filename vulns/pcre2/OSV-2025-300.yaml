@@ -1,0 +1,36 @@
+id: OSV-2025-300
+summary: Negative-size-param in recurse_update_offsets
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=413078692
+
+  ```
+  Crash type: Negative-size-param
+  Crash state:
+  recurse_update_offsets
+  match
+  pcre2_match_8
+  ```
+modified: '2025-04-26T00:15:04.274471Z'
+published: '2025-04-26T00:15:04.274172Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=413078692
+affected:
+- package:
+    name: pcre2
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/pcre2
+  ranges:
+  - type: GIT
+    repo: https://github.com/PCRE2Project/pcre2
+    events:
+    - introduced: 903bdebae697a2cc8beed6535d51a3aea6c814c0
+    - fixed: bcc12d905673533457a897d6362a816d1dbd366d
+  versions:
+  - pcre2-10.45
+  ecosystem_specific:
+    severity: null
+  database_specific:
+    introduced_range: 2e03e323339ab692640626f02f8d8d6f95bff9c6:a73417315a28ad6a510c6be3054349cacf8cfb8b
+    fixed_range: 8f6c990c9b6061f4deb5cc5fe1bd324f81f8eb97:bcc12d905673533457a897d6362a816d1dbd366d
+schema_version: 1.6.0
