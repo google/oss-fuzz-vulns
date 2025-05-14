@@ -10,7 +10,7 @@ details: |
   pcpp::PcapNgFileReaderDevice::getNextPacket
   FuzzTarget.cpp
   ```
-modified: '2025-05-03T14:20:42.038512Z'
+modified: '2025-05-14T14:22:02.958332Z'
 published: '2024-08-16T00:13:41.933683Z'
 references:
 - type: REPORT
@@ -28,6 +28,7 @@ affected:
   versions:
   - v24.09
   - v25.05-beta
+  - v25.05
   ecosystem_specific:
     severity: MEDIUM
   database_specific:
