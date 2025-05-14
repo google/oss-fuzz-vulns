@@ -10,7 +10,7 @@ details: |
   pcpp::computePseudoHdrChecksum
   pcpp::TcpLayer::calculateChecksum
   ```
-modified: '2025-05-03T14:20:43.761979Z'
+modified: '2025-05-14T14:22:12.379776Z'
 published: '2024-08-16T00:13:51.457458Z'
 references:
 - type: REPORT
@@ -28,6 +28,7 @@ affected:
   versions:
   - v24.09
   - v25.05-beta
+  - v25.05
   ecosystem_specific:
     severity: MEDIUM
   database_specific:
