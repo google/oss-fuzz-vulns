@@ -9,7 +9,7 @@ details: |
   pcpp::PcapFileWriterDevice::writePacket
   FuzzWriter.cpp
   ```
-modified: '2025-05-03T14:09:31.748721Z'
+modified: '2025-05-14T14:19:05.141495Z'
 published: '2024-08-16T00:02:26.387902Z'
 references:
 - type: REPORT
@@ -27,6 +27,7 @@ affected:
   versions:
   - v24.09
   - v25.05-beta
+  - v25.05
   ecosystem_specific:
     severity: MEDIUM
   database_specific:
