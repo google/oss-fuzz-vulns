@@ -9,7 +9,7 @@ details: |
   readParsedPacket
   FuzzTarget.cpp
   ```
-modified: '2025-05-03T14:18:32.252169Z'
+modified: '2025-05-14T14:19:58.934425Z'
 published: '2024-04-30T00:01:24.720399Z'
 references:
 - type: REPORT
@@ -27,6 +27,7 @@ affected:
   versions:
   - v24.09
   - v25.05-beta
+  - v25.05
   ecosystem_specific:
     severity: MEDIUM
   database_specific:
