@@ -10,7 +10,7 @@ details: |
   pcpp::DhcpLayer::toString
   pcpp::Packet::toStringList
   ```
-modified: '2025-05-03T14:13:36.437901Z'
+modified: '2025-05-14T14:15:59.408969Z'
 published: '2023-12-15T00:10:21.932370Z'
 references:
 - type: REPORT
@@ -28,6 +28,7 @@ affected:
   versions:
   - v24.09
   - v25.05-beta
+  - v25.05
   ecosystem_specific:
     severity: HIGH
   database_specific:
