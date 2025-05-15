@@ -9,7 +9,7 @@ details: |
   igl::MshLoader::~MshLoader
   igl_fuzzer.cpp
   ```
-modified: '2023-09-27T14:11:09.895687Z'
+modified: '2025-05-15T14:37:25.846667Z'
 published: '2022-04-20T00:01:28.065887Z'
 references:
 - type: REPORT
@@ -27,6 +27,7 @@ affected:
   versions:
   - v2.4.0
   - v2.5.0
+  - v2.6.0
   ecosystem_specific:
     severity: null
 schema_version: 1.2.0
