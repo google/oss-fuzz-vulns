@@ -10,7 +10,7 @@ details: |
   pcpp::IPv6Layer::~IPv6Layer
   pcpp::Packet::destructPacketData
   ```
-modified: '2025-05-03T14:18:18.844594Z'
+modified: '2025-05-15T14:42:48.180418Z'
 published: '2024-04-30T00:07:01.572543Z'
 references:
 - type: REPORT
@@ -28,6 +28,7 @@ affected:
   versions:
   - v24.09
   - v25.05-beta
+  - v25.05
   ecosystem_specific:
     severity: null
   database_specific:
