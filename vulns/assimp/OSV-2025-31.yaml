@@ -10,7 +10,7 @@ details: |
   Assimp::FBXExporter::ExportBinary
   Assimp::ExportSceneFBX
   ```
-modified: '2025-01-15T00:14:05.357542Z'
+modified: '2025-05-17T14:21:13.704657Z'
 published: '2025-01-15T00:14:05.357161Z'
 references:
 - type: REPORT
@@ -25,6 +25,7 @@ affected:
     repo: https://github.com/assimp/assimp.git
     events:
     - introduced: 9d6b32f5c5118e67e99d4be3087f49ad0b7660de
+    - fixed: 1933313ec82fe5f5a2feca949bced04cf194dda6
   versions:
   - v5.3.0
   - v5.3.1
@@ -36,4 +37,5 @@ affected:
     severity: MEDIUM
   database_specific:
     introduced_range: 41102eeda6aa1461a5f4a52a743b2a4133732f9c:0c4d5909f8ca1931f3ca5c66ab5f0c37ea2efc2e
+    fixed_range: b40e41f9c3c413efd6818734585fe7dc7d0ec16c:1933313ec82fe5f5a2feca949bced04cf194dda6
 schema_version: 1.6.0
