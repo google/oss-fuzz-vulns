@@ -10,7 +10,7 @@ details: |
   jv_set
   jv_setpath
   ```
-modified: '2024-04-30T00:08:27.982392Z'
+modified: '2025-05-18T14:24:27.459047Z'
 published: '2024-04-30T00:08:27.982063Z'
 references:
 - type: REPORT
@@ -25,10 +25,12 @@ affected:
     repo: https://github.com/jqlang/jq
     events:
     - introduced: 13353515bd3aedf84c6e6ebfb726563ae84db778
+    - fixed: b088e83a822ec9fae56485be7457a3209c0f956b
   versions:
   - jq-1.7.1
   ecosystem_specific:
     severity: MEDIUM
   database_specific:
     introduced_range: 98a206964d59143c6ed9189b91cdb34af1ae5071:bfb7fd570f521ef832fe1c3bca0e05abd398284c
+    fixed_range: eff9caf6c7e4c4897c27dfefcf637a021f6c91c4:b088e83a822ec9fae56485be7457a3209c0f956b
 schema_version: 1.6.0
