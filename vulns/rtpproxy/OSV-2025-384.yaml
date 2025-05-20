@@ -1,0 +1,34 @@
+id: OSV-2025-384
+summary: Segv on unknown address in rtpp_refcnt_decref
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=418437591
+
+  ```
+  Crash type: Segv on unknown address
+  Crash state:
+  rtpp_refcnt_decref
+  hash_table_purge
+  rtpp_wref_purge
+  ```
+modified: '2025-05-20T00:04:47.617104Z'
+published: '2025-05-20T00:04:47.616424Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=418437591
+affected:
+- package:
+    name: rtpproxy
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/rtpproxy
+  ranges:
+  - type: GIT
+    repo: https://github.com/sippy/rtpproxy
+    events:
+    - introduced: 8ed91265de9024eda856ab43b4404880ce974e08
+    - fixed: 47917ead67e8c37f72ec9a95885c227b78056d1a
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: a24bb823ea2d6a94f231f243aee0625d0fa0b366:e7a2329997097cb0a1f930cf8eb2e32e932def31
+  versions: []
+schema_version: 1.6.0
