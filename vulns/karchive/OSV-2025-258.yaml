@@ -1,0 +1,39 @@
+id: OSV-2025-258
+summary: Global-buffer-overflow in parseExtraField
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=408025088
+
+  ```
+  Crash type: Global-buffer-overflow READ 1
+  Crash state:
+  parseExtraField
+  KZip::openArchive
+  KArchive::open
+  ```
+modified: '2025-04-05T00:05:58.761154Z'
+published: '2025-04-05T00:05:58.760780Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=408025088
+affected:
+- package:
+    name: karchive
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/karchive
+  ranges:
+  - type: GIT
+    repo: https://invent.kde.org/frameworks/karchive.git
+    events:
+    - introduced: 2bf86d9d8e078513cc5d9f00d8e95544d9990d6c
+    - fixed: 281cf70c3c79cd1e62bdfb2b81e82177e1306853
+  versions:
+  - v6.13.0
+  - v6.13.0-rc1
+  - v6.14.0
+  - v6.14.0-rc1
+  ecosystem_specific:
+    severity: null
+  database_specific:
+    introduced_range: eafaa3cfb5ddc5f3564fffdf45af4d5e02e87f40:9860bba9fc913559571bb99136eb4999bc7f04f9
+    fixed_range: 2770b134b7c33d483368c880bdd70bf14bf08bab:281cf70c3c79cd1e62bdfb2b81e82177e1306853
+schema_version: 1.6.0
