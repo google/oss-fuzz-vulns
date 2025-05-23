@@ -1,0 +1,38 @@
+id: OSV-2025-256
+summary: Global-buffer-overflow in QByteArray::QByteArray
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=408025086
+
+  ```
+  Crash type: Global-buffer-overflow READ 15
+  Crash state:
+  QByteArray::QByteArray
+  KZip::openArchive
+  KArchive::open
+  ```
+modified: '2025-04-05T00:02:36.743233Z'
+published: '2025-04-05T00:02:36.742745Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=408025086
+affected:
+- package:
+    name: kimageformats
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/kimageformats
+  ranges:
+  - type: GIT
+    repo: https://invent.kde.org/frameworks/kimageformats.git
+    events:
+    - introduced: 6f588c6fd3b4345e5d697b4a3b28e7ea70576ead
+    - fixed: e3aefd2aa1f9be6598b24d118d7b90e9931b5172
+  versions:
+  - v6.13.0
+  - v6.13.0-rc1
+  - v6.14.0
+  - v6.14.0-rc1
+  ecosystem_specific:
+    severity: null
+  database_specific:
+    fixed_range: 15bece40ec7fb038636ebbc4ff0fd74e84f7d73e:e3aefd2aa1f9be6598b24d118d7b90e9931b5172
+schema_version: 1.6.0
