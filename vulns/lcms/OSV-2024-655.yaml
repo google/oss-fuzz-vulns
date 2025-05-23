@@ -10,7 +10,7 @@ details: |
   CachedXFORM
   cmsDoTransform
   ```
-modified: '2025-02-10T14:19:25.060251Z'
+modified: '2025-05-23T07:44:18.608203Z'
 published: '2024-07-17T00:06:15.877340Z'
 references:
 - type: REPORT
@@ -26,7 +26,10 @@ affected:
     events:
     - introduced: d2c7f4360e9a6fdf3a9949bc9a12ab5eeb02b538
     - fixed: 1c9021be51ad9fbeabdd4f55d9453c394d8d52ae
-  versions: []
+  versions:
+  - lcm2.16rc1
+  - lcms2.16
+  - lcms2.16rc1
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.6.0
