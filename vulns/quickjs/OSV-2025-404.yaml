@@ -1,0 +1,35 @@
+id: OSV-2025-404
+summary: Use-of-uninitialized-value in JS_FreeRuntime
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=419346940
+
+  ```
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  JS_FreeRuntime
+  fuzz_eval.c
+  async_func_init
+  ```
+modified: '2025-05-23T00:14:00.218494Z'
+published: '2025-05-23T00:14:00.218149Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=419346940
+affected:
+- package:
+    name: quickjs
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/quickjs
+  ranges:
+  - type: GIT
+    repo: https://github.com/bellard/quickjs
+    events:
+    - introduced: 2f167bbeeb7dbe69b2306332a8c708cd99d9fde0
+    - fixed: bb986e55ff563ea9791d1a98450c3ca57e88366c
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: 9bce51eefdbf38d44aa02cf34af81aafb7b7db33:f10ef299a6ab4c36c4162cc5840f128f74ec197c
+    fixed_range: f10ef299a6ab4c36c4162cc5840f128f74ec197c:bb986e55ff563ea9791d1a98450c3ca57e88366c
+  versions: []
+schema_version: 1.6.0
