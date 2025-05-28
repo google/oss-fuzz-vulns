@@ -1,0 +1,34 @@
+id: OSV-2025-408
+summary: Heap-buffer-overflow in sav_parse_long_variable_names_record
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=420198855
+
+  ```
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  sav_parse_long_variable_names_record
+  sav_parse_records_pass2
+  readstat_parse_sav
+  ```
+modified: '2025-05-27T00:12:59.402180Z'
+published: '2025-05-27T00:12:59.401698Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=420198855
+affected:
+- package:
+    name: readstat
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/readstat
+  ranges:
+  - type: GIT
+    repo: https://github.com/WizardMac/ReadStat
+    events:
+    - introduced: 24de678e9439fff01b27c0bc8e8b745369888664
+    - fixed: b2d5407d62caf3c33caadc0495c9f7684b6a0df7
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    fixed_range: b3d68355b1bd87ac9dcee4dda60ed08acdd09a6f:b2d5407d62caf3c33caadc0495c9f7684b6a0df7
+  versions: []
+schema_version: 1.6.0

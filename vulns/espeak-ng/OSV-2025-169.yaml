@@ -1,0 +1,33 @@
+id: OSV-2025-169
+summary: Stack-buffer-overflow in utf8_in2
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=399228595
+
+  ```
+  Crash type: Stack-buffer-overflow READ 1
+  Crash state:
+  utf8_in2
+  MatchRule
+  TranslateRules
+  ```
+modified: '2025-02-27T00:07:08.029655Z'
+published: '2025-02-27T00:07:08.029075Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=399228595
+affected:
+- package:
+    name: espeak-ng
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/espeak-ng
+  ranges:
+  - type: GIT
+    repo: https://github.com/espeak-ng/espeak-ng
+    events:
+    - introduced: 0a713d52bbf3e061823d1a7f35e5303e7320f27a
+  versions:
+  - '1.51'
+  - 1.52.0
+  ecosystem_specific:
+    severity: MEDIUM
+schema_version: 1.6.0
