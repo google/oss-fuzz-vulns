@@ -1,0 +1,36 @@
+id: OSV-2025-271
+summary: Use-of-uninitialized-value in luaS_new
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=409585559
+
+  ```
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  luaS_new
+  auxsetstr
+  luaL_requiref
+  ```
+modified: '2025-04-11T00:04:20.869967Z'
+published: '2025-04-11T00:04:20.869490Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=409585559
+affected:
+- package:
+    name: suricata
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/suricata
+  ranges:
+  - type: GIT
+    repo: https://github.com/OISF/suricata.git
+    events:
+    - introduced: 57c73880dbf24c2ab7df3d53e4d767c74d883f36
+    - fixed: 404bb53ce96564cbf964bb1e513a6107b7f744dc
+  versions:
+  - suricata-8.0.0-beta1
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: d4ec5b976560c73da404a2d4fbe632821fe3ec43:c965c5687db041492c19b7fbc3f72c4565427031
+    fixed_range: b4095bf683a7fcbcedc7ef015ed9e44cff17a9ed:404bb53ce96564cbf964bb1e513a6107b7f744dc
+schema_version: 1.6.0
