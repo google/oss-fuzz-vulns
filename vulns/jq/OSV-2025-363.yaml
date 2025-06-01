@@ -1,0 +1,36 @@
+id: OSV-2025-363
+summary: Heap-buffer-overflow in jv_string_vfmt
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=417323384
+
+  ```
+  Crash type: Heap-buffer-overflow READ 2
+  Crash state:
+  jv_string_vfmt
+  jv_string_fmt
+  jv_get
+  ```
+modified: '2025-05-14T00:03:23.389224Z'
+published: '2025-05-14T00:03:23.388719Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=417323384
+affected:
+- package:
+    name: jq
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/jq
+  ranges:
+  - type: GIT
+    repo: https://github.com/jqlang/jq
+    events:
+    - introduced: 13353515bd3aedf84c6e6ebfb726563ae84db778
+    - fixed: c6e041699d8cd31b97375a2596217aff2cfca85b
+  versions:
+  - jq-1.7.1
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: 98a206964d59143c6ed9189b91cdb34af1ae5071:bfb7fd570f521ef832fe1c3bca0e05abd398284c
+    fixed_range: 9ac6ddae2266c6c19f8599c5ad5fc67e3bc7c9f4:c6e041699d8cd31b97375a2596217aff2cfca85b
+schema_version: 1.6.0
