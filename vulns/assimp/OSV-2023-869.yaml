@@ -10,7 +10,7 @@ details: |
   Assimp::MD5Importer::LoadMD5MeshFile
   Assimp::MD5Importer::InternReadFile
   ```
-modified: '2025-06-01T14:13:25.816480Z'
+modified: '2025-06-02T14:05:46.108006Z'
 published: '2023-09-17T14:01:25.028324Z'
 references:
 - type: REPORT
@@ -33,6 +33,7 @@ affected:
   - v5.4.2
   - v5.4.3
   - v6.0.0
+  - v6.0.1
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.6.0
