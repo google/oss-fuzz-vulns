@@ -10,7 +10,7 @@ details: |
   repeat
   p_ere
   ```
-modified: '2025-04-01T14:24:00.066746Z'
+modified: '2025-06-02T14:22:48.890155Z'
 published: '2024-10-11T00:12:59.211479Z'
 references:
 - type: REPORT
@@ -25,6 +25,7 @@ affected:
     repo: https://github.com/Cisco-Talos/clamav.git
     events:
     - introduced: 317153435e3190cc997fdf032518c68d4408c35c
+    - fixed: e86919789fa7550445bdac9dc5357168cfba4754
   versions:
   - clamav-1.0.0
   - clamav-1.0.0-rc
@@ -36,6 +37,7 @@ affected:
   - clamav-1.0.5
   - clamav-1.0.6
   - clamav-1.0.7
+  - clamav-1.0.8
   - clamav-1.1.0
   - clamav-1.1.0-rc
   - clamav-1.1.1
@@ -54,11 +56,11 @@ affected:
   - clamav-1.4.0
   - clamav-1.4.0-rc
   - clamav-1.4.1
-  - clamav-1.0.8
   - clamav-1.4.2
   - clamav-1.5.0-beta
   ecosystem_specific:
     severity: MEDIUM
   database_specific:
     introduced_range: 9d8af639c3f3093309cf6d42f6730c232ab94559:449bcd2016a019bcc9f7e93a7294d4c19fea3f6f
+    fixed_range: 640413d9c5c116a9cbf07bc864162aa0745d38af:e86919789fa7550445bdac9dc5357168cfba4754
 schema_version: 1.6.0
