@@ -10,7 +10,7 @@ details: |
   Assimp::BaseImporter::ReadFile
   Assimp::Importer::ReadFile
   ```
-modified: '2025-06-01T14:16:07.640751Z'
+modified: '2025-06-02T14:18:54.674247Z'
 published: '2024-10-14T00:17:45.088625Z'
 references:
 - type: REPORT
@@ -48,6 +48,7 @@ affected:
   - v5.4.2
   - v5.4.3
   - v6.0.0
+  - v6.0.1
   ecosystem_specific:
     severity: MEDIUM
   database_specific:
