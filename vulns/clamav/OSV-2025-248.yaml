@@ -1,0 +1,73 @@
+id: OSV-2025-248
+summary: Heap-buffer-overflow in cli_bm_addpatt
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=407448850
+
+  ```
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  cli_bm_addpatt
+  add_hash
+  load_regex_matcher
+  ```
+modified: '2025-04-02T00:00:13.428120Z'
+published: '2025-04-02T00:00:13.427589Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=407448850
+affected:
+- package:
+    name: clamav
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/clamav
+  ranges:
+  - type: GIT
+    repo: https://github.com/Cisco-Talos/clamav.git
+    events:
+    - introduced: 428cd7951827535fdc50425f963eb2878fc39cc1
+    - fixed: e86919789fa7550445bdac9dc5357168cfba4754
+  versions:
+  - clamav-0.104.3
+  - clamav-0.104.4
+  - clamav-0.105.0
+  - clamav-0.105.0-rc
+  - clamav-0.105.0-rc2
+  - clamav-0.105.1
+  - clamav-0.105.2
+  - clamav-1.0.0
+  - clamav-1.0.0-rc
+  - clamav-1.0.0-rc2
+  - clamav-1.0.1
+  - clamav-1.0.2
+  - clamav-1.0.3
+  - clamav-1.0.4
+  - clamav-1.0.5
+  - clamav-1.0.6
+  - clamav-1.0.7
+  - clamav-1.0.8
+  - clamav-1.1.0
+  - clamav-1.1.0-rc
+  - clamav-1.1.1
+  - clamav-1.1.2
+  - clamav-1.1.3
+  - clamav-1.2.0
+  - clamav-1.2.0-rc
+  - clamav-1.2.1
+  - clamav-1.2.2
+  - clamav-1.2.3
+  - clamav-1.3.0
+  - clamav-1.3.0-rc
+  - clamav-1.3.0-rc2
+  - clamav-1.3.1
+  - clamav-1.3.2
+  - clamav-1.4.0
+  - clamav-1.4.0-rc
+  - clamav-1.4.1
+  - clamav-1.4.2
+  - clamav-1.5.0-beta
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: d9a584b39fb694adc5740b666cba0242b55f774a:0037f5825b0b17a789c7eb29c9cb9a2d39c452bc
+    fixed_range: 640413d9c5c116a9cbf07bc864162aa0745d38af:e86919789fa7550445bdac9dc5357168cfba4754
+schema_version: 1.6.0

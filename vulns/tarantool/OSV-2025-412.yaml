@@ -1,0 +1,30 @@
+id: OSV-2025-412
+summary: UNKNOWN WRITE in luaL_newstate
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=420248727
+
+  ```
+  Crash type: UNKNOWN WRITE
+  Crash state:
+  luaL_newstate
+  ```
+modified: '2025-05-28T00:06:09.320970Z'
+published: '2025-05-28T00:06:09.320289Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=420248727
+affected:
+- package:
+    name: tarantool
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/tarantool
+  ranges:
+  - type: GIT
+    repo: https://github.com/tarantool/tarantool
+    events:
+    - introduced: 5836426ccb1e84335d0227a9b8be07e533f5583e
+    - fixed: 58c7b7905cba77fd8fb7687eed6d43b35442c31e
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
+schema_version: 1.6.0
