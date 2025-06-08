@@ -1,0 +1,32 @@
+id: OSV-2025-442
+summary: Security exception in org.jsoup.parser.HtmlTreeBuilder.process
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=422516687
+
+  ```
+  Crash type: Security exception
+  Crash state:
+  org.jsoup.parser.HtmlTreeBuilder.process
+  org.jsoup.parser.HtmlTreeBuilderState$8.process
+  org.jsoup.parser.TreeBuilder.currentElement
+  ```
+modified: '2025-06-06T00:12:40.428189Z'
+published: '2025-06-06T00:12:40.427852Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=422516687
+affected:
+- package:
+    name: jsoup
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/jsoup
+  ranges:
+  - type: GIT
+    repo: https://github.com/jhy/jsoup/
+    events:
+    - introduced: 9c437b4b961c6ed8a52ccb0a1be58de51f2e1e57
+    - fixed: e3e22ad52b910abf673e5c2929d4565633c728c0
+  ecosystem_specific:
+    severity: LOW
+  versions: []
+schema_version: 1.6.0
