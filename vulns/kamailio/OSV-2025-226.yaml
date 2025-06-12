@@ -1,0 +1,59 @@
+id: OSV-2025-226
+summary: UNKNOWN READ in extract_sess_version
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=404844413
+
+  ```
+  Crash type: UNKNOWN READ
+  Crash state:
+  extract_sess_version
+  parse_sdp_session
+  parse_mixed_content
+  ```
+modified: '2025-03-21T00:19:10.852969Z'
+published: '2025-03-21T00:19:10.852617Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=404844413
+affected:
+- package:
+    name: kamailio
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/kamailio
+  ranges:
+  - type: GIT
+    repo: https://github.com/kamailio/kamailio
+    events:
+    - introduced: 1e71168342894c992ab376bf8538c0953db31fe4
+    - fixed: 4de3270830c08641e3bc3e5858513244083b106e
+  versions:
+  - 5.6.0
+  - 5.6.1
+  - 5.6.2
+  - 5.6.3
+  - 5.6.4
+  - 5.6.5
+  - 5.6.6
+  - 5.7.0
+  - 5.7.1
+  - 5.7.2
+  - 5.7.3
+  - 5.7.4
+  - 5.7.5
+  - 5.7.6
+  - 5.7.7
+  - 5.8.0
+  - 5.8.1
+  - 5.8.2
+  - 5.8.3
+  - 5.8.4
+  - 5.8.5
+  - 5.8.6
+  - 6.0.0
+  - 6.0.1
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: 22f9e269dd68edcb025e103d9aa1432423dd5550:199f13a7dfac8cd817850c6a6afe5ba510835418
+    fixed_range: 418a1017a58e87a9fe9085f75183bcbfba3f9022:4de3270830c08641e3bc3e5858513244083b106e
+schema_version: 1.6.0
