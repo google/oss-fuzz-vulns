@@ -10,7 +10,7 @@ details: |
   java.base/java.lang.StringUTF16.compress
   java.base/java.lang.String.<init>
   ```
-modified: '2025-04-01T14:36:27.577560Z'
+modified: '2025-06-14T14:35:47.278303Z'
 published: '2024-07-26T00:06:29.761307Z'
 references:
 - type: REPORT
@@ -50,6 +50,7 @@ affected:
   - javaparser-parent-3.26.3
   - v_snapshot_2751159
   - javaparser-parent-3.26.4
+  - javaparser-parent-3.27.0
   ecosystem_specific:
     severity: LOW
   database_specific:
