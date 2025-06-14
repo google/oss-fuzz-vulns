@@ -1,0 +1,32 @@
+id: OSV-2025-461
+summary: Heap-buffer-overflow in xmlParsePubidLiteral
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=424229869
+
+  ```
+  Crash type: Heap-buffer-overflow WRITE 1
+  Crash state:
+  xmlParsePubidLiteral
+  xmlParseExternalID
+  xmlParseDocTypeDecl
+  ```
+modified: '2025-06-14T00:10:49.391787Z'
+published: '2025-06-14T00:10:49.391511Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=424229869
+affected:
+- package:
+    name: xmlsec
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/xmlsec
+  ranges:
+  - type: GIT
+    repo: https://github.com/lsh123/xmlsec
+    events:
+    - introduced: 94654ff9fb11bd376874eefead7f190efd0bc056
+    - fixed: 94654ff9fb11bd376874eefead7f190efd0bc056
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
+schema_version: 1.6.0

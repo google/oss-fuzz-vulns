@@ -1,0 +1,34 @@
+id: OSV-2025-457
+summary: Heap-buffer-overflow in xmlParsePubidLiteral
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=424242614
+
+  ```
+  Crash type: Heap-buffer-overflow WRITE 1
+  Crash state:
+  xmlParsePubidLiteral
+  xmlParseExternalID
+  xmlParseEntityDecl
+  ```
+modified: '2025-06-14T00:04:11.417116Z'
+published: '2025-06-14T00:04:11.416575Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=424242614
+affected:
+- package:
+    name: libxml2
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libxml2
+  ranges:
+  - type: GIT
+    repo: https://gitlab.gnome.org/GNOME/libxml2.git
+    events:
+    - introduced: bb7169b5ad77209989a7e60b530976618a7f0339
+    - fixed: a3992815b3d4caa4a6709406ca085c9f93856809
+  ecosystem_specific:
+    severity: HIGH
+  database_specific:
+    introduced_range: f428bdd1d9eb71b192dc31c5eb789097c67e5132:30665ae4d1a7de6e2f7db7c23042aedf4a9657c0
+  versions: []
+schema_version: 1.6.0
