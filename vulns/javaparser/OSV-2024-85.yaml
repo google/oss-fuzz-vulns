@@ -10,7 +10,7 @@ details: |
   com.github.javaparser.ast.expr.FieldAccessExpr.getMetaModel
   com.github.javaparser.ast.expr.FieldAccessExpr.getMetaModel
   ```
-modified: '2025-04-01T14:21:15.218116Z'
+modified: '2025-06-14T14:36:36.212770Z'
 published: '2024-02-08T00:13:58.690460Z'
 references:
 - type: REPORT
@@ -35,6 +35,7 @@ affected:
   - javaparser-parent-3.26.3
   - v_snapshot_2751159
   - javaparser-parent-3.26.4
+  - javaparser-parent-3.27.0
   ecosystem_specific:
     severity: LOW
 schema_version: 1.6.0
