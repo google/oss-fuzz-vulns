@@ -9,7 +9,7 @@ details: |
   lwan_request_get_cookie
   fuzz_parse_http_request
   ```
-modified: '2024-09-22T14:18:45.045278Z'
+modified: '2025-06-17T14:38:11.268036Z'
 published: '2024-08-04T00:01:49.853424Z'
 references:
 - type: REPORT
@@ -26,6 +26,7 @@ affected:
     - introduced: 29a64cecc78d96b9bf164c4bc8fd4da17acf6378
   versions:
   - v0.6
+  - v0.7
   ecosystem_specific:
     severity: null
   database_specific:
