@@ -1,0 +1,36 @@
+id: OSV-2025-480
+summary: Stack-buffer-overflow in void glz::from<10000u, std::__1::__bit_reference<std::__1::vector<bool,
+  std::__1
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=425725152
+
+  ```
+  Crash type: Stack-buffer-overflow READ 1
+  Crash state:
+  void glz::from<10000u, std::__1::__bit_reference<std::__1::vector<bool, std::__1
+  void glz::from<10000u, std::__1::vector<bool, std::__1::allocator<bool>>>::op<gl
+  void glz::visit<4ul, void glz::from<10000u, my_struct>::op<glz::opts_csv{10000u,
+  ```
+modified: '2025-06-20T00:14:17.008310Z'
+published: '2025-06-20T00:14:17.007847Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=425725152
+affected:
+- package:
+    name: glaze
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/glaze
+  ranges:
+  - type: GIT
+    repo: https://github.com/stephenberry/glaze
+    events:
+    - introduced: 2b4f24f598fa7b81d81e82dd74e48bd2f553c895
+    - fixed: e9c2c37a9f9dc45302f8a2f0b1aa64c0a3a839ce
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: 17d81a64b4f8c6824ff119f82cce8419b35791f4:d4d6ee98081a6f16198eaed8a967867a1da8dd97
+    fixed_range: d4d6ee98081a6f16198eaed8a967867a1da8dd97:e9c2c37a9f9dc45302f8a2f0b1aa64c0a3a839ce
+  versions: []
+schema_version: 1.6.0
