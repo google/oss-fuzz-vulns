@@ -1,0 +1,31 @@
+id: OSV-2025-484
+summary: Heap-buffer-overflow in load_protocols_file_fd
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=426164365
+
+  ```
+  Crash type: Heap-buffer-overflow READ 2
+  Crash state:
+  load_protocols_file_fd
+  fuzz_filecfg_protocols.c
+  ```
+modified: '2025-06-23T00:14:46.656704Z'
+published: '2025-06-23T00:14:46.656195Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=426164365
+affected:
+- package:
+    name: ndpi
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/ndpi
+  ranges:
+  - type: GIT
+    repo: https://github.com/ntop/nDPI.git
+    events:
+    - introduced: a671226078347ed058a6ddcbfebd27e8a524bd1d
+    - fixed: 183b3be8be6331bb720939cf128b10bcf5f1b570
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.6.0
