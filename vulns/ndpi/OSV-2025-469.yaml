@@ -1,0 +1,35 @@
+id: OSV-2025-469
+summary: Use-of-uninitialized-value in ndpi_strdup
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=424653416
+
+  ```
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  ndpi_strdup
+  ndpi_detection_process_packet
+  fuzz_config.cpp
+  ```
+modified: '2025-06-16T00:17:21.776520Z'
+published: '2025-06-16T00:17:21.776120Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=424653416
+affected:
+- package:
+    name: ndpi
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/ndpi
+  ranges:
+  - type: GIT
+    repo: https://github.com/ntop/nDPI.git
+    events:
+    - introduced: 6da6991320168754eef57b2316574dd625938a65
+    - fixed: 86c591af6abb92448863d03d659aa430beb8f61d
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: c4dabafb0e3fa19fe1d02158da4006a6f9ba901d:80cfd5b2f6cb79530048f69fcf60d83f51ccab97
+    fixed_range: 6cbc8d1471be221766fac49ed73f5b0e837917be:86c591af6abb92448863d03d659aa430beb8f61d
+  versions: []
+schema_version: 1.6.0
