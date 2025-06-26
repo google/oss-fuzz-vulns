@@ -10,7 +10,7 @@ details: |
   glslang::HlslGrammar::acceptCompilationUnit
   glslang::HlslParseContext::parseShaderStrings
   ```
-modified: '2025-04-24T14:09:39.760914Z'
+modified: '2025-06-26T14:48:27.852165Z'
 published: '2024-12-10T00:00:50.788Z'
 references:
 - type: REPORT
@@ -29,6 +29,7 @@ affected:
   - v2024.4
   - v2025.1
   - v2025.2
+  - v2025.3
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.6.0
