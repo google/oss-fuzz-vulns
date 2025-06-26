@@ -10,7 +10,7 @@ details: |
   glslang::HlslGrammar::acceptLiteral
   glslang::HlslGrammar::acceptPostfixExpression
   ```
-modified: '2025-04-24T14:22:07.884572Z'
+modified: '2025-06-26T14:48:25.845055Z'
 published: '2024-12-10T00:00:20.380006Z'
 references:
 - type: REPORT
@@ -29,6 +29,7 @@ affected:
   - v2024.4
   - v2025.1
   - v2025.2
+  - v2025.3
   ecosystem_specific:
     severity: MEDIUM
   database_specific:
