@@ -10,7 +10,7 @@ details: |
   APFSBtreeNodeIterator<APFSBtreeNode<apfs_omap_key, apfs_omap_value> >::APFSBtree
   APFSBtreeNodeIterator<APFSBtreeNode<apfs_omap_key, apfs_omap_value> > APFSBtreeN
   ```
-modified: '2025-04-16T14:22:49.905002Z'
+modified: '2025-06-28T14:26:09.281381Z'
 published: '2023-03-24T13:02:18.004510Z'
 references:
 - type: REPORT
@@ -25,19 +25,22 @@ affected:
     repo: https://github.com/sleuthkit/sleuthkit
     events:
     - introduced: 69cec8222562293935b4d1befc693407378b92d0
+    - fixed: 37493d4561bd67aa0f4a6d182bc4c327b26cf2f9
   versions:
-  - sleuthkit-4.12.0
-  - sleuthkit-4.12.1
-  - ct-3.5.0
-  - ct-3.6.0
   - ct-3.10.0
   - ct-3.11.0
   - ct-3.12.0
   - ct-3.13.0
+  - ct-3.5.0
+  - ct-3.6.0
   - ct-3.8.0
   - ct-3.9.0
+  - sleuthkit-4.12.0
+  - sleuthkit-4.12.1
   - sleuthkit-4.13.0
   - sleuthkit-4.14.0
   ecosystem_specific:
     severity: MEDIUM
+  database_specific:
+    fixed_range: 5a9e83351c559744072d8e4277fe5ab270a2fbb8:37493d4561bd67aa0f4a6d182bc4c327b26cf2f9
 schema_version: 1.4.0
