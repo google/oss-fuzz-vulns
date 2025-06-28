@@ -10,7 +10,7 @@ details: |
   APFSJObject::APFSJObject
   APFSJObject::APFSJObject
   ```
-modified: '2025-04-16T14:18:51.794748Z'
+modified: '2025-06-28T14:21:48.859764Z'
 published: '2022-10-28T00:02:37.921684Z'
 references:
 - type: REPORT
@@ -25,18 +25,21 @@ affected:
     repo: https://github.com/sleuthkit/sleuthkit
     events:
     - introduced: 58c8b602d5134ab69be2826410005c2894e45a73
+    - fixed: 37493d4561bd67aa0f4a6d182bc4c327b26cf2f9
   versions:
-  - sleuthkit-4.12.0
-  - sleuthkit-4.12.1
-  - ct-3.6.0
   - ct-3.10.0
   - ct-3.11.0
   - ct-3.12.0
   - ct-3.13.0
+  - ct-3.6.0
   - ct-3.8.0
   - ct-3.9.0
+  - sleuthkit-4.12.0
+  - sleuthkit-4.12.1
   - sleuthkit-4.13.0
   - sleuthkit-4.14.0
   ecosystem_specific:
     severity: MEDIUM
+  database_specific:
+    fixed_range: 5a9e83351c559744072d8e4277fe5ab270a2fbb8:37493d4561bd67aa0f4a6d182bc4c327b26cf2f9
 schema_version: 1.3.0
