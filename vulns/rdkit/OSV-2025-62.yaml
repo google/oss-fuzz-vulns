@@ -10,7 +10,7 @@ details: |
   RDKit::Atom::~Atom
   RDKit::QueryAtom::~QueryAtom
   ```
-modified: '2025-06-06T14:42:13.707711Z'
+modified: '2025-06-30T14:27:10.488588Z'
 published: '2025-01-27T00:01:51.692636Z'
 references:
 - type: REPORT
@@ -69,6 +69,7 @@ affected:
   - Release_2025_03_1b1
   - Release_2025_03_2
   - Release_2025_03_3
+  - Release_2025_03_4
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.6.0
