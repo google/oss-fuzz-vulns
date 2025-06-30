@@ -10,7 +10,7 @@ details: |
   java.base/java.nio.HeapCharBuffer.<init>
   java.base/java.nio.CharBuffer.wrap
   ```
-modified: '2025-06-24T14:24:34.833600Z'
+modified: '2025-06-30T14:23:40.027361Z'
 published: '2024-04-19T00:12:11.684954Z'
 references:
 - type: REPORT
@@ -47,6 +47,7 @@ affected:
   - checkstyle-10.25.0
   - checkstyle-10.25.1
   - checkstyle-10.26.0
+  - checkstyle-10.26.1
   ecosystem_specific:
     severity: LOW
   database_specific:
