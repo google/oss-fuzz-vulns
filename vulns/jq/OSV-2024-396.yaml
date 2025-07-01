@@ -10,7 +10,7 @@ details: |
   jv_free
   jv_equal
   ```
-modified: '2025-06-01T14:15:28.419159Z'
+modified: '2025-07-01T14:29:52.935440Z'
 published: '2024-05-01T00:11:24.552935Z'
 references:
 - type: REPORT
@@ -28,6 +28,7 @@ affected:
   versions:
   - jq-1.7.1
   - jq-1.8.0
+  - jq-1.8.1
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.6.0
