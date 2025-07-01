@@ -7,7 +7,7 @@ details: |
   Crash type: UNKNOWN READ
   Crash state:
   NULL```
-modified: '2025-06-01T14:15:37.186758Z'
+modified: '2025-07-01T14:30:06.613574Z'
 published: '2024-05-07T00:06:11.033336Z'
 references:
 - type: REPORT
@@ -25,6 +25,7 @@ affected:
   versions:
   - jq-1.7.1
   - jq-1.8.0
+  - jq-1.8.1
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.6.0
