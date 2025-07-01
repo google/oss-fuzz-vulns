@@ -1,0 +1,38 @@
+id: OSV-2025-253
+summary: Security exception in org.apache.lucene.analysis.ckb.SoraniNormalizer.normalize
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=407477665
+
+  ```
+  Crash type: Security exception
+  Crash state:
+  org.apache.lucene.analysis.ckb.SoraniNormalizer.normalize
+  org.apache.lucene.analysis.ckb.SoraniNormalizationFilter.incrementToken
+  org.apache.lucene.analysis.miscellaneous.WordDelimiterGraphFilter.incrementToken
+  ```
+modified: '2025-04-03T00:17:24.000848Z'
+published: '2025-04-03T00:17:24.000398Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=407477665
+affected:
+- package:
+    name: lucene
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/lucene
+  ranges:
+  - type: GIT
+    repo: https://github.com/apache/lucene.git
+    events:
+    - introduced: 5d203f8337cb6a2350c1abe5d83e3e103d060645
+  versions:
+  - releases/lucene/10.0.0
+  - releases/lucene/10.1.0
+  - releases/lucene/10.2.0
+  - releases/lucene/10.2.1
+  - releases/lucene/10.2.2
+  ecosystem_specific:
+    severity: LOW
+  database_specific:
+    introduced_range: 223e28ef16acb35cb43c89493855366d171de4f9:8af305892d726c180f03316c73aebf8183c2e481
+schema_version: 1.6.0

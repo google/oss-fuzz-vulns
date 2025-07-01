@@ -1,0 +1,26 @@
+id: OSV-2025-251
+summary: Heap-buffer-overflow in icu_78::RegexMatcher::MatchChunkAt
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=407590995
+
+  ```
+  Crash type: Heap-buffer-overflow READ 2
+  Crash state:
+  icu_78::RegexMatcher::MatchChunkAt
+  icu_78::RegexMatcher::findUsingChunk
+  uregex_match_fuzzer.cpp
+  ```
+modified: '2025-04-02T00:16:00.337850Z'
+published: '2025-04-02T00:16:00.337471Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=407590995
+affected:
+- package:
+    name: icu
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/icu
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.6.0
