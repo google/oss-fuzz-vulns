@@ -10,7 +10,7 @@ details: |
   HeifContext::decode_overlay_image
   HeifContext::decode_image_planar
   ```
-modified: '2025-07-01T14:26:11.169684Z'
+modified: '2025-07-02T14:34:20.290530Z'
 published: '2023-11-09T13:00:44.441721Z'
 references:
 - type: REPORT
@@ -48,6 +48,7 @@ affected:
   - v1.19.7
   - v1.19.8
   - v1.20.0
+  - v1.20.1
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.6.0
