@@ -10,7 +10,7 @@ details: |
   establish_http_proxy_passthru
   fuzz_proxy.c
   ```
-modified: '2025-06-20T16:18:19.126132Z'
+modified: '2025-07-05T14:11:24.654963Z'
 published: '2023-06-15T14:01:52.594793Z'
 references:
 - type: REPORT
@@ -25,30 +25,32 @@ affected:
     repo: https://github.com/OpenVPN/openvpn
     events:
     - introduced: c768ee96b49a3df459f584d6050802312815deec
+    - fixed: c18a995d0e6752575299a750539acd5e35115846
   versions:
-  - contains
   - v2.6.0
   - v2.6.1
-  - v2.6.2
-  - v2.6.3
-  - v2.6.4
-  - v2.6.5
-  - v2.6.6
-  - v2.6_beta1
-  - v2.6_beta2
-  - v2.6_branched
-  - v2.6_rc1
-  - v2.6_rc2
-  - v2.6.7
-  - v2.6.8
-  - v2.6.9
   - v2.6.10
   - v2.6.11
   - v2.6.12
   - v2.6.13
   - v2.6.14
+  - v2.6.2
+  - v2.6.3
+  - v2.6.4
+  - v2.6.5
+  - v2.6.6
+  - v2.6.7
+  - v2.6.8
+  - v2.6.9
+  - v2.6_beta1
+  - v2.6_beta2
+  - v2.6_branched
+  - v2.6_rc1
+  - v2.6_rc2
   - v2.7_alpha1
   - v2.7_alpha2
   ecosystem_specific:
     severity: HIGH
+  database_specific:
+    fixed_range: 72d70b5d8a9d6ac01134df006a03607a79e76294:c18a995d0e6752575299a750539acd5e35115846
 schema_version: 1.4.0
