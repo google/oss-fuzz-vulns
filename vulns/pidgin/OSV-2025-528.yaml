@@ -1,0 +1,35 @@
+id: OSV-2025-528
+summary: Heap-buffer-overflow in xmlnode_parser_structural_error_libxml
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=429429092
+
+  ```
+  Crash type: Heap-buffer-overflow WRITE 4
+  Crash state:
+  xmlnode_parser_structural_error_libxml
+  __xmlRaiseError
+  xmlParseAttValueInternal
+  ```
+modified: '2025-07-07T00:10:42.902766Z'
+published: '2025-07-07T00:10:42.902465Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=429429092
+affected:
+- package:
+    name: pidgin
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/pidgin
+  ranges:
+  - type: GIT
+    repo: https://github.com/google/fuzzing
+    events:
+    - introduced: 5997a4fc09163c1baa186f5a9d00c4c8668a72b1
+    - fixed: 734e55f3cfed1adbb51bf6cb5c65b4c1197b7089
+  ecosystem_specific:
+    severity: HIGH
+  database_specific:
+    introduced_range: unknown:5997a4fc09163c1baa186f5a9d00c4c8668a72b1
+    fixed_range: 748de3eed506a515840fcea85fb1c0c22c170c2a:734e55f3cfed1adbb51bf6cb5c65b4c1197b7089
+  versions: []
+schema_version: 1.6.0
