@@ -1,0 +1,36 @@
+affected:
+- database_specific:
+    introduced_range: f40901fbc98e46e0f4c276cbb51ffaf1abbbfebb:43aa0bf45ef18f76b312fabf3d3842d81a970bae
+  ecosystem_specific:
+    severity: MEDIUM
+  package:
+    ecosystem: OSS-Fuzz
+    name: tarantool
+    purl: pkg:generic/tarantool
+  ranges:
+  - events:
+    - introduced: 8ad443de995a7800906718925ce6c9162d80c4a9
+    repo: https://github.com/tarantool/tarantool
+    type: GIT
+  versions:
+  - 3.4.0
+  - 3.4.1-entrypoint
+  - 3.5.0-entrypoint
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=408513931
+
+  ```
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  lj_buf_ruleb128
+  lj_bcread
+  cpparser
+  ```
+id: OSV-2025-266
+modified: '2025-04-08T00:17:06.279859Z'
+published: '2025-04-08T00:17:06.279554Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=408513931
+schema_version: 1.6.0
+summary: Heap-buffer-overflow in lj_buf_ruleb128
