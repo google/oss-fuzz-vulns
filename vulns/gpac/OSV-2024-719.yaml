@@ -1,30 +1,17 @@
-id: OSV-2024-719
-summary: Heap-buffer-overflow in hevc_ref_pic_lists_modification
-details: |
-  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=70890
-
-  ```
-  Crash type: Heap-buffer-overflow WRITE 4
-  Crash state:
-  hevc_ref_pic_lists_modification
-  gf_hevc_parse_nalu_bs
-  gf_inspect_dump_nalu_internal
-  ```
-modified: '2025-07-02T14:45:18.583399Z'
-published: '2024-08-07T00:05:22.699506Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=70890
 affected:
-- package:
-    name: gpac
+- database_specific:
+    introduced_range: cf9017e7f44c1d0c9a4e520083aece0d3ab329f7:df8121066cf8fb25cc70adf7ca8b35bda82fe216
+  ecosystem_specific:
+    severity: HIGH
+  package:
     ecosystem: OSS-Fuzz
+    name: gpac
     purl: pkg:generic/gpac
   ranges:
-  - type: GIT
-    repo: https://github.com/gpac/gpac
-    events:
+  - events:
     - introduced: 21cf0d2d4a0d6e5d14ffaa8472c9157f1333d379
+    repo: https://github.com/gpac/gpac
+    type: GIT
   versions:
   - testtag0.1
   - abi-12
@@ -39,8 +26,22 @@ affected:
   - abi-12.24
   - abi-12.25
   - abi-12.26
-  ecosystem_specific:
-    severity: HIGH
-  database_specific:
-    introduced_range: cf9017e7f44c1d0c9a4e520083aece0d3ab329f7:df8121066cf8fb25cc70adf7ca8b35bda82fe216
+  - abi-12.27
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=70890
+
+  ```
+  Crash type: Heap-buffer-overflow WRITE 4
+  Crash state:
+  hevc_ref_pic_lists_modification
+  gf_hevc_parse_nalu_bs
+  gf_inspect_dump_nalu_internal
+  ```
+id: OSV-2024-719
+modified: '2025-07-10T14:22:12.734760Z'
+published: '2024-08-07T00:05:22.699506Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=70890
 schema_version: 1.6.0
+summary: Heap-buffer-overflow in hevc_ref_pic_lists_modification
