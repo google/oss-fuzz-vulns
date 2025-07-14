@@ -1,30 +1,17 @@
-id: OSV-2024-278
-summary: Security exception in com.puppycrawl.tools.checkstyle.grammar.java.JavaLanguageParser.expr
-details: |
-  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=68092
-
-  ```
-  Crash type: Security exception
-  Crash state:
-  com.puppycrawl.tools.checkstyle.grammar.java.JavaLanguageParser.expr
-  java.base/java.nio.HeapCharBuffer.<init>
-  java.base/java.nio.CharBuffer.wrap
-  ```
-modified: '2025-06-30T14:23:40.027361Z'
-published: '2024-04-19T00:12:11.684954Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=68092
 affected:
-- package:
-    name: checkstyle
+- database_specific:
+    introduced_range: f085e5375a7e8f06fd694fc9b1a857de36398401:86195e06404df68905c90232f71a1c88491f9ad8
+  ecosystem_specific:
+    severity: LOW
+  package:
     ecosystem: OSS-Fuzz
+    name: checkstyle
     purl: pkg:generic/checkstyle
   ranges:
-  - type: GIT
-    repo: https://github.com/checkstyle/checkstyle
-    events:
+  - events:
     - introduced: 9c26348ddb42afdbf8704f56c0d273b06d275c0b
+    repo: https://github.com/checkstyle/checkstyle
+    type: GIT
   versions:
   - checkstyle-10.16.0
   - checkstyle-10.17.0
@@ -48,8 +35,22 @@ affected:
   - checkstyle-10.25.1
   - checkstyle-10.26.0
   - checkstyle-10.26.1
-  ecosystem_specific:
-    severity: LOW
-  database_specific:
-    introduced_range: f085e5375a7e8f06fd694fc9b1a857de36398401:86195e06404df68905c90232f71a1c88491f9ad8
+  - checkstyle-11.0.0
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=68092
+
+  ```
+  Crash type: Security exception
+  Crash state:
+  com.puppycrawl.tools.checkstyle.grammar.java.JavaLanguageParser.expr
+  java.base/java.nio.HeapCharBuffer.<init>
+  java.base/java.nio.CharBuffer.wrap
+  ```
+id: OSV-2024-278
+modified: '2025-07-14T14:26:18.753456Z'
+published: '2024-04-19T00:12:11.684954Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=68092
 schema_version: 1.6.0
+summary: Security exception in com.puppycrawl.tools.checkstyle.grammar.java.JavaLanguageParser.expr
