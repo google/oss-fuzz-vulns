@@ -1,31 +1,16 @@
-id: OSV-2022-1277
-summary: Heap-use-after-free in mk_event_timeout_destroy
-details: |
-  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=60089
-
-  ```
-  Crash type: Heap-use-after-free WRITE 8
-  Crash state:
-  mk_event_timeout_destroy
-  flb_sched_destroy
-  flb_config_exit
-  ```
-modified: '2025-05-31T14:14:40.979065Z'
-published: '2023-06-26T14:01:01.876870Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=60089
 affected:
-- package:
-    name: fluent-bit
+- ecosystem_specific:
+    severity: HIGH
+  package:
     ecosystem: OSS-Fuzz
+    name: fluent-bit
     purl: pkg:generic/fluent-bit
   ranges:
-  - type: GIT
-    repo: https://github.com/fluent/fluent-bit/
-    events:
+  - events:
     - introduced: 0c5d8da6bbf32d4712d4dd718155ac2301b1bb17
     - introduced: 73bc3ec78451aa41757bf7a12366228b79527544
+    repo: https://github.com/fluent/fluent-bit/
+    type: GIT
   versions:
   - tiger-2.0.9-dev-20230104
   - v2.0.0
@@ -100,6 +85,22 @@ affected:
   - v4.0.1
   - v4.0.2
   - v4.0.3
-  ecosystem_specific:
-    severity: HIGH
+  - v4.0.4
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=60089
+
+  ```
+  Crash type: Heap-use-after-free WRITE 8
+  Crash state:
+  mk_event_timeout_destroy
+  flb_sched_destroy
+  flb_config_exit
+  ```
+id: OSV-2022-1277
+modified: '2025-07-15T14:10:47.915015Z'
+published: '2023-06-26T14:01:01.876870Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=60089
 schema_version: 1.4.0
+summary: Heap-use-after-free in mk_event_timeout_destroy
