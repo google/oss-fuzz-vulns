@@ -1,29 +1,14 @@
-id: OSV-2021-777
-summary: Heap-use-after-free in xmlAddNextSibling
-details: |
-  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34461
-
-  ```
-  Crash type: Heap-use-after-free READ 4
-  Crash state:
-  xmlAddNextSibling
-  xmlXIncludeCopyRange
-  xmlXIncludeCopyXPointer
-  ```
-modified: '2025-06-17T14:28:07.986943Z'
-published: '2021-05-20T00:00:30.166614Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34461
 affected:
-- package:
-    name: libxml2
+- ecosystem_specific:
+    severity: HIGH
+  package:
     ecosystem: OSS-Fuzz
+    name: libxml2
   ranges:
-  - type: GIT
-    repo: https://gitlab.gnome.org/GNOME/libxml2.git
-    events:
+  - events:
     - introduced: 6c128fd58a0e4641c23a345d413672494622db1b
+    repo: https://gitlab.gnome.org/GNOME/libxml2.git
+    type: GIT
   versions:
   - CVE-2021-3541
   - v2.9.11
@@ -70,5 +55,21 @@ affected:
   - v2.14.2
   - v2.14.3
   - v2.14.4
-  ecosystem_specific:
-    severity: HIGH
+  - v2.14.5
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34461
+
+  ```
+  Crash type: Heap-use-after-free READ 4
+  Crash state:
+  xmlAddNextSibling
+  xmlXIncludeCopyRange
+  xmlXIncludeCopyXPointer
+  ```
+id: OSV-2021-777
+modified: '2025-07-15T14:06:11.764231Z'
+published: '2021-05-20T00:00:30.166614Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34461
+summary: Heap-use-after-free in xmlAddNextSibling
