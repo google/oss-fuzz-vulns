@@ -1,29 +1,14 @@
-id: OSV-2021-1086
-summary: Heap-buffer-overflow in dwg_convert_SAB_to_SAT1
-details: |
-  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=36728
-
-  ```
-  Crash type: Heap-buffer-overflow READ 2
-  Crash state:
-  dwg_convert_SAB_to_SAT1
-  dxf_3dsolid
-  dwg_dxf_REGION_private
-  ```
-modified: '2025-07-03T14:40:40.253536Z'
-published: '2021-08-02T00:00:31.888461Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=36728
 affected:
-- package:
-    name: libredwg
+- ecosystem_specific:
+    severity: MEDIUM
+  package:
     ecosystem: OSS-Fuzz
+    name: libredwg
   ranges:
-  - type: GIT
-    repo: https://github.com/LibreDWG/libredwg
-    events:
+  - events:
     - introduced: 629cbbdcebd7f5751ddb72eacf8f3e1a5b854e2b
+    repo: https://github.com/LibreDWG/libredwg
+    type: GIT
   versions:
   - 0.12.3.4264
   - 0.12.3.4267
@@ -727,5 +712,21 @@ affected:
   - 0.13.3.7792
   - 0.13.3.7794
   - 0.13.3.7797
-  ecosystem_specific:
-    severity: MEDIUM
+  - 0.13.3.7802
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=36728
+
+  ```
+  Crash type: Heap-buffer-overflow READ 2
+  Crash state:
+  dwg_convert_SAB_to_SAT1
+  dxf_3dsolid
+  dwg_dxf_REGION_private
+  ```
+id: OSV-2021-1086
+modified: '2025-07-16T14:08:33.854428Z'
+published: '2021-08-02T00:00:31.888461Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=36728
+summary: Heap-buffer-overflow in dwg_convert_SAB_to_SAT1
