@@ -1,0 +1,36 @@
+affected:
+- database_specific:
+    fixed_range: 824cbf51ec4f3bdf2cbe38944251fefaf90eef9d:468de9b36740b3355f0d5cd8be2ce28b340df120
+    introduced_range: 32598639244ada2b5095baf08118a2ec80c6bb37:1950c4dbb993c60f11ddc8adf3c4eeab998fc175
+  ecosystem_specific:
+    severity: MEDIUM
+  package:
+    ecosystem: OSS-Fuzz
+    name: opencv
+    purl: pkg:generic/opencv
+  ranges:
+  - events:
+    - introduced: 850b686f8a9a1bbadd975910aee815acaf0d6e50
+    - fixed: 468de9b36740b3355f0d5cd8be2ce28b340df120
+    repo: https://github.com/opencv/opencv.git
+    type: GIT
+  versions:
+  - 4.12.0
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=429429085
+
+  ```
+  Crash type: UNKNOWN READ
+  Crash state:
+  std::__1::__function::__func<cv::PngDecoder::compose_frame
+  cv::ParallelLoopBodyWrapper::operator
+  cv::ThreadPool::run
+  ```
+id: OSV-2025-525
+modified: '2025-07-06T00:18:54.304891Z'
+published: '2025-07-06T00:18:54.304371Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=429429085
+schema_version: 1.6.0
+summary: UNKNOWN READ in std::__1::__function::__func<cv::PngDecoder::compose_frame
