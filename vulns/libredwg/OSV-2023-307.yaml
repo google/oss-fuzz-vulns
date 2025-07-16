@@ -1,30 +1,15 @@
-id: OSV-2023-307
-summary: Heap-buffer-overflow in bit_read_BB
-details: |
-  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=57911
-
-  ```
-  Crash type: Heap-buffer-overflow READ 1
-  Crash state:
-  bit_read_BB
-  dwg_decode_entity
-  dwg_decode_OLE2FRAME_private
-  ```
-modified: '2025-07-03T14:46:03.196846Z'
-published: '2023-04-13T14:02:09.774988Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=57911
 affected:
-- package:
-    name: libredwg
+- ecosystem_specific:
+    severity: MEDIUM
+  package:
     ecosystem: OSS-Fuzz
+    name: libredwg
     purl: pkg:generic/libredwg
   ranges:
-  - type: GIT
-    repo: https://github.com/LibreDWG/libredwg
-    events:
+  - events:
     - introduced: 9d068534eb093790d9be1b8aa8ed47cafc7f2285
+    repo: https://github.com/LibreDWG/libredwg
+    type: GIT
   versions:
   - 0.12.5.4685
   - 0.12.5.4690
@@ -631,6 +616,22 @@ affected:
   - 0.13.3.7792
   - 0.13.3.7794
   - 0.13.3.7797
-  ecosystem_specific:
-    severity: MEDIUM
+  - 0.13.3.7802
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=57911
+
+  ```
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  bit_read_BB
+  dwg_decode_entity
+  dwg_decode_OLE2FRAME_private
+  ```
+id: OSV-2023-307
+modified: '2025-07-16T14:13:49.335966Z'
+published: '2023-04-13T14:02:09.774988Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=57911
 schema_version: 1.4.0
+summary: Heap-buffer-overflow in bit_read_BB
