@@ -1,30 +1,15 @@
-id: OSV-2022-379
-summary: Segv on unknown address in bit_write_TV
-details: |
-  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=47014
-
-  ```
-  Crash type: Segv on unknown address
-  Crash state:
-  bit_write_TV
-  bit_write_T
-  dwg_encode_BLOCK
-  ```
-modified: '2025-07-03T14:42:57.637264Z'
-published: '2022-04-27T00:00:44.539231Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=47014
 affected:
-- package:
-    name: libredwg
+- ecosystem_specific:
+    severity: null
+  package:
     ecosystem: OSS-Fuzz
+    name: libredwg
     purl: pkg:generic/libredwg
   ranges:
-  - type: GIT
-    repo: https://github.com/LibreDWG/libredwg
-    events:
+  - events:
     - introduced: 7bda865d59f843e174ac7e14c7dfe25243900956
+    repo: https://github.com/LibreDWG/libredwg
+    type: GIT
   versions:
   - 0.12.4.4522
   - 0.12.4.4527
@@ -666,6 +651,22 @@ affected:
   - 0.13.3.7792
   - 0.13.3.7794
   - 0.13.3.7797
-  ecosystem_specific:
-    severity: null
+  - 0.13.3.7802
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=47014
+
+  ```
+  Crash type: Segv on unknown address
+  Crash state:
+  bit_write_TV
+  bit_write_T
+  dwg_encode_BLOCK
+  ```
+id: OSV-2022-379
+modified: '2025-07-16T14:07:54.049405Z'
+published: '2022-04-27T00:00:44.539231Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=47014
 schema_version: 1.2.0
+summary: Segv on unknown address in bit_write_TV
