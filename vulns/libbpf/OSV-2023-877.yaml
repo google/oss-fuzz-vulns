@@ -1,30 +1,15 @@
-id: OSV-2023-877
-summary: Heap-buffer-overflow in btf_ensure_modifiable
-details: |
-  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=62465
-
-  ```
-  Crash type: Heap-buffer-overflow READ 4
-  Crash state:
-  btf_ensure_modifiable
-  btf__add_var
-  bpf_object__collect_externs
-  ```
-modified: '2025-05-20T14:20:43.978118Z'
-published: '2023-09-18T14:02:44.989260Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=62465
 affected:
-- package:
-    name: libbpf
+- ecosystem_specific:
+    severity: MEDIUM
+  package:
     ecosystem: OSS-Fuzz
+    name: libbpf
     purl: pkg:generic/libbpf
   ranges:
-  - type: GIT
-    repo: https://github.com/libbpf/libbpf
-    events:
+  - events:
     - introduced: d374094d8c49b6b7d288f307e11217ec5a502391
+    repo: https://github.com/libbpf/libbpf
+    type: GIT
   versions:
   - v0.6.0
   - v0.6.1
@@ -59,6 +44,22 @@ affected:
   - v1.4.7
   - v1.5.0
   - v1.5.1
-  ecosystem_specific:
-    severity: MEDIUM
+  - v1.6.0
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=62465
+
+  ```
+  Crash type: Heap-buffer-overflow READ 4
+  Crash state:
+  btf_ensure_modifiable
+  btf__add_var
+  bpf_object__collect_externs
+  ```
+id: OSV-2023-877
+modified: '2025-07-17T14:15:05.390923Z'
+published: '2023-09-18T14:02:44.989260Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=62465
 schema_version: 1.4.0
+summary: Heap-buffer-overflow in btf_ensure_modifiable
