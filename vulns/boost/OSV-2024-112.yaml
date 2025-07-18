@@ -1,5 +1,28 @@
-id: OSV-2024-112
-summary: Stack-overflow in boost::read_graphviz_detail::parser::parse_subgraph
+affected:
+- database_specific:
+    introduced_range: 0251e5fa19564439f3d654df8d4de1abdbaa72b2:9f83dd55ea67f1bab62c20d29bc5527345aafc55
+  ecosystem_specific:
+    severity: LOW
+  package:
+    ecosystem: OSS-Fuzz
+    name: boost
+    purl: pkg:generic/boost
+  ranges:
+  - events:
+    - introduced: 9072bfc2d969ca1e8c49651232817201e05e3eae
+    - introduced: 206cf016ae9454ed65e9c5faf4a322f31444fb80
+    repo: https://github.com/boostorg/boost.git
+    type: GIT
+  versions:
+  - boost-1.85.0
+  - boost-1.85.0.beta1
+  - boost-1.86.0.beta1
+  - boost-1.86.0
+  - boost-1.87.0.beta1
+  - boost-1.87.0
+  - boost-1.88.0.beta1
+  - boost-1.88.0
+  - boost-1.89.0.beta1
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=66719
 
@@ -10,33 +33,11 @@ details: |
   boost::read_graphviz_detail::parser::parse_endpoint_rest
   boost::read_graphviz_detail::parser::parse_stmt
   ```
-modified: '2025-04-11T14:16:17.588621Z'
+id: OSV-2024-112
+modified: '2025-07-18T14:18:49.437861Z'
 published: '2024-02-16T00:05:47.896843Z'
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=66719
-affected:
-- package:
-    name: boost
-    ecosystem: OSS-Fuzz
-    purl: pkg:generic/boost
-  ranges:
-  - type: GIT
-    repo: https://github.com/boostorg/boost.git
-    events:
-    - introduced: 9072bfc2d969ca1e8c49651232817201e05e3eae
-    - introduced: 206cf016ae9454ed65e9c5faf4a322f31444fb80
-  versions:
-  - boost-1.85.0
-  - boost-1.85.0.beta1
-  - boost-1.86.0.beta1
-  - boost-1.86.0
-  - boost-1.87.0.beta1
-  - boost-1.87.0
-  - boost-1.88.0.beta1
-  - boost-1.88.0
-  ecosystem_specific:
-    severity: LOW
-  database_specific:
-    introduced_range: 0251e5fa19564439f3d654df8d4de1abdbaa72b2:9f83dd55ea67f1bab62c20d29bc5527345aafc55
 schema_version: 1.6.0
+summary: Stack-overflow in boost::read_graphviz_detail::parser::parse_subgraph
