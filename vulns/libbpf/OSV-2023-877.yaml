@@ -45,6 +45,7 @@ affected:
   - v1.5.0
   - v1.5.1
   - v1.6.0
+  - v1.6.1
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=62465
 
@@ -56,7 +57,7 @@ details: |
   bpf_object__collect_externs
   ```
 id: OSV-2023-877
-modified: '2025-07-17T14:15:05.390923Z'
+modified: '2025-07-19T14:16:07.080224Z'
 published: '2023-09-18T14:02:44.989260Z'
 references:
 - type: REPORT
