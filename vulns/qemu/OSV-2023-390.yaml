@@ -1,30 +1,15 @@
-id: OSV-2023-390
-summary: Heap-buffer-overflow in sdhci_write
-details: |
-  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=58813
-
-  ```
-  Crash type: Heap-buffer-overflow WRITE 1
-  Crash state:
-  sdhci_write
-  memory_region_write_accessor
-  memory_region_dispatch_write
-  ```
-modified: '2025-05-28T15:04:08.598843Z'
-published: '2023-05-12T14:00:08.854823Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=58813
 affected:
-- package:
-    name: qemu
+- ecosystem_specific:
+    severity: MEDIUM
+  package:
     ecosystem: OSS-Fuzz
+    name: qemu
     purl: pkg:generic/qemu
   ranges:
-  - type: GIT
-    repo: https://git.qemu.org/git/qemu.git
-    events:
+  - events:
     - introduced: b7a3a705b644495b7b578e94e0e9dedf93c4f661
+    repo: https://git.qemu.org/git/qemu.git
+    type: GIT
   versions:
   - v7.0.0
   - v7.0.0-rc1
@@ -135,6 +120,24 @@ affected:
   - v7.2.18
   - v9.2.4
   - v10.0.2
-  ecosystem_specific:
-    severity: MEDIUM
+  - v10.0.3
+  - v10.1.0-rc0
+  - v7.2.19
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=58813
+
+  ```
+  Crash type: Heap-buffer-overflow WRITE 1
+  Crash state:
+  sdhci_write
+  memory_region_write_accessor
+  memory_region_dispatch_write
+  ```
+id: OSV-2023-390
+modified: '2025-07-23T14:37:09.039183Z'
+published: '2023-05-12T14:00:08.854823Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=58813
 schema_version: 1.4.0
+summary: Heap-buffer-overflow in sdhci_write
