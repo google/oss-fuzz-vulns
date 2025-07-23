@@ -1,32 +1,19 @@
-id: OSV-2022-1165
-summary: Heap-buffer-overflow in parse_content_length
-details: |
-  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=53199
-
-  ```
-  Crash type: Heap-buffer-overflow READ 1
-  Crash state:
-  parse_content_length
-  get_hdr_field
-  parse_headers
-  ```
-modified: '2025-06-25T14:16:58.531598Z'
-published: '2022-11-12T13:00:05.964113Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=53199
 affected:
-- package:
-    name: opensips
+- database_specific:
+    introduced_range: 18633ab55e4597e7d3bedef72bbaf9971497560e:9d5dd9539d54b2186f31d2447823cae9108b9c31
+  ecosystem_specific:
+    severity: HIGH
+  package:
     ecosystem: OSS-Fuzz
+    name: opensips
     purl: pkg:generic/opensips
   ranges:
-  - type: GIT
-    repo: https://github.com/OpenSIPS/opensips
-    events:
+  - events:
     - introduced: 4bc9d9603f6612f5b294eb6fa55ab38a474d1ce2
     - introduced: 0cca86fe789d77ea3e2b58326d6f282eb3433544
     - introduced: 1a71fded7d736ff53b6dc005e3f10626417a9d21
+    repo: https://github.com/OpenSIPS/opensips
+    type: GIT
   versions:
   - 3.1.10
   - 3.1.11
@@ -88,8 +75,22 @@ affected:
   - 3.6.0-beta
   - 3.4.13
   - 3.5.6
-  ecosystem_specific:
-    severity: HIGH
-  database_specific:
-    introduced_range: 18633ab55e4597e7d3bedef72bbaf9971497560e:9d5dd9539d54b2186f31d2447823cae9108b9c31
+  - 3.6.0
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=53199
+
+  ```
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  parse_content_length
+  get_hdr_field
+  parse_headers
+  ```
+id: OSV-2022-1165
+modified: '2025-07-23T14:09:06.303251Z'
+published: '2022-11-12T13:00:05.964113Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=53199
 schema_version: 1.3.0
+summary: Heap-buffer-overflow in parse_content_length
