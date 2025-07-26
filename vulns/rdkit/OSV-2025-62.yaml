@@ -1,31 +1,16 @@
-id: OSV-2025-62
-summary: UNKNOWN READ in RDKit::Dict::reset
-details: |
-  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=391962480
-
-  ```
-  Crash type: UNKNOWN READ
-  Crash state:
-  RDKit::Dict::reset
-  RDKit::Atom::~Atom
-  RDKit::QueryAtom::~QueryAtom
-  ```
-modified: '2025-06-30T14:27:10.488588Z'
-published: '2025-01-27T00:01:51.692636Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=391962480
 affected:
-- package:
-    name: rdkit
+- ecosystem_specific:
+    severity: MEDIUM
+  package:
     ecosystem: OSS-Fuzz
+    name: rdkit
     purl: pkg:generic/rdkit
   ranges:
-  - type: GIT
-    repo: https://github.com/rdkit/rdkit.git
-    events:
+  - events:
     - introduced: 82926b048a2706b0c7c7d9e5a2d16a7187561434
     - introduced: caffd6c0fb5b5f220aea7782fed43181ca78596f
+    repo: https://github.com/rdkit/rdkit.git
+    type: GIT
   versions:
   - Release_2021_09_5
   - Release_2022_03_1
@@ -70,6 +55,22 @@ affected:
   - Release_2025_03_2
   - Release_2025_03_3
   - Release_2025_03_4
-  ecosystem_specific:
-    severity: MEDIUM
+  - Release_2025_03_5
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=391962480
+
+  ```
+  Crash type: UNKNOWN READ
+  Crash state:
+  RDKit::Dict::reset
+  RDKit::Atom::~Atom
+  RDKit::QueryAtom::~QueryAtom
+  ```
+id: OSV-2025-62
+modified: '2025-07-26T14:53:36.885283Z'
+published: '2025-01-27T00:01:51.692636Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=391962480
 schema_version: 1.6.0
+summary: UNKNOWN READ in RDKit::Dict::reset
