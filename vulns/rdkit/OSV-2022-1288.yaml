@@ -1,31 +1,17 @@
-id: OSV-2022-1288
-summary: Stack-buffer-overflow in bool SmilesParseOps::parser::parse_atom_props<std::__1::__wrap_iter<char
-  const*>
-details: |
-  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=376787368
-
-  ```
-  Crash type: Stack-buffer-overflow READ 1
-  Crash state:
-  bool SmilesParseOps::parser::parse_atom_props<std::__1::__wrap_iter<char const*>
-  bool SmilesParseOps::parser::parse_it<std::__1::__wrap_iter<char const*> >
-  SmilesParseOps::parseCXExtensions
-  ```
-modified: '2025-06-30T14:17:01.391244Z'
-published: '2024-11-04T00:16:22.516312Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=376787368
 affected:
-- package:
-    name: rdkit
+- database_specific:
+    introduced_range: b603d0d97ed4ecfba9205e449ecff9ed1897e224:3757a1e0fa4757c9ed0b422578538772cc0dab5c
+  ecosystem_specific:
+    severity: MEDIUM
+  package:
     ecosystem: OSS-Fuzz
+    name: rdkit
     purl: pkg:generic/rdkit
   ranges:
-  - type: GIT
-    repo: https://github.com/rdkit/rdkit.git
-    events:
+  - events:
     - introduced: db15b372a13380693c9ebd33d270c6bddf394883
+    repo: https://github.com/rdkit/rdkit.git
+    type: GIT
   versions:
   - Release_2022_03_1
   - Release_2022_03_1b1
@@ -69,8 +55,23 @@ affected:
   - Release_2025_03_2
   - Release_2025_03_3
   - Release_2025_03_4
-  ecosystem_specific:
-    severity: MEDIUM
-  database_specific:
-    introduced_range: b603d0d97ed4ecfba9205e449ecff9ed1897e224:3757a1e0fa4757c9ed0b422578538772cc0dab5c
+  - Release_2025_03_5
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=376787368
+
+  ```
+  Crash type: Stack-buffer-overflow READ 1
+  Crash state:
+  bool SmilesParseOps::parser::parse_atom_props<std::__1::__wrap_iter<char const*>
+  bool SmilesParseOps::parser::parse_it<std::__1::__wrap_iter<char const*> >
+  SmilesParseOps::parseCXExtensions
+  ```
+id: OSV-2022-1288
+modified: '2025-07-26T14:40:41.059044Z'
+published: '2024-11-04T00:16:22.516312Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=376787368
 schema_version: 1.6.0
+summary: Stack-buffer-overflow in bool SmilesParseOps::parser::parse_atom_props<std::__1::__wrap_iter<char
+  const*>
