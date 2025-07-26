@@ -1,0 +1,36 @@
+affected:
+- database_specific:
+    introduced_range: 762c7fd488d0bc6ce81d105fcb4f07ba2c9e6bc4:f112d0adcae6b75531894b3c1cb29f97bfdad171
+  ecosystem_specific:
+    severity: MEDIUM
+  package:
+    ecosystem: OSS-Fuzz
+    name: pcapplusplus
+    purl: pkg:generic/pcapplusplus
+  ranges:
+  - events:
+    - introduced: 5f1895a7b496fa78a2927bd5fe610ab619a3f49b
+    - fixed: a667b2af55b91f69a88fbe05fc0f6e719c5d9e7c
+    repo: https://github.com/seladb/PcapPlusPlus
+    type: GIT
+  versions:
+  - v24.09
+  - v25.05
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42537198
+
+  ```
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  pcpp::NflogLayer::parseNextLayer
+  pcpp::Packet::setRawPacket
+  FuzzTarget.cpp
+  ```
+id: OSV-2024-805
+modified: '2024-08-16T00:02:19.437200Z'
+published: '2024-08-16T00:02:19.436836Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42537198
+schema_version: 1.6.0
+summary: Use-of-uninitialized-value in pcpp::NflogLayer::parseNextLayer
