@@ -1,0 +1,42 @@
+affected:
+- database_specific:
+    introduced_range: 5afbd187b6a05d1764be1fb188e0b9e56dfa7f2c:cf7bffb690efc0d1d9926f8c92620328c4d171b1
+  ecosystem_specific:
+    severity: MEDIUM
+  package:
+    ecosystem: OSS-Fuzz
+    name: harfbuzz
+    purl: pkg:generic/harfbuzz
+  ranges:
+  - events:
+    - introduced: efcb7d3de1efbd17b01263e3cea757c9579b555a
+    - fixed: 04d60de6ae06562262f04e8e2e4d9441c66233e0
+    repo: https://github.com/harfbuzz/harfbuzz.git
+    type: GIT
+  versions:
+  - 11.1.0
+  - 11.2.0
+  - 11.2.1
+  - 11.3.0
+  - 11.3.1
+  - 11.3.2
+  - 11.3.3
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=431867896
+
+  ```
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  CFF::cff2_cs_opset_t<cff2_cs_opset_subr_subset_t, CFF::subr_subset_param_t, CFF:
+  cff2_cs_opset_subr_subset_t::process_op
+  CFF::subr_subsetter_t<cff2_subr_subsetter_t, CFF::Subrs<OT::NumType<true, unsign
+  ```
+id: OSV-2025-550
+modified: '2025-07-16T00:09:08.051469Z'
+published: '2025-07-16T00:09:08.050994Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=431867896
+schema_version: 1.6.0
+summary: 'Use-of-uninitialized-value in CFF::cff2_cs_opset_t<cff2_cs_opset_subr_subset_t,
+  CFF::subr_subset_param_t, CFF:'
