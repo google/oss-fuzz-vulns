@@ -1,0 +1,43 @@
+affected:
+- database_specific:
+    fixed_range: 72159d9d03da535abd8dbc7105b9e95a045b1921:76c83894a641ba15e513564bed6c42fb2e59dc02
+    introduced_range: a37b6c166929141a9044abe1520f13bc4894a893:454b1b5da6426f2fa55bfb5e9e575d43991385d3
+  ecosystem_specific:
+    severity: MEDIUM
+  package:
+    ecosystem: OSS-Fuzz
+    name: wireshark
+    purl: pkg:generic/wireshark
+  ranges:
+  - events:
+    - introduced: c6f73d5fbcf94a9d6211b046ec8b8991e483fc11
+    - fixed: 76c83894a641ba15e513564bed6c42fb2e59dc02
+    repo: https://gitlab.com/wireshark/wireshark.git
+    type: GIT
+  versions:
+  - ssv0.9.2
+  - ssv0.9.3rc0
+  - v4.4.7
+  - v4.4.8
+  - v4.4.8rc0
+  - v4.4.9rc0
+  - wireshark-4.4.7
+  - wireshark-4.4.8
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=417518224
+
+  ```
+  Crash type: Index-out-of-bounds
+  Crash state:
+  tcp_analyze_sequence_number
+  dissect_tcp
+  call_dissector_through_handle
+  ```
+id: OSV-2025-371
+modified: '2025-05-16T00:16:16.300689Z'
+published: '2025-05-16T00:16:16.300219Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=417518224
+schema_version: 1.7.0
+summary: Index-out-of-bounds in tcp_analyze_sequence_number
