@@ -1,0 +1,32 @@
+affected:
+- ecosystem_specific:
+    severity: MEDIUM
+  package:
+    ecosystem: OSS-Fuzz
+    name: libavc
+    purl: pkg:generic/libavc
+  ranges:
+  - events:
+    - introduced: 2f6371b3b8d69ee596fa44c48ca522db27f6f22f
+    - fixed: b34ac3d492b0a46691a5949c19f30fd844c37396
+    repo: https://github.com/ittiam-systems/libavc.git
+    type: GIT
+  versions: []
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=435086517
+
+  ```
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  isvcd_decode_recon_tfr_nmb_base_lyr
+  isvcd_parse_inter_slice_data_cabac
+  isvcd_parse_pslice
+  ```
+id: OSV-2025-589
+modified: '2025-08-01T00:10:54.849286Z'
+published: '2025-08-01T00:10:54.848946Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=435086517
+schema_version: 1.7.0
+summary: Heap-buffer-overflow in isvcd_decode_recon_tfr_nmb_base_lyr
