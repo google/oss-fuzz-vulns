@@ -1,0 +1,32 @@
+affected:
+- ecosystem_specific:
+    severity: MEDIUM
+  package:
+    ecosystem: OSS-Fuzz
+    name: libavc
+    purl: pkg:generic/libavc
+  ranges:
+  - events:
+    - introduced: 2f6371b3b8d69ee596fa44c48ca522db27f6f22f
+    - fixed: b34ac3d492b0a46691a5949c19f30fd844c37396
+    repo: https://github.com/ittiam-systems/libavc.git
+    type: GIT
+  versions: []
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=434978682
+
+  ```
+  Crash type: Heap-buffer-overflow READ 2
+  Crash state:
+  isvcd_mark_err_slice_skip
+  isvcd_video_decode
+  Codec::decodeFrame
+  ```
+id: OSV-2025-584
+modified: '2025-07-31T00:09:08.538507Z'
+published: '2025-07-31T00:09:08.538145Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=434978682
+schema_version: 1.7.0
+summary: Heap-buffer-overflow in isvcd_mark_err_slice_skip
