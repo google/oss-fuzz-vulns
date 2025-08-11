@@ -1,5 +1,7 @@
 affected:
-- ecosystem_specific:
+- database_specific:
+    fixed_range: 8f82593cff046c28d3687e10348264b191c325ef:67c26c25f776303c154079a419bab34f29f35547
+  ecosystem_specific:
     severity: MEDIUM
   package:
     ecosystem: OSS-Fuzz
@@ -9,6 +11,7 @@ affected:
   - events:
     - introduced: 9cf5066516e5e46785bad045d97012e3c1c61b84
     - fixed: aedc3c4cebdc84fe1e4b342df18b1b53110df534
+    - fixed: 67c26c25f776303c154079a419bab34f29f35547
     repo: https://github.com/davea42/libdwarf-code
     type: GIT
   versions:
@@ -29,7 +32,7 @@ details: |
   dwarf_global_name_offsets
   ```
 id: OSV-2025-608
-modified: '2025-08-09T00:02:00.092820Z'
+modified: '2025-08-11T14:17:56.957704Z'
 published: '2025-08-09T00:02:00.092320Z'
 references:
 - type: REPORT
