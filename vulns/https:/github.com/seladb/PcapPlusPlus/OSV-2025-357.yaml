@@ -1,0 +1,34 @@
+affected:
+- database_specific:
+    introduced_range: 3227ad11ec457c3dad062db548432d2a1c837d50:0c95dfb3557644acc6a10060e48cfae1a61fc2f0
+  ecosystem_specific:
+    severity: null
+  package:
+    ecosystem: OSS-Fuzz
+    name: pcapplusplus
+    purl: pkg:generic/pcapplusplus
+  ranges:
+  - events:
+    - introduced: 813f15b87f5e76a62d64360f8cbdf449c21316e4
+    repo: https://github.com/seladb/PcapPlusPlus
+    type: GIT
+  versions:
+  - v24.09
+  - v25.05
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=416808618
+
+  ```
+  Crash type: Segv on unknown address
+  Crash state:
+  pcpp::Packet::computeCalculateFields
+  FuzzTarget.cpp
+  ```
+id: OSV-2025-357
+modified: '2025-05-12T00:13:14.902084Z'
+published: '2025-05-12T00:13:14.901744Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=416808618
+schema_version: 1.7.0
+summary: Segv on unknown address in pcpp::Packet::computeCalculateFields
