@@ -1,0 +1,36 @@
+affected:
+- database_specific:
+    introduced_range: 64073458bd7efab536b181f28526696f13b9c81b:b40e41f9c3c413efd6818734585fe7dc7d0ec16c
+  ecosystem_specific:
+    severity: HIGH
+  package:
+    ecosystem: OSS-Fuzz
+    name: assimp
+    purl: pkg:generic/assimp
+  ranges:
+  - events:
+    - introduced: 9d9a80739df416d89bcd69e1f2532732269a7f67
+    repo: https://github.com/assimp/assimp.git
+    type: GIT
+  versions:
+  - v6.0.0
+  - v6.0.1
+  - v6.0.2
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=417905428
+
+  ```
+  Crash type: Heap-use-after-free READ 8
+  Crash state:
+  aiMesh::~aiMesh
+  aiScene::~aiScene
+  Assimp::BaseProcess::ExecuteOnScene
+  ```
+id: OSV-2025-373
+modified: '2025-05-17T00:11:17.621852Z'
+published: '2025-05-17T00:11:17.621374Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=417905428
+schema_version: 1.7.0
+summary: Heap-use-after-free in aiMesh::~aiMesh
