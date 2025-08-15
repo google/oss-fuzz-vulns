@@ -1,0 +1,30 @@
+affected:
+- ecosystem_specific:
+    severity: null
+  package:
+    ecosystem: OSS-Fuzz
+    name: libwebp
+    purl: pkg:generic/libwebp
+  ranges:
+  - events:
+    - introduced: 2246828be3329e26d8c0774481e98b0315872110
+    - fixed: 61e5c391d6609666983edcf9ad97dd0ebd70b501
+    repo: https://chromium.googlesource.com/webm/libwebp
+    type: GIT
+  versions: []
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=438294033
+
+  ```
+  Crash type: Null-dereference READ
+  Crash state:
+  ubsan_GetStackTrace
+  ```
+id: OSV-2025-628
+modified: '2025-08-14T00:15:27.806631Z'
+published: '2025-08-14T00:15:27.806312Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=438294033
+schema_version: 1.7.0
+summary: Null-dereference READ in ubsan_GetStackTrace
