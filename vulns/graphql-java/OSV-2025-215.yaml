@@ -1,0 +1,50 @@
+affected:
+- database_specific:
+    fixed_range: bf6c50a12dde38c1c91a17ecc086137a6f0f5113:9c927258ecbf5befa9990c134deb752835bcee9d
+    introduced_range: ef846bf7a25a4deb8e860c3be2003968c9fcc493:0bc0845f18c33af5859288ce15244e804a92fc2c
+  ecosystem_specific:
+    severity: LOW
+  package:
+    ecosystem: OSS-Fuzz
+    name: graphql-java
+    purl: pkg:generic/graphql-java
+  ranges:
+  - events:
+    - introduced: f52305325593dcec70aba9c4a5717b18b6543fa0
+    - fixed: 9c927258ecbf5befa9990c134deb752835bcee9d
+    repo: https://github.com/graphql-java/graphql-java
+    type: GIT
+  versions:
+  - 25.0.beta-1
+  - v22.0
+  - v22.1
+  - v22.2
+  - v22.3
+  - v22.4
+  - v23.0
+  - v23.1
+  - v24.0
+  - v24.1
+  - v24.2
+  - v25.0-beta-3
+  - v25.0.beta-2
+  - v25.0.beta-4
+  - v25.0.beta-5
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=403877661
+
+  ```
+  Crash type: Security exception
+  Crash state:
+  graphql.parser.GraphqlAntlrToLanguage.createType
+  graphql.parser.GraphqlAntlrToLanguage.createListType
+  graphql.parser.GraphqlAntlrToLanguage.createNonNullType
+  ```
+id: OSV-2025-215
+modified: '2025-03-18T00:09:36.655425Z'
+published: '2025-03-18T00:09:36.655072Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=403877661
+schema_version: 1.7.0
+summary: Security exception in graphql.parser.GraphqlAntlrToLanguage.createType
