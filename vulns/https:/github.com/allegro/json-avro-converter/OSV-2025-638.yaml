@@ -12,6 +12,7 @@ affected:
   - events:
     - introduced: 2973d1546d9e4590f54a029db483d6d8abde808d
     - fixed: ad871e8a497003a90da1ff523b18d96e4afbf5c7
+    - introduced: d92a3390a6213b1caf4b11e26f923bd6501ffb92
     repo: https://github.com/allegro/json-avro-converter/
     type: GIT
   versions: []
@@ -26,7 +27,7 @@ details: |
   com.fasterxml.jackson.core.json.UTF8StreamJsonParser.findName
   ```
 id: OSV-2025-638
-modified: '2025-08-17T00:01:49.947346Z'
+modified: '2025-08-17T14:48:59.288257Z'
 published: '2025-08-17T00:01:49.946822Z'
 references:
 - type: REPORT
