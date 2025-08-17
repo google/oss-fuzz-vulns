@@ -1,0 +1,35 @@
+affected:
+- database_specific:
+    fixed_range: 2973d1546d9e4590f54a029db483d6d8abde808d:ad871e8a497003a90da1ff523b18d96e4afbf5c7
+    introduced_range: unknown:2973d1546d9e4590f54a029db483d6d8abde808d
+  ecosystem_specific:
+    severity: LOW
+  package:
+    ecosystem: OSS-Fuzz
+    name: json2avro
+    purl: pkg:generic/json2avro
+  ranges:
+  - events:
+    - introduced: 2973d1546d9e4590f54a029db483d6d8abde808d
+    - fixed: ad871e8a497003a90da1ff523b18d96e4afbf5c7
+    repo: https://github.com/allegro/json-avro-converter/
+    type: GIT
+  versions: []
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=438873397
+
+  ```
+  Crash type: Security exception
+  Crash state:
+  com.fasterxml.jackson.databind.deser.std.UntypedObjectDeserializer$Vanilla.deser
+  com.fasterxml.jackson.databind.deser.std.UntypedObjectDeserializer$Vanilla.mapOb
+  com.fasterxml.jackson.core.json.UTF8StreamJsonParser.findName
+  ```
+id: OSV-2025-638
+modified: '2025-08-17T00:01:49.947346Z'
+published: '2025-08-17T00:01:49.946822Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=438873397
+schema_version: 1.7.0
+summary: Security exception in com.fasterxml.jackson.databind.deser.std.UntypedObjectDeserializer$Vanilla.deser
