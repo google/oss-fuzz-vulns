@@ -67,6 +67,7 @@ affected:
   - v2.19.1
   - v2.20.0
   - v2.21.0
+  - v2.21.1
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=60778
 
@@ -78,7 +79,7 @@ details: |
   zstd_wrap_decompress
   ```
 id: OSV-2023-606
-modified: '2025-08-17T14:41:26.124308Z'
+modified: '2025-08-19T14:37:25.247198Z'
 published: '2023-07-23T14:01:02.159160Z'
 references:
 - type: REPORT
