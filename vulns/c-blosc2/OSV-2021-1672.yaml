@@ -67,6 +67,7 @@ affected:
   - v2.19.1
   - v2.20.0
   - v2.21.0
+  - v2.21.1
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42210
 
@@ -78,7 +79,7 @@ details: |
   blosc_run_decompression_with_context
   ```
 id: OSV-2021-1672
-modified: '2025-08-17T14:39:09.570807Z'
+modified: '2025-08-19T14:32:24.634552Z'
 published: '2021-12-12T00:01:29.747137Z'
 references:
 - type: REPORT
