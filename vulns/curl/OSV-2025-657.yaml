@@ -1,0 +1,39 @@
+affected:
+- database_specific:
+    fixed_range: 435069fcd94d5706919fe7a8967bb4f0fe769acb:c294d0abc5b62b8068af391576be87b821d2ff8b
+    introduced_range: 1e2e808defe6850295baa002d07cde9a129ec791:1cdac95e2e1022c298c1e4e551c7e8b5bd8fd5df
+  ecosystem_specific:
+    severity: HIGH
+  package:
+    ecosystem: OSS-Fuzz
+    name: curl
+    purl: pkg:generic/curl
+  ranges:
+  - events:
+    - introduced: 49a1cfaec299a48fd87631eaa3aa1a93233b9ac3
+    - fixed: c294d0abc5b62b8068af391576be87b821d2ff8b
+    repo: https://github.com/curl/curl.git
+    type: GIT
+  versions:
+  - curl-8_15_0
+  - rc-8_15_0-2
+  - rc-8_15_0-3
+  - rc-8_16_0-1
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=439473053
+
+  ```
+  Crash type: Heap-use-after-free READ 8
+  Crash state:
+  ftp_pp_statemachine
+  ftp_doing
+  multi_runsingle
+  ```
+id: OSV-2025-657
+modified: '2025-08-20T00:12:09.700264Z'
+published: '2025-08-20T00:12:09.699805Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=439473053
+schema_version: 1.7.3
+summary: Heap-use-after-free in ftp_pp_statemachine
