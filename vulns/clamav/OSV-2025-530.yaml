@@ -1,0 +1,36 @@
+affected:
+- database_specific:
+    fixed_range: 17d0665580a4b3f32a607e7b1c9351a3eefb1fee:7fab05a89ff668eafc489cd2da920a341bb53759
+    introduced_range: dd033361fc4397e6c21dd5019399971aba6f611a:f963dc2d9e2a3847df7502b42b8f30da08323708
+  ecosystem_specific:
+    severity: null
+  package:
+    ecosystem: OSS-Fuzz
+    name: clamav
+    purl: pkg:generic/clamav
+  ranges:
+  - events:
+    - introduced: 7b9e4f1b4244cbaac4eb6b1234c4a4e26c83b9f7
+    - fixed: 7fab05a89ff668eafc489cd2da920a341bb53759
+    repo: https://github.com/Cisco-Talos/clamav.git
+    type: GIT
+  versions:
+  - clamav-1.4.3
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=429489013
+
+  ```
+  Crash type: Invalid-free
+  Crash state:
+  cli_pdf
+  cli_scanpdf
+  cli_magic_scan
+  ```
+id: OSV-2025-530
+modified: '2025-07-07T00:17:21.884367Z'
+published: '2025-07-07T00:17:21.884018Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=429489013
+schema_version: 1.7.3
+summary: Invalid-free in cli_pdf
