@@ -1,30 +1,15 @@
-id: OSV-2022-73
-summary: Heap-use-after-free in pdfi_cspace_free_callback
-details: |
-  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=43904
-
-  ```
-  Crash type: Heap-use-after-free READ 8
-  Crash state:
-  pdfi_cspace_free_callback
-  gs_cspace_final
-  alloc_restore_step_in
-  ```
-modified: '2025-05-20T14:26:48.434755Z'
-published: '2022-01-22T00:00:41.413569Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=43904
 affected:
-- package:
-    name: ghostscript
+- ecosystem_specific:
+    severity: HIGH
+  package:
     ecosystem: OSS-Fuzz
+    name: ghostscript
     purl: pkg:generic/ghostscript
   ranges:
-  - type: GIT
-    repo: git://git.ghostscript.com/ghostpdl.git
-    events:
+  - events:
     - introduced: 82b097fe8e76ea92f69ef483f45c0cf491a98d43
+    repo: git://git.ghostscript.com/ghostpdl.git
+    type: GIT
   versions:
   - ghostpdl-9.56.0-test-base-3
   - ghostpdl-9.56.0-test-base-4
@@ -78,5 +63,21 @@ affected:
   - ghostpdl-10.05.1
   - ghostpdl-10.05.1rc1_test002
   - ken-test
-  ecosystem_specific:
-    severity: HIGH
+  - ghostpdl-10.06.0rc1
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=43904
+
+  ```
+  Crash type: Heap-use-after-free READ 8
+  Crash state:
+  pdfi_cspace_free_callback
+  gs_cspace_final
+  alloc_restore_step_in
+  ```
+id: OSV-2022-73
+modified: '2025-08-26T14:42:20.541442Z'
+published: '2022-01-22T00:00:41.413569Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=43904
+summary: Heap-use-after-free in pdfi_cspace_free_callback
