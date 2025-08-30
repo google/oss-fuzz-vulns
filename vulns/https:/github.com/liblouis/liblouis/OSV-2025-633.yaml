@@ -1,0 +1,38 @@
+affected:
+- database_specific:
+    fixed_range: f86e9fe064aed5f471cdbaa131ab35697337d926:d8792c4599e7be1554f49dce80371cc9be8cb6f1
+    introduced_range: d0a9f9a410d6c5a25290fdc039b9f9b336068fdc:2019676a3d34ed97c38aed2c39f17dfcceb8d413
+  ecosystem_specific:
+    severity: HIGH
+  package:
+    ecosystem: OSS-Fuzz
+    name: liblouis
+    purl: pkg:generic/liblouis
+  ranges:
+  - events:
+    - introduced: 60076cfb7da6c5c3da2dc74869045fffa9ab70c7
+    - fixed: d8792c4599e7be1554f49dce80371cc9be8cb6f1
+    repo: https://github.com/liblouis/liblouis
+    type: GIT
+  versions:
+  - v3.32.0
+  - v3.33.0
+  - v3.34.0
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=438413376
+
+  ```
+  Crash type: UNKNOWN WRITE
+  Crash state:
+  _lou_handlePassVariableAction
+  passDoAction
+  translateString
+  ```
+id: OSV-2025-633
+modified: '2025-08-15T00:16:54.143400Z'
+published: '2025-08-15T00:16:54.142913Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=438413376
+schema_version: 1.7.3
+summary: UNKNOWN WRITE in _lou_handlePassVariableAction
