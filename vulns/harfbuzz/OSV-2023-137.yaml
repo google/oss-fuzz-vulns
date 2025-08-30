@@ -46,6 +46,7 @@ affected:
   - 11.4.2
   - 11.4.3
   - 11.4.4
+  - 11.4.5
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=56510
 
@@ -57,7 +58,7 @@ details: |
   hb_sanitize_context_t::return_t OT::Layout::GPOS_impl::PosLookupSubTable::dispat
   ```
 id: OSV-2023-137
-modified: '2025-08-26T14:37:11.858784Z'
+modified: '2025-08-30T14:16:44.808190Z'
 published: '2023-03-03T13:00:38.278632Z'
 references:
 - type: REPORT
