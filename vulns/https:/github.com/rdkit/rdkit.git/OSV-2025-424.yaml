@@ -1,0 +1,77 @@
+affected:
+- database_specific:
+    introduced_range: be37bd7b6c96e9a733f677d015c0fab3e56be4a3:b19af71acd7d87a5f72301f0808baf72b5fd405e
+  ecosystem_specific:
+    severity: MEDIUM
+  package:
+    ecosystem: OSS-Fuzz
+    name: rdkit
+    purl: pkg:generic/rdkit
+  ranges:
+  - events:
+    - introduced: 2616a929064f1ca9509813ed4c29e967c00ec824
+    repo: https://github.com/rdkit/rdkit.git
+    type: GIT
+  versions:
+  - Release_2022_03_1
+  - Release_2022_03_1b1
+  - Release_2022_03_2
+  - Release_2022_03_3
+  - Release_2022_03_4
+  - Release_2022_03_5
+  - Release_2022_09_1
+  - Release_2022_09_1b1
+  - Release_2022_09_2
+  - Release_2022_09_3
+  - Release_2022_09_4
+  - Release_2022_09_5
+  - Release_2023_03_1
+  - Release_2023_03_1b1
+  - Release_2023_03_2
+  - Release_2023_03_3
+  - Release_2023_09_1
+  - Release_2023_09_1b1
+  - Release_2023_09_2
+  - Release_2023_09_3
+  - Release_2023_09_4
+  - Release_2023_09_5
+  - Release_2023_09_6
+  - Release_2024_03_1
+  - Release_2024_03_1b1
+  - Release_2024_03_2
+  - Release_2024_03_3
+  - Release_2024_03_4
+  - Release_2024_03_5
+  - Release_2024_03_6
+  - Release_2024_09_1
+  - Release_2024_09_1b1
+  - Release_2024_09_2
+  - Release_2024_09_3
+  - Release_2024_09_4
+  - Release_2024_09_5
+  - Release_2024_09_6
+  - Release_2025_03_1
+  - Release_2025_03_1b1
+  - Release_2025_03_2
+  - Release_2025_03_3
+  - Release_2025_03_4
+  - Release_2025_03_5
+  - Release_2025_03_6
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=421736524
+
+  ```
+  Crash type: UNKNOWN READ
+  Crash state:
+  RDKit::RDValue::destroy
+  RDKit::Dict::clearVal
+  RDKit::RDProps::clearProp
+  ```
+id: OSV-2025-424
+modified: '2025-06-03T00:12:35.237562Z'
+published: '2025-06-03T00:12:35.236863Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=421736524
+schema_version: 1.7.3
+summary: UNKNOWN READ in RDKit::RDValue::destroy
