@@ -48,6 +48,7 @@ affected:
   - ghostpdl-10.05.1rc1_test002
   - ken-test
   - ghostpdl-10.06.0rc1
+  - ghostpdl-10.06.0rc2
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=70967
 
@@ -59,7 +60,7 @@ details: |
   pdf_text_process
   ```
 id: OSV-2024-728
-modified: '2025-08-26T14:53:47.549168Z'
+modified: '2025-09-06T16:07:18.469858Z'
 published: '2024-08-08T00:09:33.935595Z'
 references:
 - type: REPORT
