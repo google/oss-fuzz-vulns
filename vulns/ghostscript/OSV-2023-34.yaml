@@ -45,6 +45,7 @@ affected:
   - ghostpdl-10.05.1rc1_test002
   - ken-test
   - ghostpdl-10.06.0rc1
+  - ghostpdl-10.06.0rc2
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=55443
 
@@ -56,7 +57,7 @@ details: |
   ireclaim
   ```
 id: OSV-2023-34
-modified: '2025-08-26T14:48:39.752999Z'
+modified: '2025-09-06T16:02:48.677644Z'
 published: '2023-01-29T13:00:17.773387Z'
 references:
 - type: REPORT
