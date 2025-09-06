@@ -1,0 +1,35 @@
+affected:
+- database_specific:
+    introduced_range: 7dda3c01fb4c0f9941d3cb792947d57d896ac55f:ec1c9ca71ae2e0a63f4245978accde381865266b
+  ecosystem_specific:
+    severity: MEDIUM
+  package:
+    ecosystem: OSS-Fuzz
+    name: spirv-tools
+    purl: pkg:generic/spirv-tools
+  ranges:
+  - events:
+    - introduced: 6061b72049a037215dfaba87399e1910a97b350e
+    repo: https://github.com/KhronosGroup/SPIRV-Tools.git
+    type: GIT
+  versions:
+  - v2025.3.rc1
+  - vulkan-sdk-1.4.321.0
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=423059200
+
+  ```
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  spvtools::EmitNumericLiteral
+  spvtools::disassemble::InstructionDisassembler::EmitOperand
+  spvtools::disassemble::InstructionDisassembler::EmitInstructionImpl
+  ```
+id: OSV-2025-447
+modified: '2025-06-09T00:05:11.129056Z'
+published: '2025-06-09T00:05:11.128452Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=423059200
+schema_version: 1.7.3
+summary: Use-of-uninitialized-value in spvtools::EmitNumericLiteral
