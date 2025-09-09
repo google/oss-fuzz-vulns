@@ -1,0 +1,31 @@
+affected:
+- ecosystem_specific:
+    severity: MEDIUM
+  package:
+    ecosystem: OSS-Fuzz
+    name: cups
+    purl: pkg:generic/cups
+  ranges:
+  - events:
+    - introduced: 6e4a2c699948b5454a2c58b72aadb9d25a3b9353
+    repo: https://github.com/OpenPrinting/cups
+    type: GIT
+  versions: []
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=423674620
+
+  ```
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  ppd_hash_option
+  cupsArrayFind
+  ppdFindOption
+  ```
+id: OSV-2025-456
+modified: '2025-06-12T00:10:52.355684Z'
+published: '2025-06-12T00:10:52.355312Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=423674620
+schema_version: 1.7.3
+summary: Use-of-uninitialized-value in ppd_hash_option
