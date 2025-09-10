@@ -10,6 +10,7 @@ affected:
   ranges:
   - events:
     - introduced: 813f15b87f5e76a62d64360f8cbdf449c21316e4
+    - fixed: cf2b617d88c2856bd6dfc57d2960dad219f6a06c
     repo: https://github.com/seladb/PcapPlusPlus
     type: GIT
   versions:
@@ -25,7 +26,7 @@ details: |
   FuzzTarget.cpp
   ```
 id: OSV-2025-357
-modified: '2025-05-12T00:13:14.902084Z'
+modified: '2025-09-10T14:24:05.862334Z'
 published: '2025-05-12T00:13:14.901744Z'
 references:
 - type: REPORT
