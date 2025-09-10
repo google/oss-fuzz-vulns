@@ -68,6 +68,7 @@ affected:
   - v2.20.0
   - v2.21.0
   - v2.21.1
+  - v2.21.2
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=58035
 
@@ -79,7 +80,7 @@ details: |
   ZSTD_decompressBlock_internal
   ```
 id: OSV-2023-319
-modified: '2025-08-19T14:33:04.107781Z'
+modified: '2025-09-10T14:16:16.783302Z'
 published: '2023-04-16T14:01:58.406534Z'
 references:
 - type: REPORT
