@@ -1,0 +1,34 @@
+affected:
+- database_specific:
+    introduced_range: 4d9a27c578d20fc22f0f1a51ff3bfaf47798f30e:458c34d29d0d262f824ea1c0e01aa0e3790669da
+  ecosystem_specific:
+    severity: MEDIUM
+  package:
+    ecosystem: OSS-Fuzz
+    name: quickjs
+    purl: pkg:generic/quickjs
+  ranges:
+  - events:
+    - introduced: f1b1c000c2a05972c1834f306786d2b41f767ef5
+    - fixed: 20d2b404af65edc5d66ee6f11a59f930ea3d1b88
+    repo: https://github.com/bellard/quickjs
+    type: GIT
+  versions: []
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=429330008
+
+  ```
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  JS_CallInternal
+  async_func_resume
+  js_async_function_resume
+  ```
+id: OSV-2025-524
+modified: '2025-07-05T00:19:21.758880Z'
+published: '2025-07-05T00:19:21.758513Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=429330008
+schema_version: 1.7.3
+summary: Heap-buffer-overflow in JS_CallInternal
