@@ -1,0 +1,37 @@
+affected:
+- database_specific:
+    fixed_range: 1fdff6da75c6c2e745c3aab9a0a8864dba4c6c1c:dac243bd265e79af2315ce04fac2a0a5bdf47efe
+    introduced_range: 32598639244ada2b5095baf08118a2ec80c6bb37:1950c4dbb993c60f11ddc8adf3c4eeab998fc175
+  ecosystem_specific:
+    severity: HIGH
+  package:
+    ecosystem: OSS-Fuzz
+    name: opencv
+    purl: pkg:generic/opencv
+  ranges:
+  - events:
+    - introduced: 850b686f8a9a1bbadd975910aee815acaf0d6e50
+    - fixed: dac243bd265e79af2315ce04fac2a0a5bdf47efe
+    repo: https://github.com/opencv/opencv.git
+    type: GIT
+  versions:
+  - 4.12.0
+  - 5.0.0-alpha
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=426783958
+
+  ```
+  Crash type: Bad-cast
+  Crash state:
+  Bad-cast to cv::PngDecoder from invalid vptr
+  cv::PngDecoder::readData
+  cv::imdecode_
+  ```
+id: OSV-2025-486
+modified: '2025-06-24T00:16:24.786690Z'
+published: '2025-06-24T00:16:24.786334Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=426783958
+schema_version: 1.7.3
+summary: Bad-cast to cv::PngDecoder from invalid vptr
