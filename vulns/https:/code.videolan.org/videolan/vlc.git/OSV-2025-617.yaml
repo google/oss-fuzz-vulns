@@ -1,0 +1,35 @@
+affected:
+- database_specific:
+    fixed_range: ac029e853f7c0e3a1a5f635776c784657e43b066:a89e30a4d2cb156b8a4f68aa52b11ebd0d8eb25a
+    introduced_range: 22ea21dc9efff3e1ce539a098e4839975051bbe5:ca8a1dd2e9f38ae5d0ecae43be473d3a9af6a399
+  ecosystem_specific:
+    severity: HIGH
+  package:
+    ecosystem: OSS-Fuzz
+    name: vlc
+    purl: pkg:generic/vlc
+  ranges:
+  - events:
+    - introduced: f8e9d090fc20452cfddb91df28bf235eb59baff1
+    - fixed: a89e30a4d2cb156b8a4f68aa52b11ebd0d8eb25a
+    repo: https://code.videolan.org/videolan/vlc.git
+    type: GIT
+  versions: []
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=437783630
+
+  ```
+  Crash type: UNKNOWN WRITE
+  Crash state:
+  MP4_BoxFree
+  MP4_ReadBoxContainerChildrenIndexed
+  MP4_ReadBoxContainer
+  ```
+id: OSV-2025-617
+modified: '2025-08-12T00:04:18.009816Z'
+published: '2025-08-12T00:04:18.009473Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=437783630
+schema_version: 1.7.3
+summary: UNKNOWN WRITE in MP4_BoxFree
