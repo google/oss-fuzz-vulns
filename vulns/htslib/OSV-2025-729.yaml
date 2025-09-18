@@ -1,0 +1,34 @@
+affected:
+- database_specific:
+    introduced_range: ca3a57b7d6809b2bf869e357b7840f1a3ca7eb19:3668b932bdb9f737c4af9c28ddbf0472156a5f24
+  ecosystem_specific:
+    severity: MEDIUM
+  package:
+    ecosystem: OSS-Fuzz
+    name: htslib
+    purl: pkg:generic/htslib
+  ranges:
+  - events:
+    - introduced: ab4abb78d1d43ddfccad3317a156d4bc4031e80e
+    - fixed: 2a4eac0fb2ccec7429e8325d1bb8d5e3f4e93813
+    repo: https://github.com/samtools/htslib.git
+    type: GIT
+  versions: []
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=444492076
+
+  ```
+  Crash type: UNKNOWN READ
+  Crash state:
+  sam_hrecs_free_tags
+  sam_hrecs_parse_single_line
+  sam_hdr_build_from_sam_file
+  ```
+id: OSV-2025-729
+modified: '2025-09-13T00:08:43.863848Z'
+published: '2025-09-13T00:08:43.863495Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=444492076
+schema_version: 1.7.3
+summary: UNKNOWN READ in sam_hrecs_free_tags
