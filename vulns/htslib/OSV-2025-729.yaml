@@ -1,5 +1,6 @@
 affected:
 - database_specific:
+    fixed_range: 3668b932bdb9f737c4af9c28ddbf0472156a5f24:c767e60edc31bd40f7d20f09ad5e8f750550be5b
     introduced_range: ca3a57b7d6809b2bf869e357b7840f1a3ca7eb19:3668b932bdb9f737c4af9c28ddbf0472156a5f24
   ecosystem_specific:
     severity: MEDIUM
@@ -11,6 +12,7 @@ affected:
   - events:
     - introduced: ab4abb78d1d43ddfccad3317a156d4bc4031e80e
     - fixed: 2a4eac0fb2ccec7429e8325d1bb8d5e3f4e93813
+    - fixed: c767e60edc31bd40f7d20f09ad5e8f750550be5b
     repo: https://github.com/samtools/htslib.git
     type: GIT
   versions: []
