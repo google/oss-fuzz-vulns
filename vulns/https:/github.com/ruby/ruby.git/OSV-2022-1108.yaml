@@ -1,0 +1,67 @@
+affected:
+- ecosystem_specific:
+    severity: MEDIUM
+  package:
+    ecosystem: OSS-Fuzz
+    name: ruby
+    purl: pkg:generic/ruby
+  ranges:
+  - events:
+    - introduced: 67de00053a26db9d976efa393d121479b5315f5e
+    repo: https://github.com/ruby/ruby.git
+    type: GIT
+  versions:
+  - v3_2_0
+  - v3_2_0_preview3
+  - v3_2_0_rc1
+  - v3_2_1
+  - v3_2_2
+  - v3_2_3
+  - v3_2_4
+  - v3_2_5
+  - v3_2_6
+  - v3_2_7
+  - v3_2_8
+  - v3_2_9
+  - v3_3_0
+  - v3_3_0_preview1
+  - v3_3_0_preview2
+  - v3_3_0_preview3
+  - v3_3_1
+  - v3_3_2
+  - v3_3_3
+  - v3_3_4
+  - v3_3_5
+  - v3_3_6
+  - v3_3_7
+  - v3_3_8
+  - v3_3_9
+  - v3_4_0
+  - v3_4_0_preview1
+  - v3_4_0_preview2
+  - v3_4_0_rc1
+  - v3_4_1
+  - v3_4_2
+  - v3_4_3
+  - v3_4_4
+  - v3_4_5
+  - v3_4_6
+  - v3_5_0_preview1
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=52788
+
+  ```
+  Crash type: Use-after-poison READ 1
+  Crash state:
+  /mnt/scratch0/clusterfuzz/bot/builds/clusterfuzz-builds_ruby_e5a0a396033f4deba21
+  /mnt/scratch0/clusterfuzz/bot/builds/clusterfuzz-builds_ruby_e5a0a396033f4deba21
+  /mnt/scratch0/clusterfuzz/bot/builds/clusterfuzz-builds_ruby_e5a0a396033f4deba21
+  ```
+id: OSV-2022-1108
+modified: '2022-10-29T00:00:16.195411Z'
+published: '2022-10-29T00:00:16.195172Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=52788
+schema_version: 1.7.3
+summary: Use-after-poison in /mnt/scratch0/clusterfuzz/bot/builds/clusterfuzz-builds_ruby_e5a0a396033f4deba21

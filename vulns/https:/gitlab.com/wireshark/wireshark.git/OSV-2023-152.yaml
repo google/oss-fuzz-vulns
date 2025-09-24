@@ -1,0 +1,32 @@
+affected:
+- ecosystem_specific:
+    severity: MEDIUM
+  package:
+    ecosystem: OSS-Fuzz
+    name: wireshark
+    purl: pkg:generic/wireshark
+  ranges:
+  - events:
+    - introduced: 13774219250f5e19def001f296dc27a2ec2b37c9
+    - fixed: 53914b044780c3ebac42f465d7f54df27933d22e
+    repo: https://gitlab.com/wireshark/wireshark.git
+    type: GIT
+  versions: []
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=56724
+
+  ```
+  Crash type: UNKNOWN READ
+  Crash state:
+  dissect_oran_c_section
+  dissect_oran
+  call_dissector_work
+  ```
+id: OSV-2023-152
+modified: '2023-03-07T13:00:13.697607Z'
+published: '2023-03-07T13:00:13.697350Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=56724
+schema_version: 1.7.3
+summary: UNKNOWN READ in dissect_oran_c_section
