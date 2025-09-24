@@ -57,6 +57,7 @@ affected:
   - Release_2025_03_4
   - Release_2025_03_5
   - Release_2025_03_6
+  - Release_2025_09_1b1
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=421736524
 
@@ -68,7 +69,7 @@ details: |
   RDKit::RDProps::clearProp
   ```
 id: OSV-2025-424
-modified: '2025-06-03T00:12:35.237562Z'
+modified: '2025-09-24T14:19:44.921114Z'
 published: '2025-06-03T00:12:35.236863Z'
 references:
 - type: REPORT
