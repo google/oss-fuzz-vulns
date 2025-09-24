@@ -1,0 +1,32 @@
+affected:
+- ecosystem_specific:
+    severity: HIGH
+  package:
+    ecosystem: OSS-Fuzz
+    name: php
+    purl: pkg:generic/php
+  ranges:
+  - events:
+    - introduced: 35a36b13e539c252d309f1799b5f653cf76921bd
+    - fixed: 1978a7b393ebbf5018e07b42ba65325282eee336
+    repo: https://github.com/php/php-src.git
+    type: GIT
+  versions: []
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=56021
+
+  ```
+  Crash type: Heap-use-after-free READ 4
+  Crash state:
+  zend_ast_evaluate_inner
+  zend_ast_evaluate_ex
+  zval_update_constant_with_ctx
+  ```
+id: OSV-2023-69
+modified: '2023-02-17T13:02:09.653400Z'
+published: '2023-02-17T13:02:09.653146Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=56021
+schema_version: 1.7.3
+summary: Heap-use-after-free in zend_ast_evaluate_inner
