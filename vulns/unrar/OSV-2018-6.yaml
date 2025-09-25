@@ -1,29 +1,15 @@
-id: OSV-2018-6
-summary: Use-of-uninitialized-value in DosSlashToUnix
-details: |
-  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=9307
-
-  ```
-  Crash type: Use-of-uninitialized-value
-  Crash state:
-  DosSlashToUnix
-  ExtractUnixLink50
-  ExtractSymlink
-  ```
-modified: '2025-07-02T14:28:17.234140Z'
-published: '2021-01-13T00:00:02.571744Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=9307
 affected:
-- package:
-    name: unrar
+- ecosystem_specific:
+    introduced_range: 2a079823c708a637bc36e888180ebb96fdfba526:1d8ea7923dae7c8f136912b6bdca95dcb52e80bc
+    severity: MEDIUM
+  package:
     ecosystem: OSS-Fuzz
+    name: unrar
   ranges:
-  - type: GIT
-    repo: https://github.com/aawc/unrar.git
-    events:
+  - events:
     - introduced: d2e5341ebf6f34c9bd5939c3ac812cb2cd983081
+    repo: https://github.com/aawc/unrar.git
+    type: GIT
   versions:
   - 5.6.1.2
   - 5.6.1.3
@@ -48,6 +34,21 @@ affected:
   - v7.11.0
   - v7.12.1
   - v7.12.0
-  ecosystem_specific:
-    severity: MEDIUM
-    introduced_range: 2a079823c708a637bc36e888180ebb96fdfba526:1d8ea7923dae7c8f136912b6bdca95dcb52e80bc
+  - v7.13.0
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=9307
+
+  ```
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  DosSlashToUnix
+  ExtractUnixLink50
+  ExtractSymlink
+  ```
+id: OSV-2018-6
+modified: '2025-09-25T14:18:29.826514Z'
+published: '2021-01-13T00:00:02.571744Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=9307
+summary: Use-of-uninitialized-value in DosSlashToUnix
