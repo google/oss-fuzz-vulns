@@ -1,5 +1,21 @@
-id: OSV-2024-86
-summary: Security exception in org.threeten.bp.format.DateTimeFormatterBuilder$CompositePrinterParser.parse
+affected:
+- ecosystem_specific:
+    severity: LOW
+  package:
+    ecosystem: OSS-Fuzz
+    name: threetenbp
+    purl: pkg:generic/threetenbp
+  ranges:
+  - events:
+    - introduced: bdf97bf72f4e5af7ae3c3af1ea8e3407c1451341
+    repo: https://github.com/ThreeTen/threetenbp
+    type: GIT
+  versions:
+  - v1.6.9
+  - tzdb2
+  - v1.7.0
+  - v1.7.1
+  - v1.7.2
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=66533
 
@@ -10,26 +26,11 @@ details: |
   java.base/java.text.DateFormatSymbols.getProviderInstance
   java.base/java.text.DateFormatSymbols.getInstance
   ```
-modified: '2025-03-11T14:34:44.775784Z'
+id: OSV-2024-86
+modified: '2025-09-25T14:31:01.295253Z'
 published: '2024-02-09T00:00:11.154046Z'
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=66533
-affected:
-- package:
-    name: threetenbp
-    ecosystem: OSS-Fuzz
-    purl: pkg:generic/threetenbp
-  ranges:
-  - type: GIT
-    repo: https://github.com/ThreeTen/threetenbp
-    events:
-    - introduced: bdf97bf72f4e5af7ae3c3af1ea8e3407c1451341
-  versions:
-  - v1.6.9
-  - tzdb2
-  - v1.7.0
-  - v1.7.1
-  ecosystem_specific:
-    severity: LOW
 schema_version: 1.6.0
+summary: Security exception in org.threeten.bp.format.DateTimeFormatterBuilder$CompositePrinterParser.parse
