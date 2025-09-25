@@ -1,5 +1,20 @@
-id: OSV-2025-219
-summary: Heap-buffer-overflow in opj_j2k_read_tile_header
+affected:
+- database_specific:
+    introduced_range: 5005a350a78d1918e98e970457a8316a23c50e19:d153c61e6fad0e1365125433e2db48661ec41ab5
+  ecosystem_specific:
+    severity: HIGH
+  package:
+    ecosystem: OSS-Fuzz
+    name: openjpeg
+    purl: pkg:generic/openjpeg
+  ranges:
+  - events:
+    - introduced: 954c6e3cb9d79aaa08c6666373d2bfa04f89ead1
+    repo: https://github.com/uclouvain/openjpeg
+    type: GIT
+  versions:
+  - v2.5.3
+  - v2.5.4
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=403673832
 
@@ -10,25 +25,11 @@ details: |
   opj_j2k_decode_tiles
   opj_j2k_decode
   ```
-modified: '2025-03-18T00:18:30.567298Z'
+id: OSV-2025-219
+modified: '2025-09-25T14:32:18.738293Z'
 published: '2025-03-18T00:18:30.566980Z'
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=403673832
-affected:
-- package:
-    name: openjpeg
-    ecosystem: OSS-Fuzz
-    purl: pkg:generic/openjpeg
-  ranges:
-  - type: GIT
-    repo: https://github.com/uclouvain/openjpeg
-    events:
-    - introduced: 954c6e3cb9d79aaa08c6666373d2bfa04f89ead1
-  versions:
-  - v2.5.3
-  ecosystem_specific:
-    severity: HIGH
-  database_specific:
-    introduced_range: 5005a350a78d1918e98e970457a8316a23c50e19:d153c61e6fad0e1365125433e2db48661ec41ab5
 schema_version: 1.6.0
+summary: Heap-buffer-overflow in opj_j2k_read_tile_header
