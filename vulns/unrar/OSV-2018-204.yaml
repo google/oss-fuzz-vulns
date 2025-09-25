@@ -1,29 +1,15 @@
-id: OSV-2018-204
-summary: UNKNOWN WRITE in __msan_memcpy.part.51
-details: |
-  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=9845
-
-  ```
-  Crash type: UNKNOWN WRITE
-  Crash state:
-  __msan_memcpy.part.51
-  QuickOpen::ReadRaw
-  QuickOpen::ReadNext
-  ```
-modified: '2025-07-02T14:27:53.891122Z'
-published: '2021-01-13T00:01:23.035709Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=9845
 affected:
-- package:
-    name: unrar
+- ecosystem_specific:
+    introduced_range: 9866c9649507f177233ca96feefac8b12e36a91f:b676eae90fc9c620a214889ed040d356638a18f6
+    severity: HIGH
+  package:
     ecosystem: OSS-Fuzz
+    name: unrar
   ranges:
-  - type: GIT
-    repo: https://github.com/aawc/unrar.git
-    events:
+  - events:
     - introduced: bc53b57bf64fa0919981c362252637f9c57012b2
+    repo: https://github.com/aawc/unrar.git
+    type: GIT
   versions:
   - 5.6.1.7
   - 5.6.1.8
@@ -44,6 +30,21 @@ affected:
   - v7.11.0
   - v7.12.1
   - v7.12.0
-  ecosystem_specific:
-    severity: HIGH
-    introduced_range: 9866c9649507f177233ca96feefac8b12e36a91f:b676eae90fc9c620a214889ed040d356638a18f6
+  - v7.13.0
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=9845
+
+  ```
+  Crash type: UNKNOWN WRITE
+  Crash state:
+  __msan_memcpy.part.51
+  QuickOpen::ReadRaw
+  QuickOpen::ReadNext
+  ```
+id: OSV-2018-204
+modified: '2025-09-25T14:18:29.315747Z'
+published: '2021-01-13T00:01:23.035709Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=9845
+summary: UNKNOWN WRITE in __msan_memcpy.part.51
