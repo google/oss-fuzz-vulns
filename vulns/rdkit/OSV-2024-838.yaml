@@ -52,6 +52,8 @@ affected:
   - Release_2025_03_3
   - Release_2025_03_4
   - Release_2025_03_5
+  - Release_2025_03_6
+  - Release_2025_09_1b1
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=68998
 
@@ -63,7 +65,7 @@ details: |
   RDKit::RecursiveStructureQuery::copy
   ```
 id: OSV-2024-838
-modified: '2025-07-26T14:51:23.414796Z'
+modified: '2025-09-25T14:32:14.791368Z'
 published: '2024-08-16T00:03:32.029853Z'
 references:
 - type: REPORT
