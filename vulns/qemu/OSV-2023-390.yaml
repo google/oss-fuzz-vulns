@@ -123,6 +123,13 @@ affected:
   - v10.0.3
   - v10.1.0-rc0
   - v7.2.19
+  - v10.0.4
+  - v10.1.0
+  - v10.1.0-rc1
+  - v10.1.0-rc2
+  - v10.1.0-rc3
+  - v10.1.0-rc4
+  - v7.2.20
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=58813
 
@@ -134,7 +141,7 @@ details: |
   memory_region_dispatch_write
   ```
 id: OSV-2023-390
-modified: '2025-07-23T14:37:09.039183Z'
+modified: '2025-09-25T14:48:16.609258Z'
 published: '2023-05-12T14:00:08.854823Z'
 references:
 - type: REPORT
