@@ -56,6 +56,9 @@ affected:
   - v2.14.3
   - v2.14.4
   - v2.14.5
+  - v2.13.9
+  - v2.14.6
+  - v2.15.0
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34461
 
@@ -67,7 +70,7 @@ details: |
   xmlXIncludeCopyXPointer
   ```
 id: OSV-2021-777
-modified: '2025-07-15T14:06:11.764231Z'
+modified: '2025-09-25T14:20:13.031443Z'
 published: '2021-05-20T00:00:30.166614Z'
 references:
 - type: REPORT
