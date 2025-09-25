@@ -1,5 +1,23 @@
-id: OSV-2024-171
-summary: Security exception in org.threeten.bp.format.DateTimeFormatterBuilder$CompositePrinterParser.parse
+affected:
+- database_specific:
+    introduced_range: 1bc34b1340ae99978566999f70ae909013ee8c9d:bdf97bf72f4e5af7ae3c3af1ea8e3407c1451341
+  ecosystem_specific:
+    severity: LOW
+  package:
+    ecosystem: OSS-Fuzz
+    name: threetenbp
+    purl: pkg:generic/threetenbp
+  ranges:
+  - events:
+    - introduced: 0a5403ed315b9b1770c27a74ca6c2e162851ca78
+    repo: https://github.com/ThreeTen/threetenbp
+    type: GIT
+  versions:
+  - v1.6.9
+  - tzdb2
+  - v1.7.0
+  - v1.7.1
+  - v1.7.2
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=67357
 
@@ -10,28 +28,11 @@ details: |
   java.base/sun.util.calendar.ZoneInfo.getLastRawOffset
   java.base/sun.util.calendar.ZoneInfo.getOffsets
   ```
-modified: '2025-03-11T14:30:45.585203Z'
+id: OSV-2024-171
+modified: '2025-09-25T14:28:39.920838Z'
 published: '2024-03-15T00:08:01.855772Z'
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=67357
-affected:
-- package:
-    name: threetenbp
-    ecosystem: OSS-Fuzz
-    purl: pkg:generic/threetenbp
-  ranges:
-  - type: GIT
-    repo: https://github.com/ThreeTen/threetenbp
-    events:
-    - introduced: 0a5403ed315b9b1770c27a74ca6c2e162851ca78
-  versions:
-  - v1.6.9
-  - tzdb2
-  - v1.7.0
-  - v1.7.1
-  ecosystem_specific:
-    severity: LOW
-  database_specific:
-    introduced_range: 1bc34b1340ae99978566999f70ae909013ee8c9d:bdf97bf72f4e5af7ae3c3af1ea8e3407c1451341
 schema_version: 1.6.0
+summary: Security exception in org.threeten.bp.format.DateTimeFormatterBuilder$CompositePrinterParser.parse
