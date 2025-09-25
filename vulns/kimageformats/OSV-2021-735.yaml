@@ -119,6 +119,10 @@ affected:
   - v6.15.0
   - v6.16.0-rc1
   - v6.16.0
+  - v6.17.0
+  - v6.17.0-rc1
+  - v6.18.0
+  - v6.18.0-rc1
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34047
 
@@ -130,7 +134,7 @@ details: |
   residual_coding
   ```
 id: OSV-2021-735
-modified: '2025-07-11T14:16:47.477234Z'
+modified: '2025-09-25T14:19:03.287860Z'
 published: '2021-05-08T00:00:14.355747Z'
 references:
 - type: REPORT
