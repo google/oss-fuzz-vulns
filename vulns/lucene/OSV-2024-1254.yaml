@@ -1,5 +1,24 @@
-id: OSV-2024-1254
-summary: Security exception in org.apache.lucene.util.ArrayUtil.growExact
+affected:
+- database_specific:
+    introduced_range: 223e28ef16acb35cb43c89493855366d171de4f9:8af305892d726c180f03316c73aebf8183c2e481
+  ecosystem_specific:
+    severity: LOW
+  package:
+    ecosystem: OSS-Fuzz
+    name: lucene
+    purl: pkg:generic/lucene
+  ranges:
+  - events:
+    - introduced: 5d203f8337cb6a2350c1abe5d83e3e103d060645
+    repo: https://github.com/apache/lucene.git
+    type: GIT
+  versions:
+  - releases/lucene/10.0.0
+  - releases/lucene/10.1.0
+  - releases/lucene/10.2.0
+  - releases/lucene/10.2.1
+  - releases/lucene/10.2.2
+  - releases/lucene/10.3.0
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=376504918
 
@@ -10,29 +29,11 @@ details: |
   org.apache.lucene.util.ArrayUtil.grow
   org.apache.lucene.util.BytesRefBuilder.grow
   ```
-modified: '2025-06-20T16:40:15.136121Z'
+id: OSV-2024-1254
+modified: '2025-09-25T15:03:00.669291Z'
 published: '2024-11-01T00:07:39.301298Z'
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=376504918
-affected:
-- package:
-    name: lucene
-    ecosystem: OSS-Fuzz
-    purl: pkg:generic/lucene
-  ranges:
-  - type: GIT
-    repo: https://github.com/apache/lucene.git
-    events:
-    - introduced: 5d203f8337cb6a2350c1abe5d83e3e103d060645
-  versions:
-  - releases/lucene/10.0.0
-  - releases/lucene/10.1.0
-  - releases/lucene/10.2.0
-  - releases/lucene/10.2.1
-  - releases/lucene/10.2.2
-  ecosystem_specific:
-    severity: LOW
-  database_specific:
-    introduced_range: 223e28ef16acb35cb43c89493855366d171de4f9:8af305892d726c180f03316c73aebf8183c2e481
 schema_version: 1.6.0
+summary: Security exception in org.apache.lucene.util.ArrayUtil.growExact
