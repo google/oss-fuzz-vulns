@@ -1,30 +1,17 @@
-id: OSV-2025-202
-summary: UNKNOWN READ in _blit_xrgb32_lerp_spans
-details: |
-  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=402836107
-
-  ```
-  Crash type: UNKNOWN READ
-  Crash state:
-  _blit_xrgb32_lerp_spans
-  _cairo_rectangular_scan_converter_generate
-  composite_boxes
-  ```
-modified: '2025-03-15T00:01:51.127750Z'
-published: '2025-03-15T00:01:51.127135Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=402836107
 affected:
-- package:
-    name: librsvg
+- database_specific:
+    introduced_range: e32687a7f960a99672635758812b8e7e8e184933:c068311e4f218002e7d1cbf7419a051299cbeeb8
+  ecosystem_specific:
+    severity: MEDIUM
+  package:
     ecosystem: OSS-Fuzz
+    name: librsvg
     purl: pkg:generic/librsvg
   ranges:
-  - type: GIT
-    repo: https://gitlab.gnome.org/GNOME/librsvg.git
-    events:
+  - events:
     - introduced: 954e26db28e6f651bc37e2221fb8bea58888b579
+    repo: https://gitlab.gnome.org/GNOME/librsvg.git
+    type: GIT
   versions:
   - 2.58.92
   - 2.58.93
@@ -40,8 +27,23 @@ affected:
   - 2.60.0
   - 2.60.0-beta.0
   - 2.60.0-beta.1
-  ecosystem_specific:
-    severity: MEDIUM
-  database_specific:
-    introduced_range: e32687a7f960a99672635758812b8e7e8e184933:c068311e4f218002e7d1cbf7419a051299cbeeb8
+  - 2.61.0
+  - 2.61.1
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=402836107
+
+  ```
+  Crash type: UNKNOWN READ
+  Crash state:
+  _blit_xrgb32_lerp_spans
+  _cairo_rectangular_scan_converter_generate
+  composite_boxes
+  ```
+id: OSV-2025-202
+modified: '2025-09-25T14:31:36.972931Z'
+published: '2025-03-15T00:01:51.127135Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=402836107
 schema_version: 1.6.0
+summary: UNKNOWN READ in _blit_xrgb32_lerp_spans
