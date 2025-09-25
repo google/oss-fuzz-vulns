@@ -1,5 +1,27 @@
-id: OSV-2023-197
-summary: Global-buffer-overflow in base_C_MessageEncryptInit
+affected:
+- ecosystem_specific:
+    severity: null
+  package:
+    ecosystem: OSS-Fuzz
+    name: p11-kit
+    purl: pkg:generic/p11-kit
+  ranges:
+  - events:
+    - introduced: 7fe7e5d95d9197e7f52aab314468d424acc6ac88
+    repo: https://github.com/p11-glue/p11-kit.git
+    type: GIT
+  versions:
+  - 0.25.0
+  - 0.25.1
+  - 0.25.2
+  - 0.25.3
+  - 0.25.4
+  - 0.25.5
+  - 0.25.10
+  - 0.25.6
+  - 0.25.7
+  - 0.25.8
+  - 0.25.9
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=57120
 
@@ -10,28 +32,11 @@ details: |
   rpc_C_MessageEncryptInit
   p11_rpc_server_handle
   ```
-modified: '2024-07-04T14:16:04.301147Z'
+id: OSV-2023-197
+modified: '2025-09-25T14:23:56.310071Z'
 published: '2023-03-18T13:00:57.254906Z'
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=57120
-affected:
-- package:
-    name: p11-kit
-    ecosystem: OSS-Fuzz
-    purl: pkg:generic/p11-kit
-  ranges:
-  - type: GIT
-    repo: https://github.com/p11-glue/p11-kit.git
-    events:
-    - introduced: 7fe7e5d95d9197e7f52aab314468d424acc6ac88
-  versions:
-  - 0.25.0
-  - 0.25.1
-  - 0.25.2
-  - 0.25.3
-  - 0.25.4
-  - 0.25.5
-  ecosystem_specific:
-    severity: null
 schema_version: 1.4.0
+summary: Global-buffer-overflow in base_C_MessageEncryptInit
