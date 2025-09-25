@@ -1,5 +1,6 @@
 affected:
 - database_specific:
+    fixed_range: 06a10a494939a112c36cf4f6a32c13e4edba8b74:3a6914158b3ec1527cfef393e6c3b68d2d48d8fc
     introduced_range: 3227ad11ec457c3dad062db548432d2a1c837d50:0c95dfb3557644acc6a10060e48cfae1a61fc2f0
   ecosystem_specific:
     severity: MEDIUM
@@ -10,6 +11,7 @@ affected:
   ranges:
   - events:
     - introduced: 813f15b87f5e76a62d64360f8cbdf449c21316e4
+    - fixed: 3a6914158b3ec1527cfef393e6c3b68d2d48d8fc
     repo: https://github.com/seladb/PcapPlusPlus
     type: GIT
   versions:
@@ -26,7 +28,7 @@ details: |
   pcpp::Packet::toString
   ```
 id: OSV-2025-290
-modified: '2025-04-19T00:05:45.140604Z'
+modified: '2025-09-25T14:31:44.695948Z'
 published: '2025-04-19T00:05:45.140280Z'
 references:
 - type: REPORT
