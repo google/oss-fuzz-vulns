@@ -59,6 +59,7 @@ affected:
   - v2.21.0
   - v2.21.1
   - v2.21.2
+  - v2.21.3
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=50528
 
@@ -70,7 +71,7 @@ details: |
   blosc2_compress
   ```
 id: OSV-2022-776
-modified: '2025-09-10T14:14:59.007183Z'
+modified: '2025-09-25T14:23:24.580622Z'
 published: '2022-08-24T00:00:48.440951Z'
 references:
 - type: REPORT
