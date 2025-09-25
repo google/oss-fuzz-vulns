@@ -56,6 +56,8 @@ affected:
   - Release_2025_03_3
   - Release_2025_03_4
   - Release_2025_03_5
+  - Release_2025_03_6
+  - Release_2025_09_1b1
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=391962480
 
@@ -67,7 +69,7 @@ details: |
   RDKit::QueryAtom::~QueryAtom
   ```
 id: OSV-2025-62
-modified: '2025-07-26T14:53:36.885283Z'
+modified: '2025-09-25T14:21:36.519536Z'
 published: '2025-01-27T00:01:51.692636Z'
 references:
 - type: REPORT
