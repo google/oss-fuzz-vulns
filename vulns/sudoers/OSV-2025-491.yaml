@@ -1,0 +1,120 @@
+affected:
+- ecosystem_specific:
+    severity: MEDIUM
+  package:
+    ecosystem: OSS-Fuzz
+    name: sudoers
+    purl: pkg:generic/sudoers
+  ranges:
+  - events:
+    - introduced: 978aa90021c439235a504b2405d0d6ca2cb15c1c
+    repo: https://github.com/sudo-project/sudo
+    type: GIT
+  versions:
+  - SUDO_1_9_1
+  - SUDO_1_9_10
+  - SUDO_1_9_11
+  - SUDO_1_9_11p1
+  - SUDO_1_9_11p2
+  - SUDO_1_9_11p3
+  - SUDO_1_9_12
+  - SUDO_1_9_12p1
+  - SUDO_1_9_12p2
+  - SUDO_1_9_13
+  - SUDO_1_9_13p1
+  - SUDO_1_9_13p2
+  - SUDO_1_9_13p3
+  - SUDO_1_9_14
+  - SUDO_1_9_14p1
+  - SUDO_1_9_14p2
+  - SUDO_1_9_14p3
+  - SUDO_1_9_15
+  - SUDO_1_9_15p1
+  - SUDO_1_9_15p2
+  - SUDO_1_9_15p3
+  - SUDO_1_9_15p4
+  - SUDO_1_9_15p5
+  - SUDO_1_9_16
+  - SUDO_1_9_16p1
+  - SUDO_1_9_16p2
+  - SUDO_1_9_2
+  - SUDO_1_9_3
+  - SUDO_1_9_3p1
+  - SUDO_1_9_4
+  - SUDO_1_9_4p1
+  - SUDO_1_9_4p2
+  - SUDO_1_9_5
+  - SUDO_1_9_5p1
+  - SUDO_1_9_5p2
+  - SUDO_1_9_6
+  - SUDO_1_9_6p1
+  - SUDO_1_9_7
+  - SUDO_1_9_7p1
+  - SUDO_1_9_7p2
+  - SUDO_1_9_8
+  - SUDO_1_9_8p1
+  - SUDO_1_9_8p2
+  - SUDO_1_9_9
+  - v1.9.1
+  - v1.9.10
+  - v1.9.11
+  - v1.9.11p1
+  - v1.9.11p2
+  - v1.9.11p3
+  - v1.9.12
+  - v1.9.12p1
+  - v1.9.12p2
+  - v1.9.13
+  - v1.9.13p1
+  - v1.9.13p2
+  - v1.9.13p3
+  - v1.9.14
+  - v1.9.14p1
+  - v1.9.14p2
+  - v1.9.14p3
+  - v1.9.15
+  - v1.9.15p1
+  - v1.9.15p2
+  - v1.9.15p3
+  - v1.9.15p4
+  - v1.9.15p5
+  - v1.9.16
+  - v1.9.16p1
+  - v1.9.16p2
+  - v1.9.17
+  - v1.9.2
+  - v1.9.3
+  - v1.9.3p1
+  - v1.9.4
+  - v1.9.4p1
+  - v1.9.4p2
+  - v1.9.5
+  - v1.9.5p1
+  - v1.9.5p2
+  - v1.9.6
+  - v1.9.6p1
+  - v1.9.7
+  - v1.9.7p1
+  - v1.9.7p2
+  - v1.9.8
+  - v1.9.8p1
+  - v1.9.8p2
+  - v1.9.9
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=427814448
+
+  ```
+  Crash type: Heap-buffer-overflow READ 5
+  Crash state:
+  libssl.soNUMBER
+  libssl.soNUMBER
+  SSL_CTX_set_cipher_list
+  ```
+id: OSV-2025-491
+modified: '2025-06-27T00:16:09.822510Z'
+published: '2025-06-27T00:16:09.822144Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=427814448
+schema_version: 1.7.3
+summary: Heap-buffer-overflow in libssl.soNUMBER
