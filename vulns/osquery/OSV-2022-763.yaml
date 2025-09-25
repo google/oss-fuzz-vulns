@@ -39,6 +39,7 @@ affected:
   - 5.18.1-test
   - 5.37.0
   - 5.38.0
+  - 5.19.0
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=50466
 
@@ -50,7 +51,7 @@ details: |
   osquery::readRows
   ```
 id: OSV-2022-763
-modified: '2025-07-18T14:13:05.153270Z'
+modified: '2025-09-25T14:23:21.709969Z'
 published: '2022-08-21T00:00:23.656015Z'
 references:
 - type: REPORT
