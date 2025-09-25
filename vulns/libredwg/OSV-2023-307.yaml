@@ -620,6 +620,13 @@ affected:
   - 0.13.3.7805
   - 0.13.3.7808
   - 0.13.3.7810
+  - 0.13.3.7812
+  - 0.13.3.7813
+  - 0.13.3.7816
+  - 0.13.3.7819
+  - 0.13.3.7825
+  - 0.13.3.7828
+  - 0.13.3.7835
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=57911
 
@@ -631,7 +638,7 @@ details: |
   dwg_decode_OLE2FRAME_private
   ```
 id: OSV-2023-307
-modified: '2025-07-29T14:16:28.075828Z'
+modified: '2025-09-25T14:25:51.215854Z'
 published: '2023-04-13T14:02:09.774988Z'
 references:
 - type: REPORT
