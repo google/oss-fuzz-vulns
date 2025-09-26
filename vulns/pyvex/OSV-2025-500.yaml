@@ -1,0 +1,31 @@
+affected:
+- ecosystem_specific:
+    severity: MEDIUM
+  package:
+    ecosystem: PyPI
+    name: pyvex
+    purl: pkg:pypi/pyvex
+  ranges:
+  - events:
+    - introduced: 0f32e9dbb790d9eef3f13d32e877b57784946d55
+    repo: https://github.com/angr/pyvex.git
+    type: GIT
+  versions: []
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=428022218
+
+  ```
+  Crash type: UNKNOWN READ
+  Crash state:
+  getUShort
+  disInstr_THUMB_WRK
+  disInstr_ARM
+  ```
+id: OSV-2025-500
+modified: '2025-06-29T00:08:49.554520Z'
+published: '2025-06-29T00:08:49.553890Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=428022218
+schema_version: 1.7.3
+summary: UNKNOWN READ in getUShort
