@@ -1,5 +1,23 @@
-id: OSV-2024-1346
-summary: UNKNOWN READ in glslang::HlslTokenStream::advanceToken
+affected:
+- database_specific:
+    introduced_range: 8c4d729001709e907fba57041749d9ed8985891c:082a73bfa9088bd3da35734023a9167ba92aae6c
+  ecosystem_specific:
+    severity: MEDIUM
+  package:
+    ecosystem: OSS-Fuzz
+    name: shaderc
+    purl: pkg:generic/shaderc
+  ranges:
+  - events:
+    - introduced: ffd3be52bbcbd428e9de40da996ad09645fc0dc8
+    repo: https://github.com/google/shaderc
+    type: GIT
+  versions:
+  - v2024.4
+  - v2025.1
+  - v2025.2
+  - v2025.3
+  - v2025.4
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=382547706
 
@@ -10,28 +28,11 @@ details: |
   glslang::HlslGrammar::acceptLiteral
   glslang::HlslGrammar::acceptPostfixExpression
   ```
-modified: '2025-06-26T14:48:25.845055Z'
+id: OSV-2024-1346
+modified: '2025-09-26T14:16:47.153357Z'
 published: '2024-12-10T00:00:20.380006Z'
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=382547706
-affected:
-- package:
-    name: shaderc
-    ecosystem: OSS-Fuzz
-    purl: pkg:generic/shaderc
-  ranges:
-  - type: GIT
-    repo: https://github.com/google/shaderc
-    events:
-    - introduced: ffd3be52bbcbd428e9de40da996ad09645fc0dc8
-  versions:
-  - v2024.4
-  - v2025.1
-  - v2025.2
-  - v2025.3
-  ecosystem_specific:
-    severity: MEDIUM
-  database_specific:
-    introduced_range: 8c4d729001709e907fba57041749d9ed8985891c:082a73bfa9088bd3da35734023a9167ba92aae6c
 schema_version: 1.6.0
+summary: UNKNOWN READ in glslang::HlslTokenStream::advanceToken
