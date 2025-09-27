@@ -1,35 +1,26 @@
-id: OSV-2024-370
-summary: Heap-buffer-overflow in H5O__chunk_protect
-details: |
-  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=67820
-
-  ```
-  Crash type: Heap-buffer-overflow READ 8
-  Crash state:
-  H5O__chunk_protect
-  H5O__chunk_delete
-  H5O__cont_delete
-  ```
-modified: '2025-03-15T14:57:17.970529Z'
-published: '2024-04-30T00:08:00.120801Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=67820
 affected:
-- package:
-    name: hdf5
+- database_specific:
+    fixed_range: 3914bb7f7ec7105d8bfbeb3aebd92e867cff5b70:c38b14805231f518e53dce6198eab02f84c1f4ab
+  ecosystem_specific:
+    severity: MEDIUM
+  package:
     ecosystem: OSS-Fuzz
+    name: hdf5
     purl: pkg:generic/hdf5
   ranges:
-  - type: GIT
-    repo: https://github.com/HDFGroup/hdf5
-    events:
+  - events:
     - introduced: 966454aac1231da7209ef81c11055d3312181f99
     - introduced: 04f0647727677d716a3c1c772d35a660a8ea0dc5
     - introduced: 5a0ec52099cf02224a4066b158bcf1a34829db20
     - introduced: f527239564fc27a6e666ce734b88e4ab18765efc
+    - fixed: c38b14805231f518e53dce6198eab02f84c1f4ab
+    repo: https://github.com/HDFGroup/hdf5
+    type: GIT
   versions:
   - 1.14.1
+  - final_autotools_develop
+  - hdf5-1.14.5
+  - hdf5-1.14.6
   - hdf5-1_10_10
   - hdf5-1_10_11
   - hdf5-1_12_3
@@ -42,18 +33,30 @@ affected:
   - hdf5_1.14.4.1
   - hdf5_1.14.4.2
   - hdf5_1.14.4.3
+  - hdf5_1.14.5
+  - hdf5_1.14.6
+  - hdff5-1_14-_0
+  - hdff5-1_14_0
   - snapshot
   - snapshot-1.10
   - snapshot-1.12
   - snapshot-1.14
-  - hdf5_1.14.5
   - snapshot-1.16
-  - hdf5-1.14.5
-  - hdf5-1.14.6
-  - hdf5_1.14.6
-  - hdff5-1_14-_0
-  - hdff5-1_14_0
-  - final_autotools_develop
-  ecosystem_specific:
-    severity: MEDIUM
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=67820
+
+  ```
+  Crash type: Heap-buffer-overflow READ 8
+  Crash state:
+  H5O__chunk_protect
+  H5O__chunk_delete
+  H5O__cont_delete
+  ```
+id: OSV-2024-370
+modified: '2025-09-27T15:27:53.336806Z'
+published: '2024-04-30T00:08:00.120801Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=67820
 schema_version: 1.6.0
+summary: Heap-buffer-overflow in H5O__chunk_protect
