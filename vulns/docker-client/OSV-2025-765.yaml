@@ -1,0 +1,32 @@
+affected:
+- ecosystem_specific:
+    severity: LOW
+  package:
+    ecosystem: OSS-Fuzz
+    name: docker-client
+    purl: pkg:generic/docker-client
+  ranges:
+  - events:
+    - introduced: 9a7c3b4994be9a55988f821f7177029201ff6aef
+    - fixed: 9a7c3b4994be9a55988f821f7177029201ff6aef
+    repo: https://github.com/spotify/docker-client
+    type: GIT
+  versions: []
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=446027675
+
+  ```
+  Crash type: Security exception
+  Crash state:
+  com.spotify.docker.client.shaded.com.fasterxml.jackson.databind.util.TokenBuffer
+  java.base/java.lang.StringUTF16.newBytesFor
+  java.base/java.lang.StringUTF16.toBytes
+  ```
+id: OSV-2025-765
+modified: '2025-09-20T00:18:07.995257Z'
+published: '2025-09-20T00:18:07.994839Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=446027675
+schema_version: 1.7.3
+summary: Security exception in com.spotify.docker.client.shaded.com.fasterxml.jackson.databind.util.TokenBuffer
