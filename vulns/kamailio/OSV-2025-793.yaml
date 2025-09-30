@@ -1,0 +1,32 @@
+affected:
+- ecosystem_specific:
+    severity: HIGH
+  package:
+    ecosystem: OSS-Fuzz
+    name: kamailio
+    purl: pkg:generic/kamailio
+  ranges:
+  - events:
+    - introduced: 316ea8925edd0c401c121e9dc0f21dde3a2c6598
+    - fixed: 4fef850efb73aa063ae4f920e0f86f2bf085956c
+    repo: https://github.com/kamailio/kamailio
+    type: GIT
+  versions: []
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=447719691
+
+  ```
+  Crash type: Heap-use-after-free READ 8
+  Crash state:
+  parse_from_header
+  fuzz_parse_msg.c
+  parse_headers
+  ```
+id: OSV-2025-793
+modified: '2025-09-29T00:08:32.876798Z'
+published: '2025-09-29T00:08:32.876425Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=447719691
+schema_version: 1.7.3
+summary: Heap-use-after-free in parse_from_header
