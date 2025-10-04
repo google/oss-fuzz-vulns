@@ -1,5 +1,22 @@
-id: OSV-2024-662
-summary: Security exception in com.github.javaparser.CommentsInserter.insertComments
+affected:
+- ecosystem_specific:
+    severity: LOW
+  package:
+    ecosystem: OSS-Fuzz
+    name: javaparser
+    purl: pkg:generic/javaparser
+  ranges:
+  - events:
+    - introduced: aa60a2bd1981f0a5aa857e07ae3ad0e375b4706f
+    repo: https://github.com/javaparser/javaparser
+    type: GIT
+  versions:
+  - javaparser-parent-3.26.2
+  - javaparser-parent-3.26.3
+  - v_snapshot_2751159
+  - javaparser-parent-3.26.4
+  - javaparser-parent-3.27.0
+  - javaparser-parent-3.27.1
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=70313
 
@@ -10,27 +27,11 @@ details: |
   java.base/java.util.Objects.equals
   com.github.javaparser.Position.equals
   ```
-modified: '2025-06-14T14:35:27.704098Z'
+id: OSV-2024-662
+modified: '2025-10-04T14:18:36.869338Z'
 published: '2024-07-18T00:06:40.832938Z'
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=70313
-affected:
-- package:
-    name: javaparser
-    ecosystem: OSS-Fuzz
-    purl: pkg:generic/javaparser
-  ranges:
-  - type: GIT
-    repo: https://github.com/javaparser/javaparser
-    events:
-    - introduced: aa60a2bd1981f0a5aa857e07ae3ad0e375b4706f
-  versions:
-  - javaparser-parent-3.26.2
-  - javaparser-parent-3.26.3
-  - v_snapshot_2751159
-  - javaparser-parent-3.26.4
-  - javaparser-parent-3.27.0
-  ecosystem_specific:
-    severity: LOW
 schema_version: 1.6.0
+summary: Security exception in com.github.javaparser.CommentsInserter.insertComments
