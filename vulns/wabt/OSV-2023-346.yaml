@@ -1,6 +1,25 @@
-id: OSV-2023-346
-summary: UNKNOWN WRITE in void std::__1::allocator_traits<std::__1::allocator<wabt::interp::HandlerDesc>
-  >
+affected:
+- ecosystem_specific:
+    severity: HIGH
+  package:
+    ecosystem: OSS-Fuzz
+    name: wabt
+    purl: pkg:generic/wabt
+  ranges:
+  - events:
+    - introduced: 65ce49a6d307b101aa058da8269e1ccae43feeb9
+    repo: https://github.com/WebAssembly/wabt
+    type: GIT
+  versions:
+  - 1.0.30
+  - 1.0.31
+  - 1.0.32
+  - 1.0.33
+  - 1.0.34
+  - 1.0.35
+  - 1.0.36
+  - 1.0.37
+  - 1.0.38
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=58344
 
@@ -11,30 +30,12 @@ details: |
   void std::__1::vector<wabt::interp::HandlerDesc, std::__1::allocator<wabt::inter
   std::__1::vector<wabt::interp::HandlerDesc, std::__1::allocator<wabt::interp::Ha
   ```
-modified: '2025-03-05T14:17:14.067341Z'
+id: OSV-2023-346
+modified: '2025-10-04T14:15:02.046841Z'
 published: '2023-04-27T14:02:25.286668Z'
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=58344
-affected:
-- package:
-    name: wabt
-    ecosystem: OSS-Fuzz
-    purl: pkg:generic/wabt
-  ranges:
-  - type: GIT
-    repo: https://github.com/WebAssembly/wabt
-    events:
-    - introduced: 65ce49a6d307b101aa058da8269e1ccae43feeb9
-  versions:
-  - 1.0.30
-  - 1.0.31
-  - 1.0.32
-  - 1.0.33
-  - 1.0.34
-  - 1.0.35
-  - 1.0.36
-  - 1.0.37
-  ecosystem_specific:
-    severity: HIGH
 schema_version: 1.4.0
+summary: UNKNOWN WRITE in void std::__1::allocator_traits<std::__1::allocator<wabt::interp::HandlerDesc>
+  >
