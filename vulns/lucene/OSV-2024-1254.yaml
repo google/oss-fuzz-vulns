@@ -19,6 +19,7 @@ affected:
   - releases/lucene/10.2.1
   - releases/lucene/10.2.2
   - releases/lucene/10.3.0
+  - releases/lucene/10.3.1
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=376504918
 
@@ -30,7 +31,7 @@ details: |
   org.apache.lucene.util.BytesRefBuilder.grow
   ```
 id: OSV-2024-1254
-modified: '2025-09-25T15:03:00.669291Z'
+modified: '2025-10-06T14:36:36.282568Z'
 published: '2024-11-01T00:07:39.301298Z'
 references:
 - type: REPORT
