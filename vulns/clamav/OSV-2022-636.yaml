@@ -50,6 +50,7 @@ affected:
   - clamav-1.0.9
   - clamav-1.4.3
   - clamav-1.5.0-rc
+  - clamav-1.5.0
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=49510
 
@@ -61,7 +62,7 @@ details: |
   crtmgr_add
   ```
 id: OSV-2022-636
-modified: '2025-08-21T14:14:48.541918Z'
+modified: '2025-10-07T14:23:41.912479Z'
 published: '2022-07-27T00:00:35.300337Z'
 references:
 - type: REPORT
