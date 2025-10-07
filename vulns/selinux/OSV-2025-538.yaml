@@ -1,0 +1,89 @@
+affected:
+- database_specific:
+    introduced_range: 50bafc3d9c08cf26c3b0f61e29157a0ea8efbf4a:45c5036a691eaae256e36440f0e8858697cf236e
+  ecosystem_specific:
+    severity: HIGH
+  package:
+    ecosystem: OSS-Fuzz
+    name: selinux
+    purl: pkg:generic/selinux
+  ranges:
+  - events:
+    - introduced: 63388efcf491309782046a28a93bffce88f2f560
+    repo: https://github.com/SELinuxProject/selinux
+    type: GIT
+  versions:
+  - '3.9'
+  - 3.9-rc1
+  - 3.9-rc2
+  - 3.9-rc3
+  - checkpolicy-3.9
+  - checkpolicy-3.9-rc1
+  - checkpolicy-3.9-rc2
+  - checkpolicy-3.9-rc3
+  - libselinux-3.9
+  - libselinux-3.9-rc1
+  - libselinux-3.9-rc2
+  - libselinux-3.9-rc3
+  - libsemanage-3.9
+  - libsemanage-3.9-rc1
+  - libsemanage-3.9-rc2
+  - libsemanage-3.9-rc3
+  - libsepol-3.9
+  - libsepol-3.9-rc1
+  - libsepol-3.9-rc2
+  - libsepol-3.9-rc3
+  - mcstrans-3.9
+  - mcstrans-3.9-rc1
+  - mcstrans-3.9-rc2
+  - mcstrans-3.9-rc3
+  - policycoreutils-3.9
+  - policycoreutils-3.9-rc1
+  - policycoreutils-3.9-rc2
+  - policycoreutils-3.9-rc3
+  - restorecond-3.9
+  - restorecond-3.9-rc1
+  - restorecond-3.9-rc2
+  - restorecond-3.9-rc3
+  - secilc-3.9
+  - secilc-3.9-rc1
+  - secilc-3.9-rc2
+  - secilc-3.9-rc3
+  - selinux-dbus-3.9
+  - selinux-dbus-3.9-rc1
+  - selinux-dbus-3.9-rc2
+  - selinux-dbus-3.9-rc3
+  - selinux-gui-3.9
+  - selinux-gui-3.9-rc1
+  - selinux-gui-3.9-rc2
+  - selinux-gui-3.9-rc3
+  - selinux-python-3.9
+  - selinux-python-3.9-rc1
+  - selinux-python-3.9-rc2
+  - selinux-python-3.9-rc3
+  - selinux-sandbox-3.9
+  - selinux-sandbox-3.9-rc1
+  - selinux-sandbox-3.9-rc2
+  - selinux-sandbox-3.9-rc3
+  - semodule-utils-3.9
+  - semodule-utils-3.9-rc1
+  - semodule-utils-3.9-rc2
+  - semodule-utils-3.9-rc3
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=430091583
+
+  ```
+  Crash type: Heap-double-free
+  Crash state:
+  policydb_destroy
+  checkpolicy-fuzzer.c
+  define_genfs_context
+  ```
+id: OSV-2025-538
+modified: '2025-07-09T00:05:37.053012Z'
+published: '2025-07-09T00:05:37.052433Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=430091583
+schema_version: 1.7.3
+summary: Heap-double-free in policydb_destroy
