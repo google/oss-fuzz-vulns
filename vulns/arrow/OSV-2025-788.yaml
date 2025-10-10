@@ -11,6 +11,7 @@ affected:
   - events:
     - introduced: 64f2055ffb68e5077420f4253e76d78952438cab
     - fixed: 33d1f32136f950520dcca278b77acff430dc8dca
+    - fixed: 7b4dd0511162ca985365fbde9e633ca33de57215
     repo: https://github.com/apache/arrow.git
     type: GIT
   versions: []
@@ -25,7 +26,7 @@ details: |
   std::__1::pair<int, arrow::util::RleBitPackedParser::ControlFlow> arrow::util::R
   ```
 id: OSV-2025-788
-modified: '2025-09-28T00:00:36.077Z'
+modified: '2025-10-10T14:35:28.235525Z'
 published: '2025-09-28T00:00:36.076414Z'
 references:
 - type: REPORT
