@@ -1,35 +1,26 @@
-id: OSV-2024-381
-summary: Heap-buffer-overflow in H5F__accum_free
-details: |
-  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=67852
-
-  ```
-  Crash type: Heap-buffer-overflow READ {*}
-  Crash state:
-  H5F__accum_free
-  H5MF_xfree
-  H5MF_free_aggrs
-  ```
-modified: '2025-03-15T15:43:45.816716Z'
-published: '2024-04-30T00:12:14.936195Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=67852
 affected:
-- package:
-    name: hdf5
+- database_specific:
+    fixed_range: 701b46daede6fd4865ca4b521015ab1712ae54b8:6c86f97e03c6dc7d7bd2bae9acc422bdc3438ff4
+  ecosystem_specific:
+    severity: MEDIUM
+  package:
     ecosystem: OSS-Fuzz
+    name: hdf5
     purl: pkg:generic/hdf5
   ranges:
-  - type: GIT
-    repo: https://github.com/HDFGroup/hdf5
-    events:
+  - events:
     - introduced: 966454aac1231da7209ef81c11055d3312181f99
     - introduced: 04f0647727677d716a3c1c772d35a660a8ea0dc5
     - introduced: 5a0ec52099cf02224a4066b158bcf1a34829db20
     - introduced: f527239564fc27a6e666ce734b88e4ab18765efc
+    - fixed: 6c86f97e03c6dc7d7bd2bae9acc422bdc3438ff4
+    repo: https://github.com/HDFGroup/hdf5
+    type: GIT
   versions:
   - 1.14.1
+  - final_autotools_develop
+  - hdf5-1.14.5
+  - hdf5-1.14.6
   - hdf5-1_10_10
   - hdf5-1_10_11
   - hdf5-1_12_3
@@ -42,18 +33,30 @@ affected:
   - hdf5_1.14.4.1
   - hdf5_1.14.4.2
   - hdf5_1.14.4.3
+  - hdf5_1.14.5
+  - hdf5_1.14.6
+  - hdff5-1_14-_0
+  - hdff5-1_14_0
   - snapshot
   - snapshot-1.10
   - snapshot-1.12
   - snapshot-1.14
-  - hdf5_1.14.5
   - snapshot-1.16
-  - hdf5-1.14.6
-  - hdf5-1.14.5
-  - hdf5_1.14.6
-  - hdff5-1_14-_0
-  - hdff5-1_14_0
-  - final_autotools_develop
-  ecosystem_specific:
-    severity: MEDIUM
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=67852
+
+  ```
+  Crash type: Heap-buffer-overflow READ {*}
+  Crash state:
+  H5F__accum_free
+  H5MF_xfree
+  H5MF_free_aggrs
+  ```
+id: OSV-2024-381
+modified: '2025-10-10T16:22:08.455396Z'
+published: '2024-04-30T00:12:14.936195Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=67852
 schema_version: 1.6.0
+summary: Heap-buffer-overflow in H5F__accum_free
