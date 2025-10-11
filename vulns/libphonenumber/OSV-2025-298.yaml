@@ -1,5 +1,6 @@
 affected:
 - database_specific:
+    fixed_range: af3da6cc6839c9efd02b36c2b6d6cd70c0d88223:669751dd889a2daf135580caf5cb54f41fa0bc2d
     introduced_range: cbe787d7031a6136680c3060aa28e606670146a9:fb1a52618624eea94b3604e7bc1f1f41c0cd548a
   ecosystem_specific:
     severity: MEDIUM
@@ -10,11 +11,11 @@ affected:
   ranges:
   - events:
     - introduced: 78d634f33ae4966e2283ab2d59a300a768b6e174
+    - fixed: 669751dd889a2daf135580caf5cb54f41fa0bc2d
+    - fixed: 6167d42b7ea67eedca61468a7fb9da1523703054
     repo: https://github.com/google/libphonenumber
     type: GIT
   versions:
-  - v9.0.10
-  - v9.0.15
   - v9.0.16
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=413161357
@@ -27,7 +28,7 @@ details: |
   i18n::phonenumbers::AsYouTypeFormatter::AttemptToExtractIdd
   ```
 id: OSV-2025-298
-modified: '2025-10-09T14:25:09.422727Z'
+modified: '2025-10-11T14:20:31.062038Z'
 published: '2025-04-26T00:02:46.771719Z'
 references:
 - type: REPORT
