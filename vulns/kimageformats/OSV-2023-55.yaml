@@ -88,6 +88,7 @@ affected:
   - v6.18.0
   - v6.18.0-rc1
   - v6.19.0-rc1
+  - v6.19.0
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=55722
 
@@ -99,7 +100,7 @@ details: |
   LibRaw::identify
   ```
 id: OSV-2023-55
-modified: '2025-10-05T14:14:54.070808Z'
+modified: '2025-10-12T14:24:27.846198Z'
 published: '2023-02-07T13:00:07.438565Z'
 references:
 - type: REPORT
