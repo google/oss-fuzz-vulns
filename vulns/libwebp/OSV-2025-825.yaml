@@ -1,0 +1,35 @@
+affected:
+- database_specific:
+    fixed_range: e40787da7188083075ca2f0dc7e947a569b228e7:23359a1039d054b6e46ca97fa8789a755457fbd5
+    introduced_range: c00d83f6642e7838a12bb03bca94237f03cc2e00:74f6afd3e6ea8ff5b231ad2248b52bdcd1666c70
+  ecosystem_specific:
+    severity: HIGH
+  package:
+    ecosystem: OSS-Fuzz
+    name: libwebp
+    purl: pkg:generic/libwebp
+  ranges:
+  - events:
+    - introduced: 0d14d84bdb79f06ec6b23f4425138a1d8a5637de
+    - fixed: 23359a1039d054b6e46ca97fa8789a755457fbd5
+    repo: https://chromium.googlesource.com/webm/libwebp
+    type: GIT
+  versions: []
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=449781448
+
+  ```
+  Crash type: UNKNOWN WRITE
+  Crash state:
+  RescalerImportRowExpand_SSE2
+  WebPRescalerImport
+  ProcessRows
+  ```
+id: OSV-2025-825
+modified: '2025-10-09T00:14:42.651395Z'
+published: '2025-10-09T00:14:42.650822Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=449781448
+schema_version: 1.7.3
+summary: UNKNOWN WRITE in RescalerImportRowExpand_SSE2
