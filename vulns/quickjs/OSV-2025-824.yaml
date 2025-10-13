@@ -1,0 +1,35 @@
+affected:
+- database_specific:
+    fixed_range: 7a488f3e0c1c03699c069bc04f5ce5f1c7f3414a:eb9fa2b8dac0c7a431ef5255fb55943da78d2f3a
+    introduced_range: 8807fedec55bc4dbdf7b4780d36bfc4b4fd6e5e2:bc753c6a151885d058ccdbc34c07384e4ed31be5
+  ecosystem_specific:
+    severity: MEDIUM
+  package:
+    ecosystem: OSS-Fuzz
+    name: quickjs
+    purl: pkg:generic/quickjs
+  ranges:
+  - events:
+    - introduced: 456e016f7c0543c505b2f3df422a56f7558fe109
+    - fixed: eb9fa2b8dac0c7a431ef5255fb55943da78d2f3a
+    repo: https://github.com/bellard/quickjs
+    type: GIT
+  versions: []
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=449772271
+
+  ```
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  JS_DefineProperty
+  build_backtrace
+  JS_CallInternal
+  ```
+id: OSV-2025-824
+modified: '2025-10-08T00:04:16.630688Z'
+published: '2025-10-08T00:04:16.630040Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=449772271
+schema_version: 1.7.3
+summary: Use-of-uninitialized-value in JS_DefineProperty
