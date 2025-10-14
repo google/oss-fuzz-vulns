@@ -1,0 +1,101 @@
+affected:
+- database_specific:
+    introduced_range: b591fba42ea4a0d34180c2b062625971d28c4b4a:8c166135181fdba3a5eb96c5d471d8889bcef7fa
+  ecosystem_specific:
+    severity: LOW
+  package:
+    ecosystem: OSS-Fuzz
+    name: fastjson2
+    purl: pkg:generic/fastjson2
+  ranges:
+  - events:
+    - introduced: ba639bab97dc16ecf66b1baed971227190cbad24
+    repo: https://github.com/alibaba/fastjson2
+    type: GIT
+  versions:
+  - 2.0.32
+  - 2.0.33
+  - 2.0.34.1.android4
+  - 2.0.34.android4
+  - 2.0.35
+  - 2.0.35.android4
+  - 2.0.36
+  - 2.0.36.android4
+  - 2.0.37
+  - 2.0.37.android4
+  - 2.0.38.android4
+  - 2.0.39
+  - 2.0.39.android4
+  - 2.0.40
+  - 2.0.40.android4
+  - 2.0.41
+  - 2.0.41.android4
+  - 2.0.42
+  - 2.0.42.android
+  - 2.0.43
+  - 2.0.43.android4
+  - 2.0.44
+  - 2.0.44.android
+  - 2.0.45
+  - 2.0.45.android4
+  - 2.0.46
+  - 2.0.46.android4
+  - 2.0.46.android5
+  - 2.0.46.android8
+  - 2.0.47
+  - 2.0.47.android5
+  - 2.0.47.android8
+  - 2.0.48
+  - 2.0.48.android5
+  - 2.0.48.anroid8
+  - 2.0.49
+  - 2.0.49.android5
+  - 2.0.49.android8
+  - 2.0.50
+  - 2.0.50.android4
+  - 2.0.50.android8
+  - 2.0.51
+  - 2.0.51.android5
+  - 2.0.51.android8
+  - 2.0.52
+  - 2.0.52.android5
+  - 2.0.52.android8
+  - 2.0.53
+  - 2.0.53.android5
+  - 2.0.53.android8
+  - 2.0.54
+  - 2.0.54.android5
+  - 2.0.54.android8
+  - 2.0.55
+  - 2.0.55.android5
+  - 2.0.55.android8
+  - 2.0.56
+  - 2.0.56.android5
+  - 2.0.56.android8
+  - 2.0.57
+  - 2.0.57.android5
+  - 2.0.57.android8
+  - 2.0.58
+  - 2.0.58.android5
+  - 2.0.58.android8
+  - 2.0.59
+  - 2.0.59.android5
+  - 2.0.59.android8
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=431584944
+
+  ```
+  Crash type: Security exception
+  Crash state:
+  com.alibaba.fastjson2.JSONReader.readArray
+  java.base/java.nio.charset.CharsetEncoder.<init>
+  java.base/java.nio.charset.CharsetEncoder.<init>
+  ```
+id: OSV-2025-547
+modified: '2025-07-15T00:09:03.936867Z'
+published: '2025-07-15T00:09:03.936493Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=431584944
+schema_version: 1.7.3
+summary: Security exception in com.alibaba.fastjson2.JSONReader.readArray
