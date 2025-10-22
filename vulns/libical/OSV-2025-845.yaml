@@ -1,0 +1,33 @@
+affected:
+- database_specific:
+    introduced_range: e3360bc71d7cd6358732252bf9361b30984dd376:0790346e493c30a21a11c070ec87df0dd6654783
+  ecosystem_specific:
+    severity: null
+  package:
+    ecosystem: OSS-Fuzz
+    name: libical
+    purl: pkg:generic/libical
+  ranges:
+  - events:
+    - introduced: a5977add5b862817f9f136fef6b1c6001c6710de
+    repo: https://github.com/libical/libical.git
+    type: GIT
+  versions: []
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=452914686
+
+  ```
+  Crash type: Global-buffer-overflow READ 4
+  Crash state:
+  icaltime_day_of_year
+  expand_year_days
+  __iterator_set_start
+  ```
+id: OSV-2025-845
+modified: '2025-10-19T00:19:40.541746Z'
+published: '2025-10-19T00:19:40.541109Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=452914686
+schema_version: 1.7.3
+summary: Global-buffer-overflow in icaltime_day_of_year
