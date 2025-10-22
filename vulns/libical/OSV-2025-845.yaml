@@ -1,5 +1,6 @@
 affected:
 - database_specific:
+    fixed_range: bc05c9e130364e4026d0bcc4a431b125c4be543b:ac90fe970a051ed580f1d97854e73d250e5d92ee
     introduced_range: e3360bc71d7cd6358732252bf9361b30984dd376:0790346e493c30a21a11c070ec87df0dd6654783
   ecosystem_specific:
     severity: null
@@ -10,6 +11,7 @@ affected:
   ranges:
   - events:
     - introduced: a5977add5b862817f9f136fef6b1c6001c6710de
+    - fixed: ac90fe970a051ed580f1d97854e73d250e5d92ee
     repo: https://github.com/libical/libical.git
     type: GIT
   versions: []
