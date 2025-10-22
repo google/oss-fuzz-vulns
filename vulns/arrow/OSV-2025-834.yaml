@@ -1,5 +1,6 @@
 affected:
 - database_specific:
+    fixed_range: f268c43ccd86ac57336e3a49a75261d63147ea37:52704cbb4e6c0275b36e5ffc6a395361be05c262
     introduced_range: e68236ae36385127b851ca129ed0cbc1078cae48:235032ad245030c6364a9c8ec02066c0aa0bb18d
   ecosystem_specific:
     severity: HIGH
@@ -10,10 +11,12 @@ affected:
   ranges:
   - events:
     - introduced: 64f2055ffb68e5077420f4253e76d78952438cab
+    - fixed: 52704cbb4e6c0275b36e5ffc6a395361be05c262
     repo: https://github.com/apache/arrow.git
     type: GIT
   versions:
   - apache-arrow-22.0.0-rc0
+  - apache-arrow-22.0.0-rc1
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=451150486
 
@@ -25,7 +28,7 @@ details: |
   auto parquet::DictByteArrayDecoderImpl::DecodeArrowDense
   ```
 id: OSV-2025-834
-modified: '2025-10-14T00:10:52.862084Z'
+modified: '2025-10-22T19:17:07.511188Z'
 published: '2025-10-14T00:10:52.861723Z'
 references:
 - type: REPORT
