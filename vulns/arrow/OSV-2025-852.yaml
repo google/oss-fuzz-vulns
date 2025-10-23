@@ -1,0 +1,37 @@
+affected:
+- database_specific:
+    introduced_range: e68236ae36385127b851ca129ed0cbc1078cae48:235032ad245030c6364a9c8ec02066c0aa0bb18d
+  ecosystem_specific:
+    severity: MEDIUM
+  package:
+    ecosystem: OSS-Fuzz
+    name: arrow
+    purl: pkg:generic/arrow
+  ranges:
+  - events:
+    - introduced: 64f2055ffb68e5077420f4253e76d78952438cab
+    - fixed: f83b301c17b3fbef6d320fcee2355336a163bd1a
+    repo: https://github.com/apache/arrow.git
+    type: GIT
+  versions:
+  - apache-arrow-22.0.0-rc0
+  - apache-arrow-22.0.0-rc1
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=454097865
+
+  ```
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  std::__1::pair<int, arrow::util::RleBitPackedParser::ControlFlow> arrow::util::R
+  arrow::util::RleBitPackedDecoder<int>::GetBatch
+  auto parquet::DictByteArrayDecoderImpl::DecodeArrowDense
+  ```
+id: OSV-2025-852
+modified: '2025-10-23T00:13:16.149132Z'
+published: '2025-10-23T00:13:16.148747Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=454097865
+schema_version: 1.7.3
+summary: Heap-buffer-overflow in std::__1::pair<int, arrow::util::RleBitPackedParser::ControlFlow>
+  arrow::util::R
