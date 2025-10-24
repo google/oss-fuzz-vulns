@@ -18,6 +18,7 @@ affected:
   versions:
   - apache-arrow-22.0.0-rc0
   - apache-arrow-22.0.0-rc1
+  - apache-arrow-22.0.0
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=454097865
 
@@ -29,7 +30,7 @@ details: |
   auto parquet::DictByteArrayDecoderImpl::DecodeArrowDense
   ```
 id: OSV-2025-852
-modified: '2025-10-23T14:21:22.431335Z'
+modified: '2025-10-24T14:23:38.843951Z'
 published: '2025-10-23T00:13:16.148747Z'
 references:
 - type: REPORT
