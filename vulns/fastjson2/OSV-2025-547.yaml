@@ -81,6 +81,10 @@ affected:
   - 2.0.59
   - 2.0.59.android5
   - 2.0.59.android8
+  - 2.0.60
+  - 2.0.60.android
+  - 2.0.60.android5
+  - 2.0.60.android8
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=431584944
 
@@ -92,7 +96,7 @@ details: |
   java.base/java.nio.charset.CharsetEncoder.<init>
   ```
 id: OSV-2025-547
-modified: '2025-07-15T00:09:03.936867Z'
+modified: '2025-10-25T14:19:44.262897Z'
 published: '2025-07-15T00:09:03.936493Z'
 references:
 - type: REPORT
