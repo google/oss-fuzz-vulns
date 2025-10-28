@@ -1,0 +1,38 @@
+affected:
+- ecosystem_specific:
+    severity: MEDIUM
+  package:
+    ecosystem: OSS-Fuzz
+    name: assimp
+    purl: pkg:generic/assimp
+  ranges:
+  - events:
+    - introduced: 47ef79672e58417899a3dbf1361691059e9f5dd8
+    repo: https://github.com/assimp/assimp.git
+    type: GIT
+  versions:
+  - v5.4.1
+  - v5.4.2
+  - v5.4.3
+  - v6.0.0
+  - v6.0.1
+  - v6.0.2
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=434414094
+
+  ```
+  Crash type: UNKNOWN READ
+  Crash state:
+  signed char Assimp::StreamReader<false, false>::Get<signed char>
+  Assimp::COBImporter::ReadBinaryFile
+  Assimp::COBImporter::InternReadFile
+  ```
+id: OSV-2025-580
+modified: '2025-07-29T00:16:41.423021Z'
+published: '2025-07-29T00:16:41.422221Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=434414094
+schema_version: 1.7.3
+summary: UNKNOWN READ in signed char Assimp::StreamReader<false, false>::Get<signed
+  char>
