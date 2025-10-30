@@ -1,5 +1,20 @@
-id: OSV-2025-111
-summary: Stack-buffer-overflow in absl::debugging_internal::ParseLocalNameSuffix
+affected:
+- database_specific:
+    fixed_range: ce1a589ffd451f1b2975ea2ea89925057a6fb593:4b35125c645737aaa86bb7d02c1a4e7ecedd97af
+    introduced_range: 379d5305670c00c36a57e608079fd253f13bde63:8026607280ef139bc0ea806e88cfe4fd0af60bad
+  ecosystem_specific:
+    severity: HIGH
+  package:
+    ecosystem: OSS-Fuzz
+    name: bloaty
+    purl: pkg:generic/bloaty
+  ranges:
+  - events:
+    - introduced: 752f32eb40510b064ba47cefd4125a162b348e43
+    - fixed: 4b35125c645737aaa86bb7d02c1a4e7ecedd97af
+    repo: https://github.com/google/bloaty.git
+    type: GIT
+  versions: []
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=395959258
 
@@ -10,24 +25,11 @@ details: |
   absl::debugging_internal::ParseName
   absl::debugging_internal::ParseClassEnumType
   ```
+id: OSV-2025-111
 modified: '2025-02-13T00:15:36.403744Z'
 published: '2025-02-13T00:15:36.403252Z'
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=395959258
-affected:
-- package:
-    name: bloaty
-    ecosystem: OSS-Fuzz
-    purl: pkg:generic/bloaty
-  ranges:
-  - type: GIT
-    repo: https://github.com/google/bloaty.git
-    events:
-    - introduced: 752f32eb40510b064ba47cefd4125a162b348e43
-  ecosystem_specific:
-    severity: HIGH
-  database_specific:
-    introduced_range: 379d5305670c00c36a57e608079fd253f13bde63:8026607280ef139bc0ea806e88cfe4fd0af60bad
-  versions: []
 schema_version: 1.6.0
+summary: Stack-buffer-overflow in absl::debugging_internal::ParseLocalNameSuffix
