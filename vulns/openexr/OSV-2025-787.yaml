@@ -1,0 +1,47 @@
+affected:
+- ecosystem_specific:
+    severity: HIGH
+  package:
+    ecosystem: OSS-Fuzz
+    name: openexr
+    purl: pkg:generic/openexr
+  ranges:
+  - events:
+    - introduced: 39b9d241cdcd4c95b7916992b8872d2620f9ac7a
+    - fixed: fffdcf2f0759a88a39a7ca302477666853a6e961
+    - introduced: d948c6729c30cf15eaade9903ca0186d56a22d41
+    repo: https://github.com/AcademySoftwareFoundation/openexr
+    type: GIT
+  versions:
+  - v3.3.4
+  - v3.3.4-rc
+  - v3.3.5
+  - v3.3.5-rc
+  - v3.3.5-rc3
+  - v3.4-alpha
+  - v3.4.0
+  - v3.4.0-rc
+  - v3.4.1
+  - v3.4.1-rc
+  - v3.4.1-rc2
+  - v3.4.2
+  - v3.4.2-rc
+  - v3.4.2-rc2
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=447429458
+
+  ```
+  Crash type: Heap-buffer-overflow WRITE {*}
+  Crash state:
+  DwaCompressor_uncompress
+  internal_exr_undo_dwaa
+  exr_uncompress_chunk
+  ```
+id: OSV-2025-787
+modified: '2025-09-27T00:18:30.312655Z'
+published: '2025-09-27T00:18:30.312049Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=447429458
+schema_version: 1.7.3
+summary: Heap-buffer-overflow in DwaCompressor_uncompress

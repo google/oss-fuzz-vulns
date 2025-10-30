@@ -1,0 +1,47 @@
+affected:
+- ecosystem_specific:
+    severity: MEDIUM
+  package:
+    ecosystem: OSS-Fuzz
+    name: openexr
+    purl: pkg:generic/openexr
+  ranges:
+  - events:
+    - introduced: 39b9d241cdcd4c95b7916992b8872d2620f9ac7a
+    - fixed: fffdcf2f0759a88a39a7ca302477666853a6e961
+    - introduced: d948c6729c30cf15eaade9903ca0186d56a22d41
+    repo: https://github.com/AcademySoftwareFoundation/openexr
+    type: GIT
+  versions:
+  - v3.3.4
+  - v3.3.4-rc
+  - v3.3.5
+  - v3.3.5-rc
+  - v3.3.5-rc3
+  - v3.4-alpha
+  - v3.4.0
+  - v3.4.0-rc
+  - v3.4.1
+  - v3.4.1-rc
+  - v3.4.1-rc2
+  - v3.4.2
+  - v3.4.2-rc
+  - v3.4.2-rc2
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=436037111
+
+  ```
+  Crash type: Heap-buffer-overflow READ 2
+  Crash state:
+  generic_unpack
+  Imf_3_4::ScanLineInputFile::Data::readPixels
+  Imf_3_4::InputFile::readPixels
+  ```
+id: OSV-2025-600
+modified: '2025-08-05T00:10:00.536669Z'
+published: '2025-08-05T00:10:00.536266Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=436037111
+schema_version: 1.7.3
+summary: Heap-buffer-overflow in generic_unpack
