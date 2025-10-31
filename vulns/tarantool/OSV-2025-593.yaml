@@ -1,0 +1,50 @@
+affected:
+- database_specific:
+    introduced_range: b33f17b25de6bcbe3ebc236250976e4a0250e75e:c10c62927e4cba52cfc44103fc1e21c9d6606fb2
+  ecosystem_specific:
+    severity: HIGH
+  package:
+    ecosystem: OSS-Fuzz
+    name: tarantool
+    purl: pkg:generic/tarantool
+  ranges:
+  - events:
+    - introduced: 46ee17556f2e1a7d65f20383f5e0ff3381998a27
+    repo: https://github.com/tarantool/tarantool
+    type: GIT
+  versions:
+  - 3.3.0
+  - 3.3.1
+  - 3.3.1-entrypoint
+  - 3.3.2
+  - 3.3.2-entrypoint
+  - 3.3.3
+  - 3.3.3-entrypoint
+  - 3.3.4-entrypoint
+  - 3.4.0
+  - 3.4.0-entrypoint
+  - 3.4.1
+  - 3.4.1-entrypoint
+  - 3.4.2-entrypoint
+  - 3.5.0
+  - 3.5.0-entrypoint
+  - 3.5.1-entrypoint
+  - 3.6.0-entrypoint
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=435479026
+
+  ```
+  Crash type: Heap-buffer-overflow WRITE 8
+  Crash state:
+  mmcall
+  lj_meta_tget
+  lj_vmeta_tgetv
+  ```
+id: OSV-2025-593
+modified: '2025-08-02T00:16:19.627211Z'
+published: '2025-08-02T00:16:19.626747Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=435479026
+schema_version: 1.7.3
+summary: Heap-buffer-overflow in mmcall
