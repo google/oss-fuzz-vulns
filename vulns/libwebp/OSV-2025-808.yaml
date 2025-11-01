@@ -1,0 +1,34 @@
+affected:
+- database_specific:
+    introduced_range: c00d83f6642e7838a12bb03bca94237f03cc2e00:74f6afd3e6ea8ff5b231ad2248b52bdcd1666c70
+  ecosystem_specific:
+    severity: MEDIUM
+  package:
+    ecosystem: OSS-Fuzz
+    name: libwebp
+    purl: pkg:generic/libwebp
+  ranges:
+  - events:
+    - introduced: 0d14d84bdb79f06ec6b23f4425138a1d8a5637de
+    - fixed: 2a755e7eecd2f167a5e150551bbdbaa2c4273b84
+    repo: https://chromium.googlesource.com/webm/libwebp
+    type: GIT
+  versions: []
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=448792425
+
+  ```
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  WebPMultRow_C
+  WebPMultRows
+  WebPPictureRescale
+  ```
+id: OSV-2025-808
+modified: '2025-10-04T00:07:11.139704Z'
+published: '2025-10-04T00:07:11.139186Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=448792425
+schema_version: 1.7.3
+summary: Use-of-uninitialized-value in WebPMultRow_C
