@@ -28,6 +28,8 @@ affected:
   - v3.4.2
   - v3.4.2-rc
   - v3.4.2-rc2
+  - v3.3.6-rc
+  - v3.3.6-rc2
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=456158449
 
@@ -39,7 +41,7 @@ details: |
   Imf_3_4::InputFile::readPixels
   ```
 id: OSV-2025-865
-modified: '2025-10-31T00:01:02.631617Z'
+modified: '2025-11-03T14:33:09.268040Z'
 published: '2025-10-31T00:01:02.631036Z'
 references:
 - type: REPORT
