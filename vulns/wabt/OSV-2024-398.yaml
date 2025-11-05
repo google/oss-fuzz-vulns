@@ -20,6 +20,7 @@ affected:
   - 1.0.36
   - 1.0.37
   - 1.0.38
+  - 1.0.39
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=65975
 
@@ -31,7 +32,7 @@ details: |
   wabt::BinaryReaderObjdump::EndGlobalInitExpr
   ```
 id: OSV-2024-398
-modified: '2025-10-04T14:08:18.811397Z'
+modified: '2025-11-05T14:29:05.781980Z'
 published: '2024-05-01T00:11:38.602555Z'
 references:
 - type: REPORT
