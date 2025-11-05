@@ -1,0 +1,35 @@
+affected:
+- database_specific:
+    fixed_range: eb2c89087def1829ed99630cb14b549d7a98408c:080c01f34696351d21f34f99081e93adb41ae74a
+    introduced_range: 7a488f3e0c1c03699c069bc04f5ce5f1c7f3414a:eb9fa2b8dac0c7a431ef5255fb55943da78d2f3a
+  ecosystem_specific:
+    severity: MEDIUM
+  package:
+    ecosystem: OSS-Fuzz
+    name: quickjs
+    purl: pkg:generic/quickjs
+  ranges:
+  - events:
+    - introduced: 42eb2795f0daec0adddb0392823a27a64b676169
+    - fixed: 080c01f34696351d21f34f99081e93adb41ae74a
+    repo: https://github.com/bellard/quickjs
+    type: GIT
+  versions: []
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=453198741
+
+  ```
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  js_create_function
+  __JS_EvalInternal
+  JS_EvalObject
+  ```
+id: OSV-2025-846
+modified: '2025-10-20T00:03:40.944363Z'
+published: '2025-10-20T00:03:40.943765Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=453198741
+schema_version: 1.7.3
+summary: Use-of-uninitialized-value in js_create_function
