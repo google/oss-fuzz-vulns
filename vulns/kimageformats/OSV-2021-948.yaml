@@ -125,6 +125,7 @@ affected:
   - v6.18.0-rc1
   - v6.19.0-rc1
   - v6.19.0
+  - v6.20.0-rc1
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=35950
 
@@ -136,7 +137,7 @@ details: |
   read_transform_tree
   ```
 id: OSV-2021-948
-modified: '2025-10-12T14:18:04.211584Z'
+modified: '2025-11-08T14:11:15.102643Z'
 published: '2021-07-10T00:01:12.890029Z'
 references:
 - type: REPORT
