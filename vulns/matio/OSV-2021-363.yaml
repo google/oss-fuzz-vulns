@@ -1,29 +1,14 @@
-id: OSV-2021-363
-summary: Heap-buffer-overflow in H5HG_read
-details: |
-  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30743
-
-  ```
-  Crash type: Heap-buffer-overflow READ 8
-  Crash state:
-  H5HG_read
-  H5VL__native_blob_get
-  H5VL__blob_get
-  ```
-modified: '2024-11-01T14:06:15.644114Z'
-published: '2021-02-11T00:00:41.682350Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30743
 affected:
-- package:
-    name: matio
+- ecosystem_specific:
+    severity: MEDIUM
+  package:
     ecosystem: OSS-Fuzz
+    name: matio
   ranges:
-  - type: GIT
-    repo: git://git.code.sf.net/p/matio/matio
-    events:
+  - events:
     - introduced: 1ce8f2d1845ecdde19a35605cabdbb884776d52d
+    repo: git://git.code.sf.net/p/matio/matio
+    type: GIT
   versions:
   - v1.5.20
   - v1.5.21
@@ -34,5 +19,21 @@ affected:
   - v1.5.26
   - v1.5.27
   - v1.5.28
-  ecosystem_specific:
-    severity: MEDIUM
+  - v1.5.29
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30743
+
+  ```
+  Crash type: Heap-buffer-overflow READ 8
+  Crash state:
+  H5HG_read
+  H5VL__native_blob_get
+  H5VL__blob_get
+  ```
+id: OSV-2021-363
+modified: '2025-11-11T15:47:02.317188Z'
+published: '2021-02-11T00:00:41.682350Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30743
+summary: Heap-buffer-overflow in H5HG_read
