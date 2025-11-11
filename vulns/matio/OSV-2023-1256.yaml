@@ -1,5 +1,22 @@
-id: OSV-2023-1256
-summary: Heap-buffer-overflow in H5T__bit_copy
+affected:
+- ecosystem_specific:
+    severity: MEDIUM
+  package:
+    ecosystem: OSS-Fuzz
+    name: matio
+    purl: pkg:generic/matio
+  ranges:
+  - events:
+    - introduced: 04d1deab800d962055a1c5509e25ad8dfe05c4f1
+    repo: https://github.com/tbeu/matio.git
+    type: GIT
+  versions:
+  - v1.5.24
+  - v1.5.25
+  - v1.5.26
+  - v1.5.27
+  - v1.5.28
+  - v1.5.29
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=64665
 
@@ -10,27 +27,11 @@ details: |
   H5T__bit_get_d
   H5T__conv_f_f
   ```
-modified: '2024-10-31T14:10:08.350373Z'
+id: OSV-2023-1256
+modified: '2025-11-11T15:46:53.016645Z'
 published: '2023-12-03T13:02:43.376076Z'
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=64665
-affected:
-- package:
-    name: matio
-    ecosystem: OSS-Fuzz
-    purl: pkg:generic/matio
-  ranges:
-  - type: GIT
-    repo: https://github.com/tbeu/matio.git
-    events:
-    - introduced: 04d1deab800d962055a1c5509e25ad8dfe05c4f1
-  versions:
-  - v1.5.24
-  - v1.5.25
-  - v1.5.26
-  - v1.5.27
-  - v1.5.28
-  ecosystem_specific:
-    severity: MEDIUM
 schema_version: 1.6.0
+summary: Heap-buffer-overflow in H5T__bit_copy
