@@ -1,0 +1,32 @@
+affected:
+- ecosystem_specific:
+    severity: HIGH
+  package:
+    ecosystem: OSS-Fuzz
+    name: libical
+    purl: pkg:generic/libical
+  ranges:
+  - events:
+    - introduced: 1d7bd24caf33d607c0863dceb83ccb5cfd54fb91
+    - fixed: 130581f5cdb6501da8533b7bd3cae92eb01ea18a
+    repo: https://github.com/libical/libical.git
+    type: GIT
+  versions: []
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=458943970
+
+  ```
+  Crash type: Heap-buffer-overflow WRITE 1
+  Crash state:
+  icalmemory_tmp_copy
+  icalreqstattype_from_string
+  icalvalue_new_from_string
+  ```
+id: OSV-2025-890
+modified: '2025-11-10T00:03:23.955223Z'
+published: '2025-11-10T00:03:23.954817Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=458943970
+schema_version: 1.7.3
+summary: Heap-buffer-overflow in icalmemory_tmp_copy
