@@ -1,33 +1,18 @@
-id: OSV-2023-133
-summary: Heap-buffer-overflow in H5L__extern_traverse
-details: |
-  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=56501
-
-  ```
-  Crash type: Heap-buffer-overflow READ {*}
-  Crash state:
-  H5L__extern_traverse
-  H5G__traverse_special
-  H5G__traverse_real
-  ```
-modified: '2025-03-15T14:51:22.867360Z'
-published: '2023-03-02T13:02:08.499899Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=56501
 affected:
-- package:
-    name: hdf5
+- ecosystem_specific:
+    severity: MEDIUM
+  package:
     ecosystem: OSS-Fuzz
+    name: hdf5
     purl: pkg:generic/hdf5
   ranges:
-  - type: GIT
-    repo: https://github.com/HDFGroup/hdf5
-    events:
+  - events:
     - introduced: 966454aac1231da7209ef81c11055d3312181f99
     - introduced: 04f0647727677d716a3c1c772d35a660a8ea0dc5
     - introduced: 5a0ec52099cf02224a4066b158bcf1a34829db20
     - introduced: f527239564fc27a6e666ce734b88e4ab18765efc
+    repo: https://github.com/HDFGroup/hdf5
+    type: GIT
   versions:
   - 1.14.1
   - hdf5-1_10_10
@@ -56,6 +41,23 @@ affected:
   - hdff5-1_14-_0
   - hdff5-1_14_0
   - final_autotools_develop
-  ecosystem_specific:
-    severity: MEDIUM
+  - 2.0.0
+  - hdf5_2.0.0
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=56501
+
+  ```
+  Crash type: Heap-buffer-overflow READ {*}
+  Crash state:
+  H5L__extern_traverse
+  H5G__traverse_special
+  H5G__traverse_real
+  ```
+id: OSV-2023-133
+modified: '2025-11-11T17:08:46.639324Z'
+published: '2023-03-02T13:02:08.499899Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=56501
 schema_version: 1.4.0
+summary: Heap-buffer-overflow in H5L__extern_traverse
