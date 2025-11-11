@@ -1,33 +1,18 @@
-id: OSV-2023-359
-summary: Heap-buffer-overflow in H5MM_memcpy
-details: |
-  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=58502
-
-  ```
-  Crash type: Heap-buffer-overflow READ {*}
-  Crash state:
-  H5MM_memcpy
-  H5O__cache_chk_serialize
-  H5C__generate_image
-  ```
-modified: '2025-03-15T14:52:41.966032Z'
-published: '2023-05-01T14:02:33.841821Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=58502
 affected:
-- package:
-    name: hdf5
+- ecosystem_specific:
+    severity: MEDIUM
+  package:
     ecosystem: OSS-Fuzz
+    name: hdf5
     purl: pkg:generic/hdf5
   ranges:
-  - type: GIT
-    repo: https://github.com/HDFGroup/hdf5
-    events:
+  - events:
     - introduced: 966454aac1231da7209ef81c11055d3312181f99
     - introduced: 04f0647727677d716a3c1c772d35a660a8ea0dc5
     - introduced: 5a0ec52099cf02224a4066b158bcf1a34829db20
     - introduced: f527239564fc27a6e666ce734b88e4ab18765efc
+    repo: https://github.com/HDFGroup/hdf5
+    type: GIT
   versions:
   - hdf5-1_10_10
   - hdf5-1_14_1
@@ -56,6 +41,23 @@ affected:
   - hdff5-1_14-_0
   - hdff5-1_14_0
   - final_autotools_develop
-  ecosystem_specific:
-    severity: MEDIUM
+  - 2.0.0
+  - hdf5_2.0.0
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=58502
+
+  ```
+  Crash type: Heap-buffer-overflow READ {*}
+  Crash state:
+  H5MM_memcpy
+  H5O__cache_chk_serialize
+  H5C__generate_image
+  ```
+id: OSV-2023-359
+modified: '2025-11-11T16:15:04.733093Z'
+published: '2023-05-01T14:02:33.841821Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=58502
 schema_version: 1.4.0
+summary: Heap-buffer-overflow in H5MM_memcpy
