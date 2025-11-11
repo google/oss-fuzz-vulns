@@ -1,5 +1,22 @@
-id: OSV-2023-1073
-summary: Heap-buffer-overflow in H5D__scatter_mem
+affected:
+- ecosystem_specific:
+    severity: HIGH
+  package:
+    ecosystem: OSS-Fuzz
+    name: matio
+    purl: pkg:generic/matio
+  ranges:
+  - events:
+    - introduced: 683282d59a139cc811bdf48a728e2666c632de0c
+    repo: https://github.com/tbeu/matio.git
+    type: GIT
+  versions:
+  - v1.5.24
+  - v1.5.25
+  - v1.5.26
+  - v1.5.27
+  - v1.5.28
+  - v1.5.29
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=63610
 
@@ -10,27 +27,11 @@ details: |
   H5D__scatgath_read
   H5D__contig_read
   ```
-modified: '2024-10-31T14:05:46.801553Z'
+id: OSV-2023-1073
+modified: '2025-11-11T15:46:55.593985Z'
 published: '2023-10-27T13:00:49.296462Z'
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=63610
-affected:
-- package:
-    name: matio
-    ecosystem: OSS-Fuzz
-    purl: pkg:generic/matio
-  ranges:
-  - type: GIT
-    repo: https://github.com/tbeu/matio.git
-    events:
-    - introduced: 683282d59a139cc811bdf48a728e2666c632de0c
-  versions:
-  - v1.5.24
-  - v1.5.25
-  - v1.5.26
-  - v1.5.27
-  - v1.5.28
-  ecosystem_specific:
-    severity: HIGH
 schema_version: 1.6.0
+summary: Heap-buffer-overflow in H5D__scatter_mem
