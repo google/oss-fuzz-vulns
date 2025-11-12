@@ -1,5 +1,19 @@
-id: OSV-2024-239
-summary: Use-of-uninitialized-value in H5G__ent_to_link
+affected:
+- ecosystem_specific:
+    severity: MEDIUM
+  package:
+    ecosystem: OSS-Fuzz
+    name: matio
+    purl: pkg:generic/matio
+  ranges:
+  - events:
+    - introduced: 29e986fb1cfe09dacdbe386f441882025f652377
+    repo: https://github.com/tbeu/matio.git
+    type: GIT
+  versions:
+  - v1.5.27
+  - v1.5.28
+  - v1.5.29
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=67794
 
@@ -10,24 +24,11 @@ details: |
   H5G__node_iterate
   H5B__iterate_helper
   ```
-modified: '2024-10-31T14:15:56.012642Z'
+id: OSV-2024-239
+modified: '2025-11-12T14:14:52.191852Z'
 published: '2024-04-06T00:11:00.845086Z'
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=67794
-affected:
-- package:
-    name: matio
-    ecosystem: OSS-Fuzz
-    purl: pkg:generic/matio
-  ranges:
-  - type: GIT
-    repo: https://github.com/tbeu/matio.git
-    events:
-    - introduced: 29e986fb1cfe09dacdbe386f441882025f652377
-  versions:
-  - v1.5.27
-  - v1.5.28
-  ecosystem_specific:
-    severity: MEDIUM
 schema_version: 1.6.0
+summary: Use-of-uninitialized-value in H5G__ent_to_link
