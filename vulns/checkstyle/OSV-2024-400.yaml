@@ -42,6 +42,7 @@ affected:
   - checkstyle-12.0.1
   - checkstyle-12.1.0
   - checkstyle-12.1.1
+  - checkstyle-12.1.2
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=68380
 
@@ -53,7 +54,7 @@ details: |
   java.base/sun.nio.cs.UTF_8$Encoder.encodeArrayLoop
   ```
 id: OSV-2024-400
-modified: '2025-10-26T14:23:13.852470Z'
+modified: '2025-11-12T14:15:47.979438Z'
 published: '2024-05-02T00:03:16.309384Z'
 references:
 - type: REPORT
