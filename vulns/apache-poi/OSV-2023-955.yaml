@@ -1,5 +1,17 @@
-id: OSV-2023-955
-summary: Security exception in org.apache.poi.ddf.EscherPropertyFactory$$Lambda$285/ADDRESS.apply
+affected:
+- ecosystem_specific:
+    severity: LOW
+  package:
+    ecosystem: OSS-Fuzz
+    name: apache-poi
+    purl: pkg:generic/apache-poi
+  ranges:
+  - events:
+    - introduced: c488cae3f3536253d0bd2c7580f08193dd70b2da
+    repo: https://github.com/apache/poi.git
+    type: GIT
+  versions:
+  - REL_5_5_0
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=62924
 
@@ -10,22 +22,11 @@ details: |
   org.apache.poi.ddf.EscherPropertyFactory.createProperties
   org.apache.poi.ddf.AbstractEscherOptRecord.fillFields
   ```
-modified: '2023-10-03T13:03:23.482474Z'
+id: OSV-2023-955
+modified: '2025-11-15T14:16:30.846870Z'
 published: '2023-10-03T13:03:23.482168Z'
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=62924
-affected:
-- package:
-    name: apache-poi
-    ecosystem: OSS-Fuzz
-    purl: pkg:generic/apache-poi
-  ranges:
-  - type: GIT
-    repo: https://github.com/apache/poi.git
-    events:
-    - introduced: c488cae3f3536253d0bd2c7580f08193dd70b2da
-  ecosystem_specific:
-    severity: LOW
-  versions: []
 schema_version: 1.6.0
+summary: Security exception in org.apache.poi.ddf.EscherPropertyFactory$$Lambda$285/ADDRESS.apply
