@@ -126,6 +126,7 @@ affected:
   - v6.19.0-rc1
   - v6.19.0
   - v6.20.0-rc1
+  - v6.20.0
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=36056
 
@@ -137,7 +138,7 @@ details: |
   decode_prediction_unit
   ```
 id: OSV-2021-972
-modified: '2025-11-08T14:11:30.778807Z'
+modified: '2025-11-15T14:04:42.308729Z'
 published: '2021-07-13T00:00:16.631711Z'
 references:
 - type: REPORT
