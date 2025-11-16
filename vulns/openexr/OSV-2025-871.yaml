@@ -26,6 +26,7 @@ affected:
   - v3.4.3-rc2
   - v3.4.3
   - v3.4.3-rc3
+  - v3.4.4-rc
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=456837230
 
@@ -37,7 +38,7 @@ details: |
   ojph::local::param_cod::~param_cod
   ```
 id: OSV-2025-871
-modified: '2025-11-05T14:31:27.893141Z'
+modified: '2025-11-16T14:04:09.695272Z'
 published: '2025-11-03T00:01:55.461376Z'
 references:
 - type: REPORT
