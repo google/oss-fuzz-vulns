@@ -1,0 +1,35 @@
+affected:
+- database_specific:
+    fixed_range: 8b8f1f80b4f01fc0fc56ad58af9b784e161636b0:20c36442246279d884a6b61066fda6778c1c06ee
+    introduced_range: 059236998ecb24a30daa8262f8d17ccba4ed3f6d:4a8b8220d94ccf16bbab47eac6340ce8572eb7b4
+  ecosystem_specific:
+    severity: MEDIUM
+  package:
+    ecosystem: OSS-Fuzz
+    name: tinyusb
+    purl: pkg:generic/tinyusb
+  ranges:
+  - events:
+    - introduced: 0263cfc01ab63d6799e80cbbf691af1979cf3ab7
+    - fixed: 20c36442246279d884a6b61066fda6778c1c06ee
+    repo: https://github.com/hathach/tinyusb.git
+    type: GIT
+  versions:
+  - 0.19.0
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=445845231
+
+  ```
+  Crash type: UNKNOWN READ
+  Crash state:
+  dcd_int_handler
+  fuzz.cc
+  ```
+id: OSV-2025-767
+modified: '2025-09-20T00:19:20.851464Z'
+published: '2025-09-20T00:19:20.851166Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=445845231
+schema_version: 1.7.3
+summary: UNKNOWN READ in dcd_int_handler
