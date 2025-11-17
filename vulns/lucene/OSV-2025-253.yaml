@@ -20,6 +20,7 @@ affected:
   - releases/lucene/10.2.2
   - releases/lucene/10.3.0
   - releases/lucene/10.3.1
+  - releases/lucene/10.3.2
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=407477665
 
@@ -31,7 +32,7 @@ details: |
   org.apache.lucene.analysis.miscellaneous.WordDelimiterGraphFilter.incrementToken
   ```
 id: OSV-2025-253
-modified: '2025-10-06T15:05:39.737168Z'
+modified: '2025-11-17T14:50:20.772111Z'
 published: '2025-04-03T00:17:24.000398Z'
 references:
 - type: REPORT
