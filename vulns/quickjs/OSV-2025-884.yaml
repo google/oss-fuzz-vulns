@@ -1,0 +1,35 @@
+affected:
+- database_specific:
+    fixed_range: 9688007ccbba2024b339ddcd52044b23e2a4d982:fcbf5ea2a63510f35f9ab2baadd59781be16a167
+    introduced_range: 2d99c323a27ca9013230cfd6fb56ab37f2a0f1d4:8807fedec55bc4dbdf7b4780d36bfc4b4fd6e5e2
+  ecosystem_specific:
+    severity: HIGH
+  package:
+    ecosystem: OSS-Fuzz
+    name: quickjs
+    purl: pkg:generic/quickjs
+  ranges:
+  - events:
+    - introduced: 1e19893c82fe150db60f2464e4eeab2b663499d4
+    - fixed: fcbf5ea2a63510f35f9ab2baadd59781be16a167
+    repo: https://github.com/bellard/quickjs
+    type: GIT
+  versions: []
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=458199402
+
+  ```
+  Crash type: Heap-use-after-free READ 8
+  Crash state:
+  JS_DefineProperty
+  build_backtrace
+  JS_CallInternal
+  ```
+id: OSV-2025-884
+modified: '2025-11-08T00:17:46.633033Z'
+published: '2025-11-08T00:17:46.632315Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=458199402
+schema_version: 1.7.3
+summary: Heap-use-after-free in JS_DefineProperty
