@@ -1,0 +1,174 @@
+affected:
+- database_specific:
+    fixed_range: 7642633551d94e1cd3a548dcb5637ac14d414532:6519d2930e83c33fd5d0a59a890a6023de030f4d
+    introduced_range: f089e860e05f5e4e2df0580e9895fff32edfef4c:497b6b81bdf59afe1551b2ea38fcc45fe100057d
+  ecosystem_specific:
+    severity: MEDIUM
+  package:
+    ecosystem: OSS-Fuzz
+    name: kimageformats
+    purl: pkg:generic/kimageformats
+  ranges:
+  - events:
+    - introduced: c60e77c048d32ccf743cec695743b77b2b25dc87
+    - fixed: 6519d2930e83c33fd5d0a59a890a6023de030f4d
+    repo: https://invent.kde.org/frameworks/kimageformats.git
+    type: GIT
+  versions:
+  - v5.100.0-rc1
+  - v5.101.0
+  - v5.101.0-rc1
+  - v5.102.0
+  - v5.102.0-rc1
+  - v5.103.0
+  - v5.103.0-rc1
+  - v5.104.0
+  - v5.104.0-rc1
+  - v5.105.0
+  - v5.105.0-rc1
+  - v5.106.0
+  - v5.106.0-rc1
+  - v5.107.0
+  - v5.107.0-rc1
+  - v5.108.0
+  - v5.108.0-rc1
+  - v5.109.0
+  - v5.109.0-rc1
+  - v5.110.0
+  - v5.110.0-rc1
+  - v5.111.0
+  - v5.111.0-rc1
+  - v5.112.0
+  - v5.112.0-rc1
+  - v5.113.0
+  - v5.113.0-rc1
+  - v5.114.0
+  - v5.114.0-rc1
+  - v5.115.0
+  - v5.115.0-rc1
+  - v5.116.0
+  - v5.116.0-rc1
+  - v5.245.0
+  - v5.246.0
+  - v5.247.0
+  - v5.248.0
+  - v5.249.0
+  - v5.70.0
+  - v5.70.0-rc1
+  - v5.71.0
+  - v5.71.0-rc1
+  - v5.71.0-rc2
+  - v5.72.0
+  - v5.72.0-rc1
+  - v5.73.0
+  - v5.73.0-rc1
+  - v5.74.0
+  - v5.74.0-rc1
+  - v5.75.0
+  - v5.75.0-rc1
+  - v5.76.0
+  - v5.76.0-rc1
+  - v5.77.0
+  - v5.77.0-rc1
+  - v5.78.0
+  - v5.78.0-rc1
+  - v5.79.0
+  - v5.79.0-rc1
+  - v5.79.0-rc2
+  - v5.80.0
+  - v5.80.0-rc1
+  - v5.81.0
+  - v5.81.0-rc1
+  - v5.81.0-rc2
+  - v5.82.0-rc1
+  - v5.83.0
+  - v5.83.0-rc1
+  - v5.84.0-rc1
+  - v5.85.0
+  - v5.85.0-rc1
+  - v5.86.0
+  - v5.86.0-rc1
+  - v5.87.0
+  - v5.87.0-rc1
+  - v5.88.0
+  - v5.88.0-rc1
+  - v5.89.0
+  - v5.89.0-rc1
+  - v5.90.0
+  - v5.90.0-rc1
+  - v5.91.0
+  - v5.91.0-rc1
+  - v5.92.0
+  - v5.92.0-rc1
+  - v5.93.0
+  - v5.93.0-rc1
+  - v5.94.0
+  - v5.94.0-rc1
+  - v5.95.0
+  - v5.95.0-rc1
+  - v5.96.0
+  - v5.96.0-rc1
+  - v5.97.0
+  - v5.97.0-rc1
+  - v5.98.0
+  - v5.98.0-rc1
+  - v5.99.0
+  - v5.99.0-rc1
+  - v6.0.0
+  - v6.1.0
+  - v6.10.0
+  - v6.10.0-rc1
+  - v6.11.0
+  - v6.11.0-rc1
+  - v6.12.0
+  - v6.12.0-rc1
+  - v6.12.0-rc2
+  - v6.13.0
+  - v6.13.0-rc1
+  - v6.14.0
+  - v6.14.0-rc1
+  - v6.15.0
+  - v6.15.0-rc1
+  - v6.16.0
+  - v6.16.0-rc1
+  - v6.17.0
+  - v6.17.0-rc1
+  - v6.18.0
+  - v6.18.0-rc1
+  - v6.19.0
+  - v6.19.0-rc1
+  - v6.2.0
+  - v6.20.0
+  - v6.20.0-rc1
+  - v6.3.0
+  - v6.3.0-rc1
+  - v6.4.0
+  - v6.4.0-rc1
+  - v6.5.0
+  - v6.5.0-rc1
+  - v6.6.0
+  - v6.6.0-rc1
+  - v6.7.0
+  - v6.7.0-rc1
+  - v6.8.0
+  - v6.8.0-rc1
+  - v6.9.0
+  - v6.9.0-rc1
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=461199967
+
+  ```
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  QImage::pixel
+  XCFImageFormat::copyGrayAToRGB
+  XCFImageFormat::copyLayerToImage
+  ```
+id: OSV-2025-906
+modified: '2025-11-18T00:08:20.557392Z'
+published: '2025-11-18T00:08:20.557059Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=461199967
+schema_version: 1.7.3
+summary: Use-of-uninitialized-value in QImage::pixel
