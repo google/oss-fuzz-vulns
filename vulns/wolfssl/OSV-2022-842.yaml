@@ -29,6 +29,7 @@ affected:
   - v5.2.1
   - v5.8.0-stable
   - v5.8.2-stable
+  - v5.8.4-stable
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=50946
 
@@ -40,7 +41,7 @@ details: |
   wc_ed448_sign_msg
   ```
 id: OSV-2022-842
-modified: '2025-07-18T14:16:13.250365Z'
+modified: '2025-11-21T14:18:21.515213Z'
 published: '2022-09-05T00:00:28.251072Z'
 references:
 - type: REPORT
