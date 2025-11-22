@@ -1,5 +1,6 @@
 affected:
 - database_specific:
+    fixed_range: 303d077720f17713a191d53e25a88046645fa3a4:98620f54a742d06e799aca02622cdbc67e4cc916
     introduced_range: 5112de23222dda6fa449f0488265ee0679fd227b:934554d6e72146d854341ce61e6d1197b6695794
   ecosystem_specific:
     severity: HIGH
@@ -11,6 +12,7 @@ affected:
   - events:
     - introduced: a0aa749eba97c63e4c8e1c689069d1ac3a70dfe2
     - fixed: 83a5a61970a70d5b8fd0913341b3331be141da56
+    - fixed: 98620f54a742d06e799aca02622cdbc67e4cc916
     repo: https://github.com/apache/arrow.git
     type: GIT
   versions: []
