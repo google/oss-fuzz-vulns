@@ -1,0 +1,34 @@
+affected:
+- database_specific:
+    introduced_range: 5112de23222dda6fa449f0488265ee0679fd227b:934554d6e72146d854341ce61e6d1197b6695794
+  ecosystem_specific:
+    severity: HIGH
+  package:
+    ecosystem: OSS-Fuzz
+    name: arrow
+    purl: pkg:generic/arrow
+  ranges:
+  - events:
+    - introduced: a0aa749eba97c63e4c8e1c689069d1ac3a70dfe2
+    - fixed: 83a5a61970a70d5b8fd0913341b3331be141da56
+    repo: https://github.com/apache/arrow.git
+    type: GIT
+  versions: []
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=461058054
+
+  ```
+  Crash type: Heap-use-after-free READ 1
+  Crash state:
+  apache::thrift::protocol::TCompactProtocolT<apache::thrift::transport::TMemoryBu
+  unsigned int parquet::format::OffsetIndex::read<apache::thrift::protocol::TCompa
+  void parquet::ThriftDeserializer::DeserializeUnencryptedMessage<parquet::format:
+  ```
+id: OSV-2025-901
+modified: '2025-11-17T00:02:08.125970Z'
+published: '2025-11-17T00:02:08.125421Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=461058054
+schema_version: 1.7.3
+summary: Heap-use-after-free in apache::thrift::protocol::TCompactProtocolT<apache::thrift::transport::TMemoryBu
