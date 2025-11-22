@@ -34,6 +34,8 @@ affected:
   - 3.4.3-entrypoint
   - 3.5.1
   - 3.5.2-entrypoint
+  - 3.3.4
+  - 3.3.5-entrypoint
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=435479026
 
@@ -45,7 +47,7 @@ details: |
   lj_vmeta_tgetv
   ```
 id: OSV-2025-593
-modified: '2025-11-21T14:22:42.108537Z'
+modified: '2025-11-22T14:36:44.019005Z'
 published: '2025-08-02T00:16:19.626747Z'
 references:
 - type: REPORT
