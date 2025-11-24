@@ -25,6 +25,7 @@ affected:
   - 6.0.2
   - 6.0.4
   - 6.0.6
+  - 6.0.7
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=55451
 
@@ -36,7 +37,7 @@ details: |
   r_bin_object_set_items
   ```
 id: OSV-2023-35
-modified: '2025-11-23T14:16:25.722966Z'
+modified: '2025-11-24T14:21:40.096194Z'
 published: '2023-01-29T13:01:45.762871Z'
 references:
 - type: REPORT
