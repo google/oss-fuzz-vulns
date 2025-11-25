@@ -714,6 +714,7 @@ affected:
   - 0.13.3.7846
   - 0.13.3.7848
   - 0.13.3.7849
+  - 0.13.3.7850
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=38994
 
@@ -725,7 +726,7 @@ details: |
   llvmfuzz.c
   ```
 id: OSV-2021-1343
-modified: '2025-11-20T14:45:27.471606Z'
+modified: '2025-11-25T14:22:28.301186Z'
 published: '2021-09-21T00:01:33.177403Z'
 references:
 - type: REPORT
