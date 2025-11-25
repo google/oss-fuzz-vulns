@@ -43,6 +43,7 @@ affected:
   - final_autotools_develop
   - 2.0.0
   - hdf5_2.0.0
+  - test-2.0.1-pre1
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=56033
 
@@ -54,7 +55,7 @@ details: |
   H5O_msg_write
   ```
 id: OSV-2023-76
-modified: '2025-11-11T16:28:26.915096Z'
+modified: '2025-11-25T15:17:54.493302Z'
 published: '2023-02-18T13:00:50.471845Z'
 references:
 - type: REPORT
