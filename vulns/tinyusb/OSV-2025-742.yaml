@@ -1,0 +1,35 @@
+affected:
+- database_specific:
+    fixed_range: 38842491bb55260c0cc7d7709abe5b0e73a0de61:5ef55bfa30d6f8cf175b3d327f621c76aae7b138
+    introduced_range: 059236998ecb24a30daa8262f8d17ccba4ed3f6d:4a8b8220d94ccf16bbab47eac6340ce8572eb7b4
+  ecosystem_specific:
+    severity: null
+  package:
+    ecosystem: OSS-Fuzz
+    name: tinyusb
+    purl: pkg:generic/tinyusb
+  ranges:
+  - events:
+    - introduced: 0263cfc01ab63d6799e80cbbf691af1979cf3ab7
+    - fixed: 5ef55bfa30d6f8cf175b3d327f621c76aae7b138
+    repo: https://github.com/hathach/tinyusb.git
+    type: GIT
+  versions:
+  - 0.19.0
+  - 0.20.0
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=444622228
+
+  ```
+  Crash type: Null-dereference READ
+  Crash state:
+  ubsan_GetStackTrace
+  ```
+id: OSV-2025-742
+modified: '2025-09-14T00:15:42.184553Z'
+published: '2025-09-14T00:15:42.184140Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=444622228
+schema_version: 1.7.3
+summary: Null-dereference READ in ubsan_GetStackTrace
