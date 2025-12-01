@@ -12,6 +12,7 @@ affected:
     type: GIT
   versions:
   - REL_5_5_0
+  - REL_5_5_1
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=66137
 
@@ -23,7 +24,7 @@ details: |
   java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.startEleme
   ```
 id: OSV-2024-661
-modified: '2025-11-15T14:19:52.630829Z'
+modified: '2025-12-01T14:21:01.321021Z'
 published: '2024-07-18T00:05:57.665844Z'
 references:
 - type: REPORT
