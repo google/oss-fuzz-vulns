@@ -12,6 +12,7 @@ affected:
     type: GIT
   versions:
   - REL_5_5_0
+  - REL_5_5_1
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=62924
 
@@ -23,7 +24,7 @@ details: |
   org.apache.poi.ddf.AbstractEscherOptRecord.fillFields
   ```
 id: OSV-2023-955
-modified: '2025-11-15T14:16:30.846870Z'
+modified: '2025-12-01T14:19:00.140619Z'
 published: '2023-10-03T13:03:23.482168Z'
 references:
 - type: REPORT
