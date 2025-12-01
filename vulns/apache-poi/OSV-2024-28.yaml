@@ -14,6 +14,7 @@ affected:
     type: GIT
   versions:
   - REL_5_5_0
+  - REL_5_5_1
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=65930
 
@@ -25,7 +26,7 @@ details: |
   java.base/java.util.ArrayList.grow
   ```
 id: OSV-2024-28
-modified: '2025-11-15T14:19:20.384456Z'
+modified: '2025-12-01T14:21:19.263844Z'
 published: '2024-01-21T00:12:30.613951Z'
 references:
 - type: REPORT
