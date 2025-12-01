@@ -12,6 +12,7 @@ affected:
     type: GIT
   versions:
   - REL_5_5_0
+  - REL_5_5_1
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=67413
 
@@ -23,7 +24,7 @@ details: |
   java.base/java.lang.AbstractStringBuilder.append
   ```
 id: OSV-2024-372
-modified: '2025-11-15T14:19:53.252636Z'
+modified: '2025-12-01T14:21:29.544925Z'
 published: '2024-04-30T00:09:04.989259Z'
 references:
 - type: REPORT
