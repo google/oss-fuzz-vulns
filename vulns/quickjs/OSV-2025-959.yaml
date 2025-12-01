@@ -1,0 +1,35 @@
+affected:
+- database_specific:
+    fixed_range: a77400796df93195e431216efa6e5344f40d08fe:b22685617750e51d95f643d8eb1382dd09dd3bf1
+    introduced_range: fcbf5ea2a63510f35f9ab2baadd59781be16a167:a77400796df93195e431216efa6e5344f40d08fe
+  ecosystem_specific:
+    severity: MEDIUM
+  package:
+    ecosystem: OSS-Fuzz
+    name: quickjs
+    purl: pkg:generic/quickjs
+  ranges:
+  - events:
+    - introduced: 7ab23413b849692350fadf0578d31498cb0043a3
+    - fixed: b22685617750e51d95f643d8eb1382dd09dd3bf1
+    repo: https://github.com/bellard/quickjs
+    type: GIT
+  versions: []
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=464349132
+
+  ```
+  Crash type: Heap-buffer-overflow READ 2
+  Crash state:
+  re_parse_term
+  re_parse_disjunction
+  re_parse_term
+  ```
+id: OSV-2025-959
+modified: '2025-11-29T00:18:54.037236Z'
+published: '2025-11-29T00:18:54.036831Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=464349132
+schema_version: 1.7.3
+summary: Heap-buffer-overflow in re_parse_term
