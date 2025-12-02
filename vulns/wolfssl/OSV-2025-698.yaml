@@ -1,0 +1,44 @@
+affected:
+- database_specific:
+    introduced_range: fc858ec33b7584f1515678ec056ff72f39eafdb3:a17d6ef751343223f8ea599817e287ebbb9667e9
+  ecosystem_specific:
+    severity: MEDIUM
+  package:
+    ecosystem: OSS-Fuzz
+    name: wolfssl
+    purl: pkg:generic/wolfssl
+  ranges:
+  - events:
+    - introduced: 7821c48e6521149ab0209e7eea3bc6d565b9d306
+    repo: https://github.com/wolfssl/wolfssl
+    type: GIT
+  versions:
+  - v5.2.1
+  - v5.6.4-stable
+  - v5.6.6-stable
+  - v5.7.0-stable
+  - v5.7.2-stable
+  - v5.7.4-stable
+  - v5.7.6-stable
+  - v5.8.0-stable
+  - v5.8.2-stable
+  - v5.8.4-stable
+  - wolfEntropy1
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=442261624
+
+  ```
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  AesEncrypt_C
+  wc_AesCbcEncrypt
+  Encrypt
+  ```
+id: OSV-2025-698
+modified: '2025-09-02T00:02:49.309582Z'
+published: '2025-09-02T00:02:49.308939Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=442261624
+schema_version: 1.7.3
+summary: Use-of-uninitialized-value in AesEncrypt_C
