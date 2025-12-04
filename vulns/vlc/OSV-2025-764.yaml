@@ -1,0 +1,35 @@
+affected:
+- database_specific:
+    fixed_range: 0aa985159e5d6c609085e62f302678f6805d2940:d9931019530b0e26ebe7f0cd1ce3eb33ad497f70
+    introduced_range: 22ea21dc9efff3e1ce539a098e4839975051bbe5:ca8a1dd2e9f38ae5d0ecae43be473d3a9af6a399
+  ecosystem_specific:
+    severity: null
+  package:
+    ecosystem: OSS-Fuzz
+    name: vlc
+    purl: pkg:generic/vlc
+  ranges:
+  - events:
+    - introduced: f8e9d090fc20452cfddb91df28bf235eb59baff1
+    - fixed: d9931019530b0e26ebe7f0cd1ce3eb33ad497f70
+    repo: https://code.videolan.org/videolan/vlc.git
+    type: GIT
+  versions: []
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=445845228
+
+  ```
+  Crash type: Global-buffer-overflow READ 11
+  Crash state:
+  Ogg_CreateES
+  Demux
+  demux_process_stream
+  ```
+id: OSV-2025-764
+modified: '2025-09-20T00:15:54.585041Z'
+published: '2025-09-20T00:15:54.584666Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=445845228
+schema_version: 1.7.3
+summary: Global-buffer-overflow in Ogg_CreateES
