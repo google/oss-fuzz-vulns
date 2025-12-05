@@ -1,5 +1,6 @@
 affected:
 - database_specific:
+    fixed_range: 3062d152409c4d86f00cb13c65a9d6942e1ef86f:2b726ebf0bd2b7c58b39a2e89850cd5012424153
     introduced_range: fc858ec33b7584f1515678ec056ff72f39eafdb3:a17d6ef751343223f8ea599817e287ebbb9667e9
   ecosystem_specific:
     severity: MEDIUM
@@ -10,6 +11,7 @@ affected:
   ranges:
   - events:
     - introduced: 7821c48e6521149ab0209e7eea3bc6d565b9d306
+    - fixed: 2b726ebf0bd2b7c58b39a2e89850cd5012424153
     repo: https://github.com/wolfssl/wolfssl
     type: GIT
   versions:
@@ -35,7 +37,7 @@ details: |
   Encrypt
   ```
 id: OSV-2025-698
-modified: '2025-09-02T00:02:49.309582Z'
+modified: '2025-12-05T14:58:11.846817Z'
 published: '2025-09-02T00:02:49.308939Z'
 references:
 - type: REPORT
