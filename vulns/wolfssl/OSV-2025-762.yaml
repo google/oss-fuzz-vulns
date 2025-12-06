@@ -1,0 +1,46 @@
+affected:
+- database_specific:
+    fixed_range: 3062d152409c4d86f00cb13c65a9d6942e1ef86f:2b726ebf0bd2b7c58b39a2e89850cd5012424153
+    introduced_range: fc858ec33b7584f1515678ec056ff72f39eafdb3:a17d6ef751343223f8ea599817e287ebbb9667e9
+  ecosystem_specific:
+    severity: MEDIUM
+  package:
+    ecosystem: OSS-Fuzz
+    name: wolfssl
+    purl: pkg:generic/wolfssl
+  ranges:
+  - events:
+    - introduced: 7821c48e6521149ab0209e7eea3bc6d565b9d306
+    - fixed: 2b726ebf0bd2b7c58b39a2e89850cd5012424153
+    repo: https://github.com/wolfssl/wolfssl
+    type: GIT
+  versions:
+  - v5.2.1
+  - v5.6.4-stable
+  - v5.6.6-stable
+  - v5.7.0-stable
+  - v5.7.2-stable
+  - v5.7.4-stable
+  - v5.7.6-stable
+  - v5.8.0-stable
+  - v5.8.2-stable
+  - v5.8.4-stable
+  - wolfEntropy1
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=445773944
+
+  ```
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  fuzzer_send
+  SendBuffered
+  SendFinished
+  ```
+id: OSV-2025-762
+modified: '2025-09-19T00:14:45.259063Z'
+published: '2025-09-19T00:14:45.258709Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=445773944
+schema_version: 1.7.3
+summary: Use-of-uninitialized-value in fuzzer_send
