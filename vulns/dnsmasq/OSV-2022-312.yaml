@@ -71,6 +71,7 @@ affected:
   - v2.92test22
   - v2.92rc1
   - v2.92rc2
+  - v2.92rc3
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=46416
 
@@ -80,7 +81,7 @@ details: |
   dhcp_packet
   FuzzDhcp
 id: OSV-2022-312
-modified: '2025-12-06T14:15:05.576384Z'
+modified: '2025-12-08T14:22:57.402226Z'
 published: '2022-04-07T00:00:40.457052Z'
 references:
 - type: REPORT
