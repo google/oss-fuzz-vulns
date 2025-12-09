@@ -1,5 +1,21 @@
-id: OSV-2023-78
-summary: Heap-buffer-overflow in ucl_object_dtor_unref_single
+affected:
+- ecosystem_specific:
+    severity: MEDIUM
+  package:
+    ecosystem: OSS-Fuzz
+    name: libucl
+    purl: pkg:generic/libucl
+  ranges:
+  - events:
+    - introduced: c4fc60ebb0aa695df1e6642770d512adb9f1af4e
+    repo: https://github.com/vstakhov/libucl
+    type: GIT
+  versions:
+  - 0.8.2
+  - 0.9.0
+  - 0.9.1
+  - 0.9.2
+  - 0.9.3
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=56054
 
@@ -10,26 +26,11 @@ details: |
   ucl_object_dtor_unref
   ucl_hash_destroy
   ```
-modified: '2024-04-21T14:16:50.498956Z'
+id: OSV-2023-78
+modified: '2025-12-09T14:14:51.718162Z'
 published: '2023-02-18T13:01:01.445224Z'
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=56054
-affected:
-- package:
-    name: libucl
-    ecosystem: OSS-Fuzz
-    purl: pkg:generic/libucl
-  ranges:
-  - type: GIT
-    repo: https://github.com/vstakhov/libucl
-    events:
-    - introduced: c4fc60ebb0aa695df1e6642770d512adb9f1af4e
-  versions:
-  - 0.8.2
-  - 0.9.0
-  - 0.9.1
-  - 0.9.2
-  ecosystem_specific:
-    severity: MEDIUM
 schema_version: 1.4.0
+summary: Heap-buffer-overflow in ucl_object_dtor_unref_single
