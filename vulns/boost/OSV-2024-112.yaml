@@ -25,6 +25,7 @@ affected:
   - boost-1.89.0.beta1
   - boost-1.89.0
   - boost-1.90.0.beta1
+  - boost-1.90.0
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=66719
 
@@ -36,7 +37,7 @@ details: |
   boost::read_graphviz_detail::parser::parse_stmt
   ```
 id: OSV-2024-112
-modified: '2025-11-13T14:24:46.796763Z'
+modified: '2025-12-11T14:18:11.511418Z'
 published: '2024-02-16T00:05:47.896843Z'
 references:
 - type: REPORT
