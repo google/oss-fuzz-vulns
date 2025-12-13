@@ -92,6 +92,7 @@ affected:
   - v6.20.0-rc1
   - v6.20.0
   - v6.21.0-rc1
+  - v6.21.0
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=51965
 
@@ -103,7 +104,7 @@ details: |
   LibRaw::dcraw_process
   ```
 id: OSV-2022-1003
-modified: '2025-12-05T14:16:21.868050Z'
+modified: '2025-12-13T14:15:50.986984Z'
 published: '2022-09-30T00:02:10.026151Z'
 references:
 - type: REPORT
