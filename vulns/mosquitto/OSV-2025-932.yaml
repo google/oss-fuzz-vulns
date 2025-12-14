@@ -1,0 +1,34 @@
+affected:
+- database_specific:
+    introduced_range: 378bbb7f98cb1d2a9f5d742a1d40d3ae517b3bd8:160ccde1cded60b58b42302ed3f98054532fb786
+  ecosystem_specific:
+    severity: HIGH
+  package:
+    ecosystem: OSS-Fuzz
+    name: mosquitto
+    purl: pkg:generic/mosquitto
+  ranges:
+  - events:
+    - introduced: b555eebdd6fc7f34e76f06912213a511e1b7d28f
+    - fixed: 30ee4a2d3e4e303e97ff6cd0b5f1c9f1a7f037d7
+    repo: https://github.com/eclipse/mosquitto
+    type: GIT
+  versions: []
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=462551340
+
+  ```
+  Crash type: Heap-use-after-free READ 8
+  Crash state:
+  password_file__cleanup
+  mosquitto_security_cleanup_default
+  broker_fuzz_password_file.cpp
+  ```
+id: OSV-2025-932
+modified: '2025-11-22T00:01:32.643269Z'
+published: '2025-11-22T00:01:32.642847Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=462551340
+schema_version: 1.7.3
+summary: Heap-use-after-free in password_file__cleanup
