@@ -17,6 +17,7 @@ affected:
   - v6.0.0
   - v6.0.1
   - v6.0.2
+  - master
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=434414094
 
@@ -28,7 +29,7 @@ details: |
   Assimp::COBImporter::InternReadFile
   ```
 id: OSV-2025-580
-modified: '2025-07-29T00:16:41.423021Z'
+modified: '2025-12-15T14:19:03.322726Z'
 published: '2025-07-29T00:16:41.422221Z'
 references:
 - type: REPORT
