@@ -1,5 +1,23 @@
-id: OSV-2023-298
-summary: UNKNOWN READ in active_edges
+affected:
+- database_specific:
+    introduced_range: 7072f62611f43cc1311b76f111fdd1e96278b4e4:ea51a5d66aaae74cdb436d5de4c429e1f1609aba
+  ecosystem_specific:
+    severity: HIGH
+  package:
+    ecosystem: OSS-Fuzz
+    name: cairo
+    purl: pkg:generic/cairo
+  ranges:
+  - events:
+    - introduced: cbcf962da267c519c73dce3cb25afc8c983e1f5b
+    - fixed: 04656d7450e229622546fd2b11496aa58c44181d
+    repo: https://gitlab.freedesktop.org/cairo/cairo.git
+    type: GIT
+  versions:
+  - 1.17.8
+  - 1.18.0
+  - 1.18.2
+  - 1.18.4
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=57884
 
@@ -10,28 +28,11 @@ details: |
   intersect
   _cairo_boxes_intersect
   ```
-modified: '2025-03-09T14:16:04.842301Z'
+id: OSV-2023-298
+modified: '2025-12-19T14:30:39.005796Z'
 published: '2023-04-12T14:02:04.134251Z'
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=57884
-affected:
-- package:
-    name: cairo
-    ecosystem: OSS-Fuzz
-    purl: pkg:generic/cairo
-  ranges:
-  - type: GIT
-    repo: https://gitlab.freedesktop.org/cairo/cairo.git
-    events:
-    - introduced: cbcf962da267c519c73dce3cb25afc8c983e1f5b
-  versions:
-  - 1.17.8
-  - 1.18.0
-  - 1.18.2
-  - 1.18.4
-  ecosystem_specific:
-    severity: HIGH
-  database_specific:
-    introduced_range: 7072f62611f43cc1311b76f111fdd1e96278b4e4:ea51a5d66aaae74cdb436d5de4c429e1f1609aba
 schema_version: 1.4.0
+summary: UNKNOWN READ in active_edges
