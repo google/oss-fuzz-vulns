@@ -1,5 +1,22 @@
-id: OSV-2025-90
-summary: Null-dereference READ in ubsan_GetStackTrace
+affected:
+- database_specific:
+    fixed_range: c10cb2449c82c4cd8ae519cf1b34b56396eafa96:631e2f82a32ef016299ebb1af66efeae0161f68e
+    introduced_range: 967792c89625440fe86e0e55ce84082eea9e71a6:13ad7b2f5cd67e0dc843098ce19ce8b208368c29
+  ecosystem_specific:
+    severity: null
+  package:
+    ecosystem: OSS-Fuzz
+    name: libssh2
+    purl: pkg:generic/libssh2
+  ranges:
+  - events:
+    - introduced: 64a555d6f5aafed504a10e5b756e85c91b1d56ce
+    - fixed: 631e2f82a32ef016299ebb1af66efeae0161f68e
+    repo: https://github.com/libssh2/libssh2.git
+    type: GIT
+  versions:
+  - libssh2-1.11.0
+  - libssh2-1.11.1
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=393411531
 
@@ -8,26 +25,11 @@ details: |
   Crash state:
   ubsan_GetStackTrace
   ```
-modified: '2025-02-03T00:02:54.186097Z'
+id: OSV-2025-90
+modified: '2025-12-20T14:15:37.974751Z'
 published: '2025-02-03T00:02:54.185593Z'
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=393411531
-affected:
-- package:
-    name: libssh2
-    ecosystem: OSS-Fuzz
-    purl: pkg:generic/libssh2
-  ranges:
-  - type: GIT
-    repo: https://github.com/libssh2/libssh2.git
-    events:
-    - introduced: 64a555d6f5aafed504a10e5b756e85c91b1d56ce
-  versions:
-  - libssh2-1.11.0
-  - libssh2-1.11.1
-  ecosystem_specific:
-    severity: null
-  database_specific:
-    introduced_range: 967792c89625440fe86e0e55ce84082eea9e71a6:13ad7b2f5cd67e0dc843098ce19ce8b208368c29
 schema_version: 1.6.0
+summary: Null-dereference READ in ubsan_GetStackTrace
