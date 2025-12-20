@@ -10,6 +10,7 @@ affected:
   ranges:
   - events:
     - introduced: 63388efcf491309782046a28a93bffce88f2f560
+    - fixed: 0ab542a4458f28530e0e9380a903f5c3aa9b1526
     repo: https://github.com/SELinuxProject/selinux
     type: GIT
   versions:
@@ -80,7 +81,7 @@ details: |
   define_genfs_context
   ```
 id: OSV-2025-538
-modified: '2025-07-09T00:05:37.053012Z'
+modified: '2025-12-20T14:25:14.356814Z'
 published: '2025-07-09T00:05:37.052433Z'
 references:
 - type: REPORT
