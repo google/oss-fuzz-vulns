@@ -1,5 +1,6 @@
 affected:
 - database_specific:
+    fixed_range: 83e12796838a74739ba35c740b0e21a442796ec7:dc969d16f6467569f4aa9dc124a31f023b803c22
     introduced_range: b33f17b25de6bcbe3ebc236250976e4a0250e75e:c10c62927e4cba52cfc44103fc1e21c9d6606fb2
   ecosystem_specific:
     severity: HIGH
@@ -10,6 +11,7 @@ affected:
   ranges:
   - events:
     - introduced: 46ee17556f2e1a7d65f20383f5e0ff3381998a27
+    - fixed: dc969d16f6467569f4aa9dc124a31f023b803c22
     repo: https://github.com/tarantool/tarantool
     type: GIT
   versions:
@@ -20,23 +22,23 @@ affected:
   - 3.3.2-entrypoint
   - 3.3.3
   - 3.3.3-entrypoint
+  - 3.3.4
   - 3.3.4-entrypoint
+  - 3.3.5-entrypoint
   - 3.4.0
   - 3.4.0-entrypoint
   - 3.4.1
   - 3.4.1-entrypoint
+  - 3.4.2
   - 3.4.2-entrypoint
+  - 3.4.3-entrypoint
   - 3.5.0
   - 3.5.0-entrypoint
-  - 3.5.1-entrypoint
-  - 3.6.0-entrypoint
-  - 3.4.2
-  - 3.4.3-entrypoint
   - 3.5.1
+  - 3.5.1-entrypoint
   - 3.5.2-entrypoint
-  - 3.3.4
-  - 3.3.5-entrypoint
   - 3.6.0
+  - 3.6.0-entrypoint
   - 3.6.1-entrypoint
   - 3.7.0-entrypoint
 details: |
@@ -50,7 +52,7 @@ details: |
   lj_vmeta_tgetv
   ```
 id: OSV-2025-593
-modified: '2025-12-12T14:25:00.731283Z'
+modified: '2025-12-20T14:30:41.473113Z'
 published: '2025-08-02T00:16:19.626747Z'
 references:
 - type: REPORT
