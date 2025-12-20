@@ -1,5 +1,18 @@
-id: OSV-2022-784
-summary: Segv on unknown address in FreeCodePages
+affected:
+- ecosystem_specific:
+    severity: null
+  package:
+    ecosystem: OSS-Fuzz
+    name: wasm3
+    purl: pkg:generic/wasm3
+  ranges:
+  - events:
+    - introduced: 7608ca25e6a41b82f628eec22e8d885751308f0b
+    - fixed: 79d412ea5fcf92f0efe658d52827a0e0a96ff442
+    repo: https://github.com/wasm3/wasm3
+    type: GIT
+  versions:
+  - v0.5.0
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=50593
 
@@ -10,23 +23,11 @@ details: |
   m3_FreeEnvironment
   fuzzer.c
   ```
-modified: '2022-08-26T00:01:54.152914Z'
+id: OSV-2022-784
+modified: '2025-12-20T14:16:22.419962Z'
 published: '2022-08-26T00:01:54.152651Z'
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=50593
-affected:
-- package:
-    name: wasm3
-    ecosystem: OSS-Fuzz
-    purl: pkg:generic/wasm3
-  ranges:
-  - type: GIT
-    repo: https://github.com/wasm3/wasm3
-    events:
-    - introduced: 7608ca25e6a41b82f628eec22e8d885751308f0b
-  versions:
-  - v0.5.0
-  ecosystem_specific:
-    severity: null
 schema_version: 1.3.0
+summary: Segv on unknown address in FreeCodePages
