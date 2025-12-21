@@ -12,6 +12,7 @@ affected:
   - events:
     - introduced: 756d127cabcc01646dce2862962b6d01b4dfb6c0
     - fixed: 63da5aa40393f701fda9d6401e009c7de359be90
+    - fixed: cb13900c320fbd751b2d8c0380361f3d4e460e91
     repo: https://github.com/cesanta/mongoose
     type: GIT
   versions: []
@@ -26,7 +27,7 @@ details: |
   fuzz.c
   ```
 id: OSV-2025-994
-modified: '2025-12-18T00:00:43.710854Z'
+modified: '2025-12-21T14:32:46.078182Z'
 published: '2025-12-18T00:00:43.710332Z'
 references:
 - type: REPORT
