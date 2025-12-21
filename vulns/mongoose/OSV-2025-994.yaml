@@ -1,0 +1,35 @@
+affected:
+- database_specific:
+    fixed_range: 16d8e3b4f9356e69ba6f78d8e61f3c924411327d:63da5aa40393f701fda9d6401e009c7de359be90
+    introduced_range: a49eb47a91ad63dcd378d1fa8ba3baf92e77afd9:5c582c35d82d73cfe16430d5d67268528e08b576
+  ecosystem_specific:
+    severity: MEDIUM
+  package:
+    ecosystem: OSS-Fuzz
+    name: mongoose
+    purl: pkg:generic/mongoose
+  ranges:
+  - events:
+    - introduced: 756d127cabcc01646dce2862962b6d01b4dfb6c0
+    - fixed: 63da5aa40393f701fda9d6401e009c7de359be90
+    repo: https://github.com/cesanta/mongoose
+    type: GIT
+  versions: []
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=469520969
+
+  ```
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  rx_icmp
+  mg_tcpip_rx
+  fuzz.c
+  ```
+id: OSV-2025-994
+modified: '2025-12-18T00:00:43.710854Z'
+published: '2025-12-18T00:00:43.710332Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=469520969
+schema_version: 1.7.3
+summary: Heap-buffer-overflow in rx_icmp
