@@ -8,6 +8,7 @@ affected:
   ranges:
   - events:
     - introduced: 7d66e40712f6b44f33d9b4bdcfe42db3e65082b8
+    - fixed: f8da4099d1774e153e2cc45d0d39663b5762f381
     repo: https://github.com/liblouis/liblouis
     type: GIT
   versions:
@@ -33,7 +34,7 @@ details: |
   lou_backTranslateString
   ```
 id: OSV-2023-952
-modified: '2025-12-02T14:26:05.319905Z'
+modified: '2025-12-22T14:19:45.912864Z'
 published: '2023-10-02T13:03:05.682426Z'
 references:
 - type: REPORT
