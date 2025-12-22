@@ -10,6 +10,7 @@ affected:
   ranges:
   - events:
     - introduced: 813f15b87f5e76a62d64360f8cbdf449c21316e4
+    - fixed: 08d661c4385a9e1e1bea68afc88ccad60718f638
     repo: https://github.com/seladb/PcapPlusPlus
     type: GIT
   versions:
@@ -26,7 +27,7 @@ details: |
   pcpp::Packet::toString
   ```
 id: OSV-2025-718
-modified: '2025-09-10T00:08:49.178054Z'
+modified: '2025-12-22T14:17:36.857810Z'
 published: '2025-09-10T00:08:49.177204Z'
 references:
 - type: REPORT
