@@ -1,5 +1,19 @@
-id: OSV-2023-1150
-summary: Heap-buffer-overflow in pcpp::computeChecksum
+affected:
+- ecosystem_specific:
+    severity: MEDIUM
+  package:
+    ecosystem: OSS-Fuzz
+    name: pcapplusplus
+    purl: pkg:generic/pcapplusplus
+  ranges:
+  - events:
+    - introduced: 6a67cab6914074841ed81116ac72219ca070a44d
+    - fixed: 08d661c4385a9e1e1bea68afc88ccad60718f638
+    repo: https://github.com/seladb/PcapPlusPlus
+    type: GIT
+  versions:
+  - v24.09
+  - v25.05
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=64122
 
@@ -10,25 +24,11 @@ details: |
   pcpp::IPv4Layer::computeCalculateFields
   pcpp::Packet::computeCalculateFields
   ```
-modified: '2025-05-14T14:15:35.146300Z'
+id: OSV-2023-1150
+modified: '2025-12-22T14:15:48.387128Z'
 published: '2023-11-13T13:01:45.923889Z'
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=64122
-affected:
-- package:
-    name: pcapplusplus
-    ecosystem: OSS-Fuzz
-    purl: pkg:generic/pcapplusplus
-  ranges:
-  - type: GIT
-    repo: https://github.com/seladb/PcapPlusPlus
-    events:
-    - introduced: 6a67cab6914074841ed81116ac72219ca070a44d
-  versions:
-  - v24.09
-  - v25.05-beta
-  - v25.05
-  ecosystem_specific:
-    severity: MEDIUM
 schema_version: 1.6.0
+summary: Heap-buffer-overflow in pcpp::computeChecksum
