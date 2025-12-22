@@ -10,6 +10,7 @@ affected:
   ranges:
   - events:
     - introduced: 813f15b87f5e76a62d64360f8cbdf449c21316e4
+    - fixed: 08d661c4385a9e1e1bea68afc88ccad60718f638
     repo: https://github.com/seladb/PcapPlusPlus
     type: GIT
   versions:
@@ -26,7 +27,7 @@ details: |
   readParsedPacket
   ```
 id: OSV-2025-565
-modified: '2025-07-21T00:09:57.315319Z'
+modified: '2025-12-22T14:22:23.333531Z'
 published: '2025-07-21T00:09:57.314960Z'
 references:
 - type: REPORT
