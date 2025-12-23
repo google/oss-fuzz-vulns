@@ -8,6 +8,7 @@ affected:
   ranges:
   - events:
     - introduced: ffd3be52bbcbd428e9de40da996ad09645fc0dc8
+    - fixed: e0a5092b4b05dbcc448b0883f3575163634f8e86
     repo: https://github.com/google/shaderc
     type: GIT
   versions:
@@ -28,7 +29,7 @@ details: |
   glslang::HlslParseContext::parseShaderStrings
   ```
 id: OSV-2024-1348
-modified: '2025-11-29T14:26:43.813756Z'
+modified: '2025-12-23T15:50:48.626100Z'
 published: '2024-12-10T00:00:50.788Z'
 references:
 - type: REPORT
