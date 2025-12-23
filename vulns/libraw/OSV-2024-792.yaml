@@ -1,0 +1,39 @@
+affected:
+- database_specific:
+    introduced_range: a5a5fb16936f0d3da0ea2ee92e43f508921c121a:19849976cb575cb709cfc6d9c517094d1fd76876
+  ecosystem_specific:
+    severity: MEDIUM
+  package:
+    ecosystem: OSS-Fuzz
+    name: libraw
+    purl: pkg:generic/libraw
+  ranges:
+  - events:
+    - introduced: e7c883d3bbefc841f76e21999c21dbe0d31f82e9
+    - fixed: a4a4a0a2fa29b5f5fd19c9fbb0e198b8e77b0d5a
+    repo: https://github.com/libraw/libraw
+    type: GIT
+  versions:
+  - 0.21.0
+  - 0.21.1
+  - 0.21.2
+  - 0.21.3
+  - 0.21.4
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42536934
+
+  ```
+  Crash type: Index-out-of-bounds
+  Crash state:
+  AAHD::make_ahd_rb_hv
+  AAHD::make_ahd_rb
+  LibRaw::aahd_interpolate
+  ```
+id: OSV-2024-792
+modified: '2024-08-16T00:01:41.358066Z'
+published: '2024-08-16T00:01:41.357755Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42536934
+schema_version: 1.7.3
+summary: Index-out-of-bounds in AAHD::make_ahd_rb_hv
