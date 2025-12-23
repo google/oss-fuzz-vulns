@@ -10,6 +10,7 @@ affected:
   ranges:
   - events:
     - introduced: ffd3be52bbcbd428e9de40da996ad09645fc0dc8
+    - fixed: e0a5092b4b05dbcc448b0883f3575163634f8e86
     repo: https://github.com/google/shaderc
     type: GIT
   versions:
@@ -30,7 +31,7 @@ details: |
   glslang::TParseContextBase::error
   ```
 id: OSV-2024-1355
-modified: '2025-11-28T14:10:22.169027Z'
+modified: '2025-12-23T15:50:47.917708Z'
 published: '2024-12-10T00:08:00.540533Z'
 references:
 - type: REPORT
