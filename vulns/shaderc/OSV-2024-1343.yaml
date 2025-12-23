@@ -8,6 +8,7 @@ affected:
   ranges:
   - events:
     - introduced: 8c4d729001709e907fba57041749d9ed8985891c
+    - fixed: e0a5092b4b05dbcc448b0883f3575163634f8e86
     repo: https://github.com/google/shaderc
     type: GIT
   versions:
@@ -28,7 +29,7 @@ details: |
   glslang::HlslGrammar::acceptFunctionCall
   ```
 id: OSV-2024-1343
-modified: '2025-11-28T14:10:14.105431Z'
+modified: '2025-12-23T15:50:45.708425Z'
 published: '2024-11-27T00:13:21.103465Z'
 references:
 - type: REPORT
