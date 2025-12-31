@@ -1,5 +1,27 @@
-id: OSV-2023-444
-summary: Heap-buffer-overflow in opj_jp2_apply_pclr
+affected:
+- database_specific:
+    introduced_range: 67e0ed93a938714e14d048e84a227465a98d2706:6ad77b23193bdf7e40db83e6077789284ac08781
+  ecosystem_specific:
+    severity: MEDIUM
+  package:
+    ecosystem: OSS-Fuzz
+    name: opencv
+    purl: pkg:generic/opencv
+  ranges:
+  - events:
+    - introduced: dbd1811d53ac9193e593d8f2dd01f4b128851415
+    repo: https://github.com/opencv/opencv.git
+    type: GIT
+  versions:
+  - 4.8.0
+  - 4.8.1
+  - 3.4.20
+  - 4.9.0
+  - 4.10.0
+  - 5.0.0-alpha
+  - 4.11.0
+  - 4.12.0
+  - 4.13.0
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=59450
 
@@ -10,32 +32,11 @@ details: |
   opj_jp2_decode
   cv::detail::Jpeg2KOpjDecoderBase::readData
   ```
-modified: '2025-07-02T14:42:00.405577Z'
+id: OSV-2023-444
+modified: '2025-12-31T14:18:46.286556Z'
 published: '2023-05-31T14:02:00.753503Z'
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=59450
-affected:
-- package:
-    name: opencv
-    ecosystem: OSS-Fuzz
-    purl: pkg:generic/opencv
-  ranges:
-  - type: GIT
-    repo: https://github.com/opencv/opencv.git
-    events:
-    - introduced: dbd1811d53ac9193e593d8f2dd01f4b128851415
-  versions:
-  - 4.8.0
-  - 4.8.1
-  - 3.4.20
-  - 4.9.0
-  - 4.10.0
-  - 5.0.0-alpha
-  - 4.11.0
-  - 4.12.0
-  ecosystem_specific:
-    severity: MEDIUM
-  database_specific:
-    introduced_range: 67e0ed93a938714e14d048e84a227465a98d2706:6ad77b23193bdf7e40db83e6077789284ac08781
 schema_version: 1.4.0
+summary: Heap-buffer-overflow in opj_jp2_apply_pclr
