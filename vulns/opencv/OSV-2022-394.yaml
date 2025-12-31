@@ -1,30 +1,17 @@
-id: OSV-2022-394
-summary: Incorrect-function-pointer-type in cv::split
-details: |
-  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=47190
-
-  ```
-  Crash type: Incorrect-function-pointer-type
-  Crash state:
-  cv::split
-  cv::split
-  TestSplitAndMerge
-  ```
-modified: '2025-07-02T14:38:04.212183Z'
-published: '2022-05-04T00:00:27.326853Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=47190
 affected:
-- package:
-    name: opencv
+- database_specific:
+    introduced_range: e65e23b9c0bc6d3d9b5bd6c55d966a774e6d3ce2:9d38a952926f3e491be45b478d3ae386ae84e34f
+  ecosystem_specific:
+    severity: MEDIUM
+  package:
     ecosystem: OSS-Fuzz
+    name: opencv
     purl: pkg:generic/opencv
   ranges:
-  - type: GIT
-    repo: https://github.com/opencv/opencv.git
-    events:
+  - events:
     - introduced: a46ca98c57b3210e6f40708d41601119ad8eb462
+    repo: https://github.com/opencv/opencv.git
+    type: GIT
   versions:
   - 3.4.12
   - 3.4.13
@@ -50,8 +37,22 @@ affected:
   - 5.0.0-alpha
   - 4.11.0
   - 4.12.0
-  ecosystem_specific:
-    severity: MEDIUM
-  database_specific:
-    introduced_range: e65e23b9c0bc6d3d9b5bd6c55d966a774e6d3ce2:9d38a952926f3e491be45b478d3ae386ae84e34f
+  - 4.13.0
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=47190
+
+  ```
+  Crash type: Incorrect-function-pointer-type
+  Crash state:
+  cv::split
+  cv::split
+  TestSplitAndMerge
+  ```
+id: OSV-2022-394
+modified: '2025-12-31T14:15:38.077191Z'
+published: '2022-05-04T00:00:27.326853Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=47190
 schema_version: 1.2.0
+summary: Incorrect-function-pointer-type in cv::split
