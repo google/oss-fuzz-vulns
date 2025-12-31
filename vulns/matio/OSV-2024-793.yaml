@@ -8,6 +8,7 @@ affected:
   ranges:
   - events:
     - introduced: 29e986fb1cfe09dacdbe386f441882025f652377
+    - fixed: 95ef616e596c15a72abed28ab0b3f6b72bd6e691
     repo: https://github.com/tbeu/matio.git
     type: GIT
   versions:
@@ -25,7 +26,7 @@ details: |
   H5C_protect
   ```
 id: OSV-2024-793
-modified: '2025-11-11T15:47:32.344030Z'
+modified: '2025-12-31T14:19:11.515108Z'
 published: '2024-08-16T00:01:45.237305Z'
 references:
 - type: REPORT
