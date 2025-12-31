@@ -1,5 +1,24 @@
-id: OSV-2024-395
-summary: Use-of-uninitialized-value in pcapint_filter_with_aux_data
+affected:
+- database_specific:
+    introduced_range: 1a0912467fca23404cdde032a4ad0e9fbae52632:f322828f9e38972aa5c101e3edeb0c576f5e8a51
+  ecosystem_specific:
+    severity: MEDIUM
+  package:
+    ecosystem: OSS-Fuzz
+    name: libpcap
+    purl: pkg:generic/libpcap
+  ranges:
+  - events:
+    - introduced: 2757ddca53c330c2ba7315e993029b090e8dcb85
+    - introduced: 34e569b46777133e3adbff4355c5ebf5540d33f5
+    repo: https://github.com/the-tcpdump-group/libpcap.git
+    type: GIT
+  versions:
+  - libpcap-1.10.2
+  - libpcap-1.10.3
+  - libpcap-1.10.4
+  - libpcap-1.10.5
+  - libpcap-1.10.6
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=66124
 
@@ -10,29 +29,11 @@ details: |
   pcapint_filter
   pcap_offline_filter
   ```
-modified: '2024-08-31T14:18:45.876646Z'
+id: OSV-2024-395
+modified: '2025-12-31T14:19:24.719836Z'
 published: '2024-05-01T00:04:54.392345Z'
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=66124
-affected:
-- package:
-    name: libpcap
-    ecosystem: OSS-Fuzz
-    purl: pkg:generic/libpcap
-  ranges:
-  - type: GIT
-    repo: https://github.com/the-tcpdump-group/libpcap.git
-    events:
-    - introduced: 2757ddca53c330c2ba7315e993029b090e8dcb85
-    - introduced: 34e569b46777133e3adbff4355c5ebf5540d33f5
-  versions:
-  - libpcap-1.10.2
-  - libpcap-1.10.3
-  - libpcap-1.10.4
-  - libpcap-1.10.5
-  ecosystem_specific:
-    severity: MEDIUM
-  database_specific:
-    introduced_range: 1a0912467fca23404cdde032a4ad0e9fbae52632:f322828f9e38972aa5c101e3edeb0c576f5e8a51
 schema_version: 1.6.0
+summary: Use-of-uninitialized-value in pcapint_filter_with_aux_data
