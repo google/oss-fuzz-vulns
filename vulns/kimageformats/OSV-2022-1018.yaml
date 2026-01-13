@@ -94,6 +94,7 @@ affected:
   - v6.21.0-rc1
   - v6.21.0
   - v6.22.0-rc1
+  - v6.22.0
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=52139
 
@@ -105,7 +106,7 @@ details: |
   LoadRAW
   ```
 id: OSV-2022-1018
-modified: '2026-01-03T14:15:13.089923Z'
+modified: '2026-01-13T04:48:40.162860Z'
 published: '2022-10-06T00:02:27.511658Z'
 references:
 - type: REPORT
