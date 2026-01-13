@@ -1,5 +1,7 @@
 affected:
-- ecosystem_specific:
+- database_specific:
+    fixed_range: 3383144ae67b9539279dd72ea236d29270e56da4:1a400b808407a49d6ee626e8e6015c5cd9df6298
+  ecosystem_specific:
     severity: MEDIUM
   package:
     ecosystem: OSS-Fuzz
@@ -8,6 +10,7 @@ affected:
   ranges:
   - events:
     - introduced: 3383144ae67b9539279dd72ea236d29270e56da4
+    - fixed: 1a400b808407a49d6ee626e8e6015c5cd9df6298
     repo: https://chromium.googlesource.com/webm/libvpx
     type: GIT
   versions: []
