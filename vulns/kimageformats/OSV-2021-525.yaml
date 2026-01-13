@@ -132,6 +132,7 @@ affected:
   - v6.21.0-rc1
   - v6.21.0
   - v6.22.0-rc1
+  - v6.22.0
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=32059
 
@@ -143,7 +144,7 @@ details: |
   thread_task_deblock_CTBRow::work
   ```
 id: OSV-2021-525
-modified: '2026-01-03T14:15:02.545624Z'
+modified: '2026-01-13T04:37:33.873002Z'
 published: '2021-03-16T00:00:19.176877Z'
 references:
 - type: REPORT
