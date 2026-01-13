@@ -32,6 +32,9 @@ affected:
   - abi-15
   - abi-15.0
   - abi-15.1
+  - abi-15.2
+  - abi-16
+  - abi-16.2
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=70342
 
@@ -43,7 +46,7 @@ details: |
   gf_dash_download_init_segment
   ```
 id: OSV-2024-664
-modified: '2026-01-06T14:25:07.216863Z'
+modified: '2026-01-13T04:49:20.595720Z'
 published: '2024-07-18T00:13:55.576218Z'
 references:
 - type: REPORT
