@@ -1,0 +1,33 @@
+affected:
+- ecosystem_specific:
+    severity: LOW
+  package:
+    ecosystem: OSS-Fuzz
+    name: apache-poi
+    purl: pkg:generic/apache-poi
+  ranges:
+  - events:
+    - introduced: c488cae3f3536253d0bd2c7580f08193dd70b2da
+    repo: https://github.com/apache/poi.git
+    type: GIT
+  versions:
+  - REL_5_5_0
+  - REL_5_5_1
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=391709145
+
+  ```
+  Crash type: Security exception
+  Crash state:
+  java.base/java.util.Arrays.copyOfRange
+  org.apache.poi.util.IOUtils.safelyClone
+  org.apache.poi.ddf.EscherBlipRecord.setPictureData
+  ```
+id: OSV-2024-1423
+modified: '2025-01-25T00:03:24.362579Z'
+published: '2025-01-25T00:03:24.362190Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=391709145
+schema_version: 1.7.3
+summary: Security exception in java.base/java.util.Arrays.copyOfRange
