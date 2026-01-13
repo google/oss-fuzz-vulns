@@ -23,6 +23,7 @@ affected:
   - javaparser-parent-3.26.4
   - javaparser-parent-3.27.0
   - javaparser-parent-3.27.1
+  - javaparser-parent-3.28.0
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=67558
 
@@ -34,7 +35,7 @@ details: |
   com.github.javaparser.ast.expr.FieldAccessExpr.getMetaModel
   ```
 id: OSV-2024-195
-modified: '2025-10-04T14:17:33.523829Z'
+modified: '2026-01-13T14:21:46.144635Z'
 published: '2024-03-24T00:14:24.746452Z'
 references:
 - type: REPORT
