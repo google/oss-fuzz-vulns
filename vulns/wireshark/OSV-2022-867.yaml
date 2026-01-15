@@ -126,6 +126,10 @@ affected:
   - v4.6.3rc0
   - v4.4.12
   - v4.4.13rc0
+  - v4.4.13
+  - v4.4.14rc0
+  - v4.6.3
+  - v4.6.4rc0
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=51090
 
@@ -137,7 +141,7 @@ details: |
   call_dissector_work
   ```
 id: OSV-2022-867
-modified: '2025-12-06T16:37:52.539467Z'
+modified: '2026-01-15T16:46:52.305133Z'
 published: '2022-09-09T00:01:54.157712Z'
 references:
 - type: REPORT
