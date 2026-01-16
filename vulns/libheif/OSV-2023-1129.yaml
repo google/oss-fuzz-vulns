@@ -37,6 +37,7 @@ affected:
   - v1.20.2
   - v1.21.0
   - v1.21.1
+  - v1.21.2
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=63990
 
@@ -48,7 +49,7 @@ details: |
   HeifContext::decode_image_planar
   ```
 id: OSV-2023-1129
-modified: '2025-12-31T14:13:42.702115Z'
+modified: '2026-01-16T14:20:00.488466Z'
 published: '2023-11-09T13:00:44.441721Z'
 references:
 - type: REPORT
