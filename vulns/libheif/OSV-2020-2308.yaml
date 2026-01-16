@@ -51,6 +51,7 @@ affected:
   - v1.20.2
   - v1.21.0
   - v1.21.1
+  - v1.21.2
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30568
 
@@ -62,7 +63,7 @@ details: |
   fill_luma_motion_vector_predictors
   ```
 id: OSV-2020-2308
-modified: '2025-12-31T14:08:52.944074Z'
+modified: '2026-01-16T14:15:52.974687Z'
 published: '2021-02-10T00:00:17.357392Z'
 references:
 - type: REPORT
