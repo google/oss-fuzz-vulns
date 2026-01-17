@@ -1,5 +1,7 @@
 affected:
-- ecosystem_specific:
+- database_specific:
+    fixed_range: 016662b084249b52c32b181c3117f4be02d3cff0:27071bc6e7826e70e5104a9a3e1e240cbd0bbaf2
+  ecosystem_specific:
     severity: MEDIUM
   package:
     ecosystem: OSS-Fuzz
@@ -9,6 +11,7 @@ affected:
   - events:
     - introduced: 412c63df19dd80a9bc765f0686340c7d7baea2f8
     - fixed: d1ad64fe519f80b0fb4e1b9d06f6cc3e9e8d4d5a
+    - fixed: 27071bc6e7826e70e5104a9a3e1e240cbd0bbaf2
     repo: https://github.com/ntop/nDPI.git
     type: GIT
   versions: []
