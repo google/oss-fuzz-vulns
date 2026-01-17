@@ -38,6 +38,7 @@ affected:
   - abi-16
   - abi-16.2
   - abi-16.3
+  - abi-16.4
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=70890
 
@@ -49,7 +50,7 @@ details: |
   gf_inspect_dump_nalu_internal
   ```
 id: OSV-2024-719
-modified: '2026-01-16T14:29:29.673272Z'
+modified: '2026-01-17T14:25:16.284329Z'
 published: '2024-08-07T00:05:22.699506Z'
 references:
 - type: REPORT
