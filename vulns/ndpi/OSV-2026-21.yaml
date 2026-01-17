@@ -1,0 +1,32 @@
+affected:
+- ecosystem_specific:
+    severity: MEDIUM
+  package:
+    ecosystem: OSS-Fuzz
+    name: ndpi
+    purl: pkg:generic/ndpi
+  ranges:
+  - events:
+    - introduced: 412c63df19dd80a9bc765f0686340c7d7baea2f8
+    - fixed: d1ad64fe519f80b0fb4e1b9d06f6cc3e9e8d4d5a
+    repo: https://github.com/ntop/nDPI.git
+    type: GIT
+  versions: []
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=474015854
+
+  ```
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  processTLSBlock
+  ndpi_search_dtls
+  ndpi_search_tls_wrapper
+  ```
+id: OSV-2026-21
+modified: '2026-01-09T00:20:25.201303Z'
+published: '2026-01-09T00:20:25.200679Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=474015854
+schema_version: 1.7.3
+summary: Use-of-uninitialized-value in processTLSBlock
