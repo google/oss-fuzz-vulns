@@ -21,6 +21,7 @@ affected:
   - v6.0.1
   - v6.0.2
   - master
+  - v6.0.3
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=62441
 
@@ -32,7 +33,7 @@ details: |
   Assimp::MD5Importer::InternReadFile
   ```
 id: OSV-2023-869
-modified: '2025-10-13T14:16:58.658751Z'
+modified: '2026-01-20T14:15:13.789826Z'
 published: '2023-09-17T14:01:25.028324Z'
 references:
 - type: REPORT
