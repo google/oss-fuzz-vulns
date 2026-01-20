@@ -1,0 +1,36 @@
+affected:
+- database_specific:
+    introduced_range: 857b96b2d3ec547fe2a4bc707ed6eb97bcabd2f8:99117381e59d9a7f2abe27784009358c672c0ae3
+  ecosystem_specific:
+    severity: LOW
+  package:
+    ecosystem: OSS-Fuzz
+    name: apache-poi
+    purl: pkg:generic/apache-poi
+  ranges:
+  - events:
+    - introduced: ce919673c4e935e8c756c91938f973d5c9a23ddb
+    - fixed: 66109187d12b72696ea02101cec765d77d9bbdc9
+    repo: https://github.com/apache/poi.git
+    type: GIT
+  versions:
+  - REL_5_5_0
+  - REL_5_5_1
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=476184826
+
+  ```
+  Crash type: Security exception
+  Crash state:
+  org.apache.poi.util.IOUtils.safelyAllocate
+  org.apache.poi.ddf.EscherComplexProperty.ensureComplexData
+  org.apache.poi.ddf.EscherComplexProperty.getComplexData
+  ```
+id: OSV-2026-87
+modified: '2026-01-18T00:18:36.932352Z'
+published: '2026-01-18T00:18:36.932063Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=476184826
+schema_version: 1.7.3
+summary: Security exception in org.apache.poi.util.IOUtils.safelyAllocate

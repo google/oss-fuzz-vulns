@@ -1,0 +1,35 @@
+affected:
+- database_specific:
+    fixed_range: afcfbb97d29977b80fef3e4b7dc15d27bbf60bea:3eb879acf4ce1efb4750688e864af172d34a4e0a
+    introduced_range: 2ec437488f1606c123ef3bd2d807ed09fd578a70:afcfbb97d29977b80fef3e4b7dc15d27bbf60bea
+  ecosystem_specific:
+    severity: HIGH
+  package:
+    ecosystem: OSS-Fuzz
+    name: libjpeg-turbo
+    purl: pkg:generic/libjpeg-turbo
+  ranges:
+  - events:
+    - introduced: 43b0c0536bde8d367f5031e7990228928650c5b3
+    - fixed: 3eb879acf4ce1efb4750688e864af172d34a4e0a
+    repo: https://github.com/libjpeg-turbo/libjpeg-turbo
+    type: GIT
+  versions: []
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=476224483
+
+  ```
+  Crash type: Use-after-poison READ 1
+  Crash state:
+  compress.cc
+  LLVMFuzzerRunDriver
+  self_destruct
+  ```
+id: OSV-2026-91
+modified: '2026-01-20T00:09:07.160128Z'
+published: '2026-01-20T00:09:07.159786Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=476224483
+schema_version: 1.7.3
+summary: Use-after-poison in compress.cc
