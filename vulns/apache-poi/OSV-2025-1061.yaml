@@ -1,5 +1,6 @@
 affected:
 - database_specific:
+    fixed_range: 58ac8d05f0d731a64853b2abe1ea659875b6b053:5eba19964228e87c675b13298cb23a308a083c63
     introduced_range: 857b96b2d3ec547fe2a4bc707ed6eb97bcabd2f8:99117381e59d9a7f2abe27784009358c672c0ae3
   ecosystem_specific:
     severity: LOW
@@ -11,6 +12,7 @@ affected:
   - events:
     - introduced: ce919673c4e935e8c756c91938f973d5c9a23ddb
     - fixed: d1f3f9489fc0f2fc32b109d39817ec29067ab127
+    - fixed: 5eba19964228e87c675b13298cb23a308a083c63
     repo: https://github.com/apache/poi.git
     type: GIT
   versions:
@@ -27,7 +29,7 @@ details: |
   org.apache.poi.hssf.record.aggregates.SharedValueManager.create
   ```
 id: OSV-2025-1061
-modified: '2026-01-18T00:03:40.245917Z'
+modified: '2026-01-21T14:26:21.135983Z'
 published: '2026-01-18T00:03:40.245475Z'
 references:
 - type: REPORT
