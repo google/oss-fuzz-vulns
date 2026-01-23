@@ -1,0 +1,34 @@
+affected:
+- ecosystem_specific:
+    severity: HIGH
+  package:
+    ecosystem: OSS-Fuzz
+    name: harfbuzz
+    purl: pkg:generic/harfbuzz
+  ranges:
+  - events:
+    - introduced: babdb46be3f28b838b66979e5d1a6ca8d80211ec
+    - fixed: b17fa8ef39b0e8ea3851d43625f366860750e385
+    repo: https://github.com/harfbuzz/harfbuzz.git
+    type: GIT
+  versions:
+  - 12.3.0
+  - 12.3.1
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=475607265
+
+  ```
+  Crash type: Heap-use-after-free READ 8
+  Crash state:
+  graph::LigatureSubstFormat1::shrink
+  graph::LigatureSubstFormat1::split_context_t::shrink
+  hb_vector_t<unsigned int, false> graph::actuate_subtable_split<graph::LigatureSu
+  ```
+id: OSV-2026-53
+modified: '2026-01-15T00:16:26.118291Z'
+published: '2026-01-15T00:16:26.117926Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=475607265
+schema_version: 1.7.3
+summary: Heap-use-after-free in graph::LigatureSubstFormat1::shrink
