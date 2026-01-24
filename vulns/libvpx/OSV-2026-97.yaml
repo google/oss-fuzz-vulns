@@ -1,5 +1,7 @@
 affected:
-- ecosystem_specific:
+- database_specific:
+    fixed_range: 807c698468ee6264d6b206d74b9465b5acd97b5c:5de804c9b4d8d24882a31f5be287f1f688729db5
+  ecosystem_specific:
     severity: HIGH
   package:
     ecosystem: OSS-Fuzz
@@ -9,6 +11,7 @@ affected:
   - events:
     - introduced: f72b9f6a85fdc4fbbec6402146fb653130330e8f
     - fixed: d5f35ac8d93cba7f7a3f7ddb8f9dc8bd28f785e1
+    - fixed: 5de804c9b4d8d24882a31f5be287f1f688729db5
     repo: https://chromium.googlesource.com/webm/libvpx
     type: GIT
   versions:
@@ -24,7 +27,7 @@ details: |
   encode_frame_to_data_rate
   ```
 id: OSV-2026-97
-modified: '2026-01-21T00:09:09.897919Z'
+modified: '2026-01-24T14:23:18.565821Z'
 published: '2026-01-21T00:09:09.897624Z'
 references:
 - type: REPORT
