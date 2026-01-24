@@ -1,5 +1,6 @@
 affected:
 - database_specific:
+    fixed_range: b17fa8ef39b0e8ea3851d43625f366860750e385:e365cd0e2e5b8cec1a13561036bc3fc4a4f8c11c
     introduced_range: 2cc865b77d37149663fce8eed5e9b89fa488a792:6e37798a16c841da1c223ebf478526a84d9c6235
   ecosystem_specific:
     severity: MEDIUM
@@ -11,6 +12,7 @@ affected:
   - events:
     - introduced: abcb75a5d175c1375c6bed2184656e5738f88ffd
     - fixed: dc73849f567478d6b4e4bbb678a9e25537918465
+    - fixed: e365cd0e2e5b8cec1a13561036bc3fc4a4f8c11c
     repo: https://github.com/harfbuzz/harfbuzz.git
     type: GIT
   versions:
@@ -25,7 +27,7 @@ details: |
   hb-subset-fuzzer.cc
   ```
 id: OSV-2026-121
-modified: '2026-01-24T00:15:22.824958Z'
+modified: '2026-01-24T14:24:01.498986Z'
 published: '2026-01-24T00:15:22.824642Z'
 references:
 - type: REPORT
