@@ -1,0 +1,35 @@
+affected:
+- database_specific:
+    fixed_range: a01bb7f99684683b1d23373807e412f49e54fba7:87f0e0b8f691a46fa474f296076fe515603bab42
+    introduced_range: ad4ba241f17e9de2b7d779e4c5fb50b790e3c7eb:b0acd202991529dfd2677e8973ebcbe78853d4f5
+  ecosystem_specific:
+    severity: MEDIUM
+  package:
+    ecosystem: OSS-Fuzz
+    name: gpsd
+    purl: pkg:generic/gpsd
+  ranges:
+  - events:
+    - introduced: 4d719d0f956444fa8cc00d988fbb9dda878614f4
+    - fixed: 87f0e0b8f691a46fa474f296076fe515603bab42
+    repo: https://gitlab.com/gpsd/gpsd
+    type: GIT
+  versions: []
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=477971098
+
+  ```
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  rtcm2_unpack
+  rtcm104v2_analyze
+  gpsd_poll
+  ```
+id: OSV-2026-122
+modified: '2026-01-24T00:18:15.170285Z'
+published: '2026-01-24T00:18:15.169881Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=477971098
+schema_version: 1.7.3
+summary: Use-of-uninitialized-value in rtcm2_unpack
