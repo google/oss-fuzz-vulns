@@ -39,6 +39,7 @@ affected:
   - v6.0.2
   - master
   - v6.0.3
+  - v6.0.4
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=372765427
 
@@ -50,7 +51,7 @@ details: |
   Assimp::Importer::ReadFile
   ```
 id: OSV-2024-1220
-modified: '2026-01-20T14:17:22.463620Z'
+modified: '2026-01-25T14:14:41.961973Z'
 published: '2024-10-14T00:17:45.088625Z'
 references:
 - type: REPORT
