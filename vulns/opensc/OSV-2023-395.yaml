@@ -1,30 +1,15 @@
-id: OSV-2023-395
-summary: Stack-buffer-overflow in sc_path_print
-details: |
-  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=58932
-
-  ```
-  Crash type: Stack-buffer-overflow READ 1
-  Crash state:
-  sc_path_print
-  sc_select_file
-  cflex_delete_file
-  ```
-modified: '2025-01-15T14:13:19.655223Z'
-published: '2023-05-14T14:00:57.078498Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=58932
 affected:
-- package:
-    name: opensc
+- ecosystem_specific:
+    severity: MEDIUM
+  package:
     ecosystem: OSS-Fuzz
+    name: opensc
     purl: pkg:generic/opensc
   ranges:
-  - type: GIT
-    repo: https://github.com/OpenSC/OpenSC
-    events:
+  - events:
     - introduced: bec4f63c5b8308d7fdca842c5c0b62c3491d106a
+    repo: https://github.com/OpenSC/OpenSC
+    type: GIT
   versions:
   - 0.23.0
   - 0.23.0-rc1
@@ -38,6 +23,22 @@ affected:
   - 0.26.0-rc1
   - 0.26.0
   - 0.26.1
-  ecosystem_specific:
-    severity: MEDIUM
+  - test
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=58932
+
+  ```
+  Crash type: Stack-buffer-overflow READ 1
+  Crash state:
+  sc_path_print
+  sc_select_file
+  cflex_delete_file
+  ```
+id: OSV-2023-395
+modified: '2026-01-26T14:22:38.521669Z'
+published: '2023-05-14T14:00:57.078498Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=58932
 schema_version: 1.4.0
+summary: Stack-buffer-overflow in sc_path_print
