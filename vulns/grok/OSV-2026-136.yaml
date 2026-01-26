@@ -1,0 +1,35 @@
+affected:
+- database_specific:
+    fixed_range: 45394e53de1103180d6f79c997f9cc5df25eecb1:eb702655bb0e5fc39ea037a08ca26c73bf5cde01
+    introduced_range: 3ff9df05501b96d1f0cede0e51f23a2417061ecb:ddb7b4704c9c00df168eaa97749cf3efaefddf4c
+  ecosystem_specific:
+    severity: MEDIUM
+  package:
+    ecosystem: OSS-Fuzz
+    name: grok
+    purl: pkg:generic/grok
+  ranges:
+  - events:
+    - introduced: 5cc1466819c54e0f8879b2163c43ee764d1c400a
+    - fixed: eb702655bb0e5fc39ea037a08ca26c73bf5cde01
+    repo: https://github.com/GrokImageCompression/grok.git
+    type: GIT
+  versions: []
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=478035120
+
+  ```
+  Crash type: Memcpy-param-overlap
+  Crash state:
+  grk::memStreamRead
+  grk::BufferedStream::read
+  grk::MarkerParser::readSOTorEOC
+  ```
+id: OSV-2026-136
+modified: '2026-01-25T00:10:48.353140Z'
+published: '2026-01-25T00:10:48.352834Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=478035120
+schema_version: 1.7.3
+summary: Memcpy-param-overlap in grk::memStreamRead
