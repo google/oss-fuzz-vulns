@@ -16,6 +16,7 @@ affected:
     type: GIT
   versions:
   - v1.16.0-rc1
+  - v1.16.0
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=476466137
 
@@ -27,7 +28,7 @@ details: |
   encode_frame_to_data_rate
   ```
 id: OSV-2026-97
-modified: '2026-01-24T14:23:18.565821Z'
+modified: '2026-01-28T14:23:52.198239Z'
 published: '2026-01-21T00:09:09.897624Z'
 references:
 - type: REPORT
