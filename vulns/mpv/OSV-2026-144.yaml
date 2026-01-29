@@ -1,0 +1,35 @@
+affected:
+- database_specific:
+    fixed_range: 7bfa2cfd3d44d38d1736d66cc26e30c587e17636:d1743b641b5b8a51115a9828124c7a9b527115e3
+    introduced_range: 32a164cc017acab50389f2194f720ccfd0b01a28:731450f883f24bfa0e3441c205477f1c8d85f1ee
+  ecosystem_specific:
+    severity: MEDIUM
+  package:
+    ecosystem: OSS-Fuzz
+    name: mpv
+    purl: pkg:generic/mpv
+  ranges:
+  - events:
+    - introduced: cc1e654286b9bbca2cd5428d658874205624723e
+    - fixed: d1743b641b5b8a51115a9828124c7a9b527115e3
+    repo: https://github.com/mpv-player/mpv
+    type: GIT
+  versions: []
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=478301104
+
+  ```
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  initFilter
+  ff_sws_init_single_context
+  mp_sws_reinit
+  ```
+id: OSV-2026-144
+modified: '2026-01-26T00:05:57.473958Z'
+published: '2026-01-26T00:05:57.473672Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=478301104
+schema_version: 1.7.3
+summary: Use-of-uninitialized-value in initFilter
