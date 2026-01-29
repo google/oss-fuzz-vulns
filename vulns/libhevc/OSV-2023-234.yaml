@@ -1,5 +1,24 @@
-id: OSV-2023-234
-summary: Use-of-uninitialized-value in ihevce_enc_frm_proc_slave_thrd
+affected:
+- ecosystem_specific:
+    severity: MEDIUM
+  package:
+    ecosystem: OSS-Fuzz
+    name: libhevc
+    purl: pkg:generic/libhevc
+  ranges:
+  - events:
+    - introduced: caae21611ae310e11b711865f8b7aa7db8996d87
+    repo: https://github.com/ittiam-systems/libhevc.git
+    type: GIT
+  versions:
+  - v1.1.1
+  - v1.2.0
+  - v1.3.0
+  - v1.4.0
+  - v1.5.0
+  - v1.5.1
+  - v1.6.0
+  - v1.7.0
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=57397
 
@@ -10,29 +29,11 @@ details: |
   osal_func
   posix_memalign
   ```
-modified: '2024-08-14T14:12:45.626750Z'
+id: OSV-2023-234
+modified: '2026-01-29T14:14:40.129452Z'
 published: '2023-03-26T13:00:12.135289Z'
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=57397
-affected:
-- package:
-    name: libhevc
-    ecosystem: OSS-Fuzz
-    purl: pkg:generic/libhevc
-  ranges:
-  - type: GIT
-    repo: https://github.com/ittiam-systems/libhevc.git
-    events:
-    - introduced: caae21611ae310e11b711865f8b7aa7db8996d87
-  versions:
-  - v1.1.1
-  - v1.2.0
-  - v1.3.0
-  - v1.4.0
-  - v1.5.0
-  - v1.5.1
-  - v1.6.0
-  ecosystem_specific:
-    severity: MEDIUM
 schema_version: 1.4.0
+summary: Use-of-uninitialized-value in ihevce_enc_frm_proc_slave_thrd
