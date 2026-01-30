@@ -62,6 +62,7 @@ affected:
   - Release_2025_09_2
   - Release_2025_09_3
   - Release_2025_09_4
+  - Release_2025_09_5
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=376787368
 
@@ -73,7 +74,7 @@ details: |
   SmilesParseOps::parseCXExtensions
   ```
 id: OSV-2022-1288
-modified: '2025-12-31T14:12:01.563949Z'
+modified: '2026-01-30T14:23:19.786593Z'
 published: '2024-11-04T00:16:22.516312Z'
 references:
 - type: REPORT
