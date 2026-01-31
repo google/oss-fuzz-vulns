@@ -1,0 +1,36 @@
+affected:
+- database_specific:
+    fixed_range: e83e25f791932202256479052f18bdd03a091147:75d62e849507e78e254d0c2ba47f50174c18d293
+  ecosystem_specific:
+    severity: MEDIUM
+  package:
+    ecosystem: OSS-Fuzz
+    name: libvpx
+    purl: pkg:generic/libvpx
+  ranges:
+  - events:
+    - introduced: f72b9f6a85fdc4fbbec6402146fb653130330e8f
+    - fixed: 75d62e849507e78e254d0c2ba47f50174c18d293
+    repo: https://chromium.googlesource.com/webm/libvpx
+    type: GIT
+  versions:
+  - v1.16.0
+  - v1.16.0-rc1
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=475583924
+
+  ```
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  vp9_quantize_fp_avx2
+  block_yrd
+  vp9_pick_inter_mode
+  ```
+id: OSV-2026-55
+modified: '2026-01-15T00:19:29.465794Z'
+published: '2026-01-15T00:19:29.465463Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=475583924
+schema_version: 1.7.3
+summary: Use-of-uninitialized-value in vp9_quantize_fp_avx2
