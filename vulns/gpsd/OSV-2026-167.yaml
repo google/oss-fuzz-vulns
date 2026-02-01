@@ -1,0 +1,35 @@
+affected:
+- database_specific:
+    fixed_range: 7b7728b6a614c246504d8b7845bcb8742dce03ad:3e316091076a7efd2abfbccbafd2ef2dfee6e18b
+    introduced_range: ad4ba241f17e9de2b7d779e4c5fb50b790e3c7eb:b0acd202991529dfd2677e8973ebcbe78853d4f5
+  ecosystem_specific:
+    severity: MEDIUM
+  package:
+    ecosystem: OSS-Fuzz
+    name: gpsd
+    purl: pkg:generic/gpsd
+  ranges:
+  - events:
+    - introduced: 4d719d0f956444fa8cc00d988fbb9dda878614f4
+    - fixed: 3e316091076a7efd2abfbccbafd2ef2dfee6e18b
+    repo: https://gitlab.com/gpsd/gpsd
+    type: GIT
+  versions: []
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=479564939
+
+  ```
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  aivdm_analyze
+  gpsd_poll
+  FuzzDrivers.c
+  ```
+id: OSV-2026-167
+modified: '2026-01-31T00:10:49.751204Z'
+published: '2026-01-31T00:10:49.750917Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=479564939
+schema_version: 1.7.3
+summary: Use-of-uninitialized-value in aivdm_analyze
