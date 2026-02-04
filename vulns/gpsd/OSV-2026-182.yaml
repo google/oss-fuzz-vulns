@@ -1,0 +1,34 @@
+affected:
+- database_specific:
+    introduced_range: 85b5eb6bc6e1e11adbfe8620d47236392b876dbb:7ea4f6d23e8085190870d7c7a16137b74edcee3a
+  ecosystem_specific:
+    severity: MEDIUM
+  package:
+    ecosystem: OSS-Fuzz
+    name: gpsd
+    purl: pkg:generic/gpsd
+  ranges:
+  - events:
+    - introduced: 12b3970855dfab9c3140143cf47ec2200a6e5038
+    - fixed: a4cd148a2a4f49fa9ec26058b1e33cce24d57dc3
+    repo: https://gitlab.com/gpsd/gpsd
+    type: GIT
+  versions: []
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=479922669
+
+  ```
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  json_internal_read_object
+  json_device_read
+  FuzzClient.c
+  ```
+id: OSV-2026-182
+modified: '2026-02-03T00:11:05.023344Z'
+published: '2026-02-03T00:11:05.023029Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=479922669
+schema_version: 1.7.3
+summary: Use-of-uninitialized-value in json_internal_read_object
