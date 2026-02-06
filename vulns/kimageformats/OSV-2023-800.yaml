@@ -77,6 +77,7 @@ affected:
   - v6.21.0
   - v6.22.0-rc1
   - v6.22.0
+  - v6.23.0-rc1
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=62098
 
@@ -88,7 +89,7 @@ details: |
   XCFImageFormat::loadHierarchy
   ```
 id: OSV-2023-800
-modified: '2026-01-13T04:42:15.131270Z'
+modified: '2026-02-06T14:12:58.111818Z'
 published: '2023-09-07T14:00:27.693270Z'
 references:
 - type: REPORT
