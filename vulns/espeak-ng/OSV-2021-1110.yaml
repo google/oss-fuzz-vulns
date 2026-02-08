@@ -1,5 +1,20 @@
-id: OSV-2021-1110
-summary: Stack-buffer-overflow in TranslateWord2
+affected:
+- database_specific:
+    fixed_range: b54bb99624a1896eec30cd3f546cd3b6a8e76fda:3dcbe7ea3ea85a9212968d0f05172dde4259e770
+  ecosystem_specific:
+    severity: HIGH
+  package:
+    ecosystem: OSS-Fuzz
+    name: espeak-ng
+  ranges:
+  - events:
+    - introduced: 0a713d52bbf3e061823d1a7f35e5303e7320f27a
+    - fixed: 3dcbe7ea3ea85a9212968d0f05172dde4259e770
+    repo: https://github.com/espeak-ng/espeak-ng
+    type: GIT
+  versions:
+  - '1.51'
+  - 1.52.0
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=36932
 
@@ -10,23 +25,10 @@ details: |
   TranslateClause
   SpeakNextClause
   ```
-modified: '2024-12-12T14:06:37.193883Z'
+id: OSV-2021-1110
+modified: '2026-02-08T14:07:47.971880Z'
 published: '2021-08-08T00:02:17.026887Z'
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=36932
-affected:
-- package:
-    name: espeak-ng
-    ecosystem: OSS-Fuzz
-  ranges:
-  - type: GIT
-    repo: https://github.com/espeak-ng/espeak-ng
-    events:
-    - introduced: 0a713d52bbf3e061823d1a7f35e5303e7320f27a
-  versions:
-  - '1.51'
-  - 1.51.1
-  - 1.52.0
-  ecosystem_specific:
-    severity: HIGH
+summary: Stack-buffer-overflow in TranslateWord2
