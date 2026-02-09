@@ -1,0 +1,33 @@
+affected:
+- database_specific:
+    introduced_range: 7b7728b6a614c246504d8b7845bcb8742dce03ad:3e316091076a7efd2abfbccbafd2ef2dfee6e18b
+  ecosystem_specific:
+    severity: MEDIUM
+  package:
+    ecosystem: OSS-Fuzz
+    name: gpsd
+    purl: pkg:generic/gpsd
+  ranges:
+  - events:
+    - introduced: 6207b0a06a6c5c33dc366a856529b17244b04d2f
+    - fixed: 454e3a856bdc4c0004fab000f23aec75af41c325
+    repo: https://gitlab.com/gpsd/gpsd
+    type: GIT
+  versions: []
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=482617785
+
+  ```
+  Crash type: UNKNOWN READ
+  Crash state:
+  gpsd_poll
+  FuzzDriversStructured.c
+  ```
+id: OSV-2026-212
+modified: '2026-02-09T00:15:09.776491Z'
+published: '2026-02-09T00:15:09.775765Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=482617785
+schema_version: 1.7.3
+summary: UNKNOWN READ in gpsd_poll
