@@ -1,30 +1,15 @@
-id: OSV-2022-608
-summary: Heap-use-after-free in jxl::WriteToPixelCallbackStage::ProcessRow
-details: |
-  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=49277
-
-  ```
-  Crash type: Heap-use-after-free READ 4
-  Crash state:
-  jxl::WriteToPixelCallbackStage::ProcessRow
-  jxl::LowMemoryRenderPipeline::RenderRect
-  jxl::LowMemoryRenderPipeline::ProcessBuffers
-  ```
-modified: '2024-11-28T14:17:04.760436Z'
-published: '2022-07-21T00:01:50.967627Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=49277
 affected:
-- package:
-    name: libjxl
+- ecosystem_specific:
+    severity: HIGH
+  package:
     ecosystem: OSS-Fuzz
+    name: libjxl
     purl: pkg:generic/libjxl
   ranges:
-  - type: GIT
-    repo: https://github.com/libjxl/libjxl.git
-    events:
+  - events:
     - introduced: eafb38fb4f3d2e00f9402a0c09ac592ebfd6a795
+    repo: https://github.com/libjxl/libjxl.git
+    type: GIT
   versions:
   - v0.7-base
   - v0.7rc
@@ -54,6 +39,22 @@ affected:
   - v0.8.4
   - v0.9.4
   - v0.7.2
-  ecosystem_specific:
-    severity: HIGH
+  - v0.7.3
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=49277
+
+  ```
+  Crash type: Heap-use-after-free READ 4
+  Crash state:
+  jxl::WriteToPixelCallbackStage::ProcessRow
+  jxl::LowMemoryRenderPipeline::RenderRect
+  jxl::LowMemoryRenderPipeline::ProcessBuffers
+  ```
+id: OSV-2022-608
+modified: '2026-02-10T14:12:50.691688Z'
+published: '2022-07-21T00:01:50.967627Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=49277
 schema_version: 1.2.0
+summary: Heap-use-after-free in jxl::WriteToPixelCallbackStage::ProcessRow
