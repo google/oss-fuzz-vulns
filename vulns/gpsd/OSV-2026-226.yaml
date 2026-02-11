@@ -1,0 +1,34 @@
+affected:
+- database_specific:
+    introduced_range: 7b7728b6a614c246504d8b7845bcb8742dce03ad:3e316091076a7efd2abfbccbafd2ef2dfee6e18b
+  ecosystem_specific:
+    severity: HIGH
+  package:
+    ecosystem: OSS-Fuzz
+    name: gpsd
+    purl: pkg:generic/gpsd
+  ranges:
+  - events:
+    - introduced: 6207b0a06a6c5c33dc366a856529b17244b04d2f
+    - fixed: 6f51c13fcf0aa0f5492ad1d67900de7803332906
+    repo: https://gitlab.com/gpsd/gpsd
+    type: GIT
+  versions: []
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=482909898
+
+  ```
+  Crash type: UNKNOWN WRITE
+  Crash state:
+  decode_xa2_00
+  tsip_parse_input
+  gpsd_poll
+  ```
+id: OSV-2026-226
+modified: '2026-02-11T00:10:08.757920Z'
+published: '2026-02-11T00:10:08.757600Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=482909898
+schema_version: 1.7.3
+summary: UNKNOWN WRITE in decode_xa2_00

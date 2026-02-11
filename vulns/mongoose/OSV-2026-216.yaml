@@ -1,0 +1,34 @@
+affected:
+- database_specific:
+    fixed_range: ba768693edf63ce452e7808ff5ccf5b92a8ccbca:cc617d537d151fcba9d5f24fc79cb523dda55a55
+    introduced_range: 70d268d95f7f0764ff23351bf84fa3359af45eb5:ba768693edf63ce452e7808ff5ccf5b92a8ccbca
+  ecosystem_specific:
+    severity: MEDIUM
+  package:
+    ecosystem: OSS-Fuzz
+    name: mongoose
+    purl: pkg:generic/mongoose
+  ranges:
+  - events:
+    - introduced: c083f204fc16284f67d0d17e63cf21f53630d58c
+    - fixed: cc617d537d151fcba9d5f24fc79cb523dda55a55
+    repo: https://github.com/cesanta/mongoose
+    type: GIT
+  versions: []
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=482698892
+
+  ```
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  mg_mqtt_next_prop
+  fuzz.c
+  ```
+id: OSV-2026-216
+modified: '2026-02-10T00:08:51.350258Z'
+published: '2026-02-10T00:08:51.349946Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=482698892
+schema_version: 1.7.3
+summary: Heap-buffer-overflow in mg_mqtt_next_prop
