@@ -1,5 +1,6 @@
 affected:
 - database_specific:
+    fixed_range: 8ac526236416b9c28f73d4684cf9e8a66f1d134e:d33cbecc148d3affcdf403211fddc2cc5d442379
     introduced_range: 5005a350a78d1918e98e970457a8316a23c50e19:d153c61e6fad0e1365125433e2db48661ec41ab5
   ecosystem_specific:
     severity: HIGH
@@ -10,6 +11,7 @@ affected:
   ranges:
   - events:
     - introduced: 954c6e3cb9d79aaa08c6666373d2bfa04f89ead1
+    - fixed: d33cbecc148d3affcdf403211fddc2cc5d442379
     repo: https://github.com/uclouvain/openjpeg
     type: GIT
   versions:
@@ -26,7 +28,7 @@ details: |
   opj_j2k_decode
   ```
 id: OSV-2025-219
-modified: '2025-09-25T14:32:18.738293Z'
+modified: '2026-02-11T14:21:43.026699Z'
 published: '2025-03-18T00:18:30.566980Z'
 references:
 - type: REPORT
