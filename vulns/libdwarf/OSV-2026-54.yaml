@@ -1,0 +1,37 @@
+affected:
+- database_specific:
+    fixed_range: 63c286fa066879eb535bd9d72c48e924bb06790f:eab3c42416fb5c14c1f5ba60294642ca34599b11
+    introduced_range: 0ed97228bc984d368249a1575f10a59b45cdb606:17ecf1c46d1047fb43e876371cc4bffc110729af
+  ecosystem_specific:
+    severity: HIGH
+  package:
+    ecosystem: OSS-Fuzz
+    name: libdwarf
+    purl: pkg:generic/libdwarf
+  ranges:
+  - events:
+    - introduced: a0b85ccca9b9ad0d1ddb303372b300e9029342dd
+    - fixed: eab3c42416fb5c14c1f5ba60294642ca34599b11
+    repo: https://github.com/davea42/libdwarf-code
+    type: GIT
+  versions:
+  - libdwarf-2.3.0
+  - v2.3.0
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=475563464
+
+  ```
+  Crash type: Heap-use-after-free READ 8
+  Crash state:
+  _dwarf_exec_frame_instr
+  _dwarf_get_fde_info_for_a_pc_row
+  dwarf_get_fde_info_for_all_regs3_b
+  ```
+id: OSV-2026-54
+modified: '2026-01-15T00:17:17.478056Z'
+published: '2026-01-15T00:17:17.477757Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=475563464
+schema_version: 1.7.3
+summary: Heap-use-after-free in _dwarf_exec_frame_instr
