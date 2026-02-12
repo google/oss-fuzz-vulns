@@ -34,6 +34,7 @@ affected:
   - 10.1.0-rc1
   - 10.1.1-rc0
   - 10.1.1-rc1
+  - 10.1.1
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=66347
 
@@ -45,7 +46,7 @@ details: |
   XpackDynamicTable::insert_entry
   ```
 id: OSV-2024-451
-modified: '2026-01-30T14:29:38.467759Z'
+modified: '2026-02-12T14:18:05.600525Z'
 published: '2024-05-08T00:14:48.544622Z'
 references:
 - type: REPORT
