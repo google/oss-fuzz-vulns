@@ -149,6 +149,9 @@ affected:
   - v10.2.0-rc3
   - v10.2.0-rc4
   - v10.2.0
+  - v10.0.8
+  - v10.1.4
+  - v10.2.1
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=49086
 
@@ -160,7 +163,7 @@ details: |
   megasas_port_write
   ```
 id: OSV-2022-581
-modified: '2025-12-23T16:12:32.490216Z'
+modified: '2026-02-13T14:29:03.475Z'
 published: '2022-07-14T00:00:45.644503Z'
 references:
 - type: REPORT
