@@ -1,0 +1,37 @@
+affected:
+- database_specific:
+    fixed_range: 2d3b2338c85b85c688171bef0ef3e221dc410a51:d6e65fb019a28ec2b16221e2753d4e3284e06ad0
+    introduced_range: ae1445463ca03bac9b46147166c0ee00993363e8:10ebd3a354f2a052ac865960145fda844b3b120e
+  ecosystem_specific:
+    severity: HIGH
+  package:
+    ecosystem: OSS-Fuzz
+    name: fluent-bit
+    purl: pkg:generic/fluent-bit
+  ranges:
+  - events:
+    - introduced: ef3f0750c741ae4586a093adf747bb77c932bec7
+    - fixed: d6e65fb019a28ec2b16221e2753d4e3284e06ad0
+    repo: https://github.com/fluent/fluent-bit/
+    type: GIT
+  versions:
+  - v4.2.1
+  - v4.2.2
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=472785094
+
+  ```
+  Crash type: Heap-buffer-overflow WRITE 8
+  Crash state:
+  cmt_mpack_consume_uint_tag
+  cmt_mpack_unpack_array
+  cmt_mpack_unpack_map
+  ```
+id: OSV-2026-2
+modified: '2026-01-03T00:15:15.908130Z'
+published: '2026-01-03T00:15:15.907754Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=472785094
+schema_version: 1.7.3
+summary: Heap-buffer-overflow in cmt_mpack_consume_uint_tag
