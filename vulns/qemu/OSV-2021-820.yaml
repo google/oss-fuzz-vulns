@@ -155,6 +155,9 @@ affected:
   - v10.2.0-rc3
   - v10.2.0-rc4
   - v10.2.0
+  - v10.0.8
+  - v10.1.4
+  - v10.2.1
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34831
 
@@ -166,7 +169,7 @@ details: |
   virtio_gpu_simple_process_cmd
   ```
 id: OSV-2021-820
-modified: '2025-12-23T16:11:33.090739Z'
+modified: '2026-02-13T14:27:16.057293Z'
 published: '2021-06-02T00:00:31.619765Z'
 references:
 - type: REPORT
