@@ -156,6 +156,7 @@ affected:
   - v6.22.0-rc1
   - v6.22.0
   - v6.23.0-rc1
+  - v6.23.0
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21808
 
@@ -167,7 +168,7 @@ details: |
   fillRect_normalized
   ```
 id: OSV-2020-868
-modified: '2026-02-06T14:04:24.155080Z'
+modified: '2026-02-14T14:12:19.230130Z'
 published: '2020-07-14T22:13:50.828646Z'
 references:
 - type: REPORT
