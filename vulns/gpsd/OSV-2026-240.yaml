@@ -1,0 +1,35 @@
+affected:
+- database_specific:
+    fixed_range: 0e773223c4fb6e6fa093c5ccfe8a7d9df2eb5742:b7bbea533c560eb9b3d5c818cc7c2cd3146fa934
+    introduced_range: ad4ba241f17e9de2b7d779e4c5fb50b790e3c7eb:b0acd202991529dfd2677e8973ebcbe78853d4f5
+  ecosystem_specific:
+    severity: MEDIUM
+  package:
+    ecosystem: OSS-Fuzz
+    name: gpsd
+    purl: pkg:generic/gpsd
+  ranges:
+  - events:
+    - introduced: 4d719d0f956444fa8cc00d988fbb9dda878614f4
+    - fixed: b7bbea533c560eb9b3d5c818cc7c2cd3146fa934
+    repo: https://gitlab.com/gpsd/gpsd
+    type: GIT
+  versions: []
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=483928517
+
+  ```
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  packet_get1
+  gpsd_poll
+  FuzzDrivers.c
+  ```
+id: OSV-2026-240
+modified: '2026-02-14T00:09:50.559326Z'
+published: '2026-02-14T00:09:50.559032Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=483928517
+schema_version: 1.7.3
+summary: Use-of-uninitialized-value in packet_get1
