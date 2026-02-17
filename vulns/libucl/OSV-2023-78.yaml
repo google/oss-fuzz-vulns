@@ -16,6 +16,7 @@ affected:
   - 0.9.1
   - 0.9.2
   - 0.9.3
+  - 0.9.4
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=56054
 
@@ -27,7 +28,7 @@ details: |
   ucl_hash_destroy
   ```
 id: OSV-2023-78
-modified: '2025-12-09T14:14:51.718162Z'
+modified: '2026-02-17T14:21:11.808505Z'
 published: '2023-02-18T13:01:01.445224Z'
 references:
 - type: REPORT
