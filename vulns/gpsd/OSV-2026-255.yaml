@@ -1,5 +1,6 @@
 affected:
 - database_specific:
+    fixed_range: b7bbea533c560eb9b3d5c818cc7c2cd3146fa934:5f9e0c6a8fa38c12543dc3ea036d6f728dba8660
     introduced_range: ad4ba241f17e9de2b7d779e4c5fb50b790e3c7eb:b0acd202991529dfd2677e8973ebcbe78853d4f5
   ecosystem_specific:
     severity: HIGH
@@ -11,6 +12,7 @@ affected:
   - events:
     - introduced: 4d719d0f956444fa8cc00d988fbb9dda878614f4
     - fixed: a5b482eebc1642df41875d47de49941f2c7eb48c
+    - fixed: 5f9e0c6a8fa38c12543dc3ea036d6f728dba8660
     repo: https://gitlab.com/gpsd/gpsd
     type: GIT
   versions: []
