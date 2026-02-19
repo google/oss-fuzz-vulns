@@ -1,0 +1,35 @@
+affected:
+- ecosystem_specific:
+    severity: null
+  package:
+    ecosystem: OSS-Fuzz
+    name: assimp
+    purl: pkg:generic/assimp
+  ranges:
+  - events:
+    - introduced: ac0cfc8d9cd2ebfa959053d822e4846a814cf053
+    - fixed: 970f8691dd5e54bd7667438efe5f2cd8e261d199
+    repo: https://github.com/assimp/assimp.git
+    type: GIT
+  versions:
+  - master
+  - v6.0.3
+  - v6.0.4
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=465494996
+
+  ```
+  Crash type: Stack-use-after-scope READ 1
+  Crash state:
+  Assimp::FBX::FBXExportProperty::FBXExportProperty
+  Assimp::FBX::FBXExportProperty* std::__1::vector<Assimp::FBX::FBXExportProperty,
+  Assimp::FBXExporter::WriteObjects
+  ```
+id: OSV-2025-965
+modified: '2025-12-04T00:10:11.975920Z'
+published: '2025-12-04T00:10:11.975493Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=465494996
+schema_version: 1.7.3
+summary: Stack-use-after-scope in Assimp::FBX::FBXExportProperty::FBXExportProperty
