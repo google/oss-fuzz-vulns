@@ -1,0 +1,35 @@
+affected:
+- database_specific:
+    fixed_range: 79a5324fd751adaa6c2336a215ca0783d5f57f29:e6c4d276a1df6c73bd2bec2c53dd98e367126375
+    introduced_range: a178be6cde3ab016f0072003df87517e289e075a:0d7f739ddd93f6e7b7bb9b7e8db9aa4ba639fbda
+  ecosystem_specific:
+    severity: null
+  package:
+    ecosystem: OSS-Fuzz
+    name: libical
+    purl: pkg:generic/libical
+  ranges:
+  - events:
+    - introduced: f8cb7b4349809e51bad3902d130804d31ede3116
+    - fixed: e6c4d276a1df6c73bd2bec2c53dd98e367126375
+    repo: https://github.com/libical/libical.git
+    type: GIT
+  versions: []
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=481635423
+
+  ```
+  Crash type: Segv on unknown address
+  Crash state:
+  icalarray_append
+  icalstrarray_append
+  _parse_vcard
+  ```
+id: OSV-2026-204
+modified: '2026-02-06T00:20:37.969390Z'
+published: '2026-02-06T00:20:37.969087Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=481635423
+schema_version: 1.7.3
+summary: Segv on unknown address in icalarray_append
