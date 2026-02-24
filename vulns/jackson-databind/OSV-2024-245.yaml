@@ -53,6 +53,7 @@ affected:
   - jackson-databind-3.1.0-rc1
   - jackson-databind-2.18.6
   - jackson-databind-2.21.1
+  - jackson-databind-3.1.0
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=67672
 
@@ -64,7 +65,7 @@ details: |
   com.github.javaparser.ast.expr.FieldAccessExpr.getMetaModel
   ```
 id: OSV-2024-245
-modified: '2026-02-23T14:24:14.561198Z'
+modified: '2026-02-24T14:25:14.639761Z'
 published: '2024-04-08T00:11:03.595756Z'
 references:
 - type: REPORT
