@@ -1,0 +1,36 @@
+affected:
+- database_specific:
+    introduced_range: d1e6bcff6b01c5da9856a2b6ed52ae9a06dfe8da:cf7b652190827878a4726709f0998ce170e55ce8
+  ecosystem_specific:
+    severity: null
+  package:
+    ecosystem: OSS-Fuzz
+    name: assimp
+    purl: pkg:generic/assimp
+  ranges:
+  - events:
+    - introduced: 129c1333e6a7f1ec76cf725e84dd7e15a44ea048
+    - fixed: 3e188e6768739d48a58465fdbf339674c4bc70de
+    repo: https://github.com/assimp/assimp.git
+    type: GIT
+  versions:
+  - v6.0.3
+  - v6.0.4
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=483188619
+
+  ```
+  Crash type: Segv on unknown address
+  Crash state:
+  aiAnimation::~aiAnimation
+  aiScene::~aiScene
+  Assimp::BaseImporter::ReadFile
+  ```
+id: OSV-2026-229
+modified: '2026-02-11T00:12:18.313574Z'
+published: '2026-02-11T00:12:18.313233Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=483188619
+schema_version: 1.7.3
+summary: Segv on unknown address in aiAnimation::~aiAnimation
