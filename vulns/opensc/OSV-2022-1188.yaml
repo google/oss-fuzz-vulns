@@ -24,6 +24,7 @@ affected:
   - 0.26.0
   - 0.26.1
   - test
+  - 0.27.0-rc1
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=53536
 
@@ -35,7 +36,7 @@ details: |
   authentic_pin_get_policy
   ```
 id: OSV-2022-1188
-modified: '2026-01-26T14:18:03.347416Z'
+modified: '2026-02-24T14:15:46.375365Z'
 published: '2022-11-20T13:01:57.719130Z'
 references:
 - type: REPORT
