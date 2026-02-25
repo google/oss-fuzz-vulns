@@ -1,0 +1,34 @@
+affected:
+- database_specific:
+    introduced_range: ad4ba241f17e9de2b7d779e4c5fb50b790e3c7eb:b0acd202991529dfd2677e8973ebcbe78853d4f5
+  ecosystem_specific:
+    severity: null
+  package:
+    ecosystem: OSS-Fuzz
+    name: gpsd
+    purl: pkg:generic/gpsd
+  ranges:
+  - events:
+    - introduced: 4d719d0f956444fa8cc00d988fbb9dda878614f4
+    - fixed: 991de2af663565803483e3013fd7dfed48d9355b
+    repo: https://gitlab.com/gpsd/gpsd
+    type: GIT
+  versions: []
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=486709178
+
+  ```
+  Crash type: Global-buffer-overflow READ 1
+  Crash state:
+  navcom_parse
+  gpsd_poll
+  FuzzDrivers.c
+  ```
+id: OSV-2026-307
+modified: '2026-02-25T00:16:23.864694Z'
+published: '2026-02-25T00:16:23.864362Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=486709178
+schema_version: 1.7.3
+summary: Global-buffer-overflow in navcom_parse
