@@ -1,0 +1,35 @@
+affected:
+- database_specific:
+    fixed_range: c7bab3f44497eb126baa7c10429192ebd9acec91:0d3735426835aff0bd8151a0203e0720b157315f
+    introduced_range: a178be6cde3ab016f0072003df87517e289e075a:0d7f739ddd93f6e7b7bb9b7e8db9aa4ba639fbda
+  ecosystem_specific:
+    severity: MEDIUM
+  package:
+    ecosystem: OSS-Fuzz
+    name: libical
+    purl: pkg:generic/libical
+  ranges:
+  - events:
+    - introduced: f8cb7b4349809e51bad3902d130804d31ede3116
+    - fixed: 0d3735426835aff0bd8151a0203e0720b157315f
+    repo: https://github.com/libical/libical.git
+    type: GIT
+  versions: []
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=481458325
+
+  ```
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  vcardstructured_free
+  vcardparameter_free
+  vcardproperty_free
+  ```
+id: OSV-2026-195
+modified: '2026-02-05T00:15:22.587818Z'
+published: '2026-02-05T00:15:22.587525Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=481458325
+schema_version: 1.7.3
+summary: Use-of-uninitialized-value in vcardstructured_free

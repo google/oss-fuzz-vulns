@@ -1,0 +1,35 @@
+affected:
+- database_specific:
+    fixed_range: c7bab3f44497eb126baa7c10429192ebd9acec91:0d3735426835aff0bd8151a0203e0720b157315f
+    introduced_range: 79a5324fd751adaa6c2336a215ca0783d5f57f29:e6c4d276a1df6c73bd2bec2c53dd98e367126375
+  ecosystem_specific:
+    severity: HIGH
+  package:
+    ecosystem: OSS-Fuzz
+    name: libical
+    purl: pkg:generic/libical
+  ranges:
+  - events:
+    - introduced: 00fc43fd2faaa5a3d0a667dbb56bd35ba758892d
+    - fixed: 0d3735426835aff0bd8151a0203e0720b157315f
+    repo: https://github.com/libical/libical.git
+    type: GIT
+  versions: []
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=486715154
+
+  ```
+  Crash type: Heap-buffer-overflow WRITE 8
+  Crash state:
+  vcardstructured_new_from_string
+  vcardparameter_set_value_from_string
+  _parse_vcard
+  ```
+id: OSV-2026-308
+modified: '2026-02-25T00:19:49.964188Z'
+published: '2026-02-25T00:19:49.963815Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=486715154
+schema_version: 1.7.3
+summary: Heap-buffer-overflow in vcardstructured_new_from_string
