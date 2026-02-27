@@ -66,6 +66,7 @@ affected:
   - ghostpdl-10.06.0rc1
   - ghostpdl-10.06.0rc2
   - ghostpdl-10.06.0
+  - ghostpdl-10.07.0rc1_test001
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=43904
 
@@ -77,7 +78,7 @@ details: |
   alloc_restore_step_in
   ```
 id: OSV-2022-73
-modified: '2025-09-09T14:31:44.774726Z'
+modified: '2026-02-27T14:27:39.486523Z'
 published: '2022-01-22T00:00:41.413569Z'
 references:
 - type: REPORT
