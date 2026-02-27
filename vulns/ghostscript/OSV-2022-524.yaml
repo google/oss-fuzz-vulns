@@ -52,6 +52,7 @@ affected:
   - ghostpdl-10.06.0rc1
   - ghostpdl-10.06.0rc2
   - ghostpdl-10.06.0
+  - ghostpdl-10.07.0rc1_test001
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=48547
 
@@ -63,7 +64,7 @@ details: |
   Instance_Reset
   ```
 id: OSV-2022-524
-modified: '2025-09-09T14:31:56.225132Z'
+modified: '2026-02-27T14:23:44.279939Z'
 published: '2022-07-01T00:01:43.353257Z'
 references:
 - type: REPORT
