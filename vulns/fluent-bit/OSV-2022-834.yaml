@@ -100,6 +100,7 @@ affected:
   - v4.2.0
   - v4.2.1
   - v4.2.2
+  - v5.0.0-dev-20260228
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=50924
 
@@ -111,7 +112,7 @@ details: |
   flb_config_exit
   ```
 id: OSV-2022-834
-modified: '2025-12-24T14:22:31.811787Z'
+modified: '2026-02-28T14:10:15.177444Z'
 published: '2022-09-04T00:00:31.605787Z'
 references:
 - type: REPORT
