@@ -71,6 +71,7 @@ affected:
   - v2.21.3
   - v2.22.0
   - v2.23.0
+  - v2.23.1
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=36623
 
@@ -82,7 +83,7 @@ details: |
   ZSTD_decompressDCtx
   ```
 id: OSV-2021-1070
-modified: '2026-01-29T14:10:02.243833Z'
+modified: '2026-03-03T14:15:27.702500Z'
 published: '2021-07-29T00:01:10.187569Z'
 references:
 - type: REPORT
