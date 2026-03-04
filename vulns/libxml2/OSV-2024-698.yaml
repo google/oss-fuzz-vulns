@@ -20,6 +20,7 @@ affected:
   - v2.14.6
   - v2.15.0
   - v2.15.1
+  - v2.15.2
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=70774
 
@@ -31,7 +32,7 @@ details: |
   parseAndPrintFile
   ```
 id: OSV-2024-698
-modified: '2025-10-17T14:25:28.517688Z'
+modified: '2026-03-04T14:22:14.763970Z'
 published: '2024-07-31T00:12:19.254629Z'
 references:
 - type: REPORT
