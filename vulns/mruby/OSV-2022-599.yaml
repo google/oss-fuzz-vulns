@@ -1,30 +1,15 @@
-id: OSV-2022-599
-summary: Use-of-uninitialized-value in mrb_bint_as_int
-details: |
-  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=49268
-
-  ```
-  Crash type: Use-of-uninitialized-value
-  Crash state:
-  mrb_bint_as_int
-  mrb_ensure_int_type
-  mrb_get_args
-  ```
-modified: '2025-04-20T14:42:31.713755Z'
-published: '2022-07-20T00:00:11.865502Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=49268
 affected:
-- package:
-    name: mruby
+- ecosystem_specific:
+    severity: MEDIUM
+  package:
     ecosystem: OSS-Fuzz
+    name: mruby
     purl: pkg:generic/mruby
   ranges:
-  - type: GIT
-    repo: https://github.com/mruby/mruby
-    events:
+  - events:
     - introduced: 714e8a57af690805b3edcffdffc42729833bc50a
+    repo: https://github.com/mruby/mruby
+    type: GIT
   versions:
   - 3.2.0-rc
   - 3.2.0-rc2
@@ -37,6 +22,22 @@ affected:
   - 3.4.0-rc
   - 3.4.0
   - 3.4.0-rc2
-  ecosystem_specific:
-    severity: MEDIUM
+  - 4.0.0-rc
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=49268
+
+  ```
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  mrb_bint_as_int
+  mrb_ensure_int_type
+  mrb_get_args
+  ```
+id: OSV-2022-599
+modified: '2026-03-05T14:24:14.565093Z'
+published: '2022-07-20T00:00:11.865502Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=49268
 schema_version: 1.2.0
+summary: Use-of-uninitialized-value in mrb_bint_as_int
