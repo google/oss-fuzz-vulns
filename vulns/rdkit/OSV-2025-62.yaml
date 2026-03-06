@@ -1,5 +1,7 @@
 affected:
-- ecosystem_specific:
+- database_specific:
+    fixed_range: 42ac8a37e8341655de2a8b3614158a9a29c12baf:22be7245df4207d04e0b8f865eae44179de00068
+  ecosystem_specific:
     severity: MEDIUM
   package:
     ecosystem: OSS-Fuzz
@@ -9,6 +11,7 @@ affected:
   - events:
     - introduced: 82926b048a2706b0c7c7d9e5a2d16a7187561434
     - introduced: caffd6c0fb5b5f220aea7782fed43181ca78596f
+    - fixed: 22be7245df4207d04e0b8f865eae44179de00068
     repo: https://github.com/rdkit/rdkit.git
     type: GIT
   versions:
@@ -57,8 +60,8 @@ affected:
   - Release_2025_03_4
   - Release_2025_03_5
   - Release_2025_03_6
-  - Release_2025_09_1b1
   - Release_2025_09_1
+  - Release_2025_09_1b1
   - Release_2025_09_2
   - Release_2025_09_3
   - Release_2025_09_4
@@ -75,7 +78,7 @@ details: |
   RDKit::QueryAtom::~QueryAtom
   ```
 id: OSV-2025-62
-modified: '2026-02-27T14:27:24.041047Z'
+modified: '2026-03-06T14:31:24.229549Z'
 published: '2025-01-27T00:01:51.692636Z'
 references:
 - type: REPORT
