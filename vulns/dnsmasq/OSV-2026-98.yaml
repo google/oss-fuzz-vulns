@@ -1,0 +1,40 @@
+affected:
+- database_specific:
+    fixed_range: cb321709e9f20cd0949aa375dad2b97050394659:1eab169173fc4c8579a3db61186096fe117e6aca
+    introduced_range: e1faf705c96352906e5b867cdd772eb2808e394c:cb321709e9f20cd0949aa375dad2b97050394659
+  ecosystem_specific:
+    severity: MEDIUM
+  package:
+    ecosystem: OSS-Fuzz
+    name: dnsmasq
+    purl: pkg:generic/dnsmasq
+  ranges:
+  - events:
+    - introduced: 1269f074f86bb959863012063060a3a082d37dc4
+    - fixed: 1eab169173fc4c8579a3db61186096fe117e6aca
+    repo: git://thekelleys.org.uk/dnsmasq.git
+    type: GIT
+  versions:
+  - v2.93test1
+  - v2.93test2
+  - v2.93test3
+  - v2.93test4
+  - v2.93test5
+  - v2.93test6
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=476539622
+
+  ```
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  hostname_issubdomain
+  fuzz_util.c
+  ```
+id: OSV-2026-98
+modified: '2026-01-21T00:16:59.551548Z'
+published: '2026-01-21T00:16:59.551255Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=476539622
+schema_version: 1.7.3
+summary: Heap-buffer-overflow in hostname_issubdomain
