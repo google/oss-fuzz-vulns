@@ -1,5 +1,7 @@
 affected:
-- ecosystem_specific:
+- database_specific:
+    fixed_range: 65c937f2a6c03f2c0f0c1ded6db1be606e4d1622:d08b21d4566ef94cfd3fe3e86c7afaed9157f5a6
+  ecosystem_specific:
     severity: MEDIUM
   package:
     ecosystem: PyPI
@@ -8,6 +10,7 @@ affected:
   ranges:
   - events:
     - introduced: 0f32e9dbb790d9eef3f13d32e877b57784946d55
+    - fixed: d08b21d4566ef94cfd3fe3e86c7afaed9157f5a6
     repo: https://github.com/angr/pyvex.git
     type: GIT
   versions: []
