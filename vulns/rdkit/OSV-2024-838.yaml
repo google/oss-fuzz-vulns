@@ -1,5 +1,7 @@
 affected:
-- ecosystem_specific:
+- database_specific:
+    fixed_range: 42ac8a37e8341655de2a8b3614158a9a29c12baf:22be7245df4207d04e0b8f865eae44179de00068
+  ecosystem_specific:
     severity: HIGH
   package:
     ecosystem: OSS-Fuzz
@@ -9,6 +11,7 @@ affected:
   - events:
     - introduced: 0bdb247934ada336f060a13b8868b8720cd2fe9e
     - introduced: 44e3e0487986f7557b75cc679c0d82b2009c77e0
+    - fixed: 22be7245df4207d04e0b8f865eae44179de00068
     repo: https://github.com/rdkit/rdkit.git
     type: GIT
   versions:
@@ -39,22 +42,22 @@ affected:
   - Release_2024_03_4
   - Release_2024_03_5
   - Release_2024_03_6
-  - Release_2024_09_1b1
   - Release_2024_09_1
+  - Release_2024_09_1b1
   - Release_2024_09_2
   - Release_2024_09_3
   - Release_2024_09_4
   - Release_2024_09_5
   - Release_2024_09_6
-  - Release_2025_03_1b1
   - Release_2025_03_1
+  - Release_2025_03_1b1
   - Release_2025_03_2
   - Release_2025_03_3
   - Release_2025_03_4
   - Release_2025_03_5
   - Release_2025_03_6
-  - Release_2025_09_1b1
   - Release_2025_09_1
+  - Release_2025_09_1b1
   - Release_2025_09_2
   - Release_2025_09_3
   - Release_2025_09_4
@@ -71,7 +74,7 @@ details: |
   RDKit::RecursiveStructureQuery::copy
   ```
 id: OSV-2024-838
-modified: '2026-02-27T14:26:08.184821Z'
+modified: '2026-03-07T14:34:10.603763Z'
 published: '2024-08-16T00:03:32.029853Z'
 references:
 - type: REPORT
