@@ -1,0 +1,33 @@
+affected:
+- database_specific:
+    fixed_range: f06f31580ca84bb1f68665a8b7c1d8039872a934:ec89050c3ee60b9bfbae28e5e39e9c334e1bcf7d
+  ecosystem_specific:
+    severity: MEDIUM
+  package:
+    ecosystem: OSS-Fuzz
+    name: gpsd
+    purl: pkg:generic/gpsd
+  ranges:
+  - events:
+    - introduced: 6f51c13fcf0aa0f5492ad1d67900de7803332906
+    - fixed: ec89050c3ee60b9bfbae28e5e39e9c334e1bcf7d
+    repo: https://gitlab.com/gpsd/gpsd
+    type: GIT
+  versions: []
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=483900342
+
+  ```
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  ntrip_parse_url
+  FuzzClient.c
+  ```
+id: OSV-2026-242
+modified: '2026-02-14T00:17:42.946299Z'
+published: '2026-02-14T00:17:42.945923Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=483900342
+schema_version: 1.7.3
+summary: Use-of-uninitialized-value in ntrip_parse_url
