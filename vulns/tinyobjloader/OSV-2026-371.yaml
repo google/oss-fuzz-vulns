@@ -1,0 +1,32 @@
+affected:
+- ecosystem_specific:
+    severity: MEDIUM
+  package:
+    ecosystem: OSS-Fuzz
+    name: tinyobjloader
+    purl: pkg:generic/tinyobjloader
+  ranges:
+  - events:
+    - introduced: f27721f3c9cd20af4d4eee789431b92d0e0c4477
+    - fixed: 966edceaf8cdca7996c4e9a1c5ced2938de63366
+    repo: https://github.com/tinyobjloader/tinyobjloader
+    type: GIT
+  versions: []
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=490598877
+
+  ```
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  tinyobj::tryParseDouble
+  tinyobj::LoadObjInternal
+  tinyobj::LoadObj
+  ```
+id: OSV-2026-371
+modified: '2026-03-09T00:09:41.689926Z'
+published: '2026-03-09T00:09:41.689616Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=490598877
+schema_version: 1.7.3
+summary: Heap-buffer-overflow in tinyobj::tryParseDouble
