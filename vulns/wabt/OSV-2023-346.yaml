@@ -21,6 +21,7 @@ affected:
   - 1.0.37
   - 1.0.38
   - 1.0.39
+  - 1.0.40
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=58344
 
@@ -32,7 +33,7 @@ details: |
   std::__1::vector<wabt::interp::HandlerDesc, std::__1::allocator<wabt::interp::Ha
   ```
 id: OSV-2023-346
-modified: '2025-11-05T14:25:10.577132Z'
+modified: '2026-03-11T14:24:45.211720Z'
 published: '2023-04-27T14:02:25.286668Z'
 references:
 - type: REPORT
