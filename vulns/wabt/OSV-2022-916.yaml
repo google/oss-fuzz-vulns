@@ -22,6 +22,7 @@ affected:
   - 1.0.37
   - 1.0.38
   - 1.0.39
+  - 1.0.40
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=51565
 
@@ -33,7 +34,7 @@ details: |
   wabt::interp::ReadBinaryInterp
   ```
 id: OSV-2022-916
-modified: '2025-11-05T14:23:11.416684Z'
+modified: '2026-03-11T14:23:47.282795Z'
 published: '2022-09-20T00:00:42.122902Z'
 references:
 - type: REPORT
