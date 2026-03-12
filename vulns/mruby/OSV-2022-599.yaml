@@ -23,6 +23,7 @@ affected:
   - 3.4.0
   - 3.4.0-rc2
   - 4.0.0-rc
+  - 4.0.0-rc2
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=49268
 
@@ -34,7 +35,7 @@ details: |
   mrb_get_args
   ```
 id: OSV-2022-599
-modified: '2026-03-05T14:24:14.565093Z'
+modified: '2026-03-12T14:10:24.439358Z'
 published: '2022-07-20T00:00:11.865502Z'
 references:
 - type: REPORT
