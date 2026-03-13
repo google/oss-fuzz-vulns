@@ -26,6 +26,7 @@ affected:
   - test
   - 0.27.0-rc1
   - tag-test
+  - 0.27.0-rc2
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=58932
 
@@ -37,7 +38,7 @@ details: |
   cflex_delete_file
   ```
 id: OSV-2023-395
-modified: '2026-03-03T14:19:00.418294Z'
+modified: '2026-03-13T14:25:13.201222Z'
 published: '2023-05-14T14:00:57.078498Z'
 references:
 - type: REPORT
