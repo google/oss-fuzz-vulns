@@ -1,0 +1,35 @@
+affected:
+- database_specific:
+    fixed_range: 115ebbb0a8fed945f90b8506fa612f364cdf164f:da585617443d657b654ca42fe05996eb7a334a38
+    introduced_range: 1c9dd8733a327f9263cb3958904faec029a3497f:1dd9fdb96d2725e9b0eb5e91ff876e065588658b
+  ecosystem_specific:
+    severity: null
+  package:
+    ecosystem: OSS-Fuzz
+    name: gpsd
+    purl: pkg:generic/gpsd
+  ranges:
+  - events:
+    - introduced: 4f56109c04a747a44de37cd345d9d1f8cbc93bf6
+    - fixed: da585617443d657b654ca42fe05996eb7a334a38
+    repo: https://gitlab.com/gpsd/gpsd
+    type: GIT
+  versions: []
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=490142464
+
+  ```
+  Crash type: Segv on unknown address
+  Crash state:
+  gpsd_vlog
+  gpsd_log
+  processGSV
+  ```
+id: OSV-2026-359
+modified: '2026-03-07T00:03:40.062505Z'
+published: '2026-03-07T00:03:40.062221Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=490142464
+schema_version: 1.7.5
+summary: Segv on unknown address in gpsd_vlog
