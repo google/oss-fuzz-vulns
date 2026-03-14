@@ -1,0 +1,45 @@
+affected:
+- database_specific:
+    introduced_range: 80f2ae843a3c0968b34db51e4bb62a4610fa685d:db856d41004301b3a56438efd957ef5cabb91530
+  ecosystem_specific:
+    severity: MEDIUM
+  package:
+    ecosystem: OSS-Fuzz
+    name: binutils
+    purl: pkg:generic/binutils
+  ranges:
+  - events:
+    - introduced: e814012b2b108743e21b7ef2799310a0f4e0a86d
+    - fixed: c8b798145ff623a87ec4d39015cf832b0160899d
+    repo: git://sourceware.org/git/binutils-gdb.git
+    type: GIT
+  versions:
+  - binutils-2_44
+  - binutils-2_45
+  - binutils-2_45_1
+  - binutils-2_46
+  - gdb-15.2-release
+  - gdb-16-branchpoint
+  - gdb-16.1-release
+  - gdb-16.2-release
+  - gdb-16.3-release
+  - gdb-17-branchpoint
+  - gdb-17.1-release
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=489127262
+
+  ```
+  Crash type: UNKNOWN READ
+  Crash state:
+  bfd_getl32
+  mips32_64bit_reloc
+  bfd_perform_relocation
+  ```
+id: OSV-2026-350
+modified: '2026-03-04T00:14:56.651660Z'
+published: '2026-03-04T00:14:56.651284Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=489127262
+schema_version: 1.7.5
+summary: UNKNOWN READ in bfd_getl32
