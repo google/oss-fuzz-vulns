@@ -1,5 +1,6 @@
 affected:
 - database_specific:
+    fixed_range: 6a52e6013e34fbf2ae1e2b9799f06cc787bb58fa:00605b2da7a0651a490783636f4a90060ad63c08
     introduced_range: 80f2ae843a3c0968b34db51e4bb62a4610fa685d:db856d41004301b3a56438efd957ef5cabb91530
   ecosystem_specific:
     severity: MEDIUM
@@ -11,6 +12,10 @@ affected:
   - events:
     - introduced: e814012b2b108743e21b7ef2799310a0f4e0a86d
     - fixed: c8b798145ff623a87ec4d39015cf832b0160899d
+    - fixed: 00605b2da7a0651a490783636f4a90060ad63c08
+    - introduced: 9542d1b3a05477c415d870b7b652cdde75a5c8ea
+    - fixed: ac1e680635a4195e346f52922e4a5d4ad20c7a7e
+    - fixed: 82243c183899670f43dc18aa920c57b7bb79ea19
     repo: git://sourceware.org/git/binutils-gdb.git
     type: GIT
   versions:
@@ -36,7 +41,7 @@ details: |
   bfd_perform_relocation
   ```
 id: OSV-2026-350
-modified: '2026-03-04T00:14:56.651660Z'
+modified: '2026-03-14T18:43:19.427139Z'
 published: '2026-03-04T00:14:56.651284Z'
 references:
 - type: REPORT
