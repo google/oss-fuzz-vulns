@@ -1,5 +1,7 @@
 affected:
-- ecosystem_specific:
+- database_specific:
+    fixed_range: 2b7c8b56af892654460e287e48b61d23ea86a7cc:8e0bcc6da2a33efb8792b1b642461a6797902ec3
+  ecosystem_specific:
     severity: MEDIUM
   package:
     ecosystem: OSS-Fuzz
@@ -9,6 +11,7 @@ affected:
   - events:
     - introduced: fea85c46fd3bc3d51fe5eda55f8b4b73e4896a5f
     - fixed: 83aa1379cf1692eb8d06bc20612cb1ab95060c69
+    - fixed: 8e0bcc6da2a33efb8792b1b642461a6797902ec3
     repo: https://github.com/pjsip/pjproject
     type: GIT
   versions: []
