@@ -1,0 +1,32 @@
+affected:
+- ecosystem_specific:
+    severity: MEDIUM
+  package:
+    ecosystem: OSS-Fuzz
+    name: pjsip
+    purl: pkg:generic/pjsip
+  ranges:
+  - events:
+    - introduced: fea85c46fd3bc3d51fe5eda55f8b4b73e4896a5f
+    - fixed: 83aa1379cf1692eb8d06bc20612cb1ab95060c69
+    repo: https://github.com/pjsip/pjproject
+    type: GIT
+  versions: []
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=488721002
+
+  ```
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  pjsip_auth_clt_init_req
+  fuzz-sip.c
+  fuzz-sip.c
+  ```
+id: OSV-2026-338
+modified: '2026-03-03T00:09:55.521245Z'
+published: '2026-03-03T00:09:55.520965Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=488721002
+schema_version: 1.7.5
+summary: Use-of-uninitialized-value in pjsip_auth_clt_init_req
