@@ -38,6 +38,7 @@ affected:
   - v1.6.1
   - v1.6.2
   - v1.6.3
+  - v1.7.0
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=65047
 
@@ -49,7 +50,7 @@ details: |
   bpf_object_open
   ```
 id: OSV-2023-1307
-modified: '2026-02-04T14:09:09.741123Z'
+modified: '2026-03-17T14:24:53.158428Z'
 published: '2023-12-15T00:12:51.528155Z'
 references:
 - type: REPORT
