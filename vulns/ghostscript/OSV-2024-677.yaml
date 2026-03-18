@@ -31,6 +31,7 @@ affected:
   - ghostpdl-10.07.0rc1_test001
   - ghostpdl-10.07.0rc1_test002
   - ghostpdl-10.07.0rc1_test003
+  - ghostpdl-10.07.0rc1_test004
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=69038
 
@@ -42,7 +43,7 @@ details: |
   interp_reclaim
   ```
 id: OSV-2024-677
-modified: '2026-03-05T14:30:40.209744Z'
+modified: '2026-03-18T14:32:20.684770Z'
 published: '2024-07-25T00:06:43.762625Z'
 references:
 - type: REPORT
