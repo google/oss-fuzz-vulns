@@ -50,6 +50,7 @@ affected:
   - ghostpdl-10.07.0rc1_test001
   - ghostpdl-10.07.0rc1_test002
   - ghostpdl-10.07.0rc1_test003
+  - ghostpdl-10.07.0rc1_test004
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=55443
 
@@ -61,7 +62,7 @@ details: |
   ireclaim
   ```
 id: OSV-2023-34
-modified: '2026-03-05T14:33:25.047298Z'
+modified: '2026-03-18T14:25:32.218330Z'
 published: '2023-01-29T13:00:17.773387Z'
 references:
 - type: REPORT
