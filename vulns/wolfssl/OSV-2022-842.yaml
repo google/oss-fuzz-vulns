@@ -31,6 +31,7 @@ affected:
   - v5.8.2-stable
   - v5.8.4-stable
   - wolfEntropy2d
+  - v5.9.0-stable
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=50946
 
@@ -42,7 +43,7 @@ details: |
   wc_ed448_sign_msg
   ```
 id: OSV-2022-842
-modified: '2025-12-06T14:25:22.084208Z'
+modified: '2026-03-19T14:24:32.279617Z'
 published: '2022-09-05T00:00:28.251072Z'
 references:
 - type: REPORT
