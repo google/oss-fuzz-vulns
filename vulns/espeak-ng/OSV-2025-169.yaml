@@ -1,5 +1,21 @@
-id: OSV-2025-169
-summary: Stack-buffer-overflow in utf8_in2
+affected:
+- database_specific:
+    fixed_range: c9f465da2acb280f4403cd668224a94cc4db342d:80f7d5d5869584913b03760db302b6ca0dda9f55
+  ecosystem_specific:
+    severity: MEDIUM
+  package:
+    ecosystem: OSS-Fuzz
+    name: espeak-ng
+    purl: pkg:generic/espeak-ng
+  ranges:
+  - events:
+    - introduced: 0a713d52bbf3e061823d1a7f35e5303e7320f27a
+    - fixed: 80f7d5d5869584913b03760db302b6ca0dda9f55
+    repo: https://github.com/espeak-ng/espeak-ng
+    type: GIT
+  versions:
+  - '1.51'
+  - 1.52.0
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=399228595
 
@@ -10,24 +26,11 @@ details: |
   MatchRule
   TranslateRules
   ```
-modified: '2025-02-27T00:07:08.029655Z'
+id: OSV-2025-169
+modified: '2026-03-21T14:18:54.197384Z'
 published: '2025-02-27T00:07:08.029075Z'
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=399228595
-affected:
-- package:
-    name: espeak-ng
-    ecosystem: OSS-Fuzz
-    purl: pkg:generic/espeak-ng
-  ranges:
-  - type: GIT
-    repo: https://github.com/espeak-ng/espeak-ng
-    events:
-    - introduced: 0a713d52bbf3e061823d1a7f35e5303e7320f27a
-  versions:
-  - '1.51'
-  - 1.52.0
-  ecosystem_specific:
-    severity: MEDIUM
 schema_version: 1.6.0
+summary: Stack-buffer-overflow in utf8_in2
