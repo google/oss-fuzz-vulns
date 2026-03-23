@@ -1,5 +1,6 @@
 affected:
 - database_specific:
+    fixed_range: c2fe0160c9e3bf01ff5b91501128748ab83aae1c:1332b833ac7b1c9596e4f771ab2b3f1b13f62d99
     introduced_range: 354d77e68ddea42a4d8068ac5a92e32035848fb7:b176c52456b31ee223c82ed2c765471b190bc18a
   ecosystem_specific:
     severity: HIGH
@@ -11,6 +12,7 @@ affected:
   - events:
     - introduced: 1ca9a4ce1b63568ed43aa7c93697114dc6b3fbcb
     - fixed: 84d94206198d183bce6af08a15ecac78a9f4d951
+    - fixed: 1332b833ac7b1c9596e4f771ab2b3f1b13f62d99
     repo: https://github.com/GrokImageCompression/grok.git
     type: GIT
   versions:
@@ -27,7 +29,7 @@ details: |
   void* std::__1::__thread_proxy
   ```
 id: OSV-2026-437
-modified: '2026-03-23T00:02:28.278523Z'
+modified: '2026-03-23T14:25:41.819255Z'
 published: '2026-03-23T00:02:28.277984Z'
 references:
 - type: REPORT
