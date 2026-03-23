@@ -1,0 +1,36 @@
+affected:
+- database_specific:
+    introduced_range: 354d77e68ddea42a4d8068ac5a92e32035848fb7:b176c52456b31ee223c82ed2c765471b190bc18a
+  ecosystem_specific:
+    severity: HIGH
+  package:
+    ecosystem: OSS-Fuzz
+    name: grok
+    purl: pkg:generic/grok
+  ranges:
+  - events:
+    - introduced: 1ca9a4ce1b63568ed43aa7c93697114dc6b3fbcb
+    - fixed: 84d94206198d183bce6af08a15ecac78a9f4d951
+    repo: https://github.com/GrokImageCompression/grok.git
+    type: GIT
+  versions:
+  - v20.1.0
+  - v20.2.0
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=494709474
+
+  ```
+  Crash type: Heap-use-after-free WRITE 8
+  Crash state:
+  tf::Executor::_invoke
+  tf::Executor::_spawn
+  void* std::__1::__thread_proxy
+  ```
+id: OSV-2026-437
+modified: '2026-03-23T00:02:28.278523Z'
+published: '2026-03-23T00:02:28.277984Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=494709474
+schema_version: 1.7.5
+summary: Heap-use-after-free in tf::Executor::_invoke
