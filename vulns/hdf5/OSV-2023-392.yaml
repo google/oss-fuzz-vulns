@@ -47,6 +47,7 @@ affected:
   - 2.1.0-pre1test
   - 2.1.0
   - hdf5_2.1.0
+  - 2.1.1
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=58892
 
@@ -58,7 +59,7 @@ details: |
   H5O__msg_iterate_real
   ```
 id: OSV-2023-392
-modified: '2026-03-05T14:50:14.844074Z'
+modified: '2026-03-24T15:13:27.688997Z'
 published: '2023-05-13T14:00:26.093088Z'
 references:
 - type: REPORT
