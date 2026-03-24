@@ -47,6 +47,7 @@ affected:
   - 2.1.0-pre1test
   - 2.1.0
   - hdf5_2.1.0
+  - 2.1.1
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=59295
 
@@ -58,7 +59,7 @@ details: |
   H5G__stab_lookup_cb
   ```
 id: OSV-2023-430
-modified: '2026-03-05T14:50:31.048848Z'
+modified: '2026-03-24T14:48:04.919113Z'
 published: '2023-05-26T14:00:26.078002Z'
 references:
 - type: REPORT
