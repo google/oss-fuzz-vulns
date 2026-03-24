@@ -1,5 +1,6 @@
 affected:
 - database_specific:
+    fixed_range: a31dcef98c7d1d8927871ac169a1c24ad8875046:d7ae12ae71dfd6ab2997527d295014a8996fa0f9
     introduced_range: b22685617750e51d95f643d8eb1382dd09dd3bf1:e5fd3918c1c4a2ee39016e71b66a9eeda85ce716
   ecosystem_specific:
     severity: MEDIUM
@@ -10,6 +11,7 @@ affected:
   ranges:
   - events:
     - introduced: 24379bf53c30b35151f345318d850bac49219288
+    - fixed: d7ae12ae71dfd6ab2997527d295014a8996fa0f9
     repo: https://github.com/bellard/quickjs
     type: GIT
   versions: []
