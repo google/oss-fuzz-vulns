@@ -692,6 +692,8 @@ affected:
   - 0.13.4.7985
   - 0.13.4.7998
   - 0.13.4.8001
+  - 0.13.4.8014
+  - 0.13.4.8018
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=47151
 
@@ -703,7 +705,7 @@ details: |
   dwg_geojson_object
   ```
 id: OSV-2022-388
-modified: '2026-03-23T14:21:08.225627Z'
+modified: '2026-03-24T14:22:41.234816Z'
 published: '2022-05-01T00:01:54.904711Z'
 references:
 - type: REPORT
