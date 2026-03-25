@@ -1,0 +1,32 @@
+affected:
+- database_specific:
+    introduced_range: c73a435f365e5250dd529cde00675528d7609edf:f1139494d18a2053630c5ed3384a42bb70db3c53
+  ecosystem_specific:
+    severity: MEDIUM
+  package:
+    ecosystem: OSS-Fuzz
+    name: quickjs
+    purl: pkg:generic/quickjs
+  ranges:
+  - events:
+    - introduced: 31ef02b90785fbc6effb82c300bf05a2a0903088
+    repo: https://github.com/bellard/quickjs
+    type: GIT
+  versions: []
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=471304472
+
+  ```
+  Crash type: Stack-buffer-overflow READ 8
+  Crash state:
+  lre_exec
+  fuzz_regexp.c
+  ```
+id: OSV-2025-1018
+modified: '2025-12-25T00:02:56.808867Z'
+published: '2025-12-25T00:02:56.807884Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=471304472
+schema_version: 1.7.5
+summary: Stack-buffer-overflow in lre_exec
