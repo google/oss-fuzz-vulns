@@ -1,0 +1,35 @@
+affected:
+- database_specific:
+    fixed_range: 1420107810fc928962c559ebf59cf110c5d3f7de:13313aefb1558f1281a076151a03d5b90788e7e0
+    introduced_range: 304290044b5c6b1af62c3b44afa9fd674a9656af:1420107810fc928962c559ebf59cf110c5d3f7de
+  ecosystem_specific:
+    severity: MEDIUM
+  package:
+    ecosystem: OSS-Fuzz
+    name: poppler
+    purl: pkg:generic/poppler
+  ranges:
+  - events:
+    - introduced: 1c6e5df94e06c9ad7e5af6aabfe38409532a85de
+    - fixed: 13313aefb1558f1281a076151a03d5b90788e7e0
+    repo: https://gitlab.freedesktop.org/poppler/poppler.git
+    type: GIT
+  versions: []
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=495914144
+
+  ```
+  Crash type: UNKNOWN READ
+  Crash state:
+  XRef::constructObjectEntry
+  XRef::constructXRef
+  XRef::XRef
+  ```
+id: OSV-2026-461
+modified: '2026-03-26T00:17:47.551361Z'
+published: '2026-03-26T00:17:47.551046Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=495914144
+schema_version: 1.7.5
+summary: UNKNOWN READ in XRef::constructObjectEntry
