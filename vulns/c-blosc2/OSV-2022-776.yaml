@@ -1,5 +1,7 @@
 affected:
-- ecosystem_specific:
+- database_specific:
+    fixed_range: 434cd1f3d328b39b787de26e9f1d5c4390024019:4ee140a6608d5541f627c1f143e6481f2693621a
+  ecosystem_specific:
     severity: HIGH
   package:
     ecosystem: OSS-Fuzz
@@ -8,25 +10,10 @@ affected:
   ranges:
   - events:
     - introduced: 29d770956cab08bf610f73d23ecbf78a5d87b314
+    - fixed: 4ee140a6608d5541f627c1f143e6481f2693621a
     repo: https://github.com/Blosc/c-blosc2.git
     type: GIT
   versions:
-  - v2.3.0
-  - v2.3.1
-  - v2.4.0
-  - v2.4.1
-  - v2.4.2
-  - v2.4.3
-  - v2.5.0
-  - v2.6.0
-  - v2.6.1
-  - v2.7.0
-  - v2.7.1
-  - v2.8.0
-  - v2.9.0
-  - v2.9.1
-  - v2.9.2
-  - v2.9.3
   - v2.10.0
   - v2.10.1
   - v2.10.2
@@ -63,6 +50,22 @@ affected:
   - v2.22.0
   - v2.23.0
   - v2.23.1
+  - v2.3.0
+  - v2.3.1
+  - v2.4.0
+  - v2.4.1
+  - v2.4.2
+  - v2.4.3
+  - v2.5.0
+  - v2.6.0
+  - v2.6.1
+  - v2.7.0
+  - v2.7.1
+  - v2.8.0
+  - v2.9.0
+  - v2.9.1
+  - v2.9.2
+  - v2.9.3
   - v3.0.0.rc1
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=50528
@@ -75,7 +78,7 @@ details: |
   blosc2_compress
   ```
 id: OSV-2022-776
-modified: '2026-03-27T14:20:30.437447Z'
+modified: '2026-03-28T14:13:55.545096Z'
 published: '2022-08-24T00:00:48.440951Z'
 references:
 - type: REPORT
