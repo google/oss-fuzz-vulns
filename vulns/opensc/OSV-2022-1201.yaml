@@ -27,6 +27,8 @@ affected:
   - 0.27.0-rc1
   - tag-test
   - 0.27.0-rc2
+  - 0.27.0
+  - 0.27.1
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=53631
 
@@ -38,7 +40,7 @@ details: |
   muscle_create_directory
   ```
 id: OSV-2022-1201
-modified: '2026-03-13T14:15:44.308696Z'
+modified: '2026-03-31T14:04:55.969741Z'
 published: '2022-11-24T13:00:10.344351Z'
 references:
 - type: REPORT
