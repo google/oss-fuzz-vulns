@@ -1,0 +1,57 @@
+affected:
+- database_specific:
+    fixed_range: f20f12a8acc88b67bc7c3746b019ecd88c740eb0:ae2fd1771e50989dfdbebec04487e0ff9b2a31b2
+    introduced_range: cd2c73d4cdc2ed3bd8732e11e2e46d8b75f27028:47ab294d87a05f94f0688b16061b997391234b4e
+  ecosystem_specific:
+    severity: MEDIUM
+  package:
+    ecosystem: OSS-Fuzz
+    name: ogre
+    purl: pkg:generic/ogre
+  ranges:
+  - events:
+    - introduced: 60d78e456f61d8c389a76d2e127184e244533493
+    - fixed: ae2fd1771e50989dfdbebec04487e0ff9b2a31b2
+    repo: https://github.com/OGRECave/ogre
+    type: GIT
+  versions:
+  - v14.0.0
+  - v14.0.1
+  - v14.1.0
+  - v14.1.1
+  - v14.1.2
+  - v14.2.0
+  - v14.2.1
+  - v14.2.2
+  - v14.2.3
+  - v14.2.4
+  - v14.2.5
+  - v14.2.6
+  - v14.3.0
+  - v14.3.1
+  - v14.3.2
+  - v14.3.3
+  - v14.3.4
+  - v14.4.0
+  - v14.4.1
+  - v14.5.0
+  - v14.5.1
+  - v14.5.2
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42525448
+
+  ```
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  stbiw__encode_png_line
+  stbi_write_png_to_mem
+  Ogre::STBIImageCodec::encode
+  ```
+id: OSV-2023-500
+modified: '2023-06-20T14:00:54.164049Z'
+published: '2023-06-20T14:00:54.163811Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42525448
+schema_version: 1.7.5
+summary: Heap-buffer-overflow in stbiw__encode_png_line
