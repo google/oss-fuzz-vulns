@@ -151,6 +151,7 @@ affected:
   - v10.2.2
   - v11.0.0-rc0
   - v11.0.0-rc1
+  - v11.0.0-rc2
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=58813
 
@@ -162,7 +163,7 @@ details: |
   memory_region_dispatch_write
   ```
 id: OSV-2023-390
-modified: '2026-03-25T14:36:40.217425Z'
+modified: '2026-04-02T14:44:40.412675Z'
 published: '2023-05-12T14:00:08.854823Z'
 references:
 - type: REPORT
