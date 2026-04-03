@@ -678,6 +678,8 @@ affected:
   - 0.13.4.8051
   - 0.13.4.8055
   - 0.13.4.8085
+  - 0.13.4.8091
+  - 0.13.4.8104
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=53617
 
@@ -689,7 +691,7 @@ details: |
   dwg_write_json
   ```
 id: OSV-2022-1198
-modified: '2026-04-01T14:25:19.369114Z'
+modified: '2026-04-03T14:18:53.973603Z'
 published: '2022-11-23T13:02:06.623044Z'
 references:
 - type: REPORT
