@@ -764,6 +764,8 @@ affected:
   - 0.13.4.8085
   - 0.13.4.8091
   - 0.13.4.8104
+  - 0.13.4.8112
+  - 0.13.4.8115
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=36728
 
@@ -775,7 +777,7 @@ details: |
   dwg_dxf_REGION_private
   ```
 id: OSV-2021-1086
-modified: '2026-04-03T14:18:36.016382Z'
+modified: '2026-04-04T14:16:39.763348Z'
 published: '2021-08-02T00:00:31.888461Z'
 references:
 - type: REPORT
