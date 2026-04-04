@@ -1,5 +1,6 @@
 affected:
 - database_specific:
+    fixed_range: 876b9fa5de8ec4726a4e7f133bf355c3d217b450:5821ef69f2e351b965226ef9d0d9c74742d44d83
     introduced_range: 2a3ca7506ac4872a9eb210be00c2dd4386561db2:28070b88d88f5846d6dfa6651e3253e7ff63c9ea
   ecosystem_specific:
     severity: HIGH
@@ -11,6 +12,7 @@ affected:
   - events:
     - introduced: 75768ba48243f01e9913b0ba46196c9c0e3c8d9d
     - fixed: 0ac0a2a417e75cfe9cdba6ce393b890d793b4b95
+    - fixed: 5821ef69f2e351b965226ef9d0d9c74742d44d83
     repo: https://gitlab.gnome.org/GNOME/glib
     type: GIT
   versions: []
