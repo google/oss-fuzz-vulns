@@ -1,0 +1,34 @@
+affected:
+- database_specific:
+    introduced_range: 2a3ca7506ac4872a9eb210be00c2dd4386561db2:28070b88d88f5846d6dfa6651e3253e7ff63c9ea
+  ecosystem_specific:
+    severity: HIGH
+  package:
+    ecosystem: OSS-Fuzz
+    name: glib
+    purl: pkg:generic/glib
+  ranges:
+  - events:
+    - introduced: 75768ba48243f01e9913b0ba46196c9c0e3c8d9d
+    - fixed: 0ac0a2a417e75cfe9cdba6ce393b890d793b4b95
+    repo: https://gitlab.gnome.org/GNOME/glib
+    type: GIT
+  versions: []
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=498475244
+
+  ```
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  g_utf8_get_char
+  g_markup_escape_text
+  fuzz_markup_escape_text.c
+  ```
+id: OSV-2026-512
+modified: '2026-04-03T00:07:59.708039Z'
+published: '2026-04-03T00:07:59.707776Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=498475244
+schema_version: 1.7.5
+summary: Heap-buffer-overflow in g_utf8_get_char

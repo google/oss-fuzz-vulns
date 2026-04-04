@@ -1,0 +1,33 @@
+affected:
+- database_specific:
+    introduced_range: dc00f3536f7f636ffea639430faa2d828317137c:3f1668a2c621e56bf80a068a0bf8cb5d52cbafea
+  ecosystem_specific:
+    severity: MEDIUM
+  package:
+    ecosystem: OSS-Fuzz
+    name: tinyusb
+    purl: pkg:generic/tinyusb
+  ranges:
+  - events:
+    - introduced: b73df6c22e4743f9232f7922fe2cf0fbd05a3a2e
+    - fixed: 9a577ac752cf627724066e59b3e1fe007c1d8268
+    repo: https://github.com/hathach/tinyusb.git
+    type: GIT
+  versions: []
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=482748215
+
+  ```
+  Crash type: UNKNOWN READ
+  Crash state:
+  getTypeCacheHashTableBucket
+  usbd.h
+  ```
+id: OSV-2026-215
+modified: '2026-02-10T00:07:25.478286Z'
+published: '2026-02-10T00:07:25.477890Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=482748215
+schema_version: 1.7.5
+summary: UNKNOWN READ in getTypeCacheHashTableBucket

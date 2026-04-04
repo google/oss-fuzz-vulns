@@ -1,0 +1,35 @@
+affected:
+- database_specific:
+    fixed_range: dc12da45736f03205de0841175e020a27d574290:43e2942fa05fed779324fd379bb1577ef35c158d
+    introduced_range: 6324dae114a1f8c9e1454914a70cba0ded7f5b34:a30fc69f868fa0adf85b0957fe3f67357fe73d73
+  ecosystem_specific:
+    severity: MEDIUM
+  package:
+    ecosystem: OSS-Fuzz
+    name: tmux
+    purl: pkg:generic/tmux
+  ranges:
+  - events:
+    - introduced: 7620c03b7278ed631efa98455c5e116538c23ed7
+    - fixed: 43e2942fa05fed779324fd379bb1577ef35c158d
+    repo: https://github.com/tmux/tmux.git
+    type: GIT
+  versions: []
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=498472071
+
+  ```
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  format_expand1
+  format_expand
+  format-fuzzer.c
+  ```
+id: OSV-2026-514
+modified: '2026-04-03T00:09:42.155954Z'
+published: '2026-04-03T00:09:42.155641Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=498472071
+schema_version: 1.7.5
+summary: Heap-buffer-overflow in format_expand1
