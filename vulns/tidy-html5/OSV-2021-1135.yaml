@@ -1,5 +1,19 @@
-id: OSV-2021-1135
-summary: Heap-use-after-free in prvTidyInsertedToken
+affected:
+- ecosystem_specific:
+    severity: HIGH
+  package:
+    ecosystem: OSS-Fuzz
+    name: tidy-html5
+  ranges:
+  - events:
+    - introduced: e56716f154f13b14fc5585146a85000fdd26d319
+    - fixed: d08ddc2860aa95ba8e301343a30837f157977cba
+    repo: https://github.com/htacg/tidy-html5.git
+    type: GIT
+  versions:
+  - 5.9.14-next
+  - 5.9.8-next
+  - 5.9.9-next
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=37196
 
@@ -10,23 +24,10 @@ details: |
   prvTidyGetToken
   prvTidyoldParseInline
   ```
-modified: '2022-04-13T03:04:32.573278Z'
+id: OSV-2021-1135
+modified: '2026-04-05T14:14:03.564509Z'
 published: '2021-08-16T00:01:09.422775Z'
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=37196
-affected:
-- package:
-    name: tidy-html5
-    ecosystem: OSS-Fuzz
-  ranges:
-  - type: GIT
-    repo: https://github.com/htacg/tidy-html5.git
-    events:
-    - introduced: e56716f154f13b14fc5585146a85000fdd26d319
-  versions:
-  - 5.9.14-next
-  - 5.9.8-next
-  - 5.9.9-next
-  ecosystem_specific:
-    severity: HIGH
+summary: Heap-use-after-free in prvTidyInsertedToken
