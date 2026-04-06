@@ -1,0 +1,34 @@
+affected:
+- database_specific:
+    introduced_range: 6324dae114a1f8c9e1454914a70cba0ded7f5b34:a30fc69f868fa0adf85b0957fe3f67357fe73d73
+  ecosystem_specific:
+    severity: MEDIUM
+  package:
+    ecosystem: OSS-Fuzz
+    name: tmux
+    purl: pkg:generic/tmux
+  ranges:
+  - events:
+    - introduced: 7620c03b7278ed631efa98455c5e116538c23ed7
+    - fixed: 3badbc50e0d1c45ebfca2d2d1fad059a055584a5
+    repo: https://github.com/tmux/tmux.git
+    type: GIT
+  versions: []
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=499446092
+
+  ```
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  regsub
+  format_replace
+  format_expand1
+  ```
+id: OSV-2026-532
+modified: '2026-04-05T00:06:36.291504Z'
+published: '2026-04-05T00:06:36.291055Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=499446092
+schema_version: 1.7.5
+summary: Heap-buffer-overflow in regsub
