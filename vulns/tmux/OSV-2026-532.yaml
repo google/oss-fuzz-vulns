@@ -1,5 +1,6 @@
 affected:
 - database_specific:
+    fixed_range: 66c324d7ef714e0658ae8525b3f8e4419f211fbe:42dafcc62a9361eeaff286172f0e35d4ece12b5a
     introduced_range: 6324dae114a1f8c9e1454914a70cba0ded7f5b34:a30fc69f868fa0adf85b0957fe3f67357fe73d73
   ecosystem_specific:
     severity: MEDIUM
@@ -11,6 +12,7 @@ affected:
   - events:
     - introduced: 7620c03b7278ed631efa98455c5e116538c23ed7
     - fixed: 3badbc50e0d1c45ebfca2d2d1fad059a055584a5
+    - fixed: 42dafcc62a9361eeaff286172f0e35d4ece12b5a
     repo: https://github.com/tmux/tmux.git
     type: GIT
   versions: []
