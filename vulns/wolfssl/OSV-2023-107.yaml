@@ -30,6 +30,7 @@ affected:
   - v5.8.4-stable
   - wolfEntropy2d
   - v5.9.0-stable
+  - v5.9.1-stable
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=56308
 
@@ -41,7 +42,7 @@ details: |
   ocsp.c
   ```
 id: OSV-2023-107
-modified: '2026-03-19T14:20:03.939298Z'
+modified: '2026-04-09T14:34:49.566404Z'
 published: '2023-02-25T13:00:07.390537Z'
 references:
 - type: REPORT
