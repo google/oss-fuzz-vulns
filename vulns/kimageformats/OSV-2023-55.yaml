@@ -100,6 +100,7 @@ affected:
   - v6.24.0-rc1
   - v6.24.0
   - v6.25.0-rc1
+  - v6.25.0
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=55722
 
@@ -111,7 +112,7 @@ details: |
   LibRaw::identify
   ```
 id: OSV-2023-55
-modified: '2026-04-04T14:23:35.264168Z'
+modified: '2026-04-10T14:12:13.379692Z'
 published: '2023-02-07T13:00:07.438565Z'
 references:
 - type: REPORT
