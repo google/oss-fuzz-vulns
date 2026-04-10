@@ -1,5 +1,7 @@
 affected:
-- ecosystem_specific:
+- database_specific:
+    fixed_range: f5dcbae736e5d7f83a35718e01be1a8e3010fa39:dd92bef7f6c7a00bb0312554119b6d9cf38e4f32
+  ecosystem_specific:
     severity: MEDIUM
   package:
     ecosystem: OSS-Fuzz
@@ -8,6 +10,7 @@ affected:
   ranges:
   - events:
     - introduced: d374094d8c49b6b7d288f307e11217ec5a502391
+    - fixed: dd92bef7f6c7a00bb0312554119b6d9cf38e4f32
     repo: https://github.com/libbpf/libbpf
     type: GIT
   versions:
@@ -16,31 +19,30 @@ affected:
   - v0.7.0
   - v0.8.0
   - v0.8.1
+  - v0.8.3
   - v1.0.0
   - v1.0.1
+  - v1.0.2
+  - v1.0.3
   - v1.1.0
+  - v1.1.1
+  - v1.1.2
   - v1.2.0
+  - v1.2.1
   - v1.2.2
+  - v1.2.3
   - v1.3.0
+  - v1.3.1
+  - v1.3.2
+  - v1.3.3
+  - v1.3.4
   - v1.4.0
-  - v0.8.2
-  - v0.8.3
   - v1.4.1
   - v1.4.2
   - v1.4.3
-  - v1.0.2
-  - v1.1.1
-  - v1.2.1
-  - v1.3.1
   - v1.4.4
-  - v1.3.2
   - v1.4.5
-  - v1.0.3
-  - v1.1.2
-  - v1.2.3
-  - v1.3.3
   - v1.4.6
-  - v1.3.4
   - v1.4.7
   - v1.5.0
   - v1.5.1
@@ -60,7 +62,7 @@ details: |
   bpf_object__collect_externs
   ```
 id: OSV-2023-877
-modified: '2026-03-17T14:26:04.975858Z'
+modified: '2026-04-10T14:13:13.162417Z'
 published: '2023-09-18T14:02:44.989260Z'
 references:
 - type: REPORT
