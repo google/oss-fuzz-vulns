@@ -160,6 +160,7 @@ affected:
   - v6.24.0-rc1
   - v6.24.0
   - v6.25.0-rc1
+  - v6.25.0
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21783
 
@@ -171,7 +172,7 @@ details: |
   XCFImageFormat::loadLayer
   ```
 id: OSV-2020-876
-modified: '2026-04-04T14:17:37.416883Z'
+modified: '2026-04-11T14:04:22.896195Z'
 published: '2020-07-14T22:13:55.541274Z'
 references:
 - type: REPORT
