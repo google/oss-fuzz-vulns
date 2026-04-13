@@ -1,0 +1,37 @@
+affected:
+- database_specific:
+    fixed_range: 3294c714aa184cc5510c035e7ed679dede653e90:42826e86dc9c1805960589109cf84c93135f7cb1
+    introduced_range: 6c38ccb08d812e60e109d2c7d0e272445c63b83b:e5ed78583d703ad1e45d03e0e14434e511292ad7
+  ecosystem_specific:
+    severity: MEDIUM
+  package:
+    ecosystem: OSS-Fuzz
+    name: coturn
+    purl: pkg:generic/coturn
+  ranges:
+  - events:
+    - introduced: 4c674289a8a288dd310e87490334684b05d61381
+    - fixed: 42826e86dc9c1805960589109cf84c93135f7cb1
+    repo: https://github.com/coturn/coturn
+    type: GIT
+  versions:
+  - 4.9.0
+  - docker/4.9.0-r0
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=486713209
+
+  ```
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  BIO_new_file
+  libcrypto.so.3
+  CONF_modules_load_file_ex
+  ```
+id: OSV-2026-302
+modified: '2026-02-25T00:07:20.339278Z'
+published: '2026-02-25T00:07:20.338981Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=486713209
+schema_version: 1.7.5
+summary: Use-of-uninitialized-value in BIO_new_file
