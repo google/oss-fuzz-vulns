@@ -1,0 +1,33 @@
+affected:
+- database_specific:
+    introduced_range: 22ea21dc9efff3e1ce539a098e4839975051bbe5:ca8a1dd2e9f38ae5d0ecae43be473d3a9af6a399
+  ecosystem_specific:
+    severity: MEDIUM
+  package:
+    ecosystem: OSS-Fuzz
+    name: vlc
+    purl: pkg:generic/vlc
+  ranges:
+  - events:
+    - introduced: f8e9d090fc20452cfddb91df28bf235eb59baff1
+    repo: https://code.videolan.org/videolan/vlc.git
+    type: GIT
+  versions: []
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=475305126
+
+  ```
+  Crash type: Heap-buffer-overflow READ {*}
+  Crash state:
+  check_sync_pes
+  Demux
+  demux_process_stream
+  ```
+id: OSV-2026-49
+modified: '2026-01-15T00:11:33.030957Z'
+published: '2026-01-15T00:11:33.030721Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=475305126
+schema_version: 1.7.5
+summary: Heap-buffer-overflow in check_sync_pes
