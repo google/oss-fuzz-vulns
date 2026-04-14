@@ -25,6 +25,7 @@ affected:
   - v4.3.5-rc3
   - v4.3.5
   - v4.3.5a
+  - v4.3.5b
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=44611
 
@@ -33,7 +34,7 @@ details: |
   coap_split_uri_sub
   coap_get_uri_path
 id: OSV-2022-150
-modified: '2025-11-27T14:04:04.584406Z'
+modified: '2026-04-14T14:11:39.559701Z'
 published: '2022-02-14T00:00:50.308933Z'
 references:
 - type: REPORT
