@@ -1,0 +1,37 @@
+affected:
+- database_specific:
+    introduced_range: 402a16ea5a99a3acbda542d48e902c7e3aa50033:3a44d5d7850da3601aa43d523a3d228f045fb43d
+  ecosystem_specific:
+    severity: null
+  package:
+    ecosystem: OSS-Fuzz
+    name: shaderc
+    purl: pkg:generic/shaderc
+  ranges:
+  - events:
+    - introduced: 1dd61a4e407eeba704eb3d8796056be0415ebec8
+    - fixed: 5ccedd3fdc9146f7dcb5b1acb200d7203b54d5ca
+    repo: https://github.com/google/shaderc
+    type: GIT
+  versions:
+  - v2025.4
+  - v2025.5
+  - v2026.1
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=481635421
+
+  ```
+  Crash type: Segv on unknown address
+  Crash state:
+  glslang::TIntermediate::addSymbol
+  glslang::HlslParseContext::handleFunctionCall
+  glslang::HlslParseContext::transformEntryPoint
+  ```
+id: OSV-2026-203
+modified: '2026-02-06T00:20:30.780234Z'
+published: '2026-02-06T00:20:30.779951Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=481635421
+schema_version: 1.7.5
+summary: Segv on unknown address in glslang::TIntermediate::addSymbol
