@@ -1,0 +1,36 @@
+affected:
+- database_specific:
+    introduced_range: 69f12908fca8b940fa6cd114b0266b909fca0c1a:b750ca63a80698eddef3fc3457911bc21a825b58
+  ecosystem_specific:
+    severity: LOW
+  package:
+    ecosystem: OSS-Fuzz
+    name: htmlunit
+    purl: pkg:generic/htmlunit
+  ranges:
+  - events:
+    - introduced: 0747862ca9e647fcdb16b35c9f775eaa577f9aee
+    repo: https://github.com/HtmlUnit/htmlunit.git
+    type: GIT
+  versions:
+  - 4.19.0
+  - 4.20.0
+  - 4.21.0
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=476170180
+
+  ```
+  Crash type: Security exception
+  Crash state:
+  org.htmlunit.cyberneko.HTMLTagBalancer.endElement
+  org.htmlunit.cyberneko.HTMLElements$HTMLElementsWithCache.getElement
+  org.htmlunit.cyberneko.HTMLElements$HTMLElementsWithCache.getElement
+  ```
+id: OSV-2026-76
+modified: '2026-01-18T00:02:11.715633Z'
+published: '2026-01-18T00:02:11.715201Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=476170180
+schema_version: 1.7.5
+summary: Security exception in org.htmlunit.cyberneko.HTMLTagBalancer.endElement

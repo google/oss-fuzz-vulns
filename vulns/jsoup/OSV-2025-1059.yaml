@@ -1,0 +1,32 @@
+affected:
+- ecosystem_specific:
+    severity: LOW
+  package:
+    ecosystem: OSS-Fuzz
+    name: jsoup
+    purl: pkg:generic/jsoup
+  ranges:
+  - events:
+    - introduced: e17d2a83deb3a4918fe9792e84b98a86a121e84f
+    repo: https://github.com/jhy/jsoup/
+    type: GIT
+  versions:
+  - jsoup-1.22.1
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=476431390
+
+  ```
+  Crash type: Security exception
+  Crash state:
+  com.google.re2j.Machine.add
+  com.google.re2j.Machine$Thread.<init>
+  com.google.re2j.Machine.alloc
+  ```
+id: OSV-2025-1059
+modified: '2026-01-18T00:02:23.827710Z'
+published: '2026-01-18T00:02:23.827422Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=476431390
+schema_version: 1.7.5
+summary: Security exception in com.google.re2j.Machine.add
