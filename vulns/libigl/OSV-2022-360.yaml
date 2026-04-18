@@ -1,5 +1,22 @@
-id: OSV-2022-360
-summary: Invalid-free in igl::MshLoader::~MshLoader
+affected:
+- database_specific:
+    fixed_range: 989049ca7197f8cce2b7ea6f33cbe17019db0d74:83807ad36fa35a52d9f458d7202f0776d4ba882a
+  ecosystem_specific:
+    severity: null
+  package:
+    ecosystem: OSS-Fuzz
+    name: libigl
+    purl: pkg:generic/libigl
+  ranges:
+  - events:
+    - introduced: e91fb2b9e071c4a54a2c53c405affff9510fffdf
+    - fixed: 83807ad36fa35a52d9f458d7202f0776d4ba882a
+    repo: https://github.com/libigl/libigl
+    type: GIT
+  versions:
+  - v2.4.0
+  - v2.5.0
+  - v2.6.0
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=46818
 
@@ -9,25 +26,11 @@ details: |
   igl::MshLoader::~MshLoader
   igl_fuzzer.cpp
   ```
-modified: '2025-05-15T14:37:25.846667Z'
+id: OSV-2022-360
+modified: '2026-04-18T14:16:11.274912Z'
 published: '2022-04-20T00:01:28.065887Z'
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=46818
-affected:
-- package:
-    name: libigl
-    ecosystem: OSS-Fuzz
-    purl: pkg:generic/libigl
-  ranges:
-  - type: GIT
-    repo: https://github.com/libigl/libigl
-    events:
-    - introduced: e91fb2b9e071c4a54a2c53c405affff9510fffdf
-  versions:
-  - v2.4.0
-  - v2.5.0
-  - v2.6.0
-  ecosystem_specific:
-    severity: null
 schema_version: 1.2.0
+summary: Invalid-free in igl::MshLoader::~MshLoader
