@@ -1,5 +1,6 @@
 affected:
 - database_specific:
+    fixed_range: 922667d77051b57f9b855646d3ea98f507c59aa3:6ee36c1c832c6b39f97e8740ceacc96690f2f9cb
     introduced_range: 017180a9f75724c7fe90378362ab68beaa2426f2:65dca5fb5430340b065431b3568d01985b45c5ee
   ecosystem_specific:
     severity: MEDIUM
@@ -11,6 +12,7 @@ affected:
   - events:
     - introduced: a0210352e032d2fd78a8b228bb602db4bf78e897
     - fixed: ec23a0328b0261bb11e1b7d394cd57b27fc517bb
+    - fixed: 6ee36c1c832c6b39f97e8740ceacc96690f2f9cb
     repo: https://github.com/tbeu/matio.git
     type: GIT
   versions: []
