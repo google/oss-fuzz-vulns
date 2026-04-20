@@ -26,6 +26,7 @@ affected:
   - 4.0.0-rc2
   - 4.0.0-rc3
   - 4.0.0-rc4
+  - 4.0.0
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=49845
 
@@ -37,7 +38,7 @@ details: |
   int_mod
   ```
 id: OSV-2022-679
-modified: '2026-04-13T14:12:31.755206Z'
+modified: '2026-04-20T14:06:31.342885Z'
 published: '2022-08-07T00:01:59.645310Z'
 references:
 - type: REPORT
