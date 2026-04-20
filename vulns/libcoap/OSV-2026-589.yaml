@@ -1,0 +1,34 @@
+affected:
+- database_specific:
+    introduced_range: e766f053c2cf90aaf181f0f458e77905d462413c:24d146d55327507b2107941a134795c9a7be13ef
+  ecosystem_specific:
+    severity: HIGH
+  package:
+    ecosystem: OSS-Fuzz
+    name: libcoap
+    purl: pkg:generic/libcoap
+  ranges:
+  - events:
+    - introduced: 77929465d3fd497574adf5941f5558e8c2eb7a06
+    - fixed: e4297c9c890ddb2480bf598b4207169c0271ae30
+    repo: https://github.com/obgm/libcoap.git
+    type: GIT
+  versions: []
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=503812134
+
+  ```
+  Crash type: Heap-double-free
+  Crash state:
+  coap_new_oscore_conf
+  oscore_conf_parse_target.c
+  coap_new_oscore_conf
+  ```
+id: OSV-2026-589
+modified: '2026-04-19T00:09:04.853106Z'
+published: '2026-04-19T00:09:04.852781Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=503812134
+schema_version: 1.7.5
+summary: Heap-double-free in coap_new_oscore_conf

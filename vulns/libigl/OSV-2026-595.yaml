@@ -1,0 +1,38 @@
+affected:
+- database_specific:
+    introduced_range: unknown:96f5386b9a3ff8ad1c2f89b7b77a7db85d86b35b
+  ecosystem_specific:
+    severity: HIGH
+  package:
+    ecosystem: OSS-Fuzz
+    name: libigl
+    purl: pkg:generic/libigl
+  ranges:
+  - events:
+    - introduced: 96f5386b9a3ff8ad1c2f89b7b77a7db85d86b35b
+    - fixed: 83807ad36fa35a52d9f458d7202f0776d4ba882a
+    repo: https://github.com/libigl/libigl
+    type: GIT
+  versions:
+  - v2.4.0
+  - v2.5.0
+  - v2.6.0
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=504141064
+
+  ```
+  Crash type: UNKNOWN WRITE
+  Crash state:
+  std::__1::istreambuf_iterator<char, std::__1::char_traits<char>> std::__1::num_g
+  std::__1::basic_istream<char, std::__1::char_traits<char>>& std::__1::__input_ar
+  igl::MshLoader::parse_element_field
+  ```
+id: OSV-2026-595
+modified: '2026-04-20T00:05:53.121886Z'
+published: '2026-04-20T00:05:53.121612Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=504141064
+schema_version: 1.7.5
+summary: UNKNOWN WRITE in std::__1::istreambuf_iterator<char, std::__1::char_traits<char>>
+  std::__1::num_g
