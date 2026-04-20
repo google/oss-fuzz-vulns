@@ -55,6 +55,7 @@ affected:
   - v1.5.1
   - v1.5.2
   - v1.5.3
+  - v1.5.4
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=53939
 
@@ -66,7 +67,7 @@ details: |
   fuzz_mdns_message.cc
   ```
 id: OSV-2022-1235
-modified: '2026-03-13T14:16:08.108628Z'
+modified: '2026-04-20T14:10:48.152964Z'
 published: '2022-12-04T13:00:30.303410Z'
 references:
 - type: REPORT
