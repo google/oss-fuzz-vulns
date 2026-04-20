@@ -12,6 +12,7 @@ affected:
     type: GIT
   versions:
   - jsoup-1.22.1
+  - jsoup-1.22.2
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=476431390
 
@@ -23,7 +24,7 @@ details: |
   com.google.re2j.Machine.alloc
   ```
 id: OSV-2025-1059
-modified: '2026-01-18T00:02:23.827710Z'
+modified: '2026-04-20T14:15:42.315180Z'
 published: '2026-01-18T00:02:23.827422Z'
 references:
 - type: REPORT
