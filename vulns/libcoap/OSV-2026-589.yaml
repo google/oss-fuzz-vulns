@@ -1,5 +1,6 @@
 affected:
 - database_specific:
+    fixed_range: 3f4d08f964248363bbf192a7af1e59303429e561:783b5317caf30397df392228d67969af579fa03b
     introduced_range: e766f053c2cf90aaf181f0f458e77905d462413c:24d146d55327507b2107941a134795c9a7be13ef
   ecosystem_specific:
     severity: HIGH
@@ -11,6 +12,7 @@ affected:
   - events:
     - introduced: 77929465d3fd497574adf5941f5558e8c2eb7a06
     - fixed: e4297c9c890ddb2480bf598b4207169c0271ae30
+    - fixed: 783b5317caf30397df392228d67969af579fa03b
     repo: https://github.com/obgm/libcoap.git
     type: GIT
   versions: []
