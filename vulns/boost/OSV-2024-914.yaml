@@ -27,6 +27,7 @@ affected:
   - boost-1.90.0.beta1
   - boost-1.90.0
   - boost-1.91.0.beta1
+  - boost-1.91.0
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=66851
 
@@ -38,7 +39,7 @@ details: |
   std::__1::ostream_iterator<char, char, std::__1::char_traits<char> > boost::re_d
   ```
 id: OSV-2024-914
-modified: '2026-03-11T14:30:35.738187Z'
+modified: '2026-04-22T14:19:19.643856Z'
 published: '2024-08-16T00:08:20.277708Z'
 references:
 - type: REPORT
