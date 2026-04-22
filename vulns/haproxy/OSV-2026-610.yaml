@@ -1,0 +1,32 @@
+affected:
+- ecosystem_specific:
+    severity: MEDIUM
+  package:
+    ecosystem: OSS-Fuzz
+    name: haproxy
+    purl: pkg:generic/haproxy
+  ranges:
+  - events:
+    - introduced: 41bded895292573a8fbe9817499c5e996fb5e4ea
+    repo: https://github.com/haproxy/haproxy
+    type: GIT
+  versions:
+  - v3.4-dev9
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=504612570
+
+  ```
+  Crash type: Memcpy-param-overlap
+  Crash state:
+  htx_replace_blk_value
+  http_replace_header_value
+  http_scheme_based_normalize
+  ```
+id: OSV-2026-610
+modified: '2026-04-22T00:07:53.902743Z'
+published: '2026-04-22T00:07:53.902461Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=504612570
+schema_version: 1.7.5
+summary: Memcpy-param-overlap in htx_replace_blk_value
