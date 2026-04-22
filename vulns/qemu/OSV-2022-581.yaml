@@ -160,6 +160,7 @@ affected:
   - v11.0.0-rc2
   - v11.0.0-rc3
   - v11.0.0-rc4
+  - v11.0.0
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=49086
 
@@ -171,7 +172,7 @@ details: |
   megasas_port_write
   ```
 id: OSV-2022-581
-modified: '2026-04-15T14:39:04.467770Z'
+modified: '2026-04-22T14:35:33.317656Z'
 published: '2022-07-14T00:00:45.644503Z'
 references:
 - type: REPORT
