@@ -166,6 +166,7 @@ affected:
   - v11.0.0-rc2
   - v11.0.0-rc3
   - v11.0.0-rc4
+  - v11.0.0
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34831
 
@@ -177,7 +178,7 @@ details: |
   virtio_gpu_simple_process_cmd
   ```
 id: OSV-2021-820
-modified: '2026-04-15T14:36:08.297322Z'
+modified: '2026-04-22T14:32:37.244679Z'
 published: '2021-06-02T00:00:31.619765Z'
 references:
 - type: REPORT
