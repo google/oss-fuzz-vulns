@@ -1,5 +1,6 @@
 affected:
 - database_specific:
+    fixed_range: afb545924c492352ea736c47abecdfb9e79ca9b4:56b9bc5a80282d38d78428e50990fc4881bc29c6
     introduced_range: 5d7e4220166a4e42239230cac4bd71aee04d1326:a581837d9400501c09f957298e91be0eec9a0b0a
   ecosystem_specific:
     severity: MEDIUM
@@ -10,6 +11,7 @@ affected:
   ranges:
   - events:
     - introduced: e6035df1d3f285af9a2e756fb428633eb7898881
+    - fixed: 56b9bc5a80282d38d78428e50990fc4881bc29c6
     repo: https://github.com/Blosc/c-blosc2.git
     type: GIT
   versions:
@@ -44,6 +46,14 @@ affected:
   - v2.19.0
   - v2.19.1
   - v2.2.0
+  - v2.20.0
+  - v2.21.0
+  - v2.21.1
+  - v2.21.2
+  - v2.21.3
+  - v2.22.0
+  - v2.23.0
+  - v2.23.1
   - v2.3.0
   - v2.3.1
   - v2.4.0
@@ -60,15 +70,8 @@ affected:
   - v2.9.1
   - v2.9.2
   - v2.9.3
-  - v2.20.0
-  - v2.21.0
-  - v2.21.1
-  - v2.21.2
-  - v2.21.3
-  - v2.22.0
-  - v2.23.0
-  - v2.23.1
   - v3.0.0.rc1
+  - v3.0.0.rc2
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=414856644
 
@@ -80,7 +83,7 @@ details: |
   zstd_wrap_decompress
   ```
 id: OSV-2025-312
-modified: '2026-03-27T14:26:26.446866Z'
+modified: '2026-04-23T14:09:47.792625Z'
 published: '2025-05-02T00:14:14.459388Z'
 references:
 - type: REPORT
