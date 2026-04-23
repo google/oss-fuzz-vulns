@@ -87,6 +87,7 @@ affected:
   - 3.6.3
   - 3.4.17
   - 3.6.4
+  - 4.0.0-beta
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=53199
 
@@ -98,7 +99,7 @@ details: |
   parse_headers
   ```
 id: OSV-2022-1165
-modified: '2026-02-19T14:11:05.455361Z'
+modified: '2026-04-23T14:13:17.790957Z'
 published: '2022-11-12T13:00:05.964113Z'
 references:
 - type: REPORT
