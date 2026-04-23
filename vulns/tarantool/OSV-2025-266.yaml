@@ -32,6 +32,9 @@ affected:
   - 3.6.2-entrypoint
   - 3.6.2
   - 3.6.3-entrypoint
+  - 3.7.0
+  - 3.7.1-entrypoint
+  - 3.8.0-entrypoint
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=408513931
 
@@ -43,7 +46,7 @@ details: |
   cpparser
   ```
 id: OSV-2025-266
-modified: '2026-03-05T14:36:27.176471Z'
+modified: '2026-04-23T14:27:49.452133Z'
 published: '2025-04-08T00:17:06.279554Z'
 references:
 - type: REPORT
