@@ -1,0 +1,35 @@
+affected:
+- database_specific:
+    fixed_range: 3250c98a2d60f87897d29ff3547ec5463ff245c4:eb7a3f61290ac9e82fe7d760fb569bb3f3fc657a
+    introduced_range: 40da1d8c83e2c5e35ab5245ff4b7a5a9592422c1:d5f1b973e48b0016a2cd1190985c9fa509bf0cee
+  ecosystem_specific:
+    severity: MEDIUM
+  package:
+    ecosystem: OSS-Fuzz
+    name: wasmtime
+    purl: pkg:generic/wasmtime
+  ranges:
+  - events:
+    - introduced: d3f444c876d71724dca6b40a58a55e8a450a7967
+    - fixed: eb7a3f61290ac9e82fe7d760fb569bb3f3fc657a
+    repo: https://github.com/bytecodealliance/wasmtime
+    type: GIT
+  versions: []
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=504268343
+
+  ```
+  Crash type: UNKNOWN READ
+  Crash state:
+  <wasmtime::runtime::func::Func>::call_unchecked_raw::<
+  <wasmtime::runtime::func::Func>::call_impl_do_call::<
+  wasmtime_internal_fiber::stackswitch::x86_64::wasmtime_fiber_start
+  ```
+id: OSV-2026-603
+modified: '2026-04-21T00:05:37.586785Z'
+published: '2026-04-21T00:05:37.586369Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=504268343
+schema_version: 1.7.5
+summary: UNKNOWN READ in <wasmtime::runtime::func::Func>::call_unchecked_raw::<
