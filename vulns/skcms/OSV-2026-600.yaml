@@ -1,0 +1,32 @@
+affected:
+- ecosystem_specific:
+    severity: MEDIUM
+  package:
+    ecosystem: OSS-Fuzz
+    name: skcms
+    purl: pkg:generic/skcms
+  ranges:
+  - events:
+    - introduced: 15db2430b6288ac0a6b23e3f6a163fa016a3fab1
+    - fixed: a7a3b15f06355692d86a3b8373c579a521598f4c
+    repo: https://skia.googlesource.com/skcms.git
+    type: GIT
+  versions: []
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=504261818
+
+  ```
+  Crash type: Heap-buffer-overflow READ 8
+  Crash state:
+  skcms_private::baseline::clut
+  skcms_private::baseline::exec_stages
+  skcms_private::baseline::run_program
+  ```
+id: OSV-2026-600
+modified: '2026-04-21T00:03:54.845623Z'
+published: '2026-04-21T00:03:54.845282Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=504261818
+schema_version: 1.7.5
+summary: Heap-buffer-overflow in skcms_private::baseline::clut
