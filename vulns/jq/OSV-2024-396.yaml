@@ -1,5 +1,20 @@
-id: OSV-2024-396
-summary: UNKNOWN READ in jvp_object_free
+affected:
+- ecosystem_specific:
+    severity: MEDIUM
+  package:
+    ecosystem: OSS-Fuzz
+    name: jq
+    purl: pkg:generic/jq
+  ranges:
+  - events:
+    - introduced: 5029328d35f3e60037970d27f350a742af41aa02
+    repo: https://github.com/jqlang/jq
+    type: GIT
+  versions:
+  - jq-1.7.1
+  - jq-1.8.0
+  - jq-1.8.1
+  - jq-1.8.2rc1
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=65942
 
@@ -10,25 +25,11 @@ details: |
   jv_free
   jv_equal
   ```
-modified: '2025-07-01T14:29:52.935440Z'
+id: OSV-2024-396
+modified: '2026-04-24T14:19:17.552379Z'
 published: '2024-05-01T00:11:24.552935Z'
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=65942
-affected:
-- package:
-    name: jq
-    ecosystem: OSS-Fuzz
-    purl: pkg:generic/jq
-  ranges:
-  - type: GIT
-    repo: https://github.com/jqlang/jq
-    events:
-    - introduced: 5029328d35f3e60037970d27f350a742af41aa02
-  versions:
-  - jq-1.7.1
-  - jq-1.8.0
-  - jq-1.8.1
-  ecosystem_specific:
-    severity: MEDIUM
 schema_version: 1.6.0
+summary: UNKNOWN READ in jvp_object_free
