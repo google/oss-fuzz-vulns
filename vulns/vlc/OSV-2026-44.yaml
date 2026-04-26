@@ -1,5 +1,6 @@
 affected:
 - database_specific:
+    fixed_range: 2c0207e784e609060cd2bcaddcd735a8c3bb9da6:734cb67180e5fe97fabff8c99e3f10831e73c016
     introduced_range: 22ea21dc9efff3e1ce539a098e4839975051bbe5:ca8a1dd2e9f38ae5d0ecae43be473d3a9af6a399
   ecosystem_specific:
     severity: MEDIUM
@@ -10,6 +11,7 @@ affected:
   ranges:
   - events:
     - introduced: f8e9d090fc20452cfddb91df28bf235eb59baff1
+    - fixed: 734cb67180e5fe97fabff8c99e3f10831e73c016
     repo: https://code.videolan.org/videolan/vlc.git
     type: GIT
   versions: []
