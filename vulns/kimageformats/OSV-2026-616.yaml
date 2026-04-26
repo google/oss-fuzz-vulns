@@ -1,0 +1,35 @@
+affected:
+- database_specific:
+    fixed_range: d5e5012cfb125bc243043808d31a36b3c70e3e58:51db11eefcc9936b6e2aa6995edba19390c62057
+    introduced_range: 7cf60da031f77bb8573ecc8610b8c4f0a5c78741:d5e5012cfb125bc243043808d31a36b3c70e3e58
+  ecosystem_specific:
+    severity: MEDIUM
+  package:
+    ecosystem: OSS-Fuzz
+    name: kimageformats
+    purl: pkg:generic/kimageformats
+  ranges:
+  - events:
+    - introduced: 1b3f32a332e0735da75c9cb4fbdeb35c00f5cb82
+    - fixed: 51db11eefcc9936b6e2aa6995edba19390c62057
+    repo: https://invent.kde.org/frameworks/kimageformats.git
+    type: GIT
+  versions: []
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=505263965
+
+  ```
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  JXRHandlerPrivate::colorSpace
+  JXRHandlerPrivate::imageFormat
+  JXRHandler::read
+  ```
+id: OSV-2026-616
+modified: '2026-04-24T00:20:25.045135Z'
+published: '2026-04-24T00:20:25.044744Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=505263965
+schema_version: 1.7.5
+summary: Use-of-uninitialized-value in JXRHandlerPrivate::colorSpace
