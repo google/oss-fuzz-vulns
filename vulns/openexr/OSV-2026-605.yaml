@@ -66,6 +66,9 @@ affected:
   - v3.4.8-rc
   - v3.4.9
   - v3.4.9-rc
+  - v3.3.11-rc3
+  - v3.4.11-rc
+  - v3.4.11-rc2
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=504280155
 
@@ -77,7 +80,7 @@ details: |
   exr_uncompress_chunk
   ```
 id: OSV-2026-605
-modified: '2026-04-26T14:29:41.640106Z'
+modified: '2026-04-27T14:24:54.541796Z'
 published: '2026-04-21T00:16:42.288653Z'
 references:
 - type: REPORT
