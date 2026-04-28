@@ -14,7 +14,8 @@ affected:
     - fixed: 4190558bdd2881cb048ce0531bd052dc5e4469e3
     repo: https://github.com/apache/thrift.git
     type: GIT
-  versions: []
+  versions:
+  - v0.23.0
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=506318134
 
@@ -26,7 +27,7 @@ details: |
   org.apache.thrift.protocol.TCompactProtocol.readFieldBegin
   ```
 id: OSV-2026-629
-modified: '2026-04-26T00:19:19.237755Z'
+modified: '2026-04-28T14:18:36.402139Z'
 published: '2026-04-26T00:19:19.237477Z'
 references:
 - type: REPORT
