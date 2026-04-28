@@ -12,6 +12,7 @@ affected:
     - introduced: 39b9d241cdcd4c95b7916992b8872d2620f9ac7a
     - fixed: ca2e5137d2e625bd050234df55171f8763c99a13
     - introduced: d948c6729c30cf15eaade9903ca0186d56a22d41
+    - fixed: e56ec0701252841ab4c71271e7cc7101e568b8d6
     repo: https://github.com/AcademySoftwareFoundation/openexr
     type: GIT
   versions:
@@ -80,7 +81,7 @@ details: |
   exr_uncompress_chunk
   ```
 id: OSV-2026-605
-modified: '2026-04-27T14:24:54.541796Z'
+modified: '2026-04-28T14:05:51.593937Z'
 published: '2026-04-21T00:16:42.288653Z'
 references:
 - type: REPORT
