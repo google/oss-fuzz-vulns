@@ -1,0 +1,33 @@
+affected:
+- ecosystem_specific:
+    severity: MEDIUM
+  package:
+    ecosystem: OSS-Fuzz
+    name: matio
+    purl: pkg:generic/matio
+  ranges:
+  - events:
+    - introduced: 95ef616e596c15a72abed28ab0b3f6b72bd6e691
+    - fixed: 658240b9b536f6926e5ff4500968cf024a972e1f
+    repo: https://github.com/tbeu/matio.git
+    type: GIT
+  versions:
+  - v1.5.30
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=505903317
+
+  ```
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  Mat_PrintNumber
+  Mat_PrintData
+  Mat_VarPrint
+  ```
+id: OSV-2026-623
+modified: '2026-04-25T00:20:05.314381Z'
+published: '2026-04-25T00:20:05.313883Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=505903317
+schema_version: 1.7.5
+summary: Use-of-uninitialized-value in Mat_PrintNumber

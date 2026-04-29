@@ -1,0 +1,33 @@
+affected:
+- ecosystem_specific:
+    severity: MEDIUM
+  package:
+    ecosystem: OSS-Fuzz
+    name: matio
+    purl: pkg:generic/matio
+  ranges:
+  - events:
+    - introduced: 95ef616e596c15a72abed28ab0b3f6b72bd6e691
+    - fixed: a3e837350f28232a3a16e901d989049b6866a0bc
+    repo: https://github.com/tbeu/matio.git
+    type: GIT
+  versions:
+  - v1.5.30
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=506942183
+
+  ```
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  Mat_int32Swap
+  ReadCompressedInt32Data
+  Mat_VarRead5
+  ```
+id: OSV-2026-650
+modified: '2026-04-29T00:19:17.230396Z'
+published: '2026-04-29T00:19:17.230021Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=506942183
+schema_version: 1.7.5
+summary: Use-of-uninitialized-value in Mat_int32Swap
