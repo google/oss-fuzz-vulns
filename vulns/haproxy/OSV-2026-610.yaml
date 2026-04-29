@@ -12,6 +12,7 @@ affected:
     type: GIT
   versions:
   - v3.4-dev9
+  - v3.4-dev10
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=504612570
 
@@ -23,7 +24,7 @@ details: |
   http_scheme_based_normalize
   ```
 id: OSV-2026-610
-modified: '2026-04-22T00:07:53.902743Z'
+modified: '2026-04-29T14:38:09.720619Z'
 published: '2026-04-22T00:07:53.902461Z'
 references:
 - type: REPORT
