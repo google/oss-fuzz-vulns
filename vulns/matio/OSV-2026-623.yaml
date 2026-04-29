@@ -1,5 +1,7 @@
 affected:
-- ecosystem_specific:
+- database_specific:
+    fixed_range: 5df1d83e0f81b8e82073d34302c7714ea3a8eeb0:2f89a7e9ebe198f16b62048dd02cd6de5dc47573
+  ecosystem_specific:
     severity: MEDIUM
   package:
     ecosystem: OSS-Fuzz
@@ -9,6 +11,7 @@ affected:
   - events:
     - introduced: 95ef616e596c15a72abed28ab0b3f6b72bd6e691
     - fixed: 658240b9b536f6926e5ff4500968cf024a972e1f
+    - fixed: 2f89a7e9ebe198f16b62048dd02cd6de5dc47573
     repo: https://github.com/tbeu/matio.git
     type: GIT
   versions:
@@ -24,7 +27,7 @@ details: |
   Mat_VarPrint
   ```
 id: OSV-2026-623
-modified: '2026-04-25T00:20:05.314381Z'
+modified: '2026-04-29T14:30:10.451501Z'
 published: '2026-04-25T00:20:05.313883Z'
 references:
 - type: REPORT
