@@ -1,5 +1,7 @@
 affected:
-- ecosystem_specific:
+- database_specific:
+    fixed_range: 9e56e52252edaebcd1200a79e2a70e6ac4bbb46e:11a5d1b8ef2018d0eb765ef1ddae95a13a8b59b6
+  ecosystem_specific:
     severity: MEDIUM
   package:
     ecosystem: OSS-Fuzz
@@ -8,16 +10,17 @@ affected:
   ranges:
   - events:
     - introduced: 47ef79672e58417899a3dbf1361691059e9f5dd8
+    - fixed: 11a5d1b8ef2018d0eb765ef1ddae95a13a8b59b6
     repo: https://github.com/assimp/assimp.git
     type: GIT
   versions:
+  - master
   - v5.4.1
   - v5.4.2
   - v5.4.3
   - v6.0.0
   - v6.0.1
   - v6.0.2
-  - master
   - v6.0.3
   - v6.0.4
 details: |
@@ -31,7 +34,7 @@ details: |
   Assimp::COBImporter::InternReadFile
   ```
 id: OSV-2025-580
-modified: '2026-01-25T14:18:57.285875Z'
+modified: '2026-04-30T14:29:31.343013Z'
 published: '2025-07-29T00:16:41.422221Z'
 references:
 - type: REPORT
