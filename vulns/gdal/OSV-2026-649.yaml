@@ -1,5 +1,6 @@
 affected:
 - database_specific:
+    fixed_range: 2e455ba777d3f0dc1bac7892211350939f6da269:d4c7037e116aaa298847c22e5c0328e9a009fc3c
     introduced_range: 44534a4a979eed0d133d1782c98f6b313456ae71:2e455ba777d3f0dc1bac7892211350939f6da269
   ecosystem_specific:
     severity: HIGH
@@ -11,6 +12,7 @@ affected:
   - events:
     - introduced: 339a7cd81254ac672731bd96f55d6c3efb317f55
     - fixed: 56693e879efeff2524e82f37f1d6dea168df627d
+    - fixed: d4c7037e116aaa298847c22e5c0328e9a009fc3c
     repo: https://github.com/OSGeo/gdal
     type: GIT
   versions: []
