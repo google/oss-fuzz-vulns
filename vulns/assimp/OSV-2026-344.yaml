@@ -1,0 +1,37 @@
+affected:
+- database_specific:
+    introduced_range: 4c8a3bd39c449eba1b07f81fd4177ad938a7fd93:69f8eb21fd1da5688523986cc911346c333806c2
+  ecosystem_specific:
+    severity: MEDIUM
+  package:
+    ecosystem: OSS-Fuzz
+    name: assimp
+    purl: pkg:generic/assimp
+  ranges:
+  - events:
+    - introduced: 72b9939b9f5a34d155b5b11b61f4474f1176d51a
+    - fixed: 11a5d1b8ef2018d0eb765ef1ddae95a13a8b59b6
+    repo: https://github.com/assimp/assimp.git
+    type: GIT
+  versions:
+  - master
+  - v6.0.3
+  - v6.0.4
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=488752792
+
+  ```
+  Crash type: UNKNOWN READ
+  Crash state:
+  void Assimp::Blender::ConvertDispatcher<float>
+  void Assimp::Blender::Structure::ReadFieldArray<2, float, 3ul>
+  void Assimp::Blender::Structure::Convert<Assimp::Blender::MVert>
+  ```
+id: OSV-2026-344
+modified: '2026-03-03T00:20:14.572706Z'
+published: '2026-03-03T00:20:14.572365Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=488752792
+schema_version: 1.7.5
+summary: UNKNOWN READ in void Assimp::Blender::ConvertDispatcher<float>
