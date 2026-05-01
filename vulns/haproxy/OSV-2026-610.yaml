@@ -1,5 +1,7 @@
 affected:
-- ecosystem_specific:
+- database_specific:
+    fixed_range: 213ee17119774aeaf6ee153117fb522e9d8d7d99:76d894956f7c83bd503afc65a8c8240a6c527f40
+  ecosystem_specific:
     severity: MEDIUM
   package:
     ecosystem: OSS-Fuzz
@@ -8,11 +10,12 @@ affected:
   ranges:
   - events:
     - introduced: 41bded895292573a8fbe9817499c5e996fb5e4ea
+    - fixed: 76d894956f7c83bd503afc65a8c8240a6c527f40
     repo: https://github.com/haproxy/haproxy
     type: GIT
   versions:
-  - v3.4-dev9
   - v3.4-dev10
+  - v3.4-dev9
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=504612570
 
@@ -24,7 +27,7 @@ details: |
   http_scheme_based_normalize
   ```
 id: OSV-2026-610
-modified: '2026-04-29T14:38:09.720619Z'
+modified: '2026-05-01T14:26:40.032545Z'
 published: '2026-04-22T00:07:53.902461Z'
 references:
 - type: REPORT
