@@ -25,6 +25,7 @@ affected:
   - master
   - v6.0.3
   - v6.0.4
+  - v6.0.5
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=410393968
 
@@ -36,7 +37,7 @@ details: |
   Assimp::Exporter::ExportToBlob
   ```
 id: OSV-2025-280
-modified: '2026-01-25T14:19:05.873424Z'
+modified: '2026-05-01T14:27:37.508431Z'
 published: '2025-04-15T00:04:03.423453Z'
 references:
 - type: REPORT
