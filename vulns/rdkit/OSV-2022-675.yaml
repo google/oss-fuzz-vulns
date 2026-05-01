@@ -58,6 +58,7 @@ affected:
   - Release_2025_09_6
   - Release_2026_031b1
   - Release_2026_03_1
+  - Release_2026_03_2
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=49783
 
@@ -69,7 +70,7 @@ details: |
   RDKit::FileParserUtils::ParseV3000CTAB
   ```
 id: OSV-2022-675
-modified: '2026-03-27T14:20:04.040838Z'
+modified: '2026-05-01T14:20:42.587775Z'
 published: '2022-08-06T00:00:51.363676Z'
 references:
 - type: REPORT
