@@ -1,0 +1,33 @@
+affected:
+- database_specific:
+    introduced_range: 6ce0cf7e0f7c079859bf31eb5bb4971bb2d285b0:bdec00be9b7d059a261396d52626747092000eee
+  ecosystem_specific:
+    severity: MEDIUM
+  package:
+    ecosystem: OSS-Fuzz
+    name: pcapplusplus
+    purl: pkg:generic/pcapplusplus
+  ranges:
+  - events:
+    - introduced: 73d959005ff6673b32ab9d25b8fc1e53de435aa4
+    repo: https://github.com/seladb/PcapPlusPlus
+    type: GIT
+  versions: []
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=479882050
+
+  ```
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  pcpp::PcapNgFileReaderDevice::getNextPacketInternal
+  pcpp::IFileReaderDevice::getNextPackets
+  FuzzWriter.cpp
+  ```
+id: OSV-2026-170
+modified: '2026-02-01T00:01:32.498001Z'
+published: '2026-02-01T00:01:32.497703Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=479882050
+schema_version: 1.7.5
+summary: Use-of-uninitialized-value in pcpp::PcapNgFileReaderDevice::getNextPacketInternal
