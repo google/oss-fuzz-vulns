@@ -1,0 +1,35 @@
+affected:
+- database_specific:
+    fixed_range: 70a8289e648b7e4de5aebc0bc098fcb5f9bffb55:004fa5a8abaf96509350dd6c1aa18029de81697d
+  ecosystem_specific:
+    severity: null
+  package:
+    ecosystem: OSS-Fuzz
+    name: kmime
+    purl: pkg:generic/kmime
+  ranges:
+  - events:
+    - introduced: 203b456991a1104bb0e3e6ea943b8328aa0b8d08
+    - fixed: 004fa5a8abaf96509350dd6c1aa18029de81697d
+    repo: https://invent.kde.org/pim/kmime.git
+    type: GIT
+  versions:
+  - v26.04.0
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=500975977
+
+  ```
+  Crash type: Global-buffer-overflow READ 1
+  Crash state:
+  nameMatch
+  QStringConverter::QStringConverter
+  KMime::HeaderParsing::parseEncodedWord
+  ```
+id: OSV-2026-561
+modified: '2026-04-11T00:21:08.852713Z'
+published: '2026-04-11T00:21:08.852326Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=500975977
+schema_version: 1.7.5
+summary: Global-buffer-overflow in nameMatch
