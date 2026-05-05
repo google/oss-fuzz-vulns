@@ -1,5 +1,18 @@
-id: OSV-2022-882
-summary: Use-of-uninitialized-value in SfxEntry::test_condition
+affected:
+- ecosystem_specific:
+    severity: MEDIUM
+  package:
+    ecosystem: OSS-Fuzz
+    name: hunspell
+    purl: pkg:generic/hunspell
+  ranges:
+  - events:
+    - introduced: 74b08bfb8b611b7ae4bea2a6f1f74d9f73c1d0e3
+    repo: https://github.com/hunspell/hunspell.git
+    type: GIT
+  versions:
+  - v1.7.2
+  - v1.7.3
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=51218
 
@@ -10,23 +23,11 @@ details: |
   SfxEntry::add
   AffixMgr::expand_rootword
   ```
-modified: '2022-12-30T00:12:51.945769Z'
+id: OSV-2022-882
+modified: '2026-05-05T14:11:40.775630Z'
 published: '2022-09-11T00:01:48.463118Z'
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=51218
-affected:
-- package:
-    name: hunspell
-    ecosystem: OSS-Fuzz
-    purl: pkg:generic/hunspell
-  ranges:
-  - type: GIT
-    repo: https://github.com/hunspell/hunspell.git
-    events:
-    - introduced: 74b08bfb8b611b7ae4bea2a6f1f74d9f73c1d0e3
-  versions:
-  - v1.7.2
-  ecosystem_specific:
-    severity: MEDIUM
 schema_version: 1.2.0
+summary: Use-of-uninitialized-value in SfxEntry::test_condition
