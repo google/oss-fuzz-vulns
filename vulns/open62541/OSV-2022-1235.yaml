@@ -1,5 +1,7 @@
 affected:
-- ecosystem_specific:
+- database_specific:
+    fixed_range: ced702b03d0d53f91779dafd1e91f7a32f7e9947:187849f2d3c64083427722cbdd106cb03c9e6192
+  ecosystem_specific:
     severity: MEDIUM
   package:
     ecosystem: OSS-Fuzz
@@ -8,50 +10,52 @@ affected:
   ranges:
   - events:
     - introduced: 9c13c7596242c573ca67a004bc000574af2cff03
+    - fixed: 187849f2d3c64083427722cbdd106cb03c9e6192
+    - fixed: 2c4a1975c337e153da3fc661463c9ddcf8a03634
     repo: https://github.com/open62541/open62541.git
     type: GIT
   versions:
+  - prev-v1.4.2
+  - v1.2.10
   - v1.2.7
-  - v1.3.5
-  - v1.3.6
   - v1.2.8
-  - v1.3.7
   - v1.2.9
-  - v1.3.8
-  - v1.3.9
-  - v1.4.0-rc1
-  - v1.4.0-rc2
-  - v1.4.0
   - v1.3.10
   - v1.3.11
-  - v1.4.1
-  - prev-v1.4.2
-  - v1.4.2
-  - v1.4.3
-  - v1.2.10
   - v1.3.12
-  - v1.4.4
   - v1.3.13
-  - v1.4.5
   - v1.3.14
-  - v1.4.6
-  - v1.4.7
   - v1.3.15
-  - v1.4.8
-  - v1.4.9
+  - v1.3.16
+  - v1.3.17
+  - v1.3.5
+  - v1.3.6
+  - v1.3.7
+  - v1.3.8
+  - v1.3.9
+  - v1.4.0
+  - v1.4.0-rc1
+  - v1.4.0-rc2
+  - v1.4.1
   - v1.4.10
   - v1.4.11
   - v1.4.11.1
   - v1.4.12
   - v1.4.13
-  - v1.5.0-rc1
   - v1.4.14
-  - v1.3.16
-  - v1.5.0-rc2
-  - v1.5.0
-  - v1.3.17
   - v1.4.15
   - v1.4.16
+  - v1.4.2
+  - v1.4.3
+  - v1.4.4
+  - v1.4.5
+  - v1.4.6
+  - v1.4.7
+  - v1.4.8
+  - v1.4.9
+  - v1.5.0
+  - v1.5.0-rc1
+  - v1.5.0-rc2
   - v1.5.1
   - v1.5.2
   - v1.5.3
@@ -67,7 +71,7 @@ details: |
   fuzz_mdns_message.cc
   ```
 id: OSV-2022-1235
-modified: '2026-04-20T14:10:48.152964Z'
+modified: '2026-05-06T14:23:13.848368Z'
 published: '2022-12-04T13:00:30.303410Z'
 references:
 - type: REPORT
