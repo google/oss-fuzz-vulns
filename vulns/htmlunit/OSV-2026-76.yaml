@@ -10,6 +10,7 @@ affected:
   ranges:
   - events:
     - introduced: 0747862ca9e647fcdb16b35c9f775eaa577f9aee
+    - fixed: 7ae58fa2368d0ab209e6af06e0ebbc9ab6e9c7f4
     repo: https://github.com/HtmlUnit/htmlunit.git
     type: GIT
   versions:
@@ -27,7 +28,7 @@ details: |
   org.htmlunit.cyberneko.HTMLElements$HTMLElementsWithCache.getElement
   ```
 id: OSV-2026-76
-modified: '2026-01-18T00:02:11.715633Z'
+modified: '2026-05-06T14:36:18.326705Z'
 published: '2026-01-18T00:02:11.715201Z'
 references:
 - type: REPORT
