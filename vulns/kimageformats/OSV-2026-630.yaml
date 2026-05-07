@@ -1,0 +1,35 @@
+affected:
+- database_specific:
+    introduced_range: d5e5012cfb125bc243043808d31a36b3c70e3e58:51db11eefcc9936b6e2aa6995edba19390c62057
+  ecosystem_specific:
+    severity: MEDIUM
+  package:
+    ecosystem: OSS-Fuzz
+    name: kimageformats
+    purl: pkg:generic/kimageformats
+  ranges:
+  - events:
+    - introduced: bc398382ac554717a037bc08c18a742382fe1659
+    - fixed: 3488077d8d41ffaa2b44386bd3082bdb351459a3
+    repo: https://invent.kde.org/frameworks/kimageformats.git
+    type: GIT
+  versions:
+  - v6.26.0-rc1
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=506459935
+
+  ```
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  JXRHandlerPrivate::readTextMeta
+  JXRHandlerPrivate::description
+  JXRHandlerPrivate::setMetadata
+  ```
+id: OSV-2026-630
+modified: '2026-04-27T00:02:58.068916Z'
+published: '2026-04-27T00:02:58.068470Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=506459935
+schema_version: 1.7.5
+summary: Use-of-uninitialized-value in JXRHandlerPrivate::readTextMeta

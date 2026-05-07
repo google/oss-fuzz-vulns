@@ -1,0 +1,37 @@
+affected:
+- database_specific:
+    introduced_range: 69f12908fca8b940fa6cd114b0266b909fca0c1a:b750ca63a80698eddef3fc3457911bc21a825b58
+  ecosystem_specific:
+    severity: LOW
+  package:
+    ecosystem: OSS-Fuzz
+    name: htmlunit
+    purl: pkg:generic/htmlunit
+  ranges:
+  - events:
+    - introduced: 0747862ca9e647fcdb16b35c9f775eaa577f9aee
+    - fixed: 7ae58fa2368d0ab209e6af06e0ebbc9ab6e9c7f4
+    repo: https://github.com/HtmlUnit/htmlunit.git
+    type: GIT
+  versions:
+  - 4.19.0
+  - 4.20.0
+  - 4.21.0
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=499447433
+
+  ```
+  Crash type: Security exception
+  Crash state:
+  org.htmlunit.cyberneko.HTMLTagBalancer.endElement
+  java.base/sun.nio.cs.CESU_8.updatePositions
+  java.base/sun.nio.cs.CESU_8$Encoder.encodeArrayLoop
+  ```
+id: OSV-2026-535
+modified: '2026-04-05T00:10:08.687736Z'
+published: '2026-04-05T00:10:08.687399Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=499447433
+schema_version: 1.7.5
+summary: Security exception in org.htmlunit.cyberneko.HTMLTagBalancer.endElement
