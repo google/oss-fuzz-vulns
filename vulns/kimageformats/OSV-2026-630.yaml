@@ -15,6 +15,7 @@ affected:
     type: GIT
   versions:
   - v6.26.0-rc1
+  - v6.26.0
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=506459935
 
@@ -26,7 +27,7 @@ details: |
   JXRHandlerPrivate::setMetadata
   ```
 id: OSV-2026-630
-modified: '2026-04-27T00:02:58.068916Z'
+modified: '2026-05-08T14:05:17.157586Z'
 published: '2026-04-27T00:02:58.068470Z'
 references:
 - type: REPORT
