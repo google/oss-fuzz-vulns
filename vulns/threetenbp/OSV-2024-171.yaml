@@ -18,6 +18,7 @@ affected:
   - v1.7.0
   - v1.7.1
   - v1.7.2
+  - v1.7.3
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=67357
 
@@ -29,7 +30,7 @@ details: |
   java.base/sun.util.calendar.ZoneInfo.getOffsets
   ```
 id: OSV-2024-171
-modified: '2025-09-25T14:28:39.920838Z'
+modified: '2026-05-08T14:24:36.961202Z'
 published: '2024-03-15T00:08:01.855772Z'
 references:
 - type: REPORT
