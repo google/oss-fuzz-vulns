@@ -18,6 +18,7 @@ affected:
   - v1.7.0
   - v1.7.1
   - v1.7.2
+  - v1.7.3
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=67437
 
@@ -29,7 +30,7 @@ details: |
   java.base/java.text.DateFormatSymbols.getProviderInstance
   ```
 id: OSV-2024-184
-modified: '2025-09-25T14:28:31.599671Z'
+modified: '2026-05-08T14:24:54.753298Z'
 published: '2024-03-21T00:13:27.175097Z'
 references:
 - type: REPORT
