@@ -1,0 +1,35 @@
+affected:
+- database_specific:
+    fixed_range: c3a6d8eb28b04393260c8778fc88bac653e449a0:871c6adf18c4875c498bafa32afb842e6b145755
+  ecosystem_specific:
+    severity: HIGH
+  package:
+    ecosystem: OSS-Fuzz
+    name: openjph
+    purl: pkg:generic/openjph
+  ranges:
+  - events:
+    - introduced: 9b576c6700c786cc8752dde6ee7146d82d70e11f
+    - fixed: 871c6adf18c4875c498bafa32afb842e6b145755
+    repo: https://github.com/aous72/OpenJPH.git
+    type: GIT
+  versions:
+  - 0.27.0
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=500177411
+
+  ```
+  Crash type: UNKNOWN
+  Crash state:
+  ojph::local::precinct::parse
+  ojph::local::resolution::parse_one_precinct
+  ojph::local::tile::parse_tile_header
+  ```
+id: OSV-2026-548
+modified: '2026-04-09T00:10:28.665122Z'
+published: '2026-04-09T00:10:28.664573Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=500177411
+schema_version: 1.7.5
+summary: UNKNOWN in ojph::local::precinct::parse
