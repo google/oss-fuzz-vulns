@@ -15,6 +15,7 @@ affected:
     type: GIT
   versions:
   - v6.26.0-rc1
+  - v6.26.0
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=506459298
 
@@ -26,7 +27,7 @@ details: |
   JXRHandler::read
   ```
 id: OSV-2026-632
-modified: '2026-04-27T00:03:49.005063Z'
+modified: '2026-05-08T14:03:34.563798Z'
 published: '2026-04-27T00:03:49.004685Z'
 references:
 - type: REPORT
