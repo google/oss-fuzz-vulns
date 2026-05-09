@@ -1,5 +1,7 @@
 affected:
-- ecosystem_specific:
+- database_specific:
+    fixed_range: ca27a817b3713075fef13d97f5a25b122a9baba2:ac1c67c687533d2de55f96709ed4512d4c197801
+  ecosystem_specific:
     severity: HIGH
   package:
     ecosystem: OSS-Fuzz
@@ -8,6 +10,7 @@ affected:
   ranges:
   - events:
     - introduced: 683282d59a139cc811bdf48a728e2666c632de0c
+    - fixed: ac1c67c687533d2de55f96709ed4512d4c197801
     repo: https://github.com/tbeu/matio.git
     type: GIT
   versions:
@@ -29,7 +32,7 @@ details: |
   H5D__contig_read
   ```
 id: OSV-2023-1073
-modified: '2026-01-13T04:40:23.305571Z'
+modified: '2026-05-09T14:20:11.557656Z'
 published: '2023-10-27T13:00:49.296462Z'
 references:
 - type: REPORT
