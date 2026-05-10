@@ -1,0 +1,33 @@
+affected:
+- ecosystem_specific:
+    severity: LOW
+  package:
+    ecosystem: OSS-Fuzz
+    name: flyway
+    purl: pkg:generic/flyway
+  ranges:
+  - events:
+    - introduced: 7c3ea883c0b78fd0aff1c69275cf3c0945eb6017
+    - fixed: ce65ee118f01f1792aa46129a3f07cc746c6c6b9
+    repo: https://github.com/flyway/flyway
+    type: GIT
+  versions:
+  - flyway-12.5.0
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=507641274
+
+  ```
+  Crash type: Security exception
+  Crash state:
+  com.code_intelligence.jazzer.sanitizers.RegexInjection.hookInternal
+  com.code_intelligence.jazzer.sanitizers.RegexInjection.patternHook
+  org.flywaydb.core.api.locations.LocationParser.parseWildcardLocation
+  ```
+id: OSV-2026-651
+modified: '2026-04-30T00:09:19.137235Z'
+published: '2026-04-30T00:09:19.136667Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=507641274
+schema_version: 1.7.5
+summary: Security exception in com.code_intelligence.jazzer.sanitizers.RegexInjection.hookInternal
