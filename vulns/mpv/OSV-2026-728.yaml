@@ -1,5 +1,6 @@
 affected:
 - database_specific:
+    fixed_range: 7732c305a5d23c145e84a54eaf1695f263bf9210:21351a058030cc67e50be138ca7bd4f96b448db2
     introduced_range: unknown:0cfd52074b50df623f9fa9fd9ad0ba4657311398
   ecosystem_specific:
     severity: MEDIUM
@@ -11,6 +12,7 @@ affected:
   - events:
     - introduced: 0cfd52074b50df623f9fa9fd9ad0ba4657311398
     - fixed: 6bdacac99153b5a487d108e11d2f8d7678afd2fd
+    - fixed: 21351a058030cc67e50be138ca7bd4f96b448db2
     repo: https://github.com/mpv-player/mpv
     type: GIT
   versions:
@@ -28,7 +30,7 @@ details: |
   worker_thread
   ```
 id: OSV-2026-728
-modified: '2026-05-14T00:08:29.997972Z'
+modified: '2026-05-14T14:33:42.735551Z'
 published: '2026-05-14T00:08:29.997657Z'
 references:
 - type: REPORT
