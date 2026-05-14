@@ -1,0 +1,37 @@
+affected:
+- database_specific:
+    introduced_range: unknown:0cfd52074b50df623f9fa9fd9ad0ba4657311398
+  ecosystem_specific:
+    severity: MEDIUM
+  package:
+    ecosystem: OSS-Fuzz
+    name: mpv
+    purl: pkg:generic/mpv
+  ranges:
+  - events:
+    - introduced: 0cfd52074b50df623f9fa9fd9ad0ba4657311398
+    - fixed: 6bdacac99153b5a487d108e11d2f8d7678afd2fd
+    repo: https://github.com/mpv-player/mpv
+    type: GIT
+  versions:
+  - v0.39.0
+  - v0.40.0
+  - v0.41.0
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=512622269
+
+  ```
+  Crash type: Stack-buffer-overflow READ 4
+  Crash state:
+  autoload_external_files
+  load_external_opts_thread
+  worker_thread
+  ```
+id: OSV-2026-728
+modified: '2026-05-14T00:08:29.997972Z'
+published: '2026-05-14T00:08:29.997657Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=512622269
+schema_version: 1.7.5
+summary: Stack-buffer-overflow in autoload_external_files

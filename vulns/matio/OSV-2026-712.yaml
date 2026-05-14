@@ -1,0 +1,33 @@
+affected:
+- database_specific:
+    fixed_range: 2c52ecd3e0a43684ccfcb27f21d4f1c78b84f6f7:174dd543abf4fa9ba81bdd0896bcf1975dce7283
+  ecosystem_specific:
+    severity: MEDIUM
+  package:
+    ecosystem: OSS-Fuzz
+    name: matio
+    purl: pkg:generic/matio
+  ranges:
+  - events:
+    - introduced: ac1c67c687533d2de55f96709ed4512d4c197801
+    - fixed: 174dd543abf4fa9ba81bdd0896bcf1975dce7283
+    repo: https://github.com/tbeu/matio.git
+    type: GIT
+  versions: []
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=511531637
+
+  ```
+  Crash type: Heap-buffer-overflow READ 8
+  Crash state:
+  Mat_VarGetCellsLinear
+  matio_struct_cell_fuzzer.cpp
+  ```
+id: OSV-2026-712
+modified: '2026-05-11T00:08:54.051983Z'
+published: '2026-05-11T00:08:54.051670Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=511531637
+schema_version: 1.7.5
+summary: Heap-buffer-overflow in Mat_VarGetCellsLinear
