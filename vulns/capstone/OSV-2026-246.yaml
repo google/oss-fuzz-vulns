@@ -1,0 +1,33 @@
+affected:
+- ecosystem_specific:
+    severity: MEDIUM
+  package:
+    ecosystem: OSS-Fuzz
+    name: capstone
+    purl: pkg:generic/capstone
+  ranges:
+  - events:
+    - introduced: 1bc76ead22ca927a04000a5c8e89c608f00bab46
+    repo: https://github.com/capstone-engine/capstone.git
+    type: GIT
+  versions:
+  - 6.0.0-Alpha6
+  - 6.0.0-Alpha7
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=484248078
+
+  ```
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  printAddressingMode
+  M68K_printInst
+  cs_disasm
+  ```
+id: OSV-2026-246
+modified: '2026-02-15T00:09:41.851073Z'
+published: '2026-02-15T00:09:41.850779Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=484248078
+schema_version: 1.7.5
+summary: Use-of-uninitialized-value in printAddressingMode
