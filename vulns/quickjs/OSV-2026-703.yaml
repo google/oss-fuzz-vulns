@@ -1,0 +1,35 @@
+affected:
+- database_specific:
+    fixed_range: d7ae12ae71dfd6ab2997527d295014a8996fa0f9:e182e3df5c51017a7faa97a654b3f2b9c6330448
+    introduced_range: 2d99c323a27ca9013230cfd6fb56ab37f2a0f1d4:8807fedec55bc4dbdf7b4780d36bfc4b4fd6e5e2
+  ecosystem_specific:
+    severity: HIGH
+  package:
+    ecosystem: OSS-Fuzz
+    name: quickjs
+    purl: pkg:generic/quickjs
+  ranges:
+  - events:
+    - introduced: 1e19893c82fe150db60f2464e4eeab2b663499d4
+    - fixed: e182e3df5c51017a7faa97a654b3f2b9c6330448
+    repo: https://github.com/bellard/quickjs
+    type: GIT
+  versions: []
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=510792185
+
+  ```
+  Crash type: Heap-use-after-free WRITE 4
+  Crash state:
+  js_atomics_op
+  js_call_c_function
+  JS_CallInternal
+  ```
+id: OSV-2026-703
+modified: '2026-05-09T00:17:31.678556Z'
+published: '2026-05-09T00:17:31.678264Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=510792185
+schema_version: 1.7.5
+summary: Heap-use-after-free in js_atomics_op

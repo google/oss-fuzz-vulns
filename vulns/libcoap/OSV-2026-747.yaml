@@ -1,0 +1,33 @@
+affected:
+- database_specific:
+    introduced_range: c99bf12801d845cb6543aea72c12c33ebc07720a:64e2a65ad047e1f9429f4c0b7b838a50bda4b909
+  ecosystem_specific:
+    severity: MEDIUM
+  package:
+    ecosystem: OSS-Fuzz
+    name: libcoap
+    purl: pkg:generic/libcoap
+  ranges:
+  - events:
+    - introduced: 2614649eccf9836355235ef8fab018f2f56669b8
+    - fixed: 9f14450a7ede9da347e27648da793fb8698c6e57
+    repo: https://github.com/obgm/libcoap.git
+    type: GIT
+  versions: []
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=513035615
+
+  ```
+  Crash type: Heap-buffer-overflow READ 8
+  Crash state:
+  coap_persist_startup_lkd
+  persist_target.c
+  ```
+id: OSV-2026-747
+modified: '2026-05-16T00:15:45.273289Z'
+published: '2026-05-16T00:15:45.273040Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=513035615
+schema_version: 1.7.5
+summary: Heap-buffer-overflow in coap_persist_startup_lkd
