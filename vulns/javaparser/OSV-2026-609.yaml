@@ -1,0 +1,42 @@
+affected:
+- database_specific:
+    introduced_range: 1df12b1aea8efc6f4bf3c9b51db03b64add209a8:3f48dac2fb39294d9104e57b03b55c3b447a4999
+  ecosystem_specific:
+    severity: LOW
+  package:
+    ecosystem: OSS-Fuzz
+    name: javaparser
+    purl: pkg:generic/javaparser
+  ranges:
+  - events:
+    - introduced: 28aeb860a119af9fe61fd200b18efb93d8cd7f73
+    - fixed: cb829f5d423ba5e097b0eca0e71c68049c4074b9
+    repo: https://github.com/javaparser/javaparser
+    type: GIT
+  versions:
+  - javaparser-parent-3.26.2
+  - javaparser-parent-3.26.3
+  - javaparser-parent-3.26.4
+  - javaparser-parent-3.27.0
+  - javaparser-parent-3.27.1
+  - javaparser-parent-3.28.0
+  - javaparser-parent-3.28.1
+  - v_snapshot_2751159
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=504814677
+
+  ```
+  Crash type: Security exception
+  Crash state:
+  com.github.javaparser.ast.NodeList.forEach
+  com.github.javaparser.ast.visitor.VoidVisitorAdapter.visit
+  com.github.javaparser.ast.validator.language_level_validations.chunks.ModifierVa
+  ```
+id: OSV-2026-609
+modified: '2026-04-22T00:04:34.950993Z'
+published: '2026-04-22T00:04:34.950605Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=504814677
+schema_version: 1.7.5
+summary: Security exception in com.github.javaparser.ast.NodeList.forEach

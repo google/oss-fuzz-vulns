@@ -1,0 +1,35 @@
+affected:
+- database_specific:
+    fixed_range: 9f14450a7ede9da347e27648da793fb8698c6e57:12a4a494f5224e23ba2f190ab711848d0b8f67d7
+    introduced_range: c99bf12801d845cb6543aea72c12c33ebc07720a:64e2a65ad047e1f9429f4c0b7b838a50bda4b909
+  ecosystem_specific:
+    severity: MEDIUM
+  package:
+    ecosystem: OSS-Fuzz
+    name: libcoap
+    purl: pkg:generic/libcoap
+  ranges:
+  - events:
+    - introduced: 2614649eccf9836355235ef8fab018f2f56669b8
+    - fixed: 12a4a494f5224e23ba2f190ab711848d0b8f67d7
+    repo: https://github.com/obgm/libcoap.git
+    type: GIT
+  versions: []
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=513783540
+
+  ```
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  coap_pdu_parse_header
+  coap_pdu_parse2
+  coap_pdu_parse
+  ```
+id: OSV-2026-762
+modified: '2026-05-18T00:04:25.606757Z'
+published: '2026-05-18T00:04:25.606463Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=513783540
+schema_version: 1.7.5
+summary: Heap-buffer-overflow in coap_pdu_parse_header

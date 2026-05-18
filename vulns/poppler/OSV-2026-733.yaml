@@ -1,0 +1,95 @@
+affected:
+- database_specific:
+    fixed_range: 1bb48122b5f6c8973bf0b737617369ef4f21e667:81ed6a3899786a8eddd251aed8c0ca8750555a8e
+    introduced_range: 571d8138cb9ccc9ac04219a6a552d8c78e93ad88:77e545351b7ac359e19422e8158ff00f6dd597d3
+  ecosystem_specific:
+    severity: MEDIUM
+  package:
+    ecosystem: OSS-Fuzz
+    name: poppler
+    purl: pkg:generic/poppler
+  ranges:
+  - events:
+    - introduced: 2b2808719d2c91283ae358381391bb0b37d9061d
+    - fixed: 81ed6a3899786a8eddd251aed8c0ca8750555a8e
+    repo: https://gitlab.freedesktop.org/poppler/poppler.git
+    type: GIT
+  versions:
+  - poppler-21.07.0
+  - poppler-21.08.0
+  - poppler-21.09.0
+  - poppler-21.10.0
+  - poppler-21.11.0
+  - poppler-21.12.0
+  - poppler-22.01.0
+  - poppler-22.02.0
+  - poppler-22.03.0
+  - poppler-22.04.0
+  - poppler-22.05.0
+  - poppler-22.06.0
+  - poppler-22.07.0
+  - poppler-22.08.0
+  - poppler-22.09.0
+  - poppler-22.10.0
+  - poppler-22.11.0
+  - poppler-22.12.0
+  - poppler-23.01.0
+  - poppler-23.02.0
+  - poppler-23.03.0
+  - poppler-23.04.0
+  - poppler-23.05.0
+  - poppler-23.07.0
+  - poppler-23.08.0
+  - poppler-23.09.0
+  - poppler-23.10.0
+  - poppler-23.11.0
+  - poppler-23.12.0
+  - poppler-24.01.0
+  - poppler-24.02.0
+  - poppler-24.03.0
+  - poppler-24.04.0
+  - poppler-24.05.0
+  - poppler-24.06.0
+  - poppler-24.06.1
+  - poppler-24.07.0
+  - poppler-24.08.0
+  - poppler-24.09.0
+  - poppler-24.10.0
+  - poppler-24.11.0
+  - poppler-24.12.0
+  - poppler-25.01.0
+  - poppler-25.02.0
+  - poppler-25.03.0
+  - poppler-25.04.0
+  - poppler-25.05.0
+  - poppler-25.06.0
+  - poppler-25.07.0
+  - poppler-25.08.0
+  - poppler-25.09.0
+  - poppler-25.09.1
+  - poppler-25.10.0
+  - poppler-25.11.0
+  - poppler-25.12.0
+  - poppler-26.01.0
+  - poppler-26.02.0
+  - poppler-26.03.0
+  - poppler-26.04.0
+  - poppler-26.05.0
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=512468082
+
+  ```
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  JBIG2Stream::readSymbolDictSeg
+  JBIG2Stream::readSegments
+  JBIG2Stream::rewind
+  ```
+id: OSV-2026-733
+modified: '2026-05-14T00:10:58.837748Z'
+published: '2026-05-14T00:10:58.837504Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=512468082
+schema_version: 1.7.5
+summary: Use-of-uninitialized-value in JBIG2Stream::readSymbolDictSeg

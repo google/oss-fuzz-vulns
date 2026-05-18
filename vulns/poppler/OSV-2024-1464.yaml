@@ -1,0 +1,138 @@
+affected:
+- database_specific:
+    fixed_range: 1bb48122b5f6c8973bf0b737617369ef4f21e667:81ed6a3899786a8eddd251aed8c0ca8750555a8e
+    introduced_range: unknown:c9e2dc7ea7e098875e6b93566bdb1d14451c3673
+  ecosystem_specific:
+    severity: MEDIUM
+  package:
+    ecosystem: OSS-Fuzz
+    name: poppler
+    purl: pkg:generic/poppler
+  ranges:
+  - events:
+    - introduced: c9e2dc7ea7e098875e6b93566bdb1d14451c3673
+    - fixed: 81ed6a3899786a8eddd251aed8c0ca8750555a8e
+    repo: https://gitlab.freedesktop.org/poppler/poppler.git
+    type: GIT
+  versions:
+  - poppler-0.65.0
+  - poppler-0.66.0
+  - poppler-0.67.0
+  - poppler-0.68.0
+  - poppler-0.69.0
+  - poppler-0.70.0
+  - poppler-0.70.1
+  - poppler-0.71.0
+  - poppler-0.72.0
+  - poppler-0.73.0
+  - poppler-0.74.0
+  - poppler-0.75.0
+  - poppler-0.76.0
+  - poppler-0.76.1
+  - poppler-0.77.0
+  - poppler-0.78.0
+  - poppler-0.79.0
+  - poppler-0.80.0
+  - poppler-0.81.0
+  - poppler-0.82.0
+  - poppler-0.83.0
+  - poppler-0.84.0
+  - poppler-0.85.0
+  - poppler-0.86.0
+  - poppler-0.86.1
+  - poppler-0.87.0
+  - poppler-0.88.0
+  - poppler-0.89.0
+  - poppler-0.90.0
+  - poppler-0.90.1
+  - poppler-20.08.0
+  - poppler-20.09.0
+  - poppler-20.10.0
+  - poppler-20.11.0
+  - poppler-20.12.0
+  - poppler-20.12.1
+  - poppler-21.01.0
+  - poppler-21.02.0
+  - poppler-21.03.0
+  - poppler-21.04.0
+  - poppler-21.05.0
+  - poppler-21.06.0
+  - poppler-21.06.1
+  - poppler-21.07.0
+  - poppler-21.08.0
+  - poppler-21.09.0
+  - poppler-21.10.0
+  - poppler-21.11.0
+  - poppler-21.12.0
+  - poppler-22.01.0
+  - poppler-22.02.0
+  - poppler-22.03.0
+  - poppler-22.04.0
+  - poppler-22.05.0
+  - poppler-22.06.0
+  - poppler-22.07.0
+  - poppler-22.08.0
+  - poppler-22.09.0
+  - poppler-22.10.0
+  - poppler-22.11.0
+  - poppler-22.12.0
+  - poppler-23.01.0
+  - poppler-23.02.0
+  - poppler-23.03.0
+  - poppler-23.04.0
+  - poppler-23.05.0
+  - poppler-23.07.0
+  - poppler-23.08.0
+  - poppler-23.09.0
+  - poppler-23.10.0
+  - poppler-23.11.0
+  - poppler-23.12.0
+  - poppler-24.01.0
+  - poppler-24.02.0
+  - poppler-24.03.0
+  - poppler-24.04.0
+  - poppler-24.05.0
+  - poppler-24.06.0
+  - poppler-24.06.1
+  - poppler-24.07.0
+  - poppler-24.08.0
+  - poppler-24.09.0
+  - poppler-24.10.0
+  - poppler-24.11.0
+  - poppler-24.12.0
+  - poppler-25.01.0
+  - poppler-25.02.0
+  - poppler-25.03.0
+  - poppler-25.04.0
+  - poppler-25.05.0
+  - poppler-25.06.0
+  - poppler-25.07.0
+  - poppler-25.08.0
+  - poppler-25.09.0
+  - poppler-25.09.1
+  - poppler-25.10.0
+  - poppler-25.11.0
+  - poppler-25.12.0
+  - poppler-26.01.0
+  - poppler-26.02.0
+  - poppler-26.03.0
+  - poppler-26.04.0
+  - poppler-26.05.0
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=513891492
+
+  ```
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  Splash::compositeBackground
+  SplashOutputDev::setSoftMask
+  Gfx::doSoftMask
+  ```
+id: OSV-2024-1464
+modified: '2026-05-18T00:15:55.033393Z'
+published: '2026-05-18T00:15:55.033057Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=513891492
+schema_version: 1.7.5
+summary: Use-of-uninitialized-value in Splash::compositeBackground
