@@ -1,0 +1,42 @@
+affected:
+- database_specific:
+    introduced_range: 8a2ec699b6f784a6843dee15990a024bb660336a:204ddea04c9e5b388059004671b9c4c6c3110a48
+  ecosystem_specific:
+    severity: MEDIUM
+  package:
+    ecosystem: OSS-Fuzz
+    name: trafficserver
+    purl: pkg:generic/trafficserver
+  ranges:
+  - events:
+    - introduced: 4fcbbbfbe7a43a621aac02010572e7a5323c55e2
+    - fixed: 4d4086ab481d3d0f37ca1bf09d87e9b6063d6a45
+    repo: https://github.com/apache/trafficserver.git
+    type: GIT
+  versions:
+  - 10.1.0
+  - 10.1.0-rc0
+  - 10.1.0-rc1
+  - 10.1.1
+  - 10.1.1-rc0
+  - 10.1.1-rc1
+  - 10.1.2
+  - 10.1.2-rc0
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42537939
+
+  ```
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  Http3FrameFactory::create
+  Http3FrameFactory::fast_create
+  fuzz_http3frame.cc
+  ```
+id: OSV-2024-1031
+modified: '2024-08-18T00:04:05.968286Z'
+published: '2024-08-18T00:04:05.967914Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42537939
+schema_version: 1.7.5
+summary: Use-of-uninitialized-value in Http3FrameFactory::create
