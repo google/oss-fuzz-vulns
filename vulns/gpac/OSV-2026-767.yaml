@@ -1,5 +1,7 @@
 affected:
-- ecosystem_specific:
+- database_specific:
+    fixed_range: c531b662f947089f5915e1eaec9894fbee38054f:a4101eb8a4d1b4f4eb98e177dac31b611caedf7a
+  ecosystem_specific:
     severity: HIGH
   package:
     ecosystem: OSS-Fuzz
@@ -9,6 +11,7 @@ affected:
   - events:
     - introduced: c531b662f947089f5915e1eaec9894fbee38054f
     - fixed: 9b517df83bb2a17786c420ef39dc6f00a6e638de
+    - fixed: a4101eb8a4d1b4f4eb98e177dac31b611caedf7a
     repo: https://github.com/gpac/gpac
     type: GIT
   versions: []
