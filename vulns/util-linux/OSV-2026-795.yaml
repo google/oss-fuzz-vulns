@@ -1,0 +1,35 @@
+affected:
+- database_specific:
+    fixed_range: 5683ed6320e00205146cbb3d0c76462733530eca:eee2e7f2cfb158599609fad8d831105d68a6ed8d
+    introduced_range: fe5eaa3caa48ec4ac917d2d2c18fccc2d388b291:e2687bcc0fcf412e5fa2424e3a4348c052e8684c
+  ecosystem_specific:
+    severity: null
+  package:
+    ecosystem: OSS-Fuzz
+    name: util-linux
+    purl: pkg:generic/util-linux
+  ranges:
+  - events:
+    - introduced: c408b657283fdedcdf3d4961c007805077b72bc9
+    - fixed: eee2e7f2cfb158599609fad8d831105d68a6ed8d
+    repo: https://github.com/util-linux/util-linux
+    type: GIT
+  versions: []
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=514896889
+
+  ```
+  Crash type: Stack-buffer-underflow READ 1
+  Crash state:
+  probe_dasd_pt
+  idinfo_probe
+  partitions_probe
+  ```
+id: OSV-2026-795
+modified: '2026-05-22T00:16:21.905075Z'
+published: '2026-05-22T00:16:21.904778Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=514896889
+schema_version: 1.7.5
+summary: Stack-buffer-underflow in probe_dasd_pt
