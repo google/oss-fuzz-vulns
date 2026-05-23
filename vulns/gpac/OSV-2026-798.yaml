@@ -1,5 +1,6 @@
 affected:
 - database_specific:
+    fixed_range: 0a81f305388687d8afa61da5cf000abf7b0b3bb8:4bf468922ac980cd35ce13eb36e02f2ec90f5142
     introduced_range: 907fbb33591039a7d14492a9af3fac1baab2c5f6:b7607ad0e424919a4a30a97b5965d2b1703f50bd
   ecosystem_specific:
     severity: HIGH
@@ -11,6 +12,7 @@ affected:
   - events:
     - introduced: d55ff26ed5b331771d28cc56be8fc57f04eddd5e
     - fixed: 40a851e86fc19b3da9cb92880fa747a1d30f0ac6
+    - fixed: 4bf468922ac980cd35ce13eb36e02f2ec90f5142
     repo: https://github.com/gpac/gpac
     type: GIT
   versions:
@@ -28,7 +30,7 @@ details: |
   gf_sg_del
   ```
 id: OSV-2026-798
-modified: '2026-05-22T00:20:52.141629Z'
+modified: '2026-05-23T14:30:03.115431Z'
 published: '2026-05-22T00:20:52.141376Z'
 references:
 - type: REPORT
