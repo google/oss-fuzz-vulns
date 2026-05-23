@@ -1,5 +1,7 @@
 affected:
-- ecosystem_specific:
+- database_specific:
+    fixed_range: 3784dc5c76c6c437a4c0f6041d235a3ce7c363c6:0d322f0f9c081bc65fcbdba26efd0255a05a3294
+  ecosystem_specific:
     severity: HIGH
   package:
     ecosystem: OSS-Fuzz
@@ -9,6 +11,7 @@ affected:
   - events:
     - introduced: ac1c67c687533d2de55f96709ed4512d4c197801
     - fixed: 025931c79b03304300a9ea14c4c8a21fbde07430
+    - fixed: 0d322f0f9c081bc65fcbdba26efd0255a05a3294
     repo: https://github.com/tbeu/matio.git
     type: GIT
   versions: []
