@@ -1,0 +1,37 @@
+affected:
+- database_specific:
+    introduced_range: 907fbb33591039a7d14492a9af3fac1baab2c5f6:b7607ad0e424919a4a30a97b5965d2b1703f50bd
+  ecosystem_specific:
+    severity: HIGH
+  package:
+    ecosystem: OSS-Fuzz
+    name: gpac
+    purl: pkg:generic/gpac
+  ranges:
+  - events:
+    - introduced: d55ff26ed5b331771d28cc56be8fc57f04eddd5e
+    - fixed: 40a851e86fc19b3da9cb92880fa747a1d30f0ac6
+    repo: https://github.com/gpac/gpac
+    type: GIT
+  versions:
+  - abi-16.12
+  - abi-16.13
+  - abi-16.14
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=515134929
+
+  ```
+  Crash type: Heap-use-after-free READ 8
+  Crash state:
+  ReplaceDEFNode
+  gf_sg_reset
+  gf_sg_del
+  ```
+id: OSV-2026-798
+modified: '2026-05-22T00:20:52.141629Z'
+published: '2026-05-22T00:20:52.141376Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=515134929
+schema_version: 1.7.5
+summary: Heap-use-after-free in ReplaceDEFNode

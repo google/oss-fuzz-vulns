@@ -1,0 +1,35 @@
+affected:
+- database_specific:
+    fixed_range: 3822b6b2de2e606809afeaffae7ffdc682447261:c5d5130c6610760151e61df9fede4826f765e7ef
+    introduced_range: 511230aa9f11fca3e8186a24d93406151e21d415:24151187c977bd10b30fffedc47033b438a15c87
+  ecosystem_specific:
+    severity: MEDIUM
+  package:
+    ecosystem: OSS-Fuzz
+    name: p11-kit
+    purl: pkg:generic/p11-kit
+  ranges:
+  - events:
+    - introduced: c6bf6d6d88140f43f4c8f9367cad7b72f79e1105
+    - fixed: c5d5130c6610760151e61df9fede4826f765e7ef
+    repo: https://github.com/p11-glue/p11-kit.git
+    type: GIT
+  versions: []
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=513102821
+
+  ```
+  Crash type: Heap-buffer-overflow READ 2
+  Crash state:
+  p11_lexer_next
+  p11_persist_read
+  p11_parser_format_persist
+  ```
+id: OSV-2026-748
+modified: '2026-05-16T00:17:15.099738Z'
+published: '2026-05-16T00:17:15.099455Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=513102821
+schema_version: 1.7.5
+summary: Heap-buffer-overflow in p11_lexer_next
