@@ -1,0 +1,35 @@
+affected:
+- database_specific:
+    fixed_range: 7ba0614b1fa51116f49dbbc669940e7af7df716a:a58af780565ba1222351e3881d59e9d3ade47fe2
+    introduced_range: unknown:2ff5b1089ee0d69b5694cf305e4a121b153340c5
+  ecosystem_specific:
+    severity: MEDIUM
+  package:
+    ecosystem: OSS-Fuzz
+    name: openbabel
+    purl: pkg:generic/openbabel
+  ranges:
+  - events:
+    - introduced: 2ff5b1089ee0d69b5694cf305e4a121b153340c5
+    - fixed: a58af780565ba1222351e3881d59e9d3ade47fe2
+    repo: https://github.com/openbabel/openbabel.git
+    type: GIT
+  versions: []
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=515663946
+
+  ```
+  Crash type: Container-overflow READ 1
+  Crash state:
+  OpenBabel::MDLFormat::ReadV3000Block
+  OpenBabel::MDLFormat::ReadMolecule
+  OpenBabel::OBConversion::Read
+  ```
+id: OSV-2026-803
+modified: '2026-05-24T00:06:22.583047Z'
+published: '2026-05-24T00:06:22.582795Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=515663946
+schema_version: 1.7.5
+summary: Container-overflow in OpenBabel::MDLFormat::ReadV3000Block
