@@ -13,6 +13,7 @@ affected:
   versions:
   - 6.0.0-Alpha6
   - 6.0.0-Alpha7
+  - 6.0.0-Alpha8
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=484248078
 
@@ -24,7 +25,7 @@ details: |
   cs_disasm
   ```
 id: OSV-2026-246
-modified: '2026-02-15T00:09:41.851073Z'
+modified: '2026-05-24T14:20:01.766215Z'
 published: '2026-02-15T00:09:41.850779Z'
 references:
 - type: REPORT
