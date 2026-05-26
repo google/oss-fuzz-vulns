@@ -1,5 +1,17 @@
-id: OSV-2021-1524
-summary: Heap-buffer-overflow in Canvas5Structure::NIBDecoder::decode
+affected:
+- ecosystem_specific:
+    severity: MEDIUM
+  package:
+    ecosystem: OSS-Fuzz
+    name: dlplibs
+    purl: pkg:generic/dlplibs
+  ranges:
+  - events:
+    - introduced: 6ad72753cf22aa4cffdc6bb7b9082c90b4ed0502
+    repo: git://gerrit.libreoffice.org/libabw
+    type: GIT
+  versions:
+  - libabw-0.1.4
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=40619
 
@@ -10,22 +22,11 @@ details: |
   Canvas5Structure::decodeZone5
   Canvas5Parser::decode
   ```
-modified: '2022-04-13T03:04:32.475264Z'
+id: OSV-2021-1524
+modified: '2026-05-26T14:10:25.691947Z'
 published: '2021-11-03T00:00:37.119532Z'
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=40619
-affected:
-- package:
-    name: dlplibs
-    ecosystem: OSS-Fuzz
-    purl: pkg:generic/dlplibs
-  ranges:
-  - type: GIT
-    repo: git://gerrit.libreoffice.org/libabw
-    events:
-    - introduced: 6ad72753cf22aa4cffdc6bb7b9082c90b4ed0502
-  ecosystem_specific:
-    severity: MEDIUM
-  versions: []
 schema_version: 1.2.0
+summary: Heap-buffer-overflow in Canvas5Structure::NIBDecoder::decode
