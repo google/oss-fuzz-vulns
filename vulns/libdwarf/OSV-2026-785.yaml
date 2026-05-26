@@ -1,5 +1,6 @@
 affected:
 - database_specific:
+    fixed_range: 4b3cf93cc5819fbbef6d81812a08bae704c09aad:1ac98981519d789d11cd80997c0d431975765db0
     introduced_range: 4219b9d3c386f75ca5f47ade03def1a157057e49:dd3ca3226b2c48ff8588d02a74a90cdabea4e91c
   ecosystem_specific:
     severity: HIGH
@@ -11,6 +12,7 @@ affected:
   - events:
     - introduced: b77072b86835e5e2d0f7cece727c9251cec6c701
     - fixed: f49716564b3a263ce81c5319fecea4c9319e178f
+    - fixed: 1ac98981519d789d11cd80997c0d431975765db0
     repo: https://github.com/davea42/libdwarf-code
     type: GIT
   versions: []
