@@ -1,0 +1,34 @@
+affected:
+- database_specific:
+    fixed_range: 9fa747c96c57810f2439950464fb012af751f424:fb4d03dfda4e4e0c24f9a1b43ccd2dacab2bd190
+  ecosystem_specific:
+    severity: MEDIUM
+  package:
+    ecosystem: OSS-Fuzz
+    name: md4c
+    purl: pkg:generic/md4c
+  ranges:
+  - events:
+    - introduced: 589681bc2e61bd23eccb2226a1752ad7466f81fd
+    - fixed: fb4d03dfda4e4e0c24f9a1b43ccd2dacab2bd190
+    repo: https://github.com/mity/md4c
+    type: GIT
+  versions: []
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=516422428
+
+  ```
+  Crash type: Heap-buffer-overflow READ {*}
+  Crash state:
+  md_process_all_blocks
+  md_parse
+  md_html
+  ```
+id: OSV-2026-816
+modified: '2026-05-27T00:05:00.417050Z'
+published: '2026-05-27T00:05:00.416781Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=516422428
+schema_version: 1.7.5
+summary: Heap-buffer-overflow in md_process_all_blocks
