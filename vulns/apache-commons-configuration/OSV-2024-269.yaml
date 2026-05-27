@@ -31,6 +31,7 @@ affected:
   - rel/commons-configuration-2.15.0
   - commons-configuration-2.15.1-RC1
   - commons-configuration-2.15.1-RC2
+  - rel/commons-configuration-2.15.1
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=66703
 
@@ -42,7 +43,7 @@ details: |
   org.apache.commons.configuration2.AbstractYAMLBasedConfiguration.parseCollection
   ```
 id: OSV-2024-269
-modified: '2026-05-21T14:27:52.104014Z'
+modified: '2026-05-27T14:15:13.048986Z'
 published: '2024-04-18T00:04:02.456948Z'
 references:
 - type: REPORT
