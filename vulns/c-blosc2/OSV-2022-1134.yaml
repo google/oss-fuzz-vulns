@@ -78,6 +78,8 @@ affected:
   - v3.0.2
   - v3.0.3
   - v3.1.0
+  - v3.1.1
+  - v3.1.2
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=52967
 
@@ -89,7 +91,7 @@ details: |
   do_job
   ```
 id: OSV-2022-1134
-modified: '2026-05-26T14:12:04.588247Z'
+modified: '2026-05-28T14:06:05.299144Z'
 published: '2022-11-04T00:02:11.463429Z'
 references:
 - type: REPORT
