@@ -1,0 +1,43 @@
+affected:
+- database_specific:
+    introduced_range: a3e8da805c7e8d743700f13924bd2aafe3fe6783:5029cc238ce5ce03b0fb431a278889f8b788c0a7
+  ecosystem_specific:
+    severity: LOW
+  package:
+    ecosystem: OSS-Fuzz
+    name: maven-model
+    purl: pkg:generic/maven-model
+  ranges:
+  - events:
+    - introduced: a27873629f94174bbcaa345c81abb204e4357ce5
+    repo: https://github.com/apache/maven
+    type: GIT
+  versions:
+  - maven-4.0.0-alpha-13
+  - maven-4.0.0-beta-2
+  - maven-4.0.0-beta-3
+  - maven-4.0.0-beta-4
+  - maven-4.0.0-beta-5
+  - maven-4.0.0-rc-1
+  - maven-4.0.0-rc-2
+  - maven-4.0.0-rc-3
+  - maven-4.0.0-rc-4
+  - maven-4.0.0-rc-5
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=488130836
+
+  ```
+  Crash type: Security exception
+  Crash state:
+  java.base/java.util.Arrays.copyOfRange
+  java.base/java.lang.StringUTF16.newString
+  java.base/java.lang.StringBuilder.toString
+  ```
+id: OSV-2026-324
+modified: '2026-02-28T00:03:36.847810Z'
+published: '2026-02-28T00:03:36.847525Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=488130836
+schema_version: 1.7.5
+summary: Security exception in java.base/java.util.Arrays.copyOfRange
