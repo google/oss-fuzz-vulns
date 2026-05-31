@@ -23,6 +23,7 @@ affected:
   - javaparser-parent-3.27.1
   - javaparser-parent-3.28.0
   - javaparser-parent-3.28.1
+  - javaparser-parent-3.28.2
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=67850
 
@@ -34,7 +35,7 @@ details: |
   com.github.javaparser.Position.equals
   ```
 id: OSV-2024-248
-modified: '2026-05-04T14:19:23.695308Z'
+modified: '2026-05-31T14:28:54.826103Z'
 published: '2024-04-10T00:06:40.907073Z'
 references:
 - type: REPORT
