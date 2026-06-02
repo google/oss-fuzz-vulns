@@ -1,0 +1,32 @@
+affected:
+- ecosystem_specific:
+    severity: HIGH
+  package:
+    ecosystem: OSS-Fuzz
+    name: inchi
+    purl: pkg:generic/inchi
+  ranges:
+  - events:
+    - introduced: 6bf23c941af9f34318b65b5f0c4ce435eb73c7b8
+    repo: https://github.com/IUPAC-InChI/InChI
+    type: GIT
+  versions:
+  - v1.07.5
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=488729177
+
+  ```
+  Crash type: Stack-use-after-return READ 2
+  Crash state:
+  mark_alt_bonds_and_taut_groups
+  Create_INChI
+  MakeOneInChIOutOfStrFromINChI
+  ```
+id: OSV-2025-1075
+modified: '2026-03-03T00:13:02.656909Z'
+published: '2026-03-03T00:13:02.656604Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=488729177
+schema_version: 1.7.5
+summary: Stack-use-after-return in mark_alt_bonds_and_taut_groups

@@ -1,0 +1,36 @@
+affected:
+- database_specific:
+    introduced_range: fc38d9e784f6d7db070b78d062f1b3de034965b2:ccb259f089a8a54c06ce7b17d9cbac4302652bb1
+  ecosystem_specific:
+    severity: HIGH
+  package:
+    ecosystem: OSS-Fuzz
+    name: pcre2
+    purl: pkg:generic/pcre2
+  ranges:
+  - events:
+    - introduced: 24f9d8df0b8ddabc217ec4e7856a678e09f52773
+    repo: https://github.com/PCRE2Project/pcre2
+    type: GIT
+  versions:
+  - pcre2-10.45
+  - pcre2-10.45-RC1
+  - pcre2-10.46
+  - pcre2-10.47
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=488713937
+
+  ```
+  Crash type: Heap-buffer-overflow WRITE 4
+  Crash state:
+  pcre2_compile_32
+  pcre2_fuzzsupport.c
+  ```
+id: OSV-2026-343
+modified: '2026-03-03T00:19:45.154065Z'
+published: '2026-03-03T00:19:45.153716Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=488713937
+schema_version: 1.7.5
+summary: Heap-buffer-overflow in pcre2_compile_32
