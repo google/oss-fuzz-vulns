@@ -1,0 +1,32 @@
+affected:
+- ecosystem_specific:
+    severity: MEDIUM
+  package:
+    ecosystem: OSS-Fuzz
+    name: kimageformats
+    purl: pkg:generic/kimageformats
+  ranges:
+  - events:
+    - introduced: f450e5c9a9c31ed0b49f0f6fe3d38b7864013222
+    - fixed: f450e5c9a9c31ed0b49f0f6fe3d38b7864013222
+    repo: https://invent.kde.org/frameworks/kimageformats.git
+    type: GIT
+  versions: []
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=517870853
+
+  ```
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  ReadContainer
+  PKImageDecode_Initialize_WMP
+  PKCodecFactory_CreateDecoderFromFile
+  ```
+id: OSV-2026-828
+modified: '2026-05-31T00:09:21.071343Z'
+published: '2026-05-31T00:09:21.070876Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=517870853
+schema_version: 1.7.5
+summary: Use-of-uninitialized-value in ReadContainer
