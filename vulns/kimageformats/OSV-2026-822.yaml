@@ -1,0 +1,34 @@
+affected:
+- database_specific:
+    introduced_range: 0e2b137b32056dbecc2902ab10cfbd00597e9542:60170990441a6373dea4315a5dc9c1d3aa3de16f
+  ecosystem_specific:
+    severity: HIGH
+  package:
+    ecosystem: OSS-Fuzz
+    name: kimageformats
+    purl: pkg:generic/kimageformats
+  ranges:
+  - events:
+    - introduced: 9ddad1676718f8c12f72a8ac7357552586f1a9a7
+    - fixed: f450e5c9a9c31ed0b49f0f6fe3d38b7864013222
+    repo: https://invent.kde.org/frameworks/kimageformats.git
+    type: GIT
+  versions: []
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=517027630
+
+  ```
+  Crash type: Heap-use-after-free READ 4
+  Crash state:
+  slice_segment_header::operator=
+  slice_segment_header::read
+  decoder_context::read_slice_NAL
+  ```
+id: OSV-2026-822
+modified: '2026-05-29T00:01:40.351804Z'
+published: '2026-05-29T00:01:40.351239Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=517027630
+schema_version: 1.7.5
+summary: Heap-use-after-free in slice_segment_header::operator=
