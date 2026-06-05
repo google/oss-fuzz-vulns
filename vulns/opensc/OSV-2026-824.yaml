@@ -1,5 +1,6 @@
 affected:
 - database_specific:
+    fixed_range: bc2c29c4b3f205c00ca132491d577adab964e569:4fa2c65b0950e72f687f23936e465850772791e8
     introduced_range: d9cea5646972595c7658bd5c4a3cc5b32fe64c73:95ae550858fc0a808e4f6d6d3c6007cc9f15cc11
   ecosystem_specific:
     severity: MEDIUM
@@ -11,6 +12,7 @@ affected:
   - events:
     - introduced: 7d5d10ef37806d408cc8871026faec7f8c069991
     - fixed: b25b78845e8a5983d9c1bd96d34b3c89e00f07fd
+    - fixed: 4fa2c65b0950e72f687f23936e465850772791e8
     repo: https://github.com/OpenSC/OpenSC
     type: GIT
   versions: []
