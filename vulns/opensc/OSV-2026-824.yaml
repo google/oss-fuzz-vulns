@@ -1,0 +1,34 @@
+affected:
+- database_specific:
+    introduced_range: d9cea5646972595c7658bd5c4a3cc5b32fe64c73:95ae550858fc0a808e4f6d6d3c6007cc9f15cc11
+  ecosystem_specific:
+    severity: MEDIUM
+  package:
+    ecosystem: OSS-Fuzz
+    name: opensc
+    purl: pkg:generic/opensc
+  ranges:
+  - events:
+    - introduced: 7d5d10ef37806d408cc8871026faec7f8c069991
+    - fixed: b25b78845e8a5983d9c1bd96d34b3c89e00f07fd
+    repo: https://github.com/OpenSC/OpenSC
+    type: GIT
+  versions: []
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=517058311
+
+  ```
+  Crash type: Stack-buffer-overflow READ {*}
+  Crash state:
+  coolkey_rsa_op
+  coolkey_compute_crypt
+  sc_compute_signature
+  ```
+id: OSV-2026-824
+modified: '2026-05-29T00:09:49.737006Z'
+published: '2026-05-29T00:09:49.736717Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=517058311
+schema_version: 1.7.5
+summary: Stack-buffer-overflow in coolkey_rsa_op

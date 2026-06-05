@@ -1,0 +1,35 @@
+affected:
+- database_specific:
+    introduced_range: 8f5b302439e9ac08f92faeef18c1d97cc77698bf:1d334557b18021a3aef3d17e1e72a0808d3e4e46
+  ecosystem_specific:
+    severity: HIGH
+  package:
+    ecosystem: OSS-Fuzz
+    name: gpac
+    purl: pkg:generic/gpac
+  ranges:
+  - events:
+    - introduced: 297f2d8d1f493d8b241330533cd47f7da758aeb3
+    - fixed: db3815307d1594fc34cb757d4509834a9d2e12bf
+    repo: https://github.com/gpac/gpac
+    type: GIT
+  versions:
+  - abi-16.17
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=519588196
+
+  ```
+  Crash type: Heap-use-after-free READ 8
+  Crash state:
+  gf_sg_reset
+  gf_sg_del
+  fuzz_scene.c
+  ```
+id: OSV-2026-855
+modified: '2026-06-05T00:09:54.701449Z'
+published: '2026-06-05T00:09:54.701201Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=519588196
+schema_version: 1.7.5
+summary: Heap-use-after-free in gf_sg_reset
