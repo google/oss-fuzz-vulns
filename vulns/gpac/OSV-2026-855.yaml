@@ -11,6 +11,7 @@ affected:
   - events:
     - introduced: 297f2d8d1f493d8b241330533cd47f7da758aeb3
     - fixed: db3815307d1594fc34cb757d4509834a9d2e12bf
+    - introduced: be6e8a95e6fe02267f4960adffb3e6115bd5cb4a
     repo: https://github.com/gpac/gpac
     type: GIT
   versions:
@@ -26,7 +27,7 @@ details: |
   fuzz_scene.c
   ```
 id: OSV-2026-855
-modified: '2026-06-05T00:09:54.701449Z'
+modified: '2026-06-05T14:24:22.703720Z'
 published: '2026-06-05T00:09:54.701201Z'
 references:
 - type: REPORT
