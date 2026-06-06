@@ -22,6 +22,7 @@ affected:
   - 4.11.0
   - 4.12.0
   - 4.13.0
+  - 5.0.0
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=59450
 
@@ -33,7 +34,7 @@ details: |
   cv::detail::Jpeg2KOpjDecoderBase::readData
   ```
 id: OSV-2023-444
-modified: '2025-12-31T14:18:46.286556Z'
+modified: '2026-06-06T14:25:22.596898Z'
 published: '2023-05-31T14:02:00.753503Z'
 references:
 - type: REPORT
