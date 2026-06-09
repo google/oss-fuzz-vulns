@@ -1,0 +1,35 @@
+affected:
+- database_specific:
+    introduced_range: 805d75ca1f33ff33951d5082e3d3535c7a090808:4d48615c9bfb2ef0c61d50e1e1dd3e3d63a82be0
+  ecosystem_specific:
+    severity: MEDIUM
+  package:
+    ecosystem: OSS-Fuzz
+    name: pcapplusplus
+    purl: pkg:generic/pcapplusplus
+  ranges:
+  - events:
+    - introduced: 56668faab242e53b1282b3405eaa4bb51e474bee
+    repo: https://github.com/seladb/PcapPlusPlus
+    type: GIT
+  versions:
+  - v24.09
+  - v25.05
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=491288647
+
+  ```
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  pcpp::byteArrayToHexString
+  pcpp::PacketTrailerLayer::toString
+  FuzzTarget.cpp
+  ```
+id: OSV-2026-386
+modified: '2026-03-12T00:17:39.103810Z'
+published: '2026-03-12T00:17:39.103518Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=491288647
+schema_version: 1.7.5
+summary: Use-of-uninitialized-value in pcpp::byteArrayToHexString

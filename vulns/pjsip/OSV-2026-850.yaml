@@ -1,0 +1,34 @@
+affected:
+- database_specific:
+    introduced_range: 9bec9e6c1260ec36b71100fbda78e2841d6a3924:7d8f736ffe7fbba736eb51154ac87edba2f864ce
+  ecosystem_specific:
+    severity: HIGH
+  package:
+    ecosystem: OSS-Fuzz
+    name: pjsip
+    purl: pkg:generic/pjsip
+  ranges:
+  - events:
+    - introduced: 2f76bbaf5ed59c426fffec578fa15e4d1fb0a682
+    - fixed: d0cbf57aca90f4722194c4e0d94ef0b236bb2489
+    repo: https://github.com/pjsip/pjproject
+    type: GIT
+  versions: []
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=519646826
+
+  ```
+  Crash type: Heap-buffer-overflow WRITE {*}
+  Crash state:
+  opus_repacketizer_out_range_impl
+  opus_repacketizer_out_range
+  codec_parse
+  ```
+id: OSV-2026-850
+modified: '2026-06-05T00:02:02.956149Z'
+published: '2026-06-05T00:02:02.955862Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=519646826
+schema_version: 1.7.5
+summary: Heap-buffer-overflow in opus_repacketizer_out_range_impl
