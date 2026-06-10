@@ -12,6 +12,7 @@ affected:
   - events:
     - introduced: c89f635505028a11fadb9a0904d2c3bd44f1b23a
     - fixed: 360ed38a2c4f948689e5f9851a744016928becdc
+    - fixed: 0156c780ac6b109d191975041def0a258b0b75fc
     repo: https://github.com/LibreDWG/libredwg
     type: GIT
   versions:
@@ -29,7 +30,7 @@ details: |
   llvmfuzz.c
   ```
 id: OSV-2026-892
-modified: '2026-06-09T00:07:59.081983Z'
+modified: '2026-06-10T14:44:34.266794Z'
 published: '2026-06-09T00:07:59.081654Z'
 references:
 - type: REPORT
