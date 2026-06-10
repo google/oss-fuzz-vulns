@@ -1,0 +1,34 @@
+affected:
+- database_specific:
+    introduced_range: 1f0d11ce8f1a5ac141dc6a8d235d6338f46e24a4:1fac8cc5fea9acf88fce10fdd4481e103724ef59
+  ecosystem_specific:
+    severity: HIGH
+  package:
+    ecosystem: OSS-Fuzz
+    name: libhevc
+    purl: pkg:generic/libhevc
+  ranges:
+  - events:
+    - introduced: f6ef16b0f9f74f5d15843ca336c098c93b18aac6
+    - fixed: 57d79be23a349723cb419600b190e85f0dd99357
+    repo: https://github.com/ittiam-systems/libhevc.git
+    type: GIT
+  versions: []
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=521437880
+
+  ```
+  Crash type: Heap-buffer-overflow WRITE 8
+  Crash state:
+  ihevcd_fmt_conv
+  ihevcd_process_thread
+  start_thread
+  ```
+id: OSV-2026-895
+modified: '2026-06-10T00:07:09.972922Z'
+published: '2026-06-10T00:07:09.972504Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=521437880
+schema_version: 1.7.5
+summary: Heap-buffer-overflow in ihevcd_fmt_conv

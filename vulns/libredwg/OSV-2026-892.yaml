@@ -1,0 +1,38 @@
+affected:
+- database_specific:
+    fixed_range: 08c034a224a4e9512b1cd62e74b5cf081a4cfa89:360ed38a2c4f948689e5f9851a744016928becdc
+    introduced_range: 69d7addfaa05ffd3b9a49986f361917e23780083:57e4fd0969532e585b966d15cbbf60ca6e868b32
+  ecosystem_specific:
+    severity: MEDIUM
+  package:
+    ecosystem: OSS-Fuzz
+    name: libredwg
+    purl: pkg:generic/libredwg
+  ranges:
+  - events:
+    - introduced: c89f635505028a11fadb9a0904d2c3bd44f1b23a
+    - fixed: 360ed38a2c4f948689e5f9851a744016928becdc
+    repo: https://github.com/LibreDWG/libredwg
+    type: GIT
+  versions:
+  - 0.13.4.8237
+  - 0.13.4.8241
+  - 0.13.4.8246
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=521044421
+
+  ```
+  Crash type: Heap-buffer-overflow READ 8
+  Crash state:
+  decode_R13_RNUMBER
+  dwg_decode
+  llvmfuzz.c
+  ```
+id: OSV-2026-892
+modified: '2026-06-09T00:07:59.081983Z'
+published: '2026-06-09T00:07:59.081654Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=521044421
+schema_version: 1.7.5
+summary: Heap-buffer-overflow in decode_R13_RNUMBER
