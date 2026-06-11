@@ -1,5 +1,7 @@
 affected:
-- ecosystem_specific:
+- database_specific:
+    fixed_range: 4e2bd50e6d7d5d2a05538401932f67d1e26f9b94:97f34b2fe98fb75313fc921303f562d30a307de5
+  ecosystem_specific:
     severity: HIGH
   package:
     ecosystem: OSS-Fuzz
@@ -8,6 +10,7 @@ affected:
   ranges:
   - events:
     - introduced: 360ccf5e5922f25d4a35f6adba615aa2f5eceac4
+    - fixed: 97f34b2fe98fb75313fc921303f562d30a307de5
     repo: https://github.com/OpenPrinting/cups
     type: GIT
   versions: []
