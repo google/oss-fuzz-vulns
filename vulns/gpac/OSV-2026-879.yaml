@@ -1,5 +1,7 @@
 affected:
-- ecosystem_specific:
+- database_specific:
+    fixed_range: c2dee3aff638cd96f9617ac5b17dc2868cd90ef3:aa0fb77b82e51b159a2024c440cdf6b571b14d81
+  ecosystem_specific:
     severity: HIGH
   package:
     ecosystem: OSS-Fuzz
@@ -9,6 +11,7 @@ affected:
   - events:
     - introduced: c531b662f947089f5915e1eaec9894fbee38054f
     - fixed: 72f295f19da4e45b40ce36bab9a79e35b05d45e1
+    - fixed: aa0fb77b82e51b159a2024c440cdf6b571b14d81
     repo: https://github.com/gpac/gpac
     type: GIT
   versions:
@@ -29,7 +32,7 @@ details: |
   lsr_read_scene_content_model
   ```
 id: OSV-2026-879
-modified: '2026-06-08T00:02:29.284637Z'
+modified: '2026-06-11T14:37:17.340007Z'
 published: '2026-06-08T00:02:29.284145Z'
 references:
 - type: REPORT
