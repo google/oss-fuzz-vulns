@@ -57,6 +57,7 @@ affected:
   - v6.26.0-rc1
   - v6.26.0
   - v6.27.0-rc1
+  - v6.27.0
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=70554
 
@@ -68,7 +69,7 @@ details: |
   kimgio_fuzzer.cc
   ```
 id: OSV-2024-679
-modified: '2026-06-06T14:25:50.865946Z'
+modified: '2026-06-12T14:29:37.426030Z'
 published: '2024-07-25T00:14:34.485446Z'
 references:
 - type: REPORT
