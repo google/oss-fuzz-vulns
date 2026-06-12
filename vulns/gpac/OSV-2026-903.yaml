@@ -1,0 +1,37 @@
+affected:
+- ecosystem_specific:
+    severity: MEDIUM
+  package:
+    ecosystem: OSS-Fuzz
+    name: gpac
+    purl: pkg:generic/gpac
+  ranges:
+  - events:
+    - introduced: 9793b5f612e127987ae8e753f13854fa77433657
+    - fixed: 1198d06cc2a2fceb8d610aa26032c5cab946ac48
+    repo: https://github.com/gpac/gpac
+    type: GIT
+  versions:
+  - abi-16.13
+  - abi-16.14
+  - abi-16.15
+  - abi-16.16
+  - abi-16.17
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=522061221
+
+  ```
+  Crash type: UNKNOWN
+  Crash state:
+  avi_parse_input_file
+  AVI_open_input_file
+  avidmx_process
+  ```
+id: OSV-2026-903
+modified: '2026-06-12T00:09:53.280823Z'
+published: '2026-06-12T00:09:53.280533Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=522061221
+schema_version: 1.7.5
+summary: UNKNOWN in avi_parse_input_file
