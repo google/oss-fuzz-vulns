@@ -1,5 +1,6 @@
 affected:
 - database_specific:
+    fixed_range: 0e4093392e1f847c90d20e031e893cd942fef938:7ee24256a42bc8f4e117907ae77df6a095befb2c
     introduced_range: c2dee3aff638cd96f9617ac5b17dc2868cd90ef3:aa0fb77b82e51b159a2024c440cdf6b571b14d81
   ecosystem_specific:
     severity: HIGH
@@ -11,6 +12,7 @@ affected:
   - events:
     - introduced: 72f295f19da4e45b40ce36bab9a79e35b05d45e1
     - fixed: 1308b19e63ca1fb9990803bb74136f77e6c9ddee
+    - fixed: 7ee24256a42bc8f4e117907ae77df6a095befb2c
     repo: https://github.com/gpac/gpac
     type: GIT
   versions: []
