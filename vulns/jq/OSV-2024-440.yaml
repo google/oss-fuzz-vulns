@@ -15,6 +15,7 @@ affected:
   - jq-1.8.0
   - jq-1.8.1
   - jq-1.8.2rc1
+  - jq-1.8.2rc2
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=66323
 
@@ -23,7 +24,7 @@ details: |
   Crash state:
   NULL```
 id: OSV-2024-440
-modified: '2026-04-25T14:18:51.314914Z'
+modified: '2026-06-16T14:06:26.197177Z'
 published: '2024-05-07T00:06:11.033336Z'
 references:
 - type: REPORT
