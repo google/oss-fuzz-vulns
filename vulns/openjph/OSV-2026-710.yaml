@@ -1,0 +1,39 @@
+affected:
+- ecosystem_specific:
+    severity: HIGH
+  package:
+    ecosystem: OSS-Fuzz
+    name: openjph
+    purl: pkg:generic/openjph
+  ranges:
+  - events:
+    - introduced: 9b576c6700c786cc8752dde6ee7146d82d70e11f
+    - fixed: 5783f20bf124c7751d8dc5c34089531803f1e045
+    repo: https://github.com/aous72/OpenJPH.git
+    type: GIT
+  versions:
+  - 0.27.0
+  - 0.27.1
+  - 0.27.2
+  - 0.27.3
+  - 0.27.4
+  - 0.28.0
+  - 0.28.1
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=511393472
+
+  ```
+  Crash type: UNKNOWN WRITE
+  Crash state:
+  ojph::local::precinct::parse
+  ojph::local::resolution::parse_one_precinct
+  ojph::local::tile::parse_tile_header
+  ```
+id: OSV-2026-710
+modified: '2026-05-11T00:02:40.922314Z'
+published: '2026-05-11T00:02:40.922013Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=511393472
+schema_version: 1.7.5
+summary: UNKNOWN WRITE in ojph::local::precinct::parse

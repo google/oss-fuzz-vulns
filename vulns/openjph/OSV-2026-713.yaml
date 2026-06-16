@@ -1,0 +1,39 @@
+affected:
+- ecosystem_specific:
+    severity: MEDIUM
+  package:
+    ecosystem: OSS-Fuzz
+    name: openjph
+    purl: pkg:generic/openjph
+  ranges:
+  - events:
+    - introduced: 9b576c6700c786cc8752dde6ee7146d82d70e11f
+    - fixed: 5783f20bf124c7751d8dc5c34089531803f1e045
+    repo: https://github.com/aous72/OpenJPH.git
+    type: GIT
+  versions:
+  - 0.27.0
+  - 0.27.1
+  - 0.27.2
+  - 0.27.3
+  - 0.27.4
+  - 0.28.0
+  - 0.28.1
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=511443006
+
+  ```
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  ojph::local::tile::pull
+  ojph::local::codestream::pull
+  ojph_expand_fuzz_target.cpp
+  ```
+id: OSV-2026-713
+modified: '2026-05-11T00:16:48.158024Z'
+published: '2026-05-11T00:16:48.157731Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=511443006
+schema_version: 1.7.5
+summary: Use-of-uninitialized-value in ojph::local::tile::pull
