@@ -1,5 +1,6 @@
 affected:
 - database_specific:
+    fixed_range: 595aef326a124d54b542e7ff0827219709b19724:afc44b0192aea809f487af060ffa9b9e60839ee1
     introduced_range: b603d0d97ed4ecfba9205e449ecff9ed1897e224:3757a1e0fa4757c9ed0b422578538772cc0dab5c
   ecosystem_specific:
     severity: MEDIUM
@@ -10,6 +11,7 @@ affected:
   ranges:
   - events:
     - introduced: db15b372a13380693c9ebd33d270c6bddf394883
+    - fixed: afc44b0192aea809f487af060ffa9b9e60839ee1
     repo: https://github.com/rdkit/rdkit.git
     type: GIT
   versions:
@@ -50,15 +52,15 @@ affected:
   - Release_2024_09_4
   - Release_2024_09_5
   - Release_2024_09_6
-  - Release_2025_03_1b1
   - Release_2025_03_1
+  - Release_2025_03_1b1
   - Release_2025_03_2
   - Release_2025_03_3
   - Release_2025_03_4
   - Release_2025_03_5
   - Release_2025_03_6
-  - Release_2025_09_1b1
   - Release_2025_09_1
+  - Release_2025_09_1b1
   - Release_2025_09_2
   - Release_2025_09_3
   - Release_2025_09_4
@@ -79,7 +81,7 @@ details: |
   SmilesParseOps::parseCXExtensions
   ```
 id: OSV-2022-1288
-modified: '2026-05-30T14:18:25.088169Z'
+modified: '2026-06-17T14:12:15.832577Z'
 published: '2024-11-04T00:16:22.516312Z'
 references:
 - type: REPORT
