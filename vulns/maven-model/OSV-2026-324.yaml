@@ -1,5 +1,6 @@
 affected:
 - database_specific:
+    fixed_range: 26fce45633e768aae35d14e8dc6f9fb38776be7b:1512eff3569aa11d705481ad2662705afbe7e505
     introduced_range: a3e8da805c7e8d743700f13924bd2aafe3fe6783:5029cc238ce5ce03b0fb431a278889f8b788c0a7
   ecosystem_specific:
     severity: LOW
@@ -10,6 +11,8 @@ affected:
   ranges:
   - events:
     - introduced: a27873629f94174bbcaa345c81abb204e4357ce5
+    - fixed: 1512eff3569aa11d705481ad2662705afbe7e505
+    - fixed: df1c4925e5a4ae13ec6da458ba39afc70ddf593a
     repo: https://github.com/apache/maven
     type: GIT
   versions:
@@ -34,7 +37,7 @@ details: |
   java.base/java.lang.StringBuilder.toString
   ```
 id: OSV-2026-324
-modified: '2026-02-28T00:03:36.847810Z'
+modified: '2026-06-17T14:27:05.737122Z'
 published: '2026-02-28T00:03:36.847525Z'
 references:
 - type: REPORT
