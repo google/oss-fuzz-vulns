@@ -53,6 +53,7 @@ affected:
   - abi-16.15
   - abi-16.16
   - abi-16.17
+  - abi-16.18
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=70392
 
@@ -64,7 +65,7 @@ details: |
   inspect_process
   ```
 id: OSV-2024-659
-modified: '2026-06-03T14:30:28.879623Z'
+modified: '2026-06-18T14:27:08.305495Z'
 published: '2024-07-18T00:01:18.765548Z'
 references:
 - type: REPORT
