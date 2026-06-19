@@ -747,6 +747,8 @@ affected:
   - 0.13.4.8295
   - 0.13.4.8302
   - 0.13.4.8304
+  - 0.13.4.8313
+  - 0.13.4.8317
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=46994
 
@@ -758,7 +760,7 @@ details: |
   dwg_encode
   ```
 id: OSV-2022-372
-modified: '2026-06-18T14:17:42.360696Z'
+modified: '2026-06-19T14:18:20.930893Z'
 published: '2022-04-26T00:00:09.352798Z'
 references:
 - type: REPORT
