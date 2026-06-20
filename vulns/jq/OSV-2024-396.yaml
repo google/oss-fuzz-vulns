@@ -16,6 +16,7 @@ affected:
   - jq-1.8.1
   - jq-1.8.2rc1
   - jq-1.8.2rc2
+  - jq-1.8.2
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=65942
 
@@ -27,7 +28,7 @@ details: |
   jv_equal
   ```
 id: OSV-2024-396
-modified: '2026-06-16T14:12:57.361053Z'
+modified: '2026-06-20T14:21:43.885486Z'
 published: '2024-05-01T00:11:24.552935Z'
 references:
 - type: REPORT
