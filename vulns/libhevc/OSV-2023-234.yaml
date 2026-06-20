@@ -20,6 +20,7 @@ affected:
   - v1.6.0
   - v1.7.0
   - v1.8.0
+  - v1.8.2
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=57397
 
@@ -31,7 +32,7 @@ details: |
   posix_memalign
   ```
 id: OSV-2023-234
-modified: '2026-06-19T14:17:45.556503Z'
+modified: '2026-06-20T14:13:07.004654Z'
 published: '2023-03-26T13:00:12.135289Z'
 references:
 - type: REPORT
