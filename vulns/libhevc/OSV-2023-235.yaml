@@ -20,6 +20,7 @@ affected:
   - v1.6.0
   - v1.7.0
   - v1.8.0
+  - v1.8.2
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=57398
 
@@ -31,7 +32,7 @@ details: |
   osal_func
   ```
 id: OSV-2023-235
-modified: '2026-06-19T14:17:51.587603Z'
+modified: '2026-06-20T14:13:24.891075Z'
 published: '2023-03-26T13:00:16.681780Z'
 references:
 - type: REPORT
