@@ -727,6 +727,7 @@ affected:
   - 0.13.4.8313
   - 0.13.4.8317
   - 0.13.4.8321
+  - 0.13.4.8336
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=53617
 
@@ -738,7 +739,7 @@ details: |
   dwg_write_json
   ```
 id: OSV-2022-1198
-modified: '2026-06-22T14:15:56.770166Z'
+modified: '2026-06-24T14:19:31.172896Z'
 published: '2022-11-23T13:02:06.623044Z'
 references:
 - type: REPORT
