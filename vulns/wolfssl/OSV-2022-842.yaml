@@ -34,6 +34,7 @@ affected:
   - v5.9.0-stable
   - v5.9.1-stable
   - wolfEntropyv5.2.4-CHKIN
+  - v5.9.2-stable
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=50946
 
@@ -45,7 +46,7 @@ details: |
   wc_ed448_sign_msg
   ```
 id: OSV-2022-842
-modified: '2026-06-19T14:26:31.767309Z'
+modified: '2026-06-25T14:24:03.465175Z'
 published: '2022-09-05T00:00:28.251072Z'
 references:
 - type: REPORT
