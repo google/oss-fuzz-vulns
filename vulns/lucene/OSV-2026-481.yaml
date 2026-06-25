@@ -1,0 +1,42 @@
+affected:
+- database_specific:
+    introduced_range: 223e28ef16acb35cb43c89493855366d171de4f9:8af305892d726c180f03316c73aebf8183c2e481
+  ecosystem_specific:
+    severity: LOW
+  package:
+    ecosystem: OSS-Fuzz
+    name: lucene
+    purl: pkg:generic/lucene
+  ranges:
+  - events:
+    - introduced: 5d203f8337cb6a2350c1abe5d83e3e103d060645
+    repo: https://github.com/apache/lucene.git
+    type: GIT
+  versions:
+  - releases/lucene/10.0.0
+  - releases/lucene/10.1.0
+  - releases/lucene/10.2.0
+  - releases/lucene/10.2.1
+  - releases/lucene/10.2.2
+  - releases/lucene/10.3.0
+  - releases/lucene/10.3.1
+  - releases/lucene/10.3.2
+  - releases/lucene/10.4.0
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=496552925
+
+  ```
+  Crash type: Security exception
+  Crash state:
+  org.apache.lucene.analysis.miscellaneous.ASCIIFoldingFilter.foldToASCII
+  org.apache.lucene.analysis.miscellaneous.ASCIIFoldingFilter.foldToASCII
+  org.apache.lucene.analysis.miscellaneous.ASCIIFoldingFilter.incrementToken
+  ```
+id: OSV-2026-481
+modified: '2026-03-28T00:18:22.245866Z'
+published: '2026-03-28T00:18:22.245546Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=496552925
+schema_version: 1.7.5
+summary: Security exception in org.apache.lucene.analysis.miscellaneous.ASCIIFoldingFilter.foldToASCII
