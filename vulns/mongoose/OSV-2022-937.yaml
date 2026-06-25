@@ -24,6 +24,7 @@ affected:
   - '7.19'
   - '7.20'
   - '7.21'
+  - '7.22'
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=51687
 
@@ -35,7 +36,7 @@ details: |
   fuzz.c
   ```
 id: OSV-2022-937
-modified: '2026-04-01T14:27:42.367988Z'
+modified: '2026-06-25T14:14:49.506796Z'
 published: '2022-09-23T00:02:21.434097Z'
 references:
 - type: REPORT
