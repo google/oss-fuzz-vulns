@@ -22,6 +22,7 @@ affected:
   - releases/lucene/10.3.1
   - releases/lucene/10.3.2
   - releases/lucene/10.4.0
+  - releases/lucene/10.5.0
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=496552925
 
@@ -33,7 +34,7 @@ details: |
   org.apache.lucene.analysis.miscellaneous.ASCIIFoldingFilter.incrementToken
   ```
 id: OSV-2026-481
-modified: '2026-03-28T00:18:22.245866Z'
+modified: '2026-06-25T14:38:39.641582Z'
 published: '2026-03-28T00:18:22.245546Z'
 references:
 - type: REPORT
