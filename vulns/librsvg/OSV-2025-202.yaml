@@ -44,6 +44,8 @@ affected:
   - 2.62.1
   - 2.62.2
   - 2.62.3
+  - 2.62.90
+  - 2.63.0-beta.0
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=402836107
 
@@ -55,7 +57,7 @@ details: |
   composite_boxes
   ```
 id: OSV-2025-202
-modified: '2026-06-02T14:33:47.421145Z'
+modified: '2026-06-26T14:17:35.998236Z'
 published: '2025-03-15T00:01:51.127135Z'
 references:
 - type: REPORT
