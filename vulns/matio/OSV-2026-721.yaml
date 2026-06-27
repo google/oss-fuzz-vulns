@@ -1,0 +1,34 @@
+affected:
+- database_specific:
+    fixed_range: e1e7e975e34291f213cd50348b6f750ac4c737e0:4102f9ebf3089b6762fecd469682bfcf59660194
+  ecosystem_specific:
+    severity: HIGH
+  package:
+    ecosystem: OSS-Fuzz
+    name: matio
+    purl: pkg:generic/matio
+  ranges:
+  - events:
+    - introduced: ac1c67c687533d2de55f96709ed4512d4c197801
+    - fixed: 4102f9ebf3089b6762fecd469682bfcf59660194
+    repo: https://github.com/tbeu/matio.git
+    type: GIT
+  versions: []
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=512001847
+
+  ```
+  Crash type: Heap-buffer-overflow WRITE {*}
+  Crash state:
+  H5D__scatter_mem
+  H5D__scatgath_read
+  H5D__contig_read
+  ```
+id: OSV-2026-721
+modified: '2026-05-13T00:09:11.032697Z'
+published: '2026-05-13T00:09:11.032373Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=512001847
+schema_version: 1.7.5
+summary: Heap-buffer-overflow in H5D__scatter_mem

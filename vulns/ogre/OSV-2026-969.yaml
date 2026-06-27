@@ -1,0 +1,32 @@
+affected:
+- ecosystem_specific:
+    severity: null
+  package:
+    ecosystem: OSS-Fuzz
+    name: ogre
+    purl: pkg:generic/ogre
+  ranges:
+  - events:
+    - introduced: d3d34ae09abf0c4f0aa6bf83ada89d0ed354cc53
+    - fixed: 4b066d6e8f340bc92f935a6d2161872413e4a460
+    repo: https://github.com/OGRECave/ogre
+    type: GIT
+  versions: []
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=527766102
+
+  ```
+  Crash type: Heap-use-after-free READ 1
+  Crash state:
+  Ogre::VertexData::convertPackedColour
+  Ogre::MeshSerializerImpl::readGeometry
+  Ogre::MeshSerializerImpl::readMesh
+  ```
+id: OSV-2026-969
+modified: '2026-06-26T00:10:53.141722Z'
+published: '2026-06-26T00:10:53.141269Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=527766102
+schema_version: 1.7.5
+summary: Heap-use-after-free in Ogre::VertexData::convertPackedColour
