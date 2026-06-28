@@ -1,0 +1,32 @@
+affected:
+- ecosystem_specific:
+    severity: MEDIUM
+  package:
+    ecosystem: OSS-Fuzz
+    name: open5gs
+    purl: pkg:generic/open5gs
+  ranges:
+  - events:
+    - introduced: ec6b76dccf975373cf108a09b1a4a284aaca20c5
+    - fixed: 76d2237c0e99dd8cd01f03351a375a4c21d003c0
+    repo: https://github.com/open5gs/open5gs.git
+    type: GIT
+  versions: []
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=527978938
+
+  ```
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  ogs_cpystrn
+  ogs_nas_5gs_decode_dnn
+  ogs_nas_5gs_decode_pdu_session_establishment_accept
+  ```
+id: OSV-2026-970
+modified: '2026-06-27T00:01:55.134654Z'
+published: '2026-06-27T00:01:55.134195Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=527978938
+schema_version: 1.7.5
+summary: Use-of-uninitialized-value in ogs_cpystrn
