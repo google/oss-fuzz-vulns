@@ -51,6 +51,7 @@ affected:
   - checkstyle-13.4.2
   - checkstyle-13.5.0
   - checkstyle-13.6.0
+  - checkstyle-13.7.0
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=70141
 
@@ -62,7 +63,7 @@ details: |
   java.base/java.nio.CharBuffer.wrap
   ```
 id: OSV-2024-641
-modified: '2026-06-15T14:32:17.657867Z'
+modified: '2026-06-29T14:28:17.365773Z'
 published: '2024-07-14T00:06:37.034414Z'
 references:
 - type: REPORT
