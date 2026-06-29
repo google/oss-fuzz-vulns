@@ -736,6 +736,7 @@ affected:
   - '0.14'
   - 0.14.8363
   - 0.14.8367
+  - 0.14.8374
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=50194
 
@@ -747,7 +748,7 @@ details: |
   json_HEADER
   ```
 id: OSV-2022-714
-modified: '2026-06-28T14:20:31.641974Z'
+modified: '2026-06-29T14:25:03.685257Z'
 published: '2022-08-15T00:00:47.794062Z'
 references:
 - type: REPORT
