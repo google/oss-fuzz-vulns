@@ -12,6 +12,7 @@ affected:
   - events:
     - introduced: e814012b2b108743e21b7ef2799310a0f4e0a86d
     - fixed: 11f57b156514211af29b93588c0fee2f8b3e66e4
+    - introduced: 9542d1b3a05477c415d870b7b652cdde75a5c8ea
     repo: git://sourceware.org/git/binutils-gdb.git
     type: GIT
   versions:
@@ -39,7 +40,7 @@ details: |
   bfd_perform_relocation
   ```
 id: OSV-2026-973
-modified: '2026-06-27T00:10:11.184174Z'
+modified: '2026-06-29T20:05:30.805716Z'
 published: '2026-06-27T00:10:11.183882Z'
 references:
 - type: REPORT
