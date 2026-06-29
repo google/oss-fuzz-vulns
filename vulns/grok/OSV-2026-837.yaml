@@ -1,0 +1,53 @@
+affected:
+- database_specific:
+    fixed_range: 82ce38159c68ac6da531682dc542bbbdf32c15b9:f76c6e85fcf629f7dc5b961e37f4fefb00ce7c7e
+    introduced_range: 354d77e68ddea42a4d8068ac5a92e32035848fb7:b176c52456b31ee223c82ed2c765471b190bc18a
+  ecosystem_specific:
+    severity: HIGH
+  package:
+    ecosystem: OSS-Fuzz
+    name: grok
+    purl: pkg:generic/grok
+  ranges:
+  - events:
+    - introduced: 1ca9a4ce1b63568ed43aa7c93697114dc6b3fbcb
+    - fixed: f76c6e85fcf629f7dc5b961e37f4fefb00ce7c7e
+    repo: https://github.com/GrokImageCompression/grok.git
+    type: GIT
+  versions:
+  - v20.1.0
+  - v20.2.0
+  - v20.2.1
+  - v20.2.2
+  - v20.2.3
+  - v20.2.4
+  - v20.2.5
+  - v20.2.6
+  - v20.2.7
+  - v20.2.8
+  - v20.2.9
+  - v20.3.0
+  - v20.3.1
+  - v20.3.2
+  - v20.3.3
+  - v20.3.4
+  - v20.3.5
+  - v20.3.6
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=519348401
+
+  ```
+  Crash type: Heap-use-after-free READ 8
+  Crash state:
+  grk::TileProcessor::parseTilePart
+  tf::Executor::_invoke
+  tf::Executor::_spawn
+  ```
+id: OSV-2026-837
+modified: '2026-06-04T00:03:55.529236Z'
+published: '2026-06-04T00:03:55.528941Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=519348401
+schema_version: 1.7.5
+summary: Heap-use-after-free in grk::TileProcessor::parseTilePart
