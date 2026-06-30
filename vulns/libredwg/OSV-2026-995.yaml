@@ -1,0 +1,37 @@
+affected:
+- database_specific:
+    introduced_range: 08c034a224a4e9512b1cd62e74b5cf081a4cfa89:360ed38a2c4f948689e5f9851a744016928becdc
+  ecosystem_specific:
+    severity: HIGH
+  package:
+    ecosystem: OSS-Fuzz
+    name: libredwg
+    purl: pkg:generic/libredwg
+  ranges:
+  - events:
+    - introduced: fdf42300c049bd5b791668362873a02b5ee3ce2b
+    - fixed: 5c707f7c5f748b060eb0e607f045ef617ea75e16
+    repo: https://github.com/LibreDWG/libredwg
+    type: GIT
+  versions:
+  - '0.14'
+  - 0.14.8363
+  - 0.14.8367
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=528859714
+
+  ```
+  Crash type: Heap-double-free
+  Crash state:
+  dxf_entities_read
+  dwg_read_dxf
+  llvmfuzz.c
+  ```
+id: OSV-2026-995
+modified: '2026-06-29T00:21:08.898982Z'
+published: '2026-06-29T00:21:08.898692Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=528859714
+schema_version: 1.7.5
+summary: Heap-double-free in dxf_entities_read
