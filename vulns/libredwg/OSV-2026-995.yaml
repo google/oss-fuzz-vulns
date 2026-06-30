@@ -1,5 +1,6 @@
 affected:
 - database_specific:
+    fixed_range: d9468ae948b8f07a08efa756c19f8916052358c0:30f4304649433c690a62d6d0940c98a0371fda96
     introduced_range: 08c034a224a4e9512b1cd62e74b5cf081a4cfa89:360ed38a2c4f948689e5f9851a744016928becdc
   ecosystem_specific:
     severity: HIGH
@@ -11,6 +12,7 @@ affected:
   - events:
     - introduced: fdf42300c049bd5b791668362873a02b5ee3ce2b
     - fixed: 5c707f7c5f748b060eb0e607f045ef617ea75e16
+    - fixed: 30f4304649433c690a62d6d0940c98a0371fda96
     repo: https://github.com/LibreDWG/libredwg
     type: GIT
   versions:
@@ -28,7 +30,7 @@ details: |
   llvmfuzz.c
   ```
 id: OSV-2026-995
-modified: '2026-06-29T00:21:08.898982Z'
+modified: '2026-06-30T14:52:30.093783Z'
 published: '2026-06-29T00:21:08.898692Z'
 references:
 - type: REPORT
