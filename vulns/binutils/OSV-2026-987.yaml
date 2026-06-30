@@ -12,6 +12,7 @@ affected:
   - events:
     - introduced: e814012b2b108743e21b7ef2799310a0f4e0a86d
     - fixed: 7e5ab72bd1d8fd5fa532bae67208e85ec4412230
+    - introduced: 9542d1b3a05477c415d870b7b652cdde75a5c8ea
     repo: git://sourceware.org/git/binutils-gdb.git
     type: GIT
   versions:
@@ -39,7 +40,7 @@ details: |
   bfd_map_over_sections
   ```
 id: OSV-2026-987
-modified: '2026-06-28T00:11:41.292198Z'
+modified: '2026-06-30T17:41:55.689855Z'
 published: '2026-06-28T00:11:41.291924Z'
 references:
 - type: REPORT
