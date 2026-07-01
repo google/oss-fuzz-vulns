@@ -27,6 +27,7 @@ affected:
   - release-78.1
   - release-78.2
   - release-78.3
+  - icu4x/2026-07-01/79.x
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=65128
 
@@ -38,7 +39,7 @@ details: |
   TestNames
   ```
 id: OSV-2023-1328
-modified: '2026-03-18T19:49:20.841276Z'
+modified: '2026-07-01T17:45:35.791405Z'
 published: '2023-12-18T00:13:09.643640Z'
 references:
 - type: REPORT
