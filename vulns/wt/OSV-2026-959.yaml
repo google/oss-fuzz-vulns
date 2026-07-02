@@ -1,0 +1,34 @@
+affected:
+- database_specific:
+    fixed_range: 2379295442b60a75f20abc6955b11f07d431881c:066d53243eff54a95a2951ee26613c91d74ac613
+  ecosystem_specific:
+    severity: HIGH
+  package:
+    ecosystem: OSS-Fuzz
+    name: wt
+    purl: pkg:generic/wt
+  ranges:
+  - events:
+    - introduced: 2379295442b60a75f20abc6955b11f07d431881c
+    - fixed: 066d53243eff54a95a2951ee26613c91d74ac613
+    repo: https://github.com/emweb/wt.git
+    type: GIT
+  versions: []
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=526224351
+
+  ```
+  Crash type: Heap-use-after-free READ 8
+  Crash state:
+  Wt::Http::Request::parseFormUrlEncoded
+  Wt::CgiParser::parse
+  fuzz-cgi.C
+  ```
+id: OSV-2026-959
+modified: '2026-06-23T00:15:52.533654Z'
+published: '2026-06-23T00:15:52.533371Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=526224351
+schema_version: 1.7.5
+summary: Heap-use-after-free in Wt::Http::Request::parseFormUrlEncoded

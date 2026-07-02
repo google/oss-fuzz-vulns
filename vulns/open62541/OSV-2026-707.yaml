@@ -1,0 +1,33 @@
+affected:
+- database_specific:
+    introduced_range: ced702b03d0d53f91779dafd1e91f7a32f7e9947:187849f2d3c64083427722cbdd106cb03c9e6192
+  ecosystem_specific:
+    severity: null
+  package:
+    ecosystem: OSS-Fuzz
+    name: open62541
+    purl: pkg:generic/open62541
+  ranges:
+  - events:
+    - introduced: 78e28f558c4a36cb10c86962c86d6770482920e5
+    - fixed: 9f715bbb33c77bf256144485742bfbb6162e2066
+    repo: https://github.com/open62541/open62541.git
+    type: GIT
+  versions: []
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=511056140
+
+  ```
+  Crash type: Global-buffer-overflow READ 1
+  Crash state:
+  txt2sd
+  fuzz_mdns_xht.cc
+  ```
+id: OSV-2026-707
+modified: '2026-05-10T00:21:54.983908Z'
+published: '2026-05-10T00:21:54.983189Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=511056140
+schema_version: 1.7.5
+summary: Global-buffer-overflow in txt2sd
