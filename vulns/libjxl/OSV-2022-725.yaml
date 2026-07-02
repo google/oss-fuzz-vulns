@@ -36,6 +36,8 @@ affected:
   - v0.11.2
   - v0.8.5
   - v0.9.5
+  - v0.12-snapshot
+  - v0.12.0
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=50295
 
@@ -47,7 +49,7 @@ details: |
   jxl::LowMemoryRenderPipeline::ProcessBuffers
   ```
 id: OSV-2022-725
-modified: '2026-02-11T14:11:54.187880Z'
+modified: '2026-07-02T14:15:24.884839Z'
 published: '2022-08-18T00:01:05.918943Z'
 references:
 - type: REPORT
