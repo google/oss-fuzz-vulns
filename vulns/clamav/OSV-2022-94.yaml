@@ -59,6 +59,8 @@ affected:
   - clamav-1.5.1
   - clamav-1.4.4
   - clamav-1.5.2
+  - clamav-1.4.5
+  - clamav-1.5.3
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=44087
 
@@ -68,7 +70,7 @@ details: |
   yara_yyparse
   yr_lex_parse_rules_file
 id: OSV-2022-94
-modified: '2026-03-05T14:29:46.831320Z'
+modified: '2026-07-02T14:18:53.169872Z'
 published: '2022-01-27T00:02:12.465969Z'
 references:
 - type: REPORT
