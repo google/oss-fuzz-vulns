@@ -10,6 +10,7 @@ affected:
   ranges:
   - events:
     - introduced: 72b9939b9f5a34d155b5b11b61f4474f1176d51a
+    - introduced: fee5c267e764abaacbf8de6a764da6ca7a0292bd
     repo: https://github.com/assimp/assimp.git
     type: GIT
   versions:
@@ -28,7 +29,7 @@ details: |
   bool Assimp::Blender::Structure::ReadFieldPtr<2, Assimp::Blender::vector, std::_
   ```
 id: OSV-2026-521
-modified: '2026-04-04T00:05:03.478715Z'
+modified: '2026-07-03T14:33:49.012945Z'
 published: '2026-04-04T00:05:03.478370Z'
 references:
 - type: REPORT
