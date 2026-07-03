@@ -812,6 +812,7 @@ affected:
   - 0.14.8390
   - 0.14.8394
   - 0.14.8396
+  - 0.14.8403
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=38994
 
@@ -823,7 +824,7 @@ details: |
   llvmfuzz.c
   ```
 id: OSV-2021-1343
-modified: '2026-07-02T14:18:01.269366Z'
+modified: '2026-07-03T14:24:50.304929Z'
 published: '2021-09-21T00:01:33.177403Z'
 references:
 - type: REPORT
