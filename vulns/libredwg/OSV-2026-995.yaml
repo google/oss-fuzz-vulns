@@ -13,6 +13,9 @@ affected:
     - introduced: fdf42300c049bd5b791668362873a02b5ee3ce2b
     - fixed: 5c707f7c5f748b060eb0e607f045ef617ea75e16
     - fixed: 30f4304649433c690a62d6d0940c98a0371fda96
+    - fixed: db9e5f65c3bb6f26152ebdd9ea83b5a85f907e04
+    - fixed: f7e92baa1bfdf38183383b2313bf7a266749ae39
+    - fixed: 359300104fa0c8c60e95426da2d82e170e2624e8
     repo: https://github.com/LibreDWG/libredwg
     type: GIT
   versions:
@@ -30,7 +33,7 @@ details: |
   llvmfuzz.c
   ```
 id: OSV-2026-995
-modified: '2026-06-30T14:52:30.093783Z'
+modified: '2026-07-06T14:25:23.528333Z'
 published: '2026-06-29T00:21:08.898692Z'
 references:
 - type: REPORT
