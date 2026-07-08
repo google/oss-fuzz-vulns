@@ -1,15 +1,30 @@
+id: OSV-2024-664
+summary: Heap-buffer-overflow in gf_dash_group_get_template
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=70342
+
+  ```
+  Crash type: Heap-buffer-overflow WRITE 1
+  Crash state:
+  gf_dash_group_get_template
+  gf_dash_resolve_url
+  gf_dash_download_init_segment
+  ```
+modified: '2026-07-08T14:34:14.042610Z'
+published: '2024-07-18T00:13:55.576218Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=70342
 affected:
-- ecosystem_specific:
-    severity: HIGH
-  package:
-    ecosystem: OSS-Fuzz
+- package:
     name: gpac
+    ecosystem: OSS-Fuzz
     purl: pkg:generic/gpac
   ranges:
-  - events:
-    - introduced: 7323c74ff523fa2d5c4db793d5dfbc611ae505c4
+  - type: GIT
     repo: https://github.com/gpac/gpac
-    type: GIT
+    events:
+    - introduced: 7323c74ff523fa2d5c4db793d5dfbc611ae505c4
   versions:
   - testtag0.1
   - abi-12
@@ -52,21 +67,7 @@ affected:
   - abi-16.16
   - abi-16.17
   - abi-16.18
-details: |
-  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=70342
-
-  ```
-  Crash type: Heap-buffer-overflow WRITE 1
-  Crash state:
-  gf_dash_group_get_template
-  gf_dash_resolve_url
-  gf_dash_download_init_segment
-  ```
-id: OSV-2024-664
-modified: '2026-06-18T14:27:09.059369Z'
-published: '2024-07-18T00:13:55.576218Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=70342
+  - abi-16.19
+  ecosystem_specific:
+    severity: HIGH
 schema_version: 1.6.0
-summary: Heap-buffer-overflow in gf_dash_group_get_template
