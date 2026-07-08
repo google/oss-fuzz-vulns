@@ -1,0 +1,35 @@
+id: OSV-2026-917
+summary: Heap-buffer-overflow in ixheaace_process
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=523531852
+
+  ```
+  Crash type: Heap-buffer-overflow WRITE {*}
+  Crash state:
+  ixheaace_process
+  xaac_enc_fuzzer.cpp
+  ```
+modified: '2026-06-15T00:19:37.594771Z'
+published: '2026-06-15T00:19:37.594492Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=523531852
+affected:
+- package:
+    name: libxaac
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libxaac
+  ranges:
+  - type: GIT
+    repo: https://github.com/ittiam-systems/libxaac.git
+    events:
+    - introduced: fb6a68848a05401a1aba5747d29595cd344faa40
+    - fixed: b9193197055e1e87f841f73c1a3fbca796b2da09
+  versions:
+  - v0.1.13
+  ecosystem_specific:
+    severity: HIGH
+  database_specific:
+    introduced_range: 388435c8f8f43fe0e44bf0d31dd3965283f119ec:eb62778aee21a98b9f6f5c27e0a1f2546a175172
+    fixed_range: 9428b5860dd83dbd2c5b5cc5bf3915abfefbad21:b9193197055e1e87f841f73c1a3fbca796b2da09
+schema_version: 1.7.5
