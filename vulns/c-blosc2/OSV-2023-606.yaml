@@ -1,15 +1,30 @@
+id: OSV-2023-606
+summary: Heap-buffer-overflow in ZSTD_decompressMultiFrame
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=60778
+
+  ```
+  Crash type: Heap-buffer-overflow READ {*}
+  Crash state:
+  ZSTD_decompressMultiFrame
+  ZSTD_decompress_usingDDict
+  zstd_wrap_decompress
+  ```
+modified: '2026-07-09T14:16:45.037233Z'
+published: '2023-07-23T14:01:02.159160Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=60778
 affected:
-- ecosystem_specific:
-    severity: MEDIUM
-  package:
-    ecosystem: OSS-Fuzz
+- package:
     name: c-blosc2
+    ecosystem: OSS-Fuzz
     purl: pkg:generic/c-blosc2
   ranges:
-  - events:
-    - introduced: 4a727370b1c2e9746434c00bf2236db86c31ea5c
+  - type: GIT
     repo: https://github.com/Blosc/c-blosc2.git
-    type: GIT
+    events:
+    - introduced: 4a727370b1c2e9746434c00bf2236db86c31ea5c
   versions:
   - v2.0.0
   - v2.0.0-rc2
@@ -85,21 +100,7 @@ affected:
   - v3.1.3
   - v3.1.4
   - v3.1.5
-details: |
-  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=60778
-
-  ```
-  Crash type: Heap-buffer-overflow READ {*}
-  Crash state:
-  ZSTD_decompressMultiFrame
-  ZSTD_decompress_usingDDict
-  zstd_wrap_decompress
-  ```
-id: OSV-2023-606
-modified: '2026-06-26T14:10:17.847669Z'
-published: '2023-07-23T14:01:02.159160Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=60778
+  - v3.2.0
+  ecosystem_specific:
+    severity: MEDIUM
 schema_version: 1.6.0
-summary: Heap-buffer-overflow in ZSTD_decompressMultiFrame
