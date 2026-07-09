@@ -1,15 +1,30 @@
+id: OSV-2022-867
+summary: Heap-buffer-overflow in get_utf_8_string
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=51090
+
+  ```
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  get_utf_8_string
+  dissect_form_urlencoded
+  call_dissector_work
+  ```
+modified: '2026-07-09T15:40:28.685693Z'
+published: '2022-09-09T00:01:54.157712Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=51090
 affected:
-- ecosystem_specific:
-    severity: MEDIUM
-  package:
-    ecosystem: OSS-Fuzz
+- package:
     name: wireshark
+    ecosystem: OSS-Fuzz
     purl: pkg:generic/wireshark
   ranges:
-  - events:
-    - introduced: 248ff020e7ea17785cc9451f6d24ad61c4310d1f
+  - type: GIT
     repo: https://gitlab.com/wireshark/wireshark.git
-    type: GIT
+    events:
+    - introduced: 248ff020e7ea17785cc9451f6d24ad61c4310d1f
   versions:
   - v4.1.0
   - v4.1.1rc0
@@ -149,21 +164,10 @@ affected:
   - ssv0.10.2rc0
   - v4.7.1
   - v4.7.2rc0
-details: |
-  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=51090
-
-  ```
-  Crash type: Heap-buffer-overflow READ 1
-  Crash state:
-  get_utf_8_string
-  dissect_form_urlencoded
-  call_dissector_work
-  ```
-id: OSV-2022-867
-modified: '2026-06-11T15:16:00.958530Z'
-published: '2022-09-09T00:01:54.157712Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=51090
+  - v4.4.17
+  - v4.4.18rc0
+  - v4.6.7
+  - v4.6.8rc0
+  ecosystem_specific:
+    severity: MEDIUM
 schema_version: 1.2.0
-summary: Heap-buffer-overflow in get_utf_8_string
