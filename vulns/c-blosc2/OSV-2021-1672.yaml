@@ -10,7 +10,7 @@ details: |
   do_job
   blosc_run_decompression_with_context
   ```
-modified: '2026-07-09T14:10:46.790549Z'
+modified: '2026-07-10T14:10:54.144060Z'
 published: '2021-12-12T00:01:29.747137Z'
 references:
 - type: REPORT
@@ -101,6 +101,7 @@ affected:
   - v3.1.4
   - v3.1.5
   - v3.2.0
+  - v3.2.1
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.2.0
