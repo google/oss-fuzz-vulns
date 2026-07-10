@@ -10,7 +10,7 @@ details: |
   lj_meta_tset
   lj_vmeta_tsetv
   ```
-modified: '2026-07-09T14:25:56.476410Z'
+modified: '2026-07-10T14:25:50.323548Z'
 published: '2025-12-25T00:17:49.020029Z'
 references:
 - type: REPORT
@@ -50,6 +50,7 @@ affected:
   - 3.7.2-entrypoint
   - 3.8.0
   - 3.8.1-entrypoint
+  - 3.9.0-entrypoint
   ecosystem_specific:
     severity: HIGH
 schema_version: 1.7.5
