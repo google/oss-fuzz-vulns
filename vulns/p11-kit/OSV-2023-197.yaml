@@ -1,15 +1,30 @@
+id: OSV-2023-197
+summary: Global-buffer-overflow in base_C_MessageEncryptInit
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=57120
+
+  ```
+  Crash type: Global-buffer-overflow READ 8
+  Crash state:
+  base_C_MessageEncryptInit
+  rpc_C_MessageEncryptInit
+  p11_rpc_server_handle
+  ```
+modified: '2026-07-10T14:16:06.539967Z'
+published: '2023-03-18T13:00:57.254906Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=57120
 affected:
-- ecosystem_specific:
-    severity: null
-  package:
-    ecosystem: OSS-Fuzz
+- package:
     name: p11-kit
+    ecosystem: OSS-Fuzz
     purl: pkg:generic/p11-kit
   ranges:
-  - events:
-    - introduced: 7fe7e5d95d9197e7f52aab314468d424acc6ac88
+  - type: GIT
     repo: https://github.com/p11-glue/p11-kit.git
-    type: GIT
+    events:
+    - introduced: 7fe7e5d95d9197e7f52aab314468d424acc6ac88
   versions:
   - 0.25.0
   - 0.25.1
@@ -25,21 +40,8 @@ affected:
   - 0.26.0
   - 0.26.1
   - 0.26.2
-details: |
-  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=57120
-
-  ```
-  Crash type: Global-buffer-overflow READ 8
-  Crash state:
-  base_C_MessageEncryptInit
-  rpc_C_MessageEncryptInit
-  p11_rpc_server_handle
-  ```
-id: OSV-2023-197
-modified: '2026-02-07T14:09:46.773524Z'
-published: '2023-03-18T13:00:57.254906Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=57120
+  - 0.26.3
+  - 0.26.4
+  ecosystem_specific:
+    severity: null
 schema_version: 1.4.0
-summary: Global-buffer-overflow in base_C_MessageEncryptInit
