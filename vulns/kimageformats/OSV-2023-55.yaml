@@ -1,15 +1,30 @@
+id: OSV-2023-55
+summary: Index-out-of-bounds in LibRaw::apply_tiff
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=55722
+
+  ```
+  Crash type: Index-out-of-bounds
+  Crash state:
+  LibRaw::apply_tiff
+  LibRaw::parse_jpeg
+  LibRaw::identify
+  ```
+modified: '2026-07-11T14:12:04.844730Z'
+published: '2023-02-07T13:00:07.438565Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=55722
 affected:
-- ecosystem_specific:
-    severity: MEDIUM
-  package:
-    ecosystem: OSS-Fuzz
+- package:
     name: kimageformats
+    ecosystem: OSS-Fuzz
     purl: pkg:generic/kimageformats
   ranges:
-  - events:
-    - introduced: d881a7bbb1562af383bbb6ca20340ad739fb0d13
+  - type: GIT
     repo: https://invent.kde.org/frameworks/kimageformats.git
-    type: GIT
+    events:
+    - introduced: d881a7bbb1562af383bbb6ca20340ad739fb0d13
   versions:
   - v5.100.0-rc1
   - v5.101.0
@@ -106,21 +121,7 @@ affected:
   - v6.27.0-rc1
   - v6.27.0
   - v6.28.0-rc1
-details: |
-  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=55722
-
-  ```
-  Crash type: Index-out-of-bounds
-  Crash state:
-  LibRaw::apply_tiff
-  LibRaw::parse_jpeg
-  LibRaw::identify
-  ```
-id: OSV-2023-55
-modified: '2026-07-03T14:26:43.914162Z'
-published: '2023-02-07T13:00:07.438565Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=55722
+  - v6.28.0
+  ecosystem_specific:
+    severity: MEDIUM
 schema_version: 1.4.0
-summary: Index-out-of-bounds in LibRaw::apply_tiff
