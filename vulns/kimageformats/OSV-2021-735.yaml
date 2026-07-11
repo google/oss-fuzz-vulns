@@ -1,14 +1,29 @@
+id: OSV-2021-735
+summary: Use-of-uninitialized-value in decode_CABAC_FL_bypass
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34047
+
+  ```
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  decode_CABAC_FL_bypass
+  decode_coeff_abs_level_remaining
+  residual_coding
+  ```
+modified: '2026-07-11T14:06:59.593566Z'
+published: '2021-05-08T00:00:14.355747Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34047
 affected:
-- ecosystem_specific:
-    severity: MEDIUM
-  package:
-    ecosystem: OSS-Fuzz
+- package:
     name: kimageformats
+    ecosystem: OSS-Fuzz
   ranges:
-  - events:
-    - introduced: ca52d4ddf540cc731d0f31dbccc1897f7e6d9db4
+  - type: GIT
     repo: https://invent.kde.org/frameworks/kimageformats.git
-    type: GIT
+    events:
+    - introduced: ca52d4ddf540cc731d0f31dbccc1897f7e6d9db4
   versions:
   - v5.80.0
   - v5.80.0-rc1
@@ -142,20 +157,6 @@ affected:
   - v6.27.0-rc1
   - v6.27.0
   - v6.28.0-rc1
-details: |
-  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34047
-
-  ```
-  Crash type: Use-of-uninitialized-value
-  Crash state:
-  decode_CABAC_FL_bypass
-  decode_coeff_abs_level_remaining
-  residual_coding
-  ```
-id: OSV-2021-735
-modified: '2026-07-03T14:21:28.344483Z'
-published: '2021-05-08T00:00:14.355747Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34047
-summary: Use-of-uninitialized-value in decode_CABAC_FL_bypass
+  - v6.28.0
+  ecosystem_specific:
+    severity: MEDIUM
