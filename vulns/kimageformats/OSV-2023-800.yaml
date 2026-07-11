@@ -1,18 +1,31 @@
+id: OSV-2023-800
+summary: Heap-buffer-overflow in XCFImageFormat::loadTileRLE
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=62098
+
+  ```
+  Crash type: Heap-buffer-overflow WRITE 1
+  Crash state:
+  XCFImageFormat::loadTileRLE
+  XCFImageFormat::loadLevel
+  XCFImageFormat::loadHierarchy
+  ```
+modified: '2026-07-11T14:12:25.233003Z'
+published: '2023-09-07T14:00:27.693270Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=62098
 affected:
-- database_specific:
-    introduced_range: 66cb8c91d085dab74ecda971b983f1a4402143fd:b2b677b8a5e4c3cf34790eb990218217bf867c18
-  ecosystem_specific:
-    severity: HIGH
-  package:
-    ecosystem: OSS-Fuzz
+- package:
     name: kimageformats
+    ecosystem: OSS-Fuzz
     purl: pkg:generic/kimageformats
   ranges:
-  - events:
+  - type: GIT
+    repo: https://invent.kde.org/frameworks/kimageformats.git
+    events:
     - introduced: bcec942cc92e0968c724a2c1f92b4cd048bf8fa7
     - introduced: 4badb3088e90d86208ed6bd435df7fe6a022be64
-    repo: https://invent.kde.org/frameworks/kimageformats.git
-    type: GIT
   versions:
   - v5.110.0
   - v5.110.0-rc1
@@ -88,21 +101,9 @@ affected:
   - v6.27.0-rc1
   - v6.27.0
   - v6.28.0-rc1
-details: |
-  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=62098
-
-  ```
-  Crash type: Heap-buffer-overflow WRITE 1
-  Crash state:
-  XCFImageFormat::loadTileRLE
-  XCFImageFormat::loadLevel
-  XCFImageFormat::loadHierarchy
-  ```
-id: OSV-2023-800
-modified: '2026-07-03T14:26:48.988394Z'
-published: '2023-09-07T14:00:27.693270Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=62098
+  - v6.28.0
+  ecosystem_specific:
+    severity: HIGH
+  database_specific:
+    introduced_range: 66cb8c91d085dab74ecda971b983f1a4402143fd:b2b677b8a5e4c3cf34790eb990218217bf867c18
 schema_version: 1.6.0
-summary: Heap-buffer-overflow in XCFImageFormat::loadTileRLE
