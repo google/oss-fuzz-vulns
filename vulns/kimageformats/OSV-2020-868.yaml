@@ -1,14 +1,29 @@
+id: OSV-2020-868
+summary: Use-of-uninitialized-value in fetchARGB32ToRGBA64PM_avx2
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21808
+
+  ```
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  fetchARGB32ToRGBA64PM_avx2
+  blend_untransformed_generic_rgb64
+  fillRect_normalized
+  ```
+modified: '2026-07-11T14:06:00.634222Z'
+published: '2020-07-14T22:13:50.828646Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21808
 affected:
-- ecosystem_specific:
-    severity: MEDIUM
-  package:
-    ecosystem: OSS-Fuzz
+- package:
     name: kimageformats
+    ecosystem: OSS-Fuzz
   ranges:
-  - events:
-    - introduced: c60e77c048d32ccf743cec695743b77b2b25dc87
+  - type: GIT
     repo: https://invent.kde.org/frameworks/kimageformats.git
-    type: GIT
+    events:
+    - introduced: c60e77c048d32ccf743cec695743b77b2b25dc87
   versions:
   - v5.70.0
   - v5.70.0-rc1
@@ -166,20 +181,6 @@ affected:
   - v6.27.0-rc1
   - v6.27.0
   - v6.28.0-rc1
-details: |
-  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21808
-
-  ```
-  Crash type: Use-of-uninitialized-value
-  Crash state:
-  fetchARGB32ToRGBA64PM_avx2
-  blend_untransformed_generic_rgb64
-  fillRect_normalized
-  ```
-id: OSV-2020-868
-modified: '2026-07-04T14:07:47.138943Z'
-published: '2020-07-14T22:13:50.828646Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=21808
-summary: Use-of-uninitialized-value in fetchARGB32ToRGBA64PM_avx2
+  - v6.28.0
+  ecosystem_specific:
+    severity: MEDIUM
