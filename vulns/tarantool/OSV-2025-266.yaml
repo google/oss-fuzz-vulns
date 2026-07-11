@@ -10,7 +10,7 @@ details: |
   lj_bcread
   cpparser
   ```
-modified: '2026-07-09T14:26:14.354607Z'
+modified: '2026-07-11T14:21:03.792093Z'
 published: '2025-04-08T00:17:06.279554Z'
 references:
 - type: REPORT
@@ -57,6 +57,7 @@ affected:
   - 3.7.2-entrypoint
   - 3.8.0
   - 3.8.1-entrypoint
+  - 3.9.0-entrypoint
   ecosystem_specific:
     severity: MEDIUM
   database_specific:
