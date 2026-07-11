@@ -1,15 +1,30 @@
+id: OSV-2024-679
+summary: Heap-buffer-overflow in readImage4v2
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=70554
+
+  ```
+  Crash type: Heap-buffer-overflow WRITE 1
+  Crash state:
+  readImage4v2
+  PCXHandler::read
+  kimgio_fuzzer.cc
+  ```
+modified: '2026-07-11T14:15:44.946022Z'
+published: '2024-07-25T00:14:34.485446Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=70554
 affected:
-- ecosystem_specific:
-    severity: HIGH
-  package:
-    ecosystem: OSS-Fuzz
+- package:
     name: kimageformats
+    ecosystem: OSS-Fuzz
     purl: pkg:generic/kimageformats
   ranges:
-  - events:
-    - introduced: 3590a43fc506afca40a20b09fb6e8007b6dcf5b8
+  - type: GIT
     repo: https://invent.kde.org/frameworks/kimageformats.git
-    type: GIT
+    events:
+    - introduced: 3590a43fc506afca40a20b09fb6e8007b6dcf5b8
   versions:
   - v6.5.0-rc1
   - v6.5.0
@@ -59,21 +74,7 @@ affected:
   - v6.27.0-rc1
   - v6.27.0
   - v6.28.0-rc1
-details: |
-  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=70554
-
-  ```
-  Crash type: Heap-buffer-overflow WRITE 1
-  Crash state:
-  readImage4v2
-  PCXHandler::read
-  kimgio_fuzzer.cc
-  ```
-id: OSV-2024-679
-modified: '2026-07-03T14:30:45.965049Z'
-published: '2024-07-25T00:14:34.485446Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=70554
+  - v6.28.0
+  ecosystem_specific:
+    severity: HIGH
 schema_version: 1.6.0
-summary: Heap-buffer-overflow in readImage4v2
