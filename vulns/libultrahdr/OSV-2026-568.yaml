@@ -1,0 +1,33 @@
+id: OSV-2026-568
+summary: Heap-buffer-overflow in ultrahdr::IccHelper::readIccColorGamut
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=501676165
+
+  ```
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  ultrahdr::IccHelper::readIccColorGamut
+  ultrahdr::JpegR::decodeJPEGR
+  uhdr_decode
+  ```
+modified: '2026-04-13T00:10:08.507720Z'
+published: '2026-04-13T00:10:08.507185Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=501676165
+affected:
+- package:
+    name: libultrahdr
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libultrahdr
+  ranges:
+  - type: GIT
+    repo: https://github.com/google/libultrahdr.git
+    events:
+    - introduced: cff53d31267fd8396ecf6bf03f212fc8387f5672
+  versions:
+  - v1.3.1
+  - v1.4.0
+  ecosystem_specific:
+    severity: MEDIUM
+schema_version: 1.7.5
