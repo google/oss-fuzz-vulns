@@ -1,14 +1,29 @@
+id: OSV-2021-972
+summary: UNKNOWN READ in void mc_chroma<unsigned short>
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=36056
+
+  ```
+  Crash type: UNKNOWN READ
+  Crash state:
+  void mc_chroma<unsigned short>
+  generate_inter_prediction_samples
+  decode_prediction_unit
+  ```
+modified: '2026-07-12T14:12:34.872293Z'
+published: '2021-07-13T00:00:16.631711Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=36056
 affected:
-- ecosystem_specific:
-    severity: MEDIUM
-  package:
-    ecosystem: OSS-Fuzz
+- package:
     name: kimageformats
+    ecosystem: OSS-Fuzz
   ranges:
-  - events:
-    - introduced: ca52d4ddf540cc731d0f31dbccc1897f7e6d9db4
+  - type: GIT
     repo: https://invent.kde.org/frameworks/kimageformats.git
-    type: GIT
+    events:
+    - introduced: ca52d4ddf540cc731d0f31dbccc1897f7e6d9db4
   versions:
   - v5.80.0
   - v5.80.0-rc1
@@ -142,20 +157,6 @@ affected:
   - v6.27.0-rc1
   - v6.27.0
   - v6.28.0-rc1
-details: |
-  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=36056
-
-  ```
-  Crash type: UNKNOWN READ
-  Crash state:
-  void mc_chroma<unsigned short>
-  generate_inter_prediction_samples
-  decode_prediction_unit
-  ```
-id: OSV-2021-972
-modified: '2026-07-04T14:08:11.602845Z'
-published: '2021-07-13T00:00:16.631711Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=36056
-summary: UNKNOWN READ in void mc_chroma<unsigned short>
+  - v6.28.0
+  ecosystem_specific:
+    severity: MEDIUM
