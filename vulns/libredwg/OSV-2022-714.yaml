@@ -1,15 +1,30 @@
+id: OSV-2022-714
+summary: Heap-buffer-overflow in dynapi_set_helper
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=50194
+
+  ```
+  Crash type: Heap-buffer-overflow WRITE 16
+  Crash state:
+  dynapi_set_helper
+  dwg_dynapi_header_set_value
+  json_HEADER
+  ```
+modified: '2026-07-12T14:20:27.995329Z'
+published: '2022-08-15T00:00:47.794062Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=50194
 affected:
-- ecosystem_specific:
-    severity: HIGH
-  package:
-    ecosystem: OSS-Fuzz
+- package:
     name: libredwg
+    ecosystem: OSS-Fuzz
     purl: pkg:generic/libredwg
   ranges:
-  - events:
-    - introduced: 8984c223f14dc81180ca5da66f92e5932992bb5c
+  - type: GIT
     repo: https://github.com/LibreDWG/libredwg
-    type: GIT
+    events:
+    - introduced: 8984c223f14dc81180ca5da66f92e5932992bb5c
   versions:
   - 0.12.4.4635
   - 0.12.4.4637
@@ -745,21 +760,7 @@ affected:
   - 0.14.8406
   - 0.14.8411
   - 0.14.8413
-details: |
-  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=50194
-
-  ```
-  Crash type: Heap-buffer-overflow WRITE 16
-  Crash state:
-  dynapi_set_helper
-  dwg_dynapi_header_set_value
-  json_HEADER
-  ```
-id: OSV-2022-714
-modified: '2026-07-06T14:07:55.394519Z'
-published: '2022-08-15T00:00:47.794062Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=50194
+  - 0.14.8415
+  ecosystem_specific:
+    severity: HIGH
 schema_version: 1.3.0
-summary: Heap-buffer-overflow in dynapi_set_helper
