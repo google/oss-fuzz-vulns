@@ -1,14 +1,29 @@
+id: OSV-2021-1343
+summary: Heap-buffer-overflow in get_next_owned_entity
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=38994
+
+  ```
+  Crash type: Heap-buffer-overflow READ 8
+  Crash state:
+  get_next_owned_entity
+  dwg_write_dxfb
+  llvmfuzz.c
+  ```
+modified: '2026-07-12T14:16:44.862518Z'
+published: '2021-09-21T00:01:33.177403Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=38994
 affected:
-- ecosystem_specific:
-    severity: MEDIUM
-  package:
-    ecosystem: OSS-Fuzz
+- package:
     name: libredwg
+    ecosystem: OSS-Fuzz
   ranges:
-  - events:
-    - introduced: 1d691254204db38d1473e050776346b7de751ce8
+  - type: GIT
     repo: https://github.com/LibreDWG/libredwg
-    type: GIT
+    events:
+    - introduced: 1d691254204db38d1473e050776346b7de751ce8
   versions:
   - 0.12.4.4313
   - 0.12.4.4317
@@ -816,20 +831,6 @@ affected:
   - 0.14.8406
   - 0.14.8411
   - 0.14.8413
-details: |
-  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=38994
-
-  ```
-  Crash type: Heap-buffer-overflow READ 8
-  Crash state:
-  get_next_owned_entity
-  dwg_write_dxfb
-  llvmfuzz.c
-  ```
-id: OSV-2021-1343
-modified: '2026-07-06T14:07:59.357486Z'
-published: '2021-09-21T00:01:33.177403Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=38994
-summary: Heap-buffer-overflow in get_next_owned_entity
+  - 0.14.8415
+  ecosystem_specific:
+    severity: MEDIUM
