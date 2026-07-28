@@ -1,18 +1,32 @@
+id: OSV-2024-914
+summary: UNKNOWN READ in boost::re_detail_500::basic_regex_formatter<std::__1::ostream_iterator<char,
+  cha
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=66851
+
+  ```
+  Crash type: UNKNOWN READ
+  Crash state:
+  boost::re_detail_500::basic_regex_formatter<std::__1::ostream_iterator<char, cha
+  boost::re_detail_500::basic_regex_formatter<std::__1::ostream_iterator<char, cha
+  std::__1::ostream_iterator<char, char, std::__1::char_traits<char> > boost::re_d
+  ```
+modified: '2026-07-28T07:20:43.333198Z'
+published: '2024-08-16T00:08:20.277708Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=66851
 affected:
-- database_specific:
-    introduced_range: 0251e5fa19564439f3d654df8d4de1abdbaa72b2:9f83dd55ea67f1bab62c20d29bc5527345aafc55
-  ecosystem_specific:
-    severity: MEDIUM
-  package:
-    ecosystem: OSS-Fuzz
+- package:
     name: boost
+    ecosystem: OSS-Fuzz
     purl: pkg:generic/boost
   ranges:
-  - events:
+  - type: GIT
+    repo: https://github.com/boostorg/boost.git
+    events:
     - introduced: 9072bfc2d969ca1e8c49651232817201e05e3eae
     - introduced: 206cf016ae9454ed65e9c5faf4a322f31444fb80
-    repo: https://github.com/boostorg/boost.git
-    type: GIT
   versions:
   - boost-1.85.0
   - boost-1.85.0.beta1
@@ -29,22 +43,9 @@ affected:
   - boost-1.91.0.beta1
   - boost-1.91.0
   - boost-1.91.0-1
-details: |
-  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=66851
-
-  ```
-  Crash type: UNKNOWN READ
-  Crash state:
-  boost::re_detail_500::basic_regex_formatter<std::__1::ostream_iterator<char, cha
-  boost::re_detail_500::basic_regex_formatter<std::__1::ostream_iterator<char, cha
-  std::__1::ostream_iterator<char, char, std::__1::char_traits<char> > boost::re_d
-  ```
-id: OSV-2024-914
-modified: '2026-04-24T14:18:54.995966Z'
-published: '2024-08-16T00:08:20.277708Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=66851
+  - boost-1.92.0.beta1
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: 0251e5fa19564439f3d654df8d4de1abdbaa72b2:9f83dd55ea67f1bab62c20d29bc5527345aafc55
 schema_version: 1.6.0
-summary: UNKNOWN READ in boost::re_detail_500::basic_regex_formatter<std::__1::ostream_iterator<char,
-  cha
