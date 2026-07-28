@@ -10,7 +10,7 @@ details: |
   CombineFlag
   TranslateWord2
   ```
-modified: '2024-12-12T14:15:21.369705Z'
+modified: '2026-07-28T07:19:23.665078Z'
 published: '2023-10-08T13:00:48.222080Z'
 references:
 - type: REPORT
@@ -25,9 +25,12 @@ affected:
     repo: https://github.com/espeak-ng/espeak-ng
     events:
     - introduced: 0a713d52bbf3e061823d1a7f35e5303e7320f27a
+    - fixed: a576687c0f981ceb4ae63752210254c05824d4ee
   versions:
   - '1.51'
   - 1.52.0
   ecosystem_specific:
     severity: MEDIUM
+  database_specific:
+    fixed_range: 47750573e43c26456edeaa35850cae185e585c47:a576687c0f981ceb4ae63752210254c05824d4ee
 schema_version: 1.6.0
