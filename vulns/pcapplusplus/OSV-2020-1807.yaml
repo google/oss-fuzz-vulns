@@ -10,7 +10,7 @@ details: |
   memchr
   pcpp::cross_platform_memmem
   ```
-modified: '2026-07-13T14:13:41.629713Z'
+modified: '2026-07-28T07:24:36.114811Z'
 published: '2020-09-18T00:00:38.027965Z'
 references:
 - type: REPORT
@@ -34,5 +34,6 @@ affected:
   - v25.05-beta
   - v25.05
   - v26.07-test
+  - v26.07
   ecosystem_specific:
     severity: MEDIUM
