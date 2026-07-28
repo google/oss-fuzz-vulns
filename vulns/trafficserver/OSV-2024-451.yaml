@@ -1,17 +1,30 @@
+id: OSV-2024-451
+summary: Use-of-uninitialized-value in XpackDynamicTable::_make_space
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=66347
+
+  ```
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  XpackDynamicTable::_make_space
+  XpackDynamicTable::insert_entry
+  XpackDynamicTable::insert_entry
+  ```
+modified: '2026-07-28T07:20:21.021384Z'
+published: '2024-05-08T00:14:48.544622Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=66347
 affected:
-- database_specific:
-    introduced_range: f180ea2b6f25f6922c881b60d70cef68db1acac5:367962abc5f9f8773b7a1d40b05e2845d984af91
-  ecosystem_specific:
-    severity: MEDIUM
-  package:
-    ecosystem: OSS-Fuzz
+- package:
     name: trafficserver
+    ecosystem: OSS-Fuzz
     purl: pkg:generic/trafficserver
   ranges:
-  - events:
-    - introduced: 9d93106ef93371284fa13772c7dd37cbf1c8fd7a
+  - type: GIT
     repo: https://github.com/apache/trafficserver.git
-    type: GIT
+    events:
+    - introduced: 9d93106ef93371284fa13772c7dd37cbf1c8fd7a
   versions:
   - 10.0.0-rc0
   - 10.0.0
@@ -37,21 +50,10 @@ affected:
   - 10.1.1
   - 10.1.2-rc0
   - 10.1.2
-details: |
-  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=66347
-
-  ```
-  Crash type: Use-of-uninitialized-value
-  Crash state:
-  XpackDynamicTable::_make_space
-  XpackDynamicTable::insert_entry
-  XpackDynamicTable::insert_entry
-  ```
-id: OSV-2024-451
-modified: '2026-04-03T14:17:40.819969Z'
-published: '2024-05-08T00:14:48.544622Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=66347
+  - 10.1.3
+  - 10.1.3-rc0
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: f180ea2b6f25f6922c881b60d70cef68db1acac5:367962abc5f9f8773b7a1d40b05e2845d984af91
 schema_version: 1.6.0
-summary: Use-of-uninitialized-value in XpackDynamicTable::_make_space
