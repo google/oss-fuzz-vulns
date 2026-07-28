@@ -10,7 +10,7 @@ details: |
   pcpp::IFileReaderDevice::getNextPackets
   FuzzWriter.cpp
   ```
-modified: '2026-07-13T14:27:26.878213Z'
+modified: '2026-07-28T07:23:42.667421Z'
 published: '2026-02-01T00:01:32.497703Z'
 references:
 - type: REPORT
@@ -27,6 +27,7 @@ affected:
     - introduced: 73d959005ff6673b32ab9d25b8fc1e53de435aa4
   versions:
   - v26.07-test
+  - v26.07
   ecosystem_specific:
     severity: MEDIUM
   database_specific:
