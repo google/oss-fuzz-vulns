@@ -10,7 +10,7 @@ details: |
   LookupLetter
   TranslateLetter
   ```
-modified: '2024-12-12T14:09:48.779445Z'
+modified: '2026-07-28T07:15:48.557269Z'
 published: '2022-07-19T00:01:42.567408Z'
 references:
 - type: REPORT
@@ -25,9 +25,12 @@ affected:
     repo: https://github.com/espeak-ng/espeak-ng
     events:
     - introduced: 0a713d52bbf3e061823d1a7f35e5303e7320f27a
+    - fixed: a576687c0f981ceb4ae63752210254c05824d4ee
   versions:
   - '1.51'
   - 1.52.0
   ecosystem_specific:
     severity: HIGH
+  database_specific:
+    fixed_range: 47750573e43c26456edeaa35850cae185e585c47:a576687c0f981ceb4ae63752210254c05824d4ee
 schema_version: 1.3.0
