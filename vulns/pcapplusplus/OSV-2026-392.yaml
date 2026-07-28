@@ -10,7 +10,7 @@ details: |
   pcpp::Packet::shortenLayer
   pcpp::Layer::shortenLayer
   ```
-modified: '2026-07-13T14:20:34.249771Z'
+modified: '2026-07-28T07:22:52.425605Z'
 published: '2026-03-13T00:09:19.229716Z'
 references:
 - type: REPORT
@@ -29,6 +29,7 @@ affected:
   - v24.09
   - v25.05
   - v26.07-test
+  - v26.07
   ecosystem_specific:
     severity: HIGH
   database_specific:
