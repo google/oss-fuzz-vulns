@@ -10,7 +10,7 @@ details: |
   pcpp::SomeIpSdLayer::getEntries
   readParsedPacket
   ```
-modified: '2026-07-13T14:24:53.990433Z'
+modified: '2026-07-28T14:30:03.389386Z'
 published: '2026-03-24T00:08:37.415856Z'
 references:
 - type: REPORT
@@ -29,6 +29,7 @@ affected:
   - v24.09
   - v25.05
   - v26.07-test
+  - v26.07
   ecosystem_specific:
     severity: MEDIUM
   database_specific:
