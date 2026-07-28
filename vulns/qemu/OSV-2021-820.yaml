@@ -1,14 +1,29 @@
+id: OSV-2021-820
+summary: UNKNOWN READ in virtio_gpu_disable_scanout
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34831
+
+  ```
+  Crash type: UNKNOWN READ
+  Crash state:
+  virtio_gpu_disable_scanout
+  virtio_gpu_set_scanout
+  virtio_gpu_simple_process_cmd
+  ```
+modified: '2026-07-28T07:47:40.131315Z'
+published: '2021-06-02T00:00:31.619765Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34831
 affected:
-- ecosystem_specific:
-    severity: MEDIUM
-  package:
-    ecosystem: OSS-Fuzz
+- package:
     name: qemu
+    ecosystem: OSS-Fuzz
   ranges:
-  - events:
-    - introduced: e64d4b6a9bc3ba216a988276bcdc27d06fd48e59
+  - type: GIT
     repo: https://git.qemu.org/git/qemu.git
-    type: GIT
+    events:
+    - introduced: e64d4b6a9bc3ba216a988276bcdc27d06fd48e59
   versions:
   - v6.1.0-rc0
   - v6.1.0-rc1
@@ -173,20 +188,9 @@ affected:
   - v10.0.11
   - v10.2.4
   - v11.0.2
-details: |
-  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34831
-
-  ```
-  Crash type: UNKNOWN READ
-  Crash state:
-  virtio_gpu_disable_scanout
-  virtio_gpu_set_scanout
-  virtio_gpu_simple_process_cmd
-  ```
-id: OSV-2021-820
-modified: '2026-06-25T14:30:43.277249Z'
-published: '2021-06-02T00:00:31.619765Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=34831
-summary: UNKNOWN READ in virtio_gpu_disable_scanout
+  - v10.0.12
+  - v11.0.3
+  - v11.1.0-rc0
+  - v11.1.0-rc1
+  ecosystem_specific:
+    severity: MEDIUM
