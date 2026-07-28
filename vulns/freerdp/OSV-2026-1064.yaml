@@ -1,0 +1,35 @@
+id: OSV-2026-1064
+summary: Heap-buffer-overflow in _wcsnlen
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=533963816
+
+  ```
+  Crash type: Heap-buffer-overflow READ 2
+  Crash state:
+  _wcsnlen
+  rail_read_unicode_string
+  rail_read_high_contrast
+  ```
+modified: '2026-07-14T00:09:36.461099Z'
+published: '2026-07-14T00:09:36.460652Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=533963816
+affected:
+- package:
+    name: freerdp
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/freerdp
+  ranges:
+  - type: GIT
+    repo: https://github.com/FreeRDP/FreeRDP.git
+    events:
+    - introduced: 7b71deca8f90256a640be38e7054955b89fc9d10
+    - fixed: da716682d651d2f046df129b18671964bd5c4118
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    fixed_range: d114b70f9deae584b932fa8d60b965dcdbeaaf7b:da716682d651d2f046df129b18671964bd5c4118
+    introduced_range: 89d8b7a1ae3b376cf77e5f85895e003e169b4cf5:897b82442a16d3a9a472b6ea5fe60816c0b80ef4
+  versions: []
+schema_version: 1.7.5

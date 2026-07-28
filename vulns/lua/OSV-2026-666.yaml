@@ -1,0 +1,33 @@
+id: OSV-2026-666
+summary: Heap-use-after-free in insertkey
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=508107730
+
+  ```
+  Crash type: Heap-use-after-free READ 1
+  Crash state:
+  insertkey
+  luaH_resize
+  luaH_newkey
+  ```
+modified: '2026-05-02T00:18:34.284554Z'
+published: '2026-05-02T00:18:34.284213Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=508107730
+affected:
+- package:
+    name: lua
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/lua
+  ranges:
+  - type: GIT
+    repo: https://github.com/ligurio/lunapark
+    events:
+    - introduced: 46db6980cd776ae513633efbb86eb24a742e8ca2
+  ecosystem_specific:
+    severity: HIGH
+  database_specific:
+    introduced_range: ef74f0558bb913edef85e7a774fada4ecc82247b:6fa4f33f18072155d16b1586765cb64e8d3dcee3
+  versions: []
+schema_version: 1.7.5

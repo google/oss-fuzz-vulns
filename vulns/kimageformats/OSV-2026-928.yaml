@@ -1,0 +1,33 @@
+id: OSV-2026-928
+summary: Stack-use-after-scope in StreamReader_CApi::wait_for_file_size
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=524393006
+
+  ```
+  Crash type: Stack-use-after-scope READ 8
+  Crash state:
+  StreamReader_CApi::wait_for_file_size
+  Box_iloc::read_data
+  HeifFile::append_data_from_iloc
+  ```
+modified: '2026-06-17T00:06:18.594761Z'
+published: '2026-06-17T00:06:18.594494Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=524393006
+affected:
+- package:
+    name: kimageformats
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/kimageformats
+  ranges:
+  - type: GIT
+    repo: https://invent.kde.org/frameworks/kimageformats.git
+    events:
+    - introduced: 8768a8cf97123b559e44a8336f5ca2efa38d235f
+  versions:
+  - v6.28.0
+  - v6.28.0-rc1
+  ecosystem_specific:
+    severity: null
+schema_version: 1.7.5

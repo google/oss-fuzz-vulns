@@ -1,0 +1,33 @@
+id: OSV-2026-925
+summary: Heap-buffer-overflow in ssh_config_parse_line_internal
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=523820519
+
+  ```
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  ssh_config_parse_line_internal
+  ssh_config_parse_string
+  ssh_client_config_fuzzer.c
+  ```
+modified: '2026-06-16T00:20:16.101181Z'
+published: '2026-06-16T00:20:16.100903Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=523820519
+affected:
+- package:
+    name: libssh
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libssh
+  ranges:
+  - type: GIT
+    repo: https://git.libssh.org/projects/libssh.git
+    events:
+    - introduced: d7de7a9bd806d602d4fc08f9dcce2632f7a49c52
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: ebff25b210aed92c80d9962785c74fcd9a98941c:e224b86b2f0160b0590d1c6afef77230b812867b
+  versions: []
+schema_version: 1.7.5

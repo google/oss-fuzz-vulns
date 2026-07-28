@@ -1,0 +1,37 @@
+id: OSV-2026-599
+summary: UNKNOWN READ in XRef::parseEntry
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=504271260
+
+  ```
+  Crash type: UNKNOWN READ
+  Crash state:
+  XRef::parseEntry
+  XRef::getEntry
+  Parser::makeStream
+  ```
+modified: '2026-04-21T00:03:42.306845Z'
+published: '2026-04-21T00:03:42.306278Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=504271260
+affected:
+- package:
+    name: poppler
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/poppler
+  ranges:
+  - type: GIT
+    repo: https://gitlab.freedesktop.org/poppler/poppler.git
+    events:
+    - introduced: 05cff0459bbec6365aed65448b1a297dfbb98340
+  versions:
+  - poppler-26.04.0
+  - poppler-26.05.0
+  - poppler-26.06.0
+  - poppler-26.07.0
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: 13313aefb1558f1281a076151a03d5b90788e7e0:50e946472de31760a15497d457641210c576a46b
+schema_version: 1.7.5

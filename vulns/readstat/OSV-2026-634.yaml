@@ -1,0 +1,33 @@
+id: OSV-2026-634
+summary: Index-out-of-bounds in sas7bdat_submit_columns_if_needed
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=506459940
+
+  ```
+  Crash type: Index-out-of-bounds
+  Crash state:
+  sas7bdat_submit_columns_if_needed
+  sas7bdat_parse_all_pages_pass2
+  readstat_parse_sas7bdat
+  ```
+modified: '2026-04-27T00:08:31.896713Z'
+published: '2026-04-27T00:08:31.896421Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=506459940
+affected:
+- package:
+    name: readstat
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/readstat
+  ranges:
+  - type: GIT
+    repo: https://github.com/WizardMac/ReadStat
+    events:
+    - introduced: 365c743efed5684afd48514f6123c002b9a9b6a1
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: 15e7a5607df2f70e5fae5d1da628cbe878c8e1ae:5c446781f5ac7d716fae0ad0ef4a3f3920eb2cd6
+  versions: []
+schema_version: 1.7.5
