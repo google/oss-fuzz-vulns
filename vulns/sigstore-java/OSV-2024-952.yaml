@@ -1,0 +1,50 @@
+id: OSV-2024-952
+summary: Security exception in org.bouncycastle.asn1.IndefiniteLengthInputStream.read
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42536579
+
+  ```
+  Crash type: Security exception
+  Crash state:
+  org.bouncycastle.asn1.IndefiniteLengthInputStream.read
+  org.bouncycastle.asn1.IndefiniteLengthInputStream.checkForEof
+  org.bouncycastle.asn1.IndefiniteLengthInputStream.read
+  ```
+modified: '2024-08-16T00:13:39.683465Z'
+published: '2024-08-16T00:13:39.683109Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=42536579
+affected:
+- package:
+    name: sigstore-java
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/sigstore-java
+  ranges:
+  - type: GIT
+    repo: https://github.com/sigstore/sigstore-java
+    events:
+    - introduced: f9469a099e74c366734869d13afcee19534bece7
+    - fixed: 2d4a77a87ce4b72c6d7ccc869fe014fd4cd8f4f1
+  versions:
+  - v0.10.0
+  - v0.11.0
+  - v0.12.0
+  - v0.7.0
+  - v0.8.0
+  - v0.9.0
+  - v1.0.0
+  - v1.1.0
+  - v1.2.0
+  - v1.3.0
+  - v2.0.0
+  - v2.0.0-rc1
+  - v2.0.0-rc2
+  - v2.1.0
+  - v2.2.0
+  ecosystem_specific:
+    severity: LOW
+  database_specific:
+    fixed_range: c7a516b9dad6cad86d1d3da04323ab06d91b1043:2d4a77a87ce4b72c6d7ccc869fe014fd4cd8f4f1
+    introduced_range: eaae62c59e609e91a201259ee4169066a02ca2a4:04bc14b74e3bbc048e84215ea20c8b72b14b6143
+schema_version: 1.7.5
