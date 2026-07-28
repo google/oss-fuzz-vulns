@@ -10,7 +10,7 @@ details: |
   gf_inspect_dump_nalu_internal
   inspect_process
   ```
-modified: '2026-07-10T14:23:33.747639Z'
+modified: '2026-07-28T07:23:17.572392Z'
 published: '2024-07-18T00:01:18.765548Z'
 references:
 - type: REPORT
@@ -69,6 +69,9 @@ affected:
   - abi-16.18
   - abi-16.19
   - abi-16.20
+  - abi-16.21
+  - abi-16.22
+  - v26.07.0
   ecosystem_specific:
     severity: MEDIUM
   database_specific:
