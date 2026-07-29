@@ -10,7 +10,7 @@ details: |
   megasas_mmio_write
   megasas_port_write
   ```
-modified: '2026-07-28T07:36:47.743517Z'
+modified: '2026-07-29T14:49:18.942939Z'
 published: '2022-07-14T00:00:45.644503Z'
 references:
 - type: REPORT
@@ -186,6 +186,7 @@ affected:
   - v11.0.3
   - v11.1.0-rc0
   - v11.1.0-rc1
+  - v11.1.0-rc2
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.3.0
