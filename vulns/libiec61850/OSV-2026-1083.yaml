@@ -1,0 +1,34 @@
+id: OSV-2026-1083
+summary: Heap-buffer-overflow in parseGoosePayload
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=539005080
+
+  ```
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  parseGoosePayload
+  parseGooseMessage
+  fuzz_goose_subscriber.c
+  ```
+modified: '2026-07-28T07:30:08.363213Z'
+published: '2026-07-28T07:30:08.362887Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=539005080
+affected:
+- package:
+    name: libiec61850
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libiec61850
+  ranges:
+  - type: GIT
+    repo: https://github.com/mz-automation/libiec61850
+    events:
+    - introduced: 6e7a603c771d6124cd3cafea7ec38b7e0f2e7aaf
+    - fixed: d75cdd0483837f1541346ee66259b003ed216065
+  ecosystem_specific:
+    severity: HIGH
+  database_specific:
+    fixed_range: 6e7a603c771d6124cd3cafea7ec38b7e0f2e7aaf:d75cdd0483837f1541346ee66259b003ed216065
+  versions: []
+schema_version: 1.7.5
