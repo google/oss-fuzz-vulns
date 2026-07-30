@@ -1,18 +1,5 @@
-affected:
-- ecosystem_specific:
-    severity: LOW
-  package:
-    ecosystem: OSS-Fuzz
-    name: jsoup
-    purl: pkg:generic/jsoup
-  ranges:
-  - events:
-    - introduced: e17d2a83deb3a4918fe9792e84b98a86a121e84f
-    repo: https://github.com/jhy/jsoup/
-    type: GIT
-  versions:
-  - jsoup-1.22.1
-  - jsoup-1.22.2
+id: OSV-2025-1059
+summary: Security exception in com.google.re2j.Machine.add
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=476431390
 
@@ -23,11 +10,28 @@ details: |
   com.google.re2j.Machine$Thread.<init>
   com.google.re2j.Machine.alloc
   ```
-id: OSV-2025-1059
-modified: '2026-04-20T14:15:42.315180Z'
+modified: '2026-07-30T14:32:30.788984Z'
 published: '2026-01-18T00:02:23.827422Z'
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=476431390
+affected:
+- package:
+    name: jsoup
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/jsoup
+  ranges:
+  - type: GIT
+    repo: https://github.com/jhy/jsoup/
+    events:
+    - introduced: e17d2a83deb3a4918fe9792e84b98a86a121e84f
+    - fixed: 568b605d74bb413dd31055d7518a2e4ba8981db5
+  versions:
+  - jsoup-1.22.1
+  - jsoup-1.22.2
+  - jsoup-1.23.1
+  ecosystem_specific:
+    severity: LOW
+  database_specific:
+    fixed_range: 1fb2c97f34add3bab499bc603848d9c183df37ef:568b605d74bb413dd31055d7518a2e4ba8981db5
 schema_version: 1.7.5
-summary: Security exception in com.google.re2j.Machine.add
