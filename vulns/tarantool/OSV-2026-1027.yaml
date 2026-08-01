@@ -1,0 +1,40 @@
+id: OSV-2026-1027
+summary: Heap-buffer-overflow in mp_load_float
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=530970666
+
+  ```
+  Crash type: Heap-buffer-overflow WRITE 4
+  Crash state:
+  mp_load_float
+  mp_decode_float
+  luamp_decode_with_ctx
+  ```
+modified: '2026-07-05T00:17:39.793771Z'
+published: '2026-07-05T00:17:39.793478Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=530970666
+affected:
+- package:
+    name: tarantool
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/tarantool
+  ranges:
+  - type: GIT
+    repo: https://github.com/tarantool/tarantool
+    events:
+    - introduced: c679fad72328070e9d94426077b8cc45c390e313
+    - fixed: 42d7de284ffb896006e74a51fbd0f62318b813ba
+  versions:
+  - 3.6.4
+  - 3.7.1
+  - 3.7.2-entrypoint
+  - 3.8.0
+  - 3.8.1-entrypoint
+  - 3.9.0-entrypoint
+  ecosystem_specific:
+    severity: HIGH
+  database_specific:
+    fixed_range: 62cb643b0083a1346b685818ab89ceb8a3d24766:42d7de284ffb896006e74a51fbd0f62318b813ba
+schema_version: 1.7.5

@@ -1,0 +1,37 @@
+id: OSV-2026-1095
+summary: Heap-buffer-overflow in grk::t1::CodeblockDecompressImpl::parsePacketData
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=540111888
+
+  ```
+  Crash type: Heap-buffer-overflow READ 8
+  Crash state:
+  grk::t1::CodeblockDecompressImpl::parsePacketData
+  grk::PacketParser::readData
+  grk::PacketParser::parsePacketData
+  ```
+modified: '2026-07-30T00:06:16.397753Z'
+published: '2026-07-30T00:06:16.397282Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=540111888
+affected:
+- package:
+    name: grok
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/grok
+  ranges:
+  - type: GIT
+    repo: https://github.com/GrokImageCompression/grok.git
+    events:
+    - introduced: 06c96bfbc38c74d386ce27018002d3febfff8f0c
+    - fixed: 553b008061c8fafcb161ae293f489e08abf2e2d1
+  versions:
+  - v20.3.5
+  - v20.3.6
+  - v20.3.7
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    fixed_range: c9c1223c1e7bd7be579ea60e8e083ee244a78f58:553b008061c8fafcb161ae293f489e08abf2e2d1
+schema_version: 1.7.5
