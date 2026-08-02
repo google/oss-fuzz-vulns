@@ -10,7 +10,7 @@ details: |
   java.base/java.nio.charset.CharsetEncoder.<init>
   java.base/java.nio.charset.CharsetEncoder.<init>
   ```
-modified: '2026-07-29T14:38:03.575694Z'
+modified: '2026-08-02T14:24:12.156529Z'
 published: '2025-07-15T00:09:03.936493Z'
 references:
 - type: REPORT
@@ -103,6 +103,9 @@ affected:
   - 2.0.63
   - 2.0.63.android5
   - 2.0.63.android8
+  - 2.0.64
+  - 2.0.64.android5
+  - 2.0.64.android8
   ecosystem_specific:
     severity: LOW
   database_specific:
