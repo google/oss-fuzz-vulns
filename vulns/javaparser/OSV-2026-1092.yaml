@@ -1,0 +1,34 @@
+id: OSV-2026-1092
+summary: Security exception in com.github.javaparser.ast.expr.Name.accept
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=539142495
+
+  ```
+  Crash type: Security exception
+  Crash state:
+  com.github.javaparser.ast.expr.Name.accept
+  com.github.javaparser.ast.visitor.VoidVisitorAdapter.lambda$visit$133
+  java.base/java.util.Optional.ifPresent
+  ```
+modified: '2026-07-29T00:02:58.503221Z'
+published: '2026-07-29T00:02:58.502749Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=539142495
+affected:
+- package:
+    name: javaparser
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/javaparser
+  ranges:
+  - type: GIT
+    repo: https://github.com/javaparser/javaparser
+    events:
+    - introduced: 8373b53305253884e2a45ca8c92fcc9eec0c9cd4
+    - fixed: 2ec0219229d3f7f614e7f6b2100c473c32e2fd47
+  ecosystem_specific:
+    severity: LOW
+  database_specific:
+    introduced_range: 17ee4b045a3f5e7e786b22f6f892ae0a0242d4c6:05fd992b0bb58ef959d3b8c526d15551536999c0
+  versions: []
+schema_version: 1.7.5
