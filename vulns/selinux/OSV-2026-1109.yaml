@@ -1,0 +1,34 @@
+id: OSV-2026-1109
+summary: UNKNOWN READ in sens_to_cil
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=541965633
+
+  ```
+  Crash type: UNKNOWN READ
+  Crash state:
+  sens_to_cil
+  additive_scopes_to_cil_map
+  hashtab_map
+  ```
+modified: '2026-08-04T00:03:23.195172Z'
+published: '2026-08-04T00:03:23.194802Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=541965633
+affected:
+- package:
+    name: selinux
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/selinux
+  ranges:
+  - type: GIT
+    repo: https://github.com/SELinuxProject/selinux
+    events:
+    - introduced: 38eb33b03ae03d5f19bc282dbc6d1380a98f3dcb
+    - fixed: 9a71441320b499655e7a3d42ad957f0c8b90a1d5
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: 92af7f1b61db6e2ac8a956b12ce9dc410728cc06:1550c4c1ad61d260d59501edd78de7a55aa8d358
+  versions: []
+schema_version: 1.8.0
