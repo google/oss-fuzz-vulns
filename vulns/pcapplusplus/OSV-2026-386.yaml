@@ -10,7 +10,7 @@ details: |
   pcpp::PacketTrailerLayer::toString
   FuzzTarget.cpp
   ```
-modified: '2026-07-28T07:23:50.146144Z'
+modified: '2026-08-07T14:23:31.421026Z'
 published: '2026-03-12T00:17:39.103518Z'
 references:
 - type: REPORT
@@ -25,6 +25,7 @@ affected:
     repo: https://github.com/seladb/PcapPlusPlus
     events:
     - introduced: 56668faab242e53b1282b3405eaa4bb51e474bee
+    - fixed: 8ac4366c4184f096973ef4a0ca084559935828d0
   versions:
   - v24.09
   - v25.05
@@ -32,5 +33,6 @@ affected:
   ecosystem_specific:
     severity: MEDIUM
   database_specific:
+    fixed_range: 80c73281201f6c7354e9605a35bb3831506f5151:8ac4366c4184f096973ef4a0ca084559935828d0
     introduced_range: 805d75ca1f33ff33951d5082e3d3535c7a090808:4d48615c9bfb2ef0c61d50e1e1dd3e3d63a82be0
 schema_version: 1.7.5
