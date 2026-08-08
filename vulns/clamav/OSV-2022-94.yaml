@@ -1,18 +1,29 @@
+id: OSV-2022-94
+summary: Heap-buffer-overflow in cli_strlcat
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=44087
+
+  Crash type: Heap-buffer-overflow WRITE 1
+  Crash state:
+  cli_strlcat
+  yara_yyparse
+  yr_lex_parse_rules_file
+modified: '2026-08-08T14:24:05.460606Z'
+published: '2022-01-27T00:02:12.465969Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=44087
 affected:
-- database_specific:
-    introduced_range: d9a584b39fb694adc5740b666cba0242b55f774a:0037f5825b0b17a789c7eb29c9cb9a2d39c452bc
-  ecosystem_specific:
-    severity: HIGH
-  package:
-    ecosystem: OSS-Fuzz
+- package:
     name: clamav
+    ecosystem: OSS-Fuzz
     purl: pkg:generic/clamav
   ranges:
-  - events:
+  - type: GIT
+    repo: https://github.com/Cisco-Talos/clamav.git
+    events:
     - introduced: 428cd7951827535fdc50425f963eb2878fc39cc1
     - introduced: e5f001c9ca4175beecd445004a8e01bbdd29579c
-    repo: https://github.com/Cisco-Talos/clamav.git
-    type: GIT
   versions:
   - clamav-0.105.0-rc
   - clamav-0.105.0-rc2
@@ -61,19 +72,10 @@ affected:
   - clamav-1.5.2
   - clamav-1.4.5
   - clamav-1.5.3
-details: |
-  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=44087
-
-  Crash type: Heap-buffer-overflow WRITE 1
-  Crash state:
-  cli_strlcat
-  yara_yyparse
-  yr_lex_parse_rules_file
-id: OSV-2022-94
-modified: '2026-07-02T14:18:53.169872Z'
-published: '2022-01-27T00:02:12.465969Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=44087
+  - clamav-1.4.6
+  - clamav-1.5.4
+  ecosystem_specific:
+    severity: HIGH
+  database_specific:
+    introduced_range: d9a584b39fb694adc5740b666cba0242b55f774a:0037f5825b0b17a789c7eb29c9cb9a2d39c452bc
 schema_version: 1.2.0
-summary: Heap-buffer-overflow in cli_strlcat
