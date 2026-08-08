@@ -1,15 +1,30 @@
+id: OSV-2022-993
+summary: Stack-use-after-return in check_buffer
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=51910
+
+  ```
+  Crash type: Stack-use-after-return READ 1
+  Crash state:
+  check_buffer
+  r_bin_get_binplugin_by_buffer
+  r_bin_file_new_from_buffer
+  ```
+modified: '2026-08-08T14:24:46.051067Z'
+published: '2022-09-29T00:02:10.256639Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=51910
 affected:
-- ecosystem_specific:
-    severity: null
-  package:
-    ecosystem: OSS-Fuzz
+- package:
     name: radare2
+    ecosystem: OSS-Fuzz
     purl: pkg:generic/radare2
   ranges:
-  - events:
-    - introduced: 67ead854ea3736384f6d13a56ce9e5fa14c9478c
+  - type: GIT
     repo: https://github.com/radareorg/radare2
-    type: GIT
+    events:
+    - introduced: 67ead854ea3736384f6d13a56ce9e5fa14c9478c
   versions:
   - 5.8.0
   - 5.8.2
@@ -32,21 +47,7 @@ affected:
   - 6.1.4
   - 6.1.6
   - 6.1.8
-details: |
-  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=51910
-
-  ```
-  Crash type: Stack-use-after-return READ 1
-  Crash state:
-  check_buffer
-  r_bin_get_binplugin_by_buffer
-  r_bin_file_new_from_buffer
-  ```
-id: OSV-2022-993
-modified: '2026-06-23T14:20:57.295288Z'
-published: '2022-09-29T00:02:10.256639Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=51910
+  - 6.2.0
+  ecosystem_specific:
+    severity: null
 schema_version: 1.3.0
-summary: Stack-use-after-return in check_buffer
