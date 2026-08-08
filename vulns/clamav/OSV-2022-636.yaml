@@ -1,15 +1,30 @@
+id: OSV-2022-636
+summary: UNKNOWN READ in fp_cmp_mag
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=49510
+
+  ```
+  Crash type: UNKNOWN READ
+  Crash state:
+  fp_cmp_mag
+  crtmgr_trust_list_lookup
+  crtmgr_add
+  ```
+modified: '2026-08-08T14:23:52.327635Z'
+published: '2022-07-27T00:00:35.300337Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=49510
 affected:
-- ecosystem_specific:
-    severity: MEDIUM
-  package:
-    ecosystem: OSS-Fuzz
+- package:
     name: clamav
+    ecosystem: OSS-Fuzz
     purl: pkg:generic/clamav
   ranges:
-  - events:
-    - introduced: 375ecf678c714623e6fb5c0119d1bec98dc700dd
+  - type: GIT
     repo: https://github.com/Cisco-Talos/clamav.git
-    type: GIT
+    events:
+    - introduced: 375ecf678c714623e6fb5c0119d1bec98dc700dd
   versions:
   - clamav-0.105.0
   - clamav-0.105.0-rc
@@ -56,21 +71,8 @@ affected:
   - clamav-1.5.2
   - clamav-1.4.5
   - clamav-1.5.3
-details: |
-  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=49510
-
-  ```
-  Crash type: UNKNOWN READ
-  Crash state:
-  fp_cmp_mag
-  crtmgr_trust_list_lookup
-  crtmgr_add
-  ```
-id: OSV-2022-636
-modified: '2026-07-02T14:18:38.394740Z'
-published: '2022-07-27T00:00:35.300337Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=49510
+  - clamav-1.4.6
+  - clamav-1.5.4
+  ecosystem_specific:
+    severity: MEDIUM
 schema_version: 1.2.0
-summary: UNKNOWN READ in fp_cmp_mag
