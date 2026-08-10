@@ -1,0 +1,37 @@
+id: OSV-2026-1101
+summary: Security exception in com.google.re2j.Machine$Queue.<init>
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=540908715
+
+  ```
+  Crash type: Security exception
+  Crash state:
+  com.google.re2j.Machine$Queue.<init>
+  com.google.re2j.Machine.<init>
+  com.google.re2j.RE2.doExecute
+  ```
+modified: '2026-08-01T00:16:49.847790Z'
+published: '2026-08-01T00:16:49.847568Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=540908715
+affected:
+- package:
+    name: jsoup
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/jsoup
+  ranges:
+  - type: GIT
+    repo: https://github.com/jhy/jsoup/
+    events:
+    - introduced: e17d2a83deb3a4918fe9792e84b98a86a121e84f
+    - fixed: 90673664ac4b1e56d8fc1709a95d9df7150bc355
+  versions:
+  - jsoup-1.22.1
+  - jsoup-1.22.2
+  - jsoup-1.23.1
+  ecosystem_specific:
+    severity: LOW
+  database_specific:
+    fixed_range: 5d9d785f4f6aec8e241e4b3f2d53317021ca7dfc:90673664ac4b1e56d8fc1709a95d9df7150bc355
+schema_version: 1.8.0
