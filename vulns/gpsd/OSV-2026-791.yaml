@@ -1,0 +1,32 @@
+id: OSV-2026-791
+summary: Segv on unknown address in ___interceptor_strtol
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=515100083
+
+  ```
+  Crash type: Segv on unknown address
+  Crash state:
+  ___interceptor_strtol
+  processGSV
+  nmea_parse
+  ```
+modified: '2026-05-22T00:07:23.176126Z'
+published: '2026-05-22T00:07:23.175849Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=515100083
+affected:
+- package:
+    name: gpsd
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/gpsd
+  ranges:
+  - type: GIT
+    repo: https://gitlab.com/gpsd/gpsd
+    events:
+    - introduced: 4524d21915c17c1e5f8f867f9cd64d3a991774ff
+    - fixed: 69b540acdcb5a83959d0702f53b38eef26e08e07
+  ecosystem_specific:
+    severity: null
+  versions: []
+schema_version: 1.8.0
