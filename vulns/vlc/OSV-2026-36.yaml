@@ -1,18 +1,5 @@
-affected:
-- database_specific:
-    introduced_range: 22ea21dc9efff3e1ce539a098e4839975051bbe5:ca8a1dd2e9f38ae5d0ecae43be473d3a9af6a399
-  ecosystem_specific:
-    severity: MEDIUM
-  package:
-    ecosystem: OSS-Fuzz
-    name: vlc
-    purl: pkg:generic/vlc
-  ranges:
-  - events:
-    - introduced: f8e9d090fc20452cfddb91df28bf235eb59baff1
-    repo: https://code.videolan.org/videolan/vlc.git
-    type: GIT
-  versions: []
+id: OSV-2026-36
+summary: Heap-buffer-overflow in iTUNTripletCallback
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=474821719
 
@@ -23,11 +10,26 @@ details: |
   SetupMeta
   MP4_LoadMeta
   ```
-id: OSV-2026-36
 modified: '2026-01-13T00:01:43.125952Z'
 published: '2026-01-13T00:01:43.125437Z'
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=474821719
+affected:
+- package:
+    name: vlc
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/vlc
+  ranges:
+  - type: GIT
+    repo: https://code.videolan.org/videolan/vlc.git
+    events:
+    - introduced: f8e9d090fc20452cfddb91df28bf235eb59baff1
+    - fixed: cc1162406b7d1ed45f9c51533651e9e1f8620e70
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: 22ea21dc9efff3e1ce539a098e4839975051bbe5:ca8a1dd2e9f38ae5d0ecae43be473d3a9af6a399
+    fixed_range: 11b36ad142cde9354864625c6d5cbde1c21c9538:cc1162406b7d1ed45f9c51533651e9e1f8620e70
+  versions: []
 schema_version: 1.7.5
-summary: Heap-buffer-overflow in iTUNTripletCallback
