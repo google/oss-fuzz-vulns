@@ -1,0 +1,34 @@
+id: OSV-2026-1157
+summary: Memcpy-param-overlap in zxc_decompress_chunk_wrapper_default
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=546426939
+
+  ```
+  Crash type: Memcpy-param-overlap
+  Crash state:
+  zxc_decompress_chunk_wrapper_default
+  zxc_decompress_frame
+  fuzz_decompress.c
+  ```
+modified: '2026-08-16T00:02:24.425293Z'
+published: '2026-08-16T00:02:24.424853Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=546426939
+affected:
+- package:
+    name: zxc
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/zxc
+  ranges:
+  - type: GIT
+    repo: https://github.com/hellobertrand/zxc.git
+    events:
+    - introduced: b89b134299971f1edd2cefb9f1eaf3d93fdf1dad
+    - fixed: 399de305e5ca322a0144c86ec85dd77757669c60
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: unknown:b89b134299971f1edd2cefb9f1eaf3d93fdf1dad
+  versions: []
+schema_version: 1.8.0
