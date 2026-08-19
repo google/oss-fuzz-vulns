@@ -1,0 +1,54 @@
+id: OSV-2026-962
+summary: Use-of-uninitialized-value in iup_delta_optimize
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=526770452
+
+  ```
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  iup_delta_optimize
+  OT::tuple_delta_t::optimize
+  OT::TupleVariationData<OT::NumType<true, unsigned short, 2u>>::tuple_variations_
+  ```
+modified: '2026-06-24T00:03:23.339152Z'
+published: '2026-06-24T00:03:23.338692Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=526770452
+affected:
+- package:
+    name: harfbuzz
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/harfbuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/harfbuzz/harfbuzz.git
+    events:
+    - introduced: fb7af519b5a0e2d72b0621c05ba70fb1b2eaacaf
+    - fixed: 6c2107ace765f95c67d65a21f94b54a2f12d80dc
+  versions:
+  - 11.5.0
+  - 11.5.1
+  - 12.0.0
+  - 12.1.0
+  - 12.2.0
+  - 12.3.0
+  - 12.3.1
+  - 12.3.2
+  - 13.0.0
+  - 13.0.1
+  - 13.1.0
+  - 13.1.1
+  - 13.2.0
+  - 13.2.1
+  - 14.0.0
+  - 14.1.0
+  - 14.2.0
+  - 14.2.1
+  - 14.3.0
+  - 14.3.1
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: dd291f482cc4131c0b3e9107d5eb474f89b67443:d59f62ac14b98a0b8c72ec7a00eb76b22b1800c8
+schema_version: 1.8.0
