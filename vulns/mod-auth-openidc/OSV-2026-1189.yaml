@@ -1,0 +1,34 @@
+id: OSV-2026-1189
+summary: Global-buffer-overflow in oidc_cfg_redirect_urls_allowed_get
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=550474749
+
+  ```
+  Crash type: Global-buffer-overflow READ 8
+  Crash state:
+  oidc_cfg_redirect_urls_allowed_get
+  oidc_validate_redirect_url
+  fuzz_url.c
+  ```
+modified: '2026-08-23T00:08:00.396447Z'
+published: '2026-08-23T00:08:00.396208Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=550474749
+affected:
+- package:
+    name: mod-auth-openidc
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/mod-auth-openidc
+  ranges:
+  - type: GIT
+    repo: https://github.com/OpenIDC/mod_auth_openidc
+    events:
+    - introduced: be82ba1dcb31dcfc2d62aab475641e2dde772549
+    - fixed: 1deff3d91057dd3f3cb1db7d0d1773c2764e795c
+  ecosystem_specific:
+    severity: null
+  database_specific:
+    introduced_range: 28b3660ee2a03ac662d83134fa4b989f2152f40c:ba68e8971c2dd3a3c507a0aaf49034f250bcf33a
+  versions: []
+schema_version: 1.8.0
