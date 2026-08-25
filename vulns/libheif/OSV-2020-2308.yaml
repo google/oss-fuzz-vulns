@@ -1,14 +1,29 @@
+id: OSV-2020-2308
+summary: Heap-buffer-overflow in derive_collocated_motion_vectors
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30568
+
+  ```
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  derive_collocated_motion_vectors
+  derive_temporal_luma_vector_prediction
+  fill_luma_motion_vector_predictors
+  ```
+modified: '2026-08-25T14:13:48.075824Z'
+published: '2021-02-10T00:00:17.357392Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30568
 affected:
-- ecosystem_specific:
-    severity: MEDIUM
-  package:
-    ecosystem: OSS-Fuzz
+- package:
     name: libheif
+    ecosystem: OSS-Fuzz
   ranges:
-  - events:
-    - introduced: 2490273566a1690d7ca28f7bd30fd3ac0977796f
+  - type: GIT
     repo: https://github.com/strukturag/libheif.git
-    type: GIT
+    events:
+    - introduced: 2490273566a1690d7ca28f7bd30fd3ac0977796f
   versions:
   - v1.10.0
   - v1.11.0
@@ -57,20 +72,6 @@ affected:
   - v1.22.2
   - v1.23.0
   - v1.23.1
-details: |
-  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30568
-
-  ```
-  Crash type: Heap-buffer-overflow READ 1
-  Crash state:
-  derive_collocated_motion_vectors
-  derive_temporal_luma_vector_prediction
-  fill_luma_motion_vector_predictors
-  ```
-id: OSV-2020-2308
-modified: '2026-06-26T14:05:03.011504Z'
-published: '2021-02-10T00:00:17.357392Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=30568
-summary: Heap-buffer-overflow in derive_collocated_motion_vectors
+  - v1.23.2
+  ecosystem_specific:
+    severity: MEDIUM
