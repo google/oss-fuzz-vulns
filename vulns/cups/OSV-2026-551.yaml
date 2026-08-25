@@ -25,7 +25,10 @@ affected:
     repo: https://github.com/OpenPrinting/cups
     events:
     - introduced: 6e4a2c699948b5454a2c58b72aadb9d25a3b9353
+    - fixed: 764e4ae243c19a8f6d15e303adc2a0d1476ff087
   ecosystem_specific:
     severity: HIGH
+  database_specific:
+    fixed_range: 42b530bf436561094315530021d3eace4891411a:764e4ae243c19a8f6d15e303adc2a0d1476ff087
   versions: []
 schema_version: 1.7.5
