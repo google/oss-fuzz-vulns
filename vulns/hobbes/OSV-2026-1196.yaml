@@ -1,0 +1,35 @@
+id: OSV-2026-1196
+summary: Heap-buffer-overflow in yylex
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=551147457
+
+  ```
+  Crash type: Heap-buffer-overflow WRITE 4
+  Crash state:
+  yylex
+  yyparse
+  hobbes::runParserOnBuffer
+  ```
+modified: '2026-08-25T00:09:47.072534Z'
+published: '2026-08-25T00:09:47.072248Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=551147457
+affected:
+- package:
+    name: hobbes
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/hobbes
+  ranges:
+  - type: GIT
+    repo: https://github.com/morganstanley/hobbes.git
+    events:
+    - introduced: bd8cb86615562113ae09e837b8447d22dd945e80
+    - fixed: 3d08bc2cd3474bb3c41bfb21dc3c7b0b1109e5e7
+  ecosystem_specific:
+    severity: HIGH
+  database_specific:
+    fixed_range: a3405671223691e74f0734b36d751b3cb4b7d24d:3d08bc2cd3474bb3c41bfb21dc3c7b0b1109e5e7
+    introduced_range: unknown:bd8cb86615562113ae09e837b8447d22dd945e80
+  versions: []
+schema_version: 1.9.0
