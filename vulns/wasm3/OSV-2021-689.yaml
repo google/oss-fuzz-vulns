@@ -10,7 +10,7 @@ details: |
   EvaluateExpression
   InitDataSegments
   ```
-modified: '2022-04-13T03:04:30.620813Z'
+modified: '2026-08-25T14:13:21.072921Z'
 published: '2021-04-27T00:01:03.314259Z'
 references:
 - type: REPORT
@@ -26,5 +26,6 @@ affected:
     - introduced: 64a22dcdc3e4239cb91b153d25c8b5bb2fac430e
   versions:
   - v0.5.0
+  - v0.9.0
   ecosystem_specific:
     severity: HIGH
