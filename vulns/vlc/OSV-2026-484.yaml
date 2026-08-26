@@ -1,18 +1,5 @@
-affected:
-- database_specific:
-    introduced_range: 22ea21dc9efff3e1ce539a098e4839975051bbe5:ca8a1dd2e9f38ae5d0ecae43be473d3a9af6a399
-  ecosystem_specific:
-    severity: MEDIUM
-  package:
-    ecosystem: OSS-Fuzz
-    name: vlc
-    purl: pkg:generic/vlc
-  ranges:
-  - events:
-    - introduced: f8e9d090fc20452cfddb91df28bf235eb59baff1
-    repo: https://code.videolan.org/videolan/vlc.git
-    type: GIT
-  versions: []
+id: OSV-2026-484
+summary: Heap-buffer-overflow in DecodeBlock
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=496959764
 
@@ -23,11 +10,26 @@ details: |
   test_decoder_process
   EsOutSend
   ```
-id: OSV-2026-484
 modified: '2026-03-29T00:17:27.329414Z'
 published: '2026-03-29T00:17:27.329100Z'
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=496959764
+affected:
+- package:
+    name: vlc
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/vlc
+  ranges:
+  - type: GIT
+    repo: https://code.videolan.org/videolan/vlc.git
+    events:
+    - introduced: f8e9d090fc20452cfddb91df28bf235eb59baff1
+    - fixed: 4cab4d77d807a33964539979167461fd39df3efb
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    fixed_range: b92bde55a49527b8a04afa9958dbdb3f75858b25:4cab4d77d807a33964539979167461fd39df3efb
+    introduced_range: 22ea21dc9efff3e1ce539a098e4839975051bbe5:ca8a1dd2e9f38ae5d0ecae43be473d3a9af6a399
+  versions: []
 schema_version: 1.7.5
-summary: Heap-buffer-overflow in DecodeBlock
