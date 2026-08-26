@@ -10,7 +10,7 @@ details: |
   FuzzTarget.cpp
   pcpp::RawPacket::~RawPacket
   ```
-modified: '2026-07-28T07:23:47.243866Z'
+modified: '2026-08-26T14:34:52.397194Z'
 published: '2026-03-05T00:05:14.040862Z'
 references:
 - type: REPORT
@@ -25,13 +25,14 @@ affected:
     repo: https://github.com/seladb/PcapPlusPlus
     events:
     - introduced: 813f15b87f5e76a62d64360f8cbdf449c21316e4
+    - fixed: 3efa8b871549eb369a0201ffd8bc2a61fc932d7f
   versions:
   - v24.09
   - v25.05
-  - v26.07-test
   - v26.07
   ecosystem_specific:
     severity: MEDIUM
   database_specific:
+    fixed_range: 200853b3a0b5ea2c443d6bee1a67f9c9c67b8f1b:3efa8b871549eb369a0201ffd8bc2a61fc932d7f
     introduced_range: 3227ad11ec457c3dad062db548432d2a1c837d50:0c95dfb3557644acc6a10060e48cfae1a61fc2f0
 schema_version: 1.7.5
