@@ -1,0 +1,34 @@
+id: OSV-2026-1198
+summary: Stack-buffer-overflow in msLayoutTextSymbol
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=551099259
+
+  ```
+  Crash type: Stack-buffer-overflow READ 4
+  Crash state:
+  msLayoutTextSymbol
+  msWriteErrorImage
+  msWMSException
+  ```
+modified: '2026-08-25T00:18:59.857603Z'
+published: '2026-08-25T00:18:59.857307Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=551099259
+affected:
+- package:
+    name: mapserver
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/mapserver
+  ranges:
+  - type: GIT
+    repo: https://github.com/MapServer/MapServer
+    events:
+    - introduced: c2ec9215037703e029fbd64259977aaabfdbb9e7
+    - fixed: e84d91b4732e35132a28d72ad5f3c962a7acaed5
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: 280a8701b338df5e9e84f1eb0f03b8a396982893:a8ae991083942f156fbcc1ed1b5cefdf72612ba2
+  versions: []
+schema_version: 1.9.0
