@@ -1,15 +1,30 @@
+id: OSV-2023-1328
+summary: Stack-buffer-overflow in icu_75::TZDBTimeZoneNames::getMetaZoneNames
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=65128
+
+  ```
+  Crash type: Stack-buffer-overflow WRITE 1
+  Crash state:
+  icu_75::TZDBTimeZoneNames::getMetaZoneNames
+  icu_75::TZDBTimeZoneNames::getMetaZoneDisplayName
+  TestNames
+  ```
+modified: '2026-08-31T19:58:16.656939Z'
+published: '2023-12-18T00:13:09.643640Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=65128
 affected:
-- ecosystem_specific:
-    severity: HIGH
-  package:
-    ecosystem: OSS-Fuzz
+- package:
     name: icu
+    ecosystem: OSS-Fuzz
     purl: pkg:generic/icu
   ranges:
-  - events:
-    - introduced: 5cf5ec1adbd2332b3cc289b5b1f5ca8324275fc3
+  - type: GIT
     repo: https://github.com/unicode-org/icu.git
-    type: GIT
+    events:
+    - introduced: 5cf5ec1adbd2332b3cc289b5b1f5ca8324275fc3
   versions:
   - release-75-rc
   - release-75-1
@@ -28,21 +43,7 @@ affected:
   - release-78.2
   - release-78.3
   - icu4x/2026-07-01/79.x
-details: |
-  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=65128
-
-  ```
-  Crash type: Stack-buffer-overflow WRITE 1
-  Crash state:
-  icu_75::TZDBTimeZoneNames::getMetaZoneNames
-  icu_75::TZDBTimeZoneNames::getMetaZoneDisplayName
-  TestNames
-  ```
-id: OSV-2023-1328
-modified: '2026-07-01T17:45:35.791405Z'
-published: '2023-12-18T00:13:09.643640Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=65128
+  - icu4x/2026-08-31/79.x
+  ecosystem_specific:
+    severity: HIGH
 schema_version: 1.6.0
-summary: Stack-buffer-overflow in icu_75::TZDBTimeZoneNames::getMetaZoneNames
