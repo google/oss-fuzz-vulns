@@ -9,7 +9,7 @@ details: |
   pcre2_compile_32
   pcre2_fuzzsupport.c
   ```
-modified: '2026-08-26T14:35:02.268418Z'
+modified: '2026-08-31T14:30:24.926976Z'
 published: '2026-03-03T00:19:45.153716Z'
 references:
 - type: REPORT
@@ -30,6 +30,7 @@ affected:
   - pcre2-10.46
   - pcre2-10.47
   - pcre2-10.48-RC1
+  - pcre2-10.48
   ecosystem_specific:
     severity: HIGH
   database_specific:
