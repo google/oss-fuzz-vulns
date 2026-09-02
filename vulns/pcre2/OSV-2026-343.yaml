@@ -9,7 +9,7 @@ details: |
   pcre2_compile_32
   pcre2_fuzzsupport.c
   ```
-modified: '2026-08-31T14:30:24.926976Z'
+modified: '2026-09-02T14:36:09.507103Z'
 published: '2026-03-03T00:19:45.153716Z'
 references:
 - type: REPORT
@@ -24,15 +24,17 @@ affected:
     repo: https://github.com/PCRE2Project/pcre2
     events:
     - introduced: 24f9d8df0b8ddabc217ec4e7856a678e09f52773
+    - fixed: e19e76ad8e5bbdf8a22b69e0f408692329e1e516
   versions:
   - pcre2-10.45
   - pcre2-10.45-RC1
   - pcre2-10.46
   - pcre2-10.47
-  - pcre2-10.48-RC1
   - pcre2-10.48
+  - pcre2-10.48-RC1
   ecosystem_specific:
     severity: HIGH
   database_specific:
+    fixed_range: a2b146a3245a930aa4c8ea8b33c0d83092daa7c9:e19e76ad8e5bbdf8a22b69e0f408692329e1e516
     introduced_range: fc38d9e784f6d7db070b78d062f1b3de034965b2:ccb259f089a8a54c06ce7b17d9cbac4302652bb1
 schema_version: 1.7.5
