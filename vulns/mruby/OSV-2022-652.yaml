@@ -1,15 +1,30 @@
+id: OSV-2022-652
+summary: Use-of-uninitialized-value in udiv
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=49542
+
+  ```
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  udiv
+  mrb_bint_mod
+  int_mod
+  ```
+modified: '2026-09-04T14:15:53.006921Z'
+published: '2022-07-29T00:02:04.321859Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=49542
 affected:
-- ecosystem_specific:
-    severity: MEDIUM
-  package:
-    ecosystem: OSS-Fuzz
+- package:
     name: mruby
+    ecosystem: OSS-Fuzz
     purl: pkg:generic/mruby
   ranges:
-  - events:
-    - introduced: 547d465340b5358502483a97729a95661bcd754d
+  - type: GIT
     repo: https://github.com/mruby/mruby
-    type: GIT
+    events:
+    - introduced: 547d465340b5358502483a97729a95661bcd754d
   versions:
   - 3.2.0-rc
   - 3.2.0-rc2
@@ -27,21 +42,7 @@ affected:
   - 4.0.0-rc3
   - 4.0.0-rc4
   - 4.0.0
-details: |
-  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=49542
-
-  ```
-  Crash type: Use-of-uninitialized-value
-  Crash state:
-  udiv
-  mrb_bint_mod
-  int_mod
-  ```
-id: OSV-2022-652
-modified: '2026-04-20T14:10:26.566278Z'
-published: '2022-07-29T00:02:04.321859Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=49542
+  - 4.1.0-rc
+  ecosystem_specific:
+    severity: MEDIUM
 schema_version: 1.2.0
-summary: Use-of-uninitialized-value in udiv
