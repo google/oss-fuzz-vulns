@@ -10,7 +10,7 @@ details: |
   Box_iloc::read_data
   HeifFile::append_data_from_iloc
   ```
-modified: '2026-08-15T14:26:25.182291Z'
+modified: '2026-09-04T14:26:32.922965Z'
 published: '2026-06-17T00:06:18.594494Z'
 references:
 - type: REPORT
@@ -31,6 +31,7 @@ affected:
   - v6.28.1
   - v6.29.0-rc1
   - v6.29.0
+  - v6.30.0-rc1
   ecosystem_specific:
     severity: null
 schema_version: 1.7.5
