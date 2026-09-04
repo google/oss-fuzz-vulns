@@ -1,0 +1,33 @@
+id: OSV-2026-867
+summary: Bad-cast to std::__shared_weak_count from invalid vptr
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=520147546
+
+  ```
+  Crash type: Bad-cast
+  Crash state:
+  Bad-cast to std::__shared_weak_count from invalid vptr
+  std::__1::shared_ptr<Assimp::STEP::EXPRESS::DataType const>::shared_ptr
+  Assimp::STEP::ReadFileHeader
+  ```
+modified: '2026-06-07T00:02:11.977765Z'
+published: '2026-06-07T00:02:11.977245Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=520147546
+affected:
+- package:
+    name: assimp
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/assimp
+  ranges:
+  - type: GIT
+    repo: https://github.com/assimp/assimp.git
+    events:
+    - introduced: cac67afe479ac9be595d03bfa811d0e6a6baf39a
+  ecosystem_specific:
+    severity: HIGH
+  database_specific:
+    introduced_range: be3d938e3e22d364b38807a247b3593fa7b260bd:626219cdd32f8fb0891464f27663d2667078d7cc
+  versions: []
+schema_version: 1.9.0
