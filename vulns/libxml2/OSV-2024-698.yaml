@@ -1,15 +1,30 @@
+id: OSV-2024-698
+summary: Heap-use-after-free in xmlCharEncCloseFunc
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=70774
+
+  ```
+  Crash type: Heap-use-after-free READ 4
+  Crash state:
+  xmlCharEncCloseFunc
+  htmlSaveFileFormat
+  parseAndPrintFile
+  ```
+modified: '2026-09-05T14:29:52.346266Z'
+published: '2024-07-31T00:12:19.254629Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=70774
 affected:
-- ecosystem_specific:
-    severity: HIGH
-  package:
-    ecosystem: OSS-Fuzz
+- package:
     name: libxml2
+    ecosystem: OSS-Fuzz
     purl: pkg:generic/libxml2
   ranges:
-  - events:
-    - introduced: 36ea881b9d92166568b1d107181a05f673fd4ab1
+  - type: GIT
     repo: https://gitlab.gnome.org/GNOME/libxml2.git
-    type: GIT
+    events:
+    - introduced: 36ea881b9d92166568b1d107181a05f673fd4ab1
   versions:
   - v2.14.0
   - v2.14.1
@@ -22,21 +37,7 @@ affected:
   - v2.15.1
   - v2.15.2
   - v2.15.3
-details: |
-  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=70774
-
-  ```
-  Crash type: Heap-use-after-free READ 4
-  Crash state:
-  xmlCharEncCloseFunc
-  htmlSaveFileFormat
-  parseAndPrintFile
-  ```
-id: OSV-2024-698
-modified: '2026-04-16T14:30:06.495743Z'
-published: '2024-07-31T00:12:19.254629Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=70774
+  - v2.15.4
+  ecosystem_specific:
+    severity: HIGH
 schema_version: 1.6.0
-summary: Heap-use-after-free in xmlCharEncCloseFunc
