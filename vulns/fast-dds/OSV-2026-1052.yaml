@@ -1,0 +1,34 @@
+id: OSV-2026-1052
+summary: UNKNOWN READ in eprosima::fastdds::dds::QosPoliciesSerializer<eprosima::fastdds::dds::PartitionQ
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=532839120
+
+  ```
+  Crash type: UNKNOWN READ
+  Crash state:
+  eprosima::fastdds::dds::QosPoliciesSerializer<eprosima::fastdds::dds::PartitionQ
+  eprosima::fastdds::rtps::ReaderProxyData::read_from_cdr_message
+  fuzz_proxy_cdr.cxx
+  ```
+modified: '2026-07-11T00:10:01.932472Z'
+published: '2026-07-11T00:10:01.932185Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=532839120
+affected:
+- package:
+    name: fast-dds
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/fast-dds
+  ranges:
+  - type: GIT
+    repo: https://github.com/eProsima/Fast-DDS.git
+    events:
+    - introduced: 237b08a2bbe1dde83060fba0135bd66eada51f72
+    - fixed: 0f5c9b94e284b08c861eea43cffec54a0ee67341
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: aeba2db3640d1f79d9f1f0430b10a475ea4c47cb:ec4558b92439a8599b72145dd05f2bda81367a4b
+  versions: []
+schema_version: 1.9.0
