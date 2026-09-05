@@ -10,7 +10,7 @@ details: |
   lj_record_ins
   trace_state
   ```
-modified: '2026-04-30T00:17:45.000105Z'
+modified: '2026-09-05T14:33:57.779371Z'
 published: '2026-04-30T00:17:44.999830Z'
 references:
 - type: REPORT
@@ -34,6 +34,7 @@ affected:
   - 3.8.0-entrypoint
   - 3.8.1-entrypoint
   - 3.9.0-entrypoint
+  - 3.8.1
   ecosystem_specific:
     severity: HIGH
   database_specific:
