@@ -1,0 +1,50 @@
+id: OSV-2026-1235
+summary: UNKNOWN READ in renumber_by_map
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=557283672
+
+  ```
+  Crash type: UNKNOWN READ
+  Crash state:
+  renumber_by_map
+  renumber_by_map
+  disable_noname_group_capture
+  ```
+modified: '2026-09-06T00:05:19.578548Z'
+published: '2026-09-06T00:05:19.578124Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=557283672
+affected:
+- package:
+    name: fluent-bit
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/fluent-bit
+  ranges:
+  - type: GIT
+    repo: https://github.com/fluent/fluent-bit/
+    events:
+    - introduced: ef3f0750c741ae4586a093adf747bb77c932bec7
+    - fixed: 98f3bdeb9ad4af5bcb03a7ae1872e694b207f274
+  versions:
+  - v4.2.1
+  - v4.2.2
+  - v5.0.0
+  - v5.0.0-dev-20260228
+  - v5.0.1
+  - v5.0.2
+  - v5.0.3
+  - v5.0.4
+  - v5.0.5
+  - v5.0.6
+  - v5.0.7
+  - v5.0.8
+  - v5.0.9
+  - v5.1.0
+  - v5.1.1
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    fixed_range: a31cf11a22434a819e4594c9443799b4340819b0:98f3bdeb9ad4af5bcb03a7ae1872e694b207f274
+    introduced_range: ae1445463ca03bac9b46147166c0ee00993363e8:10ebd3a354f2a052ac865960145fda844b3b120e
+schema_version: 1.9.0
