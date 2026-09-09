@@ -1,0 +1,33 @@
+id: OSV-2026-1043
+summary: Index-out-of-bounds in impd_drc_gen_instructions_derived_data
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=531676895
+
+  ```
+  Crash type: Index-out-of-bounds
+  Crash state:
+  impd_drc_gen_instructions_derived_data
+  impd_parse_drc_config
+  impd_drc_init
+  ```
+modified: '2026-07-08T00:03:12.620018Z'
+published: '2026-07-08T00:03:12.619734Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=531676895
+affected:
+- package:
+    name: libxaac
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libxaac
+  ranges:
+  - type: GIT
+    repo: https://github.com/ittiam-systems/libxaac.git
+    events:
+    - introduced: 3dfa708b6e57ff81cb016cfc1cf3c6e508184405
+    - fixed: 3895d236b8a8d53c860b42af5ce5f076c015ad84
+  versions:
+  - v0.1.13
+  ecosystem_specific:
+    severity: MEDIUM
+schema_version: 1.9.0

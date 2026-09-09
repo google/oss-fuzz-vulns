@@ -1,0 +1,41 @@
+id: OSV-2026-1220
+summary: Use-of-uninitialized-value in str_escape
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=554268877
+
+  ```
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  str_escape
+  mrb_vm_exec
+  yield_with_attr
+  ```
+modified: '2026-08-31T00:03:15.842196Z'
+published: '2026-08-31T00:03:15.841689Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=554268877
+affected:
+- package:
+    name: mruby
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/mruby
+  ranges:
+  - type: GIT
+    repo: https://github.com/mruby/mruby
+    events:
+    - introduced: 18c43c2a5add8cbd91f094b08bb4fc291a019a82
+    - fixed: cafbd6691d971b110dcaedf64b37833d7a4f34cf
+  versions:
+  - 4.0.0
+  - 4.0.0-rc
+  - 4.0.0-rc2
+  - 4.0.0-rc3
+  - 4.0.0-rc4
+  - 4.1.0-rc
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: 65247613b9d250403a5fd0c044da4384974ddd04:1d426c50bff9a26b6b6d79199684140db2fe94b2
+    fixed_range: b41b20aa96cb0d1fbe57acf0d30d547ccf94af3b:cafbd6691d971b110dcaedf64b37833d7a4f34cf
+schema_version: 1.9.0

@@ -1,0 +1,36 @@
+id: OSV-2026-1161
+summary: Heap-buffer-overflow in ppp_tx_frame
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=546440470
+
+  ```
+  Crash type: Heap-buffer-overflow WRITE {*}
+  Crash state:
+  ppp_tx_frame
+  ppp_rx
+  mg_tcpip_rx
+  ```
+modified: '2026-08-16T00:19:38.885457Z'
+published: '2026-08-16T00:19:38.885229Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=546440470
+affected:
+- package:
+    name: mongoose
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/mongoose
+  ranges:
+  - type: GIT
+    repo: https://github.com/cesanta/mongoose
+    events:
+    - introduced: 699067ff58ce887d25591e9cc8838fa8614507db
+    - fixed: c857ddae57dba6a7e6dfdc7e7368d2e8bc6d7c26
+  versions:
+  - '7.23'
+  ecosystem_specific:
+    severity: HIGH
+  database_specific:
+    introduced_range: ed19d5290edc0f5c6ba95f7320d1caff3cdb5b70:fdcefb087eff7b13f39578e63b8c9bf5d086de10
+    fixed_range: 86adf12a7790cf083777bd857e718a6386498c19:c857ddae57dba6a7e6dfdc7e7368d2e8bc6d7c26
+schema_version: 1.9.0
