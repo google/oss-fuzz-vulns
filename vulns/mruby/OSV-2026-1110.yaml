@@ -1,0 +1,36 @@
+id: OSV-2026-1110
+summary: Check failed in CheckUnwind
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=541969271
+
+  ```
+  Crash type: Check failed
+  Crash state:
+  CheckUnwind
+  mrb_basic_alloc_func
+  pm_node_hash_insert
+  ```
+modified: '2026-08-04T00:03:39.795638Z'
+published: '2026-08-04T00:03:39.795107Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=541969271
+affected:
+- package:
+    name: mruby
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/mruby
+  ranges:
+  - type: GIT
+    repo: https://github.com/mruby/mruby
+    events:
+    - introduced: 03f0dc3c5aba72fe42029dfb7aef5b98385a16b5
+    - fixed: 430e1d4f52bc98024e5a15d45c6c61efefcc1764
+  versions:
+  - 4.1.0-rc
+  ecosystem_specific:
+    severity: null
+  database_specific:
+    introduced_range: 7b503f3a345f32089f5fde3833159c62be51e59c:d36d48f9715ce684c526c7041068c3e932d3c492
+    fixed_range: cafbd6691d971b110dcaedf64b37833d7a4f34cf:430e1d4f52bc98024e5a15d45c6c61efefcc1764
+schema_version: 1.9.0
