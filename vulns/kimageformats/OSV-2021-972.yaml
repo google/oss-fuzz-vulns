@@ -10,7 +10,7 @@ details: |
   generate_inter_prediction_samples
   decode_prediction_unit
   ```
-modified: '2026-09-04T14:13:57.326179Z'
+modified: '2026-09-10T14:11:35.694468Z'
 published: '2021-07-13T00:00:16.631711Z'
 references:
 - type: REPORT
@@ -162,5 +162,6 @@ affected:
   - v6.29.0-rc1
   - v6.29.0
   - v6.30.0-rc1
+  - v6.30.0
   ecosystem_specific:
     severity: MEDIUM
