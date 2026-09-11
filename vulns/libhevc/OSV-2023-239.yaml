@@ -1,15 +1,30 @@
+id: OSV-2023-239
+summary: Use-of-uninitialized-value in ihevce_strm_fill_done
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=57401
+
+  ```
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  ihevce_strm_fill_done
+  ihevce_ent_coding_thrd
+  osal_func
+  ```
+modified: '2026-09-11T14:17:31.687708Z'
+published: '2023-03-26T13:02:03.445119Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=57401
 affected:
-- ecosystem_specific:
-    severity: MEDIUM
-  package:
-    ecosystem: OSS-Fuzz
+- package:
     name: libhevc
+    ecosystem: OSS-Fuzz
     purl: pkg:generic/libhevc
   ranges:
-  - events:
-    - introduced: caae21611ae310e11b711865f8b7aa7db8996d87
+  - type: GIT
     repo: https://github.com/ittiam-systems/libhevc.git
-    type: GIT
+    events:
+    - introduced: caae21611ae310e11b711865f8b7aa7db8996d87
   versions:
   - v1.1.1
   - v1.2.0
@@ -22,21 +37,7 @@ affected:
   - v1.8.0
   - v1.8.2
   - v1.8.4
-details: |
-  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=57401
-
-  ```
-  Crash type: Use-of-uninitialized-value
-  Crash state:
-  ihevce_strm_fill_done
-  ihevce_ent_coding_thrd
-  osal_func
-  ```
-id: OSV-2023-239
-modified: '2026-06-23T14:16:59.015199Z'
-published: '2023-03-26T13:02:03.445119Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=57401
+  - v1.8.5
+  ecosystem_specific:
+    severity: MEDIUM
 schema_version: 1.4.0
-summary: Use-of-uninitialized-value in ihevce_strm_fill_done
