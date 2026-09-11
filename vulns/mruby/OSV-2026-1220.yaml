@@ -10,7 +10,7 @@ details: |
   mrb_vm_exec
   yield_with_attr
   ```
-modified: '2026-08-31T00:03:15.842196Z'
+modified: '2026-09-11T14:26:10.616202Z'
 published: '2026-08-31T00:03:15.841689Z'
 references:
 - type: REPORT
@@ -33,6 +33,7 @@ affected:
   - 4.0.0-rc3
   - 4.0.0-rc4
   - 4.1.0-rc
+  - 4.1.0-rc2
   ecosystem_specific:
     severity: MEDIUM
   database_specific:
