@@ -25,9 +25,11 @@ affected:
     repo: https://github.com/WizardMac/ReadStat
     events:
     - introduced: 365c743efed5684afd48514f6123c002b9a9b6a1
+    - fixed: a2ac26a6ca80680a0ca759cc81e68fdb9f1aadf5
   ecosystem_specific:
     severity: MEDIUM
   database_specific:
+    fixed_range: 78bb8a9419e9aa505746bdb5c71683a203da53e7:a2ac26a6ca80680a0ca759cc81e68fdb9f1aadf5
     introduced_range: 15e7a5607df2f70e5fae5d1da628cbe878c8e1ae:5c446781f5ac7d716fae0ad0ef4a3f3920eb2cd6
   versions: []
 schema_version: 1.7.5
