@@ -1,0 +1,35 @@
+id: OSV-2026-1039
+summary: Index-out-of-bounds in iusace_estimate_scfs_chan
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=531479957
+
+  ```
+  Crash type: Index-out-of-bounds
+  Crash state:
+  iusace_estimate_scfs_chan
+  iusace_quantize_spec
+  iusace_fd_encode
+  ```
+modified: '2026-07-07T00:05:37.409990Z'
+published: '2026-07-07T00:05:37.409622Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=531479957
+affected:
+- package:
+    name: libxaac
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libxaac
+  ranges:
+  - type: GIT
+    repo: https://github.com/ittiam-systems/libxaac.git
+    events:
+    - introduced: 60cae125cf9b02ad4bf81ef2b332be1bee09ea9f
+    - fixed: 6c771f2ccdef83ebc6dbf7694b1a0ce9c0585d46
+  versions:
+  - v0.1.13
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    fixed_range: 39f510f4166d24cfa4bf879f212b1fca1926264f:6c771f2ccdef83ebc6dbf7694b1a0ce9c0585d46
+schema_version: 1.9.0
