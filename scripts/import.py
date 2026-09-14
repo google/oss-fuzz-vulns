@@ -28,9 +28,10 @@ _YamlDumper.add_representer(str, _yaml_str_representer)
 
 def main():
   if len(sys.argv) < 2:
-    print(f'Usage: {sys.argv[0]} <oss-fuzz issue_id>')
+    print(f'Usage: {sys.argv[0]} <oss-fuzz issue_id>', file=sys.stderr)
+    sys.exit(1)
 
-  issue_id = sys.argv[1]
+  issue_id = sys.argv[1]  
   try:
     data = urllib.request.urlopen(f'{_VULN_URL}/{issue_id}.json').read()
   except urllib.error.HTTPError:
