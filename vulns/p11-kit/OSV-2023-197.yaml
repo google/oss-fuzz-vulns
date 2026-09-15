@@ -25,24 +25,8 @@ affected:
     repo: https://github.com/p11-glue/p11-kit.git
     events:
     - introduced: 7fe7e5d95d9197e7f52aab314468d424acc6ac88
-  versions:
-  - 0.25.0
-  - 0.25.1
-  - 0.25.2
-  - 0.25.3
-  - 0.25.4
-  - 0.25.5
-  - 0.25.10
-  - 0.25.6
-  - 0.25.7
-  - 0.25.8
-  - 0.25.9
-  - 0.26.0
-  - 0.26.1
-  - 0.26.2
-  - 0.26.3
-  - 0.26.4
-  - 0.26.5
+    - fixed: 54bfa28536d5c05deec675cc0a85a6e1fd4a51bf
   ecosystem_specific:
     severity: null
+  versions: []
 schema_version: 1.4.0
