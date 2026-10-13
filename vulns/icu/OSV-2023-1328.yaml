@@ -26,25 +26,7 @@ affected:
     events:
     - introduced: 5cf5ec1adbd2332b3cc289b5b1f5ca8324275fc3
     - fixed: 539e8f41a35fec30fba4cfb3a65ea4db67978f85
-  versions:
-  - release-75-rc
-  - release-75-1
-  - icu4x/2024-05-03/75.x
-  - icu4x/2024-05-16/75.x
-  - icu4x/2024-12-16/76.x
-  - release-76-1
-  - release-76-rc
-  - release-77-rc
-  - release-77-1
-  - icu4x/2025-05-01/77.x
-  - icu4x/2025-05-21/77.x
-  - release-78.1rc
-  - release-78.1rc2
-  - release-78.1
-  - release-78.2
-  - release-78.3
-  - icu4x/2026-07-01/79.x
-  - icu4x/2026-08-31/79.x
+  versions: []
   ecosystem_specific:
     severity: HIGH
 schema_version: 1.6.0
