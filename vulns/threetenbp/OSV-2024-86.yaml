@@ -10,7 +10,7 @@ details: |
   java.base/java.text.DateFormatSymbols.getProviderInstance
   java.base/java.text.DateFormatSymbols.getInstance
   ```
-modified: '2026-07-28T07:20:35.268127Z'
+modified: '2026-10-14T14:37:27.832382Z'
 published: '2024-02-09T00:00:11.154046Z'
 references:
 - type: REPORT
@@ -33,6 +33,7 @@ affected:
   - v1.7.2
   - v1.7.3
   - v1.7.4
+  - v1.7.5
   ecosystem_specific:
     severity: LOW
 schema_version: 1.6.0
