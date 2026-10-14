@@ -10,7 +10,7 @@ details: |
   org.apache.lucene.util.BytesRef.deepCopyOf
   org.apache.lucene.index.Term.<init>
   ```
-modified: '2026-09-06T00:22:11.941371Z'
+modified: '2026-10-14T16:10:55.851446Z'
 published: '2026-09-06T00:22:11.940984Z'
 references:
 - type: REPORT
@@ -37,6 +37,7 @@ affected:
   - releases/lucene/10.4.0
   - releases/lucene/10.5.0
   - releases/lucene/10.5.1
+  - releases/lucene/10.5.2
   ecosystem_specific:
     severity: LOW
   database_specific:
