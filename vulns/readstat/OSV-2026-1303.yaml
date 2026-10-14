@@ -1,0 +1,34 @@
+id: OSV-2026-1303
+summary: Heap-buffer-overflow in sas7bdat_parse_all_pages_pass2
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=562985572
+
+  ```
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  sas7bdat_parse_all_pages_pass2
+  readstat_parse_sas7bdat
+  fuzz_format_sas7bdat.c
+  ```
+modified: '2026-09-19T00:19:12.056022Z'
+published: '2026-09-19T00:19:12.055691Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=562985572
+affected:
+- package:
+    name: readstat
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/readstat
+  ranges:
+  - type: GIT
+    repo: https://github.com/WizardMac/ReadStat
+    events:
+    - introduced: 84c2d6b9886262de3f9f6daab2b593d7ec6ba5d8
+    - fixed: 5850fb57dfc0301f62c745c547763610e5a6c347
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: a2ac26a6ca80680a0ca759cc81e68fdb9f1aadf5:ccf24a68c8072afe260e108eda70e471696c3250
+  versions: []
+schema_version: 1.9.1

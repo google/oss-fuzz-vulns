@@ -1,0 +1,36 @@
+id: OSV-2026-1297
+summary: UNKNOWN READ in janet_to_string_b
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=562551214
+
+  ```
+  Crash type: UNKNOWN READ
+  Crash state:
+  janet_to_string_b
+  janet_formatbv
+  janet_panicf
+  ```
+modified: '2026-09-18T00:21:36.250818Z'
+published: '2026-09-18T00:21:36.250342Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=562551214
+affected:
+- package:
+    name: janet
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/janet
+  ranges:
+  - type: GIT
+    repo: https://github.com/janet-lang/janet
+    events:
+    - introduced: d8be849671a8824a57038f68626ab7dcac7ab529
+    - fixed: 4fc4c8c351aa7062083cd5ce9ffe411f1c3ae64d
+  versions:
+  - v1.42.1
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    fixed_range: 832159a677e3fd1c45a6fe88427e05555acc7a36:4fc4c8c351aa7062083cd5ce9ffe411f1c3ae64d
+    introduced_range: a7b6c04fdfffb9d7f63143daffb4a1e262eb1a7e:a6470a427144ef683d2c388d6042d88a15c61681
+schema_version: 1.9.1

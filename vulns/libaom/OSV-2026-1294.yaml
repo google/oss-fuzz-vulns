@@ -1,0 +1,35 @@
+id: OSV-2026-1294
+summary: UNKNOWN WRITE in av1_cdef_mse_calc_frame_mt
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=562150738
+
+  ```
+  Crash type: UNKNOWN WRITE
+  Crash state:
+  av1_cdef_mse_calc_frame_mt
+  av1_cdef_search
+  encode_with_recode_loop_and_filter
+  ```
+modified: '2026-09-17T00:05:32.619086Z'
+published: '2026-09-17T00:05:32.618740Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=562150738
+affected:
+- package:
+    name: libaom
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libaom
+  ranges:
+  - type: GIT
+    repo: https://aomedia.googlesource.com/aom
+    events:
+    - introduced: 532ba44931cc110121e0a1a410412f3ab70e2200
+    - fixed: 822f287f60cc99775d0293baa8f20dd8af88f2c4
+  ecosystem_specific:
+    severity: HIGH
+  database_specific:
+    fixed_range: 037ca0e8863b171cc284390c7f1a845a6b2d7f4f:822f287f60cc99775d0293baa8f20dd8af88f2c4
+    introduced_range: 023743a7d78d9c7d33390c5c45b35495ea013a21:037ca0e8863b171cc284390c7f1a845a6b2d7f4f
+  versions: []
+schema_version: 1.9.1

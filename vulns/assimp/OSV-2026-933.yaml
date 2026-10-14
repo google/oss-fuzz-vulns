@@ -1,0 +1,33 @@
+id: OSV-2026-933
+summary: UNKNOWN READ in aiMesh::~aiMesh
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=524387782
+
+  ```
+  Crash type: UNKNOWN READ
+  Crash state:
+  aiMesh::~aiMesh
+  Assimp::ASEImporter::InternReadFile
+  Assimp::BaseImporter::ReadFile
+  ```
+modified: '2026-06-17T00:20:06.745482Z'
+published: '2026-06-17T00:20:06.745068Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=524387782
+affected:
+- package:
+    name: assimp
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/assimp
+  ranges:
+  - type: GIT
+    repo: https://github.com/assimp/assimp.git
+    events:
+    - introduced: 71b00a5df3fb0237b0e4afeda42a1059ebc80bac
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: b3c7df74198c8c165a0a8c24088a8fe2a8528afc:0a343958b1f413dae1c97e91b676609826721d33
+  versions: []
+schema_version: 1.9.1

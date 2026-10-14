@@ -1,0 +1,31 @@
+id: OSV-2026-1018
+summary: Heap-buffer-overflow in decode_reason_code_and_cc
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=530730549
+
+  ```
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  decode_reason_code_and_cc
+  decode_nsm_provide_token_resp
+  decode_nsm_provide_token_resp_fuzzer.cc
+  ```
+modified: '2026-07-05T00:01:49.456233Z'
+published: '2026-07-05T00:01:49.455923Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=530730549
+affected:
+- package:
+    name: nsmd
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/nsmd
+  ranges:
+  - type: GIT
+    repo: https://gbmc.googlesource.com/nsmd
+    events:
+    - introduced: 62de34e8b8bda9eab592ad737b7fbb3924a55e89
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.9.1

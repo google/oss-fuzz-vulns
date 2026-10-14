@@ -1,0 +1,30 @@
+id: OSV-2026-1205
+summary: Heap-buffer-overflow in decode_get_fpga_diagnostics_settings_resp
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=553148335
+
+  ```
+  Crash type: Heap-buffer-overflow READ 13
+  Crash state:
+  decode_get_fpga_diagnostics_settings_resp
+  decode_get_fpga_diagnostics_settings_resp_fuzzer.cc
+  ```
+modified: '2026-08-28T00:19:58.754757Z'
+published: '2026-08-28T00:19:58.754489Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=553148335
+affected:
+- package:
+    name: nsmd
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/nsmd
+  ranges:
+  - type: GIT
+    repo: https://gbmc.googlesource.com/nsmd
+    events:
+    - introduced: 62de34e8b8bda9eab592ad737b7fbb3924a55e89
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.9.1

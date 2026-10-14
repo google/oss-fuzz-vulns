@@ -1,0 +1,36 @@
+id: OSV-2026-1361
+summary: Bad parameters to --sanitizer-annotate-contiguous-container in jsoncons::cbor::basic_cbor_parser<jsoncons::stream_source<unsigned
+  char, std::__
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=568595812
+
+  ```
+  Crash type: Bad parameters to --sanitizer-annotate-contiguous-container
+  Crash state:
+  jsoncons::cbor::basic_cbor_parser<jsoncons::stream_source<unsigned char, std::__
+  void jsoncons::cbor::basic_cbor_parser<jsoncons::stream_source<unsigned char, st
+  jsoncons::cbor::basic_cbor_parser<jsoncons::stream_source<unsigned char, std::__
+  ```
+modified: '2026-10-03T00:28:31.238686Z'
+published: '2026-10-03T00:28:31.238403Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=568595812
+affected:
+- package:
+    name: jsoncons
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/jsoncons
+  ranges:
+  - type: GIT
+    repo: https://github.com/danielaparker/jsoncons
+    events:
+    - introduced: 29b374009c585c1ab49ad308b1ab3438a73acebf
+    - fixed: 2788b2285a309647d8833de25c182f543529c4d8
+  ecosystem_specific:
+    severity: HIGH
+  database_specific:
+    fixed_range: 7095e80b52f7bd4ad11df1eff5731cb7391efa4f:2788b2285a309647d8833de25c182f543529c4d8
+    introduced_range: 987e9c860664e899841b05c529c3455902263945:04f60a365a28018a75fd285799f50433fcd24172
+  versions: []
+schema_version: 1.9.1

@@ -1,0 +1,35 @@
+id: OSV-2026-1309
+summary: Heap-buffer-overflow in janet_bytecode_movopt_basic_block
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=563659412
+
+  ```
+  Crash type: Heap-buffer-overflow READ 4
+  Crash state:
+  janet_bytecode_movopt_basic_block
+  janet_bytecode_movopt_full
+  janet_bytecode_optimize
+  ```
+modified: '2026-09-21T00:10:08.003883Z'
+published: '2026-09-21T00:10:08.003546Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=563659412
+affected:
+- package:
+    name: janet
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/janet
+  ranges:
+  - type: GIT
+    repo: https://github.com/janet-lang/janet
+    events:
+    - introduced: c29050eeda52d117095d2551b7abcf2e98cc9574
+    - fixed: d763d0d51afddceeb251bc6dd6e9458cc4ec0484
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    fixed_range: 4fc4c8c351aa7062083cd5ce9ffe411f1c3ae64d:d763d0d51afddceeb251bc6dd6e9458cc4ec0484
+    introduced_range: 832159a677e3fd1c45a6fe88427e05555acc7a36:4fc4c8c351aa7062083cd5ce9ffe411f1c3ae64d
+  versions: []
+schema_version: 1.9.1

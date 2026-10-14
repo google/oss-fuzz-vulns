@@ -1,0 +1,38 @@
+id: OSV-2026-1054
+summary: Heap-buffer-overflow in ihevcd_cabac_decode_bins_tunary
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=533053032
+
+  ```
+  Crash type: Heap-buffer-overflow READ 4
+  Crash state:
+  ihevcd_cabac_decode_bins_tunary
+  ihevcd_parse_transform_tree
+  ihevcd_parse_transform_tree
+  ```
+modified: '2026-07-12T00:03:00.178850Z'
+published: '2026-07-12T00:03:00.178402Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=533053032
+affected:
+- package:
+    name: libhevc
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libhevc
+  ranges:
+  - type: GIT
+    repo: https://github.com/ittiam-systems/libhevc.git
+    events:
+    - introduced: e7d529d2718974b5bcdfab4d2376a09764349afa
+    - fixed: 5b574436c3cb4796c41164a33659e981616c74d3
+  versions:
+  - v1.8.2
+  - v1.8.4
+  - v1.8.5
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    fixed_range: 0ec4164e6a387367910e458c0ef26de60217f0c8:5b574436c3cb4796c41164a33659e981616c74d3
+    introduced_range: a0296d9951f437a255190beb11d24fdae3d219ee:646ee9988888336da6f762788c97a87b74b7578d
+schema_version: 1.9.1

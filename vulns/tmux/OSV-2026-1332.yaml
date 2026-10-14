@@ -1,0 +1,35 @@
+id: OSV-2026-1332
+summary: Heap-buffer-overflow in screen_resize_cursor
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=566549189
+
+  ```
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  screen_resize_cursor
+  window_pane_resize
+  layout_fix_panes
+  ```
+modified: '2026-09-28T00:18:44.671204Z'
+published: '2026-09-28T00:18:44.670627Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=566549189
+affected:
+- package:
+    name: tmux
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/tmux
+  ranges:
+  - type: GIT
+    repo: https://github.com/tmux/tmux.git
+    events:
+    - introduced: be75a67b1fe182fab9868d15ed618557555f6a0e
+    - fixed: 3a5df8780f5fc863655c8610c11e57a3ec7ee3e6
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    fixed_range: 94796f6b1182507efac8a272fc309a79e22e58a5:3a5df8780f5fc863655c8610c11e57a3ec7ee3e6
+    introduced_range: 5e860c4e6c0a4a5d85d123eb3c671c574635180b:72e83b000b669eeeb436b0107b3ba885554f4b52
+  versions: []
+schema_version: 1.9.1

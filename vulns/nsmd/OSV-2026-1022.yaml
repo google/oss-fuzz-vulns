@@ -1,0 +1,30 @@
+id: OSV-2026-1022
+summary: Heap-buffer-overflow in decode_common_resp
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=530698795
+
+  ```
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  decode_common_resp
+  decode_common_resp_fuzzer.cc
+  ```
+modified: '2026-07-05T00:04:33.901238Z'
+published: '2026-07-05T00:04:33.900975Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=530698795
+affected:
+- package:
+    name: nsmd
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/nsmd
+  ranges:
+  - type: GIT
+    repo: https://gbmc.googlesource.com/nsmd
+    events:
+    - introduced: 62de34e8b8bda9eab592ad737b7fbb3924a55e89
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.9.1

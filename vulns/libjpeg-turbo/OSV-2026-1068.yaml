@@ -1,0 +1,38 @@
+id: OSV-2026-1068
+summary: UNKNOWN READ in jpeg_abort
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=537793912
+
+  ```
+  Crash type: UNKNOWN READ
+  Crash state:
+  jpeg_abort
+  tj3Compress8
+  compress.cc
+  ```
+modified: '2026-07-28T07:15:29.611192Z'
+published: '2026-07-28T07:15:29.610817Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=537793912
+affected:
+- package:
+    name: libjpeg-turbo
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libjpeg-turbo
+  ranges:
+  - type: GIT
+    repo: https://github.com/libjpeg-turbo/libjpeg-turbo
+    events:
+    - introduced: 489dac0575414137ce79e6b59b02848a5fd10bfc
+    - fixed: 76b7feab363d547e06151c8a8aa0ca72ade0594a
+  versions:
+  - 3.1.4
+  - 3.1.4.1
+  - 3.1.90
+  - 3.2.0
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: 571a8a176e3a7ec62bab61aeb60c23b1a48109c6:d58c0ecfce1c71211b930eed6962a0a129358a28
+schema_version: 1.9.1

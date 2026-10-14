@@ -1,0 +1,33 @@
+id: OSV-2026-1314
+summary: Heap-buffer-overflow in vacm_getAccessEntry
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=564017938
+
+  ```
+  Crash type: Heap-buffer-overflow READ 3
+  Crash state:
+  vacm_getAccessEntry
+  snmp_sec_models_fuzzer.c
+  ```
+modified: '2026-09-22T00:05:30.662109Z'
+published: '2026-09-22T00:05:30.661810Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=564017938
+affected:
+- package:
+    name: net-snmp
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/net-snmp
+  ranges:
+  - type: GIT
+    repo: https://github.com/net-snmp/net-snmp
+    events:
+    - introduced: a29a63ace5a81fcb34d188f8cfb595b90c22846e
+    - fixed: 5a3f45013398b45e77058725d65c93918e6110dc
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: ad6bcb387bb4141647e4fa3f6654e4c52aefe563:d01499c68f8c188fdea246a57905b6d454641108
+  versions: []
+schema_version: 1.9.1

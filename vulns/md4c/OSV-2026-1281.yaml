@@ -1,0 +1,35 @@
+id: OSV-2026-1281
+summary: Heap-buffer-overflow in md_decode_utf8__
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=560854538
+
+  ```
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  md_decode_utf8__
+  md_label_hash
+  md_lookup_label_hashtable
+  ```
+modified: '2026-09-15T00:14:21.986100Z'
+published: '2026-09-15T00:14:21.985714Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=560854538
+affected:
+- package:
+    name: md4c
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/md4c
+  ranges:
+  - type: GIT
+    repo: https://github.com/mity/md4c
+    events:
+    - introduced: f7f9c57a6375e7303fae3af72e92edfdb4a70c66
+    - fixed: 60965ab9ab0e0b69a091d493631feffd09a8f908
+  ecosystem_specific:
+    severity: HIGH
+  database_specific:
+    fixed_range: fb83eb2bedcf730bc721ab91b07c80d011cbe38f:60965ab9ab0e0b69a091d493631feffd09a8f908
+    introduced_range: 00788b157b2b6ef3efd8659b66f6521229f382d7:10fa4f4410a58cdd03cb4de1ade6efbbe7de59a4
+  versions: []
+schema_version: 1.9.1

@@ -1,0 +1,33 @@
+id: OSV-2026-1032
+summary: Use-of-uninitialized-value in Assimp::PbrtExporter::WriteTextures
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=531040219
+
+  ```
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  Assimp::PbrtExporter::WriteTextures
+  Assimp::PbrtExporter::WriteWorldDefinition
+  Assimp::PbrtExporter::PbrtExporter
+  ```
+modified: '2026-07-06T00:03:29.495939Z'
+published: '2026-07-06T00:03:29.495610Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=531040219
+affected:
+- package:
+    name: assimp
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/assimp
+  ranges:
+  - type: GIT
+    repo: https://github.com/assimp/assimp.git
+    events:
+    - introduced: 16c50d7b53b5b6536599135004fb003c5e6f88b8
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: e86df1f8b139f4095653d37dc08622fa5d206663:e2fd15f8f78d99e08fd3d3f90d7add3bf310b122
+  versions: []
+schema_version: 1.9.1
