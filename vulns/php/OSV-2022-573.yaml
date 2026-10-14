@@ -10,7 +10,7 @@ details: |
   execute_internal
   fuzzer_execute_internal
   ```
-modified: '2025-03-12T17:15:50.141849Z'
+modified: '2026-10-14T14:39:58.042936Z'
 published: '2022-07-13T00:00:07.763765Z'
 references:
 - type: REPORT
@@ -29,6 +29,7 @@ affected:
   - security-audit-2024
   - php-8.3.18
   - php-8.3.19
+  - php-8.3.34
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.2.0
