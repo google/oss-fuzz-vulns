@@ -25,9 +25,11 @@ affected:
     repo: https://github.com/assimp/assimp.git
     events:
     - introduced: 71b00a5df3fb0237b0e4afeda42a1059ebc80bac
+    - fixed: 3e9c4e1d38a8cf4cbc63513e0f23a58f70833e49
   ecosystem_specific:
     severity: MEDIUM
   database_specific:
+    fixed_range: f6ee58e2489f3cbaee328655599f50c5c386a08e:3e9c4e1d38a8cf4cbc63513e0f23a58f70833e49
     introduced_range: b3c7df74198c8c165a0a8c24088a8fe2a8528afc:0a343958b1f413dae1c97e91b676609826721d33
   versions: []
 schema_version: 1.9.1
