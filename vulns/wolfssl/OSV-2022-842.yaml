@@ -1,15 +1,30 @@
+id: OSV-2022-842
+summary: Stack-buffer-overflow in wc_Shake256_Final
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=50946
+
+  ```
+  Crash type: Stack-buffer-overflow WRITE {*}
+  Crash state:
+  wc_Shake256_Final
+  wc_ed448_sign_msg_ex
+  wc_ed448_sign_msg
+  ```
+modified: '2026-10-14T14:54:57.193767Z'
+published: '2022-09-05T00:00:28.251072Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=50946
 affected:
-- ecosystem_specific:
-    severity: HIGH
-  package:
-    ecosystem: OSS-Fuzz
+- package:
     name: wolfssl
+    ecosystem: OSS-Fuzz
     purl: pkg:generic/wolfssl
   ranges:
-  - events:
-    - introduced: aa036b6ea402e9159d2a9b12c7f05701d44a4f09
+  - type: GIT
     repo: https://github.com/wolfssl/wolfssl
-    type: GIT
+    events:
+    - introduced: aa036b6ea402e9159d2a9b12c7f05701d44a4f09
   versions:
   - v5.5.1-stable
   - v5.5.2-stable
@@ -35,21 +50,8 @@ affected:
   - v5.9.1-stable
   - wolfEntropyv5.2.4-CHKIN
   - v5.9.2-stable
-details: |
-  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=50946
-
-  ```
-  Crash type: Stack-buffer-overflow WRITE {*}
-  Crash state:
-  wc_Shake256_Final
-  wc_ed448_sign_msg_ex
-  wc_ed448_sign_msg
-  ```
-id: OSV-2022-842
-modified: '2026-06-25T14:24:03.465175Z'
-published: '2022-09-05T00:00:28.251072Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=50946
+  - v5.9.4-stable
+  - wolfEntropyv7.0.0-CHKIN
+  ecosystem_specific:
+    severity: HIGH
 schema_version: 1.2.0
-summary: Stack-buffer-overflow in wc_Shake256_Final
