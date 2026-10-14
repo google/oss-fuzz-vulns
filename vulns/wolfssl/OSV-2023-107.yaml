@@ -1,17 +1,30 @@
+id: OSV-2023-107
+summary: Heap-buffer-overflow in DecodeBasicOcspResponse
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=56308
+
+  ```
+  Crash type: Heap-buffer-overflow READ {*}
+  Crash state:
+  DecodeBasicOcspResponse
+  OcspResponseDecode
+  ocsp.c
+  ```
+modified: '2026-10-14T14:57:20.909801Z'
+published: '2023-02-25T13:00:07.390537Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=56308
 affected:
-- database_specific:
-    introduced_range: 69ceedbcff5a2ae0dab8fd6c8199c12ec7b45b79:b2a6203ec01fcc5d55ab37b3d0e85ab160e962d4
-  ecosystem_specific:
-    severity: MEDIUM
-  package:
-    ecosystem: OSS-Fuzz
+- package:
     name: wolfssl
+    ecosystem: OSS-Fuzz
     purl: pkg:generic/wolfssl
   ranges:
-  - events:
-    - introduced: b32036258d8efa6617b916f0c4be11a33e699b37
+  - type: GIT
     repo: https://github.com/wolfssl/wolfssl
-    type: GIT
+    events:
+    - introduced: b32036258d8efa6617b916f0c4be11a33e699b37
   versions:
   - v5.6.0-stable
   - v5.6.2-stable
@@ -33,21 +46,10 @@ affected:
   - v5.9.1-stable
   - wolfEntropyv5.2.4-CHKIN
   - v5.9.2-stable
-details: |
-  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=56308
-
-  ```
-  Crash type: Heap-buffer-overflow READ {*}
-  Crash state:
-  DecodeBasicOcspResponse
-  OcspResponseDecode
-  ocsp.c
-  ```
-id: OSV-2023-107
-modified: '2026-06-25T14:22:50.868185Z'
-published: '2023-02-25T13:00:07.390537Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=56308
+  - v5.9.4-stable
+  - wolfEntropyv7.0.0-CHKIN
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: 69ceedbcff5a2ae0dab8fd6c8199c12ec7b45b79:b2a6203ec01fcc5d55ab37b3d0e85ab160e962d4
 schema_version: 1.4.0
-summary: Heap-buffer-overflow in DecodeBasicOcspResponse
