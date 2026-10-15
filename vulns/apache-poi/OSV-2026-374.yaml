@@ -1,0 +1,35 @@
+id: OSV-2026-374
+summary: Security exception in org.apache.poi.ss.formula.FormulaParser.additiveExpression
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=490896964
+
+  ```
+  Crash type: Security exception
+  Crash state:
+  org.apache.poi.ss.formula.FormulaParser.additiveExpression
+  org.apache.poi.ss.formula.FormulaParser.concatExpression
+  org.apache.poi.ss.formula.FormulaParser.comparisonExpression
+  ```
+modified: '2026-03-10T00:02:42.503004Z'
+published: '2026-03-10T00:02:42.502539Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=490896964
+affected:
+- package:
+    name: apache-poi
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/apache-poi
+  ranges:
+  - type: GIT
+    repo: https://github.com/apache/poi.git
+    events:
+    - introduced: b19e73b8a0456b406e9eaec0dd90b63bc699953f
+    - fixed: 18d4128d956f9436bfe06c10cfdd457fca6a61de
+  ecosystem_specific:
+    severity: LOW
+  database_specific:
+    fixed_range: f3688f45b0de8934fb32736ba14efc5bbca4a580:18d4128d956f9436bfe06c10cfdd457fca6a61de
+    introduced_range: 54874ae6313bf39723040f425ecce021e497330d:90560c33b6f78a4b84e03a9fd8b7feaedb1e49c3
+  versions: []
+schema_version: 1.9.1
