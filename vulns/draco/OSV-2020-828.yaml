@@ -10,7 +10,7 @@ details: |
   draco::MetadataDecoder::DecodeMetadata
   draco::MetadataDecoder::DecodeGeometryMetadata
   ```
-modified: '2026-10-16T14:34:32.224416Z'
+modified: '2026-10-17T14:36:03.322145Z'
 published: '2020-07-14T05:37:49.784283Z'
 references:
 - type: REPORT
@@ -37,6 +37,7 @@ affected:
   - 1.5.6
   - 1.5.7
   - 1.5.8
+  - 1.5.9
   ecosystem_specific:
     severity: HIGH
     introduced_range: aef4bfbd61798ecc21d94c873b679fbdeaf92462:79601d2d060be52e673a82ed1c46f4666eb28255
