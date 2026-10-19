@@ -1,0 +1,34 @@
+id: OSV-2026-1408
+summary: UNKNOWN READ in hobbes::castexp::apply
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=573787443
+
+  ```
+  Crash type: UNKNOWN READ
+  Crash state:
+  hobbes::castexp::apply
+  hobbes::compileExpF::with
+  llvm::Value* hobbes::switchOfF<llvm::Value*, hobbes::switchExpr<llvm::Value*> co
+  ```
+modified: '2026-10-17T00:03:42.538034Z'
+published: '2026-10-17T00:03:42.537606Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=573787443
+affected:
+- package:
+    name: hobbes
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/hobbes
+  ranges:
+  - type: GIT
+    repo: https://github.com/morganstanley/hobbes.git
+    events:
+    - introduced: b04da9e612f6d0bdd9d691c0396ae481dbfc6da9
+    - fixed: bff061afc31cfc460f38dd9c5c4b754b72b88de5
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: 4b2dbb6cedaee900267471349b3b9ac4098d3d20:f06eb2bd471181093c3f68a09b29bbdb0120e99f
+  versions: []
+schema_version: 1.9.1
