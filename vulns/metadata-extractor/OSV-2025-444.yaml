@@ -1,0 +1,37 @@
+id: OSV-2025-444
+summary: Security exception in com.drew.imaging.quicktime.QuickTimeReader.processAtoms
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=422822305
+
+  ```
+  Crash type: Security exception
+  Crash state:
+  com.drew.imaging.quicktime.QuickTimeReader.processAtoms
+  com.drew.lang.StreamReader.getByte
+  com.drew.lang.SequentialReader.getUInt32
+  ```
+modified: '2025-06-07T00:09:40.471530Z'
+published: '2025-06-07T00:09:40.471123Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=422822305
+affected:
+- package:
+    name: metadata-extractor
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/metadata-extractor
+  ranges:
+  - type: GIT
+    repo: https://github.com/drewnoakes/metadata-extractor.git
+    events:
+    - introduced: 0b566c0405424890b8e3f10d991f327af6922219
+    - fixed: ecffc649b1ff0e29cdac849546b66cf48480073a
+  versions:
+  - 2.20.0
+  - 2.21.0
+  ecosystem_specific:
+    severity: LOW
+  database_specific:
+    fixed_range: 6f037943c0811799a59b0ea19896cb2b07da17be:ecffc649b1ff0e29cdac849546b66cf48480073a
+    introduced_range: 9f4ad4ce396eb2a0d2d3ec1d730dcd5a374602e7:0c3452bf1c4556724930281ffd97f65b66bfd697
+schema_version: 1.9.1

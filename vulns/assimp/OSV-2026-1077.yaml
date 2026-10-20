@@ -1,0 +1,34 @@
+id: OSV-2026-1077
+summary: Heap-buffer-overflow in std::__1::basic_string<char, std::__1::char_traits<char>,
+  std::__1::allocator<ch
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=536937906
+
+  ```
+  Crash type: Heap-buffer-overflow READ {*}
+  Crash state:
+  std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<ch
+  Assimp::XFileParser::GetNextToken
+  Assimp::XFileParser::ParseDataObjectTemplate
+  ```
+modified: '2026-07-28T07:23:02.143620Z'
+published: '2026-07-28T07:23:02.143330Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=536937906
+affected:
+- package:
+    name: assimp
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/assimp
+  ranges:
+  - type: GIT
+    repo: https://github.com/assimp/assimp.git
+    events:
+    - introduced: 16c50d7b53b5b6536599135004fb003c5e6f88b8
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: e86df1f8b139f4095653d37dc08622fa5d206663:e2fd15f8f78d99e08fd3d3f90d7add3bf310b122
+  versions: []
+schema_version: 1.9.1
