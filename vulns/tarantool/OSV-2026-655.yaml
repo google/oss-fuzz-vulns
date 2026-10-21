@@ -10,7 +10,7 @@ details: |
   lj_record_ins
   trace_state
   ```
-modified: '2026-09-07T14:23:38.728346Z'
+modified: '2026-10-21T23:15:26.347143Z'
 published: '2026-04-30T00:17:44.999830Z'
 references:
 - type: REPORT
@@ -25,6 +25,7 @@ affected:
     repo: https://github.com/tarantool/tarantool
     events:
     - introduced: 41846ade3585477c8297f06c9fbc4d1e6c16fb83
+    - fixed: 63d9f01e339f4da711b37bc754199e59ac7216be
   versions:
   - 3.7.0
   - 3.7.1
@@ -32,12 +33,13 @@ affected:
   - 3.7.2-entrypoint
   - 3.8.0
   - 3.8.0-entrypoint
-  - 3.8.1-entrypoint
-  - 3.9.0-entrypoint
   - 3.8.1
+  - 3.8.1-entrypoint
   - 3.8.2-entrypoint
+  - 3.9.0-entrypoint
   ecosystem_specific:
     severity: HIGH
   database_specific:
     introduced_range: 83e12796838a74739ba35c740b0e21a442796ec7:dc969d16f6467569f4aa9dc124a31f023b803c22
+    fixed_range: d3c3c5f938a3c457566d71332d5a45db64495141:63d9f01e339f4da711b37bc754199e59ac7216be
 schema_version: 1.7.5
