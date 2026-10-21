@@ -10,7 +10,7 @@ details: |
   lj_meta_tset
   lj_vmeta_tsetv
   ```
-modified: '2026-09-08T14:38:52.473467Z'
+modified: '2026-10-21T22:27:12.823489Z'
 published: '2025-12-25T00:17:49.020029Z'
 references:
 - type: REPORT
@@ -25,34 +25,37 @@ affected:
     repo: https://github.com/tarantool/tarantool
     events:
     - introduced: 8c7cfb1cd0b3f5ce1d5b181403f68f7aaf657d9a
+    - fixed: 63d9f01e339f4da711b37bc754199e59ac7216be
   versions:
   - 3.5.0
   - 3.5.1
   - 3.5.1-entrypoint
+  - 3.5.2
   - 3.5.2-entrypoint
+  - 3.5.3-entrypoint
   - 3.6.0
   - 3.6.0-entrypoint
   - 3.6.1
   - 3.6.1-entrypoint
   - 3.6.2
   - 3.6.2-entrypoint
-  - 3.6.3-entrypoint
-  - 3.7.0-entrypoint
-  - 3.7.0
-  - 3.7.1-entrypoint
-  - 3.8.0-entrypoint
-  - 3.5.2
   - 3.6.3
-  - 3.6.4-entrypoint
-  - 3.5.3-entrypoint
+  - 3.6.3-entrypoint
   - 3.6.4
+  - 3.6.4-entrypoint
+  - 3.7.0
+  - 3.7.0-entrypoint
   - 3.7.1
+  - 3.7.1-entrypoint
   - 3.7.2-entrypoint
   - 3.8.0
-  - 3.8.1-entrypoint
-  - 3.9.0-entrypoint
+  - 3.8.0-entrypoint
   - 3.8.1
+  - 3.8.1-entrypoint
   - 3.8.2-entrypoint
+  - 3.9.0-entrypoint
   ecosystem_specific:
     severity: HIGH
+  database_specific:
+    fixed_range: d3c3c5f938a3c457566d71332d5a45db64495141:63d9f01e339f4da711b37bc754199e59ac7216be
 schema_version: 1.7.5
