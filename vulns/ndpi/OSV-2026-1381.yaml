@@ -1,0 +1,35 @@
+id: OSV-2026-1381
+summary: Use-of-uninitialized-value in processHandshakeTLSBlock
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=571356131
+
+  ```
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  processHandshakeTLSBlock
+  ndpi_search_tls_tcp_internal
+  ndpi_search_tls_wrapper
+  ```
+modified: '2026-10-10T00:07:38.989607Z'
+published: '2026-10-10T00:07:38.989118Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=571356131
+affected:
+- package:
+    name: ndpi
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/ndpi
+  ranges:
+  - type: GIT
+    repo: https://github.com/ntop/nDPI.git
+    events:
+    - introduced: e5f8ec95413cb19ddff878fda8490b7516686cd3
+    - fixed: 2b8c2989f8c36f94a639057aeebd4fc71d841928
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: 6b2a77a87b8163fe8d632c5b6fd9862b00bd229f:de3915b9fc4338fd2adc74cf50c6d53bdf99fce2
+    fixed_range: f1570f38fc855f4b1579e5af5d9a596e60e8f2ad:2b8c2989f8c36f94a639057aeebd4fc71d841928
+  versions: []
+schema_version: 1.9.1

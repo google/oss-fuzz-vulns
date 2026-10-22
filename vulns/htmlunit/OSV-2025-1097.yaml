@@ -1,0 +1,44 @@
+id: OSV-2025-1097
+summary: Security exception in org.htmlunit.cyberneko.HTMLTagBalancer.reopenFormattingElements
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=571721880
+
+  ```
+  Crash type: Security exception
+  Crash state:
+  org.htmlunit.cyberneko.HTMLTagBalancer.reopenFormattingElements
+  org.htmlunit.cyberneko.HTMLTagBalancer.startElement
+  org.htmlunit.cyberneko.HTMLTagBalancer.forceStartElement
+  ```
+modified: '2026-10-10T00:18:42.710838Z'
+published: '2026-10-10T00:18:42.710584Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=571721880
+affected:
+- package:
+    name: htmlunit
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/htmlunit
+  ranges:
+  - type: GIT
+    repo: https://github.com/HtmlUnit/htmlunit.git
+    events:
+    - introduced: 0747862ca9e647fcdb16b35c9f775eaa577f9aee
+    - fixed: 4610a7a39a9f9fd8a4c892fd311be60032496428
+  versions:
+  - 4.19.0
+  - 4.20.0
+  - 4.21.0
+  - 5.0.0
+  - 5.1.0
+  - 5.2.0
+  - 5.3.0
+  - 5.4.0
+  - 5.5.0
+  - 5.6.0
+  ecosystem_specific:
+    severity: LOW
+  database_specific:
+    introduced_range: 69f12908fca8b940fa6cd114b0266b909fca0c1a:b750ca63a80698eddef3fc3457911bc21a825b58
+schema_version: 1.9.1

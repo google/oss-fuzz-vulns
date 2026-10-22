@@ -1,0 +1,33 @@
+id: OSV-2026-1279
+summary: Heap-buffer-overflow in H5T__bit_find
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=560740865
+
+  ```
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  H5T__bit_find
+  H5T__conv_f_i_loop
+  H5T__conv_f_i
+  ```
+modified: '2026-09-14T00:18:36.931082Z'
+published: '2026-09-14T00:18:36.930781Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=560740865
+affected:
+- package:
+    name: matio
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/matio
+  ranges:
+  - type: GIT
+    repo: https://github.com/tbeu/matio.git
+    events:
+    - introduced: ac1c67c687533d2de55f96709ed4512d4c197801
+    - fixed: fe19d779aa324f1b1a025d4287afcd5740d12522
+  versions:
+  - v1.6.0
+  ecosystem_specific:
+    severity: MEDIUM
+schema_version: 1.9.1
