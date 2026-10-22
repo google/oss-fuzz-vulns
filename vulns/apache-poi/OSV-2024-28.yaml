@@ -1,20 +1,5 @@
-affected:
-- database_specific:
-    introduced_range: c3fd1d5731af09aeb62a48026b6437bed4f2c28f:f93306721f52243285a81d261231952077c1aac7
-  ecosystem_specific:
-    severity: LOW
-  package:
-    ecosystem: OSS-Fuzz
-    name: apache-poi
-    purl: pkg:generic/apache-poi
-  ranges:
-  - events:
-    - introduced: 724fc526bf486b2a600fdbc44bc084dc40619fef
-    repo: https://github.com/apache/poi.git
-    type: GIT
-  versions:
-  - REL_5_5_0
-  - REL_5_5_1
+id: OSV-2024-28
+summary: Security exception in java.base/java.util.Arrays.copyOf
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=65930
 
@@ -25,11 +10,27 @@ details: |
   java.base/java.util.ArrayList.grow
   java.base/java.util.ArrayList.grow
   ```
-id: OSV-2024-28
-modified: '2025-12-01T14:21:19.263844Z'
+modified: '2026-10-22T20:46:07.046872Z'
 published: '2024-01-21T00:12:30.613951Z'
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=65930
+affected:
+- package:
+    name: apache-poi
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/apache-poi
+  ranges:
+  - type: GIT
+    repo: https://github.com/apache/poi.git
+    events:
+    - introduced: 724fc526bf486b2a600fdbc44bc084dc40619fef
+  versions:
+  - REL_5_5_0
+  - REL_5_5_1
+  - REL_6_0_0
+  ecosystem_specific:
+    severity: LOW
+  database_specific:
+    introduced_range: c3fd1d5731af09aeb62a48026b6437bed4f2c28f:f93306721f52243285a81d261231952077c1aac7
 schema_version: 1.6.0
-summary: Security exception in java.base/java.util.Arrays.copyOf
