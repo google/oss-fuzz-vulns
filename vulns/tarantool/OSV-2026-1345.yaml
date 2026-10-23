@@ -1,0 +1,42 @@
+id: OSV-2026-1345
+summary: Heap-buffer-overflow in load_u64
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=567611282
+
+  ```
+  Crash type: Heap-buffer-overflow WRITE 8
+  Crash state:
+  load_u64
+  datetime_unpack
+  luamp_decode_with_ctx
+  ```
+modified: '2026-10-01T00:11:42.217769Z'
+published: '2026-10-01T00:11:42.217351Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=567611282
+affected:
+- package:
+    name: tarantool
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/tarantool
+  ranges:
+  - type: GIT
+    repo: https://github.com/tarantool/tarantool
+    events:
+    - introduced: c679fad72328070e9d94426077b8cc45c390e313
+    - fixed: 81a8cb24a56aac8ef0145b321e661046b815ace3
+  versions:
+  - 3.6.4
+  - 3.7.1
+  - 3.7.2-entrypoint
+  - 3.8.0
+  - 3.8.1
+  - 3.8.1-entrypoint
+  - 3.8.2-entrypoint
+  - 3.9.0-entrypoint
+  ecosystem_specific:
+    severity: HIGH
+  database_specific:
+    fixed_range: 36f5233ac875e4d5b1a9310697a84ccdb77ef5b5:81a8cb24a56aac8ef0145b321e661046b815ace3
+schema_version: 1.9.1

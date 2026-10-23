@@ -1,0 +1,34 @@
+id: OSV-2026-1069
+summary: Segv on unknown address in glslang::TPpContext::tokenPaste
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=539180630
+
+  ```
+  Crash type: Segv on unknown address
+  Crash state:
+  glslang::TPpContext::tokenPaste
+  glslang::TPpContext::tokenize
+  glslang::TShader::preprocess
+  ```
+modified: '2026-07-28T07:16:02.263312Z'
+published: '2026-07-28T07:16:02.263026Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=539180630
+affected:
+- package:
+    name: shaderc
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/shaderc
+  ranges:
+  - type: GIT
+    repo: https://github.com/google/shaderc
+    events:
+    - introduced: 03dac0d0d1f70401b3bbc6219d3f71899ec92c77
+    - fixed: 5bcaaaec711df4dfa31f38923d3d42b9b98d5250
+  versions:
+  - v2026.3
+  - v2026.4
+  ecosystem_specific:
+    severity: null
+schema_version: 1.9.1
