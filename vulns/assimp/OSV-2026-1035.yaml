@@ -10,7 +10,7 @@ details: |
   Assimp::D3MF::D3MFExporter::writeMesh
   Assimp::D3MF::D3MFExporter::writeObjects
   ```
-modified: '2026-07-06T00:16:31.257347Z'
+modified: '2026-10-24T16:02:15.608336Z'
 published: '2026-07-06T00:16:31.257098Z'
 references:
 - type: REPORT
@@ -25,9 +25,11 @@ affected:
     repo: https://github.com/assimp/assimp.git
     events:
     - introduced: 16c50d7b53b5b6536599135004fb003c5e6f88b8
+    - fixed: d59e42da06d4e182845aa47dab5848269efd998d
   ecosystem_specific:
     severity: MEDIUM
   database_specific:
+    fixed_range: c3f68d29c4237435652ec242e00928d5dd2b3011:d59e42da06d4e182845aa47dab5848269efd998d
     introduced_range: e86df1f8b139f4095653d37dc08622fa5d206663:e2fd15f8f78d99e08fd3d3f90d7add3bf310b122
   versions: []
 schema_version: 1.9.1
