@@ -10,7 +10,7 @@ details: |
   nlohmann::json_abi_v3_12_0::detail::binary_reader<nlohmann::json_abi_v3_12_0::ba
   nlohmann::json_abi_v3_12_0::basic_json<std::__1::map, std::__1::vector, std::__1
   ```
-modified: '2026-10-22T00:15:07.426819Z'
+modified: '2026-10-24T16:10:18.537992Z'
 published: '2026-10-22T00:15:07.426499Z'
 references:
 - type: REPORT
@@ -26,9 +26,11 @@ affected:
     events:
     - introduced: cc8334113c8672433bf2d656ef60d14cd57867c4
     - fixed: 08d7fbb0a1ae77b612ee0f4c839ddbe2462f6127
+    - fixed: 2dc1e548563823ff103a383894b735c51963db76
   ecosystem_specific:
     severity: MEDIUM
   database_specific:
     introduced_range: 0e95fe8200adbf0e033d0c0818eea473e1d4d346:4da932f518feb262d29b08aedec10ec0c45fa501
+    fixed_range: a55cae45fd0333738be2c38c5adcec50a2f22729:2dc1e548563823ff103a383894b735c51963db76
   versions: []
 schema_version: 1.9.1
