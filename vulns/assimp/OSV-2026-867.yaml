@@ -10,7 +10,7 @@ details: |
   std::__1::shared_ptr<Assimp::STEP::EXPRESS::DataType const>::shared_ptr
   Assimp::STEP::ReadFileHeader
   ```
-modified: '2026-06-07T00:02:11.977765Z'
+modified: '2026-10-24T16:06:35.949415Z'
 published: '2026-06-07T00:02:11.977245Z'
 references:
 - type: REPORT
@@ -25,9 +25,11 @@ affected:
     repo: https://github.com/assimp/assimp.git
     events:
     - introduced: cac67afe479ac9be595d03bfa811d0e6a6baf39a
+    - fixed: d59e42da06d4e182845aa47dab5848269efd998d
   ecosystem_specific:
     severity: HIGH
   database_specific:
+    fixed_range: c3f68d29c4237435652ec242e00928d5dd2b3011:d59e42da06d4e182845aa47dab5848269efd998d
     introduced_range: be3d938e3e22d364b38807a247b3593fa7b260bd:626219cdd32f8fb0891464f27663d2667078d7cc
   versions: []
 schema_version: 1.9.0
