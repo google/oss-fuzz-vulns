@@ -10,7 +10,7 @@ details: |
   ZSTD_decompress_usingDDict
   zstd_wrap_decompress
   ```
-modified: '2026-10-14T14:59:44.043079Z'
+modified: '2026-10-26T14:55:45.170904Z'
 published: '2023-07-23T14:01:02.159160Z'
 references:
 - type: REPORT
@@ -110,6 +110,7 @@ affected:
   - v3.3.3
   - v3.3.4
   - v3.3.5
+  - v3.4.0
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.6.0
