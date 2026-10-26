@@ -10,7 +10,7 @@ details: |
   LibRaw::dcraw_process
   libraw_fuzzer.cc
   ```
-modified: '2026-06-23T00:11:20.642589Z'
+modified: '2026-10-26T15:02:34.514091Z'
 published: '2026-06-23T00:11:20.642308Z'
 references:
 - type: REPORT
@@ -29,6 +29,7 @@ affected:
   - 0.22.0
   - 0.22.1
   - 0.22.2
+  - 0.22.3
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.9.1
