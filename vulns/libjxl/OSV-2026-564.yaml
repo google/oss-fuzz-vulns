@@ -9,7 +9,7 @@ details: |
   DoTestOneInput
   djxl_fuzzer.cc
   ```
-modified: '2026-04-12T00:05:43.861719Z'
+modified: '2026-10-27T14:42:26.992914Z'
 published: '2026-04-12T00:05:43.861410Z'
 references:
 - type: REPORT
@@ -24,11 +24,13 @@ affected:
     repo: https://github.com/libjxl/libjxl.git
     events:
     - introduced: efd4c04dc1c493534fdd6b1d92d7c6d0e7ff9d3f
+    - fixed: ec2982b1f79e9eebf5a514df759d0bb41b8f240d
   versions:
   - v0.12-snapshot
   - v0.12.0
   ecosystem_specific:
     severity: MEDIUM
   database_specific:
+    fixed_range: e47d2a2b5bb418f2947ce07f36cb048861db3820:ec2982b1f79e9eebf5a514df759d0bb41b8f240d
     introduced_range: 37bbfd09b4fd42554940ac2c0b72a1121cfa6d8a:7cc4da3a4a3b83e0e5d6bea22e48474f3f8b6fcc
 schema_version: 1.7.5
