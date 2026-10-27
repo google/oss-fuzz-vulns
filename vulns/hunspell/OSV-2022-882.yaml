@@ -10,7 +10,7 @@ details: |
   SfxEntry::add
   AffixMgr::expand_rootword
   ```
-modified: '2026-10-14T14:43:43.820119Z'
+modified: '2026-10-27T14:17:11.458379Z'
 published: '2022-09-11T00:01:48.463118Z'
 references:
 - type: REPORT
@@ -30,6 +30,7 @@ affected:
   - v1.7.3
   - v1.7.4
   - v1.7.5
+  - v1.7.6
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.2.0
