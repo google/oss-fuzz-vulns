@@ -1,0 +1,34 @@
+id: OSV-2026-1356
+summary: Use-of-uninitialized-value in jxl::RenderPipeline::InputReady
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=568295899
+
+  ```
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  jxl::RenderPipeline::InputReady
+  jxl::RenderPipelineInput::Done
+  jxl::FrameDecoder::ProcessACGroup
+  ```
+modified: '2026-10-03T00:21:03.758013Z'
+published: '2026-10-03T00:21:03.757758Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=568295899
+affected:
+- package:
+    name: libjxl
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libjxl
+  ranges:
+  - type: GIT
+    repo: https://github.com/libjxl/libjxl.git
+    events:
+    - introduced: 05f95ed13b9eebae2c3b478e3e45e87b86fbc634
+    - fixed: ddfd9a18fa2156b064d08a319d741d00189dc250
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: e394120180f7bae73506c9c4435ed95092709a19:5f92f524f1407de323c409c360ab38cae1d97b27
+  versions: []
+schema_version: 1.9.2

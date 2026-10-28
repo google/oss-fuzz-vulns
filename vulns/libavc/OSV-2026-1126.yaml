@@ -1,0 +1,32 @@
+id: OSV-2026-1126
+summary: Heap-buffer-overflow in isvcd_nal_byte_swap_emulation
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=543374000
+
+  ```
+  Crash type: Heap-buffer-overflow WRITE 4
+  Crash state:
+  isvcd_nal_byte_swap_emulation
+  isvcd_nal_parse_vcl_nal_partial
+  isvcd_pre_parse_refine_au
+  ```
+modified: '2026-08-08T00:10:44.466645Z'
+published: '2026-08-08T00:10:44.466363Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=543374000
+affected:
+- package:
+    name: libavc
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libavc
+  ranges:
+  - type: GIT
+    repo: https://github.com/ittiam-systems/libavc.git
+    events:
+    - introduced: 74704cccf3df301489e0f23877c46ba6ad823fb9
+    - fixed: 4a12cfed87c477a936083773caaae0701a4b6ecc
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
+schema_version: 1.9.2
