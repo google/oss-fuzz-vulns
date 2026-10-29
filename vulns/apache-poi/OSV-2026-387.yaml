@@ -1,0 +1,35 @@
+id: OSV-2026-387
+summary: Security exception in org.apache.poi.ss.formula.FormulaParser.parseSheetRange
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=491506839
+
+  ```
+  Crash type: Security exception
+  Crash state:
+  org.apache.poi.ss.formula.FormulaParser.parseSheetRange
+  org.apache.poi.ss.formula.FormulaParser.parseSheetName
+  java.base/java.lang.AbstractStringBuilder.append
+  ```
+modified: '2026-03-12T00:18:27.170104Z'
+published: '2026-03-12T00:18:27.169784Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=491506839
+affected:
+- package:
+    name: apache-poi
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/apache-poi
+  ranges:
+  - type: GIT
+    repo: https://github.com/apache/poi.git
+    events:
+    - introduced: b19e73b8a0456b406e9eaec0dd90b63bc699953f
+    - fixed: 019321c93ced3281747a8f2f3c5dfc75c1dc1c93
+  versions:
+  - REL_6_0_0
+  ecosystem_specific:
+    severity: LOW
+  database_specific:
+    introduced_range: 54874ae6313bf39723040f425ecce021e497330d:90560c33b6f78a4b84e03a9fd8b7feaedb1e49c3
+schema_version: 1.9.2
