@@ -10,7 +10,7 @@ details: |
   org.apache.lucene.analysis.miscellaneous.ASCIIFoldingFilter.foldToASCII
   org.apache.lucene.analysis.miscellaneous.ASCIIFoldingFilter.incrementToken
   ```
-modified: '2026-10-14T16:08:25.526634Z'
+modified: '2026-10-30T15:43:00.525462Z'
 published: '2026-03-28T00:18:22.245546Z'
 references:
 - type: REPORT
@@ -38,6 +38,7 @@ affected:
   - releases/lucene/10.5.0
   - releases/lucene/10.5.1
   - releases/lucene/10.5.2
+  - releases/lucene/10.6.0
   ecosystem_specific:
     severity: LOW
   database_specific:
