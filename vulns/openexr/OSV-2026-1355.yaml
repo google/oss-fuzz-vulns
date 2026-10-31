@@ -1,0 +1,41 @@
+id: OSV-2026-1355
+summary: UNKNOWN READ in std::__1::pair<std::__1::__tree_iterator<std::__1::__value_type<Imf_4_0::Name,
+  I
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=568469733
+
+  ```
+  Crash type: UNKNOWN READ
+  Crash state:
+  std::__1::pair<std::__1::__tree_iterator<std::__1::__value_type<Imf_4_0::Name, I
+  Imf_4_0::Header::insert
+  Imf_4_0::initialize
+  ```
+modified: '2026-10-03T00:18:48.665530Z'
+published: '2026-10-03T00:18:48.665142Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=568469733
+affected:
+- package:
+    name: openexr
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/openexr
+  ranges:
+  - type: GIT
+    repo: https://github.com/AcademySoftwareFoundation/openexr
+    events:
+    - introduced: d2b07b19423a9c595644956f199f0f4168e8c5cd
+    - fixed: f1a5974953edf7e42e077c98c5ad8e6b87b3e9e6
+  versions:
+  - v3.5.0
+  - v3.5.0-rc2
+  - v3.5.1
+  - v3.5.1-rc
+  - v3.5.2
+  - v3.5.2-rc
+  ecosystem_specific:
+    severity: HIGH
+  database_specific:
+    fixed_range: d1d1c91cb8bb3fa2c3dc32ed19d07e56bd971a24:f1a5974953edf7e42e077c98c5ad8e6b87b3e9e6
+schema_version: 1.9.2
