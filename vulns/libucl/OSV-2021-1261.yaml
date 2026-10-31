@@ -1,23 +1,5 @@
-affected:
-- database_specific:
-    introduced_range: be59572d66b2cf547d743277599781ef87ddaad9:95df30cf3e35788c08be537a1623499c98415674
-  ecosystem_specific:
-    severity: MEDIUM
-  package:
-    ecosystem: OSS-Fuzz
-    name: libucl
-  ranges:
-  - events:
-    - introduced: b56171afae328bb605aa5aafbab9331e3e34b03e
-    repo: https://github.com/vstakhov/libucl
-    type: GIT
-  versions:
-  - 0.8.2
-  - 0.9.0
-  - 0.9.1
-  - 0.9.2
-  - 0.9.3
-  - 0.9.4
+id: OSV-2021-1261
+summary: UNKNOWN READ in kh_get_ucl_hash_node
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=38660
 
@@ -28,10 +10,29 @@ details: |
   ucl_hash_search
   ucl_inherit_handler
   ```
-id: OSV-2021-1261
-modified: '2026-02-17T14:15:50.348749Z'
+modified: '2026-10-31T14:21:31.033537Z'
 published: '2021-09-15T00:00:41.384284Z'
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=38660
-summary: UNKNOWN READ in kh_get_ucl_hash_node
+affected:
+- package:
+    name: libucl
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/vstakhov/libucl
+    events:
+    - introduced: b56171afae328bb605aa5aafbab9331e3e34b03e
+  versions:
+  - 0.8.2
+  - 0.9.0
+  - 0.9.1
+  - 0.9.2
+  - 0.9.3
+  - 0.9.4
+  - 0.10.0
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: be59572d66b2cf547d743277599781ef87ddaad9:95df30cf3e35788c08be537a1623499c98415674
