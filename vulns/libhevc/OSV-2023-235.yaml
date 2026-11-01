@@ -10,7 +10,7 @@ details: |
   ihevce_pre_enc_process_frame_thrd
   osal_func
   ```
-modified: '2026-09-11T14:17:24.753084Z'
+modified: '2026-11-01T14:33:36.793294Z'
 published: '2023-03-26T13:00:16.681780Z'
 references:
 - type: REPORT
@@ -38,6 +38,8 @@ affected:
   - v1.8.2
   - v1.8.4
   - v1.8.5
+  - v1.8.6
+  - v1.8.7
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.4.0
