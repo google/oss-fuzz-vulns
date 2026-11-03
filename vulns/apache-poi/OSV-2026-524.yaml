@@ -1,0 +1,35 @@
+id: OSV-2026-524
+summary: Security exception in org.apache.poi.ss.formula.OperandClassTransformer.transformNode
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=499126302
+
+  ```
+  Crash type: Security exception
+  Crash state:
+  org.apache.poi.ss.formula.OperandClassTransformer.transformNode
+  org.apache.poi.ss.formula.OperandClassTransformer.isSimpleValueFunction
+  org.apache.poi.ss.formula.OperandClassTransformer.transformNode
+  ```
+modified: '2026-04-04T00:09:41.139130Z'
+published: '2026-04-04T00:09:41.138842Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=499126302
+affected:
+- package:
+    name: apache-poi
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/apache-poi
+  ranges:
+  - type: GIT
+    repo: https://github.com/apache/poi.git
+    events:
+    - introduced: b19e73b8a0456b406e9eaec0dd90b63bc699953f
+    - fixed: bf0025c02bee146850784c012aeb810d0fc02fe5
+  versions:
+  - REL_6_0_0
+  ecosystem_specific:
+    severity: LOW
+  database_specific:
+    introduced_range: 54874ae6313bf39723040f425ecce021e497330d:90560c33b6f78a4b84e03a9fd8b7feaedb1e49c3
+schema_version: 1.9.2

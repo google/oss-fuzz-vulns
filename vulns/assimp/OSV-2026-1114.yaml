@@ -1,0 +1,33 @@
+id: OSV-2026-1114
+summary: Heap-buffer-overflow in Assimp::LWOImporter::LoadLWO2TextureHeader
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=541870963
+
+  ```
+  Crash type: Heap-buffer-overflow READ 4
+  Crash state:
+  Assimp::LWOImporter::LoadLWO2TextureHeader
+  Assimp::LWOImporter::LoadLWO2TextureBlock
+  Assimp::LWOImporter::LoadLWO2Surface
+  ```
+modified: '2026-08-04T00:21:06.350485Z'
+published: '2026-08-04T00:21:06.349945Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=541870963
+affected:
+- package:
+    name: assimp
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/assimp
+  ranges:
+  - type: GIT
+    repo: https://github.com/assimp/assimp.git
+    events:
+    - introduced: 16c50d7b53b5b6536599135004fb003c5e6f88b8
+  ecosystem_specific:
+    severity: HIGH
+  database_specific:
+    introduced_range: e86df1f8b139f4095653d37dc08622fa5d206663:e2fd15f8f78d99e08fd3d3f90d7add3bf310b122
+  versions: []
+schema_version: 1.9.2
