@@ -10,7 +10,7 @@ details: |
   check_ndpi_detection_func
   ndpi_detection_process_packet
   ```
-modified: '2026-11-02T00:01:59.568642Z'
+modified: '2026-11-04T14:38:17.616294Z'
 published: '2026-11-02T00:01:59.568386Z'
 references:
 - type: REPORT
@@ -26,7 +26,10 @@ affected:
     events:
     - introduced: b17e3ae7769f49abf40738c52b1931270181de92
     - fixed: 0c81498aa16332e75dda8eeb63a6f45f8fc2be09
+    - fixed: 7393261e8819b5db69f1773014de5bbb4eb32fa1
   ecosystem_specific:
     severity: HIGH
+  database_specific:
+    fixed_range: 0b5f522d45d5a2c9a9c27e8a487cd249b165ee72:7393261e8819b5db69f1773014de5bbb4eb32fa1
   versions: []
 schema_version: 1.9.2
