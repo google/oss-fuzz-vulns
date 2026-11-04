@@ -1,0 +1,32 @@
+id: OSV-2026-1481
+summary: Heap-buffer-overflow in ndpi_search_l2tp
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=580370355
+
+  ```
+  Crash type: Heap-buffer-overflow READ 2
+  Crash state:
+  ndpi_search_l2tp
+  check_ndpi_detection_func
+  ndpi_detection_process_packet
+  ```
+modified: '2026-11-02T00:01:59.568642Z'
+published: '2026-11-02T00:01:59.568386Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=580370355
+affected:
+- package:
+    name: ndpi
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/ndpi
+  ranges:
+  - type: GIT
+    repo: https://github.com/ntop/nDPI.git
+    events:
+    - introduced: b17e3ae7769f49abf40738c52b1931270181de92
+    - fixed: 0c81498aa16332e75dda8eeb63a6f45f8fc2be09
+  ecosystem_specific:
+    severity: HIGH
+  versions: []
+schema_version: 1.9.2

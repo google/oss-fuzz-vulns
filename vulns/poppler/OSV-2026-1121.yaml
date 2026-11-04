@@ -1,0 +1,42 @@
+id: OSV-2026-1121
+summary: Heap-buffer-overflow in cairo_type1_font_subset_for_each_glyph
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=542872505
+
+  ```
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  cairo_type1_font_subset_for_each_glyph
+  _cairo_type1_subset_init
+  _cairo_pdf_surface_emit_unscaled_font_subset
+  ```
+modified: '2026-08-07T00:22:32.744143Z'
+published: '2026-08-07T00:22:32.743884Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=542872505
+affected:
+- package:
+    name: poppler
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/poppler
+  ranges:
+  - type: GIT
+    repo: https://gitlab.freedesktop.org/poppler/poppler.git
+    events:
+    - introduced: 64ea4dce5324ce3be10e82a2ba2a4037ab353290
+  versions:
+  - poppler-26.02.0
+  - poppler-26.03.0
+  - poppler-26.04.0
+  - poppler-26.05.0
+  - poppler-26.06.0
+  - poppler-26.07.0
+  - poppler-26.08.0
+  - poppler-26.09.0
+  - poppler-26.10.0
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: ba84d698e6e6f2b5c27adda30165b8b9fdab9200:ac8ba0f102ee1eaeb879c8b2f8ad05a848cf0a2d
+schema_version: 1.9.2

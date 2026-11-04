@@ -1,0 +1,33 @@
+id: OSV-2026-1120
+summary: UNKNOWN READ in ExtractString
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=542893697
+
+  ```
+  Crash type: UNKNOWN READ
+  Crash state:
+  ExtractString
+  SetMeta
+  SetupMeta
+  ```
+modified: '2026-08-07T00:19:59.996275Z'
+published: '2026-08-07T00:19:59.995997Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=542893697
+affected:
+- package:
+    name: vlc
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/vlc
+  ranges:
+  - type: GIT
+    repo: https://code.videolan.org/videolan/vlc.git
+    events:
+    - introduced: f8e9d090fc20452cfddb91df28bf235eb59baff1
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: 22ea21dc9efff3e1ce539a098e4839975051bbe5:ca8a1dd2e9f38ae5d0ecae43be473d3a9af6a399
+  versions: []
+schema_version: 1.9.2
