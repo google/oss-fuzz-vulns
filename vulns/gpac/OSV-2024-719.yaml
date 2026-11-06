@@ -10,7 +10,7 @@ details: |
   gf_hevc_parse_nalu_bs
   gf_inspect_dump_nalu_internal
   ```
-modified: '2026-10-14T15:21:53.618129Z'
+modified: '2026-11-06T14:22:40.112467Z'
 published: '2024-08-07T00:05:22.699506Z'
 references:
 - type: REPORT
@@ -77,6 +77,7 @@ affected:
   - abi-16.25
   - abi-16.26
   - abi-16.27
+  - abi-16.28
   ecosystem_specific:
     severity: HIGH
   database_specific:
