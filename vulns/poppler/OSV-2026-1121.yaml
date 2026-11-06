@@ -10,7 +10,7 @@ details: |
   _cairo_type1_subset_init
   _cairo_pdf_surface_emit_unscaled_font_subset
   ```
-modified: '2026-08-07T00:22:32.744143Z'
+modified: '2026-11-06T14:19:41.645804Z'
 published: '2026-08-07T00:22:32.743884Z'
 references:
 - type: REPORT
@@ -35,6 +35,7 @@ affected:
   - poppler-26.08.0
   - poppler-26.09.0
   - poppler-26.10.0
+  - poppler-26.11.0
   ecosystem_specific:
     severity: MEDIUM
   database_specific:
