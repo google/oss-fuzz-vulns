@@ -10,7 +10,7 @@ details: |
   flb_sched_destroy
   flb_config_exit
   ```
-modified: '2026-11-07T14:28:08.228233Z'
+modified: '2026-11-08T14:15:57.254035Z'
 published: '2022-09-04T00:00:31.605787Z'
 references:
 - type: REPORT
@@ -139,6 +139,10 @@ affected:
   - wasm-browser-85c7030b29c4a9702fa0229efd9eb71736e03038
   - wasm-browser-a0c6ac530896994398822df052015582e3830243
   - wasm-browser-a88af96c92534e1bb0d585f63e97e41cd543a059
+  - wasm-browser-28ebf30c97d5bcb9ac6e3af3794023f1ebc92543
+  - wasm-browser-9c04b3bcfcb50a036692ab30f2added0cb682215
+  - wasm-browser-f6c314476f1fc9d6aac2bff1154a33a40a8a721a
+  - wasm-browser-fc966e90da4d99afc36bee42e3ac444dcab9372e
   ecosystem_specific:
     severity: HIGH
 schema_version: 1.3.0
