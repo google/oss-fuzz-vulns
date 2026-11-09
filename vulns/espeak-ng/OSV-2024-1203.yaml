@@ -10,7 +10,7 @@ details: |
   ReadClause
   TranslateClause
   ```
-modified: '2024-10-11T00:02:53.599146Z'
+modified: '2026-11-09T14:36:55.502974Z'
 published: '2024-10-11T00:02:53.598773Z'
 references:
 - type: REPORT
@@ -25,9 +25,12 @@ affected:
     repo: https://github.com/espeak-ng/espeak-ng
     events:
     - introduced: 0a713d52bbf3e061823d1a7f35e5303e7320f27a
+    - fixed: 688cb60368d6e0998f3632af8d1c3c2ad4191fc2
   versions:
   - '1.51'
   - 1.52.0
   ecosystem_specific:
     severity: null
+  database_specific:
+    fixed_range: f0fb11a8e1308d56a981e640db09678a2c43848c:688cb60368d6e0998f3632af8d1c3c2ad4191fc2
 schema_version: 1.6.0
