@@ -10,7 +10,7 @@ details: |
   ojph::local::param_nlt::~param_nlt
   ojph::local::codestream::~codestream
   ```
-modified: '2026-11-10T00:02:03.355414Z'
+modified: '2026-11-10T14:36:41.443828Z'
 published: '2026-11-10T00:02:03.354934Z'
 references:
 - type: REPORT
@@ -26,6 +26,8 @@ affected:
     events:
     - introduced: d2b07b19423a9c595644956f199f0f4168e8c5cd
     - fixed: e9e9fefc429904f412699199a5264bcba1e655ec
+    - introduced: 396c10e13f6c1d37dddde79da307f2715a0d1a4e
+    - fixed: 56eb91e50e5615d5c89483ea9dae4dde5376a53f
   versions:
   - v3.5.0
   - v3.5.0-rc2
