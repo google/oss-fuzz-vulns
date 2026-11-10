@@ -11,7 +11,7 @@ details: |
   Assimp::BlenderImporter::ParseSubCollection
   Assimp::BlenderImporter::ConvertBlendFile
   ```
-modified: '2026-08-04T00:03:21.141941Z'
+modified: '2026-11-10T14:33:13.293949Z'
 published: '2026-08-04T00:03:21.141559Z'
 references:
 - type: REPORT
@@ -26,9 +26,10 @@ affected:
     repo: https://github.com/assimp/assimp.git
     events:
     - introduced: cac67afe479ac9be595d03bfa811d0e6a6baf39a
+  versions:
+  - v6.0.6
   ecosystem_specific:
     severity: HIGH
   database_specific:
     introduced_range: be3d938e3e22d364b38807a247b3593fa7b260bd:626219cdd32f8fb0891464f27663d2667078d7cc
-  versions: []
 schema_version: 1.9.2
