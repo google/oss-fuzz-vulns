@@ -1,0 +1,32 @@
+id: OSV-2026-1137
+summary: Invalid-free in glslang::TPpContext::~TPpContext
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=544518841
+
+  ```
+  Crash type: Invalid-free
+  Crash state:
+  glslang::TPpContext::~TPpContext
+  glslang::TShader::preprocess
+  shaderc_util::Compiler::PreprocessShader
+  ```
+modified: '2026-08-11T00:24:04.850043Z'
+published: '2026-08-11T00:24:04.849201Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=544518841
+affected:
+- package:
+    name: shaderc
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/shaderc
+  ranges:
+  - type: GIT
+    repo: https://github.com/google/shaderc
+    events:
+    - introduced: 590d5667c06023f92f10de11858724138e9326b5
+  versions:
+  - v2026.4
+  ecosystem_specific:
+    severity: null
+schema_version: 1.9.2
