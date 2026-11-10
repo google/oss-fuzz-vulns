@@ -10,7 +10,7 @@ details: |
   wc_ed448_sign_msg_ex
   wc_ed448_sign_msg
   ```
-modified: '2026-10-14T14:54:57.193767Z'
+modified: '2026-11-10T14:36:42.340167Z'
 published: '2022-09-05T00:00:28.251072Z'
 references:
 - type: REPORT
@@ -52,6 +52,13 @@ affected:
   - v5.9.2-stable
   - v5.9.4-stable
   - wolfEntropyv7.0.0-CHKIN
+  - rust/wolfssl-wolfcrypt/v1.0.0
+  - rust/wolfssl-wolfcrypt/v1.1.0
+  - rust/wolfssl-wolfcrypt/v1.2.0
+  - rust/wolfssl-wolfcrypt/v2.0.0
+  - rust/wolfssl-wolfcrypt/v2.1.0
+  - rust/wolfssl-wolfcrypt/v2.2.0
+  - rust/wolfssl-wolfcrypt/v3.0.0
   ecosystem_specific:
     severity: HIGH
 schema_version: 1.2.0
