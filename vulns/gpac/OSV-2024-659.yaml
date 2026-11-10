@@ -25,60 +25,8 @@ affected:
     repo: https://github.com/gpac/gpac
     events:
     - introduced: 99a7952e91938f8c0d16f2235b912de1fed6c1f8
-  versions:
-  - testtag0.1
-  - abi-12
-  - abi-12.16
-  - abi-12.17
-  - abi-12.18
-  - abi-12.19
-  - abi-12.20
-  - abi-12.21
-  - abi-12.22
-  - abi-12.23
-  - abi-12.24
-  - abi-12.25
-  - abi-12.26
-  - abi-12.27
-  - abi-13
-  - abi-13.0
-  - abi-14
-  - abi-14.0
-  - abi-15
-  - abi-15.0
-  - abi-15.1
-  - abi-15.2
-  - abi-16
-  - abi-16.2
-  - abi-16.3
-  - abi-16.4
-  - abi-16.5
-  - v26.02.0
-  - abi-16.6
-  - abi-16.7
-  - abi-16.8
-  - abi-16.9
-  - abi-16.10
-  - abi-16.11
-  - abi-16.12
-  - abi-16.13
-  - abi-16.14
-  - abi-16.15
-  - abi-16.16
-  - abi-16.17
-  - abi-16.18
-  - abi-16.19
-  - abi-16.20
-  - abi-16.21
-  - abi-16.22
-  - v26.07.0
-  - abi-16.23
-  - abi-16.24
-  - abi-16.25
-  - abi-16.26
-  - abi-16.27
-  - abi-16.28
-  - abi-16.29
+    - fixed: 2209355e00dc6de9f6ab97b97a242da9c523e509
+  versions: []
   ecosystem_specific:
     severity: MEDIUM
   database_specific:
