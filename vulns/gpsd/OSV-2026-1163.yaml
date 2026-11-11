@@ -1,0 +1,32 @@
+id: OSV-2026-1163
+summary: Use-of-uninitialized-value in processGSV
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=547003490
+
+  ```
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  processGSV
+  nmea_parse
+  generic_parse_input
+  ```
+modified: '2026-08-18T00:09:53.882074Z'
+published: '2026-08-18T00:09:53.881687Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=547003490
+affected:
+- package:
+    name: gpsd
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/gpsd
+  ranges:
+  - type: GIT
+    repo: https://gitlab.com/gpsd/gpsd
+    events:
+    - introduced: 69b540acdcb5a83959d0702f53b38eef26e08e07
+    - fixed: 3aafa6974e537e1af24788d3a2766faf3c874b64
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.9.2
