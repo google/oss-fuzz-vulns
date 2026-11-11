@@ -1,15 +1,30 @@
+id: OSV-2022-725
+summary: Heap-buffer-overflow in jxl::N_EMU128::WriteToU8Stage::ProcessRow
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=50295
+
+  ```
+  Crash type: Heap-buffer-overflow WRITE 1
+  Crash state:
+  jxl::N_EMU128::WriteToU8Stage::ProcessRow
+  jxl::LowMemoryRenderPipeline::RenderRect
+  jxl::LowMemoryRenderPipeline::ProcessBuffers
+  ```
+modified: '2026-11-11T14:25:11.337590Z'
+published: '2022-08-18T00:01:05.918943Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=50295
 affected:
-- ecosystem_specific:
-    severity: HIGH
-  package:
-    ecosystem: OSS-Fuzz
+- package:
     name: libjxl
+    ecosystem: OSS-Fuzz
     purl: pkg:generic/libjxl
   ranges:
-  - events:
-    - introduced: a50e71631cabfbdd57d540ba080ecec19b4664af
+  - type: GIT
     repo: https://github.com/libjxl/libjxl.git
-    type: GIT
+    events:
+    - introduced: a50e71631cabfbdd57d540ba080ecec19b4664af
   versions:
   - v0.8.0rc1
   - v0.8.0
@@ -38,21 +53,7 @@ affected:
   - v0.9.5
   - v0.12-snapshot
   - v0.12.0
-details: |
-  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=50295
-
-  ```
-  Crash type: Heap-buffer-overflow WRITE 1
-  Crash state:
-  jxl::N_EMU128::WriteToU8Stage::ProcessRow
-  jxl::LowMemoryRenderPipeline::RenderRect
-  jxl::LowMemoryRenderPipeline::ProcessBuffers
-  ```
-id: OSV-2022-725
-modified: '2026-07-02T14:15:24.884839Z'
-published: '2022-08-18T00:01:05.918943Z'
-references:
-- type: REPORT
-  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=50295
+  - v0.13.0
+  ecosystem_specific:
+    severity: HIGH
 schema_version: 1.2.0
-summary: Heap-buffer-overflow in jxl::N_EMU128::WriteToU8Stage::ProcessRow
