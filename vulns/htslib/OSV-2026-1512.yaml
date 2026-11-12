@@ -10,7 +10,7 @@ details: |
   cram_flush_container_mt
   cram_put_bam_seq
   ```
-modified: '2026-11-08T00:22:15.690328Z'
+modified: '2026-11-12T14:23:55.940566Z'
 published: '2026-11-08T00:22:15.690048Z'
 references:
 - type: REPORT
@@ -26,6 +26,8 @@ affected:
     events:
     - introduced: 843ca7f53fad9538fe46df2c9d5a503b6b7afbaa
     - fixed: 711871ab53f8133115dceed997d11f481c024e0a
+    - fixed: ae5f79dd51cd296195293690b6f59f0b982ae877
+    - introduced: 6ff2e25c36e82fd9194702270bca322d321e1397
   versions:
   - 1.21.1
   - 1.21.2
@@ -45,4 +47,5 @@ affected:
     severity: MEDIUM
   database_specific:
     introduced_range: 09c89d8f12b8367a5b869b563f5ae6f0888fb0f3:6a399ca07a0d6bb435676c68689ba361d592ebc9
+    fixed_range: 1a66eebeaeb5230d6514476306dd2dc4141b82f3:ae5f79dd51cd296195293690b6f59f0b982ae877
 schema_version: 1.9.2
