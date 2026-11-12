@@ -10,7 +10,7 @@ details: |
   ZSTD_decompressSequencesLong
   ZSTD_decompressBlock_internal
   ```
-modified: '2026-11-09T14:28:03.369920Z'
+modified: '2026-11-12T14:24:39.485256Z'
 published: '2023-04-16T14:01:58.406534Z'
 references:
 - type: REPORT
@@ -114,6 +114,8 @@ affected:
   - v3.4.1
   - v3.5.0
   - v3.6.0
+  - v3.6.1
+  - v3.6.2
   ecosystem_specific:
     severity: MEDIUM
 schema_version: 1.4.0

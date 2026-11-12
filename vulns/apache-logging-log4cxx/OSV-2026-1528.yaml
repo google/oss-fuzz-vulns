@@ -1,0 +1,35 @@
+id: OSV-2026-1528
+summary: Heap-use-after-free in log4cxx::helpers::InetAddress::toString
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=583622276
+
+  ```
+  Crash type: Heap-use-after-free READ 8
+  Crash state:
+  log4cxx::helpers::InetAddress::toString
+  log4cxx::net::SocketAppenderSkeleton::SocketAppenderSkeletonPriv::retryConnect
+  log4cxx::helpers::ThreadUtility::priv_data::doPeriodicTasks
+  ```
+modified: '2026-11-11T00:08:27.242843Z'
+published: '2026-11-11T00:08:27.242557Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=583622276
+affected:
+- package:
+    name: apache-logging-log4cxx
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/apache-logging-log4cxx
+  ranges:
+  - type: GIT
+    repo: https://github.com/apache/logging-log4cxx
+    events:
+    - introduced: 8043e4cf96fff4a24b84dbeaf3bd6aa6a4274d97
+    - fixed: ffaa9c419602768bf2bec8c85af325792a4d1b43
+  ecosystem_specific:
+    severity: HIGH
+  database_specific:
+    introduced_range: facd4f4348f71c9fb44aa98f54ae8db74ff32eed:cf66bb631d291059c3611a1b9af79f75a2b50b35
+    fixed_range: 4bc69bbdb67f07d67bbd6f71d4f57ecced36d1b9:ffaa9c419602768bf2bec8c85af325792a4d1b43
+  versions: []
+schema_version: 1.9.2
