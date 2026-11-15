@@ -1,0 +1,35 @@
+id: OSV-2026-1558
+summary: Heap-use-after-free in uri_param_snprint
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=585030469
+
+  ```
+  Crash type: Heap-use-after-free READ 8
+  Crash state:
+  uri_param_snprint
+  uri_params_snprint
+  uri_format
+  ```
+modified: '2026-11-14T00:09:24.530569Z'
+published: '2026-11-14T00:09:24.530142Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=585030469
+affected:
+- package:
+    name: tarantool
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/tarantool
+  ranges:
+  - type: GIT
+    repo: https://github.com/tarantool/tarantool
+    events:
+    - introduced: 847b35b2d586a56996841618f1b0d043257dc8ef
+    - fixed: 773e881406229f2e7a928e8e388c9af705303398
+  ecosystem_specific:
+    severity: HIGH
+  database_specific:
+    introduced_range: 027c1776a034baa20e5af68bdc9798d33102602a:68fe9c1da2cf4f4a2d83ce7356faf30cd1c9d250
+    fixed_range: f81d151e5cb64de151acabd6bb1280819950c82e:773e881406229f2e7a928e8e388c9af705303398
+  versions: []
+schema_version: 1.9.2
