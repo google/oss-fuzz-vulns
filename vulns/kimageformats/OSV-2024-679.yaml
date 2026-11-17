@@ -10,7 +10,7 @@ details: |
   PCXHandler::read
   kimgio_fuzzer.cc
   ```
-modified: '2026-11-08T14:19:18.073565Z'
+modified: '2026-11-14T14:34:29.636933Z'
 published: '2024-07-25T00:14:34.485446Z'
 references:
 - type: REPORT
@@ -83,6 +83,7 @@ affected:
   - v6.31.0
   - v6.31.0-rc1
   - v6.32.0-rc1
+  - v6.32.0
   ecosystem_specific:
     severity: HIGH
 schema_version: 1.6.0

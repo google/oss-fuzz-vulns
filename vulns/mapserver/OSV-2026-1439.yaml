@@ -1,0 +1,34 @@
+id: OSV-2026-1439
+summary: Heap-buffer-overflow in FLTFreeFilterEncodingNode
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=576609452
+
+  ```
+  Crash type: Heap-buffer-overflow READ 8
+  Crash state:
+  FLTFreeFilterEncodingNode
+  FLTFreeFilterEncodingNode
+  msSLDGetCommonExpressionFromFilter
+  ```
+modified: '2026-10-24T00:13:11.477622Z'
+published: '2026-10-24T00:13:11.477218Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=576609452
+affected:
+- package:
+    name: mapserver
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/mapserver
+  ranges:
+  - type: GIT
+    repo: https://github.com/MapServer/MapServer
+    events:
+    - introduced: 6cd261c71b3f9defaba5b706865c1b31ae79dcad
+    - fixed: 5f58ddc997a816431f2fd1f659f7e0ffce9c3d19
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    fixed_range: cc98ed9576936d89ad89a369f48e712780a2ca3e:5f58ddc997a816431f2fd1f659f7e0ffce9c3d19
+  versions: []
+schema_version: 1.9.2

@@ -1,0 +1,36 @@
+id: OSV-2026-1559
+summary: Use-of-uninitialized-value in ParseOpaqueMetadata
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=585226899
+
+  ```
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  ParseOpaqueMetadata
+  Mat_VarRead73
+  Mat_VarReadDataAll
+  ```
+modified: '2026-11-15T14:26:02.358387Z'
+published: '2026-11-14T00:10:31.948343Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=585226899
+affected:
+- package:
+    name: matio
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/matio
+  ranges:
+  - type: GIT
+    repo: https://github.com/tbeu/matio.git
+    events:
+    - introduced: ac1c67c687533d2de55f96709ed4512d4c197801
+    - fixed: 3441ae35cacf4ca393a70a0ec97e7c68b430a76d
+    - fixed: a8b4fd8d1ee7d98e0f4c84121432d1df5449332c
+  versions:
+  - v1.6.0
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    fixed_range: 82f48b471a5b8e5463c68a25c37d99239e14fbe4:a8b4fd8d1ee7d98e0f4c84121432d1df5449332c
+schema_version: 1.9.2
