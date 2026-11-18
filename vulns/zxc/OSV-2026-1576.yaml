@@ -1,0 +1,32 @@
+id: OSV-2026-1576
+summary: Use-of-uninitialized-value in fuzz_variants.c
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=586237601
+
+  ```
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  fuzz_variants.c
+  ```
+modified: '2026-11-17T00:11:21.096167Z'
+published: '2026-11-17T00:11:21.095888Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=586237601
+affected:
+- package:
+    name: zxc
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/zxc
+  ranges:
+  - type: GIT
+    repo: https://github.com/hellobertrand/zxc.git
+    events:
+    - introduced: 9e3d2b38e9c0cf5dfc5132d0b5a2746a430e2984
+    - fixed: 1ec7c82e2eb8ba9b02f19a12d68766fabf044d84
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    introduced_range: 20c91b11d7e9d6c96c555413f0904eed9836fdb2:f6daadf0d0682d68a441a1c28d230c5987ac9f09
+  versions: []
+schema_version: 1.9.2
