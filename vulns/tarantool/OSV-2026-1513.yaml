@@ -1,0 +1,35 @@
+id: OSV-2026-1513
+summary: Heap-use-after-free in lj_cconv_tv_ct
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=583143849
+
+  ```
+  Crash type: Heap-use-after-free READ 8
+  Crash state:
+  lj_cconv_tv_ct
+  lj_cf_ffi_meta___index
+  lj_BC_FUNCC
+  ```
+modified: '2026-11-09T00:01:58.743262Z'
+published: '2026-11-09T00:01:58.742813Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=583143849
+affected:
+- package:
+    name: tarantool
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/tarantool
+  ranges:
+  - type: GIT
+    repo: https://github.com/tarantool/tarantool
+    events:
+    - introduced: 847b35b2d586a56996841618f1b0d043257dc8ef
+    - fixed: 12dbf1e631157429708fa2b368094d816e887dc4
+  ecosystem_specific:
+    severity: HIGH
+  database_specific:
+    fixed_range: 511e096d52395ac70f3e7d334feee04343b50ac0:12dbf1e631157429708fa2b368094d816e887dc4
+    introduced_range: 027c1776a034baa20e5af68bdc9798d33102602a:68fe9c1da2cf4f4a2d83ce7356faf30cd1c9d250
+  versions: []
+schema_version: 1.9.2

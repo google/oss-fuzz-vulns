@@ -1,0 +1,34 @@
+id: OSV-2026-1585
+summary: Heap-buffer-overflow in ndpi_search_dns_tcp_udp_internal
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=586582945
+
+  ```
+  Crash type: Heap-buffer-overflow READ 1
+  Crash state:
+  ndpi_search_dns_tcp_udp_internal
+  check_ndpi_detection_func
+  ndpi_detection_process_packet
+  ```
+modified: '2026-11-18T00:18:18.856565Z'
+published: '2026-11-18T00:18:18.856286Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=586582945
+affected:
+- package:
+    name: ndpi
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/ndpi
+  ranges:
+  - type: GIT
+    repo: https://github.com/ntop/nDPI.git
+    events:
+    - introduced: f267cef4247e2eeff76da32afb08bb4303b60da3
+    - fixed: 21622259e96a373b07b89703b1486b9e353fa3fa
+  ecosystem_specific:
+    severity: MEDIUM
+  database_specific:
+    fixed_range: f267cef4247e2eeff76da32afb08bb4303b60da3:21622259e96a373b07b89703b1486b9e353fa3fa
+  versions: []
+schema_version: 1.9.2
