@@ -1,16 +1,5 @@
-affected:
-- ecosystem_specific:
-    severity: MEDIUM
-  package:
-    ecosystem: OSS-Fuzz
-    name: libyaml
-  ranges:
-  - events:
-    - introduced: acd6f6f014c25e46363e718381e0b35205df2d83
-    repo: https://github.com/yaml/libyaml
-    type: GIT
-  versions:
-  - 0.2.6-rc.1
+id: OSV-2020-1611
+summary: Heap-buffer-overflow in yaml_emitter_emit_flow_mapping_key
 details: |
   OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24869
 
@@ -21,10 +10,22 @@ details: |
   yaml_emitter_state_machine
   yaml_emitter_emit
   ```
-id: OSV-2020-1611
-modified: '2026-04-24T14:08:19.312442Z'
+modified: '2026-11-21T14:11:55.973432Z'
 published: '2020-08-14T00:01:51.615528Z'
 references:
 - type: REPORT
   url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=24869
-summary: Heap-buffer-overflow in yaml_emitter_emit_flow_mapping_key
+affected:
+- package:
+    name: libyaml
+    ecosystem: OSS-Fuzz
+  ranges:
+  - type: GIT
+    repo: https://github.com/yaml/libyaml
+    events:
+    - introduced: acd6f6f014c25e46363e718381e0b35205df2d83
+  versions:
+  - 0.2.6-rc.1
+  - 0.2.6
+  ecosystem_specific:
+    severity: MEDIUM
