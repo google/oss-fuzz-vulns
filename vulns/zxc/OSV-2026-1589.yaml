@@ -10,7 +10,7 @@ details: |
   zxc_decompress_chunk_wrapper_avx2
   fuzz_variants.c
   ```
-modified: '2026-11-19T00:10:13.750875Z'
+modified: '2026-11-21T14:21:59.789332Z'
 published: '2026-11-19T00:10:13.750623Z'
 references:
 - type: REPORT
@@ -26,9 +26,11 @@ affected:
     events:
     - introduced: 9e3d2b38e9c0cf5dfc5132d0b5a2746a430e2984
     - fixed: 2992c28e6e1df07feec0cb39678a6d4a9665c6bb
+    - fixed: 30a4d8a30ca7c8973e7414ba60c8654bb5e6536a
   ecosystem_specific:
     severity: MEDIUM
   database_specific:
     introduced_range: 20c91b11d7e9d6c96c555413f0904eed9836fdb2:f6daadf0d0682d68a441a1c28d230c5987ac9f09
+    fixed_range: 00119bdf5634deb2da6479ba698f6844a86a7243:30a4d8a30ca7c8973e7414ba60c8654bb5e6536a
   versions: []
 schema_version: 1.9.2
