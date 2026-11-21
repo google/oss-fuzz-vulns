@@ -10,7 +10,7 @@ details: |
   Assimp::IRRImporter::GenerateGraph
   Assimp::IRRImporter::GenerateGraph
   ```
-modified: '2026-11-10T14:33:22.864179Z'
+modified: '2026-11-21T14:20:36.215590Z'
 published: '2026-08-08T00:02:08.259563Z'
 references:
 - type: REPORT
@@ -25,10 +25,12 @@ affected:
     repo: https://github.com/assimp/assimp.git
     events:
     - introduced: 16c50d7b53b5b6536599135004fb003c5e6f88b8
+    - fixed: 93fe5d82fb206e850a21809bf45800ae00b17fc7
   versions:
   - v6.0.6
   ecosystem_specific:
     severity: MEDIUM
   database_specific:
+    fixed_range: eca3ce1390a8be79d82852fc378f880be3873ec6:93fe5d82fb206e850a21809bf45800ae00b17fc7
     introduced_range: e86df1f8b139f4095653d37dc08622fa5d206663:e2fd15f8f78d99e08fd3d3f90d7add3bf310b122
 schema_version: 1.9.2
