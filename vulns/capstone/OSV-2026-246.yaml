@@ -10,7 +10,7 @@ details: |
   M68K_printInst
   cs_disasm
   ```
-modified: '2026-10-14T15:01:53.201908Z'
+modified: '2026-11-21T14:22:39.537416Z'
 published: '2026-02-15T00:09:41.850779Z'
 references:
 - type: REPORT
@@ -25,13 +25,16 @@ affected:
     repo: https://github.com/capstone-engine/capstone.git
     events:
     - introduced: 1bc76ead22ca927a04000a5c8e89c608f00bab46
+    - fixed: 396c189680881fa262b5ea5d4ccfe0775ceaf31d
   versions:
+  - 6.0.0-Alpha10
+  - 6.0.0-Alpha11
   - 6.0.0-Alpha6
   - 6.0.0-Alpha7
   - 6.0.0-Alpha8
   - 6.0.0-Alpha9
-  - 6.0.0-Alpha10
-  - 6.0.0-Alpha11
   ecosystem_specific:
     severity: MEDIUM
+  database_specific:
+    fixed_range: 037b3bc0fc4baaf52c6c23d9f36e35b62167504f:396c189680881fa262b5ea5d4ccfe0775ceaf31d
 schema_version: 1.7.5
