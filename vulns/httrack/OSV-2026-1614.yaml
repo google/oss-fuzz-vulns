@@ -1,0 +1,31 @@
+id: OSV-2026-1614
+summary: Stack-buffer-overflow in standard_name
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=587967806
+
+  ```
+  Crash type: Stack-buffer-overflow READ 1
+  Crash state:
+  standard_name
+  fuzz-savename.c
+  ```
+modified: '2026-11-21T00:17:17.919607Z'
+published: '2026-11-21T00:17:17.919330Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=587967806
+affected:
+- package:
+    name: httrack
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/httrack
+  ranges:
+  - type: GIT
+    repo: https://github.com/xroche/httrack.git
+    events:
+    - introduced: fe8d21f7e4d106e5f3bd8ba5e70dbfd26edac4f8
+    - fixed: 9c0440cb09d53a54f974ac5c511578f2fc787805
+  ecosystem_specific:
+    severity: MEDIUM
+  versions: []
+schema_version: 1.9.2
