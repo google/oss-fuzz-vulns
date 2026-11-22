@@ -9,7 +9,7 @@ details: |
   standard_name
   fuzz-savename.c
   ```
-modified: '2026-11-21T00:17:17.919607Z'
+modified: '2026-11-22T14:23:57.133146Z'
 published: '2026-11-21T00:17:17.919330Z'
 references:
 - type: REPORT
@@ -25,7 +25,10 @@ affected:
     events:
     - introduced: fe8d21f7e4d106e5f3bd8ba5e70dbfd26edac4f8
     - fixed: 9c0440cb09d53a54f974ac5c511578f2fc787805
+    - fixed: fbd00b880ca7b6ed2b7b2b52521951fbf85444cb
   ecosystem_specific:
     severity: MEDIUM
+  database_specific:
+    fixed_range: fe8d21f7e4d106e5f3bd8ba5e70dbfd26edac4f8:fbd00b880ca7b6ed2b7b2b52521951fbf85444cb
   versions: []
 schema_version: 1.9.2
