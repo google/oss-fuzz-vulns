@@ -10,7 +10,7 @@ details: |
   H5O__fsinfo_encode
   H5O_msg_flush
   ```
-modified: '2026-07-29T14:46:36.639972Z'
+modified: '2026-11-25T15:22:53.303548Z'
 published: '2024-04-30T00:13:39.184262Z'
 references:
 - type: REPORT
@@ -64,6 +64,7 @@ affected:
   - 2.2.0-rc1
   - snapshot-2.2.0-rc1
   - 2.2.0
+  - 2.3.0
   ecosystem_specific:
     severity: HIGH
 schema_version: 1.6.0
