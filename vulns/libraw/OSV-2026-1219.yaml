@@ -1,0 +1,38 @@
+id: OSV-2026-1219
+summary: Use-of-uninitialized-value in LibRaw::fcol
+details: |
+  OSS-Fuzz report: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=554186961
+
+  ```
+  Crash type: Use-of-uninitialized-value
+  Crash state:
+  LibRaw::fcol
+  LibRaw::phase_one_subtract_black
+  LibRaw::raw2image
+  ```
+modified: '2026-08-30T00:21:54.309968Z'
+published: '2026-08-30T00:21:54.309691Z'
+references:
+- type: REPORT
+  url: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=554186961
+affected:
+- package:
+    name: libraw
+    ecosystem: OSS-Fuzz
+    purl: pkg:generic/libraw
+  ranges:
+  - type: GIT
+    repo: https://github.com/libraw/libraw
+    events:
+    - introduced: 36fa8bb9c7e009a46bc293ba9e5fb174bf9eb0fb
+    - introduced: 3042ed15513e1e7b99a56b7550736c35aa97b4d8
+  versions:
+  - 0.21.5
+  - 0.21.5b
+  - 0.22.0
+  - 0.22.1
+  - 0.22.2
+  - 0.22.3
+  ecosystem_specific:
+    severity: MEDIUM
+schema_version: 1.9.2
